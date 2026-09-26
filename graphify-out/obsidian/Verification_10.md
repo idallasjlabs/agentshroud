@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/04-separation-of-privilege.md"
+source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "Make gateway source code, config, and security p"
-location: "L250"
+community: "Kill Switch"
+location: "L560"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Make_gateway_source_code_config_and_security_p
+  - community/Kill_Switch
 ---
 
 # Verification
 
 ## Connections
-- [[Make gateway source code, config, and security policies read-only to the agent]] - `contains` [EXTRACTED]
+- [[✅ Setup Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Make_gateway_source_code_config_and_security_p
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch

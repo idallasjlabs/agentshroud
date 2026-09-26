@@ -1,12 +1,12 @@
 ---
 source_file: "docs/archive/FUTURE-FEATURES.md"
 type: "concept"
-community: "Voice Gateway Service"
+community: "Troubleshooting"
 location: "L377-L397"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Voice_Gateway_Service
+  - community/Troubleshooting
 ---
 
 # Voice Interface (STT/TTS, wake word)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Voice Gateway Service]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Voice_Gateway_Service
+#graphify/concept #graphify/INFERRED #community/Troubleshooting

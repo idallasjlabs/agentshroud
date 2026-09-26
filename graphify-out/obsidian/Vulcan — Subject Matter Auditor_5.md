@@ -1,24 +1,25 @@
 ---
 source_file: "docker/config/openclaw/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Vulcan — Subject Matter Auditor"
+community: "SOUL"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Vulcan__Subject_Matter_Auditor
+  - community/SOUL
 ---
 
 # Vulcan — Subject Matter Auditor
 
 ## Connections
-- [[Input Requirements_23]] - `contains` [EXTRACTED]
-- [[Output Format_36]] - `contains` [EXTRACTED]
-- [[Persona_18]] - `contains` [EXTRACTED]
-- [[Quality Checklist_20]] - `contains` [EXTRACTED]
-- [[Role_105]] - `contains` [EXTRACTED]
-- [[System Prompt_18]] - `contains` [EXTRACTED]
+- [[Input Requirements_29]] - `contains` [EXTRACTED]
+- [[Output Format_38]] - `contains` [EXTRACTED]
+- [[Persona_23]] - `contains` [EXTRACTED]
+- [[Quality Checklist_26]] - `contains` [EXTRACTED]
+- [[Role_111]] - `contains` [EXTRACTED]
+- [[SKILL_142]] - `contains` [EXTRACTED]
+- [[SKILL_189]] - `contains` [EXTRACTED]
+- [[System Prompt_23]] - `contains` [EXTRACTED]
 - [[User Prompt Template_11]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor
+#graphify/document #graphify/EXTRACTED #community/SOUL

@@ -1,20 +1,19 @@
 ---
-source_file: "branding/README.md"
+source_file: "branding/colors/palette.md"
 type: "document"
-community: "AgentShroud™ Brand Guidelines"
-location: "L54"
+community: "http_proxy.py"
+location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/http_proxypy
 ---
 
 # Usage Guidelines
 
 ## Connections
-- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
-- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
-- [[Do's]] - `contains` [EXTRACTED]
-- [[Don'ts]] - `contains` [EXTRACTED]
+- [[Accessibility]] - `contains` [EXTRACTED]
+- [[AgentShroud Color Palette]] - `contains` [EXTRACTED]
+- [[Applications]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/document #graphify/EXTRACTED #community/http_proxypy

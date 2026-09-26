@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "API Keys Setup Guide"
+community: "record_decision"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/API_Keys_Setup_Guide
+  - community/record_decision
 ---
 
 # Verify OpenAI Key Exists
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 1 Save API Keys to Secret Files]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/record_decision

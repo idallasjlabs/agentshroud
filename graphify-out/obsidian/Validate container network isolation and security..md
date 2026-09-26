@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "lifespan.py"
+community: "AgentShroud Security Value Proposition - REVISED"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/AgentShroud_Security_Value_Proposition_-_REVISED
 ---
 
 # Validate container network isolation and security.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[NetworkValidator]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_REVISED

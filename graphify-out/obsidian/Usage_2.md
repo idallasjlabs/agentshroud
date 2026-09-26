@@ -1,23 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/SKILL.md"
+source_file: ".agents/skills/i-athena/README.md"
 type: "document"
-community: "Usage"
-location: "L55"
+community: "FY26 Cost Reduction Context"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Usage
+  - community/FY26_Cost_Reduction_Context
 ---
 
 # Usage
 
 ## Connections
-- [[Browser — Secure Browser Automation]] - `contains` [EXTRACTED]
-- [[Click Element]] - `contains` [EXTRACTED]
-- [[Extract Data]] - `contains` [EXTRACTED]
-- [[Fetch JavaScript-Heavy Page (Node.js)]] - `contains` [EXTRACTED]
-- [[Fill Form]] - `contains` [EXTRACTED]
-- [[Navigate to URL]] - `contains` [EXTRACTED]
-- [[Take Screenshot]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Usage
+#graphify/document #graphify/EXTRACTED #community/FY26_Cost_Reduction_Context

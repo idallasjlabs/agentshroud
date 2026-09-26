@@ -1,19 +1,19 @@
 ---
 source_file: "scripts/README.md"
 type: "document"
-community: "Contributing to AgentShroud™"
+community: "sanitizer.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Contributing_to_AgentShroud
+  - community/sanitizerpy
 ---
 
 # Utility Scripts
 
 ## Connections
-- [[Implementation Status_1]] - `contains` [EXTRACTED]
+- [[Implementation Status_3]] - `contains` [EXTRACTED]
+- [[README_129]] - `contains` [EXTRACTED]
 - [[Scripts (to be implemented throughout development)]] - `contains` [EXTRACTED]
-- [[scriptsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Contributing_to_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/sanitizerpy

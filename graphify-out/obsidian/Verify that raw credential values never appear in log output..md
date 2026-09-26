@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "rationale"
-community: "test_credential_injector.py"
+community: "ssh_proxy.py"
 location: "L186"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_credential_injectorpy
+  - community/ssh_proxypy
 ---
 
 # Verify that raw credential values never appear in log output.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_credential_never_in_logs()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_credential_injectorpy
+#graphify/rationale #graphify/EXTRACTED #community/ssh_proxypy

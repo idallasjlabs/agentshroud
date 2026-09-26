@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/volumes.md"
 type: "document"
-community: "Docker Volumes"
+community: "Pre-Deployment Checklist"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Volumes
+  - community/Pre-Deployment_Checklist
 ---
 
 # Volume Details
@@ -19,4 +19,4 @@ tags:
 - [[agentshroud-workspace]] - `contains` [EXTRACTED]
 - [[gateway-data]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Volumes
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

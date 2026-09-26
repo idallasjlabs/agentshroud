@@ -1,13 +1,13 @@
 ---
 source_file: "firmware/voice-terminal/CMakeLists.txt"
 type: "code"
-community: "Voice Terminal CMakeLists (IDF v5.4 BSP patch)"
+community: "--cluster-only Flow"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Terminal_CMakeLists_IDF_v54_BSP_patch
+  - community/--cluster-only_Flow
 ---
 
 # Voice Terminal CMakeLists (IDF v5.4 BSP patch)
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Terminal_CMakeLists_IDF_v54_BSP_patch
+#graphify/code #graphify/EXTRACTED #community/--cluster-only_Flow

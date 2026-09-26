@@ -1,11 +1,11 @@
 ---
 source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "concept"
-community: "DOCKER-VPN-NETWORKING.md"
+community: "TestFullAccessMiddlewareBypass"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/DOCKER-VPN-NETWORKINGmd
+  - community/TestFullAccessMiddlewareBypass
 ---
 
 # VpnKitTransparentProxy Setting
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[DOCKER-VPN-NETWORKING]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/DOCKER-VPN-NETWORKINGmd
+#graphify/concept #graphify/EXTRACTED #community/TestFullAccessMiddlewareBypass

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
+source_file: "docker/config/openclaw/workspace/BRAND.md"
 type: "document"
-community: "→ {\"site\": \"site1\", \"test_mode\": True, \"output_p"
-location: "L201"
+community: "AgentShroud Security Architecture"
+location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_site_site1_test_mode_True_output_p
+  - community/AgentShroud_Security_Architecture
 ---
 
 # Voice & Tone
 
 ## Connections
-- [[Writing Style Rules_2]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_site_site1_test_mode_True_output_p
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

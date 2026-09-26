@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "TestMultiBotIsolation"
+community: "KeyVaultConfig"
 location: "L199"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestMultiBotIsolation
+  - community/KeyVaultConfig
 ---
 
 # Verify that different bots get independent workspaces per user.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMultiBotIsolation]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestMultiBotIsolation
+#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig

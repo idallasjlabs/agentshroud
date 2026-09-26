@@ -1,19 +1,19 @@
 ---
 source_file: "skills/openclaw/video-frames/SKILL.md"
 type: "document"
-community: "frame.sh"
+community: "Skill: Hermes Dev Workflow (HDEV)"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/framesh
+  - community/Skill_Hermes_Dev_Workflow_HDEV
 ---
 
 # Video Frames (ffmpeg)
 
 ## Connections
-- [[Notes_1]] - `contains` [EXTRACTED]
-- [[Quick start]] - `contains` [EXTRACTED]
-- [[video-framesSKILL]] - `contains` [EXTRACTED]
+- [[Notes_9]] - `contains` [EXTRACTED]
+- [[Quick start_4]] - `contains` [EXTRACTED]
+- [[SKILL_236]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/framesh
+#graphify/document #graphify/EXTRACTED #community/Skill_Hermes_Dev_Workflow_HDEV

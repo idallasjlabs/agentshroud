@@ -1,13 +1,13 @@
 ---
 source_file: "voice_gateway/__main__.py"
 type: "code"
-community: "Voice Gateway Uvicorn Entrypoint (port 8765, WS "
+community: "append_finding.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Uvicorn_Entrypoint_port_8765_WS_
+  - community/append_findingpy
 ---
 
 # Voice Gateway Uvicorn Entrypoint (port 8765, WS ping disabled)
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Uvicorn_Entrypoint_port_8765_WS_
+#graphify/code #graphify/EXTRACTED #community/append_findingpy

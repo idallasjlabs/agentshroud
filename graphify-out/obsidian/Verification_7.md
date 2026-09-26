@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/03-session-isolation.md"
+source_file: "docs/planning/redteam/05-credential-isolation.md"
 type: "document"
-community: "Implement per-user session isolation using Teleg"
-location: "L228"
+community: "wazuh_client.py"
+location: "L285"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implement_per-user_session_isolation_using_Teleg
+  - community/wazuh_clientpy
 ---
 
 # Verification
 
 ## Connections
-- [[Implement per-user session isolation using Telegram user ID]] - `contains` [EXTRACTED]
+- [[Remove secret mounts from agent container and implement transparent credential injection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implement_per-user_session_isolation_using_Teleg
+#graphify/document #graphify/EXTRACTED #community/wazuh_clientpy

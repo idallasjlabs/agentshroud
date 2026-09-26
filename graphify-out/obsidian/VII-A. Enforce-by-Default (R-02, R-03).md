@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "VII. v0.8.0 Remediation"
+community: "§1 — Re-run of Prior Scenarios"
 location: "L205"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/VII_v080_Remediation
+  - community/1__Re-run_of_Prior_Scenarios
 ---
 
 # VII-A. Enforce-by-Default (R-02, R-03)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[VII. v0.8.0 Remediation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/VII_v080_Remediation
+#graphify/document #graphify/EXTRACTED #community/1__Re-run_of_Prior_Scenarios

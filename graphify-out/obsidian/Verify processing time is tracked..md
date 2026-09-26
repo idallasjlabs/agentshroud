@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "test_e2e_proxy.py"
+community: "KillSwitchMonitor"
 location: "L610"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/KillSwitchMonitor
 ---
 
 # Verify processing time is tracked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pipeline_processing_time()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

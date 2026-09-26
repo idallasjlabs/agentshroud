@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md"
 type: "concept"
-community: "Voice Gateway Service (STT/TTS WebSocket Bridge "
+community: "AgentShroud Typography Guidelines"
 location: "§2.1"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Service_STT/TTS_WebSocket_Bridge_
+  - community/AgentShroud_Typography_Guidelines
 ---
 
 # Voice Gateway Service (STT/TTS WebSocket Bridge to Governed Path)
@@ -17,4 +17,4 @@ tags:
 - [[MicroLink Native Tailscale Client for ESP32 (Requires PSRAM)]] - `shares_data_with` [EXTRACTED]
 - [[faster-whisper STT Engine (Local, CPU-friendly)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Voice_Gateway_Service_STT/TTS_WebSocket_Bridge_
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Typography_Guidelines

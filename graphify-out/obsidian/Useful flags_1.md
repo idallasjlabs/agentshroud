@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/openai-whisper-api/SKILL.md"
+source_file: "skills/openclaw/summarize/SKILL.md"
 type: "document"
-community: "openai-whisper-api/SKILL.md"
-location: "L31"
+community: "browser-extension/manifest.json"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openai-whisper-api/SKILLmd
+  - community/browser-extension/manifestjson
 ---
 
 # Useful flags
 
 ## Connections
-- [[OpenAI Whisper API (curl)]] - `contains` [EXTRACTED]
+- [[Summarize]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openai-whisper-api/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/browser-extension/manifestjson

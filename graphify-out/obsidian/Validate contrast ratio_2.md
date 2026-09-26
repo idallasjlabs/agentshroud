@@ -1,17 +1,18 @@
 ---
 source_file: "docker/config/openclaw/skills/i-bs/SKILL.md"
 type: "document"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "AgentShroud Semgrep SAST Configuration"
 location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/AgentShroud_Semgrep_SAST_Configuration
 ---
 
 # Validate contrast ratio
 
 ## Connections
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_137]] - `contains` [EXTRACTED]
+- [[SKILL_142]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Semgrep_SAST_Configuration

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-cicd/README.md"
+source_file: ".agents/skills/i-ti/README.md"
 type: "document"
-community: "CI/CD Pipeline Advisor (README)"
+community: "1. GitHub MCP Authentication Reset"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_README
+  - community/1_GitHub_MCP_Authentication_Reset
 ---
 
 # Usage
 
 ## Connections
-- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README
+#graphify/document #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset

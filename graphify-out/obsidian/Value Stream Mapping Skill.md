@@ -1,13 +1,13 @@
 ---
 source_file: ".agents/skills/i-value-stream-mapping/SKILL.md"
 type: "document"
-community: "Value Stream Mapping Skill"
+community: "agentshroud-redteam/references/steve-hay-assessm"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Value_Stream_Mapping_Skill
+  - community/agentshroud-redteam/references/steve-hay-assessm
 ---
 
 # Value Stream Mapping Skill
 
-#graphify/document #graphify/EXTRACTED #community/Value_Stream_Mapping_Skill
+#graphify/document #graphify/EXTRACTED #community/agentshroud-redteam/references/steve-hay-assessm

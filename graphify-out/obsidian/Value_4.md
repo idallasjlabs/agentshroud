@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
+source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
 type: "document"
-community: "HTTP_PROXY / HTTPS_PROXY"
+community: "lvgl_kawaii_face.c"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/HTTP_PROXY_/_HTTPS_PROXY
+  - community/lvgl_kawaii_facec
 ---
 
 # Value
 
 ## Connections
-- [[HTTP_PROXY  HTTPS_PROXY]] - `contains` [EXTRACTED]
+- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/HTTP_PROXY_/_HTTPS_PROXY
+#graphify/document #graphify/EXTRACTED #community/lvgl_kawaii_facec

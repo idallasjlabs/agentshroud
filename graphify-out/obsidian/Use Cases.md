@@ -1,17 +1,19 @@
 ---
-source_file: "skills/custom/browser-fetch/SKILL.md"
+source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Browser Fetch Skill"
-location: "L12"
+community: "Multi-Agent Role Matrix"
+location: "L527"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Fetch_Skill
+  - community/Multi-Agent_Role_Matrix
 ---
 
 # Use Cases
 
 ## Connections
-- [[Browser Fetch Skill]] - `contains` [EXTRACTED]
+- [[Best Use Cases for Distributed Node Approach]] - `contains` [EXTRACTED]
+- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
+- [[Not Ideal For]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Fetch_Skill
+#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix

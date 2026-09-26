@@ -1,18 +1,17 @@
 ---
-source_file: "BRAND.md"
+source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "AgentShroud™ Brand Guidelines"
-location: "L52"
+community: "TestCollaboratorPersistence"
+location: "L201"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/TestCollaboratorPersistence
 ---
 
 # Voice & Tone
 
 ## Connections
-- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
-- [[AgentShroud™ Brand Guidelines_1]] - `references` [EXTRACTED]
+- [[Writing Style Rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/document #graphify/EXTRACTED #community/TestCollaboratorPersistence

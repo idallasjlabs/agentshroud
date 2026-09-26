@@ -1,17 +1,23 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/README.md"
+source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "MCP Auth Reset (MCPM-AUTH-RESET)"
-location: "L10"
+community: "AgentShroud v0.7.0 Blue Team Security Audit Repo"
+location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_Auth_Reset_MCPM-AUTH-RESET
+  - community/AgentShroud_v070_Blue_Team_Security_Audit_Repo
 ---
 
 # Usage
 
 ## Connections
-- [[MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_3]] - `contains` [EXTRACTED]
+- [[Click Element_1]] - `contains` [EXTRACTED]
+- [[Extract Data_1]] - `contains` [EXTRACTED]
+- [[Fetch JavaScript-Heavy Page (Node.js)_1]] - `contains` [EXTRACTED]
+- [[Fill Form_1]] - `contains` [EXTRACTED]
+- [[Navigate to URL_1]] - `contains` [EXTRACTED]
+- [[Take Screenshot_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_Auth_Reset_MCPM-AUTH-RESET
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Blue_Team_Security_Audit_Repo

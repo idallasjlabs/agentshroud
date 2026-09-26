@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/01-enforce-by-default.md"
+source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "Flip core security modules from monitor to enfor"
-location: "L130"
+community: "TestCheckCommandExecution"
+location: "L489"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Flip_core_security_modules_from_monitor_to_enfor
+  - community/TestCheckCommandExecution
 ---
 
 # Verification
 
 ## Connections
-- [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
+- [[AgentShroud™ CVE Mitigation Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Flip_core_security_modules_from_monitor_to_enfor
+#graphify/document #graphify/EXTRACTED #community/TestCheckCommandExecution

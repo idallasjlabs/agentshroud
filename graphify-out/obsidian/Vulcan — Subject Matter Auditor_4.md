@@ -1,24 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-vulcan/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-vulcan/README.md"
 type: "document"
-community: "Vulcan — Subject Matter Auditor"
-location: "L6"
+community: "BaseModel"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Vulcan__Subject_Matter_Auditor
+  - community/BaseModel
 ---
 
 # Vulcan — Subject Matter Auditor
 
 ## Connections
-- [[Input Requirements_22]] - `contains` [EXTRACTED]
-- [[Output Format_35]] - `contains` [EXTRACTED]
-- [[Persona_17]] - `contains` [EXTRACTED]
-- [[Quality Checklist_19]] - `contains` [EXTRACTED]
-- [[Role_102]] - `contains` [EXTRACTED]
-- [[System Prompt_17]] - `contains` [EXTRACTED]
-- [[User Prompt Template_10]] - `contains` [EXTRACTED]
-- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[Purpose_110]] - `contains` [EXTRACTED]
+- [[README_115]] - `contains` [EXTRACTED]
+- [[Related Skills_119]] - `contains` [EXTRACTED]
+- [[SKILL_142]] - `contains` [EXTRACTED]
+- [[Usage_120]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor
+#graphify/document #graphify/EXTRACTED #community/BaseModel

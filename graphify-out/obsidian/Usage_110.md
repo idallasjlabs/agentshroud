@@ -1,24 +1,17 @@
 ---
-source_file: "docker/README.md"
+source_file: "docker/config/openclaw/skills/i-qa/README.md"
 type: "document"
-community: "AgentShroud Docker Configuration"
-location: "L274"
+community: "TestScoreMalwareDefense"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Docker_Configuration
+  - community/TestScoreMalwareDefense
 ---
 
 # Usage
 
 ## Connections
-- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
-- [[Check Status]] - `contains` [EXTRACTED]
-- [[Hermes  HCI]] - `contains` [EXTRACTED]
-- [[Port Reference]] - `contains` [EXTRACTED]
-- [[Start the Stack]] - `contains` [EXTRACTED]
-- [[Stop the Stack]] - `contains` [EXTRACTED]
-- [[Test Chat]] - `contains` [EXTRACTED]
-- [[View Logs]] - `contains` [EXTRACTED]
+- [[Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration
+#graphify/document #graphify/EXTRACTED #community/TestScoreMalwareDefense

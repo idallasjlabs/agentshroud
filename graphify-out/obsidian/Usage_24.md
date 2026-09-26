@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sad/README.md"
+source_file: ".agents/skills/i-oracle/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
-location: "L9"
+community: "AgentShroud System Architecture Document (SAD)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/AgentShroud_System_Architecture_Document_SAD
 ---
 
 # Usage
 
 ## Connections
-- [[System Audit Documentation]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Architecture_Document_SAD

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md"
+source_file: "docs/vault/04 - Environment Variables/LOG_LEVEL.md"
 type: "document"
-community: "SOUL"
-location: "L19"
+community: "AuditStore"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SOUL
+  - community/AuditStore
 ---
 
 # Values
 
 ## Connections
-- [[SOUL]] - `contains` [EXTRACTED]
+- [[LOG_LEVEL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SOUL
+#graphify/document #graphify/EXTRACTED #community/AuditStore

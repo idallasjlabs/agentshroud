@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Credential Management - 1Password Integration"
+community: "Credential Isolation — Gateway op-proxy (ACTIVE)"
 location: "L200"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Credential_Management_-_1Password_Integration
+  - community/Credential_Isolation__Gateway_op-proxy_ACTIVE
 ---
 
 # Vault Access
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Credential Management - 1Password Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Credential_Management_-_1Password_Integration
+#graphify/document #graphify/EXTRACTED #community/Credential_Isolation__Gateway_op-proxy_ACTIVE

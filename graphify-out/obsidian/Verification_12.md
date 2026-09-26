@@ -1,18 +1,17 @@
 ---
-source_file: "docker/DOCKER-VPN-NETWORKING.md"
+source_file: "docs/setup/IMESSAGE_FIX.md"
 type: "document"
-community: "Docker Desktop Network Settings — Cisco AnyConne"
-location: "L93"
+community: "TestBenchmarkRegression"
+location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Desktop_Network_Settings__Cisco_AnyConne
+  - community/TestBenchmarkRegression
 ---
 
 # Verification
 
 ## Connections
-- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - `contains` [EXTRACTED]
-- [[With VPN connected]] - `contains` [EXTRACTED]
+- [[iMessage Integration Fix - Using imsg + imessage-exporter]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Desktop_Network_Settings__Cisco_AnyConne
+#graphify/document #graphify/EXTRACTED #community/TestBenchmarkRegression

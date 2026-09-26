@@ -1,24 +1,20 @@
 ---
-source_file: "gateway/soc/models.py"
+source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "SOCWebSocketHandler"
-location: "L57"
+community: "EncryptedStore"
+location: "L14"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - graphify/INFERRED
+  - community/EncryptedStore
 ---
 
 # UserRole
 
 ## Connections
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[ContributorRecord]] - `uses` [INFERRED]
-- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[ContributorRecord_1]] - `uses` [INFERRED]
+- [[Platform]] - `uses` [INFERRED]
 - [[UserRole_1]] - `uses` [INFERRED]
-- [[contributors.py]] - `imports` [EXTRACTED]
-- [[socmodels.py]] - `contains` [EXTRACTED]
-- [[str_2]] - `inherits` [EXTRACTED]
-- [[test_soc_models.py]] - `imports` [EXTRACTED]
+- [[_role_enum()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/code #graphify/INFERRED #community/EncryptedStore

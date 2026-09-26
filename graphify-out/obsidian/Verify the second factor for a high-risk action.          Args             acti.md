@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mfa_guard.py"
 type: "rationale"
-community: "test_mfa_guard.py"
+community: "TestAuth"
 location: "L215"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/TestAuth
 ---
 
 # Verify the second factor for a high-risk action.          Args:             acti
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.verify()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/rationale #graphify/EXTRACTED #community/TestAuth

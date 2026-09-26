@@ -1,17 +1,17 @@
 ---
-source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
+source_file: "docs/architecture/IDENTITY.md"
 type: "document"
-community: "System Instructions: Credential Security (Ultra-"
-location: "L304"
+community: "LOW Findings"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Instructions_Credential_Security_Ultra-
+  - community/LOW_Findings
 ---
 
-# Via Telegram
+# Via Telegram:
 
 ## Connections
-- [[💬 Example Conversations]] - `contains` [EXTRACTED]
+- [[💬 Communication Flow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Instructions_Credential_Security_Ultra-
+#graphify/document #graphify/EXTRACTED #community/LOW_Findings

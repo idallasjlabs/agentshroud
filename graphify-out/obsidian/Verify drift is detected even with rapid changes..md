@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "EncryptedStore"
+community: "lifespan.py"
 location: "L923"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/lifespanpy
 ---
 
 # Verify drift is detected even with rapid changes.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_simultaneous_baseline_and_config_change()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EncryptedStore
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

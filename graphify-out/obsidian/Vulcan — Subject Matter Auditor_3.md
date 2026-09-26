@@ -1,24 +1,25 @@
 ---
-source_file: ".agents/skills/i-vulcan/SKILL.md"
+source_file: "docker/config/hermes/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Vulcan — Subject Matter Auditor"
+community: "Socrates — Dialogue Architect"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Vulcan__Subject_Matter_Auditor
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Vulcan — Subject Matter Auditor
 
 ## Connections
-- [[.agentsskillsi-vulcanSKILL]] - `contains` [EXTRACTED]
-- [[Input Requirements_21]] - `contains` [EXTRACTED]
-- [[Output Format_34]] - `contains` [EXTRACTED]
-- [[Persona_16]] - `contains` [EXTRACTED]
-- [[Quality Checklist_18]] - `contains` [EXTRACTED]
-- [[Role_99]] - `contains` [EXTRACTED]
-- [[System Prompt_16]] - `contains` [EXTRACTED]
-- [[User Prompt Template_9]] - `contains` [EXTRACTED]
+- [[Input Requirements_19]] - `contains` [EXTRACTED]
+- [[Output Format_25]] - `contains` [EXTRACTED]
+- [[Persona_15]] - `contains` [EXTRACTED]
+- [[Quality Checklist_17]] - `contains` [EXTRACTED]
+- [[Role_75]] - `contains` [EXTRACTED]
+- [[SKILL_79]] - `contains` [EXTRACTED]
+- [[SKILL_126]] - `contains` [EXTRACTED]
+- [[System Prompt_15]] - `contains` [EXTRACTED]
+- [[User Prompt Template_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

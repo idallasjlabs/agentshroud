@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: ".get_or_create_session()"
+community: "KeyVaultConfig"
 location: "L259"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/get_or_create_session
+  - community/KeyVaultConfig
 ---
 
 # Validate and sanitize bot_id to prevent path traversal.          Allows alphanum
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._validate_bot_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/get_or_create_session
+#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig

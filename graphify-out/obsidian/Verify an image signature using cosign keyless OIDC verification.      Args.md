@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/image_verifier.py"
 type: "rationale"
-community: "test_image_verifier.py"
+community: "MultiHostResult"
 location: "L36"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_image_verifierpy
+  - community/MultiHostResult
 ---
 
 # Verify an image signature using cosign keyless OIDC verification.      Args:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[verify_image()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_image_verifierpy
+#graphify/rationale #graphify/EXTRACTED #community/MultiHostResult

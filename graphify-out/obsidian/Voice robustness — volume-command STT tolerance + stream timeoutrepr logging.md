@@ -1,13 +1,13 @@
 ---
 source_file: "CHANGELOG.md"
 type: "rationale"
-community: "Voice robustness — volume-command STT tolerance "
+community: ".test_different_requests_not_in_cooldown()"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_robustness__volume-command_STT_tolerance_
+  - community/test_different_requests_not_in_cooldown
 ---
 
 # Voice robustness — volume-command STT tolerance + stream timeout/repr logging
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_robustness__volume-command_STT_tolerance_
+#graphify/rationale #graphify/EXTRACTED #community/test_different_requests_not_in_cooldown

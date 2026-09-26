@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "rationale"
-community: "lifespan.py"
+community: "TrustManager"
 location: "L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/TrustManager
 ---
 
 # Verify get_module_mode returns enforce when no override is set.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGetModuleModeEnforceDefault]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

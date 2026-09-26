@@ -1,19 +1,19 @@
 ---
 source_file: "skills/openclaw/voice-call/SKILL.md"
 type: "document"
-community: "OpenClaw Skill Metadata Schema (frontmatter conv"
+community: "browser-extension/manifest.json"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv
+  - community/browser-extension/manifestjson
 ---
 
 # Voice Call
 
 ## Connections
 - [[CLI]] - `contains` [EXTRACTED]
+- [[SKILL_237]] - `contains` [EXTRACTED]
 - [[Tool]] - `contains` [EXTRACTED]
-- [[voice-callSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv
+#graphify/document #graphify/EXTRACTED #community/browser-extension/manifestjson

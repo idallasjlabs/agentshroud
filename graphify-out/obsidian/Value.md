@@ -1,21 +1,21 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "main.rs"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L255"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Value
 
 ## Connections
-- [[.get()_2]] - `references` [EXTRACTED]
-- [[.get()_3]] - `references` [EXTRACTED]
+- [[.get()]] - `references` [EXTRACTED]
+- [[.get()_1]] - `references` [EXTRACTED]
+- [[.post()]] - `references` [EXTRACTED]
 - [[.post()_1]] - `references` [EXTRACTED]
-- [[.post()_2]] - `references` [EXTRACTED]
 - [[.request()]] - `references` [EXTRACTED]
 - [[.request()_1]] - `references` [EXTRACTED]
 - [[FakeTransport]] - `references` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[print_output()]] - `references` [EXTRACTED]
 - [[render_output_lines()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

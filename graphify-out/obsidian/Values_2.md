@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/LOG_LEVEL.md"
+source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
 type: "document"
-community: "LOG_LEVEL"
+community: "chatbot/main.py"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LOG_LEVEL
+  - community/chatbot/mainpy
 ---
 
 # Values
 
 ## Connections
-- [[LOG_LEVEL_1]] - `contains` [EXTRACTED]
+- [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LOG_LEVEL
+#graphify/document #graphify/EXTRACTED #community/chatbot/mainpy

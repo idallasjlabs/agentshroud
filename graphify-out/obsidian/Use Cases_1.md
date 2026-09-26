@@ -1,19 +1,17 @@
 ---
-source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
+source_file: "docs/planning/v0.8/v0.8.0-egress-firewall.md"
 type: "document"
-community: "Distributed OpenClaw Node Architecture — Raspber"
-location: "L527"
+community: "Skill: Create PR with Pre-Flight Audit (CRPR)"
+location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Distributed_OpenClaw_Node_Architecture__Raspber
+  - community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
 ---
 
 # Use Cases
 
 ## Connections
-- [[Best Use Cases for Distributed Node Approach]] - `contains` [EXTRACTED]
-- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
-- [[Not Ideal For]] - `contains` [EXTRACTED]
+- [[Feature Global Monitor-Only Mode (Observatory Mode)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspber
+#graphify/document #graphify/EXTRACTED #community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR

@@ -1,21 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-sad/README.md"
 type: "document"
-community: "SecureBrowser - Enterprise Secure Browser Automa"
-location: "L54"
+community: "BaseModel"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automa
+  - community/BaseModel
 ---
 
 # Usage
 
 ## Connections
-- [[Click Element_1]] - `contains` [EXTRACTED]
-- [[Extract Data_1]] - `contains` [EXTRACTED]
-- [[Navigate to URL_1]] - `contains` [EXTRACTED]
-- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
-- [[Take Screenshot_1]] - `contains` [EXTRACTED]
+- [[System Audit Documentation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automa
+#graphify/document #graphify/EXTRACTED #community/BaseModel

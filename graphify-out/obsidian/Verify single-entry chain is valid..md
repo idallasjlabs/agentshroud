@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "AuditChain"
+community: "RBACConfig"
 location: "L567"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/RBACConfig
 ---
 
 # Verify single-entry chain is valid.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_audit_chain_single_entry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AuditChain
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

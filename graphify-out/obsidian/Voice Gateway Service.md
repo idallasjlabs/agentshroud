@@ -1,11 +1,11 @@
 ---
 source_file: "docker/docker-compose.yml"
 type: "code"
-community: "Voice Gateway Service"
+community: "Troubleshooting"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Voice_Gateway_Service
+  - community/Troubleshooting
 ---
 
 # Voice Gateway Service
@@ -15,4 +15,4 @@ tags:
 - [[Voice Gateway Port 8766 Offset (Lima per-port SSH forwarder race)]] - `rationale_for` [EXTRACTED]
 - [[Voice Interface (STTTTS, wake word)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Voice_Gateway_Service
+#graphify/code #graphify/INFERRED #community/Troubleshooting

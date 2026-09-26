@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/linux.md"
 type: "document"
-community: "Deploying AgentShroud on Linux (x86_64 / aarch64"
+community: "Remediation"
 location: "L71"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64
+  - community/Remediation
 ---
 
 # VPS Deployment Notes
@@ -16,4 +16,4 @@ tags:
 - [[Firewall]] - `contains` [EXTRACTED]
 - [[Non-Root User]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64
+#graphify/document #graphify/EXTRACTED #community/Remediation

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "75 Security Modules"
+community: "Release Notes - AgentShroud v0.9.0"
 location: "L123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/75_Security_Modules
+  - community/Release_Notes_-_AgentShroud_v090
 ---
 
 # V-B. Prompt Injection Defense
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[75 Security Modules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/75_Security_Modules
+#graphify/document #graphify/EXTRACTED #community/Release_Notes_-_AgentShroud_v090

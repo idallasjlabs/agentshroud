@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "SSHProxy"
+community: "ApprovalRequest"
 location: "L87"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/ApprovalRequest
 ---
 
 # Validate that each target URL uses http/https and targets an internal Docker hos
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.validate_targets()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SSHProxy
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/playwright.md"
 type: "document"
-community: "Playwright"
+community: "Pre-Deployment Checklist"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright
+  - community/Pre-Deployment_Checklist
 ---
 
 # Volume
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Playwright]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "rationale"
-community: "ConsentFramework"
+community: "test_filter_xml_blocks.py"
 location: "L94"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/test_filter_xml_blockspy
 ---
 
 # Validate a server configuration before execution.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.validate_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ConsentFramework
+#graphify/rationale #graphify/EXTRACTED #community/test_filter_xml_blockspy

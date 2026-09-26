@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
+source_file: "skills/custom/browser-fetch/SKILL.md"
 type: "document"
-community: "AGENTSHROUD_CONFIG"
-location: "L22"
+community: "TestRecommendedConfig"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AGENTSHROUD_CONFIG
+  - community/TestRecommendedConfig
 ---
 
 # Usage
 
 ## Connections
-- [[AGENTSHROUD_CONFIG_1]] - `contains` [EXTRACTED]
+- [[Browser Fetch Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_CONFIG
+#graphify/document #graphify/EXTRACTED #community/TestRecommendedConfig
