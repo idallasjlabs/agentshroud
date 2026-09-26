@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/SYSTEM_STATUS.md"
 type: "document"
-community: "TELEGRAM_ISSUES.md"
+community: "Mode A — Single task"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TELEGRAM_ISSUESmd
+  - community/Mode_A__Single_task
 ---
 
 # SYSTEM_STATUS.md
@@ -16,4 +16,4 @@ tags:
 - [[Anthropic API Credits Exhausted Blocker]] - `references` [EXTRACTED]
 - [[iMessage Automation Permission Blocker]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

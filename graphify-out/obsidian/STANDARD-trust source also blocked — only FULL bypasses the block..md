@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "KeyVaultConfig"
+community: "RBACConfig"
 location: "L713"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/RBACConfig
 ---
 
 # STANDARD-trust source: also blocked — only FULL bypasses the block.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_standard_trust_tool_result_injection_is_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

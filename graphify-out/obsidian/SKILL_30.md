@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mc/SKILL.md"
 type: "document"
-community: "Community 742"
+community: "Skill: Security Review (SEC)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_742
+  - community/Skill_Security_Review_SEC
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GSDE&G Development Master Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_742
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

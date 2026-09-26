@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "rationale"
-community: "WebProxy"
+community: "FetchOutcome"
 location: "L442"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/FetchOutcome
 ---
 
 # Scan a response body for prompt injection, PII, and hidden content.          Thi
 
 ## Connections
-- [[.scan_response()_2]] - `rationale_for` [EXTRACTED]
+- [[.scan_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxy
+#graphify/rationale #graphify/EXTRACTED #community/FetchOutcome

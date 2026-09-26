@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
 type: "document"
-community: "Deliverables"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-P"
 location: "L264"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deliverables
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P
 ---
 
 # Script Templates
 
 ## Connections
-- [[Deliverables_3]] - `contains` [EXTRACTED]
+- [[Deliverables_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deliverables
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P

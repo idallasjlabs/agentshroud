@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/playwright.md"
+source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
 type: "document"
-community: "Playwright"
-location: "L32"
+community: "TestOverallDetectionRate"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright
+  - community/TestOverallDetectionRate
 ---
 
 # Security Controls
 
 ## Connections
-- [[Playwright]] - `contains` [EXTRACTED]
+- [[browser-fetch.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright
+#graphify/document #graphify/EXTRACTED #community/TestOverallDetectionRate

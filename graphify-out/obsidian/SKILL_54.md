@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Community 699"
+community: "Core Components"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_699
+  - community/Core_Components
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Session Prompt Generator (SESSION-PROMPT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_699
+#graphify/document #graphify/EXTRACTED #community/Core_Components

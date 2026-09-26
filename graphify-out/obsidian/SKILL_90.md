@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-incident-response/SKILL.md"
 type: "document"
-community: "Community 1462"
+community: ".test_lifespan_op_prewarm_guarded_against_pytest"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1462
+  - community/test_lifespan_op_prewarm_guarded_against_pytest
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill incident-response_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1462
+#graphify/document #graphify/EXTRACTED #community/test_lifespan_op_prewarm_guarded_against_pytest

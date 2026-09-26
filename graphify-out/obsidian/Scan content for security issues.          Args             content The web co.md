@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "rationale"
-community: "URLAnalyzer"
+community: "cls"
 location: "L193"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/URLAnalyzer
+  - community/cls
 ---
 
 # Scan content for security issues.          Args:             content: The web co
 
 ## Connections
-- [[.scan()_3]] - `rationale_for` [EXTRACTED]
+- [[.scan()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/URLAnalyzer
+#graphify/rationale #graphify/EXTRACTED #community/cls

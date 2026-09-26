@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "SecureBrowser - Enterprise Secure Browser Automa"
+community: "openclaw/workspace/jira_dev_ticket.py"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automa
+  - graphify/INFERRED
+  - community/openclaw/workspace/jira_dev_ticketpy
 ---
 
 # SecureBrowser SKILL
 
 ## Connections
-- [[browser-fetch.js_2]] - `semantically_similar_to` [INFERRED]
-- [[securebrowserSKILL]] - `references` [EXTRACTED]
+- [[SKILL_194]] - `references` [EXTRACTED]
+- [[browser-fetch.js]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automa
+#graphify/document #graphify/INFERRED #community/openclaw/workspace/jira_dev_ticketpy

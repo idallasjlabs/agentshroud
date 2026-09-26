@@ -1,12 +1,12 @@
 ---
 source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "Credential Management - 1Password Integration"
+community: "competitive-report-*.md dated reports"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Credential_Management_-_1Password_Integration
+  - community/competitive-report-md_dated_reports
 ---
 
 # SYSTEM-INSTRUCTIONS-SECURITY.md
@@ -17,4 +17,4 @@ tags:
 - [[System Instructions Credential Security (Ultra-Conservative)]] - `contains` [EXTRACTED]
 - [[bot-capabilities]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Credential_Management_-_1Password_Integration
+#graphify/document #graphify/EXTRACTED #community/competitive-report-md_dated_reports

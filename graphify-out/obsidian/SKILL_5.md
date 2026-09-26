@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-athena/SKILL.md"
 type: "document"
-community: "Community 697"
+community: "AgentShroud Consolidated Issues Report"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_697
+  - community/AgentShroud_Consolidated_Issues_Report
 ---
 
 # SKILL.md
@@ -15,4 +15,4 @@ tags:
 - [[description of what this does]] - `contains` [EXTRACTED]
 - [[Athena — Knowledge Distiller_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_697
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Consolidated_Issues_Report

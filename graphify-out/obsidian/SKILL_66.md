@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-agile/SKILL.md"
 type: "document"
-community: "Community 1454"
+community: "_make_tm()"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1454
+  - community/_make_tm
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill agile_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1454
+#graphify/document #graphify/EXTRACTED #community/_make_tm

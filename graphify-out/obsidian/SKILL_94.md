@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mc/SKILL.md"
 type: "document"
-community: "Community 747"
+community: "Skill: Security Review (SEC)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_747
+  - community/Skill_Security_Review_SEC
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GSDE&G Development Master Checklist_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_747
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

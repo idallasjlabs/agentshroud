@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-10-data-dictionary.svg"
 type: "concept"
-community: "AgentShroud Data Assets (root)"
+community: "gh-issues/SKILL.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Data_Assets_root
+  - community/gh-issues/SKILLmd
 ---
 
 # SQLite DBs (Backed by SQLite)
@@ -15,4 +15,4 @@ tags:
 - [[approval_items table (pending, approved, rejected, expired; 1h TTL)]] - `conceptually_related_to` [EXTRACTED]
 - [[ledger table (indexed on timestamp, source, forwarded_to)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Data_Assets_root
+#graphify/concept #graphify/EXTRACTED #community/gh-issues/SKILLmd

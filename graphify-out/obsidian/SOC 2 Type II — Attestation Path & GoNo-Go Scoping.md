@@ -1,12 +1,12 @@
 ---
 source_file: "docs/compliance/soc2-attestation-path.md"
 type: "document"
-community: "Recommendation"
+community: "AgentShroud Web Control Center - Implementation "
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Recommendation
+  - community/AgentShroud_Web_Control_Center_-_Implementation_
 ---
 
 # SOC 2 Type II — Attestation Path & Go/No-Go Scoping
@@ -20,4 +20,4 @@ tags:
 - [[Why this is on the board]] - `contains` [EXTRACTED]
 - [[soc2-attestation-path]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Recommendation
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Web_Control_Center_-_Implementation_

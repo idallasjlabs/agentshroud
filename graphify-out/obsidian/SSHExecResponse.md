@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "SSHProxy"
 location: "L246"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ingest_api/mainpy
+  - community/SSHProxy
 ---
 
 # SSHExecResponse
@@ -14,16 +14,16 @@ tags:
 ## Connections
 - [[AuthRequired]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
-- [[Exception]] - `uses` [INFERRED]
+- [[Exception_1]] - `uses` [INFERRED]
 - [[MCPProxyRequest]] - `uses` [INFERRED]
 - [[MCPResultRequest]] - `uses` [INFERRED]
 - [[OpProxyRequest]] - `uses` [INFERRED]
-- [[Request]] - `uses` [INFERRED]
+- [[Request_1]] - `uses` [INFERRED]
 - [[Response from SSH command execution]] - `rationale_for` [EXTRACTED]
-- [[SSHExecRequest_1]] - `uses` [INFERRED]
-- [[SSHWriteFileRequest_1]] - `uses` [INFERRED]
-- [[WebSocket]] - `uses` [INFERRED]
-- [[ingest_apimain.py]] - `imports` [EXTRACTED]
-- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
+- [[SSHExecRequest]] - `uses` [INFERRED]
+- [[SSHWriteFileRequest]] - `uses` [INFERRED]
+- [[WebSocket_2]] - `uses` [INFERRED]
+- [[main.py_2]] - `imports` [EXTRACTED]
+- [[models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ingest_api/mainpy
+#graphify/code #graphify/INFERRED #community/SSHProxy

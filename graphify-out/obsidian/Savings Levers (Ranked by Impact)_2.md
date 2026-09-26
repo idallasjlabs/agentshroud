@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-aws/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
 type: "document"
-community: "FY26 Cost Reduction Context"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-P"
 location: "L181"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/FY26_Cost_Reduction_Context
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P
 ---
 
 # Savings Levers (Ranked by Impact)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FY26 Cost Reduction Context_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/FY26_Cost_Reduction_Context
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P

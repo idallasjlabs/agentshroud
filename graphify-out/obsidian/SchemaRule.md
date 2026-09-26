@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_schema.py"
 type: "code"
-community: "OutputSchemaEnforcer"
+community: "hermes/skills/i-cr/SKILL.md"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputSchemaEnforcer
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # SchemaRule
@@ -21,4 +21,4 @@ tags:
 - [[output_schema.py]] - `contains` [EXTRACTED]
 - [[test_output_schema.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

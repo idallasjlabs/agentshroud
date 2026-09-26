@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "document"
-community: "AgentShroud Schema Documentation"
+community: "drift_detector.py"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Schema_Documentation
+  - community/drift_detectorpy
 ---
 
 # SQLite Database Schema
@@ -16,4 +16,4 @@ tags:
 - [[Approval Queue Schema]] - `contains` [EXTRACTED]
 - [[Database Connection Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Schema_Documentation
+#graphify/document #graphify/EXTRACTED #community/drift_detectorpy

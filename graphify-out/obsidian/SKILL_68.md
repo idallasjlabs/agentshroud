@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-architecture-review/SKILL.md"
 type: "document"
-community: "Community 1455"
+community: "MemoryIntegrityMonitor Tamper Detection"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1455
+  - community/MemoryIntegrityMonitor_Tamper_Detection
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill architecture-review_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1455
+#graphify/document #graphify/EXTRACTED #community/MemoryIntegrityMonitor_Tamper_Detection

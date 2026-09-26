@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "Community 54"
+community: "asyncio"
 location: "L837"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/asyncio
 ---
 
 # Secondary failover for Anthropic-format (/v1/messages) path translates and retur
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_local_secondary_failover_anthropic_path()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_54
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

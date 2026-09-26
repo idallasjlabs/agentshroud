@@ -1,18 +1,17 @@
 ---
-source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
+source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Distributed OpenClaw Node Architecture — Raspber"
-location: "L404"
+community: "openclaw/workspace/jira_dev_ticket.py"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Distributed_OpenClaw_Node_Architecture__Raspber
+  - community/openclaw/workspace/jira_dev_ticketpy
 ---
 
 # Security Architecture
 
 ## Connections
-- [[Defense in Depth]] - `contains` [EXTRACTED]
-- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
+- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspber
+#graphify/document #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy

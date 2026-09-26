@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "rationale"
-community: "A2AMessage"
+community: "hermes/skills/i-bs/README.md"
 location: "L373"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2AMessage
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Sanitize PII from A2A message payload. Returns list of sanitizations applied.
 
 ## Connections
 - [[._sanitize_message()]] - `rationale_for` [EXTRACTED]
-- [[._sanitize_message()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2AMessage
+#graphify/rationale #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

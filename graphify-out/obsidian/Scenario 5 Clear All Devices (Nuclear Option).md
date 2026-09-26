@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "AgentShroud Device Pairing Management"
+community: "Browser — Secure Browser Automation (SKILL)"
 location: "L264"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Device_Pairing_Management
+  - community/Browser__Secure_Browser_Automation_SKILL
 ---
 
 # Scenario 5: Clear All Devices (Nuclear Option)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Scenarios]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL

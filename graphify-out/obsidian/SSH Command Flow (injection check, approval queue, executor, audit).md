@@ -1,11 +1,11 @@
 ---
 source_file: "docs/flows/sequence-diagrams.md"
 type: "concept"
-community: "AgentShroud Sequence Diagrams (doc)"
+community: "Sprint Cadence Decision"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Sequence_Diagrams_doc
+  - community/Sprint_Cadence_Decision
 ---
 
 # SSH Command Flow (injection check, approval queue, executor, audit)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Sequence Diagrams (doc)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Sequence_Diagrams_doc
+#graphify/concept #graphify/EXTRACTED #community/Sprint_Cadence_Decision

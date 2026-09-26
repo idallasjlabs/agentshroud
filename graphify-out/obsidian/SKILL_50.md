@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sdlc/SKILL.md"
 type: "document"
-community: "Community 1446"
+community: "DNSFilterConfig"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1446
+  - community/DNSFilterConfig
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill sdlc]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1446
+#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig

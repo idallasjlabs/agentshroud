@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-kanban/SKILL.md"
 type: "document"
-community: "Community 1443"
+community: "AgentShroud Config with Tool Risk Tiers (example"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1443
+  - community/AgentShroud_Config_with_Tool_Risk_Tiers_example
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill kanban]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1443
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Config_with_Tool_Risk_Tiers_example

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/wacli/SKILL.md"
 type: "document"
-community: "Community 401"
+community: "browser-extension/manifest.json"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_401
+  - community/browser-extension/manifestjson
 ---
 
 # SKILL.md
@@ -16,4 +16,4 @@ tags:
 - [[SKILL_240]] - `semantically_similar_to` [INFERRED]
 - [[wacli]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Community_401
+#graphify/document #graphify/INFERRED #community/browser-extension/manifestjson

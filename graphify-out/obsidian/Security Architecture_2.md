@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
+community: "AgentShroud v0.7.0 Blue Team Security Audit Repo"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/AgentShroud_v070_Blue_Team_Security_Audit_Repo
 ---
 
 # Security Architecture
 
 ## Connections
-- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Blue_Team_Security_Audit_Repo

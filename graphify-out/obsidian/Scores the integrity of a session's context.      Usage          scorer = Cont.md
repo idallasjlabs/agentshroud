@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_integrity.py"
 type: "rationale"
-community: "ContextSegment"
+community: "ServiceManager"
 location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/ServiceManager
 ---
 
 # Scores the integrity of a session's context.      Usage::          scorer = Cont
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ContextIntegrityScorer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextSegment
+#graphify/rationale #graphify/EXTRACTED #community/ServiceManager

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md"
 type: "document"
-community: "Community 885"
+community: "ADR-001: Transparent Proxy Decision"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_885
+  - community/ADR-001_Transparent_Proxy_Decision
 ---
 
 # SOUL
@@ -21,4 +21,4 @@ tags:
 - [[Thinking Style]] - `contains` [EXTRACTED]
 - [[Values_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_885
+#graphify/document #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_Decision

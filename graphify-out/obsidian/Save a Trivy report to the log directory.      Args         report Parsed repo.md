@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trivy_report.py"
 type: "rationale"
-community: "test_daily_cve_report.py"
+community: "PrivacyPolicyEnforcer"
 location: "L169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/PrivacyPolicyEnforcer
 ---
 
 # Save a Trivy report to the log directory.      Args:         report: Parsed repo
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[save_report()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/rationale #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

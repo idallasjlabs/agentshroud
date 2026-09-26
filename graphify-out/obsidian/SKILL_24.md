@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-hermes/SKILL.md"
 type: "document"
-community: "Community 941"
+community: "HIGH — Should Fix Before Release"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_941
+  - community/HIGH__Should_Fix_Before_Release
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_941
+#graphify/document #graphify/EXTRACTED #community/HIGH__Should_Fix_Before_Release

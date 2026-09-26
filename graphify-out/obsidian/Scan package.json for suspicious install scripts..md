@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "GitGuard"
+community: "LLMProxy"
 location: "L244"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/LLMProxy
 ---
 
 # Scan package.json for suspicious install scripts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._scan_package_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GitGuard
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxy

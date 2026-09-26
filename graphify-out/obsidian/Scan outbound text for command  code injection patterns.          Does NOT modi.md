@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "rationale"
-community: "test_redteam_probes.py"
+community: "A2AProxyResult"
 location: "L149"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_redteam_probespy
+  - community/A2AProxyResult
 ---
 
 # Scan outbound text for command / code injection patterns.          Does NOT modi
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.scan_command_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_redteam_probespy
+#graphify/rationale #graphify/EXTRACTED #community/A2AProxyResult

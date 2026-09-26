@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/peekaboo/SKILL.md"
 type: "document"
-community: "Community 570"
+community: "apple_engine.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_570
+  - community/apple_enginepy
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Peekaboo]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_570
+#graphify/document #graphify/EXTRACTED #community/apple_enginepy

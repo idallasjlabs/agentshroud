@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "KeyVaultConfig"
+community: "RBACConfig"
 location: "L36"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/KeyVaultConfig
+  - community/RBACConfig
 ---
 
 # ScanResult
 
 ## Connections
 - [[._blocking_prompt_guard()]] - `calls` [EXTRACTED]
-- [[.scan()_2]] - `references` [EXTRACTED]
-- [[.scan_tool_result()]] - `references` [EXTRACTED]
+- [[.scan()_4]] - `references` [EXTRACTED]
+- [[.scan_tool_result()_2]] - `references` [EXTRACTED]
 - [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestContextGuardInPipeline]] - `uses` [INFERRED]
 - [[TestContextIntegrityInPipeline]] - `uses` [INFERRED]
 - [[TestEnvelopeSignerInPipeline]] - `uses` [INFERRED]
 - [[TestInboundPIIOwnerExemption]] - `uses` [INFERRED]
-- [[TestKeyLeakDetection]] - `uses` [INFERRED]
+- [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
 - [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
 - [[TestTrustViolationRecording]] - `uses` [INFERRED]
@@ -30,4 +30,4 @@ tags:
 - [[prompt_guard.py]] - `contains` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/KeyVaultConfig
+#graphify/code #graphify/INFERRED #community/RBACConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "ResourceGuard"
 location: "L209"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/ResourceGuard
 ---
 
 # Sanitize using Microsoft Presidio          Wraps synchronous Presidio calls in a
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._sanitize_presidio()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "AgentShroud Docker Configuration"
+community: "AlertTelegramRelay"
 location: "L257"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Docker_Configuration
+  - community/AlertTelegramRelay
 ---
 
 # Security Features (Deferred to Phase 5+)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration
+#graphify/document #graphify/EXTRACTED #community/AlertTelegramRelay

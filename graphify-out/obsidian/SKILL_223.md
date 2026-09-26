@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/oracle/SKILL.md"
 type: "document"
-community: "Community 715"
+community: "mcp_config.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_715
+  - community/mcp_configpy
 ---
 
 # SKILL.md
@@ -15,4 +15,4 @@ tags:
 - [[SKILL_214]] - `conceptually_related_to` [INFERRED]
 - [[oracle — best use]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Community_715
+#graphify/document #graphify/INFERRED #community/mcp_configpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "TestPathIsolationManager"
+community: "TrustManager"
 location: "L111"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/TrustManager
 ---
 
 # Sanitize user ID to prevent path traversal attacks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._sanitize_user_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

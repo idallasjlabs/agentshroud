@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "rationale"
-community: "SecureBrowser"
+community: "TestConfigValidation"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/TestConfigValidation
 ---
 
 # Secure browser automation with enterprise controls      Security guarantees:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SecureBrowser_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser
+#graphify/rationale #graphify/EXTRACTED #community/TestConfigValidation

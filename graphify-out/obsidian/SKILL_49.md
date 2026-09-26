@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-scrum/SKILL.md"
 type: "document"
-community: "Community 1445"
+community: "agentshroud-secrets.sh"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1445
+  - community/agentshroud-secretssh
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill scrum]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1445
+#graphify/document #graphify/EXTRACTED #community/agentshroud-secretssh

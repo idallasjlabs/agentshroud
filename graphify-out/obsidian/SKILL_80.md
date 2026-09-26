@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-crpr/SKILL.md"
 type: "document"
-community: "Community 607"
+community: "v1.3.0 — Platform Expansion (53 items)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_607
+  - community/v130__Platform_Expansion_53_items
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Create PR with Pre-Flight Audit (CRPR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_607
+#graphify/document #graphify/EXTRACTED #community/v130__Platform_Expansion_53_items

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "scanner_integration.py"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L1914"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Score domain 28: Inter-Agent Trust & Orchestration Security (0-5). OWASP ASI-03/
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_score_inter_agent_trust()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/rationale #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

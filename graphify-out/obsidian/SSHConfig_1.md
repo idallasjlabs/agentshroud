@@ -1,23 +1,18 @@
 ---
-source_file: "gateway/tests/test_ssh_proxy.py"
+source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "SSHProxy"
-location: "L19"
+community: "TelegramAPIProxy"
+location: "L138"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SSHProxy
+  - community/TelegramAPIProxy
 ---
 
 # SSHConfig
 
 ## Connections
-- [[.test_ssh_disabled_config()]] - `calls` [EXTRACTED]
-- [[SSHConfig_2]] - `uses` [INFERRED]
-- [[SSHHostConfig]] - `uses` [INFERRED]
-- [[SSHProxy_1]] - `uses` [INFERRED]
-- [[SSHResult]] - `uses` [INFERRED]
-- [[proxy()_4]] - `references` [EXTRACTED]
-- [[ssh_config()_1]] - `references` [EXTRACTED]
+- [[.__init__()_133]] - `references` [EXTRACTED]
+- [[SSHConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/SSHProxy
+#graphify/code #graphify/INFERRED #community/TelegramAPIProxy

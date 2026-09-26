@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "PromptProtection"
+community: "test_soc_realtime_coverage.py"
 location: "L176"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PromptProtection
+  - community/test_soc_realtime_coveragepy
 ---
 
 # Scan text for protected content and return redacted version.          Args:
 
 ## Connections
-- [[.scan_response()_1]] - `rationale_for` [EXTRACTED]
+- [[.scan_response()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PromptProtection
+#graphify/rationale #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

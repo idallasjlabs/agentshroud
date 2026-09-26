@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "rationale"
-community: "lifespan.py"
+community: "Athena — Knowledge Distiller"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Sanitize sensitive data in text.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._sanitize_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

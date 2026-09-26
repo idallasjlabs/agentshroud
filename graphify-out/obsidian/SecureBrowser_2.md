@@ -12,7 +12,7 @@ tags:
 # SecureBrowser
 
 ## Connections
-- [[.__init__()_56]] - `method` [EXTRACTED]
+- [[.__init__()_2]] - `method` [EXTRACTED]
 - [[._classify_risk()_2]] - `method` [EXTRACTED]
 - [[._domain_matches()_2]] - `method` [EXTRACTED]
 - [[._init_browser()_2]] - `method` [EXTRACTED]
@@ -23,14 +23,14 @@ tags:
 - [[._take_screenshot()_2]] - `method` [EXTRACTED]
 - [[._validate_url()_2]] - `method` [EXTRACTED]
 - [[.click()_2]] - `method` [EXTRACTED]
-- [[.close()_7]] - `method` [EXTRACTED]
+- [[.close()_2]] - `method` [EXTRACTED]
 - [[.detect_captcha()_2]] - `method` [EXTRACTED]
 - [[.extract()_2]] - `method` [EXTRACTED]
 - [[.fill_field()_2]] - `method` [EXTRACTED]
-- [[.get_audit_log()_3]] - `method` [EXTRACTED]
+- [[.get_audit_log()_2]] - `method` [EXTRACTED]
 - [[.navigate()_2]] - `method` [EXTRACTED]
 - [[Secure browser automation with enterprise controls      Security guarantees_2]] - `rationale_for` [EXTRACTED]
-- [[main()_10]] - `calls` [EXTRACTED]
-- [[openclawskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
+- [[browse.py_2]] - `contains` [EXTRACTED]
+- [[main()_8]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser

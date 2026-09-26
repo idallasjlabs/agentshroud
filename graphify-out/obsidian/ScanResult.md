@@ -1,22 +1,26 @@
 ---
-source_file: "gateway/tests/test_skill_guard.py"
+source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "SkillGuard"
-location: "L50"
+community: "cls"
+location: "L45"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/SkillGuard
+  - graphify/EXTRACTED
+  - community/cls
 ---
 
 # ScanResult
 
 ## Connections
-- [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_3]] - `uses` [INFERRED]
-- [[Severity]] - `uses` [INFERRED]
-- [[SkillGuard_1]] - `uses` [INFERRED]
-- [[SkillScanError]] - `uses` [INFERRED]
-- [[_finding_categories()]] - `references` [EXTRACTED]
+- [[._scan_encoded_payloads()]] - `references` [EXTRACTED]
+- [[._scan_hidden_content()]] - `references` [EXTRACTED]
+- [[._scan_pii()]] - `references` [EXTRACTED]
+- [[._scan_prompt_injection()]] - `references` [EXTRACTED]
+- [[._scan_zero_width()]] - `references` [EXTRACTED]
+- [[.finding_summary()]] - `method` [EXTRACTED]
+- [[.flagged()_1]] - `method` [EXTRACTED]
+- [[.scan()_1]] - `references` [EXTRACTED]
+- [[Result of scanning web content.]] - `rationale_for` [EXTRACTED]
+- [[web_content_scanner.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/cls

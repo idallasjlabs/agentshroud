@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-scrum/SKILL.md"
 type: "document"
-community: "Scrum Ceremony Facilitation"
+community: "OpenClaw cron: Collaborator Report - Morning (Te"
 tags:
   - graphify/document
   - graphify/AMBIGUOUS
-  - community/Scrum_Ceremony_Facilitation
+  - community/OpenClaw_cron_Collaborator_Report_-_Morning_Te
 ---
 
 # Scrum Ceremony Facilitation
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SDLC Governance]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/document #graphify/AMBIGUOUS #community/Scrum_Ceremony_Facilitation
+#graphify/document #graphify/AMBIGUOUS #community/OpenClaw_cron_Collaborator_Report_-_Morning_Te

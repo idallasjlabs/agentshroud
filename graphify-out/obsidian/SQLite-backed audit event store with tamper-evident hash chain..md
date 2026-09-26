@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "rationale"
-community: "AuditStore"
+community: "load_config()"
 location: "L123"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/load_config
 ---
 
 # SQLite-backed audit event store with tamper-evident hash chain.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AuditStore_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AuditStore
+#graphify/rationale #graphify/EXTRACTED #community/load_config

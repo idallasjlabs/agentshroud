@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pr/SKILL.md"
+source_file: "skills/openclaw/oracle/SKILL.md"
 type: "document"
-community: "Skill: Pull Request (PR) Generator"
-location: "L34"
+community: "mcp_config.py"
+location: "L113"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Pull_Request_PR_Generator
+  - community/mcp_configpy
 ---
 
 # Safety
 
 ## Connections
-- [[Content Requirements_2]] - `contains` [EXTRACTED]
+- [[oracle — best use]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator
+#graphify/document #graphify/EXTRACTED #community/mcp_configpy

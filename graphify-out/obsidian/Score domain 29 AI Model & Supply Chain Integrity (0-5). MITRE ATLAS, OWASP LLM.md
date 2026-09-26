@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "get_trivy_summary()"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L1935"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/get_trivy_summary
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Score domain 29: AI Model & Supply Chain Integrity (0-5). MITRE ATLAS, OWASP LLM
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_score_ai_model_supply_chain()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/get_trivy_summary
+#graphify/rationale #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

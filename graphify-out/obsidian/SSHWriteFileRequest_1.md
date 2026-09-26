@@ -1,31 +1,31 @@
 ---
-source_file: "gateway/ingest_api/main.py"
+source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L1099"
+community: "SSHProxy"
+location: "L261"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ingest_api/mainpy
+  - community/SSHProxy
 ---
 
 # SSHWriteFileRequest
 
 ## Connections
-- [[Action]] - `uses` [INFERRED]
-- [[ApprovalMode]] - `uses` [INFERRED]
-- [[ApprovalRequest_2]] - `uses` [INFERRED]
-- [[AuditExportConfig]] - `uses` [INFERRED]
-- [[AuditExporter]] - `uses` [INFERRED]
-- [[LedgerEntry]] - `uses` [INFERRED]
-- [[LedgerQueryResponse]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
+- [[.path_not_empty()]] - `method` [EXTRACTED]
+- [[.validate_base64()]] - `method` [EXTRACTED]
+- [[AuthRequired]] - `uses` [INFERRED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[Exception_1]] - `uses` [INFERRED]
+- [[MCPProxyRequest]] - `uses` [INFERRED]
+- [[MCPResultRequest]] - `uses` [INFERRED]
+- [[OpProxyRequest]] - `uses` [INFERRED]
+- [[Request_1]] - `uses` [INFERRED]
+- [[Request to write file content to an allowlisted SSH host.      Unlike SSHExecReq]] - `rationale_for` [EXTRACTED]
 - [[SSHExecRequest]] - `uses` [INFERRED]
-- [[SSHExecResponse]] - `uses` [INFERRED]
 - [[SSHWriteFileRequest]] - `uses` [INFERRED]
-- [[SSHWriteFileResponse]] - `uses` [INFERRED]
-- [[ssh_write_file()]] - `references` [EXTRACTED]
+- [[WebSocket_2]] - `uses` [INFERRED]
+- [[main.py_2]] - `imports` [EXTRACTED]
+- [[models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ingest_api/mainpy
+#graphify/code #graphify/INFERRED #community/SSHProxy

@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-browser/config.yaml"
 type: "document"
-community: "Browser — Secure Browser Automation (SKILL)"
+community: "test_skill_guard.py"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Browser__Secure_Browser_Automation_SKILL
+  - community/test_skill_guardpy
 ---
 
 # SecureBrowser Security Config (config.yaml)
@@ -14,4 +14,4 @@ tags:
 - [[Browser — Secure Browser Automation (SKILL)]] - `shares_data_with` [EXTRACTED]
 - [[SecureBrowser class]] - `shares_data_with` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Browser__Secure_Browser_Automation_SKILL
+#graphify/document #graphify/INFERRED #community/test_skill_guardpy

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "Community 487"
+community: "Skill: Project Management (PM)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_487
+  - community/Skill_Project_Management_PM
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Red Team Adversarial Tester]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_487
+#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM

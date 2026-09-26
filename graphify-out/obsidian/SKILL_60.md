@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ui/SKILL.md"
 type: "document"
-community: "Community 294"
+community: "Coding Agent (bash-first)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_294
+  - community/Coding_Agent_bash-first
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill UI Expert (UI)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_294
+#graphify/document #graphify/EXTRACTED #community/Coding_Agent_bash-first

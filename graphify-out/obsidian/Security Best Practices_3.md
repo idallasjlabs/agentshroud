@@ -1,20 +1,22 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
-location: "L199"
+community: "Browser — Secure Browser Automation (SKILL)"
+location: "L286"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
+  - community/Browser__Secure_Browser_Automation_SKILL
 ---
 
 # Security Best Practices
 
 ## Connections
-- [[AWS Credentials_2]] - `contains` [EXTRACTED]
-- [[Atlassian OAuth_2]] - `contains` [EXTRACTED]
-- [[GitHub PAT_2]] - `contains` [EXTRACTED]
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
+- [[1. Regular Audits]] - `contains` [EXTRACTED]
+- [[2. Principle of Least Privilege]] - `contains` [EXTRACTED]
+- [[3. Monitor Remote IPs]] - `contains` [EXTRACTED]
+- [[4. Document Your Devices]] - `contains` [EXTRACTED]
+- [[5. Rotate on Compromise]] - `contains` [EXTRACTED]
+- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL

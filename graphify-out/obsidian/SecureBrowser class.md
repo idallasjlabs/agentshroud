@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Browser — Secure Browser Automation (SKILL)"
+community: "test_skill_guard.py"
 location: "class SecureBrowser"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_SKILL
+  - community/test_skill_guardpy
 ---
 
 # SecureBrowser class
@@ -21,4 +21,4 @@ tags:
 - [[browse.py — SecureBrowser CLI (OpenClaw)]] - `implements` [EXTRACTED]
 - [[main() CLI entrypoint]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL
+#graphify/code #graphify/EXTRACTED #community/test_skill_guardpy

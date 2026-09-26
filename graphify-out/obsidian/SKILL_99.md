@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mm/SKILL.md"
 type: "document"
-community: "Community 298"
+community: "test_cli_coverage.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_298
+  - community/test_cli_coveragepy
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Mindmap Architect (MM)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_298
+#graphify/document #graphify/EXTRACTED #community/test_cli_coveragepy

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-qa/SKILL.md"
 type: "document"
-community: "Community 438"
+community: "Audit Ledger (SHA-256 hash only)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_438
+  - community/Audit_Ledger_SHA-256_hash_only
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Quality Assurance (QA)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_438
+#graphify/document #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only

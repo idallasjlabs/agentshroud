@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-configuration.md"
 type: "document"
-community: "ssh-configuration.md"
+community: "Phase 3A/3B Implementation Verification Results"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ssh-configurationmd
+  - community/Phase_3A/3B_Implementation_Verification_Results
 ---
 
 # SSH Configuration Guide
@@ -20,4 +20,4 @@ tags:
 - [[How to Add a New Trusted Host]] - `contains` [EXTRACTED]
 - [[ssh-configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ssh-configurationmd
+#graphify/document #graphify/EXTRACTED #community/Phase_3A/3B_Implementation_Verification_Results

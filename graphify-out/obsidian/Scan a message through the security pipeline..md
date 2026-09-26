@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/sidecar.py"
 type: "rationale"
-community: "test_e2e_proxy.py"
+community: "KillSwitchMonitor"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/KillSwitchMonitor
 ---
 
 # Scan a message through the security pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.scan()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

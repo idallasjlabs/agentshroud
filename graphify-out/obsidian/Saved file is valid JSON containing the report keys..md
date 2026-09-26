@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "rationale"
-community: "test_security_toolchain.py"
+community: "AgentShroud User Guide"
 location: "L279"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/AgentShroud_User_Guide
 ---
 
 # Saved file is valid JSON containing the report keys.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_report_content_persisted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_User_Guide

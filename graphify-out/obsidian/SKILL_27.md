@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-kaizen/SKILL.md"
 type: "document"
-community: "Community 1442"
+community: "DNSFilterConfig"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1442
+  - community/DNSFilterConfig
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill kaizen]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1442
+#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig

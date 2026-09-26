@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ssh_config.py"
 type: "code"
-community: "SSHProxy"
+community: "TelegramAPIProxy"
 location: "L15"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SSHProxy
+  - community/TelegramAPIProxy
 ---
 
 # SSHHostConfig
@@ -19,9 +19,9 @@ tags:
 - [[.test_ssh_command_uses_strict_checking()]] - `calls` [EXTRACTED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[Configuration for a single SSH host]] - `rationale_for` [EXTRACTED]
-- [[SSHConfig_1]] - `uses` [INFERRED]
-- [[SSHProxy]] - `uses` [INFERRED]
-- [[SSHProxy_1]] - `shares_data_with` [EXTRACTED]
+- [[SSHConfig_2]] - `uses` [INFERRED]
+- [[SSHProxy]] - `shares_data_with` [EXTRACTED]
+- [[SSHProxy_1]] - `uses` [INFERRED]
 - [[TestApprovalQueuePIISanitization]] - `uses` [INFERRED]
 - [[TestDashboardCookieAuth]] - `uses` [INFERRED]
 - [[TestDashboardSecureCookie]] - `uses` [INFERRED]
@@ -51,10 +51,10 @@ tags:
 - [[ssh_config()]] - `calls` [EXTRACTED]
 - [[ssh_config()_1]] - `calls` [EXTRACTED]
 - [[ssh_config()_2]] - `calls` [EXTRACTED]
-- [[ssh_config.py_2]] - `contains` [EXTRACTED]
+- [[ssh_config.py]] - `contains` [EXTRACTED]
 - [[test_security_fixes.py]] - `imports` [EXTRACTED]
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_proxy.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SSHProxy
+#graphify/code #graphify/INFERRED #community/TelegramAPIProxy

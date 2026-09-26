@@ -1,11 +1,11 @@
 ---
 source_file: "docs/ssh-configuration.md"
 type: "concept"
-community: "SSH Proxy Threat Model (6 threats)"
+community: "SecureBrowser Security Policies"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/SSH_Proxy_Threat_Model_6_threats
+  - community/SecureBrowser_Security_Policies
 ---
 
 # SSH Proxy Config Schema (agentshroud.yaml ssh: section)
@@ -16,4 +16,4 @@ tags:
 - [[SSH Auto-Approve Commands]] - `conceptually_related_to` [EXTRACTED]
 - [[SSH Proxy Threat Model (6 threats)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/SSH_Proxy_Threat_Model_6_threats
+#graphify/concept #graphify/EXTRACTED #community/SecureBrowser_Security_Policies

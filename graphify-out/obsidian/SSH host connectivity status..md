@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "rationale"
-community: "test_dashboard_endpoints.py"
+community: "CredentialInjector"
 location: "L249"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/CredentialInjector
 ---
 
 # SSH host connectivity status.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ssh_hosts()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/rationale #graphify/EXTRACTED #community/CredentialInjector

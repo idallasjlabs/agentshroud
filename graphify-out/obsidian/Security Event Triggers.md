@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "SecureBrowser Security Policies"
+community: "Pre-Deployment Checklist"
 location: "L292"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Security_Policies
+  - community/Pre-Deployment_Checklist
 ---
 
 # Security Event Triggers
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Incident Response]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Security_Policies
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "GitGuard"
+community: "LLMProxy"
 location: "L166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/LLMProxy
 ---
 
 # Scan arbitrary text content for malicious git/supply-chain patterns.          Th
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.scan_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GitGuard
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxy

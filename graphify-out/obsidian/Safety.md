@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/oracle/SKILL.md"
+source_file: ".agents/skills/i-pr/SKILL.md"
 type: "document"
-community: "oracle — best use"
-location: "L113"
+community: "TestBotIdIsolationInSharedMemory"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/oracle__best_use
+  - community/TestBotIdIsolationInSharedMemory
 ---
 
 # Safety
 
 ## Connections
-- [[oracle — best use]] - `contains` [EXTRACTED]
+- [[Content Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/oracle__best_use
+#graphify/document #graphify/EXTRACTED #community/TestBotIdIsolationInSharedMemory

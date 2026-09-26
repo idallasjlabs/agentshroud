@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/TELEGRAM_ISSUES.md"
 type: "rationale"
-community: "TELEGRAM_ISSUES.md"
+community: "Mode A — Single task"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TELEGRAM_ISSUESmd
+  - community/Mode_A__Single_task
 ---
 
 # SMTP Port Block Email Failure
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[TELEGRAM_ISSUES]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd
+#graphify/rationale #graphify/EXTRACTED #community/Mode_A__Single_task

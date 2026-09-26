@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Community 836"
+community: "AGENTS.md — Codex CLI Guidance"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_836
+  - community/AGENTSmd__Codex_CLI_Guidance
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Atlas — Curriculum Architect_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_836
+#graphify/document #graphify/EXTRACTED #community/AGENTSmd__Codex_CLI_Guidance

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "Post-v1.0.0 — Deferred"
+community: "USPTO Trademark Application — AgentShroud™"
 location: "L296"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Post-v100__Deferred
+  - community/USPTO_Trademark_Application__AgentShroud
 ---
 
 # Secure Voice (moved from v0.9.0 → post-v1.0.0 on 2026-03-04)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-v1.0.0 — Deferred]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Post-v100__Deferred
+#graphify/document #graphify/EXTRACTED #community/USPTO_Trademark_Application__AgentShroud

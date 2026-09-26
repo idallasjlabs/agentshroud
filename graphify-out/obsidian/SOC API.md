@@ -1,11 +1,11 @@
 ---
 source_file: "CHEATSHEET.md"
 type: "concept"
-community: "AgentShroud Operations Cheat Sheet"
+community: "AgentShroud Docker Configuration"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Operations_Cheat_Sheet
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # SOC API
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Operations Cheat Sheet]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

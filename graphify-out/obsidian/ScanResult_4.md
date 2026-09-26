@@ -1,26 +1,22 @@
 ---
-source_file: "gateway/proxy/web_content_scanner.py"
+source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "URLAnalyzer"
-location: "L45"
+community: "AgentShroud™ Brand Guidelines"
+location: "L50"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/URLAnalyzer
+  - graphify/INFERRED
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # ScanResult
 
 ## Connections
-- [[._scan_encoded_payloads()]] - `references` [EXTRACTED]
-- [[._scan_hidden_content()]] - `references` [EXTRACTED]
-- [[._scan_pii()]] - `references` [EXTRACTED]
-- [[._scan_prompt_injection()]] - `references` [EXTRACTED]
-- [[._scan_zero_width()]] - `references` [EXTRACTED]
-- [[.finding_summary()]] - `method` [EXTRACTED]
-- [[.flagged()]] - `method` [EXTRACTED]
-- [[.scan()_3]] - `references` [EXTRACTED]
-- [[Result of scanning web content.]] - `rationale_for` [EXTRACTED]
-- [[web_content_scanner.py]] - `contains` [EXTRACTED]
+- [[Recommendation]] - `uses` [INFERRED]
+- [[ScanResult_2]] - `uses` [INFERRED]
+- [[Severity]] - `uses` [INFERRED]
+- [[SkillGuard]] - `uses` [INFERRED]
+- [[SkillScanError]] - `uses` [INFERRED]
+- [[_finding_categories()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URLAnalyzer
+#graphify/code #graphify/INFERRED #community/AgentShroud_Brand_Guidelines

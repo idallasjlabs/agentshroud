@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sec/SKILL.md"
 type: "document"
-community: "Community 698"
+community: "Per-Agent Container Isolation Architecture"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_698
+  - community/Per-Agent_Container_Isolation_Architecture
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_698
+#graphify/document #graphify/EXTRACTED #community/Per-Agent_Container_Isolation_Architecture
