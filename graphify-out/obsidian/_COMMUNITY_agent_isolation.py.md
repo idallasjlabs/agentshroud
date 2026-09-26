@@ -10,21 +10,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[ContainerConfig Defaults]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Environment Variables_12]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Function Details_28]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[IsolationVerifier.generate_compose()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[IsolationVerifier.verify_network_isolation()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[IsolationVerifier.verify_shared_nothing()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[IsolationVerifier.verify_volume_isolation()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Key Classes  Functions_30]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Mode Enforce vs Monitor_9]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Purpose_157]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Related_34]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Responsibilities_31]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Threat Model_18]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[agent_isolation.py_2]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[agent_isolation.py_1]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[API Endpoints (`gatewayingest_apimain.py`)]] - document - docs/ssh-capability.md
+- [[Approval-Required Commands]] - document - docs/ssh-capability.md
+- [[Architecture_11]] - document - docs/ssh-capability.md
+- [[Auto-Approved Commands]] - document - docs/ssh-capability.md
+- [[Components_1]] - document - docs/ssh-capability.md
+- [[Denied Commands]] - document - docs/ssh-capability.md
+- [[Overview_18]] - document - docs/ssh-capability.md
+- [[Request Flow]] - document - docs/ssh-capability.md
+- [[RequestResponse Models (`gatewayingest_apimodels.py`)]] - document - docs/ssh-capability.md
+- [[SSH Capability Architecture Document]] - document - docs/ssh-capability.md
+- [[SSHProxy Controlled Remote Command Execution via Gateway API]] - concept - docs/ssh-capability.md
+- [[Security Layers]] - document - docs/ssh-capability.md
+- [[`SSHConfig`  `SSHHostConfig` (`gatewayingest_apissh_config.py`)]] - document - docs/ssh-capability.md
+- [[`SSHProxy` (`gatewayssh_proxyproxy.py`)]] - document - docs/ssh-capability.md
+- [[ssh-capability]] - document - docs/ssh-capability.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,7 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_OpenSCAP]]
+- 1 edge to [[_COMMUNITY_AgentShroud Typography Guidelines]]
 
 ## Top bridge nodes
-- [[agent_isolation.py_2]] - degree 11, connects to 1 community
+- [[SSHProxy Controlled Remote Command Execution via Gateway API]] - degree 2, connects to 1 community

@@ -10,21 +10,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Configuration  Environment Variables_10]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Function Details_22]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Hash Chain Structure_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Key Classes  Functions_24]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[MCPAuditTrail.generate_report()]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[MCPAuditTrail.log_tool_call(agent_id, server_name, tool_name, parameters, findings_count, threat_level, blocked, block_reason, pii_redacted, call_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[MCPAuditTrail.log_tool_result(call_id, agent_id, server_name, tool_name, success, error_message, result_summary, findings_count, threat_level, pii_redacted)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[MCPAuditTrail.start_call(call_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[MCPAuditTrail.verify_chain()]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Purpose_151]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Query Methods]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Related_28]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Responsibilities_25]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[mcp_audit.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[mcp_audit.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[SECTION 1 — SYSTEM OVERVIEW (Plain English)_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[SECTION 10 — SHUTDOWN & RECOVERY SEQUENCE_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[SECTION 11 — KNOWN FAILURE MODES & TROUBLESHOOTING MATRIX_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[SECTION 12 — MERMAID FLOWCHART (Complete System Map)_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[SECTION 13 — QUICK REFERENCE CARD_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[SECTION 2 — COMPLETE FILE & DIRECTORY MAP_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[SECTION 3 — EVERY ENVIRONMENT VARIABLE_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[SECTION 4 — ALL EXTERNAL DEPENDENCIES_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[SECTION 5 — PREREQUISITE SETUP (Step-by-Step)_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[SECTION 6 — STARTUP SEQUENCE (Exact Order of Operations)_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[SECTION 7 — EVERY MODULE & FUNCTION REFERENCE_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[SECTION 8 — DATA FLOW_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[SECTION 9 — ERROR CATALOG_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[SKILL_110]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[System Audit & Documentation_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,3 +32,9 @@ members: 15
 TABLE source_file, type FROM #community/mcp_auditpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY__make_tm()]]
+
+## Top bridge nodes
+- [[System Audit & Documentation_1]] - degree 15, connects to 1 community

@@ -1,21 +1,20 @@
 ---
 type: community
 cohesion: 0.40
-members: 6
+members: 5
 ---
 
 # iot_button_register_cb()
 
 **Cohesion:** 0.40 - moderately connected
-**Members:** 6 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[button_cb_t_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
-- [[button_event_t_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
-- [[button_handle_t_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
-- [[iot_button_delete()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
-- [[iot_button_register_cb()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
-- [[test_wakeword_statestubsiot_button.h]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
+- [[Oracle — Feedback Analyst_2]] - document - docker/config/hermes/skills/i-oracle/README.md
+- [[Purpose_58]] - document - docker/config/hermes/skills/i-oracle/README.md
+- [[README_63]] - document - docker/config/hermes/skills/i-oracle/README.md
+- [[Related Skills_64]] - document - docker/config/hermes/skills/i-oracle/README.md
+- [[Usage_65]] - document - docker/config/hermes/skills/i-oracle/README.md
 
 ## Live Query (requires Dataview plugin)
 

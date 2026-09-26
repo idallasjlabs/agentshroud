@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.67
+members: 3
 ---
 
 # i-vulcan SKILL.md (Subject Matter Auditor, podca
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[i-atlas SKILL.md (Curriculum Architect, referenced dependency)]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[i-socrates SKILL.md (Dialogue Architect, referenced dependency)]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[i-vulcan README]] - document - docker/config/hermes/skills/i-vulcan/README.md
-- [[i-vulcan SKILL.md (Subject Matter Auditor, podcast QA gate)]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
+- [[deploy-crush.sh — global Crush skill deployment]] - concept - .llm_settings/scripts/README.md
+- [[deploy-opencode.sh — global OpenCode agent deployment]] - concept - .llm_settings/scripts/README.md
+- [[i- prefix rename of all 58 skills]] - rationale - .llm_settings/UPGRADE_LOG.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -10,24 +10,24 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[Configuration_13]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[ContainerSnapshot.config_hash()]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Database Schema_1]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Drift Categories and Severity]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[DriftDetector.acknowledge_alert(alert_id)]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[DriftDetector.check_drift(current)]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[DriftDetector.get_alerts(container_id, unacknowledged_only, limit)]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[DriftDetector.set_baseline(snapshot)]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Environment Variables_5]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Function Details_4]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Key Classes  Functions_4]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Mode Enforce vs Monitor_3]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Purpose_129]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Related_8]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Responsibilities_5]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Threat Model_5]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[drift_detector.py_1]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[drift_detector.py]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
+- [[AgentShroud Schema Documentation]] - document - docs/data/schema-documentation.md
+- [[Approval Queue Schema]] - document - docs/data/schema-documentation.md
+- [[Audit Chain State]] - document - docs/data/schema-documentation.md
+- [[Configuration File Schemas]] - document - docs/data/schema-documentation.md
+- [[Database Connection Configuration]] - document - docs/data/schema-documentation.md
+- [[Docker Secrets Structure]] - document - docs/data/schema-documentation.md
+- [[Egress Configuration (egress-config.yml)]] - document - docs/data/schema-documentation.md
+- [[In-Memory Data Structures]] - document - docs/data/schema-documentation.md
+- [[MCP Configuration (mcp-config.yml)]] - document - docs/data/schema-documentation.md
+- [[Main Configuration (agentshroud.yaml)]] - document - docs/data/schema-documentation.md
+- [[Rate Limiter State]] - document - docs/data/schema-documentation.md
+- [[SQLite Database Schema]] - document - docs/data/schema-documentation.md
+- [[Secret Content Examples]] - document - docs/data/schema-documentation.md
+- [[Secret Definitions (docker-compose.yml)]] - document - docs/data/schema-documentation.md
+- [[Secret File Structure]] - document - docs/data/schema-documentation.md
+- [[Secret Rotation Script]] - document - docs/data/schema-documentation.md
+- [[Trust Level Cache]] - document - docs/data/schema-documentation.md
+- [[schema-documentation]] - document - docs/data/schema-documentation.md
 
 ## Live Query (requires Dataview plugin)
 

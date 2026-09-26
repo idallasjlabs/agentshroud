@@ -1,20 +1,19 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.50
+members: 4
 ---
 
 # launch-instance.sh
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[DOCKER_HOST]] - code - scripts/launch-instance.sh
-- [[PATH_3]] - code - scripts/launch-instance.sh
-- [[find_port()]] - code - scripts/launch-instance.sh
-- [[launch-instance.sh]] - code - scripts/launch-instance.sh
-- [[launch-instance.sh script]] - code - scripts/launch-instance.sh
+- [[.fmt()]] - code - cli/src/main.rs
+- [[CollabMode]] - code - cli/src/main.rs
+- [[Display]] - code - cli/src/main.rs
+- [[Formatter]] - code - cli/src/main.rs
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +21,10 @@ members: 5
 TABLE source_file, type FROM #community/launch-instancesh
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_.agentsskillsi-crSKILL]]
+
+## Top bridge nodes
+- [[CollabMode]] - degree 3, connects to 1 community
+- [[.fmt()]] - degree 3, connects to 1 community

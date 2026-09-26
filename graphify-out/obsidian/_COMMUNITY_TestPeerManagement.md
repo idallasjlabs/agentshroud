@@ -1,20 +1,19 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.50
+members: 4
 ---
 
 # TestPeerManagement
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[.test_register_peer()]] - code - gateway/tests/test_a2a_governance.py
-- [[.test_trust_clamped()]] - code - gateway/tests/test_a2a_governance.py
-- [[.test_unregister_peer()]] - code - gateway/tests/test_a2a_governance.py
-- [[.test_update_trust()]] - code - gateway/tests/test_a2a_governance.py
-- [[TestPeerManagement]] - code - gateway/tests/test_a2a_governance.py
+- [[Monitor-First Design Rationale Observe → Tune → Enforce (operator must flip before production)]] - rationale - docs/planning/redteam/01-enforce-by-default.md
+- [[Outbound Infrastructure Content Filter (deny-list for hostnames, tool names, user IDs)]] - concept - docs/planning/redteam/00-information-disclosure.md
+- [[Red Team Finding 00 Agent Self-Disclosure of Internal Architecture]] - document - docs/planning/redteam/00-information-disclosure.md
+- [[Red Team Finding 01 Security Modules Default to Monitor Mode — Zero Active Defense]] - document - docs/planning/redteam/01-enforce-by-default.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,11 +21,3 @@ members: 5
 TABLE source_file, type FROM #community/TestPeerManagement
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 4 edges to [[_COMMUNITY_A2AGovernanceProxy]]
-- 2 edges to [[_COMMUNITY_A2AMessage]]
-- 1 edge to [[_COMMUNITY_A2APeer]]
-
-## Top bridge nodes
-- [[TestPeerManagement]] - degree 11, connects to 3 communities

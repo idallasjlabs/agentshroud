@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[docsREADME.md — documentation structure index and project phase status]] - document - docs/README.md
+- [[_HERMES_CVE_REGISTRY]] - code - gateway/security/agent_cve_registry.py
 
 ## Live Query (requires Dataview plugin)
 

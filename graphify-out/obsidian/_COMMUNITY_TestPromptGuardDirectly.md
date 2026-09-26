@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # TestPromptGuardDirectly
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[.test_high_confidence_payloads()]] - code - gateway/tests/test_adversarial_injection.py
-- [[PromptGuard scans high-confidence classic payloads with non-zero score.]] - rationale - gateway/tests/test_adversarial_injection.py
-- [[TestPromptGuardDirectly]] - code - gateway/tests/test_adversarial_injection.py
+- [[bspesp-bsp.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/bsp/esp-bsp.h
+- [[iot_button.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,13 +19,3 @@ members: 3
 TABLE source_file, type FROM #community/TestPromptGuardDirectly
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY__any_detector_fires()]]
-- 1 edge to [[_COMMUNITY_HeuristicClassifier]]
-- 1 edge to [[_COMMUNITY_test_adversarial_injection.py]]
-
-## Top bridge nodes
-- [[TestPromptGuardDirectly]] - degree 5, connects to 3 communities
-- [[.test_high_confidence_payloads()]] - degree 2, connects to 1 community

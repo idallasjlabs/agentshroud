@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Secure Multi-Stage Docker Build (builder discarded)]] - rationale - docs/archive/SECURITY.md
-- [[Zero-Trust Build (source never touches the host)]] - rationale - docs/archive/SECURITY-AUDIT.md
+- [[feature-priorities_2]] - document - skills/custom/agentshroud-blueteam/references/steve-hay-assessment.md
+- [[steve-hay-assessment]] - document - skills/custom/agentshroud-blueteam/references/steve-hay-assessment.md
 
 ## Live Query (requires Dataview plugin)
 

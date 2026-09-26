@@ -10,18 +10,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[API Basics]] - document - skills/openclaw/notion/SKILL.md
-- [[Common Operations_1]] - document - skills/openclaw/notion/SKILL.md
-- [[Find the active vault(s)]] - document - skills/openclaw/obsidian/SKILL.md
-- [[Key Differences in 2025-09-03]] - document - skills/openclaw/notion/SKILL.md
-- [[Notes_9]] - document - skills/openclaw/notion/SKILL.md
-- [[Obsidian]] - document - skills/openclaw/obsidian/SKILL.md
-- [[Property Types]] - document - skills/openclaw/notion/SKILL.md
-- [[Setup_8]] - document - skills/openclaw/notion/SKILL.md
-- [[notion]] - document - skills/openclaw/notion/SKILL.md
-- [[notionSKILL]] - document - skills/openclaw/notion/SKILL.md
-- [[obsidian-cli quick start]] - document - skills/openclaw/obsidian/SKILL.md
-- [[obsidianSKILL]] - document - skills/openclaw/obsidian/SKILL.md
+- [[Configuration  Environment Variables_10]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[Function Details_16]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[Key Classes  Functions_19]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[Purpose_137]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[Related_23]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[Responsibilities_21]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[WebProxyConfig Fields]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[WebProxyConfig.get_domain_settings(domain)]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[WebProxyConfig.is_domain_allowed(domain)]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[WebProxyConfig.is_domain_denied(domain)]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[web_config.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[web_config.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
 
 ## Live Query (requires Dataview plugin)
 

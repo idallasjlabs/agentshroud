@@ -10,29 +10,29 @@ members: 23
 **Members:** 23 nodes
 
 ## Members
-- [[CONNECT Retry Logic]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Configuration  Environment Variables]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Constructor Parameters]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Domain Policy Decision Tree]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Function Details_1]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Internal State (`_stats`)]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Key Classes_1]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Module-level Constants]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Purpose_124]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Related_2]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Responsibilities_2]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Security Notes_5]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[TCP Keepalive]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[`HTTPConnectProxy._agent_id_for_peer(peer)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[`HTTPConnectProxy._clamav_scan_bytes(data bytes, host str)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[`HTTPConnectProxy._handle_client(reader, writer)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[`HTTPConnectProxy._process_connect(reader, writer)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[`HTTPConnectProxy._relay(reader, writer, idle_timeout=120.0)` (static)]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[`HTTPConnectProxy._relay_and_scan(reader, writer, host, scan_limit=410241024)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[`HTTPConnectProxy.get_stats()`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[`HTTPConnectProxy.stop()`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[http_proxy.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[http_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Accessibility]] - document - branding/colors/palette.md
+- [[AgentShroud Blue 1583f0]] - concept - branding/colors/palette.md
+- [[AgentShroud Blue (Primary)]] - document - branding/colors/palette.md
+- [[AgentShroud Color Palette]] - document - branding/colors/palette.md
+- [[Applications]] - document - branding/colors/palette.md
+- [[Borders]] - document - branding/colors/palette.md
+- [[Color Combinations]] - document - branding/colors/palette.md
+- [[Dark Surface Hierarchy]] - document - branding/colors/palette.md
+- [[Dark Theme]] - document - branding/colors/palette.md
+- [[Deep Navy]] - document - branding/colors/palette.md
+- [[Ice Blue]] - document - branding/colors/palette.md
+- [[Light Mode]] - document - branding/colors/palette.md
+- [[Light Theme]] - document - branding/colors/palette.md
+- [[Master Feature List (historical index)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Neutral Colors]] - document - branding/colors/palette.md
+- [[Primary Colors]] - document - branding/colors/palette.md
+- [[Secondary Colors]] - document - branding/colors/palette.md
+- [[Semantic Colors]] - document - branding/colors/palette.md
+- [[Steel Blue]] - document - branding/colors/palette.md
+- [[Text]] - document - branding/colors/palette.md
+- [[Usage Guidelines_1]] - document - branding/colors/palette.md
+- [[Variations]] - document - branding/colors/palette.md
+- [[palette]] - document - branding/colors/palette.md
 
 ## Live Query (requires Dataview plugin)
 

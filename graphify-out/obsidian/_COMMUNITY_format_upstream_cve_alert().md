@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.30
+cohesion: 0.18
 members: 15
 ---
 
 # format_upstream_cve_alert()
 
-**Cohesion:** 0.30 - loosely connected
+**Cohesion:** 0.18 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[._cve()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_alert_states_auto_registered_under_review()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_alert_titled_for_agent_label()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_contains_cve_id()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_contains_severity_icon()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_contains_total_count()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_handles_missing_optional_fields()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_no_more_indicator_when_under_item_limit()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_plural_header_for_multiple_cves()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_singular_header_for_one_cve()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_summary_under_telegram_limit_for_100_cves()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[Format a Telegram alert for newly detected upstream CVEs.      The alert is titl]] - rationale - gateway/security/daily_cve_report.py
-- [[TestFormatUpstreamCveAlert_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[The alert says CVEs are auto-registered under_review (honest, not 'add manually']] - rationale - gateway/tests/test_daily_cve_report.py
-- [[format_upstream_cve_alert()]] - code - gateway/security/daily_cve_report.py
+- [[_stamp_read()]] - code - docker/scripts/security-scheduler.sh
+- [[_stamp_write()]] - code - docker/scripts/security-scheduler.sh
+- [[gateway-seccomp.json (Docker seccomp profile)]] - code - docker/seccomp/gateway-seccomp.json
+- [[log()_3]] - code - docker/scripts/security-report.sh
+- [[log()_2]] - code - docker/scripts/security-report-retention.sh
+- [[log()_5]] - code - docker/scripts/security-scheduler.sh
+- [[scan.sh]] - code - docker/scripts/scan.sh
+- [[scan.sh script]] - code - docker/scripts/scan.sh
+- [[security-report-retention.sh]] - code - docker/scripts/security-report-retention.sh
+- [[security-report-retention.sh script]] - code - docker/scripts/security-report-retention.sh
+- [[security-report.sh]] - code - docker/scripts/security-report.sh
+- [[security-report.sh script]] - code - docker/scripts/security-report.sh
+- [[security-scan.sh (unified scan dispatcher)]] - code - docker/scripts/security-scan.sh
+- [[security-scheduler.sh]] - code - docker/scripts/security-scheduler.sh
+- [[security-scheduler.sh script]] - code - docker/scripts/security-scheduler.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,9 +34,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_test_daily_cve_report.py]]
-- 1 edge to [[_COMMUNITY_gateway.security.daily_cve_report]]
+- 1 edge to [[_COMMUNITY_test_jira_weekly_review.py]]
+- 1 edge to [[_COMMUNITY_chatbotmain.py]]
 
 ## Top bridge nodes
-- [[format_upstream_cve_alert()]] - degree 15, connects to 2 communities
-- [[TestFormatUpstreamCveAlert_1]] - degree 12, connects to 1 community
+- [[security-scan.sh (unified scan dispatcher)]] - degree 5, connects to 2 communities

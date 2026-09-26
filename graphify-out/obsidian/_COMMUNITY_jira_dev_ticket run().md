@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.15
+cohesion: 0.13
 members: 15
 ---
 
 # jira_dev_ticket run()
 
-**Cohesion:** 0.15 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[jira_dev_ticket add_comment()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_basic_auth_header()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_comment_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_issue_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_op_proxy_request()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_tenant_info_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_transitions_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket create_issue()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket fetch_credentials()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket fetch_op_secret()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket find_transition_id()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket resolve_cloud_id()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket run()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket transition_issue()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket.py (OpenClaw copy)]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Mode A — Single task_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 1 — Sync and confirm clean state_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 10 — Notify the owner_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 11 — Merge (only on explicit owner instruction)_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 12 — Clean up_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 2 — Create a branch + worktree_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 2b — Create the Jira ticket_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 3 — Write and edit code_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 4 — Test and lint_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 5 — Multi-LLM review_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 6 — Build and validate containers_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 7 — Update documentation and website_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 8 — Update the knowledge graph_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 9 — Push and open the PR_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 9b — Update the Jira ticket with the PR link_1]] - document - .agents/skills/i-odev/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,12 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_jira_weekly_review.py]]
-- 2 edges to [[_COMMUNITY_test_jira_dev_ticket.py]]
+- 1 edge to [[_COMMUNITY_7. Pi-hole DNS Security Layer (Built-In)]]
 
 ## Top bridge nodes
-- [[jira_dev_ticket run()]] - degree 7, connects to 2 communities
-- [[jira_dev_ticket build_basic_auth_header()]] - degree 4, connects to 1 community
-- [[jira_dev_ticket resolve_cloud_id()]] - degree 3, connects to 1 community
-- [[jira_dev_ticket build_op_proxy_request()]] - degree 2, connects to 1 community
-- [[jira_dev_ticket.py (OpenClaw copy)]] - degree 2, connects to 1 community
+- [[Mode A — Single task_1]] - degree 15, connects to 1 community

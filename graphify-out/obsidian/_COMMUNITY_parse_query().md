@@ -1,28 +1,28 @@
 ---
 type: community
-cohesion: 0.22
+cohesion: 0.15
 members: 13
 ---
 
 # parse_query()
 
-**Cohesion:** 0.22 - loosely connected
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
-- [[._handle_query()]] - code - gateway/proxy/dns_forwarder.py
-- [[.datagram_received()]] - code - gateway/proxy/dns_forwarder.py
-- [[.test_malformed_pointer_returns_none()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_too_short()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_truncated_after_name()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_valid_a_query()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_valid_aaaa_query()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_zero_qdcount()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[Extract domain name and query type from a DNS query packet.      Returns (domai]] - rationale - gateway/proxy/dns_forwarder.py
-- [[Handle incoming DNS query.]] - rationale - gateway/proxy/dns_forwarder.py
-- [[Process a single DNS query log, forward, respond.]] - rationale - gateway/proxy/dns_forwarder.py
-- [[TestParseQuery]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[parse_query()]] - code - gateway/proxy/dns_forwarder.py
+- [[1. Verify CI and update the PR]] - document - .agents/skills/i-release/SKILL.md
+- [[2. Merge]] - document - .agents/skills/i-release/SKILL.md
+- [[3. Update graphify]] - document - .agents/skills/i-release/SKILL.md
+- [[4. Tag and release]] - document - .agents/skills/i-release/SKILL.md
+- [[5. Documentation and version visibility]] - document - .agents/skills/i-release/SKILL.md
+- [[6. Close Jira]] - document - .agents/skills/i-release/SKILL.md
+- [[7. Rebuildrestart prod and dev from main]] - document - .agents/skills/i-release/SKILL.md
+- [[Guardrails_5]] - document - .agents/skills/i-release/SKILL.md
+- [[Invocation_3]] - document - .agents/skills/i-release/SKILL.md
+- [[Role_30]] - document - .agents/skills/i-release/SKILL.md
+- [[SKILL_46]] - document - .agents/skills/i-release/SKILL.md
+- [[Skill Release (i-release)]] - document - .agents/skills/i-release/SKILL.md
+- [[Steps]] - document - .agents/skills/i-release/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,17 +30,3 @@ members: 13
 TABLE source_file, type FROM #community/parse_query
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 4 edges to [[_COMMUNITY_DNSForwarderProtocol]]
-- 3 edges to [[_COMMUNITY_test_dns_canvas_coverage.py]]
-- 2 edges to [[_COMMUNITY_TestDNSForwarderProtocol]]
-- 1 edge to [[_COMMUNITY_forward_query()]]
-- 1 edge to [[_COMMUNITY_DNSBlocklist]]
-
-## Top bridge nodes
-- [[TestParseQuery]] - degree 9, connects to 3 communities
-- [[parse_query()]] - degree 11, connects to 2 communities
-- [[._handle_query()]] - degree 5, connects to 2 communities
-- [[.datagram_received()]] - degree 3, connects to 1 community
-- [[.test_valid_a_query()]] - degree 3, connects to 1 community

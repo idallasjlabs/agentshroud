@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[nemotron-named models misclassified as needing cloud provider in local mode]] - rationale - CHANGELOG.md
+- [[Favicon 16x16 (AgentShroud logo mark)]] - image - branding/favicons/favicon-16x16.png
 
 ## Live Query (requires Dataview plugin)
 

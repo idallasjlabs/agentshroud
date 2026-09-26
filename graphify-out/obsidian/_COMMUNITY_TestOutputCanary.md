@@ -1,60 +1,61 @@
 ---
 type: community
-cohesion: 0.05
-members: 45
+cohesion: 0.04
+members: 46
 ---
 
 # TestOutputCanary
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 45 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 46 nodes
 
 ## Members
-- [[.__init__()_97]] - code - gateway/security/output_canary.py
-- [[._scan_for_canary()]] - code - gateway/security/output_canary.py
-- [[.check_response()_1]] - code - gateway/security/output_canary.py
-- [[.get_status()_3]] - code - gateway/security/output_canary.py
-- [[.setup_method()_24]] - code - gateway/tests/test_output_canary.py
-- [[.test_canary_cleanup()]] - code - gateway/tests/test_output_canary.py
-- [[.test_canary_generation_per_session()]] - code - gateway/tests/test_output_canary.py
-- [[.test_clean_response_passes()]] - code - gateway/tests/test_output_canary.py
-- [[.test_detection_patterns_creation()]] - code - gateway/tests/test_output_canary.py
-- [[.test_different_sessions_get_different_canaries()]] - code - gateway/tests/test_output_canary.py
-- [[.test_incident_logging()]] - code - gateway/tests/test_output_canary.py
-- [[.test_invisible_canary_creation()]] - code - gateway/tests/test_output_canary.py
-- [[.test_leaked_canary_detected_in_response()]] - code - gateway/tests/test_output_canary.py
-- [[.test_partial_canary_match_handling()]] - code - gateway/tests/test_output_canary.py
-- [[.test_session_without_canary_returns_safe_result()]] - code - gateway/tests/test_output_canary.py
-- [[.test_status_reporting()_1]] - code - gateway/tests/test_output_canary.py
-- [[.test_unicode_normalization_resistance()]] - code - gateway/tests/test_output_canary.py
-- [[.test_zero_width_character_detection()]] - code - gateway/tests/test_output_canary.py
-- [[Any_78]] - code - gateway/security/output_canary.py
-- [[CanaryConfig_1]] - code - gateway/security/output_canary.py
-- [[CanaryResult_2]] - code - gateway/security/output_canary.py
-- [[Check if response contains the session's canary (prompt leakage detected).]] - rationale - gateway/security/output_canary.py
-- [[Configuration for the Output Canary System.]] - rationale - gateway/security/output_canary.py
-- [[Initialize the Output Canary System.          Args             config Optional]] - rationale - gateway/security/output_canary.py
-- [[Result of checking a response for canary presence.]] - rationale - gateway/security/output_canary.py
-- [[Return canary status for dashboard.          Args             session_id Sessi]] - rationale - gateway/security/output_canary.py
-- [[Scan response text for a specific canary.          Args             session_id]] - rationale - gateway/security/output_canary.py
-- [[Set up test fixtures._1]] - rationale - gateway/tests/test_output_canary.py
-- [[Test canary status reporting for dashboard.]] - rationale - gateway/tests/test_output_canary.py
-- [[Test cases for the Output Canary System.]] - rationale - gateway/tests/test_output_canary.py
-- [[Test cleanup of expired canaries.]] - rationale - gateway/tests/test_output_canary.py
-- [[Test detection of canaries with zero-width characters.]] - rationale - gateway/tests/test_output_canary.py
-- [[Test handling of partial canary matches.]] - rationale - gateway/tests/test_output_canary.py
-- [[Test that canaries work with different Unicode representations.]] - rationale - gateway/tests/test_output_canary.py
-- [[Test that clean responses pass without detection.]] - rationale - gateway/tests/test_output_canary.py
-- [[Test that detection patterns are created correctly.]] - rationale - gateway/tests/test_output_canary.py
-- [[Test that different sessions get different canaries.]] - rationale - gateway/tests/test_output_canary.py
-- [[Test that incidents are logged when enabled.]] - rationale - gateway/tests/test_output_canary.py
-- [[Test that invisible canaries are created properly.]] - rationale - gateway/tests/test_output_canary.py
-- [[Test that leaked canaries are detected in responses.]] - rationale - gateway/tests/test_output_canary.py
-- [[Test that sessions without canaries return safe results.]] - rationale - gateway/tests/test_output_canary.py
-- [[Test that unique canaries are generated per session.]] - rationale - gateway/tests/test_output_canary.py
-- [[TestOutputCanary]] - code - gateway/tests/test_output_canary.py
-- [[output_canary.py]] - code - gateway/security/output_canary.py
-- [[test_output_canary.py]] - code - gateway/tests/test_output_canary.py
+- [[Closed function_calls block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Closed function_results block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Closed invoke block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Closed parameter block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Closed system-reminder block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Closed thinking block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Empty string input returns empty string, not filtered.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Large XML block spanning many lines is fully removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Multiple XML blocks in one response are all removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Nested invoke inside function_calls is fully removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Normal text without XML blocks is returned unchanged.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Regular HTML-like tags that are NOT in the block list are not removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Result is stripped of leadingtrailing whitespace.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Return type is always (str, bool).]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Text before and after XML blocks is preserved.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Three or more consecutive newlines are collapsed to two.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Unclosed function_calls block (truncated output) is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Unclosed function_results block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Unclosed system-reminder block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Unclosed thinking block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[sanitizer()_3]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_collapses_excessive_newlines()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_does_not_filter_normal_text()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_does_not_filter_regular_html_tags()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_empty_string_returns_unchanged()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filter_xml_blocks.py]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_blocks_preserves_surrounding_text()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_function_calls_block()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_function_results_block()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_invoke_block()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_large_block()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_multiple_blocks()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_nested_invoke_inside_function_calls()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_parameter_block()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_system_reminder_block()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_thinking_block()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_unclosed_function_calls()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_unclosed_function_results()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_unclosed_system_reminder()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_unclosed_thinking()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_returns_tuple_of_str_and_bool()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_strips_leading_trailing_whitespace()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_was_filtered_false_when_no_blocks()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_was_filtered_true_when_block_present()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[was_filtered is False when no XML blocks are present.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[was_filtered is True when an XML block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -64,11 +65,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_lifespan.py]]
+- 4 edges to [[_COMMUNITY_ResourceGuard]]
 
 ## Top bridge nodes
-- [[TestOutputCanary]] - degree 18, connects to 1 community
-- [[._scan_for_canary()]] - degree 5, connects to 1 community
-- [[.check_response()_1]] - degree 4, connects to 1 community
-- [[.setup_method()_24]] - degree 4, connects to 1 community
-- [[.test_incident_logging()]] - degree 4, connects to 1 community
+- [[test_filter_xml_blocks.py]] - degree 25, connects to 1 community
+- [[sanitizer()_3]] - degree 3, connects to 1 community

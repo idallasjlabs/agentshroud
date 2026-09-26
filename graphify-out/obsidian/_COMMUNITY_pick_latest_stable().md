@@ -1,39 +1,39 @@
 ---
 type: community
-cohesion: 0.15
+cohesion: 0.08
 members: 24
 ---
 
 # pick_latest_stable()
 
-**Cohesion:** 0.15 - loosely connected
+**Cohesion:** 0.08 - loosely connected
 **Members:** 24 nodes
 
 ## Members
-- [[.test_downstream_counter_sorts_above_its_base_release()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_downstream_counter_sorts_above_its_base_release()_1]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_empty_returns_none()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_empty_returns_none()_2]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_ignores_prereleases_even_when_numerically_highest()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_ignores_prereleases_even_when_numerically_highest()_1]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_no_stable_versions_returns_none()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_no_stable_versions_returns_none()_1]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_numeric_ordering_not_lexicographic()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_numeric_ordering_not_lexicographic()_1]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_picks_the_highest_stable_version()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_picks_the_highest_stable_version()_1]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_real_openclaw_tail_picks_2026_9_4()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_real_openclaw_tail_picks_2026_9_4()_1]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_unparseable_entries_are_skipped_not_crashed_on()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_unparseable_entries_are_skipped_not_crashed_on()_1]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[2026.10.1' must beat '2026.9.4' — string compare gets this wrong.]] - rationale - gateway/tests/test_discover_upstream_versions.py
-- [[2026.7.1-2 is a patch published after 2026.7.1, so it must win.]] - rationale - gateway/tests/test_discover_upstream_versions.py
-- [[Newest stable release from an npm version list, or None.]] - rationale - scripts/discover_upstream_versions.py
-- [[Selecting the newest shippable npm release.]] - rationale - gateway/tests/test_discover_upstream_versions.py
-- [[TestPickLatestStable]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[TestPickLatestStable_1]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[The actual npm tail as of 2026-09-15.]] - rationale - gateway/tests/test_discover_upstream_versions.py
-- [[pick_latest_stable()]] - code - scripts/discover_upstream_versions.py
+- [[graphify]] - document - .agents/skills/graphify/SKILL.md
+- [[For --update and --cluster-only]] - document - .agents/skills/graphify/SKILL.md
+- [[For graphify add and --watch]] - document - .agents/skills/graphify/SKILL.md
+- [[For graphify query]] - document - .agents/skills/graphify/SKILL.md
+- [[For the commit hook and native AGENTS.md integration]] - document - .agents/skills/graphify/SKILL.md
+- [[Honesty Rules]] - document - .agents/skills/graphify/SKILL.md
+- [[Interpreter guard for subcommands]] - document - .agents/skills/graphify/SKILL.md
+- [[Part A - Structural extraction for code files]] - document - .agents/skills/graphify/SKILL.md
+- [[Part B - Semantic extraction (parallel subagents)]] - document - .agents/skills/graphify/SKILL.md
+- [[Part C - Merge AST + semantic into final extraction]] - document - .agents/skills/graphify/SKILL.md
+- [[SKILL]] - document - .agents/skills/graphify/SKILL.md
+- [[Step 0 - GitHub repos and multi-path merge (only if a URL or several paths)]] - document - .agents/skills/graphify/SKILL.md
+- [[Step 1 - Ensure graphify is installed]] - document - .agents/skills/graphify/SKILL.md
+- [[Step 2 - Detect files]] - document - .agents/skills/graphify/SKILL.md
+- [[Step 2.5 - Video and audio (only if video files detected)]] - document - .agents/skills/graphify/SKILL.md
+- [[Step 3 - Extract entities and relationships]] - document - .agents/skills/graphify/SKILL.md
+- [[Step 4 - Build graph, cluster, analyze, generate outputs]] - document - .agents/skills/graphify/SKILL.md
+- [[Step 5 - Label communities]] - document - .agents/skills/graphify/SKILL.md
+- [[Step 6 - Generate Obsidian vault (opt-in) + HTML]] - document - .agents/skills/graphify/SKILL.md
+- [[Step 9 - Save manifest, update cost tracker, clean up, and report]] - document - .agents/skills/graphify/SKILL.md
+- [[Steps 6b-8 - Wiki, Neo4j, SVG, GraphML, MCP, benchmark (only on their flags)]] - document - .agents/skills/graphify/SKILL.md
+- [[Usage]] - document - .agents/skills/graphify/SKILL.md
+- [[What You Must Do When Invoked]] - document - .agents/skills/graphify/SKILL.md
+- [[What graphify is for]] - document - .agents/skills/graphify/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,12 +41,3 @@ members: 24
 TABLE source_file, type FROM #community/pick_latest_stable
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 5 edges to [[_COMMUNITY_discover_upstream_versions.py]]
-- 1 edge to [[_COMMUNITY_sunday-upgrade]]
-
-## Top bridge nodes
-- [[pick_latest_stable()]] - degree 21, connects to 1 community
-- [[TestPickLatestStable]] - degree 10, connects to 1 community
-- [[TestPickLatestStable_1]] - degree 10, connects to 1 community

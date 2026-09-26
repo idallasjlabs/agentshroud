@@ -1,38 +1,39 @@
 ---
 type: community
-cohesion: 0.09
-members: 23
+cohesion: 0.11
+members: 24
 ---
 
 # TrustManager
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 23 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 24 nodes
 
 ## Members
-- [[Approval Queue (SQLite)]] - concept - docs/architecture/system-architecture.md
-- [[Approval Queue (gateway diagram)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[Configuration (TrustConfig)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Dashboard (WebSocket)]] - concept - docs/architecture/system-architecture.md
-- [[Database Schema]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Default Action Trust Requirements]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Environment Variables_2]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Function Details]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Key Classes  Functions]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Kill Switch (MonitorBlockIsolate)]] - concept - docs/architecture/system-architecture.md
-- [[Mode Enforce vs Monitor]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Monitoring System Integration (WebhooksPrometheus)]] - document - docs/api/integration-guide.md
-- [[Purpose_118]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Related]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Responsibilities_1]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Threat Model_1]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[TrustManager_4]] - concept - docker/config/hermes/SOUL.md
-- [[TrustManager._apply_decay(score, last_action_time)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[TrustManager._update_score(agent_id, delta, event_type, details)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[TrustManager.get_history(agent_id, limit)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[TrustManager.get_trust(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[TrustManager.is_action_allowed(agent_id, action)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[trust_manager.py]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[.__init__()_37]] - code - gateway/proxy/telegram_egress_notify.py
+- [[._api_url()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[._async_send()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[._send_request()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[._token_for()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[.answer_callback()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[.cleanup_expired()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[.edit_decision_message()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[.get_pending_count()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[.handle_callback()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[.notify_pending()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[.send_text()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[Async wrapper around sync Telegram API call.]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[EgressTelegramNotifier]] - code - gateway/proxy/telegram_egress_notify.py
+- [[Process inline button callback. Returns action result.          Actions allow_1]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Remove pending requests older than max_age_seconds. Returns count removed.]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Replace the inline keyboard approval message with a decision record.          Re]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Return the Telegram bot token to use for a given agent_id.          If the agent]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Send Telegram message with time-limited approvedeny buttons.          Buttons]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Send a plain text message — public transport for other gateway         component]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Send a request to Telegram Bot API (sync, run in executor).]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Send answerCallbackQuery to dismiss the button loading state.          Pass ``to]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Sends Telegram inline keyboard notifications for egress approval.      Supports]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Telegram callback_query TTL expiry logged at DEBUG not ERROR]] - rationale - gateway/tests/test_egress_callback_stale.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,11 +43,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_hermesSOUL]]
-- 1 edge to [[_COMMUNITY_Audit Ledger (SHA-256 hash only)]]
-- 1 edge to [[_COMMUNITY_AgentShroud (system, C4 context)]]
-- 1 edge to [[_COMMUNITY_Gateway ManagementControl-Plane API (v1.3.0)]]
-- 1 edge to [[_COMMUNITY_ADR-009 Enforce-by-Default Security Philosophy]]
+- 5 edges to [[_COMMUNITY_VIII. Evaluation]]
+- 3 edges to [[_COMMUNITY_3. Brutally Honest Self-Assessment]]
+- 3 edges to [[_COMMUNITY_ConfigIntegrityMonitor]]
+- 2 edges to [[_COMMUNITY__wrap_response()]]
 
 ## Top bridge nodes
-- [[TrustManager_4]] - degree 18, connects to 5 communities
+- [[EgressTelegramNotifier]] - degree 25, connects to 4 communities
+- [[.answer_callback()]] - degree 4, connects to 1 community
+- [[.edit_decision_message()]] - degree 4, connects to 1 community

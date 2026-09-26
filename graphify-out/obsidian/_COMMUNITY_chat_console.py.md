@@ -1,27 +1,27 @@
 ---
 type: community
-cohesion: 0.23
+cohesion: 0.17
 members: 12
 ---
 
 # chat_console.py
 
-**Cohesion:** 0.23 - loosely connected
+**Cohesion:** 0.17 - loosely connected
 **Members:** 12 nodes
 
 ## Members
-- [[Check gateway and bot status]] - rationale - src/interfaces/chat_console.py
-- [[Display chat console banner]] - rationale - src/interfaces/chat_console.py
-- [[Read gateway password from secrets file or environment.]] - rationale - src/interfaces/chat_console.py
-- [[Send message to OpenClaw via gateway]] - rationale - src/interfaces/chat_console.py
-- [[_read_auth_token()]] - code - src/interfaces/chat_console.py
-- [[chat-console launcher]] - code - scripts/chat-console
-- [[chat_console.py]] - code - src/interfaces/chat_console.py
-- [[check_status()]] - code - src/interfaces/chat_console.py
-- [[main()_31]] - code - src/interfaces/chat_console.py
-- [[print_banner()]] - code - src/interfaces/chat_console.py
-- [[print_help()]] - code - src/interfaces/chat_console.py
-- [[send_message()]] - code - src/interfaces/chat_console.py
+- [[API Basics]] - document - skills/openclaw/notion/SKILL.md
+- [[Common Operations_1]] - document - skills/openclaw/notion/SKILL.md
+- [[Find the active vault(s)]] - document - skills/openclaw/obsidian/SKILL.md
+- [[Key Differences in 2025-09-03]] - document - skills/openclaw/notion/SKILL.md
+- [[Notes_6]] - document - skills/openclaw/notion/SKILL.md
+- [[Obsidian]] - document - skills/openclaw/obsidian/SKILL.md
+- [[Property Types]] - document - skills/openclaw/notion/SKILL.md
+- [[SKILL_218]] - document - skills/openclaw/notion/SKILL.md
+- [[SKILL_219]] - document - skills/openclaw/obsidian/SKILL.md
+- [[Setup_7]] - document - skills/openclaw/notion/SKILL.md
+- [[notion]] - document - skills/openclaw/notion/SKILL.md
+- [[obsidian-cli quick start]] - document - skills/openclaw/obsidian/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

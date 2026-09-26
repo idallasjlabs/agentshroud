@@ -1,20 +1,19 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.50
+members: 4
 ---
 
 # TestQuarantineEndpoints
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[.test_discard_blocked_message_not_found_returns_error()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_quarantine_summary_counts_inbound_and_outbound()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_release_blocked_outbound_marks_item_released()]] - code - gateway/tests/test_main_endpoints.py
-- [[Test quarantine management endpoints in main.py.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[TestQuarantineEndpoints]] - code - gateway/tests/test_main_endpoints.py
+- [[bsp_iot_button_create()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h
+- [[button_handle_t_2]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h
+- [[esp-bsp.h_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h
+- [[esp_err_t_6]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,10 +21,3 @@ members: 5
 TABLE source_file, type FROM #community/TestQuarantineEndpoints
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
-
-## Top bridge nodes
-- [[TestQuarantineEndpoints]] - degree 6, connects to 2 communities

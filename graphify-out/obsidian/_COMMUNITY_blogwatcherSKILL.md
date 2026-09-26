@@ -10,9 +10,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[blogwatcher]] - document - skills/openclaw/blogwatcher/SKILL.md
-- [[blogwatcher CLI]] - concept - skills/openclaw/blogwatcher/SKILL.md
-- [[blogwatcherSKILL]] - document - skills/openclaw/blogwatcher/SKILL.md
+- [[.test_five_all_conditions_met()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_two_baseline_no_extras()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreSecretsManagement_1]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +20,9 @@ members: 3
 TABLE source_file, type FROM #community/blogwatcher/SKILLmd
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Skill Create PR with Pre-Flight Audit (CRPR)]]
+
+## Top bridge nodes
+- [[TestScoreSecretsManagement_1]] - degree 3, connects to 1 community

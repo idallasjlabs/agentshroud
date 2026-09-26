@@ -1,23 +1,22 @@
 ---
 type: community
-cohesion: 0.36
-members: 8
+cohesion: 0.29
+members: 7
 ---
 
 # find-sessions.sh
 
-**Cohesion:** 0.36 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[find-sessions.sh]] - code - skills/openclaw/tmux/scripts/find-sessions.sh
-- [[find-sessions.sh script]] - code - skills/openclaw/tmux/scripts/find-sessions.sh
-- [[list_sessions()]] - code - skills/openclaw/tmux/scripts/find-sessions.sh
-- [[tmuxSKILL]] - document - skills/openclaw/tmux/SKILL.md
-- [[usage()_1]] - code - skills/openclaw/tmux/scripts/find-sessions.sh
-- [[usage()_2]] - code - skills/openclaw/tmux/scripts/wait-for-text.sh
-- [[wait-for-text.sh]] - code - skills/openclaw/tmux/scripts/wait-for-text.sh
-- [[wait-for-text.sh script]] - code - skills/openclaw/tmux/scripts/wait-for-text.sh
+- [[Operating Rules (Non-Negotiable)_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Rule 1 All Regions, Every Time_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Rule 2 Default Read-Only_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Rule 3 Script Everything_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Rule 4 Evidence-First Recommendations_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Rule 5 Safe Tagging_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Rule 6 Never Delete Automatically_1]] - document - docker/config/hermes/skills/i-aws/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,8 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_OpenClaw Skill Metadata Schema (frontmatter conv]]
-- 1 edge to [[_COMMUNITY_tmux Session Control]]
+- 1 edge to [[_COMMUNITY_test_sanitizer.py]]
 
 ## Top bridge nodes
-- [[tmuxSKILL]] - degree 4, connects to 2 communities
+- [[Operating Rules (Non-Negotiable)_1]] - degree 7, connects to 1 community

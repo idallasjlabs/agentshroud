@@ -1,47 +1,48 @@
 ---
 type: community
-cohesion: 0.09
-members: 32
+cohesion: 0.14
+members: 33
 ---
 
 # jira_weekly_review.py
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 32 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 33 nodes
 
 ## Members
-- [[Build (url, body, headers) for a POST to the gateway op-proxy.      Mirrors emai]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Build the Atlassian Document Format (ADF) body for POST ...comment.      The RE]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Build the REST v3 add-comment URL against the cloud-id gateway.]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Compose the human-readable weekly summary posted as the comment.      - commits]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Extract SCRUM-n keys mentioned in commit subjects.]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Fetch creds, build summary, post the comment. Returns a process exit code.]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Fetch one secret field from the gateway op-proxy. Returns the value._2]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[GET and return (status_code, response_text). HTTPError is treated as a     norma]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Jira Dev-Ticket Helper Module]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[POST and return (status_code, response_text). Raises urllib errors up.]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[POST the ADF comment to Jira with Basic auth. Returns (status, text).]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Resolve a site domain to its Atlassian cloud ID via the public,     unauthentica_2]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Return 'shorthash subject' lines for commits in the last 7 days.      Degrades t]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Return the HTTP Basic auth header value base64(emailtoken)._2]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[Unauthenticated site-to-cloud-ID discovery URL._2]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
-- [[_adf_paragraph()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[_git_commits_last_week()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[_http_get()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[_http_post_json()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[build_basic_auth_header()_2]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[build_comment_payload()_2]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[build_comment_url()_2]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[build_op_proxy_request()_2]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[build_tenant_info_url()_2]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[build_weekly_summary()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[datetime_1]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[extract_scrum_items()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[fetch_op_secret()_2]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[jira_weekly_review.py]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[post_comment()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[resolve_cloud_id()_2]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[run()_3]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[.test_add_collaborator()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_add_group_member()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_approve()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_default_format_is_json_when_not_tty()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_deny()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_freeze_confirmation_required()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_freeze_success()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_get_events_passes_severity_and_limit()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_get_logs_echoes_lines()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_get_logs_non_dict_result_prints_nothing()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_get_services()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_restart_service_confirmation_required()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_restart_service_success()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_scan()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_scan_invalid_scanner_rejected()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_set_mode_invalid_choice_rejected()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_set_mode_valid_choice()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_simple_get_subcommands()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_stop_service_confirmation_required()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_stop_service_success()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_tail_import_error_prints_message()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_tail_keyboard_interrupt_prints_disconnected()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_tail_runs_stream_and_uses_client_token()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_token_falls_back_to_gateway_password_env()]] - code - gateway/tests/test_cli_coverage.py
+- [[Replace SCLClient in main with a MagicMock factory; return the instance.]] - rationale - gateway/tests/test_cli_coverage.py
+- [[TestEgressAndAdminCommands]] - code - gateway/tests/test_cli_coverage.py
+- [[TestGetCommands]] - code - gateway/tests/test_cli_coverage.py
+- [[TestLifecycleCommands]] - code - gateway/tests/test_cli_coverage.py
+- [[TestTailCommand]] - code - gateway/tests/test_cli_coverage.py
+- [[_all_output()]] - code - gateway/tests/test_cli_coverage.py
+- [[_invoke()]] - code - gateway/tests/test_cli_coverage.py
+- [[_stub_client()]] - code - gateway/tests/test_cli_coverage.py
+- [[stdout + stderr regardless of click version (mix_stderr removed in 8.2).]] - rationale - gateway/tests/test_cli_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,14 +52,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_jira_dev_ticket run()]]
-- 1 edge to [[_COMMUNITY_openclawworkspacejira_dev_ticket.py]]
-- 1 edge to [[_COMMUNITY_hermesworkspacejira_dev_ticket.py]]
-- 1 edge to [[_COMMUNITY_test_jira_weekly_review.py]]
+- 7 edges to [[_COMMUNITY_AgentShroud Development Team — Agile Structure]]
+- 4 edges to [[_COMMUNITY_test_voice_stt_model_ab.py]]
 
 ## Top bridge nodes
-- [[run()_3]] - degree 11, connects to 2 communities
-- [[Build the Atlassian Document Format (ADF) body for POST ...comment.      The RE]] - degree 3, connects to 2 communities
-- [[resolve_cloud_id()_2]] - degree 5, connects to 1 community
-- [[build_basic_auth_header()_2]] - degree 4, connects to 1 community
-- [[build_op_proxy_request()_2]] - degree 4, connects to 1 community
+- [[TestEgressAndAdminCommands]] - degree 10, connects to 2 communities
+- [[TestGetCommands]] - degree 9, connects to 2 communities
+- [[TestLifecycleCommands]] - degree 8, connects to 2 communities
+- [[TestTailCommand]] - degree 5, connects to 2 communities
+- [[_stub_client()]] - degree 26, connects to 1 community

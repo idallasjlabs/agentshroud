@@ -1,27 +1,27 @@
 ---
 type: community
-cohesion: 0.17
+cohesion: 0.27
 members: 12
 ---
 
 # TestWebSocketHandshakeAuth
 
-**Cohesion:** 0.17 - loosely connected
+**Cohesion:** 0.27 - loosely connected
 **Members:** 12 nodes
 
 ## Members
-- [[.test_ws_activity_rejects_bad_token()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_ws_activity_rejects_no_token()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_ws_approvals_rejects_bad_token()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_ws_approvals_rejects_master_token()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_ws_approvals_rejects_no_token()]] - code - gateway/tests/test_security_fixes.py
-- [[TestWebSocketHandshakeAuth]] - code - gateway/tests/test_security_fixes.py
-- [[WS wsactivity closes immediately without token]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsactivity closes with bad token]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsapprovals closes immediately without token]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsapprovals closes with bad token]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsapprovals rejects the master auth token -- R3-L4 removed the         mast]] - rationale - gateway/tests/test_security_fixes.py
-- [[WebSocket endpoints must validate token during handshake, not first message]] - rationale - gateway/tests/test_security_fixes.py
+- [[._s()]] - code - gateway/tests/test_voice_gateway.py
+- [[.test_empty_after_normalise_returns_empty_list()]] - code - gateway/tests/test_voice_gateway.py
+- [[.test_empty_string_returns_empty_list()]] - code - gateway/tests/test_voice_gateway.py
+- [[.test_long_sentence_wrapped_at_max_chars()]] - code - gateway/tests/test_voice_gateway.py
+- [[.test_multi_sentence_returns_ordered_chunks()]] - code - gateway/tests/test_voice_gateway.py
+- [[.test_per_chunk_normalisation()]] - code - gateway/tests/test_voice_gateway.py
+- [[.test_short_fragment_merged_forward()]] - code - gateway/tests/test_voice_gateway.py
+- [[.test_single_sentence_returns_one_chunk()]] - code - gateway/tests/test_voice_gateway.py
+- [[A fragment under 12 chars is merged into the following chunk.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[TestSplitForSpeech]] - code - gateway/tests/test_voice_gateway.py
+- [[Unit tests for voice_gateway.tts.split_for_speech (pure function, no IO).]] - rationale - gateway/tests/test_voice_gateway.py
+- [[split_for_speech normalises the full text so no markdown or tokens survive.]] - rationale - gateway/tests/test_voice_gateway.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,8 +31,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_SSHProxy]]
-- 2 edges to [[_COMMUNITY_test_dashboard.py]]
+- 1 edge to [[_COMMUNITY_CollaboratorActivityTracker]]
+- 1 edge to [[_COMMUNITY_Skill Audit Branch (AB) — Merge Regression Dete]]
 
 ## Top bridge nodes
-- [[TestWebSocketHandshakeAuth]] - degree 12, connects to 2 communities
+- [[TestSplitForSpeech]] - degree 10, connects to 1 community
+- [[._s()]] - degree 9, connects to 1 community

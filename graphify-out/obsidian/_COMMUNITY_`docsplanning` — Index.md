@@ -1,22 +1,21 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.33
+members: 6
 ---
 
 # `docs/planning/` — Index
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Active]] - document - docs/planning/README.md
-- [[Historic  archive]] - document - docs/planning/README.md
-- [[How to add a plan]] - document - docs/planning/README.md
-- [[Layout]] - document - docs/planning/README.md
-- [[What does NOT live here]] - document - docs/planning/README.md
-- [[`docsplanning` — Index]] - document - docs/planning/README.md
-- [[planningREADME]] - document - docs/planning/README.md
+- [[AGENTSHROUD standard character mark]] - concept - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Class 42 — Software as a Service (SaaS)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Class 9 — Computer Software]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Class 9 — Downloadable Computer Software]] - concept - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Filing Basis (Section 1(a) Use in Commerce  1(b) Intent to Use)]] - concept - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 3 GOODS AND SERVICES]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +23,9 @@ members: 7
 TABLE source_file, type FROM #community/docs/planning/__Index
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_mcp-proxy-wrapper.js]]
+
+## Top bridge nodes
+- [[SECTION 3 GOODS AND SERVICES]] - degree 3, connects to 1 community

@@ -10,18 +10,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[.test_default_revert_minutes_is_30()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_invalid_mode_returns_400()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_response_includes_previous_mode()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_response_includes_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_revert_minutes_clamped_max()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_revert_minutes_clamped_min()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_set_enforce_mode()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_set_monitor_mode()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_set_observatory_mode()]] - code - gateway/tests/test_observatory_mode.py
-- [[TestSetMode]] - code - gateway/tests/test_observatory_mode.py
-- [[revert_after_minutes above 480 is clamped to 480.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[revert_after_minutes below 1 is clamped to 1.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[A stalemismatched If-None-Match must serve the full new binary (200).]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Authenticated request but no firmware on disk → 404 (not a 500empty 200).]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Empty allowlist = OTA un-gated any non-empty token is accepted (200).]] - rationale - gateway/tests/test_voice_gateway.py
+- [[GET firmwarebin token gate, 200 + quoted SHA-256 ETag, HEAD ETag parity.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[If-None-Match equal to the current ETag → 304 with no body.      This is the who]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Wire the firmwarebin route to a fake binary + a fixed OTA token allowlist.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[_fw_client()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_firmware_bin_304_on_matching_if_none_match()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_firmware_bin_404_when_absent()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_firmware_bin_auth_and_etag()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_firmware_bin_stale_if_none_match_returns_body()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_firmware_bin_ungated_when_allowlist_empty()]] - code - gateway/tests/test_voice_gateway.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,10 +31,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_KillSwitchMonitor]]
-- 1 edge to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_test_observatory_mode.py]]
-- 1 edge to [[_COMMUNITY_ModeRequest]]
+- 6 edges to [[_COMMUNITY_CollaboratorActivityTracker]]
 
 ## Top bridge nodes
-- [[TestSetMode]] - degree 14, connects to 4 communities
+- [[_fw_client()]] - degree 7, connects to 1 community
+- [[test_firmware_bin_304_on_matching_if_none_match()]] - degree 3, connects to 1 community
+- [[test_firmware_bin_404_when_absent()]] - degree 3, connects to 1 community
+- [[test_firmware_bin_auth_and_etag()]] - degree 3, connects to 1 community
+- [[test_firmware_bin_stale_if_none_match_returns_body()]] - degree 3, connects to 1 community

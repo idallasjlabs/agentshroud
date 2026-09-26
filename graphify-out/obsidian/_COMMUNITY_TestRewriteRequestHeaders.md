@@ -10,18 +10,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[.test_adds_connection_close_when_absent()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
-- [[.test_forces_connection_close_on_plain_request()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
-- [[.test_host_header_match_is_case_insensitive()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
-- [[.test_preserves_other_headers_and_order()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
-- [[.test_rewrites_host_header_to_target()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
-- [[.test_websocket_upgrade_keeps_connection_header_untouched()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
-- [[A WebSocket upgrade MUST keep Connection Upgrade (not close) or the         han]] - rationale - gateway/tests/test_hermes_dashboard_bridge.py
-- [[Forcing Connection close makes every request single-shot per TCP         connec]] - rationale - gateway/tests/test_hermes_dashboard_bridge.py
-- [[TestRewriteRequestHeaders]] - code - gateway/tests/test_hermes_dashboard_bridge.py
-- [[bridge_module()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
-- [[dashboard_bridge.py (Hermes)]] - code - docker/bots/hermes/dashboard_bridge.py
-- [[test_hermes_dashboard_bridge.py]] - code - gateway/tests/test_hermes_dashboard_bridge.py
+- [[Allowlist]] - document - docker/bot-capabilities.md
+- [[Already in your environment at startup]] - document - docker/bot-capabilities.md
+- [[Credential Isolation — Gateway op-proxy (ACTIVE)]] - document - docker/bot-capabilities.md
+- [[Credential flow]] - document - docker/bot-capabilities.md
+- [[Credentials set at startup (already in environment)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[How to retrieve a credential]] - document - docker/bot-capabilities.md
+- [[How to retrieve a credential at runtime]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Known working credentials]] - document - docker/bot-capabilities.md
+- [[What NEVER to do_1]] - document - docker/bot-capabilities.md
+- [[What NEVER to do]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[You do NOT have direct 1Password access]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[🏗️ Credential Architecture — How Secrets Are Retrieved]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,7 +31,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_AgentShroud v1.2.0 Master Plan]]
+- 1 edge to [[_COMMUNITY_competitive-report-.md dated reports]]
 
 ## Top bridge nodes
-- [[test_hermes_dashboard_bridge.py]] - degree 4, connects to 1 community
+- [[Credential Isolation — Gateway op-proxy (ACTIVE)]] - degree 7, connects to 1 community
+- [[🏗️ Credential Architecture — How Secrets Are Retrieved]] - degree 6, connects to 1 community

@@ -10,15 +10,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[1. Command Injection]] - document - docs/ssh-security-review.md
-- [[2. Host Spoofing  Man-in-the-Middle]] - document - docs/ssh-security-review.md
-- [[3. Credential Theft]] - document - docs/ssh-security-review.md
-- [[4. Privilege Escalation]] - document - docs/ssh-security-review.md
-- [[6. Audit Log Tampering  PII Leakage]] - document - docs/ssh-security-review.md
-- [[D - Denial of Service]] - document - docs/security/threat-model.md
-- [[Threat Model_28]] - document - docs/ssh-security-review.md
-- [[Threat Context Window Stuffing]] - document - docs/security/threat-model.md
-- [[Threat Resource Exhaustion]] - document - docs/security/threat-model.md
+- [[1. Phone Number (Separate from Main)]] - document - docs/reference/PREREQUISITES.md
+- [[1Password (Optional — Teams  Shared Credentials)]] - document - docs/reference/PREREQUISITES.md
+- [[2. Gmail Account (Dedicated for Bot)]] - document - docs/reference/PREREQUISITES.md
+- [[3. Telegram Account (Bot Communication)]] - document - docs/reference/PREREQUISITES.md
+- [[4. Secrets Backend (Credential Management)]] - document - docs/reference/PREREQUISITES.md
+- [[5. OpenAI Account (LLM API)]] - document - docs/reference/PREREQUISITES.md
+- [[6. Anthropic Account (Claude API)]] - document - docs/reference/PREREQUISITES.md
+- [[macOS Keychain (Default)]] - document - docs/reference/PREREQUISITES.md
+- [[📱 Required Accounts & Services]] - document - docs/reference/PREREQUISITES.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,9 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Recommendations for Production Deployment]]
-- 1 edge to [[_COMMUNITY_STRIDE Threat Analysis]]
+- 1 edge to [[_COMMUNITY_Kill Switch]]
 
 ## Top bridge nodes
-- [[Threat Model_28]] - degree 7, connects to 1 community
-- [[D - Denial of Service]] - degree 4, connects to 1 community
+- [[📱 Required Accounts & Services]] - degree 7, connects to 1 community

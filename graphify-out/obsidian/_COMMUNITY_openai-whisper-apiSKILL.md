@@ -10,19 +10,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[API key]] - document - skills/openclaw/openai-whisper-api/SKILL.md
-- [[Chat voice responses]] - document - skills/openclaw/sag/SKILL.md
-- [[OpenAI Whisper API (curl)]] - document - skills/openclaw/openai-whisper-api/SKILL.md
-- [[Quick start_4]] - document - skills/openclaw/openai-whisper-api/SKILL.md
-- [[Useful flags_1]] - document - skills/openclaw/openai-whisper-api/SKILL.md
-- [[Whisper (CLI)]] - document - skills/openclaw/openai-whisper/SKILL.md
-- [[openai-whisper-apiSKILL]] - document - skills/openclaw/openai-whisper-api/SKILL.md
-- [[openai-whisperSKILL]] - document - skills/openclaw/openai-whisper/SKILL.md
-- [[sag]] - document - skills/openclaw/sag/SKILL.md
-- [[sagSKILL]] - document - skills/openclaw/sag/SKILL.md
-- [[transcribe.sh]] - code - skills/openclaw/openai-whisper-api/scripts/transcribe.sh
-- [[transcribe.sh script]] - code - skills/openclaw/openai-whisper-api/scripts/transcribe.sh
-- [[usage()_6]] - code - skills/openclaw/openai-whisper-api/scripts/transcribe.sh
+- [[Conditional memory writes (memoryYYYY-MM-DD.md, MEMORY.md)]] - concept - skills/openclaw/healthcheck/SKILL.md
+- [[Core rules]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Logging and audit trail]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Memory writes (conditional)]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[OpenClaw Host Hardening]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[OpenClaw command accuracy]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Overview_27]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Periodic checks]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Required confirmations (always)]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Required prompt to schedule (always)]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[SKILL_212]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Stable-named cron scheduling for periodic audits]] - concept - skills/openclaw/healthcheck/SKILL.md
+- [[openclaw security audit command family]] - concept - skills/openclaw/healthcheck/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,3 +30,11 @@ members: 13
 TABLE source_file, type FROM #community/openai-whisper-api/SKILLmd
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_SSH Proxy Threat Model (6 threats)]]
+- 1 edge to [[_COMMUNITY_TestCrossBotTrustPivot]]
+
+## Top bridge nodes
+- [[OpenClaw Host Hardening]] - degree 9, connects to 1 community
+- [[Stable-named cron scheduling for periodic audits]] - degree 3, connects to 1 community

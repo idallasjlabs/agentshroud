@@ -1,36 +1,37 @@
 ---
 type: community
 cohesion: 0.10
-members: 21
+members: 22
 ---
 
 # browser-extension/manifest.json
 
 **Cohesion:** 0.10 - loosely connected
-**Members:** 21 nodes
+**Members:** 22 nodes
 
 ## Members
-- [[128]] - code - browser-extension/manifest.json
-- [[48]] - code - browser-extension/manifest.json
-- [[action]] - code - browser-extension/manifest.json
-- [[background]] - code - browser-extension/manifest.json
-- [[browser-extensionmanifest.json]] - code - browser-extension/manifest.json
-- [[browser_specific_settings]] - code - browser-extension/manifest.json
-- [[default_popup]] - code - browser-extension/manifest.json
-- [[default_title]] - code - browser-extension/manifest.json
-- [[description]] - code - browser-extension/manifest.json
-- [[gecko]] - code - browser-extension/manifest.json
-- [[host_permissions]] - code - browser-extension/manifest.json
-- [[icons]] - code - browser-extension/manifest.json
-- [[id]] - code - browser-extension/manifest.json
-- [[manifest_version]] - code - browser-extension/manifest.json
-- [[name]] - code - browser-extension/manifest.json
-- [[open_in_tab]] - code - browser-extension/manifest.json
-- [[options_ui]] - code - browser-extension/manifest.json
-- [[page]] - code - browser-extension/manifest.json
-- [[permissions]] - code - browser-extension/manifest.json
-- [[service_worker]] - code - browser-extension/manifest.json
-- [[version_2]] - code - browser-extension/manifest.json
+- [[CLI]] - document - skills/openclaw/voice-call/SKILL.md
+- [[Config]] - document - skills/openclaw/summarize/SKILL.md
+- [[Model + keys]] - document - skills/openclaw/summarize/SKILL.md
+- [[OpenClaw Skill Metadata Schema (frontmatter convention)]] - concept - skills/openclaw/skill-creator/scripts/quick_validate.py
+- [[Quick start_3]] - document - skills/openclaw/summarize/SKILL.md
+- [[SKILL_230]] - document - skills/openclaw/songsee/SKILL.md
+- [[SKILL_231]] - document - skills/openclaw/spotify-player/SKILL.md
+- [[SKILL_232]] - document - skills/openclaw/summarize/SKILL.md
+- [[SKILL_233]] - document - skills/openclaw/things-mac/SKILL.md
+- [[SKILL_237]] - document - skills/openclaw/voice-call/SKILL.md
+- [[SKILL_238]] - document - skills/openclaw/wacli/SKILL.md
+- [[SKILL_240]] - document - skills/openclaw/xurl/SKILL.md
+- [[Summarize]] - document - skills/openclaw/summarize/SKILL.md
+- [[Things 3 CLI]] - document - skills/openclaw/things-mac/SKILL.md
+- [[Tool]] - document - skills/openclaw/voice-call/SKILL.md
+- [[Useful flags_1]] - document - skills/openclaw/summarize/SKILL.md
+- [[Voice Call]] - document - skills/openclaw/voice-call/SKILL.md
+- [[When to use (trigger phrases)]] - document - skills/openclaw/summarize/SKILL.md
+- [[YouTube summary vs transcript]] - document - skills/openclaw/summarize/SKILL.md
+- [[songsee]] - document - skills/openclaw/songsee/SKILL.md
+- [[spogo  spotify_player]] - document - skills/openclaw/spotify-player/SKILL.md
+- [[wacli]] - document - skills/openclaw/wacli/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,7 +41,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_background.js]]
+- 1 edge to [[_COMMUNITY_TestFileDownload]]
+- 1 edge to [[_COMMUNITY_AgentShroud Falco Detection Rules]]
+- 1 edge to [[_COMMUNITY_→ {site site1, test_mode True, output_p]]
+- 1 edge to [[_COMMUNITY_Docker Volumes]]
+- 1 edge to [[_COMMUNITY_Skill Hermes Dev Workflow (HDEV)]]
+- 1 edge to [[_COMMUNITY_Findings]]
+- 1 edge to [[_COMMUNITY_Voice Terminal — ESP32-S3-BOX-3 (Optional AgentS]]
 
 ## Top bridge nodes
-- [[browser-extensionmanifest.json]] - degree 12, connects to 1 community
+- [[OpenClaw Skill Metadata Schema (frontmatter convention)]] - degree 13, connects to 6 communities
+- [[SKILL_240]] - degree 3, connects to 1 community

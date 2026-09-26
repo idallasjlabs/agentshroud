@@ -1,90 +1,85 @@
 ---
 type: community
 cohesion: 0.04
-members: 75
+members: 70
 ---
 
 # ToolResultSanitizer
 
 **Cohesion:** 0.04 - loosely connected
-**Members:** 75 nodes
+**Members:** 70 nodes
 
 ## Members
-- [[.__init__()_172]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[._domain_matches_pattern()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[._extract_code_blocks()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[._is_domain_allowed()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[._is_internal_link()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[._restore_code_blocks()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[._url_has_blocked_patterns()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[.sanitize()_4]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[.sanitize_images()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[.sanitize_links()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[.setup_method()_36]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_blocked_pattern_detection()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_code_blocks_preserved()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_convenience_function()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_custom_config()_2]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_default_config()_5]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_domain_matching_patterns()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_edge_cases()_4]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_empty_alt_text_handling()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_empty_or_none_input()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_external_domain_stripping()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_internal_link_detection()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_internal_links_preserved()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_is_domain_allowed()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_legitimate_links_preserved()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_logging()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_malicious_image_stripping()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_malicious_link_stripping()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_mixed_content_sanitization()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_performance_with_large_content()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_realistic_web_scraping_result()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[.test_warn_mode()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Check if URL contains any blocked patterns.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Check if a URL's domain is in the allowlist.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Check if domain matches pattern (supports wildcards).]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Check if this is an internal link (relative, anchor, etc.).]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Configuration for tool result markdown sanitization.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Convenience function to sanitize tool result content.      Args         content]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Enhanced markdown sanitizer with configurable domain allowlist.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Extract code blocks to preserve them during sanitization.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Integration tests for the sanitizer.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Remove or warn about markdown images pointing to non-allowlisted domains.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Restore code blocks after sanitization.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Sanitize tool result content by filtering markdown links and images.          Ar]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Set up test fixtures._4]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test ToolResultSanitizerConfig.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test custom configuration.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test default configuration values._4]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test detection of blocked patterns in URLs.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test detection of internalrelative links.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test domain allowlist checking.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test domain pattern matching including wildcards.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test edge cases and malformed inputs.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test handling of empty or None input.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test handling of images with empty alt text.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test performance with large content.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test sanitization of mixed legitimate and malicious content.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test sanitizing a realistic web scraping result.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test stripping of links to non-allowlisted domains.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test stripping of malicious markdown images.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test stripping of malicious markdown links.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test that appropriate logging occurs.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test that code blocks with URLs are preserved.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test that internalrelative links are preserved.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test that legitimate links are preserved.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test the convenience sanitize_tool_result function.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test warn mode that marks but preserves external content.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[TestIntegration_1]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[TestToolResultSanitizer_1]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[TestToolResultSanitizerConfig]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[ToolResultSanitizer_1]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[ToolResultSanitizerConfig]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[sanitize_tool_result()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[test_tool_result_sanitizer_enhanced.py]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[tool_result_sanitizer_enhanced.py]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[.__init__()_41]] - code - gateway/proxy/url_analyzer.py
+- [[.__init__()_42]] - code - gateway/proxy/web_content_scanner.py
+- [[._check_base64()]] - code - gateway/proxy/url_analyzer.py
+- [[._is_private_ip()]] - code - gateway/proxy/url_analyzer.py
+- [[._is_ssrf()]] - code - gateway/proxy/url_analyzer.py
+- [[._resolve_host()]] - code - gateway/proxy/url_analyzer.py
+- [[.analyze()]] - code - gateway/proxy/url_analyzer.py
+- [[.analyze_and_pin()]] - code - gateway/proxy/url_analyzer.py
+- [[.flagged()]] - code - gateway/proxy/url_analyzer.py
+- [[.get_stats()_10]] - code - gateway/proxy/web_proxy.py
+- [[.test_actual_base64()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_all_lowercase_not_base64()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_api_endpoint_allowed()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_base64_in_path_flagged()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_base64_in_query_flagged()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_credit_card_in_url_flagged()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_docs_allowed()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_email_in_url_flagged()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_empty_url()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_github_allowed()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_https_allowed()_1]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_long_query_string_flagged()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_many_params_flagged()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_news_site_allowed()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_no_scheme()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_non_base64_chars()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_normal_query_not_flagged()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_phone_in_url_flagged()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_public_ip_allowed()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_short_base64_not_flagged()_1]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_short_string_not_base64()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_ssn_in_url_flagged()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_stackoverflow_allowed()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_weird_scheme()]] - code - gateway/tests/test_url_analyzer.py
+- [[.to_dict()_2]] - code - gateway/proxy/web_proxy.py
+- [[A single finding from URL analysis.]] - rationale - gateway/proxy/url_analyzer.py
+- [[Analyze URL and pin resolved IP to mitigate DNS rebinding TOCTOU.          When]] - rationale - gateway/proxy/url_analyzer.py
+- [[Analyze URLs for SSRF, data exfiltration, and suspicious patterns.]] - rationale - gateway/proxy/url_analyzer.py
+- [[Analyze a URL for security issues.          Returns URLAnalysisResult with verdi]] - rationale - gateway/proxy/url_analyzer.py
+- [[Any_23]] - code - gateway/proxy/web_proxy.py
+- [[Args             resolve_dns If True, resolve hostnames to IPs and check those]] - rationale - gateway/proxy/url_analyzer.py
+- [[Check for base64-encoded data in URL path and query values.]] - rationale - gateway/proxy/url_analyzer.py
+- [[Check if an IP address is privatereservedloopback.]] - rationale - gateway/proxy/url_analyzer.py
+- [[Check if hostname is a privatereserved address (SSRF attempt).]] - rationale - gateway/proxy/url_analyzer.py
+- [[Data exfiltration patterns in URLs — flagged, not blocked.]] - rationale - gateway/tests/test_url_analyzer.py
+- [[Edge cases and malformed URLs.]] - rationale - gateway/tests/test_url_analyzer.py
+- [[Ensure normal browsing URLs pass through.]] - rationale - gateway/tests/test_url_analyzer.py
+- [[Get proxy statistics._1]] - rationale - gateway/proxy/web_proxy.py
+- [[Heuristic does this string look like base64-encoded data]] - rationale - gateway/proxy/url_analyzer.py
+- [[PII detection in URLs — flagged, not blocked.]] - rationale - gateway/tests/test_url_analyzer.py
+- [[Resolve hostname to IP. Returns None on failure.          NOTE DNS rebinding at]] - rationale - gateway/proxy/url_analyzer.py
+- [[Result of analyzing a URL.]] - rationale - gateway/proxy/url_analyzer.py
+- [[Scan web content for prompt injection, PII, and hidden payloads.      All findin]] - rationale - gateway/proxy/web_content_scanner.py
+- [[Short base64 strings are normal (e.g., API tokens in URLs).]] - rationale - gateway/tests/test_url_analyzer.py
+- [[Test the _looks_like_base64 helper.]] - rationale - gateway/tests/test_url_analyzer.py
+- [[TestBase64Heuristic]] - code - gateway/tests/test_url_analyzer.py
+- [[TestDataExfiltration]] - code - gateway/tests/test_url_analyzer.py
+- [[TestLegitimateURLsAllowed]] - code - gateway/tests/test_url_analyzer.py
+- [[TestMalformedURLs]] - code - gateway/tests/test_url_analyzer.py
+- [[TestPIIInURLs]] - code - gateway/tests/test_url_analyzer.py
+- [[URLAnalysisResult]] - code - gateway/proxy/url_analyzer.py
+- [[URLAnalyzer]] - code - gateway/proxy/url_analyzer.py
+- [[URLAnalyzer_1]] - code - gateway/proxy/web_proxy.py
+- [[URLFinding]] - code - gateway/proxy/url_analyzer.py
+- [[WebContentScanner]] - code - gateway/proxy/web_content_scanner.py
+- [[WebContentScanner_1]] - code - gateway/proxy/web_proxy.py
+- [[WebProxyConfig_1]] - code - gateway/proxy/web_proxy.py
+- [[_looks_like_base64()]] - code - gateway/proxy/url_analyzer.py
+- [[analyzer()]] - code - gateway/tests/test_url_analyzer.py
+- [[test_url_analyzer.py]] - code - gateway/tests/test_url_analyzer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -94,10 +89,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 19 edges to [[_COMMUNITY_lifespan.py]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
+- 11 edges to [[_COMMUNITY_EncryptedStore]]
+- 10 edges to [[_COMMUNITY_SOCWebSocketHandler]]
+- 6 edges to [[_COMMUNITY_FetchOutcome]]
+- 6 edges to [[_COMMUNITY_cls]]
+- 5 edges to [[_COMMUNITY_TrustManager]]
+- 2 edges to [[_COMMUNITY_generate_branding_assets.py]]
+- 1 edge to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
+- 1 edge to [[_COMMUNITY_URLAnalyzer]]
 
 ## Top bridge nodes
-- [[ToolResultSanitizer_1]] - degree 34, connects to 3 communities
-- [[ToolResultSanitizerConfig]] - degree 26, connects to 2 communities
+- [[URLAnalyzer]] - degree 28, connects to 6 communities
+- [[WebContentScanner]] - degree 20, connects to 6 communities
+- [[TestDataExfiltration]] - degree 11, connects to 2 communities
+- [[test_url_analyzer.py]] - degree 10, connects to 2 communities
+- [[Any_23]] - degree 6, connects to 2 communities

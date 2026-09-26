@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[i-sre SKILL.md (SRE practices skill, minimal stub)]] - document - docker/config/hermes/skills/i-sre/SKILL.md
+- [[curriculum.md (podcast pipeline learning objectives artifact)]] - concept - docker/config/hermes/skills/i-mnemosyne/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

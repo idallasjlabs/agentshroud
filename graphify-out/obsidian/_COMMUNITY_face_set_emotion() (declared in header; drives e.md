@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[face_set_emotion() (declared in header; drives eyemouth canvases)]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[ToolChainAnalyzer.sanitize_tool_params (C34)]] - code - gateway/security/tool_chain_analyzer.py
 
 ## Live Query (requires Dataview plugin)
 

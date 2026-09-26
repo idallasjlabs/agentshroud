@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Skill agile_2]] - document - docker/config/openclaw/skills/i-agile/SKILL.md
-- [[openclawskillsi-agileSKILL]] - document - docker/config/openclaw/skills/i-agile/SKILL.md
+- [[.test_form_outbound_pipeline_block_non_owner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Pipeline-blocked form payloads to non-owners must be replaced with a safe notice]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +19,12 @@ members: 2
 TABLE source_file, type FROM #community/openclaw/skills/i-agile/SKILLmd
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_models.py]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY__make_proxy()]]
+
+## Top bridge nodes
+- [[.test_form_outbound_pipeline_block_non_owner()]] - degree 5, connects to 4 communities

@@ -1,25 +1,25 @@
 ---
 type: community
-cohesion: 0.27
+cohesion: 0.20
 members: 10
 ---
 
 # _parse_env_file()
 
-**Cohesion:** 0.27 - loosely connected
+**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members
-- [[.config()]] - code - gateway/tests/test_config_validation.py
-- [[.config()_1]] - code - gateway/tests/test_config_validation.py
-- [[.config()_2]] - code - gateway/tests/test_config_validation.py
-- [[.config()_5]] - code - gateway/tests/test_config_validation.py
-- [[.config()_7]] - code - gateway/tests/test_config_validation.py
-- [[Parse a .env file into a dict (ignoring comments and blanks).]] - rationale - gateway/tests/test_config_validation.py
-- [[Path_8]] - code
-- [[_parse_env_file()]] - code - gateway/tests/test_config_validation.py
-- [[_parse_env_file()_1]] - code - gateway/tests/test_config_validation.py
-- [[fixture_3]] - code
+- [[1. Docker Desktop]] - document - docs/reference/PREREQUISITES.md
+- [[2. Python 3.11+]] - document - docs/reference/PREREQUISITES.md
+- [[3. Python Packages]] - document - docs/reference/PREREQUISITES.md
+- [[4. Node.js 22+ (for OpenClaw)]] - document - docs/reference/PREREQUISITES.md
+- [[5. Git]] - document - docs/reference/PREREQUISITES.md
+- [[6. Tailscale (Optional but Recommended)]] - document - docs/reference/PREREQUISITES.md
+- [[Hardware_1]] - document - docs/reference/PREREQUISITES.md
+- [[Operating System]] - document - docs/reference/PREREQUISITES.md
+- [[Required Software]] - document - docs/reference/PREREQUISITES.md
+- [[💻 System Requirements]] - document - docs/reference/PREREQUISITES.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,17 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_TestMinimalConfig]]
-- 1 edge to [[_COMMUNITY_TestParanoidConfig]]
-- 1 edge to [[_COMMUNITY_TestRecommendedConfig]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_test_config_validation.py]]
-- 1 edge to [[_COMMUNITY_TestParanoidConfig]]
-- 1 edge to [[_COMMUNITY_TestRecommendedConfig]]
+- 1 edge to [[_COMMUNITY_Kill Switch]]
 
 ## Top bridge nodes
-- [[_parse_env_file()_1]] - degree 6, connects to 2 communities
-- [[_parse_env_file()]] - degree 6, connects to 1 community
-- [[.config()]] - degree 3, connects to 1 community
-- [[.config()_1]] - degree 3, connects to 1 community
-- [[.config()_2]] - degree 3, connects to 1 community
+- [[💻 System Requirements]] - degree 4, connects to 1 community

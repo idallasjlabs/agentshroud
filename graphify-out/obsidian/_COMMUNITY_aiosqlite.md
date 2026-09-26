@@ -10,12 +10,12 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[Database Files]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[Purpose_5]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[Related Notes_6]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[WAL Mode]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[Where Used_1]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[aiosqlite]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[.test_custom_config()_3]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_default_config()_7]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test ToolResultSanitizerConfig.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test custom configuration.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test default configuration values._5]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[TestToolResultSanitizerConfig]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +25,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Restart Procedure]]
+- 4 edges to [[_COMMUNITY_DEVELOPER.md — Development Context for AgentShro]]
+- 1 edge to [[_COMMUNITY_Integration Guide]]
+- 1 edge to [[_COMMUNITY_Skill UX Expert (UX)]]
 
 ## Top bridge nodes
-- [[aiosqlite]] - degree 6, connects to 1 community
+- [[TestToolResultSanitizerConfig]] - degree 6, connects to 2 communities
+- [[.test_custom_config()_3]] - degree 3, connects to 1 community
+- [[.test_default_config()_7]] - degree 3, connects to 1 community
+- [[Test ToolResultSanitizerConfig.]] - degree 2, connects to 1 community

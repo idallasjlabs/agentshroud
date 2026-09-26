@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[cd (Continuous Delivery) SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-cd/SKILL.md
+- [[append_finding.py]] - code - docker/config/hermes/cron/prompts/newsletter-chat-front-ends-search-infra.txt
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,24 +1,23 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.25
+members: 8
 ---
 
 # _mock_dir_with_fresh_files()
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[.test_five_clean_and_fresh()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_five_zero_failures_fresh_report()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_four_zero_failures_stale_report()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_max_capped_at_five()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_two_with_failures()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_zero_when_not_run()_1]] - code - gateway/tests/test_scorecard_scoring.py
-- [[Like _mock_dir_with_files but mtime is now (fresh).]] - rationale - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreComplianceAuditing_1]] - code - gateway/tests/test_scorecard_scoring.py
-- [[_mock_dir_with_fresh_files()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[API Call Structure]] - document - .agents/skills/i-apollo/SKILL.md
+- [[Audio Quality Settings]] - document - .agents/skills/i-apollo/SKILL.md
+- [[Error Handling]] - document - .agents/skills/i-apollo/SKILL.md
+- [[Primary API Text-to-Dialogue]] - document - .agents/skills/i-apollo/SKILL.md
+- [[Quick Mode Create Podcast API]] - document - .agents/skills/i-apollo/SKILL.md
+- [[Script Parsing]] - document - .agents/skills/i-apollo/SKILL.md
+- [[Technical Specification]] - document - .agents/skills/i-apollo/SKILL.md
+- [[Voice Configuration]] - document - .agents/skills/i-apollo/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,15 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY__mock_dir_with_files()]]
-- 2 edges to [[_COMMUNITY_TestIsFresh]]
-- 2 edges to [[_COMMUNITY_test_scorecard_scoring.py]]
-- 1 edge to [[_COMMUNITY_TestScoreMalwareDefense]]
-- 1 edge to [[_COMMUNITY_TestScoreVulnerabilityManagement]]
+- 1 edge to [[_COMMUNITY_TestIsContainerRunning]]
 
 ## Top bridge nodes
-- [[_mock_dir_with_fresh_files()]] - degree 8, connects to 4 communities
-- [[TestScoreComplianceAuditing_1]] - degree 6, connects to 2 communities
-- [[.test_four_zero_failures_stale_report()]] - degree 2, connects to 1 community
-- [[.test_max_capped_at_five()]] - degree 2, connects to 1 community
-- [[.test_five_clean_and_fresh()]] - degree 2, connects to 1 community
+- [[Technical Specification]] - degree 8, connects to 1 community

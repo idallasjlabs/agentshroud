@@ -1,37 +1,38 @@
 ---
 type: community
 cohesion: 0.09
-members: 22
+members: 23
 ---
 
 # Voice Terminal — ESP32-S3-BOX-3 (Optional AgentS
 
 **Cohesion:** 0.09 - loosely connected
-**Members:** 22 nodes
+**Members:** 23 nodes
 
 ## Members
-- [[1. Generate the voice gateway token]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[2. Create `wifi_credentials.h`]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[3. Start the voice gateway]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[4. Enable Tailscale Funnel]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[5. Build and flash the firmware]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Adding a future agent_1]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Agent toggle (MUTE button — BSP_BUTTON_MUTE)]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Architecture_8]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Installation_2]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Physical button (top button — BSP_BUTTON_MAIN)]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Prerequisites_7]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Security notes]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Success pattern — `docker logs agentshroud-voice-gateway`]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Tap to talk]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Troubleshooting_27]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Updating the firmware (OTA — the normal deploy path)]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Usage_121]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Voice volume]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Voice-gateway configuration (env vars, set in `dockerdocker-compose.yml`)]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Wake word]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[voice-terminal-esp32-s3]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Check your activity]] - document - skills/openclaw/xurl/SKILL.md
+- [[Common Workflows_2]] - document - skills/openclaw/xurl/SKILL.md
+- [[Error Handling_8]] - document - skills/openclaw/xurl/SKILL.md
+- [[Global Flags]] - document - skills/openclaw/xurl/SKILL.md
+- [[Go]] - document - skills/openclaw/xurl/SKILL.md
+- [[Homebrew (macOS)]] - document - skills/openclaw/xurl/SKILL.md
+- [[Installation_3]] - document - skills/openclaw/xurl/SKILL.md
+- [[Notes_11]] - document - skills/openclaw/xurl/SKILL.md
+- [[Other auth methods]] - document - skills/openclaw/xurl/SKILL.md
+- [[Output Format_41]] - document - skills/openclaw/xurl/SKILL.md
+- [[Post with an image]] - document - skills/openclaw/xurl/SKILL.md
+- [[Prerequisites_15]] - document - skills/openclaw/xurl/SKILL.md
+- [[Quick Reference_10]] - document - skills/openclaw/xurl/SKILL.md
+- [[Raw API Access]] - document - skills/openclaw/xurl/SKILL.md
+- [[Register an app (recommended)]] - document - skills/openclaw/xurl/SKILL.md
+- [[Reply to a conversation]] - document - skills/openclaw/xurl/SKILL.md
+- [[Search and engage]] - document - skills/openclaw/xurl/SKILL.md
+- [[Secret Safety (Mandatory)]] - document - skills/openclaw/xurl/SKILL.md
+- [[Set up multiple apps]] - document - skills/openclaw/xurl/SKILL.md
+- [[Shell script]] - document - skills/openclaw/xurl/SKILL.md
+- [[Streaming_1]] - document - skills/openclaw/xurl/SKILL.md
+- [[npm]] - document - skills/openclaw/xurl/SKILL.md
+- [[xurl — Agent Skill Reference]] - document - skills/openclaw/xurl/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,3 +40,10 @@ members: 22
 TABLE source_file, type FROM #community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentS
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_browser-extensionmanifest.json]]
+- 1 edge to [[_COMMUNITY_AgentShroud Module Inventory]]
+
+## Top bridge nodes
+- [[xurl — Agent Skill Reference]] - degree 12, connects to 2 communities

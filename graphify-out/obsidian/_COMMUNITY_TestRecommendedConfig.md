@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # TestRecommendedConfig
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[.test_approval_queue_enabled()_3]] - code - gateway/tests/test_config_validation.py
-- [[.test_kill_switch_enabled()_3]] - code - gateway/tests/test_config_validation.py
-- [[.test_pii_enabled()_3]] - code - gateway/tests/test_config_validation.py
-- [[.test_ssh_requires_approval()_3]] - code - gateway/tests/test_config_validation.py
-- [[.test_tailscale_enabled()_1]] - code - gateway/tests/test_config_validation.py
-- [[TestRecommendedConfig_1]] - code - gateway/tests/test_config_validation.py
+- [[MCP Tools Usage (MCPM)_2]] - document - docker/config/openclaw/skills/i-mcpm/README.md
+- [[Purpose_93]] - document - docker/config/openclaw/skills/i-mcpm/README.md
+- [[README_98]] - document - docker/config/openclaw/skills/i-mcpm/README.md
+- [[Related Skills_102]] - document - docker/config/openclaw/skills/i-mcpm/README.md
+- [[Usage_103]] - document - docker/config/openclaw/skills/i-mcpm/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,9 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_config_validation.py]]
-- 1 edge to [[_COMMUNITY_TestRecommendedConfig]]
-- 1 edge to [[_COMMUNITY__parse_env_file()]]
+- 1 edge to [[_COMMUNITY_BaseModel]]
 
 ## Top bridge nodes
-- [[TestRecommendedConfig_1]] - degree 8, connects to 3 communities
+- [[MCP Tools Usage (MCPM)_2]] - degree 5, connects to 1 community

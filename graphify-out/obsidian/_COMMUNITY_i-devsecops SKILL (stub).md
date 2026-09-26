@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[i-devsecops SKILL (stub)]] - document - docker/config/hermes/skills/i-devsecops/SKILL.md
+- [[Diagram 07 Data Flow]] - image - docs/diagrams/images/diagram-07-data-flow.svg
 
 ## Live Query (requires Dataview plugin)
 

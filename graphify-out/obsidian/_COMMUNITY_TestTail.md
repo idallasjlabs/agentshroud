@@ -1,23 +1,22 @@
 ---
 type: community
-cohesion: 0.39
-members: 8
+cohesion: 0.33
+members: 7
 ---
 
 # TestTail
 
-**Cohesion:** 0.39 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[.test_empty()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_keeps_last_n_lines()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_only_newlines()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_shorter_than_n()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_strips_trailing_newline()]] - code - gateway/tests/test_multi_host_test.py
-- [[Return the last ``lines`` non-trailing-empty lines of ``text``.]] - rationale - gateway/tools/multi_host_test.py
-- [[TestTail]] - code - gateway/tests/test_multi_host_test.py
-- [[tail()]] - code - gateway/tools/multi_host_test.py
+- [[.get_integrity_status()]] - code - gateway/security/memory_integrity.py
+- [[.get_recent_alerts()]] - code - gateway/security/memory_integrity.py
+- [[.to_dict()_11]] - code - gateway/security/memory_integrity.py
+- [[Any_48]] - code - gateway/security/memory_integrity.py
+- [[Convert to dictionary for JSON serialization.]] - rationale - gateway/security/memory_integrity.py
+- [[Get alerts from the last N hours.]] - rationale - gateway/security/memory_integrity.py
+- [[Get current integrity monitoring status.]] - rationale - gateway/security/memory_integrity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,12 +26,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_test_multi_host_test.py]]
-- 2 edges to [[_COMMUNITY_MultiHostResult]]
-- 1 edge to [[_COMMUNITY_HostStatus]]
-- 1 edge to [[_COMMUNITY_multi_host_test.py]]
-- 1 edge to [[_COMMUNITY_run_multi_host()]]
+- 5 edges to [[_COMMUNITY_ContainerEngine]]
+- 1 edge to [[_COMMUNITY_falco_monitor.py]]
 
 ## Top bridge nodes
-- [[TestTail]] - degree 9, connects to 3 communities
-- [[tail()]] - degree 9, connects to 3 communities
+- [[.to_dict()_11]] - degree 4, connects to 2 communities
+- [[Any_48]] - degree 5, connects to 1 community
+- [[.get_integrity_status()]] - degree 4, connects to 1 community
+- [[.get_recent_alerts()]] - degree 4, connects to 1 community

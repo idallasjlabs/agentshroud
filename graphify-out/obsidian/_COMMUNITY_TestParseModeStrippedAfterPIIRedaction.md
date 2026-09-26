@@ -1,26 +1,25 @@
 ---
 type: community
-cohesion: 0.27
-members: 11
+cohesion: 0.20
+members: 10
 ---
 
 # TestParseModeStrippedAfterPIIRedaction
 
-**Cohesion:** 0.27 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[._make_owner_proxy()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_parse_mode_preserved_and_placeholder_escaped_email_fallback_path()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_parse_mode_preserved_and_placeholder_escaped_phone_fallback_path()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_parse_mode_preserved_and_placeholder_escaped_pipeline_path()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_parse_mode_preserved_when_no_pii_detected()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[PII redaction must not strip parse_mode for the whole message (owner, fallback p]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[PII redaction via the pipeline path must not strip parse_mode either (owner, pip]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Regression tests for Telegram HTML parse error caused by PII placeholders.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Return a TelegramAPIProxy configured with a mock owner RBAC.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[TestParseModeStrippedAfterPIIRedaction]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[parse_mode=HTML must be preserved for owner when text contains no PII.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Change Default Model]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Check Current Profile]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Check Current Profile_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Check Telegram Channel Status]] - document - docs/setup/SETUP_API_KEYS.md
+- [[List Available Models]] - document - docs/setup/SETUP_API_KEYS.md
+- [[List Available Profiles]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[List Available Profiles_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Quick Reference_8]] - document - docs/setup/SETUP_API_KEYS.md
+- [[View Configured Profiles]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[View Configured Providers]] - document - docs/setup/SETUP_API_KEYS.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,15 +29,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 2 edges to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_CollaboratorActivityTracker]]
-- 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_app_main.c]]
+- 1 edge to [[_COMMUNITY_SSHProxy]]
+- 1 edge to [[_COMMUNITY_record_decision]]
 
 ## Top bridge nodes
-- [[TestParseModeStrippedAfterPIIRedaction]] - degree 11, connects to 4 communities
-- [[._make_owner_proxy()]] - degree 7, connects to 1 community
-- [[.test_parse_mode_preserved_and_placeholder_escaped_email_fallback_path()]] - degree 4, connects to 1 community
-- [[.test_parse_mode_preserved_and_placeholder_escaped_phone_fallback_path()]] - degree 4, connects to 1 community
-- [[.test_parse_mode_preserved_and_placeholder_escaped_pipeline_path()]] - degree 4, connects to 1 community
+- [[Quick Reference_8]] - degree 5, connects to 1 community
+- [[List Available Profiles_1]] - degree 4, connects to 1 community
+- [[List Available Profiles]] - degree 3, connects to 1 community

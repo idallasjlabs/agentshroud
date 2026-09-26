@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[block_main_commits.sh]] - code - .claude/scripts/claude-hooks/block_main_commits.sh
-- [[block_main_commits.sh script]] - code - .claude/scripts/claude-hooks/block_main_commits.sh
+- [[plan_3]] - document - skills/custom/agentshroud-redteam/references/steve-hay-plan.md
+- [[steve-hay-plan_1]] - document - skills/custom/agentshroud-redteam/references/steve-hay-plan.md
 
 ## Live Query (requires Dataview plugin)
 

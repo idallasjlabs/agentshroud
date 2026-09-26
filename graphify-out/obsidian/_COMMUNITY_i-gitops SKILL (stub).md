@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[i-gitops SKILL (stub)]] - document - docker/config/hermes/skills/i-gitops/SKILL.md
+- [[SCHEMA_VERSION entity]] - concept - docs/diagrams/images/diagram-08-erd.svg
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,31 +1,31 @@
 ---
 type: community
-cohesion: 0.28
+cohesion: 0.12
 members: 16
 ---
 
 # format_cve_report()
 
-**Cohesion:** 0.28 - loosely connected
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[.test_affected_packages_count_shown()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_contains_cve_ids()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_contains_header()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_contains_package_names()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_contains_severity_counts()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_error_report_shows_error_message()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_fixed_version_shown()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_status_clean_when_no_critical_high()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_status_critical_when_critical_present()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_total_vulnerability_count_shown()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_zero_count_severity_omitted()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[Build a minimal parsed Trivy report.]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[Format a Trivy scan result into a Telegram-ready Markdown message.      Args]] - rationale - gateway/security/daily_cve_report.py
-- [[TestFormatCveReport_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[_make_report()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[format_cve_report()]] - code - gateway/security/daily_cve_report.py
+- [[02-human-in-the-loop]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Constraints_5]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Evidence_2]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Problem_5]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Remediation_3]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Root Cause_4]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Severity_5]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 1 Define MCP tool risk tiers]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 2 Configure approval requirements per tier]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 3 Wire MCP Proxy to Approval Queue]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 4 Set Approval Queue to enforce mode]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 5 Add approval UI to the control center dashboard]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 6 Add Telegram admin notification for critical-tier tools]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 7 Return clear error messages to the agent]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Verification_4]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - document - docs/planning/redteam/02-human-in-the-loop.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,15 +33,3 @@ members: 16
 TABLE source_file, type FROM #community/format_cve_report
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 10 edges to [[_COMMUNITY_test_daily_cve_report.py]]
-- 2 edges to [[_COMMUNITY_asyncio]]
-- 1 edge to [[_COMMUNITY_gateway.security.daily_cve_report]]
-
-## Top bridge nodes
-- [[format_cve_report()]] - degree 17, connects to 2 communities
-- [[_make_report()_1]] - degree 15, connects to 1 community
-- [[TestFormatCveReport_1]] - degree 12, connects to 1 community
-- [[.test_error_report_shows_error_message()_1]] - degree 3, connects to 1 community
-- [[Format a Trivy scan result into a Telegram-ready Markdown message.      Args]] - degree 2, connects to 1 community

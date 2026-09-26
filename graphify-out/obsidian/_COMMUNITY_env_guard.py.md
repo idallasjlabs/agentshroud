@@ -1,36 +1,36 @@
 ---
 type: community
-cohesion: 0.10
+cohesion: 0.26
 members: 21
 ---
 
 # env_guard.py
 
-**Cohesion:** 0.10 - loosely connected
+**Cohesion:** 0.26 - loosely connected
 **Members:** 21 nodes
 
 ## Members
-- [[Blocked Command Patterns (via `_contains_env_access_patterns`)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Blocked Commands]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Blocked Paths]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Environment Variables_3]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[EnvironmentGuard.check_command_execution(command, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[EnvironmentGuard.check_file_access(file_path, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[EnvironmentGuard.monitor_environment_access(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[EnvironmentGuard.scrub_command_output(output, command)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Function Details_2]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Global Singleton]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Key Classes  Functions_2]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Mode Enforce vs Monitor_1]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Purpose_126]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Related_4]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Responsibilities_3]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Threat Model_3]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Tracked Credential Variable Names (subset)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[check_command(cmd)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[env_guard.py_2]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[env_guard.py_1]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[scrub_output(text)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[Create SVG files that embed the logo PNGs as base64 data URIs.      These are sc]] - rationale - scripts/generate_branding_assets.py
+- [[FreeTypeFont]] - code - scripts/generate_branding_assets.py
+- [[Image]] - code - scripts/generate_branding_assets.py
+- [[Load source logo, optionally resize and composite onto bg.]] - rationale - scripts/generate_branding_assets.py
+- [[Paste transparent logo centred on a solid-colour canvas.]] - rationale - scripts/generate_branding_assets.py
+- [[Path_46]] - code - scripts/generate_branding_assets.py
+- [[ensure()]] - code - scripts/generate_branding_assets.py
+- [[generate_branding_assets.py]] - code - scripts/generate_branding_assets.py
+- [[generate_email()]] - code - scripts/generate_branding_assets.py
+- [[generate_favicons()]] - code - scripts/generate_branding_assets.py
+- [[generate_feature_icons()]] - code - scripts/generate_branding_assets.py
+- [[generate_icon_sizes()]] - code - scripts/generate_branding_assets.py
+- [[generate_presentation()]] - code - scripts/generate_branding_assets.py
+- [[generate_social()]] - code - scripts/generate_branding_assets.py
+- [[generate_svg_logos()]] - code - scripts/generate_branding_assets.py
+- [[generate_variants()]] - code - scripts/generate_branding_assets.py
+- [[get_font()]] - code - scripts/generate_branding_assets.py
+- [[icon_on_canvas()]] - code - scripts/generate_branding_assets.py
+- [[load_logo()]] - code - scripts/generate_branding_assets.py
+- [[main()_23]] - code - scripts/generate_branding_assets.py
+- [[save()_1]] - code - scripts/generate_branding_assets.py
 
 ## Live Query (requires Dataview plugin)
 

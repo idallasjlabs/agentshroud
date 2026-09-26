@@ -1,30 +1,31 @@
 ---
 type: community
-cohesion: 0.14
-members: 15
+cohesion: 0.12
+members: 16
 ---
 
 # clamav.md
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 15 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 16 nodes
 
 ## Members
-- [[ARM64 Support]] - document - docs/vault/05 - Dependencies/trivy.md
-- [[ClamAV]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[First Boot]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[Gateway Usage]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[Gateway Usage_1]] - document - docs/vault/05 - Dependencies/trivy.md
-- [[Installation_3]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[Purpose_147]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[Purpose_148]] - document - docs/vault/05 - Dependencies/trivy.md
-- [[Related Notes_39]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[Related Notes_40]] - document - docs/vault/05 - Dependencies/trivy.md
-- [[Script Usage]] - document - docs/vault/05 - Dependencies/trivy.md
-- [[Trivy]] - document - docs/vault/05 - Dependencies/trivy.md
-- [[clamav]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[openscap]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[trivy]] - document - docs/vault/05 - Dependencies/trivy.md
+- [[Configuration  Environment Variables_31]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
+- [[Function Details_51]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
+- [[Key Classes  Functions_54]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
+- [[Key Rule ID Sets]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
+- [[Purpose_172]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
+- [[Related_58]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
+- [[Responsibilities_56]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
+- [[Threat Model_27]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
+- [[Wazuh Level to Severity Mapping]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
+- [[generate_summary(alerts)_1]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
+- [[get_fim_events(alerts)  get_rootkit_events(alerts)]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
+- [[level_to_severity(level)]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
+- [[parse_alert(raw)_1]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
+- [[read_alerts(alert_dir, since)]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
+- [[wazuh_client.py_2]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
+- [[wazuh_client.py_1]] - document - docs/vault/02 - Modules/Security Modules/wazuh_client.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,14 +33,3 @@ members: 15
 TABLE source_file, type FROM #community/clamavmd
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_All Dependencies]]
-- 2 edges to [[_COMMUNITY_EncryptedStore]]
-- 1 edge to [[_COMMUNITY_Playwright]]
-- 1 edge to [[_COMMUNITY_OpenSCAP]]
-
-## Top bridge nodes
-- [[clamav]] - degree 6, connects to 2 communities
-- [[openscap]] - degree 4, connects to 2 communities
-- [[trivy]] - degree 4, connects to 1 community

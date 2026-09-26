@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ToolACLEnforcer.get_allowed_tools]] - code - gateway/security/tool_acl.py
+- [[ToolChainAnalyzer Exfiltration Pattern Detection Tests]] - code - gateway/tests/test_tool_chain_analyzer.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # block_credential_write.sh
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[PATTERNS]] - code - .claude/scripts/claude-hooks/block_credential_write.sh
-- [[block_credential_write.sh]] - code - .claude/scripts/claude-hooks/block_credential_write.sh
-- [[block_credential_write.sh script]] - code - .claude/scripts/claude-hooks/block_credential_write.sh
+- [[SKILL_4]] - document - .agents/skills/i-architecture-review/SKILL.md
+- [[Skill architecture-review]] - document - .agents/skills/i-architecture-review/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

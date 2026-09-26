@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[audio_preinit() — claims I2S at 16 kHz before display init]] - code - firmware/voice-terminal/main/audio.c
+- [[soc.html — unified SOC web dashboard SPA template]] - document - gateway/soc/templates/soc.html
 
 ## Live Query (requires Dataview plugin)
 

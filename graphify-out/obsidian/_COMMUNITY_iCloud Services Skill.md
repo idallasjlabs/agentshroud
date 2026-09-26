@@ -10,9 +10,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[1Password item Apple ID - therealidallasj_1]] - concept - .agents/skills/i-icloud/scripts/calendar.js
-- [[iCloud Data Manager README]] - document - .agents/skills/i-icloud/README.md
-- [[iCloud Services Skill_1]] - document - .agents/skills/i-icloud/SKILL.md
+- [[.test_full_attestation_chain()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_no_sbom_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestAiModelSupplyChain]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +20,11 @@ members: 3
 TABLE source_file, type FROM #community/iCloud_Services_Skill
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_wazuh_client.py]]
+- 1 edge to [[_COMMUNITY_TestMultilingualInjection]]
+
+## Top bridge nodes
+- [[TestAiModelSupplyChain]] - degree 3, connects to 1 community
+- [[.test_full_attestation_chain()]] - degree 2, connects to 1 community

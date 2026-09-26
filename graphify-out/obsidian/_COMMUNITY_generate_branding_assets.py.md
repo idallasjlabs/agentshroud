@@ -1,36 +1,37 @@
 ---
 type: community
-cohesion: 0.26
-members: 21
+cohesion: 0.09
+members: 22
 ---
 
 # generate_branding_assets.py
 
-**Cohesion:** 0.26 - loosely connected
-**Members:** 21 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 22 nodes
 
 ## Members
-- [[Create SVG files that embed the logo PNGs as base64 data URIs.      These are sc]] - rationale - scripts/generate_branding_assets.py
-- [[FreeTypeFont]] - code - scripts/generate_branding_assets.py
-- [[Image]] - code - scripts/generate_branding_assets.py
-- [[Load source logo, optionally resize and composite onto bg.]] - rationale - scripts/generate_branding_assets.py
-- [[Paste transparent logo centred on a solid-colour canvas.]] - rationale - scripts/generate_branding_assets.py
-- [[Path_30]] - code - scripts/generate_branding_assets.py
-- [[ensure()]] - code - scripts/generate_branding_assets.py
-- [[generate_branding_assets.py]] - code - scripts/generate_branding_assets.py
-- [[generate_email()]] - code - scripts/generate_branding_assets.py
-- [[generate_favicons()]] - code - scripts/generate_branding_assets.py
-- [[generate_feature_icons()]] - code - scripts/generate_branding_assets.py
-- [[generate_icon_sizes()]] - code - scripts/generate_branding_assets.py
-- [[generate_presentation()]] - code - scripts/generate_branding_assets.py
-- [[generate_social()]] - code - scripts/generate_branding_assets.py
-- [[generate_svg_logos()]] - code - scripts/generate_branding_assets.py
-- [[generate_variants()]] - code - scripts/generate_branding_assets.py
-- [[get_font()]] - code - scripts/generate_branding_assets.py
-- [[icon_on_canvas()]] - code - scripts/generate_branding_assets.py
-- [[load_logo()]] - code - scripts/generate_branding_assets.py
-- [[main()_22]] - code - scripts/generate_branding_assets.py
-- [[save()_1]] - code - scripts/generate_branding_assets.py
+- [[.test_0_0_0_0_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_10_255_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_10_x_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_127_0_0_1_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_127_x_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_169_254_link_local_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_172_16_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_172_31_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_192_168_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_decimal_ip_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_hex_ip_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_ip6_localhost_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_ipv4_mapped_ipv6_blocked()_1]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_ipv4_mapped_ipv6_private_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_ipv6_link_local_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_ipv6_loopback_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_ipv6_ula_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_localhost_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[0x7f000001 = 127.0.0.1 in hex.]] - rationale - gateway/tests/test_url_analyzer.py
+- [[2130706433 = 127.0.0.1 in decimal.]] - rationale - gateway/tests/test_url_analyzer.py
+- [[SSRF blocking — the one hard block.]] - rationale - gateway/tests/test_url_analyzer.py
+- [[TestSSRFDetection]] - code - gateway/tests/test_url_analyzer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,3 +39,10 @@ members: 21
 TABLE source_file, type FROM #community/generate_branding_assetspy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 1 edge to [[_COMMUNITY_EncryptedStore]]
+
+## Top bridge nodes
+- [[TestSSRFDetection]] - degree 22, connects to 2 communities

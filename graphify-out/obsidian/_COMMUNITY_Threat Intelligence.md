@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Threat Intelligence]] - concept - docs/project/glossary.md
+- [[Gateway Python Requirements]] - document - gateway/requirements.txt
 
 ## Live Query (requires Dataview plugin)
 

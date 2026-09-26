@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # graphify reference: GitHub clone and cross-repo 
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[Step 0 - Clone GitHub repo(s) (only if a GitHub URL was given)_2]] - document - docker/config/openclaw/skills/graphify/references/github-and-merge.md
-- [[graphify reference GitHub clone and cross-repo merge_2]] - document - docker/config/openclaw/skills/graphify/references/github-and-merge.md
-- [[openclawskillsgraphifyreferencesgithub-and-merge]] - document - docker/config/openclaw/skills/graphify/references/github-and-merge.md
+- [[Hermes Service]] - code - docker/docker-compose.yml
+- [[Multi-Agent Orchestration (specialized agents, per-agent isolation)]] - concept - docs/archive/FUTURE-FEATURES.md
 
 ## Live Query (requires Dataview plugin)
 

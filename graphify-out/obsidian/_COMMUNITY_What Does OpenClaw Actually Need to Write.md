@@ -1,49 +1,50 @@
 ---
 type: community
 cohesion: 0.06
-members: 34
+members: 35
 ---
 
 # What Does OpenClaw Actually Need to Write?
 
 **Cohesion:** 0.06 - loosely connected
-**Members:** 34 nodes
+**Members:** 35 nodes
 
 ## Members
-- [[1. Skills Installation (`.openclawskills`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[2. Conversation Memory (`.openclawMEMORY.md`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[3. Workspace Files (`workspace`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[4. npm Cache (`.npm`, `.cache`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[5. Temporary Files (`tmp`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[6. Session Configuration (`.config`, `.local`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Answer to Your Question]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Bind Mount vs Docker Volume]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Can We Use ONLY a Shared Folder]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Configuration_2]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Current Docker Configuration]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Current Location]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[For Read-Only to Work]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Goals]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[How to Access Workspace Files]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Minimum Required Configuration]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[OPENCLAW_WRITE_REQUIREMENTS]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Option 1 Docker Volume (Current Setup - Recommended)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Option 2 Bind Mount (Alternative - More Accessible)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Option A Docker Volume (Current)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Option B Bind Mount (Easier for You)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Recommended Configuration for Your Use Case]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Summary What the Bot Needs to Write]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[TL;DR]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[What Does OpenClaw Actually Need to Write]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[What Does the Bot NOT Need to Write]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[What OpenClaw Writes During Normal Operation]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[What You Can Do]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Your Shared Folder The Workspace]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[✅ Persistent Volumes (Data Survives Container Restart)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[✅ Temporary Filesystems (Cleared on Container Restart)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[❌ Currently Missing (Would Break Read-Only)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[❌ NO - Here's What Would Break]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[❌ System Directories (Read-Only in Production)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[Approval required but none granted]] - document - skills/custom/securebrowser/README.md
+- [[Browser timeout_3]] - document - skills/custom/securebrowser/README.md
+- [[CAPTCHA detected_3]] - document - skills/custom/securebrowser/README.md
+- [[Credential extraction blocked]] - document - skills/custom/securebrowser/README.md
+- [[URL not in allowlist_3]] - document - skills/custom/securebrowser/README.md
+- [[1. Verify Installation]] - document - skills/custom/securebrowser/README.md
+- [[2. Configure Allowlist]] - document - skills/custom/securebrowser/README.md
+- [[3. Test Navigation]] - document - skills/custom/securebrowser/README.md
+- [[Approval Workflow]] - document - skills/custom/securebrowser/README.md
+- [[Audit Trail]] - document - skills/custom/securebrowser/README.md
+- [[Example 1 Simple Navigation]] - document - skills/custom/securebrowser/README.md
+- [[Example 2 Fill Form (Non-Sensitive)]] - document - skills/custom/securebrowser/README.md
+- [[Example 3 Fill Password (Sensitive)]] - document - skills/custom/securebrowser/README.md
+- [[Example 4 Handle CAPTCHA]] - document - skills/custom/securebrowser/README.md
+- [[Integration_2]] - document - skills/custom/securebrowser/README.md
+- [[Key Features_2]] - document - skills/custom/securebrowser/README.md
+- [[License_3]] - document - skills/custom/securebrowser/README.md
+- [[Limitations_3]] - document - skills/custom/securebrowser/README.md
+- [[Overview_25]] - document - skills/custom/securebrowser/README.md
+- [[Publishing to ClawHub]] - document - skills/custom/securebrowser/README.md
+- [[Quick Start_3]] - document - skills/custom/securebrowser/README.md
+- [[README_132]] - document - skills/custom/securebrowser/README.md
+- [[Risk Classification]] - document - skills/custom/securebrowser/README.md
+- [[SecureBrowser Skill]] - document - skills/custom/securebrowser/README.md
+- [[Security Guarantees_4]] - document - skills/custom/securebrowser/README.md
+- [[Security Model_1]] - document - skills/custom/securebrowser/README.md
+- [[Step 1 Package Skill]] - document - skills/custom/securebrowser/README.md
+- [[Step 2 Test Locally]] - document - skills/custom/securebrowser/README.md
+- [[Step 3 Publish]] - document - skills/custom/securebrowser/README.md
+- [[Support]] - document - skills/custom/securebrowser/README.md
+- [[Troubleshooting_36]] - document - skills/custom/securebrowser/README.md
+- [[URL Access Control_1]] - document - skills/custom/securebrowser/README.md
+- [[Usage Examples_2]] - document - skills/custom/securebrowser/README.md
+- [[With 1Password]] - document - skills/custom/securebrowser/README.md
+- [[With AgentShroud Gateway]] - document - skills/custom/securebrowser/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,3 +52,10 @@ members: 34
 TABLE source_file, type FROM #community/What_Does_OpenClaw_Actually_Need_to_Write
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_TestOutputTrustScoring]]
+- 1 edge to [[_COMMUNITY_Mnemosyne — Retention Engineer]]
+
+## Top bridge nodes
+- [[SecureBrowser Skill]] - degree 15, connects to 2 communities

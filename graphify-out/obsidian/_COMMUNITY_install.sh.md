@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[install.sh]] - code - .llm_settings/git-hooks/install.sh
-- [[install.sh script]] - code - .llm_settings/git-hooks/install.sh
+- [[.test_raw_tool_call_json_never_leaks()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Raw tool-call JSON blobs must be suppressed before Telegram delivery.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +19,11 @@ members: 2
 TABLE source_file, type FROM #community/installsh
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY__make_proxy()]]
+
+## Top bridge nodes
+- [[.test_raw_tool_call_json_never_leaks()]] - degree 4, connects to 3 communities

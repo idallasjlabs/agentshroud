@@ -1,47 +1,47 @@
 ---
 type: community
-cohesion: 0.10
+cohesion: 0.06
 members: 32
 ---
 
 # app_main.c
 
-**Cohesion:** 0.10 - loosely connected
+**Cohesion:** 0.06 - loosely connected
 **Members:** 32 nodes
 
 ## Members
-- [[_apply_agent_cb]] - code - firmware/voice-terminal/main/ui_face.c
-- [[_apply_state_cb]] - code - firmware/voice-terminal/main/ui_face.c
-- [[_build_ws_url]] - code - firmware/voice-terminal/main/app_main.c
-- [[_find_canvas]] - code - firmware/voice-terminal/main/ui_face.c
-- [[_lvgl_flush_wait_yield()]] - code - firmware/voice-terminal/main/app_main.c
-- [[_on_tts_pcm]] - code - firmware/voice-terminal/main/app_main.c
-- [[_on_vg_state]] - code - firmware/voice-terminal/main/app_main.c
-- [[_on_ws_ctrl]] - code - firmware/voice-terminal/main/app_main.c
-- [[_report_and_place_canvas]] - code - firmware/voice-terminal/main/ui_face.c
-- [[_state_to_emotion]] - code - firmware/voice-terminal/main/ui_face.c
-- [[app_main]] - code - firmware/voice-terminal/main/app_main.c
-- [[app_main.c]] - code - firmware/voice-terminal/main/app_main.c
-- [[esp_err_t_3]] - code
-- [[esp_event_base_t]] - code
-- [[face_emotion_t]] - code
-- [[lv_display_t]] - code
-- [[lv_obj_t]] - code
-- [[tts_task]] - code - firmware/voice-terminal/main/app_main.c
-- [[ui_face.c]] - code - firmware/voice-terminal/main/ui_face.c
-- [[ui_face_init]] - code - firmware/voice-terminal/main/ui_face.c
-- [[ui_face_set_agent]] - code - firmware/voice-terminal/main/ui_face.c
-- [[ui_face_set_state]] - code - firmware/voice-terminal/main/ui_face.c
-- [[ui_init (WiFi status labels)]] - code - firmware/voice-terminal/main/app_main.c
-- [[ui_state_t]] - code
-- [[ui_update()]] - code - firmware/voice-terminal/main/app_main.c
-- [[wakeword_init]] - code - firmware/voice-terminal/main/wakeword.c
-- [[wakeword_tts_stop_requested()]] - code - firmware/voice-terminal/main/wakeword.c
-- [[wifi_event_handler]] - code - firmware/voice-terminal/main/app_main.c
-- [[wifi_init]] - code - firmware/voice-terminal/main/app_main.c
-- [[ws_client.h]] - code - firmware/voice-terminal/main/ws_client.h
-- [[ws_vg_state_t]] - code
-- [[ws_vg_state_t_1]] - code
+- [[Access Denied]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Token expired (SSO)]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Unable to locate credentials]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[AWS Profile Basics]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[AWS SSO Configuration]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Best Practices_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Configure New Profile]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Default Profile vs Named Profiles]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Initial SSO Setup]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Login to SSO]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[MCP Not Using Profile]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[MCP-Specific]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Method 1 Set Environment Variable (Session)]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Method 2 Set Permanently (Shell Config)]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Method 3 Configure in .mcp.json]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Multi-Account AWS Access]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Option 1 Interactive Configuration]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Option 2 Manual Configuration]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Organization]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Quick Reference]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Related Skills_19]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Role_17]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[SKILL_32]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Scenario Development → Production]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Security_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Switch AWS Profile for MCP]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Troubleshooting_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Use SSO Profile with MCP]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Using AssumeRole for Cross-Account Access]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[What is an AWS Profile]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[When to Invoke_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,14 +51,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_wakeword.c]]
-- 10 edges to [[_COMMUNITY_voice_task]]
-- 4 edges to [[_COMMUNITY_test_playback_state.c]]
-- 2 edges to [[_COMMUNITY_test_ptt_state.c]]
+- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
+- 1 edge to [[_COMMUNITY_TestParseModeStrippedAfterPIIRedaction]]
+- 1 edge to [[_COMMUNITY_Phase 3A3B Implementation Verification Results]]
 
 ## Top bridge nodes
-- [[wakeword_tts_stop_requested()]] - degree 6, connects to 3 communities
-- [[app_main.c]] - degree 20, connects to 2 communities
-- [[_on_vg_state]] - degree 6, connects to 2 communities
-- [[tts_task]] - degree 6, connects to 2 communities
-- [[ui_face.c]] - degree 13, connects to 1 community
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - degree 15, connects to 3 communities

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[_INJECTION_PATTERNS (prompt injection regex set)]] - code - gateway/proxy/web_content_scanner.py
+- [[SlackSocketClient Reconnect Backoff Tests]] - code - gateway/tests/test_slack_socket_client.py
 
 ## Live Query (requires Dataview plugin)
 

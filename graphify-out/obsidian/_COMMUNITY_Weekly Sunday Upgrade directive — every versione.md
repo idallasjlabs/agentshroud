@@ -10,9 +10,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[CI job security-scan (pip-audit)]] - code - .github/workflows/ci.yml
-- [[Prove the Outcome, Never the Steps — assert on state deltas not exit codes]] - rationale - CLAUDE.md
-- [[Weekly Sunday Upgrade directive — every versioned component to latest]] - rationale - CLAUDE.md
+- [[.test_gates_pass_with_full_evidence()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_gates_zero_affected_domains()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestMandatoryGates]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +20,12 @@ members: 3
 TABLE source_file, type FROM #community/Weekly_Sunday_Upgrade_directive__every_versione
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_TestMultilingualInjection]]
+- 1 edge to [[_COMMUNITY_wazuh_client.py]]
+
+## Top bridge nodes
+- [[TestMandatoryGates]] - degree 3, connects to 1 community
+- [[.test_gates_pass_with_full_evidence()]] - degree 2, connects to 1 community
+- [[.test_gates_zero_affected_domains()]] - degree 2, connects to 1 community

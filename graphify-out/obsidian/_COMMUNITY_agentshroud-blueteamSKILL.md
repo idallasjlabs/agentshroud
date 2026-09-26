@@ -1,44 +1,45 @@
 ---
 type: community
-cohesion: 0.08
-members: 29
+cohesion: 0.14
+members: 30
 ---
 
 # agentshroud-blueteam/SKILL.md
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 29 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 30 nodes
 
 ## Members
-- [[AgentShroud Blue Team Security Auditor_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[AgentShroud Module Inventory (Blue Team)]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
-- [[AgentShroud Module Inventory (Red Team)]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
-- [[AgentShroud Skills Library]] - document - skills/README.md
-- [[Audit Procedure_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Critical Rules_11]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Custom Skills]] - document - skills/README.md
-- [[Directory Structure_1]] - document - skills/README.md
-- [[Enterprise Security Feature Priorities (Steve Hay Assessment, Red Team copy)]] - document - skills/custom/agentshroud-redteam/references/steve-hay-assessment.md
-- [[Heat Map Legend_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Infrastructure_8]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Loss Categories_4]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Methodology_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Module Coverage Heat Map Legend (EMAC—)]] - concept - skills/custom/agentshroud-blueteam/SKILL.md
-- [[OpenClaw Built-in Skills]] - document - skills/README.md
-- [[Output Format_23]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Phase 1 Code-Level Module Audit_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Phase 2 Heat Map Reconstruction_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Phase 3 Integration Gap Analysis_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Phase 4 Configuration Audit_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Phase 5 Steve Hay's Specific Probes_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Red Team Assessment Plan (Steve Hay Plan, Red Team copy)]] - document - skills/custom/agentshroud-redteam/references/steve-hay-plan.md
-- [[STPA-Sec Loss Categories (L-1 Data Disclosure, L-2 Unauthorized Actions, L-3 Agent Integrity, L-4 Audit Integrity)]] - concept - skills/custom/agentshroud-blueteam/references/steve-hay-assessment.md
-- [[STPA-Sec Methodology_1]] - concept - docker/config/openclaw/skills/i-sec-defense/SKILL.md
-- [[Unsafe Control Actions (UCA-1 through UCA-17)]] - concept - skills/custom/agentshroud-blueteam/references/steve-hay-assessment.md
-- [[Unsafe Control Actions (UCAs)_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Usage_116]] - document - skills/README.md
-- [[agentshroud-blueteamSKILL]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[skillsREADME]] - document - skills/README.md
+- [[.test_append_targets_correct_agent_marker()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_cvss_none_when_absent()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_dedup_by_cve_id()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_dedup_by_ghsa_id()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_dry_run_writes_nothing()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_duplicate_within_same_feed_page_registered_once()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_entry_to_py_handles_none_cvss()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_entry_to_py_roundtrips()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_fetch_paginates_via_link_cursor()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_hermes_snapshot_zero_new()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_id_numbering_continues_from_max()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_idempotent_on_rerun()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_live_registry_is_idempotent_no_new_backlog()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_never_fabricates_ids_skips_advisory_without_ghsa()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_new_advisory_becomes_under_review()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_openclaw_advisory_does_not_touch_hermes_registry()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_openclaw_snapshot_registers_backlog_as_under_review()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_per_agent_prefix_applied()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[An OpenClaw advisory diffed against the Hermes list yields it as 'new'.]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[Re-running against the LIVE registry adds nothing (backlog already synced).]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestFetch]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestPerAgentIsolation]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestProcessGhsaAdvisories]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestSerialization_2]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestSnapshotSmoke]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[The committed snapshot yields a real backlog, all honest under_review.]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[_adv()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[_sync()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[scriptssync-cve-registry.py (GHSA auto-register)]] - code - scripts/sync-cve-registry.py
+- [[test_sync_cve_registry_ghsa.py]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,27 +47,3 @@ members: 29
 TABLE source_file, type FROM #community/agentshroud-blueteam/SKILLmd
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_lifespan.py]]
-- 2 edges to [[_COMMUNITY_TrustManager]]
-- 2 edges to [[_COMMUNITY_Enum]]
-- 1 edge to [[_COMMUNITY_EncryptedStore]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_DeceptionDetection]]
-- 1 edge to [[_COMMUNITY_tool_result_injection.py]]
-- 1 edge to [[_COMMUNITY_AuditStore]]
-- 1 edge to [[_COMMUNITY_SSHProxy]]
-- 1 edge to [[_COMMUNITY_ApprovalRequest]]
-- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
-- 1 edge to [[_COMMUNITY_KeyRotationConfig]]
-- 1 edge to [[_COMMUNITY_PromptProtection]]
-- 1 edge to [[_COMMUNITY_test_redteam_probes.py]]
-- 1 edge to [[_COMMUNITY_IEC 62443 Compliance Matrix — AgentShroud]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
-- 1 edge to [[_COMMUNITY_FileSandbox]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
-- 1 edge to [[_COMMUNITY_OutboundInfoFilter]]
-
-## Top bridge nodes
-- [[agentshroud-blueteamSKILL]] - degree 30, connects to 19 communities

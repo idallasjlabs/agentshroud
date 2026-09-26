@@ -1,22 +1,21 @@
 ---
 type: community
-cohesion: 0.57
-members: 7
+cohesion: 0.33
+members: 6
 ---
 
 # canary-deploy.sh
 
-**Cohesion:** 0.57 - moderately connected
-**Members:** 7 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[canary-deploy.sh]] - code - scripts/canary-deploy.sh
-- [[canary-deploy.sh script]] - code - scripts/canary-deploy.sh
-- [[deploy_ref()]] - code - scripts/canary-deploy.sh
-- [[die()]] - code - scripts/canary-deploy.sh
-- [[log()_1]] - code - scripts/canary-deploy.sh
-- [[run()]] - code - scripts/canary-deploy.sh
-- [[run_in_repo()]] - code - scripts/canary-deploy.sh
+- [[SubagentMonitor._log_event]] - code - gateway/security/subagent_monitor.py
+- [[SubagentMonitor.check_tool_usage]] - code - gateway/security/subagent_monitor.py
+- [[SubagentMonitor.deregister]] - code - gateway/security/subagent_monitor.py
+- [[SubagentMonitor.kill_agent]] - code - gateway/security/subagent_monitor.py
+- [[SubagentMonitor.kill_all]] - code - gateway/security/subagent_monitor.py
+- [[SubagentMonitor.register_spawn]] - code - gateway/security/subagent_monitor.py
 
 ## Live Query (requires Dataview plugin)
 

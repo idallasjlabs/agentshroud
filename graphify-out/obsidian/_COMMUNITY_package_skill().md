@@ -1,32 +1,32 @@
 ---
 type: community
-cohesion: 0.18
+cohesion: 0.12
 members: 17
 ---
 
 # package_skill()
 
-**Cohesion:** 0.18 - loosely connected
+**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members
-- [[.create_skill()]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
-- [[.setUp()]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
-- [[.tearDown()]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
-- [[.test_allows_nested_regular_files()]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
-- [[.test_packages_normal_files()]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
-- [[.test_rejects_symlink_directory()]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
-- [[.test_rejects_symlink_to_external_file()]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
-- [[Basic validation of a skill]] - rationale - skills/openclaw/skill-creator/scripts/quick_validate.py
-- [[Package a skill folder into a .skill file.      Args         skill_path Path t]] - rationale - skills/openclaw/skill-creator/scripts/package_skill.py
-- [[TestCase]] - code
-- [[TestPackageSkillSecurity]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
-- [[main()_25]] - code - skills/openclaw/skill-creator/scripts/package_skill.py
-- [[package_skill()]] - code - skills/openclaw/skill-creator/scripts/package_skill.py
-- [[package_skill.py]] - code - skills/openclaw/skill-creator/scripts/package_skill.py
-- [[quick_validate.py]] - code - skills/openclaw/skill-creator/scripts/quick_validate.py
-- [[test_package_skill.py]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
-- [[validate_skill()]] - code - skills/openclaw/skill-creator/scripts/quick_validate.py
+- [[1. Branch Creation]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[2. Development (TDD)]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[3. Production Testing (if needed)]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[4. Pull Request]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[5. Pre-Merge]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Common Commands Quick Reference]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Emergency Contacts]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Emergency Procedures]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[GSDE&G Skills Reference]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[GitHub Workflow Integration]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[P1 Incident Response]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Production Testing Guidelines]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Quick Reference When to Use Each Skill]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[SKILLS_GUIDE]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Skill Directory Structure]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Skill Invocation Examples]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[📚 Created Documentation]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,11 +36,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Skill Creation Process]]
-- 1 edge to [[_COMMUNITY_init_skill.py]]
-- 1 edge to [[_COMMUNITY_OpenClaw Skill Metadata Schema (frontmatter conv]]
+- 1 edge to [[_COMMUNITY_Skill Test-Driven Development (TDD)]]
+- 1 edge to [[_COMMUNITY_clamav_scanner.py]]
+- 1 edge to [[_COMMUNITY_REQUIRED NOTES — PRODUCE EVERY ONE OF THESE]]
 
 ## Top bridge nodes
-- [[package_skill()]] - degree 9, connects to 1 community
-- [[validate_skill()]] - degree 4, connects to 1 community
-- [[package_skill.py]] - degree 3, connects to 1 community
+- [[📚 Created Documentation]] - degree 3, connects to 2 communities
+- [[GSDE&G Skills Reference]] - degree 10, connects to 1 community

@@ -10,27 +10,27 @@ members: 21
 **Members:** 21 nodes
 
 ## Members
-- [[.test_downgrade_requires_approval()]] - code - gateway/tests/test_version_routes.py
-- [[.test_downgrade_with_approval()]] - code - gateway/tests/test_version_routes.py
-- [[.test_full_workflow()]] - code - gateway/tests/test_version_routes.py
-- [[.test_get_available()]] - code - gateway/tests/test_version_routes.py
-- [[.test_get_current_version()]] - code - gateway/tests/test_version_routes.py
-- [[.test_get_history_empty()]] - code - gateway/tests/test_version_routes.py
-- [[.test_review_version()]] - code - gateway/tests/test_version_routes.py
-- [[.test_rollback_no_history()]] - code - gateway/tests/test_version_routes.py
-- [[.test_rollback_requires_approval()]] - code - gateway/tests/test_version_routes.py
-- [[.test_upgrade_dry_run()]] - code - gateway/tests/test_version_routes.py
-- [[.test_upgrade_invalid_version()]] - code - gateway/tests/test_version_routes.py
-- [[.test_upgrade_requires_approval()]] - code - gateway/tests/test_version_routes.py
-- [[.test_upgrade_with_approval()]] - code - gateway/tests/test_version_routes.py
-- [[Create a test FastAPI app with version routes.]] - rationale - gateway/tests/test_version_routes.py
-- [[TestVersionRoutes]] - code - gateway/tests/test_version_routes.py
-- [[Use a temporary DB for all tests.]] - rationale - gateway/tests/test_version_routes.py
-- [[app()]] - code - gateway/tests/test_version_routes.py
-- [[client()_15]] - code - gateway/tests/test_version_routes.py
-- [[test_version_routes.py]] - code - gateway/tests/test_version_routes.py
-- [[tmp_version_db()]] - code - gateway/tests/test_version_routes.py
-- [[version_routes APIRouter — apiv1versions]] - code - gateway/ingest_api/version_routes.py
+- [[1. Change Documentation]] - document - .agents/skills/i-ps/SKILL.md
+- [[2. Testing Evidence]] - document - .agents/skills/i-ps/SKILL.md
+- [[3. Backups & Rollback]] - document - .agents/skills/i-ps/SKILL.md
+- [[4. Blast Radius_1]] - document - .agents/skills/i-ps/SKILL.md
+- [[5. Observability]] - document - .agents/skills/i-ps/SKILL.md
+- [[6. Security]] - document - .agents/skills/i-ps/SKILL.md
+- [[7. Communication]] - document - .agents/skills/i-ps/SKILL.md
+- [[8. Service Control Commands]] - document - .agents/skills/i-ps/SKILL.md
+- [[Emergency Stop (P1 Incidents Only)]] - document - .agents/skills/i-ps/SKILL.md
+- [[If Something Goes Wrong]] - document - .agents/skills/i-ps/SKILL.md
+- [[Immediate (0–15 min)]] - document - .agents/skills/i-ps/SKILL.md
+- [[Invoke Before]] - document - .agents/skills/i-ps/SKILL.md
+- [[Pause Before Testing (Copy-Paste Ready)]] - document - .agents/skills/i-ps/SKILL.md
+- [[Post-Deployment Verification]] - document - .agents/skills/i-ps/SKILL.md
+- [[Pre-Deployment Checklist]] - document - .agents/skills/i-ps/SKILL.md
+- [[Resume After Testing (MANDATORY)]] - document - .agents/skills/i-ps/SKILL.md
+- [[Role_28]] - document - .agents/skills/i-ps/SKILL.md
+- [[SKILL_44]] - document - .agents/skills/i-ps/SKILL.md
+- [[Short-Term (15 min – 24 hr)]] - document - .agents/skills/i-ps/SKILL.md
+- [[Sign-Off]] - document - .agents/skills/i-ps/SKILL.md
+- [[Skill Production Safety Checklist (PROD-SAFETY)]] - document - .agents/skills/i-ps/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,3 +38,9 @@ members: 21
 TABLE source_file, type FROM #community/TestVersionRoutes
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
+
+## Top bridge nodes
+- [[Skill Production Safety Checklist (PROD-SAFETY)]] - degree 7, connects to 1 community

@@ -1,26 +1,26 @@
 ---
 type: community
-cohesion: 0.25
+cohesion: 0.18
 members: 11
 ---
 
 # branding/README.md
 
-**Cohesion:** 0.25 - loosely connected
+**Cohesion:** 0.18 - loosely connected
 **Members:** 11 nodes
 
 ## Members
-- [[AgentShroud Blue — 1583f0]] - concept - branding/QUICK-REFERENCE.md
-- [[AgentShroud Email Banner (600x150)]] - image - branding/email/email-banner-600x150.png
-- [[AgentShroud Logo — Dark Background Variant]] - image - branding/agentshroud-logo-dark-bg.png
-- [[AgentShroud MerchandiseStationery Mockup]] - image - branding/agentshroud-mockup.png
-- [[AgentShroud Primary Logo]] - image - branding/logo.png
-- [[INDEX]] - document - branding/INDEX.md
-- [[Inter Typeface (Primary)]] - concept - branding/typography/typography.md
-- [[JetBrains Mono Typeface (Monospace)]] - concept - branding/typography/typography.md
-- [[QUICK-REFERENCE]] - document - branding/QUICK-REFERENCE.md
-- [[brandingREADME]] - document - branding/README.md
-- [[typography]] - document - branding/typography/typography.md
+- [[1. Pre-populate known_hosts]] - document - docs/ssh-security-review.md
+- [[2. Network Segmentation]] - document - docs/ssh-security-review.md
+- [[3. Key Rotation]] - document - docs/ssh-security-review.md
+- [[4. Rate Limiting]] - document - docs/ssh-security-review.md
+- [[5. Output Sanitization]] - document - docs/ssh-security-review.md
+- [[6. Least-Privilege SSH Users]] - document - docs/ssh-security-review.md
+- [[Comparison Direct SSH vs. AgentShroud SSH Proxy]] - document - docs/ssh-security-review.md
+- [[Recommendations for Production Deployment]] - document - docs/ssh-security-review.md
+- [[Risk Summary]] - document - docs/ssh-security-review.md
+- [[SSH Security Review]] - document - docs/ssh-security-review.md
+- [[ssh-security-review]] - document - docs/ssh-security-review.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,14 +30,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AgentShroud™ Brand Guidelines]]
-- 1 edge to [[_COMMUNITY_brand-guidelines]]
-- 1 edge to [[_COMMUNITY_AgentShroud Typography Guidelines]]
-- 1 edge to [[_COMMUNITY_AgentShroud Branding Assets Index]]
-- 1 edge to [[_COMMUNITY_AgentShroud Brand Quick Reference]]
+- 1 edge to [[_COMMUNITY_Atlas — Curriculum Architect]]
 
 ## Top bridge nodes
-- [[INDEX]] - degree 5, connects to 2 communities
-- [[brandingREADME]] - degree 6, connects to 1 community
-- [[QUICK-REFERENCE]] - degree 4, connects to 1 community
-- [[typography]] - degree 4, connects to 1 community
+- [[SSH Security Review]] - degree 5, connects to 1 community

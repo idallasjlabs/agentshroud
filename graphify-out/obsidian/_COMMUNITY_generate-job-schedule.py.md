@@ -1,24 +1,24 @@
 ---
 type: community
-cohesion: 0.42
+cohesion: 0.22
 members: 9
 ---
 
 # generate-job-schedule.py
 
-**Cohesion:** 0.42 - moderately connected
+**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members
-- [[Best-effort plain-language gloss of a 5-field cron expression.]] - rationale - scripts/generate-job-schedule.py
-- [[describe_cron()]] - code - scripts/generate-job-schedule.py
-- [[docker_exec()]] - code - scripts/generate-job-schedule.py
-- [[fmt_ts()]] - code - scripts/generate-job-schedule.py
-- [[generate-job-schedule.py]] - code - scripts/generate-job-schedule.py
-- [[load_hermes_jobs()]] - code - scripts/generate-job-schedule.py
-- [[load_openclaw_jobs()]] - code - scripts/generate-job-schedule.py
-- [[main()_36]] - code - scripts/generate-job-schedule.py
-- [[render_html()]] - code - scripts/generate-job-schedule.py
+- [[7. Pi-hole DNS Security Layer (Built-In)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[8. Comprehensive Multilingual Prompt Injection Defense]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[AgentShroud Web Console Integration]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Architecture_8]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Configuration_6]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Default Blocklists (Auto-Updated)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Deliverables_3]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Design Philosophy_1]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Risk Register]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,3 +26,9 @@ members: 9
 TABLE source_file, type FROM #community/generate-job-schedulepy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_wire_llm_settings.js]]
+
+## Top bridge nodes
+- [[Risk Register]] - degree 3, connects to 1 community

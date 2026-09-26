@@ -1,24 +1,24 @@
 ---
 type: community
-cohesion: 0.31
+cohesion: 0.22
 members: 9
 ---
 
 # Turbo Fieldfare (MLX inference backend)
 
-**Cohesion:** 0.31 - loosely connected
+**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members
-- [[MoE (Mixture-of-Experts) Streaming Inference]] - concept - docker/config/hermes/cron/prompts/newsletter-moe-streaming-ssd-offload.txt
-- [[Newsletter Local Inference Engines]] - document - docker/config/hermes/cron/prompts/newsletter-local-inference-engines.txt
-- [[Newsletter MoE Streaming  SSD Offload]] - document - docker/config/hermes/cron/prompts/newsletter-moe-streaming-ssd-offload.txt
-- [[Today in AI (Daily Newsletter)]] - document - docker/config/hermes/cron/prompts/today-in-ai.txt
-- [[Turbo Fieldfare (MLX inference backend)]] - concept - docker/config/hermes/cron/prompts/turbo-fieldfare-fix-watch.txt
-- [[Turbo Fieldfare Fix Watch]] - document - docker/config/hermes/cron/prompts/turbo-fieldfare-fix-watch.txt
-- [[Turbo Fieldfare GitHub Issue 84 (decoder_consume bug)]] - concept - docker/config/hermes/cron/prompts/turbo-fieldfare-fix-watch.txt
-- [[oMLX (local model backend)]] - concept - docker/config/hermes/cron/prompts/omlx-moe-streaming-health-check.txt
-- [[oMLX MoE Streaming Health Check]] - document - docker/config/hermes/cron/prompts/omlx-moe-streaming-health-check.txt
+- [[1Password (trusted for secrets, gateway-only access)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
+- [[AgentShroud Bot (no direct credentialinternet access)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
+- [[AgentShroud Gateway (holds 1Password service account)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
+- [[Isaiah Jefferson (full control)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
+- [[Trust Zone 0 — Owner (Highest Trust)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
+- [[Trust Zone 1 — Gateway (Trusted Enforcer)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
+- [[Trust Zone 2 — Bot (Supervised Agent)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
+- [[Trust Zone 3 — External Services (Conditional)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
+- [[Trust Zone 4 — Infrastructure Nodes (SSH-gated)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
 
 ## Live Query (requires Dataview plugin)
 

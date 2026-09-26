@@ -1,18 +1,17 @@
 ---
 type: community
 cohesion: 1.00
-members: 3
+members: 2
 ---
 
 # heartbeat.sh
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 3 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[_log()]] - code - docker/bots/hermes/heartbeat.sh
-- [[heartbeat.sh]] - code - docker/bots/hermes/heartbeat.sh
-- [[heartbeat.sh script]] - code - docker/bots/hermes/heartbeat.sh
+- [[Obsidian workspace.json (open-tab layout)]] - document - docs/vault/.obsidian/workspace.json
+- [[Startup Flow Diagram (vault note)]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
 
 ## Live Query (requires Dataview plugin)
 

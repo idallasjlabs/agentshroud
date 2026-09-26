@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Purpose_87]] - document - docker/config/openclaw/skills/i-mac/README.md
-- [[Related Skills_78]] - document - docker/config/openclaw/skills/i-mac/README.md
-- [[Usage_82]] - document - docker/config/openclaw/skills/i-mac/README.md
-- [[macOS System Administrator (MAC)_2]] - document - docker/config/openclaw/skills/i-mac/README.md
+- [[.test_mcp_proxy_endpoint()]] - code - gateway/tests/test_main_endpoints.py
+- [[Test mcpproxy endpoint.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[Test MCP proxy endpoint basic functionality.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[TestMCPProxyEndpoint]] - code - gateway/tests/test_main_endpoints.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +23,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_TrustManager]]
+- 1 edge to [[_COMMUNITY_InjectionSeverity]]
+- 1 edge to [[_COMMUNITY_OutboundInfoFilter]]
 
 ## Top bridge nodes
-- [[macOS System Administrator (MAC)_2]] - degree 4, connects to 1 community
+- [[TestMCPProxyEndpoint]] - degree 4, connects to 2 communities
+- [[.test_mcp_proxy_endpoint()]] - degree 3, connects to 1 community

@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # agentshroud-gateway container (starts first)
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[1password_service_account Docker secret]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
-- [[agentshroud-bot container (starts after gateway healthy)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
-- [[agentshroud-gateway container (starts first)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
-- [[docker-agentshroud image (FROM node22-bookworm-slim)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
-- [[docker-gateway image (FROM python3.11-slim, gatewayDockerfile)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
-- [[gateway_password.txt Docker secret]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[Browser — Secure Browser Automation_2]] - document - docker/config/hermes/skills/i-browser/README.md
+- [[Purpose_41]] - document - docker/config/hermes/skills/i-browser/README.md
+- [[README_46]] - document - docker/config/hermes/skills/i-browser/README.md
+- [[Related Skills_44]] - document - docker/config/hermes/skills/i-browser/README.md
+- [[Usage_46]] - document - docker/config/hermes/skills/i-browser/README.md
 
 ## Live Query (requires Dataview plugin)
 

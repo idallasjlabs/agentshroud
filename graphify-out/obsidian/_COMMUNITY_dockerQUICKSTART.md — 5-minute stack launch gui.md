@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[dockerQUICKSTART.md — 5-minute stack launch guide]] - document - docker/QUICKSTART.md
+- [[wakeword.h (PTTWakeNet public API)]] - code - firmware/voice-terminal/main/wakeword.h
 
 ## Live Query (requires Dataview plugin)
 

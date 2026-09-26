@@ -1,18 +1,17 @@
 ---
 type: community
 cohesion: 1.00
-members: 3
+members: 2
 ---
 
 # i-hermes README (Podcast Production Orchestrator
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 3 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[Hermes — Reference Verifier Skill]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[Podcast Production Pipeline (multi-agent)_1]] - concept - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[i-hermes README (Podcast Production Orchestrator)]] - document - docker/config/openclaw/skills/i-hermes/README.md
+- [[_PII_PATTERNS (URL PII regex set)]] - code - gateway/proxy/url_analyzer.py
+- [[_RESPONSE_PII_PATTERNS (content PII regex set)]] - code - gateway/proxy/web_content_scanner.py
 
 ## Live Query (requires Dataview plugin)
 

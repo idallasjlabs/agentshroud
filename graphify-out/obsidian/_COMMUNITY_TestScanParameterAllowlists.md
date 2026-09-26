@@ -1,26 +1,25 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+cohesion: 0.20
+members: 10
 ---
 
 # TestScanParameterAllowlists
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[.setup_method()_2]] - code - gateway/tests/test_main_endpoints.py
-- [[.teardown_method()_1]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_clamav_default_target_passes_allowlist()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_clamav_invalid_target_returns_400()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_openscap_default_profile_passes_regex()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_openscap_invalid_profile_returns_400()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_openscap_semicolon_profile_returns_400()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_trivy_default_scan_type_passes_allowlist()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_trivy_invalid_scan_type_returns_400()]] - code - gateway/tests/test_main_endpoints.py
-- [[Allowlist validation on ClamAV target, Trivy scan type, OpenSCAP profile.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[TestScanParameterAllowlists]] - code - gateway/tests/test_main_endpoints.py
+- [[After Config Change]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[After Secret Rotation]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Bot Only Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Full Stack Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Gateway Only Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Related Notes_69]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Restart Procedure_2]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Restart Verification]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[When to Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Zero-Downtime Restart (Advanced)]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,8 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 1 edge to [[_COMMUNITY_is_overloaded()]]
 
 ## Top bridge nodes
-- [[TestScanParameterAllowlists]] - degree 12, connects to 2 communities
+- [[Restart Procedure_2]] - degree 10, connects to 1 community

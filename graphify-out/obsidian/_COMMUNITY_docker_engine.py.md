@@ -10,21 +10,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Configuration  Environment Variables_15]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
-- [[Docker Security Options Used]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
-- [[DockerEngine._cmd(args, kwargs)]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
-- [[DockerEngine.compose_up(file, detach)]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
-- [[DockerEngine.health_check()]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
-- [[DockerEngine.inspect(name)]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
-- [[DockerEngine.ps(all)]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
-- [[DockerEngine.run(image, name, , ports, volumes, networks, env, privileged, caps, seccomp, detach, read_only, no_new_privileges)]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
-- [[Function Details_27]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
-- [[Key Classes  Functions_29]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
-- [[Purpose_156]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
-- [[Related_33]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
-- [[Responsibilities_30]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
-- [[docker_engine.py_2]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
-- [[docker_engine.py_1]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[Mode A — Single task_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[Step 1 — Sync and confirm clean state_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[Step 10 — Notify the owner_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[Step 11 — Merge (only on explicit owner instruction)_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[Step 12 — Clean up_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[Step 2 — Create a branch + worktree_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[Step 2b — Create the Jira ticket_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[Step 3 — Write and edit code_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[Step 4 — Test and lint_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[Step 5 — Multi-LLM review_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[Step 6 — Build and validate containers_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[Step 7 — Update documentation and website_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[Step 8 — Update the knowledge graph_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[Step 9 — Push and open the PR_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
+- [[Step 9b — Update the Jira ticket with the PR link_5]] - document - docker/config/openclaw/skills/i-odev/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,3 +32,9 @@ members: 15
 TABLE source_file, type FROM #community/docker_enginepy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_LLM Operating Context — Isaiah Jefferson]]
+
+## Top bridge nodes
+- [[Mode A — Single task_5]] - degree 15, connects to 1 community

@@ -1,35 +1,36 @@
 ---
 type: community
 cohesion: 0.10
-members: 20
+members: 21
 ---
 
 # postmortem.md
 
 **Cohesion:** 0.10 - loosely connected
-**Members:** 20 nodes
+**Members:** 21 nodes
 
 ## Members
-- [[Approval Required By]] - document - .github/ISSUE_TEMPLATE/gsd.md
-- [[Blast Radius]] - document - .github/ISSUE_TEMPLATE/gsd.md
-- [[CLAUDE]] - document - CLAUDE.md
-- [[COPILOT_CLI_SETUP]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Contributing Factors]] - document - .github/ISSUE_TEMPLATE/postmortem.md
-- [[Effort]] - document - .github/ISSUE_TEMPLATE/gsd.md
-- [[Follow-Up Actions]] - document - .github/ISSUE_TEMPLATE/postmortem.md
-- [[Guidance for Claude Code (claude.aicode) when working in this repository.]] - document - CLAUDE.md
-- [[Incident Summary]] - document - .github/ISSUE_TEMPLATE/postmortem.md
-- [[Keep actions deterministic, minimal, and aligned with how this repo is actually run.]] - document - CLAUDE.md
-- [[Outcome]] - document - .github/ISSUE_TEMPLATE/gsd.md
-- [[Problem_1]] - document - .github/ISSUE_TEMPLATE/gsd.md
-- [[Remediation]] - document - .github/ISSUE_TEMPLATE/postmortem.md
-- [[Root Cause]] - document - .github/ISSUE_TEMPLATE/postmortem.md
-- [[Stale Repository-Context Description in COPILOT_CLI_SETUP]] - rationale - .github/COPILOT_CLI_SETUP.md
-- [[Test Added to Prevent Recurrence (MANDATORY)]] - document - .github/ISSUE_TEMPLATE/postmortem.md
-- [[These instructions are authoritative. Follow them strictly.]] - document - CLAUDE.md
-- [[Timeline_1]] - document - .github/ISSUE_TEMPLATE/postmortem.md
-- [[gsd]] - document - .github/ISSUE_TEMPLATE/gsd.md
-- [[postmortem]] - document - .github/ISSUE_TEMPLATE/postmortem.md
+- [[Audit & Compliance (4)]] - document - docs/security/security-inventory.md
+- [[Collaborator Testing]] - document - docs/security/security-inventory.md
+- [[Encryption & Key Management (3)]] - document - docs/security/security-inventory.md
+- [[External Integrations (4)]] - document - docs/security/security-inventory.md
+- [[Inbound Defense (6)]] - document - docs/security/security-inventory.md
+- [[Infrastructure Protection (8)]] - document - docs/security/security-inventory.md
+- [[MCPTool Security (6)]] - document - docs/security/security-inventory.md
+- [[Network & Egress (6)]] - document - docs/security/security-inventory.md
+- [[Orchestration (3)]] - document - docs/security/security-inventory.md
+- [[Outbound Defense (6)]] - document - docs/security/security-inventory.md
+- [[Owner Testing]] - document - docs/security/security-inventory.md
+- [[PII & Data Protection (3)]] - document - docs/security/security-inventory.md
+- [[Security Architecture Documents (24)]] - document - docs/security/security-inventory.md
+- [[Security Configuration Files (9)]] - document - docs/security/security-inventory.md
+- [[Security Modules (58)]] - document - docs/security/security-inventory.md
+- [[Security Test Files (38)]] - document - docs/security/security-inventory.md
+- [[Summary_19]] - document - docs/security/security-inventory.md
+- [[Supply Chain & Browser (2)]] - document - docs/security/security-inventory.md
+- [[Testing Checklist_1]] - document - docs/security/security-inventory.md
+- [[security-inventory]] - document - docs/security/security-inventory.md
+- [[🛡️ AgentShroud Security Inventory (v0.8.0)]] - document - docs/security/security-inventory.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,11 +40,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_apply-patches.js (OpenClaw)]]
-- 1 edge to [[_COMMUNITY_GitHub Copilot CLI Setup Guide]]
-- 1 edge to [[_COMMUNITY_Applies to Claude Code (primary) · Gemini CLI (]]
+- 1 edge to [[_COMMUNITY_llm_proxy.py]]
 
 ## Top bridge nodes
-- [[CLAUDE]] - degree 7, connects to 1 community
-- [[gsd]] - degree 7, connects to 1 community
-- [[COPILOT_CLI_SETUP]] - degree 2, connects to 1 community
+- [[Security Modules (58)]] - degree 13, connects to 1 community

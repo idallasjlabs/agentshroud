@@ -10,47 +10,47 @@ members: 41
 **Members:** 41 nodes
 
 ## Members
-- [[75 Active Security Modules — no stubs, fully wired]] - rationale - CLAUDE.md
-- [[Autonomous remote dev workflows (hdev, odev)]] - concept - .llm_settings/docs/SKILLS_REFERENCE.md
-- [[CI DAST scan job (Nuclei, self-hosted)]] - code - .github/workflows/ci.yml
-- [[CI job dast (Nuclei scan, workflow_dispatch only)]] - code - .github/workflows/ci.yml
-- [[Credential isolation — keys live only in the gateway]] - rationale - docker-compose.secure.yml
-- [[Docker sidecar integrity — falcoclamavfluent-bit in-process, wazuh-agent standalone sidecar]] - rationale - CLAUDE.md
-- [[Gateway DNS filter endpoint (port 53)]] - concept - docker-compose.secure.yml
-- [[MCP servers confined to the internal network]] - rationale - docker-compose.secure.yml
-- [[OpenClaw cron AI Security Standards Watch (OWASPNISTISOMAESTROATLAS)]] - code - docker/bots/openclaw/config/cron/jobs.json
-- [[OpenClaw cron Daily CVE Triage & Remediation Scan (cites agent_cve_registry.py)]] - code - docker/bots/openclaw/config/cron/jobs.json
-- [[PostgreSQL ~.pgpass password management]] - concept - .llm_settings/docs/SECURITY_GUIDE.md
-- [[Proxy mode — full network isolation + egress control]] - concept - docker-compose.secure.yml
-- [[Sidecar mode — optional security scanning]] - concept - docker-compose.sidecar.yml
-- [[agentshroud-external network]] - code - docker-compose.secure.yml
-- [[agentshroud-gateway service (proxy mode)]] - code - docker-compose.secure.yml
-- [[agentshroud-gateway service (sidecar mode)]] - code - docker-compose.sidecar.yml
-- [[agentshroud-gateway service (sidecar mode, optional scan)]] - code - docker-compose.sidecar.yml
-- [[agentshroud-internal network (EDGE tier, internet-facing)]] - code - docker/docker-compose.yml
-- [[agentshroud-internal network (no external access)]] - code - docker-compose.secure.yml
-- [[agentshroud-isolated network (DMZ tier, internaltrue)]] - code - docker/docker-compose.yml
-- [[deepseek-r1-0528-qwen3-8b 404 — alias mismatched oMLX real catalog ID]] - rationale - CHANGELOG.md
-- [[direnv-based environment variable management]] - concept - .llm_settings/docs/SECURITY_GUIDE.md
-- [[docker-socket-proxy service (scoped, no image-pull, digest-pinned)]] - code - docker/docker-compose.yml
-- [[external network (gateway host-facing bridge)]] - code - docker-compose.secure.yml
-- [[gateway override (marvin dev host, port 9080)]] - code - docker/docker-compose.agentshroud-bot.marvin.yml
-- [[gateway service (prod, sole egress point, 75-module pipeline)]] - code - docker/docker-compose.yml
-- [[hermes override (marvin dev host, dashboard port 9119)]] - code - docker/docker-compose.agentshroud-bot.marvin.yml
-- [[hermes service (prod, profiles hermesfull — service block is dead code, see run-standalone.sh)]] - code - docker/docker-compose.yml
-- [[internal network (isolated, internaltrue)]] - code - docker-compose.secure.yml
-- [[openclaw override (marvin dev host, port 18790)]] - code - docker/docker-compose.agentshroud-bot.marvin.yml
-- [[openclaw service (exposed, sidecar mode)]] - code - docker-compose.sidecar.yml
-- [[openclaw service (internal network only)]] - code - docker-compose.secure.yml
-- [[openclaw service (prod, isolated network only)]] - code - docker/docker-compose.yml
-- [[openclaw service (proxy mode, internal-only network)]] - code - docker-compose.secure.yml
-- [[openclaw service (sidecar mode, exposed normally)]] - code - docker-compose.sidecar.yml
-- [[shared network (sidecar mode bridge)]] - code - docker-compose.sidecar.yml
-- [[voice-gateway override (port 8766 — avoids prod SSH-forwarder port race)]] - rationale - docker/docker-compose.agentshroud-bot.marvin.yml
-- [[voice-gateway service (ESP32-S3-BOX-3 STTTTS bridge)]] - code - docker/docker-compose.yml
-- [[wazuh service (proxy-mode HIDS sidecar)]] - code - docker-compose.secure.yml
-- [[wazuh-agent service (standalone sidecar, split from gateway 2026-09-06)]] - code - docker/docker-compose.yml
-- [[wazuh-agent sidecar (pinned 4.14.7)]] - code - docker-compose.secure.yml
+- [[._allowed_networks()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[._mock_app_state_with_registry()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[._mock_request()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_both_bots_registered_distinct_ids()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_client_disconnect_returns_499()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_empty_registry_fails_closed()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_hermes_token_resolves_to_hermes()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_miss_debounced_within_rebuild_interval()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_miss_rebuilds_and_recovers_when_secret_becomes_available()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_miss_still_rejected_after_rebuild_if_truly_unknown()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_no_token_collision()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_openclaw_token_resolves_to_openclaw()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_registry_rejects_case_variant()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_registry_rejects_empty_string()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_registry_rejects_partial_token()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_unknown_token_rejected()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_unknown_token_resolves_to_none()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_valid_hermes_token_accepted()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_valid_openclaw_token_accepted()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[A genuinely-unregistered token must not be falsely accepted by the         rebui]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[A request bearing the Hermes token resolves to 'hermes' bot_id.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[A request bearing the OpenClaw token resolves to 'openclaw' bot_id.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[A token missing from a stale cached registry is picked up on retry         once]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[An unregistered token must not be matched — fail-closed.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Build the Telegram bot-token → bot_id registry from configured secrets.]] - rationale - gateway/ingest_api/main.py
+- [[If no tokens are registered, any token must be rejected.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Integration tests for the telegram-api{path} route with multi-bot registry.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Proxy Telegram Bot API calls through security pipeline.]] - rationale - gateway/ingest_api/main.py
+- [[Registry maps two distinct tokens to two distinct bot_ids.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Repeated misses within the debounce window must not re-read secrets         on e]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[TestTelegramProxyRouteMultiBot]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[TestTelegramTokenRegistry]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[TestTelegramTokenRegistryRebuildOnMiss]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[The token registry is built lazily on the first telegram-api{path} request]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Token matching must be exact — case-sensitive.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Tokens are the registry keys — no two bots share a token.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Validate the token → bot_id registry logic extracted from the route handler.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[When body() raises ClientDisconnect the handler returns 499 without crashing.]] - rationale - gateway/tests/test_security_fixes.py
+- [[_build_telegram_token_registry()]] - code - gateway/ingest_api/main.py
+- [[telegram_api_proxy()]] - code - gateway/ingest_api/main.py
+- [[test_telegram_proxy_multibot.py]] - code - gateway/tests/test_telegram_proxy_multibot.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -60,11 +60,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY__seed_cron]]
-- 1 edge to [[_COMMUNITY_Claude Code skill catalog (59 skills)]]
-- 1 edge to [[_COMMUNITY_run-standalone.sh]]
+- 6 edges to [[_COMMUNITY_ModeRequest]]
+- 4 edges to [[_COMMUNITY_SSHProxy]]
+- 4 edges to [[_COMMUNITY_FileSandbox]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 2 edges to [[_COMMUNITY_OutboundInfoFilter]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_StdioConnection]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Policy - Final Decision]]
 
 ## Top bridge nodes
-- [[hermes service (prod, profiles hermesfull — service block is dead code, see run-standalone.sh)]] - degree 6, connects to 2 communities
-- [[gateway service (prod, sole egress point, 75-module pipeline)]] - degree 13, connects to 1 community
-- [[Autonomous remote dev workflows (hdev, odev)]] - degree 2, connects to 1 community
+- [[telegram_api_proxy()]] - degree 15, connects to 4 communities
+- [[test_telegram_proxy_multibot.py]] - degree 9, connects to 4 communities
+- [[TestTelegramTokenRegistry]] - degree 13, connects to 2 communities
+- [[TestTelegramTokenRegistryRebuildOnMiss]] - degree 10, connects to 2 communities
+- [[TestTelegramProxyRouteMultiBot]] - degree 9, connects to 2 communities

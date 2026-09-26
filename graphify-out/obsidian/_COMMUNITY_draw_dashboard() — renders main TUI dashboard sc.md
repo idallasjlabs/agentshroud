@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # draw_dashboard() — renders main TUI dashboard sc
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[ControlCenter class — TUI dashboard controller]] - code - src/interfaces/text_control_center.py
-- [[draw_dashboard() — renders main TUI dashboard screen]] - code - src/interfaces/text_control_center.py
-- [[make_api_request() — authenticated gateway API call helper]] - code - src/interfaces/text_control_center.py
+- [[lvgl_kawaii_face.c (canvas-based facial animation)]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[lvgl_kawaii_face.h (face animation public API)]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/include/lvgl_kawaii_face.h
 
 ## Live Query (requires Dataview plugin)
 

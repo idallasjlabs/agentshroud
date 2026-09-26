@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.67
+members: 3
 ---
 
 # Testing Documentation
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[Current Status_3]] - document - docs/testing/README.md
-- [[Planned Documents_3]] - document - docs/testing/README.md
-- [[Testing Documentation]] - document - docs/testing/README.md
-- [[testingREADME]] - document - docs/testing/README.md
+- [[FreeRTOS.h_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/FreeRTOS.h
+- [[TickType_t_2]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/FreeRTOS.h
+- [[xTaskGetTickCount()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/FreeRTOS.h
 
 ## Live Query (requires Dataview plugin)
 

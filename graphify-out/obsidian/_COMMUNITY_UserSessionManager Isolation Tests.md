@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[UserSessionManager Isolation Tests]] - code - gateway/tests/test_session_isolation.py
+- [[i-value-stream-mapping SKILL.md (minimal stub)]] - document - docker/config/hermes/skills/i-value-stream-mapping/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

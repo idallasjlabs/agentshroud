@@ -1,35 +1,36 @@
 ---
 type: community
-cohesion: 0.13
-members: 20
+cohesion: 0.17
+members: 21
 ---
 
 # graphify Skill
 
-**Cohesion:** 0.13 - loosely connected
-**Members:** 20 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 21 nodes
 
 ## Members
-- [[--update Incremental Re-extraction Flow]] - concept - docker/config/openclaw/skills/graphify/references/update.md
-- [[--watch Background Watcher]] - concept - docker/config/openclaw/skills/graphify/references/add-watch.md
-- [[Extraction Cache Check — Step B0]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Neo4j Export]] - concept - .agents/skills/graphify/SKILL.md
-- [[Post-commit Auto-rebuild Hook]] - concept - docker/config/openclaw/skills/graphify/references/hooks.md
-- [[Release Workflow (i-release)]] - document - .agents/skills/i-release/SKILL.md
-- [[Semantic Extraction — Part B (parallel subagents)]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Structural (AST) Extraction — Part A]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Whisper Transcription]] - concept - .agents/skills/graphify/references/transcribe.md
-- [[build_merge() rationale (801 edge direction, 1178 stale-node collapse)]] - rationale - docker/config/openclaw/skills/graphify/references/update.md
-- [[graphify Add & Watch Reference]] - document - .agents/skills/graphify/references/add-watch.md
-- [[graphify Commit Hook & CLAUDE.md Integration Reference]] - document - .agents/skills/graphify/references/hooks.md
-- [[graphify Exports & Benchmark Reference]] - document - .agents/skills/graphify/references/exports.md
-- [[graphify Extraction Subagent Prompt Spec]] - document - .agents/skills/graphify/references/extraction-spec.md
-- [[graphify GitHub Clone & Cross-Repo Merge Reference]] - document - .agents/skills/graphify/references/github-and-merge.md
-- [[graphify MCP Stdio Server]] - concept - .agents/skills/graphify/SKILL.md
-- [[graphify QueryPathExplain Reference]] - document - .agents/skills/graphify/references/query.md
-- [[graphify Skill]] - document - .agents/skills/graphify/SKILL.md
-- [[graphify Transcribe Reference]] - document - .agents/skills/graphify/references/transcribe.md
-- [[graphify Update & Cluster-Only Reference]] - document - .agents/skills/graphify/references/update.md
+- [[Anthropic returns the Claude.ai OAuth quota copy with HTTP 400     (wrapped as i]] - rationale - gateway/tests/test_llm_quota_detector.py
+- [[Generic 400 validation errors must NOT trigger failover.]] - rationale - gateway/tests/test_llm_quota_detector.py
+- [[Return (True, token) if the response indicates a billingquota wall.      The st]] - rationale - gateway/proxy/llm_quota_detector.py
+- [[_is_anthropic_quota()]] - code - gateway/proxy/llm_quota_detector.py
+- [[_is_google_quota()]] - code - gateway/proxy/llm_quota_detector.py
+- [[_is_openai_quota()]] - code - gateway/proxy/llm_quota_detector.py
+- [[is_quota_exhausted()]] - code - gateway/proxy/llm_quota_detector.py
+- [[llm_quota_detector.py]] - code - gateway/proxy/llm_quota_detector.py
+- [[test_200_never_triggers()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_400_without_quota_substring_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_500_never_triggers()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_anthropic_400_oauth_extra_usage()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_anthropic_credit_balance_substring()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_anthropic_extra_usage()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_anthropic_rate_limit_type_quota_message()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_anthropic_settings_url()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_google_resource_exhausted()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_openai_insufficient_quota()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_llm_quota_detector.py]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_no_false_positive_on_anthropic_request_rate_limit()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_non_json_body_anthropic_429_no_substring_match()]] - code - gateway/tests/test_llm_quota_detector.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,7 +40,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Coding Agent (bash-first)]]
+- 4 edges to [[_COMMUNITY_AgentShroud Project Terminology]]
+- 2 edges to [[_COMMUNITY_Skill UI Expert (UI)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Hardening Plan]]
+- 1 edge to [[_COMMUNITY_test_trust_manager.py]]
+- 1 edge to [[_COMMUNITY_Oracle — Feedback Analyst]]
 
 ## Top bridge nodes
-- [[graphify Skill]] - degree 15, connects to 1 community
+- [[is_quota_exhausted()]] - degree 22, connects to 3 communities
+- [[llm_quota_detector.py]] - degree 7, connects to 2 communities
+- [[test_llm_quota_detector.py]] - degree 17, connects to 1 community

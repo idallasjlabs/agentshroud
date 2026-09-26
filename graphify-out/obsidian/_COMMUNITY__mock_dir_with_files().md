@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.20
+cohesion: 0.13
 members: 15
 ---
 
 # _mock_dir_with_files()
 
-**Cohesion:** 0.20 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[.test_five_optimal()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_five_sbom_and_trivy_clean()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_four_sbom_and_trivy_with_criticals()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_four_with_zero_highs()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_one_when_only_sbom_exists()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_three_sbom_has_packages_no_trivy()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_three_with_sbom_trivy_no_criticals_but_has_highs()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_two_empty_sbom()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_zero_when_nothing_present()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_zero_without_sbom()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[Return a mock Path that exists and whose glob() returns named mock files.]] - rationale - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreImageIntegrity]] - code - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreSupplyChain_1]] - code - gateway/tests/test_scorecard_scoring.py
-- [[_mock_dir_with_files()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[_mock_missing_dir()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[Configuration  Environment Variables_11]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[Function Details_17]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[Injection Pattern Weights]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[Key Classes  Functions_20]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[Purpose_138]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[Related_24]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[Responsibilities_22]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[WebContentScanner._scan_encoded_payloads(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[WebContentScanner._scan_hidden_content(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[WebContentScanner._scan_pii(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[WebContentScanner._scan_prompt_injection(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[WebContentScanner._scan_zero_width(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[WebContentScanner.scan(content, content_type)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[web_content_scanner.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[web_content_scanner.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,17 +32,3 @@ members: 15
 TABLE source_file, type FROM #community/_mock_dir_with_files
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 4 edges to [[_COMMUNITY_test_scorecard_scoring.py]]
-- 3 edges to [[_COMMUNITY__mock_dir_with_fresh_files()]]
-- 2 edges to [[_COMMUNITY_TestIsFresh]]
-- 2 edges to [[_COMMUNITY_TestScoreMalwareDefense]]
-- 1 edge to [[_COMMUNITY_TestScoreVulnerabilityManagement]]
-
-## Top bridge nodes
-- [[_mock_dir_with_files()]] - degree 13, connects to 5 communities
-- [[_mock_missing_dir()]] - degree 6, connects to 3 communities
-- [[TestScoreImageIntegrity]] - degree 7, connects to 2 communities
-- [[TestScoreSupplyChain_1]] - degree 6, connects to 1 community
-- [[.test_five_optimal()]] - degree 2, connects to 1 community

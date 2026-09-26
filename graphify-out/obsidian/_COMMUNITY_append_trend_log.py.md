@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[append_trend_log.py]] - code - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
+- [[Voice Gateway FastAPI Server]] - code - voice_gateway/server.py
 
 ## Live Query (requires Dataview plugin)
 

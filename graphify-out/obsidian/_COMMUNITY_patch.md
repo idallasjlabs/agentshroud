@@ -1,88 +1,81 @@
 ---
 type: community
 cohesion: 0.05
-members: 73
+members: 66
 ---
 
 # patch
 
 **Cohesion:** 0.05 - loosely connected
-**Members:** 73 nodes
+**Members:** 66 nodes
 
 ## Members
-- [[.test_run_binary_not_found()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_run_empty_stdout_is_error_not_clean()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_run_image_scan_type()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_run_nonzero_exit_code_is_error()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_run_not_found()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_run_parse_error()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_run_success()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_run_timeout()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_run_whitespace_only_stdout_is_error()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_trivy_binary_not_found()]] - code - gateway/tests/test_security_audit.py
-- [[.test_update_db_not_found()]] - code - gateway/tests/test_security_toolchain.py
-- [[A 0-byteempty stdout means the scan failed to produce output -- it must never…]] - rationale - gateway/tests/test_security_toolchain.py
-- [[A final delta with no terminal punctuation is flushed once the SSE stream ends,…]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A malformedunexpected-shape SSE chunk is skipped, not fatal — a good sentence…]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A non-400 HTTP error (e.g. 500) is a real failure, not the OpenClaw no-…]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A single corrupted SSE line logs a warning and is skipped — it must not abort…]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A stream that goes straight to 'done' with no sentence events (e.g. everything…]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Build a mock httpx.Response usable as the yield value of a mocked…]] - rationale - gateway/tests/test_voice_gateway.py
-- [[GATEWAY_OWNER_USER_ID is sent as X-AgentShroud-User-Id header (not a body…]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Request body must carry the configured model, max_tokens=150, and streamtrue…]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Run a Trivy scan and return parsed results. Args target Scan target…]] - rationale - gateway/security/trivy_report.py
-- [[TestClamAVRun]] - code - gateway/tests/test_security_toolchain.py
-- [[TestTrivyRun]] - code - gateway/tests/test_security_toolchain.py
-- [[__aenter__()]] - code - gateway/tests/test_voice_gateway.py
-- [[_aiter_lines()]] - code - gateway/tests/test_voice_gateway.py
-- [[_aiter_lines()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[_call_agent_stream POSTs to forwardstream and yields each sentence event as…]] - rationale - gateway/tests/test_voice_gateway.py
-- [[_call_agent_stream must POST to forwardstream with streamtrue, not the old…]] - rationale - gateway/tests/test_voice_gateway.py
-- [[_call_agent_stream must yield a spoken fallback string and log a WARNING when…]] - rationale - gateway/tests/test_voice_gateway.py
-- [[_call_llm_stream posts to v1chatcompletions with streamtrue and yields each…]] - rationale - gateway/tests/test_voice_gateway.py
-- [[_drain()]] - code - gateway/tests/test_voice_gateway.py
-- [[_mock_llm_stream_resp()]] - code - gateway/tests/test_voice_gateway.py
-- [[_mock_stream_resp()]] - code - gateway/tests/test_voice_gateway.py
-- [[_mock_synthesize()]] - code - gateway/tests/test_voice_gateway.py
-- [[_mock_synthesize()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[_openai_delta_lines()]] - code - gateway/tests/test_voice_gateway.py
-- [[_sse_body()]] - code - gateway/tests/test_voice_gateway.py
-- [[mock_stream()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[mock_stream()_2]] - code - gateway/tests/test_voice_gateway.py
-- [[mock_stream()_3]] - code - gateway/tests/test_voice_gateway.py
-- [[mock_stream()_4]] - code - gateway/tests/test_voice_gateway.py
-- [[mock_stream()_6]] - code - gateway/tests/test_voice_gateway.py
-- [[mock_stream()_7]] - code - gateway/tests/test_voice_gateway.py
-- [[mock_stream()_8]] - code - gateway/tests/test_voice_gateway.py
-- [[mock_stream()_9]] - code - gateway/tests/test_voice_gateway.py
-- [[mock_stream()_10]] - code - gateway/tests/test_voice_gateway.py
-- [[mock_stream()_11]] - code - gateway/tests/test_voice_gateway.py
-- [[mock_stream()_12]] - code - gateway/tests/test_voice_gateway.py
-- [[mock_stream()_13]] - code - gateway/tests/test_voice_gateway.py
-- [[mock_stream()_14]] - code - gateway/tests/test_voice_gateway.py
-- [[mock_stream()_15]] - code - gateway/tests/test_voice_gateway.py
-- [[mock_stream()_16]] - code - gateway/tests/test_voice_gateway.py
-- [[mock_stream()_17]] - code - gateway/tests/test_voice_gateway.py
-- [[patch]] - code
-- [[returncode 0 = clean, 1 = vulns found (both expected); anything else means…]] - rationale - gateway/tests/test_security_toolchain.py
-- [[run_trivy_scan]] - code - gateway/security/trivy_report.py
-- [[scan_type='image' is passed correctly to the trivy binary.]] - rationale - gateway/tests/test_security_toolchain.py
-- [[test_call_agent_read_timeout_returns_fallback()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_agent_stream_empty_stream_yields_nothing()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_agent_stream_malformed_json_line_skipped_not_fatal()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_agent_stream_non_400_http_error_falls_back()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_agent_stream_posts_to_forward_stream_endpoint()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_agent_stream_skips_blank_and_comment_lines()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_agent_stream_yields_sentences_in_order()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_llm_stream_flushes_trailing_fragment()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_llm_stream_sends_correct_model_and_max_tokens()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_llm_stream_sends_full_history()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_llm_stream_skips_malformed_chunks()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_llm_stream_yields_sentences()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_owner_user_id_propagated_as_header()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_full_utterance_state_sequence()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_one_sentence_reply_unchanged()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_sentence_chunked_tts_calls_synthesize_per_sentence()]] - code - gateway/tests/test_voice_gateway.py
+- [[.test_default_format_for_pipe()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_is_tty_and_default_format_for_tty()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_output_json()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_output_table_caps_columns_at_eight()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_output_table_dict()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_output_table_empty_list()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_output_table_list_of_dicts()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_output_table_list_of_scalars()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_output_table_scalar()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_output_yaml()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_output_yaml_falls_back_to_json_without_pyyaml()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_print_table_empty_rows_is_noop()]] - code - gateway/tests/test_cli_coverage.py
+- [[Add a collaborator by Telegram user ID.]] - rationale - gateway/cli/main.py
+- [[Add a user to a group.]] - rationale - gateway/cli/main.py
+- [[AgentShroud SOC CLI — Shared Command Layer.]] - rationale - gateway/cli/main.py
+- [[Aggregate health report.]] - rationale - gateway/cli/main.py
+- [[Any_4]] - code - gateway/cli/main.py
+- [[Approve an egress request by ID.]] - rationale - gateway/cli/main.py
+- [[Deny an egress request by ID.]] - rationale - gateway/cli/main.py
+- [[Emergency freeze pause all bot containers.]] - rationale - gateway/cli/main.py
+- [[Get container logs for a service.]] - rationale - gateway/cli/main.py
+- [[List all contributors with roles and groups.]] - rationale - gateway/cli/main.py
+- [[List all service containers with status.]] - rationale - gateway/cli/main.py
+- [[Print data in the requested format.]] - rationale - gateway/cli/main.py
+- [[Query recent security events.]] - rationale - gateway/cli/main.py
+- [[Restart a service container.]] - rationale - gateway/cli/main.py
+- [[Set collaboration mode for a group.]] - rationale - gateway/cli/main.py
+- [[Set configuration values.]] - rationale - gateway/cli/main.py
+- [[Show SOC correlation summary.]] - rationale - gateway/cli/main.py
+- [[Show current risk score and level.]] - rationale - gateway/cli/main.py
+- [[Show pending egress approval requests.]] - rationale - gateway/cli/main.py
+- [[Stop a service container.]] - rationale - gateway/cli/main.py
+- [[Stream real-time events or logs via WebSocket.]] - rationale - gateway/cli/main.py
+- [[TestOutputHelpers]] - code - gateway/tests/test_cli_coverage.py
+- [[Trigger a security scan.]] - rationale - gateway/cli/main.py
+- [[_default_format()]] - code - gateway/cli/main.py
+- [[_is_tty()]] - code - gateway/cli/main.py
+- [[_output()]] - code - gateway/cli/main.py
+- [[_print_table()]] - code - gateway/cli/main.py
+- [[add()]] - code - gateway/cli/main.py
+- [[add_collaborator()]] - code - gateway/cli/main.py
+- [[add_group_member()]] - code - gateway/cli/main.py
+- [[approve()]] - code - gateway/cli/main.py
+- [[cli()]] - code - gateway/cli/main.py
+- [[deny()]] - code - gateway/cli/main.py
+- [[freeze()]] - code - gateway/cli/main.py
+- [[get()]] - code - gateway/cli/main.py
+- [[get_correlation()]] - code - gateway/cli/main.py
+- [[get_egress_pending()]] - code - gateway/cli/main.py
+- [[get_events()]] - code - gateway/cli/main.py
+- [[get_groups()]] - code - gateway/cli/main.py
+- [[get_health()]] - code - gateway/cli/main.py
+- [[get_logs()]] - code - gateway/cli/main.py
+- [[get_risk()]] - code - gateway/cli/main.py
+- [[get_services()]] - code - gateway/cli/main.py
+- [[get_users()]] - code - gateway/cli/main.py
+- [[main()_11]] - code - gateway/cli/main.py
+- [[main.py_1]] - code - gateway/cli/main.py
+- [[restart()]] - code - gateway/cli/main.py
+- [[restart_service()]] - code - gateway/cli/main.py
+- [[scan()]] - code - gateway/cli/main.py
+- [[set()]] - code - gateway/cli/main.py
+- [[set_mode()]] - code - gateway/cli/main.py
+- [[stop()]] - code - gateway/cli/main.py
+- [[stop_service()]] - code - gateway/cli/main.py
+- [[tail()]] - code - gateway/cli/main.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -92,22 +85,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 20 edges to [[_COMMUNITY_test_voice_gateway.py]]
-- 14 edges to [[_COMMUNITY_asyncio]]
-- 11 edges to [[_COMMUNITY__call_agent_stream()]]
-- 7 edges to [[_COMMUNITY_test_security_toolchain.py]]
-- 7 edges to [[_COMMUNITY_server.py]]
-- 4 edges to [[_COMMUNITY_test_voice_gateway.py]]
-- 1 edge to [[_COMMUNITY_gateway.security.daily_cve_report]]
-- 1 edge to [[_COMMUNITY_asyncio]]
-- 1 edge to [[_COMMUNITY_test_daily_cve_report.py]]
-- 1 edge to [[_COMMUNITY_test_security_audit.py]]
-- 1 edge to [[_COMMUNITY_test_call_agent_uses_structured_timeout()]]
-- 1 edge to [[_COMMUNITY_EncryptedStore]]
+- 9 edges to [[_COMMUNITY_AgentShroud Development Team — Agile Structure]]
+- 5 edges to [[_COMMUNITY_test_voice_stt_model_ab.py]]
+- 1 edge to [[_COMMUNITY_api.py]]
+- 1 edge to [[_COMMUNITY_SSHProxy]]
 
 ## Top bridge nodes
-- [[run_trivy_scan]] - degree 17, connects to 5 communities
-- [[test_call_agent_stream_empty_stream_yields_nothing()]] - degree 8, connects to 3 communities
-- [[test_call_agent_stream_malformed_json_line_skipped_not_fatal()]] - degree 8, connects to 3 communities
-- [[test_call_agent_stream_skips_blank_and_comment_lines()]] - degree 8, connects to 3 communities
-- [[test_call_agent_stream_yields_sentences_in_order()]] - degree 8, connects to 3 communities
+- [[main.py_1]] - degree 33, connects to 3 communities
+- [[TestOutputHelpers]] - degree 14, connects to 2 communities
+- [[cli()]] - degree 7, connects to 2 communities
+- [[tail()]] - degree 5, connects to 2 communities
+- [[_output()]] - degree 31, connects to 1 community

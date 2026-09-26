@@ -1,22 +1,21 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.33
+members: 6
 ---
 
 # What is the symptom?
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Alert  Issue Detected]] - concept - docs/diagrams/images/diagram-18-runbook.svg
-- [[Bot container not healthy or crash-looping]] - concept - docs/diagrams/images/diagram-18-runbook.svg
-- [[Bot not responding on Telegram_1]] - concept - docs/diagrams/images/diagram-18-runbook.svg
-- [[Context limit exceeded, bot resets mid-conversation]] - concept - docs/diagrams/images/diagram-18-runbook.svg
-- [[Kill switch gateway kill_switch_enabled=true (freezeshutdowndisconnect)]] - concept - docs/diagrams/images/diagram-18-runbook.svg
-- [[Security alert (blocked domain, HIGH MCP threat, canary token triggered)]] - concept - docs/diagrams/images/diagram-18-runbook.svg
-- [[What is the symptom]] - concept - docs/diagrams/images/diagram-18-runbook.svg
+- [[FY26 Cost Reduction Context]] - document - .agents/skills/i-aws/SKILL.md
+- [[In-Scope Departments (Cost Reduction)]] - document - .agents/skills/i-aws/SKILL.md
+- [[Infrastructure You Must Know]] - document - .agents/skills/i-aws/SKILL.md
+- [[Out-of-Scope Departments (Inventory & Tag Only)]] - document - .agents/skills/i-aws/SKILL.md
+- [[Savings Levers (Ranked by Impact)]] - document - .agents/skills/i-aws/SKILL.md
+- [[Target 40% Full-Year Reduction on Global Services Resources]] - document - .agents/skills/i-aws/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +23,9 @@ members: 7
 TABLE source_file, type FROM #community/What_is_the_symptom
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_gen.py]]
+
+## Top bridge nodes
+- [[FY26 Cost Reduction Context]] - degree 6, connects to 1 community

@@ -1,43 +1,44 @@
 ---
 type: community
-cohesion: 0.10
-members: 28
+cohesion: 0.07
+members: 29
 ---
 
 # TrustLevel
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 28 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 29 nodes
 
 ## Members
-- [[._apply_decay()]] - code - gateway/security/trust_manager.py
-- [[._force_demotion()]] - code - gateway/security/trust_manager.py
-- [[._promotion_allowed()]] - code - gateway/security/trust_manager.py
-- [[._score_to_level()]] - code - gateway/security/trust_manager.py
-- [[._update_score()]] - code - gateway/security/trust_manager.py
-- [[.get_trust()]] - code - gateway/security/trust_manager.py
-- [[.is_action_allowed()]] - code - gateway/security/trust_manager.py
-- [[.is_tool_allowed()]] - code - gateway/security/trust_manager.py
-- [[.record_failure()]] - code - gateway/security/trust_manager.py
-- [[.record_success()]] - code - gateway/security/trust_manager.py
-- [[.record_violation()]] - code - gateway/security/trust_manager.py
-- [[.register_agent()]] - code - gateway/security/trust_manager.py
-- [[.test_mapping_is_bijective_and_total()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_renamed_rungs_map_correctly()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[Apply time-based decay to score.]] - rationale - gateway/security/trust_manager.py
-- [[Check if an agent's trust level allows a given action.]] - rationale - gateway/security/trust_manager.py
-- [[Check the progressive ladder's threshold for promotion to target_level.]] - rationale - gateway/security/trust_manager.py
-- [[Convert score to trust level based on thresholds.]] - rationale - gateway/security/trust_manager.py
-- [[Drop an agent one trust level immediately (severe violations).]] - rationale - gateway/security/trust_manager.py
-- [[Get current trust level and score for an agent.]] - rationale - gateway/security/trust_manager.py
-- [[Per-level tool gate from the progressive trust ladder. Tri-state TrueFalse…]] - rationale - gateway/security/trust_manager.py
-- [[Record a failedblocked action, decreasing trust.]] - rationale - gateway/security/trust_manager.py
-- [[Record a security violation, significantly decreasing trust. With a progressive…]] - rationale - gateway/security/trust_manager.py
-- [[Record a successful action, increasing trust.]] - rationale - gateway/security/trust_manager.py
-- [[Register a new agent with initial trust.]] - rationale - gateway/security/trust_manager.py
-- [[TestEnumMapping]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[TrustLevel]] - code - gateway/security/trust_manager.py
-- [[ViolationType_1]] - code
+- [[For --cluster-only_2]] - document - docker/config/openclaw/skills/graphify/references/update.md
+- [[For --update (incremental re-extraction)_2]] - document - docker/config/openclaw/skills/graphify/references/update.md
+- [[For --watch_2]] - document - docker/config/openclaw/skills/graphify/references/add-watch.md
+- [[For graphify add_2]] - document - docker/config/openclaw/skills/graphify/references/add-watch.md
+- [[For graphify explain_2]] - document - docker/config/openclaw/skills/graphify/references/query.md
+- [[For graphify path_2]] - document - docker/config/openclaw/skills/graphify/references/query.md
+- [[For git commit hook_2]] - document - docker/config/openclaw/skills/graphify/references/hooks.md
+- [[For native CLAUDE.md integration_2]] - document - docker/config/openclaw/skills/graphify/references/hooks.md
+- [[Step 0 — Constrained query expansion (REQUIRED before traversal)_2]] - document - docker/config/openclaw/skills/graphify/references/query.md
+- [[Step 1 — Traversal_2]] - document - docker/config/openclaw/skills/graphify/references/query.md
+- [[Step 2.5 - Transcribe video  audio files (only if video files detected)_2]] - document - docker/config/openclaw/skills/graphify/references/transcribe.md
+- [[Step 6b - Wiki (only if --wiki flag)_2]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag)_2]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[Step 7b - SVG export (only if --svg flag)_2]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[Step 7c - GraphML export (only if --graphml flag)_2]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[Step 7d - MCP server (only if --mcp flag)_2]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[Step 8 - Token reduction benchmark (only if total_words  5000)_2]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[add-watch_2]] - document - docker/config/openclaw/skills/graphify/references/add-watch.md
+- [[exports_2]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[graphify reference add a URL and watch a folder_2]] - document - docker/config/openclaw/skills/graphify/references/add-watch.md
+- [[graphify reference commit hook and native CLAUDE.md integration_2]] - document - docker/config/openclaw/skills/graphify/references/hooks.md
+- [[graphify reference extra exports and benchmark_2]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[graphify reference incremental update and cluster-only_2]] - document - docker/config/openclaw/skills/graphify/references/update.md
+- [[graphify reference query, path, explain_2]] - document - docker/config/openclaw/skills/graphify/references/query.md
+- [[graphify reference transcribe video and audio_2]] - document - docker/config/openclaw/skills/graphify/references/transcribe.md
+- [[hooks_2]] - document - docker/config/openclaw/skills/graphify/references/hooks.md
+- [[query_2]] - document - docker/config/openclaw/skills/graphify/references/query.md
+- [[transcribe_2]] - document - docker/config/openclaw/skills/graphify/references/transcribe.md
+- [[update_2]] - document - docker/config/openclaw/skills/graphify/references/update.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,31 +46,3 @@ members: 28
 TABLE source_file, type FROM #community/TrustLevel
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 16 edges to [[_COMMUNITY_TrustManager]]
-- 9 edges to [[_COMMUNITY__make_tm()]]
-- 7 edges to [[_COMMUNITY_EgressAction]]
-- 7 edges to [[_COMMUNITY_test_trust_manager.py]]
-- 4 edges to [[_COMMUNITY_MiddlewareManager]]
-- 3 edges to [[_COMMUNITY_EncryptedStore]]
-- 2 edges to [[_COMMUNITY_AgentRegistry]]
-- 1 edge to [[_COMMUNITY_SkillGuard]]
-- 1 edge to [[_COMMUNITY_UserSession]]
-- 1 edge to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_test_e2e.py]]
-- 1 edge to [[_COMMUNITY_test_redteam_probes.py]]
-- 1 edge to [[_COMMUNITY_EgressFilter]]
-- 1 edge to [[_COMMUNITY_test_security_integration.py]]
-- 1 edge to [[_COMMUNITY_TestBotIdIsolationInSharedMemory]]
-- 1 edge to [[_COMMUNITY_TestCrossBotTrustPivot]]
-- 1 edge to [[_COMMUNITY_TestHermesEgressAllowlist]]
-- 1 edge to [[_COMMUNITY_TestSessionPathSeparation]]
-- 1 edge to [[_COMMUNITY_TrustConfig]]
-
-## Top bridge nodes
-- [[TrustLevel]] - degree 57, connects to 19 communities
-- [[._update_score()]] - degree 9, connects to 1 community
-- [[.get_trust()]] - degree 7, connects to 1 community
-- [[.record_violation()]] - degree 6, connects to 1 community
-- [[._score_to_level()]] - degree 6, connects to 1 community

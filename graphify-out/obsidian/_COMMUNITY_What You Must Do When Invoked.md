@@ -1,39 +1,40 @@
 ---
 type: community
-cohesion: 0.08
-members: 24
+cohesion: 0.10
+members: 25
 ---
 
 # What You Must Do When Invoked
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 24 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 25 nodes
 
 ## Members
-- [[graphify_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[For --update and --cluster-only_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[For graphify add and --watch_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[For graphify query_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[For the commit hook and native CLAUDE.md integration_1]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Honesty Rules_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Interpreter guard for subcommands_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Part A - Structural extraction for code files_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Part B - Semantic extraction (parallel subagents)_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Part C - Merge AST + semantic into final extraction_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Step 0 - GitHub repos and multi-path merge (only if a URL or several paths)_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Step 1 - Ensure graphify is installed_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Step 2 - Detect files_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Step 2.5 - Video and audio (only if video files detected)_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Step 3 - Extract entities and relationships_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Step 4 - Build graph, cluster, analyze, generate outputs_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Step 5 - Label communities_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Step 6 - Generate Obsidian vault (opt-in) + HTML_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Step 9 - Save manifest, update cost tracker, clean up, and report_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Steps 6b-8 - Wiki, Neo4j, SVG, GraphML, MCP, benchmark (only on their flags)_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[Usage_119]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[What You Must Do When Invoked_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[What graphify is for_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
-- [[openclawskillsgraphifySKILL]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[.__init__()_107]] - code - gateway/security/privacy_policy.py
+- [[.default()]] - code - gateway/security/privacy_policy.py
+- [[.from_dict()_10]] - code - gateway/security/privacy_policy.py
+- [[.from_dict()_9]] - code - gateway/security/privacy_policy.py
+- [[.test_audit_disabled_globally()]] - code - gateway/tests/test_privacy_policy.py
+- [[.test_default_policy_marks_gmail_private()]] - code - gateway/tests/test_privacy_policy.py
+- [[.test_extra_redact_patterns_loaded()]] - code - gateway/tests/test_privacy_policy.py
+- [[.test_from_dict_adds_new_service()]] - code - gateway/tests/test_privacy_policy.py
+- [[.test_from_dict_overrides_existing()]] - code - gateway/tests/test_privacy_policy.py
+- [[.test_from_dict_unknown_privacy_defaults_to_private()]] - code - gateway/tests/test_privacy_policy.py
+- [[.test_should_alert_non_owner()]] - code - gateway/tests/test_privacy_policy.py
+- [[.test_should_audit_private_service()]] - code - gateway/tests/test_privacy_policy.py
+- [[.test_should_not_alert_owner()]] - code - gateway/tests/test_privacy_policy.py
+- [[.test_should_not_audit_unknown_service()]] - code - gateway/tests/test_privacy_policy.py
+- [[Parse from a YAMLdict representation.          Example YAML             privac]] - rationale - gateway/security/privacy_policy.py
+- [[Privacy classification for a service.]] - rationale - gateway/security/privacy_policy.py
+- [[Privacy policy configuration.      Loaded from agentshroud.yaml `privacy` secti]] - rationale - gateway/security/privacy_policy.py
+- [[Privacy policy for a single service.]] - rationale - gateway/security/privacy_policy.py
+- [[PrivacyPolicy]] - code - gateway/security/privacy_policy.py
+- [[Return a default policy with all known private services locked down.]] - rationale - gateway/security/privacy_policy.py
+- [[ServicePolicy]] - code - gateway/security/privacy_policy.py
+- [[ServicePrivacy]] - code - gateway/security/privacy_policy.py
+- [[TestAuditAndAlert]] - code - gateway/tests/test_privacy_policy.py
+- [[TestPrivacyPolicyParsing]] - code - gateway/tests/test_privacy_policy.py
+- [[privacy_policy.py]] - code - gateway/security/privacy_policy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,3 +42,18 @@ members: 24
 TABLE source_file, type FROM #community/What_You_Must_Do_When_Invoked
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 15 edges to [[_COMMUNITY_Local-Model Job Quality Matrix]]
+- 8 edges to [[_COMMUNITY_MiddlewareManager]]
+- 3 edges to [[_COMMUNITY_EncryptedStore]]
+- 2 edges to [[_COMMUNITY_TestAlertDispatcher]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY__wrap_response()]]
+
+## Top bridge nodes
+- [[PrivacyPolicy]] - degree 13, connects to 3 communities
+- [[ServicePrivacy]] - degree 12, connects to 3 communities
+- [[TestAuditAndAlert]] - degree 12, connects to 3 communities
+- [[TestPrivacyPolicyParsing]] - degree 12, connects to 3 communities
+- [[privacy_policy.py]] - degree 6, connects to 3 communities

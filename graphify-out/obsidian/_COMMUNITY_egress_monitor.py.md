@@ -10,21 +10,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Alert Actions]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Configuration  Environment Variables_17]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Default Thresholds]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[EgressMonitor.check_anomalies(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[EgressMonitor.daily_summary(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[EgressMonitor.get_events(agent_id, channel)]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[EgressMonitor.record(event)]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Function Details_31]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Key Classes  Functions_33]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Purpose_160]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Related_37]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Responsibilities_34]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Threat Model_21]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[egress_monitor.py_2]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[egress_monitor.py_1]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[1. Install Dependencies]] - document - gateway/README.md
+- [[2. Configure]] - document - gateway/README.md
+- [[3. Run]] - document - gateway/README.md
+- [[4. Test]] - document - gateway/README.md
+- [[Approval Queue_1]] - document - gateway/README.md
+- [[Authentication_3]] - document - gateway/README.md
+- [[Data Ledger]] - document - gateway/README.md
+- [[Features_4]] - document - gateway/README.md
+- [[Gateway Layer]] - document - gateway/README.md
+- [[Implementation Status_2]] - document - gateway/README.md
+- [[Ingest API]] - document - gateway/README.md
+- [[PII Sanitizer]] - document - gateway/README.md
+- [[Setup_3]] - document - gateway/README.md
+- [[Structure_1]] - document - gateway/README.md
+- [[Tech Stack_1]] - document - gateway/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,3 +32,9 @@ members: 15
 TABLE source_file, type FROM #community/egress_monitorpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_ModeRequest]]
+
+## Top bridge nodes
+- [[Gateway Layer]] - degree 6, connects to 1 community

@@ -1,36 +1,36 @@
 ---
 type: community
-cohesion: 0.17
+cohesion: 0.10
 members: 21
 ---
 
 # is_quota_exhausted()
 
-**Cohesion:** 0.17 - loosely connected
+**Cohesion:** 0.10 - loosely connected
 **Members:** 21 nodes
 
 ## Members
-- [[Anthropic returns the Claude.ai OAuth quota copy with HTTP 400     (wrapped as i]] - rationale - gateway/tests/test_llm_quota_detector.py
-- [[Generic 400 validation errors must NOT trigger failover.]] - rationale - gateway/tests/test_llm_quota_detector.py
-- [[Return (True, token) if the response indicates a billingquota wall.      The st]] - rationale - gateway/proxy/llm_quota_detector.py
-- [[_is_anthropic_quota()]] - code - gateway/proxy/llm_quota_detector.py
-- [[_is_google_quota()]] - code - gateway/proxy/llm_quota_detector.py
-- [[_is_openai_quota()]] - code - gateway/proxy/llm_quota_detector.py
-- [[is_quota_exhausted()]] - code - gateway/proxy/llm_quota_detector.py
-- [[llm_quota_detector.py]] - code - gateway/proxy/llm_quota_detector.py
-- [[test_200_never_triggers()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_400_without_quota_substring_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_500_never_triggers()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_detect_anthropic_400_oauth_extra_usage()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_detect_anthropic_credit_balance_substring()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_detect_anthropic_extra_usage()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_detect_anthropic_rate_limit_type_quota_message()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_detect_anthropic_settings_url()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_detect_google_resource_exhausted()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_detect_openai_insufficient_quota()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_llm_quota_detector.py]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_no_false_positive_on_anthropic_request_rate_limit()]] - code - gateway/tests/test_llm_quota_detector.py
-- [[test_non_json_body_anthropic_429_no_substring_match()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[1. Change Documentation_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
+- [[2. Testing Evidence_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
+- [[3. Backups & Rollback_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
+- [[4. Blast Radius_5]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
+- [[5. Observability_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
+- [[6. Security_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
+- [[7. Communication_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
+- [[8. Service Control Commands_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
+- [[Emergency Stop (P1 Incidents Only)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
+- [[If Something Goes Wrong_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
+- [[Immediate (0–15 min)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
+- [[Invoke Before_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
+- [[Pause Before Testing (Copy-Paste Ready)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
+- [[Post-Deployment Verification_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
+- [[Pre-Deployment Checklist_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
+- [[Resume After Testing (MANDATORY)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
+- [[Role_101]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
+- [[SKILL_171]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
+- [[Short-Term (15 min – 24 hr)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
+- [[Sign-Off_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
+- [[Skill Production Safety Checklist (PROD-SAFETY)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,11 +40,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_is_overloaded()]]
-- 2 edges to [[_COMMUNITY_LLMProxy.proxy_messages]]
-- 1 edge to [[_COMMUNITY_is_rate_limited_post_retry()]]
+- 1 edge to [[_COMMUNITY_BaseModel]]
 
 ## Top bridge nodes
-- [[llm_quota_detector.py]] - degree 7, connects to 2 communities
-- [[is_quota_exhausted()]] - degree 20, connects to 1 community
-- [[test_llm_quota_detector.py]] - degree 17, connects to 1 community
+- [[Skill Production Safety Checklist (PROD-SAFETY)_2]] - degree 7, connects to 1 community

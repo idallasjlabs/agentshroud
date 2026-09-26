@@ -10,28 +10,28 @@ members: 22
 **Members:** 22 nodes
 
 ## Members
-- [[.test_0_0_0_0_blocked()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_10_255_blocked()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_10_x_blocked()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_127_0_0_1_blocked()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_127_x_blocked()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_169_254_link_local_blocked()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_172_16_blocked()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_172_31_blocked()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_192_168_blocked()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_decimal_ip_blocked()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_hex_ip_blocked()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_ip6_localhost_blocked()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_ipv4_mapped_ipv6_blocked()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_ipv4_mapped_ipv6_private_blocked()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_ipv6_link_local_blocked()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_ipv6_loopback_blocked()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_ipv6_ula_blocked()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_localhost_blocked()]] - code - gateway/tests/test_url_analyzer.py
-- [[0x7f000001 = 127.0.0.1 in hex.]] - rationale - gateway/tests/test_url_analyzer.py
-- [[2130706433 = 127.0.0.1 in decimal.]] - rationale - gateway/tests/test_url_analyzer.py
-- [[SSRF blocking — the one hard block.]] - rationale - gateway/tests/test_url_analyzer.py
-- [[TestSSRFDetection]] - code - gateway/tests/test_url_analyzer.py
+- [[Follow-up (within 48 hours)_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Glue Job Rollback_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Immediate (within 2 hours)_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Incident Response (INCIDENT)_1]] - document - docker/config/openclaw/skills/i-production/README.md
+- [[Incident Response Workflow_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Phase 1 ASSESS (Max 5 minutes)_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Phase 2 COMMUNICATE (Concurrent with assess)_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Phase 3 MITIGATE (Rollback First!)_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Post-Incident_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Post-Mortem Template_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Purpose_98]] - document - docker/config/openclaw/skills/i-production/README.md
+- [[RDS Rollback (Point-in-Time or Snapshot)_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[README_103]] - document - docker/config/openclaw/skills/i-production/README.md
+- [[Related Skills_107]] - document - docker/config/openclaw/skills/i-production/README.md
+- [[Role_100]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[S3 Data Rollback_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[SKILL_170]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Severity Matrix_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Skill Incident Response (INCIDENT)_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Step Function Rollback_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Usage_108]] - document - docker/config/openclaw/skills/i-production/README.md
+- [[Zabbix Rollback_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,10 +39,3 @@ members: 22
 TABLE source_file, type FROM #community/TestSSRFDetection
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_URLAnalyzer]]
-- 1 edge to [[_COMMUNITY_Enum]]
-
-## Top bridge nodes
-- [[TestSSRFDetection]] - degree 22, connects to 2 communities

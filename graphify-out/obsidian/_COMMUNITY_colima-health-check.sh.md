@@ -1,22 +1,22 @@
 ---
 type: community
-cohesion: 0.52
+cohesion: 0.29
 members: 7
 ---
 
 # colima-health-check.sh
 
-**Cohesion:** 0.52 - moderately connected
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[PATH]] - code - docker/scripts/colima-health-check.sh
-- [[colima-health-check.sh]] - code - docker/scripts/colima-health-check.sh
-- [[colima-health-check.sh script]] - code - docker/scripts/colima-health-check.sh
-- [[log (colima-health-check)]] - code - docker/scripts/colima-health-check.sh
-- [[notify (Telegram health alert)]] - code - docker/scripts/colima-health-check.sh
-- [[read_state]] - code - docker/scripts/colima-health-check.sh
-- [[write_state]] - code - docker/scripts/colima-health-check.sh
+- [[4.1 Per-bot egress allowlist completeness]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[4.2 Per-bot trust seeding]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[4.3 Per-bot CVE triage cron health]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[4.4 Hermes SOUL.md information disclosure posture]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[4.5 Hermes dashboard TCP forwarder — binding address]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[4.6 Cross-bot session isolation (FINDING BT-H1 — FIXED IN THIS PR)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[§4 — Hermes-Specific Section (NEW — first assessment)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,9 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_start-agentshroud.sh]]
-- 1 edge to [[_COMMUNITY_docker-cleanup.sh]]
+- 1 edge to [[_COMMUNITY_killswitch.sh]]
 
 ## Top bridge nodes
-- [[colima-health-check.sh]] - degree 7, connects to 1 community
-- [[notify (Telegram health alert)]] - degree 4, connects to 1 community
+- [[§4 — Hermes-Specific Section (NEW — first assessment)]] - degree 7, connects to 1 community

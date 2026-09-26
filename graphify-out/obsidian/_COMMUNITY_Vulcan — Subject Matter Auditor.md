@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Purpose_109]] - document - docker/config/openclaw/skills/i-vulcan/README.md
-- [[Related Skills_100]] - document - docker/config/openclaw/skills/i-vulcan/README.md
-- [[Usage_104]] - document - docker/config/openclaw/skills/i-vulcan/README.md
-- [[Vulcan — Subject Matter Auditor_2]] - document - docker/config/openclaw/skills/i-vulcan/README.md
+- [[.test_owner_deny_ambiguous_multiple_pending_shows_usage()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_owner_deny_without_target_auto_selects_single_pending()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Owner deny with one pending request should deny that request.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Owner deny without target, with 2+ pending collaborator         requests, is ge]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +23,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+- 10 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 2 edges to [[_COMMUNITY_test_soc_bots.py]]
 
 ## Top bridge nodes
-- [[Vulcan — Subject Matter Auditor_2]] - degree 4, connects to 1 community
+- [[.test_owner_deny_without_target_auto_selects_single_pending()]] - degree 8, connects to 2 communities
+- [[.test_owner_deny_ambiguous_multiple_pending_shows_usage()]] - degree 7, connects to 2 communities

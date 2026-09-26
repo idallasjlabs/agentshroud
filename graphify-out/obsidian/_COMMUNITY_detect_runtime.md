@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[detect_runtime]] - code - gateway/runtime/__init__.py
+- [[Voice Gateway Python Package Init]] - code - voice_gateway/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

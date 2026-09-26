@@ -1,29 +1,30 @@
 ---
 type: community
-cohesion: 0.14
-members: 14
+cohesion: 0.17
+members: 15
 ---
 
 # browser-extension/package.json
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 14 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[browser-extensionpackage.json]] - code - browser-extension/package.json
-- [[collectCoverageFrom]] - code - browser-extension/package.json
-- [[description_1]] - code - browser-extension/package.json
-- [[devDependencies]] - code - browser-extension/package.json
-- [[jest]] - code - browser-extension/package.json
-- [[jest_1]] - code - browser-extension/package.json
-- [[license]] - code - browser-extension/package.json
-- [[name_1]] - code - browser-extension/package.json
-- [[private]] - code - browser-extension/package.json
-- [[scripts]] - code - browser-extension/package.json
-- [[test]] - code - browser-extension/package.json
-- [[testcoverage]] - code - browser-extension/package.json
-- [[testEnvironment]] - code - browser-extension/package.json
-- [[version_3]] - code - browser-extension/package.json
+- [[HERMES_INIT]] - code - tests/startup_smoke/test_wire_llm_settings.js
+- [[OC_INIT]] - code - tests/startup_smoke/test_wire_llm_settings.js
+- [[REPO]] - code - tests/startup_smoke/test_wire_llm_settings.js
+- [[assert()_1]] - code - tests/startup_smoke/test_wire_llm_settings.js
+- [[fs_6]] - code - tests/startup_smoke/test_wire_llm_settings.js
+- [[os_1]] - code - tests/startup_smoke/test_wire_llm_settings.js
+- [[path_6]] - code - tests/startup_smoke/test_wire_llm_settings.js
+- [[read()]] - code - tests/startup_smoke/test_wire_llm_settings.js
+- [[readHermesMcpServers()]] - code - tests/startup_smoke/test_wire_llm_settings.js
+- [[runHermesInit()]] - code - tests/startup_smoke/test_wire_llm_settings.js
+- [[runOpenClawInit()]] - code - tests/startup_smoke/test_wire_llm_settings.js
+- [[stageDefaults()]] - code - tests/startup_smoke/test_wire_llm_settings.js
+- [[test_wire_llm_settings.js]] - code - tests/startup_smoke/test_wire_llm_settings.js
+- [[writeStub()]] - code - tests/startup_smoke/test_wire_llm_settings.js
+- [[{ spawnSync }_1]] - code - tests/startup_smoke/test_wire_llm_settings.js
 
 ## Live Query (requires Dataview plugin)
 

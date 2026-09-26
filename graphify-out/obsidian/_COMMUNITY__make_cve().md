@@ -1,53 +1,53 @@
 ---
 type: community
-cohesion: 0.12
+cohesion: 0.05
 members: 38
 ---
 
 # _make_cve()
 
-**Cohesion:** 0.12 - loosely connected
+**Cohesion:** 0.05 - loosely connected
 **Members:** 38 nodes
 
 ## Members
-- [[._call()]] - code - gateway/tests/test_generate_cve_page.py
-- [[._call()_1]] - code - gateway/tests/test_generate_cve_page.py
-- [[._run_generate()]] - code - gateway/tests/test_generate_cve_page.py
-- [[.test_all_four_sentinel_pairs_present()]] - code - gateway/tests/test_generate_cve_page.py
-- [[.test_all_mitigated_only_when_no_under_review()]] - code - gateway/tests/test_generate_cve_page.py
-- [[.test_cve_row_contains_id_and_title()]] - code - gateway/tests/test_generate_cve_page.py
-- [[.test_generate_returns_false_when_no_change()]] - code - gateway/tests/test_generate_cve_page.py
-- [[.test_generate_returns_true_when_changed()]] - code - gateway/tests/test_generate_cve_page.py
-- [[.test_hermes_all_mitigated()]] - code - gateway/tests/test_generate_cve_page.py
-- [[.test_hermes_h2_correct()]] - code - gateway/tests/test_generate_cve_page.py
-- [[.test_hermes_markers_and_tbody_id()]] - code - gateway/tests/test_generate_cve_page.py
-- [[.test_legacy_fallback_openclaw_only()]] - code - gateway/tests/test_generate_cve_page.py
-- [[.test_no_stale_hermes_markers()]] - code - gateway/tests/test_generate_cve_page.py
-- [[.test_no_stale_openclaw_markers()]] - code - gateway/tests/test_generate_cve_page.py
-- [[.test_open_status_phrase()]] - code - gateway/tests/test_generate_cve_page.py
-- [[.test_openclaw_all_mitigated()]] - code - gateway/tests/test_generate_cve_page.py
-- [[.test_openclaw_h2_correct()]] - code - gateway/tests/test_generate_cve_page.py
-- [[.test_openclaw_markers_and_tbody_id()]] - code - gateway/tests/test_generate_cve_page.py
-- [[.test_pagination_js_uses_unique_prefix()]] - code - gateway/tests/test_generate_cve_page.py
-- [[.test_partial_status_phrase()]] - code - gateway/tests/test_generate_cve_page.py
-- [[.test_under_review_badge_rendered()]] - code - gateway/tests/test_generate_cve_page.py
-- [[.test_under_review_in_heading_not_all_mitigated()]] - code - gateway/tests/test_generate_cve_page.py
-- [[.test_under_review_none_cvss_renders_dash()]] - code - gateway/tests/test_generate_cve_page.py
-- [[.test_zero_cves()]] - code - gateway/tests/test_generate_cve_page.py
-- [[Path_9]] - code - gateway/tests/test_generate_cve_page.py
-- [[Return the generate-cve-page module (already loaded above).]] - rationale - gateway/tests/test_generate_cve_page.py
-- [[TestBuildHeading]] - code - gateway/tests/test_generate_cve_page.py
-- [[TestBuildTable]] - code - gateway/tests/test_generate_cve_page.py
-- [[TestGenerate]] - code - gateway/tests/test_generate_cve_page.py
-- [[When list_cve_agents is not available, OpenClaw section is still generated.]] - rationale - gateway/tests/test_generate_cve_page.py
-- [[When some advisories are under_review the heading is honest, NOT 'all mitigated']] - rationale - gateway/tests/test_generate_cve_page.py
-- [[Write a fake index.html, invoke generate(), return updated HTML.]] - rationale - gateway/tests/test_generate_cve_page.py
-- [[_build_heading returns correct H2 text and sentinel markers.]] - rationale - gateway/tests/test_generate_cve_page.py
-- [[_build_table returns correct sentinel markers and unique element ids.]] - rationale - gateway/tests/test_generate_cve_page.py
-- [[_get_mod()]] - code - gateway/tests/test_generate_cve_page.py
-- [[_make_cve()]] - code - gateway/tests/test_generate_cve_page.py
-- [[generate() rewrites index.html with correct sections for both agents.]] - rationale - gateway/tests/test_generate_cve_page.py
-- [[test_generate_cve_page.py]] - code - gateway/tests/test_generate_cve_page.py
+- [[Admin (admin)]] - document - docs/security/access-control-matrix.md
+- [[Administrative Roles]] - document - docs/security/access-control-matrix.md
+- [[Agent Management]] - document - docs/security/access-control-matrix.md
+- [[Agent Operational Permissions]] - document - docs/security/access-control-matrix.md
+- [[Agent Trust Levels]] - document - docs/security/access-control-matrix.md
+- [[AgentShroud Access Control Matrix]] - document - docs/security/access-control-matrix.md
+- [[Approval Queue Management]] - document - docs/security/access-control-matrix.md
+- [[Automatic Progression Criteria]] - document - docs/security/access-control-matrix.md
+- [[Category A Safe Operations (All Levels)]] - document - docs/security/access-control-matrix.md
+- [[Category B Standard Operations (L1+)]] - document - docs/security/access-control-matrix.md
+- [[Category C Privileged Operations (L2+)]] - document - docs/security/access-control-matrix.md
+- [[Category D Administrative Operations (L3+)]] - document - docs/security/access-control-matrix.md
+- [[Category E Critical Operations (L4 + Manual Approval)]] - document - docs/security/access-control-matrix.md
+- [[Data Handling Permissions]] - document - docs/security/access-control-matrix.md
+- [[Dynamic Permission Adjustment]] - document - docs/security/access-control-matrix.md
+- [[External Service Access]] - document - docs/security/access-control-matrix.md
+- [[Level 0 → Level 1]] - document - docs/security/access-control-matrix.md
+- [[Level 1 → Level 2]] - document - docs/security/access-control-matrix.md
+- [[Level 2 → Level 3]] - document - docs/security/access-control-matrix.md
+- [[Level 3 → Level 4]] - document - docs/security/access-control-matrix.md
+- [[MCP Proxy Tool Authorization]] - document - docs/security/access-control-matrix.md
+- [[Monitoring and Audit]] - document - docs/security/access-control-matrix.md
+- [[Operator (operator)]] - document - docs/security/access-control-matrix.md
+- [[Overview_12]] - document - docs/security/access-control-matrix.md
+- [[Permission Matrix]] - document - docs/security/access-control-matrix.md
+- [[RBAC Role Definitions]] - document - docs/security/access-control-matrix.md
+- [[Recovery Timeframes]] - document - docs/security/access-control-matrix.md
+- [[Security Violation Penalties]] - document - docs/security/access-control-matrix.md
+- [[System Administration]] - document - docs/security/access-control-matrix.md
+- [[Tool Categories and Trust Requirements]] - document - docs/security/access-control-matrix.md
+- [[Tool and Capability Access]] - document - docs/security/access-control-matrix.md
+- [[Trust Degradation Rules]] - document - docs/security/access-control-matrix.md
+- [[Trust Level 0 (agent_l0)]] - document - docs/security/access-control-matrix.md
+- [[Trust Level 1 (agent_l1)]] - document - docs/security/access-control-matrix.md
+- [[Trust Level 2 (agent_l2)]] - document - docs/security/access-control-matrix.md
+- [[Trust Level 3 (agent_l3)]] - document - docs/security/access-control-matrix.md
+- [[Trust Level Progression Rules]] - document - docs/security/access-control-matrix.md
+- [[Viewer (viewer)]] - document - docs/security/access-control-matrix.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -57,7 +57,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_gateway.security.agent_cve_registry]]
+- 1 edge to [[_COMMUNITY_test_dashboard_endpoints.py]]
 
 ## Top bridge nodes
-- [[test_generate_cve_page.py]] - degree 7, connects to 1 community
+- [[AgentShroud Access Control Matrix]] - degree 7, connects to 1 community

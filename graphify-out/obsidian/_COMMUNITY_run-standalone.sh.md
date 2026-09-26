@@ -1,23 +1,23 @@
 ---
 type: community
-cohesion: 0.43
+cohesion: 0.25
 members: 8
 ---
 
 # run-standalone.sh
 
-**Cohesion:** 0.43 - moderately connected
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[_secret_mount_args()]] - code - docker/bots/hermes/run-standalone.sh
-- [[_wait_for_gateway_healthy()]] - code - docker/bots/hermes/run-standalone.sh
-- [[cmd_down()]] - code - docker/bots/hermes/run-standalone.sh
-- [[cmd_logs()]] - code - docker/bots/hermes/run-standalone.sh
-- [[cmd_status()_1]] - code - docker/bots/hermes/run-standalone.sh
-- [[cmd_up()]] - code - docker/bots/hermes/run-standalone.sh
-- [[run-standalone.sh]] - code - docker/bots/hermes/run-standalone.sh
-- [[run-standalone.sh script]] - code - docker/bots/hermes/run-standalone.sh
+- [[Attack Teardowns How AgentShroud Stops RovoBlast and Cross-Turn Coordination Attacks]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[Honest gap]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[Part 1 — RovoBlast how AgentShroud's pipeline would have stopped it]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[Part 2 — Cross-turn correlation the differentiator, made concrete]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[What actually happened]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[What this document does NOT cover (explicitly out of scope here)]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[Where AgentShroud's pipeline breaks each stage]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[attack-teardowns-rovoblast-cross-turn]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
 
 ## Live Query (requires Dataview plugin)
 

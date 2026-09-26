@@ -10,18 +10,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[Configuration  Environment Variables_28]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
-- [[Function Details_48]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
-- [[HTTPForwarder.forward(path, body, headers, method)]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
-- [[HTTPForwarder.get_stats()]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
-- [[HTTPForwarder.health_check()]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
-- [[HTTPForwarder.set_response_handler(handler)]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
-- [[Key Classes  Functions_51]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
-- [[Purpose_182]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
-- [[Related_55]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
-- [[Responsibilities_52]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
-- [[forwarder.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
-- [[forwarder.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
+- [[AgentShroud Method ✅]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Audit Log Format]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Browser-Fetch Skill for 1Password Share Links]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Future Telegram Integration (When Auto-Discovered)]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Installation Status]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Integration with AgentShroud Workflow]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Overview_9]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Performance]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Quick Reference_5]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Tested Scenarios]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Traditional (Insecure) Method ❌]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Workflow Secure Credential Sharing]] - document - docs/reference/BROWSER_FETCH_SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,3 +29,13 @@ members: 12
 TABLE source_file, type FROM #community/forwarderpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_TestLoadFromText]]
+- 1 edge to [[_COMMUNITY_TestIsFresh]]
+- 1 edge to [[_COMMUNITY_12. OTA Wireless Firmware Updates]]
+- 1 edge to [[_COMMUNITY_TestInputValidation]]
+- 1 edge to [[_COMMUNITY_Key Benefits]]
+
+## Top bridge nodes
+- [[Browser-Fetch Skill for 1Password Share Links]] - degree 14, connects to 5 communities

@@ -1,21 +1,20 @@
 ---
 type: community
 cohesion: 0.40
-members: 6
+members: 5
 ---
 
 # container-runtime.sh
 
 **Cohesion:** 0.40 - moderately connected
-**Members:** 6 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[Container runtime auto-detection contract (SCRUM-92)]] - rationale - docker/README.md
-- [[_cr_plugin_works()]] - code - scripts/lib/container-runtime.sh
-- [[container-runtime.sh]] - code - scripts/lib/container-runtime.sh
-- [[container-runtime.sh script]] - code - scripts/lib/container-runtime.sh
-- [[container_runtime_engine()]] - code - scripts/lib/container-runtime.sh
-- [[detect_container_runtime()]] - code - scripts/lib/container-runtime.sh
+- [[.connect()_1]] - code - gateway/approval_queue/queue.py
+- [[.disconnect()_1]] - code - gateway/approval_queue/queue.py
+- [[Accept a WebSocket connection and add to connected set          Args]] - rationale - gateway/approval_queue/queue.py
+- [[Remove a WebSocket connection from connected set          Args             webs]] - rationale - gateway/approval_queue/queue.py
+- [[WebSocket_1]] - code - gateway/approval_queue/queue.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,3 +22,10 @@ members: 6
 TABLE source_file, type FROM #community/container-runtimesh
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
+
+## Top bridge nodes
+- [[.connect()_1]] - degree 3, connects to 1 community
+- [[.disconnect()_1]] - degree 3, connects to 1 community

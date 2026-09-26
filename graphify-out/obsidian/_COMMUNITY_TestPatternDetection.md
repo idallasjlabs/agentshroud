@@ -1,26 +1,25 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+cohesion: 0.20
+members: 10
 ---
 
 # TestPatternDetection
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[.test_api_key_patterns()_1]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_clean_text_no_patterns()_1]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_credit_card_pattern()_1]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_email_pattern()_1]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_exfil_base64()_1]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_exfil_hex()_1]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_exfil_webhook()_1]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_injection_role()_1]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_injection_system_prompt()_1]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_ssn_pattern()_1]] - code - gateway/tests/test_subagent_governance.py
-- [[TestPatternDetection_1]] - code - gateway/tests/test_subagent_governance.py
+- [[1. Schema Validation]] - document - .agents/skills/i-data/SKILL.md
+- [[2. Partition Coverage]] - document - .agents/skills/i-data/SKILL.md
+- [[3. Data Quality Checks]] - document - .agents/skills/i-data/SKILL.md
+- [[4. Cross-Site Comparison]] - document - .agents/skills/i-data/SKILL.md
+- [[Critical Cost Control]] - document - .agents/skills/i-data/SKILL.md
+- [[Role_12]] - document - .agents/skills/i-data/SKILL.md
+- [[SKILL_18]] - document - .agents/skills/i-data/SKILL.md
+- [[Skill Data Validation (DATA-VAL)]] - document - .agents/skills/i-data/SKILL.md
+- [[Test Data Validation Pattern]] - document - .agents/skills/i-data/SKILL.md
+- [[Validation Layers]] - document - .agents/skills/i-data/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,7 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Enum]]
+- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
 
 ## Top bridge nodes
-- [[TestPatternDetection_1]] - degree 11, connects to 1 community
+- [[Skill Data Validation (DATA-VAL)]] - degree 6, connects to 1 community

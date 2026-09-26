@@ -1,44 +1,45 @@
 ---
 type: community
-cohesion: 0.07
-members: 29
+cohesion: 0.12
+members: 30
 ---
 
 # WS-E Security Audit — AgentShroud v1.2 (Gateway 
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 29 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 30 nodes
 
 ## Members
-- [[Dead-code  unwired security modules surfaced (No-Security-Theater flags)]] - document - docs/security/ws-e-audit-v1.2.md
-- [[Executive Summary_5]] - document - docs/security/ws-e-audit-v1.2.md
-- [[IEC 62443 risk justification for ACCEPTED items]] - document - docs/security/ws-e-audit-v1.2.md
-- [[MFA note]] - document - docs/security/ws-e-audit-v1.2.md
-- [[Part 1 — Blue-Team Posture Review (SCRUM-72)]] - document - docs/security/ws-e-audit-v1.2.md
-- [[Part 2 — Red-Team Attack Run (SCRUM-73)]] - document - docs/security/ws-e-audit-v1.2.md
-- [[Part 3 — Fix-or-Accept Closure (SCRUM-74)]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-1 · Prompt injection — PARTIALLY BLOCKED]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-10 · Subagent  delegation privilege escalation — BLOCKED]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-11 · MCP-server compromise — BLOCKED-if-configured  dormant-by-default]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-12 · Skill supply-chain — PARTIALLY BLOCKED]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-2 · Inbound encoding bypass — EXPLOITABLE]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-2 — Inbound Encoding Bypass (FIX-RECOMMENDED)]] - rationale - docs/security/ws-e-audit-v1.2.md
-- [[RT-3 · Cross-collaborator data access — BLOCKED (isolation)  gated by RT-6]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-4 · Cross-group access — data BLOCKED  group tool-ACL UNWIRED]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-5 · Shared-memory write poisoning — EXPLOITABLE]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-5 — Shared-Memory Write Poisoning (FIX-RECOMMENDED)]] - rationale - docs/security/ws-e-audit-v1.2.md
-- [[RT-6 · Owner-identity spoofing via `forward` body — EXPLOITABLE → FIXED]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-6 — Owner-Identity Spoofing via forward body (FIXED)]] - rationale - docs/security/ws-e-audit-v1.2.md
-- [[RT-7 · Egress exfiltration — BLOCKED in practice  pipeline hook is dead code + residual bypass]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-8 · Multi-bot lateral movement (trust ledger) — EXPLOITABLE (inert)]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-9 · Approval-queue bypass — PARTIALLY EXPLOITABLE]] - document - docs/security/ws-e-audit-v1.2.md
-- [[RT-9b · Approval privilege-separation — EXPLOITABLE]] - document - docs/security/ws-e-audit-v1.2.md
-- [[Risk Callouts]] - document - docs/security/ws-e-audit-v1.2.md
-- [[Verification Steps]] - document - docs/security/ws-e-audit-v1.2.md
-- [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - document - docs/security/ws-e-audit-v1.2.md
-- [[gatewayproxypipeline.py (inboundoutbound guard chain)]] - code - gateway/proxy/pipeline.py
-- [[rbac.py (5-level RBAC hierarchy)]] - code - gateway/security/rbac.py
-- [[ws-e-audit-v1.2]] - document - docs/security/ws-e-audit-v1.2.md
+- [[._hits()]] - code - gateway/tests/test_prompt_guard.py
+- [[.pg()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_ascii_art_injection()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_authority_escalation()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_benign_encoding_discussion()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_benign_llama_reference()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_completion_attack()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_constitutional_bypass()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_continuation_prefix()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_encoding_chain()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_json_yaml_injection()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_llama_tokens_chatml()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_llama_tokens_sys()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_multi_model_confusion()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_multilingual_japanese()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_multilingual_korean()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_multilingual_portuguese()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_nested_injection()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_operator_permission_claim()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_pattern_count()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_payload_splitting()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_persona_chaining()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_reward_hacking()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_safety_exception_claim()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_tool_call_injection()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_tool_result_injection_ref()]] - code - gateway/tests/test_prompt_guard.py
+- [[.test_whitespace_obfuscation()]] - code - gateway/tests/test_prompt_guard.py
+- [[Regression guard — fail if patterns drop below 43.]] - rationale - gateway/tests/test_prompt_guard.py
+- [[TestNewPatternsV080]] - code - gateway/tests/test_prompt_guard.py
+- [[Unit tests for the 20 patterns added in v0.8.0 (total 43).]] - rationale - gateway/tests/test_prompt_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -48,9 +49,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_system-requirements]]
-- 2 edges to [[_COMMUNITY_forward.py]]
+- 4 edges to [[_COMMUNITY_ServiceManager]]
+- 1 edge to [[_COMMUNITY_RBACConfig]]
 
 ## Top bridge nodes
-- [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - degree 18, connects to 2 communities
-- [[RT-6 — Owner-Identity Spoofing via forward body (FIXED)]] - degree 2, connects to 1 community
+- [[TestNewPatternsV080]] - degree 32, connects to 2 communities
+- [[.pg()]] - degree 2, connects to 1 community

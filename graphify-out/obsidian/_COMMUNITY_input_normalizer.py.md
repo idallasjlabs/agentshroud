@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.13
+cohesion: 0.18
 members: 15
 ---
 
 # input_normalizer.py
 
-**Cohesion:** 0.13 - loosely connected
+**Cohesion:** 0.18 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[Environment Variables_13]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Function Details_33]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Invisible Characters Stripped]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Key Classes  Functions_35]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Mode Enforce vs Monitor_10]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Purpose_162]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Related_39]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Responsibilities_36]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Threat Model_23]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Usage Context]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[detect_base64_payloads(text)]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[input_normalizer.py_2]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[input_normalizer.py_1]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[normalize_input(text)]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[strip_markdown_exfil(text)]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[.test_event_without_user_ignored()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_message_event_records_activity()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_message_preview_truncated_to_80_chars()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_no_tracker_does_not_raise()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_non_message_event_ignored()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_tracker_error_does_not_propagate()]] - code - gateway/tests/test_slack_proxy.py
+- [[SlackAPIProxy_1]] - code - gateway/tests/test_slack_proxy.py
+- [[TestHandleEvent]] - code - gateway/tests/test_slack_proxy.py
+- [[Tests for SlackAPIProxy.handle_event() — inbound Socket Mode event processing.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[handle_event ignores message events with no user field.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[handle_event ignores non-message event types.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[handle_event is a no-op and does not raise when tracker is None.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[handle_event records inbound activity for message events.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[handle_event swallows tracker exceptions (non-fatal).]] - rationale - gateway/tests/test_slack_proxy.py
+- [[handle_event truncates message_preview to 80 characters.]] - rationale - gateway/tests/test_slack_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,3 +32,12 @@ members: 15
 TABLE source_file, type FROM #community/input_normalizerpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_OutboundInfoFilter]]
+- 2 edges to [[_COMMUNITY_GitHub Copilot CLI Setup Guide]]
+- 2 edges to [[_COMMUNITY_test_agent_cve_registry.py]]
+
+## Top bridge nodes
+- [[TestHandleEvent]] - degree 10, connects to 3 communities
+- [[SlackAPIProxy_1]] - degree 9, connects to 3 communities

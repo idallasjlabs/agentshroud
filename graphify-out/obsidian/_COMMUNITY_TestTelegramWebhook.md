@@ -1,29 +1,29 @@
 ---
 type: community
-cohesion: 0.14
+cohesion: 0.30
 members: 14
 ---
 
 # TestTelegramWebhook
 
-**Cohesion:** 0.14 - loosely connected
+**Cohesion:** 0.30 - loosely connected
 **Members:** 14 nodes
 
 ## Members
-- [[.test_empty_payload_returns_200()]] - code - gateway/tests/test_channel_ownership.py
-- [[.test_non_json_body_returns_200()]] - code - gateway/tests/test_channel_ownership.py
-- [[.test_passthrough_status_without_pipeline()]] - code - gateway/tests/test_channel_ownership.py
-- [[.test_requires_auth()_1]] - code - gateway/tests/test_channel_ownership.py
-- [[.test_requires_auth()_2]] - code - gateway/tests/test_channel_ownership.py
-- [[.test_response_has_status_field()]] - code - gateway/tests/test_channel_ownership.py
-- [[.test_valid_payload_returns_200()]] - code - gateway/tests/test_channel_ownership.py
-- [[Empty payload is handled gracefully (skipped, not error).]] - rationale - gateway/tests/test_channel_ownership.py
-- [[Endpoint returns 401 without auth override.]] - rationale - gateway/tests/test_channel_ownership.py
-- [[Malformed body is handled defensively (empty dict fallback).]] - rationale - gateway/tests/test_channel_ownership.py
-- [[Response always includes a 'status' field.]] - rationale - gateway/tests/test_channel_ownership.py
-- [[Standard Telegram message payload is accepted.]] - rationale - gateway/tests/test_channel_ownership.py
-- [[TestTelegramWebhook]] - code - gateway/tests/test_channel_ownership.py
-- [[Without a pipeline configured, status is passthrough (not error).]] - rationale - gateway/tests/test_channel_ownership.py
+- [[._patch_urllib()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_raises_on_network_error()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_returns_empty_when_all_known()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_returns_new_advisory_not_in_registry()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_skips_advisory_whose_cve_is_already_tracked()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_skips_advisory_without_ghsa_id()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_skips_ghsa_already_in_registry()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_uses_github_token_in_header()]] - code - gateway/tests/test_daily_cve_report.py
+- [[Build a minimal GitHub Security Advisory payload keyed on GHSA id.      ``ghsa_i]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[Fetch one agent's GitHub Security Advisories and return advisories we don't trac]] - rationale - gateway/security/daily_cve_report.py
+- [[Stub urllib.request.urlopen to return a list of advisories.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[TestCheckUpstreamCves]] - code - gateway/tests/test_daily_cve_report.py
+- [[_make_github_advisory()]] - code - gateway/tests/test_daily_cve_report.py
+- [[check_upstream_cves()]] - code - gateway/security/daily_cve_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,9 +33,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_forward.py]]
-- 1 edge to [[_COMMUNITY_TestEmailSend]]
+- 6 edges to [[_COMMUNITY_PrivacyPolicyEnforcer]]
+- 1 edge to [[_COMMUNITY_mcp_oauth_preflight.py]]
+- 1 edge to [[_COMMUNITY_MCPServerConfig]]
 
 ## Top bridge nodes
-- [[TestTelegramWebhook]] - degree 7, connects to 1 community
-- [[.test_requires_auth()_1]] - degree 2, connects to 1 community
+- [[check_upstream_cves()]] - degree 14, connects to 3 communities
+- [[TestCheckUpstreamCves]] - degree 9, connects to 1 community
+- [[_make_github_advisory()]] - degree 6, connects to 1 community

@@ -1,25 +1,25 @@
 ---
 type: community
-cohesion: 0.20
+cohesion: 0.27
 members: 10
 ---
 
 # browser-fetch/package.json
 
-**Cohesion:** 0.20 - loosely connected
+**Cohesion:** 0.27 - loosely connected
 **Members:** 10 nodes
 
 ## Members
-- [[author_2]] - code - skills/custom/browser-fetch/package.json
-- [[browser-fetchpackage.json]] - code - skills/custom/browser-fetch/package.json
-- [[description_4]] - code - skills/custom/browser-fetch/package.json
-- [[keywords_2]] - code - skills/custom/browser-fetch/package.json
-- [[license_2]] - code - skills/custom/browser-fetch/package.json
-- [[main_1]] - code - skills/custom/browser-fetch/package.json
-- [[name_4]] - code - skills/custom/browser-fetch/package.json
-- [[scripts_2]] - code - skills/custom/browser-fetch/package.json
-- [[test_2]] - code - skills/custom/browser-fetch/package.json
-- [[version_6]] - code - skills/custom/browser-fetch/package.json
+- [[CONFIG_2]] - code - docker/config/openclaw/skills/i-icloud/scripts/calendar.js
+- [[args_2]] - code - docker/config/openclaw/skills/i-icloud/scripts/calendar.js
+- [[calendar.js_2]] - code - docker/config/openclaw/skills/i-icloud/scripts/calendar.js
+- [[createEvent()_2]] - code - docker/config/openclaw/skills/i-icloud/scripts/calendar.js
+- [[getCredentials()_2]] - code - docker/config/openclaw/skills/i-icloud/scripts/calendar.js
+- [[https_3]] - code - docker/config/openclaw/skills/i-icloud/scripts/calendar.js
+- [[listEvents()_2]] - code - docker/config/openclaw/skills/i-icloud/scripts/calendar.js
+- [[makeRequest()_2]] - code - docker/config/openclaw/skills/i-icloud/scripts/calendar.js
+- [[parseCalendarData()_2]] - code - docker/config/openclaw/skills/i-icloud/scripts/calendar.js
+- [[{ execSync }_2]] - code - docker/config/openclaw/skills/i-icloud/scripts/calendar.js
 
 ## Live Query (requires Dataview plugin)
 

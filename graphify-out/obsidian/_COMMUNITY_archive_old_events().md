@@ -1,39 +1,39 @@
 ---
 type: community
-cohesion: 0.17
+cohesion: 0.09
 members: 24
 ---
 
 # archive_old_events()
 
-**Cohesion:** 0.17 - loosely connected
+**Cohesion:** 0.09 - loosely connected
 **Members:** 24 nodes
 
 ## Members
-- [[.test_archived_rows_preserved_verbatim()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_archives_only_events_older_than_cutoff()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_live_forward_chain_still_valid_after_archival()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_missing_db_is_reported_not_raised()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_no_events_to_archive_is_a_noop()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_no_vacuum_flag_skips_vacuum()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_running_twice_is_idempotent()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_vacuum_failure_does_not_discard_a_successful_archive()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_vacuum_reduces_file_size_after_bulk_delete()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_waits_out_a_concurrent_writer_lock_instead_of_failing()]] - code - gateway/tests/test_audit_archive.py
-- [[A full disk (or any VACUUM-specific OperationalError) must not         raise pas]] - rationale - gateway/tests/test_audit_archive.py
-- [[Build n chained events, oldest first, spaced spacing_days apart ending at `start]] - rationale - gateway/tests/test_audit_archive.py
-- [[Move audit_events older than cutoff_days into archive_path, then delete + VACUUM]] - rationale - gateway/security/audit_archive.py
-- [[Path_26]] - code - gateway/security/audit_archive.py
-- [[TestArchiveOldEvents]] - code - gateway/tests/test_audit_archive.py
-- [[The remaining live rows' own internal chain (row N's prev_hash ==         row N-]] - rationale - gateway/tests/test_audit_archive.py
-- [[_chain_events()]] - code - gateway/tests/test_audit_archive.py
-- [[_cli()]] - code - gateway/security/audit_archive.py
-- [[_make_live_db()]] - code - gateway/tests/test_audit_archive.py
-- [[archive_old_events()]] - code - gateway/security/audit_archive.py
-- [[audit.db uses SQLite's default DELETE journal mode, which requires         an ex]] - rationale - gateway/tests/test_audit_archive.py
-- [[audit_archive.py]] - code - gateway/security/audit_archive.py
-- [[datetime_4]] - code - gateway/security/audit_archive.py
-- [[events list of (event_id, timestamp, prev_hash, entry_hash).]] - rationale - gateway/tests/test_audit_archive.py
+- [[AgentShroud Minimal Docker Compose]] - document - examples/docker-compose.minimal.yml
+- [[AgentShroud Production Docker Compose]] - document - examples/docker-compose.production.yml
+- [[Container Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
+- [[Container Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
+- [[Container Won't Stop (Stuck in Stopping)]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
+- [[Crash Recovery_1]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Database Files]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[Exit Code Reference]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
+- [[Health Checks_1]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Kill Switch Procedure]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[OOM Kill (Exit Code 137)]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
+- [[Port Already in Use_2]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
+- [[Purpose_184]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[Read-Only Filesystem Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
+- [[Related Notes_39]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[Related Notes_56]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
+- [[Troubleshooting Matrix]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[WAL Mode]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[Where Used]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[`no-new-privileges` Security Denial]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
+- [[aiosqlite_1]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[aiosqlite]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[docker-commands]] - document - examples/docker-commands.md
+- [[store.py]] - code - gateway/approval_queue/store.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,12 +43,24 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_purge_low_value_events()]]
-- 1 edge to [[_COMMUNITY_AuditStore]]
+- 3 edges to [[_COMMUNITY_is_overloaded()]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 2 edges to [[_COMMUNITY_test_playback_state.c]]
+- 1 edge to [[_COMMUNITY_SSHProxy]]
+- 1 edge to [[_COMMUNITY_TestAuth]]
+- 1 edge to [[_COMMUNITY_EgressPolicy]]
+- 1 edge to [[_COMMUNITY_load_config()]]
+- 1 edge to [[_COMMUNITY_chatbotmain.py]]
+- 1 edge to [[_COMMUNITY_test_clamav_pipeline.py]]
+- 1 edge to [[_COMMUNITY_TestFileSandbox]]
+- 1 edge to [[_COMMUNITY_02-infrastructure]]
+- 1 edge to [[_COMMUNITY_Oracle — Feedback Analyst]]
+- 1 edge to [[_COMMUNITY_Claude Code skill catalog (59 skills)]]
+- 1 edge to [[_COMMUNITY_Red Team Assessment v1.2.0]]
 
 ## Top bridge nodes
-- [[archive_old_events()]] - degree 17, connects to 2 communities
-- [[TestArchiveOldEvents]] - degree 11, connects to 1 community
-- [[_chain_events()]] - degree 10, connects to 1 community
-- [[_make_live_db()]] - degree 10, connects to 1 community
-- [[audit_archive.py]] - degree 4, connects to 1 community
+- [[Troubleshooting Matrix]] - degree 8, connects to 4 communities
+- [[store.py]] - degree 7, connects to 3 communities
+- [[aiosqlite]] - degree 5, connects to 3 communities
+- [[Crash Recovery_1]] - degree 6, connects to 2 communities
+- [[Container Errors]] - degree 4, connects to 2 communities

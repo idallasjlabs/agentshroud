@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[i-scrum SKILL]] - document - docker/config/hermes/skills/i-scrum/SKILL.md
+- [[Diagram 20 Observability Map]] - image - docs/diagrams/images/diagram-20-observability-map.svg
 
 ## Live Query (requires Dataview plugin)
 

@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[bspesp-bsp.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/bsp/esp-bsp.h
-- [[iot_button.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
+- [[.test_collaborator_internal_tool_output_suppressed_notice_is_normalized_form()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form payload internal tool-output suppression string should normalize.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +19,11 @@ members: 2
 TABLE source_file, type FROM #community/bsp/esp-bsph_stub_playback_state_test
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY__make_proxy()]]
+
+## Top bridge nodes
+- [[.test_collaborator_internal_tool_output_suppressed_notice_is_normalized_form()]] - degree 4, connects to 3 communities

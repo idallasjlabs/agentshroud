@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ota.h]] - code - firmware/voice-terminal/main/ota.h
+- [[test_anthropic_openai_translator.py — AnthropicOpenAI translator tests]] - code - gateway/tests/test_anthropic_openai_translator.py
 
 ## Live Query (requires Dataview plugin)
 

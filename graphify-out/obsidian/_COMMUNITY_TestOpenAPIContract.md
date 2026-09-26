@@ -10,23 +10,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[.client()_5]] - code - gateway/tests/test_api_contract.py
-- [[.test_health_endpoint_unauthenticated()]] - code - gateway/tests/test_api_contract.py
-- [[.test_no_500_on_empty_requests()]] - code - gateway/tests/test_api_contract.py
-- [[.test_openapi_schema_is_valid()]] - code - gateway/tests/test_api_contract.py
-- [[.test_openapi_snapshot_matches_live_schema()]] - code - gateway/tests/test_api_contract.py
-- [[.test_protected_endpoints_reject_unauthenticated()]] - code - gateway/tests/test_api_contract.py
-- [[.test_version_consistency()]] - code - gateway/tests/test_api_contract.py
-- [[API endpoints should not return 500 on malformedempty requests.]] - rationale - gateway/tests/test_api_contract.py
-- [[API version in OpenAPI schema matches gateway package version.]] - rationale - gateway/tests/test_api_contract.py
-- [[Create a FastAPI test client.]] - rationale - gateway/tests/test_api_contract.py
-- [[Healthstatus endpoint must be accessible without authentication.]] - rationale - gateway/tests/test_api_contract.py
-- [[OpenAPI schema and version consistency tests.]] - rationale - gateway/tests/test_api_contract.py
-- [[OpenAPI schema endpoint returns valid JSON schema.]] - rationale - gateway/tests/test_api_contract.py
-- [[Protected API endpoints must reject requests without auth tokens.]] - rationale - gateway/tests/test_api_contract.py
-- [[TestOpenAPIContract]] - code - gateway/tests/test_api_contract.py
-- [[The committed gatewayopenapi.json snapshot must match the live schema.]] - rationale - gateway/tests/test_api_contract.py
-- [[test_api_contract.py]] - code - gateway/tests/test_api_contract.py
+- [[06-outbound-info-filter]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Constraints_9]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Evidence_6]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Implement gateway-level outbound information filtering module]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Problem_9]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Relationship to chunk 00-information-disclosure]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Remediation_7]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Root Cause_7]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Severity_9]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Step 1 Create the Outbound Information Filter module]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Step 2 Define deny-list patterns]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Step 3 Implement the filter engine]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Step 4 Configure per-trust-level disclosure rules]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Step 5 Add response classification for high-density matches]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Step 6 Integrate with the PII Sanitizer pipeline]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Step 7 Add the module to gateway configuration]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Verification_8]] - document - docs/planning/redteam/06-outbound-info-filter.md
 
 ## Live Query (requires Dataview plugin)
 

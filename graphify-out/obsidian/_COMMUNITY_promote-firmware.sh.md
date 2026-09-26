@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # promote-firmware.sh
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[OTA Promotion Gate Rationale (2026-07-27 incident)]] - rationale - scripts/promote-firmware.sh
-- [[promote-firmware.sh]] - code - scripts/promote-firmware.sh
-- [[promote-firmware.sh script]] - code - scripts/promote-firmware.sh
+- [[Release Workflow]] - code - .github/workflows/release.yml
+- [[TagVersion Sync Verification]] - rationale - .github/workflows/release.yml
 
 ## Live Query (requires Dataview plugin)
 

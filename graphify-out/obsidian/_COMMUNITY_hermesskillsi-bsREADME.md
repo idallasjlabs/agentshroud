@@ -1,100 +1,107 @@
 ---
 type: community
-cohesion: 0.02
-members: 85
+cohesion: 0.06
+members: 92
 ---
 
 # hermes/skills/i-bs/README.md
 
-**Cohesion:** 0.02 - loosely connected
-**Members:** 85 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 92 nodes
 
 ## Members
-- [[8D Root Cause Analysis_1]] - document - docker/config/hermes/skills/i-eightd/README.md
-- [[AWS Cloud Management & FinOps_1]] - document - docker/config/hermes/skills/i-aws/README.md
-- [[Apollo — Audio Systems Producer_1]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[Athena — Knowledge Distiller_1]] - document - docker/config/hermes/skills/i-athena/README.md
-- [[Atlas — Curriculum Architect_1]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Blue Team Security Auditor (SEC-DEFENSE)_1]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[Branding Specialist (BS)_1]] - document - docker/config/hermes/skills/i-bs/README.md
-- [[Data Validation (DATA-VAL)_1]] - document - docker/config/hermes/skills/i-data/README.md
-- [[GSDE&G Development Master Checklist (MC)]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[Git Workflow Guardian (GIT-GUARD)_1]] - document - docker/config/hermes/skills/i-gg/README.md
-- [[Hermes — Podcast Production Orchestrator_1]] - document - docker/config/hermes/skills/i-hermes/README.md
-- [[MCP Doctor (MCPM-DOCTOR)_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
-- [[MCP Tools Usage (MCPM)_1]] - document - docker/config/hermes/skills/i-mcpm/README.md
-- [[Pull Request Generator (PR)_1]] - document - docker/config/hermes/skills/i-pr/README.md
-- [[Purpose_36]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[Purpose_37]] - document - docker/config/hermes/skills/i-athena/README.md
-- [[Purpose_38]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Purpose_39]] - document - docker/config/hermes/skills/i-aws/README.md
-- [[Purpose_41]] - document - docker/config/hermes/skills/i-bs/README.md
-- [[Purpose_45]] - document - docker/config/hermes/skills/i-data/README.md
-- [[Purpose_46]] - document - docker/config/hermes/skills/i-eightd/README.md
-- [[Purpose_47]] - document - docker/config/hermes/skills/i-gg/README.md
-- [[Purpose_48]] - document - docker/config/hermes/skills/i-hermes/README.md
-- [[Purpose_50]] - document - docker/config/hermes/skills/i-mac/README.md
-- [[Purpose_51]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[Purpose_54]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
-- [[Purpose_55]] - document - docker/config/hermes/skills/i-mcpm/README.md
-- [[Purpose_59]] - document - docker/config/hermes/skills/i-pr/README.md
-- [[Purpose_63]] - document - docker/config/hermes/skills/i-sad/README.md
-- [[Purpose_64]] - document - docker/config/hermes/skills/i-sav/README.md
-- [[Purpose_65]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[Purpose_66]] - document - docker/config/hermes/skills/i-sec-offense/README.md
-- [[Purpose_67]] - document - docker/config/hermes/skills/i-sec/README.md
-- [[Purpose_71]] - document - docker/config/hermes/skills/i-tw/README.md
-- [[Purpose_72]] - document - docker/config/hermes/skills/i-vulcan/README.md
-- [[Red Team Adversarial Tester (SEC-OFFENSE)_1]] - document - docker/config/hermes/skills/i-sec-offense/README.md
-- [[Related Skills_27]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[Related Skills_28]] - document - docker/config/hermes/skills/i-athena/README.md
-- [[Related Skills_29]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Related Skills_30]] - document - docker/config/hermes/skills/i-aws/README.md
-- [[Related Skills_32]] - document - docker/config/hermes/skills/i-bs/README.md
-- [[Related Skills_36]] - document - docker/config/hermes/skills/i-data/README.md
-- [[Related Skills_37]] - document - docker/config/hermes/skills/i-eightd/README.md
-- [[Related Skills_38]] - document - docker/config/hermes/skills/i-gg/README.md
-- [[Related Skills_39]] - document - docker/config/hermes/skills/i-hermes/README.md
-- [[Related Skills_41]] - document - docker/config/hermes/skills/i-mac/README.md
-- [[Related Skills_42]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[Related Skills_45]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
-- [[Related Skills_46]] - document - docker/config/hermes/skills/i-mcpm/README.md
-- [[Related Skills_50]] - document - docker/config/hermes/skills/i-pr/README.md
-- [[Related Skills_54]] - document - docker/config/hermes/skills/i-sad/README.md
-- [[Related Skills_55]] - document - docker/config/hermes/skills/i-sav/README.md
-- [[Related Skills_56]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[Related Skills_57]] - document - docker/config/hermes/skills/i-sec-offense/README.md
-- [[Related Skills_58]] - document - docker/config/hermes/skills/i-sec/README.md
-- [[Related Skills_62]] - document - docker/config/hermes/skills/i-tw/README.md
-- [[Related Skills_63]] - document - docker/config/hermes/skills/i-vulcan/README.md
-- [[Security Review (SEC)_1]] - document - docker/config/hermes/skills/i-sec/README.md
-- [[System Audit Documentation_1]] - document - docker/config/hermes/skills/i-sad/README.md
-- [[System Audit Vault_1]] - document - docker/config/hermes/skills/i-sav/README.md
-- [[Technical Writer (TW)_1]] - document - docker/config/hermes/skills/i-tw/README.md
-- [[Usage_31]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[Usage_32]] - document - docker/config/hermes/skills/i-athena/README.md
-- [[Usage_33]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Usage_34]] - document - docker/config/hermes/skills/i-aws/README.md
-- [[Usage_36]] - document - docker/config/hermes/skills/i-bs/README.md
-- [[Usage_40]] - document - docker/config/hermes/skills/i-data/README.md
-- [[Usage_41]] - document - docker/config/hermes/skills/i-eightd/README.md
-- [[Usage_42]] - document - docker/config/hermes/skills/i-gg/README.md
-- [[Usage_43]] - document - docker/config/hermes/skills/i-hermes/README.md
-- [[Usage_45]] - document - docker/config/hermes/skills/i-mac/README.md
-- [[Usage_46]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[Usage_49]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
-- [[Usage_50]] - document - docker/config/hermes/skills/i-mcpm/README.md
-- [[Usage_54]] - document - docker/config/hermes/skills/i-pr/README.md
-- [[Usage_58]] - document - docker/config/hermes/skills/i-sad/README.md
-- [[Usage_59]] - document - docker/config/hermes/skills/i-sav/README.md
-- [[Usage_60]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[Usage_61]] - document - docker/config/hermes/skills/i-sec-offense/README.md
-- [[Usage_62]] - document - docker/config/hermes/skills/i-sec/README.md
-- [[Usage_66]] - document - docker/config/hermes/skills/i-tw/README.md
-- [[Usage_67]] - document - docker/config/hermes/skills/i-vulcan/README.md
-- [[Vulcan — Subject Matter Auditor_1]] - document - docker/config/hermes/skills/i-vulcan/README.md
-- [[hermesskillsi-bsREADME]] - document - docker/config/hermes/skills/i-bs/README.md
-- [[macOS System Administrator (MAC)_1]] - document - docker/config/hermes/skills/i-mac/README.md
+- [[.__init__()_49]] - code - gateway/security/a2a_governance.py
+- [[._check_message_size()]] - code - gateway/security/a2a_governance.py
+- [[._check_peer()]] - code - gateway/security/a2a_governance.py
+- [[._check_rate_limit()]] - code - gateway/security/a2a_governance.py
+- [[._check_task_concurrency()]] - code - gateway/security/a2a_governance.py
+- [[._finalize()]] - code - gateway/security/a2a_governance.py
+- [[._process()]] - code - gateway/security/a2a_governance.py
+- [[._sanitize_message()]] - code - gateway/security/a2a_governance.py
+- [[.complete_task()]] - code - gateway/security/a2a_governance.py
+- [[.fingerprint()]] - code - gateway/security/a2a_governance.py
+- [[.get_events()_1]] - code - gateway/security/a2a_governance.py
+- [[.get_peer()]] - code - gateway/security/a2a_governance.py
+- [[.get_summary()]] - code - gateway/security/a2a_governance.py
+- [[.is_trusted()]] - code - gateway/security/a2a_governance.py
+- [[.process_inbound()_1]] - code - gateway/security/a2a_governance.py
+- [[.process_outbound()_1]] - code - gateway/security/a2a_governance.py
+- [[.register_peer()]] - code - gateway/security/a2a_governance.py
+- [[.test_api_key_sanitized()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_clean_payload_not_sanitized()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_complete_task_frees_slot()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_disabled_allows_all()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_fingerprint_deterministic()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_fingerprint_differs_for_different_payloads()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_get_events_filtered()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_normal_size_allowed()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_outbound_to_trusted_peer()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_outbound_to_unknown_quarantined()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_oversized_denied()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_peer_stats_updated()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_rate_limit_exceeded()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_register_peer()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_ssn_sanitized()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_summary()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_task_limit_exceeded()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_task_within_limit()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_trust_clamped()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_trusted_peer_allowed()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_unknown_peer_quarantined()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_unregister_peer()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_untrusted_peer_allowed_in_monitor()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_untrusted_peer_denied()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_update_trust()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_within_rate_limit()]] - code - gateway/tests/test_a2a_governance.py
+- [[.to_dict()_3]] - code - gateway/security/a2a_governance.py
+- [[.unregister_peer()]] - code - gateway/security/a2a_governance.py
+- [[.update_peer_trust()]] - code - gateway/security/a2a_governance.py
+- [[A2A protocol message types (based on A2A v1.0 spec).]] - rationale - gateway/security/a2a_governance.py
+- [[A2ADecision]] - code - gateway/security/a2a_governance.py
+- [[A2AGovernanceConfig]] - code - gateway/security/a2a_governance.py
+- [[A2AGovernanceEvent]] - code - gateway/security/a2a_governance.py
+- [[A2AGovernanceProxy]] - code - gateway/security/a2a_governance.py
+- [[A2AMessage]] - code - gateway/security/a2a_governance.py
+- [[A2AMessageType]] - code - gateway/security/a2a_governance.py
+- [[A2APeer]] - code - gateway/security/a2a_governance.py
+- [[An A2A protocol message passing through the governance proxy.]] - rationale - gateway/security/a2a_governance.py
+- [[Apply final decision and log governance event.]] - rationale - gateway/security/a2a_governance.py
+- [[Audit event for A2A governance decisions.]] - rationale - gateway/security/a2a_governance.py
+- [[Check concurrent task limit for task_request messages.]] - rationale - gateway/security/a2a_governance.py
+- [[Check message payload size.]] - rationale - gateway/security/a2a_governance.py
+- [[Check per-peer rate limit.]] - rationale - gateway/security/a2a_governance.py
+- [[Configuration for the A2A governance proxy.]] - rationale - gateway/security/a2a_governance.py
+- [[Content hash for deduplication and audit.]] - rationale - gateway/security/a2a_governance.py
+- [[Core message processing pipeline.]] - rationale - gateway/security/a2a_governance.py
+- [[Get governance proxy summary.]] - rationale - gateway/security/a2a_governance.py
+- [[Governance decision for an A2A message.]] - rationale - gateway/security/a2a_governance.py
+- [[Governance proxy for Agent-to-Agent communication.      Sits between local agent]] - rationale - gateway/security/a2a_governance.py
+- [[Look up a registered peer.]] - rationale - gateway/security/a2a_governance.py
+- [[Mark a delegated task as complete (decrements active task counter).]] - rationale - gateway/security/a2a_governance.py
+- [[Register a known A2A peer agent.]] - rationale - gateway/security/a2a_governance.py
+- [[Registered A2A peer agent.]] - rationale - gateway/security/a2a_governance.py
+- [[Remove a peer from the registry.]] - rationale - gateway/security/a2a_governance.py
+- [[Sanitize PII from A2A message payload. Returns list of sanitizations applied.]] - rationale - gateway/security/a2a_governance.py
+- [[TestDisabledProxy]] - code - gateway/tests/test_a2a_governance.py
+- [[TestInboundProcessing]] - code - gateway/tests/test_a2a_governance.py
+- [[TestMessageFingerprint]] - code - gateway/tests/test_a2a_governance.py
+- [[TestMessageSize]] - code - gateway/tests/test_a2a_governance.py
+- [[TestOutboundProcessing]] - code - gateway/tests/test_a2a_governance.py
+- [[TestPIISanitization]] - code - gateway/tests/test_a2a_governance.py
+- [[TestPeerManagement]] - code - gateway/tests/test_a2a_governance.py
+- [[TestRateLimiting]] - code - gateway/tests/test_a2a_governance.py
+- [[TestReporting]] - code - gateway/tests/test_a2a_governance.py
+- [[TestTaskConcurrency]] - code - gateway/tests/test_a2a_governance.py
+- [[Update a peer's trust score (called by TrustManager integration).]] - rationale - gateway/security/a2a_governance.py
+- [[Validate and govern an inbound A2A message from a remote peer.]] - rationale - gateway/security/a2a_governance.py
+- [[Validate that the peer is registered and trusted.]] - rationale - gateway/security/a2a_governance.py
+- [[_msg()]] - code - gateway/tests/test_a2a_governance.py
+- [[a2a_governance.py]] - code - gateway/security/a2a_governance.py
+- [[monitor_proxy()]] - code - gateway/tests/test_a2a_governance.py
+- [[proxy()]] - code - gateway/tests/test_a2a_governance.py
+- [[test_a2a_governance.py]] - code - gateway/tests/test_a2a_governance.py
+- [[trusted_peer()]] - code - gateway/tests/test_a2a_governance.py
+- [[untrusted_peer()]] - code - gateway/tests/test_a2a_governance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -104,12 +111,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
-- 1 edge to [[_COMMUNITY_Test-Driven Development README]]
-- 1 edge to [[_COMMUNITY_Technical Illustrator (i-ti)]]
-- 1 edge to [[_COMMUNITY_CICD Pipeline Advisor (README)]]
-- 1 edge to [[_COMMUNITY_AgentShroud Blue Team Security Auditor]]
-- 1 edge to [[_COMMUNITY_AgentShroud Red Team Adversarial Tester]]
+- 5 edges to [[_COMMUNITY_EncryptedStore]]
+- 1 edge to [[_COMMUNITY_MCPServerConfig]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_TestCanvasAuthHelpers]]
 
 ## Top bridge nodes
-- [[hermesskillsi-bsREADME]] - degree 30, connects to 6 communities
+- [[A2ADecision]] - degree 26, connects to 2 communities
+- [[A2AGovernanceProxy]] - degree 43, connects to 1 community
+- [[A2AMessageType]] - degree 15, connects to 1 community
+- [[a2a_governance.py]] - degree 8, connects to 1 community
+- [[.get_events()_1]] - degree 4, connects to 1 community

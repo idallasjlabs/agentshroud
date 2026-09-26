@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[face_animation_pause() — freezes canvas redraw to protect WiFi stack]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[ToolACLEnforcer.get_allowed_tools]] - code - gateway/security/tool_acl.py
 
 ## Live Query (requires Dataview plugin)
 

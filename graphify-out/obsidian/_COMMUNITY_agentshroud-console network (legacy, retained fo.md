@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[agentshroud-console network (legacy, retained for override compat)]] - code - docker/docker-compose.yml
+- [[remote_log.h (WS-mirrored diagnostic log declaration)]] - code - firmware/voice-terminal/main/remote_log.h
 
 ## Live Query (requires Dataview plugin)
 

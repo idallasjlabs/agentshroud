@@ -1,34 +1,35 @@
 ---
 type: community
-cohesion: 0.25
-members: 19
+cohesion: 0.19
+members: 20
 ---
 
 # model_usage.py
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 19 nodes
+**Cohesion:** 0.19 - loosely connected
+**Members:** 20 nodes
 
 ## Members
-- [[Any_56]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[ModelCost]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[aggregate_costs()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[build_json_all()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[build_json_current()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[date]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[eprint()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[filter_by_days()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[latest_day_cost()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[load_payload()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[main()_23]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[model_usage.py]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[parse_daily_entries()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[parse_date()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[pick_current_model()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[render_text_all()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[render_text_current()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[run_codexbar_cost()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[usd()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[AGENTSHROUD_PLAN-RESET-20260222-0912]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Changes]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Context_10]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Execution Order & Parallelism]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[FINAL Network Lockdown Activation]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Files to Modify]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[GitHub Workflow Rules]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[P0 Fix 54 Pre-Existing Test Failures ✅ DONE — PR 23 open]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[P1 HTTP CONNECT Proxy + Domain Allowlist]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[P2 Credential Isolation (op-proxy)]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[P3 Channel Ownership — Telegram + Email]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[P4 Wire MCP Proxy]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[P5 Wire SecurityPipeline to forward]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Plan AgentShroud Security Hardening — Real Agent Containment]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Pre-Flight Checklist]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Root Causes (5 distinct bugs)]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Tests_3]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Tests (TDD)]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Verification_9]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[What Exists]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,20 +1,19 @@
 ---
 type: community
-cohesion: 0.70
-members: 5
+cohesion: 0.50
+members: 4
 ---
 
 # agentshroud-manage.sh
 
-**Cohesion:** 0.70 - tightly connected
-**Members:** 5 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[agentshroud-manage.sh]] - code - scripts/agentshroud-manage.sh
-- [[agentshroud-manage.sh script]] - code - scripts/agentshroud-manage.sh
-- [[api_call()]] - code - scripts/agentshroud-manage.sh
-- [[usage()_4]] - code - scripts/agentshroud-manage.sh
-- [[validate_input()]] - code - scripts/agentshroud-manage.sh
+- [[Fail-Closed Outbound pipeline exception blocks delivery to non-owner]] - concept - gateway/tests/test_slack_proxy.py
+- [[SharedMemoryManager Private Content DetectionFiltering]] - code - gateway/tests/test_shared_memory.py
+- [[SlackAPIProxy Multi-Field Outbound Scanning (blocks, attachments)]] - code - gateway/tests/test_slack_proxy.py
+- [[SlackAPIProxy Owner vs Collaborator Channel Filtering Tests]] - code - gateway/tests/test_slack_proxy.py
 
 ## Live Query (requires Dataview plugin)
 

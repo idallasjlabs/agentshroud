@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[approved (action executed, ledger entry written)]] - concept - docs/diagrams/images/diagram-16-state-approval-queue.svg
-- [[expired (1-hour TTL exceeded, auto-transition on load)]] - concept - docs/diagrams/images/diagram-16-state-approval-queue.svg
-- [[pending (bot submits action requiring approval)]] - concept - docs/diagrams/images/diagram-16-state-approval-queue.svg
-- [[rejected (action blocked, bot notified)]] - concept - docs/diagrams/images/diagram-16-state-approval-queue.svg
+- [[.test_collaborator_unquoted_tool_payload_text_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_web_access_request_queues_owner_approval_and_pending_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Collaborator URL web-access prompts should queue owner approval and return pendi]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Collaborator unquoted key payload should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,3 +21,11 @@ members: 4
 TABLE source_file, type FROM #community/pending_bot_submits_action_requiring_approval
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 10 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 2 edges to [[_COMMUNITY_test_soc_bots.py]]
+
+## Top bridge nodes
+- [[.test_collaborator_web_access_request_queues_owner_approval_and_pending_notice()]] - degree 8, connects to 2 communities
+- [[.test_collaborator_unquoted_tool_payload_text_is_quarantined()]] - degree 7, connects to 2 communities

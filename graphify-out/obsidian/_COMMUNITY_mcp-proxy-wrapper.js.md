@@ -10,20 +10,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[Environment Variables_14]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[Fail-Closed Design]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[Fail-Closed Patch]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[Gateway Communication]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[Gateway Endpoints Called]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[How It Works_3]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[Key Behavior]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[Message Types Intercepted]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[Process Architecture]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[Purpose_165]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[Related Notes_44]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[Usage_122]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[mcp-proxy-wrapper.js_2]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[mcp-proxy-wrapper.js_1]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
+- [[1.1 Owner  Applicant]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[1.2 Attorney Information]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[AgentShroud -- USPTO Trademark Application]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Filing Reference_1]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Option A Section 1(a) — Use in Commerce (if mark is already in use)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Option B Section 1(b) — Intent to Use (if not yet in commerce)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Recommended Searches]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 10 ESTIMATED COSTS]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 1 APPLICANT INFORMATION]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 4 FILING BASIS]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 5 DECLARATION  SIGNATURE]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 6 PRIOR SEARCH RESULTS]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 8 POST-FILING TIMELINE]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[USPTO_TRADEMARK_APPLICATION]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,3 +31,12 @@ members: 14
 TABLE source_file, type FROM #community/mcp-proxy-wrapperjs
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_VII. v0.8.0 Remediation]]
+- 1 edge to [[_COMMUNITY_`docsplanning` — Index]]
+- 1 edge to [[_COMMUNITY_TestRunUpstreamCveCheck]]
+- 1 edge to [[_COMMUNITY_🔴 CRITICAL — Not Wired (code exists, tests pass,]]
+
+## Top bridge nodes
+- [[AgentShroud -- USPTO Trademark Application]] - degree 12, connects to 4 communities

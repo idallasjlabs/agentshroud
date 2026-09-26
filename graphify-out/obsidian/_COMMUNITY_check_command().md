@@ -1,37 +1,37 @@
 ---
 type: community
-cohesion: 0.16
+cohesion: 0.09
 members: 22
 ---
 
 # check_command()
 
-**Cohesion:** 0.16 - loosely connected
+**Cohesion:** 0.09 - loosely connected
 **Members:** 22 nodes
 
 ## Members
-- [[.test_allows_env_in_name()]] - code - gateway/tests/test_env_guard.py
-- [[.test_allows_natural_language_mixed_quotes()]] - code - gateway/tests/test_env_guard.py
-- [[.test_allows_natural_language_question()]] - code - gateway/tests/test_env_guard.py
-- [[.test_allows_natural_language_social_phrasing()]] - code - gateway/tests/test_env_guard.py
-- [[.test_allows_safe_command()]] - code - gateway/tests/test_env_guard.py
-- [[.test_blocks_dollar_env()]] - code - gateway/tests/test_env_guard.py
-- [[.test_blocks_env_pipe()]] - code - gateway/tests/test_env_guard.py
-- [[.test_blocks_printenv()_1]] - code - gateway/tests/test_env_guard.py
-- [[.test_blocks_proc_environ()]] - code - gateway/tests/test_env_guard.py
-- [[.test_blocks_proc_star_environ()]] - code - gateway/tests/test_env_guard.py
-- [[.test_clean_text_unchanged()]] - code - gateway/tests/test_env_guard.py
-- [[.test_scrubs_aws_key()]] - code - gateway/tests/test_env_guard.py
-- [[.test_scrubs_github_token()]] - code - gateway/tests/test_env_guard.py
-- [[.test_scrubs_multiple_keys()]] - code - gateway/tests/test_env_guard.py
-- [[.test_scrubs_openai_key()]] - code - gateway/tests/test_env_guard.py
-- [[Check if command execution should be allowed.      Args         cmd Command to]] - rationale - gateway/security/env_guard.py
-- [[Scrub API keys and sensitive patterns from text output.      Args         text]] - rationale - gateway/security/env_guard.py
-- [[TestCheckCommand]] - code - gateway/tests/test_env_guard.py
-- [[TestScrubOutput]] - code - gateway/tests/test_env_guard.py
-- [[check_command()]] - code - gateway/security/env_guard.py
-- [[scrub_output()]] - code - gateway/security/env_guard.py
-- [[test_env_guard.py]] - code - gateway/tests/test_env_guard.py
+- [[BlueBubbles (native macOS iMessage relay)]] - concept - docs/setup/IMESSAGE_STATUS.md
+- [[Current Configuration]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[Current State Partially Working]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[Current Status_8]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[Current Status Summary]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[How to Fix (5 Minutes)]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[IMESSAGE_PERMISSION_FIX]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[IMESSAGE_STATUS]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[If It Still Doesn't Work]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[Next Steps_6]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[Option 1 Grant Permissions (NOT RECOMMENDED - Won't Work from Container)]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[Option 2 Use BlueBubbles (RECOMMENDED ✅)]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[Solutions]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[Step 1 Switch to agentshroud-bot User]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[Step 2 Grant Automation Permission]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[Step 3 Test It]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[Step 4 Verify from Docker]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[The Error]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[The Error We're Getting]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[What This Means_1]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[iMessage Integration Status]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[iMessage Permission Fix - Step by Step]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,9 +41,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_EncryptedStore]]
-- 1 edge to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY_pipeline.py — Security Pipeline]]
 
 ## Top bridge nodes
-- [[check_command()]] - degree 15, connects to 2 communities
-- [[scrub_output()]] - degree 8, connects to 1 community
+- [[IMESSAGE_PERMISSION_FIX]] - degree 3, connects to 1 community

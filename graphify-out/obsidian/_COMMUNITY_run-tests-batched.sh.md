@@ -1,17 +1,16 @@
 ---
 type: community
 cohesion: 1.00
-members: 2
+members: 1
 ---
 
 # run-tests-batched.sh
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 1 nodes
 
 ## Members
-- [[run-tests-batched.sh]] - code - scripts/run-tests-batched.sh
-- [[run-tests-batched.sh script]] - code - scripts/run-tests-batched.sh
+- [[Browser — Secure Browser Automation README]] - document - .agents/skills/i-browser/README.md
 
 ## Live Query (requires Dataview plugin)
 

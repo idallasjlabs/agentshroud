@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Value Stream Mapping Skill]] - document - .agents/skills/i-value-stream-mapping/SKILL.md
+- [[AgentShroud Logo — GlowLight Variant]] - image - branding/agentshroud-logo-light-bg.png
 
 ## Live Query (requires Dataview plugin)
 

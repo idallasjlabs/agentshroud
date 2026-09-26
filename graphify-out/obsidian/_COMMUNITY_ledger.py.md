@@ -10,21 +10,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Config Keys Read_4]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Database Schema_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Environment Variables Used_6]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Function Details_21]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Imports From  Exports To_4]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Key Classes  Functions_23]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Known Issues  Notes_5]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Purpose_150]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Related_27]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Responsibilities_24]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[enforce_retention()]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[initialize()]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[ledger.py_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[query(page, page_size, source, since, until, forwarded_to)]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[record(source, content, original_content, sanitized, redaction_count, redaction_types, forwarded_to, content_type, metadata)]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[1.1 The Problem]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[1.2 Root Cause Analysis]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[1.3 Solution Options]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[1.4 Implementation Plan]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[1.5 Testing Strategy]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[1.6 Success Criteria]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[PHASE 1 SECURITY FIX (CURRENT PRIORITY)]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[Phase 1 Pi Preparation (Prerequisites)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Phase 2 Node Pairing]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Phase 3 Security Configuration]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Phase 4 Skill Development]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Phase 5 Distributed Workflows]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Workflow 1 Automated Testing on Pi]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Workflow 2 Continuous Development]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Workflow 3 IoT + AI Integration]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,7 +34,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_SSHProxy]]
+- 1 edge to [[_COMMUNITY_Multi-Agent Role Matrix]]
+- 1 edge to [[_COMMUNITY_sunday_run_scan_gate]]
 
 ## Top bridge nodes
-- [[ledger.py_2]] - degree 11, connects to 1 community
+- [[1.4 Implementation Plan]] - degree 7, connects to 1 community
+- [[PHASE 1 SECURITY FIX (CURRENT PRIORITY)]] - degree 7, connects to 1 community

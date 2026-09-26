@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ToolResultInjectionScanner Test Suite]] - code - gateway/tests/test_tool_injection_scan.py
+- [[markmap-mcp-server (MCP server)]] - concept - docker/config/hermes/skills/i-mm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

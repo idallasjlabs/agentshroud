@@ -10,21 +10,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[.client()_6]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_check_agentshroud_updates()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_check_openclaw_updates()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_export_config()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_get_config()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_get_logs()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_killswitch_freeze()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_killswitch_invalid_mode()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_killswitch_no_confirm()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_security_report()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_status()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_stop_service()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_update_history()]] - code - gateway/tests/test_runtime_engines.py
-- [[Test the management API endpoints with mocked runtime.]] - rationale - gateway/tests/test_runtime_engines.py
-- [[TestWebAPI]] - code - gateway/tests/test_runtime_engines.py
+- [[Configuration  Environment Variables_6]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[ConnectionPool.get_or_create(server_name, config)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[Function Details_12]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[Key Classes  Functions_15]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[MCPProxy._execute_tool_call(tool_call, sanitized_params)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[MCPProxy.check_approval_required(tool_call)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[MCPProxy.get_stats()]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[MCPProxy.process_tool_call(tool_call, execute)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[MCPProxy.process_tool_result(tool_result, agent_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[Purpose_133]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[Related_18]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[Responsibilities_17]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[StdioConnection.send_request(method, params)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[mcp_proxy.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[mcp_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,13 +32,3 @@ members: 15
 TABLE source_file, type FROM #community/TestWebAPI
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_test_runtime_engines.py]]
-- 1 edge to [[_COMMUNITY_ContainerInfo]]
-- 1 edge to [[_COMMUNITY_PodmanEngine]]
-- 1 edge to [[_COMMUNITY_DockerEngine]]
-- 1 edge to [[_COMMUNITY_AppleContainerEngine]]
-
-## Top bridge nodes
-- [[TestWebAPI]] - degree 20, connects to 5 communities

@@ -1,32 +1,32 @@
 ---
 type: community
-cohesion: 0.13
+cohesion: 0.12
 members: 17
 ---
 
 # Update AgentShroud
 
-**Cohesion:** 0.13 - loosely connected
+**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members
-- [[Check Current Version]] - document - docs/operations/updating.md
-- [[Checking the Changelog]] - document - docs/operations/updating.md
-- [[Database Migrations]] - document - docs/operations/updating.md
-- [[Manual Update Process]] - document - docs/setup/setup-guide.md
-- [[Rollback If Needed]] - document - docs/setup/setup-guide.md
-- [[Rollback Procedure]] - document - docs/operations/updating.md
-- [[Tracking Main Branch]] - document - docs/operations/updating.md
-- [[Tracking a Tagged Release]] - document - docs/operations/updating.md
-- [[Update AgentShroud]] - document - docs/setup/setup-guide.md
-- [[Update OpenClaw]] - document - docs/setup/setup-guide.md
-- [[Update from Git]] - document - docs/operations/updating.md
-- [[Update from Release Tarball]] - document - docs/operations/updating.md
-- [[Updating]] - document - docs/setup/setup-guide.md
-- [[With Git]] - document - docs/operations/updating.md
-- [[Without Git]] - document - docs/operations/updating.md
-- [[deployment]] - document - docs/runbooks/deployment.md
-- [[updating]] - document - docs/operations/updating.md
+- [[1Password Integration]] - document - docs/api/integration-guide.md
+- [[AgentShroud v1.3.0]] - document - docs/api/api-reference.md
+- [[CICD Pipeline Integration]] - document - docs/api/integration-guide.md
+- [[Docker Security Scanning]] - document - docs/api/integration-guide.md
+- [[Generic AI Agent Integration]] - document - docs/api/integration-guide.md
+- [[GitHub Actions Integration]] - document - docs/api/integration-guide.md
+- [[HTTP Proxy Mode]] - document - docs/api/integration-guide.md
+- [[Integration Guide]] - document - docs/api/integration-guide.md
+- [[MCP Proxy Configuration]] - document - docs/api/integration-guide.md
+- [[MCP Server Integration_1]] - document - docs/api/integration-guide.md
+- [[Monitoring System Integration]] - document - docs/api/integration-guide.md
+- [[Overview_4]] - document - docs/api/api-reference.md
+- [[Overview_5]] - document - docs/api/integration-guide.md
+- [[Prometheus Metrics]] - document - docs/api/integration-guide.md
+- [[Service Account Setup]] - document - docs/api/integration-guide.md
+- [[Webhook Alerts]] - document - docs/api/integration-guide.md
+- [[integration-guide]] - document - docs/api/integration-guide.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,10 +36,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_TELEGRAM_ISSUES]]
-- 1 edge to [[_COMMUNITY_AgentShroud Setup Guide]]
-- 1 edge to [[_COMMUNITY_Deployment Runbook — AgentShroud]]
+- 1 edge to [[_COMMUNITY_Known Log Messages]]
+- 1 edge to [[_COMMUNITY_AgentShroud Blue Team Security Auditor]]
 
 ## Top bridge nodes
-- [[deployment]] - degree 4, connects to 2 communities
-- [[Updating]] - degree 5, connects to 1 community
+- [[Integration Guide]] - degree 8, connects to 1 community
+- [[AgentShroud v1.3.0]] - degree 4, connects to 1 community

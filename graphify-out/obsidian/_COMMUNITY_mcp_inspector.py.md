@@ -10,21 +10,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Configuration  Environment Variables_11]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[Detection Patterns_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[Function Details_23]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[Key Classes  Functions_25]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[MCPInspector._redact_pii(value)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[MCPInspector._scan_text(text, path, findings, ...)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[MCPInspector._scan_value(value, path, findings, ...)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[MCPInspector._should_block(findings)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[MCPInspector.inspect_tool_call(tool_name, params, check_injection, check_pii, check_encoding, check_sensitive)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[MCPInspector.inspect_tool_result(tool_name, result_content, check_pii, check_encoding)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[Purpose_152]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[Related_29]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[Responsibilities_26]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[mcp_inspector.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[mcp_inspector.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[AgentShroud Blue Team Security Auditor_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Audit Procedure_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Critical Rules_5]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Heat Map Legend_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Infrastructure_2]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Loss Categories_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Methodology_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Output Format_22]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Phase 1 Code-Level Module Audit_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Phase 2 Heat Map Reconstruction_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Phase 3 Integration Gap Analysis_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Phase 4 Configuration Audit_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Phase 5 Steve Hay's Specific Probes_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[SKILL_114]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Unsafe Control Actions (UCAs)_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,3 +32,9 @@ members: 15
 TABLE source_file, type FROM #community/mcp_inspectorpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_SlackAPIProxy]]
+
+## Top bridge nodes
+- [[AgentShroud Blue Team Security Auditor_1]] - degree 7, connects to 1 community

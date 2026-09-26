@@ -1,44 +1,44 @@
 ---
 type: community
-cohesion: 0.11
+cohesion: 0.07
 members: 29
 ---
 
 # _FakeUpstreamWS
 
-**Cohesion:** 0.11 - loosely connected
+**Cohesion:** 0.07 - loosely connected
 **Members:** 29 nodes
 
 ## Members
-- [[.__aenter__()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.__aexit__()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.__aiter__()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.__anext__()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.__init__()_117]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.__init__()_118]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.send()_1]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_authorized_request_proxied_upstream()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_generic_exception_and_failing_close_swallowed()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_lifespan_startup_shutdown()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_relay_with_trusted_origin()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_sec_websocket_protocol_token_authenticates()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_skip_basic_auth_bypasses_gate()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_token_query_param_authenticates_ws()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_unauthorized_returns_401()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_unauthorized_ws_closed_4401()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_upstream_failure_returns_502()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_upstream_ws_exception_closes_gracefully()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[Async context manager mimicking websockets.connect().]] - rationale - gateway/tests/test_dns_canvas_coverage.py
-- [[Drive the canvas ASGI app with scripted receive events; collect sends.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
-- [[Fake upstream WebSocket yields scripted messages, records sends.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
-- [[TestCanvasHTTP]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[TestCanvasLifespan]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[TestCanvasWebSocket]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[_FakeUpstreamWS]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[_FakeWSConnect]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[_http_scope()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[_run_asgi()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[_ws_scope()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[1. MCP Proxy Wrapper (Bot Side)]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[11. Ledger Recording]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[2. Authentication (Gateway Entry)]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[3. Middleware Manager]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[4. Input Normalization]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[5. PII Sanitization]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[6. Prompt Injection Defense]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[9. Proxy Routing]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[Configuration_13]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[Data Flow_1]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[EgressFilter_3]] - concept - docker/config/hermes/SOUL.md
+- [[EgressFilter._is_private_ip(host)]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[EgressFilter._record(agent_id, dest, port, action, rule)]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[EgressFilter.check(agent_id, destination, port)]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[EgressPolicy.matches_domain(domain)]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[Environment Variables_11]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[Function Details_35]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[Key Classes  Functions_38]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[Layer-by-Layer Breakdown]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[Mode Enforce vs Monitor_6]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[Overview_19]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[Purpose_156]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[Related_42]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[Related Notes_3]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[Request Flow Diagram]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[Response Path]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[Responsibilities_40]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[Threat Model_11]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[egress_filter.py_1]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -48,14 +48,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_test_dns_canvas_coverage.py]]
-- 6 edges to [[_COMMUNITY_DNSForwarderProtocol]]
-- 5 edges to [[_COMMUNITY_DNSBlocklist]]
-- 3 edges to [[_COMMUNITY_TestCanvasAuthHelpers]]
+- 3 edges to [[_COMMUNITY_test_dashboard_endpoints.py]]
+- 1 edge to [[_COMMUNITY_10. Troubleshooting]]
+- 1 edge to [[_COMMUNITY_wakeword.c]]
+- 1 edge to [[_COMMUNITY_PipelineAction]]
+- 1 edge to [[_COMMUNITY_AgentShroud Brand Quick Reference]]
+- 1 edge to [[_COMMUNITY_API Keys Setup Guide]]
+- 1 edge to [[_COMMUNITY_.get_or_create_session()]]
 
 ## Top bridge nodes
-- [[_FakeUpstreamWS]] - degree 12, connects to 3 communities
-- [[_FakeWSConnect]] - degree 9, connects to 3 communities
-- [[TestCanvasWebSocket]] - degree 9, connects to 3 communities
-- [[TestCanvasHTTP]] - degree 7, connects to 3 communities
-- [[TestCanvasLifespan]] - degree 4, connects to 3 communities
+- [[EgressFilter_3]] - degree 16, connects to 3 communities
+- [[Layer-by-Layer Breakdown]] - degree 13, connects to 3 communities
+- [[Data Flow_1]] - degree 6, connects to 1 community

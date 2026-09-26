@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[graphify add URL Ingestion]] - concept - docker/config/openclaw/skills/graphify/references/add-watch.md
+- [[Behavioral Pattern Analysis]] - concept - docs/project/glossary.md
 
 ## Live Query (requires Dataview plugin)
 

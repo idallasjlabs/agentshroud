@@ -1,17 +1,16 @@
 ---
 type: community
 cohesion: 1.00
-members: 2
+members: 1
 ---
 
 # patch-ws-proxy.sh
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 1 nodes
 
 ## Members
-- [[patch-ws-proxy.sh]] - code - docker/scripts/patch-ws-proxy.sh
-- [[patch-ws-proxy.sh script]] - code - docker/scripts/patch-ws-proxy.sh
+- [[Architecture Review Skill (stub)]] - document - .agents/skills/i-architecture-review/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

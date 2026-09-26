@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Container Architecture (gateway + bot hardening)]] - concept - docs/architecture/agentic-os.md
-- [[asb CLI — Deployment Tool]] - code - docs/architecture/agentic-os.md
+- [[test-system.sh]] - code - docker/scripts/test-system.sh
+- [[test-system.sh script]] - code - docker/scripts/test-system.sh
 
 ## Live Query (requires Dataview plugin)
 

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[graphify explain command]] - concept - docker/config/openclaw/skills/graphify/references/query.md
+- [[Obsidian app.json (empty)]] - document - docs/vault/.obsidian/app.json
 
 ## Live Query (requires Dataview plugin)
 

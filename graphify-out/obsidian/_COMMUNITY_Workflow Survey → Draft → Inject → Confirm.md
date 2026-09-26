@@ -10,19 +10,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[Re-injection Command (for reference)_2]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
-- [[Role_81]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
-- [[Rules_24]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
-- [[Skill Session Prompt Generator (SESSION-PROMPT)_2]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
-- [[Step 1 — Survey the Repo_2]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
-- [[Step 2 — Answer Six Questions_2]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
-- [[Step 3 — Write SESSION_PROMPT_2]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
-- [[Step 4 — Write the File_2]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
-- [[Step 5 — Inject into All Three LLMs_2]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
-- [[Step 6 — Confirm_2]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
-- [[Trigger_3]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
-- [[Workflow Survey → Draft → Inject → Confirm_2]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
-- [[openclawskillsi-session-promptSKILL]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
+- [[Anti-Patterns to Flag_11]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Core Discipline Red → Green → Refactor_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Glue Job Logic  →  test transformations outside Spark_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[PostgreSQL  →  `SAVEPOINT` + `ROLLBACK`_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Python  Boto3  AWS  →  `moto`_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Role_70]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Rules_13]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[SKILL_120]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Skill Test-Driven Development (TDD)_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Stack-Specific Testing Patterns_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Step Function Input Validation_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Test Structure_3]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[Zabbix API  →  `unittest.mock`_1]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,3 +30,9 @@ members: 13
 TABLE source_file, type FROM #community/Workflow_Survey__Draft__Inject__Confirm
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY__make_tm()]]
+
+## Top bridge nodes
+- [[Skill Test-Driven Development (TDD)_1]] - degree 8, connects to 1 community

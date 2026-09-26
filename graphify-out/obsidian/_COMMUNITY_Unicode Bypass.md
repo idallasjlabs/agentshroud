@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Unicode Bypass]] - concept - docs/project/glossary.md
+- [[A2AGovernanceProxy.update_peer_trust]] - code - gateway/security/a2a_governance.py
 
 ## Live Query (requires Dataview plugin)
 

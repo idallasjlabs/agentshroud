@@ -1,29 +1,29 @@
 ---
 type: community
-cohesion: 0.22
+cohesion: 0.14
 members: 14
 ---
 
 # _run()
 
-**Cohesion:** 0.22 - loosely connected
+**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
-- [[.test_dry_run_allowed_for_any_user()]] - code - gateway/tests/test_canary_deploy.py
-- [[.test_dry_run_changes_nothing_and_previews_actions()]] - code - gateway/tests/test_canary_deploy.py
-- [[.test_dry_run_targets_green_ports_not_blue()]] - code - gateway/tests/test_canary_deploy.py
-- [[.test_refuses_when_not_green_user()]] - code - gateway/tests/test_canary_deploy.py
-- [[.test_tag_fetch_uses_force()]] - code - gateway/tests/test_canary_deploy.py
-- [[.test_unknown_arg_rejected()]] - code - gateway/tests/test_canary_deploy.py
-- [[TestDryRun]] - code - gateway/tests/test_canary_deploy.py
-- [[TestGuard]] - code - gateway/tests/test_canary_deploy.py
-- [[_run()_1]] - code - gateway/tests/test_canary_deploy.py
-- [[canary-deploy.sh (bluegreen canary deploy)]] - code - scripts/canary-deploy.sh
-- [[test_canary_deploy.py]] - code - gateway/tests/test_canary_deploy.py
-- [[test_help_prints_usage()]] - code - gateway/tests/test_canary_deploy.py
-- [[test_script_exists_and_is_executable()]] - code - gateway/tests/test_canary_deploy.py
-- [[test_syntax_is_valid()]] - code - gateway/tests/test_canary_deploy.py
+- [[2. Security Analysis]] - document - docs/planning/reviews/phase-review-2026-03-04.md
+- [[2a. Owner Bypass (`OWNER_USER_IDS`) — ⚠️ WARNING]] - document - docs/planning/reviews/phase-review-2026-03-04.md
+- [[2b. Telegram SDK Patch Removal — ⚠️ WARNING]] - document - docs/planning/reviews/phase-review-2026-03-04.md
+- [[2c. Telegram Proxy Auth Added — ✅ GOOD]] - document - docs/planning/reviews/phase-review-2026-03-04.md
+- [[2d. Credential Reference Fixes — ✅ GOOD]] - document - docs/planning/reviews/phase-review-2026-03-04.md
+- [[2e. Gateway Auth Simplification — ✅ GOOD]] - document - docs/planning/reviews/phase-review-2026-03-04.md
+- [[3a. Enforcement Mode Flip — ✅ EXCELLENT]] - document - docs/planning/reviews/phase-review-2026-03-05.md
+- [[3b. ContextGuard Pipeline Integration — ✅ GOOD]] - document - docs/planning/reviews/phase-review-2026-03-05.md
+- [[3c. Observatory Mode API — ✅ GOOD with note]] - document - docs/planning/reviews/phase-review-2026-03-05.md
+- [[3d. 20 New Prompt Injection Patterns — ✅ GOOD]] - document - docs/planning/reviews/phase-review-2026-03-05.md
+- [[3e. Docker Hardening — ✅ GOOD (minus YAML bugs)]] - document - docs/planning/reviews/phase-review-2026-03-05.md
+- [[4a. Blue Team Fixes — ✅ EXCELLENT]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[4b. Remaining Risk Tailscale Networking (E1)]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[4c. Test Coverage Improvements]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,3 +31,9 @@ members: 14
 TABLE source_file, type FROM #community/_run
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_SecureBrowser]]
+
+## Top bridge nodes
+- [[2. Security Analysis]] - degree 14, connects to 1 community

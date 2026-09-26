@@ -1,31 +1,31 @@
 ---
 type: community
-cohesion: 0.16
+cohesion: 0.12
 members: 16
 ---
 
 # agentshroud-ssh-exec.sh
 
-**Cohesion:** 0.16 - loosely connected
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[Active Projects]] - document - docker/config/openclaw/workspace/memory/context.md
-- [[DEVELOPER]] - document - docker/config/openclaw/workspace/DEVELOPER.md
-- [[Key Facts_1]] - document - docker/config/openclaw/workspace/memory/context.md
-- [[Pending Tasks]] - document - docker/config/openclaw/workspace/memory/context.md
-- [[_json_escape (ssh-exec)]] - code - docker/scripts/agentshroud-ssh-exec.sh
-- [[_json_escape (ssh-write-file)]] - code - docker/scripts/agentshroud-ssh-write-file.sh
-- [[_read_token_file (ssh-exec)]] - code - docker/scripts/agentshroud-ssh-exec.sh
-- [[_read_token_file (ssh-write-file)]] - code - docker/scripts/agentshroud-ssh-write-file.sh
-- [[agentshroud-ssh-exec.sh]] - code - docker/scripts/agentshroud-ssh-exec.sh
-- [[agentshroud-ssh-exec.sh script]] - code - docker/scripts/agentshroud-ssh-exec.sh
-- [[agentshroud-ssh-write-file.sh]] - code - docker/scripts/agentshroud-ssh-write-file.sh
-- [[agentshroud-ssh-write-file.sh script]] - code - docker/scripts/agentshroud-ssh-write-file.sh
-- [[competitive-analysis.md (bot workspace competitive-intel source of truth)]] - document - docker/config/openclaw/workspace/competitive-analysis.md
-- [[context]] - document - docker/config/openclaw/workspace/memory/context.md
-- [[hermes-soul.md (Hermes system identity)]] - document - docker/config/openclaw/agents/hermes-soul.md
-- [[openclaw-identity.md (OpenClaw bot identity)]] - document - docker/config/openclaw/agents/openclaw-identity.md
+- [[Accessibility Checklist]] - document - branding/QUICK-REFERENCE.md
+- [[AgentShroud Brand Quick Reference]] - document - branding/QUICK-REFERENCE.md
+- [[CSS Variables]] - document - branding/QUICK-REFERENCE.md
+- [[Common Use Cases]] - document - branding/QUICK-REFERENCE.md
+- [[Dark Mode]] - document - branding/QUICK-REFERENCE.md
+- [[Favicon]] - document - branding/QUICK-REFERENCE.md
+- [[File Locations]] - document - branding/QUICK-REFERENCE.md
+- [[Logo Files_1]] - document - branding/QUICK-REFERENCE.md
+- [[Logo Usage Rules]] - document - branding/QUICK-REFERENCE.md
+- [[Need More Details]] - document - branding/QUICK-REFERENCE.md
+- [[Primary Brand Color]] - document - branding/QUICK-REFERENCE.md
+- [[Quick Color Palette]] - document - branding/QUICK-REFERENCE.md
+- [[Typography]] - document - branding/QUICK-REFERENCE.md
+- [[Website Header]] - document - branding/QUICK-REFERENCE.md
+- [[✅ Do]] - document - branding/QUICK-REFERENCE.md
+- [[❌ Don't]] - document - branding/QUICK-REFERENCE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,9 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_proxy_status.py]]
-- 1 edge to [[_COMMUNITY_DEVELOPER.md — Development Context for AgentShro]]
+- 1 edge to [[_COMMUNITY_Phase 1 — Raw Collection]]
 
 ## Top bridge nodes
-- [[agentshroud-ssh-exec.sh]] - degree 8, connects to 1 community
-- [[DEVELOPER]] - degree 2, connects to 1 community
+- [[AgentShroud Brand Quick Reference]] - degree 10, connects to 1 community

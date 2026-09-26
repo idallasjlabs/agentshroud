@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[VT_AGENTS table (directhermesopenclaw)]] - code - firmware/voice-terminal/main/app_main.c
-- [[Voice Gateway Port 8766 Offset (Lima per-port SSH forwarder race)]] - rationale - docker/docker-compose.agentshroud-bot.marvin.yml
-- [[Voice Gateway Service]] - code - docker/docker-compose.yml
-- [[Voice Interface (STTTTS, wake word)]] - concept - docs/archive/FUTURE-FEATURES.md
+- [[2. Security Value Audit_2]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[PARTIAL PROTECTION (real logic, but gaps or dependencies)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[REAL PROTECTION (functional enforcement, would stop actual attacks)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[SECURITY THEATER RISK (looks good, limited real value)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,3 +21,9 @@ members: 4
 TABLE source_file, type FROM #community/Voice_Gateway_Service
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_SecureBrowser]]
+
+## Top bridge nodes
+- [[2. Security Value Audit_2]] - degree 4, connects to 1 community

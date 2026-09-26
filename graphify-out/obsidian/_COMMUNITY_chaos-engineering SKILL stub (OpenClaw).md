@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[chaos-engineering SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-chaos-engineering/SKILL.md
+- [[append_trend_log.py]] - code - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
 
 ## Live Query (requires Dataview plugin)
 

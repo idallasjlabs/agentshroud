@@ -1,41 +1,41 @@
 ---
 type: community
-cohesion: 0.09
+cohesion: 0.08
 members: 26
 ---
 
 # iCloud Services Setup - Complete Guide
 
-**Cohesion:** 0.09 - loosely connected
+**Cohesion:** 0.08 - loosely connected
 **Members:** 26 nodes
 
 ## Members
-- [[401 Unauthorized]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[403 Forbidden]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[Connection timeout]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[Notes folder not found]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[Access Notes via IMAP]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[Challenge]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[Discovery Process]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[Generate App-Specific Password]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[Server Settings]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[Step 1 Generate App-Specific Password]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[Step 2 Install Dependencies]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[Step 3 Test Services]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[Step 4 Verify All Working]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[Test CalDAV Connection]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[Test IMAP Connection]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[iCloud Services Setup - Complete Guide]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[✅ Setup Checklist_1]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[🎯 Next Steps After Setup]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[📅 iCloud Calendar (CalDAV)]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[📝 iCloud Notes]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[📞 iCloud Contacts (CardDAV)]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[📦 Required Node.js Packages]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[📧 iCloud Mail (IMAPSMTP)]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[🔍 Troubleshooting]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[🔐 Important App-Specific Passwords]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[🚀 Complete Setup Script]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[401 Unauthorized]] - document - .agents/skills/i-icloud/SKILL.md
+- [[CalendarContacts not found]] - document - .agents/skills/i-icloud/SKILL.md
+- [[Connection timeout]] - document - .agents/skills/i-icloud/SKILL.md
+- [[Add Contact]] - document - .agents/skills/i-icloud/SKILL.md
+- [[Calendar Operations]] - document - .agents/skills/i-icloud/SKILL.md
+- [[Contact Operations]] - document - .agents/skills/i-icloud/SKILL.md
+- [[Create Event]] - document - .agents/skills/i-icloud/SKILL.md
+- [[Create Note]] - document - .agents/skills/i-icloud/SKILL.md
+- [[Delete Event]] - document - .agents/skills/i-icloud/SKILL.md
+- [[List Contacts]] - document - .agents/skills/i-icloud/SKILL.md
+- [[List Events]] - document - .agents/skills/i-icloud/SKILL.md
+- [[List Messages]] - document - .agents/skills/i-icloud/SKILL.md
+- [[List Notes]] - document - .agents/skills/i-icloud/SKILL.md
+- [[Mail Operations]] - document - .agents/skills/i-icloud/SKILL.md
+- [[Notes Operations]] - document - .agents/skills/i-icloud/SKILL.md
+- [[SKILL_25]] - document - .agents/skills/i-icloud/SKILL.md
+- [[Search Contacts]] - document - .agents/skills/i-icloud/SKILL.md
+- [[Search Mail]] - document - .agents/skills/i-icloud/SKILL.md
+- [[Search Notes]] - document - .agents/skills/i-icloud/SKILL.md
+- [[Security]] - document - .agents/skills/i-icloud/SKILL.md
+- [[Send Email]] - document - .agents/skills/i-icloud/SKILL.md
+- [[Setup]] - document - .agents/skills/i-icloud/SKILL.md
+- [[Troubleshooting]] - document - .agents/skills/i-icloud/SKILL.md
+- [[Update Contact]] - document - .agents/skills/i-icloud/SKILL.md
+- [[Update Event]] - document - .agents/skills/i-icloud/SKILL.md
+- [[iCloud Services]] - document - .agents/skills/i-icloud/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,7 +45,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage]]
+- 2 edges to [[_COMMUNITY_Mnemosyne — Retention Engineer]]
+- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
 
 ## Top bridge nodes
-- [[iCloud Services Setup - Complete Guide]] - degree 11, connects to 1 community
+- [[iCloud Services]] - degree 11, connects to 2 communities

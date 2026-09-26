@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ci (Continuous Integration) SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-ci/SKILL.md
+- [[Ephemeral-Secrets Canonical-Copy Bug (gateway_password  1Password bootstrap creds silently zeroed)]] - rationale - scripts/asb
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # nano-pdf
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[Quick start_1]] - document - skills/openclaw/nano-pdf/SKILL.md
-- [[nano-pdf]] - document - skills/openclaw/nano-pdf/SKILL.md
-- [[nano-pdfSKILL]] - document - skills/openclaw/nano-pdf/SKILL.md
+- [[audio.c (ES7210 mic  ES8311 speaker driver)]] - code - firmware/voice-terminal/main/audio.c
+- [[audio.h (audio public API)]] - code - firmware/voice-terminal/main/audio.h
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,119 +1,127 @@
 ---
 type: community
-cohesion: 0.04
-members: 104
+cohesion: 0.02
+members: 112
 ---
 
 # _wrap_response()
 
-**Cohesion:** 0.04 - loosely connected
-**Members:** 104 nodes
+**Cohesion:** 0.02 - loosely connected
+**Members:** 112 nodes
 
 ## Members
-- [[._make_proxy()_4]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collab_gets_alert_notice_at_3_blocks()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collab_gets_escalation_notice_at_5_blocks()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collab_gets_suspension_notice_at_10_blocks()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collab_threshold_notices_fire_only_once_per_level()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_cooldown_suppresses_second_ack()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_dm_hello_does_not_trigger_probe()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_filter_disabled_does_not_set_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_grant_immunity_bypasses_suspension()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_group_command_with_bot_suffix_eligible()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_group_message_with_mention_forwarded_and_eligible()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_group_message_without_mention_forwarded_but_flagged()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_hello_in_group_sends_hermes_ack()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_hello_in_group_sends_openclaw_ack()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_hermes_mention_ignored_when_processed_as_openclaw()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_hermes_mention_sets_hermes_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_immune_command_lists_immune_users()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_immune_command_no_immune_users()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_immune_user_lockdown_not_incremented()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_immune_user_message_passes_through_when_suspended()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_locked_no_active_lockdowns()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_locked_shows_suspended_users()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_no_bot_username_does_not_set_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_openclaw_mention_does_not_affect_hermes_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_partial_phrase_does_not_trigger_probe()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_predicate_hello_matches()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_predicate_hi_matches()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_predicate_partial_match_does_not_fire()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_predicate_status_matches()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_predicate_strips_leading_bot_mention()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_predicate_trailing_punctuation_stripped()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_predicate_whos_there_matches()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_private_message_does_not_set_eligibility_flag()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_revoke_immunity_restores_enforcement()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_revoke_immunity_unknown_user()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_status_in_group_sends_short_ack_not_full_status()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_stranger_hello_in_group_receives_ack()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_suspended_drop_notice_fires_again_after_cooldown()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_suspended_drop_notice_respects_cooldown()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_suspended_user_receives_drop_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_two_bots_same_group_independent_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_unlock_calls_reset_on_lockdown()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_unlock_clears_manual_pause_without_prior_lockdown_state()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_unlock_clears_suspended_drop_cooldown()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_unlock_persists_unpause_to_disk()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_unlock_unknown_user_returns_no_state_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_username_for_bot_falls_back_to_default()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_username_for_bot_returns_per_bot_username()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[command@botname marks chat as response-eligible.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[gi uid must grant immunity so the user bypasses lockdown suspension check.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[immune must list all immune user IDs.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[immune with no immune users must say so.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[locked must list users with non-normal lockdown state.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[locked with no active lockdowns must say so.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[ri uid must remove immunity and confirm to owner.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[status in a group sends only the short liveness ack (no operational details).]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[unlock uid must call reset() on the lockdown module and confirm to owner.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[unlock for a user with no lockdown state must say so.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[unlock must clear the suspended-drop notice cooldown so user gets fresh notice]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[unlock must persist through unpause_collaborator() so resume survives         a]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[@agentshroud_bot mention sets only openclaw eligible; hermes entry is absent.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[@agentshroud_hermes_bot hello' normalises to 'hello' → matches.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[@agentshroud_hermes_bot mention sets hermes eligibility, not openclaw.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[@agentshroud_hermes_bot message processed as openclaw yields ineligible for open]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[A dropped message past the cooldown window must produce a new notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[A stranger (not owner, not collaborator) typing 'hello' in a group still gets th]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[A user manually revoke'd (paused) with no ProgressiveLockdown block         his]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Build a Telegram group message update.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator must receive escalation notice at block 5.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator must receive suspension notice at block 10.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator must receive warning text when they reach 3 security blocks.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[DMs don't interact with the group eligibility map.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Group messages with @mention are forwarded and mark chat as response-eligible.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Group messages without @mention are forwarded (for context) but mark chat as res]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Group presence probe bare trigger phrases make each bot reply with a short live]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Immune user must not be dropped by the suspension path (stub must not appear).]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Integration tests for group at-mention filtering.      The bot reads ALL group m]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Per-bot eligibility — each bot in a shared group tracks mention state independen]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Second 'hello' within the cooldown window must NOT send a second ack.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Second dropped message within cooldown window must NOT produce another notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Stub the fire-and-forget owner activity mirror.      The mirror runs via asyncio]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Suspended user's dropped message must trigger a 'session suspended' notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[TestGroupMentionFilter]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[TestGroupPresenceProbe]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[TestPerBotGroupMentionFilter]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[TestProgressiveLockdownUX]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Tests for lockdown UX unlock fix, collaborator notifications, locked, immunit]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[The probe is group-only; 'hello' in a DM chat must not fire the ack.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Threshold notices must not repeat on subsequent blocks at the same level.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Two bots in the same group track eligibility independently.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unknown bot_id falls back to _bot_username.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[When bot_username is unset the filter is bypassed entirely.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[When group_mention_only is disabled, eligibility map is not populated.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[_make_group_update()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[_no_owner_mirror()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[_quarantine_blocked_message must NOT increment lockdown count for immune users.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[_username_for_bot returns the correct @username for each bot_id.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[_wrap_response()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[hello!' and 'hello' should both match.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[hello' (bare) in a group triggers '✅ @agentshroud_bot online' from openclaw.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[hello' in a group triggers '✅ @agentshroud_hermes_bot online' when processed as]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[hello, can you help' must NOT match — exact-match guard.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[hello, can you help' must reach the LLM path, not be swallowed by the probe.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[test_telegram_proxy_inbound.py]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[NOTE Gateway-side Slack Socket Mode listener removed.]] - rationale - gateway/ingest_api/lifespan.py
+- [[.__init__()_62]] - code - gateway/security/collaborator_tracker.py
+- [[._append_contributor_log()]] - code - gateway/security/collaborator_tracker.py
+- [[._coerce_timestamp()]] - code - gateway/security/collaborator_tracker.py
+- [[._normalize_preview()]] - code - gateway/security/collaborator_tracker.py
+- [[._normalize_username()]] - code - gateway/security/collaborator_tracker.py
+- [[.get_activity()]] - code - gateway/security/collaborator_tracker.py
+- [[.get_activity_summary()]] - code - gateway/security/collaborator_tracker.py
+- [[.get_health()_1]] - code - gateway/security/collaborator_tracker.py
+- [[.record_activity()]] - code - gateway/security/collaborator_tracker.py
+- [[.test_failed_write_makes_unhealthy()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_initial_state_healthy()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[10-digit real UID must still be written to JSONL and markdown.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[Append one activity entry for any tracked collaborator or the owner.          Ar]] - rationale - gateway/security/collaborator_tracker.py
+- [[Attach BufferHandler to the root agentshroud logger.]] - rationale - gateway/web/dashboard_endpoints.py
+- [[Best-effort float timestamp coercion for resilient log reads.]] - rationale - gateway/security/collaborator_tracker.py
+- [[CollaboratorActivityTracker_1]] - code - gateway/tests/test_lifespan_prune.py
+- [[CollaboratorActivityTracker]] - code - gateway/security/collaborator_tracker.py
+- [[CollaboratorActivityTracker.get_health() must return accurate counters.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Create a fake contributor markdown file for the given uid.]] - rationale - gateway/tests/test_lifespan_prune.py
+- [[FastAPI_1]] - code - gateway/ingest_api/lifespan.py
+- [[FastAPI lifespan - startup and shutdown]] - rationale - gateway/ingest_api/lifespan.py
+- [[Hermes API forwarder must include an HTTP-method peek to drop non-HTTP connectio]] - rationale - gateway/tests/test_telegram_executor.py
+- [[IDs  10000 should be treated as test fixtures by the pruner heuristic.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[Install warning filter once for uvicorn logger.]] - rationale - gateway/ingest_api/lifespan.py
+- [[Mirror activity into workspace contributor logs used by daily digests.]] - rationale - gateway/security/collaborator_tracker.py
+- [[Non-HTTP bytes (e.g. TLS ClientHello) must be dropped without proxying.]] - rationale - gateway/tests/test_telegram_executor.py
+- [[Normalize previews to single-line safe text for JSONL + markdown mirrors.]] - rationale - gateway/security/collaborator_tracker.py
+- [[Normalize username for safe contributor-log tokenization.]] - rationale - gateway/security/collaborator_tracker.py
+- [[Owner messages are now recorded with is_owner=True (not silently dropped).]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[Owner's Telegram first_name with pipe chars is replaced by owner_display_name.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[Path_9]] - code - gateway/security/collaborator_tracker.py
+- [[Path_31]] - code - gateway/tests/test_lifespan_prune.py
+- [[Real Telegram UIDs (9-10 digits) must NOT be pruned.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[Real-UID markdown files must never be deleted by the prune pass.]] - rationale - gateway/tests/test_lifespan_prune.py
+- [[Resolve each configured bot's OWN Telegram token, distinct from the default.]] - rationale - gateway/ingest_api/lifespan.py
+- [[Return True when uid looks like a test fixture that should be silently dropped.]] - rationale - gateway/security/collaborator_tracker.py
+- [[Return a health snapshot suitable for statusdetail.]] - rationale - gateway/security/collaborator_tracker.py
+- [[Return activity entries sorted newest-first.          Args             since U]] - rationale - gateway/security/collaborator_tracker.py
+- [[Return aggregated statistics over all recorded activity.          Returns]] - rationale - gateway/security/collaborator_tracker.py
+- [[Run the same markdown-prune logic as lifespan.py and return pruned count.]] - rationale - gateway/tests/test_lifespan_prune.py
+- [[Short numeric UIDs ( 7 digits) must be silently dropped before any write.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[Startup prune must remove fixture markdown files from every contributor dir.]] - rationale - gateway/tests/test_lifespan_prune.py
+- [[TestTrackerGetHealth]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Tracks collaborator messages at the gateway level.      Records every inbound me]] - rationale - gateway/security/collaborator_tracker.py
+- [[UIDs matching test_user prefix must be silently dropped.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[_build_bridge() — test-local reimplementation of the ResourceGuard→AlertDispatcher bridge closure]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[_build_per_bot_telegram_tokens()]] - code - gateway/ingest_api/lifespan.py
+- [[_install_uvicorn_warning_filter()]] - code - gateway/ingest_api/lifespan.py
+- [[_is_fixture_uid()]] - code - gateway/security/collaborator_tracker.py
+- [[_make_md()]] - code - gateway/tests/test_lifespan_prune.py
+- [[_prune_fixture_markdown()]] - code - gateway/tests/test_lifespan_prune.py
+- [[collaborator_tracker.py]] - code - gateway/security/collaborator_tracker.py
+- [[get_activity(bot_id=...) returns only entries matching that bot_id.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[get_activity_summary returns a by_bot breakdown keyed by bot_id.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[get_activity_summary returns empty by_bot when no log file exists.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[install_log_handler()]] - code - gateway/web/dashboard_endpoints.py
+- [[lifespan startup must install ThreadPoolExecutor(max_workers=64).]] - rationale - gateway/tests/test_telegram_executor.py
+- [[lifespan()_1]] - code - gateway/ingest_api/lifespan.py
+- [[lifespan.py]] - code - gateway/ingest_api/lifespan.py
+- [[log_file()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[process_webhook passes agent_id as bot_id to record_activity.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[record_activity with bot_id='hermes' stores bot_id in the entry.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[record_activity without bot_id stores bot_id=None in the entry.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[test_collaborator_entry_has_is_owner_false()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_collaborator_tracker.py]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_correlation_id_absent_when_not_provided()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_correlation_id_included_when_provided()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_fixture_uid_writes_blocked()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_get_activity_filters_by_bot_id()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_get_activity_ignores_non_numeric_timestamps()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_get_activity_respects_limit()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_get_activity_respects_since()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_get_activity_returns_empty_when_no_file()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_get_activity_returns_entries_newest_first()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_get_activity_summary_by_bot_empty_when_no_file()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_get_activity_summary_includes_by_bot()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_hermes_forwarder_drops_non_http()]] - code - gateway/tests/test_telegram_executor.py
+- [[test_is_fixture_uid_blocks_short_numeric()]] - code - gateway/tests/test_lifespan_prune.py
+- [[test_is_fixture_uid_blocks_test_user_prefix()]] - code - gateway/tests/test_lifespan_prune.py
+- [[test_is_fixture_uid_passes_real_uids()]] - code - gateway/tests/test_lifespan_prune.py
+- [[test_lifespan_hermes_forwarder_has_http_peek()]] - code - gateway/tests/test_telegram_executor.py
+- [[test_lifespan_installs_64_worker_executor()]] - code - gateway/tests/test_telegram_executor.py
+- [[test_lifespan_prune.py]] - code - gateway/tests/test_lifespan_prune.py
+- [[test_message_preview_newlines_normalized()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_message_preview_truncated()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_multiple_entries_appended()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_owner_correlation_id_is_stored()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_owner_display_name_overrides_pipe()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_owner_is_recorded_with_is_owner_flag()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_prune_keeps_real_uid_markdown()]] - code - gateway/tests/test_lifespan_prune.py
+- [[test_prune_walks_all_contributor_dirs()]] - code - gateway/tests/test_lifespan_prune.py
+- [[test_pruner_real_telegram_uids_not_flagged()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_pruner_short_numeric_ids_are_test_fixtures()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_real_uid_writes_unblocked()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_record_activity_mirror_handles_delimiter_chars_in_username()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_record_activity_mirror_is_single_line_for_multiline_message()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_record_activity_mirrors_to_contributor_daily_log()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_record_activity_stores_bot_id_none_when_omitted()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_record_activity_stores_bot_id_when_provided()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_records_known_collaborator()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_summary_counts()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_summary_empty_when_no_file()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_summary_handles_non_numeric_timestamps()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_summary_last_activity_is_latest_timestamp()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_telegram_executor.py]] - code - gateway/tests/test_telegram_executor.py
+- [[test_test_user_prefix_blocked()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_unknown_user_is_skipped()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_unknown_user_recorded_when_dynamic_tracking_enabled()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_username_is_normalized_for_log_safety()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_webhook_receiver_passes_agent_id_as_bot_id()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[tracker()]] - code - gateway/tests/test_collaborator_tracker.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -123,37 +131,93 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 174 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 11 edges to [[_COMMUNITY_RateLimiter]]
-- 8 edges to [[_COMMUNITY_BlockingPipeline]]
-- 7 edges to [[_COMMUNITY_TestNoResponseGuarantee]]
-- 5 edges to [[_COMMUNITY_lifespan.py]]
-- 5 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 4 edges to [[_COMMUNITY_.test_collaborator_allowlist_bypass_request_is_b]]
+- 20 edges to [[_COMMUNITY_ResourceGuard]]
+- 9 edges to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
+- 9 edges to [[_COMMUNITY_TrustManager]]
+- 9 edges to [[_COMMUNITY_RBACConfig]]
+- 8 edges to [[_COMMUNITY_ModeRequest]]
+- 8 edges to [[_COMMUNITY_MemoryIntegrityMonitor]]
+- 6 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 6 edges to [[_COMMUNITY_test_mfa_guard.py]]
+- 6 edges to [[_COMMUNITY_lifespan.py]]
+- 6 edges to [[_COMMUNITY_MiddlewareManager]]
+- 5 edges to [[_COMMUNITY_EgressPolicy]]
+- 4 edges to [[_COMMUNITY_ApprovalRequest]]
+- 4 edges to [[_COMMUNITY_canvas_proxy_app()]]
+- 4 edges to [[_COMMUNITY_GitGuard]]
+- 4 edges to [[_COMMUNITY_SOCWebSocketHandler]]
+- 4 edges to [[_COMMUNITY_ServiceManager]]
+- 4 edges to [[_COMMUNITY_PrivacyPolicyEnforcer]]
+- 4 edges to [[_COMMUNITY_AgentShroud Access Control Matrix]]
 - 4 edges to [[_COMMUNITY_AsyncMock]]
-- 4 edges to [[_COMMUNITY_TestFileDownload]]
-- 4 edges to [[_COMMUNITY_TestFullAccessMiddlewareBypass]]
-- 4 edges to [[_COMMUNITY_TestStrangerRateLimit]]
-- 3 edges to [[_COMMUNITY_.test_collaborator_cross_user_messaging_request_]]
-- 2 edges to [[_COMMUNITY_.test_owner_deny_without_target_auto_selects_sin]]
-- 2 edges to [[_COMMUNITY_.test_blocked_command_with_zero_width_mention_an]]
-- 2 edges to [[_COMMUNITY_.test_allowed_collaborator_model_command_with_me]]
-- 2 edges to [[_COMMUNITY_.test_collaborator_web_access_request_queues_own]]
-- 2 edges to [[_COMMUNITY_.test_collaborator_sensitive_path_probe_shell_st]]
-- 2 edges to [[_COMMUNITY_.test_collaborator_metadata_endpoint_probe_is_bl]]
-- 2 edges to [[_COMMUNITY_.test_collaborator_incremental_exfil_request_is_]]
-- 2 edges to [[_COMMUNITY_.test_collaborator_plugin_discovery_request_is_b]]
-- 2 edges to [[_COMMUNITY_.test_collaborator_hidden_channel_exfil_request_]]
-- 2 edges to [[_COMMUNITY_.test_collaborator_service_control_request_is_bl]]
-- 2 edges to [[_COMMUNITY_.test_collaborator_approval_action_request_is_bl]]
-- 2 edges to [[_COMMUNITY_.test_owner_revoke_command_requires_target_user_]]
-- 1 edge to [[_COMMUNITY_SSHProxy]]
-- 1 edge to [[_COMMUNITY_TestBotIsMentioned]]
-- 1 edge to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
+- 4 edges to [[_COMMUNITY_ContainerEngine]]
+- 4 edges to [[_COMMUNITY_DataExfilVolumeGuard]]
+- 4 edges to [[_COMMUNITY_RateLimitGuard]]
+- 3 edges to [[_COMMUNITY_chatbotmain.py]]
+- 3 edges to [[_COMMUNITY_GroupApprovalRouter]]
+- 3 edges to [[_COMMUNITY_TeamsConfig]]
+- 3 edges to [[_COMMUNITY_test_e2e_proxy.py]]
+- 3 edges to [[_COMMUNITY_PortManager]]
+- 3 edges to [[_COMMUNITY_voice_task]]
+- 3 edges to [[_COMMUNITY_KeyVaultConfig]]
+- 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 3 edges to [[_COMMUNITY_CredentialInjector]]
+- 3 edges to [[_COMMUNITY_GitHub Copilot CLI Setup Guide]]
+- 2 edges to [[_COMMUNITY_DNSBlocklist]]
+- 2 edges to [[_COMMUNITY_test_daily_cve_report.py]]
+- 2 edges to [[_COMMUNITY_soc.js]]
+- 2 edges to [[_COMMUNITY_test_llm_proxy_local_parity.py]]
+- 2 edges to [[_COMMUNITY_TrustManager]]
+- 2 edges to [[_COMMUNITY_load_config()]]
+- 2 edges to [[_COMMUNITY_WebProxyConfig]]
+- 2 edges to [[_COMMUNITY_IEC 62443 Compliance Matrix — AgentShroud]]
+- 2 edges to [[_COMMUNITY_CronStateMonitor]]
+- 2 edges to [[_COMMUNITY_make_event()]]
+- 2 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 2 edges to [[_COMMUNITY_ReportStore]]
+- 2 edges to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
+- 2 edges to [[_COMMUNITY_EgressApprovalQueue]]
+- 2 edges to [[_COMMUNITY_EgressFilter]]
+- 2 edges to [[_COMMUNITY_BotConfig]]
+- 2 edges to [[_COMMUNITY_AgentShroud Security Value Proposition - REVISED]]
+- 2 edges to [[_COMMUNITY_hermesskillsi-crSKILL]]
+- 2 edges to [[_COMMUNITY_Local-Model Job Quality Matrix]]
+- 2 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 2 edges to [[_COMMUNITY_SSHProxy]]
+- 2 edges to [[_COMMUNITY__make_proxy()]]
+- 2 edges to [[_COMMUNITY_SecureBrowser Skill]]
+- 1 edge to [[_COMMUNITY_Deploying AgentShroud on Linux (x86_64  aarch64]]
+- 1 edge to [[_COMMUNITY_falco_monitor.py]]
+- 1 edge to [[_COMMUNITY_EncryptedStore]]
+- 1 edge to [[_COMMUNITY_lvgl_kawaii_face.c]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
+- 1 edge to [[_COMMUNITY_test_runtime_engines.py]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ — Trademark Prior Use Record]]
+- 1 edge to [[_COMMUNITY_SkillGuard]]
+- 1 edge to [[_COMMUNITY_Phase 3 MITIGATE (Rollback First!)]]
+- 1 edge to [[_COMMUNITY_MultiHostResult]]
+- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
+- 1 edge to [[_COMMUNITY_What You Must Do When Invoked]]
+- 1 edge to [[_COMMUNITY_agentshroud-bot]]
+- 1 edge to [[_COMMUNITY_LLMProxy]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_TestBenchmarkRegression]]
+- 1 edge to [[_COMMUNITY_PipelineAction]]
+- 1 edge to [[_COMMUNITY_FileSandbox]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ — Project Knowledge Base]]
+- 1 edge to [[_COMMUNITY_AgentShroud Schema Documentation]]
+- 1 edge to [[_COMMUNITY_Gateway Container Startup Failures]]
+- 1 edge to [[_COMMUNITY_test_ptt_state.c]]
+- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps Agent]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY_Mode A — Single task]]
+- 1 edge to [[_COMMUNITY_sidecar.py]]
+- 1 edge to [[_COMMUNITY_TestGroupMemoryNamespaceIsolation]]
 
 ## Top bridge nodes
-- [[_wrap_response()]] - degree 233, connects to 21 communities
-- [[test_telegram_proxy_inbound.py]] - degree 28, connects to 13 communities
-- [[TestProgressiveLockdownUX]] - degree 28, connects to 4 communities
-- [[TestGroupMentionFilter]] - degree 12, connects to 4 communities
-- [[TestPerBotGroupMentionFilter]] - degree 12, connects to 4 communities
+- [[lifespan.py]] - degree 134, connects to 69 communities
+- [[lifespan()_1]] - degree 84, connects to 50 communities
+- [[CollaboratorActivityTracker]] - degree 52, connects to 13 communities
+- [[FastAPI_1]] - degree 11, connects to 7 communities
+- [[TestTrackerGetHealth]] - degree 8, connects to 2 communities

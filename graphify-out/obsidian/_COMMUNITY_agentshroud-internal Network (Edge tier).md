@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[agentshroud-internal Network (Edge tier)]] - code - docker/docker-compose.yml
+- [[ui_face.h]] - code - firmware/voice-terminal/main/ui_face.h
 
 ## Live Query (requires Dataview plugin)
 

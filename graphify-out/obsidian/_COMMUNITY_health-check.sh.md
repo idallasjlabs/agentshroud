@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.83
-members: 4
+cohesion: 0.67
+members: 3
 ---
 
 # health-check.sh
 
-**Cohesion:** 0.83 - tightly connected
-**Members:** 4 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[check_fail()]] - code - docker/scripts/health-check.sh
-- [[check_pass()]] - code - docker/scripts/health-check.sh
-- [[health-check.sh]] - code - docker/scripts/health-check.sh
-- [[health-check.sh script]] - code - docker/scripts/health-check.sh
+- [[competitive-analysis.md (bot workspace competitive-intel source of truth)]] - document - docker/config/openclaw/workspace/competitive-analysis.md
+- [[hermes-soul.md (Hermes system identity)]] - document - docker/config/openclaw/agents/hermes-soul.md
+- [[openclaw-identity.md (OpenClaw bot identity)]] - document - docker/config/openclaw/agents/openclaw-identity.md
 
 ## Live Query (requires Dataview plugin)
 

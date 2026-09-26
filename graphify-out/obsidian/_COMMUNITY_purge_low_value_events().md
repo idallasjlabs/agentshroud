@@ -1,27 +1,27 @@
 ---
 type: community
-cohesion: 0.30
+cohesion: 0.17
 members: 12
 ---
 
 # purge_low_value_events()
 
-**Cohesion:** 0.30 - loosely connected
+**Cohesion:** 0.17 - loosely connected
 **Members:** 12 nodes
 
 ## Members
-- [[.test_idempotent_rerun_finds_nothing_left()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_missing_db_reported_not_raised()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_no_matching_rows_is_a_clean_noop()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_processes_in_multiple_batches()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_purges_only_matching_event_type_and_severity()]] - code - gateway/tests/test_audit_archive.py
-- [[Archive+delete ALL rows matching (event_type, severity), regardless of age.]] - rationale - gateway/security/audit_archive.py
-- [[TestPurgeLowValueEvents]] - code - gateway/tests/test_audit_archive.py
-- [[_make_mixed_live_db()]] - code - gateway/tests/test_audit_archive.py
-- [[n_noisy events of (egress_filter, INFO); n_denies of (egress_filter, HIGH);]] - rationale - gateway/tests/test_audit_archive.py
-- [[now()_11]] - code - gateway/tests/test_audit_archive.py
-- [[purge_low_value_events()]] - code - gateway/security/audit_archive.py
-- [[test_audit_archive.py]] - code - gateway/tests/test_audit_archive.py
+- [[._check_budget()]] - code - gateway/security/subagent_governance.py
+- [[.authorize_tool()]] - code - gateway/security/subagent_governance.py
+- [[.record_api_call()]] - code - gateway/security/subagent_governance.py
+- [[.record_egress()]] - code - gateway/security/subagent_governance.py
+- [[.record_tokens()]] - code - gateway/security/subagent_governance.py
+- [[.record_tool_call()]] - code - gateway/security/subagent_governance.py
+- [[Check if a resource budget is exceeded.]] - rationale - gateway/security/subagent_governance.py
+- [[Check if a subagent is allowed to use a specific tool.]] - rationale - gateway/security/subagent_governance.py
+- [[Record a tool invocation.]] - rationale - gateway/security/subagent_governance.py
+- [[Record an LLM API call.]] - rationale - gateway/security/subagent_governance.py
+- [[Record outbound data volume.]] - rationale - gateway/security/subagent_governance.py
+- [[Record token consumption. Returns (within_budget, message).]] - rationale - gateway/security/subagent_governance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,8 +31,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_archive_old_events()]]
+- 6 edges to [[_COMMUNITY_Quick Reference — AgentShroud]]
+- 2 edges to [[_COMMUNITY_TestCanvasAuthHelpers]]
 
 ## Top bridge nodes
-- [[purge_low_value_events()]] - degree 10, connects to 1 community
-- [[test_audit_archive.py]] - degree 8, connects to 1 community
+- [[._check_budget()]] - degree 8, connects to 2 communities
+- [[.authorize_tool()]] - degree 4, connects to 2 communities
+- [[.record_api_call()]] - degree 3, connects to 1 community
+- [[.record_egress()]] - degree 3, connects to 1 community
+- [[.record_tokens()]] - degree 3, connects to 1 community

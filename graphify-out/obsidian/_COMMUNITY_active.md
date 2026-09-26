@@ -1,20 +1,20 @@
 ---
 type: community
-cohesion: 0.50
+cohesion: 0.40
 members: 5
 ---
 
 # active
 
-**Cohesion:** 0.50 - moderately connected
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[active]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
-- [[compacting (token count approaches reserveTokensFloor, 196K of 200K)]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
-- [[fresh (container starts, new session created)]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
-- [[idle (health monitor 300s interval)]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
-- [[reset (new session UUID created, previous archived)]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
+- [[.test_compose_text_empty_when_absent()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_compose_text_skips_unreadable_then_reads()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_security_scan_sh_empty_when_absent()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_security_scan_sh_read()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestTextReaders]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +22,12 @@ members: 5
 TABLE source_file, type FROM #community/active
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_TestMultilingualInjection]]
+- 1 edge to [[_COMMUNITY_wazuh_client.py]]
+
+## Top bridge nodes
+- [[TestTextReaders]] - degree 5, connects to 1 community
+- [[.test_compose_text_skips_unreadable_then_reads()]] - degree 2, connects to 1 community
+- [[.test_security_scan_sh_read()]] - degree 2, connects to 1 community

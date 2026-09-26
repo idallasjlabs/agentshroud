@@ -10,20 +10,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[ConsentFramework.add_to_blacklist(command)  remove_from_blacklist(command)]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
-- [[ConsentFramework.add_to_whitelist(command)  remove_from_whitelist(command)]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
-- [[ConsentFramework.get_whitelist()  get_blacklist()]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
-- [[ConsentFramework.validate_config(config)]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
-- [[Function Details_39]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
-- [[Key Classes  Functions_41]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
-- [[Purpose_170]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
-- [[Related_45]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
-- [[Responsibilities_42]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
-- [[Secret Patterns in Environment Variables]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
-- [[Shell Injection Patterns Detected]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
-- [[Threat Model_25]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
-- [[consent_framework.py_2]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
-- [[consent_framework.py_1]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[1. Pull Latest Code]] - document - docs/runbooks/deployment.md
+- [[2. Run Tests]] - document - docs/runbooks/deployment.md
+- [[3. Update Dependencies (if changed)]] - document - docs/runbooks/deployment.md
+- [[4. Build Containers]] - document - docs/runbooks/deployment.md
+- [[5. Deploy]] - document - docs/runbooks/deployment.md
+- [[6. Verify_3]] - document - docs/runbooks/deployment.md
+- [[Deployment Runbook — AgentShroud]] - document - docs/runbooks/deployment.md
+- [[Environment Variables]] - document - docs/runbooks/deployment.md
+- [[First-Time Setup]] - document - docs/runbooks/deployment.md
+- [[Prerequisites_8]] - document - docs/runbooks/deployment.md
+- [[Quick Summary]] - document - docs/runbooks/deployment.md
+- [[Rolling Back]] - document - docs/runbooks/deployment.md
+- [[Standard Deployment]] - document - docs/runbooks/deployment.md
+- [[Version Tagging]] - document - docs/runbooks/deployment.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,3 +31,13 @@ members: 14
 TABLE source_file, type FROM #community/consent_frameworkpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Kill Switch Procedure]]
+- 1 edge to [[_COMMUNITY_Google Calendar & Contacts - Quick Setup]]
+- 1 edge to [[_COMMUNITY_Pre-Deployment Checklist]]
+- 1 edge to [[_COMMUNITY_validate_network_security()]]
+
+## Top bridge nodes
+- [[Environment Variables]] - degree 4, connects to 3 communities
+- [[Deployment Runbook — AgentShroud]] - degree 7, connects to 1 community

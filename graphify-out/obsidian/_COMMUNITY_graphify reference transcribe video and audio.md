@@ -10,9 +10,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[.agentsskillsgraphifyreferencestranscribe]] - document - .agents/skills/graphify/references/transcribe.md
-- [[Step 2.5 - Transcribe video  audio files (only if video files detected)]] - document - .agents/skills/graphify/references/transcribe.md
-- [[graphify reference transcribe video and audio]] - document - .agents/skills/graphify/references/transcribe.md
+- [[.test_handle_callback_approve_1h()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_handle_callback_approve_4h()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[Test handling 1-hour time-limited approval callback.]] - rationale - gateway/tests/test_egress_telegram_notify.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +20,10 @@ members: 3
 TABLE source_file, type FROM #community/graphify_reference_transcribe_video_and_audio
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_ConfigIntegrityMonitor]]
+
+## Top bridge nodes
+- [[.test_handle_callback_approve_1h()]] - degree 2, connects to 1 community
+- [[.test_handle_callback_approve_4h()]] - degree 2, connects to 1 community

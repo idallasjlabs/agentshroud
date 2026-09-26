@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.67
+members: 3
 ---
 
 # logs.sh
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[logs.sh]] - code - docker/scripts/logs.sh
-- [[logs.sh script]] - code - docker/scripts/logs.sh
-- [[restart.sh]] - code - docker/scripts/restart.sh
-- [[restart.sh script]] - code - docker/scripts/restart.sh
+- [[Trillian Host Compose Override]] - document - docker/docker-compose.agentshroud-bot.trillian.yml
+- [[upgrade.sh]] - code - docker/upgrade.sh
+- [[upgrade.sh script]] - code - docker/upgrade.sh
 
 ## Live Query (requires Dataview plugin)
 

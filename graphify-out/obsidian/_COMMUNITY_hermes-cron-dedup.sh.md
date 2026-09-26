@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[hermes-cron-dedup.sh_1]] - code - docker/scripts/hermes-cron-dedup.sh
-- [[hermes-cron-dedup.sh script_1]] - code - docker/scripts/hermes-cron-dedup.sh
+- [[v0.8.0 Comprehensive Wiring Audit]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[v0.8.0 Watchtower Complete Feature List Final]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
 
 ## Live Query (requires Dataview plugin)
 

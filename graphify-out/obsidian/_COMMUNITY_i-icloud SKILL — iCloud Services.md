@@ -10,13 +10,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[1Password credential store]] - concept - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[calendar.js — iCloud Calendar Management]] - code - docker/config/hermes/skills/i-icloud/scripts/calendar.js
-- [[i-icloud README — iCloud Data Manager (ICLOUD)]] - document - docker/config/hermes/skills/i-icloud/README.md
-- [[i-icloud SKILL — iCloud Services]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[scriptscontacts.js]] - concept - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[scriptsmail.js]] - concept - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[scriptsnotes.js]] - concept - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[.client()_3]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_install()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_installer_page()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_prerequisites()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_runtimes()]] - code - gateway/tests/test_runtime_engines.py
+- [[Installer must not fake completion SCRUM-107.          The endpoint has no auto]] - rationale - gateway/tests/test_runtime_engines.py
+- [[TestInstallerAPI]] - code - gateway/tests/test_runtime_engines.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +24,12 @@ members: 7
 TABLE source_file, type FROM #community/i-icloud_SKILL__iCloud_Services
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 3 edges to [[_COMMUNITY_export-bot-conversations.py]]
+- 1 edge to [[_COMMUNITY_iCloud Services]]
+- 1 edge to [[_COMMUNITY_DELIVERABLE 1 — Domain-by-Domain Assessment]]
+- 1 edge to [[_COMMUNITY_GatewayEmailService]]
+
+## Top bridge nodes
+- [[TestInstallerAPI]] - degree 11, connects to 4 communities

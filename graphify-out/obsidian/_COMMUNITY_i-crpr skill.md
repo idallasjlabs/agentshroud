@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[i-crpr skill]] - concept - docker/config/hermes/skills/i-ab/SKILL.md
+- [[docker-compose.yml_2]] - document - docker/docker-compose.yml
 
 ## Live Query (requires Dataview plugin)
 

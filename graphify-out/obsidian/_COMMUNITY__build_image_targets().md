@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.18
+cohesion: 0.13
 members: 15
 ---
 
 # _build_image_targets()
 
-**Cohesion:** 0.18 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[._no_docker()_2]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_always_includes_every_configured_bot_image()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_always_includes_gateway_image()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_deduplication()_2]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_env_var_adds_extra_targets()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_env_var_empty_string_ignored()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_gateway_container_name_is_env_overridable()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_whitespace_stripped_from_env_var()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[Deployments that rename the gateway container (dev runs         agentshroud-marv]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[Empty AGENTSHROUD_TRIVY_IMAGES adds no extra entries beyond         gateway + th]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[Path_14]] - code
-- [[Pin _running_image to the docker-unavailable fallback path so these         test]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[Regression guard AGENTSHROUD_TRIVY_IMAGES used to be the ONLY         source of]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[TestBuildImageTargets_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[_build_image_targets()]] - code - gateway/security/daily_cve_report.py
+- [[Action Feed]] - document - dashboard/README.md
+- [[ActionFeed Component (Live Action Stream)]] - concept - dashboard/README.md
+- [[AgentShroud Dashboard]] - document - dashboard/README.md
+- [[Components (to be implemented in Week 2)]] - document - dashboard/README.md
+- [[Data Ledger Viewer]] - document - dashboard/README.md
+- [[DataLedger Component (Forwarded Content Viewer)]] - concept - dashboard/README.md
+- [[Features_1]] - document - dashboard/README.md
+- [[Implementation Status_1]] - document - dashboard/README.md
+- [[KillSwitch Component (Emergency Halt)]] - concept - dashboard/README.md
+- [[Memory Browser]] - document - dashboard/README.md
+- [[MemoryViewer Component (MEMORY.md Browser)]] - concept - dashboard/README.md
+- [[Network Inspector]] - document - dashboard/README.md
+- [[NetworkInspector Component (Outbound Request Monitor)]] - concept - dashboard/README.md
+- [[README_40]] - document - dashboard/README.md
+- [[Tech Stack]] - document - dashboard/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,11 +34,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_test_daily_cve_report.py]]
-- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
-- 1 edge to [[_COMMUNITY__build_image_targets]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition]]
+- 1 edge to [[_COMMUNITY_TestFullAccessMiddlewareBypass]]
 
 ## Top bridge nodes
-- [[_build_image_targets()]] - degree 12, connects to 2 communities
-- [[Path_14]] - degree 3, connects to 2 communities
-- [[TestBuildImageTargets_1]] - degree 9, connects to 1 community
+- [[Features_1]] - degree 6, connects to 1 community
+- [[NetworkInspector Component (Outbound Request Monitor)]] - degree 2, connects to 1 community

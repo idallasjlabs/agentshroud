@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[egress-iptables.sh]] - code - scripts/egress-iptables.sh
-- [[egress-iptables.sh script]] - code - scripts/egress-iptables.sh
+- [[.test_truncated_model_sentence_is_rewritten_to_active_model_hint()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Truncated 'current model' replies should be rewritten to deterministic model hin]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +19,11 @@ members: 2
 TABLE source_file, type FROM #community/egress-iptablessh
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY__make_proxy()]]
+
+## Top bridge nodes
+- [[.test_truncated_model_sentence_is_rewritten_to_active_model_hint()]] - degree 4, connects to 3 communities

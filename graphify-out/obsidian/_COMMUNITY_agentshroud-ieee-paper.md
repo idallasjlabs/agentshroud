@@ -1,38 +1,39 @@
 ---
 type: community
-cohesion: 0.10
-members: 23
+cohesion: 0.08
+members: 24
 ---
 
 # agentshroud-ieee-paper.md
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 23 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 24 nodes
 
 ## Members
-- [[AgentShroud Threat Model (L-1..L-4 Loss Categories)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Agents Rule of Two]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[CVE-2026-22708 (Indirect Prompt Injection via Web Browsing)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[CVE-2026-25253 (OpenClaw RCE)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[DNS-Layer Enforcement]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Debenedetti et al., The Attacker Moves Second (2025)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[Leveson, Engineering a Safer World (2012)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[Log-To-Leak MCP Exfiltration Attack]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[MCP Proxy Layer]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Microsoft Presidio PII Detection Engine]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[MiddlewareManager (35 Modules)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Mutual TLS Container Communication]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[NanoClaw Agent Platform]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[OpenClaw Agent Platform]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[PII Sanitizer_1]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Pi-hole DNS Filtering]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Prompt Injection Defense (Ensemble of 20+ Patterns)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[SecurityPipeline (8-Guard Ordered Sequence)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[ToolHijacker Attack]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Transparent Proxy Architecture]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Zetherion AI Platform]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[agentshroud-ieee-paper]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[step-ca Private Certificate Authority]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[25-Domain Prompt Injection Defense Framework]] - concept - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[AgentShroud Security Overview v0.8.0]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
+- [[AgentShroud v1.0.0 Fortress Release Announcement]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
+- [[Awesome-List PR Templates]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
+- [[Before & After Security Finding Remediation]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
+- [[Enforce-by-Default Security Philosophy (ADR-009)]] - rationale - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[GitHub Release Notes]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
+- [[IEC 62443 Alignment (FR3 SL3, FR6 SL3, FR7 SL2)]] - concept - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
+- [[LinkedIn Post]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
+- [[Memory Refresh Context]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
+- [[Notes_1]] - document - docs/planning/v1.0/POST_FABLE5_TASK_DELEGATION.md
+- [[POST_FABLE5_TASK_DELEGATION]] - document - docs/planning/v1.0/POST_FABLE5_TASK_DELEGATION.md
+- [[RELEASE-ANNOUNCEMENT-v1.0.0]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
+- [[Security Assessment v0.8.0]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
+- [[Task list]] - document - docs/planning/v1.0/POST_FABLE5_TASK_DELEGATION.md
+- [[Test Coverage Summary (Post-Remediation)]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
+- [[agentshroud-security-overview-v0.8.0]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
+- [[awesome-ai-security]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
+- [[awesome-llm-apps  awesome-llm]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
+- [[awesome-security  defensive security list]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
+- [[v0.8.0 25-Domain Prompt Injection Defense Assessment]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[v0.9.0  v1.0.0 Roadmap]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
+- [[v0.9.0 — Production Hardening]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
+- [[v1.0.0 — Zero-Trust Compute]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,9 +43,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_STPA-Sec Analysis of AgentShroud]]
-- 1 edge to [[_COMMUNITY_AgentShroud A Transparent Proxy Framework for E]]
-- 1 edge to [[_COMMUNITY_Backup & Restore Runbook — AgentShroud]]
+- 1 edge to [[_COMMUNITY_test_hermes_cron_seed.py]]
 
 ## Top bridge nodes
-- [[agentshroud-ieee-paper]] - degree 24, connects to 3 communities
+- [[v0.8.0 25-Domain Prompt Injection Defense Assessment]] - degree 5, connects to 1 community

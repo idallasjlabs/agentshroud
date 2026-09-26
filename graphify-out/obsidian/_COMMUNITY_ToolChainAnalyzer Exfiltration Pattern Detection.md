@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ToolChainAnalyzer Exfiltration Pattern Detection Tests]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[pre-commit (gitleaks + git-secrets gate)]] - code - .llm_settings/git-hooks/pre-commit
 
 ## Live Query (requires Dataview plugin)
 

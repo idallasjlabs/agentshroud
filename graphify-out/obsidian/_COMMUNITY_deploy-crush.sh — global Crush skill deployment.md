@@ -1,18 +1,18 @@
 ---
 type: community
-cohesion: 0.67
+cohesion: 1.00
 members: 3
 ---
 
 # deploy-crush.sh — global Crush skill deployment
 
-**Cohesion:** 0.67 - moderately connected
+**Cohesion:** 1.00 - tightly connected
 **Members:** 3 nodes
 
 ## Members
-- [[deploy-crush.sh — global Crush skill deployment]] - concept - .llm_settings/scripts/README.md
-- [[deploy-opencode.sh — global OpenCode agent deployment]] - concept - .llm_settings/scripts/README.md
-- [[i- prefix rename of all 58 skills]] - rationale - .llm_settings/UPGRADE_LOG.md
+- [[check()_6]] - code - tests/startup_smoke/test_bot_boot_static.sh
+- [[test_bot_boot_static.sh]] - code - tests/startup_smoke/test_bot_boot_static.sh
+- [[test_bot_boot_static.sh script]] - code - tests/startup_smoke/test_bot_boot_static.sh
 
 ## Live Query (requires Dataview plugin)
 

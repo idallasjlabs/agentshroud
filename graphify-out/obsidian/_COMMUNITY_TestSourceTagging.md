@@ -1,22 +1,21 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.47
+members: 6
 ---
 
 # TestSourceTagging
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.47 - moderately connected
+**Members:** 6 nodes
 
 ## Members
-- [[.guard()]] - code - gateway/tests/test_context_guard.py
-- [[.test_empty_provenance_for_unknown_session()]] - code - gateway/tests/test_context_guard.py
-- [[.test_segment_hash_integrity()]] - code - gateway/tests/test_context_guard.py
-- [[.test_segment_provenance_ordering()]] - code - gateway/tests/test_context_guard.py
-- [[.test_segment_tagging_basic()]] - code - gateway/tests/test_context_guard.py
-- [[.test_separate_sessions_isolated()]] - code - gateway/tests/test_context_guard.py
-- [[TestSourceTagging]] - code - gateway/tests/test_context_guard.py
+- [[check()_2]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[container-runtime.sh (detection shim)]] - code - scripts/lib/container-runtime.sh
+- [[make_fake_bin()]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[run_detect()]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[test-container-runtime.sh]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[test-container-runtime.sh script]] - code - scripts/smoke.d/test-container-runtime.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,12 +23,3 @@ members: 7
 TABLE source_file, type FROM #community/TestSourceTagging
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_check_message()]]
-- 1 edge to [[_COMMUNITY_ContextSegment]]
-
-## Top bridge nodes
-- [[TestSourceTagging]] - degree 9, connects to 3 communities
-- [[.guard()]] - degree 2, connects to 1 community

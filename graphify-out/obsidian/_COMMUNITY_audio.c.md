@@ -1,24 +1,24 @@
 ---
 type: community
-cohesion: 0.33
+cohesion: 0.42
 members: 9
 ---
 
 # audio.c
 
-**Cohesion:** 0.33 - loosely connected
+**Cohesion:** 0.42 - moderately connected
 **Members:** 9 nodes
 
 ## Members
-- [[audio.c]] - code - firmware/voice-terminal/main/audio.c
-- [[audio_capture_frame()]] - code - firmware/voice-terminal/main/audio.c
-- [[audio_get_saved_volume()]] - code - firmware/voice-terminal/main/audio.c
-- [[audio_init()]] - code - firmware/voice-terminal/main/audio.c
-- [[audio_play()]] - code - firmware/voice-terminal/main/audio.c
-- [[audio_preinit()]] - code - firmware/voice-terminal/main/audio.c
-- [[audio_set_volume()]] - code - firmware/voice-terminal/main/audio.c
-- [[audio_volume_tick()]] - code - firmware/voice-terminal/main/audio.c
-- [[esp_err_t_6]] - code - firmware/voice-terminal/main/audio.c
+- [[Best-effort plain-language gloss of a 5-field cron expression.]] - rationale - scripts/generate-job-schedule.py
+- [[describe_cron()]] - code - scripts/generate-job-schedule.py
+- [[docker_exec()]] - code - scripts/generate-job-schedule.py
+- [[fmt_ts()]] - code - scripts/generate-job-schedule.py
+- [[generate-job-schedule.py]] - code - scripts/generate-job-schedule.py
+- [[load_hermes_jobs()]] - code - scripts/generate-job-schedule.py
+- [[load_openclaw_jobs()]] - code - scripts/generate-job-schedule.py
+- [[main()_22]] - code - scripts/generate-job-schedule.py
+- [[render_html()]] - code - scripts/generate-job-schedule.py
 
 ## Live Query (requires Dataview plugin)
 

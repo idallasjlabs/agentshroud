@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[auto_format_python.sh]] - code - .claude/scripts/claude-hooks/auto_format_python.sh
-- [[auto_format_python.sh script]] - code - .claude/scripts/claude-hooks/auto_format_python.sh
+- [[plan_2]] - document - skills/custom/agentshroud-blueteam/references/steve-hay-plan.md
+- [[steve-hay-plan]] - document - skills/custom/agentshroud-blueteam/references/steve-hay-plan.md
 
 ## Live Query (requires Dataview plugin)
 

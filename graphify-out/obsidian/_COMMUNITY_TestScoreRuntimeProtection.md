@@ -1,20 +1,19 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.50
+members: 4
 ---
 
 # TestScoreRuntimeProtection
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[.test_five_running_zero_findings()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_four_running_with_noncritical_findings()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_one_when_not_run()_2]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_two_with_criticals()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreRuntimeProtection]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.shutdown()]] - code - gateway/proxy/mcp_proxy.py
+- [[.stop()_3]] - code - gateway/proxy/mcp_proxy.py
+- [[.stop_all()]] - code - gateway/proxy/mcp_proxy.py
+- [[Clean shutdown — close all connections.]] - rationale - gateway/proxy/mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +23,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_scorecard_scoring.py]]
+- 2 edges to [[_COMMUNITY_test_voice_gateway.py]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy_local_parity.py]]
 
 ## Top bridge nodes
-- [[TestScoreRuntimeProtection]] - degree 5, connects to 1 community
+- [[.stop_all()]] - degree 3, connects to 1 community
+- [[.shutdown()]] - degree 3, connects to 1 community
+- [[.stop()_3]] - degree 2, connects to 1 community

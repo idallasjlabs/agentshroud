@@ -1,94 +1,92 @@
 ---
 type: community
-cohesion: 0.04
-members: 79
+cohesion: 0.03
+members: 77
 ---
 
 # URLAnalyzer
 
-**Cohesion:** 0.04 - loosely connected
-**Members:** 79 nodes
+**Cohesion:** 0.03 - loosely connected
+**Members:** 77 nodes
 
 ## Members
-- [[.__init__()_157]] - code - gateway/proxy/url_analyzer.py
-- [[.__init__()_153]] - code - gateway/proxy/web_content_scanner.py
-- [[._check_base64()]] - code - gateway/proxy/url_analyzer.py
-- [[._is_private_ip()_1]] - code - gateway/proxy/url_analyzer.py
-- [[._is_ssrf()]] - code - gateway/proxy/url_analyzer.py
-- [[._resolve_host()]] - code - gateway/proxy/url_analyzer.py
-- [[._scan_encoded_payloads()]] - code - gateway/proxy/web_content_scanner.py
-- [[._scan_hidden_content()]] - code - gateway/proxy/web_content_scanner.py
-- [[._scan_pii()]] - code - gateway/proxy/web_content_scanner.py
-- [[._scan_prompt_injection()]] - code - gateway/proxy/web_content_scanner.py
-- [[._scan_zero_width()]] - code - gateway/proxy/web_content_scanner.py
-- [[.analyze()_1]] - code - gateway/proxy/url_analyzer.py
-- [[.analyze_and_pin()]] - code - gateway/proxy/url_analyzer.py
-- [[.finding_summary()]] - code - gateway/proxy/web_content_scanner.py
-- [[.flagged()_1]] - code - gateway/proxy/url_analyzer.py
-- [[.flagged()]] - code - gateway/proxy/web_content_scanner.py
-- [[.get_stats()_19]] - code - gateway/proxy/web_proxy.py
-- [[.scan()_3]] - code - gateway/proxy/web_content_scanner.py
-- [[.test_actual_base64()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_all_lowercase_not_base64()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_api_endpoint_allowed()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_credit_card_in_url_flagged()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_docs_allowed()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_email_in_url_flagged()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_empty_url()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_github_allowed()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_https_allowed()_1]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_news_site_allowed()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_no_scheme()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_non_base64_chars()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_phone_in_url_flagged()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_public_ip_allowed()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_short_string_not_base64()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_ssn_in_url_flagged()_1]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_stackoverflow_allowed()]] - code - gateway/tests/test_url_analyzer.py
-- [[.test_weird_scheme()]] - code - gateway/tests/test_url_analyzer.py
-- [[.to_dict()_17]] - code - gateway/proxy/web_proxy.py
-- [[A single finding from URL analysis.]] - rationale - gateway/proxy/url_analyzer.py
-- [[A single finding from content scanning.]] - rationale - gateway/proxy/web_content_scanner.py
-- [[Analyze URL and pin resolved IP to mitigate DNS rebinding TOCTOU.          When]] - rationale - gateway/proxy/url_analyzer.py
-- [[Analyze URLs for SSRF, data exfiltration, and suspicious patterns.]] - rationale - gateway/proxy/url_analyzer.py
-- [[Analyze a URL for security issues.          Returns URLAnalysisResult with verdi]] - rationale - gateway/proxy/url_analyzer.py
-- [[Any_80]] - code - gateway/proxy/web_proxy.py
-- [[Args             resolve_dns If True, resolve hostnames to IPs and check those]] - rationale - gateway/proxy/url_analyzer.py
-- [[Check for base64-encoded data in URL path and query values.]] - rationale - gateway/proxy/url_analyzer.py
-- [[Check if an IP address is privatereservedloopback.]] - rationale - gateway/proxy/url_analyzer.py
-- [[Check if hostname is a privatereserved address (SSRF attempt).]] - rationale - gateway/proxy/url_analyzer.py
-- [[ContentFinding]] - code - gateway/proxy/web_content_scanner.py
-- [[Detect zero-width character sequences (steganographic attacks).]] - rationale - gateway/proxy/web_content_scanner.py
-- [[Edge cases and malformed URLs.]] - rationale - gateway/tests/test_url_analyzer.py
-- [[Ensure normal browsing URLs pass through.]] - rationale - gateway/tests/test_url_analyzer.py
-- [[Get proxy statistics._1]] - rationale - gateway/proxy/web_proxy.py
-- [[Heuristic does this string look like base64-encoded data]] - rationale - gateway/proxy/url_analyzer.py
-- [[PII detection in URLs — flagged, not blocked.]] - rationale - gateway/tests/test_url_analyzer.py
-- [[Resolve hostname to IP. Returns None on failure.          NOTE DNS rebinding at]] - rationale - gateway/proxy/url_analyzer.py
-- [[Result of analyzing a URL.]] - rationale - gateway/proxy/url_analyzer.py
-- [[Result of scanning web content.]] - rationale - gateway/proxy/web_content_scanner.py
-- [[Scan HTML for hidden instructions in comments, invisible elements, meta tags.]] - rationale - gateway/proxy/web_content_scanner.py
-- [[Scan content for security issues.          Args             content The web co]] - rationale - gateway/proxy/web_content_scanner.py
-- [[Scan for base64-encoded or otherwise obfuscated payloads.]] - rationale - gateway/proxy/web_content_scanner.py
-- [[Scan for prompt injection patterns.]] - rationale - gateway/proxy/web_content_scanner.py
-- [[Scan response content for PII.]] - rationale - gateway/proxy/web_content_scanner.py
-- [[Scan web content for prompt injection, PII, and hidden payloads.      All findin]] - rationale - gateway/proxy/web_content_scanner.py
-- [[ScanResult_4]] - code - gateway/proxy/web_content_scanner.py
-- [[Test the _looks_like_base64 helper.]] - rationale - gateway/tests/test_url_analyzer.py
-- [[TestBase64Heuristic]] - code - gateway/tests/test_url_analyzer.py
-- [[TestLegitimateURLsAllowed]] - code - gateway/tests/test_url_analyzer.py
-- [[TestMalformedURLs]] - code - gateway/tests/test_url_analyzer.py
-- [[TestPIIInURLs]] - code - gateway/tests/test_url_analyzer.py
-- [[URLAnalysisResult_1]] - code - gateway/proxy/url_analyzer.py
-- [[URLAnalyzer_1]] - code - gateway/proxy/url_analyzer.py
-- [[URLAnalyzer]] - code - gateway/proxy/web_proxy.py
-- [[URLFinding]] - code - gateway/proxy/url_analyzer.py
-- [[WebContentScanner]] - code - gateway/proxy/web_content_scanner.py
-- [[WebContentScanner_1]] - code - gateway/proxy/web_proxy.py
-- [[WebProxyConfig_1]] - code - gateway/proxy/web_proxy.py
-- [[_looks_like_base64()]] - code - gateway/proxy/url_analyzer.py
-- [[analyzer()]] - code - gateway/tests/test_url_analyzer.py
-- [[test_url_analyzer.py]] - code - gateway/tests/test_url_analyzer.py
+- [[.__init__()_72]] - code - gateway/security/dns_filter.py
+- [[._cleanup_rate_window()]] - code - gateway/security/dns_filter.py
+- [[._detect_tunneling()]] - code - gateway/security/dns_filter.py
+- [[._domain_in_allowlist()]] - code - gateway/security/dns_filter.py
+- [[._is_private_ip()_1]] - code - gateway/security/dns_filter.py
+- [[.check()_4]] - code - gateway/security/dns_filter.py
+- [[.check_rebinding()]] - code - gateway/security/dns_filter.py
+- [[.dns_filter()]] - code - gateway/tests/test_dns_filter.py
+- [[.get_audit_log()_3]] - code - gateway/security/dns_filter.py
+- [[.get_flagged_queries()]] - code - gateway/security/dns_filter.py
+- [[.resolve_and_cache()]] - code - gateway/security/dns_filter.py
+- [[.shannon_entropy()]] - code - gateway/security/dns_filter.py
+- [[.test_allowlist_blocks_unlisted_in_enforce()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_allowlist_permits_listed_domain()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_allowlist_permits_subdomain()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_base64_in_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_burst_queries_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_common_services_allowed()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_default_allows_all_domains()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_default_mode_is_enforce()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_empty_string()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_enforce_mode_blocks_tunneling()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_flagged_queries_in_log()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_generous_defaults()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_hex_encoded_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_high_entropy_string()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_high_entropy_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_log_contains_timestamp()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_log_contains_verdict()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_long_but_legitimate_domain()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_low_entropy_string()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_monitor_mode_never_blocks()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_multiple_long_labels_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_no_allowlist_allows_all()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_normal_domain_allowed()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_normal_rate_not_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_private_ip_detection()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_public_ip_not_private()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_queries_logged()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_resolve_and_cache_empty_domain_graceful()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_stable_resolution_passes()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_strict_has_allowlist()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_subdomain_allowed()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_very_long_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[CVE-2026-22172 — WebSocket Scope Self-Declaration]] - rationale - docs/security/cve-mitigation-matrix.md
+- [[CVE-2026-32922 — Token Scope Expansion via device.token.rotate]] - rationale - docs/security/cve-mitigation-matrix.md
+- [[CVE-2026-3690 — Canvas Authentication Bypass]] - rationale - docs/security/cve-mitigation-matrix.md
+- [[DNSFilter]] - code - gateway/security/dns_filter.py
+- [[DNSQuery]] - code - gateway/security/dns_filter.py
+- [[DNSVerdict]] - code - gateway/security/dns_filter.py
+- [[Default mode is enforce after v0.8.0 enforcement hardening.]] - rationale - gateway/tests/test_dns_filter.py
+- [[Even suspicious queries pass in monitor mode.]] - rationale - gateway/tests/test_dns_filter.py
+- [[Known private ranges should be detected.]] - rationale - gateway/tests/test_dns_filter.py
+- [[Public IPs should not be flagged as private.]] - rationale - gateway/tests/test_dns_filter.py
+- [[Resolve domain to an IP and cache it for 5 minutes.]] - rationale - gateway/security/dns_filter.py
+- [[Resolving a domain that fails should return empty string gracefully.]] - rationale - gateway/tests/test_dns_filter.py
+- [[Return True if a DNS rebinding attack is detected.          Re-resolves the doma]] - rationale - gateway/security/dns_filter.py
+- [[Return True if the IP address is in a private  loopback range.]] - rationale - gateway/security/dns_filter.py
+- [[Seeding the same IP twice should not flag rebinding.]] - rationale - gateway/tests/test_dns_filter.py
+- [[TestAuditLogging]] - code - gateway/tests/test_dns_filter.py
+- [[TestDNSAllowlist]] - code - gateway/tests/test_dns_filter.py
+- [[TestDNSFilterConfig]] - code - gateway/tests/test_dns_filter.py
+- [[TestDNSRebinding]] - code - gateway/tests/test_dns_filter.py
+- [[TestDNSTunnelingDetection]] - code - gateway/tests/test_dns_filter.py
+- [[TestEntropyCalculator]] - code - gateway/tests/test_dns_filter.py
+- [[TestNormalDNSResolution]] - code - gateway/tests/test_dns_filter.py
+- [[TestRateLimiting_1]] - code - gateway/tests/test_dns_filter.py
+- [[TunnelingPattern]] - code - gateway/security/dns_filter.py
+- [[cve-mitigation-matrix]] - document - docs/security/cve-mitigation-matrix.md
+- [[default_config()_1]] - code - gateway/tests/test_dns_filter.py
+- [[dns_filter()]] - code - gateway/tests/test_dns_filter.py
+- [[dns_filter.py]] - code - gateway/security/dns_filter.py
+- [[monitor_config()]] - code - gateway/tests/test_dns_filter.py
+- [[monitor_filter()]] - code - gateway/tests/test_dns_filter.py
+- [[strict_config()]] - code - gateway/tests/test_dns_filter.py
+- [[strict_filter()]] - code - gateway/tests/test_dns_filter.py
+- [[test_dns_filter.py]] - code - gateway/tests/test_dns_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -98,18 +96,25 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_Enum]]
-- 9 edges to [[_COMMUNITY_WebProxy]]
-- 6 edges to [[_COMMUNITY_WebProxyConfig]]
-- 4 edges to [[_COMMUNITY_DNSFilterConfig]]
-- 2 edges to [[_COMMUNITY_lifespan.py]]
-- 2 edges to [[_COMMUNITY_TestDataExfiltration]]
-- 2 edges to [[_COMMUNITY_TestSSRFDetection]]
-- 1 edge to [[_COMMUNITY_EgressFilter]]
+- 29 edges to [[_COMMUNITY_TrustManager]]
+- 11 edges to [[_COMMUNITY_lifespan.py]]
+- 2 edges to [[_COMMUNITY_chatbotmain.py]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 2 edges to [[_COMMUNITY_test_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
+- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 1 edge to [[_COMMUNITY_GroupApprovalRouter]]
+- 1 edge to [[_COMMUNITY_FetchOutcome]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_version_routes.py]]
+- 1 edge to [[_COMMUNITY_Seccomp Profiles]]
+- 1 edge to [[_COMMUNITY_test_dashboard_endpoints.py]]
+- 1 edge to [[_COMMUNITY_TestCheckCommandExecution]]
+- 1 edge to [[_COMMUNITY_Skill UI Expert (UI)]]
 
 ## Top bridge nodes
-- [[URLAnalyzer_1]] - degree 28, connects to 7 communities
-- [[WebContentScanner]] - degree 20, connects to 5 communities
-- [[test_url_analyzer.py]] - degree 10, connects to 3 communities
-- [[Any_80]] - degree 6, connects to 2 communities
-- [[URLAnalyzer]] - degree 4, connects to 2 communities
+- [[cve-mitigation-matrix]] - degree 13, connects to 8 communities
+- [[dns_filter.py]] - degree 10, connects to 4 communities
+- [[test_dns_filter.py]] - degree 18, connects to 3 communities
+- [[DNSFilter]] - degree 38, connects to 2 communities
+- [[TestDNSTunnelingDetection]] - degree 10, connects to 2 communities

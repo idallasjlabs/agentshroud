@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[agentshroud-dmz network (reserved, not attached by default)]] - code - docker/docker-compose.yml
+- [[UI Face API Header]] - code - firmware/voice-terminal/main/ui_face.h
 
 ## Live Query (requires Dataview plugin)
 

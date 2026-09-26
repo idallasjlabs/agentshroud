@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[graphify reference extraction subagent prompt_1]] - document - docker/config/hermes/skills/graphify/references/extraction-spec.md
-- [[hermesskillsgraphifyreferencesextraction-spec]] - document - docker/config/hermes/skills/graphify/references/extraction-spec.md
+- [[.test_collaborator_access_not_configured_user_id_leakage_is_redacted_form()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form payload user-id enrollment leakage should also be blocked.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +19,11 @@ members: 2
 TABLE source_file, type FROM #community/hermes/skills/graphify/references/extraction-spe
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY__make_proxy()]]
+
+## Top bridge nodes
+- [[.test_collaborator_access_not_configured_user_id_leakage_is_redacted_form()]] - degree 4, connects to 3 communities

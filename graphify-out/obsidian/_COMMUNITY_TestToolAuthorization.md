@@ -1,22 +1,21 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.33
+members: 6
 ---
 
 # TestToolAuthorization
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[.test_allowed_tool()_1]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_denied_in_monitor_still_allows()_1]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_denied_tool_cronjob()_1]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_denied_tool_delegate_task()_1]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_denied_tool_memory()_1]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_denied_tool_send_message()_1]] - code - gateway/tests/test_subagent_governance.py
-- [[TestToolAuthorization_1]] - code - gateway/tests/test_subagent_governance.py
+- [[.__enter__()_1]] - code - gateway/tests/test_cli_coverage.py
+- [[.__exit__()_1]] - code - gateway/tests/test_cli_coverage.py
+- [[.__init__()_143]] - code - gateway/tests/test_cli_coverage.py
+- [[.read()]] - code - gateway/tests/test_cli_coverage.py
+- [[Context-manager stand-in for the object urlopen() yields.]] - rationale - gateway/tests/test_cli_coverage.py
+- [[_FakeHTTPResponse]] - code - gateway/tests/test_cli_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +25,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Enum]]
+- 1 edge to [[_COMMUNITY_test_voice_stt_model_ab.py]]
+- 1 edge to [[_COMMUNITY_AgentShroud Development Team — Agile Structure]]
 
 ## Top bridge nodes
-- [[TestToolAuthorization_1]] - degree 7, connects to 1 community
+- [[_FakeHTTPResponse]] - degree 7, connects to 2 communities

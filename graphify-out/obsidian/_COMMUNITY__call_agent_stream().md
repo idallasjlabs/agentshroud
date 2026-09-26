@@ -1,71 +1,70 @@
 ---
 type: community
-cohesion: 0.05
-members: 56
+cohesion: 0.08
+members: 55
 ---
 
 # _call_agent_stream()
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 56 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 55 nodes
 
 ## Members
-- [[A connection-level error (not a statustimeout) also falls back to the     troub]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A connection-level error (not a statustimeout) also falls back to the trouble-…]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A non-400 HTTP error (e.g. 500) is a real failure, not the OpenClaw     no-strea]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A read-timeout (worst-case latency) is still recorded, then falls back.]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[A single corrupted SSE line logs a warning and is skipped — it must not     abor]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A stream that goes straight to 'done' with no sentence events (e.g.     everythi]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A turn exceeding the soft threshold is flagged as an outlier.]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[A turn under the soft threshold is recorded as a non-outlier.]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[Agents with no streaming-compatible chat_path (OpenClaw) get a 400 from     the]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Build the ``metadata`` dict attached to a voice ``forward`` request. Default…]] - rationale - voice_gateway/server.py
-- [[DEFAULT OFF forwardstream body carries NO metadata key — byte-for-byte legacy]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[DEFAULT OFF no_memory=False → empty metadata (request unchanged).]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[Emit a structured per-turn latency record for a voice ``forward`` call.…]] - rationale - voice_gateway/server.py
-- [[Exactly at the threshold is NOT an outlier (strict , not =).]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[Mock httpx.Response usable as the yield value of a mocked     AsyncClient.stream]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[Normal (sub-threshold) turns log at INFO, not WARNING.]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[ON forwardstream body carries metadata={no_memory True}.]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[ON no_memory=True → {no_memory True} ephemeral tag.]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[Outliers log at WARNING; normal turns do not.]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[Route a voice utterance to a proxied agent via the AgentShroud gateway's POST…]] - rationale - voice_gateway/server.py
-- [[SSE keepalive comments (' ...') and blank lines are ignored, not     treated as]] - rationale - gateway/tests/test_voice_gateway.py
-- [[The module-level default flag is OFF unless VG_VOICE_NO_MEMORY is set.]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[When soft_threshold_s is omitted it is read from the module config at call time.]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[_call_agent_stream POSTs to forwardstream and yields each sentence     event a]] - rationale - gateway/tests/test_voice_gateway.py
-- [[_call_agent_stream emits a latency record on the success path.]] - rationale - gateway/tests/test_voice_latency_guard.py
-- [[_call_agent_stream()]] - code - voice_gateway/server.py
-- [[_mock_stream_resp()_1]] - code - gateway/tests/test_voice_latency_guard.py
-- [[_record_turn_latency()]] - code - voice_gateway/server.py
-- [[_sse_body()_2]] - code - gateway/tests/test_voice_gateway.py
-- [[_sse_body()_1]] - code - gateway/tests/test_voice_latency_guard.py
-- [[_voice_forward_metadata()]] - code - voice_gateway/server.py
-- [[mock_stream()]] - code - gateway/tests/test_voice_gateway.py
-- [[mock_stream()_5]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_agent_default_body_has_no_metadata()]] - code - gateway/tests/test_voice_latency_guard.py
-- [[test_call_agent_no_memory_on_adds_ephemeral_tag()]] - code - gateway/tests/test_voice_latency_guard.py
-- [[test_call_agent_records_latency_on_read_timeout()]] - code - gateway/tests/test_voice_latency_guard.py
-- [[test_call_agent_records_latency_on_success()]] - code - gateway/tests/test_voice_latency_guard.py
-- [[test_call_agent_stream_empty_stream_yields_nothing()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_agent_stream_generic_http_error_falls_back()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_agent_stream_generic_http_error_falls_back()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_agent_stream_malformed_json_line_skipped_not_fatal()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_agent_stream_non_400_http_error_falls_back()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_agent_stream_non_streaming_agent_returns_telegram_notice()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_agent_stream_non_streaming_agent_returns_telegram_notice()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_agent_stream_skips_blank_and_comment_lines()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_agent_stream_yields_sentences_in_order()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[test_record_turn_latency_boundary_is_not_outlier()]] - code - gateway/tests/test_voice_latency_guard.py
-- [[test_record_turn_latency_default_threshold_from_module()]] - code - gateway/tests/test_voice_latency_guard.py
-- [[test_record_turn_latency_normal_logs_info()]] - code - gateway/tests/test_voice_latency_guard.py
-- [[test_record_turn_latency_normal_not_outlier()]] - code - gateway/tests/test_voice_latency_guard.py
-- [[test_record_turn_latency_outlier_logs_warning()]] - code - gateway/tests/test_voice_latency_guard.py
-- [[test_record_turn_latency_over_threshold_is_outlier()]] - code - gateway/tests/test_voice_latency_guard.py
-- [[test_voice_forward_metadata_default_off_is_empty()]] - code - gateway/tests/test_voice_latency_guard.py
-- [[test_voice_forward_metadata_module_default_is_off()]] - code - gateway/tests/test_voice_latency_guard.py
-- [[test_voice_forward_metadata_on_sets_no_memory_tag()]] - code - gateway/tests/test_voice_latency_guard.py
-- [[test_voice_latency_guard.py]] - code - gateway/tests/test_voice_latency_guard.py
+- [[.__call__()_2]] - code - gateway/tests/test_citation_verifier.py
+- [[.__init__()_61]] - code - gateway/security/citation_verifier.py
+- [[.__init__()_141]] - code - gateway/tests/test_citation_verifier.py
+- [[._verifier()]] - code - gateway/tests/test_citation_verifier.py
+- [[._verifier()_1]] - code - gateway/tests/test_citation_verifier.py
+- [[._verify_url()]] - code - gateway/security/citation_verifier.py
+- [[.test_allowlisted_live_source_kept()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_dropped_count_is_tamper_evident()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_generated_at_is_preserved()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_host_confusion_urls_rejected_and_never_fetched()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_mixed_valid_and_invalid_keeps_only_valid()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_multiple_valid_citations_all_kept()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_no_candidate_urls_dropped()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_not_ok_on_non_2xx()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_not_ok_without_content()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_off_allowlist_url_dropped_and_not_fetched()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_ok_requires_2xx_and_content()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_report_all_unverified_is_empty()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_report_keeps_verified_and_counts_dropped()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_self_asserted_verified_is_ignored()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_source_without_content_dropped()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_ssrf_unsafe_urls_rejected_before_fetch()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_unparseable_url_dropped()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_unreachable_source_dropped()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_verified_report_persists_with_intact_hashchain()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_wildcard_allowlist_match_kept()]] - code - gateway/tests/test_citation_verifier.py
+- [[.verify_entry()]] - code - gateway/security/citation_verifier.py
+- [[.verify_report()]] - code - gateway/security/citation_verifier.py
+- [[A draft competitive-intel report submitted for citation verification.]] - rationale - gateway/web/api.py
+- [[An unverified competitor claim submitted for citation checking.]] - rationale - gateway/security/citation_verifier.py
+- [[Build a CitationVerifier wired to the production (httpx) fetcher.      Isolated]] - rationale - gateway/web/api.py
+- [[CitationVerifier]] - code - gateway/security/citation_verifier.py
+- [[Deterministic fetcher maps url - (status, sha_or_None). Records calls.]] - rationale - gateway/tests/test_citation_verifier.py
+- [[DraftEntry]] - code - gateway/security/citation_verifier.py
+- [[FetchOutcome_1]] - code - gateway/tests/test_citation_verifier.py
+- [[IntelDraftEntry]] - code - gateway/web/api.py
+- [[IntelDraftRequest]] - code - gateway/web/api.py
+- [[One unverified competitor claim + its candidate source URLs.]] - rationale - gateway/web/api.py
+- [[Re-fetch url and return a Citation iff it is allowlisted + live.          SSRF]] - rationale - gateway/security/citation_verifier.py
+- [[Return True if domain matches any pattern (exact or ``.`` wildcard).      Sin]] - rationale - gateway/security/egress_config.py
+- [[Return a CompetitorEntry with only its valid citations, or None.          None m]] - rationale - gateway/security/citation_verifier.py
+- [[TestFetchOutcome]] - code - gateway/tests/test_citation_verifier.py
+- [[TestVerifyEntry]] - code - gateway/tests/test_citation_verifier.py
+- [[TestVerifyReport]] - code - gateway/tests/test_citation_verifier.py
+- [[Verifies competitor claims against re-fetched, allowlisted sources.]] - rationale - gateway/security/citation_verifier.py
+- [[Verify and persist a draft competitive-intel report (SCRUM-75).      Each draft]] - rationale - gateway/web/api.py
+- [[Verify every draft claim; return a report of only verified claims.          Clai]] - rationale - gateway/security/citation_verifier.py
+- [[_FakeFetcher]] - code - gateway/tests/test_citation_verifier.py
+- [[_intel_verifier()]] - code - gateway/web/api.py
+- [[citation_verifier module]] - code - gateway/security/citation_verifier.py
+- [[domain_matches()]] - code - gateway/security/egress_config.py
+- [[intel_report module (CompetitiveIntelReport, IntelReportStore)]] - code - gateway/security/intel_report.py
+- [[submit_competitive_intel()]] - code - gateway/web/api.py
+- [[test_citation_verifier.py]] - code - gateway/tests/test_citation_verifier.py
+- [[test_default_allowlist_uses_permanent_egress_domains()]] - code - gateway/tests/test_citation_verifier.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -75,15 +74,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_patch]]
-- 9 edges to [[_COMMUNITY_test_voice_gateway.py]]
-- 5 edges to [[_COMMUNITY_server.py]]
-- 3 edges to [[_COMMUNITY_test_voice_gateway.py]]
-- 2 edges to [[_COMMUNITY_asyncio]]
+- 29 edges to [[_COMMUNITY_HTTPConnectProxy]]
+- 22 edges to [[_COMMUNITY_plan_remediation()]]
+- 17 edges to [[_COMMUNITY_api.py]]
+- 6 edges to [[_COMMUNITY_test_redteam_probes.py]]
+- 3 edges to [[_COMMUNITY_ConsentFramework]]
+- 2 edges to [[_COMMUNITY_main.rs]]
+- 2 edges to [[_COMMUNITY_system-requirements]]
+- 1 edge to [[_COMMUNITY_SkillGuard]]
 
 ## Top bridge nodes
-- [[_call_agent_stream()]] - degree 26, connects to 4 communities
-- [[test_call_agent_stream_generic_http_error_falls_back()]] - degree 7, connects to 3 communities
-- [[test_call_agent_stream_non_streaming_agent_returns_telegram_notice()]] - degree 7, connects to 3 communities
-- [[test_voice_latency_guard.py]] - degree 19, connects to 1 community
-- [[_record_turn_latency()]] - degree 10, connects to 1 community
+- [[DraftEntry]] - degree 45, connects to 5 communities
+- [[CitationVerifier]] - degree 43, connects to 5 communities
+- [[domain_matches()]] - degree 7, connects to 3 communities
+- [[IntelDraftRequest]] - degree 7, connects to 3 communities
+- [[IntelDraftEntry]] - degree 6, connects to 3 communities

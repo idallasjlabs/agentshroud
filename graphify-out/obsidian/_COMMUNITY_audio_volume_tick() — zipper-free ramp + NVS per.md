@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[audio_volume_tick() — zipper-free ramp + NVS persist]] - code - firmware/voice-terminal/main/audio.c
+- [[test_list_cve_agents_returns_wrapped_agents_and_security_tools]] - code - gateway/tests/test_agent_cve_registry.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,76 +1,74 @@
 ---
 type: community
-cohesion: 0.06
-members: 61
+cohesion: 0.08
+members: 59
 ---
 
 # WebProxy
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 61 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 59 nodes
 
 ## Members
-- [[.__init__()_198]] - code - gateway/tests/test_web_proxy_security.py
-- [[.__init__()_199]] - code - gateway/tests/test_web_proxy_security.py
-- [[.__init__()_200]] - code - gateway/tests/test_web_proxy_security.py
-- [[._audit()_1]] - code - gateway/proxy/web_proxy.py
-- [[.check()_6]] - code - gateway/proxy/web_proxy.py
-- [[.check_request()]] - code - gateway/proxy/web_proxy.py
-- [[.flagged()_2]] - code - gateway/proxy/web_proxy.py
-- [[.scan_response()_2]] - code - gateway/proxy/web_proxy.py
-- [[.setUp()_1]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_audit_chain_valid()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_blocked_request_audited()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_browser_security_blocks_high_risk_urls()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_browser_security_flags_medium_risk_urls()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_browser_security_skips_non_browser_user_agents()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_dns_filter_blocks_suspicious_domains()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_dns_filter_flags_but_allows_questionable_domains()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_egress_monitor_logs_responses()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_graceful_degradation_browser_security_error()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_graceful_degradation_dns_error()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_graceful_degradation_egress_error()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_multiple_security_modules_integration()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_no_audit_chain_no_crash()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_normal_content_type_not_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_oauth_security_error_handling()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_oauth_security_flags_auth_headers()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_request_audited()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_response_audited()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_suspicious_content_type_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[Check an outbound HTTP request before it's sent.          This is the pre-flight]] - rationale - gateway/proxy/web_proxy.py
-- [[Check if request is within rate limit. Returns True if allowed.]] - rationale - gateway/proxy/web_proxy.py
-- [[HTTP web traffic proxy for OpenClaw.      Intercepts all outbound web requests,]] - rationale - gateway/proxy/web_proxy.py
-- [[MockDNSVerdict]] - code - gateway/tests/test_web_proxy_security.py
-- [[MockEgressChannel]] - code - gateway/tests/test_web_proxy_security.py
-- [[MockEgressEvent]] - code - gateway/tests/test_web_proxy_security.py
-- [[MockThreatLevel]] - code - gateway/tests/test_web_proxy_security.py
-- [[MockURLResult]] - code - gateway/tests/test_web_proxy_security.py
-- [[Proxy works without an audit chain.]] - rationale - gateway/tests/test_web_proxy.py
-- [[ProxyAction]] - code - gateway/proxy/web_proxy.py
-- [[Record an audit entry in the hash chain.]] - rationale - gateway/proxy/web_proxy.py
-- [[Result of proxying a web request.]] - rationale - gateway/proxy/web_proxy.py
-- [[Scan a response body for prompt injection, PII, and hidden content.          Thi]] - rationale - gateway/proxy/web_proxy.py
-- [[Set up test fixtures._5]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that DNS filter blocks suspicious domains.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that DNS filter errors cause fail-closed behavior.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that DNS filter flags questionable domains but allows them through.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that OAuth security errors don't block requests.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that OAuth security flags requests with authorization headers.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that browser security blocks high-risk URLs for browser user agents.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that browser security checks are skipped for non-browser user agents.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that browser security errors cause fail-closed behavior.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that browser security flags medium-risk URLs.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that egress monitor logs all outbound connections.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that egress monitoring errors don't break response processing.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that multiple security modules work together correctly.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that security modules are properly integrated into web proxy.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[TestAuditChain_1]] - code - gateway/tests/test_web_proxy.py
-- [[TestContentTypeFiltering]] - code - gateway/tests/test_web_proxy.py
-- [[TestWebProxySecurityIntegration]] - code - gateway/tests/test_web_proxy_security.py
-- [[WebProxy]] - code - gateway/proxy/web_proxy.py
-- [[WebProxyResult]] - code - gateway/proxy/web_proxy.py
-- [[test_web_proxy_security.py]] - code - gateway/tests/test_web_proxy_security.py
+- [[Added]] - document - CHANGELOG.md
+- [[Added — Tranche 1 True Collaboration Architecture]] - document - CHANGELOG.md
+- [[Added — Tranche 2 Private Service Data Isolation]] - document - CHANGELOG.md
+- [[Added — Tranche 3 Security Tools (IEC 62443 Alignment)]] - document - CHANGELOG.md
+- [[Agent Routing (P0)]] - document - CHANGELOG.md
+- [[CHANGELOG]] - document - CHANGELOG.md
+- [[Changed]] - document - CHANGELOG.md
+- [[Changelog — AgentShroud™]] - document - CHANGELOG.md
+- [[Compliance]] - document - CHANGELOG.md
+- [[Container Security Scorecard — Baseline Scores]] - document - CHANGELOG.md
+- [[Deferred to post-v1.0.0]] - document - CHANGELOG.md
+- [[Fixed]] - document - CHANGELOG.md
+- [[Hardened]] - document - CHANGELOG.md
+- [[Known gaps (not yet closed)]] - document - CHANGELOG.md
+- [[Known issues]] - document - CHANGELOG.md
+- [[Migration Notes]] - document - CHANGELOG.md
+- [[P1 HTTP CONNECT Proxy (PR 24)]] - document - CHANGELOG.md
+- [[P2 Credential Isolation (PR 25)]] - document - CHANGELOG.md
+- [[Performance Baselines (arm64  macOS  Python 3.13)]] - document - CHANGELOG.md
+- [[Phase 1 Foundation]] - document - CHANGELOG.md
+- [[Phase 2 Gateway Layer]] - document - CHANGELOG.md
+- [[Phase 3A3B Security Hardening]] - document - CHANGELOG.md
+- [[Phase 4 SSH Capability]] - document - CHANGELOG.md
+- [[Phase 5 Dashboard]] - document - CHANGELOG.md
+- [[Phase 6 Tailscale & Documentation]] - document - CHANGELOG.md
+- [[Phase 7 Security Hardening]] - document - CHANGELOG.md
+- [[Phase 8 Polish & Publish]] - document - CHANGELOG.md
+- [[Recommended Steps]] - document - CHANGELOG.md
+- [[Removed]] - document - CHANGELOG.md
+- [[Security_2]] - document - CHANGELOG.md
+- [[Summary_1]] - document - CHANGELOG.md
+- [[Testing]] - document - CHANGELOG.md
+- [[Tests]] - document - CHANGELOG.md
+- [[Tranche Status]] - document - CHANGELOG.md
+- [[0.1.0 - 2026-02-16]] - document - CHANGELOG.md
+- [[0.2.0 - 2026-02-17]] - document - CHANGELOG.md
+- [[0.4.0 - 2026-02-19]] - document - CHANGELOG.md
+- [[0.5.0 - 2026-02-21]] - document - CHANGELOG.md
+- [[0.6.0 - 2026-02-23]] - document - CHANGELOG.md
+- [[0.7.0 - 2026-02-25]] - document - CHANGELOG.md
+- [[0.9.0 — featv0.9.0-soc-team-collab — Sentinel (2026-03-18)]] - document - CHANGELOG.md
+- [[1.0.0 — featv1.0.0 — Fortress (2026-03-31)]] - document - CHANGELOG.md
+- [[1.1.0 — feat-v1.4.0-shroud-another-bot — Hermes (2026-05-29)]] - document - CHANGELOG.md
+- [[1.1.1 — fixguard-wiring-and-ops-hardening (2026-06-10)]] - document - CHANGELOG.md
+- [[1.2.0 — featesp32-s3-hermes-voice (2026-06-24)]] - document - CHANGELOG.md
+- [[1.2.1 — releasev1.2.1-quality-sweep (2026-06-27)]] - document - CHANGELOG.md
+- [[1.2.2 — releasev1.2.2 (2026-06-28)]] - document - CHANGELOG.md
+- [[1.2.3 — releasev1.2.3 (2026-06-29)]] - document - CHANGELOG.md
+- [[1.2.4 — releasev1.2.4 (2026-06-29)]] - document - CHANGELOG.md
+- [[1.3.0 Reliability (2026-07-21)]] - document - CHANGELOG.md
+- [[1.5.0 A2A Governance (2026-08-14)]] - document - CHANGELOG.md
+- [[1.5.1 A2A Governance (2026-08-22)]] - document - CHANGELOG.md
+- [[1.5.2 (2026-08-23)]] - document - CHANGELOG.md
+- [[1.5.3 (2026-08-23)]] - document - CHANGELOG.md
+- [[1.6.0 (2026-08-28)]] - document - CHANGELOG.md
+- [[Unreleased — feathttp-connect-proxy + featcredential-isolation]] - document - CHANGELOG.md
+- [[Unreleased — featv0.8.0-enforcement-hardening (session 3 — 2026-03-15)]] - document - CHANGELOG.md
+- [[v0.3.0 → v0.4.0]] - document - CHANGELOG.md
+- [[v0.4.0 → v0.5.0]] - document - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -78,26 +76,3 @@ members: 61
 TABLE source_file, type FROM #community/WebProxy
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 50 edges to [[_COMMUNITY_WebProxyConfig]]
-- 10 edges to [[_COMMUNITY_test_http_proxy.py]]
-- 9 edges to [[_COMMUNITY_HTTPConnectProxy]]
-- 9 edges to [[_COMMUNITY_URLAnalyzer]]
-- 8 edges to [[_COMMUNITY_lifespan.py]]
-- 5 edges to [[_COMMUNITY_Enum]]
-- 3 edges to [[_COMMUNITY__DummyTargetWriter]]
-- 2 edges to [[_COMMUNITY_AuditChain]]
-- 2 edges to [[_COMMUNITY_._process_connect()]]
-- 2 edges to [[_COMMUNITY_DNSFilterConfig]]
-- 2 edges to [[_COMMUNITY_TestDataExfiltration]]
-- 2 edges to [[_COMMUNITY_TestSSRFBlocking]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
-- 1 edge to [[_COMMUNITY_ConsentFramework]]
-
-## Top bridge nodes
-- [[WebProxy]] - degree 74, connects to 11 communities
-- [[ProxyAction]] - degree 31, connects to 6 communities
-- [[WebProxyResult]] - degree 16, connects to 3 communities
-- [[TestAuditChain_1]] - degree 12, connects to 2 communities
-- [[TestContentTypeFiltering]] - degree 9, connects to 2 communities

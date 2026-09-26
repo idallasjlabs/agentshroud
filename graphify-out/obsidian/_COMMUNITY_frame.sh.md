@@ -1,22 +1,21 @@
 ---
 type: community
 cohesion: 0.33
-members: 7
+members: 6
 ---
 
 # frame.sh
 
 **Cohesion:** 0.33 - loosely connected
-**Members:** 7 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[Notes_1]] - document - skills/openclaw/video-frames/SKILL.md
-- [[Quick start]] - document - skills/openclaw/video-frames/SKILL.md
-- [[Video Frames (ffmpeg)]] - document - skills/openclaw/video-frames/SKILL.md
-- [[frame.sh]] - code - skills/openclaw/video-frames/scripts/frame.sh
-- [[frame.sh script]] - code - skills/openclaw/video-frames/scripts/frame.sh
-- [[usage()_3]] - code - skills/openclaw/video-frames/scripts/frame.sh
-- [[video-framesSKILL]] - document - skills/openclaw/video-frames/SKILL.md
+- [[GHSA-58qx-6m8p-wh2j — Slack group DMs skip sender allowlists]] - document - gateway/security/tool_acl.py
+- [[GHSA-7cp7-87pj-p32v — skill dispatch skips owner-only policy]] - document - gateway/security/tool_acl.py
+- [[GHSA-hpg5-cq3m-phqp — agent cron tool reaches operator command jobs]] - document - gateway/security/tool_acl.py
+- [[GHSA-rrxp-5mx8-mvhh — inbound voice calls inherit owner tool authorization]] - document - gateway/security/tool_acl.py
+- [[GHSA-wwcw-jfpp-gpxw — native tools ignore per-chat policy]] - document - gateway/security/tool_acl.py
+- [[Owner-elevation-over-unverified-origin refusal (owner directive 2026-09-15)]] - rationale - gateway/security/tool_acl.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_OpenClaw Skill Metadata Schema (frontmatter conv]]
+- 1 edge to [[_COMMUNITY_AgentTarget]]
 
 ## Top bridge nodes
-- [[video-framesSKILL]] - degree 3, connects to 1 community
+- [[Owner-elevation-over-unverified-origin refusal (owner directive 2026-09-15)]] - degree 6, connects to 1 community

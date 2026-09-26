@@ -1,31 +1,31 @@
 ---
 type: community
-cohesion: 0.21
+cohesion: 0.12
 members: 16
 ---
 
 # pick_latest_hermes_tag()
 
-**Cohesion:** 0.21 - loosely connected
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[.test_empty_returns_none()_1]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_empty_returns_none()_3]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_handles_four_component_tags()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_handles_four_component_tags()_1]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_picks_newest_date_tag()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_picks_newest_date_tag()_1]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_real_hermes_tail_picks_latest_date()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_real_hermes_tail_picks_latest_date()_1]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_rejects_floating_tags()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[.test_rejects_floating_tags()_1]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[Hermes publishes date-based image tags (vYYYY.M.D).]] - rationale - gateway/tests/test_discover_upstream_versions.py
-- [[Newest ``vYYYY.M.D`` Docker tag, ignoring floating tags. 'latest' and 'main'…]] - rationale - scripts/discover_upstream_versions.py
-- [[TestPickLatestHermesTag]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[TestPickLatestHermesTag_1]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[latest''main' float and would defeat the whole point of pinning.]] - rationale - gateway/tests/test_discover_upstream_versions.py
-- [[pick_latest_hermes_tag()]] - code - scripts/discover_upstream_versions.py
+- [[Container-Image CVE Domain (our own images)]] - concept - docs/security/cve-mitigation-matrix.md
+- [[Currently Unmitigable Residual Class]] - rationale - docs/security/cve-mitigation-matrix.md
+- [[Fresh-DB vs Cached-DB Trivy Verification]] - rationale - docs/security/cve-mitigation-matrix.md
+- [[Governed Voice Path (device to gateway to Hermes)]] - concept - firmware/voice-terminal/SETUP.md
+- [[Hermes Vendored-Base Residual (upstream-owned)]] - rationale - docs/security/cve-mitigation-matrix.md
+- [[One-Cause-Per-Failure Bring-Up Order]] - rationale - firmware/voice-terminal/SETUP.md
+- [[Post-Rebuild CVE Rescan Delta (40 to 22 CRITICAL)]] - concept - reports/upgrade-2026-09-14.md
+- [[Reachability Context (cap_drop ALL, isolated network)]] - rationale - docs/security/cve-mitigation-matrix.md
+- [[Spoken High-Risk Command Approval Pause]] - rationale - firmware/voice-terminal/SETUP.md
+- [[Tailscale Funnel Exposure (supersedes on-device client)]] - rationale - firmware/voice-terminal/SETUP.md
+- [[Transitive-Dependency Security Floors]] - rationale - gateway/requirements.txt
+- [[Two-Terminal-State Finding Taxonomy]] - rationale - docs/security/cve-mitigation-matrix.md
+- [[Voice Gateway Service (STTTTS on marvin)]] - concept - firmware/voice-terminal/SETUP.md
+- [[Zeroed .trivyignore (no suppressions)]] - rationale - docs/security/cve-mitigation-matrix.md
+- [[python-jose Removal (CVE-2024-3366333664)]] - rationale - gateway/requirements.txt
+- [[slsa-verifier From-Source Dependency Override]] - concept - docs/security/cve-mitigation-matrix.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,10 +35,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_discover_upstream_versions.py]]
-- 1 edge to [[_COMMUNITY_sunday-upgrade]]
+- 2 edges to [[_COMMUNITY_TestCheckCommandExecution]]
+- 1 edge to [[_COMMUNITY_mcp-proxy-wrapper.js]]
+- 1 edge to [[_COMMUNITY_start.sh]]
+- 1 edge to [[_COMMUNITY_Container Security Policy — AgentShroud]]
 
 ## Top bridge nodes
-- [[pick_latest_hermes_tag()]] - degree 13, connects to 1 community
-- [[TestPickLatestHermesTag]] - degree 7, connects to 1 community
-- [[TestPickLatestHermesTag_1]] - degree 7, connects to 1 community
+- [[Currently Unmitigable Residual Class]] - degree 7, connects to 2 communities
+- [[Container-Image CVE Domain (our own images)]] - degree 4, connects to 1 community
+- [[Governed Voice Path (device to gateway to Hermes)]] - degree 4, connects to 1 community
+- [[Post-Rebuild CVE Rescan Delta (40 to 22 CRITICAL)]] - degree 2, connects to 1 community

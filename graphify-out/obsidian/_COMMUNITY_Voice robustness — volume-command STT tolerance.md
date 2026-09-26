@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Voice robustness — volume-command STT tolerance + stream timeoutrepr logging]] - rationale - CHANGELOG.md
+- [[Favicon 32x32 (AgentShroud logo mark)]] - image - branding/favicons/favicon-32x32.png
 
 ## Live Query (requires Dataview plugin)
 

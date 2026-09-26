@@ -1,46 +1,47 @@
 ---
 type: community
-cohesion: 0.09
-members: 31
+cohesion: 0.06
+members: 32
 ---
 
 # forward.py
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 31 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 32 nodes
 
 ## Members
-- [[.body_not_empty()]] - code - gateway/ingest_api/models.py
-- [[.subject_not_empty()]] - code - gateway/ingest_api/models.py
-- [[Auth dependency that uses the app state config._1]] - rationale - gateway/ingest_api/routes/forward.py
-- [[AuthRequired_2]] - code - gateway/ingest_api/routes/forward.py
-- [[Email send gateway (P3 channel ownership).      The bot submits email send requ]] - rationale - gateway/ingest_api/routes/forward.py
-- [[EmailSendRequest]] - code - gateway/ingest_api/routes/forward.py
-- [[EmailSendRequest_1]] - code - gateway/ingest_api/models.py
-- [[EmailSendResponse]] - code - gateway/ingest_api/models.py
-- [[ForwardResponse]] - code - gateway/ingest_api/models.py
-- [[Owner-allowlist checked before PII sanitisation to avoid CVEdate-dense body collapse]] - rationale - gateway/tests/test_email_owner_bypasses_pii.py
-- [[OwnerEmailRequest]] - code - gateway/ingest_api/routes/forward.py
-- [[Request_4]] - code - gateway/ingest_api/routes/forward.py
-- [[Request to send an email through the gateway (P3 channel ownership).      The b]] - rationale - gateway/ingest_api/models.py
-- [[Response after content is ingested, sanitized, and logged]] - rationale - gateway/ingest_api/models.py
-- [[Response from POST emailsend.]] - rationale - gateway/ingest_api/models.py
-- [[Return True if the email address is on the pre-approved recipient list.]] - rationale - gateway/ingest_api/routes/forward.py
-- [[Send an email to the owner without exposing the recipient address in the request]] - rationale - gateway/ingest_api/routes/forward.py
-- [[Telegram inbound webhook (P3 channel ownership).      All Telegram messages des]] - rationale - gateway/ingest_api/routes/forward.py
-- [[_is_email_recipient_allowed()]] - code - gateway/ingest_api/routes/forward.py
-- [[auth_dep()_2]] - code - gateway/ingest_api/routes/forward.py
-- [[bypass_auth()]] - code - gateway/tests/test_channel_ownership.py
-- [[bypass_auth()_1]] - code - gateway/tests/test_email_owner_bypasses_pii.py
-- [[client()_3]] - code - gateway/tests/test_channel_ownership.py
-- [[client()_4]] - code - gateway/tests/test_email_owner_bypasses_pii.py
-- [[email_send()]] - code - gateway/ingest_api/routes/forward.py
-- [[email_send_owner()]] - code - gateway/ingest_api/routes/forward.py
-- [[forward.py]] - code - gateway/ingest_api/routes/forward.py
-- [[telegram_webhook()]] - code - gateway/ingest_api/routes/forward.py
-- [[test_channel_ownership.py]] - code - gateway/tests/test_channel_ownership.py
-- [[test_email_owner_bypasses_pii.py]] - code - gateway/tests/test_email_owner_bypasses_pii.py
-- [[webhook_receiver.py]] - code - gateway/proxy/webhook_receiver.py
+- [[Add Swap File]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Backup Strategy]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Bot Account (Manual Setup Required)]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Bot Account (You Do This Manually)]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Clone Repo on Pi]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Cooling Recommendations]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Cost Estimate]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Current System Profile]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Docker Permission Denied]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[High Temperature]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Important Notes]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Next Steps After Setup]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Optional Automated Security Updates]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Out of Memory]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Phase 1 OS Hardening & Cleanup]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Phase 3 GitHub Setup]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Phase 4 Project Structure]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Phase 5 CICD Pipeline (GitHub Actions)]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Phase 6 Docker Configuration]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Phase 7 Secret Management]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Phase 8 Monitoring & Observability]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Phase 9 OpenClaw Agent Configuration]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Power Supply]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Repo Access]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[SSH Connection Refused]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[SSH Hardening]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Security Hardening Checklist]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Slow Builds_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Snap Cleanup (Free Resources)]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[System Updates]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Troubleshooting_25]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -50,31 +51,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY__process_inbound()]]
-- 7 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 6 edges to [[_COMMUNITY_RBACConfig]]
-- 5 edges to [[_COMMUNITY_AgentTarget]]
-- 4 edges to [[_COMMUNITY_BaseModel]]
-- 3 edges to [[_COMMUNITY_test_forward_stream.py]]
-- 3 edges to [[_COMMUNITY_WebhookReceiver]]
-- 2 edges to [[_COMMUNITY_make_event()]]
-- 2 edges to [[_COMMUNITY_SSHProxy]]
-- 2 edges to [[_COMMUNITY_RateLimiter]]
-- 2 edges to [[_COMMUNITY_GatewayEmailService]]
-- 2 edges to [[_COMMUNITY_ApprovalRequest]]
-- 2 edges to [[_COMMUNITY_WS-E Security Audit — AgentShroud v1.2 (Gateway]]
-- 1 edge to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_.send()]]
-- 1 edge to [[_COMMUNITY__get_gmail_app_password()]]
-- 1 edge to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_TestEmailSend]]
-- 1 edge to [[_COMMUNITY_TestTelegramWebhook]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_TestBenchmarkRegression]]
+- 1 edge to [[_COMMUNITY_TestSpawnAuthorization]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Perimeter]]
+- 1 edge to [[_COMMUNITY_TestResourceBudgets]]
 
 ## Top bridge nodes
-- [[forward.py]] - degree 38, connects to 14 communities
-- [[email_send()]] - degree 13, connects to 3 communities
-- [[test_channel_ownership.py]] - degree 7, connects to 3 communities
-- [[test_email_owner_bypasses_pii.py]] - degree 7, connects to 3 communities
-- [[webhook_receiver.py]] - degree 4, connects to 3 communities
+- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]] - degree 17, connects to 4 communities

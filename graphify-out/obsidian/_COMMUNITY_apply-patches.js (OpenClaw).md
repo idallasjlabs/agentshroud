@@ -1,48 +1,49 @@
 ---
 type: community
-cohesion: 0.06
-members: 33
+cohesion: 0.10
+members: 34
 ---
 
 # apply-patches.js (OpenClaw)
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 33 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 34 nodes
 
 ## Members
-- [[COLLABORATOR_IDS]] - code - docker/config/openclaw/apply-patches.js
-- [[COLLAB_LOCAL_INFO_ONLY]] - code - docker/config/openclaw/apply-patches.js
-- [[GROUP_CHAT_IDS]] - code - docker/config/openclaw/apply-patches.js
-- [[IMPORTANT Do NOT add explicit user IDs alongside ''. OpenClaw's…]] - rationale - docker/config/openclaw/apply-patches.js
-- [[MODEL_MODE]] - code - docker/config/openclaw/apply-patches.js
-- [[_COLLAB_TOOL_DENY]] - code - docker/config/openclaw/apply-patches.js
-- [[_COLLAB_TOOL_DENY_FULL_ACCESS]] - code - docker/config/openclaw/apply-patches.js
-- [[_GROUP_TOOL_DENY]] - code - docker/config/openclaw/apply-patches.js
-- [[_is_global_full_access]] - code - docker/config/openclaw/apply-patches.js
-- [[_rawGroupIds]] - code - docker/config/openclaw/apply-patches.js
-- [[_resolveCollabDenyList()]] - code - docker/config/openclaw/apply-patches.js
-- [[_resolveCollabToolConfig()]] - code - docker/config/openclaw/apply-patches.js
-- [[_userOverrides]] - code - docker/config/openclaw/apply-patches.js
-- [[allAllowedOrigins]] - code - docker/config/openclaw/apply-patches.js
-- [[allowedOrigins]] - code - docker/config/openclaw/apply-patches.js
-- [[apply-patches.js (OpenClaw)]] - code - docker/config/openclaw/apply-patches.js
-- [[cIdx]] - code - docker/config/openclaw/apply-patches.js
-- [[config]] - code - docker/config/openclaw/apply-patches.js
-- [[desiredAllowFrom]] - code - docker/config/openclaw/apply-patches.js
-- [[desiredProvider]] - code - docker/config/openclaw/apply-patches.js
-- [[extraOrigins]] - code - docker/config/openclaw/apply-patches.js
-- [[fs_3]] - code - docker/config/openclaw/apply-patches.js
-- [[gpIdx]] - code - docker/config/openclaw/apply-patches.js
-- [[hasChannelWideFallback]] - code - docker/config/openclaw/apply-patches.js
-- [[hasMain]] - code - docker/config/openclaw/apply-patches.js
-- [[hasOwnerBinding]] - code - docker/config/openclaw/apply-patches.js
-- [[missingOrigins]] - code - docker/config/openclaw/apply-patches.js
-- [[missingProxies]] - code - docker/config/openclaw/apply-patches.js
-- [[path_3]] - code - docker/config/openclaw/apply-patches.js
-- [[providerModels]] - code - docker/config/openclaw/apply-patches.js
-- [[staleGroupBindings]] - code - docker/config/openclaw/apply-patches.js
-- [[trustedProxies]] - code - docker/config/openclaw/apply-patches.js
-- [[{ profile _genericProfile, deny _genericCollabDeny }]] - code - docker/config/openclaw/apply-patches.js
+- [[.get_events()_2]] - code - gateway/security/egress_monitor.py
+- [[.record()_1]] - code - gateway/security/egress_monitor.py
+- [[.test_alert_has_description()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_alert_has_severity()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_alert_monitor_mode_no_block()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_default_mode_is_enforce()_1]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_empty_summary()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_generous_baselines()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_high_volume_triggers_alert()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_normal_multi_channel_not_flagged()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_normal_volume_no_alert()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_record_dns_event()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_record_file_event()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_record_http_event()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_record_mcp_event()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_slow_drip_across_channels()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_summary_report()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_unusual_destination_flagged()]] - code - gateway/tests/test_egress_monitor.py
+- [[AlertSeverity]] - code - gateway/security/egress_monitor.py
+- [[Alerts in monitor mode should never block.]] - rationale - gateway/tests/test_egress_monitor.py
+- [[Default mode is enforce after v0.8.0 enforcement hardening._1]] - rationale - gateway/tests/test_egress_monitor.py
+- [[EgressEvent]] - code - gateway/security/egress_monitor.py
+- [[Normal usage across channels should not trigger drip detection.]] - rationale - gateway/tests/test_egress_monitor.py
+- [[Small amounts across multiple channels should be detected.]] - rationale - gateway/tests/test_egress_monitor.py
+- [[TestAlertGeneration]] - code - gateway/tests/test_egress_monitor.py
+- [[TestAnomalyDetection]] - code - gateway/tests/test_egress_monitor.py
+- [[TestDailySummary]] - code - gateway/tests/test_egress_monitor.py
+- [[TestEgressMonitorConfig]] - code - gateway/tests/test_egress_monitor.py
+- [[TestEventRecording]] - code - gateway/tests/test_egress_monitor.py
+- [[TestSlowDripDetection]] - code - gateway/tests/test_egress_monitor.py
+- [[default_config()_2]] - code - gateway/tests/test_egress_monitor.py
+- [[monitor()]] - code - gateway/tests/test_egress_monitor.py
+- [[monitor_config()_1]] - code - gateway/tests/test_egress_monitor.py
+- [[test_egress_monitor.py]] - code - gateway/tests/test_egress_monitor.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -52,9 +53,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_postmortem]]
-- 1 edge to [[_COMMUNITY_AgentShroud™ — OpenClaw Local-Model Tool-Use Ins]]
-- 1 edge to [[_COMMUNITY_check-vendor-compat.sh]]
+- 29 edges to [[_COMMUNITY_lifespan.py]]
+- 22 edges to [[_COMMUNITY_TrustManager]]
+- 2 edges to [[_COMMUNITY_FetchOutcome]]
+- 1 edge to [[_COMMUNITY_Daedalus — Concept Illustrator]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy_failover.py]]
+- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
 
 ## Top bridge nodes
-- [[apply-patches.js (OpenClaw)]] - degree 35, connects to 3 communities
+- [[EgressEvent]] - degree 49, connects to 5 communities
+- [[test_egress_monitor.py]] - degree 14, connects to 2 communities
+- [[TestEventRecording]] - degree 10, connects to 2 communities
+- [[AlertSeverity]] - degree 9, connects to 2 communities
+- [[TestAlertGeneration]] - degree 9, connects to 2 communities

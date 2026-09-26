@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.67
+members: 3
 ---
 
 # TestScoreLoggingMonitoring
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[.test_five_all_pillars()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_one_baseline()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_two_with_wazuh()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreLoggingMonitoring]] - code - gateway/tests/test_scorecard_scoring.py
+- [[installapiinstall endpoint]] - concept - gateway/web/templates/installer.html
+- [[buildSummary()]] - code - gateway/web/templates/installer.html
+- [[startInstall()]] - code - gateway/web/templates/installer.html
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +20,3 @@ members: 4
 TABLE source_file, type FROM #community/TestScoreLoggingMonitoring
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_scorecard_scoring.py]]
-
-## Top bridge nodes
-- [[TestScoreLoggingMonitoring]] - degree 4, connects to 1 community

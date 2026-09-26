@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[append_finding.py]] - code - docker/config/hermes/cron/prompts/newsletter-chat-front-ends-search-infra.txt
+- [[Voice Gateway Uvicorn Entrypoint (port 8765, WS ping disabled)]] - code - voice_gateway/__main__.py
 
 ## Live Query (requires Dataview plugin)
 

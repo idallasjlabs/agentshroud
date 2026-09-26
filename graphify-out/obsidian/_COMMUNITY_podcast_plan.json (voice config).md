@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[podcast_plan.json (voice config)]] - concept - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[audio.h]] - code - firmware/voice-terminal/main/audio.h
 
 ## Live Query (requires Dataview plugin)
 

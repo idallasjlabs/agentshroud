@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ota.c (self-update over HTTPS)]] - code - firmware/voice-terminal/main/ota.c
+- [[test_unknown_bot_id_raises_key_error]] - code - gateway/tests/test_agent_cve_registry.py
 
 ## Live Query (requires Dataview plugin)
 

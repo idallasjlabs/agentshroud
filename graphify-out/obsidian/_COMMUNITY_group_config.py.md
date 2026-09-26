@@ -1,32 +1,32 @@
 ---
 type: community
-cohesion: 0.22
+cohesion: 0.12
 members: 17
 ---
 
 # group_config.py
 
-**Cohesion:** 0.22 - loosely connected
+**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members
-- [[.test_persist_user_collab_mode()]] - code - gateway/tests/test_group_config.py
-- [[.test_persist_user_collab_mode_update()]] - code - gateway/tests/test_group_config.py
-- [[Calling persist_user_collab_mode twice updates the stored value.]] - rationale - gateway/tests/test_group_config.py
-- [[Persist a per-user collab mode override set via the SOC dashboard.      Stored u]] - rationale - gateway/security/group_config.py
-- [[Persist a runtime collab mode change for a group.]] - rationale - gateway/security/group_config.py
-- [[Persist a runtime group creation so it survives container restarts.]] - rationale - gateway/security/group_config.py
-- [[Persist a runtime group membership addition.]] - rationale - gateway/security/group_config.py
-- [[_load_overrides()]] - code - gateway/security/group_config.py
-- [[_save_overrides()]] - code - gateway/security/group_config.py
-- [[group_config.py]] - code - gateway/security/group_config.py
-- [[persist_group_collab_mode()]] - code - gateway/security/group_config.py
-- [[persist_group_create()]] - code - gateway/security/group_config.py
-- [[persist_group_delete()]] - code - gateway/security/group_config.py
-- [[persist_group_member_add()]] - code - gateway/security/group_config.py
-- [[persist_group_member_remove()]] - code - gateway/security/group_config.py
-- [[persist_user_collab_mode writes under __user_overrides__ key.]] - rationale - gateway/tests/test_group_config.py
-- [[persist_user_collab_mode()]] - code - gateway/security/group_config.py
+- [[Atlas — Curriculum Architect_4]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[CPA Curriculum Frontmatter Addition_2]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Coverage Types_2]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Episode Closing_2]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Exam Weight Integration_2]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Gleim Unit Mapping_2]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Input Requirements_22]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Mandatory Acronym Expansion_2]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[OKE Channel — CPA Exam Context_1]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Output Format_27]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Persona_17]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Quality Checklist_20]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Role_79]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[SKILL_133]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[System Prompt_17]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[User Prompt Template_9]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[User Prompt Template — OKE Channel_2]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,17 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_socrouter.py]]
-- 11 edges to [[_COMMUNITY_TeamsConfig]]
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 1 edge to [[_COMMUNITY_ToolACLEnforcer]]
-- 1 edge to [[_COMMUNITY_rbac_config.py]]
-- 1 edge to [[_COMMUNITY_SSHProxy]]
-- 1 edge to [[_COMMUNITY_RBACConfig]]
+- 1 edge to [[_COMMUNITY_BaseModel]]
 
 ## Top bridge nodes
-- [[group_config.py]] - degree 17, connects to 5 communities
-- [[persist_group_collab_mode()]] - degree 8, connects to 3 communities
-- [[persist_group_member_add()]] - degree 8, connects to 3 communities
-- [[persist_group_member_remove()]] - degree 8, connects to 3 communities
-- [[persist_user_collab_mode()]] - degree 9, connects to 2 communities
+- [[Atlas — Curriculum Architect_4]] - degree 11, connects to 1 community

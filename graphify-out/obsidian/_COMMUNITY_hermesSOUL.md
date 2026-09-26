@@ -1,41 +1,42 @@
 ---
 type: community
-cohesion: 0.09
-members: 26
+cohesion: 0.07
+members: 27
 ---
 
 # hermes/SOUL.md
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 26 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 27 nodes
 
 ## Members
-- [[AgentShroud Gateway]] - concept - docker/config/hermes/SOUL.md
-- [[AgentShroud Hermes System Identity (agentshermes-soul.md)]] - document - docker/config/hermes/agents/hermes-soul.md
-- [[AgentShroud Hermes — System Identity_1]] - document - docker/config/hermes/SOUL.md
-- [[Agents Folder README]] - document - docker/config/hermes/agents/_README.txt
-- [[Capabilities_1]] - document - docker/config/hermes/SOUL.md
-- [[Core Behaviors_1]] - document - docker/config/hermes/SOUL.md
-- [[Hermes MCP Servers Config]] - document - docker/config/hermes/mcp/servers.json
-- [[Isaiah Jefferson (Owner)]] - concept - docker/config/hermes/SOUL.md
-- [[OpenClaw_2]] - concept - docker/config/hermes/SOUL.md
-- [[OpenClawAgentShroud Bot Identity]] - document - docker/config/hermes/agents/openclaw-identity.md
-- [[Owner_1]] - document - docker/config/hermes/SOUL.md
-- [[PII Sanitizer_2]] - concept - docker/config/hermes/SOUL.md
-- [[Remote Hosts (SSH via gateway)_1]] - document - docker/config/hermes/SOUL.md
-- [[Security Reviewer Agent]] - document - docker/config/hermes/agents/i-security-reviewer.md
-- [[Trademark Notice_1]] - document - docker/config/hermes/SOUL.md
-- [[Your Role_1]] - document - docker/config/hermes/SOUL.md
-- [[agentshroud-gateway MCP proxy entry (disabled)]] - concept - docker/config/hermes/mcp/servers.json
-- [[agentshroud-ssh-exec.sh helper]] - concept - docker/config/hermes/SOUL.md
-- [[hermesSOUL]] - document - docker/config/hermes/SOUL.md
-- [[marvin (dev host, per openclaw-identity.md)]] - concept - docker/config/hermes/agents/openclaw-identity.md
-- [[marvin (lab host)]] - concept - docker/config/hermes/SOUL.md
-- [[raspberrypi (lab host)]] - concept - docker/config/hermes/SOUL.md
-- [[raspberrypi (per openclaw-identity.md)]] - concept - docker/config/hermes/agents/openclaw-identity.md
-- [[tirith command-safety scanner]] - concept - docker/config/hermes/SOUL.md
-- [[trillian (lab host)]] - concept - docker/config/hermes/SOUL.md
-- [[trillian (per openclaw-identity.md)]] - concept - docker/config/hermes/agents/openclaw-identity.md
+- [[401 Unauthorized_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[CalendarContacts not found_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Connection timeout_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Add Contact_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Calendar Operations_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Configuration_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Contact Operations_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Create Event_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Create Note_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Delete Event_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[List Contacts_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[List Events_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[List Messages_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[List Notes_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Mail Operations_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Notes Operations_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[SKILL_152]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Search Contacts_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Search Mail_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Search Notes_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Security_5]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Send Email_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Setup_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Troubleshooting_12]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Update Contact_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Update Event_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[iCloud Services_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,12 +46,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Audit Ledger (SHA-256 hash only)]]
-- 1 edge to [[_COMMUNITY_EgressFilter]]
-- 1 edge to [[_COMMUNITY_PromptGuard]]
-- 1 edge to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_auth.py]]
+- 1 edge to [[_COMMUNITY_BaseModel]]
 
 ## Top bridge nodes
-- [[hermesSOUL]] - degree 15, connects to 4 communities
-- [[OpenClawAgentShroud Bot Identity]] - degree 7, connects to 1 community
+- [[iCloud Services_2]] - degree 10, connects to 1 community

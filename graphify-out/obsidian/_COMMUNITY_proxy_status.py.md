@@ -1,26 +1,25 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+cohesion: 0.20
+members: 10
 ---
 
 # proxy_status.py
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[Competitive Intelligence Protocol]] - document - docker/config/openclaw/workspace/IDENTITY.md
-- [[IDENTITY.md - Who I Am]] - document - docker/config/openclaw/workspace/IDENTITY.md
-- [[Key Output]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
-- [[My Owner]] - document - docker/config/openclaw/workspace/IDENTITY.md
-- [[My Responsibilities]] - document - docker/config/openclaw/workspace/IDENTITY.md
-- [[My Role]] - document - docker/config/openclaw/workspace/IDENTITY.md
-- [[Purpose_9]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
-- [[Related Notes_9]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
-- [[proxy_status.py_1]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
-- [[proxy_status.py]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
-- [[workspaceIDENTITY]] - document - docker/config/openclaw/workspace/IDENTITY.md
+- [[author_3]] - code - skills/custom/browser-fetch/package.json
+- [[description_5]] - code - skills/custom/browser-fetch/package.json
+- [[keywords_3]] - code - skills/custom/browser-fetch/package.json
+- [[license_4]] - code - skills/custom/browser-fetch/package.json
+- [[main_3]] - code - skills/custom/browser-fetch/package.json
+- [[name_5]] - code - skills/custom/browser-fetch/package.json
+- [[package.json_4]] - code - skills/custom/browser-fetch/package.json
+- [[scripts_4]] - code - skills/custom/browser-fetch/package.json
+- [[test_4]] - code - skills/custom/browser-fetch/package.json
+- [[version_7]] - code - skills/custom/browser-fetch/package.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,9 +27,3 @@ members: 11
 TABLE source_file, type FROM #community/proxy_statuspy
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_agentshroud-ssh-exec.sh]]
-
-## Top bridge nodes
-- [[workspaceIDENTITY]] - degree 2, connects to 1 community

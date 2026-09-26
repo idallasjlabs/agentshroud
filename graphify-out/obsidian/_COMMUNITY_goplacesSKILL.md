@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # goplaces/SKILL.md
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[goplaces]] - document - skills/openclaw/goplaces/SKILL.md
-- [[goplaces CLI]] - concept - skills/openclaw/goplaces/SKILL.md
-- [[goplacesSKILL]] - document - skills/openclaw/goplaces/SKILL.md
+- [[Hermes Cannot Force-Switch to Custom-Named Local Model (Gap 8)]] - rationale - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[Turbo Fieldflare Local Backend]] - concept - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
 
 ## Live Query (requires Dataview plugin)
 

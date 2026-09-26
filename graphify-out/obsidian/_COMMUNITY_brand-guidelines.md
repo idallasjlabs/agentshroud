@@ -1,48 +1,49 @@
 ---
 type: community
-cohesion: 0.07
-members: 33
+cohesion: 0.09
+members: 34
 ---
 
 # brand-guidelines.md
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 33 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 34 nodes
 
 ## Members
-- [[Accessibility Requirements (WCAG 2.1 AA, prefers-reduced-motion)]] - concept - branding/guidelines/brand-guidelines.md
-- [[AgentShroud Premium Email Signature Template]] - code - branding/email/signature-template.html
-- [[Animation Guidelines  Motion Principles]] - rationale - branding/guidelines/brand-guidelines.md
-- [[App Icon 16x16 (AgentShroud logo mark)]] - image - branding/icons/app/icon-16x16.png
-- [[App Icon 32x32 (AgentShroud logo mark)]] - image - branding/icons/app/icon-32x32.png
-- [[Approval Process]] - document - branding/guidelines/brand-guidelines.md
-- [[Backgrounds]] - document - branding/guidelines/brand-guidelines.md
-- [[Brand Applications (website, docs, social, presentations, print)]] - concept - branding/guidelines/brand-guidelines.md
-- [[Brand Approval Process]] - document - branding/guidelines/brand-guidelines.md
-- [[Brand Mission]] - concept - branding/guidelines/brand-guidelines.md
-- [[Brand Values (Security First, Transparency, Privacy, Trust, Innovation)]] - concept - branding/guidelines/brand-guidelines.md
-- [[Brand Vision]] - concept - branding/guidelines/brand-guidelines.md
-- [[Clear Space]] - document - branding/guidelines/brand-guidelines.md
-- [[Co-Branding Guidelines]] - document - branding/guidelines/brand-guidelines.md
-- [[Color Constraints]] - document - branding/guidelines/brand-guidelines.md
-- [[Color Profiles]] - document - branding/guidelines/brand-guidelines.md
-- [[Color Usage (AgentShroud Blue 1583f0)]] - concept - branding/guidelines/brand-guidelines.md
-- [[ExternalPartnership Use]] - document - branding/guidelines/brand-guidelines.md
-- [[File Formats & Deliverables]] - document - branding/guidelines/brand-guidelines.md
-- [[Hierarchy]] - document - branding/guidelines/brand-guidelines.md
-- [[Internal Use]] - document - branding/guidelines/brand-guidelines.md
-- [[Logo Files]] - document - branding/guidelines/brand-guidelines.md
-- [[Logo Usage_3]] - document - branding/guidelines/brand-guidelines.md
-- [[Logo Usage Rules]] - concept - branding/guidelines/brand-guidelines.md
-- [[Minimum Size]] - document - branding/guidelines/brand-guidelines.md
-- [[Placement Rules]] - document - branding/guidelines/brand-guidelines.md
-- [[Press Kit (About AgentShroud, boilerplate, key facts)]] - document - branding/guidelines/brand-guidelines.md
-- [[Principles]] - document - branding/guidelines/brand-guidelines.md
-- [[Prohibited Uses]] - document - branding/guidelines/brand-guidelines.md
-- [[Readability]] - document - branding/guidelines/brand-guidelines.md
-- [[Typography in Practice]] - document - branding/guidelines/brand-guidelines.md
-- [[Voice & Tone Guidelines]] - concept - branding/guidelines/brand-guidelines.md
-- [[brand-guidelines]] - document - branding/guidelines/brand-guidelines.md
+- [[.__len__()]] - code - gateway/proxy/mcp_audit.py
+- [[._compute_chain_hash()]] - code - gateway/proxy/mcp_audit.py
+- [[.entries()]] - code - gateway/proxy/mcp_audit.py
+- [[.generate_report()]] - code - gateway/proxy/mcp_audit.py
+- [[.get_blocked_entries()]] - code - gateway/proxy/mcp_audit.py
+- [[.get_entries_for_agent()]] - code - gateway/proxy/mcp_audit.py
+- [[.get_entries_for_server()]] - code - gateway/proxy/mcp_audit.py
+- [[.get_entries_for_tool()]] - code - gateway/proxy/mcp_audit.py
+- [[.get_failed_entries()]] - code - gateway/proxy/mcp_audit.py
+- [[.last_hash()]] - code - gateway/proxy/mcp_audit.py
+- [[.log_tool_call()]] - code - gateway/proxy/mcp_audit.py
+- [[.log_tool_result()]] - code - gateway/proxy/mcp_audit.py
+- [[.start_call()]] - code - gateway/proxy/mcp_audit.py
+- [[.test_default_window_is_10k()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_report_total_reflects_all_appended()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_tamper_in_retained_window_detected()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_verify_chain_valid_after_wrap()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_window_capped_at_max_entries()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.total_appended()]] - code - gateway/proxy/mcp_audit.py
+- [[.verify_chain()]] - code - gateway/proxy/mcp_audit.py
+- [[A single MCP tool call audit entry.]] - rationale - gateway/proxy/mcp_audit.py
+- [[Any_15]] - code - gateway/proxy/mcp_audit.py
+- [[Audit trail for MCP tool calls, integrated with SHA-256 hash chain.]] - rationale - gateway/proxy/mcp_audit.py
+- [[Compute hash chain values. Returns (content_hash, chain_hash).]] - rationale - gateway/proxy/mcp_audit.py
+- [[Generate an MCP audit report summary.]] - rationale - gateway/proxy/mcp_audit.py
+- [[In-memory MCP audit window must be bounded (mirrors AuditChain).]] - rationale - gateway/tests/test_mcp_proxy.py
+- [[Log an incoming MCP tool result.]] - rationale - gateway/proxy/mcp_audit.py
+- [[Log an outgoing MCP tool call.]] - rationale - gateway/proxy/mcp_audit.py
+- [[MCPAuditEntry]] - code - gateway/proxy/mcp_audit.py
+- [[MCPAuditTrail]] - code - gateway/proxy/mcp_audit.py
+- [[Record the start time of a tool call for duration tracking.]] - rationale - gateway/proxy/mcp_audit.py
+- [[TestAuditTrailBounded]] - code - gateway/tests/test_mcp_proxy.py
+- [[Verify integrity of the retained MCP audit hash-chain window.          Anchors a]] - rationale - gateway/proxy/mcp_audit.py
+- [[audit()]] - code - gateway/tests/test_mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -52,12 +53,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_AgentShroud™ Brand Guidelines]]
-- 1 edge to [[_COMMUNITY_brandingREADME]]
+- 30 edges to [[_COMMUNITY_test_llm_proxy_local_parity.py]]
+- 25 edges to [[_COMMUNITY_test_voice_gateway.py]]
+- 9 edges to [[_COMMUNITY_GitGuard]]
+- 7 edges to [[_COMMUNITY_TestParanoidConfig]]
+- 3 edges to [[_COMMUNITY_AgentShroud v0.9.0 — Human Interface Testing Gui]]
+- 1 edge to [[_COMMUNITY_TeamsConfig]]
+- 1 edge to [[_COMMUNITY_Safe Refactor Specialist]]
+- 1 edge to [[_COMMUNITY_RBACConfig]]
+- 1 edge to [[_COMMUNITY_Operating Rules (Non-Negotiable)]]
+- 1 edge to [[_COMMUNITY_NetworkSecurityFinding]]
+- 1 edge to [[_COMMUNITY_v0.9.0 Sentinel — Data Isolation + SOC + Remed]]
+- 1 edge to [[_COMMUNITY_→ {site site1, test_mode True, output_p]]
+- 1 edge to [[_COMMUNITY_Vulcan — Subject Matter Auditor]]
+- 1 edge to [[_COMMUNITY_asyncio]]
 
 ## Top bridge nodes
-- [[brand-guidelines]] - degree 15, connects to 2 communities
-- [[Co-Branding Guidelines]] - degree 8, connects to 1 community
-- [[Brand Approval Process]] - degree 5, connects to 1 community
-- [[Logo Usage_3]] - degree 5, connects to 1 community
-- [[File Formats & Deliverables]] - degree 4, connects to 1 community
+- [[MCPAuditTrail]] - degree 90, connects to 13 communities
+- [[TestAuditTrailBounded]] - degree 20, connects to 6 communities
+- [[MCPAuditEntry]] - degree 11, connects to 1 community
+- [[audit()]] - degree 2, connects to 1 community

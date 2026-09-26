@@ -1,22 +1,21 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.33
+members: 6
 ---
 
 # VII. v0.8.0 Remediation
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[VII-A. Enforce-by-Default (R-02, R-03)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VII-B. Outbound Information Filter (R-01)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VII-C. Per-User Session Isolation (R-04, R-05)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VII-D. Separation of Privilege (R-06, R-07)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VII-E. Human-in-the-Loop (R-08, R-09)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VII-F. Credential Isolation (R-10, R-11, R-12)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VII. v0.8.0 Remediation]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[2.1 Mark Type]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[2.2 The Mark]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[2.3 Mark Literal Element]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[2.4 Translation  Transliteration]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[2.5 Mark Description (for standard character mark)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 2 MARK INFORMATION]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud A Transparent Proxy Framework for E]]
+- 1 edge to [[_COMMUNITY_mcp-proxy-wrapper.js]]
 
 ## Top bridge nodes
-- [[VII. v0.8.0 Remediation]] - degree 7, connects to 1 community
+- [[SECTION 2 MARK INFORMATION]] - degree 6, connects to 1 community

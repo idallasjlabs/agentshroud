@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[openclaw-ghsa-snapshot.json]] - document - scripts/data/openclaw-ghsa-snapshot.json
+- [[setup-https-proxy patchUndiciForProxy()]] - code - docker/config/openclaw/setup-https-proxy.js
 
 ## Live Query (requires Dataview plugin)
 

@@ -10,18 +10,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[After Filing]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Application Fields]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Class 009 — Downloadable Software (Optional — add $250)]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Class 042 — Scientific and Technological Services (Primary)]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Filing Basis]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Filing Instructions (TEAS Plus)]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[International Classification]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Mark]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Notes]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Owner_2]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Specimen]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[USPTO Trademark Application — AgentShroud™]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Advanced Integrations (Phase 19)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Browser Extension_1]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Full Configuration System (Phase 18)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Infrastructure — Deferred (moved from v0.9.0 → post-v1.0.0 on 2026-03-04)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Integration Hub (Phase 13)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Mac Mini Onboarding (Phase 14)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Multi-Host Deployment]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Multi-Platform Container Support]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Personal Infrastructure Monitor (Phase 15)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Post-v1.0.0 — Deferred]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Secure Voice (moved from v0.9.0 → post-v1.0.0 on 2026-03-04)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[iOSmacOS Shortcuts]] - document - docs/planning/MASTER-FEATURE-LIST.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,7 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud™ — Trademark Prior Use Record]]
+- 1 edge to [[_COMMUNITY_Skill Creation Process]]
 
 ## Top bridge nodes
-- [[USPTO Trademark Application — AgentShroud™]] - degree 7, connects to 1 community
+- [[Post-v1.0.0 — Deferred]] - degree 12, connects to 1 community

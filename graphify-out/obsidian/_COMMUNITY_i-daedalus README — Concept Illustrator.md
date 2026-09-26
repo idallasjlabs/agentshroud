@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[i-daedalus README — Concept Illustrator]] - document - docker/config/hermes/skills/i-daedalus/README.md
-- [[i-daedalus SKILL — Concept Illustrator]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
+- [[.test_memory_error_without_error_keyword_is_not_rewritten_for_json_message_field()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[JSON message field with embeddingprovider hints but no error keyword should rem]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +19,11 @@ members: 2
 TABLE source_file, type FROM #community/i-daedalus_README__Concept_Illustrator
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY__make_proxy()]]
+
+## Top bridge nodes
+- [[.test_memory_error_without_error_keyword_is_not_rewritten_for_json_message_field()]] - degree 4, connects to 3 communities

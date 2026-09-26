@@ -10,13 +10,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[Integration]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
-- [[Purpose_1]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
-- [[Related Notes_1]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
-- [[Usage]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
-- [[What It Checks]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
-- [[gitleaks.toml_1]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
-- [[gitleaks.toml]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
+- [[11. Competitive Security Comparison Matrix]] - document - docs/papers/agentshroud-whitepaper.md
+- [[11.1 Complete 26-Module Security Matrix]] - document - docs/papers/agentshroud-whitepaper.md
+- [[11.2 Unique AgentShroud Modules (No Competitor Implementation)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[11.3 Competitor Analysis Details]] - document - docs/papers/agentshroud-whitepaper.md
+- [[11.4 Security Coverage Gap Analysis]] - document - docs/papers/agentshroud-whitepaper.md
+- [[11.5 Security Score Evolution]] - document - docs/papers/agentshroud-whitepaper.md
+- [[11.6 Industry Implications]] - document - docs/papers/agentshroud-whitepaper.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +24,9 @@ members: 7
 TABLE source_file, type FROM #community/gitleakstoml
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Restart Procedure]]
+
+## Top bridge nodes
+- [[11. Competitive Security Comparison Matrix]] - degree 7, connects to 1 community

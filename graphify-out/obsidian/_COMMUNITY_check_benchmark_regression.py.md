@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # check_benchmark_regression.py
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[Benchmark Regression Job]] - code - .github/workflows/ci.yml
-- [[check_benchmark_regression.py]] - code - scripts/check_benchmark_regression.py
-- [[main()_12]] - code - scripts/check_benchmark_regression.py
+- [[Alert Thresholds (approval queue 1h timeout, context 200K hard limit, op-proxy 6 retries)]] - concept - docs/diagrams/images/diagram-20-observability-map.svg
+- [[Bot observability (docker logs, GET apihealth, context tokens 200K limit)]] - concept - docs/diagrams/images/diagram-20-observability-map.svg
 
 ## Live Query (requires Dataview plugin)
 

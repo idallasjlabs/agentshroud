@@ -1,40 +1,41 @@
 ---
 type: community
 cohesion: 0.08
-members: 25
+members: 26
 ---
 
 # record_decision
 
 **Cohesion:** 0.08 - loosely connected
-**Members:** 25 nodes
+**Members:** 26 nodes
 
 ## Members
-- [[A2AGovernanceProxy._check_peer]] - code - gateway/security/a2a_governance.py
-- [[A2AGovernanceProxy._process]] - code - gateway/security/a2a_governance.py
-- [[A2AGovernanceProxy._sanitize_message]] - code - gateway/security/a2a_governance.py
-- [[A2AGovernanceProxy.process_inbound]] - code - gateway/security/a2a_governance.py
-- [[A2AGovernanceProxy.process_outbound]] - code - gateway/security/a2a_governance.py
-- [[CredentialInjector.scan_for_credential_leak]] - code - gateway/security/credential_injector.py
-- [[Ergonomic recorder for enforcement points — never raises.      ``sanitized=True`]] - rationale - gateway/security/module_stats.py
-- [[GHSA-58qx-6m8p-wh2j — Slack group DMs skip sender allowlists]] - document - gateway/security/tool_acl.py
-- [[GHSA-7cp7-87pj-p32v — skill dispatch skips owner-only policy]] - document - gateway/security/tool_acl.py
-- [[GHSA-hpg5-cq3m-phqp — agent cron tool reaches operator command jobs]] - document - gateway/security/tool_acl.py
-- [[GHSA-rrxp-5mx8-mvhh — inbound voice calls inherit owner tool authorization]] - document - gateway/security/tool_acl.py
-- [[GHSA-wwcw-jfpp-gpxw — native tools ignore per-chat policy]] - document - gateway/security/tool_acl.py
-- [[Owner-elevation-over-unverified-origin refusal (owner directive 2026-09-15)]] - rationale - gateway/security/tool_acl.py
-- [[PIISanitizer.block_credentials]] - code - gateway/ingest_api/sanitizer.py
-- [[SOC Per-Module Enforcement Heat-Map (SCRUM-80)]] - document - docker/README.md
-- [[TokenValidator.validate]] - code - gateway/security/token_validation.py
-- [[ToolACLEnforcer._can_use_tool_impl]] - code - gateway/security/tool_acl.py
-- [[ToolACLEnforcer.can_use_tool]] - code - gateway/security/tool_acl.py
-- [[ToolACLEnforcer.can_use_tool_from_origin]] - code - gateway/security/tool_acl.py
-- [[ToolACLEnforcer.can_use_tool_in_group_context]] - code - gateway/security/tool_acl.py
-- [[TrustManager.get_trust]] - code - gateway/security/trust_manager.py
-- [[TrustManager.is_tool_allowed]] - code - gateway/security/trust_manager.py
-- [[record_decision]] - code - gateway/security/module_stats.py
-- [[test_console_source_not_blocked]] - code - gateway/tests/test_block_credentials.py
-- [[test_telegram_blocks_password]] - code - gateway/tests/test_block_credentials.py
+- [[Missing auth for API providers]] - document - docker/scripts/README.md
+- [[API Keys Setup Guide]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Bot not responding on Telegram]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Container unhealthy]] - document - docker/scripts/README.md
+- [[Container won't start after adding Anthropic secret]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Create the Anthropic OAuth Token File]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Option 1 Use Anthropic Claude (Recommended)]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Option 2 Use OpenAI GPT-4]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Option A Via Control UI (Recommended)]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Option B Via Command Line]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Overview_17]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Security Notes_3]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 1 Save API Keys to Secret Files]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 2 Restart OpenClaw Container]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 3 Configure API Keys in OpenClaw]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 4 Set Default Model]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 5 Verify Configuration]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 6 Add Telegram Bot]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 7 Test the Bot]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Summary Checklist]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Telegram bot not responding]] - document - docker/scripts/README.md
+- [[Test via Control UI]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Test via Telegram]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Troubleshooting_15]] - document - docker/scripts/README.md
+- [[Troubleshooting_31]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Verify OpenAI Key Exists]] - document - docs/setup/SETUP_API_KEYS.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,15 +45,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_ModuleStatsCollector]]
-- 2 edges to [[_COMMUNITY_A2AMethod]]
-- 2 edges to [[_COMMUNITY_load_config()]]
-- 1 edge to [[_COMMUNITY_AgentShroud Docker Configuration]]
-- 1 edge to [[_COMMUNITY_EgressFilter]]
-- 1 edge to [[_COMMUNITY_A2APolicyEngine]]
-- 1 edge to [[_COMMUNITY_A2AProxyResult]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
+- 1 edge to [[_COMMUNITY_.agentsskillsi-twSKILL]]
+- 1 edge to [[_COMMUNITY_pipeline.py — Security Pipeline]]
+- 1 edge to [[_COMMUNITY_TestParseModeStrippedAfterPIIRedaction]]
 
 ## Top bridge nodes
-- [[record_decision]] - degree 17, connects to 7 communities
-- [[SOC Per-Module Enforcement Heat-Map (SCRUM-80)]] - degree 2, connects to 1 community
+- [[API Keys Setup Guide]] - degree 13, connects to 2 communities
+- [[Troubleshooting_15]] - degree 4, connects to 1 community

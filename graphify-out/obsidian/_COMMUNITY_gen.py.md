@@ -1,39 +1,39 @@
 ---
 type: community
-cohesion: 0.12
+cohesion: 0.09
 members: 24
 ---
 
 # gen.py
 
-**Cohesion:** 0.12 - loosely connected
+**Cohesion:** 0.09 - loosely connected
 **Members:** 24 nodes
 
 ## Members
-- [[Get API key from argument first, then environment.]] - rationale - skills/openclaw/nano-banana-pro/scripts/generate_image.py
-- [[Model-Specific Parameters]] - document - skills/openclaw/openai-image-gen/SKILL.md
-- [[Nano Banana Pro (Gemini 3 Pro Image)]] - document - skills/openclaw/nano-banana-pro/SKILL.md
-- [[OpenAI Image Gen]] - document - skills/openclaw/openai-image-gen/SKILL.md
-- [[Other Notable Differences]] - document - skills/openclaw/openai-image-gen/SKILL.md
-- [[Output_1]] - document - skills/openclaw/openai-image-gen/SKILL.md
-- [[Path_27]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
-- [[Quality]] - document - skills/openclaw/openai-image-gen/SKILL.md
-- [[Return (default_size, default_quality) for the given model.]] - rationale - skills/openclaw/openai-image-gen/scripts/gen.py
-- [[Run]] - document - skills/openclaw/openai-image-gen/SKILL.md
-- [[Size]] - document - skills/openclaw/openai-image-gen/SKILL.md
-- [[default_out_dir()]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
-- [[gen.py]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
-- [[generate_image.py]] - code - skills/openclaw/nano-banana-pro/scripts/generate_image.py
-- [[get_api_key()]] - code - skills/openclaw/nano-banana-pro/scripts/generate_image.py
-- [[get_model_defaults()]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
-- [[main()_19]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
-- [[main()_20]] - code - skills/openclaw/nano-banana-pro/scripts/generate_image.py
-- [[nano-banana-proSKILL]] - document - skills/openclaw/nano-banana-pro/SKILL.md
-- [[openai-image-genSKILL]] - document - skills/openclaw/openai-image-gen/SKILL.md
-- [[pick_prompts()]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
-- [[request_images()]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
-- [[slugify()]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
-- [[write_gallery()]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
+- [[AWS Cloud Management & FinOps Agent_2]] - document - .agents/skills/i-aws/SKILL.md
+- [[AWS Cloud Management & FinOps README]] - document - .agents/skills/i-aws/README.md
+- [[Audit Branch (Merge Regression Detection)]] - document - .agents/skills/i-ab/SKILL.md
+- [[Cost Optimization Priority]] - document - .agents/skills/i-aws/SKILL.md
+- [[Cross-Account & Future Proofing]] - document - .agents/skills/i-aws/SKILL.md
+- [[Decision Framework]] - document - .agents/skills/i-aws/SKILL.md
+- [[Deliverables]] - document - .agents/skills/i-aws/SKILL.md
+- [[EBS Performance Analysis (Critical Pattern)]] - document - .agents/skills/i-aws/SKILL.md
+- [[Expertise]] - document - .agents/skills/i-aws/SKILL.md
+- [[GSDE&G Team]] - concept - .agents/skills/i-aws/SKILL.md
+- [[GSDL-715 (Merge Regression Ticket)]] - concept - .agents/skills/i-ab/SKILL.md
+- [[Guardrails_1]] - document - .agents/skills/i-aws/SKILL.md
+- [[Identity]] - document - .agents/skills/i-aws/SKILL.md
+- [[Reports (`.reports`)]] - document - .agents/skills/i-aws/SKILL.md
+- [[Required Tags (All Resources)]] - document - .agents/skills/i-aws/SKILL.md
+- [[Resource Inventory CSV Schema]] - document - .agents/skills/i-aws/SKILL.md
+- [[Rightsizing Logic]] - document - .agents/skills/i-aws/SKILL.md
+- [[SKILL_7]] - document - .agents/skills/i-aws/SKILL.md
+- [[Script Templates]] - document - .agents/skills/i-aws/SKILL.md
+- [[Scripts (`.scripts`)]] - document - .agents/skills/i-aws/SKILL.md
+- [[Tag Audit Process]] - document - .agents/skills/i-aws/SKILL.md
+- [[Tagging Standard]] - document - .agents/skills/i-aws/SKILL.md
+- [[Workflow]] - document - .agents/skills/i-aws/SKILL.md
+- [[i-crpr — Production-Ready PR Skill]] - document - .agents/skills/i-crpr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,3 +41,11 @@ members: 24
 TABLE source_file, type FROM #community/genpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 3 edges to [[_COMMUNITY_port_manager.py]]
+- 1 edge to [[_COMMUNITY_8. Performance & Testing]]
+- 1 edge to [[_COMMUNITY_What is the symptom]]
+
+## Top bridge nodes
+- [[AWS Cloud Management & FinOps Agent_2]] - degree 18, connects to 3 communities

@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[prefetch-ghsa-registry.sh]] - code - docker/config/openclaw/cron/scripts/prefetch-ghsa-registry.sh
-- [[prefetch-ghsa-registry.sh script]] - code - docker/config/openclaw/cron/scripts/prefetch-ghsa-registry.sh
+- [[.test_urlencoded_plain_no_reply_is_still_filtered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form payload plain NO_REPLY should map to deterministic wait guidance.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +19,11 @@ members: 2
 TABLE source_file, type FROM #community/prefetch-ghsa-registrysh
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY__make_proxy()]]
+
+## Top bridge nodes
+- [[.test_urlencoded_plain_no_reply_is_still_filtered()]] - degree 4, connects to 3 communities

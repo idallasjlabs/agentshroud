@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Skill chaos-engineering_1]] - document - docker/config/hermes/skills/i-chaos-engineering/SKILL.md
-- [[hermesskillsi-chaos-engineeringSKILL]] - document - docker/config/hermes/skills/i-chaos-engineering/SKILL.md
+- [[.test_memory_error_without_error_keyword_is_not_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Embeddingprovider hints without explicit error marker should not trigger rewrit]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +19,11 @@ members: 2
 TABLE source_file, type FROM #community/hermes/skills/i-chaos-engineering/SKILLmd
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY__make_proxy()]]
+
+## Top bridge nodes
+- [[.test_memory_error_without_error_keyword_is_not_rewritten()]] - degree 4, connects to 3 communities

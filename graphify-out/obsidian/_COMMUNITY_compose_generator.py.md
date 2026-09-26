@@ -10,19 +10,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[Configuration  Environment Variables_26]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[Default Service Configuration]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[Function Details_46]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[Key Classes  Functions_48]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[Purpose_178]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[Related_52]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[Responsibilities_48]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[compose_generator.py_2]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[compose_generator.py_1]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[gateway service]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[generate_apple_script(services)]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[generate_compose(services, runtime)]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[openclaw service]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[AgentShroud Security Proxy]] - document - docs/requirements/use-cases.md
+- [[Overview_11]] - document - docs/requirements/use-cases.md
+- [[UC-001 User Sends Message to Agent (PII Sanitization Flow)]] - document - docs/requirements/use-cases.md
+- [[UC-002 Agent Calls MCP Tool (Inspection + Permission Check)]] - document - docs/requirements/use-cases.md
+- [[UC-003 Agent Fetches Web Content (SSRF Check + Content Scan)]] - document - docs/requirements/use-cases.md
+- [[UC-004 Admin Activates Kill Switch]] - document - docs/requirements/use-cases.md
+- [[UC-005 Agent Requests SSH Access (Approval Queue)]] - document - docs/requirements/use-cases.md
+- [[UC-006 Security Alert Triggers Notification]] - document - docs/requirements/use-cases.md
+- [[UC-007 New Agent Onboarding (Trust Level 0)]] - document - docs/requirements/use-cases.md
+- [[UC-008 Operator Reviews Audit Trail]] - document - docs/requirements/use-cases.md
+- [[UC-009 System Detects Prompt Injection]] - document - docs/requirements/use-cases.md
+- [[UC-010 Multi-Instance Deployment with Port Auto-Detection]] - document - docs/requirements/use-cases.md
+- [[Use Cases_2]] - document - docs/requirements/use-cases.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,3 +30,9 @@ members: 13
 TABLE source_file, type FROM #community/compose_generatorpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_dashboard_endpoints.py]]
+
+## Top bridge nodes
+- [[Use Cases_2]] - degree 12, connects to 1 community

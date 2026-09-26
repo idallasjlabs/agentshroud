@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[audio_set_volume() — spoken volume command target]] - code - firmware/voice-terminal/main/audio.c
+- [[test_default_summary_equals_openclaw_summary]] - code - gateway/tests/test_agent_cve_registry.py
 
 ## Live Query (requires Dataview plugin)
 

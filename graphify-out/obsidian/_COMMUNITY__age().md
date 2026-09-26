@@ -10,25 +10,25 @@ members: 19
 **Members:** 19 nodes
 
 ## Members
-- [[.test_clean_fresh_and_stale_reports()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_clean_no_report_three()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_critical_high_medium_branches()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_failures_score_two()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_fresh_clean_is_optimizing()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_malware_30h_old_scan_measured()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_malware_fresh_scan_optimizing()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_malware_running_but_nothing_scanned()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_not_run_no_binary()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_oscap_binary_present_not_run()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_runtime_noncritical_findings_scores_four()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_stale_report_caps_at_one()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_two_day_old_clean_is_measured()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[Path_35]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[Set a file's mtime to `hours` hours in the past.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
-- [[TestComplianceAuditing]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestRuntimeProtectionAndMalware]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestVulnerabilityManagement]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[_age()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Anti-Patterns to Flag_8]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[Brand Audit Checklist_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[Brand System Components_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[Color Token Definition_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[Core Discipline Audit → Define → Apply → Enforce_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[Deck  Slide Master Rules_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[Dependencies_6]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[Diagram Theme Block (Mermaid)_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[File & Directory Conventions_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[HTML  CSS Brand Variables_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[Patterns by Output Type_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[Role_44]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[Rules_10]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[SKILL_74]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[Skill Branding Specialist (BS)_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[Typography Scale_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[Validate contrast ratio_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[Voice & Tone Guide_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,13 +38,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY__w()]]
-- 4 edges to [[_COMMUNITY_test_scanner_integration_coverage.py]]
-- 1 edge to [[_COMMUNITY_TestIsFresh]]
+- 3 edges to [[_COMMUNITY__make_tm()]]
 
 ## Top bridge nodes
-- [[_age()]] - degree 7, connects to 2 communities
-- [[TestComplianceAuditing]] - degree 6, connects to 1 community
-- [[TestRuntimeProtectionAndMalware]] - degree 5, connects to 1 community
-- [[TestVulnerabilityManagement]] - degree 5, connects to 1 community
-- [[.test_clean_fresh_and_stale_reports()]] - degree 3, connects to 1 community
+- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_1]] - degree 10, connects to 1 community
+- [[Skill Branding Specialist (BS)_1]] - degree 8, connects to 1 community
+- [[Validate contrast ratio_1]] - degree 2, connects to 1 community

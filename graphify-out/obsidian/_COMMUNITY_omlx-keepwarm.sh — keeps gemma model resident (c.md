@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[omlx-keepwarm.sh — keeps gemma model resident (cold 5.06s vs warm 0.69s)]] - rationale - CHANGELOG.md
+- [[Favicon 256x256 (AgentShroud logo mark)]] - image - branding/favicons/favicon-256x256.png
 
 ## Live Query (requires Dataview plugin)
 

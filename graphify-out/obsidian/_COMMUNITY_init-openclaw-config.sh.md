@@ -1,22 +1,22 @@
 ---
 type: community
-cohesion: 0.38
+cohesion: 0.29
 members: 7
 ---
 
 # init-openclaw-config.sh
 
-**Cohesion:** 0.38 - loosely connected
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[_oc_config_set]] - code - docker/scripts/init-openclaw-config.sh
-- [[_sha256]] - code - docker/scripts/init-openclaw-config.sh
-- [[agentshroud-isolated Network (DMZ tier)]] - code - docker/docker-compose.yml
-- [[entrypoint-agentshroud.sh]] - code - docker/scripts/entrypoint-agentshroud.sh
-- [[entrypoint-agentshroud.sh script]] - code - docker/scripts/entrypoint-agentshroud.sh
-- [[init-openclaw-config.sh]] - code - docker/scripts/init-openclaw-config.sh
-- [[init-openclaw-config.sh script]] - code - docker/scripts/init-openclaw-config.sh
+- [[DELIVERABLE 3 — v0.8.0 Implementation Items]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 1 Streaming Response Outbound Filtering — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 2 Wire MemoryIntegrityLifecycle at Startup — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 3 LLM Proxy User Identity Propagation — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 4 Adversarial Prompt Injection Test Suite — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 5 Audit Chain Guaranteed Persistence for BLOCK Events — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 6 Update ADR-002 to Reflect Enforce-by-Default — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_start-agentshroud.sh]]
+- 1 edge to [[_COMMUNITY_TestWebSearchLog]]
 
 ## Top bridge nodes
-- [[entrypoint-agentshroud.sh]] - degree 3, connects to 1 community
+- [[DELIVERABLE 3 — v0.8.0 Implementation Items]] - degree 7, connects to 1 community

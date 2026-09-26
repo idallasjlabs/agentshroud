@@ -1,117 +1,122 @@
 ---
 type: community
-cohesion: 0.04
-members: 102
+cohesion: 0.03
+members: 107
 ---
 
 # load_config()
 
-**Cohesion:** 0.04 - loosely connected
-**Members:** 102 nodes
+**Cohesion:** 0.03 - loosely connected
+**Members:** 107 nodes
 
 ## Members
-- [[.__init__()_135]] - code - gateway/security/mcp_policy.py
-- [[.__init__()_136]] - code - gateway/tests/test_mcp_policy.py
-- [[.__post_init__()_4]] - code - gateway/security/mcp_policy.py
-- [[._decide()_1]] - code - gateway/security/mcp_policy.py
-- [[._tier_for()_1]] - code - gateway/security/mcp_policy.py
-- [[.allowed()]] - code - gateway/security/mcp_policy.py
-- [[.enforce()_1]] - code - gateway/security/mcp_policy.py
-- [[.evaluate()_1]] - code - gateway/security/mcp_policy.py
-- [[.from_dict()_4]] - code - gateway/security/mcp_policy.py
-- [[.submit_tool_request()_3]] - code - gateway/tests/test_mcp_policy.py
-- [[.test_configured_servers_are_allowlisted_by_default()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[.test_engine_allows_known_server_under_default()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[.test_engine_denies_unknown_server_under_default()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[.test_engine_requires_approval_for_destructive_tool_on_known_server()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[.test_explicit_policy_section_is_not_overridden()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[.test_missing_section_yields_deny_by_default_policy()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[.test_no_mcp_section_still_deny_by_default()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[.wait_for_decision()_3]] - code - gateway/tests/test_mcp_policy.py
-- [[A REAL EnhancedApprovalQueue + default ToolRiskConfig must NOT let the     engin]] - rationale - gateway/tests/test_mcp_policy.py
-- [[A config with no mcp_proxy AND no mcp_policy still yields a fail-closed]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[A destructive tool the operator forgot to classify is still caught as     high-r]] - rationale - gateway/tests/test_mcp_policy.py
-- [[A fullwidthhomoglyph tool name must not evade the denylistkeyword     heuristi]] - rationale - gateway/tests/test_mcp_policy.py
-- [[A knownallowlisted server's non-high-risk tool is still ALLOWED — no breakage.]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[A malformed default_action in YAML must not fail open — it becomes deny.]] - rationale - gateway/tests/test_mcp_policy.py
-- [[A policy-permitted call passes the policy gate (inspectionpermission     layers]] - rationale - gateway/tests/test_mcp_policy.py
-- [[A representative policy two allowlisted servers, one denylisted server,     a p]] - rationale - gateway/tests/test_mcp_policy.py
-- [[A risk tier declared with a bare tool name applies on any allowlisted     server]] - rationale - gateway/tests/test_mcp_policy.py
-- [[A server both allowed and denied is denied (deny wins).]] - rationale - gateway/tests/test_mcp_policy.py
-- [[A stock config (no mcp_policy) must produce a non-empty, deny-by-default policy]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[An empty config denies everything — never a blanket allow.]] - rationale - gateway/tests/test_mcp_policy.py
-- [[An operator-authored mcp_policy section must be honoured verbatim.]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[Any_46]] - code - gateway/security/mcp_policy.py
-- [[Decides allow  deny  require-approval for MCP tool calls.      Usage]] - rationale - gateway/security/mcp_policy.py
-- [[Declarative MCP security policy.      Loaded from the ``mcp_policy`` section of]] - rationale - gateway/security/mcp_policy.py
-- [[End-to-end the engine wired into MCPProxy with a REAL approval queue     must n]] - rationale - gateway/tests/test_mcp_policy.py
-- [[Evaluate a single MCP tool call. Pure — no IO, no side effects         beyond b]] - rationale - gateway/security/mcp_policy.py
-- [[Evaluate and resolve the decision to a terminal ALLOWDENY.          For REQUIRE]] - rationale - gateway/security/mcp_policy.py
-- [[Fail-closed intent even on a known server, an obviously destructive         too]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[Fail-closed a high-risk tool with no approval queue wired is denied,     never]] - rationale - gateway/tests/test_mcp_policy.py
-- [[Fail-closed if the queue returns requires_wait=False for a call the     engine]] - rationale - gateway/tests/test_mcp_policy.py
-- [[Knownconfigured MCP servers must be carried into the default allowlist]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[LOW finding when owner_bypass is enabled but owner_user_id is left     blank, t]] - rationale - gateway/tests/test_mcp_policy.py
-- [[Load and validate configuration from agentshroud.yaml      Search order     1.]] - rationale - gateway/ingest_api/config.py
-- [[MCPPolicyAction]] - code - gateway/security/mcp_policy.py
-- [[MCPPolicyConfig]] - code - gateway/tests/test_mcp_policy.py
-- [[MCPPolicyConfig_1]] - code - gateway/security/mcp_policy.py
-- [[MCPPolicyDecision]] - code - gateway/security/mcp_policy.py
-- [[MCPPolicyEngine]] - code - gateway/tests/test_mcp_policy.py
-- [[MCPPolicyEngine_1]] - code - gateway/security/mcp_policy.py
-- [[Minimal stand-in for EnhancedApprovalQueue.      Records submissions and returns]] - rationale - gateway/tests/test_mcp_policy.py
-- [[MonkeyPatch]] - code - gateway/tests/test_mcp_policy.py
-- [[Normalize a servertool reference for robust, evasion-resistant matching.      A]] - rationale - gateway/security/mcp_policy.py
-- [[Owner skips the approval gate for high-risk tools, but a denylisted     tool is]] - rationale - gateway/tests/test_mcp_policy.py
-- [[Parse a policy config from a plain dict (e.g. loaded from YAML)._1]] - rationale - gateway/security/mcp_policy.py
-- [[Path_25]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[Resolve the risk tier for a tool.          Explicit classification (qualified be]] - rationale - gateway/security/mcp_policy.py
-- [[TestDefaultMcpPolicyIsFailClosed]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[TestDefaultPolicyNoMcpServers]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[The engine wired into MCPProxy blocks a denied call before dispatch —     the fa]] - rationale - gateway/tests/test_mcp_policy.py
-- [[The result of evaluating a single MCP tool call against the policy.]] - rationale - gateway/security/mcp_policy.py
-- [[The synthesised default, fed to the engine, DENIES an unknown server.]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[True only for a terminal ALLOW.          REQUIRE_APPROVAL is not allowed on it]] - rationale - gateway/security/mcp_policy.py
-- [[When an operator explicitly opts into default-allow, a non-allowlisted     serve]] - rationale - gateway/tests/test_mcp_policy.py
-- [[_FakeApprovalQueue]] - code - gateway/tests/test_mcp_policy.py
-- [[_base_config()]] - code - gateway/tests/test_mcp_policy.py
-- [[_norm()_1]] - code - gateway/security/mcp_policy.py
-- [[_write()_1]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[engine()]] - code - gateway/tests/test_mcp_policy.py
-- [[evaluate() records the decision for the SOC module heat-map.]] - rationale - gateway/tests/test_mcp_policy.py
-- [[load_config()]] - code - gateway/ingest_api/config.py
-- [[mcp_policy.py]] - code - gateway/security/mcp_policy.py
-- [[test_allowlisted_server_safe_tool_is_allowed()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_bare_tool_name_risk_tier_applies_across_servers()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_critical_tool_requires_approval()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_decision_records_soc_heatmap()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_default_allow_opt_in_permits_non_allowlisted_safe_tool()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_default_deny_posture_when_no_config()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_denied_tool_can_be_specified_bare_or_qualified()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_denylist_wins_over_allowlist()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_denylisted_server_is_denied_even_if_tool_safe()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_denylisted_tool_is_denied()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_enforce_allows_allowlisted_safe_tool()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_enforce_blocks_unknown_server()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_enforce_high_risk_denied_on_rejection()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_enforce_high_risk_enqueues_and_allows_on_approval()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_enforce_high_risk_queue_no_wait_denies_closed()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_enforce_high_risk_without_queue_denies_closed()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_enforce_real_queue_high_risk_not_downgraded_to_allow (regression guard)]] - code - gateway/tests/test_mcp_policy.py
-- [[test_enforce_real_queue_high_risk_not_downgraded_to_allow()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_enforce_unicode_evasion_still_denied()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_high_risk_tool_requires_approval()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_invalid_default_action_falls_back_to_deny()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_keyword_heuristic_auto_classifies_unlisted_destructive_tool()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_mcp_policy.py]] - code - gateway/tests/test_mcp_policy.py
-- [[test_mcp_policy_default_failclosed.py]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[test_mcp_proxy_allows_policy_permitted_call()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_mcp_proxy_blocks_policy_denied_call()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_mcp_proxy_real_queue_high_risk_never_executes_without_approval()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_owner_bypass_defaults_to_rbac_owner_identity()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_owner_bypasses_approval_but_not_hard_deny()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_server_and_tool_matching_is_case_insensitive()]] - code - gateway/tests/test_mcp_policy.py
-- [[test_unknown_server_is_denied_by_default()]] - code - gateway/tests/test_mcp_policy.py
+- [[.__init__()_55]] - code - gateway/security/audit_export.py
+- [[.__init__()_56]] - code - gateway/security/audit_export.py
+- [[.__init__()_57]] - code - gateway/security/audit_store.py
+- [[.__init__()_58]] - code - gateway/security/audit_store.py
+- [[._default_jsonld_context()]] - code - gateway/security/audit_export.py
+- [[._export_cef()]] - code - gateway/security/audit_export.py
+- [[._export_json()]] - code - gateway/security/audit_export.py
+- [[._export_jsonld()]] - code - gateway/security/audit_export.py
+- [[._generate_event_id()]] - code - gateway/security/audit_store.py
+- [[._get_latest_hash()]] - code - gateway/security/audit_store.py
+- [[._parse_cef_for_verification()]] - code - gateway/security/audit_export.py
+- [[.audit_store()_1]] - code - gateway/tests/test_audit_export.py
+- [[.audit_store()]] - code - gateway/tests/test_audit_export.py
+- [[.close()_9]] - code - gateway/security/audit_store.py
+- [[.compute_content_hash()]] - code - gateway/security/audit_store.py
+- [[.compute_entry_hash()]] - code - gateway/security/audit_store.py
+- [[.export_config()]] - code - gateway/tests/test_audit_export.py
+- [[.export_events()]] - code - gateway/security/audit_export.py
+- [[.get_recent_entries()]] - code - gateway/security/audit_store.py
+- [[.get_stats()_14]] - code - gateway/security/audit_store.py
+- [[.initialize()_3]] - code - gateway/security/audit_store.py
+- [[.log_event()]] - code - gateway/security/audit_store.py
+- [[.query_events()]] - code - gateway/security/audit_store.py
+- [[.store()]] - code - gateway/tests/test_audit_export.py
+- [[.test_content_hash()]] - code - gateway/tests/test_audit_export.py
+- [[.test_entry_hash_chain()]] - code - gateway/tests/test_audit_export.py
+- [[.test_event_creation()]] - code - gateway/tests/test_audit_export.py
+- [[.test_event_to_dict_includes_bot_id()]] - code - gateway/tests/test_audit_export.py
+- [[.test_export_cef()]] - code - gateway/tests/test_audit_export.py
+- [[.test_export_filtering()]] - code - gateway/tests/test_audit_export.py
+- [[.test_export_json()]] - code - gateway/tests/test_audit_export.py
+- [[.test_export_json_ld()]] - code - gateway/tests/test_audit_export.py
+- [[.test_hash_chain_integrity()]] - code - gateway/tests/test_audit_export.py
+- [[.test_log_event()]] - code - gateway/tests/test_audit_export.py
+- [[.test_log_event_default_bot_id_is_openclaw()]] - code - gateway/tests/test_audit_export.py
+- [[.test_log_event_stores_bot_id()]] - code - gateway/tests/test_audit_export.py
+- [[.test_migration_adds_bot_id_column()]] - code - gateway/tests/test_audit_export.py
+- [[.test_query_events()]] - code - gateway/tests/test_audit_export.py
+- [[.test_query_events_bot_filter()]] - code - gateway/tests/test_audit_export.py
+- [[.test_query_events_bot_filter_combined_with_severity()]] - code - gateway/tests/test_audit_export.py
+- [[.test_stats()]] - code - gateway/tests/test_audit_export.py
+- [[.test_tamper_detection()]] - code - gateway/tests/test_audit_export.py
+- [[.test_verify_export_integrity()]] - code - gateway/tests/test_audit_export.py
+- [[.to_dict()_5]] - code - gateway/security/audit_store.py
+- [[.verify_export_integrity()]] - code - gateway/security/audit_export.py
+- [[.verify_hash_chain()]] - code - gateway/security/audit_store.py
+- [[AuditEvent]] - code - gateway/security/audit_export.py
+- [[AuditEvent_1]] - code - gateway/security/audit_store.py
+- [[AuditExportConfig_1]] - code - gateway/security/audit_export.py
+- [[AuditExporter]] - code - gateway/security/audit_export.py
+- [[AuditStore]] - code - gateway/security/audit_export.py
+- [[AuditStore_1]] - code - gateway/security/audit_store.py
+- [[Close the database connection._1]] - rationale - gateway/security/audit_store.py
+- [[Compute SHA-256 hash of event content (excluding hashes).]] - rationale - gateway/security/audit_store.py
+- [[Compute entry hash including previous hash (chain).]] - rationale - gateway/security/audit_store.py
+- [[Configuration for audit export functionality.]] - rationale - gateway/security/audit_export.py
+- [[Convert to dictionary representation.]] - rationale - gateway/security/audit_store.py
+- [[Create audit store with test data.]] - rationale - gateway/tests/test_audit_export.py
+- [[Create in-memory audit store for testing.]] - rationale - gateway/tests/test_audit_export.py
+- [[Create test export configuration.]] - rationale - gateway/tests/test_audit_export.py
+- [[Default JSON-LD context for security ontology.]] - rationale - gateway/security/audit_export.py
+- [[Export audit events in the specified format.          Args             start_ti]] - rationale - gateway/security/audit_export.py
+- [[Export events in Common Event Format (CEF).          CEF Format CEFVersionDev]] - rationale - gateway/security/audit_export.py
+- [[Export events in JSON-LD format with security ontology.]] - rationale - gateway/security/audit_export.py
+- [[Export events in standard JSON format.]] - rationale - gateway/security/audit_export.py
+- [[Export tamper-evident audit events in SOCSIEM formats.]] - rationale - gateway/ingest_api/main.py
+- [[Exports audit events in various compliance formats.]] - rationale - gateway/security/audit_export.py
+- [[Generate a unique event ID based on timestamp + random.]] - rationale - gateway/security/audit_store.py
+- [[Get audit store statistics.]] - rationale - gateway/security/audit_store.py
+- [[Get the entry_hash of the most recent event for chain continuation.]] - rationale - gateway/security/audit_store.py
+- [[Log a new audit event with hash chain integrity.          Args             bot_]] - rationale - gateway/security/audit_store.py
+- [[Open the database, create the schema, and run column migrations.          Initia]] - rationale - gateway/security/audit_store.py
+- [[Opening a pre-migration DB (no bot_id column) should auto-migrate.]] - rationale - gateway/tests/test_audit_export.py
+- [[Parse CEF lines and extract entryHashpreviousHash for chain verification.]] - rationale - gateway/security/audit_export.py
+- [[Path_7]] - code - gateway/security/audit_store.py
+- [[Query audit events with optional filters.          Args             bot_id Whe]] - rationale - gateway/security/audit_store.py
+- [[Represents a single audit event.      The ``bot_id`` field identifies which bot]] - rationale - gateway/security/audit_store.py
+- [[Return the most recent audit entries (alias for query_events with limit).]] - rationale - gateway/security/audit_store.py
+- [[SQLite-backed audit event store with tamper-evident hash chain.]] - rationale - gateway/security/audit_store.py
+- [[Test AuditEvent functionality.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test AuditExporter functionality.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test AuditStore functionality.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test CEF export format.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test JSON export format.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test JSON-LD export format.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test audit store statistics.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test basic audit event creation.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test content hash computation.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test export integrity verification.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test export with filters.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test hash chain computation.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test hash chain maintains integrity.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test logging audit events.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test querying events with filters.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test tamper detection in exports.]] - rationale - gateway/tests/test_audit_export.py
+- [[TestAuditEvent]] - code - gateway/tests/test_audit_export.py
+- [[TestAuditExporter]] - code - gateway/tests/test_audit_export.py
+- [[TestAuditStore]] - code - gateway/tests/test_audit_export.py
+- [[TestAuditStoreBotId]] - code - gateway/tests/test_audit_export.py
+- [[TextIO]] - code - gateway/security/audit_export.py
+- [[Verify per-bot filtering in AuditStore (v1.1.0 multi-bot support).]] - rationale - gateway/tests/test_audit_export.py
+- [[Verify the integrity of an exported audit log.          Args             export]] - rationale - gateway/security/audit_export.py
+- [[Verify the integrity of the hash chain.          Args             start_id Sta]] - rationale - gateway/security/audit_store.py
+- [[audit_export.py]] - code - gateway/security/audit_export.py
+- [[audit_store.py]] - code - gateway/security/audit_store.py
+- [[soc_export()]] - code - gateway/ingest_api/main.py
+- [[test_audit_export.py]] - code - gateway/tests/test_audit_export.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -121,32 +126,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 23 edges to [[_COMMUNITY_ApprovalRequest]]
-- 16 edges to [[_COMMUNITY_MCPToolCall]]
-- 13 edges to [[_COMMUNITY_RBACConfig]]
-- 12 edges to [[_COMMUNITY_SSHProxy]]
-- 7 edges to [[_COMMUNITY_api.py]]
-- 6 edges to [[_COMMUNITY_test_config_hot_reload.py]]
-- 6 edges to [[_COMMUNITY_MCPToolResult]]
-- 5 edges to [[_COMMUNITY_lifespan.py]]
-- 4 edges to [[_COMMUNITY_BotConfig]]
-- 3 edges to [[_COMMUNITY_Enum]]
-- 2 edges to [[_COMMUNITY_socrouter.py]]
-- 2 edges to [[_COMMUNITY_SOCWebSocketHandler]]
-- 2 edges to [[_COMMUNITY_record_decision]]
-- 1 edge to [[_COMMUNITY_rbac_config.py]]
-- 1 edge to [[_COMMUNITY_GroupRoleResolver]]
-- 1 edge to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_SecurityConfig]]
-- 1 edge to [[_COMMUNITY_TeamsConfig]]
-- 1 edge to [[_COMMUNITY_ModeRequest]]
-- 1 edge to [[_COMMUNITY_A2AMethod]]
-- 1 edge to [[_COMMUNITY_test_mfa_guard.py]]
-- 1 edge to [[_COMMUNITY_cls]]
+- 23 edges to [[_COMMUNITY_SSHProxy]]
+- 4 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 2 edges to [[_COMMUNITY_TrustManager]]
+- 2 edges to [[_COMMUNITY__wrap_response()]]
+- 2 edges to [[_COMMUNITY_chatbotmain.py]]
+- 1 edge to [[_COMMUNITY_AgentShroud Device Pairing Management]]
+- 1 edge to [[_COMMUNITY_DockerEngine]]
+- 1 edge to [[_COMMUNITY_test_jira_weekly_review.py]]
+- 1 edge to [[_COMMUNITY_archive_old_events()]]
 
 ## Top bridge nodes
-- [[load_config()]] - degree 49, connects to 12 communities
-- [[MCPPolicyEngine_1]] - degree 46, connects to 4 communities
-- [[test_mcp_policy.py]] - degree 46, connects to 4 communities
-- [[MCPPolicyEngine]] - degree 39, connects to 4 communities
-- [[_FakeApprovalQueue]] - degree 20, connects to 4 communities
+- [[AuditStore_1]] - degree 36, connects to 4 communities
+- [[audit_export.py]] - degree 7, connects to 2 communities
+- [[audit_store.py]] - degree 6, connects to 2 communities
+- [[AuditExporter]] - degree 33, connects to 1 community
+- [[AuditExportConfig_1]] - degree 24, connects to 1 community

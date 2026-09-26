@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # browser-fetch.js
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[Expected Behavior]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
-- [[Purpose_7]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
-- [[Related Notes_7]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
-- [[Security Controls]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
-- [[browser-fetch.js_1]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
-- [[browser-fetch.js]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
+- [[AWS Cloud Management & FinOps_2]] - document - docker/config/openclaw/skills/i-aws/README.md
+- [[Purpose_77]] - document - docker/config/openclaw/skills/i-aws/README.md
+- [[README_82]] - document - docker/config/openclaw/skills/i-aws/README.md
+- [[Related Skills_83]] - document - docker/config/openclaw/skills/i-aws/README.md
+- [[Usage_85]] - document - docker/config/openclaw/skills/i-aws/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,3 +22,9 @@ members: 6
 TABLE source_file, type FROM #community/browser-fetchjs
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_BaseModel]]
+
+## Top bridge nodes
+- [[AWS Cloud Management & FinOps_2]] - degree 5, connects to 1 community

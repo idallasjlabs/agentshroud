@@ -1,20 +1,19 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.50
+members: 4
 ---
 
 # TestRunUpstreamCveCheck
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[.test_no_alert_when_registry_current()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_no_telegram_send_when_no_token()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_returns_error_on_github_api_failure()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_sends_alert_when_new_cves_found()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[TestRunUpstreamCveCheck_1]] - code - gateway/tests/test_daily_cve_report.py
+- [[Patent Center Filing Steps]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Post-Filing]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Pre-Filing Preparation]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[SECTION 7 FILING CHECKLIST]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +23,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_daily_cve_report.py]]
+- 1 edge to [[_COMMUNITY_Daedalus — Concept Illustrator]]
+- 1 edge to [[_COMMUNITY_mcp-proxy-wrapper.js]]
 
 ## Top bridge nodes
-- [[TestRunUpstreamCveCheck_1]] - degree 5, connects to 1 community
+- [[SECTION 7 FILING CHECKLIST]] - degree 5, connects to 2 communities

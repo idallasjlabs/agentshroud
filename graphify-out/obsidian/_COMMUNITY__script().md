@@ -1,25 +1,25 @@
 ---
 type: community
-cohesion: 0.29
+cohesion: 0.20
 members: 10
 ---
 
 # _script()
 
-**Cohesion:** 0.29 - loosely connected
+**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members
-- [[.test_against_the_real_registry()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
-- [[.test_empty_registries_print_nothing()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
-- [[.test_prints_every_ghsa_id_one_per_line()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
-- [[.test_skips_none_ghsa_id_entries()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
-- [[Smoke test against the actual committed registry — every real         ghsa_id cu]] - rationale - gateway/tests/test_list_registry_ghsa_ids.py
-- [[TestListRegistryGhsaIds]] - code - gateway/tests/test_list_registry_ghsa_ids.py
-- [[_script()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
-- [[list_registry_ghsa_ids.py]] - code - scripts/list_registry_ghsa_ids.py
-- [[main()_34]] - code - scripts/list_registry_ghsa_ids.py
-- [[test_list_registry_ghsa_ids.py]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[.test_clean_code_passes()]] - code - gateway/tests/test_credential_isolation.py
+- [[.test_clean_content_passes()_1]] - code - gateway/tests/test_credential_isolation.py
+- [[.test_detect_1password_token()]] - code - gateway/tests/test_credential_isolation.py
+- [[.test_detect_aws_key()]] - code - gateway/tests/test_credential_isolation.py
+- [[.test_detect_github_token()]] - code - gateway/tests/test_credential_isolation.py
+- [[.test_detect_google_oauth_secret()]] - code - gateway/tests/test_credential_isolation.py
+- [[.test_detect_jwt_token()]] - code - gateway/tests/test_credential_isolation.py
+- [[.test_detect_openai_key()]] - code - gateway/tests/test_credential_isolation.py
+- [[Test that credential patterns are detected in outbound content.]] - rationale - gateway/tests/test_credential_isolation.py
+- [[TestCredentialLeakDetection]] - code - gateway/tests/test_credential_isolation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,7 +29,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_gateway.security.agent_cve_registry]]
+- 2 edges to [[_COMMUNITY_Features]]
+- 1 edge to [[_COMMUNITY_Marvin Dev Overlay (port and subnet offsets from]]
 
 ## Top bridge nodes
-- [[list_registry_ghsa_ids.py]] - degree 3, connects to 1 community
+- [[TestCredentialLeakDetection]] - degree 12, connects to 2 communities

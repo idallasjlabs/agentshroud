@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # kaizen Skill (stub)
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[incident-response Skill (stub)_1]] - document - docker/config/openclaw/skills/i-incident-response/SKILL.md
-- [[kaizen Skill (stub)_1]] - document - docker/config/openclaw/skills/i-kaizen/SKILL.md
-- [[kanban Skill (stub)_1]] - document - docker/config/openclaw/skills/i-kanban/SKILL.md
+- [[LogSanitizer PII-Scrubbing Log Filter]] - code - gateway/security/log_sanitizer.py
+- [[Test Log Sanitizer PII Scrubbing]] - code - gateway/tests/test_log_sanitizer.py
 
 ## Live Query (requires Dataview plugin)
 

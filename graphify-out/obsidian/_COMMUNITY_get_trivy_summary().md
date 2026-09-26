@@ -1,35 +1,35 @@
 ---
 type: community
-cohesion: 0.13
+cohesion: 0.14
 members: 20
 ---
 
 # get_trivy_summary()
 
-**Cohesion:** 0.13 - loosely connected
+**Cohesion:** 0.14 - loosely connected
 **Members:** 20 nodes
 
 ## Members
-- [[.test_clean_when_installed_but_no_report()_1]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_not_run_when_no_report_dir()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_returns_generate_summary_output()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_returns_latest_sbom()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_returns_none_for_empty_dir()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_returns_none_when_no_dir()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_two_when_sbom_present()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_zero_when_empty_sbom_dir()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_zero_when_no_sbom_dir()]] - code - gateway/tests/test_scanner_integration.py
-- [[Return latest Trivy scan summary from saved reports.      When Trivy is installe]] - rationale - gateway/security/scanner_integration.py
-- [[Return the latest SBOM (Software Bill of Materials) as parsed JSON.]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 29 AI Model & Supply Chain Integrity (0-5). MITRE ATLAS, OWASP LLM]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 3 Supply Chain (0-5).      0=no SBOM, 2=SBOM exists, 3=SBOM has pa]] - rationale - gateway/security/scanner_integration.py
-- [[TestGetSbom_1]] - code - gateway/tests/test_scanner_integration.py
-- [[TestGetTrivySummary]] - code - gateway/tests/test_scanner_integration.py
-- [[TestScoreSupplyChain]] - code - gateway/tests/test_scanner_integration.py
-- [[_score_ai_model_supply_chain()]] - code - gateway/security/scanner_integration.py
-- [[_score_supply_chain()]] - code - gateway/security/scanner_integration.py
-- [[get_sbom()_1]] - code - gateway/security/scanner_integration.py
-- [[get_trivy_summary()]] - code - gateway/security/scanner_integration.py
+- [[.test_detect_apple()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_detect_docker()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_detect_multiple()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_detect_none()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_detect_podman()]] - code - gateway/tests/test_runtime_engines.py
+- [[Auto-detect which container runtimes are available on this system.]] - rationale - gateway/runtime/__init__.py
+- [[Check system prerequisites for installation.]] - rationale - gateway/web/installer.py
+- [[Get available runtimes with recommendations.]] - rationale - gateway/web/installer.py
+- [[InstallConfig]] - code - gateway/web/installer.py
+- [[PrerequisiteCheck]] - code - gateway/web/installer.py
+- [[Request_8]] - code - gateway/web/installer.py
+- [[Serve the installer wizard HTML.]] - rationale - gateway/web/installer.py
+- [[Start the installation process.      This endpoint kicks off the install and ret]] - rationale - gateway/web/installer.py
+- [[TestDetectRuntime]] - code - gateway/tests/test_runtime_engines.py
+- [[check_prerequisites()]] - code - gateway/web/installer.py
+- [[detect_runtime()]] - code - gateway/runtime/__init__.py
+- [[get_runtimes()]] - code - gateway/web/installer.py
+- [[installer.py]] - code - gateway/web/installer.py
+- [[installer_page()]] - code - gateway/web/installer.py
+- [[start_install()]] - code - gateway/web/installer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,19 +39,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_test_scanner_integration.py]]
-- 5 edges to [[_COMMUNITY_scanner_integration.py]]
-- 3 edges to [[_COMMUNITY_compute_scorecard()]]
-- 3 edges to [[_COMMUNITY_socrouter.py]]
-- 3 edges to [[_COMMUNITY_Path]]
-- 3 edges to [[_COMMUNITY_Any]]
-- 1 edge to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_wazuh_client.py]]
-- 1 edge to [[_COMMUNITY_test_scorecard_integrity.py]]
+- 5 edges to [[_COMMUNITY_api.py]]
+- 4 edges to [[_COMMUNITY_export-bot-conversations.py]]
+- 2 edges to [[_COMMUNITY_main.rs]]
+- 2 edges to [[_COMMUNITY_ADR-009 Enforce-by-Default Security Philosophy]]
+- 1 edge to [[_COMMUNITY_REPORT STRUCTURE]]
+- 1 edge to [[_COMMUNITY_iCloud Services]]
+- 1 edge to [[_COMMUNITY_DELIVERABLE 1 — Domain-by-Domain Assessment]]
+- 1 edge to [[_COMMUNITY_GatewayEmailService]]
 
 ## Top bridge nodes
-- [[get_trivy_summary()]] - degree 16, connects to 7 communities
-- [[get_sbom()_1]] - degree 9, connects to 4 communities
-- [[_score_supply_chain()]] - degree 9, connects to 3 communities
-- [[_score_ai_model_supply_chain()]] - degree 6, connects to 3 communities
-- [[TestGetSbom_1]] - degree 4, connects to 1 community
+- [[detect_runtime()]] - degree 14, connects to 4 communities
+- [[TestDetectRuntime]] - degree 11, connects to 4 communities
+- [[installer.py]] - degree 10, connects to 2 communities
+- [[get_runtimes()]] - degree 4, connects to 1 community
+- [[InstallConfig]] - degree 3, connects to 1 community

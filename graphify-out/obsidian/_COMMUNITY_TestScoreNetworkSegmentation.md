@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.67
+members: 3
 ---
 
 # TestScoreNetworkSegmentation
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[.test_five_with_icc_disabled_and_validator()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_four_with_icc_disabled()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_three_baseline()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreNetworkSegmentation]] - code - gateway/tests/test_scorecard_scoring.py
+- [[SKILL_208]] - document - skills/openclaw/gifgrep/SKILL.md
+- [[gifgrep]] - document - skills/openclaw/gifgrep/SKILL.md
+- [[gifgrep CLI]] - concept - skills/openclaw/gifgrep/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +20,3 @@ members: 4
 TABLE source_file, type FROM #community/TestScoreNetworkSegmentation
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_scorecard_scoring.py]]
-
-## Top bridge nodes
-- [[TestScoreNetworkSegmentation]] - degree 4, connects to 1 community

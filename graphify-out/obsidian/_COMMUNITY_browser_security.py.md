@@ -10,21 +10,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[BrowserSecurityGuard.analyze_content(content)]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[BrowserSecurityGuard.analyze_screenshot(image_data)]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[BrowserSecurityGuard.can_enter_credentials(url)]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[BrowserSecurityGuard.check_url_reputation(url)]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[BrowserSecurityGuard.register_screenshot_hook(hook)]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[Function Details_29]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[Key Classes  Functions_31]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[Purpose_158]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[Related_35]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[Responsibilities_32]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[Social Engineering Patterns]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[Threat Model_19]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[URL Reputation Signals]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[browser_security.py_2]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[browser_security.py_1]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[Config Keys Read_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[Database Schema]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[Environment Variables Used_1]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[Function Details_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[Imports From  Exports To_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[Key Classes  Functions_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[Known Issues  Notes_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[Purpose_113]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[Related_3]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[Responsibilities_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[enforce_retention()]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[initialize()]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[ledger.py_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[query(page, page_size, source, since, until, forwarded_to)]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[record(source, content, original_content, sanitized, redaction_count, redaction_types, forwarded_to, content_type, metadata)]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,3 +32,9 @@ members: 15
 TABLE source_file, type FROM #community/browser_securitypy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_PipelineAction]]
+
+## Top bridge nodes
+- [[ledger.py_2]] - degree 11, connects to 1 community

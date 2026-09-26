@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[block_credential_read.sh]] - code - .claude/scripts/claude-hooks/block_credential_read.sh
-- [[block_credential_read.sh script]] - code - .claude/scripts/claude-hooks/block_credential_read.sh
+- [[feature-priorities_3]] - document - skills/custom/agentshroud-redteam/references/steve-hay-assessment.md
+- [[steve-hay-assessment_1]] - document - skills/custom/agentshroud-redteam/references/steve-hay-assessment.md
 
 ## Live Query (requires Dataview plugin)
 

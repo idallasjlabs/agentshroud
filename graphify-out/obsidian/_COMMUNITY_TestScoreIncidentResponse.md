@@ -1,20 +1,19 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.50
+members: 4
 ---
 
 # TestScoreIncidentResponse
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[.test_five_with_soc_correlation_and_killswitch()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_four_with_soc_correlation()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_one_baseline_neither_running()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_three_with_falco_and_wazuh()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreIncidentResponse]] - code - gateway/tests/test_scorecard_scoring.py
+- [[5. API Key Rotation]] - document - docs/operations/runbook.md
+- [[Admin API Token]] - document - docs/operations/runbook.md
+- [[OpenClaw API Key]] - document - docs/operations/runbook.md
+- [[SSL Certificates]] - document - docs/operations/runbook.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_scorecard_scoring.py]]
+- 1 edge to [[_COMMUNITY_test_anthropic_openai_translator.py]]
 
 ## Top bridge nodes
-- [[TestScoreIncidentResponse]] - degree 5, connects to 1 community
+- [[5. API Key Rotation]] - degree 4, connects to 1 community

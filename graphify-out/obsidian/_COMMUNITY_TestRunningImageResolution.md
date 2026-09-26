@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # TestRunningImageResolution
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[.test_prefers_running_image_over_configured_tag()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_running_image_parses_docker_inspect_stdout()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_running_image_returns_none_on_inspect_failure()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_running_image_returns_none_when_docker_missing()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[Regression guard (2026-08-30) the report scanned latest tags         while dep]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[TestRunningImageResolution_1]] - code - gateway/tests/test_daily_cve_report.py
+- [[Mnemosyne — Retention Engineer_4]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
+- [[Purpose_94]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
+- [[README_99]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
+- [[Related Skills_103]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
+- [[Usage_104]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_daily_cve_report.py]]
+- 1 edge to [[_COMMUNITY_BaseModel]]
 
 ## Top bridge nodes
-- [[TestRunningImageResolution_1]] - degree 5, connects to 1 community
+- [[Mnemosyne — Retention Engineer_4]] - degree 5, connects to 1 community

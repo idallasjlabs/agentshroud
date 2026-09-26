@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # gifgrep/SKILL.md
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[gifgrep]] - document - skills/openclaw/gifgrep/SKILL.md
-- [[gifgrep CLI]] - concept - skills/openclaw/gifgrep/SKILL.md
-- [[gifgrepSKILL]] - document - skills/openclaw/gifgrep/SKILL.md
+- [[Diagram 18 Runbook]] - image - docs/diagrams/images/diagram-18-runbook.svg
+- [[Diagram 19 Incident Response]] - image - docs/diagrams/images/diagram-19-incident-response.svg
 
 ## Live Query (requires Dataview plugin)
 

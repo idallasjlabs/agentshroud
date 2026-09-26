@@ -1,24 +1,24 @@
 ---
 type: community
-cohesion: 0.31
+cohesion: 0.22
 members: 9
 ---
 
 # post-deploy-check.sh
 
-**Cohesion:** 0.31 - loosely connected
+**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members
-- [[_rollback()]] - code - scripts/update-agentshroud.sh
-- [[check()_4]] - code - scripts/post-deploy-check.sh
-- [[post-deploy-check.sh]] - code - scripts/post-deploy-check.sh
-- [[post-deploy-check.sh script]] - code - scripts/post-deploy-check.sh
-- [[restore-backup.sh]] - code - scripts/restore-backup.sh
-- [[restore-backup.sh script]] - code - scripts/restore-backup.sh
-- [[restore_tar_to_volume()]] - code - scripts/restore-backup.sh
-- [[update-agentshroud.sh]] - code - scripts/update-agentshroud.sh
-- [[update-agentshroud.sh script]] - code - scripts/update-agentshroud.sh
+- [[AgentShroud v1.2.0 — Red Team Assessment]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Methodology note]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[RT-00 — Tool inventory disclosure]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[RT-MB4 — Hermes cron job injection via jobs.yaml]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[red-team-assessment-v1.2.0]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[§3 — SAST Scan Summary]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[§4 — Findings Summary]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[§5 — Acceptance Rationales (Signed Off)]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[§6 — Regression Test Index]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,9 +28,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_run_test()]]
-- 1 edge to [[_COMMUNITY_check-vendor-compat.sh]]
+- 1 edge to [[_COMMUNITY_killswitch.sh]]
+- 1 edge to [[_COMMUNITY_hermesmanifest.json]]
+- 1 edge to [[_COMMUNITY_Domain allowlisted (agentshroud.yaml proxy.allo]]
 
 ## Top bridge nodes
-- [[post-deploy-check.sh]] - degree 4, connects to 1 community
-- [[update-agentshroud.sh]] - degree 4, connects to 1 community
+- [[AgentShroud v1.2.0 — Red Team Assessment]] - degree 8, connects to 2 communities
+- [[red-team-assessment-v1.2.0]] - degree 2, connects to 1 community

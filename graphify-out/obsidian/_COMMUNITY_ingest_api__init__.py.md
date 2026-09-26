@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ingest_api__init__.py]] - code - gateway/ingest_api/__init__.py
+- [[Hermes Local-Model Temperature Repetition-Loop Investigation]] - concept - CONTINUE-2026-08-17.md
 
 ## Live Query (requires Dataview plugin)
 

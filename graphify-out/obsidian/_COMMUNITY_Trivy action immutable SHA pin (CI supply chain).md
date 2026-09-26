@@ -10,13 +10,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[CI docs drift  version consistency check]] - code - .github/workflows/ci.yml
-- [[CI security-scan job (pip-audit)]] - code - .github/workflows/ci.yml
-- [[Streaming direct voice path (_call_llm_stream)]] - concept - CHANGELOG.md
-- [[Trivy action immutable SHA pin (CI supply chain)]] - rationale - CHANGELOG.md
-- [[Upstream-advisory watch cron jobs (8 toolchain components)]] - concept - CHANGELOG.md
-- [[v1.5.1 — A2A Governance patch release]] - document - CHANGELOG.md
-- [[v1.6.0 — voice terminal release]] - document - CHANGELOG.md
+- [[.test_get_all_loaded_values_method()]] - code - gateway/tests/test_credential_injector.py
+- [[.test_returns_empty_when_dir_missing()]] - code - gateway/tests/test_credential_injector.py
+- [[.test_returns_values_meeting_min_len()]] - code - gateway/tests/test_credential_injector.py
+- [[.test_strips_trailing_newline()]] - code - gateway/tests/test_credential_injector.py
+- [[CredentialInjector.get_all_loaded_values returns all loaded credential values.]] - rationale - gateway/tests/test_credential_injector.py
+- [[TestLoadAllSecretFileValues]] - code - gateway/tests/test_credential_injector.py
+- [[load_all_secret_file_values reads all Docker secret files for scrubbing.]] - rationale - gateway/tests/test_credential_injector.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +24,11 @@ members: 7
 TABLE source_file, type FROM #community/Trivy_action_immutable_SHA_pin_CI_supply_chain
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_ssh_proxy.py]]
+- 1 edge to [[_COMMUNITY_Features]]
+
+## Top bridge nodes
+- [[TestLoadAllSecretFileValues]] - degree 6, connects to 1 community
+- [[.test_get_all_loaded_values_method()]] - degree 3, connects to 1 community

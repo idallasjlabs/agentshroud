@@ -10,25 +10,25 @@ members: 19
 **Members:** 19 nodes
 
 ## Members
-- [[Stand-in for kokoro.KPipeline a callable yielding (graphemes, phonemes,     aud]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Stand-in for kokoro.KPipeline a callable yielding (graphemes, phonemes, audio)…]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Text that normalises to emptywhitespace returns b'' without invoking Kokoro.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[When OUTPUT_SAMPLE_RATE (24000, Kokoro native) != TARGET_SAMPLE_RATE     (16000)]] - rationale - gateway/tests/test_voice_gateway.py
-- [[_fake_kokoro_pipeline()]] - code - gateway/tests/test_voice_gateway.py
-- [[_fake_kokoro_pipeline()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[_pipeline()]] - code - gateway/tests/test_voice_gateway.py
-- [[_spy_get_pipeline()]] - code - gateway/tests/test_voice_gateway.py
-- [[synthesize() feeds the normalised (no-markdown, no-token) text to Kokoro.      V]] - rationale - gateway/tests/test_voice_gateway.py
-- [[synthesize() feeds the normalised (no-markdown, no-token) text to Kokoro.…]] - rationale - gateway/tests/test_voice_gateway.py
-- [[synthesize() runs the Kokoro pipeline; when rates match no resampling occurs.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[test_tts_resamples_24000_to_16000()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_tts_resamples_24000_to_16000()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[test_tts_synthesize_only_whitespace_after_normalise_returns_empty()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_tts_synthesize_only_whitespace_after_normalise_returns_empty()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[test_tts_synthesize_passes_normalised_text_to_kokoro()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_tts_synthesize_passes_normalised_text_to_kokoro()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[test_tts_synthesize_via_kokoro()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_tts_synthesize_via_kokoro()_1]] - code - gateway/tests/test_voice_gateway.py
+- [[1. Check MCP Configuration_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[2. Test GitHub MCP Server_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[3. Test Atlassian MCP Server_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[4. Test AWS API MCP Server_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Common Issues & Fixes_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Diagnostic Capabilities_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Diagnostic Workflow_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Issue AWS credentials not found_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Issue Atlassian OAuth token expired_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Issue Docker not found_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Issue GitHub MCP authentication failed_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Issue npx not found_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Issue uvx not found_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Output Format_18]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Related Skills_61]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Role_55]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[SKILL_97]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Skill MCP Doctor (MCPM-DOCTOR)_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[When to Invoke_5]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,12 +38,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_test_voice_gateway.py]]
-- 5 edges to [[_COMMUNITY_test_voice_gateway.py]]
+- 1 edge to [[_COMMUNITY__make_tm()]]
 
 ## Top bridge nodes
-- [[_fake_kokoro_pipeline()]] - degree 7, connects to 1 community
-- [[_fake_kokoro_pipeline()_1]] - degree 5, connects to 1 community
-- [[test_tts_resamples_24000_to_16000()]] - degree 3, connects to 1 community
-- [[test_tts_synthesize_only_whitespace_after_normalise_returns_empty()]] - degree 3, connects to 1 community
-- [[test_tts_synthesize_passes_normalised_text_to_kokoro()]] - degree 3, connects to 1 community
+- [[Skill MCP Doctor (MCPM-DOCTOR)_1]] - degree 9, connects to 1 community

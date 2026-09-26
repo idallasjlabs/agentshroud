@@ -10,64 +10,64 @@ members: 58
 **Members:** 58 nodes
 
 ## Members
-- [[.test_output_json()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_output_table_caps_columns_at_eight()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_output_table_dict()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_output_table_empty_list()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_output_table_list_of_dicts()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_output_table_list_of_scalars()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_output_table_scalar()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_output_yaml()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_output_yaml_falls_back_to_json_without_pyyaml()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_print_table_empty_rows_is_noop()]] - code - gateway/tests/test_cli_coverage.py
-- [[Add a collaborator by Telegram user ID.]] - rationale - gateway/cli/main.py
-- [[Add a user to a group.]] - rationale - gateway/cli/main.py
-- [[Aggregate health report.]] - rationale - gateway/cli/main.py
-- [[Any_74]] - code - gateway/cli/main.py
-- [[Approve an egress request by ID.]] - rationale - gateway/cli/main.py
-- [[Deny an egress request by ID.]] - rationale - gateway/cli/main.py
-- [[Emergency freeze pause all bot containers.]] - rationale - gateway/cli/main.py
-- [[Get container logs for a service.]] - rationale - gateway/cli/main.py
-- [[List all contributors with roles and groups.]] - rationale - gateway/cli/main.py
-- [[List all service containers with status.]] - rationale - gateway/cli/main.py
-- [[Print data in the requested format.]] - rationale - gateway/cli/main.py
-- [[Query recent security events.]] - rationale - gateway/cli/main.py
-- [[Restart a service container.]] - rationale - gateway/cli/main.py
-- [[Set collaboration mode for a group.]] - rationale - gateway/cli/main.py
-- [[Set configuration values.]] - rationale - gateway/cli/main.py
-- [[Show SOC correlation summary.]] - rationale - gateway/cli/main.py
-- [[Show current risk score and level.]] - rationale - gateway/cli/main.py
-- [[Show pending egress approval requests.]] - rationale - gateway/cli/main.py
-- [[Stop a service container.]] - rationale - gateway/cli/main.py
-- [[Stream real-time events or logs via WebSocket.]] - rationale - gateway/cli/main.py
-- [[TestOutputHelpers]] - code - gateway/tests/test_cli_coverage.py
-- [[Trigger a security scan.]] - rationale - gateway/cli/main.py
-- [[_output()]] - code - gateway/cli/main.py
-- [[_print_table()]] - code - gateway/cli/main.py
-- [[add_collaborator()_1]] - code - gateway/cli/main.py
-- [[add_group_member()_1]] - code - gateway/cli/main.py
-- [[approve()]] - code - gateway/cli/main.py
-- [[climain.py]] - code - gateway/cli/main.py
-- [[deny()]] - code - gateway/cli/main.py
-- [[freeze()]] - code - gateway/cli/main.py
-- [[get()]] - code - gateway/cli/main.py
-- [[get_correlation()]] - code - gateway/cli/main.py
-- [[get_egress_pending()_1]] - code - gateway/cli/main.py
-- [[get_events()]] - code - gateway/cli/main.py
-- [[get_groups()]] - code - gateway/cli/main.py
-- [[get_health()_1]] - code - gateway/cli/main.py
-- [[get_logs()_1]] - code - gateway/cli/main.py
-- [[get_risk()]] - code - gateway/cli/main.py
-- [[get_services()]] - code - gateway/cli/main.py
-- [[get_users()]] - code - gateway/cli/main.py
-- [[restart()]] - code - gateway/cli/main.py
-- [[restart_service()_2]] - code - gateway/cli/main.py
-- [[scan()]] - code - gateway/cli/main.py
-- [[set()]] - code - gateway/cli/main.py
-- [[set_mode()_1]] - code - gateway/cli/main.py
-- [[stop()]] - code - gateway/cli/main.py
-- [[stop_service()_2]] - code - gateway/cli/main.py
-- [[tail()_1]] - code - gateway/cli/main.py
+- [[.__init__()_120]] - code - gateway/security/subagent_monitor.py
+- [[._log_event()_1]] - code - gateway/security/subagent_monitor.py
+- [[.check_tool_usage()]] - code - gateway/security/subagent_monitor.py
+- [[.deregister()_1]] - code - gateway/security/subagent_monitor.py
+- [[.get_active()]] - code - gateway/security/subagent_monitor.py
+- [[.get_audit_log()_6]] - code - gateway/security/subagent_monitor.py
+- [[.get_flagged_events()]] - code - gateway/security/subagent_monitor.py
+- [[.kill_agent()]] - code - gateway/security/subagent_monitor.py
+- [[.kill_all()]] - code - gateway/security/subagent_monitor.py
+- [[.register_spawn()]] - code - gateway/security/subagent_monitor.py
+- [[.test_audit_filterable_by_agent()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_audit_has_timestamps()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_default_mode_is_enforce()_7]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_deregister_frees_slot()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_deregister_logged()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_deregister_subagent()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_enforce_mode_blocks_over_limit()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_enforce_mode_blocks_trust_violation()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_generous_concurrent_default()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_kill_logs_event()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_kill_specific_agent()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_kill_switch_marks_all_for_termination()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_kill_switch_propagates_to_children()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_list_active_subagents()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_monitor_mode_allows_all_tools()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_monitor_mode_allows_over_limit()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_nested_subagent_inherits_chain()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_register_subagent()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_spawn_logged()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_subagent_cannot_exceed_parent()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_subagent_info_has_spawn_time()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_subagent_inherits_parent_trust()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_tool_usage_logged()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_tool_within_trust_allowed()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_trust_inheritance_default_on()]] - code - gateway/tests/test_subagent_monitor.py
+- [[.test_trust_violation_flagged()]] - code - gateway/tests/test_subagent_monitor.py
+- [[Default mode is enforce after v0.8.0 enforcement hardening._2]] - rationale - gateway/tests/test_subagent_monitor.py
+- [[If sub-agent tries tool above its trust, flag it.]] - rationale - gateway/tests/test_subagent_monitor.py
+- [[In monitor mode, even trust violations are allowed (just flagged).]] - rationale - gateway/tests/test_subagent_monitor.py
+- [[Monitor mode flags but allows.]] - rationale - gateway/tests/test_subagent_monitor.py
+- [[SubagentEvent]] - code - gateway/security/subagent_monitor.py
+- [[SubagentInfo]] - code - gateway/security/subagent_monitor.py
+- [[SubagentMonitor]] - code - gateway/security/subagent_monitor.py
+- [[TestAuditTrail_2]] - code - gateway/tests/test_subagent_monitor.py
+- [[TestConcurrentLimits]] - code - gateway/tests/test_subagent_monitor.py
+- [[TestKillSwitch]] - code - gateway/tests/test_subagent_monitor.py
+- [[TestPermissionMonitoring]] - code - gateway/tests/test_subagent_monitor.py
+- [[TestSubagentMonitorConfig]] - code - gateway/tests/test_subagent_monitor.py
+- [[TestSubagentTracking]] - code - gateway/tests/test_subagent_monitor.py
+- [[TestTrustInheritance]] - code - gateway/tests/test_subagent_monitor.py
+- [[ToolCheckResult]] - code - gateway/security/subagent_monitor.py
+- [[default_config()_4]] - code - gateway/tests/test_subagent_monitor.py
+- [[monitor()_1]] - code - gateway/tests/test_subagent_monitor.py
+- [[monitor_config()_2]] - code - gateway/tests/test_subagent_monitor.py
+- [[strict_config()_2]] - code - gateway/tests/test_subagent_monitor.py
+- [[strict_monitor()]] - code - gateway/tests/test_subagent_monitor.py
+- [[subagent_monitor.py]] - code - gateway/security/subagent_monitor.py
+- [[test_subagent_monitor.py]] - code - gateway/tests/test_subagent_monitor.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -77,14 +77,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_test_cli_coverage.py]]
-- 4 edges to [[_COMMUNITY_SCLClient]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_client_from_env()]]
+- 32 edges to [[_COMMUNITY_lifespan.py]]
+- 24 edges to [[_COMMUNITY_TrustManager]]
+- 2 edges to [[_COMMUNITY_test_llm_proxy_failover.py]]
+- 2 edges to [[_COMMUNITY_ProgressiveLockdown]]
+- 1 edge to [[_COMMUNITY_EncryptedStore]]
+- 1 edge to [[_COMMUNITY_AgentTarget]]
+- 1 edge to [[_COMMUNITY_GroupApprovalRouter]]
+- 1 edge to [[_COMMUNITY_SlackSocketClient]]
+- 1 edge to [[_COMMUNITY_test_dashboard.py]]
 
 ## Top bridge nodes
-- [[climain.py]] - degree 33, connects to 4 communities
-- [[TestOutputHelpers]] - degree 14, connects to 2 communities
-- [[tail()_1]] - degree 5, connects to 2 communities
-- [[_output()]] - degree 31, connects to 1 community
-- [[get()]] - degree 9, connects to 1 community
+- [[subagent_monitor.py]] - degree 10, connects to 6 communities
+- [[SubagentMonitor]] - degree 46, connects to 5 communities
+- [[SubagentEvent]] - degree 17, connects to 3 communities
+- [[test_subagent_monitor.py]] - degree 15, connects to 2 communities
+- [[TestTrustInheritance]] - degree 9, connects to 2 communities

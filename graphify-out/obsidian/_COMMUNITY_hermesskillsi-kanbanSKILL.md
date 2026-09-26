@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Skill kanban_1]] - document - docker/config/hermes/skills/i-kanban/SKILL.md
-- [[hermesskillsi-kanbanSKILL]] - document - docker/config/hermes/skills/i-kanban/SKILL.md
+- [[.test_skill_sandbox_message_without_healthcheck_is_not_rewritten_for_form_caption()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form caption should keep non-healthcheck SKILL.md sandbox text unchanged.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +19,11 @@ members: 2
 TABLE source_file, type FROM #community/hermes/skills/i-kanban/SKILLmd
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY__make_proxy()]]
+
+## Top bridge nodes
+- [[.test_skill_sandbox_message_without_healthcheck_is_not_rewritten_for_form_caption()]] - degree 4, connects to 3 communities

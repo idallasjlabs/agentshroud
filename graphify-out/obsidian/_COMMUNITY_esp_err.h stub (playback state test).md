@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[esp_err.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/esp_err.h
+- [[Collaborator Greeter State Debug Helper]] - code - scripts/verify-greeter-state.sh
 
 ## Live Query (requires Dataview plugin)
 

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[markmap-mcp-server (MCP server)]] - concept - docker/config/hermes/skills/i-mm/SKILL.md
+- [[Red Team Canary Values (FAKE_SSN, FAKE_KEY, Project Nightingale)]] - concept - docker/config/openclaw/skills/i-sec-offense/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

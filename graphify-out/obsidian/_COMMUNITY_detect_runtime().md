@@ -1,35 +1,35 @@
 ---
 type: community
-cohesion: 0.14
+cohesion: 0.10
 members: 20
 ---
 
 # detect_runtime()
 
-**Cohesion:** 0.14 - loosely connected
+**Cohesion:** 0.10 - loosely connected
 **Members:** 20 nodes
 
 ## Members
-- [[.test_detect_apple()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_detect_docker()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_detect_multiple()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_detect_none()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_detect_podman()]] - code - gateway/tests/test_runtime_engines.py
-- [[Auto-detect which container runtimes are available on this system.]] - rationale - gateway/runtime/__init__.py
-- [[Check system prerequisites for installation.]] - rationale - gateway/web/installer.py
-- [[Get available runtimes with recommendations.]] - rationale - gateway/web/installer.py
-- [[InstallConfig]] - code - gateway/web/installer.py
-- [[PrerequisiteCheck]] - code - gateway/web/installer.py
-- [[Request_7]] - code - gateway/web/installer.py
-- [[Serve the installer wizard HTML.]] - rationale - gateway/web/installer.py
-- [[Start the installation process.      This endpoint kicks off the install and ret]] - rationale - gateway/web/installer.py
-- [[TestDetectRuntime]] - code - gateway/tests/test_runtime_engines.py
-- [[check_prerequisites()]] - code - gateway/web/installer.py
-- [[detect_runtime()]] - code - gateway/runtime/__init__.py
-- [[get_runtimes()]] - code - gateway/web/installer.py
-- [[installer.py_2]] - code - gateway/web/installer.py
-- [[installer_page()]] - code - gateway/web/installer.py
-- [[start_install()]] - code - gateway/web/installer.py
+- [[1. Code Audit]] - document - docs/claude-security-audit-prompt.md
+- [[2. Verify Open Findings]] - document - docs/claude-security-audit-prompt.md
+- [[3. Test Each Module]] - document - docs/claude-security-audit-prompt.md
+- [[4. Collaborator Isolation]] - document - docs/claude-security-audit-prompt.md
+- [[5. Update the Module Matrix]] - document - docs/claude-security-audit-prompt.md
+- [[Additional Security Components]] - document - docs/claude-security-audit-prompt.md
+- [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - document - docs/claude-security-audit-prompt.md
+- [[Architecture_4]] - document - docs/claude-security-audit-prompt.md
+- [[Collaborator Access Control Tests]] - document - docs/claude-security-audit-prompt.md
+- [[Context for Claude]] - document - docs/claude-security-audit-prompt.md
+- [[Fixed Findings]] - document - docs/claude-security-audit-prompt.md
+- [[Key Files to Review]] - document - docs/claude-security-audit-prompt.md
+- [[Known Findings (Blue Team Assessment + Steve Hay's Review)]] - document - docs/claude-security-audit-prompt.md
+- [[Open Findings]] - document - docs/claude-security-audit-prompt.md
+- [[Output Format_39]] - document - docs/claude-security-audit-prompt.md
+- [[Steve Hay's Specific Findings]] - document - docs/claude-security-audit-prompt.md
+- [[The 34 Security Modules]] - document - docs/claude-security-audit-prompt.md
+- [[What is AgentShroud_1]] - document - docs/claude-security-audit-prompt.md
+- [[Your Tasks]] - document - docs/claude-security-audit-prompt.md
+- [[claude-security-audit-prompt]] - document - docs/claude-security-audit-prompt.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,21 +37,3 @@ members: 20
 TABLE source_file, type FROM #community/detect_runtime
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 5 edges to [[_COMMUNITY_api.py]]
-- 3 edges to [[_COMMUNITY_test_runtime_engines.py]]
-- 2 edges to [[_COMMUNITY_RuntimeConfig]]
-- 2 edges to [[_COMMUNITY_BaseModel]]
-- 1 edge to [[_COMMUNITY_ContainerInfo]]
-- 1 edge to [[_COMMUNITY_PodmanEngine]]
-- 1 edge to [[_COMMUNITY_DockerEngine]]
-- 1 edge to [[_COMMUNITY_AppleContainerEngine]]
-- 1 edge to [[_COMMUNITY_get_engine()]]
-
-## Top bridge nodes
-- [[TestDetectRuntime]] - degree 11, connects to 5 communities
-- [[detect_runtime()]] - degree 14, connects to 4 communities
-- [[installer.py_2]] - degree 10, connects to 2 communities
-- [[get_runtimes()]] - degree 4, connects to 1 community
-- [[InstallConfig]] - degree 3, connects to 1 community

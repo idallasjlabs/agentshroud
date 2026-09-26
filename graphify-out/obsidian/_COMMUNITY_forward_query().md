@@ -1,23 +1,22 @@
 ---
 type: community
-cohesion: 0.39
-members: 8
+cohesion: 0.29
+members: 7
 ---
 
 # forward_query()
 
-**Cohesion:** 0.39 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[.test_all_upstreams_fail_returns_none()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_failover_to_second_upstream()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_first_upstream_succeeds()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[Build a fake `socket` module namespace driving forward_query without IO.      E]] - rationale - gateway/tests/test_dns_canvas_coverage.py
-- [[Forward a DNS query to upstream resolvers with failover.]] - rationale - gateway/proxy/dns_forwarder.py
-- [[TestForwardQuery]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[forward_query()]] - code - gateway/proxy/dns_forwarder.py
-- [[make_fake_socket_module()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[Docker Compose (infra diagram)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
+- [[Docker Secrets (infra diagram)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
+- [[Docker Secrets Management (deployment doc)]] - concept - docs/architecture/deployment-diagram.md
+- [[Docker Secrets Structure (runsecrets)]] - concept - docs/data/schema-documentation.md
+- [[Named Docker Volumes]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
+- [[agentshroud-internal network (172.20.0.016)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
+- [[agentshroud-isolated network (172.21.0.016)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,12 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_test_dns_canvas_coverage.py]]
-- 2 edges to [[_COMMUNITY_DNSForwarderProtocol]]
-- 1 edge to [[_COMMUNITY_parse_query()]]
-- 1 edge to [[_COMMUNITY_DNSBlocklist]]
+- 1 edge to [[_COMMUNITY_Dockerfile — Bot (OpenClaw)]]
 
 ## Top bridge nodes
-- [[forward_query()]] - degree 7, connects to 3 communities
-- [[TestForwardQuery]] - degree 6, connects to 3 communities
-- [[make_fake_socket_module()]] - degree 5, connects to 1 community
+- [[agentshroud-isolated network (172.21.0.016)]] - degree 2, connects to 1 community

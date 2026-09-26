@@ -1,27 +1,27 @@
 ---
 type: community
-cohesion: 0.17
+cohesion: 0.21
 members: 12
 ---
 
 # TestSSRFBlocking
 
-**Cohesion:** 0.17 - loosely connected
+**Cohesion:** 0.21 - loosely connected
 **Members:** 12 nodes
 
 ## Members
-- [[.test_10_x_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_127_0_0_1_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_169_254_blocked()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_192_168_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_decimal_ip_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_hex_ip_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_ipv4_mapped_ipv6_192_168_blocked()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_ipv4_mapped_ipv6_blocked()_2]] - code - gateway/tests/test_web_proxy.py
-- [[.test_ipv6_loopback_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_localhost_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_public_ip_allowed()_1]] - code - gateway/tests/test_web_proxy.py
-- [[TestSSRFBlocking]] - code - gateway/tests/test_web_proxy.py
+- [[Emit a structured per-transcription latency record for the STT AB.      Tags ea]] - rationale - voice_gateway/stt.py
+- [[Read WHISPER_MODEL_SIZE from the environment and validate it (AB knob).]] - rationale - voice_gateway/stt.py
+- [[Release the loaded model (for testing  memory pressure).]] - rationale - voice_gateway/stt.py
+- [[Resolve a requested Whisper model size, with a safe default fallback.      Pure]] - rationale - voice_gateway/stt.py
+- [[Transcribe raw 16-bit signed PCM mono audio to text.      Args         pcm_byte]] - rationale - voice_gateway/stt.py
+- [[_get_model()]] - code - voice_gateway/stt.py
+- [[_resolve_model_size()]] - code - voice_gateway/stt.py
+- [[record_transcription_latency()]] - code - voice_gateway/stt.py
+- [[reset_model()]] - code - voice_gateway/stt.py
+- [[select_model_size()]] - code - voice_gateway/stt.py
+- [[stt.py]] - code - voice_gateway/stt.py
+- [[transcribe()]] - code - voice_gateway/stt.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,9 +31,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_WebProxyConfig]]
-- 2 edges to [[_COMMUNITY_WebProxy]]
-- 1 edge to [[_COMMUNITY_AuditChain]]
+- 1 edge to [[_COMMUNITY_CollaboratorActivityTracker]]
+- 1 edge to [[_COMMUNITY_.claudesettings.json (hook + permission wiring)]]
+- 1 edge to [[_COMMUNITY_test_a2a_policy.py]]
 
 ## Top bridge nodes
-- [[TestSSRFBlocking]] - degree 18, connects to 3 communities
+- [[stt.py]] - degree 9, connects to 3 communities

@@ -1,22 +1,21 @@
 ---
 type: community
-cohesion: 0.38
-members: 7
+cohesion: 0.33
+members: 6
 ---
 
 # gh-issues/SKILL.md
 
-**Cohesion:** 0.38 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[gh CLI (GitHub)]] - concept - skills/openclaw/github/SKILL.md
-- [[gh-issues Claims File (dedup tracking)]] - concept - skills/openclaw/gh-issues/SKILL.md
-- [[gh-issues Cursor File (cron sequential tracking)]] - concept - skills/openclaw/gh-issues/SKILL.md
-- [[gh-issues PR Review Handler (Phase 6)]] - concept - skills/openclaw/gh-issues/SKILL.md
-- [[gh-issues Sub-agent Spawn (Phase 5)]] - concept - skills/openclaw/gh-issues/SKILL.md
-- [[gh-issuesSKILL]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[githubSKILL]] - document - skills/openclaw/github/SKILL.md
+- [[AgentShroud Data Assets (root)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[External Credentials (1Password vault)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[OpenClaw Volume (openclaw.json, cronjobs.json, sessions)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[SQLite DBs (Backed by SQLite)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[approval_items table (pending, approved, rejected, expired; 1h TTL)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[ledger table (indexed on timestamp, source, forwarded_to)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,12 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Coding Agent (bash-first)]]
-- 1 edge to [[_COMMUNITY_gh-issues — Auto-fix GitHub Issues with Parallel]]
-- 1 edge to [[_COMMUNITY_GitHub Skill]]
-- 1 edge to [[_COMMUNITY_OpenClaw Host Hardening]]
+- 1 edge to [[_COMMUNITY_TestDockerEngine]]
 
 ## Top bridge nodes
-- [[gh-issuesSKILL]] - degree 7, connects to 2 communities
-- [[githubSKILL]] - degree 4, connects to 2 communities
-- [[gh-issues Cursor File (cron sequential tracking)]] - degree 3, connects to 1 community
+- [[AgentShroud Data Assets (root)]] - degree 4, connects to 1 community

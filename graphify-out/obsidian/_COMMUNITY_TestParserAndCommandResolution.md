@@ -1,20 +1,20 @@
 ---
 type: community
-cohesion: 0.50
+cohesion: 0.40
 members: 5
 ---
 
 # TestParserAndCommandResolution
 
-**Cohesion:** 0.50 - moderately connected
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[.test_parser_defaults()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_parser_hosts_and_command()]] - code - gateway/tests/test_multi_host_test.py
-- [[ArgumentParser]] - code - gateway/tools/multi_host_test.py
-- [[TestParserAndCommandResolution]] - code - gateway/tests/test_multi_host_test.py
-- [[build_parser()]] - code - gateway/tools/multi_host_test.py
+- [[.test_collaborator_form_empty_text_with_caption_payload_is_normalized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_collaborator_form_empty_text_with_content_payload_is_normalized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_collaborator_form_empty_text_with_draft_payload_is_normalized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_collaborator_form_empty_text_with_message_payload_is_normalized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form payload empty text should not shadow caption filtering.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,12 +24,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_test_multi_host_test.py]]
-- 2 edges to [[_COMMUNITY_MultiHostResult]]
-- 1 edge to [[_COMMUNITY_HostStatus]]
-- 1 edge to [[_COMMUNITY_multi_host_test.py]]
-- 1 edge to [[_COMMUNITY_main()]]
+- 4 edges to [[_COMMUNITY_test_llm_proxy.py]]
+- 4 edges to [[_COMMUNITY_scanner_integration.py]]
+- 4 edges to [[_COMMUNITY__make_proxy()]]
 
 ## Top bridge nodes
-- [[TestParserAndCommandResolution]] - degree 6, connects to 3 communities
-- [[build_parser()]] - degree 6, connects to 3 communities
+- [[.test_collaborator_form_empty_text_with_caption_payload_is_normalized()]] - degree 4, connects to 3 communities
+- [[.test_collaborator_form_empty_text_with_content_payload_is_normalized()]] - degree 4, connects to 3 communities
+- [[.test_collaborator_form_empty_text_with_draft_payload_is_normalized()]] - degree 4, connects to 3 communities
+- [[.test_collaborator_form_empty_text_with_message_payload_is_normalized()]] - degree 4, connects to 3 communities

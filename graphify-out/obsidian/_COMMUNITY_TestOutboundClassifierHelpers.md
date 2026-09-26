@@ -1,41 +1,41 @@
 ---
 type: community
-cohesion: 0.08
+cohesion: 0.10
 members: 26
 ---
 
 # TestOutboundClassifierHelpers
 
-**Cohesion:** 0.08 - loosely connected
+**Cohesion:** 0.10 - loosely connected
 **Members:** 26 nodes
 
 ## Members
-- [[.test_contains_high_risk_leakage_detects_bootstrap_md_in_content_context()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_contains_high_risk_leakage_detects_function_calls_xml()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_contains_high_risk_leakage_detects_identity_md_in_reveal_context()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_contains_high_risk_leakage_detects_invoke_xml()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_contains_high_risk_leakage_skips_bootstrap_md_in_denial_context()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_contains_high_risk_leakage_skips_protected_header_text()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_contains_internal_approval_banner_detects_allow_always_callback()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_contains_internal_approval_banner_detects_allow_once_callback()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_contains_internal_approval_banner_detects_deny_callback()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_contains_internal_approval_banner_detects_standard_banner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_contains_internal_approval_banner_ignores_normal_text()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_contains_internal_approval_banner_ignores_unrelated_deny_text()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_contains_legacy_block_notice_detects_legacy_bracket_text()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_contains_legacy_block_notice_detects_legacy_protected_phrase()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_skips_identity_md()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_skips_md_filenames()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_still_catches_real_domains()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_is_no_reply_token_accepts_fenced_and_punctuated_variants()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_is_no_reply_token_rejects_non_token_text()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_looks_like_filename_reference_catches_common_extensions()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_looks_like_filename_reference_rejects_real_domains()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[BOOTSTRAP.md must NOT be treated as an egress domain.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Our own protected notices must never be double-filtered.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[TestOutboundClassifierHelpers]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Unit tests for outbound helper classifiers used by collaborator filtering.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[bootstrap.md mentioned in a denial should NOT trigger the high-risk filter.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[AGENTSHROUD_GATEWAY_CONTAINER Override (renamed container breaks CVE scan)]] - rationale - docker/docker-compose.agentshroud-bot.marvin.yml
+- [[AgentShroud Daily Check-in (disabled — bot-identity-locked to dev)]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[AgentShroud Falco Detection Rules]] - document - docker/falco/rules.yaml
+- [[AgentShroud Falco Rules]] - document - docker/falco/rules.yaml
+- [[Capability Dropping Layer (cap_drop ALL, add back minimum)]] - rationale - docs/archive/SECURITY.md
+- [[Docker Hardening Measures (no-new-privileges, cap_drop ALL, non-root)]] - rationale - docs/archive/SECURITY-ANALYSIS.md
+- [[Falco Configuration]] - document - docker/falco/falco.yaml
+- [[Falco Rule Unexpected Outbound Connection]] - concept - docker/falco/rules.yaml
+- [[Falco Rule Unexpected Outbound Connection from AgentShroud]] - concept - docker/falco/rules.yaml
+- [[Gateway Service]] - code - docker/docker-compose.yml
+- [[Intrusion Detection & Honeypot Files]] - concept - docs/archive/FUTURE-FEATURES.md
+- [[Marvin Dev Overlay (port and subnet offsets from prod)]] - code - docker/docker-compose.agentshroud-bot.marvin.yml
+- [[Rule Container Shell Spawned]] - code - docker/falco/rules.yaml
+- [[Rule Crypto Mining Detection]] - code - docker/falco/rules.yaml
+- [[Rule File Access Outside Workspace]] - code - docker/falco/rules.yaml
+- [[Rule Privilege Escalation Attempt]] - code - docker/falco/rules.yaml
+- [[Rule Secret File Access]] - code - docker/falco/rules.yaml
+- [[Rule Unexpected Outbound Connection from AgentShroud]] - code - docker/falco/rules.yaml
+- [[Wazuh Agent Service]] - code - docker/docker-compose.yml
+- [[bot-access-audit.sh]] - code - docker/scripts/bot-access-audit.sh
+- [[bot-access-audit.sh script]] - code - docker/scripts/bot-access-audit.sh
+- [[container macro (always-true placeholder inside the gateway)]] - rationale - docker/falco/rules.yaml
+- [[gateway-start.sh entrypoint]] - code - docker/scripts/gateway-start.sh
+- [[macOS Bridge (localhost-only BlueBubbles webhook relay)]] - concept - docs/archive/SECURITY.md
+- [[run_op()]] - code - docker/scripts/bot-access-audit.sh
+- [[security-entrypoint.sh boot scan flow]] - code - docker/scripts/security-entrypoint.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,10 +45,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_CollaboratorActivityTracker]]
-- 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
+- 1 edge to [[_COMMUNITY_Discovery Strategy]]
+- 1 edge to [[_COMMUNITY_What You Must Do When Invoked]]
 
 ## Top bridge nodes
-- [[TestOutboundClassifierHelpers]] - degree 27, connects to 4 communities
+- [[Rule Container Shell Spawned]] - degree 5, connects to 2 communities
+- [[Falco Rule Unexpected Outbound Connection from AgentShroud]] - degree 2, connects to 1 community

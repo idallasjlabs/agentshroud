@@ -1,22 +1,21 @@
 ---
 type: community
-cohesion: 0.52
-members: 7
+cohesion: 0.33
+members: 6
 ---
 
 # render_md_email.py
 
-**Cohesion:** 0.52 - moderately connected
-**Members:** 7 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Apply inline Markdown spans to plain text (no recursive nesting).]] - rationale - docker/bots/hermes/render_md_email.py
-- [[_esc()]] - code - docker/bots/hermes/render_md_email.py
-- [[_inline()]] - code - docker/bots/hermes/render_md_email.py
-- [[_render_table()]] - code - docker/bots/hermes/render_md_email.py
-- [[main()_6]] - code - docker/bots/hermes/render_md_email.py
-- [[render()]] - code - docker/bots/hermes/render_md_email.py
-- [[render_md_email.py]] - code - docker/bots/hermes/render_md_email.py
+- [[Assess severity]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
+- [[Incident detected]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
+- [[P1 — Critical (respond immediately; owner Isaiah Jefferson; kill switch  revoke  rotate)]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
+- [[P2 — High (respond within 1 hour; restart containers, rebuild image)]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
+- [[P3 — Medium (respond within 4 hours; review logs, apply config fix)]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
+- [[P4 — Low (resolve in next session; fix branch + PR)]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +23,3 @@ members: 7
 TABLE source_file, type FROM #community/render_md_emailpy
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_run_test()]]
-
-## Top bridge nodes
-- [[render_md_email.py]] - degree 6, connects to 1 community

@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # TestSessionIsolation
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[.test_default_trust_level_is_untrusted()]] - code - gateway/tests/test_session_manager.py
-- [[.test_get_or_create_returns_same_session()]] - code - gateway/tests/test_session_manager.py
-- [[.test_memory_file_created()]] - code - gateway/tests/test_session_manager.py
-- [[.test_sessions_are_isolated()]] - code - gateway/tests/test_session_manager.py
-- [[.test_workspace_directory_created()]] - code - gateway/tests/test_session_manager.py
-- [[TestSessionIsolation]] - code - gateway/tests/test_session_manager.py
+- [[Purpose_106]] - document - docker/config/openclaw/skills/i-socrates/README.md
+- [[README_111]] - document - docker/config/openclaw/skills/i-socrates/README.md
+- [[Related Skills_115]] - document - docker/config/openclaw/skills/i-socrates/README.md
+- [[Socrates — Dialogue Architect_3]] - document - docker/config/openclaw/skills/i-socrates/README.md
+- [[Usage_116]] - document - docker/config/openclaw/skills/i-socrates/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,8 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_UserSession]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_BaseModel]]
 
 ## Top bridge nodes
-- [[TestSessionIsolation]] - degree 8, connects to 2 communities
+- [[Socrates — Dialogue Architect_3]] - degree 5, connects to 1 community

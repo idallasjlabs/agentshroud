@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[docker-compose.agentshroud-bot.marvin.yml (dev host override)]] - code - docker/docker-compose.agentshroud-bot.marvin.yml
+- [[Community Detection  Clustering]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

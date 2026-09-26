@@ -10,20 +10,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[Configuration  Environment Variables_19]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[Function Details_35]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[Key Classes  Functions_37]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[MCPPermissionManager.check_agent_server_access(agent_id, server_name)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[MCPPermissionManager.check_all(agent_id, server_name, tool_name)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[MCPPermissionManager.check_rate_limit(agent_id, server_name, tool_name)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[MCPPermissionManager.get_trust_level(agent_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[MCPPermissionManager.infer_permission_level(tool_name, server_config)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[Purpose_166]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[Related_41]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[Responsibilities_38]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[Trust Level Reference]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[mcp_permissions.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[mcp_permissions.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[Environment Variables_2]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
+- [[Fail-Closed Design]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
+- [[Fail-Closed Patch]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
+- [[Gateway Communication]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
+- [[Gateway Endpoints Called]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
+- [[How It Works_1]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
+- [[Key Behavior]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
+- [[Message Types Intercepted]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
+- [[Process Architecture]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
+- [[Purpose_122]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
+- [[Related Notes_8]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
+- [[Usage_123]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
+- [[mcp-proxy-wrapper.js_2]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
+- [[mcp-proxy-wrapper.js_1]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
 
 ## Live Query (requires Dataview plugin)
 

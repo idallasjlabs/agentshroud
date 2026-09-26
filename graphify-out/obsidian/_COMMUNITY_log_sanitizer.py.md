@@ -10,20 +10,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[Configuration  Environment Variables_22]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[Function Details_40]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[Key Classes  Functions_42]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[LogSanitizer._sanitize_text(text)]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[LogSanitizer.filter(record)]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[Pattern Taxonomy]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[Purpose_171]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[Related_46]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[Responsibilities_43]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[Threat Model_26]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[get_sanitizer_stats()_1]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[install_log_sanitizer()_1]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[log_sanitizer.py_2]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[log_sanitizer.py_1]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[Fatal glibc error Cannot allocate TLS block]] - document - docs/runbooks/RUNBOOK.md
+- [[AgentShroud Deployment & Troubleshooting Runbook]] - document - docs/runbooks/RUNBOOK.md
+- [[Architecture Notes_1]] - document - docs/runbooks/RUNBOOK.md
+- [[Check Gateway Health]] - document - docs/runbooks/RUNBOOK.md
+- [[Colima won't start]] - document - docs/runbooks/RUNBOOK.md
+- [[Container starts but unhealthy]] - document - docs/runbooks/RUNBOOK.md
+- [[Deploy Latest Code (Any Host)]] - document - docs/runbooks/RUNBOOK.md
+- [[Deploy to Production]] - document - docs/runbooks/RUNBOOK.md
+- [[Docker says Cannot connect to Docker daemon]] - document - docs/runbooks/RUNBOOK.md
+- [[Infrastructure_8]] - document - docs/runbooks/RUNBOOK.md
+- [[Quick Restart (No Rebuild)]] - document - docs/runbooks/RUNBOOK.md
+- [[Run Tests on Any Host]] - document - docs/runbooks/RUNBOOK.md
+- [[Tests failing after deploy]] - document - docs/runbooks/RUNBOOK.md
+- [[Troubleshooting_21]] - document - docs/runbooks/RUNBOOK.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,3 +31,9 @@ members: 14
 TABLE source_file, type FROM #community/log_sanitizerpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Mode A — Single task]]
+
+## Top bridge nodes
+- [[AgentShroud Deployment & Troubleshooting Runbook]] - degree 9, connects to 1 community

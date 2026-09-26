@@ -1,25 +1,25 @@
 ---
 type: community
-cohesion: 0.20
+cohesion: 0.51
 members: 10
 ---
 
 # Workflow (follow in order)
 
-**Cohesion:** 0.20 - loosely connected
+**Cohesion:** 0.51 - moderately connected
 **Members:** 10 nodes
 
 ## Members
-- [[0) Model self-check (non-blocking)]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[1) Establish context (read-only)]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[2) Run OpenClaw security audits (read-only)]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[3) Check OpenClaw versionupdate status (read-only)]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[4) Determine risk tolerance (after system context)]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[5) Produce a remediation plan]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[6) Offer execution options]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[7) Execute with confirmations]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[8) Verify and report]] - document - skills/openclaw/healthcheck/SKILL.md
-- [[Workflow (follow in order)]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[container-net-diag.sh]] - code - docker/scripts/container-net-diag.sh
+- [[container-net-diag.sh script]] - code - docker/scripts/container-net-diag.sh
+- [[fail()]] - code - docker/scripts/container-net-diag.sh
+- [[has()]] - code - docker/scripts/container-net-diag.sh
+- [[header()]] - code - docker/scripts/container-net-diag.sh
+- [[http_test()]] - code - docker/scripts/container-net-diag.sh
+- [[info()]] - code - docker/scripts/container-net-diag.sh
+- [[pass()]] - code - docker/scripts/container-net-diag.sh
+- [[tcp_test()]] - code - docker/scripts/container-net-diag.sh
+- [[warn()]] - code - docker/scripts/container-net-diag.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,7 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_OpenClaw Host Hardening]]
+- 1 edge to [[_COMMUNITY_Add information filtering to prevent agent self-]]
 
 ## Top bridge nodes
-- [[Workflow (follow in order)]] - degree 10, connects to 1 community
+- [[container-net-diag.sh]] - degree 10, connects to 1 community

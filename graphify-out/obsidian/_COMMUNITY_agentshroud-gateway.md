@@ -1,16 +1,31 @@
 ---
 type: community
-cohesion: 1.00
-members: 1
+cohesion: 0.12
+members: 16
 ---
 
 # agentshroud-gateway
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 16 nodes
 
 ## Members
-- [[agentshroud-gateway]] - code - gateway/pyproject.toml
+- [[Layer 1 Bot Instructions (Primary Defense)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Layer 2 Gateway Blocking (Defense in Depth)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Layer 3 Audit Logging (Monitoring)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Security Implementation Verification]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Test 1 Telegram Access (Should Refuse + Block)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Test 2 Control UI Access (Should Refuse)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Test 3 Console Access (Should Display)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Test 4 Internal Use (Should Work)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Ultra-Conservative Policy Requirements]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[✅ Verification Tests]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[🎯 Policy Compliance Check]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[🎯 Summary]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[🏗️ Architecture Overview]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[📊 Multi-Layer Defense]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[📋 Compliance Checklist]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[🔍 Container Status]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -18,3 +33,11 @@ members: 1
 TABLE source_file, type FROM #community/agentshroud-gateway
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Function Details]]
+- 1 edge to [[_COMMUNITY_AgentShroud Color Palette]]
+- 1 edge to [[_COMMUNITY_Network Topology]]
+
+## Top bridge nodes
+- [[Security Implementation Verification]] - degree 10, connects to 3 communities

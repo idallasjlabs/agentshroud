@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # bot-access-audit.sh
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[bot-access-audit.sh]] - code - docker/scripts/bot-access-audit.sh
-- [[bot-access-audit.sh script]] - code - docker/scripts/bot-access-audit.sh
-- [[run_op()]] - code - docker/scripts/bot-access-audit.sh
+- [[installapiruntimes endpoint]] - concept - gateway/web/templates/installer.html
+- [[loadRuntimes()]] - code - gateway/web/templates/installer.html
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,9 +19,3 @@ members: 3
 TABLE source_file, type FROM #community/bot-access-auditsh
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Falco Detection Rules]]
-
-## Top bridge nodes
-- [[bot-access-audit.sh]] - degree 3, connects to 1 community

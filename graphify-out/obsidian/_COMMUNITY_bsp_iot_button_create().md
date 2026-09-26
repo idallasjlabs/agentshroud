@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[bsp_iot_button_create()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h
-- [[button_handle_t_3]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h
-- [[esp_err_t_2]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h
-- [[test_wakeword_statestubsbspesp-bsp.h]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h
+- [[.test_collaborator_hidden_channel_exfil_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_pairing_access_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Hidden-channel exfil prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Pairingaccess bootstrap probes should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,3 +21,11 @@ members: 4
 TABLE source_file, type FROM #community/bsp_iot_button_create
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 10 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 2 edges to [[_COMMUNITY_test_soc_bots.py]]
+
+## Top bridge nodes
+- [[.test_collaborator_hidden_channel_exfil_request_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
+- [[.test_collaborator_pairing_access_probe_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities

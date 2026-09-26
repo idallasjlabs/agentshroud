@@ -1,18 +1,17 @@
 ---
 type: community
 cohesion: 1.00
-members: 3
+members: 2
 ---
 
 # daily-checkin.sh
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 3 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[_fmt()]] - code - docker/config/openclaw/cron/scripts/daily-checkin.sh
-- [[daily-checkin.sh]] - code - docker/config/openclaw/cron/scripts/daily-checkin.sh
-- [[daily-checkin.sh script]] - code - docker/config/openclaw/cron/scripts/daily-checkin.sh
+- [[Container Architecture (gateway + bot hardening)]] - concept - docs/architecture/agentic-os.md
+- [[asb CLI — Deployment Tool]] - code - docs/architecture/agentic-os.md
 
 ## Live Query (requires Dataview plugin)
 

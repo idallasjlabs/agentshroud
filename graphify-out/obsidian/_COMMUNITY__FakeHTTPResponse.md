@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # _FakeHTTPResponse
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[.__enter__()_2]] - code - gateway/tests/test_cli_coverage.py
-- [[.__exit__()_2]] - code - gateway/tests/test_cli_coverage.py
-- [[.__init__()_42]] - code - gateway/tests/test_cli_coverage.py
-- [[.read()]] - code - gateway/tests/test_cli_coverage.py
-- [[Context-manager stand-in for the object urlopen() yields.]] - rationale - gateway/tests/test_cli_coverage.py
-- [[_FakeHTTPResponse]] - code - gateway/tests/test_cli_coverage.py
+- [[MCP Doctor (MCPM-DOCTOR)_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
+- [[Purpose_92]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
+- [[README_97]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
+- [[Related Skills_100]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
+- [[Usage_102]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,8 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_cli_coverage.py]]
-- 1 edge to [[_COMMUNITY_SCLClient]]
+- 1 edge to [[_COMMUNITY_BaseModel]]
 
 ## Top bridge nodes
-- [[_FakeHTTPResponse]] - degree 7, connects to 2 communities
+- [[MCP Doctor (MCPM-DOCTOR)_2]] - degree 5, connects to 1 community

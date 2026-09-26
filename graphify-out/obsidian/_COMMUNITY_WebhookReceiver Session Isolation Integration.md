@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[WebhookReceiver Session Isolation Integration]] - code - gateway/tests/test_session_isolation.py
+- [[IAM Policies]] - concept - docker/config/openclaw/skills/i-qa/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

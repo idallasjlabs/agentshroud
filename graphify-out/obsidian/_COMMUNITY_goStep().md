@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[goStep()]] - code - gateway/web/templates/installer.html
+- [[.mcp.json (project MCP servers)]] - document - .mcp.json
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,20 +1,19 @@
 ---
 type: community
-cohesion: 0.70
-members: 5
+cohesion: 0.50
+members: 4
 ---
 
 # openclaw_triage.sh
 
-**Cohesion:** 0.70 - tightly connected
-**Members:** 5 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[log()_2]] - code - scripts/openclaw_triage.sh
-- [[openclaw_triage.sh]] - code - scripts/openclaw_triage.sh
-- [[openclaw_triage.sh script]] - code - scripts/openclaw_triage.sh
-- [[save_cmd()]] - code - scripts/openclaw_triage.sh
-- [[save_shell()]] - code - scripts/openclaw_triage.sh
+- [[Discrete confidence-score rubric]] - rationale - docker/config/hermes/skills/graphify/references/extraction-spec.md
+- [[Finding Triage Classes (CONFIRMEDPROBABLESELF_HEALEDFALSE_POSITIVEGOOD_DIRECTION)]] - concept - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[GSDL-715 (silent regression incident)]] - concept - docker/config/hermes/skills/i-ab/SKILL.md
+- [[scriptsaudit_merge_regression.py]] - concept - docker/config/hermes/skills/i-ab/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

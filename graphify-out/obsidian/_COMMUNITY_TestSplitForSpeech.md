@@ -1,36 +1,36 @@
 ---
 type: community
-cohesion: 0.17
+cohesion: 0.11
 members: 21
 ---
 
 # TestSplitForSpeech
 
-**Cohesion:** 0.17 - loosely connected
+**Cohesion:** 0.11 - loosely connected
 **Members:** 21 nodes
 
 ## Members
-- [[._s()]] - code - gateway/tests/test_voice_gateway.py
-- [[._s()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_empty_after_normalise_returns_empty_list()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_empty_after_normalise_returns_empty_list()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_empty_string_returns_empty_list()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_empty_string_returns_empty_list()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_long_sentence_wrapped_at_max_chars()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_long_sentence_wrapped_at_max_chars()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_multi_sentence_returns_ordered_chunks()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_multi_sentence_returns_ordered_chunks()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_per_chunk_normalisation()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_per_chunk_normalisation()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_short_fragment_merged_forward()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_short_fragment_merged_forward()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_single_sentence_returns_one_chunk()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_single_sentence_returns_one_chunk()_1]] - code - gateway/tests/test_voice_gateway.py
-- [[A fragment under 12 chars is merged into the following chunk.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[TestSplitForSpeech]] - code - gateway/tests/test_voice_gateway.py
-- [[TestSplitForSpeech_1]] - code - gateway/tests/test_voice_gateway.py
-- [[Unit tests for voice_gateway.tts.split_for_speech (pure function, no IO).]] - rationale - gateway/tests/test_voice_gateway.py
-- [[split_for_speech normalises the full text so no markdown or tokens survive.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[AgentShroud Control Layers (PromptGuard  EgressFilter  ToolACL  ApprovalQueue  AuditChain)]] - concept - docker/config/hermes/cron/jobs.yaml
+- [[Dated Competitive Report Artifact (competitive-report-YYYY-MM-DD.md)]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt
+- [[Gateway op-proxy Credential Broker]] - concept - docker/config/hermes/cron/prompts/jira-weekly-review.txt
+- [[Keep Atlassian Account Non-Idle]] - rationale - docker/config/hermes/cron/prompts/jira-weekly-review.txt
+- [[Mandatory --html Flag Rule]] - rationale - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
+- [[No .py Writes to tmp (workspace-only renderer scripts)]] - rationale - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
+- [[No execute_code  python3 -c  pip install in Cron Mode]] - rationale - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
+- [[Prompt Hermes Competitive Intelligence Email (AMPM)]] - document - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
+- [[Prompt Hermes Competitive Landscape Update (AMPM)]] - document - docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt
+- [[Prompt jira-weekly-review]] - document - docker/config/hermes/cron/prompts/jira-weekly-review.txt
+- [[SCRUM-81 Weekly Review Ticket]] - concept - docker/config/hermes/cron/prompts/jira-weekly-review.txt
+- [[Seed Job AI Security Standards Tracker]] - document - docker/config/hermes/cron/jobs.yaml
+- [[Seed Job Agentic AI CVE and Exploit Watch]] - document - docker/config/hermes/cron/jobs.yaml
+- [[Seed Job Hermes Competitive Intelligence Email (AMPM)]] - document - docker/config/hermes/cron/jobs.yaml
+- [[Seed Job Hermes Competitive Landscape Update (AMPM)]] - document - docker/config/hermes/cron/jobs.yaml
+- [[Seed Job jira-weekly-review]] - document - docker/config/hermes/cron/jobs.yaml
+- [[Tracked AI Governance Standards (NIST, CSA MAESTRO, OWASP ASI, EU AI Act, ISO 42001, MITRE ATLAS, MAS)]] - concept - docker/config/hermes/cron/jobs.yaml
+- [[agentshroud-email-send.sh Gateway Email Sender]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
+- [[competitive-analysis.md 4-Section Research Spec]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt
+- [[jira_weekly_review.py Pre-Committed Posting Script]] - concept - docker/config/hermes/cron/prompts/jira-weekly-review.txt
+- [[render_md_email.py Markdown-to-Inline-CSS Email Renderer]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,9 +40,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_voice_gateway.py]]
-- 1 edge to [[_COMMUNITY_test_voice_gateway.py]]
+- 5 edges to [[_COMMUNITY_test_telegram_replay.py]]
+- 1 edge to [[_COMMUNITY_GroupRegistry]]
 
 ## Top bridge nodes
-- [[TestSplitForSpeech]] - degree 10, connects to 1 community
-- [[TestSplitForSpeech_1]] - degree 10, connects to 1 community
+- [[Prompt Hermes Competitive Landscape Update (AMPM)]] - degree 6, connects to 2 communities
+- [[Prompt Hermes Competitive Intelligence Email (AMPM)]] - degree 6, connects to 1 community
+- [[Prompt jira-weekly-review]] - degree 5, connects to 1 community
+- [[Seed Job Agentic AI CVE and Exploit Watch]] - degree 3, connects to 1 community

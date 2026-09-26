@@ -1,24 +1,24 @@
 ---
 type: community
-cohesion: 0.22
+cohesion: 0.42
 members: 9
 ---
 
 # VIII. Evaluation
 
-**Cohesion:** 0.22 - loosely connected
+**Cohesion:** 0.42 - moderately connected
 **Members:** 9 nodes
 
 ## Members
-- [[TABLE IV Test Coverage by Defense Layer]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[TABLE V Phase 8.5 E2E Verification Scenarios]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[TABLE VI Post-Remediation Coverage Summary]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[TABLE VII Security Module Comparison]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VIII-A. Test Coverage]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VIII-B. Enforcement Verification]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VIII-C. Module Coverage Matrix]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VIII-D. Competitive Analysis]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VIII. Evaluation]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[_real_err()]] - code - gateway/tests/test_egress_callback_stale.py
+- [[_stale_callback_err()]] - code - gateway/tests/test_egress_callback_stale.py
+- [[_stale_edit_err()]] - code - gateway/tests/test_egress_callback_stale.py
+- [[test_answer_callback_real_error_still_logs_error()]] - code - gateway/tests/test_egress_callback_stale.py
+- [[test_answer_callback_stale_logs_debug_not_error()]] - code - gateway/tests/test_egress_callback_stale.py
+- [[test_edit_decision_message_real_error_still_logs_error()]] - code - gateway/tests/test_egress_callback_stale.py
+- [[test_edit_decision_message_stale_logs_debug_not_error()]] - code - gateway/tests/test_egress_callback_stale.py
+- [[test_egress_callback_stale.py]] - code - gateway/tests/test_egress_callback_stale.py
+- [[test_stale_detectors()]] - code - gateway/tests/test_egress_callback_stale.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,7 +28,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud A Transparent Proxy Framework for E]]
+- 5 edges to [[_COMMUNITY_TrustManager]]
+- 4 edges to [[_COMMUNITY_3. Brutally Honest Self-Assessment]]
 
 ## Top bridge nodes
-- [[VIII. Evaluation]] - degree 9, connects to 1 community
+- [[test_egress_callback_stale.py]] - degree 11, connects to 2 communities
+- [[test_stale_detectors()]] - degree 6, connects to 1 community
+- [[test_answer_callback_real_error_still_logs_error()]] - degree 3, connects to 1 community
+- [[test_answer_callback_stale_logs_debug_not_error()]] - degree 3, connects to 1 community
+- [[test_edit_decision_message_real_error_still_logs_error()]] - degree 3, connects to 1 community

@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[pre-commit]] - code - .llm_settings/git-hooks/pre-commit
-- [[pre-commit script]] - code - .llm_settings/git-hooks/pre-commit
+- [[.test_no_reply_tool_token_is_rewritten_to_wait_message()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[NO_REPLY tool JSON should be converted into a user-safe wait message.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +19,11 @@ members: 2
 TABLE source_file, type FROM #community/pre-commit
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY__make_proxy()]]
+
+## Top bridge nodes
+- [[.test_no_reply_tool_token_is_rewritten_to_wait_message()]] - degree 4, connects to 3 communities

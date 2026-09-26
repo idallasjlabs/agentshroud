@@ -1,35 +1,35 @@
 ---
 type: community
-cohesion: 0.16
+cohesion: 0.10
 members: 20
 ---
 
 # _process_inbound()
 
-**Cohesion:** 0.16 - loosely connected
+**Cohesion:** 0.10 - loosely connected
 **Members:** 20 nodes
 
 ## Members
-- [[AgentTarget_2]] - code - gateway/ingest_api/routes/forward.py
-- [[Everything the post-routing forwarding steps (blocking or streaming)     need, o]] - rationale - gateway/ingest_api/routes/forward.py
-- [[ForwardRequest_2]] - code - gateway/ingest_api/routes/forward.py
-- [[Main ingest endpoint      Receives data from iOS Shortcuts, browser extension, o]] - rationale - gateway/ingest_api/routes/forward.py
-- [[MiddlewareManager.process_request()]] - code - gateway/ingest_api/middleware.py
-- [[Resolve the outbound trust level for `request`, shared by the blocking     and s]] - rationale - gateway/ingest_api/routes/forward.py
-- [[Streaming variant of forward for OpenAI-compat agents (Hermes).      Same inbou]] - rationale - gateway/ingest_api/routes/forward.py
-- [[Target resolution + P1 middleware + inbound security pipeline —     shared by th]] - rationale - gateway/ingest_api/routes/forward.py
-- [[_InboundResult]] - code - gateway/ingest_api/routes/forward.py
-- [[_process_inbound()]] - code - gateway/ingest_api/routes/forward.py
-- [[_request()]] - code - gateway/tests/test_forward_stream.py
-- [[_resolve_user_trust_level()]] - code - gateway/ingest_api/routes/forward.py
-- [[_target()]] - code - gateway/tests/test_forward_stream.py
-- [[forward_content()]] - code - gateway/ingest_api/routes/forward.py
-- [[forward_content_stream()]] - code - gateway/ingest_api/routes/forward.py
-- [[test_resolve_trust_level_maps_trust_score_to_tier()]] - code - gateway/tests/test_forward_stream.py
-- [[test_resolve_trust_level_no_trust_info_for_target_defaults_untrusted()]] - code - gateway/tests/test_forward_stream.py
-- [[test_resolve_trust_level_no_trust_manager_defaults_untrusted()]] - code - gateway/tests/test_forward_stream.py
-- [[test_resolve_trust_level_non_owner_user_id_does_not_upgrade()]] - code - gateway/tests/test_forward_stream.py
-- [[test_resolve_trust_level_owner_user_id_upgrades_to_full()]] - code - gateway/tests/test_forward_stream.py
+- [[1. Environment mapping]] - document - reports/upgrade-2026-09-06-dev.md
+- [[7a. Image scan (Trivy, CRITICAL+HIGH, prod's currently-running tags)]] - document - reports/upgrade-2026-09-17.md
+- [[7b. `npm audit` — browser-extension]] - document - reports/upgrade-2026-09-17.md
+- [[7c. Python dependency audit — GAP, not silently skipped]] - document - reports/upgrade-2026-09-17.md
+- [[7d. WazuhSOC alerts — partial]] - document - reports/upgrade-2026-09-17.md
+- [[7e. Base images (Dockerfiles) — inventoried, not re-verified against registry]] - document - reports/upgrade-2026-09-17.md
+- [[AgentShroud Weekly Upgrade — 2026-09-06]] - document - reports/upgrade-2026-09-06-20260906-0808.md
+- [[Application CVE registry (OpenClaw  Hermes agents, per `docssecuritycve-mitigation-matrix.md`)]] - document - reports/upgrade-2026-09-06-20260906-0808.md
+- [[Breaking changes  manual follow-ups]] - document - reports/upgrade-2026-09-06-20260906-0808.md
+- [[Fresh Trivy scans (run today, CRITICAL+HIGH only, `--scanners vuln`)]] - document - reports/upgrade-2026-09-06-20260906-0808.md
+- [[GitHub-hosted findings]] - document - reports/upgrade-2026-09-06-20260906-0808.md
+- [[Language dependencies]] - document - reports/upgrade-2026-09-06-20260906-0808.md
+- [[Preflight  Baseline]] - document - reports/upgrade-2026-09-06-20260906-0808.md
+- [[Rollback Instructions]] - document - reports/upgrade-2026-09-06-20260906-0808.md
+- [[SecurityFinding_1]] - document - docs/data/data-dictionary.md
+- [[Summary_25]] - document - reports/upgrade-2026-09-06-20260906-0808.md
+- [[Time spent]] - document - reports/upgrade-2026-09-06-20260906-0808.md
+- [[Upgrade Table]] - document - reports/upgrade-2026-09-06-20260906-0808.md
+- [[Wazuh  SOC]] - document - reports/upgrade-2026-09-06-20260906-0808.md
+- [[upgrade-2026-09-06-20260906-0808]] - document - reports/upgrade-2026-09-06-20260906-0808.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,17 +39,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_forward.py]]
-- 8 edges to [[_COMMUNITY_test_forward_stream.py]]
-- 4 edges to [[_COMMUNITY_RBACConfig]]
-- 3 edges to [[_COMMUNITY_AgentTarget]]
-- 3 edges to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_make_event()]]
-- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 5 edges to [[_COMMUNITY_auth.py]]
+- 1 edge to [[_COMMUNITY_Deploying AgentShroud on Raspberry Pi (aarch64)]]
+- 1 edge to [[_COMMUNITY_2. Security Analysis]]
 
 ## Top bridge nodes
-- [[_process_inbound()]] - degree 12, connects to 5 communities
-- [[forward_content()]] - degree 9, connects to 3 communities
-- [[_resolve_user_trust_level()]] - degree 12, connects to 2 communities
-- [[forward_content_stream()]] - degree 8, connects to 2 communities
-- [[_request()]] - degree 7, connects to 2 communities
+- [[SecurityFinding_1]] - degree 16, connects to 3 communities
+- [[1. Environment mapping]] - degree 3, connects to 1 community

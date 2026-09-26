@@ -1,17 +1,16 @@
 ---
 type: community
 cohesion: 1.00
-members: 2
+members: 1
 ---
 
 # agentshroud-blueteam/references/steve-hay-plan.m
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 1 nodes
 
 ## Members
-- [[agentshroud-blueteamreferencessteve-hay-plan]] - document - skills/custom/agentshroud-blueteam/references/steve-hay-plan.md
-- [[plan_2]] - document - skills/custom/agentshroud-blueteam/references/steve-hay-plan.md
+- [[SRE Practices]] - document - .agents/skills/i-sre/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

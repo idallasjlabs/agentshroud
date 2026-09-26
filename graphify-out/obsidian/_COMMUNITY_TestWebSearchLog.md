@@ -10,18 +10,18 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[.test_raw_web_search_json_collaborator_safe_notice()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_raw_web_search_json_owner_message()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_web_search_log_called_with_correct_params()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_web_search_no_egress_filter()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_web_search_query_truncation()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Collaborator chat raw web_search JSON produces a safe notice.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Owner chat raw web_search JSON produces 'Switch to tool-capable model' message.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Queries longer than 200 chars are truncated in the SOC log reason.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[TestWebSearchLog]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Tests for _trigger_web_search_log and raw web_search JSON outbound handling.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[_trigger_web_search_log calls log_external_decision with Brave domain and query.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[_trigger_web_search_log returns silently when egress_filter is None.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Additional Controls Checklist]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Context_11]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Critical Files (v0.8.0 Changes)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[DELIVERABLE 2 — Maturity Scorecard]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[DELIVERABLE 4 — v1.0 Roadmap]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Implementation Sequence (v0.8.0 Execution Order)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Phase 1 Foundation Hardening (v0.8.0, completed)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Phase 2 Detection Enhancement (v0.9.3–v0.9.5, Weeks 5-10)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Phase 3 Operational Maturity (v0.9.6–v1.0.0, Weeks 11-16)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Top-10 Gaps by Exploitability x Impact (Post v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[security-assessment-v0.8.0-25-domain]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,15 +31,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 2 edges to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_CollaboratorActivityTracker]]
-- 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_Approval Queue (human-in-the-loop)]]
+- 1 edge to [[_COMMUNITY_init-openclaw-config.sh]]
+- 1 edge to [[_COMMUNITY_TestDashboardCookieAuth]]
 
 ## Top bridge nodes
-- [[TestWebSearchLog]] - degree 11, connects to 4 communities
-- [[.test_raw_web_search_json_collaborator_safe_notice()]] - degree 4, connects to 1 community
-- [[.test_raw_web_search_json_owner_message()]] - degree 4, connects to 1 community
-- [[.test_web_search_log_called_with_correct_params()]] - degree 4, connects to 1 community
-- [[.test_web_search_no_egress_filter()]] - degree 4, connects to 1 community
+- [[AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap]] - degree 11, connects to 3 communities

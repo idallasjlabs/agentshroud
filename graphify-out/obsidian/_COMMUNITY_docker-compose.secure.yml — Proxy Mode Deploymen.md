@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[docker-compose.secure.yml — Proxy Mode Deployment]] - document - docker-compose.secure.yml
+- [[Cumulative Token Cost Tracker]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

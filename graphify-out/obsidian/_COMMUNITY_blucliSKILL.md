@@ -10,9 +10,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[blu CLI (BluesoundNAD control)]] - concept - skills/openclaw/blucli/SKILL.md
-- [[blucli (blu)]] - document - skills/openclaw/blucli/SKILL.md
-- [[blucliSKILL]] - document - skills/openclaw/blucli/SKILL.md
+- [[.test_urlencoded_without_content_type_caption_is_still_filtered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_urlencoded_without_content_type_draft_is_still_filtered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Missing content-type must not bypass form draft leak filtering.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +20,12 @@ members: 3
 TABLE source_file, type FROM #community/blucli/SKILLmd
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_test_llm_proxy.py]]
+- 2 edges to [[_COMMUNITY_scanner_integration.py]]
+- 2 edges to [[_COMMUNITY__make_proxy()]]
+
+## Top bridge nodes
+- [[.test_urlencoded_without_content_type_caption_is_still_filtered()]] - degree 4, connects to 3 communities
+- [[.test_urlencoded_without_content_type_draft_is_still_filtered()]] - degree 4, connects to 3 communities

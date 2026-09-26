@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 1.00
+members: 2
 ---
 
 # deploy.sh
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[PATH_4]] - code - scripts/deploy.sh
-- [[deploy.sh]] - code - scripts/deploy.sh
-- [[deploy.sh script]] - code - scripts/deploy.sh
+- [[Dependabot Configuration]] - code - .github/dependabot.yml
+- [[Presidio-Anonymizer 2.2.364 Version Pin-Out]] - rationale - .github/dependabot.yml
 
 ## Live Query (requires Dataview plugin)
 

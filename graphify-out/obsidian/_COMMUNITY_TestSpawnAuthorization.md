@@ -1,22 +1,21 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.33
+members: 6
 ---
 
 # TestSpawnAuthorization
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[.test_basic_spawn()_1]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_depth_exceeded_allowed_in_monitor()_1]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_depth_exceeded_denied()_1]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_depth_penalty_reduces_trust()_1]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_disabled_always_allows()_1]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_strict_inheritance_caps_trust()_1]] - code - gateway/tests/test_subagent_governance.py
-- [[TestSpawnAuthorization_1]] - code - gateway/tests/test_subagent_governance.py
+- [[CPU Throttling]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Disk IO]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Memory Management]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Network]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Performance Considerations]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Temperature Management]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Enum]]
+- 1 edge to [[_COMMUNITY_forward.py]]
 
 ## Top bridge nodes
-- [[TestSpawnAuthorization_1]] - degree 7, connects to 1 community
+- [[Performance Considerations]] - degree 6, connects to 1 community

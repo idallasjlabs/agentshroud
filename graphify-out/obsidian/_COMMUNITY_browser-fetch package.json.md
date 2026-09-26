@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[browser-fetch package.json_1]] - code - skills/custom/browser-fetch/package.json
+- [[dockerQUICKSTART.md — 5-minute stack launch guide]] - document - docker/QUICKSTART.md
 
 ## Live Query (requires Dataview plugin)
 

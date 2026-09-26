@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[i-kanban SKILL (stub)]] - document - docker/config/hermes/skills/i-kanban/SKILL.md
+- [[Diagram 17 State — Bot Session]] - image - docs/diagrams/images/diagram-17-state-bot-session.svg
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # TestWebhookReceiverSlackExtraction
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[.test_extract_user_id_slack()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_extract_user_id_slack_missing_event()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_extract_user_id_telegram_unchanged()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_extract_username_slack()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_extract_username_slack_fallback_to_user_id()]] - code - gateway/tests/test_slack_proxy.py
-- [[TestWebhookReceiverSlackExtraction]] - code - gateway/tests/test_slack_proxy.py
+- [[Purpose_107]] - document - docker/config/openclaw/skills/i-tdd/README.md
+- [[README_112]] - document - docker/config/openclaw/skills/i-tdd/README.md
+- [[Related Skills_116]] - document - docker/config/openclaw/skills/i-tdd/README.md
+- [[Test-Driven Development (TDD)_1]] - document - docker/config/openclaw/skills/i-tdd/README.md
+- [[Usage_117]] - document - docker/config/openclaw/skills/i-tdd/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,9 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_WebhookReceiver]]
-- 1 edge to [[_COMMUNITY_SlackAPIProxy]]
-- 1 edge to [[_COMMUNITY__make_proxy()]]
+- 1 edge to [[_COMMUNITY_BaseModel]]
 
 ## Top bridge nodes
-- [[TestWebhookReceiverSlackExtraction]] - degree 8, connects to 3 communities
+- [[Test-Driven Development (TDD)_1]] - degree 5, connects to 1 community
