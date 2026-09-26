@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "client_from_env()"
+community: "api.py"
 location: "L258"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/client_from_env
+  - community/apipy
 ---
 
 # TestClientFromEnv
@@ -19,4 +19,4 @@ tags:
 - [[SCLClient]] - `uses` [INFERRED]
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/client_from_env
+#graphify/code #graphify/EXTRACTED #community/apipy

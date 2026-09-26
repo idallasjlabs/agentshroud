@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "InjectionSeverity"
 location: "L496"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/InjectionSeverity
 ---
 
 # TestAlertsLocalhostEnforcement
@@ -18,4 +18,4 @@ tags:
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/InjectionSeverity

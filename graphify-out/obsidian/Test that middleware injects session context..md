@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "ModuleStatsCollector"
 location: "L403"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ModuleStatsCollector
 ---
 
 # Test that middleware injects session context.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_middleware_session_context_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/ModuleStatsCollector

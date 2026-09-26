@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "Hermes — Podcast Production Orchestrator"
 location: "L107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/Hermes__Podcast_Production_Orchestrator
 ---
 
 # Test /status endpoint.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestStatusEndpoint]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/Hermes__Podcast_Production_Orchestrator

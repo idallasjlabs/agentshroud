@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_canary_tripwire.py"
 type: "code"
-community: "TrustManager"
+community: "WebProxyConfig"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/WebProxyConfig
 ---
 
 # TestCanaryTripwire
 
 ## Connections
-- [[.setup_method()_21]] - `method` [EXTRACTED]
+- [[.setup_method()_1]] - `method` [EXTRACTED]
 - [[.test_api_key_canary()]] - `method` [EXTRACTED]
 - [[.test_base64_canary()]] - `method` [EXTRACTED]
 - [[.test_case_insensitive()]] - `method` [EXTRACTED]
 - [[.test_code_word_canary()]] - `method` [EXTRACTED]
 - [[.test_counter_increments()]] - `method` [EXTRACTED]
 - [[.test_custom_config()_1]] - `method` [EXTRACTED]
-- [[.test_empty_input()_1]] - `method` [EXTRACTED]
+- [[.test_empty_input()]] - `method` [EXTRACTED]
 - [[.test_no_canaries()]] - `method` [EXTRACTED]
 - [[.test_normal_content_passes()]] - `method` [EXTRACTED]
 - [[.test_plain_canary_detected()]] - `method` [EXTRACTED]
@@ -38,4 +38,4 @@ tags:
 - [[TripwireResponse]] - `uses` [INFERRED]
 - [[test_canary_tripwire.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

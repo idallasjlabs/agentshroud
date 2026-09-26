@@ -1,62 +1,26 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "test_security_audit.py"
-location: "L308"
+community: "CredentialValidator"
+location: "L439"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/test_security_auditpy
+  - graphify/EXTRACTED
+  - community/CredentialValidator
 ---
 
 # TestContextGuard
 
 ## Connections
-- [[.guard()_1]] - `method` [EXTRACTED]
-- [[.test_clean_conversation()]] - `method` [EXTRACTED]
-- [[.test_context_window_stuffing()]] - `method` [EXTRACTED]
-- [[.test_conversation_history_manipulation()]] - `method` [EXTRACTED]
-- [[.test_fake_system_message()]] - `method` [EXTRACTED]
-- [[.test_json_injection()]] - `method` [EXTRACTED]
-- [[.test_markdown_heading_injection()]] - `method` [EXTRACTED]
-- [[.test_rapid_fire_messages()]] - `method` [EXTRACTED]
-- [[.test_role_switching()]] - `method` [EXTRACTED]
-- [[.test_session_isolation()]] - `method` [EXTRACTED]
-- [[.test_xml_tag_injection()]] - `method` [EXTRACTED]
-- [[AlertDispatcher]] - `uses` [INFERRED]
-- [[ConfusedDeputyError]] - `uses` [INFERRED]
-- [[ConsentDecision]] - `uses` [INFERRED]
-- [[ContainerSnapshot]] - `uses` [INFERRED]
-- [[ContextGuard]] - `uses` [INFERRED]
-- [[DNSFilterConfig]] - `uses` [INFERRED]
-- [[DriftDetector]] - `uses` [INFERRED]
-- [[EgressEvent]] - `uses` [INFERRED]
-- [[EgressPolicy]] - `uses` [INFERRED]
-- [[EncryptedStore]] - `uses` [INFERRED]
-- [[EntropyCalculator]] - `uses` [INFERRED]
-- [[EnvironmentGuard]] - `uses` [INFERRED]
-- [[FileSandbox]] - `uses` [INFERRED]
-- [[FileSandboxConfig]] - `uses` [INFERRED]
-- [[GitGuard]] - `uses` [INFERRED]
-- [[IsolationStatus]] - `uses` [INFERRED]
-- [[KeyVault]] - `uses` [INFERRED]
-- [[KeyVaultConfig]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
-- [[MetadataGuard]] - `uses` [INFERRED]
-- [[NetworkValidator]] - `uses` [INFERRED]
+- [[.test_critical_attack_blocked()]] - `method` [EXTRACTED]
+- [[.test_guard_exception_fails_closed()]] - `method` [EXTRACTED]
+- [[.test_low_severity_not_blocking()]] - `method` [EXTRACTED]
+- [[.test_owner_bypass()_1]] - `method` [EXTRACTED]
+- [[.test_repetition_attack_not_blocking()]] - `method` [EXTRACTED]
+- [[MiddlewareManager]] - `uses` [INFERRED]
+- [[MiddlewareResult]] - `uses` [INFERRED]
 - [[PIIConfig]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[PKCEViolation]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
-- [[RedirectMismatch]] - `uses` [INFERRED]
-- [[ResourceGuard]] - `uses` [INFERRED]
-- [[ResourceLimits]] - `uses` [INFERRED]
-- [[Session]] - `uses` [INFERRED]
-- [[SubagentEvent]] - `uses` [INFERRED]
-- [[SubagentMonitor]] - `uses` [INFERRED]
-- [[Test context manipulation detection.]] - `rationale_for` [EXTRACTED]
-- [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
-- [[test_security_audit.py]] - `contains` [EXTRACTED]
+- [[UserSessionManager]] - `uses` [INFERRED]
+- [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_security_auditpy
+#graphify/code #graphify/EXTRACTED #community/CredentialValidator

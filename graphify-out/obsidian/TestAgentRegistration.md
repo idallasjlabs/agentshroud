@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "test_trust_manager.py"
+community: "TrustConfig"
 location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_trust_managerpy
+  - community/TrustConfig
 ---
 
 # TestAgentRegistration
@@ -18,8 +18,8 @@ tags:
 - [[.test_register_new_agent()]] - `method` [EXTRACTED]
 - [[Test agent registration and initial trust.]] - `rationale_for` [EXTRACTED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_trust_managerpy
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

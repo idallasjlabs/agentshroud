@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "WebProxy"
+community: "SOCWebSocketHandler"
 location: "L428"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/WebProxy
+  - community/SOCWebSocketHandler
 ---
 
 # TestAuditChain
@@ -21,8 +21,8 @@ tags:
 - [[DomainSettings]] - `uses` [INFERRED]
 - [[ProxyAction]] - `uses` [INFERRED]
 - [[RateLimiter_1]] - `uses` [INFERRED]
-- [[WebProxy]] - `uses` [INFERRED]
+- [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/WebProxy
+#graphify/code #graphify/INFERRED #community/SOCWebSocketHandler

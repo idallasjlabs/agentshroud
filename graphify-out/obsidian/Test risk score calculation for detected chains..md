@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "Enum"
+community: "GroupRoleResolver"
 location: "L271"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enum
+  - community/GroupRoleResolver
 ---
 
 # Test risk score calculation for detected chains.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_risk_score_calculation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enum
+#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver

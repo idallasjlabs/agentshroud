@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "version_routes.py"
 location: "L386"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/version_routespy
 ---
 
 # Test tool result processing when sanitizer not configured
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_process_tool_result_no_sanitizer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/version_routespy

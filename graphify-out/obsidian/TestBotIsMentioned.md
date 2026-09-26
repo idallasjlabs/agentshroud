@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TestBotIsMentioned"
+community: "Plan: Proxying HexStrike AI MCP Agents via Agent"
 location: "L8837"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestBotIsMentioned
+  - community/Plan_Proxying_HexStrike_AI_MCP_Agents_via_Agent
 ---
 
 # TestBotIsMentioned
@@ -22,8 +22,8 @@ tags:
 - [[.test_no_entities_not_matched()]] - `method` [EXTRACTED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RateLimiter]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[Unit tests for TelegramAPIProxy._bot_is_mentioned().]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestBotIsMentioned
+#graphify/code #graphify/EXTRACTED #community/Plan_Proxying_HexStrike_AI_MCP_Agents_via_Agent

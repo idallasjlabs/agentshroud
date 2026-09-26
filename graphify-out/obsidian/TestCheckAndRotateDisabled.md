@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "CredentialValidator"
+community: "Google Services Setup - Calendar, Contacts, Keep"
 location: "L233"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/CredentialValidator
+  - community/Google_Services_Setup_-_Calendar_Contacts_Keep
 ---
 
 # TestCheckAndRotateDisabled
@@ -20,4 +20,4 @@ tags:
 - [[RotationStatus]] - `uses` [INFERRED]
 - [[test_key_rotation_internals.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/CredentialValidator
+#graphify/code #graphify/INFERRED #community/Google_Services_Setup_-_Calendar_Contacts_Keep

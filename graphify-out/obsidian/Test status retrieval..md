@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "rationale"
-community: "KillSwitchMonitor"
+community: "TeamsConfig"
 location: "L154"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/TeamsConfig
 ---
 
 # Test status retrieval.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_get_status()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig

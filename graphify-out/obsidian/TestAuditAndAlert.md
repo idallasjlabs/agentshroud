@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "PrivacyPolicyEnforcer"
+community: "What You Must Do When Invoked"
 location: "L152"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PrivacyPolicyEnforcer
+  - community/What_You_Must_Do_When_Invoked
 ---
 
 # TestAuditAndAlert
@@ -19,10 +19,10 @@ tags:
 - [[.test_should_not_audit_unknown_service()]] - `method` [EXTRACTED]
 - [[PrivacyPolicy]] - `uses` [INFERRED]
 - [[PrivacyPolicyEnforcer]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
 - [[ServicePrivacy]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[test_privacy_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/INFERRED #community/What_You_Must_Do_When_Invoked

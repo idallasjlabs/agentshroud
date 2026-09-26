@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_integrity.py"
 type: "code"
-community: "ContextSegment"
+community: "ServiceManager"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/ServiceManager
 ---
 
 # TestContextIntegrityScorer
@@ -25,4 +25,4 @@ tags:
 - [[TestOverallDetectionRate]] - `semantically_similar_to` [INFERRED]
 - [[test_context_integrity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

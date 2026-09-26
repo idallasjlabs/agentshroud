@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "TestDNSForwarderProtocol"
+community: "AgentShroud Development Roadmap — 2026 Gantt Cha"
 location: "L221"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDNSForwarderProtocol
+  - community/AgentShroud_Development_Roadmap__2026_Gantt_Cha
 ---
 
 # TestDNSForwarderProtocol
@@ -26,4 +26,4 @@ tags:
 - [[DNSForwarderProtocol]] - `uses` [INFERRED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDNSForwarderProtocol
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Development_Roadmap__2026_Gantt_Cha

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "TeamsConfig"
 location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/TeamsConfig
 ---
 
 # TestAnomalyDetection
@@ -22,4 +22,4 @@ tags:
 - [[KillSwitchMonitor]] - `uses` [INFERRED]
 - [[test_killswitch_monitor_behavior.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

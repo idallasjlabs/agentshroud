@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "rationale"
-community: "test_redteam_probes.py"
+community: "A2AProxyResult"
 location: "L60"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_redteam_probespy
+  - community/A2AProxyResult
 ---
 
 # Test removal of file paths from responses.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_file_path_removal()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_redteam_probespy
+#graphify/rationale #graphify/EXTRACTED #community/A2AProxyResult

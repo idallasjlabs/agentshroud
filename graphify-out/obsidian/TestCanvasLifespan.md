@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "_FakeUpstreamWS"
+community: "AgentShroud Operations Cheat Sheet"
 location: "L625"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_FakeUpstreamWS
+  - community/AgentShroud_Operations_Cheat_Sheet
 ---
 
 # TestCanvasLifespan
@@ -17,4 +17,4 @@ tags:
 - [[DNSForwarderProtocol]] - `uses` [INFERRED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_FakeUpstreamWS
+#graphify/code #graphify/INFERRED #community/AgentShroud_Operations_Cheat_Sheet

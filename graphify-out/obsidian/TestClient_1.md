@@ -1,25 +1,23 @@
 ---
-source_file: "gateway/tests/test_skill_guard.py"
+source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "code"
-community: "test_skill_guard.py"
-location: "L360"
+community: "Incident → Test Backfill Rule (R3 extension): ev"
+location: "L328"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/test_skill_guardpy
+  - graphify/EXTRACTED
+  - community/Incident__Test_Backfill_Rule_R3_extension_ev
 ---
 
 # TestClient
 
 ## Connections
-- [[.client()_2]] - `references` [EXTRACTED]
-- [[.test_reload_allows_clean_skill()]] - `references` [EXTRACTED]
-- [[.test_reload_blocks_dangerous_skill()]] - `references` [EXTRACTED]
-- [[.test_reload_fails_closed_on_unreadable_file()]] - `references` [EXTRACTED]
-- [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_3]] - `uses` [INFERRED]
-- [[Severity]] - `uses` [INFERRED]
-- [[SkillGuard_1]] - `uses` [INFERRED]
-- [[SkillScanError]] - `uses` [INFERRED]
+- [[.client()_7]] - `references` [EXTRACTED]
+- [[.test_reload_requires_auth()]] - `calls` [EXTRACTED]
+- [[.test_reload_returns_200_with_skills_list()]] - `references` [EXTRACTED]
+- [[.test_reload_returns_500_on_source_missing()]] - `references` [EXTRACTED]
+- [[ManifestEntry]] - `uses` [INFERRED]
+- [[PlannedAction]] - `uses` [INFERRED]
+- [[SkillsManifest]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/test_skill_guardpy
+#graphify/code #graphify/EXTRACTED #community/Incident__Test_Backfill_Rule_R3_extension_ev

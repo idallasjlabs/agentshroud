@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "TestDashboardCookieAuth"
+community: "TelegramAPIProxy"
 location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDashboardCookieAuth
+  - community/TelegramAPIProxy
 ---
 
 # TestDashboardCookieAuth
@@ -18,9 +18,9 @@ tags:
 - [[.test_dashboard_no_auth_returns_403()]] - `method` [EXTRACTED]
 - [[.test_dashboard_token_sets_cookie_and_redirects()]] - `method` [EXTRACTED]
 - [[Dashboard should set httpOnly cookie and redirect to clean URL]] - `rationale_for` [EXTRACTED]
-- [[SSHConfig_2]] - `uses` [INFERRED]
+- [[SSHConfig]] - `uses` [INFERRED]
 - [[SSHHostConfig]] - `uses` [INFERRED]
-- [[SSHProxy_1]] - `uses` [INFERRED]
+- [[SSHProxy]] - `uses` [INFERRED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDashboardCookieAuth
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

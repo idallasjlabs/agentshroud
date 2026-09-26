@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_env_guard.py"
 type: "code"
-community: "check_command()"
+community: "GSDE&G Skills Reference Guide"
 location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check_command
+  - community/GSDEG_Skills_Reference_Guide
 ---
 
 # TestCheckCommand
@@ -19,9 +19,9 @@ tags:
 - [[.test_allows_safe_command()]] - `method` [EXTRACTED]
 - [[.test_blocks_dollar_env()]] - `method` [EXTRACTED]
 - [[.test_blocks_env_pipe()]] - `method` [EXTRACTED]
-- [[.test_blocks_printenv()_1]] - `method` [EXTRACTED]
+- [[.test_blocks_printenv()]] - `method` [EXTRACTED]
 - [[.test_blocks_proc_environ()]] - `method` [EXTRACTED]
 - [[.test_blocks_proc_star_environ()]] - `method` [EXTRACTED]
 - [[test_env_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check_command
+#graphify/code #graphify/EXTRACTED #community/GSDEG_Skills_Reference_Guide

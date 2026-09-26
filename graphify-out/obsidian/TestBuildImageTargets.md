@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "_build_image_targets"
+community: "Examples"
 location: "L920"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_build_image_targets
+  - community/Examples
 ---
 
 # TestBuildImageTargets
 
 ## Connections
-- [[._no_docker()_1]] - `method` [EXTRACTED]
+- [[._no_docker()]] - `method` [EXTRACTED]
 - [[.test_always_includes_every_configured_bot_image()]] - `method` [EXTRACTED]
 - [[.test_always_includes_gateway_image()]] - `method` [EXTRACTED]
 - [[.test_deduplication()]] - `method` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[.test_whitespace_stripped_from_env_var()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_build_image_targets
+#graphify/code #graphify/EXTRACTED #community/Examples

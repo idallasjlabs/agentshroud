@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "MemoryIntegrityMonitor"
+community: "remind_proposal_review.sh"
 location: "L262"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/remind_proposal_reviewsh
 ---
 
 # Test validation before writing to memory files.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_memory_write_validation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/rationale #graphify/EXTRACTED #community/remind_proposal_reviewsh

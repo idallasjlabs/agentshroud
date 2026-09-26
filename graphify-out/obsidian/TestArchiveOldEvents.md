@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_archive.py"
 type: "code"
-community: "archive_old_events()"
+community: "AgentShroud Device Pairing Management"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/archive_old_events
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # TestArchiveOldEvents
@@ -24,4 +24,4 @@ tags:
 - [[.test_waits_out_a_concurrent_writer_lock_instead_of_failing()]] - `method` [EXTRACTED]
 - [[test_audit_archive.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/archive_old_events
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "TestNormalizeForSpeech"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/TestNormalizeForSpeech
 ---
 
 # Test request logging middleware
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_log_requests_middleware()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/TestNormalizeForSpeech

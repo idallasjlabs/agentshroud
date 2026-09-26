@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "ToolACLEnforcer"
+community: "TelegramAPIProxy"
 location: "L78"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ToolACLEnforcer
+  - graphify/INFERRED
+  - community/TelegramAPIProxy
 ---
 
 # TestAdminAccess
@@ -16,6 +16,11 @@ tags:
 - [[.test_admin_can_use_admin_tool()]] - `method` [EXTRACTED]
 - [[.test_admin_can_use_collaborator_tool()]] - `method` [EXTRACTED]
 - [[.test_admin_denied_tools_contains_private()]] - `method` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
+- [[ToolACLConfig]] - `uses` [INFERRED]
+- [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolACLEnforcer
+#graphify/code #graphify/INFERRED #community/TelegramAPIProxy

@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Test-Driven Development README"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test-Driven_Development_README
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Test-Driven Development (TDD) Coach
 
 ## Connections
-- [[Technical Illustrator (TI)_1]] - `conceptually_related_to` [INFERRED]
+- [[Technical Illustrator (TI)_2]] - `conceptually_related_to` [INFERRED]
 - [[Test-Driven Development README]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

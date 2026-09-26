@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "MiddlewareManager"
 location: "L330"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/MiddlewareManager
 ---
 
 # Test role hierarchy levels.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_role_hierarchy_levels()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

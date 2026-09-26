@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "rationale"
-community: "TestMultiTurnTracker"
+community: "ProxyDashboard"
 location: "L168"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestMultiTurnTracker
+  - community/ProxyDashboard
 ---
 
 # Test that scores accumulate across turns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_cumulative_scoring()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestMultiTurnTracker
+#graphify/rationale #graphify/EXTRACTED #community/ProxyDashboard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_guard.py"
 type: "code"
-community: "check_message()"
+community: "test_scanner_integration.py"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check_message
+  - community/test_scanner_integrationpy
 ---
 
 # TestCheckMessage
@@ -22,4 +22,4 @@ tags:
 - [[ContextSegment]] - `uses` [INFERRED]
 - [[test_context_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check_message
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "MiddlewareManager"
+community: "v0.8.0 \"Watchtower\" — Security Fixes + Module Wi"
 location: "L696"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/v080_Watchtower__Security_Fixes__Module_Wi
 ---
 
 # TestAnalyzeRequestForRBAC
@@ -22,8 +22,8 @@ tags:
 - [[.test_write_action_no_tier()]] - `method` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/v080_Watchtower__Security_Fixes__Module_Wi

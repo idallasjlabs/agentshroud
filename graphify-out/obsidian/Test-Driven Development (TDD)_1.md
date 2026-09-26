@@ -1,20 +1,21 @@
 ---
 source_file: "docker/config/openclaw/skills/i-tdd/README.md"
 type: "document"
-community: "Community 1289"
+community: "TestWebhookReceiverSlackExtraction"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1289
+  - community/TestWebhookReceiverSlackExtraction
 ---
 
 # Test-Driven Development (TDD)
 
 ## Connections
-- [[Purpose_106]] - `contains` [EXTRACTED]
-- [[Related Skills_97]] - `contains` [EXTRACTED]
-- [[Usage_101]] - `contains` [EXTRACTED]
-- [[openclawskillsi-tddREADME]] - `contains` [EXTRACTED]
+- [[Purpose_107]] - `contains` [EXTRACTED]
+- [[README_112]] - `contains` [EXTRACTED]
+- [[Related Skills_116]] - `contains` [EXTRACTED]
+- [[SKILL_142]] - `contains` [EXTRACTED]
+- [[Usage_117]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1289
+#graphify/document #graphify/EXTRACTED #community/TestWebhookReceiverSlackExtraction

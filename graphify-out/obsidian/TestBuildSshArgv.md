@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "multi_host_test.py"
+community: "AgentShroud Threat Model (STRIDE Analysis)"
 location: "L189"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/multi_host_testpy
+  - graphify/EXTRACTED
+  - community/AgentShroud_Threat_Model_STRIDE_Analysis
 ---
 
 # TestBuildSshArgv
@@ -19,4 +19,4 @@ tags:
 - [[MultiHostResult]] - `uses` [INFERRED]
 - [[test_multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/multi_host_testpy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Threat_Model_STRIDE_Analysis

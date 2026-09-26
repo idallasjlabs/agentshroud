@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "TestFromAuditChainEntry"
+community: "MiddlewareManager"
 location: "L503"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TestFromAuditChainEntry
+  - community/MiddlewareManager
 ---
 
 # TestCollectRecentEvents
@@ -16,13 +16,13 @@ tags:
 - [[.test_none_store_returns_empty()]] - `method` [EXTRACTED]
 - [[.test_severity_filter_drops_lower()]] - `method` [EXTRACTED]
 - [[.test_store_error_returns_empty()]] - `method` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
+- [[Action_1]] - `uses` [INFERRED]
 - [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[collect_recent_events()]] - `calls` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TestFromAuditChainEntry
+#graphify/code #graphify/INFERRED #community/MiddlewareManager

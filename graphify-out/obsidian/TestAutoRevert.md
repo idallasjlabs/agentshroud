@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "test_observatory_mode.py"
+community: "TeamsConfig"
 location: "L174"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_observatory_modepy
+  - community/TeamsConfig
 ---
 
 # TestAutoRevert
@@ -18,7 +18,7 @@ tags:
 - [[KillSwitchConfig]] - `uses` [INFERRED]
 - [[KillSwitchMonitor]] - `uses` [INFERRED]
 - [[ModeRequest]] - `uses` [INFERRED]
-- [[SecurityPipeline_1]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_observatory_modepy
+#graphify/code #graphify/INFERRED #community/TeamsConfig

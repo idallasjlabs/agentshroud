@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "test_soc_bots.py"
+community: "ToolResultSanitizer"
 location: "L649"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/ToolResultSanitizer
 ---
 
 # TestComputeBotScorecard
@@ -28,9 +28,9 @@ tags:
 - [[.test_risk_level_yellow_50_to_79()]] - `method` [EXTRACTED]
 - [[.test_score_clamped_to_hundred()]] - `method` [EXTRACTED]
 - [[.test_score_clamped_to_zero()]] - `method` [EXTRACTED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
 - [[compute_bot_scorecard()]] - `calls` [EXTRACTED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

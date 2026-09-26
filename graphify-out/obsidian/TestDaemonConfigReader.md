@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestDaemonConfigReader"
+community: "kaizen Skill (stub)"
 location: "L639"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDaemonConfigReader
+  - community/kaizen_Skill_stub
 ---
 
 # TestDaemonConfigReader
@@ -16,4 +16,4 @@ tags:
 - [[.test_reads_daemon_json()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDaemonConfigReader
+#graphify/code #graphify/EXTRACTED #community/kaizen_Skill_stub

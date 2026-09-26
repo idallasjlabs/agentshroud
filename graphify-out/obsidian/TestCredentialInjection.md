@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "TestCredentialInjection"
+community: "tailscale-check.sh"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCredentialInjection
+  - community/tailscale-checksh
 ---
 
 # TestCredentialInjection
@@ -22,4 +22,4 @@ tags:
 - [[TestCredentialInjector]] - `semantically_similar_to` [INFERRED]
 - [[test_credential_injector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCredentialInjection
+#graphify/code #graphify/EXTRACTED #community/tailscale-checksh

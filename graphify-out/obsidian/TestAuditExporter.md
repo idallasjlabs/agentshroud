@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "code"
-community: "AuditExporter"
+community: "load_config()"
 location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditExporter
+  - community/load_config
 ---
 
 # TestAuditExporter
 
 ## Connections
-- [[.audit_store()]] - `method` [EXTRACTED]
+- [[.audit_store()_1]] - `method` [EXTRACTED]
 - [[.export_config()]] - `method` [EXTRACTED]
 - [[.test_export_cef()]] - `method` [EXTRACTED]
 - [[.test_export_filtering()]] - `method` [EXTRACTED]
@@ -20,12 +20,12 @@ tags:
 - [[.test_export_json_ld()]] - `method` [EXTRACTED]
 - [[.test_tamper_detection()]] - `method` [EXTRACTED]
 - [[.test_verify_export_integrity()]] - `method` [EXTRACTED]
-- [[AuditEvent]] - `uses` [INFERRED]
-- [[AuditExportConfig]] - `uses` [INFERRED]
+- [[AuditEvent_1]] - `uses` [INFERRED]
+- [[AuditExportConfig_1]] - `uses` [INFERRED]
 - [[AuditExporter]] - `uses` [INFERRED]
 - [[AuditStore_1]] - `uses` [INFERRED]
 - [[Test AuditExporter functionality.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditStore]] - `references` [INFERRED]
 - [[test_audit_export.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditExporter
+#graphify/code #graphify/EXTRACTED #community/load_config

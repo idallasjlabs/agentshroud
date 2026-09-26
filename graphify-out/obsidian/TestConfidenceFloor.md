@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "version_routes.py"
 location: "L582"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ToolResultSanitizer
+  - community/version_routespy
 ---
 
 # TestConfidenceFloor
@@ -17,13 +17,13 @@ tags:
 - [[.test_tool_result_config_default_meets_floor()]] - `method` [EXTRACTED]
 - [[0.9 PII Confidence Floor (CLAUDE.md §7.8)]] - `rationale_for` [EXTRACTED]
 - [[CLAUDE.md §7.8 mandates a 0.9 minimum PII confidence — guard the floor.      The]] - `rationale_for` [EXTRACTED]
-- [[GatewayConfig_4]] - `uses` [INFERRED]
+- [[GatewayConfig_1]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[RedactionDetail]] - `uses` [INFERRED]
-- [[RedactionResult_2]] - `uses` [INFERRED]
+- [[RedactionResult]] - `uses` [INFERRED]
 - [[ToolResultPIIConfig]] - `uses` [INFERRED]
 - [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[test_tool_result_pii.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ToolResultSanitizer
+#graphify/code #graphify/INFERRED #community/version_routespy

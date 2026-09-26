@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "TestAlertDispatcher"
+community: "Startup Sequence"
 location: "L878"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAlertDispatcher
+  - community/Startup_Sequence
 ---
 
 # TestAlertDispatcher
@@ -17,13 +17,14 @@ tags:
 - [[.test_critical_alert_notified()]] - `method` [EXTRACTED]
 - [[.test_dedup()]] - `method` [EXTRACTED]
 - [[.test_get_digest()]] - `method` [EXTRACTED]
-- [[.test_get_stats()]] - `method` [EXTRACTED]
+- [[.test_get_stats()_2]] - `method` [EXTRACTED]
 - [[.test_high_alert_notified()]] - `method` [EXTRACTED]
 - [[.test_log_to_jsonl()]] - `method` [EXTRACTED]
 - [[.test_low_alert_buffered()]] - `method` [EXTRACTED]
 - [[.test_medium_alert_buffered()]] - `method` [EXTRACTED]
 - [[.test_notify_failure()]] - `method` [EXTRACTED]
 - [[.test_rate_limiting()]] - `method` [EXTRACTED]
+- [[AlertDispatcher]] - `uses` [INFERRED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/Startup_Sequence

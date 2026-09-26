@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "AgentRegistry"
+community: "test_security_audit.py"
 location: "L191"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AgentRegistry
+  - community/test_security_auditpy
 ---
 
 # TestAgentRegistryGroupIdentity
@@ -18,11 +18,11 @@ tags:
 - [[.test_register_group_agent_with_chat_type_supergroup()]] - `method` [EXTRACTED]
 - [[AgentRegistry]] - `uses` [INFERRED]
 - [[AgentRegistry must accept group-{chat_id} agent IDs with chat_type metadata.]] - `rationale_for` [EXTRACTED]
-- [[ContainerConfig_1]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[ContainerConfig]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_group_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AgentRegistry
+#graphify/code #graphify/INFERRED #community/test_security_auditpy

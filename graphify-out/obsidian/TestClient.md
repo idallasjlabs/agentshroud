@@ -1,23 +1,25 @@
 ---
-source_file: "gateway/tests/test_skills_manifest_sync.py"
+source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "Path"
-location: "L328"
+community: "Skill: Data Validation (DATA-VAL)"
+location: "L360"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Path
+  - graphify/INFERRED
+  - community/Skill_Data_Validation_DATA-VAL
 ---
 
 # TestClient
 
 ## Connections
-- [[.client()_1]] - `references` [EXTRACTED]
-- [[.test_reload_requires_auth()]] - `calls` [EXTRACTED]
-- [[.test_reload_returns_200_with_skills_list()]] - `references` [EXTRACTED]
-- [[.test_reload_returns_500_on_source_missing()]] - `references` [EXTRACTED]
-- [[ManifestEntry]] - `uses` [INFERRED]
-- [[PlannedAction]] - `uses` [INFERRED]
-- [[SkillsManifest]] - `uses` [INFERRED]
+- [[.client()_6]] - `references` [EXTRACTED]
+- [[.test_reload_allows_clean_skill()]] - `references` [EXTRACTED]
+- [[.test_reload_blocks_dangerous_skill()]] - `references` [EXTRACTED]
+- [[.test_reload_fails_closed_on_unreadable_file()]] - `references` [EXTRACTED]
+- [[Recommendation]] - `uses` [INFERRED]
+- [[ScanResult_2]] - `uses` [INFERRED]
+- [[Severity]] - `uses` [INFERRED]
+- [[SkillGuard]] - `uses` [INFERRED]
+- [[SkillScanError]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/INFERRED #community/Skill_Data_Validation_DATA-VAL

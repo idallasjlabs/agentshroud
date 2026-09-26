@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "lifespan.py"
+community: "apply-patches.js (OpenClaw)"
 location: "L206"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/lifespanpy
+  - community/apply-patchesjs_OpenClaw
 ---
 
 # TestDailySummary
@@ -21,4 +21,4 @@ tags:
 - [[EgressMonitorConfig]] - `uses` [INFERRED]
 - [[test_egress_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/lifespanpy
+#graphify/code #graphify/INFERRED #community/apply-patchesjs_OpenClaw

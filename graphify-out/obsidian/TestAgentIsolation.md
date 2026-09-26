@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "AgentRegistry"
+community: "test_mfa_guard.py"
 location: "L646"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AgentRegistry
+  - community/test_mfa_guardpy
 ---
 
 # TestAgentIsolation
 
 ## Connections
-- [[.setup_method()_28]] - `method` [EXTRACTED]
+- [[.setup_method()_31]] - `method` [EXTRACTED]
 - [[.test_container_config_defaults()]] - `method` [EXTRACTED]
 - [[.test_generate_compose()]] - `method` [EXTRACTED]
 - [[.test_list_agents()_1]] - `method` [EXTRACTED]
@@ -26,11 +26,11 @@ tags:
 - [[.test_volume_isolation_ok()]] - `method` [EXTRACTED]
 - [[.test_volume_isolation_violation()]] - `method` [EXTRACTED]
 - [[AgentRegistry]] - `uses` [INFERRED]
-- [[ContainerConfig_1]] - `uses` [INFERRED]
+- [[ContainerConfig]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
 - [[DriftDetector]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
-- [[EgressFilter]] - `uses` [INFERRED]
+- [[EgressFilter_1]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[EncryptedStore]] - `uses` [INFERRED]
@@ -40,8 +40,8 @@ tags:
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AgentRegistry
+#graphify/code #graphify/INFERRED #community/test_mfa_guardpy

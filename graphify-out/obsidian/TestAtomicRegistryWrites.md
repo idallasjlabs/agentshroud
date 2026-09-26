@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "TestAtomicRegistryWrites"
+community: "KeyVaultConfig"
 location: "L312"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAtomicRegistryWrites
+  - community/KeyVaultConfig
 ---
 
 # TestAtomicRegistryWrites
@@ -23,4 +23,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_session_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAtomicRegistryWrites
+#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig

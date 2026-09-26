@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "TestBotIdIsolationInSharedMemory"
+community: "icloud/scripts/calendar.js"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestBotIdIsolationInSharedMemory
+  - community/icloud/scripts/calendarjs
 ---
 
 # TestBotIdIsolationInSharedMemory
@@ -18,9 +18,9 @@ tags:
 - [[.test_shared_memory_manager_get_user_memory_accepts_bot_id()]] - `method` [EXTRACTED]
 - [[Finding BT-H1BT-H2BT-H3 SharedMemoryManager must not collapse bot workspaces.]] - `rationale_for` [EXTRACTED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TrustLevel]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_security_regressions_v1_2.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestBotIdIsolationInSharedMemory
+#graphify/code #graphify/EXTRACTED #community/icloud/scripts/calendarjs

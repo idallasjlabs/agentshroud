@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "code"
-community: "URLAnalyzer"
+community: "ToolResultSanitizer"
 location: "L235"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URLAnalyzer
+  - community/ToolResultSanitizer
 ---
 
 # TestBase64Heuristic
@@ -17,8 +17,8 @@ tags:
 - [[.test_non_base64_chars()]] - `method` [EXTRACTED]
 - [[.test_short_string_not_base64()]] - `method` [EXTRACTED]
 - [[Test the _looks_like_base64 helper.]] - `rationale_for` [EXTRACTED]
-- [[URLAnalyzer_1]] - `uses` [INFERRED]
+- [[URLAnalyzer]] - `uses` [INFERRED]
 - [[URLVerdict]] - `uses` [INFERRED]
 - [[test_url_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URLAnalyzer
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

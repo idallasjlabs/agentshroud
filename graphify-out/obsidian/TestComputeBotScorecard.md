@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestComputeBotScorecard"
+community: "§4 — Hermes-Specific Section (NEW — first assess"
 location: "L1221"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestComputeBotScorecard
+  - community/4__Hermes-Specific_Section_NEW__first_assess
 ---
 
 # TestComputeBotScorecard
@@ -19,4 +19,4 @@ tags:
 - [[.test_unknown_bot_clean_score()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestComputeBotScorecard
+#graphify/code #graphify/EXTRACTED #community/4__Hermes-Specific_Section_NEW__first_assess

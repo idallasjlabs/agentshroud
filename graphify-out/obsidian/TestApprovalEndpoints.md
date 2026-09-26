@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "TestCollaboratorAccess"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/TestCollaboratorAccess
 ---
 
 # TestApprovalEndpoints
@@ -18,4 +18,4 @@ tags:
 - [[Test approval queue endpoints.]] - `rationale_for` [EXTRACTED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/TestCollaboratorAccess

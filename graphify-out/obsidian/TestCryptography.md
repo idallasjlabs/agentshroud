@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "EncryptedStore"
+community: "lifespan.py"
 location: "L689"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EncryptedStore
+  - community/lifespanpy
 ---
 
 # TestCryptography
 
 ## Connections
-- [[.store()_1]] - `method` [EXTRACTED]
+- [[.store()_2]] - `method` [EXTRACTED]
 - [[.test_ciphertext_not_plaintext()]] - `method` [EXTRACTED]
 - [[.test_different_plaintexts_different_ciphertexts()]] - `method` [EXTRACTED]
 - [[.test_encrypt_decrypt_roundtrip()]] - `method` [EXTRACTED]
 - [[.test_encrypt_json()]] - `method` [EXTRACTED]
-- [[.test_key_rotation()_1]] - `method` [EXTRACTED]
+- [[.test_key_rotation()]] - `method` [EXTRACTED]
 - [[.test_key_vault_init()]] - `method` [EXTRACTED]
 - [[.test_tampered_ciphertext_fails()]] - `method` [EXTRACTED]
 - [[.test_wrong_key_fails()]] - `method` [EXTRACTED]
@@ -42,7 +42,7 @@ tags:
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MetadataGuard]] - `uses` [INFERRED]
 - [[NetworkValidator]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[PKCEViolation]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
@@ -54,7 +54,7 @@ tags:
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test encryption, key management, and secret handling.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EncryptedStore
+#graphify/code #graphify/INFERRED #community/lifespanpy

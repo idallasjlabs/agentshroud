@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "DeniedRequest"
+community: "TrustManager"
 location: "L18"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/DeniedRequest
+  - community/TrustManager
 ---
 
 # TestApprovalHardeningConfig
@@ -21,4 +21,4 @@ tags:
 - [[Test approval hardening configuration.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/DeniedRequest
+#graphify/code #graphify/INFERRED #community/TrustManager

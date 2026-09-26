@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "rationale"
-community: "test_trust_manager.py"
+community: "MemoryIntegrityMonitor"
 location: "L185"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_trust_managerpy
+  - community/MemoryIntegrityMonitor
 ---
 
 # Test trust survives restart.
 
 ## Connections
-- [[TestPersistence_1]] - `rationale_for` [EXTRACTED]
+- [[TestPersistence_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_trust_managerpy
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

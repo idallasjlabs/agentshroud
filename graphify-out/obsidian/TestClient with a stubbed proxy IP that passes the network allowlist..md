@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_v1_models_synthetic.py"
 type: "rationale"
-community: "test_v1_models_synthetic.py"
+community: "OPENCLAW_SANDBOX_MODE"
 location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_v1_models_syntheticpy
+  - community/OPENCLAW_SANDBOX_MODE
 ---
 
 # TestClient with a stubbed proxy IP that passes the network allowlist.
 
 ## Connections
-- [[client()_1]] - `rationale_for` [EXTRACTED]
+- [[client()_18]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_v1_models_syntheticpy
+#graphify/rationale #graphify/EXTRACTED #community/OPENCLAW_SANDBOX_MODE

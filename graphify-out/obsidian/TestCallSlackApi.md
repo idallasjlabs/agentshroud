@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "SlackAPIProxy"
+community: "OutboundInfoFilter"
 location: "L320"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/OutboundInfoFilter
 ---
 
 # TestCallSlackApi
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.test_network_error_returns_synthetic_failure()]] - `method` [EXTRACTED]
 - [[.test_success_posts_with_bearer_token()]] - `method` [EXTRACTED]
-- [[SlackAPIProxy_1]] - `uses` [INFERRED]
+- [[SlackAPIProxy]] - `uses` [INFERRED]
 - [[test_slack_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

@@ -21,11 +21,11 @@ tags:
 - [[.test_three_bots_form_a_full_mesh()]] - `method` [EXTRACTED]
 - [[.test_two_bots_are_mutual_peers()]] - `method` [EXTRACTED]
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
-- [[CrossBotTrustLedger_1]] - `uses` [INFERRED]
+- [[CrossBotTrustLedger]] - `uses` [INFERRED]
 - [[IncidentRecord]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustDecayPolicy]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[build_full_mesh N-agent-scalable topology construction.      Adding a 3rd4thN]] - `rationale_for` [EXTRACTED]
 - [[test_cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
 

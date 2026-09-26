@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "RBACConfig"
+community: "test_security_audit.py"
 location: "L211"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBACConfig
+  - community/test_security_auditpy
 ---
 
 # TestAuthorizationHelper
@@ -15,10 +15,10 @@ tags:
 - [[.test_empty_author_is_denied()]] - `method` [EXTRACTED]
 - [[.test_member_authorized()]] - `method` [EXTRACTED]
 - [[.test_missing_rbac_is_denied()]] - `method` [EXTRACTED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_shared_memory_write_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBACConfig
+#graphify/code #graphify/INFERRED #community/test_security_auditpy

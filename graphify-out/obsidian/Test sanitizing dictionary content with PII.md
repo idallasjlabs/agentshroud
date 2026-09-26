@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "version_routes.py"
 location: "L186"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/version_routespy
 ---
 
 # Test sanitizing dictionary content with PII
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_sanitize_dict_with_pii()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/version_routespy

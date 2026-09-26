@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "code"
-community: "load_config()"
+community: "test_e2e_proxy.py"
 location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/test_e2e_proxypy
 ---
 
 # TestDefaultMcpPolicyIsFailClosed
@@ -19,8 +19,8 @@ tags:
 - [[.test_explicit_policy_section_is_not_overridden()]] - `method` [EXTRACTED]
 - [[.test_missing_section_yields_deny_by_default_policy()]] - `method` [EXTRACTED]
 - [[MCPPolicyAction]] - `uses` [INFERRED]
-- [[MCPPolicyConfig_1]] - `uses` [INFERRED]
-- [[MCPPolicyEngine_1]] - `uses` [INFERRED]
+- [[MCPPolicyConfig]] - `uses` [INFERRED]
+- [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[test_mcp_policy_default_failclosed.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

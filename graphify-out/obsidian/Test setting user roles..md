@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "MiddlewareManager"
 location: "L263"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/MiddlewareManager
 ---
 
 # Test setting user roles.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_set_user_role()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

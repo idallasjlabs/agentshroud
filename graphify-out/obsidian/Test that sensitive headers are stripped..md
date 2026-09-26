@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_metadata_guard.py"
 type: "rationale"
-community: "TestMetadataGuard"
+community: "System Instructions: Credential Security (Ultra-"
 location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestMetadataGuard
+  - community/System_Instructions_Credential_Security_Ultra-
 ---
 
 # Test that sensitive headers are stripped.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_sanitize_headers_strips_sensitive()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestMetadataGuard
+#graphify/rationale #graphify/EXTRACTED #community/System_Instructions_Credential_Security_Ultra-

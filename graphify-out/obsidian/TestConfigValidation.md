@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "TestConfigValidation"
+community: "MCPToolCall"
 location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/MCPToolCall
 ---
 
 # TestConfigValidation
@@ -53,7 +53,9 @@ tags:
 - [[.test_switch_model_script_uses_current_target_syntax()]] - `method` [EXTRACTED]
 - [[.test_valid_forward_request()]] - `method` [EXTRACTED]
 - [[.test_valid_router_url_accepted()]] - `method` [EXTRACTED]
+- [[ForwardRequest]] - `uses` [INFERRED]
 - [[GatewayConfig validation behavior.]] - `rationale_for` [EXTRACTED]
+- [[RouterConfig]] - `uses` [INFERRED]
 - [[test_config_validation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/code #graphify/EXTRACTED #community/MCPToolCall

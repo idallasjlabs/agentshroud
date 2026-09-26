@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "gateway.security.daily_cve_report"
+community: "PrivacyPolicyEnforcer"
 location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gatewaysecuritydaily_cve_report
+  - community/PrivacyPolicyEnforcer
 ---
 
 # TestAlreadySentToday
@@ -17,4 +17,4 @@ tags:
 - [[.test_returns_true_when_sent_today()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gatewaysecuritydaily_cve_report
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

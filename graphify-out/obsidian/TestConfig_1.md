@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "TestConfig"
+community: "TestCredentialInjection"
 location: "L385"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestConfig
+  - community/TestCredentialInjection
 ---
 
 # TestConfig
@@ -25,4 +25,4 @@ tags:
 - [[UpdateRequest]] - `uses` [INFERRED]
 - [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestConfig
+#graphify/code #graphify/EXTRACTED #community/TestCredentialInjection

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "_FakeUpstreamWS"
+community: "AgentShroud Operations Cheat Sheet"
 location: "L637"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeUpstreamWS
+  - community/AgentShroud_Operations_Cheat_Sheet
 ---
 
 # TestCanvasHTTP
@@ -20,4 +20,4 @@ tags:
 - [[DNSForwarderProtocol]] - `uses` [INFERRED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeUpstreamWS
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet

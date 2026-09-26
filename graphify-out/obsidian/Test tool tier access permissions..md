@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "MiddlewareManager"
 location: "L229"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/MiddlewareManager
 ---
 
 # Test tool tier access permissions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_tool_tier_permissions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

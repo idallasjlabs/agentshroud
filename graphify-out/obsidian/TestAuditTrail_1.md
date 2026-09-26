@@ -1,24 +1,59 @@
 ---
-source_file: "gateway/tests/test_subagent_monitor.py"
+source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "TestAuth"
-location: "L184"
+community: "lifespan.py"
+location: "L759"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/TestAuth
+  - graphify/INFERRED
+  - community/lifespanpy
 ---
 
 # TestAuditTrail
 
 ## Connections
-- [[.test_audit_filterable_by_agent()]] - `method` [EXTRACTED]
-- [[.test_audit_has_timestamps()]] - `method` [EXTRACTED]
-- [[.test_deregister_logged()]] - `method` [EXTRACTED]
-- [[.test_spawn_logged()]] - `method` [EXTRACTED]
-- [[SubagentEventType]] - `uses` [INFERRED]
+- [[.test_alert_dedup()]] - `method` [EXTRACTED]
+- [[.test_alert_dispatcher_init()]] - `method` [EXTRACTED]
+- [[.test_alert_dispatcher_write()]] - `method` [EXTRACTED]
+- [[.test_canary_system_importable()]] - `method` [EXTRACTED]
+- [[.test_drift_detector_baseline()]] - `method` [EXTRACTED]
+- [[.test_drift_detector_detects_change()]] - `method` [EXTRACTED]
+- [[.test_drift_no_false_positive()]] - `method` [EXTRACTED]
+- [[.test_health_report_importable()]] - `method` [EXTRACTED]
+- [[AlertDispatcher]] - `uses` [INFERRED]
+- [[ConfusedDeputyError]] - `uses` [INFERRED]
+- [[ConsentDecision]] - `uses` [INFERRED]
+- [[ContainerSnapshot]] - `uses` [INFERRED]
+- [[ContextGuard]] - `uses` [INFERRED]
+- [[DNSFilterConfig]] - `uses` [INFERRED]
+- [[DriftDetector]] - `uses` [INFERRED]
+- [[EgressEvent]] - `uses` [INFERRED]
+- [[EgressPolicy]] - `uses` [INFERRED]
+- [[EncryptedStore]] - `uses` [INFERRED]
+- [[EntropyCalculator]] - `uses` [INFERRED]
+- [[EnvironmentGuard]] - `uses` [INFERRED]
+- [[FileSandbox]] - `uses` [INFERRED]
+- [[FileSandboxConfig]] - `uses` [INFERRED]
+- [[GitGuard]] - `uses` [INFERRED]
+- [[IsolationStatus]] - `uses` [INFERRED]
+- [[KeyVault]] - `uses` [INFERRED]
+- [[KeyVaultConfig]] - `uses` [INFERRED]
+- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[MetadataGuard]] - `uses` [INFERRED]
+- [[NetworkValidator]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[PKCEViolation]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
+- [[RedirectMismatch]] - `uses` [INFERRED]
+- [[ResourceGuard]] - `uses` [INFERRED]
+- [[ResourceLimits]] - `uses` [INFERRED]
+- [[Session]] - `uses` [INFERRED]
+- [[SubagentEvent]] - `uses` [INFERRED]
 - [[SubagentMonitor]] - `uses` [INFERRED]
-- [[SubagentMonitorConfig]] - `uses` [INFERRED]
-- [[test_subagent_monitor.py]] - `contains` [EXTRACTED]
+- [[Test audit chain integrity and tamper detection.]] - `rationale_for` [EXTRACTED]
+- [[ThreatAssessment]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
+- [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAuth
+#graphify/code #graphify/INFERRED #community/lifespanpy

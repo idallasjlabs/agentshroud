@@ -1,21 +1,24 @@
 ---
-source_file: "gateway/tests/test_token_validation.py"
+source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "_make_token()"
-location: "L200"
+community: "URLAnalyzer"
+location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_token
+  - community/URLAnalyzer
 ---
 
 # TestAuditLogging
 
 ## Connections
-- [[.test_failed_validation_logged()]] - `method` [EXTRACTED]
-- [[.test_multiple_validations_logged()]] - `method` [EXTRACTED]
-- [[.test_successful_validation_logged()]] - `method` [EXTRACTED]
-- [[AudienceMismatch]] - `uses` [INFERRED]
-- [[test_token_validation.py]] - `contains` [EXTRACTED]
+- [[.test_flagged_queries_in_log()]] - `method` [EXTRACTED]
+- [[.test_log_contains_timestamp()]] - `method` [EXTRACTED]
+- [[.test_log_contains_verdict()]] - `method` [EXTRACTED]
+- [[.test_queries_logged()]] - `method` [EXTRACTED]
+- [[DNSFilter]] - `uses` [INFERRED]
+- [[DNSFilterConfig]] - `uses` [INFERRED]
+- [[EntropyCalculator]] - `uses` [INFERRED]
+- [[test_dns_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_token
+#graphify/code #graphify/EXTRACTED #community/URLAnalyzer

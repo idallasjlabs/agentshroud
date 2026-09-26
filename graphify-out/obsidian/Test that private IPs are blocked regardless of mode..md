@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_enforce.py"
 type: "rationale"
-community: "EgressFilter"
+community: "ConsentFramework"
 location: "L191"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/ConsentFramework
 ---
 
 # Test that private IPs are blocked regardless of mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_private_ip_blocking()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilter
+#graphify/rationale #graphify/EXTRACTED #community/ConsentFramework

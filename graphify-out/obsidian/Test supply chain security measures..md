@@ -12,6 +12,6 @@ tags:
 # Test supply chain security measures.
 
 ## Connections
-- [[TestSupplyChain]] - `rationale_for` [EXTRACTED]
+- [[TestSupplyChain_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/lifespanpy

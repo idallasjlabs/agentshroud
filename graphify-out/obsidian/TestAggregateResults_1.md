@@ -1,25 +1,22 @@
 ---
-source_file: "gateway/tests/test_scanner_integration.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "test_scanner_integration.py"
-location: "L468"
+community: "Skill: Pull Request (PR) Generator"
+location: "L520"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/Skill_Pull_Request_PR_Generator
 ---
 
 # TestAggregateResults
 
 ## Connections
-- [[._patch_all_not_run()]] - `method` [EXTRACTED]
-- [[.test_overall_clean_when_all_clean()]] - `method` [EXTRACTED]
-- [[.test_overall_critical_when_any_critical()]] - `method` [EXTRACTED]
-- [[.test_overall_not_configured_when_all_not_run()]] - `method` [EXTRACTED]
-- [[.test_overall_warning_when_high_only()]] - `method` [EXTRACTED]
-- [[.test_scanners_dict_has_all_tools()]] - `method` [EXTRACTED]
-- [[.test_timestamp_present()_1]] - `method` [EXTRACTED]
-- [[.test_totals_sum_across_scanners()]] - `method` [EXTRACTED]
-- [[test_scanner_integration.py]] - `contains` [EXTRACTED]
+- [[._patch_all()]] - `method` [EXTRACTED]
+- [[.test_all_clean()]] - `method` [EXTRACTED]
+- [[.test_all_not_run_is_not_configured()]] - `method` [EXTRACTED]
+- [[.test_critical_dominates()]] - `method` [EXTRACTED]
+- [[.test_high_means_warning()]] - `method` [EXTRACTED]
+- [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator

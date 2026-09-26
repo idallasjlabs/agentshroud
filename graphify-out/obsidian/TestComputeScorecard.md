@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "compute_scorecard()"
+community: "MCPAuditTrail"
 location: "L866"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/compute_scorecard
+  - community/MCPAuditTrail
 ---
 
 # TestComputeScorecard
@@ -29,9 +29,9 @@ tags:
 - [[.test_scorecard_domain_ids_are_sequential()]] - `method` [EXTRACTED]
 - [[.test_secrets_management_baseline_two()]] - `method` [EXTRACTED]
 - [[.test_standard_basis_present()]] - `method` [EXTRACTED]
-- [[.test_timestamp_present()]] - `method` [EXTRACTED]
+- [[.test_timestamp_present()_1]] - `method` [EXTRACTED]
 - [[.test_totals_present()]] - `method` [EXTRACTED]
 - [[.test_version_is_v090()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/compute_scorecard
+#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "rationale"
-community: "TrustManager"
+community: "ResourceGuard"
 location: "L19"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/ResourceGuard
 ---
 
 # Test that core security modules default to enforce mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEnforceDefaults]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "TestAlreadyIngestedGhsaToday"
+community: "Branding Specialist (BS)"
 location: "L1298"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAlreadyIngestedGhsaToday
+  - community/Branding_Specialist_BS
 ---
 
 # TestAlreadyIngestedGhsaToday
@@ -17,4 +17,4 @@ tags:
 - [[.test_returns_true_when_ingested_today()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAlreadyIngestedGhsaToday
+#graphify/code #graphify/EXTRACTED #community/Branding_Specialist_BS

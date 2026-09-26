@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "SSHProxy"
+community: "ModeRequest"
 location: "L425"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/ModeRequest
 ---
 
 # Test that configuration includes tool result PII settings
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_config_with_tool_result_pii()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SSHProxy
+#graphify/rationale #graphify/EXTRACTED #community/ModeRequest

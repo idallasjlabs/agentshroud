@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "rationale"
-community: "test_trust_manager.py"
+community: "TrustConfig"
 location: "L169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_trust_managerpy
+  - community/TrustConfig
 ---
 
 # Test trust history tracking.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestHistory]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_trust_managerpy
+#graphify/rationale #graphify/EXTRACTED #community/TrustConfig
