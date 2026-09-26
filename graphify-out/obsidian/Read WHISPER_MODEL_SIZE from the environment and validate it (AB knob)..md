@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/stt.py"
 type: "rationale"
-community: "test_voice_stt_model_ab.py"
+community: "TestSSRFBlocking"
 location: "L51"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_voice_stt_model_abpy
+  - community/TestSSRFBlocking
 ---
 
 # Read WHISPER_MODEL_SIZE from the environment and validate it (A/B knob).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_resolve_model_size()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_voice_stt_model_abpy
+#graphify/rationale #graphify/EXTRACTED #community/TestSSRFBlocking

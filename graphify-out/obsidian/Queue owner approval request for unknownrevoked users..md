@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "ToolACLEnforcer"
 location: "L855"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/ToolACLEnforcer
 ---
 
 # Queue owner approval request for unknown/revoked users.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._queue_collaborator_access_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/ToolACLEnforcer

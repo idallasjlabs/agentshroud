@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-cicd/README.md"
 type: "document"
-community: "Community 1145"
+community: "_FakeRBAC"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1145
+  - community/_FakeRBAC
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1145
+#graphify/document #graphify/EXTRACTED #community/_FakeRBAC

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-cicd/README.md"
 type: "document"
-community: "Community 1215"
+community: "text_control_center.py / agentshroud_manager.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1215
+  - community/text_control_centerpy_/_agentshroud_managerpy
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1215
+#graphify/document #graphify/EXTRACTED #community/text_control_centerpy_/_agentshroud_managerpy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/red-team-assessment-v1.2.0.md"
 type: "document"
-community: "§2 — New Multi-Bot Attack Scenarios (v1.1+ Surfa"
+community: "Domain allowlisted? (agentshroud.yaml proxy.allo"
 location: "L236"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/2__New_Multi-Bot_Attack_Scenarios_v11_Surfa
+  - community/Domain_allowlisted_agentshroudyaml_proxyallo
 ---
 
 # RT-MB3 — Group-Context Escalation (Anticipating Workstream A)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[§2 — New Multi-Bot Attack Scenarios (v1.1+ Surface)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/2__New_Multi-Bot_Attack_Scenarios_v11_Surfa
+#graphify/document #graphify/EXTRACTED #community/Domain_allowlisted_agentshroudyaml_proxyallo

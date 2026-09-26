@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "_skills_reload_impl()"
+community: "api.py"
 location: "L1032"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_skills_reload_impl
+  - community/apipy
 ---
 
 # Re-read ``~/.llm_settings/`` and sync skills/agents/MCP into both bot configs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[skills_reload()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_skills_reload_impl
+#graphify/rationale #graphify/EXTRACTED #community/apipy

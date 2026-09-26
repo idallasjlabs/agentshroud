@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "RateLimiter"
+community: "test_a2a_proxy.py"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RateLimiter
+  - community/test_a2a_proxypy
 ---
 
 # RateLimiter
 
 ## Connections
-- [[.__init__()_43]] - `method` [EXTRACTED]
-- [[.__init__()_99]] - `calls` [EXTRACTED]
+- [[.__init__()_10]] - `method` [EXTRACTED]
+- [[.__init__()_39]] - `calls` [EXTRACTED]
 - [[.check()]] - `method` [EXTRACTED]
 - [[.test_collaborator_rate_limit_notice_falls_back_without_markdown()]] - `calls` [EXTRACTED]
 - [[.test_collaborator_rate_limit_notice_includes_retry_window()]] - `calls` [EXTRACTED]
@@ -22,17 +22,17 @@ tags:
 - [[.test_collaborator_rate_limit_resets_after_window()]] - `calls` [EXTRACTED]
 - [[.test_collaborator_rate_limit_retry_after_seconds_uses_window()]] - `calls` [EXTRACTED]
 - [[.test_collaborator_rate_limit_uses_user_id_when_chat_id_differs()]] - `calls` [EXTRACTED]
-- [[Any_66]] - `uses` [INFERRED]
+- [[Any_21]] - `uses` [INFERRED]
 - [[AsyncMock]] - `uses` [INFERRED]
 - [[BlockingPipeline]] - `uses` [INFERRED]
 - [[EncodingDetectingPipeline]] - `uses` [INFERRED]
-- [[FakePipelineResult]] - `uses` [INFERRED]
-- [[FakeRBAC]] - `uses` [INFERRED]
-- [[GatewayConfig_4]] - `uses` [INFERRED]
-- [[PassthroughPipeline]] - `uses` [INFERRED]
+- [[FakePipelineResult_1]] - `uses` [INFERRED]
+- [[FakeRBAC_1]] - `uses` [INFERRED]
+- [[GatewayConfig_1]] - `uses` [INFERRED]
+- [[PassthroughPipeline_1]] - `uses` [INFERRED]
 - [[Simple token-bucket rate limiter      Limits requests per client IP to prevent r]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[TestBotIsMentioned]] - `uses` [INFERRED]
 - [[TestCollaboratorPromptClassifiers]] - `uses` [INFERRED]
 - [[TestCollaboratorRateLimitRecovery]] - `uses` [INFERRED]
@@ -48,8 +48,8 @@ tags:
 - [[TestProgressiveLockdownUX]] - `uses` [INFERRED]
 - [[TestStrangerRateLimit]] - `uses` [INFERRED]
 - [[_OutboundScan]] - `uses` [INFERRED]
-- [[auth.py]] - `references` [EXTRACTED]
-- [[ingest_apiauth.py]] - `contains` [EXTRACTED]
+- [[auth.py]] - `contains` [EXTRACTED]
+- [[auth.py_2]] - `references` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 - [[test_auth.py]] - `imports` [EXTRACTED]
 - [[test_rate_limiter()]] - `calls` [EXTRACTED]
@@ -60,4 +60,4 @@ tags:
 - [[test_security.py]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RateLimiter
+#graphify/code #graphify/INFERRED #community/test_a2a_proxypy

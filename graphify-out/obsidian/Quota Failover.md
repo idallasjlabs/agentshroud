@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
 type: "document"
-community: "llm_proxy.py"
+community: "AgentShroud Deployment Architecture"
 location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/llm_proxypy
+  - community/AgentShroud_Deployment_Architecture
 ---
 
 # Quota Failover
@@ -16,6 +16,6 @@ tags:
 - [[Failover controls]] - `contains` [EXTRACTED]
 - [[Failover notifications]] - `contains` [EXTRACTED]
 - [[Stats tracked]] - `contains` [EXTRACTED]
-- [[llm_proxy.py_1]] - `contains` [EXTRACTED]
+- [[llm_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/llm_proxypy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture

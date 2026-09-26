@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "rationale"
-community: "TrustConfig"
+community: "RBACConfig"
 location: "L281"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/RBACConfig
 ---
 
 # Recursive BFS propagation up to max_propagation_depth hops.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._propagate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustConfig
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

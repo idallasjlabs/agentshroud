@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-cr/README.md"
 type: "document"
-community: "Community 231"
+community: "AuditExporter"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_231
+  - community/AuditExporter
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Code Review (i-cr)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_231
+#graphify/document #graphify/EXTRACTED #community/AuditExporter

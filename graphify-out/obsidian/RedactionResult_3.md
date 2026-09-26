@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/security/prompt_protection.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "PromptProtection"
-location: "L39"
+community: "ResourceGuard"
+location: "L71"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/PromptProtection
+  - graphify/INFERRED
+  - community/ResourceGuard
 ---
 
 # RedactionResult
 
 ## Connections
-- [[.scan_response()_1]] - `references` [EXTRACTED]
-- [[Result of scanning and redacting content.]] - `rationale_for` [EXTRACTED]
-- [[prompt_protection.py]] - `contains` [EXTRACTED]
+- [[.sanitize_tool_result()]] - `references` [EXTRACTED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[RedactionResult]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptProtection
+#graphify/code #graphify/INFERRED #community/ResourceGuard

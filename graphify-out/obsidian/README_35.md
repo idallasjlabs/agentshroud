@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-tw/README.md"
 type: "document"
-community: "Community 1165"
+community: "DNSFilterConfig"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1165
+  - community/DNSFilterConfig
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Technical Writer (TW)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1165
+#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig

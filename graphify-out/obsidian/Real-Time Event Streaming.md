@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "AgentShroud Audit Specification"
+community: "test_block_credentials.py"
 location: "L377"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Audit_Specification
+  - community/test_block_credentialspy
 ---
 
 # Real-Time Event Streaming
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Query Capabilities]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification
+#graphify/document #graphify/EXTRACTED #community/test_block_credentialspy

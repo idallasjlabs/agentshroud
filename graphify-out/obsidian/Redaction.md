@@ -1,13 +1,13 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "Redaction"
+community: "Token Reduction Benchmark"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Redaction
+  - community/Token_Reduction_Benchmark
 ---
 
 # Redaction
 
-#graphify/concept #graphify/EXTRACTED #community/Redaction
+#graphify/concept #graphify/EXTRACTED #community/Token_Reduction_Benchmark

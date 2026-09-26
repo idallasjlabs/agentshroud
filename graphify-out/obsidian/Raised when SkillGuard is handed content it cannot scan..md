@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "rationale"
-community: "test_skill_guard.py"
+community: "AgentShroud™ Brand Guidelines"
 location: "L73"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_skill_guardpy
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Raised when SkillGuard is handed content it cannot scan.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SkillScanError]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_skill_guardpy
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

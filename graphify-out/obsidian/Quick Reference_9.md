@@ -1,17 +1,19 @@
 ---
-source_file: "skills/openclaw/xurl/SKILL.md"
+source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "xurl — Agent Skill Reference"
-location: "L109"
+community: "PipelineAction"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/xurl__Agent_Skill_Reference
+  - community/PipelineAction
 ---
 
-# Quick Reference
+# Quick Reference.md
 
 ## Connections
-- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
+- [[Home]] - `references` [EXTRACTED]
+- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
+- [[System Overview]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference
+#graphify/document #graphify/EXTRACTED #community/PipelineAction

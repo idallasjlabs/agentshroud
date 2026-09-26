@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-mc/README.md"
 type: "document"
-community: "Community 391"
+community: "SecurityEvent"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_391
+  - community/SecurityEvent
 ---
 
 # README.md
 
 ## Connections
-- [[GSDE&G Development Master Checklist Skill]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_391
+#graphify/document #graphify/EXTRACTED #community/SecurityEvent

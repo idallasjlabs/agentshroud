@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
+source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "rationale"
-community: "hermes/workspace/jira_dev_ticket.py"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-P"
 location: "L111"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/hermes/workspace/jira_dev_ticketpy
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P
 ---
 
 # REST v3 URL for creating an issue.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[build_issue_url()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/hermes/workspace/jira_dev_ticketpy
+#graphify/rationale #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P

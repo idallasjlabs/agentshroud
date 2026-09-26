@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sad/README.md"
 type: "document"
-community: "Community 1160"
+community: "DNSFilterConfig"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1160
+  - community/DNSFilterConfig
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[System Audit Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1160
+#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig

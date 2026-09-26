@@ -1,19 +1,19 @@
 ---
-source_file: "docs/vault/00 - START HERE/Quick Reference.md"
+source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "MiddlewareManager"
-location: "L1"
+community: "TestConfigValidation"
+location: "L528"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/TestConfigValidation
 ---
 
-# Quick Reference.md
+# Quick Reference
 
 ## Connections
-- [[Home]] - `references` [EXTRACTED]
-- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
-- [[System Overview]] - `references` [EXTRACTED]
+- [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
+- [[Emergency Procedures_2]] - `contains` [EXTRACTED]
+- [[Security Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/document #graphify/EXTRACTED #community/TestConfigValidation

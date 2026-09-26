@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "rationale"
-community: "test_dashboard_endpoints.py"
+community: "CredentialInjector"
 location: "L276"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/CredentialInjector
 ---
 
 # Recent security/audit log entries.      Optional ``?bot=`` query parameter restr
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[logs_recent()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/rationale #graphify/EXTRACTED #community/CredentialInjector

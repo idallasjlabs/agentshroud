@@ -1,12 +1,12 @@
 ---
 source_file: "branding/README.md"
 type: "document"
-community: "Community 790"
+community: "Phase 1 — Raw Collection"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_790
+  - community/Phase_1__Raw_Collection
 ---
 
 # README.md
@@ -19,4 +19,4 @@ tags:
 - [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
 - [[QUICK-REFERENCE]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_790
+#graphify/document #graphify/EXTRACTED #community/Phase_1__Raw_Collection

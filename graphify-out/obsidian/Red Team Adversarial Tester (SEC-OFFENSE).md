@@ -1,20 +1,21 @@
 ---
 source_file: ".agents/skills/i-sec-offense/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "DNSFilterConfig"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/DNSFilterConfig
 ---
 
 # Red Team Adversarial Tester (SEC-OFFENSE)
 
 ## Connections
-- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_32]] - `contains` [EXTRACTED]
-- [[Related Skills_23]] - `contains` [EXTRACTED]
-- [[Usage_27]] - `contains` [EXTRACTED]
+- [[Purpose_30]] - `contains` [EXTRACTED]
+- [[README_30]] - `contains` [EXTRACTED]
+- [[Related Skills_33]] - `contains` [EXTRACTED]
+- [[SKILL_15]] - `contains` [EXTRACTED]
+- [[Usage_33]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig

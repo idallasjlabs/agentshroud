@@ -1,12 +1,12 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "Community 791"
+community: "_build_image_targets()"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_791
+  - community/_build_image_targets
 ---
 
 # README.md
@@ -19,4 +19,4 @@ tags:
 - [[MemoryViewer Component (MEMORY.md Browser)]] - `references` [EXTRACTED]
 - [[NetworkInspector Component (Outbound Request Monitor)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_791
+#graphify/document #graphify/EXTRACTED #community/_build_image_targets

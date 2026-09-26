@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Community 118"
+community: "Release Notes - AgentShroud v0.9.0"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_118
+  - community/Release_Notes_-_AgentShroud_v090
 ---
 
 # README.md
@@ -25,6 +25,5 @@ tags:
 - [[What's New — v1.3.0 Reliability (July 2026)]] - `contains` [EXTRACTED]
 - [[Who It's For]] - `contains` [EXTRACTED]
 - [[Why AgentShroud]] - `contains` [EXTRACTED]
-- [[test_docs_accuracy.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_118
+#graphify/document #graphify/EXTRACTED #community/Release_Notes_-_AgentShroud_v090

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/wazuh_client.py"
 type: "rationale"
-community: "wazuh_client.py"
+community: "LLMProxy"
 location: "L70"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/wazuh_clientpy
+  - community/LLMProxy
 ---
 
 # Read Wazuh alerts from the alert directory.      Args:         alert_dir: Direct
 
 ## Connections
-- [[read_alerts()]] - `rationale_for` [EXTRACTED]
+- [[read_alerts()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/wazuh_clientpy
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxy

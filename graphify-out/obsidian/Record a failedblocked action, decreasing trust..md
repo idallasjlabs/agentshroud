@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "TrustLevel"
+community: "MemoryIntegrityMonitor"
 location: "L218"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustLevel
+  - community/MemoryIntegrityMonitor
 ---
 
 # Record a failed/blocked action, decreasing trust.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.record_failure()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustLevel
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

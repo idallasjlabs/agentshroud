@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "RateLimiter"
+community: "test_a2a_proxy.py"
 location: "L3721"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/test_a2a_proxypy
 ---
 
 # Rate-limit notice path should key retry window by user_id, not chat_id.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_rate_limit_uses_user_id_when_chat_id_differs()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RateLimiter
+#graphify/rationale #graphify/EXTRACTED #community/test_a2a_proxypy

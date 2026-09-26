@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "rationale"
-community: "PortManager"
+community: "KeyVault"
 location: "L267"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/KeyVault
 ---
 
 # Quick check: are the default ports available? Log and return result.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check_and_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PortManager
+#graphify/rationale #graphify/EXTRACTED #community/KeyVault

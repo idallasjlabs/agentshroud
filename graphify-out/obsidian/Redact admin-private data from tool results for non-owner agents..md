@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: ".process_tool_call()"
+community: "AgentShroud v0.9.0 — Human Interface Testing Gui"
 location: "L332"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/process_tool_call
+  - community/AgentShroud_v090__Human_Interface_Testing_Gui
 ---
 
 # Redact admin-private data from tool results for non-owner agents.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._sanitize_admin_private_data()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/process_tool_call
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_v090__Human_Interface_Testing_Gui

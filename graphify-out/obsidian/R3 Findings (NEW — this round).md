@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05-r3.md"
 type: "document"
-community: "AgentShroud v0.8.0 Peer Review Round 3 (FINAL)"
+community: "main()"
 location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080_Peer_Review_Round_3_FINAL
+  - community/main
 ---
 
 # R3 Findings (NEW — this round)
@@ -18,4 +18,4 @@ tags:
 - [[R3-W3 — WARNING Dead code `_is_imessage_recipient_allowed` in forward.py]] - `contains` [EXTRACTED]
 - [[R3-W4 — WARNING Debug log leaking agent response content]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Peer_Review_Round_3_FINAL
+#graphify/document #graphify/EXTRACTED #community/main

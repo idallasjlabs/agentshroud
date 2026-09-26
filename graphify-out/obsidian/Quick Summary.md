@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/deployment.md"
 type: "document"
-community: "Deployment Runbook — AgentShroud"
+community: "consent_framework.py"
 location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deployment_Runbook__AgentShroud
+  - community/consent_frameworkpy
 ---
 
 # Quick Summary
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[First-Time Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deployment_Runbook__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/consent_frameworkpy

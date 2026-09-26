@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-apollo/README.md"
 type: "document"
-community: "Community 1209"
+community: "test_call_agent_uses_structured_timeout()"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1209
+  - community/test_call_agent_uses_structured_timeout
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Apollo — Audio Systems Producer_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1209
+#graphify/document #graphify/EXTRACTED #community/test_call_agent_uses_structured_timeout

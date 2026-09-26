@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "rationale"
-community: "DraftEntry"
+community: "_call_agent_stream()"
 location: "L143"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DraftEntry
+  - community/_call_agent_stream
 ---
 
 # Re-fetch *url* and return a Citation iff it is allowlisted + live.          SSRF
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._verify_url()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DraftEntry
+#graphify/rationale #graphify/EXTRACTED #community/_call_agent_stream

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "TestGroupRoleResolver"
+community: "OpenClaw cron: AgentShroud Daily Check-in (disab"
 location: "L122"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestGroupRoleResolver
+  - community/OpenClaw_cron_AgentShroud_Daily_Check-in_disab
 ---
 
 # Read-only user resolves to GroupRole.READ_ONLY.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_readonly_user_resolves_to_readonly_role()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestGroupRoleResolver
+#graphify/rationale #graphify/EXTRACTED #community/OpenClaw_cron_AgentShroud_Daily_Check-in_disab

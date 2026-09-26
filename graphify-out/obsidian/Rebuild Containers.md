@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "AgentShroud Docker Configuration"
+community: "AlertTelegramRelay"
 location: "L386"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Docker_Configuration
+  - community/AlertTelegramRelay
 ---
 
 # Rebuild Containers
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Development_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration
+#graphify/document #graphify/EXTRACTED #community/AlertTelegramRelay

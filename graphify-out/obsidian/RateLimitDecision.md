@@ -12,7 +12,7 @@ tags:
 # RateLimitDecision
 
 ## Connections
-- [[.check()_2]] - `references` [EXTRACTED]
+- [[.check()_6]] - `references` [EXTRACTED]
 - [[Structured verdict returned by meth`RateLimitGuard.check`.]] - `rationale_for` [EXTRACTED]
 - [[rate_limit_guard.py]] - `contains` [EXTRACTED]
 

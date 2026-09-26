@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/v1.2/red-team-assessment-v1.2.0.md"
 type: "document"
-community: "Red Team Assessment v1.2.0"
+community: "AgentShroud Typography Guidelines"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Red_Team_Assessment_v120
+  - community/AgentShroud_Typography_Guidelines
 ---
 
 # Red Team Assessment v1.2.0
@@ -19,4 +19,4 @@ tags:
 - [[SharedMemoryManager Per-User Per-Bot Memory Isolation]] - `references` [EXTRACTED]
 - [[TrustManager Progressive Trust Scoring (5 Levels)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Red_Team_Assessment_v120
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Typography_Guidelines

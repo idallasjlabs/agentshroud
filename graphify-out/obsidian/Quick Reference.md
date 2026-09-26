@@ -1,19 +1,17 @@
 ---
-source_file: "docs/security/SECURITY_ARCHITECTURE.md"
+source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "AgentShroud Security Architecture"
-location: "L528"
+community: "app_main.c"
+location: "L319"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/app_mainc
 ---
 
 # Quick Reference
 
 ## Connections
-- [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
-- [[Emergency Procedures]] - `contains` [EXTRACTED]
-- [[Security Checklist]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/document #graphify/EXTRACTED #community/app_mainc

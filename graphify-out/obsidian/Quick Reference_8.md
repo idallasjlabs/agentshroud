@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "Quick Reference"
+community: "TestParseModeStrippedAfterPIIRedaction"
 location: "L257"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_Reference
+  - community/TestParseModeStrippedAfterPIIRedaction
 ---
 
 # Quick Reference
@@ -18,4 +18,4 @@ tags:
 - [[List Available Models]] - `contains` [EXTRACTED]
 - [[View Configured Providers]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_Reference
+#graphify/document #graphify/EXTRACTED #community/TestParseModeStrippedAfterPIIRedaction

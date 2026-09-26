@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/README.md"
 type: "document"
-community: "Community 1044"
+community: "HTTP_PROXY / HTTPS_PROXY"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1044
+  - community/HTTP_PROXY_/_HTTPS_PROXY
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[`docsplanning` — Index]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1044
+#graphify/document #graphify/EXTRACTED #community/HTTP_PROXY_/_HTTPS_PROXY

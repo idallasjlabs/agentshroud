@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sav/README.md"
 type: "document"
-community: "Community 1200"
+community: "SubagentMonitor._log_event"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1200
+  - community/SubagentMonitor_log_event
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[System Audit Vault_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1200
+#graphify/document #graphify/EXTRACTED #community/SubagentMonitor_log_event

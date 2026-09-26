@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-browser/README.md"
 type: "document"
-community: "Community 1143"
+community: "Available MCP Servers"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1143
+  - community/Available_MCP_Servers
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Browser — Secure Browser Automation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1143
+#graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers

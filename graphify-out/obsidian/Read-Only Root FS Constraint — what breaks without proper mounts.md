@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "rationale"
-community: "AgentShroud Security Verification (13-check driv"
+community: "DockerEngine"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/AgentShroud_Security_Verification_13-check_driv
+  - community/DockerEngine
 ---
 
 # Read-Only Root FS Constraint — what breaks without proper mounts
@@ -16,4 +16,4 @@ tags:
 - [[Phase 3 Container Security Hardening Baseline]] - `conceptually_related_to` [INFERRED]
 - [[toggle-readonly.sh mode switcher]] - `semantically_similar_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/AgentShroud_Security_Verification_13-check_driv
+#graphify/rationale #graphify/INFERRED #community/DockerEngine

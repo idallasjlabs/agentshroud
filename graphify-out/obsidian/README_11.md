@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-gg/README.md"
 type: "document"
-community: "Community 1149"
+community: "DNSFilterConfig"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1149
+  - community/DNSFilterConfig
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1149
+#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-pm/README.md"
 type: "document"
-community: "Community 1194"
+community: "AuditExporter"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1194
+  - community/AuditExporter
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Project Management (PM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1194
+#graphify/document #graphify/EXTRACTED #community/AuditExporter

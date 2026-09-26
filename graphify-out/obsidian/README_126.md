@@ -1,12 +1,12 @@
 ---
 source_file: "docs/testing/README.md"
 type: "document"
-community: "Community 1346"
+community: "AWS Cloud Management & FinOps"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1346
+  - community/AWS_Cloud_Management__FinOps
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Testing Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1346
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps

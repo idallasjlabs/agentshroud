@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mnemosyne/README.md"
 type: "document"
-community: "Community 1156"
+community: "Workflow: Survey → Draft → Inject → Confirm"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1156
+  - community/Workflow_Survey__Draft__Inject__Confirm
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mnemosyne — Retention Engineer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1156
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm

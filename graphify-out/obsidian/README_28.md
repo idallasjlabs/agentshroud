@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sav/README.md"
 type: "document"
-community: "Community 1161"
+community: "DNSFilterConfig"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1161
+  - community/DNSFilterConfig
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[System Audit Vault]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1161
+#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig

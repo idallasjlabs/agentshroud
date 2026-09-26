@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "rationale"
-community: "DeniedRequest"
+community: "TrustManager"
 location: "L102"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DeniedRequest
+  - community/TrustManager
 ---
 
 # Record of a denied approval request.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DeniedRequest]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DeniedRequest
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

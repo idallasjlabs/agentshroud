@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "ingest_api/main.py"
-location: "L1695"
+community: "InjectionSeverity"
+location: "L1708"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/InjectionSeverity
 ---
 
 # Receive structured security alerts from gateway-internal scripts.      Called by
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[receive_security_alert()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/InjectionSeverity

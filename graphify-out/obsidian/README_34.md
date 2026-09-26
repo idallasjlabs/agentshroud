@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ti/README.md"
 type: "document"
-community: "Community 944"
+community: "1. GitHub MCP Authentication Reset"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_944
+  - community/1_GitHub_MCP_Authentication_Reset
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_944
+#graphify/document #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset

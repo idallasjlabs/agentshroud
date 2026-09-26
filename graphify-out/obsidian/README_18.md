@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "Community 1154"
+community: "Available MCP Servers"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1154
+  - community/Available_MCP_Servers
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1154
+#graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers

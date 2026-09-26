@@ -1,17 +1,17 @@
 ---
-source_file: "README.md"
+source_file: "skills/openclaw/nano-pdf/SKILL.md"
 type: "document"
-community: "AgentShroud™ README"
-location: "L409"
+community: ".test_collaborator_sensitive_path_probe_shell_st"
+location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_README
+  - community/test_collaborator_sensitive_path_probe_shell_st
 ---
 
-# Quick Start
+# Quick start
 
 ## Connections
-- [[Documentation_1]] - `contains` [EXTRACTED]
+- [[nano-pdf]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_README
+#graphify/document #graphify/EXTRACTED #community/test_collaborator_sensitive_path_probe_shell_st

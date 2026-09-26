@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-oracle/README.md"
 type: "document"
-community: "Community 1157"
+community: "AgentShroud System Architecture Document (SAD)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1157
+  - community/AgentShroud_System_Architecture_Document_SAD
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1157
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Architecture_Document_SAD

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/red-team-assessment-v1.2.0.md"
 type: "concept"
-community: "Red Team Assessment v1.2.0"
+community: "AgentShroud Typography Guidelines"
 location: "§2 RT-MB2"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Red_Team_Assessment_v120
+  - community/AgentShroud_Typography_Guidelines
 ---
 
 # RT-MB2: Cross-Bot Shared Memory Leak (Fixed in PR)
@@ -15,4 +15,4 @@ tags:
 - [[Red Team Assessment v1.2.0]] - `references` [EXTRACTED]
 - [[SharedMemoryManager Per-User Per-Bot Memory Isolation]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Red_Team_Assessment_v120
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Typography_Guidelines

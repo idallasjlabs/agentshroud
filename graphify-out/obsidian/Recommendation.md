@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "SkillGuard"
+community: "Daedalus — Concept Illustrator"
 location: "L86"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SkillGuard
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Recommendation
 
 ## Connections
 - [[.recommendation()]] - `references` [EXTRACTED]
-- [[CompletedProcess_4]] - `uses` [INFERRED]
+- [[CompletedProcess_3]] - `uses` [INFERRED]
 - [[IntEnum]] - `inherits` [EXTRACTED]
-- [[Path_21]] - `uses` [INFERRED]
 - [[Path_22]] - `uses` [INFERRED]
-- [[ScanResult]] - `uses` [INFERRED]
-- [[ScanResult_2]] - `uses` [INFERRED]
-- [[SkillGuard]] - `uses` [INFERRED]
+- [[Path_38]] - `uses` [INFERRED]
+- [[ScanResult_3]] - `uses` [INFERRED]
+- [[ScanResult_4]] - `uses` [INFERRED]
+- [[SkillGuard_1]] - `uses` [INFERRED]
 - [[TestAggregation]] - `uses` [INFERRED]
 - [[TestCleanSkill]] - `uses` [INFERRED]
-- [[TestClient_1]] - `uses` [INFERRED]
+- [[TestClient]] - `uses` [INFERRED]
 - [[TestExecOfDownload]] - `uses` [INFERRED]
 - [[TestExfiltration]] - `uses` [INFERRED]
 - [[TestKnownMalicious]] - `uses` [INFERRED]
@@ -40,4 +40,4 @@ tags:
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 - [[test_skill_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SkillGuard
+#graphify/code #graphify/INFERRED #community/Daedalus__Concept_Illustrator

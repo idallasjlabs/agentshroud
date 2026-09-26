@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
 type: "concept"
-community: "Red Team Canary Values (FAKE_SSN, FAKE_KEY, Proj"
+community: "markmap-mcp-server (MCP server)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Red_Team_Canary_Values_FAKE_SSN_FAKE_KEY_Proj
+  - community/markmap-mcp-server_MCP_server
 ---
 
 # Red Team Canary Values (FAKE_SSN, FAKE_KEY, Project Nightingale)
 
-#graphify/concept #graphify/EXTRACTED #community/Red_Team_Canary_Values_FAKE_SSN_FAKE_KEY_Proj
+#graphify/concept #graphify/EXTRACTED #community/markmap-mcp-server_MCP_server

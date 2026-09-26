@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sec-offense/README.md"
 type: "document"
-community: "test_redteam_probes.py"
+community: "DockerEngine"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_redteam_probespy
+  - community/DockerEngine
 ---
 
 # Red Team Adversarial Tester README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Red Team Adversarial Tester (SEC-OFFENSE)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_redteam_probespy
+#graphify/document #graphify/EXTRACTED #community/DockerEngine

@@ -1,20 +1,22 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "TrustManager"
-location: "L71"
+community: "ResourceGuard"
+location: "L171"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TrustManager
+  - community/ResourceGuard
 ---
 
 # RedactionResult
 
 ## Connections
-- [[.sanitize_tool_result()]] - `references` [EXTRACTED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[RedactionResult_2]] - `uses` [INFERRED]
+- [[._sanitize_presidio()]] - `references` [EXTRACTED]
+- [[._sanitize_regex()]] - `references` [EXTRACTED]
+- [[.sanitize()]] - `references` [EXTRACTED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[RedactionDetail]] - `uses` [INFERRED]
+- [[RedactionResult]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/TrustManager
+#graphify/code #graphify/INFERRED #community/ResourceGuard

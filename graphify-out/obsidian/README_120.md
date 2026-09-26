@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/README.md"
 type: "document"
-community: "Community 442"
+community: "gateway.security.agent_cve_registry"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_442
+  - community/gatewaysecurityagent_cve_registry
 ---
 
 # README.md
@@ -21,4 +21,4 @@ tags:
 - [[07-team-planning]] - `references` [EXTRACTED]
 - [[AgentShroud — Diagram Library]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_442
+#graphify/document #graphify/EXTRACTED #community/gatewaysecurityagent_cve_registry

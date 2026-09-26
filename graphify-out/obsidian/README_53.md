@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-gg/README.md"
 type: "document"
-community: "Community 1183"
+community: "SECTION 2: MARK INFORMATION"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1183
+  - community/SECTION_2_MARK_INFORMATION
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1183
+#graphify/document #graphify/EXTRACTED #community/SECTION_2_MARK_INFORMATION

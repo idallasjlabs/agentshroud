@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "BaseModel"
+community: "main.rs"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BaseModel
+  - community/mainrs
 ---
 
 # RBACManager
 
 ## Connections
-- [[.__init__()_66]] - `references` [EXTRACTED]
+- [[.__init__()_129]] - `references` [EXTRACTED]
 - [[_get_rbac_manager()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BaseModel
+#graphify/code #graphify/EXTRACTED #community/mainrs

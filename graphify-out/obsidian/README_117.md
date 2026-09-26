@@ -1,12 +1,12 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "Community 221"
+community: "_stub_client()"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_221
+  - community/_stub_client
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_221
+#graphify/document #graphify/EXTRACTED #community/_stub_client

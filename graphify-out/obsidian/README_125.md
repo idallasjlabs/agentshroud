@@ -1,12 +1,12 @@
 ---
 source_file: "docs/requirements/README.md"
 type: "document"
-community: "Community 976"
+community: "Skill: Branding Specialist (BS)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_976
+  - community/Skill_Branding_Specialist_BS
 ---
 
 # README.md
@@ -15,4 +15,4 @@ tags:
 - [[README_124]] - `semantically_similar_to` [INFERRED]
 - [[Requirements Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Community_976
+#graphify/document #graphify/INFERRED #community/Skill_Branding_Specialist_BS

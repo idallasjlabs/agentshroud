@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "rationale"
-community: "Currently Unmitigable Residual Class"
+community: "pick_latest_hermes_tag()"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Currently_Unmitigable_Residual_Class
+  - community/pick_latest_hermes_tag
 ---
 
 # Reachability Context (cap_drop ALL, isolated network)
@@ -14,4 +14,4 @@ tags:
 - [[Currently Unmitigable Residual Class]] - `references` [EXTRACTED]
 - [[Voice Gateway Service (STTTTS on marvin)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Currently_Unmitigable_Residual_Class
+#graphify/rationale #graphify/INFERRED #community/pick_latest_hermes_tag

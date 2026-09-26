@@ -1,21 +1,17 @@
 ---
-source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "OpenClaw Bot SSH Configuration"
-location: "L375"
+community: "triage-cve-mitigations.py"
+location: "L319"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_SSH_Configuration
+  - community/triage-cve-mitigationspy
 ---
 
 # Quick Reference
 
 ## Connections
-- [[One-Liner to Add to Pi]] - `contains` [EXTRACTED]
-- [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
-- [[Public Key (Copy-Paste Ready)]] - `contains` [EXTRACTED]
-- [[Test Connection]] - `contains` [EXTRACTED]
-- [[🔐 Credentials in 1Password]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration
+#graphify/document #graphify/EXTRACTED #community/triage-cve-mitigationspy

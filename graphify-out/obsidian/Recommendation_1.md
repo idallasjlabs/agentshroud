@@ -1,12 +1,12 @@
 ---
 source_file: "docs/compliance/soc2-attestation-path.md"
 type: "document"
-community: "Recommendation"
+community: "AgentShroud Web Control Center - Implementation "
 location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Recommendation
+  - community/AgentShroud_Web_Control_Center_-_Implementation_
 ---
 
 # Recommendation
@@ -20,4 +20,4 @@ tags:
 - [[Phase Review P0 — Core Pipeline Wiring]] - `contains` [EXTRACTED]
 - [[SOC 2 Type II — Attestation Path & GoNo-Go Scoping]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Recommendation
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Web_Control_Center_-_Implementation_

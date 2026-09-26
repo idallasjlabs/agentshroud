@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/OPENCLAW_SETUP.md"
+source_file: "docs/security/security-supply-chain.md"
 type: "document"
-community: "OpenClaw Setup Guide - agentshroud.ai Bot"
-location: "L435"
+community: "Gateway Python Dependencies (`gateway/requiremen"
+location: "L116"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+  - community/Gateway_Python_Dependencies_gateway/requiremen
 ---
 
 # Recommendations
 
 ## Connections
-- [[Security Notes_1]] - `contains` [EXTRACTED]
+- [[Security Supply Chain Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+#graphify/document #graphify/EXTRACTED #community/Gateway_Python_Dependencies_gateway/requiremen

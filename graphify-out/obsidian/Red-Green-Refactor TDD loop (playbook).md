@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/Claude-Code-TDD-Playbook.md"
 type: "concept"
-community: "Red-Green-Refactor TDD loop (playbook)"
+community: "test_colima_and_sdk_patch_fallback_resolution.sh"
 location: "Section 5"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Red-Green-Refactor_TDD_loop_playbook
+  - community/test_colima_and_sdk_patch_fallback_resolutionsh
 ---
 
 # Red-Green-Refactor TDD loop (playbook)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GitHub workflow integration (gg → tdd → pr → ps)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Red-Green-Refactor_TDD_loop_playbook
+#graphify/concept #graphify/EXTRACTED #community/test_colima_and_sdk_patch_fallback_resolutionsh

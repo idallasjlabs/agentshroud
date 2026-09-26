@@ -1,23 +1,22 @@
 ---
-source_file: "gateway/tests/test_privacy_policy.py"
+source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "PrivacyPolicyEnforcer"
-location: "L26"
+community: "TelegramAPIProxy"
+location: "L28"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PrivacyPolicyEnforcer
+  - community/TelegramAPIProxy
 ---
 
 # RBACConfig
 
 ## Connections
-- [[PrivacyPolicy]] - `uses` [INFERRED]
-- [[PrivacyPolicyEnforcer]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
-- [[ServicePrivacy]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
+- [[ToolACLConfig]] - `uses` [INFERRED]
+- [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[_make_rbac()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/INFERRED #community/TelegramAPIProxy

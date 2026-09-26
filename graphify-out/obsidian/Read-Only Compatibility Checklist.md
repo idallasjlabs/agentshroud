@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Development Workflow: Read-Only Filesystem Strat"
+community: "AgentShroud Audit Specification"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Development_Workflow_Read-Only_Filesystem_Strat
+  - community/AgentShroud_Audit_Specification
 ---
 
 # Read-Only Compatibility Checklist
@@ -15,4 +15,4 @@ tags:
 - [[Development Workflow Read-Only Filesystem Strategy]] - `contains` [EXTRACTED]
 - [[For Each New Feature, Document]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Development_Workflow_Read-Only_Filesystem_Strat
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification
