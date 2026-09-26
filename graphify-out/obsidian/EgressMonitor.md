@@ -1,32 +1,32 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "lifespan.py"
+community: "TrustManager"
 location: "L85"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/lifespanpy
+  - community/TrustManager
 ---
 
 # EgressMonitor
 
 ## Connections
-- [[.__init__()_12]] - `calls` [EXTRACTED]
-- [[.__init__()_154]] - `calls` [EXTRACTED]
-- [[.__init__()_68]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_44]] - `calls` [EXTRACTED]
+- [[.__init__()_76]] - `method` [EXTRACTED]
 - [[.check_anomalies()]] - `method` [EXTRACTED]
 - [[.daily_summary()]] - `method` [EXTRACTED]
 - [[.get_events()_2]] - `method` [EXTRACTED]
 - [[.record()_1]] - `method` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[Any_2]] - `uses` [INFERRED]
-- [[Exception_1]] - `uses` [INFERRED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[Slow-drip  coordinated multi-channel exfiltration anomaly detection]] - `rationale_for` [EXTRACTED]
 - [[TestAlertGeneration]] - `uses` [INFERRED]
 - [[TestAnomalyDetection]] - `uses` [INFERRED]
@@ -34,11 +34,11 @@ tags:
 - [[TestEgressMonitorConfig]] - `uses` [INFERRED]
 - [[TestEventRecording]] - `uses` [INFERRED]
 - [[TestSlowDripDetection]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[ToolTier]] - `uses` [INFERRED]
 - [[egress_monitor.py]] - `contains` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[monitor()_1]] - `calls` [EXTRACTED]
+- [[monitor()]] - `calls` [EXTRACTED]
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/lifespanpy
+#graphify/code #graphify/INFERRED #community/TrustManager

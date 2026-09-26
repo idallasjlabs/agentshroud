@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "rationale"
-community: "TestEmailSend"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-P"
 location: "L136"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEmailSend
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P
 ---
 
 # Email to an allowed recipient returns 200 with status=approved.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_allowed_recipient_returns_200()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEmailSend
+#graphify/rationale #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P

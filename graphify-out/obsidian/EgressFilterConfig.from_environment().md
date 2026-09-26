@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
 type: "document"
-community: "egress_config.py"
+community: "System Audit & Documentation"
 location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_configpy
+  - community/System_Audit__Documentation
 ---
 
 # EgressFilterConfig.from_environment()
 
 ## Connections
-- [[Function Details_30]] - `contains` [EXTRACTED]
+- [[Function Details_34]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_configpy
+#graphify/document #graphify/EXTRACTED #community/System_Audit__Documentation

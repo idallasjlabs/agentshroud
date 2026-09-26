@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "ENTERPRISE GOVERNANCE PROXY SYSTEM AND METHOD FO"
+community: "Phase 1 — Raw Collection"
 location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ENTERPRISE_GOVERNANCE_PROXY_SYSTEM_AND_METHOD_FO
+  - community/Phase_1__Raw_Collection
 ---
 
 # ENTERPRISE GOVERNANCE PROXY SYSTEM AND METHOD FOR POLICY-ENFORCED INTERCEPTION, INSPECTION, AND MEDIATION OF AUTONOMOUS AI AGENT COMMUNICATIONS WITH EXTERNAL SYSTEMS
@@ -24,4 +24,4 @@ tags:
 - [[SECTION 2 WRITTEN DESCRIPTION OF THE INVENTION]] - `contains` [EXTRACTED]
 - [[SUMMARY OF THE INVENTION]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ENTERPRISE_GOVERNANCE_PROXY_SYSTEM_AND_METHOD_FO
+#graphify/document #graphify/EXTRACTED #community/Phase_1__Raw_Collection

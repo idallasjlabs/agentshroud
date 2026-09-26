@@ -1,17 +1,18 @@
 ---
-source_file: "skills/openclaw/xurl/SKILL.md"
+source_file: ".agents/skills/i-mac/SKILL.md"
 type: "document"
-community: "xurl — Agent Skill Reference"
-location: "L444"
+community: "AgentShroud v0.9.0"
+location: "L344"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/xurl__Agent_Skill_Reference
+  - community/AgentShroud_v090
 ---
 
 # Error Handling
 
 ## Connections
-- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
+- [[Mac App Discovery Skill]] - `contains` [EXTRACTED]
+- [[Mac App Discovery Skill_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v090

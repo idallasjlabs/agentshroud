@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "document"
-community: "config.py"
-location: "L43"
+community: "03-data.md"
+location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/configpy
+  - community/03-datamd
 ---
 
 # Environment Variables
 
 ## Connections
-- [[config.py_1]] - `contains` [EXTRACTED]
+- [[agentshroud-gateway_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/configpy
+#graphify/document #graphify/EXTRACTED #community/03-datamd

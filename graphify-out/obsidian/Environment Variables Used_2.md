@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "models.py"
-location: "L79"
+community: "TestNetworkValidator"
+location: "L433"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/modelspy
+  - community/TestNetworkValidator
 ---
 
 # Environment Variables Used
 
 ## Connections
-- [[models.py_1]] - `contains` [EXTRACTED]
+- [[main.py_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/modelspy
+#graphify/document #graphify/EXTRACTED #community/TestNetworkValidator

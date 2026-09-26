@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_replay.py"
 type: "rationale"
-community: "test_telegram_replay.py"
+community: "_sleep()"
 location: "L200"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_telegram_replaypy
+  - community/_sleep
 ---
 
 # Exception during execute in pull_undelivered must return empty list.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pull_undelivered_execute_exception_swallowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_telegram_replaypy
+#graphify/rationale #graphify/EXTRACTED #community/_sleep

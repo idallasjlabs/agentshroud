@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-socrates/SKILL.md"
 type: "document"
-community: "OKE Channel — CPA Exam Prep Dialogue Guidelines"
+community: "gh-issues — Auto-fix GitHub Issues with Parallel"
 location: "L149"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OKE_Channel__CPA_Exam_Prep_Dialogue_Guidelines
+  - community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel
 ---
 
 # Episode Closing (Mandatory for OKE)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OKE Channel — CPA Exam Prep Dialogue Guidelines]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OKE_Channel__CPA_Exam_Prep_Dialogue_Guidelines
+#graphify/document #graphify/EXTRACTED #community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel

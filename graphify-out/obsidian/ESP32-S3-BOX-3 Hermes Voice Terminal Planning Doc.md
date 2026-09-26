@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md"
 type: "document"
-community: "Voice Gateway Service (STT/TTS WebSocket Bridge "
+community: "AgentShroud Typography Guidelines"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Service_STT/TTS_WebSocket_Bridge_
+  - community/AgentShroud_Typography_Guidelines
 ---
 
 # ESP32-S3-BOX-3 Hermes Voice Terminal Planning Doc
@@ -15,4 +15,4 @@ tags:
 - [[PromptGuard Prompt Injection Defense (49 Patterns, 35+ Languages)]] - `references` [EXTRACTED]
 - [[Voice Gateway Service (STTTTS WebSocket Bridge to Governed Path)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Voice_Gateway_Service_STT/TTS_WebSocket_Bridge_
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Typography_Guidelines

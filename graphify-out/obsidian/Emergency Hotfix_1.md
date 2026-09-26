@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mc/SKILL.md"
+source_file: ".agents/skills/i-mc/SKILL.md"
 type: "document"
-community: "GSDE&G Development Master Checklist"
+community: "Skill: Security Review (SEC)"
 location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist
+  - community/Skill_Security_Review_SEC
 ---
 
 # Emergency Hotfix
 
 ## Connections
-- [[GSDE&G Development Master Checklist_1]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

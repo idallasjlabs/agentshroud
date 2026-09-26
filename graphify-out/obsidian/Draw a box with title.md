@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/text_control_center.py"
 type: "rationale"
-community: "ControlCenter"
+community: "TestNewPatternsV080"
 location: "L125"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ControlCenter
+  - community/TestNewPatternsV080
 ---
 
 # Draw a box with title
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.draw_box()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ControlCenter
+#graphify/rationale #graphify/EXTRACTED #community/TestNewPatternsV080

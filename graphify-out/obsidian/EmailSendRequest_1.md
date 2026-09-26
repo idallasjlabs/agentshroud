@@ -1,22 +1,19 @@
 ---
-source_file: "gateway/ingest_api/models.py"
+source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "forward.py"
-location: "L329"
+community: "RateLimiter"
+location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/forwardpy
+  - community/RateLimiter
 ---
 
 # EmailSendRequest
 
 ## Connections
-- [[.body_not_empty()]] - `method` [EXTRACTED]
-- [[.subject_not_empty()]] - `method` [EXTRACTED]
-- [[BaseModel]] - `inherits` [EXTRACTED]
-- [[Request to send an email through the gateway (P3 channel ownership).      The b]] - `rationale_for` [EXTRACTED]
-- [[forward.py]] - `imports` [EXTRACTED]
-- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[email_send()]] - `references` [EXTRACTED]
+- [[email_send_owner()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/forwardpy
+#graphify/code #graphify/EXTRACTED #community/RateLimiter

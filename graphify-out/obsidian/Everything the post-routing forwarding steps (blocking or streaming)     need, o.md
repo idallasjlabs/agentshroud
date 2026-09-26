@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "rationale"
-community: "_process_inbound()"
+community: "RateLimiter"
 location: "L370"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_process_inbound
+  - community/RateLimiter
 ---
 
 # Everything the post-routing forwarding steps (blocking or streaming)     need, o
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_InboundResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_process_inbound
+#graphify/rationale #graphify/EXTRACTED #community/RateLimiter

@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mac/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
 type: "document"
-community: "Mac App Discovery Skill"
+community: "AgentShroud v0.9.0"
 location: "L344"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mac_App_Discovery_Skill
+  - community/AgentShroud_v090
 ---
 
 # Error Handling
 
 ## Connections
 - [[Mac App Discovery Skill_1]] - `contains` [EXTRACTED]
-- [[Mac App Discovery Skill_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v090

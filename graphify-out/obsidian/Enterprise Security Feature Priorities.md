@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/redteam/feature-priorities.md"
 type: "document"
-community: "AgentShroud v0.7.0 — Red Team Remediation Plan"
+community: "Hermes Agent — Connection Setup"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v070__Red_Team_Remediation_Plan
+  - community/Hermes_Agent__Connection_Setup
 ---
 
 # Enterprise Security Feature Priorities
@@ -16,4 +16,4 @@ tags:
 - [[Outbound Information Filter Planning]] - `references` [EXTRACTED]
 - [[Separation of Privilege Planning]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070__Red_Team_Remediation_Plan
+#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup

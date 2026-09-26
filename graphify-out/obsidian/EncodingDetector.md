@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "TrustManager"
+community: "EgressFilter"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/EgressFilter
 ---
 
 # EncodingDetector
 
 ## Connections
-- [[.__init__()_94]] - `method` [EXTRACTED]
-- [[.analyze()]] - `method` [EXTRACTED]
+- [[.__init__()_77]] - `method` [EXTRACTED]
+- [[.analyze()_1]] - `method` [EXTRACTED]
 - [[.decode_base64_segments()]] - `method` [EXTRACTED]
 - [[.decode_hex()]] - `method` [EXTRACTED]
 - [[.decode_rot13()]] - `method` [EXTRACTED]
 - [[.decode_url()]] - `method` [EXTRACTED]
 - [[.replace_homoglyphs()]] - `method` [EXTRACTED]
-- [[.setup_method()_22]] - `calls` [EXTRACTED]
+- [[.setup_method()_5]] - `calls` [EXTRACTED]
 - [[.strip_zero_width()]] - `method` [EXTRACTED]
 - [[.test_config_disable_base64()]] - `calls` [EXTRACTED]
 - [[PIISanitizer_3]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
-- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
+- [[SecurityPipeline]] - `calls` [EXTRACTED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[TestE2E01PromptGuardBlocking]] - `uses` [INFERRED]
 - [[TestE2E02InboundPIIRedaction]] - `uses` [INFERRED]
@@ -41,13 +41,13 @@ tags:
 - [[_BrokenOutputCanary]] - `uses` [INFERRED]
 - [[_BrokenSanitizer]] - `uses` [INFERRED]
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
-- [[_make_pipeline()_1]] - `calls` [EXTRACTED]
+- [[_make_pipeline()_4]] - `calls` [EXTRACTED]
 - [[encoding_detector.py]] - `contains` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
+- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[pipeline()_1]] - `calls` [EXTRACTED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
 - [[test_encoding_detector.py]] - `imports` [EXTRACTED]
 - [[test_encoding_detector_decodes_rot13_injection()]] - `calls` [EXTRACTED]
@@ -58,4 +58,4 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

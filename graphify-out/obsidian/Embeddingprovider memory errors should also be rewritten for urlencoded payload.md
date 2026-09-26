@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "scanner_integration.py"
 location: "L1465"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/scanner_integrationpy
 ---
 
 # Embedding/provider memory errors should also be rewritten for urlencoded payload
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_memory_provider_error_is_rewritten_for_form_payload()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/scanner_integrationpy

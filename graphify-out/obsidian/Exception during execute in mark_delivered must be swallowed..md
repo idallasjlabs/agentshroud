@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_replay.py"
 type: "rationale"
-community: "test_telegram_replay.py"
+community: "_sleep()"
 location: "L190"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_telegram_replaypy
+  - community/_sleep
 ---
 
 # Exception during execute in mark_delivered must be swallowed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_mark_delivered_execute_exception_swallowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_telegram_replaypy
+#graphify/rationale #graphify/EXTRACTED #community/_sleep

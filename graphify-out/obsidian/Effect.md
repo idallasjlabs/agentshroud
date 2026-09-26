@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md"
+source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
 type: "document"
-community: "TELEGRAM_API_BASE_URL"
+community: "lvgl_kawaii_face.c"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TELEGRAM_API_BASE_URL
+  - community/lvgl_kawaii_facec
 ---
 
 # Effect
 
 ## Connections
-- [[TELEGRAM_API_BASE_URL_1]] - `contains` [EXTRACTED]
+- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TELEGRAM_API_BASE_URL
+#graphify/document #graphify/EXTRACTED #community/lvgl_kawaii_facec

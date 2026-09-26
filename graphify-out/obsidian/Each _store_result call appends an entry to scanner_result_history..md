@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "rationale"
-community: "TestStartupScannerKeying"
+community: "Apollo — Audio Systems Producer"
 location: "L443"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestStartupScannerKeying
+  - community/Apollo__Audio_Systems_Producer
 ---
 
 # Each _store_result call appends an entry to scanner_result_history.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_history_accumulates_all_entries()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestStartupScannerKeying
+#graphify/rationale #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer

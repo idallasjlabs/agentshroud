@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "172"
+community: "ConsentFramework"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/ConsentFramework
 ---
 
 # EgressFilterConfig
@@ -17,13 +17,13 @@ tags:
 - [[.get_effective_allowlist()]] - `method` [EXTRACTED]
 - [[.is_denylisted()]] - `method` [EXTRACTED]
 - [[.matches_allowlist()]] - `method` [EXTRACTED]
-- [[.setup_method()_14]] - `calls` [EXTRACTED]
+- [[.setup_method()_29]] - `calls` [EXTRACTED]
 - [[.test_allow_is_not_persisted_to_audit_store()]] - `calls` [EXTRACTED]
 - [[.test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - `calls` [EXTRACTED]
 - [[.test_config_roundtrip()]] - `calls` [EXTRACTED]
 - [[.test_connect_proxy_policy_allows_smtp_gmail_465()]] - `calls` [EXTRACTED]
 - [[.test_connect_proxy_policy_allows_smtp_mail_me_587()]] - `calls` [EXTRACTED]
-- [[.test_default_config()_4]] - `calls` [EXTRACTED]
+- [[.test_default_config()_1]] - `calls` [EXTRACTED]
 - [[.test_deny_all_false()]] - `calls` [EXTRACTED]
 - [[.test_deny_is_persisted_to_audit_store()]] - `calls` [EXTRACTED]
 - [[.test_denylist_monitor_mode()]] - `calls` [EXTRACTED]
@@ -42,19 +42,20 @@ tags:
 - [[.test_per_agent_policy()]] - `calls` [EXTRACTED]
 - [[.test_port_filtering()]] - `calls` [EXTRACTED]
 - [[.test_private_ip_blocking()]] - `calls` [EXTRACTED]
-- [[.test_url_parsing()_1]] - `calls` [EXTRACTED]
+- [[.test_url_parsing()]] - `calls` [EXTRACTED]
 - [[.test_wildcard_allowlist_matching()]] - `calls` [EXTRACTED]
 - [[Configuration for egress filtering enforcement.]] - `rationale_for` [EXTRACTED]
 - [[EgressAction]] - `uses` [INFERRED]
 - [[EgressAttempt]] - `uses` [INFERRED]
+- [[EgressFilter_2]] - `uses` [INFERRED]
 - [[EgressFilter_1]] - `uses` [INFERRED]
-- [[EgressFilter]] - `uses` [INFERRED]
 - [[EgressFilterConfig_1]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[FakeAuditStore]] - `uses` [INFERRED]
-- [[OpenClaw researchweb_search domains pre-approved after 210-denial SOC saturation incident]] - `rationale_for` [EXTRACTED]
+- [[PERMANENT_EGRESS_DOMAINS]] - `shares_data_with` [EXTRACTED]
+- [[PERMANENT_EGRESS_DOMAINS canonical allowlist]] - `shares_data_with` [EXTRACTED]
 - [[PIISanitizer_3]] - `uses` [INFERRED]
-- [[SecurityPipeline_2]] - `uses` [INFERRED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAuditStorePersistence]] - `uses` [INFERRED]
 - [[TestDRYOwnerChatID]] - `uses` [INFERRED]
@@ -91,16 +92,16 @@ tags:
 - [[TestTrustManagerHardened]] - `uses` [INFERRED]
 - [[TestURLParsing]] - `uses` [INFERRED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder_1]] - `uses` [INFERRED]
+- [[_StubForwarder_2]] - `uses` [INFERRED]
 - [[_make_deny_all_filter()]] - `calls` [EXTRACTED]
 - [[_make_filter()]] - `calls` [EXTRACTED]
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
-- [[domain_matches]] - `calls` [EXTRACTED]
-- [[egress_config.py]] - `contains` [EXTRACTED]
+- [[domain_matches()]] - `calls` [EXTRACTED]
+- [[egress_config.py]] - `references` [EXTRACTED]
 - [[egress_filter()]] - `calls` [EXTRACTED]
 - [[egress_filter()_1]] - `calls` [EXTRACTED]
-- [[egress_filter.py_1]] - `imports` [EXTRACTED]
-- [[get_egress_config]] - `references` [EXTRACTED]
+- [[egress_filter.py]] - `imports` [EXTRACTED]
+- [[get_egress_config()]] - `shares_data_with` [EXTRACTED]
 - [[management.py]] - `imports` [EXTRACTED]
 - [[set_egress_config()]] - `references` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
@@ -115,4 +116,4 @@ tags:
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 - [[update_egress_allowlist()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-p0-2026-02-23.md"
 type: "document"
-community: "Phase Review: P0 — Core Pipeline Wiring"
+community: "AgentShroud Prerequisites"
 location: "L173"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_Review_P0__Core_Pipeline_Wiring
+  - community/AgentShroud_Prerequisites
 ---
 
 # Estimated Fix Time: 4-6 hours
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[5. Merge Readiness Assessment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_Review_P0__Core_Pipeline_Wiring
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites

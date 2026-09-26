@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "EncryptedStore"
+community: "GroupApprovalRouter"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/GroupApprovalRouter
 ---
 
 # EnvironmentLeakage
@@ -16,4 +16,4 @@ tags:
 - [[Detected environment variable leakage.]] - `rationale_for` [EXTRACTED]
 - [[env_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EncryptedStore
+#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter

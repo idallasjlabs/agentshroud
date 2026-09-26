@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
+source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
 type: "document"
-community: "env_guard.py"
-location: "L100"
+community: "EU AI Act & NIST Alignment Matrix — AgentShroud™"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/env_guardpy
+  - community/EU_AI_Act__NIST_Alignment_Matrix__AgentShroud
 ---
 
 # Environment Variables
 
 ## Connections
-- [[env_guard.py_2]] - `contains` [EXTRACTED]
+- [[port_manager.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/env_guardpy
+#graphify/document #graphify/EXTRACTED #community/EU_AI_Act__NIST_Alignment_Matrix__AgentShroud

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "Route map (by router)"
+community: "Known Log Messages"
 location: "L60"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Route_map_by_router
+  - community/Known_Log_Messages
 ---
 
 # Egress control
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Route map (by router)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Route_map_by_router
+#graphify/document #graphify/EXTRACTED #community/Known_Log_Messages

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
 type: "document"
-community: "router.py"
-location: "L67"
+community: "Docker Commands Reference"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/routerpy
+  - community/Docker_Commands_Reference
 ---
 
 # Environment Variables Used
 
 ## Connections
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[ssh_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/routerpy
+#graphify/document #graphify/EXTRACTED #community/Docker_Commands_Reference

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "rationale"
-community: "forward.py"
+community: "RateLimiter"
 location: "L177"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/forwardpy
+  - community/RateLimiter
 ---
 
 # Email send gateway (P3: channel ownership).      The bot submits email send requ
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[email_send()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/forwardpy
+#graphify/rationale #graphify/EXTRACTED #community/RateLimiter

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "lifespan.py"
+community: "TrustManager"
 location: "L1040"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/TrustManager
 ---
 
 # Enforce per-user, per-bot session isolation rules.          Each (user_id, bot_i
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._enforce_session_isolation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

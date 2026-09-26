@@ -1,11 +1,11 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "concept"
-community: "Enterprise Governance Proxy System (invention)"
+community: "DNSForwarderProtocol"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Enterprise_Governance_Proxy_System_invention
+  - community/DNSForwarderProtocol
 ---
 
 # Enterprise Governance Proxy System (invention)
@@ -20,4 +20,4 @@ tags:
 - [[Transparent Interception Architecture]] - `conceptually_related_to` [EXTRACTED]
 - [[Trust-Differentiated Processing (RBAC tiers)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Enterprise_Governance_Proxy_System_invention
+#graphify/concept #graphify/EXTRACTED #community/DNSForwarderProtocol

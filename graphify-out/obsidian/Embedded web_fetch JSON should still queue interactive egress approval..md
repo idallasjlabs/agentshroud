@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "gateway-start.sh"
 location: "L2576"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/gateway-startsh
 ---
 
 # Embedded web_fetch JSON should still queue interactive egress approval.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_embedded_web_fetch_json_queues_approval_when_available()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/gateway-startsh

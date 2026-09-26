@@ -1,17 +1,19 @@
 ---
-source_file: "docs/security/SECURITY_ARCHITECTURE.md"
+source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "AgentShroud Security Architecture"
-location: "L541"
+community: "package_skill()"
+location: "L252"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/package_skill
 ---
 
 # Emergency Procedures
 
 ## Connections
-- [[Quick Reference]] - `contains` [EXTRACTED]
+- [[Emergency Contacts]] - `contains` [EXTRACTED]
+- [[GSDE&G Skills Reference]] - `contains` [EXTRACTED]
+- [[P1 Incident Response]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/document #graphify/EXTRACTED #community/package_skill

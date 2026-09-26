@@ -1,19 +1,17 @@
 ---
-source_file: ".github/agents/validation-runner.agent.md"
+source_file: ".agents/skills/i-apollo/SKILL.md"
 type: "document"
-community: "Validation Runner Specialist"
-location: "L177"
+community: "_mock_dir_with_fresh_files()"
+location: "L121"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Validation_Runner_Specialist
+  - community/_mock_dir_with_fresh_files
 ---
 
 # Error Handling
 
 ## Connections
-- [[Validation Runner Specialist]] - `contains` [EXTRACTED]
-- [[When Environment Issues]] - `contains` [EXTRACTED]
-- [[When Validation Fails]] - `contains` [EXTRACTED]
+- [[Technical Specification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Validation_Runner_Specialist
+#graphify/document #graphify/EXTRACTED #community/_mock_dir_with_fresh_files

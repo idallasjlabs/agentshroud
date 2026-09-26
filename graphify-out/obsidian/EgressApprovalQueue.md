@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "EgressApprovalQueue"
+community: "ReportStore"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressApprovalQueue
+  - community/ReportStore
 ---
 
 # EgressApprovalQueue
 
 ## Connections
-- [[.__init__()_191]] - `method` [EXTRACTED]
+- [[.__init__()_74]] - `method` [EXTRACTED]
 - [[._append_decision()]] - `method` [EXTRACTED]
 - [[._assess_risk()]] - `method` [EXTRACTED]
 - [[._check_existing_rule()]] - `method` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[.add_rule()]] - `method` [EXTRACTED]
 - [[.approval_queue()]] - `calls` [EXTRACTED]
 - [[.approve()]] - `method` [EXTRACTED]
-- [[.cleanup_expired()_3]] - `method` [EXTRACTED]
+- [[.cleanup_expired()_2]] - `method` [EXTRACTED]
 - [[.deny()]] - `method` [EXTRACTED]
 - [[.get_all_rules()]] - `method` [EXTRACTED]
 - [[.get_decision_log()]] - `method` [EXTRACTED]
@@ -36,16 +36,16 @@ tags:
 - [[.request_approval()]] - `method` [EXTRACTED]
 - [[.revoke_decision()]] - `method` [EXTRACTED]
 - [[.set_emergency_block_all()]] - `method` [EXTRACTED]
-- [[.set_event_bus()_2]] - `method` [EXTRACTED]
-- [[DelegationManager_1]] - `semantically_similar_to` [INFERRED]
+- [[.set_event_bus()_1]] - `method` [EXTRACTED]
+- [[DelegationManager]] - `semantically_similar_to` [INFERRED]
 - [[EgressRule]] - `shares_data_with` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `shares_data_with` [INFERRED]
+- [[TelegramAPIProxy]] - `shares_data_with` [INFERRED]
 - [[TestEgressApprovalAPI]] - `uses` [INFERRED]
 - [[TestEgressApprovalQueue]] - `uses` [INFERRED]
 - [[Thread-safe asyncio queue for managing egress approval requests.      Features]] - `rationale_for` [EXTRACTED]
 - [[egress_approval.py]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
+- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_egress_approval.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/ReportStore

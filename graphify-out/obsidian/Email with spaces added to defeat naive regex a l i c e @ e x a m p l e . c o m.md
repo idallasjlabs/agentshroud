@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "rationale"
-community: "DifferentialPIIDetector"
+community: "test_soc_router_coverage.py"
 location: "L305"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/test_soc_router_coveragepy
 ---
 
 # Email with spaces added to defeat naive regex: a l i c e @ e x a m p l e . c o m
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_spaced_email_caught_in_tool_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/rationale #graphify/EXTRACTED #community/test_soc_router_coveragepy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "lifespan.py"
+community: "apply-patches.js (OpenClaw)"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/lifespanpy
+  - community/apply-patchesjs_OpenClaw
 ---
 
 # EgressEvent
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.get_events()_2]] - `references` [EXTRACTED]
 - [[.record()_1]] - `references` [EXTRACTED]
-- [[.scan_response()_2]] - `calls` [EXTRACTED]
+- [[.scan_response()]] - `calls` [EXTRACTED]
 - [[.test_alert_has_description()]] - `calls` [EXTRACTED]
 - [[.test_alert_has_severity()]] - `calls` [EXTRACTED]
 - [[.test_alert_monitor_mode_no_block()]] - `calls` [EXTRACTED]
@@ -31,11 +31,11 @@ tags:
 - [[MockEgressEvent]] - `shares_data_with` [AMBIGUOUS]
 - [[TestAlertGeneration]] - `uses` [INFERRED]
 - [[TestAnomalyDetection]] - `uses` [INFERRED]
-- [[TestAuditTrail]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[TestAuditTrail_1]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard]] - `uses` [INFERRED]
+- [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestDailySummary]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
@@ -54,7 +54,7 @@ tags:
 - [[TestPromptGuard]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestSlowDripDetection]] - `uses` [INFERRED]
-- [[TestSupplyChain]] - `uses` [INFERRED]
+- [[TestSupplyChain_1]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
 - [[egress_monitor.py]] - `contains` [EXTRACTED]
@@ -62,4 +62,4 @@ tags:
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/lifespanpy
+#graphify/code #graphify/INFERRED #community/apply-patchesjs_OpenClaw

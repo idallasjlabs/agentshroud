@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "TrustManager"
+community: "EgressFilter"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/EgressFilter
 ---
 
 # EncodingResult
 
 ## Connections
-- [[.analyze()]] - `calls` [EXTRACTED]
+- [[.analyze()_1]] - `calls` [EXTRACTED]
 - [[encoding_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

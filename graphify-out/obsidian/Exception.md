@@ -1,32 +1,32 @@
 ---
-source_file: "gateway/ingest_api/main.py"
+source_file: ""
 type: "code"
-community: "ingest_api/main.py"
-location: "L392"
+community: "test_scorecard_integrity.py"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ingest_api/mainpy
+  - graphify/EXTRACTED
+  - community/test_scorecard_integritypy
 ---
 
 # Exception
 
 ## Connections
-- [[.test_forward_middleware_error_handling()]] - `calls` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[ApprovalMode]] - `uses` [INFERRED]
-- [[ApprovalRequest_2]] - `uses` [INFERRED]
-- [[AuditExportConfig]] - `uses` [INFERRED]
-- [[AuditExporter]] - `uses` [INFERRED]
-- [[LedgerEntry]] - `uses` [INFERRED]
-- [[LedgerQueryResponse]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[SSHExecRequest]] - `uses` [INFERRED]
-- [[SSHExecResponse]] - `uses` [INFERRED]
-- [[SSHWriteFileRequest]] - `uses` [INFERRED]
-- [[SSHWriteFileResponse]] - `uses` [INFERRED]
+- [[ConfigValidationError]] - `inherits` [EXTRACTED]
+- [[CredentialEntryBlocked]] - `inherits` [EXTRACTED]
+- [[ForwardError]] - `inherits` [EXTRACTED]
+- [[OAuthError]] - `inherits` [EXTRACTED]
+- [[PhishingURLDetected]] - `inherits` [EXTRACTED]
+- [[ReportIntegrityError]] - `inherits` [EXTRACTED]
+- [[RouterError]] - `inherits` [EXTRACTED]
+- [[SecurityError]] - `inherits` [EXTRACTED]
+- [[SecurityError_1]] - `inherits` [EXTRACTED]
+- [[SecurityError_2]] - `inherits` [EXTRACTED]
+- [[SecurityError_3]] - `inherits` [EXTRACTED]
+- [[SessionError]] - `inherits` [EXTRACTED]
+- [[SkillGuardBlocked]] - `inherits` [EXTRACTED]
+- [[SocialEngineeringDetected]] - `inherits` [EXTRACTED]
+- [[VRAMHeadroomError]] - `inherits` [EXTRACTED]
 - [[global_exception_handler()]] - `references` [EXTRACTED]
+- [[test_broadcast_with_failed_client()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/test_scorecard_integritypy

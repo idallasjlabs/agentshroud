@@ -1,20 +1,17 @@
 ---
-source_file: "README.md"
+source_file: "branding/INDEX.md"
 type: "document"
-community: "AgentShroud™ README"
-location: "L407"
+community: "Atlas — Curriculum Architect"
+location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_README
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Documentation
 
 ## Connections
-- [[AgentShroud™ README]] - `contains` [EXTRACTED]
-- [[Development Resources]] - `contains` [EXTRACTED]
-- [[Quick Start_1]] - `contains` [EXTRACTED]
-- [[Technical Documentation]] - `contains` [EXTRACTED]
+- [[🎨 Quick Access]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_README
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

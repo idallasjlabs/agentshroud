@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: ".test_collaborator_plugin_discovery_request_is_b"
+community: "bsp_iot_button_create()"
 location: "L4052"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_plugin_discovery_request_is_b
+  - community/bsp_iot_button_create
 ---
 
 # Encoded exfiltration prompts should be blocked and quarantined.
@@ -15,4 +15,4 @@ tags:
 - [[.test_collaborator_encoded_exfil_request_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
 - [[.test_collaborator_plugin_discovery_request_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_plugin_discovery_request_is_b
+#graphify/rationale #graphify/EXTRACTED #community/bsp_iot_button_create

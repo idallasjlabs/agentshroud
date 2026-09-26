@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "code"
-community: "SessionManager"
+community: "test_dashboard.py"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/test_dashboardpy
 ---
 
 # DocumentTag
@@ -20,4 +20,4 @@ tags:
 - [[metadata_guard.py]] - `contains` [EXTRACTED]
 - [[test_metadata_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "document"
-community: "Community 785"
+community: "AppleContainerEngine"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_785
+  - community/AppleContainerEngine
 ---
 
 # ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook
@@ -29,4 +29,4 @@ tags:
 - [[SETUP]] - `contains` [EXTRACTED]
 - [[What you're building]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_785
+#graphify/document #graphify/EXTRACTED #community/AppleContainerEngine

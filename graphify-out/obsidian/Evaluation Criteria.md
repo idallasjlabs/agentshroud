@@ -1,17 +1,17 @@
 ---
 source_file: "docs/architecture/adr/ADR-002-default-allow-security-philosophy.md"
 type: "document"
-community: "ADR-002: Default-Allow Security Philosophy"
+community: "Weather Skill"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-002_Default-Allow_Security_Philosophy
+  - community/Weather_Skill
 ---
 
 # Evaluation Criteria
 
 ## Connections
-- [[Context_6]] - `contains` [EXTRACTED]
+- [[Context_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-002_Default-Allow_Security_Philosophy
+#graphify/document #graphify/EXTRACTED #community/Weather_Skill

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.9/v0.9.0-testing-guide.md"
 type: "document"
-community: "AgentShroud v0.9.0 — Human Interface Testing Gui"
+community: "Security Module Inventory"
 location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v090__Human_Interface_Testing_Gui
+  - community/Security_Module_Inventory
 ---
 
 # Egress Tab
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Dashboard Tabs to Verify]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v090__Human_Interface_Testing_Gui
+#graphify/document #graphify/EXTRACTED #community/Security_Module_Inventory

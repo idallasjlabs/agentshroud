@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md"
 type: "document"
-community: "Egress Filter Errors"
+community: "TestGroupMemoryInvisibleFromDM"
 location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Egress_Filter_Errors
+  - community/TestGroupMemoryInvisibleFromDM
 ---
 
 # Egress Filter Not Initialized
 
 ## Connections
-- [[Egress Filter Errors_2]] - `contains` [EXTRACTED]
+- [[Egress Filter Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Egress_Filter_Errors
+#graphify/document #graphify/EXTRACTED #community/TestGroupMemoryInvisibleFromDM
