@@ -1,22 +1,21 @@
 ---
-source_file: "skills/custom/securebrowser/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "SecureBrowser - Enterprise Secure Browser Automa"
-location: "L317"
+community: "triage-cve-mitigations.py"
+location: "L246"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automa
+  - community/triage-cve-mitigationspy
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Action requires approval but none granted_1]] - `contains` [EXTRACTED]
-- [[Browser timeout_2]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected_2]] - `contains` [EXTRACTED]
-- [[Rate limit exceeded_1]] - `contains` [EXTRACTED]
-- [[URL not in allowlist_2]] - `contains` [EXTRACTED]
-- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
+- [[Access Denied_2]] - `contains` [EXTRACTED]
+- [[Token expired (SSO)_2]] - `contains` [EXTRACTED]
+- [[Unable to locate credentials_2]] - `contains` [EXTRACTED]
+- [[MCP Not Using Profile_2]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automa
+#graphify/document #graphify/EXTRACTED #community/triage-cve-mitigationspy

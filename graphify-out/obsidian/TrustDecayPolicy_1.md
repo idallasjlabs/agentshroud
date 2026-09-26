@@ -17,12 +17,12 @@ tags:
 - [[.test_zero_decay_fraction_rejected()]] - `calls` [EXTRACTED]
 - [[.test_zero_max_depth_rejected()]] - `calls` [EXTRACTED]
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
-- [[CrossBotTrustLedger_1]] - `uses` [INFERRED]
+- [[CrossBotTrustLedger]] - `uses` [INFERRED]
 - [[IncidentRecord]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustDecayPolicy]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
-- [[ledger()_2]] - `references` [EXTRACTED]
+- [[TrustManager_1]] - `uses` [INFERRED]
+- [[ledger()_1]] - `references` [EXTRACTED]
 - [[policy()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/TrustConfig

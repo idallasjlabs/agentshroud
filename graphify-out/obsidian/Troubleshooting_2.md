@@ -1,21 +1,21 @@
 ---
-source_file: ".github/COPILOT_CLI_SETUP.md"
+source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "GitHub Copilot CLI Setup Guide"
-location: "L381"
+community: "app_main.c"
+location: "L246"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Copilot_CLI_Setup_Guide
+  - community/app_mainc
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Agent Not Found]] - `contains` [EXTRACTED]
-- [[Authentication Issues_1]] - `contains` [EXTRACTED]
-- [[Configuration Not Loading]] - `contains` [EXTRACTED]
-- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
-- [[Path Permission Denied]] - `contains` [EXTRACTED]
+- [[Access Denied]] - `contains` [EXTRACTED]
+- [[Token expired (SSO)]] - `contains` [EXTRACTED]
+- [[Unable to locate credentials]] - `contains` [EXTRACTED]
+- [[MCP Not Using Profile]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/app_mainc

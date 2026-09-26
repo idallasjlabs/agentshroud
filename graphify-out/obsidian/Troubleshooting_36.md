@@ -1,17 +1,22 @@
 ---
-source_file: "docs/reference/QUICK_REFERENCE.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Quick Reference Commands"
-location: "L80"
+community: "What Does OpenClaw Actually Need to Write?"
+location: "L293"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_Reference_Commands
+  - community/What_Does_OpenClaw_Actually_Need_to_Write
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Quick Reference Commands]] - `contains` [EXTRACTED]
+- [[Approval required but none granted]] - `contains` [EXTRACTED]
+- [[Browser timeout_3]] - `contains` [EXTRACTED]
+- [[CAPTCHA detected_3]] - `contains` [EXTRACTED]
+- [[Credential extraction blocked]] - `contains` [EXTRACTED]
+- [[URL not in allowlist_3]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_Reference_Commands
+#graphify/document #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write

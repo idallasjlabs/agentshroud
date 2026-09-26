@@ -1,20 +1,20 @@
 ---
-source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
+source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Kill Switch"
-location: "L277"
+community: "Browser — Secure Browser Automation (SKILL)"
+location: "L333"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Kill_Switch
+  - community/Browser__Secure_Browser_Automation_SKILL
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
-- [[killswitch.sh doesn't confirm]] - `contains` [EXTRACTED]
-- [[scan.sh reports missing OpenSCAP]] - `contains` [EXTRACTED]
-- [[verify-security.sh fails]] - `contains` [EXTRACTED]
+- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
+- [[Problem pairing required but no pending requests]] - `contains` [EXTRACTED]
+- [[Problem Approved device still can't connect]] - `contains` [EXTRACTED]
+- [[Problem Too many pending requests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Kill_Switch
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL

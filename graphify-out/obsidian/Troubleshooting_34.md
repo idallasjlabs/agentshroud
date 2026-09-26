@@ -1,20 +1,17 @@
 ---
-source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
+source_file: "shortcuts/README.md"
 type: "document"
-community: "OpenClaw Control UI Pairing Instructions"
-location: "L53"
+community: "ADR-001: Transparent Proxy vs Agent Modification"
+location: "L291"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Control_UI_Pairing_Instructions
+  - community/ADR-001_Transparent_Proxy_vs_Agent_Modification
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Cannot save token]] - `contains` [EXTRACTED]
-- [[OpenClaw Control UI Pairing Instructions]] - `contains` [EXTRACTED]
-- [[Still shows pairing required]] - `contains` [EXTRACTED]
-- [[Token field not visible]] - `contains` [EXTRACTED]
+- [[iOS  macOS Shortcuts — Relay to AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Control_UI_Pairing_Instructions
+#graphify/document #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_vs_Agent_Modification

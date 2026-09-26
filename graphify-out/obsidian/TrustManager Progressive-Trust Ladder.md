@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "concept"
-community: "AgentShroud Changelog"
+community: "mcp-proxy-wrapper.js"
 location: "## [1.5.0]"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Changelog
+  - community/mcp-proxy-wrapperjs
 ---
 
 # TrustManager Progressive-Trust Ladder
@@ -15,4 +15,4 @@ tags:
 - [[A2A Governance (A2APolicyEngine  A2AProxy)]] - `conceptually_related_to` [EXTRACTED]
 - [[AgentShroud Changelog]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Changelog
+#graphify/concept #graphify/EXTRACTED #community/mcp-proxy-wrapperjs

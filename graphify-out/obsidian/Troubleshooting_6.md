@@ -1,21 +1,17 @@
 ---
-source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
+source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "OpenClaw Bot SSH Configuration"
-location: "L242"
+community: "Credential Isolation — Gateway op-proxy (ACTIVE)"
+location: "L211"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_SSH_Configuration
+  - community/Credential_Isolation__Gateway_op-proxy_ACTIVE
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
-- [[Problem Bad owner or permissions on ~.sshconfig]] - `contains` [EXTRACTED]
-- [[Problem Connection timeout]] - `contains` [EXTRACTED]
-- [[Problem Host key verification failed]] - `contains` [EXTRACTED]
-- [[Problem Permission denied (publickey)]] - `contains` [EXTRACTED]
+- [[Credential Management - 1Password Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration
+#graphify/document #graphify/EXTRACTED #community/Credential_Isolation__Gateway_op-proxy_ACTIVE

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: ".analyze_tool_call()"
+community: "GroupRoleResolver"
 location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/analyze_tool_call
+  - community/GroupRoleResolver
 ---
 
 # ToolCall
@@ -19,4 +19,4 @@ tags:
 - [[Represents a single tool call.]] - `rationale_for` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/analyze_tool_call
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "rationale"
-community: "test_soc_bots.py"
+community: "ToolResultSanitizer"
 location: "L829"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/ToolResultSanitizer
 ---
 
 # Unit tests for the M6 bot selector backend — /soc/v1/bots + bot_id filtering.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestBotSelectorFrontend]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

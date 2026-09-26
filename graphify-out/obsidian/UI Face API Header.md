@@ -1,13 +1,13 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.h"
 type: "code"
-community: "UI Face API Header"
+community: "agentshroud-dmz network (reserved, not attached "
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UI_Face_API_Header
+  - community/agentshroud-dmz_network_reserved_not_attached_
 ---
 
 # UI Face API Header
 
-#graphify/code #graphify/EXTRACTED #community/UI_Face_API_Header
+#graphify/code #graphify/EXTRACTED #community/agentshroud-dmz_network_reserved_not_attached_

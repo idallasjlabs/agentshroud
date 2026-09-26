@@ -1,17 +1,17 @@
 ---
-source_file: "docs/user-guide.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "AgentShroud User Guide"
-location: "L48"
+community: "Credential Management - 1Password Integration"
+location: "L192"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_User_Guide
+  - community/Credential_Management_-_1Password_Integration
 ---
 
 # Tips
 
 ## Connections
-- [[Interacting via Telegram]] - `contains` [EXTRACTED]
+- [[Canvas Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_User_Guide
+#graphify/document #graphify/EXTRACTED #community/Credential_Management_-_1Password_Integration

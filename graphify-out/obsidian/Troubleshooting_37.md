@@ -1,17 +1,22 @@
 ---
-source_file: "docker/bot-capabilities.md"
+source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Community 775"
-location: "L211"
+community: "openclaw/workspace/jira_dev_ticket.py"
+location: "L317"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_775
+  - community/openclaw/workspace/jira_dev_ticketpy
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Credential Management - 1Password Integration]] - `contains` [EXTRACTED]
+- [[Action requires approval but none granted_3]] - `contains` [EXTRACTED]
+- [[Browser timeout_4]] - `contains` [EXTRACTED]
+- [[CAPTCHA detected_4]] - `contains` [EXTRACTED]
+- [[Rate limit exceeded_3]] - `contains` [EXTRACTED]
+- [[URL not in allowlist_4]] - `contains` [EXTRACTED]
+- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_775
+#graphify/document #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy

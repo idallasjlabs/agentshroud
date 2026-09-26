@@ -1,16 +1,17 @@
 ---
-source_file: "docker/config/hermes/cron/prompts/turbo-fieldfare-fix-watch.txt"
+source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
 type: "document"
-community: "Turbo Fieldfare (MLX inference backend)"
+community: "ControlCenter"
+location: "L270"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Turbo_Fieldfare_MLX_inference_backend
+  - community/ControlCenter
 ---
 
 # Turbo Fieldfare Fix Watch
 
 ## Connections
-- [[Turbo Fieldfare GitHub Issue 84 (decoder_consume bug)]] - `references` [EXTRACTED]
+- [[Job details]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Turbo_Fieldfare_MLX_inference_backend
+#graphify/document #graphify/EXTRACTED #community/ControlCenter

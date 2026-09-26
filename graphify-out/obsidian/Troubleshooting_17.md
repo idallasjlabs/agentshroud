@@ -1,22 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
-location: "L281"
+community: ".decide()"
+location: "L295"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/decide
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Action requires approval but none granted_3]] - `contains` [EXTRACTED]
-- [[Browser timeout_4]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected_4]] - `contains` [EXTRACTED]
-- [[Rate limit exceeded_3]] - `contains` [EXTRACTED]
-- [[URL not in allowlist_4]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
+- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/decide

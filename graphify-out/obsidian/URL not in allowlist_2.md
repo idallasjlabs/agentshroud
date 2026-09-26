@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "SecureBrowser - Enterprise Secure Browser Automa"
-location: "L319"
+community: "_sync()"
+location: "L283"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automa
+  - community/_sync
 ---
 
 # "URL not in allowlist"
 
 ## Connections
-- [[Troubleshooting_14]] - `contains` [EXTRACTED]
+- [[Troubleshooting_11]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automa
+#graphify/document #graphify/EXTRACTED #community/_sync

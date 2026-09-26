@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/MCP_README.md"
 type: "concept"
-community: "awslabs.aws-api-mcp-server configuration (--read"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
 location: "Prerequisites"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/awslabsaws-api-mcp-server_configuration_--read
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # UV/uvx package manager prerequisite
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[awslabs.aws-api-mcp-server configuration (--readonly)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/awslabsaws-api-mcp-server_configuration_--read
+#graphify/concept #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

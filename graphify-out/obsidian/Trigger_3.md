@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-session-prompt/SKILL.md"
+source_file: "skills/openclaw/session-logs/SKILL.md"
 type: "document"
-community: "Workflow: Survey → Draft → Inject → Confirm"
-location: "L13"
+community: "Skill: UX Expert (UX)"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workflow_Survey__Draft__Inject__Confirm
+  - community/Skill_UX_Expert_UX
 ---
 
 # Trigger
 
 ## Connections
-- [[Skill Session Prompt Generator (SESSION-PROMPT)_2]] - `contains` [EXTRACTED]
+- [[session-logs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

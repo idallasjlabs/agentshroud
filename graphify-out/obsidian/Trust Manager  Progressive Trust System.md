@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-whitepaper.md"
 type: "concept"
-community: "AgentShroud Incident Response Plan"
+community: "test_anthropic_openai_translator.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/test_anthropic_openai_translatorpy
 ---
 
 # Trust Manager / Progressive Trust System
@@ -17,4 +17,4 @@ tags:
 - [[AgentShroud v0.7.0 Enforcement Audit Results]] - `references` [EXTRACTED]
 - [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/concept #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy

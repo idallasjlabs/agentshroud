@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-bs/SKILL.md"
 type: "document"
-community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements"
+community: "AWS Cloud Management & FinOps Agent"
 location: "L95"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Required__45_for_text__30_for_UI_elements
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # Typography Scale
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

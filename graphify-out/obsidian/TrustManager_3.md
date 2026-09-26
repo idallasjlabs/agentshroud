@@ -30,11 +30,11 @@ tags:
 - [[.test_propagation_registers_unregistered_peer_agent()]] - `references` [EXTRACTED]
 - [[.test_single_bot_has_no_peers_and_does_not_raise()]] - `calls` [EXTRACTED]
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
-- [[CrossBotTrustLedger_1]] - `uses` [INFERRED]
+- [[CrossBotTrustLedger]] - `uses` [INFERRED]
 - [[IncidentRecord]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustDecayPolicy]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[hermes_tm()]] - `references` [EXTRACTED]
 - [[openclaw_tm()]] - `references` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Credential Management - 1Password Integration"
+community: "competitive-report-*.md dated reports"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Credential_Management_-_1Password_Integration
+  - community/competitive-report-md_dated_reports
 ---
 
 # Trademark Statements
@@ -16,7 +16,7 @@ tags:
 - [[Option 1 — Professional (email, formal)]] - `contains` [EXTRACTED]
 - [[Option 2 — Compact (Telegram, Slack — default)]] - `contains` [EXTRACTED]
 - [[Option 3 — Full Collaborator Notice (first contact only)]] - `contains` [EXTRACTED]
-- [[Rules_13]] - `contains` [EXTRACTED]
+- [[Rules_9]] - `contains` [EXTRACTED]
 - [[Which statement to use]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Credential_Management_-_1Password_Integration
+#graphify/document #graphify/EXTRACTED #community/competitive-report-md_dated_reports

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "rationale"
-community: "Currently Unmitigable Residual Class"
+community: "pick_latest_hermes_tag()"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Currently_Unmitigable_Residual_Class
+  - community/pick_latest_hermes_tag
 ---
 
 # Two-Terminal-State Finding Taxonomy
@@ -14,4 +14,4 @@ tags:
 - [[Currently Unmitigable Residual Class]] - `rationale_for` [EXTRACTED]
 - [[Zeroed .trivyignore (no suppressions)]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Currently_Unmitigable_Residual_Class
+#graphify/rationale #graphify/EXTRACTED #community/pick_latest_hermes_tag

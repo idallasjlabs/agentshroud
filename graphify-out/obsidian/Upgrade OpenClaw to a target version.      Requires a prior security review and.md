@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "rationale"
-community: "version_routes.py"
+community: "EgressFilterConfig"
 location: "L176"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/version_routespy
+  - community/EgressFilterConfig
 ---
 
 # Upgrade OpenClaw to a target version.      Requires a prior security review and
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[upgrade()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/version_routespy
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

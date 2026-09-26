@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "Community 396"
+community: "Deploying AgentShroud on Raspberry Pi (aarch64)"
 location: "L83"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_396
+  - community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
 ---
 
 # TrustLevel
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Management Entities]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_396
+#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64

@@ -1,26 +1,40 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "ApprovalRequest"
-location: "L119"
+community: "TelegramAPIProxy"
+location: "L191"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalRequest
+  - community/TelegramAPIProxy
 ---
 
 # ToolRiskPolicy
 
 ## Connections
-- [[._schedule_timeout()]] - `references` [EXTRACTED]
-- [[.get_policy_for_tier()]] - `references` [EXTRACTED]
-- [[.submit()]] - `references` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_2]] - `uses` [INFERRED]
-- [[ApprovalRequest_2]] - `uses` [INFERRED]
+- [[.test_restart_recovery_preserves_timeout_action()]] - `calls` [EXTRACTED]
+- [[Any]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig]] - `uses` [INFERRED]
+- [[ApprovalQueueItem]] - `uses` [INFERRED]
+- [[ApprovalRequest]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
-- [[MFAGuard_2]] - `uses` [INFERRED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[BotConfig]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
+- [[MFAGuard]] - `uses` [INFERRED]
+- [[Risk policy configuration for a tool tier]] - `rationale_for` [EXTRACTED]
+- [[SSHConfig]] - `uses` [INFERRED]
+- [[TestApprovalWorkflow]] - `uses` [INFERRED]
+- [[TestMCPProxyIntegration]] - `uses` [INFERRED]
+- [[TestPersistence]] - `uses` [INFERRED]
+- [[TestToolRiskClassification]] - `uses` [INFERRED]
 - [[ToolRiskConfig]] - `uses` [INFERRED]
 - [[ToolRiskPolicy]] - `uses` [INFERRED]
+- [[WebSocket]] - `uses` [INFERRED]
+- [[_HangingWebSocket_1]] - `uses` [INFERRED]
+- [[config.py]] - `contains` [EXTRACTED]
+- [[enhanced_queue.py]] - `imports` [EXTRACTED]
+- [[test_enhanced_approval.py]] - `imports` [EXTRACTED]
+- [[tool_risk_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalRequest
+#graphify/code #graphify/INFERRED #community/TelegramAPIProxy

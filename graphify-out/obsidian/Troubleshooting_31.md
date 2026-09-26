@@ -1,17 +1,20 @@
 ---
-source_file: "shortcuts/README.md"
+source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "iOS / macOS Shortcuts — Relay to AgentShroud"
-location: "L291"
+community: "record_decision"
+location: "L204"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iOS_/_macOS_Shortcuts__Relay_to_AgentShroud
+  - community/record_decision
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[iOS  macOS Shortcuts — Relay to AgentShroud]] - `contains` [EXTRACTED]
+- [[Missing auth for API providers]] - `contains` [EXTRACTED]
+- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
+- [[Bot not responding on Telegram]] - `contains` [EXTRACTED]
+- [[Container won't start after adding Anthropic secret]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iOS_/_macOS_Shortcuts__Relay_to_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/record_decision

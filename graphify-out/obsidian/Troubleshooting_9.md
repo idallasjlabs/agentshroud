@@ -1,17 +1,22 @@
 ---
-source_file: "docker/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "AgentShroud Docker Configuration"
-location: "L370"
+community: "_any_detector_fires()"
+location: "L160"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Docker_Configuration
+  - community/_any_detector_fires
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
+- [[AWS Token expired (SSO)_1]] - `contains` [EXTRACTED]
+- [[AWS Unable to locate credentials_1]] - `contains` [EXTRACTED]
+- [[Atlassian OAuth flow failed_1]] - `contains` [EXTRACTED]
+- [[GitHub Bad credentials_1]] - `contains` [EXTRACTED]
+- [[GitHub Docker image not found_1]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration
+#graphify/document #graphify/EXTRACTED #community/_any_detector_fires

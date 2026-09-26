@@ -1,20 +1,20 @@
 ---
-source_file: "docs/operations/raspberry-pi.md"
+source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
 type: "document"
-community: "Deploying AgentShroud on Raspberry Pi (aarch64)"
-location: "L123"
+community: "TestInternalBannerMatcher"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
+  - community/TestInternalBannerMatcher
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Container Won't Start_2]] - `contains` [EXTRACTED]
-- [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - `contains` [EXTRACTED]
-- [[Out-of-Memory (OOM) Kills]] - `contains` [EXTRACTED]
-- [[Slow Builds_1]] - `contains` [EXTRACTED]
+- [[Cannot save token]] - `contains` [EXTRACTED]
+- [[OpenClaw Control UI Pairing Instructions]] - `contains` [EXTRACTED]
+- [[Still shows pairing required]] - `contains` [EXTRACTED]
+- [[Token field not visible]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
+#graphify/document #graphify/EXTRACTED #community/TestInternalBannerMatcher

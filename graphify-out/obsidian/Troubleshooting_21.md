@@ -1,20 +1,22 @@
 ---
-source_file: "docs/setup/SETUP_API_KEYS.md"
+source_file: "docs/runbooks/RUNBOOK.md"
 type: "document"
-community: "API Keys Setup Guide"
-location: "L204"
+community: "log_sanitizer.py"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/API_Keys_Setup_Guide
+  - community/log_sanitizerpy
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Missing auth for API providers]] - `contains` [EXTRACTED]
-- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
-- [[Bot not responding on Telegram]] - `contains` [EXTRACTED]
-- [[Container won't start after adding Anthropic secret]] - `contains` [EXTRACTED]
+- [[Fatal glibc error Cannot allocate TLS block]] - `contains` [EXTRACTED]
+- [[AgentShroud Deployment & Troubleshooting Runbook]] - `contains` [EXTRACTED]
+- [[Colima won't start]] - `contains` [EXTRACTED]
+- [[Container starts but unhealthy]] - `contains` [EXTRACTED]
+- [[Docker says Cannot connect to Docker daemon]] - `contains` [EXTRACTED]
+- [[Tests failing after deploy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/log_sanitizerpy

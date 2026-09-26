@@ -1,21 +1,17 @@
 ---
-source_file: "docs/project/legal/TRADEMARK.md"
+source_file: "docker/config/openclaw/agents/hermes-soul.md"
 type: "document"
-community: "AgentShroud™ — Trademark Prior Use Record"
-location: "L1"
+community: "Presidio Analyzer"
+location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__Trademark_Prior_Use_Record
+  - community/Presidio_Analyzer
 ---
 
 # Trademark Notice
 
 ## Connections
-- [[Contact]] - `contains` [EXTRACTED]
-- [[Standard Footer]] - `contains` [EXTRACTED]
-- [[TRADEMARK]] - `contains` [EXTRACTED]
-- [[Trademark Details]] - `contains` [EXTRACTED]
-- [[Usage Guidelines]] - `contains` [EXTRACTED]
+- [[AgentShroud Hermes — System Identity_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record
+#graphify/document #graphify/EXTRACTED #community/Presidio_Analyzer

@@ -1,12 +1,12 @@
 ---
 source_file: "SECURITY.md"
 type: "document"
-community: "AgentShroud™ Security Policy"
+community: "SessionContext"
 location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Policy
+  - community/SessionContext
 ---
 
 # Upstream Agent CVE Tracking
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud™ Security Policy]] - `references` [EXTRACTED]
 - [[Daily CVE Sync + Page Update Workflow]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Policy
+#graphify/document #graphify/EXTRACTED #community/SessionContext

@@ -1,17 +1,20 @@
 ---
-source_file: "docs/setup-slack.md"
+source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "Slack Channel Setup"
-location: "L171"
+community: "AgentShroud Security Value Proposition"
+location: "L277"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Slack_Channel_Setup
+  - community/AgentShroud_Security_Value_Proposition
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Slack Channel Setup]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
+- [[killswitch.sh doesn't confirm]] - `contains` [EXTRACTED]
+- [[scan.sh reports missing OpenSCAP]] - `contains` [EXTRACTED]
+- [[verify-security.sh fails]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Slack_Channel_Setup
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/gemini_openai_translator.py"
 type: "rationale"
-community: "test_gemini_openai_translator.py"
+community: "SecureBrowser"
 location: "L253"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_gemini_openai_translatorpy
+  - community/SecureBrowser
 ---
 
 # Translate an Ollama OpenAI-compat response to Gemini candidates format.      The
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[openai_to_gemini_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_gemini_openai_translatorpy
+#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

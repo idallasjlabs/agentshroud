@@ -1,12 +1,12 @@
 ---
 source_file: "branding/typography/typography.md"
 type: "document"
-community: "branding/README.md"
+community: "Phase 1 — Raw Collection"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/READMEmd
+  - community/Phase_1__Raw_Collection
 ---
 
 # typography.md
@@ -17,4 +17,4 @@ tags:
 - [[Inter Typeface (Primary)]] - `references` [EXTRACTED]
 - [[JetBrains Mono Typeface (Monospace)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Phase_1__Raw_Collection

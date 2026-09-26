@@ -1,21 +1,22 @@
 ---
-source_file: "docker/QUICKSTART.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "AgentShroud Phase 3 - Quick Start Guide"
-location: "L232"
+community: "CredentialInfo"
+location: "L160"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
+  - community/CredentialInfo
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[API Key Error]] - `contains` [EXTRACTED]
-- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
-- [[Container Won't Start_1]] - `contains` [EXTRACTED]
-- [[Gateway Returns 401 Unauthorized]] - `contains` [EXTRACTED]
-- [[OpenClaw Not Responding]] - `contains` [EXTRACTED]
+- [[AWS Token expired (SSO)_2]] - `contains` [EXTRACTED]
+- [[AWS Unable to locate credentials_2]] - `contains` [EXTRACTED]
+- [[Atlassian OAuth flow failed_2]] - `contains` [EXTRACTED]
+- [[GitHub Bad credentials_2]] - `contains` [EXTRACTED]
+- [[GitHub Docker image not found_2]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide
+#graphify/document #graphify/EXTRACTED #community/CredentialInfo

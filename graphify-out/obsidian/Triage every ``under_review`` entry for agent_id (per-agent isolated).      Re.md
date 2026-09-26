@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "rationale"
-community: "Community 188"
-location: "L980"
+community: "EncryptedStore"
+location: "L988"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_188
+  - community/EncryptedStore
 ---
 
 # Triage every ``under_review`` entry for *agent_id* (per-agent isolated).      Re
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[triage_agent()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_188
+#graphify/rationale #graphify/EXTRACTED #community/EncryptedStore

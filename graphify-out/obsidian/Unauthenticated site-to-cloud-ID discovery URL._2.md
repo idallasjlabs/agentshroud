@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
+source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "rationale"
-community: "jira_weekly_review.py"
-location: "L131"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-P"
+location: "L130"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/jira_weekly_reviewpy
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P
 ---
 
 # Unauthenticated site-to-cloud-ID discovery URL.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[build_tenant_info_url()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/jira_weekly_reviewpy
+#graphify/rationale #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P

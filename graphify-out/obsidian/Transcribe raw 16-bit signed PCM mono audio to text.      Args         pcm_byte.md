@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/stt.py"
 type: "rationale"
-community: "test_voice_stt_model_ab.py"
+community: "TestSSRFBlocking"
 location: "L115"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_voice_stt_model_abpy
+  - community/TestSSRFBlocking
 ---
 
 # Transcribe raw 16-bit signed PCM mono audio to text.      Args:         pcm_byte
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[transcribe()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_voice_stt_model_abpy
+#graphify/rationale #graphify/EXTRACTED #community/TestSSRFBlocking

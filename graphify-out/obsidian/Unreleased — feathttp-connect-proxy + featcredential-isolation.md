@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 99"
-location: "L837"
+community: "WebProxy"
+location: "L903"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_99
+  - community/WebProxy
 ---
 
 # [Unreleased] — feat/http-connect-proxy + feat/credential-isolation
@@ -20,4 +20,4 @@ tags:
 - [[Summary_1]] - `contains` [EXTRACTED]
 - [[Tests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_99
+#graphify/document #graphify/EXTRACTED #community/WebProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/archive/ANNOUNCEMENT.md"
 type: "rationale"
-community: "One Shroud Over Every Wire (founding mantra)"
+community: "A2AMessage"
 location: "L298-L318"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/One_Shroud_Over_Every_Wire_founding_mantra
+  - community/A2AMessage
 ---
 
 # Trust Through Isolation (assume breach, limit the take)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[One Shroud Over Every Wire (founding mantra)]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/One_Shroud_Over_Every_Wire_founding_mantra
+#graphify/rationale #graphify/EXTRACTED #community/A2AMessage

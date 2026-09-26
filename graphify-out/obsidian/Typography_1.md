@@ -1,17 +1,18 @@
 ---
-source_file: "branding/QUICK-REFERENCE.md"
+source_file: "branding/README.md"
 type: "document"
-community: "AgentShroud Brand Quick Reference"
-location: "L42"
+community: "AgentShroud Security Architecture"
+location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Quick_Reference
+  - community/AgentShroud_Security_Architecture
 ---
 
 # Typography
 
 ## Connections
-- [[AgentShroud Brand Quick Reference]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Quick_Reference
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

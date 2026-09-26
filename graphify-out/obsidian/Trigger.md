@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/session-logs/SKILL.md"
+source_file: ".agents/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Common Queries"
-location: "L11"
+community: "Core Components"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Common_Queries
+  - community/Core_Components
 ---
 
 # Trigger
 
 ## Connections
-- [[session-logs]] - `contains` [EXTRACTED]
+- [[Skill Session Prompt Generator (SESSION-PROMPT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Common_Queries
+#graphify/document #graphify/EXTRACTED #community/Core_Components

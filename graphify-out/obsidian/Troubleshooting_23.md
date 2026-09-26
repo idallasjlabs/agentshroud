@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup-telegram.md"
+source_file: "docs/setup-slack.md"
 type: "document"
-community: "Telegram Channel Setup"
-location: "L89"
+community: "iCloud Services"
+location: "L171"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Channel_Setup
+  - community/iCloud_Services
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Telegram Channel Setup]] - `contains` [EXTRACTED]
+- [[Slack Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Channel_Setup
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "SessionContext"
+community: "background.js"
 location: "L356"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SessionContext
+  - community/backgroundjs
 ---
 
 # Trigger alert callbacks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._trigger_alert()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SessionContext
+#graphify/rationale #graphify/EXTRACTED #community/backgroundjs

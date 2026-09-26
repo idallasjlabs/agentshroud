@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "ToolChainAnalyzer.score_reversibility (C37)"
+community: "audio_init() — mic/speaker codec init"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolChainAnalyzerscore_reversibility_C37
+  - community/audio_init__mic/speaker_codec_init
 ---
 
 # ToolChainAnalyzer.score_reversibility (C37)
 
-#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzerscore_reversibility_C37
+#graphify/code #graphify/EXTRACTED #community/audio_init__mic/speaker_codec_init

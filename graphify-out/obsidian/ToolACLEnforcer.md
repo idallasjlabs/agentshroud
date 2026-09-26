@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "ToolACLEnforcer"
-location: "206"
+community: "TelegramAPIProxy"
+location: "L206"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolACLEnforcer
+  - community/TelegramAPIProxy
 ---
 
 # ToolACLEnforcer
 
 ## Connections
-- [[.__init__()_1]] - `method` [EXTRACTED]
+- [[.__init__()_121]] - `method` [EXTRACTED]
 - [[._can_use_tool_impl()]] - `method` [EXTRACTED]
 - [[._get_group_tool_allowlist()]] - `method` [EXTRACTED]
 - [[._get_role()]] - `method` [EXTRACTED]
-- [[.can_use_tool()_1]] - `method` [EXTRACTED]
+- [[.can_use_tool()]] - `method` [EXTRACTED]
 - [[.can_use_tool_from_origin()]] - `method` [EXTRACTED]
 - [[.can_use_tool_in_group_context()]] - `method` [EXTRACTED]
 - [[.check_tool_rate_limit()]] - `method` [EXTRACTED]
@@ -37,32 +37,58 @@ tags:
 - [[.test_tool_acl_can_use_tool_records()]] - `calls` [EXTRACTED]
 - [[.test_trust_deny_wins_over_acl()]] - `calls` [EXTRACTED]
 - [[.test_unknown_tool_falls_through_to_acl()]] - `calls` [EXTRACTED]
-- [[CVE-2026-35190 — execute_command owner-only fix]] - `cites` [EXTRACTED]
-- [[CVE-2026-9367 — command injection bypass via terminal_tool]] - `cites` [EXTRACTED]
+- [[A2AGovernanceProxy]] - `semantically_similar_to` [INFERRED]
+- [[ADMIN_TOOLS]] - `shares_data_with` [EXTRACTED]
+- [[COLLABORATOR_ALLOWED_TOOLS]] - `shares_data_with` [EXTRACTED]
 - [[Enforces tool-level access control based on user role and group membership.]] - `rationale_for` [EXTRACTED]
-- [[LLMProxy]] - `shares_data_with` [INFERRED]
-- [[RateLimitGuard]] - `conceptually_related_to` [INFERRED]
+- [[GroupRole]] - `uses` [INFERRED]
+- [[GroupRoleResolver]] - `uses` [INFERRED]
+- [[PRIVATE_TOOLS]] - `shares_data_with` [EXTRACTED]
+- [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[TestAdminAccess]] - `uses` [INFERRED]
+- [[TestBackwardCompat]] - `uses` [INFERRED]
+- [[TestCVE2026_9367TerminalToolDenied]] - `uses` [INFERRED]
+- [[TestClassificationSets]] - `uses` [INFERRED]
+- [[TestCollaboratorAccess]] - `uses` [INFERRED]
 - [[TestDenyUnknownFalse]] - `uses` [INFERRED]
 - [[TestEgressWiringEndToEnd]] - `uses` [INFERRED]
 - [[TestEnforcementMode]] - `uses` [INFERRED]
+- [[TestEnforcementModeResolver]] - `uses` [INFERRED]
 - [[TestEnforcementWiring]] - `uses` [INFERRED]
+- [[TestEnumMapping]] - `uses` [INFERRED]
+- [[TestGatedPromotion]] - `uses` [INFERRED]
 - [[TestGroupRoleProperties]] - `uses` [INFERRED]
 - [[TestGroupRoleResolver]] - `uses` [INFERRED]
 - [[TestGroupToolAllowlist]] - `uses` [INFERRED]
 - [[TestMemberGroupContext]] - `uses` [INFERRED]
 - [[TestNoRBACConfig]] - `uses` [INFERRED]
+- [[TestOriginAwareAuthorization]] - `uses` [INFERRED]
+- [[TestOwnerAccess]] - `uses` [INFERRED]
 - [[TestOwnerGroupContext]] - `uses` [INFERRED]
+- [[TestProgressiveTrustConfigUnit]] - `uses` [INFERRED]
 - [[TestReadOnlyMemberGroupContext]] - `uses` [INFERRED]
 - [[TestToolACLComposition]] - `uses` [INFERRED]
+- [[TestToolGating]] - `uses` [INFERRED]
 - [[TestToolRateLimiting]] - `uses` [INFERRED]
-- [[enforcer()]] - `uses` [INFERRED]
-- [[enforcer()_2]] - `calls` [EXTRACTED]
-- [[gateway.security.tool_acl]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
+- [[TestTypedViolations]] - `uses` [INFERRED]
+- [[TestViewerAccess]] - `uses` [INFERRED]
+- [[ToolACLConfig]] - `shares_data_with` [EXTRACTED]
+- [[TrustLevel_2]] - `uses` [INFERRED]
+- [[TrustManager_4]] - `uses` [INFERRED]
+- [[can_use_tool_from_origin]] - `conceptually_related_to` [EXTRACTED]
+- [[enforcer()]] - `calls` [EXTRACTED]
+- [[enforcer()_3]] - `calls` [EXTRACTED]
+- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_group_rbac.py]] - `imports` [EXTRACTED]
+- [[test_llm_proxy.py]] - `conceptually_related_to` [INFERRED]
 - [[test_module_stats.py]] - `imports` [EXTRACTED]
 - [[test_progressive_trust_integration.py]] - `imports` [EXTRACTED]
-- [[test_tool_acl.py]] - `imports` [EXTRACTED]
+- [[test_tool_acl.py]] - `references` [EXTRACTED]
+- [[tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolACLEnforcer
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "lifespan.py"
+community: "TrustManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/TrustManager
 ---
 
 # ToolChainAnalyzer._load_default_patterns
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ToolChainAnalyzer]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/TrustManager

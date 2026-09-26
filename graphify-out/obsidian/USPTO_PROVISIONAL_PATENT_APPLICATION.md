@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "AgentShroud -- USPTO Provisional Patent Applicat"
+community: "Daedalus — Concept Illustrator"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_--_USPTO_Provisional_Patent_Applicat
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # USPTO_PROVISIONAL_PATENT_APPLICATION.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud -- USPTO Provisional Patent Application]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Provisional_Patent_Applicat
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

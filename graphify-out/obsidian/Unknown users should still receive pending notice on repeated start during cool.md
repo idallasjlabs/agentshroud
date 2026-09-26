@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "ingest_api/main.py"
 location: "L1326"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/ingest_api/mainpy
 ---
 
 # Unknown users should still receive pending notice on repeated /start during cool
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_unknown_user_repeated_start_still_gets_pending_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

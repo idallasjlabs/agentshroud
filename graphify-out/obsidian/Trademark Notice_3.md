@@ -1,17 +1,21 @@
 ---
-source_file: "docker/config/hermes/agents/hermes-soul.md"
+source_file: "docs/project/legal/TRADEMARK.md"
 type: "document"
-community: "AgentShroud Hermes — System Identity"
-location: "L81"
+community: "Message Composition with MML (MIME Meta Language"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Hermes__System_Identity
+  - community/Message_Composition_with_MML_MIME_Meta_Language
 ---
 
 # Trademark Notice
 
 ## Connections
-- [[AgentShroud Hermes — System Identity_2]] - `contains` [EXTRACTED]
+- [[Contact_2]] - `contains` [EXTRACTED]
+- [[Standard Footer]] - `contains` [EXTRACTED]
+- [[TRADEMARK]] - `contains` [EXTRACTED]
+- [[Trademark Details]] - `contains` [EXTRACTED]
+- [[Usage Guidelines_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Hermes__System_Identity
+#graphify/document #graphify/EXTRACTED #community/Message_Composition_with_MML_MIME_Meta_Language

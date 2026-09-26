@@ -1,19 +1,17 @@
 ---
-source_file: "docs/operations/raspberry-pi.md"
+source_file: "docs/operations/linux.md"
 type: "document"
-community: "Deploying AgentShroud on Raspberry Pi (aarch64)"
-location: "L93"
+community: "Remediation"
+location: "L131"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
+  - community/Remediation
 ---
 
 # Updating to Latest Release
 
 ## Connections
-- [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - `contains` [EXTRACTED]
-- [[From Git (tracking main)]] - `contains` [EXTRACTED]
-- [[From a Tagged Release]] - `contains` [EXTRACTED]
+- [[Deploying AgentShroud on Linux (x86_64  aarch64)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
+#graphify/document #graphify/EXTRACTED #community/Remediation

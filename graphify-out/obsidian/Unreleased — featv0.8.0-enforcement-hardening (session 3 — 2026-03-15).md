@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 99"
-location: "L770"
+community: "WebProxy"
+location: "L836"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_99
+  - community/WebProxy
 ---
 
 # [Unreleased] — feat/v0.8.0-enforcement-hardening (session 3 — 2026-03-15)
@@ -20,4 +20,4 @@ tags:
 - [[Tests]] - `contains` [EXTRACTED]
 - [[Tranche Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_99
+#graphify/document #graphify/EXTRACTED #community/WebProxy

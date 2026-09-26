@@ -1,20 +1,17 @@
 ---
-source_file: "docs/architecture/WORKSPACE_USAGE.md"
+source_file: "docker/README.md"
 type: "document"
-community: "OpenClaw Workspace Usage Guide"
-location: "L275"
+community: "AlertTelegramRelay"
+location: "L370"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Workspace_Usage_Guide
+  - community/AlertTelegramRelay
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
-- [[Problem Container not running]] - `contains` [EXTRACTED]
-- [[Problem File not found]] - `contains` [EXTRACTED]
-- [[Problem Permission denied]] - `contains` [EXTRACTED]
+- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide
+#graphify/document #graphify/EXTRACTED #community/AlertTelegramRelay

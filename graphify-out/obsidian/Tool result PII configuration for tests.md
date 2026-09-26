@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "version_routes.py"
 location: "L68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/version_routespy
 ---
 
 # Tool result PII configuration for tests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.tool_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/version_routespy

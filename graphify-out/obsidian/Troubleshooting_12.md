@@ -1,21 +1,20 @@
 ---
-source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-P"
-location: "L246"
+community: "hermes/SOUL.md"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P
+  - community/hermes/SOULmd
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Access Denied_2]] - `contains` [EXTRACTED]
-- [[Token expired (SSO)_2]] - `contains` [EXTRACTED]
-- [[Unable to locate credentials_2]] - `contains` [EXTRACTED]
-- [[MCP Not Using Profile_2]] - `contains` [EXTRACTED]
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
+- [[401 Unauthorized_2]] - `contains` [EXTRACTED]
+- [[CalendarContacts not found_2]] - `contains` [EXTRACTED]
+- [[Connection timeout_2]] - `contains` [EXTRACTED]
+- [[iCloud Services_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P
+#graphify/document #graphify/EXTRACTED #community/hermes/SOULmd

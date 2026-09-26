@@ -1,22 +1,21 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "SecureBrowser Skill"
-location: "L293"
+community: "discover_upstream_versions.py"
+location: "L232"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill
+  - community/discover_upstream_versionspy
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Approval required but none granted]] - `contains` [EXTRACTED]
-- [[Browser timeout_1]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected_1]] - `contains` [EXTRACTED]
-- [[Credential extraction blocked]] - `contains` [EXTRACTED]
-- [[URL not in allowlist_1]] - `contains` [EXTRACTED]
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[API Key Error]] - `contains` [EXTRACTED]
+- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
+- [[Container Won't Start]] - `contains` [EXTRACTED]
+- [[Gateway Returns 401 Unauthorized]] - `contains` [EXTRACTED]
+- [[OpenClaw Not Responding]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill
+#graphify/document #graphify/EXTRACTED #community/discover_upstream_versionspy

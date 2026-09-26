@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/trello/SKILL.md"
 type: "document"
-community: "Usage"
+community: "Docker Volumes"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Usage
+  - community/Docker_Volumes
 ---
 
 # Trello Skill
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[Examples_1]] - `contains` [EXTRACTED]
 - [[Notes_8]] - `contains` [EXTRACTED]
-- [[Setup_7]] - `contains` [EXTRACTED]
-- [[Usage_124]] - `contains` [EXTRACTED]
-- [[trelloSKILL]] - `contains` [EXTRACTED]
+- [[SKILL_235]] - `contains` [EXTRACTED]
+- [[Setup_8]] - `contains` [EXTRACTED]
+- [[Usage_131]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Usage
+#graphify/document #graphify/EXTRACTED #community/Docker_Volumes

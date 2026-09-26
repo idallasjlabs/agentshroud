@@ -1,17 +1,22 @@
 ---
-source_file: "docs/data/data-dictionary.md"
-type: "document"
-community: "AgentShroud Data Dictionary"
-location: "L135"
+source_file: "gateway/proxy/url_analyzer.py"
+type: "code"
+community: "ToolResultSanitizer"
+location: "L44"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Data_Dictionary
+  - community/ToolResultSanitizer
 ---
 
 # URLAnalysisResult
 
 ## Connections
-- [[Network Security Entities]] - `contains` [EXTRACTED]
+- [[._check_base64()]] - `references` [EXTRACTED]
+- [[.analyze()]] - `references` [EXTRACTED]
+- [[.analyze_and_pin()]] - `references` [EXTRACTED]
+- [[.flagged()]] - `method` [EXTRACTED]
+- [[Result of analyzing a URL.]] - `rationale_for` [EXTRACTED]
+- [[url_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Dictionary
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

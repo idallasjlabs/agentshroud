@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "version_routes.py"
 location: "L56"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/version_routespy
 ---
 
 # Tool result PII sanitizer with per-tool configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ToolResultSanitizer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/version_routespy

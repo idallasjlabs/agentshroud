@@ -1,17 +1,21 @@
 ---
-source_file: "docs/setup/HERMES_SETUP.md"
+source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Hermes Agent — Connection Setup"
-location: "L253"
+community: "AgentShroud Documentation"
+location: "L356"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Agent__Connection_Setup
+  - community/AgentShroud_Documentation
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
+- [[Control UI Not Accessible]] - `contains` [EXTRACTED]
+- [[Gateway Can't Reach OpenClaw]] - `contains` [EXTRACTED]
+- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
+- [[OpenClaw Won't Start]] - `contains` [EXTRACTED]
+- [[SSH Not Working]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Documentation

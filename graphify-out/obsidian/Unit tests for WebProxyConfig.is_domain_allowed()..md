@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "rationale"
-community: "WebProxyConfig"
+community: "SOCWebSocketHandler"
 location: "L577"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/SOCWebSocketHandler
 ---
 
 # Unit tests for WebProxyConfig.is_domain_allowed().
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestIsDomainAllowed]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/rationale #graphify/EXTRACTED #community/SOCWebSocketHandler

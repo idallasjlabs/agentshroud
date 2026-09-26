@@ -1,23 +1,22 @@
 ---
-source_file: "docs/setup/setup-guide.md"
+source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "AgentShroud Setup Guide"
-location: "L787"
+community: "forward.py"
+location: "L1683"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Setup_Guide
+  - community/forwardpy
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[1Password Authentication Failed]] - `contains` [EXTRACTED]
-- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
-- [[Container Unhealthy]] - `contains` [EXTRACTED]
-- [[Gmail Connection Issues]] - `contains` [EXTRACTED]
-- [[Performance Issues_1]] - `contains` [EXTRACTED]
-- [[Port Already in Use_2]] - `contains` [EXTRACTED]
-- [[Tests Failing_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]] - `contains` [EXTRACTED]
+- [[Docker Permission Denied]] - `contains` [EXTRACTED]
+- [[High Temperature]] - `contains` [EXTRACTED]
+- [[Out of Memory]] - `contains` [EXTRACTED]
+- [[SSH Connection Refused]] - `contains` [EXTRACTED]
+- [[Slow Builds_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/forwardpy

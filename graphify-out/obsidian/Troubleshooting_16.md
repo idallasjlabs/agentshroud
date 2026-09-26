@@ -1,22 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
+source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
-location: "L281"
+community: "OpenClaw Workspace Usage Guide"
+location: "L275"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/OpenClaw_Workspace_Usage_Guide
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Action requires approval but none granted_2]] - `contains` [EXTRACTED]
-- [[Browser timeout_3]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected_3]] - `contains` [EXTRACTED]
-- [[Rate limit exceeded_2]] - `contains` [EXTRACTED]
-- [[URL not in allowlist_3]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
+- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
+- [[Problem Container not running]] - `contains` [EXTRACTED]
+- [[Problem File not found]] - `contains` [EXTRACTED]
+- [[Problem Permission denied]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

@@ -1,12 +1,12 @@
 ---
 source_file: "examples/agentshroud-with-tool-risk.yaml"
 type: "concept"
-community: "AgentShroud Config with Tool Risk Tiers (example"
+community: "2. Security Value Audit — Genuine Protection vs."
 location: "lines 15-79"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Config_with_Tool_Risk_Tiers_example
+  - community/2_Security_Value_Audit__Genuine_Protection_vs
 ---
 
 # Tool Risk Tier Policy (critical/high/medium/low)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Config with Tool Risk Tiers (example)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Config_with_Tool_Risk_Tiers_example
+#graphify/concept #graphify/EXTRACTED #community/2_Security_Value_Audit__Genuine_Protection_vs

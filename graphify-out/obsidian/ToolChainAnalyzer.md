@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "lifespan.py"
+community: "TrustManager"
 location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/TrustManager
 ---
 
 # ToolChainAnalyzer
 
 ## Connections
-- [[.__init__()_12]] - `calls` [EXTRACTED]
-- [[.__init__()_156]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_122]] - `method` [EXTRACTED]
 - [[._calculate_risk_score()]] - `method` [EXTRACTED]
 - [[._cleanup_old_sessions()_1]] - `method` [EXTRACTED]
 - [[._detect_chain_patterns()]] - `method` [EXTRACTED]
@@ -21,7 +21,7 @@ tags:
 - [[._load_default_patterns()]] - `method` [EXTRACTED]
 - [[._matches_source_pattern()]] - `method` [EXTRACTED]
 - [[._trigger_alert()_1]] - `method` [EXTRACTED]
-- [[.add_alert_callback()_1]] - `method` [EXTRACTED]
+- [[.add_alert_callback()_2]] - `method` [EXTRACTED]
 - [[.add_pattern()]] - `method` [EXTRACTED]
 - [[.analyze_tool_call()]] - `method` [EXTRACTED]
 - [[.analyzer()]] - `calls` [EXTRACTED]
@@ -35,16 +35,16 @@ tags:
 - [[.test_custom_patterns()_1]] - `calls` [EXTRACTED]
 - [[.test_disabled_analyzer()]] - `calls` [EXTRACTED]
 - [[.test_tool_chain_analyzer_instantiates()]] - `calls` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[Any_2]] - `uses` [INFERRED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[CorrelationSummary]] - `semantically_similar_to` [INFERRED]
-- [[Exception_1]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[Main tool chain analysis engine.      Tracks sequences of tool calls and identif]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[TestGetModuleModeEnforceDefault]] - `uses` [INFERRED]
 - [[TestModuleConfigDefaults]] - `uses` [INFERRED]
 - [[TestModuleInstantiationInEnforceMode]] - `uses` [INFERRED]
@@ -55,11 +55,11 @@ tags:
 - [[TestToolChainAnalyzer_1]] - `uses` [INFERRED]
 - [[ToolChainAnalyzer._load_custom_patterns]] - `calls` [EXTRACTED]
 - [[ToolChainAnalyzer._load_default_patterns]] - `calls` [EXTRACTED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[ToolTier]] - `uses` [INFERRED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_tool_chain_analyzer.py]] - `imports` [EXTRACTED]
 - [[tool_chain_analyzer()]] - `calls` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/TrustManager

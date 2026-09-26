@@ -1,18 +1,22 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "ToolACLEnforcer"
+community: "TelegramAPIProxy"
 location: "L145"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ToolACLEnforcer
+  - graphify/INFERRED
+  - community/TelegramAPIProxy
 ---
 
 # ToolRateLimit
 
 ## Connections
+- [[GroupRole]] - `uses` [INFERRED]
+- [[GroupRoleResolver]] - `uses` [INFERRED]
 - [[Per-tool call rate limit configuration.]] - `rationale_for` [EXTRACTED]
-- [[gateway.security.tool_acl]] - `contains` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolACLEnforcer
+#graphify/code #graphify/INFERRED #community/TelegramAPIProxy

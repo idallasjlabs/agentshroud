@@ -1,20 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
+source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "iCloud Services"
-location: "L142"
+community: "Key Benefits"
+location: "L237"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/Key_Benefits
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[401 Unauthorized_2]] - `contains` [EXTRACTED]
-- [[CalendarContacts not found_1]] - `contains` [EXTRACTED]
-- [[Connection timeout_2]] - `contains` [EXTRACTED]
-- [[iCloud Services_2]] - `contains` [EXTRACTED]
+- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
+- [[Problem 1Password link shows only page shell]] - `contains` [EXTRACTED]
+- [[Problem Browser binaries not found]] - `contains` [EXTRACTED]
+- [[Problem Permission denied executing browser]] - `contains` [EXTRACTED]
+- [[Problem Skill not auto-discovered by bot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/Key_Benefits

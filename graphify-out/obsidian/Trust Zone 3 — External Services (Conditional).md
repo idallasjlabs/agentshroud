@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-11-trust-boundary.svg"
 type: "concept"
-community: "AgentShroud Gateway (holds 1Password service acc"
+community: "Turbo Fieldfare (MLX inference backend)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Gateway_holds_1Password_service_acc
+  - community/Turbo_Fieldfare_MLX_inference_backend
 ---
 
 # Trust Zone 3 — External Services (Conditional)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Bot (no direct credentialinternet access)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Gateway_holds_1Password_service_acc
+#graphify/concept #graphify/EXTRACTED #community/Turbo_Fieldfare_MLX_inference_backend

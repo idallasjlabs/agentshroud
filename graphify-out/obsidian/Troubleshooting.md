@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "troubleshooting.md"
+community: "test_clamav_pipeline.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/troubleshootingmd
+  - community/test_clamav_pipelinepy
 ---
 
 # troubleshooting.md
@@ -24,11 +24,11 @@ tags:
 - [[Prompt Injection Issues]] - `contains` [EXTRACTED]
 - [[Quick Diagnosis Flow]] - `contains` [EXTRACTED]
 - [[RUNBOOK]] - `conceptually_related_to` [INFERRED]
-- [[Related Notes_28]] - `contains` [EXTRACTED]
+- [[Related Notes_64]] - `contains` [EXTRACTED]
 - [[Security Module Issues]] - `contains` [EXTRACTED]
 - [[Startup Issues]] - `contains` [EXTRACTED]
 - [[TAILSCALE_COMMANDS]] - `conceptually_related_to` [INFERRED]
 - [[Troubleshooting Matrix]] - `contains` [EXTRACTED]
 - [[Troubleshooting Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/troubleshootingmd
+#graphify/document #graphify/EXTRACTED #community/test_clamav_pipelinepy

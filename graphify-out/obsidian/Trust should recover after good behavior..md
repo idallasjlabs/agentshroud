@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "TestAuth"
+community: "MemoryIntegrityMonitor"
 location: "L442"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestAuth
+  - community/MemoryIntegrityMonitor
 ---
 
 # Trust should recover after good behavior.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_trust_recovery()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestAuth
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

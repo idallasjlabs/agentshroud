@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: ".test_timeout_error_is_sanitized_for_form_payloa"
+community: "canary-cron.sh"
 location: "L830"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_timeout_error_is_sanitized_for_form_payloa
+  - community/canary-cronsh
 ---
 
 # Timeout rewrites should apply to urlencoded Telegram payloads too.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_timeout_error_is_sanitized_for_form_payload()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_timeout_error_is_sanitized_for_form_payloa
+#graphify/rationale #graphify/EXTRACTED #community/canary-cronsh

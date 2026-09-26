@@ -1,20 +1,21 @@
 ---
-source_file: "docs/setup/DEVICE_PAIRING.md"
+source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "AgentShroud Device Pairing Management"
-location: "L333"
+community: "SSHProxy"
+location: "L246"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Device_Pairing_Management
+  - community/SSHProxy
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
-- [[Problem pairing required but no pending requests]] - `contains` [EXTRACTED]
-- [[Problem Approved device still can't connect]] - `contains` [EXTRACTED]
-- [[Problem Too many pending requests]] - `contains` [EXTRACTED]
+- [[Access Denied_1]] - `contains` [EXTRACTED]
+- [[Token expired (SSO)_1]] - `contains` [EXTRACTED]
+- [[Unable to locate credentials_1]] - `contains` [EXTRACTED]
+- [[MCP Not Using Profile_1]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management
+#graphify/document #graphify/EXTRACTED #community/SSHProxy

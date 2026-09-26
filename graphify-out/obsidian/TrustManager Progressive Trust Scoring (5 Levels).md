@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "concept"
-community: "Red Team Assessment v1.2.0"
+community: "AgentShroud Typography Guidelines"
 location: "Module 17"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Red_Team_Assessment_v120
+  - community/AgentShroud_Typography_Guidelines
 ---
 
 # TrustManager: Progressive Trust Scoring (5 Levels)
@@ -16,4 +16,4 @@ tags:
 - [[Red Team Assessment v1.2.0]] - `references` [EXTRACTED]
 - [[Security Module 27 Cross-Bot Trust Ledger (v1.2.0)]] - `implements` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Red_Team_Assessment_v120
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Typography_Guidelines

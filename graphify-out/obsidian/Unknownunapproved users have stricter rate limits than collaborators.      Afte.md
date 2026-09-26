@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "TestStrangerRateLimit"
+community: "TestAuditStoreBotId"
 location: "L7705"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestStrangerRateLimit
+  - community/TestAuditStoreBotId
 ---
 
 # Unknown/unapproved users have stricter rate limits than collaborators.      Afte
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestStrangerRateLimit]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestStrangerRateLimit
+#graphify/rationale #graphify/EXTRACTED #community/TestAuditStoreBotId

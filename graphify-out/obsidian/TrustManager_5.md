@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/SOUL.md"
 type: "concept"
-community: "Community 372"
+community: "test_claude_via_openai_path.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_372
+  - community/test_claude_via_openai_pathpy
 ---
 
 # TrustManager
@@ -30,4 +30,4 @@ tags:
 - [[trust_manager (trust levels)]] - `conceptually_related_to` [EXTRACTED]
 - [[trust_manager.py_1]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_372
+#graphify/concept #graphify/EXTRACTED #community/test_claude_via_openai_pathpy

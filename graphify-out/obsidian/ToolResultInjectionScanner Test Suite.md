@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "code"
-community: "ToolResultInjectionScanner Test Suite"
+community: "ToolChainAnalyzer.sanitize_tool_params (C34)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultInjectionScanner_Test_Suite
+  - community/ToolChainAnalyzersanitize_tool_params_C34
 ---
 
 # ToolResultInjectionScanner Test Suite
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzersanitize_tool_params_C34

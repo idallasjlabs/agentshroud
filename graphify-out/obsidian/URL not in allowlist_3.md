@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
-location: "L283"
+community: "What Does OpenClaw Actually Need to Write?"
+location: "L295"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/What_Does_OpenClaw_Actually_Need_to_Write
 ---
 
 # "URL not in allowlist"
 
 ## Connections
-- [[Troubleshooting_16]] - `contains` [EXTRACTED]
+- [[Troubleshooting_36]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write

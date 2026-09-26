@@ -1,21 +1,22 @@
 ---
-source_file: "docs/setup/OPENCLAW_SETUP.md"
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "OpenClaw Setup Guide - agentshroud.ai Bot"
-location: "L356"
+community: "_sync()"
+location: "L281"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+  - community/_sync
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Control UI Not Accessible]] - `contains` [EXTRACTED]
-- [[Gateway Can't Reach OpenClaw]] - `contains` [EXTRACTED]
-- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
-- [[OpenClaw Won't Start]] - `contains` [EXTRACTED]
-- [[SSH Not Working]] - `contains` [EXTRACTED]
+- [[Action requires approval but none granted_2]] - `contains` [EXTRACTED]
+- [[Browser timeout_2]] - `contains` [EXTRACTED]
+- [[CAPTCHA detected_2]] - `contains` [EXTRACTED]
+- [[Rate limit exceeded_2]] - `contains` [EXTRACTED]
+- [[URL not in allowlist_2]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+#graphify/document #graphify/EXTRACTED #community/_sync
