@@ -413,3 +413,7 @@ backups/
 # Sunday upgrade run artifacts (baseline/scan JSON, generated rollback.sh, run logs).
 # Regenerated every run by scripts/sunday-upgrade-apply.sh — records, not source.
 reports/sunday/
+
+# Session continuation notes — transient state for picking up work across a
+# reboot or session handoff, not source. Never commit.
+CONTINUE.md
