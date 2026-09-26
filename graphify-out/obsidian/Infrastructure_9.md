@@ -1,17 +1,17 @@
 ---
-source_file: "docs/runbooks/RUNBOOK.md"
+source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
 type: "document"
-community: "AgentShroud Deployment & Troubleshooting Runbook"
-location: "L3"
+community: "test_jira_weekly_review.py"
+location: "L150"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Deployment__Troubleshooting_Runbook
+  - community/test_jira_weekly_reviewpy
 ---
 
 # Infrastructure
 
 ## Connections
-- [[AgentShroud Deployment & Troubleshooting Runbook]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment__Troubleshooting_Runbook
+#graphify/document #graphify/EXTRACTED #community/test_jira_weekly_reviewpy

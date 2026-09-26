@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
 type: "document"
-community: "Function Details"
-location: "L28"
+community: "AgentShroud Deployment Architecture"
+location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/AgentShroud_Deployment_Architecture
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[health_report.py_2]] - `contains` [EXTRACTED]
+- [[llm_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture

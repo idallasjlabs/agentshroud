@@ -1,19 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
 type: "document"
-community: "SecureBrowser Skill"
-location: "L269"
+community: "sunday-scan.sh"
+location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill
+  - community/sunday-scansh
 ---
 
 # Integration
 
 ## Connections
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
-- [[With 1Password]] - `contains` [EXTRACTED]
-- [[With AgentShroud Gateway]] - `contains` [EXTRACTED]
+- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill
+#graphify/document #graphify/EXTRACTED #community/sunday-scansh

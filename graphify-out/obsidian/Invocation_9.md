@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-release/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-odev/SKILL.md"
 type: "document"
-community: "Steps"
-location: "L16"
+community: "LLM Operating Context — Isaiah Jefferson"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Steps
+  - community/LLM_Operating_Context__Isaiah_Jefferson
 ---
 
 # Invocation
 
 ## Connections
-- [[Skill Release (i-release)]] - `contains` [EXTRACTED]
+- [[Skill OpenClaw Dev Workflow (ODEV)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Steps
+#graphify/document #graphify/EXTRACTED #community/LLM_Operating_Context__Isaiah_Jefferson

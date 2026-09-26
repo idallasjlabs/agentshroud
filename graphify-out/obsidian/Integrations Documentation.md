@@ -1,19 +1,19 @@
 ---
 source_file: "docs/integrations/README.md"
 type: "document"
-community: "1Password op-proxy (POST /credentials/op-proxy; "
+community: "alert_dispatcher.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1Password_op-proxy_POST_/credentials/op-proxy_
+  - community/alert_dispatcherpy
 ---
 
 # Integrations Documentation
 
 ## Connections
-- [[Current Status_6]] - `contains` [EXTRACTED]
-- [[Planned Documents_5]] - `contains` [EXTRACTED]
-- [[integrationsREADME]] - `contains` [EXTRACTED]
+- [[Current Status_4]] - `contains` [EXTRACTED]
+- [[Planned Documents_3]] - `contains` [EXTRACTED]
+- [[README_122]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1Password_op-proxy_POST_/credentials/op-proxy_
+#graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "main.py"
-location: "L456"
+community: "validate_network_security()"
+location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpy
+  - community/validate_network_security
 ---
 
 # Known Issues / Notes
 
 ## Connections
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[auth.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpy
+#graphify/document #graphify/EXTRACTED #community/validate_network_security

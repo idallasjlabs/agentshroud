@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/02-infrastructure.md"
 type: "concept"
-community: "02-infrastructure.md"
+community: ".test_gives_up_and_marks_sent_after_max_retries("
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/02-infrastructuremd
+  - community/test_gives_up_and_marks_sent_after_max_retries
 ---
 
 # Infrastructure Diagram — Hosting & Servers
@@ -15,4 +15,4 @@ tags:
 - [[Network Topology Diagram]] - `references` [INFERRED]
 - [[Rendered Infrastructure Hosting Diagram (PNG)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/02-infrastructuremd
+#graphify/concept #graphify/EXTRACTED #community/test_gives_up_and_marks_sent_after_max_retries

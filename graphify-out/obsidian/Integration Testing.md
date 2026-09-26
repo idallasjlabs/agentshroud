@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "OpenSCAP"
+community: "AgentShroud Blue Team Security Auditor"
 location: "L126"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenSCAP
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # Integration Testing
@@ -16,4 +16,4 @@ tags:
 - [[OpenSCAP]] - `contains` [EXTRACTED]
 - [[agent_isolation.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenSCAP
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

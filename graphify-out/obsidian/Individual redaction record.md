@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "version_routes.py"
 location: "L198"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/version_routespy
 ---
 
 # Individual redaction record
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RedactionDetail]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/version_routespy

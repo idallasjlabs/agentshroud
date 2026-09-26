@@ -1,11 +1,11 @@
 ---
 source_file: "docs/governance/TEST_STRATEGY.md"
 type: "rationale"
-community: "Incident → Test Backfill Rule (R3 extension): ev"
+community: "Skill: UI Expert (UI)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Incident__Test_Backfill_Rule_R3_extension_ev
+  - community/Skill_UI_Expert_UI
 ---
 
 # Incident → Test Backfill Rule (R3 extension): every postmortem must add a regression test in the same PR as the fix, not deferred
@@ -20,4 +20,4 @@ tags:
 - [[Bug stale Slack block on restart → A6S7 delete config.channels.slack when no tokens (v1.0.40)]] - `rationale_for` [EXTRACTED]
 - [[Test Strategy (docsgovernanceTEST_STRATEGY.md)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Incident__Test_Backfill_Rule_R3_extension_ev
+#graphify/rationale #graphify/EXTRACTED #community/Skill_UI_Expert_UI

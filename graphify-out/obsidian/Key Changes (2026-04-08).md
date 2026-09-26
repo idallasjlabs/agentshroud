@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "🛡️ AgentShroud Release Plan"
+community: "test_wire_llm_settings.js"
 location: "L447"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_AgentShroud_Release_Plan
+  - community/test_wire_llm_settingsjs
 ---
 
 # Key Changes (2026-04-08)
 
 ## Connections
-- [[Summary_10]] - `contains` [EXTRACTED]
+- [[Summary_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan
+#graphify/document #graphify/EXTRACTED #community/test_wire_llm_settingsjs

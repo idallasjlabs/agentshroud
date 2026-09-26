@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "TestPathIsolationManager"
 location: "L3745"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/TestPathIsolationManager
 ---
 
 # Intercept leaked raw tool-call JSON in outbound text.          Shared by the JSO
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._handle_outbound_tool_calls()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager

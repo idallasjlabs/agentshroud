@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
 type: "document"
-community: "Skill: UX Expert (UX)"
+community: "sunday-upgrade-apply.sh"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UX_Expert_UX
+  - community/sunday-upgrade-applysh
 ---
 
 # Information Architecture
@@ -17,4 +17,4 @@ tags:
 - [[Skill UX Expert (UX)_1]] - `contains` [EXTRACTED]
 - [[Wayfinding_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX
+#graphify/document #graphify/EXTRACTED #community/sunday-upgrade-applysh

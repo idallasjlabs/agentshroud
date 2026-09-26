@@ -1,12 +1,12 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "GitHub Copilot CLI Setup Guide"
+community: "OpenClaw Live Cron Job Index (11 jobs)"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Copilot_CLI_Setup_Guide
+  - community/OpenClaw_Live_Cron_Job_Index_11_jobs
 ---
 
 # Installation
@@ -18,4 +18,4 @@ tags:
 - [[macOS  Linux]] - `contains` [EXTRACTED]
 - [[npm (Cross-platform)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Live_Cron_Job_Index_11_jobs

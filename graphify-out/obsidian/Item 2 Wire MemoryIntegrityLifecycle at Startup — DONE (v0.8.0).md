@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md"
 type: "document"
-community: "DELIVERABLE 3 — v0.8.0 Implementation Items"
+community: "init-openclaw-config.sh"
 location: "L237"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DELIVERABLE_3__v080_Implementation_Items
+  - community/init-openclaw-configsh
 ---
 
 # Item 2: Wire MemoryIntegrity/Lifecycle at Startup — **DONE (v0.8.0)**
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DELIVERABLE 3 — v0.8.0 Implementation Items]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DELIVERABLE_3__v080_Implementation_Items
+#graphify/document #graphify/EXTRACTED #community/init-openclaw-configsh

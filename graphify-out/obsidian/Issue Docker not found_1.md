@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+community: "_fake_kokoro_pipeline()"
 location: "L74"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR
+  - community/_fake_kokoro_pipeline
 ---
 
 # Issue: "Docker not found"
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Issues & Fixes_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR
+#graphify/document #graphify/EXTRACTED #community/_fake_kokoro_pipeline

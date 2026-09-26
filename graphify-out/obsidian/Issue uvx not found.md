@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+community: "Production Testing Procedures  ⚠️  NO SEPARATE D"
 location: "L108"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR
+  - community/Production_Testing_Procedures____NO_SEPARATE_D
 ---
 
 # Issue: "uvx not found"
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Issues & Fixes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR
+#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_D

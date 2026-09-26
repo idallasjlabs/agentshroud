@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "SkillGuard"
+community: "Daedalus — Concept Illustrator"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # IntEnum
@@ -16,7 +16,7 @@ tags:
 - [[PIIHitSeverity]] - `inherits` [EXTRACTED]
 - [[Recommendation]] - `inherits` [EXTRACTED]
 - [[Severity]] - `inherits` [EXTRACTED]
-- [[ThreatLevel]] - `inherits` [EXTRACTED]
-- [[TrustLevel]] - `inherits` [EXTRACTED]
+- [[ThreatLevel_1]] - `inherits` [EXTRACTED]
+- [[TrustLevel_1]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

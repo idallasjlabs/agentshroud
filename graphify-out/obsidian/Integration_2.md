@@ -1,17 +1,19 @@
 ---
-source_file: "docs/vault/03 - Configuration/falco-rules.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "falco_monitor.py"
-location: "L56"
+community: "What Does OpenClaw Actually Need to Write?"
+location: "L269"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/falco_monitorpy
+  - community/What_Does_OpenClaw_Actually_Need_to_Write
 ---
 
 # Integration
 
 ## Connections
-- [[falco-rules.yaml]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[With 1Password]] - `contains` [EXTRACTED]
+- [[With AgentShroud Gateway]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/falco_monitorpy
+#graphify/document #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write

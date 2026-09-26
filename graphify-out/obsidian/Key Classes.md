@@ -1,21 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
 type: "document"
-community: "pipeline.py — Security Pipeline"
-location: "L82"
+community: "Layer-by-Layer Breakdown"
+location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pipelinepy__Security_Pipeline
+  - community/Layer-by-Layer_Breakdown
 ---
 
 # Key Classes
 
 ## Connections
-- [[`AuditChain`]] - `contains` [EXTRACTED]
-- [[`PipelineAction` (Enum)]] - `contains` [EXTRACTED]
-- [[`PipelineResult` (Dataclass)]] - `contains` [EXTRACTED]
-- [[`SecurityPipeline`]] - `contains` [EXTRACTED]
-- [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
+- [[http_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline
+#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown

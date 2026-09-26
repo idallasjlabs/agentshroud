@@ -1,11 +1,11 @@
 ---
 source_file: "branding/typography/typography.md"
 type: "concept"
-community: "branding/README.md"
+community: "Phase 1 — Raw Collection"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/branding/READMEmd
+  - community/Phase_1__Raw_Collection
 ---
 
 # JetBrains Mono Typeface (Monospace)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[typography]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/branding/READMEmd
+#graphify/concept #graphify/EXTRACTED #community/Phase_1__Raw_Collection

@@ -1,11 +1,11 @@
 ---
 source_file: "CHEATSHEET.md"
 type: "concept"
-community: "AgentShroud™ Security Policy"
+community: "SessionContext"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/AgentShroud_Security_Policy
+  - community/SessionContext
 ---
 
 # Kill Switch Operations
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Operations Cheat Sheet]] - `references` [EXTRACTED]
 - [[AgentShroud™ Security Policy]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/AgentShroud_Security_Policy
+#graphify/concept #graphify/INFERRED #community/SessionContext

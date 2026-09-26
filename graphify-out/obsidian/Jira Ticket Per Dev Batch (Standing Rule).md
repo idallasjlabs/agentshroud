@@ -1,14 +1,14 @@
 ---
 source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
 type: "rationale"
-community: "Jira Ticket Per Dev Batch (Standing Rule)"
+community: "OpenClaw cron: Agentic AI Threat Intelligence"
 location: "lines 70-101"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Jira_Ticket_Per_Dev_Batch_Standing_Rule
+  - community/OpenClaw_cron_Agentic_AI_Threat_Intelligence
 ---
 
 # Jira Ticket Per Dev Batch (Standing Rule)
 
-#graphify/rationale #graphify/EXTRACTED #community/Jira_Ticket_Per_Dev_Batch_Standing_Rule
+#graphify/rationale #graphify/EXTRACTED #community/OpenClaw_cron_Agentic_AI_Threat_Intelligence

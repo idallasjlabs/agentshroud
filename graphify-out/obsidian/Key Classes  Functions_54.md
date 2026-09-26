@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/engine.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
 type: "document"
-community: "engine.py"
-location: "L21"
+community: "clamav.md"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/enginepy
+  - community/clamavmd
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[engine.py_2]] - `contains` [EXTRACTED]
+- [[wazuh_client.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/enginepy
+#graphify/document #graphify/EXTRACTED #community/clamavmd

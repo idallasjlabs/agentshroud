@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "KeyVault"
+community: "AsyncMock"
 location: "L165"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/KeyVault
+  - community/AsyncMock
 ---
 
 # KeyLeakDetector
 
 ## Connections
-- [[.__init__()_185]] - `method` [EXTRACTED]
+- [[.__init__()_91]] - `method` [EXTRACTED]
 - [[._make_vault_pipeline()]] - `calls` [EXTRACTED]
 - [[.scan_outbound()]] - `method` [EXTRACTED]
 - [[.test_detect_api_key_patterns()]] - `calls` [EXTRACTED]
@@ -38,10 +38,10 @@ tags:
 - [[TestTrustViolationRecording]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
-- [[key_vault.py_2]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
+- [[key_vault.py]] - `contains` [EXTRACTED]
+- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_key_vault.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/KeyVault
+#graphify/code #graphify/INFERRED #community/AsyncMock

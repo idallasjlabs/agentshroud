@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "ContextSegment"
+community: "ServiceManager"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/ServiceManager
 ---
 
 # IntegrityScore
@@ -22,4 +22,4 @@ tags:
 - [[context_integrity.py]] - `contains` [EXTRACTED]
 - [[test_context_integrity.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

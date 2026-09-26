@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "KeyVaultConfig"
+community: "RBACConfig"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/KeyVaultConfig
+  - community/RBACConfig
 ---
 
 # InstructionEnvelope
@@ -25,7 +25,7 @@ tags:
 - [[TestEnvelopeSigner]] - `uses` [INFERRED]
 - [[TestEnvelopeSignerInPipeline]] - `uses` [INFERRED]
 - [[TestInboundPIIOwnerExemption]] - `uses` [INFERRED]
-- [[TestKeyLeakDetection]] - `uses` [INFERRED]
+- [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
 - [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
 - [[TestTrustViolationRecording]] - `uses` [INFERRED]
@@ -35,4 +35,4 @@ tags:
 - [[test_instruction_envelope.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/KeyVaultConfig
+#graphify/code #graphify/INFERRED #community/RBACConfig

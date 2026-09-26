@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "MCPServerConfig"
+community: "TestParanoidConfig"
 location: "L97"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPServerConfig
+  - community/TestParanoidConfig
 ---
 
 # InspectionResult
@@ -16,23 +16,23 @@ tags:
 - [[.highest_threat()]] - `method` [EXTRACTED]
 - [[.inspect_tool_call()]] - `references` [EXTRACTED]
 - [[.inspect_tool_result()]] - `references` [EXTRACTED]
-- [[Any_34]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[ConnectionPool]] - `uses` [INFERRED]
-- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
-- [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector]] - `uses` [INFERRED]
+- [[MCPAuditTrail_1]] - `uses` [INFERRED]
+- [[MCPInspector_1]] - `uses` [INFERRED]
 - [[MCPPermissionManager_1]] - `uses` [INFERRED]
-- [[MCPProxy_1]] - `uses` [INFERRED]
-- [[MCPProxyConfig_3]] - `uses` [INFERRED]
-- [[MCPServerConfig]] - `uses` [INFERRED]
-- [[MCPToolCall_1]] - `uses` [INFERRED]
+- [[MCPProxy]] - `uses` [INFERRED]
+- [[MCPProxyConfig_2]] - `uses` [INFERRED]
+- [[MCPServerConfig_2]] - `uses` [INFERRED]
+- [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPToolResult]] - `uses` [INFERRED]
 - [[ProxyResult]] - `uses` [INFERRED]
 - [[Result of inspecting a tool call or response.]] - `rationale_for` [EXTRACTED]
 - [[StdioConnection]] - `uses` [INFERRED]
+- [[__init__.py_7]] - `imports` [EXTRACTED]
 - [[mcp_inspector.py]] - `contains` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports` [EXTRACTED]
-- [[proxy__init__.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPServerConfig
+#graphify/code #graphify/INFERRED #community/TestParanoidConfig

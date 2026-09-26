@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
 type: "document"
-community: "clamav_scanner.py"
-location: "L26"
+community: "LVGL KAWAII FACE"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/clamav_scannerpy
+  - community/LVGL_KAWAII_FACE
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[clamav_scanner.py_1]] - `contains` [EXTRACTED]
+- [[forwarder.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy
+#graphify/document #graphify/EXTRACTED #community/LVGL_KAWAII_FACE

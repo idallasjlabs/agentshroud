@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "AgentRegistry"
+community: "test_mfa_guard.py"
 location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/test_mfa_guardpy
 ---
 
 # IsolationVerifier
 
 ## Connections
-- [[.__init__()_127]] - `method` [EXTRACTED]
+- [[.__init__()_52]] - `method` [EXTRACTED]
 - [[.generate_compose()]] - `method` [EXTRACTED]
 - [[.test_capabilities_not_dropped_flagged()]] - `calls` [EXTRACTED]
 - [[.test_compose_contains_all_agents()]] - `calls` [EXTRACTED]
@@ -38,7 +38,7 @@ tags:
 - [[.verify_network_isolation()]] - `method` [EXTRACTED]
 - [[.verify_shared_nothing()]] - `method` [EXTRACTED]
 - [[.verify_volume_isolation()]] - `method` [EXTRACTED]
-- [[ContainerConfig]] - `uses` [INFERRED]
+- [[ContainerConfig_1]] - `uses` [INFERRED]
 - [[DriftDetector]] - `shares_data_with` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAgentRegistry]] - `uses` [INFERRED]
@@ -58,9 +58,9 @@ tags:
 - [[TestVolumeIsolation]] - `uses` [INFERRED]
 - [[Verify container isolation properties.]] - `rationale_for` [EXTRACTED]
 - [[agent_isolation.py]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
+- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_agent_isolation.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

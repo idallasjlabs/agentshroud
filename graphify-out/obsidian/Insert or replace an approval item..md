@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "rationale"
-community: "ApprovalRequest"
+community: "Project Documentation"
 location: "L64"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/Project_Documentation
 ---
 
 # Insert or replace an approval item.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.save()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/rationale #graphify/EXTRACTED #community/Project_Documentation

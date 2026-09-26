@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "KeyRotationManager"
+community: "TestNormalizeForSpeech"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/TestNormalizeForSpeech
 ---
 
 # KeyRotationManager
 
 ## Connections
-- [[.__init__()_12]] - `calls` [EXTRACTED]
-- [[.__init__()_124]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_88]] - `method` [EXTRACTED]
 - [[._generate_new_credential()]] - `method` [EXTRACTED]
 - [[._read_credential_from_1password()]] - `method` [EXTRACTED]
 - [[._retire_old_credential_after_grace_period()]] - `method` [EXTRACTED]
@@ -25,26 +25,26 @@ tags:
 - [[.get_all_credentials_status()]] - `method` [EXTRACTED]
 - [[.get_credential_status()]] - `method` [EXTRACTED]
 - [[.get_health_score()]] - `method` [EXTRACTED]
-- [[.manager()_1]] - `calls` [EXTRACTED]
+- [[.manager()]] - `calls` [EXTRACTED]
 - [[.register_credential()]] - `method` [EXTRACTED]
 - [[.register_validator()]] - `method` [EXTRACTED]
 - [[.rotate_credential()]] - `method` [EXTRACTED]
 - [[.setup_manager_with_credential()]] - `calls` [EXTRACTED]
 - [[.test_check_and_rotate_due_credentials()]] - `calls` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[Any_2]] - `uses` [INFERRED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
 - [[EgressAllowlistResponse]] - `uses` [INFERRED]
 - [[EgressAllowlistUpdate]] - `uses` [INFERRED]
-- [[Exception_1]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[KeyRotationConfig_1]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[Manages automated rotation of credentials with zero downtime.]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[MockValidator]] - `uses` [INFERRED]
-- [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[TestCheckAndRotateDisabled]] - `uses` [INFERRED]
 - [[TestCredentialInfo]] - `uses` [INFERRED]
 - [[TestCredentialRotationPolicy]] - `uses` [INFERRED]
@@ -57,15 +57,15 @@ tags:
 - [[TestRotateGuardBranches]] - `uses` [INFERRED]
 - [[TestStatusHelpers]] - `uses` [INFERRED]
 - [[TestStoreIn1Password]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[ToolTier]] - `uses` [INFERRED]
 - [[credentials_health()]] - `calls` [EXTRACTED]
 - [[credentials_status()]] - `calls` [EXTRACTED]
 - [[key_rotation.py]] - `contains` [EXTRACTED]
 - [[management.py]] - `imports` [EXTRACTED]
-- [[manager()]] - `calls` [EXTRACTED]
+- [[manager()_2]] - `calls` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[rotate_credential()]] - `calls` [EXTRACTED]
 - [[test_key_rotation.py]] - `imports` [EXTRACTED]
 - [[test_key_rotation_internals.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/TestNormalizeForSpeech

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "KeyRotationConfig"
+community: "3. Security Controls"
 location: "L122"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/KeyRotationConfig
+  - community/3_Security_Controls
 ---
 
 # KeyRotationConfig
 
 ## Connections
-- [[.__init__()_124]] - `references` [EXTRACTED]
+- [[.__init__()_88]] - `references` [EXTRACTED]
 - [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
 - [[KeyRotationConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/KeyRotationConfig
+#graphify/code #graphify/INFERRED #community/3_Security_Controls

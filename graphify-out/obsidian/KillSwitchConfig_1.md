@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "TeamsConfig"
 location: "L37"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/KillSwitchMonitor
+  - community/TeamsConfig
 ---
 
 # KillSwitchConfig
 
 ## Connections
-- [[.__init__()_164]] - `references` [EXTRACTED]
+- [[.__init__()_92]] - `references` [EXTRACTED]
 - [[KillSwitchConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/KillSwitchMonitor
+#graphify/code #graphify/INFERRED #community/TeamsConfig

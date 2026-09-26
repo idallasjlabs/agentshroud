@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_schema.py"
 type: "rationale"
-community: "OutputSchemaEnforcer"
+community: "hermes/skills/i-cr/SKILL.md"
 location: "L39"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OutputSchemaEnforcer
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # JSON tool call payloads should be flagged and redacted.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_raw_tool_payload_stripped()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OutputSchemaEnforcer
+#graphify/rationale #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

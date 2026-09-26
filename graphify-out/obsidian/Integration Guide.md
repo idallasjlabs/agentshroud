@@ -1,18 +1,18 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Integration Guide"
+community: "Update AgentShroud"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Integration_Guide
+  - community/Update_AgentShroud
 ---
 
 # Integration Guide
 
 ## Connections
-- [[1Password Integration_2]] - `contains` [EXTRACTED]
+- [[1Password Integration]] - `contains` [EXTRACTED]
 - [[AgentShroud v1.3.0]] - `contains` [EXTRACTED]
 - [[CICD Pipeline Integration]] - `contains` [EXTRACTED]
 - [[Generic AI Agent Integration]] - `contains` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[OpenClaw Integration (Primary Target)]] - `contains` [EXTRACTED]
 - [[integration-guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Integration_Guide
+#graphify/document #graphify/EXTRACTED #community/Update_AgentShroud

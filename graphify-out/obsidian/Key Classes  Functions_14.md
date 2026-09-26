@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
 type: "document"
-community: "PromptGuard"
-location: "L28"
+community: "Morning Checklist (5 minutes)"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/Morning_Checklist_5_minutes
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[PromptGuard_2]] - `contains` [EXTRACTED]
+- [[mcp_permissions.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PromptGuard
+#graphify/document #graphify/EXTRACTED #community/Morning_Checklist_5_minutes

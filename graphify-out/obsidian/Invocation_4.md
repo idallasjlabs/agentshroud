@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-hdev/SKILL.md"
+source_file: "docker/config/hermes/skills/i-crpr/SKILL.md"
 type: "document"
-community: "Skill: Hermes Dev Workflow (HDEV)"
-location: "L25"
+community: "v1.3.0 — Platform Expansion (53 items)"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Hermes_Dev_Workflow_HDEV
+  - community/v130__Platform_Expansion_53_items
 ---
 
 # Invocation
 
 ## Connections
-- [[Skill Hermes Dev Workflow (HDEV)_2]] - `contains` [EXTRACTED]
+- [[Skill Create PR with Pre-Flight Audit (CRPR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Hermes_Dev_Workflow_HDEV
+#graphify/document #graphify/EXTRACTED #community/v130__Platform_Expansion_53_items

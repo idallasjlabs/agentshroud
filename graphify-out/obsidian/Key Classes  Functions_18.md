@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
 type: "document"
-community: "apple_engine.py"
-location: "L23"
+community: "Deployment Runbook — AgentShroud"
+location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/apple_enginepy
+  - community/Deployment_Runbook__AgentShroud
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[apple_engine.py_2]] - `contains` [EXTRACTED]
+- [[url_analyzer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/apple_enginepy
+#graphify/document #graphify/EXTRACTED #community/Deployment_Runbook__AgentShroud

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "ToolACLEnforcer"
 location: "L703"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/ToolACLEnforcer
 ---
 
 # Kick (ban + unban) a user from a Telegram group. Returns True on success.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._telegram_kick_member()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/ToolACLEnforcer

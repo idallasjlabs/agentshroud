@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
 type: "document"
-community: "sidecar.py"
-location: "L22"
+community: "test_claude_via_openai_path.py"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sidecarpy
+  - community/test_claude_via_openai_pathpy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[sidecar.py_2]] - `contains` [EXTRACTED]
+- [[TrustManager_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sidecarpy
+#graphify/document #graphify/EXTRACTED #community/test_claude_via_openai_pathpy

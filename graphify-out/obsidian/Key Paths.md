@@ -1,12 +1,12 @@
 ---
 source_file: "CHEATSHEET.md"
 type: "document"
-community: "AgentShroud Operations Cheat Sheet"
+community: "AgentShroud Docker Configuration"
 location: "L409"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Operations_Cheat_Sheet
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # Key Paths
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Operations Cheat Sheet]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

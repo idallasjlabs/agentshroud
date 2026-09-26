@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Key Benefits"
+community: "Tailscale mesh VPN (tail240ea8.ts.net)"
 location: "L83"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Key_Benefits
+  - community/Tailscale_mesh_VPN_tail240ea8tsnet
 ---
 
 # Key Benefits
@@ -18,4 +18,4 @@ tags:
 - [[4. Better Development Workflow]] - `contains` [EXTRACTED]
 - [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Key_Benefits
+#graphify/document #graphify/EXTRACTED #community/Tailscale_mesh_VPN_tail240ea8tsnet

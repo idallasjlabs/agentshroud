@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/python-jose.md"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
 type: "document"
-community: "RateLimiter"
-location: "L23"
+community: "Bot Container (agent decides: reply + tool call)"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/Bot_Container_agent_decides_reply__tool_call
 ---
 
 # Key Features
 
 ## Connections
-- [[python-jose]] - `contains` [EXTRACTED]
+- [[installer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/RateLimiter
+#graphify/document #graphify/EXTRACTED #community/Bot_Container_agent_decides_reply__tool_call

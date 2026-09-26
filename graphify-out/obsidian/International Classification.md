@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/USPTO-APPLICATION.md"
 type: "document"
-community: "USPTO Trademark Application — AgentShroud™"
+community: "TestKillSwitchVerification"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/USPTO_Trademark_Application__AgentShroud
+  - community/TestKillSwitchVerification
 ---
 
 # International Classification
@@ -16,4 +16,4 @@ tags:
 - [[Class 042 — Scientific and Technological Services (Primary)]] - `contains` [EXTRACTED]
 - [[USPTO Trademark Application — AgentShroud™]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/USPTO_Trademark_Application__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/TestKillSwitchVerification

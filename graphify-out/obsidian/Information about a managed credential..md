@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "CredentialInfo"
+community: "TestInspectorEdgeCases"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CredentialInfo
+  - community/TestInspectorEdgeCases
 ---
 
 # Information about a managed credential.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CredentialInfo]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CredentialInfo
+#graphify/rationale #graphify/EXTRACTED #community/TestInspectorEdgeCases

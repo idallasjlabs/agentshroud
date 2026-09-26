@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "TrustManager"
+community: "ResourceGuard"
 location: "L100"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/ResourceGuard
 ---
 
 # Initialize Microsoft Presidio engines          Falls back to regex if Presidio/s
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._init_presidio()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

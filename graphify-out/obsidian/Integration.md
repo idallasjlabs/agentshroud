@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
+source_file: "docs/vault/03 - Configuration/falco-rules.md"
 type: "document"
-community: "gitleaks.toml"
-location: "L29"
+community: "GroupApprovalRouter"
+location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/gitleakstoml
+  - community/GroupApprovalRouter
 ---
 
 # Integration
 
 ## Connections
-- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
+- [[falco-rules.yaml]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/gitleakstoml
+#graphify/document #graphify/EXTRACTED #community/GroupApprovalRouter

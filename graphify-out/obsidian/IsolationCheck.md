@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "AgentRegistry"
+community: "lvgl_kawaii_face.c"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/lvgl_kawaii_facec
 ---
 
 # IsolationCheck
@@ -17,4 +17,4 @@ tags:
 - [[.verify_volume_isolation()]] - `references` [EXTRACTED]
 - [[agent_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/lvgl_kawaii_facec

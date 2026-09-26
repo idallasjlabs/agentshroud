@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
+source_file: ".agents/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
+community: "gh-issues — Auto-fix GitHub Issues with Parallel"
 location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel
 ---
 
 # Input Requirements
 
 ## Connections
-- [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel

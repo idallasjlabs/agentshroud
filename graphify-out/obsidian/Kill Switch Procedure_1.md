@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Kill Switch Procedure.md"
 type: "document"
-community: "Kill Switch Procedure"
+community: "Claude Code skill catalog (59 skills)"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Kill_Switch_Procedure
+  - community/Claude_Code_skill_catalog_59_skills
 ---
 
 # Kill Switch Procedure
@@ -20,7 +20,7 @@ tags:
 - [[Method 3 Script]] - `contains` [EXTRACTED]
 - [[Method 4 Docker Direct (Last Resort)]] - `contains` [EXTRACTED]
 - [[Post-Kill Switch Procedure]] - `contains` [EXTRACTED]
-- [[Related Notes_47]] - `contains` [EXTRACTED]
-- [[When to Use_3]] - `contains` [EXTRACTED]
+- [[Related Notes_68]] - `contains` [EXTRACTED]
+- [[When to Use]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Kill_Switch_Procedure
+#graphify/document #graphify/EXTRACTED #community/Claude_Code_skill_catalog_59_skills

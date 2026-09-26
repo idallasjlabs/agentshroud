@@ -1,21 +1,22 @@
 ---
-source_file: "skills/openclaw/xurl/SKILL.md"
+source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "xurl — Agent Skill Reference"
-location: "L37"
+community: ".decide()"
+location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/xurl__Agent_Skill_Reference
+  - community/decide
 ---
 
 # Installation
 
 ## Connections
-- [[Go]] - `contains` [EXTRACTED]
-- [[Homebrew (macOS)]] - `contains` [EXTRACTED]
-- [[Shell script]] - `contains` [EXTRACTED]
-- [[npm]] - `contains` [EXTRACTED]
-- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
+- [[1. Generate the voice gateway token]] - `contains` [EXTRACTED]
+- [[2. Create `wifi_credentials.h`]] - `contains` [EXTRACTED]
+- [[3. Start the voice gateway]] - `contains` [EXTRACTED]
+- [[4. Enable Tailscale Funnel]] - `contains` [EXTRACTED]
+- [[5. Build and flash the firmware]] - `contains` [EXTRACTED]
+- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference
+#graphify/document #graphify/EXTRACTED #community/decide

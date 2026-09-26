@@ -1,12 +1,12 @@
 ---
 source_file: "docs/archive/ANNOUNCEMENT.md"
 type: "concept"
-community: "One Shroud Over Every Wire (founding mantra)"
+community: "A2AMessage"
 location: "L49-L76, L172-L183"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/One_Shroud_Over_Every_Wire_founding_mantra
+  - community/A2AMessage
 ---
 
 # Information Valve (user-controlled manual forwarding)
@@ -17,4 +17,4 @@ tags:
 - [[Separate Digital Environment Philosophy]] - `implements` [EXTRACTED]
 - [[Telegram Quick Forwarding Commands]] - `implements` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/One_Shroud_Over_Every_Wire_founding_mantra
+#graphify/concept #graphify/INFERRED #community/A2AMessage

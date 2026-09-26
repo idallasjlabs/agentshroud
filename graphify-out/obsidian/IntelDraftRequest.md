@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "DraftEntry"
+community: "_call_agent_stream()"
 location: "L1118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DraftEntry
+  - community/_call_agent_stream
 ---
 
 # IntelDraftRequest
@@ -16,8 +16,8 @@ tags:
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
-- [[IntelReportStore_1]] - `uses` [INFERRED]
+- [[IntelReportStore]] - `uses` [INFERRED]
 - [[api.py]] - `contains` [EXTRACTED]
 - [[submit_competitive_intel()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DraftEntry
+#graphify/code #graphify/EXTRACTED #community/_call_agent_stream

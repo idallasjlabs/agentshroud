@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-odev/SKILL.md"
+source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Skill: OpenClaw Dev Workflow (ODEV)"
+community: "Skill: UI Expert (UI)"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_OpenClaw_Dev_Workflow_ODEV
+  - community/Skill_UI_Expert_UI
 ---
 
 # Invocation
 
 ## Connections
-- [[Skill OpenClaw Dev Workflow (ODEV)_2]] - `contains` [EXTRACTED]
+- [[Skill Hermes Dev Workflow (HDEV)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_OpenClaw_Dev_Workflow_ODEV
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

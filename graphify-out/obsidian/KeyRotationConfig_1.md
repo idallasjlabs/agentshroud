@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "code"
-community: "KeyRotationConfig"
+community: "OpenClaw Bot Container"
 location: "L52"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/KeyRotationConfig
+  - community/OpenClaw_Bot_Container
 ---
 
 # KeyRotationConfig
@@ -16,14 +16,14 @@ tags:
 - [[.get_op_reference()]] - `method` [EXTRACTED]
 - [[.get_policy()_1]] - `method` [EXTRACTED]
 - [[.is_emergency_trigger_enabled()]] - `method` [EXTRACTED]
-- [[.manager()_1]] - `calls` [EXTRACTED]
+- [[.manager()]] - `calls` [EXTRACTED]
 - [[.setup_manager_with_credential()]] - `calls` [EXTRACTED]
 - [[.test_add_custom_policy()]] - `calls` [EXTRACTED]
 - [[.test_check_and_rotate_due_credentials()]] - `calls` [EXTRACTED]
 - [[.test_default_config_has_common_policies()]] - `calls` [EXTRACTED]
 - [[.test_get_op_reference_builds_correctly()]] - `calls` [EXTRACTED]
 - [[.test_get_policy_returns_default_for_unknown_type()]] - `calls` [EXTRACTED]
-- [[Any_19]] - `uses` [INFERRED]
+- [[Any_43]] - `uses` [INFERRED]
 - [[Configuration for key rotation policies and schedules.]] - `rationale_for` [EXTRACTED]
 - [[CredentialInfo]] - `uses` [INFERRED]
 - [[CredentialRotationPolicy]] - `uses` [INFERRED]
@@ -48,13 +48,13 @@ tags:
 - [[TestStoreIn1Password]] - `uses` [INFERRED]
 - [[credentials_health()]] - `calls` [EXTRACTED]
 - [[credentials_status()]] - `calls` [EXTRACTED]
-- [[datetime_2]] - `uses` [INFERRED]
+- [[datetime_4]] - `uses` [INFERRED]
 - [[key_rotation.py]] - `imports` [EXTRACTED]
 - [[key_rotation_config.py]] - `contains` [EXTRACTED]
 - [[management.py]] - `imports` [EXTRACTED]
-- [[manager()]] - `calls` [EXTRACTED]
+- [[manager()_2]] - `calls` [EXTRACTED]
 - [[rotate_credential()]] - `calls` [EXTRACTED]
 - [[test_key_rotation.py]] - `imports` [EXTRACTED]
 - [[test_key_rotation_internals.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/KeyRotationConfig
+#graphify/code #graphify/INFERRED #community/OpenClaw_Bot_Container

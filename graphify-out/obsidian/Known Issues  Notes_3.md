@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "sanitizer.py"
-location: "L80"
+community: "TestNetworkValidator"
+location: "L456"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sanitizerpy
+  - community/TestNetworkValidator
 ---
 
 # Known Issues / Notes
 
 ## Connections
-- [[sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[main.py_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sanitizerpy
+#graphify/document #graphify/EXTRACTED #community/TestNetworkValidator

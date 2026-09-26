@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "document"
-community: "Quick Reference — AgentShroud"
+community: "PipelineAction"
 location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_Reference__AgentShroud
+  - community/PipelineAction
 ---
 
 # Key Design Decisions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud — System Overview]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_Reference__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/PipelineAction

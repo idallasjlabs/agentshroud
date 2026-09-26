@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "TeamsConfig"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/TeamsConfig
 ---
 
 # KillSwitchMonitor
 
 ## Connections
-- [[.__init__()_12]] - `calls` [EXTRACTED]
-- [[.__init__()_164]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_92]] - `method` [EXTRACTED]
 - [[._check_request_rate()]] - `method` [EXTRACTED]
-- [[._check_system_resources()_1]] - `method` [EXTRACTED]
+- [[._check_system_resources()]] - `method` [EXTRACTED]
 - [[._check_token_usage()]] - `method` [EXTRACTED]
 - [[._check_tool_call_rate()]] - `method` [EXTRACTED]
 - [[._clean_old_metrics()]] - `method` [EXTRACTED]
@@ -33,7 +33,7 @@ tags:
 - [[._test_script_permissions()]] - `method` [EXTRACTED]
 - [[._test_script_syntax()]] - `method` [EXTRACTED]
 - [[.anomaly_detection()]] - `method` [EXTRACTED]
-- [[.get_status()_1]] - `method` [EXTRACTED]
+- [[.get_status()]] - `method` [EXTRACTED]
 - [[.heartbeat_check()]] - `method` [EXTRACTED]
 - [[.test_all_pass_when_script_valid()]] - `calls` [EXTRACTED]
 - [[.test_anomaly_detection_excessive_tool_calls()]] - `calls` [EXTRACTED]
@@ -58,24 +58,24 @@ tags:
 - [[.test_system_resource_memory_anomaly()]] - `calls` [EXTRACTED]
 - [[.test_verify_killswitch_script_not_exists()]] - `calls` [EXTRACTED]
 - [[.verify_killswitch()]] - `method` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[Any_2]] - `uses` [INFERRED]
-- [[Exception_1]] - `uses` [INFERRED]
-- [[FastAPI_3]] - `uses` [INFERRED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
+- [[FastAPI_2]] - `uses` [INFERRED]
 - [[KillSwitchConfig]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[Monitor and verify kill switch functionality.      Provides automated verificati]] - `rationale_for` [EXTRACTED]
-- [[Path_29]] - `uses` [INFERRED]
-- [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
+- [[Path_35]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[TestAnomalyDetection_1]] - `uses` [INFERRED]
 - [[TestAutoRevert]] - `uses` [INFERRED]
 - [[TestCriticalLogging]] - `uses` [INFERRED]
 - [[TestGetMode]] - `uses` [INFERRED]
 - [[TestHeartbeat]] - `uses` [INFERRED]
-- [[TestKillSwitchConfig]] - `uses` [INFERRED]
+- [[TestKillSwitchConfig_1]] - `uses` [INFERRED]
 - [[TestKillSwitchMonitor]] - `uses` [INFERRED]
 - [[TestKillSwitchVerification]] - `uses` [INFERRED]
 - [[TestModeRequestModel]] - `uses` [INFERRED]
@@ -84,13 +84,13 @@ tags:
 - [[TestSetMode]] - `uses` [INFERRED]
 - [[TestStatusAndStats]] - `uses` [INFERRED]
 - [[TestVerifyKillswitch]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[ToolTier]] - `uses` [INFERRED]
 - [[killswitch_monitor.py]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
+- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_killswitch_monitor.py]] - `imports` [EXTRACTED]
 - [[test_killswitch_monitor_behavior.py]] - `imports` [EXTRACTED]
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

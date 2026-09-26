@@ -1,17 +1,17 @@
 ---
-source_file: "docs/project/SYSTEM_STATUS.md"
+source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "AgentShroud System Status Report"
-location: "L6"
+community: "TestMultiBotIsolation"
+location: "L367"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_System_Status_Report
+  - community/TestMultiBotIsolation
 ---
 
 # Infrastructure
 
 ## Connections
-- [[✅ What's WORKING]] - `contains` [EXTRACTED]
+- [[AgentShroud Red Team Adversarial Tester_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Status_Report
+#graphify/document #graphify/EXTRACTED #community/TestMultiBotIsolation

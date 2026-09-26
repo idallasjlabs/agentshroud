@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
 type: "document"
-community: "ledger.py"
-location: "L100"
+community: "Function Details"
+location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ledgerpy
+  - community/Function_Details
 ---
 
 # Known Issues / Notes
 
 ## Connections
-- [[ledger.py_2]] - `contains` [EXTRACTED]
+- [[models.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ledgerpy
+#graphify/document #graphify/EXTRACTED #community/Function_Details

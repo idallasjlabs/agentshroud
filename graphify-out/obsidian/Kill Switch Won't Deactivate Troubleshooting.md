@@ -1,11 +1,11 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "concept"
-community: "troubleshooting.md"
+community: "test_clamav_pipeline.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/troubleshootingmd
+  - community/test_clamav_pipelinepy
 ---
 
 # Kill Switch Won't Deactivate Troubleshooting
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[troubleshooting]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/troubleshootingmd
+#graphify/concept #graphify/EXTRACTED #community/test_clamav_pipelinepy

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "KeyVault"
+community: "AsyncMock"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/AsyncMock
 ---
 
 # KeyAuditEvent
 
 ## Connections
 - [[._log_audit()]] - `calls` [EXTRACTED]
-- [[.get_audit_log()_8]] - `references` [EXTRACTED]
-- [[key_vault.py_2]] - `contains` [EXTRACTED]
+- [[.get_audit_log()_5]] - `references` [EXTRACTED]
+- [[key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

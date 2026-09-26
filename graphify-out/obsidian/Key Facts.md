@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Press Kit"
+community: "AgentShroud Incident Response Plan"
 location: "L192"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Press_Kit
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Key Facts
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Press Kit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Press_Kit
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

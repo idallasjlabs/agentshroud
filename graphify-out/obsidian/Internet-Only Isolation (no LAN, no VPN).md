@@ -1,12 +1,12 @@
 ---
 source_file: "docs/archive/ANNOUNCEMENT.md"
 type: "rationale"
-community: "One Shroud Over Every Wire (founding mantra)"
+community: "A2AMessage"
 location: "L85-L137"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/One_Shroud_Over_Every_Wire_founding_mantra
+  - community/A2AMessage
 ---
 
 # Internet-Only Isolation (no LAN, no VPN)
@@ -17,4 +17,4 @@ tags:
 - [[One Shroud Over Every Wire (founding mantra)]] - `implements` [EXTRACTED]
 - [[Technical Decisions & Trade-offs (why separate identity, internet-only, localhost bind, manual skill approval)]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/One_Shroud_Over_Every_Wire_founding_mantra
+#graphify/rationale #graphify/EXTRACTED #community/A2AMessage

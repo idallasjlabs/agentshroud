@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/slack_proxy.py"
 type: "rationale"
-community: "SlackAPIProxy"
+community: "OutboundInfoFilter"
 location: "L367"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/OutboundInfoFilter
 ---
 
 # Intercept apps.connections.open: rewrite the returned WSS URL to route         t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._intercept_connections_open()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/OutboundInfoFilter

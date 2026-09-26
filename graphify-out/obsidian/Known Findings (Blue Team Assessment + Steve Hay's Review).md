@@ -1,12 +1,12 @@
 ---
 source_file: "docs/claude-security-audit-prompt.md"
 type: "document"
-community: "AgentShroud v0.8.0 — Full Security & Functionali"
+community: "detect_runtime()"
 location: "L115"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080__Full_Security__Functionali
+  - community/detect_runtime
 ---
 
 # Known Findings (Blue Team Assessment + Steve Hay's Review)
@@ -17,4 +17,4 @@ tags:
 - [[Open Findings]] - `contains` [EXTRACTED]
 - [[Steve Hay's Specific Findings]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080__Full_Security__Functionali
+#graphify/document #graphify/EXTRACTED #community/detect_runtime

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-whitepaper.md"
 type: "concept"
-community: "AgentShroud Incident Response Plan"
+community: "test_anthropic_openai_translator.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/test_anthropic_openai_translatorpy
 ---
 
 # Kill Switch (FREEZE/SHUTDOWN/DISCONNECT)
@@ -16,4 +16,4 @@ tags:
 - [[AgentShroud Operations Runbook]] - `references` [EXTRACTED]
 - [[AgentShroud White Paper v1.1 (Feb 2026)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/concept #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy
