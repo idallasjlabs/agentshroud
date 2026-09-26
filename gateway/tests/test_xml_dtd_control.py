@@ -12,6 +12,7 @@ finding in this scanner is advisory, which is correct for prompt-injection
 scoring; it is wrong for a memory-safety bug the agent cannot defend against,
 because a flag that still delivers the document delivers the exploit with it.
 """
+
 from __future__ import annotations
 
 import unittest
