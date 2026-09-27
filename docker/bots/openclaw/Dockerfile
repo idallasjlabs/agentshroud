@@ -119,7 +119,13 @@ RUN printf '%s\n' \
 # (verified via Docker Hub wazuh/wazuh-manager tags — same upstream release
 # train the wazuh-manager sidecar already pins at 4.14.7; this keeps the
 # in-image agent version aligned with it).
-ARG WAZUH_VERSION=4.14.7
+# 2026-09-27 Sunday upgrade: 4.14.7 -> 4.14.8. The 2026-09-26 run bumped the
+# wazuh-agent sidecar (docker/wazuh-agent/Dockerfile) and wazuh-manager tag in
+# docker-compose.yml to 4.14.8 but missed this second, separate in-image agent
+# copy inside OpenClaw's own container — caught by this run's full-repo
+# WAZUH_VERSION grep. Verified 4.14.8 is latest stable 4.x via GitHub releases
+# (v4.14.8, 2026-09-25; v5.0.0 line is still beta).
+ARG WAZUH_VERSION=4.14.8
 RUN curl -sSfL https://packages.wazuh.com/key/GPG-KEY-WAZUH \
         | gpg --dearmor -o /usr/share/keyrings/wazuh.gpg \
     && echo "deb [signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" \
