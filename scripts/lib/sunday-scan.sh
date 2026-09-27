@@ -95,9 +95,22 @@ sunday_resolve_scan_image() {
 # land in a Sunday prod window with no lead time. Daily dev runs now flag it for
 # SUNDAY_IGNORE_WARN_DAYS beforehand.
 _sunday_warn_expiring_acceptances() {
-  local file="$1" days="${SUNDAY_IGNORE_WARN_DAYS:-30}"
+  local file="$1" days="${SUNDAY_IGNORE_WARN_DAYS:-30}" line
   command -v python3 >/dev/null 2>&1 || return 0
-  python3 - "$file" "$days" <<'PYEOF' 2>/dev/null || true
+  # Piped through warn() when it's defined, not printed straight to stdout:
+  # sunday_run_scan_gate's stdout is machine-consumed elsewhere (tests capture
+  # it expecting only the gate's own accounting output), so this diagnostic
+  # must honour the same log-routing contract as every other message in this
+  # library rather than bypass it. Falls back to echo when this function is
+  # sourced/eval'd standalone (outside sunday-upgrade-apply.sh, where warn()
+  # isn't defined) so the warning is never silently swallowed either way.
+  while IFS= read -r line; do
+    if declare -f warn >/dev/null 2>&1; then
+      warn "$line"
+    else
+      echo "$line"
+    fi
+  done < <(python3 - "$file" "$days" <<'PYEOF' 2>/dev/null || true
 import sys, datetime, re
 path, days = sys.argv[1], int(sys.argv[2])
 try:
@@ -120,6 +133,7 @@ for cve, exp in zip(ids, exps):
     elif left <= days:
         print(f"scan: accepted-risk entry {cve} expires in {left}d ({exp}) — re-review before it lapses")
 PYEOF
+  )
 }
 
 sunday_run_scan_gate() {

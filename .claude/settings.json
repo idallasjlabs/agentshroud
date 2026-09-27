@@ -60,7 +60,14 @@
       "Bash(tmux:*)",
       "Bash(scripts/:*)",
       "Bash(docker/scripts/:*)",
-      "Bash(bash scripts/:*)"
+      "Bash(bash scripts/:*)",
+      "mcp__atlassian__searchJiraIssuesUsingJql",
+      "mcp__atlassian__getVisibleJiraProjects",
+      "mcp__atlassian__getJiraIssue",
+      "mcp__atlassian__createJiraIssue",
+      "mcp__atlassian__addCommentToJiraIssue",
+      "mcp__atlassian__getTransitionsForJiraIssue",
+      "mcp__atlassian__transitionJiraIssue"
     ],
     "deny": [
       "Read(docker/secrets/**)",

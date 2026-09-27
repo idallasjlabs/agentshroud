@@ -308,9 +308,33 @@ class TestTriageEntry:
 
 
 class TestDefenseLayerVocabulary:
+    # Layers with intentionally NO backing registry entry: proactive,
+    # class-level gateway controls added for a vulnerability CLASS with no
+    # currently-known OpenClaw advisory, so triage-cve-mitigations.py can
+    # never earn them a registry entry the normal way. Each one here must be
+    # independently proven as real, wired code by its own dedicated test
+    # below (test_proactive_only_layers_have_real_gateway_implementation) —
+    # this set tolerates a missing REGISTRY entry, never a missing
+    # IMPLEMENTATION. Never add a name here to silence a failure without
+    # adding that proof; the failure usually means the CLASS_PROFILE is wrong.
+    _PROACTIVE_ONLY_LAYERS = frozenset(
+        {
+            # gateway/proxy/web_content_scanner.py's WebContentScanner._scan_xml_dtd.
+            # CVE-2026-6653 (libxml2 DTD use-after-free, CVSS 9.8) has no fixed
+            # release on any current Debian base image, and is a gateway
+            # base-image CVE, not an OpenClaw advisory — no _OPENCLAW_CVE_REGISTRY
+            # entry will ever legitimately classify as VulnClass.XXE. The arm-2
+            # control still genuinely blocks the DTD/entity construct at the
+            # gateway for every proxied agent, current or future.
+            "xml_dtd_control",
+        }
+    )
+
     def test_all_mapped_layers_exist_in_registry(self):
         """Every layer the engine can emit must already be used by a mitigated
-        entry in the shipped registry (plus source_fix/defense_in_depth)."""
+        entry in the shipped registry (plus source_fix/defense_in_depth), or be
+        an explicitly-justified proactive-only layer (see
+        _PROACTIVE_ONLY_LAYERS above)."""
         t = _t()
         from gateway.security.agent_cve_registry import _OPENCLAW_CVE_REGISTRY
 
@@ -324,8 +348,20 @@ class TestDefenseLayerVocabulary:
         emitted.add("source_fix")
         emitted.add("defense_in_depth")
 
-        invented = emitted - known
+        invented = emitted - known - self._PROACTIVE_ONLY_LAYERS
         assert invented == set(), f"invented defense layers: {sorted(invented)}"
+
+    def test_proactive_only_layers_have_real_gateway_implementation(self):
+        """Every name in _PROACTIVE_ONLY_LAYERS must be independently proven
+        wired into real gateway code — the allowlist forgives a missing
+        REGISTRY entry, never a missing implementation."""
+        from gateway.proxy.web_content_scanner import WebContentScanner
+
+        assert hasattr(WebContentScanner, "_scan_xml_dtd"), (
+            "xml_dtd_control is declared proactive-only but "
+            "WebContentScanner._scan_xml_dtd no longer exists — the control "
+            "it claims is real would be gone."
+        )
 
 
 # ── rewrite idempotency + isolation ───────────────────────────────────────────

@@ -25,7 +25,15 @@ setuptools>=83.0.0
 aiohttp>=3.14.3,<4.0.0
 
 # WebSocket
-websockets>=16.1.1,<17.0
+# 2026-09-27 Sunday upgrade: 16.1.1 -> 17.1, the <17.0 cap had no CVE or
+# compat comment behind it and predated this upgrade job. websockets 17.0's
+# breaking changes (requires Python>=3.11, keyword-only bool args on
+# send/ping/broadcast, ISO-8859-1 non-ASCII header encoding) don't hit us:
+# CI only tests 3.11/3.13, the Dockerfile runtime is python:3.13-slim, and
+# gateway's websockets.connect()/.send() call sites (ingest_api/main.py,
+# proxy/slack_socket_client.py, proxy/canvas_proxy.py, cli/main.py) pass no
+# positional bools. voice_gateway already runs 17.1 uncapped with no issues.
+websockets>=17.1,<18.0
 
 # Configuration
 pyyaml>=6.0.3,<7.0.0
