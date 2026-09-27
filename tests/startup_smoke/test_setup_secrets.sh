@@ -96,8 +96,11 @@ check "SS6: normalize_secret uses awk to extract last non-empty line" \
     "$(has_in_section "$SRC" '^normalize_secret()' 3 'awk')"
 
 # SS7: cmd_extract sets chmod 600 on extracted secret files
+# Window bumped 50 -> 70 (2026-09-27 Sunday upgrade): cmd_extract has grown to
+# 67 lines as more secret types were added (podcastindex_api_secret, etc.);
+# the chmod 600 call itself never moved, only its offset within the function.
 check "SS7: cmd_extract sets chmod 600 on output files" \
-    "$(has_in_section "$SRC" '^cmd_extract()' 50 'chmod 600')"
+    "$(has_in_section "$SRC" '^cmd_extract()' 70 'chmod 600')"
 
 # SS8: AGENTSHROUD_SECRET_BACKEND env var override is respected
 check "SS8: AGENTSHROUD_SECRET_BACKEND env override wired" \
