@@ -179,9 +179,19 @@ fi
 # while a 41.9MB file from another host downloads fine), so one blip must not
 # cost a week. Backoff is 30/60/90/120s — about 5 minutes total, negligible
 # against a weekly job with a 90-minute budget.
+#
+# `timeout 60` is load-bearing, not decorative: this host has a documented
+# git push/fetch HTTP/2 hang (retry with -c http.version=HTTP/1.1 fixes it
+# interactively) that blocks INDEFINITELY rather than failing fast. Without a
+# timeout, a single hung attempt never reaches the retry loop's own backoff
+# logic at all -- the whole script just sits here until something external
+# (cron's own enforcement, if any) eventually kills it, producing a run that
+# is silently absent from the log after "memory precondition OK" with no
+# FATAL, no report, nothing to retry against (root-caused 2026-09-27 after
+# prod's scheduled run went silent exactly at this point for 2.5+ hours).
 _fetch_ok=0
 for _try in 1 2 3 4 5; do
-  if git fetch origin main >/dev/null 2>&1; then
+  if timeout 60 git fetch origin main >/dev/null 2>&1; then
     _fetch_ok=1
     [ "$_try" -gt 1 ] && echo "[sunday-upgrade] git fetch succeeded on attempt ${_try}."
     break
@@ -398,7 +408,7 @@ if [ -n "$_final_branch" ] && [ "$_final_branch" != "main" ]; then
     echo "[sunday-upgrade] WARN: staying on '${_final_branch}' — uncommitted changes present." >&2
     echo "[sunday-upgrade] WARN: the NEXT run will fail its branch guard until this is resolved." >&2
   else
-    if git push -u origin "$_final_branch" >/dev/null 2>&1; then
+    if timeout 60 git push -u origin "$_final_branch" >/dev/null 2>&1; then
       echo "[sunday-upgrade] pushed '${_final_branch}' (work preserved for review)."
     else
       echo "[sunday-upgrade] WARN: could not push '${_final_branch}' — it exists only locally." >&2
