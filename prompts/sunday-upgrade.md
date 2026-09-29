@@ -50,7 +50,7 @@ Therefore:
 - **No-exceptions remediation (owner directive 2026-09-01, verbatim): "This is a security tool. All CVE must be resolved and all versions must be updated to latest release on Sunday no exceptions. If code changes are required, we need to make them."** Concretely: needing a CODE change (Dockerfile ARG bumps, dependency/lockfile updates, build tweaks) is NOT grounds for BLOCKED — make the change, commit it on the run's branch, test it, ship it through the dev→prod flow. The ONLY legitimate residuals are (a) CVEs with no fix released anywhere upstream — each individually documented in docs/security/cve-mitigation-matrix.md with evidence, and (b) upgrades that would require LOOSENING a security control (previous bullet — that stays BLOCKED). "The fix requires work" is never a reason to skip.
 - Never print, log, or commit secrets. Never edit `.env` values other than version pins.
 - Work on a branch named `chore/upgrade-YYYY-MM-DD` (today's date). Commit with clear messages. Do not push, merge, or open a PR unless the repo's CLAUDE.md/docs explicitly say the Sunday job should. Do not rewrite history.
-- Keep a running log at `~/Development/<project>/reports/upgrade-YYYY-MM-DD.md` from the very start so a partial run still leaves a record.
+- Keep a running log at `~/Development/<project>/reports/upgrade-YYYY-MM-DD.md` from the very start so a partial run still leaves a record. This IS the report file from step 7, not a separate scratch log — write each of its 8 sections to disk (Edit/Write, append or fill in) the moment that section's work is done, never held in memory to be composed in one final write. A session that gets stuck or is killed at any point must leave everything completed up to that point already on disk (2026-09-27: a run got stuck trying to save the final report and lost everything, including sections that had actually finished minutes earlier — this line exists to make that unrecoverable).
 - Time budget: if you are past 90 minutes and not finished, stop, ensure both stacks are healthy (roll back anything half-applied), and report what remains.
 
 ## Cross-account reality (marvin)
@@ -322,7 +322,7 @@ Every Sunday run is tracked in a Jira ticket (project **SCRUM**, cloudId
   in the report's manual follow-ups section — never silently skip Jira.
 
 ### 7. Report
-Finish `reports/upgrade-YYYY-MM-DD.md` with these sections, then print the whole file to stdout as the final output (Hermes captures stdout):
+`reports/upgrade-YYYY-MM-DD.md` should already contain most of this by now (see the preflight instruction to write each section as it's completed, not at the end). This step is filling in whatever sections are still missing and doing a final pass, not a single big write of the whole file — the file must never exist only in your own context. Sections:
 
 1. **Summary line** — one of: `ALL GREEN`, `PARTIAL (n components failed/blocked)`, `ROLLED BACK`, `ABORTED (reason)`.
 2. **Environment mapping** you discovered (dev vs prod).
@@ -332,5 +332,7 @@ Finish `reports/upgrade-YYYY-MM-DD.md` with these sections, then print the whole
 6. **Breaking changes / manual follow-ups** — anything from changelogs a human must read, and every BLOCKED item with the policy change it would require.
 7. **Rollback instructions** — exact commands to return prod and dev to the pre-run baseline.
 8. **Time spent** and whether the 90-minute budget was hit.
+
+As the actual last action of the run, `cat` the finished file to stdout (Hermes captures it for delivery) — a plain read of what's already safely on disk, not a re-composition of it.
 
 Never end the run with either stack in a non-healthy state.
