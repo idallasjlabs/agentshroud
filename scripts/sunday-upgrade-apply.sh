@@ -1323,7 +1323,7 @@ write_handoff() {
     printf '  "notes": "Written by sunday-upgrade-apply.sh with --phase=%s. status=PASS is only ever published by a full --phase=all run, and means preflight, scan, apply and verify all passed on dev, including a %ss stability soak."\n' "$PHASE" "$SOAK_SECONDS"
     printf '}\n'
   } > "$out"
-  chmod 644 "$out" 2>/dev/null || true
+  chmod 664 "$out" 2>/dev/null || true
   log "handoff: wrote $out (status=$status)"
 }
 
