@@ -124,7 +124,7 @@ RUN set -eux; \
 # for build simplicity, consistent with every other builder stage in this
 # file — same static, self-contained binary either way.
 FROM golang:1.26-trixie@sha256:bdca99a00bc16590cb1a0bb4e698f5fc5d6a64e4d5eef13d9f18a0ee08e5fa65 AS docker-cli-builder
-ARG DOCKER_CLI_VERSION=29.8.1
+ARG DOCKER_CLI_VERSION=29.8.2
 # docker/cli ships vendor.mod + a committed vendor/ dir instead of go.mod —
 # pre-modules GOPATH vendoring, not the standard module layout every other
 # builder stage in this file uses. Must clone into $GOPATH/src/... and build
@@ -237,7 +237,7 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     rm /tmp/cosign_checksums.txt
 
 # Syft SBOM generator — pinned version
-ARG SYFT_VERSION=1.52.0  # SCRUM-100: patched Go; SCRUM-174 bump
+ARG SYFT_VERSION=1.54.0  # SCRUM-100: patched Go; SCRUM-174 bump
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
       arm64) SYFT_ARCH="arm64" ;; \
@@ -251,7 +251,7 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     rm "/tmp/syft_${SYFT_VERSION}_linux_${SYFT_ARCH}.deb"
 
 # Trivy vulnerability scanner — pinned version (M7 fix)
-ARG TRIVY_VERSION=0.74.0  # SCRUM-100: patched Go; SCRUM-174 bump
+ARG TRIVY_VERSION=0.75.0  # SCRUM-100: patched Go; SCRUM-174 bump
 # R2-M1: Download Trivy with SHA256 + cosign signature verification for supply chain integrity
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
@@ -306,7 +306,7 @@ RUN chmod +x /usr/local/bin/docker
 # Fluent Bit log processor — pinned version, arch-aware (same pattern as Trivy/Syft)
 # SCRUM-101: 3.2.7 → 5.0.9 (latest maintenance; clears C/Go lib CVEs). Config is
 # plain-INI ([SERVICE]/[INPUT]/[FILTER]/[OUTPUT]) — stable across 3.x→5.x; sidecar intact.
-ARG FLUENT_BIT_VERSION=5.1.2
+ARG FLUENT_BIT_VERSION=5.1.3
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     ( curl -sSfL -o "/tmp/fluent-bit_${FLUENT_BIT_VERSION}_${DPKG_ARCH}.deb" \
         "https://packages.fluentbit.io/debian/bookworm/pool/main/f/fluent-bit/fluent-bit_${FLUENT_BIT_VERSION}_${DPKG_ARCH}.deb" && \
