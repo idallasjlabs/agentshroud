@@ -24,7 +24,7 @@
 #     version whose module path changes to `/v2`; slsa-verifier v2.7.1 imports the v1
 #     path -> cannot override without patching upstream source (unreleased).
 # Reproducible: pinned Go base digest + pinned module version + go.sum re-verified.
-FROM golang:1.26-trixie@sha256:bdca99a00bc16590cb1a0bb4e698f5fc5d6a64e4d5eef13d9f18a0ee08e5fa65 AS slsa-builder
+FROM golang:1.26-trixie@sha256:eae2aaa6add2936cbf350dd0d2628b363461542f0c4b3c0b558957e0f2997379 AS slsa-builder
 ARG SLSA_VERSION=2.7.1
 ENV CGO_ENABLED=0 GOFLAGS=-trimpath GOTOOLCHAIN=local
 RUN set -eux; \
@@ -67,7 +67,7 @@ RUN set -eux; \
 # — see slsa-builder above), so the base image is bumped instead of relaxing
 # that. Bumped this stage only: slsa/cosign/docker-cli builders above/below
 # still build clean on 1.26 with their own dep sets.
-FROM golang:1.27-trixie@sha256:433790e515d27dc6003e847e644cc0af956985cf315c1c58a3b73ee2dd305183 AS falcoctl-builder
+FROM golang:1.27-trixie@sha256:3b77fc618ec235a1ab412de7737f120dd507c57e8d87de4cbb7994fb94275ed5 AS falcoctl-builder
 ARG FALCOCTL_VERSION=0.14.2
 ENV CGO_ENABLED=0 GOFLAGS=-trimpath GOTOOLCHAIN=local
 RUN set -eux; \
@@ -96,7 +96,7 @@ RUN set -eux; \
 # falcoctl-builder above: rebuild from the same source tag with the deps
 # forced current, then overlay the result onto the release-binary install
 # below instead of using the download as-is.
-FROM golang:1.26-trixie@sha256:bdca99a00bc16590cb1a0bb4e698f5fc5d6a64e4d5eef13d9f18a0ee08e5fa65 AS cosign-builder
+FROM golang:1.26-trixie@sha256:eae2aaa6add2936cbf350dd0d2628b363461542f0c4b3c0b558957e0f2997379 AS cosign-builder
 ARG COSIGN_VERSION=3.1.3
 ENV CGO_ENABLED=0 GOFLAGS=-trimpath GOTOOLCHAIN=local
 RUN set -eux; \
@@ -123,7 +123,7 @@ RUN set -eux; \
 # (vs. upstream's CGO_ENABLED=1 + external static link) trades PIE hardening
 # for build simplicity, consistent with every other builder stage in this
 # file — same static, self-contained binary either way.
-FROM golang:1.26-trixie@sha256:bdca99a00bc16590cb1a0bb4e698f5fc5d6a64e4d5eef13d9f18a0ee08e5fa65 AS docker-cli-builder
+FROM golang:1.26-trixie@sha256:eae2aaa6add2936cbf350dd0d2628b363461542f0c4b3c0b558957e0f2997379 AS docker-cli-builder
 ARG DOCKER_CLI_VERSION=29.8.2
 # docker/cli ships vendor.mod + a committed vendor/ dir instead of go.mod —
 # pre-modules GOPATH vendoring, not the standard module layout every other
@@ -146,7 +146,7 @@ RUN set -eux; \
 # M8: Base image pinned to SHA256 digest for supply chain integrity
 # SCRUM-101: digest refreshed 2026-07-14 to latest patched python:3.13-slim (clears base OS CVEs).
 # 2026-09-26 Sunday upgrade: digest refreshed again (same tag) — was 8d9d0b8b..., now 7c61056e...
-FROM python:3.13-slim@sha256:7c61056e61ac89e852de05f3dc6fa51a6dd2181797bceed46aa725dd7cb2cd3b AS builder
+FROM python:3.13-slim@sha256:3dd7cc108ec1493442514f5c2a871af6af0ec31d768ff6e378a93340c3b3db5f AS builder
 
 WORKDIR /build
 ENV PIP_ROOT_USER_ACTION=ignore
@@ -171,7 +171,7 @@ RUN pip install --no-cache-dir --prefix=/install -r requirements.txt
 # === Runtime Stage ===
 # SCRUM-101: digest refreshed 2026-07-14 to latest patched python:3.13-slim (clears base OS CVEs).
 # 2026-09-26 Sunday upgrade: digest refreshed again (same tag) — was 8d9d0b8b..., now 7c61056e...
-FROM python:3.13-slim@sha256:7c61056e61ac89e852de05f3dc6fa51a6dd2181797bceed46aa725dd7cb2cd3b
+FROM python:3.13-slim@sha256:3dd7cc108ec1493442514f5c2a871af6af0ec31d768ff6e378a93340c3b3db5f
 
 WORKDIR /app
 ENV PIP_ROOT_USER_ACTION=ignore

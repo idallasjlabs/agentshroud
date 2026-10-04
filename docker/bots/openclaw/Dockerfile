@@ -9,7 +9,7 @@
 # 8+ HIGH Go-stdlib CVEs with no dependency involved at all. Same fix already
 # applied in gateway/Dockerfile: rebuild the same tagged source against the
 # current patched Go base instead of using the release .deb.
-FROM golang:1.26-trixie@sha256:bdca99a00bc16590cb1a0bb4e698f5fc5d6a64e4d5eef13d9f18a0ee08e5fa65 AS docker-cli-builder
+FROM golang:1.26-trixie@sha256:eae2aaa6add2936cbf350dd0d2628b363461542f0c4b3c0b558957e0f2997379 AS docker-cli-builder
 ARG DOCKER_CLI_VERSION=29.8.2
 # docker/cli ships vendor.mod + a committed vendor/ dir instead of go.mod —
 # pre-modules GOPATH vendoring. Must clone into $GOPATH/src/... and build with
