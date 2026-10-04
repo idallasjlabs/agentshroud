@@ -149,6 +149,18 @@ RUN /usr/local/bin/uv pip install --python /opt/hermes/.venv/bin/python3 \
 RUN /usr/local/bin/uv pip install --python /opt/hermes/.venv/bin/python3 \
         'anyio>=4.14.2'
 
+# 2026-10-04 Sunday upgrade: CVE-2026-102268 (PyJWT's is_pem_format in
+# jwt/utils.py doesn't recognise every PEM representation the cryptography
+# loader accepts; an app that mixes HMAC and asymmetric algorithms and is fed
+# a mutated public-key PEM as raw key bytes gets it treated as an HMAC
+# secret by HMACAlgorithm.prepare_key, letting an attacker who knows the
+# public key forge authenticated HMAC tokens). Found by trivy image scan
+# against agentshroud/hermes:1.7.0 (PyJWT 2.13.0, transitive dep, not called
+# directly by our code). Fixed upstream in PyJWT 2.14.0; floor (>=), same
+# reasoning as the tornado/anyio bumps above.
+RUN /usr/local/bin/uv pip install --python /opt/hermes/.venv/bin/python3 \
+        'PyJWT>=2.14.0'
+
 # 2026-09-02: CVE-2026-59873 (node-tar DoS via crafted gzip bomb, fixed in tar 7.5.19)
 # in the upstream image's global npm CLI (vendored tar 7.5.16 under npm's own
 # node_modules, not an app dependency). npm 12.0.2 is the first npm release that
