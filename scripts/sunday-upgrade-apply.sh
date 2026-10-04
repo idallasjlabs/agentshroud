@@ -959,6 +959,18 @@ phase_apply() {
     warn "apply: no buildable services found in $COMPOSE_FILE — nothing to build"
   fi
   for svc in $build_list; do
+    # Re-assert on EVERY iteration, not just once before the loop. The
+    # original single pre-loop check (above) cannot catch a checkout that
+    # moves BETWEEN two services' builds -- exactly what happened 2026-10-04:
+    # gateway built against one commit, the tree was switched mid-run by a
+    # second session, and openclaw then built against a different one. A
+    # Sunday run with several sequential multi-minute builds has a wide
+    # window for that; check at every iteration boundary to shrink it to one
+    # service's build time instead of the whole phase's.
+    if ! _assert_head_unchanged; then
+      _attempt_rollback
+      exit 10
+    fi
     if ! _ensure_build_space "$svc"; then
       _attempt_rollback
       exit 30
