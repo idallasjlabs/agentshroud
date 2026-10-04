@@ -1,7 +1,17 @@
 {
   "permissions": {
     "defaultMode": "plan",
+    "additionalDirectories": ["/Users/Shared/agentshroud-sunday"],
     "allow": [
+      "Read(//Users/Shared/agentshroud-sunday/**)",
+      "Bash(whoami)",
+      "Bash(date)",
+      "Bash(date:*)",
+      "Bash(hostname)",
+      "Bash(trivy:*)",
+      "Bash(pip-audit:*)",
+      "Bash(cosign:*)",
+      "Bash(syft:*)",
       "Bash(chmod:*)",
       "Bash(python:*)",
       "Bash(python3:*)",
