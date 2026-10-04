@@ -237,7 +237,7 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     rm /tmp/cosign_checksums.txt
 
 # Syft SBOM generator — pinned version
-ARG SYFT_VERSION=1.52.0  # SCRUM-100: patched Go; SCRUM-174 bump
+ARG SYFT_VERSION=1.54.0  # SCRUM-100: patched Go; SCRUM-174 bump
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
       arm64) SYFT_ARCH="arm64" ;; \
