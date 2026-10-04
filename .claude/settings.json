@@ -4,6 +4,7 @@
     "additionalDirectories": ["/Users/Shared/agentshroud-sunday"],
     "allow": [
       "Read(//Users/Shared/agentshroud-sunday/**)",
+      "Write(reports/**)",
       "Bash(whoami)",
       "Bash(date)",
       "Bash(date:*)",
