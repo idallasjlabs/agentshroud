@@ -124,7 +124,7 @@ RUN set -eux; \
 # for build simplicity, consistent with every other builder stage in this
 # file — same static, self-contained binary either way.
 FROM golang:1.26-trixie@sha256:bdca99a00bc16590cb1a0bb4e698f5fc5d6a64e4d5eef13d9f18a0ee08e5fa65 AS docker-cli-builder
-ARG DOCKER_CLI_VERSION=29.8.1
+ARG DOCKER_CLI_VERSION=29.8.2
 # docker/cli ships vendor.mod + a committed vendor/ dir instead of go.mod —
 # pre-modules GOPATH vendoring, not the standard module layout every other
 # builder stage in this file uses. Must clone into $GOPATH/src/... and build
