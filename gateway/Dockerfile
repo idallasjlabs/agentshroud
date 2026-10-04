@@ -251,7 +251,7 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     rm "/tmp/syft_${SYFT_VERSION}_linux_${SYFT_ARCH}.deb"
 
 # Trivy vulnerability scanner — pinned version (M7 fix)
-ARG TRIVY_VERSION=0.74.0  # SCRUM-100: patched Go; SCRUM-174 bump
+ARG TRIVY_VERSION=0.75.0  # SCRUM-100: patched Go; SCRUM-174 bump
 # R2-M1: Download Trivy with SHA256 + cosign signature verification for supply chain integrity
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
