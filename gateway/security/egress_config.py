@@ -35,6 +35,13 @@ PERMANENT_EGRESS_DOMAINS: list[str] = [
     # ── Hermes Agent (NousResearch) ──
     "nousresearch.com",
     "*.nousresearch.com",
+    # NousResearch's GitHub Pages site -- a different root domain from
+    # nousresearch.com above (github.io, not nousresearch.com), so the
+    # wildcard doesn't cover it. Routine first-party Hermes/NousResearch
+    # traffic, same rationale as the entry above; not third-party content.
+    # Owner-approved 2026-10-08 after a live yellow-risk egress request
+    # (id c86f88d9, tool http_connect_tunnel, agent hermes).
+    "nousresearch.github.io",
     # ── OpenClaw Agent (vendor telemetry) — routine first-party traffic from
     # the wrapped OpenClaw binary itself, not agent-initiated browsing. Was
     # missing from this list entirely, so every single ping generated its own
