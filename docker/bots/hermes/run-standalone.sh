@@ -77,6 +77,10 @@ FALLBACK_SECRETS_DIR="$REPO_DIR/docker/secrets"
 # Same secret keys as docker/docker-compose.yml's `hermes: secrets:` list.
 # Compose bind-mounts each at /run/secrets/<key> regardless of source filename;
 # replicate that exactly with -v.
+#
+# feedbin_email/feedbin_password are deliberately NOT in this list — see
+# _feedbin_env_args() below for why a -v mount can never work for these two
+# specific keys on this image.
 HERMES_SECRET_KEYS=(
   hermes_telegram_bot_token
   slack_bot_token_hermes
@@ -88,11 +92,44 @@ HERMES_SECRET_KEYS=(
   github_pat
   hermes_healthchecks_url
   gateway_password
-  feedbin_email
-  feedbin_password
   podcastindex_api_key
   podcastindex_api_secret
 )
+
+# 2026-10-08: agentshroud/hermes:1.7.0 bakes /run/secrets/feedbin_email and
+# /run/secrets/feedbin_password as pre-existing EMPTY DIRECTORIES in an image
+# layer dated 2026-09-06 (origin unknown -- not created by anything in this
+# repo's Dockerfile or cont-init scripts, so almost certainly a vendor base-
+# image artifact). Bind-mounting a host FILE onto a path the image already
+# defines as a directory does not fail loudly here -- `docker run` accepts
+# it, but the mount never actually takes effect: `/run/secrets/feedbin_email`
+# stays a directory inside the running container (confirmed live: rmdir
+# fails "Device or resource busy", docker cp fails "mounted volume is marked
+# read-only" -- the mount IS active, it just never presents as a file).
+# Result: feedbin.py silently got "no credentials" every single day this
+# secret was needed, with no error anywhere pointing at the real cause.
+#
+# feedbin.py already documents its own fallback ("need /run/secrets/
+# feedbin_email + feedbin_password, or FEEDBIN_EMAIL/FEEDBIN_PASSWORD") --
+# use that instead of ever touching the cursed path. -e environment
+# variables are set directly in the container's process environment at
+# `docker run` time; they never go through the filesystem/mount layer, so
+# this sidesteps the defect entirely regardless of what the image bakes in.
+_feedbin_env_args() {
+  local key path env_name
+  for key in feedbin_email feedbin_password; do
+    path="$SECRETS_DIR/${key}.txt"
+    if [ ! -f "$path" ] || [ ! -s "$path" ]; then
+      path="$FALLBACK_SECRETS_DIR/${key}.txt"
+    fi
+    env_name="$(echo "$key" | tr '[:lower:]' '[:upper:]')"
+    if [ -f "$path" ] && [ -s "$path" ]; then
+      printf -- '-e\n%s=%s\n' "$env_name" "$(cat "$path")"
+    else
+      echo "  [hermes-standalone] ERROR: no secret file found for '${key}' (checked $SECRETS_DIR and $FALLBACK_SECRETS_DIR) — skipping env var; feedbin skills will fail until this is fixed" >&2
+    fi
+  done
+}
 
 _secret_mount_args() {
   local key path
@@ -157,6 +194,9 @@ cmd_up() {
   while IFS= read -r _secret_arg_line; do
     SECRET_ARGS+=("$_secret_arg_line")
   done < <(_secret_mount_args)
+  while IFS= read -r _secret_arg_line; do
+    SECRET_ARGS+=("$_secret_arg_line")
+  done < <(_feedbin_env_args)
 
   echo "  [hermes-standalone] starting ${CONTAINER} from ${IMAGE} on ${NETWORK}..."
   # shellcheck disable=SC2086

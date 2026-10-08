@@ -40,7 +40,9 @@ PERMANENT_EGRESS_DOMAINS: list[str] = [
     # wildcard doesn't cover it. Routine first-party Hermes/NousResearch
     # traffic, same rationale as the entry above; not third-party content.
     # Owner-approved 2026-10-08 after a live yellow-risk egress request
-    # (id c86f88d9, tool http_connect_tunnel, agent hermes).
+    # (id c86f88d9, tool http_connect_tunnel, agent hermes). Caused recurring
+    # "Egress Request" approval prompts every ~20min for hours on prod,
+    # 2026-09-29 through 2026-10-08, before this was added.
     "nousresearch.github.io",
     # ── OpenClaw Agent (vendor telemetry) — routine first-party traffic from
     # the wrapped OpenClaw binary itself, not agent-initiated browsing. Was
