@@ -35,12 +35,14 @@ PERMANENT_EGRESS_DOMAINS: list[str] = [
     # ── Hermes Agent (NousResearch) ──
     "nousresearch.com",
     "*.nousresearch.com",
-    # nousresearch.github.io is a SEPARATE domain from nousresearch.com (GitHub
-    # Pages, not the nousresearch.com zone -- *.nousresearch.com does not match
-    # it). Missing here caused the exact same pattern as the OpenClaw telemetry
-    # entry below: recurring "🌐 Egress Request" prompts every ~20min for hours
-    # on prod, 2026-09-29 through at least 2026-10-08, hermes periodically
-    # phoning its own vendor docs/update-check endpoint.
+    # NousResearch's GitHub Pages site -- a different root domain from
+    # nousresearch.com above (github.io, not nousresearch.com), so the
+    # wildcard doesn't cover it. Routine first-party Hermes/NousResearch
+    # traffic, same rationale as the entry above; not third-party content.
+    # Owner-approved 2026-10-08 after a live yellow-risk egress request
+    # (id c86f88d9, tool http_connect_tunnel, agent hermes). Caused recurring
+    # "Egress Request" approval prompts every ~20min for hours on prod,
+    # 2026-09-29 through 2026-10-08, before this was added.
     "nousresearch.github.io",
     # ── OpenClaw Agent (vendor telemetry) — routine first-party traffic from
     # the wrapped OpenClaw binary itself, not agent-initiated browsing. Was
