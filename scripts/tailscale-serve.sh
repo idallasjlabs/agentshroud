@@ -23,7 +23,16 @@
 # Services exposed:
 #   :8080/      → Gateway API (port 8080)          https://<host>:8080/
 #   :18789/     → Control UI (port 18789)           https://<host>:18789/
-#   :9119/      → Hermes dashboard (port 9119)      https://<host>:9119/
+#   :9119/      → Hermes dashboard, via gateway      https://<host>:9119/
+#                 (proxies to gateway:8080/hermes-dashboard/, NOT directly to
+#                 Hermes port 9119 -- Hermes is on agentshroud-isolated
+#                 [internal:true] specifically so it can't be reached except
+#                 through the gateway's reverse proxy, which applies the same
+#                 audit/security middleware as every other gateway route.
+#                 2026-10-08: this used to proxy straight to 127.0.0.1:9119,
+#                 bypassing that isolation boundary entirely -- found and
+#                 fixed after the owner asked "shouldn't I connect through
+#                 AgentShroud?" while setting up the Hermes Conduit iOS app.)
 #   :8642/      → Hermes OpenAI API (port 8642)     https://<host>:8642/v1
 #   :8765/      → Voice Gateway WS (port 8765)      wss://<host>:8765/voice (tailnet peers)
 #   /voice      → ESP32-S3-BOX-3 voice terminal     wss://<host>/voice (public Funnel)
@@ -70,8 +79,8 @@ cmd_start() {
     echo "  → Control UI :${CONTROL_UI_PORT} → http://127.0.0.1:${CONTROL_UI_PORT}"
     tailscale serve --bg --https=${CONTROL_UI_PORT} http://127.0.0.1:${CONTROL_UI_PORT}
 
-    echo "  → Hermes dashboard :${HERMES_DASH_PORT} → http://127.0.0.1:${HERMES_DASH_PORT}"
-    tailscale serve --bg --https=${HERMES_DASH_PORT} http://127.0.0.1:${HERMES_DASH_PORT}
+    echo "  → Hermes dashboard :${HERMES_DASH_PORT} → gateway:${GATEWAY_PORT}/hermes-dashboard/ (NOT direct to Hermes — see header note)"
+    tailscale serve --bg --https=${HERMES_DASH_PORT} http://127.0.0.1:${GATEWAY_PORT}/hermes-dashboard/
 
     echo "  → Hermes OpenAI API :${HERMES_API_PORT} → http://127.0.0.1:${HERMES_API_PORT}"
     tailscale serve --bg --https=${HERMES_API_PORT} http://127.0.0.1:${HERMES_API_PORT}
