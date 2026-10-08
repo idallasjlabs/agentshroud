@@ -35,6 +35,13 @@ PERMANENT_EGRESS_DOMAINS: list[str] = [
     # ── Hermes Agent (NousResearch) ──
     "nousresearch.com",
     "*.nousresearch.com",
+    # nousresearch.github.io is a SEPARATE domain from nousresearch.com (GitHub
+    # Pages, not the nousresearch.com zone -- *.nousresearch.com does not match
+    # it). Missing here caused the exact same pattern as the OpenClaw telemetry
+    # entry below: recurring "🌐 Egress Request" prompts every ~20min for hours
+    # on prod, 2026-09-29 through at least 2026-10-08, hermes periodically
+    # phoning its own vendor docs/update-check endpoint.
+    "nousresearch.github.io",
     # ── OpenClaw Agent (vendor telemetry) — routine first-party traffic from
     # the wrapped OpenClaw binary itself, not agent-initiated browsing. Was
     # missing from this list entirely, so every single ping generated its own
