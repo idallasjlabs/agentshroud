@@ -9,8 +9,8 @@
 # 8+ HIGH Go-stdlib CVEs with no dependency involved at all. Same fix already
 # applied in gateway/Dockerfile: rebuild the same tagged source against the
 # current patched Go base instead of using the release .deb.
-FROM golang:1.26-trixie@sha256:bdca99a00bc16590cb1a0bb4e698f5fc5d6a64e4d5eef13d9f18a0ee08e5fa65 AS docker-cli-builder
-ARG DOCKER_CLI_VERSION=29.8.2
+FROM golang:1.26-trixie@sha256:f06b7122f888680048afb247c4e5f49c0069eb6c4c1ccae0f3f4834527a8d22c AS docker-cli-builder
+ARG DOCKER_CLI_VERSION=29.9.0
 # docker/cli ships vendor.mod + a committed vendor/ dir instead of go.mod —
 # pre-modules GOPATH vendoring. Must clone into $GOPATH/src/... and build with
 # GO111MODULE=auto (falls back to GOPATH mode with no go.mod present).
@@ -44,7 +44,7 @@ RUN set -eux; \
 # digest for node:24-trixie-slim, pinned 2026-09-24 (moved off bookworm: all 17
 # CRITICAL CVEs in this image were Debian 12 packages with no fix available)
 # (previous pin from 2026-09-15 was stale — Docker Hub had rebuilt the tag).
-FROM node:24-trixie-slim@sha256:8ec5d7557396cfe32d21c3f9c13072355ceab22b584578ca4bb28af31120cffe
+FROM node:24-trixie-slim@sha256:173f125896c3b47ddf056734c7ea789d04595a6a08769a8f78e0df642781fb66
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Install system dependencies

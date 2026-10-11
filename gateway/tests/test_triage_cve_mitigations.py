@@ -43,6 +43,24 @@ def _t():
     return sys.modules[_MOD_NAME]
 
 
+def _not_yet_fixed() -> str:
+    """A version guaranteed newer than the real pinned RUNNING_VERSION, for
+    tests that need a "not source-fixed yet" fixed_in value.
+
+    Was a hardcoded "2026.9.9" literal in six places below -- exactly the
+    staleness bug test_source_fixed_equal/test_not_source_fixed_newer above
+    already exist to prevent, just not applied everywhere. Broke for real
+    2026-10-11 when OPENCLAW_VERSION advanced past "2026.9.9": the literal
+    stopped meaning "not yet fixed" and silently became "already fixed",
+    flipping six tests' expected under_review/partial/not_mitigated verdicts
+    to fully_mitigated. Length-agnostic, same pattern as
+    test_not_source_fixed_newer, so it can never go stale again.
+    """
+    parts = list(_t().RUNNING_VERSION)
+    parts[-1] += 1
+    return ".".join(str(p) for p in parts)
+
+
 def _entry(
     entry_id="ASH-OCLAW-999",
     title="Path Traversal in media download",
@@ -229,7 +247,7 @@ class TestTriageEntry:
 
     def test_not_source_fixed_full_class_is_fully_mitigated_without_source_fix(self):
         t = _t()
-        r = t.triage_entry(_entry(fixed_in="2026.9.9", title="SSRF to internal metadata"))
+        r = t.triage_entry(_entry(fixed_in=_not_yet_fixed(), title="SSRF to internal metadata"))
         assert r.status == "fully_mitigated"
         assert r.source_fixed is False
         assert "source_fix" not in r.defense_layers
@@ -239,7 +257,7 @@ class TestTriageEntry:
         t = _t()
         r = t.triage_entry(
             _entry(
-                fixed_in="2026.9.9",
+                fixed_in=_not_yet_fixed(),
                 title="operator.write reached admin-only config",
                 description="authorization mismatch lets write-scope reach admin",
             )
@@ -259,7 +277,7 @@ class TestTriageEntry:
         t = _t()
         r = t.triage_entry(
             _entry(
-                fixed_in="2026.9.9",
+                fixed_in=_not_yet_fixed(),
                 title="ClawHub package integrity verification missing",
             )
         )
@@ -277,7 +295,7 @@ class TestTriageEntry:
     def test_unknown_class_not_source_fixed_stays_under_review(self):
         t = _t()
         r = t.triage_entry(
-            _entry(fixed_in="2026.9.9", title="Opaque headline", description="no signal")
+            _entry(fixed_in=_not_yet_fixed(), title="Opaque headline", description="no signal")
         )
         assert r.vuln_class is t.VulnClass.UNKNOWN
         assert t.final_status(r) == "under_review"
@@ -288,7 +306,7 @@ class TestTriageEntry:
         # honest under_review rather than an unearned partial claim.
         t = _t()
         r = t.triage_entry(
-            _entry(fixed_in="2026.9.9", title="Exported HTML keeps unsafe markdown links")
+            _entry(fixed_in=_not_yet_fixed(), title="Exported HTML keeps unsafe markdown links")
         )
         assert r.vuln_class is t.VulnClass.XSS
         assert t.final_status(r) == "under_review"
@@ -407,7 +425,7 @@ class TestRewrite:
         e2 = _entry(
             "ASH-OCLAW-295",
             title="Supply chain malicious dependency",
-            fixed_in="2026.9.9",
+            fixed_in=_not_yet_fixed(),
         )
         r1 = t.triage_entry(e1)
         r2 = t.triage_entry(e2)
