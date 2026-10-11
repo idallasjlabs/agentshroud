@@ -21,7 +21,7 @@
 # release — no re-litigation of the decision above).
 # 2026-09-26 Sunday upgrade: digest refreshed again (same tag) — was
 # 2f17fc04..., now f77ac9e4...
-FROM python:3.12-slim@sha256:f77ac9e44ae96ef2c90b8053ea08c31f8be030f824196b0ae4db6d462c84e51f
+FROM python:3.12-slim@sha256:a6e34c598f2467ed0e9a8d349809fcd8b5c603269512df273a0bb1784edc11b1
 
 LABEL maintainer="Isaiah Dallas Jefferson, Jr. <idallasj@gmail.com>"
 LABEL org.agentshroud.component="voice-gateway"
