@@ -82,7 +82,13 @@ trap 'rm -rf "$TMPROOT"' EXIT
 # Args: <bindir> <scan-json-out> <max-critical> <image>...
 run_gate() {
     local bindir="$1" scan_json="$2" max_critical="$3"; shift 3
-    env -i PATH="$bindir:/usr/bin:/bin" HOME="$HOME" "$BASH_BIN" -c \
+    # SUNDAY_SCAN_RETRY_SLEEP passes through (default empty -> the lib's own
+    # 60s-real-world default) so T7/T8 can override it to 0; env -i otherwise
+    # wipes it like everything else, which is the correct isolation for every
+    # other test here.
+    env -i PATH="$bindir:/usr/bin:/bin" HOME="$HOME" \
+        SUNDAY_SCAN_RETRY_SLEEP="${SUNDAY_SCAN_RETRY_SLEEP:-}" \
+        "$BASH_BIN" -c \
         ". '$LIB'; sunday_run_scan_gate '$scan_json' '$max_critical' \"\$@\"" \
         _ "$@"
 }
@@ -277,6 +283,88 @@ set -e
 check "T6: --phase scan does not publish a PASS handoff, nor clobber an existing one" \
     "$([ "$rc6" -eq 0 ] && grep -q 'SENTINEL' "$R6/handoff/dev-result-${TODAY}.json" && echo true || echo false)" \
     "rc=$rc6 handoff=$(cat "$R6/handoff/dev-result-${TODAY}.json" 2>/dev/null) stdout=$(tail -5 "$R6/stdout.log" 2>/dev/null)"
+
+# ── T7: transient trivy failure (DB download hiccup) retries and recovers ──
+# 2026-10-04 and 2026-10-11 both saw a real scan get 0/3 images scanned, 3
+# failed, from a transient vulnerability-DB-download network blip, with no
+# retry -- the handoff then published a stale 0-scanned snapshot for the rest
+# of the day. This proves the retry loop added to fix that actually retries
+# and actually recovers, not just that the counter file mechanics work.
+BIN7="$TMPROOT/t7/bin"
+# shellcheck disable=SC2016
+write_fake "$BIN7" docker '
+case "$1" in
+  image) case "$3" in *:1.6.0) exit 0 ;; *) exit 1 ;; esac ;;
+  images) repo="${4:-}"; printf "%s:1.6.0\n" "$repo" ;;
+  *) exit 0 ;;
+esac
+'
+COUNTER7="$TMPROOT/t7/attempts"
+echo 0 > "$COUNTER7"
+# shellcheck disable=SC2016
+write_fake "$BIN7" trivy '
+case "$1" in
+  --version) echo "Version: 0.0.0-fake" ;;
+  image)
+    n="$(cat "'"$COUNTER7"'")"
+    n=$((n + 1))
+    echo "$n" > "'"$COUNTER7"'"
+    if [ "$n" -lt 3 ]; then
+      echo "FATAL DB error: context deadline exceeded while downloading vulnerability DB" >&2
+      exit 1
+    fi
+    echo "{\"Results\":[{\"Vulnerabilities\":[{\"Severity\":\"HIGH\"}]}]}"
+    ;;
+esac
+'
+JSON7="$TMPROOT/t7/scan.json"
+OUT7="$TMPROOT/t7/stdout.log"; ERR7="$TMPROOT/t7/stderr.log"
+set +e
+SUNDAY_SCAN_RETRY_SLEEP=0 run_gate "$BIN7" "$JSON7" "" "agentshroud-gateway:9.9.9" >"$OUT7" 2>"$ERR7"; rc7=$?
+set -e
+check "T7: retries a transient trivy failure instead of giving up on attempt 1" \
+    "$([ "$(cat "$COUNTER7")" -eq 3 ] && echo true || echo false)" \
+    "attempts=$(cat "$COUNTER7") stderr=$(cat "$ERR7")"
+check "T7: recovers to a real PASS (not a failed scan) once trivy succeeds" \
+    "$([ "$rc7" -eq 0 ] && grep -q 'scan: PASS' "$OUT7" && grep -q '"scanned": 1' "$JSON7" && grep -q '"failed": 0' "$JSON7" && echo true || echo false)" \
+    "rc=$rc7 json=$(cat "$JSON7" 2>/dev/null) stdout=$(cat "$OUT7")"
+
+# ── T8: trivy fails all 3 attempts -> honest failure, not a false pass ─────
+BIN8="$TMPROOT/t8/bin"
+# shellcheck disable=SC2016
+write_fake "$BIN8" docker '
+case "$1" in
+  image) case "$3" in *:1.6.0) exit 0 ;; *) exit 1 ;; esac ;;
+  images) repo="${4:-}"; printf "%s:1.6.0\n" "$repo" ;;
+  *) exit 0 ;;
+esac
+'
+COUNTER8="$TMPROOT/t8/attempts"
+echo 0 > "$COUNTER8"
+# shellcheck disable=SC2016
+write_fake "$BIN8" trivy '
+case "$1" in
+  --version) echo "Version: 0.0.0-fake" ;;
+  image)
+    n="$(cat "'"$COUNTER8"'")"
+    n=$((n + 1))
+    echo "$n" > "'"$COUNTER8"'"
+    echo "FATAL DB error: context deadline exceeded while downloading vulnerability DB" >&2
+    exit 1
+    ;;
+esac
+'
+JSON8="$TMPROOT/t8/scan.json"
+OUT8="$TMPROOT/t8/stdout.log"; ERR8="$TMPROOT/t8/stderr.log"
+set +e
+SUNDAY_SCAN_RETRY_SLEEP=0 run_gate "$BIN8" "$JSON8" "0" "agentshroud-gateway:9.9.9" >"$OUT8" 2>"$ERR8"; rc8=$?
+set -e
+check "T8: gives up after exactly 3 attempts, does not retry forever" \
+    "$([ "$(cat "$COUNTER8")" -eq 3 ] && echo true || echo false)" \
+    "attempts=$(cat "$COUNTER8")"
+check "T8: persistent failure + gated -> hard failure, never a false pass" \
+    "$([ "$rc8" -eq 20 ] && grep -q '"failed": 1' "$JSON8" && ! grep -q 'scan: PASS' "$OUT8" && echo true || echo false)" \
+    "rc=$rc8 json=$(cat "$JSON8" 2>/dev/null) stdout=$(cat "$OUT8")"
 
 # ── Summary ──────────────────────────────────────────────────────────────────
 echo ""

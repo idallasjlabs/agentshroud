@@ -197,13 +197,38 @@ sunday_run_scan_gate() {
     # is down it falls back to a registry that 401s on local-only tags. A gate
     # that cannot tell "no vulnerabilities" from "the scanner never ran" is the
     # exact defect class CLAUDE.md 0.0 exists to forbid.
-    errf="$(mktemp)"
+    # Retried, not single-shot. The vulnerability-DB download is the one part
+    # of this call that's genuinely flaky on this host -- a transient network
+    # hiccup fetching from the DB mirror (observed live 2026-10-04 and again
+    # 2026-10-11, same symptom both times: image scan 0/3, scans FAILED 3,
+    # recovered a few hours later by re-running --phase scan standalone once
+    # the network had recovered) has, until now, had zero retry protection,
+    # unlike the git-fetch hang fix from 2026-09-27. A single transient DB
+    # fetch failure should not need a human to notice the handoff's stale
+    # 0-images-scanned snapshot and re-run the scan by hand every week.
+    errf=""
     trc=0
-    out="$("${TRIVY_CMD[@]}" image --quiet --scanners vuln --severity CRITICAL,HIGH \
-            "${ignore_args[@]}" --format json "$resolved" 2>"$errf")" || trc=$?
+    out=""
+    for _scan_try in 1 2 3; do
+      errf="$(mktemp)"
+      trc=0
+      out="$(timeout 300 "${TRIVY_CMD[@]}" image --quiet --scanners vuln --severity CRITICAL,HIGH \
+              "${ignore_args[@]}" --format json "$resolved" 2>"$errf")" || trc=$?
+      if [ "$trc" -eq 0 ] && [ -n "$out" ]; then
+        break
+      fi
+      if [ "$_scan_try" -lt 3 ]; then
+        # SUNDAY_SCAN_RETRY_SLEEP overrides the per-attempt backoff unit
+        # (default 60s, real runs); tests set it to 0 so this loop's retry
+        # logic is exercised without three real minutes of sleeping.
+        warn "scan: trivy failed for $resolved (attempt ${_scan_try}/3, exit ${trc}) — retrying in $((_scan_try * ${SUNDAY_SCAN_RETRY_SLEEP:-60}))s:"
+        sed -n '1,6p' "$errf" | sed 's/^/      /' >&2
+        sleep $((_scan_try * ${SUNDAY_SCAN_RETRY_SLEEP:-60}))
+      fi
+    done
     if [ "$trc" -ne 0 ] || [ -z "$out" ]; then
       failed=$((failed + 1))
-      err "scan: trivy FAILED for $resolved (exit ${trc}) — this is NOT a clean result:"
+      err "scan: trivy FAILED for $resolved after 3 attempts (exit ${trc}) — this is NOT a clean result:"
       sed -n '1,6p' "$errf" | sed 's/^/      /' >&2
       rm -f "$errf"
       continue
