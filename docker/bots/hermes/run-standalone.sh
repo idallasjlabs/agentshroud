@@ -131,6 +131,44 @@ _feedbin_env_args() {
   done
 }
 
+# Optional: Hermes's dashboard binds loopback-only by default (vendor's
+# auth-gate-free safe default, see docker-compose.yml's HERMES_DASHBOARD_HOST
+# comment and gateway/tests/test_security_regressions_v1_2.py's
+# TestHermesDashboardBridgeReachability — reachability across containers
+# always goes through docker/bots/hermes/dashboard_bridge.py, never a bind
+# change). Flipping to 0.0.0.0 is only safe when paired with real
+# credentials, so this is opt-in: if these two secret files don't exist, no
+# env vars are emitted and the dashboard stays loopback-bound + unauthed
+# (network-membership-only access, the documented default). If they do
+# exist, _dashboard_host_default() below switches the bind to 0.0.0.0 so the
+# vendor's auth gate actually activates.
+_dashboard_auth_env_args() {
+  local key path env_name
+  for key in hermes_dashboard_basic_auth_username hermes_dashboard_basic_auth_password; do
+    path="$SECRETS_DIR/${key}.txt"
+    if [ ! -f "$path" ] || [ ! -s "$path" ]; then
+      path="$FALLBACK_SECRETS_DIR/${key}.txt"
+    fi
+    if [ -f "$path" ] && [ -s "$path" ]; then
+      env_name="$(echo "$key" | tr '[:lower:]' '[:upper:]')"
+      printf -- '-e\n%s=%s\n' "$env_name" "$(cat "$path")"
+    fi
+  done
+}
+
+_dashboard_host_default() {
+  local user_path pass_path
+  user_path="$SECRETS_DIR/hermes_dashboard_basic_auth_username.txt"
+  [ -f "$user_path" ] && [ -s "$user_path" ] || user_path="$FALLBACK_SECRETS_DIR/hermes_dashboard_basic_auth_username.txt"
+  pass_path="$SECRETS_DIR/hermes_dashboard_basic_auth_password.txt"
+  [ -f "$pass_path" ] && [ -s "$pass_path" ] || pass_path="$FALLBACK_SECRETS_DIR/hermes_dashboard_basic_auth_password.txt"
+  if [ -f "$user_path" ] && [ -s "$user_path" ] && [ -f "$pass_path" ] && [ -s "$pass_path" ]; then
+    echo "0.0.0.0"
+  else
+    echo "127.0.0.1"
+  fi
+}
+
 _secret_mount_args() {
   local key path
   for key in "${HERMES_SECRET_KEYS[@]}"; do
@@ -197,6 +235,11 @@ cmd_up() {
   while IFS= read -r _secret_arg_line; do
     SECRET_ARGS+=("$_secret_arg_line")
   done < <(_feedbin_env_args)
+  while IFS= read -r _secret_arg_line; do
+    SECRET_ARGS+=("$_secret_arg_line")
+  done < <(_dashboard_auth_env_args)
+
+  _DASHBOARD_HOST_DEFAULT="$(_dashboard_host_default)"
 
   echo "  [hermes-standalone] starting ${CONTAINER} from ${IMAGE} on ${NETWORK}..."
   # shellcheck disable=SC2086
@@ -231,7 +274,7 @@ cmd_up() {
     -e HERMES_TELEGRAM_HTTP_CONNECT_TIMEOUT="90" \
     -e HERMES_TELEGRAM_INIT_TIMEOUT="90" \
     -e HERMES_DASHBOARD="1" \
-    -e HERMES_DASHBOARD_HOST="127.0.0.1" \
+    -e HERMES_DASHBOARD_HOST="${HERMES_DASHBOARD_HOST:-${_DASHBOARD_HOST_DEFAULT}}" \
     -e HERMES_DASHBOARD_PORT="9119" \
     -e HERMES_DASHBOARD_BRIDGE_PORT="9120" \
     -e AGENTSHROUD_BOT_ID="hermes" \
