@@ -427,9 +427,32 @@ class TestHermesDashboardBridgeReachability:
             pytest.skip("run-standalone.sh not available in this environment")
 
         script = script_path.read_text()
-        assert (
-            'HERMES_DASHBOARD_HOST="127.0.0.1"' in script
-        ), "run-standalone.sh must keep Hermes's own dashboard loopback-bound"
+        # 2026-10-08: the host is now computed by _dashboard_host_default(),
+        # not hardcoded -- it stays "127.0.0.1" (the safe, loopback+bridge
+        # default) UNLESS HERMES_DASHBOARD_BASIC_AUTH_USERNAME/_PASSWORD
+        # secret files are present, in which case it flips to "0.0.0.0" so
+        # the vendor's auth gate activates. That pairing is the "do not flip
+        # without also provisioning basic auth" rule from
+        # TestHermesDashboardBridgeReachability's docstring above, now
+        # enforced in code instead of only in a comment.
+        assert "_dashboard_host_default" in script, (
+            "run-standalone.sh must compute HERMES_DASHBOARD_HOST via "
+            "_dashboard_host_default() rather than hardcoding it, so a "
+            "non-loopback bind can never happen without basic-auth secrets "
+            "also being present"
+        )
+        assert 'echo "127.0.0.1"' in script, (
+            "_dashboard_host_default()'s fallback (no basic-auth secrets present) "
+            "must stay loopback-bound -- do not make 0.0.0.0 the unconditional default"
+        )
+        assert "hermes_dashboard_basic_auth_username" in script and (
+            "hermes_dashboard_basic_auth_password" in script
+        ), (
+            "run-standalone.sh must provision HERMES_DASHBOARD_BASIC_AUTH_USERNAME/"
+            "_PASSWORD from secret files (the vendor's documented auth mechanism, see "
+            "docker-compose.yml's HERMES_DASHBOARD_HOST comment) before it can ever be "
+            "safe to bind non-loopback"
+        )
         assert "HERMES_DASHBOARD_BRIDGE_PORT" in script, (
             "run-standalone.sh must set HERMES_DASHBOARD_BRIDGE_PORT explicitly so it "
             "stays in sync with gateway's HERMES_DASHBOARD_UPSTREAM_PORT in docker-compose.yml"
