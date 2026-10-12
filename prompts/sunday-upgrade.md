@@ -49,7 +49,7 @@ Therefore:
 - **Do not modify security policy.** Do not loosen gateway rules, allowlists, network policies, secrets handling, or sandbox restrictions to make an upgrade pass. If an upgrade requires a policy change, do not apply it: leave that component on its current version, flag it as BLOCKED in the report, and explain exactly what change the upstream release demands.
 - **No-exceptions remediation (owner directive 2026-09-01, verbatim): "This is a security tool. All CVE must be resolved and all versions must be updated to latest release on Sunday no exceptions. If code changes are required, we need to make them."** Concretely: needing a CODE change (Dockerfile ARG bumps, dependency/lockfile updates, build tweaks) is NOT grounds for BLOCKED — make the change, commit it on the run's branch, test it, ship it through the dev→prod flow. The ONLY legitimate residuals are (a) CVEs with no fix released anywhere upstream — each individually documented in docs/security/cve-mitigation-matrix.md with evidence, and (b) upgrades that would require LOOSENING a security control (previous bullet — that stays BLOCKED). "The fix requires work" is never a reason to skip.
 - Never print, log, or commit secrets. Never edit `.env` values other than version pins.
-- Work on a branch named `chore/upgrade-YYYY-MM-DD` (today's date). Commit with clear messages. Do not push, merge, or open a PR unless the repo's CLAUDE.md/docs explicitly say the Sunday job should. Do not rewrite history.
+- Work on a branch named `chore/upgrade-YYYY-MM-DD` (today's date). Commit with clear messages. Do not rewrite history. Push the branch and open a PR once dev verification passes (§3) — this is now the standard flow, see §3 step 5 and §4 step 0b for the merge/promote gate. Never merge or deploy without that gate's explicit human signal, no matter how routine the diff looks.
 - Keep a running log at `~/Development/<project>/reports/upgrade-YYYY-MM-DD.md` from the very start so a partial run still leaves a record. This IS the report file from step 7, not a separate scratch log — write each of its 8 sections to disk (Edit/Write, append or fill in) the moment that section's work is done, never held in memory to be composed in one final write. A session that gets stuck or is killed at any point must leave everything completed up to that point already on disk (2026-09-27: a run got stuck trying to save the final report and lost everything, including sections that had actually finished minutes earlier — this line exists to make that unrecoverable).
 - Time budget: if you are past 90 minutes and not finished, stop, ensure both stacks are healthy (roll back anything half-applied), and report what remains.
 
@@ -169,6 +169,8 @@ Build a complete table of every upgradable thing in the repo. Include, at minimu
 - Agent definitions, skills, MCP servers, plugins, and Claude Code / Hermes config that pin versions.
 - Git submodules or vendored code.
 - Tooling (Colima, Docker CLI, compose plugin) — report available updates but only apply them if the project docs say the Sunday job owns host tooling.
+- **GitHub Actions versions** — every `uses: owner/action@ref` line across `.github/workflows/*.yml` (`grep -rn 'uses:' .github/workflows/`). Pin to a release tag or a full commit SHA, never a floating major tag like `@v4` if a more specific stable tag/SHA exists.
+- **AI model IDs and SDKs the product itself depends on** — hardcoded model identifiers in gateway/runtime code (e.g. an Anthropic/OpenAI model string), and the SDK package versions that call them (`anthropic`, `openai`, or equivalent in `pyproject.toml`/lockfiles). A stale model ID pointing at a deprecated model is an upgrade finding, same as a stale package pin.
 
 For each item: current version, latest stable version, source URL you used to determine it, and whether a changelog mentions breaking changes or security fixes.
 
@@ -269,6 +271,17 @@ Honesty rules, unchanged and non-negotiable:
    YOUR job on this run: make the change, commit it, rebuild, verify. Escalate to
    BLOCKED only if the fix would require loosening a security control.
 
+   **Major-version bumps are attempted, not skipped — but held back on real
+   evidence of breakage, not caution alone.** Attempt every major bump the same
+   way as a minor/patch one: bump, rebuild, run its tests. Keep it only if (a)
+   tests pass, and (b) you read the changelog/release notes and found no
+   breaking change you couldn't also fix in this run. If either fails, revert
+   that one component to its current pin, record it as `HELD BACK` with the
+   specific breaking change or failure, and add it to the **needs human** list
+   (§7.6) — this is a distinct outcome from `BLOCKED` (security-control
+   loosening) and from `FAILED` (broke and couldn't be fixed): a held-back major
+   bump is a deliberate, reasoned deferral, not a failure.
+
 1. Apply all version bumps from the inventory to the **dev** configuration only. One commit per logical component so a bad bump can be reverted alone.
 2. Regenerate lockfiles; rebuild any local images; `docker compose pull` and bring dev up.
 3. Verify — all of the following must pass, with output captured in the report:
@@ -280,10 +293,12 @@ Honesty rules, unchanged and non-negotiable:
    - Re-run all audits/scans from step 2. Every finding must be either FIXED (show it gone) or explicitly ACCEPTED with a reason (no fix released yet, not reachable in our configuration) — never silently dropped.
    - **Soak, not just boot.** `docker compose ps` healthy proves the process started — it does not prove anything actually WORKED (the 2026-09-18 postmortem: models.json/openai-local routing, the missing sandbox image, and two op-proxy allowlist gaps all shipped past a fully-green boot check because nothing exercised the code path that was actually broken until a real cron job hit it days later). Run `bash scripts/check-soak-status.sh` against dev's OpenClaw container and require it to report `SOAKED` — either by waiting for a real scheduled run, or by triggering one on demand (`openclaw cron run <id>` for a representative job, e.g. the main heartbeat) and re-checking. A `NOT_SOAKED` result with an `errored_since_boot` reason is a FAILED check for this run, same as any other — do not proceed to promote past it. (Hermes has no equivalent automated check yet — its cron CLI has no `--json` output; verify at least one real Hermes job manually and note that in the report as a known gap, not a skipped step.)
 4. If any check fails: revert the specific commit(s) responsible, bring dev back up, re-verify, and mark that component FAILED with the error. Continue with the remaining components. If dev cannot be made healthy at all, restore the full baseline and stop — do not touch prod.
+5. **Open the PR, then gate the merge on a human tap — this is the standard flow, not an exception.** Push the branch (the wrapper script does this already) and `gh pr create` summarizing the report. Poll `gh pr checks` / the PR's status-check rollup until every required check reaches a final state (a Monitor + wakeup cycle is fine — do not block synchronously). If a check fails and the failure looks transient (network flake, runner timeout, a known-flaky job — not a real test failure), retry it up to twice with backoff (`gh run rerun --failed <run-id>`, wait, re-check) before concluding the PR is red. Once every required check is green, call **AskUserQuestion** with a short summary of what changed (the upgrade table + any CVE deltas) and options Proceed/Abort. If the session is connected via Remote Control, this reaches the human as a tap on their phone or desktop — no terminal hunting required. On **Proceed**: `gh pr merge --squash --delete-branch`, then record the merge commit for rollback: `gh pr view <num> --json mergeCommit --jq .mergeCommit.oid > reports/sunday/YYYY-MM-DD/merge-commit.txt`. On **Abort**, or if the session ends before a response arrives: leave the PR open and note in the report that `scripts/sunday-upgrade-approve.sh YYYY-MM-DD` is available to approve it later from any terminal (it records the merge commit the same way). If a required check is still red after the retries above, don't merge — leave the PR open and say so in the report; that is a normal outcome, not a run failure. Never merge on green CI alone — CI passing and a human having looked at the diff are two different facts, and only the second one licenses a merge.
 
 ### 4. Promote to PROD
 Proceed **only if** dev is fully healthy and every finding is FIXED or ACCEPTED.
 0. **Prove dev and prod are about to build the same artifact.** "It passed in dev" means nothing if prod's checkout has drifted (stale pull, an unpushed local commit, a stray version override). Run `bash scripts/check-version-pins-parity.sh` in BOTH environments — dev's own checkout and prod's (via the `@agentshroud` coordination session, never by connecting to prod directly). Both must report `PASS` before proceeding. A `FAIL` means the checkouts have diverged; reconcile via the normal PR/merge flow before promoting, do not skip this and promote anyway.
+0b. **Gate the cutover on a human tap too — prod's own gate, independent of dev's.** Before touching any live prod container, call **AskUserQuestion** (Proceed/Abort) showing the version set about to be applied and a link or summary of dev's report. An approval given on the dev side (§3 step 5) is authorization for dev's merge only — it never substitutes for this prompt; a human looks at each side's own change. If connected via Remote Control, this is a tap, same as dev's. On Abort or no response, stop here, leave prod on its current baseline, and mark this component `PENDING APPROVAL` in the report (not FAILED — nothing broke, a human just hasn't looked yet).
 1. Apply exactly the version set that passed on dev — no new versions, no components that failed on dev.
 2. Take a backup of any stateful services before upgrading them (LibreChat/Mongo data, Hermes state/config volumes) using the project's backup script or `docker run --rm -v <vol>:/data -v ~/Development/<project>/backups:/backup alpine tar czf /backup/<vol>-YYYY-MM-DD.tgz /data`. Verify the archive is non-empty.
 3. Bring prod up and run the same verification suite as step 3.3.
@@ -322,17 +337,20 @@ Every Sunday run is tracked in a Jira ticket (project **SCRUM**, cloudId
   in the report's manual follow-ups section — never silently skip Jira.
 
 ### 7. Report
-`reports/upgrade-YYYY-MM-DD.md` should already contain most of this by now (see the preflight instruction to write each section as it's completed, not at the end). This step is filling in whatever sections are still missing and doing a final pass, not a single big write of the whole file — the file must never exist only in your own context. Sections:
+`reports/upgrade-YYYY-MM-DD.md` should already contain most of this by now (see the preflight instruction to write each section as it's completed, not at the end). This step is filling in whatever sections are still missing and doing a final pass, not a single big write of the whole file — the file must never exist only in your own context. **This file is written unconditionally** — even a total abort before a single component was touched (e.g. preflight failed, baseline couldn't be captured) still produces a report with sections 1, 2, 6, and 8 filled in and the rest marked not-reached. A run with no report is a worse outcome than a run with a bad one. Sections:
 
-1. **Summary line** — one of: `ALL GREEN`, `PARTIAL (n components failed/blocked)`, `ROLLED BACK`, `ABORTED (reason)`.
+1. **Summary line** — one of: `ALL GREEN`, `PARTIAL (n components failed/blocked)`, `ROLLED BACK`, `ABORTED (reason)`, `PENDING APPROVAL (dev merged, prod awaiting tap)` / `PENDING APPROVAL (PR open, awaiting tap)`.
 2. **Environment mapping** you discovered (dev vs prod).
-3. **Upgrade table** — component | env | before | after | status (UPGRADED / ALREADY CURRENT / FAILED / BLOCKED / SKIPPED) | notes.
+3. **Upgrade table** — component | env | before | after | status (UPGRADED / ALREADY CURRENT / FAILED / BLOCKED / HELD BACK / SKIPPED / PENDING APPROVAL) | notes.
 4. **Security findings** — ID | severity | component | before | after (FIXED / ACCEPTED-with-reason / OPEN).
 5. **Verification evidence** — the actual command outputs for each check in 3.3 and 4.3, trimmed to the relevant lines.
-6. **Breaking changes / manual follow-ups** — anything from changelogs a human must read, and every BLOCKED item with the policy change it would require.
-7. **Rollback instructions** — exact commands to return prod and dev to the pre-run baseline.
+6. **Breaking changes / needs human** — every BLOCKED, HELD BACK, or FAILED item as its own bullet: the specific policy change or breaking change it would require, so this list is a punch list a human can act on directly, not prose to reconstruct one from.
+7. **Rollback instructions** — the exact one-line backout command, not prose steps: `bash scripts/sunday-rollback.sh YYYY-MM-DD` (reverts the merge commit on main and redeploys the previous pinned images — see §3.5) if dev merged; `bash reports/sunday/YYYY-MM-DD/rollback.sh` for prod-only image rollback (§4.4 uses this automatically on a failed health check).
 8. **Time spent** and whether the 90-minute budget was hit.
 
 As the actual last action of the run, `cat` the finished file to stdout (Hermes captures it for delivery) — a plain read of what's already safely on disk, not a re-composition of it.
+
+### 8. Push notification
+Send one `PushNotification` per run, regardless of outcome — a silent run is as bad as a silent report. Include, in this order: the summary line (§7.1), the upgraded/held-back/failed counts, the PR link (or "no PR — aborted before any commit" / "merged — PR #n"), the report path, and the one-line backout command from §7.7. Keep it to what fits a lock-screen notification; the report has the detail.
 
 Never end the run with either stack in a non-healthy state.
