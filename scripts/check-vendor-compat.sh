@@ -137,10 +137,18 @@ check_openclaw() {
   # — this exercises the exact "vendor release now rejects a key we write"
   # crash-loop class from a genuinely fresh (no pre-existing config) install,
   # without needing to hand-author or embed a seed config.
+  # Mirror docker/scripts/init-openclaw-config.sh's own self-healing step
+  # (2026-09-15, "Normalize config after this script's own writes"): run
+  # `openclaw doctor --fix` between apply-patches.js and config validate, the
+  # same as the real init flow does. Without this, a vendor release that
+  # moves a config shape (e.g. 2026.10.2's `agents.list` -> keyed
+  # `agents.entries`) makes this check FAIL on a config the real container
+  # would have self-healed at boot — a false compat failure, not a real one.
   local schema_log
   schema_log="$(docker run --rm -e HOME=/sandbox --tmpfs /sandbox "$image" sh -c '
     mkdir -p /sandbox/.openclaw &&
     node /app/config-defaults/openclaw/apply-patches.js /sandbox/.openclaw/openclaw.json &&
+    (openclaw doctor 2>&1 | grep -qiE "requires (legacy )?(credential )?migration|requires migration|doctor --fix|config is invalid" && openclaw doctor --fix >/dev/null 2>&1 || true) &&
     openclaw config validate --json
   ' 2>&1)" || true
   if echo "$schema_log" | grep -q '"valid"[[:space:]]*:[[:space:]]*true'; then

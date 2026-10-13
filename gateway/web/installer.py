@@ -36,7 +36,7 @@ class InstallConfig(BaseModel):
     runtime: str = "docker"
     rootless: bool = False
     telegram_token: Optional[str] = None
-    model: str = "claude-sonnet-4-20250514"
+    model: str = "claude-sonnet-5-5"
     security_level: str = "recommended"  # minimal | recommended | paranoid
     gateway_password: Optional[str] = None
     allowed_users: list[str] = []
