@@ -4900,3 +4900,70 @@ async def hermes_dashboard_proxy(path: str, request: Request):
     except Exception as exc:
         logger.warning("hermes_dashboard_proxy error: %s", exc)
         raise HTTPException(status_code=502, detail="Hermes dashboard proxy error")
+
+
+@app.websocket("/hermes-dashboard/{path:path}")
+async def hermes_dashboard_ws_proxy(websocket: WebSocket, path: str):
+    """Relay the Hermes dashboard's WebSocket channels (/api/ws, /api/pub)
+    through the gateway, same as hermes_dashboard_proxy does for plain HTTP.
+
+    @app.api_route above only matches http-scope requests -- Starlette routes
+    a websocket-scope connection separately, so without this the dashboard's
+    client (e.g. Hermes Conduit) can log in fine over HTTP but then silently
+    fail to open its post-login WebSocket, since there was nothing here to
+    accept the upgrade. ws-ticket auth (POST /api/auth/ws-ticket -> ticket in
+    the connect query string, see hermes_cli/dashboard_auth/ws_tickets.py in
+    the vendor image) flows through transparently as long as the query string
+    and frames are relayed byte-for-byte, same principle as slack_ws_relay
+    above -- this proxy doesn't need to understand the ticket itself.
+    """
+    import websockets as _websockets
+
+    raw_query = str(websocket.url.query)
+    if _TRAVERSAL_RE.search(path) or _TRAVERSAL_RE.search(raw_query):
+        await websocket.close(code=1008)
+        return
+
+    ws_upstream = _HERMES_DASHBOARD_UPSTREAM.replace("http://", "ws://", 1).replace(
+        "https://", "wss://", 1
+    )
+    upstream_url = f"{ws_upstream}/{path}"
+    if raw_query:
+        upstream_url = f"{upstream_url}?{raw_query}"
+
+    await websocket.accept(subprotocol=websocket.headers.get("sec-websocket-protocol"))
+
+    async def _upstream_to_client(upstream) -> None:
+        async for frame in upstream:
+            if isinstance(frame, str):
+                await websocket.send_text(frame)
+            else:
+                await websocket.send_bytes(frame)
+
+    async def _client_to_upstream(upstream) -> None:
+        try:
+            while True:
+                message = await websocket.receive()
+                if message["type"] != "websocket.receive":
+                    break
+                if "text" in message and message["text"] is not None:
+                    await upstream.send(message["text"])
+                elif "bytes" in message and message["bytes"] is not None:
+                    await upstream.send(message["bytes"])
+        except Exception:
+            pass
+
+    try:
+        async with _websockets.connect(upstream_url, open_timeout=10.0) as upstream:
+            await asyncio.gather(
+                _upstream_to_client(upstream),
+                _client_to_upstream(upstream),
+                return_exceptions=True,
+            )
+    except Exception as exc:
+        logger.warning("hermes_dashboard_ws_proxy: connection error: %s", exc)
+    finally:
+        try:
+            await websocket.close()
+        except Exception:
+            pass

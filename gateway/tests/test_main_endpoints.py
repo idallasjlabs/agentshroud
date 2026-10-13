@@ -428,6 +428,123 @@ class TestHermesDashboardPathTraversal:
         assert exc_info.value.status_code == 400
 
 
+class TestHermesDashboardWsProxy:
+    """hermes_dashboard_ws_proxy: WebSocket counterpart of hermes_dashboard_proxy.
+
+    Without this route, a WS-scope connection to /hermes-dashboard/{path} has
+    nothing to match it (the HTTP-only @app.api_route above only handles
+    http-scope requests), so a client like Hermes Conduit can log in over
+    plain HTTP but silently fail to open its post-login WebSocket at
+    /hermes-dashboard/api/ws.
+    """
+
+    def _mock_websocket(self, query: str = "", frames: list | None = None):
+        ws = MagicMock()
+        ws.url.query = query
+        ws.headers = {}
+        ws.accept = AsyncMock()
+        ws.close = AsyncMock()
+        ws.send_text = AsyncMock()
+        ws.send_bytes = AsyncMock()
+        # receive() yields each queued client->upstream frame, then a
+        # disconnect message so _client_to_upstream's loop exits cleanly.
+        incoming = list(frames or [])
+        incoming.append({"type": "websocket.disconnect"})
+        ws.receive = AsyncMock(side_effect=incoming)
+        return ws
+
+    @pytest.mark.asyncio
+    async def test_traversal_in_path_closes_without_connecting(self):
+        from gateway.ingest_api.main import hermes_dashboard_ws_proxy
+
+        ws = self._mock_websocket()
+        with patch("websockets.connect") as mock_connect:
+            await hermes_dashboard_ws_proxy(ws, path="../../etc/passwd")
+
+        ws.close.assert_awaited_once_with(code=1008)
+        ws.accept.assert_not_called()
+        mock_connect.assert_not_called()
+
+    @pytest.mark.asyncio
+    async def test_traversal_in_query_closes_without_connecting(self):
+        from gateway.ingest_api.main import hermes_dashboard_ws_proxy
+
+        ws = self._mock_websocket(query="ticket=../../etc/passwd")
+        with patch("websockets.connect") as mock_connect:
+            await hermes_dashboard_ws_proxy(ws, path="api/ws")
+
+        ws.close.assert_awaited_once_with(code=1008)
+        mock_connect.assert_not_called()
+
+    @pytest.mark.asyncio
+    async def test_connects_to_bridge_port_with_ws_scheme_and_query(self):
+        """Upstream URL must be ws:// (not http://) at the bridge port, with
+        the client's query string (carrying the ws-ticket) preserved."""
+        from gateway.ingest_api.main import hermes_dashboard_ws_proxy
+
+        ws = self._mock_websocket(query="ticket=abc123")
+
+        mock_upstream = MagicMock()
+
+        async def _empty_aiter(self):
+            return
+            yield  # pragma: no cover - makes this an async generator
+
+        mock_upstream.__aiter__ = _empty_aiter
+        mock_cm = AsyncMock()
+        mock_cm.__aenter__.return_value = mock_upstream
+        mock_cm.__aexit__.return_value = False
+
+        with patch("websockets.connect", return_value=mock_cm) as mock_connect:
+            await hermes_dashboard_ws_proxy(ws, path="api/ws")
+
+        ws.accept.assert_awaited_once()
+        called_url = mock_connect.call_args.args[0]
+        assert called_url.startswith("ws://")
+        assert "ticket=abc123" in called_url
+        assert called_url.endswith("api/ws?ticket=abc123")
+
+    @pytest.mark.asyncio
+    async def test_relays_text_and_bytes_both_directions(self):
+        from gateway.ingest_api.main import hermes_dashboard_ws_proxy
+
+        ws = self._mock_websocket(frames=[{"type": "websocket.receive", "text": "hello-upstream"}])
+
+        mock_upstream = MagicMock()
+        mock_upstream.send = AsyncMock()
+
+        async def _one_frame_aiter(self):
+            yield "hello-client"
+            yield b"\x00\x01binary"
+
+        mock_upstream.__aiter__ = _one_frame_aiter
+        mock_cm = AsyncMock()
+        mock_cm.__aenter__.return_value = mock_upstream
+        mock_cm.__aexit__.return_value = False
+
+        with patch("websockets.connect", return_value=mock_cm):
+            await hermes_dashboard_ws_proxy(ws, path="api/ws")
+
+        assert any(c.args == ("hello-client",) for c in ws.send_text.await_args_list)
+        assert any(c.args == (b"\x00\x01binary",) for c in ws.send_bytes.await_args_list)
+        assert any(c.args == ("hello-upstream",) for c in mock_upstream.send.await_args_list)
+        ws.close.assert_awaited()
+
+    @pytest.mark.asyncio
+    async def test_upstream_connect_failure_closes_gracefully(self):
+        """A dead/unreachable bridge must not raise out of the route --
+        it closes the client WS instead of crashing the gateway worker."""
+        from gateway.ingest_api.main import hermes_dashboard_ws_proxy
+
+        ws = self._mock_websocket()
+
+        with patch("websockets.connect", side_effect=ConnectionRefusedError("down")):
+            await hermes_dashboard_ws_proxy(ws, path="api/ws")
+
+        ws.accept.assert_awaited_once()
+        ws.close.assert_awaited()
+
+
 # ---------------------------------------------------------------------------
 # Scan parameter allowlist + /api/alerts localhost enforcement (quality-sweep)
 # ---------------------------------------------------------------------------
