@@ -270,6 +270,15 @@ COPY docker/bots/hermes/patch_slack_session_recreate.py /tmp/patch_slack_session
 RUN /opt/hermes/.venv/bin/python3 /tmp/patch_slack_session_recreate.py \
     && rm /tmp/patch_slack_session_recreate.py
 
+# edge_tts's websocket connect ignores HTTP_PROXY/HTTPS_PROXY (aiohttp
+# ws_connect doesn't honor trust_env), so every Edge TTS call failed with a
+# direct-connection DNS error on Hermes's no-egress isolated network -- see
+# patch script header for the full trace (reproduced live via a minimal
+# aiohttp repro before writing this patch).
+COPY docker/bots/hermes/patch_edge_tts_proxy.py /tmp/patch_edge_tts_proxy.py
+RUN /opt/hermes/.venv/bin/python3 /tmp/patch_edge_tts_proxy.py \
+    && rm /tmp/patch_edge_tts_proxy.py
+
 # Give s6 15s grace before SIGKILL so the TERM trap can release the Telegram
 # long-poll lock and wait up to 8s for the asyncio daemon to exit cleanly.
 # Default is 5000ms which cuts the trap short before lock release completes.
