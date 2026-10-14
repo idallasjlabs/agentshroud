@@ -154,6 +154,14 @@ PERMANENT_EGRESS_DOMAINS: list[str] = [
     "api.podcastindex.org",  # weekly podcast discovery
     "itunes.apple.com",  # iTunes Search API (podcast discovery, no key)
     "api.elevenlabs.io",  # pke pipeline TTS (episode audio)
+    # ── Hermes voice (Edge TTS, free default) ──
+    # Owner-directed fix 2026-10-14: Conduit "Test speaking" failed with a
+    # direct-connection DNS error (speech.platform.bing.com has no route on
+    # Hermes's no-egress isolated network). Paired with the
+    # docker/bots/hermes/patch_edge_tts_proxy.py client-side proxy fix --
+    # without this allowlist entry the gateway's CONNECT-tunnel proxy would
+    # still 403 the now-correctly-proxied request.
+    "speech.platform.bing.com",
 ]
 
 # Feed-source hosts for full-article fetches of top Daily-Brief clusters —
