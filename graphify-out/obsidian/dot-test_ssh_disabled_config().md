@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "SSHHostConfig"
+community: "ApprovalQueueConfig"
 location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHHostConfig
+  - community/ApprovalQueueConfig
 ---
 
 # .test_ssh_disabled_config()
@@ -15,4 +15,4 @@ tags:
 - [[SSHConfig_1]] - `calls` [EXTRACTED]
 - [[TestSSHDisabled]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHHostConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

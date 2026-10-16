@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "PermissionLevel"
+community: "MCPPermissionManager"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PermissionLevel
+  - community/MCPPermissionManager
 ---
 
 # .test_trust_2_execute()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustMapping]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PermissionLevel
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

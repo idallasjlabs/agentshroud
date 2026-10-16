@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "CredentialValidator"
+community: "KeyRotationManager"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CredentialValidator
+  - community/KeyRotationManager
 ---
 
 # .test_store_nonzero_returncode_is_false()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestStoreIn1Password]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CredentialValidator
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

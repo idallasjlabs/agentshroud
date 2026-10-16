@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[Log all incoming requests Never logs request bodies (may contain PII).]] - `rationale_for` [EXTRACTED]
-- [[Request_1]] - `references` [EXTRACTED]
-- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `contains` [EXTRACTED]
+- [[Request]] - `references` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[middleware]] - `references` [EXTRACTED]
 - [[test_log_requests_middleware()]] - `calls` [EXTRACTED]
 - [[test_main_simple.py]] - `imports` [EXTRACTED]

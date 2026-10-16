@@ -12,7 +12,7 @@ tags:
 # .update()
 
 ## Connections
-- [[dot-__init__()_186]] - `calls` [EXTRACTED]
+- [[dot-__init__()_178]] - `calls` [EXTRACTED]
 - [[dot-_periodic_update_loop()]] - `calls` [EXTRACTED]
 - [[dot-download_blocklist()]] - `calls` [EXTRACTED]
 - [[dot-parse_hosts_line()]] - `calls` [EXTRACTED]

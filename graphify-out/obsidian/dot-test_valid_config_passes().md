@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_consent_framework.py"
 type: "code"
-community: "ServerConfig"
+community: "ConsentFramework"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServerConfig
+  - community/ConsentFramework
 ---
 
 # .test_valid_config_passes()
@@ -15,4 +15,4 @@ tags:
 - [[ServerConfig]] - `calls` [EXTRACTED]
 - [[TestServerConfigValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServerConfig
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework

@@ -1,19 +1,18 @@
 ---
-source_file: "docker/scripts/colima-health-check.sh"
+source_file: "scripts/lib/sunday-scan.sh"
 type: "code"
-community: "colima-health-check.sh"
-location: "L133"
+community: "Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
 ---
 
 # log()
 
 ## Connections
-- [[colima-health-check.sh]] - `defines` [EXTRACTED]
-- [[colima-health-check.sh script]] - `calls` [EXTRACTED]
-- [[notify()_1]] - `calls` [EXTRACTED]
+- [[sunday-scan.sh (Trivy scan gate library)]] - `defines` [EXTRACTED]
+- [[sunday_run_scan_gate()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds

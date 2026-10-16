@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_a2a_policy.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "test_a2a_policy.py"
-location: "L332"
+community: "ApprovalQueueConfig"
+location: "L341"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/ApprovalQueueConfig
 ---
 
 # .wait_for_decision()
 
 ## Connections
-- [[_StubApprovalQueue]] - `method` [EXTRACTED]
+- [[EnhancedApprovalQueue_2]] - `method` [EXTRACTED]
+- [[Wait for an approval decision.          Returns             True if approved, F]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

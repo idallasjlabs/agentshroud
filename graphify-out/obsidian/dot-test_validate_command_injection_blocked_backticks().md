@@ -12,7 +12,7 @@ tags:
 # .test_validate_command_injection_blocked_backticks()
 
 ## Connections
-- [[SSHProxy_1]] - `references` [EXTRACTED]
+- [[SSHProxy]] - `references` [EXTRACTED]
 - [[TestValidateCommand]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SSHHostConfig

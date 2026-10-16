@@ -1,20 +1,25 @@
 ---
-source_file: "docker/bots/hermes/resolve_model.py"
+source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "test_hermes_model_resolver.py"
-location: "L183"
+community: "SecureBrowser"
+location: "L431"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy
+  - community/SecureBrowser
 ---
 
 # main()
 
 ## Connections
-- [[CLI `resolve_model.py modelprovider`. Defaults to 'model'.]] - `rationale_for` [EXTRACTED]
-- [[_resolve_from_env()]] - `calls` [EXTRACTED]
-- [[resolve_model.py]] - `contains` [EXTRACTED]
-- [[start.sh — Hermes s6-overlay startup wrapper (main program)]] - `references` [EXTRACTED]
+- [[dot-_take_screenshot()_2]] - `calls` [EXTRACTED]
+- [[dot-click()_2]] - `calls` [EXTRACTED]
+- [[dot-close()_7]] - `calls` [EXTRACTED]
+- [[dot-extract()_2]] - `calls` [EXTRACTED]
+- [[dot-fill_field()_2]] - `calls` [EXTRACTED]
+- [[dot-navigate()_2]] - `calls` [EXTRACTED]
+- [[CLI interface for SecureBrowser_2]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_2]] - `calls` [EXTRACTED]
+- [[openclawskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

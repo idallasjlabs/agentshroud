@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "CredentialValidator"
+community: "KeyRotationManager"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CredentialValidator
+  - community/KeyRotationManager
 ---
 
 # .test_validate_without_registered_validator_passes()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGenerateAndValidate]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CredentialValidator
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

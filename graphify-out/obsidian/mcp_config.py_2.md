@@ -13,13 +13,13 @@ tags:
 
 ## Connections
 - [[Configuration  Environment Variables_24]] - `contains` [EXTRACTED]
-- [[Function Details_43]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_45]] - `contains` [EXTRACTED]
+- [[Function Details_44]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_46]] - `contains` [EXTRACTED]
 - [[MCPProxyConfig Fields]] - `contains` [EXTRACTED]
 - [[MCPServerConfig Fields]] - `contains` [EXTRACTED]
 - [[PermissionLevel Ordering]] - `contains` [EXTRACTED]
-- [[Purpose_177]] - `contains` [EXTRACTED]
-- [[Related_49]] - `contains` [EXTRACTED]
+- [[Purpose_170]] - `contains` [EXTRACTED]
+- [[Related_50]] - `contains` [EXTRACTED]
 - [[Responsibilities_46]] - `contains` [EXTRACTED]
 - [[mcp_config.py_1]] - `contains` [EXTRACTED]
 

@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Return (default_size, default_quality) for the given model.]] - `rationale_for` [EXTRACTED]
 - [[gen.py]] - `contains` [EXTRACTED]
-- [[main()_18]] - `calls` [EXTRACTED]
+- [[main()_15]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/genpy

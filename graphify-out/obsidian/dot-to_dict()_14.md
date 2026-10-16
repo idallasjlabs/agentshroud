@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/canary.py"
+source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "AgentRegistry"
-location: "L50"
+community: "Path"
+location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/Path
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_77]] - `references` [EXTRACTED]
-- [[CanaryResult_2]] - `method` [EXTRACTED]
+- [[dot-to_json()]] - `calls` [EXTRACTED]
+- [[SkillsManifest]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/Path

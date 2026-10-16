@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "make_event"
+community: "ForwardRequest"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/ForwardRequest
 ---
 
 # .unsubscribe()
@@ -15,4 +15,4 @@ tags:
 - [[EventBus]] - `method` [EXTRACTED]
 - [[Unsubscribe from events]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

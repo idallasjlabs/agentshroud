@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[PIIConfig_2]] - `calls` [EXTRACTED]
 - [[PIISanitizer_2]] - `calls` [EXTRACTED]
-- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
 - [[Single message through full pipeline in under 100ms.]] - `rationale_for` [EXTRACTED]
 - [[TestFullPipelineLatency]] - `method` [EXTRACTED]
-- [[TrustManager]] - `calls` [EXTRACTED]
+- [[TrustManager_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PIIConfig

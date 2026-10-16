@@ -12,7 +12,7 @@ tags:
 # .test_validate_command_injection_blocked_dollar_paren()
 
 ## Connections
-- [[SSHProxy_1]] - `references` [EXTRACTED]
+- [[SSHProxy]] - `references` [EXTRACTED]
 - [[TestValidateCommand]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SSHHostConfig

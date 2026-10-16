@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AuthRequired_3]] - `references` [EXTRACTED]
 - [[List all pending approval requests      Authentication required.]] - `rationale_for` [EXTRACTED]
-- [[Request_7]] - `references` [EXTRACTED]
+- [[Request_6]] - `references` [EXTRACTED]
 - [[approval.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/create_auth_dependency

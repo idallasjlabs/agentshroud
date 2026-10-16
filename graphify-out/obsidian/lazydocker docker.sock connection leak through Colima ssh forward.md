@@ -1,19 +1,19 @@
 ---
 source_file: "INCIDENT_2026-10-16_conduit-outage.md"
-type: "concept"
-community: "docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)"
-location: "205"
+type: "rationale"
+community: "run-standalone.sh (Hermes docker run launcher)"
+location: "L205-L222"
 tags:
-  - graphify/concept
+  - graphify/rationale
   - graphify/EXTRACTED
-  - community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
+  - community/run-standalonesh_Hermes_docker_run_launcher
 ---
 
 # lazydocker docker.sock connection leak through Colima ssh forward
 
 ## Connections
-- [[Compose-version label mismatch forces network recreation + stale endpoint records]] - `conceptually_related_to` [EXTRACTED]
-- [[discover_upstream_versions.py hardening bounded retry, 90s deadline thread, IPv4 fallback]] - `conceptually_related_to` [INFERRED]
-- [[wazuh-manager service (4.14.8, isolated-network only, open enrollment)]] - `references` [EXTRACTED]
+- [[Compose version mismatch forces network recreate + stale endpoints]] - `conceptually_related_to` [EXTRACTED]
+- [[Incident 2026-10-16 ConduitHermes instability record]] - `references` [EXTRACTED]
+- [[Sunday-upgrade no-op gate hardening (CLAUDE.md section 0.0)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
+#graphify/rationale #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher

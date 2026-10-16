@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_models.py"
+source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "Enum"
-location: "L41"
+community: "SkillGuard"
+location: "L313"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/SkillGuard
 ---
 
 # .test_severity_ordering()
 
 ## Connections
-- [[TestSecurityEvent]] - `method` [EXTRACTED]
+- [[TestAggregation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

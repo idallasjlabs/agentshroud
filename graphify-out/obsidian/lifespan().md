@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "lifespan.py"
+community: "MiddlewareManager"
 location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/MiddlewareManager
 ---
 
 # lifespan()
@@ -33,15 +33,15 @@ tags:
 - [[DifferentialPIIDetector_1]] - `calls` [EXTRACTED]
 - [[DriftDetector]] - `calls` [EXTRACTED]
 - [[EgressApprovalQueue]] - `calls` [EXTRACTED]
-- [[EgressFilter_2]] - `calls` [EXTRACTED]
+- [[EgressFilter_1]] - `calls` [EXTRACTED]
 - [[EgressPolicy]] - `calls` [EXTRACTED]
 - [[EgressTelegramNotifier]] - `calls` [EXTRACTED]
 - [[EncodingDetector]] - `calls` [EXTRACTED]
 - [[EncryptedStore]] - `calls` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue_2]] - `calls` [EXTRACTED]
 - [[EnvelopeSigner]] - `calls` [EXTRACTED]
 - [[EventBus]] - `calls` [EXTRACTED]
-- [[FastAPI_1]] - `references` [EXTRACTED]
+- [[FastAPI]] - `references` [EXTRACTED]
 - [[FastAPI lifespan - startup and shutdown]] - `rationale_for` [EXTRACTED]
 - [[GroupRegistry]] - `calls` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `calls` [EXTRACTED]
@@ -67,17 +67,17 @@ tags:
 - [[PIISanitizer_2]] - `calls` [EXTRACTED]
 - [[PrivacyPolicyEnforcer]] - `calls` [EXTRACTED]
 - [[ProgressiveTrustConfig_2]] - `calls` [EXTRACTED]
-- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
 - [[PromptProtection]] - `calls` [EXTRACTED]
-- [[RBACConfig_1]] - `calls` [EXTRACTED]
+- [[RBACConfig_4]] - `calls` [EXTRACTED]
 - [[RateLimitConfig]] - `calls` [EXTRACTED]
 - [[RateLimitGuard]] - `calls` [EXTRACTED]
 - [[ReportStore]] - `calls` [EXTRACTED]
-- [[SSHProxy]] - `calls` [EXTRACTED]
+- [[SSHProxy_1]] - `calls` [EXTRACTED]
 - [[SecurityPipeline_2]] - `calls` [EXTRACTED]
 - [[ToolACLEnforcer]] - `calls` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
-- [[TrustManager]] - `calls` [EXTRACTED]
+- [[TrustManager_1]] - `calls` [EXTRACTED]
 - [[UserSessionManager]] - `calls` [EXTRACTED]
 - [[WebProxy]] - `calls` [EXTRACTED]
 - [[WebProxyConfig]] - `calls` [EXTRACTED]
@@ -96,4 +96,4 @@ tags:
 - [[setup_resource_guard()]] - `calls` [EXTRACTED]
 - [[start_dns_forwarder()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

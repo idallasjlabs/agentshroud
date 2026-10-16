@@ -15,9 +15,9 @@ tags:
 - [[Configuration  Environment Variables_12]] - `contains` [EXTRACTED]
 - [[Function Details_24]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_26]] - `contains` [EXTRACTED]
-- [[Purpose_143]] - `contains` [EXTRACTED]
+- [[Purpose_129]] - `contains` [EXTRACTED]
 - [[Related_30]] - `contains` [EXTRACTED]
-- [[Responsibilities_28]] - `contains` [EXTRACTED]
+- [[Responsibilities_27]] - `contains` [EXTRACTED]
 - [[mcp_proxy.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

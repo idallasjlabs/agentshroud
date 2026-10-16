@@ -12,7 +12,7 @@ tags:
 # .test_with_data()
 
 ## Connections
-- [[ContainerInfo]] - `calls` [EXTRACTED]
+- [[ContainerInfo_3]] - `calls` [EXTRACTED]
 - [[TestContainerInfo]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy

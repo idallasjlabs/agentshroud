@@ -19,7 +19,7 @@ tags:
 - [[dot-check_async()]] - `calls` [EXTRACTED]
 - [[dot-deny()]] - `calls` [EXTRACTED]
 - [[dot-request_approval()]] - `calls` [EXTRACTED]
-- [[Any_29]] - `references` [EXTRACTED]
+- [[Any_31]] - `references` [EXTRACTED]
 - [[GatewayEvent]] - `references` [EXTRACTED]
 - [[Helper to create a GatewayEvent with current timestamp]] - `rationale_for` [EXTRACTED]
 - [[_alert_event()]] - `calls` [EXTRACTED]

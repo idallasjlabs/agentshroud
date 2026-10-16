@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_verifier()_1]] - `calls` [EXTRACTED]
 - [[DraftEntry]] - `calls` [EXTRACTED]
-- [[IntelReportStore]] - `calls` [EXTRACTED]
+- [[IntelReportStore_1]] - `calls` [EXTRACTED]
 - [[TestVerifyReport]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy

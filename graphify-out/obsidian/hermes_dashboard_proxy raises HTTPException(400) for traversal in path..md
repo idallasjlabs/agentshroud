@@ -13,5 +13,6 @@ tags:
 
 ## Connections
 - [[dot-test_proxy_returns_400_on_traversal()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_proxy_returns_400_on_traversal_in_query()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_main_endpointspy

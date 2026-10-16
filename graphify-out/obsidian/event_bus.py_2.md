@@ -15,13 +15,13 @@ tags:
 - [[Config Keys Read_7]] - `contains` [EXTRACTED]
 - [[Environment Variables Used_8]] - `contains` [EXTRACTED]
 - [[Event Types Emitted by main.py]] - `contains` [EXTRACTED]
-- [[Function Details_47]] - `contains` [EXTRACTED]
+- [[Function Details_43]] - `contains` [EXTRACTED]
 - [[Imports From  Exports To_7]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_49]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_45]] - `contains` [EXTRACTED]
 - [[Known Issues  Notes_8]] - `contains` [EXTRACTED]
-- [[Purpose_181]] - `contains` [EXTRACTED]
-- [[Related_53]] - `contains` [EXTRACTED]
-- [[Responsibilities_50]] - `contains` [EXTRACTED]
+- [[Purpose_169]] - `contains` [EXTRACTED]
+- [[Related_49]] - `contains` [EXTRACTED]
+- [[Responsibilities_45]] - `contains` [EXTRACTED]
 - [[event_bus.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/event_buspy

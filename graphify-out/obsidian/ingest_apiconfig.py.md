@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "load_config"
+community: "ApprovalQueueConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/ApprovalQueueConfig
 ---
 
 # ingest_api/config.py
@@ -14,25 +14,25 @@ tags:
 ## Connections
 - [[NOTE This branch ships hot-reload of the config FILE only. The web config]] - `rationale_for` [EXTRACTED]
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `contains` [EXTRACTED]
-- [[AuditExportConfig]] - `contains` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `contains` [EXTRACTED]
+- [[AuditExportConfig_1]] - `contains` [EXTRACTED]
 - [[BotConfig]] - `imports` [EXTRACTED]
 - [[ChannelsConfig]] - `contains` [EXTRACTED]
-- [[GatewayConfig_3]] - `contains` [EXTRACTED]
+- [[GatewayConfig_4]] - `contains` [EXTRACTED]
 - [[LedgerConfig_1]] - `contains` [EXTRACTED]
 - [[PIIConfig_2]] - `contains` [EXTRACTED]
 - [[RouterConfig_1]] - `contains` [EXTRACTED]
 - [[SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST]] - `references` [EXTRACTED]
 - [[SSHConfig_2]] - `imports` [EXTRACTED]
-- [[SecurityConfig_4]] - `contains` [EXTRACTED]
+- [[SecurityConfig]] - `contains` [EXTRACTED]
 - [[SecurityModuleConfig]] - `contains` [EXTRACTED]
-- [[TeamsConfig]] - `imports` [EXTRACTED]
+- [[TeamsConfig_2]] - `imports` [EXTRACTED]
 - [[ToolRiskConfig]] - `contains` [EXTRACTED]
 - [[ToolRiskPolicy]] - `contains` [EXTRACTED]
 - [[_default_mtime()]] - `contains` [EXTRACTED]
 - [[_entity_type_mapping()]] - `contains` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
-- [[api.py_2]] - `imports_from` [EXTRACTED]
+- [[api.py]] - `imports_from` [EXTRACTED]
 - [[apply_reloadable_config()]] - `contains` [EXTRACTED]
 - [[bot_config.py]] - `imports_from` [EXTRACTED]
 - [[check_monitor_mode_warnings()]] - `contains` [EXTRACTED]
@@ -56,4 +56,4 @@ tags:
 - [[test_router_openai_translation.py]] - `references` [EXTRACTED]
 - [[verify.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

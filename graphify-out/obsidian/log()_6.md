@@ -1,8 +1,8 @@
 ---
-source_file: "docker/scripts/security-report.sh"
+source_file: "docker/scripts/security-scheduler.sh"
 type: "code"
 community: "FR3: System Integrity"
-location: "L18"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # log()
 
 ## Connections
-- [[security-report.sh]] - `defines` [EXTRACTED]
-- [[security-report.sh script]] - `calls` [EXTRACTED]
+- [[security-scheduler.sh]] - `defines` [EXTRACTED]
+- [[security-scheduler.sh script]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity

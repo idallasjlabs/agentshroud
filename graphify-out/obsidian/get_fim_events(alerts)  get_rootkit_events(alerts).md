@@ -12,6 +12,6 @@ tags:
 # get_fim_events(alerts) / get_rootkit_events(alerts)
 
 ## Connections
-- [[Function Details_20]] - `contains` [EXTRACTED]
+- [[Function Details_19]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/wazuh_clientpy

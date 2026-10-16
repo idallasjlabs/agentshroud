@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "ingest_api/models.py"
+community: "DataLedger"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/DataLedger
 ---
 
 # ingest_api/models.py
 
 ## Connections
-- [[AgentTarget]] - `contains` [EXTRACTED]
+- [[AgentTarget_1]] - `contains` [EXTRACTED]
 - [[ApprovalDecision]] - `contains` [EXTRACTED]
-- [[ApprovalQueueItem_2]] - `contains` [EXTRACTED]
-- [[ApprovalRequest_5]] - `contains` [EXTRACTED]
-- [[EmailSendRequest]] - `contains` [EXTRACTED]
+- [[ApprovalQueueItem_4]] - `contains` [EXTRACTED]
+- [[ApprovalRequest_4]] - `contains` [EXTRACTED]
+- [[EmailSendRequest_1]] - `contains` [EXTRACTED]
 - [[EmailSendResponse]] - `contains` [EXTRACTED]
-- [[ForwardRequest_3]] - `contains` [EXTRACTED]
+- [[ForwardRequest_1]] - `contains` [EXTRACTED]
 - [[ForwardResponse]] - `contains` [EXTRACTED]
 - [[LedgerEntry]] - `contains` [EXTRACTED]
 - [[LedgerQueryResponse]] - `contains` [EXTRACTED]
@@ -40,4 +40,4 @@ tags:
 - [[store.py]] - `imports_from` [EXTRACTED]
 - [[test_router_openai_translation.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/code #graphify/EXTRACTED #community/DataLedger

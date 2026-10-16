@@ -13,13 +13,13 @@ tags:
 
 ## Connections
 - [[AGENTSHROUD_MODE]] - `references` [INFERRED]
-- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[Enum_1]] - `imports_from` [EXTRACTED]
 - [[MCPProxyConfig_3]] - `contains` [EXTRACTED]
 - [[MCPServerConfig_2]] - `contains` [EXTRACTED]
 - [[MCPToolConfig]] - `contains` [EXTRACTED]
 - [[MCPTransport]] - `contains` [EXTRACTED]
-- [[PermissionLevel]] - `contains` [EXTRACTED]
-- [[agentshroud.yaml_1]] - `references` [INFERRED]
+- [[PermissionLevel_1]] - `contains` [EXTRACTED]
+- [[agentshroud.yaml]] - `references` [INFERRED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 - [[mcp_permissions.py]] - `imports_from` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports_from` [EXTRACTED]

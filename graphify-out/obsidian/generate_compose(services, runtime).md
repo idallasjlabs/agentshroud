@@ -12,6 +12,6 @@ tags:
 # generate_compose(services, runtime)
 
 ## Connections
-- [[Function Details_45]] - `contains` [EXTRACTED]
+- [[Function Details_46]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/compose_generatorpy

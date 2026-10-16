@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "lifespan.py"
+community: "MiddlewareManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/MiddlewareManager
 ---
 
 # lifespan.py
 
 ## Connections
 - [[NOTE Gateway-side Slack Socket Mode listener removed.]] - `rationale_for` [EXTRACTED]
-- [[AGENTSHROUD_HERMES_DISABLE_TELEGRAM=1 opt-in for dev Hermes]] - `references` [EXTRACTED]
 - [[AgentRegistry]] - `imports` [EXTRACTED]
 - [[AlertDispatcher]] - `imports` [EXTRACTED]
 - [[AlertTelegramRelay]] - `imports` [EXTRACTED]
@@ -35,16 +34,16 @@ tags:
 - [[DifferentialPIIDetector_1]] - `imports` [EXTRACTED]
 - [[DriftDetector]] - `imports` [EXTRACTED]
 - [[EgressApprovalQueue]] - `imports` [EXTRACTED]
-- [[EgressFilter_2]] - `imports` [EXTRACTED]
+- [[EgressFilter_1]] - `imports` [EXTRACTED]
 - [[EgressPolicy]] - `imports` [EXTRACTED]
 - [[EgressTelegramNotifier]] - `imports` [EXTRACTED]
 - [[EncodingDetector]] - `imports` [EXTRACTED]
 - [[EncryptedStore]] - `imports` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `imports` [EXTRACTED]
+- [[EnhancedApprovalQueue_2]] - `imports` [EXTRACTED]
 - [[EnvelopeSigner]] - `imports` [EXTRACTED]
 - [[EventBus]] - `imports` [EXTRACTED]
 - [[FalcoAlertWatcher]] - `imports` [EXTRACTED]
-- [[FastAPI_1]] - `imports_from` [EXTRACTED]
+- [[FastAPI]] - `imports_from` [EXTRACTED]
 - [[GroupRegistry]] - `imports` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `imports` [EXTRACTED]
 - [[Hermes dashboard bridge port 9120 (dashboard_bridge.py re-exposes loopback-bound 9119)]] - `references` [EXTRACTED]
@@ -72,19 +71,19 @@ tags:
 - [[PrivacyPolicy]] - `imports` [EXTRACTED]
 - [[PrivacyPolicyEnforcer]] - `imports` [EXTRACTED]
 - [[ProgressiveTrustConfig_2]] - `imports` [EXTRACTED]
-- [[PromptGuard]] - `imports` [EXTRACTED]
+- [[PromptGuard_1]] - `imports` [EXTRACTED]
 - [[PromptProtection]] - `imports` [EXTRACTED]
-- [[RBACConfig_1]] - `imports` [EXTRACTED]
+- [[RBACConfig_4]] - `imports` [EXTRACTED]
 - [[RateLimitConfig]] - `imports` [EXTRACTED]
 - [[RateLimitGuard]] - `imports` [EXTRACTED]
 - [[ReportStore]] - `imports` [EXTRACTED]
 - [[SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST]] - `references` [EXTRACTED]
-- [[SSHProxy]] - `imports` [EXTRACTED]
+- [[SSHProxy_1]] - `imports` [EXTRACTED]
 - [[SecurityPipeline_2]] - `imports` [EXTRACTED]
 - [[ToolACLEnforcer]] - `imports` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `imports` [EXTRACTED]
 - [[TrustLevel_1]] - `imports` [EXTRACTED]
-- [[TrustManager]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
 - [[WebProxy]] - `imports` [EXTRACTED]
 - [[WebProxyConfig]] - `imports` [EXTRACTED]
@@ -95,17 +94,17 @@ tags:
 - [[_install_uvicorn_warning_filter()]] - `contains` [EXTRACTED]
 - [[_is_fixture_uid()]] - `imports` [EXTRACTED]
 - [[_prune_fixture_markdown()]] - `references` [EXTRACTED]
-- [[agent_isolation.py_2]] - `imports_from` [EXTRACTED]
+- [[agent_isolation.py]] - `imports_from` [EXTRACTED]
 - [[build_correlation_summary()]] - `imports` [EXTRACTED]
 - [[canvas_proxy_app()]] - `imports` [EXTRACTED]
 - [[check_monitor_mode_warnings()]] - `imports` [EXTRACTED]
-- [[clamav_scanner.py_2]] - `imports_from` [EXTRACTED]
+- [[clamav_scanner.py]] - `imports_from` [EXTRACTED]
 - [[config_watcher()]] - `imports` [EXTRACTED]
 - [[cve_report_scheduler()]] - `imports` [EXTRACTED]
 - [[dashboard_endpoints.py]] - `imports_from` [EXTRACTED]
 - [[dns_blocklist.py]] - `imports_from` [EXTRACTED]
 - [[dns_forwarder.py]] - `imports_from` [EXTRACTED]
-- [[egress_config.py_2]] - `imports_from` [EXTRACTED]
+- [[egress_config.py]] - `imports_from` [EXTRACTED]
 - [[egress_filter.py_1]] - `imports_from` [EXTRACTED]
 - [[enhanced_queue.py]] - `imports_from` [EXTRACTED]
 - [[event_bus.py]] - `imports_from` [EXTRACTED]
@@ -114,8 +113,8 @@ tags:
 - [[get_trivy_summary()]] - `imports` [EXTRACTED]
 - [[get_wazuh_summary()]] - `imports` [EXTRACTED]
 - [[ghsa_ingest_scheduler()]] - `imports` [EXTRACTED]
-- [[health_report.py]] - `imports_from` [EXTRACTED]
-- [[http_proxy.py]] - `imports_from` [EXTRACTED]
+- [[health_report.py_2]] - `imports_from` [EXTRACTED]
+- [[http_proxy.py_2]] - `imports_from` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apirouter.py]] - `imports_from` [EXTRACTED]
 - [[install_log_handler()]] - `imports` [EXTRACTED]
@@ -132,7 +131,7 @@ tags:
 - [[proxy.py]] - `imports_from` [EXTRACTED]
 - [[resolve_config_path()]] - `imports` [EXTRACTED]
 - [[resolve_enforcement_mode()]] - `imports` [EXTRACTED]
-- [[run_canary()]] - `imports` [EXTRACTED]
+- [[run_canary()_1]] - `imports` [EXTRACTED]
 - [[sanitizer.py_2]] - `imports_from` [EXTRACTED]
 - [[scan_bytes()]] - `imports` [EXTRACTED]
 - [[setup_resource_guard()]] - `imports` [EXTRACTED]
@@ -141,12 +140,12 @@ tags:
 - [[test_lifespan_prune.py]] - `references` [EXTRACTED]
 - [[test_resource_guard_wiring.py]] - `references` [EXTRACTED]
 - [[test_telegram_executor.py]] - `imports_from` [EXTRACTED]
-- [[trivy_report.py_2]] - `imports_from` [EXTRACTED]
+- [[trivy_report.py]] - `imports_from` [EXTRACTED]
 - [[trust_manager.py]] - `imports_from` [EXTRACTED]
 - [[upstream_cve_check_scheduler()]] - `imports` [EXTRACTED]
 - [[verify_images()]] - `imports` [EXTRACTED]
-- [[wazuh_client.py]] - `imports_from` [EXTRACTED]
+- [[wazuh_client.py_2]] - `imports_from` [EXTRACTED]
 - [[web_config.py]] - `imports_from` [EXTRACTED]
-- [[web_proxy.py]] - `imports_from` [EXTRACTED]
+- [[web_proxy.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

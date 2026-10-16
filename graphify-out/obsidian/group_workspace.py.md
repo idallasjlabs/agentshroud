@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[GroupAccessDenied]] - `contains` [EXTRACTED]
 - [[GroupWorkspaceManager]] - `contains` [EXTRACTED]
-- [[RBACConfig_1]] - `imports` [EXTRACTED]
+- [[RBACConfig_4]] - `imports` [EXTRACTED]
 - [[SharedMemoryManager]] - `imports` [EXTRACTED]
-- [[TeamsConfig]] - `imports` [EXTRACTED]
+- [[TeamsConfig_2]] - `imports` [EXTRACTED]
 - [[WorkspaceContext]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RBACConfig

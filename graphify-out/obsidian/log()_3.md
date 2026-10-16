@@ -1,19 +1,18 @@
 ---
-source_file: "docker/scripts/security-entrypoint.sh"
+source_file: "scripts/openclaw_triage.sh"
 type: "code"
-community: "security-entrypoint.sh"
-location: "L18"
+community: "openclaw_triage.sh"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/security-entrypointsh
+  - community/openclaw_triagesh
 ---
 
 # log()
 
 ## Connections
-- [[alert_critical()]] - `calls` [EXTRACTED]
-- [[security-entrypoint.sh]] - `defines` [EXTRACTED]
-- [[security-entrypoint.sh script]] - `calls` [EXTRACTED]
+- [[openclaw_triage.sh]] - `defines` [EXTRACTED]
+- [[openclaw_triage.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/security-entrypointsh
+#graphify/code #graphify/EXTRACTED #community/openclaw_triagesh

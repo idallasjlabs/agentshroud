@@ -12,9 +12,9 @@ tags:
 # forward_content_stream()
 
 ## Connections
-- [[AuthRequired]] - `references` [EXTRACTED]
-- [[ForwardRequest]] - `references` [EXTRACTED]
-- [[Request_3]] - `references` [EXTRACTED]
+- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[ForwardRequest_2]] - `references` [EXTRACTED]
+- [[Request_4]] - `references` [EXTRACTED]
 - [[SecurityPipeline_2]] - `calls` [EXTRACTED]
 - [[Streaming variant of forward for OpenAI-compat agents (Hermes).      Same inbou]] - `rationale_for` [EXTRACTED]
 - [[_process_inbound()]] - `calls` [EXTRACTED]

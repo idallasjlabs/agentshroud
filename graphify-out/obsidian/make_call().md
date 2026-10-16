@@ -32,8 +32,8 @@ tags:
 - [[dot-test_timeout_error()]] - `calls` [EXTRACTED]
 - [[dot-test_tool_not_requiring_approval_allowed()]] - `calls` [EXTRACTED]
 - [[dot-test_unknown_server_returns_error_result()]] - `calls` [EXTRACTED]
-- [[MCPToolCall]] - `calls` [EXTRACTED]
-- [[MCPToolCall_1]] - `references` [EXTRACTED]
+- [[MCPToolCall_1]] - `calls` [EXTRACTED]
+- [[MCPToolCall]] - `references` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/StdioConnection

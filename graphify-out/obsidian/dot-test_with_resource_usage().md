@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "ServiceManager"
+community: "test_soc_realtime_coverage.py"
 location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .test_with_resource_usage()
@@ -16,4 +16,4 @@ tags:
 - [[ServiceDescriptor_1]] - `calls` [EXTRACTED]
 - [[TestServiceDescriptor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

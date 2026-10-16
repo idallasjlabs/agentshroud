@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_key_rotation_internals.py"
+source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "CredentialValidator"
-location: "L31"
+community: "SessionManager"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CredentialValidator
+  - community/SessionManager
 ---
 
 # manager()
 
 ## Connections
-- [[KeyRotationConfig_1]] - `calls` [EXTRACTED]
-- [[KeyRotationManager]] - `calls` [EXTRACTED]
-- [[test_key_rotation_internals.py]] - `contains` [EXTRACTED]
+- [[SessionManager]] - `calls` [EXTRACTED]
+- [[test_session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CredentialValidator
+#graphify/code #graphify/EXTRACTED #community/SessionManager

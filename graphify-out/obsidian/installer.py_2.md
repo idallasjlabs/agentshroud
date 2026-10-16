@@ -15,7 +15,7 @@ tags:
 - [[AgentShroud Web Installer — Step-by-step installation wizard.]] - `rationale_for` [EXTRACTED]
 - [[InstallConfig]] - `contains` [EXTRACTED]
 - [[PrerequisiteCheck]] - `contains` [EXTRACTED]
-- [[api.py_2]] - `references` [EXTRACTED]
+- [[api.py]] - `references` [EXTRACTED]
 - [[check_prerequisites()]] - `contains` [EXTRACTED]
 - [[get_runtimes()]] - `contains` [EXTRACTED]
 - [[installer_page()]] - `contains` [EXTRACTED]

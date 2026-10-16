@@ -1,18 +1,19 @@
 ---
-source_file: "docker/scripts/security-report-retention.sh"
+source_file: "docker/scripts/colima-health-check.sh"
 type: "code"
-community: "FR3: System Integrity"
-location: "L20"
+community: "colima-health-check.sh"
+location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FR3_System_Integrity
+  - community/colima-health-checksh
 ---
 
 # log()
 
 ## Connections
-- [[security-report-retention.sh]] - `defines` [EXTRACTED]
-- [[security-report-retention.sh script]] - `calls` [EXTRACTED]
+- [[colima-health-check.sh]] - `defines` [EXTRACTED]
+- [[colima-health-check.sh script]] - `calls` [EXTRACTED]
+- [[notify()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh

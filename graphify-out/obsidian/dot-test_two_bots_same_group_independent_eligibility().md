@@ -12,7 +12,7 @@ tags:
 # .test_two_bots_same_group_independent_eligibility()
 
 ## Connections
-- [[dot-_make_proxy()_5]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_2]] - `calls` [EXTRACTED]
 - [[TestPerBotGroupMentionFilter]] - `method` [EXTRACTED]
 - [[Two bots in the same group track eligibility independently.]] - `rationale_for` [EXTRACTED]
 - [[_make_group_update()]] - `calls` [EXTRACTED]

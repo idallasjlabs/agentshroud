@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "ToolChainAnalyzer"
+community: "MiddlewareManager"
 location: "L174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolChainAnalyzer
+  - community/MiddlewareManager
 ---
 
 # .test_tool_chain_analyzer_instantiates()
@@ -15,4 +15,4 @@ tags:
 - [[TestModuleInstantiationInEnforceMode]] - `method` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_browser_security.py"
+source_file: "gateway/tests/test_resource_guard_limits.py"
 type: "code"
-community: "ThreatAssessment"
-location: "L26"
+community: "ResourceGuard"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ThreatAssessment
+  - community/ResourceGuard
 ---
 
 # guard()
 
 ## Connections
-- [[BrowserSecurityGuard]] - `calls` [EXTRACTED]
-- [[test_browser_security.py]] - `contains` [EXTRACTED]
+- [[ResourceGuard]] - `calls` [EXTRACTED]
+- [[ResourceLimits]] - `calls` [EXTRACTED]
+- [[test_resource_guard_limits.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ThreatAssessment
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

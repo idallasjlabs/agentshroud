@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
 community: "test_main_endpoints.py"
-location: "L589"
+location: "L696"
 tags:
   - graphify/code
   - graphify/EXTRACTED

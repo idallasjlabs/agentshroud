@@ -1,20 +1,18 @@
 ---
-source_file: "scripts/export-email-reports.py"
+source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "export_bot"
-location: "L136"
+community: "DNSForwarderProtocol"
+location: "L309"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export_bot
+  - community/DNSForwarderProtocol
 ---
 
 # main()
 
 ## Connections
-- [[Path_52]] - `calls` [EXTRACTED]
-- [[_parse_since()_1]] - `calls` [EXTRACTED]
-- [[export-email-reports.py]] - `contains` [EXTRACTED]
-- [[export_bot()]] - `calls` [EXTRACTED]
+- [[dns_forwarder.py]] - `contains` [EXTRACTED]
+- [[start_dns_forwarder()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export_bot
+#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol

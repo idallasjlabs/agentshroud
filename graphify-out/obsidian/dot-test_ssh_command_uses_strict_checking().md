@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "test_security_fixes.py"
+community: "ApprovalQueueConfig"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_fixespy
+  - community/ApprovalQueueConfig
 ---
 
 # .test_ssh_command_uses_strict_checking()
@@ -15,7 +15,7 @@ tags:
 - [[SSH execute builds command with StrictHostKeyChecking=yes]] - `rationale_for` [EXTRACTED]
 - [[SSHConfig_2]] - `calls` [EXTRACTED]
 - [[SSHHostConfig]] - `calls` [EXTRACTED]
-- [[SSHProxy]] - `calls` [EXTRACTED]
+- [[SSHProxy_1]] - `calls` [EXTRACTED]
 - [[TestSSHStrictHostKeyChecking]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_fixespy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

@@ -1,23 +1,28 @@
 ---
-source_file: "gateway/security/drift_detector.py"
-type: "code"
-community: "AgentRegistry"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
+type: "document"
+community: "drift_detector.py"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/drift_detectorpy
 ---
 
 # drift_detector.py
 
 ## Connections
-- [[ContainerSnapshot]] - `contains` [EXTRACTED]
-- [[Drift Detector Module Badge Icon]] - `conceptually_related_to` [INFERRED]
-- [[DriftAlert]] - `contains` [EXTRACTED]
-- [[DriftDetector]] - `contains` [EXTRACTED]
-- [[agent_isolation.py_2]] - `references` [EXTRACTED]
-- [[alert_dispatcher.py_2]] - `references` [EXTRACTED]
-- [[clamav_scanner.py_2]] - `references` [EXTRACTED]
+- [[Configuration_11]] - `contains` [EXTRACTED]
+- [[Database Schema_1]] - `contains` [EXTRACTED]
+- [[Drift Categories and Severity]] - `contains` [EXTRACTED]
+- [[Environment Variables_6]] - `contains` [EXTRACTED]
+- [[Function Details_4]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_4]] - `contains` [EXTRACTED]
+- [[Mode Enforce vs Monitor_3]] - `contains` [EXTRACTED]
+- [[Purpose_103]] - `contains` [EXTRACTED]
+- [[Related_8]] - `contains` [EXTRACTED]
+- [[Responsibilities_5]] - `contains` [EXTRACTED]
+- [[Threat Model_5]] - `contains` [EXTRACTED]
+- [[drift_detector.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/document #graphify/EXTRACTED #community/drift_detectorpy

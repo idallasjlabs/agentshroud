@@ -12,6 +12,6 @@ tags:
 # networkAccess
 
 ## Connections
-- [[security_11]] - `contains` [EXTRACTED]
+- [[security_10]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/skilljson

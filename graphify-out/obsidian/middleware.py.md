@@ -46,7 +46,7 @@ tags:
 - [[PIIConfig_2]] - `imports` [EXTRACTED]
 - [[PathIsolationConfig]] - `imports` [EXTRACTED]
 - [[PathIsolationManager]] - `imports` [EXTRACTED]
-- [[RBACConfig_1]] - `imports` [EXTRACTED]
+- [[RBACConfig_4]] - `imports` [EXTRACTED]
 - [[RBACManager_2]] - `imports` [EXTRACTED]
 - [[Resource_2]] - `imports` [EXTRACTED]
 - [[ResourceGuard]] - `imports` [EXTRACTED]
@@ -56,8 +56,8 @@ tags:
 - [[ToolChainAnalyzer]] - `imports` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `imports` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `imports` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `imports` [EXTRACTED]
 - [[ToolResultSanitizer]] - `imports` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `imports` [EXTRACTED]
 - [[ToolResultSanitizerConfig]] - `imports` [EXTRACTED]
 - [[ToolTier]] - `imports` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
@@ -65,7 +65,6 @@ tags:
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 - [[normalize_input()]] - `imports` [EXTRACTED]
-- [[test_main_endpoints.py]] - `references` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

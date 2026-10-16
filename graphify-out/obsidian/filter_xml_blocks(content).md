@@ -12,6 +12,6 @@ tags:
 # filter_xml_blocks(content)
 
 ## Connections
-- [[Function Details_14]] - `contains` [EXTRACTED]
+- [[Function Details_13]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/sanitizerpy

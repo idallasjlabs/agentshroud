@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ConfigUpdate]] - `references` [EXTRACTED]
 - [[Import configuration from uploaded data.]] - `rationale_for` [EXTRACTED]
-- [[api.py_2]] - `contains` [EXTRACTED]
+- [[api.py]] - `contains` [EXTRACTED]
 - [[update_config()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy

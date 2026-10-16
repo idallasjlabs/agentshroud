@@ -1,19 +1,20 @@
 ---
-source_file: "scripts/check-vendor-compat.sh"
+source_file: "docker/scripts/container-net-diag.sh"
 type: "code"
-community: "check-vendor-compat.sh"
-location: "L50"
+community: "container-net-diag.sh"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check-vendor-compatsh
+  - community/container-net-diagsh
 ---
 
 # fail()
 
 ## Connections
-- [[check-vendor-compat.sh]] - `defines` [EXTRACTED]
-- [[check_hermes()]] - `calls` [EXTRACTED]
-- [[check_openclaw()]] - `calls` [EXTRACTED]
+- [[container-net-diag.sh]] - `defines` [EXTRACTED]
+- [[container-net-diag.sh script]] - `calls` [EXTRACTED]
+- [[http_test()]] - `calls` [EXTRACTED]
+- [[tcp_test()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh
+#graphify/code #graphify/EXTRACTED #community/container-net-diagsh

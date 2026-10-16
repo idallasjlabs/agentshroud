@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/soc_correlation.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "CorrelationSummary"
-location: "L44"
+community: "make_event"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CorrelationSummary
+  - community/make_event
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_13]] - `references` [EXTRACTED]
-- [[CorrelationSummary]] - `method` [EXTRACTED]
+- [[dot-get_recent()]] - `calls` [EXTRACTED]
+- [[Any_31]] - `references` [EXTRACTED]
+- [[GatewayEvent]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CorrelationSummary
+#graphify/code #graphify/EXTRACTED #community/make_event

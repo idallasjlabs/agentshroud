@@ -12,7 +12,7 @@ tags:
 # mfa_guard.py
 
 ## Connections
-- [[MFAGuard_2]] - `contains` [EXTRACTED]
+- [[MFAGuard_1]] - `contains` [EXTRACTED]
 - [[MFAResult]] - `contains` [EXTRACTED]
 - [[_truthy()]] - `contains` [EXTRACTED]
 - [[mcp_policy.py]] - `references` [EXTRACTED]

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[cve_prefetch.py]] - `contains` [EXTRACTED]
-- [[main()_30]] - `calls` [EXTRACTED]
+- [[main()_28]] - `calls` [EXTRACTED]
 - [[prefetch-ghsa-registry.sh (known-GHSA-ID cache prefetch)]] - `shares_data_with` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/main

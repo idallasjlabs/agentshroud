@@ -15,9 +15,9 @@ tags:
 - [[Configuration  Environment Variables_19]] - `contains` [EXTRACTED]
 - [[Function Details_35]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_37]] - `contains` [EXTRACTED]
-- [[Purpose_156]] - `contains` [EXTRACTED]
+- [[Purpose_155]] - `contains` [EXTRACTED]
 - [[Related_41]] - `contains` [EXTRACTED]
-- [[Responsibilities_39]] - `contains` [EXTRACTED]
+- [[Responsibilities_38]] - `contains` [EXTRACTED]
 - [[Trust Level Reference]] - `contains` [EXTRACTED]
 - [[mcp_permissions.py_1]] - `contains` [EXTRACTED]
 

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Calendar Operations_1]] - `contains` [EXTRACTED]
-- [[Configuration_5]] - `contains` [EXTRACTED]
+- [[Configuration_3]] - `contains` [EXTRACTED]
 - [[Contact Operations_1]] - `contains` [EXTRACTED]
 - [[Mail Operations_1]] - `contains` [EXTRACTED]
 - [[Notes Operations_1]] - `contains` [EXTRACTED]

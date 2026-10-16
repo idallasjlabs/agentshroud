@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/dns_forwarder.py"
+source_file: "docker/bots/hermes/docker_proxy_relay.py"
 type: "code"
-community: "DNSForwarderProtocol"
-location: "L309"
+community: "dashboard_bridge.py"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSForwarderProtocol
+  - community/dashboard_bridgepy
 ---
 
 # main()
 
 ## Connections
-- [[dns_forwarder.py]] - `contains` [EXTRACTED]
-- [[start_dns_forwarder()]] - `calls` [EXTRACTED]
+- [[docker_proxy_relay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol
+#graphify/code #graphify/EXTRACTED #community/dashboard_bridgepy

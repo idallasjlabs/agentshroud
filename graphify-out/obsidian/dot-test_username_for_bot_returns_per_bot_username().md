@@ -12,7 +12,7 @@ tags:
 # .test_username_for_bot_returns_per_bot_username()
 
 ## Connections
-- [[dot-_make_proxy()_5]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_2]] - `calls` [EXTRACTED]
 - [[TestPerBotGroupMentionFilter]] - `method` [EXTRACTED]
 - [[_username_for_bot returns the correct @username for each bot_id.]] - `rationale_for` [EXTRACTED]
 

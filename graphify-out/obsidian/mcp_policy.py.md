@@ -12,12 +12,12 @@ tags:
 # mcp_policy.py
 
 ## Connections
-- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[Enum_1]] - `imports_from` [EXTRACTED]
 - [[MCPPolicyAction]] - `contains` [EXTRACTED]
 - [[MCPPolicyConfig_1]] - `contains` [EXTRACTED]
 - [[MCPPolicyDecision]] - `contains` [EXTRACTED]
 - [[MCPPolicyEngine_1]] - `contains` [EXTRACTED]
-- [[RBACConfig_1]] - `imports` [EXTRACTED]
+- [[RBACConfig_4]] - `imports` [EXTRACTED]
 - [[_norm()_1]] - `contains` [EXTRACTED]
 - [[mfa_guard.py]] - `references` [EXTRACTED]
 - [[record_decision()]] - `imports` [EXTRACTED]

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Request_5]] - `references` [EXTRACTED]
 - [[Serve the installer wizard HTML.]] - `rationale_for` [EXTRACTED]
-- [[get]] - `references` [EXTRACTED]
+- [[get_2]] - `references` [EXTRACTED]
 - [[installer.py_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/installerpy

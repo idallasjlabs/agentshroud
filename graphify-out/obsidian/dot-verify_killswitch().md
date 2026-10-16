@@ -19,7 +19,7 @@ tags:
 - [[dot-_test_script_exists()]] - `calls` [EXTRACTED]
 - [[dot-_test_script_permissions()]] - `calls` [EXTRACTED]
 - [[dot-_test_script_syntax()]] - `calls` [EXTRACTED]
-- [[Any_40]] - `references` [EXTRACTED]
+- [[Any_42]] - `references` [EXTRACTED]
 - [[KillSwitchMonitor]] - `method` [EXTRACTED]
 - [[Verify that the kill switch mechanism works without actually killing.          A]] - `rationale_for` [EXTRACTED]
 

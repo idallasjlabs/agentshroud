@@ -18,10 +18,10 @@ tags:
 - [[EgressRequest_1]] - `contains` [EXTRACTED]
 - [[EgressRule]] - `contains` [EXTRACTED]
 - [[EgressScope]] - `contains` [EXTRACTED]
-- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[Enum_1]] - `imports_from` [EXTRACTED]
 - [[FR5 Restricted Data Flow]] - `references` [EXTRACTED]
-- [[RiskLevel_6]] - `contains` [EXTRACTED]
-- [[egress_config.py_2]] - `imports_from` [EXTRACTED]
+- [[RiskLevel_5]] - `contains` [EXTRACTED]
+- [[egress_config.py]] - `imports_from` [EXTRACTED]
 - [[make_event()]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_skill_guard.py"
+source_file: "gateway/tests/test_env_guard_class.py"
 type: "code"
-community: "SkillGuard"
-location: "L46"
+community: "TestCheckCommandExecution"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/TestCheckCommandExecution
 ---
 
 # guard()
 
 ## Connections
-- [[SkillGuard]] - `references` [EXTRACTED]
-- [[test_skill_guard.py]] - `contains` [EXTRACTED]
+- [[EnvironmentGuard]] - `calls` [EXTRACTED]
+- [[test_env_guard_class.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/TestCheckCommandExecution

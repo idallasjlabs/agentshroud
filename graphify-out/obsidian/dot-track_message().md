@@ -17,7 +17,7 @@ tags:
 - [[dot-_check_thresholds()]] - `calls` [EXTRACTED]
 - [[dot-_cleanup_old_sessions()_1]] - `calls` [EXTRACTED]
 - [[MultiTurnTracker]] - `method` [EXTRACTED]
-- [[SessionContext_1]] - `references` [EXTRACTED]
+- [[SessionContext]] - `references` [EXTRACTED]
 - [[Track a message and response pair for disclosure analysis.          Args]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

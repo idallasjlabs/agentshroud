@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Merge group membership and admin IDs from TeamsConfig into RBAC.          Called]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_1]] - `method` [EXTRACTED]
+- [[RBACConfig_4]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RBACConfig

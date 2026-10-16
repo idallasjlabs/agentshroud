@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/lib/sunday-scan.sh"
+source_file: "scripts/canary-deploy.sh"
 type: "code"
-community: "Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)"
-location: "L51"
+community: "canary-deploy.sh"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+  - community/canary-deploysh
 ---
 
 # log()
 
 ## Connections
-- [[sunday-scan.sh (Trivy scan gate library)]] - `defines` [EXTRACTED]
-- [[sunday_run_scan_gate()]] - `calls` [EXTRACTED]
+- [[canary-deploy.sh]] - `defines` [EXTRACTED]
+- [[canary-deploy.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+#graphify/code #graphify/EXTRACTED #community/canary-deploysh

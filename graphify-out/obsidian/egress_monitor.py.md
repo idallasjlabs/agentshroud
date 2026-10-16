@@ -19,8 +19,8 @@ tags:
 - [[EgressMonitor]] - `contains` [EXTRACTED]
 - [[EgressMonitorConfig]] - `contains` [EXTRACTED]
 - [[EgressSummary]] - `contains` [EXTRACTED]
-- [[Enum_2]] - `imports_from` [EXTRACTED]
-- [[key_vault.py]] - `references` [EXTRACTED]
+- [[Enum_1]] - `imports_from` [EXTRACTED]
+- [[key_vault.py_2]] - `references` [EXTRACTED]
 - [[log_sanitizer.py]] - `references` [EXTRACTED]
 - [[resource_guard.py]] - `references` [EXTRACTED]
 

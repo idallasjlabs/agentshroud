@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "AuditChain"
-location: "L271"
+community: "MCPAuditTrail"
+location: "L203"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/MCPAuditTrail
 ---
 
 # .verify_chain()
 
 ## Connections
-- [[dot-get_stats()_10]] - `calls` [EXTRACTED]
-- [[dot-verify_audit_chain()]] - `calls` [EXTRACTED]
-- [[AuditChain]] - `method` [EXTRACTED]
-- [[Verify the integrity of the retained hash-chain window.          When the bounde]] - `rationale_for` [EXTRACTED]
+- [[dot-generate_report()]] - `calls` [EXTRACTED]
+- [[MCPAuditTrail]] - `method` [EXTRACTED]
+- [[Verify integrity of the retained MCP audit hash-chain window.          Anchors a]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail

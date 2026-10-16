@@ -12,11 +12,11 @@ tags:
 # hermes/skills/i-browser/scripts/browse.py
 
 ## Connections
-- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[Enum_1]] - `imports_from` [EXTRACTED]
 - [[RiskLevel_1]] - `contains` [EXTRACTED]
 - [[SecureBrowser_1]] - `contains` [EXTRACTED]
-- [[SecurityConfig_1]] - `contains` [EXTRACTED]
+- [[SecurityConfig_2]] - `contains` [EXTRACTED]
 - [[SecurityError_1]] - `contains` [EXTRACTED]
-- [[main()_8]] - `contains` [EXTRACTED]
+- [[main()_5]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser

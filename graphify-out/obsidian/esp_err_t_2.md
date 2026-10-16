@@ -1,5 +1,5 @@
 ---
-source_file: "firmware/voice-terminal/test/test_playback_state/stubs/bsp/esp-bsp.h"
+source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h"
 type: "code"
 community: "bsp_iot_button_create"
 location: "L17"
@@ -12,6 +12,6 @@ tags:
 # esp_err_t
 
 ## Connections
-- [[bsp_iot_button_create()]] - `references` [EXTRACTED]
+- [[bsp_iot_button_create()_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/bsp_iot_button_create

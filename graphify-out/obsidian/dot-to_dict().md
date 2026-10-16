@@ -12,7 +12,7 @@ tags:
 # .to_dict()
 
 ## Connections
-- [[Any_12]] - `references` [EXTRACTED]
+- [[Any_80]] - `references` [EXTRACTED]
 - [[WebProxyResult]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ProxyAction

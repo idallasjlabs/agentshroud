@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_key_rotation.py"
+source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "MockValidator"
-location: "L35"
+community: "KeyRotationManager"
+location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MockValidator
+  - community/KeyRotationManager
 ---
 
 # .validate()
 
 ## Connections
-- [[Mock validation that can be controlled.]] - `rationale_for` [EXTRACTED]
-- [[MockValidator]] - `method` [EXTRACTED]
+- [[dot-_validate_credential()]] - `calls` [EXTRACTED]
+- [[Any_38]] - `references` [EXTRACTED]
+- [[CredentialValidator]] - `method` [EXTRACTED]
+- [[Validate a credential.          Returns             tuple (is_valid, message)]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MockValidator
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

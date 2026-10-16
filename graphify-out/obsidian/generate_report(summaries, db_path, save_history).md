@@ -12,6 +12,6 @@ tags:
 # generate_report(summaries, db_path, save_history)
 
 ## Connections
-- [[Function Details_10]] - `contains` [EXTRACTED]
+- [[Function Details_9]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

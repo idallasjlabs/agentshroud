@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "KeyRotationConfig"
+community: "KeyRotationManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationConfig
+  - community/KeyRotationManager
 ---
 
 # key_rotation.py
@@ -14,16 +14,16 @@ tags:
 ## Connections
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 - [[CredentialInfo]] - `contains` [EXTRACTED]
-- [[CredentialRotationPolicy_1]] - `imports` [EXTRACTED]
+- [[CredentialRotationPolicy]] - `imports` [EXTRACTED]
 - [[CredentialValidator]] - `contains` [EXTRACTED]
-- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[Enum_1]] - `imports_from` [EXTRACTED]
 - [[KeyRotationConfig_1]] - `imports` [EXTRACTED]
 - [[KeyRotationManager]] - `contains` [EXTRACTED]
 - [[RotationStatus]] - `contains` [EXTRACTED]
 - [[Rule agentshroud-subprocess-shell-true]] - `references` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
-- [[datetime_4]] - `imports_from` [EXTRACTED]
+- [[datetime_1]] - `imports_from` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports_from` [EXTRACTED]
 - [[key_rotation_config.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationConfig
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_acl.py"
+source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "Role"
-location: "L46"
+community: "PrivacyPolicyEnforcer"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Role
+  - community/PrivacyPolicyEnforcer
 ---
 
 # enforcer()
 
 ## Connections
-- [[ToolACLConfig]] - `calls` [EXTRACTED]
-- [[ToolACLEnforcer]] - `calls` [EXTRACTED]
-- [[test_tool_acl.py]] - `contains` [EXTRACTED]
+- [[PrivacyPolicyEnforcer]] - `calls` [EXTRACTED]
+- [[test_privacy_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Role
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

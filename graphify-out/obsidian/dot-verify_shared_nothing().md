@@ -12,7 +12,7 @@ tags:
 # .verify_shared_nothing()
 
 ## Connections
-- [[dot-get()_4]] - `calls` [EXTRACTED]
+- [[dot-get()_2]] - `calls` [EXTRACTED]
 - [[dot-list_agents()]] - `calls` [EXTRACTED]
 - [[dot-verify_network_isolation()]] - `calls` [EXTRACTED]
 - [[dot-verify_volume_isolation()]] - `calls` [EXTRACTED]

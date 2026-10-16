@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "AgentRegistry"
+community: "KeyVault"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/KeyVault
 ---
 
 # encrypted_store.py
@@ -17,6 +17,6 @@ tags:
 - [[FR4 Data Confidentiality]] - `references` [EXTRACTED]
 - [[_secure_zero()]] - `contains` [EXTRACTED]
 - [[canary.py]] - `references` [EXTRACTED]
-- [[env_guard.py]] - `references` [EXTRACTED]
+- [[env_guard.py_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/KeyVault

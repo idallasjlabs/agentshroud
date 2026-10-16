@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "code"
-community: "SSHProxy"
+community: "ApprovalQueueConfig"
 location: "L732"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/ApprovalQueueConfig
 ---
 
 # .test_write_file_success_and_denial_both_create_distinct_ledger_entries()
@@ -17,4 +17,4 @@ tags:
 - [[TestSSHWriteFileLedgerAudit]] - `method` [EXTRACTED]
 - [[_b64()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

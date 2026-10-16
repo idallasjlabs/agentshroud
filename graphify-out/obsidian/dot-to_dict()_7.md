@@ -1,20 +1,18 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "plan_remediation"
-location: "L153"
+community: "AgentRegistry"
+location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/AgentRegistry
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_35]] - `references` [EXTRACTED]
-- [[RemediationPlan dataclass]] - `method` [EXTRACTED]
-- [[Serialise for the unattended run's audit trail.]] - `rationale_for` [EXTRACTED]
-- [[main()_15]] - `calls` [EXTRACTED]
+- [[AgentRegistry]] - `method` [EXTRACTED]
+- [[Serialize registry to dict.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

@@ -15,7 +15,7 @@ tags:
 - [[Initialize a new skill directory with template SKILL.md.      Args         skil]] - `rationale_for` [EXTRACTED]
 - [[create_resource_dirs()]] - `calls` [EXTRACTED]
 - [[init_skill.py]] - `contains` [EXTRACTED]
-- [[main()_34]] - `calls` [EXTRACTED]
+- [[main()_33]] - `calls` [EXTRACTED]
 - [[title_case_skill_name()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/init_skillpy

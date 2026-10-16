@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Action"
+community: "test_soc_realtime_coverage.py"
 location: "L288"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Action
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .test_severity_enum_passthrough()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMapSeverity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Action
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

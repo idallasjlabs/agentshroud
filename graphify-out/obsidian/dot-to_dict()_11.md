@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/a2a_governance.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "A2AGovernanceProxy"
-location: "L94"
+community: "UserSessionManager"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/UserSessionManager
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-get_summary()]] - `calls` [EXTRACTED]
-- [[A2APeer]] - `method` [EXTRACTED]
+- [[dot-_save_sessions()]] - `calls` [EXTRACTED]
+- [[Any_73]] - `references` [EXTRACTED]
+- [[Convert session to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
+- [[UserSession]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

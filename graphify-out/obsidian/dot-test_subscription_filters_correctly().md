@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "code"
-community: "TestSubscriptionFilter"
+community: "test_soc_realtime_coverage.py"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSubscriptionFilter
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .test_subscription_filters_correctly()
@@ -16,4 +16,4 @@ tags:
 - [[dot-_matches()]] - `calls` [EXTRACTED]
 - [[TestSubscriptionFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSubscriptionFilter
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

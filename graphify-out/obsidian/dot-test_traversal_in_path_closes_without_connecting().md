@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
 community: "test_main_endpoints.py"
-location: "L457"
+location: "L564"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_mock_websocket()]] - `calls` [EXTRACTED]
 - [[TestHermesDashboardWsProxy]] - `method` [EXTRACTED]
-- [[asyncio]] - `references` [EXTRACTED]
-- [[hermes_dashboard_ws_proxy()]] - `calls` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
+- [[hermes_dashboard_ws_proxy (WebSocket relay)]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_main_endpointspy

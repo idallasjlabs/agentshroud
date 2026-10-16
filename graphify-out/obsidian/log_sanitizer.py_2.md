@@ -16,9 +16,9 @@ tags:
 - [[Function Details_40]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_42]] - `contains` [EXTRACTED]
 - [[Pattern Taxonomy]] - `contains` [EXTRACTED]
-- [[Purpose_161]] - `contains` [EXTRACTED]
+- [[Purpose_160]] - `contains` [EXTRACTED]
 - [[Related_46]] - `contains` [EXTRACTED]
-- [[Responsibilities_44]] - `contains` [EXTRACTED]
+- [[Responsibilities_43]] - `contains` [EXTRACTED]
 - [[Threat Model_26]] - `contains` [EXTRACTED]
 - [[log_sanitizer.py_1]] - `contains` [EXTRACTED]
 

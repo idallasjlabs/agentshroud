@@ -12,6 +12,6 @@ tags:
 # .test_user_cannot_access_other_session()
 
 ## Connections
-- [[TestAccessControl]] - `method` [EXTRACTED]
+- [[TestAccessControl_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/UserSessionManager

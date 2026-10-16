@@ -19,9 +19,9 @@ tags:
 - [[Imports From  Exports To_4]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_23]] - `contains` [EXTRACTED]
 - [[Known Issues  Notes_5]] - `contains` [EXTRACTED]
-- [[Purpose_140]] - `contains` [EXTRACTED]
+- [[Purpose_126]] - `contains` [EXTRACTED]
 - [[Related_27]] - `contains` [EXTRACTED]
-- [[Responsibilities_25]] - `contains` [EXTRACTED]
+- [[Responsibilities_24]] - `contains` [EXTRACTED]
 - [[ledger.py]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/ledgerpy

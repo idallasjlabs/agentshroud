@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Translate an Ollama OpenAI-compat response to Anthropic Messages API format.]] - `rationale_for` [EXTRACTED]
-- [[_random_msg_id()_1]] - `calls` [EXTRACTED]
+- [[_random_msg_id()]] - `calls` [EXTRACTED]
 - [[anthropic_openai_translator.py]] - `contains` [EXTRACTED]
 - [[openai_to_gemini_response()]] - `semantically_similar_to` [INFERRED]
 - [[test_anthropic_openai_translator.py]] - `imports` [EXTRACTED]

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Auto-approve must be exact match, not prefix (Finding 3)]] - `rationale_for` [EXTRACTED]
-- [[SSHProxy_1]] - `references` [EXTRACTED]
+- [[SSHProxy]] - `references` [EXTRACTED]
 - [[TestInjectionNewline]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SSHHostConfig

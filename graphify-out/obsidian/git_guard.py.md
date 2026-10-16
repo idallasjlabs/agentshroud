@@ -12,7 +12,7 @@ tags:
 # git_guard.py
 
 ## Connections
-- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[Enum_1]] - `imports_from` [EXTRACTED]
 - [[GitGuard]] - `contains` [EXTRACTED]
 - [[SecurityFinding]] - `contains` [EXTRACTED]
 - [[ThreatLevel]] - `contains` [EXTRACTED]

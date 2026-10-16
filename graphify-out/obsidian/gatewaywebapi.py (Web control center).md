@@ -1,11 +1,11 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "code"
-community: "Gateway Management/Control-Plane API (v1.3.0)"
+community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Management/Control-Plane_API_v130
+  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
 ---
 
 # gateway/web/api.py (Web control center)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Gateway ManagementControl-Plane API (v1.3.0)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Management/Control-Plane_API_v130
+#graphify/code #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity

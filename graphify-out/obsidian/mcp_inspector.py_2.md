@@ -16,9 +16,9 @@ tags:
 - [[Detection Patterns_1]] - `contains` [EXTRACTED]
 - [[Function Details_23]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_25]] - `contains` [EXTRACTED]
-- [[Purpose_142]] - `contains` [EXTRACTED]
+- [[Purpose_128]] - `contains` [EXTRACTED]
 - [[Related_29]] - `contains` [EXTRACTED]
-- [[Responsibilities_27]] - `contains` [EXTRACTED]
+- [[Responsibilities_26]] - `contains` [EXTRACTED]
 - [[mcp_inspector.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy

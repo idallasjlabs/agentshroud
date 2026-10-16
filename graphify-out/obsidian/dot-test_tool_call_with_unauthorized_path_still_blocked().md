@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "code"
-community: "test_file_sandbox_message_gate.py"
+community: "UserSessionManager"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_file_sandbox_message_gatepy
+  - community/UserSessionManager
 ---
 
 # .test_tool_call_with_unauthorized_path_still_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[TestFileSandboxSkippedForPlainMessages]] - `method` [EXTRACTED]
 - [[_tool_call_msg()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_file_sandbox_message_gatepy
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

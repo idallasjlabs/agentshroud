@@ -1,20 +1,18 @@
 ---
-source_file: "scripts/export-telegram-history.py"
+source_file: "docker/bots/hermes/dashboard_bridge.py"
 type: "code"
-community: "export_bot"
-location: "L148"
+community: "dashboard_bridge.py"
+location: "L134"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export_bot
+  - community/dashboard_bridgepy
 ---
 
 # main()
 
 ## Connections
-- [[Path_53]] - `calls` [EXTRACTED]
-- [[_parse_since()_2]] - `calls` [EXTRACTED]
-- [[export()]] - `calls` [EXTRACTED]
-- [[export-telegram-history.py]] - `contains` [EXTRACTED]
+- [[_handle()]] - `calls` [EXTRACTED]
+- [[dashboard_bridge.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export_bot
+#graphify/code #graphify/EXTRACTED #community/dashboard_bridgepy

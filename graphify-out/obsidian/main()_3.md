@@ -1,18 +1,20 @@
 ---
-source_file: "docker/bots/hermes/render_md_email.py"
+source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "competitive-report-*.md dated reports"
-location: "L250"
+community: "sync-cve-registry.py"
+location: "L871"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/competitive-report-md_dated_reports
+  - community/sync-cve-registrypy
 ---
 
 # main()
 
 ## Connections
-- [[render()]] - `calls` [EXTRACTED]
-- [[render_md_email.py]] - `contains` [EXTRACTED]
+- [[Path_9]] - `calls` [EXTRACTED]
+- [[_run_nvd_sync()]] - `calls` [EXTRACTED]
+- [[run_ghsa_sync()]] - `calls` [EXTRACTED]
+- [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/competitive-report-md_dated_reports
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

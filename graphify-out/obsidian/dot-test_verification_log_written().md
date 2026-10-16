@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "TestKillSwitchVerification"
+community: "KillSwitchMonitor"
 location: "L313"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestKillSwitchVerification
+  - community/KillSwitchMonitor
 ---
 
 # .test_verification_log_written()
@@ -16,4 +16,4 @@ tags:
 - [[TestKillSwitchVerification]] - `method` [EXTRACTED]
 - [[verify_killswitch() must write a log entry for auditability.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestKillSwitchVerification
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

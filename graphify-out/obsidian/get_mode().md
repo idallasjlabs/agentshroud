@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Return the current AGENTSHROUD_MODE.]] - `rationale_for` [EXTRACTED]
-- [[api.py_2]] - `contains` [EXTRACTED]
+- [[api.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy

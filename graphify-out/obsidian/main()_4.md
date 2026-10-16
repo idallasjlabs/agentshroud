@@ -1,18 +1,25 @@
 ---
-source_file: "scripts/gemini-review.py"
+source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "gemini-review.py"
-location: "L83"
+community: "SecureBrowser"
+location: "L431"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gemini-reviewpy
+  - community/SecureBrowser
 ---
 
 # main()
 
 ## Connections
-- [[call_gemini()]] - `calls` [EXTRACTED]
-- [[gemini-review.py]] - `contains` [EXTRACTED]
+- [[dot-_take_screenshot()]] - `calls` [EXTRACTED]
+- [[dot-agentsskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
+- [[dot-click()]] - `calls` [EXTRACTED]
+- [[dot-close()_5]] - `calls` [EXTRACTED]
+- [[dot-extract()]] - `calls` [EXTRACTED]
+- [[dot-fill_field()]] - `calls` [EXTRACTED]
+- [[dot-navigate()]] - `calls` [EXTRACTED]
+- [[CLI interface for SecureBrowser]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gemini-reviewpy
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

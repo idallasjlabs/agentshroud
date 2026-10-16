@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy_default_failclosed.py"
 type: "rationale"
-community: "A2APolicyConfig"
+community: "A2APolicyEngine"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2APolicyConfig
+  - community/A2APolicyEngine
 ---
 
 # load_config-style callers pass whatever the YAML section resolved         to, wh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_from_dict_none_is_fail_closed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2APolicyConfig
+#graphify/rationale #graphify/EXTRACTED #community/A2APolicyEngine

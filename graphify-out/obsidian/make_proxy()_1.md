@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[LLMProxy]] - `calls` [EXTRACTED]
-- [[LLMProxy_2]] - `references` [EXTRACTED]
+- [[LLMProxy_1]] - `references` [EXTRACTED]
 - [[test_already_local_request_does_not_failover()]] - `calls` [EXTRACTED]
 - [[test_failover_notification_cooldown()]] - `calls` [EXTRACTED]
 - [[test_failover_notification_distinguishes_translated_vs_not()]] - `calls` [EXTRACTED]

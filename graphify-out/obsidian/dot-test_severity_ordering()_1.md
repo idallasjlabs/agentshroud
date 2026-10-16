@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_skill_guard.py"
+source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "SkillGuard"
-location: "L313"
+community: "test_soc_bots.py"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/test_soc_botspy
 ---
 
 # .test_severity_ordering()
 
 ## Connections
-- [[TestAggregation]] - `method` [EXTRACTED]
+- [[TestSecurityEvent]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

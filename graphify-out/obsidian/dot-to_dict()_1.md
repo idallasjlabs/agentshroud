@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/egress_approval.py"
+source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "EgressApprovalQueue"
-location: "L85"
+community: "AlertDispatcher"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressApprovalQueue
+  - community/AlertDispatcher
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-_rule_to_dict()]] - `calls` [EXTRACTED]
-- [[dot-_save_rules()]] - `calls` [EXTRACTED]
-- [[EgressScope]] - `method` [EXTRACTED]
+- [[dot-config_hash()]] - `calls` [EXTRACTED]
+- [[dot-set_baseline()]] - `calls` [EXTRACTED]
+- [[ContainerSnapshot]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

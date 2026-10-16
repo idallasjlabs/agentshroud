@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Return recent competitive-intelligence reports in reverse-chronological order.]] - `rationale_for` [EXTRACTED]
 - [[_intel_store()]] - `calls` [EXTRACTED]
-- [[api.py_2]] - `contains` [EXTRACTED]
+- [[api.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy

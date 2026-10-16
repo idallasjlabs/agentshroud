@@ -20,7 +20,7 @@ tags:
 - [[Recipe C — Screenshot relay (OCR text)]] - `contains` [EXTRACTED]
 - [[Recipe D — Clipboard relay (macOS menu bar  iOS)]] - `contains` [EXTRACTED]
 - [[Recipe E — Share Sheet photo relay]] - `contains` [EXTRACTED]
-- [[Status_4]] - `contains` [EXTRACTED]
+- [[Status_5]] - `contains` [EXTRACTED]
 - [[The `forward` contract (authoritative)]] - `contains` [EXTRACTED]
 - [[Troubleshooting_33]] - `contains` [EXTRACTED]
 - [[shortcutsREADME]] - `contains` [EXTRACTED]

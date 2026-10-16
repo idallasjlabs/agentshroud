@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: ".test_urlencoded_draft_payload_tool_json_is_rewritten"
+community: "TelegramAPIProxy"
 location: "L1850"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_urlencoded_draft_payload_tool_json_is_rewritten
+  - community/TelegramAPIProxy
 ---
 
 # .test_urlencoded_draft_payload_tool_json_is_rewritten()
@@ -17,4 +17,4 @@ tags:
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_urlencoded_draft_payload_tool_json_is_rewritten
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

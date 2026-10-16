@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[Reject request bodies larger than 1MB before parsing. Checks Content-Length…]] - `rationale_for` [EXTRACTED]
-- [[Request_1]] - `references` [EXTRACTED]
+- [[Request]] - `references` [EXTRACTED]
 - [[_body_stream()]] - `contains` [EXTRACTED]
-- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `contains` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[middleware]] - `references` [EXTRACTED]
 - [[test_limit_request_body_chunked_body_over_limit_rejected()]] - `calls` [EXTRACTED]
 - [[test_limit_request_body_chunked_body_within_limit_passes_through()]] - `calls` [EXTRACTED]

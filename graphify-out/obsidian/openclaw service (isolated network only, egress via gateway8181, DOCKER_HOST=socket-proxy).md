@@ -15,7 +15,6 @@ tags:
 - [[Compose secrets block (file fallbacks; asb extracts from credential backend at runtime)]] - `shares_data_with` [EXTRACTED]
 - [[Dev override openclaw (agentshroud-dev-openclaw, 18790, agentshroud_bot_marvin)]] - `references` [EXTRACTED]
 - [[OpenClaw sandbox mode set off (named volume vs bind-mount mismatch)]] - `references` [EXTRACTED]
-- [[OpenClaw sandbox provisioning named volume vs required bind-mount]] - `references` [EXTRACTED]
 - [[Stdin-Pipe Deploy Pattern (never docker cp)]] - `conceptually_related_to` [INFERRED]
 - [[Three-tier network segmentation (internal edge  isolated DMZ  dmz) — IEC 62443 FR5]] - `rationale_for` [EXTRACTED]
 - [[docker-socket-proxy service (digest-pinned tecnativa, narrow allowlist)]] - `references` [EXTRACTED]

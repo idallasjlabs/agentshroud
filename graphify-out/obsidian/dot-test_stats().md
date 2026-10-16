@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "EgressFilter"
-location: "L480"
+community: "TestOutboundInfoFilter"
+location: "L460"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/TestOutboundInfoFilter
 ---
 
 # .test_stats()
 
 ## Connections
-- [[TestEgressFilter]] - `method` [EXTRACTED]
+- [[Test filter statistics.]] - `rationale_for` [EXTRACTED]
+- [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilter
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

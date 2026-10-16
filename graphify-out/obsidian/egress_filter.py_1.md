@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "egress_filter.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/egress_filterpy
 ---
 
 # egress_filter.py
@@ -16,23 +16,23 @@ tags:
 - [[Egress Filter Module Badge Icon]] - `conceptually_related_to` [INFERRED]
 - [[EgressAction]] - `contains` [EXTRACTED]
 - [[EgressAttempt]] - `contains` [EXTRACTED]
-- [[EgressFilter_2]] - `contains` [EXTRACTED]
+- [[EgressFilter_1]] - `contains` [EXTRACTED]
 - [[EgressFilterConfig]] - `imports` [EXTRACTED]
 - [[EgressPolicy]] - `contains` [EXTRACTED]
-- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[Enum_1]] - `imports_from` [EXTRACTED]
 - [[FR5 Restricted Data Flow]] - `references` [EXTRACTED]
 - [[HTTP_PROXY]] - `references` [INFERRED]
 - [[Rule agentshroud-ssrf-httpx]] - `references` [EXTRACTED]
 - [[Rule agentshroud-ssrf-requests]] - `references` [EXTRACTED]
-- [[agentshroud.yaml_1]] - `references` [INFERRED]
-- [[alert_dispatcher.py_2]] - `references` [EXTRACTED]
+- [[agentshroud.yaml]] - `references` [INFERRED]
+- [[alert_dispatcher.py]] - `references` [EXTRACTED]
 - [[cve-mitigation-matrix]] - `references` [EXTRACTED]
 - [[data_exfil_volume_guard.py]] - `conceptually_related_to` [EXTRACTED]
-- [[dns_filter.py]] - `references` [EXTRACTED]
-- [[egress_config.py_2]] - `imports_from` [EXTRACTED]
-- [[env_guard.py]] - `references` [EXTRACTED]
+- [[dns_filter.py_2]] - `references` [EXTRACTED]
+- [[egress_config.py]] - `imports_from` [EXTRACTED]
+- [[env_guard.py_2]] - `references` [EXTRACTED]
 - [[get_egress_config()]] - `imports` [EXTRACTED]
-- [[http_proxy.py]] - `imports_from` [EXTRACTED]
+- [[http_proxy.py_2]] - `imports_from` [EXTRACTED]
 - [[input_normalizer.py]] - `references` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 - [[make_event()]] - `imports` [EXTRACTED]
@@ -40,4 +40,4 @@ tags:
 - [[record_decision()]] - `imports` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/egress_filterpy

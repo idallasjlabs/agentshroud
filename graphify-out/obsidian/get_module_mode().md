@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "load_config"
+community: "MiddlewareManager"
 location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/MiddlewareManager
 ---
 
 # get_module_mode()
@@ -27,4 +27,4 @@ tags:
 - [[test_enforce_defaults.py]] - `imports` [EXTRACTED]
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

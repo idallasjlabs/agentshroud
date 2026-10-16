@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[dot-test_get_fim_events()]] - `calls` [EXTRACTED]
-- [[Any_26]] - `references` [EXTRACTED]
+- [[Any_77]] - `references` [EXTRACTED]
 - [[Filter alerts to file integrity monitoring events only.      Args         alert]] - `rationale_for` [EXTRACTED]
-- [[generate_summary()]] - `calls` [EXTRACTED]
+- [[generate_summary()_3]] - `calls` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
-- [[wazuh_client.py]] - `contains` [EXTRACTED]
+- [[wazuh_client.py_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

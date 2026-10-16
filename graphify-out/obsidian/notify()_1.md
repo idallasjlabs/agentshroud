@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[colima-health-check.sh]] - `defines` [EXTRACTED]
 - [[colima-health-check.sh script]] - `calls` [EXTRACTED]
-- [[log()_9]] - `calls` [EXTRACTED]
+- [[log()_7]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/colima-health-checksh
