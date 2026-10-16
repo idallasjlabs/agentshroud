@@ -144,3 +144,102 @@ Written at the owner's explicit request before he leaves for the office at ~05:5
 Message sent to `agentshroud-dev` asking them to write the equivalent doc for any
 changes made on their side tonight (the Hermes Telegram patch, their own duplicate
 Telegram-poller fix, anything else). Cross-reference both docs before Sunday's upgrade.
+Dev's doc: `INCIDENT_2026-10-16_conduit-outage.md`.
+
+---
+
+## Second half (06:00–07:35 EDT): the real cause of "no replies in Telegram"
+
+Owner reversed the freeze ("make all the edits you need") after both bots kept
+answering "hello" with endless "typing" / "Working — N min" / "Something went
+wrong". Everything below is committed on `main` unless marked otherwise.
+
+### Root cause (proven with live calls, not inferred)
+
+Rapid-MLX's anchor model is NVIDIA Nemotron 3.5 since the 2026-10-11/12 Sunday
+upgrade swapped it from qwen3. Two stacked defects:
+
+1. **Nemotron reasons in-band, in plain text**, on every request ("Here's a
+   thinking process: 1. Analyze User Input…") and exhausted `max_tokens` before
+   answering (`finish_reason: length`). Direct test: "hello" → 60 tokens of
+   preamble, no answer. That is the "Working — 3/6 min — receiving stream
+   response" stall, the empty replies, and the generic error fallback.
+2. **The gateway appended the Qwen3-only `/no_think` suffix** to every Rapid-MLX
+   request (`gateway/proxy/llm_proxy.py` `_suppress_qwen3_thinking`, keyed on
+   backend URL, not model). Nemotron treats it as literal user text: it reasoned
+   about "the /no_think flag", Hermes echoed it into a shell command
+   (`echo "hello / no_think"`), and once server-side reasoning was disabled the
+   mangled prompt produced incoherent output ("If you are going to order a pizza
+   on the internet…"). The "elevated command" shell-spam on a greeting → approval
+   gate → "Exec blocked" → run never completes, was downstream of this.
+
+The owner's instinct that it broke with "the last unattended update" was correct.
+
+### Fixes (all verified live)
+
+- `local-llms/scripts/services.sh:1277,1280` — `--default-reasoning-effort none`
+  added to the Nemotron launch args (with comment); rapid-mlx restarted. Direct
+  "hello" → "Hello! How can I help you today?", `finish=stop`, 0.5s.
+  **Separate repo, uncommitted there** (`services.sh.bak-20261016-reasoning` kept).
+- `gateway/proxy/llm_proxy.py` — `/no_think` gated to models containing "qwen";
+  everything else gets `reasoning_effort: "none"` on the request body, text
+  untouched. Tests: `gateway/tests/test_llm_proxy_thinking_suppression.py`
+  (8 cases, 29 passed with the translator suite). Commit `0ffa0cd794`. Gateway
+  rootfs is read-only, so the image was rebuilt and the container recreated
+  (`compose up -d --no-deps gateway`). "hello" via gateway → correct greeting,
+  `finish=stop`, non-streaming and streaming.
+- Cosmetic follow-up: on the streaming path the first chunk carries a literal
+  `<think>` token (rapid-mlx has no Nemotron reasoning parser). Not fixed tonight.
+
+### OpenClaw rebuild (makes the sandbox stopgap durable) — and what it dragged in
+
+- `init-openclaw-config.sh` is baked into the image (`/usr/local/bin/`, no mount),
+  so the repo edit alone did nothing for a running/restarted container. Rebuilt the
+  image, recreated the container (`--no-deps`): boot log now reads
+  `Sandbox config applied (mode=off [TEMPORARY stopgap…])`. Durable on prod.
+- The rebuild pulled OpenClaw **2026.10.2** (main's pin from the Oct 12 upgrade)
+  over the volume's 2026.9.6 — the running 2026.9.6 was the drift, but it was an
+  unplanned version bump tonight. 2026.10.2 refused sessions until the agent DBs
+  were migrated ("schema version 23 … run openclaw doctor --fix"); ran
+  `openclaw doctor --fix` → 10 agent DBs v23→v24. Init runs doctor *before* the
+  version seed, so it doesn't catch this — should move after the seed (not done).
+- Result: healthy, Telegram provider up, **0** getUpdates conflicts on the
+  production token.
+
+### Telegram token findings (corrections included)
+
+- I wrongly claimed dev's OpenClaw was consuming prod traffic; retracted with
+  evidence. Prod mounts: gateway and openclaw both →
+  `docker/secrets/telegram_bot_token_production.txt` (md5 `54b2e8…`), nothing on
+  prod references `telegram_bot_token_marvin.txt`, exactly one OpenClaw container.
+- **Dev's Hermes polled the same Hermes bot token as prod all night** (no separate
+  dev Hermes bot exists). That is the source of prod Hermes's all-night
+  `SSL: UNEXPECTED_EOF_WHILE_READING` reconnect churn (Telegram 409s surfacing as
+  transport resets) and of some owner messages being swallowed. Dev disabled dev
+  Hermes polling; prod Hermes: 0 EOF/Conflict lines since its 11:11 UTC restart.
+- Dev Hermes lifecycle banners ("Hermes starting / online / shutting down") are
+  landing in the **marvin OpenClaw** bot chat — dev's notifier uses the marvin
+  OpenClaw token. Reported to dev; dev-side fix.
+
+### Other state
+
+- Daily Brief: 2026-10-14 (`pke` commit `5e9e361`) and 2026-10-15 (`4ce622c`) are
+  now published from their already-generated outboxes; 2026-10-16 auto-published
+  earlier. **2026-10-13 is unrecoverable** — nothing was ever generated.
+- `docker-socket-proxy` recreated with dev's new healthcheck (commit `0319840bcc`);
+  all 7 core containers report healthy; both bots still reach the proxy (200).
+- Conduit path re-verified after the restarts: relay up, Hermes 9119/9120 → 200,
+  Tailscale `:9119` → 200, WS upgrade reaches Hermes (403 = auth required). Owner's
+  "Conduit unable to connect" coincided with the 07:11 Hermes restart; re-login.
+- Prod compose/network labels are both 5.6.0 — dev's network-recreate failure
+  does not apply here; all recreates tonight were targeted `--no-deps`.
+- `main` converged with dev: `13b48d1c29` (dev) → `c81050f5ef` (mine) →
+  `0319840bcc` (dev) → `0ffa0cd794` (mine). Both checkouts on the same commit.
+
+### Still open (unchanged)
+
+Suspected prompt-injection message (needs its own investigation); gateway
+`/hermes-dashboard/` 502 from host (relay bypass in place); `:8642`/`:8765`
+direct-serve bypasses; `execute_code` "Python 3 not available"; streaming `<think>`
+token; doctor-after-seed ordering in `init-openclaw-config.sh`; cleanup of
+`~/Development/.colima-backup-temp` and stale images.
