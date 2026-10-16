@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "TestObservatoryMode"
+community: "KillSwitchMonitor"
 location: "L400"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestObservatoryMode
+  - community/KillSwitchMonitor
 ---
 
 # .test_observatory_mode_state_initialization()
@@ -15,4 +15,4 @@ tags:
 - [[Test that observatory mode state is properly initialized.]] - `rationale_for` [EXTRACTED]
 - [[TestObservatoryMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestObservatoryMode
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

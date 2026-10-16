@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "MiddlewareManager"
 location: "L310"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/MiddlewareManager
 ---
 
 # .test_middleware_set_config()
@@ -16,4 +16,4 @@ tags:
 - [[Test middleware configuration setup]] - `rationale_for` [EXTRACTED]
 - [[TestMiddlewareIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

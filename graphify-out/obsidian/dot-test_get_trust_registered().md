@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "TrustConfig"
+community: "PIIConfig"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/PIIConfig
 ---
 
 # .test_get_trust_registered()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAgentRegistration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

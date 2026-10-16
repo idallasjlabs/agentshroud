@@ -12,7 +12,7 @@ tags:
 # .test_raw_web_fetch_json_non_standard_port_does_not_queue_approval()
 
 ## Connections
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 - [[web_fetch approvals should not queue for non-standard destination ports.]] - `rationale_for` [EXTRACTED]

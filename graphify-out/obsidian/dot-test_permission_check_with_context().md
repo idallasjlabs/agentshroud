@@ -12,7 +12,7 @@ tags:
 # .test_permission_check_with_context()
 
 ## Connections
-- [[RBACManager_2]] - `calls` [EXTRACTED]
+- [[RBACManager_1]] - `calls` [EXTRACTED]
 - [[Test permission checks with additional context.]] - `rationale_for` [EXTRACTED]
 - [[TestRBACErrorHandling]] - `method` [EXTRACTED]
 

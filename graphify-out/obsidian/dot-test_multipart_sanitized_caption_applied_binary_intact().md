@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Redacted caption replaces the original; binary part stays byte-identical.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestMultipartOutboundPipeline]] - `method` [EXTRACTED]
 - [[_make_multipart_body()]] - `calls` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]

@@ -12,10 +12,10 @@ tags:
 # .test_locked_shows_suspended_users()
 
 ## Connections
-- [[dot-_make_proxy()_2]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_4]] - `calls` [EXTRACTED]
 - [[locked must list users with non-normal lockdown state.]] - `rationale_for` [EXTRACTED]
 - [[TestProgressiveLockdownUX]] - `method` [EXTRACTED]
-- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_wrap_response

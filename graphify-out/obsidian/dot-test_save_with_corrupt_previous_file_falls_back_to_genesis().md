@@ -15,7 +15,7 @@ tags:
 - [[dot-_make_report()]] - `calls` [EXTRACTED]
 - [[If the previous report file is corrupt, save must not raise.]] - `rationale_for` [EXTRACTED]
 - [[IntelReportStore]] - `references` [EXTRACTED]
-- [[Path_51]] - `references` [EXTRACTED]
+- [[Path_11]] - `references` [EXTRACTED]
 - [[TestIntelReportStore]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

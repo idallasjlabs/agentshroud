@@ -12,7 +12,7 @@ tags:
 # .test_main_empty_source_returns_usage()
 
 ## Connections
-- [[Path_28]] - `references` [EXTRACTED]
+- [[Path_26]] - `references` [EXTRACTED]
 - [[TestScanEntrypointInProcess]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Path

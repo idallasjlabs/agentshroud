@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "AlertDispatcher"
+community: "PIIConfig"
 location: "L137"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/PIIConfig
 ---
 
 # .test_json_injection_in_context()
@@ -16,4 +16,4 @@ tags:
 - [[JSON injection in message shouldn't manipulate context.]] - `rationale_for` [EXTRACTED]
 - [[TestHTTPSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

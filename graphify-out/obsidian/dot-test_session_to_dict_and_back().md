@@ -12,7 +12,7 @@ tags:
 # .test_session_to_dict_and_back()
 
 ## Connections
-- [[TestSerialization_1]] - `method` [EXTRACTED]
+- [[TestSerialization]] - `method` [EXTRACTED]
 - [[UserSession]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/UserSessionManager

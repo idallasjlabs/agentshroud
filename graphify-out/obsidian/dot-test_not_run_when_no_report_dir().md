@@ -12,7 +12,7 @@ tags:
 # .test_not_run_when_no_report_dir()
 
 ## Connections
-- [[Path_27]] - `calls` [EXTRACTED]
+- [[Path_29]] - `calls` [EXTRACTED]
 - [[TestGetTrivySummary]] - `method` [EXTRACTED]
 - [[get_trivy_summary()]] - `calls` [EXTRACTED]
 

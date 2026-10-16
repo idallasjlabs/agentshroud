@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "TestCollaboratorPersistence"
+community: "Action"
 location: "L732"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCollaboratorPersistence
+  - community/Action
 ---
 
 # .test_removed_and_paused_ids_coexist_independently()
@@ -16,4 +16,4 @@ tags:
 - [[TestCollaboratorPersistence]] - `method` [EXTRACTED]
 - [[Writes to one exclusion set must not clobber the other persisted keys.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPersistence
+#graphify/code #graphify/EXTRACTED #community/Action

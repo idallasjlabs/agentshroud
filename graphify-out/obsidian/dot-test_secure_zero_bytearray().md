@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "AgentRegistry"
+community: "KeyVault"
 location: "L769"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/KeyVault
 ---
 
 # .test_secure_zero_bytearray()
@@ -15,4 +15,4 @@ tags:
 - [[TestSecureZero]] - `method` [EXTRACTED]
 - [[_secure_zero()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/KeyVault

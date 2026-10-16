@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[FakeRBAC]] - `calls` [EXTRACTED]
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[Unknown non-owner users should still be tracked at gateway level.]] - `rationale_for` [EXTRACTED]
-- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

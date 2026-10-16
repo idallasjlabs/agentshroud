@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[TestEnvelopeSignerInPipeline]] - `method` [EXTRACTED]
-- [[_make_pipeline()]] - `calls` [EXTRACTED]
+- [[_make_pipeline()_4]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AuditChain

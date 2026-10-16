@@ -12,7 +12,7 @@ tags:
 # .test_predicate_partial_match_does_not_fire()
 
 ## Connections
-- [[dot-_make_proxy()_2]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_4]] - `calls` [EXTRACTED]
 - [[TestGroupPresenceProbe]] - `method` [EXTRACTED]
 - [[hello, can you help' must NOT match — exact-match guard.]] - `rationale_for` [EXTRACTED]
 

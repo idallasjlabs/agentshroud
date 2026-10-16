@@ -12,7 +12,7 @@ tags:
 # .test_main_flag_only_tree_returns_ok()
 
 ## Connections
-- [[Path_28]] - `references` [EXTRACTED]
+- [[Path_26]] - `references` [EXTRACTED]
 - [[TestScanEntrypointInProcess]] - `method` [EXTRACTED]
 - [[_write_tree()]] - `calls` [EXTRACTED]
 

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "TrustConfig"
-location: "L291"
+community: "PIIConfig"
+location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/PIIConfig
 ---
 
 # .test_register_idempotent()
 
 ## Connections
-- [[TestTrustManager]] - `method` [EXTRACTED]
+- [[TestAgentRegistration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

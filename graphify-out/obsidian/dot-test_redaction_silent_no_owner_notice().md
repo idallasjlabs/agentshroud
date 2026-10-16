@@ -12,7 +12,7 @@ tags:
 # .test_redaction_silent_no_owner_notice()
 
 ## Connections
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestEgressBannerRedactionNoOwnerNotice]] - `method` [EXTRACTED]
 - [[When outbound text matches the banner, text is replaced but owner is NOT notifie]] - `rationale_for` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]

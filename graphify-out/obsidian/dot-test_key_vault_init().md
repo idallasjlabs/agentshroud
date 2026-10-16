@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "KeyVault"
+community: "AlertDispatcher"
 location: "L740"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/AlertDispatcher
 ---
 
 # .test_key_vault_init()
@@ -16,4 +16,4 @@ tags:
 - [[KeyVaultConfig]] - `calls` [EXTRACTED]
 - [[TestCryptography]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[FakeRBAC]] - `calls` [EXTRACTED]
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 - [[web_fetch preflight approvals should only allow standard web ports.]] - `rationale_for` [EXTRACTED]
 

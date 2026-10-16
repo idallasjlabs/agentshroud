@@ -12,7 +12,7 @@ tags:
 # .test_invalid_base64_rejected()
 
 ## Connections
-- [[SSHProxy_1]] - `calls` [EXTRACTED]
+- [[SSHProxy]] - `calls` [EXTRACTED]
 - [[TestSSHProxyValidateWriteFile]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

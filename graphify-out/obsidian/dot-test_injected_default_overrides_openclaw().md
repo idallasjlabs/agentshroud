@@ -12,7 +12,7 @@ tags:
 # .test_injected_default_overrides_openclaw()
 
 ## Connections
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestDefaultBotId]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[On construction, _runtime_revoked_collaborators must be backed by the         pe]] - `rationale_for` [EXTRACTED]
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestProgressiveLockdownUX]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

@@ -12,6 +12,6 @@ tags:
 # .test_owner_can_view_all_sessions()
 
 ## Connections
-- [[TestAccessControl_1]] - `method` [EXTRACTED]
+- [[TestAccessControl]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/UserSessionManager

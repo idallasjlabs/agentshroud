@@ -12,7 +12,7 @@ tags:
 # .test_rbac_manager_without_config()
 
 ## Connections
-- [[RBACManager_2]] - `calls` [EXTRACTED]
+- [[RBACManager_1]] - `calls` [EXTRACTED]
 - [[Test RBAC manager initialization without explicit config.]] - `rationale_for` [EXTRACTED]
 - [[TestRBACErrorHandling]] - `method` [EXTRACTED]
 

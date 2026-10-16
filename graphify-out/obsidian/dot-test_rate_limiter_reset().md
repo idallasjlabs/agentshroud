@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[RateLimiter]] - `calls` [EXTRACTED]
-- [[TestRateLimiting]] - `method` [EXTRACTED]
+- [[TestRateLimiting_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebProxyConfig

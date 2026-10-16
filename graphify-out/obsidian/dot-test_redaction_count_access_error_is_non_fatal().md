@@ -16,6 +16,6 @@ tags:
 - [[Non-owner channel error reading info_filter_redaction_count is swallowed]] - `rationale_for` [EXTRACTED]
 - [[TestRedactionCountErrorSwallow]] - `method` [EXTRACTED]
 - [[_RaisingRedactionResult]] - `calls` [EXTRACTED]
-- [[_make_proxy()_2]] - `calls` [EXTRACTED]
+- [[_make_proxy()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AsyncMock

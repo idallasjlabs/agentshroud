@@ -12,7 +12,7 @@ tags:
 # .test_raw_web_fetch_json_url_with_trailing_quote_still_queues_approval()
 
 ## Connections
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[Trailing quote punctuation in leaked URL should still normalize and queue approv]] - `rationale_for` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]

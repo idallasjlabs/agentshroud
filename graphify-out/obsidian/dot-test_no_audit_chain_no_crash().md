@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Proxy works without an audit chain.]] - `rationale_for` [EXTRACTED]
-- [[TestAuditChain_1]] - `method` [EXTRACTED]
+- [[TestAuditChain]] - `method` [EXTRACTED]
 - [[WebProxy]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ProxyAction

@@ -12,7 +12,7 @@ tags:
 # .test_reload_fails_closed_on_unreadable_file()
 
 ## Connections
-- [[Path_28]] - `references` [EXTRACTED]
+- [[Path_26]] - `references` [EXTRACTED]
 - [[TestClient]] - `references` [EXTRACTED]
 - [[TestReloadIntegration]] - `method` [EXTRACTED]
 - [[_write_tree()]] - `calls` [EXTRACTED]

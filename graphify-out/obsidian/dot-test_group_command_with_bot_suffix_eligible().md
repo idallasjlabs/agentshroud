@@ -12,7 +12,7 @@ tags:
 # .test_group_command_with_bot_suffix_eligible()
 
 ## Connections
-- [[dot-_make_proxy()_2]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_4]] - `calls` [EXTRACTED]
 - [[command@botname marks chat as response-eligible.]] - `rationale_for` [EXTRACTED]
 - [[TestGroupMentionFilter]] - `method` [EXTRACTED]
 - [[_make_group_update()]] - `calls` [EXTRACTED]

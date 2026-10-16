@@ -12,6 +12,6 @@ tags:
 # .test_missing_rbac_zero()
 
 ## Connections
-- [[TestAccessControl]] - `method` [EXTRACTED]
+- [[TestAccessControl_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_scanner_integration_coveragepy

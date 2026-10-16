@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "TestToolPermission"
+community: "MCPPermissionManager"
 location: "L293"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolPermission
+  - community/MCPPermissionManager
 ---
 
 # .test_private_data_parameter_denied_for_agentshroud_memory_subpath()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestToolPermission]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolPermission
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

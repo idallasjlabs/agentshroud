@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_web_proxy.py"
+source_file: "gateway/tests/test_url_analyzer.py"
 type: "code"
-community: "WebProxyConfig"
-location: "L117"
+community: "TestSSRFDetection"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/TestSSRFDetection
 ---
 
 # .test_ipv6_loopback_blocked()
 
 ## Connections
-- [[TestSSRFBlocking]] - `method` [EXTRACTED]
+- [[TestSSRFDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

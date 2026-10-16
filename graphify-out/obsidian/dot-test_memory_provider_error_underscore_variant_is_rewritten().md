@@ -12,7 +12,7 @@ tags:
 # .test_memory_provider_error_underscore_variant_is_rewritten()
 
 ## Connections
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[Underscore-delimited embedding_provider wording should still trigger rewrite.]] - `rationale_for` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]

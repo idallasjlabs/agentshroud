@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "ResourceGuard"
+community: "AlertDispatcher"
 location: "L1033"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/AlertDispatcher
 ---
 
 # .test_resource_guard_init()
@@ -16,4 +16,4 @@ tags:
 - [[ResourceLimits]] - `calls` [EXTRACTED]
 - [[TestResourceProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

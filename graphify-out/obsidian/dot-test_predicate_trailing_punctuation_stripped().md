@@ -12,7 +12,7 @@ tags:
 # .test_predicate_trailing_punctuation_stripped()
 
 ## Connections
-- [[dot-_make_proxy()_2]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_4]] - `calls` [EXTRACTED]
 - [[TestGroupPresenceProbe]] - `method` [EXTRACTED]
 - [[hello!' and 'hello' should both match.]] - `rationale_for` [EXTRACTED]
 

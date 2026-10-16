@@ -12,7 +12,7 @@ tags:
 # .test_security_config_mcp_proxy_enforce()
 
 ## Connections
-- [[SecurityConfig]] - `calls` [EXTRACTED]
+- [[SecurityConfig_4]] - `calls` [EXTRACTED]
 - [[TestSecurityConfigDefaults]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

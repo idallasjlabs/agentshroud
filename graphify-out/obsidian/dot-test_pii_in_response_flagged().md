@@ -12,6 +12,6 @@ tags:
 # .test_pii_in_response_flagged()
 
 ## Connections
-- [[TestPIIDetection_2]] - `method` [EXTRACTED]
+- [[TestPIIDetection_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebProxyConfig

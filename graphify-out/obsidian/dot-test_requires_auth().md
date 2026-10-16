@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_op_proxy.py"
+source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "test_main_endpoints.py"
-location: "L184"
+community: "TestEmailSend"
+location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy
+  - community/TestEmailSend
 ---
 
 # .test_requires_auth()
 
 ## Connections
 - [[Endpoint returns 401 without auth override.]] - `rationale_for` [EXTRACTED]
-- [[TestOpProxyEndpoint]] - `method` [EXTRACTED]
+- [[TestEmailSend]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy
+#graphify/code #graphify/EXTRACTED #community/TestEmailSend

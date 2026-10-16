@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "test_observatory_mode.py"
+community: "KillSwitchMonitor"
 location: "L142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_observatory_modepy
+  - community/KillSwitchMonitor
 ---
 
 # .test_revert_minutes_clamped_min()
@@ -15,4 +15,4 @@ tags:
 - [[TestSetMode]] - `method` [EXTRACTED]
 - [[revert_after_minutes below 1 is clamped to 1.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_observatory_modepy
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

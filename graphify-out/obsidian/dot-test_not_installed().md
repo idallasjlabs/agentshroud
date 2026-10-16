@@ -12,6 +12,6 @@ tags:
 # .test_not_installed()
 
 ## Connections
-- [[TestWazuhSummary]] - `method` [EXTRACTED]
+- [[TestWazuhSummary_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestWazuhSummary

@@ -12,7 +12,7 @@ tags:
 # .test_raw_web_fetch_json_url_with_trailing_backtick_still_queues_approval()
 
 ## Connections
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[Trailing markdown backtick in leaked URL should normalize for approval.]] - `rationale_for` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]

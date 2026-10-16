@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[FakeRBAC]] - `calls` [EXTRACTED]
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[When all getUpdates items are locally handleddropped, return ack-only update_id]] - `rationale_for` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "code"
-community: "Test getting statistics."
+community: "TestPathIsolationManager"
 location: "L343"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Test_getting_statistics
+  - community/TestPathIsolationManager
 ---
 
 # .test_global_stats()
@@ -15,4 +15,4 @@ tags:
 - [[Test getting statistics.]] - `rationale_for` [EXTRACTED]
 - [[TestMultiTurnTracker_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Test_getting_statistics
+#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager

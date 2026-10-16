@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "TestGroupRoleResolver"
+community: "GroupRoleResolver"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestGroupRoleResolver
+  - community/GroupRoleResolver
 ---
 
 # .test_member_resolves_to_member_role()
@@ -15,4 +15,4 @@ tags:
 - [[Regular member resolves to GroupRole.MEMBER.]] - `rationale_for` [EXTRACTED]
 - [[TestGroupRoleResolver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestGroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

@@ -12,7 +12,7 @@ tags:
 # .test_raw_web_fetch_json_userinfo_url_does_not_queue_approval()
 
 ## Connections
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[URLs with credentials should not be queued for web-fetch approvals.]] - `rationale_for` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]

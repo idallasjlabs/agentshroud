@@ -12,7 +12,7 @@ tags:
 # .test_owner_dm_contains_action_type()
 
 ## Connections
-- [[ApprovalRequest_4]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_5]] - `calls` [EXTRACTED]
 - [[Owner DM must describe the action_type that requires approval.]] - `rationale_for` [EXTRACTED]
 - [[TestGroupApprovalOwnerDM]] - `method` [EXTRACTED]
 

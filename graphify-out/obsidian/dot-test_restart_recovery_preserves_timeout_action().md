@@ -12,12 +12,12 @@ tags:
 # .test_restart_recovery_preserves_timeout_action()
 
 ## Connections
-- [[ApprovalQueueConfig_1]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
 - [[ApprovalStore]] - `calls` [EXTRACTED]
 - [[ApprovalStore_1]] - `calls` [INFERRED]
-- [[EnhancedApprovalQueue_2]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
 - [[SCRUM-110 restart recovery must reschedule the timeout with the         item's]] - `rationale_for` [EXTRACTED]
-- [[TestPersistence_2]] - `method` [EXTRACTED]
+- [[TestPersistence_1]] - `method` [EXTRACTED]
 - [[ToolRiskConfig]] - `calls` [EXTRACTED]
 - [[ToolRiskPolicy]] - `calls` [EXTRACTED]
 

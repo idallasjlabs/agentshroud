@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "TestObservatoryMode"
+community: "KillSwitchMonitor"
 location: "L446"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestObservatoryMode
+  - community/KillSwitchMonitor
 ---
 
 # .test_module_mode_resolution()
@@ -15,4 +15,4 @@ tags:
 - [[Test module mode resolution with pinned modules.]] - `rationale_for` [EXTRACTED]
 - [[TestObservatoryMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestObservatoryMode
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

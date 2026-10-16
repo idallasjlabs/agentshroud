@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[TestResultProcessingAndLifecycle]] - `method` [EXTRACTED]
-- [[make_proxy()]] - `calls` [EXTRACTED]
+- [[make_proxy()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/StdioConnection

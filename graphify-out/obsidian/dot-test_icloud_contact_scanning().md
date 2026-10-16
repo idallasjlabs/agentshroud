@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[PIIConfig_2]] - `calls` [EXTRACTED]
-- [[RedactionDetail_1]] - `calls` [EXTRACTED]
+- [[PIIConfig_1]] - `calls` [EXTRACTED]
+- [[RedactionDetail]] - `calls` [EXTRACTED]
 - [[RedactionResult_3]] - `calls` [EXTRACTED]
 - [[Test scanning iCloud contact data for PII]] - `rationale_for` [EXTRACTED]
 - [[TestRealWorldScenarios]] - `method` [EXTRACTED]

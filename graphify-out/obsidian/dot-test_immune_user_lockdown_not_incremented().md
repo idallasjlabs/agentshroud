@@ -12,7 +12,7 @@ tags:
 # .test_immune_user_lockdown_not_incremented()
 
 ## Connections
-- [[dot-_make_proxy()_2]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_4]] - `calls` [EXTRACTED]
 - [[TestProgressiveLockdownUX]] - `method` [EXTRACTED]
 - [[_quarantine_blocked_message must NOT increment lockdown count for immune users.]] - `rationale_for` [EXTRACTED]
 

@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[After the retry cap, the day IS marked done so the loop moves on.]] - `rationale_for` [EXTRACTED]
 - [[TestCveReportSchedulerRetry]] - `method` [EXTRACTED]
-- [[datetime_7]] - `calls` [EXTRACTED]
+- [[datetime_4]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

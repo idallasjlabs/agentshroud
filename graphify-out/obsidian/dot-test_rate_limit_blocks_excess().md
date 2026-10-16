@@ -12,8 +12,8 @@ tags:
 # .test_rate_limit_blocks_excess()
 
 ## Connections
-- [[TestRateLimiting]] - `method` [EXTRACTED]
+- [[TestRateLimiting_1]] - `method` [EXTRACTED]
 - [[WebProxy]] - `calls` [EXTRACTED]
-- [[WebProxyConfig]] - `calls` [EXTRACTED]
+- [[WebProxyConfig_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebProxyConfig

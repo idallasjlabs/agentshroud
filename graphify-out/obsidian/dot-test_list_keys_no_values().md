@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "KeyVault"
+community: "AuditChain"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/AuditChain
 ---
 
 # .test_list_keys_no_values()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKeyStorage]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/code #graphify/EXTRACTED #community/AuditChain

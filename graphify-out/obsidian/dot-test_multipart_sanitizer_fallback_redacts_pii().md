@@ -12,7 +12,7 @@ tags:
 # .test_multipart_sanitizer_fallback_redacts_pii()
 
 ## Connections
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestMultipartOutboundPipeline]] - `method` [EXTRACTED]
 - [[Without a pipeline, the sanitizer fallback still redacts caption PII.]] - `rationale_for` [EXTRACTED]
 - [[_make_multipart_body()]] - `calls` [EXTRACTED]

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[A directory that shares the root as a raw string prefix but is not         actua]] - `rationale_for` [EXTRACTED]
-- [[SSHProxy_1]] - `calls` [EXTRACTED]
+- [[SSHProxy]] - `calls` [EXTRACTED]
 - [[TestSSHProxyValidateWriteFile]] - `method` [EXTRACTED]
 - [[_b64()]] - `calls` [EXTRACTED]
 

@@ -12,7 +12,7 @@ tags:
 # .test_pii_sanitizer_default_enforcement()
 
 ## Connections
-- [[PIIConfig_2]] - `calls` [EXTRACTED]
+- [[PIIConfig_1]] - `calls` [EXTRACTED]
 - [[PIISanitizer_2]] - `calls` [EXTRACTED]
 - [[Test PIISanitizer defaults to enforce mode.]] - `rationale_for` [EXTRACTED]
 - [[TestModuleEnforcement]] - `method` [EXTRACTED]

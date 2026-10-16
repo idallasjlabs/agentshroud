@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[BlockingPipeline]] - `calls` [INFERRED]
 - [[Pipeline-blocked caption payloads must have the caption replaced.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundScanUnification]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 

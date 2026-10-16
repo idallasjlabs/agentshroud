@@ -12,6 +12,6 @@ tags:
 # .test_request_audited()
 
 ## Connections
-- [[TestAuditChain_1]] - `method` [EXTRACTED]
+- [[TestAuditChain]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ProxyAction

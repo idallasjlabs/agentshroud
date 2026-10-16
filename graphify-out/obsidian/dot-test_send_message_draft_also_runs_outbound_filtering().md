@@ -15,7 +15,7 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestOutboundPipelineWired]] - `method` [EXTRACTED]
 - [[_make_pipeline_result()]] - `calls` [EXTRACTED]
-- [[_make_proxy()_1]] - `calls` [EXTRACTED]
+- [[_make_proxy()_2]] - `calls` [EXTRACTED]
 - [[sendMessageDraft must be suppressed to prevent draft flicker leaks.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PipelineAction

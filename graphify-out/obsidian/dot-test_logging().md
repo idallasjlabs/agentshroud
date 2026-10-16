@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Test that appropriate logging occurs.]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
+- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

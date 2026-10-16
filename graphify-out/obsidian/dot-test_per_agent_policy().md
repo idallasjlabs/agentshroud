@@ -12,7 +12,7 @@ tags:
 # .test_per_agent_policy()
 
 ## Connections
-- [[EgressFilter_1]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[TestEgressFilter]] - `method` [EXTRACTED]
 

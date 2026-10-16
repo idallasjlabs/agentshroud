@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "SSHHostConfig"
+community: "ApprovalQueueConfig"
 location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHHostConfig
+  - community/ApprovalQueueConfig
 ---
 
 # .test_is_auto_approved_no()
 
 ## Connections
-- [[SSHProxy]] - `references` [EXTRACTED]
+- [[SSHProxy_1]] - `references` [EXTRACTED]
 - [[TestIsAutoApproved]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHHostConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

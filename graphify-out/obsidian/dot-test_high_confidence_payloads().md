@@ -12,7 +12,7 @@ tags:
 # .test_high_confidence_payloads()
 
 ## Connections
-- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
 - [[TestPromptGuardDirectly]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

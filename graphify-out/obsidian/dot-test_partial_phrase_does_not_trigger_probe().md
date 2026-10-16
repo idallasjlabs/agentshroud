@@ -12,7 +12,7 @@ tags:
 # .test_partial_phrase_does_not_trigger_probe()
 
 ## Connections
-- [[dot-_make_proxy()_2]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_4]] - `calls` [EXTRACTED]
 - [[TestGroupPresenceProbe]] - `method` [EXTRACTED]
 - [[_make_group_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]

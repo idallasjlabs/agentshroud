@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "run_trivy_scan"
+community: "test_daily_cve_report.py"
 location: "L216"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run_trivy_scan
+  - community/test_daily_cve_reportpy
 ---
 
 # .test_run_empty_stdout_is_error_not_clean()
@@ -16,4 +16,4 @@ tags:
 - [[TestTrivyRun]] - `method` [EXTRACTED]
 - [[run_trivy_scan()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run_trivy_scan
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

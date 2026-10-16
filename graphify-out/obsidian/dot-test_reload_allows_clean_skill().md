@@ -12,7 +12,7 @@ tags:
 # .test_reload_allows_clean_skill()
 
 ## Connections
-- [[Path_28]] - `references` [EXTRACTED]
+- [[Path_26]] - `references` [EXTRACTED]
 - [[TestClient]] - `references` [EXTRACTED]
 - [[TestReloadIntegration]] - `method` [EXTRACTED]
 - [[_write_tree()]] - `calls` [EXTRACTED]

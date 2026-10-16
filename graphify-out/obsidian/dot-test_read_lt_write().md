@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "PermissionLevel"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/PermissionLevel
 ---
 
 # .test_read_lt_write()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPermissionLevel]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

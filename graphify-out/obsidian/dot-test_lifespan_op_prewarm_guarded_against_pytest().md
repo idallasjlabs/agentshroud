@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "ForwardRequest"
+community: "AgentTarget"
 location: "L334"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ForwardRequest
+  - community/AgentTarget
 ---
 
 # .test_lifespan_op_prewarm_guarded_against_pytest()
@@ -15,4 +15,4 @@ tags:
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 - [[The 1Password prewarm thread must never spawn real op subprocesses under pytest.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ForwardRequest
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

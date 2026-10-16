@@ -12,7 +12,7 @@ tags:
 # .test_rich_environment()
 
 ## Connections
-- [[TestComputeScorecard]] - `method` [EXTRACTED]
+- [[TestComputeScorecard_1]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_scanner_integration_coveragepy

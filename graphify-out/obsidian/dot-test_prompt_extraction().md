@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_tool_result_injection.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "InjectionAction"
-location: "L87"
+community: "AgentRegistry"
+location: "L179"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/AgentRegistry
 ---
 
 # .test_prompt_extraction()
 
 ## Connections
-- [[TestMediumSeverity]] - `method` [EXTRACTED]
+- [[TestPromptGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionAction
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

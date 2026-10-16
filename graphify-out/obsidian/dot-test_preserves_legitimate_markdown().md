@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "PIIConfig"
+community: "test_prompt_guard.py"
 location: "L231"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/test_prompt_guardpy
 ---
 
 # .test_preserves_legitimate_markdown()
@@ -15,4 +15,4 @@ tags:
 - [[Normal markdown headers ( Title) should not be stripped.]] - `rationale_for` [EXTRACTED]
 - [[TestReanchorDelimiters]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/test_prompt_guardpy

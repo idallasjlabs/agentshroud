@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "code"
-community: "BotConfig"
+community: "telegram_api_proxy (/telegram-api/{path})"
 location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/telegram_api_proxy_/telegram-api/path
 ---
 
 # .test_registry_rejects_case_variant()
@@ -15,4 +15,4 @@ tags:
 - [[TestTelegramTokenRegistry]] - `method` [EXTRACTED]
 - [[Token matching must be exact — case-sensitive.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BotConfig
+#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Large inputs shouldn't crash prompt guard.]] - `rationale_for` [EXTRACTED]
-- [[PromptGuard_1]] - `calls` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
 - [[TestResourceProtection]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PIIConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "TestCollaboratorPersistence"
+community: "Action"
 location: "L646"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCollaboratorPersistence
+  - community/Action
 ---
 
 # .test_pause_does_not_remove_from_collaborator_role()
@@ -17,4 +17,4 @@ tags:
 - [[RBACConfig_1]] - `calls` [EXTRACTED]
 - [[TestCollaboratorPersistence]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPersistence
+#graphify/code #graphify/EXTRACTED #community/Action

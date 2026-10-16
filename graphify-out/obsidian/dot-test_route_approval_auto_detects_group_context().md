@@ -12,7 +12,7 @@ tags:
 # .test_route_approval_auto_detects_group_context()
 
 ## Connections
-- [[ApprovalRequest_4]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_5]] - `calls` [EXTRACTED]
 - [[TestGroupApprovalRouterContextDetection]] - `method` [EXTRACTED]
 - [[route_approval auto-detects group context when group_chat_id not explicitly pass]] - `rationale_for` [EXTRACTED]
 

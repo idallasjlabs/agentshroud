@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Healthcheck SKILL.md sandbox errors should rewrite when payload uses caption fie]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 

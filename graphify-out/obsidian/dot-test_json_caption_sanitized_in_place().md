@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Pipeline-sanitized sendPhoto captions must replace the caption itself.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundScanUnification]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 

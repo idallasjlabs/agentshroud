@@ -16,6 +16,6 @@ tags:
 - [[TestGroupToolAllowlist]] - `method` [EXTRACTED]
 - [[ToolACLConfig]] - `calls` [EXTRACTED]
 - [[ToolACLEnforcer]] - `calls` [EXTRACTED]
-- [[_make_rbac()]] - `calls` [EXTRACTED]
+- [[_make_rbac()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RBACConfig

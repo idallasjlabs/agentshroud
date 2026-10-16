@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "AlertDispatcher"
+community: "EgressFilterConfig"
 location: "L834"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/EgressFilterConfig
 ---
 
 # .test_homoglyph_detection()
@@ -15,4 +15,4 @@ tags:
 - [[Mix of Latin and Cyrillic should trigger homoglyph detection.]] - `rationale_for` [EXTRACTED]
 - [[TestPromptGuardEvasion]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[MiddlewareManager]] - `calls` [EXTRACTED]
-- [[PIIConfig_2]] - `calls` [EXTRACTED]
+- [[PIIConfig_1]] - `calls` [EXTRACTED]
 - [[Test middleware configuration with disabled tool result PII]] - `rationale_for` [EXTRACTED]
 - [[TestMiddlewareIntegration]] - `method` [EXTRACTED]
 

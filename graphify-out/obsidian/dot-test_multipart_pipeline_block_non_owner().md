@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[BlockingPipeline]] - `calls` [INFERRED]
 - [[Pipeline-blocked captions to non-owners are replaced with a safe notice.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestMultipartOutboundPipeline]] - `method` [EXTRACTED]
 - [[_make_multipart_body()]] - `calls` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]

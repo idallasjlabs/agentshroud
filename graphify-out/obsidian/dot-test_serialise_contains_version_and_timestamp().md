@@ -12,7 +12,7 @@ tags:
 # .test_serialise_contains_version_and_timestamp()
 
 ## Connections
-- [[Path_54]] - `references` [EXTRACTED]
+- [[Path_52]] - `references` [EXTRACTED]
 - [[TestSkillsManifest]] - `method` [EXTRACTED]
 - [[_write_tree()_1]] - `calls` [EXTRACTED]
 

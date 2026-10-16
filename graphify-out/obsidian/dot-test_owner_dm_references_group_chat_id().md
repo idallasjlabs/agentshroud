@@ -12,7 +12,7 @@ tags:
 # .test_owner_dm_references_group_chat_id()
 
 ## Connections
-- [[ApprovalRequest_4]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_5]] - `calls` [EXTRACTED]
 - [[Owner DM message text must reference the originating group chat_id.]] - `rationale_for` [EXTRACTED]
 - [[TestGroupApprovalOwnerDM]] - `method` [EXTRACTED]
 

@@ -12,7 +12,7 @@ tags:
 # .test_invalid_action_resource_combinations()
 
 ## Connections
-- [[RBACManager_2]] - `calls` [EXTRACTED]
+- [[RBACManager_1]] - `calls` [EXTRACTED]
 - [[Test handling of invalid actionresource combinations.]] - `rationale_for` [EXTRACTED]
 - [[TestRBACErrorHandling]] - `method` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "SessionError"
+community: "SessionManager"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionError
+  - community/SessionManager
 ---
 
 # .test_session_bound_to_identity()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSessionCreation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionError
+#graphify/code #graphify/EXTRACTED #community/SessionManager
