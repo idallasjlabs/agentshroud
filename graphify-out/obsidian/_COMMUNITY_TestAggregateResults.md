@@ -15,7 +15,7 @@ members: 8
 - [[dot-test_all_not_run_is_not_configured()]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[dot-test_critical_dominates()]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[dot-test_high_means_warning()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[Any_2]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Any_3]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[TestAggregateResults]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[_stub_summary()]] - code - gateway/tests/test_scanner_integration_coverage.py
 
@@ -27,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_test_scanner_integration_coverage.py]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig_7]]
 
 ## Top bridge nodes
 - [[TestAggregateResults]] - degree 6, connects to 1 community

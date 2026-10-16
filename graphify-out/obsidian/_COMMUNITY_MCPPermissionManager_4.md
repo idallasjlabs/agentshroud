@@ -1,30 +1,39 @@
 ---
 type: community
-cohesion: 0.19
-members: 15
+cohesion: 0.12
+members: 24
 ---
 
 # MCPPermissionManager
 
-**Cohesion:** 0.19 - loosely connected
-**Members:** 15 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 24 nodes
 
 ## Members
-- [[dot-_fake_aiohttp()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-kill()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-send_request()_2]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-stop()_12]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-terminate()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_missing_aiohttp_raises_runtime_error()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_send_request_and_session_reuse()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_start_send_and_stop()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_start_without_env_passes_none()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_stop_kills_on_wait_timeout()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-wait()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[FakeProcess]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[Stand-in for asyncio.subprocess.Process — no real child process.]] - rationale - gateway/tests/test_mcp_proxy_coverage.py
-- [[TestHttpSseConnection]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[TestStdioConnection]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-__post_init__()_7]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-test_admin_private_data_not_redacted_for_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_admin_private_data_redacted_for_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_blocked_entries()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_clean_result_passes()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_error_result_logged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_failed_entries()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_filter_by_agent()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_filter_by_server()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_filter_by_tool()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_gateway_contributor_paths_redacted_for_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_generate_report()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_memory_markers_redacted_for_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_pii_redacted_in_result()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_private_redaction_emits_privacy_event()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_result_audit_logged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_tool_call_generates_id_and_timestamp()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_tool_result_timestamp_default()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[MCPToolCall]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[MCPToolResult]] - code - gateway/proxy/mcp_proxy.py
+- [[Represents an MCP tool result.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[TestAuditQueries]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestDataclasses]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestProxyResultProcessing]] - code - gateway/tests/test_mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,19 +43,25 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 19 edges to [[_COMMUNITY_StdioConnection]]
-- 14 edges to [[_COMMUNITY_MCPPermissionManager_1]]
-- 6 edges to [[_COMMUNITY_PermissionLevel]]
-- 6 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 3 edges to [[_COMMUNITY_MCPPermissionManager_2]]
-- 3 edges to [[_COMMUNITY_MCPAuditTrail]]
-- 3 edges to [[_COMMUNITY_MCPInspector]]
-- 3 edges to [[_COMMUNITY_MCPPermissionManager_3]]
-- 1 edge to [[_COMMUNITY_AsyncMock]]
+- 33 edges to [[_COMMUNITY_MCPPermissionManager]]
+- 15 edges to [[_COMMUNITY_StdioConnection_1]]
+- 13 edges to [[_COMMUNITY_StdioConnection]]
+- 12 edges to [[_COMMUNITY_MCPPermissionManager_1]]
+- 11 edges to [[_COMMUNITY_MCPInspector]]
+- 8 edges to [[_COMMUNITY_PermissionLevel]]
+- 6 edges to [[_COMMUNITY_MCPAuditTrail]]
+- 6 edges to [[_COMMUNITY_MCPPolicyEngine]]
+- 5 edges to [[_COMMUNITY_MCPPermissionManager_2]]
+- 1 edge to [[_COMMUNITY_MCPToolResult]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager_5]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager_6]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager_7]]
+- 1 edge to [[_COMMUNITY_Athena — Knowledge Distiller_4]]
+- 1 edge to [[_COMMUNITY_TestAuditTrail]]
 
 ## Top bridge nodes
-- [[FakeProcess]] - degree 23, connects to 9 communities
-- [[TestHttpSseConnection]] - degree 18, connects to 8 communities
-- [[TestStdioConnection]] - degree 18, connects to 8 communities
-- [[dot-test_send_request_and_session_reuse()]] - degree 6, connects to 2 communities
-- [[dot-test_start_send_and_stop()]] - degree 6, connects to 2 communities
+- [[MCPToolResult]] - degree 77, connects to 14 communities
+- [[TestDataclasses]] - degree 17, connects to 8 communities
+- [[MCPToolCall]] - degree 16, connects to 8 communities
+- [[TestProxyResultProcessing]] - degree 23, connects to 6 communities
+- [[TestAuditQueries]] - degree 20, connects to 6 communities

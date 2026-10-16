@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-process_inbound()_7]] - `method` [EXTRACTED]
-- [[dot-process_outbound()_5]] - `method` [EXTRACTED]
+- [[dot-process_outbound()_4]] - `method` [EXTRACTED]
 - [[dot-test_blocked_outbound_replaced_with_policy_notice()]] - `calls` [EXTRACTED]
 - [[AgentTarget_3]] - `uses` [INFERRED]
 - [[ForwardRequest_3]] - `uses` [INFERRED]

@@ -10,10 +10,10 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_62]] - document - docker/config/openclaw/skills/i-tdd/README.md
-- [[Related Skills_48]] - document - docker/config/openclaw/skills/i-tdd/README.md
+- [[Purpose_51]] - document - docker/config/openclaw/skills/i-tdd/README.md
+- [[Related Skills_40]] - document - docker/config/openclaw/skills/i-tdd/README.md
 - [[Test-Driven Development (TDD)]] - document - docker/config/openclaw/skills/i-tdd/README.md
-- [[Usage_52]] - document - docker/config/openclaw/skills/i-tdd/README.md
+- [[Usage_43]] - document - docker/config/openclaw/skills/i-tdd/README.md
 - [[openclawskillsi-tddREADME]] - document - docker/config/openclaw/skills/i-tdd/README.md
 
 ## Live Query (requires Dataview plugin)

@@ -11,9 +11,9 @@ members: 5
 
 ## Members
 - [[MCP Tools Usage (MCPM)]] - document - docker/config/openclaw/skills/i-mcpm/README.md
-- [[Purpose_53]] - document - docker/config/openclaw/skills/i-mcpm/README.md
-- [[Related Skills_39]] - document - docker/config/openclaw/skills/i-mcpm/README.md
-- [[Usage_43]] - document - docker/config/openclaw/skills/i-mcpm/README.md
+- [[Purpose_42]] - document - docker/config/openclaw/skills/i-mcpm/README.md
+- [[Related Skills_31]] - document - docker/config/openclaw/skills/i-mcpm/README.md
+- [[Usage_34]] - document - docker/config/openclaw/skills/i-mcpm/README.md
 - [[openclawskillsi-mcpmREADME]] - document - docker/config/openclaw/skills/i-mcpm/README.md
 
 ## Live Query (requires Dataview plugin)

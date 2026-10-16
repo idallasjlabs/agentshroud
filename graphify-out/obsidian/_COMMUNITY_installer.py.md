@@ -16,7 +16,7 @@ members: 16
 - [[Get available runtimes with recommendations.]] - rationale - gateway/web/installer.py
 - [[InstallConfig]] - code - gateway/web/installer.py
 - [[PrerequisiteCheck]] - code - gateway/web/installer.py
-- [[Request_8]] - code
+- [[Request_6]] - code
 - [[Serve the installer wizard HTML.]] - rationale - gateway/web/installer.py
 - [[Start the installation process. This endpoint kicks off the install and returns…]] - rationale - gateway/web/installer.py
 - [[check_prerequisites()]] - code - gateway/web/installer.py

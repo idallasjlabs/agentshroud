@@ -1,30 +1,37 @@
 ---
 type: community
-cohesion: 0.17
-members: 15
+cohesion: 0.10
+members: 22
 ---
 
 # MiddlewareManager
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 15 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 22 nodes
 
 ## Members
-- [[dot-_compute_file_hash()]] - code - gateway/security/memory_integrity.py
-- [[dot-_detect_modification_source()]] - code - gateway/security/memory_integrity.py
-- [[dot-_is_in_write_window()]] - code - gateway/security/memory_integrity.py
-- [[dot-_save_integrity_database()]] - code - gateway/security/memory_integrity.py
-- [[dot-clear_old_alerts()]] - code - gateway/security/memory_integrity.py
-- [[dot-scan_all_monitored_files()]] - code - gateway/security/memory_integrity.py
-- [[dot-scan_file()_1]] - code - gateway/security/memory_integrity.py
-- [[Attempt to detect the source of a file modification.          Detection strategy]] - rationale - gateway/security/memory_integrity.py
-- [[Check if a file is currently in a write grace window.]] - rationale - gateway/security/memory_integrity.py
-- [[Clear alerts older than N days.]] - rationale - gateway/security/memory_integrity.py
-- [[Compute SHA-256 hash of a file.]] - rationale - gateway/security/memory_integrity.py
-- [[Path_48]] - code - gateway/security/memory_integrity.py
-- [[Save integrity database to disk.]] - rationale - gateway/security/memory_integrity.py
-- [[Scan a single file for integrity changes.]] - rationale - gateway/security/memory_integrity.py
-- [[Scan all configured monitored files and directories.]] - rationale - gateway/security/memory_integrity.py
+- [[dot-__post_init__()_4]] - code - gateway/security/memory_lifecycle.py
+- [[dot-_cleanup_old_actions()]] - code - gateway/security/memory_lifecycle.py
+- [[dot-_cleanup_old_threats()]] - code - gateway/security/memory_lifecycle.py
+- [[dot-archive_file()]] - code - gateway/security/memory_lifecycle.py
+- [[dot-enforce_daily_notes_retention()]] - code - gateway/security/memory_lifecycle.py
+- [[dot-enforce_memory_md_size_limit()]] - code - gateway/security/memory_lifecycle.py
+- [[dot-get_lifecycle_status()]] - code - gateway/security/memory_lifecycle.py
+- [[dot-get_recent_actions()]] - code - gateway/security/memory_lifecycle.py
+- [[dot-get_recent_threats()]] - code - gateway/security/memory_lifecycle.py
+- [[dot-run_lifecycle_maintenance()]] - code - gateway/security/memory_lifecycle.py
+- [[Action taken during retention policy enforcement.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Any_49]] - code - gateway/security/memory_lifecycle.py
+- [[Archive a file to the archive directory.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Clean up old retention action records.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Clean up old threat records.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Enforce retention policy for daily notes.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Enforce size limit for MEMORY.md file.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Get current lifecycle management status.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Get retention actions taken in the last N hours.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Get threats detected in the last N hours.]] - rationale - gateway/security/memory_lifecycle.py
+- [[RetentionAction]] - code - gateway/security/memory_lifecycle.py
+- [[Run all lifecycle maintenance tasks.]] - rationale - gateway/security/memory_lifecycle.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,12 +41,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_MiddlewareManager_4]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager_8]]
+- 14 edges to [[_COMMUNITY_MiddlewareManager_4]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager_9]]
 
 ## Top bridge nodes
-- [[dot-_save_integrity_database()]] - degree 6, connects to 2 communities
-- [[dot-scan_file()_1]] - degree 9, connects to 1 community
-- [[dot-_detect_modification_source()]] - degree 6, connects to 1 community
-- [[Path_48]] - degree 5, connects to 1 community
-- [[dot-_is_in_write_window()]] - degree 5, connects to 1 community
+- [[dot-archive_file()]] - degree 6, connects to 2 communities
+- [[RetentionAction]] - degree 8, connects to 1 community
+- [[dot-run_lifecycle_maintenance()]] - degree 6, connects to 1 community
+- [[dot-enforce_memory_md_size_limit()]] - degree 5, connects to 1 community
+- [[dot-get_lifecycle_status()]] - degree 5, connects to 1 community

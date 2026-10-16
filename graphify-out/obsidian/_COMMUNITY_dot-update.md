@@ -10,7 +10,7 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[dot-__init__()_179]] - code - gateway/proxy/dns_blocklist.py
+- [[dot-__init__()_174]] - code - gateway/proxy/dns_blocklist.py
 - [[dot-_periodic_update_loop()]] - code - gateway/proxy/dns_blocklist.py
 - [[dot-download_blocklist()]] - code - gateway/proxy/dns_blocklist.py
 - [[dot-load_from_text()]] - code - gateway/proxy/dns_blocklist.py
@@ -22,7 +22,7 @@ members: 14
 - [[Download all blocklists and rebuild the blocked domains set.]] - rationale - gateway/proxy/dns_blocklist.py
 - [[Parse a single line from a hosts-format or domain-only blocklist.          Suppo]] - rationale - gateway/proxy/dns_blocklist.py
 - [[Parse blocklist text and add domains. Returns count of new domains.]] - rationale - gateway/proxy/dns_blocklist.py
-- [[Path_53]] - code - gateway/proxy/dns_blocklist.py
+- [[Path_52]] - code - gateway/proxy/dns_blocklist.py
 - [[Start background task for periodic blocklist updates.]] - rationale - gateway/proxy/dns_blocklist.py
 
 ## Live Query (requires Dataview plugin)
@@ -40,4 +40,4 @@ SORT file.name ASC
 - [[dot-parse_hosts_line()]] - degree 4, connects to 1 community
 - [[dot-_periodic_update_loop()]] - degree 4, connects to 1 community
 - [[dot-download_blocklist()]] - degree 3, connects to 1 community
-- [[dot-__init__()_179]] - degree 3, connects to 1 community
+- [[dot-__init__()_174]] - degree 3, connects to 1 community

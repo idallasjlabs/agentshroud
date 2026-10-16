@@ -38,7 +38,7 @@ members: 30
 - [[9.2 Threat Model Coverage]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
 - [[9.3 GONO-GO Decision]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
 - [[AgentShroud v0.7.0 Blue Team Security Audit Report]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[Executive Summary_5]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[Executive Summary_1]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
 - [[planningreviewsblue-team-audit-v0.7.0]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
 
 ## Live Query (requires Dataview plugin)

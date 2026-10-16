@@ -1,22 +1,24 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.22
+members: 9
 ---
 
 # test_telegram_executor.py
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[Hermes API forwarder must include an HTTP-method peek to drop non-HTTP connectio]] - rationale - gateway/tests/test_telegram_executor.py
-- [[Non-HTTP bytes (e.g. TLS ClientHello) must be dropped without proxying.]] - rationale - gateway/tests/test_telegram_executor.py
-- [[lifespan startup must install ThreadPoolExecutor(max_workers=64).]] - rationale - gateway/tests/test_telegram_executor.py
-- [[test_hermes_forwarder_drops_non_http()]] - code - gateway/tests/test_telegram_executor.py
-- [[test_lifespan_hermes_forwarder_has_http_peek()]] - code - gateway/tests/test_telegram_executor.py
-- [[test_lifespan_installs_64_worker_executor()]] - code - gateway/tests/test_telegram_executor.py
-- [[test_telegram_executor.py]] - code - gateway/tests/test_telegram_executor.py
+- [[v0.9.0 Sentinel — Data Isolation + SOC + Remediation (37 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🔴 Private Service Data Isolation (6 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🔴 Security Operations Center (SOC) (6 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟡 Apple Messages Integration (4 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟡 Security Tools — Full Integration (5 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟡 Steve Hay Remediation (4 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟢 Development Infrastructure (4 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟢 Infrastructure (5 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟢 Multi-Agent Architecture (3 items)]] - document - docs/planning/RELEASE-PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 1 edge to [[_COMMUNITY_🛡️ AgentShroud Release Plan]]
 
 ## Top bridge nodes
-- [[test_telegram_executor.py]] - degree 4, connects to 1 community
+- [[v0.9.0 Sentinel — Data Isolation + SOC + Remediation (37 items)]] - degree 9, connects to 1 community

@@ -15,7 +15,7 @@ members: 27
 - [[Core Discipline Frame → Structure → Generate → Validate_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
 - [[Curriculum Design (with `i-atlas`)_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
 - [[Decision Tree Map_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[Dependencies_8]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[Dependencies_7]] - document - docker/config/hermes/skills/i-mm/SKILL.md
 - [[Example FODL Pipeline Overview_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
 - [[Export and Sharing Conventions_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
 - [[Hierarchy Design — Outline First_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
@@ -29,7 +29,7 @@ members: 27
 - [[Markmap Source Format_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
 - [[Outline Template_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
 - [[Project Planning Map_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
-- [[Role_33]] - document - docker/config/hermes/skills/i-mm/SKILL.md
+- [[Role_32]] - document - docker/config/hermes/skills/i-mm/SKILL.md
 - [[Rules_8]] - document - docker/config/hermes/skills/i-mm/SKILL.md
 - [[Skill Mindmap Architect (MM)_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md
 - [[Use Case Patterns_1]] - document - docker/config/hermes/skills/i-mm/SKILL.md

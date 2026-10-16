@@ -10,13 +10,13 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Architecture]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
+- [[Architecture_1]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
 - [[Confidence Threshold]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
 - [[Configured Entities]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
 - [[NLP Backend]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
 - [[Presidio Analyzer]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
-- [[Purpose_2]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
-- [[Related Notes_4]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
+- [[Purpose_1]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
+- [[Related Notes_5]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
 - [[Where Used]] - document - docs/vault/05 - Dependencies/presidio-analyzer.md
 
 ## Live Query (requires Dataview plugin)

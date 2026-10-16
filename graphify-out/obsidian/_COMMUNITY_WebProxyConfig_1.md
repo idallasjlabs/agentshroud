@@ -1,27 +1,32 @@
 ---
 type: community
-cohesion: 0.17
-members: 12
+cohesion: 0.14
+members: 17
 ---
 
 # WebProxyConfig
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 12 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 17 nodes
 
 ## Members
-- [[dot-test_10_x_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_127_0_0_1_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_169_254_blocked()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_192_168_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_decimal_ip_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_hex_ip_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_ipv4_mapped_ipv6_192_168_blocked()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_ipv4_mapped_ipv6_blocked()_2]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_ipv6_loopback_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_localhost_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_public_ip_allowed()]] - code - gateway/tests/test_web_proxy.py
-- [[TestSSRFBlocking]] - code - gateway/tests/test_web_proxy.py
+- [[Credential Isolation Architecture]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[Enforce-by-Default Semantics (R-02, R-03)]] - rationale - docs/papers/agentshroud-ieee-paper.md
+- [[Hay, Enterprise Security Feature Priorities Assessment (2026)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[Human-in-the-Loop Approval Gating (R-08, R-09)]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[Outbound Information Filter (R-01)]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[Per-User Session Isolation (R-04, R-05)]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[RELEASE-PLAN]] - document - docs/planning/RELEASE-PLAN.md
+- [[STPA-Sec Analysis of AgentShroud]] - rationale - docs/papers/agentshroud-ieee-paper.md
+- [[Separation of Concerns  Isolated Bot Accounts]] - rationale - docs/reference/PREREQUISITES.md
+- [[Separation of Privilege (R-06, R-07)]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[Steve Hay Blue Team Assessment]] - concept - docs/planning/RELEASE-PLAN.md
+- [[v0.8.0 Watchtower — Security Fixes + Module Wiring]] - concept - docs/planning/RELEASE-PLAN.md
+- [[v0.9.0 Sentinel — Data Isolation + SOC]] - concept - docs/planning/RELEASE-PLAN.md
+- [[v1.0.0 Fortress — Ship-Ready Public Release]] - concept - docs/planning/RELEASE-PLAN.md
+- [[v1.1.0 Groups — Workspaces for Teams]] - concept - docs/planning/RELEASE-PLAN.md
+- [[v1.2.0 Local LLMs — Offline Model Support]] - concept - docs/planning/RELEASE-PLAN.md
+- [[v1.3.0 — Platform Expansion]] - concept - docs/planning/RELEASE-PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,10 +36,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_WebProxyConfig]]
-- 1 edge to [[_COMMUNITY_ProxyAction]]
-- 1 edge to [[_COMMUNITY_WebProxy]]
-- 1 edge to [[_COMMUNITY_AuditChain]]
+- 3 edges to [[_COMMUNITY_agentshroud-ieee-paper]]
+- 1 edge to [[_COMMUNITY_🛡️ AgentShroud Release Plan]]
+- 1 edge to [[_COMMUNITY_Quick Reference Commands]]
 
 ## Top bridge nodes
-- [[TestSSRFBlocking]] - degree 18, connects to 4 communities
+- [[STPA-Sec Analysis of AgentShroud]] - degree 9, connects to 1 community
+- [[RELEASE-PLAN]] - degree 7, connects to 1 community
+- [[Credential Isolation Architecture]] - degree 4, connects to 1 community
+- [[Hay, Enterprise Security Feature Priorities Assessment (2026)]] - degree 3, connects to 1 community
+- [[Separation of Concerns  Isolated Bot Accounts]] - degree 2, connects to 1 community

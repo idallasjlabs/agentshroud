@@ -14,9 +14,9 @@ members: 13
 - [[Default Service Configuration]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
 - [[Function Details_46]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
 - [[Key Classes  Functions_48]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[Purpose_182]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[Purpose_183]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
 - [[Related_52]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[Responsibilities_50]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[Responsibilities_49]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
 - [[compose_generator.py_2]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
 - [[compose_generator.py_1]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
 - [[gateway service]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md

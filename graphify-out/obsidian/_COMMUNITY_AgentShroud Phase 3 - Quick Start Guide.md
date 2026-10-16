@@ -25,7 +25,7 @@ members: 32
 - [[Graceful Shutdown]] - document - docker/QUICKSTART.md
 - [[Hermes Setup (full profile only)]] - document - docker/QUICKSTART.md
 - [[Launch the Stack]] - document - docker/QUICKSTART.md
-- [[Next Steps_4]] - document - docker/QUICKSTART.md
+- [[Next Steps_5]] - document - docker/QUICKSTART.md
 - [[Nuclear Option (Reset Everything)]] - document - docker/QUICKSTART.md
 - [[OpenClaw Not Responding]] - document - docker/QUICKSTART.md
 - [[Prerequisites_3]] - document - docker/QUICKSTART.md

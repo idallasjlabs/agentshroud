@@ -1,25 +1,30 @@
 ---
 type: community
-cohesion: 0.22
-members: 10
+cohesion: 0.21
+members: 15
 ---
 
 # test_hermes_model_resolver.py
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.21 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[CLI `resolve_model.py modelprovider`. Defaults to 'model'.]] - rationale - docker/bots/hermes/resolve_model.py
-- [[Return the Hermes provider key for a bare model name.      Local models (qwenll]] - rationale - docker/bots/hermes/resolve_model.py
-- [[Strip a known provider prefix from a model ref, leaving the bare model name.]] - rationale - docker/bots/hermes/resolve_model.py
-- [[_resolve_from_env()]] - code - docker/bots/hermes/resolve_model.py
-- [[main()_34]] - code - docker/bots/hermes/resolve_model.py
-- [[provider_for_model()]] - code - docker/bots/hermes/resolve_model.py
-- [[resolve_model.py]] - code - docker/bots/hermes/resolve_model.py
-- [[strip_provider_prefix()]] - code - docker/bots/hermes/resolve_model.py
-- [[test_provider_for_model()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_strip_provider_prefix()]] - code - gateway/tests/test_hermes_model_resolver.py
+- [[dot-test_allowed_chain_passes()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_analyzer_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_blocked_rewrite_denied()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_blocked_with_chain_match()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_blocked_without_chain_match()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_cross_user_path_blocked()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_isolation_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_own_workspace_path_allowed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_owner_bypasses_sandbox()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_sandbox_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_unblocked_rewrite_allowed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestFileSandboxStep]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestPathIsolationStep]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestToolChainAnalyzer_1]] - code - gateway/tests/test_middleware_coverage.py
+- [[_tool_req()]] - code - gateway/tests/test_middleware_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,11 +34,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_test_hermes_model_resolver.py]]
+- 6 edges to [[_COMMUNITY_MiddlewareManager]]
+- 6 edges to [[_COMMUNITY__req]]
+- 3 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 3 edges to [[_COMMUNITY_UserSessionManager_3]]
 
 ## Top bridge nodes
-- [[resolve_model.py]] - degree 6, connects to 1 community
-- [[provider_for_model()]] - degree 4, connects to 1 community
-- [[strip_provider_prefix()]] - degree 4, connects to 1 community
-- [[_resolve_from_env()]] - degree 3, connects to 1 community
-- [[test_provider_for_model()]] - degree 2, connects to 1 community
+- [[TestFileSandboxStep]] - degree 9, connects to 4 communities
+- [[TestToolChainAnalyzer_1]] - degree 9, connects to 4 communities
+- [[TestPathIsolationStep]] - degree 8, connects to 4 communities
+- [[_tool_req()]] - degree 13, connects to 1 community
+- [[dot-test_owner_bypasses_sandbox()]] - degree 3, connects to 1 community

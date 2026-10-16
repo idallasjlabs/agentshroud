@@ -25,10 +25,10 @@ members: 21
 - [[Memory and Swap]] - document - docs/operations/raspberry-pi.md
 - [[Out-of-Memory (OOM) Kills]] - document - docs/operations/raspberry-pi.md
 - [[Pi-Specific Notes]] - document - docs/operations/raspberry-pi.md
-- [[Prerequisites_10]] - document - docs/operations/raspberry-pi.md
+- [[Prerequisites_9]] - document - docs/operations/raspberry-pi.md
 - [[Slow Builds_1]] - document - docs/operations/raspberry-pi.md
 - [[Tailscale Remote Access (Optional)]] - document - docs/operations/raspberry-pi.md
-- [[Troubleshooting_29]] - document - docs/operations/raspberry-pi.md
+- [[Troubleshooting_30]] - document - docs/operations/raspberry-pi.md
 - [[Updating to Latest Release]] - document - docs/operations/raspberry-pi.md
 - [[seccomp on ARM64]] - document - docs/operations/raspberry-pi.md
 

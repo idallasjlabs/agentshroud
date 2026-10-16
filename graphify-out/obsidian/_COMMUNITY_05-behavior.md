@@ -30,7 +30,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_diagramsREADME]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
+- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
 - 1 edge to [[_COMMUNITY_03-data]]
 
 ## Top bridge nodes

@@ -20,7 +20,7 @@ members: 13
 - [[Related Skills_116]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
 - [[Role_83]] - document - docker/config/hermes/skills/i-mnemosyne/SKILL.md
 - [[System Prompt_13]] - document - docker/config/hermes/skills/i-mnemosyne/SKILL.md
-- [[Usage_125]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
+- [[Usage_126]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
 - [[hermesskillsi-mnemosyneREADME]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
 - [[hermesskillsi-mnemosyneSKILL]] - document - docker/config/hermes/skills/i-mnemosyne/SKILL.md
 

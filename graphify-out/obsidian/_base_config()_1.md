@@ -12,7 +12,7 @@ tags:
 # _base_config()
 
 ## Connections
-- [[A2APolicyConfig]] - `references` [EXTRACTED]
+- [[A2APolicyConfig_1]] - `references` [EXTRACTED]
 - [[Two allowlisted peers, one denylisted peer, default-deny for everyone else.]] - `rationale_for` [EXTRACTED]
 - [[engine()_1]] - `calls` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]

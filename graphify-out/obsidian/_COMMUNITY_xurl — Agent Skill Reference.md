@@ -21,8 +21,8 @@ members: 23
 - [[Other auth methods]] - document - skills/openclaw/xurl/SKILL.md
 - [[Output Format_11]] - document - skills/openclaw/xurl/SKILL.md
 - [[Post with an image]] - document - skills/openclaw/xurl/SKILL.md
-- [[Prerequisites_5]] - document - skills/openclaw/xurl/SKILL.md
-- [[Quick Reference_8]] - document - skills/openclaw/xurl/SKILL.md
+- [[Prerequisites_6]] - document - skills/openclaw/xurl/SKILL.md
+- [[Quick Reference_7]] - document - skills/openclaw/xurl/SKILL.md
 - [[Raw API Access]] - document - skills/openclaw/xurl/SKILL.md
 - [[Register an app (recommended)]] - document - skills/openclaw/xurl/SKILL.md
 - [[Reply to a conversation]] - document - skills/openclaw/xurl/SKILL.md

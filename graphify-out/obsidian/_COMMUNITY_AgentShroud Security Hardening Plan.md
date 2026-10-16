@@ -11,7 +11,7 @@ members: 23
 
 ## Members
 - [[AgentShroud Security Hardening Plan]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Architecture_6]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[Architecture_7]] - document - docs/planning/v0.8/SECURITY_PLAN.md
 - [[Current State (2026-02-24)]] - document - docs/planning/v0.8/SECURITY_PLAN.md
 - [[Current State (v0.7.0 → All Phases Complete)]] - document - docs/planning/v0.8/SECURITY_PLAN.md
 - [[Endpoints_1]] - document - docs/planning/v0.8/SECURITY_PLAN.md

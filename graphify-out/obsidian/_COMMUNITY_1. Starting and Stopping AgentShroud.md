@@ -11,7 +11,7 @@ members: 4
 
 ## Members
 - [[1. Starting and Stopping AgentShroud]] - document - docs/operations/runbook.md
-- [[Restart Procedure]] - document - docs/operations/runbook.md
+- [[Restart Procedure_1]] - document - docs/operations/runbook.md
 - [[Starting the System]] - document - docs/operations/runbook.md
 - [[Stopping the System]] - document - docs/operations/runbook.md
 

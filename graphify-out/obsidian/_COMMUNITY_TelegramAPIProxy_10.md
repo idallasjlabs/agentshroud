@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-test_plain_no_reply_token_is_rewritten_to_wait_message()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Plain NO_REPLY text should still be normalized to deterministic wait guidance.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_ip_host_does_not_queue_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Literal IP targets should not enter interactive domain approval flow.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +21,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy_7]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_5]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
 
 ## Top bridge nodes
-- [[dot-test_plain_no_reply_token_is_rewritten_to_wait_message()]] - degree 4, connects to 1 community
+- [[dot-test_raw_web_fetch_json_ip_host_does_not_queue_approval()]] - degree 4, connects to 3 communities

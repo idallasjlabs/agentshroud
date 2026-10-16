@@ -1,13 +1,13 @@
 ---
 type: community
-cohesion: 0.17
-members: 16
+cohesion: 0.14
+members: 18
 ---
 
 # _build_image_targets
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 16 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 18 nodes
 
 ## Members
 - [[dot-_no_docker()]] - code - gateway/tests/test_daily_cve_report.py
@@ -21,11 +21,13 @@ members: 16
 - [[Build the list of container image targets for Trivy image scanning.      Prefers]] - rationale - gateway/security/daily_cve_report.py
 - [[Deployments that rename the gateway container (dev runs         agentshroud-marv]] - rationale - gateway/tests/test_daily_cve_report.py
 - [[Empty AGENTSHROUD_TRIVY_IMAGES adds no extra entries beyond         gateway + th]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[Path_45]] - code - gateway/security/trivy_report.py
+- [[Path_41]] - code - gateway/security/trivy_report.py
 - [[Pin _running_image to the docker-unavailable fallback path so these         test]] - rationale - gateway/tests/test_daily_cve_report.py
 - [[Regression guard AGENTSHROUD_TRIVY_IMAGES used to be the ONLY         source of]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[Resolve the image tag a container is ACTUALLY running, via docker CLI.      The]] - rationale - gateway/security/daily_cve_report.py
 - [[TestBuildImageTargets]] - code - gateway/tests/test_daily_cve_report.py
 - [[_build_image_targets()]] - code - gateway/security/daily_cve_report.py
+- [[_running_image()]] - code - gateway/security/daily_cve_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,10 +37,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_test_daily_cve_report.py]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_2]]
+- 4 edges to [[_COMMUNITY_test_daily_cve_report.py]]
+- 3 edges to [[_COMMUNITY_test_daily_cve_report.py_1]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
 
 ## Top bridge nodes
-- [[_build_image_targets()]] - degree 13, connects to 2 communities
+- [[_build_image_targets()]] - degree 13, connects to 3 communities
+- [[_running_image()]] - degree 4, connects to 2 communities
 - [[TestBuildImageTargets]] - degree 9, connects to 1 community
-- [[Path_45]] - degree 2, connects to 1 community
+- [[Path_41]] - degree 2, connects to 1 community

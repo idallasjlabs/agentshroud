@@ -1,33 +1,23 @@
 ---
 type: community
 cohesion: 0.02
-members: 204
+members: 141
 ---
 
 # ResourceGuard
 
 **Cohesion:** 0.02 - loosely connected
-**Members:** 204 nodes
+**Members:** 141 nodes
 
 ## Members
 - [[dot-__del__()]] - code - gateway/security/resource_guard.py
-- [[dot-__init__()_41]] - code - gateway/security/git_guard.py
-- [[dot-__init__()_42]] - code - gateway/security/resource_guard.py
+- [[dot-__init__()_74]] - code - gateway/security/resource_guard.py
 - [[dot-_alert_high_usage()]] - code - gateway/security/resource_guard.py
-- [[dot-_analyze_file_content()]] - code - gateway/security/git_guard.py
-- [[dot-_analyze_script_content()]] - code - gateway/security/git_guard.py
-- [[dot-_analyze_script_file()]] - code - gateway/security/git_guard.py
 - [[dot-_build_bridge()]] - code - gateway/tests/test_resource_guard_wiring.py
 - [[dot-_check_system_resources()]] - code - gateway/security/resource_guard.py
 - [[dot-_cleanup_expired_usage()]] - code - gateway/security/resource_guard.py
 - [[dot-_get_disk_io_stats()]] - code - gateway/security/resource_guard.py
-- [[dot-_make_hook()]] - code - gateway/tests/test_git_guard.py
 - [[dot-_monitor_resources()]] - code - gateway/security/resource_guard.py
-- [[dot-_quarantine_suspicious_files()]] - code - gateway/security/git_guard.py
-- [[dot-_scan_git_hooks()]] - code - gateway/security/git_guard.py
-- [[dot-_scan_package_json()]] - code - gateway/security/git_guard.py
-- [[dot-_scan_pyproject_toml()]] - code - gateway/security/git_guard.py
-- [[dot-_scan_setup_py()]] - code - gateway/security/git_guard.py
 - [[dot-_start_monitoring_task()]] - code - gateway/security/resource_guard.py
 - [[dot-add_alert_callback()]] - code - gateway/security/resource_guard.py
 - [[dot-check_cpu_limit()]] - code - gateway/security/resource_guard.py
@@ -36,18 +26,13 @@ members: 204
 - [[dot-check_resource()]] - code - gateway/security/resource_guard.py
 - [[dot-check_vram_headroom()]] - code - gateway/security/resource_guard.py
 - [[dot-cleanup_temp_files()]] - code - gateway/security/resource_guard.py
-- [[dot-export_findings_report()]] - code - gateway/security/git_guard.py
-- [[dot-get_findings_summary()]] - code - gateway/security/git_guard.py
 - [[dot-get_usage_stats()]] - code - gateway/security/resource_guard.py
-- [[dot-monitor_git_operations()]] - code - gateway/security/git_guard.py
 - [[dot-register_temp_file()]] - code - gateway/security/resource_guard.py
-- [[dot-scan_content()]] - code - gateway/security/git_guard.py
-- [[dot-scan_git_repository()]] - code - gateway/security/git_guard.py
-- [[dot-setup_method()_6]] - code - gateway/tests/test_resource_guard.py
+- [[dot-setup_method()_12]] - code - gateway/tests/test_resource_guard.py
 - [[dot-start_request_tracking()]] - code - gateway/security/resource_guard.py
-- [[dot-stop()_2]] - code - gateway/security/resource_guard.py
+- [[dot-stop()_6]] - code - gateway/security/resource_guard.py
 - [[dot-stop_monitoring()]] - code - gateway/security/resource_guard.py
-- [[dot-teardown_method()_2]] - code - gateway/tests/test_resource_guard.py
+- [[dot-teardown_method()_4]] - code - gateway/tests/test_resource_guard.py
 - [[dot-test_bridge_registered_via_add_alert_callback_fires_through()]] - code - gateway/tests/test_resource_guard_wiring.py
 - [[dot-test_brief_spike_below_debounce_does_not_alert()]] - code - gateway/tests/test_resource_guard.py
 - [[dot-test_check_cpu_limit_returns_false_on_exception()]] - code - gateway/tests/test_round2_hardening.py
@@ -56,75 +41,52 @@ members: 204
 - [[dot-test_check_resource_over_limit_blocked()]] - code - gateway/tests/test_resource_guard.py
 - [[dot-test_check_resource_temp_files_limit()]] - code - gateway/tests/test_resource_guard.py
 - [[dot-test_check_resource_under_limit_passes()]] - code - gateway/tests/test_resource_guard.py
-- [[dot-test_clean_hook_passes()]] - code - gateway/tests/test_git_guard.py
-- [[dot-test_clean_repo_no_findings()]] - code - gateway/tests/test_git_guard.py
 - [[dot-test_cleanup_keeps_fresh_agents()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_cleanup_removes_stale_agents()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_cleanup_tolerates_missing_file()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_cleanup_unlinks_existing_and_clears_registry()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_cpu_limit_check()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_cpu_limit_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_cpu_limit_fails_closed_on_psutil_error()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_cpu_limit_ok_when_under()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[dot-test_curl_in_hook_flagged()]] - code - gateway/tests/test_git_guard.py
-- [[dot-test_default_mode_is_enforce()_1]] - code - gateway/tests/test_round2_hardening.py
-- [[dot-test_default_mode_is_enforce()_2]] - code - gateway/tests/test_round2_hardening.py
 - [[dot-test_disabled_when_threshold_zero()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[dot-test_disk_write_limit()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_disk_write_limit_allows_when_no_baseline()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_disk_write_limit_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_disk_write_limit_under_threshold()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[dot-test_finding_has_file_path()]] - code - gateway/tests/test_git_guard.py
-- [[dot-test_from_environment_defaults_to_enforce()]] - code - gateway/tests/test_round2_hardening.py
 - [[dot-test_get_resource_guard_is_lazy_singleton()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_get_usage_stats_for_agent()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_get_usage_stats_system_wide()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[dot-test_git_guard_detects_credential_patterns()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_git_guard_no_path_leak()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_git_guard_scan_repo()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_invalid_resource_type()]] - code - gateway/tests/test_resource_guard.py
-- [[dot-test_keyvault_instantiated_and_seeded_in_lifespan()]] - code - gateway/tests/test_round2_hardening.py
-- [[dot-test_llm_stats_endpoint_is_defined()]] - code - gateway/tests/test_round2_hardening.py
+- [[dot-test_memory_limit_check()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_memory_limit_fails_closed_on_error()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_memory_limit_ok_and_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_missing_timestamp_falls_back_to_zero()]] - code - gateway/tests/test_resource_guard_wiring.py
 - [[dot-test_multiple_agents_isolated()]] - code - gateway/tests/test_resource_guard.py
-- [[dot-test_natural_language_question_is_allowed()]] - code - gateway/tests/test_round2_hardening.py
-- [[dot-test_nc_flagged()]] - code - gateway/tests/test_git_guard.py
-- [[dot-test_no_git_dir_returns_empty()]] - code - gateway/tests/test_git_guard.py
-- [[dot-test_no_hardcoded_owner_id_in_lifespan()]] - code - gateway/tests/test_round2_hardening.py
 - [[dot-test_non_spike_alert_dispatched_with_medium_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
 - [[dot-test_passes_with_sufficient_headroom()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[dot-test_pipeline_scans_outbound_for_key_leaks()]] - code - gateway/tests/test_round2_hardening.py
 - [[dot-test_register_blocks_over_limit()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_register_under_limit()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_rejects_insufficient_headroom()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_request_count_limiting()]] - code - gateway/tests/test_resource_guard.py
 - [[dot-test_resource_guard_config()]] - code - gateway/tests/test_resource_guard.py
-- [[dot-test_reverse_shell_flagged()]] - code - gateway/tests/test_git_guard.py
-- [[dot-test_sanitize_reason_preserves_simple_text()]] - code - gateway/tests/test_round2_hardening.py
-- [[dot-test_sanitize_reason_strips_file_paths()]] - code - gateway/tests/test_round2_hardening.py
-- [[dot-test_sanitize_reason_strips_module_paths()]] - code - gateway/tests/test_round2_hardening.py
-- [[dot-test_scan_repository_default_enforce()]] - code - gateway/tests/test_round2_hardening.py
+- [[dot-test_resource_guard_init()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_session_rate_limit()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_setup_resource_guard_returns_real_guard_with_default_limits()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[dot-test_setup_with_custom_limits_overrides_defaults()]] - code - gateway/tests/test_resource_guard_wiring.py
 - [[dot-test_spike_alert_dispatched_with_high_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
 - [[dot-test_start_request_tracking_records_baseline()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_start_request_tracking_survives_psutil_error()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_stop_cancels_monitor_task()]] - code - gateway/tests/test_resource_guard.py
 - [[dot-test_stop_cancels_monitor_task_and_idempotent()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[dot-test_subagent_monitor_loaded()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_system_resource_monitoring_alerts_after_debounce()]] - code - gateway/tests/test_resource_guard.py
-- [[dot-test_unparseable_text_is_allowed()]] - code - gateway/tests/test_round2_hardening.py
-- [[dot-test_v1_endpoint_handles_non_json_upstream_bodies()]] - code - gateway/tests/test_round2_hardening.py
-- [[dot-test_v1_endpoint_is_defined()]] - code - gateway/tests/test_round2_hardening.py
-- [[dot-test_wget_flagged()]] - code - gateway/tests/test_git_guard.py
+- [[dot-test_usage_stats()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_window_expiry_resets_usage()]] - code - gateway/tests/test_resource_guard.py
-- [[A security finding in git hooks or install scripts.]] - rationale - gateway/security/git_guard.py
 - [[A single over-threshold sample followed by an under-threshold sample is suppress]] - rationale - gateway/tests/test_resource_guard.py
 - [[Add a callback function to be called when resource alerts are triggered.]] - rationale - gateway/security/resource_guard.py
-- [[Analyze a script file for malicious patterns.]] - rationale - gateway/security/git_guard.py
-- [[Analyze file content for malicious patterns.]] - rationale - gateway/security/git_guard.py
-- [[Analyze script content string for malicious patterns.]] - rationale - gateway/security/git_guard.py
-- [[Any_14]] - code - gateway/security/git_guard.py
-- [[Any_15]] - code - gateway/security/resource_guard.py
-- [[Any_16]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[Args             mode 'monitor' (log findings) or 'enforce' (quarantine suspic]] - rationale - gateway/security/git_guard.py
+- [[Any_18]] - code - gateway/security/resource_guard.py
+- [[Any_19]] - code - gateway/tests/test_resource_guard_wiring.py
 - [[Background task to monitor resource usage and trigger alerts.]] - rationale - gateway/security/resource_guard.py
 - [[Best-effort cleanup for test contexts that don't call stop().]] - rationale - gateway/security/resource_guard.py
 - [[Check if agent has exceeded CPU time limit.]] - rationale - gateway/security/resource_guard.py
@@ -134,36 +96,22 @@ members: 204
 - [[Check system-wide resource usage for anomalies (synchronous).]] - rationale - gateway/security/resource_guard.py
 - [[Clean up old usage data (older than 5 minutes).]] - rationale - gateway/security/resource_guard.py
 - [[Clean up temporary files for an agent.]] - rationale - gateway/security/resource_guard.py
-- [[Convenience function to scan a repository.]] - rationale - gateway/security/git_guard.py
+- [[Configuration for resource limits.]] - rationale - gateway/security/resource_guard.py
 - [[Current resource usage metrics.]] - rationale - gateway/security/resource_guard.py
 - [[End-to-end register the bridge on a real ResourceGuard, trigger         its ale]] - rationale - gateway/tests/test_resource_guard_wiring.py
-- [[Export findings to a detailed report.]] - rationale - gateway/security/git_guard.py
-- [[Get a summary of all findings.]] - rationale - gateway/security/git_guard.py
 - [[Get current disk IO statistics.]] - rationale - gateway/security/resource_guard.py
 - [[Get current usage statistics.]] - rationale - gateway/security/resource_guard.py
 - [[Get the global resource guard instance, creating it lazily on first call.]] - rationale - gateway/security/resource_guard.py
-- [[Git guard errors shouldn't expose full file paths.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Git guard should catch credential patterns.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[GitGuard]] - code - gateway/security/git_guard.py
-- [[Monitor and analyze git hooks and package installation scripts.]] - rationale - gateway/security/git_guard.py
 - [[Monitor and limit resource usage per agentrequest.]] - rationale - gateway/security/resource_guard.py
-- [[Monitor for git clone and npm install operations.]] - rationale - gateway/security/git_guard.py
-- [[Move suspicious files to quarantine directory.]] - rationale - gateway/security/git_guard.py
-- [[Path_8]] - code - gateway/security/git_guard.py
 - [[Pre-flight VRAM headroom check before dispatching a long-context local-model cal]] - rationale - gateway/security/resource_guard.py
-- [[Proxy endpoint must not crash if upstream returns non-JSON body.]] - rationale - gateway/tests/test_round2_hardening.py
 - [[Raised when a local-model call is rejected because estimated VRAM usage     woul]] - rationale - gateway/security/resource_guard.py
 - [[Recreate the lifespan bridge closure verbatim from gatewayingest_apilifespan.p]] - rationale - gateway/tests/test_resource_guard_wiring.py
 - [[Register a temporary file for tracking.]] - rationale - gateway/security/resource_guard.py
 - [[ResourceGuard]] - code - gateway/security/resource_guard.py
+- [[ResourceGuard is instantiated at startup and reachable on app_state.]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[ResourceLimits]] - code - gateway/security/resource_guard.py
 - [[ResourceUsage]] - code - gateway/security/resource_guard.py
-- [[Scan a git repository for malicious hooks and scripts.          Args]] - rationale - gateway/security/git_guard.py
-- [[Scan arbitrary text content for malicious gitsupply-chain patterns.          Th]] - rationale - gateway/security/git_guard.py
-- [[Scan git hooks directory for malicious content.]] - rationale - gateway/security/git_guard.py
-- [[Scan package.json for suspicious install scripts.]] - rationale - gateway/security/git_guard.py
-- [[Scan pyproject.toml for suspicious build scripts.]] - rationale - gateway/security/git_guard.py
-- [[Scan setup.py for suspicious installation scripts.]] - rationale - gateway/security/git_guard.py
-- [[SecurityFinding]] - code - gateway/security/git_guard.py
+- [[Setup resource guard with custom limits.]] - rationale - gateway/security/resource_guard.py
 - [[Start background monitoring task.]] - rationale - gateway/security/resource_guard.py
 - [[Start tracking resources for a specific agentrequest.]] - rationale - gateway/security/resource_guard.py
 - [[Stop background monitoring task cleanly.]] - rationale - gateway/security/resource_guard.py
@@ -172,48 +120,37 @@ members: 204
 - [[Test ResourceGuardConfig dataclass.]] - rationale - gateway/tests/test_resource_guard.py
 - [[Test handling of invalid resource types.]] - rationale - gateway/tests/test_resource_guard.py
 - [[Test request count per minute limiting.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test resource limits and DoS prevention.]] - rationale - gateway/tests/test_security_audit.py
 - [[Test temp file count limiting.]] - rationale - gateway/tests/test_resource_guard.py
 - [[Test that different agents have isolated resource tracking.]] - rationale - gateway/tests/test_resource_guard.py
 - [[Test that resource usage over limits is blocked.]] - rationale - gateway/tests/test_resource_guard.py
 - [[Test that resource usage resets after time window.]] - rationale - gateway/tests/test_resource_guard.py
 - [[Test that resource usage under limits passes.]] - rationale - gateway/tests/test_resource_guard.py
 - [[TestCpuMemoryDiskLimits]] - code - gateway/tests/test_resource_guard_limits.py
-- [[TestDRYOwnerChatID]] - code - gateway/tests/test_round2_hardening.py
-- [[TestEgressConfigDefaultEnforce]] - code - gateway/tests/test_round2_hardening.py
-- [[TestEnvGuardFailOpen]] - code - gateway/tests/test_round2_hardening.py
 - [[TestExpiredUsageCleanup]] - code - gateway/tests/test_resource_guard_limits.py
-- [[TestFileSandboxDefaultEnforce]] - code - gateway/tests/test_round2_hardening.py
-- [[TestGitGuard]] - code - gateway/tests/test_git_guard.py
-- [[TestGitGuardDefaultEnforce]] - code - gateway/tests/test_round2_hardening.py
 - [[TestGlobalAccessor]] - code - gateway/tests/test_resource_guard_limits.py
-- [[TestKeyVaultWired]] - code - gateway/tests/test_round2_hardening.py
-- [[TestLLMProxyEndpoints]] - code - gateway/tests/test_round2_hardening.py
-- [[TestNotifyUserBlockedSanitization]] - code - gateway/tests/test_round2_hardening.py
 - [[TestResourceGuard]] - code - gateway/tests/test_resource_guard.py
 - [[TestResourceGuardAlertBridge]] - code - gateway/tests/test_resource_guard_wiring.py
 - [[TestResourceGuardFailClosed]] - code - gateway/tests/test_round2_hardening.py
 - [[TestResourceGuardLifecycle]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[TestResourceGuardWiring]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[TestResourceProtection]] - code - gateway/tests/test_security_audit.py
 - [[TestTempFiles]] - code - gateway/tests/test_resource_guard_limits.py
 - [[TestUsageStatsAndTracking]] - code - gateway/tests/test_resource_guard_limits.py
 - [[TestVramHeadroom]] - code - gateway/tests/test_resource_guard_limits.py
-- [[Tests for Round 2 hardening — 9 fixes.]] - rationale - gateway/tests/test_round2_hardening.py
-- [[The llm-proxystats endpoint must exist.]] - rationale - gateway/tests/test_round2_hardening.py
-- [[The v1{path} endpoint must exist (enabled in v0.9.0).]] - rationale - gateway/tests/test_round2_hardening.py
 - [[The lifespan bridges ResourceGuard's native callback payload to AlertDispatcher.]] - rationale - gateway/tests/test_resource_guard_wiring.py
 - [[The lifespan must stop the background monitor task on shutdown.]] - rationale - gateway/tests/test_resource_guard_wiring.py
 - [[Trigger a resource usage alert synchronously.]] - rationale - gateway/security/resource_guard.py
 - [[VRAMHeadroomError]] - code - gateway/security/resource_guard.py
 - [[Verify resource check methods return False (deny) on exception.]] - rationale - gateway/tests/test_round2_hardening.py
 - [[get_resource_guard()]] - code - gateway/security/resource_guard.py
-- [[git_guard.py]] - code - gateway/security/git_guard.py
 - [[guard()_1]] - code - gateway/tests/test_resource_guard_limits.py
 - [[resource_guard.py]] - code - gateway/security/resource_guard.py
-- [[scan_repository()]] - code - gateway/security/git_guard.py
+- [[setup_resource_guard()]] - code - gateway/security/resource_guard.py
 - [[stop() should cancel background monitor cleanly.]] - rationale - gateway/tests/test_resource_guard.py
-- [[test_git_guard.py]] - code - gateway/tests/test_git_guard.py
 - [[test_resource_guard.py]] - code - gateway/tests/test_resource_guard.py
 - [[test_resource_guard_limits.py]] - code - gateway/tests/test_resource_guard_limits.py
-- [[test_round2_hardening.py]] - code - gateway/tests/test_round2_hardening.py
+- [[test_resource_guard_wiring.py]] - code - gateway/tests/test_resource_guard_wiring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -223,19 +160,32 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 85 edges to [[_COMMUNITY_AlertDispatcher]]
-- 32 edges to [[_COMMUNITY_MiddlewareManager]]
-- 10 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 10 edges to [[_COMMUNITY_TelegramAPIProxy_2]]
-- 7 edges to [[_COMMUNITY_AgentRegistry]]
-- 2 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 1 edge to [[_COMMUNITY_SubagentMonitor]]
-- 1 edge to [[_COMMUNITY_test_security_toolchain.py_1]]
-- 1 edge to [[_COMMUNITY_ConsentFramework]]
+- 45 edges to [[_COMMUNITY_AlertDispatcher]]
+- 10 edges to [[_COMMUNITY_MiddlewareManager]]
+- 5 edges to [[_COMMUNITY_AlertDispatcher_1]]
+- 3 edges to [[_COMMUNITY_ResourceGuard_1]]
+- 3 edges to [[_COMMUNITY_KillSwitchMonitor_1]]
+- 3 edges to [[_COMMUNITY_TrustConfig_1]]
+- 2 edges to [[_COMMUNITY_PIIConfig]]
+- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 2 edges to [[_COMMUNITY_AgentTarget_2]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig_6]]
+- 2 edges to [[_COMMUNITY_ConsentFramework_1]]
+- 2 edges to [[_COMMUNITY_ContextSegment]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager_1]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy_2]]
+- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL_3]]
+- 1 edge to [[_COMMUNITY_TrustConfig]]
+- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig_1]]
+- 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py_1]]
+- 1 edge to [[_COMMUNITY_validate_network_security]]
 
 ## Top bridge nodes
-- [[resource_guard.py]] - degree 10, connects to 5 communities
-- [[ResourceGuard]] - degree 85, connects to 3 communities
-- [[test_round2_hardening.py]] - degree 17, connects to 3 communities
-- [[TestResourceGuardFailClosed]] - degree 11, connects to 3 communities
-- [[TestLLMProxyEndpoints]] - degree 10, connects to 3 communities
+- [[TestResourceProtection]] - degree 43, connects to 16 communities
+- [[ResourceGuard]] - degree 85, connects to 6 communities
+- [[ResourceLimits]] - degree 41, connects to 4 communities
+- [[TestResourceGuardFailClosed]] - degree 11, connects to 4 communities
+- [[resource_guard.py]] - degree 10, connects to 3 communities

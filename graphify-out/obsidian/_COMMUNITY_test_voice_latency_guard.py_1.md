@@ -14,7 +14,7 @@ members: 9
 - [[A stream that goes straight to 'done' with no sentence events (e.g.     everythi]] - rationale - gateway/tests/test_voice_gateway.py
 - [[SSE keepalive comments (' ...') and blank lines are ignored, not     treated as]] - rationale - gateway/tests/test_voice_gateway.py
 - [[_call_agent_stream POSTs to forwardstream and yields each sentence     event a]] - rationale - gateway/tests/test_voice_gateway.py
-- [[_sse_body()_1]] - code - gateway/tests/test_voice_gateway.py
+- [[_sse_body()]] - code - gateway/tests/test_voice_gateway.py
 - [[test_call_agent_stream_empty_stream_yields_nothing()]] - code - gateway/tests/test_voice_gateway.py
 - [[test_call_agent_stream_malformed_json_line_skipped_not_fatal()]] - code - gateway/tests/test_voice_gateway.py
 - [[test_call_agent_stream_skips_blank_and_comment_lines()]] - code - gateway/tests/test_voice_gateway.py
@@ -36,4 +36,4 @@ SORT file.name ASC
 - [[test_call_agent_stream_malformed_json_line_skipped_not_fatal()]] - degree 4, connects to 2 communities
 - [[test_call_agent_stream_skips_blank_and_comment_lines()]] - degree 4, connects to 2 communities
 - [[test_call_agent_stream_yields_sentences_in_order()]] - degree 4, connects to 2 communities
-- [[_sse_body()_1]] - degree 5, connects to 1 community
+- [[_sse_body()]] - degree 5, connects to 1 community

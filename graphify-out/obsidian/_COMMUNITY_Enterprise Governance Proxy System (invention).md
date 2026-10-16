@@ -17,7 +17,7 @@ members: 16
 - [[Decision_4]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
 - [[Delegated Authority Model (time-bounded privilege delegation)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
 - [[Enterprise Governance Proxy System (invention)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Human-in-the-Loop Approval Queue_1]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Human-in-the-Loop Approval Queue]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
 - [[Isaiah's Persona Package (IDENTITY.mdSOUL.mdUSER.md)]] - concept - docs/architecture/PHASE3_REQUIREMENTS.md
 - [[Owner vs Bot Telegram Identity Separation]] - concept - docs/architecture/IDENTITY.md
 - [[PII Detection and Redaction Engine]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
@@ -35,7 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Slack Channel Setup]]
+- 1 edge to [[_COMMUNITY_Slack Channel Setup_1]]
 
 ## Top bridge nodes
 - [[Enterprise Governance Proxy System (invention)]] - degree 8, connects to 1 community

@@ -1,17 +1,19 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.50
+members: 4
 ---
 
 # TelegramAPIProxy
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[dot-test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Healthcheck sandbox messages without SKILL.md marker should not trigger rewrite.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_approval_action_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_system_prompt_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Collaborator attempts to approvedeny requests should be blocked.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[System promptinstruction leakage probes should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +23,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
+- 10 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
+- 2 edges to [[_COMMUNITY__wrap_response]]
 
 ## Top bridge nodes
-- [[dot-test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten()]] - degree 4, connects to 1 community
+- [[dot-test_collaborator_approval_action_request_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
+- [[dot-test_collaborator_system_prompt_probe_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities

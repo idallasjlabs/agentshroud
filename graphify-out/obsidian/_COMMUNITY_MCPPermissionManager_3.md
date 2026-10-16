@@ -1,41 +1,51 @@
 ---
 type: community
-cohesion: 0.11
-members: 26
+cohesion: 0.16
+members: 36
 ---
 
 # MCPPermissionManager
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 26 nodes
+**Cohesion:** 0.16 - loosely connected
+**Members:** 36 nodes
 
 ## Members
-- [[dot-__post_init__()_3]] - code - gateway/proxy/mcp_proxy.py
-- [[dot-test_admin_private_data_not_redacted_for_owner()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_admin_private_data_redacted_for_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_clean_result_passes()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_clean_result_passes_through()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_credit_card_detected()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_credit_card_redacted()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_email_detected_but_low_threat()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_error_result_logged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_gateway_contributor_paths_redacted_for_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_memory_markers_redacted_for_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_pii_in_tool_result_redacted()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_pii_redacted_in_result()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_private_redaction_emits_privacy_event()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_result_audit_logged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_result_processing_time()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_ssn_detected_in_params()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_ssn_redacted_in_params()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_tool_call_generates_id_and_timestamp()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-test_tool_result_timestamp_default()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[MCPToolCall]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[MCPToolResult]] - code - gateway/proxy/mcp_proxy.py
-- [[Represents an MCP tool result.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[TestDataclasses]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[TestPIIDetection_2]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestProxyResultProcessing]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-get()_2]] - code - cli/src/main.rs
+- [[dot-new()]] - code - cli/src/main.rs
+- [[dot-new()_1]] - code - cli/src/main.rs
+- [[dot-ok()_1]] - code - cli/src/main.rs
+- [[dot-post()_1]] - code - cli/src/main.rs
+- [[dot-with()]] - code - cli/src/main.rs
+- [[GatewayClient]] - code - cli/src/main.rs
+- [[Result]] - code - cli/src/main.rs
+- [[SclClient_1]] - code - cli/src/main.rs
+- [[Self]] - code - cli/src/main.rs
+- [[_T]] - code
+- [[approvals_list_empty()]] - code - cli/src/main.rs
+- [[approvals_list_errors_on_401()]] - code - cli/src/main.rs
+- [[approvals_list_formats_rows()]] - code - cli/src/main.rs
+- [[approve_sends_correct_body_and_path()]] - code - cli/src/main.rs
+- [[cves_counts_array_when_no_total()]] - code - cli/src/main.rs
+- [[cves_formats_summary()]] - code - cli/src/main.rs
+- [[cves_reads_nested_summary()]] - code - cli/src/main.rs
+- [[cves_reads_summary_total_fallback()]] - code - cli/src/main.rs
+- [[cves_reports_unknown_bot_error()]] - code - cli/src/main.rs
+- [[cves_with_bot_id_appends_query()]] - code - cli/src/main.rs
+- [[decide_errors_on_404()]] - code - cli/src/main.rs
+- [[decide_errors_on_409_conflict()]] - code - cli/src/main.rs
+- [[deny_sends_false_and_formats()]] - code - cli/src/main.rs
+- [[deploy_status_errors_when_version_unauthorized()]] - code - cli/src/main.rs
+- [[deploy_status_reads_version_endpoint()]] - code - cli/src/main.rs
+- [[main()_19]] - code - cli/src/main.rs
+- [[run_approvals_decide()]] - code - cli/src/main.rs
+- [[run_approvals_list()]] - code - cli/src/main.rs
+- [[run_cves()]] - code - cli/src/main.rs
+- [[run_deploy_status()]] - code - cli/src/main.rs
+- [[run_status()]] - code - cli/src/main.rs
+- [[status_errors_on_401()]] - code - cli/src/main.rs
+- [[status_errors_when_gateway_down()]] - code - cli/src/main.rs
+- [[status_hits_correct_path()]] - code - cli/src/main.rs
+- [[status_parses_and_formats()]] - code - cli/src/main.rs
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,23 +55,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 32 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 25 edges to [[_COMMUNITY_StdioConnection]]
-- 18 edges to [[_COMMUNITY_MCPPermissionManager_1]]
-- 9 edges to [[_COMMUNITY_PermissionLevel]]
-- 6 edges to [[_COMMUNITY_MCPAuditTrail]]
-- 6 edges to [[_COMMUNITY_MCPInspector]]
-- 6 edges to [[_COMMUNITY_MCPPolicyEngine]]
-- 5 edges to [[_COMMUNITY_MCPPermissionManager_2]]
-- 3 edges to [[_COMMUNITY_MCPPermissionManager_4]]
-- 2 edges to [[_COMMUNITY_dot-process_tool_call]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager_5]]
-- 1 edge to [[_COMMUNITY_TestAuditTrail]]
-- 1 edge to [[_COMMUNITY_MCPToolResult]]
+- 48 edges to [[_COMMUNITY_main.rs]]
+- 18 edges to [[_COMMUNITY_test_soc_realtime_coverage.py_1]]
+- 3 edges to [[_COMMUNITY_discover_upstream_versions.py]]
+- 1 edge to [[_COMMUNITY_TestPathIsolationManager_4]]
 
 ## Top bridge nodes
-- [[MCPToolResult]] - degree 77, connects to 13 communities
-- [[TestDataclasses]] - degree 17, connects to 7 communities
-- [[MCPToolCall]] - degree 16, connects to 7 communities
-- [[TestProxyResultProcessing]] - degree 23, connects to 6 communities
-- [[TestPIIDetection_2]] - degree 21, connects to 6 communities
+- [[Result]] - degree 14, connects to 3 communities
+- [[run_cves()]] - degree 15, connects to 2 communities
+- [[main()_19]] - degree 14, connects to 2 communities
+- [[dot-get()_2]] - degree 13, connects to 2 communities
+- [[GatewayClient]] - degree 10, connects to 2 communities

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[BaseModel_1]] - code
+- [[get_1]] - code
 
 ## Live Query (requires Dataview plugin)
 

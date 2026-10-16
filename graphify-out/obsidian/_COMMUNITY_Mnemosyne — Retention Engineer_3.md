@@ -11,9 +11,9 @@ members: 5
 
 ## Members
 - [[Mnemosyne — Retention Engineer_1]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
-- [[Purpose_54]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
-- [[Related Skills_40]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
-- [[Usage_44]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
+- [[Purpose_43]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
+- [[Related Skills_32]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
+- [[Usage_35]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
 - [[openclawskillsi-mnemosyneREADME]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
 
 ## Live Query (requires Dataview plugin)

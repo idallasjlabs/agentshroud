@@ -1,37 +1,42 @@
 ---
 type: community
-cohesion: 0.09
-members: 22
+cohesion: 0.07
+members: 27
 ---
 
 # First Time Setup
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 22 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 27 nodes
 
 ## Members
+- [[Bot Container Startup Failures]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[Bot Exits Before Gateway Is Healthy]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
 - [[First Time Setup_1]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Prerequisites_6]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Prerequisites_7]] - document - docs/setup-telegram.md
-- [[Related Notes_45]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[First Time Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Gateway Container Startup Failures]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[Gateway Health Check Never Passes]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[OpenClaw Not Starting]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[Prerequisites_13]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Related Notes_63]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[Related Notes_64]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Restart Procedure_2]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Startup Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[Startup Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
 - [[Step 1 Create Secret Files]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 1 Create a Bot]] - document - docs/setup-telegram.md
-- [[Step 2 Write the Token to Secrets]] - document - docs/setup-telegram.md
 - [[Step 3 Configure 1Password Items]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 3 Find Your Telegram User ID]] - document - docs/setup-telegram.md
 - [[Step 4 Build Container Images]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 5 Configure agentshroud.yaml]] - document - docs/setup-telegram.md
 - [[Step 5 Start Containers]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 6 Rebuild and Start]] - document - docs/setup-telegram.md
 - [[Step 6 Verify Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
 - [[Step 7 Configure iOS Shortcuts (Optional)]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 7 Verify]] - document - docs/setup-telegram.md
-- [[Step 8 Configure Environment]] - document - docs/setup-slack.md
 - [[Step 8 Verify Security Posture]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Telegram Channel Setup]] - document - docs/setup-telegram.md
-- [[Troubleshooting_25]] - document - docs/setup-telegram.md
 - [[Troubleshooting First Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[setup-telegram]] - document - docs/setup-telegram.md
+- [[`Could not load Claude OAuth token after retries`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[`FileNotFoundError No agentshroud.yaml found`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[`No auth_token found in secret file`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[`ValueError Invalid YAML structure`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[`startup Warning Gateway password file not found`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[spaCy Model Not Loading]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,10 +46,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Slack Channel Setup]]
-- 1 edge to [[_COMMUNITY_Restart Procedure]]
+- 3 edges to [[_COMMUNITY_Restart Procedure]]
+- 1 edge to [[_COMMUNITY_02-infrastructure_1]]
+- 1 edge to [[_COMMUNITY_Slack Channel Setup]]
 
 ## Top bridge nodes
+- [[Restart Procedure_2]] - degree 3, connects to 2 communities
 - [[First Time Setup_1]] - degree 12, connects to 1 community
-- [[Telegram Channel Setup]] - degree 11, connects to 1 community
-- [[Step 8 Configure Environment]] - degree 2, connects to 1 community
+- [[Startup Errors]] - degree 4, connects to 1 community

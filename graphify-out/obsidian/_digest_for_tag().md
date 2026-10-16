@@ -12,7 +12,7 @@ tags:
 # _digest_for_tag()
 
 ## Connections
-- [[Any_58]] - `references` [EXTRACTED]
+- [[Any_54]] - `references` [EXTRACTED]
 - [[discover()]] - `calls` [EXTRACTED]
 - [[discover_upstream_versions.py]] - `contains` [EXTRACTED]
 

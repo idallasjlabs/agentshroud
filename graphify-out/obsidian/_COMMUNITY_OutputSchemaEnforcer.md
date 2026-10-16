@@ -20,7 +20,7 @@ members: 32
 - [[dot-test_raw_file_path_stripped()]] - code - gateway/tests/test_output_schema.py
 - [[dot-test_raw_tool_payload_stripped()]] - code - gateway/tests/test_output_schema.py
 - [[dot-test_valid_output_passes()]] - code - gateway/tests/test_output_schema.py
-- [[dot-validate()_1]] - code - gateway/security/output_schema.py
+- [[dot-validate()]] - code - gateway/security/output_schema.py
 - [[A custom schema with a stricter max_length is applied correctly.]] - rationale - gateway/tests/test_output_schema.py
 - [[Absolute file paths should be flagged and redacted.]] - rationale - gateway/tests/test_output_schema.py
 - [[Base64 blobs  1 KB encoded (≈ 1370 chars) should be redacted.]] - rationale - gateway/tests/test_output_schema.py
@@ -39,7 +39,7 @@ members: 32
 - [[Unknown schema names fall back to 'default'.]] - rationale - gateway/tests/test_output_schema.py
 - [[Validate output against the named schema.          Args             output The]] - rationale - gateway/security/output_schema.py
 - [[Validates outbound responses against structural schemas.      Usage          e]] - rationale - gateway/security/output_schema.py
-- [[enforcer()_2]] - code - gateway/tests/test_output_schema.py
+- [[enforcer()]] - code - gateway/tests/test_output_schema.py
 - [[output_schema.py]] - code - gateway/security/output_schema.py
 - [[test_output_schema.py]] - code - gateway/tests/test_output_schema.py
 
@@ -51,7 +51,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AgentRegistry]]
+- 1 edge to [[_COMMUNITY_PIIConfig]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
 
 ## Top bridge nodes
-- [[OutputSchemaEnforcer]] - degree 14, connects to 1 community
+- [[OutputSchemaEnforcer]] - degree 14, connects to 2 communities

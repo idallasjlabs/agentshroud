@@ -1,17 +1,20 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.40
+members: 5
 ---
 
 # TestOutboundInfoFilter
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[dot-test_initialization_with_config()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test filter initializes with custom configuration.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[dot-test_invalid_json()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_missing_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_no_files()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_valid()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestGetSbom]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,8 +24,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AuditChain]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
+- 2 edges to [[_COMMUNITY__w]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_7]]
 
 ## Top bridge nodes
-- [[dot-test_initialization_with_config()]] - degree 3, connects to 2 communities
+- [[TestGetSbom]] - degree 5, connects to 1 community
+- [[dot-test_invalid_json()]] - degree 2, connects to 1 community
+- [[dot-test_valid()]] - degree 2, connects to 1 community

@@ -37,7 +37,7 @@ members: 46
 - [[Expected keys are present in docker.env after a switch.]] - rationale - gateway/tests/test_switch_model_idempotent.py
 - [[HERMES_MAIN_MODEL and OPENCLAW_MAIN_MODEL must reference the same model.]] - rationale - gateway/tests/test_switch_model_idempotent.py
 - [[Parse a docker.env file into a dict.]] - rationale - gateway/tests/test_switch_model_idempotent.py
-- [[Path_10]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[Path_14]] - code - gateway/tests/test_switch_model_idempotent.py
 - [[Returns (env_after_first_run, env_after_second_run).]] - rationale - gateway/tests/test_switch_model_idempotent.py
 - [[Run switch_model.sh with mocked external commands.]] - rationale - gateway/tests/test_switch_model_idempotent.py
 - [[TestSwitchModelBothBots]] - code - gateway/tests/test_switch_model_idempotent.py

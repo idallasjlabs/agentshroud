@@ -15,15 +15,15 @@ members: 15
 - [[3. Run]] - document - gateway/README.md
 - [[4. Test]] - document - gateway/README.md
 - [[Approval Queue_1]] - document - gateway/README.md
-- [[Authentication_3]] - document - gateway/README.md
+- [[Authentication_2]] - document - gateway/README.md
 - [[Data Ledger]] - document - gateway/README.md
-- [[Features_4]] - document - gateway/README.md
+- [[Features_2]] - document - gateway/README.md
 - [[Gateway Layer]] - document - gateway/README.md
-- [[Implementation Status_3]] - document - gateway/README.md
+- [[Implementation Status_1]] - document - gateway/README.md
 - [[Ingest API]] - document - gateway/README.md
 - [[PII Sanitizer]] - document - gateway/README.md
-- [[Setup_6]] - document - gateway/README.md
-- [[Structure_2]] - document - gateway/README.md
+- [[Setup_5]] - document - gateway/README.md
+- [[Structure_1]] - document - gateway/README.md
 - [[Tech Stack_1]] - document - gateway/README.md
 
 ## Live Query (requires Dataview plugin)
@@ -34,7 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_DataLedger]]
+- 1 edge to [[_COMMUNITY_create_auth_dependency]]
 
 ## Top bridge nodes
 - [[Gateway Layer]] - degree 6, connects to 1 community

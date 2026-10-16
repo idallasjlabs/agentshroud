@@ -1,23 +1,18 @@
 ---
 type: community
-cohesion: 0.06
-members: 49
+cohesion: 0.07
+members: 38
 ---
 
 # docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 49 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 38 nodes
 
 ## Members
 - [[CI DAST scan (Nuclei, workflow_dispatch, self-hosted)]] - code - .github/workflows/ci.yml
 - [[Compose secrets block (file fallbacks; asb extracts from credential backend at runtime)]] - code - docker/docker-compose.yml
 - [[Dev Hermes polled prod's Hermes Telegram bot token all night]] - concept - INCIDENT-2026-10-16-conduit-and-stability.md
-- [[Dev override secrets telegram_bot_token_marvin  hermes_telegram_bot_token_marvin]] - code - docker/docker-compose.agentshroud-bot.marvin.yml
-- [[Dev override gateway (agentshroud-dev-gateway, 9080, dev Hermes upstreams)]] - code - docker/docker-compose.agentshroud-bot.marvin.yml
-- [[Dev override openclaw (agentshroud-dev-openclaw, 18790, agentshroud_bot_marvin)]] - code - docker/docker-compose.agentshroud-bot.marvin.yml
-- [[Dev override voice-gateway on 127.0.0.18766]] - code - docker/docker-compose.agentshroud-bot.marvin.yml
-- [[Devprod coexistence on one host offset ports (908018790) and subnets (172.20-2224)]] - rationale - docker/docker-compose.agentshroud-bot.marvin.yml
 - [[Gateway hermes-dashboard reverse proxy 502 from hostTailscale]] - concept - INCIDENT-2026-10-16-conduit-and-stability.md
 - [[Hermes dashboard bridge port 9120 (dashboard_bridge.py re-exposes loopback-bound 9119)]] - concept - docker/docker-compose.yml
 - [[Image signing & provenance job (cosign keyless + syft SBOM attest)]] - code - .github/workflows/security-scan.yml
@@ -36,21 +31,15 @@ members: 49
 - [[Trivy filesystem scan job (SHA-pinned action)]] - code - .github/workflows/security-scan.yml
 - [[VT_AGENTS table (directhermesopenclaw)]] - code - firmware/voice-terminal/main/app_main.c
 - [[Voice Interface (STTTTS, wake word)]] - concept - docs/archive/FUTURE-FEATURES.md
-- [[_oc_config_set()]] - code - docker/scripts/init-openclaw-config.sh
-- [[_sha256()]] - code - docker/scripts/init-openclaw-config.sh
 - [[agentshroud-secrets.sh script]] - code - docker/bots/hermes/agentshroud-secrets.sh
 - [[dockerbotshermesagentshroud-secrets.sh (s6 cont-init secret injection)]] - code - docker/bots/hermes/agentshroud-secrets.sh
-- [[dockerscriptsinit-openclaw-config.sh (baked into OpenClaw image; seeds sandbox mode, runs doctor --fix)]] - code - docker/scripts/init-openclaw-config.sh
 - [[gateway service (security proxy, sole egress point, read-only rootfs, cap_drop ALL)]] - code - docker/docker-compose.yml
 - [[gateway-start.sh entrypoint]] - code - docker/scripts/gateway-start.sh
 - [[hermes service block (profiles hermesfull; DEAD CODE — Hermes deploys via run-standalone.sh)]] - code - docker/docker-compose.yml
 - [[hermes-dashboard-relay container (9119 Tailscale bypass of gateway)]] - concept - INCIDENT-2026-10-16-conduit-and-stability.md
-- [[init-openclaw-config.sh runs doctor --fix before version seed (schema v23-v24 trap)]] - concept - INCIDENT-2026-10-16-conduit-and-stability.md
-- [[init-openclaw-config.sh script]] - code - docker/scripts/init-openclaw-config.sh
 - [[inject()]] - code - docker/bots/hermes/agentshroud-secrets.sh
 - [[openclaw service (isolated network only, egress via gateway8181, DOCKER_HOST=socket-proxy)]] - code - docker/docker-compose.yml
 - [[pre-commit as single owner of .githookspre-commit]] - rationale - .pre-commit-config.yaml
-- [[pre-commit check-yaml hook (--unsafe)]] - code - .pre-commit-config.yaml
 - [[pre-commit detect-secrets hook (v1.5.0, .secrets.baseline)]] - code - .pre-commit-config.yaml
 - [[pre-commit git-secrets local hook (AWS credential patterns)]] - code - .pre-commit-config.yaml
 - [[pre-commit semgrep local hook (new findings only, system semgrep)]] - code - .pre-commit-config.yaml
@@ -69,24 +58,25 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_colima-health-check.sh]]
-- 3 edges to [[_COMMUNITY_run-standalone.sh (Hermes docker run launcher)]]
-- 2 edges to [[_COMMUNITY_start-agentshroud.sh]]
-- 2 edges to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
-- 2 edges to [[_COMMUNITY_AgentRegistry]]
+- 2 edges to [[_COMMUNITY_run-standalone.sh (Hermes docker run launcher)]]
 - 2 edges to [[_COMMUNITY_Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)]]
-- 1 edge to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)_1]]
-- 1 edge to [[_COMMUNITY_gatewayteststest_llm_proxy_thinking_suppression.py (8 cases)]]
-- 1 edge to [[_COMMUNITY_test_main_endpoints.py_1]]
+- 1 edge to [[_COMMUNITY_test_security_regressions_v1_2.py]]
+- 1 edge to [[_COMMUNITY_LLMProxy]]
+- 1 edge to [[_COMMUNITY_start-agentshroud.sh_1]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 1 edge to [[_COMMUNITY_sunday-upgrade-apply.sh]]
+- 1 edge to [[_COMMUNITY_SecureBrowser Skill_1]]
+- 1 edge to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
 - 1 edge to [[_COMMUNITY_discover_upstream_versions.py]]
 - 1 edge to [[_COMMUNITY_dashboard_bridge.py]]
-- 1 edge to [[_COMMUNITY_sunday-upgrade-apply.sh]]
+- 1 edge to [[_COMMUNITY_run-standalone.sh (Hermes docker run launcher)_1]]
 - 1 edge to [[_COMMUNITY_Commit list 2026-10-10 through 2026-10-16 on main]]
 - 1 edge to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
 - 1 edge to [[_COMMUNITY_Report Delivery Format Instructions_1]]
 
 ## Top bridge nodes
 - [[hermes service block (profiles hermesfull; DEAD CODE — Hermes deploys via run-standalone.sh)]] - degree 9, connects to 3 communities
-- [[Dev override gateway (agentshroud-dev-gateway, 9080, dev Hermes upstreams)]] - degree 7, connects to 3 communities
-- [[Hermes dashboard bridge port 9120 (dashboard_bridge.py re-exposes loopback-bound 9119)]] - degree 7, connects to 3 communities
-- [[gateway service (security proxy, sole egress point, read-only rootfs, cap_drop ALL)]] - degree 14, connects to 2 communities
+- [[Hermes dashboard bridge port 9120 (dashboard_bridge.py re-exposes loopback-bound 9119)]] - degree 6, connects to 3 communities
+- [[gateway service (security proxy, sole egress point, read-only rootfs, cap_drop ALL)]] - degree 13, connects to 2 communities
+- [[openclaw service (isolated network only, egress via gateway8181, DOCKER_HOST=socket-proxy)]] - degree 8, connects to 2 communities
 - [[The run is judged on state change, not steps completed]] - degree 6, connects to 2 communities

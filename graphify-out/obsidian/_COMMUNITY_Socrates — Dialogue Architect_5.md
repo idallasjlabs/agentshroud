@@ -10,10 +10,10 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_36]] - document - docker/config/hermes/skills/i-socrates/README.md
-- [[Related Skills_22]] - document - docker/config/hermes/skills/i-socrates/README.md
+- [[Purpose_25]] - document - docker/config/hermes/skills/i-socrates/README.md
+- [[Related Skills_14]] - document - docker/config/hermes/skills/i-socrates/README.md
 - [[Socrates — Dialogue Architect_1]] - document - docker/config/hermes/skills/i-socrates/README.md
-- [[Usage_26]] - document - docker/config/hermes/skills/i-socrates/README.md
+- [[Usage_17]] - document - docker/config/hermes/skills/i-socrates/README.md
 - [[hermesskillsi-socratesREADME]] - document - docker/config/hermes/skills/i-socrates/README.md
 
 ## Live Query (requires Dataview plugin)

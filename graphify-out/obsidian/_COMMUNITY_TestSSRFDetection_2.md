@@ -1,26 +1,32 @@
 ---
 type: community
-cohesion: 0.22
-members: 11
+cohesion: 0.16
+members: 17
 ---
 
 # TestSSRFDetection
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.16 - loosely connected
+**Members:** 17 nodes
 
 ## Members
-- [[dot-__init__()_191]] - code - gateway/proxy/url_analyzer.py
-- [[dot-test_empty_url()]] - code - gateway/tests/test_url_analyzer.py
-- [[dot-test_no_scheme()]] - code - gateway/tests/test_url_analyzer.py
-- [[dot-test_weird_scheme()]] - code - gateway/tests/test_url_analyzer.py
-- [[Analyze URLs for SSRF, data exfiltration, and suspicious patterns.]] - rationale - gateway/proxy/url_analyzer.py
-- [[Args             resolve_dns If True, resolve hostnames to IPs and check those]] - rationale - gateway/proxy/url_analyzer.py
-- [[Edge cases and malformed URLs.]] - rationale - gateway/tests/test_url_analyzer.py
-- [[TestMalformedURLs]] - code - gateway/tests/test_url_analyzer.py
-- [[URLAnalyzer_1]] - code - gateway/proxy/url_analyzer.py
-- [[analyzer()]] - code - gateway/tests/test_url_analyzer.py
-- [[test_url_analyzer.py]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-__init__()_186]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[dot-test_convenience_function()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[dot-test_performance_with_large_content()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[dot-test_realistic_web_scraping_result()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[dot-test_warn_mode()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Configuration for tool result markdown sanitization.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Convenience function to sanitize tool result content.      Args         content]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Integration tests for the sanitizer.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test performance with large content.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test sanitizing a realistic web scraping result.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test the convenience sanitize_tool_result function.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test warn mode that marks but preserves external content.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[TestIntegration_1]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[ToolResultSanitizerConfig]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[sanitize_tool_result()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[test_tool_result_sanitizer_enhanced.py]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[tool_result_sanitizer_enhanced.py]] - code - gateway/security/tool_result_sanitizer_enhanced.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,17 +36,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_TestSSRFDetection_1]]
-- 3 edges to [[_COMMUNITY_TestSSRFDetection_5]]
-- 3 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 2 edges to [[_COMMUNITY_TestSSRFDetection_6]]
-- 2 edges to [[_COMMUNITY_TestSSRFDetection]]
-- 2 edges to [[_COMMUNITY_TestSSRFDetection_3]]
-- 2 edges to [[_COMMUNITY_TestSSRFDetection_4]]
-- 1 edge to [[_COMMUNITY_WebContentScanner]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
+- 10 edges to [[_COMMUNITY_MiddlewareManager]]
+- 10 edges to [[_COMMUNITY_ForwardRequest_1]]
+- 4 edges to [[_COMMUNITY_AgentShroud v0.7.0 Blue Team Security Audit Report_4]]
+- 4 edges to [[_COMMUNITY_egress_filter.py_1]]
+- 1 edge to [[_COMMUNITY_dot-setup_method]]
 
 ## Top bridge nodes
-- [[URLAnalyzer_1]] - degree 19, connects to 9 communities
-- [[test_url_analyzer.py]] - degree 10, connects to 6 communities
-- [[TestMalformedURLs]] - degree 7, connects to 1 community
+- [[ToolResultSanitizerConfig]] - degree 26, connects to 5 communities
+- [[test_tool_result_sanitizer_enhanced.py]] - degree 6, connects to 3 communities
+- [[dot-test_warn_mode()]] - degree 4, connects to 2 communities
+- [[sanitize_tool_result()]] - degree 7, connects to 1 community
+- [[TestIntegration_1]] - degree 6, connects to 1 community

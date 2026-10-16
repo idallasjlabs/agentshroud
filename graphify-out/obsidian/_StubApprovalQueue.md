@@ -12,12 +12,12 @@ tags:
 # _StubApprovalQueue
 
 ## Connections
-- [[dot-__init__()_193]] - `method` [EXTRACTED]
-- [[dot-submit_tool_request()_3]] - `method` [EXTRACTED]
-- [[dot-wait_for_decision()_3]] - `method` [EXTRACTED]
+- [[dot-__init__()_204]] - `method` [EXTRACTED]
+- [[dot-submit_tool_request()_4]] - `method` [EXTRACTED]
+- [[dot-wait_for_decision()_4]] - `method` [EXTRACTED]
 - [[A2AMethod]] - `uses` [INFERRED]
 - [[A2APolicyAction]] - `uses` [INFERRED]
-- [[A2APolicyConfig_1]] - `uses` [INFERRED]
+- [[A2APolicyConfig]] - `uses` [INFERRED]
 - [[A2APolicyDecision]] - `uses` [INFERRED]
 - [[A2APolicyEngine_2]] - `uses` [INFERRED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]

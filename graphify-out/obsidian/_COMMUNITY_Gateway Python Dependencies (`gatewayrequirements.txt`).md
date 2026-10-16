@@ -11,9 +11,9 @@ members: 16
 
 ## Members
 - [[All Dependencies_1]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Authentication_2]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Authentication_3]] - document - docs/vault/05 - Dependencies/All Dependencies.md
 - [[Bot  Docker Container Dependencies]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Configuration_15]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Configuration_17]] - document - docs/vault/05 - Dependencies/All Dependencies.md
 - [[Core Framework]] - document - docs/vault/05 - Dependencies/All Dependencies.md
 - [[Data Storage]] - document - docs/vault/05 - Dependencies/All Dependencies.md
 - [[Dependency Notes]] - document - docs/vault/05 - Dependencies/All Dependencies.md
@@ -22,7 +22,7 @@ members: 16
 - [[Networking]] - document - docs/vault/05 - Dependencies/All Dependencies.md
 - [[Node.js Packages (installed globally)]] - document - docs/vault/05 - Dependencies/All Dependencies.md
 - [[PII Detection_1]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[Related Notes_52]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Related Notes_48]] - document - docs/vault/05 - Dependencies/All Dependencies.md
 - [[System Packages (apt)]] - document - docs/vault/05 - Dependencies/All Dependencies.md
 - [[Testing]] - document - docs/vault/05 - Dependencies/All Dependencies.md
 - [[Utilities]] - document - docs/vault/05 - Dependencies/All Dependencies.md

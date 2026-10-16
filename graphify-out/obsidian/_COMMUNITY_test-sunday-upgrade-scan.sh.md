@@ -10,8 +10,8 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[check()_8]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[check()_9]] - code - tests/startup_smoke/test_openclaw_readiness_retry.sh
+- [[check()_9]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[check()_10]] - code - tests/startup_smoke/test_openclaw_readiness_retry.sh
 - [[extract_default()]] - code - tests/startup_smoke/test_openclaw_model_provider_consistency.sh
 - [[make_apply_bin()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
 - [[make_fake_repo()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
@@ -35,7 +35,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_sunday-upgrade-apply.sh]]
-- 1 edge to [[_COMMUNITY_test_colima_and_sdk_patch_fallback_resolution.sh]]
+- 1 edge to [[_COMMUNITY_AgentTarget_3]]
 
 ## Top bridge nodes
 - [[test-sunday-upgrade-scan.sh]] - degree 10, connects to 1 community

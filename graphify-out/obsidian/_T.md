@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "main.rs"
+community: "MCPPermissionManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/MCPPermissionManager
 ---
 
 # _T
@@ -22,4 +22,4 @@ tags:
 - [[run_deploy_status()]] - `references` [EXTRACTED]
 - [[run_status()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

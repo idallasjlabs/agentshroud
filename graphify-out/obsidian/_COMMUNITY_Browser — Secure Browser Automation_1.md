@@ -25,7 +25,7 @@ members: 30
 - [[Best Practices_5]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[Browser — Secure Browser Automation_4]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[Click Element_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Core Security Principles_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Core Security Principles_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[Example Apple ID Creation (Semi-Automated)_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[Extract Data_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[Fetch JavaScript-Heavy Page (Node.js)_1]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
@@ -38,7 +38,7 @@ members: 30
 - [[Security Guarantees_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[Take Screenshot_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[Troubleshooting_18]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Usage_63]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Usage_59]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[openclawskillsi-browserSKILL]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 
 ## Live Query (requires Dataview plugin)

@@ -39,9 +39,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
 - 1 edge to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
 - 1 edge to [[_COMMUNITY_TelegramAPIProxy_2]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_2]]
 
 ## Top bridge nodes
 - [[TestMultiBotContextvarRouting]] - degree 14, connects to 3 communities

@@ -14,7 +14,7 @@ members: 22
 - [[Config_1]] - document - skills/openclaw/summarize/SKILL.md
 - [[Model + keys]] - document - skills/openclaw/summarize/SKILL.md
 - [[OpenClaw Skill Metadata Schema (frontmatter convention)]] - concept - skills/openclaw/skill-creator/scripts/quick_validate.py
-- [[Quick start_6]] - document - skills/openclaw/summarize/SKILL.md
+- [[Quick start_7]] - document - skills/openclaw/summarize/SKILL.md
 - [[Summarize]] - document - skills/openclaw/summarize/SKILL.md
 - [[Things 3 CLI]] - document - skills/openclaw/things-mac/SKILL.md
 - [[Tool]] - document - skills/openclaw/voice-call/SKILL.md

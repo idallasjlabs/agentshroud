@@ -11,9 +11,9 @@ members: 5
 
 ## Members
 - [[MCP Auth Reset (MCPM-AUTH-RESET)]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/README.md
-- [[Purpose_32]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/README.md
-- [[Related Skills_18]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/README.md
-- [[Usage_22]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/README.md
+- [[Purpose_22]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/README.md
+- [[Related Skills_11]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/README.md
+- [[Usage_14]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/README.md
 - [[hermesskillsi-mcpm-auth-resetREADME]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/README.md
 
 ## Live Query (requires Dataview plugin)

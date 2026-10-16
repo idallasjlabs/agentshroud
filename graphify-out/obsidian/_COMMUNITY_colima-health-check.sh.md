@@ -1,13 +1,13 @@
 ---
 type: community
-cohesion: 0.07
-members: 61
+cohesion: 0.06
+members: 67
 ---
 
 # colima-health-check.sh
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 61 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 67 nodes
 
 ## Members
 - [[Baseline phase logs PASS with 0 images captured]] - concept - reports/upgrade-2026-09-22.md
@@ -15,7 +15,6 @@ members: 61
 - [[CVE-2026-102268 PyJWT HMAC forgery (Hermes image)]] - concept - reports/upgrade-2026-10-04.md
 - [[Colima data disk mntlima-colima 100% full (ENOSPC crash loops)]] - concept - reports/upgrade-2026-09-23-20260923-1400.md
 - [[Colima docker-socket forward death under load]] - concept - reports/upgrade-2026-09-20-dev.md
-- [[Compose network version-label mismatch forces network recreate]] - concept - reports/upgrade-2026-10-12.md
 - [[Dev Colima VM loses all HTTPS egress]] - concept - reports/upgrade-2026-10-11.md
 - [[Devprod account split (agentshroud-bot vs ijefferson.admin)]] - concept - reports/upgrade-2026-09-20-dev.md
 - [[Exclusive mkdir run lock + HEAD-pinned build guard (PR 475)]] - rationale - reports/upgrade-2026-09-24.md
@@ -28,10 +27,11 @@ members: 61
 - [[Local Trivy scan failures (DB mirror timeouts, local-image 401 fallback)]] - concept - reports/upgrade-2026-09-22.md
 - [[No-op gate false negative baseline captured after pin commits]] - concept - reports/upgrade-2026-09-25.md
 - [[OpenClawHermesMCP sandbox container reaper]] - code - docker/scripts/start-agentshroud.sh
-- [[PATH_61]] - code - scripts/sunday-upgrade.sh
+- [[PATH_48]] - code - scripts/sunday-upgrade.sh
 - [[Prod promotion blocked dev tested an unmerged branch]] - concept - reports/upgrade-2026-10-11.md
 - [[Refuse to build with uncommitted changes in build context]] - rationale - reports/upgrade-2026-09-22.md
 - [[Running dev images predate committed Dockerfile bumps]] - concept - reports/upgrade-2026-09-23.md
+- [[S14 Hermes run-standalone.sh image tag falls back to dockerversions.env, not 'latest']] - concept - tests/startup_smoke/test_bot_boot_static.sh
 - [[SCRUM-185 (9-registry triage gap ticket)]] - concept - reports/upgrade-2026-10-04.md
 - [[SCRUM-187 (Hermes credential gap ticket)]] - concept - reports/upgrade-2026-09-27.md
 - [[SUNDAY_BUILD_VIA_VM=1 detached in-VM build]] - rationale - reports/upgrade-2026-09-23-20260923-1400.md
@@ -45,7 +45,6 @@ members: 61
 - [[Upgrade Report 2026-09-22 (dev, PARTIAL, 3 sessions)]] - document - reports/upgrade-2026-09-22.md
 - [[Upgrade Report 2026-09-23 0300 (dev, ABORTED)]] - document - reports/upgrade-2026-09-23.md
 - [[Upgrade Report 2026-09-23 1400 (dev, PARTIAL, disk full)]] - document - reports/upgrade-2026-09-23-20260923-1400.md
-- [[Upgrade Report 2026-09-24 (dev, PARTIAL, Hermes compat blocked)]] - document - reports/upgrade-2026-09-24.md
 - [[Upgrade Report 2026-09-25 (dev, PASS gate  PARTIAL)]] - document - reports/upgrade-2026-09-25.md
 - [[Upgrade Report 2026-09-26 (dev, ALL GREEN)]] - document - reports/upgrade-2026-09-26.md
 - [[Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)]] - document - reports/upgrade-2026-09-27.md
@@ -58,19 +57,26 @@ members: 61
 - [[Wazuh manager + agent sidecar (+ embedded agent in OpenClaw image)]] - concept - docker/docker-compose.yml
 - [[Wrapper 180-min timeout vs session cannot self-terminate]] - concept - reports/upgrade-2026-09-26.md
 - [[_read_running_version_str]] - code - scripts/triage-cve-mitigations.py
+- [[_sunday_warn_expiring_acceptances()]] - code - scripts/lib/sunday-scan.sh
 - [[check-soak-status.sh]] - code - scripts/check-soak-status.sh
 - [[check-soak-status.sh script]] - code - scripts/check-soak-status.sh
 - [[check-version-pins-parity.sh]] - code - scripts/check-version-pins-parity.sh
 - [[check-version-pins-parity.sh script]] - code - scripts/check-version-pins-parity.sh
 - [[dev-result-date.json dev-prod handoff contract]] - concept - reports/upgrade-2026-09-21.md
+- [[die()_2]] - code - scripts/lib/sunday-scan.sh
 - [[docker-socket-proxy service (digest-pinned tecnativa, narrow allowlist)]] - code - docker/docker-compose.yml
-- [[dockerdocker-compose.yml]] - code - docker/docker-compose.yml
 - [[dockerd self-DoS on unpruned dangling image backlog (782-1240 images)]] - concept - reports/upgrade-2026-09-23-20260923-1400.md
 - [[falcoctl 0.14.2 requires Go = 1.27 (GOTOOLCHAIN=local)]] - concept - reports/upgrade-2026-09-22.md
+- [[log()_10]] - code - scripts/lib/sunday-scan.sh
+- [[sunday-scan.sh (Trivy scan gate library)]] - code - scripts/lib/sunday-scan.sh
+- [[sunday-scan.sh script]] - code - scripts/lib/sunday-scan.sh
 - [[sunday-upgrade.sh]] - code - scripts/sunday-upgrade.sh
 - [[sunday-upgrade.sh script]] - code - scripts/sunday-upgrade.sh
-- [[sync-cve-registry NVD append writes to wrong registry constant]] - concept - reports/upgrade-2026-09-26.md
+- [[sunday_ensure_trivy()]] - code - scripts/lib/sunday-scan.sh
+- [[sunday_resolve_scan_image()]] - code - scripts/lib/sunday-scan.sh
+- [[sunday_run_scan_gate()]] - code - scripts/lib/sunday-scan.sh
 - [[versions.env]] - document - docker/versions.env
+- [[warn()_3]] - code - scripts/lib/sunday-scan.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -80,26 +86,24 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 16 edges to [[_COMMUNITY_sunday-upgrade-apply.sh]]
-- 7 edges to [[_COMMUNITY_Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)]]
-- 6 edges to [[_COMMUNITY_triage-cve-mitigations.py]]
+- 18 edges to [[_COMMUNITY_sunday-upgrade-apply.sh]]
+- 8 edges to [[_COMMUNITY_Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)]]
+- 6 edges to [[_COMMUNITY_sync-cve-registry.py]]
 - 5 edges to [[_COMMUNITY_discover_upstream_versions.py]]
-- 5 edges to [[_COMMUNITY_Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)_1]]
-- 5 edges to [[_COMMUNITY_colima-health-check.sh_1]]
-- 4 edges to [[_COMMUNITY_sync-cve-registry.py]]
+- 5 edges to [[_COMMUNITY_AgentTarget_3]]
+- 4 edges to [[_COMMUNITY_triage-cve-mitigations.py]]
 - 4 edges to [[_COMMUNITY_check-vendor-compat.sh]]
 - 3 edges to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]]
-- 2 edges to [[_COMMUNITY_agent_cve_registry.py]]
 - 1 edge to [[_COMMUNITY__t]]
-- 1 edge to [[_COMMUNITY_start-agentshroud.sh]]
-- 1 edge to [[_COMMUNITY_Action]]
 - 1 edge to [[_COMMUNITY_TestClassify]]
-- 1 edge to [[_COMMUNITY_test_colima_and_sdk_patch_fallback_resolution.sh]]
+- 1 edge to [[_COMMUNITY_start-agentshroud.sh]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL_3]]
+- 1 edge to [[_COMMUNITY_run-standalone.sh (Hermes docker run launcher)_1]]
 - 1 edge to [[_COMMUNITY_plan_remediation]]
 
 ## Top bridge nodes
-- [[Upgrade Report 2026-09-21 (dev, PARTIAL)]] - degree 16, connects to 4 communities
-- [[sunday-upgrade.sh]] - degree 13, connects to 3 communities
+- [[Upgrade Report 2026-09-21 (dev, PARTIAL)]] - degree 16, connects to 3 communities
 - [[Upgrade Report 2026-09-20 (dev, ABORTED)]] - degree 8, connects to 3 communities
 - [[check-soak-status.sh]] - degree 8, connects to 3 communities
-- [[versions.env]] - degree 5, connects to 3 communities
+- [[versions.env]] - degree 6, connects to 3 communities
+- [[Exclusive mkdir run lock + HEAD-pinned build guard (PR 475)]] - degree 5, connects to 3 communities

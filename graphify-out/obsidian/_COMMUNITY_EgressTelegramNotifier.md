@@ -10,7 +10,7 @@ members: 24
 **Members:** 24 nodes
 
 ## Members
-- [[dot-__init__()_132]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-__init__()_127]] - code - gateway/proxy/telegram_egress_notify.py
 - [[dot-_api_url()]] - code - gateway/proxy/telegram_egress_notify.py
 - [[dot-_async_send()]] - code - gateway/proxy/telegram_egress_notify.py
 - [[dot-_send_request()]] - code - gateway/proxy/telegram_egress_notify.py
@@ -46,9 +46,10 @@ SORT file.name ASC
 - 5 edges to [[_COMMUNITY_test_egress_callback_stale.py]]
 - 3 edges to [[_COMMUNITY__is_stale_callback_error]]
 - 3 edges to [[_COMMUNITY_TestEgressTelegramNotify]]
-- 2 edges to [[_COMMUNITY_AgentRegistry]]
+- 1 edge to [[_COMMUNITY_PIIConfig]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
 
 ## Top bridge nodes
-- [[EgressTelegramNotifier]] - degree 25, connects to 4 communities
+- [[EgressTelegramNotifier]] - degree 25, connects to 5 communities
 - [[dot-answer_callback()]] - degree 4, connects to 1 community
 - [[dot-edit_decision_message()]] - degree 4, connects to 1 community

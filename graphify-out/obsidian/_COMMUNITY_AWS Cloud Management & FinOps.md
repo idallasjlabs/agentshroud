@@ -1,20 +1,22 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.33
+members: 7
 ---
 
 # AWS Cloud Management & FinOps
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[AWS Cloud Management & FinOps]] - document - docker/config/hermes/skills/i-aws/README.md
-- [[Purpose_27]] - document - docker/config/hermes/skills/i-aws/README.md
-- [[Related Skills_13]] - document - docker/config/hermes/skills/i-aws/README.md
-- [[Usage_17]] - document - docker/config/hermes/skills/i-aws/README.md
-- [[hermesskillsi-awsREADME]] - document - docker/config/hermes/skills/i-aws/README.md
+- [[dot-test_bots_resolution_error_swallowed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_default_bot_and_sanitizer_configured()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_no_bots_keeps_fallback_workspace()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_non_default_bot_fallback()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_sanitizer_construction_error_sets_none()]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestSetConfig]] - code - gateway/tests/test_middleware_coverage.py
+- [[_bot()]] - code - gateway/tests/test_middleware_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +26,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_hermesskillsi-bsREADME]]
+- 2 edges to [[_COMMUNITY__req]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 2 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 1 edge to [[_COMMUNITY_UserSessionManager_3]]
 
 ## Top bridge nodes
-- [[AWS Cloud Management & FinOps]] - degree 5, connects to 1 community
+- [[TestSetConfig]] - degree 10, connects to 4 communities
+- [[_bot()]] - degree 3, connects to 1 community
+- [[dot-test_default_bot_and_sanitizer_configured()]] - degree 3, connects to 1 community

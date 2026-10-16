@@ -25,7 +25,7 @@ members: 41
 - [[If not → escalate to field team via ops-alerts]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[Query the control DB]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[README — Entry Point for a Repo or Service_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Role_19]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Role_18]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[Rules_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[Runbook — Operational Decision Tree]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[Skill Technical Writer (TW)_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
@@ -37,7 +37,7 @@ members: 41
 - [[Skill sdlc]] - document - docker/config/hermes/skills/i-sdlc/SKILL.md
 - [[Skill sre]] - document - docker/config/hermes/skills/i-sre/SKILL.md
 - [[Validation Checklist_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Voice & Tone_3]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Voice & Tone_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[What Belongs Where_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[Writing Style Rules_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[INFO Extracted 1,204 records → s3my-bucketlanding...]] - document - docker/config/hermes/skills/i-tw/SKILL.md

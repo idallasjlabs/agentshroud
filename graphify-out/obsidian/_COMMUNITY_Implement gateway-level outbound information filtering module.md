@@ -18,7 +18,7 @@ members: 17
 - [[Relationship to chunk 00-information-disclosure]] - document - docs/planning/redteam/06-outbound-info-filter.md
 - [[Remediation_1]] - document - docs/planning/redteam/06-outbound-info-filter.md
 - [[Root Cause_1]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Severity_3]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Severity_2]] - document - docs/planning/redteam/06-outbound-info-filter.md
 - [[Step 1 Create the Outbound Information Filter module]] - document - docs/planning/redteam/06-outbound-info-filter.md
 - [[Step 2 Define deny-list patterns]] - document - docs/planning/redteam/06-outbound-info-filter.md
 - [[Step 3 Implement the filter engine]] - document - docs/planning/redteam/06-outbound-info-filter.md

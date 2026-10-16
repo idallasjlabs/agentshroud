@@ -1,30 +1,20 @@
 ---
 type: community
-cohesion: 0.03
-members: 144
+cohesion: 0.04
+members: 92
 ---
 
 # gateway/ingest_api/main.py (/hermes-dashboard/ HTTP + WebSocket reverse proxy)
 
-**Cohesion:** 0.03 - loosely connected
-**Members:** 144 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 92 nodes
 
 ## Members
-- [[Add a domain to the local denylist. Authentication required.]] - rationale - gateway/ingest_api/main.py
-- [[Add an egress allowdeny rule.]] - rationale - gateway/ingest_api/main.py
-- [[Approve an egress request (oncesessionpermanent).]] - rationale - gateway/ingest_api/main.py
 - [[Audit feed for private-data access policy violations.]] - rationale - gateway/ingest_api/main.py
-- [[AuthRequired]] - code
-- [[Build normalized scanner summary for SOCdashboard telemetry.]] - rationale - gateway/ingest_api/main.py
-- [[CIS Docker Benchmark checks for this container.]] - rationale - gateway/ingest_api/main.py
+- [[AuthRequired_1]] - code
 - [[Comprehensive container security profile — runs all applicable checks.]] - rationale - gateway/ingest_api/main.py
 - [[Consolidated SOC report for dashboardSIEM pull workflows.]] - rationale - gateway/ingest_api/main.py
 - [[Cross-signal SOC correlation summary.]] - rationale - gateway/ingest_api/main.py
-- [[Deny an egress request (oncesessionpermanent).]] - rationale - gateway/ingest_api/main.py
-- [[Discard (keep quarantined) a blocked message after admin review.]] - rationale - gateway/ingest_api/main.py
-- [[Discard a blocked outbound message after admin review.]] - rationale - gateway/ingest_api/main.py
-- [[Enabledisable emergency block-all for outbound egress.]] - rationale - gateway/ingest_api/main.py
-- [[Execute SSH command with validation and approval]] - rationale - gateway/ingest_api/main.py
 - [[Export tamper-evident audit events in SOCSIEM formats.]] - rationale - gateway/ingest_api/main.py
 - [[Fetch one report (metadata + content). Authentication required.]] - rationale - gateway/ingest_api/main.py
 - [[Forget this' - permanently delete a ledger entry Implements right to erasure.…]] - rationale - gateway/ingest_api/main.py
@@ -46,57 +36,30 @@ members: 144
 - [[List quarantined blocked outbound messages for admin review.]] - rationale - gateway/ingest_api/main.py
 - [[List recent egress attempts for dashboardSOC triage.]] - rationale - gateway/ingest_api/main.py
 - [[List report metadata (no content), newest first, optionally by bot. Cross-bot…]] - rationale - gateway/ingest_api/main.py
-- [[Persist last scanner result and emit live event-bus telemetry.]] - rationale - gateway/ingest_api/main.py
 - [[Preview egress risk heuristic for domainport combos.]] - rationale - gateway/ingest_api/main.py
 - [[Query SSH audit entries from ledger]] - rationale - gateway/ingest_api/main.py
 - [[Query the data ledger Returns paginated results with optional filters.…]] - rationale - gateway/ingest_api/main.py
-- [[Release a blocked outbound message for adminmanual resend flow.]] - rationale - gateway/ingest_api/main.py
-- [[Release a quarantined message for admin workflow follow-up.]] - rationale - gateway/ingest_api/main.py
 - [[Remove a domain from the local denylist. Authentication required.]] - rationale - gateway/ingest_api/main.py
 - [[Remove an egress rule by domain.]] - rationale - gateway/ingest_api/main.py
 - [[Return LLM proxy statistics.]] - rationale - gateway/ingest_api/main.py
 - [[Return a paginated list of blocked domains. Authentication required.]] - rationale - gateway/ingest_api/main.py
 - [[Return current private-data policy configuration and enforcement state.]] - rationale - gateway/ingest_api/main.py
 - [[Return egress rules and emergency-block status.]] - rationale - gateway/ingest_api/main.py
-- [[Return normalized scanner state + latest results for SOCdashboard views.]] - rationale - gateway/ingest_api/main.py
 - [[Return recent Falco runtime security alerts with summary.]] - rationale - gateway/ingest_api/main.py
 - [[Return recent Wazuh HIDS alerts with FIM and rootkit summary.]] - rationale - gateway/ingest_api/main.py
 - [[Return recent security telemetry events with optional filters.]] - rationale - gateway/ingest_api/main.py
 - [[Return scanner result history for SOC timeline views.]] - rationale - gateway/ingest_api/main.py
-- [[Run ClamAV antivirus scan. Tries clamdscan (daemon) first, falls back to…]] - rationale - gateway/ingest_api/main.py
-- [[Run OpenSCAP XCCDF evaluation against the running container.]] - rationale - gateway/ingest_api/main.py
-- [[Run Trivy vulnerability scan.]] - rationale - gateway/ingest_api/main.py
-- [[Run all locally available security scanners and return consolidated results.]] - rationale - gateway/ingest_api/main.py
-- [[Run canary integrity checks.]] - rationale - gateway/ingest_api/main.py
-- [[Run kill switch verification test. Args dry_run If True (default), only…]] - rationale - gateway/ingest_api/main.py
 - [[SOC 2 Trust Service Criteria compliance coverage report. Maps active…]] - rationale - gateway/ingest_api/main.py
-- [[SSHExecRequest_1]] - code
-- [[SSHWriteFileRequest_1]] - code
 - [[Scored security health report — grade, per-tool scores, recommendations.…]] - rationale - gateway/ingest_api/main.py
-- [[Set a user's role (owner only).]] - rationale - gateway/ingest_api/main.py
-- [[Store a report in the gateway-managed multi-bot report store. Body {bot…]] - rationale - gateway/ingest_api/main.py
 - [[Summarize inboundoutbound quarantine state for SOCdashboard use.]] - rationale - gateway/ingest_api/main.py
 - [[System Control - Live Dashboard Shows real-time system status with links to…]] - rationale - gateway/ingest_api/main.py
-- [[Trigger an immediate blocklist refresh from upstream adlists. Authentication…]] - rationale - gateway/ingest_api/main.py
-- [[Write file content to an allowlisted SSH host via structured transport. Unlike…]] - rationale - gateway/ingest_api/main.py
 - [[_active()]] - code - gateway/ingest_api/main.py
 - [[_count_by_status()]] - code - gateway/ingest_api/main.py
-- [[_execute_and_record()]] - code - gateway/ingest_api/main.py
-- [[_record_scanner_result()]] - code - gateway/ingest_api/main.py
-- [[_scanner_summary()]] - code - gateway/ingest_api/main.py
 - [[_top_reasons()]] - code - gateway/ingest_api/main.py
-- [[add()]] - code - gateway/ingest_api/main.py
-- [[add_blocked_domain()]] - code - gateway/ingest_api/main.py
+- [[asyncio]] - code
 - [[container_security_profile()]] - code - gateway/ingest_api/main.py
-- [[create_report()]] - code - gateway/ingest_api/main.py
 - [[delete]] - code
 - [[delete_ledger_entry()]] - code - gateway/ingest_api/main.py
-- [[discard_blocked_message()]] - code - gateway/ingest_api/main.py
-- [[discard_blocked_outbound()]] - code - gateway/ingest_api/main.py
-- [[egress_add_rule()]] - code - gateway/ingest_api/main.py
-- [[egress_approve()]] - code - gateway/ingest_api/main.py
-- [[egress_deny()]] - code - gateway/ingest_api/main.py
-- [[egress_emergency_block()]] - code - gateway/ingest_api/main.py
 - [[egress_log()]] - code - gateway/ingest_api/main.py
 - [[egress_pending()]] - code - gateway/ingest_api/main.py
 - [[egress_remove_rule()]] - code - gateway/ingest_api/main.py
@@ -122,37 +85,22 @@ members: 144
 - [[list_security_modules()]] - code - gateway/ingest_api/main.py
 - [[list_users_and_roles()]] - code - gateway/ingest_api/main.py
 - [[llm_proxy_stats]] - code - gateway/ingest_api/main.py
-- [[post]] - code
 - [[privacy_audit()]] - code - gateway/ingest_api/main.py
 - [[privacy_policy_status()]] - code - gateway/ingest_api/main.py
 - [[proxy_status()]] - code - gateway/ingest_api/main.py
-- [[put]] - code
 - [[quarantine_summary()]] - code - gateway/ingest_api/main.py
 - [[query_ledger()]] - code - gateway/ingest_api/main.py
-- [[refresh_dns_blocklist()]] - code - gateway/ingest_api/main.py
-- [[release_blocked_message()]] - code - gateway/ingest_api/main.py
-- [[release_blocked_outbound()]] - code - gateway/ingest_api/main.py
 - [[remove_blocked_domain()]] - code - gateway/ingest_api/main.py
-- [[run_all_scanners()]] - code - gateway/ingest_api/main.py
-- [[run_canary_checks()]] - code - gateway/ingest_api/main.py
-- [[run_cis_benchmark()]] - code - gateway/ingest_api/main.py
-- [[run_clamav_scan()]] - code - gateway/ingest_api/main.py
-- [[run_openscap_scan()]] - code - gateway/ingest_api/main.py
-- [[run_trivy_scan()]] - code - gateway/ingest_api/main.py
 - [[scanner_history()]] - code - gateway/ingest_api/main.py
 - [[security_health_report()]] - code - gateway/ingest_api/main.py
-- [[set_user_role()]] - code - gateway/ingest_api/main.py
 - [[soc_correlation()]] - code - gateway/ingest_api/main.py
 - [[soc_events()]] - code - gateway/ingest_api/main.py
 - [[soc_export()]] - code - gateway/ingest_api/main.py
 - [[soc_redirect()]] - code - gateway/ingest_api/main.py
 - [[soc_report()]] - code - gateway/ingest_api/main.py
-- [[ssh_exec()]] - code - gateway/ingest_api/main.py
 - [[ssh_history()]] - code - gateway/ingest_api/main.py
 - [[ssh_hosts()]] - code - gateway/ingest_api/main.py
-- [[ssh_write_file()]] - code - gateway/ingest_api/main.py
 - [[system_control()]] - code - gateway/ingest_api/main.py
-- [[verify_killswitch()]] - code - gateway/ingest_api/main.py
 - [[wazuh_alerts()]] - code - gateway/ingest_api/main.py
 
 ## Live Query (requires Dataview plugin)
@@ -163,33 +111,36 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)_1]]
-- 11 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
-- 6 edges to [[_COMMUNITY__is_op_reference_allowed]]
-- 5 edges to [[_COMMUNITY_Request]]
-- 4 edges to [[_COMMUNITY_test_main_endpoints.py_1]]
-- 4 edges to [[_COMMUNITY_test_main_endpoints.py]]
-- 3 edges to [[_COMMUNITY_deep_security_test]]
+- 42 edges to [[_COMMUNITY_AuditChain_1]]
+- 15 edges to [[_COMMUNITY_agentshroud-blueteamSKILL_4]]
+- 9 edges to [[_COMMUNITY_test_prompt_guard.py_2]]
+- 5 edges to [[_COMMUNITY__is_op_reference_allowed]]
+- 3 edges to [[_COMMUNITY_Request]]
+- 3 edges to [[_COMMUNITY_test_main_endpoints.py_1]]
+- 3 edges to [[_COMMUNITY_test_main_endpoints.py]]
+- 2 edges to [[_COMMUNITY_deep_security_test]]
 - 2 edges to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
-- 2 edges to [[_COMMUNITY_InjectionAction]]
-- 2 edges to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]]
+- 2 edges to [[_COMMUNITY_InjectionAction_1]]
 - 2 edges to [[_COMMUNITY_Commit list 2026-10-10 through 2026-10-16 on main]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig_2]]
 - 1 edge to [[_COMMUNITY_ProxyDashboard]]
+- 1 edge to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
 - 1 edge to [[_COMMUNITY_test_docs_accuracy.py]]
-- 1 edge to [[_COMMUNITY_Action]]
-- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY_sync-cve-registry.py]]
+- 1 edge to [[_COMMUNITY_LLMProxy]]
 - 1 edge to [[_COMMUNITY_AlertTelegramRelay]]
 - 1 edge to [[_COMMUNITY_ReportStore]]
 - 1 edge to [[_COMMUNITY_ADR-005 SHA-256 Hash Chain Audit Integrity_1]]
-- 1 edge to [[_COMMUNITY_DataLedger]]
+- 1 edge to [[_COMMUNITY_create_auth_dependency]]
+- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
+- 1 edge to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]]
 - 1 edge to [[_COMMUNITY_CREDENTIAL-PROTECTION-IMPLEMENTED]]
-- 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
-- 1 edge to [[_COMMUNITY_agent_cve_registry.py]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
 
 ## Top bridge nodes
-- [[ingest_apimain.py]] - degree 115, connects to 21 communities
-- [[post]] - degree 25, connects to 4 communities
-- [[AuthRequired]] - degree 66, connects to 3 communities
-- [[create_report()]] - degree 5, connects to 1 community
+- [[ingest_apimain.py]] - degree 114, connects to 23 communities
+- [[AuthRequired_1]] - degree 66, connects to 5 communities
+- [[get]] - degree 39, connects to 1 community
 - [[get_my_permissions()]] - degree 5, connects to 1 community
+- [[get_user_permissions()]] - degree 5, connects to 1 community

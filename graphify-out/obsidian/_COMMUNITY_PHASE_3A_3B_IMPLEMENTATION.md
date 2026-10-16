@@ -28,7 +28,7 @@ members: 32
 - [[Kill Switch (freeze  shutdown  disconnect)]] - concept - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
 - [[Modified]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
 - [[NET_RAW Capability Removal]] - rationale - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Next Steps_3]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Next Steps_4]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
 - [[No Changes (Already Correct)]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
 - [[PHASE_3A_3B_IMPLEMENTATION]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
 - [[Phase 3A Testing]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
@@ -53,10 +53,10 @@ SORT file.name ASC
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_diagramsREADME]]
 - 1 edge to [[_COMMUNITY_02-infrastructure]]
-- 1 edge to [[_COMMUNITY_KeyVault]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
+- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
+- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
 - 1 edge to [[_COMMUNITY_Per-Agent Container Isolation Architecture]]
-- 1 edge to [[_COMMUNITY_FR3 System Integrity]]
+- 1 edge to [[_COMMUNITY_egress_filter.py]]
 
 ## Top bridge nodes
 - [[Kill Switch (freeze  shutdown  disconnect)]] - degree 3, connects to 2 communities

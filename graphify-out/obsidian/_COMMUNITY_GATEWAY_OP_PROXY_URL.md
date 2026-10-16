@@ -10,10 +10,10 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Description_1]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
+- [[Description]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
 - [[GATEWAY_OP_PROXY_URL_1]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
 - [[GATEWAY_OP_PROXY_URL]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
-- [[Related Notes_3]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
+- [[Related Notes_4]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
 - [[Security_1]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
 - [[Set In]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
 - [[Usage Flow]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md

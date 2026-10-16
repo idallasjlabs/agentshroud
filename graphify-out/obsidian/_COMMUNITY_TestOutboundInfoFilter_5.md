@@ -1,17 +1,20 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.40
+members: 5
 ---
 
 # TestOutboundInfoFilter
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[dot-test_operational_path_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test that internal file paths are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Bot Account (Manual Setup Required)]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Bot Account (You Do This Manually)]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Clone Repo on Pi]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Phase 3 GitHub Setup]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Repo Access]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
+- 1 edge to [[_COMMUNITY_AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]]
 
 ## Top bridge nodes
-- [[dot-test_operational_path_filtering()]] - degree 2, connects to 1 community
+- [[Phase 3 GitHub Setup]] - degree 5, connects to 1 community

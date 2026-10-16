@@ -24,7 +24,7 @@ members: 26
 - [[PII Sanitizer_2]] - concept - docker/config/hermes/SOUL.md
 - [[Remote Hosts (SSH via gateway)_2]] - document - docker/config/hermes/SOUL.md
 - [[Security Reviewer Agent]] - document - docker/config/hermes/agents/i-security-reviewer.md
-- [[Trademark Notice_2]] - document - docker/config/hermes/SOUL.md
+- [[Trademark Notice_3]] - document - docker/config/hermes/SOUL.md
 - [[Your Role_2]] - document - docker/config/hermes/SOUL.md
 - [[agentshroud-gateway MCP proxy entry (disabled)]] - concept - docker/config/hermes/mcp/servers.json
 - [[agentshroud-ssh-exec.sh helper]] - concept - docker/config/hermes/SOUL.md
@@ -49,7 +49,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_EgressFilter]]
 - 1 edge to [[_COMMUNITY_TrustManager]]
 - 1 edge to [[_COMMUNITY_prompt_guard.py]]
-- 1 edge to [[_COMMUNITY_auth.py]]
+- 1 edge to [[_COMMUNITY_auth.py_1]]
 
 ## Top bridge nodes
 - [[hermesSOUL]] - degree 15, connects to 4 communities

@@ -1,20 +1,22 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.29
+members: 7
 ---
 
 # apply-patches.js
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[Per-chat group agent + binding reconciliation (Patch 1e)]] - code - docker/config/openclaw/apply-patches.js
-- [[RBAC collaborator_user_ids list (gatewaysecurityrbac_config.py)]] - concept - docker/config/openclaw/apply-patches.js
-- [[_resolveCollabDenyList()]] - code - docker/config/openclaw/apply-patches.js
-- [[_resolveCollabToolConfig()]] - code - docker/config/openclaw/apply-patches.js
-- [[apply-patches.js patch driver (openclaw.json)]] - code - docker/config/openclaw/apply-patches.js
+- [[Auto-Detection]] - document - docs/setup/setup-guide.md
+- [[Default Configuration]] - document - docs/setup/setup-guide.md
+- [[Environment Variables_1]] - document - docs/setup/setup-guide.md
+- [[Mac Studio Example]] - document - docs/setup/setup-guide.md
+- [[Multi-Instance Setup]] - document - docs/setup/setup-guide.md
+- [[Port Auto-Detection]] - document - docs/setup/setup-guide.md
+- [[Step 5 Configure Ports]] - document - docs/setup/setup-guide.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,11 +26,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_apply-patches.js]]
-- 1 edge to [[_COMMUNITY_test_hermes_model_resolver.py]]
+- 1 edge to [[_COMMUNITY_AgentShroud Setup Guide]]
+- 1 edge to [[_COMMUNITY_Step-by-Step Installation]]
 
 ## Top bridge nodes
-- [[_resolveCollabToolConfig()]] - degree 4, connects to 1 community
-- [[apply-patches.js patch driver (openclaw.json)]] - degree 3, connects to 1 community
-- [[Per-chat group agent + binding reconciliation (Patch 1e)]] - degree 2, connects to 1 community
-- [[_resolveCollabDenyList()]] - degree 2, connects to 1 community
+- [[Multi-Instance Setup]] - degree 5, connects to 1 community
+- [[Step 5 Configure Ports]] - degree 4, connects to 1 community

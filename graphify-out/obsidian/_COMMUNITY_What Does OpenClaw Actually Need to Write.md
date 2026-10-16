@@ -19,7 +19,7 @@ members: 34
 - [[Answer to Your Question]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
 - [[Bind Mount vs Docker Volume]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
 - [[Can We Use ONLY a Shared Folder]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Configuration_1]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[Configuration_2]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
 - [[Current Docker Configuration]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
 - [[Current Location]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
 - [[For Read-Only to Work]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md

@@ -38,8 +38,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 2 edges to [[_COMMUNITY_AsyncMock_1]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
 
 ## Top bridge nodes
 - [[verify_images()]] - degree 7, connects to 1 community

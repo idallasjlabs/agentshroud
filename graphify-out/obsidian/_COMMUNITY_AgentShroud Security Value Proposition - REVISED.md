@@ -39,8 +39,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised_1]]
-- 1 edge to [[_COMMUNITY_Dockerfile — Gateway]]
+- 2 edges to [[_COMMUNITY_BotConfig_1]]
+- 1 edge to [[_COMMUNITY_Dockerfile — Bot (OpenClaw)_1]]
 - 1 edge to [[_COMMUNITY_Priority 1 Fix Broken Security (CRITICAL)]]
 
 ## Top bridge nodes

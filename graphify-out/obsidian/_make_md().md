@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Create a fake contributor markdown file for the given uid.]] - `rationale_for` [EXTRACTED]
-- [[Path_36]] - `references` [EXTRACTED]
+- [[Path_4]] - `references` [EXTRACTED]
 - [[test_lifespan_prune.py]] - `contains` [EXTRACTED]
 - [[test_prune_keeps_real_uid_markdown()]] - `calls` [EXTRACTED]
 - [[test_prune_walks_all_contributor_dirs()]] - `calls` [EXTRACTED]

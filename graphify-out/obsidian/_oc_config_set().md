@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/init-openclaw-config.sh"
 type: "code"
-community: "docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)"
+community: "run-standalone.sh (Hermes docker run launcher)"
 location: "L430"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
+  - community/run-standalonesh_Hermes_docker_run_launcher
 ---
 
 # _oc_config_set()
@@ -15,4 +15,4 @@ tags:
 - [[dockerscriptsinit-openclaw-config.sh (baked into OpenClaw image; seeds sandbox mode, runs doctor --fix)]] - `defines` [EXTRACTED]
 - [[init-openclaw-config.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
+#graphify/code #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher

@@ -14,7 +14,7 @@ members: 85
 - [[A real CVE always came from a GHSA advisory, so cve_id implies ghsa_id.]] - rationale - gateway/tests/test_agent_cve_registry.py
 - [[A single shared output path makes multi-agent coverage impossible.]] - rationale - gateway/tests/test_agent_cve_registry.py
 - [[An agent with no version source must be refused, never verdicted.      Emitting]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Any_56]] - code - gateway/security/agent_cve_registry.py
+- [[Any_45]] - code - gateway/security/agent_cve_registry.py
 - [[Backward compatibility the default openclaw run must still exit 0.]] - rationale - gateway/tests/test_agent_cve_registry.py
 - [[CRITICAL GUARD no entry `id` may look like a real CVE id.      This is the load]] - rationale - gateway/tests/test_agent_cve_registry.py
 - [[CompletedProcess_4]] - code - gateway/tests/test_agent_cve_registry.py
@@ -104,11 +104,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_agent_cve_registry.py]]
+- 6 edges to [[_COMMUNITY_agent_cve_registry.py]]
+- 5 edges to [[_COMMUNITY_sync-cve-registry.py]]
 - 1 edge to [[_COMMUNITY_socrouter.py]]
 - 1 edge to [[_COMMUNITY_test_soc_bots.py]]
 - 1 edge to [[_COMMUNITY__t]]
 
 ## Top bridge nodes
-- [[get_agent_cve_summary()]] - degree 30, connects to 4 communities
-- [[test_agent_cve_registry.py]] - degree 68, connects to 1 community
+- [[get_agent_cve_summary()]] - degree 30, connects to 5 communities
+- [[test_agent_cve_registry.py]] - degree 68, connects to 2 communities

@@ -10,22 +10,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[Configuration_16]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Configuration_18]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 - [[Dependencies_19]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Environment Variables_11]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Environment Variables_12]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 - [[Function Details_19]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 - [[Key Classes  Functions_21]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Mode Enforce vs Monitor_7]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Mode Enforce vs Monitor_8]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 - [[Pattern Categories and Weights]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 - [[PromptGuard.__init__(block_threshold, warn_threshold, custom_patterns)]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 - [[PromptGuard._check_encoded_content(text)]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 - [[PromptGuard._check_unicode_tricks(text)]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 - [[PromptGuard.scan(text)]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Purpose_140]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Purpose_138]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 - [[Related_25]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 - [[Responsibilities_23]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Threat Model_15]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[prompt_guard.py]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Threat Model_16]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[prompt_guard.py_1]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,4 +38,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_hermesSOUL]]
 
 ## Top bridge nodes
-- [[prompt_guard.py]] - degree 12, connects to 1 community
+- [[prompt_guard.py_1]] - degree 12, connects to 1 community

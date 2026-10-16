@@ -1,24 +1,25 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.20
+members: 10
 ---
 
 # AgentShroud: Enterprise Governance for Autonomous AI Agents
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[4. Defense-in-Depth Container Security]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.1 Build-Time Image Scanning (Trivy)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.2 Runtime Malware Detection (ClamAV)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.3 Runtime Syscall Monitoring (Falco)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.4 Host Integrity Monitoring (Wazuh)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.5 Compliance Scanning (OpenSCAP)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.6 Daily Security Health Report]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.7 Zero-Configuration Security]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.8 Container Security — Competitive Comparison]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9. Deep Security Hardening (v0.9.0)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9.1 Log Sanitizer (gatewaysecuritylog_sanitizer.py)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9.2 Environment Leakage Guard (gatewaysecurityenv_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9.3 Context Window Poisoning Defense (gatewaysecuritycontext_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9.4 Git Hook Guard (gatewaysecuritygit_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9.5 Metadata Channel Guard (gatewaysecuritymetadata_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9.6 Network Isolation Validator (gatewaysecuritynetwork_validator.py)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9.7 Resource Exhaustion Guard (gatewaysecurityresource_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9.8 Tool Result Injection Scanning (MCP Inspector Enhancement)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9.9 Deep Hardening Impact]] - document - docs/papers/agentshroud-whitepaper.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,4 +32,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_AgentShroud Enterprise Governance for Autonomous AI Agents]]
 
 ## Top bridge nodes
-- [[4. Defense-in-Depth Container Security]] - degree 9, connects to 1 community
+- [[9. Deep Security Hardening (v0.9.0)]] - degree 10, connects to 1 community

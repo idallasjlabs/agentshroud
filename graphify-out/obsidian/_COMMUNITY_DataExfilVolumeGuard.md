@@ -10,9 +10,9 @@ members: 38
 **Members:** 38 nodes
 
 ## Members
-- [[dot-__init__()_72]] - code - gateway/security/data_exfil_volume_guard.py
+- [[dot-__init__()_71]] - code - gateway/security/data_exfil_volume_guard.py
 - [[dot-_size()]] - code - gateway/security/data_exfil_volume_guard.py
-- [[dot-get_stats()_4]] - code - gateway/security/data_exfil_volume_guard.py
+- [[dot-get_stats()_3]] - code - gateway/security/data_exfil_volume_guard.py
 - [[dot-observe()]] - code - gateway/security/data_exfil_volume_guard.py
 - [[dot-reset_session()]] - code - gateway/security/data_exfil_volume_guard.py
 - [[A blocked (undelivered) response must not consume the session budget,     otherw]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
@@ -57,14 +57,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_AgentRegistry]]
-- 3 edges to [[_COMMUNITY_PIIConfig]]
-- 3 edges to [[_COMMUNITY_AsyncMock]]
-- 2 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 3 edges to [[_COMMUNITY_AsyncMock_1]]
+- 3 edges to [[_COMMUNITY_PipelineAction]]
+- 2 edges to [[_COMMUNITY_PIIConfig]]
+- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 1 edge to [[_COMMUNITY_egress_filter.py]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
 
 ## Top bridge nodes
-- [[DataExfilVolumeGuard]] - degree 26, connects to 2 communities
+- [[DataExfilVolumeGuard]] - degree 26, connects to 3 communities
+- [[DataExfilVolumeConfig]] - degree 21, connects to 2 communities
 - [[_make_pipeline()_1]] - degree 6, connects to 2 communities
 - [[test_pipeline_no_guard_is_unchanged()]] - degree 3, connects to 2 communities
-- [[DataExfilVolumeConfig]] - degree 21, connects to 1 community
 - [[test_data_exfil_volume_guard.py]] - degree 21, connects to 1 community

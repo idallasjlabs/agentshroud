@@ -1,20 +1,22 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.43
+members: 7
 ---
 
 # Data Validation (DATA-VAL)
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.43 - moderately connected
+**Members:** 7 nodes
 
 ## Members
-- [[dot-agentsskillsi-dataREADME]] - document - .agents/skills/i-data/README.md
-- [[Data Validation (DATA-VAL)]] - document - .agents/skills/i-data/README.md
-- [[Purpose_19]] - document - .agents/skills/i-data/README.md
-- [[Related Skills_5]] - document - .agents/skills/i-data/README.md
-- [[Usage_9]] - document - .agents/skills/i-data/README.md
+- [[_count_recent_restarts()]] - code - docker/bots/hermes/crashwatch.sh
+- [[_log()]] - code - docker/bots/hermes/crashwatch.sh
+- [[_read_last_alert_epoch()]] - code - docker/bots/hermes/crashwatch.sh
+- [[_telegram_alert()]] - code - docker/bots/hermes/crashwatch.sh
+- [[_write_last_alert_epoch()]] - code - docker/bots/hermes/crashwatch.sh
+- [[crashwatch.sh]] - code - docker/bots/hermes/crashwatch.sh
+- [[crashwatch.sh script]] - code - docker/bots/hermes/crashwatch.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
 
 ## Top bridge nodes
-- [[Data Validation (DATA-VAL)]] - degree 5, connects to 1 community
+- [[_telegram_alert()]] - degree 3, connects to 1 community

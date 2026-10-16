@@ -1,23 +1,25 @@
 ---
 type: community
-cohesion: 0.36
-members: 8
+cohesion: 0.38
+members: 10
 ---
 
 # WebContentScanner
 
-**Cohesion:** 0.36 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.38 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[dot-_triage()]] - code - gateway/tests/test_xml_dtd_control.py
-- [[dot-test_libxml2_dtd_uaf_classifies_as_xxe_not_dos()]] - code - gateway/tests/test_xml_dtd_control.py
-- [[dot-test_unrelated_classes_unchanged()]] - code - gateway/tests/test_xml_dtd_control.py
-- [[dot-test_xxe_class_is_covered_by_the_gateway_control()]] - code - gateway/tests/test_xml_dtd_control.py
-- [[It calls itself DoS; the generic DOS profile is containment-only. Left as DOS…]] - rationale - gateway/tests/test_xml_dtd_control.py
-- [[TestTriageClassLevelCoverage]] - code - gateway/tests/test_xml_dtd_control.py
-- [[The durable statement is at the CLASS level, not per-CVE. A register entry…]] - rationale - gateway/tests/test_xml_dtd_control.py
-- [[The new rule runs first, so prove it does not swallow neighbours.]] - rationale - gateway/tests/test_xml_dtd_control.py
+- [[AgentTarget]] - code - gateway/ingest_api/routes/forward.py
+- [[Resolve the outbound trust level for `request`, shared by the blocking     and s]] - rationale - gateway/ingest_api/routes/forward.py
+- [[_request()]] - code - gateway/tests/test_forward_stream.py
+- [[_resolve_user_trust_level()]] - code - gateway/ingest_api/routes/forward.py
+- [[_target()]] - code - gateway/tests/test_forward_stream.py
+- [[test_resolve_trust_level_maps_trust_score_to_tier()]] - code - gateway/tests/test_forward_stream.py
+- [[test_resolve_trust_level_no_trust_info_for_target_defaults_untrusted()]] - code - gateway/tests/test_forward_stream.py
+- [[test_resolve_trust_level_no_trust_manager_defaults_untrusted()]] - code - gateway/tests/test_forward_stream.py
+- [[test_resolve_trust_level_non_owner_user_id_does_not_upgrade()]] - code - gateway/tests/test_forward_stream.py
+- [[test_resolve_trust_level_owner_user_id_upgrades_to_full()]] - code - gateway/tests/test_forward_stream.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +29,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_WebContentScanner]]
+- 8 edges to [[_COMMUNITY_test_forward_stream.py_1]]
+- 4 edges to [[_COMMUNITY_test_forward_stream.py]]
+- 2 edges to [[_COMMUNITY_AgentTarget_1]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
 
 ## Top bridge nodes
-- [[TestTriageClassLevelCoverage]] - degree 6, connects to 1 community
+- [[_resolve_user_trust_level()]] - degree 12, connects to 2 communities
+- [[_request()]] - degree 7, connects to 2 communities
+- [[_target()]] - degree 7, connects to 2 communities
+- [[test_resolve_trust_level_maps_trust_score_to_tier()]] - degree 4, connects to 1 community
+- [[test_resolve_trust_level_no_trust_info_for_target_defaults_untrusted()]] - degree 4, connects to 1 community

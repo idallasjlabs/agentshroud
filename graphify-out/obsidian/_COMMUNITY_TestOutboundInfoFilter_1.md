@@ -1,17 +1,20 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.40
+members: 5
 ---
 
 # TestOutboundInfoFilter
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[dot-test_mcp_tool_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test that sensitive MCP tool names are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[dot-_sanitize_text()]] - code - gateway/security/log_sanitizer.py
+- [[dot-filter()]] - code - gateway/security/log_sanitizer.py
+- [[Filter log record, sanitizing sensitive content.]] - rationale - gateway/security/log_sanitizer.py
+- [[LogRecord_1]] - code - gateway/security/log_sanitizer.py
+- [[Sanitize sensitive data in text.]] - rationale - gateway/security/log_sanitizer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +24,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
+- 2 edges to [[_COMMUNITY_AlertDispatcher]]
 
 ## Top bridge nodes
-- [[dot-test_mcp_tool_filtering()]] - degree 2, connects to 1 community
+- [[dot-filter()]] - degree 4, connects to 1 community
+- [[dot-_sanitize_text()]] - degree 3, connects to 1 community

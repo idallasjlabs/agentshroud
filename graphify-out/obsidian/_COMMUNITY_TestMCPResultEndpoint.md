@@ -37,12 +37,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig_2]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig]]
 - 1 edge to [[_COMMUNITY_PIIConfig]]
-- 1 edge to [[_COMMUNITY_DataLedger]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
-- 1 edge to [[_COMMUNITY_AgentTarget]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager_1]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_1]]
+- 1 edge to [[_COMMUNITY_TestMCPProxyEndpoint]]
+- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
+- 1 edge to [[_COMMUNITY_AgentTarget_1]]
 
 ## Top bridge nodes
 - [[TestMCPResultEndpoint]] - degree 17, connects to 6 communities

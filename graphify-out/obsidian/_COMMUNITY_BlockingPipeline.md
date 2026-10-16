@@ -37,16 +37,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 21 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 21 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
 - 8 edges to [[_COMMUNITY__wrap_response]]
 - 3 edges to [[_COMMUNITY_RateLimiter]]
 - 3 edges to [[_COMMUNITY_TelegramAPIProxy_2]]
 - 3 edges to [[_COMMUNITY_MiddlewareManager]]
-- 2 edges to [[_COMMUNITY_TestMultipartOutboundPipeline]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy_1]]
+- 1 edge to [[_COMMUNITY_dot-test_form_outbound_pipeline_block_non_owner]]
+- 1 edge to [[_COMMUNITY_TestMultipartOutboundPipeline]]
+- 1 edge to [[_COMMUNITY_TestMultipartOutboundPipeline_1]]
 
 ## Top bridge nodes
-- [[BlockingPipeline]] - degree 13, connects to 6 communities
+- [[BlockingPipeline]] - degree 13, connects to 7 communities
 - [[EncodingDetectingPipeline]] - degree 7, connects to 4 communities
 - [[FakePipelineResult]] - degree 7, connects to 4 communities
 - [[dot-test_clean_message_passes_through()]] - degree 7, connects to 2 communities

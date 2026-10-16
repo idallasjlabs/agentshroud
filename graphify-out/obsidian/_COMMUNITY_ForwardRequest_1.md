@@ -1,35 +1,30 @@
 ---
 type: community
-cohesion: 0.10
-members: 20
+cohesion: 0.18
+members: 15
 ---
 
 # ForwardRequest
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 20 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[dot-test_approval_queue_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_container_hardening()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_drift_detector_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_egress_filter_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_encrypted_store_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_extensive_approval_actions()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_has_auth_token_placeholder()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_has_memory_limit()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_has_seccomp_profile()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_kill_switch_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_long_retention()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_pii_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_pii_engine_presidio()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_prompt_guard_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_rootless()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_ssh_requires_approval()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_telemetry_disabled()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_trust_manager_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[TestParanoidConfig]] - code - gateway/tests/test_config_validation.py
-- [[paranoid.env should enable ALL security features.]] - rationale - gateway/tests/test_config_validation.py
+- [[dot-_extract_code_blocks()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[dot-_is_internal_link()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[dot-_restore_code_blocks()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[dot-_url_has_blocked_patterns()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[dot-sanitize()_4]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[dot-sanitize_images()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[dot-sanitize_links()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Check if URL contains any blocked patterns.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Check if this is an internal link (relative, anchor, etc.).]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Enhanced markdown sanitizer with configurable domain allowlist.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Extract code blocks to preserve them during sanitization.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Remove or warn about markdown images pointing to non-allowlisted domains.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Restore code blocks after sanitization.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Sanitize tool result content by filtering markdown links and images.          Ar]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[ToolResultSanitizer_1]] - code - gateway/security/tool_result_sanitizer_enhanced.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,7 +34,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_AgentTarget]]
+- 11 edges to [[_COMMUNITY_MiddlewareManager]]
+- 10 edges to [[_COMMUNITY_TestSSRFDetection_2]]
+- 2 edges to [[_COMMUNITY_dot-_domain_matches_pattern]]
+- 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Blue Team Security Audit Report_4]]
+- 1 edge to [[_COMMUNITY_InjectionAction]]
+- 1 edge to [[_COMMUNITY_dot-setup_method]]
+- 1 edge to [[_COMMUNITY_egress_filter.py_1]]
 
 ## Top bridge nodes
-- [[TestParanoidConfig]] - degree 23, connects to 1 community
+- [[ToolResultSanitizer_1]] - degree 34, connects to 7 communities
+- [[dot-sanitize()_4]] - degree 7, connects to 1 community

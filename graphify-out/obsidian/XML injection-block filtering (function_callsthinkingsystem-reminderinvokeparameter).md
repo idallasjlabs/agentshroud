@@ -11,6 +11,6 @@ tags:
 # XML injection-block filtering (function_calls/thinking/system-reminder/invoke/parameter)
 
 ## Connections
-- [[PIISanitizer_2]] - `rationale_for` [EXTRACTED]
+- [[PIISanitizer_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/concept #graphify/EXTRACTED #community/PIIConfig

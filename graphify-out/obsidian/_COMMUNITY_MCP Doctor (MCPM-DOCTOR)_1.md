@@ -10,10 +10,10 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[MCP Doctor (MCPM-DOCTOR)_1]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
-- [[Purpose_52]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
-- [[Related Skills_38]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
-- [[Usage_42]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
+- [[MCP Doctor (MCPM-DOCTOR)]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
+- [[Purpose_41]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
+- [[Related Skills_30]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
+- [[Usage_33]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
 - [[openclawskillsi-mcpm-doctorREADME]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
 
 ## Live Query (requires Dataview plugin)
@@ -27,4 +27,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[MCP Doctor (MCPM-DOCTOR)_1]] - degree 5, connects to 1 community
+- [[MCP Doctor (MCPM-DOCTOR)]] - degree 5, connects to 1 community

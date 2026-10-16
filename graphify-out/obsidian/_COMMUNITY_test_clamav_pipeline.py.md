@@ -45,10 +45,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_AsyncMock]]
-- 3 edges to [[_COMMUNITY_PIIConfig]]
+- 7 edges to [[_COMMUNITY_AsyncMock_1]]
 - 3 edges to [[_COMMUNITY_parse_clamscan_output]]
-- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 3 edges to [[_COMMUNITY_PipelineAction]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
 - 1 edge to [[_COMMUNITY_test_e2e_proxy.py]]
 
 ## Top bridge nodes

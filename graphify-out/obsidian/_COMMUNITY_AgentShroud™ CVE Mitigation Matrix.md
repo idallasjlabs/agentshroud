@@ -24,7 +24,7 @@ members: 37
 - [[Container-Image CVE Domain (our own images)]] - concept - docs/security/cve-mitigation-matrix.md
 - [[Currently Unmitigable Residual (verified no fix exists anywhere yet)]] - document - docs/security/cve-mitigation-matrix.md
 - [[Daily GHSA  NVD Registry Sync]] - concept - docs/security/cve-mitigation-matrix.md
-- [[Executive Summary_3]] - document - docs/security/cve-mitigation-matrix.md
+- [[Executive Summary_5]] - document - docs/security/cve-mitigation-matrix.md
 - [[Fresh-DB vs Cached-DB Trivy Verification]] - rationale - docs/security/cve-mitigation-matrix.md
 - [[Gateway image (fresh-DB residual 5C  132H — all `fix NONE` or in-place-unfixable)]] - document - docs/security/cve-mitigation-matrix.md
 - [[Gitleaks Allowlist Strategy]] - concept - docs/security/secrets-inventory.md
@@ -41,7 +41,7 @@ members: 37
 - [[Tier 1 — Hand-Curated CVEs (AgentShroud-Specific Mitigations)]] - document - docs/security/cve-mitigation-matrix.md
 - [[Tier 3 — NVD-Sourced Bulk CVEs (276 entries)]] - document - docs/security/cve-mitigation-matrix.md
 - [[Under Review Is Honest, Not Mitigated]] - rationale - docs/security/cve-mitigation-matrix.md
-- [[Verification_2]] - document - docs/security/cve-mitigation-matrix.md
+- [[Verification_1]] - document - docs/security/cve-mitigation-matrix.md
 - [[hermes image (93 residual, all Debian, all `fix NONE`)]] - document - docs/security/cve-mitigation-matrix.md
 - [[openclaw image (2 residual)]] - document - docs/security/cve-mitigation-matrix.md
 - [[slsa-verifier From-Source Dependency Override]] - concept - docs/security/cve-mitigation-matrix.md
@@ -56,7 +56,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Action]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL_3]]
 - 1 edge to [[_COMMUNITY_ESP32-S3-BOX-3 Voice Terminal_1]]
 - 1 edge to [[_COMMUNITY_Local-Model Job Quality Matrix]]
 

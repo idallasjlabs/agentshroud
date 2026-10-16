@@ -1,22 +1,15 @@
 ---
 type: community
-cohesion: 0.04
-members: 57
+cohesion: 0.05
+members: 44
 ---
 
 # GroupConfig
 
-**Cohesion:** 0.04 - loosely connected
-**Members:** 57 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 44 nodes
 
 ## Members
-- [[dot-coerce_members()]] - code - gateway/security/group_config.py
-- [[dot-get_group_safe_response_prefix()]] - code - gateway/security/group_config.py
-- [[dot-get_user_collab_mode()]] - code - gateway/security/group_config.py
-- [[dot-get_user_groups()]] - code - gateway/security/group_config.py
-- [[dot-is_admin()]] - code - gateway/security/group_config.py
-- [[dot-is_group_admin()]] - code - gateway/security/group_config.py
-- [[dot-is_member()]] - code - gateway/security/group_config.py
 - [[dot-test_apply_persisted_overrides_skips_user_overrides_key()]] - code - gateway/tests/test_group_config.py
 - [[dot-test_empty_prefix_string_not_returned()]] - code - gateway/tests/test_group_config.py
 - [[dot-test_empty_teams_parses()]] - code - gateway/tests/test_group_config.py
@@ -45,15 +38,9 @@ members: 57
 - [[dot-test_unknown_user_returns_local_only()]] - code - gateway/tests/test_group_config.py
 - [[dot-test_unknown_user_returns_none()]] - code - gateway/tests/test_group_config.py
 - [[dot-test_user_override_takes_precedence_over_group()]] - code - gateway/tests/test_group_config.py
-- [[dot-validate_mode()]] - code - gateway/security/group_config.py
-- [[A team group with members, admin, projects, and collab mode.]] - rationale - gateway/security/group_config.py
 - [[Calling persist_user_collab_mode twice updates the stored value.]] - rationale - gateway/tests/test_group_config.py
-- [[GroupConfig]] - code - gateway/security/group_config.py
 - [[Per-user collab_mode override persists to group_overrides.json and takes     pr]] - rationale - gateway/tests/test_group_config.py
 - [[Per-user override beats group-derived collab_mode.]] - rationale - gateway/tests/test_group_config.py
-- [[Return all groups the user belongs to.]] - rationale - gateway/security/group_config.py
-- [[Return the effective collab_mode for a user.          Resolution order]] - rationale - gateway/security/group_config.py
-- [[Return the safe_response_prefix for the first group that the user belongs to]] - rationale - gateway/security/group_config.py
 - [[TeamsConfig]] - code - gateway/tests/test_group_config.py
 - [[TestAdminChecks]] - code - gateway/tests/test_group_config.py
 - [[TestCollabMode]] - code - gateway/tests/test_group_config.py
@@ -76,14 +63,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY_RBACConfig]]
-- 11 edges to [[_COMMUNITY_telegram_proxy.py]]
-- 4 edges to [[_COMMUNITY_telegram_proxy.py_1]]
-- 3 edges to [[_COMMUNITY_socrouter.py]]
+- 20 edges to [[_COMMUNITY_telegram_proxy.py]]
+- 3 edges to [[_COMMUNITY_telegram_proxy.py_1]]
 
 ## Top bridge nodes
-- [[GroupConfig]] - degree 32, connects to 4 communities
 - [[test_group_config.py]] - degree 11, connects to 2 communities
-- [[dot-get_user_groups()]] - degree 6, connects to 2 communities
 - [[TestGroupSafeResponsePrefix]] - degree 10, connects to 1 community
 - [[TestUserCollabModeOverride]] - degree 9, connects to 1 community
+- [[TeamsConfig]] - degree 7, connects to 1 community
+- [[TestMembershipQueries]] - degree 7, connects to 1 community

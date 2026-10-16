@@ -10,10 +10,10 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Atlas — Curriculum Architect_1]] - document - docker/config/openclaw/skills/i-atlas/README.md
-- [[Purpose_39]] - document - docker/config/openclaw/skills/i-atlas/README.md
-- [[Related Skills_25]] - document - docker/config/openclaw/skills/i-atlas/README.md
-- [[Usage_29]] - document - docker/config/openclaw/skills/i-atlas/README.md
+- [[Atlas — Curriculum Architect]] - document - docker/config/openclaw/skills/i-atlas/README.md
+- [[Purpose_28]] - document - docker/config/openclaw/skills/i-atlas/README.md
+- [[Related Skills_17]] - document - docker/config/openclaw/skills/i-atlas/README.md
+- [[Usage_20]] - document - docker/config/openclaw/skills/i-atlas/README.md
 - [[openclawskillsi-atlasREADME]] - document - docker/config/openclaw/skills/i-atlas/README.md
 
 ## Live Query (requires Dataview plugin)
@@ -27,4 +27,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[Atlas — Curriculum Architect_1]] - degree 5, connects to 1 community
+- [[Atlas — Curriculum Architect]] - degree 5, connects to 1 community

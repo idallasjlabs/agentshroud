@@ -22,7 +22,7 @@ members: 15
 - [[Personal Infrastructure Monitor]] - document - docs/planning/RELEASE-PLAN.md
 - [[SSH Chat Interface (moved from v1.0.0 on 2026-03-20)]] - document - docs/planning/RELEASE-PLAN.md
 - [[Secure Voice (moved from v0.9.0 on 2026-03-04)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Security Hardening_4]] - document - docs/planning/RELEASE-PLAN.md
+- [[Security Hardening_3]] - document - docs/planning/RELEASE-PLAN.md
 - [[iOSmacOS Shortcuts]] - document - docs/planning/RELEASE-PLAN.md
 - [[v1.3.0 — Platform Expansion (53 items)]] - document - docs/planning/RELEASE-PLAN.md
 

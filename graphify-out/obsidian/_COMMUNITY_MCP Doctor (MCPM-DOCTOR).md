@@ -1,20 +1,22 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.29
+members: 7
 ---
 
 # MCP Doctor (MCPM-DOCTOR)
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[dot-agentsskillsi-mcpm-doctorREADME]] - document - .agents/skills/i-mcpm-doctor/README.md
-- [[MCP Doctor (MCPM-DOCTOR)]] - document - .agents/skills/i-mcpm-doctor/README.md
-- [[Purpose_24]] - document - .agents/skills/i-mcpm-doctor/README.md
-- [[Related Skills_10]] - document - .agents/skills/i-mcpm-doctor/README.md
-- [[Usage_14]] - document - .agents/skills/i-mcpm-doctor/README.md
+- [[VII-A. Enforce-by-Default (R-02, R-03)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VII-B. Outbound Information Filter (R-01)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VII-C. Per-User Session Isolation (R-04, R-05)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VII-D. Separation of Privilege (R-06, R-07)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VII-E. Human-in-the-Loop (R-08, R-09)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VII-F. Credential Isolation (R-10, R-11, R-12)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VII. v0.8.0 Remediation]] - document - docs/papers/agentshroud-ieee-paper.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]]
 
 ## Top bridge nodes
-- [[MCP Doctor (MCPM-DOCTOR)]] - degree 5, connects to 1 community
+- [[VII. v0.8.0 Remediation]] - degree 7, connects to 1 community

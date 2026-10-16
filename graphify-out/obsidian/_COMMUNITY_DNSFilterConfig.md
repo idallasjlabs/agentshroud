@@ -1,24 +1,24 @@
 ---
 type: community
 cohesion: 0.04
-members: 73
+members: 74
 ---
 
 # DNSFilterConfig
 
 **Cohesion:** 0.04 - loosely connected
-**Members:** 73 nodes
+**Members:** 74 nodes
 
 ## Members
-- [[dot-__init__()_171]] - code - gateway/security/dns_filter.py
+- [[dot-__init__()_157]] - code - gateway/security/dns_filter.py
 - [[dot-_cleanup_rate_window()]] - code - gateway/security/dns_filter.py
 - [[dot-_detect_tunneling()]] - code - gateway/security/dns_filter.py
 - [[dot-_domain_in_allowlist()]] - code - gateway/security/dns_filter.py
 - [[dot-_is_private_ip()_2]] - code - gateway/security/dns_filter.py
-- [[dot-check()_6]] - code - gateway/security/dns_filter.py
+- [[dot-check()_5]] - code - gateway/security/dns_filter.py
 - [[dot-check_rebinding()]] - code - gateway/security/dns_filter.py
 - [[dot-dns_filter()]] - code - gateway/tests/test_dns_filter.py
-- [[dot-get_audit_log()_5]] - code - gateway/security/dns_filter.py
+- [[dot-get_audit_log()_7]] - code - gateway/security/dns_filter.py
 - [[dot-get_flagged_queries()]] - code - gateway/security/dns_filter.py
 - [[dot-resolve_and_cache()]] - code - gateway/security/dns_filter.py
 - [[dot-shannon_entropy()]] - code - gateway/security/dns_filter.py
@@ -29,7 +29,7 @@ members: 73
 - [[dot-test_burst_queries_flagged()]] - code - gateway/tests/test_dns_filter.py
 - [[dot-test_common_services_allowed()]] - code - gateway/tests/test_dns_filter.py
 - [[dot-test_default_allows_all_domains()]] - code - gateway/tests/test_dns_filter.py
-- [[dot-test_default_mode_is_enforce()_6]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_default_mode_is_enforce()_5]] - code - gateway/tests/test_dns_filter.py
 - [[dot-test_empty_string()]] - code - gateway/tests/test_dns_filter.py
 - [[dot-test_enforce_mode_blocks_tunneling()]] - code - gateway/tests/test_dns_filter.py
 - [[dot-test_flagged_queries_in_log()]] - code - gateway/tests/test_dns_filter.py
@@ -55,7 +55,8 @@ members: 73
 - [[dot-test_subdomain_allowed()]] - code - gateway/tests/test_dns_filter.py
 - [[dot-test_very_long_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
 - [[DNSFilter]] - code - gateway/security/dns_filter.py
-- [[DNSQuery_1]] - code - gateway/security/dns_filter.py
+- [[DNSFilterConfig]] - code - gateway/security/dns_filter.py
+- [[DNSQuery]] - code - gateway/security/dns_filter.py
 - [[DNSVerdict]] - code - gateway/security/dns_filter.py
 - [[Default mode is enforce after v0.8.0 enforcement hardening._2]] - rationale - gateway/tests/test_dns_filter.py
 - [[Even suspicious queries pass in monitor mode.]] - rationale - gateway/tests/test_dns_filter.py
@@ -73,11 +74,11 @@ members: 73
 - [[TestDNSTunnelingDetection]] - code - gateway/tests/test_dns_filter.py
 - [[TestEntropyCalculator]] - code - gateway/tests/test_dns_filter.py
 - [[TestNormalDNSResolution]] - code - gateway/tests/test_dns_filter.py
-- [[TestRateLimiting_3]] - code - gateway/tests/test_dns_filter.py
+- [[TestRateLimiting_4]] - code - gateway/tests/test_dns_filter.py
 - [[TunnelingPattern]] - code - gateway/security/dns_filter.py
-- [[default_config()_3]] - code - gateway/tests/test_dns_filter.py
+- [[default_config()_4]] - code - gateway/tests/test_dns_filter.py
 - [[dns_filter()]] - code - gateway/tests/test_dns_filter.py
-- [[dns_filter.py_2]] - code - gateway/security/dns_filter.py
+- [[dns_filter.py]] - code - gateway/security/dns_filter.py
 - [[monitor_config()_2]] - code - gateway/tests/test_dns_filter.py
 - [[monitor_filter()]] - code - gateway/tests/test_dns_filter.py
 - [[strict_config()_2]] - code - gateway/tests/test_dns_filter.py
@@ -92,18 +93,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 26 edges to [[_COMMUNITY_MiddlewareManager]]
-- 11 edges to [[_COMMUNITY_AlertDispatcher]]
+- 23 edges to [[_COMMUNITY_AlertDispatcher]]
+- 20 edges to [[_COMMUNITY_MiddlewareManager]]
+- 5 edges to [[_COMMUNITY_MiddlewareManager_8]]
+- 2 edges to [[_COMMUNITY_KillSwitchMonitor_1]]
 - 1 edge to [[_COMMUNITY_WebContentScanner]]
 - 1 edge to [[_COMMUNITY_ProxyAction]]
-- 1 edge to [[_COMMUNITY_Action]]
-- 1 edge to [[_COMMUNITY_parse_clamscan_output]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager_2]]
+- 1 edge to [[_COMMUNITY_ResourceGuard]]
+- 1 edge to [[_COMMUNITY_egress_filter.py]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL_3]]
 - 1 edge to [[_COMMUNITY_test_dns_canvas_coverage.py]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_6]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher_1]]
 
 ## Top bridge nodes
-- [[dns_filter.py_2]] - degree 9, connects to 5 communities
-- [[test_dns_filter.py]] - degree 18, connects to 3 communities
-- [[DNSFilter]] - degree 36, connects to 2 communities
-- [[TestDNSTunnelingDetection]] - degree 10, connects to 2 communities
-- [[TestDNSRebinding]] - degree 9, connects to 2 communities
+- [[DNSFilterConfig]] - degree 46, connects to 8 communities
+- [[dns_filter.py]] - degree 9, connects to 4 communities
+- [[DNSFilter]] - degree 36, connects to 3 communities
+- [[test_dns_filter.py]] - degree 18, connects to 2 communities
+- [[TestDNSTunnelingDetection]] - degree 10, connects to 1 community

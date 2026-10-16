@@ -14,7 +14,7 @@ members: 18
 - [[Default Limits]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
 - [[Function Details_8]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
 - [[Key Classes  Functions_8]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[Purpose_111]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[Purpose_108]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
 - [[Related_12]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
 - [[ResourceGuard.__init__(limits)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
 - [[ResourceGuard.add_alert_callback(callback)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
@@ -25,7 +25,7 @@ members: 18
 - [[ResourceGuard.register_temp_file(agent_id, file_path)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
 - [[ResourceGuard.start_request_tracking(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
 - [[Responsibilities_10]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[Threat Model_8]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[Threat Model_9]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
 - [[resource_guard.py_2]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
 - [[resource_guard.py_1]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
 

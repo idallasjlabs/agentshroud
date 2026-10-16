@@ -13,10 +13,10 @@ members: 13
 - [[Configuration  Environment Variables_25]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
 - [[Function Details_45]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
 - [[Key Classes  Functions_47]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[Purpose_181]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[Purpose_182]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
 - [[RateLimiter.check(domain, rpm_limit)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
 - [[Related_51]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[Responsibilities_49]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[Responsibilities_48]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
 - [[Security Check Order (check_request)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
 - [[WebProxy._audit(event_type, url, metadata)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
 - [[WebProxy.check_request(url, method, headers)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md

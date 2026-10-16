@@ -65,13 +65,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 33 edges to [[_COMMUNITY_TelegramAPIProxy_2]]
+- 34 edges to [[_COMMUNITY_TelegramAPIProxy_2]]
 - 2 edges to [[_COMMUNITY_dot-_proxy_request_impl]]
-- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
 
 ## Top bridge nodes
-- [[dot-_queue_collaborator_access_request()]] - degree 6, connects to 2 communities
 - [[dot-_resolve_display_name()]] - degree 6, connects to 2 communities
 - [[dot-_forward_to_telegram()]] - degree 5, connects to 2 communities
 - [[dot-_active_send_token()]] - degree 13, connects to 1 community
 - [[dot-_send_local_notice_with_fallback()]] - degree 13, connects to 1 community
+- [[dot-_queue_collaborator_access_request()]] - degree 6, connects to 1 community

@@ -34,8 +34,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_test_daily_cve_report.py]]
+- 3 edges to [[_COMMUNITY_test_daily_cve_report.py_1]]
+- 2 edges to [[_COMMUNITY_test_daily_cve_report.py]]
 
 ## Top bridge nodes
-- [[format_upstream_cve_alert()]] - degree 15, connects to 1 community
+- [[format_upstream_cve_alert()]] - degree 15, connects to 2 communities
 - [[TestFormatUpstreamCveAlert]] - degree 12, connects to 1 community

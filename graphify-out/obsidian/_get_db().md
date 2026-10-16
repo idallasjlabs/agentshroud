@@ -12,7 +12,7 @@ tags:
 # _get_db()
 
 ## Connections
-- [[Connection_1]] - `references` [EXTRACTED]
+- [[Connection]] - `references` [EXTRACTED]
 - [[Get SQLite connection for version history.]] - `rationale_for` [EXTRACTED]
 - [[agentshroud_manager.py]] - `contains` [EXTRACTED]
 - [[check_current_version()]] - `calls` [EXTRACTED]

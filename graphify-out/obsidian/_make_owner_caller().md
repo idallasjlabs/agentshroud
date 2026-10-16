@@ -38,8 +38,8 @@ tags:
 - [[dot-test_unknown_bot_id_returns_error()]] - `calls` [EXTRACTED]
 - [[dot-test_unknown_bot_returns_error()]] - `calls` [EXTRACTED]
 - [[Build an SCLCaller with OWNER role — no FastAPI dependency resolution.]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller_1]] - `calls` [EXTRACTED]
-- [[SCLCaller_2]] - `references` [EXTRACTED]
+- [[SCLCaller_2]] - `calls` [EXTRACTED]
+- [[SCLCaller_1]] - `references` [EXTRACTED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_botspy

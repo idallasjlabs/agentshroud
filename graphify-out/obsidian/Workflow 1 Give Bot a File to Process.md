@@ -12,6 +12,6 @@ tags:
 # Workflow 1: Give Bot a File to Process
 
 ## Connections
-- [[Common Workflows]] - `contains` [EXTRACTED]
+- [[Common Workflows_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

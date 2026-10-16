@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[get_1]] - code
+- [[post]] - code
 
 ## Live Query (requires Dataview plugin)
 

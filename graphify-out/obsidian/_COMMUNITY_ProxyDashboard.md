@@ -10,7 +10,7 @@ members: 43
 **Members:** 43 nodes
 
 ## Members
-- [[dot-__init__()_51]] - code - gateway/dashboard/proxy_status.py
+- [[dot-__init__()_184]] - code - gateway/dashboard/proxy_status.py
 - [[dot-get_display()]] - code - gateway/dashboard/proxy_status.py
 - [[dot-get_report()]] - code - gateway/dashboard/proxy_status.py
 - [[dot-record_message_proxied()]] - code - gateway/dashboard/proxy_status.py
@@ -64,8 +64,8 @@ SORT file.name ASC
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
 - 1 edge to [[_COMMUNITY_api.py]]
-- 1 edge to [[_COMMUNITY_test_security_toolchain.py_1]]
-- 1 edge to [[_COMMUNITY_test_e2e_proxy.py]]
+- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
+- 1 edge to [[_COMMUNITY_egress_filter.py_3]]
 
 ## Top bridge nodes
 - [[ProxyDashboard]] - degree 27, connects to 2 communities

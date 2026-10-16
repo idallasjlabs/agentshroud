@@ -1,21 +1,26 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.18
+members: 11
 ---
 
 # PIIConfig
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[ToolResultSanitizer._extract_dict_content]] - code - gateway/security/tool_result_sanitizer.py
-- [[ToolResultSanitizer._extract_scannable_content]] - code - gateway/security/tool_result_sanitizer.py
-- [[ToolResultSanitizer._get_sanitizer_for_tool]] - code - gateway/security/tool_result_sanitizer.py
-- [[ToolResultSanitizer._log_redaction_audit]] - code - gateway/security/tool_result_sanitizer.py
-- [[ToolResultSanitizer._reconstruct_result]] - code - gateway/security/tool_result_sanitizer.py
-- [[ToolResultSanitizer.sanitize_tool_result]] - code - gateway/security/tool_result_sanitizer.py
+- [[dot-test_demotion_on_violations()]] - code - gateway/tests/test_trust_manager.py
+- [[dot-test_failure_decreases_score()]] - code - gateway/tests/test_trust_manager.py
+- [[dot-test_promotion_on_threshold()]] - code - gateway/tests/test_trust_manager.py
+- [[dot-test_score_floor_at_zero()]] - code - gateway/tests/test_trust_manager.py
+- [[dot-test_success_increases_score()]] - code - gateway/tests/test_trust_manager.py
+- [[dot-test_violation_severe_penalty()]] - code - gateway/tests/test_trust_manager.py
+- [[Agent should be demoted on violations.]] - rationale - gateway/tests/test_trust_manager.py
+- [[Agent should be promoted when score crosses threshold.]] - rationale - gateway/tests/test_trust_manager.py
+- [[Score should not go below 0.]] - rationale - gateway/tests/test_trust_manager.py
+- [[Test earning and losing trust.]] - rationale - gateway/tests/test_trust_manager.py
+- [[TestTrustProgression]] - code - gateway/tests/test_trust_manager.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,8 +30,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_PIIConfig]]
+- 4 edges to [[_COMMUNITY_TrustConfig]]
 
 ## Top bridge nodes
-- [[ToolResultSanitizer.sanitize_tool_result]] - degree 5, connects to 1 community
-- [[ToolResultSanitizer._get_sanitizer_for_tool]] - degree 2, connects to 1 community
+- [[TestTrustProgression]] - degree 11, connects to 1 community

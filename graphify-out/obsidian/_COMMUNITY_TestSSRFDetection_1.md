@@ -1,32 +1,49 @@
 ---
 type: community
-cohesion: 0.17
-members: 17
+cohesion: 0.06
+members: 34
 ---
 
 # TestSSRFDetection
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 17 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 34 nodes
 
 ## Members
-- [[dot-_check_base64()]] - code - gateway/proxy/url_analyzer.py
-- [[dot-_is_private_ip()_1]] - code - gateway/proxy/url_analyzer.py
-- [[dot-_is_ssrf()]] - code - gateway/proxy/url_analyzer.py
-- [[dot-_resolve_host()]] - code - gateway/proxy/url_analyzer.py
-- [[dot-analyze()_1]] - code - gateway/proxy/url_analyzer.py
-- [[dot-analyze_and_pin()]] - code - gateway/proxy/url_analyzer.py
-- [[dot-flagged()_2]] - code - gateway/proxy/url_analyzer.py
-- [[A single finding from URL analysis.]] - rationale - gateway/proxy/url_analyzer.py
-- [[Analyze URL and pin resolved IP to mitigate DNS rebinding TOCTOU.          When]] - rationale - gateway/proxy/url_analyzer.py
-- [[Analyze a URL for security issues.          Returns URLAnalysisResult with verdi]] - rationale - gateway/proxy/url_analyzer.py
-- [[Check for base64-encoded data in URL path and query values.]] - rationale - gateway/proxy/url_analyzer.py
-- [[Check if an IP address is privatereservedloopback.]] - rationale - gateway/proxy/url_analyzer.py
-- [[Check if hostname is a privatereserved address (SSRF attempt).]] - rationale - gateway/proxy/url_analyzer.py
-- [[Resolve hostname to IP. Returns None on failure.          NOTE DNS rebinding at]] - rationale - gateway/proxy/url_analyzer.py
-- [[Result of analyzing a URL.]] - rationale - gateway/proxy/url_analyzer.py
-- [[URLAnalysisResult_1]] - code - gateway/proxy/url_analyzer.py
-- [[URLFinding]] - code - gateway/proxy/url_analyzer.py
+- [[EgressAllowlistResponse]] - code - gateway/web/management.py
+- [[EgressAllowlistUpdate]] - code - gateway/web/management.py
+- [[Falco runtime security alerts viewer.]] - rationale - gateway/web/management.py
+- [[Get current egress allowlist configuration.]] - rationale - gateway/web/management.py
+- [[Get overall credential health score and status summary.]] - rationale - gateway/web/management.py
+- [[Get status of all managed credentials including age and rotation schedule.]] - rationale - gateway/web/management.py
+- [[Request model for updating egress allowlist.]] - rationale - gateway/web/management.py
+- [[Response model for egress allowlist.]] - rationale - gateway/web/management.py
+- [[Security tools overview — links to all tool-specific dashboards.]] - rationale - gateway/web/management.py
+- [[Serve the SSH hosts page.]] - rationale - gateway/web/management.py
+- [[Serve the approval queue page.]] - rationale - gateway/web/management.py
+- [[Serve the audit log page.]] - rationale - gateway/web/management.py
+- [[Serve the collaborators page (dynamic — fetches live activity data).]] - rationale - gateway/web/management.py
+- [[Serve the emergency kill switch page.]] - rationale - gateway/web/management.py
+- [[Serve the main management dashboard.]] - rationale - gateway/web/management.py
+- [[Serve the security modules page (dynamic — fetches live data).]] - rationale - gateway/web/management.py
+- [[Trigger manual rotation for a specific credential (owner only).]] - rationale - gateway/web/management.py
+- [[Wazuh HIDS alerts and FIM events viewer.]] - rationale - gateway/web/management.py
+- [[approvals()]] - code - gateway/web/management.py
+- [[audit()]] - code - gateway/web/management.py
+- [[collaborators()]] - code - gateway/web/management.py
+- [[credentials_health()]] - code - gateway/web/management.py
+- [[credentials_status()]] - code - gateway/web/management.py
+- [[dashboard()]] - code - gateway/web/management.py
+- [[dashboard.html (Control Center Template)]] - code - gateway/web/templates/dashboard.html
+- [[falco_dashboard()]] - code - gateway/web/management.py
+- [[get_egress_allowlist()]] - code - gateway/web/management.py
+- [[killswitch()_1]] - code - gateway/web/management.py
+- [[management.py]] - code - gateway/web/management.py
+- [[modules()]] - code - gateway/web/management.py
+- [[rotate_credential()]] - code - gateway/web/management.py
+- [[security_overview()]] - code - gateway/web/management.py
+- [[ssh()]] - code - gateway/web/management.py
+- [[wazuh_dashboard()]] - code - gateway/web/management.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,13 +53,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_TestSSRFDetection_2]]
-- 2 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 1 edge to [[_COMMUNITY_TestSSRFDetection_5]]
+- 7 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 6 edges to [[_COMMUNITY_KeyRotationManager_1]]
+- 6 edges to [[_COMMUNITY_UserSessionManager_4]]
+- 3 edges to [[_COMMUNITY_api.py]]
+- 2 edges to [[_COMMUNITY__FakeRBAC]]
+- 1 edge to [[_COMMUNITY_ModeRequest]]
 
 ## Top bridge nodes
-- [[dot-_check_base64()]] - degree 6, connects to 2 communities
-- [[dot-analyze()_1]] - degree 9, connects to 1 community
-- [[dot-analyze_and_pin()]] - degree 7, connects to 1 community
-- [[URLAnalysisResult_1]] - degree 6, connects to 1 community
-- [[dot-_is_private_ip()_1]] - degree 5, connects to 1 community
+- [[management.py]] - degree 26, connects to 5 communities
+- [[EgressAllowlistUpdate]] - degree 6, connects to 4 communities
+- [[EgressAllowlistResponse]] - degree 6, connects to 3 communities
+- [[credentials_health()]] - degree 4, connects to 2 communities
+- [[credentials_status()]] - degree 4, connects to 2 communities

@@ -62,9 +62,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_PIIConfig]]
 - 7 edges to [[_COMMUNITY_MiddlewareManager]]
-- 2 edges to [[_COMMUNITY_test_docs_accuracy.py_1]]
+- 7 edges to [[_COMMUNITY_PipelineAction]]
+- 2 edges to [[_COMMUNITY_AgentShroud Brand Guidelines_1]]
 - 1 edge to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
 - 1 edge to [[_COMMUNITY_AgentShroud™ README]]
 - 1 edge to [[_COMMUNITY_Contributing to AgentShroud™]]

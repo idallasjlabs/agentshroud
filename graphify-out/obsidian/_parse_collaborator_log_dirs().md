@@ -12,7 +12,7 @@ tags:
 # _parse_collaborator_log_dirs()
 
 ## Connections
-- [[Path_49]] - `references` [EXTRACTED]
+- [[Path_24]] - `references` [EXTRACTED]
 - [[Resolve contributor log directories (ordered, de-duplicated).]] - `rationale_for` [EXTRACTED]
 - [[dashboard.py]] - `contains` [EXTRACTED]
 - [[get_collaborators()]] - `calls` [EXTRACTED]

@@ -36,9 +36,9 @@ members: 34
 - [[MCP Troubleshooting]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
 - [[Opening serial monitor resets the device]] - document - firmware/voice-terminal/SETUP.md
 - [[PSRAM shows 0 KB in logs]] - document - firmware/voice-terminal/SETUP.md
-- [[Role_23]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[Role_22]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
 - [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
-- [[Troubleshooting_12]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Troubleshooting_13]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
 - [[Undeclared symbol `lv_font_montserrat_28`]] - document - firmware/voice-terminal/SETUP.md
 - [[WebSocket connect times out forever (handshake reaches HTTP 101, then dies)]] - document - firmware/voice-terminal/SETUP.md
 - [[WiFi won't connect — reason=201 NO_AP_FOUND]] - document - firmware/voice-terminal/SETUP.md
@@ -61,5 +61,5 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[10. Troubleshooting]] - degree 29, connects to 4 communities
-- [[Troubleshooting_12]] - degree 6, connects to 1 community
+- [[Troubleshooting_13]] - degree 6, connects to 1 community
 - [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - degree 6, connects to 1 community

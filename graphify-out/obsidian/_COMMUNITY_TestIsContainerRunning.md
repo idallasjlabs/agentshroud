@@ -10,9 +10,9 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[dot-__init__()_205]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-__init__()_20]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[dot-_patch_http()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-read()_2]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-read()]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[dot-test_404_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[dot-test_running_container_returns_true()]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[dot-test_socket_error_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
@@ -28,7 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_test_scanner_integration_coverage.py]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig_7]]
 
 ## Top bridge nodes
 - [[TestIsContainerRunning]] - degree 6, connects to 1 community

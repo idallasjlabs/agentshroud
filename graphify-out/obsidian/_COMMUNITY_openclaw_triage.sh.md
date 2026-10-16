@@ -10,7 +10,7 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[log()_2]] - code - scripts/openclaw_triage.sh
+- [[log()_3]] - code - scripts/openclaw_triage.sh
 - [[openclaw_triage.sh]] - code - scripts/openclaw_triage.sh
 - [[openclaw_triage.sh script]] - code - scripts/openclaw_triage.sh
 - [[save_cmd()]] - code - scripts/openclaw_triage.sh

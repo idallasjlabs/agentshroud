@@ -12,9 +12,9 @@ tags:
 # _FakeSmtp
 
 ## Connections
-- [[dot-__enter__()_1]] - `method` [EXTRACTED]
-- [[dot-__exit__()_1]] - `method` [EXTRACTED]
-- [[dot-__init__()_71]] - `method` [EXTRACTED]
+- [[dot-__enter__()_3]] - `method` [EXTRACTED]
+- [[dot-__exit__()_3]] - `method` [EXTRACTED]
+- [[dot-__init__()_69]] - `method` [EXTRACTED]
 - [[dot-login()_1]] - `method` [EXTRACTED]
 - [[dot-sendmail()_1]] - `method` [EXTRACTED]
 - [[GatewayEmailService_1]] - `uses` [INFERRED]

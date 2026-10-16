@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/export-email-reports.py"
 type: "code"
-community: "export_bot"
+community: "export-bot-conversations.py"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export_bot
+  - community/export-bot-conversationspy
 ---
 
 # _parse_since()
@@ -17,6 +17,6 @@ tags:
 - [[_parse_since()_2]] - `semantically_similar_to` [INFERRED]
 - [[datetime_7]] - `references` [EXTRACTED]
 - [[export-email-reports.py]] - `contains` [EXTRACTED]
-- [[main()_21]] - `calls` [EXTRACTED]
+- [[main()_31]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export_bot
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy

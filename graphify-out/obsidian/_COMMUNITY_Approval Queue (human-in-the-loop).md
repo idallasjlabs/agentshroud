@@ -17,7 +17,7 @@ members: 24
 - [[Approval Queue State Diagram (pending → approvedrejectedexpired)]] - image - docs/diagrams/images/diagram-16-state-approval-queue.png
 - [[Approval queue data (in-memory, backed by SQLite)]] - image - docs/diagrams/images/diagram-10-data-dictionary.png
 - [[Bot Session State Diagram (fresh → active → idlecompacting → reset)]] - image - docs/diagrams/images/diagram-17-state-bot-session.png
-- [[Current Status_6]] - document - docs/flows/README.md
+- [[Current Status_8]] - document - docs/flows/README.md
 - [[Data Lineage Diagram (5-Layer Pipeline)]] - image - docs/diagrams/images/diagram-09-data-lineage.png
 - [[EphemeralTransient data (never persisted raw)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
 - [[Flows Documentation]] - document - docs/flows/README.md
@@ -29,7 +29,7 @@ members: 24
 - [[PII Redaction (Presidio-style pattern matching PHONE_NUMBER, EMAIL_ADDRESS, SSN, etc.)]] - concept - docs/diagrams/images/diagram-09-data-lineage.png
 - [[PII redaction result (hash only in ledger, never persisted raw)]] - image - docs/diagrams/images/diagram-10-data-dictionary.png
 - [[Peer binding Telegram 8096968754 → agentmain]] - image - docs/diagrams/images/diagram-15-sequence-telegram.png
-- [[Planned Documents_4]] - document - docs/flows/README.md
+- [[Planned Documents_5]] - document - docs/flows/README.md
 - [[SHA-256 content hashing (original_content_hash + sanitized content_hash)]] - concept - docs/diagrams/images/diagram-09-data-lineage.png
 - [[Telegram Message Sequence Diagram]] - image - docs/diagrams/images/diagram-15-sequence-telegram.png
 - [[flowsREADME]] - document - docs/flows/README.md
@@ -46,7 +46,7 @@ SORT file.name ASC
 - 6 edges to [[_COMMUNITY_AgentShroud Development Roadmap — 2026 Gantt Chart]]
 - 3 edges to [[_COMMUNITY_1Password op-proxy (POST credentialsop-proxy; validates GATEWAY_AUTH_TOKEN + allowed_op_paths; cascading retry 5s,10s,15s,30s,60s)]]
 - 2 edges to [[_COMMUNITY_AgentShroud v0.7.0 Enforcement Audit Results]]
-- 1 edge to [[_COMMUNITY_AgentShroud Data Assets (root)]]
+- 1 edge to [[_COMMUNITY_System Audit Vault]]
 - 1 edge to [[_COMMUNITY_AgentShroud Gateway (Trust Zone 1) holds 1Password service account, enforces policy, signs ledger entries, controls approval queue, HMACJWT validation]]
 
 ## Top bridge nodes

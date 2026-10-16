@@ -25,7 +25,7 @@ members: 30
 - [[Best Practices_4]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Browser — Secure Browser Automation_3]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Click Element_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Core Security Principles_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Core Security Principles_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Example Apple ID Creation (Semi-Automated)_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Extract Data_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Fetch JavaScript-Heavy Page (Node.js)]] - document - docker/config/hermes/skills/i-browser/SKILL.md
@@ -38,7 +38,7 @@ members: 30
 - [[Security Guarantees_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Take Screenshot_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Troubleshooting_17]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Usage_62]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Usage_58]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[hermesskillsi-browserSKILL]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 
 ## Live Query (requires Dataview plugin)

@@ -1,17 +1,19 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.50
+members: 4
 ---
 
 # TelegramAPIProxy
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[dot-test_raw_web_fetch_json_ip_host_does_not_queue_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Literal IP targets should not enter interactive domain approval flow.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_empty_files_skipped()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_invalid_then_valid()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_missing_dir_returns_none()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestLoadLatestJson]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +23,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
+- 2 edges to [[_COMMUNITY__w]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_7]]
 
 ## Top bridge nodes
-- [[dot-test_raw_web_fetch_json_ip_host_does_not_queue_approval()]] - degree 4, connects to 1 community
+- [[TestLoadLatestJson]] - degree 4, connects to 1 community
+- [[dot-test_empty_files_skipped()]] - degree 2, connects to 1 community
+- [[dot-test_invalid_then_valid()]] - degree 2, connects to 1 community

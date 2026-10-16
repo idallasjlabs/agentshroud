@@ -1,31 +1,34 @@
 ---
 type: community
-cohesion: 0.12
-members: 16
+cohesion: 0.11
+members: 19
 ---
 
 # Layer-by-Layer Breakdown
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 16 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 19 nodes
 
 ## Members
-- [[1. Container Isolation]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[10. Approval Queue]] - document - docs/vault/01 - Architecture/Data Flow.md
-- [[2. Capability Dropping]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[2. Network Isolation]] - document - docs/security/container-policy.md
-- [[2.1 Docker Networks]] - document - docs/security/container-policy.md
-- [[2.2 Exposed Ports]] - document - docs/security/container-policy.md
-- [[2.3 Tailscale Network]] - document - docs/security/container-policy.md
-- [[3. Resource Limits]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[5. Audit Ledger]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[6. DNS Filter]] - document - docs/security/security-architecture.md
-- [[7. Secrets Management]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[7. TLS Termination and Inspection]] - document - docs/security/security-architecture.md
-- [[8. Bot Identity Separation]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[8. Network Rate Limiter]] - document - docs/security/security-architecture.md
-- [[Layer 2 Network Security (4 Modules)]] - document - docs/security/security-architecture.md
-- [[Security Controls_2]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[dot-test_clean_fresh_and_stale_reports()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_clean_no_report_three()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_critical_high_medium_branches()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_failures_score_two()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_fresh_clean_is_optimizing()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_malware_30h_old_scan_measured()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_malware_fresh_scan_optimizing()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_malware_running_but_nothing_scanned()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_not_run_no_binary()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_oscap_binary_present_not_run()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_runtime_noncritical_findings_scores_four()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_stale_report_caps_at_one()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_two_day_old_clean_is_measured()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Path_58]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Set a file's mtime to `hours` hours in the past.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
+- [[TestComplianceAuditing]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestRuntimeProtectionAndMalware]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestVulnerabilityManagement]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[_age()]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,14 +38,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Security Architecture]]
-- 1 edge to [[_COMMUNITY_Security Module Inventory]]
-- 1 edge to [[_COMMUNITY_Audit Ledger (SHA-256 hash only)]]
-- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown]]
-- 1 edge to [[_COMMUNITY_Container Security Policy — AgentShroud]]
+- 8 edges to [[_COMMUNITY__w]]
+- 4 edges to [[_COMMUNITY_ApprovalQueueConfig_7]]
+- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter_12]]
 
 ## Top bridge nodes
-- [[Security Controls_2]] - degree 10, connects to 2 communities
-- [[2. Network Isolation]] - degree 6, connects to 1 community
-- [[Layer 2 Network Security (4 Modules)]] - degree 5, connects to 1 community
-- [[10. Approval Queue]] - degree 2, connects to 1 community
+- [[_age()]] - degree 7, connects to 2 communities
+- [[TestComplianceAuditing]] - degree 6, connects to 1 community
+- [[TestRuntimeProtectionAndMalware]] - degree 5, connects to 1 community
+- [[TestVulnerabilityManagement]] - degree 5, connects to 1 community
+- [[dot-test_clean_fresh_and_stale_reports()]] - degree 3, connects to 1 community

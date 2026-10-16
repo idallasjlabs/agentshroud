@@ -11,9 +11,9 @@ members: 5
 
 ## Members
 - [[CICD Pipeline Advisor (CICD)]] - document - docker/config/openclaw/skills/i-cicd/README.md
-- [[Purpose_43]] - document - docker/config/openclaw/skills/i-cicd/README.md
-- [[Related Skills_29]] - document - docker/config/openclaw/skills/i-cicd/README.md
-- [[Usage_33]] - document - docker/config/openclaw/skills/i-cicd/README.md
+- [[Purpose_32]] - document - docker/config/openclaw/skills/i-cicd/README.md
+- [[Related Skills_21]] - document - docker/config/openclaw/skills/i-cicd/README.md
+- [[Usage_24]] - document - docker/config/openclaw/skills/i-cicd/README.md
 - [[openclawskillsi-cicdREADME]] - document - docker/config/openclaw/skills/i-cicd/README.md
 
 ## Live Query (requires Dataview plugin)

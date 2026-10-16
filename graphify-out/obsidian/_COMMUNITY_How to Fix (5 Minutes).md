@@ -11,7 +11,7 @@ members: 12
 
 ## Members
 - [[BlueBubbles (native macOS iMessage relay)]] - concept - docs/setup/IMESSAGE_STATUS.md
-- [[Current Status_10]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[Current Status_6]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
 - [[How to Fix (5 Minutes)]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
 - [[IMESSAGE_PERMISSION_FIX]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
 - [[IMESSAGE_STATUS]] - document - docs/setup/IMESSAGE_STATUS.md
@@ -31,8 +31,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_AuditChain_2]]
 - 1 edge to [[_COMMUNITY_OpenClaw Bot Container]]
-- 1 edge to [[_COMMUNITY_iMessage Integration Status]]
 
 ## Top bridge nodes
 - [[IMESSAGE_PERMISSION_FIX]] - degree 3, connects to 1 community

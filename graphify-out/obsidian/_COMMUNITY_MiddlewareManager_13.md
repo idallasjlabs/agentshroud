@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-test_config_from_env()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[Test configuration from environment variables.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[dot-test_default_config()_2]] - code - gateway/tests/test_memory_lifecycle.py
+- [[Test default configuration values._1]] - rationale - gateway/tests/test_memory_lifecycle.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +21,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_MiddlewareManager_3]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager_5]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager_4]]
 
 ## Top bridge nodes
-- [[dot-test_config_from_env()]] - degree 2, connects to 1 community
+- [[dot-test_default_config()_2]] - degree 3, connects to 2 communities

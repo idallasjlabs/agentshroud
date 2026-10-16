@@ -1,13 +1,13 @@
 ---
 type: community
-cohesion: 0.24
-members: 10
+cohesion: 0.22
+members: 11
 ---
 
 # NetworkSecurityFinding
 
-**Cohesion:** 0.24 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 11 nodes
 
 ## Members
 - [[dot-_validate_container_runtime_config()]] - code - gateway/security/network_validator.py
@@ -20,6 +20,7 @@ members: 10
 - [[Test NetworkSecurityFinding dataclass structure.]] - rationale - gateway/tests/test_network_validator.py
 - [[Validate a single container's runtime network configuration.]] - rationale - gateway/security/network_validator.py
 - [[Validate runtime network configuration using Docker API.]] - rationale - gateway/security/network_validator.py
+- [[test_network_validator.py]] - code - gateway/tests/test_network_validator.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,15 +30,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_dot-validate_docker_compose_config]]
-- 3 edges to [[_COMMUNITY_AlertDispatcher]]
+- 7 edges to [[_COMMUNITY_dot-validate_docker_compose_config]]
+- 6 edges to [[_COMMUNITY_validate_network_security]]
 - 3 edges to [[_COMMUNITY_TestNetworkValidator]]
-- 1 edge to [[_COMMUNITY_validate_network_security]]
 - 1 edge to [[_COMMUNITY_dot-_parse_service_network_config]]
 
 ## Top bridge nodes
-- [[NetworkSecurityFinding]] - degree 15, connects to 3 communities
-- [[dot-validate_runtime_configuration()]] - degree 6, connects to 2 communities
+- [[NetworkSecurityFinding]] - degree 15, connects to 4 communities
 - [[dot-detect_configuration_drift()]] - degree 5, connects to 2 communities
+- [[test_network_validator.py]] - degree 3, connects to 2 communities
+- [[dot-validate_runtime_configuration()]] - degree 6, connects to 1 community
 - [[dot-_validate_container_runtime_config()]] - degree 4, connects to 1 community
-- [[dot-test_network_security_finding_structure()]] - degree 3, connects to 1 community

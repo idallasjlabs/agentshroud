@@ -1,80 +1,64 @@
 ---
 type: community
-cohesion: 0.04
-members: 65
+cohesion: 0.07
+members: 49
 ---
 
 # MiddlewareManager
 
-**Cohesion:** 0.04 - loosely connected
-**Members:** 65 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 49 nodes
 
 ## Members
-- [[dot-_check()]] - code - gateway/security/file_sandbox.py
-- [[dot-_detect_raw_traversal()]] - code - gateway/security/file_sandbox.py
-- [[dot-_is_immutable_file()]] - code - gateway/security/file_sandbox.py
-- [[dot-_match_pattern()]] - code - gateway/security/file_sandbox.py
-- [[dot-_matches_allowed_paths()]] - code - gateway/security/file_sandbox.py
-- [[dot-_matches_blocked()]] - code - gateway/security/file_sandbox.py
-- [[dot-check_read()]] - code - gateway/security/file_sandbox.py
-- [[dot-check_write()]] - code - gateway/security/file_sandbox.py
-- [[dot-detect_staging_patterns()]] - code - gateway/security/file_sandbox.py
-- [[dot-get_audit_log()_7]] - code - gateway/security/file_sandbox.py
-- [[dot-get_security_violations()]] - code - gateway/security/file_sandbox.py
-- [[dot-scan()_4]] - code - gateway/security/file_sandbox.py
-- [[dot-test_api_key_pattern_detected()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_audit_has_path()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_credential_file_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_credit_card_detected()_1]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_default_blocks_sensitive_paths()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_default_has_reasonable_allowed_paths()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_default_mode_is_enforce()_7]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_email_detected()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_enforce_blocks_outside_allowed()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_enforce_blocks_sensitive()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_env_file_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_etc_passwd_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_etc_shadow_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_large_write_then_network_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_large_write_without_network_not_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_no_pii_clean()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_pii_in_write_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_project_files_allowed()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_read_logged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_small_writes_not_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_ssh_private_key_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_ssn_detected()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_temp_file_tracking()]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_tmp_read_allowed()_1]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_tmp_write_allowed()_1]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_workspace_read_allowed()_1]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_workspace_write_allowed()_1]] - code - gateway/tests/test_file_sandbox.py
-- [[dot-test_write_logged()]] - code - gateway/tests/test_file_sandbox.py
-- [[Check if path is within any allowed pattern.]] - rationale - gateway/security/file_sandbox.py
-- [[Check if path matches any blocked pattern.]] - rationale - gateway/security/file_sandbox.py
-- [[Check if this is an immutable security file by name.]] - rationale - gateway/security/file_sandbox.py
-- [[Detect path traversal attempts in raw input before normalization.]] - rationale - gateway/security/file_sandbox.py
-- [[Enhanced pattern matching for file paths.]] - rationale - gateway/security/file_sandbox.py
-- [[FileOperation]] - code - gateway/security/file_sandbox.py
-- [[FileVerdict]] - code - gateway/security/file_sandbox.py
-- [[Get all flagged operations that indicate security violations.]] - rationale - gateway/security/file_sandbox.py
-- [[PIIFinding]] - code - gateway/security/file_sandbox.py
-- [[PIIScanResult]] - code - gateway/security/file_sandbox.py
-- [[PIIScanner]] - code - gateway/security/file_sandbox.py
-- [[Rule agentshroud-path-traversal-open]] - concept - .semgrep.yml
-- [[StagingPattern]] - code - gateway/security/file_sandbox.py
-- [[TestFileAudit]] - code - gateway/tests/test_file_sandbox.py
-- [[TestFileSandboxConfig]] - code - gateway/tests/test_file_sandbox.py
-- [[TestNormalFileOperations]] - code - gateway/tests/test_file_sandbox.py
-- [[TestPIIScanning]] - code - gateway/tests/test_file_sandbox.py
-- [[TestSensitivePathBlocking]] - code - gateway/tests/test_file_sandbox.py
-- [[TestStagingPatternDetection]] - code - gateway/tests/test_file_sandbox.py
-- [[default_config()_4]] - code - gateway/tests/test_file_sandbox.py
-- [[file_sandbox.py]] - code - gateway/security/file_sandbox.py
-- [[sandbox()]] - code - gateway/tests/test_file_sandbox.py
-- [[strict_config()_3]] - code - gateway/tests/test_file_sandbox.py
-- [[strict_sandbox()_1]] - code - gateway/tests/test_file_sandbox.py
-- [[test_file_sandbox.py]] - code - gateway/tests/test_file_sandbox.py
+- [[dot-test_get_module_mode_enforce_override()]] - code - gateway/tests/test_enforce_defaults.py
+- [[dot-test_get_module_mode_no_env_override()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_get_module_mode_no_override()]] - code - gateway/tests/test_enforce_defaults.py
+- [[dot-test_get_module_mode_with_override()]] - code - gateway/tests/test_enforce_defaults.py
+- [[dot-test_global_monitor_override_downgrades_all()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_monitor_mode_warning_message_format()]] - code - gateway/tests/test_enforce_defaults.py
+- [[dot-test_monitor_mode_warnings_all_modules()]] - code - gateway/tests/test_enforce_defaults.py
+- [[dot-test_monitor_mode_warnings_no_warnings_in_enforce()]] - code - gateway/tests/test_enforce_defaults.py
+- [[dot-test_pii_sanitizer_default_action()]] - code - gateway/tests/test_enforce_defaults.py
+- [[dot-test_pii_sanitizer_default_enforcement()]] - code - gateway/tests/test_enforce_defaults.py
+- [[dot-test_pii_sanitizer_mode_param()]] - code - gateway/tests/test_enforce_defaults.py
+- [[dot-test_security_config_all_defaults_enforce()]] - code - gateway/tests/test_enforce_defaults.py
+- [[dot-test_security_config_dns_filter_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_security_config_egress_filter_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_security_config_egress_monitor_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_security_config_killswitch_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_security_config_mcp_proxy_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_security_config_pii_sanitizer_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_security_config_prompt_guard_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_security_config_subagent_monitor_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_security_module_config_default_mode()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_security_module_config_defaults()]] - code - gateway/tests/test_enforce_defaults.py
+- [[AGENTSHROUD_MODE=monitor must downgrade ALL modules to monitor.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[Complete security configuration]] - rationale - gateway/ingest_api/config.py
+- [[Log warnings for any core modules running in monitor mode.]] - rationale - gateway/ingest_api/config.py
+- [[Return module mode, respecting the global permissive override.]] - rationale - gateway/ingest_api/config.py
+- [[Security module configuration]] - rationale - gateway/ingest_api/config.py
+- [[SecurityConfig_4]] - code - gateway/ingest_api/config.py
+- [[SecurityModuleConfig]] - code - gateway/ingest_api/config.py
+- [[Test PIISanitizer accepts and stores mode parameter.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test PIISanitizer defaults to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test get_module_mode returns enforce when explicitly set.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test get_module_mode returns enforce when no override set.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test get_module_mode returns monitor when AGENTSHROUD_MODE=monitor.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that PII sanitizer defaults to redact action.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that SecurityModuleConfig defaults to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that all core modules default to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that core security modules default to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that individual modules respect the enforcemonitor mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that monitor mode warnings contain required information.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that no warnings are logged when all modules are in enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that warnings are logged for all core modules in monitor mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[TestEnforceDefaults]] - code - gateway/tests/test_enforce_defaults.py
+- [[TestModuleEnforcement]] - code - gateway/tests/test_enforce_defaults.py
+- [[TestSecurityConfigDefaults]] - code - gateway/tests/test_all_modules_enforce.py
+- [[Verify SecurityConfig and SecurityModuleConfig default to enforce.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[check_monitor_mode_warnings()]] - code - gateway/ingest_api/config.py
+- [[get_module_mode()]] - code - gateway/ingest_api/config.py
+- [[test_enforce_defaults.py]] - code - gateway/tests/test_enforce_defaults.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -84,14 +68,32 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 33 edges to [[_COMMUNITY_AlertDispatcher]]
-- 2 edges to [[_COMMUNITY_InjectionAction]]
+- 14 edges to [[_COMMUNITY_MiddlewareManager_8]]
+- 10 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 7 edges to [[_COMMUNITY_PIIConfig]]
+- 5 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 2 edges to [[_COMMUNITY_AlertDispatcher]]
+- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 2 edges to [[_COMMUNITY__FakeRBAC]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig_3]]
+- 2 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 1 edge to [[_COMMUNITY_ResourceGuard_1]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager_1]]
+- 1 edge to [[_COMMUNITY_TrustConfig_1]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor_2]]
+- 1 edge to [[_COMMUNITY_test_prompt_guard.py]]
+- 1 edge to [[_COMMUNITY_ConsentFramework_1]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL_3]]
+- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
+- 1 edge to [[_COMMUNITY_MultiTurnTracker_1]]
 - 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_egress_filter.py]]
+- 1 edge to [[_COMMUNITY_ContextSegment]]
+- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
 
 ## Top bridge nodes
-- [[file_sandbox.py]] - degree 11, connects to 2 communities
-- [[Rule agentshroud-path-traversal-open]] - degree 3, connects to 2 communities
-- [[PIIScanner]] - degree 15, connects to 1 community
-- [[test_file_sandbox.py]] - degree 13, connects to 1 community
-- [[TestSensitivePathBlocking]] - degree 11, connects to 1 community
+- [[TestSecurityConfigDefaults]] - degree 30, connects to 15 communities
+- [[get_module_mode()]] - degree 14, connects to 6 communities
+- [[SecurityConfig_4]] - degree 30, connects to 4 communities
+- [[SecurityModuleConfig]] - degree 15, connects to 4 communities
+- [[TestEnforceDefaults]] - degree 16, connects to 3 communities

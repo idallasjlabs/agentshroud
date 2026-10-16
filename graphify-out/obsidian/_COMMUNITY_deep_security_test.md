@@ -49,7 +49,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
+- 2 edges to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
+- 1 edge to [[_COMMUNITY_AuditChain_1]]
 
 ## Top bridge nodes
-- [[deep_security_test()]] - degree 32, connects to 1 community
+- [[deep_security_test()]] - degree 32, connects to 2 communities

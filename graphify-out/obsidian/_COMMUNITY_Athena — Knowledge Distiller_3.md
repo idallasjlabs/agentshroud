@@ -12,9 +12,9 @@ members: 5
 ## Members
 - [[dot-agentsskillsi-athenaREADME]] - document - .agents/skills/i-athena/README.md
 - [[Athena — Knowledge Distiller]] - document - .agents/skills/i-athena/README.md
-- [[Purpose_16]] - document - .agents/skills/i-athena/README.md
+- [[Purpose_13]] - document - .agents/skills/i-athena/README.md
 - [[Related Skills_2]] - document - .agents/skills/i-athena/README.md
-- [[Usage_6]] - document - .agents/skills/i-athena/README.md
+- [[Usage_5]] - document - .agents/skills/i-athena/README.md
 
 ## Live Query (requires Dataview plugin)
 

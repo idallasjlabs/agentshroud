@@ -1,26 +1,31 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+cohesion: 0.15
+members: 16
 ---
 
 # BotConfig
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 16 nodes
 
 ## Members
-- [[dot-_mock_app_state_with_registry()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[dot-test_empty_registry_fails_closed()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[dot-test_unknown_token_rejected()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[dot-test_valid_hermes_token_accepted()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[dot-test_valid_openclaw_token_accepted()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[A request bearing the Hermes token resolves to 'hermes' bot_id.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[A request bearing the OpenClaw token resolves to 'openclaw' bot_id.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[An unregistered token must not be matched — fail-closed.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[If no tokens are registered, any token must be rejected.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[Integration tests for the telegram-api{path} route with multi-bot registry.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[TestTelegramProxyRouteMultiBot]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[Approval Queue Control]] - rationale - docs/security/SECURITY_ARCHITECTURE.md
+- [[Approval Queue — Core Security Value]] - rationale - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[DEVELOPMENT_WORKFLOW_READ_ONLY]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[DEVICE_PAIRING]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Four-Layer Access Security Model (Password  Pairing  Allowlist  Approval)]] - rationale - docs/setup/DEVICE_PAIRING.md
+- [[IEC 62443 Compliance Matrix]] - concept - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[MVP Recommendation (Option A)]] - rationale - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Multi-UserMulti-Tenant Threat Model (Reversal Driver)]] - rationale - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Phase A Development Mode (Current)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Phase B Compatibility Testing]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Phase C Production Lockdown]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Read-Only Filesystem (Planned)]] - concept - docs/security/container-policy.md
+- [[SECURITY-POLICY-FINAL]] - document - docs/security/SECURITY-POLICY-FINAL.md
+- [[SECURITY_VALUE_PROPOSITION]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Three-Phase Approach]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Ultra-Conservative Credential Display Policy]] - rationale - docs/security/SECURITY-POLICY-FINAL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,9 +35,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy_2]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_2]]
+- 2 edges to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised]]
+- 2 edges to [[_COMMUNITY_Development Workflow Read-Only Filesystem Strategy]]
+- 1 edge to [[_COMMUNITY_egress_filter.py]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Architecture]]
+- 1 edge to [[_COMMUNITY_AgentShroud Device Pairing Management]]
+- 1 edge to [[_COMMUNITY_CREDENTIAL-PROTECTION-IMPLEMENTED]]
+- 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
+- 1 edge to [[_COMMUNITY_Implementation Status]]
+- 1 edge to [[_COMMUNITY_Kill Switch]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Policy - Final Decision]]
+- 1 edge to [[_COMMUNITY_Git History Purge Plan]]
 
 ## Top bridge nodes
-- [[TestTelegramProxyRouteMultiBot]] - degree 9, connects to 3 communities
+- [[SECURITY_VALUE_PROPOSITION]] - degree 10, connects to 3 communities
+- [[SECURITY-POLICY-FINAL]] - degree 4, connects to 3 communities
+- [[IEC 62443 Compliance Matrix]] - degree 4, connects to 2 communities
+- [[Three-Phase Approach]] - degree 5, connects to 1 community
+- [[Approval Queue Control]] - degree 4, connects to 1 community

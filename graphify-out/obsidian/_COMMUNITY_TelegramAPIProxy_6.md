@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-test_proxy_request_suppresses_duplicate_delayed_starting_notice()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Delayed-starting notices should also be deduplicated in cooldown window.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_form_outbound_pipeline_sanitized_text_applied()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Pipeline-sanitized text must replace the original in form payloads.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +21,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_5]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy_7]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
 
 ## Top bridge nodes
-- [[dot-test_proxy_request_suppresses_duplicate_delayed_starting_notice()]] - degree 4, connects to 1 community
+- [[dot-test_form_outbound_pipeline_sanitized_text_applied()]] - degree 4, connects to 3 communities

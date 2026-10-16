@@ -1,28 +1,32 @@
 ---
 type: community
-cohesion: 0.15
-members: 13
+cohesion: 0.14
+members: 17
 ---
 
 # First Time Setup
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 13 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 17 nodes
 
 ## Members
-- [[Bot Container Startup Failures]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Bot Exits Before Gateway Is Healthy]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Gateway Container Startup Failures]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Gateway Health Check Never Passes]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[OpenClaw Not Starting]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Related Notes_61]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Startup Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[`Could not load Claude OAuth token after retries`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[`FileNotFoundError No agentshroud.yaml found`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[`No auth_token found in secret file`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[`ValueError Invalid YAML structure`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[`startup Warning Gateway password file not found`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[spaCy Model Not Loading]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[dot-_format_alert_message()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-_is_duplicate()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-_is_rate_limited()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-_log_alert()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-_send_notification()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-dispatch()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-get_digest()]] - code - gateway/security/alert_dispatcher.py
+- [[dot-get_stats()_18]] - code - gateway/security/alert_dispatcher.py
+- [[Any_79]] - code - gateway/security/alert_dispatcher.py
+- [[Append alert to JSONL log file.]] - rationale - gateway/security/alert_dispatcher.py
+- [[Check if alert was already seen within dedup window.]] - rationale - gateway/security/alert_dispatcher.py
+- [[Check if we've exceeded the rate limit.]] - rationale - gateway/security/alert_dispatcher.py
+- [[Dispatch an alert based on severity.          Args             alert Alert dic]] - rationale - gateway/security/alert_dispatcher.py
+- [[Format alert as human-readable message.]] - rationale - gateway/security/alert_dispatcher.py
+- [[Get buffered alerts for daily digest.          Args             clear Clear bu]] - rationale - gateway/security/alert_dispatcher.py
+- [[Get dispatcher statistics.]] - rationale - gateway/security/alert_dispatcher.py
+- [[POST alert to apialerts with bounded retry + backoff.          Returns True on]] - rationale - gateway/security/alert_dispatcher.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,7 +36,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Restart Procedure]]
+- 8 edges to [[_COMMUNITY_AlertDispatcher]]
 
 ## Top bridge nodes
-- [[Startup Errors_1]] - degree 4, connects to 1 community
+- [[dot-dispatch()]] - degree 7, connects to 1 community
+- [[dot-_send_notification()]] - degree 5, connects to 1 community
+- [[dot-_format_alert_message()]] - degree 4, connects to 1 community
+- [[dot-_log_alert()]] - degree 4, connects to 1 community
+- [[dot-get_digest()]] - degree 3, connects to 1 community

@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-test_form_outbound_fails_closed_for_non_owner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[If the pipeline crashes on a form payload, non-owner messages must be blocked.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_ollama_auth_required_error_is_sanitized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Ollama auth errors should map to concise operator guidance.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +21,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_5]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy_7]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
 
 ## Top bridge nodes
-- [[dot-test_form_outbound_fails_closed_for_non_owner()]] - degree 4, connects to 1 community
+- [[dot-test_ollama_auth_required_error_is_sanitized()]] - degree 4, connects to 3 communities

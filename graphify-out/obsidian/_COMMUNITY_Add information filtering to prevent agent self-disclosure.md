@@ -17,11 +17,11 @@ members: 12
 - [[Option A System prompt restriction (fast, partial)]] - document - docs/planning/redteam/00-information-disclosure.md
 - [[Option B Outbound content filter (robust)]] - document - docs/planning/redteam/00-information-disclosure.md
 - [[Option C Both (recommended)]] - document - docs/planning/redteam/00-information-disclosure.md
-- [[Problem_9]] - document - docs/planning/redteam/00-information-disclosure.md
+- [[Problem_8]] - document - docs/planning/redteam/00-information-disclosure.md
 - [[Remediation_7]] - document - docs/planning/redteam/00-information-disclosure.md
-- [[Root Cause_7]] - document - docs/planning/redteam/00-information-disclosure.md
+- [[Root Cause_6]] - document - docs/planning/redteam/00-information-disclosure.md
 - [[Severity_9]] - document - docs/planning/redteam/00-information-disclosure.md
-- [[Verification_13]] - document - docs/planning/redteam/00-information-disclosure.md
+- [[Verification_12]] - document - docs/planning/redteam/00-information-disclosure.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,16 +1,16 @@
 ---
 type: community
 cohesion: 0.05
-members: 46
+members: 45
 ---
 
 # MCPPermissionManager
 
 **Cohesion:** 0.05 - loosely connected
-**Members:** 46 nodes
+**Members:** 45 nodes
 
 ## Members
-- [[dot-__init__()_43]] - code - gateway/proxy/mcp_permissions.py
+- [[dot-__init__()_70]] - code - gateway/proxy/mcp_permissions.py
 - [[dot-_load_privacy_policy()]] - code - gateway/proxy/mcp_permissions.py
 - [[dot-_recompile_private_data_patterns()]] - code - gateway/proxy/mcp_permissions.py
 - [[dot-get_privacy_policy_status()]] - code - gateway/proxy/mcp_permissions.py
@@ -55,7 +55,6 @@ members: 46
 - [[Return recent private-data redaction events.]] - rationale - gateway/proxy/mcp_permissions.py
 - [[Set trust level for an agent.]] - rationale - gateway/proxy/mcp_permissions.py
 - [[TestToolPermission]] - code - gateway/tests/test_mcp_permissions.py
-- [[mgr()_1]] - code - gateway/tests/test_mcp_permissions.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -65,22 +64,25 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 25 edges to [[_COMMUNITY_MCPPermissionManager_1]]
-- 21 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 18 edges to [[_COMMUNITY_StdioConnection]]
-- 14 edges to [[_COMMUNITY_PermissionLevel]]
-- 5 edges to [[_COMMUNITY_MCPPermissionManager_3]]
-- 3 edges to [[_COMMUNITY_MCPPermissionManager_4]]
-- 2 edges to [[_COMMUNITY_RBACConfig]]
-- 2 edges to [[_COMMUNITY_MCPInspector]]
+- 20 edges to [[_COMMUNITY_MCPPermissionManager]]
+- 17 edges to [[_COMMUNITY_MCPPermissionManager_1]]
+- 13 edges to [[_COMMUNITY_PermissionLevel]]
+- 12 edges to [[_COMMUNITY_StdioConnection_1]]
+- 10 edges to [[_COMMUNITY_StdioConnection]]
+- 7 edges to [[_COMMUNITY_MCPInspector]]
+- 5 edges to [[_COMMUNITY_MCPPermissionManager_4]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_MCPToolResult]]
 - 1 edge to [[_COMMUNITY_MCPPermissionManager_5]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager_6]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager_7]]
+- 1 edge to [[_COMMUNITY_Athena — Knowledge Distiller_4]]
+- 1 edge to [[_COMMUNITY_TestMCPProxyEndpoint]]
 - 1 edge to [[_COMMUNITY_TestAuditTrail]]
 - 1 edge to [[_COMMUNITY_MCPAuditTrail]]
-- 1 edge to [[_COMMUNITY_MCPToolResult]]
 
 ## Top bridge nodes
-- [[MCPPermissionManager]] - degree 101, connects to 12 communities
+- [[MCPPermissionManager]] - degree 101, connects to 16 communities
 - [[TestToolPermission]] - degree 27, connects to 2 communities
-- [[dot-__init__()_43]] - degree 5, connects to 2 communities
+- [[dot-__init__()_70]] - degree 5, connects to 2 communities
 - [[dot-record_private_data_redaction()]] - degree 3, connects to 1 community
-- [[mgr()_1]] - degree 2, connects to 1 community

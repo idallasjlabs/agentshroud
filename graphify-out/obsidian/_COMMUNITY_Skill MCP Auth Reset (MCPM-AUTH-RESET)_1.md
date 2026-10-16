@@ -18,7 +18,7 @@ members: 17
 - [[GitHub PAT_1]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
 - [[GitHub Bad credentials_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
 - [[GitHub Docker image not found_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Related Skills_88]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Related Skills_87]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
 - [[Role_65]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
 - [[Security Best Practices_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
 - [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md

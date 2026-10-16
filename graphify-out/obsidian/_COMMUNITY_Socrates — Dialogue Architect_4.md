@@ -12,10 +12,10 @@ members: 6
 ## Members
 - [[dot-agentsskillsi-socratesREADME]] - document - .agents/skills/i-socrates/README.md
 - [[dot-agentsskillsi-socratesSKILL]] - document - .agents/skills/i-socrates/SKILL.md
-- [[Purpose_13]] - document - .agents/skills/i-socrates/README.md
+- [[Purpose_9]] - document - .agents/skills/i-socrates/README.md
 - [[Related Skills_1]] - document - .agents/skills/i-socrates/README.md
 - [[Socrates — Dialogue Architect]] - document - .agents/skills/i-socrates/README.md
-- [[Usage_4]] - document - .agents/skills/i-socrates/README.md
+- [[Usage_3]] - document - .agents/skills/i-socrates/README.md
 
 ## Live Query (requires Dataview plugin)
 

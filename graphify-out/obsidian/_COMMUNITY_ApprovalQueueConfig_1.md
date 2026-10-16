@@ -1,249 +1,157 @@
 ---
 type: community
-cohesion: 0.02
-members: 234
+cohesion: 0.03
+members: 142
 ---
 
 # ApprovalQueueConfig
 
-**Cohesion:** 0.02 - loosely connected
-**Members:** 234 nodes
+**Cohesion:** 0.03 - loosely connected
+**Members:** 142 nodes
 
 ## Members
-- [[NOTE `timeout or host.max_session_seconds` treats 0 as falsy (same]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-' escaping the allowed root is rejected — never reaches proxy.write_file().]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-__init__()_20]] - code - gateway/ssh_proxy/proxy.py
-- [[dot-execute()]] - code - gateway/ssh_proxy/proxy.py
-- [[dot-expand_key_path()]] - code - gateway/ingest_api/ssh_config.py
-- [[dot-expand_known_hosts()]] - code - gateway/ingest_api/ssh_config.py
-- [[dot-is_auto_approved()]] - code - gateway/ssh_proxy/proxy.py
-- [[dot-test_absolute_path_accepted()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_absolute_path_outside_root_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_absolute_path_under_root_accepted()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_backtick_rejected()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_content_at_exact_cap_accepted()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_content_with_semicolon_backtick_redirect_round_trips_through_full_endpoint()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_cookie_not_secure_on_http()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_dashboard_bad_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_dashboard_bad_token_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_dashboard_no_auth_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_dashboard_token_sets_cookie_and_redirects()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_dotdot_traversal_from_absolute_path_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_dotdot_traversal_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_execute_nonzero_exit()]] - code - gateway/tests/test_ssh_proxy.py
-- [[dot-test_execute_success()]] - code - gateway/tests/test_ssh_proxy.py
-- [[dot-test_execute_timeout()]] - code - gateway/tests/test_ssh_proxy.py
-- [[dot-test_execute_unknown_host()]] - code - gateway/tests/test_ssh_proxy.py
-- [[dot-test_home_tilde_accepted()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_invalid_base64_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_is_auto_approved_no()]] - code - gateway/tests/test_ssh_proxy.py
-- [[dot-test_is_auto_approved_unknown_host()]] - code - gateway/tests/test_ssh_proxy.py
-- [[dot-test_is_auto_approved_yes()]] - code - gateway/tests/test_ssh_proxy.py
-- [[dot-test_json_api_has_cache_control()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_null_byte_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_oversized_content_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_pipe_rejected()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_prefix_collision_sibling_dir_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_relative_path_rejected()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_relative_path_resolved_under_root_accepted()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_root_itself_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_semicolon_rejected()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_approval_sanitizes_command_pii()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_ssh_command_uses_strict_checking()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_ssh_disabled_config()]] - code - gateway/tests/test_ssh_proxy.py
-- [[dot-test_ssh_exec_auto_approved()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_exec_command_not_in_allowlist()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_exec_cwd_accepted_and_forwarded()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_exec_cwd_invalid_rejects_400()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_exec_cwd_none_forwards_none()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_exec_cwd_relative_path_rejects_400()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_exec_denied_command()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_exec_disabled_returns_503()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_exec_injection_attempt()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_exec_no_auth()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_exec_requires_approval()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_exec_unknown_host()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_history()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_hosts_list()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_status_has_security_headers()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_status_returns_current_version()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_strict_host_key_checking_in_source()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_unknown_host_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_validate_auto_approve_exact_only()]] - code - gateway/tests/test_ssh_proxy.py
-- [[dot-test_validate_command_allowed()]] - code - gateway/tests/test_ssh_proxy.py
-- [[dot-test_validate_command_backslash_n_injection()]] - code - gateway/tests/test_ssh_proxy.py
-- [[dot-test_validate_command_carriage_return_injection()]] - code - gateway/tests/test_ssh_proxy.py
-- [[dot-test_validate_command_denied()]] - code - gateway/tests/test_ssh_proxy.py
-- [[dot-test_validate_command_dollar_brace_injection()]] - code - gateway/tests/test_ssh_proxy.py
-- [[dot-test_validate_command_dollar_var_injection()]] - code - gateway/tests/test_ssh_proxy.py
-- [[dot-test_validate_command_global_denied()]] - code - gateway/tests/test_ssh_proxy.py
-- [[dot-test_validate_command_injection_blocked_and()]] - code - gateway/tests/test_ssh_proxy.py
-- [[dot-test_validate_command_injection_blocked_backticks()]] - code - gateway/tests/test_ssh_proxy.py
-- [[dot-test_validate_command_injection_blocked_dollar_paren()]] - code - gateway/tests/test_ssh_proxy.py
-- [[dot-test_validate_command_injection_blocked_or()]] - code - gateway/tests/test_ssh_proxy.py
-- [[dot-test_validate_command_injection_blocked_pipe()]] - code - gateway/tests/test_ssh_proxy.py
-- [[dot-test_validate_command_injection_blocked_semicolon()]] - code - gateway/tests/test_ssh_proxy.py
-- [[dot-test_validate_command_newline_injection()]] - code - gateway/tests/test_ssh_proxy.py
-- [[dot-test_validate_command_not_in_allowlist()]] - code - gateway/tests/test_ssh_proxy.py
-- [[dot-test_validate_command_unknown_host()]] - code - gateway/tests/test_ssh_proxy.py
-- [[dot-test_validate_empty_command()]] - code - gateway/tests/test_ssh_proxy.py
-- [[dot-test_whitespace_only_path_rejected_at_proxy_layer()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_absolute_path_outside_root_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_absolute_path_prefix_collision_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_denial_is_audited()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_disallowed_host_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_empty_path_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_invalid_base64_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_no_auth()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_non_numeric_stdout_falls_back_to_zero_bytes()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_oserror_from_subprocess()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_oversized_content_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_path_traversal_dotdot_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_remote_command_is_identical_across_calls()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_remote_failure_returns_200_with_success_false()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_sends_path_and_content_via_stdin()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_ssh_disabled_returns_503()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_success_and_denial_both_create_distinct_ledger_entries()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_success_creates_matching_ledger_entry()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_timeout()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_unknown_host_raises()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_write_file_valid_round_trip()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-test_ws_activity_rejects_bad_token()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_ws_activity_rejects_empty_token()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_ws_activity_rejects_master_token()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_ws_activity_rejects_no_token()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_ws_approvals_rejects_bad_token()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_ws_approvals_rejects_master_token()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_ws_approvals_rejects_no_token()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_ws_token_with_bad_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_ws_token_with_valid_cookie()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_ws_token_without_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-validate_command()]] - code - gateway/ssh_proxy/proxy.py
-- [[dot-validate_cwd()]] - code - gateway/ssh_proxy/proxy.py
-- [[dot-validate_write_file()]] - code - gateway/ssh_proxy/proxy.py
-- [[dot-write_file()]] - code - gateway/ssh_proxy/proxy.py
-- [[A directory that shares the root as a raw string prefix but is not         actua]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[A host not present in the SSH allowlist is rejected with 404.]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[A sibling directory that merely shares the root as a string prefix         (no ']] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Absolute path outside the approved root is rejected.]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[All API responses should include basic security headers.]] - rationale - gateway/tests/test_security_fixes.py
-- [[Approval queue details must be PII-sanitized before storage]] - rationale - gateway/tests/test_security_fixes.py
-- [[Auto-approve must be exact match, not prefix (Finding 3)]] - rationale - gateway/tests/test_ssh_proxy.py
-- [[Both outcomes append to the SAME audit trail — a denial is not         silently]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Check if a command is auto-approved (no human approval needed).          Auto-ap]] - rationale - gateway/ssh_proxy/proxy.py
-- [[ClientDisconnect mid-body-read must not crash the gateway process.]] - rationale - gateway/tests/test_security_fixes.py
-- [[Configuration for a single SSH host]] - rationale - gateway/ingest_api/ssh_config.py
-- [[Cookie secure=False on HTTP requests]] - rationale - gateway/tests/test_security_fixes.py
-- [[Dashboard cookie secure flag is dynamic based on request scheme]] - rationale - gateway/tests/test_security_fixes.py
-- [[Dashboard should set httpOnly cookie and redirect to clean URL]] - rationale - gateway/tests/test_security_fixes.py
-- [[Dashboard ws-token endpoint returns token only for cookie-authed sessions]] - rationale - gateway/tests/test_security_fixes.py
-- [[Decoded content exceeding the ~500KB cap is rejected with 413, and         proxy]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Denied write attempts are logged to the ledger for audit (no raw         content]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Direct unit coverage of validate_write_file()'s own empty-path guard         (th]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Execute a command on a remote host via SSH.]] - rationale - gateway/ssh_proxy/proxy.py
-- [[GET dashboard with invalid cookie returns 403]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboard with no auth returns 403]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboardws-token with valid cookie returns token]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboardtoken=valid sets cookie and redirects to dashboard]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboardtoken=wrong returns 403]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET status should include security headers]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET status should return current version]] - rationale - gateway/tests/test_security_fixes.py
-- [[Gap coverage confirm a real audit-ledger row is created for BOTH a     successf]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Gap coverage prove the 'content is DATA, not a shell string' design     goal ac]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[If the remote script exits 0 but its stdout isn't a parseable         integer, b]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[JSON API responses should have Cache-Control no-store]] - rationale - gateway/tests/test_security_fixes.py
-- [[Malformed base64 is rejected at the Pydantic model layer (422),         never si]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Management WebSocket endpoints should use scoped tokens, not master auth.]] - rationale - gateway/tests/test_security_fixes.py
-- [[Mirrors sshexec a nonzero remote exit code is surfaced in the 200         res]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Omitting cwd passes cwd=None to proxy.execute().]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[Result of a structured SSH file-write operation (SSHProxy.write_file())]] - rationale - gateway/ssh_proxy/proxy.py
-- [[Result of an SSH command execution]] - rationale - gateway/ssh_proxy/proxy.py
-- [[SSH command proxy with validation and audit support]] - rationale - gateway/ssh_proxy/proxy.py
-- [[SSH exec requiring approval sanitizes PII in command before storing]] - rationale - gateway/tests/test_security_fixes.py
-- [[SSH execute builds command with StrictHostKeyChecking=yes]] - rationale - gateway/tests/test_security_fixes.py
-- [[SSHConfig]] - code - gateway/ssh_proxy/proxy.py
-- [[SSHConfig_1]] - code - gateway/tests/test_ssh_proxy.py
-- [[SSHConfig_2]] - code - gateway/ingest_api/ssh_config.py
-- [[SSHHostConfig]] - code - gateway/ingest_api/ssh_config.py
-- [[SSHProxy]] - code - gateway/ssh_proxy/proxy.py
-- [[SSHProxy_1]] - code - gateway/tests/test_ssh_proxy.py
-- [[SSHResult]] - code - gateway/ssh_proxy/proxy.py
-- [[SSHWriteResult]] - code - gateway/ssh_proxy/proxy.py
-- [[Set up app state and provide TestClient.]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[Set up app state and provide TestClient._1]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Source code uses StrictHostKeyChecking=yes]] - rationale - gateway/tests/test_security_fixes.py
-- [[Sync TestClient for WebSocket tests]] - rationale - gateway/tests/test_security_fixes.py
-- [[Test SSH disabled returns 503 (Finding 12)]] - rationale - gateway/tests/test_ssh_proxy.py
-- [[Test newline-based injection attempts (Finding 11)]] - rationale - gateway/tests/test_ssh_proxy.py
-- [[Test that SSH disabled returns 503 (Finding 12)]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[TestApprovalQueuePIISanitization]] - code - gateway/tests/test_security_fixes.py
-- [[TestDashboardCookieAuth]] - code - gateway/tests/test_security_fixes.py
-- [[TestDashboardSecureCookie]] - code - gateway/tests/test_security_fixes.py
-- [[TestDashboardWSToken]] - code - gateway/tests/test_security_fixes.py
-- [[TestExecute]] - code - gateway/tests/test_ssh_proxy.py
-- [[TestGlobalSecurityHeaders]] - code - gateway/tests/test_security_fixes.py
-- [[TestInjectionNewline]] - code - gateway/tests/test_ssh_proxy.py
-- [[TestIsAutoApproved]] - code - gateway/tests/test_ssh_proxy.py
-- [[TestManagementWSTokenScoping]] - code - gateway/tests/test_security_fixes.py
-- [[TestSSHDisabled]] - code - gateway/tests/test_ssh_proxy.py
-- [[TestSSHDisabledEndpoint]] - code - gateway/tests/test_ssh_endpoints.py
-- [[TestSSHExec]] - code - gateway/tests/test_ssh_endpoints.py
-- [[TestSSHHistory]] - code - gateway/tests/test_ssh_endpoints.py
-- [[TestSSHHosts]] - code - gateway/tests/test_ssh_endpoints.py
-- [[TestSSHProxyValidateWriteFile]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[TestSSHProxyWriteFileTransport]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[TestSSHStrictHostKeyChecking]] - code - gateway/tests/test_security_fixes.py
-- [[TestSSHValidateCwd]] - code - gateway/tests/test_ssh_endpoints.py
-- [[TestSSHWriteFileEndpoint]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[TestSSHWriteFileLedgerAudit]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[TestTelegramProxyClientDisconnect]] - code - gateway/tests/test_security_fixes.py
-- [[TestValidateCommand]] - code - gateway/tests/test_ssh_proxy.py
-- [[TestVersionConsistency]] - code - gateway/tests/test_security_fixes.py
-- [[TestWebSocketHandshakeAuth]] - code - gateway/tests/test_security_fixes.py
-- [[The remote command string must not vary with request content —         proving i]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Top-level MCP proxy configuration.]] - rationale - gateway/proxy/mcp_config.py
-- [[Unit tests for SSHProxy.validate_cwd().]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[Unit tests for SSHProxy.write_file() — verifies pathcontent travel as     DATA]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Valid request SSHProxy.write_file() is invoked with decoded pathcontent]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Validate a command against allowdeny lists and injection patterns.          Ret]] - rationale - gateway/ssh_proxy/proxy.py
-- [[Validate a remote working-directory path.  Must be absolute and shell-safe.]] - rationale - gateway/ssh_proxy/proxy.py
-- [[Validate a structured sshwrite_file request (host, path, content).          Re]] - rationale - gateway/ssh_proxy/proxy.py
-- [[Verify SSH proxy uses StrictHostKeyChecking=yes, not accept-new]] - rationale - gateway/tests/test_security_fixes.py
-- [[Version strings should be consistent across the codebase.]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsactivity closes immediately without token]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsactivity closes with bad token]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsactivity should reject empty token]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsactivity should reject master auth token (R3-L4)]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsapprovals closes immediately without token]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsapprovals closes with bad token]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsapprovals rejects the master auth token -- R3-L4 removed the         mast]] - rationale - gateway/tests/test_security_fixes.py
-- [[WebSocket endpoints must validate token during handshake, not first message]] - rationale - gateway/tests/test_security_fixes.py
-- [[Write file content to a remote host via structured (non-shell-string) transport.]] - rationale - gateway/ssh_proxy/proxy.py
-- [[_b64()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[auth_headers()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[auth_headers()_1]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[client()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[client()_1]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[cwd is validated and passed to proxy.execute().]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[cwd must be an absolute path.]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[cwd with shell metacharacters is rejected before execution.]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[gatewayingest_apiledger.py (DataLedger)]] - code - gateway/ingest_api/ledger.py
-- [[gatewayingest_apiroutesdashboard.py (_create_ws_token)]] - code - gateway/ingest_api/routes/dashboard.py
-- [[gatewayingest_apissh_config.py (SSHConfig)]] - code - gateway/ingest_api/ssh_config.py
-- [[proxy()]] - code - gateway/tests/test_ssh_proxy.py
-- [[proxy.py]] - code - gateway/ssh_proxy/proxy.py
-- [[ssh binary missing  spawn failure surfaces as exit_code=-1 with         the OSE]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[ssh_config()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[ssh_config()_1]] - code - gateway/tests/test_ssh_proxy.py
-- [[ssh_config()_2]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[ssh_config.py]] - code - gateway/ingest_api/ssh_config.py
-- [[ssh_proxy__init__.py]] - code - gateway/ssh_proxy/__init__.py
-- [[sync_client()]] - code - gateway/tests/test_security_fixes.py
-- [[test_security_fixes.py]] - code - gateway/tests/test_security_fixes.py
-- [[test_ssh_endpoints.py]] - code - gateway/tests/test_ssh_endpoints.py
-- [[test_ssh_proxy.py]] - code - gateway/tests/test_ssh_proxy.py
-- [[test_ssh_write_file_endpoint.py]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[dot-__init__()_44]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-__init__()_45]] - code - gateway/approval_queue/store.py
+- [[dot-_notify_telegram()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-_schedule_timeout()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-_timeout_request()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-broadcast()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-close()_2]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-close()_3]] - code - gateway/approval_queue/store.py
+- [[dot-connect()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-decide()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-disconnect()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-get_item()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-get_pending()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-get_policy_for_tier()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-get_tool_risk_tier()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-initialize()_1]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-initialize()_2]] - code - gateway/approval_queue/store.py
+- [[dot-mcp_proxy_with_approval()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-requires_approval()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-send_json()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-submit()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-submit_tool_request()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-test_100_concurrent_submissions()]] - code - gateway/tests/test_approval_stress.py
+- [[dot-test_critical_tool_approval_flow()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-test_critical_tool_denial_flow()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-test_critical_tool_requires_approval()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-test_enforce_mode_disabled()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-test_get_tool_risk_tier()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-test_low_risk_tool_allowed()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-test_low_risk_tool_no_approval()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-test_owner_bypass()_1]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-test_requires_approval()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-test_restart_recovery_preserves_timeout_action()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-test_restore_pending_items()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-test_store_expires_old_items()]] - code - gateway/tests/test_approval_stress.py
+- [[dot-test_store_persists_across_reopen()]] - code - gateway/tests/test_approval_stress.py
+- [[dot-test_store_save_and_load()]] - code - gateway/tests/test_approval_stress.py
+- [[dot-test_store_update_status()]] - code - gateway/tests/test_approval_stress.py
+- [[dot-test_wait_for_decision()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-update_status()]] - code - gateway/approval_queue/store.py
+- [[dot-wait_for_decision()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[100 concurrent approval requests.]] - rationale - gateway/tests/test_approval_stress.py
+- [[A WebSocket stand-in whose send_json never returns.      Models a real-world dea]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[A pending approval request in the queue]] - rationale - gateway/ingest_api/models.py
+- [[Accept a WebSocket connection and add to connected set.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Add an action to the approval queue with policy-based timeout.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Any_12]] - code - gateway/approval_queue/enhanced_queue.py
+- [[Approval queue configuration]] - rationale - gateway/ingest_api/config.py
+- [[ApprovalQueueConfig_1]] - code - gateway/approval_queue/enhanced_queue.py
+- [[ApprovalQueueConfig_2]] - code - gateway/ingest_api/config.py
+- [[ApprovalQueueItem_1]] - code - gateway/approval_queue/enhanced_queue.py
+- [[ApprovalQueueItem_2]] - code - gateway/ingest_api/models.py
+- [[ApprovalRequest]] - code - gateway/approval_queue/enhanced_queue.py
+- [[ApprovalStore]] - code - gateway/approval_queue/store.py
+- [[ApprovalStore_1]] - code - gateway/approval_queue/enhanced_queue.py
+- [[Auto-expire old requests.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Build a REAL EnhancedApprovalQueue with a default ToolRiskConfig.      The defau]] - rationale - gateway/tests/test_mcp_policy.py
+- [[Check if a tool requires approval based on risk tier and policy.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Close the database connection.]] - rationale - gateway/approval_queue/store.py
+- [[Close the store and cancel timeout tasks.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Create a temporary SQLite store for testing.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Create a test tool risk configuration.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Create an MCP proxy with approval queue.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Create an enhanced approval queue for testing.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Enhanced approval queue with enforce mode and tool risk tiers.      Features]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[EnhancedApprovalQueue]] - code - gateway/approval_queue/enhanced_queue.py
+- [[EnhancedApprovalQueue_1]] - code - gateway/tests/test_mfa_guard.py
+- [[Fetch a single queue item by ID.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Get all pending approval items.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Get the policy for a risk tier.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Get the risk tier for a tool.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Handle timeout for a pending request.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Initialize enhanced approval queue.          Args             config Basic app]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Initialize the store and restore pending items.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Items saved to store can be reloaded.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Items survive store closereopen cycle.]] - rationale - gateway/tests/test_approval_stress.py
+- [[MCPProxy.check_approval_required]] - code - gateway/proxy/mcp_proxy.py
+- [[MFAGuard_1]] - code - gateway/approval_queue/enhanced_queue.py
+- [[Open the database and create the schema. Idempotent a second call         must]] - rationale - gateway/approval_queue/store.py
+- [[Path_15]] - code - gateway/approval_queue/store.py
+- [[Process an approval decision.          IEC 62443 FR1 approving a high-risk acti]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Queue persistence across restart.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Remove a WebSocket connection from connected set.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Risk policy configuration for a tool tier]] - rationale - gateway/ingest_api/config.py
+- [[SCRUM-110 restart recovery must reschedule the timeout with the         item's]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[SCRUM-154 a dead WebSocket client must never wedge the approval lock.      subm]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[SQLite-backed persistence for approval queue items.]] - rationale - gateway/approval_queue/store.py
+- [[Schedule a timeout task for a request.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Send Telegram notification for approval requests.          Sends a formatted mes]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Send a JSON message to all connected WebSocket clients.          SCRUM-154 boun]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Status updates persist.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Store marks expired items on load.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Submit 100 requests concurrently — all should succeed.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Submit a tool call request for approval.          Args             tool_name T]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Test MCP proxy integration with approval queue.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test SQLite persistence across restarts.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test approval requirement logic.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test denial flow for critical tool.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test full approval flow for critical tool.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test owner bypass for high-tier tools.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test risk tier lookup.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test that approval events are generated for WebSocket notification.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test that approval is bypassed when enforce mode is disabled.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test that critical tools are identified as requiring approval.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test that low-risk tools are allowed without approval.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test that low-risk tools don't require approval.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test that pending items are restored after restart.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test the complete approval workflow.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test tool risk tier classification.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test waiting for approval decision.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[TestApprovalStorePersistence]] - code - gateway/tests/test_approval_stress.py
+- [[TestApprovalTimeout]] - code - gateway/tests/test_approval_stress.py
+- [[TestApprovalWorkflow]] - code - gateway/tests/test_enhanced_approval.py
+- [[TestAutoExpire]] - code - gateway/tests/test_approval_stress.py
+- [[TestConcurrentApprovalRequests]] - code - gateway/tests/test_approval_stress.py
+- [[TestMCPProxyIntegration]] - code - gateway/tests/test_enhanced_approval.py
+- [[TestPersistence]] - code - gateway/tests/test_enhanced_approval.py
+- [[TestToolRiskClassification]] - code - gateway/tests/test_enhanced_approval.py
+- [[Timeout handling for approval requests.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Tool risk tier configuration]] - rationale - gateway/ingest_api/config.py
+- [[ToolRiskConfig]] - code - gateway/ingest_api/config.py
+- [[ToolRiskConfig_1]] - code - gateway/approval_queue/enhanced_queue.py
+- [[ToolRiskPolicy]] - code - gateway/ingest_api/config.py
+- [[ToolRiskPolicy_1]] - code - gateway/approval_queue/enhanced_queue.py
+- [[Update the status of an existing item.]] - rationale - gateway/approval_queue/store.py
+- [[Wait for an approval decision.          Returns             True if approved, F]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[WebSocket_1]] - code - gateway/approval_queue/enhanced_queue.py
+- [[_HangingWebSocket]] - code - gateway/tests/test_enhanced_approval.py
+- [[_real_queue()]] - code - gateway/tests/test_mcp_policy.py
+- [[broadcast() itself must bound its wait per-client, not just rely on     callers]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[enhanced_mfa_queue()]] - code - gateway/tests/test_mfa_guard.py
+- [[enhanced_queue()]] - code - gateway/tests/test_enhanced_approval.py
+- [[enhanced_queue.py]] - code - gateway/approval_queue/enhanced_queue.py
+- [[queue()]] - code - gateway/tests/test_approval_stress.py
+- [[store()]] - code - gateway/tests/test_approval_stress.py
+- [[temp_store()]] - code - gateway/tests/test_enhanced_approval.py
+- [[test_approval_stress.py]] - code - gateway/tests/test_approval_stress.py
+- [[test_broadcast_does_not_hang_forever_on_dead_client()]] - code - gateway/tests/test_enhanced_approval.py
+- [[test_enhanced_approval.py]] - code - gateway/tests/test_enhanced_approval.py
+- [[test_submit_does_not_deadlock_on_hung_websocket_client()]] - code - gateway/tests/test_enhanced_approval.py
+- [[test_websocket_notifications()]] - code - gateway/tests/test_enhanced_approval.py
+- [[tool_risk_config()]] - code - gateway/tests/test_enhanced_approval.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -253,24 +161,31 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 40 edges to [[_COMMUNITY_DataLedger]]
-- 29 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 27 edges to [[_COMMUNITY_PIIConfig]]
-- 27 edges to [[_COMMUNITY_AgentTarget]]
-- 21 edges to [[_COMMUNITY_ApprovalQueueConfig_2]]
-- 5 edges to [[_COMMUNITY_test_dashboard.py]]
-- 3 edges to [[_COMMUNITY_AgentRegistry]]
-- 3 edges to [[_COMMUNITY_AsyncMock]]
-- 2 edges to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
-- 2 edges to [[_COMMUNITY_socrouter.py]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager]]
-- 2 edges to [[_COMMUNITY_ForwardRequest]]
-- 1 edge to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager_1]]
+- 31 edges to [[_COMMUNITY_ApprovalQueueConfig_2]]
+- 29 edges to [[_COMMUNITY_test_mfa_guard.py]]
+- 26 edges to [[_COMMUNITY_ApprovalQueueConfig_3]]
+- 21 edges to [[_COMMUNITY_MCPPolicyEngine]]
+- 15 edges to [[_COMMUNITY_MCPPermissionManager]]
+- 13 edges to [[_COMMUNITY_Mac App Discovery Skill_1]]
+- 11 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 10 edges to [[_COMMUNITY_PIIConfig]]
+- 4 edges to [[_COMMUNITY_create_auth_dependency]]
+- 4 edges to [[_COMMUNITY_main.py]]
+- 4 edges to [[_COMMUNITY__FakeRBAC]]
+- 3 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 3 edges to [[_COMMUNITY_TestSSRFDetection_6]]
+- 2 edges to [[_COMMUNITY_MCPPermissionManager_1]]
+- 2 edges to [[_COMMUNITY_InjectionAction_1]]
+- 2 edges to [[_COMMUNITY_Restart Procedure]]
+- 2 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 1 edge to [[_COMMUNITY_GroupApprovalRouter]]
+- 1 edge to [[_COMMUNITY_MCPInspector]]
+- 1 edge to [[_COMMUNITY_ServiceManager]]
+- 1 edge to [[_COMMUNITY_TestMCPResultEndpoint]]
 
 ## Top bridge nodes
-- [[SSHConfig_2]] - degree 60, connects to 7 communities
-- [[TestSSHProxyValidateWriteFile]] - degree 28, connects to 5 communities
-- [[test_ssh_write_file_endpoint.py]] - degree 27, connects to 5 communities
-- [[TestSSHWriteFileEndpoint]] - degree 26, connects to 5 communities
-- [[TestSSHExec]] - degree 25, connects to 5 communities
+- [[ApprovalQueueConfig_2]] - degree 80, connects to 9 communities
+- [[EnhancedApprovalQueue]] - degree 59, connects to 9 communities
+- [[ApprovalStore]] - degree 60, connects to 7 communities
+- [[enhanced_queue.py]] - degree 15, connects to 7 communities
+- [[ToolRiskConfig]] - degree 38, connects to 5 communities

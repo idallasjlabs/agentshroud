@@ -23,7 +23,7 @@ members: 43
 - [[Colors_1]] - document - docker/config/openclaw/workspace/BRAND.md
 - [[Communication Templates]] - document - BRAND.md
 - [[Communication Templates_1]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[Directory Structure]] - document - branding/README.md
+- [[Directory Structure_1]] - document - branding/README.md
 - [[Do's]] - document - branding/README.md
 - [[Don'ts]] - document - branding/README.md
 - [[Elevator pitch]] - document - BRAND.md
@@ -48,8 +48,8 @@ members: 43
 - [[Trademark]] - document - docker/config/openclaw/workspace/BRAND.md
 - [[Typography]] - document - branding/README.md
 - [[Usage Guidelines]] - document - branding/README.md
-- [[Voice & Tone_1]] - document - BRAND.md
-- [[Voice & Tone_2]] - document - docker/config/openclaw/workspace/BRAND.md
+- [[Voice & Tone_2]] - document - BRAND.md
+- [[Voice & Tone_3]] - document - docker/config/openclaw/workspace/BRAND.md
 - [[What it is NOT]] - document - BRAND.md
 - [[What it is NOT_1]] - document - docker/config/openclaw/workspace/BRAND.md
 - [[workspaceBRAND]] - document - docker/config/openclaw/workspace/BRAND.md

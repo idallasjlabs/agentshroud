@@ -1,17 +1,20 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.40
+members: 5
 ---
 
 # TestOutboundInfoFilter
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[dot-test_comprehensive_attack_scenarios()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test against realistic attack scenarios.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[dot-test_bot_filter_matches_normalised_image()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_missing_dir_returns_empty()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_plain_name_and_mtime_timestamp()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_timestamp_suffix_strip_branch()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestTrivyImageSummaries]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +24,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
+- 3 edges to [[_COMMUNITY__w]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_7]]
 
 ## Top bridge nodes
-- [[dot-test_comprehensive_attack_scenarios()]] - degree 2, connects to 1 community
+- [[TestTrivyImageSummaries]] - degree 5, connects to 1 community
+- [[dot-test_bot_filter_matches_normalised_image()]] - degree 2, connects to 1 community
+- [[dot-test_plain_name_and_mtime_timestamp()]] - degree 2, connects to 1 community
+- [[dot-test_timestamp_suffix_strip_branch()]] - degree 2, connects to 1 community

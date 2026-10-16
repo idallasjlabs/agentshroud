@@ -24,7 +24,7 @@ members: 21
 - [[Risk Elevation Factors]] - document - skills/custom/securebrowser/references/security-policies.md
 - [[SecureBrowser Security Policies]] - document - skills/custom/securebrowser/references/security-policies.md
 - [[Security Event Triggers]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Security Testing_1]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Security Testing]] - document - skills/custom/securebrowser/references/security-policies.md
 - [[Standards Alignment]] - document - skills/custom/securebrowser/references/security-policies.md
 - [[Threat Model_2]] - document - skills/custom/securebrowser/references/security-policies.md
 - [[What Gets Logged]] - document - skills/custom/securebrowser/references/security-policies.md
@@ -40,8 +40,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_Error Index_4]]
 - 1 edge to [[_COMMUNITY_AgentShroud Data Dictionary]]
-- 1 edge to [[_COMMUNITY_Core Security Principles]]
 
 ## Top bridge nodes
 - [[SecureBrowser Security Policies]] - degree 10, connects to 2 communities

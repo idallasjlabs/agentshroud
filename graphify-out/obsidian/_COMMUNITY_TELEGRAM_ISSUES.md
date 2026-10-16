@@ -24,7 +24,7 @@ members: 28
 - [[Hallucinated Competitor Report (Zetherion AI)]] - rationale - docs/project/TELEGRAM_ISSUES.md
 - [[Multi-Host Infrastructure (MarvinTrillianPi)]] - concept - docs/runbooks/RUNBOOK.md
 - [[PandocLaTeX Dependency Issue]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[RUNBOOK_1]] - document - docs/runbooks/RUNBOOK.md
+- [[RUNBOOK]] - document - docs/runbooks/RUNBOOK.md
 - [[SMTP Port Block Email Failure]] - rationale - docs/project/TELEGRAM_ISSUES.md
 - [[SSH Key Regeneration on Container Restart]] - rationale - docs/project/TELEGRAM_ISSUES.md
 - [[SYSTEM_STATUS]] - document - docs/project/SYSTEM_STATUS.md
@@ -60,7 +60,7 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[raspberry-pi]] - degree 8, connects to 4 communities
-- [[RUNBOOK_1]] - degree 7, connects to 4 communities
+- [[RUNBOOK]] - degree 7, connects to 4 communities
 - [[TELEGRAM_ISSUES]] - degree 14, connects to 2 communities
 - [[Configuration Reference]] - degree 5, connects to 1 community
 - [[SYSTEM_STATUS]] - degree 3, connects to 1 community

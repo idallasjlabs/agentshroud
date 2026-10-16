@@ -12,7 +12,7 @@ members: 21
 ## Members
 - [[128]] - code - browser-extension/manifest.json
 - [[48]] - code - browser-extension/manifest.json
-- [[action_2]] - code - browser-extension/manifest.json
+- [[action_3]] - code - browser-extension/manifest.json
 - [[background]] - code - browser-extension/manifest.json
 - [[browser-extensionmanifest.json]] - code - browser-extension/manifest.json
 - [[browser_specific_settings]] - code - browser-extension/manifest.json

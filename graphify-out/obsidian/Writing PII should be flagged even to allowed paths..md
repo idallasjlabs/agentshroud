@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "ApprovalQueueConfig"
 location: "L568"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/ApprovalQueueConfig
 ---
 
 # Writing PII should be flagged even to allowed paths.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_write_pii_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

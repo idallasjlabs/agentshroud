@@ -14,7 +14,7 @@ members: 32
 - [[Cost Optimization Priority]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
 - [[Cross-Account & Future Proofing]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
 - [[Decision Framework]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
-- [[Deliverables_1]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Deliverables_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
 - [[EBS Performance Analysis (Critical Pattern)]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
 - [[Expertise]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
 - [[FY26 Cost Reduction Context_1]] - document - docker/config/openclaw/skills/i-aws/SKILL.md

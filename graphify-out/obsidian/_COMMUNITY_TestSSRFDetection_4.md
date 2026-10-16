@@ -1,24 +1,26 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.18
+members: 11
 ---
 
 # TestSSRFDetection
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[dot-test_base64_in_path_flagged()]] - code - gateway/tests/test_url_analyzer.py
-- [[dot-test_base64_in_query_flagged()_1]] - code - gateway/tests/test_url_analyzer.py
-- [[dot-test_long_query_string_flagged()]] - code - gateway/tests/test_url_analyzer.py
-- [[dot-test_many_params_flagged()]] - code - gateway/tests/test_url_analyzer.py
-- [[dot-test_normal_query_not_flagged()]] - code - gateway/tests/test_url_analyzer.py
-- [[dot-test_short_base64_not_flagged()_1]] - code - gateway/tests/test_url_analyzer.py
-- [[Data exfiltration patterns in URLs — flagged, not blocked.]] - rationale - gateway/tests/test_url_analyzer.py
-- [[Short base64 strings are normal (e.g., API tokens in URLs).]] - rationale - gateway/tests/test_url_analyzer.py
-- [[TestDataExfiltration_1]] - code - gateway/tests/test_url_analyzer.py
+- [[Common Issues]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Configuration Files]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Environment Variables (required)]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Health Checks]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Key Ports]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Kill Switch]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Logs]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Quick Reference — AgentShroud]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Related Notes_1]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Security Mode Toggle]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Start  Stop]] - document - docs/vault/00 - START HERE/Quick Reference.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,9 +30,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_TestSSRFDetection_2]]
-- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 1 edge to [[_COMMUNITY_WebProxyConfig]]
+- 1 edge to [[_COMMUNITY_main.py]]
 
 ## Top bridge nodes
-- [[TestDataExfiltration_1]] - degree 11, connects to 3 communities
+- [[Quick Reference — AgentShroud]] - degree 11, connects to 1 community

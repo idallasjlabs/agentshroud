@@ -12,7 +12,7 @@ tags:
 # _buildable_services()
 
 ## Connections
-- [[_dirty_build_files()]] - `semantically_similar_to` [INFERRED]
+- [[COMPOSE_CMD]] - `shares_data_with` [EXTRACTED]
 - [[phase_apply()]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 

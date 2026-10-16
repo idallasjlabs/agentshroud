@@ -47,9 +47,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_make_event]]
+- 3 edges to [[_COMMUNITY_test_dashboard.py]]
 - 1 edge to [[_COMMUNITY_ForwardRequest]]
-- 1 edge to [[_COMMUNITY_test_soc_bots.py_2]]
+- 1 edge to [[_COMMUNITY_test_soc_bots.py]]
 
 ## Top bridge nodes
 - [[test_soc_egress_endpoints.py]] - degree 25, connects to 2 communities

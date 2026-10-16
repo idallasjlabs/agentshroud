@@ -84,19 +84,20 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 6 edges to [[_COMMUNITY_test_main_endpoints.py_1]]
-- 4 edges to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
+- 3 edges to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
 - 2 edges to [[_COMMUNITY_test_forward_stream.py]]
 - 2 edges to [[_COMMUNITY__is_op_reference_allowed]]
-- 2 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
+- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL_4]]
 - 1 edge to [[_COMMUNITY_TestStreamingProxyStatusPropagation]]
 - 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
 - 1 edge to [[_COMMUNITY_dot-_run_proxy()]]
-- 1 edge to [[_COMMUNITY_TestEmailSend]]
+- 1 edge to [[_COMMUNITY_test_forward_stream.py_1]]
 - 1 edge to [[_COMMUNITY_GatewayEmailService]]
+- 1 edge to [[_COMMUNITY_AuditChain_1]]
 
 ## Top bridge nodes
 - [[auth_dep()]] - degree 14, connects to 6 communities
 - [[test_main_endpoints.py]] - degree 21, connects to 5 communities
-- [[receive_security_alert()]] - degree 6, connects to 2 communities
+- [[receive_security_alert()]] - degree 6, connects to 3 communities
 - [[dot-test_alerts_accepted_from_localhost()]] - degree 4, connects to 1 community
 - [[dot-test_bots_inventory_matches_the_real_container_name()]] - degree 2, connects to 1 community

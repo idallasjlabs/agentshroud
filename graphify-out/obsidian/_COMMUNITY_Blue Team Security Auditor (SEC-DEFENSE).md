@@ -1,20 +1,22 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.29
+members: 7
 ---
 
 # Blue Team Security Auditor (SEC-DEFENSE)
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[dot-agentsskillsi-sec-defenseREADME]] - document - .agents/skills/i-sec-defense/README.md
-- [[Blue Team Security Auditor (SEC-DEFENSE)]] - document - .agents/skills/i-sec-defense/README.md
-- [[Purpose_25]] - document - .agents/skills/i-sec-defense/README.md
-- [[Related Skills_11]] - document - .agents/skills/i-sec-defense/README.md
-- [[Usage_15]] - document - .agents/skills/i-sec-defense/README.md
+- [[Missing auth for API providers]] - document - docker/scripts/README.md
+- [[Bot not responding on Telegram]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Container unhealthy]] - document - docker/scripts/README.md
+- [[Container won't start after adding Anthropic secret]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Telegram bot not responding]] - document - docker/scripts/README.md
+- [[Troubleshooting]] - document - docker/scripts/README.md
+- [[Troubleshooting_1]] - document - docs/setup/SETUP_API_KEYS.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +26,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_OpenClaw Management Scripts]]
+- 1 edge to [[_COMMUNITY_API Keys Setup Guide]]
 
 ## Top bridge nodes
-- [[Blue Team Security Auditor (SEC-DEFENSE)]] - degree 5, connects to 1 community
+- [[Troubleshooting]] - degree 4, connects to 1 community
+- [[Troubleshooting_1]] - degree 4, connects to 1 community

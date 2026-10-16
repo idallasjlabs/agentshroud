@@ -48,9 +48,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_system-requirements]]
+- 4 edges to [[_COMMUNITY_system-requirements]]
 - 2 edges to [[_COMMUNITY_test_forward_stream.py]]
+- 1 edge to [[_COMMUNITY_telegram_proxy.py_3]]
 
 ## Top bridge nodes
-- [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - degree 18, connects to 2 communities
+- [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - degree 18, connects to 3 communities
 - [[RT-6 — Owner-Identity Spoofing via forward body (FIXED)]] - degree 2, connects to 1 community

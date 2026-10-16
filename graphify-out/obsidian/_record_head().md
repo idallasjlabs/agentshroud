@@ -12,7 +12,12 @@ tags:
 # _record_head()
 
 ## Connections
-- [[log()_8]] - `calls` [EXTRACTED]
+- [[HEAD_AT_START]] - `shares_data_with` [EXTRACTED]
+- [[Shared working-tree stability guard]] - `rationale_for` [EXTRACTED]
+- [[_record_head captures real HEAD]] - `calls` [EXTRACTED]
+- [[head-guard function extraction (line-number sed)]] - `references` [EXTRACTED]
+- [[log()]] - `calls` [EXTRACTED]
+- [[sunday-upgrade-apply main sequence]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 - [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
 

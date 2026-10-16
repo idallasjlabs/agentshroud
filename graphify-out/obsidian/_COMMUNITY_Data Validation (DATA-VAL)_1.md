@@ -10,10 +10,10 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Data Validation (DATA-VAL)_1]] - document - docker/config/openclaw/skills/i-data/README.md
-- [[Purpose_45]] - document - docker/config/openclaw/skills/i-data/README.md
-- [[Related Skills_31]] - document - docker/config/openclaw/skills/i-data/README.md
-- [[Usage_35]] - document - docker/config/openclaw/skills/i-data/README.md
+- [[Data Validation (DATA-VAL)]] - document - docker/config/openclaw/skills/i-data/README.md
+- [[Purpose_34]] - document - docker/config/openclaw/skills/i-data/README.md
+- [[Related Skills_23]] - document - docker/config/openclaw/skills/i-data/README.md
+- [[Usage_26]] - document - docker/config/openclaw/skills/i-data/README.md
 - [[openclawskillsi-dataREADME]] - document - docker/config/openclaw/skills/i-data/README.md
 
 ## Live Query (requires Dataview plugin)
@@ -27,4 +27,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[Data Validation (DATA-VAL)_1]] - degree 5, connects to 1 community
+- [[Data Validation (DATA-VAL)]] - degree 5, connects to 1 community

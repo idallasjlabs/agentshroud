@@ -1,20 +1,17 @@
 ---
 type: community
-cohesion: 0.05
-members: 38
+cohesion: 0.07
+members: 28
 ---
 
 # AgentShroud Access Control Matrix
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 38 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 28 nodes
 
 ## Members
-- [[Admin (admin)]] - document - docs/security/access-control-matrix.md
-- [[Administrative Roles]] - document - docs/security/access-control-matrix.md
 - [[Agent Management]] - document - docs/security/access-control-matrix.md
 - [[Agent Operational Permissions]] - document - docs/security/access-control-matrix.md
-- [[Agent Trust Levels]] - document - docs/security/access-control-matrix.md
 - [[AgentShroud Access Control Matrix]] - document - docs/security/access-control-matrix.md
 - [[Approval Queue Management]] - document - docs/security/access-control-matrix.md
 - [[Automatic Progression Criteria]] - document - docs/security/access-control-matrix.md
@@ -32,22 +29,15 @@ members: 38
 - [[Level 3 → Level 4]] - document - docs/security/access-control-matrix.md
 - [[MCP Proxy Tool Authorization]] - document - docs/security/access-control-matrix.md
 - [[Monitoring and Audit]] - document - docs/security/access-control-matrix.md
-- [[Operator (operator)]] - document - docs/security/access-control-matrix.md
-- [[Overview_1]] - document - docs/security/access-control-matrix.md
+- [[Overview_4]] - document - docs/security/access-control-matrix.md
 - [[Permission Matrix]] - document - docs/security/access-control-matrix.md
-- [[RBAC Role Definitions]] - document - docs/security/access-control-matrix.md
 - [[Recovery Timeframes]] - document - docs/security/access-control-matrix.md
 - [[Security Violation Penalties]] - document - docs/security/access-control-matrix.md
 - [[System Administration]] - document - docs/security/access-control-matrix.md
 - [[Tool Categories and Trust Requirements]] - document - docs/security/access-control-matrix.md
 - [[Tool and Capability Access]] - document - docs/security/access-control-matrix.md
 - [[Trust Degradation Rules]] - document - docs/security/access-control-matrix.md
-- [[Trust Level 0 (agent_l0)]] - document - docs/security/access-control-matrix.md
-- [[Trust Level 1 (agent_l1)]] - document - docs/security/access-control-matrix.md
-- [[Trust Level 2 (agent_l2)]] - document - docs/security/access-control-matrix.md
-- [[Trust Level 3 (agent_l3)]] - document - docs/security/access-control-matrix.md
 - [[Trust Level Progression Rules]] - document - docs/security/access-control-matrix.md
-- [[Viewer (viewer)]] - document - docs/security/access-control-matrix.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -57,7 +47,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_Mac App Discovery Skill_2]]
 - 1 edge to [[_COMMUNITY_system-requirements]]
 
 ## Top bridge nodes
-- [[AgentShroud Access Control Matrix]] - degree 7, connects to 1 community
+- [[AgentShroud Access Control Matrix]] - degree 7, connects to 2 communities

@@ -35,9 +35,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised_1]]
+- 1 edge to [[_COMMUNITY_Error Index_4]]
+- 1 edge to [[_COMMUNITY_Git History Purge Plan]]
 - 1 edge to [[_COMMUNITY_1Password Vault Sharing Instructions]]
-- 1 edge to [[_COMMUNITY_Core Security Principles]]
 
 ## Top bridge nodes
 - [[Security Implementation Verification]] - degree 10, connects to 3 communities

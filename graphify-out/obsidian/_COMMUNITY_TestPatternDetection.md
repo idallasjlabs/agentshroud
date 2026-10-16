@@ -38,13 +38,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_GovernanceAction]]
-- 6 edges to [[_COMMUNITY_SubagentGovernance]]
-- 2 edges to [[_COMMUNITY_dot-_check_budget]]
+- 8 edges to [[_COMMUNITY_SubagentGovernance]]
+- 4 edges to [[_COMMUNITY_GovernanceAction_1]]
+- 3 edges to [[_COMMUNITY_GovernanceAction]]
 
 ## Top bridge nodes
-- [[TestPatternDetection]] - degree 16, connects to 3 communities
+- [[dot-score_output()]] - degree 7, connects to 3 communities
+- [[TestPatternDetection]] - degree 16, connects to 2 communities
 - [[_check_pii_patterns()]] - degree 9, connects to 2 communities
 - [[_check_exfil_patterns()]] - degree 8, connects to 2 communities
 - [[_check_injection_patterns()]] - degree 7, connects to 2 communities
-- [[dot-score_output()]] - degree 7, connects to 2 communities

@@ -25,7 +25,7 @@ members: 22
 - [[Online renderer]] - document - .agents/skills/i-ti/SKILL.md
 - [[Render locally with mmdc]] - document - .agents/skills/i-ti/SKILL.md
 - [[Rendering and Export]] - document - .agents/skills/i-ti/SKILL.md
-- [[Role_39]] - document - .agents/skills/i-ti/SKILL.md
+- [[Role_38]] - document - .agents/skills/i-ti/SKILL.md
 - [[Rules_14]] - document - .agents/skills/i-ti/SKILL.md
 - [[Sequence — Order of operations between systems]] - document - .agents/skills/i-ti/SKILL.md
 - [[Skill Technical Illustrator (TI)]] - document - .agents/skills/i-ti/SKILL.md

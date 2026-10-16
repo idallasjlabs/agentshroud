@@ -42,7 +42,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised_1]]
+- 1 edge to [[_COMMUNITY_BotConfig_1]]
 - 1 edge to [[_COMMUNITY_🎯 High-Value Features (Justify the Effort)]]
 
 ## Top bridge nodes

@@ -82,7 +82,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 31 edges to [[_COMMUNITY_test_voice_gateway.py]]
-- 3 edges to [[_COMMUNITY_AsyncMock]]
+- 3 edges to [[_COMMUNITY_AsyncMock_1]]
 
 ## Top bridge nodes
 - [[_mock_ws()]] - degree 25, connects to 2 communities

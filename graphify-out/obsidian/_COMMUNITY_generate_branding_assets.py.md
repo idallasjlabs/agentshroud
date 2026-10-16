@@ -15,7 +15,7 @@ members: 21
 - [[Image]] - code - scripts/generate_branding_assets.py
 - [[Load source logo, optionally resize and composite onto bg.]] - rationale - scripts/generate_branding_assets.py
 - [[Paste transparent logo centred on a solid-colour canvas.]] - rationale - scripts/generate_branding_assets.py
-- [[Path_37]] - code - scripts/generate_branding_assets.py
+- [[Path_39]] - code - scripts/generate_branding_assets.py
 - [[ensure()]] - code - scripts/generate_branding_assets.py
 - [[generate_branding_assets.py]] - code - scripts/generate_branding_assets.py
 - [[generate_email()]] - code - scripts/generate_branding_assets.py
@@ -29,7 +29,7 @@ members: 21
 - [[get_font()]] - code - scripts/generate_branding_assets.py
 - [[icon_on_canvas()]] - code - scripts/generate_branding_assets.py
 - [[load_logo()]] - code - scripts/generate_branding_assets.py
-- [[main()_18]] - code - scripts/generate_branding_assets.py
+- [[main()_20]] - code - scripts/generate_branding_assets.py
 - [[save()_1]] - code - scripts/generate_branding_assets.py
 
 ## Live Query (requires Dataview plugin)

@@ -17,7 +17,7 @@ tags:
 - [[AgentShroud v1.2.0 Master Plan]] - `references` [EXTRACTED]
 - [[Intent]] - `contains` [EXTRACTED]
 - [[Phases]] - `contains` [EXTRACTED]
-- [[Source of truth]] - `contains` [EXTRACTED]
+- [[Source of truth_1]] - `contains` [EXTRACTED]
 - [[Tests to add]] - `contains` [EXTRACTED]
 
 #graphify/concept #graphify/EXTRACTED #community/AgentShroud_v120_Master_Plan

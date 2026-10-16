@@ -34,9 +34,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Audit Ledger (SHA-256 hash only)_1]]
-- 1 edge to [[_COMMUNITY_AgentShroud (system, C4 context)]]
+- 1 edge to [[_COMMUNITY_Audit Ledger (SHA-256 hash only)]]
 - 1 edge to [[_COMMUNITY_ADR-005 SHA-256 Hash Chain Audit Integrity_1]]
+- 1 edge to [[_COMMUNITY_AgentShroud (system, C4 context)]]
 
 ## Top bridge nodes
 - [[ADR-005 SHA-256 Hash Chain Audit Integrity]] - degree 10, connects to 2 communities

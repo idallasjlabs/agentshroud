@@ -24,12 +24,12 @@ members: 35
 - [[dot-pull()]] - code - gateway/runtime/engine.py
 - [[dot-push()]] - code - gateway/runtime/engine.py
 - [[dot-rm()]] - code - gateway/runtime/engine.py
-- [[dot-stop()_5]] - code - gateway/runtime/engine.py
+- [[dot-stop()_7]] - code - gateway/runtime/engine.py
 - [[dot-unpause()]] - code - gateway/runtime/engine.py
 - [[dot-volume_create()]] - code - gateway/runtime/engine.py
 - [[dot-volume_rm()]] - code - gateway/runtime/engine.py
 - [[ABC]] - code
-- [[Any_29]] - code - gateway/runtime/engine.py
+- [[Any_24]] - code - gateway/runtime/engine.py
 - [[Bring up services from a compose file.]] - rationale - gateway/runtime/engine.py
 - [[Build an image. Returns the image idtag.]] - rationale - gateway/runtime/engine.py
 - [[CompletedProcess_2]] - code - gateway/runtime/engine.py
@@ -55,10 +55,10 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 6 edges to [[_COMMUNITY_RuntimeConfig]]
-- 4 edges to [[_COMMUNITY_test_runtime_engines.py_1]]
-- 2 edges to [[_COMMUNITY_AppleContainerEngine]]
-- 2 edges to [[_COMMUNITY_DockerEngine]]
-- 2 edges to [[_COMMUNITY_PodmanEngine]]
+- 3 edges to [[_COMMUNITY_AppleContainerEngine]]
+- 3 edges to [[_COMMUNITY_DockerEngine]]
+- 3 edges to [[_COMMUNITY_PodmanEngine]]
+- 1 edge to [[_COMMUNITY_test_runtime_engines.py]]
 - 1 edge to [[_COMMUNITY_get_engine]]
 
 ## Top bridge nodes

@@ -12,19 +12,19 @@ members: 15
 ## Members
 - [[Configuration  Environment Variables_11]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
 - [[Detection Patterns_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[Function Details_24]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[Key Classes  Functions_26]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Function Details_23]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Key Classes  Functions_25]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
 - [[MCPInspector._redact_pii(value)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
 - [[MCPInspector._scan_text(text, path, findings, ...)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
 - [[MCPInspector._scan_value(value, path, findings, ...)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
 - [[MCPInspector._should_block(findings)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
 - [[MCPInspector.inspect_tool_call(tool_name, params, check_injection, check_pii, check_encoding, check_sensitive)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
 - [[MCPInspector.inspect_tool_result(tool_name, result_content, check_pii, check_encoding)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[Purpose_145]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[Related_30]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[Responsibilities_28]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Purpose_142]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Related_29]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Responsibilities_27]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[mcp_inspector.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
 - [[mcp_inspector.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[mcp_inspector.py]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
 
 ## Live Query (requires Dataview plugin)
 

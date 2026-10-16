@@ -23,7 +23,7 @@ members: 19
 - [[HTML  CSS Brand Variables]] - document - .agents/skills/i-bs/SKILL.md
 - [[Patterns by Output Type]] - document - .agents/skills/i-bs/SKILL.md
 - [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements]] - document - .agents/skills/i-bs/SKILL.md
-- [[Role_49]] - document - .agents/skills/i-bs/SKILL.md
+- [[Role_48]] - document - .agents/skills/i-bs/SKILL.md
 - [[Rules_17]] - document - .agents/skills/i-bs/SKILL.md
 - [[Skill Branding Specialist (BS)]] - document - .agents/skills/i-bs/SKILL.md
 - [[Typography Scale]] - document - .agents/skills/i-bs/SKILL.md

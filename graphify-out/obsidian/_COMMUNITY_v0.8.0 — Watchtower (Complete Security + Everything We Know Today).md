@@ -25,7 +25,7 @@ members: 22
 - [[B. Wire ALL Modules Into Request Path]] - document - docs/planning/MASTER-FEATURE-LIST.md
 - [[C. Bug Fixes]] - document - docs/planning/MASTER-FEATURE-LIST.md
 - [[E. Observatory Mode (Global MonitorEnforce Switch)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Features_1]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Features_3]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
 - [[G. Encrypted Container-to-Container Communication]] - document - docs/planning/MASTER-FEATURE-LIST.md
 - [[H. Pi-hole as Default Stack Component]] - document - docs/planning/MASTER-FEATURE-LIST.md
 - [[J. Phase 8.5 E2E Verification]] - document - docs/planning/MASTER-FEATURE-LIST.md
@@ -47,5 +47,5 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[v0.8.0 — Watchtower (Complete Security + Everything We Know Today)]] - degree 14, connects to 1 community
-- [[Features_1]] - degree 7, connects to 1 community
+- [[Features_3]] - degree 7, connects to 1 community
 - [[6. Enhanced Audit & Compliance]] - degree 3, connects to 1 community

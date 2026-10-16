@@ -1,13 +1,13 @@
 ---
 type: community
-cohesion: 0.08
-members: 42
+cohesion: 0.09
+members: 36
 ---
 
 # test_main_endpoints.py
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 42 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 36 nodes
 
 ## Members
 - [[dot-_mock_websocket()]] - code - gateway/tests/test_main_endpoints.py
@@ -24,7 +24,7 @@ members: 42
 - [[dot-test_traversal_in_query_closes_without_connecting()]] - code - gateway/tests/test_main_endpoints.py
 - [[dot-test_upstream_connect_failure_closes_gracefully()]] - code - gateway/tests/test_main_endpoints.py
 - [[A deadunreachable bridge must not raise out of the route -- it closes the…]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Redirect bare hermes-dashboard to hermes-dashboard so assets resolve.]] - rationale - gateway/ingest_api/main.py
+- [[HERMES_DASHBOARD_UPSTREAM  _HOST_UPSTREAM dev hostnames]] - rationale - docker/docker-compose.agentshroud-bot.marvin.yml
 - [[Relay the Hermes dashboard's WebSocket channels (apiws, apipub) through the…]] - rationale - gateway/ingest_api/main.py
 - [[Reverse-proxy the Hermes Agent dashboard through the gateway.]] - rationale - gateway/ingest_api/main.py
 - [[TestHermesDashboardPathTraversal]] - code - gateway/tests/test_main_endpoints.py
@@ -37,21 +37,15 @@ members: 42
 - [[_one_frame_aiter()]] - code - gateway/tests/test_main_endpoints.py
 - [[_upstream_to_bot()]] - code - gateway/ingest_api/main.py
 - [[_upstream_to_client()]] - code - gateway/ingest_api/main.py
-- [[asyncio]] - code
-- [[cmd_persist]] - code - scripts/tailscale-serve.sh
-- [[cmd_start]] - code - scripts/tailscale-serve.sh
-- [[cmd_status]] - code - scripts/tailscale-serve.sh
-- [[cmd_stop]] - code - scripts/tailscale-serve.sh
+- [[asyncio_1]] - code
+- [[hermes-dashboard-relay bypass of the gateway proxy]] - rationale - INCIDENT_2026-10-16_conduit-outage.md
 - [[hermes_dashboard_proxy (hermes-dashboard{path} HTTP reverse proxy)]] - code - gateway/ingest_api/main.py
 - [[hermes_dashboard_proxy must reject traversal sequences before forwarding.]] - rationale - gateway/tests/test_main_endpoints.py
 - [[hermes_dashboard_proxy raises HTTPException(400) for traversal in path.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[hermes_dashboard_root]] - code - gateway/ingest_api/main.py
 - [[hermes_dashboard_ws_proxy (WebSocket relay)]] - code - gateway/ingest_api/main.py
 - [[hermes_dashboard_ws_proxy WebSocket counterpart of hermes_dashboard_proxy.…]] - rationale - gateway/tests/test_main_endpoints.py
 - [[slack_ws_relay()]] - code - gateway/ingest_api/main.py
-- [[tailscale-serve.sh]] - code - scripts/tailscale-serve.sh
-- [[tailscale-serve.sh script]] - code - scripts/tailscale-serve.sh
-- [[websocket_1]] - code
+- [[websocket_2]] - code
 
 ## Live Query (requires Dataview plugin)
 
@@ -62,15 +56,16 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 6 edges to [[_COMMUNITY_test_main_endpoints.py]]
-- 4 edges to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
-- 4 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
+- 3 edges to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
+- 3 edges to [[_COMMUNITY_agentshroud-blueteamSKILL_4]]
 - 1 edge to [[_COMMUNITY_dot-_run_proxy()]]
-- 1 edge to [[_COMMUNITY_run-standalone.sh (Hermes docker run launcher)]]
-- 1 edge to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]]
+- 1 edge to [[_COMMUNITY_SecureBrowser Skill_1]]
+- 1 edge to [[_COMMUNITY_AgentTarget_3]]
+- 1 edge to [[_COMMUNITY_run-standalone.sh (Hermes docker run launcher)_1]]
 
 ## Top bridge nodes
-- [[hermes_dashboard_proxy (hermes-dashboard{path} HTTP reverse proxy)]] - degree 13, connects to 5 communities
+- [[hermes_dashboard_proxy (hermes-dashboard{path} HTTP reverse proxy)]] - degree 14, connects to 5 communities
 - [[hermes_dashboard_ws_proxy (WebSocket relay)]] - degree 13, connects to 2 communities
-- [[hermes_dashboard_root]] - degree 4, connects to 2 communities
 - [[TestHermesDashboardPathTraversal]] - degree 10, connects to 1 community
-- [[asyncio]] - degree 9, connects to 1 community
+- [[asyncio_1]] - degree 9, connects to 1 community
+- [[TestHermesDashboardWsProxy]] - degree 9, connects to 1 community

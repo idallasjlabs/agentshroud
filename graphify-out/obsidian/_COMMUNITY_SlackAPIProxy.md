@@ -1,29 +1,38 @@
 ---
 type: community
-cohesion: 0.15
-members: 14
+cohesion: 0.19
+members: 23
 ---
 
 # SlackAPIProxy
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 14 nodes
+**Cohesion:** 0.19 - loosely connected
+**Members:** 23 nodes
 
 ## Members
-- [[dot-_call_slack_api()]] - code - gateway/proxy/slack_proxy.py
-- [[dot-_intercept_connections_open()]] - code - gateway/proxy/slack_proxy.py
-- [[dot-_is_owner_channel()]] - code - gateway/proxy/slack_proxy.py
-- [[dot-invite_channel_member()]] - code - gateway/proxy/slack_proxy.py
-- [[dot-kick_channel_member()]] - code - gateway/proxy/slack_proxy.py
-- [[dot-provision_group_channel()]] - code - gateway/proxy/slack_proxy.py
-- [[dot-proxy_outbound()]] - code - gateway/proxy/slack_proxy.py
-- [[Create a Slack channel for a group. Returns channel_id or None on failure.]] - rationale - gateway/proxy/slack_proxy.py
-- [[Intercept apps.connections.open rewrite the returned WSS URL to route         t]] - rationale - gateway/proxy/slack_proxy.py
-- [[Invite a Slack user to a channel. Returns True on success.]] - rationale - gateway/proxy/slack_proxy.py
-- [[POST to httpsslack.comapimethod with the bot token.]] - rationale - gateway/proxy/slack_proxy.py
-- [[Proxy a bot Slack Web API call through the security pipeline.          For messa]] - rationale - gateway/proxy/slack_proxy.py
-- [[Remove a Slack user from a channel. Returns True on success.]] - rationale - gateway/proxy/slack_proxy.py
-- [[Return True if channel is a DM with the configured owner.          In Slack, DM]] - rationale - gateway/proxy/slack_proxy.py
+- [[dot-test_minimal_construction()]] - code - gateway/tests/test_soc_models.py
+- [[dot-test_optional_fields_default_none()]] - code - gateway/tests/test_soc_models.py
+- [[dot-test_severity_ordering()_1]] - code - gateway/tests/test_soc_models.py
+- [[Any_71]] - code - gateway/soc/event_adapter.py
+- [[Best-effort conversion of arbitrary event dict to SecurityEvent.]] - rationale - gateway/soc/event_adapter.py
+- [[Best-effort mapping of arbitrary severity strings to Severity enum.]] - rationale - gateway/soc/event_adapter.py
+- [[Collect recent SecurityEvents from AuditStore (async-safe read).]] - rationale - gateway/soc/event_adapter.py
+- [[Convert AuditEvent (from AuditStore) to SecurityEvent.      AuditEvent fields e]] - rationale - gateway/soc/event_adapter.py
+- [[Convert a PipelineResult to SecurityEvent.]] - rationale - gateway/soc/event_adapter.py
+- [[Convert an AnomalyAlert (from EgressMonitorSOCCorrelation) to SecurityEvent.]] - rationale - gateway/soc/event_adapter.py
+- [[Convert an EgressAttempt or egress dict to SecurityEvent.]] - rationale - gateway/soc/event_adapter.py
+- [[SecurityEvent]] - code - gateway/soc/event_adapter.py
+- [[SecurityEvent_1]] - code - gateway/soc/models.py
+- [[Severity_7]] - code - gateway/soc/event_adapter.py
+- [[TestSecurityEvent]] - code - gateway/tests/test_soc_models.py
+- [[_map_severity()]] - code - gateway/soc/event_adapter.py
+- [[collect_recent_events()]] - code - gateway/soc/event_adapter.py
+- [[event_adapter.py]] - code - gateway/soc/event_adapter.py
+- [[from_anomaly_alert()]] - code - gateway/soc/event_adapter.py
+- [[from_audit_chain_entry()]] - code - gateway/soc/event_adapter.py
+- [[from_dict()]] - code - gateway/soc/event_adapter.py
+- [[from_egress_attempt()]] - code - gateway/soc/event_adapter.py
+- [[from_pipeline_result()]] - code - gateway/soc/event_adapter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,11 +42,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_AsyncMock]]
+- 5 edges to [[_COMMUNITY_test_soc_bots.py]]
+- 4 edges to [[_COMMUNITY_socrouter.py]]
+- 4 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 4 edges to [[_COMMUNITY__FakeRBAC_1]]
+- 3 edges to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY__FakeRBAC]]
+- 1 edge to [[_COMMUNITY_soc.js]]
 
 ## Top bridge nodes
-- [[dot-_call_slack_api()]] - degree 7, connects to 1 community
-- [[dot-proxy_outbound()]] - degree 5, connects to 1 community
-- [[dot-_intercept_connections_open()]] - degree 4, connects to 1 community
-- [[dot-invite_channel_member()]] - degree 3, connects to 1 community
-- [[dot-_is_owner_channel()]] - degree 3, connects to 1 community
+- [[SecurityEvent_1]] - degree 20, connects to 5 communities
+- [[event_adapter.py]] - degree 11, connects to 3 communities
+- [[collect_recent_events()]] - degree 10, connects to 3 communities
+- [[Any_71]] - degree 9, connects to 1 community
+- [[SecurityEvent]] - degree 8, connects to 1 community

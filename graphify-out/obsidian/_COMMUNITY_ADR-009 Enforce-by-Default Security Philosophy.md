@@ -14,7 +14,7 @@ members: 18
 - [[ADR-009-enforce-by-default]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
 - [[ADR-009 Enforce-by-Default Security Philosophy]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
 - [[Compliance Alignment (9 standards)]] - concept - docs/architecture/agentic-os.md
-- [[Configuration_9]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
+- [[Configuration_11]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
 - [[Consequences_1]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
 - [[Context_3]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
 - [[Decision_3]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
@@ -25,7 +25,7 @@ members: 18
 - [[Related_7]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
 - [[Security Modules (30+, gateway diagram)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
 - [[SecurityPipeline (75 modules, 7 layers)]] - concept - docs/architecture/agentic-os.md
-- [[Status_2]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
+- [[Status_3]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
 - [[prompt_guard (prompt injection)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
 - [[trust_manager (trust levels)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
 

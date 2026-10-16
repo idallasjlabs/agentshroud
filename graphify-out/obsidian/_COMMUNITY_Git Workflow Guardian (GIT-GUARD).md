@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.33
+members: 6
 ---
 
 # Git Workflow Guardian (GIT-GUARD)
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Git Workflow Guardian (GIT-GUARD)]] - document - docker/config/hermes/skills/i-gg/README.md
-- [[Purpose_30]] - document - docker/config/hermes/skills/i-gg/README.md
-- [[Related Skills_16]] - document - docker/config/hermes/skills/i-gg/README.md
-- [[Usage_20]] - document - docker/config/hermes/skills/i-gg/README.md
-- [[hermesskillsi-ggREADME]] - document - docker/config/hermes/skills/i-gg/README.md
+- [[dot-__init__()_43]] - code - gateway/approval_queue/queue.py
+- [[dot-_load_pending_store()]] - code - gateway/approval_queue/queue.py
+- [[ApprovalQueueConfig]] - code - gateway/approval_queue/queue.py
+- [[Initialize approval queue          Args             config Approval queue conf]] - rationale - gateway/approval_queue/queue.py
+- [[Load queue items from store file when present.]] - rationale - gateway/approval_queue/queue.py
+- [[MFAGuard]] - code - gateway/approval_queue/queue.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +25,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_hermesskillsi-bsREADME]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig_3]]
 
 ## Top bridge nodes
-- [[Git Workflow Guardian (GIT-GUARD)]] - degree 5, connects to 1 community
+- [[dot-__init__()_43]] - degree 5, connects to 1 community
+- [[dot-_load_pending_store()]] - degree 3, connects to 1 community

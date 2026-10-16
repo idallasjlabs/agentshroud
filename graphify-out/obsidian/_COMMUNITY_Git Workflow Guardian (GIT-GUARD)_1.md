@@ -10,10 +10,10 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Git Workflow Guardian (GIT-GUARD)_1]] - document - docker/config/openclaw/skills/i-gg/README.md
-- [[Purpose_47]] - document - docker/config/openclaw/skills/i-gg/README.md
-- [[Related Skills_33]] - document - docker/config/openclaw/skills/i-gg/README.md
-- [[Usage_37]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[Git Workflow Guardian (GIT-GUARD)]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[Purpose_36]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[Related Skills_25]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[Usage_28]] - document - docker/config/openclaw/skills/i-gg/README.md
 - [[openclawskillsi-ggREADME]] - document - docker/config/openclaw/skills/i-gg/README.md
 
 ## Live Query (requires Dataview plugin)
@@ -27,4 +27,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[Git Workflow Guardian (GIT-GUARD)_1]] - degree 5, connects to 1 community
+- [[Git Workflow Guardian (GIT-GUARD)]] - degree 5, connects to 1 community

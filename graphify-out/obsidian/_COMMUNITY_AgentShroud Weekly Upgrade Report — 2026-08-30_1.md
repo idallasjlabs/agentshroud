@@ -1,13 +1,13 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+cohesion: 0.17
+members: 12
 ---
 
 # AgentShroud Weekly Upgrade Report — 2026-08-30
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
 - [[1. Summary_2]] - document - reports/upgrade-2026-08-30-20260830-2010.md
@@ -21,6 +21,7 @@ members: 11
 - [[AgentShroud Weekly Upgrade Report — 2026-08-30_2]] - document - reports/upgrade-2026-08-30-20260830-2010.md
 - [[Appendix first-pass abort evidence (0734–0826 ET, superseded)_2]] - document - reports/upgrade-2026-08-30-20260830-2010.md
 - [[Run history_2]] - document - reports/upgrade-2026-08-30-20260830-2010.md
+- [[upgrade-2026-08-30]] - document - reports/upgrade-2026-08-30.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,6 +32,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Sunday Upgrade Report — 2026-09-17 (prod, on-demand)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Weekly Upgrade Report — 2026-08-30]]
 
 ## Top bridge nodes
-- [[AgentShroud Weekly Upgrade Report — 2026-08-30_2]] - degree 11, connects to 1 community
+- [[upgrade-2026-08-30]] - degree 3, connects to 2 communities

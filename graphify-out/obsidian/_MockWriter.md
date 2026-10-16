@@ -12,8 +12,8 @@ tags:
 # _MockWriter
 
 ## Connections
-- [[dot-__init__()_155]] - `method` [EXTRACTED]
-- [[dot-close()_12]] - `method` [EXTRACTED]
+- [[dot-__init__()_145]] - `method` [EXTRACTED]
+- [[dot-close()_13]] - `method` [EXTRACTED]
 - [[dot-drain()]] - `method` [EXTRACTED]
 - [[dot-get_extra_info()]] - `method` [EXTRACTED]
 - [[dot-write()]] - `method` [EXTRACTED]

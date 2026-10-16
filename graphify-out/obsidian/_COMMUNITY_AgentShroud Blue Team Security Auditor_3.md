@@ -33,7 +33,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_InjectionAction]]
+- 1 edge to [[_COMMUNITY_InjectionAction_1]]
 
 ## Top bridge nodes
 - [[AgentShroud Blue Team Security Auditor_3]] - degree 6, connects to 1 community

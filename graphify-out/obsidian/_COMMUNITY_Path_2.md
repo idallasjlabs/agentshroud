@@ -25,7 +25,7 @@ members: 30
 - [[A JSON-corrupt file is silently skipped, others are still returned.]] - rationale - gateway/tests/test_scanner_integration.py
 - [[Directory exists but contains only fs scan files — returns .]] - rationale - gateway/tests/test_scanner_integration.py
 - [[Files named trivy-.json (fs scans) are not included.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[Path_29]] - code - gateway/tests/test_scanner_integration.py
+- [[Path_28]] - code - gateway/tests/test_scanner_integration.py
 - [[Return True if clamd Unix socket tmpclamd.ctl is connectable.]] - rationale - gateway/security/scanner_integration.py
 - [[Return latest ClamAV scan summary from saved reports.      When ClamAV is instal]] - rationale - gateway/security/scanner_integration.py
 - [[Return per-image Trivy scan summaries from saved image reports.      Reads repor]] - rationale - gateway/security/scanner_integration.py
@@ -49,16 +49,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_test_scanner_integration.py]]
-- 4 edges to [[_COMMUNITY_test_security_toolchain.py]]
+- 10 edges to [[_COMMUNITY_test_scanner_integration.py]]
+- 5 edges to [[_COMMUNITY_test_collaborator_greeter.py_1]]
 - 4 edges to [[_COMMUNITY_scanner_integration.py]]
-- 3 edges to [[_COMMUNITY_get_trivy_summary]]
-- 2 edges to [[_COMMUNITY__load_latest_json]]
-- 1 edge to [[_COMMUNITY_scanner_integration.py_1]]
+- 3 edges to [[_COMMUNITY_test_security_toolchain.py]]
+- 3 edges to [[_COMMUNITY__load_latest_json]]
+- 1 edge to [[_COMMUNITY_get_trivy_summary]]
+- 1 edge to [[_COMMUNITY_AgentTarget_4]]
 
 ## Top bridge nodes
-- [[get_clamav_summary()]] - degree 13, connects to 5 communities
-- [[Path_29]] - degree 18, connects to 3 communities
-- [[get_trivy_image_summaries()]] - degree 14, connects to 3 communities
+- [[get_clamav_summary()]] - degree 13, connects to 6 communities
+- [[Path_28]] - degree 18, connects to 4 communities
+- [[get_trivy_image_summaries()]] - degree 14, connects to 4 communities
 - [[_write_image_report()]] - degree 11, connects to 1 community
 - [[_clean_trivy_report()]] - degree 10, connects to 1 community

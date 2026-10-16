@@ -18,10 +18,10 @@ members: 16
 - [[MCP Auth Reset Skill_1]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
 - [[MCP Doctor README]] - document - .agents/skills/i-mcpm-doctor/README.md
 - [[MCP Doctor Skill]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Purpose_119]] - document - .agents/skills/i-mcpm-aws-profile/README.md
-- [[Purpose_120]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
-- [[Related Skills_89]] - document - .agents/skills/i-mcpm-aws-profile/README.md
-- [[Related Skills_90]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
+- [[Purpose_116]] - document - .agents/skills/i-mcpm-aws-profile/README.md
+- [[Purpose_117]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
+- [[Related Skills_88]] - document - .agents/skills/i-mcpm-aws-profile/README.md
+- [[Related Skills_89]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
 - [[Usage_97]] - document - .agents/skills/i-mcpm-aws-profile/README.md
 - [[Usage_98]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
 - [[hermesskillsi-mcpm-aws-profileREADME]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md

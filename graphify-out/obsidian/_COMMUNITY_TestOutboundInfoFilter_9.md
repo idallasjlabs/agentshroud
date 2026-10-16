@@ -1,17 +1,20 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.40
+members: 5
 ---
 
 # TestOutboundInfoFilter
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[dot-test_initialization_default()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test filter initializes with default configuration.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[dot-test_compliance_levels()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_iec_sl_levels()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_weighted_subscore_empty_map()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_weighted_subscore_partial()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestComplianceMaths]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_7]]
 
 ## Top bridge nodes
-- [[dot-test_initialization_default()]] - degree 2, connects to 1 community
+- [[TestComplianceMaths]] - degree 5, connects to 1 community

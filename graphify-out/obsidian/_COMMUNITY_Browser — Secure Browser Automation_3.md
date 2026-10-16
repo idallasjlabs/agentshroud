@@ -12,9 +12,9 @@ members: 5
 ## Members
 - [[dot-agentsskillsi-browserREADME]] - document - .agents/skills/i-browser/README.md
 - [[Browser — Secure Browser Automation]] - document - .agents/skills/i-browser/README.md
-- [[Purpose_18]] - document - .agents/skills/i-browser/README.md
-- [[Related Skills_4]] - document - .agents/skills/i-browser/README.md
-- [[Usage_8]] - document - .agents/skills/i-browser/README.md
+- [[Purpose_14]] - document - .agents/skills/i-browser/README.md
+- [[Related Skills_3]] - document - .agents/skills/i-browser/README.md
+- [[Usage_6]] - document - .agents/skills/i-browser/README.md
 
 ## Live Query (requires Dataview plugin)
 

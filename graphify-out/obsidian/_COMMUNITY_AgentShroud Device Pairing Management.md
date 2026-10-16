@@ -27,7 +27,7 @@ members: 36
 - [[Method 1 Via CLI (Recommended)]] - document - docs/setup/DEVICE_PAIRING.md
 - [[Method 2 View Raw Pending File]] - document - docs/setup/DEVICE_PAIRING.md
 - [[Method 3 Check Container Logs]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Overview_3]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Overview_6]] - document - docs/setup/DEVICE_PAIRING.md
 - [[Problem pairing required but no pending requests]] - document - docs/setup/DEVICE_PAIRING.md
 - [[Problem Approved device still can't connect]] - document - docs/setup/DEVICE_PAIRING.md
 - [[Problem Too many pending requests]] - document - docs/setup/DEVICE_PAIRING.md
@@ -41,7 +41,7 @@ members: 36
 - [[Scenario 5 Clear All Devices (Nuclear Option)]] - document - docs/setup/DEVICE_PAIRING.md
 - [[Security Best Practices]] - document - docs/setup/DEVICE_PAIRING.md
 - [[Security Notes]] - document - docs/setup/DEVICE_PAIRING.md
-- [[Troubleshooting_11]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Troubleshooting_12]] - document - docs/setup/DEVICE_PAIRING.md
 - [[Verify Approval]] - document - docs/setup/DEVICE_PAIRING.md
 - [[View All Paired Devices]] - document - docs/setup/DEVICE_PAIRING.md
 - [[View Detailed Device Information]] - document - docs/setup/DEVICE_PAIRING.md
@@ -55,7 +55,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised_1]]
+- 1 edge to [[_COMMUNITY_BotConfig_1]]
 - 1 edge to [[_COMMUNITY_Quick Reference Commands]]
 
 ## Top bridge nodes

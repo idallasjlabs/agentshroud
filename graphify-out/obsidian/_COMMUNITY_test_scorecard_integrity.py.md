@@ -57,10 +57,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_test_scanner_integration.py]]
-- 2 edges to [[_COMMUNITY_scanner_integration.py_1]]
-- 2 edges to [[_COMMUNITY_get_trivy_summary]]
-- 2 edges to [[_COMMUNITY_scanner_integration.py]]
+- 9 edges to [[_COMMUNITY_test_scanner_integration.py]]
+- 4 edges to [[_COMMUNITY_scanner_integration.py]]
+- 2 edges to [[_COMMUNITY_AgentTarget_4]]
+- 2 edges to [[_COMMUNITY_test_collaborator_greeter.py_1]]
 
 ## Top bridge nodes
 - [[_score_vulnerability_management()]] - degree 17, connects to 4 communities

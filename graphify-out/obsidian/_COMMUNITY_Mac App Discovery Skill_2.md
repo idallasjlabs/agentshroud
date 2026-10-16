@@ -1,22 +1,25 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.20
+members: 10
 ---
 
 # Mac App Discovery Skill
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[A. `mac_app_catalog.json` — Machine-readable manifest]] - document - .agents/skills/i-mac/SKILL.md
-- [[B. `mac_app_catalog.md` — Human-readable catalog]] - document - .agents/skills/i-mac/SKILL.md
-- [[Discovery Strategy]] - document - .agents/skills/i-mac/SKILL.md
-- [[Phase 2 — Deduplication & Normalization]] - document - .agents/skills/i-mac/SKILL.md
-- [[Phase 3 — Categorization]] - document - .agents/skills/i-mac/SKILL.md
-- [[Phase 4 — Enrichment]] - document - .agents/skills/i-mac/SKILL.md
-- [[Phase 5 — Output Generation]] - document - .agents/skills/i-mac/SKILL.md
+- [[Admin (admin)]] - document - docs/security/access-control-matrix.md
+- [[Administrative Roles]] - document - docs/security/access-control-matrix.md
+- [[Agent Trust Levels]] - document - docs/security/access-control-matrix.md
+- [[Operator (operator)]] - document - docs/security/access-control-matrix.md
+- [[RBAC Role Definitions]] - document - docs/security/access-control-matrix.md
+- [[Trust Level 0 (agent_l0)]] - document - docs/security/access-control-matrix.md
+- [[Trust Level 1 (agent_l1)]] - document - docs/security/access-control-matrix.md
+- [[Trust Level 2 (agent_l2)]] - document - docs/security/access-control-matrix.md
+- [[Trust Level 3 (agent_l3)]] - document - docs/security/access-control-matrix.md
+- [[Viewer (viewer)]] - document - docs/security/access-control-matrix.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,8 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Mac App Discovery Skill]]
-- 1 edge to [[_COMMUNITY_Mac App Discovery Skill_1]]
+- 1 edge to [[_COMMUNITY_AgentShroud Access Control Matrix]]
 
 ## Top bridge nodes
-- [[Discovery Strategy]] - degree 7, connects to 2 communities
+- [[RBAC Role Definitions]] - degree 3, connects to 1 community

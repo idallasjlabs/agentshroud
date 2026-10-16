@@ -1,22 +1,24 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.22
+members: 9
 ---
 
 # ProxyAction
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[dot-test_audit_chain_valid()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_blocked_request_audited()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_no_audit_chain_no_crash()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_request_audited()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_response_audited()]] - code - gateway/tests/test_web_proxy.py
-- [[Proxy works without an audit chain.]] - rationale - gateway/tests/test_web_proxy.py
-- [[TestAuditChain]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_admin_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_collaborator_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_owner_allowed_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_terminal_in_private_tools()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_terminal_tool_in_private_tools()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_terminal_tool_not_in_collab_allowed()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_viewer_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[TestCVE2026_9367TerminalToolDenied]] - code - gateway/tests/test_tool_acl.py
+- [[terminal_tool must be in PRIVATE_TOOLS and blocked for non-owner principals.]] - rationale - gateway/tests/test_tool_acl.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,11 +28,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_WebProxyConfig]]
-- 2 edges to [[_COMMUNITY_WebProxy]]
-- 1 edge to [[_COMMUNITY_ProxyAction]]
-- 1 edge to [[_COMMUNITY_AuditChain]]
+- 3 edges to [[_COMMUNITY_RBACConfig_1]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
 
 ## Top bridge nodes
-- [[TestAuditChain]] - degree 12, connects to 4 communities
-- [[dot-test_no_audit_chain_no_crash()]] - degree 3, connects to 1 community
+- [[TestCVE2026_9367TerminalToolDenied]] - degree 14, connects to 3 communities

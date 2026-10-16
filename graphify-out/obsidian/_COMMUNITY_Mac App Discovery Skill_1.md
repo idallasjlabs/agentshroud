@@ -1,26 +1,32 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+cohesion: 0.19
+members: 17
 ---
 
 # Mac App Discovery Skill
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.19 - loosely connected
+**Members:** 17 nodes
 
 ## Members
-- [[1. System Profiler (most comprehensive single source)]] - document - .agents/skills/i-mac/SKILL.md
-- [[10. Spotlight Catch-All]] - document - .agents/skills/i-mac/SKILL.md
-- [[2. Applications Folders (catch drag-and-drop installs)]] - document - .agents/skills/i-mac/SKILL.md
-- [[3. Homebrew (formulae + casks)]] - document - .agents/skills/i-mac/SKILL.md
-- [[4. Mac App Store (via `mas` CLI)]] - document - .agents/skills/i-mac/SKILL.md
-- [[5. Setapp Detection]] - document - .agents/skills/i-mac/SKILL.md
-- [[6. Package Receipts (direct .pkg installs)]] - document - .agents/skills/i-mac/SKILL.md
-- [[7. CLI Tools & Utilities (non-.app installs)]] - document - .agents/skills/i-mac/SKILL.md
-- [[8. Launch Agents & Daemons (background services)]] - document - .agents/skills/i-mac/SKILL.md
-- [[9. Browser Extensions (optional but useful)]] - document - .agents/skills/i-mac/SKILL.md
-- [[Phase 1 — Raw Collection]] - document - .agents/skills/i-mac/SKILL.md
+- [[ApprovalQueueItem_4]] - code - gateway/tests/test_approval_store.py
+- [[AuditStore same idempotency contract as ApprovalStore.]] - rationale - gateway/tests/test_approval_store.py
+- [[Deciding an item persists the new status.]] - rationale - gateway/tests/test_approval_store.py
+- [[Expired items are marked expired during load_pending.]] - rationale - gateway/tests/test_approval_store.py
+- [[Items saved by one store instance are visible to another.]] - rationale - gateway/tests/test_approval_store.py
+- [[Path_60]] - code - gateway/tests/test_approval_store.py
+- [[Re-initializing must not orphan the first aiosqlite connection.      aiosqlite c_1]] - rationale - gateway/tests/test_approval_store.py
+- [[Simulates a full restart cycle save, close, reopen, verify.]] - rationale - gateway/tests/test_approval_store.py
+- [[_make_item()]] - code - gateway/tests/test_approval_store.py
+- [[store()_1]] - code - gateway/tests/test_approval_store.py
+- [[test_approval_store.py]] - code - gateway/tests/test_approval_store.py
+- [[test_audit_store_initialize_is_idempotent()]] - code - gateway/tests/test_approval_store.py
+- [[test_decide_persists()]] - code - gateway/tests/test_approval_store.py
+- [[test_expired_items_on_reload()]] - code - gateway/tests/test_approval_store.py
+- [[test_initialize_is_idempotent()_1]] - code - gateway/tests/test_approval_store.py
+- [[test_persist_and_reload()]] - code - gateway/tests/test_approval_store.py
+- [[test_store_survives_restart()]] - code - gateway/tests/test_approval_store.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,7 +36,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Mac App Discovery Skill_2]]
+- 13 edges to [[_COMMUNITY_ApprovalQueueConfig_1]]
+- 4 edges to [[_COMMUNITY_AuditStore]]
 
 ## Top bridge nodes
-- [[Phase 1 — Raw Collection]] - degree 11, connects to 1 community
+- [[test_approval_store.py]] - degree 11, connects to 2 communities
+- [[Path_60]] - degree 10, connects to 2 communities
+- [[ApprovalQueueItem_4]] - degree 4, connects to 2 communities
+- [[_make_item()]] - degree 7, connects to 1 community
+- [[test_decide_persists()]] - degree 5, connects to 1 community

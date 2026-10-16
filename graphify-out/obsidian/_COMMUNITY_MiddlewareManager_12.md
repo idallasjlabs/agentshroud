@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-test_integrated_memory_protection()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[Test complete memory protection workflow.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[dot-test_memory_write_validation()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[Test validation before writing to memory files.]] - rationale - gateway/tests/test_memory_lifecycle.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_MiddlewareManager_3]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager_4]]
 
 ## Top bridge nodes
-- [[dot-test_integrated_memory_protection()]] - degree 2, connects to 1 community
+- [[dot-test_memory_write_validation()]] - degree 2, connects to 1 community

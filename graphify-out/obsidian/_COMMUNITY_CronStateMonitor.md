@@ -12,18 +12,18 @@ members: 56
 ## Members
 - [[dot-__call__()]] - code - gateway/tests/test_cron_state_monitor.py
 - [[dot-__call__()_1]] - code - gateway/tests/test_cron_state_monitor.py
-- [[dot-__init__()_26]] - code - gateway/security/cron_state_monitor.py
-- [[dot-__init__()_27]] - code - gateway/tests/test_cron_state_monitor.py
-- [[dot-__init__()_28]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-__init__()_24]] - code - gateway/security/cron_state_monitor.py
+- [[dot-__init__()_25]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-__init__()_26]] - code - gateway/tests/test_cron_state_monitor.py
 - [[dot-_dispatch_aggregate()]] - code - gateway/security/cron_state_monitor.py
 - [[dot-_episode_id()]] - code - gateway/security/cron_state_monitor.py
 - [[dot-_evaluate()]] - code - gateway/security/cron_state_monitor.py
 - [[dot-_run()]] - code - gateway/security/cron_state_monitor.py
 - [[dot-_safe_dispatch()]] - code - gateway/security/cron_state_monitor.py
-- [[dot-check()_2]] - code - gateway/security/cron_state_monitor.py
+- [[dot-check()_1]] - code - gateway/security/cron_state_monitor.py
 - [[dot-parse_store()]] - code - gateway/security/cron_state_monitor.py
 - [[dot-start()]] - code - gateway/security/cron_state_monitor.py
-- [[dot-stop()_1]] - code - gateway/security/cron_state_monitor.py
+- [[dot-stop()]] - code - gateway/security/cron_state_monitor.py
 - [[dot-test_alert_ids_stable_per_job_episode()]] - code - gateway/tests/test_cron_state_monitor.py
 - [[dot-test_corrupt_file_returns_empty()]] - code - gateway/tests/test_cron_state_monitor.py
 - [[dot-test_disabled_jobs_ignored()]] - code - gateway/tests/test_cron_state_monitor.py
@@ -75,8 +75,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AgentRegistry]]
+- 1 edge to [[_COMMUNITY_PIIConfig]]
 - 1 edge to [[_COMMUNITY_AlertDispatcher]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
 
 ## Top bridge nodes
-- [[CronStateMonitor]] - degree 36, connects to 2 communities
+- [[CronStateMonitor]] - degree 36, connects to 3 communities

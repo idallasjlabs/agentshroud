@@ -16,7 +16,7 @@ members: 27
 - [[Mode A — Single task_1]] - document - docker/config/hermes/skills/i-odev/SKILL.md
 - [[Mode B — Comprehensive review sweep_5]] - document - docker/config/hermes/skills/i-odev/SKILL.md
 - [[Reviewers and fixer available to you_5]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Role_34]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Role_33]] - document - docker/config/hermes/skills/i-odev/SKILL.md
 - [[Skill OpenClaw Dev Workflow (ODEV)_2]] - document - docker/config/hermes/skills/i-odev/SKILL.md
 - [[Step 1 — One branch + worktree for the whole sweep_5]] - document - docker/config/hermes/skills/i-odev/SKILL.md
 - [[Step 1 — Sync and confirm clean state_1]] - document - docker/config/hermes/skills/i-odev/SKILL.md

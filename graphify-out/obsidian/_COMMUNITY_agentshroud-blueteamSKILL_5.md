@@ -1,22 +1,24 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.22
+members: 9
 ---
 
 # agentshroud-blueteam/SKILL.md
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[dot-guard()_3]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_empty_provenance_for_unknown_session()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_segment_hash_integrity()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_segment_provenance_ordering()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_segment_tagging_basic()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_separate_sessions_isolated()]] - code - gateway/tests/test_context_guard.py
-- [[TestSourceTagging]] - code - gateway/tests/test_context_guard.py
+- [[Architecture Overview]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Bot Container (`agentshroud-bot`)]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Container Architecture]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Full System Diagram]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Gateway Container (`agentshroud-gateway`)]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Gateway Internal Layer Order]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Network Topology]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Related Notes_12]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Summary]] - document - docs/vault/01 - Architecture/Architecture Overview.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,10 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_PIIConfig]]
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL_4]]
-- 1 edge to [[_COMMUNITY_ContextSegment]]
+- 1 edge to [[_COMMUNITY_main.py]]
 
 ## Top bridge nodes
-- [[TestSourceTagging]] - degree 9, connects to 3 communities
-- [[dot-guard()_3]] - degree 2, connects to 1 community
+- [[Architecture Overview]] - degree 7, connects to 1 community

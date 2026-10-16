@@ -20,8 +20,8 @@ members: 14
 - [[Message Types Intercepted]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
 - [[Process Architecture]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
 - [[Purpose_158]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[Related Notes_59]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[Usage_113]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
+- [[Related Notes_62]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
+- [[Usage_114]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
 - [[mcp-proxy-wrapper.js_2]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
 - [[mcp-proxy-wrapper.js_1]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
 

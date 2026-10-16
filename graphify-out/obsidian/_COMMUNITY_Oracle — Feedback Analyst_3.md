@@ -11,9 +11,9 @@ members: 5
 
 ## Members
 - [[Oracle — Feedback Analyst_1]] - document - docker/config/hermes/skills/i-oracle/README.md
-- [[Purpose_33]] - document - docker/config/hermes/skills/i-oracle/README.md
-- [[Related Skills_19]] - document - docker/config/hermes/skills/i-oracle/README.md
-- [[Usage_23]] - document - docker/config/hermes/skills/i-oracle/README.md
+- [[Purpose_23]] - document - docker/config/hermes/skills/i-oracle/README.md
+- [[Related Skills_12]] - document - docker/config/hermes/skills/i-oracle/README.md
+- [[Usage_15]] - document - docker/config/hermes/skills/i-oracle/README.md
 - [[hermesskillsi-oracleREADME]] - document - docker/config/hermes/skills/i-oracle/README.md
 
 ## Live Query (requires Dataview plugin)

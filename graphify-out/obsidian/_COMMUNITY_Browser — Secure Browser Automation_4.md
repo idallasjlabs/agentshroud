@@ -11,9 +11,9 @@ members: 5
 
 ## Members
 - [[Browser — Secure Browser Automation_1]] - document - docker/config/hermes/skills/i-browser/README.md
-- [[Purpose_28]] - document - docker/config/hermes/skills/i-browser/README.md
-- [[Related Skills_14]] - document - docker/config/hermes/skills/i-browser/README.md
-- [[Usage_18]] - document - docker/config/hermes/skills/i-browser/README.md
+- [[Purpose_19]] - document - docker/config/hermes/skills/i-browser/README.md
+- [[Related Skills_8]] - document - docker/config/hermes/skills/i-browser/README.md
+- [[Usage_11]] - document - docker/config/hermes/skills/i-browser/README.md
 - [[hermesskillsi-browserREADME]] - document - docker/config/hermes/skills/i-browser/README.md
 
 ## Live Query (requires Dataview plugin)

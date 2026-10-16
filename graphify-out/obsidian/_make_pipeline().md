@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "PIIConfig"
+community: "InjectionAction"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/InjectionAction
 ---
 
 # _make_pipeline()
 
 ## Connections
 - [[EncodingDetector]] - `calls` [EXTRACTED]
-- [[PIIConfig_1]] - `calls` [EXTRACTED]
-- [[PIISanitizer_2]] - `calls` [EXTRACTED]
+- [[PIIConfig_2]] - `calls` [EXTRACTED]
+- [[PIISanitizer_1]] - `calls` [EXTRACTED]
 - [[Pipeline wired with the guards relevant to inbound encoding defence.      No Tru]] - `rationale_for` [EXTRACTED]
 - [[PromptGuard]] - `calls` [EXTRACTED]
 - [[SecurityPipeline_2]] - `calls` [EXTRACTED]
-- [[SecurityPipeline_1]] - `references` [EXTRACTED]
+- [[SecurityPipeline]] - `references` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
 - [[test_inbound_base64_injection_blocked()]] - `calls` [EXTRACTED]
 - [[test_inbound_benign_base64_not_blocked()]] - `calls` [EXTRACTED]
@@ -33,4 +33,4 @@ tags:
 - [[test_inbound_url_encoded_injection_blocked()]] - `calls` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/InjectionAction

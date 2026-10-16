@@ -18,7 +18,7 @@ members: 33
 - [[Audit Chain Tampering]] - document - docs/operations/incident-response.md
 - [[Backup Procedures]] - document - docs/operations/runbook.md
 - [[Container Escape Attempt]] - document - docs/operations/incident-response.md
-- [[Dashboard Access]] - document - docs/operations/runbook.md
+- [[Dashboard Access_1]] - document - docs/operations/runbook.md
 - [[Data Exfiltration Detected]] - document - docs/operations/incident-response.md
 - [[Grafana Dashboard Configuration]] - document - docs/operations/deployment-procedure.md
 - [[Kill Switch (FREEZESHUTDOWNDISCONNECT)_1]] - concept - docs/papers/agentshroud-whitepaper.md
@@ -32,7 +32,7 @@ members: 33
 - [[Prometheus Configuration]] - document - docs/operations/deployment-procedure.md
 - [[Regular Maintenance Tasks]] - document - docs/operations/deployment-procedure.md
 - [[Restore Procedures]] - document - docs/operations/runbook.md
-- [[Security Hardening_1]] - document - docs/operations/deployment-procedure.md
+- [[Security Hardening_4]] - document - docs/operations/deployment-procedure.md
 - [[System Architecture Overview]] - document - docs/operations/runbook.md
 - [[System Health Checks]] - document - docs/operations/runbook.md
 - [[Trust Level Anomaly]] - document - docs/operations/incident-response.md
@@ -41,7 +41,7 @@ members: 33
 - [[Update Procedure]] - document - docs/operations/deployment-procedure.md
 - [[Voice Terminal — ESP32-S3-BOX-3 Integration Guide]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[deployment-procedure]] - document - docs/operations/deployment-procedure.md
-- [[runbook]] - document - docs/operations/runbook.md
+- [[runbook_1]] - document - docs/operations/runbook.md
 - [[voice-gateway service (ESP32 voice terminal backend)]] - concept - docs/integrations/voice-terminal-esp32-s3.md
 
 ## Live Query (requires Dataview plugin)
@@ -53,14 +53,15 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 8 edges to [[_COMMUNITY_AgentShroud v0.7.0 Enforcement Audit Results]]
+- 1 edge to [[_COMMUNITY_telegram_proxy.py_4]]
 - 1 edge to [[_COMMUNITY_P2 High Priority Incidents]]
-- 1 edge to [[_COMMUNITY_8. Common Troubleshooting Scenarios]]
+- 1 edge to [[_COMMUNITY_AgentShroud Brand Guidelines_2]]
 - 1 edge to [[_COMMUNITY_Prerequisites]]
 - 1 edge to [[_COMMUNITY_Troubleshooting Common Issues]]
-- 1 edge to [[_COMMUNITY_Post-Incident Activities]]
-- 1 edge to [[_COMMUNITY_1. Starting and Stopping AgentShroud]]
 - 1 edge to [[_COMMUNITY_4. Handling Alerts]]
 - 1 edge to [[_COMMUNITY_5. API Key Rotation]]
+- 1 edge to [[_COMMUNITY_Post-Incident Activities]]
+- 1 edge to [[_COMMUNITY_1. Starting and Stopping AgentShroud]]
 - 1 edge to [[_COMMUNITY_Deployment Modes]]
 - 1 edge to [[_COMMUNITY_Post-Deployment Validation]]
 - 1 edge to [[_COMMUNITY_Contact Information]]
@@ -70,7 +71,6 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_6. System Updates]]
 - 1 edge to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
 - 1 edge to [[_COMMUNITY_Step-by-Step Deployment]]
-- 1 edge to [[_COMMUNITY_SSH Configuration Guide]]
 - 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Blue Team Security Audit Report]]
 
 ## Top bridge nodes

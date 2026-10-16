@@ -1,28 +1,36 @@
 ---
 type: community
-cohesion: 0.32
-members: 13
+cohesion: 0.10
+members: 21
 ---
 
 # gateway/tests/test_llm_proxy_thinking_suppression.py (8 cases)
 
-**Cohesion:** 0.32 - loosely connected
-**Members:** 13 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 21 nodes
 
 ## Members
-- [[dot-_suppress_qwen3_thinking()]] - code - gateway/proxy/llm_proxy.py
-- [[Append 'no_think' to the last user message, in place, if not already present.…]] - rationale - gateway/proxy/llm_proxy.py
-- [[Regression tests for LLMProxy._suppress_qwen3_thinking. 2026-10-16 incident…]] - rationale - gateway/tests/test_llm_proxy_thinking_suppression.py
-- [[_req()]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
-- [[gatewayteststest_llm_proxy_thinking_suppression.py (8 cases)]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
-- [[test_missing_model_treated_as_non_qwen()]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
-- [[test_nemotron_alias_gets_reasoning_effort_none_and_text_untouched()]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
-- [[test_nemotron_normalized_full_path_gets_reasoning_effort_none()]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
-- [[test_non_qwen_caller_supplied_effort_is_overridden_to_none()]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
-- [[test_non_qwen_reasoning_effort_already_none_is_noop()]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
-- [[test_qwen_list_content_gets_suffix_on_last_text_part()]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
-- [[test_qwen_model_gets_no_think_suffix()]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
-- [[test_qwen_model_suffix_already_present_is_noop()]] - code - gateway/tests/test_llm_proxy_thinking_suppression.py
+- [[dot-__init__()_177]] - code - gateway/tests/test_key_rotation.py
+- [[dot-setup_manager_with_credential()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_check_and_rotate_due_credentials()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_emergency_rotation()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_grace_period_cleanup()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_register_validator()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_rotation_with_validation_failure()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_successful_rotation_workflow()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-validate()_2]] - code - gateway/tests/test_key_rotation.py
+- [[Mock validation that can be controlled.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Mock validator for testing.]] - rationale - gateway/tests/test_key_rotation.py
+- [[MockValidator]] - code - gateway/tests/test_key_rotation.py
+- [[Set up manager with a credential that needs rotation.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test bulk rotation check and execution.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test complete successful rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test emergency rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test grace period and old credential cleanup.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test rotation workflow with validation failure and rollback.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test the complete rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test validator registration.]] - rationale - gateway/tests/test_key_rotation.py
+- [[TestKeyRotationWorkflow]] - code - gateway/tests/test_key_rotation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,13 +40,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_LLMProxy]]
-- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
-- 1 edge to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]]
+- 6 edges to [[_COMMUNITY_UserSessionManager_4]]
+- 5 edges to [[_COMMUNITY_TestDomainValidationHelper]]
+- 4 edges to [[_COMMUNITY_KeyRotationManager]]
+- 4 edges to [[_COMMUNITY_KeyRotationManager_1]]
+- 2 edges to [[_COMMUNITY_Restart Procedure_1]]
 
 ## Top bridge nodes
-- [[gatewayteststest_llm_proxy_thinking_suppression.py (8 cases)]] - degree 13, connects to 3 communities
-- [[dot-_suppress_qwen3_thinking()]] - degree 12, connects to 1 community
-- [[test_nemotron_alias_gets_reasoning_effort_none_and_text_untouched()]] - degree 4, connects to 1 community
-- [[test_nemotron_normalized_full_path_gets_reasoning_effort_none()]] - degree 4, connects to 1 community
-- [[test_non_qwen_caller_supplied_effort_is_overridden_to_none()]] - degree 4, connects to 1 community
+- [[MockValidator]] - degree 14, connects to 5 communities
+- [[TestKeyRotationWorkflow]] - degree 14, connects to 5 communities
+- [[dot-setup_manager_with_credential()]] - degree 6, connects to 3 communities
+- [[dot-test_check_and_rotate_due_credentials()]] - degree 6, connects to 3 communities
+- [[dot-test_register_validator()]] - degree 3, connects to 1 community

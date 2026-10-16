@@ -39,7 +39,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised_1]]
+- 1 edge to [[_COMMUNITY_BotConfig_1]]
 
 ## Top bridge nodes
 - [[AgentShroud Security Policy - Final Decision]] - degree 12, connects to 1 community

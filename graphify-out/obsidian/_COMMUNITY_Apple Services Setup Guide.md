@@ -25,8 +25,8 @@ members: 26
 - [[SMTP Settings (Outgoing Mail)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
 - [[Test Access]] - document - docs/setup/APPLE-SERVICES-SETUP.md
 - [[Two-Factor Authentication]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[iCloud Services_3]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[🎯 Next Steps]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[iCloud Services_4]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[🎯 Next Steps_1]] - document - docs/setup/APPLE-SERVICES-SETUP.md
 - [[📅 Calendar (CalDAV)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
 - [[📋 Setup Checklist]] - document - docs/setup/APPLE-SERVICES-SETUP.md
 - [[📚 Documentation Links]] - document - docs/setup/APPLE-SERVICES-SETUP.md
@@ -45,7 +45,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter_1]]
+- 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
 
 ## Top bridge nodes
 - [[Apple Services Setup Guide]] - degree 11, connects to 1 community

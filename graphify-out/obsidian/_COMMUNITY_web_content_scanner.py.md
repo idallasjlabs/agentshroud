@@ -11,12 +11,12 @@ members: 15
 
 ## Members
 - [[Configuration  Environment Variables_14]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Function Details_27]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[Function Details_26]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
 - [[Injection Pattern Weights]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Key Classes  Functions_29]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Purpose_148]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Related_33]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Responsibilities_31]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[Key Classes  Functions_28]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[Purpose_145]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[Related_32]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[Responsibilities_30]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
 - [[WebContentScanner._scan_encoded_payloads(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
 - [[WebContentScanner._scan_hidden_content(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
 - [[WebContentScanner._scan_pii(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md

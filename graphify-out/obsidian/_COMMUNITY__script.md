@@ -18,7 +18,7 @@ members: 10
 - [[TestListRegistryGhsaIds]] - code - gateway/tests/test_list_registry_ghsa_ids.py
 - [[_script()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
 - [[list_registry_ghsa_ids.py]] - code - scripts/list_registry_ghsa_ids.py
-- [[main()_35]] - code - scripts/list_registry_ghsa_ids.py
+- [[main()_36]] - code - scripts/list_registry_ghsa_ids.py
 - [[test_list_registry_ghsa_ids.py]] - code - gateway/tests/test_list_registry_ghsa_ids.py
 
 ## Live Query (requires Dataview plugin)

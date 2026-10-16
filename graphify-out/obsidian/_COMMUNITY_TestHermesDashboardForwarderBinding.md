@@ -1,19 +1,21 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.33
+members: 6
 ---
 
 # TestHermesDashboardForwarderBinding
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[dot-test_hermes_dashboard_forwarder_bind_address_is_documented()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[BT-M1 The Hermes TCP dashboard forwarder (port 9119) binds on 0.0.0.0. This is…]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[BT-M1 Verify the forwarder bind address — currently 0.0.0.0 (accepted risk).]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[TestHermesDashboardForwarderBinding]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[dot-test_consistent_response_scores_high()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_language_mismatch_or_anomalies()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_off_topic_response_scores_low()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_unsolicited_tool_call_flagged()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-tracker()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[TestResponseConsistency]] - code - gateway/tests/test_multi_turn_tracker.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +25,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_security_regressions_v1_2.py]]
+- 3 edges to [[_COMMUNITY_TrustConfig]]
+- 2 edges to [[_COMMUNITY_MultiTurnTracker_1]]
 
 ## Top bridge nodes
-- [[TestHermesDashboardForwarderBinding]] - degree 3, connects to 1 community
+- [[TestResponseConsistency]] - degree 9, connects to 2 communities
+- [[dot-tracker()]] - degree 2, connects to 1 community

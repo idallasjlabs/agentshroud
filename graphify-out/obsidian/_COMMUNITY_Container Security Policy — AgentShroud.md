@@ -41,7 +41,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
-- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown_1]]
+- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown]]
 
 ## Top bridge nodes
 - [[Container Security Policy — AgentShroud]] - degree 7, connects to 2 communities

@@ -41,12 +41,12 @@ SORT file.name ASC
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_02-infrastructure]]
 - 2 edges to [[_COMMUNITY_PHASE_3A_3B_IMPLEMENTATION]]
+- 1 edge to [[_COMMUNITY_03-data]]
 - 1 edge to [[_COMMUNITY_AgentShroud Gateway (Trust Zone 1) holds 1Password service account, enforces policy, signs ledger entries, controls approval queue, HMACJWT validation]]
 - 1 edge to [[_COMMUNITY_01-architecture]]
-- 1 edge to [[_COMMUNITY_03-data]]
 - 1 edge to [[_COMMUNITY_05-behavior]]
-- 1 edge to [[_COMMUNITY_KeyVault]]
-- 1 edge to [[_COMMUNITY_IEC 62443 Compliance Matrix — AgentShroud]]
+- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
+- 1 edge to [[_COMMUNITY_egress_filter.py]]
 
 ## Top bridge nodes
 - [[diagramsREADME]] - degree 8, connects to 4 communities

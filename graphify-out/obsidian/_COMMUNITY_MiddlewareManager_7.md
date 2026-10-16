@@ -1,24 +1,30 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.17
+members: 15
 ---
 
 # MiddlewareManager
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[dot-__init__()_202]] - code - gateway/security/memory_lifecycle.py
-- [[dot-sanitize_content()]] - code - gateway/security/memory_lifecycle.py
-- [[dot-scan_content_for_threats()]] - code - gateway/security/memory_lifecycle.py
-- [[dot-validate_memory_write()]] - code - gateway/security/memory_lifecycle.py
-- [[MemoryLifecycleConfig_1]] - code - gateway/security/memory_lifecycle.py
-- [[Path_62]] - code - gateway/security/memory_lifecycle.py
-- [[Sanitize content by removingredacting threats.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Scan memory file content for security threats.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Validate content before writing to memory file.]] - rationale - gateway/security/memory_lifecycle.py
+- [[dot-_compute_file_hash()]] - code - gateway/security/memory_integrity.py
+- [[dot-_detect_modification_source()]] - code - gateway/security/memory_integrity.py
+- [[dot-_is_in_write_window()]] - code - gateway/security/memory_integrity.py
+- [[dot-_save_integrity_database()]] - code - gateway/security/memory_integrity.py
+- [[dot-clear_old_alerts()]] - code - gateway/security/memory_integrity.py
+- [[dot-scan_all_monitored_files()]] - code - gateway/security/memory_integrity.py
+- [[dot-scan_file()_1]] - code - gateway/security/memory_integrity.py
+- [[Attempt to detect the source of a file modification.          Detection strategy]] - rationale - gateway/security/memory_integrity.py
+- [[Check if a file is currently in a write grace window.]] - rationale - gateway/security/memory_integrity.py
+- [[Clear alerts older than N days.]] - rationale - gateway/security/memory_integrity.py
+- [[Compute SHA-256 hash of a file.]] - rationale - gateway/security/memory_integrity.py
+- [[Path_47]] - code - gateway/security/memory_integrity.py
+- [[Save integrity database to disk.]] - rationale - gateway/security/memory_integrity.py
+- [[Scan a single file for integrity changes.]] - rationale - gateway/security/memory_integrity.py
+- [[Scan all configured monitored files and directories.]] - rationale - gateway/security/memory_integrity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,13 +34,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_MiddlewareManager_3]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager_5]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 12 edges to [[_COMMUNITY_MiddlewareManager_5]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager_10]]
 
 ## Top bridge nodes
-- [[Path_62]] - degree 5, connects to 3 communities
-- [[dot-scan_content_for_threats()]] - degree 5, connects to 1 community
-- [[dot-validate_memory_write()]] - degree 5, connects to 1 community
-- [[dot-sanitize_content()]] - degree 4, connects to 1 community
-- [[dot-__init__()_202]] - degree 3, connects to 1 community
+- [[dot-_save_integrity_database()]] - degree 6, connects to 2 communities
+- [[dot-scan_file()_1]] - degree 9, connects to 1 community
+- [[dot-_detect_modification_source()]] - degree 6, connects to 1 community
+- [[Path_47]] - degree 5, connects to 1 community
+- [[dot-_is_in_write_window()]] - degree 5, connects to 1 community

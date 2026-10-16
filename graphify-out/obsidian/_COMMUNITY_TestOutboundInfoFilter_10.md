@@ -1,17 +1,20 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.40
+members: 5
 ---
 
 # TestOutboundInfoFilter
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[dot-test_trust_level_overrides()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test that trust level overrides work correctly.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[dot-test_installed_not_running_is_clean_note()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_not_installed_not_running()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_running_with_alerts_sets_timestamp()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_running_without_alert_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestFalcoSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,8 +24,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AuditChain]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
+- 1 edge to [[_COMMUNITY__w]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_7]]
 
 ## Top bridge nodes
-- [[dot-test_trust_level_overrides()]] - degree 3, connects to 2 communities
+- [[TestFalcoSummary]] - degree 5, connects to 1 community
+- [[dot-test_installed_not_running_is_clean_note()]] - degree 2, connects to 1 community

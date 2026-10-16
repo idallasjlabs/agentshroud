@@ -1,17 +1,20 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.40
+members: 5
 ---
 
 # TestOutboundInfoFilter
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[dot-test_common_tools_not_filtered()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test that common English words are not filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Basic Usage]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Check Context Usage]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Run with Specific Agent]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Select Model]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Start Interactive Session]] - document - .github/COPILOT_CLI_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
+- 1 edge to [[_COMMUNITY_GitHub Copilot CLI Setup Guide]]
 
 ## Top bridge nodes
-- [[dot-test_common_tools_not_filtered()]] - degree 2, connects to 1 community
+- [[Basic Usage]] - degree 5, connects to 1 community

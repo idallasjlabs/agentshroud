@@ -1,24 +1,28 @@
 ---
 type: community
-cohesion: 0.47
-members: 9
+cohesion: 0.15
+members: 13
 ---
 
 # Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)
 
-**Cohesion:** 0.47 - moderately connected
-**Members:** 9 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[_sunday_warn_expiring_acceptances()]] - code - scripts/lib/sunday-scan.sh
-- [[die()_2]] - code - scripts/lib/sunday-scan.sh
-- [[log()_9]] - code - scripts/lib/sunday-scan.sh
-- [[sunday-scan.sh (Trivy scan gate library)]] - code - scripts/lib/sunday-scan.sh
-- [[sunday-scan.sh script]] - code - scripts/lib/sunday-scan.sh
-- [[sunday_ensure_trivy()]] - code - scripts/lib/sunday-scan.sh
-- [[sunday_resolve_scan_image()]] - code - scripts/lib/sunday-scan.sh
-- [[sunday_run_scan_gate()]] - code - scripts/lib/sunday-scan.sh
-- [[warn()_6]] - code - scripts/lib/sunday-scan.sh
+- [[dot-test_both_bots_registered_distinct_ids()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[dot-test_hermes_token_resolves_to_hermes()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[dot-test_no_token_collision()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[dot-test_openclaw_token_resolves_to_openclaw()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[dot-test_registry_rejects_case_variant()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[dot-test_registry_rejects_empty_string()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[dot-test_registry_rejects_partial_token()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[dot-test_unknown_token_resolves_to_none()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[Registry maps two distinct tokens to two distinct bot_ids.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[TestTelegramTokenRegistry]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[Token matching must be exact — case-sensitive.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Tokens are the registry keys — no two bots share a token.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Validate the token → bot_id registry logic extracted from the route handler.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,10 +32,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_colima-health-check.sh]]
-- 3 edges to [[_COMMUNITY_sunday-upgrade-apply.sh]]
+- 2 edges to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy_2]]
 
 ## Top bridge nodes
-- [[sunday-scan.sh (Trivy scan gate library)]] - degree 12, connects to 2 communities
-- [[sunday_run_scan_gate()]] - degree 10, connects to 2 communities
-- [[_sunday_warn_expiring_acceptances()]] - degree 4, connects to 1 community
+- [[TestTelegramTokenRegistry]] - degree 13, connects to 3 communities

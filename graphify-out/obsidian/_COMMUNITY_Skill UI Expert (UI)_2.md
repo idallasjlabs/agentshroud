@@ -25,13 +25,13 @@ members: 27
 - [[Dark  Light Theme Implementation_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
 - [[Dashboard Grid_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
 - [[Data Table_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Dependencies_11]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[Dependencies_10]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
 - [[Form Field_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
 - [[Modal  Dialog_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
 - [[Navigation_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
 - [[React  Next.js Component Architecture_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
 - [[Responsive Layout System_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Role_37]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[Role_36]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
 - [[Rules_11]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
 - [[Skill UI Expert (UI)_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
 - [[UI Validation Checklist_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md

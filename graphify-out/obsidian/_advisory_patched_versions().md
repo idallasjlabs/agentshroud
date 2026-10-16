@@ -12,7 +12,7 @@ tags:
 # _advisory_patched_versions()
 
 ## Connections
-- [[Any_39]] - `references` [EXTRACTED]
+- [[Any_29]] - `references` [EXTRACTED]
 - [[migrate-cve-registry-ghsa.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

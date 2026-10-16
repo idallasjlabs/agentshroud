@@ -23,7 +23,7 @@ members: 14
 - [[Step 3 Add a startup warning for monitor mode]] - document - docs/planning/redteam/01-enforce-by-default.md
 - [[Step 4 Document the risk of monitor mode]] - document - docs/planning/redteam/01-enforce-by-default.md
 - [[Step 5 Update docker-compose.yml defaults]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Verification_11]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[Verification_10]] - document - docs/planning/redteam/01-enforce-by-default.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -82,8 +82,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_AsyncMock]]
-- 2 edges to [[_COMMUNITY_socrouter.py]]
+- 4 edges to [[_COMMUNITY_AsyncMock_1]]
+- 2 edges to [[_COMMUNITY__FakeRBAC]]
 
 ## Top bridge nodes
 - [[ChatRequest]] - degree 3, connects to 1 community

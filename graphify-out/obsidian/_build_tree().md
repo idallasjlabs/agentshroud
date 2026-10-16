@@ -12,7 +12,7 @@ tags:
 # _build_tree()
 
 ## Connections
-- [[Path_24]] - `references` [EXTRACTED]
+- [[Path_17]] - `references` [EXTRACTED]
 - [[Read every manifest entry under source, failing CLOSED on unreadable files.]] - `rationale_for` [EXTRACTED]
 - [[main()_10]] - `calls` [EXTRACTED]
 - [[scan.py]] - `contains` [EXTRACTED]

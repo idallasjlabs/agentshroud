@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-resolve_workspace()]] - `references` [EXTRACTED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[Resolved workspacecontext identity for a single inbound message.      Attribute]] - `rationale_for` [EXTRACTED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
 - [[TeamsConfig_2]] - `uses` [INFERRED]

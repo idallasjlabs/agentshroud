@@ -1,17 +1,20 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.40
+members: 5
 ---
 
 # TestOutboundInfoFilter
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[dot-test_collaborator_name_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[Known collaborator names should be redacted.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[dot-test_no_alert_when_registry_current()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_no_telegram_send_when_no_token()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_returns_error_on_github_api_failure()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_sends_alert_when_new_cves_found()]] - code - gateway/tests/test_daily_cve_report.py
+- [[TestRunUpstreamCveCheck]] - code - gateway/tests/test_daily_cve_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
+- 1 edge to [[_COMMUNITY_test_daily_cve_report.py]]
 
 ## Top bridge nodes
-- [[dot-test_collaborator_name_filtering()]] - degree 2, connects to 1 community
+- [[TestRunUpstreamCveCheck]] - degree 5, connects to 1 community

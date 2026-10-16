@@ -1,37 +1,28 @@
 ---
 type: community
-cohesion: 0.10
-members: 22
+cohesion: 0.15
+members: 13
 ---
 
 # Audit Ledger (SHA-256 hash only)
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 22 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[ADR-001 Transparent Proxy Decision]] - concept - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[ADR-004 Proxy-Side API Key Management]] - concept - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
-- [[Agent Modification Approach (rejected alternative)]] - concept - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Audit Ledger (SHA-256 hash only)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Deployment Modes_1]] - document - docs/architecture/deployment-diagram.md
-- [[Gateway (FastAPI)]] - concept - docs/architecture/system-architecture.md
-- [[MCP Proxy]] - concept - docs/architecture/system-architecture.md
-- [[MCP Server Integration Guide]] - document - docs/api/integration-guide.md
-- [[Op-Proxy (Credential Gateway)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[PII Sanitizer (Presidio + Regex)]] - concept - docs/architecture/system-architecture.md
-- [[Proxy Layer_1]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[Proxy Mode (Recommended)_1]] - document - docs/architecture/deployment-diagram.md
-- [[SSH Proxy]] - concept - docs/architecture/system-architecture.md
-- [[Sidecar Mode (Performance Optimized)]] - document - docs/architecture/deployment-diagram.md
-- [[Web Proxy]] - concept - docs/architecture/system-architecture.md
-- [[http_proxy.py (HTTP CONNECT 8181, domain allowlist)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[ledger.db (90-day retention)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[mcp-config.yml]] - code - docs/data/schema-documentation.md
-- [[mcp_proxy.py (MCP tool call gate)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[sanitizer.py (PII redaction, Presidioregex)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[ssh_proxy (approved hosts only)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[web_proxy.py (domain allowlist engine)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[dot-setup_method()_38]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_double_base64_injection()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_fullwidth_detection()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_homoglyph_detection()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_mixed_case_still_caught()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_rtl_override_detection()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_zero_width_evasion()]] - code - gateway/tests/test_security_hardening.py
+- [[Double-encoded base64 injection should be caught.]] - rationale - gateway/tests/test_security_hardening.py
+- [[Fullwidth chars NFKC-normalized — injection defeated.]] - rationale - gateway/tests/test_security_hardening.py
+- [[Mix of Latin and Cyrillic should trigger homoglyph detection.]] - rationale - gateway/tests/test_security_hardening.py
+- [[TestPromptGuardEvasion]] - code - gateway/tests/test_security_hardening.py
+- [[Tests for prompt guard evasion techniques.]] - rationale - gateway/tests/test_security_hardening.py
+- [[Zero-width chars between letters should not bypass detection.]] - rationale - gateway/tests/test_security_hardening.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,16 +32,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Audit Ledger (SHA-256 hash only)]]
-- 2 edges to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_AgentShroud Deployment Architecture]]
-- 1 edge to [[_COMMUNITY_AgentShroud (system, C4 context)]]
-- 1 edge to [[_COMMUNITY_ADR-005 SHA-256 Hash Chain Audit Integrity]]
-- 1 edge to [[_COMMUNITY_ADR-005 SHA-256 Hash Chain Audit Integrity_1]]
+- 5 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 3 edges to [[_COMMUNITY_AgentRegistry]]
+- 3 edges to [[_COMMUNITY_TrustConfig]]
+- 2 edges to [[_COMMUNITY_AlertDispatcher]]
+- 2 edges to [[_COMMUNITY_ContextSegment]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor_1]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig_1]]
+- 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py_1]]
+- 1 edge to [[_COMMUNITY_AuditChain]]
 
 ## Top bridge nodes
-- [[Audit Ledger (SHA-256 hash only)]] - degree 7, connects to 3 communities
-- [[Gateway (FastAPI)]] - degree 4, connects to 1 community
-- [[MCP Proxy]] - degree 4, connects to 1 community
-- [[Deployment Modes_1]] - degree 3, connects to 1 community
-- [[Op-Proxy (Credential Gateway)]] - degree 2, connects to 1 community
+- [[TestPromptGuardEvasion]] - degree 26, connects to 9 communities
+- [[dot-setup_method()_38]] - degree 2, connects to 1 community

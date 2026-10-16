@@ -12,9 +12,9 @@ tags:
 # _FakeUnixSocket
 
 ## Connections
-- [[dot-__init__()_122]] - `method` [EXTRACTED]
-- [[dot-close()_9]] - `method` [EXTRACTED]
-- [[dot-connect()]] - `method` [EXTRACTED]
+- [[dot-__init__()_153]] - `method` [EXTRACTED]
+- [[dot-close()_14]] - `method` [EXTRACTED]
+- [[dot-connect()_2]] - `method` [EXTRACTED]
 - [[dot-settimeout()]] - `method` [EXTRACTED]
 - [[ServiceManager]] - `uses` [INFERRED]
 - [[Stand-in for socket.socket — records calls, never opens a real fd.]] - `rationale_for` [EXTRACTED]

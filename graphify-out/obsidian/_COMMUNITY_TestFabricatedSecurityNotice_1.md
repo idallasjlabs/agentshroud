@@ -1,24 +1,27 @@
 ---
 type: community
-cohesion: 0.25
-members: 9
+cohesion: 0.17
+members: 12
 ---
 
 # TestFabricatedSecurityNotice
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[dot-test_real_world_agent_responses()]] - code - gateway/tests/test_outbound_filter.py
-- [[dot-test_with_pii_sanitizer_compatibility()]] - code - gateway/tests/test_outbound_filter.py
-- [[Categories of information that may need filtering.]] - rationale - gateway/security/outbound_filter.py
-- [[InfoCategory]] - code - gateway/security/outbound_filter.py
-- [[Integration tests with other security components.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test that outbound filter works alongside PII sanitizer.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test with realistic agent response patterns.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[TestIntegration_1]] - code - gateway/tests/test_outbound_filter.py
-- [[test_outbound_filter.py]] - code - gateway/tests/test_outbound_filter.py
+- [[Boot Sequence (Numbered)]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Common Startup Failures]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[First-Boot Notes]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Overview]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Related Notes]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Stage 1 Gateway Container Startup]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Stage 2 Gateway Application Initialization (main.py lifespan)]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Stage 3 Health Check]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Stage 4 Bot Container Startup]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Stage 5 Fully Operational]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Startup Indicators]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Startup Sequence]] - document - docs/vault/01 - Architecture/Startup Sequence.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,15 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_AuditChain]]
-- 2 edges to [[_COMMUNITY_TestOutboundInfoFilter]]
-- 2 edges to [[_COMMUNITY_TestFabricatedSecurityNotice]]
-- 1 edge to [[_COMMUNITY_AuditChain_1]]
-- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 1 edge to [[_COMMUNITY_main.py]]
 
 ## Top bridge nodes
-- [[InfoCategory]] - degree 9, connects to 5 communities
-- [[test_outbound_filter.py]] - degree 5, connects to 3 communities
-- [[TestIntegration_1]] - degree 6, connects to 1 community
-- [[dot-test_real_world_agent_responses()]] - degree 3, connects to 1 community
-- [[dot-test_with_pii_sanitizer_compatibility()]] - degree 3, connects to 1 community
+- [[Startup Sequence]] - degree 7, connects to 1 community

@@ -31,7 +31,7 @@ members: 27
 - [[Production-Specific Review Checklist (blast radius, rollback, Athena cost guard)]] - concept - docker/config/hermes/skills/i-cr/SKILL.md
 - [[Quality Gates  (execution order)_1]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
 - [[Review Flags  (block the merge)_1]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
-- [[Role_29]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
+- [[Role_28]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
 - [[Skill CICD Pipeline Advisor (CICD)_1]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
 - [[The 400-Line Rule]] - concept - docker/config/hermes/skills/i-cr/SKILL.md
 - [[WCAG AA Contrast Standard]] - concept - docker/config/hermes/skills/i-bs/SKILL.md

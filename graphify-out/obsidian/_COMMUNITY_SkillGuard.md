@@ -1,13 +1,13 @@
 ---
 type: community
 cohesion: 0.09
-members: 50
+members: 45
 ---
 
 # SkillGuard
 
 **Cohesion:** 0.09 - loosely connected
-**Members:** 50 nodes
+**Members:** 45 nodes
 
 ## Members
 - [[dot-test_1password_env_dump_flags()]] - code - gateway/tests/test_skill_guard.py
@@ -42,9 +42,6 @@ members: 50
 - [[dot-test_tree_flags_on_medium()]] - code - gateway/tests/test_skill_guard.py
 - [[dot-test_urllib_urlopen_flags()]] - code - gateway/tests/test_skill_guard.py
 - [[dot-test_wget_pipe_sh_blocks()]] - code - gateway/tests/test_skill_guard.py
-- [[IntEnum]] - code
-- [[Ordered severity ladder (``IntEnum`` so comparisons work).]] - rationale - gateway/security/skill_guard.py
-- [[Severity]] - code - gateway/security/skill_guard.py
 - [[SkillGuard]] - code - gateway/tests/test_skill_guard.py
 - [[TestAggregation]] - code - gateway/tests/test_skill_guard.py
 - [[TestCleanSkill]] - code - gateway/tests/test_skill_guard.py
@@ -57,9 +54,7 @@ members: 50
 - [[TestPrivilegeEscalation_1]] - code - gateway/tests/test_skill_guard.py
 - [[TestSecretAccess]] - code - gateway/tests/test_skill_guard.py
 - [[_finding_categories()]] - code - gateway/tests/test_skill_guard.py
-- [[gatewaysecurityskill_guard.py (SkillGuard)]] - code - gateway/security/skill_guard.py
 - [[guard()]] - code - gateway/tests/test_skill_guard.py
-- [[test_skill_guard.py]] - code - gateway/tests/test_skill_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -69,20 +64,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 42 edges to [[_COMMUNITY_SkillGuard_1]]
-- 25 edges to [[_COMMUNITY_Path_1]]
-- 1 edge to [[_COMMUNITY_ConsentFramework]]
-- 1 edge to [[_COMMUNITY_CrossBotTrustLedger]]
-- 1 edge to [[_COMMUNITY_DifferentialPIIDetector]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_TrustConfig]]
-- 1 edge to [[_COMMUNITY_ModeRequest]]
-- 1 edge to [[_COMMUNITY_sync-llm-settings.sh]]
-- 1 edge to [[_COMMUNITY_FetchOutcome_1]]
+- 34 edges to [[_COMMUNITY_SkillGuard_1]]
+- 34 edges to [[_COMMUNITY_Path_1]]
 
 ## Top bridge nodes
-- [[IntEnum]] - degree 7, connects to 6 communities
-- [[test_skill_guard.py]] - degree 28, connects to 5 communities
 - [[SkillGuard]] - degree 36, connects to 2 communities
-- [[Severity]] - degree 24, connects to 2 communities
+- [[_finding_categories()]] - degree 25, connects to 2 communities
 - [[TestAggregation]] - degree 12, connects to 2 communities
+- [[TestPathTraversal]] - degree 10, connects to 2 communities
+- [[TestSecretAccess]] - degree 10, connects to 2 communities

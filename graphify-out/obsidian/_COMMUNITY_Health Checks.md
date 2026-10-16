@@ -20,7 +20,7 @@ members: 12
 - [[Health Checks_2]] - document - docs/vault/08 - Runbooks/Health Checks.md
 - [[Ledger Health]] - document - docs/vault/08 - Runbooks/Health Checks.md
 - [[Monitoring Script]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Related Notes_67]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Related Notes_66]] - document - docs/vault/08 - Runbooks/Health Checks.md
 - [[Security Health Report]] - document - docs/vault/08 - Runbooks/Health Checks.md
 
 ## Live Query (requires Dataview plugin)

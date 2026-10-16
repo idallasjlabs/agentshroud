@@ -1,34 +1,30 @@
 ---
 type: community
-cohesion: 0.20
-members: 19
+cohesion: 0.13
+members: 15
 ---
 
 # export_bot
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 19 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or     'YYYY-MM-DD_1]] - rationale - scripts/export-email-reports.py
-- [[Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or     'YYYY-MM-DD_2]] - rationale - scripts/export-telegram-history.py
-- [[Path_43]] - code - scripts/export-email-reports.py
-- [[Path_44]] - code - scripts/export-telegram-history.py
-- [[Why report .md source files stand in for a missing sent-mail ledger]] - rationale - scripts/export-email-reports.py
-- [[_list_report_files()]] - code - scripts/export-email-reports.py
-- [[_parse_since()_1]] - code - scripts/export-email-reports.py
-- [[_parse_since()_2]] - code - scripts/export-telegram-history.py
-- [[_report_date()]] - code - scripts/export-email-reports.py
-- [[_require_env()]] - code - scripts/export-telegram-history.py
-- [[_serialize()]] - code - scripts/export-telegram-history.py
-- [[datetime_7]] - code - scripts/export-email-reports.py
-- [[datetime_8]] - code - scripts/export-telegram-history.py
-- [[export()]] - code - scripts/export-telegram-history.py
-- [[export-email-reports.py]] - code - scripts/export-email-reports.py
-- [[export-telegram-history.py]] - code - scripts/export-telegram-history.py
-- [[export_bot()]] - code - scripts/export-email-reports.py
-- [[main()_21]] - code - scripts/export-email-reports.py
-- [[main()_22]] - code - scripts/export-telegram-history.py
+- [[dot-test_applies_to_any_agent_not_just_openclaw()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_denial_is_counted_for_soc_correlation()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_non_owner_over_unverified_origin_is_unchanged()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_owner_claim_over_unverified_origin_is_refused_elevation()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_owner_over_verified_origin_keeps_full_authority()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_unknown_origin_defaults_to_unverified()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_unverified_origin_still_allows_public_tools()]] - code - gateway/tests/test_tool_acl.py
+- [[A non-owner gains nothing and loses nothing from origin checking.]] - rationale - gateway/tests/test_tool_acl.py
+- [[AgentShroud-side mitigation for the 'channel skips the check' CVE class.      Up]] - rationale - gateway/tests/test_tool_acl.py
+- [[Fail closed an origin nobody vouched for is not trusted.          A caller that]] - rationale - gateway/tests/test_tool_acl.py
+- [[Refusing ELEVATION is not the same as blanket denial — an unverified         ori]] - rationale - gateway/tests/test_tool_acl.py
+- [[TestOriginAwareAuthorization]] - code - gateway/tests/test_tool_acl.py
+- [[The control is agent-agnostic by construction it takes an origin and         an]] - rationale - gateway/tests/test_tool_acl.py
+- [[The core of the CVE class a side channel claiming to be the owner.          ter]] - rationale - gateway/tests/test_tool_acl.py
+- [[The legitimate path must not regress.]] - rationale - gateway/tests/test_tool_acl.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,9 +34,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_export-bot-conversations.py]]
+- 3 edges to [[_COMMUNITY_RBACConfig_1]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
 
 ## Top bridge nodes
-- [[export()]] - degree 7, connects to 1 community
-- [[_parse_since()_1]] - degree 6, connects to 1 community
-- [[_parse_since()_2]] - degree 6, connects to 1 community
+- [[TestOriginAwareAuthorization]] - degree 14, connects to 3 communities

@@ -33,11 +33,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_test_daily_cve_report.py]]
-- 1 edge to [[_COMMUNITY_agent_cve_registry.py]]
+- 3 edges to [[_COMMUNITY_test_daily_cve_report.py]]
+- 3 edges to [[_COMMUNITY_test_daily_cve_report.py_1]]
+- 1 edge to [[_COMMUNITY_sync-cve-registry.py]]
 - 1 edge to [[_COMMUNITY__t]]
 
 ## Top bridge nodes
-- [[check_upstream_cves()]] - degree 14, connects to 3 communities
+- [[check_upstream_cves()]] - degree 14, connects to 4 communities
 - [[TestCheckUpstreamCves]] - degree 9, connects to 1 community
 - [[_make_github_advisory()]] - degree 6, connects to 1 community

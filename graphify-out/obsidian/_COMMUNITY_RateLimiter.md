@@ -1,17 +1,16 @@
 ---
 type: community
 cohesion: 0.04
-members: 58
+members: 48
 ---
 
 # RateLimiter
 
 **Cohesion:** 0.04 - loosely connected
-**Members:** 58 nodes
+**Members:** 48 nodes
 
 ## Members
-- [[dot-__init__()_21]] - code - gateway/ingest_api/auth.py
-- [[dot-check()_1]] - code - gateway/ingest_api/auth.py
+- [[dot-__init__()_42]] - code - gateway/ingest_api/auth.py
 - [[dot-test_channel_is_not_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_collaborator_always_gets_response_for_generic_message()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_collaborator_blocked_command_always_gets_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -41,7 +40,6 @@ members: 58
 - [[A blocked slash command must always produce a protected notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[After the rate-limit window expires, collaborator messages go through normally.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Args             max_requests Maximum requests allowed in the time window]] - rationale - gateway/ingest_api/auth.py
-- [[Check if client is within rate limit          Args             client_id Usual]] - rationale - gateway/ingest_api/auth.py
 - [[Even a generic message triggers _send_collaborator_safe_info_response (local_inf]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Every collaborator message must produce a response — never a silent drop.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[If notice send fails, cooldown should not suppress the next retry attempt.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
@@ -53,10 +51,6 @@ members: 58
 - [[RateLimiter_1]] - code - gateway/ingest_api/auth.py
 - [[Repeated rate-limited messages should each receive a deterministic notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Simple token-bucket rate limiter      Limits requests per client IP to prevent r]] - rationale - gateway/ingest_api/auth.py
-- [[Test rate limiter allows requests under limit]] - rationale - gateway/tests/test_auth.py
-- [[Test rate limiter blocks requests over limit]] - rationale - gateway/tests/test_auth.py
-- [[Test rate limiter cleans up old requests]] - rationale - gateway/tests/test_auth.py
-- [[Test rate limiter tracks clients separately]] - rationale - gateway/tests/test_auth.py
 - [[TestCollaboratorRateLimitRecovery]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[TestCommandTokenNormalization]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[TestIsGroupMessage]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -64,10 +58,6 @@ members: 58
 - [[Unit tests for TelegramAPIProxy._is_group_message().]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Unit tests for command token normalization used by local inbound handlers.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Unknown users must always receive either a pending notice or a rate-limit notice]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[test_rate_limiter_allows_requests()]] - code - gateway/tests/test_auth.py
-- [[test_rate_limiter_blocks_excess_requests()]] - code - gateway/tests/test_auth.py
-- [[test_rate_limiter_separate_clients()]] - code - gateway/tests/test_auth.py
-- [[test_rate_limiter_window_cleanup()]] - code - gateway/tests/test_auth.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -77,26 +67,25 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 49 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 49 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
 - 18 edges to [[_COMMUNITY__wrap_response]]
-- 9 edges to [[_COMMUNITY_test_security.py]]
+- 8 edges to [[_COMMUNITY_create_auth_dependency]]
 - 5 edges to [[_COMMUNITY_TelegramAPIProxy_2]]
 - 4 edges to [[_COMMUNITY_MiddlewareManager]]
 - 3 edges to [[_COMMUNITY_BlockingPipeline]]
 - 2 edges to [[_COMMUNITY_telegram_proxy.py_1]]
+- 2 edges to [[_COMMUNITY_test_security.py]]
+- 2 edges to [[_COMMUNITY_dot-_filter_outbound]]
 - 2 edges to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
-- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
-- 1 edge to [[_COMMUNITY_DataLedger]]
-- 1 edge to [[_COMMUNITY_dot-_filter_outbound]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_2]]
-- 1 edge to [[_COMMUNITY_AsyncMock]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
+- 1 edge to [[_COMMUNITY_AsyncMock_1]]
 - 1 edge to [[_COMMUNITY_TestBotIsMentioned]]
 - 1 edge to [[_COMMUNITY_TestFileDownload]]
 - 1 edge to [[_COMMUNITY_TestFullAccessMiddlewareBypass]]
 - 1 edge to [[_COMMUNITY_TestStrangerRateLimit]]
 
 ## Top bridge nodes
-- [[RateLimiter_1]] - degree 47, connects to 16 communities
+- [[RateLimiter_1]] - degree 47, connects to 15 communities
 - [[TestCommandTokenNormalization]] - degree 15, connects to 3 communities
 - [[TestIsGroupMessage]] - degree 10, connects to 3 communities
 - [[TestNoResponseGuarantee]] - degree 9, connects to 3 communities

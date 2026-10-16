@@ -17,16 +17,16 @@ members: 22
 - [[5. Build and flash the firmware]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[Adding a future agent_1]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[Agent toggle (MUTE button — BSP_BUTTON_MUTE)]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Architecture_7]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Architecture_8]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[Installation_3]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[Physical button (top button — BSP_BUTTON_MAIN)]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Prerequisites_8]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Security notes_6]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Prerequisites_7]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Security notes_7]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[Success pattern — `docker logs agentshroud-voice-gateway`]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[Tap to talk]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Troubleshooting_27]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Troubleshooting_28]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[Updating the firmware (OTA — the normal deploy path)]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Usage_74]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Usage_72]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[Voice volume]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[Voice-gateway configuration (env vars, set in `dockerdocker-compose.yml`)]] - document - docs/integrations/voice-terminal-esp32-s3.md

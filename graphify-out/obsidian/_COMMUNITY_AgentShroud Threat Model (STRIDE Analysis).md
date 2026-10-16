@@ -29,8 +29,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_A2A (Agent-to-Agent) Protocol Threat Analysis]]
 - 1 edge to [[_COMMUNITY_STRIDE Threat Analysis]]
+- 1 edge to [[_COMMUNITY_A2A (Agent-to-Agent) Protocol Threat Analysis]]
 
 ## Top bridge nodes
 - [[AgentShroud Threat Model (STRIDE Analysis)]] - degree 7, connects to 2 communities

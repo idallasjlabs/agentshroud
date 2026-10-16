@@ -1,17 +1,20 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.40
+members: 5
 ---
 
 # TestOutboundInfoFilter
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[dot-test_tailscale_hostname_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test that Tailscale hostnames are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[dot-test_compact_timestamp_normalised_to_iso()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_critical_and_warning_statuses()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_garbage_timestamp_falls_back_to_mtime()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_not_run()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestOpenscapSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +24,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
+- 3 edges to [[_COMMUNITY__w]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_7]]
 
 ## Top bridge nodes
-- [[dot-test_tailscale_hostname_filtering()]] - degree 2, connects to 1 community
+- [[TestOpenscapSummary]] - degree 5, connects to 1 community
+- [[dot-test_compact_timestamp_normalised_to_iso()]] - degree 2, connects to 1 community
+- [[dot-test_critical_and_warning_statuses()]] - degree 2, connects to 1 community
+- [[dot-test_garbage_timestamp_falls_back_to_mtime()]] - degree 2, connects to 1 community

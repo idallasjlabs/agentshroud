@@ -28,7 +28,7 @@ members: 31
 - [[Model usage]] - document - skills/openclaw/model-usage/SKILL.md
 - [[Notes_1]] - document - skills/openclaw/model-usage/references/codexbar-cli.md
 - [[Output_1]] - document - skills/openclaw/model-usage/SKILL.md
-- [[Overview_7]] - document - skills/openclaw/model-usage/SKILL.md
+- [[Overview_10]] - document - skills/openclaw/model-usage/SKILL.md
 - [[Quick start_5]] - document - skills/openclaw/model-usage/SKILL.md
 - [[References_2]] - document - skills/openclaw/model-usage/SKILL.md
 - [[Search across ALL sessions for a phrase]] - document - skills/openclaw/session-logs/SKILL.md

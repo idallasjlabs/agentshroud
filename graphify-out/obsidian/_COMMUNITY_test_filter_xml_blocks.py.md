@@ -1,13 +1,13 @@
 ---
 type: community
 cohesion: 0.04
-members: 45
+members: 46
 ---
 
 # test_filter_xml_blocks.py
 
 **Cohesion:** 0.04 - loosely connected
-**Members:** 45 nodes
+**Members:** 46 nodes
 
 ## Members
 - [[Closed function_calls block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
@@ -30,6 +30,7 @@ members: 45
 - [[Unclosed function_results block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
 - [[Unclosed system-reminder block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
 - [[Unclosed thinking block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[sanitizer()_2]] - code - gateway/tests/test_filter_xml_blocks.py
 - [[test_collapses_excessive_newlines()]] - code - gateway/tests/test_filter_xml_blocks.py
 - [[test_does_not_filter_normal_text()]] - code - gateway/tests/test_filter_xml_blocks.py
 - [[test_does_not_filter_regular_html_tags()]] - code - gateway/tests/test_filter_xml_blocks.py
@@ -64,7 +65,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_PIIConfig]]
+- 2 edges to [[_COMMUNITY_PIIConfig]]
+- 2 edges to [[_COMMUNITY_ToolResultSanitizer]]
 
 ## Top bridge nodes
-- [[test_filter_xml_blocks.py]] - degree 25, connects to 1 community
+- [[test_filter_xml_blocks.py]] - degree 25, connects to 2 communities
+- [[sanitizer()_2]] - degree 3, connects to 2 communities

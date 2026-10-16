@@ -1,27 +1,28 @@
 ---
 type: community
 cohesion: 0.06
-members: 62
+members: 63
 ---
 
 # test_a2a_policy.py
 
 **Cohesion:** 0.06 - loosely connected
-**Members:** 62 nodes
+**Members:** 63 nodes
 
 ## Members
-- [[dot-__init__()_192]] - code - gateway/tests/test_a2a_policy.py
-- [[dot-__init__()_193]] - code - gateway/tests/test_a2a_policy.py
-- [[dot-submit_tool_request()_2]] - code - gateway/tests/test_a2a_policy.py
+- [[dot-__init__()_203]] - code - gateway/tests/test_a2a_policy.py
+- [[dot-__init__()_204]] - code - gateway/tests/test_a2a_policy.py
 - [[dot-submit_tool_request()_3]] - code - gateway/tests/test_a2a_policy.py
-- [[dot-wait_for_decision()_2]] - code - gateway/tests/test_a2a_policy.py
+- [[dot-submit_tool_request()_4]] - code - gateway/tests/test_a2a_policy.py
 - [[dot-wait_for_decision()_3]] - code - gateway/tests/test_a2a_policy.py
+- [[dot-wait_for_decision()_4]] - code - gateway/tests/test_a2a_policy.py
 - [[A 10-digit decimal string (matches the decimal-IPv4 pattern) whose     value exc]] - rationale - gateway/tests/test_a2a_policy.py
 - [[A duck-typed queue predating the ``force_tier`` kwarg — enforce() must     fall]] - rationale - gateway/tests/test_a2a_policy.py
 - [[A queue reporting requires_wait=False for a call the engine deemed     high-risk]] - rationale - gateway/tests/test_a2a_policy.py
 - [[A task_id AgentShroud never saw created (e.g. the very first GetTask     against]] - rationale - gateway/tests/test_a2a_policy.py
 - [[A2A peers are never equivalent to the human operator — unlike MCP,     owner_byp]] - rationale - gateway/tests/test_a2a_policy.py
 - [[A2AMethod_1]] - code - gateway/tests/test_a2a_policy.py
+- [[A2APolicyConfig_1]] - code - gateway/tests/test_a2a_policy.py
 - [[A2APolicyEngine_3]] - code - gateway/tests/test_a2a_policy.py
 - [[An operator who explicitly opts into default_action=allow gets normal     risk-t]] - rationale - gateway/tests/test_a2a_policy.py
 - [[DNS rebinding a public-looking hostname that currently resolves to a     privat]] - rationale - gateway/tests/test_a2a_policy.py
@@ -81,12 +82,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 27 edges to [[_COMMUNITY_A2APolicyEngine]]
-- 10 edges to [[_COMMUNITY_A2AMethod]]
+- 17 edges to [[_COMMUNITY_A2AMethod_1]]
+- 12 edges to [[_COMMUNITY_A2APolicyEngine_1]]
+- 12 edges to [[_COMMUNITY_A2APolicyEngine]]
 
 ## Top bridge nodes
-- [[test_a2a_policy.py]] - degree 48, connects to 2 communities
-- [[A2APolicyEngine_3]] - degree 31, connects to 2 communities
-- [[_StubApprovalQueue]] - degree 13, connects to 2 communities
-- [[_LegacyStubApprovalQueue]] - degree 11, connects to 2 communities
-- [[A2AMethod_1]] - degree 8, connects to 2 communities
+- [[test_a2a_policy.py]] - degree 48, connects to 3 communities
+- [[A2APolicyEngine_3]] - degree 31, connects to 3 communities
+- [[_StubApprovalQueue]] - degree 13, connects to 3 communities
+- [[_LegacyStubApprovalQueue]] - degree 11, connects to 3 communities
+- [[A2AMethod_1]] - degree 8, connects to 3 communities

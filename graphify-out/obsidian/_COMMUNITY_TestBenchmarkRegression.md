@@ -11,7 +11,7 @@ members: 19
 
 ## Members
 - [[dot-_time_fn()]] - code - gateway/tests/test_benchmark_regression.py
-- [[dot-setup_method()_29]] - code - gateway/tests/test_benchmark_regression.py
+- [[dot-setup_method()_34]] - code - gateway/tests/test_benchmark_regression.py
 - [[dot-test_100_inbound_requests()]] - code - gateway/tests/test_benchmark_regression.py
 - [[dot-test_baseline_file_exists()]] - code - gateway/tests/test_benchmark_regression.py
 - [[dot-test_baseline_values_are_reasonable()]] - code - gateway/tests/test_benchmark_regression.py

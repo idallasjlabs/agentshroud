@@ -16,8 +16,8 @@ members: 19
 - [[Option 2 Use OpenAI GPT-4]] - document - docs/setup/SETUP_API_KEYS.md
 - [[Option A Via Control UI (Recommended)]] - document - docs/setup/SETUP_API_KEYS.md
 - [[Option B Via Command Line]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Overview_18]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Security Notes_7]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Overview_13]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Security Notes_3]] - document - docs/setup/SETUP_API_KEYS.md
 - [[Step 1 Save API Keys to Secret Files]] - document - docs/setup/SETUP_API_KEYS.md
 - [[Step 2 Restart OpenClaw Container]] - document - docs/setup/SETUP_API_KEYS.md
 - [[Step 3 Configure API Keys in OpenClaw]] - document - docs/setup/SETUP_API_KEYS.md
@@ -38,8 +38,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_Blue Team Security Auditor (SEC-DEFENSE)]]
 - 1 edge to [[_COMMUNITY_OpenClaw Bot Container]]
-- 1 edge to [[_COMMUNITY_Troubleshooting_1]]
 - 1 edge to [[_COMMUNITY_Quick Reference]]
 
 ## Top bridge nodes

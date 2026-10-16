@@ -12,9 +12,9 @@ tags:
 # _PassthroughPipeline
 
 ## Connections
-- [[dot-__init__()_146]] - `method` [EXTRACTED]
-- [[dot-process_inbound()_2]] - `method` [EXTRACTED]
-- [[dot-process_outbound()_3]] - `method` [EXTRACTED]
+- [[dot-__init__()_35]] - `method` [EXTRACTED]
+- [[dot-process_inbound()]] - `method` [EXTRACTED]
+- [[dot-process_outbound()_1]] - `method` [EXTRACTED]
 - [[AgentTarget_3]] - `uses` [INFERRED]
 - [[ForwardError]] - `uses` [INFERRED]
 - [[ForwardRequest_3]] - `uses` [INFERRED]

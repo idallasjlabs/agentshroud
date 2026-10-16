@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/pydantic.md"
+source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "Pydantic"
-location: "L22"
+community: "UserSessionManager"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pydantic
+  - community/UserSessionManager
 ---
 
 # Where Used
 
 ## Connections
-- [[Pydantic]] - `contains` [EXTRACTED]
+- [[spaCy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pydantic
+#graphify/document #graphify/EXTRACTED #community/UserSessionManager

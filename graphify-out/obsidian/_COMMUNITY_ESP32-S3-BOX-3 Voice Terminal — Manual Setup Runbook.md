@@ -32,7 +32,7 @@ members: 25
 - [[How it works_1]] - document - firmware/voice-terminal/SETUP.md
 - [[One-time bootstrap (USB flash — do this when back at marvin)]] - document - firmware/voice-terminal/SETUP.md
 - [[Ongoing update workflow (no USB ever again)]] - document - firmware/voice-terminal/SETUP.md
-- [[SETUP_3]] - document - firmware/voice-terminal/SETUP.md
+- [[SETUP_4]] - document - firmware/voice-terminal/SETUP.md
 - [[Troubleshooting OTA]] - document - firmware/voice-terminal/SETUP.md
 - [[What you're building]] - document - firmware/voice-terminal/SETUP.md
 

@@ -1,22 +1,25 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.24
+members: 10
 ---
 
 # Phase 1 — Raw Collection
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.24 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[A. `mac_app_catalog.json` — Machine-readable manifest_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
-- [[B. `mac_app_catalog.md` — Human-readable catalog_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
-- [[Discovery Strategy_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
-- [[Phase 2 — Deduplication & Normalization_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
-- [[Phase 3 — Categorization_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
-- [[Phase 4 — Enrichment_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
-- [[Phase 5 — Output Generation_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
+- [[dot-_scan()]] - code - gateway/security/differential_pii_detector.py
+- [[dot-scan_prompt()]] - code - gateway/security/differential_pii_detector.py
+- [[dot-scan_tool_result()]] - code - gateway/security/differential_pii_detector.py
+- [[Core scan normalize adversarial patterns, then run PII recognition.]] - rationale - gateway/security/differential_pii_detector.py
+- [[Full scan result for a tool result or prompt.]] - rationale - gateway/security/differential_pii_detector.py
+- [[Scan a prompt with the standard (higher) confidence floor.          Args]] - rationale - gateway/security/differential_pii_detector.py
+- [[Scan a tool result with the lower confidence floor.          Args             t]] - rationale - gateway/security/differential_pii_detector.py
+- [[Strip common adversarial encoding tricks, return (normalized, count_removed).]] - rationale - gateway/security/differential_pii_detector.py
+- [[ToolResultPIIReport]] - code - gateway/security/differential_pii_detector.py
+- [[_normalize_adversarial()]] - code - gateway/security/differential_pii_detector.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,8 +29,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Phase 1 — Raw Collection]]
-- 1 edge to [[_COMMUNITY_Mac App Discovery Skill]]
+- 7 edges to [[_COMMUNITY_DifferentialPIIDetector]]
 
 ## Top bridge nodes
-- [[Discovery Strategy_1]] - degree 6, connects to 2 communities
+- [[dot-_scan()]] - degree 8, connects to 1 community
+- [[ToolResultPIIReport]] - degree 5, connects to 1 community
+- [[dot-scan_prompt()]] - degree 4, connects to 1 community
+- [[dot-scan_tool_result()]] - degree 4, connects to 1 community
+- [[_normalize_adversarial()]] - degree 3, connects to 1 community

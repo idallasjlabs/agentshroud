@@ -1,156 +1,48 @@
 ---
 type: community
-cohesion: 0.02
-members: 141
+cohesion: 0.06
+members: 33
 ---
 
 # DataLedger
 
-**Cohesion:** 0.02 - loosely connected
-**Members:** 141 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 33 nodes
 
 ## Members
-- [[dot-__init__()_75]] - code - gateway/ingest_api/ledger.py
-- [[dot-_hash_content()]] - code - gateway/ingest_api/ledger.py
-- [[dot-close()_7]] - code - gateway/ingest_api/ledger.py
-- [[dot-delete_entry()]] - code - gateway/ingest_api/ledger.py
-- [[dot-disabled_client()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-enforce_retention()]] - code - gateway/ingest_api/ledger.py
-- [[dot-get_entry()]] - code - gateway/ingest_api/ledger.py
-- [[dot-get_stats()_7]] - code - gateway/ingest_api/ledger.py
-- [[dot-initialize()]] - code - gateway/ingest_api/ledger.py
-- [[dot-ledger()]] - code - gateway/tests/test_performance.py
-- [[dot-ledger()_1]] - code - gateway/tests/test_performance.py
-- [[dot-no_approval_client()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-query()]] - code - gateway/ingest_api/ledger.py
-- [[dot-record()_1]] - code - gateway/ingest_api/ledger.py
-- [[dot-test_1000_entries_all_recorded()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_50_concurrent_writes()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_concurrent_write_and_read()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_content_hashes_are_unique()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_delete_entry_removes_it()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_delete_nonexistent_returns_false()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_enforce_retention_deletes_expired()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_entry_retrieval_by_id()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_hash_is_sha256()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_hash_matches_content()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_non_auto_approved_executes_directly()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_nonexistent_entry_returns_none()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_query_filter_by_source()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_query_pagination()]] - code - gateway/tests/test_audit_chain.py
-- [[dot-test_stats_correct()]] - code - gateway/tests/test_audit_chain.py
-- [[50 concurrent write operations should all succeed.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Any_28]] - code - gateway/ingest_api/ledger.py
-- [[AppState]] - code - gateway/ingest_api/state.py
-- [[ApprovalDecision]] - code - gateway/ingest_api/routes/approval.py
-- [[ApprovalDecision_1]] - code - gateway/ingest_api/models.py
-- [[ApprovalRequest]] - code - gateway/ingest_api/routes/approval.py
-- [[Approve or reject a pending action      Authentication required.]] - rationale - gateway/ingest_api/routes/approval.py
-- [[Async SQLite-backed data ledger      Records all content forwarded through the g]] - rationale - gateway/ingest_api/ledger.py
-- [[Auth dependency that uses the app state config.]] - rationale - gateway/ingest_api/routes/approval.py
-- [[AuthRequired_1]] - code - gateway/ingest_api/routes/approval.py
-- [[Can retrieve specific entry by ID for verification.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Chain with many entries — verify integrity.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Close database connection]] - rationale - gateway/ingest_api/ledger.py
-- [[Concurrent writes and reads don't conflict.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Concurrent writes to chain.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Container for application-wide state]] - rationale - gateway/ingest_api/state.py
-- [[Content hash should be a valid SHA-256 hex digest.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Create a FastAPI TestClient with test configuration      Note This doesn't init]] - rationale - gateway/tests/conftest.py
-- [[Create a PIISanitizer instance for testing]] - rationale - gateway/tests/conftest.py
-- [[Create a new ledger entry          Args             source Source identifier (]] - rationale - gateway/ingest_api/ledger.py
-- [[Create a test configuration      Uses regex fallback for PII (no spaCy model req]] - rationale - gateway/tests/conftest.py
-- [[Create an initialized in-memory ledger for testing      Yields the ledger, then]] - rationale - gateway/tests/conftest.py
-- [[Create database, tables, and run initial cleanup          Must be called before]] - rationale - gateway/ingest_api/ledger.py
-- [[Data ledger configuration]] - rationale - gateway/ingest_api/config.py
-- [[DataLedger]] - code - gateway/ingest_api/ledger.py
-- [[Delete entries older than retention_days          Returns             Number of]] - rationale - gateway/ingest_api/ledger.py
-- [[Deleted entry is gone (right to erasure).]] - rationale - gateway/tests/test_audit_chain.py
-- [[Deleting nonexistent entry returns False.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Different content should produce different hashes.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Export chain and re-verify.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Fetch a single ledger entry by ID          Args             entry_id Entry UUI]] - rationale - gateway/ingest_api/ledger.py
-- [[Filter entries by source.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Forget this' - permanently delete a ledger entry          Implements right to er]] - rationale - gateway/ingest_api/ledger.py
-- [[GatewayConfig]] - code - gateway/tests/conftest.py
-- [[Get aggregate statistics          Returns             Dictionary with total ent]] - rationale - gateway/ingest_api/ledger.py
-- [[LedgerConfig]] - code - gateway/ingest_api/config.py
-- [[LedgerConfig_1]] - code - gateway/ingest_api/ledger.py
-- [[LedgerEntry]] - code - gateway/ingest_api/models.py
-- [[LedgerEntry_1]] - code - gateway/ingest_api/ledger.py
-- [[LedgerQueryResponse]] - code - gateway/ingest_api/models.py
-- [[LedgerQueryResponse_1]] - code - gateway/ingest_api/ledger.py
-- [[List all pending approval requests      Authentication required.]] - rationale - gateway/ingest_api/routes/approval.py
-- [[Looking up nonexistent entry returns None.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Minimal health check endpoint — no authentication required.      Returns only ba]] - rationale - gateway/ingest_api/routes/health.py
-- [[PIISanitizer_3]] - code - gateway/tests/conftest.py
-- [[Paginated ledger query results]] - rationale - gateway/ingest_api/models.py
-- [[Paginated queries return correct subsets.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Query ledger entries with pagination and filters          Args             page]] - rationale - gateway/ingest_api/ledger.py
-- [[Re-initializing must not orphan the first aiosqlite connection.      aiosqlite c]] - rationale - gateway/tests/test_ledger.py
-- [[Request_4]] - code - gateway/ingest_api/routes/approval.py
-- [[Retention enforcement removes expired entries.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Retention enforcement.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Return Authorization headers with test token]] - rationale - gateway/tests/conftest.py
-- [[SHA-256 hash of content string          Args             content Text to hash]] - rationale - gateway/ingest_api/ledger.py
-- [[Single entry from the data ledger]] - rationale - gateway/ingest_api/models.py
-- [[Stats reflect actual data.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Store configuration          Actual database connection created in initialize().]] - rationale - gateway/ingest_api/ledger.py
-- [[Submit an action for human approval      Called by agents when attempting sensit]] - rationale - gateway/ingest_api/routes/approval.py
-- [[Tamper detection at various chain positions.]] - rationale - gateway/tests/test_audit_chain.py
-- [[Test creating a ledger entry]] - rationale - gateway/tests/test_ledger.py
-- [[Test deleting a ledger entry]] - rationale - gateway/tests/test_ledger.py
-- [[Test deleting a non-existent entry]] - rationale - gateway/tests/test_ledger.py
-- [[Test ledger query with source filter]] - rationale - gateway/tests/test_ledger.py
-- [[Test paginated ledger query]] - rationale - gateway/tests/test_ledger.py
-- [[Test querying ledger with forwarded_to filter]] - rationale - gateway/tests/test_ledger.py
-- [[Test querying ledger with time range filters]] - rationale - gateway/tests/test_ledger.py
-- [[Test require_approval=false executes directly (Finding 5)]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[Test retrieving a ledger entry by ID]] - rationale - gateway/tests/test_ledger.py
-- [[Test stats calculation]] - rationale - gateway/tests/test_ledger.py
-- [[TestAuditChainIntegrity]] - code - gateway/tests/test_audit_chain.py
-- [[TestChainExportAndVerification]] - code - gateway/tests/test_audit_chain.py
-- [[TestConcurrentWrites]] - code - gateway/tests/test_audit_chain.py
-- [[TestRetention]] - code - gateway/tests/test_audit_chain.py
-- [[TestSSHRequireApprovalFalse]] - code - gateway/tests/test_ssh_endpoints.py
-- [[TestTamperDetection]] - code - gateway/tests/test_audit_chain.py
-- [[User's decision on a pending approval request]] - rationale - gateway/ingest_api/models.py
-- [[Verify hash matches SHA-256 of the content.]] - rationale - gateway/tests/test_audit_chain.py
-- [[When require_approval=false, non-auto-approved commands execute directly.]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[Write 1000 entries and verify they're all there.]] - rationale - gateway/tests/test_audit_chain.py
-- [[approval.py]] - code - gateway/ingest_api/routes/approval.py
-- [[auth_dep()_1]] - code - gateway/ingest_api/routes/approval.py
-- [[auth_headers()_2]] - code - gateway/tests/conftest.py
-- [[conftest.py]] - code - gateway/tests/conftest.py
-- [[decide_approval()]] - code - gateway/ingest_api/routes/approval.py
-- [[gatewayREADME]] - document - gateway/README.md
-- [[health.py]] - code - gateway/ingest_api/routes/health.py
-- [[health_check()]] - code - gateway/ingest_api/routes/health.py
-- [[ingest_apiauth.py]] - code - gateway/ingest_api/auth.py
-- [[ingest_apimodels.py]] - code - gateway/ingest_api/models.py
-- [[ledger()]] - code - gateway/tests/test_audit_chain.py
-- [[ledger()_1]] - code - gateway/tests/test_security_integration.py
-- [[ledger.py_1]] - code - gateway/ingest_api/ledger.py
-- [[list_pending_approvals()_1]] - code - gateway/ingest_api/routes/approval.py
-- [[sanitizer()_3]] - code - gateway/tests/conftest.py
-- [[sanitizer.py]] - code - gateway/ingest_api/sanitizer.py
-- [[state.py]] - code - gateway/ingest_api/state.py
-- [[submit_approval_request()]] - code - gateway/ingest_api/routes/approval.py
-- [[test_audit_chain.py]] - code - gateway/tests/test_audit_chain.py
-- [[test_client()]] - code - gateway/tests/conftest.py
-- [[test_config()]] - code - gateway/tests/conftest.py
-- [[test_delete_entry()]] - code - gateway/tests/test_ledger.py
-- [[test_delete_nonexistent()]] - code - gateway/tests/test_ledger.py
-- [[test_get_entry()]] - code - gateway/tests/test_ledger.py
-- [[test_get_stats()_2]] - code - gateway/tests/test_ledger.py
-- [[test_initialize_is_idempotent()]] - code - gateway/tests/test_ledger.py
-- [[test_ledger()]] - code - gateway/tests/conftest.py
-- [[test_ledger.py]] - code - gateway/tests/test_ledger.py
-- [[test_query_ledger()]] - code - gateway/tests/test_ledger.py
-- [[test_query_with_filter()]] - code - gateway/tests/test_ledger.py
-- [[test_query_with_forwarded_to_filter()]] - code - gateway/tests/test_ledger.py
-- [[test_query_with_time_filters()]] - code - gateway/tests/test_ledger.py
-- [[test_record_entry()]] - code - gateway/tests/test_ledger.py
+- [[dot-test_active_group_appears_first()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_append_to_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_append_to_user_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_clean_text_not_flagged()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_collaborator_gets_filtered_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_detects_api_key_pattern()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_detects_bearer_token()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_detects_private_section_header()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_get_group_memory_empty_initially()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_get_user_memory_returns_string()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_multiple_appends_accumulate()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_owner_gets_unfiltered_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_owner_sees_all_groups()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_strip_private_content_redacts_api_key()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_strip_private_section()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_topic_scoped_excludes_non_matching_project_scoped_group()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_topic_scoped_includes_local_only_group()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_topic_scoped_returns_matching_group()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_unknown_user_sees_only_private_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_user_does_not_see_other_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_user_memory_isolated_between_users()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_user_sees_own_private_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_user_sees_their_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[TestGroupMemoryReadWrite]] - code - gateway/tests/test_shared_memory.py
+- [[TestMergedMemory]] - code - gateway/tests/test_shared_memory.py
+- [[TestPrivateContentDetection]] - code - gateway/tests/test_shared_memory.py
+- [[TestTopicScopedMemory]] - code - gateway/tests/test_shared_memory.py
+- [[TestUserPrivateMemory]] - code - gateway/tests/test_shared_memory.py
+- [[rbac()_2]] - code - gateway/tests/test_shared_memory.py
+- [[session_mgr()]] - code - gateway/tests/test_shared_memory.py
+- [[smm()_1]] - code - gateway/tests/test_shared_memory.py
+- [[test_shared_memory.py]] - code - gateway/tests/test_shared_memory.py
+- [[tmp_workspace()_1]] - code - gateway/tests/test_shared_memory.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -160,53 +52,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 41 edges to [[_COMMUNITY_PIIConfig]]
-- 40 edges to [[_COMMUNITY_ApprovalQueueConfig_1]]
-- 28 edges to [[_COMMUNITY_ApprovalQueueConfig_2]]
-- 20 edges to [[_COMMUNITY_AgentTarget]]
-- 17 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 7 edges to [[_COMMUNITY_make_event]]
-- 7 edges to [[_COMMUNITY_test_security.py]]
-- 6 edges to [[_COMMUNITY_test_forward_stream.py]]
-- 5 edges to [[_COMMUNITY_AgentRegistry]]
-- 4 edges to [[_COMMUNITY_main.py]]
-- 4 edges to [[_COMMUNITY_socrouter.py]]
-- 4 edges to [[_COMMUNITY_ToolResultSanitizer]]
-- 3 edges to [[_COMMUNITY_UserSessionManager]]
-- 3 edges to [[_COMMUNITY_create_auth_dependency]]
-- 2 edges to [[_COMMUNITY_Request]]
-- 2 edges to [[_COMMUNITY_test_dashboard.py]]
-- 2 edges to [[_COMMUNITY_test_mfa_guard.py]]
-- 2 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 2 edges to [[_COMMUNITY_AuditChain]]
-- 2 edges to [[_COMMUNITY_activity_websocket]]
-- 1 edge to [[_COMMUNITY_RateLimiter]]
-- 1 edge to [[_COMMUNITY_All Dependencies_1]]
-- 1 edge to [[_COMMUNITY_DataLedger_1]]
-- 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
-- 1 edge to [[_COMMUNITY_ingest_apimodels.py]]
-- 1 edge to [[_COMMUNITY_socrouter.py_2]]
-- 1 edge to [[_COMMUNITY_socrouter.py_3]]
-- 1 edge to [[_COMMUNITY_socrouter.py_4]]
-- 1 edge to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
-- 1 edge to [[_COMMUNITY_api.py]]
-- 1 edge to [[_COMMUNITY_TestMCPResultEndpoint]]
-- 1 edge to [[_COMMUNITY_KeyVault]]
-- 1 edge to [[_COMMUNITY_Implementation Status]]
-- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised_1]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager]]
-- 1 edge to [[_COMMUNITY_HTTPConnectProxy]]
-- 1 edge to [[_COMMUNITY_MCPPermissionManager_1]]
-- 1 edge to [[_COMMUNITY_TrustConfig]]
-- 1 edge to [[_COMMUNITY_WebProxyConfig]]
-- 1 edge to [[_COMMUNITY__wrap_response]]
-- 1 edge to [[_COMMUNITY_get_engine]]
-- 1 edge to [[_COMMUNITY_Features]]
-- 1 edge to [[_COMMUNITY_`SecurityPipeline`]]
+- 7 edges to [[_COMMUNITY_MiddlewareManager]]
+- 7 edges to [[_COMMUNITY_telegram_proxy.py]]
+- 7 edges to [[_COMMUNITY_UserSessionManager_3]]
+- 7 edges to [[_COMMUNITY_RBACConfig]]
 
 ## Top bridge nodes
-- [[state.py]] - degree 36, connects to 19 communities
-- [[ingest_apimodels.py]] - degree 27, connects to 10 communities
-- [[sanitizer.py]] - degree 13, connects to 7 communities
-- [[gatewayREADME]] - degree 11, connects to 7 communities
-- [[DataLedger]] - degree 67, connects to 6 communities
+- [[test_shared_memory.py]] - degree 13, connects to 4 communities
+- [[TestPrivateContentDetection]] - degree 13, connects to 4 communities
+- [[TestMergedMemory]] - degree 11, connects to 4 communities
+- [[TestGroupMemoryReadWrite]] - degree 8, connects to 4 communities
+- [[TestTopicScopedMemory]] - degree 8, connects to 4 communities

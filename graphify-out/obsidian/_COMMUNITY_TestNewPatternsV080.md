@@ -11,7 +11,7 @@ members: 30
 
 ## Members
 - [[dot-_hits()]] - code - gateway/tests/test_prompt_guard.py
-- [[dot-pg()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-pg()_1]] - code - gateway/tests/test_prompt_guard.py
 - [[dot-test_ascii_art_injection()]] - code - gateway/tests/test_prompt_guard.py
 - [[dot-test_authority_escalation()]] - code - gateway/tests/test_prompt_guard.py
 - [[dot-test_benign_encoding_discussion()]] - code - gateway/tests/test_prompt_guard.py
@@ -49,10 +49,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_PIIConfig]]
-- 2 edges to [[_COMMUNITY_test_prompt_guard.py]]
+- 4 edges to [[_COMMUNITY_ContextSegment]]
 - 1 edge to [[_COMMUNITY_AuditChain]]
 
 ## Top bridge nodes
-- [[TestNewPatternsV080]] - degree 32, connects to 3 communities
-- [[dot-pg()]] - degree 2, connects to 1 community
+- [[TestNewPatternsV080]] - degree 32, connects to 2 communities
+- [[dot-pg()_1]] - degree 2, connects to 1 community

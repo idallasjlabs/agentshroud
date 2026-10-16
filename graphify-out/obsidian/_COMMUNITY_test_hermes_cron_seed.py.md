@@ -57,11 +57,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_run-standalone.sh (Hermes docker run launcher)]]
 - 2 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
 - 1 edge to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
+- 1 edge to [[_COMMUNITY_run-standalone.sh (Hermes docker run launcher)]]
+- 1 edge to [[_COMMUNITY_run-standalone.sh (Hermes docker run launcher)_1]]
 
 ## Top bridge nodes
 - [[init-config.sh (Hermes first-boot config materialisation)]] - degree 11, connects to 2 communities
 - [[_seed_cron]] - degree 8, connects to 1 community
-- [[Env-split cron reconciliation (AGENTSHROUD_PROD_CRON_KEEP)]] - degree 4, connects to 1 community
+- [[Env-split cron reconciliation (AGENTSHROUD_PROD_CRON_KEEP)]] - degree 3, connects to 1 community

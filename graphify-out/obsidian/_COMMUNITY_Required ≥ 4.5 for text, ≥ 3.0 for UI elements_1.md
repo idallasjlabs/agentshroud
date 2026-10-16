@@ -22,7 +22,7 @@ members: 19
 - [[HTML  CSS Brand Variables_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
 - [[Patterns by Output Type_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
 - [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
-- [[Role_52]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[Role_51]] - document - docker/config/hermes/skills/i-bs/SKILL.md
 - [[Rules_18]] - document - docker/config/hermes/skills/i-bs/SKILL.md
 - [[Skill Branding Specialist (BS)_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
 - [[Typography Scale_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md

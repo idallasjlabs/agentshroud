@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.25
+members: 8
 ---
 
 # Error Index.md
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[Fallback Behavior]] - document - docs/vault/05 - Dependencies/spacy.md
-- [[First-Boot Performance]] - document - docs/vault/05 - Dependencies/spacy.md
-- [[Model]] - document - docs/vault/05 - Dependencies/spacy.md
-- [[Purpose_10]] - document - docs/vault/05 - Dependencies/spacy.md
-- [[Related Notes_14]] - document - docs/vault/05 - Dependencies/spacy.md
-- [[Where Used_3]] - document - docs/vault/05 - Dependencies/spacy.md
-- [[spaCy]] - document - docs/vault/05 - Dependencies/spacy.md
+- [[HTTP 400 — Unknown MCP Server]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[HTTP 403 — MCP Tool Permission Denied]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[HTTP 429 — MCP Rate Limit Exceeded]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[HTTP 502 — MCP Server Unreachable]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[MCP Proxy Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[MCP Proxy Errors]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[MCP Proxy Wrapper Issues (Bot Side)]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[Related Notes_6]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,4 +30,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Error Index]]
 
 ## Top bridge nodes
-- [[spaCy]] - degree 7, connects to 1 community
+- [[MCP Proxy Errors]] - degree 2, connects to 1 community

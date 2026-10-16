@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-test_raw_web_fetch_json_url_with_backslashes_does_not_queue_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Backslash-containing URLs should be rejected to avoid parser confusion.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_is_rewritten_to_actionable_guidance()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Pure web_fetch tool-call JSON should be rewritten to user guidance.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +21,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy_7]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_5]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
 
 ## Top bridge nodes
-- [[dot-test_raw_web_fetch_json_url_with_backslashes_does_not_queue_approval()]] - degree 4, connects to 1 community
+- [[dot-test_raw_web_fetch_json_is_rewritten_to_actionable_guidance()]] - degree 4, connects to 3 communities

@@ -20,7 +20,7 @@ members: 13
 - [[Related Skills_117]] - document - docker/config/openclaw/skills/i-oracle/README.md
 - [[Role_87]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
 - [[System Prompt_14]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
-- [[Usage_126]] - document - docker/config/openclaw/skills/i-oracle/README.md
+- [[Usage_127]] - document - docker/config/openclaw/skills/i-oracle/README.md
 - [[openclawskillsi-oracleREADME]] - document - docker/config/openclaw/skills/i-oracle/README.md
 - [[openclawskillsi-oracleSKILL]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
 

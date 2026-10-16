@@ -10,9 +10,9 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_31]] - document - docker/config/hermes/skills/i-icloud/README.md
-- [[Related Skills_17]] - document - docker/config/hermes/skills/i-icloud/README.md
-- [[Usage_21]] - document - docker/config/hermes/skills/i-icloud/README.md
+- [[Purpose_21]] - document - docker/config/hermes/skills/i-icloud/README.md
+- [[Related Skills_10]] - document - docker/config/hermes/skills/i-icloud/README.md
+- [[Usage_13]] - document - docker/config/hermes/skills/i-icloud/README.md
 - [[hermesskillsi-icloudREADME]] - document - docker/config/hermes/skills/i-icloud/README.md
 - [[iCloud Data Manager (ICLOUD)_1]] - document - docker/config/hermes/skills/i-icloud/README.md
 

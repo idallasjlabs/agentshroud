@@ -1,58 +1,38 @@
 ---
 type: community
-cohesion: 0.05
-members: 43
+cohesion: 0.09
+members: 23
 ---
 
 # TestPathIsolationManager
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 43 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 23 nodes
 
 ## Members
-- [[dot-config()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-manager()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-temp_dir()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_allow_own_namespace_access()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_already_isolated_paths_not_rewritten()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_block_base_directory_access()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_block_cross_user_access()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_cleanup_abandoned_directories()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_dont_cleanup_active_user_directories()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_end_user_session()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_get_active_users()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_get_stats()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_get_user_temp_path()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_global_stats()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[dot-test_global_stats()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[dot-test_initialization()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_path_rewriting_nested_paths()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_path_rewriting_no_rewrite_needed()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_path_rewriting_temp_files()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_register_user_session()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_user_id_sanitization()]] - code - gateway/tests/test_path_isolation.py
-- [[Create path isolation manager for testing.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Create temporary directory for testing.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Create test configuration.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test allowing access to own namespace.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test blocking cross-user namespace access.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test blocking direct access to base agentshroud directory.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test cleanup of abandoned user directories.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test ending user session.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test getting active users.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test getting global statistics.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test getting statistics.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test getting user temp path.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test manager initialization.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test path isolation manager.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test path rewriting for tmp files.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test path rewriting for nested tmp paths.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test paths that don't need rewriting.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test that active user directories are not cleaned up.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test that already isolated paths are not double-rewritten.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test user ID sanitization.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test user session registration.]] - rationale - gateway/tests/test_path_isolation.py
-- [[TestPathIsolationManager]] - code - gateway/tests/test_path_isolation.py
+- [[dot-setup_method()_36]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_base64_encoded_injection()_2]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_benign_base64()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_clean_input()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_combined_attack_high_score()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_custom_pattern()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_dan_jailbreak()_1]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_delimiter_injection()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_empty_input()_3]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_forget_everything()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_ignore_instructions()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_indirect_injection()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_new_instructions_override()_1]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_none_input()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_prompt_extraction()_1]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_prompt_leak_question()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_role_reassignment()_2]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_rtl_override()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_sanitized_output()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_unicode_zero_width()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_warn_threshold()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_xml_tag_injection()_1]] - code - gateway/tests/test_security_hardening.py
+- [[TestPromptGuard_1]] - code - gateway/tests/test_security_hardening.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -62,13 +42,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_MultiTurnTracker]]
-- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 6 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 4 edges to [[_COMMUNITY_ContextSegment]]
+- 3 edges to [[_COMMUNITY_AgentRegistry]]
+- 3 edges to [[_COMMUNITY_TrustConfig]]
+- 2 edges to [[_COMMUNITY_AlertDispatcher]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor_1]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig_1]]
+- 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py_1]]
+- 1 edge to [[_COMMUNITY_AuditChain]]
 
 ## Top bridge nodes
-- [[TestPathIsolationManager]] - degree 24, connects to 1 community
-- [[dot-config()]] - degree 3, connects to 1 community
-- [[dot-manager()]] - degree 3, connects to 1 community
-- [[dot-test_global_stats()_1]] - degree 3, connects to 1 community
-- [[dot-test_global_stats()]] - degree 2, connects to 1 community
+- [[TestPromptGuard_1]] - degree 40, connects to 9 communities
+- [[dot-test_custom_pattern()]] - degree 3, connects to 2 communities
+- [[dot-setup_method()_36]] - degree 2, connects to 1 community
+- [[dot-test_warn_threshold()]] - degree 2, connects to 1 community

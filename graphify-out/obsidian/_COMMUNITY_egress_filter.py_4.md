@@ -1,22 +1,25 @@
 ---
 type: community
 cohesion: 0.29
-members: 7
+members: 10
 ---
 
 # egress_filter.py
 
 **Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[Current Status_2]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Description_2]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Gateway Proxy Port]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[HTTP_PROXY  HTTPS_PROXY]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Related Notes_10]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Value_1]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[When Enabled]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
+- [[dot-test_empty_returns_none()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-test_handles_four_component_tags()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-test_picks_newest_date_tag()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-test_real_hermes_tail_picks_latest_date()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-test_rejects_floating_tags()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[Hermes publishes date-based image tags (vYYYY.M.D).]] - rationale - gateway/tests/test_discover_upstream_versions.py
+- [[Newest ``vYYYY.M.D`` Docker tag, ignoring floating tags. 'latest' and 'main'…]] - rationale - scripts/discover_upstream_versions.py
+- [[TestPickLatestHermesTag]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[latest''main' float and would defeat the whole point of pinning.]] - rationale - gateway/tests/test_discover_upstream_versions.py
+- [[pick_latest_hermes_tag()]] - code - scripts/discover_upstream_versions.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +29,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_egress_filter.py_2]]
+- 3 edges to [[_COMMUNITY_discover_upstream_versions.py]]
 
 ## Top bridge nodes
-- [[HTTP_PROXY  HTTPS_PROXY]] - degree 7, connects to 1 community
+- [[pick_latest_hermes_tag()]] - degree 8, connects to 1 community
+- [[TestPickLatestHermesTag]] - degree 7, connects to 1 community

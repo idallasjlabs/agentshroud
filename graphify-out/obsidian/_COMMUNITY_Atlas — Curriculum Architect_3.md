@@ -1,20 +1,22 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.29
+members: 7
 ---
 
 # Atlas — Curriculum Architect
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[dot-agentsskillsi-atlasREADME]] - document - .agents/skills/i-atlas/README.md
-- [[Atlas — Curriculum Architect]] - document - .agents/skills/i-atlas/README.md
-- [[Purpose_17]] - document - .agents/skills/i-atlas/README.md
-- [[Related Skills_3]] - document - .agents/skills/i-atlas/README.md
-- [[Usage_7]] - document - .agents/skills/i-atlas/README.md
+- [[dockerscripts README]] - document - docker/scripts/README.md
+- [[drift-detector.sh (planned)]] - concept - scripts/README.md
+- [[memory-scrubber.py (planned)]] - concept - scripts/README.md
+- [[security-audit.sh (planned)]] - concept - scripts/README.md
+- [[skill-scanner.sh (planned)]] - concept - scripts/README.md
+- [[test-network-isolation.sh (planned)]] - concept - scripts/README.md
+- [[test-pii-sanitization.sh (planned)]] - concept - scripts/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_OpenClaw Management Scripts]]
 
 ## Top bridge nodes
-- [[Atlas — Curriculum Architect]] - degree 5, connects to 1 community
+- [[dockerscripts README]] - degree 7, connects to 1 community

@@ -15,9 +15,9 @@ members: 9
 - [[dot-test_four_zero_failures_stale_report()]] - code - gateway/tests/test_scorecard_scoring.py
 - [[dot-test_max_capped_at_five()]] - code - gateway/tests/test_scorecard_scoring.py
 - [[dot-test_two_with_failures()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[dot-test_zero_when_not_run()_1]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_zero_when_not_run()]] - code - gateway/tests/test_scorecard_scoring.py
 - [[Like _mock_dir_with_files but mtime is now (fresh).]] - rationale - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreComplianceAuditing_1]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreComplianceAuditing]] - code - gateway/tests/test_scorecard_scoring.py
 - [[_mock_dir_with_fresh_files()]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
@@ -36,7 +36,7 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[_mock_dir_with_fresh_files()]] - degree 8, connects to 4 communities
-- [[TestScoreComplianceAuditing_1]] - degree 6, connects to 2 communities
+- [[TestScoreComplianceAuditing]] - degree 6, connects to 2 communities
 - [[dot-test_four_zero_failures_stale_report()]] - degree 2, connects to 1 community
 - [[dot-test_max_capped_at_five()]] - degree 2, connects to 1 community
 - [[dot-test_five_clean_and_fresh()]] - degree 2, connects to 1 community

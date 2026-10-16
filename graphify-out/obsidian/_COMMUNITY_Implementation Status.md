@@ -17,7 +17,7 @@ members: 23
 - [[Credential Security Policy]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
 - [[Emergency Override]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
 - [[FAQ_1]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Implementation Status]] - document - browser-extension/README.md
+- [[Implementation Status_2]] - document - browser-extension/README.md
 - [[Implementation Strategy]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
 - [[Option 1 Gateway-Level Filtering]] - rationale - docs/security/CREDENTIAL-SECURITY-POLICY.md
 - [[Option 1 Gateway-Level Filtering (Recommended)]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
@@ -42,15 +42,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_DataLedger]]
 - 1 edge to [[_COMMUNITY_CREDENTIAL-PROTECTION-IMPLEMENTED]]
+- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
 - 1 edge to [[_COMMUNITY_ADR-001 Transparent Proxy vs Agent Modification]]
 - 1 edge to [[_COMMUNITY_Browser Extension]]
-- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised_1]]
-- 1 edge to [[_COMMUNITY_AgentTarget]]
+- 1 edge to [[_COMMUNITY_BotConfig_1]]
+- 1 edge to [[_COMMUNITY_AgentTarget_1]]
 - 1 edge to [[_COMMUNITY_Security Modules (58)]]
 
 ## Top bridge nodes
 - [[CREDENTIAL-SECURITY-POLICY]] - degree 9, connects to 4 communities
-- [[Implementation Status]] - degree 11, connects to 2 communities
+- [[Implementation Status_2]] - degree 11, connects to 2 communities
 - [[Access Control (7)]] - degree 2, connects to 1 community

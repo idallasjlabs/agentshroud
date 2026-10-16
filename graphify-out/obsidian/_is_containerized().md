@@ -12,7 +12,7 @@ tags:
 # _is_containerized()
 
 ## Connections
-- [[Path_51]] - `calls` [EXTRACTED]
+- [[Path_26]] - `calls` [EXTRACTED]
 - [[Return True if running inside a Docker container (.dockerenv present).]] - `rationale_for` [EXTRACTED]
 - [[_score_docker_daemon_config()]] - `calls` [EXTRACTED]
 - [[_score_host_os_hardening()]] - `calls` [EXTRACTED]

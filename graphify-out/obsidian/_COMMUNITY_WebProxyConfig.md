@@ -1,18 +1,17 @@
 ---
 type: community
 cohesion: 0.03
-members: 113
+members: 111
 ---
 
 # WebProxyConfig
 
 **Cohesion:** 0.03 - loosely connected
-**Members:** 113 nodes
+**Members:** 111 nodes
 
 ## Members
-- [[NOTE api.telegram.org is intentionally NOT listed here.  The bot is]] - rationale - gateway/proxy/http_proxy.py
-- [[dot-__init__()_6]] - code - gateway/proxy/web_proxy.py
-- [[dot-__init__()_105]] - code - gateway/proxy/http_proxy.py
+- [[dot-__init__()_7]] - code - gateway/proxy/web_proxy.py
+- [[dot-__init__()_109]] - code - gateway/proxy/http_proxy.py
 - [[dot-allowlist_config()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-allowlist_proxy()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-check()]] - code - gateway/proxy/web_proxy.py
@@ -25,7 +24,7 @@ members: 113
 - [[dot-test_base64_encoded_injection_in_html()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_base64_in_query_flagged()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_base64_in_url_path_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_case_insensitive()_1]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_case_insensitive()_3]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_clean_comment_not_flagged()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_clean_content_no_injection()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_custom_denylist()_1]] - code - gateway/tests/test_web_proxy.py
@@ -67,7 +66,7 @@ members: 113
 - [[dot-test_rate_limiter_reset()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_role_override_detected()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_single_zwc_not_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_ssn_in_url_flagged()_1]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_ssn_in_url_flagged()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_ssrf_blocked_before_allowlist_check()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_stackoverflow_passes()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_stats_tracked()]] - code - gateway/tests/test_web_proxy.py
@@ -102,10 +101,10 @@ members: 113
 - [[TestEncodedPayloads]] - code - gateway/tests/test_web_proxy.py
 - [[TestHiddenContent]] - code - gateway/tests/test_web_proxy.py
 - [[TestIsDomainAllowed]] - code - gateway/tests/test_web_proxy.py
-- [[TestPIIDetection_1]] - code - gateway/tests/test_web_proxy.py
+- [[TestPIIDetection_2]] - code - gateway/tests/test_web_proxy.py
 - [[TestPassthroughMode]] - code - gateway/tests/test_web_proxy.py
 - [[TestPromptInjectionDetection]] - code - gateway/tests/test_web_proxy.py
-- [[TestRateLimiting_1]] - code - gateway/tests/test_web_proxy.py
+- [[TestRateLimiting_2]] - code - gateway/tests/test_web_proxy.py
 - [[TestResponseSizeLimits]] - code - gateway/tests/test_web_proxy.py
 - [[TestStats_1]] - code - gateway/tests/test_web_proxy.py
 - [[TestWebProxyConfig]] - code - gateway/tests/test_web_proxy.py
@@ -113,16 +112,15 @@ members: 113
 - [[Unit tests for WebProxyConfig.is_domain_allowed().]] - rationale - gateway/tests/test_web_proxy.py
 - [[WebProxy_1]] - code - gateway/proxy/http_proxy.py
 - [[WebProxyConfig_1]] - code - gateway/proxy/web_config.py
-- [[config()_2]] - code - gateway/tests/test_web_proxy.py
+- [[audit_chain()]] - code - gateway/tests/test_web_proxy.py
+- [[config()_3]] - code - gateway/tests/test_web_proxy.py
 - [[hc-ping.com must be egress-allowlisted or Hermes dead-man's-switch heartbeat fires permanently]] - rationale - gateway/tests/test_heartbeat_egress.py
-- [[http_proxy.py]] - code - gateway/proxy/http_proxy.py
 - [[passthrough_proxy()]] - code - gateway/tests/test_web_proxy.py
-- [[proxy()_2]] - code - gateway/tests/test_web_proxy.py
+- [[proxy()_1]] - code - gateway/tests/test_web_proxy.py
 - [[test_hc_ping_allowed()]] - code - gateway/tests/test_heartbeat_egress.py
 - [[test_hc_ping_subdomain_not_blocked()]] - code - gateway/tests/test_heartbeat_egress.py
 - [[test_heartbeat_egress.py]] - code - gateway/tests/test_heartbeat_egress.py
 - [[test_web_proxy.py]] - code - gateway/tests/test_web_proxy.py
-- [[web_config.py]] - code - gateway/proxy/web_config.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -132,28 +130,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 37 edges to [[_COMMUNITY_WebProxy]]
-- 18 edges to [[_COMMUNITY_ProxyAction]]
-- 17 edges to [[_COMMUNITY_AuditChain]]
-- 11 edges to [[_COMMUNITY_HTTPConnectProxy]]
-- 4 edges to [[_COMMUNITY_ProxyAction_1]]
-- 4 edges to [[_COMMUNITY_WebProxyConfig_1]]
-- 4 edges to [[_COMMUNITY_AgentRegistry]]
-- 4 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 47 edges to [[_COMMUNITY_ProxyAction]]
+- 17 edges to [[_COMMUNITY_PipelineAction]]
+- 10 edges to [[_COMMUNITY_HTTPConnectProxy]]
+- 10 edges to [[_COMMUNITY_WebProxy]]
+- 4 edges to [[_COMMUNITY_WebProxyConfig_2]]
+- 3 edges to [[_COMMUNITY_TestSSRFDetection]]
 - 3 edges to [[_COMMUNITY__DummyTargetWriter]]
-- 2 edges to [[_COMMUNITY_WebContentScanner]]
 - 2 edges to [[_COMMUNITY_dot-_process_connect]]
-- 1 edge to [[_COMMUNITY_DataLedger]]
-- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 1 edge to [[_COMMUNITY_parse_clamscan_output]]
-- 1 edge to [[_COMMUNITY_telegram_proxy.py_1]]
-- 1 edge to [[_COMMUNITY_egress_filter.py_2]]
-- 1 edge to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]]
-- 1 edge to [[_COMMUNITY_TestSSRFDetection_4]]
+- 1 edge to [[_COMMUNITY_WebContentScanner]]
+- 1 edge to [[_COMMUNITY_PIIConfig]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 1 edge to [[_COMMUNITY_egress_filter.py]]
 
 ## Top bridge nodes
-- [[http_proxy.py]] - degree 16, connects to 10 communities
-- [[WebProxyConfig_1]] - degree 73, connects to 7 communities
-- [[test_web_proxy.py]] - degree 27, connects to 5 communities
-- [[RateLimiter]] - degree 26, connects to 5 communities
-- [[TestDataExfiltration]] - degree 11, connects to 4 communities
+- [[WebProxyConfig_1]] - degree 73, connects to 10 communities
+- [[test_web_proxy.py]] - degree 27, connects to 3 communities
+- [[RateLimiter]] - degree 26, connects to 3 communities
+- [[DomainSettings]] - degree 24, connects to 3 communities
+- [[TestDataExfiltration]] - degree 11, connects to 3 communities

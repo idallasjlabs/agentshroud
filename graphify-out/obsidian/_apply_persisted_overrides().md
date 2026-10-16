@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "RBACConfig"
+community: "telegram_proxy.py"
 location: "L198"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/telegram_proxypy
 ---
 
 # _apply_persisted_overrides()
 
 ## Connections
-- [[dot-model_post_init()]] - `calls` [EXTRACTED]
+- [[dot-model_post_init()_1]] - `calls` [EXTRACTED]
 - [[GroupConfig]] - `calls` [EXTRACTED]
 - [[Merge group_overrides.json additions into the in-memory TeamsConfig.]] - `rationale_for` [EXTRACTED]
 - [[TeamsConfig_2]] - `references` [EXTRACTED]
 - [[group_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

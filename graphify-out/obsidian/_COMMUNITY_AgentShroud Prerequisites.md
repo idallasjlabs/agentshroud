@@ -16,10 +16,10 @@ members: 26
 - [[Annually]] - document - docs/reference/PREREQUISITES.md
 - [[Base Images]] - document - docs/reference/PREREQUISITES.md
 - [[Common Issues_2]] - document - docs/reference/PREREQUISITES.md
-- [[Configuration_5]] - document - docs/reference/PREREQUISITES.md
+- [[Configuration_7]] - document - docs/reference/PREREQUISITES.md
 - [[Monthly]] - document - docs/reference/PREREQUISITES.md
 - [[Network Security]] - document - docs/reference/PREREQUISITES.md
-- [[Overview_10]] - document - docs/reference/PREREQUISITES.md
+- [[Overview_12]] - document - docs/reference/PREREQUISITES.md
 - [[Quarterly]] - document - docs/reference/PREREQUISITES.md
 - [[Secrets Management]] - document - docs/reference/PREREQUISITES.md
 - [[Software]] - document - docs/reference/PREREQUISITES.md

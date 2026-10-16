@@ -12,9 +12,9 @@ tags:
 # _StreamResp
 
 ## Connections
-- [[dot-__enter__()_3]] - `method` [EXTRACTED]
-- [[dot-__exit__()_3]] - `method` [EXTRACTED]
-- [[dot-__init__()_108]] - `method` [EXTRACTED]
+- [[dot-__enter__()_1]] - `method` [EXTRACTED]
+- [[dot-__exit__()_1]] - `method` [EXTRACTED]
+- [[dot-__init__()_32]] - `method` [EXTRACTED]
 - [[dot-iter_bytes()_1]] - `method` [EXTRACTED]
 - [[dot-test_2xx_with_body_is_proven()]] - `calls` [EXTRACTED]
 - [[dot-test_empty_body_is_not_proven()]] - `calls` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[dot-test_redirect_is_not_proven()]] - `calls` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[Fake httpx.stream context manager yielding a body in chunks.]] - `rationale_for` [EXTRACTED]
-- [[FetchOutcome_1]] - `uses` [INFERRED]
+- [[FetchOutcome]] - `uses` [INFERRED]
 - [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FetchOutcome

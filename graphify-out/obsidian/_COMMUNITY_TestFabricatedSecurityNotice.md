@@ -1,43 +1,66 @@
 ---
 type: community
-cohesion: 0.10
-members: 28
+cohesion: 0.04
+members: 51
 ---
 
 # TestFabricatedSecurityNotice
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 28 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 51 nodes
 
 ## Members
-- [[dot-_has_fabricated_match()]] - code - gateway/tests/test_outbound_filter.py
-- [[dot-setup_method()_21]] - code - gateway/tests/test_outbound_filter.py
-- [[dot-test_blocked_unauthorized_command()]] - code - gateway/tests/test_outbound_filter.py
-- [[dot-test_blocking_suspicious_code_execution()]] - code - gateway/tests/test_outbound_filter.py
-- [[dot-test_case_insensitive()_2]] - code - gateway/tests/test_outbound_filter.py
-- [[dot-test_category_is_operational()]] - code - gateway/tests/test_outbound_filter.py
-- [[dot-test_continues_blocking()]] - code - gateway/tests/test_outbound_filter.py
-- [[dot-test_exact_past_tense()]] - code - gateway/tests/test_outbound_filter.py
-- [[dot-test_flagging_form()]] - code - gateway/tests/test_outbound_filter.py
-- [[dot-test_legitimate_responses_not_matched()]] - code - gateway/tests/test_outbound_filter.py
-- [[dot-test_possessive_flagging()]] - code - gateway/tests/test_outbound_filter.py
-- [[dot-test_present_tense()]] - code - gateway/tests/test_outbound_filter.py
-- [[dot-test_prevents_form()]] - code - gateway/tests/test_outbound_filter.py
-- [[dot-test_progressive_tense()]] - code - gateway/tests/test_outbound_filter.py
-- [[dot-test_redaction_applied()]] - code - gateway/tests/test_outbound_filter.py
-- [[Matched text is replaced with RESPONSE_FILTERED.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Normal helpful responses must NOT trigger the pattern.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Original pattern exact past-tense form.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Pattern is case-insensitive.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Pattern is in the OPERATIONAL category.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Possessive form AGENTSHROUD's behavioral analysis flagging.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Standalone 'blocked unauthorized command execution' without AGENTSHROUD prefix.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[Test cases for the widened fabricated_security_notice pattern.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[TestFabricatedSecurityNotice]] - code - gateway/tests/test_outbound_filter.py
-- [[blocking suspicious code execution' variant.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[blocking' continuous form.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[continues blocking' — adverb + gerund form.]] - rationale - gateway/tests/test_outbound_filter.py
-- [[flagging' gerund form.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[dot-middleware_manager()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-temp_workspace()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-temp_workspace()_1]] - code - gateway/tests/test_session_isolation.py
+- [[dot-temp_workspace()_2]] - code - gateway/tests/test_session_isolation.py
+- [[dot-temp_workspace()_3]] - code - gateway/tests/test_session_isolation.py
+- [[dot-test_conversation_history_isolation()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-test_memory_file_isolation()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-test_middleware_cross_session_blocking()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-test_middleware_file_path_isolation()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-test_middleware_normalizes_invisible_unicode()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-test_middleware_own_workspace_allowed()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-test_middleware_owner_bypass()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-test_middleware_session_context_injection()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-test_middleware_user_identification()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-test_multi_turn_block_reason_hides_score()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-test_owner_access_control()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-test_session_context_generation()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-test_session_creation()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-test_session_isolation_directories()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-test_session_listing_authorization()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-test_session_prompt_isolation()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-test_trust_level_per_user()]] - code - gateway/tests/test_session_isolation.py
+- [[Blocked multi-turn sessions should not disclose scoring details.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Create a temporary workspace for testing.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Create a temporary workspace.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Create middleware manager with session isolation.]] - rationale - gateway/tests/test_session_isolation.py
+- [[End-to-end integration tests for session isolation.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Input normalization should strip zero-width obfuscation before guards run.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test WebhookReceiver integration with session isolation.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test middleware enforcement of session boundaries.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that conversation histories are isolated per user.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that each user gets isolated directories.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that memory files are isolated per user.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that middleware blocks access to sensitive system files.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that middleware blocks cross-session access attempts.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that middleware injects session context.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that middleware requires user identification.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that owner can access all sessions.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that owner can perform cross-session actions.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that session context is properly generated.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that session listing respects authorization.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that session prompts include isolation instructions.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that trust levels are tracked per user.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that user sessions are created properly.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that users can access their own workspace.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test the UserSessionManager for per-user isolation.]] - rationale - gateway/tests/test_session_isolation.py
+- [[TestMiddlewareSessionEnforcement]] - code - gateway/tests/test_session_isolation.py
+- [[TestSessionIsolationEndToEnd]] - code - gateway/tests/test_session_isolation.py
+- [[TestUserSessionManager]] - code - gateway/tests/test_session_isolation.py
+- [[TestWebhookReceiverIntegration]] - code - gateway/tests/test_session_isolation.py
+- [[test_session_isolation.py]] - code - gateway/tests/test_session_isolation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,9 +70,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_TestFabricatedSecurityNotice_1]]
-- 2 edges to [[_COMMUNITY_AuditChain]]
+- 11 edges to [[_COMMUNITY_MiddlewareManager]]
+- 11 edges to [[_COMMUNITY_UserSessionManager_3]]
+- 8 edges to [[_COMMUNITY_test_dashboard_endpoints.py]]
+- 2 edges to [[_COMMUNITY_AsyncMock_1]]
 
 ## Top bridge nodes
-- [[TestFabricatedSecurityNotice]] - degree 19, connects to 2 communities
-- [[dot-setup_method()_21]] - degree 2, connects to 1 community
+- [[TestWebhookReceiverIntegration]] - degree 13, connects to 4 communities
+- [[TestUserSessionManager]] - degree 17, connects to 3 communities
+- [[TestMiddlewareSessionEnforcement]] - degree 16, connects to 3 communities
+- [[TestSessionIsolationEndToEnd]] - degree 10, connects to 3 communities
+- [[test_session_isolation.py]] - degree 8, connects to 3 communities

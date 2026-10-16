@@ -1,27 +1,34 @@
 ---
 type: community
-cohesion: 0.20
-members: 12
+cohesion: 0.11
+members: 19
 ---
 
 # test_runtime_engines.py
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 12 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 19 nodes
 
 ## Members
-- [[dot-ps()]] - code - gateway/runtime/apple_engine.py
-- [[dot-ps()_1]] - code - gateway/runtime/docker_engine.py
-- [[dot-ps()_2]] - code - gateway/runtime/engine.py
-- [[dot-ps()_3]] - code - gateway/runtime/podman_engine.py
-- [[dot-test_defaults()_2]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_with_data()]] - code - gateway/tests/test_runtime_engines.py
-- [[ContainerInfo]] - code - gateway/runtime/apple_engine.py
-- [[ContainerInfo_1]] - code - gateway/runtime/docker_engine.py
-- [[ContainerInfo_2]] - code - gateway/runtime/podman_engine.py
-- [[ContainerInfo_3]] - code - gateway/runtime/engine.py
-- [[Lightweight container metadata returned by psinspect.]] - rationale - gateway/runtime/engine.py
-- [[TestContainerInfo]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_is_high_risk_false_for_web_search()]] - code - gateway/tests/test_group_rbac.py
+- [[dot-test_is_high_risk_true_for_email_sending()]] - code - gateway/tests/test_group_rbac.py
+- [[dot-test_is_high_risk_true_for_external_api_calls()]] - code - gateway/tests/test_group_rbac.py
+- [[dot-test_is_high_risk_true_for_file_deletion()]] - code - gateway/tests/test_group_rbac.py
+- [[dot-test_is_high_risk_true_for_skill_installation()]] - code - gateway/tests/test_group_rbac.py
+- [[dot-test_member_resolves_to_member_role()]] - code - gateway/tests/test_group_rbac.py
+- [[dot-test_non_member_defaults_to_readonly()]] - code - gateway/tests/test_group_rbac.py
+- [[dot-test_owner_resolves_to_owner_role()]] - code - gateway/tests/test_group_rbac.py
+- [[dot-test_readonly_user_resolves_to_readonly_role()]] - code - gateway/tests/test_group_rbac.py
+- [[dot-test_unknown_group_defaults_to_readonly()]] - code - gateway/tests/test_group_rbac.py
+- [[GroupRoleResolver correctly maps Telegram user IDs to per-group roles.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Read-only user resolves to GroupRole.READ_ONLY.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Regular member resolves to GroupRole.MEMBER.]] - rationale - gateway/tests/test_group_rbac.py
+- [[TestGroupRoleResolver]] - code - gateway/tests/test_group_rbac.py
+- [[Unknown group_chat_id defaults to GroupRole.READ_ONLY.]] - rationale - gateway/tests/test_group_rbac.py
+- [[User not in role map defaults to GroupRole.READ_ONLY (deny-by-default).]] - rationale - gateway/tests/test_group_rbac.py
+- [[email_sending is recognized as a high-risk tool.]] - rationale - gateway/tests/test_group_rbac.py
+- [[owner_in_group resolves to GroupRole.OWNER.]] - rationale - gateway/tests/test_group_rbac.py
+- [[web_search is NOT a high-risk tool.]] - rationale - gateway/tests/test_group_rbac.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,23 +38,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_test_runtime_engines.py]]
-- 5 edges to [[_COMMUNITY_PodmanEngine]]
-- 5 edges to [[_COMMUNITY_RuntimeConfig]]
-- 4 edges to [[_COMMUNITY_ContainerEngine]]
-- 4 edges to [[_COMMUNITY_DockerEngine]]
-- 4 edges to [[_COMMUNITY_AppleContainerEngine]]
-- 1 edge to [[_COMMUNITY_test_runtime_engines.py_2]]
-- 1 edge to [[_COMMUNITY_TestInstallerAPI]]
-- 1 edge to [[_COMMUNITY_TestDockerEngine]]
-- 1 edge to [[_COMMUNITY_TestSecurityFeatures]]
-- 1 edge to [[_COMMUNITY_TestWebAPI]]
-- 1 edge to [[_COMMUNITY_TestAppleContainerEngine]]
-- 1 edge to [[_COMMUNITY_get_engine]]
+- 3 edges to [[_COMMUNITY_GroupRoleResolver]]
+- 2 edges to [[_COMMUNITY_RBACConfig_1]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
 
 ## Top bridge nodes
-- [[ContainerInfo_3]] - degree 31, connects to 12 communities
-- [[TestContainerInfo]] - degree 8, connects to 4 communities
-- [[ContainerInfo]] - degree 3, connects to 1 community
-- [[ContainerInfo_1]] - degree 3, connects to 1 community
-- [[ContainerInfo_2]] - degree 3, connects to 1 community
+- [[TestGroupRoleResolver]] - degree 18, connects to 4 communities

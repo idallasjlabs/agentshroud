@@ -13,7 +13,7 @@ members: 17
 - [[Configuration  Environment Variables_5]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
 - [[Function Details_12]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
 - [[Key Classes  Functions_13]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[Purpose_116]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Purpose_113]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
 - [[Related_17]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
 - [[Responsibilities_15]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
 - [[SessionManager.__init__(max_session_age, max_sessions_per_ip, rate_limit_window)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
@@ -24,9 +24,9 @@ members: 17
 - [[SessionManager.rotate_session(old_session_id, ip, user_agent)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
 - [[SessionManager.validate_event(session_id, source, event)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
 - [[SessionManager.validate_session(session_id, ip, user_agent)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[Threat Model_12]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Threat Model_13]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[session_security.py_2]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
 - [[session_security.py_1]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[session_security.py]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.29
+members: 7
 ---
 
 # TestSSRFDetection
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[dot-test_credit_card_in_url_flagged()]] - code - gateway/tests/test_url_analyzer.py
-- [[dot-test_email_in_url_flagged()]] - code - gateway/tests/test_url_analyzer.py
-- [[dot-test_phone_in_url_flagged()]] - code - gateway/tests/test_url_analyzer.py
-- [[dot-test_ssn_in_url_flagged()]] - code - gateway/tests/test_url_analyzer.py
-- [[PII detection in URLs — flagged, not blocked.]] - rationale - gateway/tests/test_url_analyzer.py
-- [[TestPIIInURLs]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-load_all()]] - code - gateway/approval_queue/store.py
+- [[dot-load_pending()]] - code - gateway/approval_queue/store.py
+- [[dot-save()]] - code - gateway/approval_queue/store.py
+- [[ApprovalQueueItem]] - code - gateway/approval_queue/store.py
+- [[Insert or replace an approval item.]] - rationale - gateway/approval_queue/store.py
+- [[Load all items (for auditdebugging).]] - rationale - gateway/approval_queue/store.py
+- [[Load all pending (non-expired, non-decided) items.          Items whose expires_]] - rationale - gateway/approval_queue/store.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,8 +26,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_TestSSRFDetection_2]]
-- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 3 edges to [[_COMMUNITY_ApprovalQueueConfig_1]]
 
 ## Top bridge nodes
-- [[TestPIIInURLs]] - degree 8, connects to 2 communities
+- [[dot-load_all()]] - degree 3, connects to 1 community
+- [[dot-load_pending()]] - degree 3, connects to 1 community
+- [[dot-save()]] - degree 3, connects to 1 community

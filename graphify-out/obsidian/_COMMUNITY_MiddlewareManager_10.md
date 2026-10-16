@@ -1,17 +1,22 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.33
+members: 7
 ---
 
 # MiddlewareManager
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[dot-test_memory_write_validation()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[Test validation before writing to memory files.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[dot-get_integrity_status()]] - code - gateway/security/memory_integrity.py
+- [[dot-get_recent_alerts()]] - code - gateway/security/memory_integrity.py
+- [[dot-to_dict()_1]] - code - gateway/security/memory_integrity.py
+- [[Any_7]] - code - gateway/security/memory_integrity.py
+- [[Convert to dictionary for JSON serialization.]] - rationale - gateway/security/memory_integrity.py
+- [[Get alerts from the last N hours.]] - rationale - gateway/security/memory_integrity.py
+- [[Get current integrity monitoring status.]] - rationale - gateway/security/memory_integrity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +26,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_MiddlewareManager_3]]
+- 5 edges to [[_COMMUNITY_MiddlewareManager_5]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager_7]]
 
 ## Top bridge nodes
-- [[dot-test_memory_write_validation()]] - degree 2, connects to 1 community
+- [[dot-to_dict()_1]] - degree 4, connects to 2 communities
+- [[Any_7]] - degree 5, connects to 1 community
+- [[dot-get_integrity_status()]] - degree 4, connects to 1 community
+- [[dot-get_recent_alerts()]] - degree 4, connects to 1 community

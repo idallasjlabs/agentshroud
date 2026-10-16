@@ -1,13 +1,13 @@
 ---
 type: community
 cohesion: 0.10
-members: 22
+members: 23
 ---
 
 # Kill Switch
 
 **Cohesion:** 0.10 - loosely connected
-**Members:** 22 nodes
+**Members:** 23 nodes
 
 ## Members
 - [[AgentShroud Security Scripts Reference]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
@@ -25,10 +25,11 @@ members: 22
 - [[PrometheusGrafana]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[SECURITY_SCRIPTS_REFERENCE]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[Script Permissions]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Troubleshooting_26]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Troubleshooting_27]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[VERIFICATION_RESULTS]] - document - docs/security/VERIFICATION_RESULTS.md
 - [[Weekly Compliance Scan (cron)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[killswitch.sh doesn't confirm]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[scan.sh_1]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[scan.sh]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[scan.sh reports missing OpenSCAP]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[verify-security.sh]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[verify-security.sh fails]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
@@ -41,11 +42,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised_1]]
 - 1 edge to [[_COMMUNITY_AgentShroud Security Architecture]]
 - 1 edge to [[_COMMUNITY_DOCKER-VPN-NETWORKING]]
 - 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
+- 1 edge to [[_COMMUNITY_Phase 3A3B Implementation Verification Results]]
+- 1 edge to [[_COMMUNITY_Git History Purge Plan]]
+- 1 edge to [[_COMMUNITY_BotConfig_1]]
 
 ## Top bridge nodes
-- [[Kill Switch_1]] - degree 9, connects to 4 communities
-- [[verify-security.sh]] - degree 3, connects to 1 community
+- [[Kill Switch_1]] - degree 9, connects to 3 communities
+- [[VERIFICATION_RESULTS]] - degree 5, connects to 3 communities

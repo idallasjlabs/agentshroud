@@ -12,16 +12,16 @@ members: 15
 ## Members
 - [[ContainerConfig Defaults]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[Environment Variables_13]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Function Details_29]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Function Details_28]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[IsolationVerifier.generate_compose()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[IsolationVerifier.verify_network_isolation()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[IsolationVerifier.verify_shared_nothing()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[IsolationVerifier.verify_volume_isolation()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Key Classes  Functions_31]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Key Classes  Functions_30]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[Mode Enforce vs Monitor_9]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Purpose_150]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Related_35]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Responsibilities_33]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Purpose_147]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Related_34]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Responsibilities_32]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[Threat Model_18]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[agent_isolation.py_2]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[agent_isolation.py_1]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md

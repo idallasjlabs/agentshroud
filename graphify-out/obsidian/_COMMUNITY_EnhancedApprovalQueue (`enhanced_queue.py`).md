@@ -11,18 +11,18 @@ members: 15
 
 ## Members
 - [[Approval Queue]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Auto-Restart_1]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Crash Recovery_2]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Auto-Restart]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Crash Recovery_1]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
 - [[Data Integrity After Crash]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
 - [[Detecting a Crash]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
 - [[Graceful Shutdown_1]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
 - [[Kill Switch (Emergency Stop)]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Ledger Database_1]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Ledger Database]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
 - [[Manual Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
 - [[Normal Stop]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
 - [[OOM Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Related Notes_54]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Shutdown & Recovery_1]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Related Notes_29]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Shutdown & Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
 - [[Shutdown Sequence]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
 - [[State After Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
 
@@ -34,9 +34,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_main.py]]
 - 1 edge to [[_COMMUNITY_Audit Ledger (SHA-256 hash only)]]
+- 1 edge to [[_COMMUNITY_main.py]]
 
 ## Top bridge nodes
-- [[Shutdown & Recovery_1]] - degree 7, connects to 1 community
+- [[Shutdown & Recovery]] - degree 7, connects to 1 community
 - [[Data Integrity After Crash]] - degree 4, connects to 1 community

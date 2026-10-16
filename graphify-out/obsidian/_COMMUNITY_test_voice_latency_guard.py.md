@@ -38,7 +38,7 @@ members: 74
 - [[The full messages history (system + prior turns) is sent in the request body.]] - rationale - gateway/tests/test_voice_gateway.py
 - [[The module-level default flag is OFF unless VG_VOICE_NO_MEMORY is set.]] - rationale - gateway/tests/test_voice_latency_guard.py
 - [[True for a spoken READ of the current volume (what's the volume,     current]] - rationale - voice_gateway/server.py
-- [[WebSocket_4]] - code - voice_gateway/server.py
+- [[WebSocket_7]] - code - voice_gateway/server.py
 - [[When soft_threshold_s is omitted it is read from the module config at call time.]] - rationale - gateway/tests/test_voice_latency_guard.py
 - [[_State]] - code - voice_gateway/server.py
 - [[__main__.py]] - code - voice_gateway/__main__.py
@@ -55,7 +55,7 @@ members: 74
 - [[_parse_volume_command()]] - code - voice_gateway/server.py
 - [[_record_turn_latency()]] - code - voice_gateway/server.py
 - [[_send_state()]] - code - voice_gateway/server.py
-- [[_sse_body()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[_sse_body()_1]] - code - gateway/tests/test_voice_latency_guard.py
 - [[_voice_forward_metadata()]] - code - voice_gateway/server.py
 - [[_voice_system_message()]] - code - voice_gateway/server.py
 - [[_warm()]] - code - voice_gateway/server.py
@@ -94,10 +94,10 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 8 edges to [[_COMMUNITY_test_voice_gateway.py]]
-- 4 edges to [[_COMMUNITY_server.py]]
 - 4 edges to [[_COMMUNITY_test_voice_latency_guard.py_1]]
+- 4 edges to [[_COMMUNITY_server.py]]
 - 3 edges to [[_COMMUNITY_server.py_1]]
-- 2 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 2 edges to [[_COMMUNITY_TrustConfig]]
 - 1 edge to [[_COMMUNITY_stt.py]]
 - 1 edge to [[_COMMUNITY_tts.py]]
 

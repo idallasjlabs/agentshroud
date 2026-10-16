@@ -1,13 +1,13 @@
 ---
 type: community
-cohesion: 0.07
-members: 30
+cohesion: 0.05
+members: 37
 ---
 
 # Development Workflow: Read-Only Filesystem Strategy
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 30 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 37 nodes
 
 ## Members
 - [[1. What Needs to WRITE]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
@@ -18,6 +18,7 @@ members: 30
 - [[Current Recommendation]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
 - [[Currently Documented]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
 - [[Development Mode Script]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Development Workflow]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
 - [[Development Workflow Read-Only Filesystem Strategy]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
 - [[Emergency Rollback]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
 - [[Feature 1Password Integration]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
@@ -35,7 +36,13 @@ members: 30
 - [[Potentially Needed (Discovered During Testing)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
 - [[Pre-Lockdown Checklist]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
 - [[Read-Only Compatibility Checklist]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
-- [[Summary_10]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 1 Add Feature (read_only false)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 2 Document Write Paths]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 3 Test Read-Only Compatibility]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 4 Add Missing Mounts]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 5 Verify OS Immutability]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 6 Revert to Development if Needed]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Summary_8]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
 - [[Testing Procedure Read-Only Lockdown]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
 - [[The Challenge]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
 - [[What's Currently Writable (Development Mode)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
@@ -49,8 +56,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised_1]]
-- 1 edge to [[_COMMUNITY_Development Workflow Read-Only Filesystem Strategy_1]]
+- 2 edges to [[_COMMUNITY_BotConfig_1]]
 
 ## Top bridge nodes
-- [[Development Workflow Read-Only Filesystem Strategy]] - degree 14, connects to 2 communities
+- [[Development Workflow Read-Only Filesystem Strategy]] - degree 14, connects to 1 community

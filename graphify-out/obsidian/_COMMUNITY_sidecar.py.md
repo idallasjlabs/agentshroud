@@ -19,8 +19,8 @@ members: 11
 - [[Security Limitation Warning]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
 - [[SidecarScanner.get_stats()]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
 - [[SidecarScanner.scan(request)]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
-- [[sidecar.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
 - [[sidecar.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[sidecar.py]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -28,7 +28,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_test_anthropic_openai_translator.py_1]]
-- 1 edge to [[_COMMUNITY_AsyncMock]]
+- 1 edge to [[_COMMUNITY_AsyncMock_1]]
 
 ## Top bridge nodes
 - [[test_chat_completions_alias.py]] - degree 7, connects to 1 community

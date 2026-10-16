@@ -24,16 +24,16 @@ members: 26
 - [[Optional Requirements]] - document - docs/setup/setup-guide.md
 - [[Performance Issues_1]] - document - docs/setup/setup-guide.md
 - [[Port Already in Use_2]] - document - docs/setup/setup-guide.md
-- [[Prerequisites_4]] - document - docs/setup/setup-guide.md
+- [[Prerequisites_5]] - document - docs/setup/setup-guide.md
 - [[Production Checklist]] - document - docs/setup/setup-guide.md
 - [[Quick Start (5 minutes)]] - document - docs/setup/setup-guide.md
-- [[Security Testing]] - document - docs/setup/setup-guide.md
+- [[Security Testing_1]] - document - docs/setup/setup-guide.md
 - [[Security Verification]] - document - docs/setup/setup-guide.md
 - [[Set Up Vault Access]] - document - docs/setup/setup-guide.md
 - [[Supported Platforms]] - document - docs/setup/setup-guide.md
 - [[System Requirements_1]] - document - docs/setup/setup-guide.md
 - [[Tests Failing_1]] - document - docs/setup/setup-guide.md
-- [[Troubleshooting_24]] - document - docs/setup/setup-guide.md
+- [[Troubleshooting_26]] - document - docs/setup/setup-guide.md
 - [[What is AgentShroud_1]] - document - docs/setup/setup-guide.md
 - [[What's Next]] - document - docs/setup/setup-guide.md
 
@@ -45,10 +45,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Step-by-Step Installation]]
 - 1 edge to [[_COMMUNITY_system-requirements]]
+- 1 edge to [[_COMMUNITY_apply-patches.js_2]]
+- 1 edge to [[_COMMUNITY_Step-by-Step Installation]]
 - 1 edge to [[_COMMUNITY_TELEGRAM_ISSUES]]
 - 1 edge to [[_COMMUNITY_Update AgentShroud]]
 
 ## Top bridge nodes
-- [[AgentShroud Setup Guide]] - degree 12, connects to 4 communities
+- [[AgentShroud Setup Guide]] - degree 12, connects to 5 communities

@@ -1,15 +1,16 @@
 ---
 type: community
-cohesion: 0.21
-members: 17
+cohesion: 0.22
+members: 20
 ---
 
 # SubagentGovernance
 
-**Cohesion:** 0.21 - loosely connected
-**Members:** 17 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 20 nodes
 
 ## Members
+- [[dot-__init__()_138]] - code - gateway/security/subagent_governance.py
 - [[dot-test_api_calls_exceed()]] - code - gateway/tests/test_subagent_governance.py
 - [[dot-test_no_tracking_returns_ok()]] - code - gateway/tests/test_subagent_governance.py
 - [[dot-test_tokens_exceed_budget()]] - code - gateway/tests/test_subagent_governance.py
@@ -21,8 +22,10 @@ members: 17
 - [[GovernanceConfig]] - code - gateway/security/subagent_governance.py
 - [[Per-subagent resource limits.]] - rationale - gateway/security/subagent_governance.py
 - [[ResourceBudget]] - code - gateway/security/subagent_governance.py
+- [[SubagentGovernance]] - code - gateway/security/subagent_governance.py
 - [[TestResourceBudgets]] - code - gateway/tests/test_subagent_governance.py
 - [[Top-level governance configuration.]] - rationale - gateway/security/subagent_governance.py
+- [[Unified governance layer for subagent lifecycle.      Wraps SubagentMonitor with]] - rationale - gateway/security/subagent_governance.py
 - [[disabled_gov()]] - code - gateway/tests/test_subagent_governance.py
 - [[gov()]] - code - gateway/tests/test_subagent_governance.py
 - [[monitor_gov()]] - code - gateway/tests/test_subagent_governance.py
@@ -36,16 +39,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_dot-_check_budget]]
-- 9 edges to [[_COMMUNITY_GovernanceAction]]
-- 6 edges to [[_COMMUNITY_TestPatternDetection]]
-- 3 edges to [[_COMMUNITY_TestOutputTrustScoring]]
-- 3 edges to [[_COMMUNITY_TestSpawnAuthorization]]
-- 3 edges to [[_COMMUNITY_TestToolAuthorization]]
+- 11 edges to [[_COMMUNITY_GovernanceAction]]
+- 8 edges to [[_COMMUNITY_TestPatternDetection]]
+- 6 edges to [[_COMMUNITY_dot-_check_budget]]
+- 4 edges to [[_COMMUNITY_TestOutputTrustScoring]]
+- 4 edges to [[_COMMUNITY_TestSpawnAuthorization]]
+- 4 edges to [[_COMMUNITY_TestToolAuthorization]]
+- 3 edges to [[_COMMUNITY_GovernanceAction_1]]
+- 3 edges to [[_COMMUNITY_ResourceUsage]]
 
 ## Top bridge nodes
+- [[SubagentGovernance]] - degree 30, connects to 8 communities
 - [[GovernanceConfig]] - degree 17, connects to 6 communities
-- [[test_subagent_governance.py]] - degree 17, connects to 6 communities
-- [[ResourceBudget]] - degree 13, connects to 5 communities
-- [[TestResourceBudgets]] - degree 12, connects to 2 communities
-- [[gov()]] - degree 4, connects to 1 community
+- [[ResourceBudget]] - degree 13, connects to 6 communities
+- [[test_subagent_governance.py]] - degree 17, connects to 5 communities
+- [[TestResourceBudgets]] - degree 12, connects to 1 community

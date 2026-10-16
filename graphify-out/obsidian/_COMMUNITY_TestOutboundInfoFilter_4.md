@@ -1,17 +1,20 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.40
+members: 5
 ---
 
 # TestOutboundInfoFilter
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[dot-test_credential_path_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test that credential paths are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[IV-A. Transparent Proxy Design]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IV-B. Security Pipeline]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IV-C. Middleware Manager]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IV-D. MCP Proxy Layer]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IV. System Architecture]] - document - docs/papers/agentshroud-ieee-paper.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
+- 1 edge to [[_COMMUNITY_AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]]
 
 ## Top bridge nodes
-- [[dot-test_credential_path_filtering()]] - degree 2, connects to 1 community
+- [[IV. System Architecture]] - degree 5, connects to 1 community

@@ -1,13 +1,13 @@
 ---
 type: community
 cohesion: 0.15
-members: 31
+members: 35
 ---
 
 # Path
 
 **Cohesion:** 0.15 - loosely connected
-**Members:** 31 nodes
+**Members:** 35 nodes
 
 ## Members
 - [[dot-_run_sync()]] - code - gateway/tests/test_skill_guard.py
@@ -30,8 +30,10 @@ members: 31
 - [[dot-test_sync_dry_run_does_not_write_but_still_scans()]] - code - gateway/tests/test_skill_guard.py
 - [[CompletedProcess_3]] - code - gateway/tests/test_skill_guard.py
 - [[Exercise ``gateway.skills.scan.main`` directly for exit-code coverage.]] - rationale - gateway/tests/test_skill_guard.py
-- [[Path_26]] - code - gateway/tests/test_skill_guard.py
+- [[Ordered severity ladder (``IntEnum`` so comparisons work).]] - rationale - gateway/security/skill_guard.py
+- [[Path_23]] - code - gateway/tests/test_skill_guard.py
 - [[Raised when SkillGuard is handed content it cannot scan.]] - rationale - gateway/security/skill_guard.py
+- [[Severity_1]] - code - gateway/security/skill_guard.py
 - [[SkillScanError]] - code - gateway/security/skill_guard.py
 - [[TestClient]] - code - gateway/tests/test_skill_guard.py
 - [[TestReloadIntegration]] - code - gateway/tests/test_skill_guard.py
@@ -41,6 +43,8 @@ members: 31
 - [[The parallel bash sync path must invoke SkillGuard before copying.]] - rationale - gateway/tests/test_skill_guard.py
 - [[_run_scan_cli()]] - code - gateway/tests/test_skill_guard.py
 - [[_write_tree()]] - code - gateway/tests/test_skill_guard.py
+- [[gatewaysecurityskill_guard.py (SkillGuard)]] - code - gateway/security/skill_guard.py
+- [[test_skill_guard.py]] - code - gateway/tests/test_skill_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -50,13 +54,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 25 edges to [[_COMMUNITY_SkillGuard]]
-- 24 edges to [[_COMMUNITY_SkillGuard_1]]
+- 34 edges to [[_COMMUNITY_SkillGuard]]
+- 32 edges to [[_COMMUNITY_SkillGuard_1]]
 - 1 edge to [[_COMMUNITY_DelegationManager]]
+- 1 edge to [[_COMMUNITY_ModeRequest]]
+- 1 edge to [[_COMMUNITY_sync-llm-settings.sh]]
+- 1 edge to [[_COMMUNITY_FetchOutcome]]
 
 ## Top bridge nodes
+- [[test_skill_guard.py]] - degree 28, connects to 5 communities
 - [[SkillScanError]] - degree 24, connects to 3 communities
-- [[Path_26]] - degree 24, connects to 2 communities
-- [[TestScanEntrypointInProcess]] - degree 13, connects to 2 communities
-- [[TestSyncScriptPreflight]] - degree 11, connects to 2 communities
-- [[TestReloadIntegration]] - degree 10, connects to 2 communities
+- [[Severity_1]] - degree 24, connects to 2 communities
+- [[Path_23]] - degree 24, connects to 1 community
+- [[TestScanEntrypointInProcess]] - degree 13, connects to 1 community

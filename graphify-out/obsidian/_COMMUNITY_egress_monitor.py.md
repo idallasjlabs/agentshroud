@@ -17,11 +17,11 @@ members: 15
 - [[EgressMonitor.daily_summary(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
 - [[EgressMonitor.get_events(agent_id, channel)]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
 - [[EgressMonitor.record(event)]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Function Details_32]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Key Classes  Functions_34]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Purpose_153]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Related_38]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Responsibilities_36]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[Function Details_31]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[Key Classes  Functions_33]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[Purpose_150]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[Related_37]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[Responsibilities_35]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
 - [[Threat Model_21]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
 - [[egress_monitor.py_2]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
 - [[egress_monitor.py_1]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md

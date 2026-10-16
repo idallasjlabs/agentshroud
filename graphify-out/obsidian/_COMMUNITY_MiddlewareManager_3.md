@@ -1,53 +1,71 @@
 ---
 type: community
-cohesion: 0.09
-members: 38
+cohesion: 0.04
+members: 56
 ---
 
 # MiddlewareManager
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 38 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 56 nodes
 
 ## Members
-- [[dot-__post_init__()_1]] - code - gateway/security/memory_lifecycle.py
-- [[dot-setup_method()_13]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-setup_method()_14]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-teardown_method()_6]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_content_sanitization()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_daily_notes_retention()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_lifecycle_maintenance()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_memory_md_size_limit()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_pii_detection()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_prompt_injection_detection()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_status_reporting()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_threat_cleanup()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[Clean up integration test environment.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Configuration for memory lifecycle management.]] - rationale - gateway/security/memory_config.py
-- [[ContentThreat]] - code - gateway/security/memory_lifecycle.py
-- [[ContentThreatType]] - code - gateway/security/memory_lifecycle.py
-- [[Detected threat in memory file content.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Manages memory file lifecycle and content security.]] - rationale - gateway/security/memory_lifecycle.py
-- [[MemoryLifecycleConfig]] - code - gateway/security/memory_config.py
-- [[MemoryLifecycleManager]] - code - gateway/security/memory_lifecycle.py
-- [[Set up integration test environment.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test MEMORY.md size limit enforcement.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test PII detection in memory content.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test cleanup of old threat records.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test complete lifecycle maintenance run.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test content sanitization removes threats.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test integration of memory security components.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test memory integrity configuration.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test memory lifecycle management.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test prompt injection detection.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test retention policy for daily notes.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test status reporting from both components.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[TestMemoryIntegrityConfig]] - code - gateway/tests/test_memory_lifecycle.py
-- [[TestMemoryLifecycleManager]] - code - gateway/tests/test_memory_lifecycle.py
-- [[TestMemorySecurityIntegration]] - code - gateway/tests/test_memory_lifecycle.py
-- [[Types of content threats detected in memory files.]] - rationale - gateway/security/memory_lifecycle.py
-- [[memory_lifecycle.py]] - code - gateway/security/memory_lifecycle.py
-- [[test_memory_lifecycle.py]] - code - gateway/tests/test_memory_lifecycle.py
+- [[Audit chain must detect tampering.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Build a SecurityPipeline with all guards wired up.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Combined prompt injection + role override must be caught.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[ContextGuard must detect context window poisoning (massive payload).]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Create a real PII sanitizer in regex mode (no spaCy).]] - rationale - gateway/tests/test_redteam_probes.py
+- [[EncodingDetector must detect base64 in outbound responses.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[EncodingDetector must detect base64-encoded payloads on inbound.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Every pipeline operation must produce an audit chain entry.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Minimal approval queue mock that accepts items.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Non-owner collaborators must be blocked by prompt guard.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[One agent's session data must not leak to another.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[PIISanitizer_2]] - code - gateway/tests/test_redteam_probes.py
+- [[Pipeline must refuse to start without PII sanitizer (fail-closed).]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.1 Agent exec must go through approval queue or be blocked.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.1b delete_file action must go through approval or be blocked.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.1c admin_action must require approval or be trust-blocked.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.6 EgressFilter must block non-allowlisted domains.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.6b EgressFilter must block direct IP exfiltration.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.6c EgressFilter must block internalprivate IP ranges.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.9 PII sanitizer must redact SSN on inbound messages.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.9b PII sanitizer must redact SSN on outbound responses.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.9c PII sanitizer must redact credit card numbers.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Probe 1.9d PII sanitizer must redact email addresses on outbound.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[PromptGuard must block classic 'ignore instructions' injection.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[PromptGuard must block role-override injection.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[PromptGuard must detect system prompt extraction attempts.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[SecurityPipeline_1]] - code - gateway/tests/test_redteam_probes.py
+- [[Trust level must not allow exec from conversation alone.]] - rationale - gateway/tests/test_redteam_probes.py
+- [[_make_approval_queue()]] - code - gateway/tests/test_redteam_probes.py
+- [[_make_full_pipeline()]] - code - gateway/tests/test_redteam_probes.py
+- [[_make_pii_sanitizer()]] - code - gateway/tests/test_redteam_probes.py
+- [[pipeline()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_admin_action_requires_approval()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_audit_chain_records_all_events()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_audit_chain_tamper_detection()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_combined_injection_techniques()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_context_poisoning_blocked()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_credit_card_redacted_inbound()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_egress_blocks_internal_ip()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_egress_blocks_ip_exfil()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_egress_blocks_unknown_domain()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_email_redacted_outbound()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_encoding_detector_base64_outbound()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_encoding_detector_catches_base64_inbound()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_exec_delete_file_requires_approval()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_exec_requires_approval()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_non_owner_blocked_by_prompt_guard()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_pipeline_fails_closed_without_pii()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_prompt_extraction_attempt()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_prompt_injection_ignore_instructions()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_prompt_injection_role_override()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_redteam_probes.py]] - code - gateway/tests/test_redteam_probes.py
+- [[test_session_isolation()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_ssn_redacted_inbound()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_ssn_redacted_outbound()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_trust_escalation_blocked()]] - code - gateway/tests/test_redteam_probes.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -57,21 +75,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 21 edges to [[_COMMUNITY_MiddlewareManager_4]]
-- 17 edges to [[_COMMUNITY_MiddlewareManager]]
-- 14 edges to [[_COMMUNITY_MiddlewareManager_5]]
-- 9 edges to [[_COMMUNITY_MiddlewareManager_7]]
-- 4 edges to [[_COMMUNITY_AgentRegistry]]
-- 2 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager_9]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager_10]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager_11]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager_12]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager_13]]
+- 11 edges to [[_COMMUNITY_TrustConfig]]
+- 8 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 5 edges to [[_COMMUNITY_PipelineAction]]
+- 4 edges to [[_COMMUNITY_PIIConfig]]
+- 4 edges to [[_COMMUNITY_InjectionAction]]
+- 4 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 4 edges to [[_COMMUNITY_agentshroud-blueteamSKILL_3]]
+- 4 edges to [[_COMMUNITY_EgressFilterConfig_1]]
+- 4 edges to [[_COMMUNITY_ContextSegment]]
+- 1 edge to [[_COMMUNITY_AsyncMock_1]]
+- 1 edge to [[_COMMUNITY_InjectionAction_1]]
 
 ## Top bridge nodes
-- [[MemoryLifecycleManager]] - degree 39, connects to 5 communities
-- [[TestMemoryLifecycleManager]] - degree 20, connects to 4 communities
-- [[MemoryLifecycleConfig]] - degree 18, connects to 4 communities
-- [[TestMemoryIntegrityConfig]] - degree 12, connects to 4 communities
-- [[ContentThreat]] - degree 15, connects to 3 communities
+- [[test_redteam_probes.py]] - degree 40, connects to 10 communities
+- [[SecurityPipeline_1]] - degree 14, connects to 9 communities
+- [[PIISanitizer_2]] - degree 13, connects to 9 communities
+- [[_make_full_pipeline()]] - degree 20, connects to 7 communities
+- [[_make_pii_sanitizer()]] - degree 6, connects to 2 communities

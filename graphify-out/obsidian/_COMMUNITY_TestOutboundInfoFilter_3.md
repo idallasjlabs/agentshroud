@@ -1,17 +1,20 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.40
+members: 5
 ---
 
 # TestOutboundInfoFilter
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[dot-test_agentshroud_name_not_redacted()]] - code - gateway/tests/test_outbound_filter.py
-- [[AgentShroud brand name must pass through unredacted (Fix C).]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Install Script]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Installation_1]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Windows]] - document - .github/COPILOT_CLI_SETUP.md
+- [[macOS  Linux]] - document - .github/COPILOT_CLI_SETUP.md
+- [[npm (Cross-platform)]] - document - .github/COPILOT_CLI_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
+- 1 edge to [[_COMMUNITY_GitHub Copilot CLI Setup Guide]]
 
 ## Top bridge nodes
-- [[dot-test_agentshroud_name_not_redacted()]] - degree 2, connects to 1 community
+- [[Installation_1]] - degree 5, connects to 1 community

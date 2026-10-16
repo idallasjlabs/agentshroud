@@ -21,15 +21,15 @@ members: 28
 - [[GET dashboardstats returns JSON stats.]] - rationale - gateway/tests/test_e2e.py
 - [[GET status returns service info.]] - rationale - gateway/tests/test_e2e.py
 - [[Submit SSH command → approval queued.]] - rationale - gateway/tests/test_e2e.py
-- [[client()_8]] - code - gateway/tests/test_dashboard.py
-- [[client()_9]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[client()_10]] - code - gateway/tests/test_e2e.py
-- [[client()_11]] - code - gateway/tests/test_mcp_proxy_endpoint.py
-- [[client()_12]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[client()_13]] - code - gateway/tests/test_security_fixes.py
-- [[client()_14]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[client()_15]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_dashboard_requires_auth()]] - code - gateway/tests/test_e2e.py
+- [[client()_12]] - code - gateway/tests/test_dashboard.py
+- [[client()_13]] - code - gateway/tests/test_dashboard_endpoints.py
+- [[client()_14]] - code - gateway/tests/test_e2e.py
+- [[client()_15]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[client()_16]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[client()_17]] - code - gateway/tests/test_security_fixes.py
+- [[client()_18]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[client()_19]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_dashboard_requires_auth()_1]] - code - gateway/tests/test_e2e.py
 - [[test_dashboard_returns_html()]] - code - gateway/tests/test_e2e.py
 - [[test_dashboard_serves_html()]] - code - gateway/tests/test_dashboard.py
 - [[test_dashboard_stats_returns_json()]] - code - gateway/tests/test_e2e.py
@@ -48,21 +48,21 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_test_dashboard.py]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig_1]]
 - 2 edges to [[_COMMUNITY_test_collaborator_greeter.py]]
-- 1 edge to [[_COMMUNITY_make_event]]
-- 1 edge to [[_COMMUNITY_RBACConfig]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig_3]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
 - 1 edge to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 1 edge to [[_COMMUNITY_TestMCPProxyEndpoint]]
+- 1 edge to [[_COMMUNITY_dashboard_endpoints.py]]
+- 1 edge to [[_COMMUNITY_test_soc_egress_endpoints.py]]
+- 1 edge to [[_COMMUNITY_make_event]]
 - 1 edge to [[_COMMUNITY_test_e2e_proxy.py]]
 - 1 edge to [[_COMMUNITY_TrustConfig]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_2]]
-- 1 edge to [[_COMMUNITY_test_dashboard_endpoints.py]]
-- 1 edge to [[_COMMUNITY_TestMCPProxyEndpoint]]
-- 1 edge to [[_COMMUNITY_test_soc_egress_endpoints.py]]
 
 ## Top bridge nodes
 - [[test_e2e.py]] - degree 13, connects to 5 communities
 - [[AsyncClient]] - degree 10, connects to 1 community
 - [[dot-test_dashboard_cookie_auth_serves_html()]] - degree 3, connects to 1 community
-- [[client()_8]] - degree 2, connects to 1 community
-- [[client()_9]] - degree 2, connects to 1 community
+- [[client()_12]] - degree 2, connects to 1 community
+- [[client()_13]] - degree 2, connects to 1 community

@@ -11,7 +11,7 @@ members: 3
 
 ## Members
 - [[Incident Classification System]] - document - docs/operations/incident-response.md
-- [[Priority Levels_1]] - document - docs/operations/incident-response.md
+- [[Priority Levels]] - document - docs/operations/incident-response.md
 - [[Severity Assessment Matrix]] - document - docs/operations/incident-response.md
 
 ## Live Query (requires Dataview plugin)

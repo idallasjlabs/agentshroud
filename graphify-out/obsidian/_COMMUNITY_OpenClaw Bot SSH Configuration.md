@@ -20,7 +20,7 @@ members: 37
 - [[Default Settings (All Hosts)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[From Docker Command Line]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[From OpenClaw Bot (Natural Language)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Next Steps_1]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Next Steps_2]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[One-Liner to Add to Pi]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[OpenClaw Bot SSH Configuration]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[Problem Bad owner or permissions on ~.sshconfig]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
@@ -29,7 +29,7 @@ members: 37
 - [[Problem Permission denied (publickey)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[Public Key]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[Public Key (Copy-Paste Ready)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Quick Reference_4]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Quick Reference_3]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[Raspberry Pi (pi-dev)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[Restore SSH Keys]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[SSH Config File Location]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
@@ -41,8 +41,8 @@ members: 37
 - [[Step 2 Test SSH Connection from OpenClaw Bot]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[Step 3 Verify from OpenClaw UI or Telegram]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[Test Connection]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Troubleshooting_9]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Usage Examples_1]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Troubleshooting_11]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Usage Examples]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[Verification Checklist]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[⚠️ Important Security Notes]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 - [[✅ Security Features Enabled]] - document - docs/setup/OPENCLAW_SSH_SETUP.md

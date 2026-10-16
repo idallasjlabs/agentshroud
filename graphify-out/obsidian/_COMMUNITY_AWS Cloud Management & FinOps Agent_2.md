@@ -14,7 +14,7 @@ members: 22
 - [[Cost Optimization Priority_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
 - [[Cross-Account & Future Proofing_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
 - [[Decision Framework_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Deliverables_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Deliverables_3]] - document - docker/config/hermes/skills/i-aws/SKILL.md
 - [[EBS Performance Analysis (Critical Pattern)_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md
 - [[EBS bottleneck vs oversize distinction]] - rationale - .llm_settings/docs/AWS_AGENT_README.md
 - [[Expertise_2]] - document - docker/config/hermes/skills/i-aws/SKILL.md

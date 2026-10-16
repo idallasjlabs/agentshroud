@@ -34,8 +34,8 @@ tags:
 - [[dot-test_untyped_violation_uses_legacy_points()]] - `calls` [EXTRACTED]
 - [[dot-test_vouching_required_for_top_rung()]] - `calls` [EXTRACTED]
 - [[TrustConfig]] - `calls` [EXTRACTED]
-- [[TrustManager]] - `calls` [EXTRACTED]
-- [[TrustManager_1]] - `references` [EXTRACTED]
+- [[TrustManager_4]] - `calls` [EXTRACTED]
+- [[TrustManager_3]] - `references` [EXTRACTED]
 - [[test_progressive_trust_integration.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

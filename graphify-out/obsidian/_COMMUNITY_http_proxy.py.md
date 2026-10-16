@@ -16,12 +16,12 @@ members: 23
 - [[Domain Policy Decision Tree]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[Function Details_2]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[Internal State (`_stats`)]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Key Classes_1]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Key Classes]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[Module-level Constants]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Purpose_84]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Purpose_77]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[Related_3]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Responsibilities_4]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Security Notes_5]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Responsibilities_3]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Security Notes_6]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[TCP Keepalive]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[`HTTPConnectProxy._agent_id_for_peer(peer)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[`HTTPConnectProxy._clamav_scan_bytes(data bytes, host str)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md

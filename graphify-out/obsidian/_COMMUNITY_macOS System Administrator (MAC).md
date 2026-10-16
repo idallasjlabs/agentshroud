@@ -11,9 +11,9 @@ members: 5
 
 ## Members
 - [[dot-agentsskillsi-macREADME]] - document - .agents/skills/i-mac/README.md
-- [[Purpose_23]] - document - .agents/skills/i-mac/README.md
-- [[Related Skills_9]] - document - .agents/skills/i-mac/README.md
-- [[Usage_13]] - document - .agents/skills/i-mac/README.md
+- [[Purpose_18]] - document - .agents/skills/i-mac/README.md
+- [[Related Skills_7]] - document - .agents/skills/i-mac/README.md
+- [[Usage_10]] - document - .agents/skills/i-mac/README.md
 - [[macOS System Administrator (MAC)]] - document - .agents/skills/i-mac/README.md
 
 ## Live Query (requires Dataview plugin)

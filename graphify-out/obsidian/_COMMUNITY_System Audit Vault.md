@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.33
+members: 6
 ---
 
 # System Audit Vault
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Purpose_35]] - document - docker/config/hermes/skills/i-sav/README.md
-- [[Related Skills_21]] - document - docker/config/hermes/skills/i-sav/README.md
-- [[System Audit Vault]] - document - docker/config/hermes/skills/i-sav/README.md
-- [[Usage_25]] - document - docker/config/hermes/skills/i-sav/README.md
-- [[hermesskillsi-savREADME]] - document - docker/config/hermes/skills/i-sav/README.md
+- [[AgentShroud Data Assets (root)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[External Credentials (1Password vault)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[OpenClaw Volume (openclaw.json, cronjobs.json, sessions)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[SQLite DBs (Backed by SQLite)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[approval_items table (pending, approved, rejected, expired; 1h TTL)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[ledger table (indexed on timestamp, source, forwarded_to)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_hermesskillsi-bsREADME]]
+- 1 edge to [[_COMMUNITY_Approval Queue (human-in-the-loop)]]
 
 ## Top bridge nodes
-- [[System Audit Vault]] - degree 5, connects to 1 community
+- [[AgentShroud Data Assets (root)]] - degree 4, connects to 1 community

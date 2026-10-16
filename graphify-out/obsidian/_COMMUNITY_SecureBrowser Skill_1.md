@@ -1,21 +1,21 @@
 ---
 type: community
-cohesion: 0.33
+cohesion: 0.67
 members: 6
 ---
 
 # SecureBrowser Skill
 
-**Cohesion:** 0.33 - loosely connected
+**Cohesion:** 0.67 - moderately connected
 **Members:** 6 nodes
 
 ## Members
-- [[Approval required but none granted]] - document - skills/custom/securebrowser/README.md
-- [[Browser timeout]] - document - skills/custom/securebrowser/README.md
-- [[CAPTCHA detected]] - document - skills/custom/securebrowser/README.md
-- [[Credential extraction blocked]] - document - skills/custom/securebrowser/README.md
-- [[URL not in allowlist]] - document - skills/custom/securebrowser/README.md
-- [[Troubleshooting_2]] - document - skills/custom/securebrowser/README.md
+- [[cmd_persist]] - code - scripts/tailscale-serve.sh
+- [[cmd_start]] - code - scripts/tailscale-serve.sh
+- [[cmd_status]] - code - scripts/tailscale-serve.sh
+- [[cmd_stop]] - code - scripts/tailscale-serve.sh
+- [[tailscale-serve.sh]] - code - scripts/tailscale-serve.sh
+- [[tailscale-serve.sh script]] - code - scripts/tailscale-serve.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +25,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_SecureBrowser Skill]]
+- 1 edge to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
+- 1 edge to [[_COMMUNITY_test_main_endpoints.py_1]]
+- 1 edge to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]]
 
 ## Top bridge nodes
-- [[Troubleshooting_2]] - degree 6, connects to 1 community
+- [[cmd_start]] - degree 5, connects to 2 communities
+- [[tailscale-serve.sh]] - degree 6, connects to 1 community

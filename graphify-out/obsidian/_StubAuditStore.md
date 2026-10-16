@@ -12,10 +12,10 @@ tags:
 # _StubAuditStore
 
 ## Connections
-- [[dot-__init__()_34]] - `method` [EXTRACTED]
-- [[dot-log_event()]] - `method` [EXTRACTED]
+- [[dot-__init__()_17]] - `method` [EXTRACTED]
+- [[dot-log_event()_2]] - `method` [EXTRACTED]
 - [[A2AMethod]] - `uses` [INFERRED]
-- [[A2APolicyConfig_1]] - `uses` [INFERRED]
+- [[A2APolicyConfig]] - `uses` [INFERRED]
 - [[A2APolicyEngine_2]] - `uses` [INFERRED]
 - [[A2AProxy_1]] - `uses` [INFERRED]
 - [[A2AProxyResult]] - `uses` [INFERRED]

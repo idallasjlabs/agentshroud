@@ -1,23 +1,25 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.20
+members: 10
 ---
 
 # TestCrossBotTrustPivot
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[dot-test_bot_agent_ids_are_namespace_separated_from_user_ids()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[dot-test_hermes_violation_does_not_affect_openclaw_trust()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[dot-test_openclaw_violation_does_not_affect_hermes_trust()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[Finding RT-N1RT-N2 TrustManager uses shared in-memory DB keyed by agent_id.…]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[RT-N1 (reverse) Hermes violation must not demote OpenClaw.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[RT-N1 Recording a violation against openclaw MUST NOT change hermes trust.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[RT-N2 Bot agent IDs ('openclaw', 'hermes') are separate from user IDs. A…]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[TestCrossBotTrustPivot]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[API Reference]] - document - docs/api/api-reference.md
+- [[AgentShroud v1.3.0]] - document - docs/api/api-reference.md
+- [[Authentication]] - document - docs/api/api-reference.md
+- [[Error responses]] - document - docs/api/api-reference.md
+- [[Example `GET managehealth`]] - document - docs/api/api-reference.md
+- [[Example `POST manageegress{request_id}approve`]] - document - docs/api/api-reference.md
+- [[Overview_1]] - document - docs/api/api-reference.md
+- [[Overview_2]] - document - docs/api/integration-guide.md
+- [[Source of truth]] - document - docs/api/api-reference.md
+- [[api-reference]] - document - docs/api/api-reference.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +29,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_security_regressions_v1_2.py]]
+- 1 edge to [[_COMMUNITY_Integration Guide]]
+- 1 edge to [[_COMMUNITY_Route map (by router)]]
 
 ## Top bridge nodes
-- [[TestCrossBotTrustPivot]] - degree 5, connects to 1 community
+- [[API Reference]] - degree 8, connects to 1 community
+- [[AgentShroud v1.3.0]] - degree 4, connects to 1 community

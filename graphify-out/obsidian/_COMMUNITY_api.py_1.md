@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 0.13
-members: 38
+cohesion: 0.09
+members: 50
 ---
 
 # api.py
 
-**Cohesion:** 0.13 - loosely connected
-**Members:** 38 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 50 nodes
 
 ## Members
-- [[dot-__call__()_3]] - code - gateway/tests/test_citation_verifier.py
-- [[dot-__init__()_69]] - code - gateway/tests/test_citation_verifier.py
+- [[dot-__call__()_10]] - code - gateway/tests/test_citation_verifier.py
+- [[dot-__init__()_163]] - code - gateway/tests/test_citation_verifier.py
+- [[dot-__init__()_164]] - code - gateway/web/api.py
 - [[dot-_verifier()]] - code - gateway/tests/test_citation_verifier.py
 - [[dot-_verifier()_1]] - code - gateway/tests/test_citation_verifier.py
 - [[dot-test_allowlisted_live_source_kept()]] - code - gateway/tests/test_citation_verifier.py
@@ -34,18 +35,29 @@ members: 38
 - [[dot-test_unreachable_source_dropped()]] - code - gateway/tests/test_citation_verifier.py
 - [[dot-test_verified_report_persists_with_intact_hashchain()]] - code - gateway/tests/test_citation_verifier.py
 - [[dot-test_wildcard_allowlist_match_kept()]] - code - gateway/tests/test_citation_verifier.py
+- [[A draft competitive-intel report submitted for citation verification.]] - rationale - gateway/web/api.py
 - [[An unverified competitor claim submitted for citation checking.]] - rationale - gateway/security/citation_verifier.py
+- [[Build a CitationVerifier wired to the production (httpx) fetcher.      Isolated]] - rationale - gateway/web/api.py
 - [[CitationVerifier]] - code - gateway/security/citation_verifier.py
 - [[Deterministic fetcher maps url - (status, sha_or_None). Records calls.]] - rationale - gateway/tests/test_citation_verifier.py
 - [[DraftEntry]] - code - gateway/security/citation_verifier.py
-- [[FetchOutcome]] - code - gateway/tests/test_citation_verifier.py
+- [[FetchOutcome_1]] - code - gateway/tests/test_citation_verifier.py
+- [[HTTPAuthorizationCredentials]] - code - gateway/web/api.py
+- [[IntelDraftEntry]] - code - gateway/web/api.py
+- [[IntelDraftRequest]] - code - gateway/web/api.py
+- [[One unverified competitor claim + its candidate source URLs.]] - rationale - gateway/web/api.py
+- [[Raised when SkillGuard blocks a dangerous skill tree before deploy.]] - rationale - gateway/web/api.py
+- [[ServiceAction]] - code - gateway/web/api.py
+- [[SkillGuardBlocked]] - code - gateway/web/api.py
 - [[TestFetchOutcome]] - code - gateway/tests/test_citation_verifier.py
 - [[TestVerifyEntry]] - code - gateway/tests/test_citation_verifier.py
 - [[TestVerifyReport]] - code - gateway/tests/test_citation_verifier.py
 - [[Verifies competitor claims against re-fetched, allowlisted sources.]] - rationale - gateway/security/citation_verifier.py
-- [[_FakeFetcher]] - code - gateway/tests/test_citation_verifier.py
-- [[citation_verifier module]] - code - gateway/security/citation_verifier.py
-- [[intel_report module (CompetitiveIntelReport, IntelReportStore)]] - code - gateway/security/intel_report.py
+- [[Verify and persist a draft competitive-intel report (SCRUM-75).      Each draft]] - rationale - gateway/web/api.py
+- [[WebSocket_8]] - code - gateway/web/api.py
+- [[_FakeFetcher_1]] - code - gateway/tests/test_citation_verifier.py
+- [[_intel_verifier()]] - code - gateway/web/api.py
+- [[submit_competitive_intel()]] - code - gateway/web/api.py
 - [[test_citation_verifier.py]] - code - gateway/tests/test_citation_verifier.py
 - [[test_default_allowlist_uses_permanent_egress_domains()]] - code - gateway/tests/test_citation_verifier.py
 
@@ -57,16 +69,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 26 edges to [[_COMMUNITY_api.py]]
-- 18 edges to [[_COMMUNITY_CompetitiveIntelReport_1]]
-- 12 edges to [[_COMMUNITY_FetchOutcome_1]]
-- 9 edges to [[_COMMUNITY_FetchOutcome]]
-- 8 edges to [[_COMMUNITY_ModeRequest]]
-- 3 edges to [[_COMMUNITY_CompetitiveIntelReport]]
+- 34 edges to [[_COMMUNITY_CompetitiveIntelReport]]
+- 22 edges to [[_COMMUNITY_FetchOutcome]]
+- 15 edges to [[_COMMUNITY_api.py]]
+- 7 edges to [[_COMMUNITY_ModeRequest]]
+- 3 edges to [[_COMMUNITY__FakeRBAC]]
+- 1 edge to [[_COMMUNITY_SkillGuard_1]]
+- 1 edge to [[_COMMUNITY_ConsentFramework_1]]
 
 ## Top bridge nodes
-- [[CitationVerifier]] - degree 43, connects to 6 communities
-- [[DraftEntry]] - degree 45, connects to 5 communities
-- [[test_citation_verifier.py]] - degree 15, connects to 4 communities
-- [[TestVerifyEntry]] - degree 19, connects to 3 communities
-- [[_FakeFetcher]] - degree 14, connects to 3 communities
+- [[DraftEntry]] - degree 45, connects to 4 communities
+- [[CitationVerifier]] - degree 43, connects to 4 communities
+- [[SkillGuardBlocked]] - degree 8, connects to 4 communities
+- [[IntelDraftRequest]] - degree 7, connects to 3 communities
+- [[IntelDraftEntry]] - degree 6, connects to 3 communities

@@ -21,10 +21,10 @@ members: 17
 - [[OAuthSecurityValidator.validate_redirect_uri(uri)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
 - [[OAuthSecurityValidator.validate_request(req)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
 - [[OAuthSecurityValidator.verify_pkce(verifier, challenge, method)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[Purpose_115]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
+- [[Purpose_112]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
 - [[Related_16]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
 - [[Responsibilities_14]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[Threat Model_11]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
+- [[Threat Model_12]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
 - [[oauth_security.py_2]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
 - [[oauth_security.py_1]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
 

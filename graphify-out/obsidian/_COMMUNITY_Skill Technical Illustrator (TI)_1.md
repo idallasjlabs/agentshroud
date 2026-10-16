@@ -24,7 +24,7 @@ members: 22
 - [[Online renderer_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
 - [[Render locally with mmdc_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
 - [[Rendering and Export_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
-- [[Role_40]] - document - docker/config/hermes/skills/i-ti/SKILL.md
+- [[Role_39]] - document - docker/config/hermes/skills/i-ti/SKILL.md
 - [[Rules_15]] - document - docker/config/hermes/skills/i-ti/SKILL.md
 - [[Sequence — Order of operations between systems_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md
 - [[Skill Technical Illustrator (TI)_1]] - document - docker/config/hermes/skills/i-ti/SKILL.md

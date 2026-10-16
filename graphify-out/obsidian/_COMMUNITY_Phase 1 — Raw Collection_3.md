@@ -1,22 +1,25 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.22
+members: 10
 ---
 
 # Phase 1 — Raw Collection
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[A. `mac_app_catalog.json` — Machine-readable manifest_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[B. `mac_app_catalog.md` — Human-readable catalog_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[Discovery Strategy_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[Phase 2 — Deduplication & Normalization_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[Phase 3 — Categorization_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[Phase 4 — Enrichment_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[Phase 5 — Output Generation_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[dot-_calculate_similarity()]] - code - gateway/security/prompt_protection.py
+- [[dot-_redact_fuzzy_match()]] - code - gateway/security/prompt_protection.py
+- [[dot-add_protected_content()]] - code - gateway/security/prompt_protection.py
+- [[dot-scan_response()_1]] - code - gateway/security/prompt_protection.py
+- [[A piece of content that should be protected from disclosure.]] - rationale - gateway/security/prompt_protection.py
+- [[Add content to the protected registry.          Args             name Identifi]] - rationale - gateway/security/prompt_protection.py
+- [[Calculate similarity between text and protected content.]] - rationale - gateway/security/prompt_protection.py
+- [[ProtectedContent]] - code - gateway/security/prompt_protection.py
+- [[Redact text that fuzzy matches protected content.]] - rationale - gateway/security/prompt_protection.py
+- [[Scan text for protected content and return redacted version.          Args]] - rationale - gateway/security/prompt_protection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,8 +29,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Mac App Discovery Skill]]
-- 1 edge to [[_COMMUNITY_Phase 1 — Raw Collection_1]]
+- 5 edges to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+- 2 edges to [[_COMMUNITY_InjectionAction_1]]
 
 ## Top bridge nodes
-- [[Discovery Strategy_2]] - degree 7, connects to 2 communities
+- [[dot-scan_response()_1]] - degree 5, connects to 2 communities
+- [[ProtectedContent]] - degree 5, connects to 1 community
+- [[dot-add_protected_content()]] - degree 4, connects to 1 community
+- [[dot-_calculate_similarity()]] - degree 4, connects to 1 community
+- [[dot-_redact_fuzzy_match()]] - degree 4, connects to 1 community

@@ -1,17 +1,17 @@
 ---
 type: community
 cohesion: 0.06
-members: 36
+members: 37
 ---
 
 # AgentShroud Docker Configuration
 
 **Cohesion:** 0.06 - loosely connected
-**Members:** 36 nodes
+**Members:** 37 nodes
 
 ## Members
 - [[AgentShroud Docker Configuration]] - document - docker/README.md
-- [[Architecture_3]] - document - docker/README.md
+- [[Architecture_4]] - document - docker/README.md
 - [[Check Status]] - document - docker/README.md
 - [[Container Runtime Support (SCRUM-92)]] - document - docker/README.md
 - [[Container Stack]] - document - docker/README.md
@@ -19,7 +19,7 @@ members: 36
 - [[Cron Failure Alerting (SCRUM-61)]] - document - docker/README.md
 - [[Detection contract]] - document - docker/README.md
 - [[Development_1]] - document - docker/README.md
-- [[Documentation_3]] - document - docker/README.md
+- [[Documentation_2]] - document - docker/README.md
 - [[Exec into Container]] - document - docker/README.md
 - [[Files_1]] - document - docker/README.md
 - [[Hermes  HCI]] - document - docker/README.md
@@ -34,6 +34,7 @@ members: 36
 - [[Rebuild Containers]] - document - docker/README.md
 - [[Reference]] - document - docker/README.md
 - [[Reproducible dev shell (Nix flake)]] - document - docker/README.md
+- [[SOC Per-Module Enforcement Heat-Map (SCRUM-80)]] - document - docker/README.md
 - [[Secrets]] - document - docker/README.md
 - [[Security Features (Deferred to Phase 5+)]] - document - docker/README.md
 - [[Security Features (Implemented)]] - document - docker/README.md
@@ -42,7 +43,7 @@ members: 36
 - [[Stop the Stack]] - document - docker/README.md
 - [[Test Chat]] - document - docker/README.md
 - [[Troubleshooting_10]] - document - docker/README.md
-- [[Usage_61]] - document - docker/README.md
+- [[Usage_52]] - document - docker/README.md
 - [[Verify Security]] - document - docker/README.md
 - [[View Logs]] - document - docker/README.md
 - [[dockerREADME]] - document - docker/README.md
@@ -59,5 +60,5 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_test_mfa_guard.py]]
 
 ## Top bridge nodes
-- [[AgentShroud Docker Configuration]] - degree 18, connects to 1 community
 - [[MFA for High-Risk Approvals — IEC 62443 FR1 (SCRUM-93)]] - degree 3, connects to 1 community
+- [[SOC Per-Module Enforcement Heat-Map (SCRUM-80)]] - degree 2, connects to 1 community
