@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "Proxy Sidecar & Forwarder"
+community: "WebhookReceiver"
 location: "L277"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Proxy_Sidecar__Forwarder
+  - community/WebhookReceiver
 ---
 
 # ._prepare_session_payload()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-_replace_message()]] - `calls` [EXTRACTED]
 - [[dot-process_webhook()]] - `calls` [EXTRACTED]
-- [[Any_52]] - `references` [EXTRACTED]
+- [[Any_14]] - `references` [EXTRACTED]
 - [[Prepare payload with session context injection.]] - `rationale_for` [EXTRACTED]
 - [[WebhookReceiver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder
+#graphify/code #graphify/EXTRACTED #community/WebhookReceiver

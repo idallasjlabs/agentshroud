@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "Community 640"
+community: "Role"
 location: "L634"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_640
+  - community/Role
 ---
 
 # ._get_role()
@@ -17,4 +17,4 @@ tags:
 - [[dot-get_denied_tools()]] - `calls` [EXTRACTED]
 - [[ToolACLEnforcer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_640
+#graphify/code #graphify/EXTRACTED #community/Role

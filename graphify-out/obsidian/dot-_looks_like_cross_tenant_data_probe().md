@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "Community 43"
+community: "TelegramAPIProxy"
 location: "L2094"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/TelegramAPIProxy
 ---
 
 # ._looks_like_cross_tenant_data_probe()
@@ -17,4 +17,4 @@ tags:
 - [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "code"
-community: "Community 112"
+community: "AuditStore"
 location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_112
+  - community/AuditStore
 ---
 
 # .audit_store()
@@ -16,4 +16,4 @@ tags:
 - [[Create in-memory audit store for testing.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_112
+#graphify/code #graphify/EXTRACTED #community/AuditStore

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "Voice Gateway STT & Browser Security"
+community: "GovernanceAction"
 location: "L548"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/GovernanceAction
 ---
 
 # ._log_event()
@@ -21,4 +21,4 @@ tags:
 - [[GovernanceEventType]] - `references` [EXTRACTED]
 - [[SubagentGovernance]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security
+#graphify/code #graphify/EXTRACTED #community/GovernanceAction

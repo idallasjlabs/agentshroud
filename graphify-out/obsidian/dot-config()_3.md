@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_approval_hardening.py"
+source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
-location: "L51"
+community: "ForwardRequest"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/ForwardRequest
 ---
 
 # .config()
 
 ## Connections
-- [[ApprovalHardeningConfig]] - `calls` [EXTRACTED]
-- [[Create test configuration.]] - `rationale_for` [EXTRACTED]
-- [[TestApprovalHardening]] - `method` [EXTRACTED]
+- [[TestParanoidConfig]] - `method` [EXTRACTED]
+- [[_parse_env_file()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/security/config_integrity.py"
 type: "code"
-community: "Community 96"
-location: "L103"
+community: ".check"
+location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_96
+  - community/check
 ---
 
 # .check()
 
 ## Connections
-- [[dot-check_request()]] - `calls` [EXTRACTED]
-- [[Check if request is within rate limit. Returns True if allowed.]] - `rationale_for` [EXTRACTED]
-- [[RateLimiter_1]] - `method` [EXTRACTED]
+- [[dot-_hash_file()]] - `calls` [EXTRACTED]
+- [[dot-_load_baseline()]] - `calls` [EXTRACTED]
+- [[dot-_save_baseline()]] - `calls` [EXTRACTED]
+- [[Compare current file hashes against baseline.          Returns a list of change]] - `rationale_for` [EXTRACTED]
+- [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_96
+#graphify/code #graphify/EXTRACTED #community/check

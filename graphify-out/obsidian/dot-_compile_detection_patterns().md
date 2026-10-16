@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "Blue/Red Team Security Auditor Skills"
-location: "L113"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Blue/Red_Team_Security_Auditor_Skills
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # ._compile_detection_patterns()
 
 ## Connections
-- [[dot-__init__()_130]] - `calls` [EXTRACTED]
-- [[Compile regex patterns for detecting disclosure categories.]] - `rationale_for` [EXTRACTED]
-- [[MultiTurnTracker]] - `method` [EXTRACTED]
+- [[dot-__init__()_115]] - `calls` [EXTRACTED]
+- [[Compile regex patterns for detecting disclosure attempts.]] - `rationale_for` [EXTRACTED]
+- [[PromptProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

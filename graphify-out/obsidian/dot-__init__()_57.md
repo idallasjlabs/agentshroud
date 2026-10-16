@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/module_stats.py"
+source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "Community 137"
-location: "L41"
+community: "ContextSegment"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_137
+  - community/ContextSegment
 ---
 
 # .__init__()
 
 ## Connections
-- [[ModuleStatsCollector]] - `method` [EXTRACTED]
+- [[Any_24]] - `references` [EXTRACTED]
+- [[ContextIntegrityScorer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_137
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

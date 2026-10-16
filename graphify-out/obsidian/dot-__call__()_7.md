@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "code"
-community: "Community 330"
-location: "L634"
+community: "AlertTelegramRelay"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_330
+  - community/AlertTelegramRelay
 ---
 
 # .__call__()
 
 ## Connections
-- [[_FakeConnect]] - `method` [EXTRACTED]
+- [[_SendSpy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_330
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

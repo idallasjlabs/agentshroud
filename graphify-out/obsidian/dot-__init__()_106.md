@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/output_schema.py"
+source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "Community 248"
-location: "L67"
+community: "MiddlewareManager"
+location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_248
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_register_default_schema()]] - `calls` [EXTRACTED]
-- [[OutputSchemaEnforcer]] - `method` [EXTRACTED]
+- [[EgressMonitor]] - `method` [EXTRACTED]
+- [[EgressMonitorConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_248
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

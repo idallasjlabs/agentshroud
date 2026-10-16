@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "PII Sanitizer & Redaction"
-location: "L28"
+community: "AppleContainerEngine"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__Redaction
+  - community/AppleContainerEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_43]] - `references` [EXTRACTED]
-- [[PIIConfig_1]] - `references` [EXTRACTED]
-- [[ToolResultPIIConfig]] - `method` [EXTRACTED]
+- [[AppleContainerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__Redaction
+#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine

@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Blue/Red Team Security Auditor Skills"
-location: "L363"
+community: "ToolChainAnalyzer"
+location: "L502"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Blue/Red_Team_Security_Auditor_Skills
+  - community/ToolChainAnalyzer
 ---
 
 # ._cleanup_old_sessions()
 
 ## Connections
-- [[dot-track_message()]] - `calls` [EXTRACTED]
-- [[MultiTurnTracker]] - `method` [EXTRACTED]
+- [[dot-analyze_tool_call()]] - `calls` [EXTRACTED]
 - [[Remove old sessions to prevent memory bloat.]] - `rationale_for` [EXTRACTED]
+- [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

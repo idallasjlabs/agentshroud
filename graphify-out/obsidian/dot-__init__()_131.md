@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/xml_leak_filter.py"
+source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "Blue/Red Team Security Auditor Skills"
-location: "L50"
+community: "SkillGuard"
+location: "L314"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Blue/Red_Team_Security_Auditor_Skills
+  - community/SkillGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[Initialize the filter with predefined patterns.]] - `rationale_for` [EXTRACTED]
-- [[XMLLeakFilter]] - `method` [EXTRACTED]
+- [[SkillGuard_1]] - `method` [EXTRACTED]
+- [[_Rule]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

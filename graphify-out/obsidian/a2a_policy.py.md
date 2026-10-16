@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "AgentTarget"
+community: "A2AMethod"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/A2AMethod
 ---
 
 # a2a_policy.py
@@ -15,10 +15,10 @@ tags:
 - [[NOTE gatewaysecurityegress_filter.py_is_private_ip has the same class]] - `rationale_for` [EXTRACTED]
 - [[A2AMethod]] - `contains` [EXTRACTED]
 - [[A2APolicyAction]] - `contains` [EXTRACTED]
-- [[A2APolicyConfig]] - `contains` [EXTRACTED]
+- [[A2APolicyConfig_1]] - `contains` [EXTRACTED]
 - [[A2APolicyDecision]] - `contains` [EXTRACTED]
 - [[A2APolicyEngine_1]] - `contains` [EXTRACTED]
-- [[Enum]] - `imports_from` [EXTRACTED]
+- [[Enum_2]] - `imports_from` [EXTRACTED]
 - [[Hermes A2A Plugin Upstream Gaps (83701, 8053480779, 78298, 77872, 81042)]] - `implements` [EXTRACTED]
 - [[_address_is_public()]] - `contains` [EXTRACTED]
 - [[_canonicalize_ip_literal()]] - `contains` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[is_safe_a2a_callback_url()]] - `contains` [EXTRACTED]
 - [[record_decision()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/A2AMethod

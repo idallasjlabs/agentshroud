@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "Community 37"
-location: "L1541"
+community: "._filter_streaming_event"
+location: "L1558"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_37
+  - community/_filter_streaming_event
 ---
 
 # ._filter_outbound()
@@ -17,4 +17,4 @@ tags:
 - [[Filter outbound LLM response for credential leaks and XML.]] - `rationale_for` [EXTRACTED]
 - [[LLMProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_37
+#graphify/code #graphify/EXTRACTED #community/_filter_streaming_event

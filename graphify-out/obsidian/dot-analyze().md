@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "Canary Tripwire"
+community: "PIIConfig"
 location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Canary_Tripwire
+  - community/PIIConfig
 ---
 
 # .analyze()
@@ -22,4 +22,4 @@ tags:
 - [[EncodingDetector]] - `method` [EXTRACTED]
 - [[EncodingResult]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Canary_Tripwire
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

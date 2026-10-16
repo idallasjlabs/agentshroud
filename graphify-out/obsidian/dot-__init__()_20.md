@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/path_isolation.py"
+source_file: "gateway/security/cron_state_monitor.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
-location: "L65"
+community: "CronStateMonitor"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/CronStateMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_ensure_base_directory()]] - `calls` [EXTRACTED]
-- [[PathIsolationConfig]] - `references` [EXTRACTED]
-- [[PathIsolationManager]] - `method` [EXTRACTED]
+- [[CronStateMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

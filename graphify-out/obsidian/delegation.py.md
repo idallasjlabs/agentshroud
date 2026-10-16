@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "make_event()"
+community: "DelegationManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/DelegationManager
 ---
 
 # delegation.py
 
 ## Connections
-- [[Delegation]] - `contains` [EXTRACTED]
+- [[Delegation_1]] - `contains` [EXTRACTED]
 - [[DelegationError]] - `contains` [EXTRACTED]
-- [[DelegationManager]] - `contains` [EXTRACTED]
+- [[DelegationManager_1]] - `contains` [EXTRACTED]
 - [[DelegationPrivilege]] - `contains` [EXTRACTED]
-- [[Enum]] - `imports_from` [EXTRACTED]
+- [[Enum_2]] - `imports_from` [EXTRACTED]
 - [[FR2 Use Control]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/DelegationManager

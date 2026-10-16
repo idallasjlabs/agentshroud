@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Community 166"
-location: "L126"
+community: "ForwardRequest"
+location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_166
+  - community/ForwardRequest
 ---
 
 # .config()
 
 ## Connections
-- [[TestRecommendedConfig]] - `method` [EXTRACTED]
+- [[TestMinimalConfig]] - `method` [EXTRACTED]
 - [[_parse_env_file()]] - `calls` [EXTRACTED]
-- [[fixture_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_166
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

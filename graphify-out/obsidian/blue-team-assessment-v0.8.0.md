@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0.md"
 type: "document"
-community: "test_hermes_cron_seed.py"
+community: "Findings"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_hermes_cron_seedpy
+  - community/Findings
 ---
 
 # blue-team-assessment-v0.8.0.md
@@ -17,4 +17,4 @@ tags:
 - [[Blue Team Assessment v1.2.0 (First Dual-Bot Assessment)]] - `references` [EXTRACTED]
 - [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_hermes_cron_seedpy
+#graphify/document #graphify/EXTRACTED #community/Findings

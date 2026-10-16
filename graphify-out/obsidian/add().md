@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "patch"
-location: "L268"
+community: "gateway/ingest_api/main.py (/hermes-dashboard/ HTTP + WebSocket reverse proxy)"
+location: "L3123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/patch
+  - community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
 ---
 
 # add()
 
 ## Connections
-- [[main.py_1]] - `contains` [EXTRACTED]
-- [[run_cis_benchmark()]] - `calls` [INFERRED]
+- [[run_cis_benchmark()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/patch
+#graphify/code #graphify/EXTRACTED #community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy

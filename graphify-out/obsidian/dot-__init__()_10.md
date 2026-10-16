@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_realtime_coverage.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Ingest API & RBAC Core"
-location: "L605"
+community: "TestIsContainerRunning"
+location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/TestIsContainerRunning
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeBus]] - `method` [EXTRACTED]
+- [[_FakeResp]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/TestIsContainerRunning

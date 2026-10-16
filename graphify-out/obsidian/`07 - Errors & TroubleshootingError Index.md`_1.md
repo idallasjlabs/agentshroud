@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sav/SKILL.md"
 type: "document"
-community: "One Shroud Over Every Wire (founding mantra)"
+community: "REQUIRED NOTES — PRODUCE EVERY ONE OF THESE"
 location: "L270"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/One_Shroud_Over_Every_Wire_founding_mantra
+  - community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE
 ---
 
 # `07 - Errors & Troubleshooting/Error Index.md`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[REQUIRED NOTES — PRODUCE EVERY ONE OF THESE_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/One_Shroud_Over_Every_Wire_founding_mantra
+#graphify/document #graphify/EXTRACTED #community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE

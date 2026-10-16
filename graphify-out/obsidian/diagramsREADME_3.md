@@ -12,6 +12,6 @@ tags:
 # diagrams/README.md
 
 ## Connections
-- [[Output Format_32]] - `contains` [EXTRACTED]
+- [[Output Format_40]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

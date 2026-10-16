@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-sdlc/SKILL.md"
 type: "document"
-community: "Community 1505"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1505
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # .agents/skills/i-sdlc/SKILL.md
 
 ## Connections
-- [[Skill sdlc]] - `contains` [EXTRACTED]
+- [[Skill sdlc_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1505
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

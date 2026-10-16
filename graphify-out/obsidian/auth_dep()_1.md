@@ -1,20 +1,23 @@
 ---
-source_file: "gateway/ingest_api/routes/approval.py"
+source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L33"
+community: "forward.py"
+location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/forwardpy
 ---
 
 # auth_dep()
 
 ## Connections
 - [[Auth dependency that uses the app state config.]] - `rationale_for` [EXTRACTED]
-- [[Request_2]] - `references` [EXTRACTED]
-- [[approval.py]] - `contains` [EXTRACTED]
+- [[Request_3]] - `references` [EXTRACTED]
 - [[create_auth_dependency()]] - `calls` [EXTRACTED]
+- [[forward.py]] - `contains` [EXTRACTED]
+- [[test_channel_ownership.py]] - `imports` [EXTRACTED]
+- [[test_email_owner_bypasses_pii.py]] - `imports` [EXTRACTED]
+- [[test_forward_stream.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/forwardpy

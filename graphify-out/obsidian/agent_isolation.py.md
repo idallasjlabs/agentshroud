@@ -1,28 +1,17 @@
 ---
-source_file: "gateway/security/agent_isolation.py"
-type: "code"
-community: "lvgl_kawaii_face.c"
+source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
+type: "document"
+community: "agent_isolation.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/lvgl_kawaii_facec
+  - community/agent_isolationpy
 ---
 
-# agent_isolation.py
+# agent_isolation.py.md
 
 ## Connections
-- [[Agent Isolation Module Badge Icon]] - `conceptually_related_to` [INFERRED]
-- [[AgentRegistry]] - `contains` [EXTRACTED]
-- [[ContainerConfig]] - `contains` [EXTRACTED]
-- [[Enum]] - `imports_from` [EXTRACTED]
-- [[IsolationCheck]] - `contains` [EXTRACTED]
-- [[IsolationStatus]] - `contains` [EXTRACTED]
-- [[IsolationVerifier]] - `contains` [EXTRACTED]
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - `references` [INFERRED]
-- [[OPENCLAW_SANDBOX_MODE]] - `references` [INFERRED]
-- [[drift_detector.py]] - `references` [EXTRACTED]
-- [[env_guard.py]] - `references` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[agent_isolation.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lvgl_kawaii_facec
+#graphify/document #graphify/EXTRACTED #community/agent_isolationpy

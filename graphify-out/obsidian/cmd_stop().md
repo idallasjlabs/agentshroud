@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/tailscale-serve.sh"
 type: "code"
-community: "test_a2a_policy.py"
-location: "L105"
+community: "tailscale-serve.sh"
+location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/tailscale-servesh
 ---
 
 # cmd_stop()
@@ -15,4 +15,4 @@ tags:
 - [[tailscale-serve.sh]] - `defines` [EXTRACTED]
 - [[tailscale-serve.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/code #graphify/EXTRACTED #community/tailscale-servesh

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_rate_limit_guard.py"
+source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Community 190"
-location: "L29"
+community: "_req"
+location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_190
+  - community/_req
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeClock]] - `method` [EXTRACTED]
+- [[_FakeRBAC_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_190
+#graphify/code #graphify/EXTRACTED #community/_req

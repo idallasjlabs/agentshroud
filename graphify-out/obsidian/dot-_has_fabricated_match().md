@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "Community 296"
+community: "TestFabricatedSecurityNotice"
 location: "L524"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_296
+  - community/TestFabricatedSecurityNotice
 ---
 
 # ._has_fabricated_match()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_blocked_unauthorized_command()]] - `calls` [EXTRACTED]
 - [[dot-test_blocking_suspicious_code_execution()]] - `calls` [EXTRACTED]
-- [[dot-test_case_insensitive()_2]] - `calls` [EXTRACTED]
+- [[dot-test_case_insensitive()_1]] - `calls` [EXTRACTED]
 - [[dot-test_continues_blocking()]] - `calls` [EXTRACTED]
 - [[dot-test_exact_past_tense()]] - `calls` [EXTRACTED]
 - [[dot-test_flagging_form()]] - `calls` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[dot-test_progressive_tense()]] - `calls` [EXTRACTED]
 - [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_296
+#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "Community 583"
+community: "TestOAuthInjection"
 location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_583
+  - community/TestOAuthInjection
 ---
 
 # ._make_anthropic_injector()
@@ -18,8 +18,8 @@ tags:
 - [[dot-test_existing_anthropic_version_preserved()]] - `calls` [EXTRACTED]
 - [[dot-test_inject_if_absent_skips_when_bearer_already_present()]] - `calls` [EXTRACTED]
 - [[dot-test_x_api_key_stripped_and_bearer_plus_beta_injected()]] - `calls` [EXTRACTED]
-- [[CredentialInjector_1]] - `references` [EXTRACTED]
-- [[Path_50]] - `references` [EXTRACTED]
+- [[CredentialInjector]] - `references` [EXTRACTED]
+- [[Path_54]] - `references` [EXTRACTED]
 - [[TestOAuthInjection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_583
+#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_a2a_policy.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "Community 75"
-location: "L323"
+community: "ServiceManager"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/ServiceManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[_StubApprovalQueue]] - `method` [EXTRACTED]
+- [[_FakeUnixSocket]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_75
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

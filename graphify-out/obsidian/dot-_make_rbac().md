@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Community 205"
+community: "Action"
 location: "L471"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_205
+  - community/Action
 ---
 
 # ._make_rbac()
@@ -22,7 +22,7 @@ tags:
 - [[dot-test_is_member_unknown_group_returns_false()]] - `calls` [EXTRACTED]
 - [[dot-test_slack_group_contains_slack_ids()]] - `calls` [EXTRACTED]
 - [[dot-test_telegram_group_contains_numeric_ids()]] - `calls` [EXTRACTED]
-- [[RBACConfig_1]] - `references` [EXTRACTED]
+- [[RBACConfig_3]] - `references` [EXTRACTED]
 - [[TestGroupRegistry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_205
+#graphify/code #graphify/EXTRACTED #community/Action

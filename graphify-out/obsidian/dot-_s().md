@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Community 794"
+community: "TestSplitForSpeech"
 location: "L443"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_794
+  - community/TestSplitForSpeech
 ---
 
 # ._s()
@@ -20,5 +20,6 @@ tags:
 - [[dot-test_short_fragment_merged_forward()]] - `calls` [EXTRACTED]
 - [[dot-test_single_sentence_returns_one_chunk()]] - `calls` [EXTRACTED]
 - [[TestSplitForSpeech]] - `method` [EXTRACTED]
+- [[split_for_speech()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_794
+#graphify/code #graphify/EXTRACTED #community/TestSplitForSpeech

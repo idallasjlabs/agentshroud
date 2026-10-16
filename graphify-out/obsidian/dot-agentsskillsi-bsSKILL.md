@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-bs/SKILL.md"
 type: "document"
-community: "Community 471"
+community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_471
+  - community/Required__45_for_text__30_for_UI_elements
 ---
 
 # .agents/skills/i-bs/SKILL.md
@@ -16,4 +16,4 @@ tags:
 - [[Skill Branding Specialist (BS)]] - `contains` [EXTRACTED]
 - [[Validate contrast ratio]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_471
+#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements

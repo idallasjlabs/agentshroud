@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "AlertDispatcher"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/AlertDispatcher
 ---
 
 # .dispatch()
@@ -17,7 +17,7 @@ tags:
 - [[dot-_log_alert()]] - `calls` [EXTRACTED]
 - [[dot-_send_notification()]] - `calls` [EXTRACTED]
 - [[AlertDispatcher]] - `method` [EXTRACTED]
-- [[Any_3]] - `references` [EXTRACTED]
+- [[Any]] - `references` [EXTRACTED]
 - [[Dispatch an alert based on severity.          Args             alert Alert dic]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

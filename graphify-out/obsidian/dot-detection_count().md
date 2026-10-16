@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "Canary Tripwire"
+community: "PIIConfig"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Canary_Tripwire
+  - community/PIIConfig
 ---
 
 # .detection_count()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Canary_Tripwire
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

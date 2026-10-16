@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_alert_telegram_relay.py"
+source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "Community 194"
-location: "L13"
+community: "SlackAPIProxy"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_194
+  - community/SlackAPIProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_SendSpy]] - `method` [EXTRACTED]
+- [[_RaisingRedactionResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_194
+#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy

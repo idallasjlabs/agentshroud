@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "Community 139"
+community: "SlackAPIProxy"
 location: "L346"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/SlackAPIProxy
 ---
 
 # ._call_slack_api()
@@ -20,4 +20,4 @@ tags:
 - [[POST to httpsslack.comapimethod with the bot token.]] - `rationale_for` [EXTRACTED]
 - [[SlackAPIProxy_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_139
+#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy

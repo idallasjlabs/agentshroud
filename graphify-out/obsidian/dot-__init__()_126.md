@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/agent_isolation.py"
+source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "Agent Isolation & Group Config Tests"
-location: "L55"
+community: "MCPPolicyEngine"
+location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Agent_Isolation__Group_Config_Tests
+  - community/MCPPolicyEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[AgentRegistry]] - `method` [EXTRACTED]
+- [[_FakeApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Agent_Isolation__Group_Config_Tests
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

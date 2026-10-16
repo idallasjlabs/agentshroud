@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "Community 70"
+community: "CompetitiveIntelReport"
 location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_70
+  - community/CompetitiveIntelReport
 ---
 
 # ._compute_content_hash()
@@ -16,4 +16,4 @@ tags:
 - [[Derive content_hash from the canonical content fields.          Only computed wh]] - `rationale_for` [EXTRACTED]
 - [[_compute_hash()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_70
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

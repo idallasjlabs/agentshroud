@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "Quick Reference — AgentShroud"
+community: "SubagentGovernance"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Quick_Reference__AgentShroud
+  - community/SubagentGovernance
 ---
 
 # disabled_gov()
@@ -16,4 +16,4 @@ tags:
 - [[SubagentGovernance]] - `calls` [EXTRACTED]
 - [[test_subagent_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Quick_Reference__AgentShroud
+#graphify/code #graphify/EXTRACTED #community/SubagentGovernance

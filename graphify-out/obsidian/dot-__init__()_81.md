@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "Memory Integrity & Lifecycle"
-location: "L65"
+community: "TestOutputCanary"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Memory_Integrity__Lifecycle
+  - community/TestOutputCanary
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_integrity_database()]] - `calls` [EXTRACTED]
-- [[dot-_load_write_windows()]] - `calls` [EXTRACTED]
-- [[MemoryIntegrityConfig]] - `references` [EXTRACTED]
-- [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
-- [[Path_17]] - `references` [EXTRACTED]
+- [[CanaryConfig]] - `references` [EXTRACTED]
+- [[Initialize the Output Canary System.          Args             config Optional]] - `rationale_for` [EXTRACTED]
+- [[OutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Integrity__Lifecycle
+#graphify/code #graphify/EXTRACTED #community/TestOutputCanary

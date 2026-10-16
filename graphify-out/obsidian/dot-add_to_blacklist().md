@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "ConsentFramework"
 location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/ConsentFramework
 ---
 
 # .add_to_blacklist()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ConsentFramework]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework

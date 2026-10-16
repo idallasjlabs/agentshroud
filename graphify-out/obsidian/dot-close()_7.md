@@ -1,19 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
+source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "Community 136"
-location: "L401"
+community: "MiddlewareManager"
+location: "L1438"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_136
+  - community/MiddlewareManager
 ---
 
 # .close()
 
 ## Connections
-- [[Clean up browser resources_2]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser_2]] - `method` [EXTRACTED]
-- [[main()_10]] - `calls` [EXTRACTED]
+- [[MiddlewareManager]] - `method` [EXTRACTED]
+- [[Shutdown middleware background tasks cleanly.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_136
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ingest_api/auth.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "Community 119"
-location: "L37"
+community: "LogBuffer"
+location: "L142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_119
+  - community/LogBuffer
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args             max_requests Maximum requests allowed in the time window]] - `rationale_for` [EXTRACTED]
-- [[RateLimiter]] - `method` [EXTRACTED]
+- [[LogBuffer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_119
+#graphify/code #graphify/EXTRACTED #community/LogBuffer

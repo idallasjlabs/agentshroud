@@ -1,35 +1,26 @@
 ---
-source_file: "gateway/soc/auth.py"
-type: "code"
-community: "MiddlewareManager"
+source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+type: "document"
+community: "create_auth_dependency"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/create_auth_dependency
 ---
 
-# auth.py
+# auth.py.md
 
 ## Connections
-- [[Action_1]] - `imports` [EXTRACTED]
-- [[RBACConfig_1]] - `imports` [EXTRACTED]
-- [[RBACManager_1]] - `imports` [EXTRACTED]
-- [[Resource_1]] - `imports` [EXTRACTED]
-- [[Role_1]] - `imports` [EXTRACTED]
-- [[SCLCaller]] - `contains` [EXTRACTED]
-- [[_get_config_token()]] - `contains` [EXTRACTED]
-- [[_get_rbac_manager()]] - `contains` [EXTRACTED]
-- [[_resolve_caller()]] - `contains` [EXTRACTED]
-- [[_verify_bearer()]] - `contains` [EXTRACTED]
-- [[_verify_session_token()]] - `contains` [EXTRACTED]
-- [[get_caller()]] - `contains` [EXTRACTED]
-- [[issue_session_token()]] - `contains` [EXTRACTED]
-- [[issue_ws_token()]] - `contains` [EXTRACTED]
-- [[rbac.py]] - `imports_from` [EXTRACTED]
-- [[rbac_config.py]] - `imports_from` [EXTRACTED]
-- [[redeem_ws_token()]] - `contains` [EXTRACTED]
-- [[router.py_1]] - `imports_from` [EXTRACTED]
-- [[websocket.py]] - `imports_from` [EXTRACTED]
+- [[Auth Errors]] - `references` [INFERRED]
+- [[GatewayConfig_3]] - `references` [EXTRACTED]
+- [[RateLimiter_1]] - `references` [EXTRACTED]
+- [[auth.py]] - `contains` [EXTRACTED]
+- [[create_auth_dependency()]] - `references` [EXTRACTED]
+- [[get_auth_dependency()]] - `references` [EXTRACTED]
+- [[main.py]] - `references` [EXTRACTED]
+- [[python-jose]] - `references` [INFERRED]
+- [[rate_limiter (module-level instance)]] - `references` [EXTRACTED]
+- [[verify_token()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/document #graphify/EXTRACTED #community/create_auth_dependency

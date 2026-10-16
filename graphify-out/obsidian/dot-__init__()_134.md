@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/soc/websocket.py"
+source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 334"
-location: "L29"
+community: "api.py"
+location: "L941"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_334
+  - community/apipy
 ---
 
 # .__init__()
 
 ## Connections
-- [[SOCWebSocketHandler_1]] - `method` [EXTRACTED]
-- [[WebSocket_5]] - `references` [EXTRACTED]
+- [[SkillGuardBlocked]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_334
+#graphify/code #graphify/EXTRACTED #community/apipy

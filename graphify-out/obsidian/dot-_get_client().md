@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/collaborator_greeter.py"
 type: "code"
-community: "Community 181"
+community: "test_collaborator_greeter.py"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_181
+  - community/test_collaborator_greeterpy
 ---
 
 # ._get_client()
@@ -16,4 +16,4 @@ tags:
 - [[AsyncClient]] - `references` [EXTRACTED]
 - [[CollaboratorGreeter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_181
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy

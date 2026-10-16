@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "TeamsConfig"
+community: "KillSwitchMonitor"
 location: "L497"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TeamsConfig
+  - community/KillSwitchMonitor
 ---
 
 # deque
 
 ## Connections
-- [[.__init__()_25]] - `calls` [INFERRED]
-- [[.__init__()_32]] - `calls` [INFERRED]
-- [[.__init__()_53]] - `calls` [INFERRED]
-- [[.__init__()_68]] - `calls` [INFERRED]
-- [[.__init__()_92]] - `calls` [EXTRACTED]
-- [[._count_recent_events()]] - `references` [EXTRACTED]
-- [[.analyze_message()]] - `calls` [INFERRED]
-- [[KillSwitchConfig]] - `uses` [INFERRED]
+- [[dot-__init__()_97]] - `calls` [EXTRACTED]
+- [[dot-__init__()_93]] - `calls` [INFERRED]
+- [[dot-__init__()_94]] - `calls` [INFERRED]
+- [[dot-__init__()_95]] - `calls` [INFERRED]
+- [[dot-__init__()_96]] - `calls` [INFERRED]
+- [[dot-_count_recent_events()]] - `references` [EXTRACTED]
+- [[dot-analyze_message()]] - `calls` [INFERRED]
+- [[KillSwitchConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/TeamsConfig
+#graphify/code #graphify/INFERRED #community/KillSwitchMonitor

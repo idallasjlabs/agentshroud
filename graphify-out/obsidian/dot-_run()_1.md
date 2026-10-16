@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/cron_state_monitor.py"
+source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "Community 90"
-location: "L299"
+community: "ContainerEngine"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/ContainerEngine
 ---
 
 # ._run()
 
 ## Connections
-- [[dot-start()_2]] - `calls` [EXTRACTED]
-- [[CronStateMonitor]] - `method` [EXTRACTED]
+- [[CompletedProcess_3]] - `references` [EXTRACTED]
+- [[ContainerEngine]] - `method` [EXTRACTED]
+- [[Run a CLI command and return the result.]] - `rationale_for` [EXTRACTED]
+- [[Start a container. Returns container id.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_90
+#graphify/code #graphify/EXTRACTED #community/ContainerEngine

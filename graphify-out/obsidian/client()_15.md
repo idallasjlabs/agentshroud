@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/tests/test_soc_egress_endpoints.py"
 type: "code"
-community: "AgentShroud v1.0.0 Fortress Release Announcement"
-location: "L135"
+community: "test_e2e.py"
+location: "L16"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/AgentShroud_v100_Fortress_Release_Announcement
+  - graphify/EXTRACTED
+  - community/test_e2epy
 ---
 
 # client()
 
 ## Connections
 - [[AsyncClient]] - `calls` [INFERRED]
-- [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
+- [[test_soc_egress_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AgentShroud_v100_Fortress_Release_Announcement
+#graphify/code #graphify/EXTRACTED #community/test_e2epy

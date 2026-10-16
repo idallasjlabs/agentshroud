@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "Cross-Bot Trust & A2A Governance"
+community: "._update_score"
 location: "L196"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/_update_score
 ---
 
 # ._apply_decay()
@@ -17,4 +17,4 @@ tags:
 - [[Apply time-based decay to score.]] - `rationale_for` [EXTRACTED]
 - [[TrustManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/code #graphify/EXTRACTED #community/_update_score

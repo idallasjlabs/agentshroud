@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "Community 155"
+community: "MiddlewareManager"
 location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_155
+  - community/MiddlewareManager
 ---
 
 # .daily_summary()
@@ -15,4 +15,4 @@ tags:
 - [[EgressMonitor]] - `method` [EXTRACTED]
 - [[EgressSummary]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_155
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

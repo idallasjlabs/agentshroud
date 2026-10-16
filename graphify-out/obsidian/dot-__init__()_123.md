@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "PII Sanitizer & Redaction"
-location: "L58"
+community: "test_egress_filter.py"
+location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__Redaction
+  - community/test_egress_filterpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[ToolResultPIIConfig]] - `references` [EXTRACTED]
-- [[ToolResultSanitizer]] - `method` [EXTRACTED]
+- [[FakeAuditStore_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__Redaction
+#graphify/code #graphify/EXTRACTED #community/test_egress_filterpy

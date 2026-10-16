@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_a2a_proxy.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "Community 103"
-location: "L32"
+community: "AlertStore"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_103
+  - community/AlertStore
 ---
 
 # .__init__()
 
 ## Connections
-- [[_StubForwarder]] - `method` [EXTRACTED]
+- [[AlertStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_103
+#graphify/code #graphify/EXTRACTED #community/AlertStore

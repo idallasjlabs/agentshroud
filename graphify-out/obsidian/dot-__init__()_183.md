@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/file_sandbox.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "File Sandbox & Privilege Separation Tests"
-location: "L187"
+community: "AgentRegistry"
+location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/File_Sandbox__Privilege_Separation_Tests
+  - community/AgentRegistry
 ---
 
 # .__init__()
 
 ## Connections
-- [[FileSandbox]] - `method` [EXTRACTED]
-- [[FileSandboxConfig]] - `references` [EXTRACTED]
-- [[PIIScanner]] - `calls` [EXTRACTED]
+- [[AgentRegistry]] - `references` [EXTRACTED]
+- [[IsolationVerifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

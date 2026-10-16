@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "Community 747"
-location: "L138"
+community: "ServiceManager"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_747
+  - community/ServiceManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_sessions()]] - `calls` [EXTRACTED]
-- [[Initialize session manager.          Args             base_workspace Base dire]] - `rationale_for` [EXTRACTED]
-- [[Path_56]] - `references` [EXTRACTED]
-- [[UserSessionManager]] - `method` [EXTRACTED]
+- [[_FakeResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_747
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

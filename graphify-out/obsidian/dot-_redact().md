@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "Community 46"
+community: "DifferentialPIIDetector"
 location: "L520"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_46
+  - community/DifferentialPIIDetector
 ---
 
 # ._redact()
@@ -17,4 +17,4 @@ tags:
 - [[PIIHit]] - `references` [EXTRACTED]
 - [[Replace detected PII tokens with ENTITY_TYPE placeholders.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_46
+#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "Community 226"
+community: "rbac_config.py"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_226
+  - community/rbac_configpy
 ---
 
 # ._load_paused_ids()
@@ -17,4 +17,4 @@ tags:
 - [[ContributorManager]] - `method` [EXTRACTED]
 - [[load_paused_collaborator_ids()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_226
+#graphify/code #graphify/EXTRACTED #community/rbac_configpy

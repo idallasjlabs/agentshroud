@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_differential_pii_detector.py"
+source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L35"
+community: "AlertDispatcher"
+location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/AlertDispatcher
 ---
 
 # default_config()
 
 ## Connections
-- [[DifferentialPIIConfig_1]] - `references` [EXTRACTED]
-- [[test_differential_pii_detector.py]] - `contains` [EXTRACTED]
+- [[EgressMonitorConfig]] - `calls` [EXTRACTED]
+- [[test_egress_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

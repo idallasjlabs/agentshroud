@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Telegram Proxy Inbound Tests"
-location: "L8009"
+community: "CollaboratorActivityTracker"
+location: "L4533"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Inbound_Tests
+  - community/CollaboratorActivityTracker
 ---
 
 # ._make_proxy()
 
 ## Connections
-- [[FakeRBAC]] - `calls` [EXTRACTED]
-- [[PassthroughPipeline]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
-- [[TestProgressiveLockdownUX]] - `method` [EXTRACTED]
+- [[dot-test_400_retry_no_loop()]] - `calls` [EXTRACTED]
+- [[dot-test_400_retry_succeeds_when_text_strippable()]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `references` [EXTRACTED]
+- [[TestTelegram400Retry]] - `method` [EXTRACTED]
+- [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Inbound_Tests
+#graphify/code #graphify/EXTRACTED #community/CollaboratorActivityTracker

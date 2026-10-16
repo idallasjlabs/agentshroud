@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/tests/test_e2e.py"
+source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "AgentShroud v1.0.0 Fortress Release Announcement"
-location: "L24"
+community: "ModeRequest"
+location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_v100_Fortress_Release_Announcement
+  - community/ModeRequest
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[Fully initialized async client with lifespan.]] - `rationale_for` [EXTRACTED]
-- [[test_e2e.py]] - `contains` [EXTRACTED]
+- [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_v100_Fortress_Release_Announcement
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

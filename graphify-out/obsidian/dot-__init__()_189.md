@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/skill_guard.py"
+source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "Community 849"
-location: "L314"
+community: "LLMProxy"
+location: "L391"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_849
+  - community/LLMProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[SkillGuard_1]] - `method` [EXTRACTED]
-- [[_Rule]] - `references` [EXTRACTED]
+- [[_TrackingInjector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_849
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

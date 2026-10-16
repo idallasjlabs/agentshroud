@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/references/steve-hay-plan.md"
 type: "document"
-community: "agentshroud-blueteam/references/steve-hay-plan.m"
+community: "agentshroud-blueteam/references/steve-hay-plan.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/references/steve-hay-planm
+  - community/agentshroud-blueteam/references/steve-hay-planmd
 ---
 
 # agentshroud-blueteam/references/steve-hay-plan.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[plan_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/references/steve-hay-planm
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/references/steve-hay-planmd

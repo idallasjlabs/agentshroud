@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/patch_telegram_do_request.py"
 type: "code"
-community: "Community 475"
+community: "patch_telegram_do_request.py"
 location: "L108"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_475
+  - community/patch_telegram_do_requestpy
 ---
 
 # .do_request()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_Instr]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_475
+#graphify/code #graphify/EXTRACTED #community/patch_telegram_do_requestpy

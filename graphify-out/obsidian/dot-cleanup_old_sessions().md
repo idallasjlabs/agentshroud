@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/context_guard.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Session Manager & PII/Context Guard"
-location: "L486"
+community: "UserSessionManager"
+location: "L463"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Manager__PII/Context_Guard
+  - community/UserSessionManager
 ---
 
 # .cleanup_old_sessions()
 
 ## Connections
-- [[Clean up old session data.]] - `rationale_for` [EXTRACTED]
-- [[ContextGuard]] - `method` [EXTRACTED]
+- [[dot-_save_sessions()]] - `calls` [EXTRACTED]
+- [[Clean up sessions that haven't been active for the specified number of days.]] - `rationale_for` [EXTRACTED]
+- [[UserSessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

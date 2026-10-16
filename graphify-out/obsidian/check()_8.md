@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_hermes_chown_coverage.sh"
+source_file: "scripts/post-deploy-check.sh"
 type: "code"
-community: "AgentShroud — Master Feature List (Everything Ev"
-location: "L11"
+community: "asb (AgentShroud Bot helper)"
+location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud__Master_Feature_List_Everything_Ev
+  - community/asb_AgentShroud_Bot_helper
 ---
 
 # check()
 
 ## Connections
-- [[test_hermes_chown_coverage.sh]] - `defines` [EXTRACTED]
-- [[test_hermes_chown_coverage.sh script]] - `calls` [EXTRACTED]
+- [[post-deploy-check.sh]] - `defines` [EXTRACTED]
+- [[post-deploy-check.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud__Master_Feature_List_Everything_Ev
+#graphify/code #graphify/EXTRACTED #community/asb_AgentShroud_Bot_helper

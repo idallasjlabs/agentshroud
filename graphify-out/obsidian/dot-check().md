@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/ingest_api/auth.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "Approval Routing & Event Bus"
-location: "L47"
+community: "WebProxyConfig"
+location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/WebProxyConfig
 ---
 
 # .check()
 
 ## Connections
-- [[Check if client is within rate limit          Args             client_id Usual]] - `rationale_for` [EXTRACTED]
+- [[Check if request is within rate limit. Returns True if allowed.]] - `rationale_for` [EXTRACTED]
 - [[RateLimiter]] - `method` [EXTRACTED]
-- [[get_auth_dependency()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

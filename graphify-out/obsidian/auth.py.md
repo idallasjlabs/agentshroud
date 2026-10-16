@@ -1,29 +1,27 @@
 ---
-source_file: "gateway/ingest_api/auth.py"
-type: "code"
-community: "A2APolicyEngine"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+type: "document"
+community: "auth.py"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/authpy
 ---
 
 # auth.py
 
 ## Connections
-- [[GatewayConfig_1]] - `imports` [EXTRACTED]
-- [[README_128]] - `references` [EXTRACTED]
-- [[RateLimiter]] - `contains` [EXTRACTED]
-- [[api.py]] - `imports_from` [EXTRACTED]
-- [[approval.py]] - `imports_from` [EXTRACTED]
-- [[config.py]] - `imports_from` [EXTRACTED]
-- [[create_auth_dependency()]] - `contains` [EXTRACTED]
-- [[dashboard.py]] - `imports_from` [EXTRACTED]
-- [[forward.py]] - `imports_from` [EXTRACTED]
-- [[get_auth_dependency()]] - `contains` [EXTRACTED]
-- [[health.py]] - `imports_from` [EXTRACTED]
-- [[main.py_2]] - `imports_from` [EXTRACTED]
-- [[verify_token()]] - `contains` [EXTRACTED]
+- [[Config Keys Read_6]] - `contains` [EXTRACTED]
+- [[Environment Variables_16]] - `contains` [EXTRACTED]
+- [[Function Details_42]] - `contains` [EXTRACTED]
+- [[HTTP Responses]] - `contains` [EXTRACTED]
+- [[Imports From  Exports To_6]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_44]] - `contains` [EXTRACTED]
+- [[Known Issues  Notes_7]] - `contains` [EXTRACTED]
+- [[Purpose_176]] - `contains` [EXTRACTED]
+- [[Related_48]] - `contains` [EXTRACTED]
+- [[Responsibilities_51]] - `contains` [EXTRACTED]
+- [[auth.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/document #graphify/EXTRACTED #community/authpy

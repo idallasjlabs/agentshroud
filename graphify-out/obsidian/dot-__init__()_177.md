@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_http_proxy.py"
+source_file: "gateway/security/session_security.py"
 type: "code"
-community: "Community 72"
-location: "L91"
+community: "SessionManager"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/SessionManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[_MockWriter_1]] - `method` [EXTRACTED]
+- [[SessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/SessionManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 537"
+community: "TestStartupScannerKeying"
 location: "L316"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_537
+  - community/TestStartupScannerKeying
 ---
 
 # ._make_store_result_fn()
@@ -19,6 +19,5 @@ tags:
 - [[dot-test_legacy_trivy_key_present()]] - `calls` [EXTRACTED]
 - [[Reproduce the _store_result closure from lifespan.py.]] - `rationale_for` [EXTRACTED]
 - [[TestStartupScannerKeying]] - `method` [EXTRACTED]
-- [[_store_result()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_537
+#graphify/code #graphify/EXTRACTED #community/TestStartupScannerKeying

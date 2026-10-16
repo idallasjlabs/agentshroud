@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/killswitch_monitor.py"
+source_file: "gateway/security/mfa_guard.py"
 type: "code"
-community: "Community 54"
-location: "L37"
+community: "test_mfa_guard.py"
+location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/test_mfa_guardpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_61]] - `references` [EXTRACTED]
-- [[KillSwitchConfig_1]] - `references` [EXTRACTED]
-- [[KillSwitchMonitor]] - `method` [EXTRACTED]
-- [[deque]] - `calls` [EXTRACTED]
+- [[dot-_decode_secret()]] - `calls` [EXTRACTED]
+- [[MFAGuard_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_54
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

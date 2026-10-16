@@ -1,20 +1,20 @@
 ---
 source_file: "src/interfaces/text_control_center.py"
 type: "code"
-community: "Community 277"
+community: "ControlCenter"
 location: "L248"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_277
+  - community/ControlCenter
 ---
 
 # .draw_kill_switch()
 
 ## Connections
 - [[dot-clear_screen()]] - `calls` [EXTRACTED]
-- [[dot-run()_3]] - `calls` [EXTRACTED]
+- [[dot-run()_2]] - `calls` [EXTRACTED]
 - [[ControlCenter]] - `method` [EXTRACTED]
 - [[Draw kill switch screen]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_277
+#graphify/code #graphify/EXTRACTED #community/ControlCenter

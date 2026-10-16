@@ -1,18 +1,18 @@
 ---
-source_file: ".agents/skills/i-browser/browse.js"
+source_file: "docker/config/hermes/skills/i-browser/browse.js"
 type: "code"
-community: "test_skill_guard.py"
+community: "hermes/skills/i-browser/browse.js"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_skill_guardpy
+  - community/hermes/skills/i-browser/browsejs
 ---
 
 # appendLog()
 
 ## Connections
-- [[browse.js]] - `contains` [EXTRACTED]
 - [[browserFetch()]] - `calls` [EXTRACTED]
+- [[hermesskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_skill_guardpy
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-browser/browsejs

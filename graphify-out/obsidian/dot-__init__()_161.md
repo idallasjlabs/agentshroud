@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/mcp_audit.py"
+source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "Community 54"
-location: "L62"
+community: "A2APolicyEngine"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/A2APolicyEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPAuditTrail_1]] - `method` [EXTRACTED]
-- [[deque]] - `calls` [INFERRED]
+- [[A2APolicyEngine]] - `references` [EXTRACTED]
+- [[A2AProxy]] - `method` [EXTRACTED]
+- [[Any_68]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_54
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

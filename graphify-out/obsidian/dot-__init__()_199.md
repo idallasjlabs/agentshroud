@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_web_proxy_security.py"
+source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "Community 96"
-location: "L47"
+community: "test_a2a_proxy.py"
+location: "L446"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_96
+  - community/test_a2a_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[MockEgressEvent]] - `method` [EXTRACTED]
+- [[_Event]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_96
+#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

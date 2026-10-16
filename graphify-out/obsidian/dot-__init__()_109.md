@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "SOC Service Manager (Container Engine)"
-location: "L45"
+community: "MiddlewareManager"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Service_Manager_Container_Engine
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeUnixSocket]] - `method` [EXTRACTED]
+- [[dot-_ensure_base_directory()]] - `calls` [EXTRACTED]
+- [[PathIsolationConfig]] - `references` [EXTRACTED]
+- [[PathIsolationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Service_Manager_Container_Engine
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

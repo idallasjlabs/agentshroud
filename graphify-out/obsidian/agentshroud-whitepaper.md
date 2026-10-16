@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-whitepaper.md"
 type: "document"
-community: "Restart Procedure"
+community: "AgentShroud: Enterprise Governance for Autonomous AI Agents"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Restart_Procedure
+  - community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents
 ---
 
 # agentshroud-whitepaper.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Restart_Procedure
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents

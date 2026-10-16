@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/report_store.py"
 type: "code"
-community: "Community 87"
+community: "ReportStore"
 location: "L124"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_87
+  - community/ReportStore
 ---
 
 # ._sanitize_sync()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ReportStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_87
+#graphify/code #graphify/EXTRACTED #community/ReportStore

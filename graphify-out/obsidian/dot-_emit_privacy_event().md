@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Community 50"
+community: ".process_tool_call"
 location: "L311"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_50
+  - community/process_tool_call
 ---
 
 # ._emit_privacy_event()
@@ -18,4 +18,4 @@ tags:
 - [[MCPProxy_1]] - `method` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_50
+#graphify/code #graphify/EXTRACTED #community/process_tool_call

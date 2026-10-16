@@ -1,14 +1,14 @@
 ---
 source_file: "docs/vault/.obsidian/app.json"
 type: "code"
-community: "Bug Report Issue Template"
+community: "app.json"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bug_Report_Issue_Template
+  - community/appjson
 ---
 
 # app.json
 
-#graphify/code #graphify/EXTRACTED #community/Bug_Report_Issue_Template
+#graphify/code #graphify/EXTRACTED #community/appjson

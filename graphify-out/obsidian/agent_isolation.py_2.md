@@ -1,27 +1,28 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
-type: "document"
-community: "Skill: Audit Branch (AB) — Merge Regression Dete"
-location: "L10"
+source_file: "gateway/security/agent_isolation.py"
+type: "code"
+community: "AgentRegistry"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_Audit_Branch_AB__Merge_Regression_Dete
+  - community/AgentRegistry
 ---
 
 # agent_isolation.py
 
 ## Connections
-- [[ContainerConfig Defaults]] - `contains` [EXTRACTED]
-- [[Environment Variables_5]] - `contains` [EXTRACTED]
-- [[Function Details_26]] - `contains` [EXTRACTED]
-- [[Integration Testing]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_29]] - `contains` [EXTRACTED]
-- [[Mode Enforce vs Monitor]] - `contains` [EXTRACTED]
-- [[Purpose_147]] - `contains` [EXTRACTED]
-- [[Related_33]] - `contains` [EXTRACTED]
-- [[Responsibilities_31]] - `contains` [EXTRACTED]
-- [[Threat Model_2]] - `contains` [EXTRACTED]
-- [[agent_isolation.py_1]] - `contains` [EXTRACTED]
+- [[Agent Isolation Module Badge Icon]] - `conceptually_related_to` [INFERRED]
+- [[AgentRegistry]] - `contains` [EXTRACTED]
+- [[ContainerConfig_1]] - `contains` [EXTRACTED]
+- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[IsolationCheck]] - `contains` [EXTRACTED]
+- [[IsolationStatus]] - `contains` [EXTRACTED]
+- [[IsolationVerifier]] - `contains` [EXTRACTED]
+- [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - `references` [INFERRED]
+- [[OPENCLAW_SANDBOX_MODE]] - `references` [INFERRED]
+- [[drift_detector.py_2]] - `references` [EXTRACTED]
+- [[env_guard.py]] - `references` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Dete
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

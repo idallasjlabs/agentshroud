@@ -12,6 +12,6 @@ tags:
 # clawhub/SKILL.md
 
 ## Connections
-- [[clawhub CLI]] - `implements` [EXTRACTED]
+- [[ClawHub CLI]] - `implements` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/clawhub/SKILLmd

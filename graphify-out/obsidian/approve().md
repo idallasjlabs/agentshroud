@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "patch"
+community: "cli/main.py"
 location: "L247"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/patch
+  - community/cli/mainpy
 ---
 
 # approve()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Approve an egress request by ID.]] - `rationale_for` [EXTRACTED]
 - [[_output()]] - `calls` [EXTRACTED]
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[climain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/patch
+#graphify/code #graphify/EXTRACTED #community/cli/mainpy

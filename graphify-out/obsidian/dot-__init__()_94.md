@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/encoding_detector.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Canary Tripwire"
-location: "L69"
+community: "KillSwitchMonitor"
+location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Canary_Tripwire
+  - community/KillSwitchMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[EncodingConfig]] - `references` [EXTRACTED]
-- [[EncodingDetector]] - `method` [EXTRACTED]
+- [[AuditChain]] - `method` [EXTRACTED]
+- [[deque]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Canary_Tripwire
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

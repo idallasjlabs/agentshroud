@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "Community 142"
+community: "SecureBrowser"
 location: "L320"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_142
+  - community/SecureBrowser
 ---
 
 # .click()
@@ -21,4 +21,4 @@ tags:
 - [[SecurityError_3]] - `calls` [EXTRACTED]
 - [[main()_11]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_142
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

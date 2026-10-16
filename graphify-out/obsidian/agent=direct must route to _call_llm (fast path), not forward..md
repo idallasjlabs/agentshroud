@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "ToolACLEnforcer"
+community: "_pcm_bytes"
 location: "L1523"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolACLEnforcer
+  - community/_pcm_bytes
 ---
 
 # ?agent=direct must route to _call_llm (fast path), not /forward.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_direct_agent_calls_call_llm()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolACLEnforcer
+#graphify/rationale #graphify/EXTRACTED #community/_pcm_bytes

@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/proxy/mcp_inspector.py"
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "Community 211"
-location: "L133"
+community: "KillSwitchMonitor"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_211
+  - community/KillSwitchMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPInspector_1]] - `method` [EXTRACTED]
+- [[AlertDispatcher]] - `method` [EXTRACTED]
+- [[Path_34]] - `references` [EXTRACTED]
+- [[deque]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_211
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/crashwatch.sh"
 type: "code"
-community: "MockValidator"
+community: "start.sh"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MockValidator
+  - community/startsh
 ---
 
 # _write_last_alert_epoch()
@@ -15,4 +15,4 @@ tags:
 - [[crashwatch.sh]] - `defines` [EXTRACTED]
 - [[crashwatch.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MockValidator
+#graphify/code #graphify/EXTRACTED #community/startsh

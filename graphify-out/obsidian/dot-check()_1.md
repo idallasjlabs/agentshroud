@@ -1,22 +1,21 @@
 ---
-source_file: "gateway/security/egress_filter.py"
+source_file: "gateway/security/cron_state_monitor.py"
 type: "code"
-community: "Community 167"
-location: "L163"
+community: "CronStateMonitor"
+location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_167
+  - community/CronStateMonitor
 ---
 
 # .check()
 
 ## Connections
-- [[dot-_check_impl()]] - `calls` [EXTRACTED]
-- [[dot-check_async()]] - `calls` [EXTRACTED]
-- [[EgressAttempt]] - `references` [EXTRACTED]
-- [[EgressFilter]] - `method` [EXTRACTED]
-- [[Public entry — records the decision for the SOC heat-map (SCRUM-80),         the]] - `rationale_for` [EXTRACTED]
-- [[record_decision]] - `calls` [EXTRACTED]
+- [[dot-_dispatch_aggregate()]] - `calls` [EXTRACTED]
+- [[dot-_evaluate()]] - `calls` [EXTRACTED]
+- [[dot-parse_store()]] - `calls` [EXTRACTED]
+- [[CronStateMonitor]] - `method` [EXTRACTED]
+- [[One poll pass over all stores.  Never raises.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_167
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_cron_state_monitor.py"
+source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "Community 90"
-location: "L54"
+community: "test_cli_coverage.py"
+location: "L634"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/test_cli_coveragepy
 ---
 
 # .__call__()
 
 ## Connections
-- [[_DispatchSpy]] - `method` [EXTRACTED]
+- [[_FakeConnect]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_90
+#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy

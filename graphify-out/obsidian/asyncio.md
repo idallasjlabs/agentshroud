@@ -1,31 +1,26 @@
 ---
 source_file: ""
 type: "code"
-community: "test_block_credentials.py"
+community: "test_main_endpoints.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_block_credentialspy
+  - community/test_main_endpointspy
 ---
 
 # asyncio
 
 ## Connections
-- [[test_api_source_not_blocked()]] - `references` [EXTRACTED]
-- [[test_blocked_message_contains_guidance()]] - `references` [EXTRACTED]
-- [[test_console_source_not_blocked()]] - `references` [EXTRACTED]
-- [[test_control_ui_source_not_blocked()]] - `references` [EXTRACTED]
-- [[test_external_api_blocks_credentials()]] - `references` [EXTRACTED]
-- [[test_localhost_source_not_blocked()]] - `references` [EXTRACTED]
-- [[test_normal_technical_content_not_blocked()]] - `references` [EXTRACTED]
-- [[test_normal_text_not_blocked()]] - `references` [EXTRACTED]
-- [[test_short_password_field_not_blocked()]] - `references` [EXTRACTED]
-- [[test_six_digit_number_not_blocked()]] - `references` [EXTRACTED]
-- [[test_telegram_blocks_aws_key()]] - `references` [EXTRACTED]
-- [[test_telegram_blocks_github_token()]] - `references` [EXTRACTED]
-- [[test_telegram_blocks_json_password()]] - `references` [EXTRACTED]
-- [[test_telegram_blocks_openai_api_key()]] - `references` [EXTRACTED]
-- [[test_telegram_blocks_password()]] - `references` [EXTRACTED]
-- [[test_telegram_blocks_ssh_private_key()]] - `references` [EXTRACTED]
+- [[dot-test_alerts_accepted_from_localhost()]] - `references` [EXTRACTED]
+- [[dot-test_bots_inventory_matches_the_real_container_name()]] - `references` [EXTRACTED]
+- [[dot-test_connects_to_bridge_port_with_ws_scheme_and_query()]] - `references` [EXTRACTED]
+- [[dot-test_proxy_returns_400_on_traversal()]] - `references` [EXTRACTED]
+- [[dot-test_proxy_returns_400_on_traversal_in_query()]] - `references` [EXTRACTED]
+- [[dot-test_relays_text_and_bytes_both_directions()]] - `references` [EXTRACTED]
+- [[dot-test_traversal_in_path_closes_without_connecting()]] - `references` [EXTRACTED]
+- [[dot-test_traversal_in_query_closes_without_connecting()]] - `references` [EXTRACTED]
+- [[dot-test_upstream_connect_failure_closes_gracefully()]] - `references` [EXTRACTED]
+- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `imports` [EXTRACTED]
+- [[llm_proxy.py_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_block_credentialspy
+#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy

@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "TestAuth"
+community: "test_mfa_guard.py"
 location: "L410"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAuth
+  - community/test_mfa_guardpy
 ---
 
 # _submit_enhanced_high_risk()
 
 ## Connections
-- [[ApprovalRequest_3]] - `calls` [EXTRACTED]
-- [[EnhancedApprovalQueue_2]] - `references` [EXTRACTED]
+- [[ApprovalRequest_5]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue_1]] - `references` [EXTRACTED]
 - [[test_enhanced_decide_missing_code_denied()]] - `calls` [EXTRACTED]
 - [[test_enhanced_decide_reject_no_mfa()]] - `calls` [EXTRACTED]
 - [[test_enhanced_decide_valid_code_approves()]] - `calls` [EXTRACTED]
 - [[test_mfa_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAuth
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

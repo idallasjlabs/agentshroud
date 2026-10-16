@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "Community 44"
+community: "OutboundInfoFilter"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_44
+  - community/OutboundInfoFilter
 ---
 
 # ._compile_patterns()
 
 ## Connections
-- [[dot-__init__()_147]] - `calls` [EXTRACTED]
-- [[Any_55]] - `references` [EXTRACTED]
+- [[dot-__init__()_11]] - `calls` [EXTRACTED]
+- [[Any_3]] - `references` [EXTRACTED]
 - [[Compile all filter patterns into regex objects.]] - `rationale_for` [EXTRACTED]
 - [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_44
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

@@ -1,19 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
+source_file: "gateway/proxy/telegram_replay.py"
 type: "code"
-community: "Community 135"
-location: "L401"
+community: "test_telegram_replay.py"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_135
+  - community/test_telegram_replaypy
 ---
 
 # .close()
 
 ## Connections
-- [[Clean up browser resources_1]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser_1]] - `method` [EXTRACTED]
-- [[main()_9]] - `calls` [EXTRACTED]
+- [[Close the SQLite connection (idempotent).]] - `rationale_for` [EXTRACTED]
+- [[UpdateReplayBuffer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_135
+#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ssh_proxy/proxy.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Approval Queue (WebSocket)"
-location: "L138"
+community: "_DummyTargetWriter"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_WebSocket
+  - community/_DummyTargetWriter
 ---
 
 # .__init__()
 
 ## Connections
-- [[SSHConfig]] - `references` [EXTRACTED]
-- [[SSHProxy_1]] - `method` [EXTRACTED]
+- [[_HeaderTimeoutReader]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_WebSocket
+#graphify/code #graphify/EXTRACTED #community/_DummyTargetWriter

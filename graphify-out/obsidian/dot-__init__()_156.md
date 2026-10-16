@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/tool_chain_analyzer.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Voice Gateway STT & Browser Security"
-location: "L183"
+community: "A2APolicyConfig"
+location: "L393"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/A2APolicyConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_custom_patterns()]] - `calls` [EXTRACTED]
-- [[dot-_load_default_patterns()]] - `calls` [EXTRACTED]
-- [[Any_59]] - `references` [EXTRACTED]
-- [[Initialize the tool chain analyzer.          Args             config Configura]] - `rationale_for` [EXTRACTED]
-- [[ToolChainAnalyzer]] - `method` [EXTRACTED]
+- [[A2APolicyConfig_1]] - `references` [EXTRACTED]
+- [[A2APolicyEngine_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security
+#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_differential_pii_detector.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Community 46"
-location: "L210"
+community: "MCPPermissionManager"
+location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_46
+  - community/MCPPermissionManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeRecognizerResult]] - `method` [EXTRACTED]
+- [[HttpSseConnection]] - `method` [EXTRACTED]
+- [[MCPServerConfig_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_46
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

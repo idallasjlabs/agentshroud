@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "Community 61"
+community: "LLMProxy"
 location: "L543"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_61
+  - community/LLMProxy
 ---
 
 # .can_use_tool()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeToolACL]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_61
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

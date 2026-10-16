@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ChatRequest]] - `contains` [EXTRACTED]
 - [[ChatResponse]] - `contains` [EXTRACTED]
-- [[FastAPI_4]] - `imports_from` [EXTRACTED]
+- [[FastAPI_5]] - `imports_from` [EXTRACTED]
 - [[Isaiah Chat Service - Phase 3 MVP Minimal chat service with Isaiah's personality]] - `rationale_for` [EXTRACTED]
 - [[_check_rate_limit()]] - `contains` [EXTRACTED]
 - [[_get_auth_token()]] - `contains` [EXTRACTED]

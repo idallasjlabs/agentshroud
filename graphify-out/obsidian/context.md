@@ -1,18 +1,19 @@
 ---
-source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
+source_file: "docker/config/openclaw/workspace/memory/context.md"
 type: "document"
-community: "AgentShroud Changelog"
-location: "L6"
+community: "context.md"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Changelog
+  - community/contextmd
 ---
 
-# Context
+# context.md
 
 ## Connections
-- [[ADR-001 Transparent Proxy vs Agent Modification]] - `contains` [EXTRACTED]
-- [[Key Considerations]] - `contains` [EXTRACTED]
+- [[Active Projects]] - `contains` [EXTRACTED]
+- [[Key Facts]] - `contains` [EXTRACTED]
+- [[Pending Tasks]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Changelog
+#graphify/document #graphify/EXTRACTED #community/contextmd

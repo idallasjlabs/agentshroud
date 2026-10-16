@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/cross_bot_trust_ledger.py"
+source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "Cross-Bot Trust & A2A Governance"
-location: "L98"
+community: "test_a2a_proxy.py"
+location: "L279"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/test_a2a_proxypy
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[TrustDecayPolicy]] - `method` [EXTRACTED]
+- [[DifferentialPIIConfig_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

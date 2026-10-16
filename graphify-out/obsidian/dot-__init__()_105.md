@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/approval_queue/store.py"
+source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "Enhanced Approval Queue"
-location: "L43"
+community: "MiddlewareManager"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[ApprovalStore]] - `method` [EXTRACTED]
-- [[Path_25]] - `references` [EXTRACTED]
+- [[ContextGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

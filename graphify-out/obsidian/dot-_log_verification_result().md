@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "Community 54"
+community: "KillSwitchMonitor"
 location: "L574"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/KillSwitchMonitor
 ---
 
 # ._log_verification_result()
 
 ## Connections
 - [[dot-verify_killswitch()]] - `calls` [EXTRACTED]
-- [[Any_61]] - `references` [EXTRACTED]
+- [[Any_40]] - `references` [EXTRACTED]
 - [[KillSwitchMonitor]] - `method` [EXTRACTED]
 - [[Log verification result to file.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_54
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

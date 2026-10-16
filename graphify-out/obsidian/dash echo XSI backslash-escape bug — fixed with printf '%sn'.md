@@ -1,11 +1,11 @@
 ---
 source_file: "CHANGELOG.md"
 type: "rationale"
-community: "MCPToolResult"
+community: "OpenClaw cron: AgentShroud Daily Check-in (disabled, calls agentshroud-ssh-exec.sh)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPToolResult
+  - community/OpenClaw_cron_AgentShroud_Daily_Check-in_disabled_calls_agentshroud-ssh-execsh
 ---
 
 # dash echo XSI backslash-escape bug — fixed with printf '%s\n'
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[OpenClaw cron AgentShroud Daily Check-in (disabled, calls agentshroud-ssh-exec.sh)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPToolResult
+#graphify/rationale #graphify/EXTRACTED #community/OpenClaw_cron_AgentShroud_Daily_Check-in_disabled_calls_agentshroud-ssh-execsh

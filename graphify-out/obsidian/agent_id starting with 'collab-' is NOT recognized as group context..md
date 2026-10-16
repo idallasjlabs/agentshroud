@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "rationale"
-community: "TestEgressApprovalQueue"
+community: "GroupApprovalRouter"
 location: "L227"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/GroupApprovalRouter
 ---
 
 # agent_id starting with 'collab-' is NOT recognized as group context.
 
 ## Connections
-- [[.test_is_group_context_false_for_collab_agent_id()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_is_group_context_false_for_collab_agent_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/rationale #graphify/EXTRACTED #community/GroupApprovalRouter

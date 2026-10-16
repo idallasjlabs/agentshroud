@@ -1,14 +1,14 @@
 ---
 source_file: "firmware/voice-terminal/main/audio.c"
 type: "code"
-community: "scripts/audit_merge_regression.py"
+community: "audio_set_volume() — spoken volume command target"
 location: "line 168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/audit_merge_regressionpy
+  - community/audio_set_volume__spoken_volume_command_target
 ---
 
 # audio_set_volume() — spoken volume command target
 
-#graphify/code #graphify/EXTRACTED #community/scripts/audit_merge_regressionpy
+#graphify/code #graphify/EXTRACTED #community/audio_set_volume__spoken_volume_command_target

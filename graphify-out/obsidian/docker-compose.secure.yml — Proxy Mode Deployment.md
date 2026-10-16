@@ -1,13 +1,13 @@
 ---
 source_file: "docker-compose.secure.yml"
 type: "document"
-community: "AgentShroud Badge Icon 60x60"
+community: "docker-compose.secure.yml — Proxy Mode Deployment"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Badge_Icon_60x60
+  - community/docker-composesecureyml__Proxy_Mode_Deployment
 ---
 
 # docker-compose.secure.yml — Proxy Mode Deployment
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Badge_Icon_60x60
+#graphify/document #graphify/EXTRACTED #community/docker-composesecureyml__Proxy_Mode_Deployment

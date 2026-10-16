@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Community 112"
-location: "L163"
+community: "SecureBrowser"
+location: "L401"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_112
+  - community/SecureBrowser
 ---
 
 # .close()
 
 ## Connections
-- [[AuditStore_1]] - `method` [EXTRACTED]
-- [[Close the database connection.]] - `rationale_for` [EXTRACTED]
+- [[Clean up browser resources_1]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_1]] - `method` [EXTRACTED]
+- [[main()_8]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_112
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

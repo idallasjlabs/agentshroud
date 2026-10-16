@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "Local-Model Job Quality Matrix"
+community: "PrivacyPolicyEnforcer"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Local-Model_Job_Quality_Matrix
+  - community/PrivacyPolicyEnforcer
 ---
 
 # default_policy()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_privacy_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Local-Model_Job_Quality_Matrix
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

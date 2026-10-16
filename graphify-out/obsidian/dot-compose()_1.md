@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docker_compose.py"
 type: "code"
-community: "Community 223"
+community: "TestProductionCompose"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_223
+  - community/TestProductionCompose
 ---
 
 # .compose()
@@ -15,4 +15,4 @@ tags:
 - [[TestMinimalCompose]] - `method` [EXTRACTED]
 - [[_load_compose()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_223
+#graphify/code #graphify/EXTRACTED #community/TestProductionCompose

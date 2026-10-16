@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Voice Gateway STT & Browser Security"
+community: "ToolChainAnalyzer"
 location: "L580"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/ToolChainAnalyzer
 ---
 
 # .add_pattern()
@@ -16,4 +16,4 @@ tags:
 - [[ChainPattern]] - `references` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

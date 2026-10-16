@@ -1,21 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
-type: "document"
-community: "TestOverallDetectionRate"
-location: "L10"
+source_file: "skills/custom/browser-fetch/browser-fetch.js"
+type: "code"
+community: "SecureBrowser - Enterprise Secure Browser Automation"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/TestOverallDetectionRate
+  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
 ---
 
 # browser-fetch.js
 
 ## Connections
-- [[Expected Behavior]] - `contains` [EXTRACTED]
-- [[Purpose_121]] - `contains` [EXTRACTED]
-- [[Related Notes_7]] - `contains` [EXTRACTED]
-- [[Security Controls_1]] - `contains` [EXTRACTED]
-- [[browser-fetch.js_1]] - `contains` [EXTRACTED]
+- [[SecureBrowser SKILL_2]] - `semantically_similar_to` [INFERRED]
+- [[appendLog()_2]] - `contains` [EXTRACTED]
+- [[browserFetch()_2]] - `contains` [EXTRACTED]
+- [[fs_3]] - `contains` [EXTRACTED]
+- [[path_17]] - `contains` [EXTRACTED]
+- [[{ chromium }_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOverallDetectionRate
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automation

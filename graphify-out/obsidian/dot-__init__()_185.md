@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/key_vault.py"
+source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Community 80"
-location: "L166"
+community: "AgentRegistry"
+location: "L584"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_80
+  - community/AgentRegistry
 ---
 
 # .__init__()
 
 ## Connections
-- [[KeyLeakDetector]] - `method` [EXTRACTED]
-- [[KeyVault]] - `references` [EXTRACTED]
+- [[Args             block_threshold Score at or above which input is blocked.]] - `rationale_for` [EXTRACTED]
+- [[PatternRule]] - `references` [EXTRACTED]
+- [[PromptGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_80
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

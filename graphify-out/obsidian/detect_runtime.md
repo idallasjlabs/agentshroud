@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/runtime/__init__.py"
 type: "code"
-community: "openclaw agents/_README.txt (50+ specialized age"
+community: "detect_runtime"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw_agents/_READMEtxt_50_specialized_age
+  - community/detect_runtime
 ---
 
 # detect_runtime
 
-#graphify/code #graphify/EXTRACTED #community/openclaw_agents/_READMEtxt_50_specialized_age
+#graphify/code #graphify/EXTRACTED #community/detect_runtime

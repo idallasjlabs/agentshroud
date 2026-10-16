@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_contributors.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "Community 226"
-location: "L25"
+community: "PodmanEngine"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_226
+  - community/PodmanEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeRBAC_1]] - `method` [EXTRACTED]
+- [[dot-_detect_compose()]] - `calls` [EXTRACTED]
+- [[PodmanEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_226
+#graphify/code #graphify/EXTRACTED #community/PodmanEngine

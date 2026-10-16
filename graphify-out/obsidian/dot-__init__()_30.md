@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "Community 108"
-location: "L95"
+community: "ProxyAction"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_108
+  - community/ProxyAction
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPServerConfig]] - `references` [EXTRACTED]
-- [[StdioConnection]] - `method` [EXTRACTED]
+- [[MockDNSVerdict]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_108
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/backup-bot-memory.sh"
 type: "concept"
-community: "CollaboratorGreeter"
+community: "export-bot-conversations.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/CollaboratorGreeter
+  - community/export-bot-conversationspy
 ---
 
 # agentshroud-openclaw bot container
@@ -15,4 +15,4 @@ tags:
 - [[disaster-recovery-backup.sh]] - `references` [EXTRACTED]
 - [[export_openclaw()]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/CollaboratorGreeter
+#graphify/concept #graphify/EXTRACTED #community/export-bot-conversationspy

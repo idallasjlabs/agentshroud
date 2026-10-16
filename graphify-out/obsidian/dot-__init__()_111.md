@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_slack_proxy_coverage.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "Slack Proxy & Main Endpoint Tests"
-location: "L78"
+community: "_FakeUpstreamWS"
+location: "L718"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_Proxy__Main_Endpoint_Tests
+  - community/_FakeUpstreamWS
 ---
 
 # .__init__()
 
 ## Connections
-- [[_RaisingRedactionResult]] - `method` [EXTRACTED]
+- [[_FakeUpstreamWS]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_Proxy__Main_Endpoint_Tests
+#graphify/code #graphify/EXTRACTED #community/_FakeUpstreamWS

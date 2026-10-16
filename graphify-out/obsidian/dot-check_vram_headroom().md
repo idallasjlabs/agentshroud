@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "P3 Infrastructure Security Modules"
+community: "ResourceGuard"
 location: "L350"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/P3_Infrastructure_Security_Modules
+  - community/ResourceGuard
 ---
 
 # .check_vram_headroom()
@@ -16,4 +16,4 @@ tags:
 - [[ResourceGuard]] - `method` [EXTRACTED]
 - [[VRAMHeadroomError]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

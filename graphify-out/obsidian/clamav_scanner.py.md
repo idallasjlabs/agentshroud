@@ -1,29 +1,17 @@
 ---
-source_file: "gateway/security/clamav_scanner.py"
-type: "code"
-community: "test_runtime_engines.py"
+source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
+type: "document"
+community: "clamav_scanner.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/test_runtime_enginespy
+  - community/clamav_scannerpy
 ---
 
-# clamav_scanner.py
+# clamav_scanner.py.md
 
 ## Connections
-- [[FR3 System Integrity]] - `references` [EXTRACTED]
-- [[alert_dispatcher.py]] - `references` [EXTRACTED]
-- [[clamav]] - `references` [INFERRED]
-- [[drift_detector.py]] - `references` [EXTRACTED]
-- [[generate_summary()]] - `contains` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[parse_clamscan_output()]] - `contains` [EXTRACTED]
-- [[run_clamscan()]] - `contains` [EXTRACTED]
-- [[save_report()]] - `contains` [EXTRACTED]
-- [[scan_bytes()]] - `contains` [EXTRACTED]
-- [[test_security_audit.py]] - `imports_from` [EXTRACTED]
-- [[update_virus_db()]] - `contains` [EXTRACTED]
-- [[web_content_scanner.py]] - `semantically_similar_to` [INFERRED]
+- [[clamav_scanner.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy
+#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy

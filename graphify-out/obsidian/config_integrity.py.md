@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/config_integrity.py"
 type: "code"
-community: "chatbot/main.py"
+community: "FR3: System Integrity"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/FR3_System_Integrity
 ---
 
 # config_integrity.py
@@ -15,4 +15,4 @@ tags:
 - [[ConfigIntegrityMonitor]] - `contains` [EXTRACTED]
 - [[FR3 System Integrity]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity

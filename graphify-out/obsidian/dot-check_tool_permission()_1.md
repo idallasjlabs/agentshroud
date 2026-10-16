@@ -1,23 +1,21 @@
 ---
-source_file: "gateway/proxy/mcp_permissions.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Community 175"
-location: "L440"
+community: "Action"
+location: "L231"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_175
+  - community/Action
 ---
 
 # .check_tool_permission()
 
 ## Connections
-- [[dot-_record_private_access_attempt()]] - `calls` [EXTRACTED]
-- [[dot-check_all()]] - `calls` [EXTRACTED]
-- [[dot-get_trust_level()]] - `calls` [EXTRACTED]
-- [[dot-infer_permission_level()]] - `calls` [EXTRACTED]
-- [[Check if an agent can call a specific tool.          Default-allow only blocks]] - `rationale_for` [EXTRACTED]
-- [[MCPPermissionManager]] - `method` [EXTRACTED]
-- [[PermissionCheck]] - `references` [EXTRACTED]
+- [[dot-get_user_role()_3]] - `calls` [EXTRACTED]
+- [[Check if a user can use tools of a specific tier.]] - `rationale_for` [EXTRACTED]
+- [[PermissionResult]] - `references` [EXTRACTED]
+- [[RBACManager_2]] - `method` [EXTRACTED]
+- [[ToolTier_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_175
+#graphify/code #graphify/EXTRACTED #community/Action

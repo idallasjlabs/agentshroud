@@ -1,13 +1,13 @@
 ---
 source_file: "docker-compose.sidecar.yml"
 type: "document"
-community: "AgentShroud Logo on Brand Blue Background"
+community: "docker-compose.sidecar.yml — Sidecar Mode Deployment"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Logo_on_Brand_Blue_Background
+  - community/docker-composesidecaryml__Sidecar_Mode_Deployment
 ---
 
 # docker-compose.sidecar.yml — Sidecar Mode Deployment
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Logo_on_Brand_Blue_Background
+#graphify/document #graphify/EXTRACTED #community/docker-composesidecaryml__Sidecar_Mode_Deployment

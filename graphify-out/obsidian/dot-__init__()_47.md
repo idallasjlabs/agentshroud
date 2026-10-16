@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/proxy/mcp_permissions.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Community 129"
-location: "L183"
+community: "StdioConnection"
+location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_129
+  - community/StdioConnection
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_privacy_policy()]] - `calls` [EXTRACTED]
-- [[dot-_recompile_private_data_patterns()]] - `calls` [EXTRACTED]
-- [[MCPPermissionManager]] - `method` [EXTRACTED]
-- [[MCPProxyConfig_1]] - `references` [EXTRACTED]
-- [[RBACConfig_2]] - `calls` [EXTRACTED]
+- [[Exception]] - `references` [EXTRACTED]
+- [[FakeConn]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_129
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

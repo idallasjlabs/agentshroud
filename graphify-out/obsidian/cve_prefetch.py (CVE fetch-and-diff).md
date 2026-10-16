@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/cron/scripts/cve_prefetch.py"
 type: "code"
-community: "TELEGRAM_ISSUES.md"
+community: "Report Delivery Format Instructions"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TELEGRAM_ISSUESmd
+  - community/Report_Delivery_Format_Instructions
 ---
 
 # cve_prefetch.py (CVE fetch-and-diff)
@@ -15,4 +15,4 @@ tags:
 - [[Daily CVE Triage & Remediation Scan Job]] - `shares_data_with` [EXTRACTED]
 - [[OpenClaw Cron Jobs Reference & Recreation Guide]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd
+#graphify/code #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions

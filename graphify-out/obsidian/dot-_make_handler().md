@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "code"
-community: "Community 187"
+community: "TestSubscriptionFilter"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_187
+  - community/TestSubscriptionFilter
 ---
 
 # ._make_handler()
@@ -19,4 +19,4 @@ tags:
 - [[SOCWebSocketHandler_2]] - `references` [EXTRACTED]
 - [[TestSubscriptionFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_187
+#graphify/code #graphify/EXTRACTED #community/TestSubscriptionFilter

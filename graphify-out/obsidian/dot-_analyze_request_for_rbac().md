@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "MiddlewareManager"
 location: "L925"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/MiddlewareManager
 ---
 
 # ._analyze_request_for_rbac()
@@ -15,9 +15,9 @@ tags:
 - [[dot-_check_rbac_permissions()]] - `calls` [EXTRACTED]
 - [[Action_1]] - `references` [EXTRACTED]
 - [[Analyze request to determine RBAC action, resource, and tool tier.]] - `rationale_for` [EXTRACTED]
-- [[Any_2]] - `references` [EXTRACTED]
+- [[Any_42]] - `references` [EXTRACTED]
 - [[MiddlewareManager]] - `method` [EXTRACTED]
 - [[Resource_1]] - `references` [EXTRACTED]
-- [[ToolTier_2]] - `references` [EXTRACTED]
+- [[ToolTier]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

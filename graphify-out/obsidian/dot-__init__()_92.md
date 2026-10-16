@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "SOC Auth & Audit Store"
-location: "L66"
+community: "migrate-cve-registry-ghsa.py"
+location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Auth__Audit_Store
+  - community/migrate-cve-registry-ghsapy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_Svc]] - `method` [EXTRACTED]
+- [[MatchResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Auth__Audit_Store
+#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

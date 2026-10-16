@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "SOC Auth & Audit Store"
-location: "L107"
+community: "ToolResultSanitizer"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Auth__Audit_Store
+  - community/ToolResultSanitizer
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeGroup]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer]] - `method` [EXTRACTED]
+- [[ToolResultSanitizerConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Auth__Audit_Store
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

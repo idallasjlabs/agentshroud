@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "UserSession"
+community: "agentshroud-ieee-paper.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/UserSession
+  - community/agentshroud-ieee-papermd
 ---
 
 # agentshroud-ieee-paper.md
@@ -28,7 +28,7 @@ tags:
 - [[Mutual TLS Container Communication]] - `references` [EXTRACTED]
 - [[NanoClaw Agent Platform]] - `references` [EXTRACTED]
 - [[OpenClaw Agent Platform]] - `references` [EXTRACTED]
-- [[PII Sanitizer_1]] - `references` [EXTRACTED]
+- [[PII Sanitizer_2]] - `references` [EXTRACTED]
 - [[Prompt Injection Defense (Ensemble of 20+ Patterns)]] - `references` [EXTRACTED]
 - [[STPA-Sec Analysis of AgentShroud]] - `references` [EXTRACTED]
 - [[SecurityPipeline (8-Guard Ordered Sequence)]] - `references` [EXTRACTED]
@@ -37,4 +37,4 @@ tags:
 - [[Transparent Proxy Architecture]] - `references` [EXTRACTED]
 - [[Zetherion AI Platform]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/UserSession
+#graphify/document #graphify/EXTRACTED #community/agentshroud-ieee-papermd

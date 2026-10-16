@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "The 8D Investigation Process"
+community: "jira_weekly_review.py"
 location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process
+  - community/jira_weekly_reviewpy
 ---
 
 # build_weekly_summary()
 
 ## Connections
 - [[Compose the human-readable weekly summary posted as the comment.      - commits]] - `rationale_for` [EXTRACTED]
-- [[datetime]] - `references` [EXTRACTED]
+- [[datetime_3]] - `references` [EXTRACTED]
 - [[jira_weekly_review.py]] - `contains` [EXTRACTED]
-- [[run()_1]] - `calls` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/The_8D_Investigation_Process
+#graphify/code #graphify/EXTRACTED #community/jira_weekly_reviewpy

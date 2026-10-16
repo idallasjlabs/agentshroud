@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "test_telegram_proxy_outbound.py"
+community: "AlertTelegramRelay"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_outboundpy
+  - community/AlertTelegramRelay
 ---
 
 # alert_telegram_relay.py
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AlertTelegramRelay]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

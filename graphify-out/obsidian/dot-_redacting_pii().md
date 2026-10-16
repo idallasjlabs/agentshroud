@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "Signed Instruction Envelopes & Security Pipeline"
+community: "OutboundInfoFilter"
 location: "L741"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Signed_Instruction_Envelopes__Security_Pipeline
+  - community/OutboundInfoFilter
 ---
 
 # ._redacting_pii()
@@ -18,4 +18,4 @@ tags:
 - [[PII sanitiser mock that simulates two entity redactions.]] - `rationale_for` [EXTRACTED]
 - [[TestInboundPIIOwnerExemption]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Signed_Instruction_Envelopes__Security_Pipeline
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

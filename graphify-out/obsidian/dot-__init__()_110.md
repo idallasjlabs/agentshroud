@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/security/xml_leak_filter.py"
 type: "code"
-community: "Slack Proxy & Main Endpoint Tests"
-location: "L96"
+community: "MiddlewareManager"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_Proxy__Main_Endpoint_Tests
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[AsyncMock]] - `calls` [INFERRED]
-- [[FakeProcess]] - `method` [EXTRACTED]
+- [[Initialize the filter with predefined patterns.]] - `rationale_for` [EXTRACTED]
+- [[XMLLeakFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_Proxy__Main_Endpoint_Tests
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

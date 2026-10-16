@@ -1,23 +1,18 @@
 ---
-source_file: "gateway/tests/test_ssh_endpoints.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L79"
+community: "test_e2e.py"
+location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/test_e2epy
 ---
 
 # client()
 
 ## Connections
-- [[ApprovalQueue]] - `calls` [EXTRACTED]
-- [[DataLedger]] - `calls` [EXTRACTED]
-- [[MultiAgentRouter]] - `calls` [EXTRACTED]
-- [[PIISanitizer]] - `calls` [EXTRACTED]
-- [[SSHProxy]] - `calls` [EXTRACTED]
-- [[Set up app state and provide TestClient.]] - `rationale_for` [EXTRACTED]
-- [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
+- [[AsyncClient]] - `calls` [INFERRED]
+- [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/test_e2epy

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/lib/container-runtime.sh"
 type: "code"
-community: "CI/CD Pipeline Advisor (README)"
+community: "asb (AgentShroud Bot helper)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_README
+  - community/asb_AgentShroud_Bot_helper
 ---
 
 # container-runtime.sh
@@ -17,4 +17,4 @@ tags:
 - [[container_runtime_engine()]] - `defines` [EXTRACTED]
 - [[detect_container_runtime()]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README
+#graphify/code #graphify/EXTRACTED #community/asb_AgentShroud_Bot_helper

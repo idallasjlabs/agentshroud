@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/package.json"
+source_file: "docker/config/hermes/skills/i-browser/package.json"
 type: "code"
-community: "proxy_status.py"
+community: "hermes/skills/i-browser/package.json"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/proxy_statuspy
+  - community/hermes/skills/i-browser/packagejson
 ---
 
 # author
 
 ## Connections
-- [[package.json_4]] - `contains` [EXTRACTED]
+- [[hermesskillsi-browserpackage.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/proxy_statuspy
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-browser/packagejson

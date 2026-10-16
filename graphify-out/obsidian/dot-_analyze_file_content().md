@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "Community 48"
+community: "GitGuard"
 location: "L332"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_48
+  - community/GitGuard
 ---
 
 # ._analyze_file_content()
@@ -17,7 +17,7 @@ tags:
 - [[dot-_scan_pyproject_toml()]] - `calls` [EXTRACTED]
 - [[Analyze file content for malicious patterns.]] - `rationale_for` [EXTRACTED]
 - [[GitGuard]] - `method` [EXTRACTED]
-- [[Path_44]] - `references` [EXTRACTED]
-- [[SecurityFinding_1]] - `references` [EXTRACTED]
+- [[Path_50]] - `references` [EXTRACTED]
+- [[SecurityFinding]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_48
+#graphify/code #graphify/EXTRACTED #community/GitGuard

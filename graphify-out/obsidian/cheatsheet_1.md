@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
+source_file: ".agents/skills/i-athena/SKILL.md"
 type: "document"
-community: "Output Sections (ALL required)"
+community: "Athena — Knowledge Distiller"
 location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Output_Sections_ALL_required
+  - community/Athena__Knowledge_Distiller
 ---
 
 # cheatsheet.md
 
 ## Connections
-- [[description of what this does_1]] - `contains` [EXTRACTED]
+- [[description of what this does]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

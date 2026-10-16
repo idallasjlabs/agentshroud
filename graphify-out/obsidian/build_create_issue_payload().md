@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
+source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "code"
-community: "test_config_hot_reload.py"
+community: "openclaw/workspace/jira_dev_ticket.py"
 location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_config_hot_reloadpy
+  - community/openclaw/workspace/jira_dev_ticketpy
 ---
 
 # build_create_issue_payload()
@@ -15,6 +15,6 @@ tags:
 - [[Build the REST v3 create-issue request body.]] - `rationale_for` [EXTRACTED]
 - [[_adf_doc()]] - `calls` [EXTRACTED]
 - [[create_issue()]] - `calls` [EXTRACTED]
-- [[jira_dev_ticket.py]] - `contains` [EXTRACTED]
+- [[openclawworkspacejira_dev_ticket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_config_hot_reloadpy
+#graphify/code #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "Community 330"
-location: "L630"
+community: "api.py"
+location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_330
+  - community/apipy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeConnect]] - `method` [EXTRACTED]
+- [[IntelReportStore]] - `method` [EXTRACTED]
+- [[Path_42]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_330
+#graphify/code #graphify/EXTRACTED #community/apipy

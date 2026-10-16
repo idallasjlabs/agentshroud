@@ -1,22 +1,22 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "Community 423"
-location: "L369"
+community: "ApprovalQueueConfig"
+location: "L509"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_423
+  - community/ApprovalQueueConfig
 ---
 
 # .broadcast()
 
 ## Connections
-- [[dot-_expire_stale()]] - `calls` [EXTRACTED]
+- [[dot-_timeout_request()]] - `calls` [EXTRACTED]
 - [[dot-decide()_1]] - `calls` [EXTRACTED]
 - [[dot-submit()_1]] - `calls` [EXTRACTED]
-- [[Any_54]] - `references` [EXTRACTED]
-- [[ApprovalQueue_1]] - `method` [EXTRACTED]
-- [[Send a JSON message to all connected WebSocket clients          Silently removes]] - `rationale_for` [EXTRACTED]
+- [[Any_60]] - `references` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
+- [[Send a JSON message to all connected WebSocket clients.          SCRUM-154 boun]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_423
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

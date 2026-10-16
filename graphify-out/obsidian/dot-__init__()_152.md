@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/network_validator.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Community 487"
-location: "L54"
+community: "MCPPermissionManager"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_487
+  - community/MCPPermissionManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[NetworkValidator]] - `method` [EXTRACTED]
+- [[MCPServerConfig_1]] - `references` [EXTRACTED]
+- [[StdioConnection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_487
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

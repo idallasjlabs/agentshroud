@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_forward_routing.py"
+source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "Multi-Agent Router & Chat UI"
-location: "L404"
+community: "WebhookReceiver"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Multi-Agent_Router__Chat_UI
+  - community/WebhookReceiver
 ---
 
 # .__init__()
 
 ## Connections
-- [[_TrustCaptor]] - `method` [EXTRACTED]
+- [[dot-_can_create_directory()]] - `calls` [EXTRACTED]
+- [[Path_9]] - `calls` [EXTRACTED]
+- [[RBACConfig_1]] - `calls` [EXTRACTED]
+- [[UserSessionManager]] - `calls` [EXTRACTED]
+- [[WebhookReceiver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI
+#graphify/code #graphify/EXTRACTED #community/WebhookReceiver

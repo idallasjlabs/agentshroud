@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "AlertDispatcher"
 location: "L337"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/AlertDispatcher
 ---
 
 # ._record_leakage()
@@ -19,4 +19,4 @@ tags:
 - [[EnvironmentLeakage]] - `calls` [EXTRACTED]
 - [[Record a detected environment leakage.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

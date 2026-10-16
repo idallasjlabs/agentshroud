@@ -1,18 +1,18 @@
 ---
 source_file: "scripts/lib/sunday-scan.sh"
 type: "code"
-community: "Approval queue (notify Isaiah via Telegram, wait"
+community: "Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)"
 location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_queue_notify_Isaiah_via_Telegram_wait
+  - community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
 ---
 
 # die()
 
 ## Connections
-- [[sunday-scan.sh]] - `defines` [EXTRACTED]
+- [[sunday-scan.sh (Trivy scan gate library)]] - `defines` [EXTRACTED]
 - [[sunday_run_scan_gate()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_queue_notify_Isaiah_via_Telegram_wait
+#graphify/code #graphify/EXTRACTED #community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds

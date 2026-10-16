@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Community 1125"
-location: "L41"
+community: "SecureBrowser"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1125
+  - community/SecureBrowser
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_pending_store()]] - `calls` [EXTRACTED]
-- [[ApprovalQueue_1]] - `method` [EXTRACTED]
-- [[ApprovalQueueConfig]] - `references` [EXTRACTED]
-- [[Initialize approval queue          Args             config Approval queue conf]] - `rationale_for` [EXTRACTED]
-- [[MFAGuard]] - `references` [EXTRACTED]
+- [[dot-_load_config()_1]] - `calls` [EXTRACTED]
+- [[SecureBrowser_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1125
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

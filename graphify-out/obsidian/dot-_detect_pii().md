@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "Community 46"
+community: "DifferentialPIIDetector"
 location: "L437"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_46
+  - community/DifferentialPIIDetector
 ---
 
 # ._detect_pii()
@@ -19,4 +19,4 @@ tags:
 - [[PIIHit]] - `references` [EXTRACTED]
 - [[Run PII detection, returning hits at or above floor.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_46
+#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector

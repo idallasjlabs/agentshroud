@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_bot_boot_static.sh"
+source_file: "tests/startup_smoke/test_hermes_mcp_reconciliation.sh"
 type: "code"
-community: "deploy-crush.sh — global Crush skill deployment"
-location: "L37"
+community: "test_hermes_mcp_reconciliation.sh"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/deploy-crushsh__global_Crush_skill_deployment
+  - community/test_hermes_mcp_reconciliationsh
 ---
 
 # check()
 
 ## Connections
-- [[test_bot_boot_static.sh]] - `defines` [EXTRACTED]
-- [[test_bot_boot_static.sh script]] - `calls` [EXTRACTED]
+- [[test_hermes_mcp_reconciliation.sh]] - `defines` [EXTRACTED]
+- [[test_hermes_mcp_reconciliation.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/deploy-crushsh__global_Crush_skill_deployment
+#graphify/code #graphify/EXTRACTED #community/test_hermes_mcp_reconciliationsh

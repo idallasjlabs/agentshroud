@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_observatory_mode.py"
+source_file: "gateway/tests/test_e2e.py"
 type: "code"
-community: "system-requirements.md"
-location: "L72"
+community: "test_e2e.py"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/system-requirementsmd
+  - community/test_e2epy
 ---
 
 # client()
 
 ## Connections
-- [[_make_app()]] - `calls` [EXTRACTED]
-- [[test_observatory_mode.py]] - `contains` [EXTRACTED]
+- [[AsyncClient]] - `calls` [INFERRED]
+- [[Fully initialized async client with lifespan.]] - `rationale_for` [EXTRACTED]
+- [[test_e2e.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/system-requirementsmd
+#graphify/code #graphify/EXTRACTED #community/test_e2epy

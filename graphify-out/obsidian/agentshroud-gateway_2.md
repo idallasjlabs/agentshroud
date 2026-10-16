@@ -1,31 +1,31 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "document"
-community: "Community 613"
+community: "agentshroud-gateway"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_613
+  - community/agentshroud-gateway
 ---
 
 # agentshroud-gateway
 
 ## Connections
-- [[Container Properties_1]] - `contains` [EXTRACTED]
-- [[Environment Variables_11]] - `contains` [EXTRACTED]
-- [[Health Check_2]] - `contains` [EXTRACTED]
-- [[Key Endpoints]] - `contains` [EXTRACTED]
+- [[Container Properties]] - `contains` [EXTRACTED]
+- [[Environment Variables_10]] - `contains` [EXTRACTED]
+- [[Health Check_1]] - `contains` [EXTRACTED]
+- [[Key Endpoints_1]] - `contains` [EXTRACTED]
 - [[Logs_2]] - `contains` [EXTRACTED]
-- [[Networks_2]] - `contains` [EXTRACTED]
-- [[Ports_1]] - `contains` [EXTRACTED]
-- [[Related Notes_41]] - `contains` [EXTRACTED]
-- [[Resource Limits_1]] - `contains` [EXTRACTED]
-- [[Secrets_3]] - `contains` [EXTRACTED]
-- [[Security Hardening_1]] - `contains` [EXTRACTED]
-- [[Summary_18]] - `contains` [EXTRACTED]
-- [[Volumes_3]] - `contains` [EXTRACTED]
+- [[Networks_1]] - `contains` [EXTRACTED]
+- [[Ports]] - `contains` [EXTRACTED]
+- [[Related Notes_48]] - `contains` [EXTRACTED]
+- [[Resource Limits]] - `contains` [EXTRACTED]
+- [[Secrets_2]] - `contains` [EXTRACTED]
+- [[Security Hardening_2]] - `contains` [EXTRACTED]
+- [[Summary_21]] - `contains` [EXTRACTED]
+- [[Volumes_2]] - `contains` [EXTRACTED]
 - [[agentshroud-gateway_1]] - `contains` [EXTRACTED]
-- [[tmpfs Mounts_1]] - `contains` [EXTRACTED]
+- [[tmpfs Mounts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_613
+#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway

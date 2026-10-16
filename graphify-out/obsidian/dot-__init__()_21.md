@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/subagent_monitor.py"
+source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
-location: "L67"
+community: "CronStateMonitor"
+location: "L193"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/CronStateMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[SubagentMonitor]] - `method` [EXTRACTED]
-- [[SubagentMonitorConfig]] - `references` [EXTRACTED]
+- [[_DedupDispatchFake]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

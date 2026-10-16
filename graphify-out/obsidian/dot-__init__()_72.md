@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_jira_dev_ticket.py"
+source_file: "gateway/soc/auth.py"
 type: "code"
-community: "Community 169"
-location: "L256"
+community: "test_soc_realtime_coverage.py"
+location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_169
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_MockTransport]] - `method` [EXTRACTED]
+- [[RBACManager]] - `references` [EXTRACTED]
+- [[Role_20]] - `references` [EXTRACTED]
+- [[SCLCaller_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_169
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-chaos-engineering/SKILL.md"
 type: "document"
-community: "Community 1495"
+community: ".agents/skills/i-chaos-engineering/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1495
+  - community/agents/skills/i-chaos-engineering/SKILLmd
 ---
 
 # .agents/skills/i-chaos-engineering/SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill chaos-engineering]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1495
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-chaos-engineering/SKILLmd

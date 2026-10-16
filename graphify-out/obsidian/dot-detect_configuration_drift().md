@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "Community 855"
+community: "NetworkSecurityFinding"
 location: "L535"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_855
+  - community/NetworkSecurityFinding
 ---
 
 # .detect_configuration_drift()
@@ -18,4 +18,4 @@ tags:
 - [[NetworkSecurityFinding]] - `references` [EXTRACTED]
 - [[NetworkValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_855
+#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding

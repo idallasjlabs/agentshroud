@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/i-chaos-engineering/SKILL.md"
 type: "document"
-community: "DAST Scan (Nuclei) Job"
+community: "chaos-engineering SKILL stub (OpenClaw)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DAST_Scan_Nuclei_Job
+  - community/chaos-engineering_SKILL_stub_OpenClaw
 ---
 
 # chaos-engineering SKILL stub (OpenClaw)
 
-#graphify/document #graphify/EXTRACTED #community/DAST_Scan_Nuclei_Job
+#graphify/document #graphify/EXTRACTED #community/chaos-engineering_SKILL_stub_OpenClaw

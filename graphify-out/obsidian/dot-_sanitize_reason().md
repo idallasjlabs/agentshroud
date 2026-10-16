@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "Collaborator Activity & Telegram Proxy"
+community: "._filter_outbound"
 location: "L1006"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Activity__Telegram_Proxy
+  - community/_filter_outbound
 ---
 
 # ._sanitize_reason()
@@ -16,4 +16,4 @@ tags:
 - [[Strip internal paths and module names from block reasons before user display.]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Activity__Telegram_Proxy
+#graphify/code #graphify/EXTRACTED #community/_filter_outbound

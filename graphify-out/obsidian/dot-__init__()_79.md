@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_gateway_email_service.py"
+source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "Community 188"
-location: "L23"
+community: "AlertTelegramRelay"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_188
+  - community/AlertTelegramRelay
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeSmtp]] - `method` [EXTRACTED]
+- [[AlertTelegramRelay]] - `method` [EXTRACTED]
+- [[Any_32]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_188
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

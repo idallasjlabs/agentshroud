@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Community 136"
+community: "SecureBrowser"
 location: "L137"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_136
+  - community/SecureBrowser
 ---
 
 # ._domain_matches()
@@ -16,4 +16,4 @@ tags:
 - [[Check if domain matches pattern (supports wildcards)_2]] - `rationale_for` [EXTRACTED]
 - [[SecureBrowser_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_136
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

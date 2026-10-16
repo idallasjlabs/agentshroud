@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_dashboard_endpoints.py"
+source_file: "gateway/tests/test_op_proxy.py"
 type: "code"
-community: "AgentShroud v1.0.0 Fortress Release Announcement"
-location: "L25"
+community: "_is_op_reference_allowed"
+location: "L121"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/AgentShroud_v100_Fortress_Release_Announcement
+  - graphify/EXTRACTED
+  - community/_is_op_reference_allowed
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
+- [[test_op_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AgentShroud_v100_Fortress_Release_Announcement
+#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed

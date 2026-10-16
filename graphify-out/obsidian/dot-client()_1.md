@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_skills_manifest_sync.py"
+source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "Community 1154"
-location: "L328"
+community: "Severity"
+location: "L360"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1154
+  - community/Severity
 ---
 
 # .client()
 
 ## Connections
-- [[Path_28]] - `references` [EXTRACTED]
 - [[TestClient]] - `references` [EXTRACTED]
-- [[TestSkillsReloadEndpoint]] - `method` [EXTRACTED]
+- [[TestReloadIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1154
+#graphify/code #graphify/EXTRACTED #community/Severity

@@ -1,25 +1,18 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Ingest API & RBAC Core"
-location: "L187"
+community: "test_soc_realtime_coverage.py"
+location: "L174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .check_permission()
 
 ## Connections
-- [[dot-get_user_role()_1]] - `calls` [EXTRACTED]
-- [[dot-list_users_and_roles()]] - `calls` [EXTRACTED]
-- [[dot-set_user_role()_1]] - `calls` [EXTRACTED]
-- [[Action]] - `references` [EXTRACTED]
-- [[Any]] - `references` [EXTRACTED]
-- [[Check if a user has permission to perform an action on a resource.]] - `rationale_for` [EXTRACTED]
-- [[PermissionResult]] - `references` [EXTRACTED]
-- [[RBACManager]] - `method` [EXTRACTED]
-- [[Resource]] - `references` [EXTRACTED]
+- [[dot-test_get_rbac_manager_builds_real_manager()]] - `calls` [EXTRACTED]
+- [[_FakeRBAC]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

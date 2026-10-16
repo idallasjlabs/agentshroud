@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/data_exfil_volume_guard.py"
+source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "code"
-community: "Community 189"
-location: "L86"
+community: "AlertTelegramRelay"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_189
+  - community/AlertTelegramRelay
 ---
 
 # .__init__()
 
 ## Connections
-- [[DataExfilVolumeConfig]] - `references` [EXTRACTED]
-- [[DataExfilVolumeGuard]] - `method` [EXTRACTED]
+- [[_SendSpy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_189
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

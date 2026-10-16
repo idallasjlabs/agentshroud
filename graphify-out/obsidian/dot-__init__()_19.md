@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/metadata_guard.py"
+source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
-location: "L39"
+community: "PIIConfig"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/PIIConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[MetadataGuard]] - `method` [EXTRACTED]
+- [[EncodingConfig]] - `references` [EXTRACTED]
+- [[EncodingDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

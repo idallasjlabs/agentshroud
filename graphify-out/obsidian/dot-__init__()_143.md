@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/shared_memory.py"
+source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "Community 41"
-location: "L57"
+community: "test_cli_coverage.py"
+location: "L613"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_41
+  - community/test_cli_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[SharedMemoryManager]] - `method` [EXTRACTED]
+- [[_FakeWS]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_41
+#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy

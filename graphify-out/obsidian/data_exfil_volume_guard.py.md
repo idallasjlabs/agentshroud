@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "code"
-community: "AgentShroud Access Control Matrix"
+community: "DataExfilVolumeGuard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Access_Control_Matrix
+  - community/DataExfilVolumeGuard
 ---
 
 # data_exfil_volume_guard.py
@@ -16,6 +16,6 @@ tags:
 - [[DataExfilVolumeGuard]] - `contains` [EXTRACTED]
 - [[VolumeVerdict]] - `contains` [EXTRACTED]
 - [[_SessionState]] - `contains` [EXTRACTED]
-- [[egress_filter.py]] - `conceptually_related_to` [EXTRACTED]
+- [[egress_filter.py_1]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix
+#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

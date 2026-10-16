@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_citation_verifier.py"
+source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "Community 70"
-location: "L29"
+community: "OAuthSecurityValidator"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_70
+  - community/OAuthSecurityValidator
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeFetcher_1]] - `method` [EXTRACTED]
+- [[OAuthSecurityValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_70
+#graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator

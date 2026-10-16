@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/web/management.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "SkillGuard"
-location: "L243"
+community: "MCPAuditTrail"
+location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/MCPAuditTrail
 ---
 
 # audit()
 
 ## Connections
-- [[Serve the audit log page.]] - `rationale_for` [EXTRACTED]
-- [[management.py]] - `contains` [EXTRACTED]
+- [[MCPAuditTrail]] - `calls` [EXTRACTED]
+- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail

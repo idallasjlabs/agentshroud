@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 249"
+community: "TestBuildCollaboratorSafeInfoResponse"
 location: "L4254"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_249
+  - community/TestBuildCollaboratorSafeInfoResponse
 ---
 
 # ._resp()
@@ -30,6 +30,5 @@ tags:
 - [[dot-test_security_model()]] - `calls` [EXTRACTED]
 - [[dot-test_what_can_you_capability()]] - `calls` [EXTRACTED]
 - [[TestBuildCollaboratorSafeInfoResponse]] - `method` [EXTRACTED]
-- [[hermes_dashboard_proxy()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_249
+#graphify/code #graphify/EXTRACTED #community/TestBuildCollaboratorSafeInfoResponse

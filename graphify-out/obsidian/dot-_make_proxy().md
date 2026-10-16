@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_outbound.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Tool Result Sanitizer & XML Injection Filtering"
-location: "L4533"
+community: "TelegramAPIProxy"
+location: "L8922"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer__XML_Injection_Filtering
+  - community/TelegramAPIProxy
 ---
 
 # ._make_proxy()
 
 ## Connections
-- [[dot-test_400_retry_no_loop()]] - `calls` [EXTRACTED]
-- [[dot-test_400_retry_succeeds_when_text_strippable()]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_3]] - `references` [EXTRACTED]
-- [[TestTelegram400Retry]] - `method` [EXTRACTED]
-- [[_make_sanitizer()]] - `calls` [EXTRACTED]
+- [[FakeRBAC]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy]] - `references` [EXTRACTED]
+- [[TestGroupMentionFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Result_Sanitizer__XML_Injection_Filtering
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

@@ -1,13 +1,13 @@
 ---
 source_file: "skills/custom/browser-fetch/package.json"
 type: "code"
-community: "PostgreSQL RDS (fe-gsdl-poc-database)"
+community: "browser-fetch package.json"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PostgreSQL_RDS_fe-gsdl-poc-database
+  - community/browser-fetch_packagejson
 ---
 
 # browser-fetch package.json
 
-#graphify/code #graphify/EXTRACTED #community/PostgreSQL_RDS_fe-gsdl-poc-database
+#graphify/code #graphify/EXTRACTED #community/browser-fetch_packagejson

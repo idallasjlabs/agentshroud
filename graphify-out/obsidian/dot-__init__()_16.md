@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/drift_detector.py"
+source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
-location: "L62"
+community: "_PipelineCaptor"
+location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/_PipelineCaptor
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_db()_1]] - `calls` [EXTRACTED]
-- [[DriftDetector]] - `method` [EXTRACTED]
+- [[_PipelineCaptor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/_PipelineCaptor

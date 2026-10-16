@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/tool_acl.py"
+source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "Community 134"
-location: "L214"
+community: "WebContentScanner"
+location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_134
+  - community/WebContentScanner
 ---
 
 # .__init__()
 
 ## Connections
-- [[ToolACLConfig]] - `calls` [EXTRACTED]
-- [[ToolACLEnforcer]] - `method` [EXTRACTED]
+- [[WebContentScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_134
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

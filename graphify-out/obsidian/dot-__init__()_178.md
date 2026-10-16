@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/delegation.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: "Community 74"
-location: "L103"
+community: "ServiceManager"
+location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_74
+  - community/ServiceManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load()]] - `calls` [EXTRACTED]
-- [[DelegationManager_1]] - `method` [EXTRACTED]
+- [[Any_75]] - `references` [EXTRACTED]
+- [[ServiceManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_74
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

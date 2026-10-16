@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "Community 436"
-location: "L598"
+community: "MCPToolCall"
+location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_436
+  - community/MCPToolCall
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeAsyncClient]] - `method` [EXTRACTED]
+- [[MCPInspector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_436
+#graphify/code #graphify/EXTRACTED #community/MCPToolCall

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "Community 387"
-location: "L62"
+community: "MockValidator"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_387
+  - community/MockValidator
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_generate_event_id()]] - `calls` [EXTRACTED]
-- [[AuditEvent]] - `method` [EXTRACTED]
+- [[MockValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_387
+#graphify/code #graphify/EXTRACTED #community/MockValidator

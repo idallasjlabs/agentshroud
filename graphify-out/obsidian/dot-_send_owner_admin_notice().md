@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "Teams/Group Collaborator Responses"
+community: "telegram_proxy.py"
 location: "L7710"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Teams/Group_Collaborator_Responses
+  - community/telegram_proxypy
 ---
 
 # ._send_owner_admin_notice()
@@ -25,4 +25,4 @@ tags:
 - [[Send deterministic owner admin notice without model invocation.]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

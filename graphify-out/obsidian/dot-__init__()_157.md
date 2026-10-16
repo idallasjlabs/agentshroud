@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/url_analyzer.py"
+source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "Community 51"
-location: "L102"
+community: "CompetitiveIntelReport"
+location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_51
+  - community/CompetitiveIntelReport
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args             resolve_dns If True, resolve hostnames to IPs and check those]] - `rationale_for` [EXTRACTED]
-- [[URLAnalyzer_1]] - `method` [EXTRACTED]
+- [[CitationVerifier]] - `method` [EXTRACTED]
+- [[Fetcher]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_51
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

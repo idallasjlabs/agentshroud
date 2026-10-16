@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "ModeRequest"
+community: "DataLedger"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/DataLedger
 ---
 
 # auth_headers()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModeRequest
+#graphify/code #graphify/EXTRACTED #community/DataLedger

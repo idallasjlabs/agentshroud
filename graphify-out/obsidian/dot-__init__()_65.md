@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "Approval Routing & Event Bus"
-location: "L42"
+community: "test_soc_router_coverage.py"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/test_soc_router_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[EventBus]] - `method` [EXTRACTED]
+- [[_Svc]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

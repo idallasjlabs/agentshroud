@@ -1,18 +1,19 @@
 ---
-source_file: "docker/scripts/start-agentshroud.sh"
+source_file: "docker/bots/hermes/start.sh"
 type: "code"
-community: "What You Must Do When Invoked"
-location: "L669"
+community: "start.sh"
+location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked
+  - community/startsh
 ---
 
 # _telegram_send_photo()
 
 ## Connections
-- [[start-agentshroud.sh]] - `defines` [EXTRACTED]
-- [[start-agentshroud.sh script]] - `calls` [EXTRACTED]
+- [[_telegram_bot_token()_1]] - `calls` [EXTRACTED]
+- [[start.sh]] - `defines` [EXTRACTED]
+- [[start.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked
+#graphify/code #graphify/EXTRACTED #community/startsh

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "Community 855"
+community: "NetworkSecurityFinding"
 location: "L487"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_855
+  - community/NetworkSecurityFinding
 ---
 
 # ._validate_container_runtime_config()
@@ -17,4 +17,4 @@ tags:
 - [[NetworkValidator]] - `method` [EXTRACTED]
 - [[Validate a single container's runtime network configuration.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_855
+#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding

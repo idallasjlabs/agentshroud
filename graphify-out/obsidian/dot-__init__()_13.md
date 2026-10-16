@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/approval_hardening.py"
+source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
-location: "L114"
+community: "SubagentMonitor"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/SubagentMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[ApprovalHardening]] - `method` [EXTRACTED]
-- [[ApprovalHardeningConfig]] - `references` [EXTRACTED]
+- [[SubagentMonitor]] - `method` [EXTRACTED]
+- [[SubagentMonitorConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/drift_detector.py"
+source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
-location: "L308"
+community: "SecureBrowser"
+location: "L401"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/SecureBrowser
 ---
 
 # .close()
 
 ## Connections
-- [[DriftDetector]] - `method` [EXTRACTED]
+- [[Clean up browser resources]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser]] - `method` [EXTRACTED]
+- [[main()_7]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

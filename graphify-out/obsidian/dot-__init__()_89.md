@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "SOC Auth & Audit Store"
-location: "L58"
+community: "ToolChainAnalyzer"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Auth__Audit_Store
+  - community/ToolChainAnalyzer
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeAuditStore_1]] - `method` [EXTRACTED]
+- [[dot-_load_custom_patterns()]] - `calls` [EXTRACTED]
+- [[dot-_load_default_patterns()]] - `calls` [EXTRACTED]
+- [[Any_36]] - `references` [EXTRACTED]
+- [[Initialize the tool chain analyzer.          Args             config Configura]] - `rationale_for` [EXTRACTED]
+- [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Auth__Audit_Store
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

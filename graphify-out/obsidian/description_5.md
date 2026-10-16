@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
-type: "document"
-community: "AuditStore"
-location: "L11"
+source_file: "browser-extension/manifest.json"
+type: "code"
+community: "browser-extension/manifest.json"
+location: "L5"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/browser-extension/manifestjson
 ---
 
-# Description
+# description
 
 ## Connections
-- [[HTTP_PROXY  HTTPS_PROXY]] - `contains` [EXTRACTED]
+- [[browser-extensionmanifest.json]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/browser-extension/manifestjson

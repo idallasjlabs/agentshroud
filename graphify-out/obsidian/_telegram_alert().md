@@ -1,19 +1,19 @@
 ---
 source_file: "docker/bots/hermes/crashwatch.sh"
 type: "code"
-community: "MockValidator"
+community: "start.sh"
 location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MockValidator
+  - community/startsh
 ---
 
 # _telegram_alert()
 
 ## Connections
-- [[_telegram_send()]] - `semantically_similar_to` [INFERRED]
+- [[_telegram_send()_1]] - `semantically_similar_to` [INFERRED]
 - [[crashwatch.sh]] - `defines` [EXTRACTED]
 - [[crashwatch.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MockValidator
+#graphify/code #graphify/EXTRACTED #community/startsh

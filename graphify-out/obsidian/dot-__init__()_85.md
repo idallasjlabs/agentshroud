@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ingest_api/alert_telegram_relay.py"
+source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "Community 194"
-location: "L55"
+community: "SlackAPIProxy"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_194
+  - community/SlackAPIProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[AlertTelegramRelay]] - `method` [EXTRACTED]
-- [[Any_30]] - `references` [EXTRACTED]
+- [[SlackAPIProxy_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_194
+#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy

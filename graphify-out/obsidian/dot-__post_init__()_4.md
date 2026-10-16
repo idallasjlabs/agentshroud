@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "Community 35"
-location: "L169"
+community: "CrossBotTrustLedger"
+location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/CrossBotTrustLedger
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[MCPPolicyConfig_1]] - `method` [EXTRACTED]
-- [[RBACConfig_2]] - `calls` [EXTRACTED]
-- [[_norm()_1]] - `calls` [EXTRACTED]
+- [[TrustDecayPolicy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_35
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

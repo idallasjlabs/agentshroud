@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/egress_monitor.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Community 155"
-location: "L86"
+community: "lifespan.py"
+location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_155
+  - community/lifespanpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressMonitor]] - `method` [EXTRACTED]
-- [[EgressMonitorConfig]] - `references` [EXTRACTED]
+- [[MemoryLifecycleConfig]] - `references` [EXTRACTED]
+- [[MemoryLifecycleManager]] - `method` [EXTRACTED]
+- [[Path_23]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_155
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

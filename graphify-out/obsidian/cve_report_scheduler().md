@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "PrivacyPolicyEnforcer"
+community: "test_daily_cve_report.py"
 location: "L392"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/test_daily_cve_reportpy
 ---
 
 # cve_report_scheduler()
@@ -18,4 +18,4 @@ tags:
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[run_and_send_cve_report()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

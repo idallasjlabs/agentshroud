@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "PII Sanitizer & Redaction"
+community: "ToolResultSanitizer"
 location: "L268"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__Redaction
+  - community/ToolResultSanitizer
 ---
 
 # ._close_middleware_after()
@@ -15,4 +15,4 @@ tags:
 - [[TestMiddlewareIntegration]] - `method` [EXTRACTED]
 - [[Track every MiddlewareManager instantiated in this class and         close its s]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__Redaction
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

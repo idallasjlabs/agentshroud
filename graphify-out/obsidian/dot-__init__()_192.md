@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/telegram_gateway_relay.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Community 894"
-location: "L53"
+community: "_DummyTargetWriter"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_894
+  - community/_DummyTargetWriter
 ---
 
 # .__init__()
 
 ## Connections
-- [[TelegramGatewayRelay]] - `method` [EXTRACTED]
+- [[_DummyTargetWriter_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_894
+#graphify/code #graphify/EXTRACTED #community/_DummyTargetWriter

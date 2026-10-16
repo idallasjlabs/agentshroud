@@ -1,17 +1,17 @@
 ---
-source_file: "chatbot/test_main.py"
+source_file: "gateway/tests/test_api_contract_fuzz.py"
 type: "code"
-community: "server.py"
-location: "L33"
+community: "test_api_contract_fuzz.py"
+location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/serverpy
+  - community/test_api_contract_fuzzpy
 ---
 
 # client()
 
 ## Connections
-- [[test_main.py]] - `contains` [EXTRACTED]
+- [[test_api_contract_fuzz.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/serverpy
+#graphify/code #graphify/EXTRACTED #community/test_api_contract_fuzzpy

@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "Community 35"
-location: "L252"
+community: "AgentTarget"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/AgentTarget
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPPolicyConfig_1]] - `references` [EXTRACTED]
-- [[MCPPolicyEngine_1]] - `method` [EXTRACTED]
+- [[AgentTarget_2]] - `calls` [EXTRACTED]
+- [[Initialize router          Args             config Router configuration]] - `rationale_for` [EXTRACTED]
+- [[MultiAgentRouter]] - `method` [EXTRACTED]
+- [[RouterConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_35
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

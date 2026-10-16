@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-pr/README.md"
 type: "document"
-community: "Community 1206"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1206
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # .agents/skills/i-pr/README.md
 
 ## Connections
-- [[Pull Request Generator (PR)]] - `contains` [EXTRACTED]
+- [[Pull Request Generator (PR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1206
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

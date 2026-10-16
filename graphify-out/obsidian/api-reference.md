@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "Known Log Messages"
+community: "API Reference"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Known_Log_Messages
+  - community/API_Reference
 ---
 
 # api-reference.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[API Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Known_Log_Messages
+#graphify/document #graphify/EXTRACTED #community/API_Reference

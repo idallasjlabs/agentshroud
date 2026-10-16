@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "LLMProxy"
-location: "L67"
+community: "jira_weekly_review.py"
+location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/jira_weekly_reviewpy
 ---
 
 # datetime
 
 ## Connections
-- [[falco_monitor.py]] - `imports_from` [EXTRACTED]
-- [[read_alerts()]] - `references` [EXTRACTED]
+- [[build_weekly_summary()]] - `references` [EXTRACTED]
+- [[jira_weekly_review.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/jira_weekly_reviewpy

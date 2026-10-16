@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Community 109"
+community: "PipelineAction"
 location: "L504"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_109
+  - community/PipelineAction
 ---
 
 # ._process_inbound_core()
 
 ## Connections
-- [[dot-append()_1]] - `calls` [EXTRACTED]
+- [[dot-append()]] - `calls` [EXTRACTED]
 - [[dot-append_block()]] - `calls` [EXTRACTED]
 - [[dot-append_owner_bypass()]] - `calls` [EXTRACTED]
-- [[dot-process_inbound()_1]] - `calls` [EXTRACTED]
-- [[Any_14]] - `references` [EXTRACTED]
+- [[dot-process_inbound()_3]] - `calls` [EXTRACTED]
+- [[Any_10]] - `references` [EXTRACTED]
 - [[PipelineResult_1]] - `references` [EXTRACTED]
 - [[Process an inbound message through the full security pipeline.]] - `rationale_for` [EXTRACTED]
-- [[SecurityPipeline_1]] - `method` [EXTRACTED]
+- [[SecurityPipeline_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_109
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

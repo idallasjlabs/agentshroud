@@ -1,19 +1,18 @@
 ---
 source_file: "docker/bots/hermes/run-standalone.sh"
 type: "code"
-community: "CI/CD Pipeline Advisor (README)"
-location: "L112"
+community: "docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)"
+location: "L214"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_README
+  - community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
 ---
 
 # _wait_for_gateway_healthy()
 
 ## Connections
-- [[_poll_openclaw_ready()]] - `semantically_similar_to` [INFERRED]
 - [[cmd_up()]] - `calls` [EXTRACTED]
-- [[run-standalone.sh]] - `references` [EXTRACTED]
+- [[dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README
+#graphify/code #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes

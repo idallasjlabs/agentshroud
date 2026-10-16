@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/token_validation.py"
+source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "Community 107"
-location: "L151"
+community: "AlertDispatcher"
+location: "L308"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_107
+  - community/AlertDispatcher
 ---
 
 # .close()
 
 ## Connections
-- [[Close the audit-log database connection.]] - `rationale_for` [EXTRACTED]
-- [[TokenValidator]] - `method` [EXTRACTED]
+- [[DriftDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_107
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

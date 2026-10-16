@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "Community 54"
-location: "L38"
+community: "A2APolicyEngine"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/A2APolicyEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[AlertDispatcher]] - `method` [EXTRACTED]
-- [[Path_48]] - `references` [EXTRACTED]
-- [[deque]] - `calls` [INFERRED]
+- [[A2APeerTestDouble]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_54
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

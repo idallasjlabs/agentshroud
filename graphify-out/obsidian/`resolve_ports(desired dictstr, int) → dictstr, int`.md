@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
 type: "document"
-community: "EU AI Act & NIST Alignment Matrix — AgentShroud™"
+community: "port_manager.py"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EU_AI_Act__NIST_Alignment_Matrix__AgentShroud
+  - community/port_managerpy
 ---
 
 # `resolve_ports(desired: dict[str, int]) → dict[str, int]`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Key Class `PortManager`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EU_AI_Act__NIST_Alignment_Matrix__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/port_managerpy

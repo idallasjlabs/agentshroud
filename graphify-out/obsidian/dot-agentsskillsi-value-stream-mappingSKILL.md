@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-value-stream-mapping/SKILL.md"
 type: "document"
-community: "Community 1507"
+community: ".agents/skills/i-value-stream-mapping/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1507
+  - community/agents/skills/i-value-stream-mapping/SKILLmd
 ---
 
 # .agents/skills/i-value-stream-mapping/SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill value-stream-mapping]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1507
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-value-stream-mapping/SKILLmd

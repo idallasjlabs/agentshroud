@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/apply-patches.js"
 type: "code"
-community: "AuditChain"
+community: "apply-patches.js"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/apply-patchesjs
 ---
 
 # apply-patches.js
@@ -43,13 +43,12 @@ tags:
 - [[hasChannelWideFallback]] - `contains` [EXTRACTED]
 - [[hasMain]] - `contains` [EXTRACTED]
 - [[hasOwnerBinding]] - `contains` [EXTRACTED]
-- [[init-openclaw-config.sh]] - `calls` [EXTRACTED]
 - [[missingOrigins]] - `contains` [EXTRACTED]
 - [[missingProxies]] - `contains` [EXTRACTED]
-- [[path_2]] - `contains` [EXTRACTED]
+- [[path_16]] - `contains` [EXTRACTED]
 - [[providerModels]] - `contains` [EXTRACTED]
 - [[staleGroupBindings]] - `contains` [EXTRACTED]
 - [[trustedProxies]] - `contains` [EXTRACTED]
 - [[{ profile _genericProfile, deny _genericCollabDeny }]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/apply-patchesjs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Community 383"
+community: "UserSessionManager"
 location: "L258"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_383
+  - community/UserSessionManager
 ---
 
 # ._validate_bot_id()
@@ -16,4 +16,4 @@ tags:
 - [[UserSessionManager]] - `method` [EXTRACTED]
 - [[Validate and sanitize bot_id to prevent path traversal.          Allows alphanum]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_383
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

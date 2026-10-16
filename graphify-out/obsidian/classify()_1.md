@@ -1,23 +1,24 @@
 ---
-source_file: "scripts/soak_status.py"
+source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "pytest.ini"
-location: "L40"
+community: "HostStatus"
+location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pytestini
+  - community/HostStatus
 ---
 
 # classify()
 
 ## Connections
-- [[Any_78]] - `references` [EXTRACTED]
-- [[Return (soaked, message) for the given cron job list.      soaked=True only if a]] - `rationale_for` [EXTRACTED]
-- [[TestClassify_1]] - `calls` [EXTRACTED]
-- [[_is_benign_skip]] - `calls` [EXTRACTED]
-- [[_is_benign_skip()]] - `calls` [EXTRACTED]
-- [[main()_26]] - `calls` [EXTRACTED]
-- [[soak_status.py]] - `contains` [EXTRACTED]
+- [[dot-test_255_is_unreachable()]] - `calls` [EXTRACTED]
+- [[dot-test_nonzero_is_fail()]] - `calls` [EXTRACTED]
+- [[dot-test_zero_is_pass()]] - `calls` [EXTRACTED]
+- [[HostStatus]] - `references` [EXTRACTED]
+- [[Map a runner exit code to a HostStatus.]] - `rationale_for` [EXTRACTED]
+- [[multi_host_test.py]] - `contains` [EXTRACTED]
+- [[run_multi_host()]] - `calls` [EXTRACTED]
+- [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/pytestini
+#graphify/code #graphify/EXTRACTED #community/HostStatus

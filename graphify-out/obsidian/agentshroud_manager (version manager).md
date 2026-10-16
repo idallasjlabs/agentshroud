@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "upgrade"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/EgressFilterConfig
+  - graphify/EXTRACTED
+  - community/upgrade
 ---
 
 # agentshroud_manager (version manager)
@@ -14,4 +14,4 @@ tags:
 - [[VersionRequest]] - `shares_data_with` [INFERRED]
 - [[get_version_history()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/upgrade

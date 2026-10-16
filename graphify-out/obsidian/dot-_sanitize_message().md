@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "Community 39"
+community: "A2AGovernanceProxy"
 location: "L372"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_39
+  - community/A2AGovernanceProxy
 ---
 
 # ._sanitize_message()
@@ -17,4 +17,4 @@ tags:
 - [[A2AMessage]] - `references` [EXTRACTED]
 - [[Sanitize PII from A2A message payload. Returns list of sanitizations applied.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_39
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

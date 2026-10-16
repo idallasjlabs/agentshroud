@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt"
 type: "concept"
-community: "TestSplitForSpeech"
+community: "Prompt: Hermes Competitive Intelligence Email (AM/PM)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/TestSplitForSpeech
+  - community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM
 ---
 
 # competitive-analysis.md 4-Section Research Spec
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Prompt Hermes Competitive Landscape Update (AMPM)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/TestSplitForSpeech
+#graphify/concept #graphify/EXTRACTED #community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM

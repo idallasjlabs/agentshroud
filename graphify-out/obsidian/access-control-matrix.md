@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "test_dashboard_endpoints.py"
+community: "system-requirements.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/system-requirementsmd
 ---
 
 # access-control-matrix.md
@@ -21,4 +21,4 @@ tags:
 - [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `conceptually_related_to` [INFERRED]
 - [[use-cases]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/document #graphify/EXTRACTED #community/system-requirementsmd

@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/security/consent_framework.py"
+source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
-location: "L71"
+community: "rbac_config.py"
+location: "L398"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/rbac_configpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[ConsentFramework]] - `method` [EXTRACTED]
+- [[ProgressiveLockdown]] - `calls` [EXTRACTED]
+- [[RBACConfig_1]] - `calls` [EXTRACTED]
+- [[RateLimiter_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[load_paused_collaborator_ids()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/rbac_configpy

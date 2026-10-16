@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "Community 688"
+community: "._process_connect"
 location: "L174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_688
+  - community/_process_connect
 ---
 
 # ._handle_client()
@@ -18,4 +18,4 @@ tags:
 - [[StreamReader_3]] - `references` [EXTRACTED]
 - [[StreamWriter_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_688
+#graphify/code #graphify/EXTRACTED #community/_process_connect

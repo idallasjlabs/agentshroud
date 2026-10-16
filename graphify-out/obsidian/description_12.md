@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/package.json"
-type: "code"
-community: "Community 873"
-location: "L4"
+source_file: "docs/vault/04 - Environment Variables/LOG_LEVEL.md"
+type: "document"
+community: "agentshroud.yaml.md"
+location: "L11"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_873
+  - community/agentshroudyamlmd
 ---
 
-# description
+# Description
 
 ## Connections
-- [[browser-fetchpackage.json]] - `contains` [EXTRACTED]
+- [[LOG_LEVEL_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_873
+#graphify/document #graphify/EXTRACTED #community/agentshroudyamlmd

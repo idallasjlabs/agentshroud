@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/egress_approval.py"
+source_file: "gateway/security/delegation.py"
 type: "code"
-community: "Community 88"
-location: "L155"
+community: "DelegationManager"
+location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_88
+  - community/DelegationManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_rules()]] - `calls` [EXTRACTED]
-- [[EgressApprovalQueue]] - `method` [EXTRACTED]
-- [[Initialize the approval queue.          Args             rules_file Path to pe]] - `rationale_for` [EXTRACTED]
+- [[dot-_load()]] - `calls` [EXTRACTED]
+- [[DelegationManager_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_88
+#graphify/code #graphify/EXTRACTED #community/DelegationManager

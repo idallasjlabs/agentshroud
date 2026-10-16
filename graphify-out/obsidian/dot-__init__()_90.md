@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "SOC Auth & Audit Store"
+community: "ModuleStatsCollector"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Auth__Audit_Store
+  - community/ModuleStatsCollector
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeCaller]] - `method` [EXTRACTED]
+- [[ModuleStatsCollector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Auth__Audit_Store
+#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector

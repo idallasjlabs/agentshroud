@@ -1,21 +1,21 @@
 ---
 source_file: ".agents/skills/i-browser/browse.js"
 type: "code"
-community: "Community 209"
+community: "Browser — Secure Browser Automation (SKILL)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_209
+  - community/Browser__Secure_Browser_Automation_SKILL
 ---
 
 # .agents/skills/i-browser/browse.js
 
 ## Connections
-- [[appendLog()_2]] - `contains` [EXTRACTED]
-- [[browserFetch()_2]] - `contains` [EXTRACTED]
-- [[fs_2]] - `contains` [EXTRACTED]
-- [[path_20]] - `contains` [EXTRACTED]
-- [[{ chromium }_2]] - `contains` [EXTRACTED]
+- [[appendLog()_3]] - `contains` [EXTRACTED]
+- [[browserFetch()_3]] - `contains` [EXTRACTED]
+- [[fs_4]] - `contains` [EXTRACTED]
+- [[path_25]] - `contains` [EXTRACTED]
+- [[{ chromium }_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_209
+#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL

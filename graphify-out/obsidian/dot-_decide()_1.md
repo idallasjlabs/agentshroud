@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "Community 35"
+community: "MCPPolicyEngine"
 location: "L307"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/MCPPolicyEngine
 ---
 
 # ._decide()
@@ -17,4 +17,4 @@ tags:
 - [[MCPPolicyDecision]] - `references` [EXTRACTED]
 - [[MCPPolicyEngine_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_35
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

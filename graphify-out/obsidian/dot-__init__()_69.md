@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/security/rate_limit_guard.py"
 type: "code"
-community: "Gateway Config & PII Sanitizer"
-location: "L73"
+community: "RateLimitGuard"
+location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/RateLimitGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[DataLedger]] - `method` [EXTRACTED]
-- [[LedgerConfig_1]] - `references` [EXTRACTED]
-- [[Store configuration          Actual database connection created in initialize().]] - `rationale_for` [EXTRACTED]
+- [[RateLimitConfig]] - `references` [EXTRACTED]
+- [[RateLimitGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
+#graphify/code #graphify/EXTRACTED #community/RateLimitGuard

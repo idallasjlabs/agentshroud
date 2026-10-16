@@ -1,22 +1,18 @@
 ---
-source_file: "scripts/sunday-upgrade-apply.sh"
+source_file: "scripts/canary-deploy.sh"
 type: "code"
-community: "DraftEntry"
-location: "L121"
+community: "canary-deploy.sh"
+location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DraftEntry
+  - community/canary-deploysh
 ---
 
 # die()
 
 ## Connections
-- [[_attempt_rollback()]] - `calls` [EXTRACTED]
-- [[err()]] - `calls` [EXTRACTED]
-- [[phase_baseline()]] - `calls` [EXTRACTED]
-- [[phase_preflight()]] - `calls` [EXTRACTED]
-- [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
-- [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
+- [[canary-deploy.sh]] - `defines` [EXTRACTED]
+- [[canary-deploy.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DraftEntry
+#graphify/code #graphify/EXTRACTED #community/canary-deploysh

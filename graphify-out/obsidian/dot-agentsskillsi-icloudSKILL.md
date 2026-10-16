@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Community 421"
+community: "iCloud Services"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_421
+  - community/iCloud_Services
 ---
 
 # .agents/skills/i-icloud/SKILL.md
 
 ## Connections
-- [[iCloud Services_4]] - `contains` [EXTRACTED]
+- [[iCloud Services_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_421
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

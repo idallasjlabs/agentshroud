@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "Community 640"
+community: "Role"
 location: "L233"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_640
+  - community/Role
 ---
 
 # .can_use_tool()
@@ -15,7 +15,8 @@ tags:
 - [[dot-_can_use_tool_impl()]] - `calls` [EXTRACTED]
 - [[dot-can_use_tool_from_origin()]] - `calls` [EXTRACTED]
 - [[dot-can_use_tool_in_group_context()]] - `calls` [EXTRACTED]
-- [[Public entry — records the decision for the SOC heat-map (SCRUM-80), then…]] - `rationale_for` [EXTRACTED]
+- [[Public entry — records the decision for the SOC heat-map (SCRUM-80),         the_1]] - `rationale_for` [EXTRACTED]
 - [[ToolACLEnforcer]] - `method` [EXTRACTED]
+- [[record_decision()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_640
+#graphify/code #graphify/EXTRACTED #community/Role

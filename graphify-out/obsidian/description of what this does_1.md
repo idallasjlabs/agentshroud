@@ -1,21 +1,21 @@
 ---
 source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
 type: "document"
-community: "Output Sections (ALL required)"
+community: "Athena — Knowledge Distiller"
 location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Output_Sections_ALL_required
+  - community/Athena__Knowledge_Distiller
 ---
 
 # <description of what this does>
 
 ## Connections
-- [[Quality Checklist_10]] - `contains` [EXTRACTED]
-- [[SKILL_69]] - `contains` [EXTRACTED]
-- [[System Prompt_8]] - `contains` [EXTRACTED]
-- [[User Prompt Template_4]] - `contains` [EXTRACTED]
-- [[cheatsheet_1]] - `contains` [EXTRACTED]
+- [[Quality Checklist_18]] - `contains` [EXTRACTED]
+- [[System Prompt_15]] - `contains` [EXTRACTED]
+- [[User Prompt Template_6]] - `contains` [EXTRACTED]
+- [[cheatsheet_2]] - `contains` [EXTRACTED]
+- [[hermesskillsi-athenaSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

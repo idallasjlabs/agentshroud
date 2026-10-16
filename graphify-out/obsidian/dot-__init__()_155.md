@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/subagent_governance.py"
+source_file: "gateway/tests/test_gateway_email_service.py"
 type: "code"
-community: "Voice Gateway STT & Browser Security"
-location: "L209"
+community: "GatewayEmailService"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/GatewayEmailService
 ---
 
 # .__init__()
 
 ## Connections
-- [[GovernanceConfig]] - `references` [EXTRACTED]
-- [[SubagentGovernance]] - `method` [EXTRACTED]
+- [[_FakeSmtp]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

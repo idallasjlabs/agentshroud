@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "Community 226"
+community: "rbac_config.py"
 location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_226
+  - community/rbac_configpy
 ---
 
 # ._build_record()
@@ -18,4 +18,4 @@ tags:
 - [[ContributorRecord]] - `references` [EXTRACTED]
 - [[_role_enum()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_226
+#graphify/code #graphify/EXTRACTED #community/rbac_configpy

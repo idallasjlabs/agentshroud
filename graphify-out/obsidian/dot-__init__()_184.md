@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/key_vault.py"
+source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "Community 80"
-location: "L154"
+community: "AgentRegistry"
+location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_80
+  - community/AgentRegistry
 ---
 
 # .__init__()
 
 ## Connections
-- [[KeyInjector]] - `method` [EXTRACTED]
-- [[KeyVault]] - `references` [EXTRACTED]
+- [[dot-_resolve_secret()]] - `calls` [EXTRACTED]
+- [[EncryptedStore]] - `method` [EXTRACTED]
+- [[Initialize the encrypted store.          Args             master_secret The ma]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_80
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

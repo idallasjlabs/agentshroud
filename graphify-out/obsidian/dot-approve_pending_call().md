@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "ToolChainAnalyzer"
 location: "L514"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/ToolChainAnalyzer
 ---
 
 # .approve_pending_call()
@@ -15,4 +15,4 @@ tags:
 - [[Approve a pending tool call that required approval.          Args             s]] - `rationale_for` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

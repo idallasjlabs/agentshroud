@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "ServiceManager"
+community: "ContextSegment"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/ContextSegment
 ---
 
 # context_integrity.py
@@ -18,4 +18,4 @@ tags:
 - [[PromptGuard]] - `imports` [EXTRACTED]
 - [[SystemPromptFingerprint]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

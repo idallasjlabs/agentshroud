@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/drift_detector.py"
+source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
-location: "L69"
+community: "TrustConfig"
+location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/TrustConfig
 ---
 
 # ._init_db()
 
 ## Connections
-- [[dot-__init__()_16]] - `calls` [EXTRACTED]
-- [[DriftDetector]] - `method` [EXTRACTED]
+- [[dot-__init__()_36]] - `calls` [EXTRACTED]
+- [[TrustManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

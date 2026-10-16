@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "LLMProxy"
-location: "L66"
+community: "FalcoAlertWatcher"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/FalcoAlertWatcher
 ---
 
 # datetime
 
 ## Connections
+- [[falco_monitor.py]] - `imports_from` [EXTRACTED]
 - [[read_alerts()_1]] - `references` [EXTRACTED]
-- [[wazuh_client.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

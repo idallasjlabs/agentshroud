@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/collaborator_tracker.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Tool Result Sanitizer & XML Injection Filtering"
-location: "L54"
+community: "StdioConnection"
+location: "L201"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer__XML_Injection_Filtering
+  - community/StdioConnection
 ---
 
 # .__init__()
 
 ## Connections
-- [[CollaboratorActivityTracker_1]] - `method` [EXTRACTED]
-- [[Path_6]] - `references` [EXTRACTED]
+- [[ConnectionPool]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Result_Sanitizer__XML_Injection_Filtering
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

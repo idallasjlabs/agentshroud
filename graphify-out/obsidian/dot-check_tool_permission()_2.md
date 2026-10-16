@@ -1,17 +1,23 @@
 ---
-source_file: "gateway/tests/test_middleware_coverage.py"
+source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "Ingest Middleware & File Sandbox"
-location: "L159"
+community: "MCPPermissionManager"
+location: "L440"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_Middleware__File_Sandbox
+  - community/MCPPermissionManager
 ---
 
 # .check_tool_permission()
 
 ## Connections
-- [[_FakeRBAC_2]] - `method` [EXTRACTED]
+- [[dot-_record_private_access_attempt()]] - `calls` [EXTRACTED]
+- [[dot-check_all()]] - `calls` [EXTRACTED]
+- [[dot-get_trust_level()]] - `calls` [EXTRACTED]
+- [[dot-infer_permission_level()]] - `calls` [EXTRACTED]
+- [[Check if an agent can call a specific tool.          Default-allow only blocks]] - `rationale_for` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
+- [[PermissionCheck]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

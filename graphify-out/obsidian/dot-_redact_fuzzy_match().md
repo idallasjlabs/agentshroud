@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "Community 903"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L273"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_903
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # ._redact_fuzzy_match()
 
 ## Connections
-- [[dot-scan_response()_1]] - `calls` [EXTRACTED]
+- [[dot-scan_response()_2]] - `calls` [EXTRACTED]
 - [[PromptProtection]] - `method` [EXTRACTED]
 - [[ProtectedContent]] - `references` [EXTRACTED]
 - [[Redact text that fuzzy matches protected content.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_903
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

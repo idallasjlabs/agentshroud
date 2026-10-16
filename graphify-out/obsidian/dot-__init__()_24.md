@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_a2a_proxy.py"
+source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "Community 103"
-location: "L449"
+community: "_FakeHTTPResponse"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_103
+  - community/_FakeHTTPResponse
 ---
 
 # .__init__()
 
 ## Connections
-- [[_StubAuditStore]] - `method` [EXTRACTED]
+- [[_FakeHTTPResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_103
+#graphify/code #graphify/EXTRACTED #community/_FakeHTTPResponse

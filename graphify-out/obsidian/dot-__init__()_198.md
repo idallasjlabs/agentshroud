@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_web_proxy_security.py"
+source_file: "gateway/proxy/telegram_gateway_relay.py"
 type: "code"
-community: "Community 96"
-location: "L24"
+community: "TelegramGatewayRelay"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_96
+  - community/TelegramGatewayRelay
 ---
 
 # .__init__()
 
 ## Connections
-- [[MockDNSVerdict]] - `method` [EXTRACTED]
+- [[TelegramGatewayRelay]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_96
+#graphify/code #graphify/EXTRACTED #community/TelegramGatewayRelay

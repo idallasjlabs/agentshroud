@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "Community 70"
+community: "CompetitiveIntelReport"
 location: "L142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_70
+  - community/CompetitiveIntelReport
 ---
 
 # ._verify_url()
@@ -16,6 +16,6 @@ tags:
 - [[Citation]] - `references` [EXTRACTED]
 - [[CitationVerifier]] - `method` [EXTRACTED]
 - [[Re-fetch url and return a Citation iff it is allowlisted + live.          SSRF]] - `rationale_for` [EXTRACTED]
-- [[domain_matches]] - `calls` [EXTRACTED]
+- [[domain_matches()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_70
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

@@ -1,18 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/browse.js"
+source_file: "skills/custom/browser-fetch/browser-fetch.js"
 type: "code"
-community: "TestToolAuthorization"
+community: "SecureBrowser - Enterprise Secure Browser Automation"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolAuthorization
+  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
 ---
 
 # appendLog()
 
 ## Connections
-- [[browse.js_2]] - `contains` [EXTRACTED]
+- [[browser-fetch.js_2]] - `contains` [EXTRACTED]
 - [[browserFetch()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolAuthorization
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automation

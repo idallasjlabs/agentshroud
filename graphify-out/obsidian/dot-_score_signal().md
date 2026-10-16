@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "Community 212"
+community: "HeuristicClassifier"
 location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_212
+  - community/HeuristicClassifier
 ---
 
 # ._score_signal()
@@ -17,4 +17,4 @@ tags:
 - [[Pattern_2]] - `references` [EXTRACTED]
 - [[Score a single signal pattern. Returns 0.0–1.0.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_212
+#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

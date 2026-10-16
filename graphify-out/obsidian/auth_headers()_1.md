@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_dashboard_endpoints.py"
+source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "Phase 3: MITIGATE (Rollback First!)"
-location: "L37"
+community: "DataLedger"
+location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First
+  - community/DataLedger
 ---
 
 # auth_headers()
 
 ## Connections
-- [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
+- [[Return Authorization headers with test token]] - `rationale_for` [EXTRACTED]
+- [[conftest.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First
+#graphify/code #graphify/EXTRACTED #community/DataLedger

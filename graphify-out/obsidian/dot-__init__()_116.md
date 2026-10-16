@@ -1,17 +1,18 @@
 ---
-source_file: "src/interfaces/text_control_center.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "Community 277"
-location: "L66"
+community: "KeyVault"
+location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_277
+  - community/KeyVault
 ---
 
 # .__init__()
 
 ## Connections
-- [[ControlCenter]] - `method` [EXTRACTED]
+- [[KeyInjector]] - `method` [EXTRACTED]
+- [[KeyVault]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_277
+#graphify/code #graphify/EXTRACTED #community/KeyVault

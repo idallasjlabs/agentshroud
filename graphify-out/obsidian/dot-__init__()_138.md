@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/runtime/apple_engine.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Community 364"
-location: "L31"
+community: "SOCWebSocketHandler"
+location: "L605"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_364
+  - community/SOCWebSocketHandler
 ---
 
 # .__init__()
 
 ## Connections
-- [[AppleContainerEngine]] - `method` [EXTRACTED]
+- [[_FakeBus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_364
+#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

@@ -1,13 +1,13 @@
 ---
 source_file: "cli/Cargo.toml"
 type: "document"
-community: "MCP Integrations (GitHub, Atlassian, AWS, XMind)"
+community: "agentshroud-soc Cargo package"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_Integrations_GitHub_Atlassian_AWS_XMind
+  - community/agentshroud-soc_Cargo_package
 ---
 
 # agentshroud-soc Cargo package
 
-#graphify/document #graphify/EXTRACTED #community/MCP_Integrations_GitHub_Atlassian_AWS_XMind
+#graphify/document #graphify/EXTRACTED #community/agentshroud-soc_Cargo_package

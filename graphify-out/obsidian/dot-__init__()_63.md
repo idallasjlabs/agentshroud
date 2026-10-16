@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/dashboard/proxy_status.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "Community 145"
-location: "L83"
+community: "test_soc_router_coverage.py"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_145
+  - community/test_soc_router_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[ProxyDashboard]] - `method` [EXTRACTED]
+- [[FakeCaller]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_145
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

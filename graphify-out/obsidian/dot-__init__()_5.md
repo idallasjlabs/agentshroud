@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "Community 61"
-location: "L540"
+community: "AlertDispatcher"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_61
+  - community/AlertDispatcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeToolACL]] - `method` [EXTRACTED]
+- [[EnvironmentGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_61
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

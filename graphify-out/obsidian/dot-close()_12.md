@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/approval_queue/store.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "Enhanced Approval Queue"
-location: "L57"
+community: "DNSForwarderProtocol"
+location: "L726"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/DNSForwarderProtocol
 ---
 
 # .close()
 
 ## Connections
-- [[ApprovalStore]] - `method` [EXTRACTED]
-- [[Close the database connection._1]] - `rationale_for` [EXTRACTED]
+- [[dot-test_binds_and_returns_transport()]] - `calls` [EXTRACTED]
+- [[_FakeUpstreamWS]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol

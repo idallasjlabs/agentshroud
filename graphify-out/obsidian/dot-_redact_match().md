@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "Community 793"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L248"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_793
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # ._redact_match()
@@ -16,4 +16,4 @@ tags:
 - [[PromptProtection]] - `method` [EXTRACTED]
 - [[Replace a regex match with a redaction placeholder.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_793
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-gg/README.md"
 type: "document"
-community: "Community 1195"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1195
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # .agents/skills/i-gg/README.md
 
 ## Connections
-- [[Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
+- [[Git Workflow Guardian (GIT-GUARD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1195
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

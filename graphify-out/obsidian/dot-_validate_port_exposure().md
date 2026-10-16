@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "Community 602"
+community: ".validate_docker_compose_config"
 location: "L290"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_602
+  - community/validate_docker_compose_config
 ---
 
 # ._validate_port_exposure()
@@ -18,4 +18,4 @@ tags:
 - [[NetworkValidator]] - `method` [EXTRACTED]
 - [[Validate port exposure configuration.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_602
+#graphify/code #graphify/EXTRACTED #community/validate_docker_compose_config

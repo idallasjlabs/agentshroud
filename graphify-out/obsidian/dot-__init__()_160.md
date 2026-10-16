@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/session_security.py"
+source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "Community 539"
-location: "L57"
+community: "DNSFilterConfig"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_539
+  - community/DNSFilterConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[SessionManager]] - `method` [EXTRACTED]
+- [[DNSFilter]] - `method` [EXTRACTED]
+- [[DNSFilterConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_539
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

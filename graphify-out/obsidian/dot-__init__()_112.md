@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "Slack Proxy & Main Endpoint Tests"
-location: "L8615"
+community: "_FakeUpstreamWS"
+location: "L745"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_Proxy__Main_Endpoint_Tests
+  - community/_FakeUpstreamWS
 ---
 
 # .__init__()
 
 ## Connections
-- [[AsyncMock]] - `method` [EXTRACTED]
+- [[_FakeWSConnect]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_Proxy__Main_Endpoint_Tests
+#graphify/code #graphify/EXTRACTED #community/_FakeUpstreamWS

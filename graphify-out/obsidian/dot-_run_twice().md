@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_switch_model_idempotent.py"
 type: "code"
-community: "Community 126"
+community: "._run_and_read"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_126
+  - community/_run_and_read
 ---
 
 # ._run_twice()
@@ -17,10 +17,10 @@ tags:
 - [[dot-test_local_coder_idempotent()]] - `calls` [EXTRACTED]
 - [[dot-test_local_default_idempotent()]] - `calls` [EXTRACTED]
 - [[dot-test_local_with_explicit_model_idempotent()]] - `calls` [EXTRACTED]
-- [[Path_9]] - `calls` [EXTRACTED]
+- [[Path_11]] - `calls` [EXTRACTED]
 - [[Returns (env_after_first_run, env_after_second_run).]] - `rationale_for` [EXTRACTED]
 - [[TestSwitchModelIdempotent]] - `method` [EXTRACTED]
 - [[_read_env()]] - `calls` [EXTRACTED]
 - [[_run_switch()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_126
+#graphify/code #graphify/EXTRACTED #community/_run_and_read

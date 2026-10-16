@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "Community 63"
+community: "DNSFilterConfig"
 location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_63
+  - community/DNSFilterConfig
 ---
 
 # ._domain_in_allowlist()
@@ -15,4 +15,4 @@ tags:
 - [[dot-check()_4]] - `calls` [EXTRACTED]
 - [[DNSFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_63
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

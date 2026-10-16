@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/canary-deploy.sh"
 type: "code"
-community: "OpenClaw Control UI Pairing Instructions"
+community: "_run"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OpenClaw_Control_UI_Pairing_Instructions
+  - community/_run
 ---
 
 # canary-deploy.sh (blue/green canary deploy)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_canary_deploy.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OpenClaw_Control_UI_Pairing_Instructions
+#graphify/code #graphify/EXTRACTED #community/_run

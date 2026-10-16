@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_key_vault.py"
+source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "AsyncMock"
-location: "L20"
+community: "PermissionLevel"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/PermissionLevel
 ---
 
 # config()
 
 ## Connections
-- [[KeyVaultConfig]] - `calls` [EXTRACTED]
-- [[test_key_vault.py]] - `contains` [EXTRACTED]
+- [[MCPProxyConfig_3]] - `calls` [EXTRACTED]
+- [[MCPServerConfig_2]] - `calls` [EXTRACTED]
+- [[MCPToolConfig]] - `calls` [EXTRACTED]
+- [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

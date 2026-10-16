@@ -1,18 +1,18 @@
 ---
 source_file: "scripts/check_benchmark_regression.py"
 type: "code"
-community: "TestLifecycle"
+community: "check_benchmark_regression.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestLifecycle
+  - community/check_benchmark_regressionpy
 ---
 
 # check_benchmark_regression.py
 
 ## Connections
-- [[Benchmark Regression Job]] - `references` [EXTRACTED]
-- [[main()_16]] - `contains` [EXTRACTED]
+- [[CI benchmark regression job (macOS)]] - `references` [EXTRACTED]
+- [[main()_9]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestLifecycle
+#graphify/code #graphify/EXTRACTED #community/check_benchmark_regressionpy

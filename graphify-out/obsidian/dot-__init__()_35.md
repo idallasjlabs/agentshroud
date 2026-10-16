@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_citation_verifier.py"
+source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "Community 110"
-location: "L319"
+community: "test_forward_stream.py"
+location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_110
+  - community/test_forward_streampy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeStreamResponse]] - `method` [EXTRACTED]
+- [[_PassthroughPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_110
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy

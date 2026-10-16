@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_jira_weekly_review.py"
+source_file: "gateway/tests/test_soc_contributors.py"
 type: "code"
-community: "Community 285"
-location: "L195"
+community: "_FakeRBAC"
+location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_285
+  - community/_FakeRBAC
 ---
 
 # .__init__()
 
 ## Connections
-- [[_MockTransport_1]] - `method` [EXTRACTED]
+- [[_FakeRBAC_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_285
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

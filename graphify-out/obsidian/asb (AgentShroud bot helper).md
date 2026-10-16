@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "CI/CD Pipeline Advisor (README)"
+community: "asb (AgentShroud Bot helper)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_README
+  - community/asb_AgentShroud_Bot_helper
 ---
 
 # asb (AgentShroud Bot helper)
@@ -23,4 +23,4 @@ tags:
 - [[setup_ephemeral_secrets]] - `calls` [EXTRACTED]
 - [[versions.env]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README
+#graphify/code #graphify/EXTRACTED #community/asb_AgentShroud_Bot_helper

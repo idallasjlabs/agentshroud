@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "Community 284"
+community: "_FakeUpstreamWS"
 location: "L748"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_284
+  - community/_FakeUpstreamWS
 ---
 
 # .__aenter__()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeWSConnect]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_284
+#graphify/code #graphify/EXTRACTED #community/_FakeUpstreamWS

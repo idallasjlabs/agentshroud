@@ -1,29 +1,29 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Himalaya Email CLI"
+community: "_req"
 location: "L400"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Himalaya_Email_CLI
+  - community/_req
 ---
 
 # _tool_req()
 
 ## Connections
-- [[.test_allowed_chain_passes()]] - `calls` [EXTRACTED]
-- [[.test_analyzer_exception_fails_closed()]] - `calls` [EXTRACTED]
-- [[.test_blocked_rewrite_denied()]] - `calls` [EXTRACTED]
-- [[.test_blocked_with_chain_match()]] - `calls` [EXTRACTED]
-- [[.test_blocked_without_chain_match()]] - `calls` [EXTRACTED]
-- [[.test_cross_user_path_blocked()]] - `calls` [EXTRACTED]
-- [[.test_isolation_exception_fails_closed()]] - `calls` [EXTRACTED]
-- [[.test_own_workspace_path_allowed()]] - `calls` [EXTRACTED]
-- [[.test_owner_bypasses_sandbox()]] - `calls` [EXTRACTED]
-- [[.test_sandbox_exception_fails_closed()]] - `calls` [EXTRACTED]
-- [[.test_unblocked_rewrite_allowed()]] - `calls` [EXTRACTED]
-- [[_req()]] - `calls` [EXTRACTED]
+- [[dot-test_allowed_chain_passes()]] - `calls` [EXTRACTED]
+- [[dot-test_analyzer_exception_fails_closed()]] - `calls` [EXTRACTED]
+- [[dot-test_blocked_rewrite_denied()]] - `calls` [EXTRACTED]
+- [[dot-test_blocked_with_chain_match()]] - `calls` [EXTRACTED]
+- [[dot-test_blocked_without_chain_match()]] - `calls` [EXTRACTED]
+- [[dot-test_cross_user_path_blocked()]] - `calls` [EXTRACTED]
+- [[dot-test_isolation_exception_fails_closed()]] - `calls` [EXTRACTED]
+- [[dot-test_own_workspace_path_allowed()]] - `calls` [EXTRACTED]
+- [[dot-test_owner_bypasses_sandbox()]] - `calls` [EXTRACTED]
+- [[dot-test_sandbox_exception_fails_closed()]] - `calls` [EXTRACTED]
+- [[dot-test_unblocked_rewrite_allowed()]] - `calls` [EXTRACTED]
+- [[_req()_1]] - `calls` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Himalaya_Email_CLI
+#graphify/code #graphify/EXTRACTED #community/_req

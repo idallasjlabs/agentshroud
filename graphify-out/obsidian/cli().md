@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "patch"
+community: "cli/main.py"
 location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/patch
+  - community/cli/mainpy
 ---
 
 # cli()
@@ -15,9 +15,9 @@ tags:
 - [[AgentShroud SOC CLI — Shared Command Layer.]] - `rationale_for` [EXTRACTED]
 - [[SCLClient]] - `calls` [EXTRACTED]
 - [[_default_format()]] - `calls` [EXTRACTED]
+- [[climain.py]] - `contains` [EXTRACTED]
 - [[get()]] - `calls` [EXTRACTED]
-- [[main()_11]] - `calls` [EXTRACTED]
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[main()_31]] - `calls` [EXTRACTED]
 - [[test_cli_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/patch
+#graphify/code #graphify/EXTRACTED #community/cli/mainpy

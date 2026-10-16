@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "test_a2a_policy.py"
+community: "server.py"
 location: "L337"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/serverpy
 ---
 
 # _warm()
@@ -16,4 +16,4 @@ tags:
 - [[_lifespan()]] - `indirect_call` [INFERRED]
 - [[server.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/code #graphify/EXTRACTED #community/serverpy

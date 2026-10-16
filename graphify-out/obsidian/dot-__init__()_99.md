@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/proxy/telegram_proxy.py"
+source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "Community 226"
-location: "L398"
+community: "AuditExporter"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_226
+  - community/AuditExporter
 ---
 
 # .__init__()
 
 ## Connections
-- [[ProgressiveLockdown]] - `calls` [EXTRACTED]
-- [[RBACConfig_2]] - `calls` [EXTRACTED]
-- [[RateLimiter]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
-- [[load_paused_collaborator_ids()]] - `calls` [EXTRACTED]
+- [[dot-_default_jsonld_context()]] - `calls` [EXTRACTED]
+- [[AuditExportConfig_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_226
+#graphify/code #graphify/EXTRACTED #community/AuditExporter

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/a2a_policy.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Community 288"
-location: "L199"
+community: "lifespan.py"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_288
+  - community/lifespanpy
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[A2APolicyConfig]] - `method` [EXTRACTED]
-- [[_norm()]] - `calls` [EXTRACTED]
+- [[RetentionAction]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_288
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

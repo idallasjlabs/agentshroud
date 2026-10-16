@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Ingest API & RBAC Core"
-location: "L231"
+community: "_req"
+location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/_req
 ---
 
 # .check_tool_permission()
 
 ## Connections
-- [[dot-get_user_role()_1]] - `calls` [EXTRACTED]
-- [[Check if a user can use tools of a specific tier.]] - `rationale_for` [EXTRACTED]
-- [[PermissionResult]] - `references` [EXTRACTED]
-- [[RBACManager]] - `method` [EXTRACTED]
-- [[ToolTier]] - `references` [EXTRACTED]
+- [[_FakeRBAC_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/_req

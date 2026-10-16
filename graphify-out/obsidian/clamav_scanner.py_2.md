@@ -1,27 +1,29 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
-type: "document"
-community: "tmux Session Control"
-location: "L10"
+source_file: "gateway/security/clamav_scanner.py"
+type: "code"
+community: "AgentRegistry"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/tmux_Session_Control
+  - community/AgentRegistry
 ---
 
 # clamav_scanner.py
 
 ## Connections
-- [[Configuration_11]] - `contains` [EXTRACTED]
-- [[Environment Variables_8]] - `contains` [EXTRACTED]
-- [[Error Handling_7]] - `contains` [EXTRACTED]
-- [[Function Details_30]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_33]] - `contains` [EXTRACTED]
-- [[Mode Enforce vs Monitor_3]] - `contains` [EXTRACTED]
-- [[Purpose_151]] - `contains` [EXTRACTED]
-- [[Related_37]] - `contains` [EXTRACTED]
-- [[Responsibilities_35]] - `contains` [EXTRACTED]
-- [[Threat Model_6]] - `contains` [EXTRACTED]
-- [[clamav_scanner.py_1]] - `contains` [EXTRACTED]
+- [[FR3 System Integrity]] - `references` [EXTRACTED]
+- [[alert_dispatcher.py_2]] - `references` [EXTRACTED]
+- [[clamav]] - `references` [INFERRED]
+- [[drift_detector.py_2]] - `references` [EXTRACTED]
+- [[generate_summary()_1]] - `contains` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[parse_clamscan_output()]] - `contains` [EXTRACTED]
+- [[run_clamscan()]] - `contains` [EXTRACTED]
+- [[save_report()_1]] - `contains` [EXTRACTED]
+- [[scan_bytes()]] - `contains` [EXTRACTED]
+- [[test_security_audit.py]] - `imports_from` [EXTRACTED]
+- [[update_virus_db()]] - `contains` [EXTRACTED]
+- [[web_content_scanner.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/tmux_Session_Control
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

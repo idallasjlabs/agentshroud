@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "Community 539"
+community: "SessionManager"
 location: "L118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_539
+  - community/SessionManager
 ---
 
 # .destroy_session()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_539
+#graphify/code #graphify/EXTRACTED #community/SessionManager

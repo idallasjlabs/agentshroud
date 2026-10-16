@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_rate_limit_guard.py"
+source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "Community 190"
+community: "FetchOutcome"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_190
+  - community/FetchOutcome
 ---
 
 # .__call__()
 
 ## Connections
-- [[FakeClock]] - `method` [EXTRACTED]
+- [[FetchOutcome]] - `calls` [EXTRACTED]
+- [[_FakeFetcher]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_190
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

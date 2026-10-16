@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-eightd/README.md"
 type: "document"
-community: "Community 1194"
+community: "8D Root Cause Analysis"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1194
+  - community/8D_Root_Cause_Analysis
 ---
 
 # .agents/skills/i-eightd/README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[8D Root Cause Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1194
+#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "Community 54"
-location: "L136"
+community: "A2APolicyEngine"
+location: "L437"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/A2APolicyEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[AuditChain]] - `method` [EXTRACTED]
-- [[deque]] - `calls` [INFERRED]
+- [[HermesA2AForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_54
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

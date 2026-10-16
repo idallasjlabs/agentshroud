@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "Community 330"
-location: "L641"
+community: "test_dns_canvas_coverage.py"
+location: "L606"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_330
+  - community/test_dns_canvas_coveragepy
 ---
 
 # .__aexit__()
 
 ## Connections
-- [[_FakeConnect]] - `method` [EXTRACTED]
+- [[_FakeAsyncClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_330
+#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy

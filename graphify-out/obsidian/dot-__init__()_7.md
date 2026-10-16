@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/trust_manager.py"
+source_file: "gateway/security/metadata_guard.py"
 type: "code"
-community: "Cross-Bot Trust & A2A Governance"
-location: "L97"
+community: "AlertDispatcher"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/AlertDispatcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_db()]] - `calls` [EXTRACTED]
-- [[ProgressiveTrustConfig_2]] - `references` [EXTRACTED]
-- [[TrustConfig]] - `calls` [EXTRACTED]
-- [[TrustLevel]] - `references` [EXTRACTED]
-- [[TrustManager]] - `method` [EXTRACTED]
+- [[MetadataGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

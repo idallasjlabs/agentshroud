@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "TrustManager"
-location: "L445"
+community: "ToolChainAnalyzer"
+location: "L576"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/ToolChainAnalyzer
 ---
 
 # callable
 
 ## Connections
-- [[.add_alert_callback()]] - `references` [EXTRACTED]
+- [[dot-add_alert_callback()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

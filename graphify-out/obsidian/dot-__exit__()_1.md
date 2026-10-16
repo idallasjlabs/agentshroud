@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "Community 110"
-location: "L198"
+community: "FetchOutcome"
+location: "L326"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_110
+  - community/FetchOutcome
 ---
 
 # .__exit__()
 
 ## Connections
-- [[_StreamResp]] - `method` [EXTRACTED]
+- [[_FakeStreamResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_110
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

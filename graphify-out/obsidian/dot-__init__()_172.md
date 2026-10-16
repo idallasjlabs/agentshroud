@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "Community 64"
-location: "L93"
+community: "ToolResultSanitizer"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_64
+  - community/ToolResultSanitizer
 ---
 
 # .__init__()
 
 ## Connections
-- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
-- [[ToolResultSanitizerConfig]] - `references` [EXTRACTED]
+- [[Any_72]] - `references` [EXTRACTED]
+- [[PIIConfig_1]] - `references` [EXTRACTED]
+- [[ToolResultPIIConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_64
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

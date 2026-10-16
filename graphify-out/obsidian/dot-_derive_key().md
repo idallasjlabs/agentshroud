@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "Encrypted Store & Drift Detector"
+community: "AgentRegistry"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Encrypted_Store__Drift_Detector
+  - community/AgentRegistry
 ---
 
 # ._derive_key()
@@ -18,4 +18,4 @@ tags:
 - [[EncryptedStore]] - `method` [EXTRACTED]
 - [[_secure_zero()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Encrypted_Store__Drift_Detector
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

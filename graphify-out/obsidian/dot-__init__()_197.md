@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/approval_queue/group_router.py"
+source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "Community 95"
-location: "L49"
+community: "Role"
+location: "L214"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_95
+  - community/Role
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_80]] - `references` [EXTRACTED]
-- [[GroupApprovalRouter]] - `method` [EXTRACTED]
+- [[ToolACLConfig]] - `references` [EXTRACTED]
+- [[ToolACLEnforcer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_95
+#graphify/code #graphify/EXTRACTED #community/Role

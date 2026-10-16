@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "Community 213"
-location: "L67"
+community: "KillSwitchMonitor"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_213
+  - community/KillSwitchMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[CanaryConfig_1]] - `references` [EXTRACTED]
-- [[Initialize the Output Canary System.          Args             config Optional]] - `rationale_for` [EXTRACTED]
-- [[OutputCanary]] - `method` [EXTRACTED]
+- [[Any_40]] - `references` [EXTRACTED]
+- [[KillSwitchConfig]] - `references` [EXTRACTED]
+- [[KillSwitchMonitor]] - `method` [EXTRACTED]
+- [[deque]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_213
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-pm/SKILL.md"
 type: "document"
-community: "_fw_client()"
+community: "Skill: Project Management (PM)"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_fw_client
+  - community/Skill_Project_Management_PM
 ---
 
 # `session-notes/SESSION_SUMMARY_YYYY-MM-DD.md` (session report)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Continuity Files_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_fw_client
+#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM

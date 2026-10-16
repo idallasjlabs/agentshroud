@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "test_anthropic_openai_translator.py"
+community: "AgentShroud Incident Response Plan"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_anthropic_openai_translatorpy
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # deployment-procedure.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Deployment Procedure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

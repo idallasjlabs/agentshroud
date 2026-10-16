@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Community 124"
+community: "check_upstream_cves"
 location: "L269"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_124
+  - community/check_upstream_cves
 ---
 
 # ._patch_urllib()
@@ -20,4 +20,4 @@ tags:
 - [[Stub urllib.request.urlopen to return a list of advisories.]] - `rationale_for` [EXTRACTED]
 - [[TestCheckUpstreamCves]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_124
+#graphify/code #graphify/EXTRACTED #community/check_upstream_cves

@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c"
 type: "code"
-community: "A2AGovernanceProxy"
+community: "test_ptt_state.c"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/test_ptt_statec
 ---
 
 # do_tap()
@@ -21,4 +21,4 @@ tags:
 - [[wakeword_ptt_press()]] - `calls` [INFERRED]
 - [[wakeword_ptt_release()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/test_ptt_statec

@@ -1,17 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h"
+source_file: "firmware/voice-terminal/test/test_playback_state/stubs/bsp/esp-bsp.h"
 type: "code"
-community: "TestQuarantineEndpoints"
+community: "bsp_iot_button_create"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestQuarantineEndpoints
+  - community/bsp_iot_button_create
 ---
 
 # button_handle_t
 
 ## Connections
-- [[bsp_iot_button_create()_1]] - `references` [EXTRACTED]
+- [[bsp_iot_button_create()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestQuarantineEndpoints
+#graphify/code #graphify/EXTRACTED #community/bsp_iot_button_create

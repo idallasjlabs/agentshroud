@@ -1,17 +1,14 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
-type: "document"
-community: "03-data.md"
+source_file: "gateway/pyproject.toml"
+type: "code"
+community: "agentshroud-gateway"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/03-datamd
+  - community/agentshroud-gateway
 ---
 
-# agentshroud-gateway.md
+# agentshroud-gateway
 
-## Connections
-- [[agentshroud-gateway_1]] - `contains` [EXTRACTED]
-
-#graphify/document #graphify/EXTRACTED #community/03-datamd
+#graphify/code #graphify/EXTRACTED #community/agentshroud-gateway

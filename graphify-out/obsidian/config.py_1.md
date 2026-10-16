@@ -1,19 +1,25 @@
 ---
-source_file: "gateway/runtime/config.py"
-type: "code"
-community: "ADR-009: Enforce-by-Default Security Philosophy"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
+type: "document"
+community: "config.py"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-009_Enforce-by-Default_Security_Philosophy
+  - community/configpy
 ---
 
 # config.py
 
 ## Connections
-- [[RuntimeConfig]] - `contains` [EXTRACTED]
-- [[api.py]] - `imports_from` [EXTRACTED]
-- [[engine.py]] - `references` [EXTRACTED]
+- [[Configuration  Environment Variables_27]] - `contains` [EXTRACTED]
+- [[Environment Variables_18]] - `contains` [EXTRACTED]
+- [[Function Details_46]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_48]] - `contains` [EXTRACTED]
+- [[Purpose_180]] - `contains` [EXTRACTED]
+- [[Related_52]] - `contains` [EXTRACTED]
+- [[Responsibilities_49]] - `contains` [EXTRACTED]
+- [[Rootless Resolution Table]] - `contains` [EXTRACTED]
+- [[config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy
+#graphify/document #graphify/EXTRACTED #community/configpy

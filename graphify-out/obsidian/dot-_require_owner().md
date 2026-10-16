@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "Community 74"
+community: "DelegationManager"
 location: "L236"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_74
+  - community/DelegationManager
 ---
 
 # ._require_owner()
@@ -18,4 +18,4 @@ tags:
 - [[DelegationError]] - `calls` [EXTRACTED]
 - [[DelegationManager_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_74
+#graphify/code #graphify/EXTRACTED #community/DelegationManager

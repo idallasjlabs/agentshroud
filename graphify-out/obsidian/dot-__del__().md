@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "P3 Infrastructure Security Modules"
+community: "ResourceGuard"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/P3_Infrastructure_Security_Modules
+  - community/ResourceGuard
 ---
 
 # .__del__()
@@ -15,4 +15,4 @@ tags:
 - [[Best-effort cleanup for test contexts that don't call stop().]] - `rationale_for` [EXTRACTED]
 - [[ResourceGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

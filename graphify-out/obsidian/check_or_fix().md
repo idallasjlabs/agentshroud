@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-version.sh"
 type: "code"
-community: "_skills_reload_impl()"
+community: "Commit list 2026-10-10 through 2026-10-16 on main"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_skills_reload_impl
+  - community/Commit_list_2026-10-10_through_2026-10-16_on_main
 ---
 
 # check_or_fix()
@@ -15,4 +15,4 @@ tags:
 - [[sync-version.sh]] - `defines` [EXTRACTED]
 - [[sync-version.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_skills_reload_impl
+#graphify/code #graphify/EXTRACTED #community/Commit_list_2026-10-10_through_2026-10-16_on_main

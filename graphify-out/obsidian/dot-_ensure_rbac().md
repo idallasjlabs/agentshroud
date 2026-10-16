@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "Community 226"
+community: "rbac_config.py"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_226
+  - community/rbac_configpy
 ---
 
 # ._ensure_rbac()
@@ -15,6 +15,6 @@ tags:
 - [[dot-get_contributor()]] - `calls` [EXTRACTED]
 - [[dot-list_contributors()]] - `calls` [EXTRACTED]
 - [[ContributorManager]] - `method` [EXTRACTED]
-- [[RBACConfig_2]] - `calls` [EXTRACTED]
+- [[RBACConfig_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_226
+#graphify/code #graphify/EXTRACTED #community/rbac_configpy

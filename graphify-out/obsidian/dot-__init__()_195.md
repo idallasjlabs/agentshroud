@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_cron_state_monitor.py"
+source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: "Community 90"
-location: "L193"
+community: "GroupApprovalRouter"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/GroupApprovalRouter
 ---
 
 # .__init__()
 
 ## Connections
-- [[_DedupDispatchFake]] - `method` [EXTRACTED]
+- [[Any_79]] - `references` [EXTRACTED]
+- [[GroupApprovalRouter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_90
+#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter

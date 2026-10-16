@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "Community 110"
+community: "FetchOutcome"
 location: "L334"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_110
+  - community/FetchOutcome
 ---
 
 # ._patch_stream()
@@ -21,4 +21,4 @@ tags:
 - [[Patch httpx.stream; return a list that records the call kwargs.]] - `rationale_for` [EXTRACTED]
 - [[TestMakeHttpxFetcher]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_110
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

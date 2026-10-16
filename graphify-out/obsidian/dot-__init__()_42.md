@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Community 1173"
-location: "L36"
+community: "SecureBrowser"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1173
+  - community/SecureBrowser
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeHTTPResponse]] - `method` [EXTRACTED]
+- [[dot-_load_config()_2]] - `calls` [EXTRACTED]
+- [[SecureBrowser_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1173
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

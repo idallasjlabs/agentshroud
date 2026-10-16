@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/trust_manager.py"
+source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "Cross-Bot Trust & A2A Governance"
-location: "L117"
+community: "AlertDispatcher"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/AlertDispatcher
 ---
 
 # ._init_db()
 
 ## Connections
-- [[dot-__init__()_7]] - `calls` [EXTRACTED]
-- [[TrustManager]] - `method` [EXTRACTED]
+- [[dot-__init__()_4]] - `calls` [EXTRACTED]
+- [[DriftDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

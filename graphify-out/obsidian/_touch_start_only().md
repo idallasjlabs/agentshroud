@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "A2AGovernanceProxy"
+community: "wakeword.c"
 location: "L150"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/A2AGovernanceProxy
+  - community/wakewordc
 ---
 
 # _touch_start_only()
@@ -19,4 +19,4 @@ tags:
 - [[wakeword_ptt_release()]] - `calls` [INFERRED]
 - [[wakeword_triggered()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/A2AGovernanceProxy
+#graphify/code #graphify/INFERRED #community/wakewordc

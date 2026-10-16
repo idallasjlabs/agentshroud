@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "MiddlewareManager"
 location: "L1246"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/MiddlewareManager
 ---
 
 # ._is_tool_call_request()
 
 ## Connections
 - [[dot-process_request()]] - `calls` [EXTRACTED]
-- [[Any_2]] - `references` [EXTRACTED]
+- [[Any_42]] - `references` [EXTRACTED]
 - [[MiddlewareManager]] - `method` [EXTRACTED]
 - [[Return True only when the request contains actual tool calls or tool results.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

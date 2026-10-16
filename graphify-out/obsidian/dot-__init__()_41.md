@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_forward_stream.py"
+source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "Community 113"
-location: "L140"
+community: "SSHProxy"
+location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_113
+  - community/SSHProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_PassthroughPipeline]] - `method` [EXTRACTED]
+- [[SSHConfig]] - `references` [EXTRACTED]
+- [[SSHProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_113
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

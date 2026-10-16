@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "RateLimiter"
+community: "forward.py"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/forwardpy
 ---
 
 # bypass_auth()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_channel_ownership.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimiter
+#graphify/code #graphify/EXTRACTED #community/forwardpy

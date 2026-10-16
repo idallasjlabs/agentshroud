@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "Session Manager & PII/Context Guard"
+community: ".analyze_message"
 location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Manager__PII/Context_Guard
+  - community/analyze_message
 ---
 
 # .analyze_message()
@@ -25,4 +25,4 @@ tags:
 - [[deque]] - `calls` [INFERRED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard
+#graphify/code #graphify/EXTRACTED #community/analyze_message

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "code"
-community: "Community 110"
-location: "L32"
+community: "CronStateMonitor"
+location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_110
+  - community/CronStateMonitor
 ---
 
 # .__call__()
 
 ## Connections
-- [[FetchOutcome]] - `calls` [EXTRACTED]
-- [[_FakeFetcher]] - `method` [EXTRACTED]
+- [[_DedupDispatchFake]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_110
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

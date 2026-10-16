@@ -1,23 +1,21 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "SSHProxy"
+community: "gateway/ingest_api/main.py (/hermes-dashboard/ HTTP + WebSocket reverse proxy)"
 location: "L920"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
 ---
 
 # create_report()
 
 ## Connections
-- [[AuthRequired]] - `references` [EXTRACTED]
-- [[AuthRequired_5]] - `references` [EXTRACTED]
-- [[List all configured agent targets with health status      Authentication require]] - `rationale_for` [EXTRACTED]
+- [[AuthRequired_2]] - `references` [EXTRACTED]
 - [[Request_1]] - `references` [EXTRACTED]
-- [[Request_10]] - `references` [EXTRACTED]
-- [[Store a report in the gateway-managed multi-bot report store.      Body {bot]] - `rationale_for` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
+- [[Store a report in the gateway-managed multi-bot report store. Body {bot…]] - `rationale_for` [EXTRACTED]
+- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `contains` [EXTRACTED]
+- [[post_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy

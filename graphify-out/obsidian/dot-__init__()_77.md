@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_a2a_proxy.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Community 183"
-location: "L446"
+community: "AuditChain"
+location: "L348"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_183
+  - community/AuditChain
 ---
 
 # .__init__()
 
 ## Connections
-- [[_Event]] - `method` [EXTRACTED]
+- [[AuditChain]] - `calls` [EXTRACTED]
+- [[RBACConfig_1]] - `calls` [EXTRACTED]
+- [[SecurityPipeline_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_183
+#graphify/code #graphify/EXTRACTED #community/AuditChain

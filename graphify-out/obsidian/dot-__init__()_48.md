@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/forwarder.py"
+source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "Proxy Sidecar & Forwarder"
-location: "L57"
+community: "Enum"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Proxy_Sidecar__Forwarder
+  - community/Enum
 ---
 
 # .__init__()
 
 ## Connections
-- [[ForwarderConfig]] - `references` [EXTRACTED]
-- [[HTTPForwarder]] - `method` [EXTRACTED]
+- [[SOCWebSocketHandler]] - `method` [EXTRACTED]
+- [[WebSocket_5]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder
+#graphify/code #graphify/EXTRACTED #community/Enum

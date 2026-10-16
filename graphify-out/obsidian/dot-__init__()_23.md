@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/security/tool_result_injection.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "Community 101"
-location: "L176"
+community: ".__init__"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_101
+  - community/__init__
 ---
 
 # .__init__()
 
 ## Connections
-- [[Initialize the scanner with optional custom rules.          Args             cu]] - `rationale_for` [EXTRACTED]
-- [[InjectionRule]] - `references` [EXTRACTED]
-- [[ToolResultInjectionScanner]] - `method` [EXTRACTED]
+- [[dot-_load_pending_store()]] - `calls` [EXTRACTED]
+- [[ApprovalQueue_1]] - `method` [EXTRACTED]
+- [[ApprovalQueueConfig]] - `references` [EXTRACTED]
+- [[Initialize approval queue          Args             config Approval queue conf]] - `rationale_for` [EXTRACTED]
+- [[MFAGuard]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_101
+#graphify/code #graphify/EXTRACTED #community/__init__

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Community 140"
+community: "TestNormalizeForSpeech"
 location: "L225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_140
+  - community/TestNormalizeForSpeech
 ---
 
 # ._n()
@@ -49,5 +49,6 @@ tags:
 - [[dot-test_user_id_redacted_spoken()]] - `calls` [EXTRACTED]
 - [[dot-test_user_id_spoken()]] - `calls` [EXTRACTED]
 - [[TestNormalizeForSpeech]] - `method` [EXTRACTED]
+- [[normalize_for_speech()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_140
+#graphify/code #graphify/EXTRACTED #community/TestNormalizeForSpeech

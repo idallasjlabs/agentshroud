@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: ".agents/skills/i-tw/SKILL.md"
+community: "OpenClaw Management Scripts"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-tw/SKILLmd
+  - community/OpenClaw_Management_Scripts
 ---
 
 # docker/scripts README.md
@@ -19,4 +19,4 @@ tags:
 - [[test-network-isolation.sh (planned)]] - `references` [EXTRACTED]
 - [[test-pii-sanitization.sh (planned)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts

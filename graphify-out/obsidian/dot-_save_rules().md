@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Community 88"
+community: "EgressApprovalQueue"
 location: "L307"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_88
+  - community/EgressApprovalQueue
 ---
 
 # ._save_rules()
@@ -14,13 +14,13 @@ tags:
 ## Connections
 - [[dot-add_rule()]] - `calls` [EXTRACTED]
 - [[dot-approve()]] - `calls` [EXTRACTED]
-- [[dot-cleanup_expired()_3]] - `calls` [EXTRACTED]
+- [[dot-cleanup_expired()]] - `calls` [EXTRACTED]
 - [[dot-deny()]] - `calls` [EXTRACTED]
 - [[dot-remove_rule()]] - `calls` [EXTRACTED]
 - [[dot-revoke_decision()]] - `calls` [EXTRACTED]
-- [[dot-to_dict()_16]] - `calls` [EXTRACTED]
+- [[dot-to_dict()_1]] - `calls` [EXTRACTED]
 - [[EgressApprovalQueue]] - `method` [EXTRACTED]
 - [[EgressScope]] - `calls` [EXTRACTED]
 - [[Save rules to persistent storage.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_88
+#graphify/code #graphify/EXTRACTED #community/EgressApprovalQueue

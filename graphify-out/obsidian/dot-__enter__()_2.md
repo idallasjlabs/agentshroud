@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "Community 1173"
-location: "L42"
+community: "FetchOutcome"
+location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1173
+  - community/FetchOutcome
 ---
 
 # .__enter__()
 
 ## Connections
-- [[_FakeHTTPResponse]] - `method` [EXTRACTED]
+- [[_StreamResp]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1173
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

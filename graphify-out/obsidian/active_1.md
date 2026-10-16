@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-17-state-bot-session.svg"
 type: "concept"
-community: "Community 1294"
+community: "active"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1294
+  - community/active
 ---
 
 # active
@@ -15,4 +15,4 @@ tags:
 - [[fresh (container starts, new session created)]] - `calls` [EXTRACTED]
 - [[idle (health monitor 300s interval)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1294
+#graphify/concept #graphify/EXTRACTED #community/active

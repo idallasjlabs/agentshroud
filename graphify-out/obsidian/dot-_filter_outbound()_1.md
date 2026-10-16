@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "Collaborator Activity & Telegram Proxy"
+community: "._filter_outbound"
 location: "L3226"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Activity__Telegram_Proxy
+  - community/_filter_outbound
 ---
 
 # ._filter_outbound()
@@ -32,4 +32,4 @@ tags:
 - [[normalize_input()]] - `calls` [EXTRACTED]
 - [[strip_markdown_exfil()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Activity__Telegram_Proxy
+#graphify/code #graphify/EXTRACTED #community/_filter_outbound

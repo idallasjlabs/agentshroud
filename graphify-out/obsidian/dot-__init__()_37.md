@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "Community 110"
-location: "L191"
+community: "ResourceGuard"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_110
+  - community/ResourceGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[_StreamResp]] - `method` [EXTRACTED]
+- [[dot-_get_disk_io_stats()]] - `calls` [EXTRACTED]
+- [[dot-_start_monitoring_task()]] - `calls` [EXTRACTED]
+- [[ResourceGuard]] - `method` [EXTRACTED]
+- [[ResourceLimits]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_110
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "Signed Instruction Envelopes & Security Pipeline"
+community: "OutboundInfoFilter"
 location: "L671"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Signed_Instruction_Envelopes__Security_Pipeline
+  - community/OutboundInfoFilter
 ---
 
 # ._blocking_prompt_guard()
@@ -18,4 +18,4 @@ tags:
 - [[ScanResult_1]] - `calls` [EXTRACTED]
 - [[TestPromptGuardToolResultTrustGate]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Signed_Instruction_Envelopes__Security_Pipeline
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

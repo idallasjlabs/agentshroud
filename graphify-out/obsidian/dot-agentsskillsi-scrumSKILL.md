@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-scrum/SKILL.md"
 type: "document"
-community: "Community 1504"
+community: ".agents/skills/i-scrum/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1504
+  - community/agents/skills/i-scrum/SKILLmd
 ---
 
 # .agents/skills/i-scrum/SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill scrum]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1504
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-scrum/SKILLmd

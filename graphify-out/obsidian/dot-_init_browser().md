@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Community 132"
+community: "SecureBrowser"
 location: "L219"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_132
+  - community/SecureBrowser
 ---
 
 # ._init_browser()
@@ -16,4 +16,4 @@ tags:
 - [[Initialize browser with security settings]] - `rationale_for` [EXTRACTED]
 - [[SecureBrowser]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_132
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

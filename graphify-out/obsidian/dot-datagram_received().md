@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "Community 753"
+community: "parse_query"
 location: "L173"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_753
+  - community/parse_query
 ---
 
 # .datagram_received()
@@ -16,4 +16,4 @@ tags:
 - [[DNSForwarderProtocol]] - `method` [EXTRACTED]
 - [[Handle incoming DNS query.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_753
+#graphify/code #graphify/EXTRACTED #community/parse_query

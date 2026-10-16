@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_retry.py"
 type: "code"
-community: "ssh_config.py"
+community: "egress_retry.py"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ssh_configpy
+  - community/egress_retrypy
 ---
 
 # calculate_delay()
@@ -18,4 +18,4 @@ tags:
 - [[retry_request()]] - `calls` [EXTRACTED]
 - [[retry_request_sync()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ssh_configpy
+#graphify/code #graphify/EXTRACTED #community/egress_retrypy

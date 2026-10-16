@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/instruction_envelope.py"
+source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: "Signed Instruction Envelopes & Security Pipeline"
-location: "L51"
+community: "RBACConfig"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Signed_Instruction_Envelopes__Security_Pipeline
+  - community/RBACConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[EnvelopeSigner]] - `method` [EXTRACTED]
+- [[SharedMemoryManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Signed_Instruction_Envelopes__Security_Pipeline
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

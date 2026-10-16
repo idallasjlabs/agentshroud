@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/context_integrity.py"
+source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "Prompt Guard & Context Integrity"
-location: "L64"
+community: "KeyRotationConfig"
+location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Prompt_Guard__Context_Integrity
+  - community/KeyRotationConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_38]] - `references` [EXTRACTED]
-- [[ContextIntegrityScorer]] - `method` [EXTRACTED]
+- [[Initialize the key rotation manager.]] - `rationale_for` [EXTRACTED]
+- [[KeyRotationConfig]] - `references` [EXTRACTED]
+- [[KeyRotationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Prompt_Guard__Context_Integrity
+#graphify/code #graphify/EXTRACTED #community/KeyRotationConfig

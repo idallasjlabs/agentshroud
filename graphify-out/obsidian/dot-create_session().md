@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "Community 539"
+community: "SessionManager"
 location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_539
+  - community/SessionManager
 ---
 
 # .create_session()
 
 ## Connections
 - [[dot-_fingerprint()]] - `calls` [EXTRACTED]
-- [[dot-cleanup_expired()_1]] - `calls` [EXTRACTED]
+- [[dot-cleanup_expired()_2]] - `calls` [EXTRACTED]
 - [[RateLimitExceeded]] - `calls` [EXTRACTED]
 - [[Session]] - `references` [EXTRACTED]
 - [[SessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_539
+#graphify/code #graphify/EXTRACTED #community/SessionManager

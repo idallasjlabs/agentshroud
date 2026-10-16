@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/security/cron_state_monitor.py"
+source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "Community 90"
-location: "L69"
+community: "EgressFilterConfig"
+location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/EgressFilterConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[CronStateMonitor]] - `method` [EXTRACTED]
+- [[EgressFilter_2]] - `method` [EXTRACTED]
+- [[EgressFilterConfig_1]] - `references` [EXTRACTED]
+- [[EgressPolicy]] - `references` [EXTRACTED]
+- [[get_egress_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_90
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

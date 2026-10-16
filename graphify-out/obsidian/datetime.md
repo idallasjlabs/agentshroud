@@ -1,18 +1,18 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
+source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "The 8D Investigation Process"
-location: "L140"
+community: "test_security_toolchain.py"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process
+  - community/test_security_toolchainpy
 ---
 
 # datetime
 
 ## Connections
-- [[build_weekly_summary()]] - `references` [EXTRACTED]
-- [[jira_weekly_review.py]] - `imports_from` [EXTRACTED]
+- [[read_alerts()]] - `references` [EXTRACTED]
+- [[wazuh_client.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/The_8D_Investigation_Process
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

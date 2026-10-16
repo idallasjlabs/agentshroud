@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "Blue/Red Team Security Auditor Skills"
+community: "MultiTurnTracker"
 location: "L355"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Blue/Red_Team_Security_Auditor_Skills
+  - community/MultiTurnTracker
 ---
 
 # ._trigger_alert()
@@ -18,4 +18,4 @@ tags:
 - [[SessionContext_1]] - `references` [EXTRACTED]
 - [[Trigger alert callbacks.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills
+#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

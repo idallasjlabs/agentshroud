@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "Cross-Bot Trust & A2A Governance"
+community: "TrustConfig"
 location: "L248"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/TrustConfig
 ---
 
 # ._force_demotion()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-record_violation()]] - `calls` [EXTRACTED]
 - [[Drop an agent one trust level immediately (severe violations).]] - `rationale_for` [EXTRACTED]
-- [[TrustLevel]] - `calls` [EXTRACTED]
+- [[TrustLevel_1]] - `references` [EXTRACTED]
 - [[TrustManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

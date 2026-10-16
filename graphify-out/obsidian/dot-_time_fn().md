@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_benchmark_regression.py"
 type: "code"
-community: "Community 495"
+community: "TestBenchmarkRegression"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_495
+  - community/TestBenchmarkRegression
 ---
 
 # ._time_fn()
@@ -17,4 +17,4 @@ tags:
 - [[TestBenchmarkRegression]] - `method` [EXTRACTED]
 - [[Time a function over N iterations, return mean ms.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_495
+#graphify/code #graphify/EXTRACTED #community/TestBenchmarkRegression

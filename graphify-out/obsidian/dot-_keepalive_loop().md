@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "Community 187"
+community: "Enum"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_187
+  - community/Enum
 ---
 
 # ._keepalive_loop()
 
 ## Connections
 - [[dot-_send_event()]] - `calls` [EXTRACTED]
-- [[dot-run()_1]] - `calls` [EXTRACTED]
-- [[SOCWebSocketHandler_1]] - `method` [EXTRACTED]
-- [[WSEvent]] - `calls` [EXTRACTED]
+- [[dot-run()]] - `calls` [EXTRACTED]
+- [[SOCWebSocketHandler]] - `method` [EXTRACTED]
+- [[WSEvent_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_187
+#graphify/code #graphify/EXTRACTED #community/Enum

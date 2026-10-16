@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_cron_state_monitor.py"
+source_file: "gateway/security/config_integrity.py"
 type: "code"
-community: "Community 90"
-location: "L51"
+community: ".check"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/check
 ---
 
 # .__init__()
 
 ## Connections
-- [[_DispatchSpy]] - `method` [EXTRACTED]
+- [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
+- [[Path_62]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_90
+#graphify/code #graphify/EXTRACTED #community/check

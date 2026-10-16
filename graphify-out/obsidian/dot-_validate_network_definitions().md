@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "Community 1082"
+community: "._parse_service_network_config"
 location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1082
+  - community/_parse_service_network_config
 ---
 
 # ._validate_network_definitions()
 
 ## Connections
 - [[dot-validate_docker_compose_config()]] - `calls` [EXTRACTED]
-- [[Any_13]] - `references` [EXTRACTED]
+- [[Any_7]] - `references` [EXTRACTED]
 - [[NetworkSecurityFinding]] - `references` [EXTRACTED]
 - [[NetworkValidator]] - `method` [EXTRACTED]
 - [[Validate network definitions in compose file.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1082
+#graphify/code #graphify/EXTRACTED #community/_parse_service_network_config

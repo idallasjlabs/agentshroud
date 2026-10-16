@@ -2,7 +2,7 @@
 source_file: "docker/setup-secrets.sh"
 type: "code"
 community: "setup-secrets.sh"
-location: "L478"
+location: "L500"
 tags:
   - graphify/code
   - graphify/EXTRACTED

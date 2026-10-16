@@ -1,17 +1,17 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: "gateway/tests/test_jira_weekly_review.py"
 type: "code"
-community: "Community 268"
-location: "L186"
+community: "test_jira_weekly_review.py"
+location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_268
+  - community/test_jira_weekly_reviewpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[MatchResult]] - `method` [EXTRACTED]
+- [[_MockTransport_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_268
+#graphify/code #graphify/EXTRACTED #community/test_jira_weekly_reviewpy

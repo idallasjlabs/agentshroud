@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "Community 61"
-location: "L391"
+community: "AlertDispatcher"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_61
+  - community/AlertDispatcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[_TrackingInjector]] - `method` [EXTRACTED]
+- [[dot-_compile_patterns()]] - `calls` [EXTRACTED]
+- [[LogSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_61
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

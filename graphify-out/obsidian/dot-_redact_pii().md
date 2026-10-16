@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "Community 211"
+community: ".inspect_tool_call"
 location: "L374"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_211
+  - community/inspect_tool_call
 ---
 
 # ._redact_pii()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-inspect_tool_call()]] - `calls` [EXTRACTED]
 - [[dot-inspect_tool_result()]] - `calls` [EXTRACTED]
-- [[Any_34]] - `references` [EXTRACTED]
-- [[MCPInspector_1]] - `method` [EXTRACTED]
+- [[Any_37]] - `references` [EXTRACTED]
+- [[MCPInspector]] - `method` [EXTRACTED]
 - [[Recursively redact HIGH-severity PII from a value.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_211
+#graphify/code #graphify/EXTRACTED #community/inspect_tool_call

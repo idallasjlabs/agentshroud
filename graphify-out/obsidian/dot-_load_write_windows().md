@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "Memory Integrity & Lifecycle"
+community: "lifespan.py"
 location: "L124"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Memory_Integrity__Lifecycle
+  - community/lifespanpy
 ---
 
 # ._load_write_windows()
 
 ## Connections
-- [[dot-__init__()_81]] - `calls` [EXTRACTED]
+- [[dot-__init__()_67]] - `calls` [EXTRACTED]
 - [[Load active write windows from disk.]] - `rationale_for` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Integrity__Lifecycle
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

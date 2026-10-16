@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Community 183"
+community: "A2AMethod"
 location: "L555"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_183
+  - community/A2AMethod
 ---
 
 # ._tier_for()
@@ -16,4 +16,4 @@ tags:
 - [[A2AMethod]] - `references` [EXTRACTED]
 - [[A2APolicyEngine_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_183
+#graphify/code #graphify/EXTRACTED #community/A2AMethod

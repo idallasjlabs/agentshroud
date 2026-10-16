@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "ADR-009: Enforce-by-Default Security Philosophy"
+community: "RuntimeConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ADR-009_Enforce-by-Default_Security_Philosophy
+  - community/RuntimeConfig
 ---
 
 # apple_engine.py
 
 ## Connections
 - [[AppleContainerEngine]] - `contains` [EXTRACTED]
-- [[ContainerEngine_2]] - `imports` [EXTRACTED]
-- [[ContainerInfo_2]] - `imports` [EXTRACTED]
+- [[ContainerEngine]] - `imports` [EXTRACTED]
+- [[ContainerInfo]] - `imports` [EXTRACTED]
 - [[RuntimeConfig]] - `references` [EXTRACTED]
-- [[__init__.py_8]] - `re_exports` [EXTRACTED]
 - [[engine.py]] - `imports_from` [EXTRACTED]
+- [[runtime__init__.py]] - `re_exports` [EXTRACTED]
 - [[security.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy
+#graphify/code #graphify/EXTRACTED #community/RuntimeConfig

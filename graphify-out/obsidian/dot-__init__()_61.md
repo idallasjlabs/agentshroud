@@ -1,18 +1,19 @@
 ---
-source_file: "skills/custom/securebrowser/scripts/browse.py"
+source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "Community 142"
-location: "L65"
+community: "PrivacyPolicyEnforcer"
+location: "L181"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_142
+  - community/PrivacyPolicyEnforcer
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_config()_3]] - `calls` [EXTRACTED]
-- [[SecureBrowser_3]] - `method` [EXTRACTED]
+- [[dot-default()]] - `calls` [EXTRACTED]
+- [[PrivacyPolicy]] - `references` [EXTRACTED]
+- [[PrivacyPolicyEnforcer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_142
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

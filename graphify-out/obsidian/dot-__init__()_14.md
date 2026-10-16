@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/browser_security.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
-location: "L104"
+community: "EgressApprovalQueue"
+location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/EgressApprovalQueue
 ---
 
 # .__init__()
 
 ## Connections
-- [[BrowserSecurityGuard]] - `method` [EXTRACTED]
+- [[dot-_load_rules()]] - `calls` [EXTRACTED]
+- [[EgressApprovalQueue]] - `method` [EXTRACTED]
+- [[Initialize the approval queue.          Args             rules_file Path to pe]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/EgressApprovalQueue

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "code"
-community: "Community 117"
+community: "TestEgressApprovalQueue"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_117
+  - community/TestEgressApprovalQueue
 ---
 
 # .approval_queue()
@@ -16,4 +16,4 @@ tags:
 - [[EgressApprovalQueue]] - `calls` [EXTRACTED]
 - [[TestEgressApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_117
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

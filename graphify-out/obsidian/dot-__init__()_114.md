@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/proxy/http_proxy.py"
+source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "Egress Filter & HTTP Proxy"
-location: "L111"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Filter__HTTP_Proxy
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressFilter_2]] - `references` [EXTRACTED]
-- [[HTTPConnectProxy_1]] - `method` [EXTRACTED]
-- [[WebProxy_1]] - `references` [EXTRACTED]
-- [[WebProxyConfig]] - `calls` [EXTRACTED]
+- [[CanaryConfig_1]] - `references` [EXTRACTED]
+- [[CanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Filter__HTTP_Proxy
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

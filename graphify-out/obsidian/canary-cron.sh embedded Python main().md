@@ -1,20 +1,20 @@
 ---
 source_file: "scripts/canary-cron.sh"
 type: "code"
-community: "KillSwitchMonitor"
+community: "PIIConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/PIIConfig
 ---
 
 # canary-cron.sh embedded Python main()
 
 ## Connections
-- [[PIIConfig]] - `calls` [EXTRACTED]
-- [[PIISanitizer]] - `calls` [EXTRACTED]
+- [[PIIConfig_2]] - `calls` [EXTRACTED]
+- [[PIISanitizer_2]] - `calls` [EXTRACTED]
 - [[PromptGuard]] - `calls` [EXTRACTED]
-- [[SecurityPipeline]] - `calls` [EXTRACTED]
+- [[SecurityPipeline_2]] - `calls` [EXTRACTED]
 - [[run_canary()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

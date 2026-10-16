@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "AgentShroud™ — Trademark Prior Use Record"
+community: "test_clamav_pipeline.py"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud__Trademark_Prior_Use_Record
+  - community/test_clamav_pipelinepy
 ---
 
 # _timeout_wait_for()
@@ -15,4 +15,4 @@ tags:
 - [[Test replacement for asyncio.wait_for — raises TimeoutError.      Closes the un-]] - `rationale_for` [EXTRACTED]
 - [[test_clamav_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record
+#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy

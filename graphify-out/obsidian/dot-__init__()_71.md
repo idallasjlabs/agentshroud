@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_egress_filter.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "Community 167"
-location: "L278"
+community: "make_event"
+location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_167
+  - community/make_event
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeAuditStore]] - `method` [EXTRACTED]
+- [[EventBus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_167
+#graphify/code #graphify/EXTRACTED #community/make_event

@@ -1,23 +1,23 @@
 ---
-source_file: "scripts/triage-cve-mitigations.py"
+source_file: "scripts/soak_status.py"
 type: "code"
-community: "EncryptedStore"
-location: "L681"
+community: "TestClassify"
+location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/TestClassify
 ---
 
 # classify()
 
 ## Connections
-- [[Classify an advisory into its vulnerability class from title+description.      D]] - `rationale_for` [EXTRACTED]
+- [[Any_59]] - `references` [EXTRACTED]
+- [[Return (soaked, message) for the given cron job list.      soaked=True only if a]] - `rationale_for` [EXTRACTED]
 - [[TestClassify_2]] - `calls` [EXTRACTED]
-- [[VulnClass]] - `references` [EXTRACTED]
-- [[_classify()]] - `semantically_similar_to` [INFERRED]
-- [[test_triage_cve_mitigations.py]] - `references` [EXTRACTED]
-- [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
-- [[triage_entry()]] - `calls` [EXTRACTED]
+- [[_is_benign_skip]] - `calls` [EXTRACTED]
+- [[_is_benign_skip()]] - `calls` [EXTRACTED]
+- [[main()_22]] - `calls` [EXTRACTED]
+- [[soak_status.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EncryptedStore
+#graphify/code #graphify/EXTRACTED #community/TestClassify

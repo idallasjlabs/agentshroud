@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "Community 110"
-location: "L29"
+community: "TrustConfig"
+location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_110
+  - community/TrustConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeFetcher]] - `method` [EXTRACTED]
+- [[dot-_init_db()_1]] - `calls` [EXTRACTED]
+- [[ProgressiveTrustConfig]] - `references` [EXTRACTED]
+- [[TrustConfig]] - `references` [EXTRACTED]
+- [[TrustLevel_1]] - `references` [EXTRACTED]
+- [[TrustManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_110
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "Community 330"
+community: "test_cli_coverage.py"
 location: "L623"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_330
+  - community/test_cli_coveragepy
 ---
 
 # .__anext__()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeWS]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_330
+#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy

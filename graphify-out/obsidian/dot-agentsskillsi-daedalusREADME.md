@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-daedalus/README.md"
 type: "document"
-community: "Community 1192"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1192
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # .agents/skills/i-daedalus/README.md
 
 ## Connections
-- [[Daedalus — Concept Illustrator]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1192
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

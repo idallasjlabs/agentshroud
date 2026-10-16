@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "Community 108"
-location: "L161"
+community: ".analyze_message"
+location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_108
+  - community/analyze_message
 ---
 
 # .__init__()
 
 ## Connections
-- [[HttpSseConnection]] - `method` [EXTRACTED]
-- [[MCPServerConfig]] - `references` [EXTRACTED]
+- [[Initialize the scanner with optional custom rules.          Args             cu]] - `rationale_for` [EXTRACTED]
+- [[InjectionRule]] - `references` [EXTRACTED]
+- [[ToolResultInjectionScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_108
+#graphify/code #graphify/EXTRACTED #community/analyze_message

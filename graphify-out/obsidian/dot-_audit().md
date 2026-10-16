@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "Community 183"
-location: "L394"
+community: "ProxyAction"
+location: "L613"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_183
+  - community/ProxyAction
 ---
 
 # ._audit()
 
 ## Connections
-- [[dot-process_agent_card_request()]] - `calls` [EXTRACTED]
-- [[dot-process_inbound_request()]] - `calls` [EXTRACTED]
-- [[A2AProxy_1]] - `method` [EXTRACTED]
-- [[A2AProxyResult]] - `references` [EXTRACTED]
-- [[record_decision]] - `calls` [EXTRACTED]
+- [[dot-check_request()]] - `calls` [EXTRACTED]
+- [[dot-scan_response()]] - `calls` [EXTRACTED]
+- [[Any_12]] - `references` [EXTRACTED]
+- [[Record an audit entry in the hash chain.]] - `rationale_for` [EXTRACTED]
+- [[WebProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_183
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

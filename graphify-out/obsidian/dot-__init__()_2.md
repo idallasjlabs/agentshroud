@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/security/credential_injector.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "Community 290"
-location: "L105"
+community: "WebContentScanner"
+location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_290
+  - community/WebContentScanner
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_credentials()]] - `calls` [EXTRACTED]
-- [[dot-_load_default_mappings()]] - `calls` [EXTRACTED]
-- [[CredentialInjector]] - `method` [EXTRACTED]
-- [[CredentialInjectorConfig]] - `calls` [EXTRACTED]
+- [[RateLimiter]] - `calls` [EXTRACTED]
+- [[URLAnalyzer]] - `references` [EXTRACTED]
+- [[WebContentScanner]] - `references` [EXTRACTED]
+- [[WebProxy]] - `method` [EXTRACTED]
+- [[WebProxyConfig_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_290
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

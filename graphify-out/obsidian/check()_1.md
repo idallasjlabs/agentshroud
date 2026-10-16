@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/preflight-check.sh"
+source_file: "scripts/smoke.d/test-sunday-upgrade-scan.sh"
 type: "code"
-community: ".send()"
-location: "L12"
+community: "test-sunday-upgrade-scan.sh"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/send
+  - community/test-sunday-upgrade-scansh
 ---
 
 # check()
 
 ## Connections
-- [[preflight-check.sh]] - `defines` [EXTRACTED]
-- [[preflight-check.sh script]] - `calls` [EXTRACTED]
+- [[test-sunday-upgrade-scan.sh]] - `defines` [EXTRACTED]
+- [[test-sunday-upgrade-scan.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/send
+#graphify/code #graphify/EXTRACTED #community/test-sunday-upgrade-scansh

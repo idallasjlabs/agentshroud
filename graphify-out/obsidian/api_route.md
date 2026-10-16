@@ -1,17 +1,24 @@
 ---
 source_file: ""
 type: "code"
-community: "server.py"
+community: "Request"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/serverpy
+  - community/Request
 ---
 
 # api_route
 
 ## Connections
-- [[firmware_bin()]] - `references` [EXTRACTED]
-- [[health()]] - `references` [EXTRACTED]
+- [[google_api_proxy()]] - `references` [EXTRACTED]
+- [[hermes_dashboard_proxy()]] - `references` [EXTRACTED]
+- [[hermes_dashboard_root()]] - `references` [EXTRACTED]
+- [[llm_api_proxy()]] - `references` [EXTRACTED]
+- [[llm_api_v1_prefix_alias()]] - `references` [EXTRACTED]
+- [[llm_openai_chat_alias()]] - `references` [EXTRACTED]
+- [[ollama_api_proxy()]] - `references` [EXTRACTED]
+- [[slack_api_proxy()]] - `references` [EXTRACTED]
+- [[telegram_api_proxy()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/serverpy
+#graphify/code #graphify/EXTRACTED #community/Request

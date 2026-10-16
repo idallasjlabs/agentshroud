@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
+source_file: "gateway/dashboard/proxy_status.py"
 type: "code"
-community: "Proxy Sidecar & Forwarder"
-location: "L60"
+community: "ProxyDashboard"
+location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Proxy_Sidecar__Forwarder
+  - community/ProxyDashboard
 ---
 
 # .__init__()
 
 ## Connections
-- [[SidecarScanner]] - `method` [EXTRACTED]
+- [[ProxyDashboard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder
+#graphify/code #graphify/EXTRACTED #community/ProxyDashboard

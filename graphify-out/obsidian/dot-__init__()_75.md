@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/proxy/collaborator_greeter.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Community 181"
-location: "L36"
+community: "AsyncMock"
+location: "L8615"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_181
+  - community/AsyncMock
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_state()]] - `calls` [EXTRACTED]
-- [[dot-_load_taglines()]] - `calls` [EXTRACTED]
-- [[AsyncClient]] - `references` [EXTRACTED]
-- [[CollaboratorGreeter]] - `method` [EXTRACTED]
+- [[AsyncMock]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_181
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/rate_limit_guard.py"
+source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "Community 190"
-location: "L82"
+community: "A2AMethod"
+location: "L388"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_190
+  - community/A2AMethod
 ---
 
 # .__init__()
 
 ## Connections
-- [[RateLimitConfig]] - `references` [EXTRACTED]
-- [[RateLimitGuard]] - `method` [EXTRACTED]
+- [[_LegacyStubApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_190
+#graphify/code #graphify/EXTRACTED #community/A2AMethod

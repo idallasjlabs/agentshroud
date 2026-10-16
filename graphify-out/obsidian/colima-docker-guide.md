@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/colima-docker-guide.md"
 type: "document"
-community: "test_dashboard_endpoints.py"
+community: "system-requirements.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/system-requirementsmd
 ---
 
 # colima-docker-guide.md
@@ -18,4 +18,4 @@ tags:
 - [[OPENCLAW_SETUP]] - `conceptually_related_to` [INFERRED]
 - [[setup-guide]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/document #graphify/EXTRACTED #community/system-requirementsmd

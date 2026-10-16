@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "MCPToolCall"
+community: "ForwardRequest"
 location: "L262"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/ForwardRequest
 ---
 
 # apply-patches.js must reference AGENTSHROUD_GROUP_CHAT_IDS (multi-group).
 
 ## Connections
-- [[.test_openclaw_patch_script_uses_multi_group_allowlist_var()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_openclaw_patch_script_uses_multi_group_allowlist_var()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPToolCall
+#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest

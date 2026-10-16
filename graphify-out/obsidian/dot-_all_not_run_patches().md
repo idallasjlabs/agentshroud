@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Community 168"
+community: "scanner_integration.py"
 location: "L868"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_168
+  - community/scanner_integrationpy
 ---
 
 # ._all_not_run_patches()
@@ -22,13 +22,13 @@ tags:
 - [[dot-test_scorecard_domain_ids_are_sequential()]] - `calls` [EXTRACTED]
 - [[dot-test_secrets_management_baseline_two()]] - `calls` [EXTRACTED]
 - [[dot-test_standard_basis_present()]] - `calls` [EXTRACTED]
-- [[dot-test_timestamp_present()]] - `calls` [EXTRACTED]
+- [[dot-test_timestamp_present()_1]] - `calls` [EXTRACTED]
 - [[dot-test_totals_present()]] - `calls` [EXTRACTED]
 - [[dot-test_version_is_v090()]] - `calls` [EXTRACTED]
-- [[TestComputeScorecard]] - `method` [EXTRACTED]
+- [[TestComputeScorecard_1]] - `method` [EXTRACTED]
 - [[_falco_not_run()]] - `calls` [EXTRACTED]
 - [[_openscap_not_run()]] - `calls` [EXTRACTED]
 - [[_trivy_not_run()]] - `calls` [EXTRACTED]
 - [[_wazuh_not_run()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_168
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

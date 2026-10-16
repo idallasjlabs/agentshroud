@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "Community 142"
+community: "SecureBrowser"
 location: "L194"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_142
+  - community/SecureBrowser
 ---
 
 # ._log_security_event()
@@ -20,4 +20,4 @@ tags:
 - [[Log security-related events_3]] - `rationale_for` [EXTRACTED]
 - [[SecureBrowser_3]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_142
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

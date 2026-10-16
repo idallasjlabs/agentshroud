@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/group_rbac.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Community 121"
-location: "L87"
+community: "StdioConnection"
+location: "L445"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_121
+  - community/StdioConnection
 ---
 
 # .__init__()
 
 ## Connections
-- [[GroupRoleResolver]] - `method` [EXTRACTED]
+- [[FakeApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_121
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

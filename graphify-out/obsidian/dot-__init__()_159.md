@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/group_workspace.py"
+source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "Community 53"
-location: "L95"
+community: "GitGuard"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_53
+  - community/GitGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[GroupWorkspaceManager]] - `method` [EXTRACTED]
+- [[Args             mode 'monitor' (log findings) or 'enforce' (quarantine suspic]] - `rationale_for` [EXTRACTED]
+- [[GitGuard]] - `method` [EXTRACTED]
+- [[Path_50]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_53
+#graphify/code #graphify/EXTRACTED #community/GitGuard

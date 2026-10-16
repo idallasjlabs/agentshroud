@@ -1,22 +1,22 @@
 ---
 source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
 type: "document"
-community: "archive_old_events()"
+community: "All Dependencies.md"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/archive_old_events
+  - community/All_Dependenciesmd
 ---
 
 # aiosqlite
 
 ## Connections
 - [[Database Files]] - `contains` [EXTRACTED]
-- [[Purpose_184]] - `contains` [EXTRACTED]
-- [[Related Notes_39]] - `contains` [EXTRACTED]
+- [[Purpose_66]] - `contains` [EXTRACTED]
+- [[Related Notes_21]] - `contains` [EXTRACTED]
 - [[WAL Mode]] - `contains` [EXTRACTED]
-- [[Where Used]] - `contains` [EXTRACTED]
+- [[Where Used_1]] - `contains` [EXTRACTED]
 - [[aiosqlite]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/archive_old_events
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

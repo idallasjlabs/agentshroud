@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "Community 51"
+community: "TestSSRFDetection"
 location: "L292"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_51
+  - community/TestSSRFDetection
 ---
 
 # ._check_base64()
@@ -19,4 +19,4 @@ tags:
 - [[URLFinding]] - `calls` [EXTRACTED]
 - [[_looks_like_base64()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_51
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

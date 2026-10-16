@@ -1,26 +1,17 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
-type: "code"
-community: "GroupApprovalRouter"
+source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
+type: "document"
+community: "alert_dispatcher.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/alert_dispatcherpy
 ---
 
-# alert_dispatcher.py
+# alert_dispatcher.py.md
 
 ## Connections
-- [[AlertDispatcher]] - `contains` [EXTRACTED]
-- [[canary.py]] - `references` [EXTRACTED]
-- [[clamav]] - `references` [INFERRED]
-- [[clamav_scanner.py]] - `references` [EXTRACTED]
-- [[dns_filter.py]] - `references` [EXTRACTED]
-- [[drift_detector.py]] - `references` [EXTRACTED]
-- [[egress_filter.py]] - `references` [EXTRACTED]
-- [[falco-rules]] - `references` [INFERRED]
-- [[health_report.py]] - `semantically_similar_to` [INFERRED]
-- [[wazuh-ossec]] - `references` [INFERRED]
+- [[alert_dispatcher.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy

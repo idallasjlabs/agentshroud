@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_cron_state_monitor.py"
+source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "Community 90"
-location: "L197"
+community: "api.py"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/apipy
 ---
 
 # .__call__()
 
 ## Connections
-- [[_DedupDispatchFake]] - `method` [EXTRACTED]
+- [[FetchOutcome_1]] - `references` [EXTRACTED]
+- [[_FakeFetcher_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_90
+#graphify/code #graphify/EXTRACTED #community/apipy

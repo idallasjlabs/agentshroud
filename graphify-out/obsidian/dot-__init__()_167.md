@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/progressive_lockdown.py"
+source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "Community 58"
-location: "L69"
+community: "test_e2e_proxy.py"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_58
+  - community/test_e2e_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[ProgressiveLockdown]] - `method` [EXTRACTED]
+- [[ForwarderConfig]] - `references` [EXTRACTED]
+- [[HTTPForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_58
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

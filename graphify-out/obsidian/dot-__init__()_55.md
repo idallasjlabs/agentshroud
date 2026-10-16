@@ -1,18 +1,19 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "Community 135"
-location: "L65"
+community: "ingest_api/models.py"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_135
+  - community/ingest_api/modelspy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_config()_1]] - `calls` [EXTRACTED]
-- [[SecureBrowser_1]] - `method` [EXTRACTED]
+- [[DataLedger]] - `method` [EXTRACTED]
+- [[LedgerConfig]] - `references` [EXTRACTED]
+- [[Store configuration          Actual database connection created in initialize().]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_135
+#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy

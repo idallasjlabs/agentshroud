@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/telegram_replay.py"
 type: "code"
-community: "Community 147"
+community: "test_telegram_replay.py"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_147
+  - community/test_telegram_replaypy
 ---
 
 # ._init_db()
 
 ## Connections
-- [[dot-__init__()_64]] - `calls` [EXTRACTED]
+- [[dot-__init__()_50]] - `calls` [EXTRACTED]
 - [[UpdateReplayBuffer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_147
+#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy

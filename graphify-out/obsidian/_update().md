@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_replay.py"
 type: "code"
-community: "_sleep()"
+community: "test_telegram_replay.py"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_sleep
+  - community/test_telegram_replaypy
 ---
 
 # _update()
@@ -24,4 +24,4 @@ tags:
 - [[test_sqlite_failure_does_not_raise()]] - `calls` [EXTRACTED]
 - [[test_telegram_replay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_sleep
+#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy

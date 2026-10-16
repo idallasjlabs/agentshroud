@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/deploy-gateway.sh"
 type: "code"
-community: ".agents/skills/i-agile/SKILL.md"
+community: "deploy-gateway.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-agile/SKILLmd
+  - community/deploy-gatewaysh
 ---
 
 # deploy-gateway.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[deploy-gateway.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-agile/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/deploy-gatewaysh

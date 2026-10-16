@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/telegram_replay.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "Community 147"
-location: "L45"
+community: "test_soc_router_coverage.py"
+location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_147
+  - community/test_soc_router_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_db()_2]] - `calls` [EXTRACTED]
-- [[UpdateReplayBuffer]] - `method` [EXTRACTED]
+- [[FakeGroup]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_147
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

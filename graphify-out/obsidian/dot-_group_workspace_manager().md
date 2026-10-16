@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "Community 53"
+community: "TelegramAPIProxy"
 location: "L7752"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_53
+  - community/TelegramAPIProxy
 ---
 
 # ._group_workspace_manager()
@@ -17,4 +17,4 @@ tags:
 - [[GroupWorkspaceManager]] - `calls` [EXTRACTED]
 - [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_53
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

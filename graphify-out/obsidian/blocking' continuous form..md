@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "EgressFilterConfig"
+community: "TestFabricatedSecurityNotice"
 location: "L537"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/TestFabricatedSecurityNotice
 ---
 
 # blocking' continuous form.
 
 ## Connections
-- [[.test_progressive_tense()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_progressive_tense()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

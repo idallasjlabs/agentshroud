@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Voice Gateway STT & Browser Security"
+community: "tool_chain_analyzer.py"
 location: "L494"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/tool_chain_analyzerpy
 ---
 
 # ._trigger_alert()
@@ -17,4 +17,4 @@ tags:
 - [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 - [[Trigger alert callbacks for a detected chain.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security
+#graphify/code #graphify/EXTRACTED #community/tool_chain_analyzerpy

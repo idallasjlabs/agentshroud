@@ -1,16 +1,16 @@
 ---
 source_file: "browser-extension/package.json"
 type: "code"
-community: "SECURITY_VALUE_PROPOSITION.md"
+community: "Browser Extension"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SECURITY_VALUE_PROPOSITIONmd
+  - community/Browser_Extension
 ---
 
 # browser-extension package.json (Jest test harness)
 
 ## Connections
-- [[README_39]] - `conceptually_related_to` [INFERRED]
+- [[browser-extensionREADME]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/SECURITY_VALUE_PROPOSITIONmd
+#graphify/code #graphify/INFERRED #community/Browser_Extension

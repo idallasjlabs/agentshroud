@@ -1,20 +1,20 @@
 ---
 source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Community 132"
+community: "SecureBrowser"
 location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_132
+  - community/SecureBrowser
 ---
 
 # ._load_config()
 
 ## Connections
-- [[dot-__init__()_54]] - `calls` [EXTRACTED]
+- [[dot-__init__()_39]] - `calls` [EXTRACTED]
 - [[Load security configuration]] - `rationale_for` [EXTRACTED]
 - [[SecureBrowser]] - `method` [EXTRACTED]
 - [[SecurityConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_132
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

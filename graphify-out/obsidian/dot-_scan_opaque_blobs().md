@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "Community 293"
+community: "SkillGuard"
 location: "L384"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_293
+  - community/SkillGuard
 ---
 
 # ._scan_opaque_blobs()
@@ -15,7 +15,7 @@ tags:
 - [[dot-scan_file()_1]] - `calls` [EXTRACTED]
 - [[Finding]] - `calls` [EXTRACTED]
 - [[Flag long opaque base64hex runs as probable obfuscated payloads.]] - `rationale_for` [EXTRACTED]
-- [[ScanResult_3]] - `references` [EXTRACTED]
+- [[ScanResult_4]] - `references` [EXTRACTED]
 - [[SkillGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_293
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

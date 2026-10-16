@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "Canary Tripwire"
+community: "PIIConfig"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Canary_Tripwire
+  - community/PIIConfig
 ---
 
 # ._normalize()
@@ -16,4 +16,4 @@ tags:
 - [[dot-_check_plain()]] - `calls` [EXTRACTED]
 - [[CanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Canary_Tripwire
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

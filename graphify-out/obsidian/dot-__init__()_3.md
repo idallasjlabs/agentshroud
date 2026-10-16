@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "Community 37"
+community: "LLMProxy"
 location: "L232"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_37
+  - community/LLMProxy
 ---
 
 # .__init__()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LLMProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_37
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "DraftEntry"
+community: "sunday-upgrade-apply.sh"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DraftEntry
+  - community/sunday-upgrade-applysh
 ---
 
 # asb Bot Helper Script
@@ -15,4 +15,4 @@ tags:
 - [[phase_apply()]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DraftEntry
+#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

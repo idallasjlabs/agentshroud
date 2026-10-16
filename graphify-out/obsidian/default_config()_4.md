@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_subagent_monitor.py"
+source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "cli/main.py"
+community: "DNSFilterConfig"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/cli/mainpy
+  - community/DNSFilterConfig
 ---
 
 # default_config()
 
 ## Connections
-- [[SubagentMonitorConfig]] - `calls` [EXTRACTED]
-- [[test_subagent_monitor.py]] - `contains` [EXTRACTED]
+- [[DNSFilterConfig]] - `calls` [EXTRACTED]
+- [[test_dns_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/cli/mainpy
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

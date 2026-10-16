@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Slack Proxy & Main Endpoint Tests"
+community: "AsyncMock"
 location: "L8618"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_Proxy__Main_Endpoint_Tests
+  - community/AsyncMock
 ---
 
 # .__call__()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AsyncMock]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_Proxy__Main_Endpoint_Tests
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

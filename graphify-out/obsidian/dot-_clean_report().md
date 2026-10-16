@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 537"
+community: "TestStartupScannerKeying"
 location: "L383"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_537
+  - community/TestStartupScannerKeying
 ---
 
 # ._clean_report()
@@ -19,4 +19,4 @@ tags:
 - [[dot-test_legacy_trivy_key_present()]] - `calls` [EXTRACTED]
 - [[TestStartupScannerKeying]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_537
+#graphify/code #graphify/EXTRACTED #community/TestStartupScannerKeying

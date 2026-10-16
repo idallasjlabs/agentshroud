@@ -1,20 +1,20 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "main.rs"
 location: "L1107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/mainrs
 ---
 
 # decide_errors_on_404()
 
 ## Connections
-- [[.new()_2]] - `calls` [EXTRACTED]
-- [[.with()]] - `calls` [EXTRACTED]
+- [[dot-new()_2]] - `calls` [EXTRACTED]
+- [[dot-with()]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[run_approvals_decide()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/mainrs

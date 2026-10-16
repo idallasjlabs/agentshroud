@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "Community 415"
+community: "test_soc_bots.py"
 location: "L650"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_415
+  - community/test_soc_botspy
 ---
 
 # ._make_state_with_bot()
@@ -28,4 +28,4 @@ tags:
 - [[_make_app_state()]] - `calls` [EXTRACTED]
 - [[_make_bot_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_415
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

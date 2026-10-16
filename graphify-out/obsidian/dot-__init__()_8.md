@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/audit_export.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Ingest API & RBAC Core"
-location: "L28"
+community: "TelegramAPIProxy"
+location: "L139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/TelegramAPIProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_default_jsonld_context()]] - `calls` [EXTRACTED]
-- [[AuditExportConfig]] - `method` [EXTRACTED]
+- [[FakeRBAC]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

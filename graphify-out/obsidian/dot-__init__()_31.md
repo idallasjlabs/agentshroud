@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "Community 108"
-location: "L125"
+community: "ProxyAction"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_108
+  - community/ProxyAction
 ---
 
 # .__init__()
 
 ## Connections
-- [[Exception_2]] - `references` [EXTRACTED]
-- [[FakeConn]] - `method` [EXTRACTED]
+- [[MockEgressEvent]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_108
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

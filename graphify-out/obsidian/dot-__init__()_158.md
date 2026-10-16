@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/egress_filter.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "Community 52"
-location: "L105"
+community: "FalcoAlertWatcher"
+location: "L194"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_52
+  - community/FalcoAlertWatcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressFilter]] - `method` [EXTRACTED]
-- [[EgressFilterConfig_1]] - `references` [EXTRACTED]
-- [[EgressPolicy]] - `references` [EXTRACTED]
-- [[get_egress_config]] - `calls` [EXTRACTED]
+- [[FalcoAlertWatcher]] - `method` [EXTRACTED]
+- [[Path_49]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_52
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

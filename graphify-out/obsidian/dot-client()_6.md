@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_runtime_engines.py"
+source_file: "gateway/tests/test_api_contract.py"
 type: "code"
-community: "Community 663"
-location: "L664"
+community: "TestOpenAPIContract"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_663
+  - community/TestOpenAPIContract
 ---
 
 # .client()
 
 ## Connections
-- [[TestWebAPI]] - `method` [EXTRACTED]
+- [[Create a FastAPI test client.]] - `rationale_for` [EXTRACTED]
+- [[TestOpenAPIContract]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_663
+#graphify/code #graphify/EXTRACTED #community/TestOpenAPIContract

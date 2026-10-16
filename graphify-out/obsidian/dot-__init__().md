@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/token_validation.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "Community 107"
-location: "L52"
+community: "WebProxyConfig"
+location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_107
+  - community/WebProxyConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[TokenValidator]] - `method` [EXTRACTED]
+- [[RateLimiter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_107
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

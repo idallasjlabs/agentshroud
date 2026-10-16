@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "Community 284"
-location: "L745"
+community: "KeyVault"
+location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_284
+  - community/KeyVault
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeWSConnect]] - `method` [EXTRACTED]
+- [[KeyVault]] - `method` [EXTRACTED]
+- [[KeyVaultConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_284
+#graphify/code #graphify/EXTRACTED #community/KeyVault

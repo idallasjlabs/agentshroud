@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "Community 602"
+community: ".validate_docker_compose_config"
 location: "L412"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_602
+  - community/validate_docker_compose_config
 ---
 
 # ._validate_privileged_containers()
@@ -18,4 +18,4 @@ tags:
 - [[NetworkValidator]] - `method` [EXTRACTED]
 - [[Validate that no containers are running in privileged mode.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_602
+#graphify/code #graphify/EXTRACTED #community/validate_docker_compose_config

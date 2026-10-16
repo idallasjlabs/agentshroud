@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/conftest.py"
+source_file: "gateway/tests/test_dashboard_endpoints.py"
 type: "code"
-community: "EgressPolicy"
-location: "L154"
+community: "test_dashboard_endpoints.py"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressPolicy
+  - community/test_dashboard_endpointspy
 ---
 
 # auth_headers()
 
 ## Connections
-- [[Return Authorization headers with test token]] - `rationale_for` [EXTRACTED]
-- [[conftest.py]] - `contains` [EXTRACTED]
+- [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressPolicy
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/soc/auth.py"
+source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "code"
-community: "Community 153"
-location: "L141"
+community: "DataExfilVolumeGuard"
+location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_153
+  - community/DataExfilVolumeGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[RBACManager_2]] - `references` [EXTRACTED]
-- [[Role_14]] - `references` [EXTRACTED]
-- [[SCLCaller_1]] - `method` [EXTRACTED]
+- [[DataExfilVolumeConfig]] - `references` [EXTRACTED]
+- [[DataExfilVolumeGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_153
+#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

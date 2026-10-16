@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
+source_file: "gateway/proxy/slack_socket_client.py"
 type: "code"
-community: "Community 136"
-location: "L65"
+community: "SlackSocketClient"
+location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_136
+  - community/SlackSocketClient
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_config()_2]] - `calls` [EXTRACTED]
-- [[SecureBrowser_2]] - `method` [EXTRACTED]
+- [[SlackSocketClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_136
+#graphify/code #graphify/EXTRACTED #community/SlackSocketClient

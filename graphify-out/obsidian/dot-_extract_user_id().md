@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/ingest_api/middleware.py"
+source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
-location: "L1019"
+community: "WebhookReceiver"
+location: "L325"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/WebhookReceiver
 ---
 
 # ._extract_user_id()
 
 ## Connections
-- [[dot-process_request()]] - `calls` [EXTRACTED]
-- [[Any_2]] - `references` [EXTRACTED]
-- [[Extract user ID from request data.]] - `rationale_for` [EXTRACTED]
-- [[MiddlewareManager]] - `method` [EXTRACTED]
+- [[dot-process_webhook()]] - `calls` [EXTRACTED]
+- [[Any_14]] - `references` [EXTRACTED]
+- [[Extract user ID from webhook payload based on source platform.]] - `rationale_for` [EXTRACTED]
+- [[WebhookReceiver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/WebhookReceiver

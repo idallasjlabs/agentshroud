@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/blucli/SKILL.md"
 type: "concept"
-community: "Technical Details"
+community: "blucli/SKILL.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Technical_Details
+  - community/blucli/SKILLmd
 ---
 
 # blu CLI (Bluesound/NAD control)
 
 ## Connections
-- [[SKILL_199]] - `implements` [EXTRACTED]
+- [[blucliSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Technical_Details
+#graphify/concept #graphify/EXTRACTED #community/blucli/SKILLmd

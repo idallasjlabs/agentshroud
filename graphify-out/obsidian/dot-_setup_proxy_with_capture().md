@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "Community 58"
+community: "TestCollabLockdownNotifications"
 location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_58
+  - community/TestCollabLockdownNotifications
 ---
 
 # ._setup_proxy_with_capture()
@@ -21,4 +21,4 @@ tags:
 - [[TestCollabLockdownNotifications]] - `method` [EXTRACTED]
 - [[_make_proxy()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_58
+#graphify/code #graphify/EXTRACTED #community/TestCollabLockdownNotifications

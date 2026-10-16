@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_jira_dev_ticket.py"
+source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "code"
-community: "Community 169"
-location: "L266"
+community: "CronStateMonitor"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_169
+  - community/CronStateMonitor
 ---
 
 # .__call__()
 
 ## Connections
-- [[_MockTransport]] - `method` [EXTRACTED]
+- [[_DispatchSpy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_169
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

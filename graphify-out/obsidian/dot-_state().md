@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 1174"
+community: "TestComputeBotScorecard"
 location: "L1222"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1174
+  - community/TestComputeBotScorecard
 ---
 
 # ._state()
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_stats_exception_defaults_to_zero_denials()]] - `calls` [EXTRACTED]
 - [[TestComputeBotScorecard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1174
+#graphify/code #graphify/EXTRACTED #community/TestComputeBotScorecard

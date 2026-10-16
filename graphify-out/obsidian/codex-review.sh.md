@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/codex-review.sh"
 type: "code"
-community: ".agents/skills/graphify/references/extraction-sp"
+community: "codex-review.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/graphify/references/extraction-sp
+  - community/codex-reviewsh
 ---
 
 # codex-review.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[codex-review.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/graphify/references/extraction-sp
+#graphify/code #graphify/EXTRACTED #community/codex-reviewsh

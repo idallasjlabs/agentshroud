@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/a2a_governance.py"
+source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "Community 39"
-location: "L190"
+community: "AlertDispatcher"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_39
+  - community/AlertDispatcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[A2AGovernanceConfig]] - `calls` [EXTRACTED]
-- [[A2AGovernanceProxy]] - `method` [EXTRACTED]
+- [[dot-_init_db()]] - `calls` [EXTRACTED]
+- [[DriftDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_39
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

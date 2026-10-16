@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "Session Manager & PII/Context Guard"
+community: ".analyze_message"
 location: "L340"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Manager__PII/Context_Guard
+  - community/analyze_message
 ---
 
 # ._detect_rapid_context_growth()
@@ -18,4 +18,4 @@ tags:
 - [[Detect rapid context window filling.]] - `rationale_for` [EXTRACTED]
 - [[SessionContext]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard
+#graphify/code #graphify/EXTRACTED #community/analyze_message

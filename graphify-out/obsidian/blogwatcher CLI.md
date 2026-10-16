@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/blogwatcher/SKILL.md"
 type: "concept"
-community: "5. API Key Rotation"
+community: "blogwatcher/SKILL.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/5_API_Key_Rotation
+  - community/blogwatcher/SKILLmd
 ---
 
 # blogwatcher CLI
 
 ## Connections
-- [[SKILL_198]] - `implements` [EXTRACTED]
+- [[blogwatcherSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/5_API_Key_Rotation
+#graphify/concept #graphify/EXTRACTED #community/blogwatcher/SKILLmd

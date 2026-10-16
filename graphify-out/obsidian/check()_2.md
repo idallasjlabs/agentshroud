@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/smoke.d/test-container-runtime.sh"
+source_file: "tests/startup_smoke/test_openclaw_readiness_retry.sh"
 type: "code"
-community: "TestSourceTagging"
-location: "L40"
+community: "smoke.sh Startup Smoke Runner"
+location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSourceTagging
+  - community/smokesh_Startup_Smoke_Runner
 ---
 
 # check()
 
 ## Connections
-- [[test-container-runtime.sh]] - `defines` [EXTRACTED]
-- [[test-container-runtime.sh script]] - `calls` [EXTRACTED]
+- [[test_openclaw_readiness_retry.sh]] - `defines` [EXTRACTED]
+- [[test_openclaw_readiness_retry.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSourceTagging
+#graphify/code #graphify/EXTRACTED #community/smokesh_Startup_Smoke_Runner

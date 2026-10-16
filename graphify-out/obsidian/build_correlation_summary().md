@@ -20,10 +20,7 @@ tags:
 - [[get_risk_summary()]] - `calls` [EXTRACTED]
 - [[get_soc_correlation()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
-- [[router.py_1]] - `imports` [EXTRACTED]
-- [[soc_correlation()]] - `calls` [EXTRACTED]
+- [[socrouter.py]] - `imports` [EXTRACTED]
 - [[soc_correlation.py]] - `contains` [EXTRACTED]
-- [[soc_report()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/soc/routerpy

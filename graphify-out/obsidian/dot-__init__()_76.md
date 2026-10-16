@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "Community 183"
-location: "L148"
+community: "EnvelopeSigner"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_183
+  - community/EnvelopeSigner
 ---
 
 # .__init__()
 
 ## Connections
-- [[A2APolicyEngine_2]] - `references` [EXTRACTED]
-- [[A2AProxy_1]] - `method` [EXTRACTED]
-- [[Any_27]] - `references` [EXTRACTED]
+- [[EnvelopeSigner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_183
+#graphify/code #graphify/EXTRACTED #community/EnvelopeSigner

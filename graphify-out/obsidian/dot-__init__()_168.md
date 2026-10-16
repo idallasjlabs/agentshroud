@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_progressive_lockdown.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "Community 58"
-location: "L34"
+community: "test_e2e_proxy.py"
+location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_58
+  - community/test_e2e_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeRBAC_1]] - `method` [EXTRACTED]
+- [[SidecarScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_58
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

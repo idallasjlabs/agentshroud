@@ -1,20 +1,19 @@
 ---
-source_file: "scripts/export-email-reports.py"
+source_file: "scripts/export-telegram-history.py"
 type: "code"
-community: "CollaboratorGreeter"
-location: "L41"
+community: "export_bot"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CollaboratorGreeter
+  - community/export_bot
 ---
 
 # datetime
 
 ## Connections
-- [[_parse_since()_1]] - `references` [EXTRACTED]
-- [[_report_date()]] - `references` [EXTRACTED]
-- [[export-email-reports.py]] - `imports_from` [EXTRACTED]
-- [[export_bot()]] - `references` [EXTRACTED]
+- [[_parse_since()_2]] - `references` [EXTRACTED]
+- [[export()]] - `references` [EXTRACTED]
+- [[export-telegram-history.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CollaboratorGreeter
+#graphify/code #graphify/EXTRACTED #community/export_bot

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/env_guard.py"
+source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
-location: "L36"
+community: "_PipelineCaptor"
+location: "L404"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/_PipelineCaptor
 ---
 
 # .__init__()
 
 ## Connections
-- [[EnvironmentGuard]] - `method` [EXTRACTED]
+- [[_TrustCaptor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/_PipelineCaptor

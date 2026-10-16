@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_realtime_coverage.py"
+source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Ingest API & RBAC Core"
-location: "L174"
+community: "_req"
+location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/_req
 ---
 
 # .check_permission()
 
 ## Connections
-- [[dot-test_get_rbac_manager_builds_real_manager()]] - `calls` [EXTRACTED]
-- [[_FakeRBAC]] - `method` [EXTRACTED]
+- [[_FakeRBAC_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/_req

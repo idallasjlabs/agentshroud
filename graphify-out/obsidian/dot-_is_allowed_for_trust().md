@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "Community 44"
+community: "OutboundInfoFilter"
 location: "L448"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_44
+  - community/OutboundInfoFilter
 ---
 
 # ._is_allowed_for_trust()
 
 ## Connections
-- [[dot-filter_response()_1]] - `calls` [EXTRACTED]
+- [[dot-filter_response()]] - `calls` [EXTRACTED]
 - [[Check if a disclosure category is permitted for the user's trust level.]] - `rationale_for` [EXTRACTED]
 - [[InfoCategory]] - `references` [EXTRACTED]
 - [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_44
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

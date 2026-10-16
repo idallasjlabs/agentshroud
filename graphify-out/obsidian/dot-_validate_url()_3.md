@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "Community 142"
+community: "SecureBrowser"
 location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_142
+  - community/SecureBrowser
 ---
 
 # ._validate_url()
@@ -18,4 +18,4 @@ tags:
 - [[SecureBrowser_3]] - `method` [EXTRACTED]
 - [[Validate URL against allowlistblocklist          Security This is the primary_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_142
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

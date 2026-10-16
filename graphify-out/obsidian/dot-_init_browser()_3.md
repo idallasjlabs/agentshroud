@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "Community 142"
+community: "SecureBrowser"
 location: "L219"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_142
+  - community/SecureBrowser
 ---
 
 # ._init_browser()
@@ -16,4 +16,4 @@ tags:
 - [[Initialize browser with security settings_3]] - `rationale_for` [EXTRACTED]
 - [[SecureBrowser_3]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_142
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

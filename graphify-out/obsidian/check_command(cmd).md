@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
 type: "document"
-community: "Distributed OpenClaw Node Architecture — Raspber"
+community: "env_guard.py"
 location: "L71"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Distributed_OpenClaw_Node_Architecture__Raspber
+  - community/env_guardpy
 ---
 
 # check_command(cmd)
 
 ## Connections
-- [[Function Details_38]] - `contains` [EXTRACTED]
+- [[Function Details_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspber
+#graphify/document #graphify/EXTRACTED #community/env_guardpy

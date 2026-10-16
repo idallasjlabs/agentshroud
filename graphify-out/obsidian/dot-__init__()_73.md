@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/encrypted_store.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Encrypted Store & Drift Detector"
-location: "L61"
+community: "test_soc_realtime_coverage.py"
+location: "L167"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Encrypted_Store__Drift_Detector
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_resolve_secret()]] - `calls` [EXTRACTED]
-- [[EncryptedStore]] - `method` [EXTRACTED]
-- [[Initialize the encrypted store.          Args             master_secret The ma]] - `rationale_for` [EXTRACTED]
+- [[PermissionResult]] - `calls` [EXTRACTED]
+- [[SimpleNamespace]] - `calls` [EXTRACTED]
+- [[_FakeRBAC]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Encrypted_Store__Drift_Detector
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_key_rotation.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "Community 441"
-location: "L30"
+community: "ApprovalQueueConfig"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_441
+  - community/ApprovalQueueConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[MockValidator]] - `method` [EXTRACTED]
+- [[ApprovalStore]] - `method` [EXTRACTED]
+- [[Path_46]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_441
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

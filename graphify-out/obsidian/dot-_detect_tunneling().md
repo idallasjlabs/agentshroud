@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "Community 63"
+community: "DNSFilterConfig"
 location: "L143"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_63
+  - community/DNSFilterConfig
 ---
 
 # ._detect_tunneling()
@@ -17,4 +17,4 @@ tags:
 - [[DNSFilter]] - `method` [EXTRACTED]
 - [[TunnelingPattern]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_63
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

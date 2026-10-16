@@ -1,19 +1,18 @@
 ---
 source_file: "docker/bots/hermes/run-standalone.sh"
 type: "code"
-community: "CI/CD Pipeline Advisor (README)"
-location: "L238"
+community: "docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)"
+location: "L349"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_README
+  - community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
 ---
 
 # cmd_down()
 
 ## Connections
-- [[run-standalone.sh]] - `defines` [EXTRACTED]
+- [[dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]] - `defines` [EXTRACTED]
 - [[run-standalone.sh script]] - `calls` [EXTRACTED]
-- [[run-standalone.sh — launches Hermes via `docker run`, bypassing compose restart-storm bug]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README
+#graphify/code #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes

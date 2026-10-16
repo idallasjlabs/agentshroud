@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_alert_telegram_relay.py"
+source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "code"
-community: "Community 194"
-location: "L17"
+community: "RateLimitGuard"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_194
+  - community/RateLimitGuard
 ---
 
 # .__call__()
 
 ## Connections
-- [[_SendSpy]] - `method` [EXTRACTED]
+- [[FakeClock]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_194
+#graphify/code #graphify/EXTRACTED #community/RateLimitGuard

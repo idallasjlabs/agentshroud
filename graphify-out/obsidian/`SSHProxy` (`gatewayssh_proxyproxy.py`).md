@@ -1,17 +1,17 @@
 ---
 source_file: "docs/ssh-capability.md"
 type: "document"
-community: "agent_isolation.py"
+community: "SSH Capability Architecture Document"
 location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agent_isolationpy
+  - community/SSH_Capability_Architecture_Document
 ---
 
 # `SSHProxy` (`gateway/ssh_proxy/proxy.py`)
 
 ## Connections
-- [[Components_1]] - `contains` [EXTRACTED]
+- [[Components_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agent_isolationpy
+#graphify/document #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document

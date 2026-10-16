@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/dns_forwarder.py"
+source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "Community 573"
-location: "L163"
+community: "ProgressiveLockdown"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_573
+  - community/ProgressiveLockdown
 ---
 
 # .__init__()
 
 ## Connections
-- [[DNSForwarderProtocol]] - `method` [EXTRACTED]
+- [[FakeRBAC_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_573
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "Ingest Middleware & File Sandbox"
+community: "MiddlewareManager"
 location: "L481"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_Middleware__File_Sandbox
+  - community/MiddlewareManager
 ---
 
 # ._critical_guard_failure()
@@ -16,4 +16,4 @@ tags:
 - [[MiddlewareManager]] - `method` [EXTRACTED]
 - [[Return the name of a failed critical guard, or None if all healthy.          Use]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

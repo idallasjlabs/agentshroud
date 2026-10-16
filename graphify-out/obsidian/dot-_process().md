@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "Community 39"
+community: "A2AGovernanceProxy"
 location: "L242"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_39
+  - community/A2AGovernanceProxy
 ---
 
 # ._process()
@@ -18,11 +18,11 @@ tags:
 - [[dot-_check_task_concurrency()]] - `calls` [EXTRACTED]
 - [[dot-_finalize()]] - `calls` [EXTRACTED]
 - [[dot-_sanitize_message()]] - `calls` [EXTRACTED]
-- [[dot-process_inbound()]] - `calls` [EXTRACTED]
-- [[dot-process_outbound()]] - `calls` [EXTRACTED]
+- [[dot-process_inbound()_5]] - `calls` [EXTRACTED]
+- [[dot-process_outbound()_6]] - `calls` [EXTRACTED]
 - [[A2ADecision]] - `references` [EXTRACTED]
 - [[A2AGovernanceProxy]] - `method` [EXTRACTED]
 - [[A2AMessage]] - `references` [EXTRACTED]
 - [[Core message processing pipeline.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_39
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

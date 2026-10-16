@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_web_proxy.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "SOCWebSocketHandler"
-location: "L24"
+community: "MCPPermissionManager"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - community/MCPPermissionManager
 ---
 
 # config()
 
 ## Connections
-- [[WebProxyConfig]] - `calls` [EXTRACTED]
-- [[test_web_proxy.py]] - `contains` [EXTRACTED]
+- [[MCPProxyConfig_3]] - `calls` [EXTRACTED]
+- [[MCPServerConfig_2]] - `calls` [EXTRACTED]
+- [[MCPToolConfig]] - `calls` [EXTRACTED]
+- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

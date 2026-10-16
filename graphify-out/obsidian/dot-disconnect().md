@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "Enhanced Approval Queue"
-location: "L504"
+community: ".connect"
+location: "L360"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/connect
 ---
 
 # .disconnect()
 
 ## Connections
-- [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
-- [[Remove a WebSocket connection from connected set.]] - `rationale_for` [EXTRACTED]
+- [[ApprovalQueue_1]] - `method` [EXTRACTED]
+- [[Remove a WebSocket connection from connected set          Args             webs]] - `rationale_for` [EXTRACTED]
 - [[WebSocket_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/connect

@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-mnemosyne/SKILL.md"
 type: "concept"
-community: "i-sre SKILL.md (SRE practices skill, minimal stu"
+community: "curriculum.md (podcast pipeline learning objectives artifact)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/i-sre_SKILLmd_SRE_practices_skill_minimal_stu
+  - community/curriculummd_podcast_pipeline_learning_objectives_artifact
 ---
 
 # curriculum.md (podcast pipeline learning objectives artifact)
 
-#graphify/concept #graphify/EXTRACTED #community/i-sre_SKILLmd_SRE_practices_skill_minimal_stu
+#graphify/concept #graphify/EXTRACTED #community/curriculummd_podcast_pipeline_learning_objectives_artifact

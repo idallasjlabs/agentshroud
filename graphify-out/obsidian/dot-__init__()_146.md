@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "Community 436"
-location: "L585"
+community: "SubagentGovernance"
+location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_436
+  - community/SubagentGovernance
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeUpstreamResponse]] - `method` [EXTRACTED]
+- [[GovernanceConfig]] - `references` [EXTRACTED]
+- [[SubagentGovernance]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_436
+#graphify/code #graphify/EXTRACTED #community/SubagentGovernance

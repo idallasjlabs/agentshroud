@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/tests/test_version_routes.py"
 type: "code"
-community: "plan_remediation()"
-location: "L38"
+community: "TestVersionRoutes"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/TestVersionRoutes
 ---
 
 # client()
 
 ## Connections
-- [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
+- [[test_version_routes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/TestVersionRoutes

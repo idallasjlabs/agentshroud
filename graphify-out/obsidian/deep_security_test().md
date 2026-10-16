@@ -1,20 +1,48 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "SSHProxy"
+community: "deep_security_test"
 location: "L3283"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/SSHProxy
+  - graphify/INFERRED
+  - community/deep_security_test
 ---
 
 # deep_security_test()
 
 ## Connections
-- [[AuthRequired]] - `references` [EXTRACTED]
-- [[AuthRequired_5]] - `references` [EXTRACTED]
+- [[AuthRequired_2]] - `references` [EXTRACTED]
 - [[Comprehensive security integration test — tests every module with real payloads.]] - `rationale_for` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
+- [[_check_mod()]] - `contains` [EXTRACTED]
+- [[_pii()]] - `contains` [EXTRACTED]
+- [[atest()]] - `contains` [EXTRACTED]
+- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `contains` [EXTRACTED]
+- [[post_1]] - `references` [EXTRACTED]
+- [[t_alert()]] - `indirect_call` [INFERRED]
+- [[t_audit()]] - `indirect_call` [INFERRED]
+- [[t_auth()]] - `indirect_call` [INFERRED]
+- [[t_canary()]] - `indirect_call` [INFERRED]
+- [[t_clamav()]] - `indirect_call` [INFERRED]
+- [[t_context()]] - `contains` [EXTRACTED]
+- [[t_dns()]] - `indirect_call` [INFERRED]
+- [[t_drift()]] - `indirect_call` [INFERRED]
+- [[t_egress()]] - `indirect_call` [INFERRED]
+- [[t_encrypt()]] - `indirect_call` [INFERRED]
+- [[t_env()]] - `indirect_call` [INFERRED]
+- [[t_git()]] - `indirect_call` [INFERRED]
+- [[t_hardening()]] - `indirect_call` [INFERRED]
+- [[t_keyvault()]] - `indirect_call` [INFERRED]
+- [[t_log()]] - `indirect_call` [INFERRED]
+- [[t_metadata()]] - `indirect_call` [INFERRED]
+- [[t_op()]] - `indirect_call` [INFERRED]
+- [[t_prompt()]] - `contains` [EXTRACTED]
+- [[t_resource()]] - `indirect_call` [INFERRED]
+- [[t_sandbox()]] - `indirect_call` [INFERRED]
+- [[t_session()]] - `indirect_call` [INFERRED]
+- [[t_token()]] - `indirect_call` [INFERRED]
+- [[t_trivy()]] - `indirect_call` [INFERRED]
+- [[t_trust()]] - `indirect_call` [INFERRED]
+- [[test()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/INFERRED #community/deep_security_test

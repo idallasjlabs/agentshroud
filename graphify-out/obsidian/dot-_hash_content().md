@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "Gateway Config & PII Sanitizer"
+community: "DataLedger"
 location: "L409"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/DataLedger
 ---
 
 # ._hash_content()
@@ -16,4 +16,4 @@ tags:
 - [[DataLedger]] - `method` [EXTRACTED]
 - [[SHA-256 hash of content string          Args             content Text to hash]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
+#graphify/code #graphify/EXTRACTED #community/DataLedger

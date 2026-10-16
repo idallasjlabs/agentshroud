@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/graphify/references/extraction-spec.md"
 type: "document"
-community: "Community 1490"
+community: ".agents/skills/graphify/references/extraction-spec.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1490
+  - community/agents/skills/graphify/references/extraction-specmd
 ---
 
 # .agents/skills/graphify/references/extraction-spec.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference extraction subagent prompt]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1490
+#graphify/document #graphify/EXTRACTED #community/agents/skills/graphify/references/extraction-specmd

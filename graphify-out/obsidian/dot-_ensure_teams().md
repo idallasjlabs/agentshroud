@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "Community 226"
+community: "rbac_config.py"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_226
+  - community/rbac_configpy
 ---
 
 # ._ensure_teams()
@@ -16,4 +16,4 @@ tags:
 - [[dot-list_contributors()]] - `calls` [EXTRACTED]
 - [[ContributorManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_226
+#graphify/code #graphify/EXTRACTED #community/rbac_configpy

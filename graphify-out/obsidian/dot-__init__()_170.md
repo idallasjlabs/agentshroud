@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "Community 62"
-location: "L480"
+community: "test_e2e_proxy.py"
+location: "L412"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_62
+  - community/test_e2e_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_SocketTransportWriter]] - `method` [EXTRACTED]
+- [[_StubForwarder_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_62
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

@@ -1,18 +1,22 @@
 ---
-source_file: "gateway/security/canary_tripwire.py"
+source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "Canary Tripwire"
-location: "L63"
+community: "EgressAttempt"
+location: "L482"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Canary_Tripwire
+  - community/EgressAttempt
 ---
 
 # ._record()
 
 ## Connections
-- [[dot-scan()_1]] - `calls` [EXTRACTED]
-- [[CanaryTripwire]] - `method` [EXTRACTED]
+- [[dot-_check_impl()]] - `calls` [EXTRACTED]
+- [[dot-check_async()]] - `calls` [EXTRACTED]
+- [[EgressAction]] - `references` [EXTRACTED]
+- [[EgressAttempt]] - `references` [EXTRACTED]
+- [[EgressFilter_2]] - `method` [EXTRACTED]
+- [[make_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Canary_Tripwire
+#graphify/code #graphify/EXTRACTED #community/EgressAttempt

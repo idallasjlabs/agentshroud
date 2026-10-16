@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "Community 94"
-location: "L368"
+community: "_t"
+location: "L422"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_94
+  - community/_t
 ---
 
 # ._results()
@@ -17,7 +17,8 @@ tags:
 - [[dot-test_rewrite_sets_status_and_layers()]] - `calls` [EXTRACTED]
 - [[dot-test_rewrite_untargeted_id_unchanged()]] - `calls` [EXTRACTED]
 - [[TestRewrite]] - `method` [EXTRACTED]
-- [[_entry()_1]] - `calls` [EXTRACTED]
+- [[_entry()]] - `calls` [EXTRACTED]
+- [[_not_yet_fixed()]] - `calls` [EXTRACTED]
 - [[_t()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_94
+#graphify/code #graphify/EXTRACTED #community/_t

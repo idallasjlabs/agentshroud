@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "Community 968"
-location: "L145"
+community: "test_a2a_proxy.py"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_968
+  - community/test_a2a_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeResp]] - `method` [EXTRACTED]
+- [[_StubForwarder_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_968
+#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

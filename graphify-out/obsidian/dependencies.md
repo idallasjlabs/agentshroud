@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-bs/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
 type: "document"
-community: "AWS Cloud Management & FinOps Agent"
-location: "L297"
+community: "→ {\"site\": \"site1\", \"test_mode\": True, \"output_prefix\": \"_test/site1/\"}"
+location: "L246"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent
+  - community/_site_site1_test_mode_True_output_prefix__test/site1/
 ---
 
 # Dependencies
 
 ## Connections
-- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements]] - `contains` [EXTRACTED]
+- [[→ {site site1, test_mode True, output_prefix _testsite1}]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent
+#graphify/document #graphify/EXTRACTED #community/_site_site1_test_mode_True_output_prefix__test/site1/

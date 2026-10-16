@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/collaborator_responses.py"
 type: "code"
-community: "StdioConnection"
+community: "telegram_proxy.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/telegram_proxypy
 ---
 
 # collaborator_responses.py
@@ -29,4 +29,4 @@ tags:
 - [[group_config.py]] - `imports_from` [EXTRACTED]
 - [[slack_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

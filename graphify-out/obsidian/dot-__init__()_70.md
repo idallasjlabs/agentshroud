@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/slack_socket_client.py"
+source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "code"
-community: "Community 162"
-location: "L59"
+community: "RateLimitGuard"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_162
+  - community/RateLimitGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[SlackSocketClient]] - `method` [EXTRACTED]
+- [[FakeClock]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_162
+#graphify/code #graphify/EXTRACTED #community/RateLimitGuard

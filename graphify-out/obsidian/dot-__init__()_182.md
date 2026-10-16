@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "Community 767"
-location: "L78"
+community: "AgentRegistry"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_767
+  - community/AgentRegistry
 ---
 
 # .__init__()
 
 ## Connections
-- [[_HeaderTimeoutReader]] - `method` [EXTRACTED]
+- [[AgentRegistry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_767
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

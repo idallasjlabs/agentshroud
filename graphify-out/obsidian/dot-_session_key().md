@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Community 747"
+community: "UserSessionManager"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_747
+  - community/UserSessionManager
 ---
 
 # ._session_key()
@@ -18,4 +18,4 @@ tags:
 - [[Return the cache key string for a (user_id, bot_id) pair.]] - `rationale_for` [EXTRACTED]
 - [[UserSessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_747
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

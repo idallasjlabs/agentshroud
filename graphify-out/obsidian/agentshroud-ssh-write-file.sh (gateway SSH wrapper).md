@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "code"
-community: "TestUserMemoryWriteACL"
+community: "Hermes Dev Workflow (HDEV) Skill"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestUserMemoryWriteACL
+  - community/Hermes_Dev_Workflow_HDEV_Skill
 ---
 
 # agentshroud-ssh-write-file.sh (gateway SSH wrapper)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Hermes Dev Workflow (HDEV) Skill]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestUserMemoryWriteACL
+#graphify/code #graphify/EXTRACTED #community/Hermes_Dev_Workflow_HDEV_Skill

@@ -1,92 +1,17 @@
 ---
-source_file: "gateway/web/api.py"
-type: "code"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/api.py.md"
+type: "document"
 community: "api.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
   - community/apipy
 ---
 
-# api.py
+# api.py.md
 
 ## Connections
-- [[CitationVerifier]] - `imports` [EXTRACTED]
-- [[ConfigUpdate]] - `contains` [EXTRACTED]
-- [[DraftEntry]] - `imports` [EXTRACTED]
-- [[IntelDraftEntry]] - `contains` [EXTRACTED]
-- [[IntelDraftRequest]] - `contains` [EXTRACTED]
-- [[IntelReportStore]] - `imports` [EXTRACTED]
-- [[KillSwitchAction]] - `contains` [EXTRACTED]
-- [[ModeRequest]] - `contains` [EXTRACTED]
-- [[RuntimeConfig]] - `imports` [EXTRACTED]
-- [[ServiceAction]] - `contains` [EXTRACTED]
-- [[SkillGuard]] - `imports` [EXTRACTED]
-- [[SkillGuardBlocked]] - `contains` [EXTRACTED]
-- [[SkillsManifest]] - `imports` [EXTRACTED]
-- [[UpdateRequest]] - `contains` [EXTRACTED]
-- [[_bot_service_names()]] - `contains` [EXTRACTED]
-- [[_create_mgmt_ws_token()]] - `contains` [EXTRACTED]
-- [[_get_default_bot_dockerfile()]] - `contains` [EXTRACTED]
-- [[_get_engine()]] - `contains` [EXTRACTED]
-- [[_intel_store()]] - `contains` [EXTRACTED]
-- [[_intel_verifier()]] - `contains` [EXTRACTED]
-- [[_resolve_bot_container()]] - `contains` [EXTRACTED]
-- [[_skills_reload_impl()]] - `contains` [EXTRACTED]
-- [[_skills_reload_paths()]] - `contains` [EXTRACTED]
-- [[_valid_services()]] - `contains` [EXTRACTED]
-- [[_validate_mgmt_ws_token()]] - `contains` [EXTRACTED]
-- [[_validate_service_name()]] - `contains` [EXTRACTED]
-- [[auth.py]] - `imports_from` [EXTRACTED]
-- [[check_agentshroud_updates()]] - `contains` [EXTRACTED]
-- [[check_bot_updates()]] - `contains` [EXTRACTED]
-- [[check_openclaw_updates()]] - `contains` [EXTRACTED]
-- [[config.py]] - `imports_from` [EXTRACTED]
-- [[config.py_1]] - `imports_from` [EXTRACTED]
-- [[dashboard_endpoints.py]] - `imports_from` [EXTRACTED]
-- [[deploy_manifest()]] - `imports` [EXTRACTED]
-- [[detect_runtime()]] - `imports` [EXTRACTED]
-- [[export_config()]] - `contains` [EXTRACTED]
-- [[falco_monitor.py]] - `conceptually_related_to` [INFERRED]
-- [[get_competitive_intel()]] - `contains` [EXTRACTED]
-- [[get_competitive_intel_history()]] - `contains` [EXTRACTED]
-- [[get_config()_1]] - `contains` [EXTRACTED]
-- [[get_engine()]] - `imports` [EXTRACTED]
-- [[get_logs()_1]] - `contains` [EXTRACTED]
-- [[get_mode()]] - `contains` [EXTRACTED]
-- [[get_security_comparison()]] - `imports` [EXTRACTED]
-- [[get_status()]] - `contains` [EXTRACTED]
-- [[import_config()]] - `contains` [EXTRACTED]
-- [[installer.py]] - `references` [EXTRACTED]
-- [[killswitch()]] - `contains` [EXTRACTED]
-- [[load_config()]] - `imports` [EXTRACTED]
-- [[main.py_2]] - `imports_from` [EXTRACTED]
-- [[make_httpx_fetcher()]] - `imports` [EXTRACTED]
-- [[management.py]] - `imports_from` [EXTRACTED]
-- [[proxy_status.py]] - `calls` [EXTRACTED]
-- [[rebuild()]] - `contains` [EXTRACTED]
-- [[require_auth()_1]] - `contains` [EXTRACTED]
-- [[restart_service()_2]] - `contains` [EXTRACTED]
-- [[rollback_agentshroud()]] - `contains` [EXTRACTED]
-- [[rollback_bot()]] - `contains` [EXTRACTED]
-- [[rollback_openclaw()]] - `contains` [EXTRACTED]
-- [[security.py]] - `imports_from` [EXTRACTED]
-- [[security_report()]] - `contains` [EXTRACTED]
-- [[set_mode()_1]] - `contains` [EXTRACTED]
-- [[skills_reload()]] - `contains` [EXTRACTED]
-- [[start_service()_1]] - `contains` [EXTRACTED]
-- [[stop_service()_2]] - `contains` [EXTRACTED]
-- [[submit_competitive_intel()]] - `contains` [EXTRACTED]
-- [[update_config()]] - `contains` [EXTRACTED]
-- [[update_history()]] - `contains` [EXTRACTED]
-- [[upgrade_agentshroud()]] - `contains` [EXTRACTED]
-- [[upgrade_bot()_1]] - `contains` [EXTRACTED]
-- [[upgrade_openclaw()]] - `contains` [EXTRACTED]
-- [[verify_token()]] - `imports` [EXTRACTED]
-- [[warn_missing_features()]] - `imports` [EXTRACTED]
-- [[wazuh_client.py]] - `conceptually_related_to` [INFERRED]
-- [[ws_logs()]] - `contains` [EXTRACTED]
-- [[ws_updates()]] - `contains` [EXTRACTED]
+- [[api.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/document #graphify/EXTRACTED #community/apipy

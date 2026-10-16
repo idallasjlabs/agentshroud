@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/proxy/telegram_egress_notify.py"
+source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "Community 368"
-location: "L76"
+community: "MultiTurnTracker"
+location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_368
+  - community/MultiTurnTracker
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressTelegramNotifier]] - `method` [EXTRACTED]
+- [[dot-_compile_detection_patterns()_1]] - `calls` [EXTRACTED]
+- [[Any_58]] - `references` [EXTRACTED]
+- [[Initialize the multi-turn tracker.          Args             config Configurat]] - `rationale_for` [EXTRACTED]
+- [[MultiTurnTracker]] - `method` [EXTRACTED]
+- [[ThresholdConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_368
+#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

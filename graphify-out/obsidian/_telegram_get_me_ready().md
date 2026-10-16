@@ -1,19 +1,18 @@
 ---
-source_file: "docker/bots/hermes/start.sh"
+source_file: "docker/scripts/start-agentshroud.sh"
 type: "code"
-community: "MockValidator"
-location: "L152"
+community: "start-agentshroud.sh"
+location: "L703"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MockValidator
+  - community/start-agentshroudsh
 ---
 
 # _telegram_get_me_ready()
 
 ## Connections
-- [[_telegram_bot_token()]] - `calls` [EXTRACTED]
-- [[start.sh]] - `defines` [EXTRACTED]
-- [[start.sh script]] - `calls` [EXTRACTED]
+- [[_poll_openclaw_ready()]] - `calls` [EXTRACTED]
+- [[start-agentshroud.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MockValidator
+#graphify/code #graphify/EXTRACTED #community/start-agentshroudsh

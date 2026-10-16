@@ -12,10 +12,10 @@ tags:
 # browser-extension/package.json
 
 ## Connections
-- [[description_1]] - `contains` [EXTRACTED]
+- [[description_8]] - `contains` [EXTRACTED]
 - [[devDependencies]] - `contains` [EXTRACTED]
 - [[jest_1]] - `contains` [EXTRACTED]
-- [[license]] - `contains` [EXTRACTED]
+- [[license_3]] - `contains` [EXTRACTED]
 - [[name_1]] - `contains` [EXTRACTED]
 - [[private]] - `contains` [EXTRACTED]
 - [[scripts]] - `contains` [EXTRACTED]

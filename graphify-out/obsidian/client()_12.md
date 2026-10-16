@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_op_proxy.py"
+source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "code"
-community: "Mode A — Single task"
-location: "L121"
+community: "test_e2e.py"
+location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task
+  - community/test_e2epy
 ---
 
 # client()
 
 ## Connections
-- [[test_op_proxy.py]] - `contains` [EXTRACTED]
+- [[AsyncClient]] - `calls` [INFERRED]
+- [[test_mcp_proxy_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mode_A__Single_task
+#graphify/code #graphify/EXTRACTED #community/test_e2epy

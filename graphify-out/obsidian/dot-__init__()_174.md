@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/cross_bot_trust_ledger.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Cross-Bot Trust & A2A Governance"
-location: "L148"
+community: "HTTPConnectProxy"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/HTTPConnectProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[CrossBotTrustLedger_1]] - `method` [EXTRACTED]
-- [[TrustDecayPolicy]] - `references` [EXTRACTED]
-- [[deque]] - `calls` [INFERRED]
+- [[_MockWriter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

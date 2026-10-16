@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Memory Integrity & Lifecycle"
-location: "L75"
+community: "UserSessionManager"
+location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Memory_Integrity__Lifecycle
+  - community/UserSessionManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[MemoryLifecycleConfig]] - `references` [EXTRACTED]
-- [[MemoryLifecycleManager]] - `method` [EXTRACTED]
-- [[Path_18]] - `references` [EXTRACTED]
+- [[dot-_load_sessions()]] - `calls` [EXTRACTED]
+- [[Initialize session manager.          Args             base_workspace Base dire]] - `rationale_for` [EXTRACTED]
+- [[Path_26]] - `references` [EXTRACTED]
+- [[UserSessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Integrity__Lifecycle
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

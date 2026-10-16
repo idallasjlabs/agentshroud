@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/differential_pii_detector.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Community 46"
-location: "L279"
+community: "A2APolicyConfig"
+location: "L199"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_46
+  - community/A2APolicyConfig
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[DifferentialPIIConfig_1]] - `method` [EXTRACTED]
+- [[A2APolicyConfig_1]] - `method` [EXTRACTED]
+- [[_norm()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_46
+#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig

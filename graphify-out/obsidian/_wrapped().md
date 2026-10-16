@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/patch_telegram_do_request.py"
 type: "code"
-community: "TestAlertDispatcher"
+community: "patch_telegram_do_request.py"
 location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAlertDispatcher
+  - community/patch_telegram_do_requestpy
 ---
 
 # _wrapped()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[patch_telegram_do_request.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/patch_telegram_do_requestpy

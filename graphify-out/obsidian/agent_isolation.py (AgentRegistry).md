@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "test_security_audit.py"
+community: "RBACConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_auditpy
+  - community/RBACConfig
 ---
 
 # agent_isolation.py (AgentRegistry)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_group_isolation.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_auditpy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tools/port_manager.py"
+source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "Community 83"
-location: "L88"
+community: "WebProxy"
+location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_83
+  - community/WebProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[PortManager]] - `method` [EXTRACTED]
+- [[_MockWriter_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_83
+#graphify/code #graphify/EXTRACTED #community/WebProxy

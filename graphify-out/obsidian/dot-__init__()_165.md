@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/mfa_guard.py"
+source_file: "gateway/security/progressive_lockdown.py"
 type: "code"
-community: "Community 57"
-location: "L116"
+community: "ProgressiveLockdown"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_57
+  - community/ProgressiveLockdown
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_decode_secret()]] - `calls` [EXTRACTED]
-- [[MFAGuard_2]] - `method` [EXTRACTED]
+- [[ProgressiveLockdown]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_57
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

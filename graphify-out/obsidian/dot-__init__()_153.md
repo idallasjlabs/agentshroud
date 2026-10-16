@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/web_content_scanner.py"
+source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "Voice Gateway STT & Browser Security"
-location: "L182"
+community: "HeuristicClassifier"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/HeuristicClassifier
 ---
 
 # .__init__()
 
 ## Connections
-- [[WebContentScanner]] - `method` [EXTRACTED]
+- [[dot-_try_load_model()]] - `calls` [EXTRACTED]
+- [[HeuristicClassifier_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security
+#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

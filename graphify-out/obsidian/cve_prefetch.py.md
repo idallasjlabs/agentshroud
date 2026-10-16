@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/scripts/cve_prefetch.py"
 type: "code"
-community: "Slack Channel Setup"
+community: "main"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_Channel_Setup
+  - community/main
 ---
 
 # cve_prefetch.py
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[curl_json()]] - `contains` [EXTRACTED]
 - [[known_ghsa_ids()]] - `contains` [EXTRACTED]
-- [[main()_7]] - `contains` [EXTRACTED]
+- [[main()_30]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_Channel_Setup
+#graphify/code #graphify/EXTRACTED #community/main

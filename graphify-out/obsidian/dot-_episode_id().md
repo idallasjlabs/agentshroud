@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cron_state_monitor.py"
 type: "code"
-community: "Community 90"
+community: "CronStateMonitor"
 location: "L283"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/CronStateMonitor
 ---
 
 # ._episode_id()
@@ -16,4 +16,4 @@ tags:
 - [[CronStateMonitor]] - `method` [EXTRACTED]
 - [[JobState]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_90
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

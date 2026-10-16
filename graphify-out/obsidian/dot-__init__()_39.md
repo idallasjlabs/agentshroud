@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Community 112"
-location: "L125"
+community: "SecureBrowser"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_112
+  - community/SecureBrowser
 ---
 
 # .__init__()
 
 ## Connections
-- [[AuditStore_1]] - `method` [EXTRACTED]
-- [[Path_3]] - `references` [EXTRACTED]
+- [[dot-_load_config()]] - `calls` [EXTRACTED]
+- [[SecureBrowser]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_112
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

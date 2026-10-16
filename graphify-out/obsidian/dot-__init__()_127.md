@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/agent_isolation.py"
+source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "Agent Isolation & Group Config Tests"
-location: "L90"
+community: "ApprovalHardening"
+location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Agent_Isolation__Group_Config_Tests
+  - community/ApprovalHardening
 ---
 
 # .__init__()
 
 ## Connections
-- [[AgentRegistry]] - `references` [EXTRACTED]
-- [[IsolationVerifier]] - `method` [EXTRACTED]
+- [[ApprovalHardening]] - `method` [EXTRACTED]
+- [[ApprovalHardeningConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Agent_Isolation__Group_Config_Tests
+#graphify/code #graphify/EXTRACTED #community/ApprovalHardening

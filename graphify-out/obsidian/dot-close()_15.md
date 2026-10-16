@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "Community 573"
-location: "L726"
+community: "ServiceManager"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_573
+  - community/ServiceManager
 ---
 
 # .close()
 
 ## Connections
-- [[dot-test_binds_and_returns_transport()]] - `calls` [EXTRACTED]
-- [[_FakeUpstreamWS]] - `method` [EXTRACTED]
+- [[_FakeUnixSocket]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_573
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

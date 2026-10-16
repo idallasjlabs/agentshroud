@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/canary_tripwire.py"
+source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "Canary Tripwire"
-location: "L45"
+community: "KillSwitchMonitor"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Canary_Tripwire
+  - community/KillSwitchMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[CanaryConfig]] - `references` [EXTRACTED]
-- [[CanaryTripwire]] - `method` [EXTRACTED]
+- [[MCPAuditTrail]] - `method` [EXTRACTED]
+- [[deque]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Canary_Tripwire
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

@@ -1,19 +1,23 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Community 48"
-location: "L53"
+community: "MCPPermissionManager"
+location: "L230"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_48
+  - community/MCPPermissionManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args             mode 'monitor' (log findings) or 'enforce' (quarantine suspic]] - `rationale_for` [EXTRACTED]
-- [[GitGuard]] - `method` [EXTRACTED]
-- [[Path_44]] - `calls` [EXTRACTED]
+- [[ConnectionPool]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue_2]] - `references` [EXTRACTED]
+- [[MCPAuditTrail_1]] - `references` [EXTRACTED]
+- [[MCPInspector_1]] - `references` [EXTRACTED]
+- [[MCPPermissionManager]] - `references` [EXTRACTED]
+- [[MCPProxy_1]] - `method` [EXTRACTED]
+- [[MCPProxyConfig_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_48
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

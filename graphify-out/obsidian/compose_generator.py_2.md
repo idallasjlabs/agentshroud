@@ -1,24 +1,24 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
 type: "document"
-community: "DeceptionDetection"
+community: "compose_generator.py"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DeceptionDetection
+  - community/compose_generatorpy
 ---
 
 # compose_generator.py
 
 ## Connections
-- [[Configuration  Environment Variables_14]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables_26]] - `contains` [EXTRACTED]
 - [[Default Service Configuration]] - `contains` [EXTRACTED]
-- [[Function Details_20]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_23]] - `contains` [EXTRACTED]
-- [[Purpose_141]] - `contains` [EXTRACTED]
-- [[Related_27]] - `contains` [EXTRACTED]
-- [[Responsibilities_25]] - `contains` [EXTRACTED]
+- [[Function Details_45]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_47]] - `contains` [EXTRACTED]
+- [[Purpose_179]] - `contains` [EXTRACTED]
+- [[Related_51]] - `contains` [EXTRACTED]
+- [[Responsibilities_48]] - `contains` [EXTRACTED]
 - [[compose_generator.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DeceptionDetection
+#graphify/document #graphify/EXTRACTED #community/compose_generatorpy

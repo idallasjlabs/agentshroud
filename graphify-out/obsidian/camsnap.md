@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/camsnap/SKILL.md"
 type: "document"
-community: "🆘 Troubleshooting"
+community: "camsnap/SKILL.md"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_Troubleshooting
+  - community/camsnap/SKILLmd
 ---
 
 # camsnap
 
 ## Connections
-- [[SKILL_200]] - `contains` [EXTRACTED]
+- [[camsnapSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/camsnap/SKILLmd

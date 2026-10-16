@@ -1,19 +1,17 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "_t()"
+community: "app_main.c"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t
+  - community/app_mainc
 ---
 
 # app_main.c
 
 ## Connections
-- [[String]] - `imports` [EXTRACTED]
-- [[Task]] - `imports` [EXTRACTED]
 - [[_build_ws_url()]] - `contains` [EXTRACTED]
 - [[_deliver_utterance()]] - `contains` [EXTRACTED]
 - [[_lvgl_flush_wait_yield()]] - `contains` [EXTRACTED]
@@ -29,9 +27,9 @@ tags:
 - [[ui_init()]] - `contains` [EXTRACTED]
 - [[ui_update()]] - `contains` [EXTRACTED]
 - [[voice_task()]] - `contains` [EXTRACTED]
-- [[vt_agent_count()]] - `contains` [EXTRACTED]
-- [[vt_remote_log()]] - `contains` [EXTRACTED]
+- [[vt_agent_count()_2]] - `contains` [EXTRACTED]
+- [[vt_remote_log()_2]] - `contains` [EXTRACTED]
 - [[wifi_event_handler()]] - `contains` [EXTRACTED]
 - [[wifi_init()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t
+#graphify/code #graphify/EXTRACTED #community/app_mainc

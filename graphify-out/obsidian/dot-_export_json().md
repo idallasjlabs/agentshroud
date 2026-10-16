@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "Community 675"
+community: "AuditEvent"
 location: "L249"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_675
+  - community/AuditEvent
 ---
 
 # ._export_json()
@@ -17,4 +17,4 @@ tags:
 - [[AuditExporter]] - `method` [EXTRACTED]
 - [[Export events in standard JSON format.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_675
+#graphify/code #graphify/EXTRACTED #community/AuditEvent

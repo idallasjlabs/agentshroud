@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "SOC Service Manager (Container Engine)"
-location: "L54"
+community: "HTTPConnectProxy"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Service_Manager_Container_Engine
+  - community/HTTPConnectProxy
 ---
 
 # .close()
 
 ## Connections
-- [[_FakeUnixSocket]] - `method` [EXTRACTED]
+- [[_CloseRaisesWriter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Service_Manager_Container_Engine
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

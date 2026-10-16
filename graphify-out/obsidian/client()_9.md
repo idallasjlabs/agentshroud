@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
+source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "AgentShroud v1.0.0 Fortress Release Announcement"
-location: "L21"
+community: "test_e2e.py"
+location: "L32"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/AgentShroud_v100_Fortress_Release_Announcement
+  - graphify/EXTRACTED
+  - community/test_e2epy
 ---
 
 # client()
 
 ## Connections
 - [[AsyncClient]] - `calls` [INFERRED]
-- [[test_mcp_proxy_endpoint.py]] - `contains` [EXTRACTED]
+- [[test_dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AgentShroud_v100_Fortress_Release_Announcement
+#graphify/code #graphify/EXTRACTED #community/test_e2epy

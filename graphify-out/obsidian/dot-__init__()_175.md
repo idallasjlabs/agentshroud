@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/citation_verifier.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Community 70"
-location: "L126"
+community: "HTTPConnectProxy"
+location: "L480"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_70
+  - community/HTTPConnectProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[CitationVerifier]] - `method` [EXTRACTED]
-- [[Fetcher]] - `references` [EXTRACTED]
+- [[_SocketTransportWriter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_70
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

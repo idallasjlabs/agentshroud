@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_forward_routing.py"
+source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "Multi-Agent Router & Chat UI"
-location: "L22"
+community: "RateLimiter"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Multi-Agent_Router__Chat_UI
+  - community/RateLimiter
 ---
 
 # .__init__()
 
 ## Connections
-- [[_PipelineCaptor]] - `method` [EXTRACTED]
+- [[Args             max_requests Maximum requests allowed in the time window]] - `rationale_for` [EXTRACTED]
+- [[RateLimiter_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI
+#graphify/code #graphify/EXTRACTED #community/RateLimiter

@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/security/key_rotation.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Community 291"
-location: "L122"
+community: "Action"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_291
+  - community/Action
 ---
 
 # .__init__()
 
 ## Connections
-- [[Initialize the key rotation manager.]] - `rationale_for` [EXTRACTED]
-- [[KeyRotationConfig]] - `references` [EXTRACTED]
-- [[KeyRotationManager]] - `method` [EXTRACTED]
+- [[dot-_build_permission_matrix()]] - `calls` [EXTRACTED]
+- [[dot-_build_tool_permissions()]] - `calls` [EXTRACTED]
+- [[Initialize RBAC manager with configuration.]] - `rationale_for` [EXTRACTED]
+- [[RBACConfig_4]] - `references` [EXTRACTED]
+- [[RBACManager_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_291
+#graphify/code #graphify/EXTRACTED #community/Action

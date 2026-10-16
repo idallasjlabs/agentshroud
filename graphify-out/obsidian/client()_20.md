@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_web_api_coverage.py"
+source_file: "chatbot/test_main.py"
 type: "code"
-community: "test_redteam_probes.py"
-location: "L59"
+community: "chatbot/main.py"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_redteam_probespy
+  - community/chatbot/mainpy
 ---
 
 # client()
 
 ## Connections
-- [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
+- [[test_main.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_redteam_probespy
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

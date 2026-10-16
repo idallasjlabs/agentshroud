@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/templates/management.html"
 type: "concept"
-community: "TestConfig"
+community: "Management Dashboard"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/TestConfig
+  - community/Management_Dashboard
 ---
 
 # /api/security/report
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Management Dashboard]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/TestConfig
+#graphify/concept #graphify/EXTRACTED #community/Management_Dashboard

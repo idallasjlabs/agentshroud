@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_security_integration.py"
+source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L103"
+community: "ApprovalRequest"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/ApprovalRequest
 ---
 
 # approval_queue()
 
 ## Connections
-- [[ApprovalQueue]] - `calls` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
-- [[test_security_integration.py]] - `contains` [EXTRACTED]
+- [[ApprovalQueue_1]] - `calls` [EXTRACTED]
+- [[Create approval queue instance for testing]] - `rationale_for` [EXTRACTED]
+- [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

@@ -17,6 +17,6 @@ tags:
 - [[LoginRequest]] - `references` [EXTRACTED]
 - [[RBACConfig_1]] - `calls` [EXTRACTED]
 - [[issue_session_token()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/soc/routerpy

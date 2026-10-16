@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "Enhanced Approval Queue"
-location: "L106"
+community: "A2APolicyEngine"
+location: "L466"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/A2APolicyEngine
 ---
 
 # .close()
 
 ## Connections
-- [[Close the store and cancel timeout tasks.]] - `rationale_for` [EXTRACTED]
-- [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
+- [[HermesA2AForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

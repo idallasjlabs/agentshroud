@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/heuristic_classifier.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "Community 43"
-location: "L95"
+community: "AuditEvent"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/AuditEvent
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_try_load_model()]] - `calls` [EXTRACTED]
-- [[HeuristicClassifier_1]] - `method` [EXTRACTED]
+- [[dot-_generate_event_id()]] - `calls` [EXTRACTED]
+- [[AuditEvent]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/AuditEvent

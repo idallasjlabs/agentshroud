@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/intel_report.py"
+source_file: "gateway/proxy/collaborator_greeter.py"
 type: "code"
-community: "Runtime Security Comparison & Intel Report"
-location: "L205"
+community: "test_collaborator_greeter.py"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Runtime_Security_Comparison__Intel_Report
+  - community/test_collaborator_greeterpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[IntelReportStore_1]] - `method` [EXTRACTED]
-- [[Path_33]] - `references` [EXTRACTED]
+- [[dot-_load_state()]] - `calls` [EXTRACTED]
+- [[dot-_load_taglines()]] - `calls` [EXTRACTED]
+- [[AsyncClient]] - `references` [EXTRACTED]
+- [[CollaboratorGreeter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Runtime_Security_Comparison__Intel_Report
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy

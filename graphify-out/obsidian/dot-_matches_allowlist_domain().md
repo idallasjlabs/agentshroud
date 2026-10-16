@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "Community 167"
+community: "EgressAttempt"
 location: "L419"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_167
+  - community/EgressAttempt
 ---
 
 # ._matches_allowlist_domain()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-_check_impl()]] - `calls` [EXTRACTED]
 - [[Check if domain matches any domain in the allowlist (supports wildcards).]] - `rationale_for` [EXTRACTED]
-- [[EgressFilter]] - `method` [EXTRACTED]
+- [[EgressFilter_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_167
+#graphify/code #graphify/EXTRACTED #community/EgressAttempt

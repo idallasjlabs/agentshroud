@@ -1,12 +1,12 @@
 ---
 source_file: "docker-compose.sidecar.yml"
 type: "code"
-community: "TestCVE2026_9367TerminalToolDenied"
+community: "agentshroud-gateway service (proxy mode)"
 location: "L13-36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCVE2026_9367TerminalToolDenied
+  - community/agentshroud-gateway_service_proxy_mode
 ---
 
 # agentshroud-gateway service (sidecar mode)
@@ -15,4 +15,4 @@ tags:
 - [[Sidecar mode — optional security scanning]] - `implements` [EXTRACTED]
 - [[openclaw service (exposed, sidecar mode)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCVE2026_9367TerminalToolDenied
+#graphify/code #graphify/EXTRACTED #community/agentshroud-gateway_service_proxy_mode

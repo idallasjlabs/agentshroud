@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "Community 131"
-location: "L437"
+community: "DifferentialPIIDetector"
+location: "L314"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_131
+  - community/DifferentialPIIDetector
 ---
 
 # .__init__()
 
 ## Connections
-- [[HermesA2AForwarder]] - `method` [EXTRACTED]
+- [[dot-_init_presidio()_1]] - `calls` [EXTRACTED]
+- [[DifferentialPIIConfig_1]] - `references` [EXTRACTED]
+- [[DifferentialPIIDetector_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_131
+#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector

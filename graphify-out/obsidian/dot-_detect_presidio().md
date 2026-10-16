@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "Community 46"
+community: "DifferentialPIIDetector"
 location: "L443"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_46
+  - community/DifferentialPIIDetector
 ---
 
 # ._detect_presidio()
@@ -20,4 +20,4 @@ tags:
 - [[PIIHit]] - `references` [EXTRACTED]
 - [[Use Presidio (entity-restricted) unioned with the core regex.          Two guara]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_46
+#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector

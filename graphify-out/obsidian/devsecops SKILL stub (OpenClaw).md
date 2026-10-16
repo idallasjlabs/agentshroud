@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-devsecops/SKILL.md"
 type: "document"
-community: "SecurityEvent"
+community: "GSDE&G Development Master Checklist Skill"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/SecurityEvent
+  - community/GSDEG_Development_Master_Checklist_Skill
 ---
 
 # devsecops SKILL stub (OpenClaw)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[CICD Pipeline Advisor SKILL (OpenClaw)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/SecurityEvent
+#graphify/document #graphify/INFERRED #community/GSDEG_Development_Master_Checklist_Skill
