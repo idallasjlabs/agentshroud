@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "Community 53"
+community: "RBACConfig"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_53
+  - community/RBACConfig
 ---
 
 # .test_two_members_of_same_group_share_one_workspace_id()
@@ -15,4 +15,4 @@ tags:
 - [[GroupWorkspaceManager]] - `calls` [EXTRACTED]
 - [[TestMembersShareGroupWorkspace]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_53
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

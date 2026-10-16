@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "Community 247"
-location: "L125"
+community: "Path"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_247
+  - community/Path
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-to_json()]] - `calls` [EXTRACTED]
-- [[SkillsManifest]] - `method` [EXTRACTED]
+- [[ManifestEntry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_247
+#graphify/code #graphify/EXTRACTED #community/Path

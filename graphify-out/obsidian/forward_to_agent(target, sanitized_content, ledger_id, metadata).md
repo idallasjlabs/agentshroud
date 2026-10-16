@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
 type: "document"
-community: "Deploying AgentShroud on macOS (Apple Silicon / "
+community: "router.py"
 location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_
+  - community/routerpy
 ---
 
 # forward_to_agent(target, sanitized_content, ledger_id, metadata)
 
 ## Connections
-- [[Function Details_3]] - `contains` [EXTRACTED]
+- [[Function Details_34]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_
+#graphify/document #graphify/EXTRACTED #community/routerpy

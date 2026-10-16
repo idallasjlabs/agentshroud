@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/hermes/skills/i-icloud/README.md"
 type: "document"
-community: "AGENTSHROUD standard character mark"
+community: "iCloud Data Manager (ICLOUD)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AGENTSHROUD_standard_character_mark
+  - community/iCloud_Data_Manager_ICLOUD
 ---
 
 # iCloud Data Manager (ICLOUD)
 
 ## Connections
-- [[Purpose_50]] - `contains` [EXTRACTED]
-- [[README_55]] - `contains` [EXTRACTED]
-- [[Related Skills_53]] - `contains` [EXTRACTED]
-- [[Usage_56]] - `contains` [EXTRACTED]
+- [[Purpose_24]] - `contains` [EXTRACTED]
+- [[Related Skills_17]] - `contains` [EXTRACTED]
+- [[Usage_20]] - `contains` [EXTRACTED]
+- [[hermesskillsi-icloudREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_standard_character_mark
+#graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD

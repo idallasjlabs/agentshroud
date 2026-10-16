@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "TestCollaboratorPromptClassifiers"
+community: "test_dashboard.py"
 location: "L401"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCollaboratorPromptClassifiers
+  - community/test_dashboardpy
 ---
 
 # get_collaborators()
 
 ## Connections
-- [[AuthRequired_2]] - `references` [EXTRACTED]
-- [[Path_2]] - `calls` [EXTRACTED]
-- [[Request_3]] - `references` [EXTRACTED]
+- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[Path_38]] - `calls` [EXTRACTED]
+- [[Request_4]] - `references` [EXTRACTED]
 - [[Return collaborator data from the shared bot workspace volume.      Reads COLLAB]] - `rationale_for` [EXTRACTED]
 - [[_build_activity_entries_from_contributor_logs()]] - `calls` [EXTRACTED]
 - [[_build_activity_summary_from_contributor_logs()]] - `calls` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[_parse_collaborator_log_dirs()]] - `calls` [EXTRACTED]
 - [[dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/volumes.md"
 type: "document"
-community: "Pre-Deployment Checklist"
+community: "Docker Volumes"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist
+  - community/Docker_Volumes
 ---
 
 # gateway-data
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Volume Details]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist
+#graphify/document #graphify/EXTRACTED #community/Docker_Volumes

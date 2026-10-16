@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "Gateway Config & PII Sanitizer"
+community: "PIIConfig"
 location: "L191"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/PIIConfig
 ---
 
 # .test_trust_update_performance()
@@ -16,4 +16,4 @@ tags:
 - [[TestTrustManagerPerformance]] - `method` [EXTRACTED]
 - [[TrustManager]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

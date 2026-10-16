@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "code"
-community: "Community 46"
+community: "DifferentialPIIDetector"
 location: "L317"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_46
+  - community/DifferentialPIIDetector
 ---
 
 # .test_zero_width_space_injection_caught()
@@ -16,4 +16,4 @@ tags:
 - [[PII split with zero-width space.]] - `rationale_for` [EXTRACTED]
 - [[TestAdversarialFormattingCaught]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_46
+#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector

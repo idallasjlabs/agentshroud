@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
 type: "document"
-community: "AgentShroud: A Transparent Proxy Framework for E"
+community: "GSDE&G Skills Reference Guide"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_A_Transparent_Proxy_Framework_for_E
+  - community/GSDEG_Skills_Reference_Guide
 ---
 
 # i-socrates SKILL (Dialogue Architect, podcast pipeline)
@@ -14,4 +14,4 @@ tags:
 - [[GSDE&G Skills Reference Guide_1]] - `references` [EXTRACTED]
 - [[i-socrates README (Dialogue Architect)]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_A_Transparent_Proxy_Framework_for_E
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference_Guide

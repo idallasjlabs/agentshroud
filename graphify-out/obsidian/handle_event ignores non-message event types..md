@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "input_normalizer.py"
+community: "TestHandleEvent"
 location: "L503"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/input_normalizerpy
+  - community/TestHandleEvent
 ---
 
 # handle_event ignores non-message event types.
 
 ## Connections
-- [[.test_non_message_event_ignored()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_non_message_event_ignored()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/input_normalizerpy
+#graphify/rationale #graphify/EXTRACTED #community/TestHandleEvent

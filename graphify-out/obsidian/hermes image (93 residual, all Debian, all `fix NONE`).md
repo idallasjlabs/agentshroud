@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "TestCheckCommandExecution"
+community: "AgentShroud™ CVE Mitigation Matrix"
 location: "L233"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestCheckCommandExecution
+  - community/AgentShroud_CVE_Mitigation_Matrix
 ---
 
 # hermes image (93 residual, all Debian, all `fix: NONE`)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Currently Unmitigable Residual (verified no fix exists anywhere yet)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestCheckCommandExecution
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix

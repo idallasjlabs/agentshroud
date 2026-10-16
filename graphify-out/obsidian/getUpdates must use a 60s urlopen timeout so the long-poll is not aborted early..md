@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "OPENCLAW_DISABLE_HOST_FILESYSTEM"
+community: "TestForwardToTelegramTimeouts"
 location: "L4510"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OPENCLAW_DISABLE_HOST_FILESYSTEM
+  - community/TestForwardToTelegramTimeouts
 ---
 
 # getUpdates must use a 60s urlopen timeout so the long-poll is not aborted early.
 
 ## Connections
-- [[.test_long_poll_timeout_remains_60s()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_long_poll_timeout_remains_60s()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OPENCLAW_DISABLE_HOST_FILESYSTEM
+#graphify/rationale #graphify/EXTRACTED #community/TestForwardToTelegramTimeouts

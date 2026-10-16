@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Community 467"
+community: "TestObservatoryMode"
 location: "L389"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_467
+  - community/TestObservatoryMode
 ---
 
 # .test_security_pipeline_set_global_mode_missing_components()
 
 ## Connections
-- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
+- [[SecurityPipeline_2]] - `calls` [EXTRACTED]
 - [[Test set_global_mode handles missing components gracefully.]] - `rationale_for` [EXTRACTED]
 - [[TestObservatoryMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_467
+#graphify/code #graphify/EXTRACTED #community/TestObservatoryMode

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/subagent_governance.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "Voice Gateway STT & Browser Security"
-location: "L147"
+community: "AgentRegistry"
+location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/AgentRegistry
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-deregister()_1]] - `calls` [EXTRACTED]
-- [[dot-get_summary()_1]] - `calls` [EXTRACTED]
-- [[ResourceUsage_1]] - `method` [EXTRACTED]
+- [[AgentRegistry]] - `method` [EXTRACTED]
+- [[Serialize registry to dict.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/MASTER-FEATURE-LIST.md"
+source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "USPTO Trademark Application — AgentShroud™"
-location: "L328"
+community: "v1.3.0 — Platform Expansion (53 items)"
+location: "L399"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/USPTO_Trademark_Application__AgentShroud
+  - community/v130__Platform_Expansion_53_items
 ---
 
 # iOS/macOS Shortcuts
 
 ## Connections
-- [[Post-v1.0.0 — Deferred]] - `contains` [EXTRACTED]
+- [[v1.3.0 — Platform Expansion (53 items)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/USPTO_Trademark_Application__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/v130__Platform_Expansion_53_items

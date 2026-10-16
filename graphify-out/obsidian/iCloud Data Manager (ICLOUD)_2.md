@@ -1,21 +1,21 @@
 ---
 source_file: "docker/config/openclaw/skills/i-icloud/README.md"
 type: "document"
-community: "security-entrypoint.sh"
+community: "iCloud Data Manager (ICLOUD)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/security-entrypointsh
+  - community/iCloud_Data_Manager_ICLOUD
 ---
 
 # iCloud Data Manager (ICLOUD)
 
 ## Connections
-- [[Purpose_87]] - `contains` [EXTRACTED]
-- [[README_92]] - `contains` [EXTRACTED]
-- [[Related Skills_93]] - `contains` [EXTRACTED]
-- [[SKILL_142]] - `contains` [EXTRACTED]
-- [[Usage_96]] - `contains` [EXTRACTED]
+- [[Purpose_41]] - `contains` [EXTRACTED]
+- [[Related Skills_34]] - `contains` [EXTRACTED]
+- [[Usage_37]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-icloudREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/security-entrypointsh
+#graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD

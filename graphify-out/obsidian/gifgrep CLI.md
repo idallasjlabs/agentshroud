@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/gifgrep/SKILL.md"
 type: "concept"
-community: "TestScoreNetworkSegmentation"
+community: "gifgrep/SKILL.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/TestScoreNetworkSegmentation
+  - community/gifgrep/SKILLmd
 ---
 
 # gifgrep CLI
 
 ## Connections
-- [[SKILL_208]] - `implements` [EXTRACTED]
+- [[gifgrepSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/TestScoreNetworkSegmentation
+#graphify/concept #graphify/EXTRACTED #community/gifgrep/SKILLmd

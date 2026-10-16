@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "LLMProxy"
+community: "GitGuard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/GitGuard
 ---
 
 # git_guard.py
 
 ## Connections
-- [[Enum]] - `imports_from` [EXTRACTED]
+- [[Enum_2]] - `imports_from` [EXTRACTED]
 - [[GitGuard]] - `contains` [EXTRACTED]
 - [[SecurityFinding]] - `contains` [EXTRACTED]
-- [[ThreatLevel_2]] - `contains` [EXTRACTED]
+- [[ThreatLevel]] - `contains` [EXTRACTED]
 - [[scan_repository()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/GitGuard

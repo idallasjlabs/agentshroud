@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/goplaces/SKILL.md"
 type: "document"
-community: ".test_owner_deny_without_target_auto_selects_sin"
+community: "goplaces/SKILL.md"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_owner_deny_without_target_auto_selects_sin
+  - community/goplaces/SKILLmd
 ---
 
 # goplaces
 
 ## Connections
-- [[SKILL_211]] - `contains` [EXTRACTED]
+- [[goplacesSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_owner_deny_without_target_auto_selects_sin
+#graphify/document #graphify/EXTRACTED #community/goplaces/SKILLmd

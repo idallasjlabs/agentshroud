@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Community 73"
-location: "L551"
+community: "scanner_integration.py"
+location: "L1005"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_73
+  - community/scanner_integrationpy
 ---
 
 # .test_timestamp_present()
 
 ## Connections
-- [[dot-_patch_all_not_run()]] - `calls` [EXTRACTED]
-- [[TestAggregateResults_1]] - `method` [EXTRACTED]
-- [[aggregate_results()]] - `calls` [EXTRACTED]
+- [[dot-_all_not_run_patches()]] - `calls` [EXTRACTED]
+- [[TestComputeScorecard_1]] - `method` [EXTRACTED]
+- [[compute_scorecard()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_73
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

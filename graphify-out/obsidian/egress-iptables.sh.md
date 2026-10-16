@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/egress-iptables.sh"
 type: "code"
-community: ".agents/skills/i-architecture-review/SKILL.md"
+community: "egress-iptables.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-architecture-review/SKILLmd
+  - community/egress-iptablessh
 ---
 
 # egress-iptables.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[egress-iptables.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-architecture-review/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/egress-iptablessh

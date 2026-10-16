@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 968"
+community: "TestIsContainerRunning"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_968
+  - community/TestIsContainerRunning
 ---
 
 # .test_stopped_container_returns_false()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_patch_http()]] - `calls` [EXTRACTED]
 - [[TestIsContainerRunning]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_968
+#graphify/code #graphify/EXTRACTED #community/TestIsContainerRunning

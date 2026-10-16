@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[Operator-ready risk summary with plain-English bullets and per-user risk map (V9]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[SCLCaller]] - `references` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[build_correlation_summary()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/soc/routerpy

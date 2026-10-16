@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "TrustManager"
+community: "AlertDispatcher"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/AlertDispatcher
 ---
 
 # egress_monitor.py
@@ -19,10 +19,9 @@ tags:
 - [[EgressMonitor]] - `contains` [EXTRACTED]
 - [[EgressMonitorConfig]] - `contains` [EXTRACTED]
 - [[EgressSummary]] - `contains` [EXTRACTED]
-- [[Enum]] - `imports_from` [EXTRACTED]
+- [[Enum_2]] - `imports_from` [EXTRACTED]
 - [[key_vault.py]] - `references` [EXTRACTED]
 - [[log_sanitizer.py]] - `references` [EXTRACTED]
 - [[resource_guard.py]] - `references` [EXTRACTED]
-- [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

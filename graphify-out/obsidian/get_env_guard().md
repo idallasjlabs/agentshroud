@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "GroupApprovalRouter"
+community: "AlertDispatcher"
 location: "L427"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/AlertDispatcher
 ---
 
 # get_env_guard()
@@ -17,4 +17,4 @@ tags:
 - [[check_command()]] - `calls` [EXTRACTED]
 - [[env_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

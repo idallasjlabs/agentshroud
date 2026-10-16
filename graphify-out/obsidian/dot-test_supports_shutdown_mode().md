@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_modes.py"
 type: "code"
-community: "Community 442"
+community: "TestKillSwitchScript"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_442
+  - community/TestKillSwitchScript
 ---
 
 # .test_supports_shutdown_mode()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKillSwitchScript]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_442
+#graphify/code #graphify/EXTRACTED #community/TestKillSwitchScript

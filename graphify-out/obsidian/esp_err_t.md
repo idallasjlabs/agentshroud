@@ -1,17 +1,18 @@
 ---
-source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c"
+source_file: "firmware/voice-terminal/main/ota.c"
 type: "code"
-community: "Development Workflow: Read-Only Filesystem Strat"
-location: "L157"
+community: "ota_check"
+location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Development_Workflow_Read-Only_Filesystem_Strat
+  - community/ota_check
 ---
 
 # esp_err_t
 
 ## Connections
-- [[face_animation_init()]] - `references` [EXTRACTED]
+- [[_http_event_handler()]] - `references` [EXTRACTED]
+- [[ota_check()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Development_Workflow_Read-Only_Filesystem_Strat
+#graphify/code #graphify/EXTRACTED #community/ota_check

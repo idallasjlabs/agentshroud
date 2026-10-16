@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "Enum"
+community: "MiddlewareManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/MiddlewareManager
 ---
 
 # file_sandbox.py
@@ -21,7 +21,7 @@ tags:
 - [[PIIScanResult]] - `contains` [EXTRACTED]
 - [[PIIScanner]] - `contains` [EXTRACTED]
 - [[Rule agentshroud-path-traversal-open]] - `references` [EXTRACTED]
-- [[SKILL_190]] - `references` [EXTRACTED]
 - [[StagingPattern]] - `contains` [EXTRACTED]
+- [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

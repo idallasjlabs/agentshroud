@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 1328"
+community: "TestIsFresh"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1328
+  - community/TestIsFresh
 ---
 
 # .test_stat_error_returns_false()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestIsFresh_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1328
+#graphify/code #graphify/EXTRACTED #community/TestIsFresh

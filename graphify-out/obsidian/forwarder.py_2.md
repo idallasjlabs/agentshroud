@@ -1,23 +1,23 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
 type: "document"
-community: "LVGL KAWAII FACE"
+community: "forwarder.py"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LVGL_KAWAII_FACE
+  - community/forwarderpy
 ---
 
 # forwarder.py
 
 ## Connections
-- [[Configuration  Environment Variables]] - `contains` [EXTRACTED]
-- [[Function Details_6]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_9]] - `contains` [EXTRACTED]
-- [[Purpose_127]] - `contains` [EXTRACTED]
-- [[Related_11]] - `contains` [EXTRACTED]
-- [[Responsibilities_11]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables_28]] - `contains` [EXTRACTED]
+- [[Function Details_48]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_51]] - `contains` [EXTRACTED]
+- [[Purpose_185]] - `contains` [EXTRACTED]
+- [[Related_55]] - `contains` [EXTRACTED]
+- [[Responsibilities_53]] - `contains` [EXTRACTED]
 - [[forwarder.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LVGL_KAWAII_FACE
+#graphify/document #graphify/EXTRACTED #community/forwarderpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "File Sandbox & Privilege Separation Tests"
+community: "MiddlewareManager"
 location: "L239"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/File_Sandbox__Privilege_Separation_Tests
+  - community/MiddlewareManager
 ---
 
 # .test_wildcard_pattern_matching()
@@ -15,4 +15,4 @@ tags:
 - [[Test  wildcard patterns work correctly.]] - `rationale_for` [EXTRACTED]
 - [[TestPatternMatching]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

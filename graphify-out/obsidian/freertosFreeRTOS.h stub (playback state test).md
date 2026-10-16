@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/stubs/freertos/FreeRTOS.h"
 type: "code"
-community: "Test handling 1-hour time-limited approval callb"
+community: "freertos/FreeRTOS.h stub (playback state test)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Test_handling_1-hour_time-limited_approval_callb
+  - community/freertos/FreeRTOSh_stub_playback_state_test
 ---
 
 # freertos/FreeRTOS.h stub (playback state test)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[freertostask.h stub (playback state test)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Test_handling_1-hour_time-limited_approval_callb
+#graphify/code #graphify/EXTRACTED #community/freertos/FreeRTOSh_stub_playback_state_test

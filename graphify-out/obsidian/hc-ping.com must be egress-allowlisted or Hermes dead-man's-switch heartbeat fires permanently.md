@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_heartbeat_egress.py"
 type: "rationale"
-community: "SOCWebSocketHandler"
+community: "WebProxyConfig"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - community/WebProxyConfig
 ---
 
 # hc-ping.com must be egress-allowlisted or Hermes dead-man's-switch heartbeat fires permanently
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[WebProxyConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig

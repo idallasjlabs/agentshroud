@@ -5,7 +5,7 @@ community: "Coding Agent (bash-first)"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/Coding_Agent_bash-first
 ---
 
@@ -15,4 +15,4 @@ tags:
 - [[Gemini CLI]] - `contains` [EXTRACTED]
 - [[coding-agentSKILL]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Coding_Agent_bash-first
+#graphify/document #graphify/EXTRACTED #community/Coding_Agent_bash-first

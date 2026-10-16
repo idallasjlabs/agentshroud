@@ -1,26 +1,24 @@
 ---
-source_file: "gateway/security/trivy_report.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "PrivacyPolicyEnforcer"
-location: "L188"
+community: "FalcoAlertWatcher"
+location: "L268"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/FalcoAlertWatcher
 ---
 
 # generate_summary()
 
 ## Connections
-- [[Any_64]] - `references` [EXTRACTED]
+- [[Any_66]] - `references` [EXTRACTED]
 - [[Generate a summary dict suitable for the health report.      Args         alert_1]] - `rationale_for` [EXTRACTED]
-- [[Generate a summary dict suitable for the health report.      Args         repor]] - `rationale_for` [EXTRACTED]
-- [[daily_cve_report.py]] - `imports` [EXTRACTED]
-- [[format_cve_report()]] - `calls` [EXTRACTED]
-- [[run_and_send_cve_report()]] - `calls` [EXTRACTED]
-- [[run_trivy_scan()_1]] - `shares_data_with` [EXTRACTED]
+- [[categorize_alerts()]] - `calls` [EXTRACTED]
+- [[falco_monitor.py]] - `contains` [EXTRACTED]
+- [[health_report.py]] - `shares_data_with` [EXTRACTED]
+- [[is_agentshroud_rule()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `imports` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
-- [[trivy_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Community 156"
+community: "test_daily_cve_report.py"
 location: "L1485"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_156
+  - community/test_daily_cve_reportpy
 ---
 
 # .test_skips_ingest_when_marked_done_after_wake()
@@ -14,12 +14,6 @@ tags:
 ## Connections
 - [[After sleeping, if the day is now marked done, the loop skips ingest.]] - `rationale_for` [EXTRACTED]
 - [[TestGhsaIngestScheduler]] - `method` [EXTRACTED]
-- [[_fake_ingest()_2]] - `contains` [EXTRACTED]
-- [[_fake_ingest()_1]] - `indirect_call` [INFERRED]
-- [[_sleep()_3]] - `contains` [EXTRACTED]
-- [[_sleep()_2]] - `indirect_call` [INFERRED]
-- [[asyncio_4]] - `references` [EXTRACTED]
-- [[datetime]] - `calls` [INFERRED]
-- [[now()_3]] - `contains` [EXTRACTED]
+- [[datetime_8]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_156
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

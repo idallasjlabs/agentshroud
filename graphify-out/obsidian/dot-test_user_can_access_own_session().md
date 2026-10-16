@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "Community 1114"
+community: "UserSessionManager"
 location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1114
+  - community/UserSessionManager
 ---
 
 # .test_user_can_access_own_session()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAccessControl]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1114
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

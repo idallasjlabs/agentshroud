@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "Community 913"
+community: "SessionError"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_913
+  - community/SessionError
 ---
 
 # .test_unregistered_session_event_rejected()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEventInjection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_913
+#graphify/code #graphify/EXTRACTED #community/SessionError

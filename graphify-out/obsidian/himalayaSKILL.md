@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: "Himalaya Email CLI"
+community: "ssh-configuration.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Himalaya_Email_CLI
+  - community/ssh-configurationmd
 ---
 
 # himalaya/SKILL.md
@@ -17,4 +17,4 @@ tags:
 - [[message-composition]] - `references` [EXTRACTED]
 - [[ssh-configuration]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Himalaya_Email_CLI
+#graphify/document #graphify/EXTRACTED #community/ssh-configurationmd

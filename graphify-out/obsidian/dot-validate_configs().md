@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "Community 204"
+community: "ConsentFramework"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_204
+  - community/ConsentFramework
 ---
 
 # .validate_configs()
@@ -17,4 +17,4 @@ tags:
 - [[ConsentFramework]] - `method` [EXTRACTED]
 - [[ServerConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_204
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework

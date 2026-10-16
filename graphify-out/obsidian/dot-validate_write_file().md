@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "Approval Queue (WebSocket)"
+community: "SSHProxy"
 location: "L203"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_WebSocket
+  - community/SSHProxy
 ---
 
 # .validate_write_file()
 
 ## Connections
-- [[SSHProxy_1]] - `method` [EXTRACTED]
+- [[SSHProxy]] - `method` [EXTRACTED]
 - [[Validate a structured sshwrite_file request (host, path, content).          Re]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_WebSocket
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

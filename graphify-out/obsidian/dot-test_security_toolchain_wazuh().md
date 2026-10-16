@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "P3 Infrastructure Security Modules"
+community: "AlertDispatcher"
 location: "L900"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/P3_Infrastructure_Security_Modules
+  - community/AlertDispatcher
 ---
 
 # .test_security_toolchain_wazuh()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestContainerSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

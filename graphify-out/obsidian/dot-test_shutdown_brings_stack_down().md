@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "Community 45"
+community: "ModeRequest"
 location: "L325"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_45
+  - community/ModeRequest
 ---
 
 # .test_shutdown_brings_stack_down()
@@ -15,4 +15,4 @@ tags:
 - [[TestKillSwitch_1]] - `method` [EXTRACTED]
 - [[_engine()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_45
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

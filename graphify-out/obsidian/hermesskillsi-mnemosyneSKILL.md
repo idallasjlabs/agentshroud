@@ -12,7 +12,7 @@ tags:
 # hermes/skills/i-mnemosyne/SKILL.md
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_2]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_4]] - `contains` [EXTRACTED]
 - [[Mnemosyne — Retention Engineer_5]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/killswitch_config.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "Community 42"
-location: "L100"
+community: "AuditEvent"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_42
+  - community/AuditEvent
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_53]] - `references` [EXTRACTED]
-- [[Convert configuration to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
-- [[KillSwitchConfig]] - `method` [EXTRACTED]
+- [[AuditEvent]] - `method` [EXTRACTED]
+- [[Convert to dictionary representation.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_42
+#graphify/code #graphify/EXTRACTED #community/AuditEvent

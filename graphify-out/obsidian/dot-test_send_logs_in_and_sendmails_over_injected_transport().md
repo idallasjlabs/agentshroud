@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_gateway_email_service.py"
 type: "code"
-community: "Community 188"
+community: "GatewayEmailService"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_188
+  - community/GatewayEmailService
 ---
 
 # .test_send_logs_in_and_sendmails_over_injected_transport()
@@ -15,4 +15,4 @@ tags:
 - [[TestSend]] - `method` [EXTRACTED]
 - [[_service()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_188
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

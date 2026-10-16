@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-gitops/SKILL.md"
 type: "document"
-community: "Community 1535"
+community: "hermes/skills/i-cr/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1535
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # hermes/skills/i-gitops/SKILL.md
 
 ## Connections
-- [[Skill gitops_1]] - `contains` [EXTRACTED]
+- [[Skill gitops]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1535
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

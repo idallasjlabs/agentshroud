@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auto_remediate_cves.py"
 type: "code"
-community: "Community 195"
-location: "L185"
+community: "plan_remediation"
+location: "L181"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_195
+  - community/plan_remediation
 ---
 
 # .test_write_pin_refuses_an_absent_key()
@@ -16,4 +16,4 @@ tags:
 - [[TestVersionPinIO]] - `method` [EXTRACTED]
 - [[write_pin()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_195
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

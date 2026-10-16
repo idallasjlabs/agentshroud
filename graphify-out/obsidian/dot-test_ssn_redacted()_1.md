@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_log_sanitizer.py"
 type: "code"
-community: "Community 493"
+community: "TestLogSanitizer"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_493
+  - community/TestLogSanitizer
 ---
 
 # .test_ssn_redacted()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_filter_msg()]] - `calls` [EXTRACTED]
 - [[TestLogSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_493
+#graphify/code #graphify/EXTRACTED #community/TestLogSanitizer

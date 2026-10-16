@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "Session Manager & PII/Context Guard"
+community: "AlertDispatcher"
 location: "L526"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Manager__PII/Context_Guard
+  - community/AlertDispatcher
 ---
 
 # .test_violation_drops_trust_significantly()
@@ -15,4 +15,4 @@ tags:
 - [[A single violation should meaningfully impact trust.]] - `rationale_for` [EXTRACTED]
 - [[TestPrivilegeEscalation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

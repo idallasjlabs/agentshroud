@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "Prompt Guard & Context Integrity"
+community: "PIIConfig"
 location: "L188"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Prompt_Guard__Context_Integrity
+  - community/PIIConfig
 ---
 
 # .test_tamper_detected()
@@ -15,4 +15,4 @@ tags:
 - [[TestSystemPromptHMAC]] - `method` [EXTRACTED]
 - [[Verifying a tampered prompt should return False.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Prompt_Guard__Context_Integrity
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

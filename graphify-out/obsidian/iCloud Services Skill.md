@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: "TestOpenscapSummary"
+community: "iCloud Services Skill"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOpenscapSummary
+  - community/iCloud_Services_Skill
 ---
 
 # iCloud Services Skill
@@ -15,4 +15,4 @@ tags:
 - [[calendar.js (iCloud CalDAV script)]] - `implements` [EXTRACTED]
 - [[i-icloud README (ICLOUD Data Manager)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOpenscapSummary
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services_Skill

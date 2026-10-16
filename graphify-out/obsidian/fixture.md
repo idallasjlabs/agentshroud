@@ -1,18 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "test_subagent_governance.py"
+community: "test_security_regressions_v1_2.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_subagent_governancepy
+  - community/test_security_regressions_v1_2py
 ---
 
 # fixture
 
 ## Connections
-- [[disabled_gov()]] - `references` [EXTRACTED]
-- [[gov()]] - `references` [EXTRACTED]
-- [[monitor_gov()]] - `references` [EXTRACTED]
+- [[session_manager()]] - `references` [EXTRACTED]
+- [[smm()]] - `references` [EXTRACTED]
+- [[tmp_workspace()]] - `references` [EXTRACTED]
+- [[trust_manager()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_subagent_governancepy
+#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py

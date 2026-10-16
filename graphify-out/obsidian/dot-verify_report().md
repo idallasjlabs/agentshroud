@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "Community 70"
+community: "CompetitiveIntelReport"
 location: "L212"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_70
+  - community/CompetitiveIntelReport
 ---
 
 # .verify_report()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-verify_entry()]] - `calls` [EXTRACTED]
 - [[CitationVerifier]] - `method` [EXTRACTED]
-- [[CompetitiveIntelReport_1]] - `references` [EXTRACTED]
+- [[CompetitiveIntelReport]] - `references` [EXTRACTED]
 - [[DraftEntry]] - `references` [EXTRACTED]
 - [[Verify every draft claim; return a report of only verified claims.          Clai]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_70
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

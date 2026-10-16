@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "code"
-community: "Community 276"
+community: "Path"
 location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_276
+  - community/Path
 ---
 
 # .test_serialise_contains_version_and_timestamp()
 
 ## Connections
-- [[Path_28]] - `references` [EXTRACTED]
+- [[Path_30]] - `references` [EXTRACTED]
 - [[TestSkillsManifest]] - `method` [EXTRACTED]
 - [[_write_tree()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_276
+#graphify/code #graphify/EXTRACTED #community/Path

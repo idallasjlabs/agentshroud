@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-bdd/SKILL.md"
 type: "document"
-community: "Community 1529"
+community: "hermes/skills/i-cr/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1529
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # hermes/skills/i-bdd/SKILL.md
 
 ## Connections
-- [[Skill bdd_1]] - `contains` [EXTRACTED]
+- [[Skill bdd]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1529
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

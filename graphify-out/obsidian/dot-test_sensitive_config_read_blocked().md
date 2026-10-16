@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "File Sandbox & Privilege Separation Tests"
+community: "MiddlewareManager"
 location: "L225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/File_Sandbox__Privilege_Separation_Tests
+  - community/MiddlewareManager
 ---
 
 # .test_sensitive_config_read_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[Agent cannot read sensitive configuration.]] - `rationale_for` [EXTRACTED]
 - [[TestReadAccess]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

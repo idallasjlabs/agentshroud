@@ -1,23 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/main/ws_client.c"
+source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c"
 type: "code"
-community: "_t()"
-location: "L229"
+community: "lvgl_kawaii_face.c"
+location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t
+  - community/lvgl_kawaii_facec
 ---
 
 # esp_err_t
 
 ## Connections
-- [[ws_client_send_end()]] - `references` [EXTRACTED]
-- [[ws_client_send_keepalive()]] - `references` [EXTRACTED]
-- [[ws_client_send_listen()]] - `references` [EXTRACTED]
-- [[ws_client_send_listen_resume()]] - `references` [EXTRACTED]
-- [[ws_client_send_log()]] - `references` [EXTRACTED]
-- [[ws_client_send_pcm()]] - `references` [EXTRACTED]
-- [[ws_client_send_stop()]] - `references` [EXTRACTED]
+- [[face_animation_init()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t
+#graphify/code #graphify/EXTRACTED #community/lvgl_kawaii_facec

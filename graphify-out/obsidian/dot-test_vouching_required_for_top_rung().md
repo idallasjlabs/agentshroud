@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "Community 115"
+community: "TrustConfig"
 location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_115
+  - community/TrustConfig
 ---
 
 # .test_vouching_required_for_top_rung()
@@ -17,4 +17,4 @@ tags:
 - [[_make_tm()]] - `calls` [EXTRACTED]
 - [[_set_state()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_115
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

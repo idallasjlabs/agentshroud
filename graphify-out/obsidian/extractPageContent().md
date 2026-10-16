@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/background.js"
 type: "code"
-community: "SSH Capability Architecture Document"
+community: "background.js"
 location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSH_Capability_Architecture_Document
+  - community/backgroundjs
 ---
 
 # extractPageContent()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[background.js]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document
+#graphify/code #graphify/EXTRACTED #community/backgroundjs

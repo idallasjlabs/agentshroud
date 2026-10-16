@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/graphify/references/hooks.md"
+source_file: ".agents/skills/graphify/references/hooks.md"
 type: "document"
-community: "TrustLevel"
+community: "graphify reference: extra exports and benchmark"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TrustLevel
+  - community/graphify_reference_extra_exports_and_benchmark
 ---
 
 # graphify reference: commit hook and native CLAUDE.md integration
 
 ## Connections
+- [[dot-agentsskillsgraphifyreferenceshooks]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsgraphifyreferencesquery]] - `contains` [EXTRACTED]
 - [[For git commit hook_2]] - `contains` [EXTRACTED]
 - [[For native CLAUDE.md integration_2]] - `contains` [EXTRACTED]
-- [[hooks_2]] - `contains` [EXTRACTED]
-- [[query_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TrustLevel
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark

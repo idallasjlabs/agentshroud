@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "Signed Instruction Envelopes & Security Pipeline"
+community: "OutboundInfoFilter"
 location: "L446"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Signed_Instruction_Envelopes__Security_Pipeline
+  - community/OutboundInfoFilter
 ---
 
 # .test_warn_zone_forwards()
@@ -16,4 +16,4 @@ tags:
 - [[TestContextIntegrityInPipeline]] - `method` [EXTRACTED]
 - [[_make_integrity_pipeline()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Signed_Instruction_Envelopes__Security_Pipeline
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

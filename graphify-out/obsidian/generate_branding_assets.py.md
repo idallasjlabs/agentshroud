@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "env_guard.py"
+community: "generate_branding_assets.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/env_guardpy
+  - community/generate_branding_assetspy
 ---
 
 # generate_branding_assets.py
@@ -24,7 +24,7 @@ tags:
 - [[get_font()]] - `contains` [EXTRACTED]
 - [[icon_on_canvas()]] - `contains` [EXTRACTED]
 - [[load_logo()]] - `contains` [EXTRACTED]
-- [[main()_23]] - `contains` [EXTRACTED]
+- [[main()_20]] - `contains` [EXTRACTED]
 - [[save()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/env_guardpy
+#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy

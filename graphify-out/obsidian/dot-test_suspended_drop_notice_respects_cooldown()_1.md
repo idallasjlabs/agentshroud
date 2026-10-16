@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "Community 58"
+community: "ProgressiveLockdown"
 location: "L279"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_58
+  - community/ProgressiveLockdown
 ---
 
 # .test_suspended_drop_notice_respects_cooldown()
@@ -17,4 +17,4 @@ tags:
 - [[_make_update()_2]] - `calls` [EXTRACTED]
 - [[_wrap()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_58
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

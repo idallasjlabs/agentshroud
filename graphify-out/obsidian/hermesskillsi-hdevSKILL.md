@@ -12,6 +12,6 @@ tags:
 # hermes/skills/i-hdev/SKILL.md
 
 ## Connections
-- [[Skill Hermes Dev Workflow (HDEV)_1]] - `contains` [EXTRACTED]
+- [[Skill Hermes Dev Workflow (HDEV)_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

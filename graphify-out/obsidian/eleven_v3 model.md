@@ -1,16 +1,16 @@
 ---
 source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
 type: "concept"
-community: ".update_peer_trust()"
+community: "ElevenLabs Text-to-Dialogue API"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/update_peer_trust
+  - community/ElevenLabs_Text-to-Dialogue_API
 ---
 
 # eleven_v3 model
 
 ## Connections
-- [[ElevenLabs Text-to-Dialogue API]] - `conceptually_related_to` [EXTRACTED]
+- [[ElevenLabs Text-to-Dialogue API_1]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/update_peer_trust
+#graphify/concept #graphify/EXTRACTED #community/ElevenLabs_Text-to-Dialogue_API

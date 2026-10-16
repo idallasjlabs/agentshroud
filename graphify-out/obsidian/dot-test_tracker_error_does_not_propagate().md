@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "Community 139"
+community: "TestHandleEvent"
 location: "L525"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/TestHandleEvent
 ---
 
 # .test_tracker_error_does_not_propagate()
 
 ## Connections
-- [[SlackAPIProxy]] - `calls` [EXTRACTED]
+- [[SlackAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestHandleEvent]] - `method` [EXTRACTED]
 - [[handle_event swallows tracker exceptions (non-fatal).]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_139
+#graphify/code #graphify/EXTRACTED #community/TestHandleEvent

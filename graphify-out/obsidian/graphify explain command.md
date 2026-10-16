@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/query.md"
 type: "concept"
-community: "Cron: Daily Competitive Analysis Email"
+community: "/graphify explain command"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Cron_Daily_Competitive_Analysis_Email
+  - community//graphify_explain_command
 ---
 
 # /graphify explain command
 
-#graphify/concept #graphify/EXTRACTED #community/Cron_Daily_Competitive_Analysis_Email
+#graphify/concept #graphify/EXTRACTED #community//graphify_explain_command

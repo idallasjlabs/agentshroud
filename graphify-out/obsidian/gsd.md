@@ -1,12 +1,12 @@
 ---
 source_file: ".github/ISSUE_TEMPLATE/gsd.md"
 type: "document"
-community: "iMessage Integration Fix - Using imsg + imessage"
+community: "postmortem.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iMessage_Integration_Fix_-_Using_imsg__imessage
+  - community/postmortemmd
 ---
 
 # gsd.md
@@ -17,6 +17,6 @@ tags:
 - [[CLAUDE]] - `shares_data_with` [INFERRED]
 - [[Effort]] - `contains` [EXTRACTED]
 - [[Outcome]] - `contains` [EXTRACTED]
-- [[Problem]] - `contains` [EXTRACTED]
+- [[Problem_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Fix_-_Using_imsg__imessage
+#graphify/document #graphify/EXTRACTED #community/postmortemmd

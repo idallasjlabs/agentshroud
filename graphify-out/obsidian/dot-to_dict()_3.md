@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/canary.py"
+source_file: "gateway/security/soc_correlation.py"
 type: "code"
-community: "Proxy Sidecar & Forwarder"
-location: "L50"
+community: "CorrelationSummary"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Proxy_Sidecar__Forwarder
+  - community/CorrelationSummary
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_19]] - `references` [EXTRACTED]
-- [[CanaryResult]] - `method` [EXTRACTED]
+- [[Any_13]] - `references` [EXTRACTED]
+- [[CorrelationSummary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder
+#graphify/code #graphify/EXTRACTED #community/CorrelationSummary

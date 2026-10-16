@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Community 1605"
+community: "ForwardRequest"
 location: "L566"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1605
+  - community/ForwardRequest
 ---
 
 # .test_switch_model_script_exists_with_supported_targets()
@@ -15,4 +15,4 @@ tags:
 - [[Model switch helper should support local and major cloud providers.]] - `rationale_for` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1605
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

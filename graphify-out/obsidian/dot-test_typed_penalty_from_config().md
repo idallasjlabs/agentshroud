@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "Community 115"
+community: "TrustConfig"
 location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_115
+  - community/TrustConfig
 ---
 
 # .test_typed_penalty_from_config()
@@ -16,4 +16,4 @@ tags:
 - [[_fast_ladder()]] - `calls` [EXTRACTED]
 - [[_make_tm()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_115
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

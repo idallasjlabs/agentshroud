@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-icloud/README.md"
 type: "document"
-community: "8D Root Cause Analysis SKILL (OpenClaw)"
+community: "iCloud Services Skill"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/8D_Root_Cause_Analysis_SKILL_OpenClaw
+  - community/iCloud_Services_Skill
 ---
 
 # iCloud Data Manager README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[iCloud Services Skill_1]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/8D_Root_Cause_Analysis_SKILL_OpenClaw
+#graphify/document #graphify/INFERRED #community/iCloud_Services_Skill

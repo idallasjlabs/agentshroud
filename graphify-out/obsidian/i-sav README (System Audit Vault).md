@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-sav/README.md"
 type: "document"
-community: "AgentShroud: A Transparent Proxy Framework for E"
+community: "GSDE&G Skills Reference Guide"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_A_Transparent_Proxy_Framework_for_E
+  - community/GSDEG_Skills_Reference_Guide
 ---
 
 # i-sav README (System Audit Vault)
@@ -15,4 +15,4 @@ tags:
 - [[i-sad README (System Audit Documentation)]] - `references` [EXTRACTED]
 - [[i-sav SKILL (System Audit Vault, Obsidian)]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_A_Transparent_Proxy_Framework_for_E
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference_Guide

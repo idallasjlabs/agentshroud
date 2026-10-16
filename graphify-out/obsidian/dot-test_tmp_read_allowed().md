@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_file_sandbox.py"
+source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "File Sandbox & Privilege Separation Tests"
-location: "L66"
+community: "AlertDispatcher"
+location: "L542"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/File_Sandbox__Privilege_Separation_Tests
+  - community/AlertDispatcher
 ---
 
 # .test_tmp_read_allowed()
 
 ## Connections
-- [[TestNormalFileOperations]] - `method` [EXTRACTED]
+- [[Reading from app should be allowed.]] - `rationale_for` [EXTRACTED]
+- [[TestFileSandbox]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

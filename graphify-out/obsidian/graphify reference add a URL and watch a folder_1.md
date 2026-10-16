@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/graphify/references/add-watch.md"
+source_file: "docker/config/openclaw/skills/graphify/references/add-watch.md"
 type: "document"
-community: "Any"
+community: "graphify reference: extra exports and benchmark"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Any
+  - community/graphify_reference_extra_exports_and_benchmark
 ---
 
 # graphify reference: add a URL and watch a folder
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[For --watch_1]] - `contains` [EXTRACTED]
 - [[For graphify add_1]] - `contains` [EXTRACTED]
-- [[add-watch_1]] - `contains` [EXTRACTED]
-- [[query_1]] - `contains` [EXTRACTED]
+- [[openclawskillsgraphifyreferencesadd-watch]] - `contains` [EXTRACTED]
+- [[openclawskillsgraphifyreferencesquery]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Any
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark

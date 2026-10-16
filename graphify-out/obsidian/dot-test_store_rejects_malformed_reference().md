@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "Community 1322"
+community: "CredentialValidator"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1322
+  - community/CredentialValidator
 ---
 
 # .test_store_rejects_malformed_reference()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestStoreIn1Password]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1322
+#graphify/code #graphify/EXTRACTED #community/CredentialValidator

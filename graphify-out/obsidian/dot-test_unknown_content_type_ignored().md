@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "Slack Proxy & Main Endpoint Tests"
+community: "SlackAPIProxy"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_Proxy__Main_Endpoint_Tests
+  - community/SlackAPIProxy
 ---
 
 # .test_unknown_content_type_ignored()
@@ -15,6 +15,6 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[Bodies with an unrecognized Content-Type are not parsed at all.]] - `rationale_for` [EXTRACTED]
 - [[TestBodyParsing]] - `method` [EXTRACTED]
-- [[_make_proxy()_2]] - `calls` [EXTRACTED]
+- [[_make_proxy()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_Proxy__Main_Endpoint_Tests
+#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multilingual_injection.py"
 type: "code"
-community: "Community 208"
+community: "TestMultilingualInjection"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_208
+  - community/TestMultilingualInjection
 ---
 
 # .test_tier2_ukrainian_injection()
@@ -15,4 +15,4 @@ tags:
 - [[Test Ukrainian injection detection (Tier 2).]] - `rationale_for` [EXTRACTED]
 - [[TestMultilingualInjection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_208
+#graphify/code #graphify/EXTRACTED #community/TestMultilingualInjection

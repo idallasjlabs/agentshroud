@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/gifgrep/SKILL.md"
 type: "document"
-community: "TestScoreNetworkSegmentation"
+community: "gifgrep/SKILL.md"
 location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestScoreNetworkSegmentation
+  - community/gifgrep/SKILLmd
 ---
 
 # gifgrep
 
 ## Connections
-- [[SKILL_208]] - `contains` [EXTRACTED]
+- [[gifgrepSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestScoreNetworkSegmentation
+#graphify/document #graphify/EXTRACTED #community/gifgrep/SKILLmd

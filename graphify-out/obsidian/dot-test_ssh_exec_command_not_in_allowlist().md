@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "Approval Queue (WebSocket)"
+community: "SSHHostConfig"
 location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_WebSocket
+  - community/SSHHostConfig
 ---
 
 # .test_ssh_exec_command_not_in_allowlist()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSSHExec]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_WebSocket
+#graphify/code #graphify/EXTRACTED #community/SSHHostConfig

@@ -1,22 +1,18 @@
 ---
-source_file: "scripts/verify-proxy.sh"
+source_file: "docker/scripts/container-net-diag.sh"
 type: "code"
-community: "awslabs.aws-api-mcp-server configuration (--read"
-location: "L24"
+community: "container-net-diag.sh"
+location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/awslabsaws-api-mcp-server_configuration_--read
+  - community/container-net-diagsh
 ---
 
 # info()
 
 ## Connections
-- [[run_bypass()]] - `calls` [EXTRACTED]
-- [[run_canary()_1]] - `calls` [EXTRACTED]
-- [[run_chain()]] - `calls` [EXTRACTED]
-- [[run_full()]] - `calls` [EXTRACTED]
-- [[run_quick()]] - `calls` [EXTRACTED]
-- [[verify-proxy.sh]] - `defines` [EXTRACTED]
+- [[container-net-diag.sh]] - `defines` [EXTRACTED]
+- [[container-net-diag.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/awslabsaws-api-mcp-server_configuration_--read
+#graphify/code #graphify/EXTRACTED #community/container-net-diagsh

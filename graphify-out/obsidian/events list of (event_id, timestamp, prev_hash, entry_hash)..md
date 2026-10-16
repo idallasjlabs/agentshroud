@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_archive.py"
 type: "rationale"
-community: "AgentShroud Device Pairing Management"
+community: "archive_old_events"
 location: "L35"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Device_Pairing_Management
+  - community/archive_old_events
 ---
 
 # events: list of (event_id, timestamp, prev_hash, entry_hash).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_live_db()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management
+#graphify/rationale #graphify/EXTRACTED #community/archive_old_events

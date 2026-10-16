@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "rationale"
-community: "ApprovalRequest"
+community: "AgentTarget"
 location: "L286"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/AgentTarget
 ---
 
 # health_check builds URL from target.health_path.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_health_check_uses_health_path()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

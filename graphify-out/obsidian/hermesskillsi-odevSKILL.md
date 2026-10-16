@@ -12,6 +12,6 @@ tags:
 # hermes/skills/i-odev/SKILL.md
 
 ## Connections
-- [[Skill OpenClaw Dev Workflow (ODEV)_1]] - `contains` [EXTRACTED]
+- [[Skill OpenClaw Dev Workflow (ODEV)_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Community 1176"
+community: "TestScoreMalwareDefense"
 location: "L353"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1176
+  - community/TestScoreMalwareDefense
 ---
 
 # .test_three_running_clean_no_files_count()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestScoreMalwareDefense]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1176
+#graphify/code #graphify/EXTRACTED #community/TestScoreMalwareDefense

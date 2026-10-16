@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Bear Notes"
+community: "Daedalus — Concept Illustrator"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bear_Notes
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # flow.mmd (Mermaid)
 
 ## Connections
-- [[Output Format_29]] - `contains` [EXTRACTED]
+- [[Output Format_40]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bear_Notes
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

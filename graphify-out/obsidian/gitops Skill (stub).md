@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-gitops/SKILL.md"
 type: "document"
-community: "SecurityEvent"
+community: "GSDE&G Development Master Checklist Skill"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/SecurityEvent
+  - community/GSDEG_Development_Master_Checklist_Skill
 ---
 
 # gitops Skill (stub)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[GIT-GUARD Skill]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/SecurityEvent
+#graphify/document #graphify/INFERRED #community/GSDEG_Development_Master_Checklist_Skill

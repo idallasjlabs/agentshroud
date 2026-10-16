@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 56"
+community: "test_security_toolchain.py"
 location: "L710"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_56
+  - community/test_security_toolchainpy
 ---
 
 # .test_summary_with_rootkit()
 
 ## Connections
-- [[TestWazuhSummary]] - `method` [EXTRACTED]
+- [[TestWazuhSummary_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_56
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

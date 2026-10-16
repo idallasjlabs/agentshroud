@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/SKILL.md"
 type: "document"
-community: "TestMultipartOutboundPipeline"
+community: "What You Must Do When Invoked"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMultipartOutboundPipeline
+  - community/What_You_Must_Do_When_Invoked
 ---
 
 # /graphify
@@ -18,9 +18,9 @@ tags:
 - [[For the commit hook and native CLAUDE.md integration]] - `contains` [EXTRACTED]
 - [[Honesty Rules_1]] - `contains` [EXTRACTED]
 - [[Interpreter guard for subcommands_1]] - `contains` [EXTRACTED]
-- [[SKILL_64]] - `contains` [EXTRACTED]
-- [[Usage_41]] - `contains` [EXTRACTED]
+- [[Usage_71]] - `contains` [EXTRACTED]
 - [[What You Must Do When Invoked_1]] - `contains` [EXTRACTED]
 - [[What graphify is for_1]] - `contains` [EXTRACTED]
+- [[hermesskillsgraphifySKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMultipartOutboundPipeline
+#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked

@@ -1,13 +1,13 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/stubs/esp_err.h"
 type: "code"
-community: "SOUL.md Freshness Check Job"
+community: "esp_err.h stub (playback state test)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOULmd_Freshness_Check_Job
+  - community/esp_errh_stub_playback_state_test
 ---
 
 # esp_err.h stub (playback state test)
 
-#graphify/code #graphify/EXTRACTED #community/SOULmd_Freshness_Check_Job
+#graphify/code #graphify/EXTRACTED #community/esp_errh_stub_playback_state_test

@@ -1,18 +1,17 @@
 ---
-source_file: "docker/docker-compose.yml"
-type: "code"
-community: "TestOutboundClassifierHelpers"
+source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
+type: "document"
+community: "compose_generator.py"
+location: "L47"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundClassifierHelpers
+  - community/compose_generatorpy
 ---
 
-# Gateway Service
+# gateway service
 
 ## Connections
-- [[Marvin Dev Overlay (port and subnet offsets from prod)]] - `references` [EXTRACTED]
-- [[container macro (always-true placeholder inside the gateway)]] - `references` [EXTRACTED]
-- [[gateway-start.sh entrypoint]] - `shares_data_with` [EXTRACTED]
+- [[Default Service Configuration]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundClassifierHelpers
+#graphify/document #graphify/EXTRACTED #community/compose_generatorpy

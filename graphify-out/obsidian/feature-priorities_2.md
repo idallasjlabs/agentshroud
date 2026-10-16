@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/references/steve-hay-assessment.md"
 type: "document"
-community: "Zero-Trust Build (source never touches the host)"
+community: "agentshroud-blueteam/references/steve-hay-assessment.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Zero-Trust_Build_source_never_touches_the_host
+  - community/agentshroud-blueteam/references/steve-hay-assessmentmd
 ---
 
 # feature-priorities
 
 ## Connections
-- [[steve-hay-assessment]] - `contains` [EXTRACTED]
+- [[agentshroud-blueteamreferencessteve-hay-assessment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Zero-Trust_Build_source_never_touches_the_host
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/references/steve-hay-assessmentmd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "Community 1179"
+community: "TestSessionValidation"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1179
+  - community/TestSessionValidation
 ---
 
 # .test_valid_session_accepted()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSessionValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1179
+#graphify/code #graphify/EXTRACTED #community/TestSessionValidation

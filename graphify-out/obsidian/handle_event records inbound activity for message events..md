@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "input_normalizer.py"
+community: "TestHandleEvent"
 location: "L480"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/input_normalizerpy
+  - community/TestHandleEvent
 ---
 
 # handle_event records inbound activity for message events.
 
 ## Connections
-- [[.test_message_event_records_activity()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_message_event_records_activity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/input_normalizerpy
+#graphify/rationale #graphify/EXTRACTED #community/TestHandleEvent

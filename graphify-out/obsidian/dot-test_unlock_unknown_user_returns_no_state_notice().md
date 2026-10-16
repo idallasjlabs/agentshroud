@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Telegram Lockdown & Collaborator UX Tests"
+community: "_wrap_response"
 location: "L8137"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Lockdown__Collaborator_UX_Tests
+  - community/_wrap_response
 ---
 
 # .test_unlock_unknown_user_returns_no_state_notice()
 
 ## Connections
-- [[dot-_make_proxy()_4]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_5]] - `calls` [EXTRACTED]
 - [[unlock for a user with no lockdown state must say so.]] - `rationale_for` [EXTRACTED]
 - [[unlock must persist through unpause_collaborator() so resume survives         a]] - `rationale_for` [EXTRACTED]
 - [[TestProgressiveLockdownUX]] - `method` [EXTRACTED]
-- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Lockdown__Collaborator_UX_Tests
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

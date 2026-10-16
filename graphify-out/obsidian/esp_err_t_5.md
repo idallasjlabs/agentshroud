@@ -1,17 +1,20 @@
 ---
-source_file: "firmware/voice-terminal/test/test_playback_state/stubs/bsp/esp-bsp.h"
+source_file: "firmware/voice-terminal/main/audio.c"
 type: "code"
-community: "TestStoreIn1Password"
-location: "L17"
+community: "app_main.c"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestStoreIn1Password
+  - community/app_mainc
 ---
 
 # esp_err_t
 
 ## Connections
-- [[bsp_iot_button_create()]] - `references` [EXTRACTED]
+- [[audio_init()]] - `references` [EXTRACTED]
+- [[audio_play()]] - `references` [EXTRACTED]
+- [[audio_preinit()]] - `references` [EXTRACTED]
+- [[audio_set_volume()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestStoreIn1Password
+#graphify/code #graphify/EXTRACTED #community/app_mainc

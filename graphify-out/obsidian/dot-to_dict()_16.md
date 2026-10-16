@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/egress_approval.py"
+source_file: "gateway/security/delegation.py"
 type: "code"
-community: "Community 88"
-location: "L85"
+community: "DelegationManager"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_88
+  - community/DelegationManager
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-_rule_to_dict()]] - `calls` [EXTRACTED]
-- [[dot-_save_rules()]] - `calls` [EXTRACTED]
-- [[EgressScope]] - `method` [EXTRACTED]
+- [[dot-_save()]] - `calls` [EXTRACTED]
+- [[Delegation_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_88
+#graphify/code #graphify/EXTRACTED #community/DelegationManager

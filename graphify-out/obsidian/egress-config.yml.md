@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "code"
-community: "Mode A — Single task"
+community: "Gateway Management/Control-Plane API (v1.3.0)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task
+  - community/Gateway_Management/Control-Plane_API_v130
 ---
 
 # egress-config.yml
@@ -14,4 +14,4 @@ tags:
 - [[Blocked by default (private RFC1918 ranges)]] - `conceptually_related_to` [EXTRACTED]
 - [[DNS Filter]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mode_A__Single_task
+#graphify/code #graphify/EXTRACTED #community/Gateway_Management/Control-Plane_API_v130

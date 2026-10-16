@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Community 794"
+community: "TestSplitForSpeech"
 location: "L489"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_794
+  - community/TestSplitForSpeech
 ---
 
 # .test_short_fragment_merged_forward()
@@ -16,4 +16,4 @@ tags:
 - [[A fragment under 12 chars is merged into the following chunk.]] - `rationale_for` [EXTRACTED]
 - [[TestSplitForSpeech]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_794
+#graphify/code #graphify/EXTRACTED #community/TestSplitForSpeech

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/hermes/resolve_model.py"
 type: "concept"
-community: "_t()"
+community: "test_hermes_model_resolver.py"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/_t
+  - community/test_hermes_model_resolverpy
 ---
 
 # gateway LLM proxy local-model routing (llm_proxy.py)
@@ -15,4 +15,4 @@ tags:
 - [[init-config.sh main body]] - `references` [INFERRED]
 - [[resolve_model()]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/_t
+#graphify/concept #graphify/INFERRED #community/test_hermes_model_resolverpy

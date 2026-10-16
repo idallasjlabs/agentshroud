@@ -1,20 +1,17 @@
 ---
-source_file: "docker/scripts/container-net-diag.sh"
+source_file: "tests/startup_smoke/test_setup_secrets.sh"
 type: "code"
-community: "Workflow (follow in order)"
-location: "L89"
+community: "test_setup_secrets.sh"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Workflow_follow_in_order
+  - community/test_setup_secretssh
 ---
 
 # has()
 
 ## Connections
-- [[container-net-diag.sh]] - `defines` [EXTRACTED]
-- [[container-net-diag.sh script]] - `calls` [EXTRACTED]
-- [[http_test()]] - `calls` [EXTRACTED]
-- [[tcp_test()]] - `calls` [EXTRACTED]
+- [[test_setup_secrets.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Workflow_follow_in_order
+#graphify/code #graphify/EXTRACTED #community/test_setup_secretssh

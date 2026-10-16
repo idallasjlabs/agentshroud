@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 1758"
+community: ".test_timeout_error_is_sanitized_for_json_message_field"
 location: "L847"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1758
+  - community/test_timeout_error_is_sanitized_for_json_message_field
 ---
 
 # .test_timeout_error_is_sanitized_for_json_message_field()
 
 ## Connections
-- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[Timeout rewrites should apply when JSON payload uses message field.]] - `rationale_for` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1758
+#graphify/code #graphify/EXTRACTED #community/test_timeout_error_is_sanitized_for_json_message_field

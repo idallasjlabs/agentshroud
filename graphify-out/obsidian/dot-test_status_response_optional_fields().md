@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_status.py"
 type: "code"
-community: "Community 686"
+community: "create_auth_dependency"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_686
+  - community/create_auth_dependency
 ---
 
 # .test_status_response_optional_fields()
@@ -16,4 +16,4 @@ tags:
 - [[Test that new fields are optional (backward compat).]] - `rationale_for` [EXTRACTED]
 - [[TestEnhancedStatus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_686
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

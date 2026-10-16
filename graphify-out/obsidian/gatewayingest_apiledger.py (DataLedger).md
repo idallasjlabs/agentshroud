@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "DataLedger"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/DataLedger
 ---
 
 # gateway/ingest_api/ledger.py (DataLedger)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_ssh_write_file_endpoint.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/DataLedger

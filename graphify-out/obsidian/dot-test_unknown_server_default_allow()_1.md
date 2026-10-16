@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_permissions.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Community 89"
-location: "L158"
+community: "MCPToolCall"
+location: "L1157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_89
+  - community/MCPToolCall
 ---
 
 # .test_unknown_server_default_allow()
 
 ## Connections
-- [[TestServerAccess]] - `method` [EXTRACTED]
+- [[MCPToolCall]] - `calls` [EXTRACTED]
+- [[TestAllowDenyList]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_89
+#graphify/code #graphify/EXTRACTED #community/MCPToolCall

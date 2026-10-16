@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/entrypoint-agentshroud.sh"
 type: "code"
-community: ".agents/skills/i-devsecops/SKILL.md"
+community: "entrypoint-agentshroud.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-devsecops/SKILLmd
+  - community/entrypoint-agentshroudsh
 ---
 
 # entrypoint-agentshroud.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[entrypoint-agentshroud.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-devsecops/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/entrypoint-agentshroudsh

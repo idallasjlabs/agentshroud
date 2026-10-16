@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/github-and-merge.md"
 type: "document"
-community: "graphify reference: GitHub clone and cross-repo "
+community: "graphify reference: GitHub clone and cross-repo merge"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_GitHub_clone_and_cross-repo_
+  - community/graphify_reference_GitHub_clone_and_cross-repo_merge
 ---
 
 # hermes/skills/graphify/references/github-and-merge.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference GitHub clone and cross-repo merge_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_GitHub_clone_and_cross-repo_
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_GitHub_clone_and_cross-repo_merge

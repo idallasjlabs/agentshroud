@@ -1,22 +1,22 @@
 ---
 source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
 type: "document"
-community: "sunday-scan.sh"
+community: "gitleaks.toml"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sunday-scansh
+  - community/gitleakstoml
 ---
 
 # gitleaks.toml
 
 ## Connections
-- [[Integration_1]] - `contains` [EXTRACTED]
-- [[Purpose_179]] - `contains` [EXTRACTED]
-- [[Related Notes_23]] - `contains` [EXTRACTED]
-- [[Usage_124]] - `contains` [EXTRACTED]
+- [[Integration]] - `contains` [EXTRACTED]
+- [[Purpose_3]] - `contains` [EXTRACTED]
+- [[Related Notes_3]] - `contains` [EXTRACTED]
+- [[Usage_1]] - `contains` [EXTRACTED]
 - [[What It Checks]] - `contains` [EXTRACTED]
 - [[gitleaks.toml]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sunday-scansh
+#graphify/document #graphify/EXTRACTED #community/gitleakstoml

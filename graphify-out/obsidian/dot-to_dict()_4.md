@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "Approval Routing & Event Bus"
-location: "L35"
+community: "lifespan.py"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/lifespanpy
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-get_recent()]] - `calls` [EXTRACTED]
-- [[Any_22]] - `references` [EXTRACTED]
-- [[GatewayEvent]] - `method` [EXTRACTED]
+- [[dot-_save_integrity_database()]] - `calls` [EXTRACTED]
+- [[Any_27]] - `references` [EXTRACTED]
+- [[Convert to dictionary for JSON serialization.]] - `rationale_for` [EXTRACTED]
+- [[FileIntegrityRecord]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

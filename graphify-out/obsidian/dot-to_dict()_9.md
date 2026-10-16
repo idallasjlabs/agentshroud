@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/agent_isolation.py"
+source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "Agent Isolation & Group Config Tests"
-location: "L74"
+community: "Path"
+location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Agent_Isolation__Group_Config_Tests
+  - community/Path
 ---
 
 # .to_dict()
 
 ## Connections
-- [[AgentRegistry]] - `method` [EXTRACTED]
-- [[Serialize registry to dict.]] - `rationale_for` [EXTRACTED]
+- [[dot-to_json()]] - `calls` [EXTRACTED]
+- [[SkillsManifest]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Agent_Isolation__Group_Config_Tests
+#graphify/code #graphify/EXTRACTED #community/Path

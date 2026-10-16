@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "Community 947"
+community: "test_multi_host_test.py"
 location: "L358"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_947
+  - community/test_multi_host_testpy
 ---
 
 # .test_wrapper_all_pass()
@@ -16,4 +16,4 @@ tags:
 - [[_run_wrapper()]] - `calls` [EXTRACTED]
 - [[_write_exec()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_947
+#graphify/code #graphify/EXTRACTED #community/test_multi_host_testpy

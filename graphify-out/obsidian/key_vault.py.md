@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "AsyncMock"
+community: "KeyVault"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/KeyVault
 ---
 
 # key_vault.py
@@ -25,4 +25,4 @@ tags:
 - [[env_guard.py]] - `semantically_similar_to` [INFERRED]
 - [[log_sanitizer.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/KeyVault

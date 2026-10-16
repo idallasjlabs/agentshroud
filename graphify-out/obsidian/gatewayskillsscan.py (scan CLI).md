@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/skills/scan.py"
 type: "code"
-community: "v1.0.0 \"Fortress\" — Ship-Ready Public Release (1"
+community: "sync-llm-settings.sh"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/v100_Fortress__Ship-Ready_Public_Release_1
+  - community/sync-llm-settingssh
 ---
 
 # gateway/skills/scan.py (scan CLI)
@@ -14,4 +14,4 @@ tags:
 - [[sync-llm-settings.sh]] - `calls` [EXTRACTED]
 - [[test_skill_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/v100_Fortress__Ship-Ready_Public_Release_1
+#graphify/code #graphify/EXTRACTED #community/sync-llm-settingssh

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Community 948"
+community: "Role"
 location: "L325"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_948
+  - community/Role
 ---
 
 # .test_viewer_denied_terminal_tool()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCVE2026_9367TerminalToolDenied]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_948
+#graphify/code #graphify/EXTRACTED #community/Role

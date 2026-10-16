@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_subagent_governance.py"
+source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "Community 1368"
-location: "L211"
+community: "A2AGovernanceProxy"
+location: "L254"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1368
+  - community/A2AGovernanceProxy
 ---
 
 # .test_summary()
 
 ## Connections
-- [[TestLifecycle]] - `method` [EXTRACTED]
+- [[TestReporting]] - `method` [EXTRACTED]
+- [[_msg()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1368
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

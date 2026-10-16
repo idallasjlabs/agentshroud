@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Prompt Guard & Context Integrity"
+community: "._get_hmac_key"
 location: "L625"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Prompt_Guard__Context_Integrity
+  - community/_get_hmac_key
 ---
 
 # .verify_system_prompt()
@@ -17,4 +17,4 @@ tags:
 - [[Return True if prompt_text matches the stored HMAC fingerprint.]] - `rationale_for` [EXTRACTED]
 - [[SystemPromptFingerprint]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Prompt_Guard__Context_Integrity
+#graphify/code #graphify/EXTRACTED #community/_get_hmac_key

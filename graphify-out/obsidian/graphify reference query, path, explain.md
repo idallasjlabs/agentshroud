@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/graphify/references/query.md"
+source_file: "docker/config/hermes/skills/graphify/references/query.md"
 type: "document"
-community: "Apple Services Setup Guide"
+community: "graphify reference: extra exports and benchmark"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Services_Setup_Guide
+  - community/graphify_reference_extra_exports_and_benchmark
 ---
 
 # graphify reference: query, path, explain
@@ -16,6 +16,6 @@ tags:
 - [[For graphify path]] - `contains` [EXTRACTED]
 - [[Step 0 — Constrained query expansion (REQUIRED before traversal)]] - `contains` [EXTRACTED]
 - [[Step 1 — Traversal]] - `contains` [EXTRACTED]
-- [[query]] - `contains` [EXTRACTED]
+- [[hermesskillsgraphifyreferencesquery]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark

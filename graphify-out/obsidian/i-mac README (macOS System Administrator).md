@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mac/README.md"
 type: "document"
-community: "AgentShroud v0.9.0"
+community: "Mac App Discovery Skill"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v090
+  - community/Mac_App_Discovery_Skill
 ---
 
 # i-mac README (macOS System Administrator)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Mac App Discovery Skill_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v090
+#graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill

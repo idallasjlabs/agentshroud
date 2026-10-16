@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "SSHProxy"
+community: "Request"
 location: "L4846"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/Request
 ---
 
 # hermes_dashboard_root()
 
 ## Connections
 - [[Redirect bare hermes-dashboard to hermes-dashboard so assets resolve.]] - `rationale_for` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
+- [[api_route]] - `references` [EXTRACTED]
+- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/Request

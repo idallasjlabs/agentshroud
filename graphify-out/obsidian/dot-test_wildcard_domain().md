@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Community 182"
+community: "EgressFilter"
 location: "L422"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_182
+  - community/EgressFilter
 ---
 
 # .test_wildcard_domain()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEgressFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_182
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

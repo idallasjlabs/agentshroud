@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "_make_stream_app_state()"
+community: "group_config.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_stream_app_state
+  - community/group_configpy
 ---
 
 # group_config.py
@@ -20,7 +20,7 @@ tags:
 - [[_load_overrides()]] - `contains` [EXTRACTED]
 - [[_save_overrides()]] - `contains` [EXTRACTED]
 - [[collaborator_responses.py]] - `imports_from` [EXTRACTED]
-- [[config.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
 - [[persist_group_collab_mode()]] - `contains` [EXTRACTED]
 - [[persist_group_create()]] - `contains` [EXTRACTED]
 - [[persist_group_delete()]] - `contains` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[persist_user_collab_mode()]] - `contains` [EXTRACTED]
 - [[rbac_config.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_stream_app_state
+#graphify/code #graphify/EXTRACTED #community/group_configpy

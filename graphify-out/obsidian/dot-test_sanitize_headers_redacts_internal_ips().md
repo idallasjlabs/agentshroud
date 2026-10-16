@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_metadata_guard.py"
 type: "code"
-community: "Community 354"
+community: "TestMetadataGuard"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_354
+  - community/TestMetadataGuard
 ---
 
 # .test_sanitize_headers_redacts_internal_ips()
 
 ## Connections
 - [[Test that internal IPs are redacted from headers.]] - `rationale_for` [EXTRACTED]
-- [[TestMetadataGuard]] - `method` [EXTRACTED]
+- [[TestMetadataGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_354
+#graphify/code #graphify/EXTRACTED #community/TestMetadataGuard

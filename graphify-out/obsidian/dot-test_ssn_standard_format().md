@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "P3 Infrastructure Security Modules"
+community: "AlertDispatcher"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/P3_Infrastructure_Security_Modules
+  - community/AlertDispatcher
 ---
 
 # .test_ssn_standard_format()
 
 ## Connections
 - [[SSN in standard XXX-XX-XXXX format.]] - `rationale_for` [EXTRACTED]
-- [[TestPIIDetection_1]] - `method` [EXTRACTED]
+- [[TestPIIDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/a2a_governance.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Community 39"
-location: "L94"
+community: "EgressApprovalQueue"
+location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_39
+  - community/EgressApprovalQueue
 ---
 
 # .to_dict()
 
 ## Connections
-- [[A2APeer]] - `method` [EXTRACTED]
+- [[dot-_rule_to_dict()]] - `calls` [EXTRACTED]
+- [[dot-_save_rules()]] - `calls` [EXTRACTED]
+- [[EgressScope]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_39
+#graphify/code #graphify/EXTRACTED #community/EgressApprovalQueue

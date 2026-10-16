@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "chatbot/main.py"
+community: "FR3: System Integrity"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/FR3_System_Integrity
 ---
 
 # heuristic_classifier.py
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[ClassificationResult]] - `contains` [EXTRACTED]
 - [[FR3 System Integrity]] - `references` [EXTRACTED]
-- [[HeuristicClassifier]] - `contains` [EXTRACTED]
+- [[HeuristicClassifier_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity

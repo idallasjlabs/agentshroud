@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 249"
+community: "TestBuildCollaboratorSafeInfoResponse"
 location: "L4305"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_249
+  - community/TestBuildCollaboratorSafeInfoResponse
 ---
 
 # .test_security_approach()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_resp()]] - `calls` [EXTRACTED]
 - [[TestBuildCollaboratorSafeInfoResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_249
+#graphify/code #graphify/EXTRACTED #community/TestBuildCollaboratorSafeInfoResponse

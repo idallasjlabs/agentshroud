@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/security/feed_hosts.py"
 type: "code"
-community: "script.md (podcast pipeline dialogue artifact)"
+community: "feed_hosts.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scriptmd_podcast_pipeline_dialogue_artifact
+  - community/feed_hostspy
 ---
 
 # feed_hosts.py
 
-#graphify/code #graphify/EXTRACTED #community/scriptmd_podcast_pipeline_dialogue_artifact
+#graphify/code #graphify/EXTRACTED #community/feed_hostspy

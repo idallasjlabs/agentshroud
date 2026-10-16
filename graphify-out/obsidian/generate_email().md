@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "env_guard.py"
+community: "generate_branding_assets.py"
 location: "L287"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/env_guardpy
+  - community/generate_branding_assetspy
 ---
 
 # generate_email()
@@ -15,7 +15,7 @@ tags:
 - [[ensure()]] - `calls` [EXTRACTED]
 - [[generate_branding_assets.py]] - `contains` [EXTRACTED]
 - [[get_font()]] - `calls` [EXTRACTED]
-- [[main()_23]] - `calls` [EXTRACTED]
+- [[main()_20]] - `calls` [EXTRACTED]
 - [[save()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/env_guardpy
+#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "Signed Instruction Envelopes & Security Pipeline"
+community: "OutboundInfoFilter"
 location: "L712"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Signed_Instruction_Envelopes__Security_Pipeline
+  - community/OutboundInfoFilter
 ---
 
 # .test_standard_trust_tool_result_injection_is_blocked()
@@ -15,7 +15,7 @@ tags:
 - [[dot-_blocking_prompt_guard()]] - `calls` [EXTRACTED]
 - [[dot-_passthrough_pii()]] - `calls` [EXTRACTED]
 - [[STANDARD-trust source also blocked — only FULL bypasses the block.]] - `rationale_for` [EXTRACTED]
-- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
+- [[SecurityPipeline_2]] - `calls` [EXTRACTED]
 - [[TestPromptGuardToolResultTrustGate]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Signed_Instruction_Envelopes__Security_Pipeline
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multilingual_injection.py"
 type: "code"
-community: "Community 208"
+community: "TestMultilingualInjection"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_208
+  - community/TestMultilingualInjection
 ---
 
 # .test_tier1_portuguese_injection()
@@ -15,4 +15,4 @@ tags:
 - [[Test Portuguese injection detection.]] - `rationale_for` [EXTRACTED]
 - [[TestMultilingualInjection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_208
+#graphify/code #graphify/EXTRACTED #community/TestMultilingualInjection

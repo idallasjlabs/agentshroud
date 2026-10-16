@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "Community 390"
+community: "UserSessionManager"
 location: "L149"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_390
+  - community/UserSessionManager
 ---
 
 # .test_update_trust_level()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustLevel]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_390
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

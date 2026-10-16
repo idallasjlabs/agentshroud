@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_intel_pipeline.py"
 type: "code"
-community: "Community 125"
+community: "CompetitiveIntelReport"
 location: "L310"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_125
+  - community/CompetitiveIntelReport
 ---
 
 # .test_verify_chain_passes_for_intact_store()
 
 ## Connections
 - [[dot-_make_report()]] - `calls` [EXTRACTED]
-- [[IntelReportStore]] - `references` [EXTRACTED]
+- [[IntelReportStore_1]] - `references` [EXTRACTED]
 - [[TestIntelReportStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_125
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

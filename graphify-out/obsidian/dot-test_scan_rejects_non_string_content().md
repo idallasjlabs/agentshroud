@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "Community 114"
+community: "SkillGuard"
 location: "L304"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_114
+  - community/SkillGuard
 ---
 
 # .test_scan_rejects_non_string_content()
@@ -15,4 +15,4 @@ tags:
 - [[SkillGuard]] - `references` [EXTRACTED]
 - [[TestAggregation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_114
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

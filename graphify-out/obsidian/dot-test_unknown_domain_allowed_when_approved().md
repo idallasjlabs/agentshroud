@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Community 81"
+community: "_make_filter"
 location: "L317"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_81
+  - community/_make_filter
 ---
 
 # .test_unknown_domain_allowed_when_approved()
@@ -16,4 +16,4 @@ tags:
 - [[TestInteractiveApproval]] - `method` [EXTRACTED]
 - [[_make_filter()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_81
+#graphify/code #graphify/EXTRACTED #community/_make_filter

@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/gog/SKILL.md"
 type: "concept"
-community: "Phase 3A/3B Implementation Verification Results"
+community: "ssh-configuration.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Phase_3A/3B_Implementation_Verification_Results
+  - community/ssh-configurationmd
 ---
 
 # gog CLI (Google Workspace)
 
 ## Connections
-- [[SKILL_210]] - `implements` [EXTRACTED]
+- [[gogSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Phase_3A/3B_Implementation_Verification_Results
+#graphify/concept #graphify/EXTRACTED #community/ssh-configurationmd

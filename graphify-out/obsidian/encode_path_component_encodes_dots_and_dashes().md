@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "main.rs"
 location: "L1243"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/mainrs
 ---
 
 # encode_path_component_encodes_dots_and_dashes()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/mainrs

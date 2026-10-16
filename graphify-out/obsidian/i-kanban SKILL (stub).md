@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-kanban/SKILL.md"
 type: "document"
-community: "dashboard/__init__.py"
+community: "i-kanban SKILL (stub)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dashboard/__init__py
+  - community/i-kanban_SKILL_stub
 ---
 
 # i-kanban SKILL (stub)
 
-#graphify/document #graphify/EXTRACTED #community/dashboard/__init__py
+#graphify/document #graphify/EXTRACTED #community/i-kanban_SKILL_stub

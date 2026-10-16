@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "SOC Service Manager (Container Engine)"
+community: "ServiceManager"
 location: "L625"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Service_Manager_Container_Engine
+  - community/ServiceManager
 ---
 
 # .test_update_pull_then_restart()
@@ -15,4 +15,4 @@ tags:
 - [[ServiceManager]] - `calls` [EXTRACTED]
 - [[TestLifecycleActions]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Service_Manager_Container_Engine
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

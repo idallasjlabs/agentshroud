@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "Community 96"
-location: "L75"
+community: "ResourceUsage"
+location: "L147"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_96
+  - community/ResourceUsage
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_81]] - `references` [EXTRACTED]
-- [[WebProxyResult]] - `method` [EXTRACTED]
+- [[dot-deregister()_1]] - `calls` [EXTRACTED]
+- [[dot-get_summary()_1]] - `calls` [EXTRACTED]
+- [[ResourceUsage_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_96
+#graphify/code #graphify/EXTRACTED #community/ResourceUsage

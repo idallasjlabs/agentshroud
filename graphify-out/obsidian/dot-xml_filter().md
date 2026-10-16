@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "code"
-community: "Blue/Red Team Security Auditor Skills"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Blue/Red_Team_Security_Auditor_Skills
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # .xml_filter()
@@ -15,4 +15,4 @@ tags:
 - [[TestCommandInjectionScan]] - `method` [EXTRACTED]
 - [[XMLLeakFilter]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

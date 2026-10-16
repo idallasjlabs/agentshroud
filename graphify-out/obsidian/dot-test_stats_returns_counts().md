@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "Community 138"
+community: "DNSBlocklist"
 location: "L177"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_138
+  - community/DNSBlocklist
 ---
 
 # .test_stats_returns_counts()
 
 ## Connections
 - [[DNSBlocklist]] - `calls` [EXTRACTED]
-- [[TestLifecycle_1]] - `method` [EXTRACTED]
+- [[TestLifecycle]] - `method` [EXTRACTED]
 - [[stats() returns the expected keys.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_138
+#graphify/code #graphify/EXTRACTED #community/DNSBlocklist

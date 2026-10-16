@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Community 1111"
+community: "MCPToolCall"
 location: "L244"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1111
+  - community/MCPToolCall
 ---
 
 # .test_sensitive_not_blocked_default()
@@ -15,4 +15,4 @@ tags:
 - [[Sensitive ops are flagged but not blocked in default mode.]] - `rationale_for` [EXTRACTED]
 - [[TestSensitiveOps]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1111
+#graphify/code #graphify/EXTRACTED #community/MCPToolCall

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/output_schema.py"
+source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "Community 248"
-location: "L89"
+community: "MockValidator"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_248
+  - community/MockValidator
 ---
 
 # .validate()
 
 ## Connections
-- [[OutputSchemaEnforcer]] - `method` [EXTRACTED]
-- [[SchemaValidationResult]] - `references` [EXTRACTED]
-- [[Validate output against the named schema.          Args             output The]] - `rationale_for` [EXTRACTED]
+- [[Mock validation that can be controlled.]] - `rationale_for` [EXTRACTED]
+- [[MockValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_248
+#graphify/code #graphify/EXTRACTED #community/MockValidator

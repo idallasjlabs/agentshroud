@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c"
 type: "code"
-community: "Development Workflow: Read-Only Filesystem Strat"
+community: "lvgl_kawaii_face.c"
 location: "L2043"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Development_Workflow_Read-Only_Filesystem_Strat
+  - community/lvgl_kawaii_facec
 ---
 
 # face_set_emotion()
@@ -25,4 +25,4 @@ tags:
 - [[ui_face_init()]] - `calls` [INFERRED]
 - [[update_emotion_parameters()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Development_Workflow_Read-Only_Filesystem_Strat
+#graphify/code #graphify/EXTRACTED #community/lvgl_kawaii_facec

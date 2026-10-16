@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "SOC Service Manager (Container Engine)"
+community: "_patch_open"
 location: "L298"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Service_Manager_Container_Engine
+  - community/_patch_open
 ---
 
 # .test_standby_when_no_pid_and_no_process()
@@ -15,4 +15,4 @@ tags:
 - [[TestCheckWazuhAgent]] - `method` [EXTRACTED]
 - [[_patch_open()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Service_Manager_Container_Engine
+#graphify/code #graphify/EXTRACTED #community/_patch_open

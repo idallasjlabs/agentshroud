@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "Community 880"
+community: "10. Troubleshooting"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_880
+  - community/10_Troubleshooting
 ---
 
 # hermes/skills/i-mcpm/SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_880
+#graphify/document #graphify/EXTRACTED #community/10_Troubleshooting

@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-scrum/SKILL.md"
 type: "document"
-community: "ConfigurationSetting (data entity)"
+community: "i-scrum SKILL"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ConfigurationSetting_data_entity
+  - community/i-scrum_SKILL
 ---
 
 # i-scrum SKILL
 
-#graphify/document #graphify/EXTRACTED #community/ConfigurationSetting_data_entity
+#graphify/document #graphify/EXTRACTED #community/i-scrum_SKILL

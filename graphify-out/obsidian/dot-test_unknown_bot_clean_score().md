@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 1174"
+community: "TestComputeBotScorecard"
 location: "L1252"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1174
+  - community/TestComputeBotScorecard
 ---
 
 # .test_unknown_bot_clean_score()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestComputeBotScorecard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1174
+#graphify/code #graphify/EXTRACTED #community/TestComputeBotScorecard

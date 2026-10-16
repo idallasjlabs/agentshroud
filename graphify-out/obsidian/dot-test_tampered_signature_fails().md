@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "code"
-community: "Signed Instruction Envelopes & Security Pipeline"
+community: "EnvelopeSigner"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Signed_Instruction_Envelopes__Security_Pipeline
+  - community/EnvelopeSigner
 ---
 
 # .test_tampered_signature_fails()
@@ -15,4 +15,4 @@ tags:
 - [[Modifying the signature directly should fail verification.]] - `rationale_for` [EXTRACTED]
 - [[TestEnvelopeSigner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Signed_Instruction_Envelopes__Security_Pipeline
+#graphify/code #graphify/EXTRACTED #community/EnvelopeSigner

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "Community 236"
+community: "_stub_client"
 location: "L402"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_236
+  - community/_stub_client
 ---
 
 # .test_simple_get_subcommands()
@@ -16,4 +16,4 @@ tags:
 - [[_invoke()]] - `calls` [EXTRACTED]
 - [[_stub_client()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_236
+#graphify/code #graphify/EXTRACTED #community/_stub_client

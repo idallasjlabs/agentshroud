@@ -12,6 +12,6 @@ tags:
 # hermes/agents/hermes-soul.md
 
 ## Connections
-- [[AgentShroud Hermes — System Identity_2]] - `contains` [EXTRACTED]
+- [[AgentShroud Hermes — System Identity]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Hermes__System_Identity

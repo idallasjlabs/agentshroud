@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 220"
+community: "parse_trivy_output"
 location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_220
+  - community/parse_trivy_output
 ---
 
 # .test_summary_top_cves_ids()
 
 ## Connections
-- [[TestTrivySummary]] - `method` [EXTRACTED]
-- [[generate_summary]] - `calls` [EXTRACTED]
-- [[parse_trivy_output]] - `calls` [EXTRACTED]
+- [[TestTrivySummary_1]] - `method` [EXTRACTED]
+- [[parse_trivy_output()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_220
+#graphify/code #graphify/EXTRACTED #community/parse_trivy_output

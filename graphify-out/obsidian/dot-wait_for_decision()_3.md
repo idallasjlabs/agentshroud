@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_policy.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "Community 35"
-location: "L290"
+community: "ApprovalQueueConfig"
+location: "L341"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/ApprovalQueueConfig
 ---
 
 # .wait_for_decision()
 
 ## Connections
-- [[_FakeApprovalQueue]] - `method` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
+- [[Wait for an approval decision.          Returns             True if approved, F]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_35
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

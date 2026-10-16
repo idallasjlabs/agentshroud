@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "Community 138"
+community: "DNSBlocklist"
 location: "L374"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_138
+  - community/DNSBlocklist
 ---
 
 # .test_wildcard_denylist_blocks_subdomains()
@@ -16,4 +16,4 @@ tags:
 - [[DNSBlocklist]] - `calls` [EXTRACTED]
 - [[TestBlocklistWildcardsAndAllowlist]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_138
+#graphify/code #graphify/EXTRACTED #community/DNSBlocklist

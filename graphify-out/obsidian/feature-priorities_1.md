@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/feature-priorities.md"
 type: "document"
-community: "TestAiModelSupplyChain"
+community: "feature-priorities.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestAiModelSupplyChain
+  - community/feature-prioritiesmd
 ---
 
 # feature-priorities
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[feature-priorities]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestAiModelSupplyChain
+#graphify/document #graphify/EXTRACTED #community/feature-prioritiesmd

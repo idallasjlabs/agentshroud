@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/web/templates/installer.html"
 type: "code"
-community: "ToolChainAnalyzer.score_reversibility (C37)"
+community: "goStep"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolChainAnalyzerscore_reversibility_C37
+  - community/goStep
 ---
 
 # goStep()
 
-#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzerscore_reversibility_C37
+#graphify/code #graphify/EXTRACTED #community/goStep

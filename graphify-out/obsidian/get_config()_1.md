@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[Get current configuration.]] - `rationale_for` [EXTRACTED]
-- [[Path_41]] - `calls` [EXTRACTED]
-- [[api.py]] - `contains` [EXTRACTED]
+- [[Path_43]] - `calls` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
 - [[export_config()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy

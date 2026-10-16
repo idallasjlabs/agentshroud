@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/hermes-openclaw-dev-workflow.md"
 type: "document"
-community: "🛡️ AgentShroud Release Plan"
+community: "Starting a Development Task via Hermes / OpenClaw"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_AgentShroud_Release_Plan
+  - community/Starting_a_Development_Task_via_Hermes_/_OpenClaw
 ---
 
 # hermes-openclaw-dev-workflow.md
@@ -16,4 +16,4 @@ tags:
 - [[Starting a Development Task via Hermes  OpenClaw]] - `contains` [EXTRACTED]
 - [[update-bot-agents.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan
+#graphify/document #graphify/EXTRACTED #community/Starting_a_Development_Task_via_Hermes_/_OpenClaw

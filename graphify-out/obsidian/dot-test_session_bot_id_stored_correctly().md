@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "Community 520"
+community: "UserSessionManager"
 location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_520
+  - community/UserSessionManager
 ---
 
 # .test_session_bot_id_stored_correctly()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMultiBotIsolation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_520
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

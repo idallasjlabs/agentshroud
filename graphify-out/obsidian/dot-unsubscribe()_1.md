@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Approval Routing & Event Bus"
-location: "L56"
+community: "SOCWebSocketHandler"
+location: "L612"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/SOCWebSocketHandler
 ---
 
 # .unsubscribe()
 
 ## Connections
-- [[EventBus]] - `method` [EXTRACTED]
-- [[Unsubscribe from events]] - `rationale_for` [EXTRACTED]
+- [[_FakeBus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

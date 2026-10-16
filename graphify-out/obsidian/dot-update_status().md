@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "Enhanced Approval Queue"
+community: "ApprovalQueueConfig"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/ApprovalQueueConfig
 ---
 
 # .update_status()
@@ -15,4 +15,4 @@ tags:
 - [[ApprovalStore]] - `method` [EXTRACTED]
 - [[Update the status of an existing item.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

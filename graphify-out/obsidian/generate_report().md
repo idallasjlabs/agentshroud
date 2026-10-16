@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "gateway.security.daily_cve_report"
+community: "test_security_toolchain.py"
 location: "L190"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gatewaysecuritydaily_cve_report
+  - community/test_security_toolchainpy
 ---
 
 # generate_report()
 
 ## Connections
-- [[.test_generate_report()_1]] - `calls` [EXTRACTED]
-- [[.test_history_persistence()]] - `calls` [EXTRACTED]
-- [[Any_42]] - `references` [EXTRACTED]
+- [[dot-test_generate_report()]] - `calls` [EXTRACTED]
+- [[dot-test_history_persistence()]] - `calls` [EXTRACTED]
+- [[Any_25]] - `references` [EXTRACTED]
 - [[Generate a full health report.      Args         summaries Dict mapping tool n]] - `rationale_for` [EXTRACTED]
-- [[Path_13]] - `references` [EXTRACTED]
+- [[Path_18]] - `references` [EXTRACTED]
 - [[calculate_overall_score()]] - `calls` [EXTRACTED]
 - [[calculate_tool_score()]] - `calls` [EXTRACTED]
 - [[get_trend()]] - `calls` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[score_to_grade()]] - `calls` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gatewaysecuritydaily_cve_report
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

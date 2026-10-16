@@ -1,19 +1,18 @@
 ---
-source_file: "chatbot/main.py"
+source_file: "gateway/ingest_api/routes/health.py"
 type: "code"
-community: "server.py"
-location: "L166"
+community: "create_auth_dependency"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/serverpy
+  - community/create_auth_dependency
 ---
 
 # health_check()
 
 ## Connections
-- [[Health check endpoint for Docker.      Reports degraded status when the OpenAI c]] - `rationale_for` [EXTRACTED]
-- [[TestHealthCheck]] - `calls` [EXTRACTED]
-- [[main.py]] - `contains` [EXTRACTED]
+- [[Minimal health check endpoint — no authentication required.      Returns only ba]] - `rationale_for` [EXTRACTED]
+- [[health.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/serverpy
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

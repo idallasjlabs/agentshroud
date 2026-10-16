@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/extraction-spec.md"
 type: "document"
-community: "agentshroud-gateway pyproject config"
+community: "hermes/skills/graphify/references/extraction-spec.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-gateway_pyproject_config
+  - community/hermes/skills/graphify/references/extraction-specmd
 ---
 
 # graphify reference: extraction subagent prompt
 
 ## Connections
-- [[extraction-spec_1]] - `contains` [EXTRACTED]
+- [[hermesskillsgraphifyreferencesextraction-spec]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway_pyproject_config
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/graphify/references/extraction-specmd

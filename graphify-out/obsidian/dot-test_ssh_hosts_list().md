@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "Gateway Config & PII Sanitizer"
+community: "DataLedger"
 location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/DataLedger
 ---
 
 # .test_ssh_hosts_list()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSSHHosts]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
+#graphify/code #graphify/EXTRACTED #community/DataLedger

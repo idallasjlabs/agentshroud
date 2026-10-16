@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "Community 45"
+community: "ModeRequest"
 location: "L647"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_45
+  - community/ModeRequest
 ---
 
 # .test_upgrade_openclaw_alias()
@@ -15,4 +15,4 @@ tags:
 - [[TestOpenclawAliases]] - `method` [EXTRACTED]
 - [[_engine()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_45
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

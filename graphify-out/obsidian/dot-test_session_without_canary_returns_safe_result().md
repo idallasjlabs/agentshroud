@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "code"
-community: "Community 213"
+community: "TestOutputCanary"
 location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_213
+  - community/TestOutputCanary
 ---
 
 # .test_session_without_canary_returns_safe_result()
@@ -15,4 +15,4 @@ tags:
 - [[Test that sessions without canaries return safe results.]] - `rationale_for` [EXTRACTED]
 - [[TestOutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_213
+#graphify/code #graphify/EXTRACTED #community/TestOutputCanary

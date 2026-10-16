@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/soc_correlation.py"
+source_file: "gateway/security/canary.py"
 type: "code"
-community: "Community 67"
-location: "L44"
+community: "AgentRegistry"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_67
+  - community/AgentRegistry
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_70]] - `references` [EXTRACTED]
-- [[CorrelationSummary]] - `method` [EXTRACTED]
+- [[Any_77]] - `references` [EXTRACTED]
+- [[CanaryResult_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_67
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

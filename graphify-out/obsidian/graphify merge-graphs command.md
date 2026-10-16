@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/github-and-merge.md"
 type: "concept"
-community: ".test_startup_telegram_calls_use_system_header()"
+community: "graphify clone command"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_startup_telegram_calls_use_system_header
+  - community/graphify_clone_command
 ---
 
 # graphify merge-graphs command
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[graphify clone command]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_startup_telegram_calls_use_system_header
+#graphify/concept #graphify/EXTRACTED #community/graphify_clone_command

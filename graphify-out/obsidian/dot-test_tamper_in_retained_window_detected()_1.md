@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Community 218"
+community: "MCPAuditTrail"
 location: "L371"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_218
+  - community/MCPAuditTrail
 ---
 
 # .test_tamper_in_retained_window_detected()
 
 ## Connections
-- [[MCPAuditTrail_1]] - `calls` [EXTRACTED]
+- [[MCPAuditTrail]] - `calls` [EXTRACTED]
 - [[TestAuditTrailBounded]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_218
+#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail

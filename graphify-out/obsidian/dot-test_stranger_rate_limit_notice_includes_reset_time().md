@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Community 915"
+community: "TestStrangerRateLimit"
 location: "L7802"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_915
+  - community/TestStrangerRateLimit
 ---
 
 # .test_stranger_rate_limit_notice_includes_reset_time()
@@ -19,4 +19,4 @@ tags:
 - [[TestStrangerRateLimit]] - `method` [EXTRACTED]
 - [[_send_stranger_rate_limit_notice must include a reset time in HHMM UTC format.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_915
+#graphify/code #graphify/EXTRACTED #community/TestStrangerRateLimit

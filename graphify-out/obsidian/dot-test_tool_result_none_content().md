@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Community 1037"
+community: "TestInspectorEdgeCases"
 location: "L1141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1037
+  - community/TestInspectorEdgeCases
 ---
 
 # .test_tool_result_none_content()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestInspectorEdgeCases]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1037
+#graphify/code #graphify/EXTRACTED #community/TestInspectorEdgeCases

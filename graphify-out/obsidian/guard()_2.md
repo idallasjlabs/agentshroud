@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_env_guard_class.py"
+source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "test_observatory_mode.py"
-location: "L23"
+community: "ThreatAssessment"
+location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_observatory_modepy
+  - community/ThreatAssessment
 ---
 
 # guard()
 
 ## Connections
-- [[EnvironmentGuard]] - `calls` [EXTRACTED]
-- [[test_env_guard_class.py]] - `contains` [EXTRACTED]
+- [[BrowserSecurityGuard]] - `calls` [EXTRACTED]
+- [[test_browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_observatory_modepy
+#graphify/code #graphify/EXTRACTED #community/ThreatAssessment

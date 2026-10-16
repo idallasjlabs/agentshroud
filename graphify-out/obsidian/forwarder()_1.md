@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L103"
+community: "test_a2a_proxy.py"
+location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/test_a2a_proxypy
 ---
 
 # forwarder()
 
 ## Connections
-- [[ForwarderConfig]] - `calls` [EXTRACTED]
-- [[HTTPForwarder]] - `calls` [EXTRACTED]
-- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
+- [[_StubForwarder_2]] - `references` [EXTRACTED]
+- [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

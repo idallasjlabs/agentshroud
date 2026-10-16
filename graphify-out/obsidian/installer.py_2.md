@@ -1,22 +1,24 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
-type: "document"
-community: "Bot Container (agent decides: reply + tool call)"
-location: "L10"
+source_file: "gateway/web/installer.py"
+type: "code"
+community: "installer.py"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Container_agent_decides_reply__tool_call
+  - community/installerpy
 ---
 
 # installer.py
 
 ## Connections
-- [[Endpoints (Inferred)]] - `contains` [EXTRACTED]
-- [[Key Features]] - `contains` [EXTRACTED]
-- [[Purpose_174]] - `contains` [EXTRACTED]
-- [[Related Notes_14]] - `contains` [EXTRACTED]
-- [[When Used]] - `contains` [EXTRACTED]
-- [[installer.py_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Web Installer — Step-by-step installation wizard.]] - `rationale_for` [EXTRACTED]
+- [[InstallConfig]] - `contains` [EXTRACTED]
+- [[PrerequisiteCheck]] - `contains` [EXTRACTED]
+- [[api.py_2]] - `references` [EXTRACTED]
+- [[check_prerequisites()]] - `contains` [EXTRACTED]
+- [[get_runtimes()]] - `contains` [EXTRACTED]
+- [[installer_page()]] - `contains` [EXTRACTED]
+- [[start_install()]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Container_agent_decides_reply__tool_call
+#graphify/code #graphify/EXTRACTED #community/installerpy

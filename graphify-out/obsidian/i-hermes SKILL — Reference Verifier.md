@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
 type: "document"
-community: ".test_hermes_dockerfile_installs_xxd()"
+community: "i-hermes README — Podcast Production Orchestrator"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_hermes_dockerfile_installs_xxd
+  - community/i-hermes_README__Podcast_Production_Orchestrator
 ---
 
 # i-hermes SKILL — Reference Verifier
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-hermes README — Podcast Production Orchestrator]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_hermes_dockerfile_installs_xxd
+#graphify/document #graphify/EXTRACTED #community/i-hermes_README__Podcast_Production_Orchestrator

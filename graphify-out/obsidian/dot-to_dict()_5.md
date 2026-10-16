@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/drift_detector.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "Encrypted Store & Drift Detector"
+community: "make_event"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Encrypted_Store__Drift_Detector
+  - community/make_event
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-config_hash()]] - `calls` [EXTRACTED]
-- [[dot-set_baseline()]] - `calls` [EXTRACTED]
-- [[ContainerSnapshot]] - `method` [EXTRACTED]
+- [[dot-get_recent()]] - `calls` [EXTRACTED]
+- [[Any_29]] - `references` [EXTRACTED]
+- [[GatewayEvent]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Encrypted_Store__Drift_Detector
+#graphify/code #graphify/EXTRACTED #community/make_event

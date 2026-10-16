@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-icloud/SKILL.md"
 type: "document"
-community: "8D Root Cause Analysis SKILL (OpenClaw)"
+community: "iCloud Services Skill"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/8D_Root_Cause_Analysis_SKILL_OpenClaw
+  - community/iCloud_Services_Skill
 ---
 
 # iCloud Services Skill
@@ -14,4 +14,4 @@ tags:
 - [[1Password item Apple ID - therealidallasj_1]] - `shares_data_with` [EXTRACTED]
 - [[iCloud Data Manager README]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis_SKILL_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services_Skill

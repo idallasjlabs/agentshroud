@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_consent_framework.py"
 type: "code"
-community: "Community 204"
+community: "ServerConfig"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_204
+  - community/ServerConfig
 ---
 
 # .test_shell_injection_wget_detected()
@@ -15,4 +15,4 @@ tags:
 - [[ServerConfig]] - `calls` [EXTRACTED]
 - [[TestServerConfigValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_204
+#graphify/code #graphify/EXTRACTED #community/ServerConfig

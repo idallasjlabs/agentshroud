@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/security/killswitch_config.py"
 type: "code"
-community: "Community 383"
-location: "L62"
+community: "KillSwitchMonitor"
+location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_383
+  - community/KillSwitchMonitor
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-_save_sessions()]] - `calls` [EXTRACTED]
-- [[Any_51]] - `references` [EXTRACTED]
-- [[Convert session to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
-- [[UserSession]] - `method` [EXTRACTED]
+- [[Any_39]] - `references` [EXTRACTED]
+- [[Convert configuration to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
+- [[KillSwitchConfig_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_383
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

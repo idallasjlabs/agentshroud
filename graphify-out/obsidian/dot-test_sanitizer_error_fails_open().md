@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Slack Proxy & Main Endpoint Tests"
+community: "AsyncMock"
 location: "L974"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_Proxy__Main_Endpoint_Tests
+  - community/AsyncMock
 ---
 
 # .test_sanitizer_error_fails_open()
@@ -15,4 +15,4 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestProcessToolResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_Proxy__Main_Endpoint_Tests
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

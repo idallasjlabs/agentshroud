@@ -1,28 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
-type: "document"
-community: "AgentShroud Red Team Adversarial Tester"
-location: "L10"
+source_file: "gateway/security/encrypted_store.py"
+type: "code"
+community: "AgentRegistry"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester
+  - community/AgentRegistry
 ---
 
 # encrypted_store.py
 
 ## Connections
-- [[Blob Wire Format]] - `contains` [EXTRACTED]
-- [[Configuration_14]] - `contains` [EXTRACTED]
-- [[Environment Variables_12]] - `contains` [EXTRACTED]
-- [[Function Details_37]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_40]] - `contains` [EXTRACTED]
-- [[Key Rotation Workflow]] - `contains` [EXTRACTED]
-- [[Mode Enforce vs Monitor_7]] - `contains` [EXTRACTED]
-- [[Purpose_158]] - `contains` [EXTRACTED]
-- [[Related_44]] - `contains` [EXTRACTED]
-- [[Responsibilities_42]] - `contains` [EXTRACTED]
-- [[Threat Model_13]] - `contains` [EXTRACTED]
-- [[encrypted_store.py_1]] - `contains` [EXTRACTED]
+- [[Encrypted Store Module Badge Icon]] - `conceptually_related_to` [INFERRED]
+- [[EncryptedStore]] - `contains` [EXTRACTED]
+- [[FR4 Data Confidentiality]] - `references` [EXTRACTED]
+- [[_secure_zero()]] - `contains` [EXTRACTED]
+- [[canary.py]] - `references` [EXTRACTED]
+- [[env_guard.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

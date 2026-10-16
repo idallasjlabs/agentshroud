@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-qa/README.md"
 type: "document"
-community: "Community 1244"
+community: "Production Safety Checklist (SKILL)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1244
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # hermes/skills/i-qa/README.md
 
 ## Connections
-- [[Quality Assurance (QA)]] - `contains` [EXTRACTED]
+- [[Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1244
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

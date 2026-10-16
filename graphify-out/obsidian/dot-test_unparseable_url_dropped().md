@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "Community 70"
+community: "api.py"
 location: "L168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_70
+  - community/apipy
 ---
 
 # .test_unparseable_url_dropped()
@@ -16,4 +16,4 @@ tags:
 - [[DraftEntry]] - `calls` [EXTRACTED]
 - [[TestVerifyEntry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_70
+#graphify/code #graphify/EXTRACTED #community/apipy

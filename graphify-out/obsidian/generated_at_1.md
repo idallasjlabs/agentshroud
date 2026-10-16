@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/manifest.json"
 type: "code"
-community: "Key Skills in Detail"
+community: "hermes/manifest.json"
 location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Key_Skills_in_Detail
+  - community/hermes/manifestjson
 ---
 
 # generated_at
 
 ## Connections
-- [[manifest.json_2]] - `contains` [EXTRACTED]
+- [[openclawmanifest.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Key_Skills_in_Detail
+#graphify/code #graphify/EXTRACTED #community/hermes/manifestjson

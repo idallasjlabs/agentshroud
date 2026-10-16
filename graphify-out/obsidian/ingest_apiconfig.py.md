@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "SSHProxy"
+community: "load_config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/load_config
 ---
 
 # ingest_api/config.py
@@ -15,24 +15,24 @@ tags:
 - [[NOTE This branch ships hot-reload of the config FILE only. The web config]] - `rationale_for` [EXTRACTED]
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `contains` [EXTRACTED]
-- [[AuditExportConfig_1]] - `contains` [EXTRACTED]
+- [[AuditExportConfig]] - `contains` [EXTRACTED]
 - [[BotConfig]] - `imports` [EXTRACTED]
 - [[ChannelsConfig]] - `contains` [EXTRACTED]
-- [[GatewayConfig_4]] - `contains` [EXTRACTED]
-- [[LedgerConfig]] - `contains` [EXTRACTED]
+- [[GatewayConfig_3]] - `contains` [EXTRACTED]
+- [[LedgerConfig_1]] - `contains` [EXTRACTED]
 - [[PIIConfig_2]] - `contains` [EXTRACTED]
-- [[RouterConfig]] - `contains` [EXTRACTED]
+- [[RouterConfig_1]] - `contains` [EXTRACTED]
 - [[SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST]] - `references` [EXTRACTED]
 - [[SSHConfig_2]] - `imports` [EXTRACTED]
 - [[SecurityConfig_4]] - `contains` [EXTRACTED]
 - [[SecurityModuleConfig]] - `contains` [EXTRACTED]
-- [[TeamsConfig_2]] - `imports` [EXTRACTED]
+- [[TeamsConfig]] - `imports` [EXTRACTED]
 - [[ToolRiskConfig]] - `contains` [EXTRACTED]
 - [[ToolRiskPolicy]] - `contains` [EXTRACTED]
 - [[_default_mtime()]] - `contains` [EXTRACTED]
 - [[_entity_type_mapping()]] - `contains` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
-- [[api.py]] - `imports_from` [EXTRACTED]
+- [[api.py_2]] - `imports_from` [EXTRACTED]
 - [[apply_reloadable_config()]] - `contains` [EXTRACTED]
 - [[bot_config.py]] - `imports_from` [EXTRACTED]
 - [[check_monitor_mode_warnings()]] - `contains` [EXTRACTED]
@@ -42,19 +42,18 @@ tags:
 - [[group_config.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apiauth.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apirouter.py]] - `imports_from` [EXTRACTED]
-- [[ledger.py]] - `imports_from` [EXTRACTED]
+- [[ledger.py_1]] - `imports_from` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 - [[load_config()]] - `contains` [EXTRACTED]
 - [[queue.py]] - `imports_from` [EXTRACTED]
 - [[reload_config()]] - `contains` [EXTRACTED]
 - [[resolve_config_path()]] - `contains` [EXTRACTED]
-- [[sanitizer.py]] - `imports_from` [EXTRACTED]
-- [[ssh_config.py_2]] - `imports_from` [EXTRACTED]
+- [[sanitizer.py_2]] - `imports_from` [EXTRACTED]
+- [[ssh_config.py]] - `imports_from` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
-- [[test_config_validation.py]] - `references` [EXTRACTED]
 - [[test_mcp_policy_default_failclosed.py]] - `references` [EXTRACTED]
 - [[test_mcp_result_endpoint.py]] - `references` [EXTRACTED]
 - [[test_router_openai_translation.py]] - `references` [EXTRACTED]
 - [[verify.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/load_config

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "test_security_audit.py"
+community: "RBACConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_auditpy
+  - community/RBACConfig
 ---
 
 # group_workspace.py
@@ -19,4 +19,4 @@ tags:
 - [[TeamsConfig]] - `imports` [EXTRACTED]
 - [[WorkspaceContext]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_auditpy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

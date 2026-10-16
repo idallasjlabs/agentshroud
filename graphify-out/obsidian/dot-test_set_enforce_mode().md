@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Community 813"
+community: "test_observatory_mode.py"
 location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_813
+  - community/test_observatory_modepy
 ---
 
 # .test_set_enforce_mode()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSetMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_813
+#graphify/code #graphify/EXTRACTED #community/test_observatory_modepy

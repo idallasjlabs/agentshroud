@@ -12,7 +12,7 @@ tags:
 # icloud/scripts/calendar.js
 
 ## Connections
-- [[CONFIG_3]] - `contains` [EXTRACTED]
+- [[CONFIG_5]] - `contains` [EXTRACTED]
 - [[args_3]] - `contains` [EXTRACTED]
 - [[createEvent()_3]] - `contains` [EXTRACTED]
 - [[getCredentials()_3]] - `contains` [EXTRACTED]

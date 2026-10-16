@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Community 366"
+community: "MCPToolResult"
 location: "L147"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_366
+  - community/MCPToolResult
 ---
 
 # .test_tool_call_generates_id_and_timestamp()
 
 ## Connections
-- [[MCPToolCall]] - `calls` [EXTRACTED]
+- [[MCPToolCall_1]] - `calls` [EXTRACTED]
 - [[TestDataclasses]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_366
+#graphify/code #graphify/EXTRACTED #community/MCPToolResult

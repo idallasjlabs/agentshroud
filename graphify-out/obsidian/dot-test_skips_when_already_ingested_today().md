@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Community 156"
+community: "test_daily_cve_report.py"
 location: "L1390"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_156
+  - community/test_daily_cve_reportpy
 ---
 
 # .test_skips_when_already_ingested_today()
@@ -14,9 +14,5 @@ tags:
 ## Connections
 - [[If already ingested today, the loop bumps to tomorrow and never ingests.]] - `rationale_for` [EXTRACTED]
 - [[TestGhsaIngestScheduler]] - `method` [EXTRACTED]
-- [[_fake_ingest()_3]] - `contains` [EXTRACTED]
-- [[_fake_ingest()_1]] - `indirect_call` [INFERRED]
-- [[_sleep_then_cancel()]] - `indirect_call` [INFERRED]
-- [[asyncio_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_156
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

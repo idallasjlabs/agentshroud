@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-tw/README.md"
 type: "document"
-community: "TestReplayBufferOffsetParsing"
+community: "i-ti SKILL.md (Technical Illustrator, Mermaid diagrams)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestReplayBufferOffsetParsing
+  - community/i-ti_SKILLmd_Technical_Illustrator_Mermaid_diagrams
 ---
 
 # i-tw README.md
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-tw SKILL.md (Technical Writer)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestReplayBufferOffsetParsing
+#graphify/document #graphify/EXTRACTED #community/i-ti_SKILLmd_Technical_Illustrator_Mermaid_diagrams

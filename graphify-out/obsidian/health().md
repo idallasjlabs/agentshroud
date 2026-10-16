@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "test_a2a_policy.py"
+community: "tailscale-serve.sh"
 location: "L370"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/tailscale-servesh
 ---
 
 # health()
@@ -15,4 +15,4 @@ tags:
 - [[cmd_start()]] - `references` [EXTRACTED]
 - [[server.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/code #graphify/EXTRACTED #community/tailscale-servesh

@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "lifespan.py"
+community: "AlertDispatcher"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/AlertDispatcher
 ---
 
 # gateway/security/network_validator.py (NetworkValidator)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_security_audit.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

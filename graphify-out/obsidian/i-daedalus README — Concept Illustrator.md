@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-daedalus/README.md"
 type: "document"
-community: "TrustManager._update_score"
+community: "i-daedalus README — Concept Illustrator"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TrustManager_update_score
+  - community/i-daedalus_README__Concept_Illustrator
 ---
 
 # i-daedalus README — Concept Illustrator
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-daedalus SKILL — Concept Illustrator]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TrustManager_update_score
+#graphify/document #graphify/EXTRACTED #community/i-daedalus_README__Concept_Illustrator

@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/github/SKILL.md"
 type: "concept"
-community: "TestCrossBotTrustPivot"
+community: "gh-issues/SKILL.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/TestCrossBotTrustPivot
+  - community/gh-issues/SKILLmd
 ---
 
 # gh CLI (GitHub)
 
 ## Connections
-- [[SKILL_209]] - `implements` [EXTRACTED]
+- [[githubSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/TestCrossBotTrustPivot
+#graphify/concept #graphify/EXTRACTED #community/gh-issues/SKILLmd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_report_store.py"
 type: "code"
-community: "Community 87"
+community: "ReportStore"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_87
+  - community/ReportStore
 ---
 
 # .test_tags_preserved()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSaveAndGet]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_87
+#graphify/code #graphify/EXTRACTED #community/ReportStore

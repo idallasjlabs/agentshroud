@@ -1,18 +1,18 @@
 ---
 source_file: "docker/bots/hermes/heartbeat.sh"
 type: "code"
-community: ".test_blocked_command_with_zero_width_mention_an"
+community: "heartbeat.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_blocked_command_with_zero_width_mention_an
+  - community/heartbeatsh
 ---
 
 # heartbeat.sh
 
 ## Connections
-- [[_log()_1]] - `defines` [EXTRACTED]
+- [[_log()]] - `defines` [EXTRACTED]
 - [[heartbeat.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_blocked_command_with_zero_width_mention_an
+#graphify/code #graphify/EXTRACTED #community/heartbeatsh

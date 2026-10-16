@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/graphify/references/exports.md"
+source_file: "docker/config/hermes/skills/graphify/references/exports.md"
 type: "document"
-community: "Apple Services Setup Guide"
+community: "graphify reference: extra exports and benchmark"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Services_Setup_Guide
+  - community/graphify_reference_extra_exports_and_benchmark
 ---
 
 # graphify reference: extra exports and benchmark
@@ -18,7 +18,7 @@ tags:
 - [[Step 7c - GraphML export (only if --graphml flag)]] - `contains` [EXTRACTED]
 - [[Step 7d - MCP server (only if --mcp flag)]] - `contains` [EXTRACTED]
 - [[Step 8 - Token reduction benchmark (only if total_words  5000)]] - `contains` [EXTRACTED]
-- [[exports]] - `contains` [EXTRACTED]
-- [[query]] - `contains` [EXTRACTED]
+- [[hermesskillsgraphifyreferencesexports]] - `contains` [EXTRACTED]
+- [[hermesskillsgraphifyreferencesquery]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark

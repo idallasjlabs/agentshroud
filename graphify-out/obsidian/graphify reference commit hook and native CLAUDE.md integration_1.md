@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/graphify/references/hooks.md"
+source_file: "docker/config/openclaw/skills/graphify/references/hooks.md"
 type: "document"
-community: "Any"
+community: "graphify reference: extra exports and benchmark"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Any
+  - community/graphify_reference_extra_exports_and_benchmark
 ---
 
 # graphify reference: commit hook and native CLAUDE.md integration
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[For git commit hook_1]] - `contains` [EXTRACTED]
 - [[For native CLAUDE.md integration_1]] - `contains` [EXTRACTED]
-- [[hooks_1]] - `contains` [EXTRACTED]
-- [[query_1]] - `contains` [EXTRACTED]
+- [[openclawskillsgraphifyreferenceshooks]] - `contains` [EXTRACTED]
+- [[openclawskillsgraphifyreferencesquery]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Any
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark

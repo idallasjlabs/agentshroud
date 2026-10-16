@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "code"
-community: "Community 1671"
+community: "TestMultiTurnTracker"
 location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1671
+  - community/TestMultiTurnTracker
 ---
 
 # .test_tool_name_detection()
@@ -15,4 +15,4 @@ tags:
 - [[Test detection of tool inventory queries.]] - `rationale_for` [EXTRACTED]
 - [[TestMultiTurnTracker]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1671
+#graphify/code #graphify/EXTRACTED #community/TestMultiTurnTracker

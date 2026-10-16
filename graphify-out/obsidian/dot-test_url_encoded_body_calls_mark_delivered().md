@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Tool Result Sanitizer & XML Injection Filtering"
+community: "test_telegram_proxy_outbound.py"
 location: "L4636"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer__XML_Injection_Filtering
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # .test_url_encoded_body_calls_mark_delivered()
@@ -17,4 +17,4 @@ tags:
 - [[TestReplayBufferOffsetParsing]] - `method` [EXTRACTED]
 - [[URL-encoded getUpdates body must call mark_delivered with the correct int offset]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Result_Sanitizer__XML_Injection_Filtering
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

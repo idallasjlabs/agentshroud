@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Community 666"
+community: "TestFileDownload"
 location: "L8734"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_666
+  - community/TestFileDownload
 ---
 
 # .test_within_limit_document_update_passes()
@@ -19,4 +19,4 @@ tags:
 - [[TestFileDownload]] - `method` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_666
+#graphify/code #graphify/EXTRACTED #community/TestFileDownload

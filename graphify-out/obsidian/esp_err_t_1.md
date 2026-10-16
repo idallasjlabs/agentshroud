@@ -1,20 +1,23 @@
 ---
-source_file: "firmware/voice-terminal/main/audio.c"
+source_file: "firmware/voice-terminal/main/ws_client.c"
 type: "code"
-community: "_t()"
-location: "L41"
+community: "voice_task"
+location: "L229"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t
+  - community/voice_task
 ---
 
 # esp_err_t
 
 ## Connections
-- [[audio_init()]] - `references` [EXTRACTED]
-- [[audio_play()]] - `references` [EXTRACTED]
-- [[audio_preinit()]] - `references` [EXTRACTED]
-- [[audio_set_volume()]] - `references` [EXTRACTED]
+- [[ws_client_send_end()]] - `references` [EXTRACTED]
+- [[ws_client_send_keepalive()]] - `references` [EXTRACTED]
+- [[ws_client_send_listen()]] - `references` [EXTRACTED]
+- [[ws_client_send_listen_resume()]] - `references` [EXTRACTED]
+- [[ws_client_send_log()]] - `references` [EXTRACTED]
+- [[ws_client_send_pcm()]] - `references` [EXTRACTED]
+- [[ws_client_send_stop()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t
+#graphify/code #graphify/EXTRACTED #community/voice_task

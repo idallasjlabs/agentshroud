@@ -12,7 +12,7 @@ tags:
 # hermes/skills/i-icloud/scripts/calendar.js
 
 ## Connections
-- [[CONFIG_1]] - `contains` [EXTRACTED]
+- [[CONFIG_3]] - `contains` [EXTRACTED]
 - [[args_1]] - `contains` [EXTRACTED]
 - [[createEvent()_1]] - `contains` [EXTRACTED]
 - [[getCredentials()_1]] - `contains` [EXTRACTED]

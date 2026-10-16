@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Community 845"
+community: "ForwardRequest"
 location: "L163"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_845
+  - community/ForwardRequest
 ---
 
 # .test_valid_router_url_accepted()
 
 ## Connections
+- [[RouterConfig_1]] - `calls` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_845
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

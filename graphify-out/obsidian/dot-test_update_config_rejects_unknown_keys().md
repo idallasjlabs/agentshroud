@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "Community 916"
+community: "ModeRequest"
 location: "L417"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_916
+  - community/ModeRequest
 ---
 
 # .test_update_config_rejects_unknown_keys()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestConfig_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_916
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

@@ -1,17 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/main/app_main.c"
+source_file: "firmware/voice-terminal/main/ws_client.c"
 type: "code"
-community: "_t()"
-location: "L199"
+community: "voice_task"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t
+  - community/voice_task
 ---
 
 # esp_event_base_t
 
 ## Connections
-- [[wifi_event_handler()]] - `references` [EXTRACTED]
+- [[_on_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t
+#graphify/code #graphify/EXTRACTED #community/voice_task

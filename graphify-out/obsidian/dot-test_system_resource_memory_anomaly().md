@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
 type: "code"
-community: "Community 54"
+community: "KillSwitchMonitor"
 location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/KillSwitchMonitor
 ---
 
 # .test_system_resource_memory_anomaly()
@@ -16,4 +16,4 @@ tags:
 - [[TestAnomalyDetection_1]] - `method` [EXTRACTED]
 - [[_fake_stats()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_54
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

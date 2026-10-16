@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_mcp_policy.py"
+source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L52"
+community: "test_a2a_policy.py"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/test_a2a_policypy
 ---
 
 # engine()
 
 ## Connections
-- [[MCPPolicyEngine_1]] - `references` [EXTRACTED]
+- [[A2APolicyEngine_2]] - `references` [EXTRACTED]
 - [[_base_config()_1]] - `calls` [EXTRACTED]
-- [[test_mcp_policy.py]] - `contains` [EXTRACTED]
+- [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

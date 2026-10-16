@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "Community 235"
+community: "TestEmailSend"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_235
+  - community/TestEmailSend
 ---
 
 # .test_valid_payload_returns_200()
@@ -15,4 +15,4 @@ tags:
 - [[Standard Telegram message payload is accepted.]] - `rationale_for` [EXTRACTED]
 - [[TestTelegramWebhook]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_235
+#graphify/code #graphify/EXTRACTED #community/TestEmailSend

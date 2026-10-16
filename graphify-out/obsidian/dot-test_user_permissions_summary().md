@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: "Action"
 location: "L282"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/Action
 ---
 
 # .test_user_permissions_summary()
@@ -15,4 +15,4 @@ tags:
 - [[Test getting user permissions summary.]] - `rationale_for` [EXTRACTED]
 - [[TestRBACManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/Action

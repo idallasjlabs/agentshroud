@@ -1,27 +1,26 @@
 ---
-source_file: ".agents/skills/i-icloud/SKILL.md"
+source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "document"
-community: "iCloud Services Setup - Complete Guide"
+community: "iCloud Services"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services_Setup_-_Complete_Guide
+  - community/iCloud_Services
 ---
 
 # iCloud Services
 
 ## Connections
 - [[Calendar Operations]] - `contains` [EXTRACTED]
-- [[Configuration_19]] - `contains` [EXTRACTED]
+- [[Configuration_4]] - `contains` [EXTRACTED]
 - [[Contact Operations]] - `contains` [EXTRACTED]
-- [[Key Configuration]] - `contains` [EXTRACTED]
 - [[Mail Operations]] - `contains` [EXTRACTED]
 - [[Notes Operations]] - `contains` [EXTRACTED]
-- [[SKILL_15]] - `contains` [EXTRACTED]
-- [[SKILL_25]] - `contains` [EXTRACTED]
-- [[Security]] - `contains` [EXTRACTED]
+- [[Security_6]] - `contains` [EXTRACTED]
 - [[Setup]] - `contains` [EXTRACTED]
-- [[Troubleshooting]] - `contains` [EXTRACTED]
+- [[Troubleshooting_19]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-icloudSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services_Setup_-_Complete_Guide
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

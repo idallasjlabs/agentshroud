@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
-community: "mcp_oauth_preflight.py"
+community: "check_upstream_cves"
 location: "L18492"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mcp_oauth_preflightpy
+  - community/check_upstream_cves
 ---
 
 # get_agent_ghsa_repo()
@@ -21,4 +21,4 @@ tags:
 - [[sync-cve-registry.py]] - `imports` [EXTRACTED]
 - [[sync_agent_ghsa()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mcp_oauth_preflightpy
+#graphify/code #graphify/EXTRACTED #community/check_upstream_cves

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/runtime/security.py"
 type: "code"
-community: "TestObservatoryMode"
+community: "TestSecurityFeatures"
 location: "L134"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestObservatoryMode
+  - community/TestSecurityFeatures
 ---
 
 # get_missing_features()
 
 ## Connections
-- [[.test_missing_features()]] - `calls` [EXTRACTED]
+- [[dot-test_missing_features()]] - `calls` [EXTRACTED]
 - [[Return features available for a given runtime.]] - `rationale_for` [EXTRACTED]
 - [[SecurityFeature]] - `references` [EXTRACTED]
 - [[_validate_runtime()]] - `calls` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 - [[warn_missing_features()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestObservatoryMode
+#graphify/code #graphify/EXTRACTED #community/TestSecurityFeatures

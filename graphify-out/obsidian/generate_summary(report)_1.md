@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
 type: "document"
-community: "TestNoResponseGuarantee"
+community: "trivy_report.py"
 location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestNoResponseGuarantee
+  - community/trivy_reportpy
 ---
 
 # generate_summary(report)
 
 ## Connections
-- [[Function Details_49]] - `contains` [EXTRACTED]
+- [[Function Details_41]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestNoResponseGuarantee
+#graphify/document #graphify/EXTRACTED #community/trivy_reportpy

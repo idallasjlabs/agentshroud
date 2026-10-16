@@ -1,19 +1,19 @@
 ---
 source_file: "skills/openclaw/nano-banana-pro/scripts/generate_image.py"
 type: "code"
-community: "ESP32-S3-BOX-3 Voice Terminal for Hermes (behind"
+community: "gen.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32-S3-BOX-3_Voice_Terminal_for_Hermes_behind
+  - community/genpy
 ---
 
 # generate_image.py
 
 ## Connections
-- [[SKILL_216]] - `references` [EXTRACTED]
 - [[get_api_key()]] - `contains` [EXTRACTED]
-- [[main()_31]] - `contains` [EXTRACTED]
+- [[main()_19]] - `contains` [EXTRACTED]
+- [[nano-banana-proSKILL]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal_for_Hermes_behind
+#graphify/code #graphify/EXTRACTED #community/genpy

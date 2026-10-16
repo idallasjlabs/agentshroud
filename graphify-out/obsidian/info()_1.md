@@ -1,18 +1,22 @@
 ---
-source_file: "scripts/security-scan.sh"
+source_file: "scripts/verify-proxy.sh"
 type: "code"
-community: "Docker Compose (infra diagram)"
-location: "L49"
+community: "ProxyDashboard"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Compose_infra_diagram
+  - community/ProxyDashboard
 ---
 
 # info()
 
 ## Connections
-- [[security-scan.sh_1]] - `defines` [EXTRACTED]
-- [[security-scan.sh script_1]] - `calls` [EXTRACTED]
+- [[run_bypass()]] - `calls` [EXTRACTED]
+- [[run_canary()_1]] - `calls` [EXTRACTED]
+- [[run_chain()]] - `calls` [EXTRACTED]
+- [[run_full()]] - `calls` [EXTRACTED]
+- [[run_quick()]] - `calls` [EXTRACTED]
+- [[verify-proxy.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Compose_infra_diagram
+#graphify/code #graphify/EXTRACTED #community/ProxyDashboard

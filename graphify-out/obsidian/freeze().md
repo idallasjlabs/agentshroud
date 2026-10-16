@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "patch"
+community: "cli/main.py"
 location: "L321"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/patch
+  - community/cli/mainpy
 ---
 
 # freeze()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Emergency freeze pause all bot containers.]] - `rationale_for` [EXTRACTED]
 - [[_output()]] - `calls` [EXTRACTED]
+- [[climain.py]] - `contains` [EXTRACTED]
 - [[get()]] - `calls` [EXTRACTED]
-- [[main.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/patch
+#graphify/code #graphify/EXTRACTED #community/cli/mainpy

@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "AgentTarget"
+community: "DataLedger"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/DataLedger
 ---
 
 # ingest_api/router.py
 
 ## Connections
-- [[AgentTarget_1]] - `imports` [EXTRACTED]
+- [[AgentTarget]] - `imports` [EXTRACTED]
 - [[CREDENTIAL-SECURITY-POLICY]] - `references` [EXTRACTED]
 - [[ForwardError]] - `contains` [EXTRACTED]
-- [[ForwardRequest_1]] - `imports` [EXTRACTED]
+- [[ForwardRequest_3]] - `imports` [EXTRACTED]
 - [[MultiAgentRouter]] - `contains` [EXTRACTED]
-- [[RouterConfig]] - `imports` [EXTRACTED]
+- [[RouterConfig_1]] - `imports` [EXTRACTED]
 - [[RouterError]] - `contains` [EXTRACTED]
 - [[forward.py]] - `imports_from` [EXTRACTED]
 - [[gatewayREADME]] - `references` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[test_router_openai_translation.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/DataLedger

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 1326"
+community: "TestFalcoSummary"
 location: "L378"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1326
+  - community/TestFalcoSummary
 ---
 
 # .test_running_without_alert_dir()
 
 ## Connections
-- [[TestFalcoSummary_1]] - `method` [EXTRACTED]
+- [[TestFalcoSummary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1326
+#graphify/code #graphify/EXTRACTED #community/TestFalcoSummary

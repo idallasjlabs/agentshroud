@@ -1,16 +1,16 @@
 ---
 source_file: "docs/diagrams/images/diagram-17-state-bot-session.svg"
 type: "concept"
-community: "MEDIUM — Fix Soon"
+community: "active"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/MEDIUM__Fix_Soon
+  - community/active
 ---
 
 # idle (health monitor 300s interval)
 
 ## Connections
-- [[active]] - `calls` [EXTRACTED]
+- [[active_1]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/MEDIUM__Fix_Soon
+#graphify/concept #graphify/EXTRACTED #community/active

@@ -1,28 +1,23 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
-type: "document"
-community: "Phase 3: MITIGATE (Rollback First!)"
-location: "L10"
+source_file: "gateway/security/drift_detector.py"
+type: "code"
+community: "AgentRegistry"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First
+  - community/AgentRegistry
 ---
 
 # drift_detector.py
 
 ## Connections
-- [[Configuration_12]] - `contains` [EXTRACTED]
-- [[Database Schema_1]] - `contains` [EXTRACTED]
-- [[Drift Categories and Severity]] - `contains` [EXTRACTED]
-- [[Environment Variables_10]] - `contains` [EXTRACTED]
-- [[Function Details_33]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_36]] - `contains` [EXTRACTED]
-- [[Mode Enforce vs Monitor_5]] - `contains` [EXTRACTED]
-- [[Purpose_154]] - `contains` [EXTRACTED]
-- [[Related_40]] - `contains` [EXTRACTED]
-- [[Responsibilities_38]] - `contains` [EXTRACTED]
-- [[Threat Model_9]] - `contains` [EXTRACTED]
-- [[drift_detector.py_1]] - `contains` [EXTRACTED]
+- [[ContainerSnapshot]] - `contains` [EXTRACTED]
+- [[Drift Detector Module Badge Icon]] - `conceptually_related_to` [INFERRED]
+- [[DriftAlert]] - `contains` [EXTRACTED]
+- [[DriftDetector]] - `contains` [EXTRACTED]
+- [[agent_isolation.py_2]] - `references` [EXTRACTED]
+- [[alert_dispatcher.py_2]] - `references` [EXTRACTED]
+- [[clamav_scanner.py_2]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

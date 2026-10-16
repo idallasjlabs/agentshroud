@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "P3 Infrastructure Security Modules"
+community: "OAuthSecurityValidator"
 location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/P3_Infrastructure_Security_Modules
+  - community/OAuthSecurityValidator
 ---
 
 # .validate_consent_cookie()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OAuthSecurityValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules
+#graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator

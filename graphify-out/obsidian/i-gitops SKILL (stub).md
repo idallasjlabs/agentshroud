@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-gitops/SKILL.md"
 type: "document"
-community: "Critical/High/Medium/Low tool risk tiers gating "
+community: "i-gitops SKILL (stub)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Critical/High/Medium/Low_tool_risk_tiers_gating_
+  - community/i-gitops_SKILL_stub
 ---
 
 # i-gitops SKILL (stub)
 
-#graphify/document #graphify/EXTRACTED #community/Critical/High/Medium/Low_tool_risk_tiers_gating_
+#graphify/document #graphify/EXTRACTED #community/i-gitops_SKILL_stub

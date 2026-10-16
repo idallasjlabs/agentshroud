@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "Community 157"
+community: "MiddlewareManager"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_157
+  - community/MiddlewareManager
 ---
 
 # .test_security_config_egress_monitor_enforce()
@@ -15,4 +15,4 @@ tags:
 - [[SecurityConfig_4]] - `calls` [EXTRACTED]
 - [[TestSecurityConfigDefaults]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_157
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

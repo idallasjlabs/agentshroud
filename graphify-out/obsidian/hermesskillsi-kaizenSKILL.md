@@ -12,6 +12,6 @@ tags:
 # hermes/skills/i-kaizen/SKILL.md
 
 ## Connections
-- [[Skill kaizen_1]] - `contains` [EXTRACTED]
+- [[Skill kaizen]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/hermes/skills/i-kaizen/SKILLmd

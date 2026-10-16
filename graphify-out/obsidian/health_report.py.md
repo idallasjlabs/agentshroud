@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "GroupApprovalRouter"
+community: "test_security_toolchain.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/test_security_toolchainpy
 ---
 
 # health_report.py
 
 ## Connections
 - [[FR7 Resource Availability]] - `references` [EXTRACTED]
-- [[alert_dispatcher.py]] - `semantically_similar_to` [INFERRED]
+- [[alert_dispatcher.py_2]] - `semantically_similar_to` [INFERRED]
 - [[calculate_overall_score()]] - `contains` [EXTRACTED]
 - [[calculate_tool_score()]] - `contains` [EXTRACTED]
 - [[format_report()]] - `contains` [EXTRACTED]
 - [[generate_report()]] - `contains` [EXTRACTED]
-- [[generate_summary()_1]] - `shares_data_with` [EXTRACTED]
-- [[generate_summary()_3]] - `shares_data_with` [EXTRACTED]
+- [[generate_summary()_2]] - `shares_data_with` [EXTRACTED]
+- [[generate_summary()]] - `shares_data_with` [EXTRACTED]
 - [[get_trend()]] - `contains` [EXTRACTED]
 - [[init_db()]] - `contains` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[wazuh-ossec]] - `references` [INFERRED]
 - [[wazuh_client.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

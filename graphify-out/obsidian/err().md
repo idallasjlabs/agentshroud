@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "DraftEntry"
-location: "L120"
+community: "sunday-upgrade-apply.sh"
+location: "L131"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DraftEntry
+  - community/sunday-upgrade-applysh
 ---
 
 # err()
@@ -18,11 +18,11 @@ tags:
 - [[_ensure_build_space()]] - `calls` [EXTRACTED]
 - [[_take_apply_lock()]] - `calls` [EXTRACTED]
 - [[check_noop_gate()]] - `calls` [EXTRACTED]
-- [[die()_2]] - `calls` [EXTRACTED]
+- [[die()]] - `calls` [EXTRACTED]
 - [[phase_apply()]] - `calls` [EXTRACTED]
 - [[phase_baseline()]] - `calls` [EXTRACTED]
 - [[phase_preflight()]] - `calls` [EXTRACTED]
 - [[phase_verify()]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DraftEntry
+#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

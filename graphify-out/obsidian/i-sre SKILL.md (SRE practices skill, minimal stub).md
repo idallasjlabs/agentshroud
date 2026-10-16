@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-sre/SKILL.md"
 type: "document"
-community: "Session Isolation End-to-End Tests"
+community: "i-sre SKILL.md (SRE practices skill, minimal stub)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Session_Isolation_End-to-End_Tests
+  - community/i-sre_SKILLmd_SRE_practices_skill_minimal_stub
 ---
 
 # i-sre SKILL.md (SRE practices skill, minimal stub)
 
-#graphify/document #graphify/EXTRACTED #community/Session_Isolation_End-to-End_Tests
+#graphify/document #graphify/EXTRACTED #community/i-sre_SKILLmd_SRE_practices_skill_minimal_stub

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/health.py"
 type: "code"
-community: "start-agentshroud.sh"
+community: "create_auth_dependency"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/start-agentshroudsh
+  - community/create_auth_dependency
 ---
 
 # health_check_detail()
@@ -17,4 +17,4 @@ tags:
 - [[StatusResponse]] - `calls` [EXTRACTED]
 - [[health.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/start-agentshroudsh
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

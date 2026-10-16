@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "Slack Proxy & Main Endpoint Tests"
+community: "AsyncMock"
 location: "L305"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_Proxy__Main_Endpoint_Tests
+  - community/AsyncMock
 ---
 
 # .test_system_message_not_tracked()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestOutboundTracking]] - `method` [EXTRACTED]
-- [[_make_proxy()_2]] - `calls` [EXTRACTED]
+- [[_make_proxy()_1]] - `calls` [EXTRACTED]
 - [[is_system=True chat.postMessage bypasses the tracker entirely.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_Proxy__Main_Endpoint_Tests
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

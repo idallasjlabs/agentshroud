@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "Community 138"
+community: "DNSBlocklist"
 location: "L156"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_138
+  - community/DNSBlocklist
 ---
 
 # .test_start_creates_task()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[DNSBlocklist]] - `calls` [EXTRACTED]
-- [[TestLifecycle_1]] - `method` [EXTRACTED]
+- [[TestLifecycle]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_138
+#graphify/code #graphify/EXTRACTED #community/DNSBlocklist

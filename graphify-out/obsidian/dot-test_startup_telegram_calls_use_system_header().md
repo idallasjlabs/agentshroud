@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Community 845"
+community: "ForwardRequest"
 location: "L408"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_845
+  - community/ForwardRequest
 ---
 
 # .test_startup_telegram_calls_use_system_header()
@@ -15,4 +15,4 @@ tags:
 - [[Startup notification Telegram calls should be marked as system-originated.]] - `rationale_for` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_845
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

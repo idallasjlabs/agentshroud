@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Community 1596"
+community: "ForwardRequest"
 location: "L368"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1596
+  - community/ForwardRequest
 ---
 
 # .test_startup_notifications_wait_for_runtime_readiness()
 
 ## Connections
-- [[Startup script should verify Telegrammodel readiness before sending online…]] - `rationale_for` [EXTRACTED]
+- [[Startup script should verify Telegrammodel readiness before sending online noti]] - `rationale_for` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1596
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

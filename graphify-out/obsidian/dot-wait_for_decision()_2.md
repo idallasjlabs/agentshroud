@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_a2a_policy.py"
+source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "Community 289"
-location: "L397"
+community: "MCPPolicyEngine"
+location: "L290"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_289
+  - community/MCPPolicyEngine
 ---
 
 # .wait_for_decision()
 
 ## Connections
-- [[_LegacyStubApprovalQueue]] - `method` [EXTRACTED]
+- [[_FakeApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_289
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

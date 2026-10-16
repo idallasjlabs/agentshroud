@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "Approval Queue (WebSocket)"
+community: "SSHHostConfig"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_WebSocket
+  - community/SSHHostConfig
 ---
 
 # .test_ssh_exec_cwd_none_forwards_none()
@@ -16,4 +16,4 @@ tags:
 - [[SSHResult]] - `calls` [EXTRACTED]
 - [[TestSSHExec]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_WebSocket
+#graphify/code #graphify/EXTRACTED #community/SSHHostConfig

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 1407"
+community: "TestTrivySummary"
 location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1407
+  - community/TestTrivySummary
 ---
 
 # .test_timestamp_falls_back_to_file_mtime()
 
 ## Connections
-- [[TestTrivySummary_1]] - `method` [EXTRACTED]
+- [[TestTrivySummary]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1407
+#graphify/code #graphify/EXTRACTED #community/TestTrivySummary
