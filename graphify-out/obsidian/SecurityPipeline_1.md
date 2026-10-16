@@ -15,12 +15,12 @@ tags:
 - [[EncodingConfig]] - `uses` [INFERRED]
 - [[EncodingDetector]] - `uses` [INFERRED]
 - [[InjectionAction]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[PipelineAction]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
-- [[_make_pipeline()_3]] - `references` [EXTRACTED]
+- [[_make_pipeline()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/PIIConfig

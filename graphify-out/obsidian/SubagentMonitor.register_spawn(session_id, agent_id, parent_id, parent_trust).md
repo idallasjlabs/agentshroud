@@ -12,6 +12,6 @@ tags:
 # SubagentMonitor.register_spawn(session_id, agent_id, parent_id, parent_trust)
 
 ## Connections
-- [[Function Details_12]] - `contains` [EXTRACTED]
+- [[Function Details_13]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

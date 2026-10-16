@@ -12,6 +12,6 @@ tags:
 # Security Features (Implemented)
 
 ## Connections
-- [[Architecture_2]] - `contains` [EXTRACTED]
+- [[Architecture_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

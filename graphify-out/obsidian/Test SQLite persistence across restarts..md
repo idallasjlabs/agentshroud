@@ -12,6 +12,6 @@ tags:
 # Test SQLite persistence across restarts.
 
 ## Connections
-- [[TestPersistence_2]] - `rationale_for` [EXTRACTED]
+- [[TestPersistence_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
+source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "document"
-community: "main.py"
-location: "L446"
+community: "Dockerfile — Bot (OpenClaw)"
+location: "L105"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpy
+  - community/Dockerfile__Bot_OpenClaw
 ---
 
 # Security Notes
 
 ## Connections
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[4. Environment Variables]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpy
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw

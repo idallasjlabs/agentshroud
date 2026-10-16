@@ -12,6 +12,6 @@ tags:
 # Set up app state and provide TestClient.
 
 ## Connections
-- [[client()_10]] - `rationale_for` [EXTRACTED]
+- [[client()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "TestObservatoryMode"
+community: "KillSwitchMonitor"
 location: "L401"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestObservatoryMode
+  - community/KillSwitchMonitor
 ---
 
 # Test that observatory mode state is properly initialized.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_observatory_mode_state_initialization()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestObservatoryMode
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

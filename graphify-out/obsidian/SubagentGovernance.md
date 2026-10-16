@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "SubagentGovernance"
+community: "._check_budget"
 location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentGovernance
+  - community/_check_budget
 ---
 
 # SubagentGovernance
 
 ## Connections
-- [[dot-__init__()_150]] - `method` [EXTRACTED]
+- [[dot-__init__()_173]] - `method` [EXTRACTED]
 - [[dot-_check_budget()]] - `method` [EXTRACTED]
 - [[dot-_log_event()_1]] - `method` [EXTRACTED]
 - [[dot-authorize_spawn()]] - `method` [EXTRACTED]
@@ -43,4 +43,4 @@ tags:
 - [[subagent_governance.py]] - `contains` [EXTRACTED]
 - [[test_subagent_governance.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentGovernance
+#graphify/code #graphify/EXTRACTED #community/_check_budget

@@ -12,6 +12,6 @@ tags:
 # SubagentMonitor.get_audit_log(session_id, agent_id)
 
 ## Connections
-- [[Function Details_12]] - `contains` [EXTRACTED]
+- [[Function Details_13]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

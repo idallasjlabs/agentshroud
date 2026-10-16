@@ -12,12 +12,12 @@ tags:
 # SlackAPIProxy
 
 ## Connections
-- [[dot-__init__()_124]] - `method` [EXTRACTED]
+- [[dot-__init__()_112]] - `method` [EXTRACTED]
 - [[dot-_call_slack_api()]] - `method` [EXTRACTED]
 - [[dot-_intercept_connections_open()]] - `method` [EXTRACTED]
 - [[dot-_is_owner_channel()]] - `method` [EXTRACTED]
 - [[dot-consume_relay_token()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_13]] - `method` [EXTRACTED]
+- [[dot-get_stats()_12]] - `method` [EXTRACTED]
 - [[dot-handle_event()]] - `method` [EXTRACTED]
 - [[dot-invite_channel_member()]] - `method` [EXTRACTED]
 - [[dot-kick_channel_member()]] - `method` [EXTRACTED]
@@ -43,7 +43,7 @@ tags:
 - [[TestSocketModeRelay]] - `uses` [INFERRED]
 - [[TestWebhookReceiverSlackExtraction]] - `uses` [INFERRED]
 - [[_RaisingRedactionResult]] - `uses` [INFERRED]
-- [[_make_proxy()_2]] - `calls` [EXTRACTED]
+- [[_make_proxy()_1]] - `calls` [EXTRACTED]
 - [[_make_proxy()_4]] - `calls` [EXTRACTED]
 - [[slack_proxy.py]] - `contains` [EXTRACTED]
 - [[slack_socket_client.py]] - `imports` [EXTRACTED]

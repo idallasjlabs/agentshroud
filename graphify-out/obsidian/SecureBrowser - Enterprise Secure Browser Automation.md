@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Approval Integration]] - `contains` [EXTRACTED]
 - [[Audit Logging]] - `contains` [EXTRACTED]
-- [[Best Practices_2]] - `contains` [EXTRACTED]
+- [[Best Practices_1]] - `contains` [EXTRACTED]
 - [[Core Security Principles]] - `contains` [EXTRACTED]
 - [[Example Apple ID Creation (Semi-Automated)]] - `contains` [EXTRACTED]
 - [[Integration with AgentShroud]] - `contains` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[Security Guarantees]] - `contains` [EXTRACTED]
 - [[See Also]] - `contains` [EXTRACTED]
 - [[Troubleshooting_7]] - `contains` [EXTRACTED]
-- [[Usage_54]] - `contains` [EXTRACTED]
+- [[Usage_55]] - `contains` [EXTRACTED]
 - [[securebrowserSKILL]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automation

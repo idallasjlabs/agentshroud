@@ -12,6 +12,6 @@ tags:
 # TelegramAPIProxy._filter_outbound(body, content_type)
 
 ## Connections
-- [[Function Details_25]] - `contains` [EXTRACTED]
+- [[Function Details_26]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/telegram_proxypy

@@ -12,6 +12,6 @@ tags:
 # Security Module Issues
 
 ## Connections
-- [[troubleshooting_23]] - `contains` [EXTRACTED]
+- [[troubleshooting_22]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/troubleshootingmd

@@ -12,11 +12,11 @@ tags:
 # SkillScanError
 
 ## Connections
-- [[dot-scan_file()_1]] - `calls` [EXTRACTED]
+- [[dot-scan_file()]] - `calls` [EXTRACTED]
 - [[CompletedProcess_3]] - `uses` [INFERRED]
-- [[Path_28]] - `uses` [INFERRED]
+- [[Path_26]] - `uses` [INFERRED]
 - [[Raised when SkillGuard is handed content it cannot scan.]] - `rationale_for` [EXTRACTED]
-- [[ScanResult_3]] - `uses` [INFERRED]
+- [[ScanResult_2]] - `uses` [INFERRED]
 - [[SkillGuard]] - `uses` [INFERRED]
 - [[TestAggregation]] - `uses` [INFERRED]
 - [[TestCleanSkill]] - `uses` [INFERRED]

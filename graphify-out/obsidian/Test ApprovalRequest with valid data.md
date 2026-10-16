@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
+community: "Request"
 location: "L254"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/Request
 ---
 
 # Test ApprovalRequest with valid data
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_approval_request_valid()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/Request

@@ -17,6 +17,6 @@ tags:
 - [[dot-_relay()]] - `references` [EXTRACTED]
 - [[dot-_relay_and_scan()]] - `references` [EXTRACTED]
 - [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[WebProxyConfig_1]] - `uses` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/_process_connect

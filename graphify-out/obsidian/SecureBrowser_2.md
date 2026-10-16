@@ -12,7 +12,7 @@ tags:
 # SecureBrowser
 
 ## Connections
-- [[dot-__init__()_55]] - `method` [EXTRACTED]
+- [[dot-__init__()_49]] - `method` [EXTRACTED]
 - [[dot-_classify_risk()_2]] - `method` [EXTRACTED]
 - [[dot-_domain_matches()_2]] - `method` [EXTRACTED]
 - [[dot-_init_browser()_2]] - `method` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[dot-_take_screenshot()_2]] - `method` [EXTRACTED]
 - [[dot-_validate_url()_2]] - `method` [EXTRACTED]
 - [[dot-click()_2]] - `method` [EXTRACTED]
-- [[dot-close()_7]] - `method` [EXTRACTED]
+- [[dot-close()_4]] - `method` [EXTRACTED]
 - [[dot-detect_captcha()_2]] - `method` [EXTRACTED]
 - [[dot-extract()_2]] - `method` [EXTRACTED]
 - [[dot-fill_field()_2]] - `method` [EXTRACTED]

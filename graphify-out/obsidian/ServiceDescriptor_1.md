@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "ServiceManager"
+community: "test_soc_realtime_coverage.py"
 location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/test_soc_realtime_coveragepy
 ---
 
 # ServiceDescriptor
@@ -20,7 +20,7 @@ tags:
 - [[dot-test_stopped_service()]] - `calls` [EXTRACTED]
 - [[dot-test_unhealthy_service()]] - `calls` [EXTRACTED]
 - [[dot-test_with_resource_usage()]] - `calls` [EXTRACTED]
-- [[Any_25]] - `uses` [INFERRED]
+- [[Any_67]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[HealthStatus]] - `uses` [INFERRED]
 - [[ServiceDescriptor]] - `uses` [INFERRED]
@@ -33,4 +33,4 @@ tags:
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 - [[test_soc_services.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

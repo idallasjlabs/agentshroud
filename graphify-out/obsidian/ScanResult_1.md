@@ -1,33 +1,21 @@
 ---
-source_file: "gateway/security/prompt_guard.py"
+source_file: "gateway/skills/scan.py"
 type: "code"
-community: "AuditChain"
-location: "L36"
+community: "SkillGuard"
+location: "L59"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AuditChain
+  - community/SkillGuard
 ---
 
 # ScanResult
 
 ## Connections
-- [[dot-_blocking_prompt_guard()]] - `calls` [EXTRACTED]
-- [[dot-scan()_4]] - `references` [EXTRACTED]
-- [[dot-scan_tool_result()_3]] - `references` [EXTRACTED]
-- [[TestAuditChain]] - `uses` [INFERRED]
-- [[TestAuditChainBounded]] - `uses` [INFERRED]
-- [[TestContextGuardInPipeline]] - `uses` [INFERRED]
-- [[TestContextIntegrityInPipeline]] - `uses` [INFERRED]
-- [[TestEnvelopeSignerInPipeline]] - `uses` [INFERRED]
-- [[TestInboundPIIOwnerExemption]] - `uses` [INFERRED]
-- [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
-- [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
-- [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
-- [[TestTrustViolationRecording]] - `uses` [INFERRED]
-- [[_FakeAttack]] - `uses` [INFERRED]
-- [[_FakeIntegrityScore]] - `uses` [INFERRED]
-- [[prompt_guard.py]] - `contains` [EXTRACTED]
-- [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
+- [[Recommendation]] - `uses` [INFERRED]
+- [[ScanResult_3]] - `uses` [INFERRED]
+- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[SkillsManifest]] - `uses` [INFERRED]
+- [[_print_findings()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AuditChain
+#graphify/code #graphify/INFERRED #community/SkillGuard

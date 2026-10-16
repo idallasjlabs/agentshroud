@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
+source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "4. Environment Variables"
-location: "L105"
+community: "API Keys Setup Guide"
+location: "L246"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/4_Environment_Variables
+  - community/API_Keys_Setup_Guide
 ---
 
 # Security Notes
 
 ## Connections
-- [[4. Environment Variables]] - `contains` [EXTRACTED]
+- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/4_Environment_Variables
+#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

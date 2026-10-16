@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Anti-Patterns to Flag_21]] - `contains` [EXTRACTED]
 - [[Core Discipline Red → Green → Refactor_1]] - `contains` [EXTRACTED]
-- [[Role_85]] - `contains` [EXTRACTED]
+- [[Role_86]] - `contains` [EXTRACTED]
 - [[Rules_23]] - `contains` [EXTRACTED]
 - [[Stack-Specific Testing Patterns_1]] - `contains` [EXTRACTED]
 - [[Test Structure_5]] - `contains` [EXTRACTED]

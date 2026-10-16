@@ -12,6 +12,6 @@ tags:
 # Send one email synchronously.  Blocking — call in an executor.          Raises t
 
 ## Connections
-- [[dot-send()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-send()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/GatewayEmailService

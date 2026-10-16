@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AWS Profile Basics]] - `contains` [EXTRACTED]
 - [[AWS SSO Configuration]] - `contains` [EXTRACTED]
-- [[Best Practices_1]] - `contains` [EXTRACTED]
+- [[Best Practices]] - `contains` [EXTRACTED]
 - [[Configuration Files_1]] - `contains` [EXTRACTED]
 - [[Configure New Profile]] - `contains` [EXTRACTED]
 - [[List Available Profiles]] - `contains` [EXTRACTED]

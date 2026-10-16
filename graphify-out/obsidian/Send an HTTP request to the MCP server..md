@@ -12,6 +12,6 @@ tags:
 # Send an HTTP request to the MCP server.
 
 ## Connections
-- [[dot-send_request()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-send_request()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/process_tool_call

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "PrivacyPolicyEnforcer"
+community: "RBACConfig"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/RBACConfig
 ---
 
 # ServicePolicy
 
 ## Connections
-- [[dot-from_dict()_10]] - `calls` [EXTRACTED]
-- [[dot-from_dict()_11]] - `method` [EXTRACTED]
+- [[dot-from_dict()_4]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_5]] - `method` [EXTRACTED]
 - [[Privacy policy for a single service.]] - `rationale_for` [EXTRACTED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
 - [[privacy_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

@@ -12,6 +12,6 @@ tags:
 # SessionManager.__init__(max_session_age, max_sessions_per_ip, rate_limit_window)
 
 ## Connections
-- [[Function Details_11]] - `contains` [EXTRACTED]
+- [[Function Details_12]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

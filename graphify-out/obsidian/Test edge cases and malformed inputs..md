@@ -12,6 +12,6 @@ tags:
 # Test edge cases and malformed inputs.
 
 ## Connections
-- [[dot-test_edge_cases()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-test_edge_cases()_3]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

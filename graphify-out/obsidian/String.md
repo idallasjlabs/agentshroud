@@ -12,7 +12,7 @@ tags:
 # String
 
 ## Connections
-- [[Cli_1]] - `references` [EXTRACTED]
+- [[Cli]] - `references` [EXTRACTED]
 - [[FakeTransport]] - `references` [EXTRACTED]
 - [[GatewayClient]] - `references` [EXTRACTED]
 - [[HttpResponse]] - `references` [EXTRACTED]

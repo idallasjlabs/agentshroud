@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[Authentication Reset Procedures_1]] - `contains` [EXTRACTED]
 - [[Related Skills_88]] - `contains` [EXTRACTED]
-- [[Role_64]] - `contains` [EXTRACTED]
+- [[Role_65]] - `contains` [EXTRACTED]
 - [[Security Best Practices_2]] - `contains` [EXTRACTED]
 - [[Troubleshooting_32]] - `contains` [EXTRACTED]
-- [[Usage_95]] - `contains` [EXTRACTED]
+- [[Usage_96]] - `contains` [EXTRACTED]
 - [[Verification Checklist_2]] - `contains` [EXTRACTED]
 - [[When to Invoke_7]] - `contains` [EXTRACTED]
 - [[openclawskillsi-mcpm-auth-resetSKILL]] - `contains` [EXTRACTED]

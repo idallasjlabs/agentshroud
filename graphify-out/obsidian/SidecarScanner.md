@@ -12,7 +12,7 @@ tags:
 # SidecarScanner
 
 ## Connections
-- [[dot-__init__()_98]] - `method` [EXTRACTED]
+- [[dot-__init__()_94]] - `method` [EXTRACTED]
 - [[dot-get_stats()_10]] - `method` [EXTRACTED]
 - [[dot-scan()_2]] - `method` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `conceptually_related_to` [EXTRACTED]
@@ -21,7 +21,7 @@ tags:
 - [[SecurityPipeline.process_inbound]] - `calls` [EXTRACTED]
 - [[Sidecar security scanner — reduced security, traffic can bypass.      This is fo]] - `rationale_for` [EXTRACTED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder_1]] - `uses` [INFERRED]
+- [[_StubForwarder]] - `uses` [INFERRED]
 - [[sidecar.py]] - `contains` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
 - [[test_sidecar_scanner()]] - `calls` [EXTRACTED]

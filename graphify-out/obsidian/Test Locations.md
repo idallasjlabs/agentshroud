@@ -12,6 +12,6 @@ tags:
 # Test Locations
 
 ## Connections
-- [[pytest.ini_1]] - `contains` [EXTRACTED]
+- [[pytest.ini]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/pytestini

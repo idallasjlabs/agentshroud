@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/skills/scan.py"
+source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
 community: "SkillGuard"
-location: "L59"
+location: "L50"
 tags:
   - graphify/code
   - graphify/INFERRED
@@ -13,9 +13,10 @@ tags:
 
 ## Connections
 - [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_4]] - `uses` [INFERRED]
+- [[ScanResult_3]] - `uses` [INFERRED]
+- [[Severity]] - `uses` [INFERRED]
 - [[SkillGuard_1]] - `uses` [INFERRED]
-- [[SkillsManifest]] - `uses` [INFERRED]
-- [[_print_findings()]] - `references` [EXTRACTED]
+- [[SkillScanError]] - `uses` [INFERRED]
+- [[_finding_categories()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/SkillGuard

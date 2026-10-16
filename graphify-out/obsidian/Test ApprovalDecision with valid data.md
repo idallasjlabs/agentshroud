@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "rationale"
-community: "AgentTarget"
+community: "Request"
 location: "L270"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/Request
 ---
 
 # Test ApprovalDecision with valid data
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_approval_decision_valid()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget
+#graphify/rationale #graphify/EXTRACTED #community/Request

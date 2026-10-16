@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Approval Workflows]] - `contains` [EXTRACTED]
 - [[Audit Trail Standards]] - `contains` [EXTRACTED]
-- [[Compliance_1]] - `contains` [EXTRACTED]
+- [[Compliance]] - `contains` [EXTRACTED]
 - [[Core Security Principles_4]] - `contains` [EXTRACTED]
 - [[Future Enhancements_1]] - `contains` [EXTRACTED]
 - [[Incident Response]] - `contains` [EXTRACTED]

@@ -16,7 +16,6 @@ tags:
 - [[dot-test_upstream_400_returns_400_with_body()]] - `calls` [EXTRACTED]
 - [[First item yielded by proxy_messages_streaming(with_head=True). Carries the…]] - `rationale_for` [EXTRACTED]
 - [[LLMProxy.proxy_messages_streaming]] - `shares_data_with` [EXTRACTED]
-- [[Streaming route masked upstream 4xx as 200 event stream]] - `rationale_for` [EXTRACTED]
 - [[TestStreamingProxyStatusPropagation]] - `uses` [INFERRED]
 - [[_run_stream (StreamHead test harness)]] - `uses` [INFERRED]
 - [[_stream()]] - `calls` [EXTRACTED]

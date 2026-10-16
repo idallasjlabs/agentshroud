@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "Test getting statistics."
+community: "TestPathIsolationManager"
 location: "L298"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Test_getting_statistics
+  - community/TestPathIsolationManager
 ---
 
 # Test getting statistics.
@@ -16,4 +16,4 @@ tags:
 - [[dot-test_global_stats()]] - `rationale_for` [EXTRACTED]
 - [[dot-test_global_stats()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Test_getting_statistics
+#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
+community: "DataLedger"
 location: "L355"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/DataLedger
 ---
 
 # Test require_approval=false executes directly (Finding #5)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSSHRequireApprovalFalse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/DataLedger

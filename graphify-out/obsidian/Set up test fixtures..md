@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_output_canary.py"
+source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "TestOutputCanary"
-location: "L21"
+community: "ToolResultSanitizer"
+location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutputCanary
+  - community/ToolResultSanitizer
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[dot-setup_method()_8]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_10]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutputCanary
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

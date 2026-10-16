@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "test_observatory_mode.py"
+community: "KillSwitchMonitor"
 location: "L542"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_observatory_modepy
+  - community/KillSwitchMonitor
 ---
 
 # Test POST /manage/mode endpoint request/response.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_set_observatory_mode_endpoint()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_observatory_modepy
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

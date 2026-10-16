@@ -12,7 +12,7 @@ tags:
 # TelegramAPIProxy
 
 ## Connections
-- [[dot-__init__()_201]] - `method` [EXTRACTED]
+- [[dot-__init__()_188]] - `method` [EXTRACTED]
 - [[dot-_active_bot_id()]] - `method` [EXTRACTED]
 - [[dot-_active_send_token()]] - `method` [EXTRACTED]
 - [[dot-_answer_callback_query()]] - `method` [EXTRACTED]
@@ -149,7 +149,7 @@ tags:
 - [[dot-_trigger_web_fetch_approval()]] - `method` [EXTRACTED]
 - [[dot-_trigger_web_search_log()]] - `method` [EXTRACTED]
 - [[dot-_username_for_bot()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_4]] - `method` [EXTRACTED]
+- [[dot-get_stats()_6]] - `method` [EXTRACTED]
 - [[dot-proxy()]] - `calls` [EXTRACTED]
 - [[dot-proxy_request()]] - `method` [EXTRACTED]
 - [[ApprovalMode]] - `uses` [INFERRED]
@@ -174,8 +174,8 @@ tags:
 - [[RateLimiter_1]] - `uses` [INFERRED]
 - [[SlackAPIProxy_1]] - `uses` [INFERRED]
 - [[TelegramAPIProxy_3]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
 - [[TelegramAPIProxy_1]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
 - [[TestBotIsMentioned]] - `uses` [INFERRED]
 - [[TestBuildCollaboratorSafeInfoResponse]] - `uses` [INFERRED]
 - [[TestCollabLockdownNotifications]] - `uses` [INFERRED]
@@ -248,7 +248,7 @@ tags:
 - [[TestWebSearchLog]] - `uses` [INFERRED]
 - [[UpdateReplayBuffer]] - `conceptually_related_to` [INFERRED]
 - [[_make_proxy()_3]] - `calls` [EXTRACTED]
-- [[_make_proxy()_1]] - `calls` [EXTRACTED]
+- [[_make_proxy()_2]] - `calls` [EXTRACTED]
 - [[slack_proxy.py]] - `imports` [EXTRACTED]
 - [[telegram_proxy.py_2]] - `contains` [EXTRACTED]
 - [[test_group_workspace_manager.py]] - `imports` [EXTRACTED]

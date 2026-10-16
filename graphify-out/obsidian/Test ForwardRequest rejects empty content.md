@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "rationale"
-community: "AgentTarget"
+community: "Request"
 location: "L209"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/Request
 ---
 
 # Test ForwardRequest rejects empty content
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_forward_request_validation_empty_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget
+#graphify/rationale #graphify/EXTRACTED #community/Request

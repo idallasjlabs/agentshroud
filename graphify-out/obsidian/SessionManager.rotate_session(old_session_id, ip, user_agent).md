@@ -12,6 +12,6 @@ tags:
 # SessionManager.rotate_session(old_session_id, ip, user_agent)
 
 ## Connections
-- [[Function Details_11]] - `contains` [EXTRACTED]
+- [[Function Details_12]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

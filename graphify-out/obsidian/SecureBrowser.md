@@ -12,7 +12,7 @@ tags:
 # SecureBrowser
 
 ## Connections
-- [[dot-__init__()_51]] - `method` [EXTRACTED]
+- [[dot-__init__()_44]] - `method` [EXTRACTED]
 - [[dot-_classify_risk()]] - `method` [EXTRACTED]
 - [[dot-_domain_matches()]] - `method` [EXTRACTED]
 - [[dot-_init_browser()]] - `method` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[dot-_validate_url()]] - `method` [EXTRACTED]
 - [[dot-agentsskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
 - [[dot-click()]] - `method` [EXTRACTED]
-- [[dot-close()_5]] - `method` [EXTRACTED]
+- [[dot-close()_2]] - `method` [EXTRACTED]
 - [[dot-detect_captcha()]] - `method` [EXTRACTED]
 - [[dot-extract()]] - `method` [EXTRACTED]
 - [[dot-fill_field()]] - `method` [EXTRACTED]

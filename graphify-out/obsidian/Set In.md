@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
+source_file: "docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md"
 type: "document"
-community: "AGENTSHROUD_MODE"
-location: "L36"
+community: "GATEWAY_OP_PROXY_URL"
+location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AGENTSHROUD_MODE
+  - community/GATEWAY_OP_PROXY_URL
 ---
 
 # Set In
 
 ## Connections
-- [[OPENCLAW_SANDBOX_MODE]] - `contains` [EXTRACTED]
+- [[GATEWAY_OP_PROXY_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_MODE
+#graphify/document #graphify/EXTRACTED #community/GATEWAY_OP_PROXY_URL

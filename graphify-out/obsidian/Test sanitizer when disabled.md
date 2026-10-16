@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "ToolResultSanitizer"
 location: "L136"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ToolResultSanitizer
 ---
 
 # Test sanitizer when disabled
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_sanitize_disabled()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
