@@ -261,7 +261,7 @@ echo "[hermes-startup] Starting Hermes Agent gateway (Telegram/Discord long-poll
 # so it's visible on every single restart, not just discoverable later via
 # a failed cron run. Keep this key list in sync with run-standalone.sh's
 # HERMES_SECRET_KEYS.
-_HERMES_EXPECTED_SECRETS="hermes_telegram_bot_token slack_bot_token_hermes slack_app_token_hermes brave_api_key anthropic_oauth_token openai_api_key hermes_api_key github_pat hermes_healthchecks_url gateway_password feedbin_email feedbin_password podcastindex_api_key podcastindex_api_secret"
+_HERMES_EXPECTED_SECRETS="hermes_telegram_bot_token slack_bot_token_hermes slack_app_token_hermes brave_api_key anthropic_oauth_token openai_api_key hermes_api_key github_pat hermes_healthchecks_url gateway_password feedbin_email feedbin_password podcastindex_api_key podcastindex_api_secret"  # pragma: allowlist secret -- names of mounted secret files, not values
 _hermes_missing_secrets=""
 for _key in ${_HERMES_EXPECTED_SECRETS}; do
     if [ ! -s "/run/secrets/${_key}" ]; then
@@ -272,6 +272,12 @@ done
 _HERMES_STARTUP_NOTE=""
 if [ -n "${_hermes_missing_secrets}" ]; then
     _HERMES_STARTUP_NOTE=" — ⚠️ missing secrets: ${_hermes_missing_secrets}"
+fi
+# Written by init-hermes-config.sh (ran above) when AGENTSHROUD_PROD_CRON_KEEP
+# was empty on a prod boot and every cron job got paused — the 2026-10-12
+# silent Daily Brief outage. Surface it in the one message the owner reads.
+if [ -s /opt/data/.agentshroud-prod-cron-keep-empty ]; then
+    _HERMES_STARTUP_NOTE="${_HERMES_STARTUP_NOTE} — 🚨 AGENTSHROUD_PROD_CRON_KEEP is EMPTY: all $(cat /opt/data/.agentshroud-prod-cron-keep-empty) cron jobs PAUSED (no Daily Brief). Set it in docker/.env and relaunch Hermes."
 fi
 
 # Startup notification subshell — runs in background while Hermes daemon launches.

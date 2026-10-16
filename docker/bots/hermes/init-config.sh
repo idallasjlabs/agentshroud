@@ -745,6 +745,22 @@ else
 $(_hermes_cron_ids_names)
 EOF_JOBS
     echo "[hermes-init] Prod environment: paused ${_paused_count} Hermes cron job(s), kept ${_kept_count} (AGENTSHROUD_PROD_CRON_KEEP)"
+    # Loud alert when the keep-list is empty. 2026-10-12: a container
+    # recreation came up with AGENTSHROUD_PROD_CRON_KEEP unset (the launcher
+    # shell didn't carry docker/.env), this branch paused EVERY job including
+    # the Daily Brief, and the only trace was the one line above in a log
+    # nobody reads — the owner noticed four days later. The marker file is
+    # picked up by start.sh and put into the Telegram "Hermes online" message.
+    _CRON_KEEP_ALERT_FILE="/opt/data/.agentshroud-prod-cron-keep-empty"
+    if [ -z "${AGENTSHROUD_PROD_CRON_KEEP:-}" ] && [ "${_paused_count}" -gt 0 ]; then
+        echo "[hermes-init] ########################################################################" >&2
+        echo "[hermes-init] # ALERT: AGENTSHROUD_PROD_CRON_KEEP is EMPTY — ALL ${_paused_count} Hermes cron jobs are now PAUSED" >&2
+        echo "[hermes-init] #        (no Daily Brief, no reports). Set it in docker/.env and relaunch." >&2
+        echo "[hermes-init] ########################################################################" >&2
+        printf '%s\n' "${_paused_count}" > "${_CRON_KEEP_ALERT_FILE}" 2>/dev/null || true
+    else
+        rm -f "${_CRON_KEEP_ALERT_FILE}" 2>/dev/null || true
+    fi
 fi
 
 echo "[hermes-init] Config init complete"

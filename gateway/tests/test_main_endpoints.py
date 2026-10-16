@@ -428,6 +428,113 @@ class TestHermesDashboardPathTraversal:
         assert exc_info.value.status_code == 400
 
 
+class TestHermesDashboardProxyHeaders:
+    """hermes_dashboard_proxy must relay upstream headers header-by-header.
+
+    Found on prod 2026-10-16 via the gateway-routed Conduit path (:9119 ->
+    /hermes-dashboard/): Hermes's password login answers with THREE
+    Set-Cookie headers (hermes_session_at, hermes_session_rt,
+    hermes_session_provider). The proxy collapsed ``resp.headers`` into a
+    dict, so the gateway emitted ONE comma-joined Set-Cookie. RFC 6265 §3
+    forbids folding Set-Cookie; Foundation happens to split it, python/urllib
+    keeps only the first cookie. Also: httpx has already decompressed the
+    body, so the upstream Content-Encoding/Content-Length must not be
+    re-emitted or clients will try to gunzip plain bytes.
+    """
+
+    @staticmethod
+    def _run_proxy(monkeypatch, upstream_headers, body=b"<html>ok</html>", status=200):
+        import asyncio
+        from unittest.mock import MagicMock
+
+        import httpx
+
+        from gateway.ingest_api import main as main_mod
+
+        class _FakeHeaders:
+            """Only the httpx.Headers surface the proxy uses: multi_items()
+            yields every (name, value) pair in order, duplicates included."""
+
+            def __init__(self, items):
+                self._items = list(items)
+
+            def multi_items(self):
+                return list(self._items)
+
+        class _FakeResp:
+            def __init__(self):
+                self.headers = _FakeHeaders(upstream_headers)
+                self.content = body
+                self.status_code = status
+
+        class _FakeClient:
+            def __init__(self, *a, **k):
+                pass
+
+            async def __aenter__(self):
+                return self
+
+            async def __aexit__(self, *a):
+                return False
+
+            async def request(self, **kwargs):
+                return _FakeResp()
+
+        monkeypatch.setattr(httpx, "AsyncClient", _FakeClient)
+        request = MagicMock()
+        request.url.query = ""
+        request.method = "POST"
+        request.headers = {"content-type": "application/json"}
+
+        async def _body():
+            return b"{}"
+
+        request.body = _body
+        return asyncio.run(
+            main_mod.hermes_dashboard_proxy(path="api/auth/password-login", request=request)
+        )
+
+    def test_multiple_set_cookie_headers_are_not_folded(self, monkeypatch):
+        resp = self._run_proxy(
+            monkeypatch,
+            [
+                ("content-type", "application/json"),
+                ("set-cookie", "hermes_session_at=AAA; Path=/; HttpOnly"),
+                ("set-cookie", "hermes_session_rt=BBB; Path=/; HttpOnly"),
+                ("set-cookie", "hermes_session_provider=basic; Path=/"),
+            ],
+        )
+        cookies = [v.decode() for k, v in resp.raw_headers if k == b"set-cookie"]
+        assert cookies == [
+            "hermes_session_at=AAA; Path=/; HttpOnly",
+            "hermes_session_rt=BBB; Path=/; HttpOnly",
+            "hermes_session_provider=basic; Path=/",
+        ]
+        assert not any("," in c and "hermes_session_rt" in c for c in cookies)
+
+    def test_decoded_body_drops_upstream_encoding_and_recomputes_length(self, monkeypatch):
+        body = b"plain-not-gzip"
+        resp = self._run_proxy(
+            monkeypatch,
+            [
+                ("content-type", "text/plain"),
+                ("content-encoding", "gzip"),
+                ("content-length", "999"),
+                ("transfer-encoding", "chunked"),
+                ("connection", "keep-alive"),
+            ],
+            body=body,
+        )
+        names = [k for k, _ in resp.raw_headers]
+        assert b"content-encoding" not in names
+        assert b"transfer-encoding" not in names
+        assert b"connection" not in names
+        assert dict(resp.raw_headers)[b"content-length"] == str(len(body)).encode()
+        assert dict(resp.raw_headers)[b"content-type"] == b"text/plain"
+        assert resp.body == body
+        assert resp.status_code == 200
+
+
 class TestHermesDashboardWsProxy:
     """hermes_dashboard_ws_proxy: WebSocket counterpart of hermes_dashboard_proxy.
 

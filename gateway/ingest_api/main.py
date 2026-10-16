@@ -4883,18 +4883,30 @@ async def hermes_dashboard_proxy(path: str, request: Request):
                 content=body,
                 follow_redirects=False,
             )
-        resp_headers = {
-            k: v
-            for k, v in resp.headers.items()
-            if k.lower() not in ("transfer-encoding", "connection")
-        }
         from starlette.responses import Response as _Resp
 
-        return _Resp(
-            content=resp.content,
-            status_code=resp.status_code,
-            headers=resp_headers,
+        # Relay upstream headers one by one, never through a dict. Hermes's
+        # password login answers with three Set-Cookie headers; a dict folded
+        # them into ONE comma-joined Set-Cookie, which RFC 6265 forbids —
+        # python/urllib then keeps only the first cookie (found on prod
+        # 2026-10-16 on the gateway-routed Conduit path). Content-Encoding /
+        # Content-Length are dropped because httpx has already decoded the
+        # body: Starlette recomputes Content-Length for the bytes we send.
+        _hop_by_hop = {
+            "transfer-encoding",
+            "connection",
+            "content-encoding",
+            "content-length",
+            "keep-alive",
+            "proxy-connection",
+        }
+        out = _Resp(content=resp.content, status_code=resp.status_code)
+        out.raw_headers.extend(
+            (k.lower().encode("latin-1"), v.encode("latin-1"))
+            for k, v in resp.headers.multi_items()
+            if k.lower() not in _hop_by_hop
         )
+        return out
     except _httpx.ConnectError:
         raise HTTPException(status_code=502, detail="Hermes dashboard unavailable")
     except Exception as exc:

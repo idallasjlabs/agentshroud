@@ -477,6 +477,31 @@ below was checked with command output, not assumed.
    → 200. (`gateway/tests/test_security_regressions_v1_2.py::TestHermesDashboardBridge*`
    2 passed.)
 
+### Afternoon (12:00–12:15 EDT): prod's evidence arrived, two more fixes committed
+Prod confirmed (raw outputs in its message): both hosts on `bfa7c03c6a`; Daily Brief
+delivered 10-14/10-15/10-16 (episodes 37–39, 10-13 is the known gap), 6 active / 29
+paused cron jobs; the `hermes-dashboard-relay` bypass is gone and `:9119` now serves
+`127.0.0.1:8080/hermes-dashboard/` — the full Conduit flow (providers → password-login →
+me → ws-ticket → WS 101 `gateway.ready`) proven through the gateway with a real websockets
+client; the iPad's own Tailscale link (relay "iad", 0 bytes, no ping reply) is what still
+blocks the app. Local model via prod gateway: clean, `finish_reason=stop`. Prod's
+lazydocker holds 119 sockets (not a runaway). Feed Refresh (`339430797fb7`) exits 1
+every Sunday 07:15 — prod-side, still open.
+
+Committed on dev after prod's report:
+1. `gateway/ingest_api/main.py` `hermes_dashboard_proxy` — upstream headers are relayed
+   one by one via `multi_items()` instead of a dict. Hermes's login sends three
+   `Set-Cookie` headers; the dict folded them into one comma-joined header (RFC 6265
+   forbids it; python/urllib keeps only the first cookie — Foundation/Conduit happened to
+   split it). `Content-Encoding`/`Content-Length` are dropped because httpx already
+   decoded the body. Tests: `TestHermesDashboardProxyHeaders` (2) in
+   `gateway/tests/test_main_endpoints.py`, file total 38 passed.
+2. `docker/bots/hermes/init-config.sh` + `start.sh` — loud alert for an empty
+   `AGENTSHROUD_PROD_CRON_KEEP` on a prod boot (the 2026-10-12 silent Daily Brief outage):
+   banner on stderr, marker `/opt/data/.agentshroud-prod-cron-keep-empty`, and the
+   count surfaced in the Telegram "Hermes online" message. Takes effect on the next
+   Hermes image build (Sunday).
+
 ### Still open for Sunday (not changed today)
 - `graphify-out/` is stale (manifest 2026-09-27; 17 commits since touching
   gateway/scripts/docker). CLAUDE.md makes a refresh mandatory before a prod rebuild —
