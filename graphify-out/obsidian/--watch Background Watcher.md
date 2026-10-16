@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/add-watch.md"
 type: "concept"
-community: "AgentShroud v0.8.0 — Full Security & Functionali"
+community: "graphify Skill"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_v080__Full_Security__Functionali
+  - community/graphify_Skill
 ---
 
 # --watch Background Watcher
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[--update Incremental Re-extraction Flow]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_v080__Full_Security__Functionali
+#graphify/concept #graphify/EXTRACTED #community/graphify_Skill

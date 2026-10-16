@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "rationale"
-community: "ServiceManager"
+community: "PIIConfig"
 location: "L226"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/PIIConfig
 ---
 
 # --- new instructions patterns should be stripped.
 
 ## Connections
-- [[.test_strips_separator_overrides()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_strips_separator_overrides()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ServiceManager
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
