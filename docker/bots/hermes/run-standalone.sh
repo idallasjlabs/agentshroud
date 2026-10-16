@@ -81,6 +81,22 @@ if [ -z "${AGENTSHROUD_ENV:-}" ]; then
 fi
 IMAGE="agentshroud/hermes:${VERSION}"
 
+# BEGIN hermes resource caps
+# 2026-10-16 owner directive: the Mac is tight on memory and dev must run with
+# less than prod. Prod keeps the caps this script always had (3g / 1.5 CPUs,
+# mirrored from docker-compose.yml's hermes block); dev — auto-detected above
+# from the invoking account — gets 2g / 1.0, which fits its 4 CPU / 8 GiB
+# Colima VM next to the lowered caps in docker-compose.agentshroud-bot.marvin.yml.
+# Override either explicitly with AGENTSHROUD_HERMES_MEMORY / AGENTSHROUD_HERMES_CPUS.
+if [ "$AGENTSHROUD_ENV" = "dev" ]; then
+  HERMES_MEMORY="${AGENTSHROUD_HERMES_MEMORY:-2g}"
+  HERMES_CPUS="${AGENTSHROUD_HERMES_CPUS:-1.0}"
+else
+  HERMES_MEMORY="${AGENTSHROUD_HERMES_MEMORY:-3g}"
+  HERMES_CPUS="${AGENTSHROUD_HERMES_CPUS:-1.5}"
+fi
+# END hermes resource caps
+
 # 2026-09-18 owner directive: dev containers must be distinguishable from prod
 # by name alone — pasted logs/status dumps had no way to tell which
 # environment they came from. Prod keeps the original name (unchanged,
@@ -329,8 +345,8 @@ cmd_up() {
     -e DOCKER_HOST="tcp://127.0.0.1:12375" \
     --security-opt "seccomp=${REPO_DIR}/docker/seccomp/agentshroud-seccomp.json" \
     --tmpfs /tmp:size=128m,mode=1777 \
-    --memory 3g \
-    --cpus 1.5 \
+    --memory "${HERMES_MEMORY}" \
+    --cpus "${HERMES_CPUS}" \
     --pids-limit 512 \
     --health-cmd "curl -fsS http://127.0.0.1:8642/health || exit 1" \
     --health-interval 30s \

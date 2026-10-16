@@ -259,6 +259,19 @@ check "S16: asb rebuild/clean-rebuild build with \$_PROFILE_FLAG (voice-gateway 
     "$([[ "$_s16_count" -ge 2 && "$_s16_bare" -le 1 ]] && echo true || echo false)" \
     "profiled build calls=${_s16_count} (need >=2), bare build calls=${_s16_bare} (only the plain 'build' command may be bare)"
 
+# S17: run-standalone.sh (Hermes) resource caps: prod keeps 3g/1.5, dev gets
+# 2g/1.0, explicit AGENTSHROUD_HERMES_MEMORY/CPUS override both. Behavioral:
+# run the real block extracted from the script. Also confirms `docker run`
+# consumes the variables rather than literals.
+_s17_block="$(sed -n '/^# BEGIN hermes resource caps$/,/^# END hermes resource caps$/p' "$hermes_run_sh")"
+_s17_prod="$(AGENTSHROUD_ENV=prod bash -c "$_s17_block"$'\n''printf "%s/%s" "$HERMES_MEMORY" "$HERMES_CPUS"')"
+_s17_dev="$(AGENTSHROUD_ENV=dev bash -c "$_s17_block"$'\n''printf "%s/%s" "$HERMES_MEMORY" "$HERMES_CPUS"')"
+_s17_ovr="$(AGENTSHROUD_ENV=dev AGENTSHROUD_HERMES_MEMORY=1500m AGENTSHROUD_HERMES_CPUS=0.75 bash -c "$_s17_block"$'\n''printf "%s/%s" "$HERMES_MEMORY" "$HERMES_CPUS"')"
+_s17_uses_vars="$(grep -c -- '--memory "${HERMES_MEMORY}"' "$hermes_run_sh" || true)"
+check "S17: run-standalone.sh (Hermes): caps prod 3g/1.5, dev 2g/1.0, env override honoured" \
+    "$([[ -n "$_s17_block" && "$_s17_prod" == "3g/1.5" && "$_s17_dev" == "2g/1.0" && "$_s17_ovr" == "1500m/0.75" && "$_s17_uses_vars" -ge 1 ]] && echo true || echo false)" \
+    "prod='${_s17_prod}' dev='${_s17_dev}' override='${_s17_ovr}' docker-run-uses-var=${_s17_uses_vars}"
+
 # ── Summary ────────────────────────────────────────────────────────────────
 echo ""
 total=$(( pass + fail ))
