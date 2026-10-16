@@ -12,7 +12,7 @@ tags:
 # .test_role_hierarchy_checks()
 
 ## Connections
-- [[RBACConfig_3]] - `calls` [EXTRACTED]
+- [[RBACConfig_1]] - `calls` [EXTRACTED]
 - [[Test role hierarchy helper methods.]] - `rationale_for` [EXTRACTED]
 - [[TestRBACConfig]] - `method` [EXTRACTED]
 

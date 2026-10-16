@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_multi_turn_tracker.py"
+source_file: "gateway/tests/test_prompt_protection.py"
 type: "code"
-community: "TestMultiTurnTracker"
-location: "L45"
+community: "TestPromptProtection"
+location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMultiTurnTracker
+  - community/TestPromptProtection
 ---
 
 # .test_initialization()
 
 ## Connections
-- [[Test proper initialization of MultiTurnTracker.]] - `rationale_for` [EXTRACTED]
-- [[TestMultiTurnTracker]] - `method` [EXTRACTED]
+- [[Test proper initialization of PromptProtection.]] - `rationale_for` [EXTRACTED]
+- [[TestPromptProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMultiTurnTracker
+#graphify/code #graphify/EXTRACTED #community/TestPromptProtection

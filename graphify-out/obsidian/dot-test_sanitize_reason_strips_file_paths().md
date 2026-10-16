@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "GitGuard"
+community: "ResourceGuard"
 location: "L203"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/ResourceGuard
 ---
 
 # .test_sanitize_reason_strips_file_paths()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestNotifyUserBlockedSanitization]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GitGuard
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

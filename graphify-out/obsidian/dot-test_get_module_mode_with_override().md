@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "code"
-community: "PIIConfig"
+community: "MiddlewareManager"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/MiddlewareManager
 ---
 
 # .test_get_module_mode_with_override()
 
 ## Connections
-- [[SecurityConfig_4]] - `calls` [EXTRACTED]
+- [[SecurityConfig]] - `calls` [EXTRACTED]
 - [[Test get_module_mode returns monitor when AGENTSHROUD_MODE=monitor.]] - `rationale_for` [EXTRACTED]
 - [[TestEnforceDefaults]] - `method` [EXTRACTED]
 - [[get_module_mode()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

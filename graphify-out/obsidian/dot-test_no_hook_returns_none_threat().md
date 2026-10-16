@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "ThreatAssessment"
+community: "ConsentFramework"
 location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ThreatAssessment
+  - community/ConsentFramework
 ---
 
 # .test_no_hook_returns_none_threat()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestScreenshotAnalysis]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ThreatAssessment
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework

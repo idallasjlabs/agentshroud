@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_browser_security.py"
+source_file: "gateway/tests/test_url_analyzer.py"
 type: "code"
-community: "ThreatAssessment"
-location: "L99"
+community: "TestSSRFDetection"
+location: "L120"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ThreatAssessment
+  - community/TestSSRFDetection
 ---
 
 # .test_https_allowed()
 
 ## Connections
-- [[TestCredentialProtection]] - `method` [EXTRACTED]
+- [[TestLegitimateURLsAllowed]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ThreatAssessment
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

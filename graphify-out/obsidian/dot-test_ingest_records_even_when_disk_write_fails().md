@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[A disk-write failure on the sentinel is swallowed; in-memory guard set.]] - `rationale_for` [EXTRACTED]
 - [[TestGhsaIngestScheduler]] - `method` [EXTRACTED]
-- [[datetime_8]] - `calls` [EXTRACTED]
+- [[datetime_7]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

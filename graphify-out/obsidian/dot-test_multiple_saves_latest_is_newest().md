@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_make_report()]] - `calls` [EXTRACTED]
-- [[IntelReportStore_1]] - `references` [EXTRACTED]
+- [[IntelReportStore]] - `references` [EXTRACTED]
 - [[TestIntelReportStore]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

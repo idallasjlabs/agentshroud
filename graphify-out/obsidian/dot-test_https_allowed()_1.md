@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_url_analyzer.py"
+source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "TestSSRFDetection"
-location: "L120"
+community: "ConsentFramework"
+location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/ConsentFramework
 ---
 
 # .test_https_allowed()
 
 ## Connections
-- [[TestLegitimateURLsAllowed]] - `method` [EXTRACTED]
+- [[TestCredentialProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "_FakeAttack"
+community: "AuditChain"
 location: "L896"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeAttack
+  - community/AuditChain
 ---
 
 # .test_owner_exempted_block_does_not_decay_trust()
@@ -17,4 +17,4 @@ tags:
 - [[TestTrustViolationRecording]] - `method` [EXTRACTED]
 - [[_FakeAttack]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeAttack
+#graphify/code #graphify/EXTRACTED #community/AuditChain

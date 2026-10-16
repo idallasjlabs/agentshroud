@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "GitGuard"
+community: "ResourceGuard"
 location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/ResourceGuard
 ---
 
 # .test_no_hardcoded_owner_id_in_lifespan()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDRYOwnerChatID]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GitGuard
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

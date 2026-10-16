@@ -12,7 +12,7 @@ tags:
 # .test_is_auto_approved_unknown_host()
 
 ## Connections
-- [[SSHProxy_1]] - `references` [EXTRACTED]
+- [[SSHProxy]] - `references` [EXTRACTED]
 - [[TestIsAutoApproved]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SSHHostConfig

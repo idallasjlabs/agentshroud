@@ -12,7 +12,7 @@ tags:
 # .test_minimal_valid_report()
 
 ## Connections
-- [[CompetitiveIntelReport_1]] - `calls` [EXTRACTED]
+- [[CompetitiveIntelReport]] - `calls` [EXTRACTED]
 - [[TestCompetitiveIntelReportSchema]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

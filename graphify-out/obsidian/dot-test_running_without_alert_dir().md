@@ -12,6 +12,6 @@ tags:
 # .test_running_without_alert_dir()
 
 ## Connections
-- [[TestFalcoSummary]] - `method` [EXTRACTED]
+- [[TestFalcoSummary_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestFalcoSummary

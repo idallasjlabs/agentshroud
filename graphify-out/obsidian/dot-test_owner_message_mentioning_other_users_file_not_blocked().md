@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "code"
-community: "test_file_sandbox_message_gate.py"
+community: "UserSessionManager"
 location: "L202"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_file_sandbox_message_gatepy
+  - community/UserSessionManager
 ---
 
 # .test_owner_message_mentioning_other_users_file_not_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[TestOwnerBypassContentPatternChecks]] - `method` [EXTRACTED]
 - [[_plain_msg()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_file_sandbox_message_gatepy
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

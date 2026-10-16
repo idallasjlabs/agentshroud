@@ -12,6 +12,6 @@ tags:
 # .test_running_with_alerts_sets_timestamp()
 
 ## Connections
-- [[TestFalcoSummary]] - `method` [EXTRACTED]
+- [[TestFalcoSummary_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestFalcoSummary

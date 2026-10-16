@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "FakeProcess"
+community: "MCPPermissionManager"
 location: "L302"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FakeProcess
+  - community/MCPPermissionManager
 ---
 
 # .test_missing_aiohttp_raises_runtime_error()
@@ -17,4 +17,4 @@ tags:
 - [[MCPServerConfig_2]] - `calls` [EXTRACTED]
 - [[TestHttpSseConnection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FakeProcess
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

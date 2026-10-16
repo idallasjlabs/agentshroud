@@ -12,7 +12,7 @@ tags:
 # .test_returns_one_entry_per_report_file()
 
 ## Connections
-- [[Path_41]] - `calls` [EXTRACTED]
+- [[Path_27]] - `calls` [EXTRACTED]
 - [[TestGetTrivyImageSummaries]] - `method` [EXTRACTED]
 - [[_clean_trivy_report()]] - `calls` [EXTRACTED]
 - [[_write_image_report()]] - `calls` [EXTRACTED]

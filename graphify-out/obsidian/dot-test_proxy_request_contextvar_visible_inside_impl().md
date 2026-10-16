@@ -12,7 +12,7 @@ tags:
 # .test_proxy_request_contextvar_visible_inside_impl()
 
 ## Connections
-- [[dot-_make_proxy()_4]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_1]] - `calls` [EXTRACTED]
 - [[TestMultiBotContextvarRouting]] - `method` [EXTRACTED]
 - [[The contextvar set by proxy_request is visible throughout _proxy_request_impl.]] - `rationale_for` [EXTRACTED]
 

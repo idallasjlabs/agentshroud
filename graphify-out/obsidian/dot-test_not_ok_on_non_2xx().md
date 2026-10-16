@@ -12,7 +12,7 @@ tags:
 # .test_not_ok_on_non_2xx()
 
 ## Connections
-- [[FetchOutcome_1]] - `calls` [EXTRACTED]
+- [[FetchOutcome]] - `calls` [EXTRACTED]
 - [[TestFetchOutcome]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy

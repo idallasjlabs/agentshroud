@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[PrivacyPolicyEnforcer]] - `calls` [EXTRACTED]
 - [[TestServiceAccessControl]] - `method` [EXTRACTED]
-- [[_make_rbac()]] - `calls` [EXTRACTED]
+- [[_make_rbac()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

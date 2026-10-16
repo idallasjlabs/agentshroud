@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "_FakeAttack"
+community: "AuditChain"
 location: "L244"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeAttack
+  - community/AuditChain
 ---
 
 # .test_repetition_attack_does_not_block()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TestContextGuardInPipeline]] - `method` [EXTRACTED]
 - [[_FakeAttack]] - `calls` [EXTRACTED]
-- [[_make_pipeline()_3]] - `calls` [EXTRACTED]
+- [[_make_pipeline()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeAttack
+#graphify/code #graphify/EXTRACTED #community/AuditChain

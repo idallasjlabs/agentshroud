@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "get_falco_summary"
-location: "L302"
+community: "test_scanner_integration.py"
+location: "L339"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_falco_summary
+  - community/test_scanner_integrationpy
 ---
 
 # .test_not_run_when_no_alert_dir()
 
 ## Connections
-- [[Path_41]] - `calls` [EXTRACTED]
-- [[TestGetFalcoSummary]] - `method` [EXTRACTED]
-- [[get_falco_summary()]] - `calls` [EXTRACTED]
+- [[Path_27]] - `calls` [EXTRACTED]
+- [[TestGetWazuhSummary]] - `method` [EXTRACTED]
+- [[get_wazuh_summary()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_falco_summary
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

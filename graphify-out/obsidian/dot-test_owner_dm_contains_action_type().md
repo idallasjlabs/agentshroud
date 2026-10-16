@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "code"
-community: "ApprovalRequest"
+community: "GroupApprovalRouter"
 location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/GroupApprovalRouter
 ---
 
 # .test_owner_dm_contains_action_type()
 
 ## Connections
-- [[ApprovalRequest_5]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_4]] - `calls` [EXTRACTED]
 - [[Owner DM must describe the action_type that requires approval.]] - `rationale_for` [EXTRACTED]
 - [[TestGroupApprovalOwnerDM]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter

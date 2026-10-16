@@ -12,7 +12,7 @@ tags:
 # .test_no_bot_username_does_not_set_eligibility()
 
 ## Connections
-- [[dot-_make_proxy()_5]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_2]] - `calls` [EXTRACTED]
 - [[TestGroupMentionFilter]] - `method` [EXTRACTED]
 - [[When bot_username is unset the filter is bypassed entirely.]] - `rationale_for` [EXTRACTED]
 - [[_make_group_update()]] - `calls` [EXTRACTED]

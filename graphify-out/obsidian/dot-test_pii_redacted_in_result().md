@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "MCPToolResult"
+community: "MCPPermissionManager"
 location: "L690"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPToolResult
+  - community/MCPPermissionManager
 ---
 
 # .test_pii_redacted_in_result()
@@ -15,4 +15,4 @@ tags:
 - [[MCPToolResult]] - `calls` [EXTRACTED]
 - [[TestProxyResultProcessing]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPToolResult
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

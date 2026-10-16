@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_web_proxy.py"
+source_file: "gateway/tests/test_url_analyzer.py"
 type: "code"
-community: "TestSSRFBlocking"
-location: "L137"
+community: "TestSSRFDetection"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFBlocking
+  - community/TestSSRFDetection
 ---
 
 # .test_hex_ip_blocked()
 
 ## Connections
-- [[TestSSRFBlocking]] - `method` [EXTRACTED]
+- [[0x7f000001 = 127.0.0.1 in hex.]] - `rationale_for` [EXTRACTED]
+- [[TestSSRFDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFBlocking
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

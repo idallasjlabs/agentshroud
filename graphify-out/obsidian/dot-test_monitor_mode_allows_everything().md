@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
 community: "AlertDispatcher"
-location: "L583"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,9 @@ tags:
 # .test_monitor_mode_allows_everything()
 
 ## Connections
-- [[Monitor mode flags but allows — verify difference from enforce.]] - `rationale_for` [EXTRACTED]
-- [[TestFileSandbox]] - `method` [EXTRACTED]
+- [[Even blocked paths are allowed in monitor mode (just flagged).]] - `rationale_for` [EXTRACTED]
+- [[FileSandbox]] - `calls` [EXTRACTED]
+- [[FileSandboxConfig]] - `calls` [EXTRACTED]
+- [[TestNormalFileOperations]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher

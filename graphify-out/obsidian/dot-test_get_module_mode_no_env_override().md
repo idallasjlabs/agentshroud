@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "load_config"
+community: "MiddlewareManager"
 location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/MiddlewareManager
 ---
 
 # .test_get_module_mode_no_env_override()
 
 ## Connections
-- [[GatewayConfig_3]] - `calls` [EXTRACTED]
+- [[GatewayConfig_4]] - `calls` [EXTRACTED]
 - [[TestGetModuleModeEnforceDefault]] - `method` [EXTRACTED]
 - [[get_module_mode()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

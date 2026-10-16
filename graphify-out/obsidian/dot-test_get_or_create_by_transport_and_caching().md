@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "StdioConnection"
+community: "MCPPermissionManager"
 location: "L317"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/MCPPermissionManager
 ---
 
 # .test_get_or_create_by_transport_and_caching()
@@ -16,4 +16,4 @@ tags:
 - [[MCPServerConfig_2]] - `calls` [EXTRACTED]
 - [[TestConnectionPool]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

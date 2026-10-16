@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "OutboundInfoFilter"
+community: "AuditChain"
 location: "L807"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutboundInfoFilter
+  - community/AuditChain
 ---
 
 # .test_outbound_filter_still_escalates_fabricated_notice()
@@ -17,4 +17,4 @@ tags:
 - [[SecurityPipeline_2]] - `calls` [EXTRACTED]
 - [[TestOutboundFilterResultBinding]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/AuditChain

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/tests/test_op_proxy.py"
 type: "code"
-community: "FetchOutcome"
-location: "L173"
+community: "test_main_endpoints.py"
+location: "L184"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/test_main_endpointspy
 ---
 
 # .test_requires_auth()
 
 ## Connections
-- [[TestSubmitAuth]] - `method` [EXTRACTED]
-- [[_draft()]] - `calls` [EXTRACTED]
+- [[Endpoint returns 401 without auth override.]] - `rationale_for` [EXTRACTED]
+- [[TestOpProxyEndpoint]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy

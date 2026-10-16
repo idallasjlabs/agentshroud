@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "PermissionLevel"
+community: "MCPPermissionManager"
 location: "L398"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PermissionLevel
+  - community/MCPPermissionManager
 ---
 
 # .test_rate_limit_enforced()
 
 ## Connections
-- [[TestRateLimiting]] - `method` [EXTRACTED]
+- [[TestRateLimiting_3]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PermissionLevel
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

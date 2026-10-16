@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_store_path()]] - `calls` [EXTRACTED]
-- [[RBACConfig_3]] - `calls` [EXTRACTED]
+- [[RBACConfig_1]] - `calls` [EXTRACTED]
 - [[TestCollaboratorPersistence]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestCollaboratorPersistence

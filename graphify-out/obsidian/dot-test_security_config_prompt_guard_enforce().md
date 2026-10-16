@@ -12,7 +12,7 @@ tags:
 # .test_security_config_prompt_guard_enforce()
 
 ## Connections
-- [[SecurityConfig_4]] - `calls` [EXTRACTED]
+- [[SecurityConfig]] - `calls` [EXTRACTED]
 - [[TestSecurityConfigDefaults]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

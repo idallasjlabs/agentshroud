@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestOutboundScanUnification"
+community: "TestMultipartOutboundPipeline"
 location: "L5232"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundScanUnification
+  - community/TestMultipartOutboundPipeline
 ---
 
 # .test_json_caption_pipeline_block_replaces_caption()
@@ -18,4 +18,4 @@ tags:
 - [[TestOutboundScanUnification]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundScanUnification
+#graphify/code #graphify/EXTRACTED #community/TestMultipartOutboundPipeline

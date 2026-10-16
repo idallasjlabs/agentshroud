@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "TestMiddlewareSessionEnforcement"
+community: "UserSessionManager"
 location: "L581"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMiddlewareSessionEnforcement
+  - community/UserSessionManager
 ---
 
 # .test_session_persistence()
@@ -16,4 +16,4 @@ tags:
 - [[TestSessionIsolationEndToEnd]] - `method` [EXTRACTED]
 - [[UserSessionManager]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMiddlewareSessionEnforcement
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

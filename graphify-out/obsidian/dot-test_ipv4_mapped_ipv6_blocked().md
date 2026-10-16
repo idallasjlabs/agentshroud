@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_egress_filter.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "_make_filter"
-location: "L146"
+community: "WebProxyConfig"
+location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_filter
+  - community/WebProxyConfig
 ---
 
 # .test_ipv4_mapped_ipv6_blocked()
 
 ## Connections
-- [[TestIPRules]] - `method` [EXTRACTED]
-- [[_make_filter()]] - `calls` [EXTRACTED]
+- [[TestSSRFBlocking]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_filter
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

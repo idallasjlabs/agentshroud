@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "GitGuard"
+community: "ResourceGuard"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/ResourceGuard
 ---
 
 # .test_keyvault_instantiated_and_seeded_in_lifespan()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKeyVaultWired]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GitGuard
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

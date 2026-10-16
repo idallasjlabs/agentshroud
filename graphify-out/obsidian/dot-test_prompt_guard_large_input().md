@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "ResourceGuard"
+community: "PIIConfig"
 location: "L1079"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/PIIConfig
 ---
 
 # .test_prompt_guard_large_input()
 
 ## Connections
 - [[Large inputs shouldn't crash prompt guard.]] - `rationale_for` [EXTRACTED]
-- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
 - [[TestResourceProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

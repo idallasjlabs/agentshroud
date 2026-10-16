@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "OutboundInfoFilter"
+community: "AuditChain"
 location: "L769"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutboundInfoFilter
+  - community/AuditChain
 ---
 
 # .test_non_owner_inbound_query_still_redacted()
@@ -17,4 +17,4 @@ tags:
 - [[SecurityPipeline_2]] - `calls` [EXTRACTED]
 - [[TestInboundPIIOwnerExemption]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/AuditChain

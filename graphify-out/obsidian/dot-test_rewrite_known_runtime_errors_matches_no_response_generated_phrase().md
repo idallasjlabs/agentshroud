@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "CollaboratorActivityTracker"
+community: "test_telegram_proxy_outbound.py"
 location: "L3837"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CollaboratorActivityTracker
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # .test_rewrite_known_runtime_errors_matches_no_response_generated_phrase()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestRuntimeRewriteHelpers]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CollaboratorActivityTracker
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

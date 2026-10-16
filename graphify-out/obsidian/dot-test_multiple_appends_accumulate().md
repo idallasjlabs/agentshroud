@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "test_shared_memory.py"
+community: "RBACConfig"
 location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_shared_memorypy
+  - community/RBACConfig
 ---
 
 # .test_multiple_appends_accumulate()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGroupMemoryReadWrite]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_shared_memorypy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

@@ -15,6 +15,6 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestOutboundPipelineBlocked]] - `method` [EXTRACTED]
 - [[_make_pipeline_result()]] - `calls` [EXTRACTED]
-- [[_make_proxy()]] - `calls` [EXTRACTED]
+- [[_make_proxy()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PipelineAction

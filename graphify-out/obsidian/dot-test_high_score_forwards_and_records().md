@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "OutboundInfoFilter"
+community: "AuditChain"
 location: "L423"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutboundInfoFilter
+  - community/AuditChain
 ---
 
 # .test_high_score_forwards_and_records()
@@ -15,4 +15,4 @@ tags:
 - [[TestContextIntegrityInPipeline]] - `method` [EXTRACTED]
 - [[_make_integrity_pipeline()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/AuditChain

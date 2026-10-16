@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "lifespan.py"
+community: "MiddlewareManager"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/MiddlewareManager
 ---
 
 # .test_hash_computation()
@@ -15,4 +15,4 @@ tags:
 - [[Test file hash computation.]] - `rationale_for` [EXTRACTED]
 - [[TestMemoryIntegrityMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

@@ -12,7 +12,7 @@ tags:
 # .test_persistence_across_instances()
 
 ## Connections
-- [[TestPersistence_1]] - `method` [EXTRACTED]
-- [[TrustManager]] - `calls` [EXTRACTED]
+- [[TestPersistence]] - `method` [EXTRACTED]
+- [[TrustManager_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

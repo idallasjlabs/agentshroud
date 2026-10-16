@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "AgentRegistry"
+community: "AlertDispatcher"
 location: "L624"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/AlertDispatcher
 ---
 
 # .test_no_baseline_no_alerts()
@@ -15,4 +15,4 @@ tags:
 - [[ContainerSnapshot]] - `calls` [EXTRACTED]
 - [[TestDriftDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

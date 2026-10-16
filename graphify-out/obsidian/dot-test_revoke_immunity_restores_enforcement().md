@@ -12,10 +12,10 @@ tags:
 # .test_revoke_immunity_restores_enforcement()
 
 ## Connections
-- [[dot-_make_proxy()_5]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_2]] - `calls` [EXTRACTED]
 - [[ri uid must remove immunity and confirm to owner.]] - `rationale_for` [EXTRACTED]
 - [[TestProgressiveLockdownUX]] - `method` [EXTRACTED]
-- [[_make_update()]] - `calls` [EXTRACTED]
+- [[_make_update()_1]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_wrap_response

@@ -12,9 +12,9 @@ tags:
 # .test_plan_maps_canonical_to_each_bot_destination()
 
 ## Connections
-- [[Path_30]] - `references` [EXTRACTED]
+- [[Path_54]] - `references` [EXTRACTED]
 - [[TestPlanDeploy]] - `method` [EXTRACTED]
-- [[_write_tree()]] - `calls` [EXTRACTED]
+- [[_write_tree()_1]] - `calls` [EXTRACTED]
 - [[plan_deploy()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Path

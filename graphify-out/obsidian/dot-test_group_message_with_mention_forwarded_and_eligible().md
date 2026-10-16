@@ -12,7 +12,7 @@ tags:
 # .test_group_message_with_mention_forwarded_and_eligible()
 
 ## Connections
-- [[dot-_make_proxy()_5]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_2]] - `calls` [EXTRACTED]
 - [[Group messages with @mention are forwarded and mark chat as response-eligible.]] - `rationale_for` [EXTRACTED]
 - [[TestGroupMentionFilter]] - `method` [EXTRACTED]
 - [[_make_group_update()]] - `calls` [EXTRACTED]

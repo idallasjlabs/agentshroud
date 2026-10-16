@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "code"
-community: "test_file_sandbox_message_gate.py"
+community: "UserSessionManager"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_file_sandbox_message_gatepy
+  - community/UserSessionManager
 ---
 
 # .test_plain_chat_not_a_tool_call()
@@ -15,4 +15,4 @@ tags:
 - [[TestIsToolCallRequest]] - `method` [EXTRACTED]
 - [[_plain_msg()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_file_sandbox_message_gatepy
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

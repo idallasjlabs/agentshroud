@@ -12,7 +12,7 @@ tags:
 # .test_group_message_without_mention_forwarded_but_flagged()
 
 ## Connections
-- [[dot-_make_proxy()_5]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_2]] - `calls` [EXTRACTED]
 - [[Group messages without @mention are forwarded (for context) but mark chat as res]] - `rationale_for` [EXTRACTED]
 - [[TestGroupMentionFilter]] - `method` [EXTRACTED]
 - [[_make_group_update()]] - `calls` [EXTRACTED]

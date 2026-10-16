@@ -12,7 +12,7 @@ tags:
 # .test_predicate_strips_leading_bot_mention()
 
 ## Connections
-- [[dot-_make_proxy()_5]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_2]] - `calls` [EXTRACTED]
 - [[@agentshroud_hermes_bot hello' normalises to 'hello' → matches.]] - `rationale_for` [EXTRACTED]
 - [[TestGroupPresenceProbe]] - `method` [EXTRACTED]
 

@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[A raised per-agent check error is ISOLATED — the ingest still completes.]] - `rationale_for` [EXTRACTED]
 - [[TestGhsaIngestScheduler]] - `method` [EXTRACTED]
-- [[datetime_8]] - `calls` [EXTRACTED]
+- [[datetime_7]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

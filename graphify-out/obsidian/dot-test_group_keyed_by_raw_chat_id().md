@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[GroupWorkspaceManager]] - `calls` [EXTRACTED]
-- [[TeamsConfig]] - `calls` [EXTRACTED]
+- [[TeamsConfig_2]] - `calls` [EXTRACTED]
 - [[TestDefensiveGuards]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RBACConfig

@@ -12,7 +12,7 @@ tags:
 # .test_owner_bypass()
 
 ## Connections
-- [[TestGitGuard]] - `method` [EXTRACTED]
+- [[TestGitGuard_1]] - `method` [EXTRACTED]
 - [[_FakeRBAC_1]] - `calls` [EXTRACTED]
 - [[_req()_1]] - `calls` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "TestParamSanitization"
+community: "TestToolChainAnalyzer"
 location: "L543"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestParamSanitization
+  - community/TestToolChainAnalyzer
 ---
 
 # .test_reversibility_below_threshold_has_reasoning()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestReversibilityScoring]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestParamSanitization
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

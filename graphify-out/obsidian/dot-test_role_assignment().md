@@ -12,7 +12,7 @@ tags:
 # .test_role_assignment()
 
 ## Connections
-- [[RBACConfig_3]] - `calls` [EXTRACTED]
+- [[RBACConfig_1]] - `calls` [EXTRACTED]
 - [[Test dynamic role assignment.]] - `rationale_for` [EXTRACTED]
 - [[TestRBACConfig]] - `method` [EXTRACTED]
 

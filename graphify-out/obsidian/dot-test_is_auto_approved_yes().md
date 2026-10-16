@@ -12,7 +12,7 @@ tags:
 # .test_is_auto_approved_yes()
 
 ## Connections
-- [[SSHProxy_1]] - `references` [EXTRACTED]
+- [[SSHProxy]] - `references` [EXTRACTED]
 - [[TestIsAutoApproved]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SSHHostConfig

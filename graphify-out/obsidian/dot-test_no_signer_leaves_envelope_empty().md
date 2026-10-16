@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "EnvelopeSigner"
+community: "AuditChain"
 location: "L551"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnvelopeSigner
+  - community/AuditChain
 ---
 
 # .test_no_signer_leaves_envelope_empty()
 
 ## Connections
 - [[TestEnvelopeSignerInPipeline]] - `method` [EXTRACTED]
-- [[_make_pipeline()_3]] - `calls` [EXTRACTED]
+- [[_make_pipeline()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnvelopeSigner
+#graphify/code #graphify/EXTRACTED #community/AuditChain

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "lifespan.py"
+community: "MiddlewareManager"
 location: "L410"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/MiddlewareManager
 ---
 
 # .test_integrated_memory_protection()
@@ -15,4 +15,4 @@ tags:
 - [[Test complete memory protection workflow.]] - `rationale_for` [EXTRACTED]
 - [[TestMemorySecurityIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

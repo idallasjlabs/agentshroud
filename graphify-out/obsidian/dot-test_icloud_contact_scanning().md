@@ -19,6 +19,6 @@ tags:
 - [[Test scanning iCloud contact data for PII]] - `rationale_for` [EXTRACTED]
 - [[TestRealWorldScenarios]] - `method` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `calls` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `calls` [EXTRACTED]
+- [[ToolResultSanitizer]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

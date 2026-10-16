@@ -12,7 +12,7 @@ tags:
 # .test_pii_sanitizer_default_action()
 
 ## Connections
-- [[SecurityConfig_4]] - `calls` [EXTRACTED]
+- [[SecurityConfig]] - `calls` [EXTRACTED]
 - [[Test that PII sanitizer defaults to redact action.]] - `rationale_for` [EXTRACTED]
 - [[TestEnforceDefaults]] - `method` [EXTRACTED]
 

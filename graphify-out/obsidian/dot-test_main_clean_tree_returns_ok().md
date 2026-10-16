@@ -12,8 +12,8 @@ tags:
 # .test_main_clean_tree_returns_ok()
 
 ## Connections
-- [[Path_44]] - `references` [EXTRACTED]
+- [[Path_28]] - `references` [EXTRACTED]
 - [[TestScanEntrypointInProcess]] - `method` [EXTRACTED]
-- [[_write_tree()_1]] - `calls` [EXTRACTED]
+- [[_write_tree()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Path

@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[BlockingPipeline]] - `calls` [EXTRACTED]
 - [[FakeRBAC]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[Zero-width obfuscation should be normalized before pipeline evaluation.]] - `rationale_for` [EXTRACTED]
-- [[_make_update()]] - `calls` [EXTRACTED]
+- [[_make_update()_1]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/BlockingPipeline

@@ -12,7 +12,7 @@ tags:
 # .test_load_latest_returns_none_when_empty()
 
 ## Connections
-- [[IntelReportStore_1]] - `references` [EXTRACTED]
+- [[IntelReportStore]] - `references` [EXTRACTED]
 - [[TestIntelReportStore]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

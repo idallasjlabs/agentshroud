@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Role"
+community: "RBACConfig"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Role
+  - community/RBACConfig
 ---
 
 # .test_owner_can_use_any_unknown_tool()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOwnerAccess]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Role
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

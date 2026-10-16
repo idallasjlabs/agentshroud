@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "TestExtractEgressTargets"
+community: "MCPPermissionManager"
 location: "L366"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestExtractEgressTargets
+  - community/MCPPermissionManager
 ---
 
 # .test_list_inherits_parent_key()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestExtractEgressTargets]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestExtractEgressTargets
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

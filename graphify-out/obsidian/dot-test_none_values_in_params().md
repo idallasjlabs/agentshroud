@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "TestInspectorEdgeCases"
+community: "MCPPermissionManager"
 location: "L1122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInspectorEdgeCases
+  - community/MCPPermissionManager
 ---
 
 # .test_none_values_in_params()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestInspectorEdgeCases]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInspectorEdgeCases
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

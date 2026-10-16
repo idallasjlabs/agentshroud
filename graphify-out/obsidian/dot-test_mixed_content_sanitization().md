@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Test sanitization of mixed legitimate and malicious content.]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
+- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

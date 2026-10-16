@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_prompt_protection.py"
+source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "TestPromptProtection"
-location: "L42"
+community: "ToolResultSanitizer"
+location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPromptProtection
+  - community/ToolResultSanitizer
 ---
 
 # .test_initialization()
 
 ## Connections
-- [[Test proper initialization of PromptProtection.]] - `rationale_for` [EXTRACTED]
-- [[TestPromptProtection]] - `method` [EXTRACTED]
+- [[Test sanitizer initialization]] - `rationale_for` [EXTRACTED]
+- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPromptProtection
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

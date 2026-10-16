@@ -12,7 +12,7 @@ tags:
 # .test_git_guard_exception_fails_closed()
 
 ## Connections
-- [[TestGitGuard]] - `method` [EXTRACTED]
+- [[TestGitGuard_1]] - `method` [EXTRACTED]
 - [[_req()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_req

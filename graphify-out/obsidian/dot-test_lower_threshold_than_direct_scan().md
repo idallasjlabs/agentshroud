@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "PIIConfig"
+community: "ContextSegment"
 location: "L260"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ContextSegment
 ---
 
 # .test_lower_threshold_than_direct_scan()
@@ -15,4 +15,4 @@ tags:
 - [[TestToolResultScan]] - `method` [EXTRACTED]
 - [[Tool result scan blocks at score ≥ 0.6 vs direct scan threshold of 0.8.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

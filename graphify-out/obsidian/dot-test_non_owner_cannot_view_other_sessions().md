@@ -12,6 +12,6 @@ tags:
 # .test_non_owner_cannot_view_other_sessions()
 
 ## Connections
-- [[TestAccessControl]] - `method` [EXTRACTED]
+- [[TestAccessControl_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/UserSessionManager

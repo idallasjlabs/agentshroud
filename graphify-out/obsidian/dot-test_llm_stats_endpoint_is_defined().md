@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "GitGuard"
+community: "ResourceGuard"
 location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/ResourceGuard
 ---
 
 # .test_llm_stats_endpoint_is_defined()
@@ -15,4 +15,4 @@ tags:
 - [[TestLLMProxyEndpoints]] - `method` [EXTRACTED]
 - [[The llm-proxystats endpoint must exist.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GitGuard
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

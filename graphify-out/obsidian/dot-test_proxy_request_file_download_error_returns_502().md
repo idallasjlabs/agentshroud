@@ -12,7 +12,7 @@ tags:
 # .test_proxy_request_file_download_error_returns_502()
 
 ## Connections
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestFileDownload]] - `method` [EXTRACTED]
 - [[proxy_request returns 502 sentinel when file download raises.]] - `rationale_for` [EXTRACTED]
 

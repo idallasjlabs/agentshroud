@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "TestOriginAwareAuthorization"
+community: "RBACConfig"
 location: "L363"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOriginAwareAuthorization
+  - community/RBACConfig
 ---
 
 # .test_owner_claim_over_unverified_origin_is_refused_elevation()
@@ -15,4 +15,4 @@ tags:
 - [[TestOriginAwareAuthorization]] - `method` [EXTRACTED]
 - [[The core of the CVE class a side channel claiming to be the owner.          ter]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOriginAwareAuthorization
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

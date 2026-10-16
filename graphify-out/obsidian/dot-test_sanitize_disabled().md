@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "MiddlewareManager"
 location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/MiddlewareManager
 ---
 
 # .test_sanitize_disabled()
 
 ## Connections
 - [[Test sanitizer when disabled]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
+- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `calls` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `calls` [EXTRACTED]
+- [[ToolResultSanitizer]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

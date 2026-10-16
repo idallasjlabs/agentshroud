@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "_patch_open"
+community: "ServiceManager"
 location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_patch_open
+  - community/ServiceManager
 ---
 
 # .test_running_via_proc_scan()
@@ -16,4 +16,4 @@ tags:
 - [[TestCheckClamd]] - `method` [EXTRACTED]
 - [[_patch_open()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_patch_open
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

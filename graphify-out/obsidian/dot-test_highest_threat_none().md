@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "MCPToolCall"
+community: "MCPPermissionManager"
 location: "L1279"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/MCPPermissionManager
 ---
 
 # .test_highest_threat_none()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestThreatLevelCalc]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPToolCall
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

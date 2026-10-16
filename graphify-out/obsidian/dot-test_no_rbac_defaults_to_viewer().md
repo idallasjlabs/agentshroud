@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Role"
+community: "RBACConfig"
 location: "L216"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Role
+  - community/RBACConfig
 ---
 
 # .test_no_rbac_defaults_to_viewer()
@@ -15,4 +15,4 @@ tags:
 - [[TestNoRBACConfig]] - `method` [EXTRACTED]
 - [[ToolACLEnforcer]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Role
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

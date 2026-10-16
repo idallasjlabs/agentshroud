@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[HeuristicClassifier]] - `calls` [EXTRACTED]
-- [[PromptGuard_1]] - `calls` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
 - [[TestPersonaHijack]] - `method` [EXTRACTED]
 - [[_any_detector_fires()]] - `calls` [EXTRACTED]
 

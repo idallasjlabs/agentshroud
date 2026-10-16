@@ -12,9 +12,9 @@ tags:
 # .test_manifest_json_in_source_is_excluded()
 
 ## Connections
-- [[Path_30]] - `references` [EXTRACTED]
+- [[Path_54]] - `references` [EXTRACTED]
 - [[TestSkillsManifest]] - `method` [EXTRACTED]
-- [[_write_tree()]] - `calls` [EXTRACTED]
+- [[_write_tree()_1]] - `calls` [EXTRACTED]
 - [[manifest.json must never appear as an entry even when present in source.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Path

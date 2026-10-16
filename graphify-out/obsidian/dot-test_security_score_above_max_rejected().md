@@ -12,7 +12,7 @@ tags:
 # .test_security_score_above_max_rejected()
 
 ## Connections
-- [[CompetitorEntry_1]] - `calls` [EXTRACTED]
+- [[CompetitorEntry]] - `calls` [EXTRACTED]
 - [[TestCompetitiveIntelReportSchema]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

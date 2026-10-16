@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "ThreatAssessment"
+community: "ConsentFramework"
 location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ThreatAssessment
+  - community/ConsentFramework
 ---
 
 # .test_homograph_attack()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestURLReputation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ThreatAssessment
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework

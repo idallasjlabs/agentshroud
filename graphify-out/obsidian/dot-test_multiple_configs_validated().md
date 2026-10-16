@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_consent_framework.py"
 type: "code"
-community: "ServerConfig"
+community: "ConsentFramework"
 location: "L156"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServerConfig
+  - community/ConsentFramework
 ---
 
 # .test_multiple_configs_validated()
@@ -15,4 +15,4 @@ tags:
 - [[ServerConfig]] - `calls` [EXTRACTED]
 - [[TestEnvironmentValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServerConfig
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework

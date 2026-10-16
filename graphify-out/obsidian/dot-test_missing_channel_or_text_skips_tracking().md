@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestOutboundTracking]] - `method` [EXTRACTED]
-- [[_make_proxy()_1]] - `calls` [EXTRACTED]
+- [[_make_proxy()_2]] - `calls` [EXTRACTED]
 - [[chat.postMessage without channeltext → nothing recorded, no lookups.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AsyncMock

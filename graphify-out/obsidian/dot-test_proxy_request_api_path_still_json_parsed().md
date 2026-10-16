@@ -12,7 +12,7 @@ tags:
 # .test_proxy_request_api_path_still_json_parsed()
 
 ## Connections
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestFileDownload]] - `method` [EXTRACTED]
 - [[proxy_request without file prefix still JSON-parses the response.]] - `rationale_for` [EXTRACTED]
 

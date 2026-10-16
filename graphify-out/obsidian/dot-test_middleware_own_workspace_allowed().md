@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "TestMiddlewareSessionEnforcement"
+community: "UserSessionManager"
 location: "L449"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMiddlewareSessionEnforcement
+  - community/UserSessionManager
 ---
 
 # .test_middleware_own_workspace_allowed()
@@ -15,4 +15,4 @@ tags:
 - [[Test that users can access their own workspace.]] - `rationale_for` [EXTRACTED]
 - [[TestMiddlewareSessionEnforcement]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMiddlewareSessionEnforcement
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

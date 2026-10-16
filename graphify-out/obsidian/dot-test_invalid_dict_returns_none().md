@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Enum"
+community: "test_soc_realtime_coverage.py"
 location: "L594"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .test_invalid_dict_returns_none()
@@ -15,4 +15,4 @@ tags:
 - [[TestCoerceToWSEventExtra]] - `method` [EXTRACTED]
 - [[_coerce_to_ws_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

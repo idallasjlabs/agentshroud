@@ -12,7 +12,7 @@ tags:
 # .test_proxy_request_resets_contextvar_after_return()
 
 ## Connections
-- [[dot-_make_proxy()_4]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_1]] - `calls` [EXTRACTED]
 - [[After proxy_request returns, _inbound_bot_token is reset to its prior value.]] - `rationale_for` [EXTRACTED]
 - [[TestMultiBotContextvarRouting]] - `method` [EXTRACTED]
 

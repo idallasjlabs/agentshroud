@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "MCPPermissionManager"
 location: "L282"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/MCPPermissionManager
 ---
 
 # .test_low_risk_tool_allowed()
 
 ## Connections
-- [[MCPToolCall]] - `calls` [EXTRACTED]
+- [[MCPToolCall_1]] - `calls` [EXTRACTED]
 - [[Test that low-risk tools are allowed without approval.]] - `rationale_for` [EXTRACTED]
 - [[TestMCPProxyIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

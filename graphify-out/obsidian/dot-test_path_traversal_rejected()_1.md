@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_oauth_security.py"
+source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "OAuthSecurityValidator"
-location: "L171"
+community: "UserSessionManager"
+location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OAuthSecurityValidator
+  - community/UserSessionManager
 ---
 
 # .test_path_traversal_rejected()
 
 ## Connections
-- [[TestRedirectURI]] - `method` [EXTRACTED]
+- [[TestInputValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

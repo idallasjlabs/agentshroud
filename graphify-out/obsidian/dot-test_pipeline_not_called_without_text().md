@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[FakeRBAC]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[Updates without text (e.g. photos) should skip the pipeline.]] - `rationale_for` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
