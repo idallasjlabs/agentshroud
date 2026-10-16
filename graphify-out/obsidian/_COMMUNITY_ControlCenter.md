@@ -10,7 +10,7 @@ members: 30
 **Members:** 30 nodes
 
 ## Members
-- [[dot-__init__()_105]] - code - src/interfaces/text_control_center.py
+- [[dot-__init__()_102]] - code - src/interfaces/text_control_center.py
 - [[dot-clear_screen()]] - code - src/interfaces/text_control_center.py
 - [[dot-draw_approvals()]] - code - src/interfaces/text_control_center.py
 - [[dot-draw_box()]] - code - src/interfaces/text_control_center.py

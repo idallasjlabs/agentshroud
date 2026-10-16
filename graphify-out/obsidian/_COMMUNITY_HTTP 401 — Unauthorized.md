@@ -15,7 +15,7 @@ members: 9
 - [[Common Causes]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
 - [[Diagnosis]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
 - [[HTTP 401 — Unauthorized]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
-- [[Related Notes_66]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
+- [[Related Notes_72]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
 - [[Token Reset]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
 - [[Token Verification]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
 - [[`op read` Failing]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md

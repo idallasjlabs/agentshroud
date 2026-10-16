@@ -12,7 +12,7 @@ members: 13
 ## Members
 - [[dot-agentsskillsi-session-promptSKILL]] - document - .agents/skills/i-session-prompt/SKILL.md
 - [[Re-injection Command (for reference)]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[Role_80]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Role_81]] - document - .agents/skills/i-session-prompt/SKILL.md
 - [[Rules_20]] - document - .agents/skills/i-session-prompt/SKILL.md
 - [[Skill Session Prompt Generator (SESSION-PROMPT)]] - document - .agents/skills/i-session-prompt/SKILL.md
 - [[Step 1 — Survey the Repo]] - document - .agents/skills/i-session-prompt/SKILL.md

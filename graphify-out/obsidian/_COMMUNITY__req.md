@@ -1,19 +1,19 @@
 ---
 type: community
 cohesion: 0.02
-members: 140
+members: 136
 ---
 
 # _req
 
 **Cohesion:** 0.02 - loosely connected
-**Members:** 140 nodes
+**Members:** 136 nodes
 
 ## Members
-- [[dot-__init__()_90]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-__init__()_80]] - code - gateway/tests/test_middleware_coverage.py
 - [[dot-check_permission()_2]] - code - gateway/tests/test_middleware_coverage.py
 - [[dot-check_tool_permission()_1]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-get_user_role()_1]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-get_user_role()_2]] - code - gateway/tests/test_middleware_coverage.py
 - [[dot-test_absolute_and_relative_paths()]] - code - gateway/tests/test_middleware_coverage.py
 - [[dot-test_allowed_chain_passes()]] - code - gateway/tests/test_middleware_coverage.py
 - [[dot-test_analyzer_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
@@ -25,9 +25,6 @@ members: 140
 - [[dot-test_bots_resolution_error_swallowed()]] - code - gateway/tests/test_middleware_coverage.py
 - [[dot-test_browser_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
 - [[dot-test_clean_message_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_close_stops_resource_guard()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_close_swallows_stop_errors()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_close_with_no_resource_guard()]] - code - gateway/tests/test_middleware_coverage.py
 - [[dot-test_command_indicator_allowed_when_check_passes()]] - code - gateway/tests/test_middleware_coverage.py
 - [[dot-test_command_indicator_blocked()]] - code - gateway/tests/test_middleware_coverage.py
 - [[dot-test_context_guard_init_raise_recorded_and_logged()]] - code - gateway/tests/test_middleware_coverage.py
@@ -120,7 +117,6 @@ members: 140
 - [[MiddlewareManager built via __new__ — every module attr explicitly None     so e]] - rationale - gateway/tests/test_middleware_coverage.py
 - [[TestAnalyzeRequestForRBAC]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestBrowserSecurity]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestClose]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestContextGuard_1]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestCriticalGuardInitFailClosed]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestCrossSessionAccess]] - code - gateway/tests/test_middleware_coverage.py
@@ -159,11 +155,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 55 edges to [[_COMMUNITY_MiddlewareManager]]
-- 27 edges to [[_COMMUNITY_UserSessionManager]]
-- 26 edges to [[_COMMUNITY_PIIConfig]]
-- 3 edges to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_AlertTelegramRelay]]
+- 54 edges to [[_COMMUNITY_MiddlewareManager]]
+- 26 edges to [[_COMMUNITY_UserSessionManager]]
+- 25 edges to [[_COMMUNITY_PIIConfig]]
+- 1 edge to [[_COMMUNITY_make_event]]
+- 1 edge to [[_COMMUNITY_AsyncMock]]
 
 ## Top bridge nodes
 - [[test_middleware_coverage.py]] - degree 40, connects to 4 communities

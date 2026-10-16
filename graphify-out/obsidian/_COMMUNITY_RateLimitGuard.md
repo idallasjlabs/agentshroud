@@ -10,14 +10,14 @@ members: 38
 **Members:** 38 nodes
 
 ## Members
-- [[dot-__call__()_3]] - code - gateway/tests/test_rate_limit_guard.py
-- [[dot-__init__()_76]] - code - gateway/security/rate_limit_guard.py
-- [[dot-__init__()_77]] - code - gateway/tests/test_rate_limit_guard.py
+- [[dot-__call__()_4]] - code - gateway/tests/test_rate_limit_guard.py
+- [[dot-__init__()_73]] - code - gateway/security/rate_limit_guard.py
+- [[dot-__init__()_74]] - code - gateway/tests/test_rate_limit_guard.py
 - [[dot-_burst_limit()]] - code - gateway/security/rate_limit_guard.py
 - [[dot-_sustained_limit()]] - code - gateway/security/rate_limit_guard.py
 - [[dot-advance()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[dot-check()_2]] - code - gateway/security/rate_limit_guard.py
-- [[dot-get_stats()_7]] - code - gateway/security/rate_limit_guard.py
+- [[dot-check()_3]] - code - gateway/security/rate_limit_guard.py
+- [[dot-get_stats()_5]] - code - gateway/security/rate_limit_guard.py
 - [[Adaptive per-agent  per-tool sliding-window rate limiter with burst detection.]] - rationale - gateway/security/rate_limit_guard.py
 - [[Build a SecurityPipeline with only the guards needed to exercise the     RateLim]] - rationale - gateway/tests/test_rate_limit_guard.py
 - [[Configuration for class`RateLimitGuard`.      All windows are per (agent_id, t]] - rationale - gateway/security/rate_limit_guard.py
@@ -57,8 +57,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_MiddlewareManager]]
 - 4 edges to [[_COMMUNITY_PIIConfig]]
+- 4 edges to [[_COMMUNITY_AgentRegistry]]
 - 2 edges to [[_COMMUNITY_AsyncMock]]
 
 ## Top bridge nodes

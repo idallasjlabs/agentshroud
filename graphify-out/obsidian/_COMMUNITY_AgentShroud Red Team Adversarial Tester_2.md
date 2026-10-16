@@ -14,7 +14,7 @@ members: 18
 - [[AgentShroud Red Team Adversarial Tester_2]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
 - [[Attack Phases_2]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
 - [[Attack Techniques Reference_2]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Coverage Requirements_2]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
+- [[Coverage Requirements_3]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
 - [[Critical Rules_6]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
 - [[Infrastructure_2]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
 - [[Key Principle_2]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md

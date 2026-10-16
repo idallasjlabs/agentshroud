@@ -1,41 +1,57 @@
 ---
 type: community
 cohesion: 0.08
-members: 26
+members: 42
 ---
 
 # test_main_endpoints.py
 
 **Cohesion:** 0.08 - loosely connected
-**Members:** 26 nodes
+**Members:** 42 nodes
 
 ## Members
-- [[dot-setup_method()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-teardown_method()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_clamav_default_target_passes_allowlist()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_clamav_invalid_target_returns_400()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_disallowed_vault_returns_403()]] - code - gateway/tests/test_op_proxy.py
-- [[dot-test_discard_blocked_message_not_found_returns_error()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_malformed_reference_returns_422()]] - code - gateway/tests/test_op_proxy.py
-- [[dot-test_op_subprocess_failure_returns_502()]] - code - gateway/tests/test_op_proxy.py
-- [[dot-test_openscap_default_profile_passes_regex()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_openscap_invalid_profile_returns_400()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_openscap_semicolon_profile_returns_400()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_path_traversal_returns_403()]] - code - gateway/tests/test_op_proxy.py
-- [[dot-test_quarantine_summary_counts_inbound_and_outbound()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_release_blocked_outbound_marks_item_released()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_requires_auth()]] - code - gateway/tests/test_op_proxy.py
-- [[dot-test_trivy_default_scan_type_passes_allowlist()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_trivy_invalid_scan_type_returns_400()]] - code - gateway/tests/test_main_endpoints.py
-- [[dot-test_valid_reference_returns_value()]] - code - gateway/tests/test_op_proxy.py
-- [[Allowlist validation on ClamAV target, Trivy scan type, OpenSCAP profile.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Authentication dependency for protected endpoints]] - rationale - gateway/ingest_api/main.py
-- [[Endpoint returns 401 without auth override.]] - rationale - gateway/tests/test_op_proxy.py
-- [[Test quarantine management endpoints in main.py.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[TestOpProxyEndpoint]] - code - gateway/tests/test_op_proxy.py
-- [[TestQuarantineEndpoints]] - code - gateway/tests/test_main_endpoints.py
-- [[TestScanParameterAllowlists]] - code - gateway/tests/test_main_endpoints.py
-- [[auth_dep()]] - code - gateway/ingest_api/main.py
+- [[dot-_mock_websocket()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_backslash_encoded_rejected()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_connects_to_bridge_port_with_ws_scheme_and_query()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_dotdot_path_rejected()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_encoded_traversal_rejected()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_mixed_case_encoded_rejected()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_proxy_returns_400_on_traversal()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_proxy_returns_400_on_traversal_in_query()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_relays_text_and_bytes_both_directions()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_safe_path_passes()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_traversal_in_path_closes_without_connecting()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_traversal_in_query_closes_without_connecting()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_upstream_connect_failure_closes_gracefully()]] - code - gateway/tests/test_main_endpoints.py
+- [[A deadunreachable bridge must not raise out of the route -- it closes the…]] - rationale - gateway/tests/test_main_endpoints.py
+- [[Redirect bare hermes-dashboard to hermes-dashboard so assets resolve.]] - rationale - gateway/ingest_api/main.py
+- [[Relay the Hermes dashboard's WebSocket channels (apiws, apipub) through the…]] - rationale - gateway/ingest_api/main.py
+- [[Reverse-proxy the Hermes Agent dashboard through the gateway.]] - rationale - gateway/ingest_api/main.py
+- [[TestHermesDashboardPathTraversal]] - code - gateway/tests/test_main_endpoints.py
+- [[TestHermesDashboardWsProxy]] - code - gateway/tests/test_main_endpoints.py
+- [[Upstream URL must be ws (not http) at the bridge port, with the client's…]] - rationale - gateway/tests/test_main_endpoints.py
+- [[WebSocket relay for Slack Socket Mode inbound traffic. Bot connects here…]] - rationale - gateway/ingest_api/main.py
+- [[_bot_to_upstream()]] - code - gateway/ingest_api/main.py
+- [[_client_to_upstream()]] - code - gateway/ingest_api/main.py
+- [[_empty_aiter()]] - code - gateway/tests/test_main_endpoints.py
+- [[_one_frame_aiter()]] - code - gateway/tests/test_main_endpoints.py
+- [[_upstream_to_bot()]] - code - gateway/ingest_api/main.py
+- [[_upstream_to_client()]] - code - gateway/ingest_api/main.py
+- [[asyncio]] - code
+- [[cmd_persist]] - code - scripts/tailscale-serve.sh
+- [[cmd_start]] - code - scripts/tailscale-serve.sh
+- [[cmd_status]] - code - scripts/tailscale-serve.sh
+- [[cmd_stop]] - code - scripts/tailscale-serve.sh
+- [[hermes_dashboard_proxy (hermes-dashboard{path} HTTP reverse proxy)]] - code - gateway/ingest_api/main.py
+- [[hermes_dashboard_proxy must reject traversal sequences before forwarding.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[hermes_dashboard_proxy raises HTTPException(400) for traversal in path.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[hermes_dashboard_root]] - code - gateway/ingest_api/main.py
+- [[hermes_dashboard_ws_proxy (WebSocket relay)]] - code - gateway/ingest_api/main.py
+- [[hermes_dashboard_ws_proxy WebSocket counterpart of hermes_dashboard_proxy.…]] - rationale - gateway/tests/test_main_endpoints.py
+- [[slack_ws_relay()]] - code - gateway/ingest_api/main.py
+- [[tailscale-serve.sh]] - code - scripts/tailscale-serve.sh
+- [[tailscale-serve.sh script]] - code - scripts/tailscale-serve.sh
+- [[websocket_1]] - code
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,16 +61,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_test_main_endpoints.py]]
-- 2 edges to [[_COMMUNITY_forward.py]]
-- 2 edges to [[_COMMUNITY__is_op_reference_allowed]]
-- 1 edge to [[_COMMUNITY_test_forward_stream.py]]
-- 1 edge to [[_COMMUNITY_GatewayEmailService]]
-- 1 edge to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
-- 1 edge to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
+- 6 edges to [[_COMMUNITY_test_main_endpoints.py]]
+- 4 edges to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
+- 4 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
+- 1 edge to [[_COMMUNITY_dot-_run_proxy()]]
+- 1 edge to [[_COMMUNITY_run-standalone.sh (Hermes docker run launcher)]]
+- 1 edge to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]]
 
 ## Top bridge nodes
-- [[auth_dep()]] - degree 14, connects to 7 communities
-- [[TestScanParameterAllowlists]] - degree 11, connects to 1 community
-- [[TestOpProxyEndpoint]] - degree 8, connects to 1 community
-- [[TestQuarantineEndpoints]] - degree 5, connects to 1 community
+- [[hermes_dashboard_proxy (hermes-dashboard{path} HTTP reverse proxy)]] - degree 13, connects to 5 communities
+- [[hermes_dashboard_ws_proxy (WebSocket relay)]] - degree 13, connects to 2 communities
+- [[hermes_dashboard_root]] - degree 4, connects to 2 communities
+- [[TestHermesDashboardPathTraversal]] - degree 10, connects to 1 community
+- [[asyncio]] - degree 9, connects to 1 community

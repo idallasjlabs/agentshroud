@@ -11,7 +11,7 @@ members: 10
 
 ## Members
 - [[author_4]] - code - docker/config/openclaw/skills/i-browser/package.json
-- [[description_14]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[description_16]] - code - docker/config/openclaw/skills/i-browser/package.json
 - [[keywords_4]] - code - docker/config/openclaw/skills/i-browser/package.json
 - [[license_8]] - code - docker/config/openclaw/skills/i-browser/package.json
 - [[main_3]] - code - docker/config/openclaw/skills/i-browser/package.json

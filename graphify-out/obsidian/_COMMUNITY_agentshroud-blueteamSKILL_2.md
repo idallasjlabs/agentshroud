@@ -12,7 +12,7 @@ members: 26
 ## Members
 - [[dot-filter_response()_1]] - code - gateway/security/xml_leak_filter.py
 - [[dot-scan_command_injection()]] - code - gateway/security/xml_leak_filter.py
-- [[dot-setup_method()_30]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-setup_method()_23]] - code - gateway/tests/test_xml_leak_filter.py
 - [[dot-test_clean_response_passes_through()]] - code - gateway/tests/test_xml_leak_filter.py
 - [[dot-test_clean_text_passes()]] - code - gateway/tests/test_xml_leak_filter.py
 - [[dot-test_empty_text_returns_clean()]] - code - gateway/tests/test_xml_leak_filter.py
@@ -24,7 +24,7 @@ members: 26
 - [[dot-test_sql_injection_detected()]] - code - gateway/tests/test_xml_leak_filter.py
 - [[dot-xml_filter()]] - code - gateway/tests/test_xml_leak_filter.py
 - [[Filter outbound response content to remove sensitive information.          Args]] - rationale - gateway/security/xml_leak_filter.py
-- [[FilterResult_1]] - code - gateway/security/xml_leak_filter.py
+- [[FilterResult]] - code - gateway/security/xml_leak_filter.py
 - [[Result from XML leak filtering.]] - rationale - gateway/security/xml_leak_filter.py
 - [[Scan outbound text for command  code injection patterns.          Does NOT modi]] - rationale - gateway/security/xml_leak_filter.py
 - [[Set up test fixtures._3]] - rationale - gateway/tests/test_xml_leak_filter.py
@@ -46,10 +46,10 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 8 edges to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+- 1 edge to [[_COMMUNITY_InjectionAction]]
 
 ## Top bridge nodes
-- [[FilterResult_1]] - degree 8, connects to 2 communities
+- [[FilterResult]] - degree 8, connects to 2 communities
 - [[TestCommandInjectionScan]] - degree 9, connects to 1 community
 - [[TestXMLLeakFilter]] - degree 9, connects to 1 community
 - [[test_xml_leak_filter.py]] - degree 4, connects to 1 community

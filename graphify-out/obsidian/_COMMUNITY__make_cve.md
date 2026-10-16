@@ -34,7 +34,7 @@ members: 38
 - [[dot-test_under_review_in_heading_not_all_mitigated()]] - code - gateway/tests/test_generate_cve_page.py
 - [[dot-test_under_review_none_cvss_renders_dash()]] - code - gateway/tests/test_generate_cve_page.py
 - [[dot-test_zero_cves()]] - code - gateway/tests/test_generate_cve_page.py
-- [[Path_16]] - code - gateway/tests/test_generate_cve_page.py
+- [[Path_19]] - code - gateway/tests/test_generate_cve_page.py
 - [[Return the generate-cve-page module (already loaded above).]] - rationale - gateway/tests/test_generate_cve_page.py
 - [[TestBuildHeading]] - code - gateway/tests/test_generate_cve_page.py
 - [[TestBuildTable]] - code - gateway/tests/test_generate_cve_page.py
@@ -57,7 +57,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_generate-cve-page.py]]
+- 1 edge to [[_COMMUNITY_agent_cve_registry.py]]
 
 ## Top bridge nodes
 - [[test_generate_cve_page.py]] - degree 6, connects to 1 community

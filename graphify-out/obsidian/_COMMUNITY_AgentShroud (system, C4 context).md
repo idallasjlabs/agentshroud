@@ -41,9 +41,9 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_ADR-006 Multi-Runtime Container Support]]
-- 1 edge to [[_COMMUNITY_ADR-005 SHA-256 Hash Chain Audit Integrity]]
-- 1 edge to [[_COMMUNITY_AgentShroud Deployment Architecture]]
 - 1 edge to [[_COMMUNITY_TrustManager]]
+- 1 edge to [[_COMMUNITY_Audit Ledger (SHA-256 hash only)_1]]
+- 1 edge to [[_COMMUNITY_ADR-005 SHA-256 Hash Chain Audit Integrity]]
 
 ## Top bridge nodes
 - [[Gateway Container (Python 3.11FastAPI 8080)]] - degree 9, connects to 2 communities

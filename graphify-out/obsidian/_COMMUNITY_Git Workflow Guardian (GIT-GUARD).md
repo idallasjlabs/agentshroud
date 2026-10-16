@@ -11,9 +11,9 @@ members: 5
 
 ## Members
 - [[Git Workflow Guardian (GIT-GUARD)]] - document - docker/config/hermes/skills/i-gg/README.md
-- [[Purpose_28]] - document - docker/config/hermes/skills/i-gg/README.md
+- [[Purpose_30]] - document - docker/config/hermes/skills/i-gg/README.md
 - [[Related Skills_16]] - document - docker/config/hermes/skills/i-gg/README.md
-- [[Usage_19]] - document - docker/config/hermes/skills/i-gg/README.md
+- [[Usage_20]] - document - docker/config/hermes/skills/i-gg/README.md
 - [[hermesskillsi-ggREADME]] - document - docker/config/hermes/skills/i-gg/README.md
 
 ## Live Query (requires Dataview plugin)

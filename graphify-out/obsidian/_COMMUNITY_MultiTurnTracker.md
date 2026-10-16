@@ -10,18 +10,18 @@ members: 105
 **Members:** 105 nodes
 
 ## Members
-- [[dot-__init__()_133]] - code - gateway/security/multi_turn_tracker.py
+- [[dot-__init__()_118]] - code - gateway/security/multi_turn_tracker.py
 - [[dot-_add_disclosure_event()]] - code - gateway/security/multi_turn_tracker.py
 - [[dot-_analyze_agent_response()]] - code - gateway/security/multi_turn_tracker.py
 - [[dot-_analyze_user_message()]] - code - gateway/security/multi_turn_tracker.py
 - [[dot-_check_thresholds()]] - code - gateway/security/multi_turn_tracker.py
 - [[dot-_cleanup_old_sessions()_1]] - code - gateway/security/multi_turn_tracker.py
-- [[dot-_compile_detection_patterns()]] - code - gateway/security/multi_turn_tracker.py
+- [[dot-_compile_detection_patterns()_1]] - code - gateway/security/multi_turn_tracker.py
 - [[dot-_normalize_query()]] - code - gateway/security/multi_turn_tracker.py
 - [[dot-_score_message_patterns()]] - code - gateway/security/multi_turn_tracker.py
 - [[dot-_score_response_patterns()]] - code - gateway/security/multi_turn_tracker.py
 - [[dot-_trigger_alert()_1]] - code - gateway/security/multi_turn_tracker.py
-- [[dot-add_alert_callback()_2]] - code - gateway/security/multi_turn_tracker.py
+- [[dot-add_alert_callback()_1]] - code - gateway/security/multi_turn_tracker.py
 - [[dot-get_global_stats()_1]] - code - gateway/security/multi_turn_tracker.py
 - [[dot-get_session_stats()_1]] - code - gateway/security/multi_turn_tracker.py
 - [[dot-reset_session()_1]] - code - gateway/security/multi_turn_tracker.py
@@ -34,10 +34,10 @@ members: 105
 - [[dot-test_credential_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[dot-test_cumulative_scoring()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[dot-test_disabled_tracker()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[dot-test_edge_cases()_3]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_edge_cases()_4]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[dot-test_file_reference_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[dot-test_infrastructure_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[dot-test_initialization()_2]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_initialization()_3]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[dot-test_language_mismatch_or_anomalies()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[dot-test_off_topic_response_scores_low()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[dot-test_pii_fragment_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
@@ -60,7 +60,7 @@ members: 105
 - [[AlertLevel]] - code - gateway/security/multi_turn_tracker.py
 - [[Analyze agent response for potential information leaks.]] - rationale - gateway/security/multi_turn_tracker.py
 - [[Analyze user message for disclosure patterns.]] - rationale - gateway/security/multi_turn_tracker.py
-- [[Any_49]] - code - gateway/security/multi_turn_tracker.py
+- [[Any_42]] - code - gateway/security/multi_turn_tracker.py
 - [[Categories of information that contribute to disclosure scoring.]] - rationale - gateway/security/multi_turn_tracker.py
 - [[Check session score against thresholds and take action.]] - rationale - gateway/security/multi_turn_tracker.py
 - [[Compile regex patterns for detecting disclosure categories.]] - rationale - gateway/security/multi_turn_tracker.py
@@ -110,7 +110,7 @@ members: 105
 - [[ThresholdConfig]] - code - gateway/security/multi_turn_tracker.py
 - [[Track a message and response pair for disclosure analysis.          Args]] - rationale - gateway/security/multi_turn_tracker.py
 - [[Trigger alert callbacks.]] - rationale - gateway/security/multi_turn_tracker.py
-- [[callable_1]] - code - gateway/security/multi_turn_tracker.py
+- [[callable]] - code - gateway/security/multi_turn_tracker.py
 - [[mock_alert_callback()_1]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[multi_turn_tracker()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[multi_turn_tracker.py]] - code - gateway/security/multi_turn_tracker.py
@@ -125,14 +125,15 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 17 edges to [[_COMMUNITY_MiddlewareManager]]
-- 4 edges to [[_COMMUNITY_Action]]
-- 3 edges to [[_COMMUNITY_agentshroud-blueteamSKILL]]
-- 2 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
-- 1 edge to [[_COMMUNITY_Test getting statistics.]]
+- 5 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 2 edges to [[_COMMUNITY_InjectionAction]]
+- 1 edge to [[_COMMUNITY_TestPathIsolationManager]]
+- 1 edge to [[_COMMUNITY_AuditChain]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL_3]]
 
 ## Top bridge nodes
-- [[multi_turn_tracker.py]] - degree 12, connects to 2 communities
-- [[AlertLevel]] - degree 8, connects to 2 communities
-- [[DisclosureCategory]] - degree 8, connects to 2 communities
+- [[multi_turn_tracker.py]] - degree 12, connects to 3 communities
 - [[MultiTurnTracker]] - degree 42, connects to 1 community
 - [[TestMultiTurnTracker_1]] - degree 27, connects to 1 community
+- [[SessionContext]] - degree 10, connects to 1 community
+- [[AlertLevel]] - degree 8, connects to 1 community

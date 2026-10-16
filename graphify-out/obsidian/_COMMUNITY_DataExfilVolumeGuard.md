@@ -10,9 +10,9 @@ members: 38
 **Members:** 38 nodes
 
 ## Members
-- [[dot-__init__()_75]] - code - gateway/security/data_exfil_volume_guard.py
+- [[dot-__init__()_72]] - code - gateway/security/data_exfil_volume_guard.py
 - [[dot-_size()]] - code - gateway/security/data_exfil_volume_guard.py
-- [[dot-get_stats()_6]] - code - gateway/security/data_exfil_volume_guard.py
+- [[dot-get_stats()_4]] - code - gateway/security/data_exfil_volume_guard.py
 - [[dot-observe()]] - code - gateway/security/data_exfil_volume_guard.py
 - [[dot-reset_session()]] - code - gateway/security/data_exfil_volume_guard.py
 - [[A blocked (undelivered) response must not consume the session budget,     otherw]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
@@ -40,7 +40,7 @@ members: 38
 - [[test_cumulative_is_per_session()]] - code - gateway/tests/test_data_exfil_volume_guard.py
 - [[test_data_exfil_volume_guard.py]] - code - gateway/tests/test_data_exfil_volume_guard.py
 - [[test_disabled_never_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_get_stats()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_get_stats()_1]] - code - gateway/tests/test_data_exfil_volume_guard.py
 - [[test_pipeline_allows_small_response()]] - code - gateway/tests/test_data_exfil_volume_guard.py
 - [[test_pipeline_blocks_and_downstream_not_reached()]] - code - gateway/tests/test_data_exfil_volume_guard.py
 - [[test_pipeline_fail_closed_for_non_owner_on_error()]] - code - gateway/tests/test_data_exfil_volume_guard.py
@@ -57,11 +57,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_MiddlewareManager]]
+- 4 edges to [[_COMMUNITY_AgentRegistry]]
 - 3 edges to [[_COMMUNITY_PIIConfig]]
 - 3 edges to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_egress_filter.py]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
+- 2 edges to [[_COMMUNITY_EgressFilterConfig]]
 
 ## Top bridge nodes
 - [[DataExfilVolumeGuard]] - degree 26, connects to 2 communities

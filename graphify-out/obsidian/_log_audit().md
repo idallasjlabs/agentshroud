@@ -12,7 +12,7 @@ tags:
 # _log_audit()
 
 ## Connections
-- [[Any_16]] - `references` [EXTRACTED]
+- [[Any_23]] - `references` [EXTRACTED]
 - [[AuditLogEntry]] - `calls` [EXTRACTED]
 - [[AuditResult]] - `references` [EXTRACTED]
 - [[SCLCaller]] - `references` [EXTRACTED]

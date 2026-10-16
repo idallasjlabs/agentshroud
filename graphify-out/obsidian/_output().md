@@ -21,7 +21,7 @@ tags:
 - [[dot-test_output_table_scalar()]] - `calls` [EXTRACTED]
 - [[dot-test_output_yaml()]] - `calls` [EXTRACTED]
 - [[dot-test_output_yaml_falls_back_to_json_without_pyyaml()]] - `calls` [EXTRACTED]
-- [[Any_78]] - `references` [EXTRACTED]
+- [[Any_70]] - `references` [EXTRACTED]
 - [[Print data in the requested format.]] - `rationale_for` [EXTRACTED]
 - [[_print_table()]] - `calls` [EXTRACTED]
 - [[add_collaborator()_1]] - `calls` [EXTRACTED]

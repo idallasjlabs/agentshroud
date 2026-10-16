@@ -16,7 +16,7 @@ members: 26
 - [[Architecture Decision Record (ADR)_1]] - document - .agents/skills/i-tw/SKILL.md
 - [[Changelog Entry_2]] - document - .agents/skills/i-tw/SKILL.md
 - [[Core Discipline Understand → Structure → Write → Validate_2]] - document - .agents/skills/i-tw/SKILL.md
-- [[Dependencies_11]] - document - .agents/skills/i-tw/SKILL.md
+- [[Dependencies_12]] - document - .agents/skills/i-tw/SKILL.md
 - [[Document Structure_2]] - document - .agents/skills/i-tw/SKILL.md
 - [[Document-Type Patterns_2]] - document - .agents/skills/i-tw/SKILL.md
 - [[Expected output_1]] - document - .agents/skills/i-tw/SKILL.md
@@ -26,7 +26,7 @@ members: 26
 - [[If not → escalate to field team via ops-alerts_1]] - document - .agents/skills/i-tw/SKILL.md
 - [[Query the control DB_1]] - document - .agents/skills/i-tw/SKILL.md
 - [[README — Entry Point for a Repo or Service_2]] - document - .agents/skills/i-tw/SKILL.md
-- [[Role_37]] - document - .agents/skills/i-tw/SKILL.md
+- [[Role_38]] - document - .agents/skills/i-tw/SKILL.md
 - [[Rules_12]] - document - .agents/skills/i-tw/SKILL.md
 - [[Runbook — Operational Decision Tree_1]] - document - .agents/skills/i-tw/SKILL.md
 - [[Skill Technical Writer (TW)_2]] - document - .agents/skills/i-tw/SKILL.md

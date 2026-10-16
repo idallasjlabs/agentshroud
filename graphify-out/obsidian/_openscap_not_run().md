@@ -17,7 +17,7 @@ tags:
 - [[dot-test_baseline_three_when_openscap_not_run()]] - `calls` [EXTRACTED]
 - [[dot-test_defined_when_oscap_binary_present()]] - `calls` [EXTRACTED]
 - [[dot-test_zero_when_not_run()]] - `calls` [EXTRACTED]
-- [[Any_71]] - `references` [EXTRACTED]
+- [[Any_66]] - `references` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

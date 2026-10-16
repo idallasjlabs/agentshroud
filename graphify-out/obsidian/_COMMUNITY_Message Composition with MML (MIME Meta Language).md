@@ -39,7 +39,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ssh-configuration]]
+- 1 edge to [[_COMMUNITY_SSH Configuration Guide]]
 
 ## Top bridge nodes
 - [[Message Composition with MML (MIME Meta Language)]] - degree 8, connects to 1 community

@@ -24,7 +24,7 @@ members: 22
 - [[Online renderer_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
 - [[Render locally with mmdc_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
 - [[Rendering and Export_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Role_41]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Role_42]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
 - [[Rules_16]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
 - [[Sequence — Order of operations between systems_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
 - [[Skill Technical Illustrator (TI)_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md

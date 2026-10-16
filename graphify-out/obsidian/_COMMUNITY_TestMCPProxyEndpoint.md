@@ -16,9 +16,9 @@ members: 21
 - [[dot-test_header_user_id_overrides_body_agent_id()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
 - [[dot-test_injection_in_parameters_blocked()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
 - [[dot-test_invalid_header_identity_rejected()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
-- [[dot-test_missing_required_fields_returns_422()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[dot-test_missing_required_fields_returns_422()_1]] - code - gateway/tests/test_mcp_proxy_endpoint.py
 - [[dot-test_owner_body_identity_rejected_without_header()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
-- [[dot-test_requires_auth()_1]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[dot-test_requires_auth()_4]] - code - gateway/tests/test_mcp_proxy_endpoint.py
 - [[dot-test_response_includes_processing_time()]] - code - gateway/tests/test_mcp_proxy_endpoint.py
 - [[A clean tool call with no threats should be allowed (200).]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
 - [[Body agent_id is used only when trusted header is absent.]] - rationale - gateway/tests/test_mcp_proxy_endpoint.py
@@ -40,9 +40,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 1 edge to [[_COMMUNITY_test_e2e.py]]
+- 2 edges to [[_COMMUNITY_MCPPermissionManager_1]]
+- 1 edge to [[_COMMUNITY_PermissionLevel]]
+- 1 edge to [[_COMMUNITY_ForwardRequest]]
+- 1 edge to [[_COMMUNITY_StdioConnection]]
 
 ## Top bridge nodes
-- [[test_mcp_proxy_endpoint.py]] - degree 5, connects to 2 communities
+- [[test_mcp_proxy_endpoint.py]] - degree 5, connects to 4 communities
 - [[TestMCPProxyEndpoint_1]] - degree 12, connects to 1 community

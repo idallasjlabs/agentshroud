@@ -28,9 +28,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_§1 — Re-run of Prior Scenarios]]
-- 1 edge to [[_COMMUNITY_§2 — New Multi-Bot Attack Scenarios (v1.1+ Surface)]]
 - 1 edge to [[_COMMUNITY_AgentShroud v1.2.0 — Blue Team Security Assessment]]
+- 1 edge to [[_COMMUNITY_§2 — New Multi-Bot Attack Scenarios (v1.1+ Surface)]]
+- 1 edge to [[_COMMUNITY_§1 — Re-run of Prior Scenarios]]
 
 ## Top bridge nodes
 - [[AgentShroud v1.2.0 — Red Team Assessment]] - degree 8, connects to 2 communities

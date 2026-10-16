@@ -25,13 +25,13 @@ members: 27
 - [[Dark  Light Theme Implementation_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
 - [[Dashboard Grid_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
 - [[Data Table_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
-- [[Dependencies_8]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Dependencies_9]] - document - docker/config/hermes/skills/i-ui/SKILL.md
 - [[Form Field_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
 - [[Modal  Dialog_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
 - [[Navigation_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
 - [[React  Next.js Component Architecture_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
 - [[Responsive Layout System_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
-- [[Role_34]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[Role_35]] - document - docker/config/hermes/skills/i-ui/SKILL.md
 - [[Rules_9]] - document - docker/config/hermes/skills/i-ui/SKILL.md
 - [[Skill UI Expert (UI)_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md
 - [[UI Validation Checklist_1]] - document - docker/config/hermes/skills/i-ui/SKILL.md

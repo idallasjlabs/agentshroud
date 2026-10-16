@@ -12,7 +12,7 @@ tags:
 # _apply_persisted_overrides()
 
 ## Connections
-- [[dot-model_post_init()_1]] - `calls` [EXTRACTED]
+- [[dot-model_post_init()]] - `calls` [EXTRACTED]
 - [[GroupConfig]] - `calls` [EXTRACTED]
 - [[Merge group_overrides.json additions into the in-memory TeamsConfig.]] - `rationale_for` [EXTRACTED]
 - [[TeamsConfig_2]] - `references` [EXTRACTED]

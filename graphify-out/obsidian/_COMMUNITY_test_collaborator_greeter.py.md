@@ -10,7 +10,7 @@ members: 39
 **Members:** 39 nodes
 
 ## Members
-- [[dot-__init__()_71]] - code - gateway/proxy/collaborator_greeter.py
+- [[dot-__init__()_64]] - code - gateway/proxy/collaborator_greeter.py
 - [[dot-_get_client()]] - code - gateway/proxy/collaborator_greeter.py
 - [[dot-_load_state()]] - code - gateway/proxy/collaborator_greeter.py
 - [[dot-_load_taglines()]] - code - gateway/proxy/collaborator_greeter.py
@@ -58,10 +58,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_test_e2e.py]]
+- 2 edges to [[_COMMUNITY_ForwardRequest]]
 - 1 edge to [[_COMMUNITY_test_openclaw_photo.sh]]
 
 ## Top bridge nodes
 - [[CollaboratorGreeter]] - degree 21, connects to 1 community
-- [[dot-__init__()_71]] - degree 4, connects to 1 community
+- [[dot-__init__()_64]] - degree 4, connects to 1 community
 - [[dot-_get_client()]] - degree 3, connects to 1 community

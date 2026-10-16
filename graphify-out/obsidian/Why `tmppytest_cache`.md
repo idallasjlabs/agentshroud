@@ -12,6 +12,6 @@ tags:
 # Why `/tmp/pytest_cache`
 
 ## Connections
-- [[pytest.ini_1]] - `contains` [EXTRACTED]
+- [[pytest.ini]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/pytestini

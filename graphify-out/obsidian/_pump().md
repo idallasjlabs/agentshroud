@@ -12,7 +12,7 @@ tags:
 # _pump()
 
 ## Connections
-- [[StreamReader_1]] - `references` [EXTRACTED]
+- [[StreamReader_2]] - `references` [EXTRACTED]
 - [[StreamWriter_1]] - `references` [EXTRACTED]
 - [[_handle()_1]] - `calls` [EXTRACTED]
 - [[docker_proxy_relay.py]] - `contains` [EXTRACTED]

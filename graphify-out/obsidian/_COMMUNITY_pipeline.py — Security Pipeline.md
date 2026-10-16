@@ -20,15 +20,15 @@ members: 19
 - [[Key Thresholds]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 - [[Monitor vs. Enforce Mode]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 - [[Outbound (`process_outbound`)]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
-- [[Overview_17]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Overview_16]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 - [[Owner Exemption]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 - [[Owner Exemption — Logging Guarantee]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 - [[Pipeline Stages]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
-- [[Related_5]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Related_6]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 - [[Stats Counter]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 - [[`AuditChain.append_block()` — Guaranteed Persistence Guarantee]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 - [[pipeline.py — Security Pipeline]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
-- [[pipeline.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[pipeline.py]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,7 +38,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_`SecurityPipeline`]]
+- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown]]
 
 ## Top bridge nodes
 - [[pipeline.py — Security Pipeline]] - degree 8, connects to 1 community

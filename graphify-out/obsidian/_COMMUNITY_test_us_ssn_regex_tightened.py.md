@@ -31,7 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
 
 ## Top bridge nodes
 - [[US_SSN regex tightened to exclude CVE IDs]] - degree 3, connects to 1 community

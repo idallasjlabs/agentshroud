@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-test_telegram_user_id_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test that Telegram user IDs are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[dot-test_agentshroud_name_not_redacted()]] - code - gateway/tests/test_outbound_filter.py
+- [[AgentShroud brand name must pass through unredacted (Fix C).]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,4 +24,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
 
 ## Top bridge nodes
-- [[dot-test_telegram_user_id_filtering()]] - degree 2, connects to 1 community
+- [[dot-test_agentshroud_name_not_redacted()]] - degree 2, connects to 1 community

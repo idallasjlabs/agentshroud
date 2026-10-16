@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[_handleWSEvent()]] - `calls` [EXTRACTED]
-- [[_ts()]] - `calls` [EXTRACTED]
+- [[_ts()_1]] - `calls` [EXTRACTED]
 - [[soc.js]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/socjs

@@ -21,7 +21,7 @@ members: 14
 - [[Closing Gate_2]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
 - [[Output Format Rules_2]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
 - [[Output Sections (ALL required)]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
-- [[Role_75]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[Role_76]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
 - [[Skill Pre-Change Analysis (PCA)_2]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
 - [[openclawskillsi-pcaSKILL]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
 

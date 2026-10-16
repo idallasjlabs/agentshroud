@@ -14,7 +14,7 @@ members: 9
 - [[dot-_validate_network_definitions()]] - code - gateway/security/network_validator.py
 - [[dot-export_report()]] - code - gateway/security/network_validator.py
 - [[dot-get_security_report()]] - code - gateway/security/network_validator.py
-- [[Any_84]] - code - gateway/security/network_validator.py
+- [[Any_83]] - code - gateway/security/network_validator.py
 - [[Export network security report to file.]] - rationale - gateway/security/network_validator.py
 - [[Get comprehensive network security report.]] - rationale - gateway/security/network_validator.py
 - [[Parse network configuration for a service.]] - rationale - gateway/security/network_validator.py
@@ -28,7 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_MiddlewareManager]]
+- 4 edges to [[_COMMUNITY_AlertDispatcher]]
 - 3 edges to [[_COMMUNITY_dot-validate_docker_compose_config]]
 - 1 edge to [[_COMMUNITY_NetworkSecurityFinding]]
 

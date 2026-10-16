@@ -34,7 +34,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 6 edges to [[_COMMUNITY_HTTPConnectProxy]]
-- 2 edges to [[_COMMUNITY_ProxyAction]]
+- 2 edges to [[_COMMUNITY_WebProxy]]
 - 2 edges to [[_COMMUNITY_WebProxyConfig]]
 - 1 edge to [[_COMMUNITY_parse_clamscan_output]]
 

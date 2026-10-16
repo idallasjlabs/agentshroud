@@ -19,7 +19,7 @@ tags:
 - [[dot-test_ignores_non_image_prefixed_files()]] - `calls` [EXTRACTED]
 - [[dot-test_returns_empty_when_no_image_reports()]] - `calls` [EXTRACTED]
 - [[dot-test_returns_one_entry_per_report_file()]] - `calls` [EXTRACTED]
-- [[Any_71]] - `references` [EXTRACTED]
+- [[Any_66]] - `references` [EXTRACTED]
 - [[_critical_trivy_report()]] - `calls` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 

@@ -11,7 +11,7 @@ members: 21
 
 ## Members
 - [[GSDE&G Skills Reference Guide_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[STPA-Sec Methodology_2]] - concept - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[STPA-Sec Methodology]] - concept - docker/config/hermes/skills/i-sec-defense/SKILL.md
 - [[Steve Hay's Phase 1 Probes (RedBlue Team Assessment)]] - concept - docker/config/hermes/skills/i-sec-offense/SKILL.md
 - [[i-production README (Incident Response)]] - document - docker/config/hermes/skills/i-production/README.md
 - [[i-production SKILL (Incident Response  INCIDENT)]] - document - docker/config/hermes/skills/i-production/SKILL.md

@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Access Denied]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Token expired (SSO)]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Unable to locate credentials]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[MCP Not Using Profile]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Troubleshooting_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Problem 1Password link shows only page shell]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Problem Browser binaries not found]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Problem Permission denied executing browser]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Problem Skill not auto-discovered by bot]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Troubleshooting_4]] - document - docs/reference/BROWSER_FETCH_SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]]
+- 1 edge to [[_COMMUNITY_Browser-Fetch Skill for 1Password Share Links]]
 
 ## Top bridge nodes
-- [[Troubleshooting_2]] - degree 5, connects to 1 community
+- [[Troubleshooting_4]] - degree 5, connects to 1 community

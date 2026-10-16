@@ -17,7 +17,7 @@ members: 15
 - [[Guardrails_9]] - document - .agents/skills/i-ab/SKILL.md
 - [[Invocation Forms]] - document - .agents/skills/i-ab/SKILL.md
 - [[Jira  PR Comment Format]] - document - .agents/skills/i-ab/SKILL.md
-- [[Role_66]] - document - .agents/skills/i-ab/SKILL.md
+- [[Role_67]] - document - .agents/skills/i-ab/SKILL.md
 - [[Skill Audit Branch (AB) — Merge Regression Detection]] - document - .agents/skills/i-ab/SKILL.md
 - [[Step 1 — Verify the script exists]] - document - .agents/skills/i-ab/SKILL.md
 - [[Step 2 — Determine the target]] - document - .agents/skills/i-ab/SKILL.md

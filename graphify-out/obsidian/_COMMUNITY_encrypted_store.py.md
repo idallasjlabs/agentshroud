@@ -17,17 +17,17 @@ members: 18
 - [[EncryptedStore.encrypt(data)]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
 - [[EncryptedStore.rotate(blobs, new_secret, new_key_id)]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
 - [[Environment Variables_7]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[Function Details_5]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[Key Classes  Functions_5]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[Function Details_6]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[Key Classes  Functions_6]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
 - [[Key Rotation Workflow]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
 - [[Mode Enforce vs Monitor_4]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[Purpose_104]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[Related_9]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[Responsibilities_6]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[Purpose_109]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[Related_10]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[Responsibilities_8]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
 - [[Threat Model_6]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
 - [[_secure_zero(buffer)]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[encrypted_store.py_2]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
 - [[encrypted_store.py_1]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[encrypted_store.py]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
 
 ## Live Query (requires Dataview plugin)
 

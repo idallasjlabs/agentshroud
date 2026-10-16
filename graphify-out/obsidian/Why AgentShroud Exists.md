@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AgentShroud™ — Project Knowledge Base]] - `contains` [EXTRACTED]
-- [[The Problem_1]] - `contains` [EXTRACTED]
+- [[The Problem]] - `contains` [EXTRACTED]
 - [[The Solution]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud__Project_Knowledge_Base

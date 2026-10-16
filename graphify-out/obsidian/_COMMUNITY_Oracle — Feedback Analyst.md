@@ -17,12 +17,12 @@ members: 13
 - [[Oracle — Feedback Analyst_3]] - document - .agents/skills/i-oracle/SKILL.md
 - [[Output Format_30]] - document - .agents/skills/i-oracle/SKILL.md
 - [[Persona_12]] - document - .agents/skills/i-oracle/SKILL.md
-- [[Purpose_165]] - document - .agents/skills/i-oracle/README.md
+- [[Purpose_169]] - document - .agents/skills/i-oracle/README.md
 - [[Quality Checklist_15]] - document - .agents/skills/i-oracle/SKILL.md
 - [[Related Skills_108]] - document - .agents/skills/i-oracle/README.md
-- [[Role_78]] - document - .agents/skills/i-oracle/SKILL.md
+- [[Role_79]] - document - .agents/skills/i-oracle/SKILL.md
 - [[System Prompt_12]] - document - .agents/skills/i-oracle/SKILL.md
-- [[Usage_118]] - document - .agents/skills/i-oracle/README.md
+- [[Usage_117]] - document - .agents/skills/i-oracle/README.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-__aiter__()_1]] - `method` [EXTRACTED]
 - [[dot-__anext__()_1]] - `method` [EXTRACTED]
-- [[dot-__init__()_152]] - `method` [EXTRACTED]
-- [[dot-send()_1]] - `method` [EXTRACTED]
+- [[dot-__init__()_148]] - `method` [EXTRACTED]
+- [[dot-send()_2]] - `method` [EXTRACTED]
 - [[Async-iterable WebSocket double.]] - `rationale_for` [EXTRACTED]
 - [[SCLClient]] - `uses` [INFERRED]
 - [[_install_fake_websockets()]] - `calls` [EXTRACTED]

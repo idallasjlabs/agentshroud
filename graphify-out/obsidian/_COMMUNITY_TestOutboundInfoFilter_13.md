@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-test_initialization_with_config()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test filter initializes with custom configuration.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[dot-test_tailscale_hostname_filtering()]] - code - gateway/tests/test_outbound_filter.py
+- [[Test that Tailscale hostnames are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,8 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AuditChain]]
 - 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
 
 ## Top bridge nodes
-- [[dot-test_initialization_with_config()]] - degree 3, connects to 2 communities
+- [[dot-test_tailscale_hostname_filtering()]] - degree 2, connects to 1 community

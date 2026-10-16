@@ -28,13 +28,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_AuditChain]]
+- 6 edges to [[_COMMUNITY_AuditChain]]
 - 2 edges to [[_COMMUNITY_TestOutboundInfoFilter]]
 - 2 edges to [[_COMMUNITY_TestFabricatedSecurityNotice]]
-- 1 edge to [[_COMMUNITY_Action]]
+- 1 edge to [[_COMMUNITY_AuditChain_1]]
+- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
 
 ## Top bridge nodes
-- [[InfoCategory]] - degree 9, connects to 4 communities
+- [[InfoCategory]] - degree 9, connects to 5 communities
 - [[test_outbound_filter.py]] - degree 5, connects to 3 communities
 - [[TestIntegration_1]] - degree 6, connects to 1 community
 - [[dot-test_real_world_agent_responses()]] - degree 3, connects to 1 community

@@ -27,7 +27,7 @@ members: 20
 - [[Objective]] - document - .agents/skills/i-qa/SKILL.md
 - [[Output Format_12]] - document - .agents/skills/i-qa/SKILL.md
 - [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT]] - document - .agents/skills/i-qa/SKILL.md
-- [[Role_45]] - document - .agents/skills/i-qa/SKILL.md
+- [[Role_46]] - document - .agents/skills/i-qa/SKILL.md
 - [[Skill Quality Assurance (QA)]] - document - .agents/skills/i-qa/SKILL.md
 - [[Testing Hierarchy]] - document - .agents/skills/i-qa/SKILL.md
 

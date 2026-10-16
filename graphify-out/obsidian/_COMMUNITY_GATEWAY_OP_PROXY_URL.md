@@ -10,14 +10,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Description_15]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
+- [[Description_1]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
 - [[GATEWAY_OP_PROXY_URL_1]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
 - [[GATEWAY_OP_PROXY_URL]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
-- [[Related Notes_72]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
-- [[Security_12]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
-- [[Set In_4]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
+- [[Related Notes_3]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
+- [[Security_1]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
+- [[Set In]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
 - [[Usage Flow]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
-- [[Value_4]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
+- [[Value]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
 
 ## Live Query (requires Dataview plugin)
 

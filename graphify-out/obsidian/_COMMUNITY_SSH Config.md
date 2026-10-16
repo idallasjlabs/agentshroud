@@ -17,8 +17,8 @@ members: 12
 - [[Configuration_19]] - document - skills/custom/securebrowser/README.md
 - [[Full Configuration Example]] - document - skills/custom/securebrowser/README.md
 - [[Key Configuration]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Purpose_174]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Related Notes_59]] - document - docs/vault/03 - Configuration/ssh-config.md
+- [[Purpose_185]] - document - docs/vault/03 - Configuration/ssh-config.md
+- [[Related Notes_65]] - document - docs/vault/03 - Configuration/ssh-config.md
 - [[Relationship to agentshroud.yaml]] - document - docs/vault/03 - Configuration/ssh-config.md
 - [[SSH Config]] - document - docs/vault/03 - Configuration/ssh-config.md
 - [[ssh-config]] - document - docs/vault/03 - Configuration/ssh-config.md
@@ -31,10 +31,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_iCloud Services_2]]
-- 1 edge to [[_COMMUNITY_SecureBrowser Skill]]
+- 2 edges to [[_COMMUNITY_iCloud Services_3]]
 - 1 edge to [[_COMMUNITY_AgentShroud Enterprise Governance for Autonomous AI Agents]]
-- 1 edge to [[_COMMUNITY_egress_filter.py]]
+- 1 edge to [[_COMMUNITY_SecureBrowser Skill]]
+- 1 edge to [[_COMMUNITY_egress_filter.py_2]]
 
 ## Top bridge nodes
 - [[Configuration_19]] - degree 5, connects to 2 communities

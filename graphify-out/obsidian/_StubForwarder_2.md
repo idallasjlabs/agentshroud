@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[dot-forward()_4]] - `method` [EXTRACTED]
 - [[A2APolicyConfig_1]] - `uses` [INFERRED]
-- [[A2APolicyEngine_3]] - `uses` [INFERRED]
+- [[A2APolicyEngine_2]] - `uses` [INFERRED]
 - [[A2AProxy_1]] - `uses` [INFERRED]
 - [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
 - [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
 - [[test_generic_denial_does_not_record_a2a_specific_violation_types()]] - `calls` [EXTRACTED]

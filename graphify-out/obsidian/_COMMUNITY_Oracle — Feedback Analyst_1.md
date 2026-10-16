@@ -15,12 +15,12 @@ members: 13
 - [[Oracle — Feedback Analyst_5]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
 - [[Output Format_34]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
 - [[Persona_14]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
-- [[Purpose_167]] - document - docker/config/openclaw/skills/i-oracle/README.md
+- [[Purpose_178]] - document - docker/config/openclaw/skills/i-oracle/README.md
 - [[Quality Checklist_17]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
-- [[Related Skills_110]] - document - docker/config/openclaw/skills/i-oracle/README.md
-- [[Role_86]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
+- [[Related Skills_117]] - document - docker/config/openclaw/skills/i-oracle/README.md
+- [[Role_87]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
 - [[System Prompt_14]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
-- [[Usage_120]] - document - docker/config/openclaw/skills/i-oracle/README.md
+- [[Usage_126]] - document - docker/config/openclaw/skills/i-oracle/README.md
 - [[openclawskillsi-oracleREADME]] - document - docker/config/openclaw/skills/i-oracle/README.md
 - [[openclawskillsi-oracleSKILL]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
 

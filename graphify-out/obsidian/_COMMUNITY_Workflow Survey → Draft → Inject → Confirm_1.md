@@ -11,7 +11,7 @@ members: 13
 
 ## Members
 - [[Re-injection Command (for reference)_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
-- [[Role_84]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
+- [[Role_85]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
 - [[Rules_22]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
 - [[Skill Session Prompt Generator (SESSION-PROMPT)_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
 - [[Step 1 — Survey the Repo_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md

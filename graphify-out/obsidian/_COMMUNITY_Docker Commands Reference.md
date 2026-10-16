@@ -1,16 +1,18 @@
 ---
 type: community
-cohesion: 0.17
-members: 12
+cohesion: 0.13
+members: 15
 ---
 
 # Docker Commands Reference
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 12 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[Container management_2]] - document - examples/docker-commands.md
+- [[AgentShroud Minimal Docker Compose]] - document - examples/docker-compose.minimal.yml
+- [[AgentShroud Production Docker Compose]] - document - examples/docker-compose.production.yml
+- [[Container management_1]] - document - examples/docker-commands.md
 - [[Container status_1]] - document - examples/docker-commands.md
 - [[Debugging read-only filesystem errors]] - document - examples/docker-commands.md
 - [[Docker Commands Reference]] - document - examples/docker-commands.md
@@ -22,6 +24,7 @@ members: 12
 - [[Secrets inspection (read-only check)]] - document - examples/docker-commands.md
 - [[Volume management]] - document - examples/docker-commands.md
 - [[Writing files to containers]] - document - examples/docker-commands.md
+- [[docker-commands]] - document - examples/docker-commands.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,7 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Error Index]]
+- 1 edge to [[_COMMUNITY_Restart Procedure]]
 
 ## Top bridge nodes
-- [[Docker Commands Reference]] - degree 12, connects to 1 community
+- [[AgentShroud Production Docker Compose]] - degree 3, connects to 1 community

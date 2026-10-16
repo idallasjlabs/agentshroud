@@ -12,9 +12,9 @@ members: 5
 ## Members
 - [[dot-agentsskillsi-eightdREADME]] - document - .agents/skills/i-eightd/README.md
 - [[8D Root Cause Analysis]] - document - .agents/skills/i-eightd/README.md
-- [[Purpose_18]] - document - .agents/skills/i-eightd/README.md
+- [[Purpose_20]] - document - .agents/skills/i-eightd/README.md
 - [[Related Skills_6]] - document - .agents/skills/i-eightd/README.md
-- [[Usage_9]] - document - .agents/skills/i-eightd/README.md
+- [[Usage_10]] - document - .agents/skills/i-eightd/README.md
 
 ## Live Query (requires Dataview plugin)
 

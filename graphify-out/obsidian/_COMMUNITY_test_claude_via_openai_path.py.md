@@ -12,7 +12,7 @@ members: 8
 ## Members
 - [[Hermes v0.16.0 OpenAI-Client Compatibility Incident (3-day cron outage)]] - rationale - gateway/tests/test_chat_completions_alias.py
 - [[Regression don't break the existing v1messages path.]] - rationale - gateway/tests/test_chat_completions_alias.py
-- [[client()]] - code - gateway/tests/test_chat_completions_alias.py
+- [[client()_2]] - code - gateway/tests/test_chat_completions_alias.py
 - [[test_chat_completions_alias.py]] - code - gateway/tests/test_chat_completions_alias.py
 - [[test_chat_completions_alias_passes_correct_path_to_proxy()]] - code - gateway/tests/test_chat_completions_alias.py
 - [[test_chat_completions_alias_routes_to_v1_path()]] - code - gateway/tests/test_chat_completions_alias.py
@@ -33,4 +33,4 @@ SORT file.name ASC
 ## Top bridge nodes
 - [[test_chat_completions_alias.py]] - degree 7, connects to 1 community
 - [[Hermes v0.16.0 OpenAI-Client Compatibility Incident (3-day cron outage)]] - degree 2, connects to 1 community
-- [[client()]] - degree 2, connects to 1 community
+- [[client()_2]] - degree 2, connects to 1 community

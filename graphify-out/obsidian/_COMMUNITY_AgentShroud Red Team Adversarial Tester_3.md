@@ -14,7 +14,7 @@ members: 18
 - [[AgentShroud Red Team Adversarial Tester_3]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
 - [[Attack Phases_3]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
 - [[Attack Techniques Reference_3]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
-- [[Coverage Requirements_3]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
+- [[Coverage Requirements_4]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
 - [[Critical Rules_7]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
 - [[Infrastructure_3]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md
 - [[Key Principle_3]] - document - docker/config/openclaw/skills/i-sec-offense/SKILL.md

@@ -28,7 +28,7 @@ members: 21
 - [[Secrets_1]] - document - CHEATSHEET.md
 - [[Security Scanners]] - document - CHEATSHEET.md
 - [[Telegram Bot Commands (Owner)]] - document - CHEATSHEET.md
-- [[Tests_1]] - document - CHEATSHEET.md
+- [[Tests]] - document - CHEATSHEET.md
 - [[Upgrades & Rollbacks]] - document - CHEATSHEET.md
 - [[Web Management UI]] - document - CHEATSHEET.md
 

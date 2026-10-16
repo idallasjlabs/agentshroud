@@ -24,7 +24,7 @@ members: 26
 - [[Optional Requirements]] - document - docs/setup/setup-guide.md
 - [[Performance Issues_1]] - document - docs/setup/setup-guide.md
 - [[Port Already in Use_2]] - document - docs/setup/setup-guide.md
-- [[Prerequisites_6]] - document - docs/setup/setup-guide.md
+- [[Prerequisites_4]] - document - docs/setup/setup-guide.md
 - [[Production Checklist]] - document - docs/setup/setup-guide.md
 - [[Quick Start (5 minutes)]] - document - docs/setup/setup-guide.md
 - [[Security Testing]] - document - docs/setup/setup-guide.md
@@ -33,7 +33,7 @@ members: 26
 - [[Supported Platforms]] - document - docs/setup/setup-guide.md
 - [[System Requirements_1]] - document - docs/setup/setup-guide.md
 - [[Tests Failing_1]] - document - docs/setup/setup-guide.md
-- [[Troubleshooting_26]] - document - docs/setup/setup-guide.md
+- [[Troubleshooting_24]] - document - docs/setup/setup-guide.md
 - [[What is AgentShroud_1]] - document - docs/setup/setup-guide.md
 - [[What's Next]] - document - docs/setup/setup-guide.md
 

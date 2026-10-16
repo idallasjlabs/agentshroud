@@ -12,7 +12,7 @@ members: 34
 ## Members
 - [[1. Build and Start OpenClaw]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[2. Access OpenClaw Control UI]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Architecture Overview_1]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Architecture Overview_2]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[Communication Channels]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[Control UI Not Accessible]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[Current Security Posture]] - document - docs/setup/OPENCLAW_SETUP.md

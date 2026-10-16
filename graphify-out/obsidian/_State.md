@@ -12,7 +12,7 @@ tags:
 # _State
 
 ## Connections
-- [[Enum_1]] - `inherits` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[_send_state()]] - `references` [EXTRACTED]
 - [[server.py]] - `contains` [EXTRACTED]
 

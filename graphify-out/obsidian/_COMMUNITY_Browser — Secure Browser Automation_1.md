@@ -11,10 +11,10 @@ members: 30
 
 ## Members
 - [[Action requires approval but none granted_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Browser timeout_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[CAPTCHA detected_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Browser timeout_4]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[CAPTCHA detected_4]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[Rate limit exceeded_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[URL not in allowlist_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[URL not in allowlist_4]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[1. Always Specify Risk Level_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[2. Use Allowlisting Liberally_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[3. Take Screenshots for Audit Trail_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
@@ -22,7 +22,7 @@ members: 30
 - [[5. Never Extract Credentials_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[Approval Integration_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[Audit Logging_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Best Practices_4]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Best Practices_5]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[Browser — Secure Browser Automation_4]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[Click Element_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[Core Security Principles_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
@@ -37,8 +37,8 @@ members: 30
 - [[Security Configuration_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[Security Guarantees_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[Take Screenshot_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Troubleshooting_16]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Usage_62]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Troubleshooting_18]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Usage_63]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[openclawskillsi-browserSKILL]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 
 ## Live Query (requires Dataview plugin)

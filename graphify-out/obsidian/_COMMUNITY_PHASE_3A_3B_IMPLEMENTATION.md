@@ -53,8 +53,8 @@ SORT file.name ASC
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_diagramsREADME]]
 - 1 edge to [[_COMMUNITY_02-infrastructure]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
 - 1 edge to [[_COMMUNITY_KeyVault]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
 - 1 edge to [[_COMMUNITY_Per-Agent Container Isolation Architecture]]
 - 1 edge to [[_COMMUNITY_FR3 System Integrity]]
 

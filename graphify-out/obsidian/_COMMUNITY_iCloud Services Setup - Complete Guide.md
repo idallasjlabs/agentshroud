@@ -10,9 +10,9 @@ members: 26
 **Members:** 26 nodes
 
 ## Members
-- [[401 Unauthorized_4]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[401 Unauthorized_3]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
 - [[403 Forbidden]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[Connection timeout_4]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Connection timeout_3]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
 - [[Notes folder not found]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
 - [[Access Notes via IMAP]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
 - [[Challenge]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
@@ -45,7 +45,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
+- 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter_1]]
 
 ## Top bridge nodes
 - [[iCloud Services Setup - Complete Guide]] - degree 11, connects to 1 community

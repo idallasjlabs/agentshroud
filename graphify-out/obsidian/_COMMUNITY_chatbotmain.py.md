@@ -46,7 +46,7 @@ members: 63
 - [[Process chat message with Isaiah's personality.]] - rationale - chatbot/main.py
 - [[Raise 429 if the client has exceeded the rate limit.]] - rationale - chatbot/main.py
 - [[Read the expected auth token from env or secrets.]] - rationale - chatbot/main.py
-- [[Request_9]] - code - chatbot/main.py
+- [[Request_10]] - code - chatbot/main.py
 - [[Require valid Bearer token for chat endpoints.      When CHATBOT_AUTH_TOKEN is n]] - rationale - chatbot/main.py
 - [[TestAsyncClient]] - code - chatbot/test_main.py
 - [[TestAuth_1]] - code - chatbot/test_main.py

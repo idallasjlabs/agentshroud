@@ -10,7 +10,7 @@ members: 93
 **Members:** 93 nodes
 
 ## Members
-- [[dot-__init__()_149]] - code - gateway/security/collaborator_tracker.py
+- [[dot-__init__()_136]] - code - gateway/security/collaborator_tracker.py
 - [[dot-_append_contributor_log()]] - code - gateway/security/collaborator_tracker.py
 - [[dot-_coerce_timestamp()]] - code - gateway/security/collaborator_tracker.py
 - [[dot-_normalize_preview()]] - code - gateway/security/collaborator_tracker.py
@@ -34,8 +34,8 @@ members: 93
 - [[Normalize username for safe contributor-log tokenization.]] - rationale - gateway/security/collaborator_tracker.py
 - [[Owner messages are now recorded with is_owner=True (not silently dropped).]] - rationale - gateway/tests/test_collaborator_tracker.py
 - [[Owner's Telegram first_name with pipe chars is replaced by owner_display_name.]] - rationale - gateway/tests/test_collaborator_tracker.py
-- [[Path_36]] - code - gateway/security/collaborator_tracker.py
-- [[Path_37]] - code - gateway/tests/test_lifespan_prune.py
+- [[Path_35]] - code - gateway/security/collaborator_tracker.py
+- [[Path_36]] - code - gateway/tests/test_lifespan_prune.py
 - [[Real Telegram UIDs (9-10 digits) must NOT be pruned.]] - rationale - gateway/tests/test_collaborator_tracker.py
 - [[Real-UID markdown files must never be deleted by the prune pass.]] - rationale - gateway/tests/test_lifespan_prune.py
 - [[Return True when uid looks like a test fixture that should be silently dropped.]] - rationale - gateway/security/collaborator_tracker.py
@@ -113,17 +113,17 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 10 edges to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
-- 5 edges to [[_COMMUNITY_MiddlewareManager]]
+- 5 edges to [[_COMMUNITY_AgentRegistry]]
 - 3 edges to [[_COMMUNITY_WebhookReceiver]]
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 2 edges to [[_COMMUNITY_TestMultipartOutboundPipeline]]
+- 3 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
 - 2 edges to [[_COMMUNITY_PIIConfig]]
+- 2 edges to [[_COMMUNITY_TestMultipartOutboundPipeline]]
 - 1 edge to [[_COMMUNITY_TestForwardToTelegramTimeouts]]
 - 1 edge to [[_COMMUNITY_TelegramAPIProxy_2]]
 - 1 edge to [[_COMMUNITY_TestOutboundClassifierHelpers]]
-- 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py_1]]
 - 1 edge to [[_COMMUNITY_TestBuildCollaboratorSafeInfoResponse]]
 - 1 edge to [[_COMMUNITY_TestDomainValidationHelper]]
+- 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py_1]]
 - 1 edge to [[_COMMUNITY_TestInternalBannerMatcher]]
 - 1 edge to [[_COMMUNITY_TestLooksLikeSafeCollaboratorInfoQuery]]
 - 1 edge to [[_COMMUNITY_TestParseModeStrippedAfterPIIRedaction]]

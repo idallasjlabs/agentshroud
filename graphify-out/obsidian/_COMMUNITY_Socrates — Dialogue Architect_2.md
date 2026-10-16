@@ -22,7 +22,7 @@ members: 18
 - [[Output Format_21]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
 - [[Persona_7]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
 - [[Quality Checklist_8]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[Role_59]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Role_60]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
 - [[Socrates — Dialogue Architect_4]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
 - [[Speaker Definitions_2]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
 - [[System Prompt_7]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md

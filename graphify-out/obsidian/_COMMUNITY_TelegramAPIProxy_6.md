@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-test_raw_web_fetch_json_approval_cooldown_is_scheme_port_scoped()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Cooldown dedupe must not suppress approvals when schemeport risk changes.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_proxy_request_suppresses_duplicate_delayed_starting_notice()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Delayed-starting notices should also be deduplicated in cooldown window.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 3 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
 
 ## Top bridge nodes
-- [[dot-test_raw_web_fetch_json_approval_cooldown_is_scheme_port_scoped()]] - degree 4, connects to 1 community
+- [[dot-test_proxy_request_suppresses_duplicate_delayed_starting_notice()]] - degree 4, connects to 1 community

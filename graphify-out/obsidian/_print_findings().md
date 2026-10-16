@@ -12,7 +12,7 @@ tags:
 # _print_findings()
 
 ## Connections
-- [[ScanResult_2]] - `references` [EXTRACTED]
+- [[ScanResult_1]] - `references` [EXTRACTED]
 - [[main()_10]] - `calls` [EXTRACTED]
 - [[scan.py]] - `contains` [EXTRACTED]
 

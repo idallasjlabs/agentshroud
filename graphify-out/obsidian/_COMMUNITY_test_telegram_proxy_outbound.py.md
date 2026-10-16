@@ -69,13 +69,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 19 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 19 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
 - 18 edges to [[_COMMUNITY_PIIConfig]]
 - 10 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
 - 9 edges to [[_COMMUNITY_TelegramAPIProxy_2]]
 - 3 edges to [[_COMMUNITY_TestMultipartOutboundPipeline]]
 - 1 edge to [[_COMMUNITY_TestForwardToTelegramTimeouts]]
-- 1 edge to [[_COMMUNITY_AgentTarget]]
+- 1 edge to [[_COMMUNITY_DataLedger]]
 - 1 edge to [[_COMMUNITY_TestWebSearchLog]]
 - 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py_1]]
 - 1 edge to [[_COMMUNITY_TestDomainValidationHelper]]

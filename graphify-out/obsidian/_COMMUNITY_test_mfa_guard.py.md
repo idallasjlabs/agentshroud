@@ -1,28 +1,31 @@
 ---
 type: community
-cohesion: 0.06
-members: 70
+cohesion: 0.05
+members: 73
 ---
 
 # test_mfa_guard.py
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 70 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 73 nodes
 
 ## Members
-- [[dot-__init__()_181]] - code - gateway/security/mfa_guard.py
+- [[NOTE Called within _lock context]] - rationale - gateway/approval_queue/queue.py
+- [[dot-__init__()_170]] - code - gateway/security/mfa_guard.py
 - [[dot-_decode_secret()]] - code - gateway/security/mfa_guard.py
 - [[dot-_prune_used()]] - code - gateway/security/mfa_guard.py
 - [[dot-_totp_for_counter()]] - code - gateway/security/mfa_guard.py
 - [[dot-from_env()_3]] - code - gateway/security/mfa_guard.py
 - [[dot-is_required()]] - code - gateway/security/mfa_guard.py
-- [[dot-verify()_1]] - code - gateway/security/mfa_guard.py
+- [[dot-verify()]] - code - gateway/security/mfa_guard.py
+- [[AgentShroud Security Dashboard (index.html)]] - code - gateway/dashboard/index.html
+- [[Approval Queue Module Badge Icon]] - image - branding/icons/modules/approval-queue-256x256.png
 - [[Build an MFAGuard from environment variables  Docker secret file.          Reco]] - rationale - gateway/security/mfa_guard.py
 - [[Compute the RFC 6238 TOTP value for a specific time-step counter.]] - rationale - gateway/security/mfa_guard.py
 - [[Decode a base32 secret; return b on emptyinvalid input.]] - rationale - gateway/security/mfa_guard.py
 - [[Drop replay records older than the accepted window (bounded memory).]] - rationale - gateway/security/mfa_guard.py
-- [[EnhancedApprovalQueue_1]] - code - gateway/tests/test_mfa_guard.py
 - [[MFAGuard_1]] - code - gateway/security/mfa_guard.py
+- [[MFAGuard.verify()]] - code - gateway/security/mfa_guard.py
 - [[MFAResult]] - code - gateway/security/mfa_guard.py
 - [[Outcome of an MFA verification.      Attributes         allowed True if the ac]] - rationale - gateway/security/mfa_guard.py
 - [[Return True if ``action_type`` requires a second factor right now.          Two]] - rationale - gateway/security/mfa_guard.py
@@ -35,9 +38,9 @@ members: 70
 - [[_submit_high_risk()]] - code - gateway/tests/test_mfa_guard.py
 - [[_submit_tool_call()]] - code - gateway/tests/test_mfa_guard.py
 - [[_truthy()]] - code - gateway/security/mfa_guard.py
-- [[enhanced_mfa_queue()]] - code - gateway/tests/test_mfa_guard.py
 - [[mfa_guard.py]] - code - gateway/security/mfa_guard.py
 - [[now()]] - code - gateway/tests/test_mfa_guard.py
+- [[queue.py]] - code - gateway/approval_queue/queue.py
 - [[test_counter_below_zero_skipped()]] - code - gateway/tests/test_mfa_guard.py
 - [[test_custom_high_risk_action_types()]] - code - gateway/tests/test_mfa_guard.py
 - [[test_decide_mfa_disabled_approves_without_code()]] - code - gateway/tests/test_mfa_guard.py
@@ -89,17 +92,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 30 edges to [[_COMMUNITY_ApprovalQueueConfig_1]]
-- 7 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 3 edges to [[_COMMUNITY_DataLedger]]
-- 1 edge to [[_COMMUNITY_OAuthSecurityValidator]]
+- 38 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 2 edges to [[_COMMUNITY_DataLedger]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_2]]
 - 1 edge to [[_COMMUNITY_MCPPolicyEngine]]
 - 1 edge to [[_COMMUNITY_Path_3]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
 - 1 edge to [[_COMMUNITY_AgentShroud Docker Configuration]]
+- 1 edge to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]]
 
 ## Top bridge nodes
-- [[MFAGuard_1]] - degree 48, connects to 4 communities
-- [[test_mfa_guard.py]] - degree 60, connects to 3 communities
-- [[EnhancedApprovalQueue_1]] - degree 11, connects to 2 communities
-- [[_queue()]] - degree 11, connects to 2 communities
-- [[mfa_guard.py]] - degree 6, connects to 2 communities
+- [[MFAGuard_1]] - degree 48, connects to 3 communities
+- [[queue.py]] - degree 14, connects to 3 communities
+- [[test_mfa_guard.py]] - degree 60, connects to 1 community
+- [[_queue()]] - degree 11, connects to 1 community
+- [[_submit_high_risk()]] - degree 9, connects to 1 community

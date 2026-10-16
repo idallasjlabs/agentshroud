@@ -22,19 +22,19 @@ members: 27
 - [[Project Management (SKILL)]] - document - .agents/skills/i-pm/SKILL.md
 - [[Pull Request Generator (README)]] - document - .agents/skills/i-pr/README.md
 - [[Pull Request Generator (SKILL)]] - document - .agents/skills/i-pr/SKILL.md
-- [[Purpose_72]] - document - .agents/skills/i-cr/README.md
-- [[Purpose_73]] - document - .agents/skills/i-pm/README.md
-- [[Purpose_74]] - document - docker/config/hermes/skills/i-cr/README.md
-- [[Purpose_75]] - document - docker/config/hermes/skills/i-pm/README.md
-- [[Related Skills_58]] - document - .agents/skills/i-cr/README.md
-- [[Related Skills_59]] - document - .agents/skills/i-pm/README.md
-- [[Related Skills_60]] - document - docker/config/hermes/skills/i-cr/README.md
-- [[Related Skills_61]] - document - docker/config/hermes/skills/i-pm/README.md
+- [[Purpose_75]] - document - .agents/skills/i-cr/README.md
+- [[Purpose_76]] - document - .agents/skills/i-pm/README.md
+- [[Purpose_77]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[Purpose_78]] - document - docker/config/hermes/skills/i-pm/README.md
+- [[Related Skills_59]] - document - .agents/skills/i-cr/README.md
+- [[Related Skills_60]] - document - .agents/skills/i-pm/README.md
+- [[Related Skills_61]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[Related Skills_62]] - document - docker/config/hermes/skills/i-pm/README.md
 - [[Security Audit (i-sec)]] - document - .agents/skills/i-sec/SKILL.md
-- [[Usage_63]] - document - .agents/skills/i-cr/README.md
-- [[Usage_64]] - document - .agents/skills/i-pm/README.md
-- [[Usage_65]] - document - docker/config/hermes/skills/i-cr/README.md
-- [[Usage_66]] - document - docker/config/hermes/skills/i-pm/README.md
+- [[Usage_64]] - document - .agents/skills/i-cr/README.md
+- [[Usage_65]] - document - .agents/skills/i-pm/README.md
+- [[Usage_66]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[Usage_67]] - document - docker/config/hermes/skills/i-pm/README.md
 - [[hermesskillsi-crREADME]] - document - docker/config/hermes/skills/i-cr/README.md
 - [[hermesskillsi-pmREADME]] - document - docker/config/hermes/skills/i-pm/README.md
 

@@ -1,26 +1,21 @@
 ---
 type: community
-cohesion: 0.10
-members: 21
+cohesion: 0.13
+members: 15
 ---
 
 # AgentShroud v0.8.0 "Watchtower" — Comprehensive Wiring Audit
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 21 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[1. EgressTelegramNotifier — Little Snitch Inline Buttons]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[2. Approval Queue — Missing Telegram Notifications]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[3. OutputCanary — Not Passed to Pipeline]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[4. EnhancedToolResultSanitizer — Not Passed to Pipeline]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[5. LLMProxy — Never Instantiated]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
 - [[6. Callback Query Handler for Inline Buttons]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
 - [[7. KeyVault — Instantiated but Not Used]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
 - [[8. SidecarScanner — External Tool Interface]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
 - [[9. Audit Store Not Passed to Pipeline]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
 - [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Executive Summary_12]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Executive Summary_14]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
 - [[Fix Priority List]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
 - [[Inbound Request Path (middleware.py → process_request)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
 - [[Infrastructure (lifespan.py — initialized at startup)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
@@ -29,7 +24,6 @@ members: 21
 - [[Revised Summary]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
 - [[v0.8.0-wiring-audit]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
 - [[✅ CONFIRMED WIRED AND WORKING]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[🔴 CRITICAL — Not Wired (code exists, tests pass, but NOT running in production)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
 - [[🟡 MEDIUM — Partially Wired or Degraded]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
 
 ## Live Query (requires Dataview plugin)
@@ -40,7 +34,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit_1]]
 - 1 edge to [[_COMMUNITY_AgentShroud™ v0.8.0 Watchtower — Complete Feature List]]
 
 ## Top bridge nodes
-- [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - degree 8, connects to 1 community
+- [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - degree 8, connects to 2 communities

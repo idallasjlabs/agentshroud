@@ -12,7 +12,7 @@ tags:
 # _score_resource_availability()
 
 ## Connections
-- [[Path_33]] - `calls` [EXTRACTED]
+- [[Path_51]] - `calls` [EXTRACTED]
 - [[Score domain 16 Resource Availability & Limits (0-5). IEC 62443 FR7.      1=mem]] - `rationale_for` [EXTRACTED]
 - [[_app_state_has()]] - `calls` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]

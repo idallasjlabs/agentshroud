@@ -13,7 +13,7 @@ members: 8
 - [[(method, path) for every non-destructive route declaring a requestBody.]] - rationale - gateway/tests/test_api_contract_fuzz.py
 - [[_deep_nest()]] - code - gateway/tests/test_api_contract_fuzz.py
 - [[_fuzzable_endpoints()]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[client()_1]] - code - gateway/tests/test_api_contract_fuzz.py
+- [[client()_3]] - code - gateway/tests/test_api_contract_fuzz.py
 - [[test_api_contract_fuzz.py]] - code - gateway/tests/test_api_contract_fuzz.py
 - [[test_destructive_routes_are_excluded()]] - code - gateway/tests/test_api_contract_fuzz.py
 - [[test_endpoint_survives_adversarial_body()]] - code - gateway/tests/test_api_contract_fuzz.py

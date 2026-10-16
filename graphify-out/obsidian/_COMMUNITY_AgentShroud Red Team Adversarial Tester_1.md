@@ -14,7 +14,7 @@ members: 18
 - [[AgentShroud Red Team Adversarial Tester_1]] - document - skills/custom/agentshroud-redteam/SKILL.md
 - [[Attack Phases_1]] - document - skills/custom/agentshroud-redteam/SKILL.md
 - [[Attack Techniques Reference_1]] - document - skills/custom/agentshroud-redteam/SKILL.md
-- [[Coverage Requirements_1]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Coverage Requirements_2]] - document - skills/custom/agentshroud-redteam/SKILL.md
 - [[Critical Rules_5]] - document - skills/custom/agentshroud-redteam/SKILL.md
 - [[Infrastructure_1]] - document - skills/custom/agentshroud-redteam/SKILL.md
 - [[Key Principle_1]] - document - skills/custom/agentshroud-redteam/SKILL.md

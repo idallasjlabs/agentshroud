@@ -10,7 +10,7 @@ members: 24
 **Members:** 24 nodes
 
 ## Members
-- [[dot-setup_method()_32]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-setup_method()_25]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-test_build()]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-test_build_with_args()]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-test_compose_down()]] - code - gateway/tests/test_runtime_engines.py
@@ -51,4 +51,4 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[TestDockerEngine]] - degree 29, connects to 5 communities
-- [[dot-setup_method()_32]] - degree 2, connects to 1 community
+- [[dot-setup_method()_25]] - degree 2, connects to 1 community

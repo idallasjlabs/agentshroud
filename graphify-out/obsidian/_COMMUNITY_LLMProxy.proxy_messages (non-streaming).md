@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.08
-members: 46
+cohesion: 0.09
+members: 42
 ---
 
 # LLMProxy.proxy_messages (non-streaming)
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 46 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 42 nodes
 
 ## Members
 - [[Alias for Hermes Anthropic SDK's apiv1 preflight path. Some Anthropic SDK…]] - rationale - gateway/ingest_api/main.py
 - [[Alias for hermes v0.16.0+'s OpenAI client. Hermes upgraded to v0.16.0 on…]] - rationale - gateway/ingest_api/main.py
-- [[Hermes's dashboard chat streams, so the streaming path must apply the shim too.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[LLMProxy._apply_filters]] - code - gateway/proxy/llm_proxy.py
 - [[LLMProxy._build_timeout_fallback_response]] - code - gateway/proxy/llm_proxy.py
 - [[LLMProxy._emit_failover_notice]] - code - gateway/proxy/llm_proxy.py
@@ -44,9 +43,7 @@ members: 46
 - [[Proxy Google Gemini API calls through security pipeline.]] - rationale - gateway/ingest_api/main.py
 - [[Proxy bot Slack Web API calls through SecurityPipeline. Restricted to the…]] - rationale - gateway/ingest_api/main.py
 - [[Proxy native Ollama API calls through security pipeline.]] - rationale - gateway/ingest_api/main.py
-- [[Request]] - code
-- [[Streaming route masked upstream 4xx as 200 event stream]] - rationale - INCIDENT_2026-10-16_conduit-outage.md
-- [[TurboFieldfare rejects parallel_tool_calls  non-auto tool_choice]] - rationale - INCIDENT_2026-10-16_conduit-outage.md
+- [[Request_1]] - code
 - [[_LOCAL_BACKEND_HINTS]] - code - gateway/proxy/llm_proxy.py
 - [[api_route]] - code
 - [[google_api_proxy]] - code - gateway/ingest_api/main.py
@@ -55,7 +52,6 @@ members: 46
 - [[llm_openai_chat_alias]] - code - gateway/ingest_api/main.py
 - [[ollama_api_proxy]] - code - gateway/ingest_api/main.py
 - [[slack_api_proxy()]] - code - gateway/ingest_api/main.py
-- [[test_fieldflare_route_strips_unsupported_fields_streaming]] - code - gateway/tests/test_llm_proxy_local_parity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -67,23 +63,21 @@ SORT file.name ASC
 ## Connections to other communities
 - 11 edges to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
 - 6 edges to [[_COMMUNITY_LLMProxy]]
-- 6 edges to [[_COMMUNITY_test_llm_proxy.py]]
-- 6 edges to [[_COMMUNITY_test_llm_proxy_local_parity.py]]
-- 5 edges to [[_COMMUNITY_run-standalone.sh (Hermes docker run launcher)]]
+- 5 edges to [[_COMMUNITY_Request]]
 - 5 edges to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
-- 4 edges to [[_COMMUNITY_Request]]
-- 4 edges to [[_COMMUNITY_test_main_endpoints.py]]
-- 2 edges to [[_COMMUNITY_TestStreamingProxyStatusPropagation]]
+- 4 edges to [[_COMMUNITY_test_llm_proxy.py]]
+- 4 edges to [[_COMMUNITY_test_main_endpoints.py_1]]
+- 4 edges to [[_COMMUNITY_test_llm_proxy_local_parity.py]]
 - 2 edges to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)_1]]
+- 2 edges to [[_COMMUNITY_test_main_endpoints.py]]
 - 2 edges to [[_COMMUNITY_test_hermes_cron_seed.py]]
-- 1 edge to [[_COMMUNITY__FakeStreamResponse]]
-- 1 edge to [[_COMMUNITY_Request_1]]
-- 1 edge to [[_COMMUNITY_test_main_endpoints.py_1]]
+- 1 edge to [[_COMMUNITY_TestStreamingProxyStatusPropagation]]
+- 1 edge to [[_COMMUNITY_run-standalone.sh (Hermes docker run launcher)]]
 - 1 edge to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]]
 
 ## Top bridge nodes
-- [[Request]] - degree 22, connects to 7 communities
-- [[llm_api_proxy (v1{path} LLM reverse proxy route)]] - degree 15, connects to 5 communities
-- [[Streaming route masked upstream 4xx as 200 event stream]] - degree 7, connects to 3 communities
+- [[Request_1]] - degree 22, connects to 6 communities
+- [[llm_api_proxy (v1{path} LLM reverse proxy route)]] - degree 14, connects to 6 communities
+- [[LLMProxy.proxy_messages_streaming]] - degree 20, connects to 3 communities
 - [[LLMProxy.proxy_messages (non-streaming)]] - degree 27, connects to 2 communities
-- [[LLMProxy.proxy_messages_streaming]] - degree 21, connects to 2 communities
+- [[api_route]] - degree 9, connects to 2 communities

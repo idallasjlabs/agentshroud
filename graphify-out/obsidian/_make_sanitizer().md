@@ -227,7 +227,7 @@ tags:
 - [[dot-test_web_search_no_egress_filter()]] - `calls` [EXTRACTED]
 - [[dot-test_web_search_query_truncation()]] - `calls` [EXTRACTED]
 - [[Create a PIISanitizer with default enforce config.]] - `rationale_for` [EXTRACTED]
-- [[PIIConfig_2]] - `calls` [EXTRACTED]
+- [[PIIConfig_1]] - `calls` [EXTRACTED]
 - [[PIISanitizer_2]] - `calls` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 

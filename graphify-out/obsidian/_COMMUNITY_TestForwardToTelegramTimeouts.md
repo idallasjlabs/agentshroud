@@ -27,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 4 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
 - 2 edges to [[_COMMUNITY_PIIConfig]]
 - 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
 - 1 edge to [[_COMMUNITY_TelegramAPIProxy_2]]

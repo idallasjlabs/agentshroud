@@ -12,7 +12,7 @@ tags:
 # _score_identity_authentication()
 
 ## Connections
-- [[Path_33]] - `calls` [EXTRACTED]
+- [[Path_51]] - `calls` [EXTRACTED]
 - [[Score domain 13 Identity & Authentication (0-5). IEC 62443 FR1.      1=API toke]] - `rationale_for` [EXTRACTED]
 - [[_app_state_has()]] - `calls` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]

@@ -22,7 +22,7 @@ members: 19
 - [[HTML  CSS Brand Variables_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
 - [[Patterns by Output Type_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
 - [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Role_54]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Role_55]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
 - [[Rules_19]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
 - [[Skill Branding Specialist (BS)_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
 - [[Typography Scale_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md

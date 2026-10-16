@@ -19,7 +19,7 @@ members: 14
 - [[Output Format_26]] - document - .agents/skills/i-athena/SKILL.md
 - [[Persona_9]] - document - .agents/skills/i-athena/SKILL.md
 - [[Quality Checklist_10]] - document - .agents/skills/i-athena/SKILL.md
-- [[Role_72]] - document - .agents/skills/i-athena/SKILL.md
+- [[Role_73]] - document - .agents/skills/i-athena/SKILL.md
 - [[System Prompt_9]] - document - .agents/skills/i-athena/SKILL.md
 - [[User Prompt Template_4]] - document - .agents/skills/i-athena/SKILL.md
 - [[cheatsheet_1]] - document - .agents/skills/i-athena/SKILL.md

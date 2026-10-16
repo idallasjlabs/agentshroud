@@ -11,9 +11,9 @@ members: 5
 
 ## Members
 - [[Athena — Knowledge Distiller_1]] - document - docker/config/hermes/skills/i-athena/README.md
-- [[Purpose_24]] - document - docker/config/hermes/skills/i-athena/README.md
+- [[Purpose_26]] - document - docker/config/hermes/skills/i-athena/README.md
 - [[Related Skills_12]] - document - docker/config/hermes/skills/i-athena/README.md
-- [[Usage_15]] - document - docker/config/hermes/skills/i-athena/README.md
+- [[Usage_16]] - document - docker/config/hermes/skills/i-athena/README.md
 - [[hermesskillsi-athenaREADME]] - document - docker/config/hermes/skills/i-athena/README.md
 
 ## Live Query (requires Dataview plugin)

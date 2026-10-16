@@ -1,20 +1,20 @@
 ---
 type: community
 cohesion: 0.11
-members: 24
+members: 23
 ---
 
 # Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)
 
 **Cohesion:** 0.11 - loosely connected
-**Members:** 24 nodes
+**Members:** 23 nodes
 
 ## Members
 - [[CI security-scan job (pip-audit dry-run)]] - code - .github/workflows/ci.yml
-- [[Compose network version-label mismatch forces network recreate]] - concept - reports/upgrade-2026-10-12.md
 - [[Dev-prod handoff contract via UsersSharedagentshroud-sundaydev-result-YYYY-MM-DD.json]] - rationale - prompts/sunday-upgrade.md
 - [[GitHub Actions version inventory (first time in scope)]] - concept - reports/upgrade-2026-10-12.md
 - [[Human tap-approval gates PR merge (dev) and prod cutover, each independent]] - rationale - prompts/sunday-upgrade.md
+- [[Jira tracking per Sunday run (project SCRUM, phase comments, Done only on ALL GREEN)]] - rationale - prompts/sunday-upgrade.md
 - [[Outcome taxonomy UPGRADED  HELD BACK  BLOCKED  FAILED  PENDING APPROVAL]] - rationale - prompts/sunday-upgrade.md
 - [[Python dependency audit job (pip-audit, fails on any vuln)]] - code - .github/workflows/security-scan.yml
 - [[Report reportsupgrade-YYYY-MM-DD.md 8 sections written to disk as each completes, unconditional]] - rationale - prompts/sunday-upgrade.md
@@ -26,7 +26,6 @@ members: 24
 - [[Two-pass pip-audit (bump, re-audit, bump again)]] - rationale - reports/upgrade-2026-10-12.md
 - [[Upgrade Report 2026-10-12 (dev, on-demand, PARTIAL)]] - document - reports/upgrade-2026-10-12.md
 - [[Upstream-advisory watch cron jobs (8 toolchain components)]] - concept - CHANGELOG.md
-- [[dockerdocker-compose.yml]] - code - docker/docker-compose.yml
 - [[promptssunday-upgrade.md (Sunday mission procedure)]] - document - prompts/sunday-upgrade.md
 - [[sunday-rollback.sh]] - code - scripts/sunday-rollback.sh
 - [[sunday-rollback.sh script]] - code - scripts/sunday-rollback.sh
@@ -43,16 +42,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_colima-health-check.sh]]
-- 4 edges to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]]
+- 7 edges to [[_COMMUNITY_colima-health-check.sh]]
 - 2 edges to [[_COMMUNITY_check-vendor-compat.sh]]
-- 2 edges to [[_COMMUNITY_sunday-upgrade-apply.sh]]
+- 2 edges to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]]
+- 1 edge to [[_COMMUNITY_sunday-upgrade-apply.sh]]
 - 1 edge to [[_COMMUNITY_plan_remediation]]
 - 1 edge to [[_COMMUNITY_triage-cve-mitigations.py]]
 
 ## Top bridge nodes
-- [[dockerdocker-compose.yml]] - degree 6, connects to 3 communities
+- [[Upgrade Report 2026-10-12 (dev, on-demand, PARTIAL)]] - degree 10, connects to 2 communities
 - [[Sunday upgrade mission every component in dev and prod to latest stable, resolve every finding, dev first]] - degree 7, connects to 2 communities
 - [[promptssunday-upgrade.md (Sunday mission procedure)]] - degree 5, connects to 2 communities
-- [[Dev-prod handoff contract via UsersSharedagentshroud-sundaydev-result-YYYY-MM-DD.json]] - degree 4, connects to 2 communities
-- [[Upgrade Report 2026-10-12 (dev, on-demand, PARTIAL)]] - degree 10, connects to 1 community
+- [[Dev-prod handoff contract via UsersSharedagentshroud-sundaydev-result-YYYY-MM-DD.json]] - degree 4, connects to 1 community
+- [[Human tap-approval gates PR merge (dev) and prod cutover, each independent]] - degree 3, connects to 1 community

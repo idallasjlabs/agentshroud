@@ -18,7 +18,7 @@ members: 13
 - [[Layer 4 Data Flow Security_1]] - document - docker/config/hermes/skills/i-sec/SKILL.md
 - [[Output Format_33]] - document - docker/config/hermes/skills/i-sec/SKILL.md
 - [[Review Layers_1]] - document - docker/config/hermes/skills/i-sec/SKILL.md
-- [[Role_83]] - document - docker/config/hermes/skills/i-sec/SKILL.md
+- [[Role_84]] - document - docker/config/hermes/skills/i-sec/SKILL.md
 - [[SecureClaw-Specific Threat Model_1]] - document - docker/config/hermes/skills/i-sec/SKILL.md
 - [[Skill Security Review (SEC)_1]] - document - docker/config/hermes/skills/i-sec/SKILL.md
 - [[Verification Commands_1]] - document - docker/config/hermes/skills/i-sec/SKILL.md

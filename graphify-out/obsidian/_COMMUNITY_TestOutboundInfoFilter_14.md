@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-test_context_aware_user_id_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test context-aware user ID filtering.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[dot-test_stats()]] - code - gateway/tests/test_outbound_filter.py
+- [[Test filter statistics.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,4 +24,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
 
 ## Top bridge nodes
-- [[dot-test_context_aware_user_id_filtering()]] - degree 2, connects to 1 community
+- [[dot-test_stats()]] - degree 2, connects to 1 community

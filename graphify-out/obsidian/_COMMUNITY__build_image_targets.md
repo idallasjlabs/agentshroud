@@ -1,13 +1,13 @@
 ---
 type: community
-cohesion: 0.18
-members: 15
+cohesion: 0.17
+members: 16
 ---
 
 # _build_image_targets
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 15 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 16 nodes
 
 ## Members
 - [[dot-_no_docker()]] - code - gateway/tests/test_daily_cve_report.py
@@ -21,6 +21,7 @@ members: 15
 - [[Build the list of container image targets for Trivy image scanning.      Prefers]] - rationale - gateway/security/daily_cve_report.py
 - [[Deployments that rename the gateway container (dev runs         agentshroud-marv]] - rationale - gateway/tests/test_daily_cve_report.py
 - [[Empty AGENTSHROUD_TRIVY_IMAGES adds no extra entries beyond         gateway + th]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[Path_45]] - code - gateway/security/trivy_report.py
 - [[Pin _running_image to the docker-unavailable fallback path so these         test]] - rationale - gateway/tests/test_daily_cve_report.py
 - [[Regression guard AGENTSHROUD_TRIVY_IMAGES used to be the ONLY         source of]] - rationale - gateway/tests/test_daily_cve_report.py
 - [[TestBuildImageTargets]] - code - gateway/tests/test_daily_cve_report.py
@@ -34,10 +35,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_test_daily_cve_report.py]]
-- 1 edge to [[_COMMUNITY_parse_trivy_output]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
+- 6 edges to [[_COMMUNITY_test_daily_cve_report.py]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_2]]
 
 ## Top bridge nodes
-- [[_build_image_targets()]] - degree 13, connects to 3 communities
+- [[_build_image_targets()]] - degree 13, connects to 2 communities
 - [[TestBuildImageTargets]] - degree 9, connects to 1 community
+- [[Path_45]] - degree 2, connects to 1 community

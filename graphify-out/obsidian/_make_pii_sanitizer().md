@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Create a real PII sanitizer in regex mode (no spaCy).]] - `rationale_for` [EXTRACTED]
-- [[PIIConfig_2]] - `calls` [EXTRACTED]
+- [[PIIConfig_1]] - `calls` [EXTRACTED]
 - [[PIISanitizer_2]] - `calls` [EXTRACTED]
 - [[PIISanitizer_1]] - `references` [EXTRACTED]
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]

@@ -25,7 +25,7 @@ members: 16
 - [[Step 6 Handle 1Password specifically]] - document - docs/planning/redteam/05-credential-isolation.md
 - [[Step 7 Add credential leak detection to egress filtering]] - document - docs/planning/redteam/05-credential-isolation.md
 - [[Step 8 Verify no credentials remain in agent container]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Verification_8]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Verification_9]] - document - docs/planning/redteam/05-credential-isolation.md
 
 ## Live Query (requires Dataview plugin)
 

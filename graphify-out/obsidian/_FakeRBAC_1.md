@@ -12,10 +12,10 @@ tags:
 # _FakeRBAC
 
 ## Connections
-- [[dot-__init__()_90]] - `method` [EXTRACTED]
+- [[dot-__init__()_80]] - `method` [EXTRACTED]
 - [[dot-check_permission()_2]] - `method` [EXTRACTED]
 - [[dot-check_tool_permission()_1]] - `method` [EXTRACTED]
-- [[dot-get_user_role()_1]] - `method` [EXTRACTED]
+- [[dot-get_user_role()_2]] - `method` [EXTRACTED]
 - [[dot-test_owner_bypass()]] - `calls` [EXTRACTED]
 - [[dot-test_owner_bypass()_1]] - `calls` [EXTRACTED]
 - [[dot-test_owner_bypasses_sandbox()]] - `calls` [EXTRACTED]
@@ -30,7 +30,7 @@ tags:
 - [[Deterministic stand-in for RBACManager.]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 

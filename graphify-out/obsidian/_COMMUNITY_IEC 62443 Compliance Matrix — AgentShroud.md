@@ -23,7 +23,7 @@ members: 15
 - [[IEC 62443 Compliance Matrix — AgentShroud]] - document - docs/compliance/iec-62443-matrix.md
 - [[Key Components Referenced (v1.0.0)]] - document - docs/compliance/iec-62443-matrix.md
 - [[Overview_23]] - document - docs/compliance/iec-62443-matrix.md
-- [[Summary_22]] - document - docs/compliance/iec-62443-matrix.md
+- [[Summary_24]] - document - docs/compliance/iec-62443-matrix.md
 - [[iec-62443-matrix]] - document - docs/compliance/iec-62443-matrix.md
 
 ## Live Query (requires Dataview plugin)
@@ -35,12 +35,12 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_KeyVault]]
-- 1 edge to [[_COMMUNITY_TestEgressApprovalQueue]]
 - 1 edge to [[_COMMUNITY_AuditStore]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
 - 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
 - 1 edge to [[_COMMUNITY_FR3 System Integrity]]
 - 1 edge to [[_COMMUNITY_export-bot-conversations.py]]
-- 1 edge to [[_COMMUNITY_egress_filter.py]]
+- 1 edge to [[_COMMUNITY_TestEgressApprovalQueue]]
 - 1 edge to [[_COMMUNITY_diagramsREADME]]
 
 ## Top bridge nodes

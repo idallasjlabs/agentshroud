@@ -105,7 +105,7 @@ members: 144
 - [[falco_alerts()]] - code - gateway/ingest_api/main.py
 - [[full_security_report()]] - code - gateway/ingest_api/main.py
 - [[gateway package __init__]] - code - gateway/__init__.py
-- [[get_1]] - code
+- [[get]] - code
 - [[get_dns_stats()]] - code - gateway/ingest_api/main.py
 - [[get_ledger_entry()]] - code - gateway/ingest_api/main.py
 - [[get_my_permissions()]] - code - gateway/ingest_api/main.py
@@ -122,7 +122,7 @@ members: 144
 - [[list_security_modules()]] - code - gateway/ingest_api/main.py
 - [[list_users_and_roles()]] - code - gateway/ingest_api/main.py
 - [[llm_proxy_stats]] - code - gateway/ingest_api/main.py
-- [[post_1]] - code
+- [[post]] - code
 - [[privacy_audit()]] - code - gateway/ingest_api/main.py
 - [[privacy_policy_status()]] - code - gateway/ingest_api/main.py
 - [[proxy_status()]] - code - gateway/ingest_api/main.py
@@ -165,33 +165,31 @@ SORT file.name ASC
 ## Connections to other communities
 - 11 edges to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)_1]]
 - 11 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
-- 7 edges to [[_COMMUNITY_test_main_endpoints.py]]
 - 6 edges to [[_COMMUNITY__is_op_reference_allowed]]
-- 4 edges to [[_COMMUNITY_Request]]
+- 5 edges to [[_COMMUNITY_Request]]
+- 4 edges to [[_COMMUNITY_test_main_endpoints.py_1]]
+- 4 edges to [[_COMMUNITY_test_main_endpoints.py]]
 - 3 edges to [[_COMMUNITY_deep_security_test]]
 - 2 edges to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
-- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+- 2 edges to [[_COMMUNITY_InjectionAction]]
 - 2 edges to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]]
 - 2 edges to [[_COMMUNITY_Commit list 2026-10-10 through 2026-10-16 on main]]
-- 1 edge to [[_COMMUNITY_Request_1]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig_2]]
 - 1 edge to [[_COMMUNITY_ProxyDashboard]]
-- 1 edge to [[_COMMUNITY_test_main_endpoints.py_1]]
-- 1 edge to [[_COMMUNITY_ReportStore]]
 - 1 edge to [[_COMMUNITY_test_docs_accuracy.py]]
+- 1 edge to [[_COMMUNITY_Action]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
 - 1 edge to [[_COMMUNITY_AlertTelegramRelay]]
-- 1 edge to [[_COMMUNITY_gatewayteststest_llm_proxy_thinking_suppression.py (8 cases)]]
-- 1 edge to [[_COMMUNITY_ADR-005 SHA-256 Hash Chain Audit Integrity]]
+- 1 edge to [[_COMMUNITY_ReportStore]]
+- 1 edge to [[_COMMUNITY_ADR-005 SHA-256 Hash Chain Audit Integrity_1]]
 - 1 edge to [[_COMMUNITY_DataLedger]]
-- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
 - 1 edge to [[_COMMUNITY_CREDENTIAL-PROTECTION-IMPLEMENTED]]
 - 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
-- 1 edge to [[_COMMUNITY_test_agent_cve_registry.py]]
-- 1 edge to [[_COMMUNITY_Action]]
+- 1 edge to [[_COMMUNITY_agent_cve_registry.py]]
 
 ## Top bridge nodes
-- [[ingest_apimain.py]] - degree 115, connects to 23 communities
-- [[post_1]] - degree 25, connects to 4 communities
+- [[ingest_apimain.py]] - degree 115, connects to 21 communities
+- [[post]] - degree 25, connects to 4 communities
 - [[AuthRequired]] - degree 66, connects to 3 communities
 - [[create_report()]] - degree 5, connects to 1 community
 - [[get_my_permissions()]] - degree 5, connects to 1 community

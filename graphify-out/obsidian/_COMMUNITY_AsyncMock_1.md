@@ -27,7 +27,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_forward.py]]
+- 1 edge to [[_COMMUNITY_test_forward_stream.py]]
 
 ## Top bridge nodes
 - [[TestOwnerEmailBypassesPii]] - degree 4, connects to 1 community

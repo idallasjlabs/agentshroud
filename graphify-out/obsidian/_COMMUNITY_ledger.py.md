@@ -10,16 +10,16 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Config Keys Read_4]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[Config Keys Read_5]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
 - [[Database Schema_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
 - [[Environment Variables Used_6]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Function Details_21]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Imports From  Exports To_4]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Key Classes  Functions_23]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Known Issues  Notes_5]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Purpose_126]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Related_27]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Responsibilities_24]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[Function Details_22]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[Imports From  Exports To_5]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[Key Classes  Functions_24]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[Known Issues  Notes_6]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[Purpose_143]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[Related_28]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[Responsibilities_26]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
 - [[enforce_retention()]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
 - [[initialize()]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
 - [[ledger.py_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md

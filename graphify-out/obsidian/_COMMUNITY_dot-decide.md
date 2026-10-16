@@ -16,13 +16,13 @@ members: 21
 - [[dot-broadcast()]] - code - gateway/approval_queue/queue.py
 - [[dot-cleanup_decided()]] - code - gateway/approval_queue/queue.py
 - [[dot-decide()]] - code - gateway/approval_queue/queue.py
-- [[dot-get_item()_1]] - code - gateway/approval_queue/queue.py
+- [[dot-get_item()]] - code - gateway/approval_queue/queue.py
 - [[dot-get_pending()]] - code - gateway/approval_queue/queue.py
 - [[dot-submit()]] - code - gateway/approval_queue/queue.py
 - [[Add an action to the approval queue          Args             request Approval]] - rationale - gateway/approval_queue/queue.py
-- [[Any_55]] - code - gateway/approval_queue/queue.py
+- [[Any_54]] - code - gateway/approval_queue/queue.py
 - [[ApprovalQueueItem]] - code - gateway/approval_queue/queue.py
-- [[ApprovalRequest]] - code - gateway/approval_queue/queue.py
+- [[ApprovalRequest_1]] - code - gateway/approval_queue/queue.py
 - [[Best-effort JSONL persistence for queue lifecycle events.]] - rationale - gateway/approval_queue/queue.py
 - [[Check all pending items and expire those past timeout          Returns]] - rationale - gateway/approval_queue/queue.py
 - [[Fetch a single queue item by ID          Args             request_id Request U]] - rationale - gateway/approval_queue/queue.py
@@ -41,7 +41,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 9 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 1 edge to [[_COMMUNITY_ServiceManager]]
+- 1 edge to [[_COMMUNITY_ServiceManager_1]]
 
 ## Top bridge nodes
 - [[dot-decide()]] - degree 7, connects to 2 communities

@@ -12,9 +12,9 @@ members: 17
 ## Members
 - [[AgentShroud Tagline]] - concept - BRAND.md
 - [[AgentShroud Taglines List]] - document - branding/taglines.json
-- [[check()_8]] - code - tests/startup_smoke/test_hermes_chown_coverage.sh
-- [[check()_9]] - code - tests/startup_smoke/test_hermes_cron_html_email.sh
-- [[check()_10]] - code - tests/startup_smoke/test_openclaw_photo.sh
+- [[check()_5]] - code - tests/startup_smoke/test_hermes_chown_coverage.sh
+- [[check()_6]] - code - tests/startup_smoke/test_hermes_cron_html_email.sh
+- [[check()_7]] - code - tests/startup_smoke/test_openclaw_photo.sh
 - [[email_helper.sh]] - code - docker/bots/hermes/email_helper.sh
 - [[email_helper.sh script]] - code - docker/bots/hermes/email_helper.sh
 - [[jobs.yaml (Hermes cron)]] - document - docker/config/hermes/cron/jobs.yaml
@@ -38,8 +38,8 @@ SORT file.name ASC
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_AgentShroud™ Brand Guidelines]]
 - 1 edge to [[_COMMUNITY_test_collaborator_greeter.py]]
-- 1 edge to [[_COMMUNITY_check-vendor-compat.sh]]
 - 1 edge to [[_COMMUNITY_Dockerfile — Bot (OpenClaw)]]
+- 1 edge to [[_COMMUNITY_check-vendor-compat.sh]]
 
 ## Top bridge nodes
 - [[test_openclaw_photo.sh]] - degree 8, connects to 2 communities

@@ -17,8 +17,8 @@ members: 17
 - [[dot-_send_notification()]] - code - gateway/security/alert_dispatcher.py
 - [[dot-dispatch()]] - code - gateway/security/alert_dispatcher.py
 - [[dot-get_digest()]] - code - gateway/security/alert_dispatcher.py
-- [[dot-get_stats()_17]] - code - gateway/security/alert_dispatcher.py
-- [[Any_60]] - code - gateway/security/alert_dispatcher.py
+- [[dot-get_stats()_16]] - code - gateway/security/alert_dispatcher.py
+- [[Any_59]] - code - gateway/security/alert_dispatcher.py
 - [[Append alert to JSONL log file.]] - rationale - gateway/security/alert_dispatcher.py
 - [[Check if alert was already seen within dedup window.]] - rationale - gateway/security/alert_dispatcher.py
 - [[Check if we've exceeded the rate limit.]] - rationale - gateway/security/alert_dispatcher.py

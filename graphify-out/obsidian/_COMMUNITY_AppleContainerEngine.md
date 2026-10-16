@@ -10,27 +10,27 @@ members: 24
 **Members:** 24 nodes
 
 ## Members
-- [[dot-__init__()_136]] - code - gateway/runtime/apple_engine.py
+- [[dot-__init__()_131]] - code - gateway/runtime/apple_engine.py
 - [[dot-_cmd()_2]] - code - gateway/runtime/apple_engine.py
 - [[dot-build()_3]] - code - gateway/runtime/apple_engine.py
 - [[dot-compose_down()_3]] - code - gateway/runtime/apple_engine.py
 - [[dot-compose_up()_3]] - code - gateway/runtime/apple_engine.py
 - [[dot-exec()_3]] - code - gateway/runtime/apple_engine.py
-- [[dot-health_check()_5]] - code - gateway/runtime/apple_engine.py
+- [[dot-health_check()_4]] - code - gateway/runtime/apple_engine.py
 - [[dot-inspect()_3]] - code - gateway/runtime/apple_engine.py
 - [[dot-logs()_3]] - code - gateway/runtime/apple_engine.py
 - [[dot-network_create()_3]] - code - gateway/runtime/apple_engine.py
 - [[dot-network_rm()_3]] - code - gateway/runtime/apple_engine.py
 - [[dot-pause()_3]] - code - gateway/runtime/apple_engine.py
 - [[dot-pull()_3]] - code - gateway/runtime/apple_engine.py
-- [[dot-push()_4]] - code - gateway/runtime/apple_engine.py
+- [[dot-push()_3]] - code - gateway/runtime/apple_engine.py
 - [[dot-rm()_3]] - code - gateway/runtime/apple_engine.py
 - [[dot-run()_6]] - code - gateway/runtime/apple_engine.py
-- [[dot-stop()_10]] - code - gateway/runtime/apple_engine.py
+- [[dot-stop()_8]] - code - gateway/runtime/apple_engine.py
 - [[dot-unpause()_3]] - code - gateway/runtime/apple_engine.py
 - [[dot-volume_create()_3]] - code - gateway/runtime/apple_engine.py
 - [[dot-volume_rm()_3]] - code - gateway/runtime/apple_engine.py
-- [[Any_52]] - code - gateway/runtime/apple_engine.py
+- [[Any_49]] - code - gateway/runtime/apple_engine.py
 - [[AppleContainerEngine]] - code - gateway/runtime/apple_engine.py
 - [[Container engine backed by Apple's `container` CLI.]] - rationale - gateway/runtime/apple_engine.py
 - [[get_engine]] - code - gateway/runtime/__init__.py
@@ -43,12 +43,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_test_runtime_engines.py]]
+- 5 edges to [[_COMMUNITY_test_runtime_engines.py]]
 - 4 edges to [[_COMMUNITY_test_runtime_engines.py_1]]
 - 3 edges to [[_COMMUNITY_RuntimeConfig]]
 - 2 edges to [[_COMMUNITY_ContainerEngine]]
 - 2 edges to [[_COMMUNITY_TestAppleContainerEngine]]
 - 2 edges to [[_COMMUNITY_get_engine]]
+- 1 edge to [[_COMMUNITY_test_runtime_engines.py_2]]
 - 1 edge to [[_COMMUNITY_TestInstallerAPI]]
 - 1 edge to [[_COMMUNITY_PodmanEngine]]
 - 1 edge to [[_COMMUNITY_DockerEngine]]
@@ -57,5 +58,5 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_TestWebAPI]]
 
 ## Top bridge nodes
-- [[AppleContainerEngine]] - degree 45, connects to 12 communities
-- [[Any_52]] - degree 3, connects to 2 communities
+- [[AppleContainerEngine]] - degree 45, connects to 13 communities
+- [[Any_49]] - degree 3, connects to 2 communities

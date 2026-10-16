@@ -10,10 +10,10 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_56]] - document - docker/config/openclaw/skills/i-qa/README.md
+- [[Purpose_58]] - document - docker/config/openclaw/skills/i-qa/README.md
 - [[Quality Assurance (QA)]] - document - docker/config/openclaw/skills/i-qa/README.md
 - [[Related Skills_44]] - document - docker/config/openclaw/skills/i-qa/README.md
-- [[Usage_47]] - document - docker/config/openclaw/skills/i-qa/README.md
+- [[Usage_48]] - document - docker/config/openclaw/skills/i-qa/README.md
 - [[openclawskillsi-qaREADME]] - document - docker/config/openclaw/skills/i-qa/README.md
 
 ## Live Query (requires Dataview plugin)

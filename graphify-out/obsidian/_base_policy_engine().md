@@ -12,9 +12,9 @@ tags:
 # _base_policy_engine()
 
 ## Connections
-- [[A2APolicyEngine_3]] - `calls` [EXTRACTED]
+- [[A2APolicyEngine_2]] - `calls` [EXTRACTED]
 - [[A2APolicyEngine]] - `references` [EXTRACTED]
-- [[proxy()]] - `calls` [EXTRACTED]
+- [[proxy()_1]] - `calls` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 - [[test_process_inbound_request_binary_part_is_forwarded_unscanned_and_flagged()]] - `calls` [EXTRACTED]
 - [[test_process_inbound_request_denial_is_also_logged_to_audit_store()]] - `calls` [EXTRACTED]

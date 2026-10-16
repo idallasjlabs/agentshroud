@@ -10,7 +10,7 @@ members: 25
 **Members:** 25 nodes
 
 ## Members
-- [[dot-setup_method()_31]] - code - gateway/tests/test_metadata_guard.py
+- [[dot-setup_method()_24]] - code - gateway/tests/test_metadata_guard.py
 - [[dot-test_all_unicode_control_chars_stripped()]] - code - gateway/tests/test_metadata_guard.py
 - [[dot-test_check_for_exif_detects_magic_bytes()]] - code - gateway/tests/test_metadata_guard.py
 - [[dot-test_check_oversized_headers_flags_large_headers()]] - code - gateway/tests/test_metadata_guard.py
@@ -45,8 +45,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_AlertDispatcher]]
-- 2 edges to [[_COMMUNITY_TestDocumentTagging]]
+- 2 edges to [[_COMMUNITY_test_prompt_guard.py]]
 
 ## Top bridge nodes
 - [[TestMetadataGuard_1]] - degree 16, connects to 2 communities
-- [[dot-setup_method()_31]] - degree 2, connects to 1 community
+- [[dot-setup_method()_24]] - degree 2, connects to 1 community

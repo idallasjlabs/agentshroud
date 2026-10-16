@@ -19,11 +19,11 @@ members: 17
 - [[GitHub Bad credentials_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
 - [[GitHub Docker image not found_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
 - [[Related Skills_88]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Role_64]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Role_65]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
 - [[Security Best Practices_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
 - [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
 - [[Troubleshooting_32]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Usage_95]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Usage_96]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
 - [[Verification Checklist_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
 - [[When to Invoke_7]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
 - [[openclawskillsi-mcpm-auth-resetSKILL]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md

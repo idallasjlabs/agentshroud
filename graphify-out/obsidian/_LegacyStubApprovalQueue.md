@@ -12,7 +12,7 @@ tags:
 # _LegacyStubApprovalQueue
 
 ## Connections
-- [[dot-__init__()_182]] - `method` [EXTRACTED]
+- [[dot-__init__()_192]] - `method` [EXTRACTED]
 - [[dot-submit_tool_request()_2]] - `method` [EXTRACTED]
 - [[dot-wait_for_decision()_2]] - `method` [EXTRACTED]
 - [[A duck-typed queue predating the ``force_tier`` kwarg — enforce() must     fall]] - `rationale_for` [EXTRACTED]
@@ -20,7 +20,7 @@ tags:
 - [[A2APolicyAction]] - `uses` [INFERRED]
 - [[A2APolicyConfig_1]] - `uses` [INFERRED]
 - [[A2APolicyDecision]] - `uses` [INFERRED]
-- [[A2APolicyEngine_3]] - `uses` [INFERRED]
+- [[A2APolicyEngine_2]] - `uses` [INFERRED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 - [[test_enforce_falls_back_to_legacy_queue_signature_without_force_tier()]] - `calls` [EXTRACTED]
 

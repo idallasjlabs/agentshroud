@@ -1,30 +1,28 @@
 ---
 type: community
-cohesion: 0.02
-members: 172
+cohesion: 0.03
+members: 143
 ---
 
 # TelegramAPIProxy
 
-**Cohesion:** 0.02 - loosely connected
-**Members:** 172 nodes
+**Cohesion:** 0.03 - loosely connected
+**Members:** 143 nodes
 
 ## Members
 - [[dot-_active_bot_id()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_active_send_token()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_answer_callback_query()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_bot_is_mentioned()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_build_collaborator_safe_info_response()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_collaborator_rate_limit_retry_after_seconds()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_edit_telegram_message()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_enforce_group_workspace_access()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_extract_first_egress_target()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_extract_owner_target()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_extract_owner_target_resolved()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_filter_inbound_updates()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_forward_to_telegram()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_get_user_projects()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_group_workspace_manager()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_is_group_message()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_is_immune()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_is_valid_domain_name()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_is_within_project_scope()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_looks_like_allowlist_bypass_request()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_looks_like_approval_action_request()]] - code - gateway/proxy/telegram_proxy.py
@@ -40,6 +38,7 @@ members: 172
 - [[dot-_looks_like_execution_request()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_looks_like_file_metadata_question()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_looks_like_file_query()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_looks_like_filename_reference()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_looks_like_guardrail_modification_request()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_looks_like_hidden_channel_exfil_request()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_looks_like_hypothetical_execution_question()]] - code - gateway/proxy/telegram_proxy.py
@@ -71,37 +70,23 @@ members: 172
 - [[dot-_normalize_command_token()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_notify_collaborator_command_blocked()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_quarantine_blocked_message()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_queue_collaborator_access_request()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_resolve_collaborator_mode()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_resolve_display_name()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_send_collaborator_pending_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_resolve_pending_username_target()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_send_collaborator_safe_info_response()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_send_disclosure()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_send_local_healthcheck_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_send_local_help_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_send_local_model_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_send_local_notice_with_fallback()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_send_local_start_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_send_local_status_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_send_local_whoami_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_send_owner_activity_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_send_owner_collabs_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_send_owner_pending_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_send_rate_limit_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_send_stranger_rate_limit_notice()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_send_telegram_text()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_send_telegram_with_keyboard()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_teams_config()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_telegram_create_invite_link()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_telegram_kick_member()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-get_stats()_4]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-_trigger_web_fetch_approval()]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-get_stats()_6]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-test_url_encoded_payload_normalized()]] - code - gateway/tests/test_adversarial_injection.py
+- [[dot-test_zero_width_space_stripped()]] - code - gateway/tests/test_adversarial_injection.py
 - [[Allow conceptual securityprocess questions that don't request executiondata ac]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Best-effort Telegram sender with bounded retries.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Best-effort check to avoid treating local file names as egress domains.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Best-effort guardrail collaborator prompts requesting direct file access.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Build a GroupWorkspaceManager from current teamsRBAC config.          Returns a]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Build informative but non-sensitive response for collaborator conceptual questio]] - rationale - gateway/proxy/telegram_proxy.py
 - [[CollaboratorActivityTracker.record_activity]] - code - gateway/security/collaborator_tracker.py
-- [[Create a single-use invite link for a Telegram group. Returns URL or None.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Detect chunkedpartial extraction prompts intended to bypass output controls.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Detect collaborator probes asking for direct commandtool inventories.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Detect collaborator prompts asking about other userssessionsidentities.]] - rationale - gateway/proxy/telegram_proxy.py
@@ -140,24 +125,20 @@ members: 172
 - [[Detect rawembedded tool payload text in user input.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Detect requests to encode sensitiveinternal content for exfiltration.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Detect requests to extract hidden-channel content from sensitiveinternal source]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Dismiss the Telegram inline button spinner with a brief toast.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Edit an existing Telegram message in-place (removes inline keyboard too).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Estimate seconds until collaborator rate limit window opens again.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Encoding bypass variants — validates InputNormalizer multi-pass decode.]] - rationale - gateway/tests/test_adversarial_injection.py
 - [[Extract first outbound web target (URL or bare domain) for egress preflight.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Fail-closed member check for a group-context inbound message.          Returns T]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Forward request to real Telegram API and return parsed response.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Kick (ban + unban) a user from a Telegram group. Returns True on success.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Normalize first command token so small obfuscations don't bypass local handlers.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Normalize input text to defeat encoding-based evasion.      Applied before all s]] - rationale - gateway/security/input_normalizer.py
 - [[Notify a collaborator that a privileged command is not available.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Notify a collaborator they have exceeded the hourly rate limit.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Notify an unknownunapproved user they have exceeded the access request rate lim]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Per-request bot token for gateway-originated Telegram sends.          Returns th]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Parse owner command target as numeric id or known collaborator alias.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Per-request bot_id for activity tracking.          Returns the bot_id set by pro]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Persist blocked inbound messages for admin review.          Also records the blo]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Proxies Telegram Bot API calls through the security pipeline.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Queue owner approval request for unknownrevoked users.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Resolve a readable label for user id when available.          Priority user sel]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Queue an interactive egress approval when raw web_fetch JSON leaks.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Resolve effective collaboration mode for a user.          Resolution order]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Resolve owner target from pending-request username aliases (e.g., approve ana).]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Resolve target by id, static alias, or pending username alias.          Resoluti]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Return TeamsConfig from app_state if available.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Return True if message originates from a group or supergroup chat.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Return True if text has any keyword overlap with the user's project focus_topics]] - rationale - gateway/proxy/telegram_proxy.py
@@ -166,22 +147,12 @@ members: 172
 - [[Return True when ``text`` is a bare liveness-check phrase.          Strips a lea]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Return list of ProjectConfig objects for this user, or empty list.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Scan inbound messages from getUpdates for security threats.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send a Telegram message with an inline keyboard.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic help command list without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic start notice without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic status summary without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic gateway health status without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic identityrole notice to simplify approval workflows.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic model status without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic owner pending-approval snapshot.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic pending-approval notice to unknownrevoked users.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send local command response with deterministic fallback text.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send owner a summary of recent collaborator activity (last hour).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send owner-friendly collaborator roster with known labels.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Send tailored safe informational response for collaborator conceptual query.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Send the one-time collaborator disclosure notice.          Picks the appropriate]] - rationale - gateway/proxy/telegram_proxy.py
 - [[TelegramAPIProxy]] - code - gateway/proxy/telegram_proxy.py
-- [[slack_proxy.py]] - code - gateway/proxy/slack_proxy.py
+- [[TestEncodingBypass]] - code - gateway/tests/test_adversarial_injection.py
+- [[Validate normalized domain labels to avoid malformed allowlist entries.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[normalize_input()]] - code - gateway/security/input_normalizer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -191,35 +162,41 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 48 edges to [[_COMMUNITY_HeuristicClassifier]]
-- 43 edges to [[_COMMUNITY_dot-_filter_outbound]]
+- 52 edges to [[_COMMUNITY_dot-_filter_outbound]]
+- 33 edges to [[_COMMUNITY_TelegramAPIProxy_3]]
 - 18 edges to [[_COMMUNITY_telegram_proxy.py]]
-- 14 edges to [[_COMMUNITY_dot-_proxy_request_impl]]
+- 13 edges to [[_COMMUNITY_RBACConfig]]
 - 12 edges to [[_COMMUNITY_ProgressiveLockdown]]
 - 12 edges to [[_COMMUNITY_PipelineAction]]
-- 11 edges to [[_COMMUNITY_RBACConfig_2]]
+- 11 edges to [[_COMMUNITY_dot-_proxy_request_impl]]
+- 10 edges to [[_COMMUNITY_ResourceGuard]]
+- 10 edges to [[_COMMUNITY_HeuristicClassifier]]
 - 9 edges to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
-- 9 edges to [[_COMMUNITY_ResourceGuard]]
 - 5 edges to [[_COMMUNITY_RateLimiter]]
 - 5 edges to [[_COMMUNITY__wrap_response]]
-- 4 edges to [[_COMMUNITY_BotConfig]]
-- 4 edges to [[_COMMUNITY_AsyncMock]]
-- 4 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 5 edges to [[_COMMUNITY_telegram_proxy.py_1]]
+- 4 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 3 edges to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
+- 3 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
+- 3 edges to [[_COMMUNITY_AsyncMock]]
 - 3 edges to [[_COMMUNITY_BlockingPipeline]]
-- 3 edges to [[_COMMUNITY_rbac_config.py]]
+- 3 edges to [[_COMMUNITY_AuditChain]]
 - 2 edges to [[_COMMUNITY_DelegationManager]]
 - 2 edges to [[_COMMUNITY_TestMultipartOutboundPipeline]]
-- 2 edges to [[_COMMUNITY_RBACConfig]]
-- 2 edges to [[_COMMUNITY_TestEgressApprovalQueue]]
-- 1 edge to [[_COMMUNITY_GitGuard]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 2 edges to [[_COMMUNITY_InjectionAction]]
+- 1 edge to [[_COMMUNITY_PIIConfig]]
 - 1 edge to [[_COMMUNITY_TestForwardToTelegramTimeouts]]
+- 1 edge to [[_COMMUNITY_TestEgressApprovalQueue_1]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL_6]]
+- 1 edge to [[_COMMUNITY_test_telegram_replay.py]]
 - 1 edge to [[_COMMUNITY_TestCollabLockdownNotifications]]
 - 1 edge to [[_COMMUNITY_TestBotIsMentioned]]
 - 1 edge to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
 - 1 edge to [[_COMMUNITY_TestFullAccessMiddlewareBypass]]
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
-- 1 edge to [[_COMMUNITY_telegram_api_proxy (telegram-api{path})]]
+- 1 edge to [[_COMMUNITY_BotConfig]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_2]]
+- 1 edge to [[_COMMUNITY_BotConfig_1]]
 - 1 edge to [[_COMMUNITY_TestBuildCollaboratorSafeInfoResponse]]
 - 1 edge to [[_COMMUNITY_TestDomainValidationHelper]]
 - 1 edge to [[_COMMUNITY_TestInternalBannerMatcher]]
@@ -228,14 +205,15 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_TestParseModeStrippedAfterPIIRedaction]]
 - 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
 - 1 edge to [[_COMMUNITY_TestWebSearchLog]]
+- 1 edge to [[_COMMUNITY_TestEgressApprovalQueue]]
 - 1 edge to [[_COMMUNITY_TestFileDownload]]
 - 1 edge to [[_COMMUNITY_TestStrangerRateLimit]]
 - 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py_1]]
-- 1 edge to [[_COMMUNITY_test_telegram_replay.py]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL_3]]
 
 ## Top bridge nodes
-- [[TelegramAPIProxy]] - degree 247, connects to 40 communities
+- [[TelegramAPIProxy]] - degree 247, connects to 41 communities
+- [[normalize_input()]] - degree 80, connects to 9 communities
 - [[dot-_filter_inbound_updates()]] - degree 87, connects to 7 communities
-- [[dot-_send_telegram_text()]] - degree 11, connects to 2 communities
-- [[slack_proxy.py]] - degree 3, connects to 2 communities
-- [[dot-_looks_like_safe_collaborator_info_query()]] - degree 6, connects to 1 community
+- [[dot-_send_telegram_text()]] - degree 11, connects to 3 communities
+- [[TestEncodingBypass]] - degree 9, connects to 2 communities

@@ -12,10 +12,10 @@ tags:
 # _HeadFakeClient
 
 ## Connections
-- [[dot-__aenter__()_2]] - `method` [EXTRACTED]
-- [[dot-__aexit__()_2]] - `method` [EXTRACTED]
-- [[dot-__init__()_2]] - `method` [EXTRACTED]
-- [[dot-stream()]] - `method` [EXTRACTED]
+- [[dot-__aenter__()_3]] - `method` [EXTRACTED]
+- [[dot-__aexit__()_3]] - `method` [EXTRACTED]
+- [[dot-__init__()_5]] - `method` [EXTRACTED]
+- [[dot-stream()_1]] - `method` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_HeadFakeClient

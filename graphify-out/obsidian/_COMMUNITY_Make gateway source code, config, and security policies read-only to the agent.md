@@ -24,7 +24,7 @@ members: 15
 - [[Step 4 Make SOUL.md and system prompts immutable]] - document - docs/planning/redteam/04-separation-of-privilege.md
 - [[Step 5 Add integrity checking for security-critical files]] - document - docs/planning/redteam/04-separation-of-privilege.md
 - [[Step 6 Enforce read-only at the Docker layer]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Verification_9]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Verification_10]] - document - docs/planning/redteam/04-separation-of-privilege.md
 
 ## Live Query (requires Dataview plugin)
 

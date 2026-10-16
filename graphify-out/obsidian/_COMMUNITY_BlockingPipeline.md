@@ -10,9 +10,9 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[dot-process_inbound()_7]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-process_inbound()_8]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-process_inbound()_9]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-process_inbound()_3]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-process_inbound()_4]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-process_inbound()_5]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_clean_message_passes_through()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_encoding_detected_on_getUpdates()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_inbound_text_normalized_before_pipeline()]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -37,13 +37,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 21 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
+- 21 edges to [[_COMMUNITY_TelegramAPIProxy]]
 - 8 edges to [[_COMMUNITY__wrap_response]]
-- 3 edges to [[_COMMUNITY_MiddlewareManager]]
 - 3 edges to [[_COMMUNITY_RateLimiter]]
 - 3 edges to [[_COMMUNITY_TelegramAPIProxy_2]]
+- 3 edges to [[_COMMUNITY_MiddlewareManager]]
 - 2 edges to [[_COMMUNITY_TestMultipartOutboundPipeline]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy_1]]
 
 ## Top bridge nodes
 - [[BlockingPipeline]] - degree 13, connects to 6 communities

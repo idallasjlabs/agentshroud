@@ -12,10 +12,10 @@ tags:
 # _CloseRaisesTargetWriter
 
 ## Connections
-- [[dot-close()_16]] - `method` [EXTRACTED]
+- [[dot-close()_17]] - `method` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `uses` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[WebProxyConfig_1]] - `uses` [INFERRED]
 - [[_DummyTargetWriter_1]] - `inherits` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 

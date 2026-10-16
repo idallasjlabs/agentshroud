@@ -1,13 +1,13 @@
 ---
 type: community
-cohesion: 0.08
-members: 40
+cohesion: 0.09
+members: 38
 ---
 
 # test_scorecard_integrity.py
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 40 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 38 nodes
 
 ## Members
 - [[dot-test_initial_when_has_criticals()]] - code - gateway/tests/test_scanner_integration.py
@@ -21,7 +21,6 @@ members: 40
 - [[dot-test_optimizing_when_installed_clean_no_timestamp()_1]] - code - gateway/tests/test_scanner_integration.py
 - [[A report that is 48h old must not score above 1.]] - rationale - gateway/tests/test_scorecard_integrity.py
 - [[Fresh clean report with zero CVEs should score 5.]] - rationale - gateway/tests/test_scorecard_integrity.py
-- [[Return True if the most recent report file was written within max_age_hours.]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 2 Vulnerability Management (0-5).      1=module installed but no r]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 6 Malware Defense (0-5).      1=module installed or not_run, 3=cla]] - rationale - gateway/security/scanner_integration.py
 - [[Stale ClamAV report (48h) must not score above 1.]] - rationale - gateway/tests/test_scorecard_integrity.py
@@ -29,7 +28,6 @@ members: 40
 - [[TestScoreVulnerabilityManagement_1]] - code - gateway/tests/test_scanner_integration.py
 - [[_clean_clamav()]] - code - gateway/tests/test_scorecard_integrity.py
 - [[_clean_trivy()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[_is_fresh()]] - code - gateway/security/scanner_integration.py
 - [[_not_run_clamav()]] - code - gateway/tests/test_scorecard_integrity.py
 - [[_not_run_trivy()]] - code - gateway/tests/test_scorecard_integrity.py
 - [[_score_malware_defense()]] - code - gateway/security/scanner_integration.py
@@ -59,12 +57,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_test_scanner_integration.py]]
-- 7 edges to [[_COMMUNITY_scanner_integration.py]]
+- 11 edges to [[_COMMUNITY_test_scanner_integration.py]]
+- 2 edges to [[_COMMUNITY_scanner_integration.py_1]]
+- 2 edges to [[_COMMUNITY_get_trivy_summary]]
+- 2 edges to [[_COMMUNITY_scanner_integration.py]]
 
 ## Top bridge nodes
-- [[_score_vulnerability_management()]] - degree 17, connects to 2 communities
-- [[_score_malware_defense()]] - degree 15, connects to 2 communities
-- [[_is_fresh()]] - degree 8, connects to 2 communities
+- [[_score_vulnerability_management()]] - degree 17, connects to 4 communities
+- [[_score_malware_defense()]] - degree 15, connects to 4 communities
 - [[TestScoreVulnerabilityManagement_1]] - degree 6, connects to 1 community
 - [[TestScoreMalwareDefense_1]] - degree 5, connects to 1 community
+- [[dot-test_initial_when_infected()]] - degree 3, connects to 1 community

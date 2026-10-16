@@ -26,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_AgentRegistry]]
 
 ## Top bridge nodes
 - [[test_telegram_executor.py]] - degree 4, connects to 1 community

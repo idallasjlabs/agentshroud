@@ -1,13 +1,13 @@
 ---
 type: community
-cohesion: 0.05
-members: 52
+cohesion: 0.06
+members: 49
 ---
 
 # docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 52 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 49 nodes
 
 ## Members
 - [[CI DAST scan (Nuclei, workflow_dispatch, self-hosted)]] - code - .github/workflows/ci.yml
@@ -25,10 +25,8 @@ members: 52
 - [[Local model defaults nemotron-3.5-lightning-rapid anchor, qwen3-coder coding, deepseek-r1 reasoning]] - concept - docker/docker-compose.yml
 - [[Multi-Agent Orchestration (specialized agents, per-agent isolation)]] - concept - docs/archive/FUTURE-FEATURES.md
 - [[OpenClaw sandbox mode set off (named volume vs bind-mount mismatch)]] - concept - INCIDENT-2026-10-16-conduit-and-stability.md
-- [[OpenClawHermesMCP sandbox container reaper]] - code - docker/scripts/start-agentshroud.sh
 - [[Rapid-MLX host.docker.internal trusted-hosts fix (local-llms repo)]] - concept - INCIDENT-2026-10-16-conduit-and-stability.md
 - [[Root cause Nemotron in-band reasoning + Qwen-only no_think suffix]] - concept - INCIDENT-2026-10-16-conduit-and-stability.md
-- [[Sandbox Container Reaper]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
 - [[Semgrep --baseline-commit gate (fail only on NEW findings)]] - rationale - .github/workflows/security-scan.yml
 - [[Semgrep SAST job (IEC 62443 4-1 SDL)]] - code - .github/workflows/security-scan.yml
 - [[Soak, not just boot check-soak-status.sh must report SOAKED on dev OpenClaw]] - rationale - prompts/sunday-upgrade.md
@@ -41,7 +39,6 @@ members: 52
 - [[_oc_config_set()]] - code - docker/scripts/init-openclaw-config.sh
 - [[_sha256()]] - code - docker/scripts/init-openclaw-config.sh
 - [[agentshroud-secrets.sh script]] - code - docker/bots/hermes/agentshroud-secrets.sh
-- [[docker-socket-proxy service (digest-pinned tecnativa, narrow allowlist)]] - code - docker/docker-compose.yml
 - [[dockerbotshermesagentshroud-secrets.sh (s6 cont-init secret injection)]] - code - docker/bots/hermes/agentshroud-secrets.sh
 - [[dockerscriptsinit-openclaw-config.sh (baked into OpenClaw image; seeds sandbox mode, runs doctor --fix)]] - code - docker/scripts/init-openclaw-config.sh
 - [[gateway service (security proxy, sole egress point, read-only rootfs, cap_drop ALL)]] - code - docker/docker-compose.yml
@@ -71,24 +68,25 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_run-standalone.sh (Hermes docker run launcher)]]
-- 4 edges to [[_COMMUNITY_Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)]]
-- 3 edges to [[_COMMUNITY_start-agentshroud.sh]]
 - 3 edges to [[_COMMUNITY_colima-health-check.sh]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 3 edges to [[_COMMUNITY_run-standalone.sh (Hermes docker run launcher)]]
+- 2 edges to [[_COMMUNITY_start-agentshroud.sh]]
 - 2 edges to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
+- 2 edges to [[_COMMUNITY_AgentRegistry]]
+- 2 edges to [[_COMMUNITY_Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)]]
 - 1 edge to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)_1]]
 - 1 edge to [[_COMMUNITY_gatewayteststest_llm_proxy_thinking_suppression.py (8 cases)]]
-- 1 edge to [[_COMMUNITY_dashboard_bridge.py]]
+- 1 edge to [[_COMMUNITY_test_main_endpoints.py_1]]
 - 1 edge to [[_COMMUNITY_discover_upstream_versions.py]]
-- 1 edge to [[_COMMUNITY_Commit list 2026-10-10 through 2026-10-16 on main]]
+- 1 edge to [[_COMMUNITY_dashboard_bridge.py]]
 - 1 edge to [[_COMMUNITY_sunday-upgrade-apply.sh]]
+- 1 edge to [[_COMMUNITY_Commit list 2026-10-10 through 2026-10-16 on main]]
 - 1 edge to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
 - 1 edge to [[_COMMUNITY_Report Delivery Format Instructions_1]]
 
 ## Top bridge nodes
+- [[hermes service block (profiles hermesfull; DEAD CODE — Hermes deploys via run-standalone.sh)]] - degree 9, connects to 3 communities
 - [[Dev override gateway (agentshroud-dev-gateway, 9080, dev Hermes upstreams)]] - degree 7, connects to 3 communities
 - [[Hermes dashboard bridge port 9120 (dashboard_bridge.py re-exposes loopback-bound 9119)]] - degree 7, connects to 3 communities
 - [[gateway service (security proxy, sole egress point, read-only rootfs, cap_drop ALL)]] - degree 14, connects to 2 communities
-- [[hermes service block (profiles hermesfull; DEAD CODE — Hermes deploys via run-standalone.sh)]] - degree 9, connects to 2 communities
-- [[docker-socket-proxy service (digest-pinned tecnativa, narrow allowlist)]] - degree 8, connects to 2 communities
+- [[The run is judged on state change, not steps completed]] - degree 6, connects to 2 communities

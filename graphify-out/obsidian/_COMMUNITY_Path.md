@@ -11,7 +11,7 @@ members: 68
 
 ## Members
 - [[dot-by_name()]] - code - gateway/skills/manifest.py
-- [[dot-client()_7]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[dot-client()_6]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[dot-test_build_excludes_manifest_json_itself()]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[dot-test_build_includes_all_files()]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[dot-test_build_is_sorted_deterministically()]] - code - gateway/tests/test_skills_manifest_sync.py
@@ -55,7 +55,7 @@ members: 68
 - [[In-memory representation of the skillsagentsMCP manifest.]] - rationale - gateway/skills/manifest.py
 - [[ManifestEntry]] - code - gateway/skills/manifest.py
 - [[One unit of work in a deploy plan (canonical entry - per-bot path).      ``acti]] - rationale - gateway/skills/manifest.py
-- [[Path_54]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[Path_52]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[PlannedAction]] - code - gateway/skills/manifest.py
 - [[Return names of entries that are missing or hash-mismatched in dest.      Retu]] - rationale - gateway/skills/manifest.py
 - [[SkillsManifest]] - code - gateway/skills/manifest.py
@@ -69,7 +69,7 @@ members: 68
 - [[TestValidateManifest]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[The plan is a pure function it maps canonical source entries to each     per-bo]] - rationale - gateway/tests/test_skills_manifest_sync.py
 - [[Write {relative_path content} under root.]] - rationale - gateway/tests/test_skills_manifest_sync.py
-- [[_sha256()_3]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[_sha256()_1]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[_write_tree()_1]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[deploy_manifest()]] - code - gateway/skills/manifest.py
 - [[gatewayskillsmanifest.py (SkillsManifest)]] - code - gateway/skills/manifest.py
@@ -89,13 +89,14 @@ SORT file.name ASC
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_Path_3]]
 - 4 edges to [[_COMMUNITY_SkillGuard_1]]
-- 4 edges to [[_COMMUNITY_api.py]]
+- 2 edges to [[_COMMUNITY_api.py_3]]
+- 2 edges to [[_COMMUNITY_api.py]]
 - 1 edge to [[_COMMUNITY_ModeRequest]]
 - 1 edge to [[_COMMUNITY_FetchOutcome_1]]
 
 ## Top bridge nodes
-- [[SkillsManifest]] - degree 25, connects to 3 communities
-- [[deploy_manifest()]] - degree 25, connects to 2 communities
+- [[SkillsManifest]] - degree 25, connects to 4 communities
+- [[deploy_manifest()]] - degree 25, connects to 3 communities
 - [[test_skills_manifest_sync.py]] - degree 18, connects to 2 communities
 - [[ManifestEntry]] - degree 15, connects to 1 community
 - [[plan_deploy()]] - degree 13, connects to 1 community

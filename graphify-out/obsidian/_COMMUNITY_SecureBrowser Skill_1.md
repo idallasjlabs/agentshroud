@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.33
+members: 6
 ---
 
 # SecureBrowser Skill
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Approval Workflow]] - document - skills/custom/securebrowser/README.md
-- [[Audit Trail]] - document - skills/custom/securebrowser/README.md
-- [[Risk Classification]] - document - skills/custom/securebrowser/README.md
-- [[Security Model]] - document - skills/custom/securebrowser/README.md
-- [[URL Access Control]] - document - skills/custom/securebrowser/README.md
+- [[Approval required but none granted]] - document - skills/custom/securebrowser/README.md
+- [[Browser timeout]] - document - skills/custom/securebrowser/README.md
+- [[CAPTCHA detected]] - document - skills/custom/securebrowser/README.md
+- [[Credential extraction blocked]] - document - skills/custom/securebrowser/README.md
+- [[URL not in allowlist]] - document - skills/custom/securebrowser/README.md
+- [[Troubleshooting_2]] - document - skills/custom/securebrowser/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,4 +28,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_SecureBrowser Skill]]
 
 ## Top bridge nodes
-- [[Security Model]] - degree 5, connects to 1 community
+- [[Troubleshooting_2]] - degree 6, connects to 1 community

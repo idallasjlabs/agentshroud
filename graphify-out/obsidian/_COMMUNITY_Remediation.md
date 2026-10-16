@@ -24,7 +24,7 @@ members: 16
 - [[Step 5 Add approval UI to the control center dashboard]] - document - docs/planning/redteam/02-human-in-the-loop.md
 - [[Step 6 Add Telegram admin notification for critical-tier tools]] - document - docs/planning/redteam/02-human-in-the-loop.md
 - [[Step 7 Return clear error messages to the agent]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Verification_6]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Verification_7]] - document - docs/planning/redteam/02-human-in-the-loop.md
 - [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - document - docs/planning/redteam/02-human-in-the-loop.md
 
 ## Live Query (requires Dataview plugin)

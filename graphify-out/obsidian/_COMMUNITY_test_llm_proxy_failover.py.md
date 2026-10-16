@@ -19,7 +19,7 @@ members: 33
 - [[Updated 2026-06-15 a plain 429 that escaped the upstream retry loop     NOW tri]] - rationale - gateway/tests/test_llm_proxy_failover.py
 - [[Without the interactive flag the 3-retry loop is unchanged (guards the     herme]] - rationale - gateway/tests/test_llm_proxy_failover.py
 - [[_call_proxy()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[make_proxy()_1]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[make_proxy()]] - code - gateway/tests/test_llm_proxy_failover.py
 - [[test_already_local_request_does_not_failover()]] - code - gateway/tests/test_llm_proxy_failover.py
 - [[test_failover_notification_cooldown()]] - code - gateway/tests/test_llm_proxy_failover.py
 - [[test_failover_notification_distinguishes_translated_vs_not()]] - code - gateway/tests/test_llm_proxy_failover.py
@@ -57,5 +57,5 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[test_llm_proxy_failover.py]] - degree 25, connects to 2 communities
-- [[make_proxy()_1]] - degree 24, connects to 1 community
+- [[make_proxy()]] - degree 24, connects to 1 community
 - [[LLMProxy_1]] - degree 2, connects to 1 community

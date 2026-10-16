@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-test_workspace_internal_path_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[Workspace runtime paths should be redacted.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[dot-test_initialization_default()]] - code - gateway/tests/test_outbound_filter.py
+- [[Test filter initializes with default configuration.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,4 +24,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
 
 ## Top bridge nodes
-- [[dot-test_workspace_internal_path_filtering()]] - degree 2, connects to 1 community
+- [[dot-test_initialization_default()]] - degree 2, connects to 1 community

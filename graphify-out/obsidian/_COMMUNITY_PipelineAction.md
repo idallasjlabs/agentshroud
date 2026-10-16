@@ -33,8 +33,8 @@ members: 27
 - [[TestOutboundPipelineWired]] - code - gateway/tests/test_telegram_pipeline.py
 - [[_getUpdates_response()]] - code - gateway/tests/test_telegram_pipeline.py
 - [[_make_pipeline_result()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[_make_proxy()_1]] - code - gateway/tests/test_telegram_pipeline.py
-- [[_make_update()]] - code - gateway/tests/test_telegram_pipeline.py
+- [[_make_proxy()_2]] - code - gateway/tests/test_telegram_pipeline.py
+- [[_make_update()_1]] - code - gateway/tests/test_telegram_pipeline.py
 - [[sendMessageDraft must be suppressed to prevent draft flicker leaks.]] - rationale - gateway/tests/test_telegram_pipeline.py
 - [[test_telegram_pipeline.py]] - code - gateway/tests/test_telegram_pipeline.py
 
@@ -46,17 +46,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_AuditChain]]
 - 12 edges to [[_COMMUNITY_TelegramAPIProxy_2]]
+- 10 edges to [[_COMMUNITY_PIIConfig]]
 - 9 edges to [[_COMMUNITY_AsyncMock]]
-- 6 edges to [[_COMMUNITY_PipelineAction_1]]
-- 1 edge to [[_COMMUNITY_TrustConfig]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
+- 9 edges to [[_COMMUNITY_AuditChain]]
 - 1 edge to [[_COMMUNITY_RBACConfig]]
+- 1 edge to [[_COMMUNITY_TrustConfig]]
 - 1 edge to [[_COMMUNITY_CrossBotTrustLedger]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy_1]]
 
 ## Top bridge nodes
-- [[PipelineResult_1]] - degree 26, connects to 7 communities
+- [[PipelineResult_1]] - degree 26, connects to 6 communities
 - [[test_telegram_pipeline.py]] - degree 15, connects to 2 communities
 - [[TestOutboundPipelineWired]] - degree 6, connects to 2 communities
 - [[TestInboundFallbackToDirectSanitizer]] - degree 5, connects to 2 communities

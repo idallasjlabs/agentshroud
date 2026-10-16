@@ -25,7 +25,7 @@ members: 16
 - [[Step 5 Isolate memory persistence]] - document - docs/planning/redteam/03-session-isolation.md
 - [[Step 6 Add cross-session access controls to sessions_send]] - document - docs/planning/redteam/03-session-isolation.md
 - [[Step 7 Add session listing protections]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Verification_7]] - document - docs/planning/redteam/03-session-isolation.md
+- [[Verification_8]] - document - docs/planning/redteam/03-session-isolation.md
 
 ## Live Query (requires Dataview plugin)
 

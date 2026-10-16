@@ -11,9 +11,9 @@ members: 5
 
 ## Members
 - [[Incident Response (INCIDENT)]] - document - docker/config/hermes/skills/i-production/README.md
-- [[Purpose_32]] - document - docker/config/hermes/skills/i-production/README.md
+- [[Purpose_34]] - document - docker/config/hermes/skills/i-production/README.md
 - [[Related Skills_20]] - document - docker/config/hermes/skills/i-production/README.md
-- [[Usage_23]] - document - docker/config/hermes/skills/i-production/README.md
+- [[Usage_24]] - document - docker/config/hermes/skills/i-production/README.md
 - [[hermesskillsi-productionREADME]] - document - docker/config/hermes/skills/i-production/README.md
 
 ## Live Query (requires Dataview plugin)

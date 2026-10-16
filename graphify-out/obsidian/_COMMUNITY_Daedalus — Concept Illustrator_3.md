@@ -11,9 +11,9 @@ members: 5
 
 ## Members
 - [[Daedalus — Concept Illustrator]] - document - docker/config/hermes/skills/i-daedalus/README.md
-- [[Purpose_27]] - document - docker/config/hermes/skills/i-daedalus/README.md
+- [[Purpose_29]] - document - docker/config/hermes/skills/i-daedalus/README.md
 - [[Related Skills_15]] - document - docker/config/hermes/skills/i-daedalus/README.md
-- [[Usage_18]] - document - docker/config/hermes/skills/i-daedalus/README.md
+- [[Usage_19]] - document - docker/config/hermes/skills/i-daedalus/README.md
 - [[hermesskillsi-daedalusREADME]] - document - docker/config/hermes/skills/i-daedalus/README.md
 
 ## Live Query (requires Dataview plugin)

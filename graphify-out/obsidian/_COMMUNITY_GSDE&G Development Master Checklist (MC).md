@@ -11,9 +11,9 @@ members: 5
 
 ## Members
 - [[GSDE&G Development Master Checklist (MC)]] - document - docker/config/openclaw/skills/i-mc/README.md
-- [[Purpose_48]] - document - docker/config/openclaw/skills/i-mc/README.md
+- [[Purpose_50]] - document - docker/config/openclaw/skills/i-mc/README.md
 - [[Related Skills_36]] - document - docker/config/openclaw/skills/i-mc/README.md
-- [[Usage_39]] - document - docker/config/openclaw/skills/i-mc/README.md
+- [[Usage_40]] - document - docker/config/openclaw/skills/i-mc/README.md
 - [[openclawskillsi-mcREADME]] - document - docker/config/openclaw/skills/i-mc/README.md
 
 ## Live Query (requires Dataview plugin)

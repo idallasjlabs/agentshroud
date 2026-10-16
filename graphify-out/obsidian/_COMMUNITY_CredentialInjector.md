@@ -36,11 +36,11 @@ SORT file.name ASC
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY_TestCredentialInjection]]
 - 2 edges to [[_COMMUNITY_TestCredentialLeakDetection]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
 - 1 edge to [[_COMMUNITY_TestLeakDetection]]
 - 1 edge to [[_COMMUNITY_TestLoadAllSecretFileValues]]
 - 1 edge to [[_COMMUNITY_TestDockerSecretIsolation]]
 - 1 edge to [[_COMMUNITY_TestOAuthInjection]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
 - 1 edge to [[_COMMUNITY_test_credential_injector.py]]
 
 ## Top bridge nodes

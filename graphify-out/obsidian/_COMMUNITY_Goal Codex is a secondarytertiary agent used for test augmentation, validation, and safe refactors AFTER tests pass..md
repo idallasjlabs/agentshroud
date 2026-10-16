@@ -42,8 +42,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Validation Runner Specialist]]
+- 1 edge to [[_COMMUNITY_SSH Configuration Guide]]
 - 1 edge to [[_COMMUNITY_AGENTS.md — Codex CLI Guidance]]
-- 1 edge to [[_COMMUNITY_ssh-configuration]]
 - 1 edge to [[_COMMUNITY_DEVELOPER.md — Development Context for AgentShroud]]
 
 ## Top bridge nodes

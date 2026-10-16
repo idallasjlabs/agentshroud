@@ -26,7 +26,7 @@ members: 66
 - [[Add a user to a group.]] - rationale - gateway/cli/main.py
 - [[AgentShroud SOC CLI — Shared Command Layer.]] - rationale - gateway/cli/main.py
 - [[Aggregate health report.]] - rationale - gateway/cli/main.py
-- [[Any_78]] - code - gateway/cli/main.py
+- [[Any_70]] - code - gateway/cli/main.py
 - [[Approve an egress request by ID.]] - rationale - gateway/cli/main.py
 - [[Deny an egress request by ID.]] - rationale - gateway/cli/main.py
 - [[Emergency freeze pause all bot containers.]] - rationale - gateway/cli/main.py
@@ -67,7 +67,7 @@ members: 66
 - [[get_risk()]] - code - gateway/cli/main.py
 - [[get_services()]] - code - gateway/cli/main.py
 - [[get_users()]] - code - gateway/cli/main.py
-- [[main()_30]] - code - gateway/cli/main.py
+- [[main()_29]] - code - gateway/cli/main.py
 - [[restart()]] - code - gateway/cli/main.py
 - [[restart_service()_2]] - code - gateway/cli/main.py
 - [[scan()]] - code - gateway/cli/main.py

@@ -22,7 +22,7 @@ members: 26
 - [[Wrap bytes in a long-enough base64 chunk to trigger the scan (= 64 groups of 4)]] - rationale - gateway/tests/test_clamav_pipeline.py
 - [[_b64_payload()]] - code - gateway/tests/test_clamav_pipeline.py
 - [[_instant_wait_for()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[_make_pipeline()_4]] - code - gateway/tests/test_clamav_pipeline.py
+- [[_make_pipeline()_3]] - code - gateway/tests/test_clamav_pipeline.py
 - [[_timeout_wait_for()]] - code - gateway/tests/test_clamav_pipeline.py
 - [[scan_bytes()]] - code - gateway/security/clamav_scanner.py
 - [[test_clamav_pipeline.py]] - code - gateway/tests/test_clamav_pipeline.py
@@ -46,16 +46,14 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 7 edges to [[_COMMUNITY_AsyncMock]]
-- 2 edges to [[_COMMUNITY_PIIConfig]]
-- 2 edges to [[_COMMUNITY_parse_clamscan_output]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_AuditChain]]
+- 3 edges to [[_COMMUNITY_PIIConfig]]
+- 3 edges to [[_COMMUNITY_parse_clamscan_output]]
+- 1 edge to [[_COMMUNITY_AgentRegistry]]
 - 1 edge to [[_COMMUNITY_test_e2e_proxy.py]]
 
 ## Top bridge nodes
-- [[test_clamav_pipeline.py]] - degree 18, connects to 3 communities
-- [[scan_bytes()]] - degree 11, connects to 3 communities
-- [[_make_pipeline()_4]] - degree 8, connects to 1 community
+- [[test_clamav_pipeline.py]] - degree 18, connects to 2 communities
+- [[scan_bytes()]] - degree 11, connects to 2 communities
+- [[_make_pipeline()_3]] - degree 8, connects to 1 community
 - [[test_pipeline_clamav_clean_payload()]] - degree 5, connects to 1 community
 - [[test_pipeline_clamav_error_fail_open()]] - degree 5, connects to 1 community

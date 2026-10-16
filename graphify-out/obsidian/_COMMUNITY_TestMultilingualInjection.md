@@ -10,7 +10,7 @@ members: 37
 **Members:** 37 nodes
 
 ## Members
-- [[dot-setup_method()_14]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-setup_method()_15]] - code - gateway/tests/test_multilingual_injection.py
 - [[dot-test_benign_multilingual_text()]] - code - gateway/tests/test_multilingual_injection.py
 - [[dot-test_case_insensitive_detection()]] - code - gateway/tests/test_multilingual_injection.py
 - [[dot-test_mixed_language_injection()]] - code - gateway/tests/test_multilingual_injection.py
@@ -57,9 +57,9 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_PIIConfig]]
-- 1 edge to [[_COMMUNITY_Action]]
+- 1 edge to [[_COMMUNITY_AuditChain]]
 
 ## Top bridge nodes
 - [[test_multilingual_injection.py]] - degree 3, connects to 2 communities
 - [[TestMultilingualInjection]] - degree 20, connects to 1 community
-- [[dot-setup_method()_14]] - degree 3, connects to 1 community
+- [[dot-setup_method()_15]] - degree 3, connects to 1 community

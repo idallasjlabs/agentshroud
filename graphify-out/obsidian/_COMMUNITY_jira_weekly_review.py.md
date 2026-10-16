@@ -43,7 +43,7 @@ members: 34
 - [[jira_weekly_review.py]] - code - docker/config/hermes/workspace/jira_weekly_review.py
 - [[post_comment()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
 - [[resolve_cloud_id()_2]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[run()_4]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[run()_3]] - code - docker/config/hermes/workspace/jira_weekly_review.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -59,7 +59,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_test_jira_weekly_review.py]]
 
 ## Top bridge nodes
-- [[run()_4]] - degree 11, connects to 2 communities
+- [[run()_3]] - degree 11, connects to 2 communities
 - [[Build the Atlassian Document Format (ADF) body for POST ...comment.      The RE]] - degree 3, connects to 2 communities
 - [[resolve_cloud_id()_2]] - degree 5, connects to 1 community
 - [[build_basic_auth_header()_2]] - degree 4, connects to 1 community

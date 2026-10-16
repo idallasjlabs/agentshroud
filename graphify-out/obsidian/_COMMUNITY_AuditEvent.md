@@ -10,16 +10,16 @@ members: 23
 **Members:** 23 nodes
 
 ## Members
-- [[dot-__init__()_139]] - code - gateway/security/audit_store.py
+- [[dot-__init__()_135]] - code - gateway/security/audit_store.py
 - [[dot-_generate_event_id()]] - code - gateway/security/audit_store.py
 - [[dot-_get_latest_hash()]] - code - gateway/security/audit_store.py
 - [[dot-compute_content_hash()]] - code - gateway/security/audit_store.py
 - [[dot-compute_entry_hash()]] - code - gateway/security/audit_store.py
-- [[dot-log_event()_2]] - code - gateway/security/audit_store.py
+- [[dot-log_event()_1]] - code - gateway/security/audit_store.py
 - [[dot-test_content_hash()]] - code - gateway/tests/test_audit_export.py
 - [[dot-test_entry_hash_chain()]] - code - gateway/tests/test_audit_export.py
 - [[dot-test_event_creation()]] - code - gateway/tests/test_audit_export.py
-- [[dot-to_dict()_9]] - code - gateway/security/audit_store.py
+- [[dot-to_dict()_10]] - code - gateway/security/audit_store.py
 - [[dot-verify_hash_chain()]] - code - gateway/security/audit_store.py
 - [[AuditEvent]] - code - gateway/security/audit_store.py
 - [[Compute SHA-256 hash of event content (excluding hashes).]] - rationale - gateway/security/audit_store.py
@@ -48,7 +48,7 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[AuditEvent]] - degree 25, connects to 3 communities
-- [[dot-log_event()_2]] - degree 5, connects to 1 community
+- [[dot-log_event()_1]] - degree 5, connects to 1 community
 - [[dot-verify_hash_chain()]] - degree 4, connects to 1 community
 - [[dot-_get_latest_hash()]] - degree 3, connects to 1 community
 - [[dot-test_content_hash()]] - degree 3, connects to 1 community

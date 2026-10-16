@@ -1,17 +1,17 @@
 ---
 type: community
-cohesion: 0.05
-members: 85
+cohesion: 0.04
+members: 88
 ---
 
 # test_llm_proxy.py
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 85 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 88 nodes
 
 ## Members
-- [[dot-__init__()_6]] - code - gateway/tests/test_llm_proxy.py
-- [[dot-__init__()_7]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-__init__()_8]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-__init__()_9]] - code - gateway/tests/test_llm_proxy.py
 - [[dot-block_credentials()_1]] - code - gateway/tests/test_llm_proxy.py
 - [[dot-can_use_tool()]] - code - gateway/tests/test_llm_proxy.py
 - [[dot-filter_xml_blocks()_1]] - code - gateway/tests/test_llm_proxy.py
@@ -28,6 +28,7 @@ members: 85
 - [[Existing callers (with_head=False) keep getting bytes only — no StreamHead.]] - rationale - gateway/tests/test_llm_proxy.py
 - [[Fake CredentialInjector that records inject_headers calls and applies Anthropic…]] - rationale - gateway/tests/test_llm_proxy.py
 - [[First item yielded by proxy_messages_streaming(with_head=True). Carries the…]] - rationale - gateway/proxy/llm_proxy.py
+- [[LLM API Reverse Proxy — intercepts all OpenClaw ↔ (AnthropicOpenAIGoogle)…]] - rationale - gateway/proxy/llm_proxy.py
 - [[LM Studio down → 503 backend_unavailable with LM Studio hint.]] - rationale - gateway/tests/test_llm_proxy.py
 - [[Localnon-Anthropic destination injector must NOT be called.]] - rationale - gateway/tests/test_llm_proxy.py
 - [[Minimal ToolACLEnforcer stub that denies a named tool.]] - rationale - gateway/tests/test_llm_proxy.py
@@ -54,11 +55,13 @@ members: 85
 - [[_make_fake_urlopen()]] - code - gateway/tests/test_llm_proxy.py
 - [[_proxy_with_connect_refused()]] - code - gateway/tests/test_llm_proxy.py
 - [[_run_stream (StreamHead test harness)]] - code - gateway/tests/test_llm_proxy.py
-- [[asyncio_1]] - code
+- [[asyncio_2]] - code
+- [[asyncio_3]] - code
 - [[block_credentials()]] - code - gateway/tests/test_llm_proxy.py
 - [[content_block_start with terminal_tool must be replaced with a text error block.]] - rationale - gateway/tests/test_llm_proxy.py
 - [[fake_open()]] - code - gateway/tests/test_llm_proxy.py
 - [[fake_urlopen()]] - code - gateway/tests/test_llm_proxy.py
+- [[llm_proxy.py_2]] - code - gateway/proxy/llm_proxy.py
 - [[mlx_lm down (connection refused) → 503 backend_unavailable with start hint.]] - rationale - gateway/tests/test_llm_proxy.py
 - [[mock_forward()]] - code - gateway/tests/test_llm_proxy.py
 - [[mock_forward()_1]] - code - gateway/tests/test_llm_proxy.py
@@ -104,17 +107,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 27 edges to [[_COMMUNITY_LLMProxy]]
-- 6 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
+- 28 edges to [[_COMMUNITY_LLMProxy]]
+- 4 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
 - 3 edges to [[_COMMUNITY_TestStreamingProxyStatusPropagation]]
 - 2 edges to [[_COMMUNITY__HeadFakeResponse]]
-- 2 edges to [[_COMMUNITY_gatewayteststest_llm_proxy_thinking_suppression.py (8 cases)]]
 - 1 edge to [[_COMMUNITY__HeadFakeClient]]
 - 1 edge to [[_COMMUNITY_test_main_endpoints.py]]
+- 1 edge to [[_COMMUNITY_gatewayteststest_llm_proxy_thinking_suppression.py (8 cases)]]
+- 1 edge to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy_local_parity.py]]
 
 ## Top bridge nodes
-- [[StreamHead]] - degree 16, connects to 5 communities
-- [[test_llm_proxy.py]] - degree 43, connects to 4 communities
+- [[StreamHead]] - degree 15, connects to 4 communities
+- [[test_llm_proxy.py]] - degree 43, connects to 3 communities
 - [[_run_stream (StreamHead test harness)]] - degree 10, connects to 3 communities
+- [[llm_proxy.py_2]] - degree 7, connects to 3 communities
 - [[test_streaming_connect_failure_keeps_in_stream_error_frame]] - degree 7, connects to 2 communities
-- [[test_proxy_messages_plain_openai_model_substitutes_real_key()]] - degree 8, connects to 1 community

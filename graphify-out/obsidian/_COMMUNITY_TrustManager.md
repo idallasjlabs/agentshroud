@@ -17,14 +17,14 @@ members: 23
 - [[Database Schema]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 - [[Default Action Trust Requirements]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 - [[Environment Variables_2]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Function Details]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Key Classes  Functions]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Function Details_1]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Key Classes  Functions_1]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 - [[Kill Switch (MonitorBlockIsolate)]] - concept - docs/architecture/system-architecture.md
 - [[Mode Enforce vs Monitor]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 - [[Monitoring System Integration (WebhooksPrometheus)]] - document - docs/api/integration-guide.md
-- [[Purpose_77]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Related]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Responsibilities_1]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Purpose_83]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Related_1]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Responsibilities_3]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 - [[Threat Model_1]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 - [[TrustManager_5]] - concept - docker/config/hermes/SOUL.md
 - [[TrustManager._apply_decay(score, last_action_time)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
@@ -42,7 +42,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Audit Ledger (SHA-256 hash only)]]
+- 2 edges to [[_COMMUNITY_Audit Ledger (SHA-256 hash only)_1]]
 - 1 edge to [[_COMMUNITY_hermesSOUL]]
 - 1 edge to [[_COMMUNITY_AgentShroud (system, C4 context)]]
 - 1 edge to [[_COMMUNITY_ADR-009 Enforce-by-Default Security Philosophy]]

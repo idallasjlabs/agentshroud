@@ -30,10 +30,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
 - 1 edge to [[_COMMUNITY_RateLimiter]]
 - 1 edge to [[_COMMUNITY_TelegramAPIProxy_2]]
 - 1 edge to [[_COMMUNITY__wrap_response]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
 
 ## Top bridge nodes
 - [[TestBotIsMentioned]] - degree 13, connects to 4 communities

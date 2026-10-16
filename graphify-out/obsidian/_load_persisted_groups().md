@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Action"
+community: "telegram_proxy.py"
 location: "L314"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Action
+  - community/telegram_proxypy
 ---
 
 # _load_persisted_groups()
@@ -17,4 +17,4 @@ tags:
 - [[Read custom groups from disk.]] - `rationale_for` [EXTRACTED]
 - [[rbac_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Action
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

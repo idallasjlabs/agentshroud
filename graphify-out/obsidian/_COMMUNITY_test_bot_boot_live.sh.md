@@ -10,7 +10,7 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[check()_4]] - code - tests/startup_smoke/test_bot_boot_live.sh
+- [[check()_1]] - code - tests/startup_smoke/test_bot_boot_live.sh
 - [[test_bot_boot_live.sh]] - code - tests/startup_smoke/test_bot_boot_live.sh
 - [[test_bot_boot_live.sh script]] - code - tests/startup_smoke/test_bot_boot_live.sh
 

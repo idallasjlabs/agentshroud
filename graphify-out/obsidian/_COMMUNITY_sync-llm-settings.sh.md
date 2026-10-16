@@ -13,10 +13,10 @@ members: 14
 - [[PYTHONPATH]] - code - scripts/smoke.d/test-skills-sync.sh
 - [[SKILLGUARD_TEST_DEST_ROOT]] - code - scripts/smoke.d/test-skills-sync.sh
 - [[_python()]] - code - scripts/sync-llm-settings.sh
-- [[_sha256()_1]] - code - scripts/sync-llm-settings.sh
-- [[_sha256()_2]] - code - scripts/validate-skills-manifest.sh
+- [[_sha256()_2]] - code - scripts/sync-llm-settings.sh
+- [[_sha256()_3]] - code - scripts/validate-skills-manifest.sh
 - [[_write_manifest()]] - code - scripts/sync-llm-settings.sh
-- [[check()_11]] - code - scripts/smoke.d/test-skills-sync.sh
+- [[check()_10]] - code - scripts/smoke.d/test-skills-sync.sh
 - [[gatewayskillsscan.py (scan CLI)]] - code - gateway/skills/scan.py
 - [[sync-llm-settings.sh]] - code - scripts/sync-llm-settings.sh
 - [[sync-llm-settings.sh script]] - code - scripts/sync-llm-settings.sh

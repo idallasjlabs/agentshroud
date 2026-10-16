@@ -12,7 +12,7 @@ tags:
 # _score_tool_use_safety()
 
 ## Connections
-- [[Path_33]] - `calls` [EXTRACTED]
+- [[Path_51]] - `calls` [EXTRACTED]
 - [[Score domain 24 Tool Use Safety & Validation (0-5). OWASP ASI-02, CSA MAESTRO.]] - `rationale_for` [EXTRACTED]
 - [[_app_state_has()]] - `calls` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]

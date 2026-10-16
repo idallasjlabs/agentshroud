@@ -35,7 +35,7 @@ tags:
 - [[dot-test_subprocess_shell_true_flags()]] - `calls` [EXTRACTED]
 - [[dot-test_urllib_urlopen_flags()]] - `calls` [EXTRACTED]
 - [[dot-test_wget_pipe_sh_blocks()]] - `calls` [EXTRACTED]
-- [[ScanResult_3]] - `references` [EXTRACTED]
+- [[ScanResult_2]] - `references` [EXTRACTED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SkillGuard

@@ -11,9 +11,9 @@ members: 5
 
 ## Members
 - [[Atlas — Curriculum Architect_1]] - document - docker/config/openclaw/skills/i-atlas/README.md
-- [[Purpose_37]] - document - docker/config/openclaw/skills/i-atlas/README.md
+- [[Purpose_39]] - document - docker/config/openclaw/skills/i-atlas/README.md
 - [[Related Skills_25]] - document - docker/config/openclaw/skills/i-atlas/README.md
-- [[Usage_28]] - document - docker/config/openclaw/skills/i-atlas/README.md
+- [[Usage_29]] - document - docker/config/openclaw/skills/i-atlas/README.md
 - [[openclawskillsi-atlasREADME]] - document - docker/config/openclaw/skills/i-atlas/README.md
 
 ## Live Query (requires Dataview plugin)

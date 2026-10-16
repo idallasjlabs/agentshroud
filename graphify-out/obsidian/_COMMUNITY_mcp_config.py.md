@@ -18,11 +18,11 @@ members: 13
 - [[MCPServerConfig Fields]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
 - [[PermissionLevel Ordering]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
 - [[PermissionLevel comparison operators]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[Purpose_170]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[Purpose_180]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
 - [[Related_50]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[Responsibilities_46]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[mcp_config.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[Responsibilities_48]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
 - [[mcp_config.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[mcp_config.py]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
 
 ## Live Query (requires Dataview plugin)
 

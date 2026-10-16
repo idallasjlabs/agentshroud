@@ -97,9 +97,9 @@ SORT file.name ASC
 - 4 edges to [[_COMMUNITY_server.py]]
 - 4 edges to [[_COMMUNITY_test_voice_latency_guard.py_1]]
 - 3 edges to [[_COMMUNITY_server.py_1]]
-- 2 edges to [[_COMMUNITY_Action]]
-- 1 edge to [[_COMMUNITY_tts.py]]
+- 2 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
 - 1 edge to [[_COMMUNITY_stt.py]]
+- 1 edge to [[_COMMUNITY_tts.py]]
 
 ## Top bridge nodes
 - [[server.py]] - degree 29, connects to 5 communities

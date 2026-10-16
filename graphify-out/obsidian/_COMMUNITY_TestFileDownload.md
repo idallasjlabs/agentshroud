@@ -34,11 +34,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
+- 11 edges to [[_COMMUNITY_TelegramAPIProxy]]
 - 4 edges to [[_COMMUNITY__wrap_response]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
 - 1 edge to [[_COMMUNITY_RateLimiter]]
 - 1 edge to [[_COMMUNITY_TelegramAPIProxy_2]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
 
 ## Top bridge nodes
 - [[TestFileDownload]] - degree 12, connects to 5 communities

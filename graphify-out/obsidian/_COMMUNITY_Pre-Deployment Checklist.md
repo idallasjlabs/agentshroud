@@ -27,7 +27,7 @@ members: 21
 - [[Post-Deployment Verification]] - document - .agents/skills/i-ps/SKILL.md
 - [[Pre-Deployment Checklist]] - document - .agents/skills/i-ps/SKILL.md
 - [[Resume After Testing (MANDATORY)]] - document - .agents/skills/i-ps/SKILL.md
-- [[Role_42]] - document - .agents/skills/i-ps/SKILL.md
+- [[Role_43]] - document - .agents/skills/i-ps/SKILL.md
 - [[Short-Term (15 min – 24 hr)]] - document - .agents/skills/i-ps/SKILL.md
 - [[Sign-Off]] - document - .agents/skills/i-ps/SKILL.md
 - [[Skill Production Safety Checklist (PROD-SAFETY)]] - document - .agents/skills/i-ps/SKILL.md

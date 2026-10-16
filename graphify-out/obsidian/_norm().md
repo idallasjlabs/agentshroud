@@ -12,7 +12,7 @@ tags:
 # _norm()
 
 ## Connections
-- [[dot-__post_init__()_4]] - `calls` [EXTRACTED]
+- [[dot-__post_init__()_2]] - `calls` [EXTRACTED]
 - [[dot-enforce()]] - `calls` [EXTRACTED]
 - [[dot-evaluate()]] - `calls` [EXTRACTED]
 - [[Normalize a peer-id reference for robust, evasion-resistant matching.      Same]] - `rationale_for` [EXTRACTED]

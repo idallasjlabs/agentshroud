@@ -11,7 +11,7 @@ members: 13
 
 ## Members
 - [[Re-injection Command (for reference)_2]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
-- [[Role_88]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
+- [[Role_89]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
 - [[Rules_24]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
 - [[Skill Session Prompt Generator (SESSION-PROMPT)_2]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md
 - [[Step 1 — Survey the Repo_2]] - document - docker/config/openclaw/skills/i-session-prompt/SKILL.md

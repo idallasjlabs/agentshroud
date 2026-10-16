@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_four_when_openscap_running_with_failures()]] - `calls` [EXTRACTED]
 - [[dot-test_managed_when_has_failures()]] - `calls` [EXTRACTED]
-- [[Any_71]] - `references` [EXTRACTED]
+- [[Any_66]] - `references` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

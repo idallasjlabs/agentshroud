@@ -12,7 +12,7 @@ members: 15
 ## Members
 - [[Guardrails_12]] - document - docker/config/hermes/skills/i-crpr/SKILL.md
 - [[Invocation_7]] - document - docker/config/hermes/skills/i-crpr/SKILL.md
-- [[Role_69]] - document - docker/config/hermes/skills/i-crpr/SKILL.md
+- [[Role_70]] - document - docker/config/hermes/skills/i-crpr/SKILL.md
 - [[Skill Create PR with Pre-Flight Audit (CRPR)_1]] - document - docker/config/hermes/skills/i-crpr/SKILL.md
 - [[Step 0 — Pre-flight checks_1]] - document - docker/config/hermes/skills/i-crpr/SKILL.md
 - [[Step 1 — Check for an in-progress merge_1]] - document - docker/config/hermes/skills/i-crpr/SKILL.md

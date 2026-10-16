@@ -41,7 +41,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Kill Switch]]
 - 1 edge to [[_COMMUNITY_Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]]
-- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
+- 1 edge to [[_COMMUNITY_telegram_proxy.py_1]]
 
 ## Top bridge nodes
 - [[DOCKER-VPN-NETWORKING]] - degree 7, connects to 2 communities

@@ -38,7 +38,7 @@ members: 32
 - [[Stop the Stack_1]] - document - docker/QUICKSTART.md
 - [[Success Criteria]] - document - docker/QUICKSTART.md
 - [[Test the System]] - document - docker/QUICKSTART.md
-- [[Troubleshooting_14]] - document - docker/QUICKSTART.md
+- [[Troubleshooting_16]] - document - docker/QUICKSTART.md
 - [[Verify]] - document - docker/QUICKSTART.md
 - [[Verify Isolation]] - document - docker/QUICKSTART.md
 - [[Voice Terminal (optional — ESP32-S3-BOX-3 + Hermes)]] - document - docker/QUICKSTART.md

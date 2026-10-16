@@ -1,23 +1,27 @@
 ---
 type: community
-cohesion: 0.07
-members: 27
+cohesion: 0.06
+members: 32
 ---
 
 # Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 27 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 32 nodes
 
 ## Members
+- [[Access Denied_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Token expired (SSO)_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Unable to locate credentials_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[AWS Profile Basics_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[AWS SSO Configuration_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Best Practices_5]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Best Practices_3]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Configuration Files_3]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Configure New Profile_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Default Profile vs Named Profiles_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Initial SSO Setup_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Login to SSO_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[MCP Not Using Profile_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[MCP-Specific_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Method 1 Set Environment Variable (Session)_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Method 2 Set Permanently (Shell Config)_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
@@ -27,12 +31,13 @@ members: 27
 - [[Option 2 Manual Configuration_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Organization_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Quick Reference_6]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Related Skills_62]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Role_31]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Related Skills_58]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Role_25]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Scenario Development → Production_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Security_6]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Switch AWS Profile for MCP_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Troubleshooting_15]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Use SSO Profile with MCP_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Using AssumeRole for Cross-Account Access_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[What is an AWS Profile_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
@@ -46,9 +51,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Troubleshooting_2]]
 - 1 edge to [[_COMMUNITY_MCP AWS Profile Configuration README]]
 - 1 edge to [[_COMMUNITY_Quick Reference]]
 
 ## Top bridge nodes
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - degree 14, connects to 3 communities
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - degree 14, connects to 2 communities

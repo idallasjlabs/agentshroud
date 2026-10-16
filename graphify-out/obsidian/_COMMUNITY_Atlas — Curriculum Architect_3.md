@@ -12,9 +12,9 @@ members: 5
 ## Members
 - [[dot-agentsskillsi-atlasREADME]] - document - .agents/skills/i-atlas/README.md
 - [[Atlas — Curriculum Architect]] - document - .agents/skills/i-atlas/README.md
-- [[Purpose_15]] - document - .agents/skills/i-atlas/README.md
+- [[Purpose_17]] - document - .agents/skills/i-atlas/README.md
 - [[Related Skills_3]] - document - .agents/skills/i-atlas/README.md
-- [[Usage_6]] - document - .agents/skills/i-atlas/README.md
+- [[Usage_7]] - document - .agents/skills/i-atlas/README.md
 
 ## Live Query (requires Dataview plugin)
 

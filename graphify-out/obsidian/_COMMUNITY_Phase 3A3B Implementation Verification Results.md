@@ -39,7 +39,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Kill Switch]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised_1]]
 - 1 edge to [[_COMMUNITY_AgentShroud Sunday Upgrade — 2026-09-14 (dev account, agentshroud-bot@marvin)]]
 
 ## Top bridge nodes

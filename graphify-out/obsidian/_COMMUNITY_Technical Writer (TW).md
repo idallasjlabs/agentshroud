@@ -10,10 +10,10 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_61]] - document - docker/config/openclaw/skills/i-tw/README.md
+- [[Purpose_63]] - document - docker/config/openclaw/skills/i-tw/README.md
 - [[Related Skills_49]] - document - docker/config/openclaw/skills/i-tw/README.md
 - [[Technical Writer (TW)]] - document - docker/config/openclaw/skills/i-tw/README.md
-- [[Usage_52]] - document - docker/config/openclaw/skills/i-tw/README.md
+- [[Usage_53]] - document - docker/config/openclaw/skills/i-tw/README.md
 - [[openclawskillsi-twREADME]] - document - docker/config/openclaw/skills/i-tw/README.md
 
 ## Live Query (requires Dataview plugin)

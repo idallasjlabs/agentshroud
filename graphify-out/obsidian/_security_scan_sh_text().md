@@ -12,7 +12,7 @@ tags:
 # _security_scan_sh_text()
 
 ## Connections
-- [[Path_33]] - `calls` [EXTRACTED]
+- [[Path_51]] - `calls` [EXTRACTED]
 - [[Return scriptssecurity-scan.sh text, or empty string.]] - `rationale_for` [EXTRACTED]
 - [[_evaluate_mandatory_gates()]] - `calls` [EXTRACTED]
 - [[_score_image_signing_provenance()]] - `calls` [EXTRACTED]

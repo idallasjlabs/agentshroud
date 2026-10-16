@@ -1,17 +1,22 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "run-standalone.sh (Hermes docker run launcher)"
+community: "setup-secrets.sh"
+location: "L407-L424"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run-standalonesh_Hermes_docker_run_launcher
+  - community/setup-secretssh
 ---
 
 # _hermes_up
 
 ## Connections
-- [[asb (AgentShroud Bot helper)]] - `calls` [EXTRACTED]
-- [[run-standalone.sh (Hermes docker run launcher)]] - `calls` [EXTRACTED]
+- [[Dev Hermes polling prod's Hermes Telegram bot]] - `references` [EXTRACTED]
+- [[asb]] - `defines` [EXTRACTED]
+- [[asb rebuild  clean-rebuild subcommands]] - `calls` [EXTRACTED]
+- [[asb script]] - `calls` [EXTRACTED]
+- [[asb up subcommand]] - `calls` [EXTRACTED]
+- [[setup_ephemeral_secrets]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher
+#graphify/code #graphify/EXTRACTED #community/setup-secretssh

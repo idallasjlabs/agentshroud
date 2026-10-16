@@ -21,7 +21,7 @@ members: 65
 - [[dot-detect_staging_patterns()]] - code - gateway/security/file_sandbox.py
 - [[dot-get_audit_log()_7]] - code - gateway/security/file_sandbox.py
 - [[dot-get_security_violations()]] - code - gateway/security/file_sandbox.py
-- [[dot-scan()_3]] - code - gateway/security/file_sandbox.py
+- [[dot-scan()_4]] - code - gateway/security/file_sandbox.py
 - [[dot-test_api_key_pattern_detected()]] - code - gateway/tests/test_file_sandbox.py
 - [[dot-test_audit_has_path()]] - code - gateway/tests/test_file_sandbox.py
 - [[dot-test_credential_file_flagged()]] - code - gateway/tests/test_file_sandbox.py
@@ -85,7 +85,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 33 edges to [[_COMMUNITY_AlertDispatcher]]
-- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+- 2 edges to [[_COMMUNITY_InjectionAction]]
 - 1 edge to [[_COMMUNITY_MiddlewareManager]]
 - 1 edge to [[_COMMUNITY_egress_filter.py]]
 

@@ -11,9 +11,9 @@ members: 5
 
 ## Members
 - [[Apollo — Audio Systems Producer]] - document - docker/config/openclaw/skills/i-apollo/README.md
-- [[Purpose_35]] - document - docker/config/openclaw/skills/i-apollo/README.md
+- [[Purpose_37]] - document - docker/config/openclaw/skills/i-apollo/README.md
 - [[Related Skills_23]] - document - docker/config/openclaw/skills/i-apollo/README.md
-- [[Usage_26]] - document - docker/config/openclaw/skills/i-apollo/README.md
+- [[Usage_27]] - document - docker/config/openclaw/skills/i-apollo/README.md
 - [[openclawskillsi-apolloREADME]] - document - docker/config/openclaw/skills/i-apollo/README.md
 
 ## Live Query (requires Dataview plugin)

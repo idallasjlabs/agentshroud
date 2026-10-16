@@ -70,7 +70,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_6. System Updates]]
 - 1 edge to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
 - 1 edge to [[_COMMUNITY_Step-by-Step Deployment]]
-- 1 edge to [[_COMMUNITY_ssh-configuration]]
+- 1 edge to [[_COMMUNITY_SSH Configuration Guide]]
 - 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Blue Team Security Audit Report]]
 
 ## Top bridge nodes

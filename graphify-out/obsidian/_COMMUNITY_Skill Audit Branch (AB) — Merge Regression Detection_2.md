@@ -16,7 +16,7 @@ members: 15
 - [[Guardrails_13]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
 - [[Invocation Forms_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
 - [[Jira  PR Comment Format_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
-- [[Role_70]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Role_71]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
 - [[Skill Audit Branch (AB) — Merge Regression Detection_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
 - [[Step 1 — Verify the script exists_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
 - [[Step 2 — Determine the target_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md

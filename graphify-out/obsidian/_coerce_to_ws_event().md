@@ -28,7 +28,7 @@ tags:
 - [[dot-test_unknown_severity_defaults_to_info()]] - `calls` [EXTRACTED]
 - [[dot-test_wsevent_passthrough()]] - `calls` [EXTRACTED]
 - [[Convert an EventBus item to WSEvent, return None if conversion fails.]] - `rationale_for` [EXTRACTED]
-- [[SOCWebSocketHandler_1]] - `calls` [EXTRACTED]
+- [[SOCWebSocketHandler_2]] - `calls` [EXTRACTED]
 - [[WSEvent]] - `calls` [EXTRACTED]
 - [[WSEvent_1]] - `references` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]

@@ -26,8 +26,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_SubagentGovernance]]
+- 3 edges to [[_COMMUNITY_SubagentGovernance]]
 - 2 edges to [[_COMMUNITY_GovernanceAction]]
+- 1 edge to [[_COMMUNITY_dot-_check_budget]]
 
 ## Top bridge nodes
-- [[TestToolAuthorization]] - degree 12, connects to 2 communities
+- [[TestToolAuthorization]] - degree 12, connects to 3 communities

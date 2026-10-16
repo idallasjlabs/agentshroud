@@ -1,13 +1,13 @@
 ---
 type: community
 cohesion: 0.02
-members: 83
+members: 81
 ---
 
 # MiddlewareManager
 
 **Cohesion:** 0.02 - loosely connected
-**Members:** 83 nodes
+**Members:** 81 nodes
 
 ## Members
 - [[dot-test_any_python_file_in_gateway_blocked()]] - code - gateway/tests/test_privilege_separation.py
@@ -66,7 +66,6 @@ members: 83
 - [[Any .py file in gateway directory should be blocked.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Case variations should not bypass protection.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[FileSandbox in enforce mode with strict separation.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Middleware manager for request processing tests.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Multiple violations should all be tracked.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Normal workspace operations should not be flagged as violations.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Path traversal attempts should be blocked.]] - rationale - gateway/tests/test_privilege_separation.py
@@ -90,7 +89,6 @@ members: 83
 - [[TestSystemPathProtection]] - code - gateway/tests/test_privilege_separation.py
 - [[TestWorkspaceAccessPreserved]] - code - gateway/tests/test_privilege_separation.py
 - [[enforce_config()]] - code - gateway/tests/test_privilege_separation.py
-- [[middleware_manager()]] - code - gateway/tests/test_privilege_separation.py
 - [[strict_sandbox()]] - code - gateway/tests/test_privilege_separation.py
 - [[test_privilege_separation.py]] - code - gateway/tests/test_privilege_separation.py
 

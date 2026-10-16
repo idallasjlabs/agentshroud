@@ -1,13 +1,13 @@
 ---
 type: community
-cohesion: 0.11
-members: 18
+cohesion: 0.18
+members: 11
 ---
 
 # Phase 1 — Raw Collection
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 18 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 11 nodes
 
 ## Members
 - [[1. System Profiler (most comprehensive single source)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
@@ -20,14 +20,7 @@ members: 18
 - [[7. CLI Tools & Utilities (non-.app installs)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
 - [[8. Launch Agents & Daemons (background services)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
 - [[9. Browser Extensions (optional but useful)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[A. `mac_app_catalog.json` — Machine-readable manifest_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[B. `mac_app_catalog.md` — Human-readable catalog_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[Discovery Strategy_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
 - [[Phase 1 — Raw Collection_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[Phase 2 — Deduplication & Normalization_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[Phase 3 — Categorization_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[Phase 4 — Enrichment_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[Phase 5 — Output Generation_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,7 +30,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Mac App Discovery Skill]]
+- 1 edge to [[_COMMUNITY_Phase 1 — Raw Collection_3]]
 
 ## Top bridge nodes
-- [[Discovery Strategy_2]] - degree 7, connects to 1 community
+- [[Phase 1 — Raw Collection_2]] - degree 11, connects to 1 community

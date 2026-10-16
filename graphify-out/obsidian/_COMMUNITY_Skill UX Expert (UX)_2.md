@@ -33,7 +33,7 @@ members: 31
 - [[Nielsen's 10 Heuristics — GSDE&G Application_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
 - [[Progressive Disclosure_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
 - [[Progressive Form Pattern (for multi-step workflows)_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Role_25]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Role_28]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
 - [[Rules_5]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
 - [[Site Alarm Acknowledgment Flow_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
 - [[Skill UX Expert (UX)_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md

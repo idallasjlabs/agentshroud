@@ -15,11 +15,11 @@ members: 15
 - [[BrowserSecurityGuard.can_enter_credentials(url)]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
 - [[BrowserSecurityGuard.check_url_reputation(url)]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
 - [[BrowserSecurityGuard.register_screenshot_hook(hook)]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[Function Details_29]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[Key Classes  Functions_31]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[Purpose_134]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[Related_35]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[Responsibilities_32]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[Function Details_30]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[Key Classes  Functions_32]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[Purpose_151]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[Related_36]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[Responsibilities_34]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
 - [[Social Engineering Patterns]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
 - [[Threat Model_19]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
 - [[URL Reputation Signals]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md

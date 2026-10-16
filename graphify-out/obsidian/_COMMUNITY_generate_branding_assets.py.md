@@ -15,7 +15,7 @@ members: 21
 - [[Image]] - code - scripts/generate_branding_assets.py
 - [[Load source logo, optionally resize and composite onto bg.]] - rationale - scripts/generate_branding_assets.py
 - [[Paste transparent logo centred on a solid-colour canvas.]] - rationale - scripts/generate_branding_assets.py
-- [[Path_35]] - code - scripts/generate_branding_assets.py
+- [[Path_37]] - code - scripts/generate_branding_assets.py
 - [[ensure()]] - code - scripts/generate_branding_assets.py
 - [[generate_branding_assets.py]] - code - scripts/generate_branding_assets.py
 - [[generate_email()]] - code - scripts/generate_branding_assets.py

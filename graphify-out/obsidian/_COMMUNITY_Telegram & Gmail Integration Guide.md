@@ -39,7 +39,7 @@ members: 34
 - [[Step 3 Add Gmail to OpenClaw]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
 - [[Step 4 Verify Gmail Channel]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
 - [[Step 5 Test Gmail]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
-- [[Summary_7]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Summary_6]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
 - [[Telegram & Gmail Integration Guide]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
 - [[Test Now]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
 - [[When Upgrading macOS]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md

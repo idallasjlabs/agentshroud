@@ -11,11 +11,11 @@ members: 17
 
 ## Members
 - [[Configuration  Environment Variables_6]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
-- [[Function Details_12]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
-- [[Key Classes  Functions_13]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
-- [[Purpose_112]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
-- [[Related_17]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
-- [[Responsibilities_14]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[Function Details_13]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[Key Classes  Functions_14]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[Purpose_117]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[Related_18]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[Responsibilities_16]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
 - [[SubagentMonitor.check_tool_usage(session_id, agent_id, tool_name, required_trust)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
 - [[SubagentMonitor.deregister(session_id, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
 - [[SubagentMonitor.get_active(session_id)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md

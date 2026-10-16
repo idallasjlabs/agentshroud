@@ -15,7 +15,7 @@ members: 8
 - [[PII Not Being Detected]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
 - [[PII Pipeline Errors]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
 - [[Redaction Breaking JSONStructured Data]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
-- [[Related Notes_2]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[Related Notes_5]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
 - [[Tool Result PII Not Scanned]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
 - [[spaCy Model Issues]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
 
@@ -27,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_All Dependencies]]
+- 1 edge to [[_COMMUNITY_Error Index]]
 
 ## Top bridge nodes
 - [[PII Pipeline Errors]] - degree 8, connects to 1 community

@@ -10,7 +10,7 @@ members: 44
 **Members:** 44 nodes
 
 ## Members
-- [[dot-__init__()_51]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[dot-__init__()_44]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[dot-_classify_risk()]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[dot-_domain_matches()]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[dot-_init_browser()]] - code - .agents/skills/i-browser/scripts/browse.py
@@ -22,7 +22,7 @@ members: 44
 - [[dot-_validate_url()]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[dot-agentsskillsi-browserscriptsbrowse.py]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[dot-click()]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[dot-close()_5]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[dot-close()_2]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[dot-detect_captcha()]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[dot-extract()]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[dot-fill_field()]] - code - .agents/skills/i-browser/scripts/browse.py
@@ -49,7 +49,7 @@ members: 44
 - [[Secure browser automation with enterprise controls      Security guarantees]] - rationale - .agents/skills/i-browser/scripts/browse.py
 - [[SecureBrowser]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[Security configuration for browser automation]] - rationale - .agents/skills/i-browser/scripts/browse.py
-- [[SecurityConfig_1]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[SecurityConfig]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[SecurityError]] - code - .agents/skills/i-browser/scripts/browse.py
 - [[Take screenshot and save to audit directory]] - rationale - .agents/skills/i-browser/scripts/browse.py
 - [[Validate URL against allowlistblocklist          Security This is the primary]] - rationale - .agents/skills/i-browser/scripts/browse.py
@@ -63,7 +63,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Action]]
+- 2 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
 - 1 edge to [[_COMMUNITY_ConsentFramework]]
 
 ## Top bridge nodes

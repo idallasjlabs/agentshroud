@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Build a CitationVerifier wired to the production (httpx) fetcher.      Isolated]] - `rationale_for` [EXTRACTED]
 - [[CitationVerifier]] - `calls` [EXTRACTED]
-- [[api.py]] - `contains` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
 - [[make_httpx_fetcher()]] - `calls` [EXTRACTED]
 - [[submit_competitive_intel()]] - `calls` [EXTRACTED]
 

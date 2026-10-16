@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-test_security_architecture_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test that security module references are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[dot-test_credential_path_filtering()]] - code - gateway/tests/test_outbound_filter.py
+- [[Test that credential paths are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,4 +24,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
 
 ## Top bridge nodes
-- [[dot-test_security_architecture_filtering()]] - degree 2, connects to 1 community
+- [[dot-test_credential_path_filtering()]] - degree 2, connects to 1 community

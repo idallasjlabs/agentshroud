@@ -12,7 +12,7 @@ tags:
 # _next_ash_number()
 
 ## Connections
-- [[Any_13]] - `references` [EXTRACTED]
+- [[Any_17]] - `references` [EXTRACTED]
 - [[Return the next zero-padded ASH id number for an agent's registry list.]] - `rationale_for` [EXTRACTED]
 - [[process_ghsa_advisories()]] - `calls` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]

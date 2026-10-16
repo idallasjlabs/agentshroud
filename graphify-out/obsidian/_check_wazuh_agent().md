@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "ServiceManager"
+community: "test_soc_realtime_coverage.py"
 location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/test_soc_realtime_coveragepy
 ---
 
 # _check_wazuh_agent()
@@ -17,4 +17,4 @@ tags:
 - [[services.py]] - `references` [EXTRACTED]
 - [[start-agentshroud.sh]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

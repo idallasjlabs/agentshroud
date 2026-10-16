@@ -35,7 +35,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 8 edges to [[_COMMUNITY_NetworkSecurityFinding]]
-- 7 edges to [[_COMMUNITY_MiddlewareManager]]
+- 7 edges to [[_COMMUNITY_AlertDispatcher]]
 - 3 edges to [[_COMMUNITY_validate_network_security]]
 - 3 edges to [[_COMMUNITY_dot-_parse_service_network_config]]
 

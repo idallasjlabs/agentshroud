@@ -11,7 +11,7 @@ members: 7
 
 ## Members
 - [[Call Gemini API and return the review text and exit code.      Returns]] - rationale - scripts/gemini-review.py
-- [[PATH_6]] - code - scripts/peer-review.sh
+- [[PATH_4]] - code - scripts/peer-review.sh
 - [[call_gemini()]] - code - scripts/gemini-review.py
 - [[gemini-review.py]] - code - scripts/gemini-review.py
 - [[main()_2]] - code - scripts/gemini-review.py

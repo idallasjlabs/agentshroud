@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "_make_filter"
+community: "EgressFilterConfig"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_filter
+  - community/EgressFilterConfig
 ---
 
 # _make_filter()
@@ -16,7 +16,7 @@ tags:
 - [[dot-test_allowed_cidr()]] - `calls` [EXTRACTED]
 - [[dot-test_allowed_domain_passes()_1]] - `calls` [EXTRACTED]
 - [[dot-test_allowed_domain_still_allowed_in_monitor()]] - `calls` [EXTRACTED]
-- [[dot-test_allowed_ip()_1]] - `calls` [EXTRACTED]
+- [[dot-test_allowed_ip()]] - `calls` [EXTRACTED]
 - [[dot-test_attempt_fields()]] - `calls` [EXTRACTED]
 - [[dot-test_bare_hostname()]] - `calls` [EXTRACTED]
 - [[dot-test_denied_domain_overrides_allow()]] - `calls` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[dot-test_emits_egress_event_to_event_bus()]] - `calls` [EXTRACTED]
 - [[dot-test_full_url()]] - `calls` [EXTRACTED]
 - [[dot-test_host_port_format()]] - `calls` [EXTRACTED]
-- [[dot-test_ipv4_mapped_ipv6_blocked()_2]] - `calls` [EXTRACTED]
+- [[dot-test_ipv4_mapped_ipv6_blocked()_1]] - `calls` [EXTRACTED]
 - [[dot-test_localhost_hostname_blocked()]] - `calls` [EXTRACTED]
 - [[dot-test_log_filters_by_agent()]] - `calls` [EXTRACTED]
 - [[dot-test_log_records_attempts()]] - `calls` [EXTRACTED]
@@ -41,9 +41,9 @@ tags:
 - [[dot-test_wildcard_matches_base_domain()]] - `calls` [EXTRACTED]
 - [[dot-test_wildcard_one_level()]] - `calls` [EXTRACTED]
 - [[Create an EgressFilter with a simple config.]] - `rationale_for` [EXTRACTED]
-- [[EgressFilter_2]] - `calls` [EXTRACTED]
 - [[EgressFilter_1]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_filter
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "ForwardRequest"
+community: "AgentTarget"
 location: "L61"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ForwardRequest
+  - community/AgentTarget
 ---
 
 # _DropInvalidHTTPRequestFilter
@@ -28,4 +28,4 @@ tags:
 - [[lifespan.py]] - `contains` [EXTRACTED]
 - [[test_config_validation.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ForwardRequest
+#graphify/code #graphify/INFERRED #community/AgentTarget

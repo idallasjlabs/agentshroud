@@ -30,7 +30,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 8 edges to [[_COMMUNITY_dot-validate_docker_compose_config]]
-- 3 edges to [[_COMMUNITY_MiddlewareManager]]
+- 3 edges to [[_COMMUNITY_AlertDispatcher]]
 - 3 edges to [[_COMMUNITY_TestNetworkValidator]]
 - 1 edge to [[_COMMUNITY_validate_network_security]]
 - 1 edge to [[_COMMUNITY_dot-_parse_service_network_config]]

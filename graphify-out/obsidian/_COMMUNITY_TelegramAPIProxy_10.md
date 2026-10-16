@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-test_unknown_model_error_is_sanitized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Unknown model errors should be rewritten without leaking raw stack text.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_plain_no_reply_token_is_rewritten_to_wait_message()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Plain NO_REPLY text should still be normalized to deterministic wait guidance.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 3 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
 
 ## Top bridge nodes
-- [[dot-test_unknown_model_error_is_sanitized()]] - degree 4, connects to 1 community
+- [[dot-test_plain_no_reply_token_is_rewritten_to_wait_message()]] - degree 4, connects to 1 community

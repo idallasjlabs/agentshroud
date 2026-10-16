@@ -1,17 +1,23 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.25
+members: 8
 ---
 
 # MCPPermissionManager
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[dot-set_trust_level()]] - code - gateway/proxy/mcp_permissions.py
-- [[Set trust level for an agent.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[dot-test_deeply_nested_pii()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_empty_params()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_list_params()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_no_pii_scan()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_none_values_in_params()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_tool_result_none_content()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_tool_result_string_content()]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestInspectorEdgeCases]] - code - gateway/tests/test_mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +27,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_MCPPermissionManager]]
+- 5 edges to [[_COMMUNITY_MCPPermissionManager]]
+- 3 edges to [[_COMMUNITY_MCPPermissionManager_1]]
+- 2 edges to [[_COMMUNITY_PermissionLevel]]
+- 1 edge to [[_COMMUNITY_MCPAuditTrail]]
+- 1 edge to [[_COMMUNITY_MCPInspector]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager_2]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager_3]]
 
 ## Top bridge nodes
-- [[dot-set_trust_level()]] - degree 2, connects to 1 community
+- [[TestInspectorEdgeCases]] - degree 21, connects to 7 communities

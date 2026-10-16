@@ -1,31 +1,30 @@
 ---
 type: community
 cohesion: 0.03
-members: 132
+members: 129
 ---
 
 # test_e2e_proxy.py
 
 **Cohesion:** 0.03 - loosely connected
-**Members:** 132 nodes
+**Members:** 129 nodes
 
 ## Members
-- [[dot-__init__()_97]] - code - gateway/proxy/forwarder.py
-- [[dot-__init__()_98]] - code - gateway/proxy/sidecar.py
-- [[dot-__init__()_99]] - code - gateway/tests/test_e2e_proxy.py
-- [[dot-__init__()_100]] - code - gateway/tests/test_e2e_proxy.py
+- [[dot-__init__()_93]] - code - gateway/proxy/forwarder.py
+- [[dot-__init__()_94]] - code - gateway/proxy/sidecar.py
+- [[dot-__init__()_95]] - code - gateway/tests/test_e2e_proxy.py
 - [[dot-forward()_1]] - code - gateway/proxy/forwarder.py
 - [[dot-forward()_2]] - code - gateway/tests/test_e2e_proxy.py
 - [[dot-get_stats()_9]] - code - gateway/proxy/forwarder.py
 - [[dot-get_stats()_10]] - code - gateway/proxy/sidecar.py
-- [[dot-health_check()_3]] - code - gateway/proxy/forwarder.py
+- [[dot-health_check()_2]] - code - gateway/proxy/forwarder.py
 - [[dot-is_healthy()]] - code - gateway/proxy/forwarder.py
 - [[dot-last_forward_time()]] - code - gateway/proxy/forwarder.py
-- [[dot-process_inbound()_3]] - code - gateway/tests/test_e2e_proxy.py
-- [[dot-process_outbound()_3]] - code - gateway/tests/test_e2e_proxy.py
+- [[dot-process_inbound()]] - code - gateway/tests/test_e2e_proxy.py
+- [[dot-process_outbound()]] - code - gateway/tests/test_e2e_proxy.py
 - [[dot-scan()_2]] - code - gateway/proxy/sidecar.py
 - [[dot-set_response_handler()]] - code - gateway/proxy/forwarder.py
-- [[dot-to_dict()_4]] - code - gateway/security/canary.py
+- [[dot-to_dict()_9]] - code - gateway/security/canary.py
 - [[A pipeline-blocked outbound response must NOT be delivered.      Regression test]] - rationale - gateway/tests/test_e2e_proxy.py
 - [[Any_34]] - code - gateway/proxy/forwarder.py
 - [[Any_35]] - code - gateway/proxy/sidecar.py
@@ -37,13 +36,12 @@ members: 132
 - [[Canary should pass when pipeline is properly configured.]] - rationale - gateway/tests/test_canary.py
 - [[Canary should verify audit chain integrity.]] - rationale - gateway/tests/test_canary.py
 - [[CanaryCheck]] - code - gateway/security/canary.py
-- [[CanaryResult_2]] - code - gateway/security/canary.py
+- [[CanaryResult_1]] - code - gateway/security/canary.py
 - [[Check if the OpenClaw backend is healthy.]] - rationale - gateway/proxy/forwarder.py
 - [[Configuration for the HTTP forwarder.]] - rationale - gateway/proxy/forwarder.py
 - [[Configure egress filter to block a domain — verify denied.]] - rationale - gateway/tests/test_e2e_proxy.py
 - [[Forward a request to the OpenClaw backend.]] - rationale - gateway/proxy/forwarder.py
 - [[ForwardResult]] - code - gateway/proxy/forwarder.py
-- [[Forwarder stub returning a canned bot response body.]] - rationale - gateway/tests/test_e2e_proxy.py
 - [[ForwarderConfig]] - code - gateway/proxy/forwarder.py
 - [[Forwards sanitized requests to the OpenClaw backend.      In production, uses ai]] - rationale - gateway/proxy/forwarder.py
 - [[HTTPForwarder]] - code - gateway/proxy/forwarder.py
@@ -86,9 +84,8 @@ members: 132
 - [[Verify single-entry chain is valid.]] - rationale - gateway/tests/test_e2e_proxy.py
 - [[Verify that direct connection to OpenClaw internal port fails.      In Docker pr]] - rationale - gateway/tests/test_e2e_proxy.py
 - [[_PassInboundPipeline]] - code - gateway/tests/test_e2e_proxy.py
-- [[_StubForwarder_1]] - code - gateway/tests/test_e2e_proxy.py
 - [[canary.py]] - code - gateway/security/canary.py
-- [[fail()_2]] - code - scripts/verify-proxy.sh
+- [[fail()_1]] - code - scripts/verify-proxy.sh
 - [[forwarder()_1]] - code - gateway/tests/test_e2e_proxy.py
 - [[forwarder.py]] - code - gateway/proxy/forwarder.py
 - [[healthy_forwarder()]] - code - gateway/tests/test_canary.py
@@ -103,7 +100,7 @@ members: 132
 - [[run_chain()]] - code - scripts/verify-proxy.sh
 - [[run_full()]] - code - scripts/verify-proxy.sh
 - [[run_quick()]] - code - scripts/verify-proxy.sh
-- [[sanitizer()_2]] - code - gateway/tests/test_e2e_proxy.py
+- [[sanitizer()_4]] - code - gateway/tests/test_e2e_proxy.py
 - [[sidecar.py]] - code - gateway/proxy/sidecar.py
 - [[test_approval_queue_enforced()]] - code - gateway/tests/test_e2e_proxy.py
 - [[test_audit_chain_empty_valid()]] - code - gateway/tests/test_e2e_proxy.py
@@ -151,24 +148,24 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 32 edges to [[_COMMUNITY_PIIConfig]]
-- 9 edges to [[_COMMUNITY_AuditChain]]
-- 8 edges to [[_COMMUNITY_TrustConfig]]
-- 8 edges to [[_COMMUNITY_WebhookReceiver]]
+- 44 edges to [[_COMMUNITY_PIIConfig]]
 - 7 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 6 edges to [[_COMMUNITY_AlertDispatcher]]
+- 7 edges to [[_COMMUNITY_WebhookReceiver]]
+- 5 edges to [[_COMMUNITY_AuditChain]]
+- 2 edges to [[_COMMUNITY_AlertDispatcher]]
 - 2 edges to [[_COMMUNITY_HTTPConnectProxy]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_AgentTarget]]
-- 1 edge to [[_COMMUNITY_ProxyDashboard]]
-- 1 edge to [[_COMMUNITY_ProxyDashboard_1]]
 - 1 edge to [[_COMMUNITY_KeyVault]]
+- 1 edge to [[_COMMUNITY_ProxyDashboard]]
+- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 1 edge to [[_COMMUNITY_AgentTarget]]
+- 1 edge to [[_COMMUNITY_ProxyDashboard_1]]
+- 1 edge to [[_COMMUNITY_parse_clamscan_output]]
 - 1 edge to [[_COMMUNITY_test_clamav_pipeline.py]]
 - 1 edge to [[_COMMUNITY_ForwardRequest]]
 
 ## Top bridge nodes
-- [[test_e2e_proxy.py]] - degree 53, connects to 6 communities
-- [[_PassInboundPipeline]] - degree 23, connects to 6 communities
-- [[_StubForwarder_1]] - degree 22, connects to 6 communities
-- [[test_canary.py]] - degree 21, connects to 4 communities
+- [[test_e2e_proxy.py]] - degree 53, connects to 4 communities
+- [[_PassInboundPipeline]] - degree 23, connects to 4 communities
 - [[HTTPForwarder]] - degree 21, connects to 3 communities
+- [[test_canary.py]] - degree 21, connects to 3 communities
+- [[run_canary()_1]] - degree 20, connects to 3 communities

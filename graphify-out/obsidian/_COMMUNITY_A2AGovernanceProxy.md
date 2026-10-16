@@ -1,16 +1,16 @@
 ---
 type: community
-cohesion: 0.06
-members: 92
+cohesion: 0.05
+members: 93
 ---
 
 # A2AGovernanceProxy
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 92 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 93 nodes
 
 ## Members
-- [[dot-__init__()_153]] - code - gateway/security/a2a_governance.py
+- [[dot-__init__()_138]] - code - gateway/security/a2a_governance.py
 - [[dot-_check_message_size()]] - code - gateway/security/a2a_governance.py
 - [[dot-_check_peer()]] - code - gateway/security/a2a_governance.py
 - [[dot-_check_rate_limit()]] - code - gateway/security/a2a_governance.py
@@ -24,8 +24,8 @@ members: 92
 - [[dot-get_peer()]] - code - gateway/security/a2a_governance.py
 - [[dot-get_summary()]] - code - gateway/security/a2a_governance.py
 - [[dot-is_trusted()]] - code - gateway/security/a2a_governance.py
-- [[dot-process_inbound()_6]] - code - gateway/security/a2a_governance.py
-- [[dot-process_outbound()_7]] - code - gateway/security/a2a_governance.py
+- [[dot-process_inbound()_1]] - code - gateway/security/a2a_governance.py
+- [[dot-process_outbound()_1]] - code - gateway/security/a2a_governance.py
 - [[dot-register_peer()]] - code - gateway/security/a2a_governance.py
 - [[dot-test_api_key_sanitized()]] - code - gateway/tests/test_a2a_governance.py
 - [[dot-test_clean_payload_not_sanitized()]] - code - gateway/tests/test_a2a_governance.py
@@ -39,7 +39,7 @@ members: 92
 - [[dot-test_outbound_to_unknown_quarantined()]] - code - gateway/tests/test_a2a_governance.py
 - [[dot-test_oversized_denied()]] - code - gateway/tests/test_a2a_governance.py
 - [[dot-test_peer_stats_updated()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_rate_limit_exceeded()_1]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-test_rate_limit_exceeded()]] - code - gateway/tests/test_a2a_governance.py
 - [[dot-test_register_peer()]] - code - gateway/tests/test_a2a_governance.py
 - [[dot-test_ssn_sanitized()]] - code - gateway/tests/test_a2a_governance.py
 - [[dot-test_summary()]] - code - gateway/tests/test_a2a_governance.py
@@ -53,7 +53,7 @@ members: 92
 - [[dot-test_untrusted_peer_denied()]] - code - gateway/tests/test_a2a_governance.py
 - [[dot-test_update_trust()]] - code - gateway/tests/test_a2a_governance.py
 - [[dot-test_within_rate_limit()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-to_dict()_10]] - code - gateway/security/a2a_governance.py
+- [[dot-to_dict()_11]] - code - gateway/security/a2a_governance.py
 - [[dot-unregister_peer()]] - code - gateway/security/a2a_governance.py
 - [[dot-update_peer_trust()]] - code - gateway/security/a2a_governance.py
 - [[A2A protocol message types (based on A2A v1.0 spec).]] - rationale - gateway/security/a2a_governance.py
@@ -81,6 +81,7 @@ members: 92
 - [[Register a known A2A peer agent.]] - rationale - gateway/security/a2a_governance.py
 - [[Registered A2A peer agent.]] - rationale - gateway/security/a2a_governance.py
 - [[Remove a peer from the registry.]] - rationale - gateway/security/a2a_governance.py
+- [[Retrieve governance events with optional filters.]] - rationale - gateway/security/a2a_governance.py
 - [[Sanitize PII from A2A message payload. Returns list of sanitizations applied.]] - rationale - gateway/security/a2a_governance.py
 - [[TestDisabledProxy]] - code - gateway/tests/test_a2a_governance.py
 - [[TestInboundProcessing]] - code - gateway/tests/test_a2a_governance.py
@@ -98,7 +99,7 @@ members: 92
 - [[_msg()]] - code - gateway/tests/test_a2a_governance.py
 - [[a2a_governance.py]] - code - gateway/security/a2a_governance.py
 - [[monitor_proxy()]] - code - gateway/tests/test_a2a_governance.py
-- [[proxy()_2]] - code - gateway/tests/test_a2a_governance.py
+- [[proxy()_3]] - code - gateway/tests/test_a2a_governance.py
 - [[test_a2a_governance.py]] - code - gateway/tests/test_a2a_governance.py
 - [[trusted_peer()]] - code - gateway/tests/test_a2a_governance.py
 - [[untrusted_peer()]] - code - gateway/tests/test_a2a_governance.py
@@ -111,15 +112,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Action]]
-- 2 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 5 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
+- 1 edge to [[_COMMUNITY_TrustConfig]]
 - 1 edge to [[_COMMUNITY__t]]
-- 1 edge to [[_COMMUNITY_RBACConfig]]
 - 1 edge to [[_COMMUNITY_GovernanceAction]]
 
 ## Top bridge nodes
-- [[A2ADecision]] - degree 26, connects to 3 communities
-- [[A2AMessageType]] - degree 15, connects to 2 communities
+- [[A2ADecision]] - degree 26, connects to 2 communities
 - [[A2AGovernanceProxy]] - degree 43, connects to 1 community
+- [[A2AMessageType]] - degree 15, connects to 1 community
 - [[a2a_governance.py]] - degree 8, connects to 1 community
-- [[dot-get_events()_2]] - degree 4, connects to 1 community
+- [[Retrieve governance events with optional filters.]] - degree 2, connects to 1 community

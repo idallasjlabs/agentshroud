@@ -17,7 +17,7 @@ members: 13
 - [[Output Format_28]] - document - .agents/skills/i-atlas/SKILL.md
 - [[Persona_10]] - document - .agents/skills/i-atlas/SKILL.md
 - [[Quality Checklist_13]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Role_76]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Role_77]] - document - .agents/skills/i-atlas/SKILL.md
 - [[System Prompt_10]] - document - .agents/skills/i-atlas/SKILL.md
 - [[User Prompt Template_5]] - document - .agents/skills/i-atlas/SKILL.md
 - [[User Prompt Template — OKE Channel_1]] - document - .agents/skills/i-atlas/SKILL.md

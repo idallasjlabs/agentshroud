@@ -11,10 +11,10 @@ members: 8
 
 ## Members
 - [[dot-agentsskillsi-secREADME]] - document - .agents/skills/i-sec/README.md
-- [[Purpose]] - document - .agents/skills/i-sec/README.md
+- [[Purpose_5]] - document - .agents/skills/i-sec/README.md
 - [[Related Skills]] - document - .agents/skills/i-sec/README.md
 - [[Security Review (SEC)]] - document - .agents/skills/i-sec/README.md
-- [[Usage]] - document - .agents/skills/i-sec/README.md
+- [[Usage_1]] - document - .agents/skills/i-sec/README.md
 - [[hermesagentsi-security-reviewer]] - document - docker/config/hermes/agents/i-security-reviewer.md
 - [[openclawagentsi-security-reviewer]] - document - docker/config/openclaw/agents/i-security-reviewer.md
 - [[security-reviewer]] - document - docker/config/openclaw/agents/i-security-reviewer.md

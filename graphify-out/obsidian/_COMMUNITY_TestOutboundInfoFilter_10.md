@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-test_admin_private_service_data_redacted()]] - code - gateway/tests/test_outbound_filter.py
-- [[Admin-private service references should be redacted.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[dot-test_trust_level_overrides()]] - code - gateway/tests/test_outbound_filter.py
+- [[Test that trust level overrides work correctly.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +21,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_AuditChain]]
 - 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
 
 ## Top bridge nodes
-- [[dot-test_admin_private_service_data_redacted()]] - degree 2, connects to 1 community
+- [[dot-test_trust_level_overrides()]] - degree 3, connects to 2 communities

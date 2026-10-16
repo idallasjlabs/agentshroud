@@ -17,14 +17,14 @@ members: 15
 - [[EgressFilter.check(agent_id, destination, port)]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
 - [[EgressPolicy.matches_domain(domain)]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
 - [[Environment Variables_12]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
-- [[Function Details_20]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
-- [[Key Classes  Functions_22]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[Function Details_21]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[Key Classes  Functions_23]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
 - [[Mode Enforce vs Monitor_8]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
-- [[Purpose_125]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
-- [[Related_26]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
-- [[Responsibilities_23]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[Purpose_142]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[Related_27]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[Responsibilities_25]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
 - [[Threat Model_17]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
-- [[egress_filter.py]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[egress_filter.py_1]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -16,7 +16,7 @@ members: 13
 - [[Glue Job Logic  →  test transformations outside Spark]] - document - .agents/skills/i-tdd/SKILL.md
 - [[PostgreSQL  →  `SAVEPOINT` + `ROLLBACK`]] - document - .agents/skills/i-tdd/SKILL.md
 - [[Python  Boto3  AWS  →  `moto`]] - document - .agents/skills/i-tdd/SKILL.md
-- [[Role_81]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Role_82]] - document - .agents/skills/i-tdd/SKILL.md
 - [[Rules_21]] - document - .agents/skills/i-tdd/SKILL.md
 - [[Skill Test-Driven Development (TDD)]] - document - .agents/skills/i-tdd/SKILL.md
 - [[Stack-Specific Testing Patterns]] - document - .agents/skills/i-tdd/SKILL.md

@@ -18,9 +18,9 @@ members: 13
 - [[Imports From  Exports To_7]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
 - [[Key Classes  Functions_45]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
 - [[Known Issues  Notes_8]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
-- [[Purpose_169]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Purpose_179]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
 - [[Related_49]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
-- [[Responsibilities_45]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Responsibilities_47]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
 - [[event_bus.py_2]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
 - [[make_event(event_type, summary, details, severity)]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
 

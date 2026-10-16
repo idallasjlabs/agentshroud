@@ -25,7 +25,7 @@ members: 19
 - [[Issue uvx not found_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
 - [[Output Format_18]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
 - [[Related Skills_67]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Role_55]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Role_56]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
 - [[Skill MCP Doctor (MCPM-DOCTOR)_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
 - [[When to Invoke_5]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
 - [[openclawskillsi-mcpm-doctorSKILL]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md

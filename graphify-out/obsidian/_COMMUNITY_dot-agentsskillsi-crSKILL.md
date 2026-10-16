@@ -30,24 +30,24 @@ members: 73
 - [[dot-agentsskillsi-twREADME]] - document - .agents/skills/i-tw/README.md
 - [[dot-agentsskillsi-vulcanREADME]] - document - .agents/skills/i-vulcan/README.md
 - [[AWS Cloud Management & FinOps_2]] - document - .agents/skills/i-aws/README.md
-- [[Apollo — Audio Systems Producer_4]] - document - .agents/skills/i-apollo/README.md
+- [[Apollo — Audio Systems Producer_2]] - document - .agents/skills/i-apollo/README.md
 - [[Branding Specialist (BS)_2]] - document - .agents/skills/i-bs/README.md
 - [[Daedalus — Concept Illustrator_1]] - document - .agents/skills/i-daedalus/README.md
 - [[Git Workflow Guardian (GIT-GUARD)_2]] - document - .agents/skills/i-gg/README.md
 - [[MCP Tools Usage (MCPM)_2]] - document - .agents/skills/i-mcpm/README.md
 - [[Pull Request Generator (PR)_2]] - document - .agents/skills/i-pr/README.md
-- [[Purpose_142]] - document - .agents/skills/i-apollo/README.md
-- [[Purpose_143]] - document - .agents/skills/i-aws/README.md
-- [[Purpose_144]] - document - .agents/skills/i-bs/README.md
-- [[Purpose_145]] - document - .agents/skills/i-daedalus/README.md
-- [[Purpose_146]] - document - .agents/skills/i-gg/README.md
-- [[Purpose_147]] - document - .agents/skills/i-mcpm/README.md
-- [[Purpose_148]] - document - .agents/skills/i-pr/README.md
-- [[Purpose_149]] - document - .agents/skills/i-sad/README.md
-- [[Purpose_150]] - document - .agents/skills/i-sav/README.md
-- [[Purpose_151]] - document - .agents/skills/i-sec-offense/README.md
-- [[Purpose_152]] - document - .agents/skills/i-tw/README.md
-- [[Purpose_153]] - document - .agents/skills/i-vulcan/README.md
+- [[Purpose_127]] - document - .agents/skills/i-apollo/README.md
+- [[Purpose_128]] - document - .agents/skills/i-aws/README.md
+- [[Purpose_129]] - document - .agents/skills/i-bs/README.md
+- [[Purpose_130]] - document - .agents/skills/i-daedalus/README.md
+- [[Purpose_131]] - document - .agents/skills/i-gg/README.md
+- [[Purpose_132]] - document - .agents/skills/i-mcpm/README.md
+- [[Purpose_133]] - document - .agents/skills/i-pr/README.md
+- [[Purpose_134]] - document - .agents/skills/i-sad/README.md
+- [[Purpose_135]] - document - .agents/skills/i-sav/README.md
+- [[Purpose_136]] - document - .agents/skills/i-sec-offense/README.md
+- [[Purpose_137]] - document - .agents/skills/i-tw/README.md
+- [[Purpose_138]] - document - .agents/skills/i-vulcan/README.md
 - [[Red Team Adversarial Tester (SEC-OFFENSE)_2]] - document - .agents/skills/i-sec-offense/README.md
 - [[Related Skills_93]] - document - .agents/skills/i-apollo/README.md
 - [[Related Skills_94]] - document - .agents/skills/i-aws/README.md
@@ -70,18 +70,18 @@ members: 73
 - [[System Audit Documentation_1]] - document - .agents/skills/i-sad/README.md
 - [[System Audit Vault_1]] - document - .agents/skills/i-sav/README.md
 - [[Technical Writer (TW)_2]] - document - .agents/skills/i-tw/README.md
-- [[Usage_102]] - document - .agents/skills/i-apollo/README.md
-- [[Usage_103]] - document - .agents/skills/i-aws/README.md
-- [[Usage_104]] - document - .agents/skills/i-bs/README.md
-- [[Usage_105]] - document - .agents/skills/i-daedalus/README.md
-- [[Usage_106]] - document - .agents/skills/i-gg/README.md
-- [[Usage_107]] - document - .agents/skills/i-mcpm/README.md
-- [[Usage_108]] - document - .agents/skills/i-pr/README.md
-- [[Usage_109]] - document - .agents/skills/i-sad/README.md
-- [[Usage_110]] - document - .agents/skills/i-sav/README.md
-- [[Usage_111]] - document - .agents/skills/i-sec-offense/README.md
-- [[Usage_112]] - document - .agents/skills/i-tw/README.md
-- [[Usage_113]] - document - .agents/skills/i-vulcan/README.md
+- [[Usage_101]] - document - .agents/skills/i-apollo/README.md
+- [[Usage_102]] - document - .agents/skills/i-aws/README.md
+- [[Usage_103]] - document - .agents/skills/i-bs/README.md
+- [[Usage_104]] - document - .agents/skills/i-daedalus/README.md
+- [[Usage_105]] - document - .agents/skills/i-gg/README.md
+- [[Usage_106]] - document - .agents/skills/i-mcpm/README.md
+- [[Usage_107]] - document - .agents/skills/i-pr/README.md
+- [[Usage_108]] - document - .agents/skills/i-sad/README.md
+- [[Usage_109]] - document - .agents/skills/i-sav/README.md
+- [[Usage_110]] - document - .agents/skills/i-sec-offense/README.md
+- [[Usage_111]] - document - .agents/skills/i-tw/README.md
+- [[Usage_112]] - document - .agents/skills/i-vulcan/README.md
 - [[Vulcan — Subject Matter Auditor_1]] - document - .agents/skills/i-vulcan/README.md
 
 ## Live Query (requires Dataview plugin)
@@ -107,23 +107,21 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Skill Pre-Change Analysis (PCA)]]
 - 1 edge to [[_COMMUNITY_Blue Team Security Auditor (SEC-DEFENSE)]]
 - 1 edge to [[_COMMUNITY_8D Root Cause Analysis — Data-Driven Control System Investigation]]
+- 1 edge to [[_COMMUNITY_Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]]
 - 1 edge to [[_COMMUNITY_REQUIRED NOTES — PRODUCE EVERY ONE OF THESE]]
 - 1 edge to [[_COMMUNITY_Skill UX Expert (UX)]]
-- 1 edge to [[_COMMUNITY_Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]]
 - 1 edge to [[_COMMUNITY_Skill Mindmap Architect (MM)]]
 - 1 edge to [[_COMMUNITY_Skill UI Expert (UI)]]
-- 1 edge to [[_COMMUNITY_iCloud Services_2]]
 - 1 edge to [[_COMMUNITY_Browser — Secure Browser Automation_2]]
 - 1 edge to [[_COMMUNITY_Skill Technical Illustrator (TI)]]
 - 1 edge to [[_COMMUNITY_Pre-Deployment Checklist]]
 - 1 edge to [[_COMMUNITY_Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT]]
 - 1 edge to [[_COMMUNITY_Skill Project Management (PM)]]
 - 1 edge to [[_COMMUNITY_AgentShroud Red Team Adversarial Tester]]
+- 1 edge to [[_COMMUNITY_iCloud Services_3]]
 - 1 edge to [[_COMMUNITY_Skill Audit Branch (AB) — Merge Regression Detection]]
-- 1 edge to [[_COMMUNITY_Skill Create PR with Pre-Flight Audit (CRPR)]]
-- 1 edge to [[_COMMUNITY_System Audit & Documentation]]
-- 1 edge to [[_COMMUNITY_AgentShroud Blue Team Security Auditor]]
 - 1 edge to [[_COMMUNITY_CICD Pipeline Advisor (README)]]
+- 1 edge to [[_COMMUNITY_Skill Create PR with Pre-Flight Audit (CRPR)]]
 - 1 edge to [[_COMMUNITY_Daedalus — Concept Illustrator]]
 - 1 edge to [[_COMMUNITY_Skill Data Validation (DATA-VAL)]]
 - 1 edge to [[_COMMUNITY_Skill Git Workflow Guardian (GIT-GUARD)]]
@@ -131,6 +129,8 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_GSDE&G Development Master Checklist]]
 - 1 edge to [[_COMMUNITY_MCP AWS Profile Configuration README]]
 - 1 edge to [[_COMMUNITY_Skill Pull Request (PR) Generator]]
+- 1 edge to [[_COMMUNITY_System Audit & Documentation]]
+- 1 edge to [[_COMMUNITY_AgentShroud Blue Team Security Auditor]]
 - 1 edge to [[_COMMUNITY_Skill Security Review (SEC)]]
 - 1 edge to [[_COMMUNITY_Test-Driven Development README]]
 - 1 edge to [[_COMMUNITY_Skill Test-Driven Development (TDD)]]

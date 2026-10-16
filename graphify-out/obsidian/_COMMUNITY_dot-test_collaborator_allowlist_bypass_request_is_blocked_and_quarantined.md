@@ -27,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 20 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
+- 20 edges to [[_COMMUNITY_TelegramAPIProxy]]
 - 4 edges to [[_COMMUNITY__wrap_response]]
 
 ## Top bridge nodes

@@ -12,9 +12,9 @@ members: 5
 ## Members
 - [[dot-agentsskillsi-mcpm-doctorREADME]] - document - .agents/skills/i-mcpm-doctor/README.md
 - [[MCP Doctor (MCPM-DOCTOR)]] - document - .agents/skills/i-mcpm-doctor/README.md
-- [[Purpose_22]] - document - .agents/skills/i-mcpm-doctor/README.md
+- [[Purpose_24]] - document - .agents/skills/i-mcpm-doctor/README.md
 - [[Related Skills_10]] - document - .agents/skills/i-mcpm-doctor/README.md
-- [[Usage_13]] - document - .agents/skills/i-mcpm-doctor/README.md
+- [[Usage_14]] - document - .agents/skills/i-mcpm-doctor/README.md
 
 ## Live Query (requires Dataview plugin)
 

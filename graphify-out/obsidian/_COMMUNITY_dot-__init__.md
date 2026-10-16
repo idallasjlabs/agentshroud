@@ -10,7 +10,7 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[dot-__init__()_41]] - code - gateway/approval_queue/queue.py
+- [[dot-__init__()_39]] - code - gateway/approval_queue/queue.py
 - [[dot-_load_pending_store()]] - code - gateway/approval_queue/queue.py
 - [[ApprovalQueueConfig]] - code - gateway/approval_queue/queue.py
 - [[Initialize approval queue          Args             config Approval queue conf]] - rationale - gateway/approval_queue/queue.py
@@ -28,5 +28,5 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_ApprovalQueueConfig]]
 
 ## Top bridge nodes
-- [[dot-__init__()_41]] - degree 5, connects to 1 community
+- [[dot-__init__()_39]] - degree 5, connects to 1 community
 - [[dot-_load_pending_store()]] - degree 3, connects to 1 community

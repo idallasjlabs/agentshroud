@@ -12,8 +12,8 @@ tags:
 # _FakeRBAC
 
 ## Connections
-- [[dot-__init__()_154]] - `method` [EXTRACTED]
-- [[dot-get_user_role()_2]] - `method` [EXTRACTED]
+- [[dot-__init__()_104]] - `method` [EXTRACTED]
+- [[dot-get_user_role()_3]] - `method` [EXTRACTED]
 - [[dot-test_build_record_defaults_to_normal_when_no_lockdown_state()]] - `calls` [EXTRACTED]
 - [[dot-test_build_record_does_not_crash_if_lockdown_missing()]] - `calls` [EXTRACTED]
 - [[dot-test_build_record_reports_real_lockdown_level()]] - `calls` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[dot-test_paused_user_reports_paused_true()]] - `calls` [EXTRACTED]
 - [[ContributorManager]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[Role_91]] - `uses` [INFERRED]
+- [[Role_22]] - `uses` [INFERRED]
 - [[test_soc_contributors.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_FakeRBAC

@@ -15,7 +15,7 @@ tags:
 - [[dot-test_baseline_three_when_openscap_not_run()]] - `calls` [EXTRACTED]
 - [[dot-test_five_when_openscap_clean()]] - `calls` [EXTRACTED]
 - [[dot-test_four_when_openscap_running_with_failures()]] - `calls` [EXTRACTED]
-- [[Any_70]] - `references` [EXTRACTED]
+- [[Any_65]] - `references` [EXTRACTED]
 - [[Score domain 4 Container Hardening (0-5).      Baseline of 3 because docker-com]] - `rationale_for` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]

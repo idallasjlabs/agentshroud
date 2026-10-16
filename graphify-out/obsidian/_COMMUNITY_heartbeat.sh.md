@@ -10,7 +10,7 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[_log()]] - code - docker/bots/hermes/heartbeat.sh
+- [[_log()_1]] - code - docker/bots/hermes/heartbeat.sh
 - [[heartbeat.sh]] - code - docker/bots/hermes/heartbeat.sh
 - [[heartbeat.sh script]] - code - docker/bots/hermes/heartbeat.sh
 

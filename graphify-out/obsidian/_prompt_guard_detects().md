@@ -12,7 +12,7 @@ tags:
 # _prompt_guard_detects()
 
 ## Connections
-- [[PromptGuard]] - `references` [EXTRACTED]
+- [[PromptGuard_1]] - `references` [EXTRACTED]
 - [[Return True if PromptGuard assigns a non-zero score or blocks.]] - `rationale_for` [EXTRACTED]
 - [[_any_detector_fires()]] - `calls` [EXTRACTED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]

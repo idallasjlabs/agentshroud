@@ -11,13 +11,13 @@ members: 8
 
 ## Members
 - [[Contents]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Coverage Requirements_4]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Purpose_193]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Related Notes_70]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Coverage Requirements]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Purpose_1]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Related Notes_1]] - document - docs/vault/03 - Configuration/pytest.ini.md
 - [[Test Execution]] - document - docs/vault/03 - Configuration/pytest.ini.md
 - [[Test Locations]] - document - docs/vault/03 - Configuration/pytest.ini.md
 - [[Why `tmppytest_cache`]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[pytest.ini_1]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[pytest.ini]] - document - docs/vault/03 - Configuration/pytest.ini.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,4 +30,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_All Dependencies]]
 
 ## Top bridge nodes
-- [[pytest.ini_1]] - degree 8, connects to 1 community
+- [[pytest.ini]] - degree 8, connects to 1 community

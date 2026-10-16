@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-test_operational_path_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test that internal file paths are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[dot-test_collaborator_name_filtering()]] - code - gateway/tests/test_outbound_filter.py
+- [[Known collaborator names should be redacted.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,4 +24,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
 
 ## Top bridge nodes
-- [[dot-test_operational_path_filtering()]] - degree 2, connects to 1 community
+- [[dot-test_collaborator_name_filtering()]] - degree 2, connects to 1 community

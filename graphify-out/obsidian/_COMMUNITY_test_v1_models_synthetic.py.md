@@ -12,7 +12,7 @@ members: 7
 ## Members
 - [[Synthetic v1modelsid shim for hermes v0.16.0 OAuth-token preflight incompatibility]] - rationale - gateway/tests/test_v1_models_synthetic.py
 - [[TestClient with a stubbed proxy IP that passes the network allowlist.]] - rationale - gateway/tests/test_v1_models_synthetic.py
-- [[client()_2]] - code - gateway/tests/test_v1_models_synthetic.py
+- [[client()_4]] - code - gateway/tests/test_v1_models_synthetic.py
 - [[test_v1_messages_still_goes_through_proxy()]] - code - gateway/tests/test_v1_models_synthetic.py
 - [[test_v1_models_get_returns_synthetic_200()]] - code - gateway/tests/test_v1_models_synthetic.py
 - [[test_v1_models_post_still_goes_through_proxy()]] - code - gateway/tests/test_v1_models_synthetic.py
@@ -29,4 +29,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_AsyncMock]]
 
 ## Top bridge nodes
-- [[client()_2]] - degree 3, connects to 1 community
+- [[client()_4]] - degree 3, connects to 1 community

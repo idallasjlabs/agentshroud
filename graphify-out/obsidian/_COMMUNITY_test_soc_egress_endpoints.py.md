@@ -1,13 +1,13 @@
 ---
 type: community
-cohesion: 0.08
-members: 26
+cohesion: 0.07
+members: 28
 ---
 
 # test_soc_egress_endpoints.py
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 26 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 28 nodes
 
 ## Members
 - [[Limit param caps the number of returned items.]] - rationale - gateway/tests/test_soc_egress_endpoints.py
@@ -24,8 +24,10 @@ members: 26
 - [[test_manage_scanners_history_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
 - [[test_manage_scanners_summary_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
 - [[test_manage_soc_correlation_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[test_manage_soc_events_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
 - [[test_manage_soc_export_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
 - [[test_manage_soc_export_invalid_format()]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[test_manage_soc_report_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
 - [[test_manage_soc_report_falls_back_to_contributor_logs()]] - code - gateway/tests/test_soc_egress_endpoints.py
 - [[test_outbound_quarantine_endpoints()]] - code - gateway/tests/test_soc_egress_endpoints.py
 - [[test_quarantine_list_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
@@ -46,7 +48,10 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_make_event]]
-- 1 edge to [[_COMMUNITY_test_e2e.py]]
+- 1 edge to [[_COMMUNITY_ForwardRequest]]
+- 1 edge to [[_COMMUNITY_test_soc_bots.py_2]]
 
 ## Top bridge nodes
 - [[test_soc_egress_endpoints.py]] - degree 25, connects to 2 communities
+- [[test_manage_soc_report_endpoint()]] - degree 3, connects to 2 communities
+- [[test_manage_soc_events_endpoint()]] - degree 2, connects to 1 community

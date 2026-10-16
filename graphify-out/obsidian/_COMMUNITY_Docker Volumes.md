@@ -1,26 +1,20 @@
 ---
 type: community
-cohesion: 0.10
-members: 20
+cohesion: 0.17
+members: 12
 ---
 
 # Docker Volumes
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 20 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
 - [[Backup]] - document - docs/vault/06 - Containers & Services/volumes.md
 - [[Cleanup Warning]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[Container Integration]] - document - docs/vault/05 - Dependencies/playwright.md
 - [[Docker Volumes]] - document - docs/vault/06 - Containers & Services/volumes.md
 - [[Inspecting Volumes]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[Playwright_1]] - document - docs/vault/05 - Dependencies/playwright.md
-- [[Purpose_82]] - document - docs/vault/05 - Dependencies/playwright.md
-- [[Related Notes_38]] - document - docs/vault/05 - Dependencies/playwright.md
-- [[Related Notes_39]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[Security Controls_2]] - document - docs/vault/05 - Dependencies/playwright.md
-- [[Volume]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Related Notes_66]] - document - docs/vault/06 - Containers & Services/volumes.md
 - [[Volume Details]] - document - docs/vault/06 - Containers & Services/volumes.md
 - [[Volume Inventory]] - document - docs/vault/06 - Containers & Services/volumes.md
 - [[agentshroud-browsers]] - document - docs/vault/06 - Containers & Services/volumes.md
@@ -28,8 +22,6 @@ members: 20
 - [[agentshroud-ssh]] - document - docs/vault/06 - Containers & Services/volumes.md
 - [[agentshroud-workspace]] - document - docs/vault/06 - Containers & Services/volumes.md
 - [[gateway-data]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[playwright]] - document - docs/vault/05 - Dependencies/playwright.md
-- [[volumes_1]] - document - docs/vault/06 - Containers & Services/volumes.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,10 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_main.py]]
-- 1 edge to [[_COMMUNITY_All Dependencies]]
 - 1 edge to [[_COMMUNITY_agentshroud-bot]]
 
 ## Top bridge nodes
-- [[volumes_1]] - degree 4, connects to 2 communities
-- [[playwright]] - degree 3, connects to 1 community
+- [[Docker Volumes]] - degree 7, connects to 1 community

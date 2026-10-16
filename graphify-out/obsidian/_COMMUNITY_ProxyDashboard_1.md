@@ -10,7 +10,7 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[check()_12]] - code - scripts/preflight-check.sh
+- [[check()_11]] - code - scripts/preflight-check.sh
 - [[fail()_5]] - code - scripts/tailscale-check.sh
 - [[infra-check.sh]] - code - scripts/infra-check.sh
 - [[infra-check.sh script]] - code - scripts/infra-check.sh
@@ -19,7 +19,7 @@ members: 10
 - [[preflight-check.sh script]] - code - scripts/preflight-check.sh
 - [[tailscale-check.sh]] - code - scripts/tailscale-check.sh
 - [[tailscale-check.sh script]] - code - scripts/tailscale-check.sh
-- [[warn()_4]] - code - scripts/tailscale-check.sh
+- [[warn()_5]] - code - scripts/tailscale-check.sh
 
 ## Live Query (requires Dataview plugin)
 

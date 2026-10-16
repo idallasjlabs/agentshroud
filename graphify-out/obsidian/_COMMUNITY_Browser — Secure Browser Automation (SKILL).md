@@ -43,7 +43,7 @@ members: 35
 - [[browserFetch()_3]] - code - .agents/skills/i-browser/browse.js
 - [[fs_4]] - code - .agents/skills/i-browser/browse.js
 - [[main() CLI entrypoint]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[path_18]] - code - .agents/skills/i-browser/browse.js
+- [[path_21]] - code - .agents/skills/i-browser/browse.js
 - [[{ chromium }_3]] - code - .agents/skills/i-browser/browse.js
 
 ## Live Query (requires Dataview plugin)

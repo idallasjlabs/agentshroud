@@ -12,7 +12,7 @@ tags:
 # _SendSpy
 
 ## Connections
-- [[dot-__call__()_5]] - `method` [EXTRACTED]
+- [[dot-__call__()_6]] - `method` [EXTRACTED]
 - [[dot-__init__()_82]] - `method` [EXTRACTED]
 - [[AlertTelegramRelay]] - `uses` [INFERRED]
 - [[EventBus]] - `uses` [INFERRED]

@@ -24,7 +24,7 @@ tags:
 - [[dot-test_prompt_extraction_detection_rate()]] - `calls` [EXTRACTED]
 - [[Combined detected if ANY defense layer triggers.]] - `rationale_for` [EXTRACTED]
 - [[HeuristicClassifier]] - `references` [EXTRACTED]
-- [[PromptGuard]] - `references` [EXTRACTED]
+- [[PromptGuard_1]] - `references` [EXTRACTED]
 - [[_heuristic_detects()]] - `calls` [EXTRACTED]
 - [[_normalizer_transforms()]] - `calls` [EXTRACTED]
 - [[_prompt_guard_detects()]] - `calls` [EXTRACTED]

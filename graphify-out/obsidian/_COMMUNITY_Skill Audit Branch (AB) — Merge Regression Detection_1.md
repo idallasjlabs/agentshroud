@@ -16,7 +16,7 @@ members: 15
 - [[Guardrails_11]] - document - docker/config/hermes/skills/i-ab/SKILL.md
 - [[Invocation Forms_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
 - [[Jira  PR Comment Format_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
-- [[Role_68]] - document - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Role_69]] - document - docker/config/hermes/skills/i-ab/SKILL.md
 - [[Skill Audit Branch (AB) — Merge Regression Detection_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
 - [[Step 1 — Verify the script exists_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md
 - [[Step 2 — Determine the target_1]] - document - docker/config/hermes/skills/i-ab/SKILL.md

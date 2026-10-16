@@ -13,11 +13,11 @@ members: 8
 - [[Default Ports]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
 - [[Environment Variables]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
 - [[Key Class `PortManager`]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
-- [[Purpose_1]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
-- [[Related Notes_3]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
+- [[Purpose_6]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
+- [[Related Notes_8]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
 - [[`resolve_ports(desired dictstr, int) → dictstr, int`]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
-- [[port_manager.py_2]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
 - [[port_manager.py_1]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
+- [[port_manager.py]] - document - docs/vault/02 - Modules/Other/port_manager.py.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,18 +1,15 @@
 ---
 type: community
-cohesion: 0.05
-members: 69
+cohesion: 0.06
+members: 64
 ---
 
 # soc.js
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 69 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 64 nodes
 
 ## Members
-- [[dot-to_dict()_12]] - code - gateway/security/soc_correlation.py
-- [[Any_75]] - code - gateway/security/soc_correlation.py
-- [[CorrelationSummary]] - code - gateway/security/soc_correlation.py
 - [[MATURITY_DESC]] - code - gateway/soc/static/soc.js
 - [[MATURITY_LEVELS]] - code - gateway/soc/static/soc.js
 - [[SCANNER_INFO]] - code - gateway/soc/static/soc.js
@@ -48,7 +45,6 @@ members: 69
 - [[_renderActivityLog()]] - code - gateway/soc/static/soc.js
 - [[_renderAgentCveTable()]] - code - gateway/soc/static/soc.js
 - [[_renderComplianceBadges()]] - code - gateway/soc/static/soc.js
-- [[_renderCorrelation()]] - code - gateway/soc/static/soc.js
 - [[_renderEgressHistory()]] - code - gateway/soc/static/soc.js
 - [[_renderEgressRules()]] - code - gateway/soc/static/soc.js
 - [[_renderGroupMembers()]] - code - gateway/soc/static/soc.js
@@ -75,10 +71,9 @@ members: 69
 - [[_tabLoaders]] - code - gateway/soc/static/soc.js
 - [[_toast()]] - code - gateway/soc/static/soc.js
 - [[_token]] - code - gateway/soc/static/soc.js
-- [[_ts()]] - code - gateway/soc/static/soc.js
+- [[_ts()_1]] - code - gateway/soc/static/soc.js
 - [[_uptime()]] - code - gateway/soc/static/soc.js
 - [[soc.js]] - code - gateway/soc/static/soc.js
-- [[soc_correlation.py]] - code - gateway/security/soc_correlation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -88,15 +83,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
-- 3 edges to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_ServiceManager]]
-- 1 edge to [[_COMMUNITY_test_soc_bots.py]]
+- 3 edges to [[_COMMUNITY_test_soc_realtime_coverage.py_1]]
+- 2 edges to [[_COMMUNITY_soc.js_1]]
+- 2 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_test_soc_bots.py_1]]
 
 ## Top bridge nodes
-- [[CorrelationSummary]] - degree 5, connects to 2 communities
-- [[soc.js]] - degree 65, connects to 1 community
+- [[soc.js]] - degree 65, connects to 2 communities
 - [[_loadEgress()]] - degree 7, connects to 1 community
+- [[_loadSecurity()]] - degree 7, connects to 1 community
 - [[_connectWS()]] - degree 6, connects to 1 community
 - [[_handleWSEvent()]] - degree 6, connects to 1 community

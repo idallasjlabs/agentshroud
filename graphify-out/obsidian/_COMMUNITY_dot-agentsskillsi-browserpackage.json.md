@@ -12,7 +12,7 @@ members: 10
 ## Members
 - [[dot-agentsskillsi-browserpackage.json]] - code - .agents/skills/i-browser/package.json
 - [[author_1]] - code - .agents/skills/i-browser/package.json
-- [[description_11]] - code - .agents/skills/i-browser/package.json
+- [[description_13]] - code - .agents/skills/i-browser/package.json
 - [[keywords_1]] - code - .agents/skills/i-browser/package.json
 - [[license_5]] - code - .agents/skills/i-browser/package.json
 - [[main]] - code - .agents/skills/i-browser/package.json

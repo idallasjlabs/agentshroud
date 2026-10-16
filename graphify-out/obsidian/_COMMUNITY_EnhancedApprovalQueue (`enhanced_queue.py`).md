@@ -21,7 +21,7 @@ members: 15
 - [[Manual Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
 - [[Normal Stop]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
 - [[OOM Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Related Notes_47]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Related Notes_54]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
 - [[Shutdown & Recovery_1]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
 - [[Shutdown Sequence]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
 - [[State After Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
@@ -35,7 +35,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_main.py]]
-- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown]]
+- 1 edge to [[_COMMUNITY_Audit Ledger (SHA-256 hash only)]]
 
 ## Top bridge nodes
 - [[Shutdown & Recovery_1]] - degree 7, connects to 1 community

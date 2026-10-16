@@ -12,9 +12,9 @@ tags:
 # _FakeStreamResponse
 
 ## Connections
-- [[dot-__aenter__()_1]] - `method` [EXTRACTED]
-- [[dot-__aexit__()_1]] - `method` [EXTRACTED]
-- [[dot-__init__()_1]] - `method` [EXTRACTED]
+- [[dot-__aenter__()_2]] - `method` [EXTRACTED]
+- [[dot-__aexit__()_2]] - `method` [EXTRACTED]
+- [[dot-__init__()_4]] - `method` [EXTRACTED]
 - [[dot-aiter_bytes()_1]] - `method` [EXTRACTED]
 - [[dot-aread()_1]] - `method` [EXTRACTED]
 - [[test_fieldflare_route_strips_unsupported_fields_streaming]] - `calls` [EXTRACTED]

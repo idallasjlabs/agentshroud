@@ -10,10 +10,10 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_58]] - document - docker/config/openclaw/skills/i-sec/README.md
+- [[Purpose_60]] - document - docker/config/openclaw/skills/i-sec/README.md
 - [[Related Skills_46]] - document - docker/config/openclaw/skills/i-sec/README.md
 - [[Security Review (SEC)_1]] - document - docker/config/openclaw/skills/i-sec/README.md
-- [[Usage_49]] - document - docker/config/openclaw/skills/i-sec/README.md
+- [[Usage_50]] - document - docker/config/openclaw/skills/i-sec/README.md
 - [[openclawskillsi-secREADME]] - document - docker/config/openclaw/skills/i-sec/README.md
 
 ## Live Query (requires Dataview plugin)

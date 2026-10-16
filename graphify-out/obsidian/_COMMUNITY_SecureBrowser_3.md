@@ -10,7 +10,7 @@ members: 44
 **Members:** 44 nodes
 
 ## Members
-- [[dot-__init__()_56]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[dot-__init__()_50]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[dot-_classify_risk()_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[dot-_domain_matches()_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[dot-_init_browser()_3]] - code - skills/custom/securebrowser/scripts/browse.py
@@ -21,7 +21,7 @@ members: 44
 - [[dot-_take_screenshot()_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[dot-_validate_url()_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[dot-click()_3]] - code - skills/custom/securebrowser/scripts/browse.py
-- [[dot-close()_8]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[dot-close()_5]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[dot-detect_captcha()_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[dot-extract()_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[dot-fill_field()_3]] - code - skills/custom/securebrowser/scripts/browse.py
@@ -48,7 +48,7 @@ members: 44
 - [[Secure browser automation with enterprise controls      Security guarantees_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
 - [[SecureBrowser_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[Security configuration for browser automation_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
-- [[SecurityConfig_4]] - code - skills/custom/securebrowser/scripts/browse.py
+- [[SecurityConfig_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[SecurityError_3]] - code - skills/custom/securebrowser/scripts/browse.py
 - [[Take screenshot and save to audit directory_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
 - [[Validate URL against allowlistblocklist          Security This is the primary_3]] - rationale - skills/custom/securebrowser/scripts/browse.py
@@ -63,7 +63,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Action]]
+- 2 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
 - 1 edge to [[_COMMUNITY_ConsentFramework]]
 
 ## Top bridge nodes

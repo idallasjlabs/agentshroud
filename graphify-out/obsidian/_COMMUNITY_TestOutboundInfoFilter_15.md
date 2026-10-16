@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-test_custom_patterns()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test adding custom filter patterns.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[dot-test_comprehensive_attack_scenarios()]] - code - gateway/tests/test_outbound_filter.py
+- [[Test against realistic attack scenarios.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,8 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AuditChain]]
 - 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
 
 ## Top bridge nodes
-- [[dot-test_custom_patterns()]] - degree 3, connects to 2 communities
+- [[dot-test_comprehensive_attack_scenarios()]] - degree 2, connects to 1 community

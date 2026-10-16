@@ -11,7 +11,7 @@ members: 2
 
 ## Members
 - [[dot-agentsskillsi-agileSKILL]] - document - .agents/skills/i-agile/SKILL.md
-- [[Skill agile_1]] - document - .agents/skills/i-agile/SKILL.md
+- [[Skill agile]] - document - .agents/skills/i-agile/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

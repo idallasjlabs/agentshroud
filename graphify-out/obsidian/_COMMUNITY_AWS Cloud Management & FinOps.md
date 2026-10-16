@@ -11,9 +11,9 @@ members: 5
 
 ## Members
 - [[AWS Cloud Management & FinOps]] - document - docker/config/hermes/skills/i-aws/README.md
-- [[Purpose_25]] - document - docker/config/hermes/skills/i-aws/README.md
+- [[Purpose_27]] - document - docker/config/hermes/skills/i-aws/README.md
 - [[Related Skills_13]] - document - docker/config/hermes/skills/i-aws/README.md
-- [[Usage_16]] - document - docker/config/hermes/skills/i-aws/README.md
+- [[Usage_17]] - document - docker/config/hermes/skills/i-aws/README.md
 - [[hermesskillsi-awsREADME]] - document - docker/config/hermes/skills/i-aws/README.md
 
 ## Live Query (requires Dataview plugin)

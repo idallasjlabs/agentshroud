@@ -1,16 +1,18 @@
 ---
 type: community
 cohesion: 0.01
-members: 214
+members: 227
 ---
 
 # UserSessionManager
 
 **Cohesion:** 0.01 - loosely connected
-**Members:** 214 nodes
+**Members:** 227 nodes
 
 ## Members
-- [[dot-__init__()_177]] - code - gateway/security/session_manager.py
+- [[dot-__init__()_31]] - code - gateway/proxy/webhook_receiver.py
+- [[dot-__init__()_32]] - code - gateway/security/session_manager.py
+- [[dot-_can_create_directory()]] - code - gateway/proxy/webhook_receiver.py
 - [[dot-_load_sessions()]] - code - gateway/security/session_manager.py
 - [[dot-_save_sessions()]] - code - gateway/security/session_manager.py
 - [[dot-_session_key()]] - code - gateway/security/session_manager.py
@@ -20,7 +22,7 @@ members: 214
 - [[dot-can_user_access_group()]] - code - gateway/security/session_manager.py
 - [[dot-can_user_access_session()]] - code - gateway/security/session_manager.py
 - [[dot-cleanup_old_sessions()_1]] - code - gateway/security/session_manager.py
-- [[dot-from_dict()_8]] - code - gateway/security/session_manager.py
+- [[dot-from_dict()_2]] - code - gateway/security/session_manager.py
 - [[dot-get_merged_context()]] - code - gateway/security/session_manager.py
 - [[dot-get_or_create_group_session()]] - code - gateway/security/session_manager.py
 - [[dot-get_or_create_session()]] - code - gateway/security/session_manager.py
@@ -36,8 +38,13 @@ members: 214
 - [[dot-temp_workspace()_1]] - code - gateway/tests/test_session_isolation.py
 - [[dot-temp_workspace()_2]] - code - gateway/tests/test_session_isolation.py
 - [[dot-temp_workspace()_3]] - code - gateway/tests/test_session_isolation.py
+- [[dot-test_active_group_appears_first()]] - code - gateway/tests/test_shared_memory.py
 - [[dot-test_add_message()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_append_to_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_append_to_user_memory()]] - code - gateway/tests/test_shared_memory.py
 - [[dot-test_atomic_save_never_leaves_partial_registry_on_crash()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_clean_text_not_flagged()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_collaborator_gets_filtered_group_memory()]] - code - gateway/tests/test_shared_memory.py
 - [[dot-test_complete_user_isolation()]] - code - gateway/tests/test_session_isolation.py
 - [[dot-test_concurrent_saves_do_not_lose_entries()]] - code - gateway/tests/test_session_manager.py
 - [[dot-test_conversation_histories_are_bot_scoped()]] - code - gateway/tests/test_session_manager.py
@@ -45,13 +52,16 @@ members: 214
 - [[dot-test_conversation_history_limit()]] - code - gateway/tests/test_session_manager.py
 - [[dot-test_default_bot_id_is_openclaw()]] - code - gateway/tests/test_session_manager.py
 - [[dot-test_default_trust_level_is_untrusted()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_detects_api_key_pattern()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_detects_bearer_token()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_detects_private_section_header()]] - code - gateway/tests/test_shared_memory.py
 - [[dot-test_different_bots_get_different_memory_files()]] - code - gateway/tests/test_session_manager.py
 - [[dot-test_different_bots_get_different_workspace_dirs()]] - code - gateway/tests/test_session_manager.py
-- [[dot-test_empty_tool_calls_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_empty_tool_results_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
 - [[dot-test_empty_user_id_rejected()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_get_group_memory_empty_initially()]] - code - gateway/tests/test_shared_memory.py
 - [[dot-test_get_or_create_returns_same_session()]] - code - gateway/tests/test_session_manager.py
 - [[dot-test_get_session_context_contains_user_id()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_get_user_memory_returns_string()]] - code - gateway/tests/test_shared_memory.py
 - [[dot-test_invalid_bot_id_rejected()]] - code - gateway/tests/test_session_manager.py
 - [[dot-test_lazy_migration_copies_legacy_memory()]] - code - gateway/tests/test_session_manager.py
 - [[dot-test_legacy_session_promoted_on_load()]] - code - gateway/tests/test_session_manager.py
@@ -69,21 +79,17 @@ members: 214
 - [[dot-test_middleware_session_context_injection()]] - code - gateway/tests/test_session_isolation.py
 - [[dot-test_middleware_user_identification()]] - code - gateway/tests/test_session_isolation.py
 - [[dot-test_multi_turn_block_reason_hides_score()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-test_multiple_appends_accumulate()]] - code - gateway/tests/test_shared_memory.py
 - [[dot-test_no_temp_files_left_behind()]] - code - gateway/tests/test_session_manager.py
 - [[dot-test_non_owner_cannot_view_other_sessions()]] - code - gateway/tests/test_session_manager.py
-- [[dot-test_non_owner_cross_path_plain_message_still_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
 - [[dot-test_non_owner_empty_when_no_session()]] - code - gateway/tests/test_session_manager.py
 - [[dot-test_owner_access_control()]] - code - gateway/tests/test_session_isolation.py
 - [[dot-test_owner_admin_access()]] - code - gateway/tests/test_session_isolation.py
 - [[dot-test_owner_can_access_any_session()]] - code - gateway/tests/test_session_manager.py
 - [[dot-test_owner_can_view_all_sessions()]] - code - gateway/tests/test_session_manager.py
-- [[dot-test_owner_message_mentioning_other_users_file_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_owner_plain_message_with_path_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_path_traversal_rejected()_1]] - code - gateway/tests/test_session_manager.py
-- [[dot-test_plain_chat_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_plain_message_mentioning_config_yaml_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_plain_message_mentioning_etc_passwd_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_plain_message_mentioning_memory_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_owner_gets_unfiltered_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_owner_sees_all_groups()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_path_traversal_rejected()]] - code - gateway/tests/test_session_manager.py
 - [[dot-test_prompt_addition_mentions_isolation()]] - code - gateway/tests/test_session_manager.py
 - [[dot-test_reanchor_contains_security_notice()]] - code - gateway/tests/test_session_manager.py
 - [[dot-test_reanchor_prepends_preamble()]] - code - gateway/tests/test_session_manager.py
@@ -102,28 +108,35 @@ members: 214
 - [[dot-test_session_to_dict_and_back()]] - code - gateway/tests/test_session_manager.py
 - [[dot-test_sessions_are_isolated()]] - code - gateway/tests/test_session_manager.py
 - [[dot-test_special_chars_rejected()]] - code - gateway/tests/test_session_manager.py
-- [[dot-test_tool_call_with_unauthorized_path_still_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_tool_calls_key_detected()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_tool_results_key_detected()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_strip_private_content_redacts_api_key()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_strip_private_section()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_topic_scoped_excludes_non_matching_project_scoped_group()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_topic_scoped_includes_local_only_group()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_topic_scoped_returns_matching_group()]] - code - gateway/tests/test_shared_memory.py
 - [[dot-test_trust_level_per_user()]] - code - gateway/tests/test_session_isolation.py
-- [[dot-test_type_field_message_not_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_type_field_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-test_unknown_user_sees_only_private_memory()]] - code - gateway/tests/test_shared_memory.py
 - [[dot-test_update_trust_level()]] - code - gateway/tests/test_session_manager.py
 - [[dot-test_user_can_access_own_session()]] - code - gateway/tests/test_session_manager.py
 - [[dot-test_user_cannot_access_other_session()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_user_does_not_see_other_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_user_memory_isolated_between_users()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_user_sees_own_private_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[dot-test_user_sees_their_group_memory()]] - code - gateway/tests/test_shared_memory.py
 - [[dot-test_workspace_directory_created()]] - code - gateway/tests/test_session_manager.py
 - [[dot-test_workspace_paths_under_bot_namespace()]] - code - gateway/tests/test_session_manager.py
-- [[dot-to_dict()_11]] - code - gateway/security/session_manager.py
+- [[dot-to_dict()_3]] - code - gateway/security/session_manager.py
 - [[dot-update_user_trust_level()]] - code - gateway/security/session_manager.py
 - [[A corruptpartial registry file must not crash construction.]] - rationale - gateway/tests/test_session_manager.py
 - [[A single message in a conversation.]] - rationale - gateway/security/session_manager.py
 - [[A successful save leaves only the final registry file, no .tmp.]] - rationale - gateway/tests/test_session_manager.py
 - [[Add a message to the user's conversation history for a specific bot.]] - rationale - gateway/security/session_manager.py
 - [[An empty registry file must not crash construction.]] - rationale - gateway/tests/test_session_manager.py
-- [[Any_73]] - code - gateway/security/session_manager.py
+- [[Any_4]] - code - gateway/proxy/webhook_receiver.py
+- [[Any_5]] - code - gateway/security/session_manager.py
 - [[Atomically persist current sessions to the metadata file.          Writes are se]] - rationale - gateway/security/session_manager.py
 - [[Blocked multi-turn sessions should not disclose scoring details.]] - rationale - gateway/tests/test_session_isolation.py
 - [[Check if a user can access another user's session.]] - rationale - gateway/security/session_manager.py
+- [[Check if we can create the given directory path.]] - rationale - gateway/proxy/webhook_receiver.py
 - [[Clean up sessions that haven't been active for the specified number of days.]] - rationale - gateway/security/session_manager.py
 - [[Concurrent add_conversation_message calls (each of which saves) must         not]] - rationale - gateway/tests/test_session_manager.py
 - [[ConversationMessage]] - code - gateway/security/session_manager.py
@@ -137,7 +150,7 @@ members: 214
 - [[Create session from dictionary.]] - rationale - gateway/security/session_manager.py
 - [[End-to-end integration tests for session isolation.]] - rationale - gateway/tests/test_session_isolation.py
 - [[Existing plain user_id keys (no separator) are promoted to useropenclaw.]] - rationale - gateway/tests/test_session_manager.py
-- [[FileSandbox must NOT block plain chat messages that mention file-like words.]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
+- [[FastAPI]] - code - gateway/ingest_api/lifespan.py
 - [[Get existing session or create a new one for the (user_id, bot_id) pair.]] - rationale - gateway/security/session_manager.py
 - [[Get or create a shared workspace + MEMORY.md for a group.]] - rationale - gateway/security/session_manager.py
 - [[Get session context for injection into agent request.]] - rationale - gateway/security/session_manager.py
@@ -152,10 +165,9 @@ members: 214
 - [[List session keys that the requesting user is allowed to see.          Returns t]] - rationale - gateway/security/session_manager.py
 - [[Load existing sessions from metadata file.          Handles both the new ``{use]] - rationale - gateway/security/session_manager.py
 - [[Manages per-user, per-bot session isolation.      Sessions are keyed by (user_id]] - rationale - gateway/security/session_manager.py
-- [[MiddlewareManager with real session_manager, all other deps mocked.      Uses __]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
 - [[Original system prompt content is always preserved in the output.]] - rationale - gateway/tests/test_session_manager.py
-- [[Owner (8096968754) must not be blocked by content-pattern scanning.     They sho]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
-- [[Path_47]] - code - gateway/security/session_manager.py
+- [[Path_1]] - code - gateway/proxy/webhook_receiver.py
+- [[Path_2]] - code - gateway/security/session_manager.py
 - [[Preamble contains a security notice keyword.]] - rationale - gateway/tests/test_session_manager.py
 - [[Re-anchoring prepends a security notice to the system prompt.]] - rationale - gateway/tests/test_session_manager.py
 - [[Registry writes must be atomic (os.replace) and serialized (lock).      The sess]] - rationale - gateway/tests/test_session_manager.py
@@ -165,6 +177,7 @@ members: 214
 - [[Return the cache key string for a (user_id, bot_id) pair.]] - rationale - gateway/security/session_manager.py
 - [[Return the system prompt with a re-anchoring preamble prepended.          Called]] - rationale - gateway/security/session_manager.py
 - [[Return user MEMORY.md + all accessible group MEMORY.md contents for prompt injec]] - rationale - gateway/security/session_manager.py
+- [[Test File Sandbox Message Gate Suite]] - code - gateway/tests/test_file_sandbox_message_gate.py
 - [[Test WebhookReceiver integration with session isolation.]] - rationale - gateway/tests/test_session_isolation.py
 - [[Test complete isolation between two users.]] - rationale - gateway/tests/test_session_isolation.py
 - [[Test middleware enforcement of session boundaries.]] - rationale - gateway/tests/test_session_isolation.py
@@ -186,44 +199,44 @@ members: 214
 - [[Test that user sessions are created properly.]] - rationale - gateway/tests/test_session_isolation.py
 - [[Test that users can access their own workspace.]] - rationale - gateway/tests/test_session_isolation.py
 - [[Test the UserSessionManager for per-user isolation.]] - rationale - gateway/tests/test_session_isolation.py
-- [[TestAccessControl_1]] - code - gateway/tests/test_session_manager.py
+- [[TestAccessControl]] - code - gateway/tests/test_session_manager.py
 - [[TestAtomicRegistryWrites]] - code - gateway/tests/test_session_manager.py
 - [[TestConversationHistory]] - code - gateway/tests/test_session_manager.py
-- [[TestFileSandboxSkippedForPlainMessages]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[TestGroupMemoryReadWrite]] - code - gateway/tests/test_shared_memory.py
 - [[TestInputValidation]] - code - gateway/tests/test_session_manager.py
-- [[TestIsToolCallRequest]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[TestMergedMemory]] - code - gateway/tests/test_shared_memory.py
 - [[TestMiddlewareSessionEnforcement]] - code - gateway/tests/test_session_isolation.py
 - [[TestMultiBotIsolation]] - code - gateway/tests/test_session_manager.py
-- [[TestOwnerBypassContentPatternChecks]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[TestSerialization_1]] - code - gateway/tests/test_session_manager.py
+- [[TestPrivateContentDetection]] - code - gateway/tests/test_shared_memory.py
+- [[TestSerialization]] - code - gateway/tests/test_session_manager.py
 - [[TestSessionContext]] - code - gateway/tests/test_session_manager.py
 - [[TestSessionIsolation]] - code - gateway/tests/test_session_manager.py
 - [[TestSessionIsolationEndToEnd]] - code - gateway/tests/test_session_isolation.py
 - [[TestSystemPromptReanchoring]] - code - gateway/tests/test_session_manager.py
+- [[TestTopicScopedMemory]] - code - gateway/tests/test_shared_memory.py
 - [[TestTrustLevel]] - code - gateway/tests/test_session_manager.py
+- [[TestUserPrivateMemory]] - code - gateway/tests/test_shared_memory.py
 - [[TestUserSessionManager]] - code - gateway/tests/test_session_isolation.py
 - [[TestWebhookReceiverIntegration]] - code - gateway/tests/test_session_isolation.py
-- [[Unit tests for the _is_tool_call_request helper (TDD RED phase).]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
 - [[Update the trust level for a user within a bot's namespace.]] - rationale - gateway/security/session_manager.py
 - [[UserSession]] - code - gateway/security/session_manager.py
 - [[UserSessionManager]] - code - gateway/security/session_manager.py
 - [[Validate and sanitize bot_id to prevent path traversal.          Allows alphanum]] - rationale - gateway/security/session_manager.py
 - [[Validate and sanitize user_id to prevent path traversal.          Only allows al]] - rationale - gateway/security/session_manager.py
 - [[Verify that different bots get independent workspaces per user.]] - rationale - gateway/tests/test_session_manager.py
-- [[_plain_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
 - [[_save_sessions must go through os.replace(tmp, final), never a         partial i]] - rationale - gateway/tests/test_session_manager.py
-- [[_tool_call_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[_tool_result_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[manager()_4]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[mgr()_1]] - code - gateway/tests/test_session_manager.py
+- [[mgr()]] - code - gateway/tests/test_session_manager.py
 - [[openclaw and hermes sessions for the same user must not share a directory.]] - rationale - gateway/tests/test_session_manager.py
-- [[session_manager()_4]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[session_manager()_1]] - code - gateway/tests/test_shared_memory_write_acl.py
 - [[session_manager.py]] - code - gateway/security/session_manager.py
 - [[session_manager.py (UserSessionManager)]] - code - gateway/security/session_manager.py
-- [[temp_workspace()_1]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[test_file_sandbox_message_gate.py]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[session_mgr()]] - code - gateway/tests/test_shared_memory.py
+- [[smm()_1]] - code - gateway/tests/test_shared_memory.py
 - [[test_session_isolation.py]] - code - gateway/tests/test_session_isolation.py
 - [[test_session_manager.py]] - code - gateway/tests/test_session_manager.py
+- [[test_shared_memory.py]] - code - gateway/tests/test_shared_memory.py
+- [[tmp_workspace()_1]] - code - gateway/tests/test_shared_memory.py
+- [[webhook_receiver.py]] - code - gateway/proxy/webhook_receiver.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -233,23 +246,27 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 33 edges to [[_COMMUNITY_MiddlewareManager]]
-- 27 edges to [[_COMMUNITY__req]]
-- 20 edges to [[_COMMUNITY_RBACConfig_1]]
-- 12 edges to [[_COMMUNITY_WebhookReceiver]]
-- 11 edges to [[_COMMUNITY_RBACConfig_2]]
-- 5 edges to [[_COMMUNITY_RBACConfig]]
+- 54 edges to [[_COMMUNITY_RBACConfig]]
+- 26 edges to [[_COMMUNITY__req]]
+- 24 edges to [[_COMMUNITY_MiddlewareManager]]
+- 19 edges to [[_COMMUNITY_WebhookReceiver]]
+- 5 edges to [[_COMMUNITY_AgentRegistry]]
+- 5 edges to [[_COMMUNITY_UserSessionManager_1]]
+- 3 edges to [[_COMMUNITY_DataLedger]]
+- 3 edges to [[_COMMUNITY_AgentTarget]]
 - 3 edges to [[_COMMUNITY_AsyncMock]]
-- 2 edges to [[_COMMUNITY_AgentTarget]]
-- 2 edges to [[_COMMUNITY_ForwardRequest]]
 - 1 edge to [[_COMMUNITY_AlertDispatcher]]
-- 1 edge to [[_COMMUNITY_forward.py]]
-- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 1 edge to [[_COMMUNITY_PIIConfig]]
+- 1 edge to [[_COMMUNITY_Action]]
+- 1 edge to [[_COMMUNITY_AlertTelegramRelay]]
+- 1 edge to [[_COMMUNITY_make_event]]
+- 1 edge to [[_COMMUNITY__get_gmail_app_password]]
+- 1 edge to [[_COMMUNITY_test_forward_stream.py]]
 - 1 edge to [[_COMMUNITY_Path_3]]
 
 ## Top bridge nodes
-- [[UserSessionManager]] - degree 137, connects to 10 communities
+- [[UserSessionManager]] - degree 137, connects to 9 communities
+- [[FastAPI]] - degree 11, connects to 9 communities
 - [[TestWebhookReceiverIntegration]] - degree 13, connects to 4 communities
 - [[TestUserSessionManager]] - degree 17, connects to 3 communities
 - [[TestMiddlewareSessionEnforcement]] - degree 16, connects to 3 communities
-- [[TestSessionIsolationEndToEnd]] - degree 10, connects to 3 communities

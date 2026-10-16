@@ -32,7 +32,7 @@ members: 24
 - [[Step 3 Security Hardening (Day 2)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
 - [[Step 4 Integration Testing (Day 2)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
 - [[Step 5 Documentation (Day 3)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Success Criteria_1]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Success Criteria_2]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
 - [[Timeline]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
 
 ## Live Query (requires Dataview plugin)

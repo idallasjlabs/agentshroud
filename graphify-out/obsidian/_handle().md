@@ -12,7 +12,7 @@ tags:
 # _handle()
 
 ## Connections
-- [[StreamReader]] - `references` [EXTRACTED]
+- [[StreamReader_1]] - `references` [EXTRACTED]
 - [[StreamWriter]] - `references` [EXTRACTED]
 - [[_pipe()]] - `calls` [EXTRACTED]
 - [[_read_request_headers()]] - `calls` [EXTRACTED]

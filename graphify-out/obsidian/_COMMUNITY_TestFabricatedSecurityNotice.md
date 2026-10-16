@@ -11,10 +11,10 @@ members: 28
 
 ## Members
 - [[dot-_has_fabricated_match()]] - code - gateway/tests/test_outbound_filter.py
-- [[dot-setup_method()_28]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-setup_method()_21]] - code - gateway/tests/test_outbound_filter.py
 - [[dot-test_blocked_unauthorized_command()]] - code - gateway/tests/test_outbound_filter.py
 - [[dot-test_blocking_suspicious_code_execution()]] - code - gateway/tests/test_outbound_filter.py
-- [[dot-test_case_insensitive()_3]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_case_insensitive()_2]] - code - gateway/tests/test_outbound_filter.py
 - [[dot-test_category_is_operational()]] - code - gateway/tests/test_outbound_filter.py
 - [[dot-test_continues_blocking()]] - code - gateway/tests/test_outbound_filter.py
 - [[dot-test_exact_past_tense()]] - code - gateway/tests/test_outbound_filter.py
@@ -47,9 +47,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AuditChain]]
 - 2 edges to [[_COMMUNITY_TestFabricatedSecurityNotice_1]]
+- 2 edges to [[_COMMUNITY_AuditChain]]
 
 ## Top bridge nodes
 - [[TestFabricatedSecurityNotice]] - degree 19, connects to 2 communities
-- [[dot-setup_method()_28]] - degree 2, connects to 1 community
+- [[dot-setup_method()_21]] - degree 2, connects to 1 community

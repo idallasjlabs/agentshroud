@@ -27,7 +27,7 @@ members: 21
 - [[TestVersionRoutes]] - code - gateway/tests/test_version_routes.py
 - [[Use a temporary DB for all tests.]] - rationale - gateway/tests/test_version_routes.py
 - [[app()]] - code - gateway/tests/test_version_routes.py
-- [[client()_8]] - code - gateway/tests/test_version_routes.py
+- [[client()_18]] - code - gateway/tests/test_version_routes.py
 - [[test_version_routes.py]] - code - gateway/tests/test_version_routes.py
 - [[tmp_version_db()]] - code - gateway/tests/test_version_routes.py
 - [[version_routes APIRouter — apiv1versions]] - code - gateway/ingest_api/version_routes.py

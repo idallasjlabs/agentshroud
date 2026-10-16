@@ -13,7 +13,7 @@ members: 15
 - [[dot-agentsskillsi-crprSKILL]] - document - .agents/skills/i-crpr/SKILL.md
 - [[Guardrails_10]] - document - .agents/skills/i-crpr/SKILL.md
 - [[Invocation_6]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Role_67]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Role_68]] - document - .agents/skills/i-crpr/SKILL.md
 - [[Skill Create PR with Pre-Flight Audit (CRPR)]] - document - .agents/skills/i-crpr/SKILL.md
 - [[Step 0 — Pre-flight checks]] - document - .agents/skills/i-crpr/SKILL.md
 - [[Step 1 — Check for an in-progress merge]] - document - .agents/skills/i-crpr/SKILL.md

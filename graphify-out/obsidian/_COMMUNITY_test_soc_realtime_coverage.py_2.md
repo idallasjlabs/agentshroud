@@ -11,8 +11,8 @@ members: 3
 
 ## Members
 - [[dot-__init__()_58]] - code - gateway/soc/auth.py
-- [[RBACManager_1]] - code - gateway/soc/auth.py
-- [[Role_19]] - code - gateway/soc/auth.py
+- [[RBACManager]] - code - gateway/soc/auth.py
+- [[Role_18]] - code - gateway/soc/auth.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +22,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_soc_realtime_coverage.py]]
 - 1 edge to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_Action]]
 
 ## Top bridge nodes
 - [[dot-__init__()_58]] - degree 3, connects to 1 community
-- [[RBACManager_1]] - degree 2, connects to 1 community
+- [[RBACManager]] - degree 2, connects to 1 community

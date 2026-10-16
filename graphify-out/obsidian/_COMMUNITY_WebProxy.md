@@ -1,38 +1,43 @@
 ---
 type: community
-cohesion: 0.05
-members: 59
+cohesion: 0.04
+members: 65
 ---
 
 # WebProxy
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 59 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 65 nodes
 
 ## Members
-- [[dot-__init__()_27]] - code - gateway/tests/test_http_proxy.py
-- [[dot-close()_3]] - code - gateway/tests/test_http_proxy.py
-- [[dot-close()_4]] - code - gateway/tests/test_http_proxy.py
-- [[dot-drain()]] - code - gateway/tests/test_http_proxy.py
+- [[dot-__init__()_180]] - code - gateway/tests/test_http_proxy.py
+- [[dot-close()_15]] - code - gateway/tests/test_http_proxy.py
+- [[dot-close()_16]] - code - gateway/tests/test_http_proxy.py
 - [[dot-drain()_1]] - code - gateway/tests/test_http_proxy.py
-- [[dot-get_extra_info()]] - code - gateway/tests/test_http_proxy.py
-- [[dot-write()]] - code - gateway/tests/test_http_proxy.py
+- [[dot-drain()_2]] - code - gateway/tests/test_http_proxy.py
+- [[dot-get_extra_info()_1]] - code - gateway/tests/test_http_proxy.py
+- [[dot-setUp()_2]] - code - gateway/tests/test_web_proxy_security.py
 - [[dot-write()_1]] - code - gateway/tests/test_http_proxy.py
+- [[dot-write()_2]] - code - gateway/tests/test_http_proxy.py
 - [[CONNECT to a private IP is blocked by SSRF protection.]] - rationale - gateway/tests/test_http_proxy.py
+- [[CONNECT tunnel must NOT allow api.telegram.org — forces traffic through reverse]] - rationale - gateway/tests/test_http_proxy.py
 - [[Create a StreamReader loaded with data and a mock StreamWriter.]] - rationale - gateway/tests/test_http_proxy.py
+- [[HTTP web traffic proxy for OpenClaw. Intercepts all outbound web requests, runs…]] - rationale - gateway/proxy/web_proxy.py
 - [[HTTPConnectProxy ships with a populated default allowlist.]] - rationale - gateway/tests/test_http_proxy.py
 - [[Minimal asyncio.StreamWriter mock that captures written bytes.]] - rationale - gateway/tests/test_http_proxy.py
 - [[None peer falls back to generic label without error.]] - rationale - gateway/tests/test_http_proxy.py
 - [[Second call for same IP uses cache; rDNS is only called once, fDNS never.]] - rationale - gateway/tests/test_http_proxy.py
+- [[Set up test fixtures._5]] - rationale - gateway/tests/test_web_proxy_security.py
 - [[Startup registry hit returns correct bot_id immediately.]] - rationale - gateway/tests/test_http_proxy.py
 - [[System bypass domains should be logged to the SOC decision history.]] - rationale - gateway/tests/test_http_proxy.py
 - [[System bypass domains should not error when egress_filter is None.]] - rationale - gateway/tests/test_http_proxy.py
 - [[Unknown IP resolved via reverse-DNS to a known bot hostname → correct bot_id cac]] - rationale - gateway/tests/test_http_proxy.py
 - [[Unknown IP whose rDNS doesn't match any bot, and fDNS fails → generic label, cac]] - rationale - gateway/tests/test_http_proxy.py
 - [[Unknown IP with no bot_hostnames registered → generic label, cached.]] - rationale - gateway/tests/test_http_proxy.py
+- [[WebProxy]] - code - gateway/proxy/web_proxy.py
 - [[_DummyTargetWriter]] - code - gateway/tests/test_http_proxy.py
-- [[_MockWriter]] - code - gateway/tests/test_http_proxy.py
-- [[_make_stream()]] - code - gateway/tests/test_http_proxy.py
+- [[_MockWriter_1]] - code - gateway/tests/test_http_proxy.py
+- [[_make_stream()_1]] - code - gateway/tests/test_http_proxy.py
 - [[api.telegram.org must NOT be a system bypass domain.      Direct CONNECT tunnels]] - rationale - gateway/tests/test_http_proxy.py
 - [[http_proxy.py (HTTPConnectProxy)]] - code - gateway/proxy/http_proxy.py
 - [[rDNS fails; forward DNS resolves bot hostname to source IP → correct bot_id cach]] - rationale - gateway/tests/test_http_proxy.py
@@ -66,6 +71,7 @@ members: 59
 - [[test_stats_structure()]] - code - gateway/tests/test_http_proxy.py
 - [[test_system_bypass_domain_logs_external_decision()]] - code - gateway/tests/test_http_proxy.py
 - [[test_system_bypass_without_egress_filter()]] - code - gateway/tests/test_http_proxy.py
+- [[test_telegram_api_blocked_in_connect_proxy()]] - code - gateway/tests/test_http_proxy.py
 - [[test_telegram_is_force_blocked_not_bypass()]] - code - gateway/tests/test_http_proxy.py
 - [[web_config.py (WebProxyConfig)]] - code - gateway/proxy/web_config.py
 - [[web_proxy.py (WebProxy)]] - code - gateway/proxy/web_proxy.py
@@ -78,14 +84,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 30 edges to [[_COMMUNITY_HTTPConnectProxy]]
-- 10 edges to [[_COMMUNITY_WebProxyConfig]]
-- 9 edges to [[_COMMUNITY_ProxyAction]]
+- 39 edges to [[_COMMUNITY_HTTPConnectProxy]]
+- 37 edges to [[_COMMUNITY_WebProxyConfig]]
+- 13 edges to [[_COMMUNITY_ProxyAction]]
+- 3 edges to [[_COMMUNITY__DummyTargetWriter]]
 - 3 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 2 edges to [[_COMMUNITY_WebContentScanner]]
+- 2 edges to [[_COMMUNITY_AgentRegistry]]
+- 2 edges to [[_COMMUNITY_ProxyAction_1]]
+- 2 edges to [[_COMMUNITY_dot-_process_connect]]
+- 1 edge to [[_COMMUNITY_WebProxyConfig_1]]
 
 ## Top bridge nodes
-- [[test_http_proxy.py]] - degree 39, connects to 4 communities
-- [[_MockWriter]] - degree 21, connects to 4 communities
-- [[_DummyTargetWriter]] - degree 8, connects to 4 communities
-- [[test_blocked_domain_is_tracked_in_recent()]] - degree 6, connects to 3 communities
-- [[test_connect_blocked_domain_returns_403()]] - degree 6, connects to 3 communities
+- [[WebProxy]] - degree 72, connects to 9 communities
+- [[test_http_proxy.py]] - degree 39, connects to 3 communities
+- [[_MockWriter_1]] - degree 21, connects to 3 communities
+- [[_DummyTargetWriter]] - degree 8, connects to 3 communities
+- [[test_blocked_domain_is_tracked_in_recent()]] - degree 6, connects to 2 communities

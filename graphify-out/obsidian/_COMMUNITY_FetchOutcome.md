@@ -10,12 +10,12 @@ members: 29
 **Members:** 29 nodes
 
 ## Members
-- [[dot-__enter__()_1]] - code - gateway/tests/test_citation_verifier.py
-- [[dot-__enter__()_2]] - code - gateway/tests/test_intel_endpoint.py
-- [[dot-__exit__()_1]] - code - gateway/tests/test_citation_verifier.py
-- [[dot-__exit__()_2]] - code - gateway/tests/test_intel_endpoint.py
-- [[dot-__init__()_113]] - code - gateway/tests/test_citation_verifier.py
-- [[dot-__init__()_114]] - code - gateway/tests/test_intel_endpoint.py
+- [[dot-__enter__()_2]] - code - gateway/tests/test_citation_verifier.py
+- [[dot-__enter__()_3]] - code - gateway/tests/test_intel_endpoint.py
+- [[dot-__exit__()_2]] - code - gateway/tests/test_citation_verifier.py
+- [[dot-__exit__()_3]] - code - gateway/tests/test_intel_endpoint.py
+- [[dot-__init__()_107]] - code - gateway/tests/test_citation_verifier.py
+- [[dot-__init__()_108]] - code - gateway/tests/test_intel_endpoint.py
 - [[dot-_patch_stream()]] - code - gateway/tests/test_citation_verifier.py
 - [[dot-iter_bytes()]] - code - gateway/tests/test_citation_verifier.py
 - [[dot-iter_bytes()_1]] - code - gateway/tests/test_intel_endpoint.py
@@ -48,14 +48,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 16 edges to [[_COMMUNITY_api.py_1]]
-- 4 edges to [[_COMMUNITY_CompetitiveIntelReport]]
-- 3 edges to [[_COMMUNITY_FetchOutcome_1]]
-- 1 edge to [[_COMMUNITY_api.py]]
+- 9 edges to [[_COMMUNITY_api.py_1]]
+- 7 edges to [[_COMMUNITY_FetchOutcome_1]]
+- 4 edges to [[_COMMUNITY_CompetitiveIntelReport_1]]
+- 4 edges to [[_COMMUNITY_api.py]]
 
 ## Top bridge nodes
-- [[make_httpx_fetcher()]] - degree 18, connects to 3 communities
-- [[_FakeStreamResponse_1]] - degree 16, connects to 2 communities
-- [[TestMakeHttpxFetcher]] - degree 13, connects to 2 communities
+- [[make_httpx_fetcher()]] - degree 18, connects to 4 communities
+- [[_FakeStreamResponse_1]] - degree 16, connects to 4 communities
+- [[TestMakeHttpxFetcher]] - degree 13, connects to 4 communities
 - [[_StreamResp]] - degree 12, connects to 2 communities
 - [[TestHttpxFetcher]] - degree 8, connects to 2 communities

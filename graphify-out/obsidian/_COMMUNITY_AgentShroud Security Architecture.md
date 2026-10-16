@@ -43,7 +43,7 @@ members: 43
 - [[Principle You Decide What The Agent Sees]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Project Goals]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Prompt Guard System (Module 25)]] - concept - docs/security/security-architecture.md
-- [[Quick Reference]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Quick Reference_1]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Recommended Production Setup]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Security Checklist]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Threat Model]] - document - docs/security/SECURITY_ARCHITECTURE.md
@@ -62,15 +62,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_system-requirements]]
-- 3 edges to [[_COMMUNITY_system-requirements_1]]
+- 7 edges to [[_COMMUNITY_system-requirements]]
 - 1 edge to [[_COMMUNITY_P2 High Priority Incidents]]
-- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown]]
+- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown_1]]
 - 1 edge to [[_COMMUNITY_Security Module Inventory]]
 - 1 edge to [[_COMMUNITY_Kill Switch]]
-- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised]]
-- 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised_1]]
+- 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter_1]]
 
 ## Top bridge nodes
-- [[AgentShroud Security Architecture]] - degree 32, connects to 8 communities
+- [[AgentShroud Security Architecture]] - degree 32, connects to 7 communities
 - [[DNS Filtering]] - degree 2, connects to 1 community

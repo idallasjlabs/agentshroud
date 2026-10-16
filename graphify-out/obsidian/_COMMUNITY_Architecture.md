@@ -10,7 +10,7 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[Architecture_11]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Architecture_12]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
 - [[Design Philosophy]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
 - [[Egress Pipeline (Agent → Internet)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
 - [[Inbound Pipeline (User → Agent)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
@@ -32,4 +32,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_AgentShroud Blue Team Security Auditor]]
 
 ## Top bridge nodes
-- [[Architecture_11]] - degree 7, connects to 2 communities
+- [[Architecture_12]] - degree 7, connects to 2 communities

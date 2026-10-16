@@ -12,8 +12,8 @@ members: 16
 ## Members
 - [[Read up to the end of the request's header block (rnrn).      Returns (h]] - rationale - docker/bots/hermes/dashboard_bridge.py
 - [[Rewrite the Host header to `new_host` and normalize Connection framing.      `he]] - rationale - docker/bots/hermes/dashboard_bridge.py
-- [[StreamReader]] - code - docker/bots/hermes/dashboard_bridge.py
-- [[StreamReader_1]] - code - docker/bots/hermes/docker_proxy_relay.py
+- [[StreamReader_1]] - code - docker/bots/hermes/dashboard_bridge.py
+- [[StreamReader_2]] - code - docker/bots/hermes/docker_proxy_relay.py
 - [[StreamWriter]] - code - docker/bots/hermes/dashboard_bridge.py
 - [[StreamWriter_1]] - code - docker/bots/hermes/docker_proxy_relay.py
 - [[_handle()]] - code - docker/bots/hermes/dashboard_bridge.py

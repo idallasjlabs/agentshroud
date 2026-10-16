@@ -15,7 +15,7 @@ members: 27
 - [[Core Discipline Frame → Structure → Generate → Validate_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
 - [[Curriculum Design (with `i-atlas`)_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
 - [[Decision Tree Map_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Dependencies_9]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[Dependencies_10]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
 - [[Example FODL Pipeline Overview_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
 - [[Export and Sharing Conventions_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
 - [[Hierarchy Design — Outline First_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
@@ -29,7 +29,7 @@ members: 27
 - [[Markmap Source Format_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
 - [[Outline Template_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
 - [[Project Planning Map_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Role_35]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[Role_36]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
 - [[Rules_10]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
 - [[Skill Mindmap Architect (MM)_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
 - [[Use Case Patterns_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md

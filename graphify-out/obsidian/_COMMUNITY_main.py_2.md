@@ -14,7 +14,7 @@ members: 12
 - [[Common Startup Failures]] - document - docs/vault/01 - Architecture/Startup Sequence.md
 - [[First-Boot Notes]] - document - docs/vault/01 - Architecture/Startup Sequence.md
 - [[Overview_28]] - document - docs/vault/01 - Architecture/Startup Sequence.md
-- [[Related Notes_58]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Related Notes_63]] - document - docs/vault/01 - Architecture/Startup Sequence.md
 - [[Stage 1 Gateway Container Startup]] - document - docs/vault/01 - Architecture/Startup Sequence.md
 - [[Stage 2 Gateway Application Initialization (main.py lifespan)]] - document - docs/vault/01 - Architecture/Startup Sequence.md
 - [[Stage 3 Health Check]] - document - docs/vault/01 - Architecture/Startup Sequence.md

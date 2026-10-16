@@ -1,13 +1,13 @@
 ---
 type: community
-cohesion: 0.09
-members: 22
+cohesion: 0.06
+members: 32
 ---
 
 # AgentShroud: Enterprise Governance for Autonomous AI Agents
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 22 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 32 nodes
 
 ## Members
 - [[1. The Problem Unsecured AI Agents]] - document - docs/papers/agentshroud-whitepaper.md
@@ -27,9 +27,19 @@ members: 22
 - [[6.1 Market Overview]] - document - docs/papers/agentshroud-whitepaper.md
 - [[6.2 Comparison Table]] - document - docs/papers/agentshroud-whitepaper.md
 - [[6.3 Key Differentiators]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9. Deep Security Hardening (v0.9.0)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9.1 Log Sanitizer (gatewaysecuritylog_sanitizer.py)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9.2 Environment Leakage Guard (gatewaysecurityenv_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9.3 Context Window Poisoning Defense (gatewaysecuritycontext_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9.4 Git Hook Guard (gatewaysecuritygit_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9.5 Metadata Channel Guard (gatewaysecuritymetadata_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9.6 Network Isolation Validator (gatewaysecuritynetwork_validator.py)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9.7 Resource Exhaustion Guard (gatewaysecurityresource_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9.8 Tool Result Injection Scanning (MCP Inspector Enhancement)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9.9 Deep Hardening Impact]] - document - docs/papers/agentshroud-whitepaper.md
 - [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - document - docs/papers/agentshroud-whitepaper.md
 - [[Completed Phases]] - document - docs/papers/agentshroud-whitepaper.md
-- [[Executive Summary_11]] - document - docs/papers/agentshroud-whitepaper.md
+- [[Executive Summary_4]] - document - docs/papers/agentshroud-whitepaper.md
 - [[Future Phases (Planned)]] - document - docs/papers/agentshroud-whitepaper.md
 - [[agentshroud-whitepaper]] - document - docs/papers/agentshroud-whitepaper.md
 
@@ -47,8 +57,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_4. Compliance & Standards Alignment]]
 - 1 edge to [[_COMMUNITY_SSH Config]]
 - 1 edge to [[_COMMUNITY_OpenSCAP]]
-- 1 edge to [[_COMMUNITY_9. Deep Security Hardening (v0.9.0)]]
 - 1 edge to [[_COMMUNITY_Recommendation]]
 
 ## Top bridge nodes
-- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - degree 15, connects to 8 communities
+- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - degree 15, connects to 7 communities

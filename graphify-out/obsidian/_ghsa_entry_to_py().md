@@ -12,7 +12,7 @@ tags:
 # _ghsa_entry_to_py()
 
 ## Connections
-- [[Any_13]] - `references` [EXTRACTED]
+- [[Any_17]] - `references` [EXTRACTED]
 - [[Serialize an under_review entry to Python source matching the file schema.]] - `rationale_for` [EXTRACTED]
 - [[append_ghsa_entries()]] - `calls` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]

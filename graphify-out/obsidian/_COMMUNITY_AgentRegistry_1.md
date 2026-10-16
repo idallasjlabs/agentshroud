@@ -1,35 +1,38 @@
 ---
 type: community
-cohesion: 0.12
-members: 20
+cohesion: 0.09
+members: 23
 ---
 
 # AgentRegistry
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 20 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 23 nodes
 
 ## Members
-- [[dot-_derive_key()]] - code - gateway/security/encrypted_store.py
-- [[dot-decrypt()]] - code - gateway/security/encrypted_store.py
-- [[dot-decrypt_b64()]] - code - gateway/security/encrypted_store.py
-- [[dot-decrypt_json()]] - code - gateway/security/encrypted_store.py
-- [[dot-decrypt_str()]] - code - gateway/security/encrypted_store.py
-- [[dot-encrypt()]] - code - gateway/security/encrypted_store.py
-- [[dot-encrypt_b64()]] - code - gateway/security/encrypted_store.py
-- [[dot-rotate()]] - code - gateway/security/encrypted_store.py
-- [[dot-test_secure_zero_bytearray()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_secure_zero_empty()]] - code - gateway/tests/test_security_hardening.py
-- [[Best-effort zeroing of key material using ctypes.memset.      Works on bytearray]] - rationale - gateway/security/encrypted_store.py
-- [[Decrypt a base64-encoded blob.]] - rationale - gateway/security/encrypted_store.py
-- [[Decrypt an AES-256-GCM encrypted blob.          Args             blob The encr]] - rationale - gateway/security/encrypted_store.py
-- [[Decrypt and return as UTF-8 string.]] - rationale - gateway/security/encrypted_store.py
-- [[Decrypt and return as parsed JSON dict.]] - rationale - gateway/security/encrypted_store.py
-- [[Derive a 256-bit key from master secret using PBKDF2-HMAC-SHA256.]] - rationale - gateway/security/encrypted_store.py
-- [[Encrypt and return as base64-encoded string.]] - rationale - gateway/security/encrypted_store.py
-- [[Encrypt data using AES-256-GCM.          Args             data String, bytes,]] - rationale - gateway/security/encrypted_store.py
-- [[Re-encrypt blobs with a new master secret.          Args             blobs Lis]] - rationale - gateway/security/encrypted_store.py
-- [[_secure_zero()]] - code - gateway/security/encrypted_store.py
+- [[dot-setup_method()_27]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_base64_encoded_injection()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_benign_base64()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_clean_input()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_combined_attack_high_score()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_custom_pattern()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_dan_jailbreak()_1]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_delimiter_injection()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_empty_input()_3]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_forget_everything()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_ignore_instructions()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_indirect_injection()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_new_instructions_override()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_none_input()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_prompt_extraction()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_prompt_leak_question()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_role_reassignment()_1]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_rtl_override()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_sanitized_output()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_unicode_zero_width()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_warn_threshold()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_xml_tag_injection()_1]] - code - gateway/tests/test_security_hardening.py
+- [[TestPromptGuard_1]] - code - gateway/tests/test_security_hardening.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,12 +42,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_AlertDispatcher]]
-- 1 edge to [[_COMMUNITY_KeyVault]]
+- 7 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 6 edges to [[_COMMUNITY_PIIConfig]]
+- 4 edges to [[_COMMUNITY_AlertDispatcher]]
+- 3 edges to [[_COMMUNITY_AgentRegistry]]
+- 1 edge to [[_COMMUNITY_TrustConfig]]
+- 1 edge to [[_COMMUNITY_AuditChain]]
 
 ## Top bridge nodes
-- [[_secure_zero()]] - degree 9, connects to 2 communities
-- [[dot-decrypt()]] - degree 8, connects to 1 community
-- [[dot-encrypt()]] - degree 6, connects to 1 community
-- [[dot-_derive_key()]] - degree 5, connects to 1 community
-- [[dot-rotate()]] - degree 5, connects to 1 community
+- [[TestPromptGuard_1]] - degree 40, connects to 6 communities
+- [[dot-test_custom_pattern()]] - degree 3, connects to 2 communities
+- [[dot-setup_method()_27]] - degree 2, connects to 1 community
+- [[dot-test_warn_threshold()]] - degree 2, connects to 1 community

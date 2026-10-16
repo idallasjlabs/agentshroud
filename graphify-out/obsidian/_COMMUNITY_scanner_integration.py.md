@@ -1,45 +1,18 @@
 ---
 type: community
-cohesion: 0.04
-members: 104
+cohesion: 0.05
+members: 69
 ---
 
 # scanner_integration.py
 
-**Cohesion:** 0.04 - loosely connected
-**Members:** 104 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 69 nodes
 
 ## Members
-- [[dot-_all_not_run_patches()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_all_domains_have_required_fields()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_clean_tools_improve_score()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_compliance_new_keys_present()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_compute_weighted_subscore_full_score()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_compute_weighted_subscore_zero_for_empty_map()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_disa_stig_domain_map_valid()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_eu_ai_act_domain_map_valid()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_iso_42001_domain_map_valid()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_maturity_labels_valid()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_network_segmentation_baseline_three()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_nist_csf_domain_map_valid()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_overall_maturity_present()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_returns_thirty_three_domains()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_scorecard_domain_ids_are_sequential()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_secrets_management_baseline_two()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_standard_basis_present()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_timestamp_present()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_totals_present()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_version_is_v090()]] - code - gateway/tests/test_scanner_integration.py
 - [[Apply mandatory gate overrides to domain scores.      Returns updated scores dic]] - rationale - gateway/security/scanner_integration.py
-- [[Compute the 33-domain Security Scorecard.      Domains 1–21 Container infrastru]] - rationale - gateway/security/scanner_integration.py
-- [[DISA STIG domain map references only valid domain IDs.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[Determine composite compliance level using the weakest-link rule.      All 7 sub]] - rationale - gateway/security/scanner_integration.py
-- [[Determine the highest achieved IEC 62443 Security Level.      SL 1 All IEC-mapp]] - rationale - gateway/security/scanner_integration.py
-- [[EU AI Act domain map references only valid domain IDs.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[ISO 42001 domain map references only valid domain IDs.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[NIST CSF domain map references only valid domain IDs.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[New compliance sub-scores (EU AI Act, ISO 42001, NIST CSF, DISA STIG) appear in]] - rationale - gateway/tests/test_scanner_integration.py
-- [[Path_33]] - code - gateway/security/scanner_integration.py
+- [[Generate a summary dict suitable for the health report.      Args         alert_1]] - rationale - gateway/security/falco_monitor.py
+- [[Path_51]] - code - gateway/security/scanner_integration.py
 - [[Read and return the Docker daemon config from daemon.json, or {} if unavailable.]] - rationale - gateway/security/scanner_integration.py
 - [[Return True if a non-zombie falco process is running inside this container.]] - rationale - gateway/security/scanner_integration.py
 - [[Return True if app_state has a non-None attribute with the given name.]] - rationale - gateway/security/scanner_integration.py
@@ -49,7 +22,6 @@ members: 104
 - [[Return True if wazuh-agentd is running as a local process inside this container.]] - rationale - gateway/security/scanner_integration.py
 - [[Return docker-compose.yml text for containerized-deployment evidence checks.]] - rationale - gateway/security/scanner_integration.py
 - [[Return scriptssecurity-scan.sh text, or empty string.]] - rationale - gateway/security/scanner_integration.py
-- [[Return weighted sub-score as 0.0–100.0 percentage.]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 13 Identity & Authentication (0-5). IEC 62443 FR1.      1=API toke]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 14 Access Control & Authorization (0-5). IEC 62443 FR2.      1=rol]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 15 Data Confidentiality & Encryption (0-5). IEC 62443 FR4.      1=]] - rationale - gateway/security/scanner_integration.py
@@ -66,20 +38,13 @@ members: 104
 - [[Score domain 26 Agent Identity & NHI (0-5). OWASP ASI-09, NIST AI Agent Standar]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 27 Memory Integrity (0-5). OWASP ASI-08, MITRE ATLAS.      1=memor]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 28 Inter-Agent Trust & Orchestration Security (0-5). OWASP ASI-03]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 29 AI Model & Supply Chain Integrity (0-5). MITRE ATLAS, OWASP LLM]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 30 AI Observability & Audit Trail (0-5). NIST AI RMF MEASURE, IEC]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 31 Human-in-the-Loop Controls (0-5). NIST AI RMF MANAGE, ISO 42001]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 32 Rogue Agent Containment & Killswitch (0-5). OWASP ASI-03, CSA M]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 33 Data Exfiltration Prevention (0-5). OWASP ASI-06, MITRE ATLAS,]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 7 Network Segmentation (0-5).      3=Docker network architecture b]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 8 Secrets Management (0-5).      2=Docker secrets + key_vault base]] - rationale - gateway/security/scanner_integration.py
-- [[TestComputeScorecard_1]] - code - gateway/tests/test_scanner_integration.py
 - [[_app_state_has()]] - code - gateway/security/scanner_integration.py
-- [[_compute_weighted_subscore returns 0.0 for an empty domain map.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[_compute_weighted_subscore returns 100.0 when all domains score 5.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[_compute_weighted_subscore()]] - code - gateway/security/scanner_integration.py
-- [[_determine_compliance_level()]] - code - gateway/security/scanner_integration.py
-- [[_determine_iec_sl()]] - code - gateway/security/scanner_integration.py
 - [[_evaluate_mandatory_gates()]] - code - gateway/security/scanner_integration.py
 - [[_is_container_running()]] - code - gateway/security/scanner_integration.py
 - [[_is_containerized()]] - code - gateway/security/scanner_integration.py
@@ -91,7 +56,6 @@ members: 104
 - [[_score_access_control_authorization()]] - code - gateway/security/scanner_integration.py
 - [[_score_agent_behavior_integrity()]] - code - gateway/security/scanner_integration.py
 - [[_score_agent_identity_nhi()]] - code - gateway/security/scanner_integration.py
-- [[_score_ai_model_supply_chain()]] - code - gateway/security/scanner_integration.py
 - [[_score_ai_observability()]] - code - gateway/security/scanner_integration.py
 - [[_score_container_runtime_isolation()]] - code - gateway/security/scanner_integration.py
 - [[_score_data_confidentiality_encryption()]] - code - gateway/security/scanner_integration.py
@@ -112,7 +76,8 @@ members: 104
 - [[_score_secrets_management()]] - code - gateway/security/scanner_integration.py
 - [[_score_tool_use_safety()]] - code - gateway/security/scanner_integration.py
 - [[_security_scan_sh_text()]] - code - gateway/security/scanner_integration.py
-- [[compute_scorecard()]] - code - gateway/security/scanner_integration.py
+- [[generate_summary()_1]] - code - gateway/security/clamav_scanner.py
+- [[generate_summary()_2]] - code - gateway/security/falco_monitor.py
 - [[scanner_integration.py]] - code - gateway/security/scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
@@ -123,24 +88,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 43 edges to [[_COMMUNITY_test_scanner_integration.py]]
-- 7 edges to [[_COMMUNITY_test_scorecard_integrity.py]]
-- 6 edges to [[_COMMUNITY_get_trivy_summary]]
-- 5 edges to [[_COMMUNITY_Path_1]]
-- 4 edges to [[_COMMUNITY_get_falco_summary]]
-- 4 edges to [[_COMMUNITY__load_latest_json]]
-- 3 edges to [[_COMMUNITY__score_secure_development]]
-- 2 edges to [[_COMMUNITY_FalcoAlertWatcher]]
-- 2 edges to [[_COMMUNITY_test_soc_bots.py]]
-- 2 edges to [[_COMMUNITY_test_security_toolchain.py]]
-- 1 edge to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_parse_clamscan_output]]
-- 1 edge to [[_COMMUNITY_test_daily_cve_report.py]]
+- 29 edges to [[_COMMUNITY_scanner_integration.py_1]]
+- 20 edges to [[_COMMUNITY_test_scanner_integration.py]]
+- 11 edges to [[_COMMUNITY_test_security_toolchain.py]]
+- 7 edges to [[_COMMUNITY_get_trivy_summary]]
+- 4 edges to [[_COMMUNITY_FalcoAlertWatcher]]
+- 4 edges to [[_COMMUNITY_Path_2]]
+- 3 edges to [[_COMMUNITY__load_latest_json]]
+- 2 edges to [[_COMMUNITY_test_scorecard_integrity.py]]
+- 2 edges to [[_COMMUNITY_parse_clamscan_output]]
+- 1 edge to [[_COMMUNITY_test_security_toolchain.py_1]]
+- 1 edge to [[_COMMUNITY_test_soc_bots.py_2]]
 - 1 edge to [[_COMMUNITY_test_scorecard_scoring.py]]
+- 1 edge to [[_COMMUNITY_test_daily_cve_report.py]]
 
 ## Top bridge nodes
-- [[scanner_integration.py]] - degree 67, connects to 13 communities
-- [[compute_scorecard()]] - degree 61, connects to 9 communities
-- [[Path_33]] - degree 34, connects to 6 communities
-- [[_score_ai_model_supply_chain()]] - degree 6, connects to 2 communities
-- [[_app_state_has()]] - degree 23, connects to 1 community
+- [[scanner_integration.py]] - degree 67, connects to 11 communities
+- [[Path_51]] - degree 34, connects to 6 communities
+- [[generate_summary()_2]] - degree 8, connects to 3 communities
+- [[_score_network_segmentation()]] - degree 9, connects to 2 communities
+- [[_evaluate_mandatory_gates()]] - degree 7, connects to 2 communities

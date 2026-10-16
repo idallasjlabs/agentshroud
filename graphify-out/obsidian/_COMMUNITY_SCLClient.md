@@ -10,16 +10,16 @@ members: 42
 **Members:** 42 nodes
 
 ## Members
-- [[dot-__init__()_61]] - code - gateway/cli/client.py
+- [[dot-__init__()_59]] - code - gateway/cli/client.py
 - [[dot-_request()]] - code - gateway/cli/client.py
 - [[dot-add_collaborator()]] - code - gateway/cli/client.py
 - [[dot-add_group_member()]] - code - gateway/cli/client.py
 - [[dot-approve_egress()]] - code - gateway/cli/client.py
 - [[dot-block_egress()]] - code - gateway/cli/client.py
-- [[dot-delete()_1]] - code - gateway/cli/client.py
+- [[dot-delete()]] - code - gateway/cli/client.py
 - [[dot-deny_egress()]] - code - gateway/cli/client.py
 - [[dot-freeze()]] - code - gateway/cli/client.py
-- [[dot-get()_1]] - code - gateway/cli/client.py
+- [[dot-get()]] - code - gateway/cli/client.py
 - [[dot-get_correlation()]] - code - gateway/cli/client.py
 - [[dot-get_egress_pending()]] - code - gateway/cli/client.py
 - [[dot-get_events()_1]] - code - gateway/cli/client.py
@@ -43,8 +43,8 @@ members: 42
 - [[dot-test_init_strips_trailing_slash_and_builds_soc_base()]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-test_post_serializes_body()]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-test_put_and_delete_methods()]] - code - gateway/tests/test_cli_coverage.py
-- [[Any_20]] - code - gateway/cli/client.py
-- [[Exception_1]] - code - gateway/tests/test_cli_coverage.py
+- [[Any_22]] - code - gateway/cli/client.py
+- [[Exception]] - code - gateway/tests/test_cli_coverage.py
 - [[Minimal synchronous httpx-free client for the SCL API.]] - rationale - gateway/cli/client.py
 - [[Patch gateway.cli.client.urlopen; return list of captured Request objects.]] - rationale - gateway/tests/test_cli_coverage.py
 - [[SCLClient]] - code - gateway/cli/client.py
@@ -69,7 +69,7 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[SCLClient]] - degree 55, connects to 5 communities
-- [[dot-get()_1]] - degree 13, connects to 1 community
+- [[dot-get()]] - degree 13, connects to 1 community
 - [[_patch_urlopen()]] - degree 11, connects to 1 community
 - [[TestSCLClientRequest]] - degree 10, connects to 1 community
 - [[test_convenience_methods_hit_expected_endpoints()]] - degree 3, connects to 1 community

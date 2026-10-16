@@ -28,7 +28,7 @@ tags:
 - [[dot-test_vouching_required_for_top_rung()]] - `calls` [EXTRACTED]
 - [[Seed stored scorelevel directly (same technique lifespan.py uses).]] - `rationale_for` [EXTRACTED]
 - [[TrustLevel_2]] - `references` [EXTRACTED]
-- [[TrustManager]] - `references` [EXTRACTED]
+- [[TrustManager_1]] - `references` [EXTRACTED]
 - [[test_progressive_trust_integration.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

@@ -1,16 +1,17 @@
 ---
 type: community
-cohesion: 0.09
-members: 36
+cohesion: 0.08
+members: 38
 ---
 
 # test_hermes_cron_seed.py
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 36 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 38 nodes
 
 ## Members
 - [[Duplicateoverlapping Hermes cron jobs colliding at same minute — retired duplicate]] - rationale - CHANGELOG.md
+- [[Env-split cron reconciliation (AGENTSHROUD_PROD_CRON_KEEP)]] - rationale - docker/bots/hermes/init-config.sh
 - [[First-boot gateway-default s6 service auto-start]] - rationale - docker/bots/hermes/init-config.sh
 - [[Hermes cron garbled output — nemotron exhausted budget on monologue; pinned to gemma-4-26b-a4b-it]] - rationale - CHANGELOG.md
 - [[MCP servers reconciliation from mcpservers.json into config.yaml]] - rationale - docker/bots/hermes/init-config.sh
@@ -21,6 +22,7 @@ members: 36
 - [[The schedule must be '0 9   0' (Sunday 0900) in both files.]] - rationale - gateway/tests/test_hermes_cron_seed.py
 - [[These jobs must target an upstream the gateway can inject credentials for.]] - rationale - gateway/tests/test_hermes_cron_seed.py
 - [[Tirith trust seeding (lookalike_tld + internal gateway HTTP rule)]] - rationale - docker/bots/hermes/init-config.sh
+- [[_hermes_cron_ids_names]] - code - docker/bots/hermes/init-config.sh
 - [[_injectable_providers()]] - code - gateway/tests/test_hermes_cron_seed.py
 - [[_parse_cron_names_from_sh()]] - code - gateway/tests/test_hermes_cron_seed.py
 - [[_parse_job_names_from_yaml()]] - code - gateway/tests/test_hermes_cron_seed.py
@@ -62,3 +64,4 @@ SORT file.name ASC
 ## Top bridge nodes
 - [[init-config.sh (Hermes first-boot config materialisation)]] - degree 11, connects to 2 communities
 - [[_seed_cron]] - degree 8, connects to 1 community
+- [[Env-split cron reconciliation (AGENTSHROUD_PROD_CRON_KEEP)]] - degree 4, connects to 1 community

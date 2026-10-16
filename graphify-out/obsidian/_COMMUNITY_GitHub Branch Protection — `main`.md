@@ -15,7 +15,7 @@ members: 6
 - [[Local Enforcement (already active)]] - document - docs/governance/BRANCH_PROTECTION.md
 - [[Required Settings]] - document - docs/governance/BRANCH_PROTECTION.md
 - [[Required Status Checks]] - document - docs/governance/BRANCH_PROTECTION.md
-- [[Verification]] - document - docs/governance/BRANCH_PROTECTION.md
+- [[Verification_1]] - document - docs/governance/BRANCH_PROTECTION.md
 
 ## Live Query (requires Dataview plugin)
 

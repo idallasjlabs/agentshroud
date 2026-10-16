@@ -17,7 +17,7 @@ members: 20
 - [[5. Update the Module Matrix]] - document - docs/claude-security-audit-prompt.md
 - [[Additional Security Components]] - document - docs/claude-security-audit-prompt.md
 - [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - document - docs/claude-security-audit-prompt.md
-- [[Architecture_7]] - document - docs/claude-security-audit-prompt.md
+- [[Architecture_8]] - document - docs/claude-security-audit-prompt.md
 - [[Collaborator Access Control Tests]] - document - docs/claude-security-audit-prompt.md
 - [[Context for Claude]] - document - docs/claude-security-audit-prompt.md
 - [[Fixed Findings]] - document - docs/claude-security-audit-prompt.md

@@ -10,7 +10,7 @@ members: 57
 **Members:** 57 nodes
 
 ## Members
-- [[dot-__init__()_33]] - code - gateway/security/subagent_monitor.py
+- [[dot-__init__()_23]] - code - gateway/security/subagent_monitor.py
 - [[dot-_log_event()]] - code - gateway/security/subagent_monitor.py
 - [[dot-check_tool_usage()]] - code - gateway/security/subagent_monitor.py
 - [[dot-deregister()]] - code - gateway/security/subagent_monitor.py
@@ -22,7 +22,7 @@ members: 57
 - [[dot-register_spawn()]] - code - gateway/security/subagent_monitor.py
 - [[dot-test_audit_filterable_by_agent()]] - code - gateway/tests/test_subagent_monitor.py
 - [[dot-test_audit_has_timestamps()]] - code - gateway/tests/test_subagent_monitor.py
-- [[dot-test_default_mode_is_enforce()_2]] - code - gateway/tests/test_subagent_monitor.py
+- [[dot-test_default_mode_is_enforce()]] - code - gateway/tests/test_subagent_monitor.py
 - [[dot-test_deregister_frees_slot()]] - code - gateway/tests/test_subagent_monitor.py
 - [[dot-test_deregister_logged()]] - code - gateway/tests/test_subagent_monitor.py
 - [[dot-test_deregister_subagent()]] - code - gateway/tests/test_subagent_monitor.py
@@ -79,9 +79,9 @@ SORT file.name ASC
 - 27 edges to [[_COMMUNITY_AlertDispatcher]]
 - 24 edges to [[_COMMUNITY_MiddlewareManager]]
 - 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
-- 1 edge to [[_COMMUNITY_Action]]
+- 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
 - 1 edge to [[_COMMUNITY_ResourceGuard]]
-- 1 edge to [[_COMMUNITY_SessionError]]
+- 1 edge to [[_COMMUNITY_SessionManager]]
 - 1 edge to [[_COMMUNITY_A2APolicyEngine]]
 
 ## Top bridge nodes

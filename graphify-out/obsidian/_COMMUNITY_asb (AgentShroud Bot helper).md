@@ -25,8 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_run-standalone.sh (Hermes docker run launcher)]]
 - 1 edge to [[_COMMUNITY_sunday-upgrade-apply.sh]]
 
 ## Top bridge nodes
-- [[detect_container_runtime()]] - degree 5, connects to 2 communities
+- [[detect_container_runtime()]] - degree 4, connects to 1 community

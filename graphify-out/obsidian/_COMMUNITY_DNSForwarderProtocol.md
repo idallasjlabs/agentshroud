@@ -10,7 +10,7 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[dot-__init__()_163]] - code - gateway/proxy/dns_forwarder.py
+- [[dot-__init__()_161]] - code - gateway/proxy/dns_forwarder.py
 - [[dot-close()_13]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-connection_made()]] - code - gateway/proxy/dns_forwarder.py
 - [[dot-error_received()]] - code - gateway/proxy/dns_forwarder.py
@@ -38,7 +38,7 @@ SORT file.name ASC
 - 9 edges to [[_COMMUNITY_DNSBlocklist]]
 - 8 edges to [[_COMMUNITY_test_dns_canvas_coverage.py]]
 - 6 edges to [[_COMMUNITY__FakeUpstreamWS]]
-- 4 edges to [[_COMMUNITY_MiddlewareManager]]
+- 4 edges to [[_COMMUNITY_AgentRegistry]]
 - 4 edges to [[_COMMUNITY_parse_query]]
 - 4 edges to [[_COMMUNITY_TestDNSForwarderProtocol]]
 - 2 edges to [[_COMMUNITY_forward_query]]

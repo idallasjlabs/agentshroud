@@ -12,8 +12,8 @@ members: 9
 ## Members
 - [[Build the per-device OTA token allowlist (SCRUM-58).      Owner-gated rollout o]] - rationale - voice_gateway/server.py
 - [[Constant-time allowlist check for an OTA ``token=`` value.      Returns True wh]] - rationale - voice_gateway/server.py
-- [[Request_10]] - code - voice_gateway/server.py
-- [[Response_1]] - code - voice_gateway/server.py
+- [[Request]] - code - voice_gateway/server.py
+- [[Response]] - code - voice_gateway/server.py
 - [[Serve the current ESP32 firmware binary for OTA (SCRUM-58).      Contract expect]] - rationale - voice_gateway/server.py
 - [[_get_firmware_etag()]] - code - voice_gateway/server.py
 - [[_load_ota_tokens()]] - code - voice_gateway/server.py

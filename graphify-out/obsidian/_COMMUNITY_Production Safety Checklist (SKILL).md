@@ -22,11 +22,11 @@ members: 36
 - [[Oracle Feedback Analyst (SKILL)]] - document - .agents/skills/i-oracle/SKILL.md
 - [[Production Safety Checklist (PROD-SAFETY)_1]] - document - docker/config/hermes/skills/i-ps/README.md
 - [[Production Safety Checklist (SKILL)]] - document - .agents/skills/i-ps/SKILL.md
-- [[Purpose_63]] - document - .agents/skills/i-production/README.md
-- [[Purpose_64]] - document - .agents/skills/i-ps/README.md
-- [[Purpose_65]] - document - .agents/skills/i-qa/README.md
-- [[Purpose_66]] - document - docker/config/hermes/skills/i-ps/README.md
-- [[Purpose_67]] - document - docker/config/hermes/skills/i-qa/README.md
+- [[Purpose_65]] - document - .agents/skills/i-production/README.md
+- [[Purpose_66]] - document - .agents/skills/i-ps/README.md
+- [[Purpose_67]] - document - .agents/skills/i-qa/README.md
+- [[Purpose_68]] - document - docker/config/hermes/skills/i-ps/README.md
+- [[Purpose_69]] - document - docker/config/hermes/skills/i-qa/README.md
 - [[Quality Assurance (QA)_1]] - document - docker/config/hermes/skills/i-qa/README.md
 - [[Quality Assurance (README)]] - document - .agents/skills/i-qa/README.md
 - [[Quality Assurance (SKILL)]] - document - .agents/skills/i-qa/SKILL.md

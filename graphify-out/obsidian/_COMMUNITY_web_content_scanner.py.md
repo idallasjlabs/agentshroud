@@ -11,20 +11,20 @@ members: 15
 
 ## Members
 - [[Configuration  Environment Variables_14]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Function Details_26]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[Function Details_27]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
 - [[Injection Pattern Weights]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Key Classes  Functions_28]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Purpose_131]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Related_32]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Responsibilities_29]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[Key Classes  Functions_29]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[Purpose_148]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[Related_33]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[Responsibilities_31]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
 - [[WebContentScanner._scan_encoded_payloads(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
 - [[WebContentScanner._scan_hidden_content(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
 - [[WebContentScanner._scan_pii(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
 - [[WebContentScanner._scan_prompt_injection(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
 - [[WebContentScanner._scan_zero_width(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
 - [[WebContentScanner.scan(content, content_type)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[web_content_scanner.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
 - [[web_content_scanner.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[web_content_scanner.py]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
 
 ## Live Query (requires Dataview plugin)
 

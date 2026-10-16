@@ -28,10 +28,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_AgentShroud v1.2.0 — Red Team Assessment]]
 - 1 edge to [[_COMMUNITY_§3 — Bot Pipeline Integrity Checks]]
 - 1 edge to [[_COMMUNITY_§4 — Hermes-Specific Section (NEW — first assessment)]]
 - 1 edge to [[_COMMUNITY_§5 — Trivy Container Scan Results]]
-- 1 edge to [[_COMMUNITY_AgentShroud v1.2.0 — Red Team Assessment]]
 
 ## Top bridge nodes
 - [[AgentShroud v1.2.0 — Blue Team Security Assessment]] - degree 10, connects to 4 communities

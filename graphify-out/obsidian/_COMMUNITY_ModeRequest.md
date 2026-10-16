@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.03
-members: 125
+cohesion: 0.04
+members: 112
 ---
 
 # ModeRequest
 
-**Cohesion:** 0.03 - loosely connected
-**Members:** 125 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 112 nodes
 
 ## Members
+- [[dot-test_auto_revert_restores_enforce()]] - code - gateway/tests/test_observatory_mode.py
 - [[dot-test_check_bot_updates_npm_failure_and_exec_failure()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_check_bot_updates_npm_missing_binary()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_check_bot_updates_update_available()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_check_openclaw_updates_alias()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_check_updates_git_failure_returns_error()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_check_updates_reports_behind()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_create_purges_expired_tokens()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_create_returns_registered_prefixed_token()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_custom_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
@@ -53,14 +52,12 @@ members: 125
 - [[dot-test_report_with_healthy_runtime()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_report_with_unhealthy_runtime_falls_back_to_docker()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_requires_confirmation()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_resolves_hermes_to_the_real_renamed_container()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_resolves_openclaw_to_the_convention_default()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_restart_service_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_restart_service_success()_1]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_rollback_agentshroud_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_rollback_agentshroud_success()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_revert_task_created_on_put()]] - code - gateway/tests/test_observatory_mode.py
 - [[dot-test_rollback_bot()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_rollback_openclaw_alias()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_second_put_cancels_previous_task()]] - code - gateway/tests/test_observatory_mode.py
 - [[dot-test_set_mode_cancels_previous_revert_task()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_set_mode_clamps_high_revert()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_set_mode_enforce_revert_task_is_noop()]] - code - gateway/tests/test_web_api_coverage.py
@@ -75,37 +72,30 @@ members: 125
 - [[dot-test_stop_service_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_stop_service_success()_1]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_streams_logs_then_cleans_up_on_disconnect()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_unknown_bot_id_falls_back_to_the_naive_guess()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_update_config_rejects_unknown_keys()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_update_config_round_trips_bots_key()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_update_config_without_existing_file_skips_backup()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_update_config_writes_yaml_and_backs_up()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_update_history_git_failure_returns_empty()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_update_history_returns_commits()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_update_request_defaults()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_upgrade_bot_failure_reports_error_step()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_upgrade_bot_success()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_upgrade_openclaw_alias()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_upgrade_pull_failure_triggers_rollback()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_upgrade_skip_tests_skips_test_step()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_upgrade_success_with_tests_and_security_review()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_upgrade_test_failure_triggers_rollback()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_valid_modes_constant()]] - code - gateway/tests/test_observatory_mode.py
 - [[dot-test_valid_token_authenticates()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_validate_is_single_use()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_validate_rejects_empty_and_unprefixed()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_validate_rejects_expired_token()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_validate_rejects_unknown_token()]] - code - gateway/tests/test_web_api_coverage.py
-- [[Build a subprocess.run double that simulates the upgrade git flow.]] - rationale - gateway/tests/test_web_api_coverage.py
+- [[A revert task is created (and is an asyncio.Task).]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Auto-revert task sets mode back to enforce after delay.]] - rationale - gateway/tests/test_observatory_mode.py
 - [[HTTPAuthorizationCredentials]] - code - gateway/web/api.py
 - [[KillSwitchAction]] - code - gateway/web/api.py
 - [[ModeRequest]] - code - gateway/web/api.py
 - [[Require valid Bearer token for all management endpoints.]] - rationale - gateway/web/api.py
-- [[Resolve the real Docker container name for a given bot_id — from     BotConfig.r]] - rationale - gateway/web/api.py
 - [[Restore AGENTSHROUD_MODE, revert task, and WS token registry per test.]] - rationale - gateway/tests/test_web_api_coverage.py
 - [[SCRUM-107 the `bots` top-level key must be allowed through PUT         apicon]] - rationale - gateway/tests/test_web_api_coverage.py
+- [[Second PUT cancels the first revert task.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Set AGENTSHROUD_MODE at runtime with automatic revert to 'enforce'.]] - rationale - gateway/web/api.py
 - [[SimpleNamespace_1]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestAgentshroudUpdates]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestBotUpdates]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestConfig_1]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestDefaultBotDockerfile]] - code - gateway/tests/test_web_api_coverage.py
@@ -118,7 +108,6 @@ members: 125
 - [[TestOpenclawAliases]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestRebuild]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestRequireAuth]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestResolveBotContainer]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestSecurityReport]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestServiceControl]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestStatus]] - code - gateway/tests/test_web_api_coverage.py
@@ -128,12 +117,10 @@ members: 125
 - [[_container()]] - code - gateway/tests/test_web_api_coverage.py
 - [[_engine()]] - code - gateway/tests/test_web_api_coverage.py
 - [[_fake_ws()]] - code - gateway/tests/test_web_api_coverage.py
-- [[_gitless_run()]] - code - gateway/tests/test_web_api_coverage.py
 - [[_module_state_guard()]] - code - gateway/tests/test_web_api_coverage.py
-- [[_resolve_bot_container must use BotConfig.resolved_container_name, not     a har]] - rationale - gateway/tests/test_web_api_coverage.py
-- [[_resolve_bot_container()]] - code - gateway/web/api.py
-- [[client()_6]] - code - gateway/tests/test_web_api_coverage.py
+- [[client()_16]] - code - gateway/tests/test_web_api_coverage.py
 - [[require_auth()]] - code - gateway/web/api.py
+- [[set_mode()]] - code - gateway/web/api.py
 - [[test_web_api_coverage.py]] - code - gateway/tests/test_web_api_coverage.py
 
 ## Live Query (requires Dataview plugin)
@@ -144,27 +131,27 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_test_observatory_mode.py]]
+- 19 edges to [[_COMMUNITY_KillSwitchMonitor]]
+- 11 edges to [[_COMMUNITY_ModeRequest_1]]
 - 11 edges to [[_COMMUNITY_api.py]]
 - 8 edges to [[_COMMUNITY_api.py_1]]
+- 7 edges to [[_COMMUNITY_ModeRequest_2]]
 - 5 edges to [[_COMMUNITY_AsyncMock]]
-- 4 edges to [[_COMMUNITY_CompetitiveIntelReport]]
-- 4 edges to [[_COMMUNITY_KillSwitchMonitor]]
 - 3 edges to [[_COMMUNITY_socrouter.py]]
-- 2 edges to [[_COMMUNITY_KeyRotationManager]]
 - 2 edges to [[_COMMUNITY_FetchOutcome_1]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 1 edge to [[_COMMUNITY_SkillGuard]]
-- 1 edge to [[_COMMUNITY_create_auth_dependency]]
 - 1 edge to [[_COMMUNITY_PIIConfig]]
+- 1 edge to [[_COMMUNITY_SkillGuard]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig_2]]
+- 1 edge to [[_COMMUNITY_test_security.py]]
+- 1 edge to [[_COMMUNITY_KeyRotationManager_6]]
 - 1 edge to [[_COMMUNITY_test_runtime_engines.py]]
-- 1 edge to [[_COMMUNITY_TestObservatoryMode]]
 - 1 edge to [[_COMMUNITY_Path]]
 - 1 edge to [[_COMMUNITY_dashboard_endpoints.py]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
 
 ## Top bridge nodes
-- [[require_auth()]] - degree 16, connects to 10 communities
-- [[ModeRequest]] - degree 47, connects to 7 communities
-- [[UpdateRequest]] - degree 29, connects to 4 communities
-- [[KillSwitchAction]] - degree 27, connects to 4 communities
-- [[TestModeRequestModel]] - degree 8, connects to 3 communities
+- [[require_auth()]] - degree 16, connects to 11 communities
+- [[ModeRequest]] - degree 47, connects to 6 communities
+- [[UpdateRequest]] - degree 29, connects to 5 communities
+- [[KillSwitchAction]] - degree 27, connects to 5 communities
+- [[test_web_api_coverage.py]] - degree 30, connects to 3 communities

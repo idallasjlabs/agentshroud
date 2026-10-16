@@ -13,9 +13,9 @@ members: 7
 - [[Fallback Behavior]] - document - docs/vault/05 - Dependencies/spacy.md
 - [[First-Boot Performance]] - document - docs/vault/05 - Dependencies/spacy.md
 - [[Model]] - document - docs/vault/05 - Dependencies/spacy.md
-- [[Purpose_7]] - document - docs/vault/05 - Dependencies/spacy.md
-- [[Related Notes_10]] - document - docs/vault/05 - Dependencies/spacy.md
-- [[Where Used_2]] - document - docs/vault/05 - Dependencies/spacy.md
+- [[Purpose_10]] - document - docs/vault/05 - Dependencies/spacy.md
+- [[Related Notes_14]] - document - docs/vault/05 - Dependencies/spacy.md
+- [[Where Used_3]] - document - docs/vault/05 - Dependencies/spacy.md
 - [[spaCy]] - document - docs/vault/05 - Dependencies/spacy.md
 
 ## Live Query (requires Dataview plugin)
@@ -26,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_All Dependencies]]
+- 1 edge to [[_COMMUNITY_Error Index]]
 
 ## Top bridge nodes
 - [[spaCy]] - degree 7, connects to 1 community

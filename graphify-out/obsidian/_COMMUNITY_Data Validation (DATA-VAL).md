@@ -12,9 +12,9 @@ members: 5
 ## Members
 - [[dot-agentsskillsi-dataREADME]] - document - .agents/skills/i-data/README.md
 - [[Data Validation (DATA-VAL)]] - document - .agents/skills/i-data/README.md
-- [[Purpose_17]] - document - .agents/skills/i-data/README.md
+- [[Purpose_19]] - document - .agents/skills/i-data/README.md
 - [[Related Skills_5]] - document - .agents/skills/i-data/README.md
-- [[Usage_8]] - document - .agents/skills/i-data/README.md
+- [[Usage_9]] - document - .agents/skills/i-data/README.md
 
 ## Live Query (requires Dataview plugin)
 

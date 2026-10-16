@@ -58,7 +58,7 @@ members: 50
 - [[TestSecretAccess]] - code - gateway/tests/test_skill_guard.py
 - [[_finding_categories()]] - code - gateway/tests/test_skill_guard.py
 - [[gatewaysecurityskill_guard.py (SkillGuard)]] - code - gateway/security/skill_guard.py
-- [[guard()_1]] - code - gateway/tests/test_skill_guard.py
+- [[guard()]] - code - gateway/tests/test_skill_guard.py
 - [[test_skill_guard.py]] - code - gateway/tests/test_skill_guard.py
 
 ## Live Query (requires Dataview plugin)
@@ -69,13 +69,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 43 edges to [[_COMMUNITY_SkillGuard_1]]
-- 24 edges to [[_COMMUNITY_Path_2]]
-- 1 edge to [[_COMMUNITY_TrustConfig]]
+- 42 edges to [[_COMMUNITY_SkillGuard_1]]
+- 25 edges to [[_COMMUNITY_Path_1]]
 - 1 edge to [[_COMMUNITY_ConsentFramework]]
 - 1 edge to [[_COMMUNITY_CrossBotTrustLedger]]
 - 1 edge to [[_COMMUNITY_DifferentialPIIDetector]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher_1]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_TrustConfig]]
 - 1 edge to [[_COMMUNITY_ModeRequest]]
 - 1 edge to [[_COMMUNITY_sync-llm-settings.sh]]
 - 1 edge to [[_COMMUNITY_FetchOutcome_1]]

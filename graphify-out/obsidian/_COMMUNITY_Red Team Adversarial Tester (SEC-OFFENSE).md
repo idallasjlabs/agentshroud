@@ -10,10 +10,10 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_57]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
+- [[Purpose_59]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
 - [[Red Team Adversarial Tester (SEC-OFFENSE)]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
 - [[Related Skills_45]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
-- [[Usage_48]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
+- [[Usage_49]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
 - [[openclawskillsi-sec-offenseREADME]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
 
 ## Live Query (requires Dataview plugin)

@@ -22,7 +22,7 @@ members: 18
 - [[Output Format_20]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
 - [[Persona_6]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
 - [[Quality Checklist_7]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Role_58]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
+- [[Role_59]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
 - [[Socrates — Dialogue Architect_3]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
 - [[Speaker Definitions_1]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
 - [[System Prompt_6]] - document - docker/config/hermes/skills/i-socrates/SKILL.md

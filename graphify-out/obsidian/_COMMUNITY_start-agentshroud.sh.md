@@ -48,7 +48,7 @@ members: 46
 - [[container macro (always-true placeholder inside the gateway)]] - rationale - docker/falco/rules.yaml
 - [[gateway-start.sh]] - code - docker/scripts/gateway-start.sh
 - [[gateway-start.sh script]] - code - docker/scripts/gateway-start.sh
-- [[log()_2]] - code - docker/scripts/security-entrypoint.sh
+- [[log()_1]] - code - docker/scripts/security-entrypoint.sh
 - [[macOS Bridge (localhost-only BlueBubbles webhook relay)]] - concept - docs/archive/SECURITY.md
 - [[op_proxy_read_with_retry()]] - code - docker/scripts/start-agentshroud.sh
 - [[run_op()]] - code - docker/scripts/bot-access-audit.sh
@@ -65,15 +65,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]]
-- 2 edges to [[_COMMUNITY_ServiceManager]]
-- 1 edge to [[_COMMUNITY_dockerscriptssecurity-scan.sh]]
-- 1 edge to [[_COMMUNITY__is_op_reference_allowed]]
+- 2 edges to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]]
+- 2 edges to [[_COMMUNITY_test_soc_realtime_coverage.py_1]]
+- 1 edge to [[_COMMUNITY_FR3 System Integrity]]
 - 1 edge to [[_COMMUNITY_colima-health-check.sh]]
+- 1 edge to [[_COMMUNITY__is_op_reference_allowed]]
+- 1 edge to [[_COMMUNITY_colima-health-check.sh_1]]
 - 1 edge to [[_COMMUNITY_setup-https-proxy.js]]
 
 ## Top bridge nodes
-- [[start-agentshroud.sh]] - degree 29, connects to 4 communities
+- [[start-agentshroud.sh]] - degree 29, connects to 5 communities
 - [[container macro (always-true placeholder inside the gateway)]] - degree 7, connects to 1 community
 - [[security-entrypoint.sh]] - degree 7, connects to 1 community
 - [[Falco Rule Unexpected Outbound Connection]] - degree 2, connects to 1 community

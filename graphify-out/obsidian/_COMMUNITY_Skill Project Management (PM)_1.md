@@ -20,7 +20,7 @@ members: 19
 - [[Quick Status (for chatTelegram)_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
 - [[README.md Updates_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
 - [[Risk Management_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
-- [[Role_53]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Role_54]] - document - docker/config/hermes/skills/i-pm/SKILL.md
 - [[Skill Project Management (PM)_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
 - [[Status Reporting_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
 - [[Task Coordination_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md

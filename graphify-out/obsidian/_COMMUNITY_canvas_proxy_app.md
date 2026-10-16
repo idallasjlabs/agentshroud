@@ -35,7 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_AgentRegistry]]
 - 1 edge to [[_COMMUNITY_test_dns_canvas_coverage.py]]
 - 1 edge to [[_COMMUNITY_HTTPConnectProxy]]
 

@@ -46,7 +46,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 10 edges to [[_COMMUNITY_test_gemini_openai_translator.py_1]]
 - 5 edges to [[_COMMUNITY_test_gemini_openai_translator.py_2]]
-- 1 edge to [[_COMMUNITY_test_claude_via_openai_path.py_1]]
+- 1 edge to [[_COMMUNITY_LLMProxy]]
 - 1 edge to [[_COMMUNITY_test_anthropic_openai_translator.py]]
 
 ## Top bridge nodes

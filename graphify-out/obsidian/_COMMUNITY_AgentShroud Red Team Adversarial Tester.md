@@ -15,7 +15,7 @@ members: 18
 - [[AgentShroud Red Team Adversarial Tester]] - document - .agents/skills/i-sec-offense/SKILL.md
 - [[Attack Phases]] - document - .agents/skills/i-sec-offense/SKILL.md
 - [[Attack Techniques Reference]] - document - .agents/skills/i-sec-offense/SKILL.md
-- [[Coverage Requirements]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Coverage Requirements_1]] - document - .agents/skills/i-sec-offense/SKILL.md
 - [[Critical Rules_4]] - document - .agents/skills/i-sec-offense/SKILL.md
 - [[Infrastructure]] - document - .agents/skills/i-sec-offense/SKILL.md
 - [[Key Principle]] - document - .agents/skills/i-sec-offense/SKILL.md

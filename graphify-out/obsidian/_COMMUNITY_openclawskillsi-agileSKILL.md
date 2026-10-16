@@ -10,7 +10,7 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Skill agile_2]] - document - docker/config/openclaw/skills/i-agile/SKILL.md
+- [[Skill agile_1]] - document - docker/config/openclaw/skills/i-agile/SKILL.md
 - [[openclawskillsi-agileSKILL]] - document - docker/config/openclaw/skills/i-agile/SKILL.md
 
 ## Live Query (requires Dataview plugin)

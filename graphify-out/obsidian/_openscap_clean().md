@@ -16,7 +16,7 @@ tags:
 - [[dot-test_defined_when_all_passing_no_report_on_disk()]] - `calls` [EXTRACTED]
 - [[dot-test_five_when_openscap_clean()]] - `calls` [EXTRACTED]
 - [[dot-test_overall_clean_when_all_clean()]] - `calls` [EXTRACTED]
-- [[Any_71]] - `references` [EXTRACTED]
+- [[Any_66]] - `references` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

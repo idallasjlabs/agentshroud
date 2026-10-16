@@ -11,8 +11,8 @@ members: 99
 
 ## Members
 - [[dot-fmt()]] - code - cli/src/main.rs
+- [[dot-get()_2]] - code - cli/src/main.rs
 - [[dot-get()_3]] - code - cli/src/main.rs
-- [[dot-get()_4]] - code - cli/src/main.rs
 - [[dot-new()]] - code - cli/src/main.rs
 - [[dot-new()_1]] - code - cli/src/main.rs
 - [[dot-new()_2]] - code - cli/src/main.rs
@@ -24,7 +24,7 @@ members: 99
 - [[dot-with()]] - code - cli/src/main.rs
 - [[AddResource]] - code - cli/src/main.rs
 - [[ApprovalAction]] - code - cli/src/main.rs
-- [[Cli_1]] - code - cli/src/main.rs
+- [[Cli]] - code - cli/src/main.rs
 - [[Client]] - code - cli/src/main.rs
 - [[CollabMode]] - code - cli/src/main.rs
 - [[Commands_2]] - code - cli/src/main.rs
@@ -49,7 +49,7 @@ members: 99
 - [[ServiceTarget]] - code - cli/src/main.rs
 - [[SetTarget]] - code - cli/src/main.rs
 - [[String]] - code - cli/src/main.rs
-- [[Value_1]] - code - cli/src/main.rs
+- [[Value_3]] - code - cli/src/main.rs
 - [[Vec]] - code - cli/src/main.rs
 - [[_T]] - code
 - [[approvals_list_empty()]] - code - cli/src/main.rs
@@ -83,7 +83,7 @@ members: 99
 - [[format_status()]] - code - cli/src/main.rs
 - [[format_status_handles_missing_fields()]] - code - cli/src/main.rs
 - [[json_str()]] - code - cli/src/main.rs
-- [[main()_17]] - code - cli/src/main.rs
+- [[main()_15]] - code - cli/src/main.rs
 - [[main.rs]] - code - cli/src/main.rs
 - [[map_http_error()]] - code - cli/src/main.rs
 - [[map_http_error_401_message()]] - code - cli/src/main.rs

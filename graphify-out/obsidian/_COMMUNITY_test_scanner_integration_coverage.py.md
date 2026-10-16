@@ -27,10 +27,10 @@ members: 28
 - [[Redirect every Path(...) constructed inside the module into a sandbox.      Abso]] - rationale - gateway/tests/test_scanner_integration_coverage.py
 - [[Replace _app_state_has with a controllable membership set.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
 - [[Replace shutil.which with a controllable name → path mapping.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
-- [[TestAccessControl]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestAccessControl_1]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[TestAgenticScorers]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[TestAppStateHas]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestComputeScorecard]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestComputeScorecard_1]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[TestDataConfidentiality]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[TestIncidentResponse]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[TestLoggingMonitoring]] - code - gateway/tests/test_scanner_integration_coverage.py
@@ -52,7 +52,7 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_TestAggregateResults]]
 - 2 edges to [[_COMMUNITY_TestIsContainerRunning]]
 - 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
-- 1 edge to [[_COMMUNITY_AgentTarget]]
+- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
 - 1 edge to [[_COMMUNITY_TestComputeBotScorecard]]
 - 1 edge to [[_COMMUNITY_TestProcScans]]
 - 1 edge to [[_COMMUNITY_TestClamavSummary]]
@@ -74,7 +74,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_TestIdentityAuth]]
 - 1 edge to [[_COMMUNITY_TestMandatoryGates]]
 - 1 edge to [[_COMMUNITY_TestSecretsManagement]]
-- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
+- 1 edge to [[_COMMUNITY_AgentTarget]]
 
 ## Top bridge nodes
 - [[test_scanner_integration_coverage.py]] - degree 50, connects to 28 communities
