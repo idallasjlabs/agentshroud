@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
-community: "test_agent_cve_registry.py"
+community: "agent_cve_registry.py"
 location: "L18521"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy
+  - community/agent_cve_registrypy
 ---
 
 # list_cve_agents()
@@ -28,4 +28,4 @@ tags:
 - [[test_list_cve_agents_is_list_of_str()]] - `calls` [EXTRACTED]
 - [[test_list_cve_agents_returns_wrapped_agents_and_security_tools()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy
+#graphify/code #graphify/EXTRACTED #community/agent_cve_registrypy

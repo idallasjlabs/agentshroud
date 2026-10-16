@@ -12,9 +12,9 @@ tags:
 # json_str()
 
 ## Connections
-- [[dot-get()_4]] - `calls` [EXTRACTED]
+- [[dot-get()_3]] - `calls` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
-- [[Value_1]] - `references` [EXTRACTED]
+- [[Value_3]] - `references` [EXTRACTED]
 - [[format_approvals()]] - `calls` [EXTRACTED]
 - [[format_decision()]] - `calls` [EXTRACTED]
 - [[format_deploy_status()]] - `calls` [EXTRACTED]

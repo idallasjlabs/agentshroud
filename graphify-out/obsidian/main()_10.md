@@ -12,7 +12,7 @@ tags:
 # main()
 
 ## Connections
-- [[Path_19]] - `calls` [EXTRACTED]
+- [[Path_24]] - `calls` [EXTRACTED]
 - [[SkillGuard_1]] - `calls` [EXTRACTED]
 - [[_build_tree()]] - `calls` [EXTRACTED]
 - [[_print_findings()]] - `calls` [EXTRACTED]

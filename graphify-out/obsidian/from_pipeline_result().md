@@ -12,7 +12,7 @@ tags:
 # from_pipeline_result()
 
 ## Connections
-- [[Any_44]] - `references` [EXTRACTED]
+- [[Any_52]] - `references` [EXTRACTED]
 - [[Convert a PipelineResult to SecurityEvent.]] - `rationale_for` [EXTRACTED]
 - [[SecurityEvent]] - `references` [EXTRACTED]
 - [[SecurityEvent_1]] - `calls` [EXTRACTED]

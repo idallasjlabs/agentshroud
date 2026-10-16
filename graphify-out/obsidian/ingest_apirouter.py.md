@@ -12,12 +12,12 @@ tags:
 # ingest_api/router.py
 
 ## Connections
-- [[AgentTarget_1]] - `imports` [EXTRACTED]
+- [[AgentTarget_3]] - `imports` [EXTRACTED]
 - [[CREDENTIAL-SECURITY-POLICY]] - `references` [EXTRACTED]
 - [[ForwardError]] - `contains` [EXTRACTED]
-- [[ForwardRequest_1]] - `imports` [EXTRACTED]
+- [[ForwardRequest_3]] - `imports` [EXTRACTED]
 - [[MultiAgentRouter]] - `contains` [EXTRACTED]
-- [[RouterConfig_1]] - `imports` [EXTRACTED]
+- [[RouterConfig]] - `imports` [EXTRACTED]
 - [[RouterError]] - `contains` [EXTRACTED]
 - [[forward.py]] - `imports_from` [EXTRACTED]
 - [[gatewayREADME]] - `references` [EXTRACTED]

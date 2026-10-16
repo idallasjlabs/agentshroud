@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[ReportStore]] - `calls` [EXTRACTED]
-- [[TestPersistence_1]] - `method` [EXTRACTED]
+- [[TestPersistence_2]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ReportStore

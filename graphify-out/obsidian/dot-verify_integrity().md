@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-load_latest()]] - `calls` [EXTRACTED]
-- [[dot-verify_chain()_2]] - `calls` [EXTRACTED]
-- [[CompetitiveIntelReport_1]] - `method` [EXTRACTED]
+- [[dot-verify_chain()]] - `calls` [EXTRACTED]
+- [[CompetitiveIntelReport_2]] - `method` [EXTRACTED]
 - [[Return True iff the stored content_hash matches recomputation.]] - `rationale_for` [EXTRACTED]
 - [[_compute_hash()]] - `calls` [EXTRACTED]
 

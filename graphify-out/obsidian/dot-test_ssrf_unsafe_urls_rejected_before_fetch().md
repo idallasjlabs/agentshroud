@@ -15,6 +15,6 @@ tags:
 - [[CitationVerifier]] - `calls` [EXTRACTED]
 - [[DraftEntry]] - `calls` [EXTRACTED]
 - [[TestVerifyEntry]] - `method` [EXTRACTED]
-- [[_FakeFetcher_1]] - `calls` [EXTRACTED]
+- [[_FakeFetcher]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy

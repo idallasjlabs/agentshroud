@@ -1,20 +1,18 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "gateway/security/delegation.py"
 type: "code"
-community: "plan_remediation"
-location: "L153"
+community: "DelegationManager"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/DelegationManager
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_81]] - `references` [EXTRACTED]
-- [[RemediationPlan dataclass]] - `method` [EXTRACTED]
-- [[Serialise for the unattended run's audit trail.]] - `rationale_for` [EXTRACTED]
-- [[main()_32]] - `calls` [EXTRACTED]
+- [[dot-_save()]] - `calls` [EXTRACTED]
+- [[Delegation_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/DelegationManager

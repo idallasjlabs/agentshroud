@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AWS Cloud Management & FinOps Agent_1]] - `contains` [EXTRACTED]
-- [[Apollo — Audio Systems Producer_2]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_3]] - `contains` [EXTRACTED]
 - [[Atlas — Curriculum Architect_4]] - `contains` [EXTRACTED]
 - [[Expected output]] - `contains` [EXTRACTED]
 - [[Expected ok]] - `contains` [EXTRACTED]
@@ -27,7 +27,7 @@ tags:
 - [[Skill Audit Branch (AB) — Merge Regression Detection_1]] - `contains` [EXTRACTED]
 - [[Skill Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
 - [[Skill CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
-- [[Skill Code Review (CR)_2]] - `contains` [EXTRACTED]
+- [[Skill Code Review (CR)_1]] - `contains` [EXTRACTED]
 - [[Skill Create PR with Pre-Flight Audit (CRPR)_1]] - `contains` [EXTRACTED]
 - [[Skill Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
 - [[Skill Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
@@ -45,7 +45,7 @@ tags:
 - [[Skill Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
 - [[Skill UI Expert (UI)_1]] - `contains` [EXTRACTED]
 - [[Skill UX Expert (UX)_1]] - `contains` [EXTRACTED]
-- [[Skill agile]] - `contains` [EXTRACTED]
+- [[Skill agile_2]] - `contains` [EXTRACTED]
 - [[Skill bdd]] - `contains` [EXTRACTED]
 - [[Skill cd]] - `contains` [EXTRACTED]
 - [[Skill ci]] - `contains` [EXTRACTED]

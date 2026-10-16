@@ -15,6 +15,6 @@ tags:
 - [[EnvironmentGuard]] - `references` [EXTRACTED]
 - [[Get the global environment guard instance.]] - `rationale_for` [EXTRACTED]
 - [[check_command()]] - `calls` [EXTRACTED]
-- [[env_guard.py_2]] - `contains` [EXTRACTED]
+- [[env_guard.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/KeyVault

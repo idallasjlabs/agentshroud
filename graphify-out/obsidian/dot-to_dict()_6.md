@@ -12,7 +12,7 @@ tags:
 # .to_dict()
 
 ## Connections
-- [[Any_41]] - `references` [EXTRACTED]
+- [[Any_19]] - `references` [EXTRACTED]
 - [[Convert configuration to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
 - [[KillSwitchConfig_1]] - `method` [EXTRACTED]
 

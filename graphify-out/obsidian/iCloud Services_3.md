@@ -1,25 +1,17 @@
 ---
-source_file: "skills/custom/icloud/SKILL.md"
+source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "iCloud Services"
-location: "L6"
+community: "Apple Services Setup Guide"
+location: "L162"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/Apple_Services_Setup_Guide
 ---
 
 # iCloud Services
 
 ## Connections
-- [[Calendar Operations_3]] - `contains` [EXTRACTED]
-- [[Configuration_4]] - `contains` [EXTRACTED]
-- [[Contact Operations_3]] - `contains` [EXTRACTED]
-- [[Mail Operations_3]] - `contains` [EXTRACTED]
-- [[Notes Operations_3]] - `contains` [EXTRACTED]
-- [[Security_9]] - `contains` [EXTRACTED]
-- [[Setup_3]] - `contains` [EXTRACTED]
-- [[Troubleshooting_25]] - `contains` [EXTRACTED]
-- [[icloudSKILL]] - `contains` [EXTRACTED]
+- [[📋 Setup Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide

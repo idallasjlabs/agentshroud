@@ -12,7 +12,7 @@ tags:
 # health_check_detail()
 
 ## Connections
-- [[AuthRequired_2]] - `references` [EXTRACTED]
+- [[AuthRequired_4]] - `references` [EXTRACTED]
 - [[Detailed health check endpoint — authentication required.      Returns full syst]] - `rationale_for` [EXTRACTED]
 - [[StatusResponse]] - `calls` [EXTRACTED]
 - [[health.py]] - `contains` [EXTRACTED]

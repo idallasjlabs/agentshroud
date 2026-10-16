@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/openclaw_triage.sh"
+source_file: "docker/scripts/security-report.sh"
 type: "code"
-community: "openclaw_triage.sh"
-location: "L10"
+community: "FR3: System Integrity"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw_triagesh
+  - community/FR3_System_Integrity
 ---
 
 # log()
 
 ## Connections
-- [[openclaw_triage.sh]] - `defines` [EXTRACTED]
-- [[openclaw_triage.sh script]] - `calls` [EXTRACTED]
+- [[security-report.sh]] - `defines` [EXTRACTED]
+- [[security-report.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw_triagesh
+#graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity

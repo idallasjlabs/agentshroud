@@ -12,9 +12,9 @@ tags:
 # .test_write_baseline_json()
 
 ## Connections
-- [[PromptGuard_1]] - `calls` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
 - [[Run standard benchmarks and write results to .benchmarksbaseline-v1.0.0.json.]] - `rationale_for` [EXTRACTED]
 - [[TestBenchmarkBaseline]] - `method` [EXTRACTED]
-- [[TrustManager_1]] - `calls` [EXTRACTED]
+- [[TrustManager]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PIIConfig

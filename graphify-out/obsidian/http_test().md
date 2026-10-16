@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/container-net-diag.sh"
 type: "code"
-community: "container-net-diag.sh"
+community: "colima-health-check.sh"
 location: "L399"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/container-net-diagsh
+  - community/colima-health-checksh
 ---
 
 # http_test()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[container-net-diag.sh]] - `defines` [EXTRACTED]
 - [[container-net-diag.sh script]] - `calls` [EXTRACTED]
-- [[fail()_4]] - `calls` [EXTRACTED]
-- [[has()_1]] - `calls` [EXTRACTED]
+- [[fail()_3]] - `calls` [EXTRACTED]
+- [[has()]] - `calls` [EXTRACTED]
 - [[pass()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/container-net-diagsh
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh

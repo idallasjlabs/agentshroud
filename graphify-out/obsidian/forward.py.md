@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "forward.py"
+community: "test_forward_stream.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/forwardpy
+  - community/test_forward_streampy
 ---
 
 # forward.py
 
 ## Connections
-- [[AgentTarget_1]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_4]] - `imports` [EXTRACTED]
+- [[AgentTarget_3]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_5]] - `imports` [EXTRACTED]
 - [[EmailSendRequest_1]] - `imports` [EXTRACTED]
 - [[EmailSendResponse]] - `imports` [EXTRACTED]
 - [[ForwardError]] - `imports` [EXTRACTED]
-- [[ForwardRequest_1]] - `imports` [EXTRACTED]
+- [[ForwardRequest_3]] - `imports` [EXTRACTED]
 - [[ForwardResponse]] - `imports` [EXTRACTED]
 - [[GatewayEmailService_1]] - `imports` [EXTRACTED]
 - [[OwnerEmailRequest]] - `contains` [EXTRACTED]
@@ -50,4 +50,4 @@ tags:
 - [[test_forward_routing.py]] - `imports_from` [EXTRACTED]
 - [[webhook_receiver.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/forwardpy
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy

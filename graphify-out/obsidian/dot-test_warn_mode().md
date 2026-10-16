@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Test warn mode that marks but preserves external content.]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
+- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
 - [[ToolResultSanitizer_1]] - `calls` [EXTRACTED]
 - [[ToolResultSanitizerConfig]] - `calls` [EXTRACTED]
 

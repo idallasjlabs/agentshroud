@@ -12,7 +12,7 @@ tags:
 # .validate_cwd()
 
 ## Connections
-- [[SSHProxy_1]] - `method` [EXTRACTED]
+- [[SSHProxy]] - `method` [EXTRACTED]
 - [[Validate a remote working-directory path.  Must be absolute and shell-safe.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

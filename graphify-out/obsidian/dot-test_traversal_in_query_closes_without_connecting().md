@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_mock_websocket()]] - `calls` [EXTRACTED]
 - [[TestHermesDashboardWsProxy]] - `method` [EXTRACTED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[asyncio]] - `references` [EXTRACTED]
 - [[hermes_dashboard_ws_proxy (WebSocket relay)]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_main_endpointspy

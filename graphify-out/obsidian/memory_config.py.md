@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[MemoryIntegrityConfig_1]] - `contains` [EXTRACTED]
-- [[MemoryLifecycleConfig_1]] - `contains` [EXTRACTED]
+- [[MemoryLifecycleConfig]] - `contains` [EXTRACTED]
 - [[MemorySecurityConfig]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

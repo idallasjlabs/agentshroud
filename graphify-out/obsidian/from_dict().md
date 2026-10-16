@@ -12,7 +12,7 @@ tags:
 # from_dict()
 
 ## Connections
-- [[Any_44]] - `references` [EXTRACTED]
+- [[Any_52]] - `references` [EXTRACTED]
 - [[Best-effort conversion of arbitrary event dict to SecurityEvent.]] - `rationale_for` [EXTRACTED]
 - [[SecurityEvent]] - `references` [EXTRACTED]
 - [[SecurityEvent_1]] - `calls` [EXTRACTED]

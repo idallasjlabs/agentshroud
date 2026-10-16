@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "RBACConfig"
+community: "UserSessionManager"
 location: "L134"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/UserSessionManager
 ---
 
 # .test_user_sees_own_private_memory()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMergedMemory]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

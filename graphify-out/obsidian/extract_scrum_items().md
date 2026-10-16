@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Extract SCRUM-n keys mentioned in commit subjects.]] - `rationale_for` [EXTRACTED]
 - [[jira_weekly_review.py]] - `contains` [EXTRACTED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/jira_weekly_reviewpy

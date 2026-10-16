@@ -1,17 +1,20 @@
 ---
-source_file: "tests/startup_smoke/test_setup_secrets.sh"
+source_file: "docker/scripts/container-net-diag.sh"
 type: "code"
-community: "test_setup_secrets.sh"
-location: "L43"
+community: "colima-health-check.sh"
+location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_setup_secretssh
+  - community/colima-health-checksh
 ---
 
 # has()
 
 ## Connections
-- [[test_setup_secrets.sh]] - `defines` [EXTRACTED]
+- [[container-net-diag.sh]] - `defines` [EXTRACTED]
+- [[container-net-diag.sh script]] - `calls` [EXTRACTED]
+- [[http_test()]] - `calls` [EXTRACTED]
+- [[tcp_test()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_setup_secretssh
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh

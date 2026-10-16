@@ -12,7 +12,7 @@ tags:
 # forwarder()
 
 ## Connections
-- [[_StubForwarder]] - `references` [EXTRACTED]
+- [[_StubForwarder_1]] - `references` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

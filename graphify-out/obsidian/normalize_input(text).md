@@ -12,6 +12,6 @@ tags:
 # normalize_input(text)
 
 ## Connections
-- [[Function Details_33]] - `contains` [EXTRACTED]
+- [[Function Details_34]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/input_normalizerpy

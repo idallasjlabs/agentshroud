@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[scriptssecurity-scan.sh]] - `defines` [EXTRACTED]
-- [[security-scan.sh script_1]] - `calls` [EXTRACTED]
+- [[security-scan.sh script]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/scripts/security-scansh

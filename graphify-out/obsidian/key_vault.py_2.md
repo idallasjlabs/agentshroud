@@ -1,28 +1,25 @@
 ---
-source_file: "gateway/security/key_vault.py"
-type: "code"
-community: "KeyVault"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
+type: "document"
+community: "Function Details"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/Function_Details
 ---
 
 # key_vault.py
 
 ## Connections
-- [[FR4 Data Confidentiality]] - `references` [EXTRACTED]
-- [[KeyAuditEvent]] - `contains` [EXTRACTED]
-- [[KeyEntry]] - `contains` [EXTRACTED]
-- [[KeyInjector]] - `contains` [EXTRACTED]
-- [[KeyLeakDetector]] - `contains` [EXTRACTED]
-- [[KeyScope]] - `contains` [EXTRACTED]
-- [[KeyVault]] - `contains` [EXTRACTED]
-- [[KeyVaultConfig]] - `contains` [EXTRACTED]
-- [[LeakScanResult]] - `contains` [EXTRACTED]
-- [[egress_monitor.py]] - `references` [EXTRACTED]
-- [[env_guard.py_2]] - `semantically_similar_to` [INFERRED]
-- [[log_sanitizer.py]] - `semantically_similar_to` [INFERRED]
+- [[Configuration  Environment Variables_1]] - `contains` [EXTRACTED]
+- [[Function Details_7]] - `contains` [EXTRACTED]
+- [[Generic Key Patterns Detected]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_7]] - `contains` [EXTRACTED]
+- [[Purpose_110]] - `contains` [EXTRACTED]
+- [[Related_11]] - `contains` [EXTRACTED]
+- [[Responsibilities_9]] - `contains` [EXTRACTED]
+- [[Threat Model_7]] - `contains` [EXTRACTED]
+- [[key_vault.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/document #graphify/EXTRACTED #community/Function_Details

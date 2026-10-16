@@ -12,7 +12,7 @@ tags:
 # .test_write_file_oserror_from_subprocess()
 
 ## Connections
-- [[SSHProxy_1]] - `calls` [EXTRACTED]
+- [[SSHProxy]] - `calls` [EXTRACTED]
 - [[TestSSHProxyWriteFileTransport]] - `method` [EXTRACTED]
 - [[_b64()]] - `calls` [EXTRACTED]
 - [[ssh binary missing  spawn failure surfaces as exit_code=-1 with         the OSE]] - `rationale_for` [EXTRACTED]

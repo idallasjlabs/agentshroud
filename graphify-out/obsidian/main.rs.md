@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AddResource]] - `contains` [EXTRACTED]
 - [[ApprovalAction]] - `contains` [EXTRACTED]
-- [[Cli_1]] - `contains` [EXTRACTED]
+- [[Cli]] - `contains` [EXTRACTED]
 - [[CollabMode]] - `contains` [EXTRACTED]
 - [[Commands_3]] - `contains` [EXTRACTED]
 - [[FakeTransport]] - `contains` [EXTRACTED]
@@ -61,7 +61,7 @@ tags:
 - [[format_status()]] - `contains` [EXTRACTED]
 - [[format_status_handles_missing_fields()]] - `contains` [EXTRACTED]
 - [[json_str()]] - `contains` [EXTRACTED]
-- [[main()_17]] - `contains` [EXTRACTED]
+- [[main()_15]] - `contains` [EXTRACTED]
 - [[map_http_error()]] - `contains` [EXTRACTED]
 - [[map_http_error_401_message()]] - `contains` [EXTRACTED]
 - [[map_http_error_generic_status()]] - `contains` [EXTRACTED]

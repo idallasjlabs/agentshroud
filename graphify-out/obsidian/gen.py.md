@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[default_out_dir()]] - `contains` [EXTRACTED]
 - [[get_model_defaults()]] - `contains` [EXTRACTED]
-- [[main()_15]] - `contains` [EXTRACTED]
+- [[main()_16]] - `contains` [EXTRACTED]
 - [[openai-image-genSKILL]] - `references` [EXTRACTED]
 - [[pick_prompts()]] - `contains` [EXTRACTED]
 - [[request_images()]] - `contains` [EXTRACTED]

@@ -12,8 +12,8 @@ tags:
 # get_fluent_bit_summary()
 
 ## Connections
-- [[Any_70]] - `references` [EXTRACTED]
-- [[Path_33]] - `calls` [EXTRACTED]
+- [[Any_65]] - `references` [EXTRACTED]
+- [[Path_51]] - `calls` [EXTRACTED]
 - [[Return Fluent Bit log collector status.      Fluent Bit is a log shipper, not a]] - `rationale_for` [EXTRACTED]
 - [[_is_fluent_bit_running()]] - `calls` [EXTRACTED]
 - [[aggregate_results()]] - `calls` [EXTRACTED]

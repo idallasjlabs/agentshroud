@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_browser_security.py"
+source_file: "gateway/tests/test_context_integrity.py"
 type: "code"
-community: "ConsentFramework"
-location: "L26"
+community: "ContextSegment"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/ContextSegment
 ---
 
 # guard()
 
 ## Connections
-- [[BrowserSecurityGuard]] - `calls` [EXTRACTED]
-- [[test_browser_security.py]] - `contains` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[test_context_integrity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConsentFramework
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

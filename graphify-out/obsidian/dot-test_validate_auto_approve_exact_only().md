@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "SSHHostConfig"
+community: "ApprovalQueueConfig"
 location: "L190"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHHostConfig
+  - community/ApprovalQueueConfig
 ---
 
 # .test_validate_auto_approve_exact_only()
 
 ## Connections
 - [[Auto-approve must be exact match, not prefix (Finding 3)]] - `rationale_for` [EXTRACTED]
-- [[SSHProxy]] - `references` [EXTRACTED]
+- [[SSHProxy_1]] - `references` [EXTRACTED]
 - [[TestInjectionNewline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHHostConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

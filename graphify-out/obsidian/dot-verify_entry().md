@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "api.py"
+community: "CompetitiveIntelReport"
 location: "L187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/CompetitiveIntelReport
 ---
 
 # .verify_entry()
@@ -19,4 +19,4 @@ tags:
 - [[DraftEntry]] - `references` [EXTRACTED]
 - [[Return a CompetitorEntry with only its valid citations, or None.          None m]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

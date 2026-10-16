@@ -15,9 +15,9 @@ tags:
 - [[AuthRequired]] - `references` [EXTRACTED]
 - [[MCP tool result outbound audit endpoint. Receives a tool result from the bot's…]] - `rationale_for` [EXTRACTED]
 - [[MCPResultRequest]] - `references` [EXTRACTED]
-- [[Request]] - `references` [EXTRACTED]
+- [[Request_1]] - `references` [EXTRACTED]
 - [[_resolve_effective_agent_id()]] - `calls` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
-- [[post_1]] - `references` [EXTRACTED]
+- [[post]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy

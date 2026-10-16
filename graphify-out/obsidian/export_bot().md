@@ -12,11 +12,11 @@ tags:
 # export_bot()
 
 ## Connections
-- [[Path_41]] - `references` [EXTRACTED]
+- [[Path_43]] - `references` [EXTRACTED]
 - [[Why report .md source files stand in for a missing sent-mail ledger]] - `rationale_for` [EXTRACTED]
 - [[_list_report_files()]] - `calls` [EXTRACTED]
 - [[_report_date()]] - `calls` [EXTRACTED]
-- [[datetime_5]] - `references` [EXTRACTED]
+- [[datetime_7]] - `references` [EXTRACTED]
 - [[export-email-reports.py]] - `contains` [EXTRACTED]
 - [[main()_21]] - `calls` [EXTRACTED]
 

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "AgentTarget"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/AgentTarget
 ---
 
 # .validate_targets()
 
 ## Connections
-- [[RouterConfig_1]] - `method` [EXTRACTED]
+- [[RouterConfig]] - `method` [EXTRACTED]
 - [[Validate that each target URL uses httphttps and targets an internal Docker hos]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

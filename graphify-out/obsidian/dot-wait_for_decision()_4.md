@@ -12,7 +12,7 @@ tags:
 # .wait_for_decision()
 
 ## Connections
-- [[EnhancedApprovalQueue_2]] - `method` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
 - [[Wait for an approval decision.          Returns             True if approved, F]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

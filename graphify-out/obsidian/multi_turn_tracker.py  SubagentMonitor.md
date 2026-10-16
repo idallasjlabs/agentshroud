@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "RovoBlast Attack (Atlassian Rovo AI)"
+community: "A2AMethod"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RovoBlast_Attack_Atlassian_Rovo_AI
+  - community/A2AMethod
 ---
 
 # multi_turn_tracker.py / SubagentMonitor
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Cross-Turn Correlation Capability]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RovoBlast_Attack_Atlassian_Rovo_AI
+#graphify/code #graphify/EXTRACTED #community/A2AMethod

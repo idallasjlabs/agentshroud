@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "TrustConfig"
+community: "PIIConfig"
 location: "L191"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/PIIConfig
 ---
 
 # .test_trust_update_performance()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[1000 trust updates (mix of successfailure).]] - `rationale_for` [EXTRACTED]
 - [[TestTrustManagerPerformance]] - `method` [EXTRACTED]
-- [[TrustManager_1]] - `calls` [EXTRACTED]
+- [[TrustManager]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

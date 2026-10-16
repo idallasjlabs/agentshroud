@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AgentRegistry"
 location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AgentRegistry
 ---
 
 # lifespan()
@@ -33,12 +33,12 @@ tags:
 - [[DifferentialPIIDetector_1]] - `calls` [EXTRACTED]
 - [[DriftDetector]] - `calls` [EXTRACTED]
 - [[EgressApprovalQueue]] - `calls` [EXTRACTED]
-- [[EgressFilter_1]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
 - [[EgressPolicy]] - `calls` [EXTRACTED]
 - [[EgressTelegramNotifier]] - `calls` [EXTRACTED]
 - [[EncodingDetector]] - `calls` [EXTRACTED]
 - [[EncryptedStore]] - `calls` [EXTRACTED]
-- [[EnhancedApprovalQueue_2]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
 - [[EnvelopeSigner]] - `calls` [EXTRACTED]
 - [[EventBus]] - `calls` [EXTRACTED]
 - [[FastAPI]] - `references` [EXTRACTED]
@@ -53,11 +53,11 @@ tags:
 - [[KillSwitchMonitor]] - `calls` [EXTRACTED]
 - [[LLMProxy]] - `calls` [EXTRACTED]
 - [[MCPPolicyEngine_1]] - `calls` [EXTRACTED]
-- [[MCPProxy_1]] - `calls` [EXTRACTED]
+- [[MCPProxy]] - `calls` [EXTRACTED]
 - [[MCPProxyConfig_3]] - `calls` [EXTRACTED]
 - [[MemoryIntegrityConfig_1]] - `calls` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `calls` [EXTRACTED]
-- [[MemoryLifecycleConfig_1]] - `calls` [EXTRACTED]
+- [[MemoryLifecycleConfig]] - `calls` [EXTRACTED]
 - [[MemoryLifecycleManager]] - `calls` [EXTRACTED]
 - [[MiddlewareManager]] - `calls` [EXTRACTED]
 - [[MultiAgentRouter]] - `calls` [EXTRACTED]
@@ -67,20 +67,20 @@ tags:
 - [[PIISanitizer_2]] - `calls` [EXTRACTED]
 - [[PrivacyPolicyEnforcer]] - `calls` [EXTRACTED]
 - [[ProgressiveTrustConfig_2]] - `calls` [EXTRACTED]
-- [[PromptGuard_1]] - `calls` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
 - [[PromptProtection]] - `calls` [EXTRACTED]
 - [[RBACConfig_4]] - `calls` [EXTRACTED]
 - [[RateLimitConfig]] - `calls` [EXTRACTED]
 - [[RateLimitGuard]] - `calls` [EXTRACTED]
 - [[ReportStore]] - `calls` [EXTRACTED]
-- [[SSHProxy_1]] - `calls` [EXTRACTED]
+- [[SSHProxy]] - `calls` [EXTRACTED]
 - [[SecurityPipeline_2]] - `calls` [EXTRACTED]
 - [[ToolACLEnforcer]] - `calls` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
-- [[TrustManager_1]] - `calls` [EXTRACTED]
+- [[TrustManager]] - `calls` [EXTRACTED]
 - [[UserSessionManager]] - `calls` [EXTRACTED]
 - [[WebProxy]] - `calls` [EXTRACTED]
-- [[WebProxyConfig]] - `calls` [EXTRACTED]
+- [[WebProxyConfig_1]] - `calls` [EXTRACTED]
 - [[XMLLeakFilter]] - `calls` [EXTRACTED]
 - [[_build_per_bot_telegram_tokens()]] - `calls` [EXTRACTED]
 - [[_install_uvicorn_warning_filter()]] - `calls` [EXTRACTED]
@@ -96,4 +96,4 @@ tags:
 - [[setup_resource_guard()]] - `calls` [EXTRACTED]
 - [[start_dns_forwarder()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

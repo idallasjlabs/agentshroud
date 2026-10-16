@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "RBACConfig"
+community: "UserSessionManager"
 location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/UserSessionManager
 ---
 
 # .test_strip_private_section()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPrivateContentDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

@@ -12,7 +12,7 @@ tags:
 # .verify_volume_isolation()
 
 ## Connections
-- [[dot-get()_2]] - `calls` [EXTRACTED]
+- [[dot-get()_1]] - `calls` [EXTRACTED]
 - [[dot-list_agents()]] - `calls` [EXTRACTED]
 - [[dot-verify_shared_nothing()]] - `calls` [EXTRACTED]
 - [[IsolationCheck]] - `references` [EXTRACTED]

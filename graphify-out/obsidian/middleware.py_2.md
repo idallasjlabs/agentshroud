@@ -1,28 +1,20 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
 type: "document"
-community: "middleware.py"
-location: "L10"
+community: "MiddlewareManager"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/MiddlewareManager
 ---
 
-# middleware.py
+# middleware.py.md
 
 ## Connections
-- [[Config Keys Read_1]] - `contains` [EXTRACTED]
-- [[Environment Variables Used_3]] - `contains` [EXTRACTED]
-- [[FileSandbox Configuration (hardcoded in __init__)]] - `contains` [EXTRACTED]
-- [[Imports From  Exports To_1]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_14]] - `contains` [EXTRACTED]
-- [[Known Issues  Notes_2]] - `contains` [EXTRACTED]
-- [[Purpose_117]] - `contains` [EXTRACTED]
-- [[Related_18]] - `contains` [EXTRACTED]
-- [[Responsibilities_15]] - `contains` [EXTRACTED]
-- [[Security Modules Initialized]] - `contains` [EXTRACTED]
-- [[middleware.py_1]] - `contains` [EXTRACTED]
-- [[process_request Flow]] - `contains` [EXTRACTED]
+- [[MiddlewareManager]] - `references` [EXTRACTED]
+- [[MiddlewareResult]] - `references` [EXTRACTED]
+- [[main.py]] - `references` [EXTRACTED]
+- [[middleware.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/middlewarepy
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager

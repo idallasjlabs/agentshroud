@@ -22,6 +22,6 @@ tags:
 - [[ingest_apirouter.py]] - `references` [EXTRACTED]
 - [[ledger.py_1]] - `references` [EXTRACTED]
 - [[queue.py]] - `references` [EXTRACTED]
-- [[sanitizer.py_2]] - `references` [EXTRACTED]
+- [[sanitizer.py]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/DataLedger

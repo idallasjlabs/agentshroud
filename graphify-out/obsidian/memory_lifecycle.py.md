@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[ContentThreat]] - `contains` [EXTRACTED]
 - [[ContentThreatType]] - `contains` [EXTRACTED]
-- [[Enum_1]] - `imports_from` [EXTRACTED]
-- [[MemoryLifecycleConfig_1]] - `imports` [EXTRACTED]
+- [[Enum_3]] - `imports_from` [EXTRACTED]
+- [[MemoryLifecycleConfig]] - `imports` [EXTRACTED]
 - [[MemoryLifecycleManager]] - `contains` [EXTRACTED]
 - [[RetentionAction]] - `contains` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports_from` [EXTRACTED]

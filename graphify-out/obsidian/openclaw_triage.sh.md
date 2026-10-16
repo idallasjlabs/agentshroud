@@ -12,7 +12,7 @@ tags:
 # openclaw_triage.sh
 
 ## Connections
-- [[log()_3]] - `defines` [EXTRACTED]
+- [[log()_2]] - `defines` [EXTRACTED]
 - [[openclaw_triage.sh script]] - `contains` [EXTRACTED]
 - [[save_cmd()]] - `defines` [EXTRACTED]
 - [[save_shell()]] - `defines` [EXTRACTED]

@@ -12,6 +12,6 @@ tags:
 # hermes/skills/i-agile/SKILL.md
 
 ## Connections
-- [[Skill agile]] - `contains` [EXTRACTED]
+- [[Skill agile_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

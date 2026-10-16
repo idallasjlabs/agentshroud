@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "PrivacyPolicyEnforcer"
+community: "RBACConfig"
 location: "L156"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/RBACConfig
 ---
 
 # .test_should_not_audit_unknown_service()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAuditAndAlert]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

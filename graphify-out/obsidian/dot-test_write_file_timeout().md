@@ -12,7 +12,7 @@ tags:
 # .test_write_file_timeout()
 
 ## Connections
-- [[SSHProxy_1]] - `calls` [EXTRACTED]
+- [[SSHProxy]] - `calls` [EXTRACTED]
 - [[TestSSHProxyWriteFileTransport]] - `method` [EXTRACTED]
 - [[_b64()]] - `calls` [EXTRACTED]
 

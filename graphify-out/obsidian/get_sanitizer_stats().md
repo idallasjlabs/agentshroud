@@ -12,8 +12,8 @@ tags:
 # get_sanitizer_stats()
 
 ## Connections
-- [[dot-_compile_patterns()_1]] - `calls` [EXTRACTED]
-- [[Any_61]] - `references` [EXTRACTED]
+- [[dot-_compile_patterns()]] - `calls` [EXTRACTED]
+- [[Any_3]] - `references` [EXTRACTED]
 - [[Get statistics about sanitization patterns.]] - `rationale_for` [EXTRACTED]
 - [[LogSanitizer]] - `calls` [EXTRACTED]
 - [[log_sanitizer.py]] - `contains` [EXTRACTED]

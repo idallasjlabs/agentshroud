@@ -12,6 +12,6 @@ tags:
 # openclaw/skills/i-agile/SKILL.md
 
 ## Connections
-- [[Skill agile_2]] - `contains` [EXTRACTED]
+- [[Skill agile_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-agile/SKILLmd

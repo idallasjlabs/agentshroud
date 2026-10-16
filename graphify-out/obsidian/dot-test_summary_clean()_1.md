@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "parse_trivy_output"
-location: "L147"
+community: "test_security_toolchain.py"
+location: "L706"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_trivy_output
+  - community/test_security_toolchainpy
 ---
 
 # .test_summary_clean()
 
 ## Connections
-- [[TestTrivySummary_1]] - `method` [EXTRACTED]
-- [[parse_trivy_output()]] - `calls` [EXTRACTED]
+- [[TestWazuhSummary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_trivy_output
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

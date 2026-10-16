@@ -19,9 +19,9 @@ tags:
 - [[Imports From  Exports To_7]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_45]] - `contains` [EXTRACTED]
 - [[Known Issues  Notes_8]] - `contains` [EXTRACTED]
-- [[Purpose_169]] - `contains` [EXTRACTED]
+- [[Purpose_179]] - `contains` [EXTRACTED]
 - [[Related_49]] - `contains` [EXTRACTED]
-- [[Responsibilities_45]] - `contains` [EXTRACTED]
+- [[Responsibilities_47]] - `contains` [EXTRACTED]
 - [[event_bus.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/event_buspy

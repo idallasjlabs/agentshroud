@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_blocking_prompt_guard()]] - `calls` [EXTRACTED]
-- [[dot-_passthrough_pii()]] - `calls` [EXTRACTED]
+- [[dot-_passthrough_pii()_1]] - `calls` [EXTRACTED]
 - [[SecurityPipeline_2]] - `calls` [EXTRACTED]
 - [[TestPromptGuardToolResultTrustGate]] - `method` [EXTRACTED]
 - [[UNTRUSTED source tool-result injection scan blocks as before (CVE-2026-31045).]] - `rationale_for` [EXTRACTED]

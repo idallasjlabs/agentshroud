@@ -17,7 +17,6 @@ tags:
 - [[dot-test_traversal_in_path_closes_without_connecting()]] - `calls` [EXTRACTED]
 - [[dot-test_traversal_in_query_closes_without_connecting()]] - `calls` [EXTRACTED]
 - [[dot-test_upstream_connect_failure_closes_gracefully()]] - `calls` [EXTRACTED]
-- [[Hermes Conduit (iOS app)]] - `references` [EXTRACTED]
 - [[Relay the Hermes dashboard's WebSocket channels (apiws, apipub) through the…]] - `rationale_for` [EXTRACTED]
 - [[TestHermesDashboardWsProxy]] - `calls` [EXTRACTED]
 - [[_client_to_upstream()]] - `contains` [EXTRACTED]
@@ -25,6 +24,6 @@ tags:
 - [[hermes_dashboard_proxy (hermes-dashboard{path} HTTP reverse proxy)]] - `shares_data_with` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[test_main_endpoints.py]] - `imports` [EXTRACTED]
-- [[websocket_8]] - `references` [EXTRACTED]
+- [[websocket_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_main_endpointspy

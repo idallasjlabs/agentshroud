@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_take_screenshot()_1]] - `calls` [EXTRACTED]
 - [[dot-click()_1]] - `calls` [EXTRACTED]
-- [[dot-close()_6]] - `calls` [EXTRACTED]
+- [[dot-close()_3]] - `calls` [EXTRACTED]
 - [[dot-extract()_1]] - `calls` [EXTRACTED]
 - [[dot-fill_field()_1]] - `calls` [EXTRACTED]
 - [[dot-navigate()_1]] - `calls` [EXTRACTED]

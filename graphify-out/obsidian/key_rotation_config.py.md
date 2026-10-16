@@ -12,7 +12,7 @@ tags:
 # key_rotation_config.py
 
 ## Connections
-- [[CredentialRotationPolicy]] - `contains` [EXTRACTED]
+- [[CredentialRotationPolicy_1]] - `contains` [EXTRACTED]
 - [[KeyRotationConfig_1]] - `contains` [EXTRACTED]
 - [[key_rotation.py]] - `imports_from` [EXTRACTED]
 

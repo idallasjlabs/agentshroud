@@ -12,7 +12,7 @@ tags:
 # get_agent_cve_summary()
 
 ## Connections
-- [[Any_58]] - `references` [EXTRACTED]
+- [[Any_56]] - `references` [EXTRACTED]
 - [[Return a summary of the advisory registry for the specified agent.      Counts a]] - `rationale_for` [EXTRACTED]
 - [[_AGENT_CVE_REGISTRIES]] - `calls` [EXTRACTED]
 - [[_HERMES_CVE_REGISTRY (HERMES_CVE_REGISTRY alias)]] - `references` [EXTRACTED]

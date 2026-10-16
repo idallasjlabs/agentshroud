@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[Current Setup (CORRECT)]] - `contains` [EXTRACTED]
 - [[IMESSAGE_FIX]] - `contains` [EXTRACTED]
-- [[Next Steps_5]] - `contains` [EXTRACTED]
+- [[Next Steps_6]] - `contains` [EXTRACTED]
 - [[Status_3]] - `contains` [EXTRACTED]
 - [[The Fix]] - `contains` [EXTRACTED]
-- [[The Problem]] - `contains` [EXTRACTED]
-- [[Verification_2]] - `contains` [EXTRACTED]
+- [[The Problem_1]] - `contains` [EXTRACTED]
+- [[Verification_6]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Fix_-_Using_imsg__imessage-exporter

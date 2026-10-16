@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: "ssh-configuration.md"
+community: "SSH Configuration Guide"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ssh-configurationmd
+  - community/SSH_Configuration_Guide
 ---
 
 # himalaya/SKILL.md
@@ -17,4 +17,4 @@ tags:
 - [[message-composition]] - `references` [EXTRACTED]
 - [[ssh-configuration]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ssh-configurationmd
+#graphify/document #graphify/EXTRACTED #community/SSH_Configuration_Guide

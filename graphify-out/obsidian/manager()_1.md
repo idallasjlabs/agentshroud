@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_key_rotation_internals.py"
+source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "KeyRotationManager"
-location: "L31"
+community: "RBACConfig"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/RBACConfig
 ---
 
 # manager()
 
 ## Connections
-- [[KeyRotationConfig_1]] - `calls` [EXTRACTED]
-- [[KeyRotationManager]] - `calls` [EXTRACTED]
-- [[test_key_rotation_internals.py]] - `contains` [EXTRACTED]
+- [[GroupWorkspaceManager]] - `calls` [EXTRACTED]
+- [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

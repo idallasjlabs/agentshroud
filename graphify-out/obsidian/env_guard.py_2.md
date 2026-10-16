@@ -1,26 +1,30 @@
 ---
-source_file: "gateway/security/env_guard.py"
-type: "code"
-community: "KeyVault"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
+type: "document"
+community: "env_guard.py"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/env_guardpy
 ---
 
 # env_guard.py
 
 ## Connections
-- [[EnvironmentGuard]] - `contains` [EXTRACTED]
-- [[EnvironmentLeakage]] - `contains` [EXTRACTED]
-- [[agent_isolation.py]] - `references` [EXTRACTED]
-- [[check_command()]] - `contains` [EXTRACTED]
-- [[egress_filter.py_1]] - `references` [EXTRACTED]
-- [[encrypted_store.py_2]] - `references` [EXTRACTED]
-- [[get_env_guard()]] - `contains` [EXTRACTED]
-- [[key_vault.py_2]] - `semantically_similar_to` [INFERRED]
-- [[log_sanitizer.py]] - `semantically_similar_to` [INFERRED]
-- [[scrub_output()]] - `contains` [EXTRACTED]
+- [[Blocked Command Patterns (via `_contains_env_access_patterns`)]] - `contains` [EXTRACTED]
+- [[Blocked Commands]] - `contains` [EXTRACTED]
+- [[Blocked Paths]] - `contains` [EXTRACTED]
+- [[Environment Variables_4]] - `contains` [EXTRACTED]
+- [[Function Details_3]] - `contains` [EXTRACTED]
+- [[Global Singleton]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_3]] - `contains` [EXTRACTED]
+- [[Mode Enforce vs Monitor_1]] - `contains` [EXTRACTED]
+- [[Purpose_86]] - `contains` [EXTRACTED]
+- [[Related_5]] - `contains` [EXTRACTED]
+- [[Responsibilities_5]] - `contains` [EXTRACTED]
+- [[Threat Model_3]] - `contains` [EXTRACTED]
+- [[Tracked Credential Variable Names (subset)]] - `contains` [EXTRACTED]
+- [[env_guard.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/document #graphify/EXTRACTED #community/env_guardpy

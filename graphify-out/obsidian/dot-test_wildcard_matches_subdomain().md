@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[TestIsDomainAllowed]] - `method` [EXTRACTED]
-- [[WebProxyConfig]] - `calls` [EXTRACTED]
+- [[WebProxyConfig_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebProxyConfig

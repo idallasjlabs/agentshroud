@@ -1,17 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
-type: "document"
-community: "encrypted_store.py"
+source_file: "gateway/security/encrypted_store.py"
+type: "code"
+community: "KeyVault"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/encrypted_storepy
+  - community/KeyVault
 ---
 
-# encrypted_store.py.md
+# encrypted_store.py
 
 ## Connections
-- [[encrypted_store.py_1]] - `contains` [EXTRACTED]
+- [[Encrypted Store Module Badge Icon]] - `conceptually_related_to` [INFERRED]
+- [[EncryptedStore]] - `contains` [EXTRACTED]
+- [[FR4 Data Confidentiality]] - `references` [EXTRACTED]
+- [[_secure_zero()]] - `contains` [EXTRACTED]
+- [[canary.py]] - `references` [EXTRACTED]
+- [[env_guard.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/encrypted_storepy
+#graphify/code #graphify/EXTRACTED #community/KeyVault

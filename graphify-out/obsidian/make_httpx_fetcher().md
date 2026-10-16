@@ -26,7 +26,7 @@ tags:
 - [[Fetcher]] - `references` [EXTRACTED]
 - [[Production fetcher stream the URL and hash the body as proof-of-source.      SE]] - `rationale_for` [EXTRACTED]
 - [[_intel_verifier()]] - `calls` [EXTRACTED]
-- [[api.py]] - `imports` [EXTRACTED]
+- [[api.py_2]] - `imports` [EXTRACTED]
 - [[citation_verifier.py]] - `contains` [EXTRACTED]
 - [[test_citation_verifier.py]] - `imports` [EXTRACTED]
 - [[test_intel_endpoint.py]] - `imports` [EXTRACTED]

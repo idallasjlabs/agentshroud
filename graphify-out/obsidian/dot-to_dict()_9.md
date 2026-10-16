@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/security/canary.py"
 type: "code"
-community: "AuditEvent"
-location: "L88"
+community: "test_e2e_proxy.py"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditEvent
+  - community/test_e2e_proxypy
 ---
 
 # .to_dict()
 
 ## Connections
-- [[AuditEvent]] - `method` [EXTRACTED]
-- [[Convert to dictionary representation.]] - `rationale_for` [EXTRACTED]
+- [[Any_36]] - `references` [EXTRACTED]
+- [[CanaryResult_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditEvent
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

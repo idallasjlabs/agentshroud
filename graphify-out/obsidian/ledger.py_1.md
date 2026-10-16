@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[DataLedger]] - `contains` [EXTRACTED]
-- [[LedgerConfig_1]] - `imports` [EXTRACTED]
+- [[LedgerConfig]] - `imports` [EXTRACTED]
 - [[LedgerEntry]] - `imports` [EXTRACTED]
 - [[LedgerQueryResponse]] - `imports` [EXTRACTED]
 - [[aiosqlite]] - `references` [EXTRACTED]

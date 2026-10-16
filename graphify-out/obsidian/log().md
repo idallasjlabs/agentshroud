@@ -1,23 +1,18 @@
 ---
-source_file: "docker/scripts/security-scan.sh"
+source_file: "scripts/canary-deploy.sh"
 type: "code"
-community: "docker/scripts/security-scan.sh"
-location: "L18"
+community: "canary-deploy.sh"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docker/scripts/security-scansh
+  - community/canary-deploysh
 ---
 
 # log()
 
 ## Connections
-- [[alert_if_critical()]] - `calls` [EXTRACTED]
-- [[dockerscriptssecurity-scan.sh]] - `defines` [EXTRACTED]
-- [[run_clamav()]] - `calls` [EXTRACTED]
-- [[run_oscap()]] - `calls` [EXTRACTED]
-- [[run_sbom()]] - `calls` [EXTRACTED]
-- [[run_trivy()]] - `calls` [EXTRACTED]
-- [[security-scan.sh script]] - `calls` [EXTRACTED]
+- [[canary-deploy.sh]] - `defines` [EXTRACTED]
+- [[canary-deploy.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docker/scripts/security-scansh
+#graphify/code #graphify/EXTRACTED #community/canary-deploysh

@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/canary.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L50"
+community: "MiddlewareManager"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/MiddlewareManager
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_36]] - `references` [EXTRACTED]
-- [[CanaryResult_2]] - `method` [EXTRACTED]
+- [[dot-_save_integrity_database()]] - `calls` [EXTRACTED]
+- [[Any_8]] - `references` [EXTRACTED]
+- [[Convert to dictionary for JSON serialization.]] - `rationale_for` [EXTRACTED]
+- [[FileIntegrityRecord]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

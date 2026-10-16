@@ -12,6 +12,6 @@ tags:
 # level_to_severity(level)
 
 ## Connections
-- [[Function Details_19]] - `contains` [EXTRACTED]
+- [[Function Details_20]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/wazuh_clientpy

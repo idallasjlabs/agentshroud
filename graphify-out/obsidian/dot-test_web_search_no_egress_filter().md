@@ -12,7 +12,7 @@ tags:
 # .test_web_search_no_egress_filter()
 
 ## Connections
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestWebSearchLog]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 - [[_trigger_web_search_log returns silently when egress_filter is None.]] - `rationale_for` [EXTRACTED]

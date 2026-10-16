@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "rbac_config.py"
+community: "telegram_proxy.py"
 location: "L404"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/rbac_configpy
+  - community/telegram_proxypy
 ---
 
 # load_persisted_collaborators()
 
 ## Connections
-- [[dot-__post_init__()_3]] - `calls` [EXTRACTED]
+- [[dot-__post_init__()_9]] - `calls` [EXTRACTED]
 - [[Read dynamically approved collaborator IDs from disk.]] - `rationale_for` [EXTRACTED]
 - [[_load_collab_store()]] - `calls` [EXTRACTED]
 - [[persist_approved_collaborator()]] - `calls` [EXTRACTED]
 - [[rbac_config.py]] - `contains` [EXTRACTED]
 - [[revoke_approved_collaborator()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/rbac_configpy
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

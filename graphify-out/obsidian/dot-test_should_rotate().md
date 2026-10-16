@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[CredentialInfo]] - `calls` [EXTRACTED]
-- [[CredentialRotationPolicy]] - `calls` [EXTRACTED]
+- [[CredentialRotationPolicy_1]] - `calls` [EXTRACTED]
 - [[Test rotation requirement calculation.]] - `rationale_for` [EXTRACTED]
 - [[TestCredentialInfo]] - `method` [EXTRACTED]
 

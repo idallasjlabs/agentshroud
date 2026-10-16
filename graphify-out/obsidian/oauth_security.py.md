@@ -20,7 +20,7 @@ tags:
 - [[RedirectMismatch]] - `contains` [EXTRACTED]
 - [[Wang et al. 2026 (arXiv2602.08412) — Confused Deputy  Event Injection Attacks]] - `cites` [EXTRACTED]
 - [[consent_framework.py]] - `references` [EXTRACTED]
-- [[session_security.py]] - `references` [EXTRACTED]
+- [[session_security.py_2]] - `references` [EXTRACTED]
 - [[test_oauth_security.py]] - `references` [EXTRACTED]
 - [[test_security_audit.py]] - `references` [EXTRACTED]
 

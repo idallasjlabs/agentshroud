@@ -15,9 +15,9 @@ tags:
 - [[Audit ledger (hash-verifiable chain)]] - `conceptually_related_to` [INFERRED]
 - [[Data Flow]] - `references` [EXTRACTED]
 - [[DataLedger]] - `references` [EXTRACTED]
-- [[LedgerConfig_1]] - `references` [EXTRACTED]
+- [[LedgerConfig]] - `references` [EXTRACTED]
 - [[ledger.py_2]] - `contains` [EXTRACTED]
 - [[main.py]] - `references` [EXTRACTED]
-- [[volumes_1]] - `references` [INFERRED]
+- [[volumes]] - `references` [INFERRED]
 
 #graphify/document #graphify/EXTRACTED #community/mainpymd

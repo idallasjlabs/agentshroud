@@ -21,9 +21,9 @@ tags:
 - [[dot-test_returns_empty_list_when_dir_missing()]] - `calls` [EXTRACTED]
 - [[dot-test_returns_empty_when_no_image_reports()]] - `calls` [EXTRACTED]
 - [[dot-test_returns_one_entry_per_report_file()]] - `calls` [EXTRACTED]
-- [[Any_70]] - `references` [EXTRACTED]
+- [[Any_65]] - `references` [EXTRACTED]
 - [[Return per-image Trivy scan summaries from saved image reports.      Reads repor]] - `rationale_for` [EXTRACTED]
-- [[generate_summary()_3]] - `calls` [EXTRACTED]
+- [[generate_summary()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 

@@ -1,19 +1,20 @@
 ---
-source_file: "docker/scripts/colima-health-check.sh"
+source_file: "browser-extension/background.js"
 type: "code"
-community: "colima-health-check.sh"
-location: "L140"
+community: "background.js"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/backgroundjs
 ---
 
 # notify()
 
 ## Connections
-- [[colima-health-check.sh]] - `defines` [EXTRACTED]
-- [[colima-health-check.sh script]] - `calls` [EXTRACTED]
-- [[log()_7]] - `calls` [EXTRACTED]
+- [[background.js]] - `references` [EXTRACTED]
+- [[clipPage()]] - `calls` [EXTRACTED]
+- [[forwardUrl()]] - `calls` [EXTRACTED]
+- [[reportResult()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/backgroundjs

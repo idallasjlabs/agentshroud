@@ -1,24 +1,30 @@
 ---
-source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
+source_file: "cli/src/main.rs"
 type: "code"
-community: "gen.py"
-location: "L164"
+community: "main.rs"
+location: "L631"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/genpy
+  - community/mainrs
 ---
 
 # main()
 
 ## Connections
-- [[Path_32]] - `calls` [EXTRACTED]
-- [[default_out_dir()]] - `calls` [EXTRACTED]
-- [[gen.py]] - `contains` [EXTRACTED]
-- [[get_model_defaults()]] - `calls` [EXTRACTED]
-- [[pick_prompts()]] - `calls` [EXTRACTED]
-- [[request_images()]] - `calls` [EXTRACTED]
-- [[slugify()]] - `calls` [EXTRACTED]
-- [[write_gallery()]] - `calls` [EXTRACTED]
+- [[dot-get()_3]] - `calls` [EXTRACTED]
+- [[dot-new()_2]] - `calls` [EXTRACTED]
+- [[dot-ok()]] - `calls` [EXTRACTED]
+- [[dot-post()_2]] - `calls` [EXTRACTED]
+- [[Result]] - `references` [EXTRACTED]
+- [[SclClient_1]] - `calls` [EXTRACTED]
+- [[main.rs]] - `contains` [EXTRACTED]
+- [[print_output()]] - `calls` [EXTRACTED]
+- [[resolve_token()]] - `calls` [EXTRACTED]
+- [[run_approvals_decide()]] - `calls` [EXTRACTED]
+- [[run_approvals_list()]] - `calls` [EXTRACTED]
+- [[run_cves()]] - `calls` [EXTRACTED]
+- [[run_deploy_status()]] - `calls` [EXTRACTED]
+- [[run_status()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/genpy
+#graphify/code #graphify/EXTRACTED #community/mainrs

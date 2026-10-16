@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_acl.py"
+source_file: "gateway/tests/test_output_schema.py"
 type: "code"
-community: "RBACConfig"
-location: "L46"
+community: "OutputSchemaEnforcer"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/OutputSchemaEnforcer
 ---
 
 # enforcer()
 
 ## Connections
-- [[ToolACLConfig]] - `calls` [EXTRACTED]
-- [[ToolACLEnforcer]] - `calls` [EXTRACTED]
-- [[test_tool_acl.py]] - `contains` [EXTRACTED]
+- [[OutputSchemaEnforcer]] - `calls` [EXTRACTED]
+- [[test_output_schema.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer

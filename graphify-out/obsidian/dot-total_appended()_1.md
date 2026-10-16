@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_audit.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "MCPAuditTrail"
-location: "L248"
+community: "AuditChain"
+location: "L310"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPAuditTrail
+  - community/AuditChain
 ---
 
 # .total_appended()
 
 ## Connections
-- [[MCPAuditTrail]] - `method` [EXTRACTED]
+- [[AuditChain]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail
+#graphify/code #graphify/EXTRACTED #community/AuditChain

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_all_not_run_patches()]] - `calls` [EXTRACTED]
-- [[TestComputeScorecard_1]] - `method` [EXTRACTED]
+- [[TestComputeScorecard]] - `method` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

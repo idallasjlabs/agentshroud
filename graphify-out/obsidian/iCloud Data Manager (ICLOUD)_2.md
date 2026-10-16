@@ -12,9 +12,9 @@ tags:
 # iCloud Data Manager (ICLOUD)
 
 ## Connections
-- [[Purpose_46]] - `contains` [EXTRACTED]
+- [[Purpose_48]] - `contains` [EXTRACTED]
 - [[Related Skills_34]] - `contains` [EXTRACTED]
-- [[Usage_37]] - `contains` [EXTRACTED]
+- [[Usage_38]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-icloudREADME]] - `contains` [EXTRACTED]
 

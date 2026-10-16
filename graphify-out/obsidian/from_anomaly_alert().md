@@ -12,7 +12,7 @@ tags:
 # from_anomaly_alert()
 
 ## Connections
-- [[Any_44]] - `references` [EXTRACTED]
+- [[Any_52]] - `references` [EXTRACTED]
 - [[Convert an AnomalyAlert (from EgressMonitorSOCCorrelation) to SecurityEvent.]] - `rationale_for` [EXTRACTED]
 - [[SecurityEvent]] - `references` [EXTRACTED]
 - [[SecurityEvent_1]] - `calls` [EXTRACTED]

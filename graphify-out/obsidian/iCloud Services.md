@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[Calendar Operations]] - `contains` [EXTRACTED]
 - [[Configuration_2]] - `contains` [EXTRACTED]
-- [[Contact Operations]] - `contains` [EXTRACTED]
+- [[Contact Operations_1]] - `contains` [EXTRACTED]
 - [[Mail Operations]] - `contains` [EXTRACTED]
-- [[Notes Operations]] - `contains` [EXTRACTED]
-- [[Security_5]] - `contains` [EXTRACTED]
+- [[Notes Operations_1]] - `contains` [EXTRACTED]
+- [[Security_7]] - `contains` [EXTRACTED]
 - [[Setup]] - `contains` [EXTRACTED]
 - [[Troubleshooting_19]] - `contains` [EXTRACTED]
 - [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]

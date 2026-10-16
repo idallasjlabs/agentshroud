@@ -12,17 +12,17 @@ tags:
 # ingest_api/models.py
 
 ## Connections
-- [[AgentTarget_1]] - `contains` [EXTRACTED]
-- [[ApprovalDecision]] - `contains` [EXTRACTED]
+- [[AgentTarget_3]] - `contains` [EXTRACTED]
+- [[ApprovalDecision_1]] - `contains` [EXTRACTED]
 - [[ApprovalQueueItem_4]] - `contains` [EXTRACTED]
-- [[ApprovalRequest_4]] - `contains` [EXTRACTED]
+- [[ApprovalRequest_5]] - `contains` [EXTRACTED]
 - [[EmailSendRequest_1]] - `contains` [EXTRACTED]
 - [[EmailSendResponse]] - `contains` [EXTRACTED]
-- [[ForwardRequest_1]] - `contains` [EXTRACTED]
+- [[ForwardRequest_3]] - `contains` [EXTRACTED]
 - [[ForwardResponse]] - `contains` [EXTRACTED]
 - [[LedgerEntry]] - `contains` [EXTRACTED]
 - [[LedgerQueryResponse]] - `contains` [EXTRACTED]
-- [[RedactionDetail_1]] - `contains` [EXTRACTED]
+- [[RedactionDetail]] - `contains` [EXTRACTED]
 - [[RedactionResult_3]] - `contains` [EXTRACTED]
 - [[SSHExecRequest]] - `contains` [EXTRACTED]
 - [[SSHExecResponse]] - `contains` [EXTRACTED]
@@ -36,7 +36,7 @@ tags:
 - [[ingest_apirouter.py]] - `imports_from` [EXTRACTED]
 - [[ledger.py_1]] - `imports_from` [EXTRACTED]
 - [[queue.py]] - `imports_from` [EXTRACTED]
-- [[sanitizer.py_2]] - `imports_from` [EXTRACTED]
+- [[sanitizer.py]] - `imports_from` [EXTRACTED]
 - [[store.py]] - `imports_from` [EXTRACTED]
 - [[test_router_openai_translation.py]] - `references` [EXTRACTED]
 

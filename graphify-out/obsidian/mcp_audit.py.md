@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_audit.py"
-type: "code"
-community: "MCPPermissionManager"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md"
+type: "document"
+community: "mcp_audit.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/mcp_auditpy
 ---
 
-# mcp_audit.py
+# mcp_audit.py.md
 
 ## Connections
-- [[MCPAuditEntry]] - `contains` [EXTRACTED]
-- [[MCPAuditTrail]] - `contains` [EXTRACTED]
-- [[mcp_proxy.py]] - `imports_from` [EXTRACTED]
-- [[proxy__init__.py]] - `re_exports` [EXTRACTED]
-- [[test_mcp_proxy.py]] - `references` [EXTRACTED]
+- [[mcp_audit.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/document #graphify/EXTRACTED #community/mcp_auditpy

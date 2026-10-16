@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-agentsskillsi-icloudREADME]] - `contains` [EXTRACTED]
-- [[Purpose_20]] - `contains` [EXTRACTED]
+- [[Purpose_22]] - `contains` [EXTRACTED]
 - [[Related Skills_8]] - `contains` [EXTRACTED]
-- [[Usage_11]] - `contains` [EXTRACTED]
+- [[Usage_12]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD

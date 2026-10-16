@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
-community: "ssh-configuration.md"
+community: "SSH Configuration Guide"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ssh-configurationmd
+  - community/SSH_Configuration_Guide
 ---
 
 # icloud/SKILL.md
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[1Password iCloud Credential Retrieval]] - `references` [EXTRACTED]
 - [[gogSKILL]] - `semantically_similar_to` [INFERRED]
-- [[iCloud Services_3]] - `contains` [EXTRACTED]
+- [[iCloud Services_2]] - `contains` [EXTRACTED]
 - [[ssh-configuration]] - `shares_data_with` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/ssh-configurationmd
+#graphify/document #graphify/EXTRACTED #community/SSH_Configuration_Guide

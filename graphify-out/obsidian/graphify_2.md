@@ -18,7 +18,7 @@ tags:
 - [[For the commit hook and native CLAUDE.md integration_1]] - `contains` [EXTRACTED]
 - [[Honesty Rules_2]] - `contains` [EXTRACTED]
 - [[Interpreter guard for subcommands_2]] - `contains` [EXTRACTED]
-- [[Usage_70]] - `contains` [EXTRACTED]
+- [[Usage_71]] - `contains` [EXTRACTED]
 - [[What You Must Do When Invoked_2]] - `contains` [EXTRACTED]
 - [[What graphify is for_2]] - `contains` [EXTRACTED]
 - [[openclawskillsgraphifySKILL]] - `contains` [EXTRACTED]

@@ -12,6 +12,6 @@ tags:
 # .validate_source()
 
 ## Connections
-- [[ForwardRequest_1]] - `method` [EXTRACTED]
+- [[ForwardRequest_3]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AgentTarget

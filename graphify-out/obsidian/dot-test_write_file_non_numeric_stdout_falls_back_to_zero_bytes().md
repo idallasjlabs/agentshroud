@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[If the remote script exits 0 but its stdout isn't a parseable         integer, b]] - `rationale_for` [EXTRACTED]
-- [[SSHProxy_1]] - `calls` [EXTRACTED]
+- [[SSHProxy]] - `calls` [EXTRACTED]
 - [[TestSSHProxyWriteFileTransport]] - `method` [EXTRACTED]
 - [[_b64()]] - `calls` [EXTRACTED]
 

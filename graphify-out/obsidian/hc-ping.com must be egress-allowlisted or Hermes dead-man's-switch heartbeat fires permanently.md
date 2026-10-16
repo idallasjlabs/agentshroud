@@ -11,6 +11,6 @@ tags:
 # hc-ping.com must be egress-allowlisted or Hermes dead-man's-switch heartbeat fires permanently
 
 ## Connections
-- [[WebProxyConfig]] - `rationale_for` [EXTRACTED]
+- [[WebProxyConfig_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig
