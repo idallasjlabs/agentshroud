@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "src/interfaces/text_control_center.py"
 type: "code"
-community: "AuditStore"
-location: "L125"
+community: "ControlCenter"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/ControlCenter
 ---
 
 # .__init__()
 
 ## Connections
-- [[AuditStore_1]] - `method` [EXTRACTED]
-- [[Path_28]] - `references` [EXTRACTED]
+- [[ControlCenter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/ControlCenter

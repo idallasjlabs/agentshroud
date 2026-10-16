@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/proxy/telegram_gateway_relay.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L47"
+community: "TelegramGatewayRelay"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/TelegramGatewayRelay
 ---
 
 # .__init__()
 
 ## Connections
-- [[ApprovalQueueConfig_1]] - `references` [EXTRACTED]
-- [[ApprovalStore_1]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
-- [[Initialize enhanced approval queue.          Args             config Basic app]] - `rationale_for` [EXTRACTED]
-- [[MFAGuard_2]] - `references` [EXTRACTED]
-- [[ToolRiskConfig_1]] - `references` [EXTRACTED]
+- [[TelegramGatewayRelay]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/TelegramGatewayRelay

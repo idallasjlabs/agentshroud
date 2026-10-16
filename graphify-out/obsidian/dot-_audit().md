@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-check_request()]] - `calls` [EXTRACTED]
 - [[dot-scan_response()]] - `calls` [EXTRACTED]
-- [[Any_11]] - `references` [EXTRACTED]
+- [[Any_13]] - `references` [EXTRACTED]
 - [[Record an audit entry in the hash chain.]] - `rationale_for` [EXTRACTED]
 - [[WebProxy]] - `method` [EXTRACTED]
 

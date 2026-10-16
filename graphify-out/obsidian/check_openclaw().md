@@ -16,9 +16,9 @@ tags:
 - [[Sunday Upgrade Report 2026-09-14 (dev account)]] - `references` [EXTRACTED]
 - [[check-vendor-compat.sh]] - `defines` [EXTRACTED]
 - [[check-vendor-compat.sh script]] - `calls` [EXTRACTED]
-- [[fail()_2]] - `calls` [EXTRACTED]
-- [[pass()_2]] - `calls` [EXTRACTED]
+- [[fail()_1]] - `calls` [EXTRACTED]
+- [[pass()_1]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `conceptually_related_to` [INFERRED]
-- [[warn()_1]] - `calls` [EXTRACTED]
+- [[warn()_2]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh

@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/smoke.d/test-skills-sync.sh"
+source_file: "tests/startup_smoke/test_openclaw_readiness_retry.sh"
 type: "code"
-community: "sync-llm-settings.sh"
-location: "L38"
+community: "test-sunday-upgrade-scan.sh"
+location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-llm-settingssh
+  - community/test-sunday-upgrade-scansh
 ---
 
 # check()
 
 ## Connections
-- [[test-skills-sync.sh]] - `defines` [EXTRACTED]
-- [[test-skills-sync.sh script]] - `calls` [EXTRACTED]
+- [[test_openclaw_readiness_retry.sh]] - `defines` [EXTRACTED]
+- [[test_openclaw_readiness_retry.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-llm-settingssh
+#graphify/code #graphify/EXTRACTED #community/test-sunday-upgrade-scansh

@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "main.rs"
+community: "TestPathIsolationManager"
 location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/TestPathIsolationManager
 ---
 
 # .fmt()
@@ -16,4 +16,4 @@ tags:
 - [[Formatter]] - `references` [EXTRACTED]
 - [[Result]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager

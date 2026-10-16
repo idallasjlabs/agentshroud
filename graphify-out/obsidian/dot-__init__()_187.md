@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/delegation.py"
+source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "DelegationManager"
-location: "L103"
+community: "RBACConfig"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/RBACConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load()]] - `calls` [EXTRACTED]
-- [[DelegationManager_1]] - `method` [EXTRACTED]
+- [[GroupWorkspaceManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DelegationManager
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

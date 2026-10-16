@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "HTTPConnectProxy"
-location: "L63"
+community: "AuditStore"
+location: "L163"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/AuditStore
 ---
 
 # .close()
 
 ## Connections
-- [[_CloseRaisesWriter]] - `method` [EXTRACTED]
+- [[AuditStore]] - `method` [EXTRACTED]
+- [[Close the database connection._1]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/code #graphify/EXTRACTED #community/AuditStore

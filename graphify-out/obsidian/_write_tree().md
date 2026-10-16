@@ -25,7 +25,7 @@ tags:
 - [[dot-test_sync_aborts_on_dangerous_tree()]] - `calls` [EXTRACTED]
 - [[dot-test_sync_allows_clean_tree()]] - `calls` [EXTRACTED]
 - [[dot-test_sync_dry_run_does_not_write_but_still_scans()]] - `calls` [EXTRACTED]
-- [[Path_26]] - `references` [EXTRACTED]
+- [[Path_23]] - `references` [EXTRACTED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Path

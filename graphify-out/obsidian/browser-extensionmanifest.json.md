@@ -12,7 +12,7 @@ tags:
 # browser-extension/manifest.json
 
 ## Connections
-- [[action_2]] - `contains` [EXTRACTED]
+- [[action_3]] - `contains` [EXTRACTED]
 - [[background]] - `contains` [EXTRACTED]
 - [[background.js]] - `references` [EXTRACTED]
 - [[browser_specific_settings]] - `contains` [EXTRACTED]

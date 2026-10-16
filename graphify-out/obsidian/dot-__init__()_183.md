@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/ingest_api/router.py"
+source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "AgentTarget"
-location: "L52"
+community: "TrustConfig"
+location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/TrustConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[AgentTarget_2]] - `calls` [EXTRACTED]
-- [[Initialize router          Args             config Router configuration]] - `rationale_for` [EXTRACTED]
-- [[MultiAgentRouter]] - `method` [EXTRACTED]
-- [[RouterConfig_1]] - `references` [EXTRACTED]
+- [[dot-_init_db()_2]] - `calls` [EXTRACTED]
+- [[ProgressiveTrustConfig]] - `references` [EXTRACTED]
+- [[TrustConfig]] - `references` [EXTRACTED]
+- [[TrustLevel_2]] - `references` [EXTRACTED]
+- [[TrustManager_4]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

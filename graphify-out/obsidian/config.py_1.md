@@ -16,9 +16,9 @@ tags:
 - [[Environment Variables_18]] - `contains` [EXTRACTED]
 - [[Function Details_47]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_49]] - `contains` [EXTRACTED]
-- [[Purpose_183]] - `contains` [EXTRACTED]
+- [[Purpose_184]] - `contains` [EXTRACTED]
 - [[Related_53]] - `contains` [EXTRACTED]
-- [[Responsibilities_51]] - `contains` [EXTRACTED]
+- [[Responsibilities_50]] - `contains` [EXTRACTED]
 - [[Rootless Resolution Table]] - `contains` [EXTRACTED]
 - [[config.py]] - `contains` [EXTRACTED]
 

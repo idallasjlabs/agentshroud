@@ -1,24 +1,21 @@
 ---
-source_file: "gateway/proxy/mcp_config.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L98"
+community: "A2APolicyEngine"
+location: "L210"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/A2APolicyEngine
 ---
 
 # .from_dict()
 
 ## Connections
-- [[Any_79]] - `references` [EXTRACTED]
-- [[MCPProxyConfig_3]] - `method` [EXTRACTED]
-- [[MCPServerConfig_2]] - `calls` [EXTRACTED]
-- [[MCPToolConfig]] - `calls` [EXTRACTED]
-- [[MCPTransport]] - `calls` [EXTRACTED]
-- [[Parse config from a dictionary (e.g. loaded from YAML).]] - `rationale_for` [EXTRACTED]
-- [[PermissionLevel]] - `calls` [EXTRACTED]
+- [[A2APolicyAction]] - `calls` [EXTRACTED]
+- [[A2APolicyConfig]] - `method` [EXTRACTED]
+- [[Any_82]] - `references` [EXTRACTED]
+- [[Parse a policy config from a plain dict (e.g. loaded from YAML)._1]] - `rationale_for` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Action"
+community: "MiddlewareManager"
 location: "L357"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Action
+  - community/MiddlewareManager
 ---
 
 # .audit_privilege_change()
 
 ## Connections
 - [[dot-is_privilege_escalation()]] - `calls` [EXTRACTED]
-- [[dot-set_user_role()]] - `calls` [EXTRACTED]
+- [[dot-set_user_role()_1]] - `calls` [EXTRACTED]
 - [[Log privilege changes; emit WARNING for escalations (unusual patterns).]] - `rationale_for` [EXTRACTED]
 - [[RBACManager_1]] - `method` [EXTRACTED]
-- [[Role_21]] - `references` [EXTRACTED]
+- [[Role_20]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Action
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

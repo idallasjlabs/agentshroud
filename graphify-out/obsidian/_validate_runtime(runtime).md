@@ -12,6 +12,6 @@ tags:
 # _validate_runtime(runtime)
 
 ## Connections
-- [[Function Details_38]] - `contains` [EXTRACTED]
+- [[Function Details_37]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/securitypy

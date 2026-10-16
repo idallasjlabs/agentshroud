@@ -1,21 +1,23 @@
 ---
-source_file: "gateway/security/agent_isolation.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "AgentRegistry"
-location: "L79"
+community: "UserSessionManager"
+location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/UserSessionManager
 ---
 
 # .from_dict()
 
 ## Connections
-- [[dot-register()]] - `calls` [EXTRACTED]
-- [[AgentRegistry]] - `method` [EXTRACTED]
-- [[ContainerConfig_1]] - `calls` [EXTRACTED]
-- [[Deserialize registry from dict.]] - `rationale_for` [EXTRACTED]
+- [[dot-_load_sessions()]] - `calls` [EXTRACTED]
+- [[Any_57]] - `references` [EXTRACTED]
+- [[ConversationMessage]] - `calls` [EXTRACTED]
+- [[Create session from dictionary.]] - `rationale_for` [EXTRACTED]
+- [[Path_42]] - `calls` [EXTRACTED]
+- [[UserSession]] - `method` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

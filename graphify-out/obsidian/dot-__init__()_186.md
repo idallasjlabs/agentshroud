@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/approval_queue/group_router.py"
+source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "GroupApprovalRouter"
-location: "L49"
+community: "TestSSRFDetection"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/TestSSRFDetection
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_74]] - `references` [EXTRACTED]
-- [[GroupApprovalRouter]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
+- [[ToolResultSanitizerConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

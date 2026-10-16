@@ -17,7 +17,7 @@ tags:
 - [[dot-test_quarantine_summary_counts_inbound_and_outbound()]] - `indirect_call` [INFERRED]
 - [[dot-test_release_blocked_outbound_marks_item_released()]] - `indirect_call` [INFERRED]
 - [[Authentication dependency for protected endpoints]] - `rationale_for` [EXTRACTED]
-- [[Request_1]] - `references` [EXTRACTED]
+- [[Request_7]] - `references` [EXTRACTED]
 - [[TestOpProxyEndpoint]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[test_channel_ownership.py]] - `imports` [EXTRACTED]

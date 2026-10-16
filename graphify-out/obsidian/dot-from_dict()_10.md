@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/delegation.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "DelegationManager"
-location: "L77"
+community: "TestEgressApprovalQueue"
+location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/TestEgressApprovalQueue
 ---
 
 # .from_dict()
 
 ## Connections
-- [[dot-_load()]] - `calls` [EXTRACTED]
-- [[Delegation_1]] - `method` [EXTRACTED]
+- [[dot-_load_rules()]] - `calls` [EXTRACTED]
+- [[EgressScope]] - `method` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/DelegationManager
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

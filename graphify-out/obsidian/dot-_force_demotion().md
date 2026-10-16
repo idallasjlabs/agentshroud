@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-record_violation()]] - `calls` [EXTRACTED]
 - [[Drop an agent one trust level immediately (severe violations).]] - `rationale_for` [EXTRACTED]
-- [[TrustLevel_1]] - `references` [EXTRACTED]
-- [[TrustManager]] - `method` [EXTRACTED]
+- [[TrustLevel_2]] - `references` [EXTRACTED]
+- [[TrustManager_4]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

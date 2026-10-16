@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/proxy/url_analyzer.py"
+source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "TestSSRFDetection"
-location: "L258"
+community: "EgressFilterConfig"
+location: "L459"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/EgressFilterConfig
 ---
 
 # ._is_private_ip()
 
 ## Connections
-- [[dot-_is_ssrf()]] - `calls` [EXTRACTED]
-- [[dot-analyze()_1]] - `calls` [EXTRACTED]
-- [[dot-analyze_and_pin()]] - `calls` [EXTRACTED]
-- [[Check if an IP address is privatereservedloopback.]] - `rationale_for` [EXTRACTED]
-- [[URLAnalyzer_1]] - `method` [EXTRACTED]
+- [[dot-_check_impl()]] - `calls` [EXTRACTED]
+- [[Check if host is a private, loopback, link-local, or reserved IP.          Cover]] - `rationale_for` [EXTRACTED]
+- [[EgressFilter_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

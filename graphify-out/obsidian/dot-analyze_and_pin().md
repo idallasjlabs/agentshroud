@@ -12,11 +12,11 @@ tags:
 # .analyze_and_pin()
 
 ## Connections
-- [[dot-_is_private_ip()_1]] - `calls` [EXTRACTED]
+- [[dot-_is_private_ip()]] - `calls` [EXTRACTED]
 - [[dot-_resolve_host()]] - `calls` [EXTRACTED]
 - [[dot-analyze()_1]] - `calls` [EXTRACTED]
 - [[Analyze URL and pin resolved IP to mitigate DNS rebinding TOCTOU.          When]] - `rationale_for` [EXTRACTED]
-- [[URLAnalysisResult_1]] - `references` [EXTRACTED]
+- [[URLAnalysisResult]] - `references` [EXTRACTED]
 - [[URLAnalyzer_1]] - `method` [EXTRACTED]
 - [[URLFinding]] - `calls` [EXTRACTED]
 

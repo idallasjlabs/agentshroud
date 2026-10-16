@@ -13,11 +13,11 @@ tags:
 
 ## Connections
 - [[dot-_check_rbac_permissions()]] - `calls` [EXTRACTED]
-- [[Action_3]] - `references` [EXTRACTED]
+- [[Action_1]] - `references` [EXTRACTED]
 - [[Analyze request to determine RBAC action, resource, and tool tier.]] - `rationale_for` [EXTRACTED]
-- [[Any_63]] - `references` [EXTRACTED]
+- [[Any_21]] - `references` [EXTRACTED]
 - [[MiddlewareManager]] - `method` [EXTRACTED]
 - [[Resource_1]] - `references` [EXTRACTED]
-- [[ToolTier_1]] - `references` [EXTRACTED]
+- [[ToolTier]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

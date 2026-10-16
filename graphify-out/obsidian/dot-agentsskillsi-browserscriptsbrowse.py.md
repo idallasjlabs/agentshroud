@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[Enum_3]] - `imports_from` [EXTRACTED]
-- [[RiskLevel]] - `contains` [EXTRACTED]
+- [[RiskLevel_1]] - `contains` [EXTRACTED]
 - [[SecureBrowser]] - `contains` [EXTRACTED]
 - [[SecurityConfig]] - `contains` [EXTRACTED]
 - [[SecurityError]] - `contains` [EXTRACTED]
-- [[main()_4]] - `contains` [EXTRACTED]
+- [[main()_5]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser

@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_a2a_trust_scoring.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L27"
+community: "EgressFilterConfig"
+location: "L415"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/EgressFilterConfig
 ---
 
 # .forward()
 
 ## Connections
 - [[_StubForwarder_2]] - `method` [EXTRACTED]
+- [[test_forwarder_error_handling()]] - `calls` [EXTRACTED]
+- [[test_forwarder_mock()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

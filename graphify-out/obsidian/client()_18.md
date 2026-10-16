@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_version_routes.py"
+source_file: "gateway/tests/test_soc_egress_endpoints.py"
 type: "code"
-community: "TestVersionRoutes"
-location: "L28"
+community: "ForwardRequest"
+location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestVersionRoutes
+  - community/ForwardRequest
 ---
 
 # client()
 
 ## Connections
-- [[test_version_routes.py]] - `contains` [EXTRACTED]
+- [[AsyncClient]] - `calls` [INFERRED]
+- [[test_soc_egress_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestVersionRoutes
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

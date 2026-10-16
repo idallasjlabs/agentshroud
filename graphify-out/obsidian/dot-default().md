@@ -12,8 +12,8 @@ tags:
 # .default()
 
 ## Connections
-- [[dot-__init__()_78]] - `calls` [EXTRACTED]
-- [[dot-from_dict()_4]] - `calls` [EXTRACTED]
+- [[dot-__init__()_185]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_8]] - `calls` [EXTRACTED]
 - [[PrivacyPolicy]] - `method` [EXTRACTED]
 - [[Return a default policy with all known private services locked down.]] - `rationale_for` [EXTRACTED]
 

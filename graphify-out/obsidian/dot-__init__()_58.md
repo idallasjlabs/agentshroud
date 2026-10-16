@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/soc/auth.py"
+source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L141"
+community: "A2APolicyEngine"
+location: "L437"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/A2APolicyEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[RBACManager]] - `references` [EXTRACTED]
-- [[Role_18]] - `references` [EXTRACTED]
-- [[SCLCaller_1]] - `method` [EXTRACTED]
+- [[HermesA2AForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

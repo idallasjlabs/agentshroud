@@ -12,7 +12,7 @@ tags:
 # _score_access_control_authorization()
 
 ## Connections
-- [[Path_51]] - `calls` [EXTRACTED]
+- [[Path_26]] - `calls` [EXTRACTED]
 - [[Score domain 14 Access Control & Authorization (0-5). IEC 62443 FR2.      1=rol]] - `rationale_for` [EXTRACTED]
 - [[_app_state_has()]] - `calls` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]

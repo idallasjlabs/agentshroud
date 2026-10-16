@@ -1,21 +1,22 @@
 ---
-source_file: "gateway/security/config_integrity.py"
+source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "ConfigIntegrityMonitor"
-location: "L85"
+community: "EgressFilterConfig"
+location: "L163"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConfigIntegrityMonitor
+  - community/EgressFilterConfig
 ---
 
 # .check()
 
 ## Connections
-- [[dot-_hash_file()]] - `calls` [EXTRACTED]
-- [[dot-_load_baseline()]] - `calls` [EXTRACTED]
-- [[dot-_save_baseline()]] - `calls` [EXTRACTED]
-- [[Compare current file hashes against baseline.          Returns a list of change]] - `rationale_for` [EXTRACTED]
-- [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
+- [[dot-_check_impl()]] - `calls` [EXTRACTED]
+- [[dot-check_async()]] - `calls` [EXTRACTED]
+- [[EgressAttempt]] - `references` [EXTRACTED]
+- [[EgressFilter_1]] - `method` [EXTRACTED]
+- [[Public entry — records the decision for the SOC heat-map (SCRUM-80),         the_1]] - `rationale_for` [EXTRACTED]
+- [[record_decision()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

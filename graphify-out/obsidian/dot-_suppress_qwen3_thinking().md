@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "gateway/tests/test_llm_proxy_thinking_suppression.py (8 cases)"
+community: "LLMProxy"
 location: "L448"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
+  - community/LLMProxy
 ---
 
 # ._suppress_qwen3_thinking()
@@ -25,4 +25,4 @@ tags:
 - [[test_qwen_model_gets_no_think_suffix()]] - `calls` [EXTRACTED]
 - [[test_qwen_model_suffix_already_present_is_noop()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

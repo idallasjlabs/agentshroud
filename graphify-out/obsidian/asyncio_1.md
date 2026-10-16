@@ -1,36 +1,24 @@
 ---
 source_file: ""
 type: "code"
-community: "test_llm_proxy_local_parity.py"
+community: "test_main_endpoints.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy
+  - community/test_main_endpointspy
 ---
 
 # asyncio
 
 ## Connections
-- [[test_cloud_mode_anthropic_tool_use_shape_passes_through()]] - `references` [EXTRACTED]
-- [[test_deepseek_r1_routes_to_mlxlm()]] - `references` [EXTRACTED]
-- [[test_fieldflare_route_strips_unsupported_fields_non_streaming]] - `references` [EXTRACTED]
-- [[test_fieldflare_route_strips_unsupported_fields_streaming]] - `references` [EXTRACTED]
-- [[test_hermes_cloud_mode_uses_anthropic_endpoint()]] - `references` [EXTRACTED]
-- [[test_hermes_openai_path_local_model_routed_correctly()]] - `references` [EXTRACTED]
-- [[test_local_mode_anthropic_tool_use_shape_passes_through()]] - `references` [EXTRACTED]
-- [[test_local_mode_openai_tool_call_shape_passes_through()]] - `references` [EXTRACTED]
-- [[test_local_oom_failover_disabled_does_not_retry()]] - `references` [EXTRACTED]
-- [[test_local_oom_no_secondary_falls_through_to_503()]] - `references` [EXTRACTED]
-- [[test_local_oom_triggers_secondary_failover]] - `references` [EXTRACTED]
-- [[test_local_p99_timeout_triggers_secondary_failover()]] - `references` [EXTRACTED]
-- [[test_local_secondary_failover_anthropic_path()]] - `references` [EXTRACTED]
-- [[test_local_secondary_failover_exception_returns_none()]] - `references` [EXTRACTED]
-- [[test_local_secondary_failover_secondary_non_200_returns_none()]] - `references` [EXTRACTED]
-- [[test_local_secondary_failover_unknown_path_returns_none()]] - `references` [EXTRACTED]
-- [[test_mlx_community_deepseek_routes_to_mlxlm()]] - `references` [EXTRACTED]
-- [[test_model_ref_round_trip()]] - `references` [EXTRACTED]
-- [[test_non_fieldflare_local_route_keeps_fields]] - `references` [EXTRACTED]
-- [[test_normalize_local_model_provider_prefix_stripped_before_normalize()]] - `references` [EXTRACTED]
-- [[test_stats_local_secondary_failover_succeeded_incremented()]] - `references` [EXTRACTED]
+- [[dot-test_alerts_accepted_from_localhost()]] - `references` [EXTRACTED]
+- [[dot-test_bots_inventory_matches_the_real_container_name()]] - `references` [EXTRACTED]
+- [[dot-test_connects_to_bridge_port_with_ws_scheme_and_query()]] - `references` [EXTRACTED]
+- [[dot-test_proxy_returns_400_on_traversal()]] - `references` [EXTRACTED]
+- [[dot-test_proxy_returns_400_on_traversal_in_query()]] - `references` [EXTRACTED]
+- [[dot-test_relays_text_and_bytes_both_directions()]] - `references` [EXTRACTED]
+- [[dot-test_traversal_in_path_closes_without_connecting()]] - `references` [EXTRACTED]
+- [[dot-test_traversal_in_query_closes_without_connecting()]] - `references` [EXTRACTED]
+- [[dot-test_upstream_connect_failure_closes_gracefully()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy
+#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy

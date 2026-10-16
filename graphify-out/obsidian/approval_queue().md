@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_approval_queue.py"
+source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L30"
+community: "PIIConfig"
+location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/PIIConfig
 ---
 
 # approval_queue()
 
 ## Connections
 - [[ApprovalQueue]] - `calls` [EXTRACTED]
-- [[Create approval queue instance for testing]] - `rationale_for` [EXTRACTED]
-- [[test_approval_queue.py]] - `contains` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
+- [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

@@ -12,8 +12,8 @@ tags:
 # ._load_rules()
 
 ## Connections
-- [[dot-__init__()_29]] - `calls` [EXTRACTED]
-- [[dot-from_dict()_1]] - `calls` [EXTRACTED]
+- [[dot-__init__()_197]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_10]] - `calls` [EXTRACTED]
 - [[ApprovalMode]] - `calls` [EXTRACTED]
 - [[EgressApprovalQueue]] - `method` [EXTRACTED]
 - [[EgressRule]] - `calls` [EXTRACTED]

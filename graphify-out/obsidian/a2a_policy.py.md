@@ -15,7 +15,7 @@ tags:
 - [[NOTE gatewaysecurityegress_filter.py_is_private_ip has the same class]] - `rationale_for` [EXTRACTED]
 - [[A2AMethod]] - `contains` [EXTRACTED]
 - [[A2APolicyAction]] - `contains` [EXTRACTED]
-- [[A2APolicyConfig_1]] - `contains` [EXTRACTED]
+- [[A2APolicyConfig]] - `contains` [EXTRACTED]
 - [[A2APolicyDecision]] - `contains` [EXTRACTED]
 - [[A2APolicyEngine_2]] - `contains` [EXTRACTED]
 - [[Enum_3]] - `imports_from` [EXTRACTED]

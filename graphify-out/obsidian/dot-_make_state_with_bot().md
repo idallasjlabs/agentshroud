@@ -24,7 +24,7 @@ tags:
 - [[dot-test_risk_level_yellow_50_to_79()]] - `calls` [EXTRACTED]
 - [[dot-test_score_clamped_to_hundred()]] - `calls` [EXTRACTED]
 - [[dot-test_score_clamped_to_zero()]] - `calls` [EXTRACTED]
-- [[TestComputeBotScorecard_1]] - `method` [EXTRACTED]
+- [[TestComputeBotScorecard]] - `method` [EXTRACTED]
 - [[_make_app_state()]] - `calls` [EXTRACTED]
 - [[_make_bot_config()]] - `calls` [EXTRACTED]
 

@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-inspect_tool_call()]] - `calls` [EXTRACTED]
 - [[dot-inspect_tool_result()]] - `calls` [EXTRACTED]
-- [[Any_43]] - `references` [EXTRACTED]
-- [[MCPInspector]] - `method` [EXTRACTED]
+- [[Any_38]] - `references` [EXTRACTED]
+- [[MCPInspector_1]] - `method` [EXTRACTED]
 - [[Recursively redact HIGH-severity PII from a value.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPInspector

@@ -19,7 +19,7 @@ tags:
 - [[dot-record_success()]] - `calls` [EXTRACTED]
 - [[dot-record_violation()]] - `calls` [EXTRACTED]
 - [[dot-register_agent()]] - `calls` [EXTRACTED]
-- [[TrustLevel_1]] - `references` [EXTRACTED]
-- [[TrustManager]] - `method` [EXTRACTED]
+- [[TrustLevel_2]] - `references` [EXTRACTED]
+- [[TrustManager_4]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

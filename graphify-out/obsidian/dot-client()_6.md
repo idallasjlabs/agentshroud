@@ -12,7 +12,7 @@ tags:
 # .client()
 
 ## Connections
-- [[Path_52]] - `references` [EXTRACTED]
+- [[Path_59]] - `references` [EXTRACTED]
 - [[TestClient_1]] - `references` [EXTRACTED]
 - [[TestSkillsReloadEndpoint]] - `method` [EXTRACTED]
 

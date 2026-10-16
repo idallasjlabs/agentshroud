@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/subagent_governance.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "._check_budget"
-location: "L209"
+community: "create_auth_dependency"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_check_budget
+  - community/create_auth_dependency
 ---
 
 # .__init__()
 
 ## Connections
-- [[GovernanceConfig]] - `references` [EXTRACTED]
-- [[SubagentGovernance]] - `method` [EXTRACTED]
+- [[DataLedger]] - `method` [EXTRACTED]
+- [[LedgerConfig_1]] - `references` [EXTRACTED]
+- [[Store configuration          Actual database connection created in initialize().]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_check_budget
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

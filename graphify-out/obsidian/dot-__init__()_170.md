@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/mfa_guard.py"
+source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "test_mfa_guard.py"
-location: "L116"
+community: "AgentTarget"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/AgentTarget
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_decode_secret()]] - `calls` [EXTRACTED]
-- [[MFAGuard_1]] - `method` [EXTRACTED]
+- [[AgentTarget_2]] - `calls` [EXTRACTED]
+- [[Initialize router          Args             config Router configuration]] - `rationale_for` [EXTRACTED]
+- [[MultiAgentRouter]] - `method` [EXTRACTED]
+- [[RouterConfig_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

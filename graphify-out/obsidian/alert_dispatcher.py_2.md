@@ -13,17 +13,17 @@ tags:
 
 ## Connections
 - [[Alert JSONL Format]] - `contains` [EXTRACTED]
-- [[Configuration_10]] - `contains` [EXTRACTED]
-- [[Environment Variables_5]] - `contains` [EXTRACTED]
+- [[Configuration_12]] - `contains` [EXTRACTED]
+- [[Environment Variables_6]] - `contains` [EXTRACTED]
 - [[Function Details_4]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_4]] - `contains` [EXTRACTED]
-- [[Mode Enforce vs Monitor_2]] - `contains` [EXTRACTED]
+- [[Mode Enforce vs Monitor_3]] - `contains` [EXTRACTED]
 - [[Module-Level Constants_1]] - `contains` [EXTRACTED]
 - [[Operational Notes]] - `contains` [EXTRACTED]
-- [[Purpose_107]] - `contains` [EXTRACTED]
+- [[Purpose_104]] - `contains` [EXTRACTED]
 - [[Related_8]] - `contains` [EXTRACTED]
 - [[Responsibilities_6]] - `contains` [EXTRACTED]
-- [[Threat Model_4]] - `contains` [EXTRACTED]
+- [[Threat Model_5]] - `contains` [EXTRACTED]
 - [[alert_dispatcher.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy

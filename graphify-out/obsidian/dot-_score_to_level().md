@@ -16,7 +16,7 @@ tags:
 - [[dot-get_trust()]] - `calls` [EXTRACTED]
 - [[dot-register_agent()]] - `calls` [EXTRACTED]
 - [[Convert score to trust level based on thresholds.]] - `rationale_for` [EXTRACTED]
-- [[TrustLevel_1]] - `references` [EXTRACTED]
-- [[TrustManager]] - `method` [EXTRACTED]
+- [[TrustLevel_2]] - `references` [EXTRACTED]
+- [[TrustManager_4]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

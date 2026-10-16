@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
 community: "TelegramAPIProxy"
-location: "L8009"
+location: "L9010"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,8 +13,7 @@ tags:
 
 ## Connections
 - [[FakeRBAC]] - `calls` [EXTRACTED]
-- [[PassthroughPipeline]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
-- [[TestProgressiveLockdownUX]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `references` [EXTRACTED]
+- [[TestPerBotGroupMentionFilter]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

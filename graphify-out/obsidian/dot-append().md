@@ -12,8 +12,8 @@ tags:
 # .append()
 
 ## Connections
-- [[dot-emit()_1]] - `calls` [EXTRACTED]
-- [[dot-push()_4]] - `calls` [EXTRACTED]
+- [[dot-emit()]] - `calls` [EXTRACTED]
+- [[dot-push()_2]] - `calls` [EXTRACTED]
 - [[LogBuffer]] - `method` [EXTRACTED]
 - [[logs_recent()]] - `calls` [EXTRACTED]
 - [[ssh_hosts()_1]] - `calls` [EXTRACTED]

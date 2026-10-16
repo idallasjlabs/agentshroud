@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/templates/dashboard.html"
 type: "code"
-community: "api.py"
+community: "TestSSRFDetection"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/TestSSRFDetection
 ---
 
 # dashboard.html (Control Center Template)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dashboard()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

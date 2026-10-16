@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/proxy/slack_proxy.py"
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "AsyncMock"
-location: "L69"
+community: "KillSwitchMonitor"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/KillSwitchMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[SlackAPIProxy_1]] - `method` [EXTRACTED]
+- [[AlertDispatcher]] - `method` [EXTRACTED]
+- [[Path_30]] - `references` [EXTRACTED]
+- [[deque]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

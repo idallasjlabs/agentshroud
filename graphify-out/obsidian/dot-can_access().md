@@ -12,7 +12,7 @@ tags:
 # .can_access()
 
 ## Connections
-- [[dot-_is_owner()]] - `calls` [EXTRACTED]
+- [[dot-_is_owner()_1]] - `calls` [EXTRACTED]
 - [[dot-group_workspace_id()]] - `calls` [EXTRACTED]
 - [[dot-resolve_workspace()]] - `calls` [EXTRACTED]
 - [[GroupWorkspaceManager]] - `method` [EXTRACTED]

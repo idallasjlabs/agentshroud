@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/soc/services.py"
+source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L218"
+community: "AgentTarget"
+location: "L404"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/AgentTarget
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_67]] - `references` [EXTRACTED]
-- [[ServiceManager]] - `method` [EXTRACTED]
+- [[_TrustCaptor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

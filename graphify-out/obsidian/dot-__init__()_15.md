@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/security/network_validator.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
 community: "AlertDispatcher"
-location: "L54"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,7 @@ tags:
 # .__init__()
 
 ## Connections
-- [[NetworkValidator]] - `method` [EXTRACTED]
+- [[dot-_compile_patterns()]] - `calls` [EXTRACTED]
+- [[LogSanitizer]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher

@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-get_blocked_entries()]] - `calls` [EXTRACTED]
 - [[dot-get_failed_entries()]] - `calls` [EXTRACTED]
-- [[dot-verify_chain()_1]] - `calls` [EXTRACTED]
-- [[Any_32]] - `references` [EXTRACTED]
+- [[dot-verify_chain()]] - `calls` [EXTRACTED]
+- [[Any_26]] - `references` [EXTRACTED]
 - [[Generate an MCP audit report summary.]] - `rationale_for` [EXTRACTED]
 - [[MCPAuditTrail]] - `method` [EXTRACTED]
 

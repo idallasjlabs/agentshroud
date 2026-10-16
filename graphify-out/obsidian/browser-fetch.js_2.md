@@ -15,8 +15,8 @@ tags:
 - [[SecureBrowser SKILL_2]] - `semantically_similar_to` [INFERRED]
 - [[appendLog()_2]] - `contains` [EXTRACTED]
 - [[browserFetch()_2]] - `contains` [EXTRACTED]
-- [[fs_2]] - `contains` [EXTRACTED]
-- [[path_17]] - `contains` [EXTRACTED]
+- [[fs_3]] - `contains` [EXTRACTED]
+- [[path_19]] - `contains` [EXTRACTED]
 - [[{ chromium }_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automation

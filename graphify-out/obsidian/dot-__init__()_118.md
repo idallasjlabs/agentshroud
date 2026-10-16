@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "MultiTurnTracker"
-location: "L94"
+community: "MCPPolicyEngine"
+location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MultiTurnTracker
+  - community/MCPPolicyEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_compile_detection_patterns()_1]] - `calls` [EXTRACTED]
-- [[Any_42]] - `references` [EXTRACTED]
-- [[Initialize the multi-turn tracker.          Args             config Configurat]] - `rationale_for` [EXTRACTED]
-- [[MultiTurnTracker]] - `method` [EXTRACTED]
-- [[ThresholdConfig]] - `calls` [EXTRACTED]
+- [[_FakeApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

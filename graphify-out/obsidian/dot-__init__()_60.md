@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "make_event"
-location: "L42"
+community: "MiddlewareManager"
+location: "L187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[EventBus]] - `method` [EXTRACTED]
+- [[FileSandbox]] - `method` [EXTRACTED]
+- [[FileSandboxConfig]] - `references` [EXTRACTED]
+- [[PIIScanner]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_contributors.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "_FakeRBAC"
-location: "L25"
+community: "dashboard_endpoints.py"
+location: "L142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/dashboard_endpointspy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeRBAC_2]] - `method` [EXTRACTED]
+- [[LogBuffer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy

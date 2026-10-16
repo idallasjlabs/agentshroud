@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_differential_pii_detector.py"
+source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "DifferentialPIIDetector"
-location: "L35"
+community: "MiddlewareManager"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/MiddlewareManager
 ---
 
 # default_config()
 
 ## Connections
-- [[DifferentialPIIConfig]] - `references` [EXTRACTED]
-- [[test_differential_pii_detector.py]] - `contains` [EXTRACTED]
+- [[FileSandboxConfig]] - `calls` [EXTRACTED]
+- [[test_file_sandbox.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

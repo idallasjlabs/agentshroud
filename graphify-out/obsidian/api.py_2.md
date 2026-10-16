@@ -45,7 +45,7 @@ tags:
 - [[deploy_manifest()]] - `imports` [EXTRACTED]
 - [[detect_runtime()]] - `imports` [EXTRACTED]
 - [[export_config()]] - `contains` [EXTRACTED]
-- [[falco_monitor.py]] - `conceptually_related_to` [INFERRED]
+- [[falco_monitor.py_2]] - `conceptually_related_to` [INFERRED]
 - [[get_competitive_intel()]] - `contains` [EXTRACTED]
 - [[get_competitive_intel_history()]] - `contains` [EXTRACTED]
 - [[get_config()]] - `contains` [EXTRACTED]
@@ -84,7 +84,7 @@ tags:
 - [[upgrade_openclaw()]] - `contains` [EXTRACTED]
 - [[verify_token()]] - `imports` [EXTRACTED]
 - [[warn_missing_features()]] - `imports` [EXTRACTED]
-- [[wazuh_client.py]] - `conceptually_related_to` [INFERRED]
+- [[wazuh_client.py_2]] - `conceptually_related_to` [INFERRED]
 - [[ws_logs()]] - `contains` [EXTRACTED]
 - [[ws_updates()]] - `contains` [EXTRACTED]
 

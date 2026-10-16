@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_check_repeat_request_patterns()]] - `calls` [EXTRACTED]
 - [[dot-is_request_in_cooldown()]] - `calls` [EXTRACTED]
-- [[Any_51]] - `references` [EXTRACTED]
+- [[Any_46]] - `references` [EXTRACTED]
 - [[ApprovalHardening]] - `method` [EXTRACTED]
 - [[Create a fingerprint for request parameters.]] - `rationale_for` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "MiddlewareManager"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/MiddlewareManager
 ---
 
 # _resolve_caller()
@@ -19,7 +19,7 @@ tags:
 - [[dot-test_wrong_bearer_raises_401()]] - `calls` [EXTRACTED]
 - [[dot-test_x_soc_token_header_valid()]] - `calls` [EXTRACTED]
 - [[FastAPI dependency resolve Bearercookie token → user_id → role.]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[SCLCaller_2]] - `references` [EXTRACTED]
 - [[TestResolveCaller]] - `calls` [EXTRACTED]
 - [[_get_config_token()]] - `calls` [EXTRACTED]
 - [[_get_rbac_manager()]] - `calls` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[socauth.py]] - `contains` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

@@ -17,6 +17,6 @@ tags:
 - [[Attempt to detect the source of a file modification.          Detection strategy]] - `rationale_for` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
 - [[ModificationSource]] - `references` [EXTRACTED]
-- [[Path_48]] - `references` [EXTRACTED]
+- [[Path_47]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

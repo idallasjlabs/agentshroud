@@ -12,7 +12,7 @@ tags:
 # ._load_baseline()
 
 ## Connections
-- [[dot-check()_4]] - `calls` [EXTRACTED]
+- [[dot-check()_3]] - `calls` [EXTRACTED]
 - [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
 - [[Load the last known baseline from disk. Returns empty dict if not found.]] - `rationale_for` [EXTRACTED]
 

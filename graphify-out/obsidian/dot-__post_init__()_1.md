@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L50"
+community: "A2AMethod"
+location: "L199"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/A2AMethod
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[ContentThreat]] - `method` [EXTRACTED]
+- [[A2APolicyConfig]] - `method` [EXTRACTED]
+- [[_norm()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/A2AMethod

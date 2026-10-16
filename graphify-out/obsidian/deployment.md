@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Deployment Runbook — AgentShroud]] - `contains` [EXTRACTED]
-- [[RUNBOOK_1]] - `conceptually_related_to` [INFERRED]
+- [[RUNBOOK]] - `conceptually_related_to` [INFERRED]
 - [[Rollback Procedure]] - `semantically_similar_to` [INFERRED]
 - [[raspberry-pi]] - `references` [AMBIGUOUS]
 

@@ -12,8 +12,8 @@ tags:
 # ._schedule_timeout()
 
 ## Connections
-- [[dot-initialize()_2]] - `calls` [EXTRACTED]
-- [[dot-submit()_1]] - `calls` [EXTRACTED]
+- [[dot-initialize()_1]] - `calls` [EXTRACTED]
+- [[dot-submit()]] - `calls` [EXTRACTED]
 - [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
 - [[Schedule a timeout task for a request.]] - `rationale_for` [EXTRACTED]
 - [[ToolRiskPolicy_1]] - `references` [EXTRACTED]

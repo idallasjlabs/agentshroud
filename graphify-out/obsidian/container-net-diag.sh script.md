@@ -13,13 +13,13 @@ tags:
 
 ## Connections
 - [[container-net-diag.sh]] - `contains` [EXTRACTED]
-- [[fail()_3]] - `calls` [EXTRACTED]
+- [[fail()_5]] - `calls` [EXTRACTED]
 - [[has()]] - `calls` [EXTRACTED]
 - [[header()]] - `calls` [EXTRACTED]
 - [[http_test()]] - `calls` [EXTRACTED]
 - [[info()_2]] - `calls` [EXTRACTED]
 - [[pass()_3]] - `calls` [EXTRACTED]
 - [[tcp_test()]] - `calls` [EXTRACTED]
-- [[warn()_2]] - `calls` [EXTRACTED]
+- [[warn()_6]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/colima-health-checksh

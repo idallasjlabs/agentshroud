@@ -12,7 +12,7 @@ tags:
 # ._dispatch_aggregate()
 
 ## Connections
-- [[dot-check()_2]] - `calls` [EXTRACTED]
+- [[dot-check()_1]] - `calls` [EXTRACTED]
 - [[CronStateMonitor]] - `method` [EXTRACTED]
 - [[JobState]] - `references` [EXTRACTED]
 

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy.py"
+source_file: "gateway/web/management.py"
 type: "code"
-community: "MCPAuditTrail"
-location: "L109"
+community: "TestSSRFDetection"
+location: "L243"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPAuditTrail
+  - community/TestSSRFDetection
 ---
 
 # audit()
 
 ## Connections
-- [[MCPAuditTrail]] - `calls` [EXTRACTED]
-- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
+- [[Serve the audit log page.]] - `rationale_for` [EXTRACTED]
+- [[management.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

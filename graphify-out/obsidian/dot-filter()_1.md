@@ -12,7 +12,7 @@ tags:
 # .filter()
 
 ## Connections
-- [[LogRecord_2]] - `references` [EXTRACTED]
+- [[LogRecord]] - `references` [EXTRACTED]
 - [[_DropInvalidHTTPRequestFilter]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AgentTarget

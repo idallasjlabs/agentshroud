@@ -1,23 +1,19 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L230"
+community: "TestEgressApprovalQueue"
+location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/TestEgressApprovalQueue
 ---
 
 # .__init__()
 
 ## Connections
-- [[ConnectionPool]] - `calls` [EXTRACTED]
-- [[EnhancedApprovalQueue_2]] - `references` [EXTRACTED]
-- [[MCPAuditTrail_1]] - `references` [EXTRACTED]
-- [[MCPInspector_1]] - `references` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `references` [EXTRACTED]
-- [[MCPProxy]] - `method` [EXTRACTED]
-- [[MCPProxyConfig_2]] - `references` [EXTRACTED]
+- [[dot-_load_rules()]] - `calls` [EXTRACTED]
+- [[EgressApprovalQueue]] - `method` [EXTRACTED]
+- [[Initialize the approval queue.          Args             rules_file Path to pe]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

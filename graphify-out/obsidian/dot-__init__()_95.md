@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L424"
+community: "AsyncMock"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/AsyncMock
 ---
 
 # .__init__()
 
 ## Connections
-- [[_PassInboundPipeline]] - `method` [EXTRACTED]
+- [[_RaisingRedactionResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

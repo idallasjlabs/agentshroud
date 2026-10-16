@@ -1,22 +1,19 @@
 ---
-source_file: "gateway/security/outbound_filter.py"
+source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "AuditChain"
-location: "L351"
+community: "RBACConfig"
+location: "L261"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/RBACConfig
 ---
 
 # .filter_response()
 
 ## Connections
-- [[dot-_classify_response_risk()]] - `calls` [EXTRACTED]
-- [[dot-_is_allowed_for_trust()]] - `calls` [EXTRACTED]
-- [[Filter agent response for sensitive information disclosure.          Args]] - `rationale_for` [EXTRACTED]
-- [[FilterMatch]] - `calls` [EXTRACTED]
-- [[FilterResult_1]] - `references` [EXTRACTED]
-- [[OutboundInfoFilter]] - `method` [EXTRACTED]
+- [[dot-_get_role_value()]] - `calls` [EXTRACTED]
+- [[PrivacyPolicyEnforcer]] - `method` [EXTRACTED]
+- [[Strip admin-private content from a response before delivering to user.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

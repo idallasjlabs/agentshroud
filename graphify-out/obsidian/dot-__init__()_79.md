@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/shared_memory.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "RBACConfig"
-location: "L57"
+community: "MiddlewareManager"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[SharedMemoryManager]] - `method` [EXTRACTED]
+- [[ToolResultPIIConfig]] - `references` [EXTRACTED]
+- [[ToolResultSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

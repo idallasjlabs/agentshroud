@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "MultiTurnTracker"
-location: "L355"
+community: "TestToolChainAnalyzer"
+location: "L494"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MultiTurnTracker
+  - community/TestToolChainAnalyzer
 ---
 
 # ._trigger_alert()
 
 ## Connections
-- [[dot-_check_thresholds()]] - `calls` [EXTRACTED]
-- [[AlertLevel]] - `references` [EXTRACTED]
-- [[MultiTurnTracker]] - `method` [EXTRACTED]
-- [[SessionContext]] - `references` [EXTRACTED]
-- [[Trigger alert callbacks.]] - `rationale_for` [EXTRACTED]
+- [[dot-analyze_tool_call()]] - `calls` [EXTRACTED]
+- [[ChainMatch]] - `references` [EXTRACTED]
+- [[ToolChainAnalyzer]] - `method` [EXTRACTED]
+- [[Trigger alert callbacks for a detected chain.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

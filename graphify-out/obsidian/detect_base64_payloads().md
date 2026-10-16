@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/input_normalizer.py"
 type: "code"
-community: "AuditChain"
+community: "ContextSegment"
 location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/ContextSegment
 ---
 
 # detect_base64_payloads()
 
 ## Connections
 - [[dot-_check_encoded_content()]] - `calls` [EXTRACTED]
-- [[dot-scan()_3]] - `calls` [EXTRACTED]
+- [[dot-scan()_2]] - `calls` [EXTRACTED]
 - [[Detect potential base64-encoded payloads in text.     Returns list of decoded st]] - `rationale_for` [EXTRACTED]
-- [[input_normalizer.py_2]] - `contains` [EXTRACTED]
-- [[prompt_guard.py_1]] - `imports` [EXTRACTED]
+- [[input_normalizer.py]] - `contains` [EXTRACTED]
+- [[prompt_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

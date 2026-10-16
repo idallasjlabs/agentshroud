@@ -12,7 +12,7 @@ tags:
 # ._spawn_send()
 
 ## Connections
-- [[dot-_handle()]] - `calls` [EXTRACTED]
+- [[dot-_handle()_1]] - `calls` [EXTRACTED]
 - [[AlertTelegramRelay]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

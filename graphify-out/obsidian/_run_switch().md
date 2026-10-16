@@ -16,7 +16,7 @@ tags:
 - [[dot-_run_and_read()_1]] - `calls` [EXTRACTED]
 - [[dot-_run_twice()]] - `calls` [EXTRACTED]
 - [[CompletedProcess]] - `references` [EXTRACTED]
-- [[Path_10]] - `references` [EXTRACTED]
+- [[Path_14]] - `references` [EXTRACTED]
 - [[Run switch_model.sh with mocked external commands.]] - `rationale_for` [EXTRACTED]
 - [[test_switch_model_idempotent.py]] - `contains` [EXTRACTED]
 

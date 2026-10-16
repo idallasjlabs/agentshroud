@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[agentshroud-bot_1]] - `contains` [EXTRACTED]
-- [[networks]] - `references` [EXTRACTED]
+- [[networks_1]] - `references` [EXTRACTED]
 - [[openclaw]] - `references` [EXTRACTED]
-- [[volumes]] - `references` [EXTRACTED]
+- [[volumes_1]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agentshroud-bot

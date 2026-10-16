@@ -15,7 +15,7 @@ tags:
 - [[dot-get_config_for_tool()]] - `calls` [EXTRACTED]
 - [[dot-sanitize_tool_result()]] - `calls` [EXTRACTED]
 - [[Get or create a PIISanitizer instance for the specified tool]] - `rationale_for` [EXTRACTED]
-- [[PIISanitizer]] - `references` [EXTRACTED]
+- [[PIISanitizer_3]] - `references` [EXTRACTED]
 - [[ToolResultSanitizer]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

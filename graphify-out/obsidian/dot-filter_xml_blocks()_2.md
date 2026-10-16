@@ -12,7 +12,7 @@ tags:
 # .filter_xml_blocks()
 
 ## Connections
-- [[PIISanitizer_2]] - `method` [EXTRACTED]
+- [[PIISanitizer_1]] - `method` [EXTRACTED]
 - [[Remove Claude XML function call blocks from responses          Strips out intern]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PIIConfig

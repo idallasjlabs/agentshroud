@@ -12,7 +12,7 @@ tags:
 # ._init_db()
 
 ## Connections
-- [[dot-__init__()_10]] - `calls` [EXTRACTED]
+- [[dot-__init__()_12]] - `calls` [EXTRACTED]
 - [[DriftDetector]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/tool_acl.py"
+source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "TrustConfig"
-location: "L214"
+community: "ModuleStatsCollector"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/ModuleStatsCollector
 ---
 
 # .__init__()
 
 ## Connections
-- [[ToolACLConfig]] - `references` [EXTRACTED]
-- [[ToolACLEnforcer]] - `method` [EXTRACTED]
+- [[ModuleStatsCollector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector

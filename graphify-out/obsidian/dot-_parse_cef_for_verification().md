@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "AuditEvent"
+community: "AuditExporter"
 location: "L193"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditEvent
+  - community/AuditExporter
 ---
 
 # ._parse_cef_for_verification()
@@ -16,4 +16,4 @@ tags:
 - [[AuditExporter]] - `method` [EXTRACTED]
 - [[Parse CEF lines and extract entryHashpreviousHash for chain verification.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditEvent
+#graphify/code #graphify/EXTRACTED #community/AuditExporter

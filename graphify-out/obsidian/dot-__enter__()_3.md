@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/tests/test_gateway_email_service.py"
 type: "code"
-community: "FetchOutcome"
-location: "L195"
+community: "GatewayEmailService"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/GatewayEmailService
 ---
 
 # .__enter__()
 
 ## Connections
-- [[_StreamResp]] - `method` [EXTRACTED]
+- [[_FakeSmtp]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

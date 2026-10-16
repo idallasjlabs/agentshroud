@@ -12,7 +12,7 @@ tags:
 # ._default_send()
 
 ## Connections
-- [[Any_74]] - `references` [EXTRACTED]
+- [[Any_75]] - `references` [EXTRACTED]
 - [[GroupApprovalRouter]] - `method` [EXTRACTED]
 - [[No-op send stub — used when no transport is injected.]] - `rationale_for` [EXTRACTED]
 

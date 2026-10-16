@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/killswitch_monitor.py"
+source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L37"
+community: "SecureBrowser"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/SecureBrowser
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_20]] - `references` [EXTRACTED]
-- [[KillSwitchConfig]] - `references` [EXTRACTED]
-- [[KillSwitchMonitor]] - `method` [EXTRACTED]
-- [[deque]] - `calls` [EXTRACTED]
+- [[dot-_load_config()_3]] - `calls` [EXTRACTED]
+- [[SecureBrowser_3]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

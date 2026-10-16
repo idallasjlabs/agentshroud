@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "_req"
+community: "test_prompt_guard.py"
 location: "L827"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req
+  - community/test_prompt_guardpy
 ---
 
 # _scan_result()
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_warn_action_returns_sanitized()]] - `calls` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req
+#graphify/code #graphify/EXTRACTED #community/test_prompt_guardpy

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_extract_dict_content()]] - `calls` [EXTRACTED]
 - [[dot-sanitize_tool_result()]] - `calls` [EXTRACTED]
-- [[Any_50]] - `references` [EXTRACTED]
+- [[Any_32]] - `references` [EXTRACTED]
 - [[Extract text content from various tool result formats for PII scanning]] - `rationale_for` [EXTRACTED]
 - [[ToolResultSanitizer]] - `method` [EXTRACTED]
 

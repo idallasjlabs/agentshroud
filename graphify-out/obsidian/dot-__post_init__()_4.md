@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "MCPPolicyEngine"
-location: "L169"
+community: "MiddlewareManager"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/MiddlewareManager
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[MCPPolicyConfig_1]] - `method` [EXTRACTED]
-- [[RBACConfig_4]] - `calls` [EXTRACTED]
-- [[_norm()_1]] - `calls` [EXTRACTED]
+- [[RetentionAction]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

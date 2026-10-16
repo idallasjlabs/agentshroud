@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/intel_report.py"
+source_file: "gateway/ingest_api/email_service.py"
 type: "code"
-community: "CompetitiveIntelReport"
-location: "L205"
+community: "GatewayEmailService"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CompetitiveIntelReport
+  - community/GatewayEmailService
 ---
 
 # .__init__()
 
 ## Connections
-- [[IntelReportStore_1]] - `method` [EXTRACTED]
-- [[Path_18]] - `references` [EXTRACTED]
+- [[GatewayEmailService_1]] - `method` [EXTRACTED]
+- [[TransportFactory]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

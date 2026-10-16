@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[canary-deploy.sh script]] - `contains` [EXTRACTED]
 - [[deploy_ref()]] - `defines` [EXTRACTED]
-- [[die()]] - `defines` [EXTRACTED]
-- [[log()]] - `defines` [EXTRACTED]
+- [[die()_1]] - `defines` [EXTRACTED]
+- [[log()_2]] - `defines` [EXTRACTED]
 - [[run()]] - `defines` [EXTRACTED]
 - [[run_in_repo()]] - `defines` [EXTRACTED]
 

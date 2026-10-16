@@ -15,6 +15,6 @@ tags:
 - [[dot-generate_canary()]] - `calls` [EXTRACTED]
 - [[Create regex patterns to detect the canary in responses.          Args]] - `rationale_for` [EXTRACTED]
 - [[OutputCanary]] - `method` [EXTRACTED]
-- [[Pattern_2]] - `references` [EXTRACTED]
+- [[Pattern_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

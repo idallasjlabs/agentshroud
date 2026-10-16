@@ -12,7 +12,7 @@ tags:
 # ._ensure_base_directory()
 
 ## Connections
-- [[dot-__init__()_168]] - `calls` [EXTRACTED]
+- [[dot-__init__()_166]] - `calls` [EXTRACTED]
 - [[Create base agentshroud temp directory if it doesn't exist.]] - `rationale_for` [EXTRACTED]
 - [[PathIsolationManager]] - `method` [EXTRACTED]
 

@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/rbac_config.py"
+source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "telegram_proxy.py"
-location: "L85"
+community: "TrustConfig"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/TrustConfig
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[Initialize user roles based on configuration.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_4]] - `method` [EXTRACTED]
-- [[load_persisted_collaborators()]] - `calls` [EXTRACTED]
-- [[load_removed_collaborator_ids()]] - `calls` [EXTRACTED]
+- [[TrustConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

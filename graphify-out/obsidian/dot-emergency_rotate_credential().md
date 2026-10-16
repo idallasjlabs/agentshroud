@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-rotate_credential()]] - `calls` [EXTRACTED]
-- [[Any_18]] - `references` [EXTRACTED]
+- [[Any_30]] - `references` [EXTRACTED]
 - [[KeyRotationManager]] - `method` [EXTRACTED]
 - [[Perform emergency rotation of a credential.]] - `rationale_for` [EXTRACTED]
 

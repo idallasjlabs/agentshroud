@@ -1,18 +1,20 @@
 ---
-source_file: "tests/startup_smoke/test_bot_boot_static.sh"
+source_file: "tests/startup_smoke/test_setup_secrets.sh"
 type: "code"
-community: "run-standalone.sh (Hermes docker run launcher)"
-location: "L37-L46"
+community: "setup-secrets.sh"
+location: "L31-L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run-standalonesh_Hermes_docker_run_launcher
+  - community/setup-secretssh
 ---
 
 # check
 
 ## Connections
-- [[test_bot_boot_static.sh (static bot boot assertions S1-S14)]] - `defines` [EXTRACTED]
-- [[test_bot_boot_static.sh script]] - `calls` [EXTRACTED]
+- [[SS13SS14 behavioural test of write_secret_file]] - `calls` [EXTRACTED]
+- [[Static assertions SS1-SS12 on setup-secrets.sh]] - `implements` [EXTRACTED]
+- [[test_setup_secrets.sh]] - `defines` [EXTRACTED]
+- [[test_setup_secrets.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher
+#graphify/code #graphify/EXTRACTED #community/setup-secretssh

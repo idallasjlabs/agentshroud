@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "AuditChain"
+community: "PipelineAction"
 location: "L196"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/PipelineAction
 ---
 
 # .append_block()
@@ -15,9 +15,9 @@ tags:
 - [[dot-_process_inbound_core()]] - `calls` [EXTRACTED]
 - [[dot-_process_outbound_core()]] - `calls` [EXTRACTED]
 - [[dot-append()_1]] - `calls` [EXTRACTED]
-- [[Any_69]] - `references` [EXTRACTED]
+- [[Any_41]] - `references` [EXTRACTED]
 - [[Append to the chain with guaranteed SQLite persistence.          Used exclusivel]] - `rationale_for` [EXTRACTED]
 - [[AuditChain]] - `method` [EXTRACTED]
 - [[AuditChainEntry]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

@@ -12,10 +12,10 @@ tags:
 # ._hash_file()
 
 ## Connections
-- [[dot-check()_4]] - `calls` [EXTRACTED]
+- [[dot-check()_3]] - `calls` [EXTRACTED]
 - [[dot-reset_baseline()]] - `calls` [EXTRACTED]
 - [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
-- [[Path_22]] - `references` [EXTRACTED]
+- [[Path_25]] - `references` [EXTRACTED]
 - [[Return hex SHA256 of a file, or None if the file does not exist.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-sanitize_tool_result()]] - `calls` [EXTRACTED]
-- [[Any_50]] - `references` [EXTRACTED]
+- [[Any_32]] - `references` [EXTRACTED]
 - [[Reconstruct the tool result with sanitized content]] - `rationale_for` [EXTRACTED]
 - [[ToolResultSanitizer]] - `method` [EXTRACTED]
 

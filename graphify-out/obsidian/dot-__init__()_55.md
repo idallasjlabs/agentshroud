@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/cross_bot_trust_ledger.py"
+source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L148"
+community: "ConsentFramework"
+location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/ConsentFramework
 ---
 
 # .__init__()
 
 ## Connections
-- [[CrossBotTrustLedger_1]] - `method` [EXTRACTED]
-- [[TrustDecayPolicy]] - `references` [EXTRACTED]
-- [[deque]] - `calls` [INFERRED]
+- [[ConsentFramework]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework

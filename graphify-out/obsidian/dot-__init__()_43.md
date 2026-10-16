@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/proxy/mcp_permissions.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L183"
+community: "Git Workflow Guardian (GIT-GUARD)"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/Git_Workflow_Guardian_GIT-GUARD
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_privacy_policy()]] - `calls` [EXTRACTED]
-- [[dot-_recompile_private_data_patterns()]] - `calls` [EXTRACTED]
-- [[MCPPermissionManager]] - `method` [EXTRACTED]
-- [[MCPProxyConfig_1]] - `references` [EXTRACTED]
-- [[RBACConfig_4]] - `calls` [EXTRACTED]
+- [[dot-_load_pending_store()]] - `calls` [EXTRACTED]
+- [[ApprovalQueue]] - `method` [EXTRACTED]
+- [[ApprovalQueueConfig]] - `references` [EXTRACTED]
+- [[Initialize approval queue          Args             config Approval queue conf]] - `rationale_for` [EXTRACTED]
+- [[MFAGuard]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/Git_Workflow_Guardian_GIT-GUARD

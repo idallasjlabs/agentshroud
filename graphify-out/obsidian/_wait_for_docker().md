@@ -13,7 +13,8 @@ tags:
 
 ## Connections
 - [[_attempt_rollback()]] - `calls` [EXTRACTED]
-- [[log()_8]] - `calls` [EXTRACTED]
+- [[_wait_result()]] - `references` [EXTRACTED]
+- [[log()]] - `calls` [EXTRACTED]
 - [[phase_apply()]] - `calls` [EXTRACTED]
 - [[phase_preflight()]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]

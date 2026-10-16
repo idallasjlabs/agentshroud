@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/egress_filter.py"
+source_file: "gateway/tests/test_soc_contributors.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L105"
+community: "_FakeRBAC"
+location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/_FakeRBAC
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressFilter_2]] - `method` [EXTRACTED]
-- [[EgressFilterConfig_1]] - `references` [EXTRACTED]
-- [[EgressPolicy]] - `references` [EXTRACTED]
-- [[get_egress_config()]] - `calls` [EXTRACTED]
+- [[_FakeRBAC_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

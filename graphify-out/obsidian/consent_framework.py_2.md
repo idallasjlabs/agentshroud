@@ -12,11 +12,11 @@ tags:
 # consent_framework.py
 
 ## Connections
-- [[Function Details_40]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_42]] - `contains` [EXTRACTED]
-- [[Purpose_163]] - `contains` [EXTRACTED]
-- [[Related_46]] - `contains` [EXTRACTED]
-- [[Responsibilities_44]] - `contains` [EXTRACTED]
+- [[Function Details_39]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_41]] - `contains` [EXTRACTED]
+- [[Purpose_170]] - `contains` [EXTRACTED]
+- [[Related_45]] - `contains` [EXTRACTED]
+- [[Responsibilities_43]] - `contains` [EXTRACTED]
 - [[Secret Patterns in Environment Variables]] - `contains` [EXTRACTED]
 - [[Shell Injection Patterns Detected]] - `contains` [EXTRACTED]
 - [[Threat Model_25]] - `contains` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "AlertDispatcher"
+community: "First Time Setup"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/First_Time_Setup
 ---
 
 # ._is_duplicate()
@@ -16,4 +16,4 @@ tags:
 - [[AlertDispatcher]] - `method` [EXTRACTED]
 - [[Check if alert was already seen within dedup window.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/First_Time_Setup

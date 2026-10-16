@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "AlertDispatcher"
+community: "test_telegram_proxy_outbound.py"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # .check_drift()
@@ -19,4 +19,4 @@ tags:
 - [[DriftAlert]] - `references` [EXTRACTED]
 - [[DriftDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

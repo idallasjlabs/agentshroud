@@ -15,6 +15,6 @@ tags:
 - [[dot-scan_file()_1]] - `calls` [EXTRACTED]
 - [[Compute SHA-256 hash of a file.]] - `rationale_for` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
-- [[Path_48]] - `references` [EXTRACTED]
+- [[Path_47]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

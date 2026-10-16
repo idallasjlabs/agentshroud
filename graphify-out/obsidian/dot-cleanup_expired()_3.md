@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/session_security.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "SessionManager"
-location: "L181"
+community: "TestEgressApprovalQueue"
+location: "L782"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/TestEgressApprovalQueue
 ---
 
 # .cleanup_expired()
 
 ## Connections
-- [[dot-create_session()]] - `calls` [EXTRACTED]
-- [[SessionManager]] - `method` [EXTRACTED]
+- [[dot-_save_rules()]] - `calls` [EXTRACTED]
+- [[EgressApprovalQueue]] - `method` [EXTRACTED]
+- [[Remove expired session rules and timed-out requests.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

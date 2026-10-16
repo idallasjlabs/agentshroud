@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "AlertDispatcher"
+community: "First Time Setup"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/First_Time_Setup
 ---
 
 # .dispatch()
@@ -17,7 +17,7 @@ tags:
 - [[dot-_log_alert()]] - `calls` [EXTRACTED]
 - [[dot-_send_notification()]] - `calls` [EXTRACTED]
 - [[AlertDispatcher]] - `method` [EXTRACTED]
-- [[Any_59]] - `references` [EXTRACTED]
+- [[Any_79]] - `references` [EXTRACTED]
 - [[Dispatch an alert based on severity.          Args             alert Alert dic]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/First_Time_Setup

@@ -18,7 +18,7 @@ tags:
 - [[Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)]] - `references` [EXTRACTED]
 - [[Upgrade Report 2026-10-04 (dev, ALL GREEN after re-scan)]] - `references` [EXTRACTED]
 - [[check-soak-status.sh script]] - `contains` [EXTRACTED]
-- [[main()_13]] - `references` [EXTRACTED]
+- [[main()_15]] - `references` [EXTRACTED]
 - [[post-deploy-check.sh]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/colima-health-checksh

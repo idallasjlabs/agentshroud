@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "MiddlewareManager"
+community: "TestToolChainAnalyzer"
 location: "L576"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/TestToolChainAnalyzer
 ---
 
 # .add_alert_callback()
@@ -16,4 +16,4 @@ tags:
 - [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 - [[callable_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/session_security.py"
+source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "SessionManager"
-location: "L57"
+community: "AuditExporter"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/AuditExporter
 ---
 
 # .__init__()
 
 ## Connections
-- [[SessionManager]] - `method` [EXTRACTED]
+- [[AuditExportConfig_1]] - `references` [EXTRACTED]
+- [[AuditExporter]] - `method` [EXTRACTED]
+- [[AuditStore_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/AuditExporter

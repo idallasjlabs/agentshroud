@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-get_all_rules()]] - `calls` [EXTRACTED]
-- [[dot-to_dict()_2]] - `calls` [EXTRACTED]
+- [[dot-to_dict()_17]] - `calls` [EXTRACTED]
 - [[EgressApprovalQueue]] - `method` [EXTRACTED]
 - [[EgressScope]] - `calls` [EXTRACTED]
 

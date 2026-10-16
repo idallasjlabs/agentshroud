@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-sec-offense/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "AgentShroud v0.7.0 Blue Team Security Audit Report"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/AgentShroud_v070_Blue_Team_Security_Audit_Report
 ---
 
 # .agents/skills/i-sec-offense/README.md
 
 ## Connections
-- [[Red Team Adversarial Tester (SEC-OFFENSE)_2]] - `contains` [EXTRACTED]
+- [[Red Team Adversarial Tester (SEC-OFFENSE)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Blue_Team_Security_Audit_Report

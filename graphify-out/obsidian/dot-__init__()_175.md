@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/instruction_envelope.py"
+source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "AuditChain"
-location: "L51"
+community: "validate_network_security"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/validate_network_security
 ---
 
 # .__init__()
 
 ## Connections
-- [[EnvelopeSigner]] - `method` [EXTRACTED]
+- [[NetworkValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/validate_network_security

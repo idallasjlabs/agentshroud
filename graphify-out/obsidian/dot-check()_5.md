@@ -1,22 +1,22 @@
 ---
-source_file: "gateway/security/egress_filter.py"
+source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L163"
+community: "DNSFilterConfig"
+location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/DNSFilterConfig
 ---
 
 # .check()
 
 ## Connections
-- [[dot-_check_impl()]] - `calls` [EXTRACTED]
-- [[dot-check_async()]] - `calls` [EXTRACTED]
-- [[EgressAttempt]] - `references` [EXTRACTED]
-- [[EgressFilter_2]] - `method` [EXTRACTED]
-- [[Public entry — records the decision for the SOC heat-map (SCRUM-80),         the_1]] - `rationale_for` [EXTRACTED]
-- [[record_decision()]] - `calls` [EXTRACTED]
+- [[dot-_cleanup_rate_window()]] - `calls` [EXTRACTED]
+- [[dot-_detect_tunneling()]] - `calls` [EXTRACTED]
+- [[dot-_domain_in_allowlist()]] - `calls` [EXTRACTED]
+- [[DNSFilter]] - `method` [EXTRACTED]
+- [[DNSQuery]] - `calls` [EXTRACTED]
+- [[DNSVerdict]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

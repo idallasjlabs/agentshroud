@@ -12,7 +12,7 @@ tags:
 # ._timeout_request()
 
 ## Connections
-- [[dot-broadcast()_1]] - `calls` [EXTRACTED]
+- [[dot-broadcast()]] - `calls` [EXTRACTED]
 - [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
 - [[Handle timeout for a pending request.]] - `rationale_for` [EXTRACTED]
 

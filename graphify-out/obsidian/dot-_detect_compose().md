@@ -12,7 +12,7 @@ tags:
 # ._detect_compose()
 
 ## Connections
-- [[dot-__init__()_91]] - `calls` [EXTRACTED]
+- [[dot-__init__()_92]] - `calls` [EXTRACTED]
 - [[Detect podman compose or podman-compose.]] - `rationale_for` [EXTRACTED]
 - [[PodmanEngine]] - `method` [EXTRACTED]
 

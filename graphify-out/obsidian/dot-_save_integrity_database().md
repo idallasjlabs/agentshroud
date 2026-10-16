@@ -15,7 +15,7 @@ tags:
 - [[dot-clear_old_alerts()]] - `calls` [EXTRACTED]
 - [[dot-scan_all_monitored_files()]] - `calls` [EXTRACTED]
 - [[dot-scan_file()_1]] - `calls` [EXTRACTED]
-- [[dot-to_dict()_4]] - `calls` [EXTRACTED]
+- [[dot-to_dict()_1]] - `calls` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
 - [[Save integrity database to disk.]] - `rationale_for` [EXTRACTED]
 

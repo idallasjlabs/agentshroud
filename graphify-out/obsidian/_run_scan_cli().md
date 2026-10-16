@@ -17,7 +17,7 @@ tags:
 - [[dot-test_cli_fails_closed_on_unreadable_file()]] - `calls` [EXTRACTED]
 - [[dot-test_cli_missing_source_nonzero()]] - `calls` [EXTRACTED]
 - [[CompletedProcess_3]] - `references` [EXTRACTED]
-- [[Path_26]] - `references` [EXTRACTED]
+- [[Path_23]] - `references` [EXTRACTED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Path

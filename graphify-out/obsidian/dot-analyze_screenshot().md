@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "MiddlewareManager"
+community: "ConsentFramework"
 location: "L188"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ConsentFramework
 ---
 
 # .analyze_screenshot()
@@ -15,4 +15,4 @@ tags:
 - [[BrowserSecurityGuard]] - `method` [EXTRACTED]
 - [[ThreatAssessment]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework

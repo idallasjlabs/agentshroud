@@ -12,6 +12,6 @@ tags:
 # .forward()
 
 ## Connections
-- [[_StubForwarder_1]] - `method` [EXTRACTED]
+- [[_StubForwarder]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

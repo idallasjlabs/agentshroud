@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/ingest_api/middleware.py"
+source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L1078"
+community: "RBACConfig"
+location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/RBACConfig
 ---
 
 # ._is_owner()
 
 ## Connections
-- [[dot-process_request()]] - `calls` [EXTRACTED]
-- [[Check if user_id is the system owner via RBAC config (single source of truth).]] - `rationale_for` [EXTRACTED]
-- [[MiddlewareManager]] - `method` [EXTRACTED]
-- [[RBACConfig_4]] - `calls` [EXTRACTED]
+- [[dot-can_access()]] - `calls` [EXTRACTED]
+- [[GroupWorkspaceManager]] - `method` [EXTRACTED]
+- [[Return True if user_id is the system owner (oversight override).]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

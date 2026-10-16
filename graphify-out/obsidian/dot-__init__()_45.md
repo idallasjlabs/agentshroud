@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/soc/websocket.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L29"
+community: "ApprovalQueueConfig"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/ApprovalQueueConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[SOCWebSocketHandler_2]] - `method` [EXTRACTED]
-- [[WebSocket]] - `references` [EXTRACTED]
+- [[ApprovalStore]] - `method` [EXTRACTED]
+- [[Path_15]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

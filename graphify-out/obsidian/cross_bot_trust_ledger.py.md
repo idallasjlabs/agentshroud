@@ -17,6 +17,6 @@ tags:
 - [[Enum_3]] - `imports_from` [EXTRACTED]
 - [[IncidentRecord]] - `contains` [EXTRACTED]
 - [[TrustDecayPolicy]] - `contains` [EXTRACTED]
-- [[TrustManager]] - `imports` [EXTRACTED]
+- [[TrustManager_4]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

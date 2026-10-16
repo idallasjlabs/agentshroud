@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/url_analyzer.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "TestSSRFDetection"
-location: "L102"
+community: "EgressFilterConfig"
+location: "L412"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/EgressFilterConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args             resolve_dns If True, resolve hostnames to IPs and check those]] - `rationale_for` [EXTRACTED]
-- [[URLAnalyzer_1]] - `method` [EXTRACTED]
+- [[_StubForwarder_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

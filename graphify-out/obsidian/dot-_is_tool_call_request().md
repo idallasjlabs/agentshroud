@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-process_request()]] - `calls` [EXTRACTED]
-- [[Any_63]] - `references` [EXTRACTED]
+- [[Any_21]] - `references` [EXTRACTED]
 - [[MiddlewareManager]] - `method` [EXTRACTED]
 - [[Return True only when the request contains actual tool calls or tool results.]] - `rationale_for` [EXTRACTED]
 

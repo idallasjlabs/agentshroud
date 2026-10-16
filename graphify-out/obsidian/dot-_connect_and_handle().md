@@ -12,7 +12,7 @@ tags:
 # ._connect_and_handle()
 
 ## Connections
-- [[dot-run()_2]] - `calls` [EXTRACTED]
+- [[dot-run()_1]] - `calls` [EXTRACTED]
 - [[Open the WebSocket and process events until Slack requests disconnect.]] - `rationale_for` [EXTRACTED]
 - [[SlackSocketClient]] - `method` [EXTRACTED]
 

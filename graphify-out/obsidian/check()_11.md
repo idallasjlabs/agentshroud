@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/preflight-check.sh"
+source_file: "scripts/smoke.d/test-skills-sync.sh"
 type: "code"
-community: "ProxyDashboard"
-location: "L12"
+community: "sync-llm-settings.sh"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/sync-llm-settingssh
 ---
 
 # check()
 
 ## Connections
-- [[preflight-check.sh]] - `defines` [EXTRACTED]
-- [[preflight-check.sh script]] - `calls` [EXTRACTED]
+- [[test-skills-sync.sh]] - `defines` [EXTRACTED]
+- [[test-skills-sync.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/code #graphify/EXTRACTED #community/sync-llm-settingssh

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "AuditEvent"
+community: "AuditExporter"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditEvent
+  - community/AuditExporter
 ---
 
 # .export_events()
@@ -19,4 +19,4 @@ tags:
 - [[Export audit events in the specified format.          Args             start_ti]] - `rationale_for` [EXTRACTED]
 - [[TextIO]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditEvent
+#graphify/code #graphify/EXTRACTED #community/AuditExporter

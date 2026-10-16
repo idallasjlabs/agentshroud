@@ -12,6 +12,6 @@ tags:
 # categorize_alerts(alerts)
 
 ## Connections
-- [[Function Details_33]] - `contains` [EXTRACTED]
+- [[Function Details_32]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/falco_monitorpy

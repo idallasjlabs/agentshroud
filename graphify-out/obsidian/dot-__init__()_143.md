@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/web/api.py"
+source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "api.py"
-location: "L941"
+community: "HeuristicClassifier"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/HeuristicClassifier
 ---
 
 # .__init__()
 
 ## Connections
-- [[SkillGuardBlocked]] - `method` [EXTRACTED]
+- [[dot-_try_load_model()]] - `calls` [EXTRACTED]
+- [[HeuristicClassifier_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

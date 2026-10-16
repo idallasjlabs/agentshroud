@@ -12,7 +12,7 @@ tags:
 # ._burst_limit()
 
 ## Connections
-- [[dot-check()_3]] - `calls` [EXTRACTED]
+- [[dot-check()_2]] - `calls` [EXTRACTED]
 - [[RateLimitGuard]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RateLimitGuard

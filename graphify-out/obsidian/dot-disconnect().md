@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
 - [[Remove a WebSocket connection from connected set.]] - `rationale_for` [EXTRACTED]
-- [[WebSocket_5]] - `references` [EXTRACTED]
+- [[WebSocket_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

@@ -1,19 +1,23 @@
 ---
-source_file: "gateway/tests/test_a2a_integration.py"
+source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L61"
+community: "AlertTelegramRelay"
+location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/AlertTelegramRelay
 ---
 
 # ._handle()
 
 ## Connections
-- [[A2APeerTestDouble]] - `method` [EXTRACTED]
-- [[Request_5]] - `references` [EXTRACTED]
-- [[Response_1]] - `references` [EXTRACTED]
+- [[dot-__call__()_6]] - `calls` [EXTRACTED]
+- [[dot-_clean_tool()]] - `calls` [EXTRACTED]
+- [[dot-_coerce()]] - `calls` [EXTRACTED]
+- [[dot-_dedup_key()]] - `calls` [EXTRACTED]
+- [[dot-_spawn_send()]] - `calls` [EXTRACTED]
+- [[AlertTelegramRelay]] - `method` [EXTRACTED]
+- [[Any_25]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

@@ -1,17 +1,19 @@
 ---
-source_file: "src/interfaces/text_control_center.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "ControlCenter"
-location: "L66"
+community: "ToolResultSanitizer"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ControlCenter
+  - community/ToolResultSanitizer
 ---
 
 # .__init__()
 
 ## Connections
-- [[ControlCenter]] - `method` [EXTRACTED]
+- [[Any_32]] - `references` [EXTRACTED]
+- [[PIIConfig_1]] - `references` [EXTRACTED]
+- [[ToolResultPIIConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ControlCenter
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/group_workspace.py"
+source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "RBACConfig"
-location: "L95"
+community: "ContextSegment"
+location: "L584"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/ContextSegment
 ---
 
 # .__init__()
 
 ## Connections
-- [[GroupWorkspaceManager]] - `method` [EXTRACTED]
+- [[Args             block_threshold Score at or above which input is blocked.]] - `rationale_for` [EXTRACTED]
+- [[PatternRule]] - `references` [EXTRACTED]
+- [[PromptGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

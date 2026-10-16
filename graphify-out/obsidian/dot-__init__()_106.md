@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/prompt_protection.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L56"
+community: "_FakeUpstreamWS"
+location: "L745"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/_FakeUpstreamWS
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_compile_detection_patterns()]] - `calls` [EXTRACTED]
-- [[dot-_load_protected_content()]] - `calls` [EXTRACTED]
-- [[Any_40]] - `references` [EXTRACTED]
-- [[Initialize prompt protection system.          Args             config Configur]] - `rationale_for` [EXTRACTED]
-- [[PromptProtection]] - `method` [EXTRACTED]
+- [[_FakeWSConnect]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/_FakeUpstreamWS

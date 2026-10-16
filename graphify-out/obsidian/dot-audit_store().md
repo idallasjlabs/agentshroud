@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "code"
-community: "AuditStore"
+community: "AuditExporter"
 location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/AuditExporter
 ---
 
 # .audit_store()
 
 ## Connections
-- [[AuditStore_1]] - `calls` [EXTRACTED]
+- [[AuditStore]] - `calls` [EXTRACTED]
 - [[Create audit store with test data.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditExporter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/AuditExporter

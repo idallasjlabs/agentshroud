@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/context_integrity.py"
+source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "ContextSegment"
-location: "L64"
+community: "_FakeRBAC"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/_FakeRBAC
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_57]] - `references` [EXTRACTED]
-- [[ContextIntegrityScorer]] - `method` [EXTRACTED]
+- [[ContributorManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

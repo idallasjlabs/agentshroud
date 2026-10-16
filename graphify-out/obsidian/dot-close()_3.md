@@ -1,19 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "SecureBrowser"
-location: "L401"
+community: "ApprovalQueueConfig"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/ApprovalQueueConfig
 ---
 
 # .close()
 
 ## Connections
-- [[Clean up browser resources_1]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser_1]] - `method` [EXTRACTED]
-- [[main()_5]] - `calls` [EXTRACTED]
+- [[ApprovalStore]] - `method` [EXTRACTED]
+- [[Close the database connection.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

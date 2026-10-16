@@ -12,7 +12,7 @@ tags:
 # _score_ai_observability()
 
 ## Connections
-- [[Path_51]] - `calls` [EXTRACTED]
+- [[Path_26]] - `calls` [EXTRACTED]
 - [[Score domain 30 AI Observability & Audit Trail (0-5). NIST AI RMF MEASURE, IEC]] - `rationale_for` [EXTRACTED]
 - [[_app_state_has()]] - `calls` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]

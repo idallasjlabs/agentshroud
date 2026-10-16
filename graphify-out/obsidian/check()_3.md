@@ -1,18 +1,19 @@
 ---
-source_file: "tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh"
+source_file: "tests/startup_smoke/test_bot_boot_static.sh"
 type: "code"
-community: "test_colima_and_sdk_patch_fallback_resolution.sh"
-location: "L34"
+community: "AgentTarget"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_colima_and_sdk_patch_fallback_resolutionsh
+  - community/AgentTarget
 ---
 
 # check()
 
 ## Connections
-- [[test_colima_and_sdk_patch_fallback_resolution.sh]] - `defines` [EXTRACTED]
-- [[test_colima_and_sdk_patch_fallback_resolution.sh script]] - `calls` [EXTRACTED]
+- [[check()_4]] - `semantically_similar_to` [INFERRED]
+- [[test_bot_boot_static.sh]] - `defines` [EXTRACTED]
+- [[test_bot_boot_static.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_colima_and_sdk_patch_fallback_resolutionsh
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

@@ -16,9 +16,9 @@ tags:
 - [[Default Service Configuration]] - `contains` [EXTRACTED]
 - [[Function Details_46]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_48]] - `contains` [EXTRACTED]
-- [[Purpose_182]] - `contains` [EXTRACTED]
+- [[Purpose_183]] - `contains` [EXTRACTED]
 - [[Related_52]] - `contains` [EXTRACTED]
-- [[Responsibilities_50]] - `contains` [EXTRACTED]
+- [[Responsibilities_49]] - `contains` [EXTRACTED]
 - [[compose_generator.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/compose_generatorpy

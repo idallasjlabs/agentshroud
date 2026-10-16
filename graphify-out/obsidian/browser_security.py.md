@@ -21,7 +21,7 @@ tags:
 - [[ThreatLevel]] - `contains` [EXTRACTED]
 - [[Wu et al. 2026 (arXiv2601.07263) — Browser-based agent social engineering attacks]] - `cites` [EXTRACTED]
 - [[consent_framework.py]] - `references` [EXTRACTED]
-- [[session_security.py_2]] - `references` [EXTRACTED]
+- [[session_security.py]] - `references` [EXTRACTED]
 - [[test_browser_security.py]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ConsentFramework

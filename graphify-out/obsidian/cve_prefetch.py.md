@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[curl_json()]] - `contains` [EXTRACTED]
 - [[known_ghsa_ids()]] - `contains` [EXTRACTED]
-- [[main()_28]] - `contains` [EXTRACTED]
+- [[main()_27]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/main

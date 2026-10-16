@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/audit_archive.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "archive_old_events"
-location: "L46"
+community: "FalcoAlertWatcher"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/archive_old_events
+  - community/FalcoAlertWatcher
 ---
 
 # datetime
 
 ## Connections
-- [[archive_old_events()]] - `references` [EXTRACTED]
-- [[audit_archive.py]] - `imports_from` [EXTRACTED]
+- [[falco_monitor.py_2]] - `imports_from` [EXTRACTED]
+- [[read_alerts()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/archive_old_events
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

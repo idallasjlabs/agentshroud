@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/soc/contributors.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "_FakeRBAC"
-location: "L27"
+community: "dashboard_endpoints.py"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/dashboard_endpointspy
 ---
 
 # .__init__()
 
 ## Connections
-- [[ContributorManager]] - `method` [EXTRACTED]
+- [[AlertStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy

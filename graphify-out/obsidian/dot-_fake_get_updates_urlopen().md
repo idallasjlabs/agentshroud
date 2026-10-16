@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "test_telegram_proxy_outbound.py"
+community: "test_collaborator_tracker.py"
 location: "L4627"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_outboundpy
+  - community/test_collaborator_trackerpy
 ---
 
 # ._fake_get_updates_urlopen()
@@ -16,4 +16,4 @@ tags:
 - [[dot-test_url_encoded_body_calls_mark_delivered()]] - `calls` [EXTRACTED]
 - [[TestReplayBufferOffsetParsing]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Add a callback function to be called when resource alerts are triggered.]] - `rationale_for` [EXTRACTED]
-- [[Any_15]] - `references` [EXTRACTED]
+- [[Any_18]] - `references` [EXTRACTED]
 - [[ResourceGuard]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ResourceGuard

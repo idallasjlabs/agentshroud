@@ -12,6 +12,9 @@ tags:
 # _start_lock_heartbeat()
 
 ## Connections
+- [[UPGRADE_LOCK]] - `shares_data_with` [EXTRACTED]
+- [[_upgrade_in_progress()]] - `shares_data_with` [EXTRACTED]
+- [[sunday-upgrade-apply main sequence]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 - [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
 

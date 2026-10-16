@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/soc/auth.py"
 type: "code"
-community: "test_cli_coverage.py"
-location: "L613"
+community: "_FakeRBAC"
+location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cli_coveragepy
+  - community/_FakeRBAC
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeWS]] - `method` [EXTRACTED]
+- [[RBACManager_2]] - `references` [EXTRACTED]
+- [[Role_57]] - `references` [EXTRACTED]
+- [[SCLCaller_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

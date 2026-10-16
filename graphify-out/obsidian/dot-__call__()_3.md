@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_citation_verifier.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "api.py"
-location: "L33"
+community: "AsyncMock"
+location: "L8618"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/AsyncMock
 ---
 
 # .__call__()
 
 ## Connections
-- [[FetchOutcome]] - `references` [EXTRACTED]
-- [[_FakeFetcher]] - `method` [EXTRACTED]
+- [[AsyncMock]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

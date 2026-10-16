@@ -13,11 +13,11 @@ tags:
 
 ## Connections
 - [[Alternate Compose Files]] - `contains` [EXTRACTED]
-- [[Networks_1]] - `contains` [EXTRACTED]
-- [[Related Notes_46]] - `contains` [EXTRACTED]
+- [[Networks]] - `contains` [EXTRACTED]
+- [[Related Notes_38]] - `contains` [EXTRACTED]
 - [[Secrets Files]] - `contains` [EXTRACTED]
 - [[Services]] - `contains` [EXTRACTED]
-- [[Volumes_1]] - `contains` [EXTRACTED]
+- [[Volumes]] - `contains` [EXTRACTED]
 - [[docker-compose.yml]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Seccomp_Profiles

@@ -15,7 +15,7 @@ tags:
 - [[dot-click()]] - `calls` [EXTRACTED]
 - [[dot-fill_field()]] - `calls` [EXTRACTED]
 - [[Check if action requires approval          Security Approval queue integration]] - `rationale_for` [EXTRACTED]
-- [[RiskLevel]] - `references` [EXTRACTED]
+- [[RiskLevel_1]] - `references` [EXTRACTED]
 - [[SecureBrowser]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser

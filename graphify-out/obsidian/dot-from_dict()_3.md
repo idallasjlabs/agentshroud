@@ -1,22 +1,21 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L56"
+community: "MCPPolicyEngine"
+location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MCPPolicyEngine
 ---
 
 # .from_dict()
 
 ## Connections
-- [[dot-_load_integrity_database()]] - `calls` [EXTRACTED]
-- [[Any_8]] - `references` [EXTRACTED]
-- [[Create from dictionary for JSON deserialization.]] - `rationale_for` [EXTRACTED]
-- [[FileIntegrityRecord]] - `method` [EXTRACTED]
-- [[ModificationSource]] - `calls` [EXTRACTED]
+- [[Any_40]] - `references` [EXTRACTED]
+- [[MCPPolicyAction]] - `calls` [EXTRACTED]
+- [[MCPPolicyConfig_1]] - `method` [EXTRACTED]
+- [[Parse a policy config from a plain dict (e.g. loaded from YAML).]] - `rationale_for` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

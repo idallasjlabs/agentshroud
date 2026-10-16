@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "AlertDispatcher"
+community: "TestOutboundInfoFilter"
 location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/TestOutboundInfoFilter
 ---
 
 # ._sanitize_text()
@@ -16,4 +16,4 @@ tags:
 - [[LogSanitizer]] - `method` [EXTRACTED]
 - [[Sanitize sensitive data in text.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

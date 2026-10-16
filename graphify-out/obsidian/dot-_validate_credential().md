@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-rotate_credential()]] - `calls` [EXTRACTED]
-- [[dot-validate()]] - `calls` [EXTRACTED]
-- [[Any_18]] - `references` [EXTRACTED]
+- [[dot-validate()_1]] - `calls` [EXTRACTED]
+- [[Any_30]] - `references` [EXTRACTED]
 - [[KeyRotationManager]] - `method` [EXTRACTED]
 - [[Validate a credential using registered validator.]] - `rationale_for` [EXTRACTED]
 

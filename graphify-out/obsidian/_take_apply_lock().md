@@ -12,9 +12,12 @@ tags:
 # _take_apply_lock()
 
 ## Connections
+- [[UPGRADE_LOCK]] - `conceptually_related_to` [EXTRACTED]
+- [[_lock_try()]] - `references` [EXTRACTED]
 - [[err()]] - `calls` [EXTRACTED]
+- [[sunday-upgrade-apply main sequence]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 - [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
-- [[warn()_4]] - `calls` [EXTRACTED]
+- [[warn()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

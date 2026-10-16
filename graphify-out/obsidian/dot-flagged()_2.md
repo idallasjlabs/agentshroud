@@ -12,6 +12,6 @@ tags:
 # .flagged()
 
 ## Connections
-- [[URLAnalysisResult_1]] - `method` [EXTRACTED]
+- [[URLAnalysisResult]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

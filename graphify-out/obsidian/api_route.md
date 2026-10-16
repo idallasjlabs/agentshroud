@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "LLMProxy.proxy_messages (non-streaming)"
+community: "agentshroud-blueteam/SKILL.md"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # api_route
@@ -21,4 +21,4 @@ tags:
 - [[slack_api_proxy()]] - `references` [EXTRACTED]
 - [[telegram_api_proxy (telegram-api{path})]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

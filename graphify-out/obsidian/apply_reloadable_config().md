@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Copy only the reloadable-field subset from ``new`` onto ``current`` in place.]] - `rationale_for` [EXTRACTED]
-- [[GatewayConfig_3]] - `references` [EXTRACTED]
+- [[GatewayConfig_2]] - `references` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `contains` [EXTRACTED]
 - [[reload_config()]] - `calls` [EXTRACTED]
 - [[test_apply_swaps_only_reloadable_fields()]] - `calls` [EXTRACTED]

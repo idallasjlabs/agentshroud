@@ -12,7 +12,7 @@ tags:
 # .export_config()
 
 ## Connections
-- [[AuditExportConfig]] - `calls` [EXTRACTED]
+- [[AuditExportConfig_1]] - `calls` [EXTRACTED]
 - [[Create test export configuration.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditExporter]] - `method` [EXTRACTED]
 

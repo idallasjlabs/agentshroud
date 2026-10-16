@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/slack_socket_client.py"
+source_file: "gateway/proxy/telegram_replay.py"
 type: "code"
-community: "SlackSocketClient"
-location: "L59"
+community: "test_telegram_replay.py"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackSocketClient
+  - community/test_telegram_replaypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[SlackSocketClient]] - `method` [EXTRACTED]
+- [[dot-_init_db()_1]] - `calls` [EXTRACTED]
+- [[UpdateReplayBuffer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackSocketClient
+#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy

@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_soc_realtime_coverage.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L605"
+community: "TestOutputCanary"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/TestOutputCanary
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeBus]] - `method` [EXTRACTED]
+- [[CanaryConfig]] - `references` [EXTRACTED]
+- [[Initialize the Output Canary System.          Args             config Optional]] - `rationale_for` [EXTRACTED]
+- [[OutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/TestOutputCanary

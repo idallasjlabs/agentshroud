@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/encoding_detector.py"
+source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "PIIConfig"
-location: "L69"
+community: "test_a2a_proxy.py"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/test_a2a_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[EncodingConfig]] - `references` [EXTRACTED]
-- [[EncodingDetector]] - `method` [EXTRACTED]
+- [[_StubForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

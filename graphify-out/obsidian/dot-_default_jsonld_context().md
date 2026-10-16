@@ -12,8 +12,8 @@ tags:
 # ._default_jsonld_context()
 
 ## Connections
-- [[dot-__init__()_65]] - `calls` [EXTRACTED]
-- [[AuditExportConfig]] - `method` [EXTRACTED]
+- [[dot-__init__()_200]] - `calls` [EXTRACTED]
+- [[AuditExportConfig_1]] - `method` [EXTRACTED]
 - [[Default JSON-LD context for security ontology.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AuditExporter

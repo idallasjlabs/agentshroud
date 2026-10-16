@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "ForwardRequest"
 location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/ForwardRequest
 ---
 
 # ._is_internal_link()
@@ -15,4 +15,4 @@ tags:
 - [[Check if this is an internal link (relative, anchor, etc.).]] - `rationale_for` [EXTRACTED]
 - [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

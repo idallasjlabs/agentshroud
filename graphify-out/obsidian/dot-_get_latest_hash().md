@@ -12,8 +12,8 @@ tags:
 # ._get_latest_hash()
 
 ## Connections
-- [[dot-log_event()_1]] - `calls` [EXTRACTED]
-- [[AuditStore_1]] - `method` [EXTRACTED]
+- [[dot-log_event()]] - `calls` [EXTRACTED]
+- [[AuditStore]] - `method` [EXTRACTED]
 - [[Get the entry_hash of the most recent event for chain continuation.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AuditEvent

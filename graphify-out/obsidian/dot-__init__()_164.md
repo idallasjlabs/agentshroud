@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/browser_security.py"
+source_file: "gateway/web/api.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L104"
+community: "api.py"
+location: "L941"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/apipy
 ---
 
 # .__init__()
 
 ## Connections
-- [[BrowserSecurityGuard]] - `method` [EXTRACTED]
+- [[SkillGuardBlocked]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/apipy

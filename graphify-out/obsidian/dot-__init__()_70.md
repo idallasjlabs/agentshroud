@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/ingest_api/email_service.py"
+source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "GatewayEmailService"
-location: "L51"
+community: "MCPPermissionManager"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/MCPPermissionManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[GatewayEmailService_1]] - `method` [EXTRACTED]
-- [[TransportFactory]] - `references` [EXTRACTED]
+- [[dot-_load_privacy_policy()]] - `calls` [EXTRACTED]
+- [[dot-_recompile_private_data_patterns()]] - `calls` [EXTRACTED]
+- [[MCPPermissionManager]] - `method` [EXTRACTED]
+- [[MCPProxyConfig_1]] - `references` [EXTRACTED]
+- [[RBACConfig_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

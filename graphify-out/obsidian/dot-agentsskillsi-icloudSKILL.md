@@ -12,6 +12,6 @@ tags:
 # .agents/skills/i-icloud/SKILL.md
 
 ## Connections
-- [[iCloud Services_4]] - `contains` [EXTRACTED]
+- [[iCloud Services_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/iCloud_Services

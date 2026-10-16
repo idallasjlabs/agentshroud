@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/ingest_api/routes/dashboard.py"
+source_file: "gateway/ingest_api/routes/health.py"
 type: "code"
-community: "test_dashboard.py"
-location: "L385"
+community: "create_auth_dependency"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/create_auth_dependency
 ---
 
 # auth_dep()
@@ -15,6 +15,6 @@ tags:
 - [[Auth dependency that uses the app state config._3]] - `rationale_for` [EXTRACTED]
 - [[Request_9]] - `references` [EXTRACTED]
 - [[create_auth_dependency()]] - `calls` [EXTRACTED]
-- [[dashboard.py]] - `contains` [EXTRACTED]
+- [[health.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

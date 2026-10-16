@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/proxy/collaborator_greeter.py"
+source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "test_collaborator_greeter.py"
-location: "L36"
+community: "TrustConfig"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_greeterpy
+  - community/TrustConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_state()]] - `calls` [EXTRACTED]
-- [[dot-_load_taglines()]] - `calls` [EXTRACTED]
-- [[AsyncClient]] - `references` [EXTRACTED]
-- [[CollaboratorGreeter]] - `method` [EXTRACTED]
+- [[SubagentMonitor]] - `method` [EXTRACTED]
+- [[SubagentMonitorConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

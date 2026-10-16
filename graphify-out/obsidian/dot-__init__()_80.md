@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_middleware_coverage.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "_req"
-location: "L144"
+community: "MiddlewareManager"
+location: "L605"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeRBAC_1]] - `method` [EXTRACTED]
+- [[_FakeBus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

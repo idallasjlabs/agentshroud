@@ -12,11 +12,11 @@ tags:
 # browser_security.py
 
 ## Connections
-- [[Function Details_30]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_32]] - `contains` [EXTRACTED]
-- [[Purpose_151]] - `contains` [EXTRACTED]
-- [[Related_36]] - `contains` [EXTRACTED]
-- [[Responsibilities_34]] - `contains` [EXTRACTED]
+- [[Function Details_29]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_31]] - `contains` [EXTRACTED]
+- [[Purpose_148]] - `contains` [EXTRACTED]
+- [[Related_35]] - `contains` [EXTRACTED]
+- [[Responsibilities_33]] - `contains` [EXTRACTED]
 - [[Social Engineering Patterns]] - `contains` [EXTRACTED]
 - [[Threat Model_19]] - `contains` [EXTRACTED]
 - [[URL Reputation Signals]] - `contains` [EXTRACTED]

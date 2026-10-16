@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "ModuleStatsCollector"
+community: "RBACConfig"
 location: "L370"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/RBACConfig
 ---
 
 # .can_use_tool_in_group_context()
@@ -16,4 +16,4 @@ tags:
 - [[Check whether user_id may invoke tool_name when acting inside a group workspace.]] - `rationale_for` [EXTRACTED]
 - [[ToolACLEnforcer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/security/rate_limit_guard.py"
+source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "code"
 community: "RateLimitGuard"
-location: "L82"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,6 @@ tags:
 # .__init__()
 
 ## Connections
-- [[RateLimitConfig]] - `references` [EXTRACTED]
-- [[RateLimitGuard]] - `method` [EXTRACTED]
+- [[FakeClock]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RateLimitGuard

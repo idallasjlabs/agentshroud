@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/prompt_guard.py"
+source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L584"
+community: "ApprovalQueueConfig"
+location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/ApprovalQueueConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args             block_threshold Score at or above which input is blocked.]] - `rationale_for` [EXTRACTED]
-- [[PatternRule]] - `references` [EXTRACTED]
-- [[PromptGuard]] - `method` [EXTRACTED]
+- [[SSHConfig]] - `references` [EXTRACTED]
+- [[SSHProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

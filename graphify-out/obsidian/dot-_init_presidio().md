@@ -12,8 +12,8 @@ tags:
 # ._init_presidio()
 
 ## Connections
-- [[dot-__init__()_16]] - `calls` [EXTRACTED]
+- [[dot-__init__()_10]] - `calls` [EXTRACTED]
 - [[Initialize Microsoft Presidio engines          Falls back to regex if Presidios]] - `rationale_for` [EXTRACTED]
-- [[PIISanitizer_2]] - `method` [EXTRACTED]
+- [[PIISanitizer_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PIIConfig

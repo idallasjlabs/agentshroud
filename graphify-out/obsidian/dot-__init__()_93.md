@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/proxy/forwarder.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L57"
+community: "TestOutboundInfoFilter"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/TestOutboundInfoFilter
 ---
 
 # .__init__()
 
 ## Connections
-- [[ForwarderConfig]] - `references` [EXTRACTED]
-- [[HTTPForwarder]] - `method` [EXTRACTED]
+- [[dot-_compile_patterns()_1]] - `calls` [EXTRACTED]
+- [[Any_28]] - `references` [EXTRACTED]
+- [[InfoCategory]] - `calls` [EXTRACTED]
+- [[Initialize the outbound information filter.          Args             config C]] - `rationale_for` [EXTRACTED]
+- [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/path_isolation.py"
+source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L65"
+community: "AuditChain"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AuditChain
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_ensure_base_directory()]] - `calls` [EXTRACTED]
-- [[PathIsolationConfig]] - `references` [EXTRACTED]
-- [[PathIsolationManager]] - `method` [EXTRACTED]
+- [[EnvelopeSigner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AuditChain

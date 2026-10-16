@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "DataLedger"
+community: "PIIConfig"
 location: "L325"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/PIIConfig
 ---
 
 # .delete_entry()
@@ -15,4 +15,4 @@ tags:
 - [[DataLedger]] - `method` [EXTRACTED]
 - [[Forget this' - permanently delete a ledger entry          Implements right to er]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataLedger
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

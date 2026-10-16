@@ -1,18 +1,18 @@
 ---
 source_file: "INCIDENT_2026-10-16_conduit-outage.md"
-type: "concept"
-community: "setup-secrets.sh"
-location: "L525-L532"
+type: "rationale"
+community: "LLMProxy.proxy_messages (non-streaming)"
+location: "INCIDENT_2026-10-16_conduit-outage.md:525"
 tags:
-  - graphify/concept
+  - graphify/rationale
   - graphify/EXTRACTED
-  - community/setup-secretssh
+  - community/LLMProxyproxy_messages_non-streaming
 ---
 
 # _strip_fieldflare_unsupported_fields shim
 
 ## Connections
-- [[Incident 2026-10-16 ConduitHermes instability]] - `references` [EXTRACTED]
-- [[Nemotron in-band reasoning + Qwen-only no_think suffix]] - `semantically_similar_to` [INFERRED]
+- [[Nemotron + Qwen-only no_think suffix broke chat]] - `semantically_similar_to` [INFERRED]
+- [[StreamHead streaming route propagates upstream 4xx]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/setup-secretssh
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming

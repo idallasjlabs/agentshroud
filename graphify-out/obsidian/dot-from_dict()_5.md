@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/privacy_policy.py"
+source_file: "gateway/runtime/config.py"
 type: "code"
-community: "RBACConfig"
+community: "Path"
 location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/Path
 ---
 
 # .from_dict()
 
 ## Connections
-- [[ServicePolicy]] - `method` [EXTRACTED]
-- [[ServicePrivacy]] - `calls` [EXTRACTED]
+- [[Load from a config dictionary (e.g. from YAML).]] - `rationale_for` [EXTRACTED]
+- [[RuntimeConfig]] - `method` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/Path

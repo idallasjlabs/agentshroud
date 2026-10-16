@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "api.py"
+community: "TestSSRFDetection"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/TestSSRFDetection
 ---
 
 # dashboard()
 
 ## Connections
-- [[Path_39]] - `calls` [EXTRACTED]
+- [[Path_38]] - `calls` [EXTRACTED]
 - [[Serve the main management dashboard.]] - `rationale_for` [EXTRACTED]
 - [[dashboard.html (Control Center Template)]] - `references` [EXTRACTED]
 - [[management.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

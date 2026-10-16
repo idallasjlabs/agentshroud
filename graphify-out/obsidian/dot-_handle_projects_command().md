@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "telegram_proxy.py"
+community: "TelegramAPIProxy"
 location: "L7889"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/TelegramAPIProxy
 ---
 
 # ._handle_projects_command()
@@ -18,4 +18,4 @@ tags:
 - [[TelegramAPIProxy]] - `method` [EXTRACTED]
 - [[format_projects_list()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

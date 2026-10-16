@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-_handle_critical()]] - `calls` [EXTRACTED]
-- [[dot-run()]] - `calls` [EXTRACTED]
+- [[dot-run()_6]] - `calls` [EXTRACTED]
 - [[FalcoAlertWatcher]] - `method` [EXTRACTED]
-- [[parse_alert()]] - `calls` [EXTRACTED]
+- [[parse_alert()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

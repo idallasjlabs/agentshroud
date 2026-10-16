@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_extract_scannable_content()]] - `calls` [EXTRACTED]
-- [[Any_50]] - `references` [EXTRACTED]
+- [[Any_32]] - `references` [EXTRACTED]
 - [[Recursively extract string content from dictionary]] - `rationale_for` [EXTRACTED]
 - [[ToolResultSanitizer]] - `method` [EXTRACTED]
 

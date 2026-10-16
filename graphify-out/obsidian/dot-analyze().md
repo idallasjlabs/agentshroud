@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "PIIConfig"
+community: "InjectionAction"
 location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/InjectionAction
 ---
 
 # .analyze()
@@ -22,4 +22,4 @@ tags:
 - [[EncodingDetector]] - `method` [EXTRACTED]
 - [[EncodingResult]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/InjectionAction

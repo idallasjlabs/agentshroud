@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_gateway_email_service.py"
+source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "code"
-community: "GatewayEmailService"
-location: "L23"
+community: "DataExfilVolumeGuard"
+location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/DataExfilVolumeGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeSmtp]] - `method` [EXTRACTED]
+- [[DataExfilVolumeConfig]] - `references` [EXTRACTED]
+- [[DataExfilVolumeGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

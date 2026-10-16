@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/drift_detector.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L308"
+community: "PIIConfig"
+location: "L401"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/PIIConfig
 ---
 
 # .close()
 
 ## Connections
-- [[DriftDetector]] - `method` [EXTRACTED]
+- [[Close database connection]] - `rationale_for` [EXTRACTED]
+- [[DataLedger]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

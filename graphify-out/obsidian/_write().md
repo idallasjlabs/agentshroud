@@ -12,7 +12,7 @@ tags:
 # _write()
 
 ## Connections
-- [[Path_31]] - `references` [EXTRACTED]
+- [[Path_1]] - `references` [EXTRACTED]
 - [[test_apply_swaps_only_reloadable_fields()]] - `calls` [EXTRACTED]
 - [[test_config_hot_reload.py]] - `contains` [EXTRACTED]
 - [[test_default_mtime_reads_real_file_and_handles_missing()]] - `calls` [EXTRACTED]
