@@ -12,6 +12,6 @@ tags:
 # Complete gateway configuration
 
 ## Connections
-- [[GatewayConfig_3]] - `rationale_for` [EXTRACTED]
+- [[GatewayConfig_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

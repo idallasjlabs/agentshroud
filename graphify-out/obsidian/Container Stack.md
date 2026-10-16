@@ -12,6 +12,6 @@ tags:
 # Container Stack
 
 ## Connections
-- [[Architecture_3]] - `contains` [EXTRACTED]
+- [[Architecture_4]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

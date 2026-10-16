@@ -15,6 +15,6 @@ tags:
 - [[dot-_verify_url()]] - `references` [EXTRACTED]
 - [[Citation_1]] - `uses` [INFERRED]
 - [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
-- [[CompetitorEntry]] - `uses` [INFERRED]
+- [[CompetitorEntry_1]] - `uses` [INFERRED]
 
 #graphify/code #graphify/INFERRED #community/CompetitiveIntelReport

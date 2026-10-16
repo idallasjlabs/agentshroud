@@ -1,20 +1,17 @@
 ---
-source_file: "README.md"
+source_file: "docker/README.md"
 type: "document"
-community: "AgentShroud™ README"
-location: "L407"
+community: "AgentShroud Docker Configuration"
+location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_README
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # Documentation
 
 ## Connections
-- [[AgentShroud™ README]] - `contains` [EXTRACTED]
-- [[Development Resources]] - `contains` [EXTRACTED]
-- [[Quick Start_2]] - `contains` [EXTRACTED]
-- [[Technical Documentation]] - `contains` [EXTRACTED]
+- [[Files_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_README
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

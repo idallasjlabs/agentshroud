@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "rationale"
-community: "KeyVault"
+community: "KillSwitchMonitor"
 location: "L156"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/KillSwitchMonitor
 ---
 
 # Decrypt an AES-256-GCM encrypted blob.          Args:             blob: The encr
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-decrypt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyVault
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

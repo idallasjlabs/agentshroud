@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/setup-guide.md"
+source_file: "docs/operations/runbook.md"
 type: "document"
-community: "Step-by-Step Installation"
-location: "L404"
+community: "AgentShroud Incident Response Plan"
+location: "L157"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Step-by-Step_Installation
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Dashboard Access
 
 ## Connections
-- [[Step 7 Verify Installation]] - `contains` [EXTRACTED]
+- [[2. Health Monitoring]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Installation
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
 type: "document"
-community: "DataLedger"
+community: "create_auth_dependency"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/create_auth_dependency
 ---
 
 # Dependency Graph.md
@@ -16,4 +16,4 @@ tags:
 - [[Gateway Startup Initialization Order]] - `conceptually_related_to` [EXTRACTED]
 - [[gatewayREADME]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/document #graphify/EXTRACTED #community/DataLedger
+#graphify/document #graphify/EXTRACTED #community/create_auth_dependency

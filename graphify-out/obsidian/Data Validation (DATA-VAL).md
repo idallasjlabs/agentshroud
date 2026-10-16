@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-data/README.md"
+source_file: "docker/config/openclaw/skills/i-data/README.md"
 type: "document"
 community: "Data Validation (DATA-VAL)"
 location: "L1"
@@ -12,10 +12,10 @@ tags:
 # Data Validation (DATA-VAL)
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-dataREADME]] - `contains` [EXTRACTED]
-- [[Purpose_19]] - `contains` [EXTRACTED]
-- [[Related Skills_5]] - `contains` [EXTRACTED]
-- [[Usage_9]] - `contains` [EXTRACTED]
+- [[Purpose_34]] - `contains` [EXTRACTED]
+- [[Related Skills_23]] - `contains` [EXTRACTED]
+- [[Usage_26]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-dataREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Data_Validation_DATA-VAL

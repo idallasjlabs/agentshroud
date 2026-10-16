@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+source_file: "skills/openclaw/bear-notes/SKILL.md"
 type: "document"
-community: "7. Pi-hole DNS Security Layer (Built-In)"
-location: "L267"
+community: "Bear Notes"
+location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/7_Pi-hole_DNS_Security_Layer_Built-In
+  - community/Bear_Notes
 ---
 
 # Configuration
 
 ## Connections
-- [[7. Pi-hole DNS Security Layer (Built-In)]] - `contains` [EXTRACTED]
+- [[Bear Notes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/7_Pi-hole_DNS_Security_Layer_Built-In
+#graphify/document #graphify/EXTRACTED #community/Bear_Notes

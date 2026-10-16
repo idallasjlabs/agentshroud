@@ -12,6 +12,6 @@ tags:
 # Deterministic stand-in for RBACManager.
 
 ## Connections
-- [[_FakeRBAC_1]] - `rationale_for` [EXTRACTED]
+- [[_FakeRBAC_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/_req

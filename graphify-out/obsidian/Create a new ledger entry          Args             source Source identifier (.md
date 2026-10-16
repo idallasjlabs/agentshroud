@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "DataLedger"
+community: "PIIConfig"
 location: "L126"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/PIIConfig
 ---
 
 # Create a new ledger entry          Args:             source: Source identifier (
 
 ## Connections
-- [[dot-record()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-record()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DataLedger
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

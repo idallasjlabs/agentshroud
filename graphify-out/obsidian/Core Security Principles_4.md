@@ -1,21 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/references/security-policies.md"
+source_file: ".agents/skills/i-browser/SKILL.md"
 type: "document"
-community: "Core Security Principles"
-location: "L9"
+community: "Browser — Secure Browser Automation"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Core_Security_Principles
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Core Security Principles
 
 ## Connections
-- [[1. Least Privilege]] - `contains` [EXTRACTED]
-- [[2. Defense in Depth]] - `contains` [EXTRACTED]
-- [[3. Explicit Over Implicit]] - `contains` [EXTRACTED]
-- [[4. Fail Secure]] - `contains` [EXTRACTED]
-- [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Core_Security_Principles
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

@@ -12,7 +12,7 @@ tags:
 # CanaryConfig
 
 ## Connections
-- [[dot-__init__()_120]] - `references` [EXTRACTED]
+- [[dot-__init__()_108]] - `references` [EXTRACTED]
 - [[dot-test_custom_config()_1]] - `calls` [EXTRACTED]
 - [[dot-test_no_canaries()]] - `calls` [EXTRACTED]
 - [[dot-test_scan_response_no_block_when_block_disabled()]] - `calls` [EXTRACTED]

@@ -12,6 +12,6 @@ tags:
 # Detect and redact PII from content          Args:             content: Text to s
 
 ## Connections
-- [[dot-sanitize()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-sanitize()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

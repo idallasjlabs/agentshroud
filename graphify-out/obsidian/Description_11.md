@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md"
-type: "document"
-community: "telegram_proxy.py"
-location: "L11"
+source_file: "browser-extension/package.json"
+type: "code"
+community: "browser-extension/package.json"
+location: "L5"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/browser-extension/packagejson
 ---
 
-# Description
+# description
 
 ## Connections
-- [[TELEGRAM_API_BASE_URL_1]] - `contains` [EXTRACTED]
+- [[browser-extensionpackage.json]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/code #graphify/EXTRACTED #community/browser-extension/packagejson

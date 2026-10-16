@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
+source_file: "branding/README.md"
 type: "document"
-community: "Dockerfile — Bot (OpenClaw)"
-location: "L85"
+community: "AgentShroud™ Brand Guidelines"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dockerfile__Bot_OpenClaw
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Directory Structure
 
 ## Connections
-- [[Dockerfile — Bot (OpenClaw)]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

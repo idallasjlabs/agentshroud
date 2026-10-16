@@ -12,6 +12,6 @@ tags:
 # Deterministic fetcher: maps url -> (status, sha_or_None). Records calls.
 
 ## Connections
-- [[_FakeFetcher]] - `rationale_for` [EXTRACTED]
+- [[_FakeFetcher_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/apipy

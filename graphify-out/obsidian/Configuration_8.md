@@ -1,21 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "pipeline.py — Security Pipeline"
-location: "L223"
+community: "Canvas Skill"
+location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pipelinepy__Security_Pipeline
+  - community/Canvas_Skill
 ---
 
 # Configuration
 
 ## Connections
-- [[Guard Presence and Startup Behavior]] - `contains` [EXTRACTED]
-- [[Key Thresholds]] - `contains` [EXTRACTED]
-- [[Monitor vs. Enforce Mode]] - `contains` [EXTRACTED]
-- [[Owner Exemption]] - `contains` [EXTRACTED]
-- [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
+- [[Canvas Skill]] - `contains` [EXTRACTED]
+- [[Live Reload]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline
+#graphify/document #graphify/EXTRACTED #community/Canvas_Skill

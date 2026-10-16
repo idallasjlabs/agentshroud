@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
+source_file: "docs/vault/04 - Environment Variables/GATEWAY_URL.md"
 type: "document"
-community: "prompt_guard.py.md"
-location: "L89"
+community: "ANTHROPIC_BASE_URL"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/prompt_guardpymd
+  - community/ANTHROPIC_BASE_URL
 ---
 
 # Configuration
 
 ## Connections
-- [[prompt_guard.py]] - `contains` [EXTRACTED]
+- [[GATEWAY_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/prompt_guardpymd
+#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL

@@ -11,6 +11,6 @@ tags:
 # Colima Troubleshooting Procedures
 
 ## Connections
-- [[RUNBOOK_1]] - `references` [EXTRACTED]
+- [[RUNBOOK]] - `references` [EXTRACTED]
 
 #graphify/concept #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd

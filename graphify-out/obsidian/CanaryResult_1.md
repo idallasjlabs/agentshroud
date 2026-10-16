@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/security/canary.py"
+source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L41"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # CanaryResult
 
 ## Connections
-- [[dot-to_dict()_9]] - `method` [EXTRACTED]
-- [[Result of running the canary system.]] - `rationale_for` [EXTRACTED]
-- [[canary.py]] - `contains` [EXTRACTED]
-- [[run_canary()_1]] - `references` [EXTRACTED]
+- [[dot-_check_encoded()]] - `references` [EXTRACTED]
+- [[dot-_check_plain()]] - `references` [EXTRACTED]
+- [[dot-scan()_3]] - `references` [EXTRACTED]
+- [[canary_tripwire.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

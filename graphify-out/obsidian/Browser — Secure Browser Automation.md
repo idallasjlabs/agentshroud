@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-agentsskillsi-browserREADME]] - `contains` [EXTRACTED]
-- [[Purpose_18]] - `contains` [EXTRACTED]
-- [[Related Skills_4]] - `contains` [EXTRACTED]
-- [[Usage_8]] - `contains` [EXTRACTED]
+- [[Purpose_14]] - `contains` [EXTRACTED]
+- [[Related Skills_3]] - `contains` [EXTRACTED]
+- [[Usage_6]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

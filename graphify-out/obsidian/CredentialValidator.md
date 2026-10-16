@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-register_validator()]] - `references` [EXTRACTED]
-- [[dot-validate()]] - `method` [EXTRACTED]
+- [[dot-validate()_1]] - `method` [EXTRACTED]
 - [[Base class for credential validators.]] - `rationale_for` [EXTRACTED]
 - [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
 - [[KeyRotationConfig_1]] - `uses` [INFERRED]

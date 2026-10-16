@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "rationale"
-community: "KeyVault"
+community: "KillSwitchMonitor"
 location: "L200"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/KillSwitchMonitor
 ---
 
 # Decrypt and return as parsed JSON dict.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-decrypt_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyVault
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

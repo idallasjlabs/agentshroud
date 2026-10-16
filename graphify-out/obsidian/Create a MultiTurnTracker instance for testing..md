@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "rationale"
-community: "MultiTurnTracker"
+community: "TrustConfig"
 location: "L23"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MultiTurnTracker
+  - community/TrustConfig
 ---
 
 # Create a MultiTurnTracker instance for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[multi_turn_tracker()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker
+#graphify/rationale #graphify/EXTRACTED #community/TrustConfig

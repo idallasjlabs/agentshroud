@@ -12,6 +12,6 @@ tags:
 # Close the SQLite connection (idempotent).
 
 ## Connections
-- [[dot-close()_6]] - `rationale_for` [EXTRACTED]
+- [[dot-close()_9]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_telegram_replaypy

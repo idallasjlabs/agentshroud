@@ -14,12 +14,12 @@ tags:
 - [[dot-agentsskillsi-crREADME]] - `contains` [EXTRACTED]
 - [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[Project Management (SKILL)]] - `references` [EXTRACTED]
-- [[Purpose_75]] - `contains` [EXTRACTED]
-- [[Purpose_77]] - `contains` [EXTRACTED]
-- [[Related Skills_59]] - `contains` [EXTRACTED]
-- [[Related Skills_61]] - `contains` [EXTRACTED]
-- [[Usage_64]] - `contains` [EXTRACTED]
-- [[Usage_66]] - `contains` [EXTRACTED]
+- [[Purpose_70]] - `contains` [EXTRACTED]
+- [[Purpose_72]] - `contains` [EXTRACTED]
+- [[Related Skills_56]] - `contains` [EXTRACTED]
+- [[Related Skills_58]] - `contains` [EXTRACTED]
+- [[Usage_60]] - `contains` [EXTRACTED]
+- [[Usage_62]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Project_Management_README

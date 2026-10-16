@@ -1,17 +1,20 @@
 ---
-source_file: "branding/guidelines/brand-guidelines.md"
+source_file: "README.md"
 type: "document"
-community: "AgentShroud Brand Guidelines"
-location: "L121"
+community: "AgentShroud™ README"
+location: "L407"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/AgentShroud_README
 ---
 
 # Documentation
 
 ## Connections
-- [[Brand Applications]] - `contains` [EXTRACTED]
+- [[AgentShroud™ README]] - `contains` [EXTRACTED]
+- [[Development Resources]] - `contains` [EXTRACTED]
+- [[Quick Start_2]] - `contains` [EXTRACTED]
+- [[Technical Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_README

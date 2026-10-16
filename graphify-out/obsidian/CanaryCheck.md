@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Individual canary check result.]] - `rationale_for` [EXTRACTED]
 - [[canary.py]] - `contains` [EXTRACTED]
-- [[run_canary()_1]] - `calls` [EXTRACTED]
+- [[run_canary()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

@@ -12,6 +12,6 @@ tags:
 # BrowserSecurityGuard.check_url_reputation(url)
 
 ## Connections
-- [[Function Details_30]] - `contains` [EXTRACTED]
+- [[Function Details_29]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/browser_securitypy

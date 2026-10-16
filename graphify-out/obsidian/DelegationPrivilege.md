@@ -17,7 +17,7 @@ tags:
 - [[dot-delegate()]] - `references` [EXTRACTED]
 - [[dot-is_delegated()]] - `references` [EXTRACTED]
 - [[dot-revoke()]] - `references` [EXTRACTED]
-- [[Any_71]] - `uses` [INFERRED]
+- [[Any_80]] - `uses` [INFERRED]
 - [[DelegationManager]] - `uses` [INFERRED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
 - [[Subset of privileges that can be delegated by the owner.]] - `rationale_for` [EXTRACTED]
@@ -35,7 +35,7 @@ tags:
 - [[revoke_delegation()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
 - [[str_3]] - `inherits` [EXTRACTED]
-- [[telegram_proxy.py_2]] - `imports` [EXTRACTED]
+- [[telegram_proxy.py]] - `imports` [EXTRACTED]
 - [[test_delegation.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DelegationManager

@@ -12,7 +12,7 @@ tags:
 # BufferHandler
 
 ## Connections
-- [[dot-emit()_1]] - `method` [EXTRACTED]
+- [[dot-emit()]] - `method` [EXTRACTED]
 - [[Logging handler that pushes records into the LogBuffer.]] - `rationale_for` [EXTRACTED]
 - [[dashboard_endpoints.py]] - `contains` [EXTRACTED]
 - [[install_log_handler()]] - `calls` [EXTRACTED]

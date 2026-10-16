@@ -16,7 +16,7 @@ tags:
 - [[CompleteDelete]] - `contains` [EXTRACTED]
 - [[Create Reminders]] - `contains` [EXTRACTED]
 - [[Manage Lists]] - `contains` [EXTRACTED]
-- [[Output Formats_1]] - `contains` [EXTRACTED]
+- [[Output Formats]] - `contains` [EXTRACTED]
 - [[View Reminders]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Apple_Reminders_CLI_remindctl

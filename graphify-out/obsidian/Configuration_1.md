@@ -1,17 +1,18 @@
 ---
-source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
+source_file: "docs/architecture/WORKSPACE_DECISION.md"
 type: "document"
-community: "What Does OpenClaw Actually Need to Write?"
-location: "L495"
+community: "OpenClaw Workspace Usage Guide"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_Does_OpenClaw_Actually_Need_to_Write
+  - community/OpenClaw_Workspace_Usage_Guide
 ---
 
-# Configuration:
+# Configuration
 
 ## Connections
-- [[Recommended Configuration for Your Use Case]] - `contains` [EXTRACTED]
+- [[Current Setup (Kept)]] - `contains` [EXTRACTED]
+- [[Workspace Configuration Decision]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

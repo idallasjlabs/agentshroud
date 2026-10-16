@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "rationale"
-community: "AuditStore"
+community: "AuditExporter"
 location: "L76"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/AuditExporter
 ---
 
 # Create in-memory audit store for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-audit_store()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AuditStore
+#graphify/rationale #graphify/EXTRACTED #community/AuditExporter

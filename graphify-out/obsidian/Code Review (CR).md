@@ -12,9 +12,9 @@ tags:
 # Code Review (CR)
 
 ## Connections
-- [[Purpose_44]] - `contains` [EXTRACTED]
-- [[Related Skills_30]] - `contains` [EXTRACTED]
-- [[Usage_34]] - `contains` [EXTRACTED]
+- [[Purpose_33]] - `contains` [EXTRACTED]
+- [[Related Skills_22]] - `contains` [EXTRACTED]
+- [[Usage_25]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crREADME]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 

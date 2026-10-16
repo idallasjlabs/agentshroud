@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
+community: "Mac App Discovery Skill"
 location: "L69"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/Mac_App_Discovery_Skill
 ---
 
 # Deciding an item persists the new status.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_decide_persists()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/Mac_App_Discovery_Skill

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AgentShroud Security Hardening Plan]] - `contains` [EXTRACTED]
-- [[Architecture_6]] - `contains` [EXTRACTED]
+- [[Architecture_7]] - `contains` [EXTRACTED]
 - [[Endpoints_1]] - `contains` [EXTRACTED]
 - [[Module Status Summary]] - `contains` [EXTRACTED]
 - [[PII Detection]] - `contains` [EXTRACTED]

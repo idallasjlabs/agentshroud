@@ -15,7 +15,7 @@ tags:
 - [[Approval Integration_2]] - `contains` [EXTRACTED]
 - [[Audit Logging_2]] - `contains` [EXTRACTED]
 - [[Best Practices_5]] - `contains` [EXTRACTED]
-- [[Core Security Principles_2]] - `contains` [EXTRACTED]
+- [[Core Security Principles_3]] - `contains` [EXTRACTED]
 - [[Example Apple ID Creation (Semi-Automated)_2]] - `contains` [EXTRACTED]
 - [[Limitations_2]] - `contains` [EXTRACTED]
 - [[Risk Levels_2]] - `contains` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[Security Configuration_2]] - `contains` [EXTRACTED]
 - [[Security Guarantees_2]] - `contains` [EXTRACTED]
 - [[Troubleshooting_18]] - `contains` [EXTRACTED]
-- [[Usage_63]] - `contains` [EXTRACTED]
+- [[Usage_59]] - `contains` [EXTRACTED]
 - [[openclawskillsi-browserSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 

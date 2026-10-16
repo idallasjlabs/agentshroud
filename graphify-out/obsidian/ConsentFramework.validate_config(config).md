@@ -12,6 +12,6 @@ tags:
 # ConsentFramework.validate_config(config)
 
 ## Connections
-- [[Function Details_40]] - `contains` [EXTRACTED]
+- [[Function Details_39]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/consent_frameworkpy

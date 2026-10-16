@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "main.py.md"
+community: "TestFabricatedSecurityNotice"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpymd
+  - community/TestFabricatedSecurityNotice
 ---
 
 # Boot Sequence (Numbered)
@@ -17,6 +17,6 @@ tags:
 - [[Stage 3 Health Check]] - `contains` [EXTRACTED]
 - [[Stage 4 Bot Container Startup]] - `contains` [EXTRACTED]
 - [[Stage 5 Fully Operational]] - `contains` [EXTRACTED]
-- [[Startup Sequence_1]] - `contains` [EXTRACTED]
+- [[Startup Sequence]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpymd
+#graphify/document #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

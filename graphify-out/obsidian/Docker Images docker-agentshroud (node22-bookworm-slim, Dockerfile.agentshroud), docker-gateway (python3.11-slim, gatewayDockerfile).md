@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-22-dependency-graph.png"
 type: "image"
-community: "Containers startup order: agentshroud-gateway starts first, agentshroud-bot starts after gateway healthy"
+community: "docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Containers_startup_order_agentshroud-gateway_starts_first_agentshroud-bot_starts_after_gateway_healthy
+  - community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
 ---
 
 # Docker Images: docker-agentshroud (node:22-bookworm-slim, Dockerfile.agentshroud), docker-gateway (python:3.11-slim, gateway/Dockerfile)
@@ -14,4 +14,4 @@ tags:
 - [[Containers startup order agentshroud-gateway starts first, agentshroud-bot starts after gateway healthy]] - `shares_data_with` [EXTRACTED]
 - [[Docker Deployment Dependency Graph]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Containers_startup_order_agentshroud-gateway_starts_first_agentshroud-bot_starts_after_gateway_healthy
+#graphify/image #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes

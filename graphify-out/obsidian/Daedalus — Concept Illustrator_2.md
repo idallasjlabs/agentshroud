@@ -12,9 +12,9 @@ tags:
 # Daedalus — Concept Illustrator
 
 ## Connections
-- [[Purpose_170]] - `contains` [EXTRACTED]
-- [[Related Skills_109]] - `contains` [EXTRACTED]
-- [[Usage_118]] - `contains` [EXTRACTED]
+- [[Purpose_161]] - `contains` [EXTRACTED]
+- [[Related Skills_105]] - `contains` [EXTRACTED]
+- [[Usage_115]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-daedalusREADME]] - `contains` [EXTRACTED]
 

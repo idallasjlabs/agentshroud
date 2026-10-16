@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[DNS Resolution]] - `contains` [EXTRACTED]
 - [[Network Architecture]] - `contains` [EXTRACTED]
-- [[Related Notes_42]] - `contains` [EXTRACTED]
+- [[Related Notes_50]] - `contains` [EXTRACTED]
 - [[agentshroud-internal]] - `contains` [EXTRACTED]
 - [[agentshroud-isolated]] - `contains` [EXTRACTED]
-- [[networks]] - `contains` [EXTRACTED]
+- [[networks_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agentshroud-bot

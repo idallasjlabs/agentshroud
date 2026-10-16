@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "test_telegram_proxy_outbound.py"
 location: "L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # Compare current config against baseline, return any drift alerts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-check_drift()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

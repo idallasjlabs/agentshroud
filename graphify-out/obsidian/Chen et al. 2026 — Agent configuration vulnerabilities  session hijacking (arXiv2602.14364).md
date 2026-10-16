@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "paper"
-community: "SessionManager"
+community: "ConsentFramework"
 tags:
   - graphify/paper
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/ConsentFramework
 ---
 
 # Chen et al. 2026 — Agent configuration vulnerabilities / session hijacking (arXiv:2602.14364)
@@ -14,4 +14,4 @@ tags:
 - [[ConsentFramework]] - `cites` [EXTRACTED]
 - [[SessionManager]] - `cites` [EXTRACTED]
 
-#graphify/paper #graphify/EXTRACTED #community/SessionManager
+#graphify/paper #graphify/EXTRACTED #community/ConsentFramework

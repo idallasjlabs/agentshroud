@@ -12,7 +12,7 @@ tags:
 # DifferentialPIIDetector
 
 ## Connections
-- [[dot-__init__()_144]] - `method` [EXTRACTED]
+- [[dot-__init__()_139]] - `method` [EXTRACTED]
 - [[dot-_deduplicate()]] - `method` [EXTRACTED]
 - [[dot-_detect_pii()]] - `method` [EXTRACTED]
 - [[dot-_detect_presidio()]] - `method` [EXTRACTED]
@@ -42,7 +42,7 @@ tags:
 - [[_Event]] - `uses` [INFERRED]
 - [[_FakeRecognizerResult]] - `uses` [INFERRED]
 - [[_StubAuditStore]] - `uses` [INFERRED]
-- [[_StubForwarder_1]] - `uses` [INFERRED]
+- [[_StubForwarder]] - `uses` [INFERRED]
 - [[differential_pii_detector.py]] - `contains` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]

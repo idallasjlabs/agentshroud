@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[Container Errors]] - `references` [EXTRACTED]
-- [[Crash Recovery_1]] - `contains` [EXTRACTED]
+- [[Crash Recovery_2]] - `contains` [EXTRACTED]
 - [[Health Checks_1]] - `references` [EXTRACTED]
-- [[Restart Procedure_1]] - `references` [EXTRACTED]
+- [[Restart Procedure_2]] - `references` [EXTRACTED]
 - [[Troubleshooting Matrix]] - `references` [EXTRACTED]
 - [[store.py]] - `references` [INFERRED]
 

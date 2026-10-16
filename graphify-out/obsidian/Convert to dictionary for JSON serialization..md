@@ -12,6 +12,6 @@ tags:
 # Convert to dictionary for JSON serialization.
 
 ## Connections
-- [[dot-to_dict()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-to_dict()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

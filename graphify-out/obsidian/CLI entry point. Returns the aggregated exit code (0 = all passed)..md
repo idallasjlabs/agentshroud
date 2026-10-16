@@ -12,6 +12,6 @@ tags:
 # CLI entry point. Returns the aggregated exit code (0 = all passed).
 
 ## Connections
-- [[main()_30]] - `rationale_for` [EXTRACTED]
+- [[main()_33]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/main

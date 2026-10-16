@@ -1,0 +1,18 @@
+---
+source_file: "docker/scripts/colima-health-check.sh"
+type: "rationale"
+community: "AgentTarget"
+location: "docker/scripts/colima-health-check.sh:410"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/AgentTarget
+---
+
+# DOCKER-USER iptables reapply + verify (step 3)
+
+## Connections
+- [[check()_4]] - `references` [EXTRACTED]
+- [[log()_5]] - `references` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

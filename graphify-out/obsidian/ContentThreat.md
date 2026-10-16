@@ -12,7 +12,7 @@ tags:
 # ContentThreat
 
 ## Connections
-- [[dot-__post_init__()_1]] - `method` [EXTRACTED]
+- [[dot-__post_init__()_2]] - `method` [EXTRACTED]
 - [[dot-get_recent_threats()]] - `references` [EXTRACTED]
 - [[dot-sanitize_content()]] - `references` [EXTRACTED]
 - [[dot-scan_content_for_threats()]] - `references` [EXTRACTED]

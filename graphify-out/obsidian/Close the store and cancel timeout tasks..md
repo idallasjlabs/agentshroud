@@ -12,6 +12,6 @@ tags:
 # Close the store and cancel timeout tasks.
 
 ## Connections
-- [[dot-close()_19]] - `rationale_for` [EXTRACTED]
+- [[dot-close()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

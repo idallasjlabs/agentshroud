@@ -12,10 +12,10 @@ tags:
 # ContainerConfig
 
 ## Connections
-- [[dot-from_dict()_6]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_1]] - `calls` [EXTRACTED]
 - [[dot-get()_1]] - `references` [EXTRACTED]
 - [[dot-register()]] - `references` [EXTRACTED]
-- [[dot-setup_method()_18]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_15]] - `calls` [EXTRACTED]
 - [[dot-test_container_config_defaults()]] - `calls` [EXTRACTED]
 - [[dot-test_group_agents_are_isolatable()]] - `calls` [EXTRACTED]
 - [[dot-test_group_and_collab_identities_coexist()]] - `calls` [EXTRACTED]

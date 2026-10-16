@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_path_isolation.py"
+source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "TestPathIsolationManager"
-location: "L63"
+community: "ApprovalHardening"
+location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/ApprovalHardening
 ---
 
 # Create test configuration.
 
 ## Connections
-- [[dot-config()]] - `rationale_for` [EXTRACTED]
+- [[dot-config()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalHardening

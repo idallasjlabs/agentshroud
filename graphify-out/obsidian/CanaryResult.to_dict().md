@@ -12,6 +12,6 @@ tags:
 # CanaryResult.to_dict()
 
 ## Connections
-- [[Function Details_39]] - `contains` [EXTRACTED]
+- [[Function Details_38]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/canarypy

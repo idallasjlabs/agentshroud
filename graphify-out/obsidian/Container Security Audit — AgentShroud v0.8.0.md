@@ -12,7 +12,7 @@ tags:
 # Container Security Audit — AgentShroud v0.8.0
 
 ## Connections
-- [[Architecture_9]] - `contains` [EXTRACTED]
+- [[Architecture_10]] - `contains` [EXTRACTED]
 - [[Audit Methodology]] - `contains` [EXTRACTED]
 - [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `conceptually_related_to` [INFERRED]
 - [[Colima VM Networking]] - `contains` [EXTRACTED]

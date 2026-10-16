@@ -13,11 +13,11 @@ tags:
 
 ## Connections
 - [[dot-delegate()]] - `references` [EXTRACTED]
-- [[dot-from_dict()_10]] - `method` [EXTRACTED]
+- [[dot-from_dict()_7]] - `method` [EXTRACTED]
 - [[dot-get_active_delegations()]] - `references` [EXTRACTED]
 - [[dot-get_delegations_for_user()]] - `references` [EXTRACTED]
 - [[dot-is_active()]] - `method` [EXTRACTED]
-- [[dot-to_dict()_16]] - `method` [EXTRACTED]
+- [[dot-to_dict()_12]] - `method` [EXTRACTED]
 - [[A single time-bounded privilege delegation record.]] - `rationale_for` [EXTRACTED]
 - [[DelegationManager]] - `uses` [INFERRED]
 - [[TestAccessControl_2]] - `uses` [INFERRED]

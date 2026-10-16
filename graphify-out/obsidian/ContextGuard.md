@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "PIIConfig"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L67"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PIIConfig
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # ContextGuard
 
 ## Connections
-- [[dot-__init__()_162]] - `calls` [EXTRACTED]
-- [[dot-__init__()_17]] - `method` [EXTRACTED]
+- [[dot-__init__()_11]] - `calls` [EXTRACTED]
+- [[dot-__init__()_131]] - `method` [EXTRACTED]
 - [[dot-_detect_hidden_instructions()]] - `method` [EXTRACTED]
 - [[dot-_detect_instruction_injection()]] - `method` [EXTRACTED]
 - [[dot-_detect_rapid_context_growth()]] - `method` [EXTRACTED]
@@ -24,8 +24,8 @@ tags:
 - [[dot-get_attack_summary()]] - `method` [EXTRACTED]
 - [[dot-get_segment_provenance()]] - `method` [EXTRACTED]
 - [[dot-get_session_risk_level()]] - `method` [EXTRACTED]
-- [[dot-guard()_3]] - `calls` [EXTRACTED]
-- [[dot-guard()_1]] - `calls` [EXTRACTED]
+- [[dot-guard()_5]] - `calls` [EXTRACTED]
+- [[dot-guard()]] - `calls` [EXTRACTED]
 - [[dot-record_segment()]] - `method` [EXTRACTED]
 - [[dot-should_block_message()]] - `method` [EXTRACTED]
 - [[dot-tag_segment()]] - `method` [EXTRACTED]
@@ -36,18 +36,18 @@ tags:
 - [[dot-test_empty_inputs_everywhere()]] - `calls` [INFERRED]
 - [[dot-test_json_injection_in_context()]] - `calls` [INFERRED]
 - [[dot-test_oversized_json_payload()]] - `calls` [INFERRED]
-- [[Action_3]] - `uses` [INFERRED]
-- [[Any_63]] - `uses` [INFERRED]
+- [[Action_1]] - `uses` [INFERRED]
+- [[Any_21]] - `uses` [INFERRED]
 - [[ApprovalHardening]] - `semantically_similar_to` [INFERRED]
 - [[Exception_3]] - `uses` [INFERRED]
 - [[Guard against context window poisoning attacks.]] - `rationale_for` [EXTRACTED]
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[PIISanitizer_1]] - `uses` [INFERRED]
-- [[RBACManager_2]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
 - [[TestCheckMessage]] - `uses` [INFERRED]
@@ -86,15 +86,15 @@ tags:
 - [[TestSupplyChain]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
-- [[ToolTier_1]] - `uses` [INFERRED]
+- [[ToolTier]] - `uses` [INFERRED]
 - [[_BrokenOutputCanary]] - `uses` [INFERRED]
 - [[_BrokenSanitizer]] - `uses` [INFERRED]
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
 - [[context_guard.py]] - `contains` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[get_context_guard()]] - `references` [EXTRACTED]
-- [[middleware.py_1]] - `imports` [EXTRACTED]
-- [[pipeline()]] - `calls` [EXTRACTED]
+- [[middleware.py]] - `imports` [EXTRACTED]
+- [[pipeline()_2]] - `calls` [EXTRACTED]
 - [[run()_4]] - `calls` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_context_guard.py]] - `imports` [EXTRACTED]
@@ -102,4 +102,4 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PIIConfig
+#graphify/code #graphify/INFERRED #community/agentshroud-blueteam/SKILLmd

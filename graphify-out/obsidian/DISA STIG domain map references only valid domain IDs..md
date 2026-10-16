@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "rationale"
-community: "scanner_integration.py"
+community: "AgentTarget"
 location: "L962"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/AgentTarget
 ---
 
 # DISA STIG domain map references only valid domain IDs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_disa_stig_domain_map_valid()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

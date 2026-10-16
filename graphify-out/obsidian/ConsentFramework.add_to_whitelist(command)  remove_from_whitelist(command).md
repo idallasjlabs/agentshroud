@@ -12,6 +12,6 @@ tags:
 # ConsentFramework.add_to_whitelist(command) / remove_from_whitelist(command)
 
 ## Connections
-- [[Function Details_40]] - `contains` [EXTRACTED]
+- [[Function Details_39]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/consent_frameworkpy

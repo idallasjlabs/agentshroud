@@ -12,7 +12,7 @@ tags:
 # ChannelsConfig
 
 ## Connections
-- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[Channel ownership configuration (P3 Telegram + email oversight, P5 iMessage)]] - `rationale_for` [EXTRACTED]
 - [[SSHConfig_2]] - `uses` [INFERRED]

@@ -12,6 +12,6 @@ tags:
 # Convert session to dictionary for serialization.
 
 ## Connections
-- [[dot-to_dict()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-to_dict()_10]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/UserSessionManager
