@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_llm_proxy_local_parity.py"
+source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "test_llm_proxy_local_parity.py"
-location: "L42"
+community: "PIIConfig"
+location: "L379"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy
+  - community/PIIConfig
 ---
 
 # .sanitize()
 
 ## Connections
-- [[_FakeSanitizer]] - `method` [EXTRACTED]
+- [[_BrokenSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[AuditChain]] - `calls` [EXTRACTED]
-- [[TestAuditChain_1]] - `method` [EXTRACTED]
+- [[TestAuditChain]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AuditChain

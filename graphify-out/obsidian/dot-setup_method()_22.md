@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_log_sanitizer.py"
+source_file: "gateway/tests/test_module_stats.py"
 type: "code"
-community: "TestLogSanitizer"
-location: "L15"
+community: "ModuleStatsCollector"
+location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestLogSanitizer
+  - community/ModuleStatsCollector
 ---
 
 # .setup_method()
 
 ## Connections
-- [[LogSanitizer]] - `calls` [EXTRACTED]
-- [[TestLogSanitizer]] - `method` [EXTRACTED]
+- [[TestEnforcementWiring]] - `method` [EXTRACTED]
+- [[get_collector()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestLogSanitizer
+#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector

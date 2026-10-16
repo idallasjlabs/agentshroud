@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_canary_tripwire.py"
+source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L70"
+community: "TestPathIsolationManager"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/TestPathIsolationManager
 ---
 
 # .test_custom_config()
 
 ## Connections
-- [[CanaryConfig_1]] - `calls` [EXTRACTED]
-- [[CanaryTripwire]] - `calls` [EXTRACTED]
-- [[TestCanaryTripwire]] - `method` [EXTRACTED]
+- [[PathIsolationConfig]] - `calls` [EXTRACTED]
+- [[Test custom configuration values._1]] - `rationale_for` [EXTRACTED]
+- [[TestPathIsolationConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager

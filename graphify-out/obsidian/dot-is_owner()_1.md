@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/rbac_config.py"
+source_file: "gateway/security/group_rbac.py"
 type: "code"
-community: ".get_user_role"
-location: "L169"
+community: "GroupRoleResolver"
+location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_user_role
+  - community/GroupRoleResolver
 ---
 
 # .is_owner()
 
 ## Connections
-- [[Check if user is the owner (any platform).]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_1]] - `method` [EXTRACTED]
+- [[dot-get_role()]] - `calls` [EXTRACTED]
+- [[GroupRoleResolver]] - `method` [EXTRACTED]
+- [[Return True if user_id is the owner in group_chat_id.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_user_role
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

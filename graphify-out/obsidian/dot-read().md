@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "TestIsContainerRunning"
-location: "L149"
+community: "_FakeHTTPResponse"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestIsContainerRunning
+  - community/_FakeHTTPResponse
 ---
 
 # .read()
 
 ## Connections
-- [[_FakeResp]] - `method` [EXTRACTED]
+- [[_FakeHTTPResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestIsContainerRunning
+#graphify/code #graphify/EXTRACTED #community/_FakeHTTPResponse

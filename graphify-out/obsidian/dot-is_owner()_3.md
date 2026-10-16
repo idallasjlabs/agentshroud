@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/soc/auth.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "soc/router.py"
-location: "L159"
+community: "TelegramAPIProxy"
+location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/TelegramAPIProxy
 ---
 
 # .is_owner()
 
 ## Connections
-- [[SCLCaller_1]] - `method` [EXTRACTED]
+- [[FakeRBAC]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

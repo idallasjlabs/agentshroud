@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "TestUserSessionManager"
+community: "UserSessionManager"
 location: "L229"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestUserSessionManager
+  - community/UserSessionManager
 ---
 
 # .temp_workspace()
@@ -15,4 +15,4 @@ tags:
 - [[Create a temporary workspace for testing.]] - `rationale_for` [EXTRACTED]
 - [[TestWebhookReceiverIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestUserSessionManager
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

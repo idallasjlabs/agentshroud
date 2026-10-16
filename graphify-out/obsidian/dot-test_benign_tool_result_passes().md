@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "PIIConfig"
+community: "ContextSegment"
 location: "L249"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ContextSegment
 ---
 
 # .test_benign_tool_result_passes()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestToolResultScan]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

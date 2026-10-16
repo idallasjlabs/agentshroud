@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "TestSSRFBlocking"
+community: "WebProxyConfig"
 location: "L112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFBlocking
+  - community/WebProxyConfig
 ---
 
 # .test_169_254_blocked()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSSRFBlocking]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFBlocking
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

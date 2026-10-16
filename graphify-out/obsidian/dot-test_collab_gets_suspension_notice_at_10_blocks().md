@@ -12,7 +12,7 @@ tags:
 # .test_collab_gets_suspension_notice_at_10_blocks()
 
 ## Connections
-- [[dot-_make_proxy()_5]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_2]] - `calls` [EXTRACTED]
 - [[Collaborator must receive suspension notice at block 10.]] - `rationale_for` [EXTRACTED]
 - [[TestProgressiveLockdownUX]] - `method` [EXTRACTED]
 

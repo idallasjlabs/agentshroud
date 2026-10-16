@@ -12,7 +12,7 @@ tags:
 # .test_collab_threshold_notices_fire_only_once_per_level()
 
 ## Connections
-- [[dot-_make_proxy()_5]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_2]] - `calls` [EXTRACTED]
 - [[TestProgressiveLockdownUX]] - `method` [EXTRACTED]
 - [[Threshold notices must not repeat on subsequent blocks at the same level.]] - `rationale_for` [EXTRACTED]
 

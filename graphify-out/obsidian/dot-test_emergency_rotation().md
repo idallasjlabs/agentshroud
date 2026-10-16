@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "MockValidator"
+community: "KeyRotationManager"
 location: "L362"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MockValidator
+  - community/KeyRotationManager
 ---
 
 # .test_emergency_rotation()
@@ -15,4 +15,4 @@ tags:
 - [[Test emergency rotation workflow.]] - `rationale_for` [EXTRACTED]
 - [[TestKeyRotationWorkflow]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MockValidator
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

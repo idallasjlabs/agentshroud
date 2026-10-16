@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "GroupConfig"
+community: "RBACConfig"
 location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupConfig
+  - community/RBACConfig
 ---
 
 # .get_user_groups()
@@ -17,6 +17,6 @@ tags:
 - [[dot-is_member()_1]] - `calls` [EXTRACTED]
 - [[GroupConfig]] - `references` [EXTRACTED]
 - [[Return all groups the user belongs to.]] - `rationale_for` [EXTRACTED]
-- [[TeamsConfig]] - `method` [EXTRACTED]
+- [[TeamsConfig_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupConfig
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

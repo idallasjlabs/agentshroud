@@ -12,7 +12,7 @@ tags:
 # .store_dir()
 
 ## Connections
-- [[Path_48]] - `references` [EXTRACTED]
+- [[Path_51]] - `references` [EXTRACTED]
 - [[TestIntelReportStore]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

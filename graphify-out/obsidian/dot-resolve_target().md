@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[dot-forward_to_agent()]] - `conceptually_related_to` [INFERRED]
-- [[AgentTarget_2]] - `references` [EXTRACTED]
+- [[AgentTarget]] - `references` [EXTRACTED]
 - [[Determine which agent should receive this content          Args             req]] - `rationale_for` [EXTRACTED]
-- [[ForwardRequest_1]] - `references` [EXTRACTED]
+- [[ForwardRequest]] - `references` [EXTRACTED]
 - [[MultiAgentRouter]] - `method` [EXTRACTED]
 - [[RouterError]] - `calls` [EXTRACTED]
 

@@ -12,7 +12,7 @@ tags:
 # .list_users_and_roles()
 
 ## Connections
-- [[dot-check_permission()_2]] - `calls` [EXTRACTED]
+- [[dot-check_permission()_1]] - `calls` [EXTRACTED]
 - [[List all users and their roles (admin+ only).]] - `rationale_for` [EXTRACTED]
 - [[PermissionResult]] - `references` [EXTRACTED]
 - [[RBACManager_2]] - `method` [EXTRACTED]

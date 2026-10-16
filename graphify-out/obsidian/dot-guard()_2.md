@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_context_guard.py"
+source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "TestSourceTagging"
-location: "L57"
+community: "PIIConfig"
+location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSourceTagging
+  - community/PIIConfig
 ---
 
 # .guard()
 
 ## Connections
-- [[ContextGuard]] - `calls` [EXTRACTED]
-- [[TestSourceTagging]] - `method` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
+- [[TestReanchorDelimiters]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSourceTagging
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

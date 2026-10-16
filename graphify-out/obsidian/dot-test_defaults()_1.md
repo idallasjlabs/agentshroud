@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_middleware_coverage.py"
+source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L1010"
+community: "test_soc_realtime_coverage.py"
+location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .test_defaults()
 
 ## Connections
-- [[MiddlewareResult]] - `calls` [EXTRACTED]
-- [[TestMiddlewareResult]] - `method` [EXTRACTED]
+- [[ServiceDescriptor_1]] - `calls` [EXTRACTED]
+- [[TestServiceDescriptor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

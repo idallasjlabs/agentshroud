@@ -12,8 +12,8 @@ tags:
 # .get_recent()
 
 ## Connections
-- [[dot-to_dict()_5]] - `calls` [EXTRACTED]
-- [[Any_29]] - `references` [EXTRACTED]
+- [[dot-to_dict()_3]] - `calls` [EXTRACTED]
+- [[Any_31]] - `references` [EXTRACTED]
 - [[EventBus]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/make_event

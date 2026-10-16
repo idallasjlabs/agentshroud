@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "WebProxy"
+community: "ProxyAction"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/ProxyAction
 ---
 
 # .setUp()
 
 ## Connections
-- [[Set up test fixtures._4]] - `rationale_for` [EXTRACTED]
+- [[Set up test fixtures._5]] - `rationale_for` [EXTRACTED]
 - [[TestWebProxySecurityIntegration]] - `method` [EXTRACTED]
 - [[WebProxy]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

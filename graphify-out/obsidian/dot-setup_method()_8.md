@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_output_canary.py"
 type: "code"
-community: "lifespan.py"
-location: "L70"
+community: "TestOutputCanary"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/TestOutputCanary
 ---
 
 # .setup_method()
 
 ## Connections
-- [[MemoryIntegrityConfig_1]] - `calls` [EXTRACTED]
-- [[MemoryIntegrityMonitor]] - `calls` [EXTRACTED]
-- [[Set up test environment.]] - `rationale_for` [EXTRACTED]
-- [[TestMemoryIntegrityMonitor]] - `method` [EXTRACTED]
+- [[CanaryConfig]] - `calls` [EXTRACTED]
+- [[OutputCanary]] - `calls` [EXTRACTED]
+- [[Set up test fixtures.]] - `rationale_for` [EXTRACTED]
+- [[TestOutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/TestOutputCanary

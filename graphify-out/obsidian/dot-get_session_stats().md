@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "ToolChainAnalyzer"
+community: "TestToolChainAnalyzer"
 location: "L530"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolChainAnalyzer
+  - community/TestToolChainAnalyzer
 ---
 
 # .get_session_stats()
 
 ## Connections
-- [[Any_36]] - `references` [EXTRACTED]
+- [[Any_46]] - `references` [EXTRACTED]
 - [[Get statistics for a session.]] - `rationale_for` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

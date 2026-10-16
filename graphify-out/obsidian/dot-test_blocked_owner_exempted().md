@@ -12,7 +12,7 @@ tags:
 # .test_blocked_owner_exempted()
 
 ## Connections
-- [[TestMultiTurnTracker_1]] - `method` [EXTRACTED]
+- [[TestMultiTurnTracker]] - `method` [EXTRACTED]
 - [[_req()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_req

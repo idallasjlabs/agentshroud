@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "CredentialInfo"
+community: "KeyRotationManager"
 location: "L168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CredentialInfo
+  - community/KeyRotationManager
 ---
 
 # .sample_credential()
@@ -16,4 +16,4 @@ tags:
 - [[CredentialInfo]] - `calls` [EXTRACTED]
 - [[TestKeyRotationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CredentialInfo
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

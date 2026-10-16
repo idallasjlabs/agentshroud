@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "get_engine"
+community: "test_runtime_engines.py"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_engine
+  - community/test_runtime_enginespy
 ---
 
 # .test_detect_none()
@@ -15,4 +15,4 @@ tags:
 - [[TestDetectRuntime]] - `method` [EXTRACTED]
 - [[detect_runtime()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_engine
+#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy

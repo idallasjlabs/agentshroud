@@ -18,7 +18,7 @@ tags:
 - [[dot-_scan_pyproject_toml()]] - `calls` [EXTRACTED]
 - [[dot-_scan_setup_py()]] - `calls` [EXTRACTED]
 - [[GitGuard]] - `method` [EXTRACTED]
-- [[Path_50]] - `calls` [EXTRACTED]
+- [[Path_4]] - `calls` [EXTRACTED]
 - [[Scan a git repository for malicious hooks and scripts.          Args]] - `rationale_for` [EXTRACTED]
 - [[SecurityFinding]] - `references` [EXTRACTED]
 - [[scan_repository()]] - `calls` [EXTRACTED]

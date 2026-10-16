@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "EnvelopeSigner"
+community: "AuditChain"
 location: "L559"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnvelopeSigner
+  - community/AuditChain
 ---
 
 # .test_envelope_metadata_in_audit_entry()
@@ -15,4 +15,4 @@ tags:
 - [[TestEnvelopeSignerInPipeline]] - `method` [EXTRACTED]
 - [[_make_signer_pipeline()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnvelopeSigner
+#graphify/code #graphify/EXTRACTED #community/AuditChain

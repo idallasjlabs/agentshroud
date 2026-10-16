@@ -20,6 +20,6 @@ tags:
 - [[Navigate to URL          Security URL validation, audit logging]] - `rationale_for` [EXTRACTED]
 - [[SecureBrowser]] - `method` [EXTRACTED]
 - [[SecurityError]] - `calls` [EXTRACTED]
-- [[main()_7]] - `calls` [EXTRACTED]
+- [[main()_4]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser

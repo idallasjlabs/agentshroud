@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
 community: "test_main_endpoints.py"
-location: "L658"
+location: "L765"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[TestHealthCheckDetailBotsInventory]] - `method` [EXTRACTED]
-- [[asyncio]] - `references` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_main_endpointspy

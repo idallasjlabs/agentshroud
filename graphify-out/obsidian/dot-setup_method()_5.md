@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/tests/test_runtime_engines.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "test_runtime_engines.py"
-location: "L317"
+community: "MiddlewareManager"
+location: "L394"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_runtime_enginespy
+  - community/MiddlewareManager
 ---
 
 # .setup_method()
 
 ## Connections
-- [[PodmanEngine]] - `calls` [EXTRACTED]
-- [[TestPodmanEngine]] - `method` [EXTRACTED]
+- [[MemoryIntegrityMonitor]] - `calls` [EXTRACTED]
+- [[MemoryLifecycleManager]] - `calls` [EXTRACTED]
+- [[MemorySecurityConfig]] - `calls` [EXTRACTED]
+- [[Set up integration test environment.]] - `rationale_for` [EXTRACTED]
+- [[TestMemorySecurityIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

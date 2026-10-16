@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "TestUserSessionManager"
+community: "UserSessionManager"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestUserSessionManager
+  - community/UserSessionManager
 ---
 
 # .test_conversation_history_isolation()
@@ -15,4 +15,4 @@ tags:
 - [[Test that conversation histories are isolated per user.]] - `rationale_for` [EXTRACTED]
 - [[TestUserSessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestUserSessionManager
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

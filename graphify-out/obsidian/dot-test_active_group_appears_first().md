@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "test_shared_memory.py"
+community: "RBACConfig"
 location: "L163"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_shared_memorypy
+  - community/RBACConfig
 ---
 
 # .test_active_group_appears_first()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMergedMemory]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_shared_memorypy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

@@ -12,7 +12,7 @@ tags:
 # .get_stats()
 
 ## Connections
-- [[Any_14]] - `references` [EXTRACTED]
+- [[Any_21]] - `references` [EXTRACTED]
 - [[WebhookReceiver]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebhookReceiver

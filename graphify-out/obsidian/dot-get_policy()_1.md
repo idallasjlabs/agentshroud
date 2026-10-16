@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_check_impl()]] - `calls` [EXTRACTED]
-- [[EgressFilter_2]] - `method` [EXTRACTED]
+- [[EgressFilter_1]] - `method` [EXTRACTED]
 - [[EgressPolicy]] - `references` [EXTRACTED]
 - [[Get effective policy for an agent.]] - `rationale_for` [EXTRACTED]
 

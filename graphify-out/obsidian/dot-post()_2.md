@@ -12,12 +12,12 @@ tags:
 # .post()
 
 ## Connections
-- [[dot-request()_2]] - `calls` [EXTRACTED]
+- [[dot-request()_1]] - `calls` [EXTRACTED]
 - [[Option]] - `references` [EXTRACTED]
 - [[Result]] - `references` [EXTRACTED]
 - [[SclClient_1]] - `method` [EXTRACTED]
-- [[Value_3]] - `references` [EXTRACTED]
-- [[main()_21]] - `calls` [EXTRACTED]
+- [[Value_1]] - `references` [EXTRACTED]
+- [[main()_17]] - `calls` [EXTRACTED]
 - [[run_approvals_decide()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/mainrs

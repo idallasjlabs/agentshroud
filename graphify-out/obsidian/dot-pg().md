@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "PIIConfig"
+community: "ContextSegment"
 location: "L246"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ContextSegment
 ---
 
 # .pg()
 
 ## Connections
-- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
 - [[TestToolResultScan]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

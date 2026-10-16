@@ -12,8 +12,8 @@ tags:
 # .test_enforce_mode_disabled()
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue_2]] - `calls` [EXTRACTED]
 - [[Test that approval is bypassed when enforce mode is disabled.]] - `rationale_for` [EXTRACTED]
 - [[TestToolRiskClassification]] - `method` [EXTRACTED]
 

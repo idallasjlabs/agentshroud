@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "EgressApprovalQueue"
+community: "TestEgressApprovalQueue"
 location: "L768"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressApprovalQueue
+  - community/TestEgressApprovalQueue
 ---
 
 # .set_emergency_block_all()
@@ -15,4 +15,4 @@ tags:
 - [[EgressApprovalQueue]] - `method` [EXTRACTED]
 - [[Enabledisable emergency global egress deny.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

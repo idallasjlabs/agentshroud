@@ -12,7 +12,7 @@ tags:
 # .process_tool_result()
 
 ## Connections
-- [[Any_42]] - `references` [EXTRACTED]
+- [[Any]] - `references` [EXTRACTED]
 - [[MiddlewareManager]] - `method` [EXTRACTED]
 - [[Process tool result through PII sanitization before it reaches agent          Ar]] - `rationale_for` [EXTRACTED]
 

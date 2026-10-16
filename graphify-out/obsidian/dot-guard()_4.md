@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_prompt_guard.py"
+source_file: "gateway/tests/test_security_audit.py"
 type: "code"
 community: "PIIConfig"
-location: "L215"
+location: "L219"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # .guard()
 
 ## Connections
-- [[PromptGuard]] - `calls` [EXTRACTED]
-- [[TestReanchorDelimiters]] - `method` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
+- [[TestPromptGuard]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PIIConfig

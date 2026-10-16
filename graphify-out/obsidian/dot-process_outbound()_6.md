@@ -1,21 +1,22 @@
 ---
-source_file: "gateway/security/a2a_governance.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "A2AGovernanceProxy"
-location: "L238"
+community: "PipelineAction"
+location: "L1032"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/PipelineAction
 ---
 
 # .process_outbound()
 
 ## Connections
-- [[dot-_process()]] - `calls` [EXTRACTED]
-- [[A2ADecision]] - `references` [EXTRACTED]
-- [[A2AGovernanceProxy]] - `method` [EXTRACTED]
-- [[A2AMessage]] - `references` [EXTRACTED]
-- [[Validate and govern an inbound A2A message from a remote peer.]] - `rationale_for` [EXTRACTED]
+- [[dot-_maybe_record_trust_violation()]] - `calls` [EXTRACTED]
+- [[dot-_process_outbound_core()]] - `calls` [EXTRACTED]
+- [[Any_51]] - `references` [EXTRACTED]
+- [[PipelineResult_1]] - `references` [EXTRACTED]
+- [[Process an outbound response through the security pipeline.          Thin wrappe]] - `rationale_for` [EXTRACTED]
+- [[SecurityPipeline_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

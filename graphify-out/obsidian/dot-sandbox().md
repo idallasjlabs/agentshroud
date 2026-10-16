@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L486"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # .sandbox()
@@ -16,4 +16,4 @@ tags:
 - [[FileSandboxConfig]] - `calls` [EXTRACTED]
 - [[TestFileSandbox]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

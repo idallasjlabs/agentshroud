@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "code"
-community: "SSHProxy"
+community: "ApprovalQueueConfig"
 location: "L608"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/ApprovalQueueConfig
 ---
 
 # .test_content_with_semicolon_backtick_redirect_round_trips_through_full_endpoint()
 
 ## Connections
-- [[SSHProxy]] - `calls` [EXTRACTED]
+- [[SSHProxy_1]] - `calls` [EXTRACTED]
 - [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - `method` [EXTRACTED]
 - [[_b64()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

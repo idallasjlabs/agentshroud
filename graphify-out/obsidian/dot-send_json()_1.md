@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_approval_queue.py"
+source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "ApprovalRequest"
-location: "L497"
+community: "ApprovalQueueConfig"
+location: "L486"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/ApprovalQueueConfig
 ---
 
 # .send_json()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_HangingWebSocket_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

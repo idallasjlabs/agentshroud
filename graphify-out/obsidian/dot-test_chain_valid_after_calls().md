@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "MCPToolCall"
+community: "MCPPermissionManager"
 location: "L988"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/MCPPermissionManager
 ---
 
 # .test_chain_valid_after_calls()
 
 ## Connections
-- [[MCPToolCall]] - `calls` [EXTRACTED]
+- [[MCPToolCall_1]] - `calls` [EXTRACTED]
 - [[TestHashChainIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPToolCall
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

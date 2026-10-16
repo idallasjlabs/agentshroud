@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/resource_guard.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "ResourceGuard"
-location: "L115"
+community: "MCPPermissionManager"
+location: "L143"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/MCPPermissionManager
 ---
 
 # .stop()
 
 ## Connections
-- [[ResourceGuard]] - `method` [EXTRACTED]
-- [[Stop background monitoring task cleanly.]] - `rationale_for` [EXTRACTED]
+- [[StdioConnection]] - `method` [EXTRACTED]
+- [[Stop the MCP server process.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

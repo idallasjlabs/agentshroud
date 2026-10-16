@@ -12,7 +12,7 @@ tags:
 # .test_different_domains_independent()
 
 ## Connections
-- [[TestRateLimiting_1]] - `method` [EXTRACTED]
+- [[TestRateLimiting]] - `method` [EXTRACTED]
 - [[WebProxy]] - `calls` [EXTRACTED]
 - [[WebProxyConfig]] - `calls` [EXTRACTED]
 

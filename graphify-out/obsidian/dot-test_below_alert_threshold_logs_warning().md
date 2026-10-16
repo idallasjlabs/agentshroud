@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_integrity.py"
 type: "code"
-community: "TestContextIntegrityScorer"
+community: "ContextSegment"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestContextIntegrityScorer
+  - community/ContextSegment
 ---
 
 # .test_below_alert_threshold_logs_warning()
@@ -16,4 +16,4 @@ tags:
 - [[TestContextIntegrityScorer]] - `method` [EXTRACTED]
 - [[_make_segment()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestContextIntegrityScorer
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/slack_proxy.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "SlackAPIProxy"
-location: "L439"
+community: "AuditStore"
+location: "L383"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/AuditStore
 ---
 
 # .get_stats()
 
 ## Connections
-- [[SlackAPIProxy_1]] - `method` [EXTRACTED]
+- [[AuditStore_1]] - `method` [EXTRACTED]
+- [[Get audit store statistics.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/code #graphify/EXTRACTED #community/AuditStore

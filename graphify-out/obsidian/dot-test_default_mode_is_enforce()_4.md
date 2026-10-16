@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_round2_hardening.py"
+source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "GitGuard"
-location: "L51"
+community: "test_observatory_mode.py"
+location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/test_observatory_modepy
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
-- [[FileSandboxConfig]] - `calls` [EXTRACTED]
-- [[TestFileSandboxDefaultEnforce]] - `method` [EXTRACTED]
+- [[TestGetMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GitGuard
+#graphify/code #graphify/EXTRACTED #community/test_observatory_modepy

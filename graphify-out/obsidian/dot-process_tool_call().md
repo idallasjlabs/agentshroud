@@ -18,7 +18,7 @@ tags:
 - [[dot-_sanitize_admin_private_data()]] - `calls` [EXTRACTED]
 - [[dot-check_approval_required()]] - `calls` [EXTRACTED]
 - [[MCPProxy_1]] - `method` [EXTRACTED]
-- [[MCPToolCall]] - `references` [EXTRACTED]
+- [[MCPToolCall_1]] - `references` [EXTRACTED]
 - [[Process an MCP tool call through the security pipeline.          Args]] - `rationale_for` [EXTRACTED]
 - [[ProxyResult]] - `references` [EXTRACTED]
 

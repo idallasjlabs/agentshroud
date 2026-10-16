@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TestEgressSSRF"
+community: "AgentRegistry"
 location: "L873"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressSSRF
+  - community/AgentRegistry
 ---
 
 # .test_block_localhost_variants()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEgressSSRF]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressSSRF
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

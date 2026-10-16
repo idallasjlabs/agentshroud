@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "test_e2e.py"
+community: "ForwardRequest"
 location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2epy
+  - community/ForwardRequest
 ---
 
 # .test_dashboard_cookie_auth_serves_html()
@@ -16,4 +16,4 @@ tags:
 - [[GET dashboard with valid cookie serves HTML]] - `rationale_for` [EXTRACTED]
 - [[TestDashboardCookieAuth]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2epy
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_tool_result_pii.py"
+source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L29"
+community: "TestPathIsolationManager"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/TestPathIsolationManager
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[Test default configuration]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultPIIConfig]] - `method` [EXTRACTED]
-- [[ToolResultPIIConfig]] - `calls` [EXTRACTED]
+- [[PathIsolationConfig]] - `calls` [EXTRACTED]
+- [[Test default configuration values._4]] - `rationale_for` [EXTRACTED]
+- [[TestPathIsolationConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_outbound_filter.py"
+source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "TestOutboundInfoFilter"
-location: "L22"
+community: "TestParseHostsLine"
+location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/TestParseHostsLine
 ---
 
 # .setup_method()
 
 ## Connections
-- [[OutboundInfoFilter]] - `calls` [EXTRACTED]
-- [[Set up test fixtures._5]] - `rationale_for` [EXTRACTED]
-- [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
+- [[DNSBlocklist]] - `calls` [EXTRACTED]
+- [[TestParseHostsLine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/TestParseHostsLine

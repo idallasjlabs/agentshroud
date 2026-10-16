@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "TestPathIsolationManager"
+community: "MiddlewareManager"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/MiddlewareManager
 ---
 
 # .rewrite_path()
@@ -20,4 +20,4 @@ tags:
 - [[PathRewriteResult]] - `references` [EXTRACTED]
 - [[Rewrite a path to isolate it to the user's namespace.          Args]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

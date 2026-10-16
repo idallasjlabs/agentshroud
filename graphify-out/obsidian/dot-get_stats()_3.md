@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "OutboundInfoFilter"
+community: "AuditChain"
 location: "L471"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutboundInfoFilter
+  - community/AuditChain
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_3]] - `references` [EXTRACTED]
+- [[Any_14]] - `references` [EXTRACTED]
 - [[Get filter statistics.]] - `rationale_for` [EXTRACTED]
 - [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/AuditChain

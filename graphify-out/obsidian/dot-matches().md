@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "EgressApprovalQueue"
+community: "TestEgressApprovalQueue"
 location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressApprovalQueue
+  - community/TestEgressApprovalQueue
 ---
 
 # .matches()
@@ -16,4 +16,4 @@ tags:
 - [[EgressScope]] - `method` [EXTRACTED]
 - [[Return True if this scope applies to the given user context.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

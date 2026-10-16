@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "GroupConfig"
+community: "RBACConfig"
 location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupConfig
+  - community/RBACConfig
 ---
 
 # .is_admin()
@@ -15,4 +15,4 @@ tags:
 - [[dot-is_group_admin()_2]] - `calls` [EXTRACTED]
 - [[GroupConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupConfig
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

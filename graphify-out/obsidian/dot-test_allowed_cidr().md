@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[CIDR in policy allowlist should match.]] - `rationale_for` [EXTRACTED]
-- [[EgressFilter]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
 - [[EgressPolicy]] - `calls` [EXTRACTED]
 - [[TestIPRules]] - `method` [EXTRACTED]
 - [[_make_filter()]] - `calls` [EXTRACTED]

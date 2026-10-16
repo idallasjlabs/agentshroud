@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L220"
+community: "MiddlewareManager"
+location: "L286"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager
 ---
 
 # .get_stats()
 
 ## Connections
-- [[AlertDispatcher]] - `method` [EXTRACTED]
-- [[Any]] - `references` [EXTRACTED]
-- [[Get dispatcher statistics.]] - `rationale_for` [EXTRACTED]
+- [[Get statistics about path isolation manager.]] - `rationale_for` [EXTRACTED]
+- [[PathIsolationManager]] - `method` [EXTRACTED]
+- [[any_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

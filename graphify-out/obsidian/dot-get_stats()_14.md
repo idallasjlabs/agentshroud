@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "AuditStore"
-location: "L383"
+community: "DataLedger"
+location: "L347"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/DataLedger
 ---
 
 # .get_stats()
 
 ## Connections
-- [[AuditStore_1]] - `method` [EXTRACTED]
-- [[Get audit store statistics.]] - `rationale_for` [EXTRACTED]
+- [[Any_47]] - `references` [EXTRACTED]
+- [[DataLedger]] - `method` [EXTRACTED]
+- [[Get aggregate statistics          Returns             Dictionary with total ent]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/DataLedger

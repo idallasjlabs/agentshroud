@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Role"
+community: "RBACConfig"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Role
+  - community/RBACConfig
 ---
 
 # .get_users_by_role()
 
 ## Connections
 - [[Get all users with a specific role.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_1]] - `method` [EXTRACTED]
-- [[Role_96]] - `references` [EXTRACTED]
+- [[RBACConfig_4]] - `method` [EXTRACTED]
+- [[Role_91]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Role
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

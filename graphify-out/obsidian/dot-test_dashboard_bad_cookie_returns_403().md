@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "test_security_fixes.py"
+community: "ApprovalQueueConfig"
 location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_fixespy
+  - community/ApprovalQueueConfig
 ---
 
 # .test_dashboard_bad_cookie_returns_403()
@@ -15,4 +15,4 @@ tags:
 - [[GET dashboard with invalid cookie returns 403]] - `rationale_for` [EXTRACTED]
 - [[TestDashboardCookieAuth]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_fixespy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

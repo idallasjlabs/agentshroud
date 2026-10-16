@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/approval_queue/store.py"
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: ".load_all"
-location: "L138"
+community: "CompetitiveIntelReport"
+location: "L261"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_all
+  - community/CompetitiveIntelReport
 ---
 
 # .load_all()
 
 ## Connections
-- [[ApprovalQueueItem]] - `references` [EXTRACTED]
-- [[ApprovalStore]] - `method` [EXTRACTED]
-- [[Load all items (for auditdebugging).]] - `rationale_for` [EXTRACTED]
+- [[dot-verify_chain()_2]] - `calls` [EXTRACTED]
+- [[CompetitiveIntelReport_1]] - `references` [EXTRACTED]
+- [[IntelReportStore_1]] - `method` [EXTRACTED]
+- [[Load all reports in chronological order (oldest first).]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_all
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_trust_manager.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "TrustConfig"
-location: "L63"
+community: "MiddlewareManager"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/MiddlewareManager
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[TestTrustLevels_1]] - `method` [EXTRACTED]
-- [[TrustConfig]] - `calls` [EXTRACTED]
+- [[MemoryIntegrityConfig_1]] - `calls` [EXTRACTED]
+- [[Test default configuration values.]] - `rationale_for` [EXTRACTED]
+- [[TestMemoryIntegrityConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

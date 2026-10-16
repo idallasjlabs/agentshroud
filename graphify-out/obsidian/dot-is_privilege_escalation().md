@@ -16,6 +16,6 @@ tags:
 - [[dot-get_role_hierarchy()]] - `calls` [EXTRACTED]
 - [[RBACManager_2]] - `method` [EXTRACTED]
 - [[Return True if changing from_role → to_role represents an escalation.]] - `rationale_for` [EXTRACTED]
-- [[Role_37]] - `references` [EXTRACTED]
+- [[Role_21]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Action

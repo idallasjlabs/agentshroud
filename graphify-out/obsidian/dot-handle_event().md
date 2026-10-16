@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "SlackAPIProxy"
+community: "AsyncMock"
 location: "L401"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/AsyncMock
 ---
 
 # .handle_event()
@@ -15,4 +15,4 @@ tags:
 - [[Handle an inbound Slack event payload received via Socket Mode.          Called]] - `rationale_for` [EXTRACTED]
 - [[SlackAPIProxy_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

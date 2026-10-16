@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_module_stats.py"
+source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "ModuleStatsCollector"
-location: "L83"
+community: "Action"
+location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/Action
 ---
 
 # .setup_method()
 
 ## Connections
-- [[TestEnforcementWiring]] - `method` [EXTRACTED]
-- [[get_collector()]] - `calls` [EXTRACTED]
+- [[RBACConfig_1]] - `calls` [EXTRACTED]
+- [[RBACManager_2]] - `calls` [EXTRACTED]
+- [[Set up test environment._1]] - `rationale_for` [EXTRACTED]
+- [[TestRBACManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/code #graphify/EXTRACTED #community/Action

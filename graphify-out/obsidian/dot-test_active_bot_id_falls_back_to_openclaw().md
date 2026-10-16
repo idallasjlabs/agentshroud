@@ -12,7 +12,7 @@ tags:
 # .test_active_bot_id_falls_back_to_openclaw()
 
 ## Connections
-- [[dot-_make_proxy()_4]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_1]] - `calls` [EXTRACTED]
 - [[Outside a proxy_request call, _active_bot_id() returns 'openclaw'.]] - `rationale_for` [EXTRACTED]
 - [[TestMultiBotContextvarRouting]] - `method` [EXTRACTED]
 

@@ -12,7 +12,7 @@ tags:
 # .test_cooldown_suppresses_second_ack()
 
 ## Connections
-- [[dot-_make_proxy()_5]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_2]] - `calls` [EXTRACTED]
 - [[Second 'hello' within the cooldown window must NOT send a second ack.]] - `rationale_for` [EXTRACTED]
 - [[TestGroupPresenceProbe]] - `method` [EXTRACTED]
 - [[_make_group_update()]] - `calls` [EXTRACTED]

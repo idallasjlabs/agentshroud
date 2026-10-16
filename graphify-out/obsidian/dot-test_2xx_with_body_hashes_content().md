@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_patch_stream()]] - `calls` [EXTRACTED]
 - [[TestMakeHttpxFetcher]] - `method` [EXTRACTED]
-- [[_FakeStreamResponse]] - `calls` [EXTRACTED]
+- [[_FakeStreamResponse_1]] - `calls` [EXTRACTED]
 - [[make_httpx_fetcher()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FetchOutcome

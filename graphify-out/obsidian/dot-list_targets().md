@@ -12,7 +12,7 @@ tags:
 # .list_targets()
 
 ## Connections
-- [[AgentTarget_2]] - `references` [EXTRACTED]
+- [[AgentTarget]] - `references` [EXTRACTED]
 - [[MultiAgentRouter]] - `method` [EXTRACTED]
 - [[Return all configured agent targets          Returns             List of AgentT]] - `rationale_for` [EXTRACTED]
 

@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/soc/websocket.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "Enum"
-location: "L76"
+community: "FalcoAlertWatcher"
+location: "L206"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/FalcoAlertWatcher
 ---
 
 # .run()
 
 ## Connections
-- [[dot-_event_fan_out()]] - `calls` [EXTRACTED]
-- [[dot-_keepalive_loop()]] - `calls` [EXTRACTED]
-- [[Main connection loop.]] - `rationale_for` [EXTRACTED]
-- [[SOCWebSocketHandler]] - `method` [EXTRACTED]
-- [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
+- [[dot-_process_new_alerts()]] - `calls` [EXTRACTED]
+- [[FalcoAlertWatcher]] - `method` [EXTRACTED]
+- [[Poll Falco alert files until stopped.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

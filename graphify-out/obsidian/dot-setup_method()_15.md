@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_encoding_detector.py"
 type: "code"
-community: "EgressFilter"
-location: "L407"
+community: "PIIConfig"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/PIIConfig
 ---
 
 # .setup_method()
 
 ## Connections
-- [[EgressFilter_2]] - `calls` [EXTRACTED]
-- [[EgressFilterConfig]] - `calls` [EXTRACTED]
-- [[EgressPolicy]] - `calls` [EXTRACTED]
-- [[TestEgressFilter]] - `method` [EXTRACTED]
+- [[EncodingDetector]] - `calls` [EXTRACTED]
+- [[TestEncodingDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilter
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

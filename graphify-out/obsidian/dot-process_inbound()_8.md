@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
 community: "BlockingPipeline"
-location: "L129"
+location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # .process_inbound()
 
 ## Connections
+- [[EncodingDetectingPipeline]] - `method` [EXTRACTED]
 - [[FakePipelineResult]] - `references` [EXTRACTED]
-- [[PassthroughPipeline]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/BlockingPipeline

@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-requires_approval()]] - `calls` [EXTRACTED]
-- [[dot-submit_tool_request()_3]] - `calls` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
+- [[dot-submit_tool_request()_4]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue_2]] - `method` [EXTRACTED]
 - [[Get the policy for a risk tier.]] - `rationale_for` [EXTRACTED]
 - [[ToolRiskPolicy_1]] - `references` [EXTRACTED]
 

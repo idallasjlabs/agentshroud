@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Test the convenience sanitize_tool_result function.]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
+- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
 - [[ToolResultSanitizerConfig]] - `calls` [EXTRACTED]
 - [[sanitize_tool_result()]] - `calls` [EXTRACTED]
 

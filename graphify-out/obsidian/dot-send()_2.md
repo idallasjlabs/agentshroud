@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-build_message()]] - `calls` [EXTRACTED]
-- [[dot-login()]] - `calls` [EXTRACTED]
-- [[dot-sendmail()]] - `calls` [EXTRACTED]
+- [[dot-login()_1]] - `calls` [EXTRACTED]
+- [[dot-sendmail()_1]] - `calls` [EXTRACTED]
 - [[GatewayEmailService_1]] - `method` [EXTRACTED]
 - [[Send one email synchronously.  Blocking — call in an executor.          Raises t]] - `rationale_for` [EXTRACTED]
 

@@ -15,11 +15,11 @@ tags:
 - [[dot-_notify_telegram()]] - `calls` [EXTRACTED]
 - [[dot-_schedule_timeout()]] - `calls` [EXTRACTED]
 - [[dot-broadcast()_1]] - `calls` [EXTRACTED]
-- [[dot-submit_tool_request()_3]] - `calls` [EXTRACTED]
+- [[dot-submit_tool_request()_4]] - `calls` [EXTRACTED]
 - [[Add an action to the approval queue with policy-based timeout.]] - `rationale_for` [EXTRACTED]
-- [[ApprovalQueueItem_4]] - `references` [EXTRACTED]
-- [[ApprovalRequest_2]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
+- [[ApprovalQueueItem_1]] - `references` [EXTRACTED]
+- [[ApprovalRequest_3]] - `references` [EXTRACTED]
+- [[EnhancedApprovalQueue_2]] - `method` [EXTRACTED]
 - [[ToolRiskPolicy_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

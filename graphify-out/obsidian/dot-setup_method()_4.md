@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/tests/test_tool_injection_scan.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "InjectionAction"
-location: "L23"
+community: "MiddlewareManager"
+location: "L192"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/MiddlewareManager
 ---
 
 # .setup_method()
 
 ## Connections
-- [[Set up test fixtures.]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultInjectionScanner]] - `method` [EXTRACTED]
-- [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
+- [[MemoryLifecycleConfig_1]] - `calls` [EXTRACTED]
+- [[MemoryLifecycleManager]] - `calls` [EXTRACTED]
+- [[Set up test environment.]] - `rationale_for` [EXTRACTED]
+- [[TestMemoryLifecycleManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionAction
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

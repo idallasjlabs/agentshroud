@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: ".get_merged_memory_for_user"
+community: "RBACConfig"
 location: "L147"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_merged_memory_for_user
+  - community/RBACConfig
 ---
 
 # .get_user_memory()
@@ -17,4 +17,4 @@ tags:
 - [[Read raw private memory for a user.          Args             user_id The user]] - `rationale_for` [EXTRACTED]
 - [[SharedMemoryManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_merged_memory_for_user
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

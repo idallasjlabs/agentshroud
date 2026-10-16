@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "ServiceManager"
-location: "L38"
+community: "TestIsContainerRunning"
+location: "L149"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/TestIsContainerRunning
 ---
 
 # .read()
 
 ## Connections
-- [[_FakeResponse]] - `method` [EXTRACTED]
+- [[_FakeResp]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/TestIsContainerRunning

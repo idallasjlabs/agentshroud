@@ -15,6 +15,6 @@ tags:
 - [[Auto-revert task sets mode back to enforce after delay.]] - `rationale_for` [EXTRACTED]
 - [[ModeRequest]] - `calls` [EXTRACTED]
 - [[TestAutoRevert]] - `method` [EXTRACTED]
-- [[set_mode()_1]] - `calls` [EXTRACTED]
+- [[set_mode()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_observatory_modepy

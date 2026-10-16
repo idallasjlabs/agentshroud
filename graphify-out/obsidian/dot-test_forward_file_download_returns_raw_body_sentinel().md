@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[ri for a user not in immune set must say so.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestFileDownload]] - `method` [EXTRACTED]
 - [[_forward_file_download returns dict with _raw_body, _content_type, _status_code.]] - `rationale_for` [EXTRACTED]
 

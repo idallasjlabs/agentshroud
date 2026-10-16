@@ -12,7 +12,7 @@ tags:
 # .test_blocked_outbound_replaced_with_policy_notice()
 
 ## Connections
-- [[AgentTarget]] - `calls` [EXTRACTED]
+- [[AgentTarget_1]] - `calls` [EXTRACTED]
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestOutboundBlockedNotDelivered]] - `method` [EXTRACTED]
 - [[_BlockedOutboundPipeline]] - `calls` [EXTRACTED]

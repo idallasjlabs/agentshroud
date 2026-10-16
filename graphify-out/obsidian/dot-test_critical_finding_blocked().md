@@ -12,7 +12,7 @@ tags:
 # .test_critical_finding_blocked()
 
 ## Connections
-- [[TestGitGuard]] - `method` [EXTRACTED]
+- [[TestGitGuard_1]] - `method` [EXTRACTED]
 - [[_req()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_req

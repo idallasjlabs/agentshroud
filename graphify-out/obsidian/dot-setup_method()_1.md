@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_outbound_filter.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "OutboundInfoFilter"
-location: "L521"
+community: "AlertDispatcher"
+location: "L509"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutboundInfoFilter
+  - community/AlertDispatcher
 ---
 
 # .setup_method()
 
 ## Connections
-- [[OutboundInfoFilter]] - `calls` [EXTRACTED]
-- [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
+- [[ContainerSnapshot]] - `calls` [EXTRACTED]
+- [[DriftDetector]] - `calls` [EXTRACTED]
+- [[TestDriftDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

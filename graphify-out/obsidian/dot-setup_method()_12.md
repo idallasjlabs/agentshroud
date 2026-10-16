@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_soc_auth.py"
+source_file: "gateway/tests/test_resource_guard.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L56"
+community: "ResourceGuard"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/ResourceGuard
 ---
 
 # .setup_method()
 
 ## Connections
-- [[TestSessionTokens]] - `method` [EXTRACTED]
+- [[ResourceGuard]] - `calls` [EXTRACTED]
+- [[ResourceLimits]] - `calls` [EXTRACTED]
+- [[TestResourceGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

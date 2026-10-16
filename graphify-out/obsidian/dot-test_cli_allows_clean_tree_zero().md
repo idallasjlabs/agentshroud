@@ -12,9 +12,9 @@ tags:
 # .test_cli_allows_clean_tree_zero()
 
 ## Connections
-- [[Path_44]] - `references` [EXTRACTED]
+- [[Path_28]] - `references` [EXTRACTED]
 - [[TestScanEntrypoint]] - `method` [EXTRACTED]
 - [[_run_scan_cli()]] - `calls` [EXTRACTED]
-- [[_write_tree()_1]] - `calls` [EXTRACTED]
+- [[_write_tree()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Path

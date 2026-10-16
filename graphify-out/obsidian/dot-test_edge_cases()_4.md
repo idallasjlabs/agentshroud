@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_outbound_filter.py"
+source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "TestOutboundInfoFilter"
-location: "L334"
+community: "ToolResultSanitizer"
+location: "L290"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/ToolResultSanitizer
 ---
 
 # .test_edge_cases()
 
 ## Connections
-- [[Test edge cases and boundary conditions.]] - `rationale_for` [EXTRACTED]
-- [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
+- [[Test edge cases and malformed inputs.]] - `rationale_for` [EXTRACTED]
+- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

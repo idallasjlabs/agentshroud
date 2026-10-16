@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_resource_guard.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "ResourceGuard"
-location: "L19"
+community: "TrustConfig"
+location: "L281"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/TrustConfig
 ---
 
 # .setup_method()
 
 ## Connections
-- [[ResourceGuard]] - `calls` [EXTRACTED]
-- [[ResourceLimits]] - `calls` [EXTRACTED]
-- [[TestResourceGuard]] - `method` [EXTRACTED]
+- [[TestTrustManager]] - `method` [EXTRACTED]
+- [[TrustManager_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

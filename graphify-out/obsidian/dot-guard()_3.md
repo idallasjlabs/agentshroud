@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_performance.py"
+source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
 community: "PIIConfig"
-location: "L96"
+location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # .guard()
 
 ## Connections
-- [[PromptGuard]] - `calls` [EXTRACTED]
-- [[TestPromptGuardPerformance]] - `method` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
+- [[TestSystemPromptHMAC]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PIIConfig

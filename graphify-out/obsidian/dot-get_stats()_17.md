@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/forwarder.py"
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L160"
+community: "AlertDispatcher"
+location: "L220"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/AlertDispatcher
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_69]] - `references` [EXTRACTED]
-- [[HTTPForwarder]] - `method` [EXTRACTED]
+- [[AlertDispatcher]] - `method` [EXTRACTED]
+- [[Any_60]] - `references` [EXTRACTED]
+- [[Get dispatcher statistics.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

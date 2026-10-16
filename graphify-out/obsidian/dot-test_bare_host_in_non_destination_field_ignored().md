@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "TestExtractEgressTargets"
+community: "MCPPermissionManager"
 location: "L360"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestExtractEgressTargets
+  - community/MCPPermissionManager
 ---
 
 # .test_bare_host_in_non_destination_field_ignored()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestExtractEgressTargets]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestExtractEgressTargets
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

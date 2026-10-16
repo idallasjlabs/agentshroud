@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "TestTrustProgression"
+community: "TrustConfig"
 location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestTrustProgression
+  - community/TrustConfig
 ---
 
 # .test_demotion_on_violations()
@@ -15,4 +15,4 @@ tags:
 - [[Agent should be demoted on violations.]] - `rationale_for` [EXTRACTED]
 - [[TestTrustProgression]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestTrustProgression
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

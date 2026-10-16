@@ -1,24 +1,22 @@
 ---
-source_file: "gateway/security/prompt_guard.py"
+source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "OutboundInfoFilter"
-location: "L705"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutboundInfoFilter
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # .scan()
 
 ## Connections
-- [[dot-_check_encoded_content()]] - `calls` [EXTRACTED]
-- [[dot-_check_unicode_tricks()]] - `calls` [EXTRACTED]
-- [[dot-scan_tool_result()]] - `calls` [EXTRACTED]
-- [[PromptGuard]] - `method` [EXTRACTED]
-- [[Scan input text for prompt injection patterns.          Args             text]] - `rationale_for` [EXTRACTED]
-- [[ScanResult_1]] - `references` [EXTRACTED]
-- [[detect_base64_payloads()]] - `calls` [EXTRACTED]
-- [[normalize_input()]] - `calls` [EXTRACTED]
+- [[dot-_check_encoded()]] - `calls` [EXTRACTED]
+- [[dot-_check_plain()]] - `calls` [EXTRACTED]
+- [[dot-_record()]] - `calls` [EXTRACTED]
+- [[dot-scan_response()_1]] - `calls` [EXTRACTED]
+- [[CanaryResult_1]] - `references` [EXTRACTED]
+- [[CanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

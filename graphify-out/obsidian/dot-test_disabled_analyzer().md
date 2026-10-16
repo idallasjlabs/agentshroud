@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "ToolChainAnalyzer"
+community: "TestToolChainAnalyzer"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolChainAnalyzer
+  - community/TestToolChainAnalyzer
 ---
 
 # .test_disabled_analyzer()
@@ -16,4 +16,4 @@ tags:
 - [[TestToolChainAnalyzer_1]] - `method` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

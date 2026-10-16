@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "code"
-community: "lifespan.py"
-location: "L192"
+community: "InjectionAction"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/InjectionAction
 ---
 
 # .setup_method()
 
 ## Connections
-- [[MemoryLifecycleConfig_1]] - `calls` [EXTRACTED]
-- [[MemoryLifecycleManager]] - `calls` [EXTRACTED]
-- [[Set up test environment.]] - `rationale_for` [EXTRACTED]
-- [[TestMemoryLifecycleManager]] - `method` [EXTRACTED]
+- [[Set up test fixtures._1]] - `rationale_for` [EXTRACTED]
+- [[TestToolResultInjectionScanner]] - `method` [EXTRACTED]
+- [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/InjectionAction

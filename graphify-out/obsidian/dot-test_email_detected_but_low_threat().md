@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "TestPIIDetection"
+community: "MCPAuditTrail"
 location: "L204"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPIIDetection
+  - community/MCPAuditTrail
 ---
 
 # .test_email_detected_but_low_threat()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPIIDetection_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPIIDetection
+#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail

@@ -12,8 +12,8 @@ tags:
 # .get_pending()
 
 ## Connections
-- [[ApprovalQueueItem_4]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
+- [[ApprovalQueueItem_1]] - `references` [EXTRACTED]
+- [[EnhancedApprovalQueue_2]] - `method` [EXTRACTED]
 - [[Get all pending approval items.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: ".analyze_message"
+community: "._filter_outbound"
 location: "L245"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/analyze_message
+  - community/_filter_outbound
 ---
 
 # .scan_tool_result()
@@ -20,4 +20,4 @@ tags:
 - [[normalize_input()]] - `calls` [EXTRACTED]
 - [[strip_markdown_exfil()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/analyze_message
+#graphify/code #graphify/EXTRACTED #community/_filter_outbound

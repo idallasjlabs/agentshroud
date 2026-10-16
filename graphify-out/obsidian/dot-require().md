@@ -12,9 +12,9 @@ tags:
 # .require()
 
 ## Connections
-- [[Action]] - `references` [EXTRACTED]
+- [[Action_1]] - `references` [EXTRACTED]
 - [[Raise 403 if the caller lacks the required permission.]] - `rationale_for` [EXTRACTED]
-- [[Resource]] - `references` [EXTRACTED]
+- [[Resource_1]] - `references` [EXTRACTED]
 - [[SCLCaller_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/require

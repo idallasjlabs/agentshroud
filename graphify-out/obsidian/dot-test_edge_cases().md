@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_multi_turn_tracker.py"
+source_file: "gateway/tests/test_prompt_protection.py"
 type: "code"
-community: "TestMultiTurnTracker"
-location: "L430"
+community: "TestPromptProtection"
+location: "L274"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMultiTurnTracker
+  - community/TestPromptProtection
 ---
 
 # .test_edge_cases()
 
 ## Connections
 - [[Test edge cases and error conditions.]] - `rationale_for` [EXTRACTED]
-- [[TestMultiTurnTracker]] - `method` [EXTRACTED]
+- [[TestPromptProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMultiTurnTracker
+#graphify/code #graphify/EXTRACTED #community/TestPromptProtection

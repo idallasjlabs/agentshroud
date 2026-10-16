@@ -12,7 +12,7 @@ tags:
 # .test_append_targets_correct_agent_marker()
 
 ## Connections
-- [[TestSerialization_1]] - `method` [EXTRACTED]
+- [[TestSerialization]] - `method` [EXTRACTED]
 - [[_adv()]] - `calls` [EXTRACTED]
 - [[_sync()]] - `calls` [EXTRACTED]
 

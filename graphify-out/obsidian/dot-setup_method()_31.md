@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_metadata_guard.py"
 type: "code"
-community: "AgentRegistry"
-location: "L509"
+community: "TestMetadataGuard"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/TestMetadataGuard
 ---
 
 # .setup_method()
 
 ## Connections
-- [[ContainerSnapshot]] - `calls` [EXTRACTED]
-- [[DriftDetector]] - `calls` [EXTRACTED]
-- [[TestDriftDetector]] - `method` [EXTRACTED]
+- [[MetadataGuard]] - `calls` [EXTRACTED]
+- [[TestMetadataGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/TestMetadataGuard

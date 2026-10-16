@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "make_event"
-location: "L95"
+community: "test_e2e_proxy.py"
+location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/test_e2e_proxypy
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_29]] - `references` [EXTRACTED]
-- [[EventBus]] - `method` [EXTRACTED]
+- [[Any_34]] - `references` [EXTRACTED]
+- [[HTTPForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

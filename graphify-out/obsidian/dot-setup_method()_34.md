@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_log_sanitizer.py"
 type: "code"
-community: "AgentRegistry"
-location: "L800"
+community: "TestLogSanitizer"
+location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/TestLogSanitizer
 ---
 
 # .setup_method()
 
 ## Connections
-- [[PromptGuard]] - `calls` [EXTRACTED]
-- [[TestPromptGuardEvasion]] - `method` [EXTRACTED]
+- [[LogSanitizer]] - `calls` [EXTRACTED]
+- [[TestLogSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/TestLogSanitizer

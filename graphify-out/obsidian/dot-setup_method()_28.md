@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_heuristic_classifier.py"
+source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "HeuristicClassifier"
-location: "L13"
+community: "TestFabricatedSecurityNotice"
+location: "L521"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/TestFabricatedSecurityNotice
 ---
 
 # .setup_method()
 
 ## Connections
-- [[HeuristicClassifier_1]] - `calls` [EXTRACTED]
-- [[TestHeuristicClassifier]] - `method` [EXTRACTED]
+- [[OutboundInfoFilter]] - `calls` [EXTRACTED]
+- [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

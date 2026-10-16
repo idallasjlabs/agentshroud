@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/rate_limit_guard.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "RateLimitGuard"
-location: "L218"
+community: "make_event"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimitGuard
+  - community/make_event
 ---
 
 # .get_stats()
 
 ## Connections
-- [[RateLimitGuard]] - `method` [EXTRACTED]
+- [[Any_31]] - `references` [EXTRACTED]
+- [[EventBus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimitGuard
+#graphify/code #graphify/EXTRACTED #community/make_event

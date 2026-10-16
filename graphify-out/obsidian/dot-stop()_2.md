@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/dns_blocklist.py"
+source_file: "gateway/security/cron_state_monitor.py"
 type: "code"
-community: "DNSBlocklist"
-location: "L273"
+community: "CronStateMonitor"
+location: "L315"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSBlocklist
+  - community/CronStateMonitor
 ---
 
 # .stop()
 
 ## Connections
-- [[DNSBlocklist]] - `method` [EXTRACTED]
-- [[Stop periodic updates.]] - `rationale_for` [EXTRACTED]
+- [[CronStateMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSBlocklist
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

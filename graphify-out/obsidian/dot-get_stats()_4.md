@@ -12,6 +12,6 @@ tags:
 # .get_stats()
 
 ## Connections
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

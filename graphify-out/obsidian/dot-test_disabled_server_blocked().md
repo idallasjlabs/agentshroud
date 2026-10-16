@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "MCPToolCall"
+community: "MCPPermissionManager"
 location: "L1169"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/MCPPermissionManager
 ---
 
 # .test_disabled_server_blocked()
@@ -15,7 +15,7 @@ tags:
 - [[MCPProxy_1]] - `calls` [EXTRACTED]
 - [[MCPProxyConfig_3]] - `calls` [EXTRACTED]
 - [[MCPServerConfig_2]] - `calls` [EXTRACTED]
-- [[MCPToolCall]] - `calls` [EXTRACTED]
+- [[MCPToolCall_1]] - `calls` [EXTRACTED]
 - [[TestAllowDenyList]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPToolCall
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

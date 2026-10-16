@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_resource_guard.py"
 type: "code"
-community: "AgentRegistry"
-location: "L523"
+community: "ResourceGuard"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/ResourceGuard
 ---
 
 # .teardown_method()
 
 ## Connections
-- [[TestDriftDetector]] - `method` [EXTRACTED]
+- [[TestResourceGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

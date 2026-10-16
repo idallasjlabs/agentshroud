@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tools/multi_host_test.py"
+source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "MultiHostResult"
-location: "L78"
+community: "api.py"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MultiHostResult
+  - community/apipy
 ---
 
 # .ok()
 
 ## Connections
-- [[HostResult]] - `method` [EXTRACTED]
-- [[True only when the host ran the command and it exited 0.]] - `rationale_for` [EXTRACTED]
+- [[A source counts as proven only on a 2xx with non-empty content.]] - `rationale_for` [EXTRACTED]
+- [[FetchOutcome_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MultiHostResult
+#graphify/code #graphify/EXTRACTED #community/apipy

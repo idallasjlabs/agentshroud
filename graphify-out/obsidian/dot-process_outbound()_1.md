@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "_PipelineCaptor"
+community: "AgentTarget"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_PipelineCaptor
+  - community/AgentTarget
 ---
 
 # .process_outbound()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_PipelineCaptor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_PipelineCaptor
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/ingest_api/router.py"
+source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "AgentTarget"
-location: "L389"
+community: "DockerEngine"
+location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/DockerEngine
 ---
 
 # .health_check()
 
 ## Connections
-- [[AgentTarget_2]] - `references` [EXTRACTED]
-- [[Any_55]] - `references` [EXTRACTED]
-- [[Check health of one or all agent targets          Args             target Spec]] - `rationale_for` [EXTRACTED]
-- [[MultiAgentRouter]] - `method` [EXTRACTED]
+- [[dot-_cmd()_1]] - `calls` [EXTRACTED]
+- [[DockerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/DockerEngine

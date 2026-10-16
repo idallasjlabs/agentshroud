@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "WebhookReceiver"
-location: "L236"
+community: "UserSessionManager"
+location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - community/UserSessionManager
 ---
 
 # .session_manager()
 
 ## Connections
-- [[Create a session manager.]] - `rationale_for` [EXTRACTED]
-- [[TestWebhookReceiverIntegration]] - `method` [EXTRACTED]
+- [[Create a session manager with temporary workspace.]] - `rationale_for` [EXTRACTED]
+- [[TestUserSessionManager]] - `method` [EXTRACTED]
 - [[UserSessionManager]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

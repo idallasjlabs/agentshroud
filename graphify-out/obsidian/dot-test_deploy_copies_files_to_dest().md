@@ -12,9 +12,9 @@ tags:
 # .test_deploy_copies_files_to_dest()
 
 ## Connections
-- [[Path_30]] - `references` [EXTRACTED]
+- [[Path_54]] - `references` [EXTRACTED]
 - [[TestDeployManifest]] - `method` [EXTRACTED]
-- [[_write_tree()]] - `calls` [EXTRACTED]
+- [[_write_tree()_1]] - `calls` [EXTRACTED]
 - [[deploy_manifest()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Path

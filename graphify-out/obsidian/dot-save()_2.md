@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/intel_report.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "api.py"
-location: "L212"
+community: "ApprovalQueueConfig"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/ApprovalQueueConfig
 ---
 
 # .save()
 
 ## Connections
-- [[dot-_load_latest_file()]] - `calls` [EXTRACTED]
-- [[CompetitiveIntelReport_2]] - `references` [EXTRACTED]
-- [[IntelReportStore]] - `method` [EXTRACTED]
-- [[Path_42]] - `references` [EXTRACTED]
-- [[Persist report to the store, linking it to the previous report.          Sets]] - `rationale_for` [EXTRACTED]
+- [[ApprovalQueueItem_2]] - `references` [EXTRACTED]
+- [[ApprovalStore]] - `method` [EXTRACTED]
+- [[Insert or replace an approval item.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

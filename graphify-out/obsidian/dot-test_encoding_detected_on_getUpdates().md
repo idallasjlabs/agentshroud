@@ -15,9 +15,9 @@ tags:
 - [[Base64-encoded injection via getUpdates must be caught.]] - `rationale_for` [EXTRACTED]
 - [[EncodingDetectingPipeline]] - `calls` [EXTRACTED]
 - [[FakeRBAC]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[_make_update()]] - `calls` [EXTRACTED]
+- [[_make_update()_1]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/BlockingPipeline

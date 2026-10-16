@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "test_egress_filter.py"
+community: "EgressFilterConfig"
 location: "L285"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_egress_filterpy
+  - community/EgressFilterConfig
 ---
 
 # .test_deny_is_persisted_to_audit_store()
 
 ## Connections
-- [[EgressFilter]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[FakeAuditStore_1]] - `calls` [EXTRACTED]
 - [[TestAuditStorePersistence]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_egress_filterpy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

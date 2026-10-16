@@ -1,17 +1,27 @@
 ---
-source_file: "gateway/runtime/docker_engine.py"
+source_file: "src/interfaces/text_control_center.py"
 type: "code"
-community: "DockerEngine"
-location: "L56"
+community: "ControlCenter"
+location: "L358"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DockerEngine
+  - community/ControlCenter
 ---
 
 # .run()
 
 ## Connections
-- [[DockerEngine]] - `method` [EXTRACTED]
+- [[dot-draw_approvals()]] - `calls` [EXTRACTED]
+- [[dot-draw_dashboard()]] - `calls` [EXTRACTED]
+- [[dot-draw_kill_switch()]] - `calls` [EXTRACTED]
+- [[dot-draw_log()]] - `calls` [EXTRACTED]
+- [[dot-draw_modules()]] - `calls` [EXTRACTED]
+- [[dot-draw_ssh_hosts()]] - `calls` [EXTRACTED]
+- [[dot-get_key()]] - `calls` [EXTRACTED]
+- [[dot-make_api_request()]] - `calls` [EXTRACTED]
+- [[ControlCenter]] - `method` [EXTRACTED]
+- [[Main control center loop]] - `rationale_for` [EXTRACTED]
+- [[main()_12]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DockerEngine
+#graphify/code #graphify/EXTRACTED #community/ControlCenter

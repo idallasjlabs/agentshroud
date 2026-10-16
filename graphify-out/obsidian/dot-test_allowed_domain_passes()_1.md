@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_web_proxy.py"
+source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "WebProxyConfig"
-location: "L63"
+community: "_make_filter"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/_make_filter
 ---
 
 # .test_allowed_domain_passes()
 
 ## Connections
-- [[TestDomainDenylist]] - `method` [EXTRACTED]
+- [[TestEnforceMode]] - `method` [EXTRACTED]
+- [[_make_filter()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/_make_filter

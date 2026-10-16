@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "AuditEvent"
-location: "L169"
+community: "A2AProxyResult"
+location: "L452"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditEvent
+  - community/A2AProxyResult
 ---
 
 # .log_event()
 
 ## Connections
-- [[dot-_get_latest_hash()]] - `calls` [EXTRACTED]
-- [[dot-compute_entry_hash()]] - `calls` [EXTRACTED]
-- [[AuditEvent]] - `references` [EXTRACTED]
-- [[AuditStore_1]] - `method` [EXTRACTED]
-- [[Log a new audit event with hash chain integrity.          Args             bot_]] - `rationale_for` [EXTRACTED]
+- [[_Event]] - `calls` [EXTRACTED]
+- [[_StubAuditStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditEvent
+#graphify/code #graphify/EXTRACTED #community/A2AProxyResult

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "TestMiddlewareSessionEnforcement"
+community: "UserSessionManager"
 location: "L357"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMiddlewareSessionEnforcement
+  - community/UserSessionManager
 ---
 
 # .middleware_manager()
@@ -17,4 +17,4 @@ tags:
 - [[TestMiddlewareSessionEnforcement]] - `method` [EXTRACTED]
 - [[UserSessionManager]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMiddlewareSessionEnforcement
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

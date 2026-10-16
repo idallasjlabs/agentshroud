@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "_PipelineCaptor"
+community: "AgentTarget"
 location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_PipelineCaptor
+  - community/AgentTarget
 ---
 
 # .test_default_not_used_in_pipeline()
 
 ## Connections
 - [[dot-process_inbound()_2]] - `calls` [EXTRACTED]
-- [[AgentTarget]] - `calls` [EXTRACTED]
+- [[AgentTarget_1]] - `calls` [EXTRACTED]
 - [[Regression 'default' must never appear in agent_id when a named target is resol]] - `rationale_for` [EXTRACTED]
 - [[TestAgentIdPropagatedFromTarget]] - `method` [EXTRACTED]
 - [[_PipelineCaptor]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_PipelineCaptor
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

@@ -15,7 +15,7 @@ tags:
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
 - [[Rate-limit notice should retry without Markdown when parse-mode send fails.]] - `rationale_for` [EXTRACTED]
 - [[RateLimiter_1]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RateLimiter

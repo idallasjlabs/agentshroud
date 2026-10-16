@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "ContainerEngine"
-location: "L95"
+community: "ResourceGuard"
+location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerEngine
+  - community/ResourceGuard
 ---
 
 # .stop()
 
 ## Connections
-- [[ContainerEngine]] - `method` [EXTRACTED]
-- [[Stop a running container.]] - `rationale_for` [EXTRACTED]
+- [[ResourceGuard]] - `method` [EXTRACTED]
+- [[Stop background monitoring task cleanly.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerEngine
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

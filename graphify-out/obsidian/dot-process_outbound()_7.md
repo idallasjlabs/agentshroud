@@ -1,22 +1,21 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L437"
+community: "A2AGovernanceProxy"
+location: "L238"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/A2AGovernanceProxy
 ---
 
 # .process_outbound()
 
 ## Connections
-- [[_PassInboundPipeline]] - `method` [EXTRACTED]
-- [[test_egress_allowed_domain()]] - `calls` [EXTRACTED]
-- [[test_egress_blocked()]] - `calls` [EXTRACTED]
-- [[test_inbound_outbound_both_audited()]] - `calls` [EXTRACTED]
-- [[test_outbound_pii_stripped()]] - `calls` [EXTRACTED]
-- [[test_pipeline_stats()]] - `calls` [EXTRACTED]
+- [[dot-_process()]] - `calls` [EXTRACTED]
+- [[A2ADecision]] - `references` [EXTRACTED]
+- [[A2AGovernanceProxy]] - `method` [EXTRACTED]
+- [[A2AMessage]] - `references` [EXTRACTED]
+- [[Validate and govern an inbound A2A message from a remote peer.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

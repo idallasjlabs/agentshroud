@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "AlertDispatcher"
+community: "DNSFilterConfig"
 location: "L606"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/DNSFilterConfig
 ---
 
 # .test_dns_filter_config()
@@ -15,4 +15,4 @@ tags:
 - [[DNSFilterConfig]] - `calls` [EXTRACTED]
 - [[TestNetworkSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

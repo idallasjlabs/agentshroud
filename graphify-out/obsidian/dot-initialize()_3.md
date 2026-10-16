@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "DataLedger"
-location: "L84"
+community: "ApprovalQueueConfig"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/ApprovalQueueConfig
 ---
 
 # .initialize()
 
 ## Connections
-- [[dot-enforce_retention()]] - `calls` [EXTRACTED]
-- [[Create database, tables, and run initial cleanup          Must be called before]] - `rationale_for` [EXTRACTED]
-- [[DataLedger]] - `method` [EXTRACTED]
+- [[ApprovalStore]] - `method` [EXTRACTED]
+- [[Open the database and create the schema. Idempotent a second call         must]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataLedger
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

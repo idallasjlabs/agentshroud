@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "test_egress_filter.py"
+community: "EgressFilterConfig"
 location: "L281"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_egress_filterpy
+  - community/EgressFilterConfig
 ---
 
 # .log_event()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FakeAuditStore_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_egress_filterpy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

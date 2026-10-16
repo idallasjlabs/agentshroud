@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "TestMiddlewareSessionEnforcement"
+community: "UserSessionManager"
 location: "L350"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMiddlewareSessionEnforcement
+  - community/UserSessionManager
 ---
 
 # .temp_workspace()
@@ -15,4 +15,4 @@ tags:
 - [[Create a temporary workspace.]] - `rationale_for` [EXTRACTED]
 - [[TestMiddlewareSessionEnforcement]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMiddlewareSessionEnforcement
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

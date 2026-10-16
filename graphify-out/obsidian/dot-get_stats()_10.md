@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "AuditChain"
-location: "L1658"
+community: "test_e2e_proxy.py"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/test_e2e_proxypy
 ---
 
 # .get_stats()
 
 ## Connections
-- [[dot-verify_chain()]] - `calls` [EXTRACTED]
-- [[Any_10]] - `references` [EXTRACTED]
-- [[SecurityPipeline_2]] - `method` [EXTRACTED]
+- [[Any_35]] - `references` [EXTRACTED]
+- [[SidecarScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

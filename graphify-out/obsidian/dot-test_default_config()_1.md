@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "lifespan.py"
-location: "L35"
+community: "TrustConfig"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/TrustConfig
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[MemoryIntegrityConfig_1]] - `calls` [EXTRACTED]
-- [[Test default configuration values.]] - `rationale_for` [EXTRACTED]
-- [[TestMemoryIntegrityConfig]] - `method` [EXTRACTED]
+- [[TestTrustLevels]] - `method` [EXTRACTED]
+- [[TrustConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

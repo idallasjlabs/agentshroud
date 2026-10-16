@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_canary_tripwire.py"
+source_file: "gateway/tests/test_encoding_detector.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L67"
+community: "PIIConfig"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/PIIConfig
 ---
 
 # .test_empty_input()
 
 ## Connections
-- [[TestCanaryTripwire]] - `method` [EXTRACTED]
+- [[TestEncodingDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

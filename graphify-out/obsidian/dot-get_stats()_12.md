@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "EgressFilter"
+community: "EgressAttempt"
 location: "L644"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/EgressAttempt
 ---
 
 # .get_stats()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-get_log()]] - `calls` [EXTRACTED]
 - [[dot-get_top_destinations()]] - `calls` [EXTRACTED]
-- [[EgressFilter_2]] - `method` [EXTRACTED]
+- [[EgressFilter_1]] - `method` [EXTRACTED]
 - [[Get summary statistics of egress attempts.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilter
+#graphify/code #graphify/EXTRACTED #community/EgressAttempt

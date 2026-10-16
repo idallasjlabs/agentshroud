@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_killswitch_monitor.py"
+source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L27"
+community: "ApprovalHardening"
+location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/ApprovalHardening
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[KillSwitchConfig_1]] - `calls` [EXTRACTED]
+- [[ApprovalHardeningConfig]] - `calls` [EXTRACTED]
 - [[Test default configuration values._3]] - `rationale_for` [EXTRACTED]
-- [[TestKillSwitchConfig]] - `method` [EXTRACTED]
+- [[TestApprovalHardeningConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/ApprovalHardening

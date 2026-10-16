@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "Enum"
+community: "test_soc_realtime_coverage.py"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .test_construction()
 
 ## Connections
-- [[ContributorRecord_1]] - `calls` [EXTRACTED]
+- [[ContributorRecord]] - `calls` [EXTRACTED]
 - [[TestContributorRecord]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

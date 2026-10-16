@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_subagent_monitor.py"
+source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "SubagentMonitor"
-location: "L48"
+community: "GitGuard"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentMonitor
+  - community/GitGuard
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
-- [[Default mode is enforce after v0.8.0 enforcement hardening._1]] - `rationale_for` [EXTRACTED]
-- [[TestSubagentMonitorConfig]] - `method` [EXTRACTED]
+- [[GitGuard]] - `calls` [EXTRACTED]
+- [[TestGitGuardDefaultEnforce]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentMonitor
+#graphify/code #graphify/EXTRACTED #community/GitGuard

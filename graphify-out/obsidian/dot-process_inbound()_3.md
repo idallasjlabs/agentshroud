@@ -1,22 +1,30 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "PipelineAction"
-location: "L482"
+community: "test_e2e_proxy.py"
+location: "L427"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/test_e2e_proxypy
 ---
 
 # .process_inbound()
 
 ## Connections
-- [[dot-_maybe_record_trust_violation()]] - `calls` [EXTRACTED]
-- [[dot-_process_inbound_core()]] - `calls` [EXTRACTED]
-- [[Any_10]] - `references` [EXTRACTED]
-- [[PipelineResult_1]] - `references` [EXTRACTED]
-- [[Process an inbound message through the full security pipeline.          Thin wra]] - `rationale_for` [EXTRACTED]
-- [[SecurityPipeline_2]] - `method` [EXTRACTED]
+- [[_PassInboundPipeline]] - `method` [EXTRACTED]
+- [[test_approval_queue_enforced()]] - `calls` [EXTRACTED]
+- [[test_audit_chain_integrity()]] - `calls` [EXTRACTED]
+- [[test_clean_message_passes()]] - `calls` [EXTRACTED]
+- [[test_inbound_outbound_both_audited()]] - `calls` [EXTRACTED]
+- [[test_kill_switch_freezes()]] - `calls` [EXTRACTED]
+- [[test_mixed_pii_and_injection()]] - `calls` [EXTRACTED]
+- [[test_multiple_prompt_patterns()]] - `calls` [EXTRACTED]
+- [[test_pii_stripped_inbound()]] - `calls` [EXTRACTED]
+- [[test_pipeline_processing_time()]] - `calls` [EXTRACTED]
+- [[test_pipeline_stats()]] - `calls` [EXTRACTED]
+- [[test_prompt_injection_blocked()]] - `calls` [EXTRACTED]
+- [[test_tampered_audit_detected()]] - `calls` [EXTRACTED]
+- [[test_trust_level_enforced()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

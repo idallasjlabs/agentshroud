@@ -12,8 +12,8 @@ tags:
 # .test_build_includes_all_files()
 
 ## Connections
-- [[Path_30]] - `references` [EXTRACTED]
+- [[Path_54]] - `references` [EXTRACTED]
 - [[TestSkillsManifest]] - `method` [EXTRACTED]
-- [[_write_tree()]] - `calls` [EXTRACTED]
+- [[_write_tree()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Path

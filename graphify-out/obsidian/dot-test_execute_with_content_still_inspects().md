@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "MCPToolCall"
+community: "MCPPermissionManager"
 location: "L847"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/MCPPermissionManager
 ---
 
 # .test_execute_with_content_still_inspects()
 
 ## Connections
-- [[MCPToolCall]] - `calls` [EXTRACTED]
+- [[MCPToolCall_1]] - `calls` [EXTRACTED]
 - [[TestExecuteResultInspectionBinding]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPToolCall
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

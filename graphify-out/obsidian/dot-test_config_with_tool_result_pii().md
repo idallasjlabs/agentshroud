@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "DataLedger"
+community: "ToolResultSanitizer"
 location: "L424"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/ToolResultSanitizer
 ---
 
 # .test_config_with_tool_result_pii()
 
 ## Connections
-- [[GatewayConfig_3]] - `calls` [EXTRACTED]
+- [[GatewayConfig_4]] - `calls` [EXTRACTED]
 - [[Test that configuration includes tool result PII settings]] - `rationale_for` [EXTRACTED]
 - [[TestConfigurationLoading]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataLedger
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

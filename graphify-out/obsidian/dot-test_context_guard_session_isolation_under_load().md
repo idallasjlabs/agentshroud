@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L273"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # .test_context_guard_session_isolation_under_load()
@@ -16,4 +16,4 @@ tags:
 - [[Sessions shouldn't leak data under concurrent access.]] - `rationale_for` [EXTRACTED]
 - [[TestConcurrency]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

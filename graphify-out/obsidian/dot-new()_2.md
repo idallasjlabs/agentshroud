@@ -12,7 +12,7 @@ tags:
 # .new()
 
 ## Connections
-- [[dot-ok()_1]] - `calls` [EXTRACTED]
+- [[dot-ok()]] - `calls` [EXTRACTED]
 - [[dot-with()]] - `calls` [EXTRACTED]
 - [[SclClient_1]] - `method` [EXTRACTED]
 - [[Self]] - `references` [EXTRACTED]
@@ -32,7 +32,7 @@ tags:
 - [[deploy_status_errors_when_version_unauthorized()]] - `calls` [EXTRACTED]
 - [[deploy_status_reads_version_endpoint()]] - `calls` [EXTRACTED]
 - [[format_cves()]] - `calls` [EXTRACTED]
-- [[main()_21]] - `calls` [EXTRACTED]
+- [[main()_17]] - `calls` [EXTRACTED]
 - [[render_output_lines()]] - `calls` [EXTRACTED]
 - [[status_errors_on_401()]] - `calls` [EXTRACTED]
 - [[status_errors_when_gateway_down()]] - `calls` [EXTRACTED]

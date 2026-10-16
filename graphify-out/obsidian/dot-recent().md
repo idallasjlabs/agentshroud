@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "logs_recent"
+community: "dashboard_endpoints.py"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/logs_recent
+  - community/dashboard_endpointspy
 ---
 
 # .recent()
 
 ## Connections
 - [[AlertStore]] - `method` [EXTRACTED]
-- [[Any_18]] - `references` [EXTRACTED]
+- [[Any_40]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/logs_recent
+#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy

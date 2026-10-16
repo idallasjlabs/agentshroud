@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "lifespan.py"
-location: "L394"
+community: "DNSBlocklist"
+location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/DNSBlocklist
 ---
 
 # .setup_method()
 
 ## Connections
-- [[MemoryIntegrityMonitor]] - `calls` [EXTRACTED]
-- [[MemoryLifecycleManager]] - `calls` [EXTRACTED]
-- [[MemorySecurityConfig]] - `calls` [EXTRACTED]
-- [[Set up integration test environment.]] - `rationale_for` [EXTRACTED]
-- [[TestMemorySecurityIntegration]] - `method` [EXTRACTED]
+- [[DNSBlocklist]] - `calls` [EXTRACTED]
+- [[TestIsBlocked]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/DNSBlocklist

@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/ingest_api/middleware.py"
+source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L1263"
+community: "OutboundInfoFilter"
+location: "L786"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/OutboundInfoFilter
 ---
 
 # .scan_tool_result()
 
 ## Connections
-- [[MiddlewareManager]] - `method` [EXTRACTED]
-- [[Scan tool result for injection attempts and return sanitized content.          A]] - `rationale_for` [EXTRACTED]
+- [[dot-scan()_4]] - `calls` [EXTRACTED]
+- [[PromptGuard_1]] - `method` [EXTRACTED]
+- [[Scan tool result content for indirect prompt injection.          Tool results (w]] - `rationale_for` [EXTRACTED]
+- [[ScanResult_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

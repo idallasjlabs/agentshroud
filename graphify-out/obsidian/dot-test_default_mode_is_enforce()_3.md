@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_file_sandbox.py"
+source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L44"
+community: "AlertDispatcher"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
-- [[TestFileSandboxConfig]] - `method` [EXTRACTED]
+- [[Default mode is enforce after v0.8.0 enforcement hardening._1]] - `rationale_for` [EXTRACTED]
+- [[TestEgressMonitorConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

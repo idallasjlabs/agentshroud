@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_guard.py"
 type: "code"
-community: "TestSourceTagging"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSourceTagging
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # .test_empty_provenance_for_unknown_session()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSourceTagging]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSourceTagging
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

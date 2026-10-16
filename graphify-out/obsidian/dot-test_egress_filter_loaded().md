@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "EgressPolicy"
+community: "AlertDispatcher"
 location: "L626"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressPolicy
+  - community/AlertDispatcher
 ---
 
 # .test_egress_filter_loaded()
@@ -15,4 +15,4 @@ tags:
 - [[EgressPolicy]] - `calls` [EXTRACTED]
 - [[TestNetworkSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressPolicy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

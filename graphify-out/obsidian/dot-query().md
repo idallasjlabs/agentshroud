@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "ingest_api/models.py"
+community: "DataLedger"
 location: "L206"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/DataLedger
 ---
 
 # .query()
@@ -17,4 +17,4 @@ tags:
 - [[LedgerQueryResponse_1]] - `references` [EXTRACTED]
 - [[Query ledger entries with pagination and filters          Args             page]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/code #graphify/EXTRACTED #community/DataLedger

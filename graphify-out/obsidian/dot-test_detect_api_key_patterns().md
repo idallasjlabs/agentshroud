@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "KeyVault"
+community: "AuditChain"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/AuditChain
 ---
 
 # .test_detect_api_key_patterns()
@@ -17,4 +17,4 @@ tags:
 - [[KeyVaultConfig]] - `calls` [EXTRACTED]
 - [[TestKeyLeakDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/code #graphify/EXTRACTED #community/AuditChain

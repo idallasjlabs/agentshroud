@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "TestKillSwitchVerification"
+community: "KillSwitchMonitor"
 location: "L303"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestKillSwitchVerification
+  - community/KillSwitchMonitor
 ---
 
 # .test_duration_is_non_negative()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_make_monitor()]] - `calls` [EXTRACTED]
 - [[TestKillSwitchVerification]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestKillSwitchVerification
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

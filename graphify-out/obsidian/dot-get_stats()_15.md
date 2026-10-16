@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/approval_hardening.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "ApprovalHardening"
-location: "L472"
+community: "PipelineAction"
+location: "L1658"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/PipelineAction
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_54]] - `references` [EXTRACTED]
-- [[ApprovalHardening]] - `method` [EXTRACTED]
-- [[Get statistics about approval hardening.]] - `rationale_for` [EXTRACTED]
+- [[dot-verify_chain()_1]] - `calls` [EXTRACTED]
+- [[Any_51]] - `references` [EXTRACTED]
+- [[SecurityPipeline_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_dns_blocklist.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TestLoadFromText"
-location: "L101"
+community: "AlertDispatcher"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestLoadFromText
+  - community/AlertDispatcher
 ---
 
 # .setup_method()
 
 ## Connections
-- [[DNSBlocklist]] - `calls` [EXTRACTED]
-- [[TestLoadFromText]] - `method` [EXTRACTED]
+- [[EncryptedStore]] - `calls` [EXTRACTED]
+- [[TestEncryptedStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestLoadFromText
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

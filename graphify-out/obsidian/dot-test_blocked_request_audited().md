@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "TestAuditChain"
+community: "ProxyAction"
 location: "L434"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAuditChain
+  - community/ProxyAction
 ---
 
 # .test_blocked_request_audited()
 
 ## Connections
-- [[TestAuditChain]] - `method` [EXTRACTED]
+- [[TestAuditChain_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAuditChain
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

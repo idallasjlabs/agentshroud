@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/tests/test_output_canary.py"
+source_file: "gateway/tests/test_multilingual_injection.py"
 type: "code"
-community: "TestOutputCanary"
-location: "L20"
+community: "TestMultilingualInjection"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutputCanary
+  - community/TestMultilingualInjection
 ---
 
 # .setup_method()
 
 ## Connections
-- [[CanaryConfig]] - `calls` [EXTRACTED]
-- [[OutputCanary]] - `calls` [EXTRACTED]
-- [[Set up test fixtures._1]] - `rationale_for` [EXTRACTED]
-- [[TestOutputCanary]] - `method` [EXTRACTED]
+- [[PromptGuard_1]] - `calls` [EXTRACTED]
+- [[Set up PromptGuard with standard thresholds.]] - `rationale_for` [EXTRACTED]
+- [[TestMultilingualInjection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutputCanary
+#graphify/code #graphify/EXTRACTED #community/TestMultilingualInjection

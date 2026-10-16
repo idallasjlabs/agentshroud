@@ -12,7 +12,7 @@ tags:
 # .test_egress_filter_allows_in_enforce_mode()
 
 ## Connections
-- [[EgressFilter]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
 - [[EgressFilter in enforce mode allows all four domains for openclaw.]] - `rationale_for` [EXTRACTED]
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[TestOpenClawResearchDomainsAllowlisted]] - `method` [EXTRACTED]

@@ -12,7 +12,7 @@ tags:
 # .test_content_hash_is_deterministic()
 
 ## Connections
-- [[CompetitiveIntelReport_1]] - `calls` [EXTRACTED]
+- [[CompetitiveIntelReport]] - `calls` [EXTRACTED]
 - [[TestIntelReportHashIntegrity]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

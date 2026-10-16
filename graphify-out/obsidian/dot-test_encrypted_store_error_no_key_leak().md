@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "AgentRegistry"
+community: "AlertDispatcher"
 location: "L386"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/AlertDispatcher
 ---
 
 # .test_encrypted_store_error_no_key_leak()
@@ -16,4 +16,4 @@ tags:
 - [[EncryptedStore]] - `calls` [INFERRED]
 - [[TestInfoLeakage]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

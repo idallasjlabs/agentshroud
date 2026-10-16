@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "FakeProcess"
+community: "MCPPermissionManager"
 location: "L131"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FakeProcess
+  - community/MCPPermissionManager
 ---
 
 # .send_request()
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_start_send_and_stop()]] - `calls` [EXTRACTED]
 - [[FakeConn]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FakeProcess
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

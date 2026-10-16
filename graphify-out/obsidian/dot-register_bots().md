@@ -12,7 +12,7 @@ tags:
 # .register_bots()
 
 ## Connections
-- [[AgentTarget_2]] - `calls` [EXTRACTED]
+- [[AgentTarget]] - `calls` [EXTRACTED]
 - [[MultiAgentRouter]] - `method` [EXTRACTED]
 - [[Populate routing targets from the bots registry.          Iterates all BotConfig]] - `rationale_for` [EXTRACTED]
 

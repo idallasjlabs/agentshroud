@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
 community: "TestFromAuditChainEntry"
-location: "L397"
+location: "L361"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # .test_conversion_error_path()
 
 ## Connections
-- [[TestFromPipelineResult]] - `method` [EXTRACTED]
+- [[TestFromAuditChainEntry]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestFromAuditChainEntry

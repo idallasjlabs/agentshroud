@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: ".proxy_messages"
-location: "L788"
+community: "LLMProxy"
+location: "L834"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/proxy_messages
+  - community/LLMProxy
 ---
 
 # .proxy_messages()
@@ -28,9 +28,10 @@ tags:
 - [[dot-_normalize_local_model()]] - `calls` [EXTRACTED]
 - [[dot-_record_failover_event()]] - `calls` [EXTRACTED]
 - [[dot-_scan_request_data()]] - `calls` [EXTRACTED]
+- [[dot-_strip_fieldflare_unsupported_fields()]] - `calls` [EXTRACTED]
 - [[dot-_suppress_qwen3_thinking()]] - `calls` [EXTRACTED]
 - [[dot-_widen_optional_tool_param_types()]] - `calls` [EXTRACTED]
 - [[LLMProxy]] - `method` [EXTRACTED]
 - [[Proxy an LLM API request. Returns (status_code, response_headers,…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/proxy_messages
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

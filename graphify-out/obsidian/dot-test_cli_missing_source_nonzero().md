@@ -12,7 +12,7 @@ tags:
 # .test_cli_missing_source_nonzero()
 
 ## Connections
-- [[Path_44]] - `references` [EXTRACTED]
+- [[Path_28]] - `references` [EXTRACTED]
 - [[TestScanEntrypoint]] - `method` [EXTRACTED]
 - [[_run_scan_cli()]] - `calls` [EXTRACTED]
 

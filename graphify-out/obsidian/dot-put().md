@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_request()]] - `calls` [EXTRACTED]
 - [[dot-set_group_mode()]] - `calls` [EXTRACTED]
-- [[Any_22]] - `references` [EXTRACTED]
+- [[Any_20]] - `references` [EXTRACTED]
 - [[SCLClient]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SCLClient
