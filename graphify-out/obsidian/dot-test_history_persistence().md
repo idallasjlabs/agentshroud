@@ -1,17 +1,19 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 56"
+community: "test_security_toolchain.py"
 location: "L853"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_56
+  - community/test_security_toolchainpy
 ---
 
 # .test_history_persistence()
 
 ## Connections
 - [[TestHealthReport]] - `method` [EXTRACTED]
+- [[generate_report()]] - `calls` [EXTRACTED]
+- [[get_trend()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_56
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

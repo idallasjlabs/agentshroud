@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Community 521"
+community: "BlockingPipeline"
 location: "L341"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_521
+  - community/BlockingPipeline
 ---
 
 # .test_inbound_text_normalized_before_pipeline()
@@ -17,7 +17,7 @@ tags:
 - [[TelegramAPIProxy]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[Zero-width obfuscation should be normalized before pipeline evaluation.]] - `rationale_for` [EXTRACTED]
-- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_521
+#graphify/code #graphify/EXTRACTED #community/BlockingPipeline

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Community 1334"
+community: "TestScoreRuntimeProtection"
 location: "L335"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1334
+  - community/TestScoreRuntimeProtection
 ---
 
 # .test_five_running_zero_findings()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestScoreRuntimeProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1334
+#graphify/code #graphify/EXTRACTED #community/TestScoreRuntimeProtection

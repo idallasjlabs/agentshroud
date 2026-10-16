@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Community 1612"
-location: "L695"
+community: "ForwardRequest"
+location: "L699"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1612
+  - community/ForwardRequest
 ---
 
 # .test_hermes_soul_has_no_refuse_directive()
 
 ## Connections
-- [[Hermes SOUL.md must instruct the agent never to issue a blanket 'cannot…]] - `rationale_for` [EXTRACTED]
+- [[Hermes SOUL.md must instruct the agent never to issue a blanket 'cannot connect']] - `rationale_for` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1612
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

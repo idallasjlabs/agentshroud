@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Community 335"
+community: "Role"
 location: "L276"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_335
+  - community/Role
 ---
 
 # .test_per_minute_limit_exceeded_blocks()
@@ -15,4 +15,4 @@ tags:
 - [[Exceeding per-minute limit should return False.]] - `rationale_for` [EXTRACTED]
 - [[TestToolRateLimiting]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_335
+#graphify/code #graphify/EXTRACTED #community/Role

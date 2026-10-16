@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 56"
+community: "test_security_toolchain.py"
 location: "L688"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_56
+  - community/test_security_toolchainpy
 ---
 
 # .test_level_to_severity()
 
 ## Connections
 - [[TestWazuhParser]] - `method` [EXTRACTED]
+- [[level_to_severity()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_56
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

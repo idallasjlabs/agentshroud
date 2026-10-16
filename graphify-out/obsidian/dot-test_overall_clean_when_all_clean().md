@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Community 73"
+community: "test_scanner_integration.py"
 location: "L527"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_73
+  - community/test_scanner_integrationpy
 ---
 
 # .test_overall_clean_when_all_clean()
@@ -20,4 +20,4 @@ tags:
 - [[_wazuh_clean()]] - `calls` [EXTRACTED]
 - [[aggregate_results()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_73
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "File Sandbox & Privilege Separation Tests"
-location: "L583"
+community: "MiddlewareManager"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/File_Sandbox__Privilege_Separation_Tests
+  - community/MiddlewareManager
 ---
 
 # .test_monitor_mode_allows_everything()
 
 ## Connections
-- [[Monitor mode flags but allows — verify difference from enforce.]] - `rationale_for` [EXTRACTED]
-- [[TestFileSandbox]] - `method` [EXTRACTED]
+- [[Even blocked paths are allowed in monitor mode (just flagged).]] - `rationale_for` [EXTRACTED]
+- [[FileSandbox]] - `calls` [EXTRACTED]
+- [[FileSandboxConfig]] - `calls` [EXTRACTED]
+- [[TestNormalFileOperations]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

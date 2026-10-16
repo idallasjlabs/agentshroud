@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Cross-Bot Trust & A2A Governance"
+community: "AgentRegistry"
 location: "L890"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/AgentRegistry
 ---
 
 # .test_rate_limiting_prevents_rapid_escalation()
@@ -17,4 +17,4 @@ tags:
 - [[TrustConfig]] - `calls` [EXTRACTED]
 - [[TrustManager]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

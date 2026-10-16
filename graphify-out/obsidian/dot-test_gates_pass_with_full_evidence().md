@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 1485"
+community: "TestMandatoryGates"
 location: "L1052"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1485
+  - community/TestMandatoryGates
 ---
 
 # .test_gates_pass_with_full_evidence()
@@ -15,4 +15,4 @@ tags:
 - [[TestMandatoryGates]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1485
+#graphify/code #graphify/EXTRACTED #community/TestMandatoryGates

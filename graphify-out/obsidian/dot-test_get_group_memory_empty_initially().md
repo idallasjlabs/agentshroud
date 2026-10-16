@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "Community 41"
+community: "test_shared_memory.py"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_41
+  - community/test_shared_memorypy
 ---
 
 # .test_get_group_memory_empty_initially()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGroupMemoryReadWrite]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_41
+#graphify/code #graphify/EXTRACTED #community/test_shared_memorypy

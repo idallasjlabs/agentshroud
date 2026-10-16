@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "Community 53"
+community: "RBACConfig"
 location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_53
+  - community/RBACConfig
 ---
 
 # .test_group_a_write_invisible_from_group_b()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCrossGroupIsolation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_53
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

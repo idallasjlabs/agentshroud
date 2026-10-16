@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Community 1601"
+community: "ForwardRequest"
 location: "L490"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1601
+  - community/ForwardRequest
 ---
 
 # .test_hermes_dashboard_insecure_optin_is_loopback_bounded()
 
 ## Connections
-- [[HERMES_DASHBOARD_INSECURE may only be enabled with a loopback-only host…]] - `rationale_for` [EXTRACTED]
+- [[HERMES_DASHBOARD_INSECURE may only be enabled with a loopback-only host publish.]] - `rationale_for` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1601
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

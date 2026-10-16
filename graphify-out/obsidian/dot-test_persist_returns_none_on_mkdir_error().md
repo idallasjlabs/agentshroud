@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Community 342"
+community: "TestCollaboratorPersistence"
 location: "L685"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_342
+  - community/TestCollaboratorPersistence
 ---
 
 # .test_persist_returns_none_on_mkdir_error()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_store_path()]] - `calls` [EXTRACTED]
 - [[TestCollaboratorPersistence]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_342
+#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPersistence

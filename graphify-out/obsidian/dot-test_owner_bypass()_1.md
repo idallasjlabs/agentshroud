@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Ingest Middleware & File Sandbox"
-location: "L440"
+community: "_req"
+location: "L555"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_Middleware__File_Sandbox
+  - community/_req
 ---
 
 # .test_owner_bypass()
 
 ## Connections
-- [[TestContextGuard_1]] - `method` [EXTRACTED]
-- [[_FakeRBAC_2]] - `calls` [EXTRACTED]
-- [[_req()]] - `calls` [EXTRACTED]
+- [[TestGitGuard]] - `method` [EXTRACTED]
+- [[_FakeRBAC_1]] - `calls` [EXTRACTED]
+- [[_req()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox
+#graphify/code #graphify/EXTRACTED #community/_req

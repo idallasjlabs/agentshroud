@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agentshroud_manager.py"
 type: "code"
-community: "Community 55"
+community: "upgrade"
 location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_55
+  - community/upgrade
 ---
 
 # .test_plain_text_unchanged()
@@ -15,4 +15,4 @@ tags:
 - [[TestMaskCredentials]] - `method` [EXTRACTED]
 - [[mask_credentials()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_55
+#graphify/code #graphify/EXTRACTED #community/upgrade

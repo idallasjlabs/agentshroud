@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_contributors.py"
 type: "code"
-community: "Community 226"
+community: "_FakeRBAC"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_226
+  - community/_FakeRBAC
 ---
 
 # .test_list_contributors_populates_paused_per_user()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[ContributorManager]] - `calls` [EXTRACTED]
 - [[TestPausedFieldWiring]] - `method` [EXTRACTED]
-- [[_FakeRBAC_1]] - `calls` [EXTRACTED]
+- [[_FakeRBAC_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_226
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

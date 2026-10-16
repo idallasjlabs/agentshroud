@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Community 82"
-location: "L1299"
+community: "test_daily_cve_report.py"
+location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_82
+  - community/test_daily_cve_reportpy
 ---
 
 # .test_returns_false_when_file_missing()
 
 ## Connections
-- [[TestAlreadyIngestedGhsaToday]] - `method` [EXTRACTED]
+- [[TestAlreadySentToday]] - `method` [EXTRACTED]
+- [[_already_sent_today()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_82
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

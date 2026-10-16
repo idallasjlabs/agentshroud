@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "Session Manager & PII/Context Guard"
+community: "AlertDispatcher"
 location: "L429"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Manager__PII/Context_Guard
+  - community/AlertDispatcher
 ---
 
 # .test_log_sanitizer_covers_stack_traces()
@@ -15,4 +15,4 @@ tags:
 - [[Stack traces containing secrets should be sanitized.]] - `rationale_for` [EXTRACTED]
 - [[TestInfoLeakage]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

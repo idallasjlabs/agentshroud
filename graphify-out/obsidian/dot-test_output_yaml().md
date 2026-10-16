@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "Community 84"
+community: "cli/main.py"
 location: "L313"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_84
+  - community/cli/mainpy
 ---
 
 # .test_output_yaml()
@@ -15,4 +15,4 @@ tags:
 - [[TestOutputHelpers]] - `method` [EXTRACTED]
 - [[_output()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_84
+#graphify/code #graphify/EXTRACTED #community/cli/mainpy

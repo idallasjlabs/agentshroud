@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Community 1410"
+community: "TestScoreNetworkSegmentation"
 location: "L396"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1410
+  - community/TestScoreNetworkSegmentation
 ---
 
 # .test_five_with_icc_disabled_and_validator()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestScoreNetworkSegmentation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1410
+#graphify/code #graphify/EXTRACTED #community/TestScoreNetworkSegmentation

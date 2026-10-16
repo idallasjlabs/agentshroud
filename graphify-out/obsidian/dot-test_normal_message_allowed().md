@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_guard.py"
 type: "code"
-community: "Session Manager & PII/Context Guard"
+community: "check_message"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Manager__PII/Context_Guard
+  - community/check_message
 ---
 
 # .test_normal_message_allowed()
@@ -15,4 +15,4 @@ tags:
 - [[TestCheckMessage]] - `method` [EXTRACTED]
 - [[check_message()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard
+#graphify/code #graphify/EXTRACTED #community/check_message

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Community 518"
+community: "get_trivy_summary"
 location: "L454"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_518
+  - community/get_trivy_summary
 ---
 
 # .test_returns_latest_sbom()
@@ -15,4 +15,4 @@ tags:
 - [[TestGetSbom_1]] - `method` [EXTRACTED]
 - [[get_sbom()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_518
+#graphify/code #graphify/EXTRACTED #community/get_trivy_summary

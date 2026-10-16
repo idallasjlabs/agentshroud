@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Community 134"
+community: "Role"
 location: "L156"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_134
+  - community/Role
 ---
 
 # .test_group_allowlist_grants_extra_tool()
 
 ## Connections
-- [[TeamsConfig]] - `calls` [EXTRACTED]
+- [[TeamsConfig_2]] - `calls` [EXTRACTED]
 - [[TestGroupToolAllowlist]] - `method` [EXTRACTED]
 - [[ToolACLConfig]] - `calls` [EXTRACTED]
 - [[ToolACLEnforcer]] - `calls` [EXTRACTED]
-- [[_make_rbac()]] - `calls` [EXTRACTED]
+- [[_make_rbac()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_134
+#graphify/code #graphify/EXTRACTED #community/Role

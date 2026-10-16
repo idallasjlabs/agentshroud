@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Community 140"
+community: "TestNormalizeForSpeech"
 location: "L238"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_140
+  - community/TestNormalizeForSpeech
 ---
 
 # .test_italic_star_stripped()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_n()]] - `calls` [EXTRACTED]
 - [[TestNormalizeForSpeech]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_140
+#graphify/code #graphify/EXTRACTED #community/TestNormalizeForSpeech

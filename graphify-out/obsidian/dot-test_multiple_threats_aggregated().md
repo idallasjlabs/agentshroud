@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "Voice Gateway STT & Browser Security"
+community: "ThreatAssessment"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/ThreatAssessment
 ---
 
 # .test_multiple_threats_aggregated()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSocialEngineeringDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security
+#graphify/code #graphify/EXTRACTED #community/ThreatAssessment

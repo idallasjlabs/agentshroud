@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "code"
-community: "Community 90"
+community: "CronStateMonitor"
 location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/CronStateMonitor
 ---
 
 # .test_missing_file_returns_empty()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestParsing]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_90
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

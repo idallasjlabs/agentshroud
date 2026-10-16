@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Community 1584"
+community: "ForwardRequest"
 location: "L203"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1584
+  - community/ForwardRequest
 ---
 
 # .test_openclaw_patch_script_removes_legacy_gateway_model_key()
@@ -15,4 +15,4 @@ tags:
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 - [[openclaw init patch script must remove unsupported gateway.model key.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1584
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

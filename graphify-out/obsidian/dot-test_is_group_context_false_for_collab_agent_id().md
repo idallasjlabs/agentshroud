@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "code"
-community: "Community 95"
+community: "GroupApprovalRouter"
 location: "L226"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_95
+  - community/GroupApprovalRouter
 ---
 
 # .test_is_group_context_false_for_collab_agent_id()
@@ -16,4 +16,4 @@ tags:
 - [[TestGroupApprovalRouterContextDetection]] - `method` [EXTRACTED]
 - [[agent_id starting with 'collab-' is NOT recognized as group context.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_95
+#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter

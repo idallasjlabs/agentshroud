@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Community 518"
+community: "get_trivy_summary"
 location: "L442"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_518
+  - community/get_trivy_summary
 ---
 
 # .test_returns_none_when_no_dir()
 
 ## Connections
-- [[Path_27]] - `calls` [EXTRACTED]
+- [[Path_41]] - `calls` [EXTRACTED]
 - [[TestGetSbom_1]] - `method` [EXTRACTED]
 - [[get_sbom()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_518
+#graphify/code #graphify/EXTRACTED #community/get_trivy_summary

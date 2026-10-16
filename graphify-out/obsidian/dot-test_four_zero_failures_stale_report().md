@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Community 969"
+community: "_mock_dir_with_fresh_files"
 location: "L486"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_969
+  - community/_mock_dir_with_fresh_files
 ---
 
 # .test_four_zero_failures_stale_report()
 
 ## Connections
-- [[TestScoreComplianceAuditing_1]] - `method` [EXTRACTED]
+- [[TestScoreComplianceAuditing]] - `method` [EXTRACTED]
 - [[_mock_dir_with_files()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_969
+#graphify/code #graphify/EXTRACTED #community/_mock_dir_with_fresh_files

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Community 40"
+community: "TestCollaboratorPromptClassifiers"
 location: "L7252"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_40
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # .test_looks_like_guardrail_modification_request_ignores_self_mod_policy_question()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCollaboratorPromptClassifiers]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_40
+#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

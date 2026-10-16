@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "Community 1335"
+community: "UserSessionManager"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1335
+  - community/UserSessionManager
 ---
 
 # .test_path_traversal_rejected()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestInputValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1335
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

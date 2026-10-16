@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 1753"
+community: "TelegramAPIProxy"
 location: "L766"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1753
+  - community/TelegramAPIProxy
 ---
 
 # .test_llm_timeout_error_is_sanitized()
 
 ## Connections
 - [[Raw timeout errors should be rewritten to deterministic retry guidance.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1753
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

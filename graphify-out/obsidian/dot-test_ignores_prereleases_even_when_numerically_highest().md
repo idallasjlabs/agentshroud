@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "Community 641"
-location: "L66"
+community: "pick_latest_stable"
+location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_641
+  - community/pick_latest_stable
 ---
 
 # .test_ignores_prereleases_even_when_numerically_highest()
@@ -15,4 +15,4 @@ tags:
 - [[TestPickLatestStable]] - `method` [EXTRACTED]
 - [[pick_latest_stable()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_641
+#graphify/code #graphify/EXTRACTED #community/pick_latest_stable

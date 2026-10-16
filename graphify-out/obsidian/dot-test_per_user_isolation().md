@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Community 335"
+community: "Role"
 location: "L284"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_335
+  - community/Role
 ---
 
 # .test_per_user_isolation()
@@ -15,4 +15,4 @@ tags:
 - [[Rate limits are tracked independently per user.]] - `rationale_for` [EXTRACTED]
 - [[TestToolRateLimiting]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_335
+#graphify/code #graphify/EXTRACTED #community/Role

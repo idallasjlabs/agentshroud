@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auto_remediate_cves.py"
 type: "code"
-community: "Community 195"
-location: "L157"
+community: "plan_remediation"
+location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_195
+  - community/plan_remediation
 ---
 
 # .test_read_pin_returns_the_pinned_value()
@@ -15,4 +15,4 @@ tags:
 - [[TestVersionPinIO]] - `method` [EXTRACTED]
 - [[read_pin()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_195
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

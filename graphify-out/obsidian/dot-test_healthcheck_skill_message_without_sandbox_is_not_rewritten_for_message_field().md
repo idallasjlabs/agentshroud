@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 1692"
+community: "TelegramAPIProxy"
 location: "L1604"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1692
+  - community/TelegramAPIProxy
 ---
 
 # .test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_message_field()
 
 ## Connections
 - [[JSON message field should keep healthcheck SKILL.md text unchanged when sandbox]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1692
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

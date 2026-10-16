@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 47"
+community: "parse_clamscan_output"
 location: "L532"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_47
+  - community/parse_clamscan_output
 ---
 
 # .test_run_not_found()
 
 ## Connections
 - [[TestClamAVRun]] - `method` [EXTRACTED]
-- [[patch]] - `references` [EXTRACTED]
+- [[run_clamscan()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_47
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

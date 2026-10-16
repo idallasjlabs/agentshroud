@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_intel_pipeline.py"
 type: "code"
-community: "Community 125"
+community: "CompetitiveIntelReport"
 location: "L270"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_125
+  - community/CompetitiveIntelReport
 ---
 
 # .test_integrity_check_fails_for_tampered_file()
 
 ## Connections
 - [[dot-_make_report()]] - `calls` [EXTRACTED]
-- [[IntelReportStore]] - `references` [EXTRACTED]
-- [[Path_8]] - `references` [EXTRACTED]
+- [[IntelReportStore_1]] - `references` [EXTRACTED]
+- [[Path_48]] - `references` [EXTRACTED]
 - [[TestIntelReportStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_125
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

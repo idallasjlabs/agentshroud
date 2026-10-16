@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Community 40"
+community: "TestCollaboratorPromptClassifiers"
 location: "L7622"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_40
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # .test_local_whoami_collaborator_uses_unavailable_fallback_on_send_failure()
@@ -16,4 +16,4 @@ tags:
 - [[TelegramAPIProxy]] - `calls` [EXTRACTED]
 - [[TestCollaboratorPromptClassifiers]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_40
+#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

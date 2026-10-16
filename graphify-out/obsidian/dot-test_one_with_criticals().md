@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Community 1177"
+community: "TestScoreVulnerabilityManagement"
 location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1177
+  - community/TestScoreVulnerabilityManagement
 ---
 
 # .test_one_with_criticals()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestScoreVulnerabilityManagement]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1177
+#graphify/code #graphify/EXTRACTED #community/TestScoreVulnerabilityManagement

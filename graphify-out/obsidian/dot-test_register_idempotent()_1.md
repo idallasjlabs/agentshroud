@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_trust_manager.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Cross-Bot Trust & A2A Governance"
-location: "L91"
+community: "AgentRegistry"
+location: "L291"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/AgentRegistry
 ---
 
 # .test_register_idempotent()
 
 ## Connections
-- [[TestAgentRegistration]] - `method` [EXTRACTED]
+- [[TestTrustManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

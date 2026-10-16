@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "Community 114"
+community: "SkillGuard"
 location: "L317"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_114
+  - community/SkillGuard
 ---
 
 # .test_line_at_out_of_range_returns_empty()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAggregation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_114
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Community 191"
+community: "test_scorecard_integrity.py"
 location: "L652"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_191
+  - community/test_scorecard_integritypy
 ---
 
 # .test_initial_when_has_criticals()
@@ -16,4 +16,4 @@ tags:
 - [[_score_vulnerability_management()]] - `calls` [EXTRACTED]
 - [[_trivy_critical()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_191
+#graphify/code #graphify/EXTRACTED #community/test_scorecard_integritypy

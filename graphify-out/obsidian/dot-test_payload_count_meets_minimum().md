@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "Community 43"
+community: "HeuristicClassifier"
 location: "L404"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/HeuristicClassifier
 ---
 
 # .test_payload_count_meets_minimum()
@@ -15,4 +15,4 @@ tags:
 - [[Ensure the payload library stays above 100 entries (CI regression gate).]] - `rationale_for` [EXTRACTED]
 - [[TestOverallDetectionRate]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

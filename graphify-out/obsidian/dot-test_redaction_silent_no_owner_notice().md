@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 85"
+community: "test_telegram_proxy_outbound.py"
 location: "L4716"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_85
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # .test_redaction_silent_no_owner_notice()
 
 ## Connections
-- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestEgressBannerRedactionNoOwnerNotice]] - `method` [EXTRACTED]
 - [[When outbound text matches the banner, text is replaced but owner is NOT notifie]] - `rationale_for` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_85
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

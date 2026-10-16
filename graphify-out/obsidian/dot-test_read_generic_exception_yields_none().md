@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "Community 232"
+community: "CredentialValidator"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_232
+  - community/CredentialValidator
 ---
 
 # .test_read_generic_exception_yields_none()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestReadFrom1Password]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_232
+#graphify/code #graphify/EXTRACTED #community/CredentialValidator

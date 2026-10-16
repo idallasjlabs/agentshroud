@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Community 666"
+community: "TestFileDownload"
 location: "L8657"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_666
+  - community/TestFileDownload
 ---
 
 # .test_proxy_request_file_prefix_returns_binary_sentinel()
@@ -16,4 +16,4 @@ tags:
 - [[TestFileDownload]] - `method` [EXTRACTED]
 - [[proxy_request with path_prefix='file' returns _raw_body sentinel (no JSON parse]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_666
+#graphify/code #graphify/EXTRACTED #community/TestFileDownload

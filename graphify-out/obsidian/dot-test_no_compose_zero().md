@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 1405"
+community: "TestResourceAvailability"
 location: "L748"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1405
+  - community/TestResourceAvailability
 ---
 
 # .test_no_compose_zero()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestResourceAvailability]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1405
+#graphify/code #graphify/EXTRACTED #community/TestResourceAvailability

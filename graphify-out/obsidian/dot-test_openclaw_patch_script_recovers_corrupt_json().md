@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Community 1583"
+community: "ForwardRequest"
 location: "L193"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1583
+  - community/ForwardRequest
 ---
 
 # .test_openclaw_patch_script_recovers_corrupt_json()
@@ -15,4 +15,4 @@ tags:
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 - [[openclaw init patch script must quarantine malformed JSON instead of exiting.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1583
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

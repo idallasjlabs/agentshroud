@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 1484"
+community: "TestIdentityAuth"
 location: "L716"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1484
+  - community/TestIdentityAuth
 ---
 
 # .test_missing_auth_module_zero()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestIdentityAuth]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1484
+#graphify/code #graphify/EXTRACTED #community/TestIdentityAuth

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "Community 154"
+community: "SCLClient"
 location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_154
+  - community/SCLClient
 ---
 
 # .test_get_with_params_encodes_query_string()
@@ -16,4 +16,4 @@ tags:
 - [[TestSCLClientRequest]] - `method` [EXTRACTED]
 - [[_patch_urlopen()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_154
+#graphify/code #graphify/EXTRACTED #community/SCLClient

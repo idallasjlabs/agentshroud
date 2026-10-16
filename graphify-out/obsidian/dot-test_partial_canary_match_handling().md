@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "code"
-community: "Community 213"
+community: "TestOutputCanary"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_213
+  - community/TestOutputCanary
 ---
 
 # .test_partial_canary_match_handling()
 
 ## Connections
-- [[CanaryConfig_1]] - `calls` [EXTRACTED]
+- [[CanaryConfig]] - `calls` [EXTRACTED]
 - [[OutputCanary]] - `calls` [EXTRACTED]
 - [[Test handling of partial canary matches.]] - `rationale_for` [EXTRACTED]
 - [[TestOutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_213
+#graphify/code #graphify/EXTRACTED #community/TestOutputCanary

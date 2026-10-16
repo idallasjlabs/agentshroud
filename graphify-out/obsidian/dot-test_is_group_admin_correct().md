@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "Teams/Group Collaborator Responses"
+community: "GroupConfig"
 location: "L130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Teams/Group_Collaborator_Responses
+  - community/GroupConfig
 ---
 
 # .test_is_group_admin_correct()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAdminChecks]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses
+#graphify/code #graphify/EXTRACTED #community/GroupConfig

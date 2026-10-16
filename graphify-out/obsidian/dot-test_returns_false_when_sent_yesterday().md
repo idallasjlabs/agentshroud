@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Community 124"
+community: "test_daily_cve_report.py"
 location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_124
+  - community/test_daily_cve_reportpy
 ---
 
 # .test_returns_false_when_sent_yesterday()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAlreadySentToday]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_124
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

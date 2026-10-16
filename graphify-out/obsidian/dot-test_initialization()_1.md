@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_multi_turn_tracker.py"
+source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "Community 1672"
-location: "L45"
+community: "TestPathIsolationManager"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1672
+  - community/TestPathIsolationManager
 ---
 
 # .test_initialization()
 
 ## Connections
-- [[Test proper initialization of MultiTurnTracker.]] - `rationale_for` [EXTRACTED]
-- [[TestMultiTurnTracker]] - `method` [EXTRACTED]
+- [[Test manager initialization.]] - `rationale_for` [EXTRACTED]
+- [[TestPathIsolationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1672
+#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager

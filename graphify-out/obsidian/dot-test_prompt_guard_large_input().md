@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Prompt Guard & Context Integrity"
+community: "ResourceGuard"
 location: "L1079"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Prompt_Guard__Context_Integrity
+  - community/ResourceGuard
 ---
 
 # .test_prompt_guard_large_input()
@@ -16,4 +16,4 @@ tags:
 - [[PromptGuard]] - `calls` [EXTRACTED]
 - [[TestResourceProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Prompt_Guard__Context_Integrity
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

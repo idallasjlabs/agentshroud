@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Community 1176"
+community: "TestScoreMalwareDefense"
 location: "L370"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1176
+  - community/TestScoreMalwareDefense
 ---
 
 # .test_five_scanned_and_fresh()
@@ -15,4 +15,4 @@ tags:
 - [[TestScoreMalwareDefense]] - `method` [EXTRACTED]
 - [[_mock_dir_with_fresh_files()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1176
+#graphify/code #graphify/EXTRACTED #community/TestScoreMalwareDefense

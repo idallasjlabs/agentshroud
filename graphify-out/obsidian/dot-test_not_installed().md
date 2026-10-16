@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 1332"
+community: "TestWazuhSummary"
 location: "L405"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1332
+  - community/TestWazuhSummary
 ---
 
 # .test_not_installed()
 
 ## Connections
-- [[TestWazuhSummary_1]] - `method` [EXTRACTED]
+- [[TestWazuhSummary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1332
+#graphify/code #graphify/EXTRACTED #community/TestWazuhSummary

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "Community 1083"
+community: "TestOutputTrustScoring"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1083
+  - community/TestOutputTrustScoring
 ---
 
 # .test_injection_detected()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOutputTrustScoring]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1083
+#graphify/code #graphify/EXTRACTED #community/TestOutputTrustScoring

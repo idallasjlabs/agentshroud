@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Community 275"
+community: "Path"
 location: "L1071"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_275
+  - community/Path
 ---
 
 # .test_returns_empty_list_when_dir_missing()
 
 ## Connections
-- [[Path_27]] - `calls` [EXTRACTED]
+- [[Path_41]] - `calls` [EXTRACTED]
 - [[TestGetTrivyImageSummaries]] - `method` [EXTRACTED]
 - [[get_trivy_image_summaries()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_275
+#graphify/code #graphify/EXTRACTED #community/Path

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_metadata_guard.py"
 type: "code"
-community: "Community 598"
+community: "TestDocumentTagging"
 location: "L216"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_598
+  - community/TestDocumentTagging
 ---
 
 # .test_get_document_tag_unknown_hash_returns_none()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDocumentTagging]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_598
+#graphify/code #graphify/EXTRACTED #community/TestDocumentTagging

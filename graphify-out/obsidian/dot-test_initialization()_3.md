@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_path_isolation.py"
+source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "Community 192"
-location: "L73"
+community: "TestToolChainAnalyzer"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_192
+  - community/TestToolChainAnalyzer
 ---
 
 # .test_initialization()
 
 ## Connections
-- [[Test manager initialization.]] - `rationale_for` [EXTRACTED]
-- [[TestPathIsolationManager]] - `method` [EXTRACTED]
+- [[Test proper initialization of ToolChainAnalyzer.]] - `rationale_for` [EXTRACTED]
+- [[TestToolChainAnalyzer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_192
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

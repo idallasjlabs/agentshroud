@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "Community 641"
-location: "L70"
+community: "pick_latest_stable"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_641
+  - community/pick_latest_stable
 ---
 
 # .test_real_openclaw_tail_picks_2026_9_4()
@@ -16,4 +16,4 @@ tags:
 - [[The actual npm tail as of 2026-09-15.]] - `rationale_for` [EXTRACTED]
 - [[pick_latest_stable()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_641
+#graphify/code #graphify/EXTRACTED #community/pick_latest_stable

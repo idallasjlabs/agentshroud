@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_permissions.py"
+source_file: "chatbot/test_main.py"
 type: "code"
-community: "Community 89"
-location: "L398"
+community: "chatbot/main.py"
+location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_89
+  - community/chatbot/mainpy
 ---
 
 # .test_rate_limit_enforced()
 
 ## Connections
-- [[TestRateLimiting_4]] - `method` [EXTRACTED]
+- [[Exceeding the rate limit returns 429.]] - `rationale_for` [EXTRACTED]
+- [[TestRateLimit]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_89
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

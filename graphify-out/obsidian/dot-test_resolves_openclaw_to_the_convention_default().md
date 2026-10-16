@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "Community 863"
+community: "_get_engine"
 location: "L546"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_863
+  - community/_get_engine
 ---
 
 # .test_resolves_openclaw_to_the_convention_default()
@@ -15,4 +15,4 @@ tags:
 - [[TestResolveBotContainer]] - `method` [EXTRACTED]
 - [[_resolve_bot_container()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_863
+#graphify/code #graphify/EXTRACTED #community/_get_engine

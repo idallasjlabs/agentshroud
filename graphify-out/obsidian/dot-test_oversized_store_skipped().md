@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "code"
-community: "Community 90"
+community: "CronStateMonitor"
 location: "L219"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/CronStateMonitor
 ---
 
 # .test_oversized_store_skipped()
@@ -16,4 +16,4 @@ tags:
 - [[TestAdversarial]] - `method` [EXTRACTED]
 - [[_DispatchSpy]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_90
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

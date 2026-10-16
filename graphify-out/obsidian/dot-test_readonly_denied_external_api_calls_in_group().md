@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "Community 714"
+community: "GroupRoleResolver"
 location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_714
+  - community/GroupRoleResolver
 ---
 
 # .test_readonly_denied_external_api_calls_in_group()
@@ -15,4 +15,4 @@ tags:
 - [[Read-only member denied external_api_calls in group context.]] - `rationale_for` [EXTRACTED]
 - [[TestReadOnlyMemberGroupContext]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_714
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

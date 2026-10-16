@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "Approval Routing & Event Bus"
+community: "load_config"
 location: "L318"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/load_config
 ---
 
 # .test_proxy_allowed_domains_parsed_from_yaml()
@@ -16,4 +16,4 @@ tags:
 - [[load_config()]] - `calls` [EXTRACTED]
 - [[proxy_allowed_domains is populated from the proxy.allowed_domains YAML section.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/EXTRACTED #community/load_config

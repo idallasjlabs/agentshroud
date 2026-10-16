@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Community 42"
+community: "test_observatory_mode.py"
 location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_42
+  - community/test_observatory_modepy
 ---
 
 # .test_revert_task_created_on_put()
@@ -16,6 +16,6 @@ tags:
 - [[ModeRequest]] - `calls` [EXTRACTED]
 - [[TestAutoRevert]] - `method` [EXTRACTED]
 - [[_make_app()]] - `calls` [EXTRACTED]
-- [[set_mode()]] - `calls` [EXTRACTED]
+- [[set_mode()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_42
+#graphify/code #graphify/EXTRACTED #community/test_observatory_modepy

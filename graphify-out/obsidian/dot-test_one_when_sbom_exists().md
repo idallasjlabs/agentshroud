@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Community 73"
+community: "test_scanner_integration.py"
 location: "L628"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_73
+  - community/test_scanner_integrationpy
 ---
 
 # .test_one_when_sbom_exists()
 
 ## Connections
-- [[TestScoreImageIntegrity_1]] - `method` [EXTRACTED]
+- [[TestScoreImageIntegrity]] - `method` [EXTRACTED]
 - [[_score_image_integrity()]] - `calls` [EXTRACTED]
 - [[_trivy_not_run()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_73
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

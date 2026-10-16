@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "Approval Queue (WebSocket)"
+community: "SSHHostConfig"
 location: "L410"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_WebSocket
+  - community/SSHHostConfig
 ---
 
 # .test_non_auto_approved_executes_directly()
@@ -16,4 +16,4 @@ tags:
 - [[TestSSHRequireApprovalFalse]] - `method` [EXTRACTED]
 - [[When require_approval=false, non-auto-approved commands execute directly.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_WebSocket
+#graphify/code #graphify/EXTRACTED #community/SSHHostConfig

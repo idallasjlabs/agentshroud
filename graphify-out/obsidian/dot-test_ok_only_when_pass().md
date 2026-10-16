@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "Community 497"
+community: "MultiHostResult"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_497
+  - community/MultiHostResult
 ---
 
 # .test_ok_only_when_pass()
@@ -15,4 +15,4 @@ tags:
 - [[HostResult]] - `calls` [EXTRACTED]
 - [[TestHostResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_497
+#graphify/code #graphify/EXTRACTED #community/MultiHostResult

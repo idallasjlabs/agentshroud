@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Community 100"
-location: "L490"
+community: "test_main_endpoints.py"
+location: "L607"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_100
+  - community/test_main_endpointspy
 ---
 
 # .test_openscap_default_profile_passes_regex()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestScanParameterAllowlists]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_100
+#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy

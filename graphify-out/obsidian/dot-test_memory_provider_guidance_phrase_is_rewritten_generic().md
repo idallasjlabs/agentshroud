@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 85"
+community: "TelegramAPIProxy"
 location: "L929"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_85
+  - community/TelegramAPIProxy
 ---
 
 # .test_memory_provider_guidance_phrase_is_rewritten_generic()
 
 ## Connections
 - [[Memory guidance mentioning agents.defaults.memorySearch.provider should normaliz]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_85
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

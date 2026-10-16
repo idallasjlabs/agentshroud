@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "Community 1464"
+community: "TrustConfig"
 location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1464
+  - community/TrustConfig
 ---
 
 # .test_mapping_is_bijective_and_total()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEnumMapping]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1464
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

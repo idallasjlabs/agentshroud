@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "Community 891"
-location: "L121"
+community: "discover_upstream_versions.py"
+location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_891
+  - community/discover_upstream_versionspy
 ---
 
 # .test_real_hermes_tail_picks_latest_date()
@@ -15,4 +15,4 @@ tags:
 - [[TestPickLatestHermesTag]] - `method` [EXTRACTED]
 - [[pick_latest_hermes_tag()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_891
+#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy

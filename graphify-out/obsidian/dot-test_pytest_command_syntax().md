@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "code"
-community: "Community 118"
+community: "test_docs_accuracy.py"
 location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_118
+  - community/test_docs_accuracypy
 ---
 
 # .test_pytest_command_syntax()
@@ -15,4 +15,4 @@ tags:
 - [[TestContributingMdAccuracy]] - `method` [EXTRACTED]
 - [[The test command in CONTRIBUTING.md should be valid.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_118
+#graphify/code #graphify/EXTRACTED #community/test_docs_accuracypy

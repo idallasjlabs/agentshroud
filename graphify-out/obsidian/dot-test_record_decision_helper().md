@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_module_stats.py"
 type: "code"
-community: "Community 137"
+community: "ModuleStatsCollector"
 location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_137
+  - community/ModuleStatsCollector
 ---
 
 # .test_record_decision_helper()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TestEnforcementWiring]] - `method` [EXTRACTED]
 - [[get_collector()]] - `calls` [EXTRACTED]
-- [[record_decision]] - `calls` [EXTRACTED]
+- [[record_decision()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_137
+#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector

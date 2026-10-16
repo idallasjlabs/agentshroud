@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "Community 909"
+community: "RBACConfig"
 location: "L171"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_909
+  - community/RBACConfig
 ---
 
 # .test_merged_memory_separates_group_and_dm()
@@ -15,4 +15,4 @@ tags:
 - [[TestGroupMemoryInvisibleFromDM]] - `method` [EXTRACTED]
 - [[get_merged_memory_for_user returns group section and private section separately.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_909
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

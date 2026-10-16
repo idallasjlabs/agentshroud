@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "Community 235"
+community: "TestEmailSend"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_235
+  - community/TestEmailSend
 ---
 
 # .test_response_has_status_field()
@@ -15,4 +15,4 @@ tags:
 - [[Response always includes a 'status' field.]] - `rationale_for` [EXTRACTED]
 - [[TestTelegramWebhook]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_235
+#graphify/code #graphify/EXTRACTED #community/TestEmailSend

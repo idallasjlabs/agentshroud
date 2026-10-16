@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 1690"
+community: "TelegramAPIProxy"
 location: "L1518"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1690
+  - community/TelegramAPIProxy
 ---
 
 # .test_memory_provider_error_hyphen_variant_is_rewritten_for_form_payload()
 
 ## Connections
 - [[Hyphen-separated embedding-provider wording should rewrite for form payloads.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1690
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

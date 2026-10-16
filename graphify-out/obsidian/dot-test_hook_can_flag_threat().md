@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "P3 Infrastructure Security Modules"
+community: "ThreatAssessment"
 location: "L131"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/P3_Infrastructure_Security_Modules
+  - community/ThreatAssessment
 ---
 
 # .test_hook_can_flag_threat()
@@ -15,4 +15,4 @@ tags:
 - [[TestScreenshotAnalysis]] - `method` [EXTRACTED]
 - [[ThreatAssessment]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules
+#graphify/code #graphify/EXTRACTED #community/ThreatAssessment

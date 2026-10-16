@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "Community 415"
+community: "test_soc_bots.py"
 location: "L686"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_415
+  - community/test_soc_botspy
 ---
 
 # .test_formula_high_penalty()
@@ -16,4 +16,4 @@ tags:
 - [[TestComputeBotScorecard_1]] - `method` [EXTRACTED]
 - [[compute_bot_scorecard()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_415
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

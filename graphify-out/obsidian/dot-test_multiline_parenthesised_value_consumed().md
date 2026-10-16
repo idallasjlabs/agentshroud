@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "Community 94"
-location: "L529"
+community: "_t"
+location: "L663"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_94
+  - community/_t
 ---
 
 # .test_multiline_parenthesised_value_consumed()
@@ -15,4 +15,4 @@ tags:
 - [[TestConsumeFieldEdge]] - `method` [EXTRACTED]
 - [[_t()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_94
+#graphify/code #graphify/EXTRACTED #community/_t

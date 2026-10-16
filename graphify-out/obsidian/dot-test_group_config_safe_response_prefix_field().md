@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "Teams/Group Collaborator Responses"
+community: "GroupConfig"
 location: "L212"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Teams/Group_Collaborator_Responses
+  - community/GroupConfig
 ---
 
 # .test_group_config_safe_response_prefix_field()
@@ -15,4 +15,4 @@ tags:
 - [[GroupConfig]] - `calls` [EXTRACTED]
 - [[TestGroupSafeResponsePrefix]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses
+#graphify/code #graphify/EXTRACTED #community/GroupConfig

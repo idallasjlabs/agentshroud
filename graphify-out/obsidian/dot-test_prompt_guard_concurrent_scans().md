@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "Session Manager & PII/Context Guard"
+community: "AlertDispatcher"
 location: "L233"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Manager__PII/Context_Guard
+  - community/AlertDispatcher
 ---
 
 # .test_prompt_guard_concurrent_scans()
@@ -15,4 +15,4 @@ tags:
 - [[Concurrent prompt scans shouldn't interfere with each other.]] - `rationale_for` [EXTRACTED]
 - [[TestConcurrency]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

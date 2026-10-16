@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "Community 907"
+community: "TestCredentialInjection"
 location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_907
+  - community/TestCredentialInjection
 ---
 
 # .test_injection_disabled()
 
 ## Connections
-- [[CredentialInjector_1]] - `calls` [EXTRACTED]
+- [[CredentialInjector]] - `calls` [EXTRACTED]
 - [[TestCredentialInjection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_907
+#graphify/code #graphify/EXTRACTED #community/TestCredentialInjection

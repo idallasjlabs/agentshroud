@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_auto_remediate_cves.py"
 type: "code"
-community: "Community 274"
+community: "plan_remediation"
 location: "L108"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_274
+  - community/plan_remediation
 ---
 
 # .test_no_upgrade_needed_yields_no_target()
 
 ## Connections
 - [[TestPlanRemediation]] - `method` [EXTRACTED]
-- [[_entry()]] - `calls` [EXTRACTED]
+- [[_entry()_1]] - `calls` [EXTRACTED]
 - [[plan_remediation()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_274
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

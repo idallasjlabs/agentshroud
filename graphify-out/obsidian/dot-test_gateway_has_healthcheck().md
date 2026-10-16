@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docker_compose.py"
 type: "code"
-community: "Community 223"
+community: "TestProductionCompose"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_223
+  - community/TestProductionCompose
 ---
 
 # .test_gateway_has_healthcheck()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestProductionCompose]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_223
+#graphify/code #graphify/EXTRACTED #community/TestProductionCompose

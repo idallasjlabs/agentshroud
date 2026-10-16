@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "Community 716"
+community: "UserSessionManager"
 location: "L363"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_716
+  - community/UserSessionManager
 ---
 
 # .test_load_tolerates_empty_registry()
@@ -16,4 +16,4 @@ tags:
 - [[TestAtomicRegistryWrites]] - `method` [EXTRACTED]
 - [[UserSessionManager]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_716
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

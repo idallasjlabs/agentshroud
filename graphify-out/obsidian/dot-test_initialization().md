@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_approval_hardening.py"
+source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
-location: "L60"
+community: "TestMultiTurnTracker"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/TestMultiTurnTracker
 ---
 
 # .test_initialization()
 
 ## Connections
-- [[Test hardening initialization.]] - `rationale_for` [EXTRACTED]
-- [[TestApprovalHardening]] - `method` [EXTRACTED]
+- [[Test proper initialization of MultiTurnTracker.]] - `rationale_for` [EXTRACTED]
+- [[TestMultiTurnTracker]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/TestMultiTurnTracker

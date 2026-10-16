@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 56"
+community: "test_security_toolchain.py"
 location: "L694"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_56
+  - community/test_security_toolchainpy
 ---
 
 # .test_get_fim_events()
 
 ## Connections
 - [[TestWazuhParser]] - `method` [EXTRACTED]
+- [[get_fim_events()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_56
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "Community 662"
+community: "TestDNSForwarderProtocol"
 location: "L267"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_662
+  - community/TestDNSForwarderProtocol
 ---
 
 # .test_forwarded_query_relays_upstream_response()
@@ -18,4 +18,4 @@ tags:
 - [[_BlockNone]] - `calls` [EXTRACTED]
 - [[build_dns_query()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_662
+#graphify/code #graphify/EXTRACTED #community/TestDNSForwarderProtocol

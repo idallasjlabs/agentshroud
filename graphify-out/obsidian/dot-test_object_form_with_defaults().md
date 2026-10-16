@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: "TestFromAuditChainEntry"
 location: "L453"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/TestFromAuditChainEntry
 ---
 
 # .test_object_form_with_defaults()
@@ -15,4 +15,4 @@ tags:
 - [[SimpleNamespace]] - `calls` [EXTRACTED]
 - [[TestFromAnomalyAlert]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/TestFromAuditChainEntry

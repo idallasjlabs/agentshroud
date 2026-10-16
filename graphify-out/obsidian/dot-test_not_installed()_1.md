@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "SOC Service Manager (Container Engine)"
-location: "L152"
+community: "_patch_open"
+location: "L219"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Service_Manager_Container_Engine
+  - community/_patch_open
 ---
 
 # .test_not_installed()
 
 ## Connections
-- [[TestCheckClamd]] - `method` [EXTRACTED]
+- [[TestCheckFluentBit]] - `method` [EXTRACTED]
 - [[_patch_exists()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Service_Manager_Container_Engine
+#graphify/code #graphify/EXTRACTED #community/_patch_open

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Community 1411"
+community: ".test_owner_deny_without_target_auto_selects_single_pending"
 location: "L1066"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1411
+  - community/test_owner_deny_without_target_auto_selects_single_pending
 ---
 
 # .test_owner_deny_without_target_auto_selects_single_pending()
@@ -18,7 +18,7 @@ tags:
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
 - [[TelegramAPIProxy]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1411
+#graphify/code #graphify/EXTRACTED #community/test_owner_deny_without_target_auto_selects_single_pending

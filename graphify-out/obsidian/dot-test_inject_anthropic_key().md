@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_isolation.py"
 type: "code"
-community: "Community 620"
+community: "CredentialInjector"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_620
+  - community/CredentialInjector
 ---
 
 # .test_inject_anthropic_key()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCredentialInjector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_620
+#graphify/code #graphify/EXTRACTED #community/CredentialInjector

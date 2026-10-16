@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 1329"
+community: "TestOpenscapSummary"
 location: "L430"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1329
+  - community/TestOpenscapSummary
 ---
 
 # .test_not_run()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOpenscapSummary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1329
+#graphify/code #graphify/EXTRACTED #community/TestOpenscapSummary

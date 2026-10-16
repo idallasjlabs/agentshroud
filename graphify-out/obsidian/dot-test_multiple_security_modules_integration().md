@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "Community 96"
+community: "ProxyAction"
 location: "L297"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_96
+  - community/ProxyAction
 ---
 
 # .test_multiple_security_modules_integration()
@@ -17,4 +17,4 @@ tags:
 - [[Test that multiple security modules work together correctly.]] - `rationale_for` [EXTRACTED]
 - [[TestWebProxySecurityIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_96
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

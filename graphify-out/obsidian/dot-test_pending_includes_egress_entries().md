@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 85"
+community: "test_telegram_proxy_outbound.py"
 location: "L4743"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_85
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # .test_pending_includes_egress_entries()
 
 ## Connections
-- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestPendingNoticeIncludesEgressSection]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_85
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

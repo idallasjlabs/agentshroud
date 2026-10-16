@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "Community 441"
+community: "MockValidator"
 location: "L313"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_441
+  - community/MockValidator
 ---
 
 # .test_rotation_with_validation_failure()
@@ -16,4 +16,4 @@ tags:
 - [[Test rotation workflow with validation failure and rollback.]] - `rationale_for` [EXTRACTED]
 - [[TestKeyRotationWorkflow]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_441
+#graphify/code #graphify/EXTRACTED #community/MockValidator

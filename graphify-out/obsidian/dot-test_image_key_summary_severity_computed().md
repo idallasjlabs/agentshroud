@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 537"
+community: "TestStartupScannerKeying"
 location: "L427"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_537
+  - community/TestStartupScannerKeying
 ---
 
 # .test_image_key_summary_severity_computed()
@@ -18,4 +18,4 @@ tags:
 - [[Summary status is derived correctly for compound 'trivyimage...' keys.]] - `rationale_for` [EXTRACTED]
 - [[TestStartupScannerKeying]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_537
+#graphify/code #graphify/EXTRACTED #community/TestStartupScannerKeying

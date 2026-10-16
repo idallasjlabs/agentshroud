@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 297"
+community: "test_scanner_integration_coverage.py"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_297
+  - community/test_scanner_integration_coveragepy
 ---
 
 # .test_import_failure_returns_false()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAppStateHas]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_297
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integration_coveragepy

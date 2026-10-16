@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 1331"
+community: "TestTrivyImageSummaries"
 location: "L290"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1331
+  - community/TestTrivyImageSummaries
 ---
 
 # .test_missing_dir_returns_empty()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrivyImageSummaries]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1331
+#graphify/code #graphify/EXTRACTED #community/TestTrivyImageSummaries

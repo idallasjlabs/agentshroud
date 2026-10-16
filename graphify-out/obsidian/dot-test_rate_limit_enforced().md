@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy.py"
+source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "Community 50"
-location: "L615"
+community: "PermissionLevel"
+location: "L398"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_50
+  - community/PermissionLevel
 ---
 
 # .test_rate_limit_enforced()
 
 ## Connections
-- [[MCPToolCall_1]] - `calls` [EXTRACTED]
-- [[TestProxyRateLimiting]] - `method` [EXTRACTED]
+- [[TestRateLimiting]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_50
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

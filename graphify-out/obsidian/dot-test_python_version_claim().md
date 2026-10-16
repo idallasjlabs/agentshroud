@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "code"
-community: "Community 118"
+community: "test_docs_accuracy.py"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_118
+  - community/test_docs_accuracypy
 ---
 
 # .test_python_version_claim()
@@ -15,4 +15,4 @@ tags:
 - [[README claims Python 3.9+.]] - `rationale_for` [EXTRACTED]
 - [[TestReadmeAccuracy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_118
+#graphify/code #graphify/EXTRACTED #community/test_docs_accuracypy

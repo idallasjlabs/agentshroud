@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Telegram Proxy Inbound Tests"
+community: "TelegramAPIProxy"
 location: "L8762"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Inbound_Tests
+  - community/TelegramAPIProxy
 ---
 
 # .test_forward_file_download_aborts_at_size_limit()
@@ -17,4 +17,4 @@ tags:
 - [[_FakeResponse]] - `calls` [INFERRED]
 - [[_forward_file_download must raise when streamed bytes exceed limit (CVE-2026-320]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Inbound_Tests
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

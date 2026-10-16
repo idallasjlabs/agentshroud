@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "Community 129"
+community: "TestToolPermission"
 location: "L347"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_129
+  - community/TestToolPermission
 ---
 
 # .test_privacy_policy_status_when_missing_file()
 
 ## Connections
-- [[MCPPermissionManager]] - `calls` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `calls` [EXTRACTED]
 - [[TestToolPermission]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_129
+#graphify/code #graphify/EXTRACTED #community/TestToolPermission

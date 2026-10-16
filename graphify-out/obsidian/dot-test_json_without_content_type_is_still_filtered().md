@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 1701"
+community: "TelegramAPIProxy"
 location: "L1861"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1701
+  - community/TelegramAPIProxy
 ---
 
 # .test_json_without_content_type_is_still_filtered()
 
 ## Connections
 - [[Missing content-type must not bypass outbound JSON leak filtering.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1701
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

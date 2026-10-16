@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Community 1585"
+community: "ForwardRequest"
 location: "L212"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1585
+  - community/ForwardRequest
 ---
 
 # .test_openclaw_version_pin_is_consistent_across_bot_images()
 
 ## Connections
-- [[OpenClaw's bot Dockerfile must pin via the shared ARG OPENCLAW_VERSION (backed…]] - `rationale_for` [EXTRACTED]
+- [[OpenClaw's bot Dockerfile must pin via the shared ARG OPENCLAW_VERSION         (]] - `rationale_for` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1585
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

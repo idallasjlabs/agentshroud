@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "Community 535"
+community: "SessionError"
 location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_535
+  - community/SessionError
 ---
 
 # .test_rotated_session_valid()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSessionRotation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_535
+#graphify/code #graphify/EXTRACTED #community/SessionError

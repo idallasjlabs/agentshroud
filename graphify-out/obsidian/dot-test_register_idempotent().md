@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "Encrypted Store & Drift Detector"
-location: "L291"
+community: "TrustConfig"
+location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Encrypted_Store__Drift_Detector
+  - community/TrustConfig
 ---
 
 # .test_register_idempotent()
 
 ## Connections
-- [[TestTrustManager]] - `method` [EXTRACTED]
+- [[TestAgentRegistration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Encrypted_Store__Drift_Detector
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

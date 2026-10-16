@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "Community 110"
+community: "FetchOutcome"
 location: "L395"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_110
+  - community/FetchOutcome
 ---
 
 # .test_network_error_maps_to_599()
@@ -16,4 +16,4 @@ tags:
 - [[TestMakeHttpxFetcher]] - `method` [EXTRACTED]
 - [[make_httpx_fetcher()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_110
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

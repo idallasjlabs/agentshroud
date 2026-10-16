@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "Agent Isolation & Group Config Tests"
+community: "RBACConfig"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Agent_Isolation__Group_Config_Tests
+  - community/RBACConfig
 ---
 
 # .test_group_id_uses_group_prefix_namespace()
@@ -15,4 +15,4 @@ tags:
 - [[TestGroupMemoryNamespaceIsolation]] - `method` [EXTRACTED]
 - [[group-{chat_id} sessions must live under the 'groups' subdirectory.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Agent_Isolation__Group_Config_Tests
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

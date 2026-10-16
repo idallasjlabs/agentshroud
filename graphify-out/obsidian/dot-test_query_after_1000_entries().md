@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "Gateway Config & PII Sanitizer"
+community: "PIIConfig"
 location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/PIIConfig
 ---
 
 # .test_query_after_1000_entries()
@@ -15,4 +15,4 @@ tags:
 - [[Query performance after 1000 entries.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditChainPerformance]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Community 134"
+community: "Role"
 location: "L258"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_134
+  - community/Role
 ---
 
 # .test_private_and_admin_do_not_overlap()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestClassificationSets]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_134
+#graphify/code #graphify/EXTRACTED #community/Role

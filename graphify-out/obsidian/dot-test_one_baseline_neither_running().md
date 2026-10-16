@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Community 1333"
+community: "TestScoreIncidentResponse"
 location: "L520"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1333
+  - community/TestScoreIncidentResponse
 ---
 
 # .test_one_baseline_neither_running()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestScoreIncidentResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1333
+#graphify/code #graphify/EXTRACTED #community/TestScoreIncidentResponse

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "Cross-Bot Trust & A2A Governance"
+community: "CrossBotTrustLedger"
 location: "L262"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/CrossBotTrustLedger
 ---
 
 # .test_propagation_limited_to_max_depth()
@@ -19,4 +19,4 @@ tags:
 - [[TrustDecayPolicy_1]] - `calls` [EXTRACTED]
 - [[TrustManager_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

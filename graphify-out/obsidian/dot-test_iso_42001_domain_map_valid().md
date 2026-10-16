@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Community 168"
+community: "scanner_integration.py"
 location: "L949"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_168
+  - community/scanner_integrationpy
 ---
 
 # .test_iso_42001_domain_map_valid()
 
 ## Connections
 - [[ISO 42001 domain map references only valid domain IDs.]] - `rationale_for` [EXTRACTED]
-- [[TestComputeScorecard]] - `method` [EXTRACTED]
+- [[TestComputeScorecard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_168
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

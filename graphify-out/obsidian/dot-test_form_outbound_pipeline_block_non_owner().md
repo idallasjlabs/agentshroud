@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 69"
+community: ".test_form_outbound_pipeline_block_non_owner"
 location: "L213"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_69
+  - community/test_form_outbound_pipeline_block_non_owner
 ---
 
 # .test_form_outbound_pipeline_block_non_owner()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[BlockingPipeline]] - `calls` [INFERRED]
 - [[Pipeline-blocked form payloads to non-owners must be replaced with a safe notice]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_69
+#graphify/code #graphify/EXTRACTED #community/test_form_outbound_pipeline_block_non_owner

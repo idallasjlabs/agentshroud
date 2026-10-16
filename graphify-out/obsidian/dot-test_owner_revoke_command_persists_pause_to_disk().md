@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Community 1422"
+community: ".test_owner_revoke_command_requires_target_user_id"
 location: "L676"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1422
+  - community/test_owner_revoke_command_requires_target_user_id
 ---
 
 # .test_owner_revoke_command_persists_pause_to_disk()
@@ -17,7 +17,7 @@ tags:
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
 - [[TelegramAPIProxy]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1422
+#graphify/code #graphify/EXTRACTED #community/test_owner_revoke_command_requires_target_user_id

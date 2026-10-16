@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Community 794"
+community: "TestSplitForSpeech"
 location: "L467"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_794
+  - community/TestSplitForSpeech
 ---
 
 # .test_long_sentence_wrapped_at_max_chars()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_s()]] - `calls` [EXTRACTED]
 - [[TestSplitForSpeech]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_794
+#graphify/code #graphify/EXTRACTED #community/TestSplitForSpeech

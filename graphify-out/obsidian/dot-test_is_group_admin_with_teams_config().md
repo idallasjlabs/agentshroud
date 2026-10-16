@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: "test_soc_realtime_coverage.py"
 location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .test_is_group_admin_with_teams_config()
@@ -17,4 +17,4 @@ tags:
 - [[TestSCLCaller]] - `method` [EXTRACTED]
 - [[_FakeRBAC]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

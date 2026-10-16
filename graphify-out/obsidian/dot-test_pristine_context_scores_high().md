@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_integrity.py"
 type: "code"
-community: "Prompt Guard & Context Integrity"
+community: "TestContextIntegrityScorer"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Prompt_Guard__Context_Integrity
+  - community/TestContextIntegrityScorer
 ---
 
 # .test_pristine_context_scores_high()
@@ -16,4 +16,4 @@ tags:
 - [[TestContextIntegrityScorer]] - `method` [EXTRACTED]
 - [[_make_segment()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Prompt_Guard__Context_Integrity
+#graphify/code #graphify/EXTRACTED #community/TestContextIntegrityScorer

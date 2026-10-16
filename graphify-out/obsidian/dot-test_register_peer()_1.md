@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
+source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "Cross-Bot Trust & A2A Governance"
-location: "L87"
+community: "A2AGovernanceProxy"
+location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/A2AGovernanceProxy
 ---
 
 # .test_register_peer()
 
 ## Connections
-- [[CrossBotTrustLedger]] - `references` [EXTRACTED]
-- [[TestCrossBotTrustLedgerConstruction]] - `method` [EXTRACTED]
+- [[TestPeerManagement]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

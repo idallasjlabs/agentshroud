@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_path_isolation.py"
+source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 1481"
-location: "L297"
+community: "TestAlertDispatcher"
+location: "L932"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1481
+  - community/TestAlertDispatcher
 ---
 
 # .test_get_stats()
 
 ## Connections
-- [[Test getting statistics.]] - `rationale_for` [EXTRACTED]
-- [[TestPathIsolationManager]] - `method` [EXTRACTED]
+- [[dot-_make_dispatcher()]] - `calls` [EXTRACTED]
+- [[TestAlertDispatcher]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1481
+#graphify/code #graphify/EXTRACTED #community/TestAlertDispatcher

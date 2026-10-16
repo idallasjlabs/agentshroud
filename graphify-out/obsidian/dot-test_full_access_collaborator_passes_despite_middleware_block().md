@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Community 522"
+community: "TestFullAccessMiddlewareBypass"
 location: "L9392"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_522
+  - community/TestFullAccessMiddlewareBypass
 ---
 
 # .test_full_access_collaborator_passes_despite_middleware_block()
@@ -16,7 +16,7 @@ tags:
 - [[Middleware block must be bypassed for full_access collaborators.]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy]] - `calls` [EXTRACTED]
 - [[TestFullAccessMiddlewareBypass]] - `method` [EXTRACTED]
-- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_522
+#graphify/code #graphify/EXTRACTED #community/TestFullAccessMiddlewareBypass

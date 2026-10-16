@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_auth.py"
 type: "code"
-community: "Community 159"
+community: "test_soc_realtime_coverage.py"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_159
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .test_issue_returns_hex_string()
@@ -15,4 +15,4 @@ tags:
 - [[TestSessionTokens]] - `method` [EXTRACTED]
 - [[issue_session_token()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_159
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

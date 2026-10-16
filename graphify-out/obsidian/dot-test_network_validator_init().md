@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Community 487"
+community: "AlertDispatcher"
 location: "L931"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_487
+  - community/AlertDispatcher
 ---
 
 # .test_network_validator_init()
@@ -15,4 +15,4 @@ tags:
 - [[NetworkValidator]] - `calls` [EXTRACTED]
 - [[TestContainerSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_487
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

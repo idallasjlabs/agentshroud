@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 56"
+community: "FalcoAlertWatcher"
 location: "L640"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_56
+  - community/FalcoAlertWatcher
 ---
 
 # .test_read_alerts_missing_dir()
 
 ## Connections
-- [[TestFalcoSummary]] - `method` [EXTRACTED]
+- [[TestFalcoSummary_1]] - `method` [EXTRACTED]
+- [[read_alerts()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_56
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

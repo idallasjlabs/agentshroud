@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "code"
-community: "Ingest Middleware & File Sandbox"
+community: "test_file_sandbox_message_gate.py"
 location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_Middleware__File_Sandbox
+  - community/test_file_sandbox_message_gatepy
 ---
 
 # .test_plain_message_mentioning_memory_not_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[TestFileSandboxSkippedForPlainMessages]] - `method` [EXTRACTED]
 - [[_plain_msg()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox
+#graphify/code #graphify/EXTRACTED #community/test_file_sandbox_message_gatepy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "Community 390"
+community: "UserSessionManager"
 location: "L448"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_390
+  - community/UserSessionManager
 ---
 
 # .test_reanchor_preserves_original_content()
@@ -15,4 +15,4 @@ tags:
 - [[Original system prompt content is always preserved in the output.]] - `rationale_for` [EXTRACTED]
 - [[TestSystemPromptReanchoring]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_390
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

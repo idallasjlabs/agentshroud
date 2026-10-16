@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Community 185"
+community: "EgressPolicy"
 location: "L405"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_185
+  - community/EgressPolicy
 ---
 
 # .test_matches_domain_exact()
@@ -15,4 +15,4 @@ tags:
 - [[EgressPolicy]] - `calls` [EXTRACTED]
 - [[TestEgressPolicy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_185
+#graphify/code #graphify/EXTRACTED #community/EgressPolicy

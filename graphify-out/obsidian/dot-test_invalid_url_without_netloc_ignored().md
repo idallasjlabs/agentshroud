@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Community 1110"
+community: "TestExtractEgressTargets"
 location: "L363"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1110
+  - community/TestExtractEgressTargets
 ---
 
 # .test_invalid_url_without_netloc_ignored()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestExtractEgressTargets]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1110
+#graphify/code #graphify/EXTRACTED #community/TestExtractEgressTargets

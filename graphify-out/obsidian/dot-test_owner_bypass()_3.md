@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_middleware_coverage.py"
+source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "Ingest Middleware & File Sandbox"
-location: "L775"
+community: "ApprovalQueueConfig"
+location: "L300"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_Middleware__File_Sandbox
+  - community/ApprovalQueueConfig
 ---
 
 # .test_owner_bypass()
 
 ## Connections
-- [[TestIsPathAllowedForUser]] - `method` [EXTRACTED]
+- [[MCPToolCall]] - `calls` [EXTRACTED]
+- [[Test owner bypass for high-tier tools.]] - `rationale_for` [EXTRACTED]
+- [[TestMCPProxyIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

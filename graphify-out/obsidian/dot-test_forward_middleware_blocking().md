@@ -1,20 +1,18 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Community 100"
+community: "TestForwardEndpoint"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_100
+  - community/TestForwardEndpoint
 ---
 
 # .test_forward_middleware_blocking()
 
 ## Connections
-- [[AsyncMock]] - `calls` [INFERRED]
-- [[MiddlewareResult]] - `calls` [EXTRACTED]
 - [[Test that middleware can block requests with HTTP 403.]] - `rationale_for` [EXTRACTED]
 - [[TestForwardEndpoint]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_100
+#graphify/code #graphify/EXTRACTED #community/TestForwardEndpoint

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "Community 1039"
+community: "HostStatus"
 location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1039
+  - community/HostStatus
 ---
 
 # .test_nonzero_is_fail()
@@ -15,4 +15,4 @@ tags:
 - [[TestClassify_1]] - `method` [EXTRACTED]
 - [[classify()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1039
+#graphify/code #graphify/EXTRACTED #community/HostStatus

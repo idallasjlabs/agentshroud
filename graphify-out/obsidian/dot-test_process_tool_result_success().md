@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "PII Sanitizer & Redaction"
+community: "ToolResultSanitizer"
 location: "L347"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__Redaction
+  - community/ToolResultSanitizer
 ---
 
 # .test_process_tool_result_success()
 
 ## Connections
 - [[MiddlewareManager]] - `calls` [EXTRACTED]
-- [[RedactionDetail]] - `calls` [EXTRACTED]
-- [[RedactionResult_2]] - `calls` [EXTRACTED]
+- [[RedactionDetail_1]] - `calls` [EXTRACTED]
+- [[RedactionResult_3]] - `calls` [EXTRACTED]
 - [[Test successful tool result processing]] - `rationale_for` [EXTRACTED]
 - [[TestMiddlewareIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__Redaction
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

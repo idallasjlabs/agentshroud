@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "SubagentMonitor"
 location: "L171"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/SubagentMonitor
 ---
 
 # .test_monitor_mode_allows_all_tools()
@@ -15,4 +15,4 @@ tags:
 - [[In monitor mode, even trust violations are allowed (just flagged).]] - `rationale_for` [EXTRACTED]
 - [[TestPermissionMonitoring]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

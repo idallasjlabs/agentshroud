@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 69"
+community: ".test_proxy_request_sends_no_reply_wait_message_once"
 location: "L2126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_69
+  - community/test_proxy_request_sends_no_reply_wait_message_once
 ---
 
 # .test_proxy_request_sends_no_reply_wait_message_once()
 
 ## Connections
 - [[First NO_REPLY payload should send safe wait guidance to Telegram.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_69
+#graphify/code #graphify/EXTRACTED #community/test_proxy_request_sends_no_reply_wait_message_once

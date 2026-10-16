@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "code"
-community: "Community 906"
+community: "AuditStore"
 location: "L315"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_906
+  - community/AuditStore
 ---
 
 # .test_log_event_default_bot_id_is_openclaw()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAuditStoreBotId]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_906
+#graphify/code #graphify/EXTRACTED #community/AuditStore

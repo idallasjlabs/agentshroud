@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 537"
+community: "TestStartupScannerKeying"
 location: "L442"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_537
+  - community/TestStartupScannerKeying
 ---
 
 # .test_history_accumulates_all_entries()
@@ -18,4 +18,4 @@ tags:
 - [[Each _store_result call appends an entry to scanner_result_history.]] - `rationale_for` [EXTRACTED]
 - [[TestStartupScannerKeying]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_537
+#graphify/code #graphify/EXTRACTED #community/TestStartupScannerKeying

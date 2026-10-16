@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "Community 912"
+community: "TestBotIdIsolationInSharedMemory"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_912
+  - community/TestBotIdIsolationInSharedMemory
 ---
 
 # .test_get_user_memory_openclaw_and_hermes_are_separate_paths()
 
 ## Connections
-- [[BT-H3 The filesystem paths for openclaw and hermes sessions differ.          Re]] - `rationale_for` [EXTRACTED]
+- [[BT-H3 The filesystem paths for openclaw and hermes sessions differ.…]] - `rationale_for` [EXTRACTED]
 - [[TestBotIdIsolationInSharedMemory]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_912
+#graphify/code #graphify/EXTRACTED #community/TestBotIdIsolationInSharedMemory

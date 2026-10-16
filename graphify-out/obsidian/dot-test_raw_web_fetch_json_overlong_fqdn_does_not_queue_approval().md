@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 1734"
+community: "TelegramAPIProxy"
 location: "L3459"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1734
+  - community/TelegramAPIProxy
 ---
 
 # .test_raw_web_fetch_json_overlong_fqdn_does_not_queue_approval()
 
 ## Connections
 - [[Domains over 253 chars should be rejected before queueing approvals.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1734
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

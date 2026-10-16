@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 1327"
+community: "TestGetSbom"
 location: "L495"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1327
+  - community/TestGetSbom
 ---
 
 # .test_missing_dir()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGetSbom]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1327
+#graphify/code #graphify/EXTRACTED #community/TestGetSbom

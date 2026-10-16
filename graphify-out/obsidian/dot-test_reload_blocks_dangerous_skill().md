@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "Community 294"
+community: "Severity"
 location: "L367"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_294
+  - community/Severity
 ---
 
 # .test_reload_blocks_dangerous_skill()
 
 ## Connections
-- [[Path_32]] - `references` [EXTRACTED]
-- [[TestClient_1]] - `references` [EXTRACTED]
+- [[Path_44]] - `references` [EXTRACTED]
+- [[TestClient]] - `references` [EXTRACTED]
 - [[TestReloadIntegration]] - `method` [EXTRACTED]
 - [[_write_tree()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_294
+#graphify/code #graphify/EXTRACTED #community/Severity

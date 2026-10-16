@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 220"
+community: "parse_trivy_output"
 location: "L286"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_220
+  - community/parse_trivy_output
 ---
 
 # .test_log_dir_created_if_missing()
 
 ## Connections
 - [[TestTrivySaveReport]] - `method` [EXTRACTED]
-- [[parse_trivy_output]] - `calls` [EXTRACTED]
-- [[save_report]] - `calls` [EXTRACTED]
+- [[parse_trivy_output()]] - `calls` [EXTRACTED]
 - [[save_report creates the log directory if it does not exist.]] - `rationale_for` [EXTRACTED]
+- [[save_report()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_220
+#graphify/code #graphify/EXTRACTED #community/parse_trivy_output
