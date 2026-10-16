@@ -441,7 +441,24 @@ class LLMProxy:
         API use) gets this automatically, not just hand-patched jobs.
 
         Returns True if the request body was modified (caller must re-encode).
+
+        2026-10-16: the '/no_think' suffix is Qwen3-specific. Rapid-MLX's
+        anchor model is now NVIDIA Nemotron 3.5 (switched in the 2026-10-11/12
+        upgrade), which treats '/no_think' as literal user text -- it reasoned
+        about "the /no_think flag", echoed it into shell commands
+        (`echo "hello / no_think"`), and with server-side reasoning disabled
+        produced incoherent completions. Every Hermes/OpenClaw Telegram reply
+        stalled on "typing" as a result. For non-Qwen models, disable
+        chain-of-thought via the OpenAI `reasoning_effort: "none"` field
+        (verified live against rapid-mlx: "hello" -> "Hello! How can I help
+        you today?", finish_reason=stop) and leave the text untouched.
         """
+        model_lower = str(request_data.get("model", "")).lower()
+        if "qwen" not in model_lower:
+            if request_data.get("reasoning_effort") == "none":
+                return False
+            request_data["reasoning_effort"] = "none"
+            return True
         messages = request_data.get("messages")
         if not isinstance(messages, list):
             return False
