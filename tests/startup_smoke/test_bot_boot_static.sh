@@ -209,6 +209,24 @@ check "S13: start.sh (Hermes): env-provided feedbin secrets are not reported mis
     "$([[ -n "$_s13_loop" && "$_s13_missing" == "brave_api_key" ]] && echo true || echo false)" \
     "expected missing list 'brave_api_key', got '${_s13_missing}'"
 
+# S14: run-standalone.sh (Hermes) resolves the image tag from
+# docker/versions.env when AGENTSHROUD_VERSION is unset, instead of "latest"
+# (no such image exists; 2026-10-16 prod: container removed, replacement
+# failed to start, ~5 min outage). Behavioral: run the real fallback block
+# extracted from the script with the variable unset.
+hermes_run_sh="$REPO/docker/bots/hermes/run-standalone.sh"
+_s14_block="$(sed -n '/^# BEGIN version fallback$/,/^# END version fallback$/p' "$hermes_run_sh")"
+_s14_expected="$(sed -n 's/^AGENTSHROUD_VERSION=//p' "$REPO/docker/versions.env" | head -1)"
+_s14_got="$(
+    unset AGENTSHROUD_VERSION
+    REPO_DIR="$REPO"
+    eval "$_s14_block"
+    printf '%s' "$VERSION"
+)"
+check "S14: run-standalone.sh (Hermes): image tag falls back to docker/versions.env, not 'latest'" \
+    "$([[ -n "$_s14_block" && -n "$_s14_expected" && "$_s14_got" == "$_s14_expected" ]] && echo true || echo false)" \
+    "expected '${_s14_expected}', got '${_s14_got}'"
+
 # ── Summary ────────────────────────────────────────────────────────────────
 echo ""
 total=$(( pass + fail ))

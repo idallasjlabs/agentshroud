@@ -50,7 +50,19 @@ set -a
 set +a
 
 PROJECT="${AGENTSHROUD_PROJECT:-agentshroud}"
+# BEGIN version fallback
+# 2026-10-16 prod incident: a bare `run-standalone.sh up` (docker/.env without
+# AGENTSHROUD_VERSION) defaulted to "latest", but no agentshroud/hermes:latest
+# image exists — the old container was already removed, the new one failed to
+# start, ~5 min Hermes outage until rerun with AGENTSHROUD_VERSION=1.7.0.
+# docker/versions.env is the single source of truth for the product version
+# (every image is built and tagged from it), so fall back to that, and only
+# then to "latest".
+if [ -z "${AGENTSHROUD_VERSION:-}" ] && [ -f "$REPO_DIR/docker/versions.env" ]; then
+  AGENTSHROUD_VERSION="$(sed -n 's/^AGENTSHROUD_VERSION=//p' "$REPO_DIR/docker/versions.env" | head -1)"
+fi
 VERSION="${AGENTSHROUD_VERSION:-latest}"
+# END version fallback
 
 # AGENTSHROUD_ENV — auto-detected from the invoking macOS account, since dev
 # and prod containers were otherwise indistinguishable from the inside (same
