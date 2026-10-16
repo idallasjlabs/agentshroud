@@ -1,53 +1,44 @@
 ---
 type: community
 cohesion: 0.08
-members: 38
+members: 29
 ---
 
 # Local-Model Job Quality Matrix
 
 **Cohesion:** 0.08 - loosely connected
-**Members:** 38 nodes
+**Members:** 29 nodes
 
 ## Members
-- [[._get_role_value()]] - code - gateway/security/privacy_policy.py
-- [[._user_in_allowed_groups()]] - code - gateway/security/privacy_policy.py
-- [[.contains_private_data()]] - code - gateway/security/privacy_policy.py
-- [[.filter_response()_1]] - code - gateway/security/privacy_policy.py
-- [[.is_service_allowed()]] - code - gateway/security/privacy_policy.py
-- [[.should_alert()]] - code - gateway/security/privacy_policy.py
-- [[.should_audit()]] - code - gateway/security/privacy_policy.py
-- [[.test_admin_blocked_from_private_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[.test_clean_response_not_modified()]] - code - gateway/tests/test_privacy_policy.py
-- [[.test_collaborator_allowed_shared_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[.test_collaborator_api_key_redacted()]] - code - gateway/tests/test_privacy_policy.py
-- [[.test_collaborator_blocked_from_private_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[.test_collaborator_email_content_redacted()]] - code - gateway/tests/test_privacy_policy.py
-- [[.test_contains_private_data_clean_text()]] - code - gateway/tests/test_privacy_policy.py
-- [[.test_contains_private_data_detects_email()]] - code - gateway/tests/test_privacy_policy.py
-- [[.test_extra_pattern_redacted()]] - code - gateway/tests/test_privacy_policy.py
-- [[.test_group_member_allowed_group_only_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[.test_invalid_extra_pattern_does_not_crash()]] - code - gateway/tests/test_privacy_policy.py
-- [[.test_non_group_member_blocked_from_group_only_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[.test_owner_can_access_private_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[.test_owner_response_not_filtered()]] - code - gateway/tests/test_privacy_policy.py
-- [[.test_unknown_service_allowed_by_default()]] - code - gateway/tests/test_privacy_policy.py
-- [[Evaluates access control and filters responses per privacy policy.]] - rationale - gateway/security/privacy_policy.py
-- [[Privacy Policy Enforcement Tests]] - code - gateway/tests/test_privacy_policy.py
-- [[PrivacyPolicyEnforcer]] - code - gateway/security/privacy_policy.py
-- [[RBACConfig_2]] - code - gateway/tests/test_privacy_policy.py
-- [[Return True if an access attempt to this service should be logged.]] - rationale - gateway/security/privacy_policy.py
-- [[Return True if text appears to contain admin-private data.]] - rationale - gateway/security/privacy_policy.py
-- [[Return True if the owner should be alerted about this access attempt.]] - rationale - gateway/security/privacy_policy.py
-- [[Return True if user_id may access the named service.]] - rationale - gateway/security/privacy_policy.py
-- [[Strip admin-private content from a response before delivering to user.]] - rationale - gateway/security/privacy_policy.py
-- [[TestResponseFiltering]] - code - gateway/tests/test_privacy_policy.py
-- [[TestServiceAccessControl]] - code - gateway/tests/test_privacy_policy.py
-- [[_make_rbac()]] - code - gateway/tests/test_privacy_policy.py
-- [[default_policy()]] - code - gateway/tests/test_privacy_policy.py
-- [[enforcer()_2]] - code - gateway/tests/test_privacy_policy.py
-- [[rbac()_3]] - code - gateway/tests/test_privacy_policy.py
-- [[test_privacy_policy.py]] - code - gateway/tests/test_privacy_policy.py
+- [[Compose Overlay Discrepancy Flagged For Review]] - rationale - reports/upgrade-2026-09-06-20260906-0808.md
+- [[Docker Storage Exhaustion (silent Hermes failure)]] - rationale - reports/upgrade-2026-09-06-prod.md
+- [[Env-split note (prod FYI, for init-config.sh work)]] - document - docs/dev-notes/job-quality-matrix.md
+- [[Exit-50 Rollback Failure Incident]] - rationale - reports/upgrade-2026-09-14.md
+- [[Failure Class Local Model Call Hangs]] - rationale - docs/dev-notes/job-quality-matrix.md
+- [[Failure Class Memory-Pressure Garbling]] - rationale - docs/dev-notes/job-quality-matrix.md
+- [[Failure Class Search Backend Unreachable]] - rationale - docs/dev-notes/job-quality-matrix.md
+- [[Failure classes (prod investigation handover, 2026-08-31)]] - document - docs/dev-notes/job-quality-matrix.md
+- [[First-Pass Abort on Dirty Tree  Branch Churn]] - rationale - reports/upgrade-2026-08-30.md
+- [[Five Previously-Unexercised Apply-Script Bugs]] - rationale - reports/upgrade-2026-09-14.md
+- [[Hard-Fail Rather Than Deliver an Empty Shell]] - rationale - docs/dev-notes/job-quality-matrix.md
+- [[Healthcheck Blind Spot (no disk-write probe)]] - rationale - reports/upgrade-2026-09-06-prod.md
+- [[Hermes Is Not Compose-Managed (asb owns it)]] - rationale - reports/upgrade-2026-09-14.md
+- [[Hermes Standalone Lifecycle (outside compose)]] - rationale - reports/upgrade-2026-08-30.md
+- [[Job Quality Matrix — local-model reportnewsletter jobs (Mission 1)]] - document - docs/dev-notes/job-quality-matrix.md
+- [[LibreChatsearxng Sibling-Repo Boundary]] - rationale - reports/upgrade-2026-08-30.md
+- [[Local-Model Job Quality Matrix]] - document - docs/dev-notes/job-quality-matrix.md
+- [[OWASP Agentic AI (ASI) Coverage Map]] - concept - docs/security/cve-mitigation-matrix.md
+- [[Owner Policy — Fix Prompts, Never Switch to Cloud Models]] - rationale - docs/dev-notes/job-quality-matrix.md
+- [[Per-job verdicts]] - document - docs/dev-notes/job-quality-matrix.md
+- [[Phantom latest Scan Tag (false 0-CRITICAL pass)]] - rationale - reports/upgrade-2026-09-14.md
+- [[Prod BLOCKED Snapshot 20260906-0808]] - document - reports/upgrade-2026-09-06-20260906-0808.md
+- [[Prod-Side 2026-09-06 Upgrade Report]] - document - reports/upgrade-2026-09-06-prod.md
+- [[Related delivery-layer defects (separate from model quality)]] - document - docs/dev-notes/job-quality-matrix.md
+- [[Sidecar Gap Finding (declared vs running)]] - rationale - reports/upgrade-2026-08-30.md
+- [[ToolResultSanitizer Link Stripping (delivery defect)]] - rationale - docs/dev-notes/job-quality-matrix.md
+- [[Upgrade Report Snapshot 20260830-2009]] - document - reports/upgrade-2026-08-30-20260830-2009.md
+- [[Weekly Upgrade Report 2026-08-30]] - document - reports/upgrade-2026-08-30.md
+- [[job-quality-matrix]] - document - docs/dev-notes/job-quality-matrix.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -57,14 +48,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 15 edges to [[_COMMUNITY_What You Must Do When Invoked]]
-- 11 edges to [[_COMMUNITY_MiddlewareManager]]
-- 5 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 2 edges to [[_COMMUNITY__wrap_response()]]
+- 2 edges to [[_COMMUNITY_Hermes Cron Dedupe (dev)]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ CVE Mitigation Matrix]]
+- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
 
 ## Top bridge nodes
-- [[PrivacyPolicyEnforcer]] - degree 27, connects to 3 communities
-- [[TestResponseFiltering]] - degree 15, connects to 3 communities
-- [[test_privacy_policy.py]] - degree 14, connects to 3 communities
-- [[TestServiceAccessControl]] - degree 14, connects to 3 communities
-- [[RBACConfig_2]] - degree 7, connects to 3 communities
+- [[Local-Model Job Quality Matrix]] - degree 6, connects to 1 community
+- [[job-quality-matrix]] - degree 5, connects to 1 community
+- [[Five Previously-Unexercised Apply-Script Bugs]] - degree 4, connects to 1 community
+- [[OWASP Agentic AI (ASI) Coverage Map]] - degree 2, connects to 1 community

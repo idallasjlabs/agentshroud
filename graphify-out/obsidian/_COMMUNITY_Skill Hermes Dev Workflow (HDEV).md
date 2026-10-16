@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.33
-members: 7
+cohesion: 0.25
+members: 8
 ---
 
 # Skill: Hermes Dev Workflow (HDEV)
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[.test_path_traversal_rejected_for_crafted_bot_id()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[.test_path_traversal_rejected_for_crafted_user_id()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[.test_user_session_paths_contain_bot_id()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[Session directory path must embed bot_id so filesystem confirms isolation.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[Session manager must reject bot_id with path traversal characters.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[TestSessionPathSeparation]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[Verifies per-bot session path layout is correctly separated.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[dot-agentsskillsi-hdevSKILL]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Guardrails]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Invocation]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Jira ticket — every development batch gets one]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Reviewers and fixer available to you]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Role_1]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Skill Hermes Dev Workflow (HDEV)]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Tools you have for this workflow]] - document - .agents/skills/i-hdev/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,9 +27,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_test_security_audit.py]]
-- 2 edges to [[_COMMUNITY_MemoryIntegrityMonitor]]
-- 1 edge to [[_COMMUNITY_KeyVaultConfig]]
+- 1 edge to [[_COMMUNITY_Skill OpenClaw Dev Workflow (ODEV)]]
+- 1 edge to [[_COMMUNITY_Mode A — Single task_2]]
+- 1 edge to [[_COMMUNITY_Mode B — Comprehensive review sweep]]
 
 ## Top bridge nodes
-- [[TestSessionPathSeparation]] - degree 9, connects to 3 communities
+- [[Skill Hermes Dev Workflow (HDEV)]] - degree 9, connects to 2 communities
+- [[dot-agentsskillsi-hdevSKILL]] - degree 2, connects to 1 community

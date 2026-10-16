@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Open Graph Preview Image]] - image - branding/social/open-graph-1200x630.png
+- [[Generic AI Agent Integration (HTTP Proxy Mode)]] - document - docs/api/integration-guide.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -10,14 +10,14 @@ members: 38
 **Members:** 38 nodes
 
 ## Members
-- [[.__call__()_9]] - code - gateway/tests/test_rate_limit_guard.py
-- [[.__init__()_111]] - code - gateway/security/rate_limit_guard.py
-- [[.__init__()_178]] - code - gateway/tests/test_rate_limit_guard.py
-- [[._burst_limit()]] - code - gateway/security/rate_limit_guard.py
-- [[._sustained_limit()]] - code - gateway/security/rate_limit_guard.py
-- [[.advance()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[.check()_6]] - code - gateway/security/rate_limit_guard.py
-- [[.get_stats()_19]] - code - gateway/security/rate_limit_guard.py
+- [[dot-__call__()_4]] - code - gateway/tests/test_rate_limit_guard.py
+- [[dot-__init__()_69]] - code - gateway/security/rate_limit_guard.py
+- [[dot-__init__()_70]] - code - gateway/tests/test_rate_limit_guard.py
+- [[dot-_burst_limit()]] - code - gateway/security/rate_limit_guard.py
+- [[dot-_sustained_limit()]] - code - gateway/security/rate_limit_guard.py
+- [[dot-advance()]] - code - gateway/tests/test_rate_limit_guard.py
+- [[dot-check()_2]] - code - gateway/security/rate_limit_guard.py
+- [[dot-get_stats()_8]] - code - gateway/security/rate_limit_guard.py
 - [[Adaptive per-agent  per-tool sliding-window rate limiter with burst detection.]] - rationale - gateway/security/rate_limit_guard.py
 - [[Build a SecurityPipeline with only the guards needed to exercise the     RateLim]] - rationale - gateway/tests/test_rate_limit_guard.py
 - [[Configuration for class`RateLimitGuard`.      All windows are per (agent_id, t]] - rationale - gateway/security/rate_limit_guard.py
@@ -28,7 +28,7 @@ members: 38
 - [[RateLimitGuard]] - code - gateway/security/rate_limit_guard.py
 - [[Record one request for (agent_id, tool) and decide allowblock.          Fail-cl]] - rationale - gateway/security/rate_limit_guard.py
 - [[Structured verdict returned by meth`RateLimitGuard.check`.]] - rationale - gateway/security/rate_limit_guard.py
-- [[_make_pipeline()_3]] - code - gateway/tests/test_rate_limit_guard.py
+- [[_make_pipeline()_2]] - code - gateway/tests/test_rate_limit_guard.py
 - [[clock()]] - code - gateway/tests/test_rate_limit_guard.py
 - [[config-off equivalence absent guard leaves inbound behaviour identical.]] - rationale - gateway/tests/test_rate_limit_guard.py
 - [[rate_limit_guard.py]] - code - gateway/security/rate_limit_guard.py
@@ -57,12 +57,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY__wrap_response()]]
-- 4 edges to [[_COMMUNITY_RBACConfig]]
-- 2 edges to [[_COMMUNITY_OutboundInfoFilter]]
+- 4 edges to [[_COMMUNITY_PIIConfig]]
+- 4 edges to [[_COMMUNITY_lifespan.py]]
+- 2 edges to [[_COMMUNITY_AsyncMock]]
 
 ## Top bridge nodes
-- [[_make_pipeline()_3]] - degree 6, connects to 2 communities
+- [[_make_pipeline()_2]] - degree 6, connects to 2 communities
 - [[test_pipeline_no_guard_is_unchanged()_1]] - degree 4, connects to 2 communities
 - [[RateLimitGuard]] - degree 25, connects to 1 community
 - [[test_rate_limit_guard.py]] - degree 22, connects to 1 community

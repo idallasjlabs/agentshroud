@@ -1,24 +1,34 @@
 ---
 type: community
-cohesion: 0.47
-members: 9
+cohesion: 0.11
+members: 19
 ---
 
 # Required: ≥ 4.5 for text, ≥ 3.0 for UI elements
 
-**Cohesion:** 0.47 - moderately connected
-**Members:** 9 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 19 nodes
 
 ## Members
-- [[.test_wrapper_all_pass()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_wrapper_dry_run_never_calls_ssh()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_wrapper_env_host_override()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_wrapper_mixed_exit_codes_fail()]] - code - gateway/tests/test_multi_host_test.py
-- [[Path_33]] - code - gateway/tests/test_multi_host_test.py
-- [[TestWrapperSubprocess]] - code - gateway/tests/test_multi_host_test.py
-- [[_run_wrapper()]] - code - gateway/tests/test_multi_host_test.py
-- [[_write_exec()]] - code - gateway/tests/test_multi_host_test.py
-- [[test_multi_host_test.py]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-agentsskillsi-bsSKILL]] - document - .agents/skills/i-bs/SKILL.md
+- [[Anti-Patterns to Flag_15]] - document - .agents/skills/i-bs/SKILL.md
+- [[Brand Audit Checklist]] - document - .agents/skills/i-bs/SKILL.md
+- [[Brand System Components]] - document - .agents/skills/i-bs/SKILL.md
+- [[Color Token Definition]] - document - .agents/skills/i-bs/SKILL.md
+- [[Core Discipline Audit → Define → Apply → Enforce]] - document - .agents/skills/i-bs/SKILL.md
+- [[Deck  Slide Master Rules]] - document - .agents/skills/i-bs/SKILL.md
+- [[Dependencies_15]] - document - .agents/skills/i-bs/SKILL.md
+- [[Diagram Theme Block (Mermaid)]] - document - .agents/skills/i-bs/SKILL.md
+- [[File & Directory Conventions]] - document - .agents/skills/i-bs/SKILL.md
+- [[HTML  CSS Brand Variables]] - document - .agents/skills/i-bs/SKILL.md
+- [[Patterns by Output Type]] - document - .agents/skills/i-bs/SKILL.md
+- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements]] - document - .agents/skills/i-bs/SKILL.md
+- [[Role_48]] - document - .agents/skills/i-bs/SKILL.md
+- [[Rules_17]] - document - .agents/skills/i-bs/SKILL.md
+- [[Skill Branding Specialist (BS)]] - document - .agents/skills/i-bs/SKILL.md
+- [[Typography Scale]] - document - .agents/skills/i-bs/SKILL.md
+- [[Validate contrast ratio]] - document - .agents/skills/i-bs/SKILL.md
+- [[Voice & Tone Guide]] - document - .agents/skills/i-bs/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,17 +38,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_AgentShroud Red Team Adversarial Tester]]
-- 5 edges to [[_COMMUNITY_SECTION 1 COVER SHEET (Form PTOSB16)]]
-- 3 edges to [[_COMMUNITY_TestPatternDetection]]
-- 3 edges to [[_COMMUNITY_AgentShroud Threat Model (STRIDE Analysis)]]
-- 2 edges to [[_COMMUNITY_TestRunAndSendCveReportImageScans]]
-- 2 edges to [[_COMMUNITY_Common Operations]]
-- 2 edges to [[_COMMUNITY_Hermes — Podcast Production Orchestrator]]
-- 2 edges to [[_COMMUNITY_Development Workflow]]
-- 2 edges to [[_COMMUNITY_SECTION 3 DRAWINGS]]
+- 3 edges to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[test_multi_host_test.py]] - degree 26, connects to 9 communities
-- [[TestWrapperSubprocess]] - degree 8, connects to 2 communities
-- [[Path_33]] - degree 5, connects to 2 communities
+- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements]] - degree 10, connects to 1 community
+- [[Skill Branding Specialist (BS)]] - degree 8, connects to 1 community
+- [[Validate contrast ratio]] - degree 2, connects to 1 community

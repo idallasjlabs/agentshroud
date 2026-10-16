@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[script.md (Vulcan-approved dialogue input)]] - concept - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[LLM writes its own Whisper domain-hint prompt]] - rationale - docker/config/hermes/skills/graphify/references/transcribe.md
 
 ## Live Query (requires Dataview plugin)
 

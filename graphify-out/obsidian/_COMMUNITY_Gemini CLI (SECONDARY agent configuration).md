@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Newsletter Coding Agent CLIs]] - document - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
+- [[Gemini CLI (SECONDARY agent configuration)]] - concept - .llm_settings/docs/AI_TOOLS_CONFIGURATION_GUIDE.md
 
 ## Live Query (requires Dataview plugin)
 

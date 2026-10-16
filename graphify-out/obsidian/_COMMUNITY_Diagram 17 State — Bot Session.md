@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[esp_err.h_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/esp_err.h
+- [[Diagram 17 State — Bot Session]] - image - docs/diagrams/images/diagram-17-state-bot-session.svg
 
 ## Live Query (requires Dataview plugin)
 

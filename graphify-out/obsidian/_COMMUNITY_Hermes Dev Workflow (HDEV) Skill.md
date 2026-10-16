@@ -1,23 +1,23 @@
 ---
 type: community
-cohesion: 0.25
+cohesion: 0.29
 members: 8
 ---
 
 # Hermes Dev Workflow (HDEV) Skill
 
-**Cohesion:** 0.25 - loosely connected
+**Cohesion:** 0.29 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[Drawing Preparation Checklist]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[FIGURE 1 — System Context Diagram]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[FIGURE 2 — Security Pipeline Flow Diagram]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[FIGURE 3 — Approval Queue Flow Diagram]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[FIGURE 4 — Trust-Differentiated Processing]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[FIGURE 5 — Multi-Agent Governance with Isolation]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[FIGURE 6 — Delegated Authority Model]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[SECTION 3 DRAWINGS]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Codex CLI (codex exec  Codex -p)]] - concept - .agents/skills/i-hdev/SKILL.md
+- [[Gemini CLI (--skip-trust)]] - concept - .agents/skills/i-hdev/SKILL.md
+- [[Hermes Dev Workflow (HDEV) Skill]] - document - .agents/skills/i-hdev/SKILL.md
+- [[LM Studio local model (Qwen3-14B)]] - concept - .agents/skills/i-hdev/SKILL.md
+- [[agentshroud-ssh-exec.sh (gateway SSH wrapper)]] - code - .agents/skills/i-hdev/SKILL.md
+- [[agentshroud-ssh-write-file.sh (gateway SSH wrapper)]] - code - .agents/skills/i-hdev/SKILL.md
+- [[omlx local model (DeepSeek-R1-0528-Qwen3-8B)]] - concept - .agents/skills/i-hdev/SKILL.md
+- [[scriptssmoke.sh (static startup smoke suite)]] - code - scripts/smoke.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +27,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Daedalus — Concept Illustrator]]
+- 2 edges to [[_COMMUNITY_GSDE&G Development Master Checklist Skill]]
+- 1 edge to [[_COMMUNITY_Coding Agent (bash-first)]]
 
 ## Top bridge nodes
-- [[SECTION 3 DRAWINGS]] - degree 8, connects to 1 community
+- [[Hermes Dev Workflow (HDEV) Skill]] - degree 9, connects to 1 community
+- [[LM Studio local model (Qwen3-14B)]] - degree 3, connects to 1 community

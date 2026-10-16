@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Logo on Dark Background]] - image - branding/logos/variants/logo-on-dark-1024x1024.png
+- [[MCP Server devonthink]] - code - .mcp.json
 
 ## Live Query (requires Dataview plugin)
 

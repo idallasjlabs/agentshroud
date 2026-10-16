@@ -1,36 +1,36 @@
 ---
 type: community
-cohesion: 0.14
+cohesion: 0.10
 members: 21
 ---
 
 # MockValidator
 
-**Cohesion:** 0.14 - loosely connected
+**Cohesion:** 0.10 - loosely connected
 **Members:** 21 nodes
 
 ## Members
-- [[Crash backoff escalation — 5 restarts600s pauses 300s (raw curl, helpers not yet defined)]] - rationale - docker/bots/hermes/start.sh
-- [[HERMES_HOME]] - code - docker/bots/hermes/start.sh
-- [[HOME]] - code - docker/bots/hermes/start.sh
-- [[XDG_CACHE_HOME]] - code - docker/bots/hermes/start.sh
-- [[XDG_DATA_HOME]] - code - docker/bots/hermes/start.sh
-- [[XDG_STATE_HOME]] - code - docker/bots/hermes/start.sh
-- [[_count_recent_restarts()]] - code - docker/bots/hermes/crashwatch.sh
-- [[_email_owner()]] - code - docker/bots/hermes/start.sh
-- [[_log()]] - code - docker/bots/hermes/crashwatch.sh
-- [[_read_last_alert_epoch()]] - code - docker/bots/hermes/crashwatch.sh
-- [[_release_telegram_lock()]] - code - docker/bots/hermes/start.sh
-- [[_telegram_alert()]] - code - docker/bots/hermes/crashwatch.sh
-- [[_telegram_bot_token()]] - code - docker/bots/hermes/start.sh
-- [[_telegram_get_me_ready()]] - code - docker/bots/hermes/start.sh
-- [[_telegram_send()]] - code - docker/bots/hermes/start.sh
-- [[_telegram_send_photo()]] - code - docker/bots/hermes/start.sh
-- [[_write_last_alert_epoch()]] - code - docker/bots/hermes/crashwatch.sh
-- [[crashwatch.sh]] - code - docker/bots/hermes/crashwatch.sh
-- [[crashwatch.sh script]] - code - docker/bots/hermes/crashwatch.sh
-- [[start.sh]] - code - docker/bots/hermes/start.sh
-- [[start.sh script]] - code - docker/bots/hermes/start.sh
+- [[dot-__init__()_140]] - code - gateway/tests/test_key_rotation.py
+- [[dot-setup_manager_with_credential()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_check_and_rotate_due_credentials()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_emergency_rotation()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_grace_period_cleanup()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_register_validator()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_rotation_with_validation_failure()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_successful_rotation_workflow()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-validate()_2]] - code - gateway/tests/test_key_rotation.py
+- [[Mock validation that can be controlled.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Mock validator for testing.]] - rationale - gateway/tests/test_key_rotation.py
+- [[MockValidator]] - code - gateway/tests/test_key_rotation.py
+- [[Set up manager with a credential that needs rotation.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test bulk rotation check and execution.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test complete successful rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test emergency rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test grace period and old credential cleanup.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test rotation workflow with validation failure and rollback.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test the complete rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test validator registration.]] - rationale - gateway/tests/test_key_rotation.py
+- [[TestKeyRotationWorkflow]] - code - gateway/tests/test_key_rotation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,7 +40,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Skill UX Expert (UX)]]
+- 6 edges to [[_COMMUNITY_KeyRotationConfig]]
+- 5 edges to [[_COMMUNITY_CredentialInfo]]
+- 4 edges to [[_COMMUNITY_KeyRotationManager]]
+- 4 edges to [[_COMMUNITY_CredentialValidator]]
+- 2 edges to [[_COMMUNITY_test_key_rotation.py]]
 
 ## Top bridge nodes
-- [[Crash backoff escalation — 5 restarts600s pauses 300s (raw curl, helpers not yet defined)]] - degree 2, connects to 1 community
+- [[MockValidator]] - degree 14, connects to 5 communities
+- [[TestKeyRotationWorkflow]] - degree 14, connects to 5 communities
+- [[dot-setup_manager_with_credential()]] - degree 6, connects to 3 communities
+- [[dot-test_check_and_rotate_due_credentials()]] - degree 6, connects to 3 communities
+- [[dot-test_register_validator()]] - degree 3, connects to 1 community

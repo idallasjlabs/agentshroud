@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[test_alert_telegram_relay.py — AlertTelegramRelay tests]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[OTA API Header]] - code - firmware/voice-terminal/main/ota.h
 
 ## Live Query (requires Dataview plugin)
 

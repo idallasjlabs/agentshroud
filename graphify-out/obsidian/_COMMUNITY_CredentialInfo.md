@@ -1,32 +1,46 @@
 ---
 type: community
-cohesion: 0.12
-members: 17
+cohesion: 0.08
+members: 31
 ---
 
 # CredentialInfo
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 17 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 31 nodes
 
 ## Members
-- [[AWS Credentials_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[AWS Token expired (SSO)_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[AWS Unable to locate credentials_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Atlassian OAuth_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Atlassian OAuth flow failed_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[GitHub PAT_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[GitHub Bad credentials_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[GitHub Docker image not found_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Related Skills_97]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Role_89]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[SKILL_158]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Security Best Practices_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Troubleshooting_13]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Usage_100]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Verification Checklist_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[When to Invoke_6]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[dot-age_days()]] - code - gateway/security/key_rotation.py
+- [[dot-is_in_grace_period()]] - code - gateway/security/key_rotation.py
+- [[dot-manager()_2]] - code - gateway/tests/test_key_rotation.py
+- [[dot-sample_credential()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_age_calculation()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_get_credential_status()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_get_health_score_all_healthy()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_get_health_score_mixed_states()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_grace_period_tracking()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_not_due_without_force_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_register_credential()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_should_rotate()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_should_warn()]] - code - gateway/tests/test_key_rotation.py
+- [[Age of credential in days.]] - rationale - gateway/security/key_rotation.py
+- [[Create a manager with test configuration.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Create a sample credential for testing.]] - rationale - gateway/tests/test_key_rotation.py
+- [[CredentialInfo]] - code - gateway/security/key_rotation.py
+- [[Information about a managed credential.]] - rationale - gateway/security/key_rotation.py
+- [[Test credential age calculation.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test credential information tracking.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test credential registration.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test credential status reporting.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test grace period status tracking.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test health score calculation with all healthy credentials.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test health score with mixed credential states.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test key rotation manager functionality.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test rotation requirement calculation.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test warning threshold calculation.]] - rationale - gateway/tests/test_key_rotation.py
+- [[TestCredentialInfo]] - code - gateway/tests/test_key_rotation.py
+- [[TestKeyRotationManager]] - code - gateway/tests/test_key_rotation.py
+- [[Whether credential is currently in grace period.]] - rationale - gateway/security/key_rotation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,7 +50,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_sync-llm-settings.sh]]
+- 14 edges to [[_COMMUNITY_CredentialValidator]]
+- 11 edges to [[_COMMUNITY_KeyRotationConfig]]
+- 6 edges to [[_COMMUNITY_KeyRotationManager]]
+- 5 edges to [[_COMMUNITY_MockValidator]]
+- 4 edges to [[_COMMUNITY_test_key_rotation.py]]
 
 ## Top bridge nodes
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - degree 9, connects to 1 community
+- [[CredentialInfo]] - degree 35, connects to 5 communities
+- [[TestKeyRotationManager]] - degree 15, connects to 5 communities
+- [[TestCredentialInfo]] - degree 12, connects to 4 communities
+- [[dot-manager()_2]] - degree 4, connects to 2 communities
+- [[dot-test_should_rotate()]] - degree 4, connects to 1 community

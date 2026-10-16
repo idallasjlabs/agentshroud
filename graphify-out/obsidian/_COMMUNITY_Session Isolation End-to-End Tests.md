@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[i-sre SKILL.md (SRE practices skill, minimal stub)]] - document - docker/config/hermes/skills/i-sre/SKILL.md
+- [[Session Isolation End-to-End Tests]] - code - gateway/tests/test_session_isolation.py
 
 ## Live Query (requires Dataview plugin)
 

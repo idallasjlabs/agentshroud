@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SOUL.md Freshness Check Job]] - code - .github/workflows/ci.yml
+- [[Drift Detection in Pipeline]] - code - gateway/tests/test_security_integration.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,30 +1,42 @@
 ---
 type: community
-cohesion: 0.13
-members: 15
+cohesion: 0.07
+members: 27
 ---
 
 # Mode A — Single task
 
-**Cohesion:** 0.13 - loosely connected
-**Members:** 15 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 27 nodes
 
 ## Members
-- [[11 Cron Jobs]] - document - docs/architecture/agentic-os.md
-- [[11. Automated Operations]] - document - docs/architecture/agentic-os.md
-- [[Approval Queue (human-in-the-loop)]] - concept - docs/architecture/agentic-os.md
-- [[Blocked by default (private RFC1918 ranges)]] - image - docs/diagrams/images/diagram-05-network-topology.svg
-- [[DNS Filter]] - concept - docs/architecture/system-architecture.md
-- [[Egress Monitor]] - concept - docs/architecture/system-architecture.md
-- [[Gateway ManagementControl-Plane API (v1.3.0)]] - document - docs/api/api-reference.md
-- [[InspectionResult (data entity)]] - concept - docs/data/data-dictionary.md
-- [[OpenClaw Integration Guide (v0.9.0)]] - document - docs/api/integration-guide.md
-- [[SOC Dashboard]] - document - docs/architecture/agentic-os.md
-- [[SecurityFinding (data entity)]] - concept - docs/data/data-dictionary.md
-- [[URLAnalysisResult (data entity)]] - concept - docs/data/data-dictionary.md
-- [[egress-config.yml]] - code - docs/data/schema-documentation.md
-- [[gatewaysocrouter.py (SOC Shared Command Layer)]] - code - docs/api/api-reference.md
-- [[gatewaywebapi.py (Web control center)]] - code - docs/api/api-reference.md
+- [[Guardrails_6]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Invocation_4]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Jira ticket — every development batch gets one_4]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Mode A — Single task]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Mode B — Comprehensive review sweep_4]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Reviewers and fixer available to you_4]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Role_30]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Skill Hermes Dev Workflow (HDEV)_2]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 1 — One branch + worktree for the whole sweep_4]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 1 — Sync and confirm clean state]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 10 — Notify the owner]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 11 — Merge (only on explicit owner instruction)]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 12 — Clean up]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 2 — Create a branch + worktree]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 2 — Work through directories one at a time_4]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 2b — Create the Jira ticket]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 3 — After the last directory (or a natural stopping point)_4]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 3 — Write and edit code]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 4 — Test and lint]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 5 — Multi-LLM review]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 6 — Build and validate containers]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 7 — Update documentation and website]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 8 — Update the knowledge graph]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 9 — Push and open the PR]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 9b — Update the Jira ticket with the PR link]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Tools you have for this workflow_4]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[hermesskillsi-hdevSKILL]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,15 +44,3 @@ members: 15
 TABLE source_file, type FROM #community/Mode_A__Single_task
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_SSHProxy]]
-- 1 edge to [[_COMMUNITY_AgentShroud Agentic OS]]
-- 1 edge to [[_COMMUNITY_Skill Project Management (PM)]]
-- 1 edge to [[_COMMUNITY_1.4 Implementation Plan]]
-- 1 edge to [[_COMMUNITY_ADR-007 Zero-Config Security (docker-compose up]]
-
-## Top bridge nodes
-- [[Gateway ManagementControl-Plane API (v1.3.0)]] - degree 7, connects to 3 communities
-- [[11. Automated Operations]] - degree 3, connects to 1 community
-- [[Approval Queue (human-in-the-loop)]] - degree 2, connects to 1 community

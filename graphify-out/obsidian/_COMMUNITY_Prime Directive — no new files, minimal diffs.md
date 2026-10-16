@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[App Icon 512x512 (AgentShroud logo mark)]] - image - branding/icons/app/icon-512x512.png
+- [[Prime Directive — no new files, minimal diffs]] - rationale - CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 

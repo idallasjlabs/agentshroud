@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.25
+members: 8
 ---
 
 # Hermes — Reference Verifier
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[.test_api_key_detected()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_clean_output_high_score()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_exfil_pattern_detected()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_injection_detected()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_low_agent_trust_penalty()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_pii_detected_lowers_score()]] - code - gateway/tests/test_subagent_governance.py
-- [[TestOutputTrustScoring]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-agentsskillsi-hermesSKILL]] - document - .agents/skills/i-hermes/SKILL.md
+- [[Hermes — Reference Verifier]] - document - .agents/skills/i-hermes/SKILL.md
+- [[Input Requirements_1]] - document - .agents/skills/i-hermes/SKILL.md
+- [[Output Format]] - document - .agents/skills/i-hermes/SKILL.md
+- [[Persona]] - document - .agents/skills/i-hermes/SKILL.md
+- [[Quality Checklist_1]] - document - .agents/skills/i-hermes/SKILL.md
+- [[Role_2]] - document - .agents/skills/i-hermes/SKILL.md
+- [[System Prompt]] - document - .agents/skills/i-hermes/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,10 +25,3 @@ members: 7
 TABLE source_file, type FROM #community/Hermes__Reference_Verifier
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 4 edges to [[_COMMUNITY_Quick Reference — AgentShroud]]
-- 2 edges to [[_COMMUNITY_TestCanvasAuthHelpers]]
-
-## Top bridge nodes
-- [[TestOutputTrustScoring]] - degree 12, connects to 2 communities

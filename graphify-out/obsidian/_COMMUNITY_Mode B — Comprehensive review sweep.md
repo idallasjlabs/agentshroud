@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[.test_empty_files_skipped()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_invalid_then_valid()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_missing_dir_returns_none()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestLoadLatestJson_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Mode B — Comprehensive review sweep]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Step 1 — One branch + worktree for the whole sweep]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Step 2 — Work through directories one at a time]] - document - .agents/skills/i-hdev/SKILL.md
+- [[Step 3 — After the last directory (or a natural stopping point)]] - document - .agents/skills/i-hdev/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,10 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_TestMultilingualInjection]]
-- 1 edge to [[_COMMUNITY_wazuh_client.py]]
+- 1 edge to [[_COMMUNITY_Skill Hermes Dev Workflow (HDEV)]]
 
 ## Top bridge nodes
-- [[TestLoadLatestJson_1]] - degree 4, connects to 1 community
-- [[.test_empty_files_skipped()]] - degree 2, connects to 1 community
-- [[.test_invalid_then_valid()]] - degree 2, connects to 1 community
+- [[Mode B — Comprehensive review sweep]] - degree 4, connects to 1 community

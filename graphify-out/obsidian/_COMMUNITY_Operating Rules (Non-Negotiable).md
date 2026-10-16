@@ -10,13 +10,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[.test_bare_host_in_destination_field()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.test_bare_host_in_non_destination_field_ignored()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.test_direct_urls_dedup_and_lists()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.test_invalid_url_without_netloc_ignored()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.test_list_inherits_parent_key()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[.test_non_matching_text_in_destination_field()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[TestExtractEgressTargets]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[Operating Rules (Non-Negotiable)]] - document - .agents/skills/i-aws/SKILL.md
+- [[Rule 1 All Regions, Every Time]] - document - .agents/skills/i-aws/SKILL.md
+- [[Rule 2 Default Read-Only]] - document - .agents/skills/i-aws/SKILL.md
+- [[Rule 3 Script Everything]] - document - .agents/skills/i-aws/SKILL.md
+- [[Rule 4 Evidence-First Recommendations]] - document - .agents/skills/i-aws/SKILL.md
+- [[Rule 5 Safe Tagging]] - document - .agents/skills/i-aws/SKILL.md
+- [[Rule 6 Never Delete Automatically]] - document - .agents/skills/i-aws/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,13 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_test_voice_gateway.py]]
-- 3 edges to [[_COMMUNITY_GitGuard]]
-- 3 edges to [[_COMMUNITY_test_llm_proxy_local_parity.py]]
-- 1 edge to [[_COMMUNITY_brand-guidelines]]
-- 1 edge to [[_COMMUNITY_TestParanoidConfig]]
-- 1 edge to [[_COMMUNITY_asyncio]]
-- 1 edge to [[_COMMUNITY_AgentShroud v0.9.0 — Human Interface Testing Gui]]
+- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps Agent_2]]
 
 ## Top bridge nodes
-- [[TestExtractEgressTargets]] - degree 21, connects to 7 communities
+- [[Operating Rules (Non-Negotiable)]] - degree 7, connects to 1 community

@@ -1,49 +1,30 @@
 ---
 type: community
-cohesion: 0.11
-members: 34
+cohesion: 0.13
+members: 15
 ---
 
 # IEC 62443 Compliance Matrix — AgentShroud
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 34 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[.__init__()_63]] - code - gateway/security/config_integrity.py
-- [[._hash_file()]] - code - gateway/security/config_integrity.py
-- [[._load_baseline()]] - code - gateway/security/config_integrity.py
-- [[._save_baseline()]] - code - gateway/security/config_integrity.py
-- [[.check()_2]] - code - gateway/security/config_integrity.py
-- [[.format_alert_text()]] - code - gateway/security/config_integrity.py
-- [[.reset_baseline()]] - code - gateway/security/config_integrity.py
-- [[Accept current file hashes as the new baseline (owner-acknowledged rebuild).]] - rationale - gateway/security/config_integrity.py
-- [[Compare current file hashes against baseline.          Returns a list of change]] - rationale - gateway/security/config_integrity.py
-- [[Computes and verifies SHA256 hashes of monitored bot config files.      At gatew]] - rationale - gateway/security/config_integrity.py
-- [[ConfigIntegrityMonitor]] - code - gateway/security/config_integrity.py
-- [[Format Telegram alert text for detected config changes.]] - rationale - gateway/security/config_integrity.py
-- [[Load the last known baseline from disk. Returns empty dict if not found.]] - rationale - gateway/security/config_integrity.py
-- [[Path_10]] - code - gateway/security/config_integrity.py
-- [[Persist the current hashes as the new baseline.]] - rationale - gateway/security/config_integrity.py
-- [[Return (bot_config_dir, baseline_path) rooted in an isolated tmp dir.]] - rationale - gateway/tests/test_config_integrity_monitor.py
-- [[Return hex SHA256 of a file, or None if the file does not exist.]] - rationale - gateway/security/config_integrity.py
-- [[_write_openclaw()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[dirs()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_added_file_is_detected()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_baseline_advances_only_when_clean()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_config_integrity_monitor.py]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_first_boot_establishes_baseline_without_alerts()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_format_alert_text_handles_missing_hashes()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_format_alert_text_includes_event_and_hash_prefixes()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_hash_file_is_stable_and_content_sensitive()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_hash_file_returns_none_for_missing()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_load_baseline_missing_file_returns_empty()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_load_baseline_tolerates_corrupt_json()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_modified_file_is_detected()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_removed_file_is_detected()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_reset_baseline_accepts_current_state()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_tamper_baseline_is_not_advanced_so_alert_refires()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[test_unchanged_second_run_reports_no_changes()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[Current Assessment SL 2 (with SL 3 capabilities in FR 2, FR 3, FR 4, FR 6)]] - document - docs/compliance/iec-62443-matrix.md
+- [[FR 1 Identification and Authentication Control (IAC)]] - document - docs/compliance/iec-62443-matrix.md
+- [[FR 2 Use Control (UC)]] - document - docs/compliance/iec-62443-matrix.md
+- [[FR 3 System Integrity (SI)]] - document - docs/compliance/iec-62443-matrix.md
+- [[FR 5 Restricted Data Flow (RDF)]] - document - docs/compliance/iec-62443-matrix.md
+- [[FR 6 Timely Response to Events (TRE)]] - document - docs/compliance/iec-62443-matrix.md
+- [[FR 7 Resource Availability (RA)]] - document - docs/compliance/iec-62443-matrix.md
+- [[FR1 Identification and Authentication Control]] - concept - docs/compliance/iec-62443-matrix.md
+- [[FR5 Restricted Data Flow]] - concept - docs/compliance/iec-62443-matrix.md
+- [[FR6 Timely Response to Events]] - concept - docs/compliance/iec-62443-matrix.md
+- [[IEC 62443 Compliance Matrix — AgentShroud]] - document - docs/compliance/iec-62443-matrix.md
+- [[Key Components Referenced (v1.0.0)]] - document - docs/compliance/iec-62443-matrix.md
+- [[Overview_29]] - document - docs/compliance/iec-62443-matrix.md
+- [[Summary_26]] - document - docs/compliance/iec-62443-matrix.md
+- [[iec-62443-matrix]] - document - docs/compliance/iec-62443-matrix.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -53,8 +34,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY__wrap_response()]]
-- 1 edge to [[_COMMUNITY_chatbotmain.py]]
+- 2 edges to [[_COMMUNITY_OutboundInfoFilter]]
+- 1 edge to [[_COMMUNITY_AuditStore]]
+- 1 edge to [[_COMMUNITY_TestEgressApprovalQueue]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
+- 1 edge to [[_COMMUNITY_FR3 System Integrity]]
+- 1 edge to [[_COMMUNITY_export-bot-conversations.py]]
+- 1 edge to [[_COMMUNITY_diagramsREADME]]
 
 ## Top bridge nodes
-- [[ConfigIntegrityMonitor]] - degree 26, connects to 2 communities
+- [[iec-62443-matrix]] - degree 8, connects to 4 communities
+- [[FR5 Restricted Data Flow]] - degree 4, connects to 3 communities
+- [[IEC 62443 Compliance Matrix — AgentShroud]] - degree 11, connects to 1 community
+- [[FR6 Timely Response to Events]] - degree 2, connects to 1 community

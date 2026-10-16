@@ -1,33 +1,34 @@
 ---
 type: community
-cohesion: 0.15
-members: 18
+cohesion: 0.11
+members: 19
 ---
 
 # Skill: MCP Doctor (MCPM-DOCTOR)
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 18 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 19 nodes
 
 ## Members
-- [[Branding Specialist Skill (i-bs, external)]] - concept - .agents/skills/i-bs/SKILL.md
-- [[Purpose_33]] - document - .agents/skills/i-tdd/README.md
-- [[Purpose_70]] - document - docker/config/hermes/skills/i-tdd/README.md
-- [[README_33]] - document - .agents/skills/i-tdd/README.md
-- [[README_75]] - document - docker/config/hermes/skills/i-tdd/README.md
-- [[Related Skills_36]] - document - .agents/skills/i-tdd/README.md
-- [[Related Skills_76]] - document - docker/config/hermes/skills/i-tdd/README.md
-- [[Technical Illustrator (TI)_2]] - document - .agents/skills/i-ti/SKILL.md
-- [[Technical Illustrator README]] - document - .agents/skills/i-ti/README.md
-- [[Technical Writer (TW)_3]] - document - .agents/skills/i-tw/SKILL.md
-- [[Technical Writer README]] - document - .agents/skills/i-tw/README.md
-- [[Test-Driven Development (TDD)]] - document - docker/config/hermes/skills/i-tdd/README.md
-- [[Test-Driven Development (TDD) Coach]] - document - .agents/skills/i-tdd/SKILL.md
-- [[Test-Driven Development README]] - document - .agents/skills/i-tdd/README.md
-- [[UI Expert (UI)]] - document - .agents/skills/i-ui/SKILL.md
-- [[UX Skill (i-ux, external)]] - concept - .agents/skills/i-ux/SKILL.md
-- [[Usage_36]] - document - .agents/skills/i-tdd/README.md
-- [[Usage_77]] - document - docker/config/hermes/skills/i-tdd/README.md
+- [[dot-agentsskillsi-mcpm-doctorSKILL]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[1. Check MCP Configuration]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[2. Test GitHub MCP Server]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[3. Test Atlassian MCP Server]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[4. Test AWS API MCP Server]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Common Issues & Fixes]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Diagnostic Capabilities]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Diagnostic Workflow]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Issue AWS credentials not found]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Issue Atlassian OAuth token expired]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Issue Docker not found]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Issue GitHub MCP authentication failed]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Issue npx not found]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Issue uvx not found]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Output Format_16]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Related Skills_82]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Role_49]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[Skill MCP Doctor (MCPM-DOCTOR)]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[When to Invoke_3]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,11 +36,3 @@ members: 18
 TABLE source_file, type FROM #community/Skill_MCP_Doctor_MCPM-DOCTOR
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
-- 1 edge to [[_COMMUNITY_SlackAPIProxy]]
-- 1 edge to [[_COMMUNITY_AuditExporter]]
-
-## Top bridge nodes
-- [[Test-Driven Development README]] - degree 11, connects to 3 communities

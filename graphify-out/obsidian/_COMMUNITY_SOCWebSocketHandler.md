@@ -1,38 +1,38 @@
 ---
 type: community
-cohesion: 0.09
+cohesion: 0.14
 members: 23
 ---
 
 # SOCWebSocketHandler
 
-**Cohesion:** 0.09 - loosely connected
+**Cohesion:** 0.14 - loosely connected
 **Members:** 23 nodes
 
 ## Members
-- [[A) Validation Execution]] - document - .github/agents/validation-runner.agent.md
-- [[B) Result Reporting]] - document - .github/agents/validation-runner.agent.md
-- [[C) Quality Gate Checks]] - document - .github/agents/validation-runner.agent.md
-- [[Common Validation Commands]] - document - .github/agents/validation-runner.agent.md
-- [[Comprehensive Checks]] - document - .github/agents/validation-runner.agent.md
-- [[Data Pipeline Validation]] - document - .github/agents/validation-runner.agent.md
-- [[Data Validation]] - document - .github/agents/validation-runner.agent.md
-- [[Definition of Done_2]] - document - .github/agents/validation-runner.agent.md
-- [[Error Handling_2]] - document - .github/agents/validation-runner.agent.md
-- [[Failed Validation]] - document - .github/agents/validation-runner.agent.md
-- [[Python Validation]] - document - .github/agents/validation-runner.agent.md
-- [[Quick Checks]] - document - .github/agents/validation-runner.agent.md
-- [[Remember_2]] - document - .github/agents/validation-runner.agent.md
-- [[Report Format]] - document - .github/agents/validation-runner.agent.md
-- [[Repository Context_3]] - document - .github/agents/validation-runner.agent.md
-- [[Role Definition_2]] - document - .github/agents/validation-runner.agent.md
-- [[Successful Validation]] - document - .github/agents/validation-runner.agent.md
-- [[Validation Runner Specialist]] - document - .github/agents/validation-runner.agent.md
-- [[Validation Workflows]] - document - .github/agents/validation-runner.agent.md
-- [[What You CANNOT Do_1]] - document - .github/agents/validation-runner.agent.md
-- [[When Environment Issues]] - document - .github/agents/validation-runner.agent.md
-- [[When Validation Fails]] - document - .github/agents/validation-runner.agent.md
-- [[Your Responsibilities_1]] - document - .github/agents/validation-runner.agent.md
+- [[dot-__init__()_138]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-_handler()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-subscribe()_1]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_command_invalid_json_ignored()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_command_message_updates_subscription()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_fan_out_filters_and_forwards()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_fan_out_survives_coerce_exception()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_initial_invalid_json_ignored()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_initial_subscribe_message_sets_filter()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_initial_timeout_subscribes_to_all()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_inner_timeout_continues_loop()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_keepalive_breaks_on_construction_error()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_keepalive_sends_pings()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_none_bus_returns_immediately()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_send_event_serializes()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_send_event_swallows_transport_error()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-unsubscribe()_1]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[SOCWebSocketHandler_1]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestEventFanOut]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestHandlerRun]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestSendEventAndKeepalive]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[_FakeBus]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[_spin()]] - code - gateway/tests/test_soc_realtime_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,8 +42,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ADR-002 Default-Allow Security Philosophy]]
-- 1 edge to [[_COMMUNITY_OpenClaw Skill Metadata Schema (frontmatter conv]]
+- 16 edges to [[_COMMUNITY_Action]]
+- 7 edges to [[_COMMUNITY_Enum]]
+- 7 edges to [[_COMMUNITY_AsyncMock]]
+- 5 edges to [[_COMMUNITY_RBACConfig]]
+- 5 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 5 edges to [[_COMMUNITY_Role]]
 
 ## Top bridge nodes
-- [[Validation Runner Specialist]] - degree 12, connects to 2 communities
+- [[TestHandlerRun]] - degree 14, connects to 5 communities
+- [[_FakeBus]] - degree 12, connects to 5 communities
+- [[TestSendEventAndKeepalive]] - degree 11, connects to 5 communities
+- [[TestEventFanOut]] - degree 10, connects to 5 communities
+- [[SOCWebSocketHandler_1]] - degree 14, connects to 4 communities

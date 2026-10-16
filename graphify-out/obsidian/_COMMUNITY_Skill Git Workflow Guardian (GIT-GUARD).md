@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Skill: Git Workflow Guardian (GIT-GUARD)
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[(method, path) for every non-destructive route declaring a requestBody.]] - rationale - gateway/tests/test_api_contract_fuzz.py
-- [[_deep_nest()]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[_fuzzable_endpoints()]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[client()_1]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[test_api_contract_fuzz.py]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[test_destructive_routes_are_excluded()]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[test_endpoint_survives_adversarial_body()]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[test_fuzz_surface_is_nonempty()]] - code - gateway/tests/test_api_contract_fuzz.py
+- [[dot-agentsskillsi-ggSKILL]] - document - .agents/skills/i-gg/SKILL.md
+- [[Branch Naming]] - document - .agents/skills/i-gg/SKILL.md
+- [[Commit Messages  (Conventional Commits)]] - document - .agents/skills/i-gg/SKILL.md
+- [[Emergency Hotfix_3]] - document - .agents/skills/i-gg/SKILL.md
+- [[Mandatory Workflow  (10 steps)]] - document - .agents/skills/i-gg/SKILL.md
+- [[Protected Branch]] - document - .agents/skills/i-gg/SKILL.md
+- [[REFUSE These]] - document - .agents/skills/i-gg/SKILL.md
+- [[Role_103]] - document - .agents/skills/i-gg/SKILL.md
+- [[Skill Git Workflow Guardian (GIT-GUARD)]] - document - .agents/skills/i-gg/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,3 +26,9 @@ members: 8
 TABLE source_file, type FROM #community/Skill_Git_Workflow_Guardian_GIT-GUARD
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
+
+## Top bridge nodes
+- [[Skill Git Workflow Guardian (GIT-GUARD)]] - degree 9, connects to 1 community

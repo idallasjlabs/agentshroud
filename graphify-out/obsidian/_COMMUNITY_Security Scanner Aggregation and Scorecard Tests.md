@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Docs Drift Check Job]] - code - .github/workflows/ci.yml
+- [[Security Scanner Aggregation and Scorecard Tests]] - code - gateway/tests/test_scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
 

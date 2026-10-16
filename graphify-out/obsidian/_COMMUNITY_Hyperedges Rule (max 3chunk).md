@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Unicode Bypass]] - concept - docs/project/glossary.md
+- [[Hyperedges Rule (max 3chunk)]] - concept - docker/config/openclaw/skills/graphify/references/extraction-spec.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Production Safety Checklist (PROD-SAFETY)
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[.test_clamd_running_true_with_connectable_socket()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_fluent_bit_running_false_without_pidfile()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_fluent_bit_running_true_with_live_pid()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestSocketAndPidProbes]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Production Safety Checklist (PROD-SAFETY)]] - document - docker/config/openclaw/skills/i-ps/README.md
+- [[Purpose_50]] - document - docker/config/openclaw/skills/i-ps/README.md
+- [[Related Skills_43]] - document - docker/config/openclaw/skills/i-ps/README.md
+- [[Usage_46]] - document - docker/config/openclaw/skills/i-ps/README.md
+- [[openclawskillsi-psREADME]] - document - docker/config/openclaw/skills/i-ps/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_wazuh_client.py]]
-- 1 edge to [[_COMMUNITY_TestMultilingualInjection]]
+- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[TestSocketAndPidProbes]] - degree 4, connects to 1 community
-- [[.test_fluent_bit_running_true_with_live_pid()]] - degree 2, connects to 1 community
+- [[Production Safety Checklist (PROD-SAFETY)]] - degree 5, connects to 1 community

@@ -1,39 +1,25 @@
 ---
 type: community
-cohesion: 0.08
-members: 24
+cohesion: 0.20
+members: 10
 ---
 
 # Restart Procedure
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 24 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[1. The Problem Unsecured AI Agents]] - document - docs/papers/agentshroud-whitepaper.md
-- [[1.1 The New Attack Surface]] - document - docs/papers/agentshroud-whitepaper.md
-- [[1.2 The Industry Gap]] - document - docs/papers/agentshroud-whitepaper.md
-- [[1.3 Threat Model]] - document - docs/papers/agentshroud-whitepaper.md
-- [[12. Roadmap]] - document - docs/papers/agentshroud-whitepaper.md
-- [[13. Conclusion]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4. Defense-in-Depth Container Security]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.1 Build-Time Image Scanning (Trivy)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.2 Runtime Malware Detection (ClamAV)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.3 Runtime Syscall Monitoring (Falco)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.4 Host Integrity Monitoring (Wazuh)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.5 Compliance Scanning (OpenSCAP)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.6 Daily Security Health Report]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.7 Zero-Configuration Security]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.8 Container Security — Competitive Comparison]] - document - docs/papers/agentshroud-whitepaper.md
-- [[6. Competitive Landscape]] - document - docs/papers/agentshroud-whitepaper.md
-- [[6.1 Market Overview]] - document - docs/papers/agentshroud-whitepaper.md
-- [[6.2 Comparison Table]] - document - docs/papers/agentshroud-whitepaper.md
-- [[6.3 Key Differentiators]] - document - docs/papers/agentshroud-whitepaper.md
-- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - document - docs/papers/agentshroud-whitepaper.md
-- [[Completed Phases]] - document - docs/papers/agentshroud-whitepaper.md
-- [[Executive Summary]] - document - docs/papers/agentshroud-whitepaper.md
-- [[Future Phases (Planned)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[agentshroud-whitepaper]] - document - docs/papers/agentshroud-whitepaper.md
+- [[After Config Change]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[After Secret Rotation]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Bot Only Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Full Stack Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Gateway Only Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Related Notes_67]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Restart Procedure_2]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Restart Verification]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[When to Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Zero-Downtime Restart (Advanced)]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,14 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Blue Team Security Auditor]]
-- 1 edge to [[_COMMUNITY_AgentShroud Web Control Center - Implementation]]
-- 1 edge to [[_COMMUNITY_gitleaks.toml]]
-- 1 edge to [[_COMMUNITY_Himalaya Configuration Reference]]
-- 1 edge to [[_COMMUNITY_Mnemosyne — Retention Engineer]]
-- 1 edge to [[_COMMUNITY_AgentShroud Security Perimeter]]
-- 1 edge to [[_COMMUNITY_RovoBlast Attack (Atlassian Rovo AI)]]
-- 1 edge to [[_COMMUNITY_Flip core security modules from monitor to enfor]]
+- 1 edge to [[_COMMUNITY_First Time Setup]]
 
 ## Top bridge nodes
-- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - degree 15, connects to 8 communities
+- [[Restart Procedure_2]] - degree 10, connects to 1 community

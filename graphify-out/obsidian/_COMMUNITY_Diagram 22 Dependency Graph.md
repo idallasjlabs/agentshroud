@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[PIISanitizer.block_credentials]] - code - gateway/ingest_api/sanitizer.py
+- [[Diagram 22 Dependency Graph]] - image - docs/diagrams/images/diagram-22-dependency-graph.svg
 
 ## Live Query (requires Dataview plugin)
 

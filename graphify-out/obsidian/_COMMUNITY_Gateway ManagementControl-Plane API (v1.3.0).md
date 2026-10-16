@@ -1,42 +1,30 @@
 ---
 type: community
-cohesion: 0.07
-members: 27
+cohesion: 0.13
+members: 15
 ---
 
 # Gateway Management/Control-Plane API (v1.3.0)
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 27 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[401 Unauthorized_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[CalendarContacts not found_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Connection timeout_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Add Contact_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Calendar Operations_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Configuration]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Contact Operations_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Create Event_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Create Note_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Delete Event_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[List Contacts_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[List Events_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[List Messages_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[List Notes_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Mail Operations_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Notes Operations_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[SKILL_89]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Search Contacts_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Search Mail_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Search Notes_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Security_3]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Send Email_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Setup_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Troubleshooting_8]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Update Contact_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Update Event_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[iCloud Services_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[11 Cron Jobs]] - document - docs/architecture/agentic-os.md
+- [[11. Automated Operations]] - document - docs/architecture/agentic-os.md
+- [[Approval Queue (human-in-the-loop)]] - concept - docs/architecture/agentic-os.md
+- [[Blocked by default (private RFC1918 ranges)]] - image - docs/diagrams/images/diagram-05-network-topology.svg
+- [[DNS Filter]] - concept - docs/architecture/system-architecture.md
+- [[Egress Monitor]] - concept - docs/architecture/system-architecture.md
+- [[Gateway ManagementControl-Plane API (v1.3.0)]] - document - docs/api/api-reference.md
+- [[InspectionResult (data entity)]] - concept - docs/data/data-dictionary.md
+- [[OpenClaw Integration Guide (v0.9.0)]] - document - docs/api/integration-guide.md
+- [[SOC Dashboard]] - document - docs/architecture/agentic-os.md
+- [[SecurityFinding (data entity)]] - concept - docs/data/data-dictionary.md
+- [[URLAnalysisResult (data entity)]] - concept - docs/data/data-dictionary.md
+- [[egress-config.yml]] - code - docs/data/schema-documentation.md
+- [[gatewaysocrouter.py (SOC Shared Command Layer)]] - code - docs/api/api-reference.md
+- [[gatewaywebapi.py (Web control center)]] - code - docs/api/api-reference.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,7 +34,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY__make_tm()]]
+- 1 edge to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Agentic OS]]
+- 1 edge to [[_COMMUNITY_ADR-009 Enforce-by-Default Security Philosophy]]
+- 1 edge to [[_COMMUNITY_ADR-005 SHA-256 Hash Chain Audit Integrity]]
+- 1 edge to [[_COMMUNITY_Proxy Layer]]
 
 ## Top bridge nodes
-- [[iCloud Services_1]] - degree 10, connects to 1 community
+- [[Gateway ManagementControl-Plane API (v1.3.0)]] - degree 7, connects to 3 communities
+- [[11. Automated Operations]] - degree 3, connects to 1 community
+- [[Approval Queue (human-in-the-loop)]] - degree 2, connects to 1 community

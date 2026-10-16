@@ -1,25 +1,25 @@
 ---
 type: community
-cohesion: 0.29
+cohesion: 0.20
 members: 10
 ---
 
 # REPORT STRUCTURE
 
-**Cohesion:** 0.29 - loosely connected
+**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members
-- [[._build_bridge()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_bridge_registered_via_add_alert_callback_fires_through()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_missing_timestamp_falls_back_to_zero()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_non_spike_alert_dispatched_with_medium_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_spike_alert_dispatched_with_high_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[Any_69]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[End-to-end register the bridge on a real ResourceGuard, trigger         its ale]] - rationale - gateway/tests/test_resource_guard_wiring.py
-- [[Recreate the lifespan bridge closure verbatim from gatewayingest_apilifespan.p]] - rationale - gateway/tests/test_resource_guard_wiring.py
-- [[TestResourceGuardAlertBridge]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[The lifespan bridges ResourceGuard's native callback payload to AlertDispatcher.]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[ANTI-HALLUCINATION CHECKLIST]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[CRITICAL RULES — READ BEFORE DOING ANYTHING]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[Competitive Intelligence Report — Standard Prompt (Hermes Agent)]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[OUTPUT REQUIREMENTS]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[REPORT STRUCTURE]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[SECTION 1 MARKET ANALYSIS]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[SECTION 2 COMPETITIVE ANALYSIS — AGENT SECURITY TOOLS]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[SECTION 3 AUTONOMOUS AGENT ECOSYSTEM UPDATE]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[SECTION 4 NEXT STEPS TO STAY AHEAD]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[hermesworkspacecompetitive-analysis]] - document - docker/config/hermes/workspace/competitive-analysis.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,12 +27,3 @@ members: 10
 TABLE source_file, type FROM #community/REPORT_STRUCTURE
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 3 edges to [[_COMMUNITY_voice_task]]
-- 3 edges to [[_COMMUNITY_rbac_config.py]]
-
-## Top bridge nodes
-- [[TestResourceGuardAlertBridge]] - degree 9, connects to 2 communities
-- [[Any_69]] - degree 3, connects to 2 communities
-- [[.test_bridge_registered_via_add_alert_callback_fires_through()]] - degree 4, connects to 1 community

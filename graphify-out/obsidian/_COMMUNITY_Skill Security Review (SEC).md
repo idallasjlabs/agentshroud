@@ -1,27 +1,28 @@
 ---
 type: community
-cohesion: 0.17
-members: 12
+cohesion: 0.15
+members: 13
 ---
 
 # Skill: Security Review (SEC)
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 12 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[Cloud & FinOps_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[Content & Communication_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[Core Development_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[Data Operations_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[Investigation_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[MCP Tools_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[Production Safety_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[Reference_2]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[SecureClaw (Project-Specific)_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[Skills by Category_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[System Utilities_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
-- [[Workflow_4]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[dot-agentsskillsi-secSKILL]] - document - .agents/skills/i-sec/SKILL.md
+- [[Anti-Patterns to Flag_18]] - document - .agents/skills/i-sec/SKILL.md
+- [[Core Principle]] - document - .agents/skills/i-sec/SKILL.md
+- [[Layer 1 Application Security]] - document - .agents/skills/i-sec/SKILL.md
+- [[Layer 2 Container Security]] - document - .agents/skills/i-sec/SKILL.md
+- [[Layer 3 Network Security]] - document - .agents/skills/i-sec/SKILL.md
+- [[Layer 4 Data Flow Security]] - document - .agents/skills/i-sec/SKILL.md
+- [[Output Format_31]] - document - .agents/skills/i-sec/SKILL.md
+- [[Review Layers]] - document - .agents/skills/i-sec/SKILL.md
+- [[Role_79]] - document - .agents/skills/i-sec/SKILL.md
+- [[SecureClaw-Specific Threat Model]] - document - .agents/skills/i-sec/SKILL.md
+- [[Skill Security Review (SEC)]] - document - .agents/skills/i-sec/SKILL.md
+- [[Verification Commands]] - document - .agents/skills/i-sec/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,7 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_clamav_scanner.py]]
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[Skills by Category_1]] - degree 12, connects to 1 community
+- [[Skill Security Review (SEC)]] - degree 9, connects to 1 community

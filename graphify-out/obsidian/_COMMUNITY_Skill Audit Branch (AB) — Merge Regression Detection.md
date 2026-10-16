@@ -1,0 +1,40 @@
+---
+type: community
+cohesion: 0.13
+members: 15
+---
+
+# Skill: Audit Branch (AB) — Merge Regression Detection
+
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
+
+## Members
+- [[dot-agentsskillsi-abSKILL]] - document - .agents/skills/i-ab/SKILL.md
+- [[Check A — Substantive change on the losing side]] - document - .agents/skills/i-ab/SKILL.md
+- [[Check B — Tied to a real ticket]] - document - .agents/skills/i-ab/SKILL.md
+- [[Check C — Still broken at HEAD (not self-healed)]] - document - .agents/skills/i-ab/SKILL.md
+- [[Guardrails_9]] - document - .agents/skills/i-ab/SKILL.md
+- [[Invocation Forms]] - document - .agents/skills/i-ab/SKILL.md
+- [[Jira  PR Comment Format]] - document - .agents/skills/i-ab/SKILL.md
+- [[Role_66]] - document - .agents/skills/i-ab/SKILL.md
+- [[Skill Audit Branch (AB) — Merge Regression Detection]] - document - .agents/skills/i-ab/SKILL.md
+- [[Step 1 — Verify the script exists]] - document - .agents/skills/i-ab/SKILL.md
+- [[Step 2 — Determine the target]] - document - .agents/skills/i-ab/SKILL.md
+- [[Step 3 — Run the audit script]] - document - .agents/skills/i-ab/SKILL.md
+- [[Step 4 — Triage each finding]] - document - .agents/skills/i-ab/SKILL.md
+- [[Step 5 — Classify findings]] - document - .agents/skills/i-ab/SKILL.md
+- [[Step 6 — Output the report]] - document - .agents/skills/i-ab/SKILL.md
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Skill_Audit_Branch_AB__Merge_Regression_Detection
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
+
+## Top bridge nodes
+- [[Skill Audit Branch (AB) — Merge Regression Detection]] - degree 12, connects to 1 community

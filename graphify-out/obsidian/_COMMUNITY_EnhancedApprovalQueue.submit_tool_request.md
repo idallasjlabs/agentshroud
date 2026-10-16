@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[v0.9.0 Sentinel — SOC team collaboration]] - document - CHANGELOG.md
+- [[EnhancedApprovalQueue.submit_tool_request]] - code - gateway/approval_queue/enhanced_queue.py
 
 ## Live Query (requires Dataview plugin)
 

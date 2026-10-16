@@ -1,35 +1,36 @@
 ---
 type: community
 cohesion: 0.10
-members: 20
+members: 21
 ---
 
 # Pre-Deployment Checklist
 
 **Cohesion:** 0.10 - loosely connected
-**Members:** 20 nodes
+**Members:** 21 nodes
 
 ## Members
-- [[Backup]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[Cleanup Warning]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[Container Integration]] - document - docs/vault/05 - Dependencies/playwright.md
-- [[Docker Volumes]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[Inspecting Volumes]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[Playwright]] - document - docs/vault/05 - Dependencies/playwright.md
-- [[Purpose_190]] - document - docs/vault/05 - Dependencies/playwright.md
-- [[Related Notes_45]] - document - docs/vault/05 - Dependencies/playwright.md
-- [[Related Notes_54]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[Security Controls_2]] - document - docs/vault/05 - Dependencies/playwright.md
-- [[Volume]] - document - docs/vault/05 - Dependencies/playwright.md
-- [[Volume Details]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[Volume Inventory]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[agentshroud-browsers]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[agentshroud-config]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[agentshroud-ssh]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[agentshroud-workspace]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[gateway-data]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[playwright_1]] - document - docs/vault/05 - Dependencies/playwright.md
-- [[volumes]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[dot-agentsskillsi-psSKILL]] - document - .agents/skills/i-ps/SKILL.md
+- [[1. Change Documentation]] - document - .agents/skills/i-ps/SKILL.md
+- [[2. Testing Evidence]] - document - .agents/skills/i-ps/SKILL.md
+- [[3. Backups & Rollback]] - document - .agents/skills/i-ps/SKILL.md
+- [[4. Blast Radius]] - document - .agents/skills/i-ps/SKILL.md
+- [[5. Observability]] - document - .agents/skills/i-ps/SKILL.md
+- [[6. Security]] - document - .agents/skills/i-ps/SKILL.md
+- [[7. Communication]] - document - .agents/skills/i-ps/SKILL.md
+- [[8. Service Control Commands]] - document - .agents/skills/i-ps/SKILL.md
+- [[Emergency Stop (P1 Incidents Only)]] - document - .agents/skills/i-ps/SKILL.md
+- [[If Something Goes Wrong]] - document - .agents/skills/i-ps/SKILL.md
+- [[Immediate (0–15 min)]] - document - .agents/skills/i-ps/SKILL.md
+- [[Invoke Before]] - document - .agents/skills/i-ps/SKILL.md
+- [[Pause Before Testing (Copy-Paste Ready)]] - document - .agents/skills/i-ps/SKILL.md
+- [[Post-Deployment Verification]] - document - .agents/skills/i-ps/SKILL.md
+- [[Pre-Deployment Checklist]] - document - .agents/skills/i-ps/SKILL.md
+- [[Resume After Testing (MANDATORY)]] - document - .agents/skills/i-ps/SKILL.md
+- [[Role_42]] - document - .agents/skills/i-ps/SKILL.md
+- [[Short-Term (15 min – 24 hr)]] - document - .agents/skills/i-ps/SKILL.md
+- [[Sign-Off]] - document - .agents/skills/i-ps/SKILL.md
+- [[Skill Production Safety Checklist (PROD-SAFETY)]] - document - .agents/skills/i-ps/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,10 +40,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_PipelineAction]]
-- 1 edge to [[_COMMUNITY_TestFileSandbox]]
-- 1 edge to [[_COMMUNITY_Telegram Formatting Rule (bold only, no headers]]
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[volumes]] - degree 4, connects to 2 communities
-- [[playwright_1]] - degree 3, connects to 1 community
+- [[Skill Production Safety Checklist (PROD-SAFETY)]] - degree 7, connects to 1 community

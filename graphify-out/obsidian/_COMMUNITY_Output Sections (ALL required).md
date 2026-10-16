@@ -1,27 +1,29 @@
 ---
 type: community
-cohesion: 0.17
-members: 12
+cohesion: 0.14
+members: 14
 ---
 
 # Output Sections (ALL required)
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 12 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[description of what this does_1]] - document - docker/config/hermes/skills/i-athena/SKILL.md
-- [[Athena — Knowledge Distiller_2]] - document - docker/config/hermes/skills/i-athena/SKILL.md
-- [[Input Requirements_11]] - document - docker/config/hermes/skills/i-athena/SKILL.md
-- [[Output Format_13]] - document - docker/config/hermes/skills/i-athena/SKILL.md
-- [[Persona_8]] - document - docker/config/hermes/skills/i-athena/SKILL.md
-- [[Quality Checklist_10]] - document - docker/config/hermes/skills/i-athena/SKILL.md
-- [[Role_42]] - document - docker/config/hermes/skills/i-athena/SKILL.md
-- [[SKILL_69]] - document - docker/config/hermes/skills/i-athena/SKILL.md
-- [[System Prompt_8]] - document - docker/config/hermes/skills/i-athena/SKILL.md
-- [[User Prompt Template_4]] - document - docker/config/hermes/skills/i-athena/SKILL.md
-- [[cheatsheet_1]] - document - docker/config/hermes/skills/i-athena/SKILL.md
-- [[show_notes_1]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[1. Scope of Change]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[2. What Changes and Why]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[3. Scalability Gate]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[4. Blast Radius_3]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[5. Known Limits and Assumptions]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[6. Alternatives Considered]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[7. Open Questions]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[8. Verification Plan]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[Closing Gate_2]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[Output Format Rules_2]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[Output Sections (ALL required)]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[Role_75]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[Skill Pre-Change Analysis (PCA)_2]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[openclawskillsi-pcaSKILL]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,3 +31,9 @@ members: 12
 TABLE source_file, type FROM #community/Output_Sections_ALL_required
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+
+## Top bridge nodes
+- [[Skill Pre-Change Analysis (PCA)_2]] - degree 6, connects to 1 community

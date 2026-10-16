@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Cron Daily Competitive Analysis Email]] - document - docker/bots/openclaw/config/cron/jobs.json
+- [[PWA Icon 192x192 (AgentShroud logo mark)]] - image - branding/favicons/icon-192x192.png
 
 ## Live Query (requires Dataview plugin)
 

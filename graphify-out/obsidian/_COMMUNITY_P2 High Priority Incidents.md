@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.25
+members: 8
 ---
 
 # P2 High Priority Incidents
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[CPA Curriculum Frontmatter Addition]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Coverage Types]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Episode Closing]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Exam Weight Integration]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Gleim Unit Mapping]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Mandatory Acronym Expansion]] - document - .agents/skills/i-atlas/SKILL.md
-- [[OKE Channel — CPA Exam Context]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Kill Switch Triggered]] - document - docs/operations/incident-response.md
+- [[Layer 1 Pattern Matching]] - document - docs/security/security-architecture.md
+- [[Layer 2 Unicode Normalization]] - document - docs/security/security-architecture.md
+- [[Layer 3 Multi-Layer Decoding]] - document - docs/security/security-architecture.md
+- [[Multi-Layer Detection Strategy]] - document - docs/security/security-architecture.md
+- [[P2 High Priority Incidents]] - document - docs/operations/incident-response.md
+- [[PII Leak Incident]] - document - docs/operations/incident-response.md
+- [[Prompt Injection Detected]] - document - docs/operations/incident-response.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +27,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_MCP AWS Profile Configuration README]]
+- 1 edge to [[_COMMUNITY_AgentShroud Incident Response Plan]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Architecture]]
 
 ## Top bridge nodes
-- [[OKE Channel — CPA Exam Context]] - degree 7, connects to 1 community
+- [[P2 High Priority Incidents]] - degree 4, connects to 1 community
+- [[Prompt Injection Detected]] - degree 3, connects to 1 community

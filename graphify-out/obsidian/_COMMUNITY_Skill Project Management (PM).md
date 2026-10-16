@@ -1,33 +1,34 @@
 ---
 type: community
 cohesion: 0.11
-members: 18
+members: 19
 ---
 
 # Skill: Project Management (PM)
 
 **Cohesion:** 0.11 - loosely connected
-**Members:** 18 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[Adversary Model]] - document - .agents/skills/i-sec-offense/SKILL.md
-- [[AgentShroud Red Team Adversarial Tester]] - document - .agents/skills/i-sec-offense/SKILL.md
-- [[Attack Phases]] - document - .agents/skills/i-sec-offense/SKILL.md
-- [[Attack Techniques Reference]] - document - .agents/skills/i-sec-offense/SKILL.md
-- [[Coverage Requirements]] - document - .agents/skills/i-sec-offense/SKILL.md
-- [[Critical Rules_2]] - document - .agents/skills/i-sec-offense/SKILL.md
-- [[Infrastructure]] - document - .agents/skills/i-sec-offense/SKILL.md
-- [[Key Principle]] - document - .agents/skills/i-sec-offense/SKILL.md
-- [[Output_1]] - document - .agents/skills/i-sec-offense/SKILL.md
-- [[Phase 1 Reconnaissance & Trust Probing]] - document - .agents/skills/i-sec-offense/SKILL.md
-- [[Phase 2 Prompt Injection]] - document - .agents/skills/i-sec-offense/SKILL.md
-- [[Phase 3 Indirect Injection]] - document - .agents/skills/i-sec-offense/SKILL.md
-- [[Phase 4 Data Exfiltration]] - document - .agents/skills/i-sec-offense/SKILL.md
-- [[Phase 5 Exploitation Chains]] - document - .agents/skills/i-sec-offense/SKILL.md
-- [[Phase 6 Detection Validation]] - document - .agents/skills/i-sec-offense/SKILL.md
-- [[SKILL_52]] - document - .agents/skills/i-sec-offense/SKILL.md
-- [[Test Structure]] - document - .agents/skills/i-sec-offense/SKILL.md
-- [[Writing Exploit Tests]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[dot-agentsskillsi-pmSKILL]] - document - .agents/skills/i-pm/SKILL.md
+- [[Assigning Work]] - document - .agents/skills/i-pm/SKILL.md
+- [[CHANGELOG.md Updates]] - document - .agents/skills/i-pm/SKILL.md
+- [[Continuity Files]] - document - .agents/skills/i-pm/SKILL.md
+- [[Definition of Done (from AGENTS.md)]] - document - .agents/skills/i-pm/SKILL.md
+- [[Escalation]] - document - .agents/skills/i-pm/SKILL.md
+- [[Known Risks]] - document - .agents/skills/i-pm/SKILL.md
+- [[Project Roadmap]] - document - .agents/skills/i-pm/SKILL.md
+- [[Quick Status (for chatTelegram)]] - document - .agents/skills/i-pm/SKILL.md
+- [[README.md Updates]] - document - .agents/skills/i-pm/SKILL.md
+- [[Risk Management]] - document - .agents/skills/i-pm/SKILL.md
+- [[Role_50]] - document - .agents/skills/i-pm/SKILL.md
+- [[Skill Project Management (PM)]] - document - .agents/skills/i-pm/SKILL.md
+- [[Status Reporting]] - document - .agents/skills/i-pm/SKILL.md
+- [[Task Coordination]] - document - .agents/skills/i-pm/SKILL.md
+- [[Tracking Format]] - document - .agents/skills/i-pm/SKILL.md
+- [[`session-notesCONTINUE-YYYY-MM-DD.md` (daily snapshot)]] - document - .agents/skills/i-pm/SKILL.md
+- [[`session-notesCONTINUE.md` (always current)]] - document - .agents/skills/i-pm/SKILL.md
+- [[`session-notesSESSION_SUMMARY_YYYY-MM-DD.md` (session report)]] - document - .agents/skills/i-pm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,7 +38,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[AgentShroud Red Team Adversarial Tester]] - degree 8, connects to 1 community
+- [[Skill Project Management (PM)]] - degree 8, connects to 1 community

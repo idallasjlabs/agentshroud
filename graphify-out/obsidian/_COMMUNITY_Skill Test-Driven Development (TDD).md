@@ -1,27 +1,28 @@
 ---
 type: community
-cohesion: 0.20
-members: 12
+cohesion: 0.15
+members: 13
 ---
 
 # Skill: Test-Driven Development (TDD)
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 12 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[Audit query GET ledger (hashes only)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[Auto-delete at expires_at]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[Cron trigger (no user content)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[LLM API call (sanitized text only)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[PII Redaction (PHONE_NUMBER, EMAIL_ADDRESS, SSN)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[Response to user (Telegram  iMessage)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[Telegram message (raw user text)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[Tool call (MCP-inspected)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[content_hash = SHA-256(sanitized)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[iMessage (raw user text)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[ledger row (id, timestamp, source, hashes, sanitized flag, expires_at)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[original_content_hash = SHA-256(raw)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[dot-agentsskillsi-tddSKILL]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Anti-Patterns to Flag_19]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Core Discipline Red → Green → Refactor]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Glue Job Logic  →  test transformations outside Spark]] - document - .agents/skills/i-tdd/SKILL.md
+- [[PostgreSQL  →  `SAVEPOINT` + `ROLLBACK`]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Python  Boto3  AWS  →  `moto`]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Role_81]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Rules_21]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Skill Test-Driven Development (TDD)]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Stack-Specific Testing Patterns]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Step Function Input Validation]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Test Structure_4]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Zabbix API  →  `unittest.mock`]] - document - .agents/skills/i-tdd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,3 +30,9 @@ members: 12
 TABLE source_file, type FROM #community/Skill_Test-Driven_Development_TDD
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
+
+## Top bridge nodes
+- [[Skill Test-Driven Development (TDD)]] - degree 8, connects to 1 community

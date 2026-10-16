@@ -1,31 +1,28 @@
 ---
 type: community
-cohesion: 0.12
-members: 16
+cohesion: 0.15
+members: 13
 ---
 
 # Network Topology
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 16 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[1Password Vault Sharing Instructions]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[Current Files Status]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[Current Situation]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[How to Share the Vault]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[Next Steps_10]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[Option 1 Share Existing Vault]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[Option 2 Create and Share New Vault]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[Option 3 Use the Bot's Private Vault]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[Recommended Approach]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[Testing After Sharing]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[Verify vault access]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[What Happens After This Works]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[What the bot can currently see]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[What the bot needs to see]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[✅ Authoritative Files (Active)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[❌ Removed Files (Outdated)]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Bot Network Isolation Design]] - rationale - docs/vault/09 - Diagrams/Network Topology.md
+- [[Complete System Diagram]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
+- [[Container Network Diagram]] - document - docs/vault/09 - Diagrams/Network Topology.md
+- [[Full System Flowchart_1]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
+- [[Full System Flowchart]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
+- [[Hostname Resolution]] - document - docs/vault/09 - Diagrams/Network Topology.md
+- [[Legend]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
+- [[Network Security Notes]] - document - docs/vault/09 - Diagrams/Network Topology.md
+- [[Network Topology_3]] - document - docs/vault/09 - Diagrams/Network Topology.md
+- [[Network Topology_2]] - document - docs/vault/09 - Diagrams/Network Topology.md
+- [[Related Notes_53]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
+- [[Related Notes_54]] - document - docs/vault/09 - Diagrams/Network Topology.md
+- [[Traffic Routing]] - document - docs/vault/09 - Diagrams/Network Topology.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,9 +32,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_agentshroud-gateway]]
-- 1 edge to [[_COMMUNITY_pipeline.py — Security Pipeline]]
+- 1 edge to [[_COMMUNITY_ingest_apimodels.py]]
+- 1 edge to [[_COMMUNITY_`SecurityPipeline`]]
 
 ## Top bridge nodes
-- [[1Password Vault Sharing Instructions]] - degree 8, connects to 1 community
-- [[Current Files Status]] - degree 4, connects to 1 community
+- [[Full System Flowchart]] - degree 4, connects to 2 communities

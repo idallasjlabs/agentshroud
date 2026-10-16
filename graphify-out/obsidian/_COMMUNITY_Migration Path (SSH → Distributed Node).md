@@ -10,13 +10,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[Competitive Security Matrix — AgentShroud vs AI Agent Platforms]] - document - docs/security/competitive-security-matrix.md
-- [[Container Security Toolchain Comparison]] - document - docs/security/competitive-security-matrix.md
-- [[Key Takeaways]] - document - docs/security/competitive-security-matrix.md
-- [[Module Comparison]] - document - docs/security/competitive-security-matrix.md
-- [[Security Score (out of 28)]] - document - docs/security/competitive-security-matrix.md
-- [[Updated Magic Quadrant Position]] - document - docs/security/competitive-security-matrix.md
-- [[competitive-security-matrix]] - document - docs/security/competitive-security-matrix.md
+- [[Migration Path (SSH → Distributed Node)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Step 1 Verify Option 1 Working]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Step 2 Install OpenClaw on Pi]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Step 3 Pair Nodes]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Step 4 Test Basic Communication]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Step 5 Migrate Workflows]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Step 6 Deprecate SSH (Optional)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +24,9 @@ members: 7
 TABLE source_file, type FROM #community/Migration_Path_SSH__Distributed_Node
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Distributed OpenClaw Node Architecture — Raspberry Pi 4]]
+
+## Top bridge nodes
+- [[Migration Path (SSH → Distributed Node)]] - degree 7, connects to 1 community

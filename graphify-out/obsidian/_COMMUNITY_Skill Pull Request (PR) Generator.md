@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Skill: Pull Request (PR) Generator
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[.setup_method()_4]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_allowlist_skip()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_comments_skipped()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_deduplication()_1]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_empty_text()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_multi_line_parsing()]] - code - gateway/tests/test_dns_blocklist.py
-- [[TestLoadFromText]] - code - gateway/tests/test_dns_blocklist.py
-- [[load_from_text() — multi-line parsing, dedup, allowlist skip.]] - rationale - gateway/tests/test_dns_blocklist.py
+- [[dot-agentsskillsi-prSKILL]] - document - .agents/skills/i-pr/SKILL.md
+- [[Constraints_7]] - document - .agents/skills/i-pr/SKILL.md
+- [[Content Requirements]] - document - .agents/skills/i-pr/SKILL.md
+- [[Header]] - document - .agents/skills/i-pr/SKILL.md
+- [[Objective_3]] - document - .agents/skills/i-pr/SKILL.md
+- [[Role_104]] - document - .agents/skills/i-pr/SKILL.md
+- [[Safety_1]] - document - .agents/skills/i-pr/SKILL.md
+- [[Skill Pull Request (PR) Generator]] - document - .agents/skills/i-pr/SKILL.md
+- [[Technical Detail]] - document - .agents/skills/i-pr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,8 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_DNSBlocklist]]
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[TestLoadFromText]] - degree 9, connects to 1 community
-- [[.setup_method()_4]] - degree 2, connects to 1 community
+- [[Skill Pull Request (PR) Generator]] - degree 6, connects to 1 community

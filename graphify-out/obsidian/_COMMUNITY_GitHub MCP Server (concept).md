@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[openclaw agents_README.txt (50+ specialized agents)]] - document - docker/config/openclaw/agents/_README.txt
+- [[GitHub MCP Server (concept)]] - concept - docker/config/hermes/skills/i-mcpm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

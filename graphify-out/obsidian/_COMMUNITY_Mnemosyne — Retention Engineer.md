@@ -1,22 +1,28 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.15
+members: 13
 ---
 
 # Mnemosyne — Retention Engineer
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[.test_allowed_tool()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_denied_in_monitor_still_allows()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_denied_tool_cronjob()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_denied_tool_delegate_task()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_denied_tool_memory()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_denied_tool_send_message()]] - code - gateway/tests/test_subagent_governance.py
-- [[TestToolAuthorization]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-agentsskillsi-mnemosyneREADME]] - document - .agents/skills/i-mnemosyne/README.md
+- [[dot-agentsskillsi-mnemosyneSKILL]] - document - .agents/skills/i-mnemosyne/SKILL.md
+- [[Input Requirements_17]] - document - .agents/skills/i-mnemosyne/SKILL.md
+- [[Mnemosyne — Retention Engineer_2]] - document - .agents/skills/i-mnemosyne/README.md
+- [[Mnemosyne — Retention Engineer_3]] - document - .agents/skills/i-mnemosyne/SKILL.md
+- [[Output Format_29]] - document - .agents/skills/i-mnemosyne/SKILL.md
+- [[Persona_11]] - document - .agents/skills/i-mnemosyne/SKILL.md
+- [[Purpose_165]] - document - .agents/skills/i-mnemosyne/README.md
+- [[Quality Checklist_14]] - document - .agents/skills/i-mnemosyne/SKILL.md
+- [[Related Skills_107]] - document - .agents/skills/i-mnemosyne/README.md
+- [[Role_77]] - document - .agents/skills/i-mnemosyne/SKILL.md
+- [[System Prompt_11]] - document - .agents/skills/i-mnemosyne/SKILL.md
+- [[Usage_116]] - document - .agents/skills/i-mnemosyne/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,10 +30,3 @@ members: 7
 TABLE source_file, type FROM #community/Mnemosyne__Retention_Engineer
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 4 edges to [[_COMMUNITY_Quick Reference — AgentShroud]]
-- 2 edges to [[_COMMUNITY_TestCanvasAuthHelpers]]
-
-## Top bridge nodes
-- [[TestToolAuthorization]] - degree 12, connects to 2 communities

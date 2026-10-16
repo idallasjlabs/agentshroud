@@ -10,50 +10,50 @@ members: 44
 **Members:** 44 nodes
 
 ## Members
-- [[Extract the system instruction as plain text (camelCase or snake_case key).]] - rationale - gateway/proxy/gemini_openai_translator.py
-- [[Flatten a Gemini parts list to plain text (text parts only).]] - rationale - gateway/proxy/gemini_openai_translator.py
-- [[Flatten an OpenAI message's content (string or content-block list) to     Gemini]] - rationale - gateway/proxy/gemini_openai_translator.py
-- [[Return a reason string if this Gemini request cannot be failed over.      Return]] - rationale - gateway/proxy/gemini_openai_translator.py
-- [[Translate a Gemini generateContent request body to OpenAI chat format.      Retu]] - rationale - gateway/proxy/gemini_openai_translator.py
-- [[Translate a Gemini generateContent response to OpenAI chatcompletions     shape]] - rationale - gateway/proxy/gemini_openai_translator.py
-- [[Translate an Ollama OpenAI-compat response to Gemini candidates format.      The]] - rationale - gateway/proxy/gemini_openai_translator.py
-- [[Translate an OpenAI chatcompletions request body to Gemini's     generateConten]] - rationale - gateway/proxy/gemini_openai_translator.py
-- [[_openai_content_to_parts()]] - code - gateway/proxy/gemini_openai_translator.py
-- [[_parts_to_text()]] - code - gateway/proxy/gemini_openai_translator.py
-- [[_system_instruction_text()]] - code - gateway/proxy/gemini_openai_translator.py
-- [[gemini_failover_unsupported_reason()]] - code - gateway/proxy/gemini_openai_translator.py
-- [[gemini_openai_translator.py]] - code - gateway/proxy/gemini_openai_translator.py
-- [[gemini_to_openai_request()]] - code - gateway/proxy/gemini_openai_translator.py
-- [[gemini_to_openai_response()]] - code - gateway/proxy/gemini_openai_translator.py
-- [[openai_to_gemini_request()]] - code - gateway/proxy/gemini_openai_translator.py
-- [[openai_to_gemini_response (existing failover direction) and     gemini_to_openai]] - rationale - gateway/tests/test_gemini_openai_translator.py
-- [[openai_to_gemini_response()]] - code - gateway/proxy/gemini_openai_translator.py
-- [[test_gemini_basic_text_request()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_gemini_generation_config_top_p_and_stop_sequences()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_gemini_missing_role_defaults_to_user()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_gemini_missing_system_instruction_omits_system_message()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_gemini_multi_part_contents_joined()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_gemini_non_text_parts_skipped()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_gemini_openai_translator.py]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_gemini_role_mapping_model_to_assistant()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_gemini_system_instruction_snake_case_and_string()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_gemini_to_openai_response_empty_candidates_yields_empty_text()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_gemini_to_openai_response_envelope()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_gemini_to_openai_response_max_tokens_finish_reason()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_gemini_to_openai_roundtrip_with_openai_to_gemini_response()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_openai_response_empty_choices_yields_empty_text()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_openai_response_length_maps_to_max_tokens()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_openai_response_to_gemini_candidates()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_openai_to_gemini_assistant_role_becomes_model()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_openai_to_gemini_basic_request()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_openai_to_gemini_content_block_list_flattened()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_openai_to_gemini_no_generation_config_keys_omits_block()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_openai_to_gemini_no_system_message_omits_system_instruction()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_openai_to_gemini_stop_sequences_normalized_to_list()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_unsupported_reason_function_call_parts()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_unsupported_reason_none_for_plain_text()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_unsupported_reason_streaming_path()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_unsupported_reason_tools_in_body()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[dot-__init__()_39]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[dot-_classify_risk()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[dot-_domain_matches()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[dot-_init_browser()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[dot-_load_config()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[dot-_log_action()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[dot-_log_security_event()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[dot-_requires_approval()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[dot-_take_screenshot()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[dot-_validate_url()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[dot-agentsskillsi-browserscriptsbrowse.py]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[dot-click()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[dot-close()_2]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[dot-detect_captcha()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[dot-extract()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[dot-fill_field()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[dot-get_audit_log()_1]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[dot-navigate()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[CLI interface for SecureBrowser]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Check if action requires approval          Security Approval queue integration]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Check if domain matches pattern (supports wildcards)]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Classify action risk level          Security Determines if approval is needed]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Clean up browser resources]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Click an element          Security Risk classification for destructive actions]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Detect if CAPTCHA is present on page]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Extract data from page          Security No credential extraction allowed]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Fill a single form field          Security Risk classification, approval for se]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Initialize browser with security settings]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Load security configuration]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Log browser action to audit trail]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Log security-related events]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Navigate to URL          Security URL validation, audit logging]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Raised when security policy is violated]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Return complete audit log]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Risk classification for browser actions]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[RiskLevel]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[Secure browser automation with enterprise controls      Security guarantees]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[SecureBrowser]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[Security configuration for browser automation]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[SecurityConfig]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[SecurityError]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[Take screenshot and save to audit directory]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Validate URL against allowlistblocklist          Security This is the primary]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[main()_7]] - code - .agents/skills/i-browser/scripts/browse.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -63,14 +63,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_AgentShroud Security Hardening Plan]]
-- 6 edges to [[_COMMUNITY_test_trust_manager.py]]
-- 5 edges to [[_COMMUNITY_Skill UI Expert (UI)]]
-- 2 edges to [[_COMMUNITY_test_gemini_openai_translator.py]]
+- 2 edges to [[_COMMUNITY_Enum]]
+- 1 edge to [[_COMMUNITY_ThreatAssessment]]
 
 ## Top bridge nodes
-- [[gemini_to_openai_request()]] - degree 17, connects to 4 communities
-- [[openai_to_gemini_response()]] - degree 11, connects to 4 communities
-- [[openai_to_gemini_request()]] - degree 14, connects to 3 communities
-- [[gemini_failover_unsupported_reason()]] - degree 11, connects to 3 communities
-- [[gemini_to_openai_response()]] - degree 11, connects to 3 communities
+- [[SecurityError]] - degree 7, connects to 1 community
+- [[dot-agentsskillsi-browserscriptsbrowse.py]] - degree 6, connects to 1 community
+- [[RiskLevel]] - degree 6, connects to 1 community

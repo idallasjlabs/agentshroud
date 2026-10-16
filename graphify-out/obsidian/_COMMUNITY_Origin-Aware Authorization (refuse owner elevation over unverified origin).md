@@ -1,0 +1,20 @@
+---
+type: community
+cohesion: 1.00
+members: 1
+---
+
+# Origin-Aware Authorization (refuse owner elevation over unverified origin)
+
+**Cohesion:** 1.00 - tightly connected
+**Members:** 1 nodes
+
+## Members
+- [[Origin-Aware Authorization (refuse owner elevation over unverified origin)]] - rationale - gateway/security/tool_acl.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Origin-Aware_Authorization_refuse_owner_elevation_over_unverified_origin
+SORT file.name ASC
+```

@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[.test_collaborator_incremental_exfil_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_memory_access_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Chunked extraction prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Direct memory-content requests should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Patent Center Filing Steps]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Post-Filing]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Pre-Filing Preparation]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[SECTION 7 FILING CHECKLIST]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +23,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 2 edges to [[_COMMUNITY_test_soc_bots.py]]
+- 1 edge to [[_COMMUNITY_AgentShroud -- USPTO Provisional Patent Application]]
+- 1 edge to [[_COMMUNITY_AgentShroud -- USPTO Trademark Application]]
 
 ## Top bridge nodes
-- [[.test_collaborator_incremental_exfil_request_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
-- [[.test_collaborator_memory_access_request_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities
+- [[SECTION 7 FILING CHECKLIST]] - degree 5, connects to 2 communities

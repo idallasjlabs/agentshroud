@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Cron AI Security Standards Watch]] - document - docker/bots/openclaw/config/cron/jobs.json
+- [[Favicon 256x256 (AgentShroud logo mark)]] - image - branding/favicons/favicon-256x256.png
 
 ## Live Query (requires Dataview plugin)
 

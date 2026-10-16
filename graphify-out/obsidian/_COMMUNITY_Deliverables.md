@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[.score_response_consistency()]] - code - gateway/security/multi_turn_tracker.py
-- [[Compute a heuristic consistency score between query and response.          Retur]] - rationale - gateway/security/multi_turn_tracker.py
-- [[ConsistencyScore]] - code - gateway/security/multi_turn_tracker.py
-- [[Heuristic consistency score between a query and its response.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Deliverables_1]] - document - .agents/skills/i-aws/SKILL.md
+- [[Reports (`.reports`)]] - document - .agents/skills/i-aws/SKILL.md
+- [[Script Templates]] - document - .agents/skills/i-aws/SKILL.md
+- [[Scripts (`.scripts`)]] - document - .agents/skills/i-aws/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_EncryptedStore]]
-- 1 edge to [[_COMMUNITY_TrustManager]]
+- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps Agent_2]]
 
 ## Top bridge nodes
-- [[ConsistencyScore]] - degree 3, connects to 1 community
-- [[.score_response_consistency()]] - degree 3, connects to 1 community
+- [[Deliverables_1]] - degree 4, connects to 1 community

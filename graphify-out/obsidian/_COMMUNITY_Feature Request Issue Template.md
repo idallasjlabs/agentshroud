@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[i-security-reviewer.md (security-reviewer agent)]] - document - docker/config/openclaw/agents/i-security-reviewer.md
+- [[Feature Request Issue Template]] - document - .github/ISSUE_TEMPLATE/feature_request.yml
 
 ## Live Query (requires Dataview plugin)
 

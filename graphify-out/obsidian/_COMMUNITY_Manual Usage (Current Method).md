@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # Manual Usage (Current Method)
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[browser-fetch skill.json (tool manifest)]] - code - skills/custom/browser-fetch/skill.json
-- [[run-as-root.sh]] - code - skills/custom/browser-fetch/run-as-root.sh
-- [[run-as-root.sh script]] - code - skills/custom/browser-fetch/run-as-root.sh
+- [[Manual Usage (Current Method)]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Step 1 Create 1Password Share Link]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Step 2 Fetch with Browser-Fetch Skill]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Step 3 Parse Output]] - document - docs/reference/BROWSER_FETCH_SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +21,9 @@ members: 3
 TABLE source_file, type FROM #community/Manual_Usage_Current_Method
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Browser-Fetch Skill for 1Password Share Links]]
+
+## Top bridge nodes
+- [[Manual Usage (Current Method)]] - degree 4, connects to 1 community

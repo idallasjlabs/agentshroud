@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Presentation Content Slide Template]] - image - branding/presentation/content-slide-template-1920x1080.png
+- [[MCP Server github-fluence]] - code - .mcp.json
 
 ## Live Query (requires Dataview plugin)
 

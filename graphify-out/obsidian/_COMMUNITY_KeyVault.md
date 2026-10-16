@@ -1,74 +1,84 @@
 ---
 type: community
-cohesion: 0.07
-members: 59
+cohesion: 0.06
+members: 69
 ---
 
 # KeyVault
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 59 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 69 nodes
 
 ## Members
-- [[.__init__()_195]] - code - gateway/tools/port_manager.py
-- [[.find_available_port()]] - code - gateway/tools/port_manager.py
-- [[.generate_compose_ports()]] - code - gateway/tools/port_manager.py
-- [[.has_conflicts()]] - code - gateway/tools/port_manager.py
-- [[.is_port_available()]] - code - gateway/tools/port_manager.py
-- [[.is_port_available_udp()]] - code - gateway/tools/port_manager.py
-- [[.ports()]] - code - gateway/tools/port_manager.py
-- [[.resolve_ports()]] - code - gateway/tools/port_manager.py
-- [[.summary()]] - code - gateway/tools/port_manager.py
-- [[.test_all_free_no_conflicts()]] - code - gateway/tests/test_port_manager.py
-- [[.test_basic_mapping()]] - code - gateway/tests/test_port_manager.py
-- [[.test_bound_port_is_not_available()]] - code - gateway/tests/test_port_manager.py
-- [[.test_conflict_auto_resolved()]] - code - gateway/tests/test_port_manager.py
-- [[.test_conflict_no_auto_resolve()]] - code - gateway/tests/test_port_manager.py
-- [[.test_duplicate_port_detection()]] - code - gateway/tests/test_port_manager.py
-- [[.test_finds_base_when_free()]] - code - gateway/tests/test_port_manager.py
-- [[.test_has_conflicts()]] - code - gateway/tests/test_port_manager.py
-- [[.test_no_conflict_mapping()]] - code - gateway/tests/test_port_manager.py
-- [[.test_offset_applied()]] - code - gateway/tests/test_port_manager.py
-- [[.test_ports_property()]] - code - gateway/tests/test_port_manager.py
-- [[.test_raises_if_no_port_found()]] - code - gateway/tests/test_port_manager.py
-- [[.test_skips_bound_port()]] - code - gateway/tests/test_port_manager.py
-- [[.test_skips_excluded_ports()]] - code - gateway/tests/test_port_manager.py
-- [[.test_summary_format()]] - code - gateway/tests/test_port_manager.py
-- [[.test_udp_bound_not_available()]] - code - gateway/tests/test_port_manager.py
-- [[.test_udp_unbound_available()]] - code - gateway/tests/test_port_manager.py
-- [[.test_unbound_port_is_available()]] - code - gateway/tests/test_port_manager.py
-- [[Busy port should be detected via connect_ex check.]] - rationale - gateway/tests/test_port_manager.py
-- [[Check if a TCP port is available for binding.          Tries to bind briefly. Re]] - rationale - gateway/tools/port_manager.py
-- [[Check if a UDP port is available (used for DNS).]] - rationale - gateway/tools/port_manager.py
-- [[Detect port conflicts and auto-assign available ports.]] - rationale - gateway/tools/port_manager.py
-- [[Find next available port starting from base.          Args             base St]] - rationale - gateway/tools/port_manager.py
-- [[Generate docker-compose port mapping strings from resolution.          Returns d]] - rationale - gateway/tools/port_manager.py
-- [[Get the final port mapping.]] - rationale - gateway/tools/port_manager.py
-- [[If all ports in range are excluded, raises RuntimeError.]] - rationale - gateway/tests/test_port_manager.py
-- [[PortAssignment]] - code - gateway/tools/port_manager.py
-- [[PortManager]] - code - gateway/tools/port_manager.py
-- [[PortResolution]] - code - gateway/tools/port_manager.py
-- [[Quick check are the default ports available Log and return result.]] - rationale - gateway/tools/port_manager.py
-- [[Record of a port assignment decision.]] - rationale - gateway/tools/port_manager.py
-- [[Resolve all ports, detecting conflicts and auto-assigning if needed.          Ar]] - rationale - gateway/tools/port_manager.py
-- [[Result of resolving all ports for an instance.]] - rationale - gateway/tools/port_manager.py
-- [[Test PortResolution dataclass.]] - rationale - gateway/tests/test_port_manager.py
-- [[Test auto-port discovery.]] - rationale - gateway/tests/test_port_manager.py
-- [[Test docker-compose port mapping generation.]] - rationale - gateway/tests/test_port_manager.py
-- [[Test full port resolution logic.]] - rationale - gateway/tests/test_port_manager.py
-- [[Test port availability detection.]] - rationale - gateway/tests/test_port_manager.py
-- [[TestFindAvailablePort]] - code - gateway/tests/test_port_manager.py
-- [[TestGenerateComposePorts]] - code - gateway/tests/test_port_manager.py
-- [[TestIsPortAvailable]] - code - gateway/tests/test_port_manager.py
-- [[TestPortResolution]] - code - gateway/tests/test_port_manager.py
-- [[TestResolveports]] - code - gateway/tests/test_port_manager.py
-- [[Two services requesting same port — second gets reassigned.]] - rationale - gateway/tests/test_port_manager.py
-- [[_fake_socket_factory()]] - code - gateway/tests/test_port_manager.py
-- [[check_and_report()]] - code - gateway/tools/port_manager.py
-- [[find-ports.sh]] - code - scripts/find-ports.sh
-- [[find-ports.sh script]] - code - scripts/find-ports.sh
-- [[port_manager.py]] - code - gateway/tools/port_manager.py
-- [[test_port_manager.py]] - code - gateway/tests/test_port_manager.py
+- [[dot-__init__()_116]] - code - gateway/security/key_vault.py
+- [[dot-__init__()_117]] - code - gateway/security/key_vault.py
+- [[dot-__init__()_118]] - code - gateway/security/key_vault.py
+- [[dot-_agent_in_scope()]] - code - gateway/security/key_vault.py
+- [[dot-_log_audit()]] - code - gateway/security/key_vault.py
+- [[dot-_make_vault_pipeline()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-check_value_match()]] - code - gateway/security/key_vault.py
+- [[dot-delete_key()]] - code - gateway/security/key_vault.py
+- [[dot-get_audit_log()_6]] - code - gateway/security/key_vault.py
+- [[dot-get_key()_1]] - code - gateway/security/key_vault.py
+- [[dot-inject_for_request()]] - code - gateway/security/key_vault.py
+- [[dot-list_keys()]] - code - gateway/security/key_vault.py
+- [[dot-redact()]] - code - gateway/security/key_vault.py
+- [[dot-rotate_key()]] - code - gateway/security/key_vault.py
+- [[dot-scan_outbound()]] - code - gateway/security/key_vault.py
+- [[dot-store_key()]] - code - gateway/security/key_vault.py
+- [[dot-test_clean_response_passes_unchanged()_1]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_default_config()_5]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_delete_key()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_detect_api_key_patterns()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_detect_key_in_outbound()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_detector_failure_fails_closed_for_non_owner()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_generic_key_pattern_audited_but_not_blocked()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_inject_auth_header()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_inject_fails_for_unscoped()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_inject_preserves_existing_headers()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_key_leak_increments_sanitized_stat_and_audits()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_key_not_found()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_key_redacted_from_string()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_key_vault_init()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_leak_detection_logged()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_list_keys_no_values()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_multiple_keys_redacted()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_no_keys_unchanged()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_no_leak_clean_message()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_old_key_in_redaction_after_rotation()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_partial_key_redacted()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_rotate_key()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_rotate_nonexistent_raises()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_rotation_logged()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_scope_enforcement_logged()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_scoped_agent_can_access()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_store_and_retrieve()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_stored_key_value_redacted_from_outbound()]] - code - gateway/tests/test_pipeline_unit.py
+- [[dot-test_unscoped_agent_denied()]] - code - gateway/tests/test_key_vault.py
+- [[dot-test_wildcard_scope_allows_all()]] - code - gateway/tests/test_key_vault.py
+- [[Check if any stored key values appear in text. Returns matching key names.]] - rationale - gateway/security/key_vault.py
+- [[KeyAuditEvent]] - code - gateway/security/key_vault.py
+- [[KeyEntry]] - code - gateway/security/key_vault.py
+- [[KeyInjector]] - code - gateway/security/key_vault.py
+- [[KeyLeakDetector]] - code - gateway/security/key_vault.py
+- [[KeyLeakDetector wiring — stored credential values must never leave the gateway.]] - rationale - gateway/tests/test_pipeline_unit.py
+- [[KeyScope]] - code - gateway/security/key_vault.py
+- [[KeyVault]] - code - gateway/security/key_vault.py
+- [[KeyVaultConfig]] - code - gateway/security/key_vault.py
+- [[LeakScanResult]] - code - gateway/security/key_vault.py
+- [[Per-agent API key scoping, redaction, leak detection, and rotation]] - concept - gateway/tests/test_key_vault.py
+- [[TestKeyInjection]] - code - gateway/tests/test_key_vault.py
+- [[TestKeyLeakDetection]] - code - gateway/tests/test_key_vault.py
+- [[TestKeyLeakDetection_1]] - code - gateway/tests/test_pipeline_unit.py
+- [[TestKeyRedaction]] - code - gateway/tests/test_key_vault.py
+- [[TestKeyRotation]] - code - gateway/tests/test_key_vault.py
+- [[TestKeyScoping]] - code - gateway/tests/test_key_vault.py
+- [[TestKeyStorage]] - code - gateway/tests/test_key_vault.py
+- [[TestKeyVaultConfig]] - code - gateway/tests/test_key_vault.py
+- [[config()_3]] - code - gateway/tests/test_key_vault.py
+- [[key_vault.py]] - code - gateway/security/key_vault.py
+- [[test_key_vault.py]] - code - gateway/tests/test_key_vault.py
+- [[vault()]] - code - gateway/tests/test_key_vault.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -78,7 +88,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_daily_cve_report.py]]
+- 28 edges to [[_COMMUNITY_AlertDispatcher]]
+- 25 edges to [[_COMMUNITY_OutboundInfoFilter]]
+- 9 edges to [[_COMMUNITY__FakeAttack]]
+- 7 edges to [[_COMMUNITY_AuditChain]]
+- 6 edges to [[_COMMUNITY_lifespan.py]]
+- 5 edges to [[_COMMUNITY_EnvelopeSigner]]
+- 4 edges to [[_COMMUNITY_PIIConfig]]
+- 2 edges to [[_COMMUNITY_ResourceGuard]]
+- 1 edge to [[_COMMUNITY_PipelineAction]]
+- 1 edge to [[_COMMUNITY_TrustConfig]]
+- 1 edge to [[_COMMUNITY_InjectionAction]]
+- 1 edge to [[_COMMUNITY_AsyncMock]]
+- 1 edge to [[_COMMUNITY_CrossBotTrustLedger]]
 
 ## Top bridge nodes
-- [[PortManager]] - degree 34, connects to 1 community
+- [[TestKeyLeakDetection_1]] - degree 24, connects to 9 communities
+- [[KeyVault]] - degree 55, connects to 7 communities
+- [[KeyVaultConfig]] - degree 42, connects to 7 communities
+- [[KeyLeakDetector]] - degree 31, connects to 5 communities
+- [[key_vault.py]] - degree 12, connects to 2 communities

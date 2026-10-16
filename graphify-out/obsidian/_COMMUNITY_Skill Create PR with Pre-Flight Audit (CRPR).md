@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.14
+cohesion: 0.13
 members: 15
 ---
 
 # Skill: Create PR with Pre-Flight Audit (CRPR)
 
-**Cohesion:** 0.14 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[API Response]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Architecture (high-level)]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Concept]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Console Management]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Design]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Estimated Effort]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Feature Global Monitor-Only Mode (Observatory Mode)]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Implementation Priority]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Key Behaviors]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Open Questions (for v0.8.0 planning)]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Risk Assessment Heuristic]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Use Cases_1]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[User Experience]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[v0.8.0 Feature Interactive Egress Firewall (Little Snitch for Agents)]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[v0.8.0-egress-firewall]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[dot-agentsskillsi-crprSKILL]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Guardrails_10]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Invocation_6]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Role_67]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Skill Create PR with Pre-Flight Audit (CRPR)]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 0 — Pre-flight checks]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 1 — Check for an in-progress merge]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 2 — Merge without committing]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 3 — Audit the pending merge]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 3a — Present and resolve confirmed regressions]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 3b — Re-audit to confirm clean]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 3c — Commit the merge]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 4 — Push the branch]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 5 — Generate the PR description]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 6 — Create the PR]] - document - .agents/skills/i-crpr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,3 +32,9 @@ members: 15
 TABLE source_file, type FROM #community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
+
+## Top bridge nodes
+- [[Skill Create PR with Pre-Flight Audit (CRPR)]] - degree 15, connects to 1 community

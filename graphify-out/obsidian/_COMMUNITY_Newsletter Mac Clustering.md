@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[__init__.py_11]] - code - gateway/soc/__init__.py
+- [[Newsletter Mac Clustering_1]] - document - docker/config/hermes/cron/prompts/newsletter-mac-clustering.txt
 
 ## Live Query (requires Dataview plugin)
 

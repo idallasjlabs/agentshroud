@@ -1,19 +1,33 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.11
+members: 18
 ---
 
 # Socrates — Dialogue Architect
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 18 nodes
 
 ## Members
-- [[.test_clean_skill_allows()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_clean_skill_tree_allows()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_empty_content_allows()]] - code - gateway/tests/test_skill_guard.py
-- [[TestCleanSkill]] - code - gateway/tests/test_skill_guard.py
+- [[Dialogue Adaptations]] - document - .agents/skills/i-socrates/SKILL.md
+- [[Dialogue Techniques]] - document - .agents/skills/i-socrates/SKILL.md
+- [[EXPERT]] - document - .agents/skills/i-socrates/SKILL.md
+- [[ElevenLabs v3 Audio Tags]] - document - .agents/skills/i-socrates/SKILL.md
+- [[Episode Closing (Mandatory for OKE)]] - document - .agents/skills/i-socrates/SKILL.md
+- [[Expert Persona]] - document - .agents/skills/i-socrates/SKILL.md
+- [[HOST]] - document - .agents/skills/i-socrates/SKILL.md
+- [[Input Requirements_9]] - document - .agents/skills/i-socrates/SKILL.md
+- [[OKE Channel — CPA Exam Prep Dialogue Guidelines]] - document - .agents/skills/i-socrates/SKILL.md
+- [[Output Format_19]] - document - .agents/skills/i-socrates/SKILL.md
+- [[Persona_5]] - document - .agents/skills/i-socrates/SKILL.md
+- [[Quality Checklist_6]] - document - .agents/skills/i-socrates/SKILL.md
+- [[Role_57]] - document - .agents/skills/i-socrates/SKILL.md
+- [[Socrates Dialogue Architect README]] - document - .agents/skills/i-socrates/README.md
+- [[Socrates — Dialogue Architect_6]] - document - .agents/skills/i-socrates/SKILL.md
+- [[Speaker Definitions]] - document - .agents/skills/i-socrates/SKILL.md
+- [[System Prompt_5]] - document - .agents/skills/i-socrates/SKILL.md
+- [[User Prompt Template]] - document - .agents/skills/i-socrates/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,13 +37,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_AgentShroud™ Brand Guidelines]]
-- 2 edges to [[_COMMUNITY_AgentShroud v0.7.0 — Red Team Remediation Plan]]
-- 1 edge to [[_COMMUNITY_Skill Data Validation (DATA-VAL)]]
-- 1 edge to [[_COMMUNITY_Daedalus — Concept Illustrator]]
+- 1 edge to [[_COMMUNITY_Socrates — Dialogue Architect_4]]
+- 1 edge to [[_COMMUNITY_Atlas — Curriculum Architect_1]]
 
 ## Top bridge nodes
-- [[TestCleanSkill]] - degree 9, connects to 4 communities
-- [[.test_clean_skill_allows()]] - degree 2, connects to 1 community
-- [[.test_clean_skill_tree_allows()]] - degree 2, connects to 1 community
-- [[.test_empty_content_allows()]] - degree 2, connects to 1 community
+- [[Socrates — Dialogue Architect_6]] - degree 14, connects to 2 communities

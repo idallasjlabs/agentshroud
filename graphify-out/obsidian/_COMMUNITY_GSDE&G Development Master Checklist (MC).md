@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # GSDE&G Development Master Checklist (MC)
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[.test_browser_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_high_threat_blocked()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_low_threat_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestBrowserSecurity]] - code - gateway/tests/test_middleware_coverage.py
+- [[GSDE&G Development Master Checklist (MC)]] - document - docker/config/openclaw/skills/i-mc/README.md
+- [[Purpose_43]] - document - docker/config/openclaw/skills/i-mc/README.md
+- [[Related Skills_36]] - document - docker/config/openclaw/skills/i-mc/README.md
+- [[Usage_39]] - document - docker/config/openclaw/skills/i-mc/README.md
+- [[openclawskillsi-mcREADME]] - document - docker/config/openclaw/skills/i-mc/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,14 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_CredentialValidator]]
-- 2 edges to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_ResourceGuard]]
-- 1 edge to [[_COMMUNITY_KeyVaultConfig]]
-- 1 edge to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
+- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[TestBrowserSecurity]] - degree 8, connects to 4 communities
-- [[.test_browser_exception_fails_closed()]] - degree 2, connects to 1 community
-- [[.test_high_threat_blocked()]] - degree 2, connects to 1 community
-- [[.test_low_threat_allowed()]] - degree 2, connects to 1 community
+- [[GSDE&G Development Master Checklist (MC)]] - degree 5, connects to 1 community

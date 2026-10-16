@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Stale Cron Session Claim Cleanup]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[SessionState (data entity)]] - concept - docs/data/data-dictionary.md
 
 ## Live Query (requires Dataview plugin)
 

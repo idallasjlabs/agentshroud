@@ -1,29 +1,42 @@
 ---
 type: community
-cohesion: 0.18
-members: 14
+cohesion: 0.08
+members: 27
 ---
 
 # Slack Channel Setup
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 14 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 27 nodes
 
 ## Members
-- [[Get Shit Done (GSD) Cadence]] - document - docs/architecture/agentic-os.md
-- [[8. Governance Model]] - document - docs/architecture/agentic-os.md
-- [[AgentShroud CLAUDE.md operating rules]] - document - CLAUDE.md
-- [[Branch Protection (belt-and-suspenders)]] - document - docs/architecture/agentic-os.md
-- [[Cron Daily CVE Triage & Remediation Scan]] - document - docker/bots/openclaw/config/cron/jobs.json
-- [[No Security Theater (Rule A-E)]] - rationale - CLAUDE.md
-- [[Recurring Governance Rituals]] - document - docs/architecture/agentic-os.md
-- [[Weekly Upgrades EVERYTHING Means Everything]] - rationale - CLAUDE.md
-- [[curl_json()]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
-- [[cve_prefetch.py]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
-- [[gatewaysecurityagent_cve_registry.py GHSA registry]] - concept - docker/config/openclaw/cron/scripts/prefetch-ghsa-registry.sh
-- [[known_ghsa_ids()]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
-- [[main()_7]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
-- [[prefetch-ghsa-registry.sh (known-GHSA-ID cache prefetch)]] - code - docker/config/openclaw/cron/scripts/prefetch-ghsa-registry.sh
+- [[Architecture_5]] - document - docs/setup-slack.md
+- [[Collaborators]] - document - docs/setup-slack.md
+- [[Collaborators_1]] - document - docs/setup-telegram.md
+- [[Prerequisites_4]] - document - docs/setup-telegram.md
+- [[Sending Messages to the Bot]] - document - docs/setup-slack.md
+- [[Slack Channel Setup]] - document - docs/setup-slack.md
+- [[Step 10 Verify]] - document - docs/setup-slack.md
+- [[Step 1 Create a Bot]] - document - docs/setup-telegram.md
+- [[Step 1 Create a Slack App]] - document - docs/setup-slack.md
+- [[Step 2 Enable Socket Mode]] - document - docs/setup-slack.md
+- [[Step 2 Write the Token to Secrets]] - document - docs/setup-telegram.md
+- [[Step 3 Add Bot Token Scopes]] - document - docs/setup-slack.md
+- [[Step 3 Find Your Telegram User ID]] - document - docs/setup-telegram.md
+- [[Step 4 Enable Event Subscriptions]] - document - docs/setup-slack.md
+- [[Step 5 Configure agentshroud.yaml]] - document - docs/setup-telegram.md
+- [[Step 5 Enable App Home Messages Tab]] - document - docs/setup-slack.md
+- [[Step 6 Install the App]] - document - docs/setup-slack.md
+- [[Step 6 Rebuild and Start]] - document - docs/setup-telegram.md
+- [[Step 7 Find Your Slack User ID]] - document - docs/setup-slack.md
+- [[Step 7 Verify]] - document - docs/setup-telegram.md
+- [[Step 8 Configure Environment]] - document - docs/setup-slack.md
+- [[Step 9 Rebuild and Start]] - document - docs/setup-slack.md
+- [[Telegram Channel Setup]] - document - docs/setup-telegram.md
+- [[Troubleshooting_21]] - document - docs/setup-slack.md
+- [[Troubleshooting_22]] - document - docs/setup-telegram.md
+- [[setup-slack]] - document - docs/setup-slack.md
+- [[setup-telegram]] - document - docs/setup-telegram.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,9 +46,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Agentic OS]]
-- 1 edge to [[_COMMUNITY_DraftEntry]]
+- 1 edge to [[_COMMUNITY_34 Security Modules Pipeline (P0-P3)]]
+- 1 edge to [[_COMMUNITY_First Time Setup]]
 
 ## Top bridge nodes
-- [[8. Governance Model]] - degree 5, connects to 1 community
-- [[AgentShroud CLAUDE.md operating rules]] - degree 3, connects to 1 community
+- [[Collaborators]] - degree 3, connects to 1 community
+- [[Step 5 Configure agentshroud.yaml]] - degree 2, connects to 1 community

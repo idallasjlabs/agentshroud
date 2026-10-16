@@ -1,25 +1,41 @@
 ---
 type: community
-cohesion: 0.22
-members: 10
+cohesion: 0.08
+members: 26
 ---
 
 # EnhancedApprovalQueue (`enhanced_queue.py`)
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 26 nodes
 
 ## Members
-- [[.deregister()]] - code - gateway/security/subagent_governance.py
-- [[.get_summary()_1]] - code - gateway/security/subagent_governance.py
-- [[.get_usage()]] - code - gateway/security/subagent_governance.py
-- [[.runtime_seconds()]] - code - gateway/security/subagent_governance.py
-- [[.to_dict()_14]] - code - gateway/security/subagent_governance.py
-- [[Get a summary of all subagent governance state for a session.]] - rationale - gateway/security/subagent_governance.py
-- [[Get current resource usage for a subagent.]] - rationale - gateway/security/subagent_governance.py
-- [[Remove a subagent from governance tracking. Returns final usage.]] - rationale - gateway/security/subagent_governance.py
-- [[ResourceUsage_1]] - code - gateway/security/subagent_governance.py
-- [[Tracks cumulative resource consumption for a single subagent.]] - rationale - gateway/security/subagent_governance.py
+- [[Approval Queue]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Auto-Restart]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Crash Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Data Integrity After Crash]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Detecting a Crash]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
+- [[Environment Variables Used]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
+- [[Graceful Shutdown_1]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Key Class `EnhancedApprovalQueue`]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
+- [[Kill Switch (Emergency Stop)]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Ledger Database]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Manual Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Normal Stop]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[OOM Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Persistence]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
+- [[Purpose_76]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
+- [[Related Notes_33]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Related Notes_34]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
+- [[Responsibilities_2]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
+- [[Shutdown & Recovery_1]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Shutdown Sequence]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[State After Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Timeout Behavior]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
+- [[Tool Risk Tiers]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
+- [[WebSocket Notifications]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
+- [[approval_queue.py]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,12 +45,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Quick Reference — AgentShroud]]
-- 1 edge to [[_COMMUNITY_Vulcan — Subject Matter Auditor]]
-- 1 edge to [[_COMMUNITY_TestCanvasAuthHelpers]]
+- 1 edge to [[_COMMUNITY_main.py]]
+- 1 edge to [[_COMMUNITY_EgressFilter_1]]
+- 1 edge to [[_COMMUNITY_Security Controls]]
+- 1 edge to [[_COMMUNITY_34 Security Modules Pipeline (P0-P3)]]
+- 1 edge to [[_COMMUNITY_hermesSOUL]]
+- 1 edge to [[_COMMUNITY_Audit Ledger (SHA-256 hash only)]]
 
 ## Top bridge nodes
-- [[ResourceUsage_1]] - degree 7, connects to 2 communities
-- [[.deregister()]] - degree 4, connects to 1 community
-- [[.get_summary()_1]] - degree 3, connects to 1 community
-- [[.get_usage()]] - degree 3, connects to 1 community
+- [[approval_queue.py]] - degree 7, connects to 5 communities
+- [[Shutdown & Recovery_1]] - degree 7, connects to 1 community

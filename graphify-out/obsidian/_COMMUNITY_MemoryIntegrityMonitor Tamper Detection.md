@@ -1,17 +1,18 @@
 ---
 type: community
 cohesion: 1.00
-members: 2
+members: 3
 ---
 
 # MemoryIntegrityMonitor Tamper Detection
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_68]] - document - docker/config/hermes/skills/i-architecture-review/SKILL.md
-- [[Skill architecture-review_1]] - document - docker/config/hermes/skills/i-architecture-review/SKILL.md
+- [[MemoryIntegrityMonitor Tamper Detection]] - code - gateway/security/memory_integrity.py
+- [[MemoryLifecycleManager PII Scan and Retention]] - code - gateway/security/memory_lifecycle.py
+- [[Test Memory Lifecycle and Integrity]] - code - gateway/tests/test_memory_lifecycle.py
 
 ## Live Query (requires Dataview plugin)
 

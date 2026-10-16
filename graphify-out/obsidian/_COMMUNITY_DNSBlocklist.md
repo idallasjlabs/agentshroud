@@ -10,31 +10,31 @@ members: 44
 **Members:** 44 nodes
 
 ## Members
-- [[.is_blocked()]] - code - gateway/proxy/dns_blocklist.py
-- [[.is_blocked()_2]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.setup_method()_3]] - code - gateway/tests/test_dns_blocklist.py
-- [[.stats()]] - code - gateway/proxy/dns_blocklist.py
-- [[.stop()]] - code - gateway/proxy/dns_blocklist.py
-- [[.test_allowlist_overrides_blocklist()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_case_normalization()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_custom_denylist()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_download_failure_falls_back_to_cache()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_download_failure_no_cache_returns_none()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_download_success_caches_to_disk()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_exact_match()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_hosts_line_without_domain_returns_none()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_not_blocked()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_parent_allowlist_overrides_grandparent_block()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_parent_domain_wildcard()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_periodic_loop_survives_errors_until_cancelled()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_start_creates_task()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_stats_attributes()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_stats_returns_counts()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_stop_cancels_task()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_system_allowlist()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_trailing_dot_normalization()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_update_rebuilds_blocked_domains()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_wildcard_denylist_blocks_subdomains()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-is_blocked()]] - code - gateway/proxy/dns_blocklist.py
+- [[dot-is_blocked()_1]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-setup_method()_7]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-stats()]] - code - gateway/proxy/dns_blocklist.py
+- [[dot-stop()_2]] - code - gateway/proxy/dns_blocklist.py
+- [[dot-test_allowlist_overrides_blocklist()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_case_normalization()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_custom_denylist()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_download_failure_falls_back_to_cache()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_download_failure_no_cache_returns_none()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_download_success_caches_to_disk()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_exact_match()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_hosts_line_without_domain_returns_none()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_not_blocked()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_parent_allowlist_overrides_grandparent_block()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_parent_domain_wildcard()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_periodic_loop_survives_errors_until_cancelled()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_start_creates_task()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_stats_attributes()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_stats_returns_counts()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_stop_cancels_task()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_system_allowlist()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_trailing_dot_normalization()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_update_rebuilds_blocked_domains()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-test_wildcard_denylist_blocks_subdomains()]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[Blocklist stub that blocks nothing.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
 - [[Check if a domain should be blocked.          Checks the domain and all parent d]] - rationale - gateway/proxy/dns_blocklist.py
 - [[DNSBlocklist]] - code - gateway/proxy/dns_blocklist.py
@@ -63,18 +63,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_canvas_proxy_app()]]
-- 9 edges to [[_COMMUNITY_Seccomp Profiles]]
-- 7 edges to [[_COMMUNITY_75 Security Modules]]
-- 5 edges to [[_COMMUNITY_AgentShroud Operations Cheat Sheet]]
-- 4 edges to [[_COMMUNITY_OutboundInfoFilter]]
-- 3 edges to [[_COMMUNITY_Skill Pull Request (PR) Generator]]
-- 3 edges to [[_COMMUNITY_TestOutboundScanUnification]]
-- 3 edges to [[_COMMUNITY_AgentShroud Development Roadmap — 2026 Gantt Cha]]
-- 2 edges to [[_COMMUNITY__wrap_response()]]
-- 1 edge to [[_COMMUNITY_TestDataExfiltration]]
-- 1 edge to [[_COMMUNITY_Skill Git Workflow Guardian (GIT-GUARD)]]
-- 1 edge to [[_COMMUNITY_v0.6.0 Baseline Results]]
+- 9 edges to [[_COMMUNITY_DNSForwarderProtocol]]
+- 9 edges to [[_COMMUNITY_test_dns_canvas_coverage.py]]
+- 7 edges to [[_COMMUNITY_dot-update]]
+- 5 edges to [[_COMMUNITY__FakeUpstreamWS]]
+- 4 edges to [[_COMMUNITY_AsyncMock]]
+- 3 edges to [[_COMMUNITY_TestLoadFromText]]
+- 3 edges to [[_COMMUNITY_TestParseHostsLine]]
+- 3 edges to [[_COMMUNITY_TestDNSForwarderProtocol]]
+- 2 edges to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY_forward_query]]
+- 1 edge to [[_COMMUNITY_TestCanvasAuthHelpers]]
+- 1 edge to [[_COMMUNITY_parse_query]]
 
 ## Top bridge nodes
 - [[DNSBlocklist]] - degree 60, connects to 11 communities

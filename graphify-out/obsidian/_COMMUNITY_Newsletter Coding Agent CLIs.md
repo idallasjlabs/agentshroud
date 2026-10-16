@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Skill Package Symlink Security Tests]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[Newsletter Coding Agent CLIs]] - document - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
 
 ## Live Query (requires Dataview plugin)
 

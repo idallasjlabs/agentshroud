@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[audio_preinit() — claims I2S at 16 kHz before display init]] - code - firmware/voice-terminal/main/audio.c
+- [[Obsidian Vault Export (opt-in --obsidian)]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

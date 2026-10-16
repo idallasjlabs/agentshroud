@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Incident Response Team Structure
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[SlackAPIProxy Socket Mode Relay (apps.connections.open) Tests]] - code - gateway/tests/test_slack_proxy.py
-- [[SlackSocketClient events_api Envelope Processing Tests]] - code - gateway/tests/test_slack_socket_client.py
+- [[Escalation Chain]] - document - docs/operations/incident-response.md
+- [[Incident Response Team Structure]] - document - docs/operations/incident-response.md
+- [[Primary Roles]] - document - docs/operations/incident-response.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +20,9 @@ members: 2
 TABLE source_file, type FROM #community/Incident_Response_Team_Structure
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_AgentShroud Incident Response Plan]]
+
+## Top bridge nodes
+- [[Incident Response Team Structure]] - degree 3, connects to 1 community

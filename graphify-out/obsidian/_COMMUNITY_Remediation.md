@@ -10,22 +10,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[1. Clone the Repository]] - document - docs/operations/linux.md
-- [[2. Install Docker]] - document - docs/operations/linux.md
-- [[3. Set Up Secrets]] - document - docs/operations/linux.md
-- [[4. Configure AgentShroud]] - document - docs/operations/linux.md
-- [[5. Build and Start]] - document - docs/operations/linux.md
-- [[6. Verify]] - document - docs/operations/linux.md
-- [[Architecture Notes]] - document - docs/operations/linux.md
-- [[Deploying AgentShroud on Linux (x86_64  aarch64)]] - document - docs/operations/linux.md
-- [[Firewall]] - document - docs/operations/linux.md
-- [[Fresh Install]] - document - docs/operations/linux.md
-- [[Non-Root User]] - document - docs/operations/linux.md
-- [[Prerequisites_4]] - document - docs/operations/linux.md
-- [[Systemd Service for Auto-Start]] - document - docs/operations/linux.md
-- [[Updating to Latest Release]] - document - docs/operations/linux.md
-- [[VPS Deployment Notes]] - document - docs/operations/linux.md
-- [[linux]] - document - docs/operations/linux.md
+- [[02-human-in-the-loop]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Constraints_1]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Evidence_1]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Problem_4]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Remediation_2]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Root Cause_3]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Severity_4]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 1 Define MCP tool risk tiers]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 2 Configure approval requirements per tier]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 3 Wire MCP Proxy to Approval Queue]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 4 Set Approval Queue to enforce mode]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 5 Add approval UI to the control center dashboard]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 6 Add Telegram admin notification for critical-tier tools]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 7 Return clear error messages to the agent]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Verification_8]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - document - docs/planning/redteam/02-human-in-the-loop.md
 
 ## Live Query (requires Dataview plugin)
 

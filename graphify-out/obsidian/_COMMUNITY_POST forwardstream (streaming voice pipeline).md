@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[CVE Triage Report Cron Prompt]] - document - docker/config/openclaw/cron/prompts/cve-triage-report.txt
+- [[POST forwardstream (streaming voice pipeline)]] - code - gateway/ingest_api/routes/forward.py
 
 ## Live Query (requires Dataview plugin)
 

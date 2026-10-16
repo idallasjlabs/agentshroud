@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AWS Athena (data lakehouse)]] - concept - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[DevSecOps Skill]] - document - .agents/skills/i-devsecops/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

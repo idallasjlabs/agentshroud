@@ -1,22 +1,24 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.22
+members: 9
 ---
 
 # OKE Channel — CPA Exam Context
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[1. Accomplishments This Phase]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[featureterminal-control-center (1 commit)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[featureweb-control-center (2 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[p0pipeline-wiring (4 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[p1middleware-modules (3 commits, builds on p0)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[p2network-modules (3 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[p3infra-modules (0 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[CPA Curriculum Frontmatter Addition_2]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
+- [[Coverage Types_2]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
+- [[Episode Closing_2]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
+- [[Exam Weight Integration_2]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
+- [[Gleim CPA Review Study Unit Mapping]] - concept - docker/config/hermes/skills/i-atlas/SKILL.md
+- [[Gleim CPA Review Study Unit Mapping_1]] - concept - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Gleim Unit Mapping_2]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
+- [[Mandatory Acronym Expansion_2]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
+- [[OKE Channel — CPA Exam Context_2]] - concept - docker/config/hermes/skills/i-atlas/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +28,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_SecureBrowser]]
+- 1 edge to [[_COMMUNITY_Atlas — Curriculum Architect_2]]
+- 1 edge to [[_COMMUNITY_Atlas — Curriculum Architect (SKILL)]]
 
 ## Top bridge nodes
-- [[1. Accomplishments This Phase]] - degree 7, connects to 1 community
+- [[OKE Channel — CPA Exam Context_2]] - degree 10, connects to 2 communities

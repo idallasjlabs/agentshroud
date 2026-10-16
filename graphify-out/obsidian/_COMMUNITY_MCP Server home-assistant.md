@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud GitHub Social Preview Image]] - image - branding/social/github-social-preview-1280x640.png
+- [[MCP Server home-assistant]] - code - .mcp.json
 
 ## Live Query (requires Dataview plugin)
 

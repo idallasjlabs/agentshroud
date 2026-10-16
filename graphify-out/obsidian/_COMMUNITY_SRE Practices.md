@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Performance Baseline v1.0.0]] - document - .benchmarks/baseline-v1.0.0.json
+- [[SRE Practices]] - document - .agents/skills/i-sre/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,47 +1,37 @@
 ---
 type: community
-cohesion: 0.06
-members: 32
+cohesion: 0.14
+members: 22
 ---
 
 # ContextSegment
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 32 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 22 nodes
 
 ## Members
-- [[3A.1 Re-enable seccomp profiles ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[3A.2 Make OpenClaw container read-only ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[3A.3 Remove NET_RAW capability ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[3A.4 Add mDNSBonjour disable ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[3A.5 Move gateway password to Docker secrets ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[3A.6 Create verify-security.sh ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[3A.7 Create scan.sh (OpenSCAP) ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[3A.8 Change DM policy to allowlist ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[3B.1 Create killswitch.sh ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Created]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[DM Policy Allowlist Configuration]] - concept - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Disable seccomp (if causing startup failures)]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Emergency container access]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Files Changed]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Gateway Password Moved to Docker Secrets]] - rationale - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Kill Switch (freeze  shutdown  disconnect)]] - concept - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Modified]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[NET_RAW Capability Removal]] - rationale - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Next Steps_2]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[No Changes (Already Correct)]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[PHASE_3A_3B_IMPLEMENTATION]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Phase 3A Testing]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Phase 3A Security Completion (COMPLETE)]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Phase 3B.1 Testing]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Phase 3B.1 Kill Switch (COMPLETE)]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Pre-Test Preparation]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Re-enable Seccomp Profiles (ARM64 syscalls)]] - rationale - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Restore hardcoded gateway password (if secret mounting fails)]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Rollback Plan]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Security Improvements Summary]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Testing Checklist]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[verify-security.sh (13 Security Checks)]] - concept - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[dot-__init__()_57]] - code - gateway/security/context_integrity.py
+- [[dot-get_segment_provenance()]] - code - gateway/security/context_guard.py
+- [[dot-record_segment()]] - code - gateway/security/context_guard.py
+- [[dot-score_context()]] - code - gateway/security/context_integrity.py
+- [[dot-tag_segment()]] - code - gateway/security/context_guard.py
+- [[Any_24]] - code - gateway/security/context_integrity.py
+- [[Compute a 0.0–1.0 integrity score for the given context segments.          Args]] - rationale - gateway/security/context_integrity.py
+- [[ContextIntegrityScorer]] - code - gateway/security/context_integrity.py
+- [[ContextSegment]] - code - gateway/security/context_guard.py
+- [[Create a provenance record for a context segment.]] - rationale - gateway/security/context_guard.py
+- [[HMAC-SHA256 fingerprint for a registered system prompt.]] - rationale - gateway/security/prompt_guard.py
+- [[IntegrityScore]] - code - gateway/security/context_integrity.py
+- [[Return ordered list of provenance records for the session.]] - rationale - gateway/security/context_guard.py
+- [[Rolling context integrity score for a session.]] - rationale - gateway/security/context_integrity.py
+- [[Scores the integrity of a session's context.      Usage          scorer = Cont]] - rationale - gateway/security/context_integrity.py
+- [[SystemPromptFingerprint]] - code - gateway/security/prompt_guard.py
+- [[Tag a segment and append it to the session's provenance log.]] - rationale - gateway/security/context_guard.py
+- [[Tagged provenance record for a context segment.]] - rationale - gateway/security/context_guard.py
+- [[context_integrity.py]] - code - gateway/security/context_integrity.py
+- [[guard()_1]] - code - gateway/tests/test_context_integrity.py
+- [[scorer()]] - code - gateway/tests/test_context_integrity.py
+- [[test_context_integrity.py]] - code - gateway/tests/test_context_integrity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,16 +41,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_gateway.security.agent_cve_registry]]
-- 1 edge to [[_COMMUNITY_.test_gives_up_and_marks_sent_after_max_retries(]]
-- 1 edge to [[_COMMUNITY_IntelReportStore]]
-- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
-- 1 edge to [[_COMMUNITY_start.sh]]
-- 1 edge to [[_COMMUNITY_chatbotmain.py]]
+- 10 edges to [[_COMMUNITY_PIIConfig]]
+- 6 edges to [[_COMMUNITY_TestContextIntegrityScorer]]
+- 3 edges to [[_COMMUNITY_MiddlewareManager]]
+- 2 edges to [[_COMMUNITY_dot-_get_hmac_key]]
+- 2 edges to [[_COMMUNITY_check_message]]
+- 2 edges to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY_OutboundInfoFilter]]
+- 1 edge to [[_COMMUNITY_TestSourceTagging]]
+- 1 edge to [[_COMMUNITY_dot-analyze_message]]
+- 1 edge to [[_COMMUNITY_TestNewPatternsV080]]
 
 ## Top bridge nodes
-- [[Kill Switch (freeze  shutdown  disconnect)]] - degree 3, connects to 2 communities
-- [[PHASE_3A_3B_IMPLEMENTATION]] - degree 14, connects to 1 community
-- [[DM Policy Allowlist Configuration]] - degree 2, connects to 1 community
-- [[Gateway Password Moved to Docker Secrets]] - degree 2, connects to 1 community
-- [[NET_RAW Capability Removal]] - degree 2, connects to 1 community
+- [[ContextSegment]] - degree 15, connects to 4 communities
+- [[SystemPromptFingerprint]] - degree 13, connects to 4 communities
+- [[ContextIntegrityScorer]] - degree 13, connects to 3 communities
+- [[IntegrityScore]] - degree 9, connects to 2 communities
+- [[test_context_integrity.py]] - degree 8, connects to 2 communities

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Logo on White Background]] - image - branding/logos/variants/logo-on-white-1024x1024.png
+- [[MCP Server github]] - code - .mcp.json
 
 ## Live Query (requires Dataview plugin)
 

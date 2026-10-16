@@ -1,24 +1,25 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.20
+members: 10
 ---
 
 # Quick Reference
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[Branch Naming_1]] - document - docker/config/hermes/skills/i-gg/SKILL.md
-- [[Commit Messages  (Conventional Commits)_1]] - document - docker/config/hermes/skills/i-gg/SKILL.md
-- [[Emergency Hotfix_2]] - document - docker/config/hermes/skills/i-gg/SKILL.md
-- [[Mandatory Workflow  (10 steps)_1]] - document - docker/config/hermes/skills/i-gg/SKILL.md
-- [[Protected Branch_1]] - document - docker/config/hermes/skills/i-gg/SKILL.md
-- [[REFUSE These_1]] - document - docker/config/hermes/skills/i-gg/SKILL.md
-- [[Role_50]] - document - docker/config/hermes/skills/i-gg/SKILL.md
-- [[SKILL_85]] - document - docker/config/hermes/skills/i-gg/SKILL.md
-- [[Skill Git Workflow Guardian (GIT-GUARD)_1]] - document - docker/config/hermes/skills/i-gg/SKILL.md
+- [[Change Default Model]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Check Current Profile_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Check Current Profile_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Check Telegram Channel Status]] - document - docs/setup/SETUP_API_KEYS.md
+- [[List Available Models]] - document - docs/setup/SETUP_API_KEYS.md
+- [[List Available Profiles_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[List Available Profiles_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Quick Reference_10]] - document - docs/setup/SETUP_API_KEYS.md
+- [[View Configured Profiles_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[View Configured Providers]] - document - docs/setup/SETUP_API_KEYS.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,7 +29,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY__make_tm()]]
+- 1 edge to [[_COMMUNITY_Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]]
+- 1 edge to [[_COMMUNITY_Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]]
+- 1 edge to [[_COMMUNITY_API Keys Setup Guide]]
 
 ## Top bridge nodes
-- [[Skill Git Workflow Guardian (GIT-GUARD)_1]] - degree 9, connects to 1 community
+- [[Quick Reference_10]] - degree 5, connects to 1 community
+- [[List Available Profiles_2]] - degree 4, connects to 1 community
+- [[List Available Profiles_1]] - degree 3, connects to 1 community

@@ -1,28 +1,35 @@
 ---
 type: community
-cohesion: 0.15
-members: 13
+cohesion: 0.10
+members: 20
 ---
 
 # Docker Volumes
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 13 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 20 nodes
 
 ## Members
-- [[Add a comment to a card]] - document - skills/openclaw/trello/SKILL.md
-- [[Archive a card]] - document - skills/openclaw/trello/SKILL.md
-- [[Create a card]] - document - skills/openclaw/trello/SKILL.md
-- [[Examples_1]] - document - skills/openclaw/trello/SKILL.md
-- [[List boards]] - document - skills/openclaw/trello/SKILL.md
-- [[List cards in a list]] - document - skills/openclaw/trello/SKILL.md
-- [[List lists in a board]] - document - skills/openclaw/trello/SKILL.md
-- [[Move a card to another list]] - document - skills/openclaw/trello/SKILL.md
-- [[Notes_8]] - document - skills/openclaw/trello/SKILL.md
-- [[SKILL_235]] - document - skills/openclaw/trello/SKILL.md
-- [[Setup_8]] - document - skills/openclaw/trello/SKILL.md
-- [[Trello Skill]] - document - skills/openclaw/trello/SKILL.md
-- [[Usage_131]] - document - skills/openclaw/trello/SKILL.md
+- [[Backup]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[Cleanup Warning]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[Container Integration]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Docker Volumes]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[Inspecting Volumes]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[Playwright_1]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Purpose_83]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Related Notes_41]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Related Notes_42]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[Security Controls_1]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Volume]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Volume Details]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[Volume Inventory]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[agentshroud-browsers]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[agentshroud-config]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[agentshroud-ssh]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[agentshroud-workspace]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[gateway-data]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[playwright]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[volumes_1]] - document - docs/vault/06 - Containers & Services/volumes.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,7 +39,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_browser-extensionmanifest.json]]
+- 1 edge to [[_COMMUNITY_main.py]]
+- 1 edge to [[_COMMUNITY_All Dependencies]]
+- 1 edge to [[_COMMUNITY_agentshroud-bot]]
 
 ## Top bridge nodes
-- [[SKILL_235]] - degree 2, connects to 1 community
+- [[volumes_1]] - degree 4, connects to 2 communities
+- [[playwright]] - degree 3, connects to 1 community

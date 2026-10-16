@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[CI job docs-drift (packageAPI version consistency)]] - code - .github/workflows/ci.yml
+- [[SecureClaw Project (concept)]] - concept - docker/config/hermes/skills/i-pm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

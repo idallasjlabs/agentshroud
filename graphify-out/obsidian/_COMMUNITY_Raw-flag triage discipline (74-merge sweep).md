@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[agentshroud-dmz network (reserved, not attached by default)]] - code - docker/docker-compose.yml
+- [[Raw-flag triage discipline (74-merge sweep)]] - rationale - docker/config/hermes/skills/i-ab/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

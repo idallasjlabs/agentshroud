@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Red Team Adversarial Tester (SEC-OFFENSE)
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[.test_five_all_pillars()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_one_baseline()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_two_with_wazuh()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreLoggingMonitoring_1]] - code - gateway/tests/test_scorecard_scoring.py
+- [[Purpose_52]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
+- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
+- [[Related Skills_45]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
+- [[Usage_48]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
+- [[openclawskillsi-sec-offenseREADME]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Skill Create PR with Pre-Flight Audit (CRPR)]]
+- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[TestScoreLoggingMonitoring_1]] - degree 4, connects to 1 community
+- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - degree 5, connects to 1 community

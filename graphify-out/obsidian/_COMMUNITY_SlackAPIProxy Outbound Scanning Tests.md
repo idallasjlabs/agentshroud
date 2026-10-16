@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[POST forwardstream (streaming voice pipeline)]] - code - gateway/ingest_api/routes/forward.py
+- [[SlackAPIProxy Outbound Scanning Tests]] - code - gateway/tests/test_slack_proxy.py
 
 ## Live Query (requires Dataview plugin)
 

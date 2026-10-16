@@ -10,14 +10,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[.test_forward_middleware_allowed()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_forward_middleware_blocking()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_forward_middleware_error_handling()]] - code - gateway/tests/test_main_endpoints.py
-- [[Test forward endpoint with middleware integration.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test that middleware allows requests when they pass checks.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test that middleware can block requests with HTTP 403.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test that middleware errors cause requests to be blocked.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[TestForwardEndpoint]] - code - gateway/tests/test_main_endpoints.py
+- [[Anti-Patterns to Flag]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Core Discipline Understand → Structure → Write → Validate]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Document Structure]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Document-Type Patterns]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[README — Entry Point for a Repo or Service]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Role_10]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Rules]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Skill Technical Writer (TW)]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,12 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_TrustManager]]
-- 2 edges to [[_COMMUNITY_OutboundInfoFilter]]
-- 1 edge to [[_COMMUNITY_SSHProxy]]
-- 1 edge to [[_COMMUNITY_InjectionSeverity]]
+- 2 edges to [[_COMMUNITY_openclawskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[TestForwardEndpoint]] - degree 6, connects to 2 communities
-- [[.test_forward_middleware_blocking()]] - degree 4, connects to 2 communities
-- [[.test_forward_middleware_error_handling()]] - degree 4, connects to 2 communities
+- [[Skill Technical Writer (TW)]] - degree 8, connects to 1 community

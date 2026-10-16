@@ -1,70 +1,71 @@
 ---
 type: community
 cohesion: 0.05
-members: 55
+members: 56
 ---
 
 # PermissionLevel
 
 **Cohesion:** 0.05 - loosely connected
-**Members:** 55 nodes
+**Members:** 56 nodes
 
 ## Members
-- [[.coerce_members()]] - code - gateway/security/group_config.py
-- [[.get_group_safe_response_prefix()]] - code - gateway/security/group_config.py
-- [[.get_user_collab_mode()]] - code - gateway/security/group_config.py
-- [[.get_user_groups()]] - code - gateway/security/group_config.py
-- [[.is_member()]] - code - gateway/security/group_config.py
-- [[.test_apply_persisted_overrides_skips_user_overrides_key()]] - code - gateway/tests/test_group_config.py
-- [[.test_empty_prefix_string_not_returned()]] - code - gateway/tests/test_group_config.py
-- [[.test_empty_teams_parses()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_all_member_ids()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_collab_mode_falls_back_to_group()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_groups_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_groups_multi_group()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_groups_non_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_projects_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_projects_non_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_group_config_safe_response_prefix_field()]] - code - gateway/tests/test_group_config.py
-- [[.test_group_config_safe_response_prefix_set()]] - code - gateway/tests/test_group_config.py
-- [[.test_is_group_admin_correct()]] - code - gateway/tests/test_group_config.py
-- [[.test_is_group_admin_unknown_group()]] - code - gateway/tests/test_group_config.py
-- [[.test_is_group_admin_wrong_user()]] - code - gateway/tests/test_group_config.py
-- [[.test_local_only_mode()]] - code - gateway/tests/test_group_config.py
-- [[.test_no_duplicate_projects()]] - code - gateway/tests/test_group_config.py
-- [[.test_no_prefix_by_default()]] - code - gateway/tests/test_group_config.py
-- [[.test_parses_groups()]] - code - gateway/tests/test_group_config.py
-- [[.test_parses_projects()]] - code - gateway/tests/test_group_config.py
-- [[.test_persist_user_collab_mode()]] - code - gateway/tests/test_group_config.py
-- [[.test_persist_user_collab_mode_update()]] - code - gateway/tests/test_group_config.py
-- [[.test_prefix_not_returned_for_non_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_prefix_returned_for_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_project_scoped_mode()]] - code - gateway/tests/test_group_config.py
-- [[.test_unknown_user_returns_local_only()]] - code - gateway/tests/test_group_config.py
-- [[.test_unknown_user_returns_none()]] - code - gateway/tests/test_group_config.py
-- [[.test_user_override_takes_precedence_over_group()]] - code - gateway/tests/test_group_config.py
-- [[.validate_mode()]] - code - gateway/security/group_config.py
-- [[A team group with members, admin, projects, and collab mode.]] - rationale - gateway/security/group_config.py
-- [[Calling persist_user_collab_mode twice updates the stored value.]] - rationale - gateway/tests/test_group_config.py
-- [[GroupConfig]] - code - gateway/security/group_config.py
-- [[Per-user collab_mode override persists to group_overrides.json and takes     pr]] - rationale - gateway/tests/test_group_config.py
-- [[Per-user override beats group-derived collab_mode.]] - rationale - gateway/tests/test_group_config.py
-- [[Return all groups the user belongs to.]] - rationale - gateway/security/group_config.py
-- [[Return the effective collab_mode for a user.          Resolution order]] - rationale - gateway/security/group_config.py
-- [[Return the safe_response_prefix for the first group that the user belongs to]] - rationale - gateway/security/group_config.py
-- [[TeamsConfig_1]] - code - gateway/tests/test_group_config.py
-- [[TestAdminChecks]] - code - gateway/tests/test_group_config.py
-- [[TestCollabMode]] - code - gateway/tests/test_group_config.py
-- [[TestGroupSafeResponsePrefix]] - code - gateway/tests/test_group_config.py
-- [[TestMembershipQueries]] - code - gateway/tests/test_group_config.py
-- [[TestProjectQueries]] - code - gateway/tests/test_group_config.py
-- [[TestTeamsConfigParsing]] - code - gateway/tests/test_group_config.py
-- [[TestUserCollabModeOverride]] - code - gateway/tests/test_group_config.py
-- [[Without a per-user override, group-derived mode is returned.]] - rationale - gateway/tests/test_group_config.py
-- [[__user_overrides__ key must not be treated as a group_id.]] - rationale - gateway/tests/test_group_config.py
-- [[persist_user_collab_mode writes under __user_overrides__ key.]] - rationale - gateway/tests/test_group_config.py
-- [[teams()_1]] - code - gateway/tests/test_group_config.py
-- [[test_group_config.py]] - code - gateway/tests/test_group_config.py
+- [[dot-__ge__()]] - code - gateway/proxy/mcp_config.py
+- [[dot-__gt__()]] - code - gateway/proxy/mcp_config.py
+- [[dot-__le__()]] - code - gateway/proxy/mcp_config.py
+- [[dot-__lt__()]] - code - gateway/proxy/mcp_config.py
+- [[dot-from_dict()_1]] - code - gateway/proxy/mcp_config.py
+- [[dot-level_value()]] - code - gateway/proxy/mcp_config.py
+- [[dot-test_admin_ge_read()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_all_pass()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_allowed_agent()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_clamp_high()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_clamp_low()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_combined_blocks_private_data_parameter()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_default_trust_is_1()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_default_write()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_denied_agent()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_disabled_server()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_execute_lt_admin()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_explicit_config()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_full_access()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_level_values()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_no_limit_always_allowed()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_not_in_allowlist()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_pattern_delete()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_pattern_list()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_pattern_read()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_pattern_sensitive()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_permission_denied()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_rate_limit_enforced()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_rate_limit_per_agent()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_read_le_read()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_read_lt_write()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_server_denied_stops_early()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_set_and_get()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_trust_0_read_only()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_trust_1_write()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_trust_2_execute()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_trust_3_admin()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_trust_sufficient_for_server()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_trust_too_low_for_server()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_unknown_server_default_allow()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_write_lt_execute()]] - code - gateway/tests/test_mcp_permissions.py
+- [[Any_9]] - code - gateway/proxy/mcp_config.py
+- [[Configuration for a specific MCP tool.]] - rationale - gateway/proxy/mcp_config.py
+- [[MCPToolConfig]] - code - gateway/proxy/mcp_config.py
+- [[Parse config from a dictionary (e.g. loaded from YAML).]] - rationale - gateway/proxy/mcp_config.py
+- [[PermissionLevel]] - code - gateway/proxy/mcp_config.py
+- [[TestCheckAll]] - code - gateway/tests/test_mcp_permissions.py
+- [[TestInferPermission]] - code - gateway/tests/test_mcp_permissions.py
+- [[TestPermissionLevel]] - code - gateway/tests/test_mcp_permissions.py
+- [[TestRateLimiting]] - code - gateway/tests/test_mcp_permissions.py
+- [[TestServerAccess]] - code - gateway/tests/test_mcp_permissions.py
+- [[TestTrustLevels]] - code - gateway/tests/test_mcp_permissions.py
+- [[TestTrustMapping]] - code - gateway/tests/test_mcp_permissions.py
+- [[config()]] - code - gateway/tests/test_mcp_permissions.py
+- [[mgr()]] - code - gateway/tests/test_mcp_permissions.py
+- [[test_mcp_permissions.py]] - code - gateway/tests/test_mcp_permissions.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -74,15 +75,24 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 11 edges to [[_COMMUNITY_StdioConnection]]
-- 4 edges to [[_COMMUNITY__make_stream_app_state()]]
-- 2 edges to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_main.rs]]
+- 44 edges to [[_COMMUNITY_MCPPermissionManager]]
+- 34 edges to [[_COMMUNITY_MCPToolCall]]
+- 30 edges to [[_COMMUNITY_StdioConnection]]
+- 8 edges to [[_COMMUNITY_MCPToolResult]]
+- 6 edges to [[_COMMUNITY_FakeProcess]]
+- 3 edges to [[_COMMUNITY_TestToolPermission]]
+- 2 edges to [[_COMMUNITY_TestInspectorEdgeCases]]
+- 2 edges to [[_COMMUNITY_TestPIIDetection]]
+- 2 edges to [[_COMMUNITY_TestExtractEgressTargets]]
+- 2 edges to [[_COMMUNITY_TestAuditTrail]]
+- 2 edges to [[_COMMUNITY_MCPAuditTrail]]
+- 2 edges to [[_COMMUNITY_Enum]]
+- 1 edge to [[_COMMUNITY_Path]]
+- 1 edge to [[_COMMUNITY_TestMCPProxyEndpoint]]
 
 ## Top bridge nodes
-- [[GroupConfig]] - degree 32, connects to 5 communities
-- [[test_group_config.py]] - degree 11, connects to 2 communities
-- [[.get_user_groups()]] - degree 6, connects to 2 communities
-- [[TestGroupSafeResponsePrefix]] - degree 10, connects to 1 community
-- [[TestUserCollabModeOverride]] - degree 9, connects to 1 community
+- [[PermissionLevel]] - degree 71, connects to 12 communities
+- [[MCPToolConfig]] - degree 59, connects to 11 communities
+- [[test_mcp_permissions.py]] - degree 17, connects to 4 communities
+- [[dot-from_dict()_1]] - degree 8, connects to 2 communities
+- [[TestServerAccess]] - degree 13, connects to 1 community

@@ -10,14 +10,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[Hermes — Reference Verifier_2]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[Input Requirements_25]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[Output Format_30]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[Persona_19]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[Quality Checklist_22]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[Role_88]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[SKILL_151]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[System Prompt_19]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
+- [[HTTP 400 — Unknown MCP Server]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[HTTP 403 — MCP Tool Permission Denied]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[HTTP 429 — MCP Rate Limit Exceeded]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[HTTP 502 — MCP Server Unreachable]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[MCP Proxy Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[MCP Proxy Errors]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[MCP Proxy Wrapper Issues (Bot Side)]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[Related Notes_13]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_BaseModel]]
+- 1 edge to [[_COMMUNITY_Error Index]]
 
 ## Top bridge nodes
-- [[Hermes — Reference Verifier_2]] - degree 8, connects to 1 community
+- [[MCP Proxy Errors]] - degree 2, connects to 1 community

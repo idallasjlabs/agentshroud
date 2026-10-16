@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Gemini CLI (SECONDARY agent configuration)]] - concept - .llm_settings/docs/AI_TOOLS_CONFIGURATION_GUIDE.md
+- [[SlackSocketClient Reconnect Backoff Tests]] - code - gateway/tests/test_slack_socket_client.py
 
 ## Live Query (requires Dataview plugin)
 

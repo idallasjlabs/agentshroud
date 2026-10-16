@@ -1,20 +1,26 @@
 ---
 type: community
-cohesion: 0.70
-members: 5
+cohesion: 0.18
+members: 11
 ---
 
 # Daedalus — Concept Illustrator
 
-**Cohesion:** 0.70 - tightly connected
-**Members:** 5 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[log()_8]] - code - scripts/openclaw_triage.sh
-- [[openclaw_triage.sh]] - code - scripts/openclaw_triage.sh
-- [[openclaw_triage.sh script]] - code - scripts/openclaw_triage.sh
-- [[save_cmd()]] - code - scripts/openclaw_triage.sh
-- [[save_shell()]] - code - scripts/openclaw_triage.sh
+- [[dot-agentsskillsi-daedalusSKILL]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[Daedalus — Concept Illustrator_3]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[Input Requirements_23]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[Output Format_38]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[Persona_17]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[Quality Checklist_20]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[Role_93]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[System Prompt_17]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[architecture.puml (PlantUML)]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[diagramsREADME_1]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[flow.mmd (Mermaid)]] - document - .agents/skills/i-daedalus/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +28,9 @@ members: 5
 TABLE source_file, type FROM #community/Daedalus__Concept_Illustrator
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
+
+## Top bridge nodes
+- [[Daedalus — Concept Illustrator_3]] - degree 8, connects to 1 community

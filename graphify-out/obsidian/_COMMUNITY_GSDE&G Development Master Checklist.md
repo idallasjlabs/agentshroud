@@ -1,26 +1,27 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+cohesion: 0.17
+members: 12
 ---
 
 # GSDE&G Development Master Checklist
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[Configuration  Environment Variables_7]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
-- [[Function Details_13]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
-- [[Key Classes  Functions_16]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
-- [[Purpose_134]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
-- [[Related_20]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
-- [[Responsibilities_18]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
-- [[Security Limitation Warning]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
-- [[SidecarScanner.get_stats()]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
-- [[SidecarScanner.scan(request)]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
-- [[sidecar.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
-- [[sidecar.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[dot-agentsskillsi-mcSKILL]] - document - .agents/skills/i-mc/SKILL.md
+- [[Emergency Hotfix]] - document - .agents/skills/i-mc/SKILL.md
+- [[GSDE&G Development Master Checklist]] - document - .agents/skills/i-mc/SKILL.md
+- [[Phase 1 · Plan & Branch  → `ggSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
+- [[Phase 2 · TDD  → `tddSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
+- [[Phase 3 · QA  → `qaSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
+- [[Phase 4 · Code Review  → `crSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
+- [[Phase 5 · Pull Request  → `prSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
+- [[Phase 6 · CI  → `cicdSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
+- [[Phase 7 · Deploy  → `psSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
+- [[Quick Commands]] - document - .agents/skills/i-mc/SKILL.md
+- [[Skill Index]] - document - .agents/skills/i-mc/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,3 +29,9 @@ members: 11
 TABLE source_file, type FROM #community/GSDEG_Development_Master_Checklist
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
+
+## Top bridge nodes
+- [[GSDE&G Development Master Checklist]] - degree 12, connects to 1 community

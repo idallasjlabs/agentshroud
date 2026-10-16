@@ -10,19 +10,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[Anti-Patterns to Flag_2]] - document - .agents/skills/i-sec/SKILL.md
-- [[Core Principle]] - document - .agents/skills/i-sec/SKILL.md
-- [[Layer 1 Application Security]] - document - .agents/skills/i-sec/SKILL.md
-- [[Layer 2 Container Security]] - document - .agents/skills/i-sec/SKILL.md
-- [[Layer 3 Network Security]] - document - .agents/skills/i-sec/SKILL.md
-- [[Layer 4 Data Flow Security]] - document - .agents/skills/i-sec/SKILL.md
-- [[Output Format_10]] - document - .agents/skills/i-sec/SKILL.md
-- [[Review Layers]] - document - .agents/skills/i-sec/SKILL.md
-- [[Role_31]] - document - .agents/skills/i-sec/SKILL.md
-- [[SKILL_53]] - document - .agents/skills/i-sec/SKILL.md
-- [[SecureClaw-Specific Threat Model]] - document - .agents/skills/i-sec/SKILL.md
-- [[Skill Security Review (SEC)]] - document - .agents/skills/i-sec/SKILL.md
-- [[Verification Commands]] - document - .agents/skills/i-sec/SKILL.md
+- [[Architecture_12]] - document - docs/architecture/per-agent-isolation.md
+- [[Container Configuration]] - document - docs/architecture/per-agent-isolation.md
+- [[Design Principles]] - document - docs/architecture/per-agent-isolation.md
+- [[Docker Compose Template]] - document - docs/architecture/per-agent-isolation.md
+- [[Future Enhancements_2]] - document - docs/architecture/per-agent-isolation.md
+- [[IsolationVerifier Class]] - concept - docs/architecture/per-agent-isolation.md
+- [[Overview_24]] - document - docs/architecture/per-agent-isolation.md
+- [[Per-Agent Audit Trails]] - document - docs/architecture/per-agent-isolation.md
+- [[Per-Agent Container Isolation Architecture]] - document - docs/architecture/per-agent-isolation.md
+- [[Request Routing]] - document - docs/architecture/per-agent-isolation.md
+- [[Security Verification_1]] - document - docs/architecture/per-agent-isolation.md
+- [[Shared-Nothing Isolation Design Principle]] - rationale - docs/architecture/per-agent-isolation.md
+- [[per-agent-isolation]] - document - docs/architecture/per-agent-isolation.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,7 +32,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
+- 1 edge to [[_COMMUNITY_PHASE_3A_3B_IMPLEMENTATION]]
+- 1 edge to [[_COMMUNITY_AgentShroud Gateway (Trust Zone 1) holds 1Password service account, enforces policy, signs ledger entries, controls approval queue, HMACJWT validation]]
 
 ## Top bridge nodes
-- [[Skill Security Review (SEC)]] - degree 9, connects to 1 community
+- [[Shared-Nothing Isolation Design Principle]] - degree 3, connects to 2 communities

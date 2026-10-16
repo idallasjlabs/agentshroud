@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AWS API MCP Server (concept)]] - concept - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[Daedalus — Concept Illustrator Skill]] - document - .agents/skills/i-daedalus/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

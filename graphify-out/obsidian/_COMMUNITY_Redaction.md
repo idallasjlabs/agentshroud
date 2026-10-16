@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[_INJECTION_PATTERNS (prompt injection regex set)]] - code - gateway/proxy/web_content_scanner.py
+- [[Redaction]] - concept - docs/project/glossary.md
 
 ## Live Query (requires Dataview plugin)
 

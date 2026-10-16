@@ -1,20 +1,28 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.15
+members: 13
 ---
 
 # Oracle — Feedback Analyst
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[.test_daily_fs_scan_skips_security_log_tree()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_no_skip_dirs_flag_when_omitted()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_skip_dirs_added_to_command()]] - code - gateway/tests/test_daily_cve_report.py
-- [[TestTrivySkipDirs]] - code - gateway/tests/test_daily_cve_report.py
-- [[The daily fs scan of  must exclude varlogsecurity (trivy's own         cache]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[dot-agentsskillsi-oracleREADME]] - document - .agents/skills/i-oracle/README.md
+- [[dot-agentsskillsi-oracleSKILL]] - document - .agents/skills/i-oracle/SKILL.md
+- [[Input Requirements_18]] - document - .agents/skills/i-oracle/SKILL.md
+- [[Oracle — Feedback Analyst_2]] - document - .agents/skills/i-oracle/README.md
+- [[Oracle — Feedback Analyst_3]] - document - .agents/skills/i-oracle/SKILL.md
+- [[Output Format_30]] - document - .agents/skills/i-oracle/SKILL.md
+- [[Persona_12]] - document - .agents/skills/i-oracle/SKILL.md
+- [[Purpose_166]] - document - .agents/skills/i-oracle/README.md
+- [[Quality Checklist_15]] - document - .agents/skills/i-oracle/SKILL.md
+- [[Related Skills_108]] - document - .agents/skills/i-oracle/README.md
+- [[Role_78]] - document - .agents/skills/i-oracle/SKILL.md
+- [[System Prompt_12]] - document - .agents/skills/i-oracle/SKILL.md
+- [[Usage_117]] - document - .agents/skills/i-oracle/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +30,3 @@ members: 5
 TABLE source_file, type FROM #community/Oracle__Feedback_Analyst
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_PrivacyPolicyEnforcer]]
-
-## Top bridge nodes
-- [[TestTrivySkipDirs]] - degree 4, connects to 1 community

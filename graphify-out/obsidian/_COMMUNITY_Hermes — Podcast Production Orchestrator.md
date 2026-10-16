@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Hermes — Podcast Production Orchestrator
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[.test_status_endpoint()]] - code - gateway/tests/test_main_endpoints.py
-- [[Test status endpoint.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test basic status endpoint functionality.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[TestStatusEndpoint]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-agentsskillsi-hermesREADME]] - document - .agents/skills/i-hermes/README.md
+- [[Hermes — Podcast Production Orchestrator]] - document - .agents/skills/i-hermes/README.md
+- [[Purpose_14]] - document - .agents/skills/i-hermes/README.md
+- [[Related Skills_7]] - document - .agents/skills/i-hermes/README.md
+- [[Usage_10]] - document - .agents/skills/i-hermes/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,12 +22,3 @@ members: 4
 TABLE source_file, type FROM #community/Hermes__Podcast_Production_Orchestrator
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_InjectionSeverity]]
-- 1 edge to [[_COMMUNITY_OutboundInfoFilter]]
-
-## Top bridge nodes
-- [[TestStatusEndpoint]] - degree 4, connects to 2 communities
-- [[.test_status_endpoint()]] - degree 3, connects to 1 community

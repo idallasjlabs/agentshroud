@@ -10,33 +10,33 @@ members: 27
 **Members:** 27 nodes
 
 ## Members
-- [[1. Find the Bot]] - document - docs/user-guide.md
-- [[2. Verify You're Authorized]] - document - docs/user-guide.md
-- [[3. Start Chatting]] - document - docs/user-guide.md
-- [[AgentShroud User Guide]] - document - docs/user-guide.md
-- [[Commands_2]] - document - docs/user-guide.md
-- [[Dashboard Overview]] - document - docs/user-guide.md
-- [[FAQ_1]] - document - docs/user-guide.md
-- [[Getting Started]] - document - docs/user-guide.md
-- [[Interacting via Telegram]] - document - docs/user-guide.md
-- [[Need Help_1]] - document - docs/user-guide.md
-- [[Q Can I request the AI to do something on the server]] - document - docs/user-guide.md
-- [[Q Can I use the bot in group chats]] - document - docs/user-guide.md
-- [[Q Can the AI see my personal information]] - document - docs/user-guide.md
-- [[Q How do I know my data is being protected]] - document - docs/user-guide.md
-- [[Q The bot isn't responding. What do I do]] - document - docs/user-guide.md
-- [[Q What happens if I accidentally send a password]] - document - docs/user-guide.md
-- [[Q What's the kill switch]] - document - docs/user-guide.md
-- [[Reading the Audit Trail]] - document - docs/user-guide.md
-- [[Regular Messages]] - document - docs/user-guide.md
-- [[SSH Access]] - document - docs/user-guide.md
-- [[Tips]] - document - docs/user-guide.md
-- [[Understanding Approval Requests]] - document - docs/user-guide.md
-- [[What Requires Approval]] - document - docs/user-guide.md
-- [[What You'll See]] - document - docs/user-guide.md
-- [[What is AgentShroud_3]] - document - docs/user-guide.md
-- [[Why Approvals Exist]] - document - docs/user-guide.md
-- [[user-guide]] - document - docs/user-guide.md
+- [[dot-agentsskillsi-mmSKILL]] - document - .agents/skills/i-mm/SKILL.md
+- [[Anti-Patterns to Flag_5]] - document - .agents/skills/i-mm/SKILL.md
+- [[Brainstorming Session Map]] - document - .agents/skills/i-mm/SKILL.md
+- [[Core Discipline Frame → Structure → Generate → Validate]] - document - .agents/skills/i-mm/SKILL.md
+- [[Curriculum Design (with `i-atlas`)]] - document - .agents/skills/i-mm/SKILL.md
+- [[Decision Tree Map]] - document - .agents/skills/i-mm/SKILL.md
+- [[Dependencies_5]] - document - .agents/skills/i-mm/SKILL.md
+- [[Example FODL Pipeline Overview]] - document - .agents/skills/i-mm/SKILL.md
+- [[Export and Sharing Conventions]] - document - .agents/skills/i-mm/SKILL.md
+- [[Hierarchy Design — Outline First]] - document - .agents/skills/i-mm/SKILL.md
+- [[Invocation Pattern]] - document - .agents/skills/i-mm/SKILL.md
+- [[Knowledge Map (PKE  OKE integration)]] - document - .agents/skills/i-mm/SKILL.md
+- [[MCP Tool markmap-mcp-server]] - document - .agents/skills/i-mm/SKILL.md
+- [[MCP Tool xmind-generator-mcp]] - document - .agents/skills/i-mm/SKILL.md
+- [[Markdown-to-Mindmap Conversion]] - document - .agents/skills/i-mm/SKILL.md
+- [[Markmap Generation via MCP]] - document - .agents/skills/i-mm/SKILL.md
+- [[Markmap Invocation Pattern]] - document - .agents/skills/i-mm/SKILL.md
+- [[Markmap Source Format]] - document - .agents/skills/i-mm/SKILL.md
+- [[Outline Template]] - document - .agents/skills/i-mm/SKILL.md
+- [[Project Planning Map]] - document - .agents/skills/i-mm/SKILL.md
+- [[Role_28]] - document - .agents/skills/i-mm/SKILL.md
+- [[Rules_6]] - document - .agents/skills/i-mm/SKILL.md
+- [[Skill Mindmap Architect (MM)]] - document - .agents/skills/i-mm/SKILL.md
+- [[Use Case Patterns]] - document - .agents/skills/i-mm/SKILL.md
+- [[Validation Checklist_2]] - document - .agents/skills/i-mm/SKILL.md
+- [[When to Use Mindmaps vs Other Formats]] - document - .agents/skills/i-mm/SKILL.md
+- [[XMind Generation via MCP]] - document - .agents/skills/i-mm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,3 +44,9 @@ members: 27
 TABLE source_file, type FROM #community/Skill_Mindmap_Architect_MM
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
+
+## Top bridge nodes
+- [[Skill Mindmap Architect (MM)]] - degree 15, connects to 1 community

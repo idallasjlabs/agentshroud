@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AWS Glue Jobs]] - concept - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[Observability Skill]] - document - .agents/skills/i-observability/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

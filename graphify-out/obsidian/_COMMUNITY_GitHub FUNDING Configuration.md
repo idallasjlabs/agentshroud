@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Mermaid Brand Theme Init Block]] - concept - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[GitHub FUNDING Configuration]] - document - .github/FUNDING.yml
 
 ## Live Query (requires Dataview plugin)
 

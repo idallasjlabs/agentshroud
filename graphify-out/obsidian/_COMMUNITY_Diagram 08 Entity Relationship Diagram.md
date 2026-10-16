@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Diagram 08: Entity Relationship Diagram
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[Host Application Firewall Layer (Little Snitch  Lulu on vpnkit)]] - rationale - docs/archive/SECURITY.md
-- [[In-Container iptables Firewall (container-firewall.sh, needs privileges)]] - rationale - docs/archive/SECURITY.md
+- [[Diagram 08 Entity Relationship Diagram]] - image - docs/diagrams/images/diagram-08-erd.svg
+- [[Diagram 09 Data Lineage]] - image - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[Diagram 10 Data Dictionary (Mindmap)]] - image - docs/diagrams/images/diagram-10-data-dictionary.svg
 
 ## Live Query (requires Dataview plugin)
 

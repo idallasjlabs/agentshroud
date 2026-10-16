@@ -1,25 +1,30 @@
 ---
 type: community
-cohesion: 0.38
-members: 10
+cohesion: 0.14
+members: 15
 ---
 
 # Dockerfile — Gateway
 
-**Cohesion:** 0.38 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[Phantom-Tag False-Pass Bug]] - concept - scripts/lib/sunday-scan.sh
-- [[check()_4]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[make_apply_bin()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[make_fake_repo()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[run_apply()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[run_gate()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[sunday-scan.sh CVE Scan-Gate Library]] - code - scripts/lib/sunday-scan.sh
-- [[test-sunday-upgrade-scan.sh]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[test-sunday-upgrade-scan.sh script]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
-- [[write_fake()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[Build Stages]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Dockerfile — Gateway]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Dockerfile.gateway vault note]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Dockerfile.gateway]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Gateway pre-installed security tools (ClamAV, Trivy, OpenSCAP, 1Password CLI, spaCy)]] - concept - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Image Labels (OCI)]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[OpenSCAP & IEC 62443 compliance validation]] - rationale - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[OpenSCAP dependency note]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[OpenSCAP relationship to TrivyClamAVFalco]] - concept - docs/vault/05 - Dependencies/openscap.md
+- [[Pre-installed Tools]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Related Notes_31]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Runtime Command]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Security Hardening_1]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Stage 1 Builder (`python3.13-slim AS builder`)]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Stage 2 Runtime (`python3.13-slim`)]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,10 +34,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_DraftEntry]]
-- 1 edge to [[_COMMUNITY_graphify reference extra exports and benchmark]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised]]
+- 1 edge to [[_COMMUNITY_Deployment Runbook — AgentShroud]]
+- 1 edge to [[_COMMUNITY_Dockerfile — Bot (OpenClaw)]]
+- 1 edge to [[_COMMUNITY_test_openclaw_photo.sh]]
+- 1 edge to [[_COMMUNITY_4. Environment Variables]]
 
 ## Top bridge nodes
-- [[test-sunday-upgrade-scan.sh]] - degree 12, connects to 2 communities
-- [[Phantom-Tag False-Pass Bug]] - degree 3, connects to 1 community
-- [[sunday-scan.sh CVE Scan-Gate Library]] - degree 3, connects to 1 community
+- [[Dockerfile — Gateway]] - degree 11, connects to 4 communities
+- [[OpenSCAP & IEC 62443 compliance validation]] - degree 2, connects to 1 community

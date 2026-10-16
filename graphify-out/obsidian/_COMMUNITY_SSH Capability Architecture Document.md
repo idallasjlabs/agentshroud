@@ -1,29 +1,29 @@
 ---
 type: community
-cohesion: 0.24
+cohesion: 0.14
 members: 14
 ---
 
 # SSH Capability Architecture Document
 
-**Cohesion:** 0.24 - loosely connected
+**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
-- [[background.js]] - code - browser-extension/background.js
-- [[clipPage()]] - code - browser-extension/background.js
-- [[extractPageContent()]] - code - browser-extension/background.js
-- [[forwardUrl()]] - code - browser-extension/background.js
-- [[getActiveTab()]] - code - browser-extension/background.js
-- [[icon48.png — solid blue (2b6cff) placeholder icon, no logotext]] - image - browser-extension/icons/icon48.png
-- [[loadConfig()]] - code - browser-extension/background.js
-- [[notify()]] - code - browser-extension/background.js
-- [[popup.html (toolbar popup UI)]] - code - browser-extension/popup.html
-- [[popup.js]] - code - browser-extension/popup.js
-- [[reportResult()]] - code - browser-extension/background.js
-- [[send()]] - code - browser-extension/popup.js
-- [[setStatus()]] - code - browser-extension/popup.js
-- [[statusEl]] - code - browser-extension/popup.js
+- [[API Endpoints (`gatewayingest_apimain.py`)]] - document - docs/ssh-capability.md
+- [[Approval-Required Commands]] - document - docs/ssh-capability.md
+- [[Architecture_11]] - document - docs/ssh-capability.md
+- [[Auto-Approved Commands]] - document - docs/ssh-capability.md
+- [[Components_2]] - document - docs/ssh-capability.md
+- [[Denied Commands]] - document - docs/ssh-capability.md
+- [[Overview_23]] - document - docs/ssh-capability.md
+- [[Request Flow]] - document - docs/ssh-capability.md
+- [[RequestResponse Models (`gatewayingest_apimodels.py`)]] - document - docs/ssh-capability.md
+- [[SSH Capability Architecture Document]] - document - docs/ssh-capability.md
+- [[SSHProxy Controlled Remote Command Execution via Gateway API]] - concept - docs/ssh-capability.md
+- [[Security Layers]] - document - docs/ssh-capability.md
+- [[`SSHConfig`  `SSHHostConfig` (`gatewayingest_apissh_config.py`)]] - document - docs/ssh-capability.md
+- [[`SSHProxy` (`gatewayssh_proxyproxy.py`)]] - document - docs/ssh-capability.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,10 +33,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_._can_use_tool_impl()]]
-- 1 edge to [[_COMMUNITY_SECURITY_VALUE_PROPOSITION]]
-- 1 edge to [[_COMMUNITY_test_config_validation.py]]
+- 1 edge to [[_COMMUNITY_Red Team Assessment v1.2.0]]
 
 ## Top bridge nodes
-- [[background.js]] - degree 11, connects to 2 communities
-- [[loadConfig()]] - degree 4, connects to 1 community
+- [[SSHProxy Controlled Remote Command Execution via Gateway API]] - degree 2, connects to 1 community

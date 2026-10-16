@@ -1,26 +1,31 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+cohesion: 0.13
+members: 16
 ---
 
 # Enterprise Governance Proxy System (invention)
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 16 nodes
 
 ## Members
-- [[ADR-008-progressive-trust-levels]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Consequences_7]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Context_7]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Decision_9]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Mitigation_4]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Negative Consequences_6]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Positive Consequences_6]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Progressive Controls]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Status_7]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Trust Calculation]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Trust Levels (0-4)]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
+- [[ADR-001-proxy-layer-inversion]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
+- [[Alternatives rejected]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
+- [[Collaborative Multi-Agent Governance]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Competitive Positioning — Proxy-Layer Inversion Differentiator]] - rationale - docs/agentshroud-knowledge.md
+- [[Decision_4]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
+- [[Delegated Authority Model (time-bounded privilege delegation)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Enterprise Governance Proxy System (invention)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Human-in-the-Loop Approval Queue_1]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Isaiah's Persona Package (IDENTITY.mdSOUL.mdUSER.md)]] - concept - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Owner vs Bot Telegram Identity Separation]] - concept - docs/architecture/IDENTITY.md
+- [[PII Detection and Redaction Engine]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Rationale]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
+- [[Slack Socket Mode Integration Architecture]] - concept - docs/setup-slack.md
+- [[Telegram Bot Setup (BotFather token + gateway config)]] - concept - docs/setup-telegram.md
+- [[Transparent Interception Architecture]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Trust-Differentiated Processing (RBAC tiers)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,3 +33,9 @@ members: 11
 TABLE source_file, type FROM #community/Enterprise_Governance_Proxy_System_invention
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_34 Security Modules Pipeline (P0-P3)]]
+
+## Top bridge nodes
+- [[Enterprise Governance Proxy System (invention)]] - degree 8, connects to 1 community
