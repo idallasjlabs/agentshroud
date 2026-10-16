@@ -12,6 +12,6 @@ tags:
 # Aggregated result of scanning a skill file or an entire skill tree.
 
 ## Connections
-- [[ScanResult_4]] - `rationale_for` [EXTRACTED]
+- [[ScanResult_3]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/SkillGuard

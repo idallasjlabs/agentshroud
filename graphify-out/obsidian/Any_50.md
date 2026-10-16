@@ -1,19 +1,24 @@
 ---
-source_file: "gateway/runtime/docker_engine.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "DockerEngine"
-location: "L139"
+community: "ToolResultSanitizer"
+location: "L28"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/DockerEngine
+  - graphify/EXTRACTED
+  - community/ToolResultSanitizer
 ---
 
 # Any
 
 ## Connections
-- [[dot-inspect()_2]] - `references` [EXTRACTED]
-- [[ContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo_3]] - `uses` [INFERRED]
+- [[dot-__init__()_133]] - `references` [EXTRACTED]
+- [[dot-_extract_dict_content()]] - `references` [EXTRACTED]
+- [[dot-_extract_scannable_content()]] - `references` [EXTRACTED]
+- [[dot-_reconstruct_result()]] - `references` [EXTRACTED]
+- [[dot-sanitize_tool_result()]] - `references` [EXTRACTED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
+- [[RedactionResult_3]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/DockerEngine
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

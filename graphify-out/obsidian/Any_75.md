@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/soc_correlation.py"
+source_file: "gateway/security/egress_retry.py"
 type: "code"
-community: "soc.js"
-location: "L44"
+community: "egress_retry.py"
+location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/socjs
+  - community/egress_retrypy
 ---
 
 # Any
 
 ## Connections
-- [[dot-to_dict()_12]] - `references` [EXTRACTED]
+- [[retry_request()]] - `references` [EXTRACTED]
+- [[retry_request_sync()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/socjs
+#graphify/code #graphify/EXTRACTED #community/egress_retrypy

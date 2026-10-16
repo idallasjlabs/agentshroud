@@ -12,16 +12,16 @@ tags:
 # AuditEvent
 
 ## Connections
-- [[dot-__init__()_139]] - `method` [EXTRACTED]
+- [[dot-__init__()_135]] - `method` [EXTRACTED]
 - [[dot-_generate_event_id()]] - `method` [EXTRACTED]
 - [[dot-compute_content_hash()]] - `method` [EXTRACTED]
 - [[dot-compute_entry_hash()]] - `method` [EXTRACTED]
-- [[dot-log_event()_2]] - `references` [EXTRACTED]
+- [[dot-log_event()_1]] - `references` [EXTRACTED]
 - [[dot-query_events()]] - `references` [EXTRACTED]
 - [[dot-test_content_hash()]] - `calls` [EXTRACTED]
 - [[dot-test_entry_hash_chain()]] - `calls` [EXTRACTED]
 - [[dot-test_event_creation()]] - `calls` [EXTRACTED]
-- [[dot-to_dict()_9]] - `method` [EXTRACTED]
+- [[dot-to_dict()_10]] - `method` [EXTRACTED]
 - [[dot-verify_hash_chain()]] - `calls` [EXTRACTED]
 - [[AuditEvent_1]] - `uses` [INFERRED]
 - [[AuditExportConfig]] - `uses` [INFERRED]

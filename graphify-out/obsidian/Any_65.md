@@ -1,33 +1,38 @@
 ---
-source_file: "gateway/proxy/telegram_proxy.py"
+source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "._filter_outbound"
-location: "L2713"
+community: "test_scanner_integration.py"
+location: "L448"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_filter_outbound
+  - community/test_scanner_integrationpy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_apply_outbound_model_error_rewrites()]] - `references` [EXTRACTED]
-- [[dot-_apply_outbound_status_notices()]] - `references` [EXTRACTED]
-- [[dot-_build_ack_only_updates()]] - `references` [EXTRACTED]
-- [[dot-_check_collaborator_leakage()]] - `references` [EXTRACTED]
-- [[dot-_extract_embedded_tool_call_json()]] - `references` [EXTRACTED]
-- [[dot-_handle_outbound_tool_calls()]] - `references` [EXTRACTED]
-- [[dot-_parse_tool_call_json()]] - `references` [EXTRACTED]
-- [[dot-_redact_owner_ids()]] - `references` [EXTRACTED]
-- [[dot-_resolve_text_field()]] - `references` [EXTRACTED]
-- [[dot-_trigger_web_fetch_approval()]] - `references` [EXTRACTED]
-- [[dot-_trigger_web_search_log()]] - `references` [EXTRACTED]
-- [[ApprovalMode]] - `uses` [INFERRED]
-- [[DelegationPrivilege]] - `uses` [INFERRED]
-- [[GroupWorkspaceManager]] - `uses` [INFERRED]
-- [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
-- [[RateLimiter_1]] - `uses` [INFERRED]
+- [[_evaluate_mandatory_gates()]] - `references` [EXTRACTED]
+- [[_load_latest_json()]] - `references` [EXTRACTED]
+- [[_read_docker_daemon_config()]] - `references` [EXTRACTED]
+- [[_score_compliance_auditing()]] - `references` [EXTRACTED]
+- [[_score_container_hardening()]] - `references` [EXTRACTED]
+- [[_score_image_integrity()]] - `references` [EXTRACTED]
+- [[_score_incident_response()]] - `references` [EXTRACTED]
+- [[_score_logging_monitoring()]] - `references` [EXTRACTED]
+- [[_score_malware_defense()]] - `references` [EXTRACTED]
+- [[_score_runtime_protection()]] - `references` [EXTRACTED]
+- [[_score_vulnerability_management()]] - `references` [EXTRACTED]
+- [[aggregate_results()]] - `references` [EXTRACTED]
+- [[compute_bot_scorecard()]] - `references` [EXTRACTED]
+- [[compute_scorecard()]] - `references` [EXTRACTED]
+- [[get_clamav_summary()]] - `references` [EXTRACTED]
+- [[get_falco_summary()]] - `references` [EXTRACTED]
+- [[get_fluent_bit_summary()]] - `references` [EXTRACTED]
+- [[get_openscap_summary()]] - `references` [EXTRACTED]
+- [[get_sbom()_1]] - `references` [EXTRACTED]
+- [[get_trivy_image_summaries()]] - `references` [EXTRACTED]
+- [[get_trivy_summary()]] - `references` [EXTRACTED]
+- [[get_wazuh_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_filter_outbound
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

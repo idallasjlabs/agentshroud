@@ -12,6 +12,6 @@ tags:
 # "Approval required but none granted"
 
 ## Connections
-- [[Troubleshooting_17]] - `contains` [EXTRACTED]
+- [[Troubleshooting_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

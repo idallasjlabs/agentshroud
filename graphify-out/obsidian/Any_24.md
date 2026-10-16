@@ -1,13 +1,20 @@
 ---
-source_file: ""
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "._filter_streaming_event"
+community: "make_event"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_filter_streaming_event
+  - community/make_event
 ---
 
 # Any
 
-#graphify/code #graphify/EXTRACTED #community/_filter_streaming_event
+## Connections
+- [[dot-get_recent()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_3]] - `references` [EXTRACTED]
+- [[dot-to_dict()_7]] - `references` [EXTRACTED]
+- [[make_event()]] - `references` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/make_event

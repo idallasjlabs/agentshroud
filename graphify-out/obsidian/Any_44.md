@@ -1,25 +1,17 @@
 ---
-source_file: "gateway/soc/event_adapter.py"
+source_file: ""
 type: "code"
-community: "test_soc_bots.py"
-location: "L23"
+community: "LLMProxy"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/LLMProxy
 ---
 
 # Any
 
 ## Connections
-- [[SecurityEvent_1]] - `uses` [INFERRED]
-- [[Severity_1]] - `uses` [INFERRED]
-- [[_map_severity()]] - `references` [EXTRACTED]
-- [[collect_recent_events()]] - `references` [EXTRACTED]
-- [[from_anomaly_alert()]] - `references` [EXTRACTED]
-- [[from_audit_chain_entry()]] - `references` [EXTRACTED]
-- [[from_dict()]] - `references` [EXTRACTED]
-- [[from_egress_attempt()]] - `references` [EXTRACTED]
-- [[from_pipeline_result()]] - `references` [EXTRACTED]
+- [[dot-_filter_streaming_event()]] - `references` [EXTRACTED]
+- [[dot-proxy_messages_streaming()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

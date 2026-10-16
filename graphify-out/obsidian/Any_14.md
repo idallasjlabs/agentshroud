@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/outbound_filter.py"
+source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "AuditChain"
-location: "L73"
+community: "ResourceGuard"
+location: "L439"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/ResourceGuard
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_49]] - `references` [EXTRACTED]
-- [[dot-_compile_patterns()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_3]] - `references` [EXTRACTED]
+- [[dot-get_findings_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

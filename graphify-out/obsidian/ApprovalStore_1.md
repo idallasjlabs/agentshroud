@@ -12,12 +12,12 @@ tags:
 # ApprovalStore
 
 ## Connections
-- [[dot-__init__()_195]] - `references` [EXTRACTED]
+- [[dot-__init__()_194]] - `references` [EXTRACTED]
 - [[dot-test_restart_recovery_preserves_timeout_action()]] - `calls` [INFERRED]
 - [[dot-test_restore_pending_items()]] - `calls` [INFERRED]
-- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[ApprovalQueueItem_4]] - `uses` [INFERRED]
-- [[ApprovalRequest_4]] - `uses` [INFERRED]
+- [[ApprovalRequest_5]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[MFAGuard_1]] - `uses` [INFERRED]
 - [[ToolRiskConfig]] - `uses` [INFERRED]

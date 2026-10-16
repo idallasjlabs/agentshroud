@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/killswitch_config.py"
+source_file: "scripts/soak_status.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L100"
+community: "TestClassify"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/TestClassify
 ---
 
 # Any
 
 ## Connections
-- [[dot-to_dict()_6]] - `references` [EXTRACTED]
+- [[_is_benign_skip()]] - `references` [EXTRACTED]
+- [[classify()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/TestClassify

@@ -1,20 +1,22 @@
 ---
-source_file: "gateway/security/trivy_report.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "parse_trivy_output"
-location: "L27"
+community: "TestToolChainAnalyzer"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_trivy_output
+  - community/TestToolChainAnalyzer
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary()_2]] - `references` [EXTRACTED]
-- [[parse_trivy_output()]] - `references` [EXTRACTED]
-- [[run_trivy_scan()_1]] - `references` [EXTRACTED]
-- [[save_report()]] - `references` [EXTRACTED]
+- [[dot-__init__()_97]] - `references` [EXTRACTED]
+- [[dot-analyze_tool_call()]] - `references` [EXTRACTED]
+- [[dot-get_global_stats()]] - `references` [EXTRACTED]
+- [[dot-get_session_stats()]] - `references` [EXTRACTED]
+- [[dot-sanitize_tool_params()]] - `references` [EXTRACTED]
+- [[dot-score_reversibility()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_trivy_output
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

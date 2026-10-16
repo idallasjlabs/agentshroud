@@ -1,17 +1,13 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: ""
 type: "code"
-community: "ContainerEngine"
-location: "L123"
+community: "._filter_streaming_event"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerEngine
+  - community/_filter_streaming_event
 ---
 
 # Any
 
-## Connections
-- [[dot-inspect()]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/ContainerEngine
+#graphify/code #graphify/EXTRACTED #community/_filter_streaming_event

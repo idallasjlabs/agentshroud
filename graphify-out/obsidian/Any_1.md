@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L49"
+community: "FalcoAlertWatcher"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/FalcoAlertWatcher
 ---
 
 # Any
 
 ## Connections
-- [[dot-from_dict()_1]] - `references` [EXTRACTED]
-- [[dot-get_integrity_status()]] - `references` [EXTRACTED]
-- [[dot-get_recent_alerts()]] - `references` [EXTRACTED]
-- [[dot-to_dict()_2]] - `references` [EXTRACTED]
-- [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
+- [[dot-_handle_critical()]] - `references` [EXTRACTED]
+- [[categorize_alerts()]] - `references` [EXTRACTED]
+- [[generate_summary()_2]] - `references` [EXTRACTED]
+- [[parse_alert()]] - `references` [EXTRACTED]
+- [[read_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

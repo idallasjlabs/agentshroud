@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L379"
+community: "TestAggregateResults"
+location: "L516"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/TestAggregateResults
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_lifecycle_status()]] - `references` [EXTRACTED]
-- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
+- [[_stub_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/TestAggregateResults

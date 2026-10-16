@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Critical Findings_1]] - `contains` [EXTRACTED]
-- [[Executive Summary_14]] - `contains` [EXTRACTED]
+- [[Executive Summary_13]] - `contains` [EXTRACTED]
 - [[High-Priority Gaps]] - `contains` [EXTRACTED]
 - [[Low-Priority  Informational]] - `contains` [EXTRACTED]
 - [[Medium-Priority Gaps]] - `contains` [EXTRACTED]

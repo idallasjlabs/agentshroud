@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "make_event"
-location: "L35"
+community: "AlertTelegramRelay"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/AlertTelegramRelay
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_recent()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_8]] - `references` [EXTRACTED]
-- [[dot-to_dict()_3]] - `references` [EXTRACTED]
-- [[make_event()]] - `references` [EXTRACTED]
+- [[dot-__call__()_5]] - `references` [EXTRACTED]
+- [[dot-__init__()_81]] - `references` [EXTRACTED]
+- [[dot-_clean_tool()]] - `references` [EXTRACTED]
+- [[dot-_coerce()]] - `references` [EXTRACTED]
+- [[dot-_handle()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

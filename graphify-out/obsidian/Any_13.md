@@ -1,23 +1,21 @@
 ---
-source_file: "scripts/sync-cve-registry.py"
+source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "sync-cve-registry.py"
-location: "L491"
+community: "test_security_toolchain.py"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/test_security_toolchainpy
 ---
 
 # Any
 
 ## Connections
-- [[_ghsa_cvss_score()]] - `references` [EXTRACTED]
-- [[_ghsa_entry_to_py()]] - `references` [EXTRACTED]
-- [[_ghsa_patched_version()]] - `references` [EXTRACTED]
-- [[_next_ash_number()]] - `references` [EXTRACTED]
-- [[append_ghsa_entries()]] - `references` [EXTRACTED]
-- [[fetch_ghsa_advisories()]] - `references` [EXTRACTED]
-- [[process_ghsa_advisories()]] - `references` [EXTRACTED]
+- [[generate_summary()]] - `references` [EXTRACTED]
+- [[get_fim_events()]] - `references` [EXTRACTED]
+- [[get_rootkit_events()]] - `references` [EXTRACTED]
+- [[parse_alert()_1]] - `references` [EXTRACTED]
+- [[read_alerts()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

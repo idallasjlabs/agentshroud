@@ -1,19 +1,18 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "plan_remediation"
-location: "L153"
+community: "TestOutputCanary"
+location: "L231"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/TestOutputCanary
 ---
 
 # Any
 
 ## Connections
-- [[dot-to_dict()_16]] - `references` [EXTRACTED]
-- [[load_registry()_1]] - `references` [EXTRACTED]
-- [[plan_remediation()]] - `references` [EXTRACTED]
+- [[dot-_scan_for_canary()]] - `references` [EXTRACTED]
+- [[dot-get_status()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/TestOutputCanary

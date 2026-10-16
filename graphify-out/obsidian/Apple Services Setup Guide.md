@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[APPLE-SERVICES-SETUP]] - `contains` [EXTRACTED]
-- [[🎯 Next Steps_1]] - `contains` [EXTRACTED]
+- [[🎯 Next Steps]] - `contains` [EXTRACTED]
 - [[📅 Calendar (CalDAV)]] - `contains` [EXTRACTED]
 - [[📋 Setup Checklist]] - `contains` [EXTRACTED]
 - [[📚 Documentation Links]] - `contains` [EXTRACTED]

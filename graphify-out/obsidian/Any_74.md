@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/proxy/mcp_inspector.py"
+source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: ".inspect_tool_call"
-location: "L140"
+community: "GroupApprovalRouter"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/inspect_tool_call
+  - community/GroupApprovalRouter
 ---
 
 # Any
 
 ## Connections
-- [[dot-_redact_pii()]] - `references` [EXTRACTED]
-- [[dot-_scan_value()]] - `references` [EXTRACTED]
-- [[dot-inspect_tool_call()]] - `references` [EXTRACTED]
-- [[dot-inspect_tool_result()]] - `references` [EXTRACTED]
+- [[dot-__init__()_186]] - `references` [EXTRACTED]
+- [[dot-_default_send()]] - `references` [EXTRACTED]
+- [[ApprovalRequest_5]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/inspect_tool_call
+#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter

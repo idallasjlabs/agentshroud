@@ -1,18 +1,17 @@
 ---
-source_file: "docs/data/data-dictionary.md"
-type: "document"
-community: "AgentShroud Data Dictionary"
-location: "L57"
+source_file: "gateway/approval_queue/queue.py"
+type: "code"
+community: ".decide"
+location: "L71"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Data_Dictionary
+  - community/decide
 ---
 
 # ApprovalRequest
 
 ## Connections
-- [[Approval Workflows]] - `contains` [EXTRACTED]
-- [[Security Management Entities]] - `contains` [EXTRACTED]
+- [[dot-submit()]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Dictionary
+#graphify/code #graphify/EXTRACTED #community/decide

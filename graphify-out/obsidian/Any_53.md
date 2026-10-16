@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/prompt_protection.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L56"
+community: "MiddlewareManager"
+location: "L379"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/MiddlewareManager
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_140]] - `references` [EXTRACTED]
-- [[dot-get_protection_stats()]] - `references` [EXTRACTED]
+- [[dot-get_lifecycle_status()]] - `references` [EXTRACTED]
+- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

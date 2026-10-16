@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "GitGuard"
+community: "ResourceGuard"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/ResourceGuard
 ---
 
 # Args:             mode: 'monitor' (log findings) or 'enforce' (quarantine suspic
 
 ## Connections
-- [[dot-__init__()_32]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_41]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GitGuard
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/agent_cve_registry.py"
+source_file: ""
 type: "code"
-community: "test_agent_cve_registry.py"
-location: "L18530"
+community: "discover_upstream_versions.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy
+  - community/discover_upstream_versionspy
 ---
 
 # Any
 
 ## Connections
-- [[get_agent_cve_summary()]] - `references` [EXTRACTED]
+- [[_digest_for_tag()]] - `references` [EXTRACTED]
+- [[_retry()]] - `references` [EXTRACTED]
+- [[discover()]] - `references` [EXTRACTED]
+- [[fetch_dockerhub_tags()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy
+#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy

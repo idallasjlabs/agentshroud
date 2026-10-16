@@ -1,30 +1,26 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "PipelineAction"
-location: "L88"
+community: "ApprovalHardening"
+location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/ApprovalHardening
 ---
 
 # Any
 
 ## Connections
-- [[dot-_process_inbound_core()]] - `references` [EXTRACTED]
-- [[dot-_process_outbound_core()]] - `references` [EXTRACTED]
-- [[dot-append()_1]] - `references` [EXTRACTED]
-- [[dot-append_block()]] - `references` [EXTRACTED]
-- [[dot-append_owner_bypass()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_15]] - `references` [EXTRACTED]
-- [[dot-process_inbound()_5]] - `references` [EXTRACTED]
-- [[dot-process_outbound()_6]] - `references` [EXTRACTED]
-- [[dot-to_dict()_8]] - `references` [EXTRACTED]
-- [[BotIncidentSeverity]] - `uses` [INFERRED]
-- [[FilterResult]] - `uses` [INFERRED]
-- [[InjectionAction]] - `uses` [INFERRED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
-- [[ViolationType]] - `uses` [INFERRED]
+- [[dot-_check_description_parameter_mismatch()]] - `references` [EXTRACTED]
+- [[dot-_check_parameter_obfuscation()]] - `references` [EXTRACTED]
+- [[dot-_check_repeat_request_patterns()]] - `references` [EXTRACTED]
+- [[dot-_create_parameter_fingerprint()]] - `references` [EXTRACTED]
+- [[dot-_format_parameters_with_highlighting()]] - `references` [EXTRACTED]
+- [[dot-analyze_request()]] - `references` [EXTRACTED]
+- [[dot-format_hardened_message()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_13]] - `references` [EXTRACTED]
+- [[dot-is_request_in_cooldown()]] - `references` [EXTRACTED]
+- [[dot-record_denied_request()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/ApprovalHardening

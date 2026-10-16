@@ -15,7 +15,7 @@ tags:
 - [[Overview_18]] - `contains` [EXTRACTED]
 - [[Quick Reference_10]] - `contains` [EXTRACTED]
 - [[SETUP_API_KEYS]] - `contains` [EXTRACTED]
-- [[Security Notes_6]] - `contains` [EXTRACTED]
+- [[Security Notes_7]] - `contains` [EXTRACTED]
 - [[Step 1 Save API Keys to Secret Files]] - `contains` [EXTRACTED]
 - [[Step 2 Restart OpenClaw Container]] - `contains` [EXTRACTED]
 - [[Step 3 Configure API Keys in OpenClaw]] - `contains` [EXTRACTED]

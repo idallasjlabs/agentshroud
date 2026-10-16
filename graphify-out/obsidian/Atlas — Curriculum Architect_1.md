@@ -12,9 +12,9 @@ tags:
 # Atlas — Curriculum Architect
 
 ## Connections
-- [[Purpose_37]] - `contains` [EXTRACTED]
+- [[Purpose_39]] - `contains` [EXTRACTED]
 - [[Related Skills_25]] - `contains` [EXTRACTED]
-- [[Usage_28]] - `contains` [EXTRACTED]
+- [[Usage_29]] - `contains` [EXTRACTED]
 - [[openclawskillsi-atlasREADME]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 

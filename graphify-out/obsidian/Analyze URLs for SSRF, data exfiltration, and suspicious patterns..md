@@ -12,6 +12,6 @@ tags:
 # Analyze URLs for SSRF, data exfiltration, and suspicious patterns.
 
 ## Connections
-- [[URLAnalyzer]] - `rationale_for` [EXTRACTED]
+- [[URLAnalyzer_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection

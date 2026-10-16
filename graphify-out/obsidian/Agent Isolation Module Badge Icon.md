@@ -1,11 +1,11 @@
 ---
 source_file: "branding/icons/modules/agent-isolation-256x256.png"
 type: "image"
-community: "AgentShroud macOS App Icon (1024x1024, Rounded Squircle)"
+community: "AgentRegistry"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle
+  - community/AgentRegistry
 ---
 
 # Agent Isolation Module Badge Icon
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - `conceptually_related_to` [INFERRED]
 - [[agent_isolation.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle
+#graphify/image #graphify/INFERRED #community/AgentRegistry

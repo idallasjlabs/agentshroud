@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-agentsskillsi-athenaREADME]] - `contains` [EXTRACTED]
-- [[Purpose_14]] - `contains` [EXTRACTED]
+- [[Purpose_16]] - `contains` [EXTRACTED]
 - [[Related Skills_2]] - `contains` [EXTRACTED]
-- [[Usage_5]] - `contains` [EXTRACTED]
+- [[Usage_6]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

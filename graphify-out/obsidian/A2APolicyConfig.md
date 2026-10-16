@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "test_a2a_policy.py"
+community: "A2APolicyEngine"
 location: "L38"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_a2a_policypy
+  - community/A2APolicyEngine
 ---
 
 # A2APolicyConfig
@@ -16,7 +16,7 @@ tags:
 - [[A2APolicyAction]] - `uses` [INFERRED]
 - [[A2APolicyConfig_1]] - `uses` [INFERRED]
 - [[A2APolicyDecision]] - `uses` [INFERRED]
-- [[A2APolicyEngine_3]] - `uses` [INFERRED]
+- [[A2APolicyEngine_2]] - `uses` [INFERRED]
 - [[_base_config()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_a2a_policypy
+#graphify/code #graphify/INFERRED #community/A2APolicyEngine

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/egress_retry.py"
+source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "egress_retry.py"
-location: "L75"
+community: "MCPPermissionManager"
+location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_retrypy
+  - community/MCPPermissionManager
 ---
 
 # Any
 
 ## Connections
-- [[retry_request()]] - `references` [EXTRACTED]
-- [[retry_request_sync()]] - `references` [EXTRACTED]
+- [[dot-from_dict()_11]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_retrypy
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "DataLedger"
-location: "L347"
+community: "MCPPolicyEngine"
+location: "L200"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/DataLedger
+  - graphify/EXTRACTED
+  - community/MCPPolicyEngine
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_stats()_14]] - `references` [EXTRACTED]
-- [[LedgerConfig_1]] - `uses` [INFERRED]
-- [[LedgerEntry]] - `uses` [INFERRED]
-- [[LedgerQueryResponse]] - `uses` [INFERRED]
+- [[dot-enforce()_1]] - `references` [EXTRACTED]
+- [[dot-evaluate()_1]] - `references` [EXTRACTED]
+- [[dot-from_dict()_8]] - `references` [EXTRACTED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/DataLedger
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

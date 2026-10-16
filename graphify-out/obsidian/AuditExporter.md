@@ -12,7 +12,7 @@ tags:
 # AuditExporter
 
 ## Connections
-- [[dot-__init__()_74]] - `method` [EXTRACTED]
+- [[dot-__init__()_66]] - `method` [EXTRACTED]
 - [[dot-_export_cef()]] - `method` [EXTRACTED]
 - [[dot-_export_json()]] - `method` [EXTRACTED]
 - [[dot-_export_jsonld()]] - `method` [EXTRACTED]

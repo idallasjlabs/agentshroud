@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/ingest_api/alert_telegram_relay.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "AlertTelegramRelay"
-location: "L55"
+community: "Action"
+location: "L187"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/AlertTelegramRelay
+  - graphify/INFERRED
+  - community/Action
 ---
 
 # Any
 
 ## Connections
-- [[dot-__call__()_4]] - `references` [EXTRACTED]
-- [[dot-__init__()_81]] - `references` [EXTRACTED]
-- [[dot-_clean_tool()]] - `references` [EXTRACTED]
-- [[dot-_coerce()]] - `references` [EXTRACTED]
-- [[dot-_handle()]] - `references` [EXTRACTED]
+- [[dot-check_permission()_1]] - `references` [EXTRACTED]
+- [[dot-get_user_permissions_summary()]] - `references` [EXTRACTED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[Role_22]] - `uses` [INFERRED]
+- [[ToolTier]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay
+#graphify/code #graphify/INFERRED #community/Action

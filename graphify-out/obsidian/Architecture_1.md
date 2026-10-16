@@ -1,18 +1,17 @@
 ---
-source_file: "README.md"
+source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "AgentShroud™ README"
-location: "L100"
+community: "Technical Details"
+location: "L153"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_README
+  - community/Technical_Details
 ---
 
 # Architecture
 
 ## Connections
-- [[75 Security Modules]] - `shares_data_with` [EXTRACTED]
-- [[AgentShroud™ README]] - `contains` [EXTRACTED]
+- [[Technical Details]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_README
+#graphify/document #graphify/EXTRACTED #community/Technical_Details

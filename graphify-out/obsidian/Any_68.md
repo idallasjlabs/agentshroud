@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/tools/agentshroud_manager.py"
+source_file: "voice_gateway/tts.py"
 type: "code"
-community: "upgrade"
-location: "L68"
+community: "tts.py"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/upgrade
+  - community/ttspy
 ---
 
 # Any
 
 ## Connections
-- [[check_current_version()]] - `references` [EXTRACTED]
-- [[downgrade()]] - `references` [EXTRACTED]
-- [[list_versions()]] - `references` [EXTRACTED]
-- [[rollback()]] - `references` [EXTRACTED]
-- [[security_review()]] - `references` [EXTRACTED]
-- [[upgrade()]] - `references` [EXTRACTED]
+- [[_get_pipeline()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/upgrade
+#graphify/code #graphify/EXTRACTED #community/ttspy

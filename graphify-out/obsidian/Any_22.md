@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/security/resource_guard.py"
+source_file: "gateway/cli/client.py"
 type: "code"
-community: "ResourceGuard"
-location: "L102"
+community: "SCLClient"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/SCLClient
 ---
 
 # Any
 
 ## Connections
-- [[dot-_alert_high_usage()]] - `references` [EXTRACTED]
-- [[dot-_get_disk_io_stats()]] - `references` [EXTRACTED]
-- [[dot-add_alert_callback()_1]] - `references` [EXTRACTED]
-- [[dot-get_usage_stats()]] - `references` [EXTRACTED]
+- [[dot-_request()]] - `references` [EXTRACTED]
+- [[dot-delete()]] - `references` [EXTRACTED]
+- [[dot-get()]] - `references` [EXTRACTED]
+- [[dot-post()]] - `references` [EXTRACTED]
+- [[dot-put()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/SCLClient

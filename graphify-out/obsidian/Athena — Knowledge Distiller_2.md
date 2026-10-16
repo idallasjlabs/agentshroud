@@ -12,9 +12,9 @@ tags:
 # Athena — Knowledge Distiller
 
 ## Connections
-- [[Purpose_36]] - `contains` [EXTRACTED]
+- [[Purpose_38]] - `contains` [EXTRACTED]
 - [[Related Skills_24]] - `contains` [EXTRACTED]
-- [[Usage_27]] - `contains` [EXTRACTED]
+- [[Usage_28]] - `contains` [EXTRACTED]
 - [[openclawskillsi-athenaREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

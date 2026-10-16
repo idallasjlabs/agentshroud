@@ -1,24 +1,20 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "PIIConfig"
-location: "L28"
+community: "DataLedger"
+location: "L347"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/PIIConfig
+  - graphify/INFERRED
+  - community/DataLedger
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_87]] - `references` [EXTRACTED]
-- [[dot-_extract_dict_content()]] - `references` [EXTRACTED]
-- [[dot-_extract_scannable_content()]] - `references` [EXTRACTED]
-- [[dot-_reconstruct_result()]] - `references` [EXTRACTED]
-- [[dot-sanitize_tool_result()]] - `references` [EXTRACTED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[RedactionResult_3]] - `uses` [INFERRED]
+- [[dot-get_stats()_7]] - `references` [EXTRACTED]
+- [[LedgerConfig]] - `uses` [INFERRED]
+- [[LedgerEntry]] - `uses` [INFERRED]
+- [[LedgerQueryResponse]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/INFERRED #community/DataLedger

@@ -1,25 +1,20 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L215"
+community: "GroupApprovalRouter"
+location: "L63"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ApprovalQueueConfig
+  - graphify/EXTRACTED
+  - community/GroupApprovalRouter
 ---
 
 # ApprovalRequest
 
 ## Connections
-- [[dot-submit()_1]] - `references` [EXTRACTED]
-- [[dot-submit_tool_request()_4]] - `calls` [EXTRACTED]
-- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_4]] - `uses` [INFERRED]
-- [[ApprovalRequest_4]] - `uses` [INFERRED]
-- [[ApprovalStore]] - `uses` [INFERRED]
-- [[MFAGuard_1]] - `uses` [INFERRED]
-- [[ToolRiskConfig]] - `uses` [INFERRED]
-- [[ToolRiskPolicy]] - `uses` [INFERRED]
+- [[dot-_build_group_reply_text()]] - `references` [EXTRACTED]
+- [[dot-_build_owner_dm_text()]] - `references` [EXTRACTED]
+- [[dot-route_approval()]] - `references` [EXTRACTED]
+- [[ApprovalRequest_5]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter

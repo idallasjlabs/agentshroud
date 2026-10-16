@@ -1,32 +1,33 @@
 ---
-source_file: "gateway/tests/test_scanner_integration.py"
+source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "test_scanner_integration.py"
-location: "L54"
+community: "._filter_outbound"
+location: "L2713"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/_filter_outbound
 ---
 
 # Any
 
 ## Connections
-- [[_clamav_clean()]] - `references` [EXTRACTED]
-- [[_clamav_infected()]] - `references` [EXTRACTED]
-- [[_clean_trivy_report()]] - `references` [EXTRACTED]
-- [[_critical_trivy_report()]] - `references` [EXTRACTED]
-- [[_falco_clean()]] - `references` [EXTRACTED]
-- [[_falco_critical()]] - `references` [EXTRACTED]
-- [[_falco_not_run()]] - `references` [EXTRACTED]
-- [[_openscap_clean()]] - `references` [EXTRACTED]
-- [[_openscap_not_run()]] - `references` [EXTRACTED]
-- [[_openscap_warn()]] - `references` [EXTRACTED]
-- [[_trivy_clean()]] - `references` [EXTRACTED]
-- [[_trivy_critical()]] - `references` [EXTRACTED]
-- [[_trivy_not_run()]] - `references` [EXTRACTED]
-- [[_wazuh_clean()]] - `references` [EXTRACTED]
-- [[_wazuh_not_run()]] - `references` [EXTRACTED]
-- [[_write_image_report()]] - `references` [EXTRACTED]
+- [[dot-_apply_outbound_model_error_rewrites()]] - `references` [EXTRACTED]
+- [[dot-_apply_outbound_status_notices()]] - `references` [EXTRACTED]
+- [[dot-_build_ack_only_updates()]] - `references` [EXTRACTED]
+- [[dot-_check_collaborator_leakage()]] - `references` [EXTRACTED]
+- [[dot-_extract_embedded_tool_call_json()]] - `references` [EXTRACTED]
+- [[dot-_handle_outbound_tool_calls()]] - `references` [EXTRACTED]
+- [[dot-_parse_tool_call_json()]] - `references` [EXTRACTED]
+- [[dot-_redact_owner_ids()]] - `references` [EXTRACTED]
+- [[dot-_resolve_text_field()]] - `references` [EXTRACTED]
+- [[dot-_trigger_web_fetch_approval()]] - `references` [EXTRACTED]
+- [[dot-_trigger_web_search_log()]] - `references` [EXTRACTED]
+- [[ApprovalMode]] - `uses` [INFERRED]
+- [[DelegationPrivilege]] - `uses` [INFERRED]
+- [[GroupWorkspaceManager]] - `uses` [INFERRED]
+- [[ProgressiveLockdown]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[RateLimiter_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/_filter_outbound

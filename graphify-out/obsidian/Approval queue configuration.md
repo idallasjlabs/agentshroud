@@ -12,6 +12,6 @@ tags:
 # Approval queue configuration
 
 ## Connections
-- [[ApprovalQueueConfig_1]] - `rationale_for` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

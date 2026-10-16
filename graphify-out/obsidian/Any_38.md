@@ -1,29 +1,22 @@
 ---
-source_file: "gateway/security/key_rotation.py"
+source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "KeyRotationManager"
-location: "L110"
+community: "parse_clamscan_output"
+location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/parse_clamscan_output
 ---
 
 # Any
 
 ## Connections
-- [[dot-_generate_new_credential()]] - `references` [EXTRACTED]
-- [[dot-_validate_credential()]] - `references` [EXTRACTED]
-- [[dot-check_and_rotate_due_credentials()]] - `references` [EXTRACTED]
-- [[dot-cleanup_retired_credentials()]] - `references` [EXTRACTED]
-- [[dot-emergency_rotate_credential()]] - `references` [EXTRACTED]
-- [[dot-get_all_credentials_status()]] - `references` [EXTRACTED]
-- [[dot-get_credential_status()]] - `references` [EXTRACTED]
-- [[dot-get_health_score()]] - `references` [EXTRACTED]
-- [[dot-register_credential()]] - `references` [EXTRACTED]
-- [[dot-rotate_credential()]] - `references` [EXTRACTED]
-- [[dot-validate()_2]] - `references` [EXTRACTED]
-- [[CredentialRotationPolicy]] - `uses` [INFERRED]
-- [[KeyRotationConfig_1]] - `uses` [INFERRED]
+- [[generate_summary()_1]] - `references` [EXTRACTED]
+- [[parse_clamscan_output()]] - `references` [EXTRACTED]
+- [[run_clamscan()]] - `references` [EXTRACTED]
+- [[save_report()]] - `references` [EXTRACTED]
+- [[scan_bytes()]] - `references` [EXTRACTED]
+- [[update_virus_db()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

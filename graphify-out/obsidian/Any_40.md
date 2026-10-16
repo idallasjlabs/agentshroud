@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "dashboard_endpoints.py"
-location: "L67"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Any
 
 ## Connections
-- [[dot-recent()]] - `references` [EXTRACTED]
-- [[dot-tail()]] - `references` [EXTRACTED]
-- [[_check_host()]] - `references` [EXTRACTED]
+- [[dot-__init__()_106]] - `references` [EXTRACTED]
+- [[dot-get_protection_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

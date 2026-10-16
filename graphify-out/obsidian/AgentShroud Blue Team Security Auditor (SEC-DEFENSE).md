@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "agentshroud-blueteam/SKILL.md"
+community: "InjectionAction"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/InjectionAction
 ---
 
 # AgentShroud Blue Team Security Auditor (SEC-DEFENSE)
@@ -13,7 +13,7 @@ tags:
 ## Connections
 - [[AgentShroud Red Team Adversarial Tester (SEC-OFFENSE)]] - `conceptually_related_to` [INFERRED]
 - [[Blue Team Security Auditor README]] - `references` [EXTRACTED]
-- [[STPA-Sec Methodology]] - `references` [EXTRACTED]
+- [[STPA-Sec Methodology_1]] - `references` [EXTRACTED]
 - [[SecureClaw Security Review (SEC)]] - `semantically_similar_to` [AMBIGUOUS]
 - [[Steve Hay Adversary Model]] - `references` [EXTRACTED]
 - [[approval_hardening.py]] - `references` [EXTRACTED]
@@ -28,7 +28,7 @@ tags:
 - [[key_rotation.py]] - `references` [EXTRACTED]
 - [[killswitch_monitor.py]] - `references` [EXTRACTED]
 - [[memory_integrity.py]] - `references` [EXTRACTED]
-- [[middleware.py]] - `references` [EXTRACTED]
+- [[middleware.py_1]] - `references` [EXTRACTED]
 - [[multi_turn_tracker.py]] - `references` [EXTRACTED]
 - [[outbound_filter.py]] - `references` [EXTRACTED]
 - [[path_isolation.py]] - `references` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[tool_result_sanitizer.py]] - `references` [EXTRACTED]
 - [[xml_leak_filter.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/InjectionAction

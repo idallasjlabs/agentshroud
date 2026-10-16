@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/ingest_api/routes/approval.py"
-type: "code"
-community: "create_auth_dependency"
-location: "L49"
+source_file: "docs/data/data-dictionary.md"
+type: "document"
+community: "AgentShroud Data Dictionary"
+location: "L57"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/AgentShroud_Data_Dictionary
 ---
 
 # ApprovalRequest
 
 ## Connections
-- [[submit_approval_request()]] - `references` [EXTRACTED]
+- [[Approval Workflows]] - `contains` [EXTRACTED]
+- [[Security Management Entities]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Dictionary

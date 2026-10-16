@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[ADR-002 Default-Allow with Comprehensive Logging]] - `references` [EXTRACTED]
 - [[ADR-009-enforce-by-default]] - `contains` [EXTRACTED]
-- [[Consequences_2]] - `contains` [EXTRACTED]
-- [[Context_4]] - `contains` [EXTRACTED]
-- [[Decision_4]] - `contains` [EXTRACTED]
-- [[Related_6]] - `contains` [EXTRACTED]
-- [[Status_4]] - `contains` [EXTRACTED]
+- [[Consequences_1]] - `contains` [EXTRACTED]
+- [[Context_3]] - `contains` [EXTRACTED]
+- [[Decision_3]] - `contains` [EXTRACTED]
+- [[Related_7]] - `contains` [EXTRACTED]
+- [[Status_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy

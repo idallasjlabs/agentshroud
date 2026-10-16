@@ -21,7 +21,7 @@ tags:
 - [[Output Format_28]] - `contains` [EXTRACTED]
 - [[Persona_10]] - `contains` [EXTRACTED]
 - [[Quality Checklist_13]] - `contains` [EXTRACTED]
-- [[Role_76]] - `contains` [EXTRACTED]
+- [[Role_77]] - `contains` [EXTRACTED]
 - [[System Prompt_10]] - `contains` [EXTRACTED]
 - [[User Prompt Template_5]] - `contains` [EXTRACTED]
 - [[User Prompt Template — OKE Channel_1]] - `contains` [EXTRACTED]

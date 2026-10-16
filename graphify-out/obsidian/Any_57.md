@@ -1,17 +1,20 @@
 ---
-source_file: ""
+source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "LLMProxy"
+community: "ContextSegment"
+location: "L64"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/LLMProxy
+  - graphify/INFERRED
+  - community/ContextSegment
 ---
 
 # Any
 
 ## Connections
-- [[dot-_filter_streaming_event()]] - `references` [EXTRACTED]
-- [[dot-proxy_messages_streaming()]] - `references` [EXTRACTED]
+- [[dot-__init__()_149]] - `references` [EXTRACTED]
+- [[ContextSegment]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
+- [[SystemPromptFingerprint]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/INFERRED #community/ContextSegment

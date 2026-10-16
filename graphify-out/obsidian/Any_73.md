@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "UserSessionManager"
-location: "L62"
+community: "plan_remediation"
+location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/plan_remediation
 ---
 
 # Any
 
 ## Connections
-- [[dot-add_conversation_message()]] - `references` [EXTRACTED]
-- [[dot-from_dict()_8]] - `references` [EXTRACTED]
-- [[dot-get_session_context()]] - `references` [EXTRACTED]
-- [[dot-reanchor_system_prompt()]] - `references` [EXTRACTED]
-- [[dot-to_dict()_11]] - `references` [EXTRACTED]
+- [[dot-to_dict()_15]] - `references` [EXTRACTED]
+- [[load_registry()_1]] - `references` [EXTRACTED]
+- [[plan_remediation()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

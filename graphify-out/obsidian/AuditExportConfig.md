@@ -12,8 +12,8 @@ tags:
 # AuditExportConfig
 
 ## Connections
-- [[dot-__init__()_74]] - `references` [EXTRACTED]
-- [[dot-__init__()_73]] - `method` [EXTRACTED]
+- [[dot-__init__()_66]] - `references` [EXTRACTED]
+- [[dot-__init__()_65]] - `method` [EXTRACTED]
 - [[dot-_default_jsonld_context()]] - `method` [EXTRACTED]
 - [[dot-export_config()]] - `calls` [EXTRACTED]
 - [[AuditEvent]] - `uses` [INFERRED]

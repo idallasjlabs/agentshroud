@@ -1,18 +1,20 @@
 ---
-source_file: "scripts/soak_status.py"
+source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "TestClassify"
-location: "L33"
+community: "MCPInspector"
+location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestClassify
+  - community/MCPInspector
 ---
 
 # Any
 
 ## Connections
-- [[_is_benign_skip()]] - `references` [EXTRACTED]
-- [[classify()_2]] - `references` [EXTRACTED]
+- [[dot-_redact_pii()]] - `references` [EXTRACTED]
+- [[dot-_scan_value()]] - `references` [EXTRACTED]
+- [[dot-inspect_tool_call()]] - `references` [EXTRACTED]
+- [[dot-inspect_tool_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestClassify
+#graphify/code #graphify/EXTRACTED #community/MCPInspector

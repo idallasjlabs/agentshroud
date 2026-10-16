@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "TrustConfig"
+community: "PIIConfig"
 location: "L176"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/PIIConfig
 ---
 
 # 10000 trust lookups in under 1 second.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_10000_lookups_under_1s()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustConfig
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

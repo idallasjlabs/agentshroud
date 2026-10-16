@@ -12,6 +12,6 @@ tags:
 # Actions that can be performed in the system.
 
 ## Connections
-- [[Action_2]] - `rationale_for` [EXTRACTED]
+- [[Action_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Action

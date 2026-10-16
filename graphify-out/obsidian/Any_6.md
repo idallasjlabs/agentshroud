@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/report_store.py"
+source_file: ""
 type: "code"
-community: "ReportStore"
-location: "L182"
+community: "triage-cve-mitigations.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/triage-cve-mitigationspy
 ---
 
 # Any
 
 ## Connections
-- [[dot-get()]] - `references` [EXTRACTED]
-- [[dot-list()]] - `references` [EXTRACTED]
+- [[summarize()]] - `references` [EXTRACTED]
+- [[triage_entry()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ReportStore
+#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy

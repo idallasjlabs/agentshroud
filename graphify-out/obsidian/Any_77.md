@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: "gateway/security/trivy_report.py"
 type: "code"
-community: "test_security_toolchain.py"
-location: "L66"
+community: "test_daily_cve_report.py"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/test_daily_cve_reportpy
 ---
 
 # Any
 
 ## Connections
 - [[generate_summary()_3]] - `references` [EXTRACTED]
-- [[get_fim_events()]] - `references` [EXTRACTED]
-- [[get_rootkit_events()]] - `references` [EXTRACTED]
-- [[parse_alert()_1]] - `references` [EXTRACTED]
-- [[read_alerts()_1]] - `references` [EXTRACTED]
+- [[parse_trivy_output()]] - `references` [EXTRACTED]
+- [[run_trivy_scan()_1]] - `references` [EXTRACTED]
+- [[save_report()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

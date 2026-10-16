@@ -26,7 +26,7 @@ tags:
 - [[Tier 1 Hand-Curated OpenClaw CVEs]] - `references` [EXTRACTED]
 - [[Tier 1 — Hand-Curated CVEs (AgentShroud-Specific Mitigations)]] - `contains` [EXTRACTED]
 - [[Tier 3 — NVD-Sourced Bulk CVEs (276 entries)]] - `contains` [EXTRACTED]
-- [[Verification_1]] - `contains` [EXTRACTED]
+- [[Verification_2]] - `contains` [EXTRACTED]
 - [[cve-mitigation-matrix]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix

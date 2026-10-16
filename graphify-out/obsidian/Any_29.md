@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "Action"
-location: "L187"
+community: "ContainerEngine"
+location: "L123"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Action
+  - graphify/EXTRACTED
+  - community/ContainerEngine
 ---
 
 # Any
 
 ## Connections
-- [[dot-check_permission()_1]] - `references` [EXTRACTED]
-- [[dot-get_user_permissions_summary()]] - `references` [EXTRACTED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
-- [[Role_91]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[dot-inspect()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Action
+#graphify/code #graphify/EXTRACTED #community/ContainerEngine

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-decide()]] - `references` [EXTRACTED]
-- [[dot-get_item()_1]] - `references` [EXTRACTED]
+- [[dot-get_item()]] - `references` [EXTRACTED]
 - [[dot-get_pending()]] - `references` [EXTRACTED]
 - [[dot-submit()]] - `references` [EXTRACTED]
 

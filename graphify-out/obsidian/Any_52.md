@@ -1,19 +1,25 @@
 ---
-source_file: "gateway/runtime/apple_engine.py"
+source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "AppleContainerEngine"
-location: "L149"
+community: "test_soc_bots.py"
+location: "L23"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/AppleContainerEngine
+  - graphify/EXTRACTED
+  - community/test_soc_botspy
 ---
 
 # Any
 
 ## Connections
-- [[dot-inspect()_3]] - `references` [EXTRACTED]
-- [[ContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo_3]] - `uses` [INFERRED]
+- [[SecurityEvent_1]] - `uses` [INFERRED]
+- [[Severity_1]] - `uses` [INFERRED]
+- [[_map_severity()]] - `references` [EXTRACTED]
+- [[collect_recent_events()]] - `references` [EXTRACTED]
+- [[from_anomaly_alert()]] - `references` [EXTRACTED]
+- [[from_audit_chain_entry()]] - `references` [EXTRACTED]
+- [[from_dict()]] - `references` [EXTRACTED]
+- [[from_egress_attempt()]] - `references` [EXTRACTED]
+- [[from_pipeline_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AppleContainerEngine
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

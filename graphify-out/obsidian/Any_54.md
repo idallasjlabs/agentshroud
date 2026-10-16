@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "MCPPolicyEngine"
-location: "L200"
+community: ".decide"
+location: "L369"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/decide
 ---
 
 # Any
 
 ## Connections
-- [[dot-enforce()_1]] - `references` [EXTRACTED]
-- [[dot-evaluate()_1]] - `references` [EXTRACTED]
-- [[dot-from_dict()_5]] - `references` [EXTRACTED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[dot-_append_audit_event()]] - `references` [EXTRACTED]
+- [[dot-broadcast()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/decide

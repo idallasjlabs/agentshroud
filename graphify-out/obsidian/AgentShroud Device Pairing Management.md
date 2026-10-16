@@ -20,7 +20,7 @@ tags:
 - [[How Device Pairing Works]] - `contains` [EXTRACTED]
 - [[Integration with AgentShroud Workflow]] - `contains` [EXTRACTED]
 - [[Listing Paired Devices]] - `contains` [EXTRACTED]
-- [[Overview_2]] - `contains` [EXTRACTED]
+- [[Overview_3]] - `contains` [EXTRACTED]
 - [[Quick Reference Commands]] - `contains` [EXTRACTED]
 - [[Rejecting Pairing Requests]] - `contains` [EXTRACTED]
 - [[Revoking Device Access]] - `contains` [EXTRACTED]

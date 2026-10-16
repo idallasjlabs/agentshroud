@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-load_all()_1]] - `references` [EXTRACTED]
 - [[dot-load_pending()]] - `references` [EXTRACTED]
-- [[dot-save()_2]] - `references` [EXTRACTED]
+- [[dot-save()_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

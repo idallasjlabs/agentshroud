@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "test_observatory_mode.py"
+community: "ModeRequest"
 location: "L177"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_observatory_modepy
+  - community/ModeRequest
 ---
 
 # A revert task is created (and is an asyncio.Task).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_revert_task_created_on_put()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_observatory_modepy
+#graphify/rationale #graphify/EXTRACTED #community/ModeRequest

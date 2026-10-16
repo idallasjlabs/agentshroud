@@ -2,23 +2,21 @@
 source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
 type: "document"
 community: "egress_filter.py"
-location: "L9"
+location: "L1"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
+  - graphify/INFERRED
   - community/egress_filterpy
 ---
 
-# AGENTSHROUD_MODE
+# AGENTSHROUD_MODE.md
 
 ## Connections
 - [[AGENTSHROUD_MODE]] - `contains` [EXTRACTED]
-- [[Affected Modules]] - `contains` [EXTRACTED]
-- [[Behavior]] - `contains` [EXTRACTED]
-- [[Description_6]] - `contains` [EXTRACTED]
-- [[Related Notes_51]] - `contains` [EXTRACTED]
-- [[Startup Warnings]] - `contains` [EXTRACTED]
-- [[Usage_101]] - `contains` [EXTRACTED]
-- [[Values_2]] - `contains` [EXTRACTED]
+- [[OPENCLAW_SANDBOX_MODE]] - `semantically_similar_to` [INFERRED]
+- [[agentshroud.yaml_1]] - `references` [EXTRACTED]
+- [[egress_filter.py]] - `references` [INFERRED]
+- [[mcp_config.py_2]] - `references` [INFERRED]
+- [[prompt_guard.py_1]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_filterpy
+#graphify/document #graphify/INFERRED #community/egress_filterpy

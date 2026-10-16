@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "agentshroud-blueteam/SKILL.md"
+community: "InjectionAction"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/InjectionAction
 ---
 
 # AgentShroud Red Team Adversarial Tester (SEC-OFFENSE)
@@ -13,10 +13,10 @@ tags:
 ## Connections
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `conceptually_related_to` [INFERRED]
 - [[Red Team Adversarial Tester README]] - `references` [EXTRACTED]
-- [[STPA-Sec Methodology]] - `references` [EXTRACTED]
+- [[STPA-Sec Methodology_1]] - `references` [EXTRACTED]
 - [[Steve Hay Adversary Model]] - `references` [EXTRACTED]
 - [[docsreviewsred-team-report-v0.7.0]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `references` [EXTRACTED]
 - [[test_redteam_probes.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/InjectionAction

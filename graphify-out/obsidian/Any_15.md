@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "TestOutputCanary"
-location: "L231"
+community: "ResourceGuard"
+location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutputCanary
+  - community/ResourceGuard
 ---
 
 # Any
 
 ## Connections
-- [[dot-_scan_for_canary()]] - `references` [EXTRACTED]
-- [[dot-get_status()]] - `references` [EXTRACTED]
+- [[dot-_alert_high_usage()]] - `references` [EXTRACTED]
+- [[dot-_get_disk_io_stats()]] - `references` [EXTRACTED]
+- [[dot-add_alert_callback()]] - `references` [EXTRACTED]
+- [[dot-get_usage_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutputCanary
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

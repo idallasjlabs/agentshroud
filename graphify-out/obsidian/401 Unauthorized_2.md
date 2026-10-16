@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-icloud/SKILL.md"
+source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
 community: "iCloud Services"
 location: "L144"
@@ -12,6 +12,6 @@ tags:
 # "401 Unauthorized"
 
 ## Connections
-- [[Troubleshooting_24]] - `contains` [EXTRACTED]
+- [[Troubleshooting_23]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/iCloud_Services

@@ -12,7 +12,7 @@ tags:
 # AlertTelegramRelay
 
 ## Connections
-- [[dot-__call__()_4]] - `method` [EXTRACTED]
+- [[dot-__call__()_5]] - `method` [EXTRACTED]
 - [[dot-__init__()_81]] - `method` [EXTRACTED]
 - [[dot-_clean_tool()]] - `method` [EXTRACTED]
 - [[dot-_coerce()]] - `method` [EXTRACTED]

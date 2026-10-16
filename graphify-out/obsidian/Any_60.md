@@ -1,22 +1,22 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "gateway/ingest_api/version_routes.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L58"
+community: "upgrade"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/upgrade
 ---
 
 # Any
 
 ## Connections
-- [[dot-_format_alert_message()]] - `references` [EXTRACTED]
-- [[dot-_log_alert()]] - `references` [EXTRACTED]
-- [[dot-_send_notification()]] - `references` [EXTRACTED]
-- [[dot-dispatch()]] - `references` [EXTRACTED]
-- [[dot-get_digest()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_17]] - `references` [EXTRACTED]
+- [[downgrade_version()]] - `references` [EXTRACTED]
+- [[get_current_version()]] - `references` [EXTRACTED]
+- [[get_version_history()]] - `references` [EXTRACTED]
+- [[review_version()]] - `references` [EXTRACTED]
+- [[rollback_version()]] - `references` [EXTRACTED]
+- [[upgrade_version()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/upgrade

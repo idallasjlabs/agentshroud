@@ -1,24 +1,19 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "A2AProxyResult"
-location: "L148"
+community: "DockerEngine"
+location: "L139"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/A2AProxyResult
+  - graphify/INFERRED
+  - community/DockerEngine
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_131]] - `references` [EXTRACTED]
-- [[dot-extract_text_for_pii_scan()]] - `references` [EXTRACTED]
-- [[dot-parse_jsonrpc_request()]] - `references` [EXTRACTED]
-- [[dot-process_inbound_request()]] - `references` [EXTRACTED]
-- [[A2AMethod]] - `uses` [INFERRED]
-- [[A2APolicyEngine_3]] - `uses` [INFERRED]
-- [[ViolationType]] - `uses` [INFERRED]
-- [[_redact_message_text()]] - `references` [EXTRACTED]
+- [[dot-inspect()_2]] - `references` [EXTRACTED]
+- [[ContainerEngine]] - `uses` [INFERRED]
+- [[ContainerInfo_3]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AProxyResult
+#graphify/code #graphify/INFERRED #community/DockerEngine
