@@ -613,6 +613,38 @@ Also from prod: Hermes was recreated on `agentshroud/hermes:1.7.0`, `tool_progre
 for Telegram per the owner, and the `latest`-tag outage is what the `run-standalone.sh`
 versions.env fallback above fixes.
 
+### Evening: branch cleanup finished, resource cut, full rebuild of both hosts
+Branches: the five Dependabot PRs (#491 #493 #499 #500 #501) closed as superseded on the
+owner's "close them" (the gateway image already satisfied every floor); PR #490 was a
+draft, so the owner's own `gh pr merge` did nothing — prod marked it ready and merged it
+with the admin override under the owner's directive (`049cd5e051`). Remote heads: `main`
+only. Both clones: `main` only.
+
+First full rebuild (both hosts from `a7b8cee1e2`): prod done 15:53–16:09 EDT with
+evidence and both gateway fixes proven live (`conduit_push` capabilities 200; streaming
+gemma turn with tools → 200). Prod found that `asb rebuild full` never rebuilt
+voice-gateway (`compose build` was run without `--profile voice`) — fixed in
+`bd0c1225bd`. Dev's first attempt died in 12 s because the host-side SSH forward of the
+Colima docker.sock had died at 15:52 (VM and dockerd fine; `colima restart` fixed it);
+the second died on a Debian CDN "Hash Sum mismatch" for `clamav_1.4.3+dfsg-1_arm64.deb`
+(the mirror served the correct file minutes later); the third was killed by me once
+the owner asked for a second rebuild from the final commit.
+
+Resource cut (owner: "this system is very tight on resources", dev less than prod,
+settings must survive reboots):
+- `e8fca117df` — Colima sizing comes from each account's saved
+  `~/.colima/default/colima.yaml`. The LaunchAgent (`--cpu 8 --memory 12`) and the
+  watchdog (`--cpu 8 --memory 10`) had each re-imposed a hard-coded shape on every
+  start, so no resize ever stuck; both now pass only `--network-address` once a saved
+  config exists. Dev's installed LaunchAgent updated in place (backup kept); prod must
+  reinstall from the repo copy.
+- Dev VM resized 8 CPU / 10 GiB → **4 CPU / 8 GiB** (persisted; verified `nproc`=4,
+  `free`=7.9 GiB). Prod VM target **6 CPU / 10 GiB** (prod applies it at its restart).
+- `3955d3b267` — dev container caps under that VM: gateway 3g/1.0, openclaw 2560m/1.5,
+  voice-gateway 2560m/1.5, wazuh-manager 768m/0.5, Hermes 2g/1.0 (run-standalone.sh now
+  sets caps by environment; prod keeps 4g/1.0, 4g/2.0, 4g/2.0, 1g/1.0, 3g/1.5). Prod's
+  compose caps left unchanged pending `docker stats` at steady state.
+
 ### Still open for Sunday (not changed today)
 - `graphify-out/` is stale (manifest 2026-09-27; 17 commits since touching
   gateway/scripts/docker). CLAUDE.md makes a refresh mandatory before a prod rebuild —
