@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
+source_file: ".agents/skills/i-cicd/README.md"
 type: "document"
-community: "sidecar.py"
-location: "L12"
+community: "CI/CD Pipeline Advisor (README)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sidecarpy
+  - community/CI/CD_Pipeline_Advisor_README
 ---
 
 # Purpose
 
 ## Connections
-- [[sidecar.py_2]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sidecarpy
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README

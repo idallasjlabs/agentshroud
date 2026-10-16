@@ -12,7 +12,7 @@ tags:
 # Recovery Procedures
 
 ## Connections
-- [[Crash Recovery_2]] - `contains` [EXTRACTED]
+- [[Crash Recovery_1]] - `contains` [EXTRACTED]
 - [[Option 1 Simple Restart (most common fix)]] - `contains` [EXTRACTED]
 - [[Option 2 Full Stop and Start]] - `contains` [EXTRACTED]
 - [[Option 3 Rebuild and Restart]] - `contains` [EXTRACTED]

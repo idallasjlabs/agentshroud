@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "8. Governance Model"
+community: "main"
 location: "L615"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/8_Governance_Model
+  - community/main
 ---
 
 # Recurring Governance Rituals
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[8. Governance Model]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/8_Governance_Model
+#graphify/document #graphify/EXTRACTED #community/main

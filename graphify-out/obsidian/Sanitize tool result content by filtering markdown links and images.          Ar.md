@@ -12,6 +12,6 @@ tags:
 # Sanitize tool result content by filtering markdown links and images.          Ar
 
 ## Connections
-- [[dot-sanitize()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-sanitize()_4]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

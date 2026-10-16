@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[dot-resolve_target()]] - `calls` [EXTRACTED]
-- [[AgentTarget]] - `uses` [INFERRED]
+- [[AgentTarget_1]] - `uses` [INFERRED]
 - [[Exception_2]] - `inherits` [EXTRACTED]
-- [[ForwardRequest_3]] - `uses` [INFERRED]
+- [[ForwardRequest_1]] - `uses` [INFERRED]
 - [[Raised when no valid routing target found]] - `rationale_for` [EXTRACTED]
 - [[RouterConfig_1]] - `uses` [INFERRED]
 - [[ingest_apirouter.py]] - `contains` [EXTRACTED]

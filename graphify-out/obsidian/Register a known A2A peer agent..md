@@ -12,6 +12,6 @@ tags:
 # Register a known A2A peer agent.
 
 ## Connections
-- [[dot-register_peer()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-register_peer()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/A2AGovernanceProxy

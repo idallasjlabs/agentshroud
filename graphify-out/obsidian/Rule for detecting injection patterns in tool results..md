@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "rationale"
-community: ".analyze_message"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/analyze_message
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Rule for detecting injection patterns in tool results.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[InjectionRule]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/analyze_message
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

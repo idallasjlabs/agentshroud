@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/LOG_LEVEL.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Auth Errors.md"
 type: "document"
-community: "agentshroud.yaml.md"
-location: "L50"
+community: "HTTP 401 — Unauthorized"
+location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroudyamlmd
+  - community/HTTP_401__Unauthorized
 ---
 
 # Related Notes
 
 ## Connections
-- [[LOG_LEVEL_1]] - `contains` [EXTRACTED]
+- [[Auth Errors_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroudyamlmd
+#graphify/document #graphify/EXTRACTED #community/HTTP_401__Unauthorized

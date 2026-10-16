@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
+source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "installer.py"
+community: "Pydantic"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/installerpy
+  - community/Pydantic
 ---
 
 # Purpose
 
 ## Connections
-- [[installer.py_1]] - `contains` [EXTRACTED]
+- [[Pydantic]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/installerpy
+#graphify/document #graphify/EXTRACTED #community/Pydantic

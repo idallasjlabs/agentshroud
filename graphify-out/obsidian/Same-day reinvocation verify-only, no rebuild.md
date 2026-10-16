@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-27-20260927-0800.md"
 type: "rationale"
-community: "Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)"
+community: "colima-health-check.sh"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+  - community/colima-health-checksh
 ---
 
 # Same-day reinvocation: verify-only, no rebuild
@@ -16,4 +16,4 @@ tags:
 - [[Wrapper 180-min timeout vs session cannot self-terminate]] - `semantically_similar_to` [INFERRED]
 - [[sunday-upgrade.sh]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+#graphify/rationale #graphify/EXTRACTED #community/colima-health-checksh

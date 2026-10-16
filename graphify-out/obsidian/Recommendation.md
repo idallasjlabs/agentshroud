@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "Recommendation"
+community: "SkillGuard"
 location: "L86"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Recommendation
+  - community/SkillGuard
 ---
 
 # Recommendation
 
 ## Connections
 - [[dot-recommendation()]] - `references` [EXTRACTED]
-- [[CompletedProcess]] - `uses` [INFERRED]
+- [[CompletedProcess_3]] - `uses` [INFERRED]
 - [[IntEnum]] - `inherits` [EXTRACTED]
-- [[Path_2]] - `uses` [INFERRED]
-- [[Path_44]] - `uses` [INFERRED]
+- [[Path_19]] - `uses` [INFERRED]
+- [[Path_28]] - `uses` [INFERRED]
 - [[ScanResult_2]] - `uses` [INFERRED]
 - [[ScanResult_3]] - `uses` [INFERRED]
 - [[SkillGuard]] - `uses` [INFERRED]
@@ -40,4 +40,4 @@ tags:
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 - [[test_skill_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Recommendation
+#graphify/code #graphify/INFERRED #community/SkillGuard

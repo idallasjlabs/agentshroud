@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-23-20260923-1400.md"
 type: "rationale"
-community: "sunday-upgrade-apply.sh"
+community: "colima-health-check.sh"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/sunday-upgrade-applysh
+  - community/colima-health-checksh
 ---
 
 # SUNDAY_BUILD_VIA_VM=1 detached in-VM build
@@ -14,4 +14,4 @@ tags:
 - [[Upgrade Report 2026-09-23 1400 (dev, PARTIAL, disk full)]] - `references` [EXTRACTED]
 - [[_build_one_service()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/sunday-upgrade-applysh
+#graphify/rationale #graphify/EXTRACTED #community/colima-health-checksh

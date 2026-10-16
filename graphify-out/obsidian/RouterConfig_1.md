@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "DataLedger"
+community: "ApprovalQueueConfig"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/ApprovalQueueConfig
 ---
 
 # RouterConfig
@@ -20,18 +20,18 @@ tags:
 - [[dot-test_valid_router_url_accepted()]] - `calls` [EXTRACTED]
 - [[dot-validate_default_url()]] - `method` [EXTRACTED]
 - [[dot-validate_targets()]] - `method` [EXTRACTED]
-- [[AgentTarget_2]] - `uses` [INFERRED]
-- [[Any_55]] - `uses` [INFERRED]
+- [[AgentTarget]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[ForwardError]] - `uses` [INFERRED]
-- [[ForwardRequest_1]] - `uses` [INFERRED]
-- [[GatewayConfig_1]] - `uses` [INFERRED]
+- [[ForwardRequest]] - `uses` [INFERRED]
 - [[GatewayConfig_2]] - `uses` [INFERRED]
+- [[GatewayConfig_3]] - `uses` [INFERRED]
 - [[Multi-agent router configuration]] - `rationale_for` [EXTRACTED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
 - [[PIISanitizer_3]] - `uses` [INFERRED]
-- [[Path_51]] - `uses` [INFERRED]
+- [[Path_13]] - `uses` [INFERRED]
 - [[RouterConfig]] - `uses` [INFERRED]
 - [[RouterError]] - `uses` [INFERRED]
 - [[SSHConfig_2]] - `uses` [INFERRED]
@@ -58,7 +58,7 @@ tags:
 - [[ingest_apiconfig.py]] - `contains` [EXTRACTED]
 - [[ingest_apirouter.py]] - `imports` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
-- [[router()_1]] - `calls` [EXTRACTED]
+- [[router()]] - `calls` [EXTRACTED]
 - [[router()_2]] - `calls` [EXTRACTED]
 - [[router_config()]] - `calls` [EXTRACTED]
 - [[test_config()]] - `calls` [EXTRACTED]
@@ -79,4 +79,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataLedger
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

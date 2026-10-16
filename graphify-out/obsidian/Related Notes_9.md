@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "main.py.md"
-location: "L183"
+community: "python-jose"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpymd
+  - community/python-jose
 ---
 
 # Related Notes
 
 ## Connections
-- [[Architecture Overview_1]] - `contains` [EXTRACTED]
+- [[python-jose]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpymd
+#graphify/document #graphify/EXTRACTED #community/python-jose

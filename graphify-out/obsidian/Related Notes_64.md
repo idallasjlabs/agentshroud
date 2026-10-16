@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
+source_file: "docs/vault/08 - Runbooks/Restart Procedure.md"
 type: "document"
-community: "agentshroud.yaml.md"
-location: "L34"
+community: "Restart Procedure"
+location: "L145"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroudyamlmd
+  - community/Restart_Procedure
 ---
 
 # Related Notes
 
 ## Connections
-- [[AGENTSHROUD_CONFIG_1]] - `contains` [EXTRACTED]
+- [[Restart Procedure_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroudyamlmd
+#graphify/document #graphify/EXTRACTED #community/Restart_Procedure

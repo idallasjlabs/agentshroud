@@ -1,12 +1,12 @@
 ---
 source_file: "docker/falco/rules.yaml"
 type: "code"
-community: "AgentShroud Falco Rules"
+community: "start-agentshroud.sh"
 location: "L42-L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Falco_Rules
+  - community/start-agentshroudsh
 ---
 
 # Rule: Container Shell Spawned
@@ -17,4 +17,4 @@ tags:
 - [[security-entrypoint.sh]] - `references` [EXTRACTED]
 - [[start-agentshroud.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Falco_Rules
+#graphify/code #graphify/EXTRACTED #community/start-agentshroudsh

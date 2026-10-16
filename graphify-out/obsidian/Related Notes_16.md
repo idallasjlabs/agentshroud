@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/trivy.md"
+source_file: "docs/vault/02 - Modules/Other/text_control_center.py.md"
 type: "document"
-community: "Trivy"
-location: "L43"
+community: "text_control_center.py / agentshroud_manager.py"
+location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Trivy
+  - community/text_control_centerpy_/_agentshroud_managerpy
 ---
 
 # Related Notes
 
 ## Connections
-- [[Trivy]] - `contains` [EXTRACTED]
+- [[text_control_center.py  agentshroud_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Trivy
+#graphify/document #graphify/EXTRACTED #community/text_control_centerpy_/_agentshroud_managerpy

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/python-jose.md"
+source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "python-jose"
-location: "L15"
+community: "wazuh-ossec.conf"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/python-jose
+  - community/wazuh-ossecconf
 ---
 
 # Purpose
 
 ## Connections
-- [[python-jose_1]] - `contains` [EXTRACTED]
+- [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/python-jose
+#graphify/document #graphify/EXTRACTED #community/wazuh-ossecconf

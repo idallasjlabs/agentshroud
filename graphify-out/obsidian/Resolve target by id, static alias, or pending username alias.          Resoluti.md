@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "HeuristicClassifier"
 location: "L795"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/HeuristicClassifier
 ---
 
 # Resolve target by id, static alias, or pending username alias.          Resoluti
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_extract_owner_target_resolved()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/HeuristicClassifier

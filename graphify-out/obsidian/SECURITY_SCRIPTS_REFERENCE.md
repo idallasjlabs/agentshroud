@@ -15,6 +15,6 @@ tags:
 - [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
 - [[Kill Switch_1]] - `references` [EXTRACTED]
 - [[scan.sh]] - `references` [EXTRACTED]
-- [[verify-security.sh_1]] - `references` [EXTRACTED]
+- [[verify-security.sh]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Kill_Switch

@@ -12,6 +12,6 @@ tags:
 # Read Falco alerts from the alert directory.      Args:         alert_dir: Direct
 
 ## Connections
-- [[read_alerts()_1]] - `rationale_for` [EXTRACTED]
+- [[read_alerts()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/FalcoAlertWatcher

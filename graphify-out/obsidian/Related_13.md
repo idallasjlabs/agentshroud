@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
 type: "document"
-community: "models.py"
-location: "L95"
+community: "clamav_scanner.py"
+location: "L105"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/modelspy
+  - community/clamav_scannerpy
 ---
 
 # Related
 
 ## Connections
-- [[models.py_1]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/modelspy
+#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy

@@ -1,17 +1,18 @@
 ---
-source_file: "docs/operations/deployment-procedure.md"
+source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "Deployment Modes"
-location: "L70"
+community: "AgentShroud Deployment Architecture"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deployment_Modes
+  - community/AgentShroud_Deployment_Architecture
 ---
 
 # Proxy Mode (Recommended)
 
 ## Connections
+- [[ADR-001 Transparent Proxy Decision]] - `implements` [EXTRACTED]
 - [[Deployment Modes_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deployment_Modes
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture

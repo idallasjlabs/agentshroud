@@ -12,6 +12,6 @@ tags:
 # Problem: Skill not auto-discovered by bot
 
 ## Connections
-- [[Troubleshooting]] - `contains` [EXTRACTED]
+- [[Troubleshooting_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Troubleshooting

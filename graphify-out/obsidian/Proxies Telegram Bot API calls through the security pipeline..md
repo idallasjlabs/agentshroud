@@ -12,6 +12,6 @@ tags:
 # Proxies Telegram Bot API calls through the security pipeline.
 
 ## Connections
-- [[TelegramAPIProxy_2]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

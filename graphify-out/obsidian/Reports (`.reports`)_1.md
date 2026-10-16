@@ -12,6 +12,6 @@ tags:
 # Reports (`./reports/`)
 
 ## Connections
-- [[Deliverables_2]] - `contains` [EXTRACTED]
+- [[Deliverables_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ssh_config.py"
 type: "code"
-community: "DataLedger"
+community: "ApprovalQueueConfig"
 location: "L42"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/DataLedger
+  - community/ApprovalQueueConfig
 ---
 
 # SSHConfig
@@ -16,22 +16,22 @@ tags:
 - [[dot-no_approval_client()]] - `calls` [EXTRACTED]
 - [[dot-test_ssh_approval_sanitizes_command_pii()]] - `calls` [EXTRACTED]
 - [[dot-test_ssh_command_uses_strict_checking()]] - `calls` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[AuditExportConfig]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
+- [[AuditExportConfig_1]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[ChannelsConfig]] - `uses` [INFERRED]
-- [[GatewayConfig_3]] - `uses` [INFERRED]
+- [[GatewayConfig_4]] - `uses` [INFERRED]
 - [[LedgerConfig_1]] - `uses` [INFERRED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
-- [[Path_31]] - `uses` [INFERRED]
+- [[Path_21]] - `uses` [INFERRED]
 - [[RouterConfig_1]] - `uses` [INFERRED]
 - [[SSHConfig]] - `uses` [INFERRED]
 - [[SSHConfig_1]] - `uses` [INFERRED]
-- [[SSHProxy_1]] - `uses` [INFERRED]
 - [[SSHProxy]] - `uses` [INFERRED]
+- [[SSHProxy_1]] - `uses` [INFERRED]
 - [[SSHResult]] - `uses` [INFERRED]
 - [[SSHWriteResult]] - `uses` [INFERRED]
-- [[SecurityConfig_4]] - `uses` [INFERRED]
+- [[SecurityConfig]] - `uses` [INFERRED]
 - [[SecurityModuleConfig]] - `uses` [INFERRED]
 - [[TestApprovalQueuePIISanitization]] - `uses` [INFERRED]
 - [[TestDashboardCookieAuth]] - `uses` [INFERRED]
@@ -65,7 +65,7 @@ tags:
 - [[ingest_apiconfig.py]] - `imports` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 - [[proxy.py]] - `imports` [EXTRACTED]
-- [[ssh_config()_1]] - `calls` [EXTRACTED]
+- [[ssh_config()]] - `calls` [EXTRACTED]
 - [[ssh_config()_2]] - `calls` [EXTRACTED]
 - [[ssh_config.py]] - `contains` [EXTRACTED]
 - [[test_security_fixes.py]] - `imports` [EXTRACTED]
@@ -73,4 +73,4 @@ tags:
 - [[test_ssh_proxy.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/DataLedger
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig

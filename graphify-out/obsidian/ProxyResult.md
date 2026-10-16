@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[dot-process_tool_call()]] - `references` [EXTRACTED]
 - [[dot-process_tool_result()_1]] - `references` [EXTRACTED]
-- [[GatewayConfig_2]] - `uses` [INFERRED]
+- [[GatewayConfig_3]] - `uses` [INFERRED]
 - [[InspectionResult_1]] - `uses` [INFERRED]
 - [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector]] - `uses` [INFERRED]
+- [[MCPInspector_1]] - `uses` [INFERRED]
 - [[MCPPermissionManager_1]] - `uses` [INFERRED]
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]

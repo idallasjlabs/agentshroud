@@ -12,6 +12,6 @@ tags:
 # PromptGuard.scan(text)
 
 ## Connections
-- [[Function Details_19]] - `contains` [EXTRACTED]
+- [[Function Details_18]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/prompt_guardpymd

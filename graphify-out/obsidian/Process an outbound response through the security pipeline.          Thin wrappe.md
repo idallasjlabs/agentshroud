@@ -12,6 +12,6 @@ tags:
 # Process an outbound response through the security pipeline.          Thin wrappe
 
 ## Connections
-- [[dot-process_outbound()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-process_outbound()_6]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/PipelineAction

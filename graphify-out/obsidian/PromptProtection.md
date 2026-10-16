@@ -12,9 +12,9 @@ tags:
 # PromptProtection
 
 ## Connections
-- [[dot-__init__()_115]] - `method` [EXTRACTED]
+- [[dot-__init__()_140]] - `method` [EXTRACTED]
 - [[dot-_calculate_similarity()]] - `method` [EXTRACTED]
-- [[dot-_compile_detection_patterns()]] - `method` [EXTRACTED]
+- [[dot-_compile_detection_patterns()_1]] - `method` [EXTRACTED]
 - [[dot-_load_protected_content()]] - `method` [EXTRACTED]
 - [[dot-_redact_fuzzy_match()]] - `method` [EXTRACTED]
 - [[dot-_redact_match()]] - `method` [EXTRACTED]
@@ -33,7 +33,7 @@ tags:
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[prompt_protection()]] - `calls` [EXTRACTED]
 - [[prompt_protection.py]] - `contains` [EXTRACTED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[run()]] - `calls` [EXTRACTED]
 - [[test_prompt_protection.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

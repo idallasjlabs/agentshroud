@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-27.md"
 type: "concept"
-community: "Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)"
+community: "colima-health-check.sh"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+  - community/colima-health-checksh
 ---
 
 # SCRUM-187 (Hermes credential gap ticket)
@@ -16,4 +16,4 @@ tags:
 - [[Upgrade Report 2026-09-27 0800 (verify-only)]] - `references` [EXTRACTED]
 - [[Upgrade Report 2026-09-27 1400 (verify-only)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+#graphify/concept #graphify/EXTRACTED #community/colima-health-checksh

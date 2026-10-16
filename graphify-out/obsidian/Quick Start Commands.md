@@ -12,6 +12,6 @@ tags:
 # Quick Start Commands
 
 ## Connections
-- [[Summary_8]] - `contains` [EXTRACTED]
+- [[Summary_7]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Telegram__Gmail_Integration_Guide

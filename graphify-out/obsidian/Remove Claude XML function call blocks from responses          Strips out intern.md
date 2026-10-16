@@ -12,6 +12,6 @@ tags:
 # Remove Claude XML function call blocks from responses          Strips out intern
 
 ## Connections
-- [[dot-filter_xml_blocks()]] - `rationale_for` [EXTRACTED]
+- [[dot-filter_xml_blocks()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/PIIConfig

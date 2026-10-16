@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md"
+source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
 type: "document"
-community: "TELEGRAM_API_BASE_URL"
-location: "L39"
+community: "AGENTSHROUD_MODE"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TELEGRAM_API_BASE_URL
+  - community/AGENTSHROUD_MODE
 ---
 
 # Related Notes
 
 ## Connections
-- [[TELEGRAM_API_BASE_URL_1]] - `contains` [EXTRACTED]
+- [[OPENCLAW_SANDBOX_MODE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TELEGRAM_API_BASE_URL
+#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_MODE

@@ -12,7 +12,7 @@ tags:
 # Quality Assurance (QA)
 
 ## Connections
-- [[Purpose_63]] - `contains` [EXTRACTED]
+- [[Purpose_67]] - `contains` [EXTRACTED]
 - [[Related Skills_56]] - `contains` [EXTRACTED]
 - [[Usage_60]] - `contains` [EXTRACTED]
 - [[hermesskillsi-qaREADME]] - `contains` [EXTRACTED]

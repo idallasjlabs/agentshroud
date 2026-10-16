@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ssh_config.py"
 type: "code"
-community: "SSHHostConfig"
+community: "ApprovalQueueConfig"
 location: "L15"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SSHHostConfig
+  - community/ApprovalQueueConfig
 ---
 
 # SSHHostConfig
@@ -20,8 +20,8 @@ tags:
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[Configuration for a single SSH host]] - `rationale_for` [EXTRACTED]
 - [[SSHConfig_1]] - `uses` [INFERRED]
-- [[SSHProxy_1]] - `uses` [INFERRED]
-- [[SSHProxy]] - `shares_data_with` [EXTRACTED]
+- [[SSHProxy]] - `uses` [INFERRED]
+- [[SSHProxy_1]] - `shares_data_with` [EXTRACTED]
 - [[TestApprovalQueuePIISanitization]] - `uses` [INFERRED]
 - [[TestDashboardCookieAuth]] - `uses` [INFERRED]
 - [[TestDashboardSecureCookie]] - `uses` [INFERRED]
@@ -48,8 +48,8 @@ tags:
 - [[TestValidateCommand]] - `uses` [INFERRED]
 - [[TestVersionConsistency]] - `uses` [INFERRED]
 - [[TestWebSocketHandshakeAuth]] - `uses` [INFERRED]
-- [[ssh_config()_1]] - `calls` [EXTRACTED]
 - [[ssh_config()]] - `calls` [EXTRACTED]
+- [[ssh_config()_1]] - `calls` [EXTRACTED]
 - [[ssh_config()_2]] - `calls` [EXTRACTED]
 - [[ssh_config.py]] - `contains` [EXTRACTED]
 - [[test_security_fixes.py]] - `imports` [EXTRACTED]
@@ -57,4 +57,4 @@ tags:
 - [[test_ssh_proxy.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SSHHostConfig
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig

@@ -12,11 +12,11 @@ tags:
 # PrivacyPolicyEnforcer
 
 ## Connections
-- [[dot-__init__()_61]] - `method` [EXTRACTED]
+- [[dot-__init__()_204]] - `method` [EXTRACTED]
 - [[dot-_get_role_value()]] - `method` [EXTRACTED]
 - [[dot-_user_in_allowed_groups()]] - `method` [EXTRACTED]
 - [[dot-contains_private_data()]] - `method` [EXTRACTED]
-- [[dot-filter_response()_1]] - `method` [EXTRACTED]
+- [[dot-filter_response()_2]] - `method` [EXTRACTED]
 - [[dot-is_service_allowed()]] - `method` [EXTRACTED]
 - [[dot-should_alert()]] - `method` [EXTRACTED]
 - [[dot-should_audit()]] - `method` [EXTRACTED]
@@ -29,12 +29,12 @@ tags:
 - [[Evaluates access control and filters responses per privacy policy.]] - `rationale_for` [EXTRACTED]
 - [[Privacy Policy Enforcement Tests]] - `references` [EXTRACTED]
 - [[RBACConfig_2]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[TestAuditAndAlert]] - `uses` [INFERRED]
 - [[TestPrivacyPolicyParsing]] - `uses` [INFERRED]
 - [[TestResponseFiltering]] - `uses` [INFERRED]
 - [[TestServiceAccessControl]] - `uses` [INFERRED]
-- [[enforcer()]] - `calls` [EXTRACTED]
+- [[enforcer()_3]] - `calls` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[privacy_policy.py]] - `contains` [EXTRACTED]

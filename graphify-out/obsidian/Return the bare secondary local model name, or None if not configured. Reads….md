@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: ".proxy_messages"
-location: "L280"
+community: "LLMProxy"
+location: "L299"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/proxy_messages
+  - community/LLMProxy
 ---
 
 # Return the bare secondary local model name, or None if not configured. Reads…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_get_local_secondary_model()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/proxy_messages
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxy

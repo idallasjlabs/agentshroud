@@ -12,7 +12,7 @@ tags:
 # Recommended Configuration for Your Use Case
 
 ## Connections
-- [[Configuration_2]] - `contains` [EXTRACTED]
+- [[Configuration_1]] - `contains` [EXTRACTED]
 - [[Goals]] - `contains` [EXTRACTED]
 - [[What Does OpenClaw Actually Need to Write]] - `contains` [EXTRACTED]
 

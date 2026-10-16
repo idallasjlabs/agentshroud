@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
+source_file: ".agents/skills/i-ti/README.md"
 type: "document"
-community: "trivy_report.py"
-location: "L12"
+community: "Technical Illustrator (i-ti)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/trivy_reportpy
+  - community/Technical_Illustrator_i-ti
 ---
 
 # Purpose
 
 ## Connections
-- [[trivy_report.py_1]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/trivy_reportpy
+#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_i-ti

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
+source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
 type: "document"
-community: "Prompt Injection Blocks"
-location: "L78"
+community: "browser-fetch.js"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prompt_Injection_Blocks
+  - community/browser-fetchjs
 ---
 
 # Related Notes
 
 ## Connections
-- [[Prompt Injection Blocks]] - `contains` [EXTRACTED]
+- [[browser-fetch.js_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prompt_Injection_Blocks
+#graphify/document #graphify/EXTRACTED #community/browser-fetchjs

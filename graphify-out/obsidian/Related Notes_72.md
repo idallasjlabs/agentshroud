@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Auth Errors.md"
+source_file: "docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md"
 type: "document"
-community: "HTTP 401 — Unauthorized"
-location: "L80"
+community: "GATEWAY_OP_PROXY_URL"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/HTTP_401__Unauthorized
+  - community/GATEWAY_OP_PROXY_URL
 ---
 
 # Related Notes
 
 ## Connections
-- [[Auth Errors_2]] - `contains` [EXTRACTED]
+- [[GATEWAY_OP_PROXY_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/HTTP_401__Unauthorized
+#graphify/document #graphify/EXTRACTED #community/GATEWAY_OP_PROXY_URL

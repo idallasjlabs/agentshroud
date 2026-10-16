@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Community]] - `contains` [EXTRACTED]
 - [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
-- [[Documentation_1]] - `contains` [EXTRACTED]
+- [[Documentation]] - `contains` [EXTRACTED]
 - [[Related AgentShroud Docs]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Resources

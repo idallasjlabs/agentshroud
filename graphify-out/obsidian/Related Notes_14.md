@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
+source_file: "docs/vault/05 - Dependencies/trivy.md"
 type: "document"
-community: "PII Pipeline Errors"
-location: "L103"
+community: "Trivy"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PII_Pipeline_Errors
+  - community/Trivy
 ---
 
 # Related Notes
 
 ## Connections
-- [[PII Pipeline Errors]] - `contains` [EXTRACTED]
+- [[Trivy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PII_Pipeline_Errors
+#graphify/document #graphify/EXTRACTED #community/Trivy

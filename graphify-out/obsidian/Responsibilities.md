@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/api.py.md"
+source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "api.py"
-location: "L20"
+community: "Layer-by-Layer Breakdown"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/apipy
+  - community/Layer-by-Layer_Breakdown
 ---
 
 # Responsibilities
 
 ## Connections
-- [[api.py_1]] - `contains` [EXTRACTED]
+- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/apipy
+#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown

@@ -13,13 +13,13 @@ tags:
 
 ## Connections
 - [[dot-fmt()]] - `references` [EXTRACTED]
-- [[dot-get()_2]] - `references` [EXTRACTED]
 - [[dot-get()_3]] - `references` [EXTRACTED]
+- [[dot-get()_4]] - `references` [EXTRACTED]
 - [[dot-post()_1]] - `references` [EXTRACTED]
 - [[dot-post()_2]] - `references` [EXTRACTED]
+- [[dot-request()]] - `references` [EXTRACTED]
 - [[dot-request()_1]] - `references` [EXTRACTED]
-- [[dot-request()_2]] - `references` [EXTRACTED]
-- [[main()_21]] - `references` [EXTRACTED]
+- [[main()_17]] - `references` [EXTRACTED]
 - [[main.rs]] - `imports_from` [EXTRACTED]
 - [[run_approvals_decide()]] - `references` [EXTRACTED]
 - [[run_approvals_list()]] - `references` [EXTRACTED]

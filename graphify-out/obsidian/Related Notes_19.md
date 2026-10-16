@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
+source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "document"
-community: "agentshroud.yaml"
-location: "L213"
+community: "main.py.md"
+location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroudyaml
+  - community/mainpymd
 ---
 
 # Related Notes
 
 ## Connections
-- [[agentshroud.yaml]] - `contains` [EXTRACTED]
+- [[AgentShroud — System Overview]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroudyaml
+#graphify/document #graphify/EXTRACTED #community/mainpymd

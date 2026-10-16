@@ -12,7 +12,7 @@ tags:
 # Restart Procedure.md
 
 ## Connections
-- [[Crash Recovery_1]] - `references` [EXTRACTED]
+- [[Crash Recovery]] - `references` [EXTRACTED]
 - [[First Time Setup]] - `references` [EXTRACTED]
 - [[Restart Procedure_2]] - `contains` [EXTRACTED]
 

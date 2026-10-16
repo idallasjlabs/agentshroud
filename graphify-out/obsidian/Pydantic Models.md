@@ -12,6 +12,6 @@ tags:
 # Pydantic Models
 
 ## Connections
-- [[api.py_1]] - `contains` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/apipy

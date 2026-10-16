@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "rationale"
-community: "AgentRegistry"
+community: "AlertDispatcher"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/AlertDispatcher
 ---
 
 # SHA-256 hash of the config for quick comparison.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-config_hash()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

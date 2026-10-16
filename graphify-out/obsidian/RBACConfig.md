@@ -1,22 +1,20 @@
 ---
-source_file: "gateway/tests/test_tool_acl.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "RBACConfig"
-location: "L28"
+community: "Action"
+location: "L64"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBACConfig
+  - community/Action
 ---
 
 # RBACConfig
 
 ## Connections
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_96]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
-- [[ToolACLConfig]] - `uses` [INFERRED]
-- [[ToolACLEnforcer]] - `uses` [INFERRED]
-- [[_make_rbac()_1]] - `references` [EXTRACTED]
+- [[dot-__init__()_88]] - `references` [EXTRACTED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[Role_91]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/RBACConfig
+#graphify/code #graphify/INFERRED #community/Action

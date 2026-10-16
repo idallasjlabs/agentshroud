@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "._update_score"
+community: "TrustConfig"
 location: "L214"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_update_score
+  - community/TrustConfig
 ---
 
 # Record a successful action, increasing trust.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-record_success()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_update_score
+#graphify/rationale #graphify/EXTRACTED #community/TrustConfig

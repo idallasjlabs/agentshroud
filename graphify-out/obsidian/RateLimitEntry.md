@@ -15,8 +15,8 @@ tags:
 - [[dot-check_rate_limit()]] - `calls` [EXTRACTED]
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]
-- [[PermissionLevel]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[PermissionLevel_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[Track rate limit state for a tool+agent combo.]] - `rationale_for` [EXTRACTED]
 - [[mcp_permissions.py]] - `contains` [EXTRACTED]
 

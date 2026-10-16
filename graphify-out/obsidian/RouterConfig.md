@@ -12,9 +12,9 @@ tags:
 # RouterConfig
 
 ## Connections
-- [[dot-__init__()_135]] - `references` [EXTRACTED]
-- [[AgentTarget]] - `uses` [INFERRED]
-- [[ForwardRequest_3]] - `uses` [INFERRED]
+- [[dot-__init__()_37]] - `references` [EXTRACTED]
+- [[AgentTarget_1]] - `uses` [INFERRED]
+- [[ForwardRequest_1]] - `uses` [INFERRED]
 - [[RouterConfig_1]] - `uses` [INFERRED]
 
 #graphify/code #graphify/INFERRED #community/AgentTarget

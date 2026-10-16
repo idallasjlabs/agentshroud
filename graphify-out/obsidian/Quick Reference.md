@@ -1,19 +1,19 @@
 ---
-source_file: "docs/vault/00 - START HERE/Quick Reference.md"
+source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "main.py.md"
-location: "L1"
+community: "AgentShroud Security Architecture"
+location: "L528"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpymd
+  - community/AgentShroud_Security_Architecture
 ---
 
-# Quick Reference.md
+# Quick Reference
 
 ## Connections
-- [[Home]] - `references` [EXTRACTED]
-- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
-- [[System Overview]] - `references` [EXTRACTED]
+- [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
+- [[Emergency Procedures]] - `contains` [EXTRACTED]
+- [[Security Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpymd
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

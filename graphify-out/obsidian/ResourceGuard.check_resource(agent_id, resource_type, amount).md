@@ -12,6 +12,6 @@ tags:
 # ResourceGuard.check_resource(agent_id, resource_type, amount)
 
 ## Connections
-- [[Function Details_8]] - `contains` [EXTRACTED]
+- [[Function Details_7]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

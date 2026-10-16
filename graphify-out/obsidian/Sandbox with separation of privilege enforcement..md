@@ -12,6 +12,6 @@ tags:
 # Sandbox with separation of privilege enforcement.
 
 ## Connections
-- [[strict_sandbox()_1]] - `rationale_for` [EXTRACTED]
+- [[strict_sandbox()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-new()_1]] - `method` [EXTRACTED]
-- [[dot-request()_2]] - `method` [EXTRACTED]
+- [[dot-request()_1]] - `method` [EXTRACTED]
 - [[Client]] - `references` [EXTRACTED]
 - [[HttpTransport]] - `implements` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]

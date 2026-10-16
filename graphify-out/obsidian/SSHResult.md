@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "SSHHostConfig"
+community: "ApprovalQueueConfig"
 location: "L26"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SSHHostConfig
+  - community/ApprovalQueueConfig
 ---
 
 # SSHResult
@@ -21,7 +21,7 @@ tags:
 - [[Result of an SSH command execution]] - `rationale_for` [EXTRACTED]
 - [[SSHConfig_1]] - `uses` [INFERRED]
 - [[SSHConfig_2]] - `uses` [INFERRED]
-- [[SSHProxy_1]] - `uses` [INFERRED]
+- [[SSHProxy]] - `uses` [INFERRED]
 - [[TestExecute]] - `uses` [INFERRED]
 - [[TestInjectionNewline]] - `uses` [INFERRED]
 - [[TestIsAutoApproved]] - `uses` [INFERRED]
@@ -38,4 +38,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SSHHostConfig
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig

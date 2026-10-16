@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[AgentShroud Deployment Procedure]] - `contains` [EXTRACTED]
 - [[Performance Tuning]] - `contains` [EXTRACTED]
-- [[Security Hardening]] - `contains` [EXTRACTED]
+- [[Security Hardening_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

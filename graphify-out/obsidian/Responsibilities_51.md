@@ -1,18 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
 type: "document"
-community: "IDENTITY.md - Who I Am"
+community: "ssh_config.py"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/IDENTITYmd_-_Who_I_Am
+  - community/ssh_configpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[IDENTITY.md - Who I Am]] - `contains` [EXTRACTED]
-- [[auth.py]] - `contains` [EXTRACTED]
+- [[ssh_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/IDENTITYmd_-_Who_I_Am
+#graphify/document #graphify/EXTRACTED #community/ssh_configpy

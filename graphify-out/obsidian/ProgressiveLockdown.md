@@ -12,8 +12,8 @@ tags:
 # ProgressiveLockdown
 
 ## Connections
-- [[dot-__init__()_15]] - `calls` [EXTRACTED]
-- [[dot-__init__()_165]] - `method` [EXTRACTED]
+- [[dot-__init__()_201]] - `calls` [EXTRACTED]
+- [[dot-__init__()_202]] - `method` [EXTRACTED]
 - [[dot-_get_state()]] - `method` [EXTRACTED]
 - [[dot-all_statuses()]] - `method` [EXTRACTED]
 - [[dot-get_status()_2]] - `method` [EXTRACTED]
@@ -35,7 +35,7 @@ tags:
 - [[dot-test_reset_removes_suspended_state()]] - `calls` [EXTRACTED]
 - [[dot-test_reset_true_for_known_user()]] - `calls` [EXTRACTED]
 - [[dot-test_suspended_level_at_10_blocks()]] - `calls` [EXTRACTED]
-- [[Any_81]] - `uses` [INFERRED]
+- [[Any_65]] - `uses` [INFERRED]
 - [[ContributorManager]] - `calls` [EXTRACTED]
 - [[FakePipelineResult_1]] - `uses` [INFERRED]
 - [[FakeRBAC_1]] - `uses` [INFERRED]
@@ -44,7 +44,7 @@ tags:
 - [[PassthroughPipeline_1]] - `uses` [INFERRED]
 - [[Progressive Lockdown UX Tests]] - `references` [EXTRACTED]
 - [[TelegramAPIProxy_3]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[TestCollabLockdownNotifications]] - `uses` [INFERRED]
 - [[TestLockdownLevelWiring]] - `uses` [INFERRED]
 - [[TestLockedCommand]] - `uses` [INFERRED]

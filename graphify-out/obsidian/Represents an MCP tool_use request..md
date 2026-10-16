@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "MCPToolCall"
+community: "MCPPermissionManager"
 location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/MCPPermissionManager
 ---
 
 # Represents an MCP tool_use request.
 
 ## Connections
-- [[MCPToolCall]] - `rationale_for` [EXTRACTED]
+- [[MCPToolCall_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPToolCall
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

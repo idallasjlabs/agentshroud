@@ -12,6 +12,6 @@ tags:
 # Return True if user_id is the owner in group_chat_id.
 
 ## Connections
-- [[dot-is_owner()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-is_owner()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver

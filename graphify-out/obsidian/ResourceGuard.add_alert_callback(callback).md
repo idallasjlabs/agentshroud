@@ -12,6 +12,6 @@ tags:
 # ResourceGuard.add_alert_callback(callback)
 
 ## Connections
-- [[Function Details_8]] - `contains` [EXTRACTED]
+- [[Function Details_7]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

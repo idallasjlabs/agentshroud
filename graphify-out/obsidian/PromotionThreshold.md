@@ -24,7 +24,7 @@ tags:
 - [[TestTypedViolations]] - `uses` [INFERRED]
 - [[Threshold for promoting to a trust level.]] - `rationale_for` [EXTRACTED]
 - [[TrustLevel_2]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[_fast_ladder()]] - `calls` [EXTRACTED]
 - [[progressive_trust_config.py]] - `contains` [EXTRACTED]
 - [[test_progressive_trust_integration.py]] - `imports` [EXTRACTED]

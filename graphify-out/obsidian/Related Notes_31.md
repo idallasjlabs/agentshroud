@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
+source_file: "docs/vault/09 - Diagrams/Security Pipeline Flow.md"
 type: "document"
-community: "Dockerfile — Gateway"
-location: "L96"
+community: "`SecurityPipeline`"
+location: "L117"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dockerfile__Gateway
+  - community/SecurityPipeline
 ---
 
 # Related Notes
 
 ## Connections
-- [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
+- [[`SecurityPipeline`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dockerfile__Gateway
+#graphify/document #graphify/EXTRACTED #community/SecurityPipeline

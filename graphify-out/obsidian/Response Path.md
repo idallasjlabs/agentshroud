@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "EgressFilter"
+community: "Layer-by-Layer Breakdown"
 location: "L209"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/Layer-by-Layer_Breakdown
 ---
 
 # Response Path
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Data Flow_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown

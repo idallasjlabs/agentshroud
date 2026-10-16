@@ -12,6 +12,6 @@ tags:
 # RuntimeConfig.effective_rootless (property)
 
 ## Connections
-- [[Function Details_46]] - `contains` [EXTRACTED]
+- [[Function Details_47]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/configpy

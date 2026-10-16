@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/playwright.md"
+source_file: ".agents/skills/i-tdd/README.md"
 type: "document"
-community: "Docker Volumes"
-location: "L15"
+community: "Test-Driven Development README"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Volumes
+  - community/Test-Driven_Development_README
 ---
 
 # Purpose
 
 ## Connections
-- [[Playwright_1]] - `contains` [EXTRACTED]
+- [[Test-Driven Development README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Volumes
+#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README

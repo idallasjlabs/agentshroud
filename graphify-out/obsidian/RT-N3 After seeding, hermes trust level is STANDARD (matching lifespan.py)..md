@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "rationale"
-community: "TestHermesTrustSeeding"
+community: "test_security_regressions_v1_2.py"
 location: "L274"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestHermesTrustSeeding
+  - community/test_security_regressions_v1_2py
 ---
 
 # RT-N3: After seeding, hermes trust level is STANDARD (matching lifespan.py).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_hermes_registered_with_standard_trust()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestHermesTrustSeeding
+#graphify/rationale #graphify/EXTRACTED #community/test_security_regressions_v1_2py

@@ -1,18 +1,17 @@
 ---
-source_file: "docs/architecture/deployment-diagram.md"
+source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "ADR-001: Transparent Proxy Decision"
-location: "L9"
+community: "Deployment Modes"
+location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-001_Transparent_Proxy_Decision
+  - community/Deployment_Modes
 ---
 
 # Proxy Mode (Recommended)
 
 ## Connections
-- [[ADR-001 Transparent Proxy Decision]] - `implements` [EXTRACTED]
 - [[Deployment Modes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_Decision
+#graphify/document #graphify/EXTRACTED #community/Deployment_Modes

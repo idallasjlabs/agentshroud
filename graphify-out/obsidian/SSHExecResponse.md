@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "ingest_api/models.py"
+community: "soc/router.py"
 location: "L246"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/soc/routerpy
 ---
 
 # SSHExecResponse
@@ -16,4 +16,4 @@ tags:
 - [[Response from SSH command execution]] - `rationale_for` [EXTRACTED]
 - [[ingest_apimodels.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

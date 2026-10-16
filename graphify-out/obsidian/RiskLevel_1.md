@@ -15,7 +15,7 @@ tags:
 - [[dot-_classify_risk()_1]] - `references` [EXTRACTED]
 - [[dot-_log_action()_1]] - `references` [EXTRACTED]
 - [[dot-_requires_approval()_1]] - `references` [EXTRACTED]
-- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[Enum_1]] - `inherits` [EXTRACTED]
 - [[Risk classification for browser actions_1]] - `rationale_for` [EXTRACTED]
 - [[hermesskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
 

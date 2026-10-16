@@ -1,8 +1,8 @@
 ---
-source_file: "docs/vault/05 - Dependencies/fastapi.md"
+source_file: "docs/vault/03 - Configuration/ci-workflows.md"
 type: "document"
 community: "All Dependencies.md"
-location: "L46"
+location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # Related Notes
 
 ## Connections
-- [[FastAPI_3]] - `contains` [EXTRACTED]
+- [[CI Workflows]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

@@ -1,11 +1,11 @@
 ---
 source_file: ".semgrep.yml"
 type: "concept"
-community: "EgressFilterConfig"
+community: "egress_filter.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/egress_filterpy
 ---
 
 # Rule: agentshroud-ssrf-httpx
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Semgrep SAST Configuration]] - `references` [EXTRACTED]
 - [[egress_filter.py_1]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/concept #graphify/EXTRACTED #community/egress_filterpy

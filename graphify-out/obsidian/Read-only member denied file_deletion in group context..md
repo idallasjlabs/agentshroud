@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "GroupRoleResolver"
+community: "RBACConfig"
 location: "L174"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/RBACConfig
 ---
 
 # Read-only member denied file_deletion in group context.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_readonly_denied_file_deletion_in_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

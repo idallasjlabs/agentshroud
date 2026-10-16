@@ -1,25 +1,17 @@
 ---
-source_file: "gateway/security/rbac.py"
-type: "code"
-community: "Action"
-location: "L76"
+source_file: ".agents/skills/i-tw/SKILL.md"
+type: "document"
+community: ".agents/skills/i-tw/SKILL.md"
+location: "L7"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Action
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # Role
 
 ## Connections
-- [[dot-_build_permission_matrix()]] - `references` [EXTRACTED]
-- [[dot-_build_tool_permissions()]] - `references` [EXTRACTED]
-- [[dot-audit_privilege_change()]] - `references` [EXTRACTED]
-- [[dot-get_user_role()_3]] - `references` [EXTRACTED]
-- [[dot-is_privilege_escalation()]] - `references` [EXTRACTED]
-- [[dot-set_user_role()]] - `references` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_96]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[Skill Technical Writer (TW)_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Action
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

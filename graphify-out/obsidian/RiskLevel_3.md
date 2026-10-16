@@ -15,7 +15,7 @@ tags:
 - [[dot-_classify_risk()_3]] - `references` [EXTRACTED]
 - [[dot-_log_action()_3]] - `references` [EXTRACTED]
 - [[dot-_requires_approval()_3]] - `references` [EXTRACTED]
-- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[Enum_1]] - `inherits` [EXTRACTED]
 - [[Risk classification for browser actions_3]] - `rationale_for` [EXTRACTED]
 - [[securebrowserscriptsbrowse.py]] - `contains` [EXTRACTED]
 

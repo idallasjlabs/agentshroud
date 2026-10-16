@@ -1,5 +1,5 @@
 ---
-source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
+source_file: ".agents/skills/i-cr/SKILL.md"
 type: "document"
 community: "Skill: Code Review (CR)"
 location: "L12"

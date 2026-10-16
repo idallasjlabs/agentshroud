@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md"
 type: "document"
-community: "Gateway Container Startup Failures"
-location: "L161"
+community: "troubleshooting.md"
+location: "L143"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Container_Startup_Failures
+  - community/troubleshootingmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[Startup Errors]] - `contains` [EXTRACTED]
+- [[troubleshooting_23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Container_Startup_Failures
+#graphify/document #graphify/EXTRACTED #community/troubleshootingmd

@@ -12,6 +12,6 @@ tags:
 # Scan a message through the security pipeline.
 
 ## Connections
-- [[dot-scan()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-scan()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/api.py.md"
+source_file: ".agents/skills/i-sec/README.md"
 type: "document"
-community: "api.py"
-location: "L16"
+community: "Security Review (SEC)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/apipy
+  - community/Security_Review_SEC
 ---
 
 # Purpose
 
 ## Connections
-- [[api.py_1]] - `contains` [EXTRACTED]
+- [[Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/apipy
+#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC

@@ -1,23 +1,26 @@
 ---
-source_file: "gateway/security/egress_approval.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "TestEgressApprovalQueue"
-location: "L29"
+community: "TestToolChainAnalyzer"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/TestToolChainAnalyzer
 ---
 
 # RiskLevel
 
 ## Connections
-- [[dot-_assess_risk()]] - `references` [EXTRACTED]
-- [[Enum_2]] - `inherits` [EXTRACTED]
-- [[Risk assessment levels for egress requests.]] - `rationale_for` [EXTRACTED]
-- [[TestEgressApprovalAPI]] - `uses` [INFERRED]
-- [[TestEgressApprovalQueue]] - `uses` [INFERRED]
-- [[egress_approval.py]] - `contains` [EXTRACTED]
-- [[test_egress_approval.py]] - `imports` [EXTRACTED]
+- [[dot-_load_custom_patterns()]] - `calls` [EXTRACTED]
+- [[Enum_1]] - `inherits` [EXTRACTED]
+- [[Risk levels for tool call chains.]] - `rationale_for` [EXTRACTED]
+- [[TestParamSanitization]] - `uses` [INFERRED]
+- [[TestReversibilityScoring]] - `uses` [INFERRED]
+- [[TestShellBleedPatterns]] - `uses` [INFERRED]
+- [[TestToolChainAnalyzer_1]] - `uses` [INFERRED]
+- [[str_1]] - `inherits` [EXTRACTED]
+- [[test_tool_chain_analyzer.py]] - `imports` [EXTRACTED]
+- [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

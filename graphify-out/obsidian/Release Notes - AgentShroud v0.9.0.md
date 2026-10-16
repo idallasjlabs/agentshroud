@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Deep Hardening Release]] - `contains` [EXTRACTED]
-- [[Acknowledgments_1]] - `contains` [EXTRACTED]
+- [[Acknowledgments]] - `contains` [EXTRACTED]
 - [[Breaking Changes and Migration]] - `contains` [EXTRACTED]
 - [[Deployment and Operations]] - `contains` [EXTRACTED]
 - [[Executive Summary_2]] - `contains` [EXTRACTED]

@@ -12,6 +12,6 @@ tags:
 # Reports (`./reports/`)
 
 ## Connections
-- [[Deliverables_1]] - `contains` [EXTRACTED]
+- [[Deliverables]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Deliverables

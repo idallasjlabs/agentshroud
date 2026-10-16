@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
+source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
 type: "document"
-community: "router.py"
-location: "L12"
+community: "mcp-proxy-wrapper.js"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/routerpy
+  - community/mcp-proxy-wrapperjs
 ---
 
 # Purpose
 
 ## Connections
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/routerpy
+#graphify/document #graphify/EXTRACTED #community/mcp-proxy-wrapperjs

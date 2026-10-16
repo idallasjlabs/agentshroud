@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "rationale"
-community: "FetchOutcome"
+community: "api.py"
 location: "L47"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/apipy
 ---
 
 # Result of re-fetching a candidate citation URL through the web proxy.
 
 ## Connections
-- [[FetchOutcome]] - `rationale_for` [EXTRACTED]
+- [[FetchOutcome_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FetchOutcome
+#graphify/rationale #graphify/EXTRACTED #community/apipy

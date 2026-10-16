@@ -12,6 +12,6 @@ tags:
 # RuntimeConfig.from_dict(data)
 
 ## Connections
-- [[Function Details_46]] - `contains` [EXTRACTED]
+- [[Function Details_47]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/configpy
