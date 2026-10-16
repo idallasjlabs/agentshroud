@@ -16,7 +16,7 @@ tags:
 - [[dot-_log_action()]] - `references` [EXTRACTED]
 - [[dot-_requires_approval()]] - `references` [EXTRACTED]
 - [[dot-agentsskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
-- [[Enum_1]] - `inherits` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[Risk classification for browser actions]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser

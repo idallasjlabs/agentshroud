@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
 type: "document"
-community: "router.py"
-location: "L15"
+community: "falco_monitor.py"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/routerpy
+  - community/falco_monitorpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[falco_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/routerpy
+#graphify/document #graphify/EXTRACTED #community/falco_monitorpy

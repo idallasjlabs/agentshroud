@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "rationale"
-community: ".inspect_tool_call"
+community: "MCPInspector"
 location: "L235"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/inspect_tool_call
+  - community/MCPInspector
 ---
 
 # Recursively scan a value, appending findings in-place.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_scan_value()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/inspect_tool_call
+#graphify/rationale #graphify/EXTRACTED #community/MCPInspector

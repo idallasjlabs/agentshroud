@@ -1,18 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
 type: "document"
-community: "IDENTITY.md - Who I Am"
+community: "compose_generator.py"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/IDENTITYmd_-_Who_I_Am
+  - community/compose_generatorpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[IDENTITY.md - Who I Am]] - `contains` [EXTRACTED]
-- [[auth.py_1]] - `contains` [EXTRACTED]
+- [[compose_generator.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/IDENTITYmd_-_Who_I_Am
+#graphify/document #graphify/EXTRACTED #community/compose_generatorpy

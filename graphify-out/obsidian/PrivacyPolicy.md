@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "PrivacyPolicyEnforcer"
+community: "RBACConfig"
 location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/RBACConfig
 ---
 
 # PrivacyPolicy
 
 ## Connections
-- [[dot-__init__()_204]] - `references` [EXTRACTED]
+- [[dot-__init__()_78]] - `references` [EXTRACTED]
 - [[dot-default()]] - `method` [EXTRACTED]
-- [[dot-from_dict()_10]] - `method` [EXTRACTED]
+- [[dot-from_dict()_4]] - `method` [EXTRACTED]
 - [[Privacy policy configuration.      Loaded from agentshroud.yaml `privacy` secti]] - `rationale_for` [EXTRACTED]
 - [[RBACConfig_2]] - `uses` [INFERRED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
@@ -26,4 +26,4 @@ tags:
 - [[privacy_policy.py]] - `contains` [EXTRACTED]
 - [[test_privacy_policy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

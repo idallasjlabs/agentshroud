@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/python-jose.md"
+source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
 type: "document"
-community: "python-jose"
+community: "port_manager.py"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/python-jose
+  - community/port_managerpy
 ---
 
 # Purpose
 
 ## Connections
-- [[python-jose]] - `contains` [EXTRACTED]
+- [[port_manager.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/python-jose
+#graphify/document #graphify/EXTRACTED #community/port_managerpy

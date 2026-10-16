@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "subagent_governance.py"
+community: "GovernanceAction"
 location: "L73"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/subagent_governancepy
+  - community/GovernanceAction
 ---
 
 # Privilege escalation prevention policy.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PrivilegePolicy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/subagent_governancepy
+#graphify/rationale #graphify/EXTRACTED #community/GovernanceAction

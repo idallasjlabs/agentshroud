@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/config_integrity.py"
 type: "rationale"
-community: ".check"
+community: "ConfigIntegrityMonitor"
 location: "L58"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/check
+  - community/ConfigIntegrityMonitor
 ---
 
 # Return hex SHA256 of a file, or None if the file does not exist.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_hash_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/check
+#graphify/rationale #graphify/EXTRACTED #community/ConfigIntegrityMonitor

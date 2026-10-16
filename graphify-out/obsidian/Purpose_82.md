@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/05 - Dependencies/playwright.md"
+source_file: ".agents/skills/i-mc/README.md"
 type: "document"
-community: "Docker Volumes"
-location: "L15"
+community: "GSDE&G Development Master Checklist Skill"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Volumes
+  - community/GSDEG_Development_Master_Checklist_Skill
 ---
 
 # Purpose
 
 ## Connections
-- [[Playwright_1]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)_1]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Volumes
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_Skill

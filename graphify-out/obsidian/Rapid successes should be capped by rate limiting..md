@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "TrustConfig"
+community: "PIIConfig"
 location: "L891"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/PIIConfig
 ---
 
 # Rapid successes should be capped by rate limiting.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_rate_limiting_prevents_rapid_escalation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustConfig
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

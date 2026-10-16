@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-sanitize_tool_result()]] - `references` [EXTRACTED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[RedactionResult_3]] - `uses` [INFERRED]
 

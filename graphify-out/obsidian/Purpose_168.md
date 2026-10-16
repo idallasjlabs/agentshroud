@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: ".agents/skills/i-mnemosyne/README.md"
 type: "document"
-community: "auth.py"
-location: "L12"
+community: "Mnemosyne — Retention Engineer"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/authpy
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Purpose
 
 ## Connections
-- [[auth.py_1]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/authpy
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

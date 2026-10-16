@@ -11,7 +11,7 @@ tags:
 # SSH Capability Architecture Document
 
 ## Connections
-- [[Architecture_9]] - `contains` [EXTRACTED]
+- [[Architecture_10]] - `contains` [EXTRACTED]
 - [[Components_2]] - `contains` [EXTRACTED]
 - [[Overview_24]] - `contains` [EXTRACTED]
 - [[Request Flow]] - `contains` [EXTRACTED]

@@ -12,6 +12,6 @@ tags:
 # Remove a WebSocket connection from connected set          Args:             webs
 
 ## Connections
-- [[dot-disconnect()]] - `rationale_for` [EXTRACTED]
+- [[dot-disconnect()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

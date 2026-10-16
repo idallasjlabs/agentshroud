@@ -12,6 +12,6 @@ tags:
 # Problem: Permission denied executing browser
 
 ## Connections
-- [[Troubleshooting_3]] - `contains` [EXTRACTED]
+- [[Troubleshooting_4]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Troubleshooting

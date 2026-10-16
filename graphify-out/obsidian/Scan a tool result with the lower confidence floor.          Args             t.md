@@ -12,6 +12,6 @@ tags:
 # Scan a tool result with the lower confidence floor.          Args:             t
 
 ## Connections
-- [[dot-scan_tool_result()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-scan_tool_result()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/DifferentialPIIDetector

@@ -12,6 +12,6 @@ tags:
 # Process a tool result coming back (for cases where execution happens externally)
 
 ## Connections
-- [[dot-process_tool_result()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-process_tool_result()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/process_tool_call

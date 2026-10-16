@@ -12,6 +12,6 @@ tags:
 # Result of checking a response for canary presence.
 
 ## Connections
-- [[CanaryResult]] - `rationale_for` [EXTRACTED]
+- [[CanaryResult_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TestOutputCanary

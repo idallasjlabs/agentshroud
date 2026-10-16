@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "forward.py"
+community: "test_forward_stream.py"
 location: "L330"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/forwardpy
+  - community/test_forward_streampy
 ---
 
 # Request to send an email through the gateway (P3: channel ownership).      The b
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EmailSendRequest_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/forwardpy
+#graphify/rationale #graphify/EXTRACTED #community/test_forward_streampy

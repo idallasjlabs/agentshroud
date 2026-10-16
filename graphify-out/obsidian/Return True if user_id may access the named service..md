@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "rationale"
-community: "PrivacyPolicyEnforcer"
+community: "RBACConfig"
 location: "L198"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/RBACConfig
 ---
 
 # Return True if user_id may access the named service.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-is_service_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/egress_filter.py"
+source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "EgressAttempt"
-location: "L164"
+community: "ModuleStatsCollector"
+location: "L234"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressAttempt
+  - community/ModuleStatsCollector
 ---
 
 # Public entry — records the decision for the SOC heat-map (SCRUM-80),         the
 
 ## Connections
-- [[dot-check()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-can_use_tool()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressAttempt
+#graphify/rationale #graphify/EXTRACTED #community/ModuleStatsCollector

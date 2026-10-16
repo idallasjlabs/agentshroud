@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[dot-load_latest()]] - `calls` [EXTRACTED]
 - [[CompetitiveIntelReport]] - `uses` [INFERRED]
-- [[Exception_2]] - `inherits` [EXTRACTED]
+- [[Exception_1]] - `inherits` [EXTRACTED]
 - [[IntelReportStore]] - `uses` [INFERRED]
-- [[Path_51]] - `uses` [INFERRED]
+- [[Path_11]] - `uses` [INFERRED]
 - [[Raised when a loaded report fails its hash integrity check.]] - `rationale_for` [EXTRACTED]
 - [[TestCompetitiveIntelReportSchema]] - `uses` [INFERRED]
 - [[TestIntelReportHashIntegrity]] - `uses` [INFERRED]

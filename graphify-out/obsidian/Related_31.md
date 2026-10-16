@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
 type: "document"
-community: "telegram_proxy.py"
-location: "L66"
+community: "Function Details"
+location: "L77"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/Function_Details
 ---
 
 # Related
 
 ## Connections
-- [[telegram_proxy.py_1]] - `contains` [EXTRACTED]
+- [[mcp_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/document #graphify/EXTRACTED #community/Function_Details

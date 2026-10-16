@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/engine.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
 type: "document"
-community: "engine.py"
+community: "sidecar.py"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/enginepy
+  - community/sidecarpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[engine.py_2]] - `contains` [EXTRACTED]
+- [[sidecar.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/enginepy
+#graphify/document #graphify/EXTRACTED #community/sidecarpy

@@ -12,6 +12,6 @@ tags:
 # Result of filtering agent response content.
 
 ## Connections
-- [[FilterResult]] - `rationale_for` [EXTRACTED]
+- [[FilterResult_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AuditChain

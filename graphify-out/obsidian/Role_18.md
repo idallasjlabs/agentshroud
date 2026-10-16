@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-pca/SKILL.md"
-type: "document"
-community: "Skill: Pre-Change Analysis (PCA)"
-location: "L7"
+source_file: "gateway/soc/auth.py"
+type: "code"
+community: "test_soc_realtime_coverage.py"
+location: "L141"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_Pre-Change_Analysis_PCA
+  - community/test_soc_realtime_coveragepy
 ---
 
 # Role
 
 ## Connections
-- [[Skill Pre-Change Analysis (PCA)_1]] - `contains` [EXTRACTED]
+- [[dot-__init__()_58]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Pre-Change_Analysis_PCA
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

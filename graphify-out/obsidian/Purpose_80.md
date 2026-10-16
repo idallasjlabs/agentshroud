@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
+source_file: "docs/vault/05 - Dependencies/openclaw.md"
 type: "document"
-community: "env_guard.py"
-location: "L12"
+community: "agentshroud-bot"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/env_guardpy
+  - community/agentshroud-bot
 ---
 
 # Purpose
 
 ## Connections
-- [[env_guard.py_1]] - `contains` [EXTRACTED]
+- [[OpenClaw_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/env_guardpy
+#graphify/document #graphify/EXTRACTED #community/agentshroud-bot

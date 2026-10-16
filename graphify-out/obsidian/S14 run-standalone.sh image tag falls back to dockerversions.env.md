@@ -13,7 +13,6 @@ tags:
 
 ## Connections
 - [[AGENTSHROUD_VERSION fallback to dockerversions.env]] - `references` [EXTRACTED]
-- [[Hermes 'latest' image-tag outage (~5 min)]] - `cites` [EXTRACTED]
 - [[test_bot_boot_static.sh (static bot boot assertions S1-S14)]] - `implements` [EXTRACTED]
 
 #graphify/concept #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher

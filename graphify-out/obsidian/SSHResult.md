@@ -21,7 +21,7 @@ tags:
 - [[Result of an SSH command execution]] - `rationale_for` [EXTRACTED]
 - [[SSHConfig_1]] - `uses` [INFERRED]
 - [[SSHConfig_2]] - `uses` [INFERRED]
-- [[SSHProxy]] - `uses` [INFERRED]
+- [[SSHProxy_1]] - `uses` [INFERRED]
 - [[TestExecute]] - `uses` [INFERRED]
 - [[TestInjectionNewline]] - `uses` [INFERRED]
 - [[TestIsAutoApproved]] - `uses` [INFERRED]

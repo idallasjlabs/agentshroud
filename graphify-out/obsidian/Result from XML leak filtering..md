@@ -12,6 +12,6 @@ tags:
 # Result from XML leak filtering.
 
 ## Connections
-- [[FilterResult_1]] - `rationale_for` [EXTRACTED]
+- [[FilterResult]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

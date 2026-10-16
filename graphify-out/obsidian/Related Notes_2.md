@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
+source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
 type: "document"
-community: "PII Pipeline Errors"
-location: "L103"
+community: "egress_filter.py"
+location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PII_Pipeline_Errors
+  - community/egress_filterpy
 ---
 
 # Related Notes
 
 ## Connections
-- [[PII Pipeline Errors]] - `contains` [EXTRACTED]
+- [[AGENTSHROUD_MODE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PII_Pipeline_Errors
+#graphify/document #graphify/EXTRACTED #community/egress_filterpy

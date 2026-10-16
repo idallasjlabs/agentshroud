@@ -12,6 +12,6 @@ tags:
 # SSH Connection Timeout
 
 ## Connections
-- [[SSH Proxy Errors_1]] - `contains` [EXTRACTED]
+- [[SSH Proxy Errors]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Error_Indexmd

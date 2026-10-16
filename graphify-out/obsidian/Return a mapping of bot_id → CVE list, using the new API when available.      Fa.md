@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate-cve-page.py"
 type: "rationale"
-community: "generate-cve-page.py"
+community: "agent_cve_registry.py"
 location: "L368"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/generate-cve-pagepy
+  - community/agent_cve_registrypy
 ---
 
 # Return a mapping of bot_id → CVE list, using the new API when available.      Fa
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_resolve_registries()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/generate-cve-pagepy
+#graphify/rationale #graphify/EXTRACTED #community/agent_cve_registrypy

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/python-jose.md"
+source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
 type: "document"
-community: "python-jose"
-location: "L44"
+community: "gitleaks.toml"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/python-jose
+  - community/gitleakstoml
 ---
 
 # Related Notes
 
 ## Connections
-- [[python-jose]] - `contains` [EXTRACTED]
+- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/python-jose
+#graphify/document #graphify/EXTRACTED #community/gitleakstoml

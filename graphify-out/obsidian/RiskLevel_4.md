@@ -1,21 +1,26 @@
 ---
-source_file: "gateway/soc/models.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L91"
+community: "TestToolChainAnalyzer"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/TestToolChainAnalyzer
 ---
 
 # RiskLevel
 
 ## Connections
-- [[Enum_1]] - `inherits` [EXTRACTED]
-- [[socmodels.py]] - `contains` [EXTRACTED]
-- [[str_1]] - `inherits` [EXTRACTED]
-- [[test_soc_egress.py]] - `imports` [EXTRACTED]
-- [[test_soc_models.py]] - `imports` [EXTRACTED]
+- [[dot-_load_custom_patterns()]] - `calls` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[Risk levels for tool call chains.]] - `rationale_for` [EXTRACTED]
+- [[TestParamSanitization]] - `uses` [INFERRED]
+- [[TestReversibilityScoring]] - `uses` [INFERRED]
+- [[TestShellBleedPatterns]] - `uses` [INFERRED]
+- [[TestToolChainAnalyzer_1]] - `uses` [INFERRED]
+- [[str_3]] - `inherits` [EXTRACTED]
+- [[test_tool_chain_analyzer.py]] - `imports` [EXTRACTED]
+- [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

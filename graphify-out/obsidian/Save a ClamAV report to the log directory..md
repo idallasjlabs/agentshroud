@@ -12,6 +12,6 @@ tags:
 # Save a ClamAV report to the log directory.
 
 ## Connections
-- [[save_report()_1]] - `rationale_for` [EXTRACTED]
+- [[save_report()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/parse_clamscan_output

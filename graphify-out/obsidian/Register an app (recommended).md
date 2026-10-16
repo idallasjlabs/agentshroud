@@ -12,6 +12,6 @@ tags:
 # Register an app (recommended)
 
 ## Connections
-- [[Prerequisites_7]] - `contains` [EXTRACTED]
+- [[Prerequisites_5]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference

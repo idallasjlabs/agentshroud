@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/pytest.ini.md"
+source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
 type: "document"
-community: "pytest.ini"
-location: "L58"
+community: "egress_filter.py"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pytestini
+  - community/egress_filterpy
 ---
 
 # Related Notes
 
 ## Connections
-- [[pytest.ini_1]] - `contains` [EXTRACTED]
+- [[AGENTSHROUD_CONFIG_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pytestini
+#graphify/document #graphify/EXTRACTED #community/egress_filterpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "TestGroupRoleResolver"
+community: "GroupRoleResolver"
 location: "L122"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestGroupRoleResolver
+  - community/GroupRoleResolver
 ---
 
 # Read-only user resolves to GroupRole.READ_ONLY.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_readonly_user_resolves_to_readonly_role()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestGroupRoleResolver
+#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver

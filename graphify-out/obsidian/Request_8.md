@@ -1,23 +1,16 @@
 ---
-source_file: "gateway/tests/test_a2a_integration.py"
+source_file: ""
 type: "code"
-community: "A2APolicyEngine"
-location: "L61"
+community: "installer.py"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/A2APolicyEngine
+  - graphify/EXTRACTED
+  - community/installerpy
 ---
 
 # Request
 
 ## Connections
-- [[dot-_handle()_1]] - `references` [EXTRACTED]
-- [[A2APolicyConfig_1]] - `uses` [INFERRED]
-- [[A2APolicyEngine_3]] - `uses` [INFERRED]
-- [[A2AProxy_1]] - `uses` [INFERRED]
-- [[HermesA2AForwarder]] - `uses` [INFERRED]
-- [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[installer_page()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/installerpy

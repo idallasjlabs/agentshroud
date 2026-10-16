@@ -12,6 +12,6 @@ tags:
 # Role-Based Access Control Manager.
 
 ## Connections
-- [[RBACManager_2]] - `rationale_for` [EXTRACTED]
+- [[RBACManager_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Action

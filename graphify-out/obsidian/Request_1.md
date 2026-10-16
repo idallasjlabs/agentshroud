@@ -1,24 +1,37 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: ""
 type: "code"
-community: "soc/router.py"
-location: "L2717"
+community: "LLMProxy.proxy_messages (non-streaming)"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/soc/routerpy
+  - graphify/EXTRACTED
+  - community/LLMProxyproxy_messages_non-streaming
 ---
 
 # Request
 
 ## Connections
-- [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult_1]] - `uses` [INFERRED]
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller_1]] - `uses` [INFERRED]
-- [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface_1]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
-- [[soc_dashboard()]] - `references` [EXTRACTED]
+- [[auth_dep()]] - `references` [EXTRACTED]
+- [[cors_middleware()]] - `references` [EXTRACTED]
+- [[create_report()]] - `references` [EXTRACTED]
+- [[get_my_permissions()]] - `references` [EXTRACTED]
+- [[get_user_permissions()]] - `references` [EXTRACTED]
+- [[global_exception_handler()]] - `references` [EXTRACTED]
+- [[google_api_proxy]] - `references` [EXTRACTED]
+- [[hermes_dashboard_proxy (hermes-dashboard{path} HTTP reverse proxy)]] - `references` [EXTRACTED]
+- [[limit_request_body()]] - `references` [EXTRACTED]
+- [[list_users_and_roles()]] - `references` [EXTRACTED]
+- [[llm_api_proxy (v1{path} LLM reverse proxy route)]] - `references` [EXTRACTED]
+- [[llm_api_v1_prefix_alias]] - `references` [EXTRACTED]
+- [[llm_openai_chat_alias]] - `references` [EXTRACTED]
+- [[log_requests()]] - `references` [EXTRACTED]
+- [[mcp_proxy_endpoint()]] - `references` [EXTRACTED]
+- [[mcp_result_endpoint()]] - `references` [EXTRACTED]
+- [[ollama_api_proxy]] - `references` [EXTRACTED]
+- [[receive_security_alert()]] - `references` [EXTRACTED]
+- [[security_headers_middleware()]] - `references` [EXTRACTED]
+- [[set_user_role()]] - `references` [EXTRACTED]
+- [[slack_api_proxy()]] - `references` [EXTRACTED]
+- [[telegram_api_proxy (telegram-api{path})]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming

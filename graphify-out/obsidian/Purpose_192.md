@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/api.py.md"
+source_file: ".agents/skills/i-cicd/README.md"
 type: "document"
-community: "api.py"
-location: "L16"
+community: "CI/CD Pipeline Advisor (README)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/apipy
+  - community/CI/CD_Pipeline_Advisor_README
 ---
 
 # Purpose
 
 ## Connections
-- [[api.py_2]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/apipy
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README

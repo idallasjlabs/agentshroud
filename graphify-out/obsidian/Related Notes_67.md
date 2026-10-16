@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md"
+source_file: "docs/vault/08 - Runbooks/Health Checks.md"
 type: "document"
-community: "Egress Filter Errors"
-location: "L99"
+community: "Health Checks"
+location: "L173"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Egress_Filter_Errors
+  - community/Health_Checks
 ---
 
 # Related Notes
 
 ## Connections
-- [[Egress Filter Errors_2]] - `contains` [EXTRACTED]
+- [[Health Checks_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Egress_Filter_Errors
+#graphify/document #graphify/EXTRACTED #community/Health_Checks

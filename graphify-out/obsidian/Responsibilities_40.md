@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
 type: "document"
-community: "security.py"
+community: "mcp_permissions.py"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/securitypy
+  - community/mcp_permissionspy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[security.py_2]] - `contains` [EXTRACTED]
+- [[mcp_permissions.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/securitypy
+#graphify/document #graphify/EXTRACTED #community/mcp_permissionspy

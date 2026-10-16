@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/trivy.md"
+source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "Trivy"
-location: "L15"
+community: "Error Index.md"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Trivy
+  - community/Error_Indexmd
 ---
 
 # Purpose
 
 ## Connections
-- [[Trivy]] - `contains` [EXTRACTED]
+- [[spaCy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Trivy
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

@@ -1,23 +1,21 @@
 ---
-source_file: "gateway/security/egress_approval.py"
+source_file: "gateway/soc/models.py"
 type: "code"
-community: "TestEgressApprovalQueue"
-location: "L29"
+community: "test_soc_realtime_coverage.py"
+location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/test_soc_realtime_coveragepy
 ---
 
 # RiskLevel
 
 ## Connections
-- [[dot-_assess_risk()]] - `references` [EXTRACTED]
-- [[Enum_1]] - `inherits` [EXTRACTED]
-- [[Risk assessment levels for egress requests.]] - `rationale_for` [EXTRACTED]
-- [[TestEgressApprovalAPI]] - `uses` [INFERRED]
-- [[TestEgressApprovalQueue]] - `uses` [INFERRED]
-- [[egress_approval.py]] - `contains` [EXTRACTED]
-- [[test_egress_approval.py]] - `imports` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[socmodels.py]] - `contains` [EXTRACTED]
+- [[str_3]] - `inherits` [EXTRACTED]
+- [[test_soc_egress.py]] - `imports` [EXTRACTED]
+- [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

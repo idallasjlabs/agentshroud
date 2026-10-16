@@ -19,7 +19,7 @@ tags:
 - [[dot-is_privilege_escalation()]] - `references` [EXTRACTED]
 - [[dot-set_user_role()]] - `references` [EXTRACTED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
-- [[Role_91]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[Role_22]] - `uses` [INFERRED]
+- [[ToolTier]] - `uses` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/Action

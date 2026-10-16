@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md"
 type: "document"
-community: "TELEGRAM_API_BASE_URL"
-location: "L39"
+community: "Egress Filter Errors"
+location: "L99"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TELEGRAM_API_BASE_URL
+  - community/Egress_Filter_Errors
 ---
 
 # Related Notes
 
 ## Connections
-- [[TELEGRAM_API_BASE_URL_1]] - `contains` [EXTRACTED]
+- [[Egress Filter Errors_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TELEGRAM_API_BASE_URL
+#graphify/document #graphify/EXTRACTED #community/Egress_Filter_Errors

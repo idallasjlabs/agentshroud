@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[RBACConfig_4]] - `uses` [INFERRED]
-- [[Role_91]] - `uses` [INFERRED]
+- [[Role_22]] - `uses` [INFERRED]
 - [[_make_m6_caller()]] - `references` [EXTRACTED]
 - [[_make_owner_caller()]] - `references` [EXTRACTED]
 

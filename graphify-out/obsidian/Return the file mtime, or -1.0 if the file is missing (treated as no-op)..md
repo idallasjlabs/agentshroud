@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "load_config"
+community: "ApprovalQueueConfig"
 location: "L776"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/load_config
+  - community/ApprovalQueueConfig
 ---
 
 # Return the file mtime, or -1.0 if the file is missing (treated as no-op).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_default_mtime()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/load_config
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

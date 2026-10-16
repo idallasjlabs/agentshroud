@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/soc/auth.py"
-type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L141"
+source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
+type: "document"
+community: "hermes/skills/i-cr/SKILL.md"
+location: "L7"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # Role
 
 ## Connections
-- [[dot-__init__()_58]] - `references` [EXTRACTED]
+- [[Skill Technical Writer (TW)_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

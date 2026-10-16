@@ -12,9 +12,9 @@ tags:
 # RBACConfig
 
 ## Connections
-- [[dot-__init__()_88]] - `references` [EXTRACTED]
+- [[dot-__init__()_62]] - `references` [EXTRACTED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
-- [[Role_91]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[Role_22]] - `uses` [INFERRED]
+- [[ToolTier]] - `uses` [INFERRED]
 
 #graphify/code #graphify/INFERRED #community/Action

@@ -12,7 +12,7 @@ tags:
 # SSHConfig
 
 ## Connections
-- [[dot-__init__()_155]] - `references` [EXTRACTED]
+- [[dot-__init__()_20]] - `references` [EXTRACTED]
 - [[SSHConfig_2]] - `uses` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

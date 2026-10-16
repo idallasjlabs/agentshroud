@@ -12,6 +12,6 @@ tags:
 # Request for human approval of a sensitive action      Submitted by an agent when
 
 ## Connections
-- [[ApprovalRequest_4]] - `rationale_for` [EXTRACTED]
+- [[ApprovalRequest_5]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

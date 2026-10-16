@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[RBACConfig_4]] - `uses` [INFERRED]
-- [[Role_91]] - `uses` [INFERRED]
+- [[Role_22]] - `uses` [INFERRED]
 - [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[ToolACLConfig]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
-- [[_make_rbac()]] - `references` [EXTRACTED]
+- [[_make_rbac()_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/RBACConfig

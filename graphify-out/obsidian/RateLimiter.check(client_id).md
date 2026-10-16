@@ -12,6 +12,6 @@ tags:
 # RateLimiter.check(client_id)
 
 ## Connections
-- [[Function Details_42]] - `contains` [EXTRACTED]
+- [[Function Details]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/authpy

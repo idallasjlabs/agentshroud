@@ -18,9 +18,9 @@ tags:
 - [[Health Checks]] - `contains` [EXTRACTED]
 - [[Key Ports]] - `contains` [EXTRACTED]
 - [[Kill Switch]] - `contains` [EXTRACTED]
-- [[Logs_1]] - `contains` [EXTRACTED]
-- [[Quick Reference_1]] - `contains` [EXTRACTED]
-- [[Related Notes_18]] - `contains` [EXTRACTED]
+- [[Logs]] - `contains` [EXTRACTED]
+- [[Quick Reference]] - `contains` [EXTRACTED]
+- [[Related Notes_17]] - `contains` [EXTRACTED]
 - [[Security Mode Toggle]] - `contains` [EXTRACTED]
 - [[Start  Stop]] - `contains` [EXTRACTED]
 

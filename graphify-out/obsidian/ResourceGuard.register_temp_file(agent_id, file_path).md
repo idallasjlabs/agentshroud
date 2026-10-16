@@ -12,6 +12,6 @@ tags:
 # ResourceGuard.register_temp_file(agent_id, file_path)
 
 ## Connections
-- [[Function Details_7]] - `contains` [EXTRACTED]
+- [[Function Details_8]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

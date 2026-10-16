@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "RBACConfig"
+community: "GroupConfig"
 location: "L168"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/GroupConfig
 ---
 
 # Return the effective collab_mode for a user.          Resolution order:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_user_collab_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/GroupConfig

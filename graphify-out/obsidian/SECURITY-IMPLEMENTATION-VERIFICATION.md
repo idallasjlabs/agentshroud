@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "document"
-community: "Git History Purge Plan"
+community: "AgentShroud Security Value Proposition - Revised"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Git_History_Purge_Plan
+  - community/AgentShroud_Security_Value_Proposition_-_Revised
 ---
 
 # SECURITY-IMPLEMENTATION-VERIFICATION.md
@@ -17,6 +17,6 @@ tags:
 - [[Security Implementation Verification]] - `contains` [EXTRACTED]
 - [[Ultra-Conservative Credential Display Policy]] - `references` [EXTRACTED]
 - [[VERIFICATION_RESULTS]] - `conceptually_related_to` [AMBIGUOUS]
-- [[sanitizer.py_2]] - `references` [EXTRACTED]
+- [[sanitizer.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Git_History_Purge_Plan
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_Revised

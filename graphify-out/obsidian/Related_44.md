@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
 type: "document"
-community: "canary.py"
-location: "L75"
+community: "security.py"
+location: "L79"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/canarypy
+  - community/securitypy
 ---
 
 # Related
 
 ## Connections
-- [[canary.py_2]] - `contains` [EXTRACTED]
+- [[security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/canarypy
+#graphify/document #graphify/EXTRACTED #community/securitypy

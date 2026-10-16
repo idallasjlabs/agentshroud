@@ -1,8 +1,8 @@
 ---
-source_file: "docs/vault/00 - START HERE/System Overview.md"
+source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
 community: "main.py.md"
-location: "L114"
+location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # Related Notes
 
 ## Connections
-- [[AgentShroud — System Overview]] - `contains` [EXTRACTED]
+- [[Architecture Overview_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mainpymd

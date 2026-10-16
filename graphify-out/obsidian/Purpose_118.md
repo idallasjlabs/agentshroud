@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
+source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "sanitizer.py"
-location: "L12"
+community: "test_security.py"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sanitizerpy
+  - community/test_securitypy
 ---
 
 # Purpose
 
 ## Connections
-- [[sanitizer.py_1]] - `contains` [EXTRACTED]
+- [[python-jose_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sanitizerpy
+#graphify/document #graphify/EXTRACTED #community/test_securitypy

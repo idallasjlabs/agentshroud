@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/03 - Configuration/pytest.ini.md"
+source_file: "docker/config/hermes/skills/i-cicd/README.md"
 type: "document"
-community: "pytest.ini"
-location: "L15"
+community: "CI/CD Pipeline Advisor (README)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pytestini
+  - community/CI/CD_Pipeline_Advisor_README
 ---
 
 # Purpose
 
 ## Connections
-- [[pytest.ini_1]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pytestini
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README

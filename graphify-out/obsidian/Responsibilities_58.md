@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/api.py.md"
+source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
 type: "document"
-community: "api.py"
-location: "L20"
+community: "ssh_proxy.py"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/apipy
+  - community/ssh_proxypy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[api.py_2]] - `contains` [EXTRACTED]
+- [[ssh_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/apipy
+#graphify/document #graphify/EXTRACTED #community/ssh_proxypy

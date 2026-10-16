@@ -15,9 +15,9 @@ tags:
 - [[PrivacyPolicy]] - `uses` [INFERRED]
 - [[PrivacyPolicyEnforcer]] - `uses` [INFERRED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
-- [[Role_91]] - `uses` [INFERRED]
+- [[Role_22]] - `uses` [INFERRED]
 - [[ServicePrivacy]] - `uses` [INFERRED]
 - [[TeamsConfig_2]] - `uses` [INFERRED]
-- [[_make_rbac()_1]] - `references` [EXTRACTED]
+- [[_make_rbac()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/RBACConfig

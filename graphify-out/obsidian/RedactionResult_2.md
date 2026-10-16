@@ -15,8 +15,8 @@ tags:
 - [[dot-_sanitize_presidio()]] - `references` [EXTRACTED]
 - [[dot-_sanitize_regex()]] - `references` [EXTRACTED]
 - [[dot-sanitize()_3]] - `references` [EXTRACTED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
-- [[RedactionDetail_1]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
+- [[RedactionDetail]] - `uses` [INFERRED]
 - [[RedactionResult_3]] - `uses` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

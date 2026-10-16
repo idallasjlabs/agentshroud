@@ -15,9 +15,9 @@ tags:
 - [[dot-test_ssh_disabled_config()]] - `calls` [EXTRACTED]
 - [[SSHConfig_2]] - `uses` [INFERRED]
 - [[SSHHostConfig]] - `uses` [INFERRED]
-- [[SSHProxy_1]] - `uses` [INFERRED]
+- [[SSHProxy]] - `uses` [INFERRED]
 - [[SSHResult]] - `uses` [INFERRED]
-- [[proxy()_3]] - `references` [EXTRACTED]
+- [[proxy()]] - `references` [EXTRACTED]
 - [[ssh_config()_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/ApprovalQueueConfig

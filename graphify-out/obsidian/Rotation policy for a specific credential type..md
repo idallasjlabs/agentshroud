@@ -12,6 +12,6 @@ tags:
 # Rotation policy for a specific credential type.
 
 ## Connections
-- [[CredentialRotationPolicy]] - `rationale_for` [EXTRACTED]
+- [[CredentialRotationPolicy_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager

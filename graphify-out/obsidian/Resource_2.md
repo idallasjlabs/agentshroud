@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Action"
+community: "MiddlewareManager"
 location: "L48"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Action
+  - community/MiddlewareManager
 ---
 
 # Resource
@@ -14,21 +14,21 @@ tags:
 ## Connections
 - [[dot-_build_permission_matrix()]] - `references` [EXTRACTED]
 - [[dot-check_permission()_1]] - `references` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any]] - `uses` [INFERRED]
+- [[Action_3]] - `uses` [INFERRED]
+- [[Any_63]] - `uses` [INFERRED]
 - [[Any_30]] - `uses` [INFERRED]
-- [[Enum_1]] - `inherits` [EXTRACTED]
-- [[Exception]] - `uses` [INFERRED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[Exception_3]] - `uses` [INFERRED]
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
+- [[RBACManager_2]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
 - [[Resources that can be accessed in the system.]] - `rationale_for` [EXTRACTED]
-- [[Role_91]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler_2]] - `uses` [INFERRED]
+- [[Role_22]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[SimpleNamespace]] - `uses` [INFERRED]
 - [[TestCoerceToWSEventExtra]] - `uses` [INFERRED]
 - [[TestCollaboratorPersistence]] - `uses` [INFERRED]
@@ -53,17 +53,17 @@ tags:
 - [[TestTokenStorePruning]] - `uses` [INFERRED]
 - [[TestVerifyBearer]] - `uses` [INFERRED]
 - [[TestWSSOCEndpoint]] - `uses` [INFERRED]
+- [[ToolTier_1]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
 - [[_FakeBus]] - `uses` [INFERRED]
 - [[_FakeRBAC]] - `uses` [INFERRED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
-- [[middleware.py]] - `imports` [EXTRACTED]
+- [[middleware.py_1]] - `imports` [EXTRACTED]
 - [[rbac.py]] - `contains` [EXTRACTED]
 - [[socauth.py]] - `imports` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
-- [[str_1]] - `inherits` [EXTRACTED]
+- [[str_3]] - `inherits` [EXTRACTED]
 - [[test_rbac.py]] - `imports` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Action
+#graphify/code #graphify/INFERRED #community/MiddlewareManager

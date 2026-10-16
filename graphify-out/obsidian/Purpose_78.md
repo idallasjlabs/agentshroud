@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
+source_file: "docker/config/hermes/skills/i-pm/README.md"
 type: "document"
-community: "http_proxy.py"
-location: "L12"
+community: "Project Management (README)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/http_proxypy
+  - community/Project_Management_README
 ---
 
 # Purpose
 
 ## Connections
-- [[http_proxy.py_1]] - `contains` [EXTRACTED]
+- [[Project Management (PM)_1]] - `contains` [EXTRACTED]
+- [[Project Management (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/http_proxypy
+#graphify/document #graphify/EXTRACTED #community/Project_Management_README

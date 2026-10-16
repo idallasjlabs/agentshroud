@@ -1,8 +1,8 @@
 ---
-source_file: "docs/vault/00 - START HERE/Quick Reference.md"
+source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "document"
 community: "main.py.md"
-location: "L176"
+location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # Related Notes
 
 ## Connections
-- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
+- [[AgentShroud — System Overview]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mainpymd

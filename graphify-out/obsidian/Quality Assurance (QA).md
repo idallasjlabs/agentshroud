@@ -12,9 +12,9 @@ tags:
 # Quality Assurance (QA)
 
 ## Connections
-- [[Purpose_56]] - `contains` [EXTRACTED]
+- [[Purpose_58]] - `contains` [EXTRACTED]
 - [[Related Skills_44]] - `contains` [EXTRACTED]
-- [[Usage_47]] - `contains` [EXTRACTED]
+- [[Usage_48]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-qaREADME]] - `contains` [EXTRACTED]
 

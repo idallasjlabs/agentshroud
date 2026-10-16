@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "rationale"
-community: ".inspect_tool_call"
+community: "MCPInspector"
 location: "L279"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/inspect_tool_call
+  - community/MCPInspector
 ---
 
 # Scan a single string for all threat types.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_scan_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/inspect_tool_call
+#graphify/rationale #graphify/EXTRACTED #community/MCPInspector

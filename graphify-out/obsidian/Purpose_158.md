@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
+source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
 type: "document"
-community: "canary.py"
-location: "L12"
+community: "mcp-proxy-wrapper.js"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/canarypy
+  - community/mcp-proxy-wrapperjs
 ---
 
 # Purpose
 
 ## Connections
-- [[canary.py_2]] - `contains` [EXTRACTED]
+- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/canarypy
+#graphify/document #graphify/EXTRACTED #community/mcp-proxy-wrapperjs

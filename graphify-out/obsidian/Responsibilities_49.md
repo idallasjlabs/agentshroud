@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
 type: "document"
-community: "config.py"
+community: "web_proxy.py"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/configpy
+  - community/web_proxypy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[config.py_1]] - `contains` [EXTRACTED]
+- [[web_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/configpy
+#graphify/document #graphify/EXTRACTED #community/web_proxypy

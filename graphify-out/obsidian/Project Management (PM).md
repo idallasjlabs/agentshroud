@@ -12,9 +12,9 @@ tags:
 # Project Management (PM)
 
 ## Connections
-- [[Purpose_53]] - `contains` [EXTRACTED]
+- [[Purpose_55]] - `contains` [EXTRACTED]
 - [[Related Skills_41]] - `contains` [EXTRACTED]
-- [[Usage_44]] - `contains` [EXTRACTED]
+- [[Usage_45]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-pmREADME]] - `contains` [EXTRACTED]
 

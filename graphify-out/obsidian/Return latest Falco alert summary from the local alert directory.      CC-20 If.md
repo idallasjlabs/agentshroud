@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "get_falco_summary"
+community: "test_security_toolchain.py"
 location: "L697"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/get_falco_summary
+  - community/test_security_toolchainpy
 ---
 
 # Return latest Falco alert summary from the local alert directory.      CC-20: If
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_falco_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/get_falco_summary
+#graphify/rationale #graphify/EXTRACTED #community/test_security_toolchainpy

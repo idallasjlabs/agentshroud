@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
 type: "document"
-community: "main.py"
-location: "L464"
+community: "TrustManager"
+location: "L110"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpy
+  - community/TrustManager
 ---
 
 # Related
 
 ## Connections
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[TrustManager_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpy
+#graphify/document #graphify/EXTRACTED #community/TrustManager
