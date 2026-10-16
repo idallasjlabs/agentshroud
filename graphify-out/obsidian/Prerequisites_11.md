@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/himalaya/SKILL.md"
+source_file: "docs/operations/linux.md"
 type: "document"
-community: "Common Operations"
-location: "L34"
+community: "Deploying AgentShroud on Linux (x86_64 / aarch64)"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Common_Operations
+  - community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Himalaya Email CLI]] - `contains` [EXTRACTED]
+- [[Deploying AgentShroud on Linux (x86_64  aarch64)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Common_Operations
+#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64

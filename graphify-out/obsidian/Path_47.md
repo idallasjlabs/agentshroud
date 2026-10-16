@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "_age"
-location: "L41"
+community: "UserSessionManager"
+location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_age
+  - community/UserSessionManager
 ---
 
 # Path
 
 ## Connections
-- [[_age()]] - `references` [EXTRACTED]
-- [[_w()]] - `references` [EXTRACTED]
+- [[dot-__init__()_177]] - `references` [EXTRACTED]
+- [[dot-from_dict()_8]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_age
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

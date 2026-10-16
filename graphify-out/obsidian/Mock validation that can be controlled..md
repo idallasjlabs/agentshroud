@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "MockValidator"
+community: "KeyRotationManager"
 location: "L36"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MockValidator
+  - community/KeyRotationManager
 ---
 
 # Mock validation that can be controlled.
 
 ## Connections
-- [[dot-validate()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-validate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MockValidator
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager

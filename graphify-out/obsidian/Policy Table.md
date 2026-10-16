@@ -12,6 +12,6 @@ tags:
 # Policy Table
 
 ## Connections
-- [[Decision_3]] - `contains` [EXTRACTED]
+- [[Decision_4]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy

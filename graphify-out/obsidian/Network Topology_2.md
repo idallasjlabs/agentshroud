@@ -1,19 +1,22 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Network Topology.md"
 type: "document"
-community: "Network Topology"
-location: "L1"
+community: "`SecurityPipeline`"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Network_Topology
+  - community/SecurityPipeline
 ---
 
-# Network Topology.md
+# Network Topology
 
 ## Connections
-- [[Bot Network Isolation Design]] - `rationale_for` [EXTRACTED]
-- [[Full System Flowchart]] - `references` [EXTRACTED]
-- [[Network Topology_3]] - `contains` [EXTRACTED]
+- [[Container Network Diagram]] - `contains` [EXTRACTED]
+- [[Hostname Resolution]] - `contains` [EXTRACTED]
+- [[Network Security Notes]] - `contains` [EXTRACTED]
+- [[Network Topology_1]] - `contains` [EXTRACTED]
+- [[Related Notes_30]] - `contains` [EXTRACTED]
+- [[Traffic Routing]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Network_Topology
+#graphify/document #graphify/EXTRACTED #community/SecurityPipeline

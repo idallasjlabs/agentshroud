@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "rationale"
-community: "CollaboratorActivityTracker"
+community: "test_collaborator_tracker.py"
 location: "L194"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CollaboratorActivityTracker
+  - community/test_collaborator_trackerpy
 ---
 
 # Mirror activity into workspace contributor logs used by daily digests.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_append_contributor_log()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CollaboratorActivityTracker
+#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy

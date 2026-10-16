@@ -1,19 +1,18 @@
 ---
-source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "gen.py"
-location: "L22"
+community: "_age"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/genpy
+  - community/_age
 ---
 
 # Path
 
 ## Connections
-- [[default_out_dir()]] - `references` [EXTRACTED]
-- [[main()_18]] - `calls` [EXTRACTED]
-- [[write_gallery()]] - `references` [EXTRACTED]
+- [[_age()]] - `references` [EXTRACTED]
+- [[_w()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/genpy
+#graphify/code #graphify/EXTRACTED #community/_age

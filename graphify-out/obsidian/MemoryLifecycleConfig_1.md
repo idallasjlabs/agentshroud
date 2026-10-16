@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/memory_config.py"
 type: "code"
-community: "lifespan.py"
+community: "MiddlewareManager"
 location: "L48"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/lifespanpy
+  - community/MiddlewareManager
 ---
 
 # MemoryLifecycleConfig
 
 ## Connections
-- [[dot-setup_method()_9]] - `calls` [EXTRACTED]
-- [[Any_28]] - `uses` [INFERRED]
+- [[dot-setup_method()_4]] - `calls` [EXTRACTED]
+- [[Any_2]] - `uses` [INFERRED]
 - [[Configuration for memory lifecycle management.]] - `rationale_for` [EXTRACTED]
 - [[ContentThreat]] - `uses` [INFERRED]
 - [[ContentThreatType]] - `uses` [INFERRED]
 - [[MemoryLifecycleConfig]] - `uses` [INFERRED]
 - [[MemoryLifecycleManager]] - `uses` [INFERRED]
-- [[Path_23]] - `uses` [INFERRED]
+- [[Path_2]] - `uses` [INFERRED]
 - [[RetentionAction]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]
@@ -31,4 +31,4 @@ tags:
 - [[memory_lifecycle.py]] - `imports` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/lifespanpy
+#graphify/code #graphify/INFERRED #community/MiddlewareManager

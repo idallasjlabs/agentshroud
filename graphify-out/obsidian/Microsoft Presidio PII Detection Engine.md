@@ -11,6 +11,6 @@ tags:
 # Microsoft Presidio PII Detection Engine
 
 ## Connections
-- [[PII Sanitizer_2]] - `implements` [EXTRACTED]
+- [[PII Sanitizer_1]] - `implements` [EXTRACTED]
 
 #graphify/concept #graphify/EXTRACTED #community/agentshroud-ieee-papermd

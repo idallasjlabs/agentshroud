@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
+source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "The 8D Investigation Process"
-location: "L16"
+community: "AgentShroud Deployment Architecture"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process
+  - community/AgentShroud_Deployment_Architecture
 ---
 
 # Overview
 
 ## Connections
-- [[8D Root Cause Analysis — Data-Driven Control System Investigation_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Deployment Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture

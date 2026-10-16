@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/per-agent-isolation.md"
+source_file: "docs/ssh-capability.md"
 type: "document"
-community: "Per-Agent Container Isolation Architecture"
+community: "SSH Capability Architecture Document"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Per-Agent_Container_Isolation_Architecture
+  - community/SSH_Capability_Architecture_Document
 ---
 
 # Overview
 
 ## Connections
-- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
+- [[SSH Capability Architecture Document]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Per-Agent_Container_Isolation_Architecture
+#graphify/document #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document

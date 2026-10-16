@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[BaseModel]] - `inherits` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[email_send_owner()]] - `references` [EXTRACTED]
 - [[forward.py]] - `contains` [EXTRACTED]
 

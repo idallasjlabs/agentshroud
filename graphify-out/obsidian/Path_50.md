@@ -1,25 +1,19 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "GitGuard"
-location: "L219"
+community: "CompetitiveIntelReport"
+location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/CompetitiveIntelReport
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_159]] - `calls` [EXTRACTED]
-- [[dot-_analyze_file_content()]] - `references` [EXTRACTED]
-- [[dot-_analyze_script_file()]] - `references` [EXTRACTED]
-- [[dot-_quarantine_suspicious_files()]] - `calls` [EXTRACTED]
-- [[dot-_scan_git_hooks()]] - `references` [EXTRACTED]
-- [[dot-_scan_package_json()]] - `references` [EXTRACTED]
-- [[dot-_scan_pyproject_toml()]] - `references` [EXTRACTED]
-- [[dot-_scan_setup_py()]] - `references` [EXTRACTED]
-- [[dot-scan_git_repository()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_180]] - `references` [EXTRACTED]
+- [[dot-_load_latest_file()]] - `references` [EXTRACTED]
+- [[dot-save()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GitGuard
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

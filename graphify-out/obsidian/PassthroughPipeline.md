@@ -12,8 +12,8 @@ tags:
 # PassthroughPipeline
 
 ## Connections
-- [[dot-_make_proxy()_2]] - `calls` [EXTRACTED]
-- [[dot-process_inbound()_8]] - `method` [EXTRACTED]
+- [[dot-_make_proxy()_5]] - `calls` [EXTRACTED]
+- [[dot-process_inbound()_9]] - `method` [EXTRACTED]
 - [[dot-test_allowed_collaborator_model_command_with_mention_is_handled_locally()]] - `calls` [EXTRACTED]
 - [[dot-test_blocked_command_is_quarantined()]] - `calls` [EXTRACTED]
 - [[dot-test_blocked_command_uppercase_is_quarantined()]] - `calls` [EXTRACTED]
@@ -220,7 +220,7 @@ tags:
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[Pipeline that allows everything.]] - `rationale_for` [EXTRACTED]
 - [[RateLimiter_1]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

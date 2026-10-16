@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "AgentRegistry"
+community: "AlertDispatcher"
 location: "L45"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AgentRegistry
+  - community/AlertDispatcher
 ---
 
 # PatternRule
 
 ## Connections
-- [[dot-__init__()_185]] - `references` [EXTRACTED]
+- [[dot-__init__()_86]] - `references` [EXTRACTED]
 - [[dot-test_custom_pattern()]] - `calls` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestDriftDetector]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[prompt_guard.py]] - `contains` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AgentRegistry
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

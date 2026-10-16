@@ -12,6 +12,6 @@ tags:
 # POST /mcp/proxy without auth should return 401.
 
 ## Connections
-- [[dot-test_requires_auth()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-test_requires_auth()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TestMCPProxyEndpoint

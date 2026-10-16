@@ -12,6 +12,6 @@ tags:
 # Optional / Runtime
 
 ## Connections
-- [[Gateway Container (`agentshroud-gateway`)_1]] - `contains` [EXTRACTED]
+- [[Gateway Container (`agentshroud-gateway`)]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/4_Environment_Variables

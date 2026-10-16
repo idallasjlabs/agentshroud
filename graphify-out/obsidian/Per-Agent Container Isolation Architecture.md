@@ -12,12 +12,12 @@ tags:
 # Per-Agent Container Isolation Architecture
 
 ## Connections
-- [[Architecture_12]] - `contains` [EXTRACTED]
+- [[Architecture_10]] - `contains` [EXTRACTED]
 - [[Container Configuration]] - `contains` [EXTRACTED]
 - [[Design Principles]] - `contains` [EXTRACTED]
 - [[Docker Compose Template]] - `contains` [EXTRACTED]
 - [[Future Enhancements_2]] - `contains` [EXTRACTED]
-- [[Overview_24]] - `contains` [EXTRACTED]
+- [[Overview_25]] - `contains` [EXTRACTED]
 - [[Per-Agent Audit Trails]] - `contains` [EXTRACTED]
 - [[Request Routing]] - `contains` [EXTRACTED]
 - [[Security Verification_1]] - `contains` [EXTRACTED]

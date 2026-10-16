@@ -1,18 +1,17 @@
 ---
-source_file: "scripts/export-telegram-history.py"
+source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "export_bot"
-location: "L101"
+community: "test_security_toolchain.py"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export_bot
+  - community/test_security_toolchainpy
 ---
 
 # Path
 
 ## Connections
-- [[export()]] - `references` [EXTRACTED]
-- [[main()_26]] - `calls` [EXTRACTED]
+- [[read_alerts()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export_bot
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

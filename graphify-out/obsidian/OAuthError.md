@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "OAuthSecurityValidator"
+community: "AlertDispatcher"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OAuthSecurityValidator
+  - community/AlertDispatcher
 ---
 
 # OAuthError
@@ -23,6 +23,6 @@ tags:
 - [[TestPKCE]] - `uses` [INFERRED]
 - [[TestRedirectURI]] - `uses` [INFERRED]
 - [[TestStateValidation]] - `uses` [INFERRED]
-- [[oauth_security.py_2]] - `contains` [EXTRACTED]
+- [[oauth_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

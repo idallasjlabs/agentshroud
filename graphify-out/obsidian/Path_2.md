@@ -1,22 +1,21 @@
 ---
-source_file: "gateway/skills/scan.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Recommendation"
-location: "L42"
+community: "MiddlewareManager"
+location: "L75"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Recommendation
+  - graphify/EXTRACTED
+  - community/MiddlewareManager
 ---
 
 # Path
 
 ## Connections
-- [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_4]] - `uses` [INFERRED]
-- [[SkillGuard_1]] - `uses` [INFERRED]
-- [[SkillsManifest]] - `uses` [INFERRED]
-- [[_build_tree()]] - `references` [EXTRACTED]
-- [[main()_2]] - `calls` [EXTRACTED]
+- [[dot-__init__()_21]] - `references` [EXTRACTED]
+- [[dot-archive_file()]] - `references` [EXTRACTED]
+- [[dot-validate_memory_write()]] - `references` [EXTRACTED]
+- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
+- [[run()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Recommendation
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

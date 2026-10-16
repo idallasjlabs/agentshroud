@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "rationale"
-community: "lifespan.py"
+community: "MiddlewareManager"
 location: "L1045"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/MiddlewareManager
 ---
 
 # # NOTE: Gateway-side Slack Socket Mode listener removed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[lifespan.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

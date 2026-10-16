@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/intel_report.py"
+source_file: "scripts/export-telegram-history.py"
 type: "code"
-community: "api.py"
-location: "L205"
+community: "export_bot"
+location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/export_bot
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_132]] - `references` [EXTRACTED]
-- [[dot-_load_latest_file()]] - `references` [EXTRACTED]
-- [[dot-save()_2]] - `references` [EXTRACTED]
+- [[export()]] - `references` [EXTRACTED]
+- [[main()_22]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/export_bot

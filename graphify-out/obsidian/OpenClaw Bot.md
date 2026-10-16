@@ -1,17 +1,16 @@
 ---
-source_file: "CHANGELOG.md"
+source_file: "README.md"
 type: "concept"
-community: "Hermes Cron Jobs Reference & Recreation Guide"
-location: "## [1.1.0]"
+community: "AgentShroud™ README"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+  - community/AgentShroud_README
 ---
 
 # OpenClaw Bot
 
 ## Connections
-- [[AgentShroud Changelog]] - `references` [EXTRACTED]
+- [[AgentShroud™ README]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_README

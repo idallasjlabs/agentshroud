@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "concept"
-community: "sunday-upgrade-apply.sh"
+community: "check-vendor-compat.sh"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/sunday-upgrade-applysh
+  - community/check-vendor-compatsh
 ---
 
 # No-Op Upgrade Gate (7-week silent no-op)
@@ -15,4 +15,4 @@ tags:
 - [[check_noop_gate()]] - `implements` [EXTRACTED]
 - [[discover_upstream_versions.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/sunday-upgrade-applysh
+#graphify/concept #graphify/EXTRACTED #community/check-vendor-compatsh

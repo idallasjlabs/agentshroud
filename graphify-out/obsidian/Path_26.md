@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "UserSessionManager"
-location: "L138"
+community: "parse_clamscan_output"
+location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/parse_clamscan_output
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_82]] - `references` [EXTRACTED]
-- [[dot-from_dict()_5]] - `calls` [EXTRACTED]
+- [[save_report()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

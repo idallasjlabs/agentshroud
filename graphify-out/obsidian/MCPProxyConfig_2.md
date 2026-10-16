@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
 community: "MCPPermissionManager"
-location: "L230"
+location: "L48"
 tags:
   - graphify/code
   - graphify/INFERRED
@@ -12,13 +12,20 @@ tags:
 # MCPProxyConfig
 
 ## Connections
-- [[dot-__init__()_151]] - `references` [EXTRACTED]
-- [[InspectionResult_1]] - `uses` [INFERRED]
+- [[ConnectionPool]] - `uses` [INFERRED]
+- [[HttpSseConnection]] - `uses` [INFERRED]
 - [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector]] - `uses` [INFERRED]
+- [[MCPInspector_1]] - `uses` [INFERRED]
 - [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPProxy_1]] - `uses` [INFERRED]
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]
+- [[MCPToolCall_1]] - `uses` [INFERRED]
+- [[MCPToolConfig]] - `uses` [INFERRED]
+- [[MCPToolResult]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
+- [[PermissionLevel_1]] - `uses` [INFERRED]
+- [[StdioConnection]] - `uses` [INFERRED]
+- [[make_config()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/MCPPermissionManager

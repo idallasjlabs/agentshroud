@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/SETUP_API_KEYS.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "API Keys Setup Guide"
-location: "L9"
+community: "Canvas Skill"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/API_Keys_Setup_Guide
+  - community/Canvas_Skill
 ---
 
 # Overview
 
 ## Connections
-- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
+- [[Canvas Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/Canvas_Skill

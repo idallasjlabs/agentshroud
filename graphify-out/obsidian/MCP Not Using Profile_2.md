@@ -12,6 +12,6 @@ tags:
 # MCP Not Using Profile
 
 ## Connections
-- [[Troubleshooting_15]] - `contains` [EXTRACTED]
+- [[Troubleshooting_18]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

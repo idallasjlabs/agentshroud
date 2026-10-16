@@ -12,6 +12,6 @@ tags:
 # Monitor mode flags but allows — verify difference from enforce.
 
 ## Connections
-- [[dot-test_monitor_mode_allows_everything()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_monitor_mode_allows_everything()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

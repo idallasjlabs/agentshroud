@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/audit_archive.py"
+source_file: "gateway/security/trivy_report.py"
 type: "code"
-community: "archive_old_events"
-location: "L46"
+community: "parse_trivy_output"
+location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/archive_old_events
+  - community/parse_trivy_output
 ---
 
 # Path
 
 ## Connections
-- [[archive_old_events()]] - `references` [EXTRACTED]
-- [[purge_low_value_events()]] - `references` [EXTRACTED]
+- [[_build_image_targets()]] - `calls` [EXTRACTED]
+- [[save_report()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/archive_old_events
+#graphify/code #graphify/EXTRACTED #community/parse_trivy_output

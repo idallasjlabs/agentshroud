@@ -12,6 +12,6 @@ tags:
 # Mock httpx.Response usable as the yield value of a mocked     AsyncClient.stream
 
 ## Connections
-- [[_mock_stream_resp()]] - `rationale_for` [EXTRACTED]
+- [[_mock_stream_resp()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_voice_latency_guardpy

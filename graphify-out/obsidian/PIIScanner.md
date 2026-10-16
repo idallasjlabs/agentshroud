@@ -12,7 +12,7 @@ tags:
 # PIIScanner
 
 ## Connections
-- [[dot-__init__()_107]] - `calls` [EXTRACTED]
+- [[dot-__init__()_14]] - `calls` [EXTRACTED]
 - [[dot-scan()_3]] - `method` [EXTRACTED]
 - [[dot-test_api_key_pattern_detected()]] - `calls` [EXTRACTED]
 - [[dot-test_credit_card_detected()_1]] - `calls` [EXTRACTED]

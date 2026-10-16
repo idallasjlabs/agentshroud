@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-mac/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mac/SKILL.md"
 type: "document"
 community: "Phase 1 — Raw Collection"
 location: "L33"
@@ -22,6 +22,6 @@ tags:
 - [[7. CLI Tools & Utilities (non-.app installs)_2]] - `contains` [EXTRACTED]
 - [[8. Launch Agents & Daemons (background services)_2]] - `contains` [EXTRACTED]
 - [[9. Browser Extensions (optional but useful)_2]] - `contains` [EXTRACTED]
-- [[Discovery Strategy]] - `contains` [EXTRACTED]
+- [[Discovery Strategy_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Phase_1__Raw_Collection

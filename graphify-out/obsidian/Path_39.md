@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
+source_file: "scripts/export-bot-conversations.py"
 type: "code"
-community: "MCPPolicyEngine"
-location: "L73"
+community: "export-bot-conversations.py"
+location: "L60"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/MCPPolicyEngine
+  - graphify/EXTRACTED
+  - community/export-bot-conversationspy
 ---
 
 # Path
 
 ## Connections
-- [[MCPPolicyAction]] - `uses` [INFERRED]
-- [[MCPPolicyConfig_1]] - `uses` [INFERRED]
-- [[MCPPolicyEngine_1]] - `uses` [INFERRED]
-- [[_write()_1]] - `references` [EXTRACTED]
+- [[_docker_read_file()]] - `references` [EXTRACTED]
+- [[export_hermes()]] - `references` [EXTRACTED]
+- [[export_openclaw()]] - `references` [EXTRACTED]
+- [[main()_19]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
-- [[IntelReportStore]] - `uses` [INFERRED]
+- [[IntelReportStore_1]] - `uses` [INFERRED]
 - [[_skills_reload_paths()]] - `references` [EXTRACTED]
 - [[dashboard()]] - `calls` [EXTRACTED]
 - [[dashboard_main()]] - `calls` [EXTRACTED]

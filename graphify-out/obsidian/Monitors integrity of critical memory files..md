@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "lifespan.py"
+community: "MiddlewareManager"
 location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/MiddlewareManager
 ---
 
 # Monitors integrity of critical memory files.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MemoryIntegrityMonitor]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

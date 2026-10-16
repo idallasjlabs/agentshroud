@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/linux.md"
+source_file: "docs/operations/macos.md"
 type: "document"
-community: "Deploying AgentShroud on Linux (x86_64 / aarch64)"
+community: "Deploying AgentShroud on macOS (Apple Silicon / Intel)"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64
+  - community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Deploying AgentShroud on Linux (x86_64  aarch64)]] - `contains` [EXTRACTED]
+- [[Deploying AgentShroud on macOS (Apple Silicon  Intel)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64
+#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel

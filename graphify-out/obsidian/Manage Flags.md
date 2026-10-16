@@ -12,6 +12,6 @@ tags:
 # Manage Flags
 
 ## Connections
-- [[Common Operations]] - `contains` [EXTRACTED]
+- [[Common Operations_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Common_Operations

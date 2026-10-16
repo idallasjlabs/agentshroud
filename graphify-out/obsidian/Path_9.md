@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/proxy/webhook_receiver.py"
+source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "WebhookReceiver"
-location: "L89"
+community: "sync-cve-registry.py"
+location: "L704"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - community/sync-cve-registrypy
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_34]] - `calls` [EXTRACTED]
-- [[dot-_can_create_directory()]] - `references` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
-- [[_get_gmail_app_password()]] - `calls` [EXTRACTED]
+- [[main()_3]] - `calls` [EXTRACTED]
+- [[run_ghsa_sync()]] - `references` [EXTRACTED]
+- [[sync_agent_ghsa()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

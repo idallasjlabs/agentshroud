@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/clamav_scanner.py"
+source_file: "gateway/tests/test_lifespan_prune.py"
 type: "code"
-community: "parse_clamscan_output"
-location: "L145"
+community: "test_collaborator_tracker.py"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_clamscan_output
+  - community/test_collaborator_trackerpy
 ---
 
 # Path
 
 ## Connections
-- [[save_report()_1]] - `references` [EXTRACTED]
+- [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
+- [[_make_md()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

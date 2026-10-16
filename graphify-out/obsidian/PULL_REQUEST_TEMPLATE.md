@@ -1,12 +1,12 @@
 ---
 source_file: ".github/PULL_REQUEST_TEMPLATE.md"
 type: "document"
-community: "AgentShroud Semgrep SAST Configuration"
+community: "egress_filter.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Semgrep_SAST_Configuration
+  - community/egress_filterpy
 ---
 
 # PULL_REQUEST_TEMPLATE.md
@@ -15,7 +15,7 @@ tags:
 - [[AgentShroud Semgrep SAST Configuration]] - `references` [EXTRACTED]
 - [[Checklist]] - `contains` [EXTRACTED]
 - [[IEC 62443 Reference]] - `contains` [EXTRACTED]
-- [[Summary_18]] - `contains` [EXTRACTED]
+- [[Summary_23]] - `contains` [EXTRACTED]
 - [[Type of Change]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Semgrep_SAST_Configuration
+#graphify/document #graphify/EXTRACTED #community/egress_filterpy

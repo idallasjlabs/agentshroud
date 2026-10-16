@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "lifespan.py"
-location: "L65"
+community: "load_config"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/load_config
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_67]] - `references` [EXTRACTED]
-- [[dot-_compute_file_hash()]] - `references` [EXTRACTED]
-- [[dot-_detect_modification_source()]] - `references` [EXTRACTED]
-- [[dot-scan_file()]] - `references` [EXTRACTED]
-- [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
+- [[GatewayConfig_4]] - `uses` [INFERRED]
+- [[_load()]] - `references` [EXTRACTED]
+- [[_write()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/load_config

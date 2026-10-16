@@ -12,6 +12,6 @@ tags:
 # MCPProxyConfig.from_dict(data)
 
 ## Connections
-- [[Function Details_43]] - `contains` [EXTRACTED]
+- [[Function Details_44]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mcp_configpy

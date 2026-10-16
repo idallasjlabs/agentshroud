@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "lifespan.py"
-location: "L75"
+community: "migrate-cve-registry-ghsa.py"
+location: "L472"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/migrate-cve-registry-ghsapy
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_68]] - `references` [EXTRACTED]
-- [[dot-archive_file()]] - `references` [EXTRACTED]
-- [[dot-validate_memory_write()]] - `references` [EXTRACTED]
-- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[gather_advisories()]] - `calls` [EXTRACTED]
+- [[load_snapshot()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

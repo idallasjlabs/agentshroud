@@ -12,10 +12,10 @@ tags:
 # MCPAuditTrail
 
 ## Connections
-- [[dot-__init__()_151]] - `references` [EXTRACTED]
+- [[dot-__init__()_170]] - `references` [EXTRACTED]
 - [[InspectionResult_1]] - `uses` [INFERRED]
 - [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector]] - `uses` [INFERRED]
+- [[MCPInspector_1]] - `uses` [INFERRED]
 - [[MCPPermissionManager_1]] - `uses` [INFERRED]
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]

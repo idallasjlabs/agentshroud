@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-agentsskillsi-oracleREADME]] - `contains` [EXTRACTED]
 - [[dot-agentsskillsi-oracleSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_166]] - `contains` [EXTRACTED]
+- [[Purpose_165]] - `contains` [EXTRACTED]
 - [[Related Skills_108]] - `contains` [EXTRACTED]
-- [[Usage_117]] - `contains` [EXTRACTED]
+- [[Usage_118]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

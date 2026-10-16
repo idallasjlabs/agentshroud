@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AGENTSHROUD_PLAN-RESET-20260222-0912]] - `contains` [EXTRACTED]
-- [[Context_2]] - `contains` [EXTRACTED]
+- [[Context_3]] - `contains` [EXTRACTED]
 - [[Execution Order & Parallelism]] - `contains` [EXTRACTED]
 - [[FINAL Network Lockdown Activation]] - `contains` [EXTRACTED]
 - [[GitHub Workflow Rules]] - `contains` [EXTRACTED]

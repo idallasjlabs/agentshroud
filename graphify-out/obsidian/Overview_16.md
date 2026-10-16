@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
+source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "main.py"
-location: "L13"
+community: "Hermes Agent — Connection Setup"
+location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpy
+  - community/Hermes_Agent__Connection_Setup
 ---
 
 # Overview
 
 ## Connections
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpy
+#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup

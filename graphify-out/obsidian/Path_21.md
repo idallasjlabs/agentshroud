@@ -1,17 +1,24 @@
 ---
-source_file: "gateway/tests/test_generate_cve_page.py"
+source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "_make_cve"
-location: "L249"
+community: "load_config"
+location: "L380"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_cve
+  - community/load_config
 ---
 
 # Path
 
 ## Connections
-- [[dot-_run_generate()]] - `references` [EXTRACTED]
+- [[dot-model_post_init()]] - `calls` [EXTRACTED]
+- [[BotConfig]] - `uses` [INFERRED]
+- [[SSHConfig_2]] - `uses` [INFERRED]
+- [[_default_mtime()]] - `references` [EXTRACTED]
+- [[config_watcher()]] - `references` [EXTRACTED]
+- [[load_config()]] - `references` [EXTRACTED]
+- [[reload_config()]] - `references` [EXTRACTED]
+- [[resolve_config_path()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_cve
+#graphify/code #graphify/EXTRACTED #community/load_config

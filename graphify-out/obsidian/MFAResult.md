@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-verify()_1]] - `references` [EXTRACTED]
-- [[ApprovalQueue]] - `uses` [INFERRED]
+- [[ApprovalQueue_1]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
 - [[Outcome of an MFA verification.      Attributes         allowed True if the ac]] - `rationale_for` [EXTRACTED]
 - [[mfa_guard.py]] - `contains` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "load_config"
+community: "ApprovalQueueConfig"
 location: "L369"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/load_config
+  - community/ApprovalQueueConfig
 ---
 
 # Map agentshroud.yaml entity names to Presidio/internal entity names
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_entity_type_mapping()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/load_config
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

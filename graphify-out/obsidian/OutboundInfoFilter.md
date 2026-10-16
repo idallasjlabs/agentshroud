@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "OutboundInfoFilter"
+community: "AuditChain"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutboundInfoFilter
+  - community/AuditChain
 ---
 
 # OutboundInfoFilter
 
 ## Connections
-- [[dot-__init__()_11]] - `method` [EXTRACTED]
+- [[dot-__init__()_49]] - `method` [EXTRACTED]
 - [[dot-_classify_response_risk()]] - `method` [EXTRACTED]
-- [[dot-_compile_patterns()_1]] - `method` [EXTRACTED]
+- [[dot-_compile_patterns()]] - `method` [EXTRACTED]
 - [[dot-_is_allowed_for_trust()]] - `method` [EXTRACTED]
 - [[dot-filter_response()]] - `method` [EXTRACTED]
 - [[dot-get_stats()_3]] - `method` [EXTRACTED]
-- [[dot-setup_method()_1]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_37]] - `calls` [EXTRACTED]
-- [[dot-test_custom_patterns()_1]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_28]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_11]] - `calls` [EXTRACTED]
+- [[dot-test_custom_patterns()]] - `calls` [EXTRACTED]
 - [[dot-test_initialization_with_config()]] - `calls` [EXTRACTED]
 - [[dot-test_monitor_mode()]] - `calls` [EXTRACTED]
 - [[dot-test_outbound_filter_still_escalates_fabricated_notice()]] - `calls` [EXTRACTED]
@@ -30,14 +30,14 @@ tags:
 - [[Main outbound information filtering engine.      Uses compiled regex patterns to]] - `rationale_for` [EXTRACTED]
 - [[Outbound Information Filter Tests]] - `references` [EXTRACTED]
 - [[OutputCanary]] - `conceptually_related_to` [INFERRED]
-- [[TestAuditChain_1]] - `uses` [INFERRED]
+- [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestContextGuardInPipeline]] - `uses` [INFERRED]
 - [[TestContextIntegrityInPipeline]] - `uses` [INFERRED]
 - [[TestEnvelopeSignerInPipeline]] - `uses` [INFERRED]
 - [[TestFabricatedSecurityNotice]] - `uses` [INFERRED]
 - [[TestInboundPIIOwnerExemption]] - `uses` [INFERRED]
-- [[TestIntegration]] - `uses` [INFERRED]
+- [[TestIntegration_1]] - `uses` [INFERRED]
 - [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
 - [[TestOutboundInfoFilter]] - `uses` [INFERRED]
@@ -51,4 +51,4 @@ tags:
 - [[test_outbound_filter.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/AuditChain

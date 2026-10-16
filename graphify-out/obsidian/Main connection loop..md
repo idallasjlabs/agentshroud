@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "rationale"
-community: "Enum"
+community: "test_soc_realtime_coverage.py"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enum
+  - community/test_soc_realtime_coveragepy
 ---
 
 # Main connection loop.
 
 ## Connections
-- [[dot-run()]] - `rationale_for` [EXTRACTED]
+- [[dot-run()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enum
+#graphify/rationale #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

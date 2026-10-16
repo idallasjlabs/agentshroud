@@ -12,16 +12,16 @@ tags:
 # OpenClaw Setup Guide - agentshroud.ai Bot
 
 ## Connections
-- [[Architecture Overview_2]] - `contains` [EXTRACTED]
+- [[Architecture Overview_1]] - `contains` [EXTRACTED]
 - [[Communication Channels]] - `contains` [EXTRACTED]
 - [[Data Locations]] - `contains` [EXTRACTED]
 - [[Initial Configuration]] - `contains` [EXTRACTED]
-- [[Next Steps_3]] - `contains` [EXTRACTED]
+- [[Next Steps_2]] - `contains` [EXTRACTED]
 - [[OPENCLAW_SETUP]] - `contains` [EXTRACTED]
 - [[OpenClaw Features Now Available]] - `contains` [EXTRACTED]
-- [[Quick Start_5]] - `contains` [EXTRACTED]
-- [[Security Notes_2]] - `contains` [EXTRACTED]
-- [[Troubleshooting_14]] - `contains` [EXTRACTED]
+- [[Quick Start_4]] - `contains` [EXTRACTED]
+- [[Security Notes_1]] - `contains` [EXTRACTED]
+- [[Troubleshooting_13]] - `contains` [EXTRACTED]
 - [[Using OpenClaw]] - `contains` [EXTRACTED]
 - [[What Changed]] - `contains` [EXTRACTED]
 

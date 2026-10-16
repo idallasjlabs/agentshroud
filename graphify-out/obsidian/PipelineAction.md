@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "PipelineAction"
+community: "AuditChain"
 location: "L44"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PipelineAction
+  - community/AuditChain
 ---
 
 # PipelineAction
 
 ## Connections
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
-- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[Enum_1]] - `inherits` [EXTRACTED]
 - [[FilterResult]] - `uses` [INFERRED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[PipelineResult]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
-- [[TestAuditChain_1]] - `uses` [INFERRED]
+- [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestContextGuardInPipeline]] - `uses` [INFERRED]
 - [[TestContextIntegrityInPipeline]] - `uses` [INFERRED]
@@ -55,7 +55,7 @@ tags:
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
 - [[_StubForwarder_1]] - `uses` [INFERRED]
 - [[pipeline.py]] - `contains` [EXTRACTED]
-- [[str_2]] - `inherits` [EXTRACTED]
+- [[str_1]] - `inherits` [EXTRACTED]
 - [[test_clamav_pipeline.py]] - `imports` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
@@ -63,4 +63,4 @@ tags:
 - [[test_telegram_pipeline.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PipelineAction
+#graphify/code #graphify/INFERRED #community/AuditChain

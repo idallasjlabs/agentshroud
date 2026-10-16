@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "rationale"
-community: "Enum"
+community: "test_soc_realtime_coverage.py"
 location: "L27"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enum
+  - community/test_soc_realtime_coveragepy
 ---
 
 # Manages a single /ws/soc client connection.
 
 ## Connections
-- [[SOCWebSocketHandler]] - `rationale_for` [EXTRACTED]
+- [[SOCWebSocketHandler_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enum
+#graphify/rationale #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

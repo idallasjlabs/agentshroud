@@ -12,7 +12,6 @@ tags:
 # OpenClaw sandbox mode set off (named volume vs bind-mount mismatch)
 
 ## Connections
-- [[OpenClaw sandbox provisioning named volume vs required bind-mount]] - `semantically_similar_to` [INFERRED]
 - [[dockerscriptsinit-openclaw-config.sh (baked into OpenClaw image; seeds sandbox mode, runs doctor --fix)]] - `references` [EXTRACTED]
 - [[openclaw service (isolated network only, egress via gateway8181, DOCKER_HOST=socket-proxy)]] - `references` [EXTRACTED]
 

@@ -1,19 +1,20 @@
 ---
-source_file: "scripts/export-email-reports.py"
+source_file: "gateway/security/health_report.py"
 type: "code"
-community: "export_bot"
-location: "L96"
+community: "test_security_toolchain.py"
+location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export_bot
+  - community/test_security_toolchainpy
 ---
 
 # Path
 
 ## Connections
-- [[_report_date()]] - `calls` [EXTRACTED]
-- [[export_bot()]] - `references` [EXTRACTED]
-- [[main()_25]] - `calls` [EXTRACTED]
+- [[generate_report()]] - `references` [EXTRACTED]
+- [[get_trend()]] - `references` [EXTRACTED]
+- [[init_db()]] - `references` [EXTRACTED]
+- [[save_to_history()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export_bot
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

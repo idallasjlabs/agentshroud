@@ -16,7 +16,7 @@ tags:
 - [[AgentShroud Brand Guidelines]] - `contains` [EXTRACTED]
 - [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
 - [[Approved Logo Assets for Media]] - `contains` [EXTRACTED]
-- [[Key Facts_1]] - `contains` [EXTRACTED]
+- [[Key Facts]] - `contains` [EXTRACTED]
 - [[Media Contact]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Press_Kit

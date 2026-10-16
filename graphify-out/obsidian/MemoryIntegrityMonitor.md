@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "lifespan.py"
+community: "MiddlewareManager"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/MiddlewareManager
 ---
 
 # MemoryIntegrityMonitor
 
 ## Connections
-- [[dot-__init__()_103]] - `calls` [EXTRACTED]
-- [[dot-__init__()_67]] - `method` [EXTRACTED]
+- [[dot-__init__()_16]] - `calls` [EXTRACTED]
+- [[dot-__init__()_20]] - `method` [EXTRACTED]
 - [[dot-_compute_file_hash()]] - `method` [EXTRACTED]
 - [[dot-_detect_modification_source()]] - `method` [EXTRACTED]
 - [[dot-_is_in_write_window()]] - `method` [EXTRACTED]
@@ -27,12 +27,12 @@ tags:
 - [[dot-register_expected_write()]] - `method` [EXTRACTED]
 - [[dot-scan_all_monitored_files()]] - `method` [EXTRACTED]
 - [[dot-scan_file()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_8]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_10]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_3]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_5]] - `calls` [EXTRACTED]
 - [[dot-test_integrity_database_persistence()]] - `calls` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[Any_42]] - `uses` [INFERRED]
-- [[Exception_3]] - `uses` [INFERRED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any]] - `uses` [INFERRED]
+- [[Exception]] - `uses` [INFERRED]
 - [[FileIntegrityRecord]] - `references` [EXTRACTED]
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
@@ -41,8 +41,8 @@ tags:
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[ModificationSource]] - `references` [EXTRACTED]
 - [[Monitors integrity of critical memory files.]] - `rationale_for` [EXTRACTED]
-- [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]
 - [[TestMemoryLifecycleManager]] - `uses` [INFERRED]
@@ -54,4 +54,4 @@ tags:
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

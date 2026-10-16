@@ -12,6 +12,6 @@ tags:
 # Parse a single Falco alert.      Args:         raw: Raw Falco alert JSON.      R
 
 ## Connections
-- [[parse_alert()_1]] - `rationale_for` [EXTRACTED]
+- [[parse_alert()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/FalcoAlertWatcher

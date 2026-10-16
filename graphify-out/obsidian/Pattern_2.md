@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/heuristic_classifier.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "HeuristicClassifier"
-location: "L129"
+community: "KeyVault"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/KeyVault
 ---
 
 # Pattern
 
 ## Connections
-- [[dot-_score_signal()]] - `references` [EXTRACTED]
+- [[dot-_compile_patterns()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/code #graphify/EXTRACTED #community/KeyVault

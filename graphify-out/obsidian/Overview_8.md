@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-eightd/SKILL.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "8D Root Cause Analysis — Data-Driven Control System Investigation"
-location: "L16"
+community: "SecureBrowser Skill"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/8D_Root_Cause_Analysis__Data-Driven_Control_System_Investigation
+  - community/SecureBrowser_Skill
 ---
 
 # Overview
 
 ## Connections
-- [[8D Root Cause Analysis — Data-Driven Control System Investigation]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis__Data-Driven_Control_System_Investigation
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

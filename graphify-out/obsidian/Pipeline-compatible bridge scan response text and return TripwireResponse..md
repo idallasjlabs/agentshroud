@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "rationale"
-community: "PIIConfig"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L128"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Pipeline-compatible bridge: scan response text and return TripwireResponse.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-scan_response()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

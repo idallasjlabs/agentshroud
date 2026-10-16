@@ -1,19 +1,17 @@
 ---
-source_file: "scripts/generate_branding_assets.py"
+source_file: "gateway/tests/test_cron_jobs_prompts.py"
 type: "code"
-community: "generate_branding_assets.py"
-location: "L55"
+community: "test_cron_jobs_prompts.py"
+location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/generate_branding_assetspy
+  - community/test_cron_jobs_promptspy
 ---
 
 # Path
 
 ## Connections
-- [[ensure()]] - `references` [EXTRACTED]
-- [[get_font()]] - `calls` [EXTRACTED]
-- [[save()_1]] - `references` [EXTRACTED]
+- [[_load_jobs()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy
+#graphify/code #graphify/EXTRACTED #community/test_cron_jobs_promptspy

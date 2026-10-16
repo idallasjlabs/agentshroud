@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[dot-by_name()]] - `references` [EXTRACTED]
 - [[dot-from_file()]] - `method` [EXTRACTED]
-- [[dot-to_dict()_8]] - `method` [EXTRACTED]
+- [[dot-to_dict()_13]] - `method` [EXTRACTED]
 - [[A single item in the skills manifest.]] - `rationale_for` [EXTRACTED]
-- [[Path_30]] - `uses` [INFERRED]
+- [[Path_54]] - `uses` [INFERRED]
 - [[TestClient_1]] - `uses` [INFERRED]
 - [[TestDeployDryRun]] - `uses` [INFERRED]
 - [[TestDeployManifest]] - `uses` [INFERRED]

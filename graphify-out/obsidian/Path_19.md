@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: "gateway/skills/scan.py"
 type: "code"
-community: "test_security_toolchain.py"
-location: "L66"
+community: "SkillGuard"
+location: "L42"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - graphify/INFERRED
+  - community/SkillGuard
 ---
 
 # Path
 
 ## Connections
-- [[read_alerts()]] - `references` [EXTRACTED]
+- [[Recommendation]] - `uses` [INFERRED]
+- [[ScanResult_4]] - `uses` [INFERRED]
+- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[SkillsManifest]] - `uses` [INFERRED]
+- [[_build_tree()]] - `references` [EXTRACTED]
+- [[main()_10]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/INFERRED #community/SkillGuard

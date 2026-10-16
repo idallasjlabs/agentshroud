@@ -1,22 +1,19 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
 type: "document"
-community: "AGENTSHROUD_MODE"
-location: "L9"
+community: "AgentRegistry"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AGENTSHROUD_MODE
+  - community/AgentRegistry
 ---
 
-# OPENCLAW_DISABLE_HOST_FILESYSTEM
+# OPENCLAW_DISABLE_HOST_FILESYSTEM.md
 
 ## Connections
-- [[Description_3]] - `contains` [EXTRACTED]
-- [[Effect_1]] - `contains` [EXTRACTED]
 - [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - `contains` [EXTRACTED]
-- [[Related Notes_25]] - `contains` [EXTRACTED]
-- [[Set In_2]] - `contains` [EXTRACTED]
-- [[Value_2]] - `contains` [EXTRACTED]
+- [[OPENCLAW_SANDBOX_MODE_1]] - `references` [EXTRACTED]
+- [[agent_isolation.py]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_MODE
+#graphify/document #graphify/EXTRACTED #community/AgentRegistry

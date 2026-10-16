@@ -17,7 +17,7 @@ tags:
 - [[Gateway Password Moved to Docker Secrets]] - `conceptually_related_to` [EXTRACTED]
 - [[Kill Switch (freeze  shutdown  disconnect)]] - `conceptually_related_to` [EXTRACTED]
 - [[NET_RAW Capability Removal]] - `conceptually_related_to` [EXTRACTED]
-- [[Next Steps_4]] - `contains` [EXTRACTED]
+- [[Next Steps_3]] - `contains` [EXTRACTED]
 - [[Phase 3A Security Completion (COMPLETE)]] - `contains` [EXTRACTED]
 - [[Phase 3B.1 Kill Switch (COMPLETE)]] - `contains` [EXTRACTED]
 - [[Re-enable Seccomp Profiles (ARM64 syscalls)]] - `conceptually_related_to` [EXTRACTED]

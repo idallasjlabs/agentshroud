@@ -1,17 +1,17 @@
 ---
-source_file: "README.md"
+source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: "Quickstart"
-location: "L264"
+community: "Common Operations"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quickstart
+  - community/Common_Operations
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Quickstart_1]] - `contains` [EXTRACTED]
+- [[Himalaya Email CLI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quickstart
+#graphify/document #graphify/EXTRACTED #community/Common_Operations

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
+source_file: ".agents/skills/i-mac/SKILL.md"
 type: "document"
-community: "Phase 1 — Raw Collection"
+community: "Mac App Discovery Skill"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_1__Raw_Collection
+  - community/Mac_App_Discovery_Skill
 ---
 
 # Phase 1 — Raw Collection
@@ -22,6 +22,6 @@ tags:
 - [[7. CLI Tools & Utilities (non-.app installs)]] - `contains` [EXTRACTED]
 - [[8. Launch Agents & Daemons (background services)]] - `contains` [EXTRACTED]
 - [[9. Browser Extensions (optional but useful)]] - `contains` [EXTRACTED]
-- [[Discovery Strategy_1]] - `contains` [EXTRACTED]
+- [[Discovery Strategy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_1__Raw_Collection
+#graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill

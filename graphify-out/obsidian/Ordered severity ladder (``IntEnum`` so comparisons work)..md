@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "rationale"
-community: "Severity"
+community: "SkillGuard"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Severity
+  - community/SkillGuard
 ---
 
 # Ordered severity ladder (``IntEnum`` so comparisons work).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Severity]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Severity
+#graphify/rationale #graphify/EXTRACTED #community/SkillGuard

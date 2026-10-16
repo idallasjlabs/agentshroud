@@ -12,6 +12,6 @@ tags:
 # MCP Not Using Profile
 
 ## Connections
-- [[Troubleshooting_5]] - `contains` [EXTRACTED]
+- [[Troubleshooting_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Troubleshooting

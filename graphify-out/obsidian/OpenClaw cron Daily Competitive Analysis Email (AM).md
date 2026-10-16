@@ -4,7 +4,7 @@ type: "code"
 community: "competitive-report-*.md dated reports"
 tags:
   - graphify/code
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/competitive-report-md_dated_reports
 ---
 
@@ -12,9 +12,8 @@ tags:
 
 ## Connections
 - [[Hermes Competitive Intelligence Email (AMPM)_1]] - `semantically_similar_to` [INFERRED]
-- [[Hermes cron Competitive Intelligence Email AMPM]] - `semantically_similar_to` [INFERRED]
 - [[OpenClaw cron Competitive Analysis Email (Afternoon)]] - `semantically_similar_to` [INFERRED]
 - [[competitive-analysis.md artifact]] - `references` [EXTRACTED]
 - [[competitive-report-.md dated reports]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/competitive-report-md_dated_reports
+#graphify/code #graphify/EXTRACTED #community/competitive-report-md_dated_reports

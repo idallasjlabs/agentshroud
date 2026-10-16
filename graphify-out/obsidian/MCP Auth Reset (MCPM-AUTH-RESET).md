@@ -12,7 +12,7 @@ tags:
 # MCP Auth Reset (MCPM-AUTH-RESET)
 
 ## Connections
-- [[Purpose_25]] - `contains` [EXTRACTED]
+- [[Purpose_30]] - `contains` [EXTRACTED]
 - [[Related Skills_18]] - `contains` [EXTRACTED]
 - [[Usage_21]] - `contains` [EXTRACTED]
 - [[hermesskillsi-mcpm-auth-resetREADME]] - `contains` [EXTRACTED]

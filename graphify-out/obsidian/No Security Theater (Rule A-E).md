@@ -1,11 +1,11 @@
 ---
 source_file: "CLAUDE.md"
 type: "rationale"
-community: "8. Governance Model"
+community: "main"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/8_Governance_Model
+  - community/main
 ---
 
 # No Security Theater (Rule A-E)
@@ -14,4 +14,4 @@ tags:
 - [[8. Governance Model]] - `contains` [EXTRACTED]
 - [[AgentShroud CLAUDE.md operating rules]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/8_Governance_Model
+#graphify/rationale #graphify/EXTRACTED #community/main

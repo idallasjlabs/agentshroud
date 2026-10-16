@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/proxy/dns_blocklist.py"
+source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: ".update"
-location: "L64"
+community: "test_dashboard.py"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/update
+  - community/test_dashboardpy
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_186]] - `references` [EXTRACTED]
+- [[_load_contributor_logs()]] - `references` [EXTRACTED]
+- [[_parse_collaborator_log_dirs()]] - `references` [EXTRACTED]
+- [[get_collaborators()]] - `calls` [EXTRACTED]
+- [[serve_dashboard()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/update
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

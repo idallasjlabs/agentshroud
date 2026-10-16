@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L38"
+community: "MCPPolicyEngine"
+location: "L73"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - graphify/INFERRED
+  - community/MCPPolicyEngine
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_95]] - `references` [EXTRACTED]
+- [[MCPPolicyAction]] - `uses` [INFERRED]
+- [[MCPPolicyConfig_1]] - `uses` [INFERRED]
+- [[MCPPolicyEngine_1]] - `uses` [INFERRED]
+- [[_write()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/INFERRED #community/MCPPolicyEngine

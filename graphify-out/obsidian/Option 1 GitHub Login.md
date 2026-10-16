@@ -12,6 +12,6 @@ tags:
 # Option 1: GitHub Login
 
 ## Connections
-- [[Authentication_1]] - `contains` [EXTRACTED]
+- [[Authentication]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide

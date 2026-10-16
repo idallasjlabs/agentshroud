@@ -12,6 +12,6 @@ tags:
 # Pipeline wired with the guards relevant to inbound encoding defence.      No Tru
 
 ## Connections
-- [[_make_pipeline()]] - `rationale_for` [EXTRACTED]
+- [[_make_pipeline()_3]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/PIIConfig

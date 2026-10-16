@@ -12,7 +12,7 @@ tags:
 # MCP Doctor (MCPM-DOCTOR)
 
 ## Connections
-- [[Purpose_45]] - `contains` [EXTRACTED]
+- [[Purpose_50]] - `contains` [EXTRACTED]
 - [[Related Skills_38]] - `contains` [EXTRACTED]
 - [[Usage_41]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]

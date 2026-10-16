@@ -12,13 +12,13 @@ tags:
 # Presidio Analyzer
 
 ## Connections
-- [[Architecture_4]] - `contains` [EXTRACTED]
+- [[Architecture_13]] - `contains` [EXTRACTED]
 - [[Confidence Threshold]] - `contains` [EXTRACTED]
 - [[Configured Entities]] - `contains` [EXTRACTED]
 - [[NLP Backend]] - `contains` [EXTRACTED]
-- [[Purpose_69]] - `contains` [EXTRACTED]
-- [[Related Notes_27]] - `contains` [EXTRACTED]
-- [[Where Used_4]] - `contains` [EXTRACTED]
+- [[Purpose_195]] - `contains` [EXTRACTED]
+- [[Related Notes_74]] - `contains` [EXTRACTED]
+- [[Where Used_5]] - `contains` [EXTRACTED]
 - [[presidio-analyzer]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Error_Indexmd

@@ -1,47 +1,47 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCPToolCall"
+community: "MCPPermissionManager"
 location: "L224"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPToolCall
+  - community/MCPPermissionManager
 ---
 
 # MCPProxy
 
 ## Connections
-- [[dot-__init__()_151]] - `method` [EXTRACTED]
+- [[dot-__init__()_170]] - `method` [EXTRACTED]
 - [[dot-_emit_privacy_event()]] - `method` [EXTRACTED]
 - [[dot-_execute_tool_call()]] - `method` [EXTRACTED]
 - [[dot-_extract_egress_targets()]] - `method` [EXTRACTED]
 - [[dot-_sanitize_admin_private_data()]] - `method` [EXTRACTED]
 - [[dot-check_approval_required()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_16]] - `method` [EXTRACTED]
+- [[dot-get_stats()_19]] - `method` [EXTRACTED]
 - [[dot-mcp_proxy_with_approval()]] - `calls` [EXTRACTED]
 - [[dot-process_tool_call()]] - `method` [EXTRACTED]
 - [[dot-process_tool_result()_1]] - `method` [EXTRACTED]
-- [[dot-set_event_bus()_2]] - `method` [EXTRACTED]
+- [[dot-set_event_bus()]] - `method` [EXTRACTED]
 - [[dot-shutdown()]] - `method` [EXTRACTED]
 - [[dot-test_disabled_server_blocked()]] - `calls` [EXTRACTED]
 - [[dot-test_egress_allows_non_url_tool_call()]] - `calls` [EXTRACTED]
 - [[dot-test_egress_denied_blocks_url_tool_call()]] - `calls` [EXTRACTED]
-- [[Exception]] - `uses` [INFERRED]
+- [[Exception_3]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
 - [[InspectionResult_1]] - `uses` [INFERRED]
 - [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector]] - `uses` [INFERRED]
+- [[MCPInspector_1]] - `uses` [INFERRED]
 - [[MCPPermissionManager_1]] - `uses` [INFERRED]
 - [[MCPPolicyConfig]] - `uses` [INFERRED]
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPProxyConfig_2]] - `uses` [INFERRED]
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]
-- [[MCPToolCall_1]] - `uses` [INFERRED]
+- [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
 - [[Main MCP proxy that intercepts tool calls and routes through security.      Tran]] - `rationale_for` [EXTRACTED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
@@ -85,13 +85,13 @@ tags:
 - [[TestThreatLevelCalc]] - `uses` [INFERRED]
 - [[TestToolRiskClassification]] - `uses` [INFERRED]
 - [[_FakeApprovalQueue]] - `uses` [INFERRED]
-- [[_HangingWebSocket]] - `uses` [INFERRED]
+- [[_HangingWebSocket_1]] - `uses` [INFERRED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[make_proxy()]] - `calls` [EXTRACTED]
 - [[mcp_proxy.py]] - `contains` [EXTRACTED]
 - [[passthrough_proxy()_1]] - `calls` [EXTRACTED]
-- [[proxy()_3]] - `calls` [EXTRACTED]
+- [[proxy()_4]] - `calls` [EXTRACTED]
 - [[proxy__init__.py]] - `imports` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[test_enhanced_approval.py]] - `imports` [EXTRACTED]
@@ -102,4 +102,4 @@ tags:
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_real_queue_high_risk_never_executes_without_approval()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPToolCall
+#graphify/code #graphify/INFERRED #community/MCPPermissionManager

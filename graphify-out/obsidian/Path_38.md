@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/ingest_api/routes/dashboard.py"
+source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "test_dashboard.py"
-location: "L66"
+community: "Path"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/Path
 ---
 
 # Path
 
 ## Connections
-- [[_load_contributor_logs()]] - `references` [EXTRACTED]
-- [[_parse_collaborator_log_dirs()]] - `references` [EXTRACTED]
-- [[get_collaborators()]] - `calls` [EXTRACTED]
-- [[serve_dashboard()]] - `calls` [EXTRACTED]
+- [[dot-from_file()]] - `references` [EXTRACTED]
+- [[dot-from_source()]] - `references` [EXTRACTED]
+- [[deploy_manifest()]] - `references` [EXTRACTED]
+- [[plan_deploy()]] - `references` [EXTRACTED]
+- [[validate_manifest()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/Path

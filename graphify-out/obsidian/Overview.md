@@ -1,17 +1,17 @@
 ---
-source_file: "docs/api/api-reference.md"
+source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "API Reference"
-location: "L5"
+community: "GitHub Copilot CLI Setup Guide"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/API_Reference
+  - community/GitHub_Copilot_CLI_Setup_Guide
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud v1.3.0]] - `contains` [EXTRACTED]
+- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/API_Reference
+#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/hermes/patch_telegram_do_request.py"
 type: "rationale"
-community: "patch_telegram_do_request.py"
+community: "Path"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/patch_telegram_do_requestpy
+  - community/Path
 ---
 
 # PTB HTTPXRequest __slots__ Crash-Loop Fix Rationale
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[patch_telegram_do_request.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/patch_telegram_do_requestpy
+#graphify/rationale #graphify/EXTRACTED #community/Path

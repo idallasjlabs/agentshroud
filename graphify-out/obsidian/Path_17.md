@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/browser-fetch.js"
+source_file: "docker/config/openclaw/apply-patches.js"
 type: "code"
-community: "SecureBrowser - Enterprise Secure Browser Automation"
-location: "L8"
+community: "apply-patches.js"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
+  - community/apply-patchesjs
 ---
 
 # path
 
 ## Connections
-- [[browser-fetch.js_2]] - `contains` [EXTRACTED]
+- [[apply-patches.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
+#graphify/code #graphify/EXTRACTED #community/apply-patchesjs

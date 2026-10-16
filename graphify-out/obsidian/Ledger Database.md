@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
+source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
 type: "document"
-community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
-location: "L154"
+community: "Crash Recovery"
+location: "L130"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue_enhanced_queuepy
+  - community/Crash_Recovery
 ---
 
 # Ledger Database
 
 ## Connections
-- [[Data Integrity After Crash]] - `contains` [EXTRACTED]
+- [[Data Recovery]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy
+#graphify/document #graphify/EXTRACTED #community/Crash_Recovery

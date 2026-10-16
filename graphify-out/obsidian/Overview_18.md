@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/deployment-diagram.md"
+source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "AgentShroud Deployment Architecture"
-location: "L3"
+community: "API Keys Setup Guide"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Deployment_Architecture
+  - community/API_Keys_Setup_Guide
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Deployment Architecture]] - `contains` [EXTRACTED]
+- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture
+#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

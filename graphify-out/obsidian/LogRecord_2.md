@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "DataLedger"
+community: "ForwardRequest"
 location: "L64"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/DataLedger
+  - community/ForwardRequest
 ---
 
 # LogRecord
@@ -20,7 +20,7 @@ tags:
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/DataLedger
+#graphify/code #graphify/INFERRED #community/ForwardRequest

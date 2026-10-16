@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "ingest_api/models.py"
+community: "DataLedger"
 location: "L139"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ingest_api/modelspy
+  - community/DataLedger
 ---
 
 # LedgerEntry
 
 ## Connections
-- [[Any_23]] - `uses` [INFERRED]
+- [[Any_47]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[DataLedger]] - `uses` [INFERRED]
 - [[LedgerConfig]] - `uses` [INFERRED]
@@ -22,4 +22,4 @@ tags:
 - [[ingest_apimodels.py]] - `contains` [EXTRACTED]
 - [[ledger.py_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ingest_api/modelspy
+#graphify/code #graphify/INFERRED #community/DataLedger

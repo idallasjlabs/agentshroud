@@ -12,7 +12,7 @@ tags:
 # MockThreatLevel
 
 ## Connections
-- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[Enum_1]] - `inherits` [EXTRACTED]
 - [[ProxyAction]] - `uses` [INFERRED]
 - [[ThreatLevel_1]] - `shares_data_with` [AMBIGUOUS]
 - [[WebProxy]] - `uses` [INFERRED]

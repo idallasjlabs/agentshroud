@@ -1,17 +1,18 @@
 ---
-source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
+source_file: ".agents/skills/i-athena/SKILL.md"
 type: "document"
-community: "AgentShroud Blue Team Security Auditor"
-location: "L129"
+community: "Athena — Knowledge Distiller"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Blue_Team_Security_Auditor
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Output Format
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor_3]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_6]] - `contains` [EXTRACTED]
+- [[show_notes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

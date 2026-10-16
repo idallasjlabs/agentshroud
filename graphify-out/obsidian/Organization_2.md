@@ -12,6 +12,6 @@ tags:
 # Organization
 
 ## Connections
-- [[Best Practices_3]] - `contains` [EXTRACTED]
+- [[Best Practices_5]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

@@ -12,7 +12,7 @@ tags:
 # LogSanitizer
 
 ## Connections
-- [[dot-__init__()_103]] - `calls` [EXTRACTED]
+- [[dot-__init__()_16]] - `calls` [EXTRACTED]
 - [[dot-get_log_sanitizer()]] - `references` [EXTRACTED]
 - [[Action_2]] - `uses` [INFERRED]
 - [[AgentRegistry]] - `uses` [INFERRED]
@@ -45,7 +45,7 @@ tags:
 - [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PathIsolationConfig]] - `uses` [INFERRED]
 - [[PathIsolationManager]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[RBACManager_2]] - `uses` [INFERRED]
 - [[Resource_2]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
@@ -55,8 +55,8 @@ tags:
 - [[ToolChainAnalyzer]] - `uses` [INFERRED]
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[ToolResultPIIConfig]] - `uses` [INFERRED]
-- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
 - [[ToolResultSanitizer]] - `uses` [INFERRED]
+- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
 - [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
 - [[ToolTier_1]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]

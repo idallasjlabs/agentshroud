@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/deployment-procedure.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Container Errors.md"
 type: "document"
-community: "Troubleshooting Common Issues"
-location: "L565"
+community: "First Time Setup"
+location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Troubleshooting_Common_Issues
+  - community/First_Time_Setup
 ---
 
 # Port Already in Use
 
 ## Connections
-- [[Troubleshooting Common Issues]] - `contains` [EXTRACTED]
+- [[Container Errors]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Troubleshooting_Common_Issues
+#graphify/document #graphify/EXTRACTED #community/First_Time_Setup

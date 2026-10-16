@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
 type: "document"
-community: "Error Index.md"
+community: "All Dependencies.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd
+  - community/All_Dependenciesmd
 ---
 
 # PII Pipeline Errors.md
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[Error Index]] - `references` [EXTRACTED]
 - [[PII Pipeline Errors]] - `contains` [EXTRACTED]
-- [[Prompt Injection Blocks_1]] - `semantically_similar_to` [INFERRED]
+- [[Prompt Injection Blocks]] - `semantically_similar_to` [INFERRED]
 - [[presidio-analyzer]] - `references` [EXTRACTED]
-- [[spacy]] - `references` [EXTRACTED]
+- [[spacy_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

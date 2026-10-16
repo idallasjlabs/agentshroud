@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
+source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "Browser-Fetch Skill for 1Password Share Links"
-location: "L9"
+community: "main.py.md"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser-Fetch_Skill_for_1Password_Share_Links
+  - community/mainpymd
 ---
 
 # Overview
 
 ## Connections
-- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
+- [[Startup Sequence_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser-Fetch_Skill_for_1Password_Share_Links
+#graphify/document #graphify/EXTRACTED #community/mainpymd

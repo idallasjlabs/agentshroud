@@ -16,7 +16,7 @@ tags:
 - [[Alternative Auto-Pairing URL]] - `contains` [EXTRACTED]
 - [[Get Token Again]] - `contains` [EXTRACTED]
 - [[PAIRING_INSTRUCTIONS]] - `contains` [EXTRACTED]
-- [[Security Note_1]] - `contains` [EXTRACTED]
+- [[Security Note_2]] - `contains` [EXTRACTED]
 - [[Troubleshooting_36]] - `contains` [EXTRACTED]
 - [[✅ Step-by-Step Pairing Process]] - `contains` [EXTRACTED]
 

@@ -12,6 +12,6 @@ tags:
 # OAuthSecurityValidator.validate_request(req)
 
 ## Connections
-- [[Function Details_11]] - `contains` [EXTRACTED]
+- [[Function Details_10]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

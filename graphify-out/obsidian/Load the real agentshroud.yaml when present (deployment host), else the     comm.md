@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "rationale"
-community: "test_config.py"
+community: "ApprovalQueueConfig"
 location: "L17"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_configpy
+  - community/ApprovalQueueConfig
 ---
 
 # Load the real agentshroud.yaml when present (deployment host), else the     comm
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_load_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_configpy
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

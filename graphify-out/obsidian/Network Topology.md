@@ -1,17 +1,19 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "main.py.md"
-location: "L145"
+community: "AgentShroud Deployment Architecture"
+location: "L218"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpymd
+  - community/AgentShroud_Deployment_Architecture
 ---
 
 # Network Topology
 
 ## Connections
-- [[Architecture Overview_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Deployment Architecture]] - `contains` [EXTRACTED]
+- [[DNS Routing Configuration]] - `contains` [EXTRACTED]
+- [[Three-Network Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpymd
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture

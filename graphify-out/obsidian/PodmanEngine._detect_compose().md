@@ -12,6 +12,6 @@ tags:
 # PodmanEngine._detect_compose()
 
 ## Connections
-- [[Function Details_17]] - `contains` [EXTRACTED]
+- [[Function Details_16]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

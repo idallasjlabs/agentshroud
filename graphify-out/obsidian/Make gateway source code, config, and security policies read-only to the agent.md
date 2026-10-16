@@ -15,10 +15,10 @@ tags:
 - [[04-separation-of-privilege]] - `contains` [EXTRACTED]
 - [[Constraints_4]] - `contains` [EXTRACTED]
 - [[Evidence_4]] - `contains` [EXTRACTED]
-- [[Problem_7]] - `contains` [EXTRACTED]
+- [[Problem_6]] - `contains` [EXTRACTED]
 - [[Remediation_5]] - `contains` [EXTRACTED]
-- [[Root Cause_5]] - `contains` [EXTRACTED]
+- [[Root Cause_4]] - `contains` [EXTRACTED]
 - [[Severity_7]] - `contains` [EXTRACTED]
-- [[Verification_11]] - `contains` [EXTRACTED]
+- [[Verification_9]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Make_gateway_source_code_config_and_security_policies_read-only_to_the_agent

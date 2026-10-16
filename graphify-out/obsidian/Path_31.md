@@ -1,24 +1,18 @@
 ---
-source_file: "gateway/ingest_api/config.py"
+source_file: "gateway/security/audit_archive.py"
 type: "code"
-community: "load_config"
-location: "L380"
+community: "archive_old_events"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/archive_old_events
 ---
 
 # Path
 
 ## Connections
-- [[dot-model_post_init()_1]] - `calls` [EXTRACTED]
-- [[BotConfig]] - `uses` [INFERRED]
-- [[SSHConfig_2]] - `uses` [INFERRED]
-- [[_default_mtime()]] - `references` [EXTRACTED]
-- [[config_watcher()]] - `references` [EXTRACTED]
-- [[load_config()]] - `references` [EXTRACTED]
-- [[reload_config()]] - `references` [EXTRACTED]
-- [[resolve_config_path()]] - `references` [EXTRACTED]
+- [[archive_old_events()]] - `references` [EXTRACTED]
+- [[purge_low_value_events()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/archive_old_events

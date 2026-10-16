@@ -12,10 +12,10 @@ tags:
 # PassthroughPipeline
 
 ## Connections
-- [[dot-process_inbound()_9]] - `method` [EXTRACTED]
+- [[dot-process_inbound()_10]] - `method` [EXTRACTED]
 - [[LockdownLevel]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[_make_proxy()_3]] - `calls` [EXTRACTED]
 - [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]
 

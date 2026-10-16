@@ -12,7 +12,7 @@ tags:
 # PortManager
 
 ## Connections
-- [[dot-__init__()_9]] - `method` [EXTRACTED]
+- [[dot-__init__()_29]] - `method` [EXTRACTED]
 - [[dot-find_available_port()]] - `method` [EXTRACTED]
 - [[dot-generate_compose_ports()]] - `method` [EXTRACTED]
 - [[dot-is_port_available()]] - `method` [EXTRACTED]

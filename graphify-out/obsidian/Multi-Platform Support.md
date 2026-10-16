@@ -12,6 +12,6 @@ tags:
 # Multi-Platform Support
 
 ## Connections
-- [[Architecture_13]] - `contains` [EXTRACTED]
+- [[Architecture_11]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Architecture

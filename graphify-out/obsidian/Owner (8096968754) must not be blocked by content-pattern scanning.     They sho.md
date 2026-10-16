@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "rationale"
-community: "test_file_sandbox_message_gate.py"
+community: "UserSessionManager"
 location: "L192"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_file_sandbox_message_gatepy
+  - community/UserSessionManager
 ---
 
 # Owner (8096968754) must not be blocked by content-pattern scanning.     They sho
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOwnerBypassContentPatternChecks]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_file_sandbox_message_gatepy
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

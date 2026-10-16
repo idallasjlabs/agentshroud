@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/trivy_report.py"
+source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "parse_trivy_output"
-location: "L164"
+community: "generate_branding_assets.py"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_trivy_output
+  - community/generate_branding_assetspy
 ---
 
 # Path
 
 ## Connections
-- [[_build_image_targets()]] - `calls` [EXTRACTED]
-- [[save_report()]] - `references` [EXTRACTED]
+- [[ensure()]] - `references` [EXTRACTED]
+- [[get_font()]] - `calls` [EXTRACTED]
+- [[save()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_trivy_output
+#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy

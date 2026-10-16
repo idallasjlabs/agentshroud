@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "test_egress_filter.py"
+community: "EgressFilterConfig"
 location: "L271"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_egress_filterpy
+  - community/EgressFilterConfig
 ---
 
 # Only DENY decisions are persisted to the tamper-evident audit store.      ALLOW
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAuditStorePersistence]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_egress_filterpy
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

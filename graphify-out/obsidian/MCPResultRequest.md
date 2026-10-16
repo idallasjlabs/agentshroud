@@ -12,9 +12,9 @@ tags:
 # MCPResultRequest
 
 ## Connections
-- [[BaseModel_2]] - `inherits` [EXTRACTED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
 - [[Request body for POST mcpresult — submit a tool result for outbound audit.]] - `rationale_for` [EXTRACTED]
-- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `contains` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[mcp_result_endpoint()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy

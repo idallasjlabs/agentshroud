@@ -28,6 +28,6 @@ tags:
 - [[TestPKCE]] - `uses` [INFERRED]
 - [[TestRedirectURI]] - `uses` [INFERRED]
 - [[TestStateValidation]] - `uses` [INFERRED]
-- [[oauth_security.py_2]] - `contains` [EXTRACTED]
+- [[oauth_security.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator

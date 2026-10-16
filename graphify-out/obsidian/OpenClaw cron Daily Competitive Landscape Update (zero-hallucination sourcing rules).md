@@ -12,7 +12,6 @@ tags:
 
 ## Connections
 - [[Hermes Competitive Landscape Update (AMPM)_1]] - `semantically_similar_to` [INFERRED]
-- [[Hermes cron Competitive Landscape Update AMPM (zero-hallucination sourcing)]] - `semantically_similar_to` [INFERRED]
 - [[OpenClaw cron Competitive Landscape Update (Afternoon)]] - `semantically_similar_to` [INFERRED]
 - [[competitive-analysis.md artifact]] - `references` [EXTRACTED]
 - [[competitive-report-.md dated reports]] - `references` [EXTRACTED]

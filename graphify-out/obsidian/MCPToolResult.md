@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCPToolResult"
+community: "MCPPermissionManager"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPToolResult
+  - community/MCPPermissionManager
 ---
 
 # MCPToolResult
@@ -30,21 +30,21 @@ tags:
 - [[dot-test_result_audit_logged()]] - `calls` [EXTRACTED]
 - [[dot-test_result_processing_time()]] - `calls` [EXTRACTED]
 - [[dot-test_tool_result_timestamp_default()]] - `calls` [EXTRACTED]
-- [[Exception]] - `uses` [INFERRED]
+- [[Exception_3]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
 - [[InspectionResult_1]] - `uses` [INFERRED]
 - [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector]] - `uses` [INFERRED]
+- [[MCPInspector_1]] - `uses` [INFERRED]
 - [[MCPPermissionManager_1]] - `uses` [INFERRED]
 - [[MCPPolicyConfig]] - `uses` [INFERRED]
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPProxyConfig_2]] - `uses` [INFERRED]
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]
-- [[MCPToolCall_1]] - `uses` [INFERRED]
+- [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
 - [[Represents an MCP tool result.]] - `rationale_for` [EXTRACTED]
@@ -90,4 +90,4 @@ tags:
 - [[test_mcp_proxy_allows_policy_permitted_call()]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPToolResult
+#graphify/code #graphify/INFERRED #community/MCPPermissionManager

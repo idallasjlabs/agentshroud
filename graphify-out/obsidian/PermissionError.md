@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "_patch_open"
+community: "ServiceManager"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_patch_open
+  - community/ServiceManager
 ---
 
 # PermissionError
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_running_via_proc_scan()_2]] - `calls` [INFERRED]
 - [[GroupAccessDenied]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_patch_open
+#graphify/code #graphify/INFERRED #community/ServiceManager

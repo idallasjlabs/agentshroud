@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/model-usage/SKILL.md"
+source_file: "docs/vault/09 - Diagrams/Security Pipeline Flow.md"
 type: "document"
-community: "Common Queries"
-location: "L27"
+community: "`SecurityPipeline`"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Common_Queries
+  - community/SecurityPipeline
 ---
 
 # Overview
 
 ## Connections
-- [[Model usage]] - `contains` [EXTRACTED]
+- [[`SecurityPipeline`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Common_Queries
+#graphify/document #graphify/EXTRACTED #community/SecurityPipeline

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md"
 type: "document"
-community: "Collaborator Setup Checklist"
+community: "iMessage Integration Fix - Using imsg + imessage-exporter"
 location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Collaborator_Setup_Checklist
+  - community/iMessage_Integration_Fix_-_Using_imsg__imessage-exporter
 ---
 
 # Optional local tooling
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Collaborator Setup Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Collaborator_Setup_Checklist
+#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Fix_-_Using_imsg__imessage-exporter

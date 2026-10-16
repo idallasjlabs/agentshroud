@@ -12,8 +12,8 @@ tags:
 # OAuthSecurityValidator
 
 ## Connections
-- [[dot-__init__()_103]] - `calls` [EXTRACTED]
-- [[dot-__init__()_176]] - `method` [EXTRACTED]
+- [[dot-__init__()_16]] - `calls` [EXTRACTED]
+- [[dot-__init__()_72]] - `method` [EXTRACTED]
 - [[dot-check_state_reuse()]] - `method` [EXTRACTED]
 - [[dot-create_consent_cookie()]] - `method` [EXTRACTED]
 - [[dot-record_state_used()]] - `method` [EXTRACTED]
@@ -24,15 +24,15 @@ tags:
 - [[dot-validate_redirect_uri()]] - `method` [EXTRACTED]
 - [[dot-validate_request()]] - `method` [EXTRACTED]
 - [[dot-verify_pkce()]] - `method` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[Any_42]] - `uses` [INFERRED]
-- [[Exception_3]] - `uses` [INFERRED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any]] - `uses` [INFERRED]
+- [[Exception]] - `uses` [INFERRED]
 - [[LogSanitizer_1]] - `uses` [INFERRED]
-- [[MFAGuard_2]] - `semantically_similar_to` [INFERRED]
+- [[MFAGuard_1]] - `semantically_similar_to` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[TestClientValidation]] - `uses` [INFERRED]
 - [[TestConsentCookieBinding]] - `uses` [INFERRED]
 - [[TestPKCE]] - `uses` [INFERRED]
@@ -40,7 +40,7 @@ tags:
 - [[TestStateValidation]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[oauth_security.py_2]] - `contains` [EXTRACTED]
+- [[oauth_security.py]] - `contains` [EXTRACTED]
 - [[validator()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator

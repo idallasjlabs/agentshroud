@@ -12,6 +12,6 @@ tags:
 # Parse a single Wazuh alert.      Args:         raw: Raw Wazuh alert JSON.      R
 
 ## Connections
-- [[parse_alert()]] - `rationale_for` [EXTRACTED]
+- [[parse_alert()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_security_toolchainpy

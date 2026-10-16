@@ -1,17 +1,17 @@
 ---
-source_file: ".github/COPILOT_CLI_SETUP.md"
+source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "GitHub Copilot CLI Setup Guide"
-location: "L3"
+community: "Layer-by-Layer Breakdown"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Copilot_CLI_Setup_Guide
+  - community/Layer-by-Layer_Breakdown
 ---
 
 # Overview
 
 ## Connections
-- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
+- [[Data Flow_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown

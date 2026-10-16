@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "rationale"
-community: "ApprovalRequest"
+community: "GroupApprovalRouter"
 location: "L80"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/GroupApprovalRouter
 ---
 
 # Owner must receive a DM when an approval originates from a group chat.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGroupApprovalOwnerDM]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/rationale #graphify/EXTRACTED #community/GroupApprovalRouter

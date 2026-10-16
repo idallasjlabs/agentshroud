@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Data Flow.md"
+source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "EgressFilter"
-location: "L10"
+community: "AgentShroud Prerequisites"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/AgentShroud_Prerequisites
 ---
 
 # Overview
 
 ## Connections
-- [[Data Flow_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "ingest_api/models.py"
+community: "DataLedger"
 location: "L73"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ingest_api/modelspy
+  - community/DataLedger
 ---
 
 # LedgerConfig
 
 ## Connections
-- [[dot-__init__()_55]] - `references` [EXTRACTED]
+- [[dot-__init__()_130]] - `references` [EXTRACTED]
 - [[LedgerConfig_1]] - `uses` [INFERRED]
 - [[LedgerEntry]] - `uses` [INFERRED]
 - [[LedgerQueryResponse]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/ingest_api/modelspy
+#graphify/code #graphify/INFERRED #community/DataLedger

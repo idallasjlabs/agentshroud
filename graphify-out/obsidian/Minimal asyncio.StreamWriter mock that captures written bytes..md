@@ -12,6 +12,6 @@ tags:
 # Minimal asyncio.StreamWriter mock that captures written bytes.
 
 ## Connections
-- [[_MockWriter_1]] - `rationale_for` [EXTRACTED]
+- [[_MockWriter]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/WebProxy

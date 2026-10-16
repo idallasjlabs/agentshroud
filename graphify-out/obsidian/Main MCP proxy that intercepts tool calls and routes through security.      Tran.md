@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "MCPToolCall"
+community: "MCPPermissionManager"
 location: "L225"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/MCPPermissionManager
 ---
 
 # Main MCP proxy that intercepts tool calls and routes through security.      Tran
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCPProxy_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPToolCall
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

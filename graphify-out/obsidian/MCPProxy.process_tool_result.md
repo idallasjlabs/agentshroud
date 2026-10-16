@@ -1,16 +1,16 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCPToolCall"
+community: "MCPPermissionManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/MCPPermissionManager
 ---
 
 # MCPProxy.process_tool_result
 
 ## Connections
-- [[MCPInspector]] - `calls` [EXTRACTED]
+- [[MCPInspector_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPToolCall
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

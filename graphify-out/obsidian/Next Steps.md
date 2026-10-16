@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/IMESSAGE_STATUS.md"
+source_file: "docs/architecture/WORKSPACE_DECISION.md"
 type: "document"
-community: "iMessage Integration Status"
-location: "L56"
+community: "OpenClaw Workspace Usage Guide"
+location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iMessage_Integration_Status
+  - community/OpenClaw_Workspace_Usage_Guide
 ---
 
 # Next Steps
 
 ## Connections
-- [[iMessage Integration Status]] - `contains` [EXTRACTED]
+- [[Workspace Configuration Decision]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Status
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide
