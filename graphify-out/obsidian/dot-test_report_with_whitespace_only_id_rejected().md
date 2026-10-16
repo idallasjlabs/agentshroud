@@ -12,7 +12,7 @@ tags:
 # .test_report_with_whitespace_only_id_rejected()
 
 ## Connections
-- [[CompetitiveIntelReport]] - `calls` [EXTRACTED]
+- [[CompetitiveIntelReport_1]] - `calls` [EXTRACTED]
 - [[TestIntelReportStore]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

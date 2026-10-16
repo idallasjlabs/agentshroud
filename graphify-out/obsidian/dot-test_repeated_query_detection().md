@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Test detection of repeated queries with different phrasing.]] - `rationale_for` [EXTRACTED]
-- [[TestMultiTurnTracker_1]] - `method` [EXTRACTED]
+- [[TestMultiTurnTracker]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

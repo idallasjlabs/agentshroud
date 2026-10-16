@@ -12,7 +12,7 @@ tags:
 # .test_memory_provider_error_variant_is_rewritten_generic()
 
 ## Connections
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[Variant wording should still map to generic runtime guidance by default.]] - `rationale_for` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]

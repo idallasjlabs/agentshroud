@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "code"
-community: "test_docs_accuracy.py"
+community: "AgentShroud Brand Guidelines"
 location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_docs_accuracypy
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # .test_readme_p1_count_matches_middleware_manager()
@@ -15,4 +15,4 @@ tags:
 - [[TestManageModulesEndpointAccuracy]] - `method` [EXTRACTED]
 - [[_read_file()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_docs_accuracypy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

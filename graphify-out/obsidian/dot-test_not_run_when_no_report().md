@@ -12,7 +12,7 @@ tags:
 # .test_not_run_when_no_report()
 
 ## Connections
-- [[Path_29]] - `calls` [EXTRACTED]
+- [[Path_28]] - `calls` [EXTRACTED]
 - [[TestGetClamavSummary]] - `method` [EXTRACTED]
 - [[get_clamav_summary()]] - `calls` [EXTRACTED]
 

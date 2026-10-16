@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "AuditChain"
+community: "AgentTarget"
 location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/AgentTarget
 ---
 
 # .test_inject_preserves_existing_headers()
@@ -15,4 +15,4 @@ tags:
 - [[KeyInjector]] - `calls` [EXTRACTED]
 - [[TestKeyInjection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

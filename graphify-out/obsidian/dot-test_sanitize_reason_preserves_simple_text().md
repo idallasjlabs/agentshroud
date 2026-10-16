@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "ResourceGuard"
+community: "AlertDispatcher"
 location: "L210"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/AlertDispatcher
 ---
 
 # .test_sanitize_reason_preserves_simple_text()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestNotifyUserBlockedSanitization]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

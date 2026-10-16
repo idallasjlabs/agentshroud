@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_op_proxy.py"
+source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "_is_op_reference_allowed"
-location: "L102"
+community: "MiddlewareManager"
+location: "L316"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_is_op_reference_allowed
+  - community/MiddlewareManager
 ---
 
 # .test_path_traversal_blocked()
 
 ## Connections
-- [[TestIsOpReferenceAllowed]] - `method` [EXTRACTED]
-- [[_is_op_reference_allowed()]] - `calls` [EXTRACTED]
+- [[Path traversal attempts should be blocked.]] - `rationale_for` [EXTRACTED]
+- [[TestEdgeCases]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

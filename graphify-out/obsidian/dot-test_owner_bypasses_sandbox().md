@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "_req"
+community: "test_hermes_model_resolver.py"
 location: "L605"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req
+  - community/test_hermes_model_resolverpy
 ---
 
 # .test_owner_bypasses_sandbox()
 
 ## Connections
 - [[TestFileSandboxStep]] - `method` [EXTRACTED]
-- [[_FakeRBAC_1]] - `calls` [EXTRACTED]
+- [[_FakeRBAC_2]] - `calls` [EXTRACTED]
 - [[_tool_req()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req
+#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy

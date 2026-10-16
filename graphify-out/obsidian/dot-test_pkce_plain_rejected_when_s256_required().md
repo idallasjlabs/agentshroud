@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "OAuthSecurityValidator"
+community: "AlertDispatcher"
 location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OAuthSecurityValidator
+  - community/AlertDispatcher
 ---
 
 # .test_pkce_plain_rejected_when_s256_required()
@@ -15,4 +15,4 @@ tags:
 - [[OAuthRequest]] - `calls` [EXTRACTED]
 - [[TestPKCE]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

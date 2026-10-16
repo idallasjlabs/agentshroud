@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "test_security_toolchain.py"
+community: "FalcoAlertWatcher"
 location: "L586"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/FalcoAlertWatcher
 ---
 
 # .test_parse_critical_alert()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestFalcoParser]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "SubagentMonitor"
+community: "TrustConfig"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentMonitor
+  - community/TrustConfig
 ---
 
 # .test_kill_switch_marks_all_for_termination()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKillSwitch]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentMonitor
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

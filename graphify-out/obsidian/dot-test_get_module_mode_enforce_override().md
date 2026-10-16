@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "code"
-community: "AgentRegistry"
+community: "MiddlewareManager"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/MiddlewareManager
 ---
 
 # .test_get_module_mode_enforce_override()
@@ -17,4 +17,4 @@ tags:
 - [[TestEnforceDefaults]] - `method` [EXTRACTED]
 - [[get_module_mode()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

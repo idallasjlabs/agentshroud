@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestTrivyImageSummaries"
+community: "TestOutboundInfoFilter"
 location: "L293"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestTrivyImageSummaries
+  - community/TestOutboundInfoFilter
 ---
 
 # .test_plain_name_and_mtime_timestamp()
@@ -15,4 +15,4 @@ tags:
 - [[TestTrivyImageSummaries]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestTrivyImageSummaries
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

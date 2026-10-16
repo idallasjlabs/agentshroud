@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "_req"
+community: "ApprovalQueueConfig"
 location: "L778"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req
+  - community/ApprovalQueueConfig
 ---
 
 # .test_own_workspace_allowed()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestIsPathAllowedForUser]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

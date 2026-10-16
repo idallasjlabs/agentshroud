@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "TestFabricatedSecurityNotice"
+community: "TestOutboundInfoFilter"
 location: "L554"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice
+  - community/TestOutboundInfoFilter
 ---
 
 # .test_possessive_flagging()
@@ -16,4 +16,4 @@ tags:
 - [[Possessive form AGENTSHROUD's behavioral analysis flagging.]] - `rationale_for` [EXTRACTED]
 - [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

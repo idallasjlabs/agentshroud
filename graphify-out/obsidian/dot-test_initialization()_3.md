@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_multi_turn_tracker.py"
+source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "MultiTurnTracker"
-location: "L45"
+community: "ToolResultSanitizer"
+location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MultiTurnTracker
+  - community/ToolResultSanitizer
 ---
 
 # .test_initialization()
 
 ## Connections
-- [[Test proper initialization of MultiTurnTracker.]] - `rationale_for` [EXTRACTED]
-- [[TestMultiTurnTracker_1]] - `method` [EXTRACTED]
+- [[Test sanitizer initialization]] - `rationale_for` [EXTRACTED]
+- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

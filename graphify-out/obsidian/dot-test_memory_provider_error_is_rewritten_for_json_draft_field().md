@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: ".test_memory_provider_error_is_rewritten_for_json_draft_field"
 location: "L1367"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/test_memory_provider_error_is_rewritten_for_json_draft_field
 ---
 
 # .test_memory_provider_error_is_rewritten_for_json_draft_field()
 
 ## Connections
 - [[Runtime memory provider errors should rewrite when payload uses draft field.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/test_memory_provider_error_is_rewritten_for_json_draft_field

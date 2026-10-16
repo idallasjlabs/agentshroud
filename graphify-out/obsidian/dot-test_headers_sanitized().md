@@ -12,7 +12,7 @@ tags:
 # .test_headers_sanitized()
 
 ## Connections
-- [[TestMetadataGuard]] - `method` [EXTRACTED]
+- [[TestMetadataGuard_1]] - `method` [EXTRACTED]
 - [[_req()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_req

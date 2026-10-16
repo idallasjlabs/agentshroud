@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "PermissionLevel"
+community: "StdioConnection"
 location: "L389"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PermissionLevel
+  - community/StdioConnection
 ---
 
 # .test_no_patterns_returns_unchanged()
@@ -15,4 +15,4 @@ tags:
 - [[TestSanitizeAdminPrivateData]] - `method` [EXTRACTED]
 - [[make_proxy()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PermissionLevel
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

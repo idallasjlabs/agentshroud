@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: ".test_memory_error_without_error_keyword_is_not_rewritten"
 location: "L1544"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/test_memory_error_without_error_keyword_is_not_rewritten
 ---
 
 # .test_memory_error_without_error_keyword_is_not_rewritten()
 
 ## Connections
 - [[Embeddingprovider hints without explicit error marker should not trigger rewrit]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/test_memory_error_without_error_keyword_is_not_rewritten

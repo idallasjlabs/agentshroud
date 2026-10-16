@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "RBACConfig"
+community: "TestSSRFDetection"
 location: "L263"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/TestSSRFDetection
 ---
 
 # .test_member_denied_ssh_private_tool_in_group()
@@ -15,4 +15,4 @@ tags:
 - [[Regular member denied ssh (private tool) in group context.]] - `rationale_for` [EXTRACTED]
 - [[TestMemberGroupContext]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

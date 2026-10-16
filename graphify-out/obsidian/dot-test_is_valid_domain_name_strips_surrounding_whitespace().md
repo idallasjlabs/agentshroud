@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestDomainValidationHelper"
+community: "test_collaborator_tracker.py"
 location: "L3991"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDomainValidationHelper
+  - community/test_collaborator_trackerpy
 ---
 
 # .test_is_valid_domain_name_strips_surrounding_whitespace()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDomainValidationHelper]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDomainValidationHelper
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[A failed send retries (bounded) within the same day, not next-day.]] - `rationale_for` [EXTRACTED]
 - [[TestCveReportSchedulerRetry]] - `method` [EXTRACTED]
-- [[datetime_4]] - `calls` [EXTRACTED]
+- [[datetime_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

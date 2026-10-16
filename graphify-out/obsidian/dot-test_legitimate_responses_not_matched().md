@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "TestFabricatedSecurityNotice"
+community: "TestOutboundInfoFilter"
 location: "L573"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice
+  - community/TestOutboundInfoFilter
 ---
 
 # .test_legitimate_responses_not_matched()
@@ -16,4 +16,4 @@ tags:
 - [[Normal helpful responses must NOT trigger the pattern.]] - `rationale_for` [EXTRACTED]
 - [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

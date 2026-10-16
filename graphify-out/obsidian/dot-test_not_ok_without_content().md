@@ -12,7 +12,7 @@ tags:
 # .test_not_ok_without_content()
 
 ## Connections
-- [[FetchOutcome]] - `calls` [EXTRACTED]
+- [[FetchOutcome_1]] - `calls` [EXTRACTED]
 - [[TestFetchOutcome]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy

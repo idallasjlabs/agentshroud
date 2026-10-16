@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Action"
+community: "MiddlewareManager"
 location: "L429"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Action
+  - community/MiddlewareManager
 ---
 
 # .test_invalid_action_resource_combinations()
@@ -16,4 +16,4 @@ tags:
 - [[Test handling of invalid actionresource combinations.]] - `rationale_for` [EXTRACTED]
 - [[TestRBACErrorHandling]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Action
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

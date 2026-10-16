@@ -17,7 +17,7 @@ tags:
 - [[ApprovalStore_1]] - `calls` [INFERRED]
 - [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
 - [[SCRUM-110 restart recovery must reschedule the timeout with the         item's]] - `rationale_for` [EXTRACTED]
-- [[TestPersistence_1]] - `method` [EXTRACTED]
+- [[TestPersistence]] - `method` [EXTRACTED]
 - [[ToolRiskConfig]] - `calls` [EXTRACTED]
 - [[ToolRiskPolicy]] - `calls` [EXTRACTED]
 

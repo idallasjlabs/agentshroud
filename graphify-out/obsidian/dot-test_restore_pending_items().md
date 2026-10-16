@@ -17,6 +17,6 @@ tags:
 - [[ApprovalStore_1]] - `calls` [INFERRED]
 - [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
 - [[Test that pending items are restored after restart.]] - `rationale_for` [EXTRACTED]
-- [[TestPersistence_1]] - `method` [EXTRACTED]
+- [[TestPersistence]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

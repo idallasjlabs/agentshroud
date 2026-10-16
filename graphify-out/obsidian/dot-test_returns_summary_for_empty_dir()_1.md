@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_security_toolchain.py"
+community: "test_collaborator_greeter.py"
 location: "L366"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/test_collaborator_greeterpy
 ---
 
 # .test_returns_summary_for_empty_dir()
@@ -15,4 +15,4 @@ tags:
 - [[TestGetWazuhSummary]] - `method` [EXTRACTED]
 - [[get_wazuh_summary()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy

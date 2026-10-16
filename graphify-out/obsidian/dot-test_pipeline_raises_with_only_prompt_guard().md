@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "PIIConfig"
+community: "PipelineAction"
 location: "L364"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/PipelineAction
 ---
 
 # .test_pipeline_raises_with_only_prompt_guard()
@@ -17,4 +17,4 @@ tags:
 - [[SecurityPipeline_2]] - `calls` [EXTRACTED]
 - [[TestE2E10FailClosed]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

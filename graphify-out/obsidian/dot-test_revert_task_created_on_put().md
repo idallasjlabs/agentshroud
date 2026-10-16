@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "ModeRequest"
+community: "test_prompt_guard.py"
 location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/test_prompt_guardpy
 ---
 
 # .test_revert_task_created_on_put()
@@ -18,4 +18,4 @@ tags:
 - [[_make_app()]] - `calls` [EXTRACTED]
 - [[set_mode()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModeRequest
+#graphify/code #graphify/EXTRACTED #community/test_prompt_guardpy

@@ -12,7 +12,7 @@ tags:
 # .test_outbound_pipeline_called_when_available()
 
 ## Connections
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[When pipeline is set, process_outbound must be called on outbound messages.]] - `rationale_for` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]

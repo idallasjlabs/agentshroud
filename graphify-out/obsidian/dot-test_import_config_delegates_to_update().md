@@ -12,6 +12,6 @@ tags:
 # .test_import_config_delegates_to_update()
 
 ## Connections
-- [[TestConfig_1]] - `method` [EXTRACTED]
+- [[TestConfig]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ModeRequest

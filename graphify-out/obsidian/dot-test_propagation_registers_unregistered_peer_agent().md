@@ -16,6 +16,6 @@ tags:
 - [[Peer agent not registered in TrustManager should be auto-registered.]] - `rationale_for` [EXTRACTED]
 - [[TestGetIncidentsLimit]] - `method` [EXTRACTED]
 - [[TrustConfig]] - `calls` [EXTRACTED]
-- [[TrustManager_3]] - `references` [EXTRACTED]
+- [[TrustManager_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

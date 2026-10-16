@@ -16,6 +16,6 @@ tags:
 - [[TestInboundPipelineExceptionNonOwner]] - `method` [EXTRACTED]
 - [[_getUpdates_response()]] - `calls` [EXTRACTED]
 - [[_make_proxy()_2]] - `calls` [EXTRACTED]
-- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_make_update()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PipelineAction

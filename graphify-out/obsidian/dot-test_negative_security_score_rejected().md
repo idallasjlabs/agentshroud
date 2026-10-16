@@ -12,7 +12,7 @@ tags:
 # .test_negative_security_score_rejected()
 
 ## Connections
-- [[CompetitorEntry]] - `calls` [EXTRACTED]
+- [[CompetitorEntry_1]] - `calls` [EXTRACTED]
 - [[TestCompetitiveIntelReportSchema]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Action"
+community: "MiddlewareManager"
 location: "L417"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Action
+  - community/MiddlewareManager
 ---
 
 # .test_invalid_user_id()
@@ -16,4 +16,4 @@ tags:
 - [[Test handling of invalid user IDs.]] - `rationale_for` [EXTRACTED]
 - [[TestRBACErrorHandling]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Action
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

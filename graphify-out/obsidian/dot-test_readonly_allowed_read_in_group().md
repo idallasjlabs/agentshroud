@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "RBACConfig"
+community: "test_prompt_guard.py"
 location: "L213"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/test_prompt_guardpy
 ---
 
 # .test_readonly_allowed_read_in_group()
@@ -15,4 +15,4 @@ tags:
 - [[Read-only member IS allowed read tool in group context.]] - `rationale_for` [EXTRACTED]
 - [[TestReadOnlyMemberGroupContext]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/test_prompt_guardpy

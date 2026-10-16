@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_security_toolchain.py"
+community: "test_collaborator_greeter.py"
 location: "L339"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/test_collaborator_greeterpy
 ---
 
 # .test_not_run_when_no_alert_dir()
 
 ## Connections
-- [[Path_29]] - `calls` [EXTRACTED]
+- [[Path_28]] - `calls` [EXTRACTED]
 - [[TestGetWazuhSummary]] - `method` [EXTRACTED]
 - [[get_wazuh_summary()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy

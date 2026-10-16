@@ -12,7 +12,7 @@ tags:
 # .test_report_has_content_hash()
 
 ## Connections
-- [[CompetitiveIntelReport]] - `calls` [EXTRACTED]
+- [[CompetitiveIntelReport_1]] - `calls` [EXTRACTED]
 - [[TestIntelReportHashIntegrity]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

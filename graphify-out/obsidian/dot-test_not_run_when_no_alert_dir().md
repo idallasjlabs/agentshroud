@@ -12,7 +12,7 @@ tags:
 # .test_not_run_when_no_alert_dir()
 
 ## Connections
-- [[Path_29]] - `calls` [EXTRACTED]
+- [[Path_28]] - `calls` [EXTRACTED]
 - [[TestGetFalcoSummary]] - `method` [EXTRACTED]
 - [[get_falco_summary()]] - `calls` [EXTRACTED]
 

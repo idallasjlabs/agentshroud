@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "MiddlewareManager"
 location: "L622"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/MiddlewareManager
 ---
 
 # .test_send_event_serializes()
 
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[SOCWebSocketHandler]] - `calls` [EXTRACTED]
+- [[SOCWebSocketHandler_2]] - `calls` [EXTRACTED]
 - [[TestSendEventAndKeepalive]] - `method` [EXTRACTED]
 - [[WSEvent]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

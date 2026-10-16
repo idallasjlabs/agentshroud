@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestFalcoSummary"
+community: "TestOutboundInfoFilter"
 location: "L369"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFalcoSummary
+  - community/TestOutboundInfoFilter
 ---
 
 # .test_installed_not_running_is_clean_note()
 
 ## Connections
-- [[TestFalcoSummary_1]] - `method` [EXTRACTED]
+- [[TestFalcoSummary]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFalcoSummary
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

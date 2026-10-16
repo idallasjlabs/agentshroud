@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "AuditChain"
+community: "AgentTarget"
 location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/AgentTarget
 ---
 
 # .test_old_key_in_redaction_after_rotation()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKeyRotation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

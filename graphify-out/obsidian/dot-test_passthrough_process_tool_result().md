@@ -12,7 +12,7 @@ tags:
 # .test_passthrough_process_tool_result()
 
 ## Connections
-- [[MCPProxy_1]] - `calls` [EXTRACTED]
+- [[MCPProxy]] - `calls` [EXTRACTED]
 - [[MCPToolResult]] - `calls` [EXTRACTED]
 - [[TestPassthrough]] - `method` [EXTRACTED]
 - [[make_config()]] - `calls` [EXTRACTED]

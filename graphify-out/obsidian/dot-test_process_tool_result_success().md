@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[MiddlewareManager]] - `calls` [EXTRACTED]
 - [[RedactionDetail]] - `calls` [EXTRACTED]
-- [[RedactionResult_3]] - `calls` [EXTRACTED]
+- [[RedactionResult_2]] - `calls` [EXTRACTED]
 - [[Test successful tool result processing]] - `rationale_for` [EXTRACTED]
 - [[TestMiddlewareIntegration]] - `method` [EXTRACTED]
 

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_fake_urlopen_factory()]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestForwardToTelegramTimeouts]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 - [[getUpdates must use a 60s urlopen timeout so the long-poll is not aborted early.]] - `rationale_for` [EXTRACTED]

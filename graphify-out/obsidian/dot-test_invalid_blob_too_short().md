@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "AlertDispatcher"
+community: "KillSwitchMonitor"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/KillSwitchMonitor
 ---
 
 # .test_invalid_blob_too_short()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEncryptedStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

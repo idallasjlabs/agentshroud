@@ -12,7 +12,7 @@ tags:
 # .test_managed_when_has_failures()
 
 ## Connections
-- [[TestScoreComplianceAuditing]] - `method` [EXTRACTED]
+- [[TestScoreComplianceAuditing_1]] - `method` [EXTRACTED]
 - [[_openscap_warn()]] - `calls` [EXTRACTED]
 - [[_score_compliance_auditing()]] - `calls` [EXTRACTED]
 

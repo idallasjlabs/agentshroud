@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_encoding_detector.py"
 type: "code"
-community: "PIIConfig"
+community: "InjectionAction"
 location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/InjectionAction
 ---
 
 # .test_plain_text_no_detection()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEncodingDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/InjectionAction

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Directory exists but contains only fs scan files — returns .]] - `rationale_for` [EXTRACTED]
-- [[Path_29]] - `calls` [EXTRACTED]
+- [[Path_28]] - `calls` [EXTRACTED]
 - [[TestGetTrivyImageSummaries]] - `method` [EXTRACTED]
 - [[_clean_trivy_report()]] - `calls` [EXTRACTED]
 - [[get_trivy_image_summaries()]] - `calls` [EXTRACTED]

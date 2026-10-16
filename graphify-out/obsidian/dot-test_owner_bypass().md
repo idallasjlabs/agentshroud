@@ -1,19 +1,17 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "_req"
-location: "L440"
+community: "ApprovalQueueConfig"
+location: "L775"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req
+  - community/ApprovalQueueConfig
 ---
 
 # .test_owner_bypass()
 
 ## Connections
-- [[TestContextGuard_1]] - `method` [EXTRACTED]
-- [[_FakeRBAC_1]] - `calls` [EXTRACTED]
-- [[_req()_1]] - `calls` [EXTRACTED]
+- [[TestIsPathAllowedForUser]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

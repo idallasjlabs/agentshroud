@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Action"
+community: "MiddlewareManager"
 location: "L364"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Action
+  - community/MiddlewareManager
 ---
 
 # .test_rbac_initialization_in_middleware()
@@ -15,4 +15,4 @@ tags:
 - [[Test that RBAC is properly initialized in middleware.]] - `rationale_for` [EXTRACTED]
 - [[TestRBACIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Action
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

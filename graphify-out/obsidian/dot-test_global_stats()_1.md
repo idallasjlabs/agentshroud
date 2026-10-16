@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "TestPathIsolationManager"
+community: "TestToolChainAnalyzer"
 location: "L363"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/TestToolChainAnalyzer
 ---
 
 # .test_global_stats()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Test getting global statistics.]] - `rationale_for` [EXTRACTED]
 - [[Test getting statistics.]] - `rationale_for` [EXTRACTED]
-- [[TestToolChainAnalyzer_1]] - `method` [EXTRACTED]
+- [[TestToolChainAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

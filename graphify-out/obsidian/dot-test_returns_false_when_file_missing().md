@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
 community: "test_daily_cve_report.py"
-location: "L1299"
+location: "L890"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # .test_returns_false_when_file_missing()
 
 ## Connections
-- [[TestAlreadyIngestedGhsaToday]] - `method` [EXTRACTED]
+- [[TestAlreadyCheckedUpstreamToday]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

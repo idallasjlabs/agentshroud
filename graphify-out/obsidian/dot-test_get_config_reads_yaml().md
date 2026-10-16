@@ -12,6 +12,6 @@ tags:
 # .test_get_config_reads_yaml()
 
 ## Connections
-- [[TestConfig_1]] - `method` [EXTRACTED]
+- [[TestConfig]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ModeRequest

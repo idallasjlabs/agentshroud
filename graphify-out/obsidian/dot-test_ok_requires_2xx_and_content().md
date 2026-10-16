@@ -12,7 +12,7 @@ tags:
 # .test_ok_requires_2xx_and_content()
 
 ## Connections
-- [[FetchOutcome]] - `calls` [EXTRACTED]
+- [[FetchOutcome_1]] - `calls` [EXTRACTED]
 - [[TestFetchOutcome]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy

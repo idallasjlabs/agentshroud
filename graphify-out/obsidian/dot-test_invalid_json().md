@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestGetSbom"
+community: "TestOutboundInfoFilter"
 location: "L502"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestGetSbom
+  - community/TestOutboundInfoFilter
 ---
 
 # .test_invalid_json()
@@ -15,4 +15,4 @@ tags:
 - [[TestGetSbom]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestGetSbom
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

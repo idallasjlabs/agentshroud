@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: ".test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_form_message"
 location: "L1704"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_form_message
 ---
 
 # .test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_form_message()
 
 ## Connections
 - [[Form message should keep healthcheck SKILL.md text unchanged when sandbox hint i]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_form_message

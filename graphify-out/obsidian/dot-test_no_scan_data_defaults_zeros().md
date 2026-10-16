@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Bot with no image scan data should default criticalhighmedium to 0.]] - `rationale_for` [EXTRACTED]
-- [[TestComputeBotScorecard_1]] - `method` [EXTRACTED]
+- [[TestComputeBotScorecard]] - `method` [EXTRACTED]
 - [[_make_app_state()]] - `calls` [EXTRACTED]
 - [[_make_bot_config()]] - `calls` [EXTRACTED]
 - [[compute_bot_scorecard()]] - `calls` [EXTRACTED]

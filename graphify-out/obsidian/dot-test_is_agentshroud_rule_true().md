@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "test_security_toolchain.py"
+community: "FalcoAlertWatcher"
 location: "L598"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/FalcoAlertWatcher
 ---
 
 # .test_is_agentshroud_rule_true()
@@ -15,4 +15,4 @@ tags:
 - [[TestFalcoParser]] - `method` [EXTRACTED]
 - [[is_agentshroud_rule()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "test_telegram_proxy_outbound.py"
+community: "test_collaborator_tracker.py"
 location: "L3795"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_outboundpy
+  - community/test_collaborator_trackerpy
 ---
 
 # .test_rewrite_known_runtime_errors_matches_healthcheck_skill_sandbox_error()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestRuntimeRewriteHelpers]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

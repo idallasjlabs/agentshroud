@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "TestFabricatedSecurityNotice"
+community: "TestOutboundInfoFilter"
 location: "L532"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice
+  - community/TestOutboundInfoFilter
 ---
 
 # .test_present_tense()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_has_fabricated_match()]] - `calls` [EXTRACTED]
 - [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

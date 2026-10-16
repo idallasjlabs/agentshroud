@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestIsFresh"
+community: "TestOutboundInfoFilter"
 location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestIsFresh
+  - community/TestOutboundInfoFilter
 ---
 
 # .test_old_file_returns_false()
@@ -16,4 +16,4 @@ tags:
 - [[_age()]] - `calls` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestIsFresh
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

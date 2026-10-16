@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestWazuhSummary"
+community: "TestPathIsolationManager"
 location: "L414"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestWazuhSummary
+  - community/TestPathIsolationManager
 ---
 
 # .test_running_no_alert_dir()
 
 ## Connections
-- [[TestWazuhSummary_1]] - `method` [EXTRACTED]
+- [[TestWazuhSummary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestWazuhSummary
+#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager

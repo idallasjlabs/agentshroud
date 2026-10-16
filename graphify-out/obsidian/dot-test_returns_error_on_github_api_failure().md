@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "TestRunUpstreamCveCheck"
+community: "TestOutboundInfoFilter"
 location: "L578"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestRunUpstreamCveCheck
+  - community/TestOutboundInfoFilter
 ---
 
 # .test_returns_error_on_github_api_failure()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestRunUpstreamCveCheck]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestRunUpstreamCveCheck
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

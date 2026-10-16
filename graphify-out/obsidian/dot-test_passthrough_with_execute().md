@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[FakeConn]] - `calls` [EXTRACTED]
-- [[MCPProxy_1]] - `calls` [EXTRACTED]
+- [[MCPProxy]] - `calls` [EXTRACTED]
 - [[TestPassthrough]] - `method` [EXTRACTED]
 - [[make_call()]] - `calls` [EXTRACTED]
 - [[make_config()]] - `calls` [EXTRACTED]

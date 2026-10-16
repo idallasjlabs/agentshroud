@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_scanner_integration.py"
+community: "test_collaborator_greeter.py"
 location: "L498"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/test_collaborator_greeterpy
 ---
 
 # .test_overall_not_configured_when_all_not_run()
@@ -16,4 +16,4 @@ tags:
 - [[TestAggregateResults_1]] - `method` [EXTRACTED]
 - [[aggregate_results()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy

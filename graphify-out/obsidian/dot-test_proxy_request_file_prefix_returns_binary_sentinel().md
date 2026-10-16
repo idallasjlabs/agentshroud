@@ -12,7 +12,7 @@ tags:
 # .test_proxy_request_file_prefix_returns_binary_sentinel()
 
 ## Connections
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestFileDownload]] - `method` [EXTRACTED]
 - [[proxy_request with path_prefix='file' returns _raw_body sentinel (no JSON parse]] - `rationale_for` [EXTRACTED]
 

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Bot not in config → image='', scan skipped, score based on egress only.]] - `rationale_for` [EXTRACTED]
-- [[TestComputeBotScorecard_1]] - `method` [EXTRACTED]
+- [[TestComputeBotScorecard]] - `method` [EXTRACTED]
 - [[_make_app_state()]] - `calls` [EXTRACTED]
 - [[compute_bot_scorecard()]] - `calls` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Action"
+community: "MiddlewareManager"
 location: "L438"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Action
+  - community/MiddlewareManager
 ---
 
 # .test_rbac_manager_without_config()
@@ -16,4 +16,4 @@ tags:
 - [[Test RBAC manager initialization without explicit config.]] - `rationale_for` [EXTRACTED]
 - [[TestRBACErrorHandling]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Action
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

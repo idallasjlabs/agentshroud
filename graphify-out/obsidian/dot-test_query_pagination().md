@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "DataLedger"
+community: "PIIConfig"
 location: "L156"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/PIIConfig
 ---
 
 # .test_query_pagination()
@@ -15,4 +15,4 @@ tags:
 - [[Paginated queries return correct subsets.]] - `rationale_for` [EXTRACTED]
 - [[TestChainExportAndVerification]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataLedger
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

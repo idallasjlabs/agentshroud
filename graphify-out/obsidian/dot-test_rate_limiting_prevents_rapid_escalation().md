@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "PIIConfig"
+community: "TrustConfig"
 location: "L890"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/TrustConfig
 ---
 
 # .test_rate_limiting_prevents_rapid_escalation()
@@ -15,6 +15,6 @@ tags:
 - [[Rapid successes should be capped by rate limiting.]] - `rationale_for` [EXTRACTED]
 - [[TestTrustManagerHardened]] - `method` [EXTRACTED]
 - [[TrustConfig]] - `calls` [EXTRACTED]
-- [[TrustManager]] - `calls` [EXTRACTED]
+- [[TrustManager_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

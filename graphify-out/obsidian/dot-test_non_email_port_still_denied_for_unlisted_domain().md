@@ -12,7 +12,7 @@ tags:
 # .test_non_email_port_still_denied_for_unlisted_domain()
 
 ## Connections
-- [[EgressFilter_1]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[EgressPolicy]] - `calls` [EXTRACTED]
 - [[Port 465 on an un-allowlisted domain is still denied in enforce mode.]] - `rationale_for` [EXTRACTED]

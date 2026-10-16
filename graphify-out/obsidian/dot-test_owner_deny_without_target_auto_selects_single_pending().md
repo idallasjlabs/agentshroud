@@ -16,9 +16,9 @@ tags:
 - [[Owner deny with one pending request should deny that request.]] - `rationale_for` [EXTRACTED]
 - [[Owner deny without target, with 2+ pending collaborator         requests, is ge]] - `rationale_for` [EXTRACTED]
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[_make_update()]] - `calls` [EXTRACTED]
+- [[_make_update()_1]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_owner_deny_without_target_auto_selects_single_pending

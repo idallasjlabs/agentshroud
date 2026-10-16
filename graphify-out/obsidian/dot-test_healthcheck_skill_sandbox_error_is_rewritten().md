@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Healthcheck SKILL.md sandbox errors should be rewritten to local-healthcheck gui]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 

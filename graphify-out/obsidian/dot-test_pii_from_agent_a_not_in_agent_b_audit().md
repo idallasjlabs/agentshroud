@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "PIIConfig"
+community: "PipelineAction"
 location: "L339"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/PipelineAction
 ---
 
 # .test_pii_from_agent_a_not_in_agent_b_audit()
@@ -15,4 +15,4 @@ tags:
 - [[PII redacted for agent A does not leak into agent B's audit trail.]] - `rationale_for` [EXTRACTED]
 - [[TestE2E09SessionIsolation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

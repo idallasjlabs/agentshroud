@@ -12,8 +12,8 @@ tags:
 # .test_report_roundtrips_via_json()
 
 ## Connections
-- [[CompetitiveIntelReport]] - `calls` [EXTRACTED]
-- [[CompetitorEntry]] - `calls` [EXTRACTED]
+- [[CompetitiveIntelReport_1]] - `calls` [EXTRACTED]
+- [[CompetitorEntry_1]] - `calls` [EXTRACTED]
 - [[TestCompetitiveIntelReportSchema]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport
