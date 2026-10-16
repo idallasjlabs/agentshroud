@@ -35,8 +35,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_test_daily_cve_report.py]]
-- 1 edge to [[_COMMUNITY_load_config]]
 - 1 edge to [[_COMMUNITY_parse_trivy_output]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
 
 ## Top bridge nodes
 - [[_build_image_targets()]] - degree 13, connects to 3 communities

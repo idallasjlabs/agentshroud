@@ -10,14 +10,14 @@ members: 65
 **Members:** 65 nodes
 
 ## Members
-- [[dot-__init__()_191]] - code - gateway/security/delegation.py
+- [[dot-__init__()_188]] - code - gateway/security/delegation.py
 - [[dot-_load()]] - code - gateway/security/delegation.py
 - [[dot-_require_owner()]] - code - gateway/security/delegation.py
 - [[dot-_revoke_by_user_privilege()]] - code - gateway/security/delegation.py
 - [[dot-_save()]] - code - gateway/security/delegation.py
 - [[dot-cleanup_expired()_3]] - code - gateway/security/delegation.py
 - [[dot-delegate()]] - code - gateway/security/delegation.py
-- [[dot-from_dict()_11]] - code - gateway/security/delegation.py
+- [[dot-from_dict()_9]] - code - gateway/security/delegation.py
 - [[dot-get_active_delegations()]] - code - gateway/security/delegation.py
 - [[dot-get_delegations_for_user()]] - code - gateway/security/delegation.py
 - [[dot-is_active()]] - code - gateway/security/delegation.py
@@ -46,7 +46,7 @@ members: 65
 - [[dot-test_revoke_all_for_user()]] - code - gateway/tests/test_delegation.py
 - [[dot-test_revoke_removes_delegation()]] - code - gateway/tests/test_delegation.py
 - [[dot-test_revoke_returns_false_when_nothing_to_revoke()]] - code - gateway/tests/test_delegation.py
-- [[dot-to_dict()_16]] - code - gateway/security/delegation.py
+- [[dot-to_dict()_15]] - code - gateway/security/delegation.py
 - [[A single time-bounded privilege delegation record.]] - rationale - gateway/security/delegation.py
 - [[Create a time-bounded delegation.          Args             owner_id Must matc]] - rationale - gateway/security/delegation.py
 - [[Delegation_1]] - code - gateway/security/delegation.py
@@ -84,21 +84,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Enum]]
 - 3 edges to [[_COMMUNITY_socrouter.py]]
-- 2 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
-- 2 edges to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_EgressApprovalQueue]]
-- 1 edge to [[_COMMUNITY_RBACConfig]]
-- 1 edge to [[_COMMUNITY_SkillGuard]]
-- 1 edge to [[_COMMUNITY_Path]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy_2]]
+- 2 edges to [[_COMMUNITY_Action]]
+- 2 edges to [[_COMMUNITY_dot-_filter_outbound]]
+- 1 edge to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 1 edge to [[_COMMUNITY_TestEgressApprovalQueue]]
+- 1 edge to [[_COMMUNITY_Path_2]]
+- 1 edge to [[_COMMUNITY_Path_3]]
 - 1 edge to [[_COMMUNITY_telegram_proxy.py]]
-- 1 edge to [[_COMMUNITY_dot-_filter_outbound]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
 
 ## Top bridge nodes
 - [[DelegationPrivilege]] - degree 25, connects to 6 communities
 - [[DelegationManager_1]] - degree 26, connects to 2 communities
 - [[delegation.py]] - degree 6, connects to 2 communities
-- [[dot-from_dict()_11]] - degree 3, connects to 1 community
+- [[dot-from_dict()_9]] - degree 3, connects to 1 community
 - [[ValueError]] - degree 2, connects to 1 community

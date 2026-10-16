@@ -26,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps Agent_2]]
+- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps Agent_1]]
 
 ## Top bridge nodes
 - [[Operating Rules (Non-Negotiable)]] - degree 7, connects to 1 community

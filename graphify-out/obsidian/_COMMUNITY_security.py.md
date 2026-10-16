@@ -13,9 +13,9 @@ members: 14
 - [[Configuration  Environment Variables_21]] - document - docs/vault/02 - Modules/Runtime/security.py.md
 - [[Function Details_37]] - document - docs/vault/02 - Modules/Runtime/security.py.md
 - [[Key Classes  Functions_39]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[Purpose_158]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[Purpose_157]] - document - docs/vault/02 - Modules/Runtime/security.py.md
 - [[Related_43]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[Responsibilities_41]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[Responsibilities_40]] - document - docs/vault/02 - Modules/Runtime/security.py.md
 - [[Security Feature Registry]] - document - docs/vault/02 - Modules/Runtime/security.py.md
 - [[_validate_runtime(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md
 - [[get_features_for_runtime(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md

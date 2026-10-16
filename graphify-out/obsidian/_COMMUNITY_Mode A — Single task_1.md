@@ -10,13 +10,13 @@ members: 27
 **Members:** 27 nodes
 
 ## Members
-- [[Guardrails_7]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Guardrails_6]] - document - docker/config/hermes/skills/i-odev/SKILL.md
 - [[Invocation_5]] - document - docker/config/hermes/skills/i-odev/SKILL.md
 - [[Jira ticket — every development batch gets one_5]] - document - docker/config/hermes/skills/i-odev/SKILL.md
 - [[Mode A — Single task_1]] - document - docker/config/hermes/skills/i-odev/SKILL.md
 - [[Mode B — Comprehensive review sweep_5]] - document - docker/config/hermes/skills/i-odev/SKILL.md
 - [[Reviewers and fixer available to you_5]] - document - docker/config/hermes/skills/i-odev/SKILL.md
-- [[Role_32]] - document - docker/config/hermes/skills/i-odev/SKILL.md
+- [[Role_33]] - document - docker/config/hermes/skills/i-odev/SKILL.md
 - [[Skill OpenClaw Dev Workflow (ODEV)_2]] - document - docker/config/hermes/skills/i-odev/SKILL.md
 - [[Step 1 — One branch + worktree for the whole sweep_5]] - document - docker/config/hermes/skills/i-odev/SKILL.md
 - [[Step 1 — Sync and confirm clean state_1]] - document - docker/config/hermes/skills/i-odev/SKILL.md

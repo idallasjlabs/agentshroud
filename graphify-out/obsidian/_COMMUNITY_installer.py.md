@@ -11,7 +11,7 @@ members: 16
 
 ## Members
 - [[AgentShroud Web Installer — Step-by-step installation wizard.]] - rationale - gateway/web/installer.py
-- [[BaseModel_1]] - code
+- [[BaseModel_2]] - code
 - [[Check system prerequisites for installation.]] - rationale - gateway/web/installer.py
 - [[Get available runtimes with recommendations.]] - rationale - gateway/web/installer.py
 - [[InstallConfig]] - code - gateway/web/installer.py
@@ -20,11 +20,11 @@ members: 16
 - [[Serve the installer wizard HTML.]] - rationale - gateway/web/installer.py
 - [[Start the installation process. This endpoint kicks off the install and returns…]] - rationale - gateway/web/installer.py
 - [[check_prerequisites()]] - code - gateway/web/installer.py
-- [[get]] - code
+- [[get_2]] - code
 - [[get_runtimes()]] - code - gateway/web/installer.py
 - [[installer.py_2]] - code - gateway/web/installer.py
 - [[installer_page()]] - code - gateway/web/installer.py
-- [[post]] - code
+- [[post_2]] - code
 - [[start_install()]] - code - gateway/web/installer.py
 
 ## Live Query (requires Dataview plugin)

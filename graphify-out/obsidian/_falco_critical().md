@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-test_managed_when_has_criticals()]] - `calls` [EXTRACTED]
-- [[Any_74]] - `references` [EXTRACTED]
+- [[Any_71]] - `references` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

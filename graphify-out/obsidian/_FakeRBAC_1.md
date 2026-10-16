@@ -12,9 +12,9 @@ tags:
 # _FakeRBAC
 
 ## Connections
-- [[dot-__init__()_84]] - `method` [EXTRACTED]
-- [[dot-check_permission()_1]] - `method` [EXTRACTED]
-- [[dot-check_tool_permission()]] - `method` [EXTRACTED]
+- [[dot-__init__()_90]] - `method` [EXTRACTED]
+- [[dot-check_permission()_2]] - `method` [EXTRACTED]
+- [[dot-check_tool_permission()_1]] - `method` [EXTRACTED]
 - [[dot-get_user_role()_1]] - `method` [EXTRACTED]
 - [[dot-test_owner_bypass()]] - `calls` [EXTRACTED]
 - [[dot-test_owner_bypass()_1]] - `calls` [EXTRACTED]

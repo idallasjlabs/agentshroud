@@ -12,7 +12,7 @@ tags:
 # _run_wrapper_capture_bearer()
 
 ## Connections
-- [[CompletedProcess_2]] - `references` [EXTRACTED]
+- [[CompletedProcess_1]] - `references` [EXTRACTED]
 - [[Run the real wrapper with a fake `curl` that records its argv.      The stub cur]] - `rationale_for` [EXTRACTED]
 - [[test_bots_ssh_exec_wrapper.py]] - `contains` [EXTRACTED]
 - [[test_no_token_source_exits_nonzero_and_sends_no_request()]] - `calls` [EXTRACTED]

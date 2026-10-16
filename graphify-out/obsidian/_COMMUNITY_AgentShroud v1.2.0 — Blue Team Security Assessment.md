@@ -11,7 +11,7 @@ members: 9
 
 ## Members
 - [[AgentShroud v1.2.0 — Blue Team Security Assessment]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
-- [[Method]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[Method_1]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
 - [[Previously FIXED findings — verification]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
 - [[Previously OPEN findings — current status]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
 - [[§1 — Re-audit of v0.8.0 Prior Findings]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
@@ -28,9 +28,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_§5 — Trivy Container Scan Results]]
 - 1 edge to [[_COMMUNITY_§3 — Bot Pipeline Integrity Checks]]
 - 1 edge to [[_COMMUNITY_§4 — Hermes-Specific Section (NEW — first assessment)]]
+- 1 edge to [[_COMMUNITY_§5 — Trivy Container Scan Results]]
 - 1 edge to [[_COMMUNITY_AgentShroud v1.2.0 — Red Team Assessment]]
 
 ## Top bridge nodes

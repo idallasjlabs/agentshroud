@@ -1,13 +1,13 @@
 ---
 type: community
-cohesion: 0.10
-members: 46
+cohesion: 0.09
+members: 50
 ---
 
 # SkillGuard
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 46 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 50 nodes
 
 ## Members
 - [[dot-test_1password_env_dump_flags()]] - code - gateway/tests/test_skill_guard.py
@@ -15,9 +15,12 @@ members: 46
 - [[dot-test_at_limit_file_scans_normally()]] - code - gateway/tests/test_skill_guard.py
 - [[dot-test_base64_exec_payload_blocks()]] - code - gateway/tests/test_skill_guard.py
 - [[dot-test_binary_content_is_scanned_not_crash()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_clean_skill_allows()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_clean_skill_tree_allows()]] - code - gateway/tests/test_skill_guard.py
 - [[dot-test_crypto_miner_indicator_flags()]] - code - gateway/tests/test_skill_guard.py
 - [[dot-test_curl_pipe_to_shell_blocks()]] - code - gateway/tests/test_skill_guard.py
 - [[dot-test_dotdot_traversal_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_empty_content_allows()]] - code - gateway/tests/test_skill_guard.py
 - [[dot-test_eval_of_decoded_blocks()]] - code - gateway/tests/test_skill_guard.py
 - [[dot-test_large_opaque_base64_blob_flags()]] - code - gateway/tests/test_skill_guard.py
 - [[dot-test_line_at_out_of_range_returns_empty()]] - code - gateway/tests/test_skill_guard.py
@@ -32,18 +35,19 @@ members: 46
 - [[dot-test_requests_post_to_external_host_flags()]] - code - gateway/tests/test_skill_guard.py
 - [[dot-test_reverse_shell_indicator_blocks()]] - code - gateway/tests/test_skill_guard.py
 - [[dot-test_scan_rejects_non_string_content()]] - code - gateway/tests/test_skill_guard.py
-- [[dot-test_severity_ordering()_1]] - code - gateway/tests/test_skill_guard.py
+- [[dot-test_severity_ordering()]] - code - gateway/tests/test_skill_guard.py
 - [[dot-test_single_dotdot_traversal_flags()]] - code - gateway/tests/test_skill_guard.py
 - [[dot-test_subprocess_shell_true_flags()]] - code - gateway/tests/test_skill_guard.py
 - [[dot-test_tree_blocks_on_any_critical()]] - code - gateway/tests/test_skill_guard.py
 - [[dot-test_tree_flags_on_medium()]] - code - gateway/tests/test_skill_guard.py
 - [[dot-test_urllib_urlopen_flags()]] - code - gateway/tests/test_skill_guard.py
 - [[dot-test_wget_pipe_sh_blocks()]] - code - gateway/tests/test_skill_guard.py
-- [[Raised when SkillGuard is handed content it cannot scan.]] - rationale - gateway/security/skill_guard.py
-- [[ScanResult_3]] - code - gateway/tests/test_skill_guard.py
+- [[IntEnum]] - code
+- [[Ordered severity ladder (``IntEnum`` so comparisons work).]] - rationale - gateway/security/skill_guard.py
+- [[Severity]] - code - gateway/security/skill_guard.py
 - [[SkillGuard]] - code - gateway/tests/test_skill_guard.py
-- [[SkillScanError]] - code - gateway/security/skill_guard.py
 - [[TestAggregation]] - code - gateway/tests/test_skill_guard.py
+- [[TestCleanSkill]] - code - gateway/tests/test_skill_guard.py
 - [[TestExecOfDownload]] - code - gateway/tests/test_skill_guard.py
 - [[TestExfiltration]] - code - gateway/tests/test_skill_guard.py
 - [[TestKnownMalicious]] - code - gateway/tests/test_skill_guard.py
@@ -54,7 +58,7 @@ members: 46
 - [[TestSecretAccess]] - code - gateway/tests/test_skill_guard.py
 - [[_finding_categories()]] - code - gateway/tests/test_skill_guard.py
 - [[gatewaysecurityskill_guard.py (SkillGuard)]] - code - gateway/security/skill_guard.py
-- [[guard()_3]] - code - gateway/tests/test_skill_guard.py
+- [[guard()_1]] - code - gateway/tests/test_skill_guard.py
 - [[test_skill_guard.py]] - code - gateway/tests/test_skill_guard.py
 
 ## Live Query (requires Dataview plugin)
@@ -65,19 +69,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 26 edges to [[_COMMUNITY_SkillGuard_1]]
-- 16 edges to [[_COMMUNITY_Severity]]
-- 13 edges to [[_COMMUNITY_Recommendation_1]]
-- 9 edges to [[_COMMUNITY_Path_2]]
-- 5 edges to [[_COMMUNITY_TestCleanSkill]]
-- 1 edge to [[_COMMUNITY_DelegationManager]]
+- 43 edges to [[_COMMUNITY_SkillGuard_1]]
+- 24 edges to [[_COMMUNITY_Path_2]]
+- 1 edge to [[_COMMUNITY_TrustConfig]]
+- 1 edge to [[_COMMUNITY_ConsentFramework]]
+- 1 edge to [[_COMMUNITY_CrossBotTrustLedger]]
+- 1 edge to [[_COMMUNITY_DifferentialPIIDetector]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher_1]]
 - 1 edge to [[_COMMUNITY_ModeRequest]]
 - 1 edge to [[_COMMUNITY_sync-llm-settings.sh]]
-- 1 edge to [[_COMMUNITY_FetchOutcome]]
+- 1 edge to [[_COMMUNITY_FetchOutcome_1]]
 
 ## Top bridge nodes
-- [[test_skill_guard.py]] - degree 28, connects to 8 communities
-- [[SkillScanError]] - degree 24, connects to 5 communities
-- [[SkillGuard]] - degree 36, connects to 4 communities
-- [[TestAggregation]] - degree 12, connects to 3 communities
-- [[TestPathTraversal]] - degree 10, connects to 3 communities
+- [[IntEnum]] - degree 7, connects to 6 communities
+- [[test_skill_guard.py]] - degree 28, connects to 5 communities
+- [[SkillGuard]] - degree 36, connects to 2 communities
+- [[Severity]] - degree 24, connects to 2 communities
+- [[TestAggregation]] - degree 12, connects to 2 communities

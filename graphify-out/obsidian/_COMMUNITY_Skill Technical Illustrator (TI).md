@@ -17,7 +17,7 @@ members: 22
 - [[Brand Theme Block (Mermaid)]] - document - .agents/skills/i-ti/SKILL.md
 - [[Core Discipline Understand → Diagram → Validate → Export]] - document - .agents/skills/i-ti/SKILL.md
 - [[Data Flow — How data moves and transforms]] - document - .agents/skills/i-ti/SKILL.md
-- [[Dependencies_12]] - document - .agents/skills/i-ti/SKILL.md
+- [[Dependencies_13]] - document - .agents/skills/i-ti/SKILL.md
 - [[Diagram Types and Data Lakehouse Examples]] - document - .agents/skills/i-ti/SKILL.md
 - [[ER Diagram — Table relationships and control schema]] - document - .agents/skills/i-ti/SKILL.md
 - [[File and Directory Conventions]] - document - .agents/skills/i-ti/SKILL.md

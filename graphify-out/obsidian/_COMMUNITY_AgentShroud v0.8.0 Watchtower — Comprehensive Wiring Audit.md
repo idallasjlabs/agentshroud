@@ -20,7 +20,7 @@ members: 21
 - [[8. SidecarScanner — External Tool Interface]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
 - [[9. Audit Store Not Passed to Pipeline]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
 - [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Executive Summary_13]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Executive Summary_12]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
 - [[Fix Priority List]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
 - [[Inbound Request Path (middleware.py → process_request)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
 - [[Infrastructure (lifespan.py — initialized at startup)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md

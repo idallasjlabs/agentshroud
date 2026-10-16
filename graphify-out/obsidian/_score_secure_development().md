@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_at_least_one()]] - `calls` [EXTRACTED]
 - [[dot-test_three_when_semgrep_and_precommit_present()]] - `calls` [EXTRACTED]
-- [[Path_57]] - `calls` [EXTRACTED]
+- [[Path_33]] - `calls` [EXTRACTED]
 - [[Score domain 11 Secure Development (0-5).      1=Trivy in build, 2=semgrep conf]] - `rationale_for` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]

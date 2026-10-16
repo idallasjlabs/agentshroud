@@ -21,7 +21,7 @@ tags:
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[Suppress noisy uvicorn warning spam for malformed probe traffic.]] - `rationale_for` [EXTRACTED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[_install_uvicorn_warning_filter()]] - `calls` [EXTRACTED]

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Everything the post-routing forwarding steps (blocking or streaming)     need, o]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[_process_inbound()]] - `references` [EXTRACTED]
 - [[forward.py]] - `contains` [EXTRACTED]
 

@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "_patch_open"
+community: "ServiceManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_patch_open
+  - community/ServiceManager
 ---
 
 # _check_fluent_bit
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[TestCheckFluentBit]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_patch_open
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

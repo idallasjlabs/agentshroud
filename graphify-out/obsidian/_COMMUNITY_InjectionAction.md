@@ -1,18 +1,18 @@
 ---
 type: community
-cohesion: 0.06
-members: 46
+cohesion: 0.05
+members: 45
 ---
 
 # InjectionAction
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 46 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 45 nodes
 
 ## Members
 - [[dot-_detect_encoded_injection()]] - code - gateway/security/tool_result_injection.py
 - [[dot-_detect_unicode_obfuscation()]] - code - gateway/security/tool_result_injection.py
-- [[dot-setup_method()_4]] - code - gateway/tests/test_tool_injection_scan.py
+- [[dot-setup_method()_9]] - code - gateway/tests/test_tool_injection_scan.py
 - [[dot-test_base64_clean_content_not_flagged()]] - code - gateway/tests/test_tool_result_injection.py
 - [[dot-test_base64_encoded_injection()]] - code - gateway/tests/test_tool_injection_scan.py
 - [[dot-test_base64_encoded_injection()_1]] - code - gateway/tests/test_tool_result_injection.py
@@ -37,9 +37,8 @@ members: 46
 - [[Benign base64 content should not trigger encoded injection.]] - rationale - gateway/tests/test_tool_result_injection.py
 - [[Check for base64 or hex encoded injection attempts.]] - rationale - gateway/security/tool_result_injection.py
 - [[Detect unicode-based obfuscation techniques.]] - rationale - gateway/security/tool_result_injection.py
-- [[InjectionAction]] - code - gateway/security/tool_result_injection.py
 - [[InjectionSeverity]] - code - gateway/security/tool_result_injection.py
-- [[Set up test fixtures.]] - rationale - gateway/tests/test_tool_injection_scan.py
+- [[Set up test fixtures._1]] - rationale - gateway/tests/test_tool_injection_scan.py
 - [[Test cases for ToolResultInjectionScanner.]] - rationale - gateway/tests/test_tool_injection_scan.py
 - [[Test detection of 'ignore previous instructions' injection.]] - rationale - gateway/tests/test_tool_injection_scan.py
 - [[Test detection of XML function call injection.]] - rationale - gateway/tests/test_tool_injection_scan.py
@@ -66,19 +65,15 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 13 edges to [[_COMMUNITY_MiddlewareManager]]
-- 7 edges to [[_COMMUNITY_OutboundInfoFilter]]
-- 4 edges to [[_COMMUNITY_PipelineAction]]
-- 4 edges to [[_COMMUNITY_dot-analyze_message]]
-- 4 edges to [[_COMMUNITY_Enum]]
-- 3 edges to [[_COMMUNITY_PIIConfig]]
-- 3 edges to [[_COMMUNITY_AuditChain]]
-- 3 edges to [[_COMMUNITY__FakeAttack]]
-- 1 edge to [[_COMMUNITY_EnvelopeSigner]]
-- 1 edge to [[_COMMUNITY_KeyVault]]
+- 9 edges to [[_COMMUNITY_AuditChain]]
+- 2 edges to [[_COMMUNITY_dot-_filter_outbound]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+- 1 edge to [[_COMMUNITY_Action]]
+- 1 edge to [[_COMMUNITY_test_soc_realtime_coverage.py]]
 
 ## Top bridge nodes
-- [[InjectionAction]] - degree 34, connects to 9 communities
-- [[InjectionSeverity]] - degree 14, connects to 2 communities
-- [[dot-_detect_encoded_injection()]] - degree 4, connects to 2 communities
-- [[dot-_detect_unicode_obfuscation()]] - degree 4, connects to 2 communities
-- [[TestToolResultInjectionScanner]] - degree 10, connects to 1 community
+- [[InjectionSeverity]] - degree 14, connects to 3 communities
+- [[TestToolResultInjectionScanner]] - degree 10, connects to 2 communities
+- [[test_tool_result_injection.py]] - degree 10, connects to 2 communities
+- [[TestHighSeverity]] - degree 10, connects to 2 communities
+- [[TestCleanContent]] - degree 7, connects to 2 communities

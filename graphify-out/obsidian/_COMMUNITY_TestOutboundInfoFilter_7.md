@@ -1,0 +1,28 @@
+---
+type: community
+cohesion: 1.00
+members: 2
+---
+
+# TestOutboundInfoFilter
+
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
+
+## Members
+- [[dot-setup_method()_11]] - code - gateway/tests/test_outbound_filter.py
+- [[Set up test fixtures._2]] - rationale - gateway/tests/test_outbound_filter.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/TestOutboundInfoFilter
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_AuditChain]]
+- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter]]
+
+## Top bridge nodes
+- [[dot-setup_method()_11]] - degree 3, connects to 2 communities

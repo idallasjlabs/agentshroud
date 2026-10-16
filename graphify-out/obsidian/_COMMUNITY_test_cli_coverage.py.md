@@ -10,13 +10,13 @@ members: 19
 **Members:** 19 nodes
 
 ## Members
-- [[dot-__aenter__()_2]] - code - gateway/tests/test_cli_coverage.py
-- [[dot-__aexit__()_2]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__aenter__()_6]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__aexit__()_6]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-__aiter__()_1]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-__anext__()_1]] - code - gateway/tests/test_cli_coverage.py
-- [[dot-__call__()_10]] - code - gateway/tests/test_cli_coverage.py
-- [[dot-__init__()_142]] - code - gateway/tests/test_cli_coverage.py
-- [[dot-__init__()_143]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__call__()_8]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__init__()_151]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__init__()_152]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-send()_1]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-test_tail_ws_events_stream()]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-test_tail_ws_logs_stream_uses_wss_and_log_filter()]] - code - gateway/tests/test_cli_coverage.py

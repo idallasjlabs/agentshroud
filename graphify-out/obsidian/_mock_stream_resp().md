@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_voice_latency_guard.py"
+source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "test_voice_latency_guard.py"
-location: "L35"
+community: "test_voice_gateway.py"
+location: "L1118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/test_voice_gatewaypy
 ---
 
 # _mock_stream_resp()
 
 ## Connections
-- [[Mock httpx.Response usable as the yield value of a mocked     AsyncClient.stream]] - `rationale_for` [EXTRACTED]
-- [[test_voice_latency_guard.py]] - `contains` [EXTRACTED]
+- [[Build a mock httpx.Response usable as the yield value of a mocked     AsyncClien]] - `rationale_for` [EXTRACTED]
+- [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

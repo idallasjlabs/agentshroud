@@ -11,7 +11,7 @@ members: 5
 
 ## Members
 - [[MCP Doctor (MCPM-DOCTOR)_1]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
-- [[Purpose_45]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
+- [[Purpose_50]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
 - [[Related Skills_38]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
 - [[Usage_41]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
 - [[openclawskillsi-mcpm-doctorREADME]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md

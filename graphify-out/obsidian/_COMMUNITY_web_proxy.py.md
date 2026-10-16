@@ -11,18 +11,18 @@ members: 13
 
 ## Members
 - [[Configuration  Environment Variables_25]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[Function Details_44]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[Key Classes  Functions_46]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[Purpose_178]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[Function Details_45]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[Key Classes  Functions_47]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[Purpose_171]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
 - [[RateLimiter.check(domain, rpm_limit)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[Related_50]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[Related_51]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
 - [[Responsibilities_47]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
 - [[Security Check Order (check_request)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
 - [[WebProxy._audit(event_type, url, metadata)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
 - [[WebProxy.check_request(url, method, headers)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
 - [[WebProxy.scan_response(url, body, content_type, status_code, response_size)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
-- [[web_proxy.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
 - [[web_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[web_proxy.py]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,18 +1,18 @@
 ---
 type: community
 cohesion: 0.02
-members: 139
+members: 140
 ---
 
 # _req
 
 **Cohesion:** 0.02 - loosely connected
-**Members:** 139 nodes
+**Members:** 140 nodes
 
 ## Members
-- [[dot-__init__()_84]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-check_permission()_1]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-check_tool_permission()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-__init__()_90]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-check_permission()_2]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-check_tool_permission()_1]] - code - gateway/tests/test_middleware_coverage.py
 - [[dot-get_user_role()_1]] - code - gateway/tests/test_middleware_coverage.py
 - [[dot-test_absolute_and_relative_paths()]] - code - gateway/tests/test_middleware_coverage.py
 - [[dot-test_allowed_chain_passes()]] - code - gateway/tests/test_middleware_coverage.py
@@ -129,12 +129,12 @@ members: 139
 - [[TestExtractUserId]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestFileSandboxStep]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestFilterOutboundResponse]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestGitGuard]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestGitGuard_1]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestIsOwner]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestIsPathAllowedForUser]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestMemoryIntegrityRegistration]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestMetadataGuard]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestMultiTurnTracker_1]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestMultiTurnTracker]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestPathIsolationStep]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestProcessRequestIdentity]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestProcessRequestRBAC]] - code - gateway/tests/test_middleware_coverage.py
@@ -149,6 +149,7 @@ members: 139
 - [[mm()]] - code - gateway/tests/test_middleware_coverage.py
 - [[temp_workspace()]] - code - gateway/tests/test_middleware_coverage.py
 - [[test_middleware_coverage.py]] - code - gateway/tests/test_middleware_coverage.py
+- [[usm()]] - code - gateway/tests/test_middleware_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -162,7 +163,7 @@ SORT file.name ASC
 - 27 edges to [[_COMMUNITY_UserSessionManager]]
 - 26 edges to [[_COMMUNITY_PIIConfig]]
 - 3 edges to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_make_event]]
+- 1 edge to [[_COMMUNITY_AlertTelegramRelay]]
 
 ## Top bridge nodes
 - [[test_middleware_coverage.py]] - degree 40, connects to 4 communities

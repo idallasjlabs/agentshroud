@@ -12,10 +12,10 @@ tags:
 # _Svc
 
 ## Connections
-- [[dot-__init__()_65]] - `method` [EXTRACTED]
+- [[dot-__init__()_95]] - `method` [EXTRACTED]
 - [[dot-model_dump()_1]] - `method` [EXTRACTED]
 - [[ApprovalMode]] - `uses` [INFERRED]
-- [[Role_96]] - `uses` [INFERRED]
+- [[Role_91]] - `uses` [INFERRED]
 - [[test_health_healthy_and_degraded()]] - `calls` [EXTRACTED]
 - [[test_list_services_and_bot_filter()]] - `calls` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]

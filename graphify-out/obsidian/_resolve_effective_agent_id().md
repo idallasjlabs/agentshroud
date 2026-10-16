@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Resolve trusted effective identity and prevent owner spoofing via body.]] - `rationale_for` [EXTRACTED]
 - [[_normalize_agent_identity()]] - `calls` [EXTRACTED]
-- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `contains` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[mcp_proxy_endpoint()]] - `calls` [EXTRACTED]
 - [[mcp_result_endpoint()]] - `calls` [EXTRACTED]
 

@@ -12,8 +12,8 @@ members: 19
 ## Members
 - [[Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or     'YYYY-MM-DD_1]] - rationale - scripts/export-email-reports.py
 - [[Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or     'YYYY-MM-DD_2]] - rationale - scripts/export-telegram-history.py
-- [[Path_52]] - code - scripts/export-email-reports.py
-- [[Path_53]] - code - scripts/export-telegram-history.py
+- [[Path_41]] - code - scripts/export-email-reports.py
+- [[Path_42]] - code - scripts/export-telegram-history.py
 - [[Why report .md source files stand in for a missing sent-mail ledger]] - rationale - scripts/export-email-reports.py
 - [[_list_report_files()]] - code - scripts/export-email-reports.py
 - [[_parse_since()_1]] - code - scripts/export-email-reports.py
@@ -21,14 +21,14 @@ members: 19
 - [[_report_date()]] - code - scripts/export-email-reports.py
 - [[_require_env()]] - code - scripts/export-telegram-history.py
 - [[_serialize()]] - code - scripts/export-telegram-history.py
-- [[datetime_6]] - code - scripts/export-email-reports.py
-- [[datetime_7]] - code - scripts/export-telegram-history.py
+- [[datetime_5]] - code - scripts/export-email-reports.py
+- [[datetime_6]] - code - scripts/export-telegram-history.py
 - [[export()]] - code - scripts/export-telegram-history.py
 - [[export-email-reports.py]] - code - scripts/export-email-reports.py
 - [[export-telegram-history.py]] - code - scripts/export-telegram-history.py
 - [[export_bot()]] - code - scripts/export-email-reports.py
-- [[main()_25]] - code - scripts/export-email-reports.py
-- [[main()_26]] - code - scripts/export-telegram-history.py
+- [[main()_21]] - code - scripts/export-email-reports.py
+- [[main()_22]] - code - scripts/export-telegram-history.py
 
 ## Live Query (requires Dataview plugin)
 

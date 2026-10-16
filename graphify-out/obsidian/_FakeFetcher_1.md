@@ -12,18 +12,18 @@ tags:
 # _FakeFetcher
 
 ## Connections
-- [[dot-__call__()_9]] - `method` [EXTRACTED]
-- [[dot-__init__()_133]] - `method` [EXTRACTED]
+- [[dot-__call__()_10]] - `method` [EXTRACTED]
+- [[dot-__init__()_199]] - `method` [EXTRACTED]
 - [[dot-_verifier()]] - `calls` [EXTRACTED]
 - [[dot-_verifier()_1]] - `calls` [EXTRACTED]
 - [[dot-test_host_confusion_urls_rejected_and_never_fetched()]] - `calls` [EXTRACTED]
 - [[dot-test_ssrf_unsafe_urls_rejected_before_fetch()]] - `calls` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
-- [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
+- [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
 - [[Deterministic fetcher maps url - (status, sha_or_None). Records calls.]] - `rationale_for` [EXTRACTED]
 - [[DraftEntry]] - `uses` [INFERRED]
-- [[FetchOutcome]] - `uses` [INFERRED]
-- [[IntelReportStore]] - `uses` [INFERRED]
+- [[FetchOutcome_1]] - `uses` [INFERRED]
+- [[IntelReportStore_1]] - `uses` [INFERRED]
 - [[test_citation_verifier.py]] - `contains` [EXTRACTED]
 - [[test_default_allowlist_uses_permanent_egress_domains()]] - `calls` [EXTRACTED]
 

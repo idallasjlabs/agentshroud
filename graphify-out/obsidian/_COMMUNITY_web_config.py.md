@@ -13,9 +13,9 @@ members: 12
 - [[Configuration  Environment Variables_29]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
 - [[Function Details_49]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
 - [[Key Classes  Functions_52]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
-- [[Purpose_186]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[Purpose_185]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
 - [[Related_56]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
-- [[Responsibilities_54]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
+- [[Responsibilities_53]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
 - [[WebProxyConfig Fields]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
 - [[WebProxyConfig.get_domain_settings(domain)]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md
 - [[WebProxyConfig.is_domain_allowed(domain)]] - document - docs/vault/02 - Modules/Proxy Layer/web_config.py.md

@@ -21,7 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy_2]]
+- 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
 
 ## Top bridge nodes
 - [[dot-test_timeout_error_is_sanitized_for_json_message_field()]] - degree 4, connects to 1 community

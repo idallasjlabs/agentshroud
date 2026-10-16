@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/fastapi.md"
+source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "All Dependencies.md"
-location: "L24"
+community: "Error Index.md"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/Error_Indexmd
 ---
 
 # Where Used
 
 ## Connections
-- [[FastAPI_3]] - `contains` [EXTRACTED]
+- [[spaCy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

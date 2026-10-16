@@ -1,25 +1,28 @@
 ---
 type: community
-cohesion: 0.22
-members: 10
+cohesion: 0.18
+members: 13
 ---
 
 # activity_websocket
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 13 nodes
 
 ## Members
+- [[Build compact egress dashboard snapshot for websocketAPI clients.]] - rationale - gateway/ingest_api/routes/dashboard.py
 - [[Validate a WebSocket token (single-use, time-limited).]] - rationale - gateway/ingest_api/routes/dashboard.py
-- [[WebSocket]] - code - gateway/ingest_api/routes/approval.py
-- [[WebSocket_1]] - code - gateway/ingest_api/routes/dashboard.py
+- [[WebSocket_5]] - code - gateway/ingest_api/routes/approval.py
+- [[WebSocket_6]] - code - gateway/ingest_api/routes/dashboard.py
 - [[WebSocket endpoint for real-time approval notifications      Protocol     1. Cl]] - rationale - gateway/ingest_api/routes/approval.py
 - [[WebSocket for real-time activity feed]] - rationale - gateway/ingest_api/routes/dashboard.py
 - [[WebSocket stream specialized for egresssecurity dashboard updates.]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[_build_egress_live_snapshot()]] - code - gateway/ingest_api/routes/dashboard.py
 - [[_validate_ws_token()]] - code - gateway/ingest_api/routes/dashboard.py
 - [[activity_websocket()]] - code - gateway/ingest_api/routes/dashboard.py
 - [[approval_websocket()]] - code - gateway/ingest_api/routes/approval.py
 - [[egress_websocket()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[test_build_egress_live_snapshot_enriches_pending_metrics()]] - code - gateway/tests/test_dashboard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,11 +32,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_test_dashboard.py]]
+- 7 edges to [[_COMMUNITY_test_dashboard.py]]
 - 3 edges to [[_COMMUNITY_make_event]]
-- 2 edges to [[_COMMUNITY_create_auth_dependency]]
+- 2 edges to [[_COMMUNITY_AgentTarget]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
 
 ## Top bridge nodes
+- [[_build_egress_live_snapshot()]] - degree 8, connects to 2 communities
 - [[activity_websocket()]] - degree 6, connects to 2 communities
 - [[egress_websocket()]] - degree 6, connects to 2 communities
 - [[_validate_ws_token()]] - degree 6, connects to 2 communities

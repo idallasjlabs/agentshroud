@@ -1,93 +1,262 @@
 ---
 type: community
-cohesion: 0.06
-members: 78
+cohesion: 0.03
+members: 247
 ---
 
 # MCPPermissionManager
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 78 nodes
+**Cohesion:** 0.03 - loosely connected
+**Members:** 247 nodes
 
 ## Members
-- [[dot-__init__()_149]] - code - gateway/proxy/mcp_permissions.py
-- [[dot-__init__()_150]] - code - gateway/proxy/mcp_proxy.py
-- [[dot-__init__()_151]] - code - gateway/proxy/mcp_proxy.py
-- [[dot-__init__()_152]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-__init__()_166]] - code - gateway/proxy/mcp_inspector.py
+- [[dot-__init__()_167]] - code - gateway/proxy/mcp_permissions.py
+- [[dot-__init__()_168]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-__init__()_169]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-__init__()_170]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-__init__()_171]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-__init__()_172]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-__post_init__()_7]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-__post_init__()_8]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-_fake_aiohttp()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[dot-_load_privacy_policy()]] - code - gateway/proxy/mcp_permissions.py
 - [[dot-_recompile_private_data_patterns()]] - code - gateway/proxy/mcp_permissions.py
-- [[dot-_record_private_access_attempt()]] - code - gateway/proxy/mcp_permissions.py
-- [[dot-check_agent_server_access()]] - code - gateway/proxy/mcp_permissions.py
-- [[dot-check_all()]] - code - gateway/proxy/mcp_permissions.py
-- [[dot-check_rate_limit()]] - code - gateway/proxy/mcp_permissions.py
-- [[dot-check_tool_parameters()]] - code - gateway/proxy/mcp_permissions.py
-- [[dot-check_tool_permission()_2]] - code - gateway/proxy/mcp_permissions.py
-- [[dot-get_privacy_policy_status()]] - code - gateway/proxy/mcp_permissions.py
-- [[dot-get_private_access_events()]] - code - gateway/proxy/mcp_permissions.py
-- [[dot-get_private_access_summary()]] - code - gateway/proxy/mcp_permissions.py
-- [[dot-get_private_data_patterns()]] - code - gateway/proxy/mcp_permissions.py
-- [[dot-get_private_redaction_events()]] - code - gateway/proxy/mcp_permissions.py
-- [[dot-get_private_redaction_summary()]] - code - gateway/proxy/mcp_permissions.py
-- [[dot-get_stats()_16]] - code - gateway/proxy/mcp_proxy.py
-- [[dot-get_trust_level()]] - code - gateway/proxy/mcp_permissions.py
+- [[dot-from_dict()_7]] - code - gateway/proxy/mcp_config.py
+- [[dot-get_or_create()]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-get_stats()_19]] - code - gateway/proxy/mcp_proxy.py
 - [[dot-has_findings()]] - code - gateway/proxy/mcp_inspector.py
 - [[dot-highest_threat()]] - code - gateway/proxy/mcp_inspector.py
 - [[dot-infer_permission_level()]] - code - gateway/proxy/mcp_permissions.py
+- [[dot-is_running()]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-kill()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[dot-record_private_data_redaction()]] - code - gateway/proxy/mcp_permissions.py
-- [[dot-set_trust_level()]] - code - gateway/proxy/mcp_permissions.py
-- [[Aggregate recent private-data redaction events.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Aggregate recent private-tool violations for SOC reporting.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Any_61]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-remove()]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-send_request()_2]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-stop()_12]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-terminate()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_admin_ge_read()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_admin_private_data_not_redacted_for_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_admin_private_data_redacted_for_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_audit_entry_created()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_bare_host_in_destination_field()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_bare_host_in_non_destination_field_ignored()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_blocked_entries()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_chain_includes_blocked()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_chain_valid_after_calls()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_clamp_high()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_clamp_low()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_clean_call_allowed()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_clean_result_passes()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_deeply_nested_pii()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_default_trust_is_1()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_direct_urls_dedup_and_lists()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_disabled_server_blocked()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_egress_allows_non_url_tool_call()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_egress_denied_blocks_url_tool_call()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_elevated_agent_can_execute()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_empty_params()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_error_result_logged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_execute_lt_admin()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_execute_none_content_result_does_not_unbind()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_execute_with_content_still_inspects()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_failed_entries()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_filter_by_agent()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_filter_by_server()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_filter_by_tool()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_from_dict_basic()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_from_dict_defaults()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_from_dict_http_transport()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_gateway_contributor_paths_redacted_for_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_gateway_data_parameter_violation_blocks_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_generate_report()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_get_or_create_by_transport_and_caching()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_heavy_url_encoding_flagged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_highest_threat_high()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_highest_threat_none()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_injection_blocked()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_inspection_result_threat_level()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_invalid_url_without_netloc_ignored()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_large_base64_flagged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_level_values()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_list_inherits_parent_key()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_list_params()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_low_risk_tool_allowed()]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-test_memory_markers_redacted_for_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_missing_aiohttp_raises_runtime_error()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_mixed_allowed_blocked_chain()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_network_request_flagged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_no_limit_always_allowed()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_no_pii_scan()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_non_matching_text_in_destination_field()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_none_values_in_params()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_owner_bypass()_3]] - code - gateway/tests/test_enhanced_approval.py
+- [[dot-test_passthrough_allows_everything()_1]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_passthrough_process_tool_result()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_passthrough_still_audits()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_passthrough_with_execute()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_pii_redacted_in_params()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_pii_redacted_in_result()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_private_parameter_violation_blocks_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_private_redaction_emits_privacy_event()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_private_tool_violation_emits_event()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_processing_time_recorded()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_rate_limit_enforced()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_rate_limit_enforced()_1]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_rate_limit_per_agent()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_read_le_read()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_read_lt_write()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_read_only_agent_can_read()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_read_only_agent_denied_execute()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_result_audit_logged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_result_processing_time()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_send_request_and_session_reuse()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_session_store_parameter_violation_blocks_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_set_and_get()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_shell_command_flagged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_shutdown_stops_all_connections()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_small_base64_ok()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_start_send_and_stop()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_start_without_env_passes_none()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_stats_blocked_counted()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_stats_tracking()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_stop_all_clears_pool()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_stop_kills_on_wait_timeout()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_tool_call_generates_id_and_timestamp()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_tool_result_none_content()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_tool_result_string_content()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_tool_result_timestamp_default()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_trust_0_read_only()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_trust_1_write()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_trust_2_execute()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_trust_3_admin()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-test_unknown_server_default_allow()_1]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_workspace_contributor_parameter_violation_blocks_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_write_lt_execute()]] - code - gateway/tests/test_mcp_permissions.py
+- [[dot-wait()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[A single finding from inspection.]] - rationale - gateway/proxy/mcp_inspector.py
+- [[Any_63]] - code - gateway/proxy/mcp_config.py
+- [[Any_64]] - code - gateway/proxy/mcp_proxy.py
 - [[Audit signal for blocked admin-private tool access attempts.]] - rationale - gateway/proxy/mcp_permissions.py
 - [[Audit signal when admin-private data is redacted from tool results.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Block non-owner tool calls that reference admin-private data pathscontent.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Check and update rate limits for a tool call.          Returns allowed=True and]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Check if an agent can access a server at all.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Check if an agent can call a specific tool.          Default-allow only blocks]] - rationale - gateway/proxy/mcp_permissions.py
 - [[Compile private data patterns once for efficient repeated use.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Configuration for a specific MCP tool.]] - rationale - gateway/proxy/mcp_config.py
 - [[Configuration for an MCP server.]] - rationale - gateway/proxy/mcp_config.py
-- [[EnhancedApprovalQueue_2]] - code - gateway/proxy/mcp_proxy.py
-- [[Get proxy statistics._1]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Get trust level, defaulting to 1 (write) for unknown agents.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[ConnectionPool]] - code - gateway/proxy/mcp_proxy.py
+- [[EnhancedApprovalQueue]] - code - gateway/proxy/mcp_proxy.py
+- [[Exception_3]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[FakeConn]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[FakeProcess]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[FindingType]] - code - gateway/proxy/mcp_inspector.py
+- [[Get existing connection or create a new one.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Get proxy statistics.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[HttpSseConnection]] - code - gateway/proxy/mcp_proxy.py
 - [[Infer the permission level needed for a tool based on its name.          Checks]] - rationale - gateway/proxy/mcp_permissions.py
+- [[InspectionFinding]] - code - gateway/proxy/mcp_inspector.py
 - [[InspectionResult_1]] - code - gateway/proxy/mcp_inspector.py
+- [[Inspects MCP tool calls and responses for security threats.]] - rationale - gateway/proxy/mcp_inspector.py
 - [[Load optional admin-private tool patterns from policy file.]] - rationale - gateway/proxy/mcp_permissions.py
 - [[MCPAuditTrail_1]] - code - gateway/proxy/mcp_proxy.py
-- [[MCPInspector_1]] - code - gateway/proxy/mcp_proxy.py
+- [[MCPInspector]] - code - gateway/proxy/mcp_proxy.py
+- [[MCPInspector_1]] - code - gateway/proxy/mcp_inspector.py
 - [[MCPPermissionManager]] - code - gateway/proxy/mcp_proxy.py
 - [[MCPPermissionManager_1]] - code - gateway/proxy/mcp_permissions.py
-- [[MCPProxyConfig_1]] - code - gateway/proxy/mcp_permissions.py
-- [[MCPProxyConfig_2]] - code - gateway/proxy/mcp_proxy.py
+- [[MCPProxy]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[MCPProxy_1]] - code - gateway/proxy/mcp_proxy.py
+- [[MCPProxy.process_tool_result]] - code - gateway/proxy/mcp_proxy.py
+- [[MCPProxyConfig]] - code - gateway/proxy/mcp_permissions.py
+- [[MCPProxyConfig_1]] - code - gateway/proxy/mcp_proxy.py
+- [[MCPProxyConfig_2]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[MCPProxyConfig_3]] - code - gateway/proxy/mcp_config.py
 - [[MCPServerConfig]] - code - gateway/proxy/mcp_permissions.py
 - [[MCPServerConfig_1]] - code - gateway/proxy/mcp_proxy.py
 - [[MCPServerConfig_2]] - code - gateway/proxy/mcp_config.py
+- [[MCPToolCall]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[MCPToolCall_1]] - code - gateway/proxy/mcp_proxy.py
+- [[MCPToolConfig]] - code - gateway/proxy/mcp_config.py
+- [[MCPToolResult]] - code - gateway/proxy/mcp_proxy.py
 - [[MCPTransport]] - code - gateway/proxy/mcp_config.py
+- [[Main MCP proxy that intercepts tool calls and routes through security.      Tran]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Manages a stdio connection to an MCP server process.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Manages an HTTPSSE connection to an MCP server.]] - rationale - gateway/proxy/mcp_proxy.py
 - [[Manages permissions for MCP tool calls.      Default-allow philosophy tools wor]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Mix of allowed, blocked, and result entries all in one chain.]] - rationale - gateway/tests/test_mcp_proxy.py
+- [[Parse config from a dictionary (e.g. loaded from YAML).]] - rationale - gateway/proxy/mcp_config.py
 - [[PermissionCheck]] - code - gateway/proxy/mcp_permissions.py
-- [[PermissionLevel_1]] - code - gateway/proxy/mcp_permissions.py
+- [[PermissionLevel]] - code - gateway/proxy/mcp_permissions.py
+- [[PermissionLevel_1]] - code - gateway/proxy/mcp_config.py
+- [[Pool of connections to MCP servers.]] - rationale - gateway/proxy/mcp_proxy.py
 - [[PrivateAccessAttempt]] - code - gateway/proxy/mcp_permissions.py
 - [[PrivateRedactionEvent]] - code - gateway/proxy/mcp_permissions.py
 - [[ProxyResult]] - code - gateway/proxy/mcp_proxy.py
 - [[RateLimitEntry]] - code - gateway/proxy/mcp_permissions.py
 - [[Record admin-private data redaction event for compliance audit.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Record blocked private-tool access attempts for SOCaudit views.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Regression result_inspection was possibly-unbound when the executed tool     re]] - rationale - gateway/tests/test_mcp_proxy.py
+- [[Represents an MCP tool result.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Represents an MCP tool_use request.]] - rationale - gateway/proxy/mcp_proxy.py
 - [[Result of inspecting a tool call or response.]] - rationale - gateway/proxy/mcp_inspector.py
 - [[Result of permission check.]] - rationale - gateway/security/rbac.py
 - [[Result of proxying an MCP tool call.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Return configured admin-private data redaction patterns.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Return privacy policy file load status for dashboardaudit APIs.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Return recent blocked private-tool attempts for auditing.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Return recent private-data redaction events.]] - rationale - gateway/proxy/mcp_permissions.py
 - [[Return the highest threat level from all findings.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[Run all permission checks in order. Returns first failure or final success.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Set trust level for an agent.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Stand-in connection injected into the proxy's pool.]] - rationale - gateway/tests/test_mcp_proxy_coverage.py
+- [[Stand-in for asyncio.subprocess.Process — no real child process.]] - rationale - gateway/tests/test_mcp_proxy_coverage.py
+- [[StdioConnection]] - code - gateway/proxy/mcp_proxy.py
+- [[Test owner bypass for high-tier tools.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test that low-risk tools are allowed without approval.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[TestAllowDenyList]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestAuditQueries]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestChainIntegrityMultiple]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestConfigParsing]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestConnectionPool]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestDataclasses]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestEgressFilterPaths]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestEmitPrivacyEvent]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestExecuteResultInspectionBinding]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestExtractEgressTargets]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestHashChainIntegration]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestHttpSseConnection]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestInspectorEdgeCases]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestPassthrough]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestPassthroughMode_1]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestPermissionLevel]] - code - gateway/tests/test_mcp_permissions.py
+- [[TestPrivacyPolicyEvents]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestProcessingTime]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestProxyInterception]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestProxyPermissions]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestProxyRateLimiting]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestProxyResultProcessing]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestProxyStats]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestRateLimiting_3]] - code - gateway/tests/test_mcp_permissions.py
+- [[TestResultProcessingAndLifecycle]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestSanitizeAdminPrivateData]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestSensitiveOps]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestStdioConnection]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestSuspiciousEncoding]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestThreatLevelCalc]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestTrustLevels_1]] - code - gateway/tests/test_mcp_permissions.py
+- [[TestTrustMapping]] - code - gateway/tests/test_mcp_permissions.py
+- [[Threat level classification.]] - rationale - gateway/proxy/mcp_inspector.py
+- [[ThreatLevel_2]] - code - gateway/proxy/mcp_inspector.py
+- [[Top-level MCP proxy configuration.]] - rationale - gateway/proxy/mcp_config.py
 - [[Track rate limit state for a tool+agent combo.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Type of security finding.]] - rationale - gateway/proxy/mcp_inspector.py
+- [[config()_3]] - code - gateway/tests/test_mcp_permissions.py
 - [[config()_4]] - code - gateway/tests/test_mcp_proxy.py
+- [[inspector()]] - code - gateway/tests/test_mcp_proxy.py
+- [[make_config()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[mcp_audit.py]] - code - gateway/proxy/mcp_audit.py
 - [[mcp_config.py]] - code - gateway/proxy/mcp_config.py
+- [[mcp_inspector.py]] - code - gateway/proxy/mcp_inspector.py
 - [[mcp_permissions.py]] - code - gateway/proxy/mcp_permissions.py
 - [[mcp_proxy.py]] - code - gateway/proxy/mcp_proxy.py
+- [[mgr()]] - code - gateway/tests/test_mcp_permissions.py
+- [[passthrough_proxy()_1]] - code - gateway/tests/test_mcp_proxy.py
+- [[proxy()_4]] - code - gateway/tests/test_mcp_proxy.py
 - [[proxy__init__.py]] - code - gateway/proxy/__init__.py
+- [[strict_inspector()]] - code - gateway/tests/test_mcp_proxy.py
+- [[test_mcp_permissions.py]] - code - gateway/tests/test_mcp_permissions.py
+- [[test_mcp_proxy.py]] - code - gateway/tests/test_mcp_proxy.py
+- [[test_mcp_proxy_coverage.py]] - code - gateway/tests/test_mcp_proxy_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -97,34 +266,45 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 111 edges to [[_COMMUNITY_MCPToolCall]]
-- 83 edges to [[_COMMUNITY_StdioConnection]]
-- 44 edges to [[_COMMUNITY_PermissionLevel]]
-- 23 edges to [[_COMMUNITY_MCPToolResult]]
-- 18 edges to [[_COMMUNITY_MCPAuditTrail]]
-- 17 edges to [[_COMMUNITY_FakeProcess]]
+- 88 edges to [[_COMMUNITY_MCPAuditTrail]]
+- 75 edges to [[_COMMUNITY_StdioConnection]]
+- 22 edges to [[_COMMUNITY_MCPPolicyEngine]]
+- 19 edges to [[_COMMUNITY_dot-process_tool_call]]
+- 17 edges to [[_COMMUNITY_ApprovalQueueConfig_1]]
+- 15 edges to [[_COMMUNITY_MCPPermissionManager_1]]
+- 13 edges to [[_COMMUNITY_TestAuditTrail]]
+- 13 edges to [[_COMMUNITY_MCPToolResult]]
+- 11 edges to [[_COMMUNITY_dot-inspect_tool_call]]
 - 10 edges to [[_COMMUNITY_RBACConfig]]
-- 6 edges to [[_COMMUNITY_dot-process_tool_call]]
-- 6 edges to [[_COMMUNITY_DataLedger]]
-- 5 edges to [[_COMMUNITY_TestToolPermission]]
-- 4 edges to [[_COMMUNITY_TestInspectorEdgeCases]]
-- 4 edges to [[_COMMUNITY_TestPIIDetection]]
-- 4 edges to [[_COMMUNITY_TestExtractEgressTargets]]
-- 4 edges to [[_COMMUNITY_lifespan.py]]
-- 4 edges to [[_COMMUNITY_TestAuditTrail]]
-- 3 edges to [[_COMMUNITY_Enum]]
-- 3 edges to [[_COMMUNITY_dot-inspect_tool_call]]
-- 2 edges to [[_COMMUNITY_TestMCPProxyEndpoint]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 8 edges to [[_COMMUNITY_TestToolPermission]]
+- 7 edges to [[_COMMUNITY_Action]]
+- 6 edges to [[_COMMUNITY_MiddlewareManager]]
+- 6 edges to [[_COMMUNITY_PermissionLevel]]
+- 6 edges to [[_COMMUNITY_PermissionLevel_1]]
+- 6 edges to [[_COMMUNITY_PermissionLevel_2]]
+- 5 edges to [[_COMMUNITY_PermissionLevel_3]]
+- 5 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 4 edges to [[_COMMUNITY_MCPPermissionManager_2]]
+- 4 edges to [[_COMMUNITY_TestMCPProxyEndpoint]]
+- 3 edges to [[_COMMUNITY_StdioConnection_1]]
+- 3 edges to [[_COMMUNITY_StdioConnection_2]]
+- 2 edges to [[_COMMUNITY_AgentTarget]]
+- 2 edges to [[_COMMUNITY_MCPPermissionManager_3]]
+- 2 edges to [[_COMMUNITY_MCPPermissionManager_4]]
+- 2 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 2 edges to [[_COMMUNITY_egress_filter.py]]
+- 1 edge to [[_COMMUNITY_MCPPermissionManager_5]]
+- 1 edge to [[_COMMUNITY_MCPToolCall]]
+- 1 edge to [[_COMMUNITY_MCPToolCall_1]]
+- 1 edge to [[_COMMUNITY_PIIConfig]]
 - 1 edge to [[_COMMUNITY_make_event]]
-- 1 edge to [[_COMMUNITY_AGENTSHROUD_MODE]]
-- 1 edge to [[_COMMUNITY_Action]]
-- 1 edge to [[_COMMUNITY_agentshroud.yaml]]
+- 1 edge to [[_COMMUNITY_AsyncMock]]
+- 1 edge to [[_COMMUNITY_Path_3]]
 - 1 edge to [[_COMMUNITY_TestMCPResultEndpoint]]
 
 ## Top bridge nodes
-- [[MCPProxyConfig_3]] - degree 88, connects to 13 communities
-- [[MCPPermissionManager_1]] - degree 101, connects to 12 communities
-- [[MCPServerConfig_2]] - degree 90, connects to 11 communities
-- [[MCPTransport]] - degree 63, connects to 11 communities
-- [[mcp_proxy.py]] - degree 26, connects to 8 communities
+- [[MCPPermissionManager_1]] - degree 101, connects to 14 communities
+- [[MCPProxy_1]] - degree 89, connects to 12 communities
+- [[PermissionLevel_1]] - degree 71, connects to 11 communities
+- [[MCPProxyConfig_3]] - degree 88, connects to 9 communities
+- [[MCPServerConfig_2]] - degree 90, connects to 8 communities

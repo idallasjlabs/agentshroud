@@ -10,7 +10,7 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_54]] - document - docker/config/openclaw/skills/i-socrates/README.md
+- [[Purpose_59]] - document - docker/config/openclaw/skills/i-socrates/README.md
 - [[Related Skills_47]] - document - docker/config/openclaw/skills/i-socrates/README.md
 - [[Socrates — Dialogue Architect_2]] - document - docker/config/openclaw/skills/i-socrates/README.md
 - [[Usage_50]] - document - docker/config/openclaw/skills/i-socrates/README.md

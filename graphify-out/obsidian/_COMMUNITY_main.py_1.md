@@ -24,11 +24,11 @@ members: 23
 - [[Management API Router — `gatewaywebapi.py` (prefix `api`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
 - [[Management Dashboard Router — `gatewaywebmanagement.py` (prefix `manage`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
 - [[Middleware (applied to all requests, outermost first)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Overview_16]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Overview_14]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
 - [[POST forward — 5-Step Security Pipeline]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Related_2]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Related_1]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
 - [[SOC Router — `gatewaysocrouter.py` (prefix `socv1`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Security Notes_4]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[Security Notes_2]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
 - [[Static Mounts]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
 - [[Version Router — `gatewayingest_apiversion_routes.py` (prefix `apiv1versions`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
 - [[WebSocket Endpoints]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md

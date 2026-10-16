@@ -12,8 +12,8 @@ tags:
 # _resolve_user_trust_level()
 
 ## Connections
-- [[AgentTarget_1]] - `references` [EXTRACTED]
-- [[ForwardRequest]] - `references` [EXTRACTED]
+- [[AgentTarget_2]] - `references` [EXTRACTED]
+- [[ForwardRequest_2]] - `references` [EXTRACTED]
 - [[Resolve the outbound trust level for `request`, shared by the blocking     and s]] - `rationale_for` [EXTRACTED]
 - [[forward.py]] - `contains` [EXTRACTED]
 - [[forward_content()]] - `calls` [EXTRACTED]

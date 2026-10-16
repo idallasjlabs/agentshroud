@@ -12,8 +12,8 @@ tags:
 # _report_date()
 
 ## Connections
-- [[Path_52]] - `calls` [EXTRACTED]
-- [[datetime_6]] - `references` [EXTRACTED]
+- [[Path_41]] - `calls` [EXTRACTED]
+- [[datetime_5]] - `references` [EXTRACTED]
 - [[export-email-reports.py]] - `contains` [EXTRACTED]
 - [[export_bot()]] - `calls` [EXTRACTED]
 

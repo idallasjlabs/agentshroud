@@ -20,8 +20,8 @@ members: 21
 - [[dot-get_pending()]] - code - gateway/approval_queue/queue.py
 - [[dot-submit()]] - code - gateway/approval_queue/queue.py
 - [[Add an action to the approval queue          Args             request Approval]] - rationale - gateway/approval_queue/queue.py
-- [[Any_56]] - code - gateway/approval_queue/queue.py
-- [[ApprovalQueueItem_3]] - code - gateway/approval_queue/queue.py
+- [[Any_55]] - code - gateway/approval_queue/queue.py
+- [[ApprovalQueueItem]] - code - gateway/approval_queue/queue.py
 - [[ApprovalRequest]] - code - gateway/approval_queue/queue.py
 - [[Best-effort JSONL persistence for queue lifecycle events.]] - rationale - gateway/approval_queue/queue.py
 - [[Check all pending items and expire those past timeout          Returns]] - rationale - gateway/approval_queue/queue.py
@@ -40,8 +40,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_DataLedger]]
-- 1 edge to [[_COMMUNITY__patch_open]]
+- 9 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 1 edge to [[_COMMUNITY_ServiceManager]]
 
 ## Top bridge nodes
 - [[dot-decide()]] - degree 7, connects to 2 communities

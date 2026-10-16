@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_compute_content_hash()]] - `calls` [EXTRACTED]
 - [[dot-verify_integrity()]] - `calls` [EXTRACTED]
-- [[CompetitiveIntelReport_2]] - `references` [EXTRACTED]
+- [[CompetitiveIntelReport_1]] - `references` [EXTRACTED]
 - [[Compute SHA-256 over the canonical content fields of a report.      Fields inclu]] - `rationale_for` [EXTRACTED]
 - [[intel_report.py]] - `contains` [EXTRACTED]
 

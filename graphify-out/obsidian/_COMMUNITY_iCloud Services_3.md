@@ -15,7 +15,7 @@ members: 26
 - [[Connection timeout_3]] - document - skills/custom/icloud/SKILL.md
 - [[Add Contact_3]] - document - skills/custom/icloud/SKILL.md
 - [[Calendar Operations_3]] - document - skills/custom/icloud/SKILL.md
-- [[Configuration_6]] - document - skills/custom/icloud/SKILL.md
+- [[Configuration_4]] - document - skills/custom/icloud/SKILL.md
 - [[Contact Operations_3]] - document - skills/custom/icloud/SKILL.md
 - [[Create Event_3]] - document - skills/custom/icloud/SKILL.md
 - [[Create Note_3]] - document - skills/custom/icloud/SKILL.md

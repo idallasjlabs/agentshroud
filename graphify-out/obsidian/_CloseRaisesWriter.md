@@ -12,11 +12,11 @@ tags:
 # _CloseRaisesWriter
 
 ## Connections
-- [[dot-close()_13]] - `method` [EXTRACTED]
+- [[dot-close()_14]] - `method` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `uses` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
-- [[_MockWriter]] - `inherits` [EXTRACTED]
+- [[_MockWriter_1]] - `inherits` [EXTRACTED]
 - [[test_handle_client_tolerates_writer_close_failure()]] - `calls` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 - [[test_relay_and_scan_swallows_writer_close_failure()]] - `calls` [EXTRACTED]

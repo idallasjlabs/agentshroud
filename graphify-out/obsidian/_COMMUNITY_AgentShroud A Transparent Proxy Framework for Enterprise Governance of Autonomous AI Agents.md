@@ -28,7 +28,7 @@ members: 33
 - [[IX-B. STPA-Sec as Applied to AI Agent Systems]] - document - docs/papers/agentshroud-ieee-paper.md
 - [[IX-C. Industry Implications]] - document - docs/papers/agentshroud-ieee-paper.md
 - [[IX. Discussion]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[References_3]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[References_1]] - document - docs/papers/agentshroud-ieee-paper.md
 - [[TABLE II Unsafe Control Action Distribution]] - document - docs/papers/agentshroud-ieee-paper.md
 - [[TABLE III STPA-Sec Requirement Tiers]] - document - docs/papers/agentshroud-ieee-paper.md
 - [[VI-A. Methodology]] - document - docs/papers/agentshroud-ieee-paper.md
@@ -52,8 +52,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud™ README]]
 - 1 edge to [[_COMMUNITY_agentshroud-ieee-paper]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ README]]
 - 1 edge to [[_COMMUNITY_VIII. Evaluation]]
 
 ## Top bridge nodes

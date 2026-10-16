@@ -36,7 +36,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_TestTail]]
 - 1 edge to [[_COMMUNITY_ssh_runner]]
 - 1 edge to [[_COMMUNITY_TestParserAndCommandResolution]]
-- 1 edge to [[_COMMUNITY_Enum]]
+- 1 edge to [[_COMMUNITY_Action]]
 - 1 edge to [[_COMMUNITY_run_multi_host]]
 - 1 edge to [[_COMMUNITY_TestParseHosts]]
 

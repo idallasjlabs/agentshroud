@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_integrity.py"
 type: "code"
-community: "TestContextIntegrityScorer"
+community: "ContextSegment"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestContextIntegrityScorer
+  - community/ContextSegment
 ---
 
 # _make_segment()
@@ -20,4 +20,4 @@ tags:
 - [[ContextSegment]] - `calls` [EXTRACTED]
 - [[test_context_integrity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestContextIntegrityScorer
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

@@ -13,7 +13,7 @@ members: 19
 - [[About the Creator]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
 - [[AgentShroud™ — Project Knowledge Base]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
 - [[Architecture Review]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Current Status_7]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Current Status_5]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
 - [[Development Phases]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
 - [[Documentation & Ideas]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
 - [[Frequently Asked Questions]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
@@ -22,7 +22,7 @@ members: 19
 - [[Red Team Testing (Most Valuable!)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
 - [[Technology Stack]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
 - [[The Conjecture]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[The Problem]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[The Problem_1]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
 - [[The Solution]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
 - [[The Thesis]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
 - [[What He Builds]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md

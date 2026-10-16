@@ -21,7 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy_2]]
+- 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
 
 ## Top bridge nodes
 - [[dot-test_raw_web_fetch_json_approval_strips_trailing_punctuation()]] - degree 4, connects to 1 community

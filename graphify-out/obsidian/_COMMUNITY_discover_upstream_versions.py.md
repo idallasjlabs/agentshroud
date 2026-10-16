@@ -1,16 +1,16 @@
 ---
 type: community
 cohesion: 0.04
-members: 80
+members: 79
 ---
 
 # discover_upstream_versions.py
 
 **Cohesion:** 0.04 - loosely connected
-**Members:** 80 nodes
+**Members:** 79 nodes
 
 ## Members
-- [[dot-test_empty_returns_none()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-test_empty_returns_none()_1]] - code - gateway/tests/test_discover_upstream_versions.py
 - [[dot-test_first_attempt_keeps_default_resolver()]] - code - gateway/tests/test_discover_upstream_versions.py
 - [[dot-test_forces_af_inet_inside_block_and_restores_after()]] - code - gateway/tests/test_discover_upstream_versions.py
 - [[dot-test_gives_up_after_attempts_and_reraises_last_error()]] - code - gateway/tests/test_discover_upstream_versions.py
@@ -34,7 +34,7 @@ members: 80
 - [[dot-test_single_attempt_never_sleeps()]] - code - gateway/tests/test_discover_upstream_versions.py
 - [[A fetch that never returns must not hang the unattended run. 2026-10-16 the…]] - rationale - gateway/tests/test_discover_upstream_versions.py
 - [[All published versions of an npm package (via the npm CLI).]] - rationale - scripts/discover_upstream_versions.py
-- [[Any_21]] - code
+- [[Any_66]] - code
 - [[Call ``fn(attempt)`` up to ``attempts`` times; re-raise the last error if all…]] - rationale - scripts/discover_upstream_versions.py
 - [[Discover the latest upstream releases of the tools AgentShroud wraps. WHY THIS…]] - rationale - scripts/discover_upstream_versions.py
 - [[Every Docker Hub failure on marvin was on IPv6; curl -4 was 100% clean.]] - rationale - gateway/tests/test_discover_upstream_versions.py
@@ -80,7 +80,6 @@ members: 80
 - [[latest''main' float and would defeat the whole point of pinning.]] - rationale - gateway/tests/test_discover_upstream_versions.py
 - [[main()_1]] - code - scripts/discover_upstream_versions.py
 - [[npm()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[phase_discover()]] - code - scripts/sunday-upgrade-apply.sh
 - [[pick_latest_hermes_tag]] - code - scripts/discover_upstream_versions.py
 - [[pick_latest_hermes_tag()]] - code - scripts/discover_upstream_versions.py
 - [[pick_latest_stable]] - code - scripts/discover_upstream_versions.py
@@ -99,18 +98,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_sunday-upgrade-apply.sh]]
 - 6 edges to [[_COMMUNITY_pick_latest_stable]]
 - 5 edges to [[_COMMUNITY_colima-health-check.sh]]
 - 3 edges to [[_COMMUNITY_main.rs]]
-- 1 edge to [[_COMMUNITY_plan_remediation]]
+- 2 edges to [[_COMMUNITY_sunday-upgrade-apply.sh]]
+- 1 edge to [[_COMMUNITY_check-vendor-compat.sh]]
 - 1 edge to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]]
-- 1 edge to [[_COMMUNITY_The run is judged on state change, not steps completed]]
-- 1 edge to [[_COMMUNITY_Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)]]
+- 1 edge to [[_COMMUNITY_plan_remediation]]
 
 ## Top bridge nodes
-- [[discover_upstream_versions.py]] - degree 23, connects to 7 communities
-- [[phase_discover()]] - degree 9, connects to 2 communities
+- [[discover_upstream_versions.py]] - degree 22, connects to 6 communities
 - [[discover()]] - degree 14, connects to 1 community
 - [[test_discover_upstream_versions.py]] - degree 13, connects to 1 community
 - [[_guarded_fetch()]] - degree 9, connects to 1 community
+- [[_retry()]] - degree 9, connects to 1 community

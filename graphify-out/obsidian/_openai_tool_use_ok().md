@@ -12,6 +12,7 @@ tags:
 # _openai_tool_use_ok()
 
 ## Connections
+- [[_fake_forward()_6]] - `calls` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

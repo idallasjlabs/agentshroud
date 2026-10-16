@@ -1,13 +1,13 @@
 ---
 type: community
 cohesion: 0.04
-members: 49
+members: 51
 ---
 
 # test_docs_accuracy.py
 
 **Cohesion:** 0.04 - loosely connected
-**Members:** 49 nodes
+**Members:** 51 nodes
 
 ## Members
 - [[dot-contributing()]] - code - gateway/tests/test_docs_accuracy.py
@@ -37,9 +37,11 @@ members: 49
 - [[dot-test_readme_p1_count_matches_middleware_manager()]] - code - gateway/tests/test_docs_accuracy.py
 - [[dot-test_security_modules_listed()]] - code - gateway/tests/test_docs_accuracy.py
 - [[dot-test_version_table_present()]] - code - gateway/tests/test_docs_accuracy.py
+- [[CONTRIBUTING]] - document - CONTRIBUTING.md
 - [[Every SecurityPipeline.ALL_MODULE_ATTRS name must be passed as a kwarg     in li]] - rationale - gateway/tests/test_docs_accuracy.py
 - [[Execute the real endpoint against a fully-populated app_state and         verify]] - rationale - gateway/tests/test_docs_accuracy.py
 - [[README claims Python 3.9+.]] - rationale - gateway/tests/test_docs_accuracy.py
+- [[SECURITY_1]] - document - SECURITY.md
 - [[TestContributingMdAccuracy]] - code - gateway/tests/test_docs_accuracy.py
 - [[TestLifespanWiresEveryPipelineModule]] - code - gateway/tests/test_docs_accuracy.py
 - [[TestManageModulesEndpointAccuracy]] - code - gateway/tests/test_docs_accuracy.py
@@ -71,12 +73,12 @@ SORT file.name ASC
 - 10 edges to [[_COMMUNITY_MiddlewareManager]]
 - 8 edges to [[_COMMUNITY_PIIConfig]]
 - 1 edge to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
-- 1 edge to [[_COMMUNITY_Contributing to AgentShroud™]]
 - 1 edge to [[_COMMUNITY_AgentShroud™ README]]
+- 1 edge to [[_COMMUNITY_Contributing to AgentShroud™]]
 - 1 edge to [[_COMMUNITY_AgentShroud™ Security Policy]]
 
 ## Top bridge nodes
-- [[test_docs_accuracy.py]] - degree 14, connects to 6 communities
+- [[test_docs_accuracy.py]] - degree 14, connects to 4 communities
 - [[TestContributingMdAccuracy]] - degree 11, connects to 2 communities
 - [[TestReadmeAccuracy]] - degree 11, connects to 2 communities
 - [[TestSecurityMdAccuracy]] - degree 10, connects to 2 communities

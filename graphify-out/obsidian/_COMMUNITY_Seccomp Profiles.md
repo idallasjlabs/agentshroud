@@ -18,9 +18,9 @@ members: 20
 - [[Default Action]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
 - [[Gateway vs Bot Profile Differences]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
 - [[Networks]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
-- [[Purpose_82]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
-- [[Related Notes_38]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
-- [[Related Notes_39]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
+- [[Purpose_81]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
+- [[Related Notes_34]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
+- [[Related Notes_35]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
 - [[Seccomp Profiles]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
 - [[Secrets Files]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
 - [[Services]] - document - docs/vault/03 - Configuration/docker-compose.yml.md

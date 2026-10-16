@@ -11,7 +11,7 @@ members: 37
 
 ## Members
 - [[AgentShroud Docker Configuration]] - document - docker/README.md
-- [[Architecture_3]] - document - docker/README.md
+- [[Architecture_2]] - document - docker/README.md
 - [[Check Status]] - document - docker/README.md
 - [[Container Runtime Support (SCRUM-92)]] - document - docker/README.md
 - [[Container Stack]] - document - docker/README.md
@@ -19,7 +19,7 @@ members: 37
 - [[Cron Failure Alerting (SCRUM-61)]] - document - docker/README.md
 - [[Detection contract]] - document - docker/README.md
 - [[Development_1]] - document - docker/README.md
-- [[Documentation_3]] - document - docker/README.md
+- [[Documentation_2]] - document - docker/README.md
 - [[Exec into Container]] - document - docker/README.md
 - [[Files_1]] - document - docker/README.md
 - [[Hermes  HCI]] - document - docker/README.md
@@ -42,7 +42,7 @@ members: 37
 - [[Startup Warnings Reference]] - document - docker/README.md
 - [[Stop the Stack]] - document - docker/README.md
 - [[Test Chat]] - document - docker/README.md
-- [[Troubleshooting_10]] - document - docker/README.md
+- [[Troubleshooting_9]] - document - docker/README.md
 - [[Usage_55]] - document - docker/README.md
 - [[Verify Security]] - document - docker/README.md
 - [[View Logs]] - document - docker/README.md

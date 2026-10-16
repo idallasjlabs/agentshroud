@@ -14,7 +14,7 @@ members: 43
 - [[A command with quotesmetacharacters cannot inject extra JSON fields.      This]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
 - [[An explicitly set GATEWAY_AUTH_TOKEN takes priority over the _FILE (back-compat]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
 - [[Belt-and-suspenders the wrapper must not contain a literal empty Bearer.      T]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
-- [[CompletedProcess_2]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
+- [[CompletedProcess_1]] - code - gateway/tests/test_bots_ssh_exec_wrapper.py
 - [[Extract the 'Bearer token' value from the captured curl argv.]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
 - [[GATEWAY_AUTH_TOKEN_FILE contents become the Bearer token (Hermes path).]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py
 - [[Hermes' belt-and-suspenders tirith trust must be scoped, never blanket.      It]] - rationale - gateway/tests/test_bots_ssh_exec_wrapper.py

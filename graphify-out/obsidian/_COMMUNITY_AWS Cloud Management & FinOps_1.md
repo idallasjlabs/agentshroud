@@ -11,7 +11,7 @@ members: 5
 
 ## Members
 - [[AWS Cloud Management & FinOps_1]] - document - docker/config/openclaw/skills/i-aws/README.md
-- [[Purpose_33]] - document - docker/config/openclaw/skills/i-aws/README.md
+- [[Purpose_38]] - document - docker/config/openclaw/skills/i-aws/README.md
 - [[Related Skills_26]] - document - docker/config/openclaw/skills/i-aws/README.md
 - [[Usage_29]] - document - docker/config/openclaw/skills/i-aws/README.md
 - [[openclawskillsi-awsREADME]] - document - docker/config/openclaw/skills/i-aws/README.md

@@ -11,7 +11,7 @@ members: 40
 
 ## Members
 - [[Deep Hardening Release]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Acknowledgments_1]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[Acknowledgments]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
 - [[Breaking Changes and Migration]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
 - [[Deployment and Operations]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
 - [[Executive Summary_2]] - document - docs/planning/v0.9/release-notes-v0.9.0.md

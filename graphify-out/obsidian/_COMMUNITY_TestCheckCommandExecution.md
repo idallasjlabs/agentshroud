@@ -43,7 +43,7 @@ members: 35
 - [[TestMonitorEnvironmentAccess]] - code - gateway/tests/test_env_guard_class.py
 - [[TestScrubCommandOutput]] - code - gateway/tests/test_env_guard_class.py
 - [[TestSummaryAndExport]] - code - gateway/tests/test_env_guard_class.py
-- [[guard()_4]] - code - gateway/tests/test_env_guard_class.py
+- [[guard()_3]] - code - gateway/tests/test_env_guard_class.py
 - [[test_env_guard_class.py]] - code - gateway/tests/test_env_guard_class.py
 
 ## Live Query (requires Dataview plugin)

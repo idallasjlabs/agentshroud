@@ -10,7 +10,7 @@ members: 27
 **Members:** 27 nodes
 
 ## Members
-- [[Guardrails_6]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Guardrails_5]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
 - [[Invocation_4]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
 - [[Jira ticket — every development batch gets one_4]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
 - [[Mode A — Single task]] - document - docker/config/hermes/skills/i-hdev/SKILL.md

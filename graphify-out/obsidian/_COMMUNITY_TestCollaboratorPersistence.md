@@ -46,12 +46,11 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 9 edges to [[_COMMUNITY_Action]]
-- 1 edge to [[_COMMUNITY_RBACConfig]]
+- 2 edges to [[_COMMUNITY_RBACConfig]]
 - 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_Role]]
 
 ## Top bridge nodes
-- [[TestCollaboratorPersistence]] - degree 30, connects to 4 communities
+- [[TestCollaboratorPersistence]] - degree 30, connects to 3 communities
 - [[dot-test_pause_does_not_remove_from_collaborator_role()]] - degree 4, connects to 1 community
 - [[dot-test_removed_hardcoded_collaborator_excluded_from_effective_set()]] - degree 4, connects to 1 community
 - [[dot-test_removed_dynamic_collaborator_excluded_from_effective_set()]] - degree 3, connects to 1 community

@@ -10,7 +10,7 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[check()_1]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[check()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
 - [[make_apply_bin()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
 - [[make_fake_repo()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
 - [[run_apply()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh

@@ -15,7 +15,7 @@ members: 11
 - [[Output Format_39]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
 - [[Persona_18]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
 - [[Quality Checklist_21]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
-- [[Role_94]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
+- [[Role_95]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
 - [[System Prompt_18]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
 - [[architecture.puml (PlantUML)_1]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
 - [[diagramsREADME_2]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md

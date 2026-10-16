@@ -20,11 +20,11 @@ tags:
 - [[dot-test_empty_reference_blocked()]] - `calls` [EXTRACTED]
 - [[dot-test_every_dedicated_op_ref_is_allowlisted()]] - `calls` [EXTRACTED]
 - [[dot-test_missing_op_prefix_blocked()]] - `calls` [EXTRACTED]
-- [[dot-test_path_traversal_blocked()_1]] - `calls` [EXTRACTED]
+- [[dot-test_path_traversal_blocked()]] - `calls` [EXTRACTED]
 - [[Return True if the op reference matches an allowed path pattern.]] - `rationale_for` [EXTRACTED]
 - [[TestIsOpReferenceAllowed]] - `calls` [EXTRACTED]
 - [[TestOpRefAllowlistCoverage]] - `references` [EXTRACTED]
-- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `contains` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[op_proxy()]] - `calls` [EXTRACTED]
 - [[test_op_proxy.py]] - `imports` [EXTRACTED]
 

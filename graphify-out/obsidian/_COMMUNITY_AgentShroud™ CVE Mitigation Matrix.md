@@ -56,8 +56,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Action]]
-- 1 edge to [[_COMMUNITY_ESP32-S3-BOX-3 Voice Terminal]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+- 1 edge to [[_COMMUNITY_ESP32-S3-BOX-3 Voice Terminal_1]]
 - 1 edge to [[_COMMUNITY_Local-Model Job Quality Matrix]]
 
 ## Top bridge nodes

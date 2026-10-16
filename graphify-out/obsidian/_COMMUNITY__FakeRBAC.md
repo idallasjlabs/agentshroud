@@ -10,7 +10,7 @@ members: 19
 **Members:** 19 nodes
 
 ## Members
-- [[dot-__init__()_119]] - code - gateway/tests/test_soc_contributors.py
+- [[dot-__init__()_154]] - code - gateway/tests/test_soc_contributors.py
 - [[dot-get_user_role()_2]] - code - gateway/tests/test_soc_contributors.py
 - [[dot-test_build_record_defaults_to_normal_when_no_lockdown_state()]] - code - gateway/tests/test_soc_contributors.py
 - [[dot-test_build_record_does_not_crash_if_lockdown_missing()]] - code - gateway/tests/test_soc_contributors.py
@@ -40,7 +40,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 12 edges to [[_COMMUNITY_socrouter.py]]
 - 8 edges to [[_COMMUNITY_ProgressiveLockdown]]
-- 4 edges to [[_COMMUNITY_Role]]
+- 4 edges to [[_COMMUNITY_RBACConfig]]
 
 ## Top bridge nodes
 - [[_FakeRBAC_2]] - degree 14, connects to 3 communities

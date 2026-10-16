@@ -10,11 +10,11 @@ members: 31
 **Members:** 31 nodes
 
 ## Members
-- [[dot-__init__()_90]] - code - gateway/security/module_stats.py
+- [[dot-__init__()_103]] - code - gateway/security/module_stats.py
 - [[dot-record()_1]] - code - gateway/security/module_stats.py
 - [[dot-reset()_1]] - code - gateway/security/module_stats.py
-- [[dot-setup_method()_17]] - code - gateway/tests/test_module_stats.py
-- [[dot-setup_method()_18]] - code - gateway/tests/test_module_stats.py
+- [[dot-setup_method()_21]] - code - gateway/tests/test_module_stats.py
+- [[dot-setup_method()_22]] - code - gateway/tests/test_module_stats.py
 - [[dot-snapshot()]] - code - gateway/security/module_stats.py
 - [[dot-test_allowed_egress_counts_as_allowed()]] - code - gateway/tests/test_module_stats.py
 - [[dot-test_denied_egress_counts_as_blocked()]] - code - gateway/tests/test_module_stats.py
@@ -50,16 +50,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 8 edges to [[_COMMUNITY_EgressFilterConfig]]
 - 5 edges to [[_COMMUNITY_A2AMethod]]
-- 5 edges to [[_COMMUNITY_EgressFilter]]
-- 4 edges to [[_COMMUNITY_Role]]
-- 3 edges to [[_COMMUNITY_Enum]]
-- 3 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 4 edges to [[_COMMUNITY_RBACConfig]]
 - 2 edges to [[_COMMUNITY_socrouter.py]]
+- 2 edges to [[_COMMUNITY_Action]]
+- 1 edge to [[_COMMUNITY_test_soc_realtime_coverage.py]]
 
 ## Top bridge nodes
-- [[test_module_stats.py]] - degree 18, connects to 4 communities
-- [[TestEnforcementWiring]] - degree 11, connects to 3 communities
-- [[TestEgressWiringEndToEnd]] - degree 10, connects to 3 communities
+- [[test_module_stats.py]] - degree 18, connects to 3 communities
+- [[TestEnforcementWiring]] - degree 11, connects to 2 communities
+- [[TestEgressWiringEndToEnd]] - degree 10, connects to 2 communities
+- [[Decision_2]] - degree 7, connects to 2 communities
 - [[module_stats.py]] - degree 6, connects to 2 communities
-- [[get_collector()]] - degree 11, connects to 1 community

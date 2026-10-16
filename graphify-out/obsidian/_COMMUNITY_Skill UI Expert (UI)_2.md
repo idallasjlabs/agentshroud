@@ -31,7 +31,7 @@ members: 27
 - [[Navigation_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
 - [[React  Next.js Component Architecture_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
 - [[Responsive Layout System_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Role_35]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[Role_36]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
 - [[Rules_11]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
 - [[Skill UI Expert (UI)_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
 - [[UI Validation Checklist_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md

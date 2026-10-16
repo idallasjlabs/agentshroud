@@ -41,10 +41,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 3 edges to [[_COMMUNITY_PermissionLevel]]
+- 8 edges to [[_COMMUNITY_MCPPermissionManager]]
 
 ## Top bridge nodes
-- [[TestToolPermission]] - degree 27, connects to 2 communities
+- [[TestToolPermission]] - degree 27, connects to 1 community
 - [[dot-test_privacy_policy_overrides_patterns()]] - degree 2, connects to 1 community
 - [[dot-test_privacy_policy_status_when_missing_file()]] - degree 2, connects to 1 community

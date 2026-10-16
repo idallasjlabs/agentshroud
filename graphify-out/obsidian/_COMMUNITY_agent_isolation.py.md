@@ -19,12 +19,12 @@ members: 15
 - [[IsolationVerifier.verify_volume_isolation()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[Key Classes  Functions_30]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[Mode Enforce vs Monitor_9]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Purpose_147]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Purpose_133]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[Related_34]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Responsibilities_32]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Responsibilities_31]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[Threat Model_18]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[agent_isolation.py_2]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 - [[agent_isolation.py_1]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[agent_isolation.py]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,4 +37,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_OpenSCAP]]
 
 ## Top bridge nodes
-- [[agent_isolation.py_1]] - degree 11, connects to 1 community
+- [[agent_isolation.py_2]] - degree 11, connects to 1 community

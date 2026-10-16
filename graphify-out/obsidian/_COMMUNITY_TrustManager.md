@@ -16,16 +16,16 @@ members: 23
 - [[Dashboard (WebSocket)]] - concept - docs/architecture/system-architecture.md
 - [[Database Schema]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 - [[Default Action Trust Requirements]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Environment Variables_3]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Function Details_1]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Key Classes  Functions_1]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Environment Variables_2]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Function Details]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Key Classes  Functions]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 - [[Kill Switch (MonitorBlockIsolate)]] - concept - docs/architecture/system-architecture.md
-- [[Mode Enforce vs Monitor_1]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Mode Enforce vs Monitor]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 - [[Monitoring System Integration (WebhooksPrometheus)]] - document - docs/api/integration-guide.md
-- [[Purpose_78]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Related_1]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Responsibilities_3]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
-- [[Threat Model_2]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Purpose_77]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Related]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Responsibilities_1]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Threat Model_1]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 - [[TrustManager_5]] - concept - docker/config/hermes/SOUL.md
 - [[TrustManager._apply_decay(score, last_action_time)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 - [[TrustManager._update_score(agent_id, delta, event_type, details)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
@@ -42,11 +42,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 2 edges to [[_COMMUNITY_Audit Ledger (SHA-256 hash only)]]
 - 1 edge to [[_COMMUNITY_hermesSOUL]]
-- 1 edge to [[_COMMUNITY_ADR-008 Progressive Trust Level System]]
-- 1 edge to [[_COMMUNITY_Proxy Layer]]
-- 1 edge to [[_COMMUNITY_Audit Ledger (SHA-256 hash only)]]
+- 1 edge to [[_COMMUNITY_AgentShroud (system, C4 context)]]
 - 1 edge to [[_COMMUNITY_ADR-009 Enforce-by-Default Security Philosophy]]
 
 ## Top bridge nodes
-- [[TrustManager_5]] - degree 18, connects to 5 communities
+- [[TrustManager_5]] - degree 18, connects to 4 communities

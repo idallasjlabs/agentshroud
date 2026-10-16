@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/update-agentshroud.sh"
 type: "code"
-community: "asb (AgentShroud Bot helper)"
+community: "check-vendor-compat.sh"
 location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asb_AgentShroud_Bot_helper
+  - community/check-vendor-compatsh
 ---
 
 # _rollback()
@@ -16,4 +16,4 @@ tags:
 - [[update-agentshroud.sh]] - `defines` [EXTRACTED]
 - [[update-agentshroud.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asb_AgentShroud_Bot_helper
+#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh

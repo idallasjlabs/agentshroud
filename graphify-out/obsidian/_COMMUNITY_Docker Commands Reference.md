@@ -31,7 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_First Time Setup]]
+- 1 edge to [[_COMMUNITY_Error Index]]
 
 ## Top bridge nodes
 - [[Docker Commands Reference]] - degree 12, connects to 1 community

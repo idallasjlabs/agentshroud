@@ -12,14 +12,14 @@ members: 10
 ## Members
 - [[container-net-diag.sh]] - code - docker/scripts/container-net-diag.sh
 - [[container-net-diag.sh script]] - code - docker/scripts/container-net-diag.sh
-- [[fail()_5]] - code - docker/scripts/container-net-diag.sh
+- [[fail()_4]] - code - docker/scripts/container-net-diag.sh
 - [[has()_1]] - code - docker/scripts/container-net-diag.sh
 - [[header()]] - code - docker/scripts/container-net-diag.sh
 - [[http_test()]] - code - docker/scripts/container-net-diag.sh
 - [[info()_2]] - code - docker/scripts/container-net-diag.sh
 - [[pass()_3]] - code - docker/scripts/container-net-diag.sh
 - [[tcp_test()]] - code - docker/scripts/container-net-diag.sh
-- [[warn()_6]] - code - docker/scripts/container-net-diag.sh
+- [[warn()_3]] - code - docker/scripts/container-net-diag.sh
 
 ## Live Query (requires Dataview plugin)
 

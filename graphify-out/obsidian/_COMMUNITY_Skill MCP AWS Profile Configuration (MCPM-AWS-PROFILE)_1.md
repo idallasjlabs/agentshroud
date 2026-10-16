@@ -27,13 +27,13 @@ members: 28
 - [[Multi-Account AWS Access_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
 - [[Option 1 Interactive Configuration_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
 - [[Option 2 Manual Configuration_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Quick Reference_6]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Quick Reference_5]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
 - [[Related Skills_57]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Role_22]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Role_26]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
 - [[Scenario Development → Production_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
 - [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
 - [[Switch AWS Profile for MCP_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Troubleshooting_15]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Troubleshooting_18]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
 - [[Use SSO Profile with MCP_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
 - [[Using AssumeRole for Cross-Account Access_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
 - [[What is an AWS Profile_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md

@@ -16,7 +16,7 @@ members: 22
 - [[Brand Theme Block (Mermaid)_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
 - [[Core Discipline Understand → Diagram → Validate → Export_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
 - [[Data Flow — How data moves and transforms_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
-- [[Dependencies_14]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Dependencies_15]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
 - [[Diagram Types and Data Lakehouse Examples_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
 - [[ER Diagram — Table relationships and control schema_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
 - [[File and Directory Conventions_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md

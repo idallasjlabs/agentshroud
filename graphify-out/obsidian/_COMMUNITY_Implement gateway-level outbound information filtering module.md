@@ -14,10 +14,10 @@ members: 17
 - [[Constraints]] - document - docs/planning/redteam/06-outbound-info-filter.md
 - [[Evidence]] - document - docs/planning/redteam/06-outbound-info-filter.md
 - [[Implement gateway-level outbound information filtering module]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Problem_3]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Problem_2]] - document - docs/planning/redteam/06-outbound-info-filter.md
 - [[Relationship to chunk 00-information-disclosure]] - document - docs/planning/redteam/06-outbound-info-filter.md
 - [[Remediation_1]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Root Cause_2]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Root Cause_1]] - document - docs/planning/redteam/06-outbound-info-filter.md
 - [[Severity_3]] - document - docs/planning/redteam/06-outbound-info-filter.md
 - [[Step 1 Create the Outbound Information Filter module]] - document - docs/planning/redteam/06-outbound-info-filter.md
 - [[Step 2 Define deny-list patterns]] - document - docs/planning/redteam/06-outbound-info-filter.md
@@ -26,7 +26,7 @@ members: 17
 - [[Step 5 Add response classification for high-density matches]] - document - docs/planning/redteam/06-outbound-info-filter.md
 - [[Step 6 Integrate with the PII Sanitizer pipeline]] - document - docs/planning/redteam/06-outbound-info-filter.md
 - [[Step 7 Add the module to gateway configuration]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Verification_7]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Verification_5]] - document - docs/planning/redteam/06-outbound-info-filter.md
 
 ## Live Query (requires Dataview plugin)
 

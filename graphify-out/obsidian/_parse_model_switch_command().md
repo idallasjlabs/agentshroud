@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "server.py"
+community: "test_voice_latency_guard.py"
 location: "L612"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/serverpy
+  - community/test_voice_latency_guardpy
 ---
 
 # _parse_model_switch_command()
@@ -18,4 +18,4 @@ tags:
 - [[switch_model.sh main flow]] - `semantically_similar_to` [INFERRED]
 - [[voice_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/serverpy
+#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy

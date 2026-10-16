@@ -30,9 +30,9 @@ SORT file.name ASC
 - 4 edges to [[_COMMUNITY_TestPatternDetection]]
 - 3 edges to [[_COMMUNITY_GovernanceAction]]
 - 3 edges to [[_COMMUNITY_SubagentGovernance]]
-- 1 edge to [[_COMMUNITY_Enum]]
-- 1 edge to [[_COMMUNITY_ResourceUsage]]
 - 1 edge to [[_COMMUNITY_TrustConfig]]
+- 1 edge to [[_COMMUNITY_Action]]
+- 1 edge to [[_COMMUNITY_ResourceUsage]]
 
 ## Top bridge nodes
 - [[subagent_governance.py]] - degree 15, connects to 6 communities

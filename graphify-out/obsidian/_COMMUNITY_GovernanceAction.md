@@ -33,19 +33,20 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 11 edges to [[_COMMUNITY_SubagentGovernance]]
-- 4 edges to [[_COMMUNITY_Enum]]
 - 3 edges to [[_COMMUNITY_subagent_governance.py]]
 - 3 edges to [[_COMMUNITY_TestPatternDetection]]
 - 2 edges to [[_COMMUNITY_TestOutputTrustScoring]]
 - 2 edges to [[_COMMUNITY_TestSpawnAuthorization]]
 - 2 edges to [[_COMMUNITY_TestToolAuthorization]]
+- 2 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 2 edges to [[_COMMUNITY_Action]]
 - 2 edges to [[_COMMUNITY_dot-_check_budget]]
 - 1 edge to [[_COMMUNITY_A2AGovernanceProxy]]
 - 1 edge to [[_COMMUNITY_ResourceUsage]]
 
 ## Top bridge nodes
-- [[GovernanceAction]] - degree 12, connects to 7 communities
-- [[GovernanceEventType]] - degree 12, connects to 7 communities
+- [[GovernanceAction]] - degree 12, connects to 8 communities
+- [[GovernanceEventType]] - degree 12, connects to 8 communities
 - [[dot-_log_event()_1]] - degree 8, connects to 3 communities
 - [[dot-authorize_spawn()]] - degree 4, connects to 2 communities
 - [[TestLifecycle_1]] - degree 9, connects to 1 community

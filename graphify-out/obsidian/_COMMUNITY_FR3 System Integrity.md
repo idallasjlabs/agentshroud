@@ -16,9 +16,9 @@ members: 18
 - [[config_integrity.py]] - code - gateway/security/config_integrity.py
 - [[gateway-seccomp.json (Docker seccomp profile)]] - code - docker/seccomp/gateway-seccomp.json
 - [[heuristic_classifier.py]] - code - gateway/security/heuristic_classifier.py
-- [[log()_6]] - code - docker/scripts/security-report.sh
-- [[log()_7]] - code - docker/scripts/security-report-retention.sh
-- [[log()_8]] - code - docker/scripts/security-scheduler.sh
+- [[log()_4]] - code - docker/scripts/security-report.sh
+- [[log()_5]] - code - docker/scripts/security-report-retention.sh
+- [[log()_6]] - code - docker/scripts/security-scheduler.sh
 - [[scan.sh_1]] - code - docker/scripts/scan.sh
 - [[scan.sh script]] - code - docker/scripts/scan.sh
 - [[security-report-retention.sh]] - code - docker/scripts/security-report-retention.sh
@@ -38,19 +38,20 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY_dockerscriptssecurity-scan.sh]]
-- 2 edges to [[_COMMUNITY_HeuristicClassifier]]
-- 1 edge to [[_COMMUNITY_OutboundInfoFilter]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher]]
+- 1 edge to [[_COMMUNITY_HeuristicClassifier]]
 - 1 edge to [[_COMMUNITY_PIIConfig]]
-- 1 edge to [[_COMMUNITY_ConfigIntegrityMonitor]]
+- 1 edge to [[_COMMUNITY_Action]]
+- 1 edge to [[_COMMUNITY_HeuristicClassifier_1]]
 - 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
-- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 1 edge to [[_COMMUNITY_ConfigIntegrityMonitor]]
 - 1 edge to [[_COMMUNITY_IEC 62443 Compliance Matrix — AgentShroud]]
 - 1 edge to [[_COMMUNITY_PHASE_3A_3B_IMPLEMENTATION]]
-- 1 edge to [[_COMMUNITY_AgentShroud Semgrep SAST Configuration]]
+- 1 edge to [[_COMMUNITY_egress_filter.py]]
 
 ## Top bridge nodes
 - [[FR3 System Integrity]] - degree 10, connects to 7 communities
+- [[heuristic_classifier.py]] - degree 3, connects to 2 communities
 - [[security-scheduler.sh]] - degree 9, connects to 1 community
 - [[security-scan.sh (unified scan dispatcher)]] - degree 5, connects to 1 community
 - [[security-report.sh]] - degree 5, connects to 1 community
-- [[scan.sh_1]] - degree 3, connects to 1 community

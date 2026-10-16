@@ -17,9 +17,9 @@ members: 15
 - [[Imports From  Exports To_4]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
 - [[Key Classes  Functions_23]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
 - [[Known Issues  Notes_5]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Purpose_140]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[Purpose_126]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
 - [[Related_27]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Responsibilities_25]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[Responsibilities_24]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
 - [[enforce_retention()]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
 - [[initialize()]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
 - [[ledger.py_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md

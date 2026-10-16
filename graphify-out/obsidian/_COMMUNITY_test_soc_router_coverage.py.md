@@ -10,12 +10,12 @@ members: 135
 **Members:** 135 nodes
 
 ## Members
-- [[dot-__init__()_62]] - code - gateway/tests/test_soc_router_coverage.py
-- [[dot-__init__()_63]] - code - gateway/tests/test_soc_router_coverage.py
-- [[dot-__init__()_64]] - code - gateway/tests/test_soc_router_coverage.py
-- [[dot-__init__()_65]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-__init__()_92]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-__init__()_93]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-__init__()_94]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-__init__()_95]] - code - gateway/tests/test_soc_router_coverage.py
 - [[dot-get_recent_entries()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[dot-is_group_admin()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-is_group_admin()_1]] - code - gateway/tests/test_soc_router_coverage.py
 - [[dot-is_owner()_2]] - code - gateway/tests/test_soc_router_coverage.py
 - [[dot-model_dump()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[dot-model_dump()_1]] - code - gateway/tests/test_soc_router_coverage.py
@@ -155,11 +155,11 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 26 edges to [[_COMMUNITY_AsyncMock]]
-- 5 edges to [[_COMMUNITY_Role]]
+- 5 edges to [[_COMMUNITY_RBACConfig]]
 - 5 edges to [[_COMMUNITY_TestEgressApprovalQueue]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
 - 1 edge to [[_COMMUNITY_test_soc_realtime_coverage.py]]
 - 1 edge to [[_COMMUNITY_test_e2e.py]]
-- 1 edge to [[_COMMUNITY_socrouter.py]]
 
 ## Top bridge nodes
 - [[test_soc_router_coverage.py]] - degree 151, connects to 6 communities

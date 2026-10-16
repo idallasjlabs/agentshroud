@@ -11,7 +11,7 @@ members: 12
 
 ## Members
 - [[0. Pre-existing session context worth recording_1]] - document - reports/upgrade-2026-09-06.md
-- [[1. Environment mapping_1]] - document - reports/upgrade-2026-09-06.md
+- [[1. Environment mapping]] - document - reports/upgrade-2026-09-06.md
 - [[2. Upgrade table]] - document - reports/upgrade-2026-09-06.md
 - [[3. Security findings]] - document - reports/upgrade-2026-09-06.md
 - [[4. Verification evidence]] - document - reports/upgrade-2026-09-06.md
@@ -31,8 +31,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Sunday Upgrade Report — 2026-09-20 (PROD run)]]
 - 1 edge to [[_COMMUNITY_Sunday Upgrade Report — 2026-09-17 (prod, on-demand)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Sunday Upgrade Report — 2026-09-20 (PROD run)]]
 
 ## Top bridge nodes
 - [[upgrade-2026-09-06]] - degree 3, connects to 2 communities

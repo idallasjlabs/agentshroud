@@ -11,7 +11,7 @@ members: 5
 
 ## Members
 - [[Athena — Knowledge Distiller_2]] - document - docker/config/openclaw/skills/i-athena/README.md
-- [[Purpose_31]] - document - docker/config/openclaw/skills/i-athena/README.md
+- [[Purpose_36]] - document - docker/config/openclaw/skills/i-athena/README.md
 - [[Related Skills_24]] - document - docker/config/openclaw/skills/i-athena/README.md
 - [[Usage_27]] - document - docker/config/openclaw/skills/i-athena/README.md
 - [[openclawskillsi-athenaREADME]] - document - docker/config/openclaw/skills/i-athena/README.md

@@ -1,33 +1,33 @@
 ---
 type: community
-cohesion: 0.04
-members: 75
+cohesion: 0.03
+members: 73
 ---
 
 # ToolResultSanitizer
 
-**Cohesion:** 0.04 - loosely connected
-**Members:** 75 nodes
+**Cohesion:** 0.03 - loosely connected
+**Members:** 73 nodes
 
 ## Members
-- [[dot-__init__()_91]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[dot-__init__()_179]] - code - gateway/security/tool_result_sanitizer_enhanced.py
 - [[dot-_domain_matches_pattern()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
 - [[dot-_extract_code_blocks()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
 - [[dot-_is_domain_allowed()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
 - [[dot-_is_internal_link()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
 - [[dot-_restore_code_blocks()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
 - [[dot-_url_has_blocked_patterns()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[dot-sanitize()_1]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[dot-sanitize()_4]] - code - gateway/security/tool_result_sanitizer_enhanced.py
 - [[dot-sanitize_images()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
 - [[dot-sanitize_links()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[dot-setup_method()_19]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[dot-setup_method()_36]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[dot-test_blocked_pattern_detection()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[dot-test_code_blocks_preserved()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[dot-test_convenience_function()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[dot-test_custom_config()_1]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[dot-test_default_config()_3]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[dot-test_custom_config()_3]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[dot-test_default_config()_8]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[dot-test_domain_matching_patterns()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[dot-test_edge_cases()_1]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[dot-test_edge_cases()_4]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[dot-test_empty_alt_text_handling()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[dot-test_empty_or_none_input()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[dot-test_external_domain_stripping()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
@@ -46,7 +46,6 @@ members: 75
 - [[Check if a URL's domain is in the allowlist.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
 - [[Check if domain matches pattern (supports wildcards).]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
 - [[Check if this is an internal link (relative, anchor, etc.).]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Configuration for tool result markdown sanitization.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
 - [[Convenience function to sanitize tool result content.      Args         content]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
 - [[Enhanced markdown sanitizer with configurable domain allowlist.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
 - [[Extract code blocks to preserve them during sanitization.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
@@ -54,10 +53,10 @@ members: 75
 - [[Remove or warn about markdown images pointing to non-allowlisted domains.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
 - [[Restore code blocks after sanitization.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
 - [[Sanitize tool result content by filtering markdown links and images.          Ar]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Set up test fixtures._2]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Set up test fixtures._4]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[Test ToolResultSanitizerConfig.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[Test custom configuration.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[Test default configuration values._2]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test default configuration values._5]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[Test detection of blocked patterns in URLs.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[Test detection of internalrelative links.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[Test domain allowlist checking.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
@@ -77,11 +76,10 @@ members: 75
 - [[Test that legitimate links are preserved.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[Test the convenience sanitize_tool_result function.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[Test warn mode that marks but preserves external content.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[TestIntegration_1]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[TestToolResultSanitizer]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[TestIntegration]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[TestToolResultSanitizer_1]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[TestToolResultSanitizerConfig]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[ToolResultSanitizer]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[ToolResultSanitizerConfig]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[ToolResultSanitizer_1]] - code - gateway/security/tool_result_sanitizer_enhanced.py
 - [[sanitize_tool_result()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
 - [[test_tool_result_sanitizer_enhanced.py]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[tool_result_sanitizer_enhanced.py]] - code - gateway/security/tool_result_sanitizer_enhanced.py
@@ -94,9 +92,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 21 edges to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
+- 27 edges to [[_COMMUNITY_MiddlewareManager]]
 
 ## Top bridge nodes
-- [[ToolResultSanitizer]] - degree 34, connects to 2 communities
-- [[ToolResultSanitizerConfig]] - degree 26, connects to 1 community
+- [[ToolResultSanitizer_1]] - degree 34, connects to 1 community
+- [[TestToolResultSanitizer_1]] - degree 22, connects to 1 community
+- [[sanitize_tool_result()]] - degree 7, connects to 1 community
+- [[test_tool_result_sanitizer_enhanced.py]] - degree 6, connects to 1 community
+- [[TestIntegration]] - degree 6, connects to 1 community

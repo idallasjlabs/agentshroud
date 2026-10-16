@@ -35,8 +35,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_system-requirements]]
 - 1 edge to [[_COMMUNITY_AgentShroud™ Brand Guidelines]]
+- 1 edge to [[_COMMUNITY_system-requirements]]
 
 ## Top bridge nodes
 - [[Incident Response Playbook — AgentShroud]] - degree 9, connects to 2 communities

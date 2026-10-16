@@ -1,16 +1,16 @@
 ---
 type: community
-cohesion: 0.06
-members: 63
+cohesion: 0.07
+members: 43
 ---
 
 # ProxyDashboard
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 63 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 43 nodes
 
 ## Members
-- [[dot-__init__()_49]] - code - gateway/dashboard/proxy_status.py
+- [[dot-__init__()_57]] - code - gateway/dashboard/proxy_status.py
 - [[dot-get_display()]] - code - gateway/dashboard/proxy_status.py
 - [[dot-get_report()]] - code - gateway/dashboard/proxy_status.py
 - [[dot-record_message_proxied()]] - code - gateway/dashboard/proxy_status.py
@@ -38,24 +38,7 @@ members: 63
 - [[ProxyStatusReport]] - code - gateway/dashboard/proxy_status.py
 - [[ProxyStatusReport.to_display should produce readable strings.]] - rationale - gateway/tests/test_proxy_dashboard.py
 - [[Return human-readable dashboard strings.]] - rationale - gateway/dashboard/proxy_status.py
-- [[check()_7]] - code - scripts/preflight-check.sh
-- [[fail()_1]] - code - scripts/tailscale-check.sh
-- [[fail()_2]] - code - scripts/verify-proxy.sh
-- [[info()_1]] - code - scripts/verify-proxy.sh
-- [[infra-check.sh]] - code - scripts/infra-check.sh
-- [[infra-check.sh script]] - code - scripts/infra-check.sh
-- [[ok()]] - code - scripts/tailscale-check.sh
-- [[pass()_1]] - code - scripts/verify-proxy.sh
-- [[preflight-check.sh]] - code - scripts/preflight-check.sh
-- [[preflight-check.sh script]] - code - scripts/preflight-check.sh
 - [[proxy_status.py]] - code - gateway/dashboard/proxy_status.py
-- [[run_bypass()]] - code - scripts/verify-proxy.sh
-- [[run_canary()_1]] - code - scripts/verify-proxy.sh
-- [[run_chain()]] - code - scripts/verify-proxy.sh
-- [[run_full()]] - code - scripts/verify-proxy.sh
-- [[run_quick()]] - code - scripts/verify-proxy.sh
-- [[tailscale-check.sh]] - code - scripts/tailscale-check.sh
-- [[tailscale-check.sh script]] - code - scripts/tailscale-check.sh
 - [[test_dashboard_audit_broken()]] - code - gateway/tests/test_proxy_dashboard.py
 - [[test_dashboard_audit_status()]] - code - gateway/tests/test_proxy_dashboard.py
 - [[test_dashboard_canary_failed()]] - code - gateway/tests/test_proxy_dashboard.py
@@ -70,9 +53,6 @@ members: 63
 - [[test_dashboard_uptime()]] - code - gateway/tests/test_proxy_dashboard.py
 - [[test_proxy_dashboard.py]] - code - gateway/tests/test_proxy_dashboard.py
 - [[test_status_report_to_display()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[verify-proxy.sh]] - code - scripts/verify-proxy.sh
-- [[verify-proxy.sh script]] - code - scripts/verify-proxy.sh
-- [[warn()_3]] - code - scripts/tailscale-check.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -82,15 +62,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_PIIConfig]]
 - 1 edge to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
 - 1 edge to [[_COMMUNITY_api.py]]
 - 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
 - 1 edge to [[_COMMUNITY_test_e2e_proxy.py]]
 
 ## Top bridge nodes
+- [[ProxyDashboard]] - degree 27, connects to 2 communities
 - [[proxy_status.py]] - degree 4, connects to 2 communities
-- [[ProxyDashboard]] - degree 27, connects to 1 community
-- [[run_canary()_1]] - degree 11, connects to 1 community
-- [[run_full()]] - degree 10, connects to 1 community
-- [[run_quick()]] - degree 9, connects to 1 community

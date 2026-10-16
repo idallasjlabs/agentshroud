@@ -1,20 +1,20 @@
 ---
 type: community
 cohesion: 0.03
-members: 94
+members: 93
 ---
 
 # test_agent_cve_registry.py
 
 **Cohesion:** 0.03 - loosely connected
-**Members:** 94 nodes
+**Members:** 93 nodes
 
 ## Members
 - [[7 app-level entries + 7 dependency-chain entries added 2026-07-31 after a     re]] - rationale - gateway/tests/test_agent_cve_registry.py
 - [[A real CVE always came from a GHSA advisory, so cve_id implies ghsa_id.]] - rationale - gateway/tests/test_agent_cve_registry.py
 - [[A single shared output path makes multi-agent coverage impossible.]] - rationale - gateway/tests/test_agent_cve_registry.py
 - [[An agent with no version source must be refused, never verdicted.      Emitting]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Any_57]] - code - gateway/security/agent_cve_registry.py
+- [[Any_58]] - code - gateway/security/agent_cve_registry.py
 - [[Backward compatibility the default openclaw run must still exit 0.]] - rationale - gateway/tests/test_agent_cve_registry.py
 - [[CRITICAL GUARD no entry `id` may look like a real CVE id.      This is the load]] - rationale - gateway/tests/test_agent_cve_registry.py
 - [[CompletedProcess_4]] - code - gateway/tests/test_agent_cve_registry.py
@@ -42,7 +42,6 @@ members: 94
 - [[ghsacvepending counts must be internally consistent and honest.]] - rationale - gateway/tests/test_agent_cve_registry.py
 - [[ghsa_id must be either None or a real-looking GHSA id.]] - rationale - gateway/tests/test_agent_cve_registry.py
 - [[list_cve_agents()]] - code - gateway/security/agent_cve_registry.py
-- [[sync-cve-registry NVD append writes to wrong registry constant]] - concept - reports/upgrade-2026-09-26.md
 - [[test_agent_cve_registries_contains_both()]] - code - gateway/tests/test_agent_cve_registry.py
 - [[test_agent_cve_registries_objects_match_lists()]] - code - gateway/tests/test_agent_cve_registry.py
 - [[test_agent_cve_registry.py]] - code - gateway/tests/test_agent_cve_registry.py
@@ -113,24 +112,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_test_daily_cve_report.py]]
 - 5 edges to [[_COMMUNITY_check_upstream_cves]]
-- 4 edges to [[_COMMUNITY_sync-cve-registry.py]]
+- 5 edges to [[_COMMUNITY_test_daily_cve_report.py]]
 - 4 edges to [[_COMMUNITY_generate-cve-page.py]]
-- 2 edges to [[_COMMUNITY_Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)]]
-- 1 edge to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
+- 3 edges to [[_COMMUNITY_sync-cve-registry.py]]
+- 2 edges to [[_COMMUNITY_colima-health-check.sh]]
 - 1 edge to [[_COMMUNITY_triage-cve-mitigations.py]]
 - 1 edge to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_Action]]
-- 1 edge to [[_COMMUNITY_test_soc_bots.py]]
-- 1 edge to [[_COMMUNITY_agentshroud-ssh-exec.sh]]
 - 1 edge to [[_COMMUNITY_ServiceManager]]
-- 1 edge to [[_COMMUNITY_colima-health-check.sh]]
+- 1 edge to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
+- 1 edge to [[_COMMUNITY_test_soc_bots.py]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+- 1 edge to [[_COMMUNITY_agentshroud-ssh-exec.sh]]
 - 1 edge to [[_COMMUNITY__t]]
 
 ## Top bridge nodes
 - [[agent_cve_registry.py]] - degree 17, connects to 9 communities
 - [[get_agent_cve_summary()]] - degree 30, connects to 4 communities
 - [[list_cve_agents()]] - degree 15, connects to 4 communities
-- [[sync-cve-registry NVD append writes to wrong registry constant]] - degree 4, connects to 2 communities
 - [[test_agent_cve_registry.py]] - degree 68, connects to 1 community

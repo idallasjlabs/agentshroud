@@ -1,41 +1,50 @@
 ---
-source_file: "gateway/tests/test_llm_proxy_local_parity.py"
+source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "test_llm_proxy_local_parity.py"
-location: "L53"
+community: "AsyncMock"
+location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy
+  - community/AsyncMock
 ---
 
 # _make_proxy()
 
 ## Connections
-- [[LLMProxy]] - `calls` [EXTRACTED]
-- [[LLMProxy_1]] - `references` [EXTRACTED]
-- [[_FakeSanitizer]] - `calls` [EXTRACTED]
-- [[test_cloud_mode_anthropic_tool_use_shape_passes_through()]] - `calls` [EXTRACTED]
-- [[test_deepseek_r1_routes_to_mlxlm()]] - `calls` [EXTRACTED]
-- [[test_get_local_model_reads_fieldflare_ref()]] - `calls` [EXTRACTED]
-- [[test_get_local_secondary_model_reads_env()]] - `calls` [EXTRACTED]
-- [[test_get_local_secondary_model_returns_none_when_unset()]] - `calls` [EXTRACTED]
-- [[test_hermes_cloud_mode_uses_anthropic_endpoint()]] - `calls` [EXTRACTED]
-- [[test_hermes_openai_path_local_model_routed_correctly()]] - `calls` [EXTRACTED]
-- [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
-- [[test_local_mode_anthropic_tool_use_shape_passes_through()]] - `calls` [EXTRACTED]
-- [[test_local_mode_openai_tool_call_shape_passes_through()]] - `calls` [EXTRACTED]
-- [[test_local_oom_failover_disabled_does_not_retry()]] - `calls` [EXTRACTED]
-- [[test_local_oom_no_secondary_falls_through_to_503()]] - `calls` [EXTRACTED]
-- [[test_local_oom_triggers_secondary_failover()]] - `calls` [EXTRACTED]
-- [[test_local_p99_timeout_triggers_secondary_failover()]] - `calls` [EXTRACTED]
-- [[test_local_secondary_failover_anthropic_path()]] - `calls` [EXTRACTED]
-- [[test_local_secondary_failover_exception_returns_none()]] - `calls` [EXTRACTED]
-- [[test_local_secondary_failover_secondary_non_200_returns_none()]] - `calls` [EXTRACTED]
-- [[test_local_secondary_failover_unknown_path_returns_none()]] - `calls` [EXTRACTED]
-- [[test_mlx_community_deepseek_routes_to_mlxlm()]] - `calls` [EXTRACTED]
-- [[test_model_ref_round_trip()]] - `calls` [EXTRACTED]
-- [[test_normalize_local_model_provider_prefix_stripped_before_normalize()]] - `calls` [EXTRACTED]
-- [[test_stats_local_secondary_failover_succeeded_incremented()]] - `calls` [EXTRACTED]
+- [[dot-test_already_in_channel_is_idempotent_true()]] - `calls` [EXTRACTED]
+- [[dot-test_cached_corr_without_colon_falls_back_to_channel()]] - `calls` [EXTRACTED]
+- [[dot-test_cached_inbound_corr_skips_history_lookup()]] - `calls` [EXTRACTED]
+- [[dot-test_cant_kick_self_is_idempotent_true()]] - `calls` [EXTRACTED]
+- [[dot-test_dm_reply_recovers_inbound_via_conversations_history()]] - `calls` [EXTRACTED]
+- [[dot-test_history_error_records_outbound_without_correlation()]] - `calls` [EXTRACTED]
+- [[dot-test_malformed_json_body_forwards_with_empty_payload()]] - `calls` [EXTRACTED]
+- [[dot-test_missing_args_return_false()]] - `calls` [EXTRACTED]
+- [[dot-test_missing_args_return_false()_1]] - `calls` [EXTRACTED]
+- [[dot-test_missing_channel_or_text_skips_tracking()]] - `calls` [EXTRACTED]
+- [[dot-test_name_truncated_to_80_chars()]] - `calls` [EXTRACTED]
+- [[dot-test_network_error_returns_synthetic_failure()]] - `calls` [EXTRACTED]
+- [[dot-test_no_token_returns_false()]] - `calls` [EXTRACTED]
+- [[dot-test_no_token_returns_false()_1]] - `calls` [EXTRACTED]
+- [[dot-test_no_token_returns_none()]] - `calls` [EXTRACTED]
+- [[dot-test_not_in_channel_is_idempotent_true()]] - `calls` [EXTRACTED]
+- [[dot-test_other_error_returns_false()]] - `calls` [EXTRACTED]
+- [[dot-test_other_error_returns_false()_1]] - `calls` [EXTRACTED]
+- [[dot-test_recovery_exception_is_non_fatal()]] - `calls` [EXTRACTED]
+- [[dot-test_redaction_count_access_error_is_non_fatal()]] - `calls` [EXTRACTED]
+- [[dot-test_slack_error_returns_none()]] - `calls` [EXTRACTED]
+- [[dot-test_structured_text_serialized_for_preview()]] - `calls` [EXTRACTED]
+- [[dot-test_success_posts_with_bearer_token()]] - `calls` [EXTRACTED]
+- [[dot-test_success_returns_channel_id_with_sanitized_name()]] - `calls` [EXTRACTED]
+- [[dot-test_success_returns_true()]] - `calls` [EXTRACTED]
+- [[dot-test_success_returns_true()_1]] - `calls` [EXTRACTED]
+- [[dot-test_system_message_not_tracked()]] - `calls` [EXTRACTED]
+- [[dot-test_thread_reply_recovers_inbound_via_conversations_replies()]] - `calls` [EXTRACTED]
+- [[dot-test_tracker_exception_does_not_break_response()]] - `calls` [EXTRACTED]
+- [[dot-test_unknown_content_type_ignored()]] - `calls` [EXTRACTED]
+- [[Create a SlackAPIProxy with a fake token and no real secretfile IO.]] - `rationale_for` [EXTRACTED]
+- [[SlackAPIProxy_1]] - `calls` [EXTRACTED]
+- [[SlackAPIProxy]] - `references` [EXTRACTED]
+- [[test_slack_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

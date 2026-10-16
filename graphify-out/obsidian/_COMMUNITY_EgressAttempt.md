@@ -1,13 +1,13 @@
 ---
 type: community
-cohesion: 0.10
-members: 24
+cohesion: 0.08
+members: 28
 ---
 
 # EgressAttempt
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 24 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 28 nodes
 
 ## Members
 - [[dot-_check_impl()]] - code - gateway/security/egress_filter.py
@@ -16,9 +16,11 @@ members: 24
 - [[dot-_matches_allowlist_domain()]] - code - gateway/security/egress_filter.py
 - [[dot-_matches_ip_list()]] - code - gateway/security/egress_filter.py
 - [[dot-_record()_1]] - code - gateway/security/egress_filter.py
-- [[dot-check()_3]] - code - gateway/security/egress_filter.py
+- [[dot-check()_4]] - code - gateway/security/egress_filter.py
 - [[dot-check_async()]] - code - gateway/security/egress_filter.py
+- [[dot-get_log()]] - code - gateway/security/egress_filter.py
 - [[dot-get_policy()_1]] - code - gateway/security/egress_filter.py
+- [[dot-get_stats()_12]] - code - gateway/security/egress_filter.py
 - [[dot-matches_domain()]] - code - gateway/security/egress_filter.py
 - [[dot-matches_ip()]] - code - gateway/security/egress_filter.py
 - [[dot-matches_port()]] - code - gateway/security/egress_filter.py
@@ -33,6 +35,8 @@ members: 24
 - [[Check if port is allowed.]] - rationale - gateway/security/egress_filter.py
 - [[EgressAttempt]] - code - gateway/security/egress_filter.py
 - [[Get effective policy for an agent.]] - rationale - gateway/security/egress_filter.py
+- [[Get egress attempt log, optionally filtered by agent.]] - rationale - gateway/security/egress_filter.py
+- [[Get summary statistics of egress attempts.]] - rationale - gateway/security/egress_filter.py
 - [[Public entry — records the decision for the SOC heat-map (SCRUM-80),         the]] - rationale - gateway/security/egress_filter.py
 
 ## Live Query (requires Dataview plugin)
@@ -43,17 +47,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_EgressFilter]]
-- 8 edges to [[_COMMUNITY__make_filter]]
-- 7 edges to [[_COMMUNITY_EgressPolicy]]
-- 4 edges to [[_COMMUNITY_EgressFilterConfig]]
-- 3 edges to [[_COMMUNITY_test_egress_filter.py]]
+- 16 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 11 edges to [[_COMMUNITY__make_filter]]
+- 5 edges to [[_COMMUNITY_AlertDispatcher]]
 - 2 edges to [[_COMMUNITY_make_event]]
+- 1 edge to [[_COMMUNITY_migrate-cve-registry-ghsa.py]]
+- 1 edge to [[_COMMUNITY_egress_filter.py]]
 - 1 edge to [[_COMMUNITY_A2AMethod]]
 
 ## Top bridge nodes
-- [[EgressAttempt]] - degree 22, connects to 5 communities
-- [[dot-_record()_1]] - degree 6, connects to 3 communities
-- [[dot-check()_3]] - degree 6, connects to 2 communities
+- [[EgressAttempt]] - degree 22, connects to 4 communities
+- [[dot-check()_4]] - degree 6, connects to 2 communities
 - [[dot-check_async()]] - degree 6, connects to 2 communities
+- [[dot-_record()_1]] - degree 6, connects to 2 communities
 - [[dot-get_policy()_1]] - degree 4, connects to 2 communities

@@ -13,15 +13,15 @@ members: 14
 - [[2.1 Design Principle Transparent Proxy]] - document - docs/papers/agentshroud-whitepaper.md
 - [[2.2 Why Transparent Proxy]] - document - docs/papers/agentshroud-whitepaper.md
 - [[2.3 Data Flow]] - document - docs/papers/agentshroud-whitepaper.md
-- [[Architecture Overview_3]] - document - docs/api/integration-guide.md
-- [[Configuration_19]] - document - docs/api/integration-guide.md
+- [[Architecture Overview_2]] - document - docs/api/integration-guide.md
+- [[Configuration_18]] - document - docs/api/integration-guide.md
 - [[Installation in Gateway]] - document - docs/vault/05 - Dependencies/openscap.md
 - [[Integration Testing]] - document - docs/api/integration-guide.md
 - [[Key Commands]] - document - docs/vault/05 - Dependencies/openscap.md
 - [[OpenClaw Integration (Primary Target)]] - document - docs/api/integration-guide.md
 - [[OpenSCAP_1]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[Purpose_153]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[Related Notes_55]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[Purpose_140]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[Related Notes_54]] - document - docs/vault/05 - Dependencies/openscap.md
 - [[Relationship to Other Security Tools]] - document - docs/vault/05 - Dependencies/openscap.md
 - [[What It Checks_1]] - document - docs/vault/05 - Dependencies/openscap.md
 
@@ -40,7 +40,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Local LLM Support — Implementation Review]]
 
 ## Top bridge nodes
-- [[Architecture Overview_3]] - degree 6, connects to 2 communities
+- [[Architecture Overview_2]] - degree 6, connects to 2 communities
 - [[OpenSCAP_1]] - degree 8, connects to 1 community
 - [[OpenClaw Integration (Primary Target)]] - degree 4, connects to 1 community
 - [[Integration Testing]] - degree 3, connects to 1 community

@@ -10,7 +10,7 @@ members: 39
 **Members:** 39 nodes
 
 ## Members
-- [[dot-__init__()_128]] - code - gateway/proxy/collaborator_greeter.py
+- [[dot-__init__()_71]] - code - gateway/proxy/collaborator_greeter.py
 - [[dot-_get_client()]] - code - gateway/proxy/collaborator_greeter.py
 - [[dot-_load_state()]] - code - gateway/proxy/collaborator_greeter.py
 - [[dot-_load_taglines()]] - code - gateway/proxy/collaborator_greeter.py
@@ -63,5 +63,5 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[CollaboratorGreeter]] - degree 21, connects to 1 community
-- [[dot-__init__()_128]] - degree 4, connects to 1 community
+- [[dot-__init__()_71]] - degree 4, connects to 1 community
 - [[dot-_get_client()]] - degree 3, connects to 1 community

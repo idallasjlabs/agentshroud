@@ -16,7 +16,7 @@ members: 35
 - [[delivery_track_sent_ok()]] - code - firmware/voice-terminal/main/playback_logic.h
 - [[face_set_state()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
 - [[face_state_t]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[main()_14]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
+- [[main()_9]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
 - [[playback_gate_should_open()]] - code - firmware/voice-terminal/main/playback_logic.h
 - [[playback_logic.h]] - code - firmware/voice-terminal/main/playback_logic.h
 - [[playback_logic.h (pure END-gateresume math, extracted for host testing)]] - code - firmware/voice-terminal/main/playback_logic.h
@@ -38,8 +38,8 @@ members: 35
 - [[test_resume_offset_rewinds_8kb()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
 - [[test_track_sent_ok_is_monotonic()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
 - [[tts_task()]] - code - firmware/voice-terminal/main/app_main.c
-- [[vt_agent_count()_1]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[vt_remote_log()_1]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
+- [[vt_agent_count()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
+- [[vt_remote_log()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
 - [[wakeword_set_tts_playing()]] - code - firmware/voice-terminal/main/wakeword.c
 - [[wakeword_tts_playing()]] - code - firmware/voice-terminal/main/wakeword.c
 - [[wakeword_tts_stop_clear()]] - code - firmware/voice-terminal/main/wakeword.c
@@ -56,8 +56,8 @@ SORT file.name ASC
 ## Connections to other communities
 - 7 edges to [[_COMMUNITY_wakeword.c]]
 - 6 edges to [[_COMMUNITY_app_main.c]]
-- 5 edges to [[_COMMUNITY_voice_task]]
 - 5 edges to [[_COMMUNITY_test_ptt_state.c]]
+- 5 edges to [[_COMMUNITY_voice_task]]
 
 ## Top bridge nodes
 - [[tts_task()]] - degree 9, connects to 3 communities

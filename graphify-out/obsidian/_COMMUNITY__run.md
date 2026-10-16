@@ -18,7 +18,7 @@ members: 14
 - [[dot-test_unknown_arg_rejected()]] - code - gateway/tests/test_canary_deploy.py
 - [[TestDryRun]] - code - gateway/tests/test_canary_deploy.py
 - [[TestGuard]] - code - gateway/tests/test_canary_deploy.py
-- [[_run()_2]] - code - gateway/tests/test_canary_deploy.py
+- [[_run()_1]] - code - gateway/tests/test_canary_deploy.py
 - [[canary-deploy.sh (bluegreen canary deploy)]] - code - scripts/canary-deploy.sh
 - [[test_canary_deploy.py]] - code - gateway/tests/test_canary_deploy.py
 - [[test_help_prints_usage()]] - code - gateway/tests/test_canary_deploy.py

@@ -41,9 +41,9 @@ SORT file.name ASC
 - 6 edges to [[_COMMUNITY_scanner_integration.py]]
 - 3 edges to [[_COMMUNITY_socrouter.py]]
 - 3 edges to [[_COMMUNITY_Path_1]]
-- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
-- 1 edge to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
 - 1 edge to [[_COMMUNITY__load_latest_json]]
+- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
 
 ## Top bridge nodes
 - [[get_trivy_summary()]] - degree 16, connects to 6 communities

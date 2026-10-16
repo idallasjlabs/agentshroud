@@ -49,10 +49,10 @@ members: 45
 - [[Delivered]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 - [[Fix Status]] - document - docs/planning/reviews/phase-review-2026-03-05.md
 - [[Next Milestone That Validates the Investment]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Summary_3]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[Summary_4]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[Summary_5]] - document - docs/planning/reviews/phase-review-2026-02-24.md
-- [[What This Means_1]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Summary_1]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[Summary_2]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[Summary_3]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[What This Means]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 - [[What Would Change This to NO-GO]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 - [[phase-review-2026-02-23]] - document - docs/planning/reviews/phase-review-2026-02-23.md
 
@@ -72,17 +72,17 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_3. Brutally Honest Self-Assessment]]
 - 1 edge to [[_COMMUNITY_1. Accomplishments This Phase_2]]
 - 1 edge to [[_COMMUNITY_1. Accomplishments This Phase — Delivered Security Infrastructure]]
-- 1 edge to [[_COMMUNITY_2. Security Value Audit — Real Protection vs. Theater Assessment]]
 - 1 edge to [[_COMMUNITY_2. Security Value Audit]]
-- 1 edge to [[_COMMUNITY_2. Security Value Audit_1]]
-- 1 edge to [[_COMMUNITY_5. Test Results]]
 - 1 edge to [[_COMMUNITY_2. Security Value Audit — Genuine Protection vs. Security Theater]]
 - 1 edge to [[_COMMUNITY_5. Strategic Recommendations]]
 - 1 edge to [[_COMMUNITY_6. Conclusion — Mission-Critical Security Infrastructure Delivered]]
-- 1 edge to [[_COMMUNITY_2. Security Value Audit_2]]
-- 1 edge to [[_COMMUNITY_3. Code Quality]]
+- 1 edge to [[_COMMUNITY_2. Security Value Audit — Real Protection vs. Theater Assessment]]
+- 1 edge to [[_COMMUNITY_5. Test Results]]
+- 1 edge to [[_COMMUNITY_2. Security Value Audit_1]]
 - 1 edge to [[_COMMUNITY_1. Accomplishments This Phase]]
 - 1 edge to [[_COMMUNITY_3. Remaining Work — Prioritized by Value]]
+- 1 edge to [[_COMMUNITY_2. Security Value Audit_2]]
+- 1 edge to [[_COMMUNITY_3. Code Quality]]
 - 1 edge to [[_COMMUNITY_🟢 INFO (nice to have)]]
 - 1 edge to [[_COMMUNITY_🟢 INFO (nice to have)_1]]
 - 1 edge to [[_COMMUNITY_2. Security Analysis]]

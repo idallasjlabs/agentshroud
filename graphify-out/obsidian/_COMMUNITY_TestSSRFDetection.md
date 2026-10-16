@@ -1,18 +1,18 @@
 ---
 type: community
 cohesion: 0.03
-members: 82
+members: 85
 ---
 
 # TestSSRFDetection
 
 **Cohesion:** 0.03 - loosely connected
-**Members:** 82 nodes
+**Members:** 85 nodes
 
 ## Members
-- [[dot-__init__()_181]] - code - gateway/proxy/url_analyzer.py
+- [[dot-__init__()_158]] - code - gateway/proxy/url_analyzer.py
 - [[dot-_check_base64()]] - code - gateway/proxy/url_analyzer.py
-- [[dot-_is_private_ip()_2]] - code - gateway/proxy/url_analyzer.py
+- [[dot-_is_private_ip()_1]] - code - gateway/proxy/url_analyzer.py
 - [[dot-_is_ssrf()]] - code - gateway/proxy/url_analyzer.py
 - [[dot-_resolve_host()]] - code - gateway/proxy/url_analyzer.py
 - [[dot-analyze()_1]] - code - gateway/proxy/url_analyzer.py
@@ -20,33 +20,33 @@ members: 82
 - [[dot-flagged()_2]] - code - gateway/proxy/url_analyzer.py
 - [[dot-test_0_0_0_0_blocked()]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_10_255_blocked()]] - code - gateway/tests/test_url_analyzer.py
-- [[dot-test_10_x_blocked()]] - code - gateway/tests/test_url_analyzer.py
-- [[dot-test_127_0_0_1_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_10_x_blocked()_1]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_127_0_0_1_blocked()_1]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_127_x_blocked()]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_169_254_link_local_blocked()]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_172_16_blocked()]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_172_31_blocked()]] - code - gateway/tests/test_url_analyzer.py
-- [[dot-test_192_168_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_192_168_blocked()_1]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_actual_base64()]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_all_lowercase_not_base64()]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_api_endpoint_allowed()]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_base64_in_path_flagged()]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_base64_in_query_flagged()_1]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_credit_card_in_url_flagged()]] - code - gateway/tests/test_url_analyzer.py
-- [[dot-test_decimal_ip_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_decimal_ip_blocked()_1]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_docs_allowed()]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_email_in_url_flagged()]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_empty_url()]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_github_allowed()]] - code - gateway/tests/test_url_analyzer.py
-- [[dot-test_hex_ip_blocked()]] - code - gateway/tests/test_url_analyzer.py
-- [[dot-test_https_allowed()_1]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_hex_ip_blocked()_1]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_https_allowed()]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_ip6_localhost_blocked()]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_ipv4_mapped_ipv6_blocked()_1]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_ipv4_mapped_ipv6_private_blocked()]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_ipv6_link_local_blocked()]] - code - gateway/tests/test_url_analyzer.py
-- [[dot-test_ipv6_loopback_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_ipv6_loopback_blocked()_1]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_ipv6_ula_blocked()]] - code - gateway/tests/test_url_analyzer.py
-- [[dot-test_localhost_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_localhost_blocked()_1]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_long_query_string_flagged()]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_many_params_flagged()]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_news_site_allowed()]] - code - gateway/tests/test_url_analyzer.py
@@ -54,7 +54,7 @@ members: 82
 - [[dot-test_non_base64_chars()]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_normal_query_not_flagged()]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_phone_in_url_flagged()]] - code - gateway/tests/test_url_analyzer.py
-- [[dot-test_public_ip_allowed()]] - code - gateway/tests/test_url_analyzer.py
+- [[dot-test_public_ip_allowed()_1]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_short_base64_not_flagged()_1]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_short_string_not_base64()]] - code - gateway/tests/test_url_analyzer.py
 - [[dot-test_ssn_in_url_flagged()_1]] - code - gateway/tests/test_url_analyzer.py
@@ -87,11 +87,14 @@ members: 82
 - [[TestPIIInURLs]] - code - gateway/tests/test_url_analyzer.py
 - [[TestSSRFDetection]] - code - gateway/tests/test_url_analyzer.py
 - [[URLAnalysisResult_1]] - code - gateway/proxy/url_analyzer.py
-- [[URLAnalyzer_1]] - code - gateway/proxy/url_analyzer.py
+- [[URLAnalyzer]] - code - gateway/proxy/url_analyzer.py
 - [[URLFinding]] - code - gateway/proxy/url_analyzer.py
+- [[URLVerdict]] - code - gateway/proxy/url_analyzer.py
 - [[_looks_like_base64()]] - code - gateway/proxy/url_analyzer.py
 - [[analyzer()]] - code - gateway/tests/test_url_analyzer.py
 - [[test_url_analyzer.py]] - code - gateway/tests/test_url_analyzer.py
+- [[url_analyzer.py]] - code - gateway/proxy/url_analyzer.py
+- [[web_config.py]] - code - gateway/proxy/web_config.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -101,14 +104,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_Enum]]
-- 1 edge to [[_COMMUNITY_WebContentScanner]]
-- 1 edge to [[_COMMUNITY_WebProxyConfig]]
-- 1 edge to [[_COMMUNITY_EgressFilter]]
+- 3 edges to [[_COMMUNITY_WebContentScanner]]
+- 3 edges to [[_COMMUNITY_WebProxyConfig]]
+- 2 edges to [[_COMMUNITY_Action]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
+- 1 edge to [[_COMMUNITY_egress_filter.py]]
 
 ## Top bridge nodes
-- [[URLAnalyzer_1]] - degree 19, connects to 3 communities
-- [[TestDataExfiltration_1]] - degree 11, connects to 2 communities
-- [[TestSSRFDetection]] - degree 22, connects to 1 community
-- [[TestLegitimateURLsAllowed]] - degree 11, connects to 1 community
-- [[test_url_analyzer.py]] - degree 10, connects to 1 community
+- [[web_config.py]] - degree 6, connects to 4 communities
+- [[URLAnalyzer]] - degree 19, connects to 2 communities
+- [[URLVerdict]] - degree 10, connects to 2 communities
+- [[url_analyzer.py]] - degree 8, connects to 2 communities
+- [[TestDataExfiltration_1]] - degree 11, connects to 1 community

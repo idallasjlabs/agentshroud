@@ -25,10 +25,10 @@ members: 30
 - [[dot-test_summary_error()_1]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_summary_infected()]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_update_db_not_found()]] - code - gateway/tests/test_security_toolchain.py
-- [[Any_48]] - code - gateway/security/clamav_scanner.py
-- [[Generate a summary dict suitable for the health report.      Args         alert_1]] - rationale - gateway/security/falco_monitor.py
+- [[Any_39]] - code - gateway/security/clamav_scanner.py
+- [[Generate a summary dict suitable for the health report.      Args         alert]] - rationale - gateway/security/falco_monitor.py
 - [[Parse clamscan output into structured results.      Args         output Raw st]] - rationale - gateway/security/clamav_scanner.py
-- [[Path_37]] - code - gateway/security/clamav_scanner.py
+- [[Path_26]] - code - gateway/security/clamav_scanner.py
 - [[Run ClamAV scan and return parsed results.      Args         target Directory]] - rationale - gateway/security/clamav_scanner.py
 - [[Save a ClamAV report to the log directory.]] - rationale - gateway/security/clamav_scanner.py
 - [[TestClamAVParser]] - code - gateway/tests/test_security_toolchain.py
@@ -49,18 +49,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_AlertDispatcher]]
+- 13 edges to [[_COMMUNITY_AlertDispatcher]]
 - 7 edges to [[_COMMUNITY_test_security_toolchain.py]]
-- 5 edges to [[_COMMUNITY_AgentRegistry]]
 - 2 edges to [[_COMMUNITY_test_clamav_pipeline.py]]
-- 1 edge to [[_COMMUNITY_WebProxyConfig]]
+- 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
 - 1 edge to [[_COMMUNITY_scanner_integration.py]]
 - 1 edge to [[_COMMUNITY_dot-_process_connect]]
-- 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
+- 1 edge to [[_COMMUNITY_egress_filter.py]]
 
 ## Top bridge nodes
-- [[run_clamscan()]] - degree 10, connects to 5 communities
-- [[parse_clamscan_output()]] - degree 18, connects to 4 communities
+- [[run_clamscan()]] - degree 10, connects to 4 communities
+- [[parse_clamscan_output()]] - degree 18, connects to 3 communities
 - [[generate_summary()_1]] - degree 5, connects to 3 communities
 - [[TestClamAVParser]] - degree 9, connects to 2 communities
 - [[update_virus_db()]] - degree 5, connects to 2 communities

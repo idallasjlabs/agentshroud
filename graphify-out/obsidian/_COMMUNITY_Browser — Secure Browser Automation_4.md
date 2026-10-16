@@ -11,7 +11,7 @@ members: 5
 
 ## Members
 - [[Browser — Secure Browser Automation_1]] - document - docker/config/hermes/skills/i-browser/README.md
-- [[Purpose_21]] - document - docker/config/hermes/skills/i-browser/README.md
+- [[Purpose_26]] - document - docker/config/hermes/skills/i-browser/README.md
 - [[Related Skills_14]] - document - docker/config/hermes/skills/i-browser/README.md
 - [[Usage_17]] - document - docker/config/hermes/skills/i-browser/README.md
 - [[hermesskillsi-browserREADME]] - document - docker/config/hermes/skills/i-browser/README.md

@@ -10,9 +10,9 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[dot-test_clean_when_installed_not_running()_2]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_not_run_when_no_alert_dir()_1]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_returns_summary_for_empty_dir()_1]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_clean_when_installed_not_running()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_not_run_when_no_alert_dir()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_returns_summary_for_empty_dir()]] - code - gateway/tests/test_scanner_integration.py
 - [[Return latest Falco alert summary from the local alert directory.      CC-20 If]] - rationale - gateway/security/scanner_integration.py
 - [[TestGetFalcoSummary]] - code - gateway/tests/test_scanner_integration.py
 - [[get_falco_summary()]] - code - gateway/security/scanner_integration.py
@@ -33,4 +33,4 @@ SORT file.name ASC
 ## Top bridge nodes
 - [[get_falco_summary()]] - degree 13, connects to 3 communities
 - [[TestGetFalcoSummary]] - degree 4, connects to 1 community
-- [[dot-test_not_run_when_no_alert_dir()_1]] - degree 3, connects to 1 community
+- [[dot-test_not_run_when_no_alert_dir()]] - degree 3, connects to 1 community

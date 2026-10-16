@@ -22,7 +22,7 @@ members: 14
 - [[check_pass()_1]] - code - docker/scripts/verify-security.sh
 - [[check_warn()]] - code - docker/scripts/verify-security.sh
 - [[toggle-readonly.sh mode switcher]] - code - docker/scripts/toggle-readonly.sh
-- [[verify-security.sh]] - code - docker/scripts/verify-security.sh
+- [[verify-security.sh_1]] - code - docker/scripts/verify-security.sh
 - [[verify-security.sh script]] - code - docker/scripts/verify-security.sh
 
 ## Live Query (requires Dataview plugin)

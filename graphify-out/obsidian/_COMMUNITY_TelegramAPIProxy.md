@@ -1,341 +1,344 @@
 ---
 type: community
-cohesion: 0.02
-members: 326
+cohesion: 0.01
+members: 329
 ---
 
 # TelegramAPIProxy
 
-**Cohesion:** 0.02 - loosely connected
-**Members:** 326 nodes
+**Cohesion:** 0.01 - loosely connected
+**Members:** 329 nodes
 
 ## Members
-- [[dot-__init__()_8]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-_make_proxy()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-_make_proxy()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-_make_proxy()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-is_owner()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_block_notice_sent_without_markdown_parse_mode()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_blocked_command_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_blocked_command_uppercase_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_blocked_command_with_fullwidth_chars_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_blocked_command_with_leading_whitespace_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_blocked_command_with_mention_and_punctuation_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_blocked_command_with_punctuation_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_blocked_command_with_zero_width_char_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_approval_queue_probe_gets_safe_info()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_approval_token_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_auth_question_about_own_keys_gets_safe_guidance()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_blocked_tools_question_gets_safe_info_not_blocked()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_command_blocking_question_gets_safe_info_not_denial()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_command_inventory_query_gets_safe_info_response()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_cross_tenant_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_direct_file_query_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_direct_file_query_returns_protect_file_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_env_secret_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_env_secret_probe_returns_protect_secret_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_execution_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_file_metadata_question_gets_safe_info()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_file_query_does_not_queue_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_function_calls_payload_text_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_guardrail_mod_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_healthcheck_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_help_uses_local_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_high_risk_approval_workflow_question_gets_safe_guidance()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_hypothetical_execution_question_gets_safe_info()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_identity_enumeration_query_gets_privacy_safe_info()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_internal_file_content_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_log_access_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_mixed_file_purpose_plus_show_question_gets_safe_info()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_network_infrastructure_question_gets_safe_guidance()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_policy_bypass_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_rate_limit_notice_returns_false_without_bot_token()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_rate_limiter_defaults_to_5000_per_hour()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_raw_tool_payload_text_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_revoke_command_is_blocked()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_safe_info_query_gets_local_safe_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_secret_value_block_returns_protect_secret_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_secret_value_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_security_architecture_question_gets_safe_guidance()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_self_modification_policy_question_gets_safe_guidance()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_show_high_level_policy_question_gets_safe_guidance()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_single_quoted_tool_payload_text_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_start_uses_local_notice_and_does_not_forward()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_status_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_tool_trace_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_web_access_imperative_with_url_queues_owner_approval()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_web_access_policy_question_gets_safe_info_not_blocked()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_web_access_policy_question_with_bare_domain_is_safe()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_web_access_policy_question_with_url_does_not_queue_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_web_access_policy_question_with_url_no_collaborator_keyword_is_safe()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_web_access_request_returns_pending_egress_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_web_access_request_with_bare_domain_queues_owner_approval()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_web_access_request_without_url_is_restricted_without_approval()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_who_else_uses_query_gets_privacy_safe_info()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_whoami_uses_local_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_whoami_without_slash_uses_local_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_egress_callback_applies_queue_decision()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_egress_callback_from_collaborator_is_rejected()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_egress_callback_non_dict_result_is_handled()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_forward_file_download_aborts_at_size_limit()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_healthcheck_local_notice_dedupe_handles_missing_update_id()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_healthcheck_local_notice_dedupe_with_missing_update_id_same_message()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_healthcheck_local_notice_is_deduped_per_update()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_healthcheck_with_fullwidth_chars_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_healthcheck_with_fullwidth_mention_and_punctuation_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_healthcheck_with_leading_whitespace_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_healthcheck_with_mention_and_punctuation_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_healthcheck_with_trailing_punctuation_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_healthcheck_with_zero_width_char_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_healthcheck_with_zero_width_mention_and_punctuation_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_healthcheck_word_with_punctuation_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_model_status_command_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_activity_is_tracked_for_unknown_user()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_bare_domain_triggers_egress_preflight_approval()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_consecutive_dot_domain_does_not_queue_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_domain_like_token_does_not_queue_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_domain_with_invalid_chars_does_not_queue_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_domain_with_trailing_period_still_queues_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_domain_with_trailing_quote_still_queues_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_email_only_text_does_not_queue_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_internal_suffix_domain_does_not_queue_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_ip_url_does_not_queue_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_localhost_url_does_not_queue_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_malformed_hyphen_domain_does_not_queue_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_malformed_url_normalizes_for_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_mixed_scheme_prefers_http_url_for_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_non_http_scheme_does_not_queue_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_non_http_url_does_not_suppress_separate_bare_domain_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_non_standard_web_port_does_not_queue_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_numeric_tld_does_not_queue_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_overlong_fqdn_does_not_queue_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_overlong_url_does_not_queue_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_percent_encoded_control_url_does_not_queue_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_preflight_cooldown_is_scheme_port_scoped()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_punycode_domain_does_not_queue_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_scheme_relative_url_queues_https_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_uppercase_http_scheme_queues_port_80_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_url_triggers_egress_preflight_approval()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_url_with_trailing_backtick_still_queues_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_userinfo_url_does_not_queue_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_whitespace_split_url_does_not_queue_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_notify_user_blocked_uses_collaborator_fallback_when_send_fails()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_notify_user_blocked_uses_owner_fallback_when_send_fails()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_owner_activity_is_tracked_with_flag()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_owner_addcollab_accepts_known_name_alias()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_owner_addcollab_adds_target_and_notifies()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_owner_addcollab_requires_target()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_owner_approve_ambiguous_multiple_pending_shows_usage()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_owner_approve_command_grants_pending_user()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_owner_approve_command_requires_pending_request()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_owner_approve_command_resolves_pending_username_alias()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_owner_approve_without_target_auto_selects_single_pending()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_owner_bare_approve_with_no_pending_falls_through_to_agent()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_owner_bare_deny_with_no_pending_falls_through_to_agent()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_owner_collabs_command_shows_named_roster()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_owner_deny_command_denies_pending_user()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_owner_deny_command_requires_pending_request()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_owner_deny_command_resolves_pending_username_alias()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_owner_healthcheck_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_owner_help_uses_local_notice_and_includes_revoke()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_owner_pending_command_shows_pending_active_and_revoked()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_owner_restorecollabs_restores_defaults()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_owner_revoke_command_cannot_revoke_owner()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_owner_revoke_command_revokes_target_user()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_owner_start_uses_local_notice_and_does_not_forward()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_owner_status_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_owner_url_triggers_egress_preflight_approval()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_owner_whoami_uses_local_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_owner_whoami_with_bot_mention_uses_local_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_pipeline_error_fails_closed_for_non_owner()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_pipeline_not_called_without_text()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_plain_model_question_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_proxy_request_returns_ack_only_updates_when_all_dropped()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_proxy_request_tracks_getupdates_stats_for_dropped_message()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_proxy_request_tracks_getupdates_stats_for_forwarded_message()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_proxy_seeds_runtime_revoked_from_persisted_paused_set()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_rate_limit_notice_mentions_configured_limit()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_revoked_user_messages_require_owner_reapproval()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_self_diagnose_dedupe_handles_missing_update_id_different_messages()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_self_diagnose_dedupe_handles_missing_update_id_same_message()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_self_diagnose_local_notice_is_deduped_per_update()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_self_diagnose_plain_word_with_punctuation_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_self_diagnose_with_mention_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_self_diagnose_with_zero_width_char_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_self_diagnostic_command_is_handled_locally_for_owner()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_self_diagnostic_dedupe_handles_missing_update_id_different_messages()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_self_diagnostic_dedupe_handles_missing_update_id_same_message()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_self_diagnostic_local_notice_is_deduped_per_update()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_self_diagnostic_with_fullwidth_chars_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_self_diagnostic_with_punctuation_is_handled_locally_for_collaborator()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_send_telegram_text_honors_retry_after_on_http_429()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_start_resets_multi_turn_tracker_for_collaborator()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_unapproved_collaborator_slash_command_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_unknown_user_message_triggers_owner_approval_workflow()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_unknown_user_repeated_start_still_gets_pending_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[model should be answered by gateway directly (no model invocation).]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Approval callback token probing should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Approval preflight should reject domains with non-alphabetic TLDs.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Approval workflow questions mentioning system commands should stay informational]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Bare domains without scheme should still queue preflight egress approval.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Bare-domain policy questions should be informational, not treated as web executi]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Block notices should be sent as plain text to avoid Telegram Markdown 400 errors]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Blocked collaborator commands should be retained in quarantine store.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Blocked env-secret probes should return deterministic Protect secret wording.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Blocked file queries should return a deterministic Protect notice without intern]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Blocked secret probes should return deterministic Protect secret wording.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Bot mention + punctuation should still route to local healthcheck handler.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Build a minimal Telegram getUpdates-style update object.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Bypassdisable-policy prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator healthcheck should be handled by gateway, not model.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator help should be handled locally with safe scoped commands.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator revoke command must be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator start should be answered locally and never forwarded to model runt]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator start should reset blocked multi-turn tracker session.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator status should be handled by gateway with protected status response]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator whoami should be handled locally with protected collaborator respo]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator function_calls payload should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator URL requests should queue owner-scoped approval checks.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator approval-queue metadata probes should return safe guidance only.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator block notice should retry with deterministic unavailable fallback o]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator blocked-tool policy question should be answered safely and informat]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator callback attempts must not approvedeny egress requests.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator command-policy questions should get informative guidance, not hard]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator conceptual questions should receive safe informative local response]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator direct execution prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator direct file-access prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator messages must not queue preflight approval even with valid https ta]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator messages with ftpfile+domain tokens must not queue preflight appro]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator plain 'whoami' should be treated as local command.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator raw tool payload JSON should never reach runtime.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator self-diagnostic punctuation variant should still be local-handled.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator single-quoted tool payload should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator toolcommand inventory probes should return safe local guidance.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator web requests should return deterministic pending-approval wording.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Conceptual auth workflow questions should be answered safely (not hard-blocked).]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Conceptual egress-policy questions should get safe info, not hard block.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Conceptual file-purpose questions should get safe info without file data access.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Conceptual policy questions that mention a URL should not be treated as fetch re]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Conceptual security architecture questions should return informative safe guidan]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Consecutive-dot domains in URLs should not queue preflight approvals.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Cross-tenantworkspace data probes should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Cross-user activity probes should return privacy-safe collaborator guidance.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Default collaborator limiter should use 5000 msgshour unless overridden.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Direct log-content requests should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Direct secrettoken value requests should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Domain-like tokens followed by identifier chars should not be treated as URLs.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Domain-only web intent should queue owner approval and pending notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Domains containing invalid hostname chars should not queue preflight approvals.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Domains over 253 chars should be rejected from preflight approval.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Email domains should not be mistaken for outbound web targets.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Environment variablesecret listing requests should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[FakeRBAC]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Fullwidth + mentionpunctuation healthcheck variants should still route locally.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Guardrailsecurity config modification prompts should be blocked and quarantined]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[High-level 'show' policy questions should be treated as conceptual safe-info req]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Hypothetical execution policy questions should get safe info, not hard block.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Identity enumeration prompts should return privacy-safe guidance.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[If pipeline crashes, non-owner messages must be blocked (fail-closed).]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Imperative URL requests should queue owner approval and not expose command execu]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Inbound preflight dedupe should still queue when scheme changes.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Infrastructuretopology questions should return high-level safe guidance.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Internal file probes must not be misclassified as egress approval requests.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Internalnon-routable pseudo-TLDs should not enter approval queue.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Leading whitespacenewline should not bypass collaborator blocked commands.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Leading whitespacenewline should not bypass local healthcheck handling.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Leading-dot hosts should be normalized before preflight approval check.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Literal IP URL targets should not enter domain approval preflight.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Malformed callback payloads should not crash inbound processing.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Malformed domain labels in URLs should not queue preflight approvals.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Mention + punctuation variants should still be blocked for collaborators.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Mentioned self-diagnose variant should still route to local diagnostics handler]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Minor punctuation obfuscation should not bypass local healthcheck handling.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Mixed BOOTSTRAPIDENTITY purpose+show phrasing should return safe guidance, not]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Non-domain hosts should not queue preflight approvals for collaborator messages.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Non-http schemes should not be treated as web-fetch preflight targets.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Non-slash healthcheck command with punctuation should still be local-handled.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[On construction, _runtime_revoked_collaborators must be backed by the         pe]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Overly long URLs should be rejected from preflight approval path.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner addcollab should accept known collaborator short-name aliases.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner addcollab should add collaborator and clear revoked state.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner addcollab without target should return usage guidance.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner approve username should resolve pending username and grant access.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner approve should fail closed when target has no pending request.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner approve should grant pending collaborator and notify both parties.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner approve with no target and NO pending collaborator request         must n]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner approve with one pending request should approve that request.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner approve without target, with 2+ pending collaborator         requests, is]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner collabs should show known collaborator labels and IDs.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner deny username should resolve pending username and deny access.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner deny should deny pending collaborator and notify both parties.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner deny should fail closed when target has no pending request.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner deny with no target and NO pending collaborator request         must not]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner healthcheck should be handled by gateway, not model.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner help should be handled locally and include admin approval commands.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner pending should return deterministic snapshot of pendingcollaboratorrevo]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner restorecollabs should restore baseline collaborator IDs.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner revoke must fail safely when target is owner id.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner revoke should locally revoke collaborator access for the target user id.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner self-diagnostic should be handled locally by gateway.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner start should be handled locally with deterministic status message.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner status should be handled by gateway with operational summary.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner whoami should be handled locally and include owner role + user id.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner whoami@bot should be normalized and handled locally.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner URL messages should queue interactive preflight approval.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner block notice should retry with owner-specific fallback when first send fai]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner messages are recorded in the tracker with is_owner=True.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[PassthroughPipeline]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Percent-encoded control bytes in URL should block preflight queueing.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Pipeline that allows everything.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Plain language model question should be answered by gateway directly.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Plain-word self-diagnose punctuation variant should still route locally.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Pronoun-style internal file content requests should still be blocked.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Punctuation-obfuscated blocked commands should still be quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[PunycodeIDN domains should not enter preflight approval queue.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Rate-limit notice helper should report unsent when bot token is unavailable.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Rate-limit notice must reflect configured collaborator limit.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Raw tool tracearguments requests should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Revoked users should be routed into owner re-approval workflow.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Same Telegram update_id should not trigger repeated local notices.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Scheme-relative URLs should normalize to HTTPS for preflight approval.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Self-diagnostic local handler should dedupe repeated delivery of same update_id.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Self-modification policy questions should get informative guidance, not hard blo]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Sentence-ending punctuation after a domain should still permit preflight queuein]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Telegram egress inline callback should update egress approval queue.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[TelegramAPIProxy]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[TestInboundPipelineOnGetUpdates]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Trailing markdown backticks should not prevent preflight queueing.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Trailing quote punctuation after a domain should still queue preflight.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[URL policy questions without collaborator keyword should still remain informatio]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[URLs with embedded userinfo should not enter approval allowlist flows.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unicode fullwidth command variants should still be blocked for collaborators.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unicode fullwidth healthcheck command should still route to local handler.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unicode fullwidth self-diagnostic command should still be local-handled.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unicode zero-width obfuscation should not bypass blocked command enforcement.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unknown collaborator slash commands should be blocked by default.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unknown non-owner user should trigger pending approval workflow and not forward.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unknown non-owner users should still be tracked at gateway level.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unknown users should still receive pending notice on repeated start during cool]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Updates without text (e.g. photos) should skip the pipeline.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Uppercase HTTP scheme should still infer port 80 for preflight checks.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Uppercase collaborator blocked commands should still be quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Verify that _filter_inbound_updates() calls pipeline.process_inbound().]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Web access intent without explicit URL should remain restricted and not queue ap]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[When all getUpdates items are locally handleddropped, return ack-only update_id]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[When update_id is missing, dedupe should fall back to message_id identity.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[When update_id is missing, different message_id values should not dedupe togethe]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[When update_id is missing, identical message_id should still dedupe repeated del]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[When update_id is missing, same message_id should dedupe self-diagnostic notices]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Whitespace-split URL tokens should not queue malformed preflight approvals.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Zero-width + mentionpunctuation healthcheck variants should still route locally]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Zero-width obfuscation should not bypass local healthcheck handling.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Zero-width obfuscation should not bypass self-diagnose local handling.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[_forward_file_download must raise when streamed bytes exceed limit (CVE-2026-320]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[_make_update()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[_send_telegram_text should honor Telegram retry_after when rate limited.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[proxy_request should increment inbound getUpdates stats when messages pass throu]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[proxy_request should track dropped updates (e.g. collaborator blocked command).]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[web_fetch preflight approvals should only allow standard web ports.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_agent_failed_timeout_error_is_sanitized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_block_cascade_blocks_followup_fragment()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_access_not_configured_user_id_leakage_is_redacted_form()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_access_not_configured_user_id_leakage_is_redacted_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_agent_failed_prefix_is_normalized_form()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_agent_failed_prefix_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_caption_tool_payload_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_egress_approval_banner_is_redacted_form()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_egress_approval_banner_is_redacted_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_empty_text_with_caption_payload_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_empty_text_with_content_payload_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_empty_text_with_draft_payload_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_empty_text_with_message_payload_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_form_caption_tool_payload_is_normalized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_form_empty_text_with_caption_payload_is_normalized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_form_empty_text_with_content_payload_is_normalized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_form_empty_text_with_draft_payload_is_normalized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_form_empty_text_with_message_payload_is_normalized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_form_high_risk_leakage_text_is_normalized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_high_risk_leakage_text_is_normalized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_html_code_markup_is_stripped_and_parse_mode_removed()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_internal_tool_output_suppressed_notice_is_normalized_form()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_internal_tool_output_suppressed_notice_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_legacy_block_notice_is_normalized_form()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_legacy_block_notice_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_legacy_protected_prefix_is_normalized_form()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_legacy_protected_prefix_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_llm_timeout_error_is_normalized_to_protected_unavailable_form()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_llm_timeout_error_is_normalized_to_protected_unavailable_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_multiturn_block_text_is_normalized_to_protected_notice()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_not_authorized_command_text_is_normalized_form()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_not_authorized_command_text_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_pairing_code_leakage_is_redacted_form()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_pairing_code_leakage_is_redacted_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_security_monitoring_threshold_notice_is_normalized_form()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaborator_security_monitoring_threshold_notice_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_contextvar_takes_precedence_over_default()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_default_is_openclaw_when_not_injected()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_embedded_tool_call_json_is_removed_from_text()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_embedded_web_fetch_json_queues_approval_when_available()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_form_outbound_overlength_blocked_for_non_owner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_form_outbound_owner_exempt_from_fail_closed()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_form_outbound_pipeline_block_non_owner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_form_outbound_pipeline_called_when_available()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_form_outbound_pipeline_sanitized_text_applied()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_form_payload_with_draft_field_is_filtered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_forward_to_telegram_handles_http_error_non_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_forward_to_telegram_returns_http_error_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_generic_sessions_spawn_json_is_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten_for_content_field()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten_for_form_content()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten_for_form_draft()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_healthcheck_sessions_spawn_json_is_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_healthcheck_skill_error_is_rewritten_for_form_content_field()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_healthcheck_skill_error_is_rewritten_for_form_message_field()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_healthcheck_skill_error_is_rewritten_for_json_caption_field()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_healthcheck_skill_error_is_rewritten_for_json_content_field()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_healthcheck_skill_error_is_rewritten_for_json_message_field()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_healthcheck_skill_error_without_sandbox_hint_is_not_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_healthcheck_skill_error_without_sandbox_hint_is_not_rewritten_for_form_payload()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_form_message()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_json_caption_field()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_json_content_field()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_message_field()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_healthcheck_skill_sandbox_cannot_variant_is_rewritten_for_form_payload()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_healthcheck_skill_sandbox_error_is_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_healthcheck_skill_sandbox_error_is_rewritten_for_form_payload()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_healthcheck_skill_sandbox_error_variant_is_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_healthcheck_skill_sandbox_error_with_cannot_is_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_html_parse_mode_preserved_without_redaction_placeholders()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_html_parse_mode_removed_for_redaction_placeholders()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_info_filter_redaction_escalates_to_block_for_non_owner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_injected_default_overrides_openclaw()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_json_without_content_type_empty_text_with_caption_is_still_filtered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_json_without_content_type_empty_text_with_content_is_still_filtered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_json_without_content_type_empty_text_with_draft_is_still_filtered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_json_without_content_type_empty_text_with_message_is_still_filtered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_json_without_content_type_is_still_filtered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_llm_timeout_error_is_sanitized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_long_outbound_message_blocked_for_non_owner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_long_outbound_message_quarantined()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_markdown_exfil_link_scrubbed()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_memory_error_without_embedding_provider_hint_is_not_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_memory_error_without_embedding_provider_hint_is_not_rewritten_for_form_payload()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_memory_error_without_error_keyword_is_not_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_memory_error_without_error_keyword_is_not_rewritten_for_form_message_field()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_memory_error_without_error_keyword_is_not_rewritten_for_form_payload()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_memory_error_without_error_keyword_is_not_rewritten_for_json_message_field()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_memory_provider_error_case_variant_is_rewritten_generic()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_memory_provider_error_hyphen_variant_is_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_memory_provider_error_hyphen_variant_is_rewritten_for_form_payload()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_memory_provider_error_is_rewritten_for_form_caption_field()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_memory_provider_error_is_rewritten_for_form_payload()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_memory_provider_error_is_rewritten_for_json_draft_field()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_memory_provider_error_is_rewritten_for_json_message_field()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_memory_provider_error_is_rewritten_to_generic_runtime_guidance()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_memory_provider_error_slash_variant_is_rewritten_for_form_payload()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_memory_provider_error_underscore_variant_is_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_memory_provider_error_variant_is_rewritten_for_form_payload()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_memory_provider_error_variant_is_rewritten_generic()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_memory_provider_error_with_explicit_memory_command_keeps_memory_guidance()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_memory_provider_guidance_phrase_is_rewritten_generic()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_no_reply_tool_token_is_rewritten_to_wait_message()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_ollama_auth_required_error_is_sanitized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_ollama_tools_unsupported_error_is_sanitized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_outbound_fails_closed_for_non_owner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_outbound_owner_exempt_from_fail_closed()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_outbound_pipeline_called_when_available()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_pii_redacted_on_outbound()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_pipeline_receives_trust_level()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_plain_no_reply_token_for_collaborator_gets_protected_notice()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_plain_no_reply_token_in_multiline_markdown_fence_is_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_plain_no_reply_token_with_punctuation_is_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_prefixed_model_sentence_is_rewritten_to_active_model_hint()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_proxy_request_allows_delayed_starting_then_online_sequence()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_proxy_request_allows_distinct_system_notices()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_proxy_request_allows_starting_then_online_sequence()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_proxy_request_duplicate_no_reply_messages_return_deterministic_reply()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_proxy_request_sends_no_reply_wait_message_once()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_proxy_request_suppresses_delayed_starting_notice_emoji_variants()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_proxy_request_suppresses_duplicate_starting_notice()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_proxy_request_suppresses_duplicate_startup_notice_without_system_flag()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_proxy_request_suppresses_duplicate_system_startup_notice()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_proxy_request_suppresses_starting_notice_emoji_variants()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_proxy_request_suppresses_startup_notice_emoji_variants()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_tool_call_json_never_leaks()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_tool_call_json_with_zero_width_chars_is_suppressed()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_approval_normalizes_leading_dot_domain()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_approval_prunes_expired_cooldown_entries()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_approval_queue_is_cooldown_deduped()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_consecutive_dot_domain_does_not_queue_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_domain_with_invalid_chars_does_not_queue_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_explicit_md_tld_domain_still_queues_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_filename_reference_does_not_queue_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_internal_suffix_domain_does_not_queue_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_invalid_host_does_not_queue_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_is_rewritten_to_actionable_guidance()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_malformed_hyphen_domain_does_not_queue_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_non_http_scheme_does_not_queue_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_non_standard_port_does_not_queue_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_numeric_tld_does_not_queue_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_overlong_fqdn_does_not_queue_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_overlong_url_does_not_queue_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_punycode_domain_does_not_queue_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_queues_egress_approval_when_available()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_uppercase_http_scheme_queues_port_80_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_url_with_control_character_does_not_queue_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_url_with_html_entity_domain_still_queues_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_url_with_percent_encoded_control_does_not_queue_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_url_with_trailing_backtick_still_queues_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_url_with_trailing_quote_still_queues_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_url_with_whitespace_queues_approval_using_first_token()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_raw_web_fetch_json_userinfo_url_does_not_queue_approval()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_runtime_profile_memory_error_text_is_rewritten_generic()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_sanitize_reason_hides_internal_paths()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_session_lock_error_is_sanitized_for_users()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_skill_sandbox_message_without_healthcheck_is_not_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_skill_sandbox_message_without_healthcheck_is_not_rewritten_for_form_caption()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_skill_sandbox_message_without_healthcheck_is_not_rewritten_for_form_message()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_skill_sandbox_message_without_healthcheck_is_not_rewritten_for_message_field()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_ssn_redacted_on_outbound()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_timeout_error_is_sanitized_for_form_payload()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_truncated_model_sentence_is_rewritten_to_active_model_hint()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_urlencoded_collaborator_no_reply_gets_protected_notice()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_urlencoded_draft_payload_tool_json_is_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_urlencoded_plain_no_reply_is_still_filtered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_urlencoded_plain_no_reply_with_punctuation_is_still_filtered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_urlencoded_without_content_type_caption_is_still_filtered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_urlencoded_without_content_type_draft_is_still_filtered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_urlencoded_without_content_type_empty_text_with_caption_is_still_filtered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_urlencoded_without_content_type_empty_text_with_content_is_still_filtered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_urlencoded_without_content_type_empty_text_with_draft_is_still_filtered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_urlencoded_without_content_type_empty_text_with_message_is_still_filtered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[A blocked fragment should cascade-block immediate follow-up chunks.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Agent timeout prefix variants should also map to retry guidance.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Any outbound info-filter redaction should be blocked for collaborators.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Blocked outbound messages should be stored in outbound quarantine.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Cannot access' healthcheck SKILL.md sandbox wording should rewrite for form payl]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Cannot access' phrasing should be rewritten for healthcheck SKILL.md sandbox mes]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Caption-only payloads should not bypass collaborator leak normalization.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Collaborator agent-failed prefix should normalize to protected unavailable notic]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Collaborator auth-denial command text should map to protected scope notice.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Collaborator form payload with raw toolfile leakage markers should be blocked.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Collaborator form payloads should get protected notice, not suppression.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Collaborator multi-turn disclosure block prose should be normalized.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Collaborator outbound HTML codepre markup should be stripped to plain text.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Collaborator outbound text with raw filetrace leakage markers should be blocked]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Collaborator plain NO_REPLY should become protected unavailable notice.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Collaborators should never receive pairing codes or pairing approval commands.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Collaborators should not receive internal egress approval banners.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Collaborators should not receive telegram user-id enrollment leakage text.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Collaborators should receive protected unavailable notice for timeout rewrite va]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Consecutive-dot domains should be rejected before approval queueing.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Control characters in leaked URL should be rejected before queueing approval.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Cooldown cache should prune expired entries when size exceeds threshold.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Create a PIISanitizer with default enforce config.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Delayed-starting and online notices are distinct and should both forward.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Delayed-starting dedupe should tolerate emoji variation drift.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Different system notices should both be forwarded.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Domains containing invalid hostname characters must be rejected.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Domains over 253 chars should be rejected before queueing approvals.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Domains with numeric TLDs should not enter approval queue.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Embedded web_fetch JSON should still queue interactive egress approval.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Embedding provider wording variants should rewrite for urlencoded payloads.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Embeddingprovider errors without explicit memory command context should be gene]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Embeddingprovider hints without explicit error marker should not trigger rewrit]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Embeddingprovider memory errors should also be rewritten for urlencoded payload]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Empty text field must not bypass filtering when caption contains tool payload.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Explicit memory-search command context should keep memory-specific remediation t]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Explicitly schemed domains should still queue approvals even for .md ccTLD.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Filename-like references must not be interpreted as egress domains.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[First NO_REPLY payload should send safe wait guidance to Telegram.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form caption field should be filtered the same as textdraftmessage fields.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form caption should keep non-healthcheck SKILL.md sandbox text unchanged.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form content should keep healthcheck sandbox text unchanged when SKILL.md marker]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form draft should keep healthcheck sandbox text unchanged when SKILL.md marker i]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form message field with embeddingprovider hints but no error keyword should rem]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form message should keep healthcheck SKILL.md text unchanged when sandbox hint i]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form message should keep non-healthcheck SKILL.md sandbox text unchanged.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form payload NO_REPLY punctuation variant should still normalize.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form payload agent-failed prefix should normalize to protected unavailable notic]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form payload approval banners must be redacted for collaborators.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form payload auth-denial command text should map to protected scope notice.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form payload embeddingprovider hints without 'error' should keep original text.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form payload empty text should not shadow caption filtering.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form payload healthcheck SKILL text without sandbox context should keep original]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form payload internal tool-output suppression string should normalize.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form payload legacy 'Protected' wording should normalize to canonical protected]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form payload legacy notices should normalize to Protect wording.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form payload non-embedding memory errors should keep original text.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form payload plain NO_REPLY should map to deterministic wait guidance.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form payload threshold disclosures should normalize to policy-block notice.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form payload timeout rewrites should also map to protected unavailable notice fo]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form payload user-id enrollment leakage should also be blocked.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form payload using draft field should still suppress tool-call JSON.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form payloads containing pairing secrets must be blocked for collaborators.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form-encoded draft payloads must not leak raw tool-call JSON.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form-encoded sendMessage bodies must also be scanned by the pipeline.          R]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Generic session spawn JSON should be rewritten, not shown raw.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[HTML-entity encoded domains in leaked JSON should normalize before approval.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[HTTPError JSON payloads should be returned as structured API responses.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Healthcheck SKILL messages without sandbox context should not trigger sandbox re]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Healthcheck SKILL.md sandbox errors should be rewritten for urlencoded payloads.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Healthcheck SKILL.md sandbox errors should be rewritten to local-healthcheck gui]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Healthcheck SKILL.md sandbox errors should rewrite when payload uses caption fie]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Healthcheck tool-call JSON should be rewritten to friendly status text.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Hyphen-separated embedding-provider wording should rewrite for form payloads.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Hyphenated embedding-provider wording should still trigger rewrite.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[If pipeline crashes, non-owner messages must be blocked.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[If pipeline crashes, owner messages should still go through.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[If tool-call JSON is embedded in prose, strip JSON block before delivery.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Internal pseudo-TLD hosts should be rejected from approval queue.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Internal session lock errors should be rewritten to safe user guidance.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[JSON caption field should keep healthcheck SKILL.md text unchanged when sandbox]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[JSON message field should keep healthcheck SKILL.md text unchanged when sandbox]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[JSON message field should keep non-healthcheck SKILL.md sandbox text unchanged.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[JSON message field with embeddingprovider hints but no error keyword should rem]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Legacy 'Protected by AgentShroud' wording should normalize to canonical protecte]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Legacy bracket-style block notices should normalize to Protect wording.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Legacy internal tool-output suppression string should normalize to Protect wordi]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Malformed domain labels should be rejected before approval queueing.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Malformed host with leading dot should still queue approval for normalized domai]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Memory guidance mentioning agents.defaults.memorySearch.provider should normaliz]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Memory provider runtime errors should rewrite when form payload uses caption fie]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Memory provider runtime errors should rewrite when payload uses message field.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Messages above hard size cap should be blocked to prevent split bypass.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Missing content-type + empty text must not bypass caption filtering for collabor]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Missing content-type must not bypass form draft leak filtering.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Missing content-type must not bypass outbound JSON leak filtering.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Mixed-case wording variants should still trigger generic runtime guidance.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Multiline fenced NO_REPLY token should still normalize.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[NO_REPLY tool JSON should be converted into a user-safe wait message.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[NO_REPLY wrapped with punctuation should still be normalized.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Non-JSON HTTPError payloads should still produce a safe fallback dict.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Non-domain hosts should not queue egress approval requests.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Non-embedding memory errors should not be forced into embedding guidance text.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Non-http schemes should never queue web-fetch approvals.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Obfuscated tool-call JSON should still be normalized and suppressed.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Ollama auth errors should map to concise operator guidance.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Outbound markdown exfil links should be stripped before delivery.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Over-length form messages to non-owners must be blocked like JSON ones.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Overly long URLs should be rejected before approval queueing.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Owner HTML formatting should preserve parse_mode.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Owner form messages still pass through when the pipeline crashes.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Partial model sentence variants should still be rewritten deterministically.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Percent-encoded control bytes should be rejected before queueing approval.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Phone numbers in outbound messages must be redacted by PII sanitizer.          R]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Pipeline-blocked form payloads to non-owners must be replaced with a safe notice]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Pipeline-sanitized text must replace the original in form payloads.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Previously emitted runtime-profile memory text should be normalized to generic g]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Proxy should pass ownernon-owner trust level into outbound pipeline.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[PunycodeIDN domains should be rejected from approval queue.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Pure web_fetch tool-call JSON should be rewritten to user guidance.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Raw model capability errors should be rewritten to actionable guidance.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Raw timeout errors should be rewritten to deterministic retry guidance.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Raw tool-call JSON blobs must be suppressed before Telegram delivery.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Raw web_fetch JSON should queue interactive egress approval for the destination.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Redaction placeholder tokens should be HTML-escaped, not strip         parse_mod]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Repeated NO_REPLY payloads should still return deterministic non-empty replies.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Repeated identical web_fetch leaks should not spam approval queue.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Runtime memory provider errors should rewrite when payload uses draft field.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[SSN in outbound messages must be redacted.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Sandbox SKILL.md messages must include healthcheck context before rewrite.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Slash-separated embeddingprovider wording should rewrite for form payloads.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Starting and online notices are distinct and should both forward.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Starting notice dedupe should tolerate emoji variation drift.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Starting notices should be deduplicated in cooldown window.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Startup notice dedupe should still apply when sender forgets system header.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[System startup notice should be deduplicated in a short cooldown window.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[TelegramAPIProxy_1]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestDefaultBotId]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestOutboundPipelineIntegration]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Tests that _filter_outbound calls the full security pipeline.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Threshold status disclosures should normalize to collaborator policy-block notic]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Timeout rewrites should apply to urlencoded Telegram payloads too.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Trailing markdown backtick in leaked URL should normalize for approval.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Trailing quote punctuation in leaked URL should still normalize and queue approv]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Truncated 'current model' replies should be rewritten to deterministic model hin]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[URLs with credentials should not be queued for web-fetch approvals.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Underscore-delimited embedding_provider wording should still trigger rewrite.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Uppercase HTTP schemes should normalize and queue on port 80.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[User-facing block reasons should not expose modules or file paths.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Variant wording should still map to generic runtime guidance by default.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[When pipeline is set, process_outbound must be called on outbound messages.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Whitespace in leaked URL should queue approval using first URL token.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Wording variants for healthcheck SKILL.md sandbox errors should be rewritten.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[_active_bot_id returns the constructor-injected default when no contextvar is se]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[_make_sanitizer()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[web_fetch approvals should not queue for non-standard destination ports.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -345,35 +348,32 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 171 edges to [[_COMMUNITY__wrap_response]]
-- 49 edges to [[_COMMUNITY_RateLimiter]]
-- 21 edges to [[_COMMUNITY_BlockingPipeline]]
-- 20 edges to [[_COMMUNITY_dot-test_collaborator_allowlist_bypass_request_is_blocked_and_quarantined]]
-- 19 edges to [[_COMMUNITY_TestFullAccessMiddlewareBypass]]
-- 15 edges to [[_COMMUNITY_dot-test_collaborator_cross_user_messaging_request_is_blocked_and_quarantined]]
-- 15 edges to [[_COMMUNITY_dot-test_collaborator_internal_network_probe_is_blocked_and_quarantined]]
-- 15 edges to [[_COMMUNITY_TestStrangerRateLimit]]
-- 11 edges to [[_COMMUNITY_TestFileDownload]]
-- 10 edges to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
-- 10 edges to [[_COMMUNITY_dot-test_allowed_collaborator_model_command_with_mention_is_handled_locally]]
-- 10 edges to [[_COMMUNITY_dot-test_blocked_command_with_zero_width_mention_and_punctuation_is_quarantined]]
-- 10 edges to [[_COMMUNITY_dot-test_collaborator_approval_action_request_is_blocked_and_quarantined]]
-- 10 edges to [[_COMMUNITY_dot-test_collaborator_metadata_endpoint_probe_is_blocked_and_quarantined]]
-- 10 edges to [[_COMMUNITY_dot-test_collaborator_plugin_discovery_request_is_blocked_and_quarantined]]
-- 10 edges to [[_COMMUNITY_dot-test_collaborator_hidden_channel_exfil_request_is_blocked_and_quarantined]]
-- 10 edges to [[_COMMUNITY_dot-test_collaborator_incremental_exfil_request_is_blocked_and_quarantined]]
-- 10 edges to [[_COMMUNITY_dot-test_collaborator_service_control_request_is_blocked_and_quarantined]]
-- 10 edges to [[_COMMUNITY_dot-test_collaborator_sensitive_path_probe_shell_style_is_blocked_and_quarantined]]
-- 10 edges to [[_COMMUNITY_dot-test_collaborator_web_access_request_queues_owner_approval_and_pending_notice]]
-- 10 edges to [[_COMMUNITY_dot-test_owner_deny_without_target_auto_selects_single_pending]]
-- 10 edges to [[_COMMUNITY_dot-test_owner_revoke_command_requires_target_user_id]]
-- 4 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
-- 4 edges to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_ServiceManager]]
+- 32 edges to [[_COMMUNITY_TestMultipartOutboundPipeline]]
+- 19 edges to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
+- 10 edges to [[_COMMUNITY_TestWebSearchLog]]
+- 8 edges to [[_COMMUNITY_PIIConfig]]
+- 5 edges to [[_COMMUNITY_TestParseModeStrippedAfterPIIRedaction]]
+- 4 edges to [[_COMMUNITY_TestForwardToTelegramTimeouts]]
+- 3 edges to [[_COMMUNITY_TelegramAPIProxy_2]]
+- 3 edges to [[_COMMUNITY_TelegramAPIProxy_3]]
+- 3 edges to [[_COMMUNITY_TelegramAPIProxy_4]]
+- 3 edges to [[_COMMUNITY_TelegramAPIProxy_5]]
+- 3 edges to [[_COMMUNITY_TelegramAPIProxy_6]]
+- 3 edges to [[_COMMUNITY_dot-test_raw_web_fetch_json_approval_strips_trailing_punctuation]]
+- 3 edges to [[_COMMUNITY_TelegramAPIProxy_7]]
+- 3 edges to [[_COMMUNITY_TelegramAPIProxy_8]]
+- 3 edges to [[_COMMUNITY_dot-test_raw_web_fetch_json_scheme_relative_url_queues_https_approval]]
+- 3 edges to [[_COMMUNITY_TelegramAPIProxy_9]]
+- 3 edges to [[_COMMUNITY_dot-test_plain_no_reply_token_in_markdown_fence_is_rewritten]]
+- 3 edges to [[_COMMUNITY_TelegramAPIProxy_10]]
+- 3 edges to [[_COMMUNITY_dot-test_timeout_error_is_sanitized_for_json_message_field]]
+- 3 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
+- 1 edge to [[_COMMUNITY_PipelineAction]]
+- 1 edge to [[_COMMUNITY_BlockingPipeline]]
 
 ## Top bridge nodes
-- [[TelegramAPIProxy]] - degree 238, connects to 24 communities
-- [[FakeRBAC]] - degree 222, connects to 23 communities
-- [[PassthroughPipeline]] - degree 210, connects to 23 communities
-- [[_make_update()]] - degree 216, connects to 20 communities
-- [[TestInboundPipelineOnGetUpdates]] - degree 205, connects to 20 communities
+- [[TelegramAPIProxy_1]] - degree 220, connects to 20 communities
+- [[_make_sanitizer()]] - degree 218, connects to 18 communities
+- [[TestOutboundPipelineIntegration]] - degree 189, connects to 17 communities
+- [[TestDefaultBotId]] - degree 9, connects to 4 communities
+- [[dot-test_form_outbound_pipeline_block_non_owner()]] - degree 5, connects to 1 community

@@ -10,7 +10,7 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[Architecture_10]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[Architecture_8]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
 - [[Audit Methodology]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
 - [[Colima VM Networking]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
 - [[Container Security Audit — AgentShroud v0.8.0]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md

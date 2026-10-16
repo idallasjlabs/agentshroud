@@ -14,7 +14,7 @@ members: 6
 - [[browserFetch()_1]] - code - docker/config/openclaw/skills/i-browser/browse.js
 - [[fs_1]] - code - docker/config/openclaw/skills/i-browser/browse.js
 - [[openclawskillsi-browserbrowse.js]] - code - docker/config/openclaw/skills/i-browser/browse.js
-- [[path_7]] - code - docker/config/openclaw/skills/i-browser/browse.js
+- [[path_8]] - code - docker/config/openclaw/skills/i-browser/browse.js
 - [[{ chromium }_1]] - code - docker/config/openclaw/skills/i-browser/browse.js
 
 ## Live Query (requires Dataview plugin)

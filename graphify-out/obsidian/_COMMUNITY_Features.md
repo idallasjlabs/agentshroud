@@ -34,7 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ingest_apimodels.py]]
+- 1 edge to [[_COMMUNITY_DataLedger]]
 
 ## Top bridge nodes
 - [[Gateway Layer]] - degree 6, connects to 1 community

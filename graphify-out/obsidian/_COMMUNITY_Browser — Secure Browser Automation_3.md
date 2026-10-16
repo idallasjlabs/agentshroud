@@ -12,7 +12,7 @@ members: 5
 ## Members
 - [[dot-agentsskillsi-browserREADME]] - document - .agents/skills/i-browser/README.md
 - [[Browser — Secure Browser Automation]] - document - .agents/skills/i-browser/README.md
-- [[Purpose_11]] - document - .agents/skills/i-browser/README.md
+- [[Purpose_16]] - document - .agents/skills/i-browser/README.md
 - [[Related Skills_4]] - document - .agents/skills/i-browser/README.md
 - [[Usage_7]] - document - .agents/skills/i-browser/README.md
 

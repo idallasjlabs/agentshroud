@@ -10,7 +10,7 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Deliverables_1]] - document - .agents/skills/i-aws/SKILL.md
+- [[Deliverables]] - document - .agents/skills/i-aws/SKILL.md
 - [[Reports (`.reports`)]] - document - .agents/skills/i-aws/SKILL.md
 - [[Script Templates]] - document - .agents/skills/i-aws/SKILL.md
 - [[Scripts (`.scripts`)]] - document - .agents/skills/i-aws/SKILL.md
@@ -23,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps Agent_2]]
+- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps Agent_1]]
 
 ## Top bridge nodes
-- [[Deliverables_1]] - degree 4, connects to 1 community
+- [[Deliverables]] - degree 4, connects to 1 community

@@ -10,7 +10,7 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Architecture_1]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Architecture]] - document - docs/reference/BROWSER_FETCH_SKILL.md
 - [[Files]] - document - docs/reference/BROWSER_FETCH_SKILL.md
 - [[Security Features]] - document - docs/reference/BROWSER_FETCH_SKILL.md
 - [[Technical Details]] - document - docs/reference/BROWSER_FETCH_SKILL.md

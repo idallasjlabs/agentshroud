@@ -40,8 +40,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown]]
 - 1 edge to [[_COMMUNITY_Slack Channel Setup]]
-- 1 edge to [[_COMMUNITY_EnhancedApprovalQueue (`enhanced_queue.py`)]]
 - 1 edge to [[_COMMUNITY_Enterprise Governance Proxy System (invention)]]
 
 ## Top bridge nodes

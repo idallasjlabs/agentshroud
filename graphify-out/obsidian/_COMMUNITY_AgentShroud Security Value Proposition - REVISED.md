@@ -1,13 +1,13 @@
 ---
 type: community
-cohesion: 0.07
-members: 32
+cohesion: 0.06
+members: 36
 ---
 
 # AgentShroud Security Value Proposition - Revised
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 32 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 36 nodes
 
 ## Members
 - [[AgentShroud Security Value Proposition - Revised]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
@@ -16,6 +16,8 @@ members: 32
 - [[Bottom Line (Corrected)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
 - [[Critical Context (What I Missed)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
 - [[DEVELOPMENT_WORKFLOW_READ_ONLY]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[DEVICE_PAIRING]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Four-Layer Access Security Model (Password  Pairing  Allowlist  Approval)]] - rationale - docs/setup/DEVICE_PAIRING.md
 - [[IEC 62443 Compliance Matrix]] - concept - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
 - [[Immediate Next Steps (This Session)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
 - [[MVP Recommendation (Option A)]] - rationale - docs/security/SECURITY_VALUE_PROPOSITION.md
@@ -30,6 +32,7 @@ members: 32
 - [[Read-only filesystem (immutable infrastructure)]] - rationale - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
 - [[Revised Assessment Nothing is Over-Engineered]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
 - [[Revised Threat Model]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[SECURITY-POLICY-FINAL]] - document - docs/security/SECURITY-POLICY-FINAL.md
 - [[SECURITY_VALUE_PROPOSITION]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
 - [[Scenario 1 Multi-User Bot Access]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
 - [[Scenario 2 External Hosting (AWSGCP)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
@@ -39,6 +42,7 @@ members: 32
 - [[Seccomp profiles (critical, re-enable)]] - rationale - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
 - [[This is NOT a Personal Tool]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
 - [[Three-Phase Approach]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Ultra-Conservative Credential Display Policy]] - rationale - docs/security/SECURITY-POLICY-FINAL.md
 - [[Ultra-Conservative Credential Policy - CRITICAL ✅]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
 - [[Ultra-conservative credential policy (multi-user threat model)]] - rationale - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
 - [[What's Actually Over-Engineered (Revised Answer)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
@@ -52,18 +56,22 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_Development Workflow Read-Only Filesystem Strategy]]
-- 2 edges to [[_COMMUNITY_Git History Purge Plan]]
 - 1 edge to [[_COMMUNITY_Dockerfile — Gateway]]
-- 1 edge to [[_COMMUNITY_AgentShroud Semgrep SAST Configuration]]
+- 1 edge to [[_COMMUNITY_egress_filter.py]]
 - 1 edge to [[_COMMUNITY_AgentShroud Security Architecture]]
-- 1 edge to [[_COMMUNITY_Kill Switch]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Policy - Final Decision]]
+- 1 edge to [[_COMMUNITY_Implementation Status]]
+- 1 edge to [[_COMMUNITY_CREDENTIAL-PROTECTION-IMPLEMENTED]]
 - 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition]]
+- 1 edge to [[_COMMUNITY_Kill Switch]]
+- 1 edge to [[_COMMUNITY_AgentShroud Device Pairing Management]]
 - 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
+- 1 edge to [[_COMMUNITY_Git History Purge Plan]]
 - 1 edge to [[_COMMUNITY_Priority 1 Fix Broken Security (CRITICAL)]]
 
 ## Top bridge nodes
-- [[SECURITY_VALUE_PROPOSITION]] - degree 10, connects to 3 communities
+- [[SECURITY-POLICY-FINAL]] - degree 4, connects to 3 communities
 - [[AgentShroud Security Value Proposition - Revised]] - degree 13, connects to 2 communities
-- [[Approval Queue Control]] - degree 4, connects to 2 communities
+- [[SECURITY_VALUE_PROPOSITION]] - degree 10, connects to 2 communities
 - [[Three-Phase Approach]] - degree 5, connects to 1 community
-- [[DEVELOPMENT_WORKFLOW_READ_ONLY]] - degree 4, connects to 1 community
+- [[Approval Queue Control]] - degree 4, connects to 1 community

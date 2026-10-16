@@ -26,9 +26,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY__mock_dir_with_fresh_files]]
 - 2 edges to [[_COMMUNITY_test_scorecard_scoring.py]]
 - 2 edges to [[_COMMUNITY__mock_dir_with_files]]
+- 2 edges to [[_COMMUNITY__mock_dir_with_fresh_files]]
 
 ## Top bridge nodes
 - [[TestIsFresh]] - degree 5, connects to 1 community

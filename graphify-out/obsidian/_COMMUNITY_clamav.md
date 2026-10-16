@@ -10,12 +10,12 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[ClamAV_1]] - document - docs/vault/05 - Dependencies/clamav.md
+- [[ClamAV]] - document - docs/vault/05 - Dependencies/clamav.md
 - [[First Boot]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[Gateway Usage_1]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[Installation_3]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[Purpose_138]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[Related Notes_49]] - document - docs/vault/05 - Dependencies/clamav.md
+- [[Gateway Usage]] - document - docs/vault/05 - Dependencies/clamav.md
+- [[Installation]] - document - docs/vault/05 - Dependencies/clamav.md
+- [[Purpose_9]] - document - docs/vault/05 - Dependencies/clamav.md
+- [[Related Notes_13]] - document - docs/vault/05 - Dependencies/clamav.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,4 +28,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_All Dependencies]]
 
 ## Top bridge nodes
-- [[ClamAV_1]] - degree 6, connects to 1 community
+- [[ClamAV]] - degree 6, connects to 1 community

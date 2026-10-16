@@ -15,7 +15,7 @@ members: 27
 - [[Connection timeout_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
 - [[Add Contact_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
 - [[Calendar Operations_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[Configuration_5]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Configuration_3]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
 - [[Contact Operations_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
 - [[Create Event_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
 - [[Create Note_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md

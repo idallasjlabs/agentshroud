@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 0.07
-members: 63
+cohesion: 0.06
+members: 64
 ---
 
 # ProgressiveLockdown
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 63 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 64 nodes
 
 ## Members
-- [[dot-__init__()_165]] - code - gateway/security/progressive_lockdown.py
-- [[dot-__init__()_166]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-__init__()_201]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-__init__()_202]] - code - gateway/security/progressive_lockdown.py
+- [[dot-__init__()_203]] - code - gateway/tests/test_progressive_lockdown.py
 - [[dot-_get_state()]] - code - gateway/security/progressive_lockdown.py
 - [[dot-_run_owner_cmd()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[dot-_run_owner_cmd()_1]] - code - gateway/tests/test_progressive_lockdown.py
@@ -19,7 +20,7 @@ members: 63
 - [[dot-get_status()_2]] - code - gateway/security/progressive_lockdown.py
 - [[dot-is_owner()_5]] - code - gateway/tests/test_progressive_lockdown.py
 - [[dot-is_suspended()]] - code - gateway/security/progressive_lockdown.py
-- [[dot-process_inbound()_9]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-process_inbound()_10]] - code - gateway/tests/test_progressive_lockdown.py
 - [[dot-record_block()]] - code - gateway/security/progressive_lockdown.py
 - [[dot-reset()_2]] - code - gateway/security/progressive_lockdown.py
 - [[dot-test_alert_level_at_3_blocks()]] - code - gateway/tests/test_progressive_lockdown.py
@@ -82,20 +83,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
+- 12 edges to [[_COMMUNITY_TelegramAPIProxy_2]]
 - 8 edges to [[_COMMUNITY__FakeRBAC]]
 - 4 edges to [[_COMMUNITY_TestCollabLockdownNotifications]]
-- 3 edges to [[_COMMUNITY_Enum]]
-- 1 edge to [[_COMMUNITY_rbac_config.py]]
-- 1 edge to [[_COMMUNITY_RBACConfig]]
+- 2 edges to [[_COMMUNITY_Action]]
+- 2 edges to [[_COMMUNITY_dot-_filter_outbound]]
+- 1 edge to [[_COMMUNITY_RateLimiter]]
 - 1 edge to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
+- 1 edge to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 1 edge to [[_COMMUNITY_rbac_config.py]]
 - 1 edge to [[_COMMUNITY_telegram_proxy.py]]
-- 1 edge to [[_COMMUNITY_dot-_filter_outbound]]
+- 1 edge to [[_COMMUNITY_RBACConfig]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
 
 ## Top bridge nodes
-- [[ProgressiveLockdown]] - degree 47, connects to 8 communities
+- [[ProgressiveLockdown]] - degree 47, connects to 6 communities
+- [[dot-__init__()_201]] - degree 5, connects to 4 communities
+- [[LockdownLevel]] - degree 14, connects to 3 communities
 - [[_make_proxy()_3]] - degree 18, connects to 2 communities
-- [[LockdownLevel]] - degree 14, connects to 2 communities
 - [[test_progressive_lockdown.py]] - degree 14, connects to 2 communities
-- [[progressive_lockdown.py]] - degree 6, connects to 2 communities

@@ -11,7 +11,7 @@ members: 16
 
 ## Members
 - [[ASGI application auth-gated transparent reverse proxy for Canvas.      Handles]] - rationale - gateway/proxy/canvas_proxy.py
-- [[Any_71]] - code - gateway/proxy/canvas_proxy.py
+- [[Any_62]] - code - gateway/proxy/canvas_proxy.py
 - [[Build headers to forward upstream, stripping hop-by-hop and Authorization.]] - rationale - gateway/proxy/canvas_proxy.py
 - [[Proxy a WebSocket connection after validating auth.      Auth is extracted from]] - rationale - gateway/proxy/canvas_proxy.py
 - [[Proxy an HTTP request after validating Basic Auth.]] - rationale - gateway/proxy/canvas_proxy.py
@@ -35,7 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
 - 1 edge to [[_COMMUNITY_test_dns_canvas_coverage.py]]
 - 1 edge to [[_COMMUNITY_HTTPConnectProxy]]
 

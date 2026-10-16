@@ -10,9 +10,9 @@ members: 38
 **Members:** 38 nodes
 
 ## Members
-- [[dot-__init__()_66]] - code - gateway/security/data_exfil_volume_guard.py
+- [[dot-__init__()_75]] - code - gateway/security/data_exfil_volume_guard.py
 - [[dot-_size()]] - code - gateway/security/data_exfil_volume_guard.py
-- [[dot-get_stats()_7]] - code - gateway/security/data_exfil_volume_guard.py
+- [[dot-get_stats()_6]] - code - gateway/security/data_exfil_volume_guard.py
 - [[dot-observe()]] - code - gateway/security/data_exfil_volume_guard.py
 - [[dot-reset_session()]] - code - gateway/security/data_exfil_volume_guard.py
 - [[A blocked (undelivered) response must not consume the session budget,     otherw]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
@@ -57,11 +57,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_lifespan.py]]
+- 4 edges to [[_COMMUNITY_MiddlewareManager]]
 - 3 edges to [[_COMMUNITY_PIIConfig]]
 - 3 edges to [[_COMMUNITY_AsyncMock]]
+- 1 edge to [[_COMMUNITY_egress_filter.py]]
 - 1 edge to [[_COMMUNITY_EgressFilterConfig]]
-- 1 edge to [[_COMMUNITY_EgressFilter]]
 
 ## Top bridge nodes
 - [[DataExfilVolumeGuard]] - degree 26, connects to 2 communities

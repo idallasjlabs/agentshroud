@@ -10,17 +10,17 @@ members: 81
 **Members:** 81 nodes
 
 ## Members
-- [[dot-__init__()_174]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-__init__()_175]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-close()_13]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-__init__()_164]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-__init__()_165]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-close()_14]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-drain()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-get_extra_info()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-get_stats()_19]] - code - gateway/proxy/http_proxy.py
+- [[dot-close()_15]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-drain()_2]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-get_extra_info()_1]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-get_stats()_18]] - code - gateway/proxy/http_proxy.py
 - [[dot-readline()]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-start()_2]] - code - gateway/proxy/http_proxy.py
 - [[dot-stop()_11]] - code - gateway/proxy/http_proxy.py
-- [[dot-write()]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-write()_2]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[Asyncio HTTP CONNECT proxy server.      Intercepts CONNECT tunnel requests, vali]] - rationale - gateway/proxy/http_proxy.py
 - [[Bytes relayed before a connection error are still sampled for scanning.]] - rationale - gateway/tests/test_http_proxy_coverage.py
 - [[CONNECT tunnel establishment must race IPv4IPv6 (RFC 8305) instead of     tryin]] - rationale - gateway/tests/test_http_proxy_coverage.py
@@ -40,13 +40,13 @@ members: 81
 - [[Transport without an underlying socket (None) is skipped cleanly.]] - rationale - gateway/tests/test_http_proxy_coverage.py
 - [[Writer exposing a .transport whose socket records setsockopt calls.]] - rationale - gateway/tests/test_http_proxy_coverage.py
 - [[_CloseRaisesWriter]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[_MockWriter]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[_MockWriter_1]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[_SocketTransportWriter]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[_TimeoutReader]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[_allowlist_proxy()]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[_capture_scans()]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[_eof_target_connection()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[_make_stream()]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[_make_stream()_1]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[asyncio.open_connection replacement returning an immediately-EOF stream.]] - rationale - gateway/tests/test_http_proxy_coverage.py
 - [[clamscan binary missing (sidecar down) - no exception, temp file removed.]] - rationale - gateway/tests/test_http_proxy_coverage.py
 - [[clamscan runs must never share the default executor with LLM upstream     calls]] - rationale - gateway/tests/test_http_proxy_coverage.py
@@ -100,21 +100,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 39 edges to [[_COMMUNITY_WebProxy]]
-- 11 edges to [[_COMMUNITY_WebProxyConfig]]
+- 30 edges to [[_COMMUNITY_WebProxy]]
+- 10 edges to [[_COMMUNITY_WebProxyConfig]]
 - 10 edges to [[_COMMUNITY__DummyTargetWriter]]
+- 9 edges to [[_COMMUNITY_ProxyAction]]
 - 6 edges to [[_COMMUNITY_dot-_process_connect]]
-- 2 edges to [[_COMMUNITY_lifespan.py]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
 - 2 edges to [[_COMMUNITY_test_e2e_proxy.py]]
 - 1 edge to [[_COMMUNITY_PortManager]]
+- 1 edge to [[_COMMUNITY_AgentTarget]]
 - 1 edge to [[_COMMUNITY_PIIConfig]]
 - 1 edge to [[_COMMUNITY_TestBenchmarkRegression]]
 - 1 edge to [[_COMMUNITY_canvas_proxy_app]]
-- 1 edge to [[_COMMUNITY_DataLedger]]
+- 1 edge to [[_COMMUNITY_egress_filter.py]]
 
 ## Top bridge nodes
-- [[HTTPConnectProxy_1]] - degree 93, connects to 11 communities
-- [[test_http_proxy_coverage.py]] - degree 53, connects to 3 communities
+- [[HTTPConnectProxy_1]] - degree 93, connects to 13 communities
+- [[test_http_proxy_coverage.py]] - degree 53, connects to 4 communities
 - [[HTTPConnectProxy]] - degree 36, connects to 3 communities
-- [[_MockWriter]] - degree 36, connects to 2 communities
+- [[_MockWriter_1]] - degree 36, connects to 2 communities
 - [[StreamReader_2]] - degree 15, connects to 2 communities

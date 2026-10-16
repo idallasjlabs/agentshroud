@@ -11,7 +11,7 @@ members: 5
 
 ## Members
 - [[Data Validation (DATA-VAL)_1]] - document - docker/config/openclaw/skills/i-data/README.md
-- [[Purpose_38]] - document - docker/config/openclaw/skills/i-data/README.md
+- [[Purpose_43]] - document - docker/config/openclaw/skills/i-data/README.md
 - [[Related Skills_31]] - document - docker/config/openclaw/skills/i-data/README.md
 - [[Usage_34]] - document - docker/config/openclaw/skills/i-data/README.md
 - [[openclawskillsi-dataREADME]] - document - docker/config/openclaw/skills/i-data/README.md

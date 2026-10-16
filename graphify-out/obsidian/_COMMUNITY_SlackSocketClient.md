@@ -10,7 +10,7 @@ members: 41
 **Members:** 41 nodes
 
 ## Members
-- [[dot-__init__()_56]] - code - gateway/proxy/slack_socket_client.py
+- [[dot-__init__()_65]] - code - gateway/proxy/slack_socket_client.py
 - [[dot-_connect_and_handle()]] - code - gateway/proxy/slack_socket_client.py
 - [[dot-_get_wss_url()]] - code - gateway/proxy/slack_socket_client.py
 - [[dot-run()_1]] - code - gateway/proxy/slack_socket_client.py
@@ -60,8 +60,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_AsyncMock]]
-- 2 edges to [[_COMMUNITY_SlackAPIProxy]]
+- 5 edges to [[_COMMUNITY_AsyncMock]]
 
 ## Top bridge nodes
 - [[SlackSocketClient]] - degree 13, connects to 1 community

@@ -24,7 +24,7 @@ members: 18
 - [[competitive-analysis.md artifact]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt
 - [[competitive-report-.md dated reports]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
 - [[cron-operations skill]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
-- [[main()_3]] - code - docker/bots/hermes/render_md_email.py
+- [[main()_23]] - code - docker/bots/hermes/render_md_email.py
 - [[render()]] - code - docker/bots/hermes/render_md_email.py
 - [[render_md_email.py]] - code - docker/bots/hermes/render_md_email.py
 - [[trend-log.md artifact]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt
@@ -35,10 +35,3 @@ members: 18
 TABLE source_file, type FROM #community/competitive-report-md_dated_reports
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY__seed_cron]]
-
-## Top bridge nodes
-- [[OpenClaw cron Daily Competitive Landscape Update (zero-hallucination sourcing rules)]] - degree 6, connects to 1 community
-- [[OpenClaw cron Daily Competitive Analysis Email (AM)]] - degree 5, connects to 1 community

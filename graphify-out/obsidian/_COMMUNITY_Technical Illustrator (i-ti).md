@@ -13,15 +13,15 @@ members: 13
 - [[dot-agentsskillsi-tiREADME]] - document - .agents/skills/i-ti/README.md
 - [[Curriculum Architect (i-atlas)]] - document - .agents/skills/i-atlas/SKILL.md
 - [[Mindmap Architect (MM)]] - document - .agents/skills/i-mm/SKILL.md
-- [[Purpose_163]] - document - .agents/skills/i-ti/README.md
-- [[Purpose_164]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[Purpose_162]] - document - .agents/skills/i-ti/README.md
+- [[Purpose_163]] - document - docker/config/hermes/skills/i-ti/README.md
 - [[Related Skills_105]] - document - .agents/skills/i-ti/README.md
 - [[Related Skills_106]] - document - docker/config/hermes/skills/i-ti/README.md
 - [[Technical Illustrator (TI)]] - document - docker/config/hermes/skills/i-ti/README.md
 - [[Technical Illustrator (i-ti)]] - document - .agents/skills/i-ti/SKILL.md
 - [[Technical Writing (i-tw)]] - document - .agents/skills/i-tw/SKILL.md
-- [[Usage_114]] - document - .agents/skills/i-ti/README.md
-- [[Usage_115]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[Usage_115]] - document - .agents/skills/i-ti/README.md
+- [[Usage_116]] - document - docker/config/hermes/skills/i-ti/README.md
 - [[hermesskillsi-tiREADME]] - document - docker/config/hermes/skills/i-ti/README.md
 
 ## Live Query (requires Dataview plugin)

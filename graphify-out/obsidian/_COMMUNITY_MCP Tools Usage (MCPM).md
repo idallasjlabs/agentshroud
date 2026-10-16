@@ -11,7 +11,7 @@ members: 5
 
 ## Members
 - [[MCP Tools Usage (MCPM)]] - document - docker/config/openclaw/skills/i-mcpm/README.md
-- [[Purpose_46]] - document - docker/config/openclaw/skills/i-mcpm/README.md
+- [[Purpose_51]] - document - docker/config/openclaw/skills/i-mcpm/README.md
 - [[Related Skills_39]] - document - docker/config/openclaw/skills/i-mcpm/README.md
 - [[Usage_42]] - document - docker/config/openclaw/skills/i-mcpm/README.md
 - [[openclawskillsi-mcpmREADME]] - document - docker/config/openclaw/skills/i-mcpm/README.md

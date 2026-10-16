@@ -10,12 +10,12 @@ members: 19
 **Members:** 19 nodes
 
 ## Members
-- [[Auto-Restart_1]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Auto-Restart]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
 - [[Crash Diagnosis]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
-- [[Crash Recovery_2]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Crash Recovery_1]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
 - [[Data Recovery]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
 - [[Immediate Assessment]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
-- [[Ledger Database_1]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Ledger Database]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
 - [[OOM Kill (Exit Code 137)_1]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
 - [[Option 1 Simple Restart (most common fix)]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
 - [[Option 2 Full Stop and Start]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
@@ -27,7 +27,7 @@ members: 19
 - [[Python Exception (Exit Code 1)]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
 - [[Recovery Procedures]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
 - [[Recurring Crashes]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
-- [[Related Notes_43]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Related Notes_40]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
 - [[Segfault (Exit Code 139)]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
 
 ## Live Query (requires Dataview plugin)
@@ -38,7 +38,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_First Time Setup]]
+- 1 edge to [[_COMMUNITY_Error Index]]
 
 ## Top bridge nodes
-- [[Crash Recovery_2]] - degree 9, connects to 1 community
+- [[Crash Recovery_1]] - degree 9, connects to 1 community

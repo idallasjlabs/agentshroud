@@ -10,12 +10,12 @@ members: 30
 **Members:** 30 nodes
 
 ## Members
-- [[dot-__init__()_120]] - code - gateway/security/audit_store.py
+- [[dot-__init__()_104]] - code - gateway/security/audit_store.py
 - [[dot-audit_store()]] - code - gateway/tests/test_audit_export.py
 - [[dot-audit_store()_1]] - code - gateway/tests/test_audit_export.py
-- [[dot-close()_8]] - code - gateway/security/audit_store.py
+- [[dot-close()_11]] - code - gateway/security/audit_store.py
 - [[dot-get_recent_entries()_1]] - code - gateway/security/audit_store.py
-- [[dot-get_stats()_14]] - code - gateway/security/audit_store.py
+- [[dot-get_stats()_11]] - code - gateway/security/audit_store.py
 - [[dot-initialize()]] - code - gateway/security/audit_store.py
 - [[dot-query_events()]] - code - gateway/security/audit_store.py
 - [[dot-store()_1]] - code - gateway/tests/test_audit_export.py
@@ -32,7 +32,7 @@ members: 30
 - [[Get audit store statistics.]] - rationale - gateway/security/audit_store.py
 - [[Open the database, create the schema, and run column migrations.          Initia]] - rationale - gateway/security/audit_store.py
 - [[Opening a pre-migration DB (no bot_id column) should auto-migrate.]] - rationale - gateway/tests/test_audit_export.py
-- [[Path_36]] - code - gateway/security/audit_store.py
+- [[Path_25]] - code - gateway/security/audit_store.py
 - [[Query audit events with optional filters.          Args             bot_id Whe]] - rationale - gateway/security/audit_store.py
 - [[Return the most recent audit entries (alias for query_events with limit).]] - rationale - gateway/security/audit_store.py
 - [[SQLite-backed audit event store with tamper-evident hash chain.]] - rationale - gateway/security/audit_store.py
@@ -51,18 +51,17 @@ SORT file.name ASC
 ## Connections to other communities
 - 14 edges to [[_COMMUNITY_AuditExporter]]
 - 8 edges to [[_COMMUNITY_AuditEvent]]
-- 4 edges to [[_COMMUNITY_ApprovalQueueItem]]
-- 2 edges to [[_COMMUNITY_lifespan.py]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 4 edges to [[_COMMUNITY_MiddlewareManager]]
+- 4 edges to [[_COMMUNITY_ApprovalQueueConfig_1]]
 - 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL]]
 - 2 edges to [[_COMMUNITY_AuditEvent_1]]
-- 1 edge to [[_COMMUNITY_archive_old_events]]
-- 1 edge to [[_COMMUNITY_All Dependencies]]
+- 1 edge to [[_COMMUNITY_All Dependencies_1]]
 - 1 edge to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]]
 - 1 edge to [[_COMMUNITY_IEC 62443 Compliance Matrix — AgentShroud]]
+- 1 edge to [[_COMMUNITY_archive_old_events]]
 
 ## Top bridge nodes
-- [[AuditStore_1]] - degree 36, connects to 7 communities
+- [[AuditStore_1]] - degree 36, connects to 6 communities
 - [[audit_store.py]] - degree 6, connects to 4 communities
 - [[audit_export.py]] - degree 7, connects to 3 communities
 - [[TestAuditStoreBotId]] - degree 13, connects to 2 communities

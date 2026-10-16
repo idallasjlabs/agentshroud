@@ -31,7 +31,7 @@ members: 23
 - [[killswitch.sh doesn't confirm]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[scan.sh]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[scan.sh reports missing OpenSCAP]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[verify-security.sh_1]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[verify-security.sh]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 - [[verify-security.sh fails]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 
 ## Live Query (requires Dataview plugin)
@@ -43,11 +43,11 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_AgentShroud Security Architecture]]
-- 1 edge to [[_COMMUNITY_DOCKER-VPN-NETWORKING]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised]]
 - 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
+- 1 edge to [[_COMMUNITY_DOCKER-VPN-NETWORKING]]
 - 1 edge to [[_COMMUNITY_Phase 3A3B Implementation Verification Results]]
 - 1 edge to [[_COMMUNITY_Git History Purge Plan]]
-- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised]]
 
 ## Top bridge nodes
 - [[Kill Switch_1]] - degree 9, connects to 3 communities

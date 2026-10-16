@@ -10,8 +10,8 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[dot-__init__()_171]] - code - gateway/proxy/dns_forwarder.py
-- [[dot-close()_12]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__init__()_163]] - code - gateway/proxy/dns_forwarder.py
+- [[dot-close()_13]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-connection_made()]] - code - gateway/proxy/dns_forwarder.py
 - [[dot-error_received()]] - code - gateway/proxy/dns_forwarder.py
 - [[dot-test_binds_and_returns_transport()]] - code - gateway/tests/test_dns_canvas_coverage.py
@@ -24,7 +24,7 @@ members: 16
 - [[UDP protocol handler for DNS forwarding with optional blocklist.]] - rationale - gateway/proxy/dns_forwarder.py
 - [[dns_blocklist.py]] - code - gateway/proxy/dns_blocklist.py
 - [[dns_forwarder.py]] - code - gateway/proxy/dns_forwarder.py
-- [[main()_27]] - code - gateway/proxy/dns_forwarder.py
+- [[main()_25]] - code - gateway/proxy/dns_forwarder.py
 - [[start_dns_forwarder()]] - code - gateway/proxy/dns_forwarder.py
 
 ## Live Query (requires Dataview plugin)
@@ -38,7 +38,7 @@ SORT file.name ASC
 - 9 edges to [[_COMMUNITY_DNSBlocklist]]
 - 8 edges to [[_COMMUNITY_test_dns_canvas_coverage.py]]
 - 6 edges to [[_COMMUNITY__FakeUpstreamWS]]
-- 4 edges to [[_COMMUNITY_lifespan.py]]
+- 4 edges to [[_COMMUNITY_MiddlewareManager]]
 - 4 edges to [[_COMMUNITY_parse_query]]
 - 4 edges to [[_COMMUNITY_TestDNSForwarderProtocol]]
 - 2 edges to [[_COMMUNITY_forward_query]]

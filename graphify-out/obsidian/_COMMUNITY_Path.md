@@ -1,22 +1,17 @@
 ---
 type: community
-cohesion: 0.07
-members: 82
+cohesion: 0.09
+members: 68
 ---
 
 # Path
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 82 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 68 nodes
 
 ## Members
 - [[dot-by_name()]] - code - gateway/skills/manifest.py
-- [[dot-client()_5]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-from_dict()_6]] - code - gateway/runtime/config.py
-- [[dot-from_env()]] - code - gateway/runtime/config.py
-- [[dot-from_env()_1]] - code - gateway/security/memory_config.py
-- [[dot-from_file()]] - code - gateway/skills/manifest.py
-- [[dot-from_source()]] - code - gateway/skills/manifest.py
+- [[dot-client()_7]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[dot-test_build_excludes_manifest_json_itself()]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[dot-test_build_includes_all_files()]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[dot-test_build_is_sorted_deterministically()]] - code - gateway/tests/test_skills_manifest_sync.py
@@ -50,25 +45,18 @@ members: 82
 - [[dot-test_returns_all_drifted_items()]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[dot-test_serialise_contains_version_and_timestamp()]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[dot-test_serialise_roundtrip()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[dot-to_dict()_8]] - code - gateway/skills/manifest.py
-- [[dot-to_dict()_9]] - code - gateway/skills/manifest.py
+- [[dot-to_dict()_13]] - code - gateway/skills/manifest.py
+- [[dot-to_dict()_14]] - code - gateway/skills/manifest.py
 - [[dot-to_json()]] - code - gateway/skills/manifest.py
 - [[A single item in the skills manifest.]] - rationale - gateway/skills/manifest.py
 - [[An empty source directory must raise ValueError.]] - rationale - gateway/tests/test_skills_manifest_sync.py
-- [[Build a ManifestEntry by reading path from disk.]] - rationale - gateway/skills/manifest.py
-- [[Build a manifest by walking source (``~.llm_settings``).          Raises]] - rationale - gateway/skills/manifest.py
 - [[Compute the deploy plan without mutating the filesystem.      Pure with respect]] - rationale - gateway/skills/manifest.py
 - [[Copy all files in manifest from source to each per-bot destination.      Beh]] - rationale - gateway/skills/manifest.py
-- [[Create configuration from environment variables.]] - rationale - gateway/security/memory_config.py
 - [[In-memory representation of the skillsagentsMCP manifest.]] - rationale - gateway/skills/manifest.py
-- [[Load configuration from environment variables.]] - rationale - gateway/runtime/config.py
-- [[Load from a config dictionary (e.g. from YAML).]] - rationale - gateway/runtime/config.py
 - [[ManifestEntry]] - code - gateway/skills/manifest.py
 - [[One unit of work in a deploy plan (canonical entry - per-bot path).      ``acti]] - rationale - gateway/skills/manifest.py
-- [[Path_29]] - code - gateway/skills/manifest.py
-- [[Path_30]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[Path_54]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[PlannedAction]] - code - gateway/skills/manifest.py
-- [[Re-read ``~.llm_settings``, scan for supply-chain risk, deploy to both bots.]] - rationale - gateway/web/api.py
 - [[Return names of entries that are missing or hash-mismatched in dest.      Retu]] - rationale - gateway/skills/manifest.py
 - [[SkillsManifest]] - code - gateway/skills/manifest.py
 - [[TestClient_1]] - code - gateway/tests/test_skills_manifest_sync.py
@@ -81,10 +69,8 @@ members: 82
 - [[TestValidateManifest]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[The plan is a pure function it maps canonical source entries to each     per-bo]] - rationale - gateway/tests/test_skills_manifest_sync.py
 - [[Write {relative_path content} under root.]] - rationale - gateway/tests/test_skills_manifest_sync.py
-- [[_sha256()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[_skills_reload_impl()]] - code - gateway/web/api.py
-- [[_write_tree()]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[cls]] - code
+- [[_sha256()_3]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[_write_tree()_1]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[deploy_manifest()]] - code - gateway/skills/manifest.py
 - [[gatewayskillsmanifest.py (SkillsManifest)]] - code - gateway/skills/manifest.py
 - [[manifest.json must never appear as an entry even when present in source.]] - rationale - gateway/tests/test_skills_manifest_sync.py
@@ -101,29 +87,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_api.py]]
-- 3 edges to [[_COMMUNITY_Recommendation_1]]
-- 2 edges to [[_COMMUNITY_PrivacyPolicyEnforcer]]
-- 2 edges to [[_COMMUNITY_lifespan.py]]
-- 2 edges to [[_COMMUNITY_AgentRegistry]]
-- 2 edges to [[_COMMUNITY_RuntimeConfig]]
-- 2 edges to [[_COMMUNITY_SkillGuard_1]]
-- 1 edge to [[_COMMUNITY_EgressApprovalQueue]]
-- 1 edge to [[_COMMUNITY_PermissionLevel]]
-- 1 edge to [[_COMMUNITY_UserSessionManager]]
-- 1 edge to [[_COMMUNITY_patch_telegram_do_request.py]]
-- 1 edge to [[_COMMUNITY_A2APolicyConfig]]
-- 1 edge to [[_COMMUNITY_CrossBotTrustLedger]]
-- 1 edge to [[_COMMUNITY_DelegationManager]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
-- 1 edge to [[_COMMUNITY_MCPPolicyEngine]]
-- 1 edge to [[_COMMUNITY_test_mfa_guard.py]]
+- 5 edges to [[_COMMUNITY_Path_3]]
+- 4 edges to [[_COMMUNITY_SkillGuard_1]]
+- 4 edges to [[_COMMUNITY_api.py]]
 - 1 edge to [[_COMMUNITY_ModeRequest]]
-- 1 edge to [[_COMMUNITY_FetchOutcome]]
+- 1 edge to [[_COMMUNITY_FetchOutcome_1]]
 
 ## Top bridge nodes
-- [[cls]] - degree 20, connects to 13 communities
 - [[SkillsManifest]] - degree 25, connects to 3 communities
+- [[deploy_manifest()]] - degree 25, connects to 2 communities
 - [[test_skills_manifest_sync.py]] - degree 18, connects to 2 communities
-- [[_skills_reload_impl()]] - degree 8, connects to 2 communities
-- [[deploy_manifest()]] - degree 25, connects to 1 community
+- [[ManifestEntry]] - degree 15, connects to 1 community
+- [[plan_deploy()]] - degree 13, connects to 1 community

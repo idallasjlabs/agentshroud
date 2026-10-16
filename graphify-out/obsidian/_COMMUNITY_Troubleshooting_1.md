@@ -1,20 +1,22 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.29
+members: 7
 ---
 
 # Troubleshooting
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[Problem 1Password link shows only page shell]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Problem Browser binaries not found]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Problem Permission denied executing browser]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Problem Skill not auto-discovered by bot]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Troubleshooting]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Missing auth for API providers]] - document - docker/scripts/README.md
+- [[Bot not responding on Telegram]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Container unhealthy]] - document - docker/scripts/README.md
+- [[Container won't start after adding Anthropic secret]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Telegram bot not responding]] - document - docker/scripts/README.md
+- [[Troubleshooting]] - document - docker/scripts/README.md
+- [[Troubleshooting_1]] - document - docs/setup/SETUP_API_KEYS.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +26,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Browser-Fetch Skill for 1Password Share Links]]
+- 1 edge to [[_COMMUNITY_OpenClaw Management Scripts]]
+- 1 edge to [[_COMMUNITY_API Keys Setup Guide]]
 
 ## Top bridge nodes
-- [[Troubleshooting]] - degree 5, connects to 1 community
+- [[Troubleshooting]] - degree 4, connects to 1 community
+- [[Troubleshooting_1]] - degree 4, connects to 1 community

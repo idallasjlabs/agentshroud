@@ -10,7 +10,7 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[Any_80]] - code - gateway/security/egress_retry.py
+- [[Any_79]] - code - gateway/security/egress_retry.py
 - [[Calculate delay with exponential backoff and jitter.]] - rationale - gateway/security/egress_retry.py
 - [[Configuration for egress retry behavior.]] - rationale - gateway/security/egress_retry.py
 - [[Execute a request with exponential backoff retry on transient failures.      Arg]] - rationale - gateway/security/egress_retry.py

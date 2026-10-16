@@ -21,7 +21,7 @@ members: 16
 - [[Recipe E — Share Sheet photo relay]] - document - shortcuts/README.md
 - [[Request body — `ForwardRequest`]] - document - shortcuts/README.md
 - [[Response body — `ForwardResponse`]] - document - shortcuts/README.md
-- [[Status_4]] - document - shortcuts/README.md
+- [[Status_5]] - document - shortcuts/README.md
 - [[The `forward` contract (authoritative)]] - document - shortcuts/README.md
 - [[Troubleshooting_33]] - document - shortcuts/README.md
 - [[iOS  macOS Shortcuts — Relay to AgentShroud]] - document - shortcuts/README.md

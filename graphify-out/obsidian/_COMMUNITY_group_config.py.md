@@ -33,11 +33,12 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 12 edges to [[_COMMUNITY_socrouter.py]]
-- 8 edges to [[_COMMUNITY_telegram_proxy.py]]
-- 4 edges to [[_COMMUNITY_GroupConfig]]
-- 3 edges to [[_COMMUNITY_RBACConfig]]
+- 9 edges to [[_COMMUNITY_telegram_proxy.py]]
+- 3 edges to [[_COMMUNITY_GroupConfig]]
+- 2 edges to [[_COMMUNITY_RBACConfig]]
 - 1 edge to [[_COMMUNITY_rbac_config.py]]
-- 1 edge to [[_COMMUNITY_load_config]]
+- 1 edge to [[_COMMUNITY_ApprovalQueueConfig]]
+- 1 edge to [[_COMMUNITY_RBACConfig_2]]
 
 ## Top bridge nodes
 - [[group_config.py]] - degree 16, connects to 5 communities

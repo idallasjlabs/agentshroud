@@ -1,13 +1,13 @@
 ---
 type: community
-cohesion: 0.08
-members: 24
+cohesion: 0.09
+members: 23
 ---
 
 # AgentShroud™ Security Policy
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 24 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 23 nodes
 
 ## Members
 - [[7-Layer Security Architecture]] - concept - SECURITY.md
@@ -28,7 +28,6 @@ members: 24
 - [[Pinned Vendor Versions Single Source of Truth (dockerversions.env)]] - rationale - .github/workflows/update-cve-page.yml
 - [[Reporting a Vulnerability]] - document - SECURITY.md
 - [[Response Timeline]] - document - SECURITY.md
-- [[SECURITY_10]] - document - SECURITY.md
 - [[Security Architecture_4]] - document - SECURITY.md
 - [[Security Scanning]] - document - SECURITY.md
 - [[Supported Versions]] - document - SECURITY.md
@@ -49,8 +48,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_AgentShroud Operations Cheat Sheet]]
 
 ## Top bridge nodes
+- [[AgentShroud™ Security Policy]] - degree 14, connects to 2 communities
 - [[Trademark_1]] - degree 4, connects to 2 communities
-- [[AgentShroud™ Security Policy]] - degree 14, connects to 1 community
 - [[Kill Switch Operations]] - degree 2, connects to 1 community
-- [[SECURITY_10]] - degree 2, connects to 1 community
 - [[7-Layer Security Architecture]] - degree 2, connects to 1 community

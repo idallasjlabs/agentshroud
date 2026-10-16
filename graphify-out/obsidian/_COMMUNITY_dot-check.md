@@ -10,7 +10,7 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[dot-__init__()_196]] - code - gateway/security/config_integrity.py
+- [[dot-__init__()_187]] - code - gateway/security/config_integrity.py
 - [[dot-_hash_file()]] - code - gateway/security/config_integrity.py
 - [[dot-_load_baseline()]] - code - gateway/security/config_integrity.py
 - [[dot-_save_baseline()]] - code - gateway/security/config_integrity.py
@@ -19,7 +19,7 @@ members: 12
 - [[Accept current file hashes as the new baseline (owner-acknowledged rebuild).]] - rationale - gateway/security/config_integrity.py
 - [[Compare current file hashes against baseline.          Returns a list of change]] - rationale - gateway/security/config_integrity.py
 - [[Load the last known baseline from disk. Returns empty dict if not found.]] - rationale - gateway/security/config_integrity.py
-- [[Path_62]] - code - gateway/security/config_integrity.py
+- [[Path_55]] - code - gateway/security/config_integrity.py
 - [[Persist the current hashes as the new baseline.]] - rationale - gateway/security/config_integrity.py
 - [[Return hex SHA256 of a file, or None if the file does not exist.]] - rationale - gateway/security/config_integrity.py
 

@@ -12,10 +12,10 @@ members: 7
 ## Members
 - [[Field Validators]] - document - docs/vault/05 - Dependencies/pydantic.md
 - [[Key Configuration Models]] - document - docs/vault/05 - Dependencies/pydantic.md
-- [[Purpose_4]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[Purpose_5]] - document - docs/vault/05 - Dependencies/pydantic.md
 - [[Pydantic]] - document - docs/vault/05 - Dependencies/pydantic.md
-- [[Related Notes_4]] - document - docs/vault/05 - Dependencies/pydantic.md
-- [[Where Used]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[Related Notes_8]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[Where Used_1]] - document - docs/vault/05 - Dependencies/pydantic.md
 - [[v2 vs v1]] - document - docs/vault/05 - Dependencies/pydantic.md
 
 ## Live Query (requires Dataview plugin)

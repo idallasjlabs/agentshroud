@@ -10,7 +10,7 @@ members: 48
 **Members:** 48 nodes
 
 ## Members
-- [[dot-__init__()_33]] - code - gateway/ingest_api/auth.py
+- [[dot-__init__()_44]] - code - gateway/ingest_api/auth.py
 - [[dot-test_channel_is_not_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_collaborator_always_gets_response_for_generic_message()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_collaborator_blocked_command_always_gets_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -67,19 +67,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 49 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 49 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
 - 18 edges to [[_COMMUNITY__wrap_response]]
-- 8 edges to [[_COMMUNITY_create_auth_dependency]]
-- 5 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
+- 7 edges to [[_COMMUNITY_create_auth_dependency]]
+- 5 edges to [[_COMMUNITY_TelegramAPIProxy_2]]
 - 4 edges to [[_COMMUNITY_MiddlewareManager]]
 - 3 edges to [[_COMMUNITY_BlockingPipeline]]
 - 2 edges to [[_COMMUNITY_test_security.py]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 2 edges to [[_COMMUNITY_dot-_filter_outbound]]
 - 2 edges to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
-- 1 edge to [[_COMMUNITY_rbac_config.py]]
+- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
 - 1 edge to [[_COMMUNITY_telegram_proxy.py]]
-- 1 edge to [[_COMMUNITY_dot-_filter_outbound]]
-- 1 edge to [[_COMMUNITY_DataLedger]]
-- 1 edge to [[_COMMUNITY_RBACConfig]]
 - 1 edge to [[_COMMUNITY_AsyncMock]]
 - 1 edge to [[_COMMUNITY_TestBotIsMentioned]]
 - 1 edge to [[_COMMUNITY_TestFileDownload]]
@@ -87,7 +86,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_TestStrangerRateLimit]]
 
 ## Top bridge nodes
-- [[RateLimiter_1]] - degree 47, connects to 17 communities
+- [[RateLimiter_1]] - degree 47, connects to 16 communities
 - [[TestCommandTokenNormalization]] - degree 15, connects to 3 communities
 - [[TestIsGroupMessage]] - degree 10, connects to 3 communities
 - [[TestNoResponseGuarantee]] - degree 9, connects to 3 communities

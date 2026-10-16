@@ -16,7 +16,7 @@ members: 12
 - [[Output Format_37]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
 - [[Persona_16]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
 - [[Quality Checklist_19]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
-- [[Role_92]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
+- [[Role_93]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
 - [[System Prompt_16]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
 - [[User Prompt Template_7]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
 - [[cheatsheet_3]] - document - docker/config/openclaw/skills/i-athena/SKILL.md

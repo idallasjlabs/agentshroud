@@ -29,11 +29,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_MCPToolCall]]
-- 4 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 2 edges to [[_COMMUNITY_PermissionLevel]]
+- 13 edges to [[_COMMUNITY_MCPPermissionManager]]
 - 1 edge to [[_COMMUNITY_MCPAuditTrail]]
-- 1 edge to [[_COMMUNITY_MCPToolResult]]
 
 ## Top bridge nodes
-- [[TestAuditTrail_2]] - degree 23, connects to 5 communities
+- [[TestAuditTrail_2]] - degree 23, connects to 2 communities

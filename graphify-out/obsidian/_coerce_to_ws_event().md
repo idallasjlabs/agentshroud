@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "Enum"
+community: "test_soc_realtime_coverage.py"
 location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/test_soc_realtime_coveragepy
 ---
 
 # _coerce_to_ws_event()
@@ -28,11 +28,11 @@ tags:
 - [[dot-test_unknown_severity_defaults_to_info()]] - `calls` [EXTRACTED]
 - [[dot-test_wsevent_passthrough()]] - `calls` [EXTRACTED]
 - [[Convert an EventBus item to WSEvent, return None if conversion fails.]] - `rationale_for` [EXTRACTED]
-- [[SOCWebSocketHandler]] - `calls` [EXTRACTED]
+- [[SOCWebSocketHandler_1]] - `calls` [EXTRACTED]
 - [[WSEvent]] - `calls` [EXTRACTED]
 - [[WSEvent_1]] - `references` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[test_soc_websocket.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

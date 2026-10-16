@@ -15,9 +15,9 @@ members: 15
 - [[Key Classes  Functions_27]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
 - [[Methods Filtered (Inbound)]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
 - [[Methods Filtered (Outbound)]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[Purpose_144]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
+- [[Purpose_130]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
 - [[Related_31]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[Responsibilities_29]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
+- [[Responsibilities_28]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
 - [[TelegramAPIProxy._filter_inbound_updates(response_data)]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
 - [[TelegramAPIProxy._filter_outbound(body, content_type)]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
 - [[TelegramAPIProxy._forward_to_telegram(url, body, content_type)]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md

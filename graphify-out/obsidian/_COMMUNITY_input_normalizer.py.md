@@ -15,9 +15,9 @@ members: 15
 - [[Invisible Characters Stripped]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
 - [[Key Classes  Functions_35]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
 - [[Mode Enforce vs Monitor_10]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Purpose_152]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Purpose_138]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
 - [[Related_39]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Responsibilities_37]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Responsibilities_36]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
 - [[Threat Model_23]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
 - [[Usage Context]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
 - [[detect_base64_payloads(text)]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md

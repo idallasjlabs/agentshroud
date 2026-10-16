@@ -14,7 +14,7 @@ members: 68
 - [[dot-test_empty_summaries()]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_error_status_gets_50()]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_format_report_string()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_generate_report()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_generate_report()_1]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_get_fim_events()]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_get_rootkit_events()]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_grade_a()]] - code - gateway/tests/test_security_toolchain.py
@@ -32,26 +32,26 @@ members: 68
 - [[dot-test_partial_tools()]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_perfect_score()]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_score_floor()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_summary_clean()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_summary_clean()_3]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_summary_with_rootkit()]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_trend_empty_db()]] - code - gateway/tests/test_security_toolchain.py
-- [[Any_25]] - code - gateway/security/health_report.py
-- [[Any_26]] - code - gateway/security/wazuh_client.py
+- [[Any_76]] - code - gateway/security/health_report.py
+- [[Any_77]] - code - gateway/security/wazuh_client.py
 - [[Calculate score for a single tool (0-100).      Args         summary Tool summ]] - rationale - gateway/security/health_report.py
 - [[Calculate weighted overall security score.      Args         summaries Dict ma]] - rationale - gateway/security/health_report.py
-- [[Connection]] - code - gateway/security/health_report.py
+- [[Connection_1]] - code - gateway/security/health_report.py
 - [[Convert score to letter grade.      Args         score Numeric score (0-100).]] - rationale - gateway/security/health_report.py
 - [[Filter alerts to file integrity monitoring events only.      Args         alert]] - rationale - gateway/security/wazuh_client.py
 - [[Filter alerts to rootkit detection events only.      Args         alerts List]] - rationale - gateway/security/wazuh_client.py
 - [[Format a health report as a human-readable string.      Args         report Fu]] - rationale - gateway/security/health_report.py
 - [[Generate a full health report.      Args         summaries Dict mapping tool n]] - rationale - gateway/security/health_report.py
-- [[Generate a summary dict suitable for the health report.      Args         alert]] - rationale - gateway/security/wazuh_client.py
+- [[Generate a summary dict suitable for the health report.      Args         alert_1]] - rationale - gateway/security/wazuh_client.py
 - [[Get score trend for the last N days.      Args         days Number of days to]] - rationale - gateway/security/health_report.py
 - [[Initialize the SQLite database for history tracking.      Args         db_path]] - rationale - gateway/security/health_report.py
 - [[Map Wazuh alert level to severity string.      Args         level Wazuh alert]] - rationale - gateway/security/wazuh_client.py
 - [[Parse a single Wazuh alert.      Args         raw Raw Wazuh alert JSON.      R]] - rationale - gateway/security/wazuh_client.py
-- [[Path_18]] - code - gateway/security/health_report.py
-- [[Path_19]] - code - gateway/security/wazuh_client.py
+- [[Path_52]] - code - gateway/security/health_report.py
+- [[Path_53]] - code - gateway/security/wazuh_client.py
 - [[Read Wazuh alerts from the alert directory.      Args         alert_dir Direct]] - rationale - gateway/security/wazuh_client.py
 - [[Save a health report to history.      Args         score Overall score.]] - rationale - gateway/security/health_report.py
 - [[TestHealthOverallScore]] - code - gateway/tests/test_security_toolchain.py
@@ -61,23 +61,23 @@ members: 68
 - [[TestWazuhSummary_1]] - code - gateway/tests/test_security_toolchain.py
 - [[calculate_overall_score()]] - code - gateway/security/health_report.py
 - [[calculate_tool_score()]] - code - gateway/security/health_report.py
-- [[datetime]] - code - gateway/security/wazuh_client.py
+- [[datetime_8]] - code - gateway/security/wazuh_client.py
 - [[format_report()]] - code - gateway/security/health_report.py
 - [[generate_report()]] - code - gateway/security/health_report.py
-- [[generate_summary()]] - code - gateway/security/wazuh_client.py
+- [[generate_summary()_3]] - code - gateway/security/wazuh_client.py
 - [[get_fim_events()]] - code - gateway/security/wazuh_client.py
 - [[get_rootkit_events()]] - code - gateway/security/wazuh_client.py
 - [[get_trend()]] - code - gateway/security/health_report.py
-- [[health_report.py]] - code - gateway/security/health_report.py
+- [[health_report.py_2]] - code - gateway/security/health_report.py
 - [[init_db()]] - code - gateway/security/health_report.py
 - [[level_to_severity()]] - code - gateway/security/wazuh_client.py
-- [[parse_alert()]] - code - gateway/security/wazuh_client.py
-- [[read_alerts()]] - code - gateway/security/wazuh_client.py
+- [[parse_alert()_1]] - code - gateway/security/wazuh_client.py
+- [[read_alerts()_1]] - code - gateway/security/wazuh_client.py
 - [[save_to_history()]] - code - gateway/security/health_report.py
 - [[score_to_grade()]] - code - gateway/security/health_report.py
 - [[test_security_toolchain.py]] - code - gateway/tests/test_security_toolchain.py
 - [[wazuh-ossec]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[wazuh_client.py]] - code - gateway/security/wazuh_client.py
+- [[wazuh_client.py_2]] - code - gateway/security/wazuh_client.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -88,30 +88,29 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 12 edges to [[_COMMUNITY_FalcoAlertWatcher]]
-- 8 edges to [[_COMMUNITY_AlertDispatcher]]
+- 10 edges to [[_COMMUNITY_AlertDispatcher]]
 - 7 edges to [[_COMMUNITY_parse_clamscan_output]]
 - 5 edges to [[_COMMUNITY_parse_trivy_output]]
-- 2 edges to [[_COMMUNITY_lifespan.py]]
-- 2 edges to [[_COMMUNITY_AgentRegistry]]
-- 2 edges to [[_COMMUNITY_Path_1]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
 - 2 edges to [[_COMMUNITY_get_falco_summary]]
-- 2 edges to [[_COMMUNITY_test_scanner_integration.py]]
+- 2 edges to [[_COMMUNITY_Path_1]]
 - 2 edges to [[_COMMUNITY_scanner_integration.py]]
 - 2 edges to [[_COMMUNITY_test_daily_cve_report.py]]
+- 2 edges to [[_COMMUNITY_test_scanner_integration.py]]
 - 2 edges to [[_COMMUNITY_run_trivy_scan]]
-- 1 edge to [[_COMMUNITY_ResourceGuard]]
 - 1 edge to [[_COMMUNITY_ProxyDashboard]]
-- 1 edge to [[_COMMUNITY_export-bot-conversations.py]]
+- 1 edge to [[_COMMUNITY_ResourceGuard]]
 - 1 edge to [[_COMMUNITY_test_scanner_integration_coverage.py]]
 - 1 edge to [[_COMMUNITY_api.py]]
 - 1 edge to [[_COMMUNITY_get_trivy_summary]]
 - 1 edge to [[_COMMUNITY_TestStartupScannerKeying]]
+- 1 edge to [[_COMMUNITY_export-bot-conversations.py]]
 - 1 edge to [[_COMMUNITY_TestAlertDispatcher]]
 - 1 edge to [[_COMMUNITY_wazuh-ossec.conf]]
 
 ## Top bridge nodes
 - [[test_security_toolchain.py]] - degree 42, connects to 8 communities
-- [[health_report.py]] - degree 18, connects to 7 communities
-- [[wazuh_client.py]] - degree 14, connects to 5 communities
-- [[generate_summary()]] - degree 13, connects to 5 communities
-- [[read_alerts()]] - degree 9, connects to 3 communities
+- [[health_report.py_2]] - degree 18, connects to 6 communities
+- [[wazuh_client.py_2]] - degree 14, connects to 5 communities
+- [[generate_summary()_3]] - degree 13, connects to 5 communities
+- [[read_alerts()_1]] - degree 9, connects to 3 communities

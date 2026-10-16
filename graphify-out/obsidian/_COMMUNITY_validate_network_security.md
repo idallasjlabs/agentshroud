@@ -16,7 +16,7 @@ members: 14
 - [[dot-test_validator_knows_the_two_real_networks()]] - code - gateway/tests/test_network_validator_gate.py
 - [[A privileged container is the textbook escape-the-sandbox finding —         vali]] - rationale - gateway/tests/test_network_validator_gate.py
 - [[Convenience function to validate network security.]] - rationale - gateway/security/network_validator.py
-- [[Path_59]] - code - gateway/tests/test_network_validator_gate.py
+- [[Path_49]] - code - gateway/tests/test_network_validator_gate.py
 - [[TestExpectedNetworksAllowlist]] - code - gateway/tests/test_network_validator_gate.py
 - [[TestGateScope]] - code - gateway/tests/test_network_validator_gate.py
 - [[TestValidatorAPI]] - code - gateway/tests/test_network_validator_gate.py
@@ -35,8 +35,8 @@ SORT file.name ASC
 ## Connections to other communities
 - 7 edges to [[_COMMUNITY_MiddlewareManager]]
 - 3 edges to [[_COMMUNITY_dot-validate_docker_compose_config]]
+- 1 edge to [[_COMMUNITY_check-vendor-compat.sh]]
 - 1 edge to [[_COMMUNITY_NetworkSecurityFinding]]
-- 1 edge to [[_COMMUNITY_asb (AgentShroud Bot helper)]]
 
 ## Top bridge nodes
 - [[validate_network_security()]] - degree 10, connects to 4 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "code"
-community: "test_config.py"
+community: "ApprovalQueueConfig"
 location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_configpy
+  - community/ApprovalQueueConfig
 ---
 
 # _load_config()
@@ -19,4 +19,4 @@ tags:
 - [[test_load_config_has_bots()]] - `calls` [EXTRACTED]
 - [[test_load_config_registers_hermes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_configpy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

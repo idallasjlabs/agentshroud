@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Check if the upstream CVE watch already ran today (disk-based).]] - `rationale_for` [EXTRACTED]
 - [[daily_cve_report.py]] - `contains` [EXTRACTED]
-- [[datetime_8]] - `references` [EXTRACTED]
+- [[datetime_7]] - `references` [EXTRACTED]
 - [[upstream_cve_check_scheduler()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

@@ -30,11 +30,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_TelegramAPIProxy_2]]
+- 5 edges to [[_COMMUNITY_TelegramAPIProxy]]
 - 2 edges to [[_COMMUNITY_PIIConfig]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy_1]]
-- 1 edge to [[_COMMUNITY_CollaboratorActivityTracker]]
 - 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy_2]]
+- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
 
 ## Top bridge nodes
 - [[TestParseModeStrippedAfterPIIRedaction]] - degree 11, connects to 4 communities

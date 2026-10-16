@@ -18,7 +18,7 @@ members: 9
 - [[HTTP 403 — Egress Blocked]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
 - [[Monitor Mode — Egress Not Enforced]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
 - [[RFC1918 Blocked]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
-- [[Related Notes_73]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
+- [[Related Notes_67]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
 
 ## Live Query (requires Dataview plugin)
 

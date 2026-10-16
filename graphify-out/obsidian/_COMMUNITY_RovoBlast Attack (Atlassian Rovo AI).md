@@ -29,9 +29,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_DifferentialPIIDetector]]
-- 1 edge to [[_COMMUNITY_A2AMethod]]
 - 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_A2AMethod]]
+- 1 edge to [[_COMMUNITY_DifferentialPIIDetector]]
 
 ## Top bridge nodes
 - [[RovoBlast Attack (Atlassian Rovo AI)]] - degree 7, connects to 2 communities

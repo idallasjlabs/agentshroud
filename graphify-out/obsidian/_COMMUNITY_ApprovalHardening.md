@@ -1,16 +1,15 @@
 ---
 type: community
 cohesion: 0.03
-members: 105
+members: 98
 ---
 
 # ApprovalHardening
 
 **Cohesion:** 0.03 - loosely connected
-**Members:** 105 nodes
+**Members:** 98 nodes
 
 ## Members
-- [[dot-__init__()_127]] - code - gateway/security/approval_hardening.py
 - [[dot-_check_description_parameter_mismatch()]] - code - gateway/security/approval_hardening.py
 - [[dot-_check_misleading_language()]] - code - gateway/security/approval_hardening.py
 - [[dot-_check_parameter_obfuscation()]] - code - gateway/security/approval_hardening.py
@@ -20,24 +19,22 @@ members: 105
 - [[dot-_format_parameters_with_highlighting()]] - code - gateway/security/approval_hardening.py
 - [[dot-_normalize_description()]] - code - gateway/security/approval_hardening.py
 - [[dot-analyze_request()]] - code - gateway/security/approval_hardening.py
-- [[dot-config()_1]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-config()_3]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-format_hardened_message()]] - code - gateway/security/approval_hardening.py
-- [[dot-get_stats()_15]] - code - gateway/security/approval_hardening.py
+- [[dot-get_stats()_16]] - code - gateway/security/approval_hardening.py
 - [[dot-hardening()]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-is_request_in_cooldown()]] - code - gateway/security/approval_hardening.py
 - [[dot-record_denied_request()]] - code - gateway/security/approval_hardening.py
 - [[dot-test_basic_detection()]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-test_cleanup_old_denied_requests()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_cooldown_disabled_when_feature_disabled()]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-test_cooldown_period_enforcement()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_custom_config()_3]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_custom_config()_1]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-test_deception_detection_authority_claims()]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-test_deception_detection_benign_request()]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-test_deception_detection_destructive_command_not_indicated()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_deception_detection_disabled()]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-test_deception_detection_downplaying_language()]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-test_deception_detection_misleading_description()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_default_config()_6]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_default_config()_4]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-test_default_detection()]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-test_denied_request_creation()]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-test_different_requests_not_in_cooldown()]] - code - gateway/tests/test_approval_hardening.py
@@ -46,7 +43,7 @@ members: 105
 - [[dot-test_format_hardened_message_with_security_concerns()]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-test_format_parameters_with_highlighting()]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-test_get_stats()_1]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_initialization()_2]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_initialization()_3]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-test_normalize_description_handles_empty()]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-test_normalize_description_removes_misleading_phrases()]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-test_parameter_fingerprinting_consistency()]] - code - gateway/tests/test_approval_hardening.py
@@ -56,9 +53,7 @@ members: 105
 - [[dot-test_parameter_obfuscation_detection_url()]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-test_repeat_request_pattern_detection()]] - code - gateway/tests/test_approval_hardening.py
 - [[Analyze an approval request for potential deception or social engineering.]] - rationale - gateway/security/approval_hardening.py
-- [[Anti-social-engineering hardening for approval queue.]] - rationale - gateway/security/approval_hardening.py
-- [[Any_54]] - code - gateway/security/approval_hardening.py
-- [[ApprovalHardening]] - code - gateway/security/approval_hardening.py
+- [[Any_56]] - code - gateway/security/approval_hardening.py
 - [[Check for misleading language patterns in description.]] - rationale - gateway/security/approval_hardening.py
 - [[Check for mismatch between description and actual parameters.]] - rationale - gateway/security/approval_hardening.py
 - [[Check for obfuscated or encoded parameters.]] - rationale - gateway/security/approval_hardening.py
@@ -67,7 +62,7 @@ members: 105
 - [[Clean up old denied requests beyond cooldown period.]] - rationale - gateway/security/approval_hardening.py
 - [[Create a fingerprint for request parameters.]] - rationale - gateway/security/approval_hardening.py
 - [[Create approval hardening instance for testing.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Create test configuration._1]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Create test configuration.]] - rationale - gateway/tests/test_approval_hardening.py
 - [[DeceptionDetection]] - code - gateway/security/approval_hardening.py
 - [[DeniedRequest]] - code - gateway/security/approval_hardening.py
 - [[Format an approval message with hardening measures applied.]] - rationale - gateway/security/approval_hardening.py
@@ -84,11 +79,10 @@ members: 105
 - [[Test basic detection result creation.]] - rationale - gateway/tests/test_approval_hardening.py
 - [[Test basic hardened message formatting.]] - rationale - gateway/tests/test_approval_hardening.py
 - [[Test cleanup of old denied requests.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test cooldown is disabled when feature is disabled.]] - rationale - gateway/tests/test_approval_hardening.py
 - [[Test cooldown period enforcement for denied requests.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test custom configuration values._1]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test custom configuration values.]] - rationale - gateway/tests/test_approval_hardening.py
 - [[Test deception detection with legitimate request.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test default configuration values._4]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test default configuration values._3]] - rationale - gateway/tests/test_approval_hardening.py
 - [[Test denied request creation.]] - rationale - gateway/tests/test_approval_hardening.py
 - [[Test description normalization removes misleading language.]] - rationale - gateway/tests/test_approval_hardening.py
 - [[Test detection of URL-encoded parameters.]] - rationale - gateway/tests/test_approval_hardening.py
@@ -105,7 +99,6 @@ members: 105
 - [[Test hardening initialization.]] - rationale - gateway/tests/test_approval_hardening.py
 - [[Test normalization handles empty descriptions.]] - rationale - gateway/tests/test_approval_hardening.py
 - [[Test parameter formatting with risk highlighting.]] - rationale - gateway/tests/test_approval_hardening.py
-- [[Test that deception detection can be disabled.]] - rationale - gateway/tests/test_approval_hardening.py
 - [[Test that different parameters create different fingerprints.]] - rationale - gateway/tests/test_approval_hardening.py
 - [[Test that different requests are not affected by cooldown.]] - rationale - gateway/tests/test_approval_hardening.py
 - [[Test that parameter fingerprinting is consistent.]] - rationale - gateway/tests/test_approval_hardening.py
@@ -124,12 +117,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 26 edges to [[_COMMUNITY_MiddlewareManager]]
+- 31 edges to [[_COMMUNITY_MiddlewareManager]]
 - 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL]]
 
 ## Top bridge nodes
 - [[approval_hardening.py]] - degree 6, connects to 2 communities
-- [[ApprovalHardening]] - degree 38, connects to 1 community
 - [[TestApprovalHardening]] - degree 32, connects to 1 community
+- [[dot-analyze_request()]] - degree 9, connects to 1 community
 - [[test_approval_hardening.py]] - degree 8, connects to 1 community
 - [[TestApprovalHardeningConfig]] - degree 8, connects to 1 community

@@ -17,8 +17,8 @@ members: 20
 - [[DOCKER-VPN-NETWORKING]] - document - docker/DOCKER-VPN-NETWORKING.md
 - [[Data Ledger Viewer]] - document - dashboard/README.md
 - [[DataLedger Component (Forwarded Content Viewer)]] - concept - dashboard/README.md
-- [[Features_3]] - document - dashboard/README.md
-- [[Implementation Status_2]] - document - dashboard/README.md
+- [[Features_2]] - document - dashboard/README.md
+- [[Implementation Status_1]] - document - dashboard/README.md
 - [[KillSwitch Component (Emergency Halt)]] - concept - dashboard/README.md
 - [[Memory Browser]] - document - dashboard/README.md
 - [[MemoryViewer Component (MEMORY.md Browser)]] - concept - dashboard/README.md
@@ -45,4 +45,4 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[DOCKER-VPN-NETWORKING]] - degree 7, connects to 2 communities
-- [[Features_3]] - degree 6, connects to 1 community
+- [[Features_2]] - degree 6, connects to 1 community

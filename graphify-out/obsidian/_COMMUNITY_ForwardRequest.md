@@ -1,39 +1,22 @@
 ---
 type: community
 cohesion: 0.02
-members: 127
+members: 104
 ---
 
 # ForwardRequest
 
 **Cohesion:** 0.02 - loosely connected
-**Members:** 127 nodes
+**Members:** 104 nodes
 
 ## Members
-- [[dot-config()_2]] - code - gateway/tests/test_config_validation.py
-- [[dot-config()_3]] - code - gateway/tests/test_config_validation.py
-- [[dot-config()_4]] - code - gateway/tests/test_config_validation.py
-- [[dot-content_not_empty()]] - code - gateway/ingest_api/models.py
+- [[dot-__init__()_135]] - code - gateway/ingest_api/event_bus.py
 - [[dot-filter()_1]] - code - gateway/ingest_api/lifespan.py
-- [[dot-test_approval_queue_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_approval_queue_enabled()_1]] - code - gateway/tests/test_config_validation.py
+- [[dot-subscribe()]] - code - gateway/ingest_api/event_bus.py
 - [[dot-test_chat_console_script_uses_repo_relative_exec()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_compose_sets_nemotron_local_model_overrides()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_container_hardening()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_drift_detector_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_egress_filter_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_empty_content_rejected()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_encrypted_store_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_extensive_approval_actions()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_file_exists()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_dashboard_cookie_auth_serves_html()]] - code - gateway/tests/test_security_fixes.py
 - [[dot-test_gateway_yaml_ssh_hosts_cover_all_lab_hosts()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_has_auth_token()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_has_auth_token_placeholder()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_has_gateway_bind()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_has_gateway_port()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_has_log_level()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_has_memory_limit()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_has_seccomp_profile()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_hermes_dashboard_insecure_optin_is_loopback_bounded()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_hermes_dockerfile_installs_xxd()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_hermes_openai_api_key_wired_via_secret()]] - code - gateway/tests/test_config_validation.py
@@ -42,13 +25,9 @@ members: 127
 - [[dot-test_hermes_startup_telegram_calls_use_system_header()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_init_config_skips_anthropic_auth_seed_for_local_model()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_invalid_router_url_rejected()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_invalid_source_rejected()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_invalid_target_url_rejected()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_kill_switch_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_kill_switch_enabled()_1]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_lifespan_op_prewarm_guarded_against_pytest()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_long_retention()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_main_compose_sets_openclaw_bind_lan_default()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_openclaw_patch_defaults_to_qwen_local_model()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_openclaw_patch_script_emits_per_chat_group_agents()]] - code - gateway/tests/test_config_validation.py
@@ -61,15 +40,8 @@ members: 127
 - [[dot-test_openclaw_ssh_config_allows_all_lab_hosts()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_openclaw_version_pin_is_consistent_across_bot_images()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_patch_slack_sdk_pong_patch_is_idempotent()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_pii_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_pii_enabled()_1]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_pii_engine_presidio()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_prompt_guard_enabled()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_proxy_allowed_network_default_includes_current_subnets()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_rootless()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_router_url_must_be_localhost_or_openclaw()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_ssh_requires_approval()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_ssh_requires_approval()_1]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_start_control_center_script_uses_repo_relative_exec()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_startup_notifications_use_minimal_message_format()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_startup_notifications_wait_for_runtime_readiness()]] - code - gateway/tests/test_config_validation.py
@@ -79,16 +51,20 @@ members: 127
 - [[dot-test_startup_wrapper_defaults_openclaw_bind_to_loopback()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_switch_model_script_exists_with_supported_targets()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_switch_model_script_uses_current_target_syntax()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_tailscale_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_telemetry_disabled()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_trust_manager_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_valid_forward_request()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_valid_router_url_accepted()]] - code - gateway/tests/test_config_validation.py
-- [[dot-validate_source()]] - code - gateway/ingest_api/models.py
+- [[dot-unsubscribe()]] - code - gateway/ingest_api/event_bus.py
+- [[3+ auth failures within 5 minutes escalates event severity to critical]] - concept - gateway/tests/test_event_bus.py
 - [[Bot startup should not load Anthropic secrets when Ollama local model is configu]] - rationale - gateway/tests/test_config_validation.py
 - [[Chat console launcher should be robust to current working directory.]] - rationale - gateway/tests/test_config_validation.py
 - [[Control center launcher should be robust to current working directory.]] - rationale - gateway/tests/test_config_validation.py
-- [[ForwardRequest_3]] - code - gateway/ingest_api/models.py
+- [[EventBus]] - code - gateway/ingest_api/event_bus.py
+- [[Forward content → PII sanitized → ledger entry created → event bus fired.]] - rationale - gateway/tests/test_e2e.py
+- [[Forward without auth returns 401403.]] - rationale - gateway/tests/test_e2e.py
+- [[GET dashboard with valid cookie auth returns HTML.]] - rationale - gateway/tests/test_e2e.py
+- [[GET dashboard with valid cookie serves HTML]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET dashboard without auth returns 403.]] - rationale - gateway/tests/test_e2e.py
+- [[GET dashboardstats returns JSON stats.]] - rationale - gateway/tests/test_e2e.py
+- [[GET status returns service info.]] - rationale - gateway/tests/test_e2e.py
 - [[GatewayConfig validation behavior.]] - rationale - gateway/tests/test_config_validation.py
 - [[HERMES_DASHBOARD_INSECURE may only be enabled with a loopback-only host publish.]] - rationale - gateway/tests/test_config_validation.py
 - [[Hermes Dockerfile must install xxd — terminal_tool hex dumps fail without it.]] - rationale - gateway/tests/test_config_validation.py
@@ -98,6 +74,7 @@ members: 127
 - [[Hermes startup notifications must use X-AgentShroud-System 1 (bypasses content]] - rationale - gateway/tests/test_config_validation.py
 - [[Init config should seed auth profiles for cloud providers and Ollama in local mo]] - rationale - gateway/tests/test_config_validation.py
 - [[Lifespan filter should suppress repeated malformed HTTP warning noise.]] - rationale - gateway/tests/test_config_validation.py
+- [[LogRecord_2]] - code - gateway/ingest_api/lifespan.py
 - [[Main compose stack should expose a single model-mode switch with localcloud ref]] - rationale - gateway/tests/test_config_validation.py
 - [[Model switch helper should support local and major cloud providers.]] - rationale - gateway/tests/test_config_validation.py
 - [[Online notice must appear after readiness probes to avoid premature status signa]] - rationale - gateway/tests/test_config_validation.py
@@ -106,37 +83,37 @@ members: 127
 - [[OpenClaw's SSH client config must have Host blocks for all three lab hosts.]] - rationale - gateway/tests/test_config_validation.py
 - [[OpenClaw's bot Dockerfile must pin via the shared ARG OPENCLAW_VERSION         (]] - rationale - gateway/tests/test_config_validation.py
 - [[Operator guidance should use valid switch_model target syntax (no legacy cloud p]] - rationale - gateway/tests/test_config_validation.py
-- [[Parse a .env file into a dict (ignoring comments and blanks).]] - rationale - gateway/tests/test_config_validation.py
-- [[Path_51]] - code - gateway/tests/test_config_validation.py
 - [[Primary compose stack should bind OpenClaw gateway to lan by default for host Co]] - rationale - gateway/tests/test_config_validation.py
 - [[Proxy CIDR fallback should include current 10.254 ranges plus legacy compatibili]] - rationale - gateway/tests/test_config_validation.py
-- [[Request to forward content through the gateway      Received from iOS Shortcuts,]] - rationale - gateway/ingest_api/models.py
+- [[Simple in-process event bus with async support]] - rationale - gateway/ingest_api/event_bus.py
 - [[Startup notification Telegram calls should be marked as system-originated.]] - rationale - gateway/tests/test_config_validation.py
 - [[Startup script should verify Telegrammodel readiness before sending online noti]] - rationale - gateway/tests/test_config_validation.py
 - [[Startup wrapper should default OpenClaw bind to loopback unless explicitly overr]] - rationale - gateway/tests/test_config_validation.py
 - [[Startupshutdown notifications should use minimal, non-identifying text.]] - rationale - gateway/tests/test_config_validation.py
+- [[Submit SSH command → approval queued.]] - rationale - gateway/tests/test_e2e.py
+- [[Subscribe to all events]] - rationale - gateway/ingest_api/event_bus.py
 - [[Suppress noisy uvicorn warning spam for malformed probe traffic.]] - rationale - gateway/ingest_api/lifespan.py
-- [[TestAllExampleConfigsExist]] - code - gateway/tests/test_config_validation.py
 - [[TestConfigValidation]] - code - gateway/tests/test_config_validation.py
-- [[TestMinimalConfig]] - code - gateway/tests/test_config_validation.py
-- [[TestParanoidConfig]] - code - gateway/tests/test_config_validation.py
-- [[TestRecommendedConfig]] - code - gateway/tests/test_config_validation.py
 - [[The 1Password prewarm thread must never spawn real op subprocesses under pytest.]] - rationale - gateway/tests/test_config_validation.py
-- [[Verify all referenced example configs exist.]] - rationale - gateway/tests/test_config_validation.py
+- [[Unsubscribe from events]] - rationale - gateway/ingest_api/event_bus.py
 - [[_DropInvalidHTTPRequestFilter]] - code - gateway/ingest_api/lifespan.py
-- [[_parse_env_file()]] - code - gateway/tests/test_config_validation.py
 - [[agentshroud.yaml must define all three lab hosts in ssh.hosts as agentshroud-bot]] - rationale - gateway/tests/test_config_validation.py
 - [[apply-patches.js must create per-chat group-{chatId} agents for the approval rou]] - rationale - gateway/tests/test_config_validation.py
 - [[apply-patches.js must reference AGENTSHROUD_GROUP_CHAT_IDS (multi-group).]] - rationale - gateway/tests/test_config_validation.py
-- [[minimal.env should have reasonable defaults.]] - rationale - gateway/tests/test_config_validation.py
 - [[openclaw init patch script must quarantine malformed JSON instead of exiting.]] - rationale - gateway/tests/test_config_validation.py
 - [[openclaw init patch script must remove unsupported gateway.model key.]] - rationale - gateway/tests/test_config_validation.py
 - [[openclaw init patch script must seed Telegram group allowlist when policy is all]] - rationale - gateway/tests/test_config_validation.py
 - [[openclaw init patch script must seed control UI origins for non-loopback bind.]] - rationale - gateway/tests/test_config_validation.py
-- [[paranoid.env should enable ALL security features.]] - rationale - gateway/tests/test_config_validation.py
 - [[patch-slack-sdk.sh must stay quiet when the pong patch is already applied.]] - rationale - gateway/tests/test_config_validation.py
-- [[recommended.env should balance security and usability.]] - rationale - gateway/tests/test_config_validation.py
-- [[test_config_validation.py]] - code - gateway/tests/test_config_validation.py
+- [[test_dashboard_requires_auth()]] - code - gateway/tests/test_e2e.py
+- [[test_dashboard_returns_html()]] - code - gateway/tests/test_e2e.py
+- [[test_dashboard_serves_html()]] - code - gateway/tests/test_dashboard.py
+- [[test_dashboard_stats_returns_json()]] - code - gateway/tests/test_e2e.py
+- [[test_e2e.py]] - code - gateway/tests/test_e2e.py
+- [[test_forward_pii_sanitized_and_ledger_entry()]] - code - gateway/tests/test_e2e.py
+- [[test_forward_without_auth_rejected()]] - code - gateway/tests/test_e2e.py
+- [[test_ssh_submit_queues_approval()]] - code - gateway/tests/test_e2e.py
+- [[test_status_endpoint()]] - code - gateway/tests/test_e2e.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -146,30 +123,25 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 18 edges to [[_COMMUNITY_DataLedger]]
-- 9 edges to [[_COMMUNITY_test_security.py]]
-- 7 edges to [[_COMMUNITY__PipelineCaptor]]
-- 6 edges to [[_COMMUNITY_AgentTarget]]
-- 5 edges to [[_COMMUNITY_test_forward_stream.py]]
-- 5 edges to [[_COMMUNITY_AgentTarget_1]]
-- 4 edges to [[_COMMUNITY_Request]]
-- 2 edges to [[_COMMUNITY_lifespan.py]]
-- 2 edges to [[_COMMUNITY_forward.py]]
-- 1 edge to [[_COMMUNITY_PIIConfig]]
-- 1 edge to [[_COMMUNITY_ingest_apimodels.py]]
-- 1 edge to [[_COMMUNITY_RBACConfig]]
-- 1 edge to [[_COMMUNITY_make_event]]
-- 1 edge to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_AlertTelegramRelay]]
-- 1 edge to [[_COMMUNITY_UserSessionManager]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_Action]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
-- 1 edge to [[_COMMUNITY_test_cron_jobs_prompts.py]]
+- 8 edges to [[_COMMUNITY_AgentTarget]]
+- 8 edges to [[_COMMUNITY_make_event]]
+- 7 edges to [[_COMMUNITY_MiddlewareManager]]
+- 6 edges to [[_COMMUNITY_AlertTelegramRelay]]
+- 6 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 3 edges to [[_COMMUNITY_RBACConfig]]
+- 2 edges to [[_COMMUNITY_ForwardRequest_1]]
+- 2 edges to [[_COMMUNITY_PIIConfig]]
+- 2 edges to [[_COMMUNITY_Action]]
+- 2 edges to [[_COMMUNITY_DataLedger]]
+- 2 edges to [[_COMMUNITY_UserSessionManager]]
+- 2 edges to [[_COMMUNITY_test_dashboard.py]]
+- 1 edge to [[_COMMUNITY_TrustConfig]]
+- 1 edge to [[_COMMUNITY_test_e2e_proxy.py]]
+- 1 edge to [[_COMMUNITY_test_e2e.py]]
 
 ## Top bridge nodes
-- [[ForwardRequest_3]] - degree 57, connects to 10 communities
 - [[_DropInvalidHTTPRequestFilter]] - degree 15, connects to 9 communities
-- [[test_config_validation.py]] - degree 11, connects to 3 communities
-- [[TestConfigValidation]] - degree 45, connects to 1 community
-- [[TestParanoidConfig]] - degree 23, connects to 1 community
+- [[LogRecord_2]] - degree 10, connects to 8 communities
+- [[test_e2e.py]] - degree 13, connects to 5 communities
+- [[EventBus]] - degree 25, connects to 4 communities
+- [[TestConfigValidation]] - degree 45, connects to 3 communities

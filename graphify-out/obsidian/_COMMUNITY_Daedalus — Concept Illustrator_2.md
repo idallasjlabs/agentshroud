@@ -15,7 +15,7 @@ members: 11
 - [[Output Format_40]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
 - [[Persona_19]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
 - [[Quality Checklist_22]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
-- [[Role_95]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[Role_96]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
 - [[System Prompt_19]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
 - [[architecture.puml (PlantUML)_2]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
 - [[diagramsREADME_3]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md

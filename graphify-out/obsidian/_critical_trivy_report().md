@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-test_critical_report_status_is_critical()]] - `calls` [EXTRACTED]
-- [[Any_74]] - `references` [EXTRACTED]
+- [[Any_71]] - `references` [EXTRACTED]
 - [[_clean_trivy_report()]] - `calls` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 

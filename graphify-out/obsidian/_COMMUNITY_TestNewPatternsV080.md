@@ -1,13 +1,13 @@
 ---
 type: community
-cohesion: 0.13
-members: 28
+cohesion: 0.12
+members: 30
 ---
 
 # TestNewPatternsV080
 
-**Cohesion:** 0.13 - loosely connected
-**Members:** 28 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 30 nodes
 
 ## Members
 - [[dot-_hits()]] - code - gateway/tests/test_prompt_guard.py
@@ -29,6 +29,7 @@ members: 28
 - [[dot-test_multilingual_portuguese()]] - code - gateway/tests/test_prompt_guard.py
 - [[dot-test_nested_injection()]] - code - gateway/tests/test_prompt_guard.py
 - [[dot-test_operator_permission_claim()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-test_pattern_count()]] - code - gateway/tests/test_prompt_guard.py
 - [[dot-test_payload_splitting()]] - code - gateway/tests/test_prompt_guard.py
 - [[dot-test_persona_chaining()]] - code - gateway/tests/test_prompt_guard.py
 - [[dot-test_reward_hacking()]] - code - gateway/tests/test_prompt_guard.py
@@ -36,6 +37,7 @@ members: 28
 - [[dot-test_tool_call_injection()]] - code - gateway/tests/test_prompt_guard.py
 - [[dot-test_tool_result_injection_ref()]] - code - gateway/tests/test_prompt_guard.py
 - [[dot-test_whitespace_obfuscation()]] - code - gateway/tests/test_prompt_guard.py
+- [[Regression guard — fail if patterns drop below 43.]] - rationale - gateway/tests/test_prompt_guard.py
 - [[TestNewPatternsV080]] - code - gateway/tests/test_prompt_guard.py
 - [[Unit tests for the 20 patterns added in v0.8.0 (total 43).]] - rationale - gateway/tests/test_prompt_guard.py
 
@@ -48,10 +50,9 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_PIIConfig]]
-- 1 edge to [[_COMMUNITY_OutboundInfoFilter]]
-- 1 edge to [[_COMMUNITY_dot-test_pattern_count]]
 - 1 edge to [[_COMMUNITY_ContextSegment]]
+- 1 edge to [[_COMMUNITY_AuditChain]]
 
 ## Top bridge nodes
-- [[TestNewPatternsV080]] - degree 32, connects to 4 communities
+- [[TestNewPatternsV080]] - degree 32, connects to 3 communities
 - [[dot-pg()_1]] - degree 2, connects to 1 community

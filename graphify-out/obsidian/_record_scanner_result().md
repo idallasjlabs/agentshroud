@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Persist last scanner result and emit live event-bus telemetry.]] - `rationale_for` [EXTRACTED]
 - [[_scanner_summary()]] - `calls` [EXTRACTED]
-- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `contains` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[run_all_scanners()]] - `calls` [EXTRACTED]
 - [[run_clamav_scan()]] - `calls` [EXTRACTED]
 - [[run_openscap_scan()]] - `calls` [EXTRACTED]

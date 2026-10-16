@@ -1,56 +1,36 @@
 ---
 type: community
-cohesion: 0.06
-members: 50
+cohesion: 0.12
+members: 30
 ---
 
 # rbac_config.py
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 50 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 30 nodes
 
 ## Members
-- [[dot-__init__()_15]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-__post_init__()]] - code - gateway/security/rbac_config.py
+- [[dot-__post_init__()_3]] - code - gateway/security/rbac_config.py
 - [[dot-_build_record()]] - code - gateway/soc/contributors.py
 - [[dot-_ensure_rbac()]] - code - gateway/soc/contributors.py
 - [[dot-_ensure_teams()]] - code - gateway/soc/contributors.py
 - [[dot-_load_paused_ids()]] - code - gateway/soc/contributors.py
-- [[dot-add_member()]] - code - gateway/security/rbac_config.py
-- [[dot-create_group()]] - code - gateway/security/rbac_config.py
-- [[dot-delete_group()]] - code - gateway/security/rbac_config.py
 - [[dot-get_contributor()]] - code - gateway/soc/contributors.py
-- [[dot-get_group()]] - code - gateway/security/rbac_config.py
-- [[dot-init_auto_groups()]] - code - gateway/security/rbac_config.py
 - [[dot-list_contributors()]] - code - gateway/soc/contributors.py
-- [[dot-list_groups()]] - code - gateway/security/rbac_config.py
-- [[dot-remove_member()]] - code - gateway/security/rbac_config.py
-- [[A named group of users.]] - rationale - gateway/security/rbac_config.py
-- [[Add a user to a group (auto-groups are updated in-memory only).]] - rationale - gateway/security/rbac_config.py
 - [[Append a collaborator UID to the persistent store (idempotent, file-locked).]] - rationale - gateway/security/rbac_config.py
-- [[ContributorRecord]] - code - gateway/soc/contributors.py
-- [[Create or replace a custom group and persist it.]] - rationale - gateway/security/rbac_config.py
-- [[Delete a custom group. Returns True if deleted, False if not found.]] - rationale - gateway/security/rbac_config.py
-- [[Derive and reset auto-groups from current RBAC user list, then load custom group]] - rationale - gateway/security/rbac_config.py
+- [[ContributorRecord_1]] - code - gateway/soc/contributors.py
 - [[Ensure the persistence store's parent directory exists. Returns False on failure]] - rationale - gateway/security/rbac_config.py
-- [[Group]] - code - gateway/security/rbac_config.py
 - [[Initialize user roles based on configuration.]] - rationale - gateway/security/rbac_config.py
 - [[Pause a collaborator's bot access without removing their record (file-locked).]] - rationale - gateway/security/rbac_config.py
-- [[Read custom groups from disk.]] - rationale - gateway/security/rbac_config.py
 - [[Read dynamically approved collaborator IDs from disk.]] - rationale - gateway/security/rbac_config.py
 - [[Read persisted collaborator-removal exclusions from disk (Bug 1 fix).      Appli]] - rationale - gateway/security/rbac_config.py
 - [[Read persisted paused-collaborator IDs from disk.      Owner-initiated manual pa]] - rationale - gateway/security/rbac_config.py
 - [[Read the full collaborator persistence store (all keys) from disk.]] - rationale - gateway/security/rbac_config.py
 - [[Remove a collaborator from effective access (file-locked).      Strips the UID f]] - rationale - gateway/security/rbac_config.py
-- [[Remove a user from a group (auto-groups are updated in-memory only).]] - rationale - gateway/security/rbac_config.py
 - [[Resume a paused collaborator's bot access (file-locked).      Removes the UID fr]] - rationale - gateway/security/rbac_config.py
-- [[Return group by ID, or None.]] - rationale - gateway/security/rbac_config.py
-- [[Write only custom groups to disk (auto-groups are derived at runtime).]] - rationale - gateway/security/rbac_config.py
 - [[Write the full collaborator persistence store (all keys) to disk.]] - rationale - gateway/security/rbac_config.py
 - [[_ensure_collab_dir()]] - code - gateway/security/rbac_config.py
 - [[_load_collab_store()]] - code - gateway/security/rbac_config.py
-- [[_load_persisted_groups()]] - code - gateway/security/rbac_config.py
-- [[_persist_groups()]] - code - gateway/security/rbac_config.py
 - [[_write_collab_store()]] - code - gateway/security/rbac_config.py
 - [[load_paused_collaborator_ids()]] - code - gateway/security/rbac_config.py
 - [[load_persisted_collaborators()]] - code - gateway/security/rbac_config.py
@@ -70,21 +50,19 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 15 edges to [[_COMMUNITY_socrouter.py]]
-- 10 edges to [[_COMMUNITY_Action]]
-- 7 edges to [[_COMMUNITY_RBACConfig]]
-- 6 edges to [[_COMMUNITY_Enum]]
-- 5 edges to [[_COMMUNITY_telegram_proxy.py]]
-- 4 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
-- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
-- 1 edge to [[_COMMUNITY_RateLimiter]]
+- 8 edges to [[_COMMUNITY_Action]]
+- 5 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 5 edges to [[_COMMUNITY_RBACConfig]]
+- 4 edges to [[_COMMUNITY_telegram_proxy.py]]
+- 3 edges to [[_COMMUNITY_TelegramAPIProxy_2]]
 - 1 edge to [[_COMMUNITY_group_config.py]]
-- 1 edge to [[_COMMUNITY_test_soc_realtime_coverage.py]]
-- 1 edge to [[_COMMUNITY_Role]]
 - 1 edge to [[_COMMUNITY_MCPPolicyEngine]]
+- 1 edge to [[_COMMUNITY_RBACConfig_2]]
+- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
 
 ## Top bridge nodes
-- [[rbac_config.py]] - degree 24, connects to 7 communities
-- [[dot-__init__()_15]] - degree 5, connects to 4 communities
+- [[rbac_config.py]] - degree 24, connects to 5 communities
+- [[load_paused_collaborator_ids()]] - degree 8, connects to 4 communities
 - [[persist_approved_collaborator()]] - degree 10, connects to 3 communities
 - [[pause_collaborator()]] - degree 9, connects to 3 communities
 - [[unpause_collaborator()]] - degree 9, connects to 3 communities

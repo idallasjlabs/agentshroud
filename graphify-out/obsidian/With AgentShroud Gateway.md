@@ -12,6 +12,6 @@ tags:
 # With AgentShroud Gateway
 
 ## Connections
-- [[Integration_1]] - `contains` [EXTRACTED]
+- [[Integration_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

@@ -10,7 +10,7 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[dot-client()_7]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-client()_6]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-test_check_agentshroud_updates()]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-test_check_openclaw_updates()]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-test_export_config()]] - code - gateway/tests/test_runtime_engines.py
@@ -34,10 +34,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_test_runtime_engines.py]]
+- 2 edges to [[_COMMUNITY_test_runtime_engines.py]]
 - 1 edge to [[_COMMUNITY_PodmanEngine]]
 - 1 edge to [[_COMMUNITY_DockerEngine]]
 - 1 edge to [[_COMMUNITY_AppleContainerEngine]]
+- 1 edge to [[_COMMUNITY_test_runtime_engines.py_1]]
 
 ## Top bridge nodes
-- [[TestWebAPI]] - degree 20, connects to 4 communities
+- [[TestWebAPI]] - degree 20, connects to 5 communities

@@ -1,39 +1,33 @@
 ---
 type: community
 cohesion: 0.08
-members: 57
+members: 49
 ---
 
 # test_a2a_proxy.py
 
 **Cohesion:** 0.08 - loosely connected
-**Members:** 57 nodes
+**Members:** 49 nodes
 
 ## Members
-- [[dot-__init__()_199]] - code - gateway/tests/test_a2a_proxy.py
-- [[dot-__init__()_200]] - code - gateway/tests/test_a2a_proxy.py
-- [[dot-__init__()_201]] - code - gateway/tests/test_a2a_proxy.py
-- [[dot-__post_init__()_9]] - code - gateway/security/differential_pii_detector.py
-- [[dot-forward()_4]] - code - gateway/tests/test_a2a_proxy.py
-- [[dot-log_event()_2]] - code - gateway/tests/test_a2a_proxy.py
-- [[A SendMessage containing PII must have it redacted in what's forwarded     to He]] - rationale - gateway/tests/test_a2a_proxy.py
+- [[dot-__init__()_42]] - code - gateway/tests/test_a2a_proxy.py
+- [[dot-__init__()_43]] - code - gateway/tests/test_a2a_proxy.py
+- [[dot-forward()]] - code - gateway/tests/test_a2a_proxy.py
 - [[A filedata Part must not be silently dropped or mis-scanned as text —     it's]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[A2APolicyEngine_3]] - code - gateway/tests/test_a2a_proxy.py
-- [[A2AProxy_1]] - code - gateway/tests/test_a2a_proxy.py
+- [[A2APolicyEngine]] - code - gateway/tests/test_a2a_proxy.py
+- [[A2AProxy]] - code - gateway/tests/test_a2a_proxy.py
 - [[An unparseable request must be rejected through the same     process_inbound_req]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[Configuration for DifferentialPIIDetector.      Attributes         tool_result_]] - rationale - gateway/security/differential_pii_detector.py
-- [[DifferentialPIIConfig_1]] - code - gateway/security/differential_pii_detector.py
 - [[GET .well-knownagent-card.json must pass through with NO authpeer     require]] - rationale - gateway/tests/test_a2a_proxy.py
 - [[Pre-1.0 peers send lowercasepath-style method names — Hermes accepts     both f]] - rationale - gateway/tests/test_a2a_proxy.py
 - [[Records what it was asked to forward; returns a canned response.]] - rationale - gateway/tests/test_a2a_proxy.py
 - [[Token comparison must not leak timing information — same guarantee as     Hermes]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[_Event]] - code - gateway/tests/test_a2a_proxy.py
+- [[Upstream Hermes Gap 80534 — Peer Identity Resolved From SocketX-Forwarded-For Instead Of Bearer Token]] - concept - gateway/tests/test_a2a_proxy.py
 - [[_StubAuditStore]] - code - gateway/tests/test_a2a_proxy.py
-- [[_StubForwarder_2]] - code - gateway/tests/test_a2a_proxy.py
+- [[_StubForwarder]] - code - gateway/tests/test_a2a_proxy.py
 - [[_base_policy_engine()]] - code - gateway/tests/test_a2a_proxy.py
-- [[_jsonrpc()_2]] - code - gateway/tests/test_a2a_proxy.py
-- [[forwarder()_1]] - code - gateway/tests/test_a2a_proxy.py
-- [[proxy()_4]] - code - gateway/tests/test_a2a_proxy.py
+- [[_jsonrpc()]] - code - gateway/tests/test_a2a_proxy.py
+- [[forwarder()]] - code - gateway/tests/test_a2a_proxy.py
+- [[proxy()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_a2a_proxy.py]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_agent_card_discovery_is_never_policy_gated()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_agent_card_discovery_is_still_audited()]] - code - gateway/tests/test_a2a_proxy.py
@@ -51,14 +45,12 @@ members: 57
 - [[test_parse_jsonrpc_tolerates_non_dict_params()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_parse_jsonrpc_unknown_method_raises_value_error()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_process_inbound_request_allowed_peer_low_risk_forwards()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_process_inbound_request_binary_part_is_forwarded_unscanned_and_flagged()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_process_inbound_request_denial_is_also_logged_to_audit_store()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_process_inbound_request_denied_peer_never_reaches_hermes()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_process_inbound_request_high_risk_method_without_approval_queue_denied()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_process_inbound_request_logs_to_audit_store_when_configured()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_process_inbound_request_malformed_body_is_blocked()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_process_inbound_request_missing_auth_is_blocked_and_never_forwarded()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_process_inbound_request_pii_in_message_is_redacted_before_forwarding()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_process_inbound_request_task_ownership_violation_blocked()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_process_inbound_request_unknown_token_is_blocked()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_resolve_peer_id_from_known_bearer_token()]] - code - gateway/tests/test_a2a_proxy.py
@@ -76,15 +68,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 23 edges to [[_COMMUNITY_DifferentialPIIDetector]]
-- 14 edges to [[_COMMUNITY_A2APolicyEngine]]
-- 9 edges to [[_COMMUNITY_A2AProxyResult]]
-- 6 edges to [[_COMMUNITY_A2AMethod]]
-- 6 edges to [[_COMMUNITY_A2APolicyConfig]]
+- 20 edges to [[_COMMUNITY_DifferentialPIIDetector]]
+- 17 edges to [[_COMMUNITY_A2APolicyEngine]]
+- 10 edges to [[_COMMUNITY_A2AProxyResult]]
+- 5 edges to [[_COMMUNITY_A2AMethod]]
 
 ## Top bridge nodes
-- [[test_a2a_proxy.py]] - degree 50, connects to 5 communities
-- [[A2AProxy_1]] - degree 27, connects to 5 communities
-- [[_StubForwarder_2]] - degree 26, connects to 5 communities
-- [[_StubAuditStore]] - degree 12, connects to 5 communities
-- [[A2APolicyEngine_3]] - degree 10, connects to 5 communities
+- [[test_a2a_proxy.py]] - degree 50, connects to 4 communities
+- [[A2AProxy]] - degree 27, connects to 4 communities
+- [[_StubForwarder]] - degree 26, connects to 4 communities
+- [[_StubAuditStore]] - degree 12, connects to 4 communities
+- [[A2APolicyEngine]] - degree 10, connects to 4 communities

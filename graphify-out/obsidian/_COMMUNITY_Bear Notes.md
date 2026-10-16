@@ -13,7 +13,7 @@ members: 11
 - [[Apple Notes CLI]] - document - skills/openclaw/apple-notes/SKILL.md
 - [[Bear Notes]] - document - skills/openclaw/bear-notes/SKILL.md
 - [[Common Commands_3]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[Configuration_21]] - document - skills/openclaw/bear-notes/SKILL.md
+- [[Configuration_20]] - document - skills/openclaw/bear-notes/SKILL.md
 - [[Getting a Bear Token]] - document - skills/openclaw/bear-notes/SKILL.md
 - [[Notes_11]] - document - skills/openclaw/bear-notes/SKILL.md
 - [[Options]] - document - skills/openclaw/bear-notes/SKILL.md

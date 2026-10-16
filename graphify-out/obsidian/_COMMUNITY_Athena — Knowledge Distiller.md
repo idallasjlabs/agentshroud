@@ -16,7 +16,7 @@ members: 14
 - [[Athena README]] - document - .agents/skills/i-athena/README.md
 - [[Athena — Knowledge Distiller_6]] - document - .agents/skills/i-athena/SKILL.md
 - [[Input Requirements_13]] - document - .agents/skills/i-athena/SKILL.md
-- [[Output Format_27]] - document - .agents/skills/i-athena/SKILL.md
+- [[Output Format_26]] - document - .agents/skills/i-athena/SKILL.md
 - [[Persona_9]] - document - .agents/skills/i-athena/SKILL.md
 - [[Quality Checklist_10]] - document - .agents/skills/i-athena/SKILL.md
 - [[Role_72]] - document - .agents/skills/i-athena/SKILL.md

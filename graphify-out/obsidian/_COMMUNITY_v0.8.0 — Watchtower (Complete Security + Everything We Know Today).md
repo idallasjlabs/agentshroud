@@ -42,8 +42,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_AgentShroud — Master Feature List (Everything Ever Mentioned)]]
-- 1 edge to [[_COMMUNITY_AgentShroud™ v0.8.0 Watchtower — Complete Feature List]]
 - 1 edge to [[_COMMUNITY_🛡️ AgentShroud Release Plan]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ v0.8.0 Watchtower — Complete Feature List]]
 
 ## Top bridge nodes
 - [[v0.8.0 — Watchtower (Complete Security + Everything We Know Today)]] - degree 14, connects to 1 community

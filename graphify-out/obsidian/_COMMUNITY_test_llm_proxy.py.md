@@ -1,0 +1,120 @@
+---
+type: community
+cohesion: 0.05
+members: 85
+---
+
+# test_llm_proxy.py
+
+**Cohesion:** 0.05 - loosely connected
+**Members:** 85 nodes
+
+## Members
+- [[dot-__init__()_6]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-__init__()_7]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-block_credentials()_1]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-can_use_tool()]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-filter_xml_blocks()_1]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-inject_headers()]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-sanitize()_1]] - code - gateway/tests/test_llm_proxy.py
+- [[A cloud 400 that is NOT a quota wall must surface as a 400, not a 200.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[A known secret value echoed in a streaming delta must be scrubbed.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Allowed tool blocks must pass through unchanged.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Anthropic-bound request with x-api-key injector injects Bearer + beta, strips…]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Backend-down stays an in-stream SSE error frame under a 200 head (unchanged…]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Connect failures to cloud providers keep the existing 502 behavior.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Connect timeout must exceed this host's measured DNS-resolution latency…]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Events from 'unknown' user_id must not be blocked (not authenticated).]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Existing callers (with_head=False) keep getting bytes only — no StreamHead.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Fake CredentialInjector that records inject_headers calls and applies Anthropic…]] - rationale - gateway/tests/test_llm_proxy.py
+- [[First item yielded by proxy_messages_streaming(with_head=True). Carries the…]] - rationale - gateway/proxy/llm_proxy.py
+- [[LM Studio down → 503 backend_unavailable with LM Studio hint.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Localnon-Anthropic destination injector must NOT be called.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Minimal ToolACLEnforcer stub that denies a named tool.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[No streaming call site may hardcode its own connect timeout literal. Guards…]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Ollama down → 503 backend_unavailable with ollama serve hint.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[OpenClaw already sends Authorization Bearer — injector must leave it untouched.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Regression 2026-08-07 a plain (non-Claude, non-Gemini, non-local) OpenAI-model…]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Regression 2026-09-16 openai-local is AgentShroud's own local-model…]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Repeated connect failures log one WARNING per window, not per request.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Return a monkeypatched urlopen that captures the Request headers.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[Same regression as…]] - rationale - gateway/tests/test_llm_proxy.py
+- [[StreamHead]] - code - gateway/proxy/llm_proxy.py
+- [[Streaming Anthropic request triggers inject_headers before httpx connects.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[_FakeSanitizer_1]] - code - gateway/tests/test_llm_proxy.py
+- [[_FakeToolACL]] - code - gateway/tests/test_llm_proxy.py
+- [[_TrackingInjector]] - code - gateway/tests/test_llm_proxy.py
+- [[_fake_forward()_19]] - code - gateway/tests/test_llm_proxy.py
+- [[_fake_forward()_20]] - code - gateway/tests/test_llm_proxy.py
+- [[_fake_forward()_21]] - code - gateway/tests/test_llm_proxy.py
+- [[_fake_forward()_22]] - code - gateway/tests/test_llm_proxy.py
+- [[_fake_forward()_23]] - code - gateway/tests/test_llm_proxy.py
+- [[_fake_forward()_24]] - code - gateway/tests/test_llm_proxy.py
+- [[_fake_forward()_25]] - code - gateway/tests/test_llm_proxy.py
+- [[_make_fake_urlopen()]] - code - gateway/tests/test_llm_proxy.py
+- [[_proxy_with_connect_refused()]] - code - gateway/tests/test_llm_proxy.py
+- [[_run_stream (StreamHead test harness)]] - code - gateway/tests/test_llm_proxy.py
+- [[asyncio_1]] - code
+- [[block_credentials()]] - code - gateway/tests/test_llm_proxy.py
+- [[content_block_start with terminal_tool must be replaced with a text error block.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[fake_open()]] - code - gateway/tests/test_llm_proxy.py
+- [[fake_urlopen()]] - code - gateway/tests/test_llm_proxy.py
+- [[mlx_lm down (connection refused) → 503 backend_unavailable with start hint.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[mock_forward()]] - code - gateway/tests/test_llm_proxy.py
+- [[mock_forward()_1]] - code - gateway/tests/test_llm_proxy.py
+- [[mock_forward()_2]] - code - gateway/tests/test_llm_proxy.py
+- [[test_all_streaming_clients_use_the_shared_connect_timeout_constant()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_backend_unavailable_warning_rate_limited()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_cloud_backend_connect_failure_still_returns_502()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_credential_injector_called_in_streaming_path()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_credential_injector_does_not_overwrite_existing_bearer()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_credential_injector_injects_bearer_for_anthropic_x_api_key()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_credential_injector_not_applied_for_non_anthropic_dest()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_filter_outbound_streaming_filters_anthropic_content_text()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_filter_outbound_streaming_filters_openai_delta_content()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_llm_connect_timeout_clears_observed_dns_latency()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_llm_proxy.py]] - code - gateway/tests/test_llm_proxy.py
+- [[test_lmstudio_connect_failure_returns_structured_503()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_mlxlm_connect_failure_returns_structured_503()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_ollama_connect_failure_returns_structured_503()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_proxy_messages_cloud_mode_keeps_claude_and_uses_anthropic()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_proxy_messages_plain_openai_model_substitutes_real_key()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_proxy_messages_rewrites_claude_opus_to_local_model()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_proxy_messages_streaming_strips_openai_local_prefix_and_routes_to_backend()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_proxy_messages_strips_ollama_prefix_for_openai_compat()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_proxy_messages_strips_openai_local_prefix_and_routes_to_backend()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_proxy_messages_timeout_returns_anthropic_compatible_fallback()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_proxy_messages_timeout_returns_openai_compatible_fallback()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_scan_request_data_scans_messages_without_name_error()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_streaming_cloud_non_quota_400_also_propagates]] - code - gateway/tests/test_llm_proxy.py
+- [[test_streaming_connect_failure_keeps_in_stream_error_frame]] - code - gateway/tests/test_llm_proxy.py
+- [[test_streaming_default_contract_yields_only_bytes]] - code - gateway/tests/test_llm_proxy.py
+- [[test_streaming_secret_value_redacted()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_streaming_tool_acl_allows_permitted_tool()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_streaming_tool_acl_blocks_terminal_tool()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_streaming_tool_acl_skips_unknown_user()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_streaming_with_head_reports_200_then_chunks]] - code - gateway/tests/test_llm_proxy.py
+- [[test_streaming_with_head_reports_upstream_400_and_body]] - code - gateway/tests/test_llm_proxy.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/test_llm_proxypy
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 27 edges to [[_COMMUNITY_LLMProxy]]
+- 6 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
+- 3 edges to [[_COMMUNITY_TestStreamingProxyStatusPropagation]]
+- 2 edges to [[_COMMUNITY__HeadFakeResponse]]
+- 2 edges to [[_COMMUNITY_gatewayteststest_llm_proxy_thinking_suppression.py (8 cases)]]
+- 1 edge to [[_COMMUNITY__HeadFakeClient]]
+- 1 edge to [[_COMMUNITY_test_main_endpoints.py]]
+
+## Top bridge nodes
+- [[StreamHead]] - degree 16, connects to 5 communities
+- [[test_llm_proxy.py]] - degree 43, connects to 4 communities
+- [[_run_stream (StreamHead test harness)]] - degree 10, connects to 3 communities
+- [[test_streaming_connect_failure_keeps_in_stream_error_frame]] - degree 7, connects to 2 communities
+- [[test_proxy_messages_plain_openai_model_substitutes_real_key()]] - degree 8, connects to 1 community

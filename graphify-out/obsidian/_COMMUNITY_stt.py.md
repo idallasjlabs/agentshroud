@@ -31,9 +31,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_server.py]]
 - 1 edge to [[_COMMUNITY_test_voice_stt_model_ab.py]]
 - 1 edge to [[_COMMUNITY_test_voice_gateway.py]]
+- 1 edge to [[_COMMUNITY_test_voice_latency_guard.py]]
 
 ## Top bridge nodes
 - [[stt.py]] - degree 9, connects to 3 communities

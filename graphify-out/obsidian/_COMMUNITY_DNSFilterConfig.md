@@ -10,15 +10,15 @@ members: 75
 **Members:** 75 nodes
 
 ## Members
-- [[dot-__init__()_160]] - code - gateway/security/dns_filter.py
+- [[dot-__init__()_175]] - code - gateway/security/dns_filter.py
 - [[dot-_cleanup_rate_window()]] - code - gateway/security/dns_filter.py
 - [[dot-_detect_tunneling()]] - code - gateway/security/dns_filter.py
 - [[dot-_domain_in_allowlist()]] - code - gateway/security/dns_filter.py
-- [[dot-_is_private_ip()_1]] - code - gateway/security/dns_filter.py
-- [[dot-check()_4]] - code - gateway/security/dns_filter.py
+- [[dot-_is_private_ip()_2]] - code - gateway/security/dns_filter.py
+- [[dot-check()_5]] - code - gateway/security/dns_filter.py
 - [[dot-check_rebinding()]] - code - gateway/security/dns_filter.py
 - [[dot-dns_filter()]] - code - gateway/tests/test_dns_filter.py
-- [[dot-get_audit_log()_7]] - code - gateway/security/dns_filter.py
+- [[dot-get_audit_log()_6]] - code - gateway/security/dns_filter.py
 - [[dot-get_flagged_queries()]] - code - gateway/security/dns_filter.py
 - [[dot-resolve_and_cache()]] - code - gateway/security/dns_filter.py
 - [[dot-shannon_entropy()]] - code - gateway/security/dns_filter.py
@@ -30,7 +30,7 @@ members: 75
 - [[dot-test_common_services_allowed()]] - code - gateway/tests/test_dns_filter.py
 - [[dot-test_default_allows_all_domains()]] - code - gateway/tests/test_dns_filter.py
 - [[dot-test_default_mode_is_enforce()_6]] - code - gateway/tests/test_dns_filter.py
-- [[dot-test_dns_filter_default_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_dns_filter_config()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_empty_string()]] - code - gateway/tests/test_dns_filter.py
 - [[dot-test_enforce_mode_blocks_tunneling()]] - code - gateway/tests/test_dns_filter.py
 - [[dot-test_flagged_queries_in_log()]] - code - gateway/tests/test_dns_filter.py
@@ -75,14 +75,14 @@ members: 75
 - [[TestDNSTunnelingDetection]] - code - gateway/tests/test_dns_filter.py
 - [[TestEntropyCalculator]] - code - gateway/tests/test_dns_filter.py
 - [[TestNormalDNSResolution]] - code - gateway/tests/test_dns_filter.py
-- [[TestRateLimiting_3]] - code - gateway/tests/test_dns_filter.py
+- [[TestRateLimiting_4]] - code - gateway/tests/test_dns_filter.py
 - [[TunnelingPattern]] - code - gateway/security/dns_filter.py
-- [[default_config()_4]] - code - gateway/tests/test_dns_filter.py
+- [[default_config()_3]] - code - gateway/tests/test_dns_filter.py
 - [[dns_filter()]] - code - gateway/tests/test_dns_filter.py
-- [[dns_filter.py]] - code - gateway/security/dns_filter.py
+- [[dns_filter.py_2]] - code - gateway/security/dns_filter.py
 - [[monitor_config()_2]] - code - gateway/tests/test_dns_filter.py
 - [[monitor_filter()]] - code - gateway/tests/test_dns_filter.py
-- [[strict_config()_3]] - code - gateway/tests/test_dns_filter.py
+- [[strict_config()_2]] - code - gateway/tests/test_dns_filter.py
 - [[strict_filter()]] - code - gateway/tests/test_dns_filter.py
 - [[test_dns_filter.py]] - code - gateway/tests/test_dns_filter.py
 
@@ -95,18 +95,16 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 28 edges to [[_COMMUNITY_MiddlewareManager]]
-- 24 edges to [[_COMMUNITY_AlertDispatcher]]
+- 26 edges to [[_COMMUNITY_AlertDispatcher]]
 - 1 edge to [[_COMMUNITY_WebContentScanner]]
-- 1 edge to [[_COMMUNITY_ProxyAction]]
-- 1 edge to [[_COMMUNITY_ResourceGuard]]
-- 1 edge to [[_COMMUNITY_Action]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
 - 1 edge to [[_COMMUNITY_test_dns_canvas_coverage.py]]
-- 1 edge to [[_COMMUNITY_AgentRegistry]]
-- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
+- 1 edge to [[_COMMUNITY_egress_filter.py]]
+- 1 edge to [[_COMMUNITY_ProxyAction]]
 
 ## Top bridge nodes
-- [[dns_filter.py]] - degree 9, connects to 4 communities
-- [[DNSFilterConfig]] - degree 46, connects to 3 communities
+- [[dns_filter.py_2]] - degree 9, connects to 3 communities
+- [[DNSFilterConfig]] - degree 46, connects to 2 communities
 - [[DNSFilter]] - degree 36, connects to 2 communities
 - [[test_dns_filter.py]] - degree 18, connects to 2 communities
 - [[TestDNSTunnelingDetection]] - degree 10, connects to 1 community

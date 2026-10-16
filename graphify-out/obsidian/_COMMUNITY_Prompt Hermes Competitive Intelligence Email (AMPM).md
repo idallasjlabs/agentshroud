@@ -45,11 +45,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide]]
+- 5 edges to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide]]
+- 3 edges to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide_1]]
 
 ## Top bridge nodes
+- [[Prompt Hermes Competitive Landscape Update (AMPM)]] - degree 6, connects to 2 communities
+- [[Prompt Newsletter — Personal AI Assistants]] - degree 3, connects to 2 communities
 - [[Prompt Hermes Competitive Intelligence Email (AMPM)]] - degree 6, connects to 1 community
-- [[Prompt Hermes Competitive Landscape Update (AMPM)]] - degree 6, connects to 1 community
 - [[Prompt jira-weekly-review]] - degree 5, connects to 1 community
-- [[Prompt Newsletter — Personal AI Assistants]] - degree 3, connects to 1 community
 - [[Mandatory Daily Delivery (never SILENT)]] - degree 2, connects to 1 community

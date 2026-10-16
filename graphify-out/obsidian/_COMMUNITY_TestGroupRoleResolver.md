@@ -38,9 +38,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_GroupRoleResolver]]
-- 2 edges to [[_COMMUNITY_RBACConfig]]
-- 2 edges to [[_COMMUNITY_Role]]
+- 6 edges to [[_COMMUNITY_RBACConfig]]
+- 1 edge to [[_COMMUNITY_GroupRoleResolver]]
 
 ## Top bridge nodes
-- [[TestGroupRoleResolver]] - degree 18, connects to 3 communities
+- [[TestGroupRoleResolver]] - degree 18, connects to 2 communities

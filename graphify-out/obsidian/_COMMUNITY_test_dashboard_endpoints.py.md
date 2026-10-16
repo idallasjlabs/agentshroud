@@ -1,15 +1,18 @@
 ---
 type: community
-cohesion: 0.12
-members: 17
+cohesion: 0.10
+members: 22
 ---
 
 # test_dashboard_endpoints.py
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 17 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 22 nodes
 
 ## Members
+- [[dot-__init__()_146]] - code - gateway/web/dashboard_endpoints.py
+- [[LogBuffer]] - code - gateway/web/dashboard_endpoints.py
+- [[Ring buffer for recent logaudit entries.]] - rationale - gateway/web/dashboard_endpoints.py
 - [[When pipeline exists, stats should reflect its data.]] - rationale - gateway/tests/test_dashboard_endpoints.py
 - [[auth_headers()]] - code - gateway/tests/test_dashboard_endpoints.py
 - [[tail parameter is clamped to 1-100.]] - rationale - gateway/tests/test_dashboard_endpoints.py
@@ -17,6 +20,8 @@ members: 17
 - [[test_alerts_summary_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py
 - [[test_alerts_summary_with_alerts()]] - code - gateway/tests/test_dashboard_endpoints.py
 - [[test_dashboard_endpoints.py]] - code - gateway/tests/test_dashboard_endpoints.py
+- [[test_log_buffer_ring()]] - code - gateway/tests/test_dashboard_endpoints.py
+- [[test_log_buffer_tail()]] - code - gateway/tests/test_dashboard_endpoints.py
 - [[test_logs_recent_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py
 - [[test_logs_recent_returns_entries()]] - code - gateway/tests/test_dashboard_endpoints.py
 - [[test_logs_recent_tail_clamped()]] - code - gateway/tests/test_dashboard_endpoints.py
@@ -36,9 +41,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_LogBuffer]]
-- 2 edges to [[_COMMUNITY_AlertStore]]
+- 5 edges to [[_COMMUNITY_dashboard_endpoints.py]]
 - 1 edge to [[_COMMUNITY_test_e2e.py]]
 
 ## Top bridge nodes
-- [[test_dashboard_endpoints.py]] - degree 20, connects to 3 communities
+- [[test_dashboard_endpoints.py]] - degree 20, connects to 2 communities
+- [[LogBuffer]] - degree 8, connects to 1 community

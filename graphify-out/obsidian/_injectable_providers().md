@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_hermes_cron_seed.py"
 type: "code"
-community: "_seed_cron"
+community: "test_hermes_cron_seed.py"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_seed_cron
+  - community/test_hermes_cron_seedpy
 ---
 
 # _injectable_providers()
 
 ## Connections
 - [[Provider names the gateway can actually inject a credential for.      Derived fr]] - `rationale_for` [EXTRACTED]
-- [[_seed_cron()]] - `references` [EXTRACTED]
+- [[_seed_cron]] - `references` [EXTRACTED]
 - [[test_hermes_cron_seed.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_seed_cron
+#graphify/code #graphify/EXTRACTED #community/test_hermes_cron_seedpy

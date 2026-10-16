@@ -1,23 +1,24 @@
 ---
-source_file: "gateway/tests/test_tool_acl.py"
+source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "Role"
-location: "L28"
+community: "PrivacyPolicyEnforcer"
+location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Role
+  - community/PrivacyPolicyEnforcer
 ---
 
 # _make_rbac()
 
 ## Connections
-- [[dot-test_group_allowlist_grants_extra_tool()]] - `calls` [EXTRACTED]
-- [[dot-test_project_allowed_tools_grant_access()]] - `calls` [EXTRACTED]
-- [[RBACConfig_1]] - `calls` [EXTRACTED]
-- [[RBACConfig]] - `references` [EXTRACTED]
-- [[TeamsConfig_2]] - `references` [EXTRACTED]
+- [[dot-test_collaborator_allowed_shared_service()]] - `calls` [EXTRACTED]
+- [[dot-test_group_member_allowed_group_only_service()]] - `calls` [EXTRACTED]
+- [[dot-test_non_group_member_blocked_from_group_only_service()]] - `calls` [EXTRACTED]
+- [[RBACConfig_4]] - `calls` [EXTRACTED]
+- [[RBACConfig_2]] - `references` [EXTRACTED]
+- [[TeamsConfig_2]] - `calls` [EXTRACTED]
 - [[rbac()_6]] - `calls` [EXTRACTED]
-- [[test_tool_acl.py]] - `contains` [EXTRACTED]
+- [[test_privacy_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Role
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

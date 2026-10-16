@@ -1,19 +1,19 @@
 ---
 type: community
-cohesion: 0.15
-members: 35
+cohesion: 0.14
+members: 37
 ---
 
 # AlertTelegramRelay
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 35 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 37 nodes
 
 ## Members
-- [[dot-__call__()_6]] - code - gateway/ingest_api/alert_telegram_relay.py
-- [[dot-__call__()_7]] - code - gateway/tests/test_alert_telegram_relay.py
-- [[dot-__init__()_79]] - code - gateway/ingest_api/alert_telegram_relay.py
-- [[dot-__init__()_80]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[dot-__call__()_4]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[dot-__call__()_5]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[dot-__init__()_81]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[dot-__init__()_82]] - code - gateway/tests/test_alert_telegram_relay.py
 - [[dot-_clean_tool()]] - code - gateway/ingest_api/alert_telegram_relay.py
 - [[dot-_coerce()]] - code - gateway/ingest_api/alert_telegram_relay.py
 - [[dot-_dedup_key()]] - code - gateway/ingest_api/alert_telegram_relay.py
@@ -22,13 +22,15 @@ members: 35
 - [[dot-flush()]] - code - gateway/ingest_api/alert_telegram_relay.py
 - [[Accept GatewayEvent objects or plain dicts from legacy emitters.]] - rationale - gateway/ingest_api/alert_telegram_relay.py
 - [[AlertTelegramRelay]] - code - gateway/ingest_api/alert_telegram_relay.py
-- [[Any_32]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[Any_26]] - code - gateway/ingest_api/alert_telegram_relay.py
 - [[Await in-flight sends (testshutdown helper).]] - rationale - gateway/ingest_api/alert_telegram_relay.py
+- [[Regression (SCRUM-61) apialerts used to call event_bus.publish(),     a metho]] - rationale - gateway/tests/test_alert_telegram_relay.py
 - [[Subscribe to the gateway EventBus; relay security alerts to Telegram.]] - rationale - gateway/ingest_api/alert_telegram_relay.py
 - [[_SendSpy]] - code - gateway/tests/test_alert_telegram_relay.py
 - [[_alert_event()]] - code - gateway/tests/test_alert_telegram_relay.py
 - [[alert_telegram_relay.py]] - code - gateway/ingest_api/alert_telegram_relay.py
 - [[test_alert_telegram_relay.py]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_api_alerts_endpoint_emits_bus_event()]] - code - gateway/tests/test_alert_telegram_relay.py
 - [[test_async_sanitizer_supported()]] - code - gateway/tests/test_alert_telegram_relay.py
 - [[test_critical_alert_relayed_to_owner()]] - code - gateway/tests/test_alert_telegram_relay.py
 - [[test_dedup_key_includes_source()]] - code - gateway/tests/test_alert_telegram_relay.py
@@ -54,15 +56,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_make_event]]
-- 3 edges to [[_COMMUNITY_lifespan.py]]
+- 6 edges to [[_COMMUNITY_ForwardRequest]]
+- 3 edges to [[_COMMUNITY_MiddlewareManager]]
+- 3 edges to [[_COMMUNITY_make_event]]
 - 1 edge to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
-- 1 edge to [[_COMMUNITY_DataLedger]]
-- 1 edge to [[_COMMUNITY_ForwardRequest]]
+- 1 edge to [[_COMMUNITY__req]]
 
 ## Top bridge nodes
-- [[AlertTelegramRelay]] - degree 33, connects to 3 communities
-- [[test_alert_telegram_relay.py]] - degree 23, connects to 2 communities
+- [[test_alert_telegram_relay.py]] - degree 23, connects to 3 communities
+- [[AlertTelegramRelay]] - degree 33, connects to 2 communities
+- [[test_api_alerts_endpoint_emits_bus_event()]] - degree 4, connects to 2 communities
 - [[_SendSpy]] - degree 21, connects to 1 community
 - [[_alert_event()]] - degree 16, connects to 1 community
-- [[test_subscribed_relay_receives_bus_emissions()]] - degree 5, connects to 1 community

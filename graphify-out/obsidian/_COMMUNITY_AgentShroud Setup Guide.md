@@ -23,8 +23,8 @@ members: 26
 - [[Important Notes_1]] - document - docs/setup/setup-guide.md
 - [[Optional Requirements]] - document - docs/setup/setup-guide.md
 - [[Performance Issues_1]] - document - docs/setup/setup-guide.md
-- [[Port Already in Use_1]] - document - docs/setup/setup-guide.md
-- [[Prerequisites_5]] - document - docs/setup/setup-guide.md
+- [[Port Already in Use_2]] - document - docs/setup/setup-guide.md
+- [[Prerequisites_6]] - document - docs/setup/setup-guide.md
 - [[Production Checklist]] - document - docs/setup/setup-guide.md
 - [[Quick Start (5 minutes)]] - document - docs/setup/setup-guide.md
 - [[Security Testing]] - document - docs/setup/setup-guide.md

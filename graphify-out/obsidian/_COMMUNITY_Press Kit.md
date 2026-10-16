@@ -12,7 +12,7 @@ members: 5
 ## Members
 - [[About AgentShroud™]] - document - branding/guidelines/brand-guidelines.md
 - [[Approved Logo Assets for Media]] - document - branding/guidelines/brand-guidelines.md
-- [[Key Facts_1]] - document - branding/guidelines/brand-guidelines.md
+- [[Key Facts]] - document - branding/guidelines/brand-guidelines.md
 - [[Media Contact]] - document - branding/guidelines/brand-guidelines.md
 - [[Press Kit]] - document - branding/guidelines/brand-guidelines.md
 

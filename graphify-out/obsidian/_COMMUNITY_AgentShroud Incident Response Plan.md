@@ -32,7 +32,7 @@ members: 33
 - [[Prometheus Configuration]] - document - docs/operations/deployment-procedure.md
 - [[Regular Maintenance Tasks]] - document - docs/operations/deployment-procedure.md
 - [[Restore Procedures]] - document - docs/operations/runbook.md
-- [[Security Hardening]] - document - docs/operations/deployment-procedure.md
+- [[Security Hardening_1]] - document - docs/operations/deployment-procedure.md
 - [[System Architecture Overview]] - document - docs/operations/runbook.md
 - [[System Health Checks]] - document - docs/operations/runbook.md
 - [[Trust Level Anomaly]] - document - docs/operations/incident-response.md

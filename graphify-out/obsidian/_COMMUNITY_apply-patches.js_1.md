@@ -16,9 +16,9 @@ members: 12
 - [[Patch 2 Telegram Binding]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
 - [[Patch 3 Telegram Bot Token (if $TELEGRAM_BOT_TOKEN is set)]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
 - [[Patches Applied]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
-- [[Purpose_184]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Purpose_183]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
 - [[Related Notes_61]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
-- [[Usage_128]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Usage_129]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
 - [[Why Required]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
 - [[apply-patches.js_2]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
 - [[apply-patches.js_1]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md

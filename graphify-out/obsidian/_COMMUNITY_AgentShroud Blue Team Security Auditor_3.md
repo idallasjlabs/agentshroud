@@ -17,7 +17,7 @@ members: 14
 - [[Infrastructure_8]] - document - skills/custom/agentshroud-blueteam/SKILL.md
 - [[Loss Categories_4]] - document - skills/custom/agentshroud-blueteam/SKILL.md
 - [[Methodology_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Output Format_26]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Output Format_27]] - document - skills/custom/agentshroud-blueteam/SKILL.md
 - [[Phase 1 Code-Level Module Audit_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
 - [[Phase 2 Heat Map Reconstruction_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
 - [[Phase 3 Integration Gap Analysis_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md

@@ -10,10 +10,10 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[dot-__init__()_192]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-__init__()_193]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-close()_19]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-close()_20]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-__init__()_184]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-__init__()_185]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-close()_16]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-close()_17]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-drain()_3]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-readline()_1]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-write()_3]] - code - gateway/tests/test_http_proxy_coverage.py
@@ -33,7 +33,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 10 edges to [[_COMMUNITY_HTTPConnectProxy]]
-- 3 edges to [[_COMMUNITY_WebProxy]]
+- 3 edges to [[_COMMUNITY_ProxyAction]]
 - 3 edges to [[_COMMUNITY_WebProxyConfig]]
 
 ## Top bridge nodes

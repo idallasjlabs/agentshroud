@@ -11,7 +11,7 @@ members: 8
 
 ## Members
 - [[dot-agentsskillsi-secREADME]] - document - .agents/skills/i-sec/README.md
-- [[Purpose_1]] - document - .agents/skills/i-sec/README.md
+- [[Purpose]] - document - .agents/skills/i-sec/README.md
 - [[Related Skills]] - document - .agents/skills/i-sec/README.md
 - [[Security Review (SEC)]] - document - .agents/skills/i-sec/README.md
 - [[Usage]] - document - .agents/skills/i-sec/README.md

@@ -1,21 +1,20 @@
 ---
 type: community
 cohesion: 0.12
-members: 17
+members: 16
 ---
 
 # Contributing to AgentShroud™
 
 **Cohesion:** 0.12 - loosely connected
-**Members:** 17 nodes
+**Members:** 16 nodes
 
 ## Members
-- [[CONTRIBUTING_1]] - document - CONTRIBUTING.md
 - [[Code Style]] - document - CONTRIBUTING.md
 - [[Code of Conduct]] - document - CONTRIBUTING.md
 - [[Contributing to AgentShroud™]] - document - CONTRIBUTING.md
 - [[Development Setup]] - document - CONTRIBUTING.md
-- [[Implementation Status_1]] - document - scripts/README.md
+- [[Implementation Status_2]] - document - scripts/README.md
 - [[Maintenance Scripts]] - document - scripts/README.md
 - [[Pull Request Process]] - document - CONTRIBUTING.md
 - [[Questions_1]] - document - CONTRIBUTING.md
@@ -39,4 +38,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_test_docs_accuracy.py]]
 
 ## Top bridge nodes
-- [[CONTRIBUTING_1]] - degree 2, connects to 1 community
+- [[Contributing to AgentShroud™]] - degree 9, connects to 1 community

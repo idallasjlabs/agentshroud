@@ -1,13 +1,13 @@
 ---
 type: community
-cohesion: 0.28
-members: 16
+cohesion: 0.30
+members: 15
 ---
 
 # format_cve_report
 
-**Cohesion:** 0.28 - loosely connected
-**Members:** 16 nodes
+**Cohesion:** 0.30 - loosely connected
+**Members:** 15 nodes
 
 ## Members
 - [[dot-test_affected_packages_count_shown()]] - code - gateway/tests/test_daily_cve_report.py
@@ -15,7 +15,6 @@ members: 16
 - [[dot-test_contains_header()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_contains_package_names()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_contains_severity_counts()]] - code - gateway/tests/test_daily_cve_report.py
-- [[dot-test_error_report_shows_error_message()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_fixed_version_shown()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_status_clean_when_no_critical_high()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_status_critical_when_critical_present()]] - code - gateway/tests/test_daily_cve_report.py
@@ -35,10 +34,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_test_daily_cve_report.py]]
+- 12 edges to [[_COMMUNITY_test_daily_cve_report.py]]
 
 ## Top bridge nodes
 - [[format_cve_report()]] - degree 17, connects to 1 community
 - [[_make_report()]] - degree 15, connects to 1 community
 - [[TestFormatCveReport]] - degree 12, connects to 1 community
-- [[dot-test_error_report_shows_error_message()]] - degree 3, connects to 1 community

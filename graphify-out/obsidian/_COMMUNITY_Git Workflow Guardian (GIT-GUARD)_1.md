@@ -11,7 +11,7 @@ members: 5
 
 ## Members
 - [[Git Workflow Guardian (GIT-GUARD)_1]] - document - docker/config/openclaw/skills/i-gg/README.md
-- [[Purpose_40]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[Purpose_45]] - document - docker/config/openclaw/skills/i-gg/README.md
 - [[Related Skills_33]] - document - docker/config/openclaw/skills/i-gg/README.md
 - [[Usage_36]] - document - docker/config/openclaw/skills/i-gg/README.md
 - [[openclawskillsi-ggREADME]] - document - docker/config/openclaw/skills/i-gg/README.md

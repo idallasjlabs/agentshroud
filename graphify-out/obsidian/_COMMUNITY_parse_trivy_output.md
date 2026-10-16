@@ -29,11 +29,11 @@ members: 32
 - [[dot-test_summary_error()]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_summary_top_cves_ids()]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_summary_warning_high_only()]] - code - gateway/tests/test_security_toolchain.py
-- [[Any_47]] - code - gateway/security/trivy_report.py
+- [[Any_37]] - code - gateway/security/trivy_report.py
 - [[Custom report_prefix is used verbatim.]] - rationale - gateway/tests/test_security_toolchain.py
 - [[Default report_prefix produces a 'trivy-' filename.]] - rationale - gateway/tests/test_security_toolchain.py
 - [[Parse raw Trivy JSON output into a structured summary.      Args         raw R]] - rationale - gateway/security/trivy_report.py
-- [[Path_35]] - code - gateway/security/trivy_report.py
+- [[Path_24]] - code - gateway/security/trivy_report.py
 - [[Save a Trivy report to the log directory.      Args         report Parsed repo]] - rationale - gateway/security/trivy_report.py
 - [[Saved file is valid JSON containing the report keys.]] - rationale - gateway/tests/test_security_toolchain.py
 - [[TestTrivyParser]] - code - gateway/tests/test_security_toolchain.py
@@ -51,8 +51,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_test_security_toolchain.py]]
 - 5 edges to [[_COMMUNITY_test_daily_cve_report.py]]
+- 5 edges to [[_COMMUNITY_test_security_toolchain.py]]
 - 3 edges to [[_COMMUNITY_AlertDispatcher]]
 - 2 edges to [[_COMMUNITY_run_trivy_scan]]
 - 1 edge to [[_COMMUNITY__build_image_targets]]

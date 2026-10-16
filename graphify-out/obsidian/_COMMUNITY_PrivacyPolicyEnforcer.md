@@ -1,23 +1,23 @@
 ---
 type: community
 cohesion: 0.05
-members: 63
+members: 62
 ---
 
 # PrivacyPolicyEnforcer
 
 **Cohesion:** 0.05 - loosely connected
-**Members:** 63 nodes
+**Members:** 62 nodes
 
 ## Members
-- [[dot-__init__()_61]] - code - gateway/security/privacy_policy.py
+- [[dot-__init__()_204]] - code - gateway/security/privacy_policy.py
 - [[dot-_get_role_value()]] - code - gateway/security/privacy_policy.py
 - [[dot-_user_in_allowed_groups()]] - code - gateway/security/privacy_policy.py
 - [[dot-contains_private_data()]] - code - gateway/security/privacy_policy.py
 - [[dot-default()]] - code - gateway/security/privacy_policy.py
-- [[dot-filter_response()_1]] - code - gateway/security/privacy_policy.py
-- [[dot-from_dict()_2]] - code - gateway/security/privacy_policy.py
-- [[dot-from_dict()_3]] - code - gateway/security/privacy_policy.py
+- [[dot-filter_response()_2]] - code - gateway/security/privacy_policy.py
+- [[dot-from_dict()_10]] - code - gateway/security/privacy_policy.py
+- [[dot-from_dict()_11]] - code - gateway/security/privacy_policy.py
 - [[dot-is_service_allowed()]] - code - gateway/security/privacy_policy.py
 - [[dot-should_alert()]] - code - gateway/security/privacy_policy.py
 - [[dot-should_audit()]] - code - gateway/security/privacy_policy.py
@@ -54,7 +54,6 @@ members: 63
 - [[Privacy policy for a single service.]] - rationale - gateway/security/privacy_policy.py
 - [[PrivacyPolicy]] - code - gateway/security/privacy_policy.py
 - [[PrivacyPolicyEnforcer]] - code - gateway/security/privacy_policy.py
-- [[RBACConfig_2]] - code - gateway/tests/test_privacy_policy.py
 - [[Return True if an access attempt to this service should be logged.]] - rationale - gateway/security/privacy_policy.py
 - [[Return True if text appears to contain admin-private data.]] - rationale - gateway/security/privacy_policy.py
 - [[Return True if the owner should be alerted about this access attempt.]] - rationale - gateway/security/privacy_policy.py
@@ -67,11 +66,11 @@ members: 63
 - [[TestPrivacyPolicyParsing]] - code - gateway/tests/test_privacy_policy.py
 - [[TestResponseFiltering]] - code - gateway/tests/test_privacy_policy.py
 - [[TestServiceAccessControl]] - code - gateway/tests/test_privacy_policy.py
-- [[_make_rbac()]] - code - gateway/tests/test_privacy_policy.py
+- [[_make_rbac()_1]] - code - gateway/tests/test_privacy_policy.py
 - [[default_policy()]] - code - gateway/tests/test_privacy_policy.py
-- [[enforcer()]] - code - gateway/tests/test_privacy_policy.py
+- [[enforcer()_3]] - code - gateway/tests/test_privacy_policy.py
 - [[privacy_policy.py]] - code - gateway/security/privacy_policy.py
-- [[rbac()_4]] - code - gateway/tests/test_privacy_policy.py
+- [[rbac()_6]] - code - gateway/tests/test_privacy_policy.py
 - [[test_privacy_policy.py]] - code - gateway/tests/test_privacy_policy.py
 
 ## Live Query (requires Dataview plugin)
@@ -82,15 +81,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 20 edges to [[_COMMUNITY_RBACConfig]]
-- 6 edges to [[_COMMUNITY_Role]]
-- 3 edges to [[_COMMUNITY_Enum]]
-- 3 edges to [[_COMMUNITY_lifespan.py]]
-- 2 edges to [[_COMMUNITY_Path]]
+- 27 edges to [[_COMMUNITY_RBACConfig]]
+- 3 edges to [[_COMMUNITY_MiddlewareManager]]
+- 2 edges to [[_COMMUNITY_Action]]
+- 2 edges to [[_COMMUNITY_Path_3]]
+- 1 edge to [[_COMMUNITY_test_soc_realtime_coverage.py]]
 
 ## Top bridge nodes
+- [[ServicePrivacy]] - degree 12, connects to 3 communities
 - [[PrivacyPolicyEnforcer]] - degree 27, connects to 2 communities
-- [[TestResponseFiltering]] - degree 15, connects to 2 communities
-- [[test_privacy_policy.py]] - degree 14, connects to 2 communities
-- [[TestServiceAccessControl]] - degree 14, connects to 2 communities
 - [[PrivacyPolicy]] - degree 13, connects to 2 communities
+- [[privacy_policy.py]] - degree 6, connects to 2 communities
+- [[TestResponseFiltering]] - degree 15, connects to 1 community

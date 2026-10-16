@@ -12,12 +12,12 @@ tags:
 # _PassthroughPipeline
 
 ## Connections
-- [[dot-__init__()_35]] - `method` [EXTRACTED]
+- [[dot-__init__()_128]] - `method` [EXTRACTED]
 - [[dot-process_inbound()_4]] - `method` [EXTRACTED]
 - [[dot-process_outbound()_5]] - `method` [EXTRACTED]
-- [[AgentTarget]] - `uses` [INFERRED]
+- [[AgentTarget_1]] - `uses` [INFERRED]
 - [[ForwardError]] - `uses` [INFERRED]
-- [[ForwardRequest_3]] - `uses` [INFERRED]
+- [[ForwardRequest_1]] - `uses` [INFERRED]
 - [[Mock pipeline whose process_outbound returns the window text unchanged     — ver]] - `rationale_for` [EXTRACTED]
 - [[_make_stream_app_state()]] - `calls` [EXTRACTED]
 - [[test_filtered_stream_releases_sentences_in_order()]] - `calls` [EXTRACTED]

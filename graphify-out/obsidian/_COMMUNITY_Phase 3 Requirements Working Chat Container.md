@@ -26,7 +26,7 @@ members: 24
 - [[Personality Traits to Embed]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
 - [[Phase 3 Requirements Working Chat Container]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
 - [[Professional Context (for relevant responses)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[References_2]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[References_3]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
 - [[Step 1 Container Configuration (Day 1)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
 - [[Step 2 Persona Integration (Day 1)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
 - [[Step 3 Security Hardening (Day 2)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md

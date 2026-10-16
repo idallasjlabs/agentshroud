@@ -12,7 +12,7 @@ tags:
 # _make_stream_app_state()
 
 ## Connections
-- [[AgentTarget]] - `calls` [EXTRACTED]
+- [[AgentTarget_1]] - `calls` [EXTRACTED]
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[Build a mock app_state whose router streams `sentences_out` as raw     text delt]] - `rationale_for` [EXTRACTED]
 - [[_PassthroughPipeline]] - `calls` [EXTRACTED]

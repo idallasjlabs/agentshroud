@@ -10,10 +10,10 @@ members: 27
 **Members:** 27 nodes
 
 ## Members
-- [[Architecture_5]] - document - docs/setup-slack.md
+- [[Architecture_3]] - document - docs/setup-slack.md
 - [[Collaborators]] - document - docs/setup-slack.md
 - [[Collaborators_1]] - document - docs/setup-telegram.md
-- [[Prerequisites_4]] - document - docs/setup-telegram.md
+- [[Prerequisites_5]] - document - docs/setup-telegram.md
 - [[Sending Messages to the Bot]] - document - docs/setup-slack.md
 - [[Slack Channel Setup]] - document - docs/setup-slack.md
 - [[Step 10 Verify]] - document - docs/setup-slack.md
@@ -46,8 +46,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_34 Security Modules Pipeline (P0-P3)]]
 - 1 edge to [[_COMMUNITY_First Time Setup]]
+- 1 edge to [[_COMMUNITY_34 Security Modules Pipeline (P0-P3)]]
 
 ## Top bridge nodes
 - [[Collaborators]] - degree 3, connects to 1 community

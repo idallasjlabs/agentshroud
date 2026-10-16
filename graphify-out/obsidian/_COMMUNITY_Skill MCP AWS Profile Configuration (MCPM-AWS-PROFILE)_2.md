@@ -12,7 +12,7 @@ members: 27
 ## Members
 - [[AWS Profile Basics_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[AWS SSO Configuration_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Best Practices_3]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Best Practices_5]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Configuration Files_3]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Configure New Profile_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Default Profile vs Named Profiles_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
@@ -26,11 +26,11 @@ members: 27
 - [[Option 1 Interactive Configuration_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Option 2 Manual Configuration_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Organization_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Quick Reference_7]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Related Skills_58]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Role_23]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Quick Reference_6]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Related Skills_62]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Role_31]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Scenario Development → Production_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Security_5]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Security_6]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Switch AWS Profile for MCP_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 - [[Use SSO Profile with MCP_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
@@ -46,7 +46,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Troubleshooting_5]]
+- 1 edge to [[_COMMUNITY_Troubleshooting_2]]
 - 1 edge to [[_COMMUNITY_MCP AWS Profile Configuration README]]
 - 1 edge to [[_COMMUNITY_Quick Reference]]
 

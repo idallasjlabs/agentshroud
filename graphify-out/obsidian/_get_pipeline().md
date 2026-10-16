@@ -12,7 +12,7 @@ tags:
 # _get_pipeline()
 
 ## Connections
-- [[Any_76]] - `references` [EXTRACTED]
+- [[Any_72]] - `references` [EXTRACTED]
 - [[synthesize()]] - `calls` [EXTRACTED]
 - [[tts.py]] - `contains` [EXTRACTED]
 

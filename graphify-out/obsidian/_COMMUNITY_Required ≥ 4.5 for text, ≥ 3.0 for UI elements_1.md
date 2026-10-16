@@ -16,7 +16,7 @@ members: 19
 - [[Color Token Definition_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
 - [[Core Discipline Audit → Define → Apply → Enforce_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
 - [[Deck  Slide Master Rules_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
-- [[Dependencies_16]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[Dependencies_17]] - document - docker/config/hermes/skills/i-bs/SKILL.md
 - [[Diagram Theme Block (Mermaid)_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
 - [[File & Directory Conventions_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md
 - [[HTML  CSS Brand Variables_1]] - document - docker/config/hermes/skills/i-bs/SKILL.md

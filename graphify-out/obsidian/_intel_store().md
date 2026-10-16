@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[dot-_path()]] - `calls` [INFERRED]
-- [[IntelReportStore]] - `calls` [EXTRACTED]
+- [[IntelReportStore_1]] - `calls` [EXTRACTED]
 - [[Return an IntelReportStore pointed at the configured data directory.]] - `rationale_for` [EXTRACTED]
-- [[api.py_2]] - `contains` [EXTRACTED]
+- [[api.py]] - `contains` [EXTRACTED]
 - [[get_competitive_intel()]] - `calls` [EXTRACTED]
 - [[get_competitive_intel_history()]] - `calls` [EXTRACTED]
 - [[submit_competitive_intel()]] - `calls` [EXTRACTED]

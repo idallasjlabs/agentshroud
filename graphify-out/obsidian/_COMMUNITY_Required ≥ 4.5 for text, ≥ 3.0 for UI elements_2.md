@@ -16,7 +16,7 @@ members: 19
 - [[Color Token Definition_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
 - [[Core Discipline Audit → Define → Apply → Enforce_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
 - [[Deck  Slide Master Rules_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Dependencies_17]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Dependencies_18]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
 - [[Diagram Theme Block (Mermaid)_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
 - [[File & Directory Conventions_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
 - [[HTML  CSS Brand Variables_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md

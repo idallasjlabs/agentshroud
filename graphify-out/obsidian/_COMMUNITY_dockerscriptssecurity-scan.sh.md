@@ -12,12 +12,12 @@ members: 8
 ## Members
 - [[alert_if_critical()]] - code - docker/scripts/security-scan.sh
 - [[dockerscriptssecurity-scan.sh]] - code - docker/scripts/security-scan.sh
-- [[log()_5]] - code - docker/scripts/security-scan.sh
+- [[log()]] - code - docker/scripts/security-scan.sh
 - [[run_clamav()]] - code - docker/scripts/security-scan.sh
 - [[run_oscap()]] - code - docker/scripts/security-scan.sh
 - [[run_sbom()]] - code - docker/scripts/security-scan.sh
 - [[run_trivy()]] - code - docker/scripts/security-scan.sh
-- [[security-scan.sh script_1]] - code - docker/scripts/security-scan.sh
+- [[security-scan.sh script]] - code - docker/scripts/security-scan.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,10 +28,10 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY_FR3 System Integrity]]
-- 1 edge to [[_COMMUNITY_security-entrypoint.sh]]
 - 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
-- 1 edge to [[_COMMUNITY_test_colima_and_sdk_patch_fallback_resolution.sh]]
 - 1 edge to [[_COMMUNITY_ServiceManager]]
+- 1 edge to [[_COMMUNITY_test_colima_and_sdk_patch_fallback_resolution.sh_1]]
+- 1 edge to [[_COMMUNITY_start-agentshroud.sh]]
 
 ## Top bridge nodes
 - [[dockerscriptssecurity-scan.sh]] - degree 15, connects to 5 communities

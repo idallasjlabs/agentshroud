@@ -14,7 +14,7 @@ members: 21
 - [[Audit Retention]] - document - skills/custom/securebrowser/references/security-policies.md
 - [[Audit Trail Standards]] - document - skills/custom/securebrowser/references/security-policies.md
 - [[Automated Tests]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Compliance]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Compliance_1]] - document - skills/custom/securebrowser/references/security-policies.md
 - [[Future Enhancements_1]] - document - skills/custom/securebrowser/references/security-policies.md
 - [[Incident Playbook]] - document - skills/custom/securebrowser/references/security-policies.md
 - [[Incident Response]] - document - skills/custom/securebrowser/references/security-policies.md
@@ -26,7 +26,7 @@ members: 21
 - [[Security Event Triggers]] - document - skills/custom/securebrowser/references/security-policies.md
 - [[Security Testing_1]] - document - skills/custom/securebrowser/references/security-policies.md
 - [[Standards Alignment]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Threat Model_3]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Threat Model_2]] - document - skills/custom/securebrowser/references/security-policies.md
 - [[What Gets Logged]] - document - skills/custom/securebrowser/references/security-policies.md
 - [[What We Don't Protect Against]] - document - skills/custom/securebrowser/references/security-policies.md
 - [[What We Protect Against]] - document - skills/custom/securebrowser/references/security-policies.md

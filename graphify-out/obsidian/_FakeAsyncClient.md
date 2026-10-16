@@ -12,10 +12,10 @@ tags:
 # _FakeAsyncClient
 
 ## Connections
-- [[dot-__aenter__()_1]] - `method` [EXTRACTED]
-- [[dot-__aexit__()_1]] - `method` [EXTRACTED]
-- [[dot-__init__()_136]] - `method` [EXTRACTED]
-- [[dot-request()]] - `method` [EXTRACTED]
+- [[dot-__aenter__()_5]] - `method` [EXTRACTED]
+- [[dot-__aexit__()_5]] - `method` [EXTRACTED]
+- [[dot-__init__()_147]] - `method` [EXTRACTED]
+- [[dot-request()_2]] - `method` [EXTRACTED]
 - [[DNSBlocklist]] - `uses` [INFERRED]
 - [[DNSForwarderProtocol]] - `uses` [INFERRED]
 - [[Stands in for httpx.AsyncClient; records request kwargs.]] - `rationale_for` [EXTRACTED]

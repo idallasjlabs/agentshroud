@@ -14,14 +14,14 @@ members: 23
 - [[Configuration  Environment Variables]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[Constructor Parameters]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[Domain Policy Decision Tree]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Function Details_2]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Function Details_1]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[Internal State (`_stats`)]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Key Classes]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Key Classes_1]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[Module-level Constants]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Purpose_79]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Related_3]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Responsibilities_4]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Security Notes_5]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Purpose_78]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Related_2]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Responsibilities_2]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Security Notes_3]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[TCP Keepalive]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[`HTTPConnectProxy._agent_id_for_peer(peer)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[`HTTPConnectProxy._clamav_scan_bytes(data bytes, host str)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
@@ -31,8 +31,8 @@ members: 23
 - [[`HTTPConnectProxy._relay_and_scan(reader, writer, host, scan_limit=410241024)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[`HTTPConnectProxy.get_stats()`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[`HTTPConnectProxy.stop()`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[http_proxy.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[http_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[http_proxy.py]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 
 ## Live Query (requires Dataview plugin)
 

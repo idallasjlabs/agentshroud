@@ -1,22 +1,20 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.40
+members: 5
 ---
 
 # Troubleshooting
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[Missing auth for API providers]] - document - docker/scripts/README.md
-- [[Bot not responding on Telegram]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Container unhealthy]] - document - docker/scripts/README.md
-- [[Container won't start after adding Anthropic secret]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Telegram bot not responding]] - document - docker/scripts/README.md
-- [[Troubleshooting_1]] - document - docker/scripts/README.md
-- [[Troubleshooting_2]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Access Denied]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Token expired (SSO)]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Unable to locate credentials]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[MCP Not Using Profile]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Troubleshooting_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,9 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_OpenClaw Management Scripts]]
-- 1 edge to [[_COMMUNITY_API Keys Setup Guide]]
+- 1 edge to [[_COMMUNITY_Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]]
 
 ## Top bridge nodes
-- [[Troubleshooting_1]] - degree 4, connects to 1 community
-- [[Troubleshooting_2]] - degree 4, connects to 1 community
+- [[Troubleshooting_2]] - degree 5, connects to 1 community

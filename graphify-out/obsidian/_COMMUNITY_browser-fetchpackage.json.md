@@ -12,7 +12,7 @@ members: 10
 ## Members
 - [[author_2]] - code - skills/custom/browser-fetch/package.json
 - [[browser-fetchpackage.json]] - code - skills/custom/browser-fetch/package.json
-- [[description_14]] - code - skills/custom/browser-fetch/package.json
+- [[description_12]] - code - skills/custom/browser-fetch/package.json
 - [[keywords_2]] - code - skills/custom/browser-fetch/package.json
 - [[license_6]] - code - skills/custom/browser-fetch/package.json
 - [[main_1]] - code - skills/custom/browser-fetch/package.json

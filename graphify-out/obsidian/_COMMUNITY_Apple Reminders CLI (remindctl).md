@@ -18,7 +18,7 @@ members: 15
 - [[Date Formats]] - document - skills/openclaw/apple-reminders/SKILL.md
 - [[Example Clarifying User Intent]] - document - skills/openclaw/apple-reminders/SKILL.md
 - [[Manage Lists]] - document - skills/openclaw/apple-reminders/SKILL.md
-- [[Output Formats_1]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[Output Formats]] - document - skills/openclaw/apple-reminders/SKILL.md
 - [[Setup_5]] - document - skills/openclaw/apple-reminders/SKILL.md
 - [[View Reminders]] - document - skills/openclaw/apple-reminders/SKILL.md
 - [[When NOT to Use_1]] - document - skills/openclaw/apple-reminders/SKILL.md

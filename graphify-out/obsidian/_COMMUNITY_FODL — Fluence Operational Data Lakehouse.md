@@ -34,10 +34,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_AWS Cloud Management & FinOps Agent_2]]
-- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps Agent_1]]
-- 1 edge to [[_COMMUNITY_Claude Code skill catalog (59 skills)]]
+- 3 edges to [[_COMMUNITY_AWS Cloud Management & FinOps Agent_1]]
+- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps Agent_2]]
 - 1 edge to [[_COMMUNITY_CICD Pipeline Advisor (SKILL)]]
+- 1 edge to [[_COMMUNITY_Claude Code skill catalog (59 skills)]]
 - 1 edge to [[_COMMUNITY_awslabs.aws-api-mcp-server configuration (--readonly)]]
 
 ## Top bridge nodes

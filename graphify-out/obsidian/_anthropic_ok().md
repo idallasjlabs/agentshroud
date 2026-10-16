@@ -12,6 +12,7 @@ tags:
 # _anthropic_ok()
 
 ## Connections
+- [[_fake_forward()_3]] - `calls` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

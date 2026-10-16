@@ -34,8 +34,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TELEGRAM_ISSUES]]
 - 1 edge to [[_COMMUNITY_agentshroud-ieee-paper]]
+- 1 edge to [[_COMMUNITY_TELEGRAM_ISSUES]]
 - 1 edge to [[_COMMUNITY_Morning Checklist (5 minutes)]]
 
 ## Top bridge nodes

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/skills/scan.py"
 type: "code"
-community: "Recommendation"
+community: "SkillGuard"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Recommendation
+  - community/SkillGuard
 ---
 
 # _build_tree()
 
 ## Connections
-- [[Path_2]] - `references` [EXTRACTED]
+- [[Path_19]] - `references` [EXTRACTED]
 - [[Read every manifest entry under source, failing CLOSED on unreadable files.]] - `rationale_for` [EXTRACTED]
-- [[main()_2]] - `calls` [EXTRACTED]
+- [[main()_10]] - `calls` [EXTRACTED]
 - [[scan.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Recommendation
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

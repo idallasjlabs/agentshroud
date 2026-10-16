@@ -33,7 +33,7 @@ members: 24
 - [[Security Configuration_3]] - document - .agents/skills/i-browser/SKILL.md
 - [[Security Guarantees_4]] - document - .agents/skills/i-browser/SKILL.md
 - [[Take Screenshot_3]] - document - .agents/skills/i-browser/SKILL.md
-- [[Usage_70]] - document - .agents/skills/i-browser/SKILL.md
+- [[Usage_68]] - document - .agents/skills/i-browser/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

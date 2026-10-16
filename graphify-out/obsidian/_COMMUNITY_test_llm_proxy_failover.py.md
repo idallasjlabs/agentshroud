@@ -14,7 +14,7 @@ members: 33
 - [[A real production incident a stalled chunked response from a local     model ba]] - rationale - gateway/tests/test_llm_proxy_failover.py
 - [[Failover for a qwen3 local ref must dispatch to LM Studio (not Ollama,     which]] - rationale - gateway/tests/test_llm_proxy_failover.py
 - [[HTTP 200 with an overloaded_error body must trigger local failover.]] - rationale - gateway/tests/test_llm_proxy_failover.py
-- [[LLMProxy_2]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[LLMProxy_1]] - code - gateway/tests/test_llm_proxy_failover.py
 - [[Same freeze, but on the HTTPError branch's e.read() — also moved off     the eve]] - rationale - gateway/tests/test_llm_proxy_failover.py
 - [[Updated 2026-06-15 a plain 429 that escaped the upstream retry loop     NOW tri]] - rationale - gateway/tests/test_llm_proxy_failover.py
 - [[Without the interactive flag the 3-retry loop is unchanged (guards the     herme]] - rationale - gateway/tests/test_llm_proxy_failover.py
@@ -58,4 +58,4 @@ SORT file.name ASC
 ## Top bridge nodes
 - [[test_llm_proxy_failover.py]] - degree 25, connects to 2 communities
 - [[make_proxy()_1]] - degree 24, connects to 1 community
-- [[LLMProxy_2]] - degree 2, connects to 1 community
+- [[LLMProxy_1]] - degree 2, connects to 1 community

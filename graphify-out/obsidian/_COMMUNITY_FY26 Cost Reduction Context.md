@@ -25,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps Agent_1]]
+- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps Agent_2]]
 
 ## Top bridge nodes
 - [[FY26 Cost Reduction Context]] - degree 6, connects to 1 community

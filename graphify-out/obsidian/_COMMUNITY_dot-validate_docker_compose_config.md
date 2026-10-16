@@ -36,8 +36,8 @@ SORT file.name ASC
 ## Connections to other communities
 - 8 edges to [[_COMMUNITY_NetworkSecurityFinding]]
 - 7 edges to [[_COMMUNITY_MiddlewareManager]]
-- 3 edges to [[_COMMUNITY_dot-_parse_service_network_config]]
 - 3 edges to [[_COMMUNITY_validate_network_security]]
+- 3 edges to [[_COMMUNITY_dot-_parse_service_network_config]]
 
 ## Top bridge nodes
 - [[dot-validate_docker_compose_config()]] - degree 12, connects to 4 communities

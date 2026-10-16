@@ -1,13 +1,13 @@
 ---
 type: community
-cohesion: 0.10
-members: 21
+cohesion: 0.07
+members: 29
 ---
 
 # Container Security Policy — AgentShroud
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 21 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 29 nodes
 
 ## Members
 - [[1. Container Hardening]] - document - docs/security/container-policy.md
@@ -16,6 +16,10 @@ members: 21
 - [[1.3 Read-Only Filesystem (Planned)]] - document - docs/security/container-policy.md
 - [[1.4 Non-Root Execution]] - document - docs/security/container-policy.md
 - [[1.5 Resource Limits]] - document - docs/security/container-policy.md
+- [[2. Network Isolation]] - document - docs/security/container-policy.md
+- [[2.1 Docker Networks]] - document - docs/security/container-policy.md
+- [[2.2 Exposed Ports]] - document - docs/security/container-policy.md
+- [[2.3 Tailscale Network]] - document - docs/security/container-policy.md
 - [[3. Secret Management]] - document - docs/security/container-policy.md
 - [[3.1 Hierarchy]] - document - docs/security/container-policy.md
 - [[3.2 Rules]] - document - docs/security/container-policy.md
@@ -29,8 +33,12 @@ members: 21
 - [[5.1 Health Checks]] - document - docs/security/container-policy.md
 - [[5.2 Logging]] - document - docs/security/container-policy.md
 - [[5.3 Monitoring Checklist]] - document - docs/security/container-policy.md
+- [[6. DNS Filter]] - document - docs/security/security-architecture.md
 - [[6. Incident Response (Container-Specific)]] - document - docs/security/container-policy.md
+- [[7. TLS Termination and Inspection]] - document - docs/security/security-architecture.md
+- [[8. Network Rate Limiter]] - document - docs/security/security-architecture.md
 - [[Container Security Policy — AgentShroud]] - document - docs/security/container-policy.md
+- [[Layer 2 Network Security (4 Modules)]] - document - docs/security/security-architecture.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,8 +48,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown]]
 - 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
-- 1 edge to [[_COMMUNITY_Security Controls]]
+- 1 edge to [[_COMMUNITY_Security Module Inventory]]
 
 ## Top bridge nodes
-- [[Container Security Policy — AgentShroud]] - degree 7, connects to 2 communities
+- [[Container Security Policy — AgentShroud]] - degree 7, connects to 1 community
+- [[2. Network Isolation]] - degree 6, connects to 1 community
+- [[Layer 2 Network Security (4 Modules)]] - degree 5, connects to 1 community

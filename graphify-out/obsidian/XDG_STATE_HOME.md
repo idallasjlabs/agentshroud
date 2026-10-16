@@ -1,17 +1,17 @@
 ---
 source_file: "docker/bots/hermes/start.sh"
 type: "code"
-community: "start.sh"
+community: "telegram_api_proxy (/telegram-api/{path})"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/startsh
+  - community/telegram_api_proxy_/telegram-api/path
 ---
 
 # XDG_STATE_HOME
 
 ## Connections
-- [[start.sh]] - `defines` [EXTRACTED]
+- [[start.sh (Hermes s6 main program  startup wrapper)]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/startsh
+#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path

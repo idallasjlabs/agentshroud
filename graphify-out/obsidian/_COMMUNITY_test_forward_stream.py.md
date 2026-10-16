@@ -1,37 +1,29 @@
 ---
 type: community
-cohesion: 0.10
-members: 48
+cohesion: 0.16
+members: 26
 ---
 
 # test_forward_stream.py
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 48 nodes
+**Cohesion:** 0.16 - loosely connected
+**Members:** 26 nodes
 
 ## Members
-- [[dot-__init__()_35]] - code - gateway/tests/test_forward_stream.py
+- [[dot-__init__()_128]] - code - gateway/tests/test_forward_stream.py
 - [[dot-process_inbound()_4]] - code - gateway/tests/test_forward_stream.py
 - [[dot-process_outbound()_4]] - code - gateway/tests/test_forward_stream.py
 - [[dot-process_outbound()_5]] - code - gateway/tests/test_forward_stream.py
 - [[2-sentence sliding window over `sentences` each window (previous +     current,]] - rationale - gateway/ingest_api/routes/forward.py
 - [[Buffer streamed text deltas and yield each complete sentence as soon as     its]] - rationale - gateway/ingest_api/routes/forward.py
-- [[Build a mock app_state whose router streams `sentences_out` as raw     text delt]] - rationale - gateway/tests/test_forward_stream.py
-- [[ForwardError]] - code - gateway/ingest_api/router.py
 - [[Mock pipeline that blocks any window containing the word 'secret'.]] - rationale - gateway/tests/test_forward_stream.py
 - [[Mock pipeline whose process_outbound returns the window text unchanged     — ver]] - rationale - gateway/tests/test_forward_stream.py
-- [[Raised when forwarding to agent fails]] - rationale - gateway/ingest_api/router.py
 - [[Sliding-window sentinel-joined security filter for streaming voice pipeline]] - concept - gateway/tests/test_forward_stream.py
 - [[_BlockingPipeline]] - code - gateway/tests/test_forward_stream.py
 - [[_PassthroughPipeline]] - code - gateway/tests/test_forward_stream.py
 - [[_aiter()]] - code - gateway/tests/test_forward_stream.py
 - [[_filtered_sentence_stream()]] - code - gateway/ingest_api/routes/forward.py
-- [[_make_stream_app_state()]] - code - gateway/tests/test_forward_stream.py
-- [[_parse_sse_events()]] - code - gateway/tests/test_forward_stream.py
-- [[_post_stream()]] - code - gateway/tests/test_forward_stream.py
-- [[_request()]] - code - gateway/tests/test_forward_stream.py
 - [[_sentences_from_deltas()]] - code - gateway/ingest_api/routes/forward.py
-- [[_target()]] - code - gateway/tests/test_forward_stream.py
 - [[test_filtered_stream_blocked_final_sentence_yields_nothing()]] - code - gateway/tests/test_forward_stream.py
 - [[test_filtered_stream_blocked_window_releases_nothing_for_that_window()]] - code - gateway/tests/test_forward_stream.py
 - [[test_filtered_stream_redaction_applies_to_released_sentence()]] - code - gateway/tests/test_forward_stream.py
@@ -40,20 +32,6 @@ members: 48
 - [[test_filtered_stream_single_sentence_flushed_alone()]] - code - gateway/tests/test_forward_stream.py
 - [[test_filtered_stream_windows_are_pairs_joined_by_sentinel()]] - code - gateway/tests/test_forward_stream.py
 - [[test_forward_stream.py]] - code - gateway/tests/test_forward_stream.py
-- [[test_forward_stream_503_when_no_pipeline_configured()]] - code - gateway/tests/test_forward_stream.py
-- [[test_forward_stream_drops_credential_bearing_sentence()]] - code - gateway/tests/test_forward_stream.py
-- [[test_forward_stream_emits_sentence_events_then_done()]] - code - gateway/tests/test_forward_stream.py
-- [[test_forward_stream_forward_error_still_emits_done_event()]] - code - gateway/tests/test_forward_stream.py
-- [[test_forward_stream_ledger_failure_still_emits_done_event()]] - code - gateway/tests/test_forward_stream.py
-- [[test_forward_stream_records_ledger_entry_with_full_assembled_text()]] - code - gateway/tests/test_forward_stream.py
-- [[test_forward_stream_rejects_non_openai_compat_target()]] - code - gateway/tests/test_forward_stream.py
-- [[test_forward_stream_returns_early_response_when_queued_for_approval()]] - code - gateway/tests/test_forward_stream.py
-- [[test_forward_stream_unexpected_error_still_emits_done_event()]] - code - gateway/tests/test_forward_stream.py
-- [[test_resolve_trust_level_maps_trust_score_to_tier()]] - code - gateway/tests/test_forward_stream.py
-- [[test_resolve_trust_level_no_trust_info_for_target_defaults_untrusted()]] - code - gateway/tests/test_forward_stream.py
-- [[test_resolve_trust_level_no_trust_manager_defaults_untrusted()]] - code - gateway/tests/test_forward_stream.py
-- [[test_resolve_trust_level_non_owner_user_id_does_not_upgrade()]] - code - gateway/tests/test_forward_stream.py
-- [[test_resolve_trust_level_owner_user_id_upgrades_to_full()]] - code - gateway/tests/test_forward_stream.py
 - [[test_sentences_from_deltas_empty_stream_yields_nothing()]] - code - gateway/tests/test_forward_stream.py
 - [[test_sentences_from_deltas_flushes_trailing_fragment_without_punctuation()]] - code - gateway/tests/test_forward_stream.py
 - [[test_sentences_from_deltas_single_delta_full_sentence()]] - code - gateway/tests/test_forward_stream.py
@@ -67,18 +45,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_forward.py]]
+- 13 edges to [[_COMMUNITY_test_forward_stream.py_1]]
 - 9 edges to [[_COMMUNITY_AgentTarget]]
-- 5 edges to [[_COMMUNITY_ForwardRequest]]
-- 4 edges to [[_COMMUNITY_AsyncMock]]
-- 3 edges to [[_COMMUNITY_DataLedger]]
-- 2 edges to [[_COMMUNITY_AgentTarget_1]]
-- 1 edge to [[_COMMUNITY_test_main_endpoints.py]]
-- 1 edge to [[_COMMUNITY_ThreatAssessment]]
+- 8 edges to [[_COMMUNITY_forward.py_1]]
+- 3 edges to [[_COMMUNITY_forward.py]]
+- 1 edge to [[_COMMUNITY_test_main_endpoints.py_1]]
 
 ## Top bridge nodes
-- [[ForwardError]] - degree 16, connects to 6 communities
-- [[test_forward_stream.py]] - degree 41, connects to 4 communities
-- [[_make_stream_app_state()]] - degree 14, connects to 2 communities
+- [[test_forward_stream.py]] - degree 41, connects to 5 communities
 - [[_PassthroughPipeline]] - degree 12, connects to 2 communities
-- [[_BlockingPipeline]] - degree 8, connects to 2 communities
+- [[_filtered_sentence_stream()]] - degree 11, connects to 1 community
+- [[_BlockingPipeline]] - degree 8, connects to 1 community
+- [[_sentences_from_deltas()]] - degree 7, connects to 1 community

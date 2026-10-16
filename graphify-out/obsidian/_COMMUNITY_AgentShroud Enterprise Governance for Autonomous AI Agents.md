@@ -1,13 +1,13 @@
 ---
 type: community
-cohesion: 0.06
-members: 31
+cohesion: 0.09
+members: 22
 ---
 
 # AgentShroud: Enterprise Governance for Autonomous AI Agents
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 31 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 22 nodes
 
 ## Members
 - [[1. The Problem Unsecured AI Agents]] - document - docs/papers/agentshroud-whitepaper.md
@@ -23,22 +23,13 @@ members: 31
 - [[11.6 Industry Implications]] - document - docs/papers/agentshroud-whitepaper.md
 - [[12. Roadmap]] - document - docs/papers/agentshroud-whitepaper.md
 - [[13. Conclusion]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4. Defense-in-Depth Container Security]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.1 Build-Time Image Scanning (Trivy)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.2 Runtime Malware Detection (ClamAV)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.3 Runtime Syscall Monitoring (Falco)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.4 Host Integrity Monitoring (Wazuh)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.5 Compliance Scanning (OpenSCAP)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.6 Daily Security Health Report]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.7 Zero-Configuration Security]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.8 Container Security — Competitive Comparison]] - document - docs/papers/agentshroud-whitepaper.md
 - [[6. Competitive Landscape]] - document - docs/papers/agentshroud-whitepaper.md
 - [[6.1 Market Overview]] - document - docs/papers/agentshroud-whitepaper.md
 - [[6.2 Comparison Table]] - document - docs/papers/agentshroud-whitepaper.md
 - [[6.3 Key Differentiators]] - document - docs/papers/agentshroud-whitepaper.md
 - [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - document - docs/papers/agentshroud-whitepaper.md
 - [[Completed Phases]] - document - docs/papers/agentshroud-whitepaper.md
-- [[Executive Summary_10]] - document - docs/papers/agentshroud-whitepaper.md
+- [[Executive Summary_11]] - document - docs/papers/agentshroud-whitepaper.md
 - [[Future Phases (Planned)]] - document - docs/papers/agentshroud-whitepaper.md
 - [[agentshroud-whitepaper]] - document - docs/papers/agentshroud-whitepaper.md
 
@@ -52,6 +43,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_8. Performance & Testing]]
 - 1 edge to [[_COMMUNITY_3. Security Controls]]
+- 1 edge to [[_COMMUNITY_AgentShroud Enterprise Governance for Autonomous AI Agents_1]]
 - 1 edge to [[_COMMUNITY_4. Compliance & Standards Alignment]]
 - 1 edge to [[_COMMUNITY_SSH Config]]
 - 1 edge to [[_COMMUNITY_OpenSCAP]]
@@ -59,4 +51,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Recommendation]]
 
 ## Top bridge nodes
-- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - degree 15, connects to 7 communities
+- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - degree 15, connects to 8 communities

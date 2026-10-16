@@ -49,7 +49,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_AgentShroud Security Architecture]]
-- 1 edge to [[_COMMUNITY_Security Controls]]
+- 1 edge to [[_COMMUNITY_Container Security Policy — AgentShroud]]
 
 ## Top bridge nodes
 - [[Security Module Inventory]] - degree 8, connects to 2 communities

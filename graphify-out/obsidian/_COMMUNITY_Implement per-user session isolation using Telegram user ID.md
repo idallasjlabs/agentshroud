@@ -14,9 +14,9 @@ members: 16
 - [[Constraints_2]] - document - docs/planning/redteam/03-session-isolation.md
 - [[Evidence_2]] - document - docs/planning/redteam/03-session-isolation.md
 - [[Implement per-user session isolation using Telegram user ID]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Problem_5]] - document - docs/planning/redteam/03-session-isolation.md
+- [[Problem_4]] - document - docs/planning/redteam/03-session-isolation.md
 - [[Remediation_3]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Root Cause_4]] - document - docs/planning/redteam/03-session-isolation.md
+- [[Root Cause_3]] - document - docs/planning/redteam/03-session-isolation.md
 - [[Severity_5]] - document - docs/planning/redteam/03-session-isolation.md
 - [[Step 1 Add user session registry to the gateway]] - document - docs/planning/redteam/03-session-isolation.md
 - [[Step 2 Partition conversation context at the gateway]] - document - docs/planning/redteam/03-session-isolation.md
@@ -25,7 +25,7 @@ members: 16
 - [[Step 5 Isolate memory persistence]] - document - docs/planning/redteam/03-session-isolation.md
 - [[Step 6 Add cross-session access controls to sessions_send]] - document - docs/planning/redteam/03-session-isolation.md
 - [[Step 7 Add session listing protections]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Verification_9]] - document - docs/planning/redteam/03-session-isolation.md
+- [[Verification_7]] - document - docs/planning/redteam/03-session-isolation.md
 
 ## Live Query (requires Dataview plugin)
 

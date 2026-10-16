@@ -24,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestMultiTurnTracker]]
+- 1 edge to [[_COMMUNITY_MultiTurnTracker]]
 - 1 edge to [[_COMMUNITY_TestPathIsolationManager]]
 - 1 edge to [[_COMMUNITY_TestToolChainAnalyzer]]
 

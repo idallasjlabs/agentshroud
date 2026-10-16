@@ -23,8 +23,8 @@ members: 16
 - [[_read_request_headers()]] - code - docker/bots/hermes/dashboard_bridge.py
 - [[dashboard_bridge.py]] - code - docker/bots/hermes/dashboard_bridge.py
 - [[docker_proxy_relay.py]] - code - docker/bots/hermes/docker_proxy_relay.py
-- [[main()_28]] - code - docker/bots/hermes/dashboard_bridge.py
-- [[main()_29]] - code - docker/bots/hermes/docker_proxy_relay.py
+- [[main()_26]] - code - docker/bots/hermes/dashboard_bridge.py
+- [[main()_27]] - code - docker/bots/hermes/docker_proxy_relay.py
 - [[rewrite_request_headers()]] - code - docker/bots/hermes/dashboard_bridge.py
 
 ## Live Query (requires Dataview plugin)

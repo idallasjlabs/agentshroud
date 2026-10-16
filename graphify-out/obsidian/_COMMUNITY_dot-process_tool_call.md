@@ -35,15 +35,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_MCPToolCall]]
-- 6 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 2 edges to [[_COMMUNITY_StdioConnection]]
-- 2 edges to [[_COMMUNITY_MCPToolResult]]
+- 19 edges to [[_COMMUNITY_MCPPermissionManager]]
 - 1 edge to [[_COMMUNITY_make_event]]
 
 ## Top bridge nodes
-- [[dot-_execute_tool_call()]] - degree 8, connects to 4 communities
-- [[dot-process_tool_result()_1]] - degree 6, connects to 3 communities
-- [[dot-process_tool_call()]] - degree 9, connects to 2 communities
 - [[dot-_emit_privacy_event()]] - degree 5, connects to 2 communities
-- [[dot-_sanitize_admin_private_data()]] - degree 5, connects to 2 communities
+- [[dot-process_tool_call()]] - degree 9, connects to 1 community
+- [[dot-_execute_tool_call()]] - degree 8, connects to 1 community
+- [[dot-process_tool_result()_1]] - degree 6, connects to 1 community
+- [[dot-_sanitize_admin_private_data()]] - degree 5, connects to 1 community

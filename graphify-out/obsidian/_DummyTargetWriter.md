@@ -12,9 +12,9 @@ tags:
 # _DummyTargetWriter
 
 ## Connections
-- [[dot-close()_17]] - `method` [EXTRACTED]
-- [[dot-drain()_1]] - `method` [EXTRACTED]
-- [[dot-write()_1]] - `method` [EXTRACTED]
+- [[dot-close()_3]] - `method` [EXTRACTED]
+- [[dot-drain()]] - `method` [EXTRACTED]
+- [[dot-write()]] - `method` [EXTRACTED]
 - [[EgressAction]] - `uses` [INFERRED]
 - [[HTTPConnectProxy_1]] - `uses` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]

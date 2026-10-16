@@ -15,9 +15,9 @@ tags:
 - [[_docker_free_gb()]] - `calls` [EXTRACTED]
 - [[_ensure_build_space()]] - `calls` [EXTRACTED]
 - [[_mutating()]] - `calls` [EXTRACTED]
-- [[log()]] - `calls` [EXTRACTED]
+- [[log()_8]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 - [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
-- [[warn()]] - `calls` [EXTRACTED]
+- [[warn()_5]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

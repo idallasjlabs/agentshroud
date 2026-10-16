@@ -16,9 +16,9 @@ members: 14
 - [[LogSanitizer._sanitize_text(text)]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
 - [[LogSanitizer.filter(record)]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
 - [[Pattern Taxonomy]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[Purpose_161]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[Purpose_160]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
 - [[Related_46]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
-- [[Responsibilities_44]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
+- [[Responsibilities_43]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
 - [[Threat Model_26]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
 - [[get_sanitizer_stats()_1]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md
 - [[install_log_sanitizer()_1]] - document - docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md

@@ -31,7 +31,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY_ProgressiveLockdown]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy_1]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy_2]]
 
 ## Top bridge nodes
 - [[TestCollabLockdownNotifications]] - degree 12, connects to 2 communities

@@ -27,7 +27,7 @@ members: 23
 - [[dot-test_send_event_serializes()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_send_event_swallows_transport_error()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-unsubscribe()_1]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[SOCWebSocketHandler_1]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[SOCWebSocketHandler_2]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[TestEventFanOut]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[TestHandlerRun]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[TestSendEventAndKeepalive]] - code - gateway/tests/test_soc_realtime_coverage.py
@@ -43,15 +43,13 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 16 edges to [[_COMMUNITY_Action]]
-- 7 edges to [[_COMMUNITY_Enum]]
+- 12 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 10 edges to [[_COMMUNITY_RBACConfig]]
 - 7 edges to [[_COMMUNITY_AsyncMock]]
-- 5 edges to [[_COMMUNITY_RBACConfig]]
-- 5 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
-- 5 edges to [[_COMMUNITY_Role]]
 
 ## Top bridge nodes
-- [[TestHandlerRun]] - degree 14, connects to 5 communities
-- [[_FakeBus]] - degree 12, connects to 5 communities
-- [[TestSendEventAndKeepalive]] - degree 11, connects to 5 communities
-- [[TestEventFanOut]] - degree 10, connects to 5 communities
-- [[SOCWebSocketHandler_1]] - degree 14, connects to 4 communities
+- [[SOCWebSocketHandler_2]] - degree 14, connects to 3 communities
+- [[TestHandlerRun]] - degree 14, connects to 3 communities
+- [[_FakeBus]] - degree 12, connects to 3 communities
+- [[TestSendEventAndKeepalive]] - degree 11, connects to 3 communities
+- [[TestEventFanOut]] - degree 10, connects to 3 communities

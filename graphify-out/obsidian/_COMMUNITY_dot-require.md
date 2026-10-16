@@ -11,9 +11,9 @@ members: 4
 
 ## Members
 - [[dot-require()]] - code - gateway/soc/auth.py
-- [[Action]] - code - gateway/soc/auth.py
+- [[Action_1]] - code - gateway/soc/auth.py
 - [[Raise 403 if the caller lacks the required permission.]] - rationale - gateway/soc/auth.py
-- [[Resource]] - code - gateway/soc/auth.py
+- [[Resource_1]] - code - gateway/soc/auth.py
 
 ## Live Query (requires Dataview plugin)
 

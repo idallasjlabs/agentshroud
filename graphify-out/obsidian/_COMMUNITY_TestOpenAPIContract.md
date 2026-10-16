@@ -10,7 +10,7 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[dot-client()_6]] - code - gateway/tests/test_api_contract.py
+- [[dot-client()_5]] - code - gateway/tests/test_api_contract.py
 - [[dot-test_health_endpoint_unauthenticated()]] - code - gateway/tests/test_api_contract.py
 - [[dot-test_no_500_on_empty_requests()]] - code - gateway/tests/test_api_contract.py
 - [[dot-test_openapi_schema_is_valid()]] - code - gateway/tests/test_api_contract.py

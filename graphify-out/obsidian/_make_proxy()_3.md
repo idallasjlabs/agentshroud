@@ -27,7 +27,7 @@ tags:
 - [[FakeRBAC_1]] - `calls` [EXTRACTED]
 - [[PassthroughPipeline_1]] - `calls` [EXTRACTED]
 - [[Return a TelegramAPIProxy wired with fake deps (no real HTTP).]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
 - [[TelegramAPIProxy_3]] - `references` [EXTRACTED]
 - [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]
 

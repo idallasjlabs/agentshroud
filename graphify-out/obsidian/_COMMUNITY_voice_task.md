@@ -12,7 +12,7 @@ members: 25
 ## Members
 - [[_deliver_utterance()]] - code - firmware/voice-terminal/main/app_main.c
 - [[_on_event()]] - code - firmware/voice-terminal/main/ws_client.c
-- [[esp_err_t_1]] - code - firmware/voice-terminal/main/ws_client.c
+- [[esp_err_t_5]] - code - firmware/voice-terminal/main/ws_client.c
 - [[esp_event_base_t]] - code - firmware/voice-terminal/main/ws_client.c
 - [[rlog_task()]] - code - firmware/voice-terminal/main/app_main.c
 - [[voice_task()]] - code - firmware/voice-terminal/main/app_main.c
@@ -24,7 +24,7 @@ members: 25
 - [[ws_client_connected()]] - code - firmware/voice-terminal/main/ws_client.c
 - [[ws_client_create()]] - code - firmware/voice-terminal/main/ws_client.c
 - [[ws_client_destroy()]] - code - firmware/voice-terminal/main/ws_client.c
-- [[ws_client_handle_t]] - code - firmware/voice-terminal/main/ws_client.c
+- [[ws_client_handle_t_1]] - code - firmware/voice-terminal/main/ws_client.c
 - [[ws_client_send_end()]] - code - firmware/voice-terminal/main/ws_client.c
 - [[ws_client_send_keepalive()]] - code - firmware/voice-terminal/main/ws_client.c
 - [[ws_client_send_listen()]] - code - firmware/voice-terminal/main/ws_client.c

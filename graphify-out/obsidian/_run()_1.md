@@ -1,18 +1,24 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "gateway/tests/test_canary_deploy.py"
 type: "code"
-community: "plan_remediation"
-location: "L230"
+community: "_run"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/_run
 ---
 
 # _run()
 
 ## Connections
-- [[apply_remediation()]] - `calls` [EXTRACTED]
-- [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
+- [[dot-test_dry_run_allowed_for_any_user()]] - `calls` [EXTRACTED]
+- [[dot-test_dry_run_changes_nothing_and_previews_actions()]] - `calls` [EXTRACTED]
+- [[dot-test_dry_run_targets_green_ports_not_blue()]] - `calls` [EXTRACTED]
+- [[dot-test_refuses_when_not_green_user()]] - `calls` [EXTRACTED]
+- [[dot-test_tag_fetch_uses_force()]] - `calls` [EXTRACTED]
+- [[dot-test_unknown_arg_rejected()]] - `calls` [EXTRACTED]
+- [[test_canary_deploy.py]] - `contains` [EXTRACTED]
+- [[test_help_prints_usage()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/_run

@@ -14,10 +14,10 @@ members: 12
 - [[7.1 Supported Platforms]] - document - docs/papers/agentshroud-whitepaper.md
 - [[7.2 Quick Start]] - document - docs/papers/agentshroud-whitepaper.md
 - [[Applied By_1]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Configuration_20]] - document - skills/custom/securebrowser/README.md
+- [[Configuration_19]] - document - skills/custom/securebrowser/README.md
 - [[Full Configuration Example]] - document - skills/custom/securebrowser/README.md
 - [[Key Configuration]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Purpose_182]] - document - docs/vault/03 - Configuration/ssh-config.md
+- [[Purpose_174]] - document - docs/vault/03 - Configuration/ssh-config.md
 - [[Related Notes_59]] - document - docs/vault/03 - Configuration/ssh-config.md
 - [[Relationship to agentshroud.yaml]] - document - docs/vault/03 - Configuration/ssh-config.md
 - [[SSH Config]] - document - docs/vault/03 - Configuration/ssh-config.md
@@ -34,10 +34,10 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_iCloud Services_2]]
 - 1 edge to [[_COMMUNITY_SecureBrowser Skill]]
 - 1 edge to [[_COMMUNITY_AgentShroud Enterprise Governance for Autonomous AI Agents]]
-- 1 edge to [[_COMMUNITY_agentshroud.yaml]]
+- 1 edge to [[_COMMUNITY_egress_filter.py]]
 
 ## Top bridge nodes
-- [[Configuration_20]] - degree 5, connects to 2 communities
+- [[Configuration_19]] - degree 5, connects to 2 communities
 - [[7. Deployment]] - degree 5, connects to 1 community
 - [[Key Configuration]] - degree 3, connects to 1 community
 - [[ssh-config]] - degree 2, connects to 1 community

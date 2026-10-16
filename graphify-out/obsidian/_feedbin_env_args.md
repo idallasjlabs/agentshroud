@@ -1,0 +1,20 @@
+---
+source_file: "docker/bots/hermes/run-standalone.sh"
+type: "code"
+community: "run-standalone.sh (Hermes docker run launcher)"
+location: "L148-L162"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/run-standalonesh_Hermes_docker_run_launcher
+---
+
+# _feedbin_env_args
+
+## Connections
+- [[Missing-secret visibility banner (expected secrets loop)]] - `shares_data_with` [EXTRACTED]
+- [[S13 start.sh env-provided feedbin secrets not reported missing]] - `references` [EXTRACTED]
+- [[cmd_up]] - `calls` [EXTRACTED]
+- [[run-standalone.sh (Hermes docker run launcher)]] - `defines` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher

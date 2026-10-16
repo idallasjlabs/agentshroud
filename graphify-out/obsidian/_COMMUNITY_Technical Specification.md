@@ -11,7 +11,7 @@ members: 14
 
 ## Members
 - [[API Call Structure_1]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
-- [[Apollo — Audio Systems Producer_3]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
+- [[Apollo — Audio Systems Producer_2]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
 - [[Audio Quality Settings_1]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
 - [[Error Handling_7]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
 - [[Input Requirements_14]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
@@ -36,4 +36,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[Apollo — Audio Systems Producer_3]] - degree 7, connects to 1 community
+- [[Apollo — Audio Systems Producer_2]] - degree 7, connects to 1 community

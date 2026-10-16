@@ -114,10 +114,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 10 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
 - 2 edges to [[_COMMUNITY_RateLimiter]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy_1]]
 - 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy_2]]
 - 1 edge to [[_COMMUNITY__wrap_response]]
 
 ## Top bridge nodes

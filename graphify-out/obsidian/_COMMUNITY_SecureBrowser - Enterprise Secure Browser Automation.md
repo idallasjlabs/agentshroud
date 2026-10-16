@@ -11,10 +11,10 @@ members: 39
 
 ## Members
 - [[Action requires approval but none granted]] - document - skills/custom/securebrowser/SKILL.md
-- [[Browser timeout_1]] - document - skills/custom/securebrowser/SKILL.md
-- [[CAPTCHA detected_1]] - document - skills/custom/securebrowser/SKILL.md
+- [[Browser timeout]] - document - skills/custom/securebrowser/SKILL.md
+- [[CAPTCHA detected]] - document - skills/custom/securebrowser/SKILL.md
 - [[Rate limit exceeded]] - document - skills/custom/securebrowser/SKILL.md
-- [[URL not in allowlist_1]] - document - skills/custom/securebrowser/SKILL.md
+- [[URL not in allowlist]] - document - skills/custom/securebrowser/SKILL.md
 - [[1. Always Specify Risk Level]] - document - skills/custom/securebrowser/SKILL.md
 - [[1Password Integration]] - document - skills/custom/securebrowser/SKILL.md
 - [[2. Use Allowlisting Liberally]] - document - skills/custom/securebrowser/SKILL.md
@@ -40,13 +40,13 @@ members: 39
 - [[Security Guarantees]] - document - skills/custom/securebrowser/SKILL.md
 - [[See Also]] - document - skills/custom/securebrowser/SKILL.md
 - [[Take Screenshot]] - document - skills/custom/securebrowser/SKILL.md
-- [[Troubleshooting_9]] - document - skills/custom/securebrowser/SKILL.md
+- [[Troubleshooting_7]] - document - skills/custom/securebrowser/SKILL.md
 - [[Usage_54]] - document - skills/custom/securebrowser/SKILL.md
 - [[appendLog()_2]] - code - skills/custom/browser-fetch/browser-fetch.js
 - [[browser-fetch.js_2]] - code - skills/custom/browser-fetch/browser-fetch.js
 - [[browserFetch()_2]] - code - skills/custom/browser-fetch/browser-fetch.js
-- [[fs_3]] - code - skills/custom/browser-fetch/browser-fetch.js
-- [[path_17]] - code - skills/custom/browser-fetch/browser-fetch.js
+- [[fs_2]] - code - skills/custom/browser-fetch/browser-fetch.js
+- [[path_15]] - code - skills/custom/browser-fetch/browser-fetch.js
 - [[securebrowserSKILL]] - document - skills/custom/securebrowser/SKILL.md
 - [[{ chromium }_2]] - code - skills/custom/browser-fetch/browser-fetch.js
 

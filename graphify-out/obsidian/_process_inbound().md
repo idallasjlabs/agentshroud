@@ -12,12 +12,12 @@ tags:
 # _process_inbound()
 
 ## Connections
-- [[ForwardRequest]] - `references` [EXTRACTED]
-- [[ForwardRequest_3]] - `shares_data_with` [EXTRACTED]
+- [[ForwardRequest_2]] - `references` [EXTRACTED]
+- [[ForwardRequest_1]] - `shares_data_with` [EXTRACTED]
 - [[JSONResponse]] - `calls` [INFERRED]
 - [[MiddlewareManager.process_request()]] - `calls` [EXTRACTED]
-- [[RBACConfig_1]] - `calls` [EXTRACTED]
-- [[Request_3]] - `references` [EXTRACTED]
+- [[RBACConfig_4]] - `calls` [EXTRACTED]
+- [[Request_4]] - `references` [EXTRACTED]
 - [[SecurityPipeline_2]] - `calls` [EXTRACTED]
 - [[Target resolution + P1 middleware + inbound security pipeline —     shared by th]] - `rationale_for` [EXTRACTED]
 - [[_InboundResult]] - `references` [EXTRACTED]

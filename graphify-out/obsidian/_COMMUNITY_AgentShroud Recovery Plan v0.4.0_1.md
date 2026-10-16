@@ -15,7 +15,7 @@ members: 11
 - [[1.1 The Problem_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
 - [[1.2 Fix Shipped ✅]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
 - [[AgentShroud Recovery Plan v0.4.0_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[EXECUTIVE SUMMARY_14]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
+- [[EXECUTIVE SUMMARY_15]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
 - [[PHASE 0 STABILIZATION ✅ COMPLETE_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
 - [[PHASE 1 SECURITY FIX ✅ COMPLETE (v0.4.0)]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
 - [[PHASE 2 NEXT SESSION (v0.5.0)]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md

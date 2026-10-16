@@ -11,7 +11,7 @@ members: 10
 
 ## Members
 - [[author_3]] - code - docker/config/hermes/skills/i-browser/package.json
-- [[description_15]] - code - docker/config/hermes/skills/i-browser/package.json
+- [[description_13]] - code - docker/config/hermes/skills/i-browser/package.json
 - [[hermesskillsi-browserpackage.json]] - code - docker/config/hermes/skills/i-browser/package.json
 - [[keywords_3]] - code - docker/config/hermes/skills/i-browser/package.json
 - [[license_7]] - code - docker/config/hermes/skills/i-browser/package.json

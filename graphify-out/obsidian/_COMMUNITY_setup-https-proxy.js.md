@@ -34,7 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Falco Rules]]
+- 1 edge to [[_COMMUNITY_start-agentshroud.sh]]
 
 ## Top bridge nodes
 - [[setup-https-proxy.js]] - degree 10, connects to 1 community

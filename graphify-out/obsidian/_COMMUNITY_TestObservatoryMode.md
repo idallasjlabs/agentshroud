@@ -41,9 +41,9 @@ SORT file.name ASC
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_PIIConfig]]
 - 2 edges to [[_COMMUNITY_KillSwitchMonitor]]
-- 1 edge to [[_COMMUNITY_load_config]]
-- 1 edge to [[_COMMUNITY_ModeRequest]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
 - 1 edge to [[_COMMUNITY_test_observatory_mode.py]]
+- 1 edge to [[_COMMUNITY_ModeRequest]]
 
 ## Top bridge nodes
 - [[TestObservatoryMode]] - degree 15, connects to 4 communities

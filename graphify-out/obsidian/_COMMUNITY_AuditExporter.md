@@ -10,8 +10,8 @@ members: 38
 **Members:** 38 nodes
 
 ## Members
-- [[dot-__init__()_99]] - code - gateway/security/audit_export.py
-- [[dot-__init__()_100]] - code - gateway/security/audit_export.py
+- [[dot-__init__()_73]] - code - gateway/security/audit_export.py
+- [[dot-__init__()_74]] - code - gateway/security/audit_export.py
 - [[dot-_default_jsonld_context()]] - code - gateway/security/audit_export.py
 - [[dot-export_config()]] - code - gateway/tests/test_audit_export.py
 - [[dot-test_export_cef()]] - code - gateway/tests/test_audit_export.py
@@ -24,7 +24,7 @@ members: 38
 - [[dot-test_stats()_1]] - code - gateway/tests/test_audit_export.py
 - [[dot-test_tamper_detection()]] - code - gateway/tests/test_audit_export.py
 - [[dot-test_verify_export_integrity()]] - code - gateway/tests/test_audit_export.py
-- [[AuditExportConfig_1]] - code - gateway/security/audit_export.py
+- [[AuditExportConfig]] - code - gateway/security/audit_export.py
 - [[AuditExporter]] - code - gateway/security/audit_export.py
 - [[AuditStore]] - code - gateway/security/audit_export.py
 - [[Configuration for audit export functionality.]] - rationale - gateway/security/audit_export.py
@@ -64,6 +64,6 @@ SORT file.name ASC
 ## Top bridge nodes
 - [[AuditExporter]] - degree 22, connects to 3 communities
 - [[TestAuditExporter]] - degree 15, connects to 2 communities
-- [[AuditExportConfig_1]] - degree 13, connects to 2 communities
+- [[AuditExportConfig]] - degree 13, connects to 2 communities
 - [[TestAuditStore]] - degree 12, connects to 2 communities
 - [[TestAuditEvent]] - degree 9, connects to 2 communities

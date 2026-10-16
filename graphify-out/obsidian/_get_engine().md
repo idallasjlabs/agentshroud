@@ -1,31 +1,31 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "_get_engine"
+community: "api.py"
 location: "L1215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_get_engine
+  - community/apipy
 ---
 
 # _get_engine()
 
 ## Connections
 - [[Get the active container engine.]] - `rationale_for` [EXTRACTED]
-- [[api.py_2]] - `contains` [EXTRACTED]
+- [[api.py]] - `contains` [EXTRACTED]
 - [[check_bot_updates()]] - `calls` [EXTRACTED]
 - [[get_engine()]] - `calls` [EXTRACTED]
 - [[get_logs()]] - `calls` [EXTRACTED]
-- [[killswitch()]] - `calls` [EXTRACTED]
+- [[killswitch()_1]] - `calls` [EXTRACTED]
 - [[rebuild()]] - `calls` [EXTRACTED]
-- [[restart_service()]] - `calls` [EXTRACTED]
+- [[restart_service()_1]] - `calls` [EXTRACTED]
 - [[rollback_agentshroud()]] - `calls` [EXTRACTED]
 - [[security_report()]] - `calls` [EXTRACTED]
-- [[start_service()]] - `calls` [EXTRACTED]
-- [[stop_service()]] - `calls` [EXTRACTED]
+- [[start_service()_1]] - `calls` [EXTRACTED]
+- [[stop_service()_1]] - `calls` [EXTRACTED]
 - [[upgrade_agentshroud()]] - `calls` [EXTRACTED]
-- [[upgrade_bot()]] - `calls` [EXTRACTED]
+- [[upgrade_bot()_1]] - `calls` [EXTRACTED]
 - [[ws_logs()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_get_engine
+#graphify/code #graphify/EXTRACTED #community/apipy

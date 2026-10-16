@@ -12,14 +12,14 @@ tags:
 # _StubApprovalQueue
 
 ## Connections
-- [[dot-__init__()_190]] - `method` [EXTRACTED]
-- [[dot-submit_tool_request()_4]] - `method` [EXTRACTED]
-- [[dot-wait_for_decision()_4]] - `method` [EXTRACTED]
+- [[dot-__init__()_183]] - `method` [EXTRACTED]
+- [[dot-submit_tool_request()_3]] - `method` [EXTRACTED]
+- [[dot-wait_for_decision()_3]] - `method` [EXTRACTED]
 - [[A2AMethod]] - `uses` [INFERRED]
 - [[A2APolicyAction]] - `uses` [INFERRED]
 - [[A2APolicyConfig_1]] - `uses` [INFERRED]
 - [[A2APolicyDecision]] - `uses` [INFERRED]
-- [[A2APolicyEngine_1]] - `uses` [INFERRED]
+- [[A2APolicyEngine_3]] - `uses` [INFERRED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 - [[test_enforce_denies_when_queue_downgrades_requires_wait_to_false()]] - `calls` [EXTRACTED]
 - [[test_enforce_high_risk_method_approved_resolves_to_allow()]] - `calls` [EXTRACTED]

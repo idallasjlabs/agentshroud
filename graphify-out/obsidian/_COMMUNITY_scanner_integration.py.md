@@ -27,7 +27,7 @@ members: 104
 - [[dot-test_scorecard_domain_ids_are_sequential()]] - code - gateway/tests/test_scanner_integration.py
 - [[dot-test_secrets_management_baseline_two()]] - code - gateway/tests/test_scanner_integration.py
 - [[dot-test_standard_basis_present()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_timestamp_present()_1]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_timestamp_present()]] - code - gateway/tests/test_scanner_integration.py
 - [[dot-test_totals_present()]] - code - gateway/tests/test_scanner_integration.py
 - [[dot-test_version_is_v090()]] - code - gateway/tests/test_scanner_integration.py
 - [[Apply mandatory gate overrides to domain scores.      Returns updated scores dic]] - rationale - gateway/security/scanner_integration.py
@@ -39,7 +39,7 @@ members: 104
 - [[ISO 42001 domain map references only valid domain IDs.]] - rationale - gateway/tests/test_scanner_integration.py
 - [[NIST CSF domain map references only valid domain IDs.]] - rationale - gateway/tests/test_scanner_integration.py
 - [[New compliance sub-scores (EU AI Act, ISO 42001, NIST CSF, DISA STIG) appear in]] - rationale - gateway/tests/test_scanner_integration.py
-- [[Path_57]] - code - gateway/security/scanner_integration.py
+- [[Path_33]] - code - gateway/security/scanner_integration.py
 - [[Read and return the Docker daemon config from daemon.json, or {} if unavailable.]] - rationale - gateway/security/scanner_integration.py
 - [[Return True if a non-zombie falco process is running inside this container.]] - rationale - gateway/security/scanner_integration.py
 - [[Return True if app_state has a non-None attribute with the given name.]] - rationale - gateway/security/scanner_integration.py
@@ -127,12 +127,12 @@ SORT file.name ASC
 - 7 edges to [[_COMMUNITY_test_scorecard_integrity.py]]
 - 6 edges to [[_COMMUNITY_get_trivy_summary]]
 - 5 edges to [[_COMMUNITY_Path_1]]
-- 4 edges to [[_COMMUNITY__load_latest_json]]
 - 4 edges to [[_COMMUNITY_get_falco_summary]]
+- 4 edges to [[_COMMUNITY__load_latest_json]]
 - 3 edges to [[_COMMUNITY__score_secure_development]]
-- 2 edges to [[_COMMUNITY_test_security_toolchain.py]]
-- 2 edges to [[_COMMUNITY_test_soc_bots.py]]
 - 2 edges to [[_COMMUNITY_FalcoAlertWatcher]]
+- 2 edges to [[_COMMUNITY_test_soc_bots.py]]
+- 2 edges to [[_COMMUNITY_test_security_toolchain.py]]
 - 1 edge to [[_COMMUNITY_socrouter.py]]
 - 1 edge to [[_COMMUNITY_parse_clamscan_output]]
 - 1 edge to [[_COMMUNITY_test_daily_cve_report.py]]
@@ -141,6 +141,6 @@ SORT file.name ASC
 ## Top bridge nodes
 - [[scanner_integration.py]] - degree 67, connects to 13 communities
 - [[compute_scorecard()]] - degree 61, connects to 9 communities
-- [[Path_57]] - degree 34, connects to 6 communities
+- [[Path_33]] - degree 34, connects to 6 communities
 - [[_score_ai_model_supply_chain()]] - degree 6, connects to 2 communities
 - [[_app_state_has()]] - degree 23, connects to 1 community

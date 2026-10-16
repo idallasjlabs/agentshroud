@@ -12,12 +12,12 @@ tags:
 # _scanner_summary()
 
 ## Connections
-- [[AuthRequired_2]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
 - [[Build normalized scanner summary for SOCdashboard telemetry.]] - `rationale_for` [EXTRACTED]
 - [[Return normalized scanner state + latest results for SOCdashboard views.]] - `rationale_for` [EXTRACTED]
 - [[_record_scanner_result()]] - `calls` [EXTRACTED]
-- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `contains` [EXTRACTED]
 - [[get_1]] - `references` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[run_all_scanners()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy

@@ -1,13 +1,13 @@
 ---
 type: community
 cohesion: 0.05
-members: 74
+members: 71
 ---
 
 # telegram_proxy.py
 
 **Cohesion:** 0.05 - loosely connected
-**Members:** 74 nodes
+**Members:** 71 nodes
 
 ## Members
 - [[dot-_handle_addtogroup_command()]] - code - gateway/proxy/telegram_proxy.py
@@ -16,10 +16,8 @@ members: 74
 - [[dot-_handle_projects_command()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_handle_rmfromgroup_command()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_handle_setmode_command()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-_mirror_to_owner_if_collaborator()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-_send_owner_admin_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-get_active_project_for_user()]] - code - gateway/security/group_config.py
-- [[dot-get_user_projects()]] - code - gateway/security/group_config.py
+- [[dot-coerce_members()]] - code - gateway/security/group_config.py
 - [[dot-matches_topic()]] - code - gateway/security/group_config.py
 - [[dot-normalise_topics()]] - code - gateway/security/group_config.py
 - [[dot-test_addtogroup_success()]] - code - gateway/tests/test_collaborator_responses.py
@@ -42,11 +40,14 @@ members: 74
 - [[dot-test_shows_admin()]] - code - gateway/tests/test_collaborator_responses.py
 - [[dot-test_shows_projects()]] - code - gateway/tests/test_collaborator_responses.py
 - [[dot-test_unknown_group()]] - code - gateway/tests/test_collaborator_responses.py
+- [[dot-validate_mode()]] - code - gateway/security/group_config.py
 - [[A project defines a scoped focus area for a team.]] - rationale - gateway/security/group_config.py
+- [[A team group with members, admin, projects, and collab mode.]] - rationale - gateway/security/group_config.py
 - [[Build the system-prompt injection for project_scoped mode.]] - rationale - gateway/proxy/collaborator_responses.py
 - [[Format a user's accessible projects for display.]] - rationale - gateway/proxy/collaborator_responses.py
 - [[Format a user's group memberships for display.]] - rationale - gateway/proxy/collaborator_responses.py
 - [[Format detailed info for a single group.]] - rationale - gateway/proxy/collaborator_responses.py
+- [[GroupConfig]] - code - gateway/security/group_config.py
 - [[Handle addtogroup user_id group_id (owner only).]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Handle groupinfo group_id.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Handle groups — list groups this user belongs to.]] - rationale - gateway/proxy/telegram_proxy.py
@@ -55,9 +56,6 @@ members: 74
 - [[Handle setmode group_iduser_id local_onlyproject_scopedfull_access (owne]] - rationale - gateway/proxy/telegram_proxy.py
 - [[ProjectConfig]] - code - gateway/security/group_config.py
 - [[Return True if any focus_topic appears in the text (case-insensitive).]] - rationale - gateway/security/group_config.py
-- [[Return all projects accessible to the user via group membership.]] - rationale - gateway/security/group_config.py
-- [[Return the first project accessible to a user (primary project).]] - rationale - gateway/security/group_config.py
-- [[Send a rate-limited activity mirror to the owner chat for collaborator messages.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Send deterministic owner admin notice without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[TestBuildProjectContextInjection]] - code - gateway/tests/test_collaborator_responses.py
 - [[TestConstantMessages]] - code - gateway/tests/test_collaborator_responses.py
@@ -80,7 +78,6 @@ members: 74
 - [[format_setmode_success()]] - code - gateway/proxy/collaborator_responses.py
 - [[format_unknown_group()]] - code - gateway/proxy/collaborator_responses.py
 - [[project()]] - code - gateway/tests/test_collaborator_responses.py
-- [[slack_proxy.py]] - code - gateway/proxy/slack_proxy.py
 - [[teams()_3]] - code - gateway/tests/test_collaborator_responses.py
 - [[telegram_proxy.py_2]] - code - gateway/proxy/telegram_proxy.py
 - [[test_collaborator_responses.py]] - code - gateway/tests/test_collaborator_responses.py
@@ -93,31 +90,32 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 20 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
-- 15 edges to [[_COMMUNITY_RBACConfig]]
+- 18 edges to [[_COMMUNITY_TelegramAPIProxy_2]]
+- 17 edges to [[_COMMUNITY_RBACConfig]]
 - 11 edges to [[_COMMUNITY_GroupConfig]]
-- 8 edges to [[_COMMUNITY_group_config.py]]
-- 5 edges to [[_COMMUNITY_rbac_config.py]]
-- 1 edge to [[_COMMUNITY_TELEGRAM_API_BASE_URL]]
-- 1 edge to [[_COMMUNITY_dot-analyze_message]]
+- 9 edges to [[_COMMUNITY_group_config.py]]
+- 4 edges to [[_COMMUNITY_socrouter.py]]
+- 4 edges to [[_COMMUNITY_rbac_config.py]]
+- 2 edges to [[_COMMUNITY_dot-_filter_outbound]]
+- 1 edge to [[_COMMUNITY_HeuristicClassifier]]
 - 1 edge to [[_COMMUNITY_RateLimiter]]
 - 1 edge to [[_COMMUNITY_BotConfig]]
+- 1 edge to [[_COMMUNITY_Action]]
 - 1 edge to [[_COMMUNITY_make_event]]
-- 1 edge to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_SlackAPIProxy]]
-- 1 edge to [[_COMMUNITY_WebProxyConfig]]
-- 1 edge to [[_COMMUNITY_dot-_proxy_request_impl]]
-- 1 edge to [[_COMMUNITY_dot-_active_send_token]]
-- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
-- 1 edge to [[_COMMUNITY_DOCKER-VPN-NETWORKING]]
 - 1 edge to [[_COMMUNITY_TestEgressApprovalQueue]]
+- 1 edge to [[_COMMUNITY_DOCKER-VPN-NETWORKING]]
+- 1 edge to [[_COMMUNITY_dot-_proxy_request_impl]]
+- 1 edge to [[_COMMUNITY_egress_filter.py]]
+- 1 edge to [[_COMMUNITY_RBACConfig_2]]
+- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
 - 1 edge to [[_COMMUNITY_DelegationManager]]
 - 1 edge to [[_COMMUNITY_egress_retry.py]]
 - 1 edge to [[_COMMUNITY_TelegramGatewayRelay]]
+- 1 edge to [[_COMMUNITY_TELEGRAM_API_BASE_URL]]
 
 ## Top bridge nodes
-- [[telegram_proxy.py_2]] - degree 34, connects to 16 communities
+- [[telegram_proxy.py_2]] - degree 34, connects to 19 communities
+- [[GroupConfig]] - degree 32, connects to 4 communities
+- [[ProjectConfig]] - degree 18, connects to 3 communities
 - [[collaborator_responses.py]] - degree 16, connects to 3 communities
-- [[test_collaborator_responses.py]] - degree 23, connects to 2 communities
-- [[ProjectConfig]] - degree 18, connects to 2 communities
 - [[dot-_send_owner_admin_notice()]] - degree 12, connects to 2 communities

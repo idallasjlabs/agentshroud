@@ -12,7 +12,7 @@ tags:
 # _FakeRBAC
 
 ## Connections
-- [[dot-__init__()_73]] - `method` [EXTRACTED]
+- [[dot-__init__()_70]] - `method` [EXTRACTED]
 - [[dot-check_permission()]] - `method` [EXTRACTED]
 - [[dot-test_get_caller_passthrough()]] - `calls` [EXTRACTED]
 - [[dot-test_is_group_admin_with_teams_config()]] - `calls` [EXTRACTED]
@@ -24,10 +24,10 @@ tags:
 - [[Action_2]] - `uses` [INFERRED]
 - [[Minimal RBAC stand-in with controllable check_permission results.]] - `rationale_for` [EXTRACTED]
 - [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[Resource_2]] - `uses` [INFERRED]
-- [[Role_96]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler]] - `uses` [INFERRED]
+- [[Role_91]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

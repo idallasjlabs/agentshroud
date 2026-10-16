@@ -17,12 +17,12 @@ members: 39
 - [[3. safe-refactor]] - document - .github/COPILOT_CLI_SETUP.md
 - [[Agent Files Location]] - document - .github/COPILOT_CLI_SETUP.md
 - [[Agent Not Found]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Authentication_1]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Authentication]] - document - .github/COPILOT_CLI_SETUP.md
 - [[Authentication Issues]] - document - .github/COPILOT_CLI_SETUP.md
 - [[Auto-Compaction]] - document - .github/COPILOT_CLI_SETUP.md
 - [[Built-in Default Agents]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Common Workflows]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Configuration Files_1]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Common Workflows_1]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Configuration Files_2]] - document - .github/COPILOT_CLI_SETUP.md
 - [[Configuration Not Loading]] - document - .github/COPILOT_CLI_SETUP.md
 - [[Context Management]] - document - .github/COPILOT_CLI_SETUP.md
 - [[Custom Agents]] - document - .github/COPILOT_CLI_SETUP.md
@@ -34,7 +34,7 @@ members: 39
 - [[Manual Controls]] - document - .github/COPILOT_CLI_SETUP.md
 - [[Option 1 GitHub Login]] - document - .github/COPILOT_CLI_SETUP.md
 - [[Option 2 Personal Access Token]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Overview_3]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Overview]] - document - .github/COPILOT_CLI_SETUP.md
 - [[Path Permission Denied]] - document - .github/COPILOT_CLI_SETUP.md
 - [[Path Permissions]] - document - .github/COPILOT_CLI_SETUP.md
 - [[Primary Focus]] - document - .github/COPILOT_CLI_SETUP.md
@@ -44,9 +44,9 @@ members: 39
 - [[Role & Restrictions]] - document - .github/COPILOT_CLI_SETUP.md
 - [[Security & Permissions]] - document - .github/COPILOT_CLI_SETUP.md
 - [[Tool Approval]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Troubleshooting_6]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Troubleshooting_8]] - document - .github/COPILOT_CLI_SETUP.md
 - [[Trusted Folders]] - document - .github/COPILOT_CLI_SETUP.md
-- [[URL Access Control]] - document - .github/COPILOT_CLI_SETUP.md
+- [[URL Access Control_1]] - document - .github/COPILOT_CLI_SETUP.md
 - [[User-Level Config]] - document - .github/COPILOT_CLI_SETUP.md
 - [[What Copilot CLI CAN Do (in this repo)]] - document - .github/COPILOT_CLI_SETUP.md
 

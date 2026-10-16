@@ -12,7 +12,7 @@ members: 3
 ## Members
 - [[CI benchmark regression job (macOS)]] - code - .github/workflows/ci.yml
 - [[check_benchmark_regression.py]] - code - scripts/check_benchmark_regression.py
-- [[main()_9]] - code - scripts/check_benchmark_regression.py
+- [[main()_8]] - code - scripts/check_benchmark_regression.py
 
 ## Live Query (requires Dataview plugin)
 

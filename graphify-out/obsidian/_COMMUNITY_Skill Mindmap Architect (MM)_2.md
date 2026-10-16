@@ -29,7 +29,7 @@ members: 27
 - [[Markmap Source Format_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
 - [[Outline Template_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
 - [[Project Planning Map_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
-- [[Role_34]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
+- [[Role_35]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
 - [[Rules_10]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
 - [[Skill Mindmap Architect (MM)_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md
 - [[Use Case Patterns_2]] - document - docker/config/openclaw/skills/i-mm/SKILL.md

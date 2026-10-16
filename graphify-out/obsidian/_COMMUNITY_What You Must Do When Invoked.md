@@ -31,7 +31,7 @@ members: 24
 - [[Step 6 - Generate Obsidian vault (opt-in) + HTML]] - document - .agents/skills/graphify/SKILL.md
 - [[Step 9 - Save manifest, update cost tracker, clean up, and report]] - document - .agents/skills/graphify/SKILL.md
 - [[Steps 6b-8 - Wiki, Neo4j, SVG, GraphML, MCP, benchmark (only on their flags)]] - document - .agents/skills/graphify/SKILL.md
-- [[Usage_69]] - document - .agents/skills/graphify/SKILL.md
+- [[Usage_67]] - document - .agents/skills/graphify/SKILL.md
 - [[What You Must Do When Invoked]] - document - .agents/skills/graphify/SKILL.md
 - [[What graphify is for]] - document - .agents/skills/graphify/SKILL.md
 

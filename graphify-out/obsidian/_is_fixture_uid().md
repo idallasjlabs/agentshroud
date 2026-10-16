@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "CollaboratorActivityTracker"
+community: "test_collaborator_tracker.py"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CollaboratorActivityTracker
+  - community/test_collaborator_trackerpy
 ---
 
 # _is_fixture_uid()
@@ -22,4 +22,4 @@ tags:
 - [[test_is_fixture_uid_passes_real_uids()]] - `calls` [EXTRACTED]
 - [[test_lifespan_prune.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CollaboratorActivityTracker
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

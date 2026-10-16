@@ -11,7 +11,7 @@ members: 19
 
 ## Members
 - [[dot-_filter_msg()]] - code - gateway/tests/test_log_sanitizer.py
-- [[dot-setup_method()_22]] - code - gateway/tests/test_log_sanitizer.py
+- [[dot-setup_method()_34]] - code - gateway/tests/test_log_sanitizer.py
 - [[dot-test_aws_key_redacted()]] - code - gateway/tests/test_log_sanitizer.py
 - [[dot-test_clean_message_unchanged()]] - code - gateway/tests/test_log_sanitizer.py
 - [[dot-test_credit_card_redacted()_1]] - code - gateway/tests/test_log_sanitizer.py
@@ -38,10 +38,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_AlertDispatcher]]
+- 4 edges to [[_COMMUNITY_AlertDispatcher]]
+- 1 edge to [[_COMMUNITY_KeyVault]]
 
 ## Top bridge nodes
+- [[install_log_sanitizer()]] - degree 5, connects to 2 communities
 - [[TestLogSanitizer]] - degree 17, connects to 1 community
-- [[install_log_sanitizer()]] - degree 5, connects to 1 community
 - [[test_log_sanitizer.py]] - degree 3, connects to 1 community
-- [[dot-setup_method()_22]] - degree 2, connects to 1 community
+- [[dot-setup_method()_34]] - degree 2, connects to 1 community

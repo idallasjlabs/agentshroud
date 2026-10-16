@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "_FakeAttack"
+community: "AuditChain"
 location: "L191"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_FakeAttack
+  - community/AuditChain
 ---
 
 # _FakeAttack
@@ -37,7 +37,7 @@ tags:
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_FakeAttack
+#graphify/code #graphify/INFERRED #community/AuditChain

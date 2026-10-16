@@ -40,7 +40,7 @@ tags:
 - [[get_users()]] - `calls` [EXTRACTED]
 - [[restart_service()_2]] - `calls` [EXTRACTED]
 - [[scan()]] - `calls` [EXTRACTED]
-- [[set_mode()]] - `calls` [EXTRACTED]
+- [[set_mode()_1]] - `calls` [EXTRACTED]
 - [[stop_service()_2]] - `calls` [EXTRACTED]
 - [[test_cli_coverage.py]] - `imports` [EXTRACTED]
 

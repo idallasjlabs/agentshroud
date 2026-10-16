@@ -10,7 +10,7 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[check()_2]] - code - tests/startup_smoke/test_openclaw_readiness_retry.sh
+- [[check()_1]] - code - tests/startup_smoke/test_openclaw_readiness_retry.sh
 - [[extract_default()]] - code - tests/startup_smoke/test_openclaw_model_provider_consistency.sh
 - [[smoke.sh Startup Smoke Runner]] - code - scripts/smoke.sh
 - [[test_openclaw_model_provider_consistency.sh]] - code - tests/startup_smoke/test_openclaw_model_provider_consistency.sh

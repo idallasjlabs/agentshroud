@@ -32,7 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_First Time Setup]]
+- 1 edge to [[_COMMUNITY_Error Index]]
 
 ## Top bridge nodes
 - [[Kill Switch Procedure_1]] - degree 10, connects to 1 community

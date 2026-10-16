@@ -14,14 +14,14 @@ members: 43
 - [[dot-test_credential_redaction()]] - code - gateway/tests/test_prompt_protection.py
 - [[dot-test_disabled_protection()]] - code - gateway/tests/test_prompt_protection.py
 - [[dot-test_dynamic_bot_hostname_redaction()]] - code - gateway/tests/test_prompt_protection.py
-- [[dot-test_edge_cases()_3]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_edge_cases()]] - code - gateway/tests/test_prompt_protection.py
 - [[dot-test_file_reference_redaction()]] - code - gateway/tests/test_prompt_protection.py
 - [[dot-test_fuzzy_matching()]] - code - gateway/tests/test_prompt_protection.py
 - [[dot-test_hash_fingerprinting()]] - code - gateway/tests/test_prompt_protection.py
 - [[dot-test_infrastructure_redaction()]] - code - gateway/tests/test_prompt_protection.py
-- [[dot-test_initialization()_5]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_initialization()]] - code - gateway/tests/test_prompt_protection.py
 - [[dot-test_multiple_redactions()]] - code - gateway/tests/test_prompt_protection.py
-- [[dot-test_normal_content_passes()_1]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_normal_content_passes()]] - code - gateway/tests/test_prompt_protection.py
 - [[dot-test_product_name_not_redacted()]] - code - gateway/tests/test_prompt_protection.py
 - [[dot-test_protected_content_loading()]] - code - gateway/tests/test_prompt_protection.py
 - [[dot-test_protection_stats()]] - code - gateway/tests/test_prompt_protection.py
@@ -33,7 +33,7 @@ members: 43
 - [[Sample protected content for testing.]] - rationale - gateway/tests/test_prompt_protection.py
 - [[Test adding protected content.]] - rationale - gateway/tests/test_prompt_protection.py
 - [[Test cases for PromptProtection class.]] - rationale - gateway/tests/test_prompt_protection.py
-- [[Test edge cases and error conditions._2]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test edge cases and error conditions.]] - rationale - gateway/tests/test_prompt_protection.py
 - [[Test fuzzy matching against protected content.]] - rationale - gateway/tests/test_prompt_protection.py
 - [[Test getting protection statistics.]] - rationale - gateway/tests/test_prompt_protection.py
 - [[Test loading protected content from files.]] - rationale - gateway/tests/test_prompt_protection.py

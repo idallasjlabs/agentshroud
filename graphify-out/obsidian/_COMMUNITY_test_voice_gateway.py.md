@@ -1,17 +1,18 @@
 ---
 type: community
 cohesion: 0.02
-members: 99
+members: 93
 ---
 
 # test_voice_gateway.py
 
 **Cohesion:** 0.02 - loosely connected
-**Members:** 99 nodes
+**Members:** 93 nodes
 
 ## Members
 - [[usetellasktalk toswitch to... modelagent - ('model', gateway     mo]] - rationale - gateway/tests/test_voice_gateway.py
 - [[voice is the one endpoint reachable over the public internet (Tailscale     Fun]] - rationale - gateway/tests/test_voice_gateway.py
+- [[A connection-level error (not a statustimeout) also falls back to the     troub]] - rationale - gateway/tests/test_voice_gateway.py
 - [[A modelpipeline warm-up failure at startup must NOT down the gateway.      Regr]] - rationale - gateway/tests/test_voice_gateway.py
 - [[After a set, the read query reports the tracked level in percent.]] - rationale - gateway/tests/test_voice_gateway.py
 - [[Before any set, the read query reports an unknown-state calibration hint.]] - rationale - gateway/tests/test_voice_gateway.py
@@ -34,14 +35,12 @@ members: 99
 - [[No fabricated version when the env var is genuinely unset — say     'unknown' ra]] - rationale - gateway/tests/test_voice_gateway.py
 - [[Read phrasings match; set commands and unrelated speech do not.]] - rationale - gateway/tests/test_voice_gateway.py
 - [[Regression 2026-08-08 the voice assistant answered what version is     AgentSh]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Stand-in for kokoro.KPipeline a callable yielding (graphemes, phonemes,     aud]] - rationale - gateway/tests/test_voice_gateway.py
 - [[Text that normalises to emptywhitespace returns b'' without invoking Kokoro.]] - rationale - gateway/tests/test_voice_gateway.py
 - [[The very first frame after WS accept must be idle, not listening.]] - rationale - gateway/tests/test_voice_gateway.py
 - [[WHISPER_MODEL_DIR (baked path) beats WHISPER_MODEL_SIZE — preserves offline guar]] - rationale - gateway/tests/test_voice_gateway.py
 - [[WHISPER_MODEL_DIR env var is honoured _MODEL_PATH resolves to the directory]] - rationale - gateway/tests/test_voice_gateway.py
 - [[WHISPER_MODEL_SIZE overrides the default when WHISPER_MODEL_DIR is unset.]] - rationale - gateway/tests/test_voice_gateway.py
 - [[When agent= is absent the default agent must be 'direct' (fast local     model)]] - rationale - gateway/tests/test_voice_gateway.py
-- [[When OUTPUT_SAMPLE_RATE (24000, Kokoro native) != TARGET_SAMPLE_RATE     (16000)]] - rationale - gateway/tests/test_voice_gateway.py
 - [[When _VG_AUTH_TOKEN is empty, any connection is accepted (dev  backward compat)]] - rationale - gateway/tests/test_voice_gateway.py
 - [[When secret file is absent, _GATEWAY_TOKEN falls back to GATEWAY_AUTH_TOKEN env]] - rationale - gateway/tests/test_voice_gateway.py
 - [[When the LLM raises in the 'direct' agent path       - the user message appende]] - rationale - gateway/tests/test_voice_gateway.py
@@ -51,18 +50,16 @@ members: 99
 - [[_call_agent_stream must POST to forwardstream with streamtrue, not     the ol]] - rationale - gateway/tests/test_voice_gateway.py
 - [[_call_agent_stream must pass a structured httpx.Timeout to AsyncClient.      The]] - rationale - gateway/tests/test_voice_gateway.py
 - [[_call_agent_stream must yield a spoken fallback string and log a WARNING     whe]] - rationale - gateway/tests/test_voice_gateway.py
-- [[_fake_kokoro_pipeline()]] - code - gateway/tests/test_voice_gateway.py
 - [[_load_ota_tokens merges env + secret file and falls back to the WS token.]] - rationale - gateway/tests/test_voice_gateway.py
 - [[_mock_llm_stream_resp()]] - code - gateway/tests/test_voice_gateway.py
-- [[_mock_stream_resp()_1]] - code - gateway/tests/test_voice_gateway.py
+- [[_mock_stream_resp()]] - code - gateway/tests/test_voice_gateway.py
 - [[_reset_reply_resume()]] - code - gateway/tests/test_voice_gateway.py
 - [[_run_disconnect_test()]] - code - gateway/tests/test_voice_gateway.py
 - [[pcm_chunks must stop growing once _PCM_MAX_BYTES is reached.      A device that]] - rationale - gateway/tests/test_voice_gateway.py
-- [[synthesize() feeds the normalised (no-markdown, no-token) text to Kokoro.      V]] - rationale - gateway/tests/test_voice_gateway.py
-- [[synthesize() runs the Kokoro pipeline; when rates match no resampling occurs.]] - rationale - gateway/tests/test_voice_gateway.py
 - [[test_answer_volume_query_returns_tracked_level()]] - code - gateway/tests/test_voice_gateway.py
 - [[test_answer_volume_query_unknown_before_any_set()]] - code - gateway/tests/test_voice_gateway.py
 - [[test_call_agent_read_timeout_returns_fallback()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_call_agent_stream_generic_http_error_falls_back()]] - code - gateway/tests/test_voice_gateway.py
 - [[test_call_agent_stream_posts_to_forward_stream_endpoint()]] - code - gateway/tests/test_voice_gateway.py
 - [[test_call_agent_uses_structured_timeout()]] - code - gateway/tests/test_voice_gateway.py
 - [[test_health_returns_ok()]] - code - gateway/tests/test_voice_gateway.py
@@ -86,11 +83,8 @@ members: 99
 - [[test_tts_empty_text_returns_empty()]] - code - gateway/tests/test_voice_gateway.py
 - [[test_tts_kokoro_pipeline_load_failure_raises()]] - code - gateway/tests/test_voice_gateway.py
 - [[test_tts_kokoro_synthesis_failure_raises()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_tts_resamples_24000_to_16000()]] - code - gateway/tests/test_voice_gateway.py
 - [[test_tts_synthesize_fades_sentence_edges()]] - code - gateway/tests/test_voice_gateway.py
 - [[test_tts_synthesize_only_whitespace_after_normalise_returns_empty()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_tts_synthesize_passes_normalised_text_to_kokoro()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_tts_synthesize_via_kokoro()]] - code - gateway/tests/test_voice_gateway.py
 - [[test_voice_gateway.py]] - code - gateway/tests/test_voice_gateway.py
 - [[test_voice_system_message_includes_agentshroud_version()]] - code - gateway/tests/test_voice_gateway.py
 - [[test_voice_system_message_version_unknown_when_env_unset()]] - code - gateway/tests/test_voice_gateway.py
@@ -119,18 +113,20 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 31 edges to [[_COMMUNITY__pcm_bytes]]
-- 9 edges to [[_COMMUNITY_test_voice_latency_guard.py]]
-- 8 edges to [[_COMMUNITY_server.py]]
+- 8 edges to [[_COMMUNITY_test_voice_latency_guard.py]]
 - 6 edges to [[_COMMUNITY_AsyncMock]]
 - 6 edges to [[_COMMUNITY_tts.py]]
 - 6 edges to [[_COMMUNITY__fw_client]]
+- 5 edges to [[_COMMUNITY_test_voice_latency_guard.py_1]]
+- 4 edges to [[_COMMUNITY_test_voice_gateway.py_1]]
+- 4 edges to [[_COMMUNITY_server.py_1]]
 - 1 edge to [[_COMMUNITY_TestNormalizeForSpeech]]
 - 1 edge to [[_COMMUNITY_stt.py]]
 - 1 edge to [[_COMMUNITY_TestSplitForSpeech]]
 
 ## Top bridge nodes
-- [[test_voice_gateway.py]] - degree 115, connects to 8 communities
+- [[test_voice_gateway.py]] - degree 115, connects to 10 communities
 - [[_run_disconnect_test()]] - degree 5, connects to 1 community
+- [[test_call_agent_stream_generic_http_error_falls_back()]] - degree 3, connects to 1 community
 - [[test_listen_without_end_times_out()]] - degree 3, connects to 1 community
 - [[test_pcm_buffer_bounded()]] - degree 3, connects to 1 community
-- [[test_ws_direct_agent_pipeline_error_pops_history_and_recovery_send_fails()]] - degree 3, connects to 1 community

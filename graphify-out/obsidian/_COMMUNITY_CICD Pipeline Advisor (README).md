@@ -13,8 +13,8 @@ members: 10
 - [[dot-agentsskillsi-cicdREADME]] - document - .agents/skills/i-cicd/README.md
 - [[CICD Pipeline Advisor (CICD)_1]] - document - docker/config/hermes/skills/i-cicd/README.md
 - [[CICD Pipeline Advisor (README)]] - document - docker/config/hermes/skills/i-cicd/README.md
-- [[Purpose_189]] - document - .agents/skills/i-cicd/README.md
-- [[Purpose_190]] - document - docker/config/hermes/skills/i-cicd/README.md
+- [[Purpose_188]] - document - .agents/skills/i-cicd/README.md
+- [[Purpose_189]] - document - docker/config/hermes/skills/i-cicd/README.md
 - [[Related Skills_118]] - document - .agents/skills/i-cicd/README.md
 - [[Related Skills_119]] - document - docker/config/hermes/skills/i-cicd/README.md
 - [[Usage_131]] - document - .agents/skills/i-cicd/README.md

@@ -29,7 +29,7 @@ members: 40
 - [[NanoClaw Agent Platform]] - concept - docs/papers/agentshroud-ieee-paper.md
 - [[OpenClaw Agent Platform]] - concept - docs/papers/agentshroud-ieee-paper.md
 - [[Outbound Information Filter (R-01)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[PII Sanitizer_2]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[PII Sanitizer_1]] - concept - docs/papers/agentshroud-ieee-paper.md
 - [[Per-User Session Isolation (R-04, R-05)]] - concept - docs/papers/agentshroud-ieee-paper.md
 - [[Pi-hole DNS Filtering]] - concept - docs/papers/agentshroud-ieee-paper.md
 - [[Prompt Injection Defense (Ensemble of 20+ Patterns)]] - concept - docs/papers/agentshroud-ieee-paper.md

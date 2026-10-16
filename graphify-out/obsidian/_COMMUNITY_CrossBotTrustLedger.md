@@ -10,7 +10,7 @@ members: 85
 **Members:** 85 nodes
 
 ## Members
-- [[dot-__post_init__()_4]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[dot-__post_init__()_6]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[dot-_missing_()]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[dot-_propagate()]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[dot-_shared_tm()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
@@ -19,7 +19,7 @@ members: 85
 - [[dot-incident_count()]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[dot-peers_of()]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[dot-record_incident()]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[dot-register_peer()]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[dot-register_peer()_1]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[dot-register_trust_manager()]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[dot-test_adding_a_fourth_bot_extends_the_mesh_to_everyone()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[dot-test_bot_without_registered_trust_manager_is_skipped()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
@@ -46,7 +46,7 @@ members: 85
 - [[dot-test_propagated_to_is_empty_for_no_peers()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[dot-test_propagation_limited_to_max_depth()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[dot-test_propagation_registers_unregistered_peer_agent()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[dot-test_register_peer()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[dot-test_register_peer()_1]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[dot-test_register_peer_is_bidirectional_by_default()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[dot-test_single_bot_has_no_peers_and_does_not_raise()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[dot-test_three_bots_form_a_full_mesh()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
@@ -91,7 +91,7 @@ members: 85
 - [[build_full_mesh N-agent-scalable topology construction.      Adding a 3rd4thN]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
 - [[cross_bot_trust_ledger.py]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[hermes_tm()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[ledger()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
+- [[ledger()_2]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[openclaw_tm()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[policy()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[test_cross_bot_trust_ledger.py]] - code - gateway/tests/test_cross_bot_trust_ledger.py
@@ -104,23 +104,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 18 edges to [[_COMMUNITY_PIIConfig]]
-- 18 edges to [[_COMMUNITY_TrustConfig]]
-- 7 edges to [[_COMMUNITY_OutboundInfoFilter]]
-- 4 edges to [[_COMMUNITY_PipelineAction]]
-- 3 edges to [[_COMMUNITY_AuditChain]]
-- 3 edges to [[_COMMUNITY__FakeAttack]]
+- 35 edges to [[_COMMUNITY_TrustConfig]]
+- 16 edges to [[_COMMUNITY_AuditChain]]
 - 2 edges to [[_COMMUNITY_KillSwitchMonitor]]
-- 1 edge to [[_COMMUNITY_Recommendation_1]]
-- 1 edge to [[_COMMUNITY_Enum]]
-- 1 edge to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_EnvelopeSigner]]
-- 1 edge to [[_COMMUNITY_Path]]
-- 1 edge to [[_COMMUNITY_KeyVault]]
+- 2 edges to [[_COMMUNITY_PipelineAction_1]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_SkillGuard]]
+- 1 edge to [[_COMMUNITY_PIIConfig]]
+- 1 edge to [[_COMMUNITY_Action]]
+- 1 edge to [[_COMMUNITY_PipelineAction]]
+- 1 edge to [[_COMMUNITY_Path_3]]
 
 ## Top bridge nodes
-- [[CrossBotTrustLedger_1]] - degree 37, connects to 8 communities
-- [[BotIncidentSeverity]] - degree 25, connects to 5 communities
-- [[CrossBotTrustLedger]] - degree 26, connects to 2 communities
-- [[TrustManager_3]] - degree 25, connects to 2 communities
+- [[BotIncidentSeverity]] - degree 25, connects to 6 communities
+- [[CrossBotTrustLedger_1]] - degree 37, connects to 4 communities
 - [[TrustDecayPolicy]] - degree 17, connects to 2 communities
+- [[cross_bot_trust_ledger.py]] - degree 6, connects to 2 communities
+- [[CrossBotTrustLedger]] - degree 26, connects to 1 community

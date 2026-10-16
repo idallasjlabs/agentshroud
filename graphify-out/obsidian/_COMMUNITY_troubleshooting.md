@@ -28,7 +28,7 @@ members: 26
 - [[PII Sanitizer Blocking Legitimate Content]] - document - docs/runbooks/troubleshooting.md
 - [[Prompt Injection Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
 - [[Quick Diagnosis Flow]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
-- [[Related Notes_35]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[Related Notes_32]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
 - [[SSH Command Approval Stuck]] - document - docs/runbooks/troubleshooting.md
 - [[Security Module Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
 - [[Startup Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
@@ -47,7 +47,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_TELEGRAM_ISSUES]]
 - 2 edges to [[_COMMUNITY_Known Log Messages]]
-- 1 edge to [[_COMMUNITY_First Time Setup]]
+- 1 edge to [[_COMMUNITY_Error Index]]
 - 1 edge to [[_COMMUNITY_Tailscale Remote Access Setup]]
 
 ## Top bridge nodes

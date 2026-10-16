@@ -12,7 +12,7 @@ members: 34
 ## Members
 - [[1. Build and Start OpenClaw]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[2. Access OpenClaw Control UI]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Architecture Overview_2]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Architecture Overview_1]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[Communication Channels]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[Control UI Not Accessible]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[Current Security Posture]] - document - docs/setup/OPENCLAW_SETUP.md
@@ -20,15 +20,15 @@ members: 34
 - [[Gateway Can't Reach OpenClaw]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[Initial Configuration]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[Inside Container]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Next Steps_3]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Next Steps_2]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[On Host (Docker Volumes)]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[OpenClaw Features Now Available]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[OpenClaw Setup Guide - agentshroud.ai Bot]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[OpenClaw Won't Start]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Quick Start_5]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Quick Start_4]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[Recommendations]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[SSH Not Working]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Security Notes_2]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Security Notes_1]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[Step 1 Add Your OpenAI API Key]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[Step 2 Configure Bot Identity]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[Step 3 Load Persona (Optional)]] - document - docs/setup/OPENCLAW_SETUP.md
@@ -36,7 +36,7 @@ members: 34
 - [[Step 5 Configure SSH Access (For Bot to Work on Remote Systems)]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[Through AgentShroud Gateway (Port 8080)]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[Through Control UI (Port 18789)]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Troubleshooting_14]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[Troubleshooting_13]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[Using OpenClaw]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[Via CLI]] - document - docs/setup/OPENCLAW_SETUP.md
 - [[What Changed]] - document - docs/setup/OPENCLAW_SETUP.md

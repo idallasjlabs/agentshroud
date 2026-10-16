@@ -13,12 +13,12 @@ members: 10
 - [[Current Configuration]] - document - docs/setup/IMESSAGE_STATUS.md
 - [[Current State Partially Working]] - document - docs/setup/IMESSAGE_STATUS.md
 - [[Current Status Summary]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[Next Steps]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[Next Steps_11]] - document - docs/setup/IMESSAGE_STATUS.md
 - [[Option 1 Grant Permissions (NOT RECOMMENDED - Won't Work from Container)]] - document - docs/setup/IMESSAGE_STATUS.md
 - [[Option 2 Use BlueBubbles (RECOMMENDED ✅)]] - document - docs/setup/IMESSAGE_STATUS.md
 - [[Solutions]] - document - docs/setup/IMESSAGE_STATUS.md
 - [[The Error]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[What This Means]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[What This Means_1]] - document - docs/setup/IMESSAGE_STATUS.md
 - [[iMessage Integration Status]] - document - docs/setup/IMESSAGE_STATUS.md
 
 ## Live Query (requires Dataview plugin)

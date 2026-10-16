@@ -30,8 +30,8 @@ members: 33
 - [[PromptGuard (Prompt Injection Defense)]] - concept - docs/papers/agentshroud-whitepaper.md
 - [[RBAC (Role-Based Access Control)]] - concept - docs/planning/reviews/enforcement-audit-v0.7.0.md
 - [[Recommended Next Closure Sequence]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[Summary_9]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[Summary_10]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
+- [[Summary_8]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[Summary_9]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
 - [[Verdict ✅ CONDITIONAL GO]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
 - [[Wazuh CVE-2025-24016 (CVSS 9.9 RCE)]] - concept - docs/papers/agentshroud-whitepaper.md
 - [[XMLFunction-Call Leak Filter]] - concept - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md

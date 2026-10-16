@@ -11,7 +11,7 @@ members: 5
 
 ## Members
 - [[Project Management (PM)]] - document - docker/config/openclaw/skills/i-pm/README.md
-- [[Purpose_48]] - document - docker/config/openclaw/skills/i-pm/README.md
+- [[Purpose_53]] - document - docker/config/openclaw/skills/i-pm/README.md
 - [[Related Skills_41]] - document - docker/config/openclaw/skills/i-pm/README.md
 - [[Usage_44]] - document - docker/config/openclaw/skills/i-pm/README.md
 - [[openclawskillsi-pmREADME]] - document - docker/config/openclaw/skills/i-pm/README.md

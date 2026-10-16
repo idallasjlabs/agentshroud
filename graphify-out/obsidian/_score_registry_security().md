@@ -12,7 +12,7 @@ tags:
 # _score_registry_security()
 
 ## Connections
-- [[Path_57]] - `calls` [EXTRACTED]
+- [[Path_33]] - `calls` [EXTRACTED]
 - [[Score domain 18 Registry Security (0-5). NIST 800-190 §3.2.      0=public regis]] - `rationale_for` [EXTRACTED]
 - [[_app_state_has()]] - `calls` [EXTRACTED]
 - [[_is_containerized()]] - `calls` [EXTRACTED]

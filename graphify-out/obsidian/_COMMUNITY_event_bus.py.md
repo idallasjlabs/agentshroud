@@ -14,13 +14,13 @@ members: 13
 - [[Environment Variables Used_8]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
 - [[Event Types Emitted by main.py]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
 - [[EventBus.emit(event)]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
-- [[Function Details_47]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Function Details_43]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
 - [[Imports From  Exports To_7]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
-- [[Key Classes  Functions_49]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Key Classes  Functions_45]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
 - [[Known Issues  Notes_8]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
-- [[Purpose_181]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
-- [[Related_53]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
-- [[Responsibilities_50]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Purpose_169]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Related_49]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Responsibilities_45]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
 - [[event_bus.py_2]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
 - [[make_event(event_type, summary, details, severity)]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
 

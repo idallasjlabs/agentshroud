@@ -25,8 +25,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_SessionError]]
-- 3 edges to [[_COMMUNITY_SessionManager]]
+- 6 edges to [[_COMMUNITY_SessionError]]
+- 2 edges to [[_COMMUNITY_SessionManager]]
 
 ## Top bridge nodes
 - [[TestSessionValidation]] - degree 12, connects to 2 communities

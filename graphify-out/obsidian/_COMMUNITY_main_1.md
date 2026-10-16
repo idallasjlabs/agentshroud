@@ -20,7 +20,7 @@ members: 13
 - [[CLI entry point. Returns the aggregated exit code (0 = all passed).]] - rationale - gateway/tools/multi_host_test.py
 - [[Render an aligned PASSFAIL table plus a totals line.]] - rationale - gateway/tools/multi_host_test.py
 - [[TestMain_1]] - code - gateway/tests/test_multi_host_test.py
-- [[main()_32]] - code - gateway/tools/multi_host_test.py
+- [[main()_29]] - code - gateway/tools/multi_host_test.py
 - [[multi-host-test.sh]] - code - scripts/multi-host-test.sh
 - [[multi-host-test.sh script]] - code - scripts/multi-host-test.sh
 
@@ -42,7 +42,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_TestParseHosts]]
 
 ## Top bridge nodes
-- [[main()_32]] - degree 18, connects to 6 communities
+- [[main()_29]] - degree 18, connects to 6 communities
 - [[TestMain_1]] - degree 10, connects to 3 communities
 - [[dot-test_main_all_pass_with_injected_runner()]] - degree 3, connects to 1 community
 - [[dot-test_main_failure_nonzero_exit()]] - degree 3, connects to 1 community

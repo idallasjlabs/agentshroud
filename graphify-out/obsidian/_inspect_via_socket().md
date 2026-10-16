@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_describe_service()]] - `calls` [EXTRACTED]
-- [[Any_75]] - `references` [EXTRACTED]
+- [[Any_25]] - `references` [EXTRACTED]
 - [[Query Docker daemon directly via Unix socket — no CLI needed.]] - `rationale_for` [EXTRACTED]
 - [[services.py]] - `contains` [EXTRACTED]
 

@@ -41,7 +41,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_AlertDispatcher]]
+- 4 edges to [[_COMMUNITY_KeyVault]]
 
 ## Top bridge nodes
 - [[check_command()]] - degree 15, connects to 1 community

@@ -11,23 +11,23 @@ members: 39
 
 ## Members
 - [[75 Security Modules]] - document - README.md
-- [[Acknowledgments]] - document - README.md
+- [[Acknowledgments_1]] - document - README.md
 - [[Agent Containment]] - document - README.md
 - [[AgentShroud vs Unprotected Agent]] - document - README.md
 - [[AgentShroud™ README]] - document - README.md
-- [[Architecture_2]] - document - README.md
+- [[Architecture_1]] - document - README.md
 - [[Content & Context Guards]] - document - README.md
 - [[Control Centers]] - document - README.md
 - [[Core Objectives]] - document - README.md
 - [[Core Security Pipeline]] - document - README.md
 - [[Development]] - document - README.md
 - [[Development Resources]] - document - README.md
-- [[Documentation_2]] - document - README.md
+- [[Documentation_1]] - document - README.md
 - [[Example Configurations]] - document - README.md
 - [[GitHub Pages Deploy Workflow]] - document - .github/workflows/pages.yml
 - [[Infrastructure & Monitoring]] - document - README.md
 - [[Media]] - document - README.md
-- [[OpenClaw Bot_1]] - concept - README.md
+- [[OpenClaw Bot]] - concept - README.md
 - [[Proxy & Network Layer]] - document - README.md
 - [[Quick Start_2]] - document - README.md
 - [[Supporting Infrastructure]] - document - README.md

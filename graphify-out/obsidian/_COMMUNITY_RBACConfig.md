@@ -1,179 +1,218 @@
 ---
 type: community
 cohesion: 0.02
-members: 164
+members: 203
 ---
 
 # RBACConfig
 
 **Cohesion:** 0.02 - loosely connected
-**Members:** 164 nodes
+**Members:** 203 nodes
 
 ## Members
-- [[dot-__init__()_59]] - code - gateway/security/group_workspace.py
-- [[dot-__init__()_60]] - code - gateway/security/shared_memory.py
-- [[dot-_is_authorized_group_writer()]] - code - gateway/security/shared_memory.py
-- [[dot-_is_owner()]] - code - gateway/security/group_workspace.py
-- [[dot-_require_memory()]] - code - gateway/security/group_workspace.py
-- [[dot-append_dm_memory()]] - code - gateway/security/group_workspace.py
-- [[dot-append_group_memory()]] - code - gateway/security/group_workspace.py
-- [[dot-append_to_group_memory()]] - code - gateway/security/shared_memory.py
-- [[dot-append_to_user_memory()]] - code - gateway/security/shared_memory.py
-- [[dot-can_access()]] - code - gateway/security/group_workspace.py
-- [[dot-dm_workspace_id()]] - code - gateway/security/group_workspace.py
+- [[dot-__init__()_186]] - code - gateway/security/tool_acl.py
+- [[dot-_can_use_tool_impl()]] - code - gateway/security/tool_acl.py
+- [[dot-_get_group_tool_allowlist()]] - code - gateway/security/tool_acl.py
+- [[dot-_get_role()]] - code - gateway/security/tool_acl.py
+- [[dot-can_use_high_risk()]] - code - gateway/security/group_rbac.py
+- [[dot-can_use_tool()_1]] - code - gateway/security/tool_acl.py
+- [[dot-can_use_tool_from_origin()]] - code - gateway/security/tool_acl.py
+- [[dot-can_use_tool_in_group_context()]] - code - gateway/security/tool_acl.py
+- [[dot-check_tool_rate_limit()]] - code - gateway/security/tool_acl.py
+- [[dot-effective_admin()]] - code - gateway/security/tool_acl.py
+- [[dot-effective_collaborator_allowed()]] - code - gateway/security/tool_acl.py
+- [[dot-effective_private()]] - code - gateway/security/tool_acl.py
+- [[dot-enforcer()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-get_active_project_for_user()]] - code - gateway/security/group_config.py
 - [[dot-get_all_member_ids()]] - code - gateway/security/group_config.py
+- [[dot-get_allowed_tools()]] - code - gateway/security/tool_acl.py
+- [[dot-get_denial_counts()]] - code - gateway/security/tool_acl.py
+- [[dot-get_denied_tools()]] - code - gateway/security/tool_acl.py
 - [[dot-get_group_admin_ids()]] - code - gateway/security/group_config.py
+- [[dot-get_group_safe_response_prefix()]] - code - gateway/security/group_config.py
+- [[dot-get_user_collab_mode()]] - code - gateway/security/group_config.py
+- [[dot-get_user_groups()]] - code - gateway/security/group_config.py
 - [[dot-get_user_groups_by_id()]] - code - gateway/security/rbac_config.py
-- [[dot-group_workspace_id()]] - code - gateway/security/group_workspace.py
-- [[dot-model_post_init()]] - code - gateway/security/group_config.py
-- [[dot-read_dm_memory()]] - code - gateway/security/group_workspace.py
-- [[dot-read_group_memory()]] - code - gateway/security/group_workspace.py
-- [[dot-resolve_workspace()]] - code - gateway/security/group_workspace.py
-- [[dot-test_cross_group_member_write_is_blocked()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[dot-test_disabled_manager_denies_group_resolve()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[dot-test_disabled_manager_still_allows_dm()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[dot-test_dm_context_needs_no_membership()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[dot-test_dm_context_resolves_to_user_namespace()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[dot-test_dm_workspace_id_differs_from_group()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[dot-test_dm_write_invisible_from_group()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[dot-test_empty_author_is_denied()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[dot-test_enabled_default_true()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[dot-test_foreign_writer_blocked()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[dot-test_group_a_write_invisible_from_group_b()]] - code - gateway/tests/test_group_isolation.py
-- [[dot-test_group_a_write_invisible_from_group_b()_1]] - code - gateway/tests/test_group_workspace_manager.py
-- [[dot-test_group_b_write_invisible_from_group_a()]] - code - gateway/tests/test_group_isolation.py
-- [[dot-test_group_id_uses_group_prefix_namespace()]] - code - gateway/tests/test_group_isolation.py
-- [[dot-test_group_keyed_by_raw_chat_id()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[dot-test_group_memory_physically_isolated()]] - code - gateway/tests/test_group_isolation.py
-- [[dot-test_group_write_invisible_from_dm()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[dot-test_group_write_invisible_from_user_dm()]] - code - gateway/tests/test_group_isolation.py
-- [[dot-test_group_write_io_failure_returns_false()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[dot-test_group_writes_are_independent_namespaces()]] - code - gateway/tests/test_group_isolation.py
-- [[dot-test_legacy_no_author_write_still_appends()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[dot-test_legacy_no_rbac_write_still_appends()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[dot-test_member_authorized()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[dot-test_member_can_access_group_workspace()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[dot-test_member_of_a_cannot_read_group_b_memory()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[dot-test_member_of_a_denied_group_b()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[dot-test_member_resolves_to_shared_workspace_id()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[dot-test_member_write_succeeds()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[dot-test_members_share_group_memory()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[dot-test_memory_helpers_require_shared_memory()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[dot-test_merged_memory_separates_group_and_dm()]] - code - gateway/tests/test_group_isolation.py
-- [[dot-test_missing_rbac_is_denied()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[dot-test_no_rbac_owner_check_is_false()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[dot-test_no_teams_config_fails_closed()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[dot-test_non_member_write_is_blocked()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[dot-test_owner_write_into_user_memory_succeeds()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[dot-test_owner_write_succeeds()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[dot-test_rbac_without_is_owner_callable()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[dot-test_self_write_succeeds()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[dot-test_stranger_cannot_access()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[dot-test_stranger_cannot_read_group_memory()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[dot-test_stranger_cannot_write_group_memory()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[dot-test_stranger_resolve_raises()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[dot-test_system_owner_can_access_any_group()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[dot-test_two_members_of_same_group_share_one_workspace_id()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[dot-test_unknown_group_denied()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[dot-test_unknown_group_write_is_blocked()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[dot-test_user_dm_write_invisible_from_group()]] - code - gateway/tests/test_group_isolation.py
-- [[dot-test_user_dm_write_invisible_from_other_group()]] - code - gateway/tests/test_group_isolation.py
-- [[dot-test_user_write_io_failure_returns_false()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[dot-test_workspace_ids_are_distinct_per_group()]] - code - gateway/tests/test_group_workspace_manager.py
+- [[dot-get_user_projects()]] - code - gateway/security/group_config.py
+- [[dot-get_user_role()_3]] - code - gateway/security/rbac_config.py
+- [[dot-get_users_by_role()]] - code - gateway/security/rbac_config.py
+- [[dot-is_admin()]] - code - gateway/security/group_config.py
+- [[dot-is_admin_or_higher()]] - code - gateway/security/rbac_config.py
+- [[dot-is_collaborator_or_higher()]] - code - gateway/security/rbac_config.py
+- [[dot-is_group_admin()_2]] - code - gateway/security/group_config.py
+- [[dot-is_member()_1]] - code - gateway/security/group_config.py
+- [[dot-is_operator_or_higher()]] - code - gateway/security/rbac_config.py
+- [[dot-is_owner()_4]] - code - gateway/security/rbac_config.py
+- [[dot-model_post_init()_1]] - code - gateway/security/group_config.py
+- [[dot-rank()]] - code - gateway/security/group_rbac.py
+- [[dot-set_user_role()_1]] - code - gateway/security/rbac_config.py
+- [[dot-test_admin_blocked_from_private_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_admin_can_use_admin_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_admin_can_use_collaborator_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_admin_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_admin_denied_tools_contains_private()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_applies_to_any_agent_not_just_openclaw()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_collaborator_allowed_tools_does_not_include_private()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_collaborator_blocked_from_admin_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_collaborator_blocked_from_private_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_collaborator_can_use_allowed_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_collaborator_can_use_unknown_tool_when_not_denied()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_collaborator_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_collaborator_denied_tools_includes_admin_and_private()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_collaborator_denied_unknown_by_default()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_denial_is_counted_for_soc_correlation()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_group_allowlist_grants_extra_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_member_allowed_read_write_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[dot-test_member_allowed_web_search_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[dot-test_member_denied_gmail_private_tool_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[dot-test_member_denied_high_risk_tools_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[dot-test_member_denied_ssh_private_tool_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[dot-test_no_rbac_allows_read()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_no_rbac_defaults_to_viewer()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_non_owner_over_unverified_origin_is_unchanged()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_owner_allowed_all_tools_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[dot-test_owner_allowed_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_owner_can_use_admin_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_owner_can_use_any_unknown_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_owner_can_use_private_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_owner_claim_over_unverified_origin_is_refused_elevation()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_owner_denied_tools_is_empty()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_owner_over_verified_origin_keeps_full_authority()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_owner_unrestricted_matches_dm_behavior()]] - code - gateway/tests/test_group_rbac.py
+- [[dot-test_per_minute_limit_exceeded_blocks()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_per_user_isolation()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_private_and_admin_do_not_overlap()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_private_and_admin_do_not_overlap_with_collab_allowed()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_private_tool_still_blocked_even_when_deny_unknown_false()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_project_allowed_tools_grant_access()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_readonly_allowed_read_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[dot-test_readonly_allowed_web_search_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[dot-test_readonly_denied_email_sending_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[dot-test_readonly_denied_external_api_calls_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[dot-test_readonly_denied_file_deletion_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[dot-test_readonly_denied_skill_installation_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[dot-test_terminal_in_private_tools()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_terminal_tool_in_private_tools()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_terminal_tool_not_in_collab_allowed()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_under_threshold_passes()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_unknown_origin_defaults_to_unverified()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_unlisted_tool_always_passes()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_unverified_origin_still_allows_public_tools()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_viewer_blocked_from_admin_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_viewer_blocked_from_private_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_viewer_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
 - [[dot-wire_teams_config()]] - code - gateway/security/rbac_config.py
-- [[A legitimate group member's write lands.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[A member of group B cannot write into group A's memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[A non-owner author cannot write into another user's private memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[A user may write into their own private memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[A user who is NOT a member of the target group cannot poison its memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[AgentRegistry must accept group-{chat_id} agent IDs with chat_type metadata.]] - rationale - gateway/tests/test_group_isolation.py
-- [[An emptyNone author is never authorized.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[Append a timestamped entry to the group shared memory file.          Authorizati]] - rationale - gateway/security/shared_memory.py
-- [[Append content to user's private memory file.          Authorization (RT-5, WS-E]] - rationale - gateway/security/shared_memory.py
-- [[Append to a group's shared memory, gated by member access (fail-closed).]] - rationale - gateway/security/group_workspace.py
-- [[Append to a user's private DM memory (isolated from every group).]] - rationale - gateway/security/group_workspace.py
-- [[Back-compat existing callers that pass no author_idrbac_config keep working.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[Back-compat with no RBAC context supplied, the namespace-isolation         call]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[Both groups store separate content with no cross-contamination.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Canonical workspace id for a direct-message context ``dm-{user_id}``.]] - rationale - gateway/security/group_workspace.py
-- [[Canonical workspace id for a group chat_id ``group-{chat_id}``.]] - rationale - gateway/security/group_workspace.py
+- [[A non-owner gains nothing and loses nothing from origin checking.]] - rationale - gateway/tests/test_tool_acl.py
+- [[ADMIN_TOOLS]] - code - gateway/security/tool_acl.py
+- [[AgentShroud-side mitigation for the 'channel skips the check' CVE class.      Up]] - rationale - gateway/tests/test_tool_acl.py
+- [[Authorize a tool call, refusing owner elevation over an unverified origin.]] - rationale - gateway/security/tool_acl.py
+- [[COLLABORATOR_ALLOWED_TOOLS]] - code - gateway/security/tool_acl.py
+- [[Calls within limits should pass.]] - rationale - gateway/tests/test_tool_acl.py
+- [[Check if user has admin privileges or higher.]] - rationale - gateway/security/rbac_config.py
+- [[Check if user has collaborator privileges or higher.]] - rationale - gateway/security/rbac_config.py
+- [[Check if user has operator privileges or higher (admin, operator, owner).]] - rationale - gateway/security/rbac_config.py
+- [[Check if user is the owner (any platform).]] - rationale - gateway/security/rbac_config.py
+- [[Check whether user_id may invoke the named tool.          Returns             (]] - rationale - gateway/security/tool_acl.py
+- [[Check whether user_id may invoke tool_name when acting inside a group workspace.]] - rationale - gateway/security/tool_acl.py
+- [[Collect additional tools granted to the user via their group memberships.]] - rationale - gateway/security/tool_acl.py
 - [[Configuration for Role-Based Access Control.]] - rationale - gateway/security/rbac_config.py
-- [[Content appended to group-A memory must not appear in group-B memory.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Content appended to group-B must not appear in group-A memory.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Content written to a group must not appear in any user's private DM memory.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Content written to a user DM must not appear in any group memory.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Group workspace content must not leak into any user's DM workspace.]] - rationale - gateway/tests/test_group_isolation.py
+- [[Enforces tool-level access control based on user role and group membership.]] - rationale - gateway/security/tool_acl.py
+- [[Exceeding per-minute limit should return False.]] - rationale - gateway/tests/test_tool_acl.py
+- [[Fail closed an origin nobody vouched for is not trusted.          A caller that]] - rationale - gateway/tests/test_tool_acl.py
+- [[Get all users with a specific role.]] - rationale - gateway/security/rbac_config.py
+- [[Get role for a user ID.]] - rationale - gateway/security/rbac_config.py
 - [[GroupAccessDenied]] - code - gateway/security/group_workspace.py
-- [[GroupWorkspaceManager]] - code - gateway/security/group_workspace.py
-- [[High-level shared-memory API wrapping UserSessionManager storage.]] - rationale - gateway/security/shared_memory.py
-- [[If the underlying session store raises, the authorized write reports         fai]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[GroupRole]] - code - gateway/security/group_rbac.py
 - [[Merge group membership and admin IDs from TeamsConfig into RBAC.          Called]] - rationale - gateway/security/rbac_config.py
 - [[Merge group_overrides.json additions into the in-memory TeamsConfig.]] - rationale - gateway/security/group_config.py
-- [[No RBAC principal → cannot authorize → deny (fail-closed).]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[RBACConfig]] - code - gateway/tests/test_tool_acl.py
-- [[RBACConfig_1]] - code - gateway/security/rbac_config.py
+- [[Numeric rank for comparison — higher is more privileged.]] - rationale - gateway/security/group_rbac.py
+- [[Owner group-context check must match standard can_use_tool result.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Owner is allowed ALL tools in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Owner must have unrestricted access even in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[PRIVATE_TOOLS]] - code - gateway/security/tool_acl.py
+- [[Per-group roles for Telegram group workspace members.      Hierarchy (highest to]] - rationale - gateway/security/group_rbac.py
+- [[Per-tool call rate limit configuration.]] - rationale - gateway/security/tool_acl.py
+- [[Policy configuration for tool ACL enforcement.      Loaded from agentshroud.yaml]] - rationale - gateway/security/tool_acl.py
+- [[Public entry — records the decision for the SOC heat-map (SCRUM-80),         the_1]] - rationale - gateway/security/tool_acl.py
+- [[RBACConfig_2]] - code - gateway/tests/test_privacy_policy.py
+- [[RBACConfig_3]] - code - gateway/tests/test_tool_acl.py
+- [[RBACConfig_4]] - code - gateway/security/rbac_config.py
 - [[Raised when a user is not permitted to access a group workspace.      Subclasses]] - rationale - gateway/security/group_workspace.py
-- [[Read a group's shared memory, gated by member access (fail-closed).]] - rationale - gateway/security/group_workspace.py
-- [[Read a user's private DM memory (isolated from every group).]] - rationale - gateway/security/group_workspace.py
-- [[Resolve and access-control shared group workspaces.      Args         teams_con]] - rationale - gateway/security/group_workspace.py
-- [[Resolve the workspacecontext for an inbound message, fail-closed.          Retu]] - rationale - gateway/security/group_workspace.py
+- [[Rate limits are tracked independently per user.]] - rationale - gateway/tests/test_tool_acl.py
+- [[Read-only member IS allowed read tool in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Read-only member IS allowed web_search (low-risk) in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Read-only member denied email_sending even when called from group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Read-only member denied external_api_calls in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Read-only member denied file_deletion in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Read-only member denied skill_installation in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Read-only members must be denied high-risk tools in any group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Refusing ELEVATION is not the same as blanket denial — an unverified         ori]] - rationale - gateway/tests/test_tool_acl.py
+- [[Regular member (non-owner group role) is denied high-risk tools that require app]] - rationale - gateway/tests/test_group_rbac.py
+- [[Regular member IS allowed readwrite in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Regular member IS allowed web_search in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Regular member denied gmail (private tool) even in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Regular member denied ssh (private tool) in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Regular members can use medium-risk tools but not privateadmin tools.]] - rationale - gateway/tests/test_group_rbac.py
 - [[Resolved workspacecontext identity for a single inbound message.      Attribute]] - rationale - gateway/security/group_workspace.py
-- [[Result of the shared outbound text security scan.      processed a scan path (c]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return True if ``author_id`` may WRITE to ``group_id`` shared memory.          R]] - rationale - gateway/security/shared_memory.py
-- [[Return True if user_id is the system owner (oversight override).]] - rationale - gateway/security/group_workspace.py
-- [[Return True if user_id may access the workspace for ``group_chat_id``.]] - rationale - gateway/security/group_workspace.py
+- [[Return True if the user is within rate limits for the given tool.          Side-]] - rationale - gateway/security/tool_acl.py
+- [[Return True if this role is permitted to REQUEST high-risk tools.          OWNER]] - rationale - gateway/security/group_rbac.py
+- [[Return all groups the user belongs to.]] - rationale - gateway/security/group_config.py
+- [[Return all projects accessible to the user via group membership.]] - rationale - gateway/security/group_config.py
 - [[Return deduplicated list of all user IDs across all groups.]] - rationale - gateway/security/group_config.py
 - [[Return mapping of group_id → admin_user_id for all groups that have an admin.]] - rationale - gateway/security/group_config.py
 - [[Return member IDs of a group, or empty list if no teams config.]] - rationale - gateway/security/rbac_config.py
-- [[SharedMemoryManager]] - code - gateway/security/shared_memory.py
-- [[TeamsConfig]] - code - gateway/security/group_config.py
-- [[Test Group Config]] - code - gateway/tests/test_group_config.py
-- [[TestAgentRegistryGroupIdentity]] - code - gateway/tests/test_group_isolation.py
-- [[TestAuthorizationHelper]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[TestConfigGate]] - code - gateway/tests/test_group_workspace_manager.py
-- [[TestCrossGroupIsolation]] - code - gateway/tests/test_group_workspace_manager.py
-- [[TestDefensiveGuards]] - code - gateway/tests/test_group_workspace_manager.py
-- [[TestDmIsolation]] - code - gateway/tests/test_group_workspace_manager.py
-- [[TestGroupMemoryInvisibleFromDM]] - code - gateway/tests/test_group_isolation.py
-- [[TestGroupMemoryNamespaceIsolation]] - code - gateway/tests/test_group_isolation.py
-- [[TestGroupMemoryWriteACL]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[TestMembersShareGroupWorkspace]] - code - gateway/tests/test_group_workspace_manager.py
-- [[TestNonMemberDenied]] - code - gateway/tests/test_group_workspace_manager.py
-- [[TestUserMemoryWriteACL]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[TestWriteFailurePath]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[The owner may write into any group's memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[The owner may write into any user's private memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[Return per-user tool denial counts since last restart (V9-2 SOC correlation).]] - rationale - gateway/security/tool_acl.py
+- [[Return the effective collab_mode for a user.          Resolution order]] - rationale - gateway/security/group_config.py
+- [[Return the first project accessible to a user (primary project).]] - rationale - gateway/security/group_config.py
+- [[Return the list of tools the user is allowed to use (union of all sets).]] - rationale - gateway/security/tool_acl.py
+- [[Return the safe_response_prefix for the first group that the user belongs to]] - rationale - gateway/security/group_config.py
+- [[Return tools explicitly denied for this user.]] - rationale - gateway/security/tool_acl.py
+- [[Role_91]] - code - gateway/security/rbac_config.py
+- [[SCLCaller_2]] - code - gateway/tests/test_soc_bots.py
+- [[Set role for a user ID (owner-only operation).]] - rationale - gateway/security/rbac_config.py
+- [[TeamsConfig_1]] - code - gateway/tests/test_tool_acl.py
+- [[TeamsConfig_2]] - code - gateway/security/group_config.py
+- [[TestAdminAccess]] - code - gateway/tests/test_tool_acl.py
+- [[TestCVE2026_9367TerminalToolDenied]] - code - gateway/tests/test_tool_acl.py
+- [[TestClassificationSets]] - code - gateway/tests/test_tool_acl.py
+- [[TestCollaboratorAccess]] - code - gateway/tests/test_tool_acl.py
+- [[TestDenyUnknownFalse]] - code - gateway/tests/test_tool_acl.py
+- [[TestGroupToolAllowlist]] - code - gateway/tests/test_tool_acl.py
+- [[TestMemberGroupContext]] - code - gateway/tests/test_group_rbac.py
+- [[TestNoRBACConfig]] - code - gateway/tests/test_tool_acl.py
+- [[TestOriginAwareAuthorization]] - code - gateway/tests/test_tool_acl.py
+- [[TestOwnerAccess]] - code - gateway/tests/test_tool_acl.py
+- [[TestOwnerGroupContext]] - code - gateway/tests/test_group_rbac.py
+- [[TestReadOnlyMemberGroupContext]] - code - gateway/tests/test_group_rbac.py
+- [[TestToolRateLimiting]] - code - gateway/tests/test_tool_acl.py
+- [[TestViewerAccess]] - code - gateway/tests/test_tool_acl.py
+- [[The control is agent-agnostic by construction it takes an origin and         an]] - rationale - gateway/tests/test_tool_acl.py
+- [[The core of the CVE class a side channel claiming to be the owner.          ter]] - rationale - gateway/tests/test_tool_acl.py
+- [[The legitimate path must not regress.]] - rationale - gateway/tests/test_tool_acl.py
+- [[ToolACLConfig]] - code - gateway/security/tool_acl.py
+- [[ToolACLEnforcer]] - code - gateway/security/tool_acl.py
+- [[ToolRateLimit]] - code - gateway/security/tool_acl.py
+- [[Tools not in the rate-limit map should always pass.]] - rationale - gateway/tests/test_tool_acl.py
 - [[Top-level teams configuration parsed from agentshroud.yaml `teams` section.]] - rationale - gateway/security/group_config.py
-- [[User DM content must not leak into a group the user is NOT a member of.]] - rationale - gateway/tests/test_group_isolation.py
+- [[User roles in AgentShroud RBAC system.      Hierarchy (highest to lowest)]] - rationale - gateway/security/rbac_config.py
 - [[WorkspaceContext]] - code - gateway/security/group_workspace.py
-- [[Writes in group-A must not be readable from group-B.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Writing to a group that does not exist in the RBAC config is denied.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[_OutboundScan]] - code - gateway/proxy/telegram_proxy.py
 - [[_apply_persisted_overrides()]] - code - gateway/security/group_config.py
-- [[agent_isolation.py (AgentRegistry)]] - code - gateway/security/agent_isolation.py
-- [[get_merged_memory_for_user returns group section and private section separately.]] - rationale - gateway/tests/test_group_isolation.py
-- [[group-A and group-B memory files must be in separate directories.]] - rationale - gateway/tests/test_group_isolation.py
-- [[group-{chat_id} sessions must live under the 'groups' subdirectory.]] - rationale - gateway/tests/test_group_isolation.py
+- [[_make_rbac()]] - code - gateway/tests/test_tool_acl.py
+- [[acl_config()]] - code - gateway/tests/test_group_rbac.py
+- [[can_use_tool_from_origin]] - code - gateway/security/tool_acl.py
+- [[enforcer()_1]] - code - gateway/tests/test_group_rbac.py
+- [[enforcer()_2]] - code - gateway/tests/test_tool_acl.py
+- [[group_rbac.py (GroupRoleResolver)]] - code - gateway/security/group_rbac.py
 - [[group_workspace.py]] - code - gateway/security/group_workspace.py
-- [[group_workspace.py (GroupWorkspaceManager)]] - code - gateway/security/group_workspace.py
-- [[manager()_1]] - code - gateway/tests/test_group_workspace_manager.py
-- [[rbac()]] - code - gateway/tests/test_group_isolation.py
-- [[rbac()_1]] - code - gateway/tests/test_group_workspace_manager.py
-- [[rbac()_2]] - code - gateway/tests/test_shared_memory.py
-- [[rbac()_3]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[session_manager()_1]] - code - gateway/tests/test_group_workspace_manager.py
-- [[session_manager.py (UserSessionManager)]] - code - gateway/security/session_manager.py
-- [[shared_memory()]] - code - gateway/tests/test_group_isolation.py
-- [[shared_memory()_1]] - code - gateway/tests/test_group_workspace_manager.py
-- [[shared_memory()_2]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[shared_memory.py]] - code - gateway/security/shared_memory.py
-- [[shared_memory.py (SharedMemoryManager)]] - code - gateway/security/shared_memory.py
-- [[teams()]] - code - gateway/tests/test_group_isolation.py
-- [[teams()_1]] - code - gateway/tests/test_group_workspace_manager.py
-- [[test_group_isolation.py]] - code - gateway/tests/test_group_isolation.py
-- [[test_group_workspace_manager.py]] - code - gateway/tests/test_group_workspace_manager.py
-- [[test_shared_memory_write_acl.py]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[tmp_workspace()_1]] - code - gateway/tests/test_group_isolation.py
+- [[rbac()_2]] - code - gateway/tests/test_group_rbac.py
+- [[rbac()_3]] - code - gateway/tests/test_shared_memory.py
+- [[rbac()_4]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[rbac()_5]] - code - gateway/tests/test_tool_acl.py
+- [[teams()_4]] - code - gateway/tests/test_group_rbac.py
+- [[terminal_tool must be in PRIVATE_TOOLS and blocked for non-owner principals.]] - rationale - gateway/tests/test_tool_acl.py
+- [[test_group_rbac.py]] - code - gateway/tests/test_group_rbac.py
+- [[test_tool_acl.py]] - code - gateway/tests/test_tool_acl.py
+- [[tool_acl.py]] - code - gateway/security/tool_acl.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -183,54 +222,54 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 37 edges to [[_COMMUNITY_Role]]
-- 22 edges to [[_COMMUNITY_UserSessionManager]]
-- 20 edges to [[_COMMUNITY_PrivacyPolicyEnforcer]]
-- 20 edges to [[_COMMUNITY_test_shared_memory.py]]
-- 19 edges to [[_COMMUNITY_Action]]
-- 15 edges to [[_COMMUNITY_telegram_proxy.py]]
-- 15 edges to [[_COMMUNITY_GroupRoleResolver]]
-- 15 edges to [[_COMMUNITY_MiddlewareManager]]
-- 14 edges to [[_COMMUNITY_GroupConfig]]
+- 42 edges to [[_COMMUNITY_Action]]
+- 36 edges to [[_COMMUNITY_RBACConfig_1]]
+- 35 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 33 edges to [[_COMMUNITY_RBACConfig_2]]
+- 30 edges to [[_COMMUNITY_test_soc_bots.py]]
+- 27 edges to [[_COMMUNITY_PrivacyPolicyEnforcer]]
+- 21 edges to [[_COMMUNITY_MiddlewareManager]]
+- 19 edges to [[_COMMUNITY_TrustConfig]]
+- 19 edges to [[_COMMUNITY_GroupRoleResolver]]
+- 17 edges to [[_COMMUNITY_telegram_proxy.py]]
 - 13 edges to [[_COMMUNITY_MCPPolicyEngine]]
-- 13 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
-- 13 edges to [[_COMMUNITY_test_soc_bots.py]]
-- 12 edges to [[_COMMUNITY_AgentRegistry]]
-- 11 edges to [[_COMMUNITY_TelegramAPIProxy_1]]
+- 10 edges to [[_COMMUNITY_SOCWebSocketHandler]]
 - 10 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 9 edges to [[_COMMUNITY_forward.py]]
-- 7 edges to [[_COMMUNITY_rbac_config.py]]
+- 9 edges to [[_COMMUNITY_GroupConfig]]
 - 7 edges to [[_COMMUNITY_socrouter.py]]
-- 6 edges to [[_COMMUNITY_TestInboundChokepointWiring]]
-- 6 edges to [[_COMMUNITY_TestFromAuditChainEntry]]
-- 6 edges to [[_COMMUNITY_dot-get_merged_memory_for_user]]
-- 5 edges to [[_COMMUNITY_dot-get_user_role]]
-- 5 edges to [[_COMMUNITY_WebhookReceiver]]
-- 5 edges to [[_COMMUNITY_SOCWebSocketHandler]]
-- 4 edges to [[_COMMUNITY_PipelineAction]]
-- 3 edges to [[_COMMUNITY_Enum]]
-- 3 edges to [[_COMMUNITY_dot-_filter_outbound]]
-- 3 edges to [[_COMMUNITY_group_config.py]]
-- 3 edges to [[_COMMUNITY_lifespan.py]]
-- 2 edges to [[_COMMUNITY_load_config]]
-- 2 edges to [[_COMMUNITY_TestGroupRoleResolver]]
-- 2 edges to [[_COMMUNITY_TestOriginAwareAuthorization]]
-- 2 edges to [[_COMMUNITY_AuditChain]]
-- 1 edge to [[_COMMUNITY_AlertDispatcher]]
-- 1 edge to [[_COMMUNITY_OutboundInfoFilter]]
+- 6 edges to [[_COMMUNITY_forward.py]]
+- 6 edges to [[_COMMUNITY_TestGroupRoleResolver]]
+- 5 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 5 edges to [[_COMMUNITY_rbac_config.py]]
+- 5 edges to [[_COMMUNITY_UserSessionManager]]
+- 4 edges to [[_COMMUNITY_AuditChain]]
+- 4 edges to [[_COMMUNITY_WebhookReceiver]]
+- 4 edges to [[_COMMUNITY_ModuleStatsCollector]]
+- 4 edges to [[_COMMUNITY_A2AMethod]]
+- 4 edges to [[_COMMUNITY_forward.py_1]]
+- 4 edges to [[_COMMUNITY__FakeRBAC]]
+- 4 edges to [[_COMMUNITY_TestFromAuditChainEntry]]
+- 3 edges to [[_COMMUNITY_ForwardRequest]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy_2]]
+- 2 edges to [[_COMMUNITY_test_soc_realtime_coverage.py_1]]
+- 2 edges to [[_COMMUNITY_AgentRegistry]]
+- 2 edges to [[_COMMUNITY_TestCollaboratorPersistence]]
+- 2 edges to [[_COMMUNITY_PipelineAction_1]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 2 edges to [[_COMMUNITY_dot-_filter_outbound]]
+- 2 edges to [[_COMMUNITY_group_config.py]]
+- 1 edge to [[_COMMUNITY_ServiceManager]]
 - 1 edge to [[_COMMUNITY_PIIConfig]]
-- 1 edge to [[_COMMUNITY_RateLimiter]]
+- 1 edge to [[_COMMUNITY_PipelineAction]]
+- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+- 1 edge to [[_COMMUNITY_A2AGovernanceProxy]]
 - 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
-- 1 edge to [[_COMMUNITY_DelegationManager]]
-- 1 edge to [[_COMMUNITY_TestEgressApprovalQueue]]
-- 1 edge to [[_COMMUNITY__patch_open]]
-- 1 edge to [[_COMMUNITY_DataLedger]]
-- 1 edge to [[_COMMUNITY_ForwardRequest]]
-- 1 edge to [[_COMMUNITY_TestCollaboratorPersistence]]
+- 1 edge to [[_COMMUNITY_Role]]
+- 1 edge to [[_COMMUNITY_A2AGovernanceProxy._process]]
 
 ## Top bridge nodes
-- [[RBACConfig_1]] - degree 222, connects to 32 communities
-- [[TeamsConfig]] - degree 100, connects to 14 communities
-- [[GroupWorkspaceManager]] - degree 42, connects to 7 communities
-- [[_OutboundScan]] - degree 9, connects to 6 communities
-- [[SharedMemoryManager]] - degree 47, connects to 5 communities
+- [[RBACConfig_4]] - degree 222, connects to 30 communities
+- [[Role_91]] - degree 107, connects to 15 communities
+- [[TeamsConfig_2]] - degree 100, connects to 13 communities
+- [[ToolACLEnforcer]] - degree 77, connects to 6 communities
+- [[GroupRole]] - degree 19, connects to 4 communities

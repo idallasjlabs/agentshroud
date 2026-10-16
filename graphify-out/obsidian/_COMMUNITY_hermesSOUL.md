@@ -21,7 +21,7 @@ members: 26
 - [[OpenClaw_3]] - concept - docker/config/hermes/SOUL.md
 - [[OpenClawAgentShroud Bot Identity]] - document - docker/config/hermes/agents/openclaw-identity.md
 - [[Owner_2]] - document - docker/config/hermes/SOUL.md
-- [[PII Sanitizer_1]] - concept - docker/config/hermes/SOUL.md
+- [[PII Sanitizer_2]] - concept - docker/config/hermes/SOUL.md
 - [[Remote Hosts (SSH via gateway)_2]] - document - docker/config/hermes/SOUL.md
 - [[Security Reviewer Agent]] - document - docker/config/hermes/agents/i-security-reviewer.md
 - [[Trademark Notice_2]] - document - docker/config/hermes/SOUL.md
@@ -45,8 +45,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_EnhancedApprovalQueue (`enhanced_queue.py`)]]
-- 1 edge to [[_COMMUNITY_EgressFilter_1]]
+- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown]]
+- 1 edge to [[_COMMUNITY_EgressFilter]]
 - 1 edge to [[_COMMUNITY_TrustManager]]
 - 1 edge to [[_COMMUNITY_prompt_guard.py]]
 - 1 edge to [[_COMMUNITY_IDENTITY.md - Who I Am]]

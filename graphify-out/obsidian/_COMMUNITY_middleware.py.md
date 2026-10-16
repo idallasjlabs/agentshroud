@@ -15,13 +15,13 @@ members: 16
 - [[Extended v0.8.0 Modules]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
 - [[FileSandbox Configuration (hardcoded in __init__)]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
 - [[Imports From  Exports To_1]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Key Classes  Functions_15]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Key Classes  Functions_14]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
 - [[Known Issues  Notes_2]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
 - [[Memory Security]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
 - [[P1 Core Guards]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Purpose_118]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Related_19]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Responsibilities_17]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Purpose_117]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Related_18]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Responsibilities_15]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
 - [[Security Modules Initialized]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
 - [[Tool Security]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
 - [[middleware.py_2]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md

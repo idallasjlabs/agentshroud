@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "OutboundInfoFilter"
+community: "AuditChain"
 location: "L380"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/OutboundInfoFilter
+  - community/AuditChain
 ---
 
 # _FakeIntegrityScore
@@ -26,8 +26,8 @@ tags:
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[_make_integrity_pipeline()]] - `calls` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/OutboundInfoFilter
+#graphify/code #graphify/INFERRED #community/AuditChain

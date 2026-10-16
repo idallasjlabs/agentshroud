@@ -1,32 +1,28 @@
 ---
 type: community
-cohesion: 0.05
-members: 73
+cohesion: 0.06
+members: 70
 ---
 
 # test_mfa_guard.py
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 73 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 70 nodes
 
 ## Members
-- [[NOTE Called within _lock context]] - rationale - gateway/approval_queue/queue.py
-- [[dot-__init__()_164]] - code - gateway/security/mfa_guard.py
+- [[dot-__init__()_181]] - code - gateway/security/mfa_guard.py
 - [[dot-_decode_secret()]] - code - gateway/security/mfa_guard.py
 - [[dot-_prune_used()]] - code - gateway/security/mfa_guard.py
 - [[dot-_totp_for_counter()]] - code - gateway/security/mfa_guard.py
 - [[dot-from_env()_3]] - code - gateway/security/mfa_guard.py
 - [[dot-is_required()]] - code - gateway/security/mfa_guard.py
 - [[dot-verify()_1]] - code - gateway/security/mfa_guard.py
-- [[AgentShroud Security Dashboard (index.html)]] - code - gateway/dashboard/index.html
-- [[Approval Queue Module Badge Icon]] - image - branding/icons/modules/approval-queue-256x256.png
-- [[ApprovalQueue]] - code - gateway/tests/test_mfa_guard.py
 - [[Build an MFAGuard from environment variables  Docker secret file.          Reco]] - rationale - gateway/security/mfa_guard.py
 - [[Compute the RFC 6238 TOTP value for a specific time-step counter.]] - rationale - gateway/security/mfa_guard.py
 - [[Decode a base32 secret; return b on emptyinvalid input.]] - rationale - gateway/security/mfa_guard.py
 - [[Drop replay records older than the accepted window (bounded memory).]] - rationale - gateway/security/mfa_guard.py
-- [[MFAGuard_2]] - code - gateway/security/mfa_guard.py
-- [[MFAGuard.verify()]] - code - gateway/security/mfa_guard.py
+- [[EnhancedApprovalQueue_1]] - code - gateway/tests/test_mfa_guard.py
+- [[MFAGuard_1]] - code - gateway/security/mfa_guard.py
 - [[MFAResult]] - code - gateway/security/mfa_guard.py
 - [[Outcome of an MFA verification.      Attributes         allowed True if the ac]] - rationale - gateway/security/mfa_guard.py
 - [[Return True if ``action_type`` requires a second factor right now.          Two]] - rationale - gateway/security/mfa_guard.py
@@ -39,9 +35,9 @@ members: 73
 - [[_submit_high_risk()]] - code - gateway/tests/test_mfa_guard.py
 - [[_submit_tool_call()]] - code - gateway/tests/test_mfa_guard.py
 - [[_truthy()]] - code - gateway/security/mfa_guard.py
+- [[enhanced_mfa_queue()]] - code - gateway/tests/test_mfa_guard.py
 - [[mfa_guard.py]] - code - gateway/security/mfa_guard.py
 - [[now()]] - code - gateway/tests/test_mfa_guard.py
-- [[queue.py]] - code - gateway/approval_queue/queue.py
 - [[test_counter_below_zero_skipped()]] - code - gateway/tests/test_mfa_guard.py
 - [[test_custom_high_risk_action_types()]] - code - gateway/tests/test_mfa_guard.py
 - [[test_decide_mfa_disabled_approves_without_code()]] - code - gateway/tests/test_mfa_guard.py
@@ -62,6 +58,7 @@ members: 73
 - [[test_enhanced_tool_call_critical_blocked_without_mfa()]] - code - gateway/tests/test_mfa_guard.py
 - [[test_enhanced_tool_call_high_allowed_with_mfa()]] - code - gateway/tests/test_mfa_guard.py
 - [[test_enhanced_tool_call_high_blocked_without_mfa()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_tool_call_medium_not_gated()]] - code - gateway/tests/test_mfa_guard.py
 - [[test_expired_window_code_denies()]] - code - gateway/tests/test_mfa_guard.py
 - [[test_from_env_bad_window_defaults_to_one()]] - code - gateway/tests/test_mfa_guard.py
 - [[test_from_env_disabled_when_flag_unset()]] - code - gateway/tests/test_mfa_guard.py
@@ -92,21 +89,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 28 edges to [[_COMMUNITY_ApprovalQueueConfig]]
-- 6 edges to [[_COMMUNITY_ApprovalRequest]]
-- 4 edges to [[_COMMUNITY_DataLedger]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueItem]]
-- 2 edges to [[_COMMUNITY_ingest_apimodels.py]]
-- 1 edge to [[_COMMUNITY_Path]]
-- 1 edge to [[_COMMUNITY_load_config]]
-- 1 edge to [[_COMMUNITY_MCPPolicyEngine]]
-- 1 edge to [[_COMMUNITY_AgentShroud Docker Configuration]]
+- 30 edges to [[_COMMUNITY_ApprovalQueueConfig_1]]
+- 7 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 3 edges to [[_COMMUNITY_DataLedger]]
 - 1 edge to [[_COMMUNITY_OAuthSecurityValidator]]
-- 1 edge to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]]
+- 1 edge to [[_COMMUNITY_MCPPolicyEngine]]
+- 1 edge to [[_COMMUNITY_Path_3]]
+- 1 edge to [[_COMMUNITY_AgentShroud Docker Configuration]]
 
 ## Top bridge nodes
-- [[queue.py]] - degree 14, connects to 6 communities
-- [[test_mfa_guard.py]] - degree 60, connects to 4 communities
-- [[MFAGuard_2]] - degree 48, connects to 3 communities
-- [[ApprovalQueue]] - degree 10, connects to 3 communities
+- [[MFAGuard_1]] - degree 48, connects to 4 communities
+- [[test_mfa_guard.py]] - degree 60, connects to 3 communities
+- [[EnhancedApprovalQueue_1]] - degree 11, connects to 2 communities
 - [[_queue()]] - degree 11, connects to 2 communities
+- [[mfa_guard.py]] - degree 6, connects to 2 communities

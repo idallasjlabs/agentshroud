@@ -15,7 +15,7 @@ members: 27
 - [[Connection timeout]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
 - [[Add Contact]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
 - [[Calendar Operations]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Configuration_4]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Configuration_2]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
 - [[Contact Operations]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
 - [[Create Event]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
 - [[Create Note]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
@@ -29,7 +29,7 @@ members: 27
 - [[Search Contacts]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
 - [[Search Mail]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
 - [[Search Notes]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
-- [[Security_6]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Security_5]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
 - [[Send Email]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
 - [[Setup]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
 - [[Troubleshooting_19]] - document - docker/config/hermes/skills/i-icloud/SKILL.md

@@ -11,7 +11,7 @@ members: 5
 
 ## Members
 - [[Pull Request Generator (PR)]] - document - docker/config/openclaw/skills/i-pr/README.md
-- [[Purpose_49]] - document - docker/config/openclaw/skills/i-pr/README.md
+- [[Purpose_54]] - document - docker/config/openclaw/skills/i-pr/README.md
 - [[Related Skills_42]] - document - docker/config/openclaw/skills/i-pr/README.md
 - [[Usage_45]] - document - docker/config/openclaw/skills/i-pr/README.md
 - [[openclawskillsi-prREADME]] - document - docker/config/openclaw/skills/i-pr/README.md

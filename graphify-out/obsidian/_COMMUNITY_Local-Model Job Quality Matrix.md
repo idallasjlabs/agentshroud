@@ -50,7 +50,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_Hermes Cron Dedupe (dev)]]
 - 1 edge to [[_COMMUNITY_AgentShroud™ CVE Mitigation Matrix]]
-- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
+- 1 edge to [[_COMMUNITY_PIIConfig]]
 
 ## Top bridge nodes
 - [[Local-Model Job Quality Matrix]] - degree 6, connects to 1 community

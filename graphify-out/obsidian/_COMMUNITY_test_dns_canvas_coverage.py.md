@@ -10,11 +10,11 @@ members: 21
 **Members:** 21 nodes
 
 ## Members
-- [[dot-__aenter__()_1]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-__aexit__()_1]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-__init__()_136]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-__init__()_137]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-request()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__aenter__()_5]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__aexit__()_5]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__init__()_147]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__init__()_148]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-request()_2]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-test_compression_pointer()]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-test_dns_blocklist_import_failure_sets_none()]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-test_pointer_loop_bounded()]] - code - gateway/tests/test_dns_canvas_coverage.py

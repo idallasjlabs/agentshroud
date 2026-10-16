@@ -18,9 +18,9 @@ members: 14
 - [[MCPPermissionManager.check_rate_limit(agent_id, server_name, tool_name)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
 - [[MCPPermissionManager.get_trust_level(agent_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
 - [[MCPPermissionManager.infer_permission_level(tool_name, server_config)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[Purpose_156]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[Purpose_155]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
 - [[Related_41]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[Responsibilities_39]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[Responsibilities_38]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
 - [[Trust Level Reference]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
 - [[mcp_permissions.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
 - [[mcp_permissions.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md

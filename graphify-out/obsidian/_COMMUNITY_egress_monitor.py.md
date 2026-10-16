@@ -19,9 +19,9 @@ members: 15
 - [[EgressMonitor.record(event)]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
 - [[Function Details_31]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
 - [[Key Classes  Functions_33]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Purpose_150]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[Purpose_136]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
 - [[Related_37]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
-- [[Responsibilities_35]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[Responsibilities_34]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
 - [[Threat Model_21]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
 - [[egress_monitor.py_2]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
 - [[egress_monitor.py_1]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md

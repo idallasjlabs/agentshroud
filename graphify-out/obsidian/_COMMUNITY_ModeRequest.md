@@ -1,13 +1,13 @@
 ---
 type: community
 cohesion: 0.03
-members: 118
+members: 125
 ---
 
 # ModeRequest
 
 **Cohesion:** 0.03 - loosely connected
-**Members:** 118 nodes
+**Members:** 125 nodes
 
 ## Members
 - [[dot-test_check_bot_updates_npm_failure_and_exec_failure()]] - code - gateway/tests/test_web_api_coverage.py
@@ -53,6 +53,8 @@ members: 118
 - [[dot-test_report_with_healthy_runtime()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_report_with_unhealthy_runtime_falls_back_to_docker()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_requires_confirmation()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_resolves_hermes_to_the_real_renamed_container()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_resolves_openclaw_to_the_convention_default()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_restart_service_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_restart_service_success()_1]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_rollback_agentshroud_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
@@ -73,6 +75,7 @@ members: 118
 - [[dot-test_stop_service_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_stop_service_success()_1]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_streams_logs_then_cleans_up_on_disconnect()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_unknown_bot_id_falls_back_to_the_naive_guess()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_update_config_rejects_unknown_keys()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_update_config_round_trips_bots_key()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_update_config_without_existing_file_skips_backup()]] - code - gateway/tests/test_web_api_coverage.py
@@ -98,6 +101,7 @@ members: 118
 - [[KillSwitchAction]] - code - gateway/web/api.py
 - [[ModeRequest]] - code - gateway/web/api.py
 - [[Require valid Bearer token for all management endpoints.]] - rationale - gateway/web/api.py
+- [[Resolve the real Docker container name for a given bot_id — from     BotConfig.r]] - rationale - gateway/web/api.py
 - [[Restore AGENTSHROUD_MODE, revert task, and WS token registry per test.]] - rationale - gateway/tests/test_web_api_coverage.py
 - [[SCRUM-107 the `bots` top-level key must be allowed through PUT         apicon]] - rationale - gateway/tests/test_web_api_coverage.py
 - [[SimpleNamespace_1]] - code - gateway/tests/test_web_api_coverage.py
@@ -114,6 +118,7 @@ members: 118
 - [[TestOpenclawAliases]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestRebuild]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestRequireAuth]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestResolveBotContainer]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestSecurityReport]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestServiceControl]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestStatus]] - code - gateway/tests/test_web_api_coverage.py
@@ -125,6 +130,8 @@ members: 118
 - [[_fake_ws()]] - code - gateway/tests/test_web_api_coverage.py
 - [[_gitless_run()]] - code - gateway/tests/test_web_api_coverage.py
 - [[_module_state_guard()]] - code - gateway/tests/test_web_api_coverage.py
+- [[_resolve_bot_container must use BotConfig.resolved_container_name, not     a har]] - rationale - gateway/tests/test_web_api_coverage.py
+- [[_resolve_bot_container()]] - code - gateway/web/api.py
 - [[client()_6]] - code - gateway/tests/test_web_api_coverage.py
 - [[require_auth()]] - code - gateway/web/api.py
 - [[test_web_api_coverage.py]] - code - gateway/tests/test_web_api_coverage.py
@@ -137,28 +144,27 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 16 edges to [[_COMMUNITY_api.py]]
-- 12 edges to [[_COMMUNITY_test_observatory_mode.py]]
-- 9 edges to [[_COMMUNITY__get_engine]]
+- 13 edges to [[_COMMUNITY_test_observatory_mode.py]]
+- 11 edges to [[_COMMUNITY_api.py]]
+- 8 edges to [[_COMMUNITY_api.py_1]]
 - 5 edges to [[_COMMUNITY_AsyncMock]]
+- 4 edges to [[_COMMUNITY_CompetitiveIntelReport]]
+- 4 edges to [[_COMMUNITY_KillSwitchMonitor]]
 - 3 edges to [[_COMMUNITY_socrouter.py]]
-- 3 edges to [[_COMMUNITY_KillSwitchMonitor]]
-- 2 edges to [[_COMMUNITY_FetchOutcome]]
-- 2 edges to [[_COMMUNITY_TestKillSwitchVerification]]
+- 2 edges to [[_COMMUNITY_KeyRotationManager]]
+- 2 edges to [[_COMMUNITY_FetchOutcome_1]]
+- 2 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 1 edge to [[_COMMUNITY_SkillGuard]]
+- 1 edge to [[_COMMUNITY_create_auth_dependency]]
 - 1 edge to [[_COMMUNITY_PIIConfig]]
 - 1 edge to [[_COMMUNITY_test_runtime_engines.py]]
-- 1 edge to [[_COMMUNITY_SkillGuard]]
-- 1 edge to [[_COMMUNITY_management.py]]
-- 1 edge to [[_COMMUNITY_Path]]
-- 1 edge to [[_COMMUNITY_load_config]]
 - 1 edge to [[_COMMUNITY_TestObservatoryMode]]
-- 1 edge to [[_COMMUNITY_create_auth_dependency]]
-- 1 edge to [[_COMMUNITY_test_key_rotation.py]]
+- 1 edge to [[_COMMUNITY_Path]]
 - 1 edge to [[_COMMUNITY_dashboard_endpoints.py]]
 
 ## Top bridge nodes
-- [[require_auth()]] - degree 16, connects to 11 communities
+- [[require_auth()]] - degree 16, connects to 10 communities
 - [[ModeRequest]] - degree 47, connects to 7 communities
-- [[UpdateRequest]] - degree 29, connects to 3 communities
-- [[KillSwitchAction]] - degree 27, connects to 3 communities
+- [[UpdateRequest]] - degree 29, connects to 4 communities
+- [[KillSwitchAction]] - degree 27, connects to 4 communities
 - [[TestModeRequestModel]] - degree 8, connects to 3 communities

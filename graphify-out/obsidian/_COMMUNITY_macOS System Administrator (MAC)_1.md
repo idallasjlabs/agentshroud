@@ -10,7 +10,7 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_42]] - document - docker/config/openclaw/skills/i-mac/README.md
+- [[Purpose_47]] - document - docker/config/openclaw/skills/i-mac/README.md
 - [[Related Skills_35]] - document - docker/config/openclaw/skills/i-mac/README.md
 - [[Usage_38]] - document - docker/config/openclaw/skills/i-mac/README.md
 - [[macOS System Administrator (MAC)_1]] - document - docker/config/openclaw/skills/i-mac/README.md

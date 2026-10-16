@@ -10,7 +10,7 @@ members: 23
 **Members:** 23 nodes
 
 ## Members
-- [[dot-setup_method()_16]] - code - gateway/tests/test_network_validator.py
+- [[dot-setup_method()_33]] - code - gateway/tests/test_network_validator.py
 - [[dot-test_gateway_network_bridging_validation()]] - code - gateway/tests/test_network_validator.py
 - [[dot-test_network_validation_comprehensive_rules()]] - code - gateway/tests/test_network_validator.py
 - [[dot-test_validate_docker_compose_config_empty_config()]] - code - gateway/tests/test_network_validator.py
@@ -42,10 +42,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_NetworkSecurityFinding]]
 - 3 edges to [[_COMMUNITY_MiddlewareManager]]
+- 3 edges to [[_COMMUNITY_NetworkSecurityFinding]]
 
 ## Top bridge nodes
 - [[TestNetworkValidator]] - degree 15, connects to 2 communities
 - [[test_network_validator.py]] - degree 3, connects to 2 communities
-- [[dot-setup_method()_16]] - degree 2, connects to 1 community
+- [[dot-setup_method()_33]] - degree 2, connects to 1 community

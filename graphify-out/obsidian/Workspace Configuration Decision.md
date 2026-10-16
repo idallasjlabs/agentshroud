@@ -12,11 +12,11 @@ tags:
 # Workspace Configuration Decision
 
 ## Connections
-- [[Configuration_1]] - `contains` [EXTRACTED]
+- [[Configuration]] - `contains` [EXTRACTED]
 - [[Decision Summary]] - `contains` [EXTRACTED]
 - [[Files Created]] - `contains` [EXTRACTED]
 - [[Helper Script]] - `contains` [EXTRACTED]
-- [[Next Steps_1]] - `contains` [EXTRACTED]
+- [[Next Steps]] - `contains` [EXTRACTED]
 - [[WORKSPACE_DECISION]] - `contains` [EXTRACTED]
 - [[Why This Matters for Read-Only Filesystem]] - `contains` [EXTRACTED]
 

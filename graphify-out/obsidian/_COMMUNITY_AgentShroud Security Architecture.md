@@ -20,7 +20,7 @@ members: 43
 - [[CVE Mitigation Details]] - document - docs/security/security-architecture.md
 - [[CVE-2026-22708 AI Agent Container Escape via Prompt Injection]] - document - docs/security/security-architecture.md
 - [[CVE-2026-25253 PII Exfiltration via DNS Tunneling]] - document - docs/security/security-architecture.md
-- [[Contributing]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Contributing_1]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[DNS Filtering]] - concept - docs/project/glossary.md
 - [[Data Entry Points (All User-Controlled)]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Data Flow Control]] - document - docs/security/SECURITY_ARCHITECTURE.md
@@ -43,7 +43,7 @@ members: 43
 - [[Principle You Decide What The Agent Sees]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Project Goals]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Prompt Guard System (Module 25)]] - concept - docs/security/security-architecture.md
-- [[Quick Reference_1]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Quick Reference]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Recommended Production Setup]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Security Checklist]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Threat Model]] - document - docs/security/SECURITY_ARCHITECTURE.md
@@ -62,14 +62,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_system-requirements]]
+- 4 edges to [[_COMMUNITY_system-requirements]]
+- 3 edges to [[_COMMUNITY_system-requirements_1]]
 - 1 edge to [[_COMMUNITY_P2 High Priority Incidents]]
-- 1 edge to [[_COMMUNITY_Security Controls]]
+- 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown]]
 - 1 edge to [[_COMMUNITY_Security Module Inventory]]
 - 1 edge to [[_COMMUNITY_Kill Switch]]
 - 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised]]
 - 1 edge to [[_COMMUNITY_iMessage Integration Fix - Using imsg + imessage-exporter]]
 
 ## Top bridge nodes
-- [[AgentShroud Security Architecture]] - degree 32, connects to 7 communities
+- [[AgentShroud Security Architecture]] - degree 32, connects to 8 communities
 - [[DNS Filtering]] - degree 2, connects to 1 community

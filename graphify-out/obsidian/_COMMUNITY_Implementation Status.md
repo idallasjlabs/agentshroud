@@ -42,11 +42,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_AgentTarget]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised]]
 - 1 edge to [[_COMMUNITY_CREDENTIAL-PROTECTION-IMPLEMENTED]]
 - 1 edge to [[_COMMUNITY_ADR-001 Transparent Proxy vs Agent Modification]]
 - 1 edge to [[_COMMUNITY_Browser Extension]]
-- 1 edge to [[_COMMUNITY_Git History Purge Plan]]
-- 1 edge to [[_COMMUNITY_DataLedger]]
 - 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
 - 1 edge to [[_COMMUNITY_Security Modules (58)]]
 

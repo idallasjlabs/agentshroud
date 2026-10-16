@@ -12,10 +12,10 @@ tags:
 # _StubForwarder
 
 ## Connections
-- [[dot-__init__()_170]] - `method` [EXTRACTED]
-- [[dot-forward()_3]] - `method` [EXTRACTED]
+- [[dot-__init__()_100]] - `method` [EXTRACTED]
+- [[dot-forward()_2]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
-- [[EgressFilter_2]] - `uses` [INFERRED]
+- [[EgressFilter_1]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[Forwarder stub returning a canned bot response body.]] - `rationale_for` [EXTRACTED]
@@ -24,12 +24,12 @@ tags:
 - [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[PipelineAction]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[ScanRequest_1]] - `uses` [INFERRED]
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[SidecarScanner]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 - [[test_webhook_outbound_block_withheld()]] - `calls` [EXTRACTED]

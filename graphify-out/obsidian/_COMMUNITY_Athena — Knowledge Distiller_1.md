@@ -16,7 +16,7 @@ members: 12
 - [[Output Format_36]] - document - docker/config/hermes/skills/i-athena/SKILL.md
 - [[Persona_15]] - document - docker/config/hermes/skills/i-athena/SKILL.md
 - [[Quality Checklist_18]] - document - docker/config/hermes/skills/i-athena/SKILL.md
-- [[Role_91]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[Role_92]] - document - docker/config/hermes/skills/i-athena/SKILL.md
 - [[System Prompt_15]] - document - docker/config/hermes/skills/i-athena/SKILL.md
 - [[User Prompt Template_6]] - document - docker/config/hermes/skills/i-athena/SKILL.md
 - [[cheatsheet_2]] - document - docker/config/hermes/skills/i-athena/SKILL.md

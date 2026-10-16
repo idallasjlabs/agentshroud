@@ -16,7 +16,7 @@ members: 16
 - [[Root .gitignore]] - document - docs/security/SECURITY_VERIFICATION.md
 - [[Security Guarantees_5]] - document - docs/security/SECURITY_VERIFICATION.md
 - [[Security Verification Report]] - document - docs/security/SECURITY_VERIFICATION.md
-- [[Summary_22]] - document - docs/security/SECURITY_VERIFICATION.md
+- [[Summary_20]] - document - docs/security/SECURITY_VERIFICATION.md
 - [[Test 1 Check Git Tracking]] - document - docs/security/SECURITY_VERIFICATION.md
 - [[Test 2 Check README Content]] - document - docs/security/SECURITY_VERIFICATION.md
 - [[Test 3 Test Gitignore]] - document - docs/security/SECURITY_VERIFICATION.md

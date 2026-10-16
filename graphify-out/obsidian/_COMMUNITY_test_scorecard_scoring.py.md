@@ -35,8 +35,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY__mock_dir_with_files]]
-- 2 edges to [[_COMMUNITY__mock_dir_with_fresh_files]]
 - 2 edges to [[_COMMUNITY_TestIsFresh]]
+- 2 edges to [[_COMMUNITY__mock_dir_with_fresh_files]]
 - 1 edge to [[_COMMUNITY_TestScoreMalwareDefense]]
 - 1 edge to [[_COMMUNITY_TestScoreVulnerabilityManagement]]
 - 1 edge to [[_COMMUNITY_TestScoreIncidentResponse]]

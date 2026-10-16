@@ -37,7 +37,7 @@ members: 43
 - [[Health status]] - document - docs/runbooks/colima-docker-guide.md
 - [[Inspect a volume (find its mount path in the VM)]] - document - docs/runbooks/colima-docker-guide.md
 - [[List volumes]] - document - docs/runbooks/colima-docker-guide.md
-- [[Logs_1]] - document - docs/runbooks/colima-docker-guide.md
+- [[Logs]] - document - docs/runbooks/colima-docker-guide.md
 - [[Named volumes for this project]] - document - docs/runbooks/colima-docker-guide.md
 - [[Nuclear prune (removes everything including volumes)]] - document - docs/runbooks/colima-docker-guide.md
 - [[Port Mappings]] - document - docs/runbooks/colima-docker-guide.md
@@ -62,7 +62,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_system-requirements]]
+- 1 edge to [[_COMMUNITY_system-requirements_1]]
 
 ## Top bridge nodes
 - [[Colima & Docker Operations Guide — AgentShroud]] - degree 13, connects to 1 community

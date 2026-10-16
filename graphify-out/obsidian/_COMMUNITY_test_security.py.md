@@ -63,7 +63,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_ForwardRequest]]
+- 9 edges to [[_COMMUNITY_AgentTarget]]
 - 3 edges to [[_COMMUNITY_create_auth_dependency]]
 - 2 edges to [[_COMMUNITY_RateLimiter]]
 

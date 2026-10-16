@@ -16,13 +16,13 @@ members: 23
 - [[Global Flags]] - document - skills/openclaw/xurl/SKILL.md
 - [[Go]] - document - skills/openclaw/xurl/SKILL.md
 - [[Homebrew (macOS)]] - document - skills/openclaw/xurl/SKILL.md
-- [[Installation_1]] - document - skills/openclaw/xurl/SKILL.md
+- [[Installation_2]] - document - skills/openclaw/xurl/SKILL.md
 - [[Notes_4]] - document - skills/openclaw/xurl/SKILL.md
 - [[Other auth methods]] - document - skills/openclaw/xurl/SKILL.md
 - [[Output Format_11]] - document - skills/openclaw/xurl/SKILL.md
 - [[Post with an image]] - document - skills/openclaw/xurl/SKILL.md
 - [[Prerequisites_7]] - document - skills/openclaw/xurl/SKILL.md
-- [[Quick Reference_8]] - document - skills/openclaw/xurl/SKILL.md
+- [[Quick Reference_7]] - document - skills/openclaw/xurl/SKILL.md
 - [[Raw API Access]] - document - skills/openclaw/xurl/SKILL.md
 - [[Register an app (recommended)]] - document - skills/openclaw/xurl/SKILL.md
 - [[Reply to a conversation]] - document - skills/openclaw/xurl/SKILL.md
@@ -42,8 +42,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Command Details]]
 - 1 edge to [[_COMMUNITY_OpenClaw Skill Metadata Schema (frontmatter convention)]]
+- 1 edge to [[_COMMUNITY_Command Details]]
 
 ## Top bridge nodes
 - [[xurl — Agent Skill Reference]] - degree 12, connects to 2 communities
