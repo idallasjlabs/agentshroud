@@ -1,18 +1,23 @@
 ---
-source_file: "gateway/ingest_api/middleware.py"
+source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "Ingest Middleware & File Sandbox"
-location: "L1263"
+community: ".analyze_message"
+location: "L245"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_Middleware__File_Sandbox
+  - community/analyze_message
 ---
 
 # .scan_tool_result()
 
 ## Connections
-- [[MiddlewareManager]] - `method` [EXTRACTED]
-- [[Scan tool result for injection attempts and return sanitized content.          A]] - `rationale_for` [EXTRACTED]
+- [[dot-_detect_encoded_injection()]] - `calls` [EXTRACTED]
+- [[dot-_detect_unicode_obfuscation()]] - `calls` [EXTRACTED]
+- [[InjectionResult]] - `references` [EXTRACTED]
+- [[Scan tool result content for injection attempts.          Args             tool]] - `rationale_for` [EXTRACTED]
+- [[ToolResultInjectionScanner]] - `method` [EXTRACTED]
+- [[normalize_input()]] - `calls` [EXTRACTED]
+- [[strip_markdown_exfil()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox
+#graphify/code #graphify/EXTRACTED #community/analyze_message

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "Community 106"
+community: "ContainerEngine"
 location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_106
+  - community/ContainerEngine
 ---
 
 # .rm()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ContainerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_106
+#graphify/code #graphify/EXTRACTED #community/ContainerEngine

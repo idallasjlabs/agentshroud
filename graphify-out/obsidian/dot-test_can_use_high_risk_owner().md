@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "Community 121"
+community: "GroupRoleResolver"
 location: "L346"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_121
+  - community/GroupRoleResolver
 ---
 
 # .test_can_use_high_risk_owner()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGroupRoleProperties]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_121
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

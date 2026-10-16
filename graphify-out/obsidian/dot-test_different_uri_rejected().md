@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "P3 Infrastructure Security Modules"
+community: "OAuthSecurityValidator"
 location: "L167"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/P3_Infrastructure_Security_Modules
+  - community/OAuthSecurityValidator
 ---
 
 # .test_different_uri_rejected()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestRedirectURI]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules
+#graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator

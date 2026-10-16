@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: ".get_user_role"
 location: "L173"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/get_user_role
 ---
 
 # .is_admin_or_higher()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-get_user_role()]] - `calls` [EXTRACTED]
 - [[Check if user has admin privileges or higher.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_2]] - `method` [EXTRACTED]
+- [[RBACConfig_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/get_user_role

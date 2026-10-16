@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/token_validation.py"
+source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "Community 107"
-location: "L142"
+community: "AlertDispatcher"
+location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_107
+  - community/AlertDispatcher
 ---
 
 # .get_audit_log()
 
 ## Connections
-- [[TokenValidator]] - `method` [EXTRACTED]
+- [[SubagentEvent]] - `references` [EXTRACTED]
+- [[SubagentMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_107
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

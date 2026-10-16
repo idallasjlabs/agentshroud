@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "Session Manager & PII/Context Guard"
+community: "ContextSegment"
 location: "L509"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Manager__PII/Context_Guard
+  - community/ContextSegment
 ---
 
 # .tag_segment()
@@ -17,4 +17,4 @@ tags:
 - [[ContextSegment]] - `references` [EXTRACTED]
 - [[Create a provenance record for a context segment.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

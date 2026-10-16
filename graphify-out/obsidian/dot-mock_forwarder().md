@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "Slack Proxy & Main Endpoint Tests"
+community: "AsyncMock"
 location: "L265"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_Proxy__Main_Endpoint_Tests
+  - community/AsyncMock
 ---
 
 # .mock_forwarder()
@@ -16,4 +16,4 @@ tags:
 - [[Create a mock forwarder.]] - `rationale_for` [EXTRACTED]
 - [[TestWebhookReceiverIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_Proxy__Main_Endpoint_Tests
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

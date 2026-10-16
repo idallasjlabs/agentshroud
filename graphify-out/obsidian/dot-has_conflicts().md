@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "code"
-community: "Community 83"
+community: "PortManager"
 location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_83
+  - community/PortManager
 ---
 
 # .has_conflicts()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PortResolution]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_83
+#graphify/code #graphify/EXTRACTED #community/PortManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "Community 97"
+community: "PrivacyPolicyEnforcer"
 location: "L203"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_97
+  - community/PrivacyPolicyEnforcer
 ---
 
 # .test_extra_pattern_redacted()
@@ -15,4 +15,4 @@ tags:
 - [[PrivacyPolicyEnforcer]] - `calls` [EXTRACTED]
 - [[TestResponseFiltering]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_97
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

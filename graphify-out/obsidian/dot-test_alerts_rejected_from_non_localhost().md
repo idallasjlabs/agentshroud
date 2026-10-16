@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Community 100"
-location: "L499"
+community: "test_main_endpoints.py"
+location: "L616"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_100
+  - community/test_main_endpointspy
 ---
 
 # .test_alerts_rejected_from_non_localhost()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAlertsLocalhostEnforcement]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_100
+#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy

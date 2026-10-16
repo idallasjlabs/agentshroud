@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 1677"
+community: "TelegramAPIProxy"
 location: "L1053"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1677
+  - community/TelegramAPIProxy
 ---
 
 # .test_collaborator_form_high_risk_leakage_text_is_normalized()
 
 ## Connections
 - [[Collaborator form payload with raw toolfile leakage markers should be blocked.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1677
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

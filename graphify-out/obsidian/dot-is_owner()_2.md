@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/soc/auth.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "Community 153"
-location: "L159"
+community: "test_soc_router_coverage.py"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_153
+  - community/test_soc_router_coveragepy
 ---
 
 # .is_owner()
 
 ## Connections
-- [[SCLCaller_1]] - `method` [EXTRACTED]
+- [[FakeCaller]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_153
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

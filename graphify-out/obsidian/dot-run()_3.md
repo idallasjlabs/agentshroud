@@ -1,27 +1,17 @@
 ---
-source_file: "src/interfaces/text_control_center.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "Community 277"
-location: "L358"
+community: "PodmanEngine"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_277
+  - community/PodmanEngine
 ---
 
 # .run()
 
 ## Connections
-- [[dot-draw_approvals()]] - `calls` [EXTRACTED]
-- [[dot-draw_dashboard()]] - `calls` [EXTRACTED]
-- [[dot-draw_kill_switch()]] - `calls` [EXTRACTED]
-- [[dot-draw_log()]] - `calls` [EXTRACTED]
-- [[dot-draw_modules()]] - `calls` [EXTRACTED]
-- [[dot-draw_ssh_hosts()]] - `calls` [EXTRACTED]
-- [[dot-get_key()]] - `calls` [EXTRACTED]
-- [[dot-make_api_request()]] - `calls` [EXTRACTED]
-- [[ControlCenter]] - `method` [EXTRACTED]
-- [[Main control center loop]] - `rationale_for` [EXTRACTED]
-- [[main()_15]] - `calls` [EXTRACTED]
+- [[PodmanEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_277
+#graphify/code #graphify/EXTRACTED #community/PodmanEngine

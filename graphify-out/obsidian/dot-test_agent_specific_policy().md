@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Community 81"
+community: "EgressPolicy"
 location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_81
+  - community/EgressPolicy
 ---
 
 # .test_agent_specific_policy()
@@ -16,4 +16,4 @@ tags:
 - [[TestPerAgentPolicy]] - `method` [EXTRACTED]
 - [[_make_filter()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_81
+#graphify/code #graphify/EXTRACTED #community/EgressPolicy

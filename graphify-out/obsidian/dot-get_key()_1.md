@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "Community 80"
+community: "KeyVault"
 location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_80
+  - community/KeyVault
 ---
 
 # .get_key()
@@ -17,4 +17,4 @@ tags:
 - [[dot-inject_for_request()]] - `calls` [EXTRACTED]
 - [[KeyVault]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_80
+#graphify/code #graphify/EXTRACTED #community/KeyVault

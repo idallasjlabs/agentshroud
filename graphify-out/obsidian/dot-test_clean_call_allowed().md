@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Community 50"
+community: "MCPToolCall"
 location: "L444"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_50
+  - community/MCPToolCall
 ---
 
 # .test_clean_call_allowed()
 
 ## Connections
-- [[MCPToolCall_1]] - `calls` [EXTRACTED]
+- [[MCPToolCall]] - `calls` [EXTRACTED]
 - [[TestProxyInterception]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_50
+#graphify/code #graphify/EXTRACTED #community/MCPToolCall

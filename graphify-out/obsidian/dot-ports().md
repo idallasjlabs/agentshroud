@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "code"
-community: "Community 83"
+community: "PortManager"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_83
+  - community/PortManager
 ---
 
 # .ports()
@@ -15,4 +15,4 @@ tags:
 - [[Get the final port mapping.]] - `rationale_for` [EXTRACTED]
 - [[PortResolution]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_83
+#graphify/code #graphify/EXTRACTED #community/PortManager

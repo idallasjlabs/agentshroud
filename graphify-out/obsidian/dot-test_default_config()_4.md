@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_egress_enforce.py"
+source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "code"
-community: "Community 607"
-location: "L30"
+community: "KillSwitchMonitor"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_607
+  - community/KillSwitchMonitor
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[EgressFilterConfig]] - `calls` [EXTRACTED]
+- [[KillSwitchConfig_1]] - `calls` [EXTRACTED]
 - [[Test default configuration values._3]] - `rationale_for` [EXTRACTED]
-- [[TestEgressFilterConfig]] - `method` [EXTRACTED]
+- [[TestKillSwitchConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_607
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

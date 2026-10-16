@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "Gateway Config & PII Sanitizer"
+community: "DataLedger"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/DataLedger
 ---
 
 # .test_content_hashes_are_unique()
@@ -15,4 +15,4 @@ tags:
 - [[Different content should produce different hashes.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditChainIntegrity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
+#graphify/code #graphify/EXTRACTED #community/DataLedger

@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/trust_manager.py"
+source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "Cross-Bot Trust & A2A Governance"
-location: "L289"
+community: "TrustConfig"
+location: "L229"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/TrustConfig
 ---
 
 # .is_tool_allowed()
 
 ## Connections
-- [[dot-get_trust()]] - `calls` [EXTRACTED]
-- [[Per-level tool gate from the progressive trust ladder. Tri-state TrueFalse…]] - `rationale_for` [EXTRACTED]
-- [[TrustManager]] - `method` [EXTRACTED]
+- [[Check if a tool is allowed for the given trust level.]] - `rationale_for` [EXTRACTED]
+- [[ProgressiveTrustConfig_2]] - `method` [EXTRACTED]
+- [[TrustLevel]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

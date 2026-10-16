@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "code"
-community: "Egress Filter & HTTP Proxy"
+community: "WebProxyConfig"
 location: "L146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Filter__HTTP_Proxy
+  - community/WebProxyConfig
 ---
 
 # .is_domain_denied()
@@ -15,4 +15,4 @@ tags:
 - [[Check if a domain is on the denylist.]] - `rationale_for` [EXTRACTED]
 - [[WebProxyConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Filter__HTTP_Proxy
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

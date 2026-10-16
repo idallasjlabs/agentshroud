@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_encoding_detector.py"
+source_file: "gateway/tests/test_canary_tripwire.py"
 type: "code"
-community: "Canary Tripwire"
-location: "L56"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Canary_Tripwire
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # .test_empty_input()
 
 ## Connections
-- [[TestEncodingDetector]] - `method` [EXTRACTED]
+- [[TestCanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Canary_Tripwire
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

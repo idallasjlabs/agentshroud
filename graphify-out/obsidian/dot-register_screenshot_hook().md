@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "MiddlewareManager"
 location: "L185"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/MiddlewareManager
 ---
 
 # .register_screenshot_hook()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[BrowserSecurityGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

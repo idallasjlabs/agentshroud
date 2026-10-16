@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "Community 640"
+community: "Role"
 location: "L558"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_640
+  - community/Role
 ---
 
 # .get_allowed_tools()
@@ -17,4 +17,4 @@ tags:
 - [[Return the list of tools the user is allowed to use (union of all sets).]] - `rationale_for` [EXTRACTED]
 - [[ToolACLEnforcer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_640
+#graphify/code #graphify/EXTRACTED #community/Role

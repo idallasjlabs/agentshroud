@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Memory Integrity & Lifecycle"
+community: "lifespan.py"
 location: "L374"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Memory_Integrity__Lifecycle
+  - community/lifespanpy
 ---
 
 # .get_recent_actions()
@@ -17,4 +17,4 @@ tags:
 - [[MemoryLifecycleManager]] - `method` [EXTRACTED]
 - [[RetentionAction]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Integrity__Lifecycle
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

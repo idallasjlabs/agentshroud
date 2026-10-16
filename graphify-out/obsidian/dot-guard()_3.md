@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "Prompt Guard & Context Integrity"
+community: "PIIConfig"
 location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Prompt_Guard__Context_Integrity
+  - community/PIIConfig
 ---
 
 # .guard()
@@ -15,4 +15,4 @@ tags:
 - [[PromptGuard]] - `calls` [EXTRACTED]
 - [[TestPromptGuardPerformance]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Prompt_Guard__Context_Integrity
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

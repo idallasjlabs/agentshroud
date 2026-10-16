@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "Approval Queue (WebSocket)"
+community: "SSHProxy"
 location: "L266"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_WebSocket
+  - community/SSHProxy
 ---
 
 # .test_backtick_rejected()
 
 ## Connections
-- [[SSHProxy_1]] - `calls` [EXTRACTED]
+- [[SSHProxy]] - `calls` [EXTRACTED]
 - [[TestSSHValidateCwd]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_WebSocket
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

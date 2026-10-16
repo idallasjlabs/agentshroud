@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Memory Integrity & Lifecycle"
+community: "lifespan.py"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Memory_Integrity__Lifecycle
+  - community/lifespanpy
 ---
 
 # .scan_content_for_threats()
@@ -18,4 +18,4 @@ tags:
 - [[MemoryLifecycleManager]] - `method` [EXTRACTED]
 - [[Scan memory file content for security threats.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Integrity__Lifecycle
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

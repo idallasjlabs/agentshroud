@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_enforce.py"
 type: "code"
-community: "Community 607"
+community: "EgressFilterConfig"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_607
+  - community/EgressFilterConfig
 ---
 
 # .test_effective_allowlist_basic()
@@ -16,4 +16,4 @@ tags:
 - [[Test basic allowlist functionality.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressFilterConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_607
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

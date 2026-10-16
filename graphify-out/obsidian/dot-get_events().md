@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/security/a2a_governance.py"
+source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "Community 39"
-location: "L457"
+community: "AlertDispatcher"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_39
+  - community/AlertDispatcher
 ---
 
 # .get_events()
 
 ## Connections
-- [[A2ADecision]] - `references` [EXTRACTED]
-- [[A2AGovernanceEvent]] - `references` [EXTRACTED]
-- [[A2AGovernanceProxy]] - `method` [EXTRACTED]
-- [[Retrieve governance events with optional filters.]] - `rationale_for` [EXTRACTED]
+- [[EgressChannel]] - `references` [EXTRACTED]
+- [[EgressEvent]] - `references` [EXTRACTED]
+- [[EgressMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_39
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

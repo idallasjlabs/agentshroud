@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Community 108"
+community: "StdioConnection"
 location: "L204"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_108
+  - community/StdioConnection
 ---
 
 # .get_or_create()
@@ -16,7 +16,7 @@ tags:
 - [[ConnectionPool]] - `method` [EXTRACTED]
 - [[Get existing connection or create a new one.]] - `rationale_for` [EXTRACTED]
 - [[HttpSseConnection]] - `references` [EXTRACTED]
-- [[MCPServerConfig]] - `references` [EXTRACTED]
+- [[MCPServerConfig_1]] - `references` [EXTRACTED]
 - [[StdioConnection]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_108
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

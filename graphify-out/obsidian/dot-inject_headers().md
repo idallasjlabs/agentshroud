@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/credential_injector.py"
+source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "Community 290"
-location: "L174"
+community: "LLMProxy"
+location: "L394"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_290
+  - community/LLMProxy
 ---
 
 # .inject_headers()
 
 ## Connections
-- [[CredentialInjector]] - `method` [EXTRACTED]
-- [[Inject credentials into request headers based on destination domain. Args…]] - `rationale_for` [EXTRACTED]
+- [[_TrackingInjector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_290
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

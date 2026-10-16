@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
-location: "L632"
+community: "AlertDispatcher"
+location: "L597"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/AlertDispatcher
 ---
 
 # .test_egress_monitor_loaded()
 
 ## Connections
-- [[TestNetworkSecurity]] - `method` [EXTRACTED]
+- [[Egress monitoring should be available.]] - `rationale_for` [EXTRACTED]
+- [[TestExfiltrationDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

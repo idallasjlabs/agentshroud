@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Community 185"
+community: "EgressPolicy"
 location: "L587"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_185
+  - community/EgressPolicy
 ---
 
 # .test_default_policy_allows_smtps()
@@ -16,4 +16,4 @@ tags:
 - [[EgressPolicy default allows port 465 (SMTPS).]] - `rationale_for` [EXTRACTED]
 - [[TestSMTPIMAPPorts]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_185
+#graphify/code #graphify/EXTRACTED #community/EgressPolicy

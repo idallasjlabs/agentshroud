@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_approval_hardening.py"
+source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "TestPathIsolationManager"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/TestPathIsolationManager
 ---
 
 # .test_custom_config()
 
 ## Connections
-- [[ApprovalHardeningConfig]] - `calls` [EXTRACTED]
+- [[PathIsolationConfig]] - `calls` [EXTRACTED]
 - [[Test custom configuration values.]] - `rationale_for` [EXTRACTED]
-- [[TestApprovalHardeningConfig]] - `method` [EXTRACTED]
+- [[TestPathIsolationConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager

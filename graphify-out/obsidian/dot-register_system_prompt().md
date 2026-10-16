@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Prompt Guard & Context Integrity"
+community: "._get_hmac_key"
 location: "L613"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Prompt_Guard__Context_Integrity
+  - community/_get_hmac_key
 ---
 
 # .register_system_prompt()
@@ -17,4 +17,4 @@ tags:
 - [[PromptGuard]] - `method` [EXTRACTED]
 - [[SystemPromptFingerprint]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Prompt_Guard__Context_Integrity
+#graphify/code #graphify/EXTRACTED #community/_get_hmac_key

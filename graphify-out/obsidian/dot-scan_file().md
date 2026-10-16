@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "Memory Integrity & Lifecycle"
+community: "lifespan.py"
 location: "L206"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Memory_Integrity__Lifecycle
+  - community/lifespanpy
 ---
 
 # .scan_file()
@@ -19,7 +19,7 @@ tags:
 - [[dot-scan_all_monitored_files()]] - `calls` [EXTRACTED]
 - [[FileIntegrityRecord]] - `references` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
-- [[Path_17]] - `references` [EXTRACTED]
+- [[Path_22]] - `references` [EXTRACTED]
 - [[Scan a single file for integrity changes.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Integrity__Lifecycle
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

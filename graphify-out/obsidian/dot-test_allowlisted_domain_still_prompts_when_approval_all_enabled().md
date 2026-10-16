@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Community 81"
+community: "_make_filter"
 location: "L367"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_81
+  - community/_make_filter
 ---
 
 # .test_allowlisted_domain_still_prompts_when_approval_all_enabled()
 
 ## Connections
-- [[EgressFilter_1]] - `calls` [EXTRACTED]
+- [[EgressFilter]] - `calls` [EXTRACTED]
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[FakeApprovalQueue]] - `calls` [INFERRED]
 - [[TestInteractiveApproval]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_81
+#graphify/code #graphify/EXTRACTED #community/_make_filter

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Community 366"
+community: "MCPToolCall"
 location: "L399"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_366
+  - community/MCPToolCall
 ---
 
 # .test_filter_by_agent()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAuditQueries]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_366
+#graphify/code #graphify/EXTRACTED #community/MCPToolCall

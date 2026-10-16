@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_key_vault.py"
+source_file: "gateway/tests/test_egress_enforce.py"
 type: "code"
-community: "Community 80"
-location: "L34"
+community: "EgressFilterConfig"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_80
+  - community/EgressFilterConfig
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[TestKeyVaultConfig]] - `method` [EXTRACTED]
+- [[EgressFilterConfig]] - `calls` [EXTRACTED]
+- [[Test default configuration values._5]] - `rationale_for` [EXTRACTED]
+- [[TestEgressFilterConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_80
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

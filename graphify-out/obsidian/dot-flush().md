@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "Community 194"
+community: "AlertTelegramRelay"
 location: "L169"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_194
+  - community/AlertTelegramRelay
 ---
 
 # .flush()
@@ -15,4 +15,4 @@ tags:
 - [[AlertTelegramRelay]] - `method` [EXTRACTED]
 - [[Await in-flight sends (testshutdown helper).]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_194
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

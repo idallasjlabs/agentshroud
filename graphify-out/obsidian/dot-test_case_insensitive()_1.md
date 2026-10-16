@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_web_proxy.py"
+source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "Egress Filter & HTTP Proxy"
-location: "L598"
+community: "TestFabricatedSecurityNotice"
+location: "L568"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Filter__HTTP_Proxy
+  - community/TestFabricatedSecurityNotice
 ---
 
 # .test_case_insensitive()
 
 ## Connections
-- [[TestIsDomainAllowed]] - `method` [EXTRACTED]
-- [[WebProxyConfig]] - `calls` [EXTRACTED]
+- [[dot-_has_fabricated_match()]] - `calls` [EXTRACTED]
+- [[Pattern is case-insensitive.]] - `rationale_for` [EXTRACTED]
+- [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Filter__HTTP_Proxy
+#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

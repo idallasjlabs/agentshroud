@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "P3 Infrastructure Security Modules"
+community: "ResourceGuard"
 location: "L451"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/P3_Infrastructure_Security_Modules
+  - community/ResourceGuard
 ---
 
 # .stop_monitoring()
@@ -15,4 +15,4 @@ tags:
 - [[ResourceGuard]] - `method` [EXTRACTED]
 - [[Stop background monitoring.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

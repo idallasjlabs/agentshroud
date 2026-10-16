@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "File Sandbox & Privilege Separation Tests"
+community: "MiddlewareManager"
 location: "L385"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/File_Sandbox__Privilege_Separation_Tests
+  - community/MiddlewareManager
 ---
 
 # .record_network_activity()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FileSandbox]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "Community 573"
+community: "DNSForwarderProtocol"
 location: "L326"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_573
+  - community/DNSForwarderProtocol
 ---
 
 # .test_error_received_logs()
@@ -15,4 +15,4 @@ tags:
 - [[DNSForwarderProtocol]] - `calls` [EXTRACTED]
 - [[TestDNSForwarderProtocol]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_573
+#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol

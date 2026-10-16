@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "Gateway Config & PII Sanitizer"
-location: "L84"
+community: "ApprovalQueueConfig"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/ApprovalQueueConfig
 ---
 
 # .initialize()
 
 ## Connections
-- [[dot-enforce_retention()]] - `calls` [EXTRACTED]
-- [[Create database, tables, and run initial cleanup          Must be called before]] - `rationale_for` [EXTRACTED]
-- [[DataLedger]] - `method` [EXTRACTED]
+- [[dot-_schedule_timeout()]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
+- [[Initialize the store and restore pending items.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

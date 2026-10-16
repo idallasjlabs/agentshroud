@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "Community 1082"
+community: "._parse_service_network_config"
 location: "L592"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1082
+  - community/_parse_service_network_config
 ---
 
 # .export_report()
@@ -16,4 +16,4 @@ tags:
 - [[Export network security report to file.]] - `rationale_for` [EXTRACTED]
 - [[NetworkValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1082
+#graphify/code #graphify/EXTRACTED #community/_parse_service_network_config

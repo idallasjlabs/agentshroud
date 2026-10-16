@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_tool_result_pii.py"
+source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "PII Sanitizer & Redaction"
-location: "L88"
+community: "PIIConfig"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__Redaction
+  - community/PIIConfig
 ---
 
 # .sanitizer()
 
 ## Connections
-- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
-- [[Tool result sanitizer instance for tests]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer]] - `calls` [EXTRACTED]
+- [[PIIConfig_2]] - `calls` [EXTRACTED]
+- [[PIISanitizer_2]] - `calls` [EXTRACTED]
+- [[TestPIISanitizerPerformance]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__Redaction
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

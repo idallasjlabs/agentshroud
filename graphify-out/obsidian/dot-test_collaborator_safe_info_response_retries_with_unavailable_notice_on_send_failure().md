@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Community 40"
+community: "TestCollaboratorPromptClassifiers"
 location: "L7516"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_40
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # .test_collaborator_safe_info_response_retries_with_unavailable_notice_on_send_failure()
@@ -16,4 +16,4 @@ tags:
 - [[TelegramAPIProxy]] - `calls` [EXTRACTED]
 - [[TestCollaboratorPromptClassifiers]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_40
+#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

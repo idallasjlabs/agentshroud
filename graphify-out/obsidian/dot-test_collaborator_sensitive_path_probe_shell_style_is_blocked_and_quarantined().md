@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Community 1415"
+community: ".test_collaborator_sensitive_path_probe_shell_style_is_blocked_and_quarantined"
 location: "L2573"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1415
+  - community/test_collaborator_sensitive_path_probe_shell_style_is_blocked_and_quarantined
 ---
 
 # .test_collaborator_sensitive_path_probe_shell_style_is_blocked_and_quarantined()
@@ -18,7 +18,7 @@ tags:
 - [[Shell-style sensitive path probes (e.g., ls ~.ssh) should be blocked.]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1415
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_sensitive_path_probe_shell_style_is_blocked_and_quarantined

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "Community 1368"
+community: "GovernanceAction"
 location: "L206"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1368
+  - community/GovernanceAction
 ---
 
 # .test_deregister_cleans_up()
 
 ## Connections
-- [[TestLifecycle]] - `method` [EXTRACTED]
+- [[TestLifecycle_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1368
+#graphify/code #graphify/EXTRACTED #community/GovernanceAction

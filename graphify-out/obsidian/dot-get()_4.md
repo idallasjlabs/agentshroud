@@ -1,22 +1,23 @@
 ---
-source_file: "gateway/security/report_store.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "Community 87"
-location: "L182"
+community: "AgentRegistry"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_87
+  - community/AgentRegistry
 ---
 
 # .get()
 
 ## Connections
-- [[dot-_enforce_count_cap()]] - `calls` [EXTRACTED]
-- [[dot-_path()]] - `calls` [EXTRACTED]
-- [[dot-_valid_id()]] - `calls` [EXTRACTED]
-- [[dot-list()]] - `calls` [EXTRACTED]
-- [[Any_77]] - `references` [EXTRACTED]
-- [[ReportStore]] - `method` [EXTRACTED]
+- [[dot-generate_compose()]] - `calls` [EXTRACTED]
+- [[dot-verify_network_isolation()]] - `calls` [EXTRACTED]
+- [[dot-verify_shared_nothing()]] - `calls` [EXTRACTED]
+- [[dot-verify_volume_isolation()]] - `calls` [EXTRACTED]
+- [[AgentRegistry]] - `method` [EXTRACTED]
+- [[ContainerConfig_1]] - `references` [EXTRACTED]
+- [[Get container config for an agent.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_87
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

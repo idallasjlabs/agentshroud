@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/security/group_config.py"
 type: "code"
-community: "SOC Auth & Audit Store"
-location: "L53"
+community: "GroupConfig"
+location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Auth__Audit_Store
+  - community/GroupConfig
 ---
 
 # .is_group_admin()
 
 ## Connections
-- [[FakeCaller]] - `method` [EXTRACTED]
+- [[dot-is_admin()]] - `calls` [EXTRACTED]
+- [[TeamsConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Auth__Audit_Store
+#graphify/code #graphify/EXTRACTED #community/GroupConfig

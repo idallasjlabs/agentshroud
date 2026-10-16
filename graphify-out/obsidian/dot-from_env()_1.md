@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/killswitch_config.py"
+source_file: "gateway/security/memory_config.py"
 type: "code"
-community: "Community 475"
-location: "L58"
+community: "Path"
+location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_475
+  - community/Path
 ---
 
 # .from_env()
 
 ## Connections
-- [[KillSwitchConfig]] - `method` [EXTRACTED]
-- [[Load configuration from environment variables._1]] - `rationale_for` [EXTRACTED]
+- [[Create configuration from environment variables.]] - `rationale_for` [EXTRACTED]
+- [[MemorySecurityConfig]] - `method` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_475
+#graphify/code #graphify/EXTRACTED #community/Path

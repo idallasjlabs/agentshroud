@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "Enhanced Approval Queue"
+community: "ApprovalQueueConfig"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/ApprovalQueueConfig
 ---
 
 # .test_enforce_mode_disabled()
 
 ## Connections
 - [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
-- [[EnhancedApprovalQueue_1]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
 - [[Test that approval is bypassed when enforce mode is disabled.]] - `rationale_for` [EXTRACTED]
 - [[TestToolRiskClassification]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

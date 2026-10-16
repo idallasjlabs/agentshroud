@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_egress_telegram_notify.py"
+source_file: "gateway/tests/test_egress_approval.py"
 type: "code"
-community: "Community 214"
-location: "L141"
+community: "TestEgressApprovalQueue"
+location: "L294"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_214
+  - community/TestEgressApprovalQueue
 ---
 
 # .test_cleanup_expired_requests()
 
 ## Connections
-- [[Test cleanup removes expired pending requests.]] - `rationale_for` [EXTRACTED]
-- [[TestEgressTelegramNotify]] - `method` [EXTRACTED]
+- [[EgressRequest_1]] - `calls` [EXTRACTED]
+- [[Test cleanup of expired pending requests.]] - `rationale_for` [EXTRACTED]
+- [[TestEgressApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_214
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

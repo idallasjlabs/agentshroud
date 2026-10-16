@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "Community 134"
+community: "Role"
 location: "L193"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_134
+  - community/Role
 ---
 
 # .effective_admin()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ToolACLConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_134
+#graphify/code #graphify/EXTRACTED #community/Role

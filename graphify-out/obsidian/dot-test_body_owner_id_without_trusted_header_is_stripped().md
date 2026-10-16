@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "Multi-Agent Router & Chat UI"
+community: "_PipelineCaptor"
 location: "L268"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Multi-Agent_Router__Chat_UI
+  - community/_PipelineCaptor
 ---
 
 # .test_body_owner_id_without_trusted_header_is_stripped()
@@ -17,4 +17,4 @@ tags:
 - [[TestOwnerSpoofingViaForwardBody]] - `method` [EXTRACTED]
 - [[_PipelineCaptor]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI
+#graphify/code #graphify/EXTRACTED #community/_PipelineCaptor

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "Community 96"
+community: "ProxyAction"
 location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_96
+  - community/ProxyAction
 ---
 
 # .test_browser_security_skips_non_browser_user_agents()
@@ -17,4 +17,4 @@ tags:
 - [[Test that browser security checks are skipped for non-browser user agents.]] - `rationale_for` [EXTRACTED]
 - [[TestWebProxySecurityIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_96
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

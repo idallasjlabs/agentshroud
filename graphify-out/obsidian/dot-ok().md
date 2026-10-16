@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "Community 110"
+community: "FetchOutcome"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_110
+  - community/FetchOutcome
 ---
 
 # .ok()
@@ -15,4 +15,4 @@ tags:
 - [[A source counts as proven only on a 2xx with non-empty content.]] - `rationale_for` [EXTRACTED]
 - [[FetchOutcome]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_110
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

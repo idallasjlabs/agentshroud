@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Community 98"
-location: "L217"
+community: "FakeProcess"
+location: "L137"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_98
+  - community/FakeProcess
 ---
 
 # .stop()
 
 ## Connections
-- [[FalcoAlertWatcher]] - `method` [EXTRACTED]
+- [[dot-test_send_request_and_session_reuse()]] - `calls` [EXTRACTED]
+- [[dot-test_start_send_and_stop()]] - `calls` [EXTRACTED]
+- [[dot-test_stop_kills_on_wait_timeout()]] - `calls` [EXTRACTED]
+- [[FakeConn]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_98
+#graphify/code #graphify/EXTRACTED #community/FakeProcess

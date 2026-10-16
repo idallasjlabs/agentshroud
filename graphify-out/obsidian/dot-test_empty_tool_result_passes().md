@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "Prompt Guard & Context Integrity"
+community: "PIIConfig"
 location: "L277"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Prompt_Guard__Context_Integrity
+  - community/PIIConfig
 ---
 
 # .test_empty_tool_result_passes()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestToolResultScan]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Prompt_Guard__Context_Integrity
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

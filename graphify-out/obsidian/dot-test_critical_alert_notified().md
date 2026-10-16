@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 748"
+community: "TestAlertDispatcher"
 location: "L887"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_748
+  - community/TestAlertDispatcher
 ---
 
 # .test_critical_alert_notified()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_make_dispatcher()]] - `calls` [EXTRACTED]
 - [[TestAlertDispatcher]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_748
+#graphify/code #graphify/EXTRACTED #community/TestAlertDispatcher

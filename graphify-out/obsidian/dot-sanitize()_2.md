@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_e2e_watchtower.py"
+source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "Canary Tripwire"
-location: "L379"
+community: "test_llm_proxy_local_parity.py"
+location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Canary_Tripwire
+  - community/test_llm_proxy_local_paritypy
 ---
 
 # .sanitize()
 
 ## Connections
-- [[_BrokenSanitizer]] - `method` [EXTRACTED]
+- [[_FakeSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Canary_Tripwire
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

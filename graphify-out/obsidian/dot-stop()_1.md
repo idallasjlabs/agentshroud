@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "Community 108"
-location: "L192"
+community: "ResourceGuard"
+location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_108
+  - community/ResourceGuard
 ---
 
 # .stop()
 
 ## Connections
-- [[dot-stop_all()]] - `calls` [EXTRACTED]
-- [[HttpSseConnection]] - `method` [EXTRACTED]
+- [[ResourceGuard]] - `method` [EXTRACTED]
+- [[Stop background monitoring task cleanly.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_108
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

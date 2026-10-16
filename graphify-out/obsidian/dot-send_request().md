@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Community 108"
+community: "StdioConnection"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_108
+  - community/StdioConnection
 ---
 
 # .send_request()
 
 ## Connections
-- [[dot-start()]] - `calls` [EXTRACTED]
-- [[Any_35]] - `references` [EXTRACTED]
+- [[dot-start()_1]] - `calls` [EXTRACTED]
+- [[Any_61]] - `references` [EXTRACTED]
 - [[Send a JSON-RPC request and read the response.]] - `rationale_for` [EXTRACTED]
 - [[StdioConnection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_108
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

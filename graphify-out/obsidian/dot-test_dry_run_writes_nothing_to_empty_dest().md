@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "code"
-community: "Community 247"
+community: "Path"
 location: "L466"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_247
+  - community/Path
 ---
 
 # .test_dry_run_writes_nothing_to_empty_dest()
 
 ## Connections
-- [[Path_28]] - `references` [EXTRACTED]
+- [[Path_30]] - `references` [EXTRACTED]
 - [[TestDeployDryRun]] - `method` [EXTRACTED]
 - [[_write_tree()]] - `calls` [EXTRACTED]
 - [[deploy_manifest()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_247
+#graphify/code #graphify/EXTRACTED #community/Path

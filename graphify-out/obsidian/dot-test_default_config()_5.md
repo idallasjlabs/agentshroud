@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
+source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "Community 64"
-location: "L20"
+community: "KeyVault"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_64
+  - community/KeyVault
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[Test default configuration values._4]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultSanitizerConfig]] - `method` [EXTRACTED]
-- [[ToolResultSanitizerConfig]] - `calls` [EXTRACTED]
+- [[TestKeyVaultConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_64
+#graphify/code #graphify/EXTRACTED #community/KeyVault

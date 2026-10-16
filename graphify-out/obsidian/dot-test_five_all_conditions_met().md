@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Community 1487"
+community: "TestScoreSecretsManagement"
 location: "L418"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1487
+  - community/TestScoreSecretsManagement
 ---
 
 # .test_five_all_conditions_met()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestScoreSecretsManagement]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1487
+#graphify/code #graphify/EXTRACTED #community/TestScoreSecretsManagement

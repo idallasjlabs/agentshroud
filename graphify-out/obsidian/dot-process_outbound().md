@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/a2a_governance.py"
+source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "Community 39"
-location: "L238"
+community: "AgentTarget"
+location: "L324"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_39
+  - community/AgentTarget
 ---
 
 # .process_outbound()
 
 ## Connections
-- [[dot-_process()]] - `calls` [EXTRACTED]
-- [[A2ADecision]] - `references` [EXTRACTED]
-- [[A2AGovernanceProxy]] - `method` [EXTRACTED]
-- [[A2AMessage]] - `references` [EXTRACTED]
-- [[Validate and govern an outbound A2A message to a remote peer.]] - `rationale_for` [EXTRACTED]
+- [[_BlockedOutboundPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_39
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

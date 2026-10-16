@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_multilingual_injection.py"
+source_file: "gateway/tests/test_canary_tripwire.py"
 type: "code"
-community: "Community 208"
-location: "L10"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_208
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # .setup_method()
 
 ## Connections
-- [[PromptGuard]] - `calls` [EXTRACTED]
-- [[Set up PromptGuard with standard thresholds.]] - `rationale_for` [EXTRACTED]
-- [[TestMultilingualInjection]] - `method` [EXTRACTED]
+- [[CanaryTripwire]] - `calls` [EXTRACTED]
+- [[TestCanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_208
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

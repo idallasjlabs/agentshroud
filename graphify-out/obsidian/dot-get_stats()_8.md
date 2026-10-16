@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/slack_proxy.py"
+source_file: "gateway/security/rate_limit_guard.py"
 type: "code"
-community: "Community 139"
-location: "L439"
+community: "RateLimitGuard"
+location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/RateLimitGuard
 ---
 
 # .get_stats()
 
 ## Connections
-- [[SlackAPIProxy_1]] - `method` [EXTRACTED]
+- [[RateLimitGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_139
+#graphify/code #graphify/EXTRACTED #community/RateLimitGuard

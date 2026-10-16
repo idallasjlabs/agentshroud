@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "Community 211"
+community: "MCPPermissionManager"
 location: "L108"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_211
+  - community/MCPPermissionManager
 ---
 
 # .has_findings()
 
 ## Connections
-- [[InspectionResult]] - `method` [EXTRACTED]
+- [[InspectionResult_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_211
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

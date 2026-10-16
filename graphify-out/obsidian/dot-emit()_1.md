@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "Approval Routing & Event Bus"
-location: "L64"
+community: "dashboard_endpoints.py"
+location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/dashboard_endpointspy
 ---
 
 # .emit()
 
 ## Connections
-- [[Emit an event to all subscribers]] - `rationale_for` [EXTRACTED]
-- [[EventBus]] - `method` [EXTRACTED]
-- [[GatewayEvent]] - `shares_data_with` [EXTRACTED]
+- [[dot-append()_1]] - `calls` [EXTRACTED]
+- [[BufferHandler]] - `method` [EXTRACTED]
+- [[LogRecord_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy

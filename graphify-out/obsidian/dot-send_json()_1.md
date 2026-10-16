@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "Community 38"
+community: "ApprovalRequest"
 location: "L497"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_38
+  - community/ApprovalRequest
 ---
 
 # .send_json()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_HangingWebSocket_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_38
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

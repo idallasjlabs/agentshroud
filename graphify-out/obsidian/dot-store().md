@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_intel_pipeline.py"
+source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Community 125"
-location: "L229"
+community: "AlertDispatcher"
+location: "L693"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_125
+  - community/AlertDispatcher
 ---
 
 # .store()
 
 ## Connections
-- [[IntelReportStore]] - `references` [EXTRACTED]
-- [[Path_8]] - `references` [EXTRACTED]
-- [[TestIntelReportStore]] - `method` [EXTRACTED]
+- [[EncryptedStore]] - `calls` [EXTRACTED]
+- [[TestCryptography]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_125
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "Community 114"
+community: "SkillGuard"
 location: "L274"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_114
+  - community/SkillGuard
 ---
 
 # .test_crypto_miner_indicator_flags()
@@ -16,4 +16,4 @@ tags:
 - [[TestKnownMalicious]] - `method` [EXTRACTED]
 - [[_finding_categories()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_114
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

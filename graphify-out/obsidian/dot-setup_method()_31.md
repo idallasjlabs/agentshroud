@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_runtime_engines.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Community 370"
-location: "L126"
+community: "AgentRegistry"
+location: "L509"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_370
+  - community/AgentRegistry
 ---
 
 # .setup_method()
 
 ## Connections
-- [[DockerEngine]] - `calls` [EXTRACTED]
-- [[TestDockerEngine]] - `method` [EXTRACTED]
+- [[ContainerSnapshot]] - `calls` [EXTRACTED]
+- [[DriftDetector]] - `calls` [EXTRACTED]
+- [[TestDriftDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_370
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

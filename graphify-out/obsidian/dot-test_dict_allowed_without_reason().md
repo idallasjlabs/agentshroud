@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: "TestFromAuditChainEntry"
 location: "L418"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/TestFromAuditChainEntry
 ---
 
 # .test_dict_allowed_without_reason()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestFromEgressAttempt]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/TestFromAuditChainEntry

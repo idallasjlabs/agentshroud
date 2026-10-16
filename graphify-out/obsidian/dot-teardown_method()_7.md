@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_resource_guard.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "P3 Infrastructure Security Modules"
-location: "L28"
+community: "AgentRegistry"
+location: "L284"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/P3_Infrastructure_Security_Modules
+  - community/AgentRegistry
 ---
 
 # .teardown_method()
 
 ## Connections
-- [[TestResourceGuard]] - `method` [EXTRACTED]
+- [[TestTrustManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

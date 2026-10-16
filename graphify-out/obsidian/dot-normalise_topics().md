@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Teams/Group Collaborator Responses"
+community: "telegram_proxy.py"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Teams/Group_Collaborator_Responses
+  - community/telegram_proxypy
 ---
 
 # .normalise_topics()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ProjectConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

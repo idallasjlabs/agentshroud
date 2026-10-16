@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "Community 296"
+community: "TestFabricatedSecurityNotice"
 location: "L564"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_296
+  - community/TestFabricatedSecurityNotice
 ---
 
 # .test_blocking_suspicious_code_execution()
@@ -16,4 +16,4 @@ tags:
 - [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
 - [[blocking suspicious code execution' variant.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_296
+#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

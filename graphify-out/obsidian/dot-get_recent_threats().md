@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Memory Integrity & Lifecycle"
+community: "lifespan.py"
 location: "L369"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Memory_Integrity__Lifecycle
+  - community/lifespanpy
 ---
 
 # .get_recent_threats()
@@ -17,4 +17,4 @@ tags:
 - [[Get threats detected in the last N hours.]] - `rationale_for` [EXTRACTED]
 - [[MemoryLifecycleManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Integrity__Lifecycle
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

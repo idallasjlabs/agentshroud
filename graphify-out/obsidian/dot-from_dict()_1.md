@@ -1,22 +1,24 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "Memory Integrity & Lifecycle"
-location: "L56"
+community: "PermissionLevel"
+location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Memory_Integrity__Lifecycle
+  - community/PermissionLevel
 ---
 
 # .from_dict()
 
 ## Connections
-- [[dot-_load_integrity_database()]] - `calls` [EXTRACTED]
-- [[Any_28]] - `references` [EXTRACTED]
-- [[Create from dictionary for JSON deserialization.]] - `rationale_for` [EXTRACTED]
-- [[FileIntegrityRecord]] - `method` [EXTRACTED]
-- [[ModificationSource]] - `calls` [EXTRACTED]
+- [[Any_9]] - `references` [EXTRACTED]
+- [[MCPProxyConfig_3]] - `method` [EXTRACTED]
+- [[MCPServerConfig_2]] - `calls` [EXTRACTED]
+- [[MCPToolConfig]] - `calls` [EXTRACTED]
+- [[MCPTransport]] - `calls` [EXTRACTED]
+- [[Parse config from a dictionary (e.g. loaded from YAML).]] - `rationale_for` [EXTRACTED]
+- [[PermissionLevel]] - `calls` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Integrity__Lifecycle
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

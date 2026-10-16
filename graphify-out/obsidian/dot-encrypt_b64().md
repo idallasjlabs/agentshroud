@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "Encrypted Store & Drift Detector"
+community: "AgentRegistry"
 location: "L203"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Encrypted_Store__Drift_Detector
+  - community/AgentRegistry
 ---
 
 # .encrypt_b64()
@@ -16,4 +16,4 @@ tags:
 - [[Encrypt and return as base64-encoded string.]] - `rationale_for` [EXTRACTED]
 - [[EncryptedStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Encrypted_Store__Drift_Detector
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

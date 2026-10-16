@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "PII Sanitizer & Redaction"
+community: "ToolResultSanitizer"
 location: "L1357"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__Redaction
+  - community/ToolResultSanitizer
 ---
 
 # .set_config()
@@ -17,4 +17,4 @@ tags:
 - [[Set configuration and initialize tool result sanitizer]] - `rationale_for` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__Redaction
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

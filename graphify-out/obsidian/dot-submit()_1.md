@@ -1,23 +1,25 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "Community 423"
-location: "L71"
+community: "ApprovalQueueConfig"
+location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_423
+  - community/ApprovalQueueConfig
 ---
 
 # .submit()
 
 ## Connections
-- [[dot-_append_audit_event()]] - `calls` [EXTRACTED]
-- [[dot-_persist_pending_store()]] - `calls` [EXTRACTED]
+- [[dot-_notify_telegram()]] - `calls` [EXTRACTED]
+- [[dot-_schedule_timeout()]] - `calls` [EXTRACTED]
 - [[dot-broadcast()_1]] - `calls` [EXTRACTED]
-- [[Add an action to the approval queue          Args             request Approval]] - `rationale_for` [EXTRACTED]
-- [[ApprovalQueue_1]] - `method` [EXTRACTED]
-- [[ApprovalQueueItem_3]] - `references` [EXTRACTED]
-- [[ApprovalRequest_4]] - `references` [EXTRACTED]
+- [[dot-submit_tool_request()_3]] - `calls` [EXTRACTED]
+- [[Add an action to the approval queue with policy-based timeout.]] - `rationale_for` [EXTRACTED]
+- [[ApprovalQueueItem_4]] - `references` [EXTRACTED]
+- [[ApprovalRequest_2]] - `references` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
+- [[ToolRiskPolicy_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_423
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

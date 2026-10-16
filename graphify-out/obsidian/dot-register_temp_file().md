@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "P3 Infrastructure Security Modules"
+community: "ResourceGuard"
 location: "L400"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/P3_Infrastructure_Security_Modules
+  - community/ResourceGuard
 ---
 
 # .register_temp_file()
@@ -15,4 +15,4 @@ tags:
 - [[Register a temporary file for tracking.]] - `rationale_for` [EXTRACTED]
 - [[ResourceGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

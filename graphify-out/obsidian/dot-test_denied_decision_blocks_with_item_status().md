@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Community 143"
+community: "StdioConnection"
 location: "L483"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_143
+  - community/StdioConnection
 ---
 
 # .test_denied_decision_blocks_with_item_status()
@@ -17,4 +17,4 @@ tags:
 - [[make_call()]] - `calls` [EXTRACTED]
 - [[make_proxy()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_143
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

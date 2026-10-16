@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/group_config.py"
+source_file: "gateway/soc/auth.py"
 type: "code"
-community: "Teams/Group Collaborator Responses"
-location: "L133"
+community: "soc/router.py"
+location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Teams/Group_Collaborator_Responses
+  - community/soc/routerpy
 ---
 
 # .is_group_admin()
 
 ## Connections
-- [[dot-is_admin()]] - `calls` [EXTRACTED]
-- [[TeamsConfig_2]] - `method` [EXTRACTED]
+- [[Check group admin status via TeamsConfig if available.]] - `rationale_for` [EXTRACTED]
+- [[SCLCaller_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

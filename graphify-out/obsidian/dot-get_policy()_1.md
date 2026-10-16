@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/security/key_rotation_config.py"
+source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "Community 291"
-location: "L119"
+community: "EgressAttempt"
+location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_291
+  - community/EgressAttempt
 ---
 
 # .get_policy()
 
 ## Connections
-- [[CredentialRotationPolicy_1]] - `references` [EXTRACTED]
-- [[Get rotation policy for a credential type, falling back to api_key default.]] - `rationale_for` [EXTRACTED]
-- [[KeyRotationConfig_1]] - `method` [EXTRACTED]
+- [[dot-_check_impl()]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `method` [EXTRACTED]
+- [[EgressPolicy]] - `references` [EXTRACTED]
+- [[Get effective policy for an agent.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_291
+#graphify/code #graphify/EXTRACTED #community/EgressAttempt

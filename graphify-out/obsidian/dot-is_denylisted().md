@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "Community 52"
-location: "L318"
+community: "EgressFilterConfig"
+location: "L345"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_52
+  - community/EgressFilterConfig
 ---
 
 # .is_denylisted()
@@ -16,4 +16,4 @@ tags:
 - [[Check if a domain matches the denylist.]] - `rationale_for` [EXTRACTED]
 - [[EgressFilterConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_52
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

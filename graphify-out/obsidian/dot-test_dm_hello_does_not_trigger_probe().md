@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Telegram Lockdown & Collaborator UX Tests"
+community: "_wrap_response"
 location: "L9280"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Lockdown__Collaborator_UX_Tests
+  - community/_wrap_response
 ---
 
 # .test_dm_hello_does_not_trigger_probe()
 
 ## Connections
-- [[dot-_make_proxy()_4]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_5]] - `calls` [EXTRACTED]
 - [[TestGroupPresenceProbe]] - `method` [EXTRACTED]
 - [[The probe is group-only; 'hello' in a DM chat must not fire the ack.]] - `rationale_for` [EXTRACTED]
-- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Lockdown__Collaborator_UX_Tests
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

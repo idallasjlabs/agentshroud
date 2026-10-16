@@ -1,18 +1,30 @@
 ---
-source_file: "gateway/tests/test_progressive_lockdown.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "Community 58"
-location: "L56"
+community: "test_e2e_proxy.py"
+location: "L427"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_58
+  - community/test_e2e_proxypy
 ---
 
 # .process_inbound()
 
 ## Connections
-- [[FakePipelineResult_1]] - `references` [EXTRACTED]
-- [[PassthroughPipeline_1]] - `method` [EXTRACTED]
+- [[_PassInboundPipeline]] - `method` [EXTRACTED]
+- [[test_approval_queue_enforced()]] - `calls` [EXTRACTED]
+- [[test_audit_chain_integrity()]] - `calls` [EXTRACTED]
+- [[test_clean_message_passes()]] - `calls` [EXTRACTED]
+- [[test_inbound_outbound_both_audited()]] - `calls` [EXTRACTED]
+- [[test_kill_switch_freezes()]] - `calls` [EXTRACTED]
+- [[test_mixed_pii_and_injection()]] - `calls` [EXTRACTED]
+- [[test_multiple_prompt_patterns()]] - `calls` [EXTRACTED]
+- [[test_pii_stripped_inbound()]] - `calls` [EXTRACTED]
+- [[test_pipeline_processing_time()]] - `calls` [EXTRACTED]
+- [[test_pipeline_stats()]] - `calls` [EXTRACTED]
+- [[test_prompt_injection_blocked()]] - `calls` [EXTRACTED]
+- [[test_tampered_audit_detected()]] - `calls` [EXTRACTED]
+- [[test_trust_level_enforced()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_58
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

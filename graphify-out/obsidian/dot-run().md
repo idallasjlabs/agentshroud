@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/proxy/slack_socket_client.py"
+source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "Community 162"
-location: "L66"
+community: "Enum"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_162
+  - community/Enum
 ---
 
 # .run()
 
 ## Connections
-- [[dot-_connect_and_handle()]] - `calls` [EXTRACTED]
-- [[dot-_get_wss_url()]] - `calls` [EXTRACTED]
-- [[Main reconnect loop. Runs until stop() is called.]] - `rationale_for` [EXTRACTED]
-- [[SlackSocketClient]] - `method` [EXTRACTED]
-- [[compute_backoff()]] - `calls` [EXTRACTED]
+- [[dot-_event_fan_out()]] - `calls` [EXTRACTED]
+- [[dot-_keepalive_loop()]] - `calls` [EXTRACTED]
+- [[Main connection loop.]] - `rationale_for` [EXTRACTED]
+- [[SOCWebSocketHandler]] - `method` [EXTRACTED]
+- [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_162
+#graphify/code #graphify/EXTRACTED #community/Enum

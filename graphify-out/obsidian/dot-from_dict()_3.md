@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/agent_isolation.py"
+source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "Agent Isolation & Group Config Tests"
-location: "L79"
+community: "PrivacyPolicyEnforcer"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Agent_Isolation__Group_Config_Tests
+  - community/PrivacyPolicyEnforcer
 ---
 
 # .from_dict()
 
 ## Connections
-- [[dot-register()]] - `calls` [EXTRACTED]
-- [[AgentRegistry]] - `method` [EXTRACTED]
-- [[ContainerConfig_1]] - `calls` [EXTRACTED]
-- [[Deserialize registry from dict.]] - `rationale_for` [EXTRACTED]
+- [[ServicePolicy]] - `method` [EXTRACTED]
+- [[ServicePrivacy]] - `calls` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Agent_Isolation__Group_Config_Tests
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

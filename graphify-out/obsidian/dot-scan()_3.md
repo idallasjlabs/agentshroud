@@ -1,24 +1,20 @@
 ---
-source_file: "gateway/proxy/web_content_scanner.py"
+source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "Voice Gateway STT & Browser Security"
-location: "L192"
+community: "MiddlewareManager"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/MiddlewareManager
 ---
 
 # .scan()
 
 ## Connections
-- [[dot-_scan_encoded_payloads()]] - `calls` [EXTRACTED]
-- [[dot-_scan_hidden_content()]] - `calls` [EXTRACTED]
-- [[dot-_scan_pii()]] - `calls` [EXTRACTED]
-- [[dot-_scan_prompt_injection()]] - `calls` [EXTRACTED]
-- [[dot-_scan_zero_width()]] - `calls` [EXTRACTED]
-- [[Scan content for security issues.          Args             content The web co]] - `rationale_for` [EXTRACTED]
-- [[ScanResult_4]] - `references` [EXTRACTED]
-- [[WebContentScanner]] - `method` [EXTRACTED]
+- [[dot-check_write()]] - `calls` [EXTRACTED]
+- [[PIIFinding]] - `calls` [EXTRACTED]
+- [[PIIScanResult]] - `references` [EXTRACTED]
+- [[PIIScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

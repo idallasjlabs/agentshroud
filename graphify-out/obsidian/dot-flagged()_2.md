@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "Community 96"
-location: "L91"
+community: "TestSSRFDetection"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_96
+  - community/TestSSRFDetection
 ---
 
 # .flagged()
 
 ## Connections
-- [[WebProxyResult]] - `method` [EXTRACTED]
+- [[URLAnalysisResult_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_96
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "code"
-community: "P3 Infrastructure Security Modules"
+community: "ResourceGuard"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/P3_Infrastructure_Security_Modules
+  - community/ResourceGuard
 ---
 
 # .test_check_resource_under_limit_passes()
@@ -15,4 +15,4 @@ tags:
 - [[Test that resource usage under limits passes.]] - `rationale_for` [EXTRACTED]
 - [[TestResourceGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

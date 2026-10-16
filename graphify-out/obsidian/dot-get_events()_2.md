@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/security/egress_monitor.py"
+source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "Community 155"
-location: "L93"
+community: "A2AGovernanceProxy"
+location: "L457"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_155
+  - community/A2AGovernanceProxy
 ---
 
 # .get_events()
 
 ## Connections
-- [[EgressChannel]] - `references` [EXTRACTED]
-- [[EgressEvent]] - `references` [EXTRACTED]
-- [[EgressMonitor]] - `method` [EXTRACTED]
+- [[A2ADecision]] - `references` [EXTRACTED]
+- [[A2AGovernanceEvent]] - `references` [EXTRACTED]
+- [[A2AGovernanceProxy]] - `method` [EXTRACTED]
+- [[Retrieve governance events with optional filters.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_155
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

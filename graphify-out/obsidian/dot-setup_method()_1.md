@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_rbac.py"
+source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "Ingest API & RBAC Core"
-location: "L128"
+community: "OutboundInfoFilter"
+location: "L521"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/OutboundInfoFilter
 ---
 
 # .setup_method()
 
 ## Connections
-- [[RBACConfig_1]] - `calls` [EXTRACTED]
-- [[RBACManager]] - `calls` [EXTRACTED]
-- [[Set up test environment.]] - `rationale_for` [EXTRACTED]
-- [[TestRBACManager]] - `method` [EXTRACTED]
+- [[OutboundInfoFilter]] - `calls` [EXTRACTED]
+- [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

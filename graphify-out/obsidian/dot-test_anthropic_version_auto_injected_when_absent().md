@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "Community 583"
+community: "TestOAuthInjection"
 location: "L253"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_583
+  - community/TestOAuthInjection
 ---
 
 # .test_anthropic_version_auto_injected_when_absent()
@@ -16,4 +16,4 @@ tags:
 - [[TestOAuthInjection]] - `method` [EXTRACTED]
 - [[anthropic-version is required on every v1messages call; the gateway adds it]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_583
+#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection

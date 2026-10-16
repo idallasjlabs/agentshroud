@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/tests/test_forward_routing.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Multi-Agent Router & Chat UI"
-location: "L28"
+community: "PipelineAction"
+location: "L482"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Multi-Agent_Router__Chat_UI
+  - community/PipelineAction
 ---
 
 # .process_inbound()
 
 ## Connections
-- [[_PipelineCaptor]] - `method` [EXTRACTED]
+- [[dot-_maybe_record_trust_violation()]] - `calls` [EXTRACTED]
+- [[dot-_process_inbound_core()]] - `calls` [EXTRACTED]
+- [[Any_10]] - `references` [EXTRACTED]
+- [[PipelineResult_1]] - `references` [EXTRACTED]
+- [[Process an inbound message through the full security pipeline.          Thin wra]] - `rationale_for` [EXTRACTED]
+- [[SecurityPipeline_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "code"
-community: "Egress Filter & HTTP Proxy"
+community: "WebProxyConfig"
 location: "L130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Filter__HTTP_Proxy
+  - community/WebProxyConfig
 ---
 
 # .get_domain_settings()
@@ -16,4 +16,4 @@ tags:
 - [[Get settings for a specific domain, falling back to defaults.]] - `rationale_for` [EXTRACTED]
 - [[WebProxyConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Filter__HTTP_Proxy
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

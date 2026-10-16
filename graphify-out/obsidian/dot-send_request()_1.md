@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Community 108"
-location: "L131"
+community: ".process_tool_call"
+location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_108
+  - community/process_tool_call
 ---
 
 # .send_request()
 
 ## Connections
-- [[dot-test_missing_aiohttp_raises_runtime_error()]] - `calls` [EXTRACTED]
-- [[dot-test_send_request_and_session_reuse()]] - `calls` [EXTRACTED]
-- [[dot-test_start_send_and_stop()]] - `calls` [EXTRACTED]
-- [[FakeConn]] - `method` [EXTRACTED]
+- [[dot-_execute_tool_call()]] - `calls` [EXTRACTED]
+- [[Any_61]] - `references` [EXTRACTED]
+- [[HttpSseConnection]] - `method` [EXTRACTED]
+- [[Send an HTTP request to the MCP server.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_108
+#graphify/code #graphify/EXTRACTED #community/process_tool_call

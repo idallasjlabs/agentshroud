@@ -1,22 +1,24 @@
 ---
-source_file: "gateway/security/canary_tripwire.py"
+source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Canary Tripwire"
-location: "L136"
+community: "OutboundInfoFilter"
+location: "L705"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Canary_Tripwire
+  - community/OutboundInfoFilter
 ---
 
 # .scan()
 
 ## Connections
-- [[dot-_check_encoded()]] - `calls` [EXTRACTED]
-- [[dot-_check_plain()]] - `calls` [EXTRACTED]
-- [[dot-_record()_1]] - `calls` [EXTRACTED]
-- [[dot-scan_response()]] - `calls` [EXTRACTED]
-- [[CanaryResult_1]] - `references` [EXTRACTED]
-- [[CanaryTripwire]] - `method` [EXTRACTED]
+- [[dot-_check_encoded_content()]] - `calls` [EXTRACTED]
+- [[dot-_check_unicode_tricks()]] - `calls` [EXTRACTED]
+- [[dot-scan_tool_result()]] - `calls` [EXTRACTED]
+- [[PromptGuard]] - `method` [EXTRACTED]
+- [[Scan input text for prompt injection patterns.          Args             text]] - `rationale_for` [EXTRACTED]
+- [[ScanResult_1]] - `references` [EXTRACTED]
+- [[detect_base64_payloads()]] - `calls` [EXTRACTED]
+- [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Canary_Tripwire
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

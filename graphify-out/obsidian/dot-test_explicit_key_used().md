@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "Prompt Guard & Context Integrity"
+community: "PIIConfig"
 location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Prompt_Guard__Context_Integrity
+  - community/PIIConfig
 ---
 
 # .test_explicit_key_used()
@@ -15,4 +15,4 @@ tags:
 - [[Explicit key parameter should override session key.]] - `rationale_for` [EXTRACTED]
 - [[TestSystemPromptHMAC]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Prompt_Guard__Context_Integrity
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

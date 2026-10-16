@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Community 639"
+community: "format_upstream_cve_alert"
 location: "L396"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_639
+  - community/format_upstream_cve_alert
 ---
 
 # .test_alert_titled_for_agent_label()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-_cve()]] - `calls` [EXTRACTED]
 - [[TestFormatUpstreamCveAlert]] - `method` [EXTRACTED]
-- [[format_upstream_cve_alert]] - `calls` [EXTRACTED]
+- [[format_upstream_cve_alert()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_639
+#graphify/code #graphify/EXTRACTED #community/format_upstream_cve_alert

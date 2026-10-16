@@ -1,12 +1,12 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: "Community 230"
+community: ".mcp.json"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_230
+  - community/mcpjson
 ---
 
 # .llm_settings/mcp-servers/github/fluence/github-mcp-wrapper.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[github-fluence]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_230
+#graphify/code #graphify/EXTRACTED #community/mcpjson

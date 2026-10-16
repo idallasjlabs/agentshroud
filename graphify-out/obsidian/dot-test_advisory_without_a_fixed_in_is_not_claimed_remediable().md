@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auto_remediate_cves.py"
 type: "code"
-community: "Community 274"
+community: "plan_remediation"
 location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_274
+  - community/plan_remediation
 ---
 
 # .test_advisory_without_a_fixed_in_is_not_claimed_remediable()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[No upstream fix means no version bump can honestly clear it.]] - `rationale_for` [EXTRACTED]
 - [[TestPlanRemediation]] - `method` [EXTRACTED]
-- [[_entry()]] - `calls` [EXTRACTED]
+- [[_entry()_1]] - `calls` [EXTRACTED]
 - [[plan_remediation()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_274
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

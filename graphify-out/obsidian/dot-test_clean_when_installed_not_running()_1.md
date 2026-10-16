@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Community 292"
-location: "L315"
+community: "test_scanner_integration.py"
+location: "L354"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_292
+  - community/test_scanner_integrationpy
 ---
 
 # .test_clean_when_installed_not_running()
 
 ## Connections
-- [[TestGetFalcoSummary]] - `method` [EXTRACTED]
-- [[get_falco_summary()]] - `calls` [EXTRACTED]
+- [[TestGetWazuhSummary]] - `method` [EXTRACTED]
+- [[get_wazuh_summary()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_292
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Community 1041"
+community: ".test_collaborator_allowlist_bypass_request_is_blocked_and_quarantined"
 location: "L4442"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1041
+  - community/test_collaborator_allowlist_bypass_request_is_blocked_and_quarantined
 ---
 
 # .test_collaborator_unicode_bypass_request_is_blocked_and_quarantined()
@@ -18,7 +18,7 @@ tags:
 - [[TelegramAPIProxy]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[Unicodeinvisible-character bypass prompts should be blocked and quarantined.]] - `rationale_for` [EXTRACTED]
-- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1041
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_allowlist_bypass_request_is_blocked_and_quarantined

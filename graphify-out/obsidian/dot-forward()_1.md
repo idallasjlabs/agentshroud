@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/proxy/forwarder.py"
+source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "Proxy Sidecar & Forwarder"
-location: "L72"
+community: "A2AProxyResult"
+location: "L446"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Proxy_Sidecar__Forwarder
+  - community/A2AProxyResult
 ---
 
 # .forward()
 
 ## Connections
-- [[dot-health_check()_2]] - `calls` [EXTRACTED]
-- [[Forward a request to the OpenClaw backend.]] - `rationale_for` [EXTRACTED]
-- [[ForwardResult]] - `references` [EXTRACTED]
-- [[HTTPForwarder]] - `method` [EXTRACTED]
+- [[dot-process_agent_card_request()]] - `calls` [EXTRACTED]
+- [[dot-process_inbound_request()]] - `calls` [EXTRACTED]
+- [[HermesA2AForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder
+#graphify/code #graphify/EXTRACTED #community/A2AProxyResult

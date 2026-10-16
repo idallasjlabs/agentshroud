@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "Community 38"
+community: "ApprovalQueueItem"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_38
+  - community/ApprovalQueueItem
 ---
 
 # .test_100_concurrent_submissions()
@@ -15,4 +15,4 @@ tags:
 - [[Submit 100 requests concurrently — all should succeed.]] - `rationale_for` [EXTRACTED]
 - [[TestConcurrentApprovalRequests]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_38
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueItem

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_rbac.py"
+source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Ingest API & RBAC Core"
-location: "L352"
+community: "test_main_endpoints.py"
+location: "L560"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/test_main_endpointspy
 ---
 
 # .teardown_method()
 
 ## Connections
-- [[Close sqlite-holding sub-modules so Python 3.13's GC does not         finalize t]] - `rationale_for` [EXTRACTED]
-- [[TestRBACIntegration]] - `method` [EXTRACTED]
+- [[TestScanParameterAllowlists]] - `method` [EXTRACTED]
+- [[auth_dep()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy

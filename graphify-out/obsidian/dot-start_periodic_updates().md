@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_blocklist.py"
 type: "code"
-community: "Community 687"
+community: ".update"
 location: "L260"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_687
+  - community/update
 ---
 
 # .start_periodic_updates()
@@ -16,4 +16,4 @@ tags:
 - [[DNSBlocklist]] - `method` [EXTRACTED]
 - [[Start background task for periodic blocklist updates.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_687
+#graphify/code #graphify/EXTRACTED #community/update

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
 type: "code"
-community: "Community 54"
+community: "KillSwitchMonitor"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/KillSwitchMonitor
 ---
 
 # .test_dry_run_exercises_enabled_modes()
@@ -15,4 +15,4 @@ tags:
 - [[KillSwitchMonitor]] - `calls` [EXTRACTED]
 - [[TestVerifyKillswitch]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_54
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

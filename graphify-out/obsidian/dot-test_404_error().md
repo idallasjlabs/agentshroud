@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Community 100"
+community: "test_main_endpoints.py"
 location: "L220"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_100
+  - community/test_main_endpointspy
 ---
 
 # .test_404_error()
@@ -15,4 +15,4 @@ tags:
 - [[Test 404 handling for non-existent endpoints.]] - `rationale_for` [EXTRACTED]
 - [[TestErrorHandling]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_100
+#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy

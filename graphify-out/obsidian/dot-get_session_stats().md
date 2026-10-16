@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Blue/Red Team Security Auditor Skills"
-location: "L403"
+community: "ToolChainAnalyzer"
+location: "L530"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Blue/Red_Team_Security_Auditor_Skills
+  - community/ToolChainAnalyzer
 ---
 
 # .get_session_stats()
 
 ## Connections
-- [[Any_45]] - `references` [EXTRACTED]
+- [[Any_36]] - `references` [EXTRACTED]
 - [[Get statistics for a session.]] - `rationale_for` [EXTRACTED]
-- [[MultiTurnTracker]] - `method` [EXTRACTED]
+- [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Memory Integrity & Lifecycle"
+community: "lifespan.py"
 location: "L273"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Memory_Integrity__Lifecycle
+  - community/lifespanpy
 ---
 
 # .enforce_memory_md_size_limit()
@@ -18,4 +18,4 @@ tags:
 - [[MemoryLifecycleManager]] - `method` [EXTRACTED]
 - [[RetentionAction]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Integrity__Lifecycle
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

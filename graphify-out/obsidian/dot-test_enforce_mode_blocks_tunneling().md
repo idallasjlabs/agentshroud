@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "Community 63"
+community: "DNSFilterConfig"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_63
+  - community/DNSFilterConfig
 ---
 
 # .test_enforce_mode_blocks_tunneling()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDNSTunnelingDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_63
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

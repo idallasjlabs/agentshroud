@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/cron_state_monitor.py"
+source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "Community 90"
-location: "L315"
+community: "HTTPConnectProxy"
+location: "L158"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/HTTPConnectProxy
 ---
 
 # .stop()
 
 ## Connections
-- [[CronStateMonitor]] - `method` [EXTRACTED]
+- [[HTTPConnectProxy_1]] - `method` [EXTRACTED]
+- [[Stop the CONNECT proxy server.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_90
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/egress_monitor.py"
+source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "Community 155"
-location: "L90"
+community: "ModuleStatsCollector"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_155
+  - community/ModuleStatsCollector
 ---
 
 # .record()
 
 ## Connections
-- [[EgressEvent]] - `references` [EXTRACTED]
-- [[EgressMonitor]] - `method` [EXTRACTED]
+- [[Decision_2]] - `references` [EXTRACTED]
+- [[ModuleStatsCollector]] - `method` [EXTRACTED]
+- [[Record one enforcement decision for ``module``.          Never raises an unknow]] - `rationale_for` [EXTRACTED]
+- [[record_decision()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_155
+#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector

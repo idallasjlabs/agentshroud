@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Community 335"
+community: "Role"
 location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_335
+  - community/Role
 ---
 
 # .test_collaborator_allowed_tools_does_not_include_private()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCollaboratorAccess]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_335
+#graphify/code #graphify/EXTRACTED #community/Role

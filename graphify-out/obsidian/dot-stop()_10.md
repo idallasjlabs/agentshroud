@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/http_proxy.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "Community 72"
-location: "L158"
+community: "FalcoAlertWatcher"
+location: "L217"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/FalcoAlertWatcher
 ---
 
 # .stop()
 
 ## Connections
-- [[HTTPConnectProxy_1]] - `method` [EXTRACTED]
-- [[Stop the CONNECT proxy server.]] - `rationale_for` [EXTRACTED]
+- [[FalcoAlertWatcher]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multilingual_injection.py"
 type: "code"
-community: "Community 208"
+community: "TestMultilingualInjection"
 location: "L171"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_208
+  - community/TestMultilingualInjection
 ---
 
 # .test_benign_multilingual_text()
@@ -15,4 +15,4 @@ tags:
 - [[Test that benign multilingual text is not blocked.]] - `rationale_for` [EXTRACTED]
 - [[TestMultilingualInjection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_208
+#graphify/code #graphify/EXTRACTED #community/TestMultilingualInjection

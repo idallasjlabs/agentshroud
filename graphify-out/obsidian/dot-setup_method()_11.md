@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_multilingual_injection.py"
 type: "code"
-community: "Encrypted Store & Drift Detector"
-location: "L38"
+community: "TestMultilingualInjection"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Encrypted_Store__Drift_Detector
+  - community/TestMultilingualInjection
 ---
 
 # .setup_method()
 
 ## Connections
-- [[EncryptedStore]] - `calls` [EXTRACTED]
-- [[TestEncryptedStore]] - `method` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[Set up PromptGuard with standard thresholds.]] - `rationale_for` [EXTRACTED]
+- [[TestMultilingualInjection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Encrypted_Store__Drift_Detector
+#graphify/code #graphify/EXTRACTED #community/TestMultilingualInjection

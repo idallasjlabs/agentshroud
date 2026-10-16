@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "Community 390"
+community: "UserSessionManager"
 location: "L134"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_390
+  - community/UserSessionManager
 ---
 
 # .test_conversation_history_limit()
@@ -15,4 +15,4 @@ tags:
 - [[History should be capped at 1000 messages.]] - `rationale_for` [EXTRACTED]
 - [[TestConversationHistory]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_390
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

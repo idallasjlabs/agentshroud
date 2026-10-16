@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "Community 89"
+community: "PermissionLevel"
 location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_89
+  - community/PermissionLevel
 ---
 
 # .test_default_trust_is_1()
 
 ## Connections
-- [[TestTrustLevels_1]] - `method` [EXTRACTED]
+- [[TestTrustLevels]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_89
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

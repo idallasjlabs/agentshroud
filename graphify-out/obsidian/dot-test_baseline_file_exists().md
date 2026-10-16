@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_benchmark_regression.py"
 type: "code"
-community: "Community 495"
+community: "TestBenchmarkRegression"
 location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_495
+  - community/TestBenchmarkRegression
 ---
 
 # .test_baseline_file_exists()
@@ -15,4 +15,4 @@ tags:
 - [[Baseline file must exist and contain expected keys.]] - `rationale_for` [EXTRACTED]
 - [[TestBenchmarkRegression]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_495
+#graphify/code #graphify/EXTRACTED #community/TestBenchmarkRegression

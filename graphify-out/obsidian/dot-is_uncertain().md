@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "Community 212"
+community: "HeuristicClassifier"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_212
+  - community/HeuristicClassifier
 ---
 
 # .is_uncertain()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ClassificationResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_212
+#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

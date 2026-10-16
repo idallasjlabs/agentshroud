@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_metadata_guard.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Community 354"
-location: "L18"
+community: "AgentRegistry"
+location: "L647"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_354
+  - community/AgentRegistry
 ---
 
 # .setup_method()
 
 ## Connections
-- [[MetadataGuard]] - `calls` [EXTRACTED]
-- [[TestMetadataGuard]] - `method` [EXTRACTED]
+- [[AgentRegistry]] - `calls` [EXTRACTED]
+- [[ContainerConfig_1]] - `calls` [EXTRACTED]
+- [[TestAgentIsolation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_354
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

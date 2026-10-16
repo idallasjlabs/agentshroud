@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ssh_config.py"
 type: "code"
-community: "Approval Queue (WebSocket)"
+community: "SSHHostConfig"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_WebSocket
+  - community/SSHHostConfig
 ---
 
 # .expand_known_hosts()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSHHostConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_WebSocket
+#graphify/code #graphify/EXTRACTED #community/SSHHostConfig

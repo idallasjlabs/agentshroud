@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "Signed Instruction Envelopes & Security Pipeline"
-location: "L1658"
+community: "make_event"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Signed_Instruction_Envelopes__Security_Pipeline
+  - community/make_event
 ---
 
 # .get_stats()
 
 ## Connections
-- [[dot-verify_chain()]] - `calls` [EXTRACTED]
-- [[Any_14]] - `references` [EXTRACTED]
-- [[SecurityPipeline_1]] - `method` [EXTRACTED]
+- [[Any_29]] - `references` [EXTRACTED]
+- [[EventBus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Signed_Instruction_Envelopes__Security_Pipeline
+#graphify/code #graphify/EXTRACTED #community/make_event

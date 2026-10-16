@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Community 185"
-location: "L845"
+community: "EgressFilter"
+location: "L407"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_185
+  - community/EgressFilter
 ---
 
 # .setup_method()
 
 ## Connections
-- [[EgressFilter]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
+- [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[EgressPolicy]] - `calls` [EXTRACTED]
-- [[TestEgressSSRF]] - `method` [EXTRACTED]
+- [[TestEgressFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_185
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

@@ -1,19 +1,22 @@
 ---
-source_file: "gateway/security/xml_leak_filter.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "Blue/Red Team Security Auditor Skills"
-location: "L91"
+community: "OutboundInfoFilter"
+location: "L351"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Blue/Red_Team_Security_Auditor_Skills
+  - community/OutboundInfoFilter
 ---
 
 # .filter_response()
 
 ## Connections
-- [[Filter outbound response content to remove sensitive information.          Args]] - `rationale_for` [EXTRACTED]
-- [[FilterResult_1]] - `references` [EXTRACTED]
-- [[XMLLeakFilter]] - `method` [EXTRACTED]
+- [[dot-_classify_response_risk()]] - `calls` [EXTRACTED]
+- [[dot-_is_allowed_for_trust()]] - `calls` [EXTRACTED]
+- [[Filter agent response for sensitive information disclosure.          Args]] - `rationale_for` [EXTRACTED]
+- [[FilterMatch]] - `calls` [EXTRACTED]
+- [[FilterResult]] - `references` [EXTRACTED]
+- [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

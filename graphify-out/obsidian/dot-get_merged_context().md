@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Community 1031"
+community: "UserSessionManager"
 location: "L532"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1031
+  - community/UserSessionManager
 ---
 
 # .get_merged_context()
@@ -17,4 +17,4 @@ tags:
 - [[Return user MEMORY.md + all accessible group MEMORY.md contents for prompt injec]] - `rationale_for` [EXTRACTED]
 - [[UserSessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1031
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

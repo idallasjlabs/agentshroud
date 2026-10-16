@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 1331"
+community: "TestTrivyImageSummaries"
 location: "L316"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1331
+  - community/TestTrivyImageSummaries
 ---
 
 # .test_bot_filter_matches_normalised_image()
@@ -15,4 +15,4 @@ tags:
 - [[TestTrivyImageSummaries]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1331
+#graphify/code #graphify/EXTRACTED #community/TestTrivyImageSummaries

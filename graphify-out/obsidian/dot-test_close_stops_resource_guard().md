@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Slack Proxy & Main Endpoint Tests"
+community: "_req"
 location: "L984"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_Proxy__Main_Endpoint_Tests
+  - community/_req
 ---
 
 # .test_close_stops_resource_guard()
@@ -15,4 +15,4 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestClose]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_Proxy__Main_Endpoint_Tests
+#graphify/code #graphify/EXTRACTED #community/_req

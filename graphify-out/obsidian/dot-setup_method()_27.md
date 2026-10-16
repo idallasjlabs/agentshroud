@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_outbound_filter.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Community 296"
-location: "L521"
+community: "TestEgressSSRF"
+location: "L845"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_296
+  - community/TestEgressSSRF
 ---
 
 # .setup_method()
 
 ## Connections
-- [[OutboundInfoFilter]] - `calls` [EXTRACTED]
-- [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
+- [[EgressPolicy]] - `calls` [EXTRACTED]
+- [[TestEgressSSRF]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_296
+#graphify/code #graphify/EXTRACTED #community/TestEgressSSRF

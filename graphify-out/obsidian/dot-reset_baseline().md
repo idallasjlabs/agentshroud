@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/config_integrity.py"
 type: "code"
-community: "Community 219"
+community: ".check"
 location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_219
+  - community/check
 ---
 
 # .reset_baseline()
@@ -17,4 +17,4 @@ tags:
 - [[Accept current file hashes as the new baseline (owner-acknowledged rebuild).]] - `rationale_for` [EXTRACTED]
 - [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_219
+#graphify/code #graphify/EXTRACTED #community/check

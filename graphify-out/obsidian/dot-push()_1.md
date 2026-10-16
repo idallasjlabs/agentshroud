@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "Community 106"
-location: "L70"
+community: "PodmanEngine"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_106
+  - community/PodmanEngine
 ---
 
 # .push()
 
 ## Connections
-- [[ContainerEngine]] - `method` [EXTRACTED]
-- [[Push an image to a registry.]] - `rationale_for` [EXTRACTED]
+- [[dot-_cmd()]] - `calls` [EXTRACTED]
+- [[PodmanEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_106
+#graphify/code #graphify/EXTRACTED #community/PodmanEngine

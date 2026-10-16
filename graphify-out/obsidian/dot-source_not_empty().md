@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "Community 70"
+community: "CompetitiveIntelReport"
 location: "L139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_70
+  - community/CompetitiveIntelReport
 ---
 
 # .source_not_empty()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CompetitiveIntelReport_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_70
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

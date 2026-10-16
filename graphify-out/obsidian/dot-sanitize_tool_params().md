@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Voice Gateway STT & Browser Security"
+community: "ToolChainAnalyzer"
 location: "L587"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/ToolChainAnalyzer
 ---
 
 # .sanitize_tool_params()
 
 ## Connections
-- [[Any_59]] - `references` [EXTRACTED]
+- [[Any_36]] - `references` [EXTRACTED]
 - [[ParamScanResult]] - `references` [EXTRACTED]
 - [[Scan tool parameters for injection payloads and return sanitized copy.]] - `rationale_for` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

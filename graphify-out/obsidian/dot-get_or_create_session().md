@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Community 383"
+community: "UserSessionManager"
 location: "L271"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_383
+  - community/UserSessionManager
 ---
 
 # .get_or_create_session()
@@ -26,4 +26,4 @@ tags:
 - [[UserSession]] - `references` [EXTRACTED]
 - [[UserSessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_383
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

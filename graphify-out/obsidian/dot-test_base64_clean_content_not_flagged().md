@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "code"
-community: "Community 101"
+community: "InjectionAction"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_101
+  - community/InjectionAction
 ---
 
 # .test_base64_clean_content_not_flagged()
@@ -15,4 +15,4 @@ tags:
 - [[Benign base64 content should not trigger encoded injection.]] - `rationale_for` [EXTRACTED]
 - [[TestEncodedInjection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_101
+#graphify/code #graphify/EXTRACTED #community/InjectionAction

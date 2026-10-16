@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 1013"
-location: "L551"
+community: "test_security_toolchain.py"
+location: "L771"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1013
+  - community/test_security_toolchainpy
 ---
 
 # .test_all_clean()
 
 ## Connections
-- [[dot-_patch_all()]] - `calls` [EXTRACTED]
-- [[TestAggregateResults]] - `method` [EXTRACTED]
+- [[TestHealthOverallScore]] - `method` [EXTRACTED]
+- [[calculate_overall_score()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1013
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

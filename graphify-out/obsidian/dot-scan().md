@@ -1,21 +1,25 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
+source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "Proxy Sidecar & Forwarder"
-location: "L66"
+community: "WebContentScanner"
+location: "L219"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Proxy_Sidecar__Forwarder
+  - community/WebContentScanner
 ---
 
 # .scan()
 
 ## Connections
-- [[Scan a message through the security pipeline.]] - `rationale_for` [EXTRACTED]
-- [[ScanRequest]] - `references` [EXTRACTED]
-- [[ScanResponse]] - `references` [EXTRACTED]
-- [[SecurityPipeline (external, referenced)]] - `calls` [EXTRACTED]
-- [[SidecarScanner]] - `method` [EXTRACTED]
+- [[dot-_scan_encoded_payloads()]] - `calls` [EXTRACTED]
+- [[dot-_scan_hidden_content()]] - `calls` [EXTRACTED]
+- [[dot-_scan_pii()]] - `calls` [EXTRACTED]
+- [[dot-_scan_prompt_injection()]] - `calls` [EXTRACTED]
+- [[dot-_scan_xml_dtd()]] - `calls` [EXTRACTED]
+- [[dot-_scan_zero_width()]] - `calls` [EXTRACTED]
+- [[Scan content for security issues. Args content The web content to scan.…]] - `rationale_for` [EXTRACTED]
+- [[ScanResult]] - `calls` [EXTRACTED]
+- [[WebContentScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

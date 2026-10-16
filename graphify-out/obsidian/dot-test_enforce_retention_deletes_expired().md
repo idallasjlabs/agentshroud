@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "Gateway Config & PII Sanitizer"
+community: "DataLedger"
 location: "L277"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/DataLedger
 ---
 
 # .test_enforce_retention_deletes_expired()
@@ -15,4 +15,4 @@ tags:
 - [[Retention enforcement removes expired entries.]] - `rationale_for` [EXTRACTED]
 - [[TestRetention]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
+#graphify/code #graphify/EXTRACTED #community/DataLedger

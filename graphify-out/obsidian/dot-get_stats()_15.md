@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "Community 211"
-location: "L840"
+community: "ApprovalHardening"
+location: "L472"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_211
+  - community/ApprovalHardening
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_35]] - `references` [EXTRACTED]
-- [[Get proxy statistics.]] - `rationale_for` [EXTRACTED]
-- [[MCPProxy_1]] - `method` [EXTRACTED]
+- [[Any_54]] - `references` [EXTRACTED]
+- [[ApprovalHardening]] - `method` [EXTRACTED]
+- [[Get statistics about approval hardening.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_211
+#graphify/code #graphify/EXTRACTED #community/ApprovalHardening

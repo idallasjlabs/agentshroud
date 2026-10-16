@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Community 1038"
+community: "TestPIIDetection"
 location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1038
+  - community/TestPIIDetection
 ---
 
 # .test_credit_card_detected()
 
 ## Connections
-- [[TestPIIDetection]] - `method` [EXTRACTED]
+- [[TestPIIDetection_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1038
+#graphify/code #graphify/EXTRACTED #community/TestPIIDetection

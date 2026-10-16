@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Community 48"
+community: "AlertDispatcher"
 location: "L996"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_48
+  - community/AlertDispatcher
 ---
 
 # .test_env_guard_monitoring()
@@ -15,4 +15,4 @@ tags:
 - [[EnvironmentGuard]] - `calls` [EXTRACTED]
 - [[TestLoggingSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_48
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: "test_soc_realtime_coverage.py"
 location: "L221"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .test_bearer_header_valid()
 
 ## Connections
-- [[RBACConfig_2]] - `calls` [EXTRACTED]
+- [[RBACConfig_1]] - `calls` [EXTRACTED]
 - [[TestResolveCaller]] - `method` [EXTRACTED]
 - [[_resolve_caller()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

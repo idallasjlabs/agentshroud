@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "P3 Infrastructure Security Modules"
+community: "OAuthSecurityValidator"
 location: "L227"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/P3_Infrastructure_Security_Modules
+  - community/OAuthSecurityValidator
 ---
 
 # .test_cookie_custom_max_age_expires_sooner()
@@ -15,4 +15,4 @@ tags:
 - [[OAuthSecurityValidator]] - `calls` [EXTRACTED]
 - [[TestConsentCookieBinding]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules
+#graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator

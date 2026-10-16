@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/group_config.py"
+source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Teams/Group Collaborator Responses"
-location: "L101"
+community: "load_config"
+location: "L287"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Teams/Group_Collaborator_Responses
+  - community/load_config
 ---
 
 # .model_post_init()
 
 ## Connections
-- [[TeamsConfig_2]] - `method` [EXTRACTED]
-- [[_apply_persisted_overrides()]] - `calls` [EXTRACTED]
+- [[AuditExportConfig]] - `method` [EXTRACTED]
+- [[Path_31]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses
+#graphify/code #graphify/EXTRACTED #community/load_config

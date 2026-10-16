@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_responses.py"
 type: "code"
-community: "Teams/Group Collaborator Responses"
+community: "telegram_proxy.py"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Teams/Group_Collaborator_Responses
+  - community/telegram_proxypy
 ---
 
 # .test_collab_unavailable_not_empty()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestConstantMessages]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

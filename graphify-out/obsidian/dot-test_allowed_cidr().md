@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Community 185"
+community: "_make_filter"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_185
+  - community/_make_filter
 ---
 
 # .test_allowed_cidr()
 
 ## Connections
 - [[CIDR in policy allowlist should match.]] - `rationale_for` [EXTRACTED]
-- [[EgressFilter_1]] - `calls` [EXTRACTED]
+- [[EgressFilter]] - `calls` [EXTRACTED]
 - [[EgressPolicy]] - `calls` [EXTRACTED]
 - [[TestIPRules]] - `method` [EXTRACTED]
 - [[_make_filter()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_185
+#graphify/code #graphify/EXTRACTED #community/_make_filter

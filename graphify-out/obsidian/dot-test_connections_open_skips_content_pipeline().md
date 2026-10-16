@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "Community 78"
+community: "_make_proxy"
 location: "L431"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_78
+  - community/_make_proxy
 ---
 
 # .test_connections_open_skips_content_pipeline()
@@ -17,4 +17,4 @@ tags:
 - [[_make_proxy()_4]] - `calls` [EXTRACTED]
 - [[apps.connections.open pipeline is NOT invoked (not a message method).]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_78
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

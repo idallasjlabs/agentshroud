@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "Community 94"
-location: "L148"
+community: "_t"
+location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_94
+  - community/_t
 ---
 
 # .test_classification_is_deterministic()
@@ -15,4 +15,4 @@ tags:
 - [[TestClassify]] - `method` [EXTRACTED]
 - [[_t()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_94
+#graphify/code #graphify/EXTRACTED #community/_t

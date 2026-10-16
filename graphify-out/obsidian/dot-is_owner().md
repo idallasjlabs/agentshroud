@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/rbac_config.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Ingest API & RBAC Core"
-location: "L169"
+community: "TelegramAPIProxy"
+location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/TelegramAPIProxy
 ---
 
 # .is_owner()
 
 ## Connections
-- [[Check if user is the owner (any platform).]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_2]] - `method` [EXTRACTED]
+- [[FakeRBAC]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

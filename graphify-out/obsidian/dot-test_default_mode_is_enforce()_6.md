@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_file_sandbox.py"
+source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "File Sandbox & Privilege Separation Tests"
-location: "L44"
+community: "DNSFilterConfig"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/File_Sandbox__Privilege_Separation_Tests
+  - community/DNSFilterConfig
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
-- [[TestFileSandboxConfig]] - `method` [EXTRACTED]
+- [[Default mode is enforce after v0.8.0 enforcement hardening._2]] - `rationale_for` [EXTRACTED]
+- [[TestDNSFilterConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

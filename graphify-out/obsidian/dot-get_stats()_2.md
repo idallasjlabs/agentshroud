@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/approval_hardening.py"
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
-location: "L472"
+community: "AlertDispatcher"
+location: "L220"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/AlertDispatcher
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_4]] - `references` [EXTRACTED]
-- [[ApprovalHardening]] - `method` [EXTRACTED]
-- [[Get statistics about approval hardening.]] - `rationale_for` [EXTRACTED]
+- [[AlertDispatcher]] - `method` [EXTRACTED]
+- [[Any]] - `references` [EXTRACTED]
+- [[Get dispatcher statistics.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

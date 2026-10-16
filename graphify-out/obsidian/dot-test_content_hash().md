@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "code"
-community: "Community 387"
+community: "AuditEvent"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_387
+  - community/AuditEvent
 ---
 
 # .test_content_hash()
@@ -16,4 +16,4 @@ tags:
 - [[Test content hash computation.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditEvent]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_387
+#graphify/code #graphify/EXTRACTED #community/AuditEvent

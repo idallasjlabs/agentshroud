@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "Gateway Config & PII Sanitizer"
-location: "L347"
+community: "SlackAPIProxy"
+location: "L439"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/SlackAPIProxy
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_26]] - `references` [EXTRACTED]
-- [[DataLedger]] - `method` [EXTRACTED]
-- [[Get aggregate statistics          Returns             Dictionary with total ent]] - `rationale_for` [EXTRACTED]
+- [[SlackAPIProxy_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
+#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_lockdown.py"
 type: "code"
-community: "Community 58"
+community: "ProgressiveLockdown"
 location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_58
+  - community/ProgressiveLockdown
 ---
 
 # .reset()
@@ -15,4 +15,4 @@ tags:
 - [[Owner command reset lockdown state for a user. Returns True if existed.]] - `rationale_for` [EXTRACTED]
 - [[ProgressiveLockdown]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_58
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

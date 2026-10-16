@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "Teams/Group Collaborator Responses"
+community: "GroupConfig"
 location: "L206"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Teams/Group_Collaborator_Responses
+  - community/GroupConfig
 ---
 
 # .test_empty_prefix_string_not_returned()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGroupSafeResponsePrefix]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses
+#graphify/code #graphify/EXTRACTED #community/GroupConfig

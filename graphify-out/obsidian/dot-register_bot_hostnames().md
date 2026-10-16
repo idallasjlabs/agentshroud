@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "Community 793"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_793
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # .register_bot_hostnames()
@@ -15,4 +15,4 @@ tags:
 - [[Add bot container hostnames to the infrastructure detection patterns.          C]] - `rationale_for` [EXTRACTED]
 - [[PromptProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_793
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/progressive_trust_config.py"
+source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "Community 689"
-location: "L229"
+community: "._update_score"
+location: "L289"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_689
+  - community/_update_score
 ---
 
 # .is_tool_allowed()
 
 ## Connections
-- [[Check if a tool is allowed for the given trust level.]] - `rationale_for` [EXTRACTED]
-- [[ProgressiveTrustConfig_1]] - `method` [EXTRACTED]
-- [[TrustLevel_2]] - `references` [EXTRACTED]
+- [[dot-get_trust()]] - `calls` [EXTRACTED]
+- [[Per-level tool gate from the progressive trust ladder.          Tri-state True]] - `rationale_for` [EXTRACTED]
+- [[TrustManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_689
+#graphify/code #graphify/EXTRACTED #community/_update_score

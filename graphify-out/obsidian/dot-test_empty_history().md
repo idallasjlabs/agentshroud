@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agentshroud_manager.py"
 type: "code"
-community: "Community 55"
+community: "upgrade"
 location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_55
+  - community/upgrade
 ---
 
 # .test_empty_history()
@@ -15,4 +15,4 @@ tags:
 - [[TestListVersions]] - `method` [EXTRACTED]
 - [[list_versions()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_55
+#graphify/code #graphify/EXTRACTED #community/upgrade

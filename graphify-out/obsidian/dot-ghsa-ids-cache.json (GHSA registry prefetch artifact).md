@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/JOBS-REFERENCE.md"
 type: "concept"
-community: "Community 160"
+community: "Report Delivery Format Instructions"
 location: "L38, L61"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_160
+  - community/Report_Delivery_Format_Instructions
 ---
 
 # .ghsa-ids-cache.json (GHSA registry prefetch artifact)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-new-cves.json (pre-diffed advisory handoff file)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_160
+#graphify/concept #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions

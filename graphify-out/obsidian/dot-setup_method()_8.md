@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/tests/test_soc_auth.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "Community 159"
-location: "L56"
+community: "lifespan.py"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_159
+  - community/lifespanpy
 ---
 
 # .setup_method()
 
 ## Connections
-- [[TestSessionTokens]] - `method` [EXTRACTED]
+- [[MemoryIntegrityConfig_1]] - `calls` [EXTRACTED]
+- [[MemoryIntegrityMonitor]] - `calls` [EXTRACTED]
+- [[Set up test environment.]] - `rationale_for` [EXTRACTED]
+- [[TestMemoryIntegrityMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_159
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

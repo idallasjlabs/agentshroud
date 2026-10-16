@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "Community 139"
+community: "SlackAPIProxy"
 location: "L442"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/SlackAPIProxy
 ---
 
 # .provision_group_channel()
@@ -16,4 +16,4 @@ tags:
 - [[Create a Slack channel for a group. Returns channel_id or None on failure.]] - `rationale_for` [EXTRACTED]
 - [[SlackAPIProxy_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_139
+#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy

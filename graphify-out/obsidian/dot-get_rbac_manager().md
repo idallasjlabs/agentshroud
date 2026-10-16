@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "Ingest Middleware & File Sandbox"
+community: "MiddlewareManager"
 location: "L988"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_Middleware__File_Sandbox
+  - community/MiddlewareManager
 ---
 
 # .get_rbac_manager()
@@ -16,4 +16,4 @@ tags:
 - [[MiddlewareManager]] - `method` [EXTRACTED]
 - [[RBACManager_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

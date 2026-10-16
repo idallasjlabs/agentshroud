@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_heuristic_classifier.py"
 type: "code"
-community: "Community 212"
+community: "HeuristicClassifier"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_212
+  - community/HeuristicClassifier
 ---
 
 # .test_clear_injection_high_score()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestHeuristicClassifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_212
+#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

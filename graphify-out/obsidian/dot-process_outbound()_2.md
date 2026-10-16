@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "Multi-Agent Router & Chat UI"
-location: "L324"
+community: "_PipelineCaptor"
+location: "L421"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Multi-Agent_Router__Chat_UI
+  - community/_PipelineCaptor
 ---
 
 # .process_outbound()
 
 ## Connections
-- [[_BlockedOutboundPipeline]] - `method` [EXTRACTED]
+- [[dot-test_agent_id_propagated_for_hermes()]] - `calls` [EXTRACTED]
+- [[_TrustCaptor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI
+#graphify/code #graphify/EXTRACTED #community/_PipelineCaptor

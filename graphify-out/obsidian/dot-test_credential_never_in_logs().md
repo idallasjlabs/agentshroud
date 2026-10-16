@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "Community 964"
+community: "test_credential_injector.py"
 location: "L185"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_964
+  - community/test_credential_injectorpy
 ---
 
 # .test_credential_never_in_logs()
@@ -15,4 +15,4 @@ tags:
 - [[TestStatus_1]] - `method` [EXTRACTED]
 - [[Verify that raw credential values never appear in log output.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_964
+#graphify/code #graphify/EXTRACTED #community/test_credential_injectorpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "Community 139"
+community: "SlackAPIProxy"
 location: "L467"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/SlackAPIProxy
 ---
 
 # .invite_channel_member()
@@ -16,4 +16,4 @@ tags:
 - [[Invite a Slack user to a channel. Returns True on success.]] - `rationale_for` [EXTRACTED]
 - [[SlackAPIProxy_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_139
+#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy

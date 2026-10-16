@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "Community 167"
+community: "EgressAttempt"
 location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_167
+  - community/EgressAttempt
 ---
 
 # .matches_ip()
@@ -16,4 +16,4 @@ tags:
 - [[Check if IP matches any allowed IPCIDR.]] - `rationale_for` [EXTRACTED]
 - [[EgressPolicy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_167
+#graphify/code #graphify/EXTRACTED #community/EgressAttempt

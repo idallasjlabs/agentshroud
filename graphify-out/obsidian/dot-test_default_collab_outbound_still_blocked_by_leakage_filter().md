@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Community 522"
+community: "TestFullAccessMiddlewareBypass"
 location: "L9549"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_522
+  - community/TestFullAccessMiddlewareBypass
 ---
 
 # .test_default_collab_outbound_still_blocked_by_leakage_filter()
@@ -17,4 +17,4 @@ tags:
 - [[TestFullAccessMiddlewareBypass]] - `method` [EXTRACTED]
 - [[local_only collaborators must still be blocked by the leakage filter.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_522
+#graphify/code #graphify/EXTRACTED #community/TestFullAccessMiddlewareBypass

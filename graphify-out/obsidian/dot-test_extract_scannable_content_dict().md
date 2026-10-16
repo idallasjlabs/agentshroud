@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "PII Sanitizer & Redaction"
+community: "ToolResultSanitizer"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__Redaction
+  - community/ToolResultSanitizer
 ---
 
 # .test_extract_scannable_content_dict()
 
 ## Connections
 - [[Test content extraction from dictionary results]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
+- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__Redaction
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

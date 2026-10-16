@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "TestPathIsolationManager"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/TestPathIsolationManager
 ---
 
 # .rewrite_path()
@@ -20,4 +20,4 @@ tags:
 - [[PathRewriteResult]] - `references` [EXTRACTED]
 - [[Rewrite a path to isolate it to the user's namespace.          Args]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager

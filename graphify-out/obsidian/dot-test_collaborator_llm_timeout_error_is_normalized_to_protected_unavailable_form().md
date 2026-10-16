@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 1754"
+community: "TelegramAPIProxy"
 location: "L797"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1754
+  - community/TelegramAPIProxy
 ---
 
 # .test_collaborator_llm_timeout_error_is_normalized_to_protected_unavailable_form()
 
 ## Connections
 - [[Form payload timeout rewrites should also map to protected unavailable notice fo]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1754
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

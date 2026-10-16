@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_intel_pipeline.py"
 type: "code"
-community: "Community 125"
+community: "CompetitiveIntelReport"
 location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_125
+  - community/CompetitiveIntelReport
 ---
 
 # .test_empty_source_rejected()
 
 ## Connections
-- [[CompetitiveIntelReport]] - `calls` [EXTRACTED]
+- [[CompetitiveIntelReport_1]] - `calls` [EXTRACTED]
 - [[TestCompetitiveIntelReportSchema]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_125
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

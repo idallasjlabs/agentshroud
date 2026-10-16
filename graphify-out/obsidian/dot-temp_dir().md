@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "Community 192"
+community: "TestPathIsolationManager"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_192
+  - community/TestPathIsolationManager
 ---
 
 # .temp_dir()
@@ -15,4 +15,4 @@ tags:
 - [[Create temporary directory for testing.]] - `rationale_for` [EXTRACTED]
 - [[TestPathIsolationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_192
+#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager

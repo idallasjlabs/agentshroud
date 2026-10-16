@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "P3 Infrastructure Security Modules"
+community: "AlertDispatcher"
 location: "L333"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/P3_Infrastructure_Security_Modules
+  - community/AlertDispatcher
 ---
 
 # .test_context_window_stuffing()
@@ -15,4 +15,4 @@ tags:
 - [[Fill context with repeated instructions.]] - `rationale_for` [EXTRACTED]
 - [[TestContextGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

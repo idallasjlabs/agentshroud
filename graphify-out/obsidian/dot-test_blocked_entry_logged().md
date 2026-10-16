@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Community 910"
+community: "TestAuditTrail"
 location: "L341"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_910
+  - community/TestAuditTrail
 ---
 
 # .test_blocked_entry_logged()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAuditTrail_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_910
+#graphify/code #graphify/EXTRACTED #community/TestAuditTrail

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "Community 58"
+community: "ProgressiveLockdown"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_58
+  - community/ProgressiveLockdown
 ---
 
 # .test_alert_level_at_3_blocks()
@@ -15,4 +15,4 @@ tags:
 - [[ProgressiveLockdown]] - `calls` [EXTRACTED]
 - [[TestProgressiveLockdownUnit]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_58
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Community 1414"
+community: ".test_collaborator_web_access_request_queues_owner_approval_and_pending_notice"
 location: "L1857"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1414
+  - community/test_collaborator_web_access_request_queues_owner_approval_and_pending_notice
 ---
 
 # .test_collaborator_web_access_request_queues_owner_approval_and_pending_notice()
@@ -18,7 +18,7 @@ tags:
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
 - [[TelegramAPIProxy]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1414
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_web_access_request_queues_owner_approval_and_pending_notice

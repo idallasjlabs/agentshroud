@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "Canary Tripwire"
+community: "PIIConfig"
 location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Canary_Tripwire
+  - community/PIIConfig
 ---
 
 # .test_credit_card_stripped_from_response()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestE2E03OutboundPIIRedaction]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Canary_Tripwire
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

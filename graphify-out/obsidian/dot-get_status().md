@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/security/credential_injector.py"
+source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "Community 290"
-location: "L255"
+community: "KillSwitchMonitor"
+location: "L295"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_290
+  - community/KillSwitchMonitor
 ---
 
 # .get_status()
 
 ## Connections
-- [[CredentialInjector]] - `method` [EXTRACTED]
-- [[Return status for managemodules endpoint.]] - `rationale_for` [EXTRACTED]
+- [[dot-_count_recent_events()]] - `calls` [EXTRACTED]
+- [[dot-_get_system_stats()]] - `calls` [EXTRACTED]
+- [[Any_40]] - `references` [EXTRACTED]
+- [[Get current kill switch monitor status.          Returns             Dict conta]] - `rationale_for` [EXTRACTED]
+- [[KillSwitchMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_290
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

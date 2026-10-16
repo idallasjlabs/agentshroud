@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "Community 359"
+community: "DockerEngine"
 location: "L139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_359
+  - community/DockerEngine
 ---
 
 # .inspect()
 
 ## Connections
 - [[dot-_cmd()_1]] - `calls` [EXTRACTED]
-- [[Any_48]] - `references` [EXTRACTED]
+- [[Any_49]] - `references` [EXTRACTED]
 - [[DockerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_359
+#graphify/code #graphify/EXTRACTED #community/DockerEngine

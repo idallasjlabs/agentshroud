@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_soc_auth.py"
 type: "code"
-community: "Encrypted Store & Drift Detector"
-location: "L800"
+community: "test_soc_realtime_coverage.py"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Encrypted_Store__Drift_Detector
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .setup_method()
 
 ## Connections
-- [[PromptGuard]] - `calls` [EXTRACTED]
-- [[TestPromptGuardEvasion]] - `method` [EXTRACTED]
+- [[TestSessionTokens]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Encrypted_Store__Drift_Detector
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

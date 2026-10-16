@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "Community 535"
+community: "SessionError"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_535
+  - community/SessionError
 ---
 
 # .test_cleanup_expired()
@@ -15,4 +15,4 @@ tags:
 - [[SessionManager]] - `calls` [EXTRACTED]
 - [[TestSessionCleanup]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_535
+#graphify/code #graphify/EXTRACTED #community/SessionError

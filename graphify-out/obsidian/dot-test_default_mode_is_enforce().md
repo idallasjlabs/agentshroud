@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_progressive_trust_integration.py"
+source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "Community 115"
-location: "L345"
+community: "AlertDispatcher"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_115
+  - community/AlertDispatcher
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
-- [[ProgressiveTrustConfig]] - `calls` [EXTRACTED]
-- [[TestEnforcementMode]] - `method` [EXTRACTED]
+- [[Default mode is enforce after v0.8.0 enforcement hardening.]] - `rationale_for` [EXTRACTED]
+- [[TestEgressMonitorConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_115
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

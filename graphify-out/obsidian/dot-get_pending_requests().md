@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Community 88"
+community: "EgressApprovalQueue"
 location: "L586"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_88
+  - community/EgressApprovalQueue
 ---
 
 # .get_pending_requests()
@@ -15,4 +15,4 @@ tags:
 - [[EgressApprovalQueue]] - `method` [EXTRACTED]
 - [[Get list of pending approval requests.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_88
+#graphify/code #graphify/EXTRACTED #community/EgressApprovalQueue

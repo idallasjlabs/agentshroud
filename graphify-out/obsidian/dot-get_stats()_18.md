@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/http_proxy.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "Community 72"
-location: "L165"
+community: "test_e2e_proxy.py"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/test_e2e_proxypy
 ---
 
 # .get_stats()
 
 ## Connections
-- [[HTTPConnectProxy_1]] - `method` [EXTRACTED]
-- [[Return proxy traffic statistics.]] - `rationale_for` [EXTRACTED]
+- [[Any_70]] - `references` [EXTRACTED]
+- [[SidecarScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

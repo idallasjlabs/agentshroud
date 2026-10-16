@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/rate_limit_guard.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "Community 190"
-location: "L218"
+community: "AuditStore"
+location: "L383"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_190
+  - community/AuditStore
 ---
 
 # .get_stats()
 
 ## Connections
-- [[RateLimitGuard]] - `method` [EXTRACTED]
+- [[AuditStore_1]] - `method` [EXTRACTED]
+- [[Get audit store statistics.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_190
+#graphify/code #graphify/EXTRACTED #community/AuditStore

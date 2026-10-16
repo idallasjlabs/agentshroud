@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_encoding_detector.py"
+source_file: "gateway/tests/test_log_sanitizer.py"
 type: "code"
-community: "Canary Tripwire"
-location: "L10"
+community: "TestLogSanitizer"
+location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Canary_Tripwire
+  - community/TestLogSanitizer
 ---
 
 # .setup_method()
 
 ## Connections
-- [[EncodingDetector]] - `calls` [EXTRACTED]
-- [[TestEncodingDetector]] - `method` [EXTRACTED]
+- [[LogSanitizer]] - `calls` [EXTRACTED]
+- [[TestLogSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Canary_Tripwire
+#graphify/code #graphify/EXTRACTED #community/TestLogSanitizer

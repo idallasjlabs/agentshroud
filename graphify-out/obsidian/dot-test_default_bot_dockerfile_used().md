@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "Community 45"
+community: "ModeRequest"
 location: "L458"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_45
+  - community/ModeRequest
 ---
 
 # .test_default_bot_dockerfile_used()
@@ -15,4 +15,4 @@ tags:
 - [[SimpleNamespace_1]] - `calls` [EXTRACTED]
 - [[TestDefaultBotDockerfile]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_45
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_context_guard.py"
 type: "code"
-community: "P3 Infrastructure Security Modules"
-location: "L219"
+community: "TestSourceTagging"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/P3_Infrastructure_Security_Modules
+  - community/TestSourceTagging
 ---
 
 # .guard()
 
 ## Connections
-- [[PromptGuard]] - `calls` [EXTRACTED]
-- [[TestPromptGuard]] - `method` [EXTRACTED]
+- [[ContextGuard]] - `calls` [EXTRACTED]
+- [[TestSourceTagging]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules
+#graphify/code #graphify/EXTRACTED #community/TestSourceTagging

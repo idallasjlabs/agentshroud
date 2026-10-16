@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/cron_state_monitor.py"
+source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "Community 90"
-location: "L291"
+community: "HTTPConnectProxy"
+location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/HTTPConnectProxy
 ---
 
 # .start()
 
 ## Connections
-- [[dot-_run()_1]] - `calls` [EXTRACTED]
-- [[CronStateMonitor]] - `method` [EXTRACTED]
-- [[Start the poll loop as an asyncio task (idempotent).]] - `rationale_for` [EXTRACTED]
-- [[Task]] - `references` [EXTRACTED]
+- [[HTTPConnectProxy_1]] - `method` [EXTRACTED]
+- [[Start the CONNECT proxy server.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_90
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

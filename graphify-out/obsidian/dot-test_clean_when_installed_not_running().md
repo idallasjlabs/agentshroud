@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 1324"
+community: "TestClamavSummary"
 location: "L342"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1324
+  - community/TestClamavSummary
 ---
 
 # .test_clean_when_installed_not_running()
 
 ## Connections
-- [[TestClamavSummary_1]] - `method` [EXTRACTED]
+- [[TestClamavSummary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1324
+#graphify/code #graphify/EXTRACTED #community/TestClamavSummary

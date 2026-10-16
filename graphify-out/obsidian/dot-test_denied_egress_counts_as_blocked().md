@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_module_stats.py"
 type: "code"
-community: "Community 137"
+community: "ModuleStatsCollector"
 location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_137
+  - community/ModuleStatsCollector
 ---
 
 # .test_denied_egress_counts_as_blocked()
 
 ## Connections
-- [[EgressFilter]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
 - [[TestEgressWiringEndToEnd]] - `method` [EXTRACTED]
 - [[get_collector()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_137
+#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector

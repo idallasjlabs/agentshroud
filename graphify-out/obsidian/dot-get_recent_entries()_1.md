@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "SOC Auth & Audit Store"
-location: "L61"
+community: "AuditStore"
+location: "L297"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Auth__Audit_Store
+  - community/AuditStore
 ---
 
 # .get_recent_entries()
 
 ## Connections
-- [[FakeAuditStore_1]] - `method` [EXTRACTED]
+- [[dot-query_events()]] - `calls` [EXTRACTED]
+- [[AuditStore_1]] - `method` [EXTRACTED]
+- [[Return the most recent audit entries (alias for query_events with limit).]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Auth__Audit_Store
+#graphify/code #graphify/EXTRACTED #community/AuditStore

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Community 521"
+community: "BlockingPipeline"
 location: "L171"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_521
+  - community/BlockingPipeline
 ---
 
 # .test_encoding_detected_on_getUpdates()
@@ -17,7 +17,7 @@ tags:
 - [[FakeRBAC]] - `calls` [EXTRACTED]
 - [[TelegramAPIProxy]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_521
+#graphify/code #graphify/EXTRACTED #community/BlockingPipeline

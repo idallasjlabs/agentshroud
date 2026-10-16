@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "Community 63"
+community: "DNSFilterConfig"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_63
+  - community/DNSFilterConfig
 ---
 
 # .shannon_entropy()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_detect_tunneling()]] - `calls` [EXTRACTED]
 - [[EntropyCalculator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_63
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

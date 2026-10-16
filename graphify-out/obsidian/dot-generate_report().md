@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "Community 218"
+community: "MCPAuditTrail"
 location: "L269"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_218
+  - community/MCPAuditTrail
 ---
 
 # .generate_report()
@@ -15,8 +15,8 @@ tags:
 - [[dot-get_blocked_entries()]] - `calls` [EXTRACTED]
 - [[dot-get_failed_entries()]] - `calls` [EXTRACTED]
 - [[dot-verify_chain()_1]] - `calls` [EXTRACTED]
-- [[Any_36]] - `references` [EXTRACTED]
+- [[Any_34]] - `references` [EXTRACTED]
 - [[Generate an MCP audit report summary.]] - `rationale_for` [EXTRACTED]
-- [[MCPAuditTrail_1]] - `method` [EXTRACTED]
+- [[MCPAuditTrail]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_218
+#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail

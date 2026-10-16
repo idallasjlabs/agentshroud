@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/data_exfil_volume_guard.py"
+source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "Community 189"
-location: "L219"
+community: "MiddlewareManager"
+location: "L286"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_189
+  - community/MiddlewareManager
 ---
 
 # .get_stats()
 
 ## Connections
-- [[DataExfilVolumeGuard]] - `method` [EXTRACTED]
+- [[Get statistics about path isolation manager.]] - `rationale_for` [EXTRACTED]
+- [[PathIsolationManager]] - `method` [EXTRACTED]
+- [[any_45]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_189
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

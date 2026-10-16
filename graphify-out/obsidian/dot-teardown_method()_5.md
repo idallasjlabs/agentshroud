@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Memory Integrity & Lifecycle"
-location: "L199"
+community: "Action"
+location: "L352"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Memory_Integrity__Lifecycle
+  - community/Action
 ---
 
 # .teardown_method()
 
 ## Connections
-- [[Clean up test environment.]] - `rationale_for` [EXTRACTED]
-- [[TestMemoryLifecycleManager]] - `method` [EXTRACTED]
+- [[Close sqlite-holding sub-modules so Python 3.13's GC does not         finalize t]] - `rationale_for` [EXTRACTED]
+- [[TestRBACIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Integrity__Lifecycle
+#graphify/code #graphify/EXTRACTED #community/Action

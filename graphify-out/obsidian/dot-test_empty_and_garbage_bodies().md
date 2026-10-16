@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_quota_detector.py"
 type: "code"
-community: "Community 120"
+community: "is_overloaded"
 location: "L173"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_120
+  - community/is_overloaded
 ---
 
 # .test_empty_and_garbage_bodies()
@@ -15,4 +15,4 @@ tags:
 - [[TestIsOverloaded]] - `method` [EXTRACTED]
 - [[is_overloaded()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_120
+#graphify/code #graphify/EXTRACTED #community/is_overloaded

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "P3 Infrastructure Security Modules"
+community: "AlertDispatcher"
 location: "L709"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/P3_Infrastructure_Security_Modules
+  - community/AlertDispatcher
 ---
 
 # .test_different_plaintexts_different_ciphertexts()
@@ -15,4 +15,4 @@ tags:
 - [[Same plaintext encrypted twice should produce different ciphertext (random IV).]] - `rationale_for` [EXTRACTED]
 - [[TestCryptography]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

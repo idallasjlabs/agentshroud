@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_outbound_filter.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Community 44"
-location: "L22"
+community: "AgentRegistry"
+location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_44
+  - community/AgentRegistry
 ---
 
 # .setup_method()
 
 ## Connections
-- [[OutboundInfoFilter]] - `calls` [EXTRACTED]
-- [[Set up test fixtures._3]] - `rationale_for` [EXTRACTED]
-- [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[TestPromptGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_44
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

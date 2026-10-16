@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Community 82"
+community: "TestPerAgentUpstreamChecks"
 location: "L703"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_82
+  - community/TestPerAgentUpstreamChecks
 ---
 
 # .test_agent_label_falls_back_when_source_missing()
@@ -14,7 +14,5 @@ tags:
 ## Connections
 - [[If the per-agent source config is missing, the label falls back gracefully.]] - `rationale_for` [EXTRACTED]
 - [[TestPerAgentUpstreamChecks]] - `method` [EXTRACTED]
-- [[_raise()]] - `indirect_call` [INFERRED]
-- [[asyncio_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_82
+#graphify/code #graphify/EXTRACTED #community/TestPerAgentUpstreamChecks

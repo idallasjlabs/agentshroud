@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Egress Filter & HTTP Proxy"
+community: "WebProxyConfig"
 location: "L571"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Filter__HTTP_Proxy
+  - community/WebProxyConfig
 ---
 
 # .test_default_mode_is_denylist()
@@ -15,4 +15,4 @@ tags:
 - [[TestAllowlistMode]] - `method` [EXTRACTED]
 - [[WebProxyConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Filter__HTTP_Proxy
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

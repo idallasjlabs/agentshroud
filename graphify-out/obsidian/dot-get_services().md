@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/cli/client.py"
 type: "code"
-community: "Community 154"
+community: "SCLClient"
 location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_154
+  - community/SCLClient
 ---
 
 # .get_services()
 
 ## Connections
-- [[dot-get()]] - `calls` [EXTRACTED]
+- [[dot-get()_1]] - `calls` [EXTRACTED]
 - [[SCLClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_154
+#graphify/code #graphify/EXTRACTED #community/SCLClient

@@ -1,17 +1,18 @@
 ---
-source_file: "skills/openclaw/skill-creator/scripts/test_package_skill.py"
+source_file: "gateway/tests/test_xml_dtd_control.py"
 type: "code"
-community: "Community 543"
-location: "L22"
+community: "WebContentScanner"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_543
+  - community/WebContentScanner
 ---
 
 # .setUp()
 
 ## Connections
-- [[TestPackageSkillSecurity]] - `method` [EXTRACTED]
+- [[TestDangerousXMLDetection]] - `method` [EXTRACTED]
+- [[WebContentScanner]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_543
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

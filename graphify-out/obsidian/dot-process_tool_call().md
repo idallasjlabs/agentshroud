@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Community 50"
+community: ".process_tool_call"
 location: "L364"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_50
+  - community/process_tool_call
 ---
 
 # .process_tool_call()
@@ -18,8 +18,8 @@ tags:
 - [[dot-_sanitize_admin_private_data()]] - `calls` [EXTRACTED]
 - [[dot-check_approval_required()]] - `calls` [EXTRACTED]
 - [[MCPProxy_1]] - `method` [EXTRACTED]
-- [[MCPToolCall_1]] - `references` [EXTRACTED]
+- [[MCPToolCall]] - `references` [EXTRACTED]
 - [[Process an MCP tool call through the security pipeline.          Args]] - `rationale_for` [EXTRACTED]
 - [[ProxyResult]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_50
+#graphify/code #graphify/EXTRACTED #community/process_tool_call

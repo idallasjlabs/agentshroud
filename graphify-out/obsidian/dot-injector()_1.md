@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_credential_isolation.py"
 type: "code"
-community: "Community 620"
+community: "CredentialInjector"
 location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_620
+  - community/CredentialInjector
 ---
 
 # .injector()
 
 ## Connections
-- [[CredentialInjector_1]] - `calls` [INFERRED]
+- [[CredentialInjector]] - `calls` [INFERRED]
 - [[TestCredentialLeakDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_620
+#graphify/code #graphify/EXTRACTED #community/CredentialInjector

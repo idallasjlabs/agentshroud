@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 1755"
+community: "TelegramAPIProxy"
 location: "L814"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1755
+  - community/TelegramAPIProxy
 ---
 
 # .test_agent_failed_timeout_error_is_sanitized()
 
 ## Connections
 - [[Agent timeout prefix variants should also map to retry guidance.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1755
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

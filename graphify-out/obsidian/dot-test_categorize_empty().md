@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 56"
+community: "FalcoAlertWatcher"
 location: "L609"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_56
+  - community/FalcoAlertWatcher
 ---
 
 # .test_categorize_empty()
 
 ## Connections
 - [[TestFalcoCategorize]] - `method` [EXTRACTED]
+- [[categorize_alerts()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_56
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

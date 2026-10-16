@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/security/cron_state_monitor.py"
 type: "code"
-community: "Community 108"
-location: "L101"
+community: "CronStateMonitor"
+location: "L291"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_108
+  - community/CronStateMonitor
 ---
 
 # .start()
 
 ## Connections
-- [[dot-send_request()]] - `calls` [EXTRACTED]
-- [[Start the MCP server process.]] - `rationale_for` [EXTRACTED]
-- [[StdioConnection]] - `method` [EXTRACTED]
+- [[dot-_run()]] - `calls` [EXTRACTED]
+- [[CronStateMonitor]] - `method` [EXTRACTED]
+- [[Start the poll loop as an asyncio task (idempotent).]] - `rationale_for` [EXTRACTED]
+- [[Task]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_108
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

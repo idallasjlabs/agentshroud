@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "Community 231"
+community: "PodmanEngine"
 location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_231
+  - community/PodmanEngine
 ---
 
 # .inspect()
 
 ## Connections
 - [[dot-_cmd()]] - `calls` [EXTRACTED]
-- [[Any_39]] - `references` [EXTRACTED]
+- [[Any_41]] - `references` [EXTRACTED]
 - [[PodmanEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_231
+#graphify/code #graphify/EXTRACTED #community/PodmanEngine

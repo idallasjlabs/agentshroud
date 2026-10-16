@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 1013"
+community: "TestAggregateResults"
 location: "L541"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1013
+  - community/TestAggregateResults
 ---
 
 # .test_critical_dominates()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_patch_all()]] - `calls` [EXTRACTED]
 - [[TestAggregateResults]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1013
+#graphify/code #graphify/EXTRACTED #community/TestAggregateResults

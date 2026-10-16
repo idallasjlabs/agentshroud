@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: "Action"
 location: "L342"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/Action
 ---
 
 # .get_role_hierarchy()
@@ -15,6 +15,6 @@ tags:
 - [[dot-can_user_manage_user()]] - `calls` [EXTRACTED]
 - [[dot-is_privilege_escalation()]] - `calls` [EXTRACTED]
 - [[Get role hierarchy levels (higher number = more privileges).]] - `rationale_for` [EXTRACTED]
-- [[RBACManager]] - `method` [EXTRACTED]
+- [[RBACManager_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/Action

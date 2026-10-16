@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Community 1412"
+community: ".test_blocked_command_with_zero_width_mention_and_punctuation_is_quarantined"
 location: "L1581"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1412
+  - community/test_blocked_command_with_zero_width_mention_and_punctuation_is_quarantined
 ---
 
 # .test_blocked_command_with_fullwidth_mention_and_punctuation_is_quarantined()
@@ -17,7 +17,7 @@ tags:
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
 - [[TelegramAPIProxy]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1412
+#graphify/code #graphify/EXTRACTED #community/test_blocked_command_with_zero_width_mention_and_punctuation_is_quarantined

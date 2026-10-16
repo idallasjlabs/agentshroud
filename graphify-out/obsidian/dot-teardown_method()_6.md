@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Memory Integrity & Lifecycle"
-location: "L404"
+community: "AgentRegistry"
+location: "L523"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Memory_Integrity__Lifecycle
+  - community/AgentRegistry
 ---
 
 # .teardown_method()
 
 ## Connections
-- [[Clean up integration test environment.]] - `rationale_for` [EXTRACTED]
-- [[TestMemorySecurityIntegration]] - `method` [EXTRACTED]
+- [[TestDriftDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Integrity__Lifecycle
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Community 50"
+community: ".process_tool_call"
 location: "L756"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_50
+  - community/process_tool_call
 ---
 
 # .process_tool_result()
@@ -19,4 +19,4 @@ tags:
 - [[Process a tool result coming back (for cases where execution happens externally)]] - `rationale_for` [EXTRACTED]
 - [[ProxyResult]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_50
+#graphify/code #graphify/EXTRACTED #community/process_tool_call

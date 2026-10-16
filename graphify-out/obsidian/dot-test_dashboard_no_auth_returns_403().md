@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "Community 815"
+community: "test_security_fixes.py"
 location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_815
+  - community/test_security_fixespy
 ---
 
 # .test_dashboard_no_auth_returns_403()
@@ -15,4 +15,4 @@ tags:
 - [[GET dashboard with no auth returns 403]] - `rationale_for` [EXTRACTED]
 - [[TestDashboardCookieAuth]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_815
+#graphify/code #graphify/EXTRACTED #community/test_security_fixespy

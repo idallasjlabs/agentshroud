@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "Community 640"
+community: "Role"
 location: "L576"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_640
+  - community/Role
 ---
 
 # .get_denied_tools()
@@ -16,4 +16,4 @@ tags:
 - [[Return tools explicitly denied for this user.]] - `rationale_for` [EXTRACTED]
 - [[ToolACLEnforcer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_640
+#graphify/code #graphify/EXTRACTED #community/Role

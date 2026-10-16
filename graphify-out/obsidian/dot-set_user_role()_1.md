@@ -1,23 +1,19 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Ingest API & RBAC Core"
-location: "L263"
+community: "Role"
+location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/Role
 ---
 
 # .set_user_role()
 
 ## Connections
-- [[dot-audit_privilege_change()]] - `calls` [EXTRACTED]
-- [[dot-check_permission()]] - `calls` [EXTRACTED]
-- [[dot-get_user_role()_1]] - `calls` [EXTRACTED]
-- [[PermissionResult]] - `references` [EXTRACTED]
-- [[RBACManager]] - `method` [EXTRACTED]
-- [[Role]] - `references` [EXTRACTED]
-- [[Set a user's role (owner-only operation).]] - `rationale_for` [EXTRACTED]
+- [[RBACConfig_1]] - `method` [EXTRACTED]
+- [[Role_96]] - `references` [EXTRACTED]
+- [[Set role for a user ID (owner-only operation).]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/Role

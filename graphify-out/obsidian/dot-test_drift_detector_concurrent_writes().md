@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "Encrypted Store & Drift Detector"
+community: "AlertDispatcher"
 location: "L192"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Encrypted_Store__Drift_Detector
+  - community/AlertDispatcher
 ---
 
 # .test_drift_detector_concurrent_writes()
@@ -17,4 +17,4 @@ tags:
 - [[DriftDetector]] - `calls` [INFERRED]
 - [[TestConcurrency]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Encrypted_Store__Drift_Detector
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

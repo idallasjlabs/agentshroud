@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_benchmark_regression.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Community 495"
-location: "L44"
+community: "AgentRegistry"
+location: "L281"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_495
+  - community/AgentRegistry
 ---
 
 # .setup_method()
 
 ## Connections
-- [[TestBenchmarkRegression]] - `method` [EXTRACTED]
-- [[load_baseline()]] - `calls` [EXTRACTED]
+- [[TestTrustManager]] - `method` [EXTRACTED]
+- [[TrustManager]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_495
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

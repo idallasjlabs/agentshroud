@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy_default_failclosed.py"
 type: "code"
-community: "Community 289"
+community: "A2APolicyConfig"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_289
+  - community/A2APolicyConfig
 ---
 
 # .test_configured_allowlist_still_works_alongside_fail_closed_default()
@@ -16,4 +16,4 @@ tags:
 - [[Fail-closed-by-default must not mean impossible to allow anything         — an]] - `rationale_for` [EXTRACTED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_289
+#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig

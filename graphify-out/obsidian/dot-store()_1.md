@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_audit_export.py"
 type: "code"
-community: "Encrypted Store & Drift Detector"
-location: "L693"
+community: "AuditStore"
+location: "L303"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Encrypted_Store__Drift_Detector
+  - community/AuditStore
 ---
 
 # .store()
 
 ## Connections
-- [[EncryptedStore]] - `calls` [EXTRACTED]
-- [[TestCryptography]] - `method` [EXTRACTED]
+- [[AuditStore_1]] - `calls` [EXTRACTED]
+- [[TestAuditStoreBotId]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Encrypted_Store__Drift_Detector
+#graphify/code #graphify/EXTRACTED #community/AuditStore

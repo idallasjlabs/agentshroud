@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_observatory_mode.py"
+source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "Community 42"
-location: "L80"
+community: "MiddlewareManager"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_42
+  - community/MiddlewareManager
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
-- [[TestGetMode]] - `method` [EXTRACTED]
+- [[TestFileSandboxConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_42
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

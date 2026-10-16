@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_round2_hardening.py"
+source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "File Sandbox & Privilege Separation Tests"
-location: "L51"
+community: "test_observatory_mode.py"
+location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/File_Sandbox__Privilege_Separation_Tests
+  - community/test_observatory_modepy
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
-- [[FileSandboxConfig]] - `calls` [EXTRACTED]
-- [[TestFileSandboxDefaultEnforce]] - `method` [EXTRACTED]
+- [[TestGetMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests
+#graphify/code #graphify/EXTRACTED #community/test_observatory_modepy

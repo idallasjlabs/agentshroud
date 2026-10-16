@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_contributors.py"
 type: "code"
-community: "Community 226"
+community: "_FakeRBAC"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_226
+  - community/_FakeRBAC
 ---
 
 # .test_build_record_does_not_crash_if_lockdown_missing()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[ContributorManager]] - `calls` [EXTRACTED]
 - [[TestLockdownLevelWiring]] - `method` [EXTRACTED]
-- [[_FakeRBAC_1]] - `calls` [EXTRACTED]
+- [[_FakeRBAC_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_226
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

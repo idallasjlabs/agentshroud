@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "Gateway Config & PII Sanitizer"
+community: "DataLedger"
 location: "L377"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/DataLedger
 ---
 
 # .enforce_retention()
 
 ## Connections
-- [[dot-initialize()_1]] - `calls` [EXTRACTED]
+- [[dot-initialize()_3]] - `calls` [EXTRACTED]
 - [[DataLedger]] - `method` [EXTRACTED]
 - [[Delete entries older than retention_days          Returns             Number of]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
+#graphify/code #graphify/EXTRACTED #community/DataLedger

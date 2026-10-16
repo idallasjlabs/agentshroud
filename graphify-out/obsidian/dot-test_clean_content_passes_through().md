@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "code"
-community: "Community 101"
+community: "InjectionAction"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_101
+  - community/InjectionAction
 ---
 
 # .test_clean_content_passes_through()
@@ -15,4 +15,4 @@ tags:
 - [[Test that clean content passes through unchanged.]] - `rationale_for` [EXTRACTED]
 - [[TestToolResultInjectionScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_101
+#graphify/code #graphify/EXTRACTED #community/InjectionAction

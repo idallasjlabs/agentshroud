@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_main_endpoints.py"
+source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "Community 100"
-location: "L439"
+community: "TestLoadFromText"
+location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_100
+  - community/TestLoadFromText
 ---
 
 # .setup_method()
 
 ## Connections
-- [[TestScanParameterAllowlists]] - `method` [EXTRACTED]
+- [[DNSBlocklist]] - `calls` [EXTRACTED]
+- [[TestLoadFromText]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_100
+#graphify/code #graphify/EXTRACTED #community/TestLoadFromText

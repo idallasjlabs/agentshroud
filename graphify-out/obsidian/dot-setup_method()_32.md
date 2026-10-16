@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_network_validator.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Community 417"
-location: "L19"
+community: "AgentRegistry"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_417
+  - community/AgentRegistry
 ---
 
 # .setup_method()
 
 ## Connections
-- [[NetworkValidator]] - `calls` [EXTRACTED]
-- [[TestNetworkValidator]] - `method` [EXTRACTED]
+- [[EncryptedStore]] - `calls` [EXTRACTED]
+- [[TestEncryptedStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_417
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

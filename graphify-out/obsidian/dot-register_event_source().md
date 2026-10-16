@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "Community 535"
+community: "SessionError"
 location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_535
+  - community/SessionError
 ---
 
 # .register_event_source()
@@ -15,4 +15,4 @@ tags:
 - [[SessionError]] - `calls` [EXTRACTED]
 - [[SessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_535
+#graphify/code #graphify/EXTRACTED #community/SessionError

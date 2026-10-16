@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "Community 97"
+community: "PrivacyPolicyEnforcer"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_97
+  - community/PrivacyPolicyEnforcer
 ---
 
 # .test_audit_disabled_globally()
@@ -15,4 +15,4 @@ tags:
 - [[PrivacyPolicyEnforcer]] - `calls` [EXTRACTED]
 - [[TestAuditAndAlert]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_97
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "code"
-community: "Community 386"
+community: "TestMCPProxyEndpoint"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_386
+  - community/TestMCPProxyEndpoint
 ---
 
 # .test_clean_tool_call_allowed()
@@ -15,4 +15,4 @@ tags:
 - [[A clean tool call with no threats should be allowed (200).]] - `rationale_for` [EXTRACTED]
 - [[TestMCPProxyEndpoint_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_386
+#graphify/code #graphify/EXTRACTED #community/TestMCPProxyEndpoint

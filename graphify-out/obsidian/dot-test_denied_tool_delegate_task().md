@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "Community 1086"
+community: "TestToolAuthorization"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1086
+  - community/TestToolAuthorization
 ---
 
 # .test_denied_tool_delegate_task()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestToolAuthorization]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1086
+#graphify/code #graphify/EXTRACTED #community/TestToolAuthorization

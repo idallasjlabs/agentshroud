@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_op_proxy.py"
 type: "code"
-community: "Community 409"
-location: "L25"
+community: "_is_op_reference_allowed"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_409
+  - community/_is_op_reference_allowed
 ---
 
 # .test_allowed_path_passes()
@@ -15,4 +15,4 @@ tags:
 - [[TestIsOpReferenceAllowed]] - `method` [EXTRACTED]
 - [[_is_op_reference_allowed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_409
+#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed

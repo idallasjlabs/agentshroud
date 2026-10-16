@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_main_endpoints.py"
+source_file: "gateway/tests/test_resource_guard.py"
 type: "code"
-community: "Community 100"
-location: "L443"
+community: "ResourceGuard"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_100
+  - community/ResourceGuard
 ---
 
 # .teardown_method()
 
 ## Connections
-- [[TestScanParameterAllowlists]] - `method` [EXTRACTED]
+- [[TestResourceGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_100
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

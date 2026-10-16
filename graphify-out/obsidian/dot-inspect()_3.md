@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "Community 364"
+community: "AppleContainerEngine"
 location: "L149"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_364
+  - community/AppleContainerEngine
 ---
 
 # .inspect()
 
 ## Connections
 - [[dot-_cmd()_2]] - `calls` [EXTRACTED]
-- [[Any_49]] - `references` [EXTRACTED]
+- [[Any_50]] - `references` [EXTRACTED]
 - [[AppleContainerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_364
+#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine

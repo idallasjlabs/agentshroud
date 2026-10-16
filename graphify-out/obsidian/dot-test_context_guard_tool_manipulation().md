@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "Session Manager & PII/Context Guard"
+community: "MiddlewareManager"
 location: "L479"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Manager__PII/Context_Guard
+  - community/MiddlewareManager
 ---
 
 # .test_context_guard_tool_manipulation()
@@ -16,4 +16,4 @@ tags:
 - [[ContextGuard]] - `calls` [INFERRED]
 - [[TestMCPSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

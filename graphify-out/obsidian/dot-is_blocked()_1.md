@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "Community 138"
+community: "DNSBlocklist"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_138
+  - community/DNSBlocklist
 ---
 
 # .is_blocked()
@@ -16,4 +16,4 @@ tags:
 - [[dot-test_wildcard_denylist_blocks_subdomains()]] - `calls` [EXTRACTED]
 - [[_BlockNone]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_138
+#graphify/code #graphify/EXTRACTED #community/DNSBlocklist

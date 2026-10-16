@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/tool_chain_analyzer.py"
+source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "Voice Gateway STT & Browser Security"
-location: "L559"
+community: "MultiTurnTracker"
+location: "L427"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/MultiTurnTracker
 ---
 
 # .get_global_stats()
 
 ## Connections
-- [[Any_59]] - `references` [EXTRACTED]
-- [[Get global analyzer statistics.]] - `rationale_for` [EXTRACTED]
-- [[ToolChainAnalyzer]] - `method` [EXTRACTED]
+- [[Any_58]] - `references` [EXTRACTED]
+- [[Get global tracking statistics.]] - `rationale_for` [EXTRACTED]
+- [[MultiTurnTracker]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security
+#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

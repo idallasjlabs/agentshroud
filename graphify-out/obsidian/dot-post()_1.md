@@ -1,23 +1,23 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "Community 36"
+community: "main.rs"
 location: "L362"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_36
+  - community/mainrs
 ---
 
 # .post()
 
 ## Connections
-- [[dot-request()]] - `calls` [EXTRACTED]
+- [[dot-request()_1]] - `calls` [EXTRACTED]
 - [[GatewayClientT]] - `method` [EXTRACTED]
 - [[Option]] - `references` [EXTRACTED]
 - [[Result]] - `references` [EXTRACTED]
-- [[Value]] - `references` [EXTRACTED]
+- [[Value_3]] - `references` [EXTRACTED]
 - [[build_url()]] - `calls` [EXTRACTED]
 - [[map_http_error()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_36
+#graphify/code #graphify/EXTRACTED #community/mainrs

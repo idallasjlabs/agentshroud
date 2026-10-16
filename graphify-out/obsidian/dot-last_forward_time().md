@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "Proxy Sidecar & Forwarder"
+community: "test_e2e_proxy.py"
 location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Proxy_Sidecar__Forwarder
+  - community/test_e2e_proxypy
 ---
 
 # .last_forward_time()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[HTTPForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

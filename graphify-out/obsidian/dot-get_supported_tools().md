@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "PII Sanitizer & Redaction"
+community: "ToolResultSanitizer"
 location: "L204"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__Redaction
+  - community/ToolResultSanitizer
 ---
 
 # .get_supported_tools()
 
 ## Connections
 - [[Get list of tools with specific PII configurations]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__Redaction
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

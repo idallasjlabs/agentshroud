@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "Community 37"
-location: "L1136"
+community: ".proxy_messages"
+location: "L1153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_37
+  - community/proxy_messages
 ---
 
 # .proxy_messages_streaming()
@@ -21,4 +21,4 @@ tags:
 - [[Proxy a streaming LLM API request, yielding SSE chunks as they arrive. Used…]] - `rationale_for` [EXTRACTED]
 - [[_stream()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_37
+#graphify/code #graphify/EXTRACTED #community/proxy_messages

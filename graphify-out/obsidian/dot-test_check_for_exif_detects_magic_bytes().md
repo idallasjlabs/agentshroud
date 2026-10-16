@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_metadata_guard.py"
 type: "code"
-community: "Community 354"
+community: "TestMetadataGuard"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_354
+  - community/TestMetadataGuard
 ---
 
 # .test_check_for_exif_detects_magic_bytes()
 
 ## Connections
-- [[TestMetadataGuard]] - `method` [EXTRACTED]
+- [[TestMetadataGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_354
+#graphify/code #graphify/EXTRACTED #community/TestMetadataGuard

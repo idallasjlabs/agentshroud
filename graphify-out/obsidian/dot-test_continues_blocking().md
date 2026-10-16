@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "Community 296"
+community: "TestFabricatedSecurityNotice"
 location: "L540"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_296
+  - community/TestFabricatedSecurityNotice
 ---
 
 # .test_continues_blocking()
@@ -16,4 +16,4 @@ tags:
 - [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
 - [[continues blocking' — adverb + gerund form.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_296
+#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

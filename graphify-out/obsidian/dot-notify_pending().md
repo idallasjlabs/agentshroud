@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "code"
-community: "Community 368"
+community: "EgressTelegramNotifier"
 location: "L137"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_368
+  - community/EgressTelegramNotifier
 ---
 
 # .notify_pending()
@@ -17,4 +17,4 @@ tags:
 - [[EgressTelegramNotifier]] - `method` [EXTRACTED]
 - [[Send Telegram message with time-limited approvedeny buttons.          Buttons]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_368
+#graphify/code #graphify/EXTRACTED #community/EgressTelegramNotifier

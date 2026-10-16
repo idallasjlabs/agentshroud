@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_blocklist.py"
 type: "code"
-community: "Community 687"
+community: ".update"
 location: "L188"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_687
+  - community/update
 ---
 
 # .load_from_text()
@@ -16,4 +16,4 @@ tags:
 - [[DNSBlocklist]] - `method` [EXTRACTED]
 - [[Parse blocklist text and add domains. Returns count of new domains.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_687
+#graphify/code #graphify/EXTRACTED #community/update

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "code"
-community: "Community 598"
+community: "TestDocumentTagging"
 location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_598
+  - community/TestDocumentTagging
 ---
 
 # .get_document_tag()
@@ -16,4 +16,4 @@ tags:
 - [[Look up a document tag by its SHA-256 content hash.]] - `rationale_for` [EXTRACTED]
 - [[MetadataGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_598
+#graphify/code #graphify/EXTRACTED #community/TestDocumentTagging

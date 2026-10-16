@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/client.py"
 type: "code"
-community: "Community 154"
+community: "SCLClient"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_154
+  - community/SCLClient
 ---
 
 # .post()
@@ -22,7 +22,7 @@ tags:
 - [[dot-restart_service()]] - `calls` [EXTRACTED]
 - [[dot-run_scan()]] - `calls` [EXTRACTED]
 - [[dot-stop_service()]] - `calls` [EXTRACTED]
-- [[Any_24]] - `references` [EXTRACTED]
+- [[Any_22]] - `references` [EXTRACTED]
 - [[SCLClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_154
+#graphify/code #graphify/EXTRACTED #community/SCLClient

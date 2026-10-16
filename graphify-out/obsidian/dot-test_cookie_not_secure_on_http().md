@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "Approval Queue (WebSocket)"
+community: "test_security_fixes.py"
 location: "L303"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_WebSocket
+  - community/test_security_fixespy
 ---
 
 # .test_cookie_not_secure_on_http()
@@ -15,4 +15,4 @@ tags:
 - [[Cookie secure=False on HTTP requests]] - `rationale_for` [EXTRACTED]
 - [[TestDashboardSecureCookie]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_WebSocket
+#graphify/code #graphify/EXTRACTED #community/test_security_fixespy

@@ -1,16 +1,13 @@
 ---
 source_file: ".mcp.json"
 type: "document"
-community: "Community 1636"
+community: ".mcp.json (project MCP servers)"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/Community_1636
+  - graphify/EXTRACTED
+  - community/mcpjson_project_MCP_servers
 ---
 
 # .mcp.json (project MCP servers)
 
-## Connections
-- [[setup-mcp-user.sh (user-level MCP config)]] - `semantically_similar_to` [INFERRED]
-
-#graphify/document #graphify/INFERRED #community/Community_1636
+#graphify/document #graphify/EXTRACTED #community/mcpjson_project_MCP_servers

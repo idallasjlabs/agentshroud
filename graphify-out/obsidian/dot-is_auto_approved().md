@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "Approval Queue (WebSocket)"
+community: "SSHProxy"
 location: "L185"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_WebSocket
+  - community/SSHProxy
 ---
 
 # .is_auto_approved()
 
 ## Connections
 - [[Check if a command is auto-approved (no human approval needed).          Auto-ap]] - `rationale_for` [EXTRACTED]
-- [[SSHProxy_1]] - `method` [EXTRACTED]
+- [[SSHProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_WebSocket
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

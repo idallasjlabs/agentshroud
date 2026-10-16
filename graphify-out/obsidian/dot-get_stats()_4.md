@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "Community 112"
-location: "L383"
+community: "TelegramAPIProxy"
+location: "L1002"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_112
+  - community/TelegramAPIProxy
 ---
 
 # .get_stats()
 
 ## Connections
-- [[AuditStore_1]] - `method` [EXTRACTED]
-- [[Get audit store statistics.]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_112
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

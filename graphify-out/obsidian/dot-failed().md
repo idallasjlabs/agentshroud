@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "Community 497"
+community: "MultiHostResult"
 location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_497
+  - community/MultiHostResult
 ---
 
 # .failed()
@@ -15,4 +15,4 @@ tags:
 - [[HostResult]] - `references` [EXTRACTED]
 - [[MultiHostResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_497
+#graphify/code #graphify/EXTRACTED #community/MultiHostResult

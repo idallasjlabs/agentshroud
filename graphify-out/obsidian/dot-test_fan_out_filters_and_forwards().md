@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: "SOCWebSocketHandler"
 location: "L672"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/SOCWebSocketHandler
 ---
 
 # .test_fan_out_filters_and_forwards()
 
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[SOCWebSocketHandler]] - `calls` [EXTRACTED]
+- [[SOCWebSocketHandler_1]] - `calls` [EXTRACTED]
 - [[TestEventFanOut]] - `method` [EXTRACTED]
 - [[_FakeBus]] - `calls` [EXTRACTED]
 - [[_spin()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

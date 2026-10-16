@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ingest_api/sanitizer.py"
+source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "Tool Result Sanitizer & XML Injection Filtering"
-location: "L517"
+community: "LLMProxy"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer__XML_Injection_Filtering
+  - community/LLMProxy
 ---
 
 # .filter_xml_blocks()
 
 ## Connections
-- [[PIISanitizer]] - `method` [EXTRACTED]
-- [[Remove Claude XML function call blocks from responses          Strips out intern]] - `rationale_for` [EXTRACTED]
+- [[_FakeSanitizer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Result_Sanitizer__XML_Injection_Filtering
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

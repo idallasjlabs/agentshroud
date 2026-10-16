@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: "gateway/security/cron_state_monitor.py"
 type: "code"
-community: "Community 106"
-location: "L95"
+community: "CronStateMonitor"
+location: "L315"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_106
+  - community/CronStateMonitor
 ---
 
 # .stop()
 
 ## Connections
-- [[ContainerEngine]] - `method` [EXTRACTED]
-- [[Stop a running container.]] - `rationale_for` [EXTRACTED]
+- [[CronStateMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_106
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

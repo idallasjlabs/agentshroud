@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "Community 66"
+community: "test_soc_bots.py"
 location: "L474"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_66
+  - community/test_soc_botspy
 ---
 
 # .test_filters_services_by_bot_image()
@@ -20,4 +20,4 @@ tags:
 - [[_make_owner_caller()]] - `calls` [EXTRACTED]
 - [[list_services()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_66
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

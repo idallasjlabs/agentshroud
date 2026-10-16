@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "Gateway Config & PII Sanitizer"
+community: "ingest_api/models.py"
 location: "L206"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/ingest_api/modelspy
 ---
 
 # .query()
@@ -17,4 +17,4 @@ tags:
 - [[LedgerQueryResponse_1]] - `references` [EXTRACTED]
 - [[Query ledger entries with pagination and filters          Args             page]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
+#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy

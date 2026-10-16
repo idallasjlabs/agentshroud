@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "Community 850"
+community: "TestPatternDetection"
 location: "L231"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_850
+  - community/TestPatternDetection
 ---
 
 # .test_api_key_patterns()
 
 ## Connections
 - [[TestPatternDetection]] - `method` [EXTRACTED]
+- [[_check_pii_patterns()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_850
+#graphify/code #graphify/EXTRACTED #community/TestPatternDetection

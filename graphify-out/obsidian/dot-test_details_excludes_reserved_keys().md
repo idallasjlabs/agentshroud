@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Community 187"
+community: "Enum"
 location: "L566"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_187
+  - community/Enum
 ---
 
 # .test_details_excludes_reserved_keys()
@@ -15,4 +15,4 @@ tags:
 - [[TestCoerceToWSEventExtra]] - `method` [EXTRACTED]
 - [[_coerce_to_ws_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_187
+#graphify/code #graphify/EXTRACTED #community/Enum

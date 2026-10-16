@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/tests/test_rbac.py"
+source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Ingest API & RBAC Core"
-location: "L341"
+community: "test_main_endpoints.py"
+location: "L556"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/test_main_endpointspy
 ---
 
 # .setup_method()
 
 ## Connections
-- [[MiddlewareManager]] - `calls` [EXTRACTED]
-- [[Set up test environment.]] - `rationale_for` [EXTRACTED]
-- [[TestRBACIntegration]] - `method` [EXTRACTED]
+- [[TestScanParameterAllowlists]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy

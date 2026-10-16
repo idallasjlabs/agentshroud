@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_forward_stream.py"
+source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "Community 113"
-location: "L145"
+community: "A2AGovernanceProxy"
+location: "L234"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_113
+  - community/A2AGovernanceProxy
 ---
 
 # .process_inbound()
 
 ## Connections
-- [[_PassthroughPipeline]] - `method` [EXTRACTED]
+- [[dot-_process()]] - `calls` [EXTRACTED]
+- [[A2ADecision]] - `references` [EXTRACTED]
+- [[A2AGovernanceProxy]] - `method` [EXTRACTED]
+- [[A2AMessage]] - `references` [EXTRACTED]
+- [[Validate and govern an inbound A2A message from a remote peer.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_113
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

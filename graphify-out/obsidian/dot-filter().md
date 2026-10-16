@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "AlertDispatcher"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/AlertDispatcher
 ---
 
 # .filter()
@@ -15,6 +15,6 @@ tags:
 - [[dot-_sanitize_text()]] - `calls` [EXTRACTED]
 - [[Filter log record, sanitizing sensitive content.]] - `rationale_for` [EXTRACTED]
 - [[LogRecord]] - `references` [EXTRACTED]
-- [[LogSanitizer_1]] - `method` [EXTRACTED]
+- [[LogSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

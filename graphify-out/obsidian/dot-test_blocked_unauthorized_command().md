@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "Community 296"
+community: "TestFabricatedSecurityNotice"
 location: "L560"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_296
+  - community/TestFabricatedSecurityNotice
 ---
 
 # .test_blocked_unauthorized_command()
@@ -16,4 +16,4 @@ tags:
 - [[Standalone 'blocked unauthorized command execution' without AGENTSHROUD prefix.]] - `rationale_for` [EXTRACTED]
 - [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_296
+#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

@@ -1,21 +1,22 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "Community 35"
-location: "L200"
+community: "lifespan.py"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/lifespanpy
 ---
 
 # .from_dict()
 
 ## Connections
-- [[Any_47]] - `references` [EXTRACTED]
-- [[MCPPolicyAction]] - `calls` [EXTRACTED]
-- [[MCPPolicyConfig_1]] - `method` [EXTRACTED]
-- [[Parse a policy config from a plain dict (e.g. loaded from YAML)._1]] - `rationale_for` [EXTRACTED]
+- [[dot-_load_integrity_database()]] - `calls` [EXTRACTED]
+- [[Any_27]] - `references` [EXTRACTED]
+- [[Create from dictionary for JSON deserialization.]] - `rationale_for` [EXTRACTED]
+- [[FileIntegrityRecord]] - `method` [EXTRACTED]
+- [[ModificationSource]] - `calls` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_35
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

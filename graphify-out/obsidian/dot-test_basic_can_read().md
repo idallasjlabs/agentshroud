@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "Cross-Bot Trust & A2A Governance"
+community: "TrustConfig"
 location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/TrustConfig
 ---
 
 # .test_basic_can_read()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestActionGating]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

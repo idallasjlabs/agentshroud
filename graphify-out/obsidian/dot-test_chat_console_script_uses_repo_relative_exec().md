@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Community 1604"
+community: "ForwardRequest"
 location: "L556"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1604
+  - community/ForwardRequest
 ---
 
 # .test_chat_console_script_uses_repo_relative_exec()
@@ -15,4 +15,4 @@ tags:
 - [[Chat console launcher should be robust to current working directory.]] - `rationale_for` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1604
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

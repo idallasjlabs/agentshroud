@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_dns_blocklist.py"
+source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "code"
-community: "Community 1036"
-location: "L101"
+community: "InjectionAction"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1036
+  - community/InjectionAction
 ---
 
 # .setup_method()
 
 ## Connections
-- [[DNSBlocklist]] - `calls` [EXTRACTED]
-- [[TestLoadFromText]] - `method` [EXTRACTED]
+- [[Set up test fixtures.]] - `rationale_for` [EXTRACTED]
+- [[TestToolResultInjectionScanner]] - `method` [EXTRACTED]
+- [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1036
+#graphify/code #graphify/EXTRACTED #community/InjectionAction

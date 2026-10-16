@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "Community 80"
+community: "KeyVault"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_80
+  - community/KeyVault
 ---
 
 # .rotate_key()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_log_audit()]] - `calls` [EXTRACTED]
 - [[KeyVault]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_80
+#graphify/code #graphify/EXTRACTED #community/KeyVault

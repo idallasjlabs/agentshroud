@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_dns_filter.py"
+source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "Community 63"
-location: "L56"
+community: "GitGuard"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_63
+  - community/GitGuard
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
-- [[Default mode is enforce after v0.8.0 enforcement hardening._2]] - `rationale_for` [EXTRACTED]
-- [[TestDNSFilterConfig]] - `method` [EXTRACTED]
+- [[GitGuard]] - `calls` [EXTRACTED]
+- [[TestGitGuardDefaultEnforce]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_63
+#graphify/code #graphify/EXTRACTED #community/GitGuard

@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
+source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "Community 64"
-location: "L51"
+community: "TestParseHostsLine"
+location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_64
+  - community/TestParseHostsLine
 ---
 
 # .setup_method()
 
 ## Connections
-- [[Set up test fixtures._4]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `calls` [EXTRACTED]
-- [[ToolResultSanitizerConfig]] - `calls` [EXTRACTED]
+- [[DNSBlocklist]] - `calls` [EXTRACTED]
+- [[TestParseHostsLine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_64
+#graphify/code #graphify/EXTRACTED #community/TestParseHostsLine

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/weekly-hermes-stability-report.txt"
 type: "concept"
-community: "Community 571"
+community: "Hermes Cron Jobs Reference & Recreation Guide"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_571
+  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
 ---
 
 # .start-history Epoch Restart Ledger
@@ -14,4 +14,4 @@ tags:
 - [[Prompt Weekly Hermes Stability Report]] - `references` [EXTRACTED]
 - [[gateway-exit-diag.log RestartExit Telemetry]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_571
+#graphify/concept #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide

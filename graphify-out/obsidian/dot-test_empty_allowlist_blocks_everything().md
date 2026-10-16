@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Egress Filter & HTTP Proxy"
+community: "WebProxyConfig"
 location: "L602"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Filter__HTTP_Proxy
+  - community/WebProxyConfig
 ---
 
 # .test_empty_allowlist_blocks_everything()
@@ -15,4 +15,4 @@ tags:
 - [[TestIsDomainAllowed]] - `method` [EXTRACTED]
 - [[WebProxyConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Filter__HTTP_Proxy
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

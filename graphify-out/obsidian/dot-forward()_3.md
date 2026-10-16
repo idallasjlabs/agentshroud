@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_a2a_trust_scoring.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "Community 131"
-location: "L27"
+community: "test_e2e_proxy.py"
+location: "L415"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_131
+  - community/test_e2e_proxypy
 ---
 
 # .forward()
 
 ## Connections
-- [[_StubForwarder_2]] - `method` [EXTRACTED]
+- [[_StubForwarder_1]] - `method` [EXTRACTED]
+- [[test_forwarder_error_handling()]] - `calls` [EXTRACTED]
+- [[test_forwarder_mock()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_131
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

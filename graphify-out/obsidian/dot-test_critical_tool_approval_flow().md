@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "Enhanced Approval Queue"
+community: "ApprovalQueueConfig"
 location: "L147"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/ApprovalQueueConfig
 ---
 
 # .test_critical_tool_approval_flow()
@@ -15,4 +15,4 @@ tags:
 - [[Test full approval flow for critical tool.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalWorkflow]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

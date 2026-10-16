@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "Community 48"
+community: "GitGuard"
 location: "L464"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_48
+  - community/GitGuard
 ---
 
 # .export_findings_report()
@@ -16,4 +16,4 @@ tags:
 - [[Export findings to a detailed report.]] - `rationale_for` [EXTRACTED]
 - [[GitGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_48
+#graphify/code #graphify/EXTRACTED #community/GitGuard

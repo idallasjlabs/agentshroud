@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "Community 659"
+community: "TestPathIsolationManager"
 location: "L334"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_659
+  - community/TestPathIsolationManager
 ---
 
 # .test_blocked_result()
@@ -16,4 +16,4 @@ tags:
 - [[Test blocked result creation.]] - `rationale_for` [EXTRACTED]
 - [[TestPathRewriteResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_659
+#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager

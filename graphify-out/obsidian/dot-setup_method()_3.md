@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_injection_scan.py"
+source_file: "gateway/tests/test_encoding_detector.py"
 type: "code"
-community: "Community 101"
-location: "L23"
+community: "PIIConfig"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_101
+  - community/PIIConfig
 ---
 
 # .setup_method()
 
 ## Connections
-- [[Set up test fixtures.]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultInjectionScanner]] - `method` [EXTRACTED]
-- [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
+- [[EncodingDetector]] - `calls` [EXTRACTED]
+- [[TestEncodingDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_101
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

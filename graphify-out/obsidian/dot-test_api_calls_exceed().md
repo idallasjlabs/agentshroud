@@ -1,17 +1,20 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "Community 1084"
+community: "SubagentGovernance"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1084
+  - community/SubagentGovernance
 ---
 
 # .test_api_calls_exceed()
 
 ## Connections
+- [[GovernanceConfig]] - `calls` [EXTRACTED]
+- [[ResourceBudget]] - `calls` [EXTRACTED]
+- [[SubagentGovernance]] - `calls` [EXTRACTED]
 - [[TestResourceBudgets]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1084
+#graphify/code #graphify/EXTRACTED #community/SubagentGovernance

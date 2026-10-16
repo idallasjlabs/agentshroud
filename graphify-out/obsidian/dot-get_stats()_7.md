@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/webhook_receiver.py"
+source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "code"
-community: "Proxy Sidecar & Forwarder"
-location: "L385"
+community: "DataExfilVolumeGuard"
+location: "L219"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Proxy_Sidecar__Forwarder
+  - community/DataExfilVolumeGuard
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_52]] - `references` [EXTRACTED]
-- [[WebhookReceiver]] - `method` [EXTRACTED]
+- [[DataExfilVolumeGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder
+#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

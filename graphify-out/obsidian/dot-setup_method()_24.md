@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/tests/test_output_canary.py"
+source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Community 213"
-location: "L20"
+community: "Action"
+location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_213
+  - community/Action
 ---
 
 # .setup_method()
 
 ## Connections
-- [[CanaryConfig_1]] - `calls` [EXTRACTED]
-- [[OutputCanary]] - `calls` [EXTRACTED]
-- [[Set up test fixtures._1]] - `rationale_for` [EXTRACTED]
-- [[TestOutputCanary]] - `method` [EXTRACTED]
+- [[RBACConfig_3]] - `calls` [EXTRACTED]
+- [[RBACManager_2]] - `calls` [EXTRACTED]
+- [[Set up test environment._1]] - `rationale_for` [EXTRACTED]
+- [[TestRBACManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_213
+#graphify/code #graphify/EXTRACTED #community/Action

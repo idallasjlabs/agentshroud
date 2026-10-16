@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/module_stats.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "Community 137"
-location: "L72"
+community: "WebProxyConfig"
+location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_137
+  - community/WebProxyConfig
 ---
 
 # .reset()
 
 ## Connections
-- [[ModuleStatsCollector]] - `method` [EXTRACTED]
+- [[RateLimiter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_137
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_canary_tripwire.py"
+source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "code"
-community: "Canary Tripwire"
-location: "L15"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Canary_Tripwire
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # .setup_method()
 
 ## Connections
-- [[CanaryTripwire]] - `calls` [EXTRACTED]
-- [[TestCanaryTripwire]] - `method` [EXTRACTED]
+- [[Set up test fixtures._3]] - `rationale_for` [EXTRACTED]
+- [[TestXMLLeakFilter]] - `method` [EXTRACTED]
+- [[XMLLeakFilter]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Canary_Tripwire
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

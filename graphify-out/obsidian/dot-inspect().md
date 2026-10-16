@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "Community 106"
+community: "ContainerEngine"
 location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_106
+  - community/ContainerEngine
 ---
 
 # .inspect()
 
 ## Connections
-- [[Any_11]] - `references` [EXTRACTED]
+- [[Any_30]] - `references` [EXTRACTED]
 - [[ContainerEngine]] - `method` [EXTRACTED]
 - [[Return detailed container metadata.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_106
+#graphify/code #graphify/EXTRACTED #community/ContainerEngine

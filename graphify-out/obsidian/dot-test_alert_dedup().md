@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "AlertDispatcher"
 location: "L860"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/AlertDispatcher
 ---
 
 # .test_alert_dedup()
@@ -16,4 +16,4 @@ tags:
 - [[Duplicate alerts should be deduplicated.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditTrail]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "TestPathIsolationManager"
 location: "L275"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/TestPathIsolationManager
 ---
 
 # .get_user_temp_path()
@@ -16,4 +16,4 @@ tags:
 - [[Get a path within the user's isolated temp directory.]] - `rationale_for` [EXTRACTED]
 - [[PathIsolationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager

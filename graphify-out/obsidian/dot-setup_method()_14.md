@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_output_canary.py"
 type: "code"
-community: "Community 182"
-location: "L407"
+community: "TestOutputCanary"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_182
+  - community/TestOutputCanary
 ---
 
 # .setup_method()
 
 ## Connections
-- [[EgressFilter]] - `calls` [EXTRACTED]
-- [[EgressFilterConfig]] - `calls` [EXTRACTED]
-- [[EgressPolicy]] - `calls` [EXTRACTED]
-- [[TestEgressFilter]] - `method` [EXTRACTED]
+- [[CanaryConfig]] - `calls` [EXTRACTED]
+- [[OutputCanary]] - `calls` [EXTRACTED]
+- [[Set up test fixtures._1]] - `rationale_for` [EXTRACTED]
+- [[TestOutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_182
+#graphify/code #graphify/EXTRACTED #community/TestOutputCanary

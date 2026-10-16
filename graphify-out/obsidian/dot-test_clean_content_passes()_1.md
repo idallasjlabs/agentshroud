@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_isolation.py"
 type: "code"
-community: "Community 908"
+community: "TestCredentialLeakDetection"
 location: "L146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_908
+  - community/TestCredentialLeakDetection
 ---
 
 # .test_clean_content_passes()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCredentialLeakDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_908
+#graphify/code #graphify/EXTRACTED #community/TestCredentialLeakDetection

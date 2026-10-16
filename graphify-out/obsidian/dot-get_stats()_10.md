@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Approval Routing & Event Bus"
-location: "L95"
+community: "AuditChain"
+location: "L1658"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/AuditChain
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_22]] - `references` [EXTRACTED]
-- [[EventBus]] - `method` [EXTRACTED]
+- [[dot-verify_chain()]] - `calls` [EXTRACTED]
+- [[Any_10]] - `references` [EXTRACTED]
+- [[SecurityPipeline_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/EXTRACTED #community/AuditChain

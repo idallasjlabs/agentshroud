@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "Community 520"
+community: "UserSessionManager"
 location: "L201"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_520
+  - community/UserSessionManager
 ---
 
 # .test_different_bots_get_different_workspace_dirs()
@@ -15,4 +15,4 @@ tags:
 - [[TestMultiBotIsolation]] - `method` [EXTRACTED]
 - [[openclaw and hermes sessions for the same user must not share a directory.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_520
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

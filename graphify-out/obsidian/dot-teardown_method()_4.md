@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "Memory Integrity & Lifecycle"
-location: "L77"
+community: "lifespan.py"
+location: "L404"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Memory_Integrity__Lifecycle
+  - community/lifespanpy
 ---
 
 # .teardown_method()
 
 ## Connections
-- [[Clean up test environment.]] - `rationale_for` [EXTRACTED]
-- [[TestMemoryIntegrityMonitor]] - `method` [EXTRACTED]
+- [[Clean up integration test environment.]] - `rationale_for` [EXTRACTED]
+- [[TestMemorySecurityIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Integrity__Lifecycle
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

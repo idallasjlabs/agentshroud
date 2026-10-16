@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "Session Manager & PII/Context Guard"
+community: "AlertDispatcher"
 location: "L256"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Manager__PII/Context_Guard
+  - community/AlertDispatcher
 ---
 
 # .test_alert_dispatcher_concurrent_dispatch()
@@ -16,4 +16,4 @@ tags:
 - [[Concurrent alert dispatch shouldn't lose or corrupt alerts.]] - `rationale_for` [EXTRACTED]
 - [[TestConcurrency]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

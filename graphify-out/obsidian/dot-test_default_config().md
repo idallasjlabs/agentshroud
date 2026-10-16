@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_approval_hardening.py"
+source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
-location: "L21"
+community: "TrustConfig"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/TrustConfig
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[ApprovalHardeningConfig]] - `calls` [EXTRACTED]
-- [[Test default configuration values.]] - `rationale_for` [EXTRACTED]
-- [[TestApprovalHardeningConfig]] - `method` [EXTRACTED]
+- [[TestTrustLevels_1]] - `method` [EXTRACTED]
+- [[TrustConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

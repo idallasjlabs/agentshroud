@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "Community 35"
+community: "MCPPolicyEngine"
 location: "L401"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/MCPPolicyEngine
 ---
 
 # .enforce()
 
 ## Connections
 - [[dot-evaluate()_1]] - `calls` [EXTRACTED]
-- [[Any_47]] - `references` [EXTRACTED]
+- [[Any_53]] - `references` [EXTRACTED]
 - [[Evaluate and resolve the decision to a terminal ALLOWDENY.          For REQUIRE]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyDecision]] - `references` [EXTRACTED]
 - [[MCPPolicyEngine_1]] - `method` [EXTRACTED]
 - [[_norm()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_35
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

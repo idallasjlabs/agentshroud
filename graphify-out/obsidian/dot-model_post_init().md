@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/ingest_api/config.py"
+source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Approval Routing & Event Bus"
-location: "L287"
+community: "RBACConfig"
+location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/RBACConfig
 ---
 
 # .model_post_init()
 
 ## Connections
-- [[AuditExportConfig_1]] - `method` [EXTRACTED]
-- [[Path_13]] - `calls` [EXTRACTED]
+- [[TeamsConfig]] - `method` [EXTRACTED]
+- [[_apply_persisted_overrides()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

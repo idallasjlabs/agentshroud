@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "Community 96"
-location: "L595"
+community: "HTTPConnectProxy"
+location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_96
+  - community/HTTPConnectProxy
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_81]] - `references` [EXTRACTED]
-- [[Get proxy statistics._1]] - `rationale_for` [EXTRACTED]
-- [[WebProxy]] - `method` [EXTRACTED]
+- [[HTTPConnectProxy_1]] - `method` [EXTRACTED]
+- [[Return proxy traffic statistics.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_96
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

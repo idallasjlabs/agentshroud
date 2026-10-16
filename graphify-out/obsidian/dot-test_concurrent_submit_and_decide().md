@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "Community 38"
+community: "ApprovalQueueItem"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_38
+  - community/ApprovalQueueItem
 ---
 
 # .test_concurrent_submit_and_decide()
 
 ## Connections
-- [[ApprovalRequest_2]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_5]] - `calls` [EXTRACTED]
 - [[Submit and decide requests concurrently.]] - `rationale_for` [EXTRACTED]
 - [[TestConcurrentApprovalRequests]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_38
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueItem

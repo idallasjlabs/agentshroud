@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Telegram Proxy Inbound Tests"
+community: "TelegramAPIProxy"
 location: "L3425"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Inbound_Tests
+  - community/TelegramAPIProxy
 ---
 
 # .test_collaborator_self_modification_policy_question_gets_safe_guidance()
@@ -17,7 +17,7 @@ tags:
 - [[Self-modification policy questions should get informative guidance, not hard blo]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Inbound_Tests
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

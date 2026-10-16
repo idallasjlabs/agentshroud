@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "Community 109"
-location: "L482"
+community: "_PipelineCaptor"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_109
+  - community/_PipelineCaptor
 ---
 
 # .process_inbound()
 
 ## Connections
-- [[dot-_maybe_record_trust_violation()]] - `calls` [EXTRACTED]
-- [[dot-_process_inbound_core()]] - `calls` [EXTRACTED]
-- [[Any_14]] - `references` [EXTRACTED]
-- [[PipelineResult_1]] - `references` [EXTRACTED]
-- [[Process an inbound message through the full security pipeline.          Thin wra]] - `rationale_for` [EXTRACTED]
-- [[SecurityPipeline_1]] - `method` [EXTRACTED]
+- [[_PipelineCaptor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_109
+#graphify/code #graphify/EXTRACTED #community/_PipelineCaptor

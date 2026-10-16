@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Community 148"
+community: "format_cve_report"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_148
+  - community/format_cve_report
 ---
 
 # .test_contains_package_names()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TestFormatCveReport]] - `method` [EXTRACTED]
 - [[_make_report()]] - `calls` [EXTRACTED]
-- [[format_cve_report]] - `calls` [EXTRACTED]
+- [[format_cve_report()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_148
+#graphify/code #graphify/EXTRACTED #community/format_cve_report

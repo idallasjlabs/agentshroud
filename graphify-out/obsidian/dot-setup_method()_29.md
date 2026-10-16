@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_xml_leak_filter.py"
+source_file: "gateway/tests/test_benchmark_regression.py"
 type: "code"
-community: "Blue/Red Team Security Auditor Skills"
-location: "L19"
+community: "TestBenchmarkRegression"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Blue/Red_Team_Security_Auditor_Skills
+  - community/TestBenchmarkRegression
 ---
 
 # .setup_method()
 
 ## Connections
-- [[Set up test fixtures._2]] - `rationale_for` [EXTRACTED]
-- [[TestXMLLeakFilter]] - `method` [EXTRACTED]
-- [[XMLLeakFilter]] - `calls` [EXTRACTED]
+- [[TestBenchmarkRegression]] - `method` [EXTRACTED]
+- [[load_baseline()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills
+#graphify/code #graphify/EXTRACTED #community/TestBenchmarkRegression

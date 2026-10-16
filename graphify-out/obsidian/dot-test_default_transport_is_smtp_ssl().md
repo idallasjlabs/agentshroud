@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_gateway_email_service.py"
 type: "code"
-community: "Community 188"
+community: "GatewayEmailService"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_188
+  - community/GatewayEmailService
 ---
 
 # .test_default_transport_is_smtp_ssl()
@@ -15,4 +15,4 @@ tags:
 - [[GatewayEmailService]] - `calls` [EXTRACTED]
 - [[TestSend]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_188
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

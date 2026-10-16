@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_soc_auth.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "Community 159"
-location: "L19"
+community: "lifespan.py"
+location: "L192"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_159
+  - community/lifespanpy
 ---
 
 # .setup_method()
 
 ## Connections
-- [[Clear token store before each test.]] - `rationale_for` [EXTRACTED]
-- [[TestWSTokens]] - `method` [EXTRACTED]
+- [[MemoryLifecycleConfig_1]] - `calls` [EXTRACTED]
+- [[MemoryLifecycleManager]] - `calls` [EXTRACTED]
+- [[Set up test environment.]] - `rationale_for` [EXTRACTED]
+- [[TestMemoryLifecycleManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_159
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

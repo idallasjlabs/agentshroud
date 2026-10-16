@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "Encrypted Store & Drift Detector"
-location: "L284"
+community: "lifespan.py"
+location: "L199"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Encrypted_Store__Drift_Detector
+  - community/lifespanpy
 ---
 
 # .teardown_method()
 
 ## Connections
-- [[TestTrustManager]] - `method` [EXTRACTED]
+- [[Clean up test environment.]] - `rationale_for` [EXTRACTED]
+- [[TestMemoryLifecycleManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Encrypted_Store__Drift_Detector
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

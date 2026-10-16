@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "Community 43"
+community: "HeuristicClassifier"
 location: "L335"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/HeuristicClassifier
 ---
 
 # .test_base64_payload_normalized()
@@ -19,4 +19,4 @@ tags:
 - [[_normalizer_transforms()]] - `calls` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

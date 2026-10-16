@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Community 143"
+community: "StdioConnection"
 location: "L458"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_143
+  - community/StdioConnection
 ---
 
 # .get_item()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FakeApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_143
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

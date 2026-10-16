@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Community 88"
+community: "EgressApprovalQueue"
 location: "L356"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_88
+  - community/EgressApprovalQueue
 ---
 
 # .request_approval()
@@ -16,8 +16,8 @@ tags:
 - [[dot-_check_existing_rule()]] - `calls` [EXTRACTED]
 - [[ApprovalResult]] - `references` [EXTRACTED]
 - [[EgressApprovalQueue]] - `method` [EXTRACTED]
-- [[EgressRequest]] - `calls` [EXTRACTED]
+- [[EgressRequest_1]] - `calls` [EXTRACTED]
 - [[Request approval for egress to a domainport.          Args             domain]] - `rationale_for` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_88
+#graphify/code #graphify/EXTRACTED #community/EgressApprovalQueue

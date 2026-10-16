@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Community 205"
+community: "Action"
 location: "L510"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_205
+  - community/Action
 ---
 
 # .test_everyone_group_contains_all_users()
@@ -16,4 +16,4 @@ tags:
 - [[GroupRegistry]] - `calls` [EXTRACTED]
 - [[TestGroupRegistry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_205
+#graphify/code #graphify/EXTRACTED #community/Action

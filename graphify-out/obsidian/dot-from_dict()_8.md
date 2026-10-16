@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/security/egress_approval.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Community 88"
-location: "L89"
+community: "A2APolicyConfig"
+location: "L210"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_88
+  - community/A2APolicyConfig
 ---
 
 # .from_dict()
 
 ## Connections
-- [[dot-_load_rules()]] - `calls` [EXTRACTED]
-- [[EgressScope]] - `method` [EXTRACTED]
+- [[A2APolicyAction]] - `calls` [EXTRACTED]
+- [[A2APolicyConfig_1]] - `method` [EXTRACTED]
+- [[Any_63]] - `references` [EXTRACTED]
+- [[Parse a policy config from a plain dict (e.g. loaded from YAML)._1]] - `rationale_for` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_88
+#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: ".get_user_role"
 location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/get_user_role
 ---
 
 # .get_user_role()
@@ -16,7 +16,7 @@ tags:
 - [[dot-is_collaborator_or_higher()]] - `calls` [EXTRACTED]
 - [[dot-is_operator_or_higher()]] - `calls` [EXTRACTED]
 - [[Get role for a user ID.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_2]] - `method` [EXTRACTED]
-- [[Role_1]] - `references` [EXTRACTED]
+- [[RBACConfig_1]] - `method` [EXTRACTED]
+- [[Role_96]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/get_user_role

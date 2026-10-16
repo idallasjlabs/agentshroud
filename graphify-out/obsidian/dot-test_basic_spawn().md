@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "Community 1085"
+community: "TestSpawnAuthorization"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1085
+  - community/TestSpawnAuthorization
 ---
 
 # .test_basic_spawn()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSpawnAuthorization]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1085
+#graphify/code #graphify/EXTRACTED #community/TestSpawnAuthorization

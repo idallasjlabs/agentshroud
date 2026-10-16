@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "Enhanced Approval Queue"
+community: "ApprovalQueueConfig"
 location: "L255"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/ApprovalQueueConfig
 ---
 
 # .mcp_proxy_with_approval()
@@ -16,4 +16,4 @@ tags:
 - [[MCPProxy_1]] - `calls` [EXTRACTED]
 - [[TestMCPProxyIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

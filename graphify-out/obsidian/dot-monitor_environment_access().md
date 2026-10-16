@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "AlertDispatcher"
 location: "L289"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/AlertDispatcher
 ---
 
 # .monitor_environment_access()
 
 ## Connections
-- [[Any_5]] - `references` [EXTRACTED]
+- [[Any_1]] - `references` [EXTRACTED]
 - [[EnvironmentGuard]] - `method` [EXTRACTED]
 - [[Monitor an agent's environment access attempts.          Args             agent]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tools/port_manager.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "Community 83"
-location: "L77"
+community: "AlertStore"
+location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_83
+  - community/AlertStore
 ---
 
 # .summary()
 
 ## Connections
-- [[dot-resolve_ports()]] - `calls` [EXTRACTED]
-- [[PortResolution]] - `method` [EXTRACTED]
+- [[AlertStore]] - `method` [EXTRACTED]
+- [[alerts_summary()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_83
+#graphify/code #graphify/EXTRACTED #community/AlertStore

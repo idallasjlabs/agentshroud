@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "Egress Filter & HTTP Proxy"
-location: "L133"
+community: "ModuleStatsCollector"
+location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Filter__HTTP_Proxy
+  - community/ModuleStatsCollector
 ---
 
 # .reset()
 
 ## Connections
-- [[RateLimiter_1]] - `method` [EXTRACTED]
+- [[ModuleStatsCollector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Filter__HTTP_Proxy
+#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector

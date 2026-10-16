@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_path_isolation.py"
+source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "Community 659"
-location: "L23"
+community: "ApprovalHardening"
+location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_659
+  - community/ApprovalHardening
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[PathIsolationConfig]] - `calls` [EXTRACTED]
-- [[Test default configuration values._5]] - `rationale_for` [EXTRACTED]
-- [[TestPathIsolationConfig]] - `method` [EXTRACTED]
+- [[ApprovalHardeningConfig]] - `calls` [EXTRACTED]
+- [[Test default configuration values._4]] - `rationale_for` [EXTRACTED]
+- [[TestApprovalHardeningConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_659
+#graphify/code #graphify/EXTRACTED #community/ApprovalHardening

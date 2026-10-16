@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "Community 1035"
+community: "TestLeakDetection"
 location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1035
+  - community/TestLeakDetection
 ---
 
 # .test_clean_content_passes()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestLeakDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1035
+#graphify/code #graphify/EXTRACTED #community/TestLeakDetection

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 1750"
+community: "TelegramAPIProxy"
 location: "L721"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1750
+  - community/TelegramAPIProxy
 ---
 
 # .test_collaborator_security_monitoring_threshold_notice_is_normalized_form()
 
 ## Connections
 - [[Form payload threshold disclosures should normalize to policy-block notice.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1750
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

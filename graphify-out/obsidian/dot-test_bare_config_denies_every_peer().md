@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_a2a_policy_default_failclosed.py"
 type: "code"
-community: "Community 289"
+community: "A2APolicyConfig"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_289
+  - community/A2APolicyConfig
 ---
 
 # .test_bare_config_denies_every_peer()
 
 ## Connections
-- [[A2APolicyConfig]] - `calls` [EXTRACTED]
+- [[A2APolicyConfig_1]] - `calls` [EXTRACTED]
 - [[A2APolicyConfig() with no arguments — the shape a fresh deploy gets         if n]] - `rationale_for` [EXTRACTED]
 - [[A2APolicyEngine_1]] - `calls` [EXTRACTED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_289
+#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig

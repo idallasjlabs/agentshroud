@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "Community 278"
+community: "_sync"
 location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_278
+  - community/_sync
 ---
 
 # .test_dedup_by_ghsa_id()
@@ -16,4 +16,4 @@ tags:
 - [[_adv()]] - `calls` [EXTRACTED]
 - [[_sync()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_278
+#graphify/code #graphify/EXTRACTED #community/_sync

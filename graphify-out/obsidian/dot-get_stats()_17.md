@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/telegram_proxy.py"
+source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "Collaborator Activity & Telegram Proxy"
-location: "L1002"
+community: "test_e2e_proxy.py"
+location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Activity__Telegram_Proxy
+  - community/test_e2e_proxypy
 ---
 
 # .get_stats()
 
 ## Connections
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[Any_69]] - `references` [EXTRACTED]
+- [[HTTPForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Activity__Telegram_Proxy
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

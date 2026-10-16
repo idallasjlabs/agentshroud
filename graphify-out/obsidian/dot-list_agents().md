@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "Agent Isolation & Group Config Tests"
+community: "AgentRegistry"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Agent_Isolation__Group_Config_Tests
+  - community/AgentRegistry
 ---
 
 # .list_agents()
@@ -19,4 +19,4 @@ tags:
 - [[AgentRegistry]] - `method` [EXTRACTED]
 - [[List all registered agent IDs.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Agent_Isolation__Group_Config_Tests
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

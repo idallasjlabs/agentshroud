@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-ab/SKILL.md"
 type: "concept"
-community: "Community 1852"
+community: ".github/workflows/merge-regression-audit.yml"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1852
+  - community/github/workflows/merge-regression-audityml
 ---
 
 # .github/workflows/merge-regression-audit.yml
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1852
+#graphify/concept #graphify/EXTRACTED #community/github/workflows/merge-regression-audityml

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: "Action"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/Action
 ---
 
 # .test_default_config_initialization()
 
 ## Connections
-- [[RBACConfig_1]] - `calls` [EXTRACTED]
+- [[RBACConfig_3]] - `calls` [EXTRACTED]
 - [[Test default RBAC configuration initialization.]] - `rationale_for` [EXTRACTED]
 - [[TestRBACConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/Action

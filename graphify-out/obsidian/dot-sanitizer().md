@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_performance.py"
+source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Tool Result Sanitizer & XML Injection Filtering"
-location: "L52"
+community: "AlertDispatcher"
+location: "L955"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer__XML_Injection_Filtering
+  - community/AlertDispatcher
 ---
 
 # .sanitizer()
 
 ## Connections
-- [[PIIConfig_2]] - `calls` [EXTRACTED]
-- [[PIISanitizer]] - `calls` [EXTRACTED]
-- [[TestPIISanitizerPerformance]] - `method` [EXTRACTED]
+- [[LogSanitizer]] - `calls` [EXTRACTED]
+- [[TestLoggingSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Result_Sanitizer__XML_Injection_Filtering
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

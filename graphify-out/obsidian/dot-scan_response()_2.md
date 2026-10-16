@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "Community 96"
-location: "L434"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_96
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # .scan_response()
 
 ## Connections
-- [[dot-_audit()_1]] - `calls` [EXTRACTED]
-- [[EgressEvent]] - `calls` [EXTRACTED]
-- [[Scan a response body for prompt injection, PII, and hidden content.          Thi]] - `rationale_for` [EXTRACTED]
-- [[WebProxy]] - `method` [EXTRACTED]
-- [[WebProxyResult]] - `references` [EXTRACTED]
+- [[dot-_calculate_similarity()]] - `calls` [EXTRACTED]
+- [[dot-_redact_fuzzy_match()]] - `calls` [EXTRACTED]
+- [[PromptProtection]] - `method` [EXTRACTED]
+- [[RedactionResult_1]] - `references` [EXTRACTED]
+- [[Scan text for protected content and return redacted version.          Args]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_96
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

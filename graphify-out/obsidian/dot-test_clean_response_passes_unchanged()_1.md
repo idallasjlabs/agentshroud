@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_e2e_watchtower.py"
+source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "Canary Tripwire"
-location: "L164"
+community: "KeyVault"
+location: "L632"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Canary_Tripwire
+  - community/KeyVault
 ---
 
 # .test_clean_response_passes_unchanged()
 
 ## Connections
-- [[TestE2E03OutboundPIIRedaction]] - `method` [EXTRACTED]
+- [[dot-_make_vault_pipeline()]] - `calls` [EXTRACTED]
+- [[TestKeyLeakDetection_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Canary_Tripwire
+#graphify/code #graphify/EXTRACTED #community/KeyVault

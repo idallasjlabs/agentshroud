@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "Community 133"
+community: "KeyRotationManager"
 location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_133
+  - community/KeyRotationManager
 ---
 
 # .should_rotate()
@@ -20,4 +20,4 @@ tags:
 - [[CredentialRotationPolicy]] - `references` [EXTRACTED]
 - [[Whether credential needs rotation based on age.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_133
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

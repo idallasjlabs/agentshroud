@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "code"
-community: "Community 180"
+community: "BotConfig"
 location: "L147"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_180
+  - community/BotConfig
 ---
 
 # .test_bot_config_image_field_present()
@@ -15,4 +15,4 @@ tags:
 - [[BotConfig]] - `calls` [EXTRACTED]
 - [[TestTelegramBotConfigTokenSecretField]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_180
+#graphify/code #graphify/EXTRACTED #community/BotConfig

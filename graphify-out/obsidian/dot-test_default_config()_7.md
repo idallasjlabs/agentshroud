@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_trust_manager.py"
+source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "Cross-Bot Trust & A2A Governance"
-location: "L63"
+community: "ToolResultSanitizer"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/ToolResultSanitizer
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[TestTrustLevels]] - `method` [EXTRACTED]
-- [[TrustConfig]] - `calls` [EXTRACTED]
+- [[Test default configuration]] - `rationale_for` [EXTRACTED]
+- [[TestToolResultPIIConfig]] - `method` [EXTRACTED]
+- [[ToolResultPIIConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "Community 1036"
+community: "TestLoadFromText"
 location: "L131"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1036
+  - community/TestLoadFromText
 ---
 
 # .test_empty_text()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestLoadFromText]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1036
+#graphify/code #graphify/EXTRACTED #community/TestLoadFromText

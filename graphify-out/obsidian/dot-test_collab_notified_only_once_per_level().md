@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "Community 58"
+community: "TestCollabLockdownNotifications"
 location: "L230"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_58
+  - community/TestCollabLockdownNotifications
 ---
 
 # .test_collab_notified_only_once_per_level()
@@ -16,4 +16,4 @@ tags:
 - [[TestCollabLockdownNotifications]] - `method` [EXTRACTED]
 - [[The 4th block stays at ALERT but must NOT fire a second notification.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_58
+#graphify/code #graphify/EXTRACTED #community/TestCollabLockdownNotifications

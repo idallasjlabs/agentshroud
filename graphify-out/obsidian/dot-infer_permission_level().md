@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "Community 175"
+community: "MCPPermissionManager"
 location: "L378"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_175
+  - community/MCPPermissionManager
 ---
 
 # .infer_permission_level()
 
 ## Connections
-- [[dot-check_tool_permission()_1]] - `calls` [EXTRACTED]
+- [[dot-check_tool_permission()_2]] - `calls` [EXTRACTED]
 - [[Infer the permission level needed for a tool based on its name.          Checks]] - `rationale_for` [EXTRACTED]
-- [[MCPPermissionManager]] - `method` [EXTRACTED]
-- [[MCPServerConfig_1]] - `references` [EXTRACTED]
-- [[PermissionLevel]] - `references` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
+- [[MCPServerConfig]] - `references` [EXTRACTED]
+- [[PermissionLevel_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_175
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

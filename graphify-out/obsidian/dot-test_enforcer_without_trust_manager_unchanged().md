@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "Community 134"
+community: "Role"
 location: "L298"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_134
+  - community/Role
 ---
 
 # .test_enforcer_without_trust_manager_unchanged()
@@ -15,4 +15,4 @@ tags:
 - [[TestToolACLComposition]] - `method` [EXTRACTED]
 - [[ToolACLEnforcer]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_134
+#graphify/code #graphify/EXTRACTED #community/Role

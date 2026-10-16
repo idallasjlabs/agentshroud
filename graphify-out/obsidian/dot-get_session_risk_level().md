@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "Session Manager & PII/Context Guard"
+community: "MiddlewareManager"
 location: "L426"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Manager__PII/Context_Guard
+  - community/MiddlewareManager
 ---
 
 # .get_session_risk_level()
@@ -16,4 +16,4 @@ tags:
 - [[ContextGuard]] - `method` [EXTRACTED]
 - [[Get risk level for a session based on detected attacks.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
