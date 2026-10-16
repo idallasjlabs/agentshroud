@@ -1,26 +1,23 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
-type: "code"
-community: "EgressPolicy"
+source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
+type: "document"
+community: "main.py.md"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/EgressPolicy
+  - community/mainpymd
 ---
 
-# ledger.py
+# ledger.py.md
 
 ## Connections
-- [[DataLedger]] - `contains` [EXTRACTED]
-- [[LedgerConfig]] - `imports` [EXTRACTED]
-- [[LedgerEntry_1]] - `imports` [EXTRACTED]
-- [[LedgerQueryResponse_1]] - `imports` [EXTRACTED]
-- [[README_128]] - `references` [EXTRACTED]
-- [[aiosqlite]] - `references` [EXTRACTED]
-- [[config.py]] - `imports_from` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[models.py]] - `imports_from` [EXTRACTED]
-- [[state.py]] - `imports_from` [EXTRACTED]
+- [[Audit ledger (hash-verifiable chain)]] - `conceptually_related_to` [INFERRED]
+- [[Data Flow]] - `references` [EXTRACTED]
+- [[DataLedger]] - `references` [EXTRACTED]
+- [[LedgerConfig_1]] - `references` [EXTRACTED]
+- [[ledger.py_2]] - `contains` [EXTRACTED]
+- [[main.py]] - `references` [EXTRACTED]
+- [[volumes_1]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressPolicy
+#graphify/document #graphify/EXTRACTED #community/mainpymd

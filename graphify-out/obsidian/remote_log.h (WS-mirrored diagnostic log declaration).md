@@ -1,13 +1,13 @@
 ---
 source_file: "firmware/voice-terminal/main/remote_log.h"
 type: "code"
-community: "agentshroud-console network (legacy, retained fo"
+community: "remote_log.h (WS-mirrored diagnostic log declaration)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-console_network_legacy_retained_fo
+  - community/remote_logh_WS-mirrored_diagnostic_log_declaration
 ---
 
 # remote_log.h (WS-mirrored diagnostic log declaration)
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-console_network_legacy_retained_fo
+#graphify/code #graphify/EXTRACTED #community/remote_logh_WS-mirrored_diagnostic_log_declaration

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/README.md"
 type: "document"
-community: "agentshroud-blueteam/SKILL.md"
+community: "AgentShroud Skills Library"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/AgentShroud_Skills_Library
 ---
 
 # skills/README.md
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Skills_Library

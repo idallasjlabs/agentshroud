@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/references/steve-hay-plan.md"
 type: "document"
-community: "auto_format_python.sh"
+community: "agentshroud-blueteam/references/steve-hay-plan.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/auto_format_pythonsh
+  - community/agentshroud-blueteam/references/steve-hay-planmd
 ---
 
 # plan
 
 ## Connections
-- [[steve-hay-plan]] - `contains` [EXTRACTED]
+- [[agentshroud-blueteamreferencessteve-hay-plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/auto_format_pythonsh
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/references/steve-hay-planmd

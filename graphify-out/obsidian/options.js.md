@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/options.js"
 type: "code"
-community: "test_config_validation.py"
+community: "options.js"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_config_validationpy
+  - community/optionsjs
 ---
 
 # options.js
@@ -18,4 +18,4 @@ tags:
 - [[tokenEl]] - `contains` [EXTRACTED]
 - [[urlEl]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_config_validationpy
+#graphify/code #graphify/EXTRACTED #community/optionsjs

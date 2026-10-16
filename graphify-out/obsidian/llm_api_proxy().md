@@ -1,23 +1,22 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "SSHProxy"
+community: "Request"
 location: "L4324"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/Request
 ---
 
 # llm_api_proxy()
 
 ## Connections
-- [[JSONResponse]] - `calls` [EXTRACTED]
 - [[Proxy Anthropic API calls through security pipeline.]] - `rationale_for` [EXTRACTED]
 - [[Request_1]] - `references` [EXTRACTED]
-- [[Request_10]] - `references` [EXTRACTED]
+- [[api_route]] - `references` [EXTRACTED]
+- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `contains` [EXTRACTED]
 - [[llm_api_v1_prefix_alias()]] - `calls` [EXTRACTED]
 - [[llm_openai_chat_alias()]] - `calls` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/Request

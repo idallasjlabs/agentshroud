@@ -1,19 +1,18 @@
 ---
-source_file: "docker/scripts/security-entrypoint.sh"
+source_file: "scripts/lib/sunday-scan.sh"
 type: "code"
-community: "Discovery Strategy"
-location: "L18"
+community: "Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Discovery_Strategy
+  - community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
 ---
 
 # log()
 
 ## Connections
-- [[alert_critical()]] - `calls` [EXTRACTED]
-- [[security-entrypoint.sh]] - `defines` [EXTRACTED]
-- [[security-entrypoint.sh script]] - `calls` [EXTRACTED]
+- [[sunday-scan.sh (Trivy scan gate library)]] - `defines` [EXTRACTED]
+- [[sunday_run_scan_gate()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Discovery_Strategy
+#graphify/code #graphify/EXTRACTED #community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds

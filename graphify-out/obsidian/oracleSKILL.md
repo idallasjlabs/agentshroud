@@ -5,7 +5,7 @@ community: "oracle — best use"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/oracle__best_use
 ---
 
@@ -15,4 +15,4 @@ tags:
 - [[mcporterSKILL]] - `conceptually_related_to` [INFERRED]
 - [[oracle — best use]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/oracle__best_use
+#graphify/document #graphify/EXTRACTED #community/oracle__best_use

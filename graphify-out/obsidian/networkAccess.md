@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/browser-fetch/skill.json"
 type: "code"
-community: "router.py"
+community: "skill.json"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/routerpy
+  - community/skilljson
 ---
 
 # networkAccess
 
 ## Connections
-- [[security]] - `contains` [EXTRACTED]
+- [[security_11]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/routerpy
+#graphify/code #graphify/EXTRACTED #community/skilljson

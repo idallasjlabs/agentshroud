@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L82"
+community: "test_redteam_probes.py"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/test_redteam_probespy
 ---
 
 # pipeline()
 
 ## Connections
-- [[SecurityPipeline]] - `calls` [EXTRACTED]
-- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
+- [[_make_full_pipeline()]] - `calls` [EXTRACTED]
+- [[test_redteam_probes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/test_redteam_probespy

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_group_workspace_manager.py"
+source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "test_security_audit.py"
-location: "L74"
+community: "GroupConfig"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_auditpy
+  - community/GroupConfig
 ---
 
 # teams()
 
 ## Connections
-- [[TeamsConfig]] - `calls` [EXTRACTED]
-- [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
+- [[TeamsConfig_1]] - `references` [EXTRACTED]
+- [[test_group_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_auditpy
+#graphify/code #graphify/EXTRACTED #community/GroupConfig

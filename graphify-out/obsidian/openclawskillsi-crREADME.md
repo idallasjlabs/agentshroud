@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-cr/README.md"
 type: "document"
-community: "Community 1263"
+community: "Code Review (CR)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1263
+  - community/Code_Review_CR
 ---
 
 # openclaw/skills/i-cr/README.md
 
 ## Connections
-- [[Code Review (CR)_1]] - `contains` [EXTRACTED]
+- [[Code Review (CR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1263
+#graphify/document #graphify/EXTRACTED #community/Code_Review_CR

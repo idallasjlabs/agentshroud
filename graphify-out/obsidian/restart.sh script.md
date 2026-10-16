@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/restart.sh"
 type: "code"
-community: "Decision Framework"
+community: "logs.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Decision_Framework
+  - community/logssh
 ---
 
 # restart.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[restart.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Decision_Framework
+#graphify/code #graphify/EXTRACTED #community/logssh

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/start-agentshroud.sh"
 type: "code"
-community: "What You Must Do When Invoked"
+community: "start-agentshroud.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked
+  - community/start-agentshroudsh
 ---
 
 # start-agentshroud.sh
@@ -32,16 +32,14 @@ tags:
 - [[_rename_to_meaningful()]] - `defines` [EXTRACTED]
 - [[_slack_channel_id()]] - `defines` [EXTRACTED]
 - [[_slack_send()]] - `defines` [EXTRACTED]
-- [[_telegram_bot_token()_1]] - `defines` [EXTRACTED]
-- [[_telegram_get_me_ready()_1]] - `defines` [EXTRACTED]
-- [[_telegram_send()_1]] - `defines` [EXTRACTED]
-- [[_telegram_send_photo()_1]] - `defines` [EXTRACTED]
+- [[_telegram_bot_token()]] - `defines` [EXTRACTED]
+- [[_telegram_get_me_ready()]] - `defines` [EXTRACTED]
+- [[_telegram_send()]] - `defines` [EXTRACTED]
+- [[_telegram_send_photo()]] - `defines` [EXTRACTED]
 - [[colima-health-check.sh]] - `conceptually_related_to` [INFERRED]
+- [[dockerscriptsinit-openclaw-config.sh (baked into OpenClaw image; seeds sandbox mode, runs doctor --fix)]] - `calls` [EXTRACTED]
 - [[gateway-start.sh]] - `semantically_similar_to` [INFERRED]
-- [[init-openclaw-config.sh]] - `calls` [EXTRACTED]
 - [[op_proxy_read_with_retry()]] - `defines` [EXTRACTED]
-- [[patch-anthropic-sdk.sh]] - `calls` [EXTRACTED]
-- [[patch-telegram-sdk.sh]] - `calls` [EXTRACTED]
 - [[start-agentshroud.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked
+#graphify/code #graphify/EXTRACTED #community/start-agentshroudsh

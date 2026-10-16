@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/web/api.py"
 type: "code"
-community: "soc/router.py"
-location: "L612"
+community: "_get_engine"
+location: "L305"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/_get_engine
 ---
 
 # start_service()
 
 ## Connections
-- [[SCLCaller_1]] - `references` [EXTRACTED]
-- [[ServiceManager]] - `calls` [EXTRACTED]
-- [[_log_audit()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[Start a specific service container.]] - `rationale_for` [EXTRACTED]
+- [[_get_engine()]] - `calls` [EXTRACTED]
+- [[_validate_service_name()]] - `calls` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/_get_engine

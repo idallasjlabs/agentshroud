@@ -1,13 +1,13 @@
 ---
 source_file: "CHANGELOG.md"
 type: "rationale"
-community: "ServiceManager._describe_service() — reads OCI i"
+community: "scripts/check-vendor-compat.sh — A2A JSON-RPC smoke check"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ServiceManager_describe_service__reads_OCI_i
+  - community/scripts/check-vendor-compatsh__A2A_JSON-RPC_smoke_check
 ---
 
 # scripts/check-vendor-compat.sh — A2A JSON-RPC smoke check
 
-#graphify/rationale #graphify/EXTRACTED #community/ServiceManager_describe_service__reads_OCI_i
+#graphify/rationale #graphify/EXTRACTED #community/scripts/check-vendor-compatsh__A2A_JSON-RPC_smoke_check

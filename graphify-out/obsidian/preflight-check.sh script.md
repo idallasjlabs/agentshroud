@@ -1,18 +1,18 @@
 ---
 source_file: "scripts/preflight-check.sh"
 type: "code"
-community: ".send()"
+community: "ProxyDashboard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/send
+  - community/ProxyDashboard
 ---
 
 # preflight-check.sh script
 
 ## Connections
-- [[check()_1]] - `calls` [EXTRACTED]
+- [[check()_7]] - `calls` [EXTRACTED]
 - [[preflight-check.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/send
+#graphify/code #graphify/EXTRACTED #community/ProxyDashboard

@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[author_4]] - `contains` [EXTRACTED]
-- [[description_6]] - `contains` [EXTRACTED]
+- [[description_16]] - `contains` [EXTRACTED]
 - [[keywords_4]] - `contains` [EXTRACTED]
-- [[license_4]] - `contains` [EXTRACTED]
+- [[license_8]] - `contains` [EXTRACTED]
 - [[main_3]] - `contains` [EXTRACTED]
 - [[name_6]] - `contains` [EXTRACTED]
 - [[scripts_4]] - `contains` [EXTRACTED]

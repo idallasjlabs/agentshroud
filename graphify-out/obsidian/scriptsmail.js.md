@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "concept"
-community: ".get_or_create_group_session()"
+community: "i-icloud SKILL — iCloud Services"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/get_or_create_group_session
+  - community/i-icloud_SKILL__iCloud_Services
 ---
 
 # scripts/mail.js
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-icloud SKILL — iCloud Services]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/get_or_create_group_session
+#graphify/concept #graphify/EXTRACTED #community/i-icloud_SKILL__iCloud_Services

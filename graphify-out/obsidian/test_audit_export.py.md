@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "code"
-community: "load_config()"
+community: "AuditExporter"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/AuditExporter
 ---
 
 # test_audit_export.py
 
 ## Connections
-- [[AuditEvent_1]] - `imports` [EXTRACTED]
+- [[AuditEvent]] - `imports` [EXTRACTED]
 - [[AuditExportConfig_1]] - `imports` [EXTRACTED]
 - [[AuditExporter]] - `imports` [EXTRACTED]
 - [[AuditStore_1]] - `imports` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[TestAuditStore]] - `contains` [EXTRACTED]
 - [[TestAuditStoreBotId]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/AuditExporter

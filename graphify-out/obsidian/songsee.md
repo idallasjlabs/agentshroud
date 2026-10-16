@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/songsee/SKILL.md"
 type: "document"
-community: "browser-extension/manifest.json"
+community: "OpenClaw Skill Metadata Schema (frontmatter convention)"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser-extension/manifestjson
+  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention
 ---
 
 # songsee
 
 ## Connections
-- [[SKILL_230]] - `contains` [EXTRACTED]
+- [[songseeSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser-extension/manifestjson
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention

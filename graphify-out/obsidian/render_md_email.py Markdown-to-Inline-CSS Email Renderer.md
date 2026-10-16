@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt"
 type: "concept"
-community: "TestSplitForSpeech"
+community: "Prompt: Hermes Competitive Intelligence Email (AM/PM)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/TestSplitForSpeech
+  - community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM
 ---
 
 # render_md_email.py Markdown-to-Inline-CSS Email Renderer
@@ -15,4 +15,4 @@ tags:
 - [[Prompt Hermes Competitive Intelligence Email (AMPM)]] - `references` [EXTRACTED]
 - [[jira_weekly_review.py Pre-Committed Posting Script]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/TestSplitForSpeech
+#graphify/concept #graphify/EXTRACTED #community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM

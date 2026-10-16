@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_collaborator_responses.py"
+source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "StdioConnection"
-location: "L29"
+community: "RBACConfig"
+location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/RBACConfig
 ---
 
 # teams()
 
 ## Connections
-- [[GroupConfig]] - `calls` [EXTRACTED]
-- [[ProjectConfig]] - `calls` [EXTRACTED]
 - [[TeamsConfig]] - `calls` [EXTRACTED]
-- [[test_collaborator_responses.py]] - `contains` [EXTRACTED]
+- [[test_group_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

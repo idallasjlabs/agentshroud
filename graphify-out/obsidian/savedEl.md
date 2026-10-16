@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/options.js"
 type: "code"
-community: "test_config_validation.py"
+community: "options.js"
 location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_config_validationpy
+  - community/optionsjs
 ---
 
 # savedEl
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[options.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_config_validationpy
+#graphify/code #graphify/EXTRACTED #community/optionsjs

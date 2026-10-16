@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "rationale"
-community: "AgentShroud User Guide"
+community: "parse_trivy_output"
 location: "L287"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_User_Guide
+  - community/parse_trivy_output
 ---
 
 # save_report creates the log directory if it does not exist.
 
 ## Connections
-- [[.test_log_dir_created_if_missing()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_log_dir_created_if_missing()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_User_Guide
+#graphify/rationale #graphify/EXTRACTED #community/parse_trivy_output

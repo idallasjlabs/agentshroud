@@ -1,19 +1,19 @@
 ---
 source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "env_guard.py"
+community: "generate_branding_assets.py"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/env_guardpy
+  - community/generate_branding_assetspy
 ---
 
 # save()
 
 ## Connections
 - [[Image]] - `references` [EXTRACTED]
-- [[Path_46]] - `references` [EXTRACTED]
+- [[Path_45]] - `references` [EXTRACTED]
 - [[ensure()]] - `calls` [EXTRACTED]
 - [[generate_branding_assets.py]] - `contains` [EXTRACTED]
 - [[generate_email()]] - `calls` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[generate_social()]] - `calls` [EXTRACTED]
 - [[generate_variants()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/env_guardpy
+#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy

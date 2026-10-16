@@ -12,6 +12,6 @@ tags:
 # openclaw/agents/hermes-soul.md
 
 ## Connections
-- [[AgentShroud Hermes — System Identity]] - `contains` [EXTRACTED]
+- [[AgentShroud Hermes — System Identity_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Hermes__System_Identity

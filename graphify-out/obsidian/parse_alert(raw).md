@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
 type: "document"
-community: "AgentShroud Security Verification (13-check driv"
+community: "wazuh_client.py"
 location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Verification_13-check_driv
+  - community/wazuh_clientpy
 ---
 
 # parse_alert(raw)
 
 ## Connections
-- [[Function Details_39]] - `contains` [EXTRACTED]
+- [[Function Details_20]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Verification_13-check_driv
+#graphify/document #graphify/EXTRACTED #community/wazuh_clientpy

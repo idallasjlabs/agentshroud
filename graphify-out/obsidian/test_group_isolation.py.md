@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "test_security_audit.py"
+community: "RBACConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_auditpy
+  - community/RBACConfig
 ---
 
 # test_group_isolation.py
 
 ## Connections
 - [[AgentRegistry]] - `imports` [EXTRACTED]
-- [[ContainerConfig]] - `imports` [EXTRACTED]
+- [[ContainerConfig_1]] - `imports` [EXTRACTED]
 - [[RBACConfig_1]] - `imports` [EXTRACTED]
 - [[SharedMemoryManager]] - `imports` [EXTRACTED]
 - [[TeamsConfig]] - `imports` [EXTRACTED]
@@ -24,11 +24,11 @@ tags:
 - [[UserSessionManager]] - `imports` [EXTRACTED]
 - [[agent_isolation.py (AgentRegistry)]] - `implements` [EXTRACTED]
 - [[rbac()]] - `contains` [EXTRACTED]
-- [[session_manager()_1]] - `contains` [EXTRACTED]
+- [[session_manager()_2]] - `contains` [EXTRACTED]
 - [[session_manager.py (UserSessionManager)]] - `references` [EXTRACTED]
 - [[shared_memory()]] - `contains` [EXTRACTED]
 - [[shared_memory.py (SharedMemoryManager)]] - `references` [EXTRACTED]
-- [[teams()_2]] - `contains` [EXTRACTED]
-- [[tmp_workspace()]] - `contains` [EXTRACTED]
+- [[teams()]] - `contains` [EXTRACTED]
+- [[tmp_workspace()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_auditpy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_greeter.py"
 type: "code"
-community: "Validation Runner Specialist"
+community: "test_collaborator_greeter.py"
 location: "L327"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Validation_Runner_Specialist
+  - community/test_collaborator_greeterpy
 ---
 
 # test_get_client_creates_own_when_not_injected()
@@ -16,4 +16,4 @@ tags:
 - [[CollaboratorGreeter creates its own httpx client lazily.]] - `rationale_for` [EXTRACTED]
 - [[test_collaborator_greeter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Validation_Runner_Specialist
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy

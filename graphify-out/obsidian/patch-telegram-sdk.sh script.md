@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/patch-telegram-sdk.sh"
 type: "code"
-community: "What You Must Do When Invoked"
+community: "test_colima_and_sdk_patch_fallback_resolution.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked
+  - community/test_colima_and_sdk_patch_fallback_resolutionsh
 ---
 
 # patch-telegram-sdk.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[patch-telegram-sdk.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked
+#graphify/code #graphify/EXTRACTED #community/test_colima_and_sdk_patch_fallback_resolutionsh

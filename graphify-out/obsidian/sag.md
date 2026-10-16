@@ -1,18 +1,18 @@
 ---
 source_file: "skills/openclaw/sag/SKILL.md"
 type: "document"
-community: "web_proxy.py"
+community: "openai-whisper-api/SKILL.md"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/web_proxypy
+  - community/openai-whisper-api/SKILLmd
 ---
 
 # sag
 
 ## Connections
 - [[Chat voice responses]] - `contains` [EXTRACTED]
-- [[SKILL_226]] - `contains` [EXTRACTED]
+- [[sagSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/web_proxypy
+#graphify/document #graphify/EXTRACTED #community/openai-whisper-api/SKILLmd

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-icloud/README.md"
 type: "document"
-community: "Community 1269"
+community: "iCloud Data Manager (ICLOUD)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1269
+  - community/iCloud_Data_Manager_ICLOUD
 ---
 
 # openclaw/skills/i-icloud/README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[iCloud Data Manager (ICLOUD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1269
+#graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD

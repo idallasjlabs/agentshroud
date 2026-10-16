@@ -5,7 +5,7 @@ community: "Common Queries"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/AMBIGUOUS
+  - graphify/EXTRACTED
   - community/Common_Queries
 ---
 
@@ -15,4 +15,4 @@ tags:
 - [[model-usageSKILL]] - `conceptually_related_to` [AMBIGUOUS]
 - [[session-logs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/AMBIGUOUS #community/Common_Queries
+#graphify/document #graphify/EXTRACTED #community/Common_Queries

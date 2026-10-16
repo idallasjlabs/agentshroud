@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/omlx-moe-streaming-health-check.txt"
 type: "concept"
-community: "test_telegram_replay.py"
+community: "Hermes Cron Jobs Reference & Recreation Guide"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_telegram_replaypy
+  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
 ---
 
 # oMLX Chat Completions Endpoint (host.docker.internal:8000/v1)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Prompt OMLX MoE Streaming Health Check]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_telegram_replaypy
+#graphify/concept #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide

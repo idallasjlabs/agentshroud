@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "ToolACLEnforcer"
+community: "_pcm_bytes"
 location: "L2548"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolACLEnforcer
+  - community/_pcm_bytes
 ---
 
 # set volume X%' must NOT reach the agent: the server sends a     {"cmd":"set_volu
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_volume_command_intercepted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolACLEnforcer
+#graphify/rationale #graphify/EXTRACTED #community/_pcm_bytes

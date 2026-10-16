@@ -1,17 +1,17 @@
 ---
-source_file: "tests/startup_smoke/test_wire_llm_settings.js"
+source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "Community 661"
-location: "L35"
+community: "TestOAuthInjection"
+location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_661
+  - community/TestOAuthInjection
 ---
 
-# path
+# Path
 
 ## Connections
-- [[test_wire_llm_settings.js]] - `contains` [EXTRACTED]
+- [[dot-_make_anthropic_injector()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_661
+#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection

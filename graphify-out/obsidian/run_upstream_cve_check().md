@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "PrivacyPolicyEnforcer"
+community: "test_daily_cve_report.py"
 location: "L650"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/test_daily_cve_reportpy
 ---
 
 # run_upstream_cve_check()
 
 ## Connections
-- [[Any_37]] - `references` [EXTRACTED]
+- [[Any_82]] - `references` [EXTRACTED]
 - [[Fetch one agent's upstream CVEs, alert via Telegram, honestly.      Runs a singl]] - `rationale_for` [EXTRACTED]
 - [[_send_telegram()]] - `calls` [EXTRACTED]
 - [[check_upstream_cves()]] - `calls` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[run_upstream_cve_check_all_agents()]] - `calls` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

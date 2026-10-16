@@ -1,22 +1,22 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "LLMProxy"
-location: "L108"
+community: "FalcoAlertWatcher"
+location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/FalcoAlertWatcher
 ---
 
 # parse_alert()
 
 ## Connections
-- [[Any_65]] - `references` [EXTRACTED]
-- [[Parse a single Wazuh alert.      Args         raw Raw Wazuh alert JSON.      R]] - `rationale_for` [EXTRACTED]
-- [[level_to_severity()]] - `calls` [EXTRACTED]
+- [[dot-_process_new_alerts()]] - `calls` [EXTRACTED]
+- [[Any_66]] - `references` [EXTRACTED]
+- [[Parse a single Falco alert.      Args         raw Raw Falco alert JSON.      R]] - `rationale_for` [EXTRACTED]
+- [[falco_monitor.py]] - `contains` [EXTRACTED]
 - [[read_alerts()_1]] - `calls` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
-- [[wazuh_client.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

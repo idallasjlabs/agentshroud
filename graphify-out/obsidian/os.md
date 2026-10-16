@@ -1,17 +1,17 @@
 ---
-source_file: "tests/startup_smoke/test_apply_patches.js"
+source_file: "tests/startup_smoke/test_wire_llm_settings.js"
 type: "code"
-community: "Animation Guidelines"
-location: "L25"
+community: "test_wire_llm_settings.js"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Animation_Guidelines
+  - community/test_wire_llm_settingsjs
 ---
 
 # os
 
 ## Connections
-- [[test_apply_patches.js]] - `contains` [EXTRACTED]
+- [[test_wire_llm_settings.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Animation_Guidelines
+#graphify/code #graphify/EXTRACTED #community/test_wire_llm_settingsjs

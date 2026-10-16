@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/package.json"
+source_file: "docker/config/hermes/skills/i-browser/package.json"
 type: "code"
-community: "API Reference"
+community: "hermes/skills/i-browser/package.json"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/API_Reference
+  - community/hermes/skills/i-browser/packagejson
 ---
 
 # main
 
 ## Connections
-- [[package.json_3]] - `contains` [EXTRACTED]
+- [[hermesskillsi-browserpackage.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/API_Reference
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-browser/packagejson

@@ -1,23 +1,20 @@
 ---
 source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "quick-setup.sh script"
-location: "L9"
+community: "Error Index.md"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/quick-setupsh_script
+  - community/Error_Indexmd
 ---
 
-# spaCy
+# spacy.md
 
 ## Connections
-- [[Fallback Behavior]] - `contains` [EXTRACTED]
-- [[First-Boot Performance]] - `contains` [EXTRACTED]
-- [[Model]] - `contains` [EXTRACTED]
-- [[Purpose_194]] - `contains` [EXTRACTED]
-- [[Related Notes_49]] - `contains` [EXTRACTED]
-- [[Where Used_5]] - `contains` [EXTRACTED]
-- [[spacy]] - `contains` [EXTRACTED]
+- [[All Dependencies]] - `references` [EXTRACTED]
+- [[PII Pipeline Errors_1]] - `references` [EXTRACTED]
+- [[presidio-analyzer]] - `references` [EXTRACTED]
+- [[spaCy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/quick-setupsh_script
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

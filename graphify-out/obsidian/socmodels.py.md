@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "SOCWebSocketHandler"
+community: "Enum"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - community/Enum
 ---
 
 # soc/models.py
@@ -17,13 +17,13 @@ tags:
 - [[AuditLogEntry]] - `contains` [EXTRACTED]
 - [[AuditResult_1]] - `contains` [EXTRACTED]
 - [[ContributorRecord_1]] - `contains` [EXTRACTED]
-- [[EgressRequest_1]] - `contains` [EXTRACTED]
+- [[EgressRequest]] - `contains` [EXTRACTED]
 - [[EgressStatus]] - `contains` [EXTRACTED]
-- [[Enum_3]] - `imports_from` [EXTRACTED]
+- [[Enum_2]] - `imports_from` [EXTRACTED]
 - [[HealthStatus_1]] - `contains` [EXTRACTED]
 - [[Platform]] - `contains` [EXTRACTED]
-- [[ResourceUsage_2]] - `contains` [EXTRACTED]
-- [[RiskLevel_6]] - `contains` [EXTRACTED]
+- [[ResourceUsage_1]] - `contains` [EXTRACTED]
+- [[RiskLevel_4]] - `contains` [EXTRACTED]
 - [[SCLConfirmationRequired]] - `contains` [EXTRACTED]
 - [[SCLError]] - `contains` [EXTRACTED]
 - [[SCLInterface_1]] - `contains` [EXTRACTED]
@@ -32,7 +32,7 @@ tags:
 - [[ServiceStatus_1]] - `contains` [EXTRACTED]
 - [[Severity_2]] - `contains` [EXTRACTED]
 - [[UserRole]] - `contains` [EXTRACTED]
-- [[WSEvent_1]] - `contains` [EXTRACTED]
+- [[WSEvent]] - `contains` [EXTRACTED]
 - [[WSEventType]] - `contains` [EXTRACTED]
 - [[_new_uuid()]] - `contains` [EXTRACTED]
 - [[_now_iso()]] - `contains` [EXTRACTED]
@@ -42,4 +42,4 @@ tags:
 - [[socrouter.py]] - `imports_from` [EXTRACTED]
 - [[websocket.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/code #graphify/EXTRACTED #community/Enum

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/patch-ws-proxy.sh"
 type: "code"
-community: "Scrum Ceremony Facilitation"
+community: "patch-ws-proxy.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Scrum_Ceremony_Facilitation
+  - community/patch-ws-proxysh
 ---
 
 # patch-ws-proxy.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[patch-ws-proxy.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Scrum_Ceremony_Facilitation
+#graphify/code #graphify/EXTRACTED #community/patch-ws-proxysh

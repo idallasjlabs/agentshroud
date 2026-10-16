@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/multi-host-test.sh"
 type: "code"
-community: "TestRunAndSendCveReportImageScans"
+community: "main"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestRunAndSendCveReportImageScans
+  - community/main
 ---
 
 # multi-host-test.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[multi-host-test.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestRunAndSendCveReportImageScans
+#graphify/code #graphify/EXTRACTED #community/main

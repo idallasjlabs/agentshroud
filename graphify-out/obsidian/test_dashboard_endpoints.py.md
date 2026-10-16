@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard_endpoints.py"
 type: "code"
-community: "Phase 3: MITIGATE (Rollback First!)"
+community: "test_dashboard_endpoints.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First
+  - community/test_dashboard_endpointspy
 ---
 
 # test_dashboard_endpoints.py
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[AlertStore]] - `imports` [EXTRACTED]
 - [[LogBuffer]] - `imports` [EXTRACTED]
-- [[auth_headers()_1]] - `contains` [EXTRACTED]
-- [[client()_5]] - `contains` [EXTRACTED]
+- [[auth_headers()]] - `contains` [EXTRACTED]
+- [[client()_10]] - `contains` [EXTRACTED]
 - [[test_alert_store_push_and_summary()]] - `contains` [EXTRACTED]
 - [[test_alerts_summary_empty()]] - `contains` [EXTRACTED]
 - [[test_alerts_summary_requires_auth()]] - `contains` [EXTRACTED]
@@ -33,4 +33,4 @@ tags:
 - [[test_ssh_hosts_requires_auth()]] - `contains` [EXTRACTED]
 - [[test_ssh_hosts_returns_hosts()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

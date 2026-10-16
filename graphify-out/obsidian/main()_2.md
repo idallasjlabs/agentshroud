@@ -1,18 +1,21 @@
 ---
-source_file: "docker/bots/hermes/dashboard_bridge.py"
+source_file: "gateway/skills/scan.py"
 type: "code"
-community: "TestOAuthInjection"
-location: "L134"
+community: "Recommendation"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOAuthInjection
+  - community/Recommendation
 ---
 
 # main()
 
 ## Connections
-- [[_handle()]] - `calls` [EXTRACTED]
-- [[dashboard_bridge.py]] - `contains` [EXTRACTED]
+- [[Path_2]] - `calls` [EXTRACTED]
+- [[SkillGuard_1]] - `calls` [EXTRACTED]
+- [[_build_tree()]] - `calls` [EXTRACTED]
+- [[_print_findings()]] - `calls` [EXTRACTED]
+- [[scan.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection
+#graphify/code #graphify/EXTRACTED #community/Recommendation

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_isolation.py"
 type: "code"
-community: "Marvin Dev Overlay (port and subnet offsets from"
+community: "TestDockerSecretIsolation"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Marvin_Dev_Overlay_port_and_subnet_offsets_from
+  - community/TestDockerSecretIsolation
 ---
 
 # test_credential_isolation.py
@@ -16,4 +16,4 @@ tags:
 - [[TestCredentialLeakDetection]] - `contains` [EXTRACTED]
 - [[TestDockerSecretIsolation]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Marvin_Dev_Overlay_port_and_subnet_offsets_from
+#graphify/code #graphify/EXTRACTED #community/TestDockerSecretIsolation

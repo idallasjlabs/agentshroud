@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "RateLimiter"
+community: "forward.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/forwardpy
 ---
 
 # test_channel_ownership.py
@@ -15,9 +15,9 @@ tags:
 - [[TestEmailSend]] - `contains` [EXTRACTED]
 - [[TestTelegramWebhook]] - `contains` [EXTRACTED]
 - [[auth_dep()]] - `imports` [EXTRACTED]
-- [[auth_dep()_3]] - `imports` [EXTRACTED]
+- [[auth_dep()_1]] - `imports` [EXTRACTED]
 - [[bypass_auth()]] - `contains` [EXTRACTED]
-- [[client()_2]] - `contains` [EXTRACTED]
+- [[client()_3]] - `contains` [EXTRACTED]
 - [[forward.py]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimiter
+#graphify/code #graphify/EXTRACTED #community/forwardpy

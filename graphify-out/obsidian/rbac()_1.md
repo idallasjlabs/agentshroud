@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_group_rbac.py"
+source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "RBACConfig"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/RBACConfig
 ---
 
 # rbac()
 
 ## Connections
 - [[RBACConfig_1]] - `calls` [EXTRACTED]
-- [[test_group_rbac.py]] - `contains` [EXTRACTED]
+- [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

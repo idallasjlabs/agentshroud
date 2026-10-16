@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_router_streaming.py"
+source_file: "gateway/tests/test_group_approval_routing.py"
 type: "code"
-community: "ApprovalRequest"
-location: "L23"
+community: "GroupApprovalRouter"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/GroupApprovalRouter
 ---
 
 # router()
 
 ## Connections
-- [[MultiAgentRouter]] - `calls` [EXTRACTED]
-- [[RouterConfig]] - `calls` [EXTRACTED]
-- [[test_router_streaming.py]] - `contains` [EXTRACTED]
+- [[GroupApprovalRouter]] - `calls` [EXTRACTED]
+- [[GroupApprovalRouter wired with a mock Telegram send function.]] - `rationale_for` [EXTRACTED]
+- [[test_group_approval_routing.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter

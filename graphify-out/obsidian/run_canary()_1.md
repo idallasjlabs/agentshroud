@@ -1,27 +1,27 @@
 ---
 source_file: "scripts/verify-proxy.sh"
 type: "code"
-community: "awslabs.aws-api-mcp-server configuration (--read"
+community: "ProxyDashboard"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/awslabsaws-api-mcp-server_configuration_--read
+  - community/ProxyDashboard
 ---
 
 # run_canary()
 
 ## Connections
-- [[PIIConfig]] - `references` [EXTRACTED]
-- [[PIISanitizer]] - `references` [EXTRACTED]
+- [[PIIConfig_2]] - `references` [EXTRACTED]
+- [[PIISanitizer_2]] - `references` [EXTRACTED]
 - [[PromptGuard]] - `references` [EXTRACTED]
-- [[SecurityPipeline]] - `references` [EXTRACTED]
-- [[fail()_5]] - `calls` [EXTRACTED]
-- [[info()_2]] - `calls` [EXTRACTED]
-- [[pass()_3]] - `calls` [EXTRACTED]
+- [[SecurityPipeline_2]] - `references` [EXTRACTED]
+- [[fail()_2]] - `calls` [EXTRACTED]
+- [[info()_1]] - `calls` [EXTRACTED]
+- [[pass()_1]] - `calls` [EXTRACTED]
 - [[run_canary()]] - `references` [EXTRACTED]
 - [[run_full()]] - `calls` [EXTRACTED]
 - [[verify-proxy.sh]] - `defines` [EXTRACTED]
 - [[verify-proxy.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/awslabsaws-api-mcp-server_configuration_--read
+#graphify/code #graphify/EXTRACTED #community/ProxyDashboard

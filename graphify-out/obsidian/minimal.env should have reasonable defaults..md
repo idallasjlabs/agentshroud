@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "ApprovalRequest"
+community: "ForwardRequest"
 location: "L100"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/ForwardRequest
 ---
 
 # minimal.env should have reasonable defaults.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMinimalConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest

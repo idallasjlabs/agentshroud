@@ -1,20 +1,25 @@
 ---
-source_file: "docker/config/openclaw/cron/scripts/cve_prefetch.py"
+source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Slack Channel Setup"
-location: "L46"
+community: "SecureBrowser"
+location: "L431"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_Channel_Setup
+  - community/SecureBrowser
 ---
 
 # main()
 
 ## Connections
-- [[Cron Daily CVE Triage & Remediation Scan]] - `shares_data_with` [INFERRED]
-- [[curl_json()]] - `calls` [EXTRACTED]
-- [[cve_prefetch.py]] - `contains` [EXTRACTED]
-- [[known_ghsa_ids()]] - `calls` [EXTRACTED]
+- [[dot-_take_screenshot()]] - `calls` [EXTRACTED]
+- [[dot-agentsskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
+- [[dot-click()]] - `calls` [EXTRACTED]
+- [[dot-close()_2]] - `calls` [EXTRACTED]
+- [[dot-extract()]] - `calls` [EXTRACTED]
+- [[dot-fill_field()]] - `calls` [EXTRACTED]
+- [[dot-navigate()]] - `calls` [EXTRACTED]
+- [[CLI interface for SecureBrowser]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_Channel_Setup
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

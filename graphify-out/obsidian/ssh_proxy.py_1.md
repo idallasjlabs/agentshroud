@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
 type: "document"
-community: "Available MCP Servers"
+community: "ssh_proxy.py"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Available_MCP_Servers
+  - community/ssh_proxypy
 ---
 
 # ssh_proxy.py
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[Configured Hosts_1]] - `contains` [EXTRACTED]
 - [[Key Class `SSHProxy`]] - `contains` [EXTRACTED]
-- [[Purpose_125]] - `contains` [EXTRACTED]
-- [[Related Notes_11]] - `contains` [EXTRACTED]
-- [[Responsibilities_10]] - `contains` [EXTRACTED]
-- [[Security Notes_5]] - `contains` [EXTRACTED]
+- [[Purpose_195]] - `contains` [EXTRACTED]
+- [[Related Notes_74]] - `contains` [EXTRACTED]
+- [[Responsibilities_58]] - `contains` [EXTRACTED]
+- [[Security Notes_8]] - `contains` [EXTRACTED]
 - [[ssh_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers
+#graphify/document #graphify/EXTRACTED #community/ssh_proxypy

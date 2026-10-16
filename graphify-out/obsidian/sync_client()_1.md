@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "test_security_fixes.py"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/test_security_fixespy
 ---
 
 # sync_client()
@@ -15,4 +15,4 @@ tags:
 - [[Sync TestClient for WebSocket tests_1]] - `rationale_for` [EXTRACTED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/test_security_fixespy

@@ -1,17 +1,18 @@
 ---
-source_file: "docker/bots/hermes/docker_proxy_relay.py"
+source_file: "docker/bots/hermes/render_md_email.py"
 type: "code"
-community: "TestOAuthInjection"
-location: "L70"
+community: "competitive-report-*.md dated reports"
+location: "L250"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOAuthInjection
+  - community/competitive-report-md_dated_reports
 ---
 
 # main()
 
 ## Connections
-- [[docker_proxy_relay.py]] - `contains` [EXTRACTED]
+- [[render()]] - `calls` [EXTRACTED]
+- [[render_md_email.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection
+#graphify/code #graphify/EXTRACTED #community/competitive-report-md_dated_reports

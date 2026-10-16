@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_claude_via_openai_path.py"
 type: "code"
-community: "AgentShroud Security Hardening Plan"
+community: "test_anthropic_openai_translator.py"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Hardening_Plan
+  - community/test_anthropic_openai_translatorpy
 ---
 
 # test_anthropic_to_openai_response_envelope()
@@ -15,4 +15,4 @@ tags:
 - [[anthropic_to_openai_response()]] - `calls` [EXTRACTED]
 - [[test_claude_via_openai_path.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Hardening_Plan
+#graphify/code #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy

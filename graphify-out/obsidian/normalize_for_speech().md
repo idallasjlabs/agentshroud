@@ -1,22 +1,22 @@
 ---
 source_file: "voice_gateway/tts.py"
 type: "code"
-community: "Skill: Audit Branch (AB) — Merge Regression Dete"
+community: "tts.py"
 location: "L221"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_Audit_Branch_AB__Merge_Regression_Dete
+  - community/ttspy
 ---
 
 # normalize_for_speech()
 
 ## Connections
-- [[._n()]] - `calls` [EXTRACTED]
+- [[dot-_n()]] - `calls` [EXTRACTED]
 - [[Return text suitable for TTS synthesis on the ESP32 voice interface.      Two]] - `rationale_for` [EXTRACTED]
 - [[split_for_speech()]] - `calls` [EXTRACTED]
 - [[synthesize()]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `imports` [EXTRACTED]
 - [[tts.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Dete
+#graphify/code #graphify/EXTRACTED #community/ttspy

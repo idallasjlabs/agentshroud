@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "TrustConfig"
+community: "CrossBotTrustLedger"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/CrossBotTrustLedger
 ---
 
 # test_cross_bot_trust_ledger.py
 
 ## Connections
 - [[BotIncidentSeverity]] - `imports` [EXTRACTED]
-- [[CrossBotTrustLedger]] - `imports` [EXTRACTED]
+- [[CrossBotTrustLedger_1]] - `imports` [EXTRACTED]
 - [[IncidentRecord]] - `imports` [EXTRACTED]
 - [[TestBotIncidentSeverity]] - `contains` [EXTRACTED]
 - [[TestBuildFullMesh]] - `contains` [EXTRACTED]
@@ -24,10 +24,10 @@ tags:
 - [[TestTrustDecayPolicyValidation]] - `contains` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
 - [[TrustDecayPolicy]] - `imports` [EXTRACTED]
-- [[TrustManager_1]] - `imports` [EXTRACTED]
+- [[TrustManager]] - `imports` [EXTRACTED]
 - [[hermes_tm()]] - `contains` [EXTRACTED]
-- [[ledger()_1]] - `contains` [EXTRACTED]
+- [[ledger()]] - `contains` [EXTRACTED]
 - [[openclaw_tm()]] - `contains` [EXTRACTED]
 - [[policy()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

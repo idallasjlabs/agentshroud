@@ -1,16 +1,16 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "A2APolicyEngine"
+community: "create_auth_dependency"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/create_auth_dependency
 ---
 
 # rate_limiter (module-level instance)
 
 ## Connections
-- [[auth.py_2]] - `references` [EXTRACTED]
+- [[auth.py_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

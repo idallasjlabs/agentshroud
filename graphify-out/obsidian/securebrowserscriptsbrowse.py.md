@@ -12,8 +12,8 @@ tags:
 # securebrowser/scripts/browse.py
 
 ## Connections
-- [[Enum_3]] - `imports_from` [EXTRACTED]
-- [[RiskLevel_4]] - `contains` [EXTRACTED]
+- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[RiskLevel_3]] - `contains` [EXTRACTED]
 - [[SecureBrowser_3]] - `contains` [EXTRACTED]
 - [[SecurityConfig_3]] - `contains` [EXTRACTED]
 - [[SecurityError_3]] - `contains` [EXTRACTED]

@@ -5,7 +5,7 @@ community: "openai-whisper-api/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/openai-whisper-api/SKILLmd
 ---
 
@@ -15,4 +15,4 @@ tags:
 - [[openai-whisper-apiSKILL]] - `semantically_similar_to` [INFERRED]
 - [[sag]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/openai-whisper-api/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/openai-whisper-api/SKILLmd

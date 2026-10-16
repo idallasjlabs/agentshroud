@@ -1,18 +1,18 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "mcp_oauth_preflight.py"
+community: "sync-cve-registry.py"
 location: "L704"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mcp_oauth_preflightpy
+  - community/sync-cve-registrypy
 ---
 
 # sync_agent_ghsa()
 
 ## Connections
-- [[Path_48]] - `references` [EXTRACTED]
+- [[Path_5]] - `references` [EXTRACTED]
 - [[Run ONE agent's full, independent GHSA pipeline. Returns count registered.]] - `rationale_for` [EXTRACTED]
 - [[_print_summary()]] - `calls` [EXTRACTED]
 - [[append_ghsa_entries()]] - `calls` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[run_ghsa_sync()]] - `calls` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mcp_oauth_preflightpy
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

@@ -5,7 +5,7 @@ community: "Project Documentation"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/Project_Documentation
 ---
 
@@ -15,4 +15,4 @@ tags:
 - [[Requirements Documentation]] - `contains` [EXTRACTED]
 - [[projectREADME]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Project_Documentation
+#graphify/document #graphify/EXTRACTED #community/Project_Documentation

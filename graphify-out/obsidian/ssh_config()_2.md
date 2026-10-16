@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "DataLedger"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/DataLedger
 ---
 
 # ssh_config()
 
 ## Connections
-- [[SSHConfig]] - `calls` [EXTRACTED]
+- [[SSHConfig_2]] - `calls` [EXTRACTED]
 - [[SSHHostConfig]] - `calls` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/DataLedger

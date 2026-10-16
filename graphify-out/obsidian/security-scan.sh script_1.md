@@ -1,22 +1,22 @@
 ---
-source_file: "scripts/security-scan.sh"
+source_file: "docker/scripts/security-scan.sh"
 type: "code"
-community: "Docker Compose (infra diagram)"
+community: "docker/scripts/security-scan.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Compose_infra_diagram
+  - community/docker/scripts/security-scansh
 ---
 
 # security-scan.sh script
 
 ## Connections
-- [[error()]] - `calls` [EXTRACTED]
-- [[info()_1]] - `calls` [EXTRACTED]
-- [[require_tool()]] - `calls` [EXTRACTED]
-- [[security-scan.sh_1]] - `contains` [EXTRACTED]
-- [[success()]] - `calls` [EXTRACTED]
-- [[warn()_4]] - `calls` [EXTRACTED]
+- [[dockerscriptssecurity-scan.sh]] - `contains` [EXTRACTED]
+- [[log()_5]] - `calls` [EXTRACTED]
+- [[run_clamav()]] - `calls` [EXTRACTED]
+- [[run_oscap()]] - `calls` [EXTRACTED]
+- [[run_sbom()]] - `calls` [EXTRACTED]
+- [[run_trivy()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Compose_infra_diagram
+#graphify/code #graphify/EXTRACTED #community/docker/scripts/security-scansh

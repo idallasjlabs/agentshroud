@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
-type: "document"
-community: "What Does OpenClaw Actually Need to Write?"
-location: "L396"
+source_file: "browser-extension/package.json"
+type: "code"
+community: "browser-extension/package.json"
+location: "L6"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/What_Does_OpenClaw_Actually_Need_to_Write
+  - community/browser-extension/packagejson
 ---
 
-# License
+# license
 
 ## Connections
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[browser-extensionpackage.json]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write
+#graphify/code #graphify/EXTRACTED #community/browser-extension/packagejson

@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/canary-deploy.sh"
+source_file: "docker/scripts/security-report.sh"
 type: "code"
-community: "Usage"
-location: "L47"
+community: "FR3: System Integrity"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Usage
+  - community/FR3_System_Integrity
 ---
 
 # log()
 
 ## Connections
-- [[canary-deploy.sh]] - `defines` [EXTRACTED]
-- [[canary-deploy.sh script]] - `calls` [EXTRACTED]
+- [[security-report.sh]] - `defines` [EXTRACTED]
+- [[security-report.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Usage
+#graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity

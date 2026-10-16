@@ -1,20 +1,19 @@
 ---
-source_file: "scripts/generate-job-schedule.py"
+source_file: "scripts/soak_status.py"
 type: "code"
-community: "audio.c"
-location: "L259"
+community: "TestClassify"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/audioc
+  - community/TestClassify
 ---
 
 # main()
 
 ## Connections
-- [[generate-job-schedule.py]] - `contains` [EXTRACTED]
-- [[load_hermes_jobs()]] - `calls` [EXTRACTED]
-- [[load_openclaw_jobs()]] - `calls` [EXTRACTED]
-- [[render_html()]] - `calls` [EXTRACTED]
+- [[check-soak-status.sh]] - `references` [EXTRACTED]
+- [[classify()_2]] - `calls` [EXTRACTED]
+- [[soak_status.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/audioc
+#graphify/code #graphify/EXTRACTED #community/TestClassify

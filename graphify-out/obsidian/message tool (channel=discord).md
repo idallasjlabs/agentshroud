@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/discord/SKILL.md"
 type: "concept"
-community: "Skill: Data Validation (DATA-VAL)"
+community: "Discord (Via `message`)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_Data_Validation_DATA-VAL
+  - community/Discord_Via_message
 ---
 
 # message tool (channel=discord)
 
 ## Connections
 - [[Discord Components v2 preferred over legacy embeds]] - `rationale_for` [EXTRACTED]
-- [[SKILL_204]] - `implements` [EXTRACTED]
+- [[discordSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL
+#graphify/concept #graphify/EXTRACTED #community/Discord_Via_message

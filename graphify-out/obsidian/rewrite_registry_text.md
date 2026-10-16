@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "MCPServerConfig"
+community: "_t"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPServerConfig
+  - community/_t
 ---
 
 # rewrite_registry_text
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_triage_cve_mitigations.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPServerConfig
+#graphify/code #graphify/EXTRACTED #community/_t

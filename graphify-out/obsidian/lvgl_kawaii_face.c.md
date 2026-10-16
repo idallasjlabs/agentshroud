@@ -1,18 +1,17 @@
 ---
 source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c"
 type: "code"
-community: "Development Workflow: Read-Only Filesystem Strat"
+community: "lvgl_kawaii_face.c"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Development_Workflow_Read-Only_Filesystem_Strat
+  - community/lvgl_kawaii_facec
 ---
 
 # lvgl_kawaii_face.c
 
 ## Connections
-- [[String]] - `imports` [EXTRACTED]
 - [[animation_timer_cb()]] - `contains` [EXTRACTED]
 - [[draw_eye()]] - `contains` [EXTRACTED]
 - [[draw_mouth()]] - `contains` [EXTRACTED]
@@ -34,4 +33,4 @@ tags:
 - [[face_unlock()]] - `contains` [EXTRACTED]
 - [[update_emotion_parameters()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Development_Workflow_Read-Only_Filesystem_Strat
+#graphify/code #graphify/EXTRACTED #community/lvgl_kawaii_facec

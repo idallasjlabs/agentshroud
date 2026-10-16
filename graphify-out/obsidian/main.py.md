@@ -1,27 +1,33 @@
 ---
-source_file: "chatbot/main.py"
-type: "code"
-community: "server.py"
+source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
+type: "document"
+community: "main.py.md"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/serverpy
+  - community/mainpymd
 ---
 
-# main.py
+# main.py.md
 
 ## Connections
-- [[ChatRequest]] - `contains` [EXTRACTED]
-- [[ChatResponse]] - `contains` [EXTRACTED]
-- [[FastAPI]] - `imports_from` [EXTRACTED]
-- [[Isaiah Chat Service - Phase 3 MVP Minimal chat service with Isaiah's personality]] - `rationale_for` [EXTRACTED]
-- [[_check_rate_limit()]] - `contains` [EXTRACTED]
-- [[_get_auth_token()]] - `contains` [EXTRACTED]
-- [[chat()]] - `contains` [EXTRACTED]
-- [[health_check()]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `contains` [EXTRACTED]
-- [[load_persona_files()]] - `contains` [EXTRACTED]
-- [[require_auth()]] - `contains` [EXTRACTED]
+- [[Architecture Overview]] - `references` [EXTRACTED]
+- [[Data Flow]] - `references` [EXTRACTED]
+- [[EgressFilter_2]] - `references` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `references` [EXTRACTED]
+- [[Home]] - `references` [EXTRACTED]
+- [[MiddlewareManager]] - `references` [EXTRACTED]
+- [[MultiAgentRouter]] - `references` [EXTRACTED]
+- [[PromptGuard]] - `references` [EXTRACTED]
+- [[SecurityPipeline_2]] - `references` [EXTRACTED]
+- [[Startup Sequence]] - `references` [EXTRACTED]
+- [[auth.py_1]] - `references` [EXTRACTED]
+- [[event_bus.py_1]] - `references` [EXTRACTED]
+- [[fastapi_2]] - `references` [INFERRED]
+- [[ledger.py]] - `references` [EXTRACTED]
+- [[lifespan()]] - `references` [EXTRACTED]
+- [[main.py_1]] - `contains` [EXTRACTED]
+- [[middleware.py_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/serverpy
+#graphify/document #graphify/EXTRACTED #community/mainpymd

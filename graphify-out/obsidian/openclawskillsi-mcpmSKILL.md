@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "Community 885"
+community: "Skill: MCP Tools Usage (MCP-TOOLS)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_885
+  - community/Skill_MCP_Tools_Usage_MCP-TOOLS
 ---
 
 # openclaw/skills/i-mcpm/SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill MCP Tools Usage (MCP-TOOLS)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_885
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Tools_Usage_MCP-TOOLS

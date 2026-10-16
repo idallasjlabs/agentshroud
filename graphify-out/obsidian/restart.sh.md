@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/restart.sh"
 type: "code"
-community: "Decision Framework"
+community: "logs.sh"
 location: "L1"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Decision_Framework
+  - graphify/EXTRACTED
+  - community/logssh
 ---
 
 # restart.sh
@@ -15,4 +15,4 @@ tags:
 - [[logs.sh]] - `semantically_similar_to` [INFERRED]
 - [[restart.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Decision_Framework
+#graphify/code #graphify/EXTRACTED #community/logssh

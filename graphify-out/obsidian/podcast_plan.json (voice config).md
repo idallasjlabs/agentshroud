@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
 type: "concept"
-community: "Per-subfolder graphify-out avoids output clobber"
+community: "podcast_plan.json (voice config)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Per-subfolder_graphify-out_avoids_output_clobber
+  - community/podcast_planjson_voice_config
 ---
 
 # podcast_plan.json (voice config)
 
-#graphify/concept #graphify/EXTRACTED #community/Per-subfolder_graphify-out_avoids_output_clobber
+#graphify/concept #graphify/EXTRACTED #community/podcast_planjson_voice_config

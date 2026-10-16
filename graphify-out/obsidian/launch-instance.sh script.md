@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/launch-instance.sh"
 type: "code"
-community: "Browser — Secure Browser Automation"
+community: "launch-instance.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/launch-instancesh
 ---
 
 # launch-instance.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[launch-instance.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/code #graphify/EXTRACTED #community/launch-instancesh

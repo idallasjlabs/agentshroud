@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "soc.js"
+community: "LLMProxy"
 location: "L712"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/socjs
+  - community/LLMProxy
 ---
 
 # test_cloud_backend_connect_failure_still_returns_502()
@@ -16,4 +16,4 @@ tags:
 - [[LLMProxy]] - `calls` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/socjs
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

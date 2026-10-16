@@ -1,19 +1,19 @@
 ---
 source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "A2APolicyEngine"
+community: "python-jose"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/python-jose
 ---
 
 # python-jose.md
 
 ## Connections
 - [[All Dependencies]] - `references` [EXTRACTED]
-- [[auth.py_2]] - `references` [INFERRED]
+- [[auth.py_1]] - `references` [INFERRED]
 - [[python-jose_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/document #graphify/EXTRACTED #community/python-jose

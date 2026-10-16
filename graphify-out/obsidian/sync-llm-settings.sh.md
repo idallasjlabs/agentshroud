@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-llm-settings.sh"
 type: "code"
-community: "v1.0.0 \"Fortress\" — Ship-Ready Public Release (1"
+community: "sync-llm-settings.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/v100_Fortress__Ship-Ready_Public_Release_1
+  - community/sync-llm-settingssh
 ---
 
 # sync-llm-settings.sh
@@ -20,4 +20,4 @@ tags:
 - [[test-skills-sync.sh]] - `calls` [EXTRACTED]
 - [[validate-skills-manifest.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/v100_Fortress__Ship-Ready_Public_Release_1
+#graphify/code #graphify/EXTRACTED #community/sync-llm-settingssh

@@ -1,18 +1,18 @@
 ---
-source_file: "docker/scripts/security-report-retention.sh"
+source_file: "scripts/canary-deploy.sh"
 type: "code"
-community: "format_upstream_cve_alert()"
-location: "L20"
+community: "canary-deploy.sh"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/format_upstream_cve_alert
+  - community/canary-deploysh
 ---
 
 # log()
 
 ## Connections
-- [[security-report-retention.sh]] - `defines` [EXTRACTED]
-- [[security-report-retention.sh script]] - `calls` [EXTRACTED]
+- [[canary-deploy.sh]] - `defines` [EXTRACTED]
+- [[canary-deploy.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/format_upstream_cve_alert
+#graphify/code #graphify/EXTRACTED #community/canary-deploysh

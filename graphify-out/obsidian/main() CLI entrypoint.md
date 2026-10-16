@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "test_skill_guard.py"
+community: "Browser — Secure Browser Automation (SKILL)"
 location: "async def main"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_skill_guardpy
+  - community/Browser__Secure_Browser_Automation_SKILL
 ---
 
 # main() CLI entrypoint
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SecureBrowser class]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_skill_guardpy
+#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL

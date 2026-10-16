@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "SessionManager"
+community: "HTTPConnectProxy"
 location: "L728"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/HTTPConnectProxy
 ---
 
 # test_clamav_scan_infected_records_stats()
@@ -16,4 +16,4 @@ tags:
 - [[HTTPConnectProxy_1]] - `calls` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

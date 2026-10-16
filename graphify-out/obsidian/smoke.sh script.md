@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/smoke.sh"
 type: "code"
-community: "AgentShroud — Master Feature List (Everything Ev"
+community: "test_openclaw_photo.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud__Master_Feature_List_Everything_Ev
+  - community/test_openclaw_photosh
 ---
 
 # smoke.sh script
@@ -15,4 +15,4 @@ tags:
 - [[run_test()]] - `calls` [EXTRACTED]
 - [[smoke.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud__Master_Feature_List_Everything_Ev
+#graphify/code #graphify/EXTRACTED #community/test_openclaw_photosh

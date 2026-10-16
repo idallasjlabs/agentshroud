@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "hermes/skills/i-icloud/scripts/calendar.js"
+community: "RovoBlast Attack (Atlassian Rovo AI)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-icloud/scripts/calendarjs
+  - community/RovoBlast_Attack_Atlassian_Rovo_AI
 ---
 
 # multi_turn_tracker.py / SubagentMonitor
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Cross-Turn Correlation Capability]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-icloud/scripts/calendarjs
+#graphify/code #graphify/EXTRACTED #community/RovoBlast_Attack_Atlassian_Rovo_AI

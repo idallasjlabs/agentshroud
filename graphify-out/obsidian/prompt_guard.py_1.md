@@ -1,28 +1,28 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
 type: "document"
-community: "AgentShroud Security Assessment — v0.8.0"
+community: "prompt_guard.py.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Assessment__v080
+  - community/prompt_guardpymd
 ---
 
 # prompt_guard.py.md
 
 ## Connections
-- [[Configuration_15]] - `contains` [EXTRACTED]
-- [[Dependencies_19]] - `contains` [EXTRACTED]
-- [[Environment Variables_15]] - `contains` [EXTRACTED]
-- [[Function Details_45]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_48]] - `contains` [EXTRACTED]
-- [[Mode Enforce vs Monitor_10]] - `contains` [EXTRACTED]
+- [[Configuration_18]] - `contains` [EXTRACTED]
+- [[Dependencies_18]] - `contains` [EXTRACTED]
+- [[Environment Variables_12]] - `contains` [EXTRACTED]
+- [[Function Details_19]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_21]] - `contains` [EXTRACTED]
+- [[Mode Enforce vs Monitor_8]] - `contains` [EXTRACTED]
 - [[Pattern Categories and Weights]] - `contains` [EXTRACTED]
-- [[Purpose_166]] - `contains` [EXTRACTED]
-- [[Related_52]] - `contains` [EXTRACTED]
-- [[Responsibilities_50]] - `contains` [EXTRACTED]
-- [[SOUL_2]] - `references` [EXTRACTED]
-- [[Threat Model_21]] - `contains` [EXTRACTED]
+- [[Purpose_136]] - `contains` [EXTRACTED]
+- [[Related_25]] - `contains` [EXTRACTED]
+- [[Responsibilities_23]] - `contains` [EXTRACTED]
+- [[Threat Model_16]] - `contains` [EXTRACTED]
+- [[hermesSOUL]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Assessment__v080
+#graphify/document #graphify/EXTRACTED #community/prompt_guardpymd

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/omlx-keepwarm.sh"
 type: "code"
-community: "test_a2a_policy.py"
+community: "server.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/serverpy
 ---
 
 # omlx-keepwarm.sh
@@ -15,4 +15,4 @@ tags:
 - [[_call_llm_stream()]] - `semantically_similar_to` [INFERRED]
 - [[omlx-keepwarm.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/code #graphify/EXTRACTED #community/serverpy

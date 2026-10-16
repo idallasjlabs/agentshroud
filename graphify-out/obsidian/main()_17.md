@@ -1,19 +1,19 @@
 ---
-source_file: "scripts/discover_upstream_versions.py"
+source_file: "src/interfaces/text_control_center.py"
 type: "code"
-community: "_seed_cron"
-location: "L199"
+community: "ControlCenter"
+location: "L427"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_seed_cron
+  - community/ControlCenter
 ---
 
 # main()
 
 ## Connections
-- [[discover()]] - `calls` [EXTRACTED]
-- [[discover_upstream_versions.py]] - `contains` [EXTRACTED]
-- [[phase_discover()]] - `references` [EXTRACTED]
+- [[dot-run()_2]] - `calls` [EXTRACTED]
+- [[ControlCenter]] - `calls` [EXTRACTED]
+- [[text_control_center.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_seed_cron
+#graphify/code #graphify/EXTRACTED #community/ControlCenter

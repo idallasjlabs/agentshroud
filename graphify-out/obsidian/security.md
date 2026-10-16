@@ -1,18 +1,17 @@
 ---
-source_file: "SECURITY.md"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/api.py.md"
 type: "document"
-community: "AgentShroud Phase Review — 2026-02-23"
-location: "L1"
+community: "api.py"
+location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_Review__2026-02-23
+  - community/apipy
 ---
 
-# SECURITY.md
+# Security
 
 ## Connections
-- [[AgentShroud™ Security Policy]] - `contains` [EXTRACTED]
-- [[test_docs_accuracy.py]] - `references` [EXTRACTED]
+- [[api.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23
+#graphify/document #graphify/EXTRACTED #community/apipy

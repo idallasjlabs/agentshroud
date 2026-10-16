@@ -1,19 +1,20 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "AgentShroud v0.7.0 Enforcement Audit Results"
-location: "L71"
+community: "triage-cve-mitigations.py"
+location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Enforcement_Audit_Results
+  - community/triage-cve-mitigationspy
 ---
 
 # parse_version()
 
 ## Connections
-- [[Parse a dotted numeric version to a comparable tuple.      A trailing ``-N`` on]] - `rationale_for` [EXTRACTED]
-- [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
-- [[plan_remediation()]] - `calls` [EXTRACTED]
+- [[Parse a dotted numeric version (e.g. ``2026.4.11`` or ``2026.7.1-2``) to a…]] - `rationale_for` [EXTRACTED]
+- [[TestVersion]] - `calls` [EXTRACTED]
+- [[is_source_fixed()]] - `calls` [EXTRACTED]
+- [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results
+#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy

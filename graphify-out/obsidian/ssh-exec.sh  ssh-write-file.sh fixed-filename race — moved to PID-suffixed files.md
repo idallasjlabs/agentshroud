@@ -1,17 +1,16 @@
 ---
 source_file: "CHANGELOG.md"
 type: "rationale"
-community: "MCPToolResult"
+community: "OpenClaw cron: AgentShroud Daily Check-in (disabled, calls agentshroud-ssh-exec.sh)"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/MCPToolResult
+  - community/OpenClaw_cron_AgentShroud_Daily_Check-in_disabled_calls_agentshroud-ssh-execsh
 ---
 
 # ssh-exec.sh / ssh-write-file.sh fixed-filename race — moved to PID-suffixed files
 
 ## Connections
-- [[CI job gitleaks (full-history secret scan)]] - `conceptually_related_to` [AMBIGUOUS]
 - [[OpenClaw cron AgentShroud Daily Check-in (disabled, calls agentshroud-ssh-exec.sh)]] - `references` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/MCPToolResult
+#graphify/rationale #graphify/INFERRED #community/OpenClaw_cron_AgentShroud_Daily_Check-in_disabled_calls_agentshroud-ssh-execsh

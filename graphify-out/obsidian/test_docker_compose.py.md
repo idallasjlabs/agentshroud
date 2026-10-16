@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docker_compose.py"
 type: "code"
-community: "PodmanEngine"
+community: "TestProductionCompose"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PodmanEngine
+  - community/TestProductionCompose
 ---
 
 # test_docker_compose.py
@@ -19,4 +19,4 @@ tags:
 - [[_load_compose()]] - `contains` [EXTRACTED]
 - [[_load_compose_raw()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PodmanEngine
+#graphify/code #graphify/EXTRACTED #community/TestProductionCompose

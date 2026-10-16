@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_dns_filter.py"
+source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "URLAnalyzer"
-location: "L36"
+community: "AlertDispatcher"
+location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URLAnalyzer
+  - community/AlertDispatcher
 ---
 
 # monitor_config()
 
 ## Connections
-- [[DNSFilterConfig]] - `calls` [EXTRACTED]
-- [[test_dns_filter.py]] - `contains` [EXTRACTED]
+- [[EgressMonitorConfig]] - `calls` [EXTRACTED]
+- [[test_egress_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URLAnalyzer
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

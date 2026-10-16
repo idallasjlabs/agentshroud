@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "soc/router.py"
-location: "L1650"
+community: "create_auth_dependency"
+location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/create_auth_dependency
 ---
 
 # list_pending_approvals()
 
 ## Connections
-- [[SCLCaller_1]] - `references` [EXTRACTED]
-- [[_app_state()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[AuthRequired_3]] - `references` [EXTRACTED]
+- [[List all pending approval requests      Authentication required.]] - `rationale_for` [EXTRACTED]
+- [[Request_7]] - `references` [EXTRACTED]
+- [[approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

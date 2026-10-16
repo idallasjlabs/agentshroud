@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/security-entrypoint.sh"
 type: "code"
-community: "Discovery Strategy"
+community: "security-entrypoint.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Discovery_Strategy
+  - community/security-entrypointsh
 ---
 
 # security-entrypoint.sh
@@ -15,9 +15,9 @@ tags:
 - [[120s freshclam timeout rationale (bounded failure over outage)]] - `references` [EXTRACTED]
 - [[Rule Container Shell Spawned]] - `references` [EXTRACTED]
 - [[alert_critical()]] - `references` [EXTRACTED]
+- [[dockerscriptssecurity-scan.sh]] - `semantically_similar_to` [INFERRED]
 - [[gateway-start.sh]] - `calls` [EXTRACTED]
-- [[log()_1]] - `defines` [EXTRACTED]
+- [[log()_3]] - `defines` [EXTRACTED]
 - [[security-entrypoint.sh script]] - `contains` [EXTRACTED]
-- [[security-scan.sh_2]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Discovery_Strategy
+#graphify/code #graphify/EXTRACTED #community/security-entrypointsh

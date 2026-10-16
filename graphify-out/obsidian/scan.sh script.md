@@ -1,17 +1,17 @@
 ---
 source_file: "docker/scripts/scan.sh"
 type: "code"
-community: "format_upstream_cve_alert()"
+community: "FR3: System Integrity"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/format_upstream_cve_alert
+  - community/FR3_System_Integrity
 ---
 
 # scan.sh script
 
 ## Connections
-- [[scan.sh]] - `contains` [EXTRACTED]
+- [[scan.sh_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/format_upstream_cve_alert
+#graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity

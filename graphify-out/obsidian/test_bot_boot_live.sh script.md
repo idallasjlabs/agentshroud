@@ -1,18 +1,18 @@
 ---
 source_file: "tests/startup_smoke/test_bot_boot_live.sh"
 type: "code"
-community: "Startup Flow Diagram"
+community: "test_bot_boot_live.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Startup_Flow_Diagram
+  - community/test_bot_boot_livesh
 ---
 
 # test_bot_boot_live.sh script
 
 ## Connections
-- [[check()_5]] - `calls` [EXTRACTED]
+- [[check()_4]] - `calls` [EXTRACTED]
 - [[test_bot_boot_live.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Startup_Flow_Diagram
+#graphify/code #graphify/EXTRACTED #community/test_bot_boot_livesh

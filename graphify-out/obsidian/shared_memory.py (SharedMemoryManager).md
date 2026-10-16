@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: "test_security_audit.py"
+community: "RBACConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_auditpy
+  - community/RBACConfig
 ---
 
 # shared_memory.py (SharedMemoryManager)
@@ -13,7 +13,6 @@ tags:
 ## Connections
 - [[test_group_isolation.py]] - `references` [EXTRACTED]
 - [[test_group_workspace_manager.py]] - `references` [EXTRACTED]
-- [[test_security_regressions_v1_2.py]] - `references` [EXTRACTED]
 - [[test_shared_memory_write_acl.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_auditpy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

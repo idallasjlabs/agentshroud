@@ -1,26 +1,29 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
-type: "document"
-community: "test_adversarial_injection.py"
-location: "L10"
+source_file: "gateway/ingest_api/sanitizer.py"
+type: "code"
+community: "ToolResultSanitizer"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/test_adversarial_injectionpy
+  - community/ToolResultSanitizer
 ---
 
 # sanitizer.py
 
 ## Connections
-- [[Config Keys Read_6]] - `contains` [EXTRACTED]
-- [[Environment Variables Used_6]] - `contains` [EXTRACTED]
-- [[Function Details_4]] - `contains` [EXTRACTED]
-- [[Imports From  Exports To_6]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_6]] - `contains` [EXTRACTED]
-- [[Known Issues  Notes_7]] - `contains` [EXTRACTED]
-- [[Purpose_117]] - `contains` [EXTRACTED]
-- [[Related_8]] - `contains` [EXTRACTED]
-- [[Responsibilities_6]] - `contains` [EXTRACTED]
-- [[sanitizer.py_1]] - `contains` [EXTRACTED]
+- [[CREDENTIAL-SECURITY-POLICY]] - `references` [EXTRACTED]
+- [[FR4 Data Confidentiality]] - `references` [EXTRACTED]
+- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PIISanitizer_2]] - `contains` [EXTRACTED]
+- [[RedactionDetail_1]] - `imports` [EXTRACTED]
+- [[RedactionResult_3]] - `imports` [EXTRACTED]
+- [[SECURITY-IMPLEMENTATION-VERIFICATION]] - `references` [EXTRACTED]
+- [[gatewayREADME]] - `references` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[state.py]] - `imports_from` [EXTRACTED]
+- [[verify.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_adversarial_injectionpy
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

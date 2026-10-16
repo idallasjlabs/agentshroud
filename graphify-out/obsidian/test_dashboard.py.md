@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "TestCollaboratorPromptClassifiers"
+community: "test_dashboard.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCollaboratorPromptClassifiers
+  - community/test_dashboardpy
 ---
 
 # test_dashboard.py
@@ -18,7 +18,7 @@ tags:
 - [[_create_ws_token()]] - `imports` [EXTRACTED]
 - [[_load_contributor_logs()]] - `imports` [EXTRACTED]
 - [[_parse_collaborator_log_dirs()]] - `imports` [EXTRACTED]
-- [[client()_4]] - `contains` [EXTRACTED]
+- [[client()_9]] - `contains` [EXTRACTED]
 - [[dashboard.py]] - `calls` [EXTRACTED]
 - [[make_event()]] - `imports` [EXTRACTED]
 - [[sync_client()]] - `contains` [EXTRACTED]
@@ -44,4 +44,4 @@ tags:
 - [[test_ws_egress_receives_privacy_event()]] - `contains` [EXTRACTED]
 - [[test_ws_egress_receives_scanner_event()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

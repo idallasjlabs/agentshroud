@@ -12,7 +12,7 @@ tags:
 # openclaw/skills/i-icloud/scripts/calendar.js
 
 ## Connections
-- [[CONFIG_2]] - `contains` [EXTRACTED]
+- [[CONFIG_4]] - `contains` [EXTRACTED]
 - [[args_2]] - `contains` [EXTRACTED]
 - [[createEvent()_2]] - `contains` [EXTRACTED]
 - [[getCredentials()_2]] - `contains` [EXTRACTED]

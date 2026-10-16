@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "test_hermes_model_resolver.py"
+community: "test_voice_latency_guard.py"
 location: "L1158"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy
+  - community/test_voice_latency_guardpy
 ---
 
 # test_call_agent_stream_non_streaming_agent_returns_telegram_notice()
@@ -16,4 +16,4 @@ tags:
 - [[_call_agent_stream()]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy
+#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy

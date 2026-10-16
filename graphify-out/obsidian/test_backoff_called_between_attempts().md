@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_alert_dispatcher_retry.py"
 type: "code"
-community: "openclaw/skills/i-icloud/scripts/calendar.js"
+community: "test_alert_dispatcher_retry.py"
 location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-icloud/scripts/calendarjs
+  - community/test_alert_dispatcher_retrypy
 ---
 
 # test_backoff_called_between_attempts()
@@ -15,4 +15,4 @@ tags:
 - [[_alert()]] - `calls` [EXTRACTED]
 - [[test_alert_dispatcher_retry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-icloud/scripts/calendarjs
+#graphify/code #graphify/EXTRACTED #community/test_alert_dispatcher_retrypy

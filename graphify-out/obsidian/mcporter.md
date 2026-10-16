@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/mcporter/SKILL.md"
 type: "document"
-community: "mcp_config.py"
+community: "oracle — best use"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_configpy
+  - community/oracle__best_use
 ---
 
 # mcporter
 
 ## Connections
-- [[SKILL_214]] - `contains` [EXTRACTED]
+- [[mcporterSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_configpy
+#graphify/document #graphify/EXTRACTED #community/oracle__best_use

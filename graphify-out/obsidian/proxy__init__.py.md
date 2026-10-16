@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/__init__.py"
 type: "code"
-community: "MCPServerConfig"
+community: "MCPPermissionManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPServerConfig
+  - community/MCPPermissionManager
 ---
 
 # proxy/__init__.py
@@ -14,21 +14,20 @@ tags:
 ## Connections
 - [[FindingType]] - `imports` [EXTRACTED]
 - [[InspectionFinding]] - `imports` [EXTRACTED]
-- [[InspectionResult]] - `imports` [EXTRACTED]
-- [[LLMProxy]] - `conceptually_related_to` [INFERRED]
+- [[InspectionResult_1]] - `imports` [EXTRACTED]
 - [[MCPAuditEntry]] - `imports` [EXTRACTED]
-- [[MCPAuditTrail_1]] - `imports` [EXTRACTED]
-- [[MCPInspector_1]] - `imports` [EXTRACTED]
-- [[MCPPermissionManager]] - `imports` [EXTRACTED]
+- [[MCPAuditTrail]] - `imports` [EXTRACTED]
+- [[MCPInspector]] - `imports` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `imports` [EXTRACTED]
 - [[MCPProxy_1]] - `imports` [EXTRACTED]
-- [[MCPProxyConfig_2]] - `imports` [EXTRACTED]
+- [[MCPProxyConfig_3]] - `imports` [EXTRACTED]
 - [[MCPServerConfig_2]] - `imports` [EXTRACTED]
-- [[MCPToolCall_1]] - `imports` [EXTRACTED]
+- [[MCPToolCall]] - `imports` [EXTRACTED]
 - [[MCPToolConfig]] - `imports` [EXTRACTED]
 - [[MCPToolResult]] - `imports` [EXTRACTED]
 - [[MCPTransport]] - `imports` [EXTRACTED]
 - [[PermissionCheck]] - `imports` [EXTRACTED]
-- [[PermissionLevel_1]] - `imports` [EXTRACTED]
+- [[PermissionLevel]] - `imports` [EXTRACTED]
 - [[ProxyResult]] - `imports` [EXTRACTED]
 - [[ThreatLevel_2]] - `imports` [EXTRACTED]
 - [[mcp_audit.py]] - `re_exports` [EXTRACTED]
@@ -37,4 +36,4 @@ tags:
 - [[mcp_permissions.py]] - `re_exports` [EXTRACTED]
 - [[mcp_proxy.py]] - `re_exports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPServerConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

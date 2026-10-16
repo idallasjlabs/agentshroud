@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
 type: "concept"
-community: "LLM writes its own Whisper domain-hint prompt"
+community: "script.md (Vulcan-approved dialogue input)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/LLM_writes_its_own_Whisper_domain-hint_prompt
+  - community/scriptmd_Vulcan-approved_dialogue_input
 ---
 
 # script.md (Vulcan-approved dialogue input)
 
-#graphify/concept #graphify/EXTRACTED #community/LLM_writes_its_own_Whisper_domain-hint_prompt
+#graphify/concept #graphify/EXTRACTED #community/scriptmd_Vulcan-approved_dialogue_input

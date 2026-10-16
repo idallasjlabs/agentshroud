@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "AgentRegistry"
+community: "test_agent_cve_registry.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/test_agent_cve_registrypy
 ---
 
 # test_agent_cve_registry.py
@@ -81,4 +81,4 @@ tags:
 - [[test_untriageable_agents_are_refused_not_guessed()]] - `contains` [EXTRACTED]
 - [[test_wrapped_agent_constant_unchanged()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy

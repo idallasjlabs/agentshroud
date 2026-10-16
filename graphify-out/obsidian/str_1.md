@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "A2AGovernanceProxy"
+community: "triage-cve-mitigations.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/triage-cve-mitigationspy
 ---
 
 # str
 
 ## Connections
-- [[A2ADecision]] - `inherits` [EXTRACTED]
-- [[A2AMessageType]] - `inherits` [EXTRACTED]
+- [[Coverage]] - `inherits` [EXTRACTED]
+- [[VulnClass]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy

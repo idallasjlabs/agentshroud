@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "MCPToolCall"
+community: "ForwardRequest"
 location: "L194"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/ForwardRequest
 ---
 
 # openclaw init patch script must quarantine malformed JSON instead of exiting.
 
 ## Connections
-- [[.test_openclaw_patch_script_recovers_corrupt_json()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_openclaw_patch_script_recovers_corrupt_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPToolCall
+#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest

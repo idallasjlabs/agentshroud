@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "AgentShroud: Enterprise Governance for Autonomou"
+community: "ForwardRequest"
 location: "L31"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Enterprise_Governance_for_Autonomou
+  - community/ForwardRequest
 ---
 
 # paranoid.env should enable ALL security features.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestParanoidConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomou
+#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest

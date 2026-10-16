@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "test_e2e_proxy.py"
+community: "MCPPolicyEngine"
 location: "L204"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/MCPPolicyEngine
 ---
 
 # test_default_allow_opt_in_permits_non_allowlisted_safe_tool()
@@ -17,4 +17,4 @@ tags:
 - [[When an operator explicitly opts into default-allow, a non-allowlisted     serve]] - `rationale_for` [EXTRACTED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

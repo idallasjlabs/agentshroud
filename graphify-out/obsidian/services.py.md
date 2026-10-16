@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Hermes Cron Jobs Reference & Recreation Guide"
+community: "ServiceManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+  - community/ServiceManager
 ---
 
 # services.py
 
 ## Connections
-- [[HealthStatus]] - `imports` [EXTRACTED]
-- [[ServiceDescriptor]] - `imports` [EXTRACTED]
+- [[HealthStatus_1]] - `imports` [EXTRACTED]
+- [[ServiceDescriptor_1]] - `imports` [EXTRACTED]
 - [[ServiceManager]] - `references` [EXTRACTED]
-- [[ServiceStatus]] - `imports` [EXTRACTED]
+- [[ServiceStatus_1]] - `imports` [EXTRACTED]
 - [[_INTERNAL_SERVICE_ATTRS (internal gateway service table)]] - `references` [EXTRACTED]
 - [[_check_clamd()]] - `references` [EXTRACTED]
 - [[_check_fluent_bit()]] - `references` [EXTRACTED]
@@ -27,6 +27,6 @@ tags:
 - [[_known_services()]] - `references` [EXTRACTED]
 - [[agent_cve_registry.py]] - `conceptually_related_to` [INFERRED]
 - [[load_config()]] - `imports` [EXTRACTED]
-- [[models.py_1]] - `imports_from` [EXTRACTED]
+- [[socmodels.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

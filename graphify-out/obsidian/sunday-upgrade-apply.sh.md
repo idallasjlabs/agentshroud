@@ -1,22 +1,27 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "DraftEntry"
+community: "sunday-upgrade-apply.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DraftEntry
+  - community/sunday-upgrade-applysh
 ---
 
 # sunday-upgrade-apply.sh
 
 ## Connections
-- [[PATH_5]] - `defines` [EXTRACTED]
-- [[Phantom-Tag False-Pass Bug]] - `references` [EXTRACTED]
+- [[Dev-prod handoff contract via UsersSharedagentshroud-sundaydev-result-YYYY-MM-DD.json]] - `references` [EXTRACTED]
+- [[Exclusive mkdir run lock + HEAD-pinned build guard (PR 475)]] - `rationale_for` [EXTRACTED]
+- [[Exit 50 build failed and rollback failed (stack may be degraded)]] - `references` [EXTRACTED]
+- [[PATH_1]] - `defines` [EXTRACTED]
+- [[Refuse to build with uncommitted changes in build context]] - `rationale_for` [EXTRACTED]
 - [[Sunday Upgrade Report 2026-09-06 (prod, disk-exhaustion incident)]] - `references` [EXTRACTED]
 - [[Sunday Upgrade Report 2026-09-14 (dev account)]] - `references` [EXTRACTED]
 - [[TestKnownServices]] - `shares_data_with` [INFERRED]
+- [[The run is judged on state change, not steps completed]] - `references` [EXTRACTED]
+- [[Upgrade Report 2026-09-20 (dev, ABORTED)]] - `references` [EXTRACTED]
 - [[_assert_head_unchanged()]] - `defines` [EXTRACTED]
 - [[_attempt_rollback()]] - `defines` [EXTRACTED]
 - [[_build_context_paths()]] - `defines` [EXTRACTED]
@@ -41,30 +46,36 @@ tags:
 - [[_start_lock_heartbeat()]] - `defines` [EXTRACTED]
 - [[_take_apply_lock]] - `calls` [EXTRACTED]
 - [[_take_apply_lock()]] - `defines` [EXTRACTED]
-- [[_ts()_1]] - `defines` [EXTRACTED]
+- [[_ts()]] - `defines` [EXTRACTED]
 - [[_wait_for_docker()]] - `defines` [EXTRACTED]
 - [[apply_remediation()]] - `references` [EXTRACTED]
 - [[asb Bot Helper Script]] - `conceptually_related_to` [EXTRACTED]
 - [[auto_remediate_cves.py]] - `conceptually_related_to` [EXTRACTED]
 - [[check_noop_gate()]] - `defines` [EXTRACTED]
 - [[check_openclaw()]] - `conceptually_related_to` [INFERRED]
+- [[colima-health-check.sh]] - `shares_data_with` [EXTRACTED]
 - [[detect_container_runtime()]] - `calls` [EXTRACTED]
-- [[die()_2]] - `defines` [EXTRACTED]
+- [[dev-result-date.json dev-prod handoff contract]] - `shares_data_with` [EXTRACTED]
+- [[die()]] - `defines` [EXTRACTED]
+- [[dockerdocker-compose.yml]] - `references` [EXTRACTED]
 - [[err()]] - `defines` [EXTRACTED]
-- [[log()_9]] - `defines` [EXTRACTED]
+- [[log()]] - `defines` [EXTRACTED]
 - [[phase_apply()]] - `defines` [EXTRACTED]
 - [[phase_baseline()]] - `defines` [EXTRACTED]
 - [[phase_discover()]] - `defines` [EXTRACTED]
 - [[phase_preflight()]] - `defines` [EXTRACTED]
 - [[phase_scan()]] - `defines` [EXTRACTED]
 - [[phase_verify()]] - `defines` [EXTRACTED]
-- [[sunday-scan.sh CVE Scan-Gate Library]] - `calls` [EXTRACTED]
+- [[sunday-scan.sh (Trivy scan gate library)]] - `imports_from` [INFERRED]
+- [[sunday-upgrade-apply.sh exit-code contract (0102025304050127)]] - `rationale_for` [EXTRACTED]
+- [[sunday-upgrade-apply.sh no-op gate fixes (Hermes feeds UPGRADE_AVAILABLE, unknown != current, merge-base 'before' pins)]] - `references` [EXTRACTED]
 - [[sunday-upgrade-apply.sh script]] - `contains` [EXTRACTED]
-- [[sunday-upgrade.sh]] - `references` [INFERRED]
+- [[sunday-upgrade.sh]] - `references` [EXTRACTED]
 - [[sunday-upgrade.sh (remote-control launcher)]] - `conceptually_related_to` [INFERRED]
+- [[sunday_run_scan_gate()]] - `calls` [EXTRACTED]
 - [[test-sunday-upgrade-scan.sh]] - `calls` [EXTRACTED]
-- [[versions.env]] - `references` [EXTRACTED]
-- [[warn()_5]] - `defines` [EXTRACTED]
+- [[versions.env]] - `imports_from` [INFERRED]
+- [[warn()]] - `defines` [EXTRACTED]
 - [[write_handoff()]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DraftEntry
+#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/run-tests-batched.sh"
 type: "code"
-community: ".agents/skills/i-value-stream-mapping/SKILL.md"
+community: "run-tests-batched.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-value-stream-mapping/SKILLmd
+  - community/run-tests-batchedsh
 ---
 
 # run-tests-batched.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[run-tests-batched.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-value-stream-mapping/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/run-tests-batchedsh

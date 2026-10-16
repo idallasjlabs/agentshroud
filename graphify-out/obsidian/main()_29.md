@@ -1,25 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/scripts/browse.py"
+source_file: "docker/bots/hermes/docker_proxy_relay.py"
 type: "code"
-community: "TestConfigValidation"
-location: "L431"
+community: "dashboard_bridge.py"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/dashboard_bridgepy
 ---
 
 # main()
 
 ## Connections
-- [[._take_screenshot()_3]] - `calls` [EXTRACTED]
-- [[.click()_3]] - `calls` [EXTRACTED]
-- [[.close()_20]] - `calls` [EXTRACTED]
-- [[.extract()_3]] - `calls` [EXTRACTED]
-- [[.fill_field()_3]] - `calls` [EXTRACTED]
-- [[.navigate()_3]] - `calls` [EXTRACTED]
-- [[CLI interface for SecureBrowser_3]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser_3]] - `calls` [EXTRACTED]
-- [[browse.py_3]] - `contains` [EXTRACTED]
+- [[docker_proxy_relay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/code #graphify/EXTRACTED #community/dashboard_bridgepy

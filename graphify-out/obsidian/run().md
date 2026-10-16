@@ -1,23 +1,19 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
+source_file: "scripts/canary-deploy.sh"
 type: "code"
-community: "test_config_hot_reload.py"
-location: "L356"
+community: "canary-deploy.sh"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_config_hot_reloadpy
+  - community/canary-deploysh
 ---
 
 # run()
 
 ## Connections
-- [[Parse argv, resolve credentials, dispatch the subcommand. Returns exit code.]] - `rationale_for` [EXTRACTED]
-- [[_build_arg_parser()]] - `calls` [EXTRACTED]
-- [[add_comment()]] - `calls` [EXTRACTED]
-- [[create_issue()]] - `calls` [EXTRACTED]
-- [[fetch_credentials()]] - `calls` [EXTRACTED]
-- [[jira_dev_ticket.py]] - `contains` [EXTRACTED]
-- [[transition_issue()]] - `calls` [EXTRACTED]
+- [[canary-deploy.sh]] - `defines` [EXTRACTED]
+- [[canary-deploy.sh script]] - `calls` [EXTRACTED]
+- [[deploy_ref()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_config_hot_reloadpy
+#graphify/code #graphify/EXTRACTED #community/canary-deploysh

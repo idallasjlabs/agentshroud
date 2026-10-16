@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_a2a_trust_scoring.py"
 type: "code"
-community: "AgentTarget"
+community: "A2APolicyEngine"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/A2APolicyEngine
 ---
 
 # test_a2a_ssrf_callback_penalty_matches_malicious_intent_tier()
 
 ## Connections
-- [[ProgressiveTrustConfig]] - `calls` [EXTRACTED]
+- [[ProgressiveTrustConfig_2]] - `calls` [EXTRACTED]
 - [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

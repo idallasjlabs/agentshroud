@@ -1,17 +1,20 @@
 ---
-source_file: "browser-extension/README.md"
-type: "document"
-community: "SECURITY_VALUE_PROPOSITION.md"
-location: "L42"
+source_file: ".mcp.json"
+type: "code"
+community: ".mcp.json"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/SECURITY_VALUE_PROPOSITIONmd
+  - community/mcpjson
 ---
 
-# Safari
+# safari
 
 ## Connections
-- [[Structure]] - `contains` [EXTRACTED]
+- [[dot-mcp.json]] - `contains` [EXTRACTED]
+- [[opthomebrewbinnpx]] - `references` [EXTRACTED]
+- [[PATH_27]] - `requires_env` [EXTRACTED]
+- [[safari-mcp]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SECURITY_VALUE_PROPOSITIONmd
+#graphify/code #graphify/EXTRACTED #community/mcpjson

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "test_approval_queue.py"
+community: "test_redteam_probes.py"
 location: "L179"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_approval_queuepy
+  - community/test_redteam_probespy
 ---
 
 # test_email_redacted_outbound()
@@ -15,4 +15,4 @@ tags:
 - [[Probe 1.9d PII sanitizer must redact email addresses on outbound.]] - `rationale_for` [EXTRACTED]
 - [[test_redteam_probes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_approval_queuepy
+#graphify/code #graphify/EXTRACTED #community/test_redteam_probespy

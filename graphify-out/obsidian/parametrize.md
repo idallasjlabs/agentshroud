@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_hermes_model_resolver.py"
+community: "_t"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy
+  - community/_t
 ---
 
 # parametrize
 
 ## Connections
-- [[test_provider_for_model()]] - `references` [EXTRACTED]
-- [[test_strip_provider_prefix()]] - `references` [EXTRACTED]
+- [[dot-test_representative_titles()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy
+#graphify/code #graphify/EXTRACTED #community/_t

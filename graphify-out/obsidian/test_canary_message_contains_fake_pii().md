@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "PIIConfig"
 location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/PIIConfig
 ---
 
 # test_canary_message_contains_fake_pii()
@@ -15,4 +15,4 @@ tags:
 - [[Verify canary message contains the expected fake PII.]] - `rationale_for` [EXTRACTED]
 - [[test_canary.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

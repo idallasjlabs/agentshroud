@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/switch_model.sh"
 type: "code"
-community: "test_multi_host_test.py"
+community: "switch_model.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_multi_host_testpy
+  - community/switch_modelsh
 ---
 
 # switch_model.sh
@@ -17,8 +17,8 @@ tags:
 - [[preflight_local()]] - `defines` [EXTRACTED]
 - [[switch_model.sh script]] - `contains` [EXTRACTED]
 - [[upsert_env_value()]] - `defines` [EXTRACTED]
-- [[usage()_4]] - `defines` [EXTRACTED]
+- [[usage()_8]] - `defines` [EXTRACTED]
 - [[verify_both_bots_healthy()]] - `defines` [EXTRACTED]
 - [[wait_for_local_model()]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_multi_host_testpy
+#graphify/code #graphify/EXTRACTED #community/switch_modelsh

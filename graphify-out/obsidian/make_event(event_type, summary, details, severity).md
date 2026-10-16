@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
 type: "document"
-community: "OpenClaw Host Hardening"
+community: "event_bus.py"
 location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Host_Hardening
+  - community/event_buspy
 ---
 
 # make_event(event_type, summary, details, severity)
 
 ## Connections
-- [[Function Details_1]] - `contains` [EXTRACTED]
+- [[Function Details_47]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Host_Hardening
+#graphify/document #graphify/EXTRACTED #community/event_buspy

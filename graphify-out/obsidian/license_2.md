@@ -1,17 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/README.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "_is_op_reference_allowed()"
-location: "L130"
+community: "SecureBrowser Skill"
+location: "L396"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_is_op_reference_allowed
+  - community/SecureBrowser_Skill
 ---
 
 # License
 
 ## Connections
-- [[LVGL KAWAII FACE]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_is_op_reference_allowed
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

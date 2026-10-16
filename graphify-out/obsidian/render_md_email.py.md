@@ -1,21 +1,22 @@
 ---
 source_file: "docker/bots/hermes/render_md_email.py"
 type: "code"
-community: "AgentShroud v0.8.0 — Blue Team Security Assessme"
+community: "competitive-report-*.md dated reports"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_v080__Blue_Team_Security_Assessme
+  - community/competitive-report-md_dated_reports
 ---
 
 # render_md_email.py
 
 ## Connections
+- [[Hermes Competitive Intelligence Email (AMPM)_1]] - `references` [EXTRACTED]
 - [[_esc()]] - `contains` [EXTRACTED]
 - [[_inline()]] - `contains` [EXTRACTED]
 - [[_render_table()]] - `contains` [EXTRACTED]
-- [[main()_4]] - `contains` [EXTRACTED]
+- [[main()_3]] - `contains` [EXTRACTED]
 - [[render()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_v080__Blue_Team_Security_Assessme
+#graphify/code #graphify/EXTRACTED #community/competitive-report-md_dated_reports

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "MCPToolCall"
+community: "ForwardRequest"
 location: "L204"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/ForwardRequest
 ---
 
 # openclaw init patch script must remove unsupported gateway.model key.
 
 ## Connections
-- [[.test_openclaw_patch_script_removes_legacy_gateway_model_key()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_openclaw_patch_script_removes_legacy_gateway_model_key()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPToolCall
+#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest

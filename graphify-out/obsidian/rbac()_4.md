@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_shared_memory.py"
+source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "The 8D Investigation Process"
-location: "L65"
+community: "PrivacyPolicyEnforcer"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process
+  - community/PrivacyPolicyEnforcer
 ---
 
 # rbac()
 
 ## Connections
-- [[RBACConfig_1]] - `calls` [EXTRACTED]
-- [[TeamsConfig]] - `calls` [EXTRACTED]
-- [[test_shared_memory.py]] - `contains` [EXTRACTED]
+- [[_make_rbac()]] - `calls` [EXTRACTED]
+- [[test_privacy_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/The_8D_Investigation_Process
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_audit_chain.py"
+source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "EgressPolicy"
-location: "L22"
+community: "CrossBotTrustLedger"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressPolicy
+  - community/CrossBotTrustLedger
 ---
 
 # ledger()
 
 ## Connections
-- [[DataLedger]] - `calls` [EXTRACTED]
-- [[LedgerConfig]] - `calls` [EXTRACTED]
-- [[test_audit_chain.py]] - `contains` [EXTRACTED]
+- [[CrossBotTrustLedger]] - `references` [EXTRACTED]
+- [[TrustDecayPolicy_1]] - `references` [EXTRACTED]
+- [[test_cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressPolicy
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

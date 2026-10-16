@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-athena/SKILL.md"
 type: "document"
-community: "AgentShroud Consolidated Issues Report"
+community: "Athena — Knowledge Distiller"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Consolidated_Issues_Report
+  - community/Athena__Knowledge_Distiller
 ---
 
 # show_notes.md
 
 ## Connections
-- [[Output Format]] - `contains` [EXTRACTED]
+- [[Output Format_27]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Consolidated_Issues_Report
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

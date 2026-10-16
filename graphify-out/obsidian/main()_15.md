@@ -1,18 +1,18 @@
 ---
 source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "AgentShroud v0.7.0 Enforcement Audit Results"
+community: "plan_remediation"
 location: "L300"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Enforcement_Audit_Results
+  - community/plan_remediation
 ---
 
 # main()
 
 ## Connections
-- [[.to_dict()_17]] - `calls` [EXTRACTED]
+- [[dot-to_dict()_7]] - `calls` [EXTRACTED]
 - [[_print_plan()]] - `calls` [EXTRACTED]
 - [[apply_remediation()]] - `calls` [EXTRACTED]
 - [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[plan_remediation()]] - `calls` [EXTRACTED]
 - [[read_pin()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

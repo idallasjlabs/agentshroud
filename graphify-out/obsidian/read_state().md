@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/colima-health-check.sh"
 type: "code"
-community: "Add information filtering to prevent agent self-"
-location: "L100"
+community: "colima-health-check.sh"
+location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Add_information_filtering_to_prevent_agent_self-
+  - community/colima-health-checksh
 ---
 
 # read_state()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[colima-health-check.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Add_information_filtering_to_prevent_agent_self-
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh

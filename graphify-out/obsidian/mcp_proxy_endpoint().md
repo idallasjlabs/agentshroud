@@ -1,29 +1,24 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "SSHProxy"
+community: "gateway/ingest_api/main.py (/hermes-dashboard/ HTTP + WebSocket reverse proxy)"
 location: "L704"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
 ---
 
 # mcp_proxy_endpoint()
 
 ## Connections
-- [[ApprovalRequest_3]] - `calls` [EXTRACTED]
-- [[AuthRequired]] - `references` [EXTRACTED]
-- [[AuthRequired_5]] - `references` [EXTRACTED]
-- [[FastAPI app instance]] - `shares_data_with` [EXTRACTED]
-- [[JSONResponse]] - `calls` [EXTRACTED]
-- [[MCP tool call interception endpoint.      Receives an MCP tool call, runs it thr]] - `rationale_for` [EXTRACTED]
+- [[AuthRequired_2]] - `references` [EXTRACTED]
+- [[MCP tool call interception endpoint. Receives an MCP tool call, runs it through…]] - `rationale_for` [EXTRACTED]
 - [[MCPProxyRequest]] - `references` [EXTRACTED]
-- [[MCPToolCall]] - `calls` [EXTRACTED]
 - [[Request_1]] - `references` [EXTRACTED]
-- [[Request_10]] - `references` [EXTRACTED]
 - [[_is_imessage_recipient_allowed()]] - `calls` [EXTRACTED]
 - [[_resolve_effective_agent_id()]] - `calls` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
+- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `contains` [EXTRACTED]
+- [[post_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy

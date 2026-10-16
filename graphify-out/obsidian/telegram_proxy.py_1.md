@@ -1,17 +1,25 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md"
 type: "document"
-community: "test_scorecard_scoring.py"
-location: "L1"
+community: "telegram_proxy.py"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_scorecard_scoringpy
+  - community/telegram_proxypy
 ---
 
-# telegram_proxy.py.md
+# telegram_proxy.py
 
 ## Connections
-- [[telegram_proxy.py_2]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables_13]] - `contains` [EXTRACTED]
+- [[Function Details_25]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_27]] - `contains` [EXTRACTED]
+- [[Methods Filtered (Inbound)]] - `contains` [EXTRACTED]
+- [[Methods Filtered (Outbound)]] - `contains` [EXTRACTED]
+- [[Purpose_144]] - `contains` [EXTRACTED]
+- [[Related_31]] - `contains` [EXTRACTED]
+- [[Responsibilities_29]] - `contains` [EXTRACTED]
+- [[telegram_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_scorecard_scoringpy
+#graphify/document #graphify/EXTRACTED #community/telegram_proxypy

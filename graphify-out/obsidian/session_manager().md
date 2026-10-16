@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_file_sandbox_message_gate.py"
+source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "MCPInspector"
-location: "L43"
+community: "test_security_regressions_v1_2.py"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPInspector
+  - community/test_security_regressions_v1_2py
 ---
 
 # session_manager()
 
 ## Connections
-- [[UserSessionManager]] - `calls` [EXTRACTED]
-- [[test_file_sandbox_message_gate.py]] - `contains` [EXTRACTED]
+- [[fixture]] - `references` [EXTRACTED]
+- [[test_security_regressions_v1_2.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPInspector
+#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py

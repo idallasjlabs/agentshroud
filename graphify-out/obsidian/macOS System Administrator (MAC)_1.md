@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-mac/README.md"
+source_file: "docker/config/openclaw/skills/i-mac/README.md"
 type: "document"
-community: "SlackAPIProxy"
+community: "macOS System Administrator (MAC)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/macOS_System_Administrator_MAC
 ---
 
 # macOS System Administrator (MAC)
 
 ## Connections
-- [[Purpose_51]] - `contains` [EXTRACTED]
-- [[README_47]] - `contains` [EXTRACTED]
-- [[README_56]] - `contains` [EXTRACTED]
-- [[Related Skills_54]] - `contains` [EXTRACTED]
-- [[Usage_57]] - `contains` [EXTRACTED]
+- [[Purpose_42]] - `contains` [EXTRACTED]
+- [[Related Skills_35]] - `contains` [EXTRACTED]
+- [[Usage_38]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-macREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/macOS_System_Administrator_MAC

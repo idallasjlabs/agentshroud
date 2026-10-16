@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/memory_config.py"
 type: "code"
-community: "ContainerEngine"
+community: "lifespan.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerEngine
+  - community/lifespanpy
 ---
 
 # memory_config.py
 
 ## Connections
-- [[MemoryIntegrityConfig]] - `contains` [EXTRACTED]
-- [[MemoryLifecycleConfig]] - `contains` [EXTRACTED]
+- [[MemoryIntegrityConfig_1]] - `contains` [EXTRACTED]
+- [[MemoryLifecycleConfig_1]] - `contains` [EXTRACTED]
 - [[MemorySecurityConfig]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerEngine
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

@@ -1,23 +1,23 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "main.rs"
 location: "L604"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/mainrs
 ---
 
 # run_cves()
 
 ## Connections
-- [[.get()_1]] - `calls` [EXTRACTED]
+- [[dot-get()_3]] - `calls` [EXTRACTED]
 - [[GatewayClient]] - `references` [EXTRACTED]
 - [[Option]] - `references` [EXTRACTED]
 - [[Result]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
-- [[T]] - `references` [EXTRACTED]
+- [[_T]] - `references` [EXTRACTED]
 - [[cves_counts_array_when_no_total()]] - `calls` [EXTRACTED]
 - [[cves_formats_summary()]] - `calls` [EXTRACTED]
 - [[cves_reads_nested_summary()]] - `calls` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[cves_reports_unknown_bot_error()]] - `calls` [EXTRACTED]
 - [[cves_with_bot_id_appends_query()]] - `calls` [EXTRACTED]
 - [[format_cves()]] - `calls` [EXTRACTED]
-- [[main()_1]] - `calls` [EXTRACTED]
+- [[main()_21]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/mainrs

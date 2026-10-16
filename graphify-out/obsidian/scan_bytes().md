@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "AgentShroud™ — Trademark Prior Use Record"
+community: "test_clamav_pipeline.py"
 location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud__Trademark_Prior_Use_Record
+  - community/test_clamav_pipelinepy
 ---
 
 # scan_bytes()
 
 ## Connections
-- [[Any_34]] - `references` [EXTRACTED]
+- [[Any_48]] - `references` [EXTRACTED]
 - [[Stream bytes to clamdscan for inline malware scanning.      Uses ``clamdscan --s]] - `rationale_for` [EXTRACTED]
-- [[clamav_scanner.py]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[parse_clamscan_output()]] - `calls` [EXTRACTED]
 - [[test_clamav_pipeline.py]] - `imports` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[test_scan_bytes_infected()]] - `calls` [EXTRACTED]
 - [[test_scan_bytes_timeout()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record
+#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy

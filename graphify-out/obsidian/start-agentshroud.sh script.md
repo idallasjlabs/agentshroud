@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/start-agentshroud.sh"
 type: "code"
-community: "What You Must Do When Invoked"
+community: "start-agentshroud.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked
+  - community/start-agentshroudsh
 ---
 
 # start-agentshroud.sh script
@@ -20,8 +20,8 @@ tags:
 - [[_reconcile_security_critical_cron()]] - `calls` [EXTRACTED]
 - [[_rename_to_meaningful()]] - `calls` [EXTRACTED]
 - [[_slack_send()]] - `calls` [EXTRACTED]
-- [[_telegram_send()_1]] - `calls` [EXTRACTED]
-- [[_telegram_send_photo()_1]] - `calls` [EXTRACTED]
+- [[_telegram_send()]] - `calls` [EXTRACTED]
+- [[_telegram_send_photo()]] - `calls` [EXTRACTED]
 - [[start-agentshroud.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked
+#graphify/code #graphify/EXTRACTED #community/start-agentshroudsh

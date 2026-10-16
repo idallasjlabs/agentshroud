@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "audio_set_volume() — spoken volume command targe"
+community: "test_default_summary_equals_openclaw_summary"
 location: "193"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/audio_set_volume__spoken_volume_command_targe
+  - community/test_default_summary_equals_openclaw_summary
 ---
 
 # test_default_summary_equals_openclaw_summary
 
-#graphify/code #graphify/EXTRACTED #community/audio_set_volume__spoken_volume_command_targe
+#graphify/code #graphify/EXTRACTED #community/test_default_summary_equals_openclaw_summary

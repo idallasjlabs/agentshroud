@@ -1,17 +1,26 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
 type: "document"
-community: "test_adversarial_injection.py"
-location: "L1"
+community: "sanitizer.py"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_adversarial_injectionpy
+  - community/sanitizerpy
 ---
 
-# sanitizer.py.md
+# sanitizer.py
 
 ## Connections
-- [[sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[Config Keys Read_2]] - `contains` [EXTRACTED]
+- [[Environment Variables Used_4]] - `contains` [EXTRACTED]
+- [[Function Details_14]] - `contains` [EXTRACTED]
+- [[Imports From  Exports To_2]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_16]] - `contains` [EXTRACTED]
+- [[Known Issues  Notes_3]] - `contains` [EXTRACTED]
+- [[Purpose_119]] - `contains` [EXTRACTED]
+- [[Related_20]] - `contains` [EXTRACTED]
+- [[Responsibilities_18]] - `contains` [EXTRACTED]
+- [[sanitizer.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_adversarial_injectionpy
+#graphify/document #graphify/EXTRACTED #community/sanitizerpy

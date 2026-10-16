@@ -1,23 +1,20 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: "scripts/export-email-reports.py"
 type: "code"
-community: "PromptProtection"
-location: "L524"
+community: "export_bot"
+location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptProtection
+  - community/export_bot
 ---
 
 # main()
 
 ## Connections
-- [[build_id_plan()]] - `calls` [EXTRACTED]
-- [[compute_stats()]] - `calls` [EXTRACTED]
-- [[gather_advisories()]] - `calls` [EXTRACTED]
-- [[load_registry()_1]] - `calls` [EXTRACTED]
-- [[migrate-cve-registry-ghsa.py]] - `contains` [EXTRACTED]
-- [[render_manual_review()]] - `calls` [EXTRACTED]
-- [[rewrite_registry_text()]] - `calls` [EXTRACTED]
+- [[Path_52]] - `calls` [EXTRACTED]
+- [[_parse_since()_1]] - `calls` [EXTRACTED]
+- [[export-email-reports.py]] - `contains` [EXTRACTED]
+- [[export_bot()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptProtection
+#graphify/code #graphify/EXTRACTED #community/export_bot

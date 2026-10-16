@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-p0-2026-02-23.md"
 type: "document"
-community: "AgentShroud Prerequisites"
+community: "Phase Review: P0 — Core Pipeline Wiring"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Prerequisites
+  - community/Phase_Review_P0__Core_Pipeline_Wiring
 ---
 
 # phase-review-p0-2026-02-23.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase Review P0 — Core Pipeline Wiring]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites
+#graphify/document #graphify/EXTRACTED #community/Phase_Review_P0__Core_Pipeline_Wiring

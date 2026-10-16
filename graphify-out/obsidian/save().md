@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/options.js"
 type: "code"
-community: "test_config_validation.py"
+community: "options.js"
 location: "L19"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/test_config_validationpy
+  - graphify/EXTRACTED
+  - community/optionsjs
 ---
 
 # save()
@@ -15,4 +15,4 @@ tags:
 - [[loadConfig()]] - `semantically_similar_to` [INFERRED]
 - [[options.js]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_config_validationpy
+#graphify/code #graphify/EXTRACTED #community/optionsjs

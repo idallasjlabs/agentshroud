@@ -1,23 +1,24 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "SSHProxy"
+community: "gateway/ingest_api/main.py (/hermes-dashboard/ HTTP + WebSocket reverse proxy)"
 location: "L542"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
 ---
 
 # op_proxy()
 
 ## Connections
-- [[1Password credential proxy (P2 credential isolation).      Reads a secret from]] - `rationale_for` [EXTRACTED]
-- [[AuthRequired]] - `references` [EXTRACTED]
-- [[AuthRequired_5]] - `references` [EXTRACTED]
-- [[FastAPI app instance]] - `shares_data_with` [EXTRACTED]
+- [[1Password credential proxy (P2 credential isolation). Reads a secret from…]] - `rationale_for` [EXTRACTED]
+- [[AuthRequired_2]] - `references` [EXTRACTED]
 - [[OpProxyRequest]] - `references` [EXTRACTED]
+- [[_do_op_read()]] - `contains` [EXTRACTED]
 - [[_is_op_reference_allowed()]] - `calls` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
+- [[_refresh_session()]] - `contains` [EXTRACTED]
+- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `contains` [EXTRACTED]
+- [[post_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy

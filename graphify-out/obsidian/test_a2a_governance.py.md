@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "hermes/skills/i-bs/README.md"
+community: "A2AGovernanceProxy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/A2AGovernanceProxy
 ---
 
 # test_a2a_governance.py
@@ -25,13 +25,13 @@ tags:
 - [[TestOutboundProcessing]] - `contains` [EXTRACTED]
 - [[TestPIISanitization]] - `contains` [EXTRACTED]
 - [[TestPeerManagement]] - `contains` [EXTRACTED]
-- [[TestRateLimiting]] - `contains` [EXTRACTED]
+- [[TestRateLimiting_2]] - `contains` [EXTRACTED]
 - [[TestReporting]] - `contains` [EXTRACTED]
 - [[TestTaskConcurrency]] - `contains` [EXTRACTED]
 - [[_msg()]] - `contains` [EXTRACTED]
 - [[monitor_proxy()]] - `contains` [EXTRACTED]
-- [[proxy()]] - `contains` [EXTRACTED]
+- [[proxy()_2]] - `contains` [EXTRACTED]
 - [[trusted_peer()]] - `contains` [EXTRACTED]
 - [[untrusted_peer()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

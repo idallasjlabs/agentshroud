@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "AgentShroud™ — Trademark Prior Use Record"
+community: "test_clamav_pipeline.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud__Trademark_Prior_Use_Record
+  - community/test_clamav_pipelinepy
 ---
 
 # test_clamav_pipeline.py
 
 ## Connections
 - [[PipelineAction]] - `imports` [EXTRACTED]
-- [[SecurityPipeline]] - `imports` [EXTRACTED]
+- [[SecurityPipeline_2]] - `imports` [EXTRACTED]
 - [[_b64_payload()]] - `contains` [EXTRACTED]
 - [[_instant_wait_for()]] - `contains` [EXTRACTED]
-- [[_make_pipeline()]] - `contains` [EXTRACTED]
+- [[_make_pipeline()_4]] - `contains` [EXTRACTED]
 - [[_timeout_wait_for()]] - `contains` [EXTRACTED]
 - [[scan_bytes()]] - `imports` [EXTRACTED]
 - [[test_canary.py]] - `semantically_similar_to` [INFERRED]
@@ -31,4 +31,4 @@ tags:
 - [[test_scan_bytes_infected()]] - `contains` [EXTRACTED]
 - [[test_scan_bytes_timeout()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record
+#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy

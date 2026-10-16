@@ -1,21 +1,20 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "SSHProxy"
+community: "Request"
 location: "L4493"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/Request
 ---
 
 # ollama_api_proxy()
 
 ## Connections
-- [[JSONResponse]] - `calls` [EXTRACTED]
 - [[Proxy native Ollama API calls through security pipeline.]] - `rationale_for` [EXTRACTED]
 - [[Request_1]] - `references` [EXTRACTED]
-- [[Request_10]] - `references` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
+- [[api_route]] - `references` [EXTRACTED]
+- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/Request

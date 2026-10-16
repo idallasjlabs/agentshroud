@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "system-requirements.md"
+community: "test_observatory_mode.py"
 location: "L148"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/system-requirementsmd
+  - community/test_observatory_modepy
 ---
 
 # revert_after_minutes above 480 is clamped to 480.
 
 ## Connections
-- [[.test_revert_minutes_clamped_max()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_revert_minutes_clamped_max()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/system-requirementsmd
+#graphify/rationale #graphify/EXTRACTED #community/test_observatory_modepy

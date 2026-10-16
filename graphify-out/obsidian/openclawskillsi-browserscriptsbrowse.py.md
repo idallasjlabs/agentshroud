@@ -12,8 +12,8 @@ tags:
 # openclaw/skills/i-browser/scripts/browse.py
 
 ## Connections
-- [[Enum_3]] - `imports_from` [EXTRACTED]
-- [[RiskLevel_3]] - `contains` [EXTRACTED]
+- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[RiskLevel_2]] - `contains` [EXTRACTED]
 - [[SecureBrowser_2]] - `contains` [EXTRACTED]
 - [[SecurityConfig_2]] - `contains` [EXTRACTED]
 - [[SecurityError_2]] - `contains` [EXTRACTED]

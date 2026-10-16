@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_prompt_guard.py"
+source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "ServiceManager"
-location: "L17"
+community: "PIIConfig"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/PIIConfig
 ---
 
 # prompt_guard()
 
 ## Connections
-- [[Create a PromptGuard instance for testing]] - `rationale_for` [EXTRACTED]
 - [[PromptGuard]] - `calls` [EXTRACTED]
-- [[test_prompt_guard.py]] - `contains` [EXTRACTED]
+- [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

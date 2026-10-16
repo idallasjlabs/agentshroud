@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_egress_enforce.py"
 type: "code"
-community: "ConsentFramework"
+community: "EgressFilterConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/EgressFilterConfig
 ---
 
 # test_egress_enforce.py
 
 ## Connections
 - [[EgressAction]] - `imports` [EXTRACTED]
-- [[EgressFilter_1]] - `imports` [EXTRACTED]
+- [[EgressFilter_2]] - `imports` [EXTRACTED]
 - [[EgressFilterConfig]] - `imports` [EXTRACTED]
 - [[TestEgressFilterConfig]] - `contains` [EXTRACTED]
 - [[TestEgressFilterEnforcement]] - `contains` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[get_egress_config()]] - `imports` [EXTRACTED]
 - [[set_egress_config()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConsentFramework
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

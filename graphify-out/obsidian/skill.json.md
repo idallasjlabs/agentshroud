@@ -1,24 +1,24 @@
 ---
 source_file: "skills/custom/browser-fetch/skill.json"
 type: "code"
-community: "router.py"
+community: "skill.json"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/routerpy
+  - community/skilljson
 ---
 
 # skill.json
 
 ## Connections
-- [[author_4]] - `contains` [EXTRACTED]
-- [[dependencies]] - `contains` [EXTRACTED]
-- [[description_6]] - `contains` [EXTRACTED]
-- [[keywords_4]] - `contains` [EXTRACTED]
-- [[name_6]] - `contains` [EXTRACTED]
-- [[security]] - `contains` [EXTRACTED]
+- [[author]] - `contains` [EXTRACTED]
+- [[dependencies_20]] - `contains` [EXTRACTED]
+- [[description_9]] - `contains` [EXTRACTED]
+- [[keywords]] - `contains` [EXTRACTED]
+- [[name_2]] - `contains` [EXTRACTED]
+- [[security_11]] - `contains` [EXTRACTED]
 - [[tools]] - `contains` [EXTRACTED]
-- [[version_8]] - `contains` [EXTRACTED]
+- [[version_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/routerpy
+#graphify/code #graphify/EXTRACTED #community/skilljson

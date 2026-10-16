@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "AgentShroud Security Value Proposition - REVISED"
+community: ".validate_docker_compose_config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition_-_REVISED
+  - community/validate_docker_compose_config
 ---
 
 # network_validator.py
@@ -17,6 +17,5 @@ tags:
 - [[NetworkValidator]] - `contains` [EXTRACTED]
 - [[test_network_validator_gate.py]] - `references` [EXTRACTED]
 - [[validate_network_security()]] - `contains` [EXTRACTED]
-- [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_REVISED
+#graphify/code #graphify/EXTRACTED #community/validate_docker_compose_config

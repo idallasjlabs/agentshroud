@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "code"
-community: "_wrap_response()"
+community: "test_collaborator_tracker.py"
 location: "L341"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/test_collaborator_trackerpy
 ---
 
 # test_get_activity_summary_by_bot_empty_when_no_file()
@@ -15,4 +15,4 @@ tags:
 - [[get_activity_summary returns empty by_bot when no log file exists.]] - `rationale_for` [EXTRACTED]
 - [[test_collaborator_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

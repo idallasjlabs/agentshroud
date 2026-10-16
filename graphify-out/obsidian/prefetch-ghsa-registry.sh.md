@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/scripts/prefetch-ghsa-registry.sh"
 type: "code"
-community: ".agents/skills/i-scrum/SKILL.md"
+community: "prefetch-ghsa-registry.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-scrum/SKILLmd
+  - community/prefetch-ghsa-registrysh
 ---
 
 # prefetch-ghsa-registry.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[prefetch-ghsa-registry.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-scrum/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/prefetch-ghsa-registrysh

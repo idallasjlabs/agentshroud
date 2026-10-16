@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/exports.md"
 type: "document"
-community: "Community 1002"
+community: "graphify reference: extra exports and benchmark"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1002
+  - community/graphify_reference_extra_exports_and_benchmark
 ---
 
 # openclaw/skills/graphify/references/exports.md
 
 ## Connections
-- [[graphify reference extra exports and benchmark]] - `contains` [EXTRACTED]
+- [[graphify reference extra exports and benchmark_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1002
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark

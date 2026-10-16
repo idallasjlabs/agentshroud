@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/safe-refactor.agent.md"
 type: "document"
-community: "ADR-002: Default-Allow Security Philosophy"
+community: "AGENTS.md — Codex CLI Guidance"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-002_Default-Allow_Security_Philosophy
+  - community/AGENTSmd__Codex_CLI_Guidance
 ---
 
 # safe-refactor.agent.md
@@ -15,4 +15,4 @@ tags:
 - [[Codex Safe Refactor Role]] - `semantically_similar_to` [INFERRED]
 - [[Safe Refactor Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-002_Default-Allow_Security_Philosophy
+#graphify/document #graphify/EXTRACTED #community/AGENTSmd__Codex_CLI_Guidance

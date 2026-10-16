@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/tests/test_ssh_proxy.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L47"
+community: "MCPToolCall"
+location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/MCPToolCall
 ---
 
 # proxy()
 
 ## Connections
-- [[SSHConfig_2]] - `references` [EXTRACTED]
-- [[SSHProxy_1]] - `references` [EXTRACTED]
-- [[test_ssh_proxy.py]] - `contains` [EXTRACTED]
+- [[MCPAuditTrail]] - `calls` [EXTRACTED]
+- [[MCPInspector]] - `calls` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `calls` [EXTRACTED]
+- [[MCPProxy_1]] - `calls` [EXTRACTED]
+- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/MCPToolCall

@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/skills/scan.py"
+source_file: "scripts/export-bot-conversations.py"
 type: "code"
-community: "Daedalus — Concept Illustrator"
-location: "L68"
+community: "export-bot-conversations.py"
+location: "L232"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator
+  - community/export-bot-conversationspy
 ---
 
 # main()
 
 ## Connections
-- [[Path_22]] - `calls` [EXTRACTED]
-- [[SkillGuard]] - `calls` [EXTRACTED]
-- [[_build_tree()]] - `calls` [EXTRACTED]
-- [[_print_findings()]] - `calls` [EXTRACTED]
-- [[scan.py]] - `contains` [EXTRACTED]
+- [[Path_20]] - `calls` [EXTRACTED]
+- [[_parse_since()]] - `calls` [EXTRACTED]
+- [[export-bot-conversations.py]] - `contains` [EXTRACTED]
+- [[export_hermes()]] - `calls` [EXTRACTED]
+- [[export_openclaw()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy

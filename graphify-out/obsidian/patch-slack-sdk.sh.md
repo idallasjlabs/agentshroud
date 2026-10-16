@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/patch-slack-sdk.sh"
 type: "code"
-community: ".agents/skills/i-observability/SKILL.md"
+community: "patch-slack-sdk.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-observability/SKILLmd
+  - community/patch-slack-sdksh
 ---
 
 # patch-slack-sdk.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[patch-slack-sdk.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-observability/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/patch-slack-sdksh

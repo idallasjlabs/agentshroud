@@ -1,21 +1,21 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "main.rs"
 location: "L533"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/mainrs
 ---
 
 # render_output_lines()
 
 ## Connections
-- [[.new()_2]] - `calls` [EXTRACTED]
+- [[dot-new()_2]] - `calls` [EXTRACTED]
 - [[OutputFormat_1]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
-- [[Value]] - `references` [EXTRACTED]
+- [[Value_3]] - `references` [EXTRACTED]
 - [[Vec]] - `references` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[print_output()]] - `calls` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[render_output_table_empty_array_produces_no_lines()]] - `calls` [EXTRACTED]
 - [[render_output_yaml_produces_real_yaml_not_json()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/mainrs

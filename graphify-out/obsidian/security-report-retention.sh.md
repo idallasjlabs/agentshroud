@@ -1,19 +1,19 @@
 ---
 source_file: "docker/scripts/security-report-retention.sh"
 type: "code"
-community: "format_upstream_cve_alert()"
+community: "FR3: System Integrity"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/format_upstream_cve_alert
+  - community/FR3_System_Integrity
 ---
 
 # security-report-retention.sh
 
 ## Connections
-- [[log()_2]] - `defines` [EXTRACTED]
+- [[log()_7]] - `defines` [EXTRACTED]
 - [[security-report-retention.sh script]] - `contains` [EXTRACTED]
 - [[security-scheduler.sh]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/format_upstream_cve_alert
+#graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity

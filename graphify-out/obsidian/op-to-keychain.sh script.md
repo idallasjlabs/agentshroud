@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/op-to-keychain.sh"
 type: "code"
-community: "OutputSchemaEnforcer"
+community: "check-vendor-compat.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputSchemaEnforcer
+  - community/check-vendor-compatsh
 ---
 
 # op-to-keychain.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[op-to-keychain.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer
+#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh

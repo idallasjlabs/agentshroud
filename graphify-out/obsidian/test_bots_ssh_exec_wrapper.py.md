@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "code"
-community: "Colima & Docker Operations Guide — AgentShroud"
+community: "test_bots_ssh_exec_wrapper.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Colima__Docker_Operations_Guide__AgentShroud
+  - community/test_bots_ssh_exec_wrapperpy
 ---
 
 # test_bots_ssh_exec_wrapper.py
@@ -34,4 +34,4 @@ tags:
 - [[test_wrapper_never_sends_empty_bearer()]] - `contains` [EXTRACTED]
 - [[test_wrapper_targets_only_internal_gateway_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Colima__Docker_Operations_Guide__AgentShroud
+#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy

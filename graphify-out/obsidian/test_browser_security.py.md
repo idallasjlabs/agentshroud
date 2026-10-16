@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "test_scorecard_integrity.py"
+community: "ThreatAssessment"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scorecard_integritypy
+  - community/ThreatAssessment
 ---
 
 # test_browser_security.py
@@ -18,6 +18,6 @@ tags:
 - [[TestSocialEngineeringDetection]] - `contains` [EXTRACTED]
 - [[TestURLReputation]] - `contains` [EXTRACTED]
 - [[browser_security.py]] - `imports_from` [EXTRACTED]
-- [[guard()]] - `contains` [EXTRACTED]
+- [[guard()_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scorecard_integritypy
+#graphify/code #graphify/EXTRACTED #community/ThreatAssessment

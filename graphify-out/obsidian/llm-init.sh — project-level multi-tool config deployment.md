@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/README.md"
 type: "concept"
-community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+community: "FODL — Fluence Operational Data Lakehouse"
 location: "Project-Level Deployment"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR
+  - community/FODL__Fluence_Operational_Data_Lakehouse
 ---
 
 # llm-init.sh — project-level multi-tool config deployment
@@ -16,4 +16,4 @@ tags:
 - [[LLM Operating Context — Isaiah Jefferson]] - `references` [EXTRACTED]
 - [[MCP server expansion (3 → 11) and --mcp flag]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR
+#graphify/concept #graphify/EXTRACTED #community/FODL__Fluence_Operational_Data_Lakehouse

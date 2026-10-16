@@ -1,19 +1,19 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/test_playback_state.c"
 type: "code"
-community: "compute_scorecard()"
+community: "test_playback_state.c"
 location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/compute_scorecard
+  - community/test_playback_statec
 ---
 
 # test_gate_opens_on_reply_complete()
 
 ## Connections
-- [[main()_9]] - `calls` [EXTRACTED]
+- [[main()_14]] - `calls` [EXTRACTED]
 - [[playback_gate_should_open()]] - `calls` [INFERRED]
 - [[test_playback_state.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/compute_scorecard
+#graphify/code #graphify/EXTRACTED #community/test_playback_statec

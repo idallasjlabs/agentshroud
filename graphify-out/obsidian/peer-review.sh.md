@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/peer-review.sh"
 type: "code"
-community: "CI/CD Quality Gates (14 jobs, 6 workflows)"
+community: "gemini-review.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CI/CD_Quality_Gates_14_jobs_6_workflows
+  - community/gemini-reviewpy
 ---
 
 # peer-review.sh
@@ -16,4 +16,4 @@ tags:
 - [[gemini-review.py]] - `references` [EXTRACTED]
 - [[peer-review.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CI/CD_Quality_Gates_14_jobs_6_workflows
+#graphify/code #graphify/EXTRACTED #community/gemini-reviewpy

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "rationale"
-community: "Quick Reference Commands"
+community: "ResourceGuard"
 location: "L182"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Quick_Reference_Commands
+  - community/ResourceGuard
 ---
 
 # stop() should cancel background monitor cleanly.
 
 ## Connections
-- [[.test_stop_cancels_monitor_task()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_stop_cancels_monitor_task()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Quick_Reference_Commands
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

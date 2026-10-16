@@ -5,7 +5,7 @@ community: "notion"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/notion
 ---
 
@@ -15,4 +15,4 @@ tags:
 - [[Obsidian]] - `contains` [EXTRACTED]
 - [[notionSKILL]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/notion
+#graphify/document #graphify/EXTRACTED #community/notion

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_approval_store.py"
+source_file: "gateway/tests/test_report_store.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L38"
+community: "ReportStore"
+location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/ReportStore
 ---
 
 # store()
 
 ## Connections
-- [[ApprovalStore_1]] - `calls` [EXTRACTED]
-- [[Path_24]] - `references` [EXTRACTED]
-- [[test_approval_store.py]] - `contains` [EXTRACTED]
+- [[ReportStore]] - `calls` [EXTRACTED]
+- [[test_report_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/ReportStore

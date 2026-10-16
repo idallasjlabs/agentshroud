@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_router_openai_translation.py"
+source_file: "gateway/tests/test_router_streaming.py"
 type: "code"
-community: "ApprovalRequest"
-location: "L25"
+community: "DataLedger"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/DataLedger
 ---
 
 # router()
 
 ## Connections
 - [[MultiAgentRouter]] - `calls` [EXTRACTED]
-- [[RouterConfig]] - `calls` [EXTRACTED]
-- [[test_router_openai_translation.py]] - `contains` [EXTRACTED]
+- [[RouterConfig_1]] - `calls` [EXTRACTED]
+- [[test_router_streaming.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/code #graphify/EXTRACTED #community/DataLedger

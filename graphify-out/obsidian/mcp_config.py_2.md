@@ -1,26 +1,26 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
 type: "document"
-community: "Use Cases"
+community: "mcp_config.py"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Use_Cases
+  - community/mcp_configpy
 ---
 
 # mcp_config.py
 
 ## Connections
-- [[Configuration  Environment Variables_3]] - `contains` [EXTRACTED]
-- [[Function Details_9]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_12]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables_24]] - `contains` [EXTRACTED]
+- [[Function Details_43]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_45]] - `contains` [EXTRACTED]
 - [[MCPProxyConfig Fields]] - `contains` [EXTRACTED]
 - [[MCPServerConfig Fields]] - `contains` [EXTRACTED]
 - [[PermissionLevel Ordering]] - `contains` [EXTRACTED]
-- [[Purpose_130]] - `contains` [EXTRACTED]
-- [[Related_15]] - `contains` [EXTRACTED]
-- [[Responsibilities_14]] - `contains` [EXTRACTED]
+- [[Purpose_177]] - `contains` [EXTRACTED]
+- [[Related_49]] - `contains` [EXTRACTED]
+- [[Responsibilities_46]] - `contains` [EXTRACTED]
 - [[mcp_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Use_Cases
+#graphify/document #graphify/EXTRACTED #community/mcp_configpy

@@ -1,19 +1,22 @@
 ---
 source_file: "docs/vault/05 - Dependencies/playwright.md"
 type: "document"
-community: "Pre-Deployment Checklist"
-location: "L1"
+community: "Docker Volumes"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist
+  - community/Docker_Volumes
 ---
 
-# playwright.md
+# Playwright
 
 ## Connections
-- [[All Dependencies]] - `references` [EXTRACTED]
-- [[Playwright]] - `contains` [EXTRACTED]
-- [[volumes]] - `references` [EXTRACTED]
+- [[Container Integration]] - `contains` [EXTRACTED]
+- [[Purpose_83]] - `contains` [EXTRACTED]
+- [[Related Notes_41]] - `contains` [EXTRACTED]
+- [[Security Controls_1]] - `contains` [EXTRACTED]
+- [[Volume]] - `contains` [EXTRACTED]
+- [[playwright]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist
+#graphify/document #graphify/EXTRACTED #community/Docker_Volumes

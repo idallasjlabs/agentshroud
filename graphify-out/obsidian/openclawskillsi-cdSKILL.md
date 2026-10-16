@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-cd/SKILL.md"
 type: "document"
-community: "Community 1556"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1556
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # openclaw/skills/i-cd/SKILL.md
 
 ## Connections
-- [[Skill cd_2]] - `contains` [EXTRACTED]
+- [[Skill cd_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1556
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

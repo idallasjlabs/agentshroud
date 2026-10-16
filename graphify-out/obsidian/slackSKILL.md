@@ -5,7 +5,7 @@ community: "Actions"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/Actions
 ---
 
@@ -15,4 +15,4 @@ tags:
 - [[OpenClaw Skill Metadata Schema (frontmatter convention)]] - `conceptually_related_to` [INFERRED]
 - [[Slack Actions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Actions
+#graphify/document #graphify/EXTRACTED #community/Actions

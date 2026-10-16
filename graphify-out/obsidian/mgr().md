@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_delegation.py"
+source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "make_event()"
-location: "L24"
+community: "PermissionLevel"
+location: "L112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/PermissionLevel
 ---
 
 # mgr()
 
 ## Connections
-- [[DelegationManager_1]] - `references` [EXTRACTED]
-- [[In-memory delegation manager (no disk IO).]] - `rationale_for` [EXTRACTED]
-- [[test_delegation.py]] - `contains` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `calls` [EXTRACTED]
+- [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

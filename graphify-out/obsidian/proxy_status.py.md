@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/dashboard/proxy_status.py"
 type: "code"
-community: "test_bots_ssh_exec_wrapper.py"
+community: "ProxyDashboard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_bots_ssh_exec_wrapperpy
+  - community/ProxyDashboard
 ---
 
 # proxy_status.py
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ProxyDashboard]] - `contains` [EXTRACTED]
 - [[ProxyStatusReport]] - `contains` [EXTRACTED]
-- [[api.py]] - `calls` [EXTRACTED]
+- [[api.py_2]] - `calls` [EXTRACTED]
 - [[health_report.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy
+#graphify/code #graphify/EXTRACTED #community/ProxyDashboard

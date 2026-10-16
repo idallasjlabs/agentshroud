@@ -1,18 +1,18 @@
 ---
-source_file: "docker/bots/hermes/render_md_email.py"
+source_file: "scripts/gemini-review.py"
 type: "code"
-community: "AgentShroud v0.8.0 — Blue Team Security Assessme"
-location: "L250"
+community: "gemini-review.py"
+location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_v080__Blue_Team_Security_Assessme
+  - community/gemini-reviewpy
 ---
 
 # main()
 
 ## Connections
-- [[render()]] - `calls` [EXTRACTED]
-- [[render_md_email.py]] - `contains` [EXTRACTED]
+- [[call_gemini()]] - `calls` [EXTRACTED]
+- [[gemini-review.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_v080__Blue_Team_Security_Assessme
+#graphify/code #graphify/EXTRACTED #community/gemini-reviewpy

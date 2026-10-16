@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "MCPToolCall"
+community: "ForwardRequest"
 location: "L526"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/ForwardRequest
 ---
 
 # patch-slack-sdk.sh must stay quiet when the pong patch is already applied.
 
 ## Connections
-- [[.test_patch_slack_sdk_pong_patch_is_idempotent()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_patch_slack_sdk_pong_patch_is_idempotent()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPToolCall
+#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest

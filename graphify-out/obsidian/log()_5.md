@@ -1,18 +1,23 @@
 ---
-source_file: "docker/scripts/security-scheduler.sh"
+source_file: "docker/scripts/security-scan.sh"
 type: "code"
-community: "format_upstream_cve_alert()"
-location: "L24"
+community: "docker/scripts/security-scan.sh"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/format_upstream_cve_alert
+  - community/docker/scripts/security-scansh
 ---
 
 # log()
 
 ## Connections
-- [[security-scheduler.sh]] - `defines` [EXTRACTED]
-- [[security-scheduler.sh script]] - `calls` [EXTRACTED]
+- [[alert_if_critical()]] - `calls` [EXTRACTED]
+- [[dockerscriptssecurity-scan.sh]] - `defines` [EXTRACTED]
+- [[run_clamav()]] - `calls` [EXTRACTED]
+- [[run_oscap()]] - `calls` [EXTRACTED]
+- [[run_sbom()]] - `calls` [EXTRACTED]
+- [[run_trivy()]] - `calls` [EXTRACTED]
+- [[security-scan.sh script_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/format_upstream_cve_alert
+#graphify/code #graphify/EXTRACTED #community/docker/scripts/security-scansh

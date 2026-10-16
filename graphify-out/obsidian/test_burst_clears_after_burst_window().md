@@ -12,7 +12,7 @@ tags:
 # test_burst_clears_after_burst_window()
 
 ## Connections
-- [[.advance()]] - `calls` [EXTRACTED]
+- [[dot-advance()]] - `calls` [EXTRACTED]
 - [[RateLimitConfig]] - `calls` [EXTRACTED]
 - [[RateLimitGuard]] - `calls` [EXTRACTED]
 - [[test_rate_limit_guard.py]] - `contains` [EXTRACTED]

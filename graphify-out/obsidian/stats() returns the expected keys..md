@@ -12,6 +12,6 @@ tags:
 # stats() returns the expected keys.
 
 ## Connections
-- [[.test_stats_returns_counts()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_stats_returns_counts()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/DNSBlocklist

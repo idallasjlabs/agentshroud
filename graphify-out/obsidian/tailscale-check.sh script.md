@@ -1,20 +1,20 @@
 ---
 source_file: "scripts/tailscale-check.sh"
 type: "code"
-community: ".send()"
+community: "ProxyDashboard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/send
+  - community/ProxyDashboard
 ---
 
 # tailscale-check.sh script
 
 ## Connections
-- [[fail()_4]] - `calls` [EXTRACTED]
-- [[ok()_1]] - `calls` [EXTRACTED]
+- [[fail()_1]] - `calls` [EXTRACTED]
+- [[ok()]] - `calls` [EXTRACTED]
 - [[tailscale-check.sh]] - `contains` [EXTRACTED]
-- [[warn()_6]] - `calls` [EXTRACTED]
+- [[warn()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/send
+#graphify/code #graphify/EXTRACTED #community/ProxyDashboard

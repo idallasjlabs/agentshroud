@@ -12,6 +12,6 @@ tags:
 # openclaw/skills/i-eightd/README.md
 
 ## Connections
-- [[8D Root Cause Analysis_2]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_group_config.py"
+source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "PermissionLevel"
-location: "L68"
+community: "RBACConfig"
+location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PermissionLevel
+  - community/RBACConfig
 ---
 
 # teams()
 
 ## Connections
-- [[TeamsConfig_1]] - `references` [EXTRACTED]
-- [[test_group_config.py]] - `contains` [EXTRACTED]
+- [[TeamsConfig]] - `calls` [EXTRACTED]
+- [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PermissionLevel
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

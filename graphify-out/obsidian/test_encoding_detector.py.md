@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_encoding_detector.py"
 type: "code"
-community: "EgressFilter"
+community: "PIIConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/PIIConfig
 ---
 
 # test_encoding_detector.py
@@ -16,4 +16,4 @@ tags:
 - [[EncodingDetector]] - `imports` [EXTRACTED]
 - [[TestEncodingDetector]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilter
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

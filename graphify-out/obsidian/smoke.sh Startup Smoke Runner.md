@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/smoke.sh"
 type: "code"
-community: "graphify reference: extra exports and benchmark"
+community: "smoke.sh Startup Smoke Runner"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark
+  - community/smokesh_Startup_Smoke_Runner
 ---
 
 # smoke.sh Startup Smoke Runner
@@ -16,4 +16,4 @@ tags:
 - [[test_openclaw_model_provider_consistency.sh]] - `calls` [EXTRACTED]
 - [[test_openclaw_readiness_retry.sh]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark
+#graphify/code #graphify/EXTRACTED #community/smokesh_Startup_Smoke_Runner

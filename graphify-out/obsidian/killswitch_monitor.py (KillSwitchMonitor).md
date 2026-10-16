@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "TeamsConfig"
+community: "KillSwitchMonitor"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/KillSwitchMonitor
 ---
 
 # killswitch_monitor.py (KillSwitchMonitor)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_killswitch_monitor_behavior.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

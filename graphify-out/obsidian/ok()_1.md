@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/tailscale-check.sh"
+source_file: "docs/planning/reviews/enforcement-audit-script.py"
 type: "code"
-community: ".send()"
-location: "L16"
+community: "MiddlewareManager"
+location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/send
+  - community/MiddlewareManager
 ---
 
 # ok()
 
 ## Connections
-- [[tailscale-check.sh]] - `defines` [EXTRACTED]
-- [[tailscale-check.sh script]] - `calls` [EXTRACTED]
+- [[enforcement-audit-script.py]] - `contains` [EXTRACTED]
+- [[run()_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/send
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

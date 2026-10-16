@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/ingest_api/ssh_config.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "SSHHostConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/SSHHostConfig
 ---
 
 # ssh_config.py
 
 ## Connections
-- [[SSHConfig]] - `contains` [EXTRACTED]
+- [[SSHConfig_2]] - `contains` [EXTRACTED]
 - [[SSHHostConfig]] - `contains` [EXTRACTED]
-- [[config.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/SSHHostConfig

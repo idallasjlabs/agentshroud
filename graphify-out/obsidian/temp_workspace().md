@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_file_sandbox_message_gate.py"
+source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "MCPInspector"
-location: "L36"
+community: "_req"
+location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPInspector
+  - community/_req
 ---
 
 # temp_workspace()
 
 ## Connections
-- [[test_file_sandbox_message_gate.py]] - `contains` [EXTRACTED]
+- [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPInspector
+#graphify/code #graphify/EXTRACTED #community/_req

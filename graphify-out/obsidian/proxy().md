@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_a2a_governance.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "hermes/skills/i-bs/README.md"
-location: "L19"
+community: "WebProxyConfig"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/WebProxyConfig
 ---
 
 # proxy()
 
 ## Connections
-- [[A2AGovernanceConfig]] - `calls` [EXTRACTED]
-- [[A2AGovernanceProxy]] - `calls` [EXTRACTED]
-- [[test_a2a_governance.py]] - `contains` [EXTRACTED]
+- [[WebProxy]] - `calls` [EXTRACTED]
+- [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

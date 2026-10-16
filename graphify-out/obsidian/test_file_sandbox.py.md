@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "Enum"
+community: "MiddlewareManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/MiddlewareManager
 ---
 
 # test_file_sandbox.py
@@ -23,7 +23,7 @@ tags:
 - [[TestStagingPatternDetection]] - `contains` [EXTRACTED]
 - [[default_config()_3]] - `contains` [EXTRACTED]
 - [[sandbox()]] - `contains` [EXTRACTED]
-- [[strict_config()_1]] - `contains` [EXTRACTED]
+- [[strict_config()_2]] - `contains` [EXTRACTED]
 - [[strict_sandbox()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

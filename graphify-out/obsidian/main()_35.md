@@ -1,21 +1,17 @@
 ---
-source_file: "src/interfaces/chat_console.py"
+source_file: "scripts/list_registry_ghsa_ids.py"
 type: "code"
-community: "ContainerInfo"
-location: "L120"
+community: "_script"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerInfo
+  - community/_script
 ---
 
 # main()
 
 ## Connections
-- [[chat_console.py]] - `contains` [EXTRACTED]
-- [[check_status()]] - `calls` [EXTRACTED]
-- [[print_banner()]] - `calls` [EXTRACTED]
-- [[print_help()]] - `calls` [EXTRACTED]
-- [[send_message()]] - `calls` [EXTRACTED]
+- [[list_registry_ghsa_ids.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerInfo
+#graphify/code #graphify/EXTRACTED #community/_script

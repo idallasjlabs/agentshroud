@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "GroupRoleResolver"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/GroupRoleResolver
 ---
 
 # test_group_rbac.py
@@ -24,10 +24,10 @@ tags:
 - [[ToolACLConfig]] - `imports` [EXTRACTED]
 - [[ToolACLEnforcer]] - `imports` [EXTRACTED]
 - [[acl_config()]] - `contains` [EXTRACTED]
-- [[enforcer()]] - `contains` [EXTRACTED]
+- [[enforcer()_2]] - `contains` [EXTRACTED]
 - [[group_rbac.py (GroupRoleResolver)]] - `implements` [EXTRACTED]
 - [[group_role_resolver()]] - `contains` [EXTRACTED]
-- [[rbac()_1]] - `contains` [EXTRACTED]
-- [[teams()_3]] - `contains` [EXTRACTED]
+- [[rbac()_5]] - `contains` [EXTRACTED]
+- [[teams()_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

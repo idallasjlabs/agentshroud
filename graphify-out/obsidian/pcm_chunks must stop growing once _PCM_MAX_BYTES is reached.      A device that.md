@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "CollaboratorActivityTracker"
+community: "test_voice_gateway.py"
 location: "L2203"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CollaboratorActivityTracker
+  - community/test_voice_gatewaypy
 ---
 
 # pcm_chunks must stop growing once _PCM_MAX_BYTES is reached.      A device that
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pcm_buffer_bounded()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CollaboratorActivityTracker
+#graphify/rationale #graphify/EXTRACTED #community/test_voice_gatewaypy

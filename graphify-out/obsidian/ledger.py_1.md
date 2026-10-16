@@ -1,23 +1,26 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
-type: "document"
-community: "PipelineAction"
+source_file: "gateway/ingest_api/ledger.py"
+type: "code"
+community: "ingest_api/models.py"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/ingest_api/modelspy
 ---
 
-# ledger.py.md
+# ledger.py
 
 ## Connections
-- [[Audit ledger (hash-verifiable chain)]] - `conceptually_related_to` [INFERRED]
-- [[Data Flow]] - `references` [EXTRACTED]
-- [[DataLedger]] - `references` [EXTRACTED]
-- [[LedgerConfig]] - `references` [EXTRACTED]
-- [[ledger.py_2]] - `contains` [EXTRACTED]
-- [[main.py_3]] - `references` [EXTRACTED]
-- [[volumes]] - `references` [INFERRED]
+- [[DataLedger]] - `contains` [EXTRACTED]
+- [[LedgerConfig_1]] - `imports` [EXTRACTED]
+- [[LedgerEntry]] - `imports` [EXTRACTED]
+- [[LedgerQueryResponse]] - `imports` [EXTRACTED]
+- [[aiosqlite]] - `references` [EXTRACTED]
+- [[gatewayREADME]] - `references` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy

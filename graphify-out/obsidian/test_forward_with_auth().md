@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_integration.py"
 type: "code"
-community: ".test_short_text_passes_through_unchanged()"
+community: "test_integration.py"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_short_text_passes_through_unchanged
+  - community/test_integrationpy
 ---
 
 # test_forward_with_auth()
@@ -15,4 +15,4 @@ tags:
 - [[Test forward endpoint with proper authentication]] - `rationale_for` [EXTRACTED]
 - [[test_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_short_text_passes_through_unchanged
+#graphify/code #graphify/EXTRACTED #community/test_integrationpy

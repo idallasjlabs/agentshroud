@@ -1,12 +1,12 @@
 ---
 source_file: ".semgrep.yml"
 type: "rationale"
-community: "chatbot/main.py"
+community: "AgentShroud Semgrep SAST Configuration"
 location: "L111-121"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/AgentShroud_Semgrep_SAST_Configuration
 ---
 
 # ssrf-requests rule (CWE-918)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Semgrep SAST Configuration]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Semgrep_SAST_Configuration

@@ -1,12 +1,12 @@
 ---
 source_file: ".semgrep.yml"
 type: "rationale"
-community: "chatbot/main.py"
+community: "AgentShroud Semgrep SAST Configuration"
 location: "L31-42"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/AgentShroud_Semgrep_SAST_Configuration
 ---
 
 # subprocess-unvalidated-input rule (CWE-78)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Semgrep SAST Configuration]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Semgrep_SAST_Configuration

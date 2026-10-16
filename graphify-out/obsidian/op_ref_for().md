@@ -12,6 +12,8 @@ tags:
 # op_ref_for()
 
 ## Connections
+- [[TestOpRefAllowlistCoverage]] - `references` [EXTRACTED]
+- [[cmd_dump_op_refs()]] - `calls` [EXTRACTED]
 - [[op_get()]] - `calls` [EXTRACTED]
 - [[setup-secrets.sh]] - `defines` [EXTRACTED]
 

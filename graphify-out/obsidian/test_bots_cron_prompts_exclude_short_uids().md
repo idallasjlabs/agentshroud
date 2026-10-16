@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cron_jobs_prompts.py"
 type: "code"
-community: "AgentShroud Recovery Plan v0.4.0"
+community: "test_cron_jobs_prompts.py"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Recovery_Plan_v040
+  - community/test_cron_jobs_promptspy
 ---
 
 # test_bots_cron_prompts_exclude_short_uids()
@@ -17,4 +17,4 @@ tags:
 - [[_load_jobs()]] - `calls` [EXTRACTED]
 - [[test_cron_jobs_prompts.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Recovery_Plan_v040
+#graphify/code #graphify/EXTRACTED #community/test_cron_jobs_promptspy

@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/lib/sunday-scan.sh"
+source_file: "docker/scripts/security-report-retention.sh"
 type: "code"
-community: "Approval queue (notify Isaiah via Telegram, wait"
-location: "L51"
+community: "FR3: System Integrity"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_queue_notify_Isaiah_via_Telegram_wait
+  - community/FR3_System_Integrity
 ---
 
 # log()
 
 ## Connections
-- [[sunday-scan.sh]] - `defines` [EXTRACTED]
-- [[sunday_run_scan_gate()]] - `calls` [EXTRACTED]
+- [[security-report-retention.sh]] - `defines` [EXTRACTED]
+- [[security-report-retention.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_queue_notify_Isaiah_via_Telegram_wait
+#graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity

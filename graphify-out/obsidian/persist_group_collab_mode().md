@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "_make_stream_app_state()"
+community: "group_config.py"
 location: "L292"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_stream_app_state
+  - community/group_configpy
 ---
 
 # persist_group_collab_mode()
 
 ## Connections
-- [[._handle_setmode_command()]] - `calls` [EXTRACTED]
+- [[dot-_handle_setmode_command()]] - `calls` [EXTRACTED]
 - [[Persist a runtime collab mode change for a group.]] - `rationale_for` [EXTRACTED]
 - [[_load_overrides()]] - `calls` [EXTRACTED]
 - [[_save_overrides()]] - `calls` [EXTRACTED]
 - [[group_config.py]] - `contains` [EXTRACTED]
-- [[router.py_1]] - `imports` [EXTRACTED]
 - [[set_group_mode()]] - `calls` [EXTRACTED]
-- [[telegram_proxy.py]] - `imports` [EXTRACTED]
+- [[socrouter.py]] - `imports` [EXTRACTED]
+- [[telegram_proxy.py_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_stream_app_state
+#graphify/code #graphify/EXTRACTED #community/group_configpy

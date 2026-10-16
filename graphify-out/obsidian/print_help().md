@@ -1,18 +1,18 @@
 ---
 source_file: "src/interfaces/chat_console.py"
 type: "code"
-community: "ContainerInfo"
+community: "chat_console.py"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerInfo
+  - community/chat_consolepy
 ---
 
 # print_help()
 
 ## Connections
 - [[chat_console.py]] - `contains` [EXTRACTED]
-- [[main()_35]] - `calls` [EXTRACTED]
+- [[main()_33]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerInfo
+#graphify/code #graphify/EXTRACTED #community/chat_consolepy

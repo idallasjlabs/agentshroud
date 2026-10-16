@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/ordercli/SKILL.md"
 type: "document"
-community: "TestPromptExtraction"
+community: "ordercli/SKILL.md"
 location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestPromptExtraction
+  - community/ordercli/SKILLmd
 ---
 
 # ordercli
 
 ## Connections
-- [[SKILL_224]] - `contains` [EXTRACTED]
+- [[ordercliSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestPromptExtraction
+#graphify/document #graphify/EXTRACTED #community/ordercli/SKILLmd

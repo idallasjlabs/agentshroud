@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_responses.py"
 type: "code"
-community: "StdioConnection"
+community: "telegram_proxy.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/telegram_proxypy
 ---
 
 # test_collaborator_responses.py
@@ -34,6 +34,6 @@ tags:
 - [[format_setmode_success()]] - `imports` [EXTRACTED]
 - [[format_unknown_group()]] - `imports` [EXTRACTED]
 - [[project()]] - `contains` [EXTRACTED]
-- [[teams()]] - `contains` [EXTRACTED]
+- [[teams()_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

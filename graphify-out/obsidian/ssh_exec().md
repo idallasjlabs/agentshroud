@@ -1,25 +1,22 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "SSHProxy"
+community: "gateway/ingest_api/main.py (/hermes-dashboard/ HTTP + WebSocket reverse proxy)"
 location: "L974"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
 ---
 
 # ssh_exec()
 
 ## Connections
-- [[ApprovalRequest_3]] - `calls` [EXTRACTED]
-- [[AuthRequired]] - `references` [EXTRACTED]
-- [[AuthRequired_5]] - `references` [EXTRACTED]
+- [[AuthRequired_2]] - `references` [EXTRACTED]
 - [[Execute SSH command with validation and approval]] - `rationale_for` [EXTRACTED]
-- [[FastAPI app instance]] - `shares_data_with` [EXTRACTED]
-- [[JSONResponse]] - `calls` [EXTRACTED]
-- [[SSHExecRequest]] - `references` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
-- [[make_event()]] - `calls` [EXTRACTED]
+- [[SSHExecRequest_1]] - `references` [EXTRACTED]
+- [[_execute_and_record()]] - `contains` [EXTRACTED]
+- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `contains` [EXTRACTED]
+- [[post_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy

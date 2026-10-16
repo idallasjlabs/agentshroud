@@ -15,8 +15,8 @@ tags:
 - [[error()]] - `defines` [EXTRACTED]
 - [[info()]] - `defines` [EXTRACTED]
 - [[require_tool()]] - `defines` [EXTRACTED]
-- [[security-scan.sh script_1]] - `contains` [EXTRACTED]
+- [[security-scan.sh script]] - `contains` [EXTRACTED]
 - [[success()]] - `defines` [EXTRACTED]
-- [[warn()]] - `defines` [EXTRACTED]
+- [[warn()_2]] - `defines` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/scripts/security-scansh

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "rationale"
-community: "TestNormalizeForSpeech"
+community: "Request"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestNormalizeForSpeech
+  - community/Request
 ---
 
 # security_headers_middleware adds expected security headers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_security_headers_middleware_normal_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestNormalizeForSpeech
+#graphify/rationale #graphify/EXTRACTED #community/Request

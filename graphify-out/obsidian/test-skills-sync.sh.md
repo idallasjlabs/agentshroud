@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/smoke.d/test-skills-sync.sh"
 type: "code"
-community: "v1.0.0 \"Fortress\" — Ship-Ready Public Release (1"
+community: "sync-llm-settings.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/v100_Fortress__Ship-Ready_Public_Release_1
+  - community/sync-llm-settingssh
 ---
 
 # test-skills-sync.sh
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[PYTHONPATH]] - `defines` [EXTRACTED]
 - [[SKILLGUARD_TEST_DEST_ROOT]] - `defines` [EXTRACTED]
-- [[check()_3]] - `defines` [EXTRACTED]
+- [[check()_13]] - `defines` [EXTRACTED]
 - [[sync-llm-settings.sh]] - `calls` [EXTRACTED]
 - [[test-skills-sync.sh script]] - `contains` [EXTRACTED]
 - [[validate-skills-manifest.sh]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/v100_Fortress__Ship-Ready_Public_Release_1
+#graphify/code #graphify/EXTRACTED #community/sync-llm-settingssh

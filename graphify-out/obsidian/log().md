@@ -1,19 +1,31 @@
 ---
-source_file: "docker/scripts/colima-health-check.sh"
+source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "Add information filtering to prevent agent self-"
-location: "L76"
+community: "sunday-upgrade-apply.sh"
+location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Add_information_filtering_to_prevent_agent_self-
+  - community/sunday-upgrade-applysh
 ---
 
 # log()
 
 ## Connections
-- [[colima-health-check.sh]] - `defines` [EXTRACTED]
-- [[colima-health-check.sh script]] - `calls` [EXTRACTED]
-- [[notify()_1]] - `calls` [EXTRACTED]
+- [[_attempt_rollback()]] - `calls` [EXTRACTED]
+- [[_build_one_service()]] - `calls` [EXTRACTED]
+- [[_prune_build_cache()]] - `calls` [EXTRACTED]
+- [[_record_head()]] - `calls` [EXTRACTED]
+- [[_wait_for_docker()]] - `calls` [EXTRACTED]
+- [[check_noop_gate()]] - `calls` [EXTRACTED]
+- [[phase_apply()]] - `calls` [EXTRACTED]
+- [[phase_baseline()]] - `calls` [EXTRACTED]
+- [[phase_discover()]] - `calls` [EXTRACTED]
+- [[phase_preflight()]] - `calls` [EXTRACTED]
+- [[phase_scan()]] - `calls` [EXTRACTED]
+- [[phase_verify()]] - `calls` [EXTRACTED]
+- [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
+- [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
+- [[write_handoff()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Add_information_filtering_to_prevent_agent_self-
+#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

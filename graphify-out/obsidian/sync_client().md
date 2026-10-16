@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "TestCollaboratorPromptClassifiers"
+community: "test_dashboard.py"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCollaboratorPromptClassifiers
+  - community/test_dashboardpy
 ---
 
 # sync_client()
@@ -15,4 +15,4 @@ tags:
 - [[Sync TestClient for WebSocket tests]] - `rationale_for` [EXTRACTED]
 - [[test_dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

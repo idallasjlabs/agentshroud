@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "PrivacyPolicyEnforcer"
+community: "test_daily_cve_report.py"
 location: "L759"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/test_daily_cve_reportpy
 ---
 
 # run_upstream_cve_check_all_agents()
 
 ## Connections
-- [[Any_37]] - `references` [EXTRACTED]
+- [[Any_82]] - `references` [EXTRACTED]
 - [[Run the upstream CVE check for EVERY registered agent, independently.      Itera]] - `rationale_for` [EXTRACTED]
 - [[daily_cve_report.py]] - `contains` [EXTRACTED]
 - [[ghsa_ingest_scheduler()]] - `calls` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[test_daily_cve_report.py]] - `references` [EXTRACTED]
 - [[upstream_cve_check_scheduler()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

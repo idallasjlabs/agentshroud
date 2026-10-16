@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_gateway_email_service.py"
 type: "code"
-community: "RateLimiter"
+community: "GatewayEmailService"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/GatewayEmailService
 ---
 
 # test_gateway_email_service.py
 
 ## Connections
-- [[GatewayEmailService]] - `imports` [EXTRACTED]
+- [[GatewayEmailService_1]] - `imports` [EXTRACTED]
 - [[TestBuildMessage]] - `contains` [EXTRACTED]
 - [[TestEndpointUsesService]] - `contains` [EXTRACTED]
 - [[TestSend]] - `contains` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[auth_dep()]] - `imports` [EXTRACTED]
 - [[test_sender_property()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimiter
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

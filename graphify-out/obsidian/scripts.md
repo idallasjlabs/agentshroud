@@ -1,18 +1,19 @@
 ---
-source_file: ".agents/skills/i-browser/package.json"
+source_file: "browser-extension/package.json"
 type: "code"
-community: "TestParseHosts"
-location: "L6"
+community: "browser-extension/package.json"
+location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestParseHosts
+  - community/browser-extension/packagejson
 ---
 
 # scripts
 
 ## Connections
-- [[package.json]] - `contains` [EXTRACTED]
+- [[browser-extensionpackage.json]] - `contains` [EXTRACTED]
 - [[test]] - `contains` [EXTRACTED]
+- [[testcoverage]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestParseHosts
+#graphify/code #graphify/EXTRACTED #community/browser-extension/packagejson

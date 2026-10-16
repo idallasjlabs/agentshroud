@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/set-model.sh"
 type: "code"
-community: "Test-Driven Development default (Red-Green-Refac"
+community: "set-model.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Test-Driven_Development_default_Red-Green-Refac
+  - community/set-modelsh
 ---
 
 # set-model.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[set-model.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Test-Driven_Development_default_Red-Green-Refac
+#graphify/code #graphify/EXTRACTED #community/set-modelsh

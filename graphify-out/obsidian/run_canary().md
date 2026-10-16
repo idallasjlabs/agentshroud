@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "PIIConfig"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/PIIConfig
 ---
 
 # run_canary()
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[AlertDispatcher]] - `conceptually_related_to` [INFERRED]
 - [[CanaryCheck]] - `calls` [EXTRACTED]
-- [[CanaryResult]] - `references` [EXTRACTED]
+- [[CanaryResult_2]] - `references` [EXTRACTED]
 - [[HTTPForwarder]] - `calls` [INFERRED]
 - [[Run the canary verification system.      Args         pipeline SecurityPipelin]] - `rationale_for` [EXTRACTED]
-- [[SecurityPipeline]] - `calls` [INFERRED]
+- [[SecurityPipeline_2]] - `calls` [INFERRED]
 - [[canary-cron.sh embedded Python main()]] - `calls` [EXTRACTED]
 - [[canary.py]] - `contains` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
@@ -33,4 +33,4 @@ tags:
 - [[test_canary_with_unhealthy_forwarder()]] - `calls` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

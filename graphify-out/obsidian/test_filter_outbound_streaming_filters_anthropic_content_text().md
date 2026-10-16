@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "soc.js"
+community: "LLMProxy"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/socjs
+  - community/LLMProxy
 ---
 
 # test_filter_outbound_streaming_filters_anthropic_content_text()
 
 ## Connections
 - [[LLMProxy]] - `calls` [EXTRACTED]
-- [[_FakeSanitizer]] - `calls` [EXTRACTED]
+- [[_FakeSanitizer_1]] - `calls` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/socjs
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

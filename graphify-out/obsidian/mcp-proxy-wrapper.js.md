@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/mcp-proxy-wrapper.js"
 type: "code"
-community: "egress_config.py"
+community: "mcp-proxy-wrapper.js"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_configpy
+  - community/mcp-proxy-wrapperjs
 ---
 
 # mcp-proxy-wrapper.js
@@ -19,7 +19,7 @@ tags:
 - [[dashDash]] - `contains` [EXTRACTED]
 - [[gatewayPost()]] - `contains` [EXTRACTED]
 - [[http_1]] - `contains` [EXTRACTED]
-- [[https_4]] - `contains` [EXTRACTED]
+- [[https_1]] - `contains` [EXTRACTED]
 - [[inboundRl]] - `contains` [EXTRACTED]
 - [[inspectCall()]] - `contains` [EXTRACTED]
 - [[outboundRl]] - `contains` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[readline]] - `contains` [EXTRACTED]
 - [[{ spawn }]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_configpy
+#graphify/code #graphify/EXTRACTED #community/mcp-proxy-wrapperjs

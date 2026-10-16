@@ -13,7 +13,6 @@ tags:
 
 ## Connections
 - [[cmd_migrate()]] - `calls` [EXTRACTED]
-- [[get_field]] - `semantically_similar_to` [INFERRED]
 - [[get_secret()]] - `calls` [EXTRACTED]
 - [[op_ref_for()]] - `calls` [EXTRACTED]
 - [[setup-secrets.sh]] - `defines` [EXTRACTED]

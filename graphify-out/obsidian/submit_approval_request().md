@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "A2APolicyEngine"
+community: "create_auth_dependency"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/create_auth_dependency
 ---
 
 # submit_approval_request()
 
 ## Connections
-- [[ApprovalRequest_4]] - `references` [EXTRACTED]
-- [[AuthRequired_1]] - `references` [EXTRACTED]
-- [[Request_2]] - `references` [EXTRACTED]
+- [[ApprovalRequest_3]] - `references` [EXTRACTED]
+- [[AuthRequired_3]] - `references` [EXTRACTED]
+- [[Request_7]] - `references` [EXTRACTED]
 - [[Submit an action for human approval      Called by agents when attempting sensit]] - `rationale_for` [EXTRACTED]
 - [[approval.py]] - `contains` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

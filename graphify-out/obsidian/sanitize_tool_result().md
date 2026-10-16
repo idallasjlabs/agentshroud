@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "DEVELOPER.md — Development Context for AgentShro"
+community: "ToolResultSanitizer"
 location: "L258"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DEVELOPERmd__Development_Context_for_AgentShro
+  - community/ToolResultSanitizer
 ---
 
 # sanitize_tool_result()
 
 ## Connections
-- [[.sanitize()_1]] - `calls` [EXTRACTED]
-- [[.test_convenience_function()]] - `calls` [EXTRACTED]
+- [[dot-sanitize()_1]] - `calls` [EXTRACTED]
+- [[dot-test_convenience_function()]] - `calls` [EXTRACTED]
 - [[Convenience function to sanitize tool result content.      Args         content]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `calls` [EXTRACTED]
+- [[ToolResultSanitizer]] - `calls` [EXTRACTED]
 - [[ToolResultSanitizerConfig]] - `references` [EXTRACTED]
 - [[test_tool_result_sanitizer_enhanced.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer_enhanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DEVELOPERmd__Development_Context_for_AgentShro
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

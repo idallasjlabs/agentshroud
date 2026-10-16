@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "MCPToolCall"
+community: "ForwardRequest"
 location: "L252"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/ForwardRequest
 ---
 
 # openclaw init patch script must seed Telegram group allowlist when policy is all
 
 ## Connections
-- [[.test_openclaw_patch_script_seeds_group_allowlist()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_openclaw_patch_script_seeds_group_allowlist()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPToolCall
+#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest

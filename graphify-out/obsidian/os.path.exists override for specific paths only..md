@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "rationale"
-community: "EgressAction"
+community: "ServiceManager"
 location: "L101"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressAction
+  - community/ServiceManager
 ---
 
 # os.path.exists override for specific paths only.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_patch_exists()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressAction
+#graphify/rationale #graphify/EXTRACTED #community/ServiceManager

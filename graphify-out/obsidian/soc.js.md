@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "DelegationManager"
+community: "soc.js"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/socjs
 ---
 
 # soc.js
@@ -74,8 +74,8 @@ tags:
 - [[_tabLoaders]] - `contains` [EXTRACTED]
 - [[_toast()]] - `contains` [EXTRACTED]
 - [[_token]] - `contains` [EXTRACTED]
-- [[_ts()]] - `contains` [EXTRACTED]
+- [[_ts()_1]] - `contains` [EXTRACTED]
 - [[_uptime()]] - `contains` [EXTRACTED]
-- [[router.py_1]] - `shares_data_with` [EXTRACTED]
+- [[socrouter.py]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DelegationManager
+#graphify/code #graphify/EXTRACTED #community/socjs

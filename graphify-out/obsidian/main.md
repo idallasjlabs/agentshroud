@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-browser/package.json"
 type: "code"
-community: "TestParseHosts"
+community: ".agents/skills/i-browser/package.json"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestParseHosts
+  - community/agents/skills/i-browser/packagejson
 ---
 
 # main
 
 ## Connections
-- [[package.json]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-browserpackage.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestParseHosts
+#graphify/code #graphify/EXTRACTED #community/agents/skills/i-browser/packagejson

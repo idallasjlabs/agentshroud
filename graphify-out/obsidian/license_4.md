@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/package.json"
-type: "code"
-community: "proxy_status.py"
-location: "L11"
+source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/README.md"
+type: "document"
+community: "LVGL KAWAII FACE"
+location: "L130"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/proxy_statuspy
+  - community/LVGL_KAWAII_FACE
 ---
 
-# license
+# License
 
 ## Connections
-- [[package.json_4]] - `contains` [EXTRACTED]
+- [[LVGL KAWAII FACE]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/proxy_statuspy
+#graphify/document #graphify/EXTRACTED #community/LVGL_KAWAII_FACE

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "What You Must Do When Invoked"
+community: "TestCollaboratorPersistence"
 location: "L573"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked
+  - community/TestCollaboratorPersistence
 ---
 
 # removed_collaborator_ids / paused_collaborator_ids share approved_collaborators.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCollaboratorPersistence]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked
+#graphify/rationale #graphify/EXTRACTED #community/TestCollaboratorPersistence

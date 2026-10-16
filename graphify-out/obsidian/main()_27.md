@@ -1,20 +1,18 @@
 ---
-source_file: "scripts/sync-cve-registry.py"
+source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "mcp_oauth_preflight.py"
-location: "L871"
+community: "DNSForwarderProtocol"
+location: "L309"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mcp_oauth_preflightpy
+  - community/DNSForwarderProtocol
 ---
 
 # main()
 
 ## Connections
-- [[Path_48]] - `calls` [EXTRACTED]
-- [[_run_nvd_sync()]] - `calls` [EXTRACTED]
-- [[run_ghsa_sync()]] - `calls` [EXTRACTED]
-- [[sync-cve-registry.py]] - `contains` [EXTRACTED]
+- [[dns_forwarder.py]] - `contains` [EXTRACTED]
+- [[start_dns_forwarder()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mcp_oauth_preflightpy
+#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol

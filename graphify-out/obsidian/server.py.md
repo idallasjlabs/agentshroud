@@ -1,21 +1,20 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "test_a2a_policy.py"
+community: "server.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/serverpy
 ---
 
 # server.py
 
 ## Connections
-- [[Enum]] - `imports_from` [EXTRACTED]
-- [[FastAPI_3]] - `imports_from` [EXTRACTED]
+- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[FastAPI]] - `imports_from` [EXTRACTED]
 - [[_State]] - `contains` [EXTRACTED]
-- [[__init__.py_17]] - `imports_from` [EXTRACTED]
 - [[__main__.py]] - `imports_from` [EXTRACTED]
 - [[_answer_volume_query()]] - `contains` [EXTRACTED]
 - [[_call_agent_stream()]] - `contains` [EXTRACTED]
@@ -41,5 +40,6 @@ tags:
 - [[test_voice_latency_guard.py]] - `imports_from` [EXTRACTED]
 - [[tts.py]] - `imports_from` [EXTRACTED]
 - [[voice_endpoint()]] - `contains` [EXTRACTED]
+- [[voice_gateway__init__.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/code #graphify/EXTRACTED #community/serverpy

@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/skills/scan.py"
 type: "code"
-community: "Daedalus — Concept Illustrator"
+community: "Recommendation"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator
+  - community/Recommendation
 ---
 
 # scan.py
 
 ## Connections
 - [[Recommendation]] - `imports` [EXTRACTED]
-- [[ScanResult_2]] - `imports` [EXTRACTED]
-- [[SkillGuard]] - `imports` [EXTRACTED]
+- [[ScanResult_4]] - `imports` [EXTRACTED]
+- [[SkillGuard_1]] - `imports` [EXTRACTED]
 - [[SkillsManifest]] - `imports` [EXTRACTED]
 - [[_build_tree()]] - `contains` [EXTRACTED]
 - [[_print_findings()]] - `contains` [EXTRACTED]
-- [[main()_13]] - `contains` [EXTRACTED]
+- [[main()_2]] - `contains` [EXTRACTED]
 - [[test_skill_guard.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator
+#graphify/code #graphify/EXTRACTED #community/Recommendation

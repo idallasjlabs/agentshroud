@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "_make_stream_app_state()"
+community: "group_config.py"
 location: "L334"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_stream_app_state
+  - community/group_configpy
 ---
 
 # persist_group_delete()
@@ -17,6 +17,6 @@ tags:
 - [[_save_overrides()]] - `calls` [EXTRACTED]
 - [[delete_group()]] - `calls` [EXTRACTED]
 - [[group_config.py]] - `contains` [EXTRACTED]
-- [[router.py_1]] - `imports` [EXTRACTED]
+- [[socrouter.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_stream_app_state
+#graphify/code #graphify/EXTRACTED #community/group_configpy
