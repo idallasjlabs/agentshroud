@@ -1,18 +1,18 @@
 ---
 source_file: "INCIDENT_2026-10-16_conduit-outage.md"
-type: "concept"
-community: "setup-secrets.sh"
-location: "L205-L222"
+type: "rationale"
+community: "AgentTarget"
+location: "INCIDENT_2026-10-16_conduit-outage.md:205"
 tags:
-  - graphify/concept
+  - graphify/rationale
   - graphify/EXTRACTED
-  - community/setup-secretssh
+  - community/AgentTarget
 ---
 
 # lazydocker docker.sock connection leak
 
 ## Connections
+- [[Dead docker.sock forward repair (step 1a-bis)]] - `conceptually_related_to` [EXTRACTED]
 - [[Incident 2026-10-16 ConduitHermes instability]] - `references` [EXTRACTED]
-- [[_prune_docker]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/setup-secretssh
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

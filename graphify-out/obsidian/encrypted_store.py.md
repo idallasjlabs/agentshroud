@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "KeyVault"
+community: "KillSwitchMonitor"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/KillSwitchMonitor
 ---
 
 # encrypted_store.py
@@ -19,4 +19,4 @@ tags:
 - [[canary.py]] - `references` [EXTRACTED]
 - [[env_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

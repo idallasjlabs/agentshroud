@@ -1,17 +1,23 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
-type: "document"
-community: "llm_proxy.py"
+source_file: "gateway/proxy/llm_proxy.py"
+type: "code"
+community: "LLMProxy"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/llm_proxypy
+  - community/LLMProxy
 ---
 
-# llm_proxy.py.md
+# llm_proxy.py
 
 ## Connections
-- [[llm_proxy.py_1]] - `contains` [EXTRACTED]
+- [[LLM API Reverse Proxy — intercepts all OpenClaw ↔ (AnthropicOpenAIGoogle)…]] - `rationale_for` [EXTRACTED]
+- [[LLMProxy]] - `contains` [EXTRACTED]
+- [[StreamHead]] - `contains` [EXTRACTED]
+- [[asyncio]] - `imports` [EXTRACTED]
+- [[gatewayteststest_llm_proxy_thinking_suppression.py (8 cases)]] - `imports_from` [EXTRACTED]
+- [[test_llm_proxy.py]] - `imports_from` [EXTRACTED]
+- [[test_llm_proxy_local_parity.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

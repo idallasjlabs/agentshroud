@@ -19,7 +19,7 @@ tags:
 - [[For the commit hook and native AGENTS.md integration]] - `contains` [EXTRACTED]
 - [[Honesty Rules]] - `contains` [EXTRACTED]
 - [[Interpreter guard for subcommands]] - `contains` [EXTRACTED]
-- [[Usage_68]] - `contains` [EXTRACTED]
+- [[Usage_66]] - `contains` [EXTRACTED]
 - [[What You Must Do When Invoked]] - `contains` [EXTRACTED]
 - [[What graphify is for]] - `contains` [EXTRACTED]
 

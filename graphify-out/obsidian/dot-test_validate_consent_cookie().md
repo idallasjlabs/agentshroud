@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "OAuthSecurityValidator"
+community: "AlertDispatcher"
 location: "L192"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OAuthSecurityValidator
+  - community/AlertDispatcher
 ---
 
 # .test_validate_consent_cookie()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestConsentCookieBinding]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

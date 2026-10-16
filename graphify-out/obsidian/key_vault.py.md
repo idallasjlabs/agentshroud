@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "KeyVault"
+community: "AgentTarget"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/AgentTarget
 ---
 
 # key_vault.py
@@ -25,4 +25,4 @@ tags:
 - [[env_guard.py]] - `semantically_similar_to` [INFERRED]
 - [[log_sanitizer.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

@@ -12,6 +12,6 @@ tags:
 # .test_unknown_bot_clean_score()
 
 ## Connections
-- [[TestComputeBotScorecard]] - `method` [EXTRACTED]
+- [[TestComputeBotScorecard_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestComputeBotScorecard

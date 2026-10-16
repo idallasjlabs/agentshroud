@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
 community: "test_a2a_policy.py"
-location: "L332"
+location: "L397"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # .wait_for_decision()
 
 ## Connections
-- [[_StubApprovalQueue]] - `method` [EXTRACTED]
+- [[_LegacyStubApprovalQueue]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

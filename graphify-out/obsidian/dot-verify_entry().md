@@ -15,7 +15,7 @@ tags:
 - [[dot-_verify_url()]] - `calls` [EXTRACTED]
 - [[dot-verify_report()]] - `calls` [EXTRACTED]
 - [[CitationVerifier]] - `method` [EXTRACTED]
-- [[CompetitorEntry_1]] - `references` [EXTRACTED]
+- [[CompetitorEntry]] - `references` [EXTRACTED]
 - [[DraftEntry]] - `references` [EXTRACTED]
 - [[Return a CompetitorEntry with only its valid citations, or None.          None m]] - `rationale_for` [EXTRACTED]
 

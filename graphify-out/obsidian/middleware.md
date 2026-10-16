@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Request"
+community: "agentshroud-blueteam/SKILL.md"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Request
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # middleware
@@ -16,4 +16,4 @@ tags:
 - [[log_requests()]] - `references` [EXTRACTED]
 - [[security_headers_middleware()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Request
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

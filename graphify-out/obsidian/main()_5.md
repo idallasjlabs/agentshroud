@@ -1,5 +1,5 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
+source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
 community: "SecureBrowser"
 location: "L431"
@@ -12,14 +12,14 @@ tags:
 # main()
 
 ## Connections
-- [[dot-_take_screenshot()_1]] - `calls` [EXTRACTED]
-- [[dot-click()_1]] - `calls` [EXTRACTED]
-- [[dot-close()_3]] - `calls` [EXTRACTED]
-- [[dot-extract()_1]] - `calls` [EXTRACTED]
-- [[dot-fill_field()_1]] - `calls` [EXTRACTED]
-- [[dot-navigate()_1]] - `calls` [EXTRACTED]
-- [[CLI interface for SecureBrowser_1]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser_1]] - `calls` [EXTRACTED]
-- [[hermesskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
+- [[dot-_take_screenshot()]] - `calls` [EXTRACTED]
+- [[dot-agentsskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
+- [[dot-click()]] - `calls` [EXTRACTED]
+- [[dot-close()_4]] - `calls` [EXTRACTED]
+- [[dot-extract()]] - `calls` [EXTRACTED]
+- [[dot-fill_field()]] - `calls` [EXTRACTED]
+- [[dot-navigate()]] - `calls` [EXTRACTED]
+- [[CLI interface for SecureBrowser]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser

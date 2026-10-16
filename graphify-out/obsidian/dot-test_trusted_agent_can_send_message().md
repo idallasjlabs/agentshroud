@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "PIIConfig"
+community: "PipelineAction"
 location: "L267"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/PipelineAction
 ---
 
 # .test_trusted_agent_can_send_message()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestE2E07TrustEnforcement]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

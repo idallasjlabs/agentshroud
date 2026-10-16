@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "StdioConnection"
 location: "L210"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/StdioConnection
 ---
 
 # .test_start_without_env_passes_none()
@@ -17,4 +17,4 @@ tags:
 - [[StdioConnection]] - `calls` [EXTRACTED]
 - [[TestStdioConnection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

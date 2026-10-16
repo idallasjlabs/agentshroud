@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "PIIConfig"
+community: "TrustConfig"
 location: "L211"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/TrustConfig
 ---
 
 # .test_thresholds_populated()
 
 ## Connections
-- [[TestConfig]] - `method` [EXTRACTED]
+- [[TestConfig_1]] - `method` [EXTRACTED]
 - [[TrustConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

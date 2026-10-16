@@ -12,7 +12,7 @@ tags:
 # load_removed_collaborator_ids()
 
 ## Connections
-- [[dot-__post_init__()_9]] - `calls` [EXTRACTED]
+- [[dot-__post_init__()_6]] - `calls` [EXTRACTED]
 - [[Read persisted collaborator-removal exclusions from disk (Bug 1 fix).      Appli]] - `rationale_for` [EXTRACTED]
 - [[_load_collab_store()]] - `calls` [EXTRACTED]
 - [[rbac_config.py]] - `contains` [EXTRACTED]

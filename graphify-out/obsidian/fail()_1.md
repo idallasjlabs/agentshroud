@@ -1,22 +1,19 @@
 ---
-source_file: "scripts/verify-proxy.sh"
+source_file: "scripts/check-vendor-compat.sh"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L23"
+community: "check-vendor-compat.sh"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/check-vendor-compatsh
 ---
 
 # fail()
 
 ## Connections
-- [[run_bypass()]] - `calls` [EXTRACTED]
-- [[run_canary()]] - `calls` [EXTRACTED]
-- [[run_chain()]] - `calls` [EXTRACTED]
-- [[run_full()]] - `calls` [EXTRACTED]
-- [[run_quick()]] - `calls` [EXTRACTED]
-- [[verify-proxy.sh]] - `defines` [EXTRACTED]
+- [[check-vendor-compat.sh]] - `defines` [EXTRACTED]
+- [[check_hermes()]] - `calls` [EXTRACTED]
+- [[check_openclaw()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "PIIConfig"
+community: "ContextSegment"
 location: "L378"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ContextSegment
 ---
 
 # .test_write_baseline_json()
@@ -15,6 +15,6 @@ tags:
 - [[PromptGuard]] - `calls` [EXTRACTED]
 - [[Run standard benchmarks and write results to .benchmarksbaseline-v1.0.0.json.]] - `rationale_for` [EXTRACTED]
 - [[TestBenchmarkBaseline]] - `method` [EXTRACTED]
-- [[TrustManager]] - `calls` [EXTRACTED]
+- [[TrustManager_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

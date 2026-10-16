@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_trust_manager.py"
+source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "PIIConfig"
-location: "L27"
+community: "AgentShroud v0.7.0 Blue Team Security Audit Report"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/AgentShroud_v070_Blue_Team_Security_Audit_Report
 ---
 
 # manager()
 
 ## Connections
-- [[Create a trust manager with temp DB.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager]] - `calls` [EXTRACTED]
-- [[test_trust_manager.py]] - `contains` [EXTRACTED]
+- [[SessionManager]] - `calls` [EXTRACTED]
+- [[test_session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_v070_Blue_Team_Security_Audit_Report

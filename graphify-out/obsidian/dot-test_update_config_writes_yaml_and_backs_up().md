@@ -12,6 +12,6 @@ tags:
 # .test_update_config_writes_yaml_and_backs_up()
 
 ## Connections
-- [[TestConfig_1]] - `method` [EXTRACTED]
+- [[TestConfig]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ModeRequest

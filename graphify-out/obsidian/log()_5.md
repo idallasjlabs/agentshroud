@@ -1,23 +1,20 @@
 ---
-source_file: "docker/scripts/security-scan.sh"
+source_file: "docker/scripts/colima-health-check.sh"
 type: "code"
-community: "FR3: System Integrity"
-location: "L18"
+community: "AgentTarget"
+location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FR3_System_Integrity
+  - community/AgentTarget
 ---
 
 # log()
 
 ## Connections
-- [[alert_if_critical()]] - `calls` [EXTRACTED]
-- [[dockerscriptssecurity-scan.sh]] - `defines` [EXTRACTED]
-- [[run_clamav()]] - `calls` [EXTRACTED]
-- [[run_oscap()]] - `calls` [EXTRACTED]
-- [[run_sbom()]] - `calls` [EXTRACTED]
-- [[run_trivy()]] - `calls` [EXTRACTED]
-- [[security-scan.sh script_1]] - `calls` [EXTRACTED]
+- [[DOCKER-USER iptables reapply + verify (step 3)]] - `references` [EXTRACTED]
+- [[colima-health-check.sh]] - `defines` [EXTRACTED]
+- [[colima-health-check.sh script]] - `calls` [EXTRACTED]
+- [[notify()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

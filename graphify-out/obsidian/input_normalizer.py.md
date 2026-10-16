@@ -1,17 +1,20 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
-type: "document"
-community: "input_normalizer.py"
+source_file: "gateway/security/input_normalizer.py"
+type: "code"
+community: "ContextSegment"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/input_normalizerpy
+  - community/ContextSegment
 ---
 
-# input_normalizer.py.md
+# input_normalizer.py
 
 ## Connections
-- [[input_normalizer.py_1]] - `contains` [EXTRACTED]
+- [[detect_base64_payloads()]] - `contains` [EXTRACTED]
+- [[egress_filter.py_1]] - `references` [EXTRACTED]
+- [[normalize_input()]] - `contains` [EXTRACTED]
+- [[strip_markdown_exfil()]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/input_normalizerpy
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

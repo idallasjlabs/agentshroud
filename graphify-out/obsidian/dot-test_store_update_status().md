@@ -12,7 +12,7 @@ tags:
 # .test_store_update_status()
 
 ## Connections
-- [[ApprovalQueueItem_4]] - `calls` [EXTRACTED]
+- [[ApprovalQueueItem_2]] - `calls` [EXTRACTED]
 - [[Status updates persist.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalStorePersistence]] - `method` [EXTRACTED]
 

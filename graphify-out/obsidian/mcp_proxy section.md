@@ -12,6 +12,6 @@ tags:
 # mcp_proxy section
 
 ## Connections
-- [[agentshroud.yaml]] - `contains` [EXTRACTED]
+- [[agentshroud.yaml_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/egress_filterpy

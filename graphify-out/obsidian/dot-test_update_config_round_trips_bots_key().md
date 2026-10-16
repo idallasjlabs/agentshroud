@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[SCRUM-107 the `bots` top-level key must be allowed through PUT         apicon]] - `rationale_for` [EXTRACTED]
-- [[TestConfig_1]] - `method` [EXTRACTED]
+- [[TestConfig]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ModeRequest

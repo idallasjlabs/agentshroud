@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "AuditChain"
+community: "PipelineAction"
 location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/PipelineAction
 ---
 
 # .test_window_capped_at_max_entries()
@@ -15,4 +15,4 @@ tags:
 - [[AuditChain]] - `calls` [EXTRACTED]
 - [[TestAuditChainBounded]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

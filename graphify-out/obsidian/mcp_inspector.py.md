@@ -1,17 +1,25 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md"
-type: "document"
-community: "mcp_inspector.py"
+source_file: "gateway/proxy/mcp_inspector.py"
+type: "code"
+community: "MCPPermissionManager"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/mcp_inspectorpy
+  - community/MCPPermissionManager
 ---
 
-# mcp_inspector.py.md
+# mcp_inspector.py
 
 ## Connections
-- [[mcp_inspector.py_1]] - `contains` [EXTRACTED]
+- [[Enum_3]] - `imports_from` [EXTRACTED]
+- [[FindingType]] - `contains` [EXTRACTED]
+- [[InspectionFinding]] - `contains` [EXTRACTED]
+- [[InspectionResult]] - `contains` [EXTRACTED]
+- [[MCPInspector_1]] - `contains` [EXTRACTED]
+- [[ThreatLevel_2]] - `contains` [EXTRACTED]
+- [[mcp_proxy.py]] - `imports_from` [EXTRACTED]
+- [[proxy__init__.py]] - `re_exports` [EXTRACTED]
+- [[test_mcp_proxy.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

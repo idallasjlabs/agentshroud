@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_multi_turn_tracker.py"
+source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "MultiTurnTracker"
-location: "L360"
+community: "TestToolChainAnalyzer"
+location: "L383"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MultiTurnTracker
+  - community/TestToolChainAnalyzer
 ---
 
 # .test_session_cleanup()
 
 ## Connections
 - [[Test cleanup of old sessions._1]] - `rationale_for` [EXTRACTED]
-- [[TestMultiTurnTracker_1]] - `method` [EXTRACTED]
+- [[TestToolChainAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

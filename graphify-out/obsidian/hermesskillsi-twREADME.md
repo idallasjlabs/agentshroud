@@ -12,6 +12,6 @@ tags:
 # hermes/skills/i-tw/README.md
 
 ## Connections
-- [[Technical Writer (TW)_1]] - `contains` [EXTRACTED]
+- [[Technical Writer (TW)_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

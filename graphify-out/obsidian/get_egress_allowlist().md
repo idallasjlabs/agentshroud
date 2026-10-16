@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "TestSSRFDetection"
 location: "L942"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/TestSSRFDetection
 ---
 
 # get_egress_allowlist()
@@ -17,4 +17,4 @@ tags:
 - [[get_egress_config()]] - `calls` [EXTRACTED]
 - [[management.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

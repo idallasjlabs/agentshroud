@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "code"
-community: "MultiTurnTracker"
+community: "TrustConfig"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MultiTurnTracker
+  - community/TrustConfig
 ---
 
 # mock_alert_callback()
@@ -15,4 +15,4 @@ tags:
 - [[Create a mock alert callback for testing._1]] - `rationale_for` [EXTRACTED]
 - [[test_multi_turn_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

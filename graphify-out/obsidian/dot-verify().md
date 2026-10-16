@@ -15,7 +15,7 @@ tags:
 - [[dot-_prune_used()]] - `calls` [EXTRACTED]
 - [[dot-_totp_for_counter()]] - `calls` [EXTRACTED]
 - [[dot-is_required()]] - `calls` [EXTRACTED]
-- [[MFAGuard_1]] - `method` [EXTRACTED]
+- [[MFAGuard_2]] - `method` [EXTRACTED]
 - [[MFAResult]] - `references` [EXTRACTED]
 - [[Verify the second factor for a high-risk action.          Args             acti]] - `rationale_for` [EXTRACTED]
 

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "TrustConfig"
-location: "L307"
+community: "PIIConfig"
+location: "L118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/PIIConfig
 ---
 
 # .test_success_increases_score()
 
 ## Connections
-- [[TestTrustManager]] - `method` [EXTRACTED]
+- [[TestTrustProgression]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

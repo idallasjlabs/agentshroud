@@ -23,7 +23,7 @@ tags:
 - [[agentshroud-ssh-exec.sh helper]] - `references` [EXTRACTED]
 - [[approval_queue.py]] - `references` [EXTRACTED]
 - [[marvin (lab host)]] - `references` [EXTRACTED]
-- [[prompt_guard.py]] - `references` [EXTRACTED]
+- [[prompt_guard.py_1]] - `references` [EXTRACTED]
 - [[raspberrypi (lab host)]] - `references` [EXTRACTED]
 - [[tirith command-safety scanner]] - `references` [EXTRACTED]
 - [[trillian (lab host)]] - `references` [EXTRACTED]

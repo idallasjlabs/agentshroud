@@ -12,7 +12,7 @@ tags:
 # .test_timeout_auto_deny()
 
 ## Connections
-- [[ApprovalRequest_5]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_1]] - `calls` [EXTRACTED]
 - [[Test timeout with auto-deny.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalWorkflow]] - `method` [EXTRACTED]
 

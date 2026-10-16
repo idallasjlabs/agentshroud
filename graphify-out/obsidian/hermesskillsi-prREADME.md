@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-pr/README.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md"
+community: "ApprovalHardening"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/ApprovalHardening
 ---
 
 # hermes/skills/i-pr/README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Pull Request Generator (PR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/document #graphify/EXTRACTED #community/ApprovalHardening

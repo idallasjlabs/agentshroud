@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "MCPInspector"
+community: "MCPPermissionManager"
 location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPInspector
+  - community/MCPPermissionManager
 ---
 
 # inspector()
 
 ## Connections
-- [[MCPInspector]] - `calls` [EXTRACTED]
+- [[MCPInspector_1]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPInspector
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

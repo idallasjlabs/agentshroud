@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "AlertDispatcher"
+community: "KillSwitchMonitor"
 location: "L725"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/KillSwitchMonitor
 ---
 
 # .test_wrong_key_fails()
@@ -15,4 +15,4 @@ tags:
 - [[EncryptedStore]] - `calls` [EXTRACTED]
 - [[TestCryptography]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

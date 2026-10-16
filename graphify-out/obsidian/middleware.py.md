@@ -1,28 +1,70 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
-type: "document"
-community: "middleware.py"
-location: "L10"
+source_file: "gateway/ingest_api/middleware.py"
+type: "code"
+community: "MiddlewareManager"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/MiddlewareManager
 ---
 
 # middleware.py
 
 ## Connections
-- [[Config Keys Read_2]] - `contains` [EXTRACTED]
-- [[Environment Variables Used_3]] - `contains` [EXTRACTED]
-- [[FileSandbox Configuration (hardcoded in __init__)]] - `contains` [EXTRACTED]
-- [[Imports From  Exports To_2]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_15]] - `contains` [EXTRACTED]
-- [[Known Issues  Notes_3]] - `contains` [EXTRACTED]
-- [[Purpose_122]] - `contains` [EXTRACTED]
-- [[Related_19]] - `contains` [EXTRACTED]
-- [[Responsibilities_17]] - `contains` [EXTRACTED]
-- [[Security Modules Initialized]] - `contains` [EXTRACTED]
-- [[middleware.py_2]] - `contains` [EXTRACTED]
-- [[process_request Flow]] - `contains` [EXTRACTED]
+- [[Action_2]] - `imports` [EXTRACTED]
+- [[AgentRegistry]] - `imports` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
+- [[AlertDispatcher]] - `imports` [EXTRACTED]
+- [[ApprovalHardening]] - `imports` [EXTRACTED]
+- [[ApprovalHardeningConfig]] - `imports` [EXTRACTED]
+- [[BrowserSecurityGuard]] - `imports` [EXTRACTED]
+- [[ConsentFramework]] - `imports` [EXTRACTED]
+- [[ContextGuard]] - `imports` [EXTRACTED]
+- [[DNSFilter]] - `imports` [EXTRACTED]
+- [[DNSFilterConfig]] - `imports` [EXTRACTED]
+- [[DriftDetector]] - `imports` [EXTRACTED]
+- [[EgressMonitor]] - `imports` [EXTRACTED]
+- [[EgressMonitorConfig]] - `imports` [EXTRACTED]
+- [[EnvironmentGuard]] - `imports` [EXTRACTED]
+- [[FileSandbox]] - `imports` [EXTRACTED]
+- [[FileSandboxConfig]] - `imports` [EXTRACTED]
+- [[GitGuard]] - `imports` [EXTRACTED]
+- [[KeyRotationManager]] - `imports` [EXTRACTED]
+- [[KillSwitchMonitor]] - `imports` [EXTRACTED]
+- [[LogSanitizer]] - `imports` [EXTRACTED]
+- [[MemoryIntegrityMonitor]] - `imports` [EXTRACTED]
+- [[MemoryLifecycleManager]] - `imports` [EXTRACTED]
+- [[MemorySecurityConfig]] - `imports` [EXTRACTED]
+- [[MetadataGuard]] - `imports` [EXTRACTED]
+- [[MiddlewareManager]] - `contains` [EXTRACTED]
+- [[MiddlewareResult]] - `contains` [EXTRACTED]
+- [[MultiTurnTracker]] - `imports` [EXTRACTED]
+- [[NetworkValidator]] - `imports` [EXTRACTED]
+- [[OAuthSecurityValidator]] - `imports` [EXTRACTED]
+- [[OutputCanary]] - `imports` [EXTRACTED]
+- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PathIsolationConfig]] - `imports` [EXTRACTED]
+- [[PathIsolationManager]] - `imports` [EXTRACTED]
+- [[RBACConfig_3]] - `imports` [EXTRACTED]
+- [[RBACManager_1]] - `imports` [EXTRACTED]
+- [[Resource_2]] - `imports` [EXTRACTED]
+- [[ResourceGuard]] - `imports` [EXTRACTED]
+- [[SessionManager]] - `imports` [EXTRACTED]
+- [[SubagentMonitor]] - `imports` [EXTRACTED]
+- [[SubagentMonitorConfig]] - `imports` [EXTRACTED]
+- [[ToolChainAnalyzer]] - `imports` [EXTRACTED]
+- [[ToolResultInjectionScanner]] - `imports` [EXTRACTED]
+- [[ToolResultPIIConfig]] - `imports` [EXTRACTED]
+- [[ToolResultSanitizer]] - `imports` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `imports` [EXTRACTED]
+- [[ToolResultSanitizerConfig]] - `imports` [EXTRACTED]
+- [[ToolTier]] - `imports` [EXTRACTED]
+- [[UserSessionManager]] - `imports` [EXTRACTED]
+- [[XMLLeakFilter]] - `imports` [EXTRACTED]
+- [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[normalize_input()]] - `imports` [EXTRACTED]
+- [[test_middleware_coverage.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

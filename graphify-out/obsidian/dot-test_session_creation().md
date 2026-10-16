@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "UserSessionManager"
+community: "TestFabricatedSecurityNotice"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/TestFabricatedSecurityNotice
 ---
 
 # .test_session_creation()
@@ -15,4 +15,4 @@ tags:
 - [[Test that user sessions are created properly.]] - `rationale_for` [EXTRACTED]
 - [[TestUserSessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Action"
+community: "MiddlewareManager"
 location: "L297"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Action
+  - community/MiddlewareManager
 ---
 
 # .test_user_management_hierarchy()
@@ -15,4 +15,4 @@ tags:
 - [[Test user management hierarchy.]] - `rationale_for` [EXTRACTED]
 - [[TestRBACManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Action
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

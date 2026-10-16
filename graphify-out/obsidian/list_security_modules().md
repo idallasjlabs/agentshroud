@@ -12,7 +12,7 @@ tags:
 # list_security_modules()
 
 ## Connections
-- [[AuthRequired]] - `references` [EXTRACTED]
+- [[AuthRequired_1]] - `references` [EXTRACTED]
 - [[List all security modules and their status.]] - `rationale_for` [EXTRACTED]
 - [[ProxyDashboard]] - `semantically_similar_to` [INFERRED]
 - [[get]] - `references` [EXTRACTED]

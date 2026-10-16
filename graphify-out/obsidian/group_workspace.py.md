@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[GroupAccessDenied]] - `contains` [EXTRACTED]
 - [[GroupWorkspaceManager]] - `contains` [EXTRACTED]
-- [[RBACConfig_4]] - `imports` [EXTRACTED]
+- [[RBACConfig_3]] - `imports` [EXTRACTED]
 - [[SharedMemoryManager]] - `imports` [EXTRACTED]
 - [[TeamsConfig_2]] - `imports` [EXTRACTED]
 - [[WorkspaceContext]] - `contains` [EXTRACTED]

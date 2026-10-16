@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[RedactionResult_3]] - `calls` [EXTRACTED]
+- [[RedactionResult_2]] - `calls` [EXTRACTED]
 - [[Test that different tools get different PII configurations]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
+- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

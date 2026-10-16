@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # .verify_pkce()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OAuthSecurityValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

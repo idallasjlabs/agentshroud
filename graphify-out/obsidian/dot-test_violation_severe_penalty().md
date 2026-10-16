@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "TrustConfig"
+community: "PIIConfig"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/PIIConfig
 ---
 
 # .test_violation_severe_penalty()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustProgression]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

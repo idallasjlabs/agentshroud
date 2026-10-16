@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "RBACConfig"
+community: "ProxyAction"
 location: "L305"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/ProxyAction
 ---
 
 # .test_terminal_tool_in_private_tools()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCVE2026_9367TerminalToolDenied]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

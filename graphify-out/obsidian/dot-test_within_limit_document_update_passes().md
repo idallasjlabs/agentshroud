@@ -15,7 +15,7 @@ tags:
 - [[FakeRBAC]] - `calls` [EXTRACTED]
 - [[Inbound update with document.file_size within limit must pass (CVE-2026-32049).]] - `rationale_for` [EXTRACTED]
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestFileDownload]] - `method` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 

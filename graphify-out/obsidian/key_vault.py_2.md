@@ -16,10 +16,10 @@ tags:
 - [[Function Details_7]] - `contains` [EXTRACTED]
 - [[Generic Key Patterns Detected]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_7]] - `contains` [EXTRACTED]
-- [[Purpose_110]] - `contains` [EXTRACTED]
+- [[Purpose_107]] - `contains` [EXTRACTED]
 - [[Related_11]] - `contains` [EXTRACTED]
 - [[Responsibilities_9]] - `contains` [EXTRACTED]
-- [[Threat Model_7]] - `contains` [EXTRACTED]
+- [[Threat Model_8]] - `contains` [EXTRACTED]
 - [[key_vault.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

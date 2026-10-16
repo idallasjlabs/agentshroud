@@ -16,6 +16,6 @@ tags:
 - [[cmd_dump_op_refs]] - `calls` [EXTRACTED]
 - [[op_get]] - `calls` [EXTRACTED]
 - [[setup-secrets.sh]] - `defines` [EXTRACTED]
-- [[setup_ephemeral_secrets]] - `references` [EXTRACTED]
+- [[setup_ephemeral_secrets()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/setup-secretssh

@@ -12,7 +12,7 @@ tags:
 # .test_store_persists_across_reopen()
 
 ## Connections
-- [[ApprovalQueueItem_4]] - `calls` [EXTRACTED]
+- [[ApprovalQueueItem_2]] - `calls` [EXTRACTED]
 - [[ApprovalStore]] - `calls` [EXTRACTED]
 - [[Items survive store closereopen cycle.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalStorePersistence]] - `method` [EXTRACTED]

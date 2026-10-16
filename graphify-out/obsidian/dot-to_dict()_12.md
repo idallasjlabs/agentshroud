@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/security/delegation.py"
 type: "code"
-community: "AuditChain"
-location: "L88"
+community: "DelegationManager"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/DelegationManager
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_69]] - `references` [EXTRACTED]
-- [[PipelineResult_1]] - `method` [EXTRACTED]
+- [[dot-_save()]] - `calls` [EXTRACTED]
+- [[Delegation_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/DelegationManager

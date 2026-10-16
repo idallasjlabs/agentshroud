@@ -12,6 +12,6 @@ tags:
 # .test_summary_top_rules()
 
 ## Connections
-- [[TestFalcoSummary]] - `method` [EXTRACTED]
+- [[TestFalcoSummary_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

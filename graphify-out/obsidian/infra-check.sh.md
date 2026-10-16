@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/infra-check.sh"
 type: "code"
-community: "ProxyDashboard"
+community: "egress_filter.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ProxyDashboard
+  - community/egress_filterpy
 ---
 
 # infra-check.sh
@@ -16,4 +16,4 @@ tags:
 - [[preflight-check.sh]] - `semantically_similar_to` [INFERRED]
 - [[tailscale-check.sh]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/ProxyDashboard
+#graphify/code #graphify/INFERRED #community/egress_filterpy

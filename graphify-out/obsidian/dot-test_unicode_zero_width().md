@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "AgentRegistry"
+community: "TestPathIsolationManager"
 location: "L231"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/TestPathIsolationManager
 ---
 
 # .test_unicode_zero_width()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPromptGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager

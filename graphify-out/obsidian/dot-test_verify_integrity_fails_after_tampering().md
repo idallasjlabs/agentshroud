@@ -12,7 +12,7 @@ tags:
 # .test_verify_integrity_fails_after_tampering()
 
 ## Connections
-- [[CompetitiveIntelReport]] - `calls` [EXTRACTED]
+- [[CompetitiveIntelReport_1]] - `calls` [EXTRACTED]
 - [[TestIntelReportHashIntegrity]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

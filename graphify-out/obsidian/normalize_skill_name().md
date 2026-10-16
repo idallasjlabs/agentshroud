@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Normalize a skill name to lowercase hyphen-case.]] - `rationale_for` [EXTRACTED]
 - [[init_skill.py]] - `contains` [EXTRACTED]
-- [[main()_33]] - `calls` [EXTRACTED]
+- [[main()_35]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/init_skillpy

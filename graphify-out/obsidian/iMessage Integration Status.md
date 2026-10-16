@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/IMESSAGE_STATUS.md"
 type: "document"
-community: "iMessage Integration Status"
+community: "AuditChain"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iMessage_Integration_Status
+  - community/AuditChain
 ---
 
 # iMessage Integration Status
@@ -16,9 +16,9 @@ tags:
 - [[Current State Partially Working]] - `contains` [EXTRACTED]
 - [[Current Status Summary]] - `contains` [EXTRACTED]
 - [[IMESSAGE_STATUS]] - `contains` [EXTRACTED]
-- [[Next Steps_11]] - `contains` [EXTRACTED]
+- [[Next Steps]] - `contains` [EXTRACTED]
 - [[Solutions]] - `contains` [EXTRACTED]
 - [[The Error]] - `contains` [EXTRACTED]
-- [[What This Means_1]] - `contains` [EXTRACTED]
+- [[What This Means]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Status
+#graphify/document #graphify/EXTRACTED #community/AuditChain

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "PIIConfig"
+community: "CrossBotTrustLedger"
 location: "L369"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/CrossBotTrustLedger
 ---
 
 # .test_trust_escalation_attack()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[TestTrustManager]] - `method` [EXTRACTED]
 - [[TrustConfig]] - `calls` [EXTRACTED]
-- [[TrustManager]] - `calls` [EXTRACTED]
+- [[TrustManager_4]] - `calls` [EXTRACTED]
 - [[Verify you can't jump from UNTRUSTED to FULL in one step.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

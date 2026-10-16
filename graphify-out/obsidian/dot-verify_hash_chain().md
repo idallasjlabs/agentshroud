@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-compute_entry_hash()]] - `calls` [EXTRACTED]
-- [[AuditEvent]] - `calls` [EXTRACTED]
-- [[AuditStore_1]] - `method` [EXTRACTED]
+- [[AuditEvent_1]] - `calls` [EXTRACTED]
+- [[AuditStore]] - `method` [EXTRACTED]
 - [[Verify the integrity of the hash chain.          Args             start_id Sta]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AuditEvent

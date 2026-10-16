@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-verify_entry()]] - `calls` [EXTRACTED]
 - [[CitationVerifier]] - `method` [EXTRACTED]
-- [[CompetitiveIntelReport_1]] - `references` [EXTRACTED]
+- [[CompetitiveIntelReport]] - `references` [EXTRACTED]
 - [[DraftEntry]] - `references` [EXTRACTED]
 - [[Verify every draft claim; return a report of only verified claims.          Clai]] - `rationale_for` [EXTRACTED]
 

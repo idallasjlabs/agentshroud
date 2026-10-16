@@ -12,7 +12,7 @@ tags:
 # full_security_report()
 
 ## Connections
-- [[AuthRequired]] - `references` [EXTRACTED]
+- [[AuthRequired_1]] - `references` [EXTRACTED]
 - [[Scored security health report — grade, per-tool scores, recommendations.…]] - `rationale_for` [EXTRACTED]
 - [[get]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]

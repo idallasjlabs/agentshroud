@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/gog/SKILL.md"
 type: "document"
-community: "SSH Configuration Guide"
+community: "telegram_proxy.py"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSH_Configuration_Guide
+  - community/telegram_proxypy
 ---
 
 # gog
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[gogSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SSH_Configuration_Guide
+#graphify/document #graphify/EXTRACTED #community/telegram_proxypy

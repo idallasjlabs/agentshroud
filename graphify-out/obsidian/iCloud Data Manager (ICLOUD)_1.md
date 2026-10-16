@@ -12,9 +12,9 @@ tags:
 # iCloud Data Manager (ICLOUD)
 
 ## Connections
-- [[Purpose_31]] - `contains` [EXTRACTED]
-- [[Related Skills_17]] - `contains` [EXTRACTED]
-- [[Usage_21]] - `contains` [EXTRACTED]
+- [[Purpose_21]] - `contains` [EXTRACTED]
+- [[Related Skills_10]] - `contains` [EXTRACTED]
+- [[Usage_13]] - `contains` [EXTRACTED]
 - [[hermesskillsi-icloudREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD

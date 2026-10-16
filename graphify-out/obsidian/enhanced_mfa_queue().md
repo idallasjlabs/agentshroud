@@ -15,7 +15,7 @@ tags:
 - [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
 - [[ApprovalStore]] - `calls` [EXTRACTED]
 - [[EnhancedApprovalQueue_1]] - `calls` [EXTRACTED]
-- [[MFAGuard_1]] - `calls` [EXTRACTED]
+- [[MFAGuard_2]] - `calls` [EXTRACTED]
 - [[ToolRiskConfig]] - `calls` [EXTRACTED]
 - [[test_mfa_guard.py]] - `contains` [EXTRACTED]
 

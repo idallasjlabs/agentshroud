@@ -1,18 +1,17 @@
 ---
-source_file: "docker/scripts/security-report-retention.sh"
+source_file: "tests/startup_smoke/test_sunday_upgrade_head_guard.sh"
 type: "code"
-community: "FR3: System Integrity"
-location: "L20"
+community: "Sunday Upgrade HEAD Guard Test"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FR3_System_Integrity
+  - community/Sunday_Upgrade_HEAD_Guard_Test
 ---
 
 # log()
 
 ## Connections
-- [[security-report-retention.sh]] - `defines` [EXTRACTED]
-- [[security-report-retention.sh script]] - `calls` [EXTRACTED]
+- [[test_sunday_upgrade_head_guard.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity
+#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_HEAD_Guard_Test

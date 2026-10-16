@@ -12,15 +12,15 @@ tags:
 # email_send()
 
 ## Connections
-- [[ApprovalRequest_5]] - `calls` [EXTRACTED]
-- [[AuthRequired_2]] - `references` [EXTRACTED]
+- [[ApprovalRequest_1]] - `calls` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
 - [[Email send gateway (P3 channel ownership).      The bot submits email send requ]] - `rationale_for` [EXTRACTED]
 - [[EmailSendRequest]] - `references` [EXTRACTED]
 - [[EmailSendResponse]] - `calls` [EXTRACTED]
 - [[GatewayEmailService_1]] - `calls` [EXTRACTED]
 - [[JSONResponse]] - `calls` [INFERRED]
 - [[Owner-allowlist checked before PII sanitisation to avoid CVEdate-dense body collapse]] - `rationale_for` [EXTRACTED]
-- [[Request_6]] - `references` [EXTRACTED]
+- [[Request_1]] - `references` [EXTRACTED]
 - [[_is_email_recipient_allowed()]] - `calls` [EXTRACTED]
 - [[email_send_owner()]] - `calls` [EXTRACTED]
 - [[forward.py]] - `contains` [EXTRACTED]

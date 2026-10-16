@@ -12,7 +12,7 @@ tags:
 # egress_pending()
 
 ## Connections
-- [[AuthRequired]] - `references` [EXTRACTED]
+- [[AuthRequired_1]] - `references` [EXTRACTED]
 - [[List pending interactive egress approval requests.]] - `rationale_for` [EXTRACTED]
 - [[get]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]

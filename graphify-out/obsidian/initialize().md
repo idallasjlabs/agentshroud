@@ -12,6 +12,6 @@ tags:
 # initialize()
 
 ## Connections
-- [[Function Details_22]] - `contains` [EXTRACTED]
+- [[Function Details_21]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/ledgerpy

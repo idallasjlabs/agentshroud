@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[dot-test_get_rootkit_events()]] - `calls` [EXTRACTED]
-- [[Any_13]] - `references` [EXTRACTED]
+- [[Any_61]] - `references` [EXTRACTED]
 - [[Filter alerts to rootkit detection events only.      Args         alerts List]] - `rationale_for` [EXTRACTED]
-- [[generate_summary()]] - `calls` [EXTRACTED]
+- [[generate_summary()_3]] - `calls` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
-- [[wazuh_client.py]] - `contains` [EXTRACTED]
+- [[wazuh_client.py_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

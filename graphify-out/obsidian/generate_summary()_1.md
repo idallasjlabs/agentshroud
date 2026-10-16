@@ -12,7 +12,7 @@ tags:
 # generate_summary()
 
 ## Connections
-- [[Any_38]] - `references` [EXTRACTED]
+- [[Any_48]] - `references` [EXTRACTED]
 - [[Generate a summary dict suitable for the health report.      Args         alert_1]] - `rationale_for` [EXTRACTED]
 - [[clamav_scanner.py]] - `contains` [EXTRACTED]
 - [[scanner_integration.py]] - `imports` [EXTRACTED]

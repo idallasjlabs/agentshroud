@@ -12,6 +12,6 @@ tags:
 # hermes/skills/i-sad/README.md
 
 ## Connections
-- [[System Audit Documentation]] - `contains` [EXTRACTED]
+- [[System Audit Documentation_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

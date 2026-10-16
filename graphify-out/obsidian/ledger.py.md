@@ -1,23 +1,27 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "document"
-community: "main.py.md"
-location: "L1"
+community: "ledger.py"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpymd
+  - community/ledgerpy
 ---
 
-# ledger.py.md
+# ledger.py
 
 ## Connections
-- [[Audit ledger (hash-verifiable chain)]] - `conceptually_related_to` [INFERRED]
-- [[Data Flow]] - `references` [EXTRACTED]
-- [[DataLedger]] - `references` [EXTRACTED]
-- [[LedgerConfig]] - `references` [EXTRACTED]
+- [[Config Keys Read_4]] - `contains` [EXTRACTED]
+- [[Database Schema_2]] - `contains` [EXTRACTED]
+- [[Environment Variables Used_6]] - `contains` [EXTRACTED]
+- [[Function Details_21]] - `contains` [EXTRACTED]
+- [[Imports From  Exports To_4]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_23]] - `contains` [EXTRACTED]
+- [[Known Issues  Notes_5]] - `contains` [EXTRACTED]
+- [[Purpose_140]] - `contains` [EXTRACTED]
+- [[Related_27]] - `contains` [EXTRACTED]
+- [[Responsibilities_25]] - `contains` [EXTRACTED]
 - [[ledger.py_2]] - `contains` [EXTRACTED]
-- [[main.py]] - `references` [EXTRACTED]
-- [[volumes]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpymd
+#graphify/document #graphify/EXTRACTED #community/ledgerpy

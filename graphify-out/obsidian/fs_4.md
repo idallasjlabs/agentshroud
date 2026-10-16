@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/browse.js"
+source_file: "docker/config/openclaw/apply-patches.js"
 type: "code"
-community: "Browser — Secure Browser Automation (SKILL)"
-location: "L7"
+community: "apply-patches.js"
+location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_SKILL
+  - community/apply-patchesjs
 ---
 
 # fs
 
 ## Connections
-- [[dot-agentsskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
+- [[apply-patches.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL
+#graphify/code #graphify/EXTRACTED #community/apply-patchesjs

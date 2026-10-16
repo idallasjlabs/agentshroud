@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_session_security.py"
+source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "SessionManager"
-location: "L29"
+community: "RBACConfig"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/RBACConfig
 ---
 
 # manager()
 
 ## Connections
-- [[SessionManager]] - `calls` [EXTRACTED]
-- [[test_session_security.py]] - `contains` [EXTRACTED]
+- [[GroupWorkspaceManager]] - `calls` [EXTRACTED]
+- [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

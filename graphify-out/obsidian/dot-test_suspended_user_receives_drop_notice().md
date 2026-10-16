@@ -12,11 +12,11 @@ tags:
 # .test_suspended_user_receives_drop_notice()
 
 ## Connections
-- [[dot-_make_proxy()_4]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_1]] - `calls` [EXTRACTED]
 - [[AsyncMock]] - `calls` [EXTRACTED]
 - [[Suspended user's dropped message must trigger a 'session suspended' notice.]] - `rationale_for` [EXTRACTED]
 - [[TestProgressiveLockdownUX]] - `method` [EXTRACTED]
-- [[_make_update()]] - `calls` [EXTRACTED]
+- [[_make_update()_1]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_wrap_response

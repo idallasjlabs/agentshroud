@@ -1,31 +1,23 @@
 ---
-source_file: "scripts/sunday-upgrade-apply.sh"
+source_file: "docker/scripts/security-scan.sh"
 type: "code"
-community: "sunday-upgrade-apply.sh"
-location: "L129"
+community: "FR3: System Integrity"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sunday-upgrade-applysh
+  - community/FR3_System_Integrity
 ---
 
 # log()
 
 ## Connections
-- [[_attempt_rollback()]] - `calls` [EXTRACTED]
-- [[_build_one_service()]] - `calls` [EXTRACTED]
-- [[_prune_build_cache()]] - `calls` [EXTRACTED]
-- [[_record_head()]] - `calls` [EXTRACTED]
-- [[_wait_for_docker()]] - `calls` [EXTRACTED]
-- [[check_noop_gate()]] - `calls` [EXTRACTED]
-- [[phase_apply()]] - `calls` [EXTRACTED]
-- [[phase_baseline()]] - `calls` [EXTRACTED]
-- [[phase_discover()]] - `calls` [EXTRACTED]
-- [[phase_preflight()]] - `calls` [EXTRACTED]
-- [[phase_scan()]] - `calls` [EXTRACTED]
-- [[phase_verify()]] - `calls` [EXTRACTED]
-- [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
-- [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
-- [[write_handoff()]] - `calls` [EXTRACTED]
+- [[alert_if_critical()]] - `calls` [EXTRACTED]
+- [[dockerscriptssecurity-scan.sh]] - `defines` [EXTRACTED]
+- [[run_clamav()]] - `calls` [EXTRACTED]
+- [[run_oscap()]] - `calls` [EXTRACTED]
+- [[run_sbom()]] - `calls` [EXTRACTED]
+- [[run_trivy()]] - `calls` [EXTRACTED]
+- [[security-scan.sh script_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh
+#graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity

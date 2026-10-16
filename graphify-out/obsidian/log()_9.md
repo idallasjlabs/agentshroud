@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/lib/sunday-scan.sh"
+source_file: "docker/scripts/security-scheduler.sh"
 type: "code"
-community: "Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)"
-location: "L51"
+community: "FR3: System Integrity"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+  - community/FR3_System_Integrity
 ---
 
 # log()
 
 ## Connections
-- [[sunday-scan.sh (Trivy scan gate library)]] - `defines` [EXTRACTED]
-- [[sunday_run_scan_gate()]] - `calls` [EXTRACTED]
+- [[security-scheduler.sh]] - `defines` [EXTRACTED]
+- [[security-scheduler.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+#graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity

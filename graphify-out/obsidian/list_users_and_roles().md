@@ -12,9 +12,9 @@ tags:
 # list_users_and_roles()
 
 ## Connections
-- [[AuthRequired]] - `references` [EXTRACTED]
+- [[AuthRequired_1]] - `references` [EXTRACTED]
 - [[List all users and their roles (admin+ only).]] - `rationale_for` [EXTRACTED]
-- [[Request_1]] - `references` [EXTRACTED]
+- [[Request_7]] - `references` [EXTRACTED]
 - [[get]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "make_event"
-location: "L35"
+community: "A2AGovernanceProxy"
+location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/A2AGovernanceProxy
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-get_recent()]] - `calls` [EXTRACTED]
-- [[Any_24]] - `references` [EXTRACTED]
-- [[GatewayEvent]] - `method` [EXTRACTED]
+- [[dot-get_summary()]] - `calls` [EXTRACTED]
+- [[A2APeer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

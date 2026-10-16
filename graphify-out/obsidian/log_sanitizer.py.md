@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "KeyVault"
+community: "AlertDispatcher"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/AlertDispatcher
 ---
 
 # log_sanitizer.py
@@ -18,6 +18,6 @@ tags:
 - [[get_sanitizer_stats()]] - `contains` [EXTRACTED]
 - [[install_log_sanitizer()]] - `contains` [EXTRACTED]
 - [[key_vault.py]] - `semantically_similar_to` [INFERRED]
-- [[session_security.py_2]] - `references` [EXTRACTED]
+- [[session_security.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

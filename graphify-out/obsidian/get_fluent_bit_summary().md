@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "test_scanner_integration.py"
+community: "test_collaborator_greeter.py"
 location: "L836"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/test_collaborator_greeterpy
 ---
 
 # get_fluent_bit_summary()
 
 ## Connections
-- [[Any_65]] - `references` [EXTRACTED]
-- [[Path_51]] - `calls` [EXTRACTED]
+- [[Any_64]] - `references` [EXTRACTED]
+- [[Path_26]] - `calls` [EXTRACTED]
 - [[Return Fluent Bit log collector status.      Fluent Bit is a log shipper, not a]] - `rationale_for` [EXTRACTED]
 - [[_is_fluent_bit_running()]] - `calls` [EXTRACTED]
 - [[aggregate_results()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy

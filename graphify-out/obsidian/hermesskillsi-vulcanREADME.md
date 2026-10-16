@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-vulcan/README.md"
 type: "document"
-community: "hermes/skills/i-bs/README.md"
+community: "ApprovalHardening"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/ApprovalHardening
 ---
 
 # hermes/skills/i-vulcan/README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Vulcan — Subject Matter Auditor]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/document #graphify/EXTRACTED #community/ApprovalHardening

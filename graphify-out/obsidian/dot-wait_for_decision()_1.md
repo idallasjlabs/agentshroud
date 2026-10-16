@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "StdioConnection"
-location: "L455"
+community: "MCPPolicyEngine"
+location: "L290"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/MCPPolicyEngine
 ---
 
 # .wait_for_decision()
 
 ## Connections
-- [[FakeApprovalQueue]] - `method` [EXTRACTED]
+- [[_FakeApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

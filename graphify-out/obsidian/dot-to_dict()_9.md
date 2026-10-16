@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/canary.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L50"
+community: "make_event"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/make_event
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_36]] - `references` [EXTRACTED]
-- [[CanaryResult_1]] - `method` [EXTRACTED]
+- [[dot-get_recent()]] - `calls` [EXTRACTED]
+- [[Any_51]] - `references` [EXTRACTED]
+- [[GatewayEvent]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/make_event

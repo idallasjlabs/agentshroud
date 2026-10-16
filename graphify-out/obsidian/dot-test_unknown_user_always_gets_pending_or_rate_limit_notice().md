@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[FakeRBAC]] - `calls` [EXTRACTED]
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestNoResponseGuarantee]] - `method` [EXTRACTED]
 - [[Unknown users must always receive either a pending notice or a rate-limit notice]] - `rationale_for` [EXTRACTED]
-- [[_make_update()]] - `calls` [EXTRACTED]
+- [[_make_update()_1]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RateLimiter

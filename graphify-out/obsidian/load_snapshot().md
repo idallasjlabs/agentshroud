@@ -12,8 +12,8 @@ tags:
 # load_snapshot()
 
 ## Connections
-- [[Any_39]] - `references` [EXTRACTED]
-- [[Path_27]] - `references` [EXTRACTED]
+- [[Any_29]] - `references` [EXTRACTED]
+- [[Path_29]] - `references` [EXTRACTED]
 - [[gather_advisories()]] - `calls` [EXTRACTED]
 - [[migrate-cve-registry-ghsa.py]] - `contains` [EXTRACTED]
 

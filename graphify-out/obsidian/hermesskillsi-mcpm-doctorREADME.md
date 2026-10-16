@@ -12,6 +12,6 @@ tags:
 # hermes/skills/i-mcpm-doctor/README.md
 
 ## Connections
-- [[MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
+- [[MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

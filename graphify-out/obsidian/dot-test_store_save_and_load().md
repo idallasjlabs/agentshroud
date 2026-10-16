@@ -12,7 +12,7 @@ tags:
 # .test_store_save_and_load()
 
 ## Connections
-- [[ApprovalQueueItem_4]] - `calls` [EXTRACTED]
+- [[ApprovalQueueItem_2]] - `calls` [EXTRACTED]
 - [[Items saved to store can be reloaded.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalStorePersistence]] - `method` [EXTRACTED]
 

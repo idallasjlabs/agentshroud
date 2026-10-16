@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_web_proxy.py"
+source_file: "gateway/tests/test_url_analyzer.py"
 type: "code"
-community: "WebProxyConfig"
-location: "L273"
+community: "TestSSRFDetection"
+location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/TestSSRFDetection
 ---
 
 # .test_ssn_in_url_flagged()
 
 ## Connections
-- [[TestPIIDetection_1]] - `method` [EXTRACTED]
+- [[TestPIIInURLs]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/export-email-reports.py"
 type: "code"
-community: "export_bot"
+community: "export-bot-conversations.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export_bot
+  - community/export-bot-conversationspy
 ---
 
 # export-email-reports.py
@@ -17,6 +17,6 @@ tags:
 - [[_report_date()]] - `contains` [EXTRACTED]
 - [[datetime_7]] - `imports_from` [EXTRACTED]
 - [[export_bot()]] - `contains` [EXTRACTED]
-- [[main()_21]] - `contains` [EXTRACTED]
+- [[main()_31]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export_bot
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy

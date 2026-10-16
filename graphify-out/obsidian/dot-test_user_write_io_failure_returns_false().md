@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "RBACConfig"
+community: "ApprovalQueueConfig"
 location: "L244"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/ApprovalQueueConfig
 ---
 
 # .test_user_write_io_failure_returns_false()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestWriteFailurePath]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

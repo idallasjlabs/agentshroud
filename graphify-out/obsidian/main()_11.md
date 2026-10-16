@@ -1,23 +1,19 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: "docker/bots/hermes/resolve_model.py"
 type: "code"
-community: "migrate-cve-registry-ghsa.py"
-location: "L524"
+community: "test_hermes_model_resolver.py"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/migrate-cve-registry-ghsapy
+  - community/test_hermes_model_resolverpy
 ---
 
 # main()
 
 ## Connections
-- [[build_id_plan()]] - `calls` [EXTRACTED]
-- [[compute_stats()]] - `calls` [EXTRACTED]
-- [[gather_advisories()]] - `calls` [EXTRACTED]
-- [[load_registry()]] - `calls` [EXTRACTED]
-- [[migrate-cve-registry-ghsa.py]] - `contains` [EXTRACTED]
-- [[render_manual_review()]] - `calls` [EXTRACTED]
-- [[rewrite_registry_text()_1]] - `calls` [EXTRACTED]
+- [[CLI `resolve_model.py modelprovider`. Defaults to 'model'.]] - `rationale_for` [EXTRACTED]
+- [[_resolve_from_env()]] - `calls` [EXTRACTED]
+- [[resolve_model.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy
+#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "DataLedger"
+community: "create_auth_dependency"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/create_auth_dependency
 ---
 
 # ledger.py
@@ -23,4 +23,4 @@ tags:
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataLedger
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

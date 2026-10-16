@@ -20,6 +20,6 @@ tags:
 - [[docker-socket-proxy service (digest-pinned tecnativa, narrow allowlist)]] - `references` [EXTRACTED]
 - [[dockerbotshermesagentshroud-secrets.sh (s6 cont-init secret injection)]] - `references` [EXTRACTED]
 - [[gateway service (security proxy, sole egress point, read-only rootfs, cap_drop ALL)]] - `references` [EXTRACTED]
-- [[run-standalone.sh (Hermes docker run launcher)]] - `references` [EXTRACTED]
+- [[run-standalone.sh]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes

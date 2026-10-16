@@ -15,7 +15,7 @@ tags:
 - [[Env-split cron reconciliation (AGENTSHROUD_PROD_CRON_KEEP)]] - `implements` [EXTRACTED]
 - [[First-boot gateway-default s6 service auto-start]] - `implements` [EXTRACTED]
 - [[MCP servers reconciliation from mcpservers.json into config.yaml]] - `implements` [EXTRACTED]
-- [[S12 Hermes init-config.sh seeds jira_dev_ticket.py]] - `references` [EXTRACTED]
+- [[S12 Hermes init-config.sh seeds jira_dev_ticket.py into live Hermes workspace]] - `references` [EXTRACTED]
 - [[Tirith trust seeding (lookalike_tld + internal gateway HTTP rule)]] - `implements` [EXTRACTED]
 - [[_hermes_cron_ids_names]] - `defines` [EXTRACTED]
 - [[_seed_cron]] - `defines` [EXTRACTED]

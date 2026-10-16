@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/killswitch_config.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L100"
+community: "PipelineAction"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/PipelineAction
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_19]] - `references` [EXTRACTED]
-- [[Convert configuration to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
-- [[KillSwitchConfig_1]] - `method` [EXTRACTED]
+- [[Any_41]] - `references` [EXTRACTED]
+- [[PipelineResult_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_a2a_policy.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "test_a2a_policy.py"
-location: "L397"
+community: "StdioConnection"
+location: "L455"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/StdioConnection
 ---
 
 # .wait_for_decision()
 
 ## Connections
-- [[_LegacyStubApprovalQueue]] - `method` [EXTRACTED]
+- [[FakeApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "FR3: System Integrity"
+community: "egress_filter.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FR3_System_Integrity
+  - community/egress_filterpy
 ---
 
 # heuristic_classifier.py
@@ -16,4 +16,4 @@ tags:
 - [[FR3 System Integrity]] - `references` [EXTRACTED]
 - [[HeuristicClassifier_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity
+#graphify/code #graphify/EXTRACTED #community/egress_filterpy

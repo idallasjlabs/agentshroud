@@ -12,7 +12,7 @@ tags:
 # .test_verify_integrity_passes_for_valid_report()
 
 ## Connections
-- [[CompetitiveIntelReport]] - `calls` [EXTRACTED]
+- [[CompetitiveIntelReport_1]] - `calls` [EXTRACTED]
 - [[TestIntelReportHashIntegrity]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

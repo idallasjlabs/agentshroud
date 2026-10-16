@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/security/output_schema.py"
+source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "OutputSchemaEnforcer"
-location: "L89"
+community: "KeyRotationManager"
+location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputSchemaEnforcer
+  - community/KeyRotationManager
 ---
 
 # .validate()
 
 ## Connections
-- [[OutputSchemaEnforcer]] - `method` [EXTRACTED]
-- [[SchemaValidationResult]] - `references` [EXTRACTED]
-- [[Validate output against the named schema.          Args             output The]] - `rationale_for` [EXTRACTED]
+- [[dot-_validate_credential()]] - `calls` [EXTRACTED]
+- [[Any_30]] - `references` [EXTRACTED]
+- [[CredentialValidator]] - `method` [EXTRACTED]
+- [[Validate a credential.          Returns             tuple (is_valid, message)]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

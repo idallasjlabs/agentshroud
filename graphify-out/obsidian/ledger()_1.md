@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "DataLedger"
+community: "PIIConfig"
 location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/PIIConfig
 ---
 
 # ledger()
@@ -16,4 +16,4 @@ tags:
 - [[LedgerConfig]] - `calls` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataLedger
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

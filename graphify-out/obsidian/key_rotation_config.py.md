@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "code"
-community: "KeyRotationManager"
+community: "UserSessionManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/UserSessionManager
 ---
 
 # key_rotation_config.py
@@ -16,4 +16,4 @@ tags:
 - [[KeyRotationConfig_1]] - `contains` [EXTRACTED]
 - [[key_rotation.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

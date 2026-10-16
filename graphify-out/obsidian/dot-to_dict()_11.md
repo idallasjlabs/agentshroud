@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/a2a_governance.py"
+source_file: "gateway/security/canary.py"
 type: "code"
-community: "A2AGovernanceProxy"
-location: "L94"
+community: "test_e2e_proxy.py"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/test_e2e_proxypy
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-get_summary()]] - `calls` [EXTRACTED]
-- [[A2APeer]] - `method` [EXTRACTED]
+- [[Any_67]] - `references` [EXTRACTED]
+- [[CanaryResult_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

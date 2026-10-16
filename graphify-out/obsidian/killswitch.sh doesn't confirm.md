@@ -12,6 +12,6 @@ tags:
 # killswitch.sh doesn't confirm
 
 ## Connections
-- [[Troubleshooting_26]] - `contains` [EXTRACTED]
+- [[Troubleshooting_27]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Kill_Switch

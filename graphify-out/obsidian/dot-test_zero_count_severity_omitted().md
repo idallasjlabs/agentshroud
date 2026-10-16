@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "format_cve_report"
+community: "test_daily_cve_report.py"
 location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/format_cve_report
+  - community/test_daily_cve_reportpy
 ---
 
 # .test_zero_count_severity_omitted()
@@ -16,4 +16,4 @@ tags:
 - [[_make_report()]] - `calls` [EXTRACTED]
 - [[format_cve_report()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/format_cve_report
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

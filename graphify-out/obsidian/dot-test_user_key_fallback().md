@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "export_bot"
 location: "L357"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/export_bot
 ---
 
 # .test_user_key_fallback()
@@ -15,4 +15,4 @@ tags:
 - [[TestFromAuditChainEntry]] - `method` [EXTRACTED]
 - [[_audit_entry()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/export_bot

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[call_gemini()]] - `contains` [EXTRACTED]
-- [[main()_2]] - `contains` [EXTRACTED]
+- [[main()_3]] - `contains` [EXTRACTED]
 - [[peer-review.sh]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/gemini-reviewpy

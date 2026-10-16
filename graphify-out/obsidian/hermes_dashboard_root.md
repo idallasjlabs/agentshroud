@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "test_main_endpoints.py"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L4854-L4863"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # hermes_dashboard_root
@@ -17,4 +17,4 @@ tags:
 - [[hermes_dashboard_proxy (hermes-dashboard{path} HTTP reverse proxy)]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

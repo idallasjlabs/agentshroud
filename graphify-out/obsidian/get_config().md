@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Get current configuration.]] - `rationale_for` [EXTRACTED]
-- [[Path_39]] - `calls` [EXTRACTED]
+- [[Path_38]] - `calls` [EXTRACTED]
 - [[api.py_2]] - `contains` [EXTRACTED]
 - [[export_config()]] - `calls` [EXTRACTED]
 

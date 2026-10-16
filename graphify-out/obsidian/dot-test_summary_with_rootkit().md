@@ -12,6 +12,6 @@ tags:
 # .test_summary_with_rootkit()
 
 ## Connections
-- [[TestWazuhSummary]] - `method` [EXTRACTED]
+- [[TestWazuhSummary_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

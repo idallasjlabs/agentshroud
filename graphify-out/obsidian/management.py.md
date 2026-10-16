@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "TestSSRFDetection"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/TestSSRFDetection
 ---
 
 # management.py
@@ -19,7 +19,7 @@ tags:
 - [[KeyRotationManager]] - `imports` [EXTRACTED]
 - [[api.py_2]] - `imports_from` [EXTRACTED]
 - [[approvals()]] - `contains` [EXTRACTED]
-- [[audit()_1]] - `contains` [EXTRACTED]
+- [[audit()]] - `contains` [EXTRACTED]
 - [[collaborators()]] - `contains` [EXTRACTED]
 - [[credentials_health()]] - `contains` [EXTRACTED]
 - [[credentials_status()]] - `contains` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[update_egress_allowlist()]] - `contains` [EXTRACTED]
 - [[wazuh_dashboard()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

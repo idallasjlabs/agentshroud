@@ -12,9 +12,9 @@ tags:
 # macOS System Administrator (MAC)
 
 ## Connections
-- [[Purpose_49]] - `contains` [EXTRACTED]
-- [[Related Skills_35]] - `contains` [EXTRACTED]
-- [[Usage_39]] - `contains` [EXTRACTED]
+- [[Purpose_38]] - `contains` [EXTRACTED]
+- [[Related Skills_27]] - `contains` [EXTRACTED]
+- [[Usage_30]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-macREADME]] - `contains` [EXTRACTED]
 

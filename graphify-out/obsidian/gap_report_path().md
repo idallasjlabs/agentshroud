@@ -12,7 +12,7 @@ tags:
 # gap_report_path()
 
 ## Connections
-- [[Path_3]] - `references` [EXTRACTED]
+- [[Path_6]] - `references` [EXTRACTED]
 - [[Per-agent gap report path. This used to be the single constant…]] - `rationale_for` [EXTRACTED]
 - [[main()]] - `calls` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]

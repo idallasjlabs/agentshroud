@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "AgentRegistry"
+community: "dashboard_endpoints.py"
 location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/dashboard_endpointspy
 ---
 
 # install_log_handler()
@@ -18,4 +18,4 @@ tags:
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy

@@ -12,10 +12,10 @@ tags:
 # gitleaks.toml
 
 ## Connections
-- [[Integration_1]] - `contains` [EXTRACTED]
-- [[Purpose_7]] - `contains` [EXTRACTED]
+- [[Integration]] - `contains` [EXTRACTED]
+- [[Purpose_4]] - `contains` [EXTRACTED]
 - [[Related Notes_9]] - `contains` [EXTRACTED]
-- [[Usage_2]] - `contains` [EXTRACTED]
+- [[Usage_1]] - `contains` [EXTRACTED]
 - [[What It Checks]] - `contains` [EXTRACTED]
 - [[gitleaks.toml]] - `contains` [EXTRACTED]
 

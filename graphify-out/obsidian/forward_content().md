@@ -12,10 +12,10 @@ tags:
 # forward_content()
 
 ## Connections
-- [[AuthRequired_2]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
 - [[ForwardRequest]] - `references` [EXTRACTED]
 - [[Main ingest endpoint      Receives data from iOS Shortcuts, browser extension, o]] - `rationale_for` [EXTRACTED]
-- [[Request_6]] - `references` [EXTRACTED]
+- [[Request_1]] - `references` [EXTRACTED]
 - [[SecurityPipeline_2]] - `calls` [EXTRACTED]
 - [[_process_inbound()]] - `calls` [EXTRACTED]
 - [[_resolve_user_trust_level()]] - `calls` [EXTRACTED]

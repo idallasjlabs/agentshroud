@@ -12,9 +12,9 @@ tags:
 # get_my_permissions()
 
 ## Connections
-- [[AuthRequired]] - `references` [EXTRACTED]
+- [[AuthRequired_1]] - `references` [EXTRACTED]
 - [[Get permissions summary for the current user.]] - `rationale_for` [EXTRACTED]
-- [[Request_1]] - `references` [EXTRACTED]
+- [[Request_7]] - `references` [EXTRACTED]
 - [[get]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 

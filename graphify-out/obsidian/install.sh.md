@@ -16,6 +16,5 @@ tags:
 - [[hook_is_pre_commit()]] - `defines` [EXTRACTED]
 - [[install.sh script]] - `contains` [EXTRACTED]
 - [[pre-commit-hook.sh]] - `references` [EXTRACTED]
-- [[test_colima_and_sdk_patch_fallback_resolution.sh]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_colima_and_sdk_patch_fallback_resolutionsh

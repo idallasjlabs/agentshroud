@@ -1,12 +1,12 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "IEC 62443 Compliance Matrix — AgentShroud"
+community: "egress_filter.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/IEC_62443_Compliance_Matrix__AgentShroud
+  - community/egress_filterpy
 ---
 
 # iec-62443-matrix.md
@@ -21,4 +21,4 @@ tags:
 - [[FR7 Resource Availability]] - `conceptually_related_to` [EXTRACTED]
 - [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/IEC_62443_Compliance_Matrix__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/egress_filterpy

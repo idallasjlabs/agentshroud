@@ -41,10 +41,10 @@ tags:
 - [[dot-test_tool_not_requiring_approval_allowed()]] - `calls` [EXTRACTED]
 - [[dot-test_unknown_server_returns_error_result()]] - `calls` [EXTRACTED]
 - [[MCPAuditTrail]] - `calls` [EXTRACTED]
-- [[MCPInspector]] - `calls` [EXTRACTED]
+- [[MCPInspector_1]] - `calls` [EXTRACTED]
 - [[MCPPermissionManager]] - `calls` [EXTRACTED]
-- [[MCPProxy]] - `calls` [EXTRACTED]
-- [[MCPProxy_1]] - `references` [EXTRACTED]
+- [[MCPProxy_1]] - `calls` [EXTRACTED]
+- [[MCPProxy]] - `references` [EXTRACTED]
 - [[make_config()]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 

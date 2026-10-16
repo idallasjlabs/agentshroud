@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/README.md"
 type: "document"
-community: "DataLedger"
+community: "create_auth_dependency"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/create_auth_dependency
 ---
 
 # gateway/README.md
@@ -24,4 +24,4 @@ tags:
 - [[queue.py]] - `references` [EXTRACTED]
 - [[sanitizer.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DataLedger
+#graphify/document #graphify/EXTRACTED #community/create_auth_dependency

@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[dot-agentsskillsi-macREADME]] - `contains` [EXTRACTED]
-- [[Purpose_23]] - `contains` [EXTRACTED]
-- [[Related Skills_9]] - `contains` [EXTRACTED]
-- [[Usage_13]] - `contains` [EXTRACTED]
+- [[Purpose_18]] - `contains` [EXTRACTED]
+- [[Related Skills_7]] - `contains` [EXTRACTED]
+- [[Usage_10]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/macOS_System_Administrator_MAC

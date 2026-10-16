@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "AuditEvent"
-location: "L88"
+community: "UserSessionManager"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditEvent
+  - community/UserSessionManager
 ---
 
 # .to_dict()
 
 ## Connections
-- [[AuditEvent]] - `method` [EXTRACTED]
-- [[Convert to dictionary representation.]] - `rationale_for` [EXTRACTED]
+- [[dot-_save_sessions()]] - `calls` [EXTRACTED]
+- [[Any_57]] - `references` [EXTRACTED]
+- [[Convert session to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
+- [[UserSession]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditEvent
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

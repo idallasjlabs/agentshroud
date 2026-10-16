@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_audit_export.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "AuditExporter"
-location: "L145"
+community: "EgressFilterConfig"
+location: "L480"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditExporter
+  - community/EgressFilterConfig
 ---
 
 # .test_stats()
 
 ## Connections
-- [[Test audit store statistics.]] - `rationale_for` [EXTRACTED]
-- [[TestAuditStore]] - `method` [EXTRACTED]
+- [[TestEgressFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditExporter
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

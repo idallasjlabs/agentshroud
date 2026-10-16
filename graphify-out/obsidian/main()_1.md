@@ -14,6 +14,5 @@ tags:
 ## Connections
 - [[discover()]] - `calls` [EXTRACTED]
 - [[discover_upstream_versions.py]] - `contains` [EXTRACTED]
-- [[phase_discover()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy

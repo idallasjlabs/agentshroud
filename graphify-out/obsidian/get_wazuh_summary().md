@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "test_security_toolchain.py"
+community: "test_collaborator_greeter.py"
 location: "L745"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/test_collaborator_greeterpy
 ---
 
 # get_wazuh_summary()
 
 ## Connections
-- [[dot-test_clean_when_installed_not_running()_1]] - `calls` [EXTRACTED]
+- [[dot-test_clean_when_installed_not_running()_2]] - `calls` [EXTRACTED]
 - [[dot-test_not_run_when_no_alert_dir()_1]] - `calls` [EXTRACTED]
 - [[dot-test_returns_summary_for_empty_dir()_1]] - `calls` [EXTRACTED]
-- [[Any_65]] - `references` [EXTRACTED]
-- [[Path_51]] - `calls` [EXTRACTED]
+- [[Any_64]] - `references` [EXTRACTED]
+- [[Path_26]] - `calls` [EXTRACTED]
 - [[Return latest Wazuh alert summary from the shared alert volume.      wazuh-agent]] - `rationale_for` [EXTRACTED]
 - [[_is_wazuh_agent_running()]] - `calls` [EXTRACTED]
 - [[aggregate_results()]] - `calls` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
-- [[generate_summary()]] - `calls` [EXTRACTED]
+- [[generate_summary()_3]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[read_alerts()_1]] - `calls` [EXTRACTED]
+- [[read_alerts()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy

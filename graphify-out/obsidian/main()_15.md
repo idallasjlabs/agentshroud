@@ -1,30 +1,19 @@
 ---
-source_file: "cli/src/main.rs"
+source_file: "scripts/soak_status.py"
 type: "code"
-community: "main.rs"
-location: "L631"
+community: "TestClassify"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/TestClassify
 ---
 
 # main()
 
 ## Connections
-- [[dot-get()_3]] - `calls` [EXTRACTED]
-- [[dot-new()_2]] - `calls` [EXTRACTED]
-- [[dot-ok()]] - `calls` [EXTRACTED]
-- [[dot-post()_2]] - `calls` [EXTRACTED]
-- [[Result]] - `references` [EXTRACTED]
-- [[SclClient_1]] - `calls` [EXTRACTED]
-- [[main.rs]] - `contains` [EXTRACTED]
-- [[print_output()]] - `calls` [EXTRACTED]
-- [[resolve_token()]] - `calls` [EXTRACTED]
-- [[run_approvals_decide()]] - `calls` [EXTRACTED]
-- [[run_approvals_list()]] - `calls` [EXTRACTED]
-- [[run_cves()]] - `calls` [EXTRACTED]
-- [[run_deploy_status()]] - `calls` [EXTRACTED]
-- [[run_status()]] - `calls` [EXTRACTED]
+- [[check-soak-status.sh]] - `references` [EXTRACTED]
+- [[classify()_2]] - `calls` [EXTRACTED]
+- [[soak_status.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/TestClassify

@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/subagent_governance.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "ResourceUsage"
-location: "L147"
+community: "TestEgressApprovalQueue"
+location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceUsage
+  - community/TestEgressApprovalQueue
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-deregister()_1]] - `calls` [EXTRACTED]
-- [[dot-get_summary()_1]] - `calls` [EXTRACTED]
-- [[ResourceUsage_2]] - `method` [EXTRACTED]
+- [[dot-_rule_to_dict()]] - `calls` [EXTRACTED]
+- [[dot-_save_rules()]] - `calls` [EXTRACTED]
+- [[EgressScope]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceUsage
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

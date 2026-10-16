@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "parse_clamscan_output"
+community: "test_telegram_proxy_outbound.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_clamscan_output
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # drift_detector.py
@@ -20,4 +20,4 @@ tags:
 - [[alert_dispatcher.py]] - `references` [EXTRACTED]
 - [[clamav_scanner.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

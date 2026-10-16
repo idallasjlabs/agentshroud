@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "MultiTurnTracker"
+community: "TrustConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MultiTurnTracker
+  - community/TrustConfig
 ---
 
 # multi_turn_tracker.py
@@ -22,7 +22,7 @@ tags:
 - [[SessionContext]] - `contains` [EXTRACTED]
 - [[ThresholdConfig]] - `contains` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
-- [[prompt_guard.py_1]] - `semantically_similar_to` [INFERRED]
+- [[prompt_guard.py]] - `semantically_similar_to` [INFERRED]
 - [[test_multi_turn_tracker.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

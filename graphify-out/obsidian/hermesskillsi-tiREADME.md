@@ -12,6 +12,6 @@ tags:
 # hermes/skills/i-ti/README.md
 
 ## Connections
-- [[Technical Illustrator (TI)]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_i-ti

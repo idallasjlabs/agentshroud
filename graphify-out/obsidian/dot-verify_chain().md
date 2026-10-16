@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/security/intel_report.py"
+source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "CompetitiveIntelReport"
-location: "L278"
+community: "MCPAuditTrail"
+location: "L203"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CompetitiveIntelReport
+  - community/MCPAuditTrail
 ---
 
 # .verify_chain()
 
 ## Connections
-- [[dot-load_all()]] - `calls` [EXTRACTED]
-- [[dot-verify_integrity()]] - `calls` [EXTRACTED]
-- [[IntelReportStore_1]] - `method` [EXTRACTED]
-- [[Walk the entire report chain and verify hash linkage.          Returns]] - `rationale_for` [EXTRACTED]
+- [[dot-generate_report()]] - `calls` [EXTRACTED]
+- [[MCPAuditTrail]] - `method` [EXTRACTED]
+- [[Verify integrity of the retained MCP audit hash-chain window.          Anchors a]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport
+#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail

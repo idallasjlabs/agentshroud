@@ -1,18 +1,23 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "cli/main.py"
-location: "L391"
+community: "plan_remediation"
+location: "L300"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/cli/mainpy
+  - community/plan_remediation
 ---
 
 # main()
 
 ## Connections
-- [[cli()]] - `calls` [EXTRACTED]
-- [[climain.py]] - `contains` [EXTRACTED]
+- [[dot-to_dict()_13]] - `calls` [EXTRACTED]
+- [[_print_plan()]] - `calls` [EXTRACTED]
+- [[apply_remediation()]] - `calls` [EXTRACTED]
+- [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
+- [[load_registry()_1]] - `calls` [EXTRACTED]
+- [[plan_remediation()]] - `calls` [EXTRACTED]
+- [[read_pin()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/cli/mainpy
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

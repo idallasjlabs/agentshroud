@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "format_cve_report"
+community: "test_daily_cve_report.py"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/format_cve_report
+  - community/test_daily_cve_reportpy
 ---
 
 # format_cve_report()
@@ -23,11 +23,11 @@ tags:
 - [[dot-test_status_critical_when_critical_present()]] - `calls` [EXTRACTED]
 - [[dot-test_total_vulnerability_count_shown()]] - `calls` [EXTRACTED]
 - [[dot-test_zero_count_severity_omitted()]] - `calls` [EXTRACTED]
-- [[Any_76]] - `references` [EXTRACTED]
+- [[Any_10]] - `references` [EXTRACTED]
 - [[Format a Trivy scan result into a Telegram-ready Markdown message.      Args]] - `rationale_for` [EXTRACTED]
 - [[daily_cve_report.py]] - `contains` [EXTRACTED]
-- [[generate_summary()_3]] - `calls` [EXTRACTED]
+- [[generate_summary()]] - `calls` [EXTRACTED]
 - [[run_and_send_cve_report()]] - `calls` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/format_cve_report
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

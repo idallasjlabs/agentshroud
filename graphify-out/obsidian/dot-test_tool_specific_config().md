@@ -12,7 +12,7 @@ tags:
 # .test_tool_specific_config()
 
 ## Connections
-- [[PIIConfig_1]] - `calls` [EXTRACTED]
+- [[PIIConfig_2]] - `calls` [EXTRACTED]
 - [[Test tool-specific configuration overrides]] - `rationale_for` [EXTRACTED]
 - [[TestToolResultPIIConfig]] - `method` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `calls` [EXTRACTED]

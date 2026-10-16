@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "parse_trivy_output"
-location: "L147"
+community: "FalcoAlertWatcher"
+location: "L624"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_trivy_output
+  - community/FalcoAlertWatcher
 ---
 
 # .test_summary_clean()
 
 ## Connections
-- [[TestTrivySummary_1]] - `method` [EXTRACTED]
-- [[parse_trivy_output()]] - `calls` [EXTRACTED]
+- [[TestFalcoSummary_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_trivy_output
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

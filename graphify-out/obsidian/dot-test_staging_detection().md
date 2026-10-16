@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "AlertDispatcher"
+community: "ApprovalQueueConfig"
 location: "L578"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/ApprovalQueueConfig
 ---
 
 # .test_staging_detection()
@@ -15,4 +15,4 @@ tags:
 - [[Detect data staging patterns.]] - `rationale_for` [EXTRACTED]
 - [[TestFileSandbox]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

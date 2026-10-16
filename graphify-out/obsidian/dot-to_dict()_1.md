@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/security/drift_detector.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L35"
+community: "MiddlewareManager"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-config_hash()]] - `calls` [EXTRACTED]
-- [[dot-set_baseline()]] - `calls` [EXTRACTED]
-- [[ContainerSnapshot]] - `method` [EXTRACTED]
+- [[dot-_save_integrity_database()]] - `calls` [EXTRACTED]
+- [[Any_7]] - `references` [EXTRACTED]
+- [[Convert to dictionary for JSON serialization.]] - `rationale_for` [EXTRACTED]
+- [[FileIntegrityRecord]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

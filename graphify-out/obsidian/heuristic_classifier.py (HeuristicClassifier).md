@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "HeuristicClassifier"
+community: "A2APolicyEngine"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/A2APolicyEngine
 ---
 
 # heuristic_classifier.py (HeuristicClassifier)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_heuristic_classifier.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

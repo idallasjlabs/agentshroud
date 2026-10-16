@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/security/killswitch_config.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L49"
+community: "KillSwitchMonitor"
+location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/KillSwitchMonitor
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-_save_integrity_database()]] - `calls` [EXTRACTED]
-- [[Any_8]] - `references` [EXTRACTED]
-- [[Convert to dictionary for JSON serialization.]] - `rationale_for` [EXTRACTED]
-- [[FileIntegrityRecord]] - `method` [EXTRACTED]
+- [[Any_36]] - `references` [EXTRACTED]
+- [[Convert configuration to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
+- [[KillSwitchConfig_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

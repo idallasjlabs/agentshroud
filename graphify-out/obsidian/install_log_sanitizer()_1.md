@@ -12,6 +12,6 @@ tags:
 # install_log_sanitizer()
 
 ## Connections
-- [[Function Details_41]] - `contains` [EXTRACTED]
+- [[Function Details_40]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/log_sanitizerpy

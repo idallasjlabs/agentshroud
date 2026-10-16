@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/soc_correlation.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "soc.js"
-location: "L44"
+community: "AuditEvent"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/socjs
+  - community/AuditEvent
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_12]] - `references` [EXTRACTED]
-- [[CorrelationSummary]] - `method` [EXTRACTED]
+- [[AuditEvent_1]] - `method` [EXTRACTED]
+- [[Convert to dictionary representation.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/socjs
+#graphify/code #graphify/EXTRACTED #community/AuditEvent

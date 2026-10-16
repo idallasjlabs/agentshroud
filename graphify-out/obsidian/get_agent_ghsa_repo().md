@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
-community: "agent_cve_registry.py"
+community: "sync-cve-registry.py"
 location: "L18492"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agent_cve_registrypy
+  - community/sync-cve-registrypy
 ---
 
 # get_agent_ghsa_repo()
@@ -21,4 +21,4 @@ tags:
 - [[sync-cve-registry.py]] - `imports` [EXTRACTED]
 - [[sync_agent_ghsa()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agent_cve_registrypy
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

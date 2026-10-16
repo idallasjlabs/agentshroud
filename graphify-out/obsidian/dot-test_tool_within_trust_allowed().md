@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "SubagentMonitor"
+community: "TrustConfig"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentMonitor
+  - community/TrustConfig
 ---
 
 # .test_tool_within_trust_allowed()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustInheritance]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentMonitor
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestComplianceMaths"
+community: "TestOutboundInfoFilter"
 location: "L1072"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestComplianceMaths
+  - community/TestOutboundInfoFilter
 ---
 
 # .test_weighted_subscore_empty_map()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestComplianceMaths]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestComplianceMaths
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

@@ -1,21 +1,21 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "main.rs"
+community: "test_soc_realtime_coverage.py"
 location: "L308"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/test_soc_realtime_coveragepy
 ---
 
 # map_http_error()
 
 ## Connections
-- [[dot-get()_2]] - `calls` [EXTRACTED]
 - [[dot-get()_3]] - `calls` [EXTRACTED]
-- [[dot-ok()]] - `calls` [EXTRACTED]
-- [[dot-post()_1]] - `calls` [EXTRACTED]
+- [[dot-get()_2]] - `calls` [EXTRACTED]
+- [[dot-ok()_1]] - `calls` [EXTRACTED]
+- [[dot-post()_2]] - `calls` [EXTRACTED]
 - [[GatewayClient]] - `calls` [EXTRACTED]
 - [[Option]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[map_http_error_generic_status()]] - `calls` [EXTRACTED]
 - [[map_http_error_includes_detail()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

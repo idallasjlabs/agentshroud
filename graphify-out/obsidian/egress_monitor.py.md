@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # egress_monitor.py
@@ -24,4 +24,4 @@ tags:
 - [[log_sanitizer.py]] - `references` [EXTRACTED]
 - [[resource_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

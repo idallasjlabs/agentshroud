@@ -1,18 +1,22 @@
 ---
-source_file: "docs/planning/reviews/enforcement-audit-script.py"
+source_file: "scripts/verify-proxy.sh"
 type: "code"
-community: "MiddlewareManager"
-location: "L7"
+community: "egress_filter.py"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/egress_filterpy
 ---
 
 # fail()
 
 ## Connections
-- [[enforcement-audit-script.py]] - `contains` [EXTRACTED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[run_bypass()]] - `calls` [EXTRACTED]
+- [[run_canary()_1]] - `calls` [EXTRACTED]
+- [[run_chain()]] - `calls` [EXTRACTED]
+- [[run_full()]] - `calls` [EXTRACTED]
+- [[run_quick()]] - `calls` [EXTRACTED]
+- [[verify-proxy.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/egress_filterpy

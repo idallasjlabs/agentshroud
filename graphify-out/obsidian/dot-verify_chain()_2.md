@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "AuditChain"
-location: "L271"
+community: "CompetitiveIntelReport"
+location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/CompetitiveIntelReport
 ---
 
 # .verify_chain()
 
 ## Connections
-- [[dot-get_stats()_18]] - `calls` [EXTRACTED]
-- [[dot-verify_audit_chain()]] - `calls` [EXTRACTED]
-- [[AuditChain]] - `method` [EXTRACTED]
-- [[Verify the integrity of the retained hash-chain window.          When the bounde]] - `rationale_for` [EXTRACTED]
+- [[dot-load_all()_1]] - `calls` [EXTRACTED]
+- [[dot-verify_integrity()]] - `calls` [EXTRACTED]
+- [[IntelReportStore_1]] - `method` [EXTRACTED]
+- [[Walk the entire report chain and verify hash linkage.          Returns]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

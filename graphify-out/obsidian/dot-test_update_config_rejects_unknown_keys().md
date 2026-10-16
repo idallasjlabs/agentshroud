@@ -12,6 +12,6 @@ tags:
 # .test_update_config_rejects_unknown_keys()
 
 ## Connections
-- [[TestConfig_1]] - `method` [EXTRACTED]
+- [[TestConfig]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ModeRequest

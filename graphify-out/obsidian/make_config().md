@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_passthrough_process_tool_result()]] - `calls` [EXTRACTED]
 - [[dot-test_passthrough_with_execute()]] - `calls` [EXTRACTED]
-- [[MCPProxyConfig_3]] - `calls` [EXTRACTED]
+- [[MCPProxyConfig_2]] - `calls` [EXTRACTED]
 - [[MCPProxyConfig]] - `references` [EXTRACTED]
 - [[MCPServerConfig_2]] - `calls` [EXTRACTED]
 - [[MCPToolConfig]] - `calls` [EXTRACTED]

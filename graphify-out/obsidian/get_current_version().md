@@ -12,7 +12,7 @@ tags:
 # get_current_version()
 
 ## Connections
-- [[Any_60]] - `references` [EXTRACTED]
+- [[Any_55]] - `references` [EXTRACTED]
 - [[Get the currently installed OpenClaw version.]] - `rationale_for` [EXTRACTED]
 - [[check_current_version()]] - `calls` [EXTRACTED]
 - [[version_routes.py]] - `contains` [EXTRACTED]

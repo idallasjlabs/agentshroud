@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "WebhookReceiver"
+community: "test_dashboard_endpoints.py"
 location: "L322"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - community/test_dashboard_endpointspy
 ---
 
 # .test_webhook_session_context_injection()
@@ -16,4 +16,4 @@ tags:
 - [[TestWebhookReceiverIntegration]] - `method` [EXTRACTED]
 - [[WebhookReceiver]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

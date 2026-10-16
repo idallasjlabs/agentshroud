@@ -12,7 +12,7 @@ tags:
 # list_registry_ghsa_ids.py
 
 ## Connections
-- [[main()_35]] - `contains` [EXTRACTED]
+- [[main()_36]] - `contains` [EXTRACTED]
 - [[test_list_registry_ghsa_ids.py]] - `implements` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_script

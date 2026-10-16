@@ -1,20 +1,18 @@
 ---
-source_file: "scripts/export-telegram-history.py"
+source_file: "docker/bots/hermes/render_md_email.py"
 type: "code"
-community: "export_bot"
-location: "L148"
+community: "competitive-report-*.md dated reports"
+location: "L250"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export_bot
+  - community/competitive-report-md_dated_reports
 ---
 
 # main()
 
 ## Connections
-- [[Path_44]] - `calls` [EXTRACTED]
-- [[_parse_since()_2]] - `calls` [EXTRACTED]
-- [[export()]] - `calls` [EXTRACTED]
-- [[export-telegram-history.py]] - `contains` [EXTRACTED]
+- [[render()]] - `calls` [EXTRACTED]
+- [[render_md_email.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export_bot
+#graphify/code #graphify/EXTRACTED #community/competitive-report-md_dated_reports

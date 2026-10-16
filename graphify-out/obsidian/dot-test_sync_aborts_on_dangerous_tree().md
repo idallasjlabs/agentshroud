@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_run_sync()]] - `calls` [EXTRACTED]
-- [[Path_26]] - `references` [EXTRACTED]
+- [[Path_23]] - `references` [EXTRACTED]
 - [[TestSyncScriptPreflight]] - `method` [EXTRACTED]
 - [[_write_tree()]] - `calls` [EXTRACTED]
 

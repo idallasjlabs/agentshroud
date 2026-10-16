@@ -12,6 +12,6 @@ tags:
 # forward_to_agent(target, sanitized_content, ledger_id, metadata)
 
 ## Connections
-- [[Function Details_35]] - `contains` [EXTRACTED]
+- [[Function Details_34]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/routerpy

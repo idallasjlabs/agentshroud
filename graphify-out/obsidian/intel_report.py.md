@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Citation_1]] - `contains` [EXTRACTED]
 - [[CompetitiveIntelReport_2]] - `contains` [EXTRACTED]
-- [[CompetitorEntry]] - `contains` [EXTRACTED]
+- [[CompetitorEntry_1]] - `contains` [EXTRACTED]
 - [[IntelReportStore_1]] - `contains` [EXTRACTED]
 - [[ReportIntegrityError]] - `contains` [EXTRACTED]
 - [[_compute_hash()]] - `contains` [EXTRACTED]

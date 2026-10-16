@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "AuditChain"
+community: "PipelineAction"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/PipelineAction
 ---
 
 # .test_tamper_in_retained_window_detected()
@@ -15,4 +15,4 @@ tags:
 - [[AuditChain]] - `calls` [EXTRACTED]
 - [[TestAuditChainBounded]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

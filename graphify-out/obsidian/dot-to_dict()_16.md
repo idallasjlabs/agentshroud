@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/delegation.py"
+source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "DelegationManager"
-location: "L73"
+community: "ResourceUsage"
+location: "L147"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/ResourceUsage
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-_save()]] - `calls` [EXTRACTED]
-- [[Delegation_1]] - `method` [EXTRACTED]
+- [[dot-deregister()_1]] - `calls` [EXTRACTED]
+- [[dot-get_summary()_1]] - `calls` [EXTRACTED]
+- [[ResourceUsage_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DelegationManager
+#graphify/code #graphify/EXTRACTED #community/ResourceUsage

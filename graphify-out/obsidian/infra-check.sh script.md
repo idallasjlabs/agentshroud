@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/infra-check.sh"
 type: "code"
-community: "ProxyDashboard"
+community: "egress_filter.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/egress_filterpy
 ---
 
 # infra-check.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[infra-check.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/code #graphify/EXTRACTED #community/egress_filterpy

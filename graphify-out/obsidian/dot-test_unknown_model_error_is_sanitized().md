@@ -12,7 +12,7 @@ tags:
 # .test_unknown_model_error_is_sanitized()
 
 ## Connections
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[Unknown model errors should be rewritten without leaking raw stack text.]] - `rationale_for` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]

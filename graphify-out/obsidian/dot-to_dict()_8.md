@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/agent_isolation.py"
+source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "AgentRegistry"
-location: "L74"
+community: "test_telegram_proxy_outbound.py"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # .to_dict()
 
 ## Connections
-- [[AgentRegistry]] - `method` [EXTRACTED]
-- [[Serialize registry to dict.]] - `rationale_for` [EXTRACTED]
+- [[dot-config_hash()]] - `calls` [EXTRACTED]
+- [[dot-set_baseline()]] - `calls` [EXTRACTED]
+- [[ContainerSnapshot]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

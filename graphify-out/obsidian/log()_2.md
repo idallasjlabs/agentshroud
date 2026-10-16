@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/openclaw_triage.sh"
+source_file: "scripts/canary-deploy.sh"
 type: "code"
-community: "openclaw_triage.sh"
-location: "L10"
+community: "canary-deploy.sh"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw_triagesh
+  - community/canary-deploysh
 ---
 
 # log()
 
 ## Connections
-- [[openclaw_triage.sh]] - `defines` [EXTRACTED]
-- [[openclaw_triage.sh script]] - `calls` [EXTRACTED]
+- [[canary-deploy.sh]] - `defines` [EXTRACTED]
+- [[canary-deploy.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw_triagesh
+#graphify/code #graphify/EXTRACTED #community/canary-deploysh

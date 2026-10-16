@@ -1,23 +1,24 @@
 ---
-source_file: "gateway/proxy/llm_proxy.py"
-type: "code"
-community: "test_llm_proxy.py"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
+type: "document"
+community: "llm_proxy.py"
+location: "L20"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/llm_proxypy
 ---
 
 # llm_proxy.py
 
 ## Connections
-- [[LLM API Reverse Proxy — intercepts all OpenClaw ↔ (AnthropicOpenAIGoogle)…]] - `rationale_for` [EXTRACTED]
-- [[LLMProxy]] - `contains` [EXTRACTED]
-- [[StreamHead]] - `contains` [EXTRACTED]
-- [[asyncio_2]] - `imports` [EXTRACTED]
-- [[gatewayteststest_llm_proxy_thinking_suppression.py (8 cases)]] - `imports_from` [EXTRACTED]
-- [[test_llm_proxy.py]] - `imports_from` [EXTRACTED]
-- [[test_llm_proxy_local_parity.py]] - `imports_from` [EXTRACTED]
+- [[Configuration_9]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_2]] - `contains` [EXTRACTED]
+- [[LLM Providers]] - `contains` [EXTRACTED]
+- [[Overview_16]] - `contains` [EXTRACTED]
+- [[Quota Failover]] - `contains` [EXTRACTED]
+- [[Related_4]] - `contains` [EXTRACTED]
+- [[Streaming]] - `contains` [EXTRACTED]
+- [[llm_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/document #graphify/EXTRACTED #community/llm_proxypy

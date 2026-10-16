@@ -12,10 +12,10 @@ tags:
 # email_send_owner()
 
 ## Connections
-- [[AuthRequired_2]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
 - [[EmailSendRequest]] - `calls` [EXTRACTED]
 - [[OwnerEmailRequest]] - `references` [EXTRACTED]
-- [[Request_6]] - `references` [EXTRACTED]
+- [[Request_1]] - `references` [EXTRACTED]
 - [[Send an email to the owner without exposing the recipient address in the request]] - `rationale_for` [EXTRACTED]
 - [[email_send()]] - `calls` [EXTRACTED]
 - [[forward.py]] - `contains` [EXTRACTED]

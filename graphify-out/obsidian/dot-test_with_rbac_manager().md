@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[TestIsOwner]] - `method` [EXTRACTED]
-- [[_FakeRBAC_1]] - `calls` [EXTRACTED]
+- [[_FakeRBAC_2]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_req

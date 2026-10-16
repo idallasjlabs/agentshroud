@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "activity_websocket"
+community: "test_dashboard.py"
 location: "L606"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/activity_websocket
+  - community/test_dashboardpy
 ---
 
 # egress_websocket()
 
 ## Connections
-- [[WebSocket_8]] - `references` [EXTRACTED]
+- [[WebSocket_4]] - `references` [EXTRACTED]
 - [[WebSocket stream specialized for egresssecurity dashboard updates.]] - `rationale_for` [EXTRACTED]
 - [[_build_egress_live_snapshot()]] - `calls` [EXTRACTED]
 - [[_validate_ws_token()]] - `calls` [EXTRACTED]
 - [[dashboard.py]] - `contains` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/activity_websocket
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

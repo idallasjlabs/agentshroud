@@ -12,7 +12,7 @@ tags:
 # .test_store_expires_old_items()
 
 ## Connections
-- [[ApprovalQueueItem_4]] - `calls` [EXTRACTED]
+- [[ApprovalQueueItem_2]] - `calls` [EXTRACTED]
 - [[Store marks expired items on load.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalStorePersistence]] - `method` [EXTRACTED]
 

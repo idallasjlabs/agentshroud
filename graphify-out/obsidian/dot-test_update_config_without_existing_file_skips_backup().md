@@ -12,6 +12,6 @@ tags:
 # .test_update_config_without_existing_file_skips_backup()
 
 ## Connections
-- [[TestConfig_1]] - `method` [EXTRACTED]
+- [[TestConfig]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ModeRequest
