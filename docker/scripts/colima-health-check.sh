@@ -70,9 +70,30 @@ DIAG_SCRIPT="$SCRIPT_DIR/container-net-diag.sh"
 # eventually — so the value lives in one place now, where a future resize
 # cannot land halfway.
 #
-# Override per-host without editing this file: AGENTSHROUD_COLIMA_MEMORY_GB.
+# Override per-host without editing this file: AGENTSHROUD_COLIMA_MEMORY_GB
+# (and AGENTSHROUD_COLIMA_CPU) — but see _colima_vm_flags: these only apply to
+# a VM that does not exist yet.
 _COLIMA_MEMORY_GB="${AGENTSHROUD_COLIMA_MEMORY_GB:-10}"
-_COLIMA_VM_FLAGS="--cpu 8 --memory ${_COLIMA_MEMORY_GB} --disk 120 --network-address"
+_COLIMA_CPU="${AGENTSHROUD_COLIMA_CPU:-8}"
+# BEGIN colima-vm-flags
+# 2026-10-16 owner directive: Colima sizing must be per-host (dev smaller than
+# prod) and must survive reboots. Colima already persists the last-used
+# cpu/memory/disk in ~/.colima/default/colima.yaml and reuses it when `colima
+# start` is given no sizing flags — so that file is the single source of
+# truth. Passing explicit --cpu/--memory here (and in the LaunchAgent) silently
+# re-imposed one hard-coded shape on every recovery, which is how prod and dev
+# kept drifting back to 8 CPU / 10-12 GiB after each resize. Sizing flags are
+# now only used to CREATE a VM that has no saved config yet.
+_colima_vm_flags() {
+  local _yaml="${HOME}/.colima/default/colima.yaml"
+  if [ -s "$_yaml" ]; then
+    printf -- '--network-address'
+  else
+    printf -- '--cpu %s --memory %s --disk 120 --network-address' "$_COLIMA_CPU" "$_COLIMA_MEMORY_GB"
+  fi
+}
+# END colima-vm-flags
+_COLIMA_VM_FLAGS="$(_colima_vm_flags)"
 
 # ── Upgrade-in-progress guard ────────────────────────────────────────────────
 # A heavy `docker build` makes the daemon stop answering the host socket, which

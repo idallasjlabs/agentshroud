@@ -2229,6 +2229,39 @@ else
     fail=1
 fi
 echo ""
+echo "── colima-health-check.sh: VM sizing comes from the host's saved colima.yaml (2026-10-16) ──"
+# Behavioral: run the real _colima_vm_flags extracted from the script. With a
+# saved ~/.colima/default/colima.yaml the flags must carry NO --cpu/--memory/
+# --disk (Colima reuses the saved shape, which is per-host and reboot-safe);
+# without one (first-ever VM) the explicit defaults must still be passed.
+_cvf_block="$(sed -n '/^# BEGIN colima-vm-flags$/,/^# END colima-vm-flags$/p' "$REPO/docker/scripts/colima-health-check.sh")"
+_cvf_home="$(mktemp -d)"
+mkdir -p "$_cvf_home/.colima/default"
+printf 'cpu: 4\nmemory: 8\ndisk: 120\n' > "$_cvf_home/.colima/default/colima.yaml"
+# The block ends with a comment line, so the call must start on a new line.
+_cvf_with="$(HOME="$_cvf_home" _COLIMA_CPU=8 _COLIMA_MEMORY_GB=10 bash -c "$_cvf_block"$'\n'"_colima_vm_flags")"
+_cvf_without="$(HOME="$_cvf_home/none" _COLIMA_CPU=8 _COLIMA_MEMORY_GB=10 bash -c "$_cvf_block"$'\n'"_colima_vm_flags")"
+rm -rf "$_cvf_home"
+if [[ -n "$_cvf_block" && "$_cvf_with" == "--network-address" ]]; then
+    echo "  OK : saved colima.yaml → no sizing flags (host's own shape is reused)"
+else
+    echo "  FAIL: with a saved colima.yaml, expected '--network-address' only, got '$_cvf_with'" >&2
+    fail=1
+fi
+if [[ "$_cvf_without" == "--cpu 8 --memory 10 --disk 120 --network-address" ]]; then
+    echo "  OK : no saved colima.yaml → explicit defaults still passed for first creation"
+else
+    echo "  FAIL: without colima.yaml, expected explicit defaults, got '$_cvf_without'" >&2
+    fail=1
+fi
+if /usr/bin/grep -qE '<string>--(cpu|memory|disk)</string>' "$REPO/scripts/launchd/com.agentshroud.colima-autostart.plist"; then
+    echo "  FAIL: LaunchAgent plist still hard-codes --cpu/--memory/--disk" >&2
+    fail=1
+else
+    echo "  OK : LaunchAgent plist passes no sizing flags"
+fi
+
+echo ""
 if [[ "$fail" -eq 0 ]]; then
     echo "  ALL CHECKS PASSED"
     exit 0

@@ -11,16 +11,17 @@
          that script's own Colima check/start at the top -- this LaunchAgent
          just gets a normal interactive login back to a working state faster,
          without anyone having to remember to run `colima start` by hand. -->
+    <!-- 2026-10-16: no --cpu/--memory/--disk here any more. Colima persists
+         the last-used sizing in ~/.colima/default/colima.yaml and reuses it
+         when started without sizing flags, so that file is the per-host
+         source of truth (prod larger than dev, owner directive). Hard-coding
+         a shape here re-imposed it on every login regardless of what the
+         host had been resized to. Same rule in docker/scripts/
+         colima-health-check.sh (_colima_vm_flags). -->
     <key>ProgramArguments</key>
     <array>
         <string>/opt/homebrew/bin/colima</string>
         <string>start</string>
-        <string>--cpu</string>
-        <string>8</string>
-        <string>--memory</string>
-        <string>12</string>
-        <string>--disk</string>
-        <string>120</string>
         <string>--network-address</string>
     </array>
 
