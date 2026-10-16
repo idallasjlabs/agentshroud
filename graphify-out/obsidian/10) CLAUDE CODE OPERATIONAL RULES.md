@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "TestEgressTelegramNotify"
+community: "Applies to: Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)"
 location: "L520"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestEgressTelegramNotify
+  - community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary
 ---
 
 # 10) CLAUDE CODE OPERATIONAL RULES
@@ -15,4 +15,4 @@ tags:
 - [[Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]] - `contains` [EXTRACTED]
 - [[MCP tools available]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestEgressTelegramNotify
+#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary

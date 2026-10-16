@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "auto_remediate_cves.py"
+community: "TestNormalizeForSpeech"
 location: "L384"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/auto_remediate_cvespy
+  - community/TestNormalizeForSpeech
 ---
 
 # [1], [possible], [note] — not uppercase-only, must not be touched.
 
 ## Connections
-- [[.test_lowercase_bracket_not_matched()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_lowercase_bracket_not_matched()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/auto_remediate_cvespy
+#graphify/rationale #graphify/EXTRACTED #community/TestNormalizeForSpeech

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "TestCheckCommandExecution"
+community: "AgentShroud™ CVE Mitigation Matrix"
 location: "L543"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestCheckCommandExecution
+  - community/AgentShroud_CVE_Mitigation_Matrix
 ---
 
 # 2026-09-12 re-verification (Sunday upgrade cycle)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud™ CVE Mitigation Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestCheckCommandExecution
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix

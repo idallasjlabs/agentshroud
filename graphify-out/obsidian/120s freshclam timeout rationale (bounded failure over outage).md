@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/security-entrypoint.sh"
 type: "rationale"
-community: "Discovery Strategy"
+community: "security-entrypoint.sh"
 location: "31-47"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Discovery_Strategy
+  - community/security-entrypointsh
 ---
 
 # 120s freshclam timeout rationale (bounded failure over outage)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[security-entrypoint.sh]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Discovery_Strategy
+#graphify/rationale #graphify/EXTRACTED #community/security-entrypointsh

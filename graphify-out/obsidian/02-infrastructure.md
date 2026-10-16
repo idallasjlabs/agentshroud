@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/02-infrastructure.md"
 type: "document"
-community: ".test_gives_up_and_marks_sent_after_max_retries("
+community: "02-infrastructure.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_gives_up_and_marks_sent_after_max_retries
+  - community/02-infrastructuremd
 ---
 
 # 02-infrastructure.md
@@ -16,6 +16,6 @@ tags:
 - [[Deployment Diagram — What Runs Where]] - `conceptually_related_to` [EXTRACTED]
 - [[Infrastructure Diagram — Hosting & Servers]] - `conceptually_related_to` [EXTRACTED]
 - [[Network Topology Diagram]] - `conceptually_related_to` [EXTRACTED]
-- [[README_120]] - `references` [EXTRACTED]
+- [[diagramsREADME]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_gives_up_and_marks_sent_after_max_retries
+#graphify/document #graphify/EXTRACTED #community/02-infrastructuremd

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "ResourceGuard"
+community: "PIIConfig"
 location: "L314"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/PIIConfig
 ---
 
 # 100 messages through process_inbound in under 5 seconds.
 
 ## Connections
-- [[.test_100_inbound_messages_under_5s()]] - `rationale_for` [EXTRACTED]
-- [[.test_100_outbound_messages_under_5s()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_100_inbound_messages_under_5s()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_100_outbound_messages_under_5s()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

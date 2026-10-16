@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "rationale"
-community: "AgentShroud Red Team Adversarial Tester"
+community: "MultiHostResult"
 location: "L149"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester
+  - community/MultiHostResult
 ---
 
 # 0 iff all hosts passed; 1 otherwise (incl. empty / any unreachable).
 
 ## Connections
-- [[.exit_code()]] - `rationale_for` [EXTRACTED]
+- [[dot-exit_code()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester
+#graphify/rationale #graphify/EXTRACTED #community/MultiHostResult

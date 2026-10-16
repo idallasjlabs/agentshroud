@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/03-data.md"
 type: "document"
-community: "version_routes.py"
+community: "03-data.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/version_routespy
+  - community/03-datamd
 ---
 
 # 03-data.md
@@ -17,6 +17,6 @@ tags:
 - [[Data Flow Diagram]] - `conceptually_related_to` [EXTRACTED]
 - [[Data Lineage Diagram]] - `conceptually_related_to` [EXTRACTED]
 - [[Entity Relationship Diagram (ledger, approval_items)]] - `conceptually_related_to` [EXTRACTED]
-- [[README_120]] - `references` [EXTRACTED]
+- [[diagramsREADME]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/version_routespy
+#graphify/document #graphify/EXTRACTED #community/03-datamd
