@@ -20,7 +20,8 @@
 #
 # Usage: docker/bots/hermes/run-standalone.sh {up|down|status|logs}
 #
-# Env (all optional — asb sets these when it calls this script):
+# Env (all optional — asb sets these when it calls this script; this script
+# also sources docker/.env itself as a fallback, see below):
 #   AGENTSHROUD_PROJECT       compose project name (default: agentshroud)
 #   AGENTSHROUD_VERSION       image tag (default: latest)
 #   AGENTSHROUD_SECRETS_DIR   dir of <secret_name>.txt files (default:
@@ -30,6 +31,23 @@
 set -euo pipefail
 
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../../.." && pwd)"
+
+# 2026-10-14 incident fix: previously this script only read whatever
+# AGENTSHROUD_PROD_CRON_KEEP etc. the CALLER's shell happened to already have
+# exported (asb's _hermes_up and update-agentshroud.sh both do `set -a; .
+# docker/.env; set +a` before invoking this script) — any invocation that
+# skips that step (bare `bash run-standalone.sh up`, or whatever recreated
+# the container around 2026-10-12T12:19 EDT without going through asb) got
+# AGENTSHROUD_PROD_CRON_KEEP="" and init-config.sh's prod reconciliation
+# paused all 35 Hermes cron jobs with only an INFO log line (see
+# project_daily_brief_pipeline_live.md). Source it here too so this script is
+# self-sufficient regardless of caller. Safe no-op on dev hosts / anywhere
+# docker/.env doesn't exist (2>/dev/null || true — matches the exact pattern
+# already used by asb and update-agentshroud.sh for this same file).
+set -a
+# shellcheck source=docker/.env disable=SC1091
+. "$REPO_DIR/docker/.env" 2>/dev/null || true
+set +a
 
 PROJECT="${AGENTSHROUD_PROJECT:-agentshroud}"
 VERSION="${AGENTSHROUD_VERSION:-latest}"
