@@ -12,10 +12,10 @@ tags:
 # Athena — Knowledge Distiller
 
 ## Connections
-- [[Input Requirements_21]] - `contains` [EXTRACTED]
-- [[Output Format_26]] - `contains` [EXTRACTED]
+- [[Input Requirements_22]] - `contains` [EXTRACTED]
+- [[Output Format_37]] - `contains` [EXTRACTED]
 - [[Persona_16]] - `contains` [EXTRACTED]
-- [[Role_78]] - `contains` [EXTRACTED]
-- [[SKILL_132]] - `contains` [EXTRACTED]
+- [[Role_92]] - `contains` [EXTRACTED]
+- [[openclawskillsi-athenaSKILL]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

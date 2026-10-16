@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "lifespan.py"
+community: "AlertDispatcher"
 location: "L1159"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/AlertDispatcher
 ---
 
 # All security modules should have copyright header.
 
 ## Connections
-- [[.test_all_modules_have_copyright()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_all_modules_have_copyright()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

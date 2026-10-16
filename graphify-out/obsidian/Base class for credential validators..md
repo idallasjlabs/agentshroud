@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "Google Services Setup - Calendar, Contacts, Keep"
+community: "CredentialValidator"
 location: "L108"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Google_Services_Setup_-_Calendar_Contacts_Keep
+  - community/CredentialValidator
 ---
 
 # Base class for credential validators.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CredentialValidator]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Google_Services_Setup_-_Calendar_Contacts_Keep
+#graphify/rationale #graphify/EXTRACTED #community/CredentialValidator

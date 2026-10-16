@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "SSHProxy"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
 location: "L266"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # "Access Denied"
 
 ## Connections
-- [[Troubleshooting_10]] - `contains` [EXTRACTED]
+- [[Troubleshooting_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SSHProxy
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

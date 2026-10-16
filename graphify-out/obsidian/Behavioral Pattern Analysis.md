@@ -1,13 +1,13 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "/graphify add URL Ingestion"
+community: "Behavioral Pattern Analysis"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community//graphify_add_URL_Ingestion
+  - community/Behavioral_Pattern_Analysis
 ---
 
 # Behavioral Pattern Analysis
 
-#graphify/concept #graphify/EXTRACTED #community//graphify_add_URL_Ingestion
+#graphify/concept #graphify/EXTRACTED #community/Behavioral_Pattern_Analysis

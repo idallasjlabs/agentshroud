@@ -1,23 +1,23 @@
 ---
 source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
 type: "document"
-community: "gateway.proxy.llm_proxy"
+community: "Technical Specification"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/gatewayproxyllm_proxy
+  - community/Technical_Specification
 ---
 
 # Apollo — Audio Systems Producer
 
 ## Connections
-- [[Input Requirements_20]] - `contains` [EXTRACTED]
-- [[Output_4]] - `contains` [EXTRACTED]
-- [[Quality Checklist_18]] - `contains` [EXTRACTED]
-- [[Role_77]] - `contains` [EXTRACTED]
-- [[SKILL_130]] - `contains` [EXTRACTED]
-- [[SKILL_142]] - `contains` [EXTRACTED]
+- [[Input Requirements_15]] - `contains` [EXTRACTED]
+- [[Output_8]] - `contains` [EXTRACTED]
+- [[Quality Checklist_12]] - `contains` [EXTRACTED]
+- [[Role_74]] - `contains` [EXTRACTED]
 - [[Technical Specification_2]] - `contains` [EXTRACTED]
+- [[openclawskillsi-apolloSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/gatewayproxyllm_proxy
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

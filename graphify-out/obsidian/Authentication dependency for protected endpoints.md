@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "InjectionSeverity"
+community: "test_main_endpoints.py"
 location: "L191"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/InjectionSeverity
+  - community/test_main_endpointspy
 ---
 
 # Authentication dependency for protected endpoints
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[auth_dep()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/InjectionSeverity
+#graphify/rationale #graphify/EXTRACTED #community/test_main_endpointspy

@@ -1,28 +1,19 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L215"
+community: ".load_all"
+location: "L63"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/TelegramAPIProxy
+  - graphify/EXTRACTED
+  - community/load_all
 ---
 
 # ApprovalQueueItem
 
 ## Connections
-- [[._notify_telegram()]] - `references` [EXTRACTED]
-- [[.decide()]] - `references` [EXTRACTED]
-- [[.get_item()]] - `references` [EXTRACTED]
-- [[.get_pending()]] - `references` [EXTRACTED]
-- [[.submit()]] - `references` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
-- [[ApprovalRequest_3]] - `uses` [INFERRED]
-- [[ApprovalStore_1]] - `uses` [INFERRED]
-- [[MFAGuard_2]] - `uses` [INFERRED]
-- [[ToolRiskConfig_1]] - `uses` [INFERRED]
-- [[ToolRiskPolicy_1]] - `uses` [INFERRED]
+- [[dot-load_all()]] - `references` [EXTRACTED]
+- [[dot-load_pending()]] - `references` [EXTRACTED]
+- [[dot-save()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/load_all

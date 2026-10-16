@@ -1,22 +1,20 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L75"
+community: "ingest_api/models.py"
+location: "L347"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ToolResultSanitizer
+  - community/ingest_api/modelspy
 ---
 
 # Any
 
 ## Connections
-- [[._audit()_1]] - `references` [EXTRACTED]
-- [[.get_stats()_10]] - `references` [EXTRACTED]
-- [[.to_dict()_2]] - `references` [EXTRACTED]
-- [[URLAnalyzer]] - `uses` [INFERRED]
-- [[WebContentScanner]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[dot-get_stats()_6]] - `references` [EXTRACTED]
+- [[LedgerConfig_1]] - `uses` [INFERRED]
+- [[LedgerEntry]] - `uses` [INFERRED]
+- [[LedgerQueryResponse]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/ToolResultSanitizer
+#graphify/code #graphify/INFERRED #community/ingest_api/modelspy

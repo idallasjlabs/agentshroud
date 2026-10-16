@@ -1,11 +1,11 @@
 ---
 source_file: "branding/logos/svg/logo.svg"
 type: "image"
-community: "chatbot/main.py"
+community: "AgentShroud Primary Logo Lockup"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/chatbot/mainpy
+  - community/AgentShroud_Primary_Logo_Lockup
 ---
 
 # AgentShroud Logo (SVG Wrapper, Embedded Raster)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Primary Logo Lockup]] - `references` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/chatbot/mainpy
+#graphify/image #graphify/INFERRED #community/AgentShroud_Primary_Logo_Lockup

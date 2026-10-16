@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/07-team-planning.md"
 type: "concept"
-community: ".test_gives_up_and_marks_sent_after_max_retries("
+community: "02-infrastructure.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_gives_up_and_marks_sent_after_max_retries
+  - community/02-infrastructuremd
 ---
 
 # Agile Team Diagram — Structure & Roles
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[07-team-planning]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_gives_up_and_marks_sent_after_max_retries
+#graphify/concept #graphify/EXTRACTED #community/02-infrastructuremd

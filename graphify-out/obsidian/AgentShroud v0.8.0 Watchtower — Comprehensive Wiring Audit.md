@@ -1,18 +1,18 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-wiring-audit.md"
 type: "document"
-community: "System Audit & Documentation"
+community: "AgentShroud v0.8.0 \"Watchtower\" — Comprehensive Wiring Audit"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Audit__Documentation
+  - community/AgentShroud_v080_Watchtower__Comprehensive_Wiring_Audit
 ---
 
 # AgentShroud v0.8.0 "Watchtower" — Comprehensive Wiring Audit
 
 ## Connections
-- [[Executive Summary_7]] - `contains` [EXTRACTED]
+- [[Executive Summary_13]] - `contains` [EXTRACTED]
 - [[Fix Priority List]] - `contains` [EXTRACTED]
 - [[Revised Summary]] - `contains` [EXTRACTED]
 - [[Updated v0.8.0 Feature List with Wiring Status]] - `contains` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[🔴 CRITICAL — Not Wired (code exists, tests pass, but NOT running in production)]] - `contains` [EXTRACTED]
 - [[🟡 MEDIUM — Partially Wired or Degraded]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Audit__Documentation
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Comprehensive_Wiring_Audit

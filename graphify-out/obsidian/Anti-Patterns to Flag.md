@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-bs/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
 type: "document"
-community: "AWS Cloud Management & FinOps Agent"
-location: "L30"
+community: "Skill: Technical Writer (TW)"
+location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent
+  - community/Skill_Technical_Writer_TW
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Branding Specialist (BS)]] - `contains` [EXTRACTED]
+- [[Skill Technical Writer (TW)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Writer_TW

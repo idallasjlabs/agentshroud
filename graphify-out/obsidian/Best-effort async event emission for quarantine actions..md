@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TestPathIsolationManager"
+community: "._filter_outbound"
 location: "L6959"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/_filter_outbound
 ---
 
 # Best-effort async event emission for quarantine actions.
 
 ## Connections
-- [[._emit_quarantine_event()]] - `rationale_for` [EXTRACTED]
+- [[dot-_emit_quarantine_event()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/rationale #graphify/EXTRACTED #community/_filter_outbound

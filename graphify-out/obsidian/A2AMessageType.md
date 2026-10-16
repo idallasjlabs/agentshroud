@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "hermes/skills/i-bs/README.md"
+community: "A2AGovernanceProxy"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/A2AGovernanceProxy
 ---
 
 # A2AMessageType
 
 ## Connections
 - [[A2A protocol message types (based on A2A v1.0 spec).]] - `rationale_for` [EXTRACTED]
-- [[Enum]] - `inherits` [EXTRACTED]
+- [[Enum_2]] - `inherits` [EXTRACTED]
 - [[TestDisabledProxy]] - `uses` [INFERRED]
 - [[TestInboundProcessing]] - `uses` [INFERRED]
 - [[TestMessageFingerprint]] - `uses` [INFERRED]
@@ -21,11 +21,11 @@ tags:
 - [[TestOutboundProcessing]] - `uses` [INFERRED]
 - [[TestPIISanitization]] - `uses` [INFERRED]
 - [[TestPeerManagement]] - `uses` [INFERRED]
-- [[TestRateLimiting]] - `uses` [INFERRED]
+- [[TestRateLimiting_2]] - `uses` [INFERRED]
 - [[TestReporting]] - `uses` [INFERRED]
 - [[TestTaskConcurrency]] - `uses` [INFERRED]
 - [[a2a_governance.py]] - `contains` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[str_2]] - `inherits` [EXTRACTED]
 - [[test_a2a_governance.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/hermes/skills/i-bs/READMEmd
+#graphify/code #graphify/INFERRED #community/A2AGovernanceProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md"
 type: "document"
-community: "agentshroud-ieee-paper.md"
+community: "AgentShroud v1.0.0 Fortress Release Announcement"
 location: "L146"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-ieee-papermd
+  - community/AgentShroud_v100_Fortress_Release_Announcement
 ---
 
 # Awesome-List PR Templates
@@ -17,4 +17,4 @@ tags:
 - [[awesome-llm-apps  awesome-llm]] - `contains` [EXTRACTED]
 - [[awesome-security  defensive security list]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-ieee-papermd
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v100_Fortress_Release_Announcement

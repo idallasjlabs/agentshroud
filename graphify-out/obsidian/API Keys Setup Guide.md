@@ -1,19 +1,19 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "record_decision"
+community: "API Keys Setup Guide"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/record_decision
+  - community/API_Keys_Setup_Guide
 ---
 
 # API Keys Setup Guide
 
 ## Connections
-- [[Overview_17]] - `contains` [EXTRACTED]
-- [[Quick Reference_8]] - `contains` [EXTRACTED]
+- [[Overview_13]] - `contains` [EXTRACTED]
+- [[Quick Reference_10]] - `contains` [EXTRACTED]
 - [[SETUP_API_KEYS]] - `contains` [EXTRACTED]
 - [[Security Notes_3]] - `contains` [EXTRACTED]
 - [[Step 1 Save API Keys to Secret Files]] - `contains` [EXTRACTED]
@@ -24,6 +24,6 @@ tags:
 - [[Step 6 Add Telegram Bot]] - `contains` [EXTRACTED]
 - [[Step 7 Test the Bot]] - `contains` [EXTRACTED]
 - [[Summary Checklist]] - `contains` [EXTRACTED]
-- [[Troubleshooting_31]] - `contains` [EXTRACTED]
+- [[Troubleshooting_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/record_decision
+#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

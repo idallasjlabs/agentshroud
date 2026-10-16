@@ -1,11 +1,11 @@
 ---
 source_file: "branding/taglines.json"
 type: "document"
-community: "AgentShroud — Master Feature List (Everything Ev"
+community: "test_openclaw_photo.sh"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__Master_Feature_List_Everything_Ev
+  - community/test_openclaw_photosh
 ---
 
 # AgentShroud Taglines List
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Tagline]] - `references` [EXTRACTED]
 - [[test_openclaw_photo.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__Master_Feature_List_Everything_Ev
+#graphify/document #graphify/EXTRACTED #community/test_openclaw_photosh

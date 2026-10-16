@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "ProgressiveLockdown"
+community: "AlertDispatcher"
 location: "L264"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/AlertDispatcher
 ---
 
 # Base64 encoded instruction.
 
 ## Connections
-- [[.test_base64_injection()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_base64_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

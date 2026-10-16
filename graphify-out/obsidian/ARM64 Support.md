@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/trivy.md"
 type: "document"
-community: "Mode A — Single task"
+community: "Trivy"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task
+  - community/Trivy
 ---
 
 # ARM64 Support
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Trivy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task
+#graphify/document #graphify/EXTRACTED #community/Trivy

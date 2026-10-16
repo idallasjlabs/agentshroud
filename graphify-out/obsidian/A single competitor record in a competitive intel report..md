@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "HTTPConnectProxy"
+community: "CompetitiveIntelReport"
 location: "L83"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/CompetitiveIntelReport
 ---
 
 # A single competitor record in a competitive intel report.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CompetitorEntry_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/rationale #graphify/EXTRACTED #community/CompetitiveIntelReport

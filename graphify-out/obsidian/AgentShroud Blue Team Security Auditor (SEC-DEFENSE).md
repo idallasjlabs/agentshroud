@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "DockerEngine"
+community: "agentshroud-blueteam/SKILL.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DockerEngine
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # AgentShroud Blue Team Security Auditor (SEC-DEFENSE)
@@ -19,14 +19,14 @@ tags:
 - [[approval_hardening.py]] - `references` [EXTRACTED]
 - [[audit_export.py]] - `references` [EXTRACTED]
 - [[canary_tripwire.py]] - `references` [EXTRACTED]
-- [[config.py]] - `references` [EXTRACTED]
 - [[docsreviewsblue-team-audit-v0.7.0]] - `references` [EXTRACTED]
 - [[encoding_detector.py]] - `references` [EXTRACTED]
 - [[enhanced_queue.py]] - `references` [EXTRACTED]
 - [[file_sandbox.py]] - `references` [EXTRACTED]
+- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `references` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `references` [EXTRACTED]
 - [[key_rotation.py]] - `references` [EXTRACTED]
 - [[killswitch_monitor.py]] - `references` [EXTRACTED]
-- [[main.py_2]] - `references` [EXTRACTED]
 - [[memory_integrity.py]] - `references` [EXTRACTED]
 - [[middleware.py]] - `references` [EXTRACTED]
 - [[multi_turn_tracker.py]] - `references` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[tool_result_sanitizer.py]] - `references` [EXTRACTED]
 - [[xml_leak_filter.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DockerEngine
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

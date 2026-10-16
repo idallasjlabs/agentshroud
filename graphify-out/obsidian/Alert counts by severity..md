@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "rationale"
-community: "CredentialInjector"
+community: "AlertStore"
 location: "L243"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CredentialInjector
+  - community/AlertStore
 ---
 
 # Alert counts by severity.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[alerts_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CredentialInjector
+#graphify/rationale #graphify/EXTRACTED #community/AlertStore

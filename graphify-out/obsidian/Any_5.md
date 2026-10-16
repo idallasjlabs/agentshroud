@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/ingest_api/alert_telegram_relay.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "test_telegram_proxy_outbound.py"
-location: "L55"
+community: "TestAggregateResults"
+location: "L516"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_outboundpy
+  - community/TestAggregateResults
 ---
 
 # Any
 
 ## Connections
-- [[.__call__()]] - `references` [EXTRACTED]
-- [[.__init__()_9]] - `references` [EXTRACTED]
-- [[._clean_tool()]] - `references` [EXTRACTED]
-- [[._coerce()]] - `references` [EXTRACTED]
-- [[._handle()]] - `references` [EXTRACTED]
+- [[_stub_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy
+#graphify/code #graphify/EXTRACTED #community/TestAggregateResults

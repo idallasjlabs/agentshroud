@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/PRIOR-USE.md"
 type: "document"
-community: "Message Composition with MML (MIME Meta Language"
+community: "AgentShroud™ — Trademark Prior Use Record"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Message_Composition_with_MML_MIME_Meta_Language
+  - community/AgentShroud__Trademark_Prior_Use_Record
 ---
 
 # AgentShroud™ — Trademark Prior Use Record
@@ -20,4 +20,4 @@ tags:
 - [[Next Steps Federal Registration]] - `contains` [EXTRACTED]
 - [[PRIOR-USE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Message_Composition_with_MML_MIME_Meta_Language
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record

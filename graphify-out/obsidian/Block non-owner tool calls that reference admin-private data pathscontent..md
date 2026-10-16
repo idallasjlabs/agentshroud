@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "GitGuard"
+community: "MCPPermissionManager"
 location: "L500"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/MCPPermissionManager
 ---
 
 # Block non-owner tool calls that reference admin-private data paths/content.
 
 ## Connections
-- [[.check_tool_parameters()]] - `rationale_for` [EXTRACTED]
+- [[dot-check_tool_parameters()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GitGuard
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

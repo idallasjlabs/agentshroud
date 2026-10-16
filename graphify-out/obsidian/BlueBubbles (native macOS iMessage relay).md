@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup/IMESSAGE_STATUS.md"
 type: "concept"
-community: "check_command()"
+community: "How to Fix (5 Minutes)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/check_command
+  - community/How_to_Fix_5_Minutes
 ---
 
 # BlueBubbles (native macOS iMessage relay)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[IMESSAGE_STATUS]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/check_command
+#graphify/concept #graphify/EXTRACTED #community/How_to_Fix_5_Minutes

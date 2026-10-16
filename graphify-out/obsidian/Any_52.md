@@ -1,19 +1,23 @@
 ---
-source_file: "gateway/security/outbound_filter.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "test_security_toolchain.py"
-location: "L73"
+community: "Action"
+location: "L726"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - graphify/INFERRED
+  - community/Action
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_103]] - `references` [EXTRACTED]
-- [[._compile_patterns()_1]] - `references` [EXTRACTED]
-- [[.get_stats()_17]] - `references` [EXTRACTED]
+- [[dot-_handler()]] - `references` [EXTRACTED]
+- [[Action_2]] - `uses` [INFERRED]
+- [[PermissionResult]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Resource_2]] - `uses` [INFERRED]
+- [[Role_96]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/INFERRED #community/Action

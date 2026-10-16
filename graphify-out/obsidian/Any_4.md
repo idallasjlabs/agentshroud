@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: "gateway/security/report_store.py"
 type: "code"
-community: "patch"
-location: "L39"
+community: "ReportStore"
+location: "L182"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/patch
+  - graphify/EXTRACTED
+  - community/ReportStore
 ---
 
 # Any
 
 ## Connections
-- [[SCLClient]] - `uses` [INFERRED]
-- [[_output()]] - `references` [EXTRACTED]
+- [[dot-get()]] - `references` [EXTRACTED]
+- [[dot-list()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/patch
+#graphify/code #graphify/EXTRACTED #community/ReportStore

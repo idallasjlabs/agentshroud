@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "GSDE&G Development Master Checklist Skill"
-location: "L379"
+community: "DockerEngine"
+location: "L139"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/GSDEG_Development_Master_Checklist_Skill
+  - community/DockerEngine
 ---
 
 # Any
 
 ## Connections
-- [[.get_lifecycle_status()]] - `references` [EXTRACTED]
-- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
+- [[dot-inspect()_2]] - `references` [EXTRACTED]
+- [[ContainerEngine]] - `uses` [INFERRED]
+- [[ContainerInfo]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/GSDEG_Development_Master_Checklist_Skill
+#graphify/code #graphify/INFERRED #community/DockerEngine

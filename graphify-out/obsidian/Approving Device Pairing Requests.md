@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Browser — Secure Browser Automation (SKILL)"
+community: "AgentShroud Device Pairing Management"
 location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_SKILL
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # Approving Device Pairing Requests
@@ -17,4 +17,4 @@ tags:
 - [[Quick Approval (Single Device)]] - `contains` [EXTRACTED]
 - [[Verify Approval]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

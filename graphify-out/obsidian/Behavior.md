@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
+source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
 type: "document"
-community: "TestMinimalConfig"
-location: "L21"
+community: "AGENTSHROUD_MODE"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMinimalConfig
+  - community/AGENTSHROUD_MODE
 ---
 
 # Behavior
 
 ## Connections
-- [[apply-patches.js_2]] - `contains` [EXTRACTED]
+- [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMinimalConfig
+#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_MODE

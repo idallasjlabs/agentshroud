@@ -1,22 +1,22 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
+source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "AgentShroud v0.7.0 Blue Team Security Audit Repo"
-location: "L227"
+community: "SecureBrowser - Enterprise Secure Browser Automation"
+location: "L222"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Blue_Team_Security_Audit_Repo
+  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
 ---
 
 # Best Practices
 
 ## Connections
-- [[1. Always Specify Risk Level_1]] - `contains` [EXTRACTED]
-- [[2. Use Allowlisting Liberally_1]] - `contains` [EXTRACTED]
-- [[3. Take Screenshots for Audit Trail_1]] - `contains` [EXTRACTED]
-- [[4. Handle CAPTCHAs Gracefully_1]] - `contains` [EXTRACTED]
-- [[5. Never Extract Credentials_1]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation_3]] - `contains` [EXTRACTED]
+- [[1. Always Specify Risk Level]] - `contains` [EXTRACTED]
+- [[2. Use Allowlisting Liberally]] - `contains` [EXTRACTED]
+- [[3. Take Screenshots for Audit Trail]] - `contains` [EXTRACTED]
+- [[4. Handle CAPTCHAs Gracefully]] - `contains` [EXTRACTED]
+- [[5. Never Extract Credentials]] - `contains` [EXTRACTED]
+- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Blue_Team_Security_Audit_Repo
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automation

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md"
 type: "document"
-community: "agentshroud-ieee-paper.md"
+community: "AgentShroud v1.0.0 Fortress Release Announcement"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-ieee-papermd
+  - community/AgentShroud_v100_Fortress_Release_Announcement
 ---
 
 # AgentShroud Security Overview v0.8.0
@@ -18,4 +18,4 @@ tags:
 - [[agentshroud-security-overview-v0.8.0]] - `contains` [EXTRACTED]
 - [[v0.9.0  v1.0.0 Roadmap]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-ieee-papermd
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v100_Fortress_Release_Announcement

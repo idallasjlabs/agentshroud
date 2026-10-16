@@ -1,29 +1,29 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "AgentTarget"
+community: "test_a2a_policy.py"
 location: "L134"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/test_a2a_policypy
 ---
 
 # A2APolicyAction
 
 ## Connections
-- [[.from_dict()_2]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_8]] - `calls` [EXTRACTED]
 - [[A2AMethod_1]] - `uses` [INFERRED]
-- [[A2APolicyConfig_1]] - `uses` [INFERRED]
+- [[A2APolicyConfig]] - `uses` [INFERRED]
 - [[A2APolicyEngine_2]] - `uses` [INFERRED]
-- [[Enum]] - `inherits` [EXTRACTED]
+- [[Enum_2]] - `inherits` [EXTRACTED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `uses` [INFERRED]
 - [[The three terminal policy outcomes for an MCP tool call.]] - `rationale_for` [EXTRACTED]
 - [[_LegacyStubApprovalQueue]] - `uses` [INFERRED]
 - [[_StubApprovalQueue]] - `uses` [INFERRED]
 - [[a2a_policy.py]] - `contains` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[str_2]] - `inherits` [EXTRACTED]
 - [[test_a2a_policy.py]] - `imports` [EXTRACTED]
 - [[test_a2a_policy_default_failclosed.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

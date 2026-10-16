@@ -1,23 +1,24 @@
 ---
-source_file: "gateway/soc/services.py"
+source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "Hermes Cron Jobs Reference & Recreation Guide"
-location: "L25"
+community: "A2AProxyResult"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+  - community/A2AProxyResult
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_131]] - `references` [EXTRACTED]
-- [[._describe_service()]] - `references` [EXTRACTED]
-- [[._get_engine()]] - `references` [EXTRACTED]
-- [[HealthStatus]] - `uses` [INFERRED]
-- [[ServiceDescriptor]] - `uses` [INFERRED]
-- [[ServiceStatus]] - `uses` [INFERRED]
-- [[_inspect_via_socket()]] - `references` [EXTRACTED]
+- [[dot-__init__()_161]] - `references` [EXTRACTED]
+- [[dot-extract_text_for_pii_scan()]] - `references` [EXTRACTED]
+- [[dot-parse_jsonrpc_request()]] - `references` [EXTRACTED]
+- [[dot-process_inbound_request()]] - `references` [EXTRACTED]
+- [[A2AMethod]] - `uses` [INFERRED]
+- [[A2APolicyEngine_1]] - `uses` [INFERRED]
+- [[ViolationType]] - `uses` [INFERRED]
+- [[_redact_message_text()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+#graphify/code #graphify/EXTRACTED #community/A2AProxyResult

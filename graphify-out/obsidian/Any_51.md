@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/security/network_validator.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "AgentShroud Security Value Proposition - REVISED"
-location: "L124"
+community: "Action"
+location: "L187"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition_-_REVISED
+  - graphify/INFERRED
+  - community/Action
 ---
 
 # Any
 
 ## Connections
-- [[._parse_service_network_config()]] - `references` [EXTRACTED]
-- [[._validate_network_definitions()]] - `references` [EXTRACTED]
-- [[.get_security_report()]] - `references` [EXTRACTED]
+- [[dot-check_permission()_2]] - `references` [EXTRACTED]
+- [[dot-get_user_permissions_summary()]] - `references` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Role_96]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_REVISED
+#graphify/code #graphify/INFERRED #community/Action

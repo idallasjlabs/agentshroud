@@ -1,17 +1,17 @@
 ---
-source_file: "AGENTS.md"
+source_file: "CLAUDE.md"
 type: "document"
-community: "OpenClaw Skill Metadata Schema (frontmatter conv"
-location: "L125"
+community: "Applies to: Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)"
+location: "L376"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv
+  - community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary
 ---
 
 # 6) SECURITY & SAFETY REQUIREMENTS
 
 ## Connections
-- [[Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]] - `contains` [EXTRACTED]
+- [[Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv
+#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary

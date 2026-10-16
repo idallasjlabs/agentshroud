@@ -1,13 +1,13 @@
 ---
 source_file: "branding/icons/app/icon-32x32.png"
 type: "image"
-community: "PII redaction — presidio engine 0.9 confidence m"
+community: "App Icon 32x32 (AgentShroud logo mark)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/PII_redaction__presidio_engine_09_confidence_m
+  - community/App_Icon_32x32_AgentShroud_logo_mark
 ---
 
 # App Icon 32x32 (AgentShroud logo mark)
 
-#graphify/image #graphify/EXTRACTED #community/PII_redaction__presidio_engine_09_confidence_m
+#graphify/image #graphify/EXTRACTED #community/App_Icon_32x32_AgentShroud_logo_mark

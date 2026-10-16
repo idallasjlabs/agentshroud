@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "rationale"
-community: "test_daily_cve_report.py"
+community: "HTTPConnectProxy"
 location: "L89"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/HTTPConnectProxy
 ---
 
 # Asyncio HTTP CONNECT proxy server.      Intercepts CONNECT tunnel requests, vali
 
 ## Connections
-- [[HTTPConnectProxy]] - `rationale_for` [EXTRACTED]
+- [[HTTPConnectProxy_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/rationale #graphify/EXTRACTED #community/HTTPConnectProxy

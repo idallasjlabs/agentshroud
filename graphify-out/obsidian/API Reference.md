@@ -1,19 +1,19 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "Known Log Messages"
+community: "API Reference"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Known_Log_Messages
+  - community/API_Reference
 ---
 
 # API Reference
 
 ## Connections
 - [[AgentShroud v1.3.0]] - `contains` [EXTRACTED]
-- [[Authentication_1]] - `contains` [EXTRACTED]
+- [[Authentication]] - `contains` [EXTRACTED]
 - [[Error responses]] - `contains` [EXTRACTED]
 - [[Example `GET managehealth`]] - `contains` [EXTRACTED]
 - [[Example `POST manageegress{request_id}approve`]] - `contains` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[Source of truth]] - `contains` [EXTRACTED]
 - [[api-reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Known_Log_Messages
+#graphify/document #graphify/EXTRACTED #community/API_Reference

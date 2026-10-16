@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "test_anthropic_openai_translator.py"
+community: "AgentShroud Incident Response Plan"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_anthropic_openai_translatorpy
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # AgentShroud Deployment Procedure
@@ -15,15 +15,15 @@ tags:
 - [[AgentShroud Incident Response Plan]] - `conceptually_related_to` [INFERRED]
 - [[AgentShroud Operations Runbook]] - `conceptually_related_to` [INFERRED]
 - [[Deployment Modes_1]] - `contains` [EXTRACTED]
-- [[Kill Switch (FREEZESHUTDOWNDISCONNECT)]] - `references` [EXTRACTED]
+- [[Kill Switch (FREEZESHUTDOWNDISCONNECT)_1]] - `references` [EXTRACTED]
 - [[Maintenance Procedures]] - `contains` [EXTRACTED]
 - [[Monitoring Setup]] - `contains` [EXTRACTED]
 - [[PII Sanitizer (Presidio + regex hybrid)]] - `references` [EXTRACTED]
 - [[Post-Deployment Validation]] - `contains` [EXTRACTED]
-- [[Prerequisites_3]] - `contains` [EXTRACTED]
+- [[Prerequisites_1]] - `contains` [EXTRACTED]
 - [[Production Hardening]] - `contains` [EXTRACTED]
 - [[Step-by-Step Deployment]] - `contains` [EXTRACTED]
 - [[Troubleshooting Common Issues]] - `contains` [EXTRACTED]
 - [[deployment-procedure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

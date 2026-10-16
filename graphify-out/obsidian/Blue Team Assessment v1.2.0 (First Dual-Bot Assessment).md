@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/v1.2/blue-team-assessment-v1.2.0.md"
 type: "document"
-community: "test_hermes_cron_seed.py"
+community: "Findings"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_hermes_cron_seedpy
+  - community/Findings
 ---
 
 # Blue Team Assessment v1.2.0 (First Dual-Bot Assessment)
@@ -15,4 +15,4 @@ tags:
 - [[blue-team-assessment-v0.8.0]] - `references` [EXTRACTED]
 - [[v0.8.0 25-Domain Prompt Injection Defense Assessment]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/test_hermes_cron_seedpy
+#graphify/document #graphify/EXTRACTED #community/Findings

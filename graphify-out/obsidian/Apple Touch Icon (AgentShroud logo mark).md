@@ -1,13 +1,13 @@
 ---
 source_file: "branding/favicons/apple-touch-icon.png"
 type: "image"
-community: "Build-config pinning — sdkconfig.defaults pins T"
+community: "Apple Touch Icon (AgentShroud logo mark)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Build-config_pinning__sdkconfigdefaults_pins_T
+  - community/Apple_Touch_Icon_AgentShroud_logo_mark
 ---
 
 # Apple Touch Icon (AgentShroud logo mark)
 
-#graphify/image #graphify/EXTRACTED #community/Build-config_pinning__sdkconfigdefaults_pins_T
+#graphify/image #graphify/EXTRACTED #community/Apple_Touch_Icon_AgentShroud_logo_mark

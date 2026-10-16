@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm/SKILL.md"
+source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "Telegram & Gmail Integration Guide"
-location: "L127"
+community: "GitHub Copilot CLI Setup Guide"
+location: "L383"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram__Gmail_Integration_Guide
+  - community/GitHub_Copilot_CLI_Setup_Guide
 ---
 
 # Authentication Issues
 
 ## Connections
-- [[10. Troubleshooting]] - `contains` [EXTRACTED]
+- [[Troubleshooting_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram__Gmail_Integration_Guide
+#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide

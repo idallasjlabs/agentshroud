@@ -1,22 +1,30 @@
 ---
-source_file: "gateway/ingest_api/version_routes.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L51"
+community: "PipelineAction"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/PipelineAction
 ---
 
 # Any
 
 ## Connections
-- [[downgrade_version()]] - `references` [EXTRACTED]
-- [[get_current_version()]] - `references` [EXTRACTED]
-- [[get_version_history()]] - `references` [EXTRACTED]
-- [[review_version()]] - `references` [EXTRACTED]
-- [[rollback_version()]] - `references` [EXTRACTED]
-- [[upgrade_version()]] - `references` [EXTRACTED]
+- [[dot-_process_inbound_core()]] - `references` [EXTRACTED]
+- [[dot-_process_outbound_core()]] - `references` [EXTRACTED]
+- [[dot-append()]] - `references` [EXTRACTED]
+- [[dot-append_block()]] - `references` [EXTRACTED]
+- [[dot-append_owner_bypass()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_10]] - `references` [EXTRACTED]
+- [[dot-process_inbound()_3]] - `references` [EXTRACTED]
+- [[dot-process_outbound()_3]] - `references` [EXTRACTED]
+- [[dot-to_dict()_2]] - `references` [EXTRACTED]
+- [[BotIncidentSeverity]] - `uses` [INFERRED]
+- [[FilterResult]] - `uses` [INFERRED]
+- [[InjectionAction]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[ViolationType]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

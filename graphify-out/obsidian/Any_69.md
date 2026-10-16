@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/tests/test_resource_guard_wiring.py"
+source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "REPORT STRUCTURE"
-location: "L62"
+community: "test_e2e_proxy.py"
+location: "L160"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/REPORT_STRUCTURE
+  - graphify/EXTRACTED
+  - community/test_e2e_proxypy
 ---
 
 # Any
 
 ## Connections
-- [[._build_bridge()]] - `references` [EXTRACTED]
-- [[ResourceGuard]] - `uses` [INFERRED]
-- [[ResourceLimits]] - `uses` [INFERRED]
+- [[dot-get_stats()_17]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/REPORT_STRUCTURE
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

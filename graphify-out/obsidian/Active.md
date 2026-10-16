@@ -1,18 +1,17 @@
 ---
-source_file: "docs/diagrams/images/diagram-17-state-bot-session.svg"
-type: "concept"
-community: "MEDIUM — Fix Soon"
+source_file: "docs/planning/README.md"
+type: "document"
+community: "`docs/planning/` — Index"
+location: "L24"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/MEDIUM__Fix_Soon
+  - community/docs/planning/__Index
 ---
 
-# active
+# Active
 
 ## Connections
-- [[compacting (token count approaches reserveTokensFloor, 196K of 200K)]] - `calls` [EXTRACTED]
-- [[fresh (container starts, new session created)]] - `calls` [EXTRACTED]
-- [[idle (health monitor 300s interval)]] - `calls` [EXTRACTED]
+- [[`docsplanning` — Index]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/MEDIUM__Fix_Soon
+#graphify/document #graphify/EXTRACTED #community/docs/planning/__Index

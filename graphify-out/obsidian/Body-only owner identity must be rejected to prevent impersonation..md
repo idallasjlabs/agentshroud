@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "rationale"
-community: "Safe Refactor Specialist"
+community: "TestMCPProxyEndpoint"
 location: "L205"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Safe_Refactor_Specialist
+  - community/TestMCPProxyEndpoint
 ---
 
 # Body-only owner identity must be rejected to prevent impersonation.
 
 ## Connections
-- [[.test_owner_body_identity_rejected_without_header()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_owner_body_identity_rejected_without_header()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Safe_Refactor_Specialist
+#graphify/rationale #graphify/EXTRACTED #community/TestMCPProxyEndpoint

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "rationale"
-community: "ApprovalRequest"
+community: "AgentTarget"
 location: "L241"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/AgentTarget
 ---
 
 # AgentTarget accepts custom chat_path and health_path.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_agent_target_custom_paths()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

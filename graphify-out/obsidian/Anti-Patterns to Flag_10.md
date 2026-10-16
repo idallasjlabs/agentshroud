@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-ui/SKILL.md"
 type: "document"
-community: "Technical Specification"
-location: "L97"
+community: "Skill: UI Expert (UI)"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Specification
+  - community/Skill_UI_Expert_UI
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Security Review (SEC)_1]] - `contains` [EXTRACTED]
+- [[Skill UI Expert (UI)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Specification
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

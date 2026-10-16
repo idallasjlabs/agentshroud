@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "rationale"
-community: "test_a2a_policy.py"
+community: "server.py"
 location: "L338"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/serverpy
 ---
 
 # Best-effort model warm-up.      Preloading the STT model and TTS pipeline at sta
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_warm()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/rationale #graphify/EXTRACTED #community/serverpy

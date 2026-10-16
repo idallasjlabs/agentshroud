@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/apple-notes/SKILL.md"
 type: "document"
-community: "ADR-008-progressive-trust-levels.md"
+community: "Bear Notes"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-008-progressive-trust-levelsmd
+  - community/Bear_Notes
 ---
 
 # Apple Notes CLI
 
 ## Connections
-- [[SKILL_195]] - `contains` [EXTRACTED]
+- [[apple-notesSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-008-progressive-trust-levelsmd
+#graphify/document #graphify/EXTRACTED #community/Bear_Notes

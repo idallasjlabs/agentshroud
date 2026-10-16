@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/test-augmenter.agent.md"
 type: "document"
-community: "session-prompt-setup.sh"
+community: "Test Augmentation Specialist"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/session-prompt-setupsh
+  - community/Test_Augmentation_Specialist
 ---
 
 # A) Test Coverage Analysis
@@ -15,6 +15,6 @@ tags:
 - [[6.1 Enforcement Test Coverage]] - `contains` [EXTRACTED]
 - [[6.2 Attack Simulation Coverage]] - `contains` [EXTRACTED]
 - [[AgentShroud v0.7.0 Blue Team Security Audit Report]] - `contains` [EXTRACTED]
-- [[Your Responsibilities]] - `contains` [EXTRACTED]
+- [[Your Responsibilities_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/session-prompt-setupsh
+#graphify/document #graphify/EXTRACTED #community/Test_Augmentation_Specialist

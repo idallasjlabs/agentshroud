@@ -1,23 +1,22 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "PipelineAction"
-location: "L8"
+community: "OpenSCAP"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/OpenSCAP
 ---
 
 # Architecture Overview
 
 ## Connections
-- [[Architecture Overview_2]] - `contains` [EXTRACTED]
-- [[Container Architecture_2]] - `contains` [EXTRACTED]
-- [[Full System Diagram]] - `contains` [EXTRACTED]
-- [[Gateway Internal Layer Order]] - `contains` [EXTRACTED]
-- [[Network Topology_1]] - `contains` [EXTRACTED]
-- [[Related Notes_2]] - `contains` [EXTRACTED]
-- [[Summary_21]] - `contains` [EXTRACTED]
+- [[2.1 Design Principle Transparent Proxy]] - `contains` [EXTRACTED]
+- [[2.2 Why Transparent Proxy]] - `contains` [EXTRACTED]
+- [[2.3 Data Flow]] - `contains` [EXTRACTED]
+- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - `contains` [EXTRACTED]
+- [[Local LLM Support — Implementation Review]] - `contains` [EXTRACTED]
+- [[OpenClaw Integration (Primary Target)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PipelineAction
+#graphify/document #graphify/EXTRACTED #community/OpenSCAP

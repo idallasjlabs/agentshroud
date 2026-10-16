@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "competitive-report-*.md dated reports"
+community: "Trademark Statements"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/competitive-report-md_dated_reports
+  - community/Trademark_Statements
 ---
 
 # AgentShroud Bot Capabilities
@@ -17,4 +17,4 @@ tags:
 - [[Trademark Statements]] - `contains` [EXTRACTED]
 - [[bot-capabilities]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/competitive-report-md_dated_reports
+#graphify/document #graphify/EXTRACTED #community/Trademark_Statements

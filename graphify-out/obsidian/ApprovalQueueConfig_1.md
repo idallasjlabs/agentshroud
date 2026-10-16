@@ -1,17 +1,24 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "AgentShroud Sequence Diagrams"
-location: "L41"
+community: "ApprovalQueueConfig"
+location: "L47"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/AgentShroud_Sequence_Diagrams
+  - graphify/INFERRED
+  - community/ApprovalQueueConfig
 ---
 
 # ApprovalQueueConfig
 
 ## Connections
-- [[.__init__()_5]] - `references` [EXTRACTED]
+- [[dot-__init__()_147]] - `references` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_2]] - `uses` [INFERRED]
+- [[ApprovalRequest_5]] - `uses` [INFERRED]
+- [[ApprovalStore]] - `uses` [INFERRED]
+- [[MFAGuard_2]] - `uses` [INFERRED]
+- [[ToolRiskConfig]] - `uses` [INFERRED]
+- [[ToolRiskPolicy]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Sequence_Diagrams
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig

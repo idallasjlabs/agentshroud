@@ -1,21 +1,21 @@
 ---
 source_file: "skills/README.md"
 type: "document"
-community: "test_jira_weekly_review.py"
+community: "AgentShroud Skills Library"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_jira_weekly_reviewpy
+  - community/AgentShroud_Skills_Library
 ---
 
 # AgentShroud Skills Library
 
 ## Connections
 - [[Custom Skills]] - `contains` [EXTRACTED]
-- [[Directory Structure_2]] - `contains` [EXTRACTED]
+- [[Directory Structure_1]] - `contains` [EXTRACTED]
 - [[OpenClaw Built-in Skills]] - `contains` [EXTRACTED]
-- [[README_131]] - `contains` [EXTRACTED]
-- [[Usage_128]] - `contains` [EXTRACTED]
+- [[Usage_64]] - `contains` [EXTRACTED]
+- [[skillsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_jira_weekly_reviewpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Skills_Library

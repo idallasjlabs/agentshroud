@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/reviews/blue-team-audit-v0.7.0.md"
 type: "document"
-community: "Error Index.md"
+community: "AgentShroud v0.7.0 Blue Team Security Audit Report"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd
+  - community/AgentShroud_v070_Blue_Team_Security_Audit_Report
 ---
 
 # AgentShroud v0.7.0 Blue Team Security Audit Report
@@ -24,11 +24,11 @@ tags:
 - [[AgentShroud v0.7.0 Enforcement Audit Results]] - `conceptually_related_to` [INFERRED]
 - [[ContextGuard (context window poisoning defense)]] - `references` [EXTRACTED]
 - [[Egress Filter  SSRF Protection]] - `references` [EXTRACTED]
-- [[Executive Summary_1]] - `contains` [EXTRACTED]
+- [[Executive Summary_4]] - `contains` [EXTRACTED]
 - [[FileSandbox (path isolation)]] - `references` [EXTRACTED]
 - [[GitGuard (supply-chain hook scanning)]] - `references` [EXTRACTED]
 - [[PII Sanitizer (Presidio + regex hybrid)]] - `references` [EXTRACTED]
 - [[PromptGuard (Prompt Injection Defense)]] - `references` [EXTRACTED]
-- [[blue-team-audit-v0.7.0]] - `contains` [EXTRACTED]
+- [[planningreviewsblue-team-audit-v0.7.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Blue_Team_Security_Audit_Report

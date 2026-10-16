@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-10-data-dictionary.png"
 type: "image"
-community: "TestDockerEngine"
+community: "Approval Queue (human-in-the-loop)"
 tags:
   - graphify/image
-  - graphify/INFERRED
-  - community/TestDockerEngine
+  - graphify/EXTRACTED
+  - community/Approval_Queue_human-in-the-loop
 ---
 
 # Approval queue data (in-memory, backed by SQLite)
@@ -14,4 +14,4 @@ tags:
 - [[Approval Queue (human-in-the-loop)_1]] - `semantically_similar_to` [INFERRED]
 - [[EphemeralTransient data (never persisted raw)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/INFERRED #community/TestDockerEngine
+#graphify/image #graphify/EXTRACTED #community/Approval_Queue_human-in-the-loop

@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/soak_status.py"
+source_file: "gateway/cli/main.py"
 type: "code"
-community: "pytest.ini"
-location: "L33"
+community: "cli/main.py"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pytestini
+  - community/cli/mainpy
 ---
 
 # Any
 
 ## Connections
-- [[_is_benign_skip()]] - `references` [EXTRACTED]
-- [[classify()_1]] - `references` [EXTRACTED]
+- [[SCLClient]] - `uses` [INFERRED]
+- [[_output()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/pytestini
+#graphify/code #graphify/EXTRACTED #community/cli/mainpy

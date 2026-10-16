@@ -1,11 +1,11 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "ADR-002: Default-Allow Security Philosophy"
+community: "AGENTS.md — Codex CLI Guidance"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-002_Default-Allow_Security_Philosophy
+  - community/AGENTSmd__Codex_CLI_Guidance
 ---
 
 # AGENTS.md — Codex CLI Guidance
@@ -20,4 +20,4 @@ tags:
 - [[Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]] - `contains` [EXTRACTED]
 - [[Guidance for ChatGPT Codex CLI when working in this repository.]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-002_Default-Allow_Security_Philosophy
+#graphify/document #graphify/EXTRACTED #community/AGENTSmd__Codex_CLI_Guidance

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "ApprovalQueueItem"
 location: "L241"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/ApprovalQueueItem
 ---
 
 # Auto-expire old requests.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAutoExpire]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueItem

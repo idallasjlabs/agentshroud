@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "TestGroupMemoryWriteACL"
+community: "TestRunAndSendCveReportImageScans"
 location: "L1272"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestGroupMemoryWriteACL
+  - community/TestRunAndSendCveReportImageScans
 ---
 
 # A critical finding in an image scan uses the red icon.
 
 ## Connections
-- [[.test_critical_image_finding_uses_red_icon()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_critical_image_finding_uses_red_icon()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestGroupMemoryWriteACL
+#graphify/rationale #graphify/EXTRACTED #community/TestRunAndSendCveReportImageScans

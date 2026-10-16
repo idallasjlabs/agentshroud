@@ -1,17 +1,17 @@
 ---
-source_file: "docs/claude-security-audit-prompt.md"
+source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
 type: "document"
-community: "detect_runtime()"
-location: "L30"
+community: "Error Index.md"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/detect_runtime
+  - community/Error_Indexmd
 ---
 
 # Architecture
 
 ## Connections
-- [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - `contains` [EXTRACTED]
+- [[Presidio Analyzer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/detect_runtime
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "rationale"
-community: "test_soc_router_coverage.py"
+community: "DifferentialPIIDetector"
 location: "L342"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/DifferentialPIIDetector
 ---
 
 # A weak-confidence hit (0.75) must appear in tool results but not prompts.
 
 ## Connections
-- [[.test_weak_hit_present_in_tool_result_only()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_weak_hit_present_in_tool_result_only()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/DifferentialPIIDetector

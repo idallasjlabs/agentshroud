@@ -1,12 +1,12 @@
 ---
-source_file: "reports/upgrade-2026-08-30.md"
+source_file: "reports/upgrade-2026-08-30-20260830-2010.md"
 type: "document"
-community: "graphify reference: extra exports and benchmark"
+community: "AgentShroud Weekly Upgrade Report — 2026-08-30"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark
+  - community/AgentShroud_Weekly_Upgrade_Report__2026-08-30
 ---
 
 # AgentShroud Weekly Upgrade Report — 2026-08-30
@@ -24,4 +24,4 @@ tags:
 - [[Run history_2]] - `contains` [EXTRACTED]
 - [[upgrade-2026-08-30]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade_Report__2026-08-30

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mm/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mm/SKILL.md"
 type: "document"
-community: "test_cli_coverage.py"
+community: "Skill: Mindmap Architect (MM)"
 location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_cli_coveragepy
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Mindmap Architect (MM)_1]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_cli_coveragepy
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

@@ -1,13 +1,13 @@
 ---
 source_file: "branding/logos/variants/logo-on-white-1024x1024.png"
 type: "image"
-community: "MCP Server: github"
+community: "AgentShroud Logo on White Background"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/MCP_Server_github
+  - community/AgentShroud_Logo_on_White_Background
 ---
 
 # AgentShroud Logo on White Background
 
-#graphify/image #graphify/EXTRACTED #community/MCP_Server_github
+#graphify/image #graphify/EXTRACTED #community/AgentShroud_Logo_on_White_Background

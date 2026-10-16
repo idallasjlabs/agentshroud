@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/forwarder.py"
+source_file: "gateway/security/soc_correlation.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L160"
+community: "CorrelationSummary"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/CorrelationSummary
 ---
 
 # Any
 
 ## Connections
-- [[.get_stats()_2]] - `references` [EXTRACTED]
+- [[dot-to_dict()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/CorrelationSummary

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "TeamsConfig"
+community: "TestKillSwitchVerification"
 location: "L266"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/TestKillSwitchVerification
 ---
 
 # Automated verification that verify_killswitch() returns required fields.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKillSwitchVerification]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig
+#graphify/rationale #graphify/EXTRACTED #community/TestKillSwitchVerification

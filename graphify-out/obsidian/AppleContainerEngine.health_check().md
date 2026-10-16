@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
 type: "document"
-community: "Security Implementation Verification"
+community: "apple_engine.py"
 location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Implementation_Verification
+  - community/apple_enginepy
 ---
 
 # AppleContainerEngine.health_check()
 
 ## Connections
-- [[Function Details_19]] - `contains` [EXTRACTED]
+- [[Function Details_16]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Implementation_Verification
+#graphify/document #graphify/EXTRACTED #community/apple_enginepy

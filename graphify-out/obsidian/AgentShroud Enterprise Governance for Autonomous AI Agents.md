@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-whitepaper.md"
 type: "document"
-community: "Restart Procedure"
+community: "AgentShroud: Enterprise Governance for Autonomous AI Agents"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Restart_Procedure
+  - community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents
 ---
 
 # AgentShroud: Enterprise Governance for Autonomous AI Agents
@@ -24,8 +24,8 @@ tags:
 - [[7. Deployment]] - `contains` [EXTRACTED]
 - [[8. Performance & Testing]] - `contains` [EXTRACTED]
 - [[9. Deep Security Hardening (v0.9.0)]] - `contains` [EXTRACTED]
-- [[Architecture Overview]] - `contains` [EXTRACTED]
-- [[Executive Summary]] - `contains` [EXTRACTED]
+- [[Architecture Overview_3]] - `contains` [EXTRACTED]
+- [[Executive Summary_10]] - `contains` [EXTRACTED]
 - [[agentshroud-whitepaper]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Restart_Procedure
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents

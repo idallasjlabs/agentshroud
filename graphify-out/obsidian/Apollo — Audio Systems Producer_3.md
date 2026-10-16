@@ -1,21 +1,23 @@
 ---
-source_file: "docker/config/openclaw/skills/i-apollo/README.md"
+source_file: "docker/config/hermes/skills/i-apollo/SKILL.md"
 type: "document"
-community: "test_call_agent_uses_structured_timeout()"
-location: "L1"
+community: "Technical Specification"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_call_agent_uses_structured_timeout
+  - community/Technical_Specification
 ---
 
 # Apollo — Audio Systems Producer
 
 ## Connections
-- [[Purpose_74]] - `contains` [EXTRACTED]
-- [[README_79]] - `contains` [EXTRACTED]
-- [[Related Skills_80]] - `contains` [EXTRACTED]
-- [[SKILL_142]] - `contains` [EXTRACTED]
-- [[Usage_82]] - `contains` [EXTRACTED]
+- [[Input Requirements_14]] - `contains` [EXTRACTED]
+- [[Output_7]] - `contains` [EXTRACTED]
+- [[Quality Checklist_11]] - `contains` [EXTRACTED]
+- [[Role_73]] - `contains` [EXTRACTED]
+- [[Technical Specification_1]] - `contains` [EXTRACTED]
+- [[hermesskillsi-apolloSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_call_agent_uses_structured_timeout
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

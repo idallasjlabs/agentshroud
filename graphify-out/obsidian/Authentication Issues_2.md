@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "Telegram & Gmail Integration Guide"
+community: "10. Troubleshooting"
 location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram__Gmail_Integration_Guide
+  - community/10_Troubleshooting
 ---
 
 # Authentication Issues
@@ -15,4 +15,4 @@ tags:
 - [[10. Troubleshooting]] - `contains` [EXTRACTED]
 - [[MCP Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram__Gmail_Integration_Guide
+#graphify/document #graphify/EXTRACTED #community/10_Troubleshooting

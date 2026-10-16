@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "ReportStore"
+community: "EgressApprovalQueue"
 location: "L239"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/EgressApprovalQueue
 ---
 
 # Assess risk level for a domain/port combination.          Returns:             R
 
 ## Connections
-- [[._assess_risk()]] - `rationale_for` [EXTRACTED]
+- [[dot-_assess_risk()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ReportStore
+#graphify/rationale #graphify/EXTRACTED #community/EgressApprovalQueue

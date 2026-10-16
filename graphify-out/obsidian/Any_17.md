@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/proxy/mcp_inspector.py"
+source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "Steps"
-location: "L140"
+community: "ResourceGuard"
+location: "L62"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Steps
+  - graphify/INFERRED
+  - community/ResourceGuard
 ---
 
 # Any
 
 ## Connections
-- [[._redact_pii()]] - `references` [EXTRACTED]
-- [[._scan_value()]] - `references` [EXTRACTED]
-- [[.inspect_tool_call()]] - `references` [EXTRACTED]
-- [[.inspect_tool_result()]] - `references` [EXTRACTED]
+- [[dot-_build_bridge()]] - `references` [EXTRACTED]
+- [[ResourceGuard]] - `uses` [INFERRED]
+- [[ResourceLimits]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Steps
+#graphify/code #graphify/INFERRED #community/ResourceGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "ApprovalQueueConfig"
 location: "L104"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/ApprovalQueueConfig
 ---
 
 # Approval queue configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ApprovalQueueConfig_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "rationale"
-community: "test_a2a_proxy.py"
+community: "RateLimiter"
 location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - community/RateLimiter
 ---
 
 # Args:             max_requests: Maximum requests allowed in the time window
 
 ## Connections
-- [[.__init__()_10]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_33]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/RateLimiter

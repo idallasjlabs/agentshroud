@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
 type: "concept"
-community: "Phase Review: P0 — Core Pipeline Wiring"
+community: "ADR-001: Transparent Proxy Decision"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Phase_Review_P0__Core_Pipeline_Wiring
+  - community/ADR-001_Transparent_Proxy_Decision
 ---
 
 # ADR-001: Transparent Proxy Decision
@@ -16,4 +16,4 @@ tags:
 - [[Proxy Mode (Recommended)]] - `implements` [EXTRACTED]
 - [[Sidecar Mode (Performance Optimized)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Phase_Review_P0__Core_Pipeline_Wiring
+#graphify/concept #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_Decision

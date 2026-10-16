@@ -1,11 +1,11 @@
 ---
 source_file: ".semgrep.yml"
 type: "document"
-community: "chatbot/main.py"
+community: "AgentShroud Semgrep SAST Configuration"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/AgentShroud_Semgrep_SAST_Configuration
 ---
 
 # AgentShroud Semgrep SAST Configuration
@@ -14,7 +14,6 @@ tags:
 - [[FR3 System Integrity]] - `references` [EXTRACTED]
 - [[IEC 62443 Compliance Matrix]] - `conceptually_related_to` [INFERRED]
 - [[PULL_REQUEST_TEMPLATE]] - `references` [EXTRACTED]
-- [[Pre-commit Hooks Configuration]] - `references` [EXTRACTED]
 - [[Rule agentshroud-assert-security-check]] - `references` [EXTRACTED]
 - [[Rule agentshroud-hardcoded-password]] - `references` [EXTRACTED]
 - [[Rule agentshroud-log-sensitive-key]] - `references` [EXTRACTED]
@@ -36,4 +35,4 @@ tags:
 - [[subprocess-shell-true rule (CWE-78)]] - `references` [EXTRACTED]
 - [[subprocess-unvalidated-input rule (CWE-78)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Semgrep_SAST_Configuration

@@ -1,24 +1,24 @@
 ---
 source_file: ".agents/skills/i-apollo/SKILL.md"
 type: "document"
-community: "TestIsContainerRunning"
+community: "Apollo — Audio Systems Producer"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestIsContainerRunning
+  - community/Apollo__Audio_Systems_Producer
 ---
 
 # Apollo — Audio Systems Producer
 
 ## Connections
+- [[dot-agentsskillsi-apolloSKILL]] - `contains` [EXTRACTED]
 - [[Apollo README]] - `references` [EXTRACTED]
 - [[Athena — Knowledge Distiller_6]] - `shares_data_with` [EXTRACTED]
-- [[ElevenLabs Text-to-Dialogue API_1]] - `references` [EXTRACTED]
+- [[ElevenLabs Text-to-Dialogue API]] - `references` [EXTRACTED]
 - [[Input Requirements]] - `contains` [EXTRACTED]
 - [[Output]] - `contains` [EXTRACTED]
 - [[Quality Checklist]] - `contains` [EXTRACTED]
-- [[Role_4]] - `contains` [EXTRACTED]
-- [[SKILL_3]] - `contains` [EXTRACTED]
+- [[Role]] - `contains` [EXTRACTED]
 - [[Technical Specification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestIsContainerRunning
+#graphify/document #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer

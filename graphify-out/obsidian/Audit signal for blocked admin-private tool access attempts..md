@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "GitGuard"
+community: "MCPPermissionManager"
 location: "L154"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/MCPPermissionManager
 ---
 
 # Audit signal for blocked admin-private tool access attempts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PrivateAccessAttempt]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GitGuard
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

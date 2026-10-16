@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-ab/SKILL.md"
 type: "document"
-community: "gen.py"
+community: "AWS Cloud Management & FinOps Agent"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/genpy
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # Audit Branch (Merge Regression Detection)
@@ -16,4 +16,4 @@ tags:
 - [[GSDL-715 (Merge Regression Ticket)]] - `references` [EXTRACTED]
 - [[i-crpr — Production-Ready PR Skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/genpy
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

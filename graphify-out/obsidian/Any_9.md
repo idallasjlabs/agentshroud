@@ -1,23 +1,17 @@
 ---
-source_file: "gateway/ingest_api/router.py"
+source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "ApprovalRequest"
-location: "L152"
+community: "PermissionLevel"
+location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/PermissionLevel
 ---
 
 # Any
 
 ## Connections
-- [[._build_forward_payload()]] - `references` [EXTRACTED]
-- [[.forward_to_agent()]] - `references` [EXTRACTED]
-- [[.forward_to_agent_stream()]] - `references` [EXTRACTED]
-- [[.health_check()]] - `references` [EXTRACTED]
-- [[AgentTarget]] - `uses` [INFERRED]
-- [[ForwardRequest]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[dot-from_dict()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

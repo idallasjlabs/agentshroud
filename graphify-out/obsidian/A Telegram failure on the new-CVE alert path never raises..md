@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "Mac App Discovery Skill"
+community: "TestPerAgentUpstreamChecks"
 location: "L748"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Mac_App_Discovery_Skill
+  - community/TestPerAgentUpstreamChecks
 ---
 
 # A Telegram failure on the new-CVE alert path never raises.
 
 ## Connections
-- [[.test_alert_send_failure_is_swallowed()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_alert_send_failure_is_swallowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Mac_App_Discovery_Skill
+#graphify/rationale #graphify/EXTRACTED #community/TestPerAgentUpstreamChecks

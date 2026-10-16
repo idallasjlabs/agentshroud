@@ -1,11 +1,11 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Slack Channel Setup"
+community: "sunday-upgrade-apply.sh"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Slack_Channel_Setup
+  - community/sunday-upgrade-applysh
 ---
 
 # AgentShroud CLAUDE.md operating rules
@@ -15,4 +15,4 @@ tags:
 - [[Prove the Outcome, Never the Steps]] - `references` [EXTRACTED]
 - [[Weekly Upgrades EVERYTHING Means Everything]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Slack_Channel_Setup
+#graphify/document #graphify/EXTRACTED #community/sunday-upgrade-applysh

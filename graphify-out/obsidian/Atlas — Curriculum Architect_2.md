@@ -1,27 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
+source_file: "docker/config/hermes/skills/i-atlas/README.md"
 type: "document"
-community: "AGENTS.md — Codex CLI Guidance"
-location: "L6"
+community: "hermes/skills/i-bs/README.md"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AGENTSmd__Codex_CLI_Guidance
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Atlas — Curriculum Architect
 
 ## Connections
-- [[Input Requirements_12]] - `contains` [EXTRACTED]
-- [[OKE Channel — CPA Exam Context_2]] - `contains` [EXTRACTED]
-- [[Output Format_14]] - `contains` [EXTRACTED]
-- [[Persona_9]] - `contains` [EXTRACTED]
-- [[Quality Checklist_11]] - `contains` [EXTRACTED]
-- [[Role_43]] - `contains` [EXTRACTED]
-- [[SKILL_70]] - `contains` [EXTRACTED]
-- [[SKILL_79]] - `contains` [EXTRACTED]
-- [[System Prompt_9]] - `contains` [EXTRACTED]
-- [[User Prompt Template_5]] - `contains` [EXTRACTED]
-- [[User Prompt Template — OKE Channel_1]] - `contains` [EXTRACTED]
+- [[Purpose_85]] - `contains` [EXTRACTED]
+- [[Related Skills_66]] - `contains` [EXTRACTED]
+- [[Usage_77]] - `contains` [EXTRACTED]
+- [[hermesskillsi-atlasREADME]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AGENTSmd__Codex_CLI_Guidance
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

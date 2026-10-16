@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "DockerEngine"
+community: "agentshroud-blueteam/SKILL.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DockerEngine
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # AgentShroud Red Team Adversarial Tester (SEC-OFFENSE)
@@ -16,7 +16,7 @@ tags:
 - [[STPA-Sec Methodology]] - `references` [EXTRACTED]
 - [[Steve Hay Adversary Model]] - `references` [EXTRACTED]
 - [[docsreviewsred-team-report-v0.7.0]] - `references` [EXTRACTED]
-- [[main.py_2]] - `references` [EXTRACTED]
+- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `references` [EXTRACTED]
 - [[test_redteam_probes.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DockerEngine
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

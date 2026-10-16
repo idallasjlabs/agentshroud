@@ -1,22 +1,22 @@
 ---
-source_file: "docs/api/integration-guide.md"
+source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "AgentShroud Blue Team Security Auditor"
-location: "L14"
+community: "main.py.md"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Blue_Team_Security_Auditor
+  - community/mainpymd
 ---
 
-# Architecture Overview
+# Architecture Overview.md
 
 ## Connections
-- [[2.1 Design Principle Transparent Proxy]] - `contains` [EXTRACTED]
-- [[2.2 Why Transparent Proxy]] - `contains` [EXTRACTED]
-- [[2.3 Data Flow]] - `contains` [EXTRACTED]
-- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - `contains` [EXTRACTED]
-- [[Local LLM Support — Implementation Review]] - `contains` [EXTRACTED]
-- [[OpenClaw Integration (Primary Target)]] - `contains` [EXTRACTED]
+- [[Architecture Overview_1]] - `contains` [EXTRACTED]
+- [[Data Flow]] - `references` [EXTRACTED]
+- [[Home]] - `references` [EXTRACTED]
+- [[Startup Sequence]] - `references` [EXTRACTED]
+- [[System Overview]] - `references` [EXTRACTED]
+- [[main.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor
+#graphify/document #graphify/EXTRACTED #community/mainpymd

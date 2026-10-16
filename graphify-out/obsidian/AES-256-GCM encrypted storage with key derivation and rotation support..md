@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "rationale"
-community: "lifespan.py"
+community: "AgentRegistry"
 location: "L59"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/AgentRegistry
 ---
 
 # AES-256-GCM encrypted storage with key derivation and rotation support.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EncryptedStore]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry

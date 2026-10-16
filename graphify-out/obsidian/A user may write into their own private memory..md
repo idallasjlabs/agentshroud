@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "rationale"
-community: "test_security_audit.py"
+community: "RBACConfig"
 location: "L178"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_security_auditpy
+  - community/RBACConfig
 ---
 
 # A user may write into their own private memory.
 
 ## Connections
-- [[.test_self_write_succeeds()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_self_write_succeeds()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_security_auditpy
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

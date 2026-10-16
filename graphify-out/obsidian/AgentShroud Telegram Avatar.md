@@ -1,13 +1,13 @@
 ---
 source_file: "branding/social/telegram-avatar-512x512.png"
 type: "image"
-community: "EnhancedApprovalQueue.broadcast (SCRUM-154 bound"
+community: "AgentShroud Telegram Avatar"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueuebroadcast_SCRUM-154_bound
+  - community/AgentShroud_Telegram_Avatar
 ---
 
 # AgentShroud Telegram Avatar
 
-#graphify/image #graphify/EXTRACTED #community/EnhancedApprovalQueuebroadcast_SCRUM-154_bound
+#graphify/image #graphify/EXTRACTED #community/AgentShroud_Telegram_Avatar

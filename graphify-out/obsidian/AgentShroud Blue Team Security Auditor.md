@@ -1,23 +1,23 @@
 ---
 source_file: ".agents/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Mode A — Single task"
+community: "AgentShroud Blue Team Security Auditor"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # AgentShroud Blue Team Security Auditor
 
 ## Connections
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-sec-defenseSKILL]] - `contains` [EXTRACTED]
 - [[Audit Procedure]] - `contains` [EXTRACTED]
-- [[Critical Rules_1]] - `contains` [EXTRACTED]
+- [[Critical Rules_8]] - `contains` [EXTRACTED]
 - [[F. Infrastructure]] - `contains` [EXTRACTED]
 - [[Methodology]] - `contains` [EXTRACTED]
-- [[Output Format_9]] - `contains` [EXTRACTED]
-- [[SKILL_15]] - `contains` [EXTRACTED]
-- [[SKILL_51]] - `contains` [EXTRACTED]
+- [[Output Format_23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

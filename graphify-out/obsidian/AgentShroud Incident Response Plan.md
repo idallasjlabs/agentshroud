@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "test_anthropic_openai_translator.py"
+community: "AgentShroud Incident Response Plan"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_anthropic_openai_translatorpy
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # AgentShroud Incident Response Plan
@@ -17,7 +17,7 @@ tags:
 - [[Contact Information]] - `contains` [EXTRACTED]
 - [[Incident Classification System]] - `contains` [EXTRACTED]
 - [[Incident Response Team Structure]] - `contains` [EXTRACTED]
-- [[Kill Switch (FREEZESHUTDOWNDISCONNECT)]] - `references` [EXTRACTED]
+- [[Kill Switch (FREEZESHUTDOWNDISCONNECT)_1]] - `references` [EXTRACTED]
 - [[P1 Critical Incidents]] - `contains` [EXTRACTED]
 - [[P2 High Priority Incidents]] - `contains` [EXTRACTED]
 - [[P3 Medium Priority Incidents]] - `contains` [EXTRACTED]
@@ -25,6 +25,6 @@ tags:
 - [[PII Sanitizer (Presidio + regex hybrid)]] - `references` [EXTRACTED]
 - [[Post-Incident Activities]] - `contains` [EXTRACTED]
 - [[Trust Manager  Progressive Trust System]] - `references` [EXTRACTED]
-- [[incident-response]] - `contains` [EXTRACTED]
+- [[operationsincident-response]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "main.rs"
+community: "soc/router.py"
 location: "L222"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/mainrs
+  - community/soc/routerpy
 ---
 
 # AuditLogEntry
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[AddCollaboratorRequest]] - `uses` [INFERRED]
 - [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_67]] - `uses` [INFERRED]
+- [[Any_31]] - `uses` [INFERRED]
 - [[ApprovalDecisionRequest]] - `uses` [INFERRED]
-- [[AuditResult_1]] - `uses` [INFERRED]
+- [[AuditResult]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[CreateDelegationRequest]] - `uses` [INFERRED]
 - [[CreateGroupRequest]] - `uses` [INFERRED]
@@ -28,10 +28,10 @@ tags:
 - [[JSONResponse]] - `uses` [INFERRED]
 - [[LoginRequest]] - `uses` [INFERRED]
 - [[RenameGroupRequest]] - `uses` [INFERRED]
-- [[Request_6]] - `uses` [INFERRED]
-- [[SCLCaller_1]] - `uses` [INFERRED]
-- [[SCLInterface_1]] - `uses` [INFERRED]
-- [[ScanRequest_1]] - `uses` [INFERRED]
+- [[Request_2]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
+- [[SCLInterface]] - `uses` [INFERRED]
+- [[ScanRequest]] - `uses` [INFERRED]
 - [[ServiceActionRequest]] - `uses` [INFERRED]
 - [[SetLogLevelRequest]] - `uses` [INFERRED]
 - [[SetModeRequest]] - `uses` [INFERRED]
@@ -39,9 +39,9 @@ tags:
 - [[SetRoleRequest]] - `uses` [INFERRED]
 - [[SetUserModeRequest]] - `uses` [INFERRED]
 - [[UpdateDisplayNameRequest]] - `uses` [INFERRED]
-- [[WebSocket_5]] - `uses` [INFERRED]
+- [[WebSocket_6]] - `uses` [INFERRED]
 - [[_log_audit()]] - `calls` [EXTRACTED]
-- [[models.py_1]] - `contains` [EXTRACTED]
-- [[router.py_1]] - `shares_data_with` [EXTRACTED]
+- [[socmodels.py]] - `contains` [EXTRACTED]
+- [[socrouter.py]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/mainrs
+#graphify/code #graphify/INFERRED #community/soc/routerpy

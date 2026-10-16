@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec/SKILL.md"
+source_file: ".agents/skills/i-ux/SKILL.md"
 type: "document"
-community: "Per-Agent Container Isolation Architecture"
-location: "L97"
+community: "Skill: UX Expert (UX)"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Per-Agent_Container_Isolation_Architecture
+  - community/Skill_UX_Expert_UX
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Security Review (SEC)]] - `contains` [EXTRACTED]
+- [[Skill UX Expert (UX)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Per-Agent_Container_Isolation_Architecture
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

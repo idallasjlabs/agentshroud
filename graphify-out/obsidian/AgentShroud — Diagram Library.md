@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/README.md"
 type: "document"
-community: "gateway.security.agent_cve_registry"
+community: "diagrams/README.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/gatewaysecurityagent_cve_registry
+  - community/diagrams/READMEmd
 ---
 
 # AgentShroud — Diagram Library
@@ -15,6 +15,6 @@ tags:
 - [[Diagrams Not Yet Implemented]] - `contains` [EXTRACTED]
 - [[Index]] - `contains` [EXTRACTED]
 - [[Priority Reading Order]] - `contains` [EXTRACTED]
-- [[README_120]] - `contains` [EXTRACTED]
+- [[diagramsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/gatewaysecurityagent_cve_registry
+#graphify/document #graphify/EXTRACTED #community/diagrams/READMEmd

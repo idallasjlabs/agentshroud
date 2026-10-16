@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/templates/html-report-instructions.md"
 type: "concept"
-community: "run_test()"
+community: "Report Delivery Format Instructions"
 location: "L50-L56"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/run_test
+  - community/Report_Delivery_Format_Instructions
 ---
 
 # AgentShroud Brand Color Palette
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Branded HTML Report Template]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/run_test
+#graphify/concept #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions

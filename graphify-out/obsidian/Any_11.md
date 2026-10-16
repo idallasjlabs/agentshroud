@@ -1,24 +1,29 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "AgentTarget"
-location: "L148"
+community: "KeyRotationManager"
+location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/KeyRotationManager
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_17]] - `references` [EXTRACTED]
-- [[.extract_text_for_pii_scan()]] - `references` [EXTRACTED]
-- [[.parse_jsonrpc_request()]] - `references` [EXTRACTED]
-- [[.process_inbound_request()]] - `references` [EXTRACTED]
-- [[A2AMethod]] - `uses` [INFERRED]
-- [[A2APolicyEngine_1]] - `uses` [INFERRED]
-- [[ViolationType]] - `uses` [INFERRED]
-- [[_redact_message_text()]] - `references` [EXTRACTED]
+- [[dot-_generate_new_credential()]] - `references` [EXTRACTED]
+- [[dot-_validate_credential()]] - `references` [EXTRACTED]
+- [[dot-check_and_rotate_due_credentials()]] - `references` [EXTRACTED]
+- [[dot-cleanup_retired_credentials()]] - `references` [EXTRACTED]
+- [[dot-emergency_rotate_credential()]] - `references` [EXTRACTED]
+- [[dot-get_all_credentials_status()]] - `references` [EXTRACTED]
+- [[dot-get_credential_status()]] - `references` [EXTRACTED]
+- [[dot-get_health_score()]] - `references` [EXTRACTED]
+- [[dot-register_credential()]] - `references` [EXTRACTED]
+- [[dot-rotate_credential()]] - `references` [EXTRACTED]
+- [[dot-validate()]] - `references` [EXTRACTED]
+- [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
+- [[KeyRotationConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

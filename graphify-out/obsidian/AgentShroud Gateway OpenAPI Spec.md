@@ -1,16 +1,13 @@
 ---
 source_file: "gateway/openapi.json"
 type: "document"
-community: "SSHProxy"
+community: "AgentShroud Gateway OpenAPI Spec"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/SSHProxy
+  - graphify/EXTRACTED
+  - community/AgentShroud_Gateway_OpenAPI_Spec
 ---
 
 # AgentShroud Gateway OpenAPI Spec
 
-## Connections
-- [[FastAPI app instance]] - `references` [INFERRED]
-
-#graphify/document #graphify/INFERRED #community/SSHProxy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Gateway_OpenAPI_Spec

@@ -1,19 +1,17 @@
 ---
-source_file: ".github/COPILOT_CLI_SETUP.md"
+source_file: "docs/api/api-reference.md"
 type: "document"
-community: "OpenClaw Live Cron Job Index (11 jobs)"
-location: "L35"
+community: "API Reference"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Live_Cron_Job_Index_11_jobs
+  - community/API_Reference
 ---
 
 # Authentication
 
 ## Connections
-- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
-- [[Option 1 GitHub Login]] - `contains` [EXTRACTED]
-- [[Option 2 Personal Access Token]] - `contains` [EXTRACTED]
+- [[API Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Live_Cron_Job_Index_11_jobs
+#graphify/document #graphify/EXTRACTED #community/API_Reference

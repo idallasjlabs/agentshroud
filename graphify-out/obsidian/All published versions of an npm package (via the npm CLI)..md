@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "rationale"
-community: "_seed_cron"
-location: "L132"
+community: "discover_upstream_versions.py"
+location: "L162"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_seed_cron
+  - community/discover_upstream_versionspy
 ---
 
 # All published versions of an npm package (via the npm CLI).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[fetch_npm_versions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_seed_cron
+#graphify/rationale #graphify/EXTRACTED #community/discover_upstream_versionspy

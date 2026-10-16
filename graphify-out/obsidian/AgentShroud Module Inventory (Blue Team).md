@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/references/module-inventory.md"
 type: "document"
-community: "test_jira_weekly_review.py"
+community: "agentshroud-blueteam/SKILL.md"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/test_jira_weekly_reviewpy
+  - graphify/EXTRACTED
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # AgentShroud Module Inventory (Blue Team)
 
 ## Connections
 - [[AgentShroud Module Inventory (Red Team)]] - `shares_data_with` [EXTRACTED]
-- [[SKILL_190]] - `references` [INFERRED]
+- [[agentshroud-blueteamSKILL]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/test_jira_weekly_reviewpy
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

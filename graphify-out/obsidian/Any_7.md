@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "TestFluentBitSummary"
-location: "L347"
+community: "._parse_service_network_config"
+location: "L124"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/TestFluentBitSummary
+  - graphify/EXTRACTED
+  - community/_parse_service_network_config
 ---
 
 # Any
 
 ## Connections
-- [[.get_stats()_1]] - `references` [EXTRACTED]
-- [[LedgerConfig]] - `uses` [INFERRED]
-- [[LedgerEntry_1]] - `uses` [INFERRED]
-- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
+- [[dot-_parse_service_network_config()]] - `references` [EXTRACTED]
+- [[dot-_validate_network_definitions()]] - `references` [EXTRACTED]
+- [[dot-get_security_report()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TestFluentBitSummary
+#graphify/code #graphify/EXTRACTED #community/_parse_service_network_config

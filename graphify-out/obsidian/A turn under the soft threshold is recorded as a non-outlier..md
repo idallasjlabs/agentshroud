@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_latency_guard.py"
 type: "rationale"
-community: "test_hermes_model_resolver.py"
+community: "test_voice_latency_guard.py"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy
+  - community/test_voice_latency_guardpy
 ---
 
 # A turn under the soft threshold is recorded as a non-outlier.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_record_turn_latency_normal_not_outlier()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_hermes_model_resolverpy
+#graphify/rationale #graphify/EXTRACTED #community/test_voice_latency_guardpy

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/approval_queue/group_router.py"
+source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "TestEgressApprovalQueue"
-location: "L49"
+community: "AlertDispatcher"
+location: "L289"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/AlertDispatcher
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_4]] - `references` [EXTRACTED]
-- [[._default_send()]] - `references` [EXTRACTED]
-- [[ApprovalRequest_3]] - `uses` [INFERRED]
+- [[dot-get_leakage_summary()]] - `references` [EXTRACTED]
+- [[dot-monitor_environment_access()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

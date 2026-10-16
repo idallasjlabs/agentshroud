@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/proxy/collaborator_greeter.py"
 type: "code"
-community: "AgentShroud v1.0.0 Fortress Release Announcement"
+community: "test_e2e.py"
 location: "L36"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AgentShroud_v100_Fortress_Release_Announcement
+  - community/test_e2epy
 ---
 
 # AsyncClient
 
 ## Connections
-- [[.__init__()_19]] - `references` [EXTRACTED]
-- [[._get_client()]] - `references` [EXTRACTED]
-- [[client()_4]] - `calls` [INFERRED]
-- [[client()_5]] - `calls` [INFERRED]
-- [[client()_6]] - `calls` [INFERRED]
+- [[dot-__init__()_128]] - `references` [EXTRACTED]
+- [[dot-_get_client()]] - `references` [EXTRACTED]
 - [[client()_9]] - `calls` [INFERRED]
 - [[client()_10]] - `calls` [INFERRED]
+- [[client()_11]] - `calls` [INFERRED]
+- [[client()_12]] - `calls` [INFERRED]
 - [[client()_13]] - `calls` [INFERRED]
 - [[client()_14]] - `calls` [INFERRED]
 - [[client()_15]] - `calls` [INFERRED]
+- [[client()_16]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/AgentShroud_v100_Fortress_Release_Announcement
+#graphify/code #graphify/INFERRED #community/test_e2epy

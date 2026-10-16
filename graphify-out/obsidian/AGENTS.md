@@ -1,18 +1,17 @@
 ---
-source_file: "AGENTS.md"
+source_file: "docker/config/openclaw/AGENTS.md"
 type: "document"
-community: "ADR-002: Default-Allow Security Philosophy"
+community: "AgentShroud™ — OpenClaw Local-Model Tool-Use Instructions"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-002_Default-Allow_Security_Philosophy
+  - community/AgentShroud__OpenClaw_Local-Model_Tool-Use_Instructions
 ---
 
 # AGENTS.md
 
 ## Connections
-- [[Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]] - `contains` [EXTRACTED]
-- [[Guidance for ChatGPT Codex CLI when working in this repository.]] - `contains` [EXTRACTED]
+- [[AgentShroud™ — OpenClaw Local-Model Tool-Use Instructions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-002_Default-Allow_Security_Philosophy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__OpenClaw_Local-Model_Tool-Use_Instructions

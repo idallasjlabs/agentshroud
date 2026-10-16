@@ -1,11 +1,11 @@
 ---
 source_file: "docs/job-schedule.html"
 type: "document"
-community: "start.sh"
+community: "Hermes Cron Dedupe (dev)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/startsh
+  - community/Hermes_Cron_Dedupe_dev
 ---
 
 # AgentShroud Job Schedule Dashboard
@@ -16,4 +16,4 @@ tags:
 - [[Prefers-Color-Scheme Token Palette]] - `implements` [EXTRACTED]
 - [[Responsive Table-to-Card Collapse Pattern]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/startsh
+#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Dedupe_dev

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "TelegramAPIProxy"
 location: "L3473"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/TelegramAPIProxy
 ---
 
 # Approval workflow questions mentioning system commands should stay informational
 
 ## Connections
-- [[.test_collaborator_high_risk_approval_workflow_question_gets_safe_guidance()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_collaborator_high_risk_approval_workflow_question_gets_safe_guidance()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

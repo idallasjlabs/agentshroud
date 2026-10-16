@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TestPathIsolationManager"
+community: "._filter_outbound"
 location: "L725"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/_filter_outbound
 ---
 
 # Activate per-chat cascade window to prevent streaming-fragment leak-through.
 
 ## Connections
-- [[._set_outbound_block_cascade()]] - `rationale_for` [EXTRACTED]
+- [[dot-_set_outbound_block_cascade()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/rationale #graphify/EXTRACTED #community/_filter_outbound

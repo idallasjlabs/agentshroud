@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
 type: "document"
-community: "docker-cleanup.sh"
+community: "Atlas — Curriculum Architect (SKILL)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker-cleanupsh
+  - community/Atlas__Curriculum_Architect_SKILL
 ---
 
 # Athena — Knowledge Distiller (SKILL)
@@ -15,4 +15,4 @@ tags:
 - [[cheatsheet.md Output Template]] - `references` [EXTRACTED]
 - [[show_notes.md Output Template]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker-cleanupsh
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect_SKILL

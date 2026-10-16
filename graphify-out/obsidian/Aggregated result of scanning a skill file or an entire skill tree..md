@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "rationale"
-community: "AgentShroud v0.7.0 — Red Team Remediation Plan"
+community: "SkillGuard"
 location: "L108"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_v070__Red_Team_Remediation_Plan
+  - community/SkillGuard
 ---
 
 # Aggregated result of scanning a skill file or an entire skill tree.
 
 ## Connections
-- [[ScanResult_2]] - `rationale_for` [EXTRACTED]
+- [[ScanResult_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_v070__Red_Team_Remediation_Plan
+#graphify/rationale #graphify/EXTRACTED #community/SkillGuard

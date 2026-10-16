@@ -1,27 +1,18 @@
 ---
-source_file: "gateway/ingest_api/router.py"
+source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "ApprovalRequest"
-location: "L116"
+community: "forward.py"
+location: "L332"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/forwardpy
 ---
 
 # AgentTarget
 
 ## Connections
-- [[.__init__()_15]] - `calls` [EXTRACTED]
-- [[._build_forward_payload()]] - `references` [EXTRACTED]
-- [[.forward_to_agent()]] - `references` [EXTRACTED]
-- [[.forward_to_agent_stream()]] - `references` [EXTRACTED]
-- [[.health_check()]] - `references` [EXTRACTED]
-- [[.list_targets()]] - `references` [EXTRACTED]
-- [[.register_bots()]] - `calls` [EXTRACTED]
-- [[.resolve_target()]] - `references` [EXTRACTED]
-- [[AgentTarget]] - `uses` [INFERRED]
-- [[ForwardRequest]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[_resolve_user_trust_level()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/code #graphify/EXTRACTED #community/forwardpy

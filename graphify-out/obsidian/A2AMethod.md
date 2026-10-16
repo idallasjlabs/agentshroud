@@ -1,31 +1,31 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "AgentTarget"
+community: "A2AMethod"
 location: "L77"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AgentTarget
+  - community/A2AMethod
 ---
 
 # A2AMethod
 
 ## Connections
-- [[._decide()]] - `references` [EXTRACTED]
-- [[._tier_for()]] - `references` [EXTRACTED]
-- [[.parse_jsonrpc_request()]] - `calls` [EXTRACTED]
+- [[dot-_decide()]] - `references` [EXTRACTED]
+- [[dot-_tier_for()]] - `references` [EXTRACTED]
+- [[dot-parse_jsonrpc_request()]] - `calls` [EXTRACTED]
 - [[A2AMethod_1]] - `uses` [INFERRED]
-- [[A2APolicyConfig_1]] - `uses` [INFERRED]
+- [[A2APolicyConfig]] - `uses` [INFERRED]
 - [[A2APolicyEngine]] - `uses` [INFERRED]
 - [[A2APolicyEngine_2]] - `uses` [INFERRED]
 - [[A2APolicyEngine_3]] - `uses` [INFERRED]
-- [[A2AProxy]] - `uses` [INFERRED]
 - [[A2AProxy_1]] - `uses` [INFERRED]
+- [[A2AProxy]] - `uses` [INFERRED]
 - [[A2AProxyResult]] - `uses` [INFERRED]
-- [[Any_11]] - `uses` [INFERRED]
+- [[Any_68]] - `uses` [INFERRED]
 - [[Canonical (v1.0 PascalCase) A2A JSON-RPC methods this engine governs.]] - `rationale_for` [EXTRACTED]
-- [[Enum]] - `inherits` [EXTRACTED]
+- [[Enum_2]] - `inherits` [EXTRACTED]
 - [[HermesA2AForwarder]] - `uses` [INFERRED]
 - [[ParsedA2ARequest]] - `uses` [INFERRED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `uses` [INFERRED]
@@ -33,13 +33,13 @@ tags:
 - [[_LegacyStubApprovalQueue]] - `uses` [INFERRED]
 - [[_StubApprovalQueue]] - `uses` [INFERRED]
 - [[_StubAuditStore]] - `uses` [INFERRED]
-- [[_StubForwarder]] - `uses` [INFERRED]
+- [[_StubForwarder_2]] - `uses` [INFERRED]
 - [[_method_of()]] - `references` [EXTRACTED]
 - [[a2a_policy.py]] - `contains` [EXTRACTED]
 - [[a2a_proxy.py]] - `imports` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[str_2]] - `inherits` [EXTRACTED]
 - [[test_a2a_policy.py]] - `imports` [EXTRACTED]
 - [[test_a2a_policy_default_failclosed.py]] - `imports` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AgentTarget
+#graphify/code #graphify/INFERRED #community/A2AMethod

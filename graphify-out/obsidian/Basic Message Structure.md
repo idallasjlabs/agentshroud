@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/references/message-composition.md"
 type: "document"
-community: "TestPerAgentUpstreamChecks"
+community: "Message Composition with MML (MIME Meta Language)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestPerAgentUpstreamChecks
+  - community/Message_Composition_with_MML_MIME_Meta_Language
 ---
 
 # Basic Message Structure
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Message Composition with MML (MIME Meta Language)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestPerAgentUpstreamChecks
+#graphify/document #graphify/EXTRACTED #community/Message_Composition_with_MML_MIME_Meta_Language

@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "GSDE&G Development Master Checklist"
-location: "L94"
+community: "AppleContainerEngine"
+location: "L149"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist
+  - graphify/INFERRED
+  - community/AppleContainerEngine
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_100]] - `references` [EXTRACTED]
-- [[.get_global_stats()]] - `references` [EXTRACTED]
-- [[.get_session_stats()]] - `references` [EXTRACTED]
+- [[dot-inspect()_3]] - `references` [EXTRACTED]
+- [[ContainerEngine]] - `uses` [INFERRED]
+- [[ContainerInfo]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist
+#graphify/code #graphify/INFERRED #community/AppleContainerEngine

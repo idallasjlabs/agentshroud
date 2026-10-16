@@ -1,20 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Auth Errors.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
-community: "TestCredentialLeakDetection"
-location: "L9"
+community: "Error Index"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestCredentialLeakDetection
+  - community/Error_Index
 ---
 
 # Auth Errors
 
 ## Connections
-- [[1Password Auth Failures]] - `contains` [EXTRACTED]
-- [[Auth Errors]] - `contains` [EXTRACTED]
-- [[HTTP 401 — Unauthorized]] - `contains` [EXTRACTED]
-- [[Related Notes_55]] - `contains` [EXTRACTED]
+- [[Error Index_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestCredentialLeakDetection
+#graphify/document #graphify/EXTRACTED #community/Error_Index

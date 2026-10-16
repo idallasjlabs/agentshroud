@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "generate-job-schedule.py"
-location: "L218"
+community: "Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/generate-job-schedulepy
+  - community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On
 ---
 
 # Architecture
 
 ## Connections
-- [[7. Pi-hole DNS Security Layer (Built-In)]] - `contains` [EXTRACTED]
+- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/generate-job-schedulepy
+#graphify/document #graphify/EXTRACTED #community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On

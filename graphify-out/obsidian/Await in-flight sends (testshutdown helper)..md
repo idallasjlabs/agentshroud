@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "rationale"
-community: "test_telegram_proxy_outbound.py"
+community: "AlertTelegramRelay"
 location: "L170"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_outboundpy
+  - community/AlertTelegramRelay
 ---
 
 # Await in-flight sends (test/shutdown helper).
 
 ## Connections
-- [[.flush()]] - `rationale_for` [EXTRACTED]
+- [[dot-flush()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy
+#graphify/rationale #graphify/EXTRACTED #community/AlertTelegramRelay

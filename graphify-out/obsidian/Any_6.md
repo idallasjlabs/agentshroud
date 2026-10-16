@@ -1,20 +1,16 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: ""
 type: "code"
-community: "test_telegram_proxy_outbound.py"
-location: "L35"
+community: "._filter_streaming_event"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_outboundpy
+  - community/_filter_streaming_event
 ---
 
 # Any
 
 ## Connections
-- [[.get_recent()]] - `references` [EXTRACTED]
-- [[.get_stats()]] - `references` [EXTRACTED]
-- [[.to_dict()]] - `references` [EXTRACTED]
-- [[make_event()]] - `references` [EXTRACTED]
+- [[dot-_filter_streaming_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy
+#graphify/code #graphify/EXTRACTED #community/_filter_streaming_event

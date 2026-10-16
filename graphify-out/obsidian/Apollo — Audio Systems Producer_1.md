@@ -1,21 +1,21 @@
 ---
 source_file: "docker/config/hermes/skills/i-apollo/README.md"
 type: "document"
-community: "SlackAPIProxy"
+community: "hermes/skills/i-bs/README.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Apollo — Audio Systems Producer
 
 ## Connections
-- [[Purpose_37]] - `contains` [EXTRACTED]
-- [[README_42]] - `contains` [EXTRACTED]
-- [[README_47]] - `contains` [EXTRACTED]
-- [[Related Skills_40]] - `contains` [EXTRACTED]
-- [[Usage_42]] - `contains` [EXTRACTED]
+- [[Purpose_84]] - `contains` [EXTRACTED]
+- [[Related Skills_65]] - `contains` [EXTRACTED]
+- [[Usage_76]] - `contains` [EXTRACTED]
+- [[hermesskillsi-apolloREADME]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

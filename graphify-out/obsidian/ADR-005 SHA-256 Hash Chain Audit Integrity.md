@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md"
 type: "concept"
-community: "1.4 Implementation Plan"
+community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/14_Implementation_Plan
+  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
 ---
 
 # ADR-005: SHA-256 Hash Chain Audit Integrity
@@ -14,12 +14,12 @@ tags:
 - [[ADR-005-sha256-hash-chain-audit-integrity]] - `contains` [EXTRACTED]
 - [[Audit Ledger (SHA-256 hash only)]] - `conceptually_related_to` [EXTRACTED]
 - [[AuditEntry (data entity)]] - `conceptually_related_to` [EXTRACTED]
-- [[Consequences_4]] - `contains` [EXTRACTED]
+- [[Consequences_2]] - `contains` [EXTRACTED]
 - [[Context_4]] - `contains` [EXTRACTED]
-- [[Decision_6]] - `contains` [EXTRACTED]
+- [[Decision_5]] - `contains` [EXTRACTED]
 - [[Gateway ManagementControl-Plane API (v1.3.0)]] - `references` [EXTRACTED]
-- [[Status_4]] - `contains` [EXTRACTED]
+- [[Status_5]] - `contains` [EXTRACTED]
 - [[audit_entries SQLite table]] - `implements` [EXTRACTED]
 - [[ledger.py (audit trail, SHA-256 hashing)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/14_Implementation_Plan
+#graphify/concept #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity

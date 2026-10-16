@@ -1,13 +1,13 @@
 ---
 source_file: "skills/openclaw/skill-creator/license.txt"
 type: "document"
-community: "Newsletter: Chat Front-ends & Search Infra"
+community: "Apache License 2.0 (skill-creator)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Newsletter_Chat_Front-ends__Search_Infra
+  - community/Apache_License_20_skill-creator
 ---
 
 # Apache License 2.0 (skill-creator)
 
-#graphify/document #graphify/EXTRACTED #community/Newsletter_Chat_Front-ends__Search_Infra
+#graphify/document #graphify/EXTRACTED #community/Apache_License_20_skill-creator

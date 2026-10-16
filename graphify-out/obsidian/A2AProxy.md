@@ -1,41 +1,41 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "AgentTarget"
+community: "A2APolicyEngine"
 location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/A2APolicyEngine
 ---
 
 # A2AProxy
 
 ## Connections
-- [[.__init__()_17]] - `method` [EXTRACTED]
-- [[._audit()]] - `method` [EXTRACTED]
-- [[._record_trust_violation()]] - `method` [EXTRACTED]
-- [[.extract_text_for_pii_scan()]] - `method` [EXTRACTED]
-- [[.parse_jsonrpc_request()]] - `method` [EXTRACTED]
-- [[.process_agent_card_request()]] - `method` [EXTRACTED]
-- [[.process_inbound_request()]] - `method` [EXTRACTED]
-- [[.resolve_peer_id()]] - `method` [EXTRACTED]
+- [[dot-__init__()_161]] - `method` [EXTRACTED]
+- [[dot-_audit()_1]] - `method` [EXTRACTED]
+- [[dot-_record_trust_violation()]] - `method` [EXTRACTED]
+- [[dot-extract_text_for_pii_scan()]] - `method` [EXTRACTED]
+- [[dot-parse_jsonrpc_request()]] - `method` [EXTRACTED]
+- [[dot-process_agent_card_request()]] - `method` [EXTRACTED]
+- [[dot-process_inbound_request()]] - `method` [EXTRACTED]
+- [[dot-resolve_peer_id()]] - `method` [EXTRACTED]
 - [[A2AMethod]] - `uses` [INFERRED]
 - [[A2APeerTestDouble]] - `uses` [INFERRED]
 - [[A2APolicyEngine_3]] - `uses` [INFERRED]
 - [[A2APolicyEngine_1]] - `uses` [INFERRED]
 - [[A2AProxy_1]] - `uses` [INFERRED]
 - [[HermesA2AForwarder]] - `calls` [EXTRACTED]
-- [[Request_7]] - `uses` [INFERRED]
-- [[Response]] - `uses` [INFERRED]
+- [[Request_6]] - `uses` [INFERRED]
+- [[Response_1]] - `uses` [INFERRED]
 - [[Terminates inbound A2A HTTP requests, enforces policy, forwards.      Usage]] - `rationale_for` [EXTRACTED]
-- [[TrustManager_2]] - `uses` [INFERRED]
+- [[TrustManager_4]] - `uses` [INFERRED]
 - [[Upstream Hermes Gap 80534 — Peer Identity Resolved From SocketX-Forwarded-For Instead Of Bearer Token]] - `implements` [EXTRACTED]
 - [[ViolationType]] - `uses` [INFERRED]
 - [[_Event]] - `uses` [INFERRED]
 - [[_StubAuditStore]] - `uses` [INFERRED]
+- [[_StubForwarder_2]] - `uses` [INFERRED]
 - [[_StubForwarder]] - `uses` [INFERRED]
-- [[_StubForwarder_1]] - `uses` [INFERRED]
 - [[a2a_proxy.py]] - `contains` [EXTRACTED]
 - [[test_a2a_integration.py]] - `imports` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `imports` [EXTRACTED]
@@ -50,4 +50,4 @@ tags:
 - [[test_ssrf_callback_rejection_triggers_severe_demotion()]] - `calls` [EXTRACTED]
 - [[test_task_ownership_violation_records_a2a_violation_type()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

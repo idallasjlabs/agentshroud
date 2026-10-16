@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/container-security-audit-v0.8.0.md"
 type: "document"
-community: "HeuristicClassifier"
+community: "Findings & Mitigations"
 location: "L292"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/Findings__Mitigations
 ---
 
 # Audit Methodology
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Container Security Audit — AgentShroud v0.8.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/document #graphify/EXTRACTED #community/Findings__Mitigations

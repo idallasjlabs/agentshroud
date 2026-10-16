@@ -1,13 +1,13 @@
 ---
 source_file: "branding/logos/variants/logo-on-dark-1024x1024.png"
 type: "image"
-community: "MCP Server: devonthink"
+community: "AgentShroud Logo on Dark Background"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/MCP_Server_devonthink
+  - community/AgentShroud_Logo_on_Dark_Background
 ---
 
 # AgentShroud Logo on Dark Background
 
-#graphify/image #graphify/EXTRACTED #community/MCP_Server_devonthink
+#graphify/image #graphify/EXTRACTED #community/AgentShroud_Logo_on_Dark_Background

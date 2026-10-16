@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/cli/client.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "test_voice_stt_model_ab.py"
-location: "L23"
+community: "OutboundInfoFilter"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_stt_model_abpy
+  - community/OutboundInfoFilter
 ---
 
 # Any
 
 ## Connections
-- [[._request()]] - `references` [EXTRACTED]
-- [[.delete()]] - `references` [EXTRACTED]
-- [[.get()_2]] - `references` [EXTRACTED]
-- [[.post()_2]] - `references` [EXTRACTED]
-- [[.put()]] - `references` [EXTRACTED]
+- [[dot-__init__()_11]] - `references` [EXTRACTED]
+- [[dot-_compile_patterns()_1]] - `references` [EXTRACTED]
+- [[dot-get_stats()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_stt_model_abpy
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

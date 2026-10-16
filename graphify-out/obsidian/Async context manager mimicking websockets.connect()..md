@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "rationale"
-community: "AgentShroud Operations Cheat Sheet"
+community: "_FakeUpstreamWS"
 location: "L741"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Operations_Cheat_Sheet
+  - community/_FakeUpstreamWS
 ---
 
 # Async context manager mimicking websockets.connect().
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeWSConnect]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet
+#graphify/rationale #graphify/EXTRACTED #community/_FakeUpstreamWS

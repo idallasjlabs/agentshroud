@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "rationale"
-community: "TrustManager"
+community: "ApprovalHardening"
 location: "L126"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/ApprovalHardening
 ---
 
 # Analyze an approval request for potential deception or social engineering.
 
 ## Connections
-- [[.analyze_request()]] - `rationale_for` [EXTRACTED]
+- [[dot-analyze_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalHardening

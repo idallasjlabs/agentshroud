@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/USPTO-APPLICATION.md"
 type: "document"
-community: "TestKillSwitchVerification"
+community: "USPTO Trademark Application — AgentShroud™"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestKillSwitchVerification
+  - community/USPTO_Trademark_Application__AgentShroud
 ---
 
 # Application Fields
@@ -17,4 +17,4 @@ tags:
 - [[Owner_3]] - `contains` [EXTRACTED]
 - [[USPTO Trademark Application — AgentShroud™]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestKillSwitchVerification
+#graphify/document #graphify/EXTRACTED #community/USPTO_Trademark_Application__AgentShroud

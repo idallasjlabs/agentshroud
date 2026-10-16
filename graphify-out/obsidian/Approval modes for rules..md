@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "SSHProxy"
+community: "TestEgressApprovalQueue"
 location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/TestEgressApprovalQueue
 ---
 
 # Approval modes for rules.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ApprovalMode]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SSHProxy
+#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue

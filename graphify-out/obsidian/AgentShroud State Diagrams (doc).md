@@ -1,11 +1,11 @@
 ---
 source_file: "docs/flows/state-diagrams.md"
 type: "document"
-community: "i-ti SKILL.md (Technical Illustrator, Mermaid di"
+community: "AgentShroud State Diagrams (doc)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/i-ti_SKILLmd_Technical_Illustrator_Mermaid_di
+  - community/AgentShroud_State_Diagrams_doc
 ---
 
 # AgentShroud State Diagrams (doc)
@@ -16,4 +16,4 @@ tags:
 - [[Gateway Operational Modes (MONITOR, ENFORCE, LOCKDOWN, EMERGENCY, RECOVERY)]] - `references` [EXTRACTED]
 - [[Kill Switch States (ACTIVE, SOFT_KILL, HARD_KILL, PANIC, RECOVERY)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/i-ti_SKILLmd_Technical_Illustrator_Mermaid_di
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_State_Diagrams_doc

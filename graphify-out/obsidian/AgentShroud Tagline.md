@@ -1,11 +1,11 @@
 ---
 source_file: "BRAND.md"
 type: "concept"
-community: "AgentShroud — Master Feature List (Everything Ev"
+community: "test_openclaw_photo.sh"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud__Master_Feature_List_Everything_Ev
+  - community/test_openclaw_photosh
 ---
 
 # AgentShroud Tagline
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Taglines List]] - `references` [EXTRACTED]
 - [[AgentShroud™ Brand Guidelines_1]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud__Master_Feature_List_Everything_Ev
+#graphify/concept #graphify/EXTRACTED #community/test_openclaw_photosh

@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/runtime/docker_engine.py"
+source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "DELIVERABLE 1 — Domain-by-Domain Assessment"
-location: "L139"
+community: "test_security_toolchain.py"
+location: "L66"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/DELIVERABLE_1__Domain-by-Domain_Assessment
+  - graphify/EXTRACTED
+  - community/test_security_toolchainpy
 ---
 
 # Any
 
 ## Connections
-- [[.inspect()_1]] - `references` [EXTRACTED]
-- [[ContainerEngine_2]] - `uses` [INFERRED]
-- [[ContainerInfo_2]] - `uses` [INFERRED]
+- [[generate_summary()]] - `references` [EXTRACTED]
+- [[get_fim_events()]] - `references` [EXTRACTED]
+- [[get_rootkit_events()]] - `references` [EXTRACTED]
+- [[parse_alert()]] - `references` [EXTRACTED]
+- [[read_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/DELIVERABLE_1__Domain-by-Domain_Assessment
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

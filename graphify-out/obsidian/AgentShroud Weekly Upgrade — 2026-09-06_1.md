@@ -1,18 +1,18 @@
 ---
 source_file: "reports/upgrade-2026-09-06-prod.md"
 type: "document"
-community: "Recommendation"
+community: "AgentShroud Weekly Upgrade — 2026-09-06"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Recommendation
+  - community/AgentShroud_Weekly_Upgrade__2026-09-06
 ---
 
 # AgentShroud Weekly Upgrade — 2026-09-06
 
 ## Connections
-- [[11. Verification evidence]] - `contains` [EXTRACTED]
+- [[11. Verification evidence_1]] - `contains` [EXTRACTED]
 - [[Breaking changes  manual follow-ups_1]] - `contains` [EXTRACTED]
 - [[CRITICAL Docker storage exhausted (live fault, found this run)]] - `contains` [EXTRACTED]
 - [[Environment Mapping]] - `contains` [EXTRACTED]
@@ -21,9 +21,9 @@ tags:
 - [[Preflight  Baseline_1]] - `contains` [EXTRACTED]
 - [[Rollback Instructions_1]] - `contains` [EXTRACTED]
 - [[Security Findings]] - `contains` [EXTRACTED]
-- [[Summary_26]] - `contains` [EXTRACTED]
+- [[Summary_19]] - `contains` [EXTRACTED]
 - [[Time spent_1]] - `contains` [EXTRACTED]
 - [[Upgrade Table_1]] - `contains` [EXTRACTED]
 - [[upgrade-2026-09-06-prod]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Recommendation
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade__2026-09-06

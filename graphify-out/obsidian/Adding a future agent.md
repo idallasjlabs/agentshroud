@@ -1,17 +1,17 @@
 ---
-source_file: "docs/integrations/voice-terminal-esp32-s3.md"
+source_file: "firmware/voice-terminal/SETUP.md"
 type: "document"
-community: ".decide()"
-location: "L269"
+community: "ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook"
+location: "L479"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/decide
+  - community/ESP32-S3-BOX-3_Voice_Terminal__Manual_Setup_Runbook
 ---
 
 # Adding a future agent
 
 ## Connections
-- [[Usage_121]] - `contains` [EXTRACTED]
+- [[11. Current status (v1.2.0)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/decide
+#graphify/document #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal__Manual_Setup_Runbook

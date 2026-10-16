@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
 type: "document"
-community: "TestMinimalConfig"
+community: "apply-patches.js"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMinimalConfig
+  - community/apply-patchesjs
 ---
 
 # Additional Patches
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Patches Applied]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMinimalConfig
+#graphify/document #graphify/EXTRACTED #community/apply-patchesjs

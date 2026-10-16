@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "rationale"
-community: "STPA-Sec Analysis of AgentShroud"
+community: "TestMCPResultEndpoint"
 location: "L73"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/STPA-Sec_Analysis_of_AgentShroud
+  - community/TestMCPResultEndpoint
 ---
 
 # A result with no threats should be accepted and audited (200).
 
 ## Connections
-- [[.test_clean_result_accepted()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_clean_result_accepted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/STPA-Sec_Analysis_of_AgentShroud
+#graphify/rationale #graphify/EXTRACTED #community/TestMCPResultEndpoint

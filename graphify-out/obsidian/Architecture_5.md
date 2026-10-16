@@ -1,17 +1,17 @@
 ---
-source_file: "docs/integrations/voice-terminal-esp32-s3.md"
+source_file: "docs/setup-slack.md"
 type: "document"
-community: ".decide()"
-location: "L13"
+community: "Slack Channel Setup"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/decide
+  - community/Slack_Channel_Setup
 ---
 
 # Architecture
 
 ## Connections
-- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
+- [[Slack Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/decide
+#graphify/document #graphify/EXTRACTED #community/Slack_Channel_Setup

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "lifespan.py"
+community: "AlertDispatcher"
 location: "L460"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/AlertDispatcher
 ---
 
 # Agent registry should be importable.
 
 ## Connections
-- [[.test_agent_registry_module()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_agent_registry_module()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

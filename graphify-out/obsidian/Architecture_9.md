@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
+source_file: "docs/claude-security-audit-prompt.md"
 type: "document"
-community: "TestInputValidation"
-location: "L153"
+community: "AgentShroud v0.8.0 — Full Security & Functionality Audit"
+location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestInputValidation
+  - community/AgentShroud_v080__Full_Security__Functionality_Audit
 ---
 
 # Architecture
 
 ## Connections
-- [[Technical Details]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestInputValidation
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080__Full_Security__Functionality_Audit

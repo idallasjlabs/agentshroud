@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "sync-llm-settings.sh"
+community: "1. GitHub MCP Authentication Reset"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sync-llm-settingssh
+  - community/1_GitHub_MCP_Authentication_Reset
 ---
 
 # Authentication Reset Procedures
@@ -17,4 +17,4 @@ tags:
 - [[3. AWS API MCP Authentication Reset_2]] - `contains` [EXTRACTED]
 - [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sync-llm-settingssh
+#graphify/document #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset

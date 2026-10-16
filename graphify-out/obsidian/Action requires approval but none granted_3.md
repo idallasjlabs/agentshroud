@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "openclaw/workspace/jira_dev_ticket.py"
-location: "L322"
+community: "Browser — Secure Browser Automation"
+location: "L286"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/workspace/jira_dev_ticketpy
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # "Action requires approval but none granted"
 
 ## Connections
-- [[Troubleshooting_37]] - `contains` [EXTRACTED]
+- [[Troubleshooting_18]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

@@ -1,13 +1,13 @@
 ---
 source_file: "branding/social/open-graph-1200x630.png"
 type: "image"
-community: "Generic AI Agent Integration (HTTP Proxy Mode)"
+community: "AgentShroud Open Graph Preview Image"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Generic_AI_Agent_Integration_HTTP_Proxy_Mode
+  - community/AgentShroud_Open_Graph_Preview_Image
 ---
 
 # AgentShroud Open Graph Preview Image
 
-#graphify/image #graphify/EXTRACTED #community/Generic_AI_Agent_Integration_HTTP_Proxy_Mode
+#graphify/image #graphify/EXTRACTED #community/AgentShroud_Open_Graph_Preview_Image

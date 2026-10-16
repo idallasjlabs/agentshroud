@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
+source_file: ".agents/skills/i-browser/SKILL.md"
 type: "document"
-community: "llm_proxy.py"
-location: "L320"
+community: "Browser — Secure Browser Automation"
+location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/llm_proxypy
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Audit Logging
 
 ## Connections
-- [[Credential Security Policy]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/llm_proxypy
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

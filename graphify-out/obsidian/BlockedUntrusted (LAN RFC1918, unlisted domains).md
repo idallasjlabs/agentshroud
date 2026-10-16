@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-11-trust-boundary.png"
 type: "image"
-community: "middleware.py"
+community: "AgentShroud Gateway (Trust Zone 1): holds 1Password service account, enforces policy, signs ledger entries, controls approval queue, HMAC/JWT validation"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/AgentShroud_Gateway_Trust_Zone_1_holds_1Password_service_account_enforces_policy_signs_ledger_entries_controls_approval_queue_HMAC/JWT_validation
 ---
 
 # Blocked/Untrusted (LAN RFC1918, unlisted domains)
@@ -14,4 +14,4 @@ tags:
 - [[Trust Boundary Diagram]] - `conceptually_related_to` [EXTRACTED]
 - [[Trust Zone 2 — Bot (Supervised Agent no direct credentialinternet access)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/middlewarepy
+#graphify/image #graphify/EXTRACTED #community/AgentShroud_Gateway_Trust_Zone_1_holds_1Password_service_account_enforces_policy_signs_ledger_entries_controls_approval_queue_HMAC/JWT_validation

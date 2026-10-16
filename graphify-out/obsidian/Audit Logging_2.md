@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "_sync()"
+community: "Browser — Secure Browser Automation"
 location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_sync
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Audit Logging
 
 ## Connections
-- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_sync
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

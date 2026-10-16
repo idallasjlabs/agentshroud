@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-aws/README.md"
+source_file: ".agents/skills/i-aws/README.md"
 type: "document"
-community: "browser-fetch.js"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser-fetchjs
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # AWS Cloud Management & FinOps
 
 ## Connections
-- [[Purpose_77]] - `contains` [EXTRACTED]
-- [[README_82]] - `contains` [EXTRACTED]
-- [[Related Skills_83]] - `contains` [EXTRACTED]
-- [[SKILL_142]] - `contains` [EXTRACTED]
-- [[Usage_85]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-awsREADME]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[Purpose_122]] - `contains` [EXTRACTED]
+- [[Related Skills_94]] - `contains` [EXTRACTED]
+- [[Usage_102]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser-fetchjs
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

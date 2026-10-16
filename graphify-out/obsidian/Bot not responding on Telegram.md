@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "record_decision"
+community: "Troubleshooting"
 location: "L217"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/record_decision
+  - community/Troubleshooting
 ---
 
 # Bot not responding on Telegram
 
 ## Connections
-- [[Troubleshooting_31]] - `contains` [EXTRACTED]
+- [[Troubleshooting_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/record_decision
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "LLMProxy"
-location: "L615"
+community: ".proxy_messages"
+location: "L632"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/proxy_messages
 ---
 
 # Attempt a cloud→local failover dispatch. Returns (status, headers, body) from…
 
 ## Connections
-- [[._failover_request()]] - `rationale_for` [EXTRACTED]
+- [[dot-_failover_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LLMProxy
+#graphify/rationale #graphify/EXTRACTED #community/proxy_messages

@@ -1,23 +1,18 @@
 ---
-source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
+source_file: "README.md"
 type: "document"
-community: "Egress Filter Errors"
-location: "L28"
+community: "AgentShroud™ README"
+location: "L100"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Egress_Filter_Errors
+  - community/AgentShroud_README
 ---
 
 # Architecture
 
 ## Connections
-- [[AgentShroud™ — Project Knowledge Base]] - `contains` [EXTRACTED]
-- [[Design Philosophy]] - `contains` [EXTRACTED]
-- [[F. Infrastructure]] - `contains` [EXTRACTED]
-- [[Infrastructure_1]] - `contains` [EXTRACTED]
-- [[Multi-Platform Support]] - `contains` [EXTRACTED]
-- [[Security Modules]] - `contains` [EXTRACTED]
-- [[The Security Pipeline]] - `contains` [EXTRACTED]
+- [[75 Security Modules]] - `shares_data_with` [EXTRACTED]
+- [[AgentShroud™ README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Egress_Filter_Errors
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_README

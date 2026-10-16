@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/security/a2a_policy.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "AgentTarget"
-location: "L210"
+community: "make_event"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/make_event
 ---
 
 # Any
 
 ## Connections
-- [[.from_dict()_2]] - `references` [EXTRACTED]
+- [[dot-get_recent()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_9]] - `references` [EXTRACTED]
+- [[dot-to_dict()_5]] - `references` [EXTRACTED]
+- [[make_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/make_event

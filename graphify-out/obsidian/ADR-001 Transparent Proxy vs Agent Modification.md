@@ -1,21 +1,21 @@
 ---
 source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
 type: "document"
-community: "AgentShroud Changelog"
+community: "ADR-001: Transparent Proxy vs Agent Modification"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Changelog
+  - community/ADR-001_Transparent_Proxy_vs_Agent_Modification
 ---
 
 # ADR-001: Transparent Proxy vs Agent Modification
 
 ## Connections
 - [[ADR-001-transparent-proxy-vs-agent-modification]] - `contains` [EXTRACTED]
-- [[Consequences]] - `contains` [EXTRACTED]
-- [[Context]] - `contains` [EXTRACTED]
-- [[Decision_2]] - `contains` [EXTRACTED]
-- [[Status]] - `contains` [EXTRACTED]
+- [[Consequences_3]] - `contains` [EXTRACTED]
+- [[Context_5]] - `contains` [EXTRACTED]
+- [[Decision_6]] - `contains` [EXTRACTED]
+- [[Status_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Changelog
+#graphify/document #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_vs_Agent_Modification

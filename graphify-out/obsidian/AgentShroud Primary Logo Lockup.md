@@ -1,11 +1,11 @@
 ---
 source_file: "branding/logos/png/logo.png"
 type: "image"
-community: "chatbot/main.py"
+community: "AgentShroud Primary Logo Lockup"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/chatbot/mainpy
+  - community/AgentShroud_Primary_Logo_Lockup
 ---
 
 # AgentShroud Primary Logo Lockup
@@ -17,4 +17,4 @@ tags:
 - [[AgentShroud Logo - GlowTransparent Variant]] - `semantically_similar_to` [INFERRED]
 - [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/chatbot/mainpy
+#graphify/image #graphify/INFERRED #community/AgentShroud_Primary_Logo_Lockup

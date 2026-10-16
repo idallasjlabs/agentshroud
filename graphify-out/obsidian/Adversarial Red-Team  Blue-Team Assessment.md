@@ -1,18 +1,18 @@
 ---
 source_file: "docs/testing/test-coverage-report.md"
 type: "document"
-community: "SkillGuard"
+community: "AgentShroud v0.9.0"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/AgentShroud_v090
 ---
 
 # Adversarial Red-Team / Blue-Team Assessment
 
 ## Connections
-- [[AgentShroud v0.9.0_1]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.9.0]] - `contains` [EXTRACTED]
 - [[AgentShroud v1.3.0_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SkillGuard
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v090

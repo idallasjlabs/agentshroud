@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "test_security_audit.py"
+community: "RBACConfig"
 location: "L192"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_security_auditpy
+  - community/RBACConfig
 ---
 
 # AgentRegistry must accept group-{chat_id} agent IDs with chat_type metadata.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAgentRegistryGroupIdentity]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_security_auditpy
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

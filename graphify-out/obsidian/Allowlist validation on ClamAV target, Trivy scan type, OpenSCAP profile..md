@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "InjectionSeverity"
-location: "L437"
+community: "test_main_endpoints.py"
+location: "L554"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/InjectionSeverity
+  - community/test_main_endpointspy
 ---
 
 # Allowlist validation on ClamAV target, Trivy scan type, OpenSCAP profile.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestScanParameterAllowlists]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/InjectionSeverity
+#graphify/rationale #graphify/EXTRACTED #community/test_main_endpointspy

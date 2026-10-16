@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "TestSSRFDetection"
 location: "L35"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/TestSSRFDetection
 ---
 
 # A single finding from URL analysis.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[URLFinding]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection

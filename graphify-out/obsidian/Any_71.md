@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/proxy/canvas_proxy.py"
 type: "code"
-community: "Skill: Pull Request (PR) Generator"
-location: "L516"
+community: "canvas_proxy_app"
+location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_Pull_Request_PR_Generator
+  - community/canvas_proxy_app
 ---
 
 # Any
 
 ## Connections
-- [[_stub_summary()]] - `references` [EXTRACTED]
+- [[_handle_http()]] - `references` [EXTRACTED]
+- [[_handle_websocket()]] - `references` [EXTRACTED]
+- [[canvas_proxy_app()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator
+#graphify/code #graphify/EXTRACTED #community/canvas_proxy_app

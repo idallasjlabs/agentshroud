@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "document"
-community: "TestFromAuditChainEntry"
+community: "dns_filter.py"
 location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestFromAuditChainEntry
+  - community/dns_filterpy
 ---
 
 # Audit Log
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dns_filter.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFromAuditChainEntry
+#graphify/document #graphify/EXTRACTED #community/dns_filterpy

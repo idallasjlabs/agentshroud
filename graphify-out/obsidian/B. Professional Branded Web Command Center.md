@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "AgentShroud Hermes — System Identity"
+community: "v1.0.0 — \"Fortress\" (Polish + Public Release)"
 location: "L247"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Hermes__System_Identity
+  - community/v100__Fortress_Polish__Public_Release
 ---
 
 # B. Professional Branded Web Command Center
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v1.0.0 — Fortress (Polish + Public Release)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Hermes__System_Identity
+#graphify/document #graphify/EXTRACTED #community/v100__Fortress_Polish__Public_Release

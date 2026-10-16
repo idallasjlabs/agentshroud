@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/agents/_README.txt"
 type: "document"
-community: "10. Troubleshooting"
+community: "hermes/SOUL.md"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/10_Troubleshooting
+  - community/hermes/SOULmd
 ---
 
 # Agents Folder README
@@ -15,4 +15,4 @@ tags:
 - [[OpenClawAgentShroud Bot Identity]] - `references` [INFERRED]
 - [[Security Reviewer Agent]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/10_Troubleshooting
+#graphify/document #graphify/INFERRED #community/hermes/SOULmd

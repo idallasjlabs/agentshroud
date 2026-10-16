@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "rationale"
-community: "Common Queries"
+community: "SSHHostConfig"
 location: "L191"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Common_Queries
+  - community/SSHHostConfig
 ---
 
 # Auto-approve must be exact match, not prefix (Finding #3)
 
 ## Connections
-- [[.test_validate_auto_approve_exact_only()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_validate_auto_approve_exact_only()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Common_Queries
+#graphify/rationale #graphify/EXTRACTED #community/SSHHostConfig

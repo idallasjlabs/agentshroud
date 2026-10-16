@@ -1,20 +1,22 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "triage-cve-mitigations.py"
-location: "L296"
+community: "Browser — Secure Browser Automation"
+location: "L227"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Best Practices
 
 ## Connections
-- [[MCP-Specific_2]] - `contains` [EXTRACTED]
-- [[Organization_2]] - `contains` [EXTRACTED]
-- [[Security_6]] - `contains` [EXTRACTED]
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
+- [[1. Always Specify Risk Level_2]] - `contains` [EXTRACTED]
+- [[2. Use Allowlisting Liberally_2]] - `contains` [EXTRACTED]
+- [[3. Take Screenshots for Audit Trail_2]] - `contains` [EXTRACTED]
+- [[4. Handle CAPTCHAs Gracefully_2]] - `contains` [EXTRACTED]
+- [[5. Never Extract Credentials_2]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/triage-cve-mitigationspy
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

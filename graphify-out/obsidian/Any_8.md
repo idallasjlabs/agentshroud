@@ -1,71 +1,23 @@
 ---
-source_file: "gateway/ingest_api/middleware.py"
+source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "TrustManager"
-location: "L496"
+community: "sync-cve-registry.py"
+location: "L491"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/TrustManager
+  - graphify/EXTRACTED
+  - community/sync-cve-registrypy
 ---
 
 # Any
 
 ## Connections
-- [[._analyze_request_for_rbac()]] - `references` [EXTRACTED]
-- [[._check_cross_session_access()]] - `references` [EXTRACTED]
-- [[._check_rbac_permissions()]] - `references` [EXTRACTED]
-- [[._enforce_session_isolation()]] - `references` [EXTRACTED]
-- [[._extract_user_id()]] - `references` [EXTRACTED]
-- [[._is_tool_call_request()]] - `references` [EXTRACTED]
-- [[.process_request()]] - `references` [EXTRACTED]
-- [[.process_tool_result()]] - `references` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[AgentRegistry]] - `uses` [INFERRED]
-- [[AlertDispatcher]] - `uses` [INFERRED]
-- [[ApprovalHardening]] - `uses` [INFERRED]
-- [[ApprovalHardeningConfig]] - `uses` [INFERRED]
-- [[BrowserSecurityGuard]] - `uses` [INFERRED]
-- [[ConsentFramework]] - `uses` [INFERRED]
-- [[ContextGuard]] - `uses` [INFERRED]
-- [[DNSFilter]] - `uses` [INFERRED]
-- [[DNSFilterConfig]] - `uses` [INFERRED]
-- [[DriftDetector]] - `uses` [INFERRED]
-- [[EgressMonitor]] - `uses` [INFERRED]
-- [[EgressMonitorConfig]] - `uses` [INFERRED]
-- [[EnvironmentGuard]] - `uses` [INFERRED]
-- [[FileSandbox]] - `uses` [INFERRED]
-- [[FileSandboxConfig]] - `uses` [INFERRED]
-- [[GitGuard]] - `uses` [INFERRED]
-- [[KeyRotationManager]] - `uses` [INFERRED]
-- [[KillSwitchMonitor]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
-- [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
-- [[MemoryLifecycleManager]] - `uses` [INFERRED]
-- [[MemorySecurityConfig]] - `uses` [INFERRED]
-- [[MetadataGuard]] - `uses` [INFERRED]
-- [[MultiTurnTracker]] - `uses` [INFERRED]
-- [[NetworkValidator]] - `uses` [INFERRED]
-- [[OAuthSecurityValidator]] - `uses` [INFERRED]
-- [[OutputCanary]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[PathIsolationConfig]] - `uses` [INFERRED]
-- [[PathIsolationManager]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[ResourceGuard]] - `uses` [INFERRED]
-- [[SessionManager]] - `uses` [INFERRED]
-- [[SubagentMonitor]] - `uses` [INFERRED]
-- [[SubagentMonitorConfig]] - `uses` [INFERRED]
-- [[ToolChainAnalyzer]] - `uses` [INFERRED]
-- [[ToolResultInjectionScanner]] - `uses` [INFERRED]
-- [[ToolResultPIIConfig]] - `uses` [INFERRED]
-- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
-- [[ToolResultSanitizer]] - `uses` [INFERRED]
-- [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
-- [[ToolTier_1]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
-- [[XMLLeakFilter]] - `uses` [INFERRED]
+- [[_ghsa_cvss_score()]] - `references` [EXTRACTED]
+- [[_ghsa_entry_to_py()]] - `references` [EXTRACTED]
+- [[_ghsa_patched_version()]] - `references` [EXTRACTED]
+- [[_next_ash_number()]] - `references` [EXTRACTED]
+- [[append_ghsa_entries()]] - `references` [EXTRACTED]
+- [[fetch_ghsa_advisories()]] - `references` [EXTRACTED]
+- [[process_ghsa_advisories()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

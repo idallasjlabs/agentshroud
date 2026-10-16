@@ -1,25 +1,33 @@
 ---
-source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
+source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "_build_image_targets"
-location: "L23"
+community: "._filter_outbound"
+location: "L2713"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_build_image_targets
+  - community/_filter_outbound
 ---
 
 # Any
 
 ## Connections
-- [[aggregate_costs()]] - `references` [EXTRACTED]
-- [[build_json_all()]] - `references` [EXTRACTED]
-- [[build_json_current()]] - `references` [EXTRACTED]
-- [[filter_by_days()]] - `references` [EXTRACTED]
-- [[latest_day_cost()]] - `references` [EXTRACTED]
-- [[load_payload()]] - `references` [EXTRACTED]
-- [[parse_daily_entries()]] - `references` [EXTRACTED]
-- [[pick_current_model()]] - `references` [EXTRACTED]
-- [[run_codexbar_cost()]] - `references` [EXTRACTED]
+- [[dot-_apply_outbound_model_error_rewrites()]] - `references` [EXTRACTED]
+- [[dot-_apply_outbound_status_notices()]] - `references` [EXTRACTED]
+- [[dot-_build_ack_only_updates()]] - `references` [EXTRACTED]
+- [[dot-_check_collaborator_leakage()]] - `references` [EXTRACTED]
+- [[dot-_extract_embedded_tool_call_json()]] - `references` [EXTRACTED]
+- [[dot-_handle_outbound_tool_calls()]] - `references` [EXTRACTED]
+- [[dot-_parse_tool_call_json()]] - `references` [EXTRACTED]
+- [[dot-_redact_owner_ids()]] - `references` [EXTRACTED]
+- [[dot-_resolve_text_field()]] - `references` [EXTRACTED]
+- [[dot-_trigger_web_fetch_approval()]] - `references` [EXTRACTED]
+- [[dot-_trigger_web_search_log()]] - `references` [EXTRACTED]
+- [[ApprovalMode]] - `uses` [INFERRED]
+- [[DelegationPrivilege]] - `uses` [INFERRED]
+- [[GroupWorkspaceManager]] - `uses` [INFERRED]
+- [[ProgressiveLockdown]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RateLimiter_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/_build_image_targets
+#graphify/code #graphify/EXTRACTED #community/_filter_outbound

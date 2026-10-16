@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "EgressPolicy"
+community: "DataLedger"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressPolicy
+  - community/DataLedger
 ---
 
 # Async SQLite-backed data ledger      Records all content forwarded through the g
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DataLedger]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressPolicy
+#graphify/rationale #graphify/EXTRACTED #community/DataLedger

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "TestNormalizeForSpeech"
+community: "Request"
 location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestNormalizeForSpeech
+  - community/Request
 ---
 
 # ApprovalDecision
@@ -15,8 +15,8 @@ tags:
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[User's decision on a pending approval request]] - `rationale_for` [EXTRACTED]
 - [[approval.py]] - `imports` [EXTRACTED]
-- [[models.py]] - `contains` [EXTRACTED]
+- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
 - [[test_approval_decision_valid()]] - `calls` [EXTRACTED]
 - [[test_main_simple.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestNormalizeForSpeech
+#graphify/code #graphify/EXTRACTED #community/Request

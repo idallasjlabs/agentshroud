@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/context_guard.py"
+source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "TrustManager"
-location: "L465"
+community: "plan_remediation"
+location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/plan_remediation
 ---
 
 # Any
 
 ## Connections
-- [[.get_attack_summary()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_7]] - `references` [EXTRACTED]
+- [[load_registry()]] - `references` [EXTRACTED]
+- [[plan_remediation()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

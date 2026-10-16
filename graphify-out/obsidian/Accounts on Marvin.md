@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/colima-docker-guide.md"
 type: "document"
-community: "TestPromptProtection"
+community: "Colima & Docker Operations Guide — AgentShroud"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestPromptProtection
+  - community/Colima__Docker_Operations_Guide__AgentShroud
 ---
 
 # Accounts on Marvin
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1. Environment Overview]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestPromptProtection
+#graphify/document #graphify/EXTRACTED #community/Colima__Docker_Operations_Guide__AgentShroud

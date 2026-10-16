@@ -1,16 +1,17 @@
 ---
 source_file: "docker/falco/rules.yaml"
 type: "document"
-community: "TestOutboundClassifierHelpers"
+community: "AgentShroud Falco Rules"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundClassifierHelpers
+  - community/AgentShroud_Falco_Rules
 ---
 
 # AgentShroud Falco Rules
 
 ## Connections
+- [[Falco Configuration]] - `references` [EXTRACTED]
 - [[Falco Rule Unexpected Outbound Connection]] - `conceptually_related_to` [EXTRACTED]
 - [[Rule Container Shell Spawned]] - `conceptually_related_to` [EXTRACTED]
 - [[Rule Crypto Mining Detection]] - `conceptually_related_to` [EXTRACTED]
@@ -18,4 +19,4 @@ tags:
 - [[Rule Privilege Escalation Attempt]] - `conceptually_related_to` [EXTRACTED]
 - [[Rule Secret File Access]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundClassifierHelpers
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Falco_Rules

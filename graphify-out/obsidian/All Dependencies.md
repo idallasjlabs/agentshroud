@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
 type: "document"
-community: "TestFileSandbox"
+community: "All Dependencies.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestFileSandbox
+  - community/All_Dependenciesmd
 ---
 
 # All Dependencies.md
@@ -16,15 +16,15 @@ tags:
 - [[aiosqlite]] - `references` [EXTRACTED]
 - [[ci-workflows]] - `references` [EXTRACTED]
 - [[clamav]] - `references` [EXTRACTED]
-- [[fastapi]] - `references` [EXTRACTED]
+- [[fastapi_2]] - `references` [EXTRACTED]
 - [[httpx]] - `references` [EXTRACTED]
 - [[openclaw]] - `references` [EXTRACTED]
-- [[playwright_1]] - `references` [EXTRACTED]
+- [[playwright]] - `references` [EXTRACTED]
 - [[presidio-analyzer]] - `references` [EXTRACTED]
-- [[pydantic]] - `references` [EXTRACTED]
+- [[pydantic_1]] - `references` [EXTRACTED]
 - [[pytest.ini]] - `references` [EXTRACTED]
 - [[python-jose]] - `references` [EXTRACTED]
 - [[spacy]] - `references` [EXTRACTED]
-- [[trivy]] - `references` [EXTRACTED]
+- [[trivy_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFileSandbox
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

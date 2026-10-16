@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/env_guard.py"
+source_file: "gateway/security/killswitch_config.py"
 type: "code"
-community: "HostStatus"
-location: "L289"
+community: "KillSwitchMonitor"
+location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HostStatus
+  - community/KillSwitchMonitor
 ---
 
 # Any
 
 ## Connections
-- [[.get_leakage_summary()]] - `references` [EXTRACTED]
-- [[.monitor_environment_access()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_10]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HostStatus
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

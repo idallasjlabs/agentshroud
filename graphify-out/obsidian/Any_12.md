@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/proxy/canvas_proxy.py"
+source_file: ""
 type: "code"
-community: "Deploying AgentShroud on Linux (x86_64 / aarch64"
-location: "L119"
+community: "ProxyAction"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64
+  - community/ProxyAction
 ---
 
 # Any
 
 ## Connections
-- [[_handle_http()]] - `references` [EXTRACTED]
-- [[_handle_websocket()]] - `references` [EXTRACTED]
-- [[canvas_proxy_app()]] - `references` [EXTRACTED]
+- [[dot-_audit()]] - `references` [EXTRACTED]
+- [[dot-get_stats()]] - `references` [EXTRACTED]
+- [[dot-to_dict()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/proxy/telegram_replay.py"
+source_file: "gateway/cli/client.py"
 type: "code"
-community: "_sleep()"
-location: "L82"
+community: "SCLClient"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_sleep
+  - community/SCLClient
 ---
 
 # Any
 
 ## Connections
-- [[.pull_undelivered()]] - `references` [EXTRACTED]
-- [[.record_inbound()]] - `references` [EXTRACTED]
+- [[dot-_request()]] - `references` [EXTRACTED]
+- [[dot-delete()_1]] - `references` [EXTRACTED]
+- [[dot-get()_1]] - `references` [EXTRACTED]
+- [[dot-post()]] - `references` [EXTRACTED]
+- [[dot-put()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_sleep
+#graphify/code #graphify/EXTRACTED #community/SCLClient

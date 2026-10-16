@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm/SKILL.md"
 type: "concept"
-community: "Chaos Engineering Skill"
+community: "Atlassian MCP Server (Jira + Confluence, concept)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Chaos_Engineering_Skill
+  - community/Atlassian_MCP_Server_Jira__Confluence_concept
 ---
 
 # Atlassian MCP Server (Jira + Confluence, concept)
 
-#graphify/concept #graphify/EXTRACTED #community/Chaos_Engineering_Skill
+#graphify/concept #graphify/EXTRACTED #community/Atlassian_MCP_Server_Jira__Confluence_concept

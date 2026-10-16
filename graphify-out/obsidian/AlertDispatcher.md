@@ -1,54 +1,54 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "lifespan.py"
+community: "AlertDispatcher"
 location: "L35"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/lifespanpy
+  - community/AlertDispatcher
 ---
 
 # AlertDispatcher
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_53]] - `method` [EXTRACTED]
-- [[._format_alert_message()]] - `method` [EXTRACTED]
-- [[._is_duplicate()]] - `method` [EXTRACTED]
-- [[._is_rate_limited()]] - `method` [EXTRACTED]
-- [[._log_alert()]] - `method` [EXTRACTED]
-- [[._make_dispatcher()]] - `calls` [EXTRACTED]
-- [[._send_notification()]] - `method` [EXTRACTED]
-- [[.cleanup_seen()]] - `method` [EXTRACTED]
-- [[.dispatch()]] - `method` [EXTRACTED]
-- [[.get_digest()]] - `method` [EXTRACTED]
-- [[.get_stats()_12]] - `method` [EXTRACTED]
-- [[.test_alert_dedup()]] - `calls` [EXTRACTED]
-- [[.test_alert_dispatcher_concurrent_dispatch()]] - `calls` [INFERRED]
-- [[.test_alert_dispatcher_init()]] - `calls` [EXTRACTED]
-- [[.test_alert_dispatcher_write()]] - `calls` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
+- [[dot-__init__()_103]] - `calls` [EXTRACTED]
+- [[dot-__init__()_95]] - `method` [EXTRACTED]
+- [[dot-_format_alert_message()]] - `method` [EXTRACTED]
+- [[dot-_is_duplicate()]] - `method` [EXTRACTED]
+- [[dot-_is_rate_limited()]] - `method` [EXTRACTED]
+- [[dot-_log_alert()]] - `method` [EXTRACTED]
+- [[dot-_make_dispatcher()]] - `calls` [EXTRACTED]
+- [[dot-_send_notification()]] - `method` [EXTRACTED]
+- [[dot-cleanup_seen()]] - `method` [EXTRACTED]
+- [[dot-dispatch()]] - `method` [EXTRACTED]
+- [[dot-get_digest()]] - `method` [EXTRACTED]
+- [[dot-get_stats()_2]] - `method` [EXTRACTED]
+- [[dot-test_alert_dedup()]] - `calls` [EXTRACTED]
+- [[dot-test_alert_dispatcher_concurrent_dispatch()]] - `calls` [INFERRED]
+- [[dot-test_alert_dispatcher_init()]] - `calls` [EXTRACTED]
+- [[dot-test_alert_dispatcher_write()]] - `calls` [EXTRACTED]
+- [[Action_1]] - `uses` [INFERRED]
+- [[Any_42]] - `uses` [INFERRED]
 - [[CronStateMonitor]] - `calls` [INFERRED]
 - [[Dispatches security alerts with dedup and rate limiting.]] - `rationale_for` [EXTRACTED]
-- [[Exception_2]] - `uses` [INFERRED]
+- [[Exception_3]] - `uses` [INFERRED]
 - [[Kaizen Fix AlertDispatcher now retries 3x with exponential backoff instead of failing on a single 10s timeout, which had been the top gateway error category (14week) at ERROR level]] - `rationale_for` [EXTRACTED]
-- [[LogSanitizer]] - `uses` [INFERRED]
+- [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[Path_23]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
+- [[Path]] - `uses` [INFERRED]
+- [[RBACManager_1]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
 - [[TestAlertDispatcher]] - `uses` [INFERRED]
-- [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth_1]] - `uses` [INFERRED]
+- [[TestAuditTrail]] - `uses` [INFERRED]
+- [[TestAuth]] - `uses` [INFERRED]
 - [[TestClamAVParser]] - `uses` [INFERRED]
 - [[TestClamAVRun]] - `uses` [INFERRED]
-- [[TestClamAVSummary]] - `uses` [INFERRED]
+- [[TestClamAVSummary_1]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard_1]] - `uses` [INFERRED]
+- [[TestContextGuard]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
 - [[TestDoSPrevention]] - `uses` [INFERRED]
@@ -65,12 +65,12 @@ tags:
 - [[TestLoggingSecurity]] - `uses` [INFERRED]
 - [[TestMCPSecurity]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
-- [[TestPIIDetection_1]] - `uses` [INFERRED]
+- [[TestPIIDetection]] - `uses` [INFERRED]
 - [[TestPrivilegeEscalation]] - `uses` [INFERRED]
 - [[TestPromptGuard]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestStartupScannerKeying]] - `uses` [INFERRED]
-- [[TestSupplyChain_1]] - `uses` [INFERRED]
+- [[TestSupplyChain]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestTrivyParser]] - `uses` [INFERRED]
 - [[TestTrivyRun]] - `uses` [INFERRED]
@@ -80,9 +80,9 @@ tags:
 - [[TestWazuhSummary_1]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
-- [[alert_dispatcher.py]] - `contains` [EXTRACTED]
+- [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
 - [[dispatcher()]] - `calls` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[run_canary()]] - `conceptually_related_to` [INFERRED]
@@ -90,4 +90,4 @@ tags:
 - [[test_security_audit.py]] - `references` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/lifespanpy
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

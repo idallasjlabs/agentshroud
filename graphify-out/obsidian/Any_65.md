@@ -1,21 +1,22 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: "gateway/tools/agentshroud_manager.py"
 type: "code"
-community: "LLMProxy"
-location: "L66"
+community: "upgrade"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/upgrade
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary()_3]] - `references` [EXTRACTED]
-- [[get_fim_events()]] - `references` [EXTRACTED]
-- [[get_rootkit_events()]] - `references` [EXTRACTED]
-- [[parse_alert()_1]] - `references` [EXTRACTED]
-- [[read_alerts()_1]] - `references` [EXTRACTED]
+- [[check_current_version()]] - `references` [EXTRACTED]
+- [[downgrade()]] - `references` [EXTRACTED]
+- [[list_versions()]] - `references` [EXTRACTED]
+- [[rollback()]] - `references` [EXTRACTED]
+- [[security_review()]] - `references` [EXTRACTED]
+- [[upgrade()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/upgrade

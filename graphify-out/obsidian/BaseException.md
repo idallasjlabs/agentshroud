@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/llm_proxy.py"
+source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "code"
-community: "test_trust_manager.py"
-location: "L737"
+community: "_is_stale_callback_error"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_trust_managerpy
+  - community/_is_stale_callback_error
 ---
 
 # BaseException
 
 ## Connections
-- [[._is_connect_error()]] - `references` [EXTRACTED]
-- [[._local_backend_unavailable_response()]] - `references` [EXTRACTED]
+- [[_err_text()]] - `references` [EXTRACTED]
+- [[_is_stale_callback_error()]] - `references` [EXTRACTED]
+- [[_is_stale_edit_error()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_trust_managerpy
+#graphify/code #graphify/EXTRACTED #community/_is_stale_callback_error

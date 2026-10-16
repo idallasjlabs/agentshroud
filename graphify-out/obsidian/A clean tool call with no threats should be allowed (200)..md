@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "rationale"
-community: "Safe Refactor Specialist"
+community: "TestMCPProxyEndpoint"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Safe_Refactor_Specialist
+  - community/TestMCPProxyEndpoint
 ---
 
 # A clean tool call with no threats should be allowed (200).
 
 ## Connections
-- [[.test_clean_tool_call_allowed()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_clean_tool_call_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Safe_Refactor_Specialist
+#graphify/rationale #graphify/EXTRACTED #community/TestMCPProxyEndpoint

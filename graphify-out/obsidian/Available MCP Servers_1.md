@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "Telegram & Gmail Integration Guide"
+community: "10. Troubleshooting"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram__Gmail_Integration_Guide
+  - community/10_Troubleshooting
 ---
 
 # Available MCP Servers
@@ -17,4 +17,4 @@ tags:
 - [[3. AWS API MCP_1]] - `contains` [EXTRACTED]
 - [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram__Gmail_Integration_Guide
+#graphify/document #graphify/EXTRACTED #community/10_Troubleshooting

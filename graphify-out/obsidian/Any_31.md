@@ -1,22 +1,25 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "Detailed Profiles"
+community: "soc/router.py"
 location: "L58"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Detailed_Profiles
+  - graphify/INFERRED
+  - community/soc/routerpy
 ---
 
 # Any
 
 ## Connections
-- [[._format_alert_message()]] - `references` [EXTRACTED]
-- [[._log_alert()]] - `references` [EXTRACTED]
-- [[._send_notification()]] - `references` [EXTRACTED]
-- [[.dispatch()]] - `references` [EXTRACTED]
-- [[.get_digest()]] - `references` [EXTRACTED]
-- [[.get_stats()_12]] - `references` [EXTRACTED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult_1]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller_1]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLInterface_1]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[_log_audit()]] - `references` [EXTRACTED]
+- [[auth_ws_token()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Detailed_Profiles
+#graphify/code #graphify/INFERRED #community/soc/routerpy

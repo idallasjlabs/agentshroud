@@ -1,19 +1,17 @@
 ---
-source_file: "scripts/discover_upstream_versions.py"
+source_file: "voice_gateway/tts.py"
 type: "code"
-community: "_seed_cron"
-location: "L145"
+community: "tts.py"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_seed_cron
+  - community/ttspy
 ---
 
 # Any
 
 ## Connections
-- [[_digest_for_tag()]] - `references` [EXTRACTED]
-- [[discover()]] - `references` [EXTRACTED]
-- [[fetch_dockerhub_tags()]] - `references` [EXTRACTED]
+- [[_get_pipeline()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_seed_cron
+#graphify/code #graphify/EXTRACTED #community/ttspy

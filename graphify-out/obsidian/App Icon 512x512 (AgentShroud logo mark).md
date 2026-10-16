@@ -1,13 +1,13 @@
 ---
 source_file: "branding/icons/app/icon-512x512.png"
 type: "image"
-community: "Prime Directive — no new files, minimal diffs"
+community: "App Icon 512x512 (AgentShroud logo mark)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Prime_Directive__no_new_files_minimal_diffs
+  - community/App_Icon_512x512_AgentShroud_logo_mark
 ---
 
 # App Icon 512x512 (AgentShroud logo mark)
 
-#graphify/image #graphify/EXTRACTED #community/Prime_Directive__no_new_files_minimal_diffs
+#graphify/image #graphify/EXTRACTED #community/App_Icon_512x512_AgentShroud_logo_mark

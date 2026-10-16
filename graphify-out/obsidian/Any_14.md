@@ -1,17 +1,25 @@
 ---
-source_file: "gateway/proxy/llm_proxy.py"
+source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "Skill: Data Validation (DATA-VAL)"
-location: "L1771"
+community: "WebhookReceiver"
+location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_Data_Validation_DATA-VAL
+  - community/WebhookReceiver
 ---
 
 # Any
 
 ## Connections
-- [[._filter_streaming_event()]] - `references` [EXTRACTED]
+- [[dot-_extract_message()]] - `references` [EXTRACTED]
+- [[dot-_extract_user_id()]] - `references` [EXTRACTED]
+- [[dot-_extract_username()]] - `references` [EXTRACTED]
+- [[dot-_prepare_session_payload()]] - `references` [EXTRACTED]
+- [[dot-_replace_message()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_5]] - `references` [EXTRACTED]
+- [[dot-process_webhook()]] - `references` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[UserSessionManager]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL
+#graphify/code #graphify/EXTRACTED #community/WebhookReceiver

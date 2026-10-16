@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "rationale"
-community: "EgressPolicy"
+community: "PIIConfig"
 location: "L209"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressPolicy
+  - community/PIIConfig
 ---
 
 # Agent with low trust cannot perform elevated actions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_trust_insufficient_action_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressPolicy
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

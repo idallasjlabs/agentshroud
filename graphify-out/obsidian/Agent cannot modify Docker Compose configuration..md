@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "Enum"
+community: "MiddlewareManager"
 location: "L146"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enum
+  - community/MiddlewareManager
 ---
 
 # Agent cannot modify Docker Compose configuration.
 
 ## Connections
-- [[.test_docker_compose_write_blocked()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_docker_compose_write_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enum
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

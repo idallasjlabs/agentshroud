@@ -1,20 +1,28 @@
 ---
-source_file: "gateway/tests/test_approval_store.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L19"
+community: "ApprovalQueueConfig"
+location: "L215"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TelegramAPIProxy
+  - community/ApprovalQueueConfig
 ---
 
 # ApprovalQueueItem
 
 ## Connections
-- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
-- [[ApprovalStore_1]] - `uses` [INFERRED]
-- [[AuditStore_1]] - `uses` [INFERRED]
-- [[_make_item()]] - `references` [EXTRACTED]
+- [[dot-_notify_telegram()]] - `references` [EXTRACTED]
+- [[dot-decide()_1]] - `references` [EXTRACTED]
+- [[dot-get_item()_2]] - `references` [EXTRACTED]
+- [[dot-get_pending()_1]] - `references` [EXTRACTED]
+- [[dot-submit()_1]] - `references` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_2]] - `uses` [INFERRED]
+- [[ApprovalRequest_5]] - `uses` [INFERRED]
+- [[ApprovalStore]] - `uses` [INFERRED]
+- [[MFAGuard_2]] - `uses` [INFERRED]
+- [[ToolRiskConfig]] - `uses` [INFERRED]
+- [[ToolRiskPolicy]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/TelegramAPIProxy
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig

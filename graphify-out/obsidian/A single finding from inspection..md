@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "rationale"
-community: "GitGuard"
+community: ".inspect_tool_call"
 location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/inspect_tool_call
 ---
 
 # A single finding from inspection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[InspectionFinding]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GitGuard
+#graphify/rationale #graphify/EXTRACTED #community/inspect_tool_call

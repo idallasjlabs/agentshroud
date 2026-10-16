@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/log_sanitizer.py"
+source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "iCloud Services"
-location: "L157"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Any
 
 ## Connections
-- [[get_sanitizer_stats()]] - `references` [EXTRACTED]
+- [[dot-__init__()_115]] - `references` [EXTRACTED]
+- [[dot-get_protection_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/iCloud_Services
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "rationale"
-community: "AgentShroud Development Roadmap — 2026 Gantt Cha"
+community: "TestDNSForwarderProtocol"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Development_Roadmap__2026_Gantt_Cha
+  - community/TestDNSForwarderProtocol
 ---
 
 # Blocklist stub that blocks every domain.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_BlockAll]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Development_Roadmap__2026_Gantt_Cha
+#graphify/rationale #graphify/EXTRACTED #community/TestDNSForwarderProtocol

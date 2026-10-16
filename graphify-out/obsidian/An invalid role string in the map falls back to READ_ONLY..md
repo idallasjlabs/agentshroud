@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "GroupRoleResolver"
 location: "L417"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/GroupRoleResolver
 ---
 
 # An invalid role string in the map falls back to READ_ONLY.
 
 ## Connections
-- [[.test_get_role_invalid_string_defaults_to_readonly()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_get_role_invalid_string_defaults_to_readonly()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver

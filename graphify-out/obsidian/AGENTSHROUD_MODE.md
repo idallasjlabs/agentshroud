@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
 type: "document"
-community: "chatbot/main.py"
+community: "AGENTSHROUD_MODE"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/chatbot/mainpy
+  - community/AGENTSHROUD_MODE
 ---
 
 # AGENTSHROUD_MODE.md
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
 - [[OPENCLAW_SANDBOX_MODE]] - `semantically_similar_to` [INFERRED]
-- [[agentshroud.yaml]] - `references` [EXTRACTED]
-- [[egress_filter.py]] - `references` [INFERRED]
+- [[agentshroud.yaml_1]] - `references` [EXTRACTED]
+- [[egress_filter.py_1]] - `references` [INFERRED]
 - [[mcp_config.py]] - `references` [INFERRED]
 - [[prompt_guard.py]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/chatbot/mainpy
+#graphify/document #graphify/INFERRED #community/AGENTSHROUD_MODE

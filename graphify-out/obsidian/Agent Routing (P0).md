@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "WebProxy"
+community: "Added"
 location: "L1032"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/Added
 ---
 
 # Agent Routing (P0)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Fixed]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/WebProxy
+#graphify/document #graphify/EXTRACTED #community/Added

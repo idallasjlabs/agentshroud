@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "PipelineAction"
+community: "main.py.md"
 location: "L123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/mainpymd
 ---
 
 # Bot Container (`agentshroud-bot`)
 
 ## Connections
-- [[Container Architecture_2]] - `contains` [EXTRACTED]
+- [[Container Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PipelineAction
+#graphify/document #graphify/EXTRACTED #community/mainpymd

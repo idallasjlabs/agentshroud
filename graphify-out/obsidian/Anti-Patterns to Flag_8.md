@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ui/SKILL.md"
 type: "document"
-community: "_age()"
-location: "L30"
+community: "Skill: UI Expert (UI)"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_age
+  - community/Skill_UI_Expert_UI
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
+- [[Skill UI Expert (UI)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_age
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

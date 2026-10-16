@@ -1,24 +1,17 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "ResourceGuard"
-location: "L28"
+community: "A2APolicyConfig"
+location: "L210"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/A2APolicyConfig
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_124]] - `references` [EXTRACTED]
-- [[._extract_dict_content()]] - `references` [EXTRACTED]
-- [[._extract_scannable_content()]] - `references` [EXTRACTED]
-- [[._reconstruct_result()]] - `references` [EXTRACTED]
-- [[.sanitize_tool_result()]] - `references` [EXTRACTED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[RedactionResult]] - `uses` [INFERRED]
+- [[dot-from_dict()_8]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig

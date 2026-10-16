@@ -1,22 +1,25 @@
 ---
-source_file: "gateway/security/tool_chain_analyzer.py"
+source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
 type: "code"
-community: "TrustManager"
-location: "L183"
+community: "model_usage.py"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/model_usagepy
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_122]] - `references` [EXTRACTED]
-- [[.analyze_tool_call()]] - `references` [EXTRACTED]
-- [[.get_global_stats()_1]] - `references` [EXTRACTED]
-- [[.get_session_stats()_1]] - `references` [EXTRACTED]
-- [[.sanitize_tool_params()]] - `references` [EXTRACTED]
-- [[.score_reversibility()]] - `references` [EXTRACTED]
+- [[aggregate_costs()]] - `references` [EXTRACTED]
+- [[build_json_all()]] - `references` [EXTRACTED]
+- [[build_json_current()]] - `references` [EXTRACTED]
+- [[filter_by_days()]] - `references` [EXTRACTED]
+- [[latest_day_cost()]] - `references` [EXTRACTED]
+- [[load_payload()]] - `references` [EXTRACTED]
+- [[parse_daily_entries()]] - `references` [EXTRACTED]
+- [[pick_current_model()]] - `references` [EXTRACTED]
+- [[run_codexbar_cost()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/model_usagepy

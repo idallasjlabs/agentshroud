@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "falco_monitor.py"
+community: "PipelineAction"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/falco_monitorpy
+  - community/PipelineAction
 ---
 
 # AuditChainEntry
 
 ## Connections
-- [[.append()]] - `references` [EXTRACTED]
-- [[.append_block()]] - `references` [EXTRACTED]
-- [[.append_owner_bypass()]] - `references` [EXTRACTED]
-- [[.entries()_1]] - `references` [EXTRACTED]
+- [[dot-append()]] - `references` [EXTRACTED]
+- [[dot-append_block()]] - `references` [EXTRACTED]
+- [[dot-append_owner_bypass()]] - `references` [EXTRACTED]
+- [[dot-entries()]] - `references` [EXTRACTED]
 - [[An entry in the SHA-256 hash chain audit ledger.]] - `rationale_for` [EXTRACTED]
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
 - [[FilterResult]] - `uses` [INFERRED]
@@ -24,4 +24,4 @@ tags:
 - [[ViolationType]] - `uses` [INFERRED]
 - [[pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/falco_monitorpy
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

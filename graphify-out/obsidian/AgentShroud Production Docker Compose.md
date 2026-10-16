@@ -1,11 +1,11 @@
 ---
 source_file: "examples/docker-compose.production.yml"
 type: "document"
-community: "archive_old_events()"
+community: "First Time Setup"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/archive_old_events
+  - community/First_Time_Setup
 ---
 
 # AgentShroud Production Docker Compose
@@ -15,4 +15,4 @@ tags:
 - [[Health Checks_1]] - `conceptually_related_to` [INFERRED]
 - [[docker-commands]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/archive_old_events
+#graphify/document #graphify/INFERRED #community/First_Time_Setup

@@ -1,21 +1,22 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "TestTail"
-location: "L49"
+community: "parse_clamscan_output"
+location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestTail
+  - community/parse_clamscan_output
 ---
 
 # Any
 
 ## Connections
-- [[.from_dict()_8]] - `references` [EXTRACTED]
-- [[.get_integrity_status()]] - `references` [EXTRACTED]
-- [[.get_recent_alerts()]] - `references` [EXTRACTED]
-- [[.to_dict()_11]] - `references` [EXTRACTED]
-- [[MemoryIntegrityConfig]] - `uses` [INFERRED]
+- [[generate_summary()_1]] - `references` [EXTRACTED]
+- [[parse_clamscan_output()]] - `references` [EXTRACTED]
+- [[run_clamscan()]] - `references` [EXTRACTED]
+- [[save_report()_1]] - `references` [EXTRACTED]
+- [[scan_bytes()]] - `references` [EXTRACTED]
+- [[update_virus_db()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestTail
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "SSHProxy"
 location: "L233"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/SSHProxy
 ---
 
 # A sibling directory that merely shares the root as a string prefix         (no '
 
 ## Connections
-- [[.test_write_file_absolute_path_prefix_collision_rejected()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_write_file_absolute_path_prefix_collision_rejected()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

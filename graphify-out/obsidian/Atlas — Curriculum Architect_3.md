@@ -1,21 +1,27 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/README.md"
+source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
 type: "document"
-community: "ssh_runner()"
-location: "L1"
+community: "Atlas — Curriculum Architect"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ssh_runner
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Atlas — Curriculum Architect
 
 ## Connections
-- [[Purpose_76]] - `contains` [EXTRACTED]
-- [[README_81]] - `contains` [EXTRACTED]
-- [[Related Skills_82]] - `contains` [EXTRACTED]
-- [[SKILL_142]] - `contains` [EXTRACTED]
-- [[Usage_84]] - `contains` [EXTRACTED]
+- [[Input Requirements_12]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Context_1]] - `contains` [EXTRACTED]
+- [[Output Format_22]] - `contains` [EXTRACTED]
+- [[Persona_8]] - `contains` [EXTRACTED]
+- [[Quality Checklist_9]] - `contains` [EXTRACTED]
+- [[Role_63]] - `contains` [EXTRACTED]
+- [[System Prompt_8]] - `contains` [EXTRACTED]
+- [[User Prompt Template_3]] - `contains` [EXTRACTED]
+- [[User Prompt Template — OKE Channel]] - `contains` [EXTRACTED]
+- [[openclawskillsi-atlasSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ssh_runner
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

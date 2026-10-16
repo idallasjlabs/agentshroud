@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/agentshroud-weekly-summary.txt"
 type: "document"
-community: "run_test()"
+community: "Report Delivery Format Instructions"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/run_test
+  - community/Report_Delivery_Format_Instructions
 ---
 
 # AgentShroud Weekly Summary (Hermes Prompt)
@@ -16,4 +16,4 @@ tags:
 - [[Report Delivery Format Instructions]] - `references` [EXTRACTED]
 - [[Seed Job AgentShroud Weekly Summary]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/run_test
+#graphify/document #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions

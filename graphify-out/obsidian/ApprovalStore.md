@@ -1,31 +1,76 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L47"
+community: "ApprovalQueueConfig"
+location: "L40"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/TelegramAPIProxy
+  - graphify/EXTRACTED
+  - community/ApprovalQueueConfig
 ---
 
 # ApprovalStore
 
 ## Connections
-- [[.__init__()_3]] - `references` [EXTRACTED]
-- [[.test_restart_recovery_preserves_timeout_action()]] - `calls` [INFERRED]
-- [[.test_restore_pending_items()]] - `calls` [INFERRED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
-- [[ApprovalRequest_3]] - `uses` [INFERRED]
+- [[dot-__init__()_148]] - `method` [EXTRACTED]
+- [[dot-close()_10]] - `method` [EXTRACTED]
+- [[dot-initialize()_2]] - `method` [EXTRACTED]
+- [[dot-load_all()]] - `method` [EXTRACTED]
+- [[dot-load_pending()]] - `method` [EXTRACTED]
+- [[dot-save()_1]] - `method` [EXTRACTED]
+- [[dot-test_restart_recovery_preserves_timeout_action()]] - `calls` [EXTRACTED]
+- [[dot-test_restore_pending_items()]] - `calls` [EXTRACTED]
+- [[dot-test_store_persists_across_reopen()]] - `calls` [EXTRACTED]
+- [[dot-update_status()]] - `method` [EXTRACTED]
+- [[Any_60]] - `uses` [INFERRED]
+- [[ApprovalQueue]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_4]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_1]] - `uses` [INFERRED]
+- [[ApprovalRequest_2]] - `uses` [INFERRED]
 - [[ApprovalStore_1]] - `uses` [INFERRED]
-- [[MFAGuard_2]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
+- [[MCPPolicyConfig]] - `uses` [INFERRED]
+- [[MCPPolicyEngine]] - `uses` [INFERRED]
+- [[MFAGuard_1]] - `uses` [INFERRED]
+- [[MonkeyPatch]] - `uses` [INFERRED]
+- [[Path_13]] - `uses` [INFERRED]
+- [[SQLite-backed persistence for approval queue items.]] - `rationale_for` [EXTRACTED]
+- [[TestApprovalStorePersistence]] - `uses` [INFERRED]
+- [[TestApprovalTimeout]] - `uses` [INFERRED]
+- [[TestApprovalWorkflow]] - `uses` [INFERRED]
+- [[TestAutoExpire]] - `uses` [INFERRED]
+- [[TestConcurrentApprovalRequests]] - `uses` [INFERRED]
+- [[TestMCPProxyIntegration]] - `uses` [INFERRED]
+- [[TestPersistence_2]] - `uses` [INFERRED]
+- [[TestToolRiskClassification]] - `uses` [INFERRED]
 - [[ToolRiskConfig_1]] - `uses` [INFERRED]
 - [[ToolRiskPolicy_1]] - `uses` [INFERRED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
-- [[temp_store()]] - `calls` [INFERRED]
-- [[test_broadcast_does_not_hang_forever_on_dead_client()_1]] - `calls` [INFERRED]
-- [[test_submit_does_not_deadlock_on_hung_websocket_client()_1]] - `calls` [INFERRED]
-- [[test_websocket_notifications()]] - `calls` [INFERRED]
+- [[WebSocket_8]] - `uses` [INFERRED]
+- [[_FakeApprovalQueue]] - `uses` [INFERRED]
+- [[_HangingWebSocket]] - `uses` [INFERRED]
+- [[_real_queue()]] - `calls` [EXTRACTED]
+- [[enhanced_mfa_queue()]] - `calls` [EXTRACTED]
+- [[enhanced_queue.py]] - `imports` [EXTRACTED]
+- [[lifespan()]] - `calls` [EXTRACTED]
+- [[lifespan.py]] - `imports` [EXTRACTED]
+- [[store()_1]] - `calls` [EXTRACTED]
+- [[store()_2]] - `calls` [EXTRACTED]
+- [[store.py]] - `contains` [EXTRACTED]
+- [[temp_store()]] - `calls` [EXTRACTED]
+- [[test_approval_store.py]] - `imports` [EXTRACTED]
+- [[test_approval_stress.py]] - `imports` [EXTRACTED]
+- [[test_broadcast_does_not_hang_forever_on_dead_client()]] - `calls` [EXTRACTED]
+- [[test_decide_persists()]] - `calls` [EXTRACTED]
+- [[test_enhanced_approval.py]] - `imports` [EXTRACTED]
+- [[test_expired_items_on_reload()]] - `calls` [EXTRACTED]
+- [[test_initialize_is_idempotent()]] - `calls` [EXTRACTED]
+- [[test_mcp_policy.py]] - `imports` [EXTRACTED]
+- [[test_mfa_guard.py]] - `imports` [EXTRACTED]
+- [[test_persist_and_reload()]] - `calls` [EXTRACTED]
+- [[test_store_survives_restart()]] - `calls` [EXTRACTED]
+- [[test_submit_does_not_deadlock_on_hung_websocket_client()]] - `calls` [EXTRACTED]
+- [[test_websocket_notifications()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

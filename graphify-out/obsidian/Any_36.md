@@ -1,20 +1,22 @@
 ---
-source_file: "gateway/security/context_integrity.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "ServiceManager"
-location: "L64"
+community: "ToolChainAnalyzer"
+location: "L183"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ServiceManager
+  - graphify/EXTRACTED
+  - community/ToolChainAnalyzer
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_66]] - `references` [EXTRACTED]
-- [[ContextSegment]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
-- [[SystemPromptFingerprint]] - `uses` [INFERRED]
+- [[dot-__init__()_89]] - `references` [EXTRACTED]
+- [[dot-analyze_tool_call()]] - `references` [EXTRACTED]
+- [[dot-get_global_stats()]] - `references` [EXTRACTED]
+- [[dot-get_session_stats()]] - `references` [EXTRACTED]
+- [[dot-sanitize_tool_params()]] - `references` [EXTRACTED]
+- [[dot-score_reversibility()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "rationale"
-community: "agentshroud.yaml"
+community: "RBACConfig"
 location: "L118"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/agentshroudyaml
+  - community/RBACConfig
 ---
 
 # A legitimate group member's write lands.
 
 ## Connections
-- [[.test_member_write_succeeds()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_member_write_succeeds()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/agentshroudyaml
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

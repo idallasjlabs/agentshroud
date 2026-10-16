@@ -1,12 +1,12 @@
 ---
 source_file: "reports/upgrade-2026-09-06-20260906-0808.md"
 type: "document"
-community: "_process_inbound()"
+community: "AgentShroud Weekly Upgrade — 2026-09-06"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_process_inbound
+  - community/AgentShroud_Weekly_Upgrade__2026-09-06
 ---
 
 # AgentShroud Weekly Upgrade — 2026-09-06
@@ -17,9 +17,9 @@ tags:
 - [[Preflight  Baseline]] - `contains` [EXTRACTED]
 - [[Rollback Instructions]] - `contains` [EXTRACTED]
 - [[SecurityFinding_1]] - `contains` [EXTRACTED]
-- [[Summary_25]] - `contains` [EXTRACTED]
+- [[Summary]] - `contains` [EXTRACTED]
 - [[Time spent]] - `contains` [EXTRACTED]
 - [[Upgrade Table]] - `contains` [EXTRACTED]
 - [[upgrade-2026-09-06-20260906-0808]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_process_inbound
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade__2026-09-06

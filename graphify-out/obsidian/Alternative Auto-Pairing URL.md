@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
 type: "document"
-community: "TestInternalBannerMatcher"
+community: "OpenClaw Control UI Pairing Instructions"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestInternalBannerMatcher
+  - community/OpenClaw_Control_UI_Pairing_Instructions
 ---
 
 # Alternative: Auto-Pairing URL
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw Control UI Pairing Instructions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestInternalBannerMatcher
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Control_UI_Pairing_Instructions

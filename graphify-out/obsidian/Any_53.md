@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "openclaw/skills/i-browser/package.json"
-location: "L231"
+community: "MCPPolicyEngine"
+location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-browser/packagejson
+  - community/MCPPolicyEngine
 ---
 
 # Any
 
 ## Connections
-- [[._scan_for_canary()]] - `references` [EXTRACTED]
-- [[.get_status()_1]] - `references` [EXTRACTED]
+- [[dot-enforce()_1]] - `references` [EXTRACTED]
+- [[dot-evaluate()_1]] - `references` [EXTRACTED]
+- [[dot-from_dict()_7]] - `references` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-browser/packagejson
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

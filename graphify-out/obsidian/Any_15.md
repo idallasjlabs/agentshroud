@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_audit.py"
+source_file: ""
 type: "code"
-community: "brand-guidelines.md"
-location: "L93"
+community: "triage-cve-mitigations.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/brand-guidelinesmd
+  - community/triage-cve-mitigationspy
 ---
 
 # Any
 
 ## Connections
-- [[.generate_report()]] - `references` [EXTRACTED]
-- [[.log_tool_call()]] - `references` [EXTRACTED]
+- [[summarize()]] - `references` [EXTRACTED]
+- [[triage_entry()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/brand-guidelinesmd
+#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy

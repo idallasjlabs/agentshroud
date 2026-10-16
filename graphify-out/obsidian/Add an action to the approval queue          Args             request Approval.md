@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "rationale"
-community: "A2APeer"
+community: ".decide"
 location: "L72"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2APeer
+  - community/decide
 ---
 
 # Add an action to the approval queue          Args:             request: Approval
 
 ## Connections
-- [[.submit()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-submit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2APeer
+#graphify/rationale #graphify/EXTRACTED #community/decide

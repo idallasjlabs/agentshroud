@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/references/configuration.md"
 type: "document"
-community: ".validate_docker_compose_config()"
+community: "Himalaya Configuration Reference"
 location: "L161"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/validate_docker_compose_config
+  - community/Himalaya_Configuration_Reference
 ---
 
 # Additional Options
@@ -17,4 +17,4 @@ tags:
 - [[Himalaya Configuration Reference]] - `contains` [EXTRACTED]
 - [[Signature]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/validate_docker_compose_config
+#graphify/document #graphify/EXTRACTED #community/Himalaya_Configuration_Reference

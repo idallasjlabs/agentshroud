@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "CREDENTIAL-PROTECTION-IMPLEMENTED.md"
+community: "NetworkSecurityFinding"
 location: "L27"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
+  - community/NetworkSecurityFinding
 ---
 
 # A network security finding.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[NetworkSecurityFinding]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
+#graphify/rationale #graphify/EXTRACTED #community/NetworkSecurityFinding

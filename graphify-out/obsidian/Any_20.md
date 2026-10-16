@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
+source_file: "gateway/proxy/telegram_replay.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L93"
+community: "test_telegram_replay.py"
+location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/test_telegram_replaypy
 ---
 
 # Any
 
 ## Connections
-- [[.get_stats()_7]] - `references` [EXTRACTED]
+- [[dot-pull_undelivered()]] - `references` [EXTRACTED]
+- [[dot-record_inbound()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy

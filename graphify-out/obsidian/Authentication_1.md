@@ -1,17 +1,19 @@
 ---
-source_file: "docs/api/api-reference.md"
+source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "Known Log Messages"
-location: "L28"
+community: "GitHub Copilot CLI Setup Guide"
+location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Known_Log_Messages
+  - community/GitHub_Copilot_CLI_Setup_Guide
 ---
 
 # Authentication
 
 ## Connections
-- [[API Reference]] - `contains` [EXTRACTED]
+- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
+- [[Option 1 GitHub Login]] - `contains` [EXTRACTED]
+- [[Option 2 Personal Access Token]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Known_Log_Messages
+#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide

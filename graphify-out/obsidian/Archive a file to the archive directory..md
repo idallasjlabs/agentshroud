@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "GSDE&G Development Master Checklist Skill"
+community: "lifespan.py"
 location: "L208"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist_Skill
+  - community/lifespanpy
 ---
 
 # Archive a file to the archive directory.
 
 ## Connections
-- [[.archive_file()]] - `rationale_for` [EXTRACTED]
+- [[dot-archive_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_Skill
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Output Sections (ALL required)"
+community: "1. GitHub MCP Authentication Reset"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Output_Sections_ALL_required
+  - community/1_GitHub_MCP_Authentication_Reset
 ---
 
 # Authentication Reset Procedures
@@ -17,4 +17,4 @@ tags:
 - [[3. AWS API MCP Authentication Reset]] - `contains` [EXTRACTED]
 - [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required
+#graphify/document #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset

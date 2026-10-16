@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/WORKFLOW.md"
 type: "concept"
-community: "Atlas — Curriculum Architect"
+community: "Claude Code skill catalog (59 skills)"
 location: "Agent Layer"
 tags:
   - graphify/concept
-  - graphify/INFERRED
-  - community/Atlas__Curriculum_Architect
+  - graphify/EXTRACTED
+  - community/Claude_Code_skill_catalog_59_skills
 ---
 
 # Agent layer (skills, subagents, orchestration)
@@ -15,4 +15,4 @@ tags:
 - [[Claude Code skill catalog (59 skills)]] - `references` [INFERRED]
 - [[Nine-stage AI-augmented lifecycle]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Atlas__Curriculum_Architect
+#graphify/concept #graphify/EXTRACTED #community/Claude_Code_skill_catalog_59_skills

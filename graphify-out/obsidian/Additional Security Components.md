@@ -1,12 +1,12 @@
 ---
 source_file: "docs/claude-security-audit-prompt.md"
 type: "document"
-community: "detect_runtime()"
+community: "AgentShroud v0.8.0 — Full Security & Functionality Audit"
 location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/detect_runtime
+  - community/AgentShroud_v080__Full_Security__Functionality_Audit
 ---
 
 # Additional Security Components
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[The 34 Security Modules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/detect_runtime
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080__Full_Security__Functionality_Audit

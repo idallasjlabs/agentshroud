@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/v0.7.0-remediation-plan.md"
 type: "document"
-community: "Hermes Agent — Connection Setup"
+community: "AgentShroud v0.7.0 — Red Team Remediation Plan"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Agent__Connection_Setup
+  - community/AgentShroud_v070__Red_Team_Remediation_Plan
 ---
 
 # AgentShroud v0.7.0 — Red Team Remediation Plan
@@ -15,8 +15,8 @@ tags:
 - [[4 Architectural Gaps (No Existing Module)]] - `contains` [EXTRACTED]
 - [[Critical Finding]] - `contains` [EXTRACTED]
 - [[Enterprise Security Feature Priorities]] - `references` [EXTRACTED]
-- [[Implementation Notes]] - `contains` [EXTRACTED]
-- [[Loss Categories_3]] - `contains` [EXTRACTED]
+- [[Implementation Notes_1]] - `contains` [EXTRACTED]
+- [[Loss Categories]] - `contains` [EXTRACTED]
 - [[Red Team Engagement Plan (Pending)]] - `contains` [EXTRACTED]
 - [[Source]] - `contains` [EXTRACTED]
 - [[Tier 1 Must-Have (Deployment Blockers) — v0.7.0 Scope]] - `contains` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[v0.6.0 → v0.7.0 Delta]] - `contains` [EXTRACTED]
 - [[v0.7.0-remediation-plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070__Red_Team_Remediation_Plan

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
+source_file: "docs/architecture/per-agent-isolation.md"
 type: "document"
-community: "test_egress_callback_stale.py"
-location: "L23"
+community: "Per-Agent Container Isolation Architecture"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_egress_callback_stalepy
+  - community/Per-Agent_Container_Isolation_Architecture
 ---
 
 # Architecture
 
 ## Connections
-- [[Presidio Analyzer]] - `contains` [EXTRACTED]
+- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_egress_callback_stalepy
+#graphify/document #graphify/EXTRACTED #community/Per-Agent_Container_Isolation_Architecture

@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
+community: "AgentShroud Brand Guidelines"
 location: "L158"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Brand Approval Process
@@ -19,4 +19,4 @@ tags:
 - [[Prohibited Uses]] - `contains` [EXTRACTED]
 - [[brand-guidelines]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

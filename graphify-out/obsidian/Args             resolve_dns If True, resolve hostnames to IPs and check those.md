@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "TestSSRFDetection"
 location: "L103"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/TestSSRFDetection
 ---
 
 # Args:             resolve_dns: If True, resolve hostnames to IPs and check those
 
 ## Connections
-- [[.__init__()_41]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_181]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection

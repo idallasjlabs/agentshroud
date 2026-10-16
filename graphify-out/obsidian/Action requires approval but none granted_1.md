@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
+source_file: ".agents/skills/i-browser/SKILL.md"
 type: "document"
-community: "AgentShroud v0.7.0 Blue Team Security Audit Repo"
+community: "10. Troubleshooting"
 location: "L286"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Blue_Team_Security_Audit_Repo
+  - community/10_Troubleshooting
 ---
 
 # "Action requires approval but none granted"
 
 ## Connections
-- [[Troubleshooting_7]] - `contains` [EXTRACTED]
+- [[10. Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Blue_Team_Security_Audit_Repo
+#graphify/document #graphify/EXTRACTED #community/10_Troubleshooting

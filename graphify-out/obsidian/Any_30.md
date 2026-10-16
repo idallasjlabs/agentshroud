@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/agent_cve_registry.py"
+source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "AgentRegistry"
-location: "L18530"
+community: "ContainerEngine"
+location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/ContainerEngine
 ---
 
 # Any
 
 ## Connections
-- [[get_agent_cve_summary()]] - `references` [EXTRACTED]
+- [[dot-inspect()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/ContainerEngine

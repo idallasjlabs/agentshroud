@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "Hermes — Reference Verifier"
+community: "A2AGovernanceProxy._process"
 location: "242"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Hermes__Reference_Verifier
+  - community/A2AGovernanceProxy_process
 ---
 
 # A2AGovernanceProxy._process
@@ -17,4 +17,4 @@ tags:
 - [[A2AGovernanceProxy.process_inbound]] - `calls` [EXTRACTED]
 - [[A2AGovernanceProxy.process_outbound]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Hermes__Reference_Verifier
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy_process

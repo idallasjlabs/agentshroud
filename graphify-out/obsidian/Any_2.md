@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "A2APeer"
-location: "L369"
+community: "AlertDispatcher"
+location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APeer
+  - community/AlertDispatcher
 ---
 
 # Any
 
 ## Connections
-- [[._append_audit_event()]] - `references` [EXTRACTED]
-- [[.broadcast()_1]] - `references` [EXTRACTED]
+- [[get_sanitizer_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APeer
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

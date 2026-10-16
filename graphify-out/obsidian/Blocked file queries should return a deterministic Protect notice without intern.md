@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "TelegramAPIProxy"
 location: "L2434"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/TelegramAPIProxy
 ---
 
 # Blocked file queries should return a deterministic Protect notice without intern
 
 ## Connections
-- [[.test_collaborator_direct_file_query_returns_protect_file_notice()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_collaborator_direct_file_query_returns_protect_file_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

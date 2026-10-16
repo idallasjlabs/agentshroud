@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/triage-cve-mitigations.py"
+source_file: "gateway/security/egress_retry.py"
 type: "code"
-community: "EncryptedStore"
-location: "L739"
+community: "egress_retry.py"
+location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/egress_retrypy
 ---
 
 # Any
 
 ## Connections
-- [[summarize()]] - `references` [EXTRACTED]
-- [[triage_entry()]] - `references` [EXTRACTED]
+- [[retry_request()]] - `references` [EXTRACTED]
+- [[retry_request_sync()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EncryptedStore
+#graphify/code #graphify/EXTRACTED #community/egress_retrypy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "test_http_proxy.py"
+community: "test_egress_filter.py"
 location: "L543"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_http_proxypy
+  - community/test_egress_filterpy
 ---
 
 # An expired timed approval should be evicted and the domain denied.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_grant_timed_approval_expired_falls_back_to_deny()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_http_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/test_egress_filterpy

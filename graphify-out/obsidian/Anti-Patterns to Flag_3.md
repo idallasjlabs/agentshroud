@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tdd/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
 type: "document"
-community: "AuditEvent"
-location: "L34"
+community: "Skill: UX Expert (UX)"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditEvent
+  - community/Skill_UX_Expert_UX
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
+- [[Skill UX Expert (UX)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditEvent
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

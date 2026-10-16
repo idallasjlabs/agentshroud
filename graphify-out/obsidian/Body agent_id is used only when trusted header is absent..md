@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "rationale"
-community: "Safe Refactor Specialist"
+community: "TestMCPProxyEndpoint"
 location: "L160"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Safe_Refactor_Specialist
+  - community/TestMCPProxyEndpoint
 ---
 
 # Body agent_id is used only when trusted header is absent.
 
 ## Connections
-- [[.test_body_agent_id_used_when_header_missing()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_body_agent_id_used_when_header_missing()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Safe_Refactor_Specialist
+#graphify/rationale #graphify/EXTRACTED #community/TestMCPProxyEndpoint

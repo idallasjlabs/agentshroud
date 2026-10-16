@@ -1,39 +1,39 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "hermes/skills/i-bs/README.md"
+community: "A2AGovernanceProxy"
 location: "L168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/A2AGovernanceProxy
 ---
 
 # A2AGovernanceProxy
 
 ## Connections
-- [[.__init__()_49]] - `method` [EXTRACTED]
-- [[._check_message_size()]] - `method` [EXTRACTED]
-- [[._check_peer()]] - `method` [EXTRACTED]
-- [[._check_rate_limit()]] - `method` [EXTRACTED]
-- [[._check_task_concurrency()]] - `method` [EXTRACTED]
-- [[._finalize()]] - `method` [EXTRACTED]
-- [[._process()]] - `method` [EXTRACTED]
-- [[._sanitize_message()]] - `method` [EXTRACTED]
-- [[.complete_task()]] - `method` [EXTRACTED]
-- [[.get_events()_1]] - `method` [EXTRACTED]
-- [[.get_peer()]] - `method` [EXTRACTED]
-- [[.get_summary()]] - `method` [EXTRACTED]
-- [[.process_inbound()_1]] - `method` [EXTRACTED]
-- [[.process_outbound()_1]] - `method` [EXTRACTED]
-- [[.register_peer()]] - `method` [EXTRACTED]
-- [[.test_complete_task_frees_slot()]] - `calls` [EXTRACTED]
-- [[.test_disabled_allows_all()]] - `calls` [EXTRACTED]
-- [[.test_oversized_denied()]] - `calls` [EXTRACTED]
-- [[.test_rate_limit_exceeded()]] - `calls` [EXTRACTED]
-- [[.test_task_limit_exceeded()]] - `calls` [EXTRACTED]
-- [[.unregister_peer()]] - `method` [EXTRACTED]
-- [[.update_peer_trust()]] - `method` [EXTRACTED]
+- [[dot-__init__()_141]] - `method` [EXTRACTED]
+- [[dot-_check_message_size()]] - `method` [EXTRACTED]
+- [[dot-_check_peer()]] - `method` [EXTRACTED]
+- [[dot-_check_rate_limit()]] - `method` [EXTRACTED]
+- [[dot-_check_task_concurrency()]] - `method` [EXTRACTED]
+- [[dot-_finalize()]] - `method` [EXTRACTED]
+- [[dot-_process()]] - `method` [EXTRACTED]
+- [[dot-_sanitize_message()]] - `method` [EXTRACTED]
+- [[dot-complete_task()]] - `method` [EXTRACTED]
+- [[dot-get_events()_2]] - `method` [EXTRACTED]
+- [[dot-get_peer()]] - `method` [EXTRACTED]
+- [[dot-get_summary()]] - `method` [EXTRACTED]
+- [[dot-process_inbound()_5]] - `method` [EXTRACTED]
+- [[dot-process_outbound()_6]] - `method` [EXTRACTED]
+- [[dot-register_peer()_1]] - `method` [EXTRACTED]
+- [[dot-test_complete_task_frees_slot()]] - `calls` [EXTRACTED]
+- [[dot-test_disabled_allows_all()]] - `calls` [EXTRACTED]
+- [[dot-test_oversized_denied()]] - `calls` [EXTRACTED]
+- [[dot-test_rate_limit_exceeded()]] - `calls` [EXTRACTED]
+- [[dot-test_task_limit_exceeded()]] - `calls` [EXTRACTED]
+- [[dot-unregister_peer()]] - `method` [EXTRACTED]
+- [[dot-update_peer_trust()]] - `method` [EXTRACTED]
 - [[A2ADecision]] - `shares_data_with` [EXTRACTED]
 - [[A2AGovernanceConfig]] - `shares_data_with` [EXTRACTED]
 - [[A2AGovernanceEvent]] - `calls` [EXTRACTED]
@@ -47,13 +47,13 @@ tags:
 - [[TestOutboundProcessing]] - `uses` [INFERRED]
 - [[TestPIISanitization]] - `uses` [INFERRED]
 - [[TestPeerManagement]] - `uses` [INFERRED]
-- [[TestRateLimiting]] - `uses` [INFERRED]
+- [[TestRateLimiting_2]] - `uses` [INFERRED]
 - [[TestReporting]] - `uses` [INFERRED]
 - [[TestTaskConcurrency]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `semantically_similar_to` [INFERRED]
 - [[a2a_governance.py]] - `contains` [EXTRACTED]
 - [[monitor_proxy()]] - `calls` [EXTRACTED]
-- [[proxy()]] - `calls` [EXTRACTED]
+- [[proxy()_2]] - `calls` [EXTRACTED]
 - [[test_a2a_governance.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

@@ -1,25 +1,17 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "main.rs"
-location: "L58"
+community: "GitGuard"
+location: "L439"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/mainrs
+  - graphify/EXTRACTED
+  - community/GitGuard
 ---
 
 # Any
 
 ## Connections
-- [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult]] - `uses` [INFERRED]
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller]] - `uses` [INFERRED]
-- [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
-- [[_log_audit()]] - `references` [EXTRACTED]
-- [[auth_ws_token()]] - `references` [EXTRACTED]
+- [[dot-get_findings_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/GitGuard

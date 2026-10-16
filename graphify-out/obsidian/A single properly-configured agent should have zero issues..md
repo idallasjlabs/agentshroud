@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_agent_isolation.py"
 type: "rationale"
-community: "test_mfa_guard.py"
+community: "AgentRegistry"
 location: "L174"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/AgentRegistry
 ---
 
 # A single properly-configured agent should have zero issues.
 
 ## Connections
-- [[.test_single_agent_fully_secure()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_single_agent_fully_secure()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry

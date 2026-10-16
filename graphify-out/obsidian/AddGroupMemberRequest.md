@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "main.rs"
+community: "soc/router.py"
 location: "L1281"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/mainrs
+  - community/soc/routerpy
 ---
 
 # AddGroupMemberRequest
 
 ## Connections
 - [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult]] - `uses` [INFERRED]
+- [[AuditResult_1]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller]] - `uses` [INFERRED]
+- [[SCLCaller_1]] - `uses` [INFERRED]
 - [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface]] - `uses` [INFERRED]
+- [[SCLInterface_1]] - `uses` [INFERRED]
 - [[ServiceManager]] - `uses` [INFERRED]
-- [[add_group_member()_1]] - `references` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[add_group_member()]] - `references` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/mainrs
+#graphify/code #graphify/INFERRED #community/soc/routerpy

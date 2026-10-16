@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/legal/PRIOR-USE.md"
 type: "rationale"
-community: "Message Composition with MML (MIME Meta Language"
+community: "AgentShroud™ — Trademark Prior Use Record"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Message_Composition_with_MML_MIME_Meta_Language
+  - community/AgentShroud__Trademark_Prior_Use_Record
 ---
 
 # AgentShroud Mission Statement (Timestamped)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[PRIOR-USE]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Message_Composition_with_MML_MIME_Meta_Language
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record

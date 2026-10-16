@@ -1,11 +1,11 @@
 ---
 source_file: "examples/egress-config.yml"
 type: "document"
-community: "Voice Gateway Service (STT/TTS WebSocket Bridge "
+community: "Default Monitor-Mode Egress Rationale"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Service_STT/TTS_WebSocket_Bridge_
+  - community/Default_Monitor-Mode_Egress_Rationale
 ---
 
 # AgentShroud Egress Control Configuration
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Default Monitor-Mode Egress Rationale]] - `rationale_for` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Voice_Gateway_Service_STT/TTS_WebSocket_Bridge_
+#graphify/document #graphify/EXTRACTED #community/Default_Monitor-Mode_Egress_Rationale

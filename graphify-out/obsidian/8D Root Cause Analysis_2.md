@@ -1,20 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-eightd/README.md"
+source_file: "docker/config/hermes/skills/i-eightd/README.md"
 type: "document"
-community: "1. Accomplishments This Phase"
+community: "hermes/skills/i-bs/README.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1_Accomplishments_This_Phase
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # 8D Root Cause Analysis
 
 ## Connections
-- [[Purpose_84]] - `contains` [EXTRACTED]
-- [[README_89]] - `contains` [EXTRACTED]
-- [[Related Skills_90]] - `contains` [EXTRACTED]
-- [[Usage_93]] - `contains` [EXTRACTED]
+- [[Purpose_88]] - `contains` [EXTRACTED]
+- [[Related Skills_69]] - `contains` [EXTRACTED]
+- [[Usage_80]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[hermesskillsi-eightdREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1_Accomplishments_This_Phase
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

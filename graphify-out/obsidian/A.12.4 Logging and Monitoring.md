@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "test_block_credentials.py"
+community: "AgentShroud Audit Specification"
 location: "L512"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_block_credentialspy
+  - community/AgentShroud_Audit_Specification
 ---
 
 # A.12.4 Logging and Monitoring
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ISO 27001 Control Objectives]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_block_credentialspy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification

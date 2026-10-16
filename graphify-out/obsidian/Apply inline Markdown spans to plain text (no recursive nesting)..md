@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/render_md_email.py"
 type: "rationale"
-community: "AgentShroud v0.8.0 — Blue Team Security Assessme"
+community: "competitive-report-*.md dated reports"
 location: "L58"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_v080__Blue_Team_Security_Assessme
+  - community/competitive-report-md_dated_reports
 ---
 
 # Apply inline Markdown spans to plain text (no recursive nesting).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_inline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_v080__Blue_Team_Security_Assessme
+#graphify/rationale #graphify/EXTRACTED #community/competitive-report-md_dated_reports

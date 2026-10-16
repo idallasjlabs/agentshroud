@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "check_upstream_cves()"
+community: "AgentShroud™ — Project Knowledge Base"
 location: "L143"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/check_upstream_cves
+  - community/AgentShroud__Project_Knowledge_Base
 ---
 
 # About the Creator
@@ -18,4 +18,4 @@ tags:
 - [[The Thesis]] - `contains` [EXTRACTED]
 - [[What He Builds]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/check_upstream_cves
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Project_Knowledge_Base

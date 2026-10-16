@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/07-team-planning.md"
 type: "document"
-community: ".test_gives_up_and_marks_sent_after_max_retries("
+community: "02-infrastructure.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_gives_up_and_marks_sent_after_max_retries
+  - community/02-infrastructuremd
 ---
 
 # AgentShroud — Team, Planning & Dependency Diagrams
@@ -17,4 +17,4 @@ tags:
 - [[22. Dependency Graph — Component Dependencies]] - `contains` [EXTRACTED]
 - [[23. Roadmap  Timeline — Development Phases]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_gives_up_and_marks_sent_after_max_retries
+#graphify/document #graphify/EXTRACTED #community/02-infrastructuremd

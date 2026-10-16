@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "ConsentFramework"
+community: "EgressFilterConfig"
 location: "L673"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/EgressFilterConfig
 ---
 
 # All four domains must be in EgressFilterConfig's default allowlist.
 
 ## Connections
-- [[.test_domains_in_default_allowlist()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_domains_in_default_allowlist()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ConsentFramework
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

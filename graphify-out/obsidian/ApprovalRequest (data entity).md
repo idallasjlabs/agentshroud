@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "concept"
-community: "TestAppleContainerEngine"
+community: "ADR-008: Progressive Trust Level System"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/TestAppleContainerEngine
+  - community/ADR-008_Progressive_Trust_Level_System
 ---
 
 # ApprovalRequest (data entity)
@@ -15,4 +15,4 @@ tags:
 - [[TrustLevel (data entity)]] - `conceptually_related_to` [INFERRED]
 - [[approval_requests SQLite table]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/TestAppleContainerEngine
+#graphify/concept #graphify/INFERRED #community/ADR-008_Progressive_Trust_Level_System

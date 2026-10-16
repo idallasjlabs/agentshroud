@@ -1,12 +1,12 @@
 ---
 source_file: "reports/upgrade-2026-09-14.md"
 type: "document"
-community: "_score_compliance_auditing()"
+community: "AgentShroud Sunday Upgrade — 2026-09-14 (dev account, agentshroud-bot@marvin)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_score_compliance_auditing
+  - community/AgentShroud_Sunday_Upgrade__2026-09-14_dev_account_agentshroud-botmarvin
 ---
 
 # AgentShroud Sunday Upgrade — 2026-09-14 (dev account, agentshroud-bot@marvin)
@@ -21,7 +21,7 @@ tags:
 - [[7. Apply  verify — final result PASS]] - `contains` [EXTRACTED]
 - [[8. Post-rebuild CVE rescan]] - `contains` [EXTRACTED]
 - [[9. Remaining work]] - `contains` [EXTRACTED]
-- [[Summary line_2]] - `contains` [EXTRACTED]
+- [[Summary line_1]] - `contains` [EXTRACTED]
 - [[upgrade-2026-09-14]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_score_compliance_auditing
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Sunday_Upgrade__2026-09-14_dev_account_agentshroud-botmarvin

@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "concept"
-community: "🎨 Customize Skill Page (Optional)"
+community: "A2APolicyEngine (gateway/security/a2a_policy.py)"
 location: "L238-242"
 tags:
   - graphify/concept
-  - graphify/INFERRED
-  - community/_Customize_Skill_Page_Optional
+  - graphify/EXTRACTED
+  - community/A2APolicyEngine_gateway/security/a2a_policypy
 ---
 
 # A2AProxy (gateway/proxy/a2a_proxy.py)
@@ -15,4 +15,4 @@ tags:
 - [[A2APolicyEngine (gatewaysecuritya2a_policy.py)]] - `shares_data_with` [INFERRED]
 - [[v1.5.0 A2A Governance]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/_Customize_Skill_Page_Optional
+#graphify/concept #graphify/EXTRACTED #community/A2APolicyEngine_gateway/security/a2a_policypy

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "AgentTarget"
+community: "A2AProxyResult"
 location: "L83"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AgentTarget
+  - community/A2AProxyResult
 ---
 
 # A2AProxyResult
 
 ## Connections
-- [[._audit()]] - `references` [EXTRACTED]
-- [[.process_agent_card_request()]] - `references` [EXTRACTED]
-- [[.process_inbound_request()]] - `references` [EXTRACTED]
+- [[dot-_audit()_1]] - `references` [EXTRACTED]
+- [[dot-process_agent_card_request()]] - `references` [EXTRACTED]
+- [[dot-process_inbound_request()]] - `references` [EXTRACTED]
 - [[A2AMethod]] - `uses` [INFERRED]
 - [[A2APolicyEngine_3]] - `uses` [INFERRED]
 - [[A2APolicyEngine_1]] - `uses` [INFERRED]
@@ -23,9 +23,9 @@ tags:
 - [[ViolationType]] - `uses` [INFERRED]
 - [[_Event]] - `uses` [INFERRED]
 - [[_StubAuditStore]] - `uses` [INFERRED]
-- [[_StubForwarder]] - `uses` [INFERRED]
+- [[_StubForwarder_2]] - `uses` [INFERRED]
 - [[a2a_proxy.py]] - `contains` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `imports` [EXTRACTED]
 - [[test_proxy_result_defaults_are_safe()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AgentTarget
+#graphify/code #graphify/INFERRED #community/A2AProxyResult

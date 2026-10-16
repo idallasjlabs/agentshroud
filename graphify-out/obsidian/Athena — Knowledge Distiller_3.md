@@ -1,20 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-athena/README.md"
+source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
 type: "document"
-community: "GitHub Branch Protection — `main`"
-location: "L1"
+community: "Athena — Knowledge Distiller"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Branch_Protection__main
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Athena — Knowledge Distiller
 
 ## Connections
-- [[Purpose_75]] - `contains` [EXTRACTED]
-- [[README_80]] - `contains` [EXTRACTED]
-- [[Related Skills_81]] - `contains` [EXTRACTED]
-- [[Usage_83]] - `contains` [EXTRACTED]
+- [[Input Requirements_21]] - `contains` [EXTRACTED]
+- [[Output Format_36]] - `contains` [EXTRACTED]
+- [[Persona_15]] - `contains` [EXTRACTED]
+- [[Role_91]] - `contains` [EXTRACTED]
+- [[hermesskillsi-athenaSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Branch_Protection__main
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

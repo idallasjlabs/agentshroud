@@ -1,19 +1,23 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: "AgentShroud v0.7.0 Enforcement Audit Results"
-location: "L153"
+community: "ServiceManager"
+location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Enforcement_Audit_Results
+  - community/ServiceManager
 ---
 
 # Any
 
 ## Connections
-- [[.to_dict()_17]] - `references` [EXTRACTED]
-- [[load_registry()]] - `references` [EXTRACTED]
-- [[plan_remediation()]] - `references` [EXTRACTED]
+- [[dot-__init__()_178]] - `references` [EXTRACTED]
+- [[dot-_describe_service()]] - `references` [EXTRACTED]
+- [[dot-_get_engine()]] - `references` [EXTRACTED]
+- [[HealthStatus_1]] - `uses` [INFERRED]
+- [[ServiceDescriptor_1]] - `uses` [INFERRED]
+- [[ServiceStatus_1]] - `uses` [INFERRED]
+- [[_inspect_via_socket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

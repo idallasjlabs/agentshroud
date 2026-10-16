@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/SKILL.md"
+source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Telegram & Gmail Integration Guide"
-location: "L286"
+community: "SecureBrowser - Enterprise Secure Browser Automation"
+location: "L322"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram__Gmail_Integration_Guide
+  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
 ---
 
 # "Action requires approval but none granted"
 
 ## Connections
-- [[10. Troubleshooting]] - `contains` [EXTRACTED]
+- [[Troubleshooting_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram__Gmail_Integration_Guide
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automation

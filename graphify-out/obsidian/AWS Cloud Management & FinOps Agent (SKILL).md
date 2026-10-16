@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "document"
-community: "troubleshooting.md"
+community: "CI/CD Pipeline Advisor (SKILL)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/troubleshootingmd
+  - community/CI/CD_Pipeline_Advisor_SKILL
 ---
 
 # AWS Cloud Management & FinOps Agent (SKILL)
@@ -17,4 +17,4 @@ tags:
 - [[GSDE&G Team (Global Services Digital Enablement & Governance)]] - `references` [EXTRACTED]
 - [[Production-Specific Review Checklist (blast radius, rollback, Athena cost guard)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/troubleshootingmd
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL

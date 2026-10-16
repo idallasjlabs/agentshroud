@@ -1,11 +1,11 @@
 ---
 source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "concept"
-community: "`docs/planning/` — Index"
+community: "AGENTSHROUD standard character mark"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/planning/__Index
+  - community/AGENTSHROUD_standard_character_mark
 ---
 
 # AGENTSHROUD standard character mark
@@ -15,4 +15,4 @@ tags:
 - [[Class 9 — Downloadable Computer Software]] - `references` [EXTRACTED]
 - [[Filing Basis (Section 1(a) Use in Commerce  1(b) Intent to Use)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/planning/__Index
+#graphify/concept #graphify/EXTRACTED #community/AGENTSHROUD_standard_character_mark

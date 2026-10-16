@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "rationale"
-community: "test_e2e_proxy.py"
+community: "MCPPolicyEngine"
 location: "L123"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/MCPPolicyEngine
 ---
 
 # A config with no mcp_proxy AND no mcp_policy still yields a fail-closed
 
 ## Connections
-- [[.test_no_mcp_section_still_deny_by_default()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_no_mcp_section_still_deny_by_default()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine

@@ -1,13 +1,13 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "setup-https-proxy patchUndiciForProxy()"
+community: "AI Agent"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/setup-https-proxy_patchUndiciForProxy
+  - community/AI_Agent
 ---
 
 # AI Agent
 
-#graphify/concept #graphify/EXTRACTED #community/setup-https-proxy_patchUndiciForProxy
+#graphify/concept #graphify/EXTRACTED #community/AI_Agent

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tdd/SKILL.md"
+source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "Workflow: Survey → Draft → Inject → Confirm"
-location: "L34"
+community: ".agents/skills/i-tw/SKILL.md"
+location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workflow_Survey__Draft__Inject__Confirm
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
+- [[Skill Technical Writer (TW)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

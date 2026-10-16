@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "rationale"
-community: "OutboundInfoFilter"
+community: "SlackAPIProxy"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OutboundInfoFilter
+  - community/SlackAPIProxy
 ---
 
 # Bodies with an unrecognized Content-Type are not parsed at all.
 
 ## Connections
-- [[.test_unknown_content_type_ignored()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_unknown_content_type_ignored()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OutboundInfoFilter
+#graphify/rationale #graphify/EXTRACTED #community/SlackAPIProxy

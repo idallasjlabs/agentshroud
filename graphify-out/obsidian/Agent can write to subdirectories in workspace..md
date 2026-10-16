@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "Enum"
+community: "MiddlewareManager"
 location: "L202"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enum
+  - community/MiddlewareManager
 ---
 
 # Agent can write to subdirectories in workspace.
 
 ## Connections
-- [[.test_workspace_subdirectory_write_allowed()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_workspace_subdirectory_write_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enum
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

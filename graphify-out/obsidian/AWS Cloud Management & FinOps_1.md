@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/README.md"
+source_file: "docker/config/openclaw/skills/i-aws/README.md"
 type: "document"
-community: "Assess severity"
+community: "AWS Cloud Management & FinOps"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Assess_severity
+  - community/AWS_Cloud_Management__FinOps
 ---
 
 # AWS Cloud Management & FinOps
 
 ## Connections
-- [[Purpose_40]] - `contains` [EXTRACTED]
-- [[README_45]] - `contains` [EXTRACTED]
-- [[README_47]] - `contains` [EXTRACTED]
-- [[Related Skills_43]] - `contains` [EXTRACTED]
-- [[Usage_45]] - `contains` [EXTRACTED]
+- [[Purpose_33]] - `contains` [EXTRACTED]
+- [[Related Skills_26]] - `contains` [EXTRACTED]
+- [[Usage_29]] - `contains` [EXTRACTED]
+- [[openclawskillsi-awsREADME]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Assess_severity
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps

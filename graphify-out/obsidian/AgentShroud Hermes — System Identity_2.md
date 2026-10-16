@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/agents/hermes-soul.md"
+source_file: "docker/config/hermes/SOUL.md"
 type: "document"
-community: "Presidio Analyzer"
+community: "hermes/SOUL.md"
 location: "L2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Presidio_Analyzer
+  - community/hermes/SOULmd
 ---
 
 # AgentShroud Hermes — System Identity
@@ -18,6 +18,6 @@ tags:
 - [[Remote Hosts (SSH via gateway)_2]] - `contains` [EXTRACTED]
 - [[Trademark Notice_2]] - `contains` [EXTRACTED]
 - [[Your Role_2]] - `contains` [EXTRACTED]
-- [[hermes-soul_1]] - `contains` [EXTRACTED]
+- [[hermesSOUL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Presidio_Analyzer
+#graphify/document #graphify/EXTRACTED #community/hermes/SOULmd

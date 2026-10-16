@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "document"
-community: "Blue Team Security Assessment — AgentShroud v0.8"
+community: "AgentShroud Project Terminology"
 location: "L2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Blue_Team_Security_Assessment__AgentShroud_v08
+  - community/AgentShroud_Project_Terminology
 ---
 
 # AgentShroud Project Terminology
@@ -18,7 +18,7 @@ tags:
 - [[D]] - `contains` [EXTRACTED]
 - [[E]] - `contains` [EXTRACTED]
 - [[F]] - `contains` [EXTRACTED]
-- [[Glossary]] - `contains` [EXTRACTED]
+- [[Glossary_1]] - `contains` [EXTRACTED]
 - [[H]] - `contains` [EXTRACTED]
 - [[I]] - `contains` [EXTRACTED]
 - [[K]] - `contains` [EXTRACTED]
@@ -28,10 +28,10 @@ tags:
 - [[P]] - `contains` [EXTRACTED]
 - [[R]] - `contains` [EXTRACTED]
 - [[S]] - `contains` [EXTRACTED]
-- [[T_1]] - `contains` [EXTRACTED]
+- [[T]] - `contains` [EXTRACTED]
 - [[U]] - `contains` [EXTRACTED]
 - [[V]] - `contains` [EXTRACTED]
 - [[W]] - `contains` [EXTRACTED]
 - [[Z]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Blue_Team_Security_Assessment__AgentShroud_v08
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Project_Terminology

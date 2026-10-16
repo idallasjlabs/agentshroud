@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Scorecard Data Integrity Tests (no stub inflatio"
+community: "TelegramAPIProxy"
 location: "L3172"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Scorecard_Data_Integrity_Tests_no_stub_inflatio
+  - community/TelegramAPIProxy
 ---
 
 # Backslash-containing URLs should be rejected to avoid parser confusion.
 
 ## Connections
-- [[.test_raw_web_fetch_json_url_with_backslashes_does_not_queue_approval()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_raw_web_fetch_json_url_with_backslashes_does_not_queue_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Scorecard_Data_Integrity_Tests_no_stub_inflatio
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

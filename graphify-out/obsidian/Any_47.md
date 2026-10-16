@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/security/trivy_report.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L200"
+community: "parse_trivy_output"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/parse_trivy_output
 ---
 
 # Any
 
 ## Connections
-- [[.enforce()_1]] - `references` [EXTRACTED]
-- [[.evaluate()_1]] - `references` [EXTRACTED]
-- [[.from_dict()_7]] - `references` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[generate_summary()_3]] - `references` [EXTRACTED]
+- [[parse_trivy_output()]] - `references` [EXTRACTED]
+- [[run_trivy_scan()_1]] - `references` [EXTRACTED]
+- [[save_report()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/parse_trivy_output

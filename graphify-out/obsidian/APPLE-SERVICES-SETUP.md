@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "TestBenchmarkRegression"
+community: "iMessage Integration Fix - Using imsg + imessage-exporter"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/TestBenchmarkRegression
+  - community/iMessage_Integration_Fix_-_Using_imsg__imessage-exporter
 ---
 
 # APPLE-SERVICES-SETUP.md
@@ -17,4 +17,4 @@ tags:
 - [[ICLOUD-SERVICES-SETUP]] - `semantically_similar_to` [INFERRED]
 - [[IMESSAGE_FIX]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/TestBenchmarkRegression
+#graphify/document #graphify/INFERRED #community/iMessage_Integration_Fix_-_Using_imsg__imessage-exporter

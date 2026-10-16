@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "EgressPolicy"
+community: "DataLedger"
 location: "L219"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressPolicy
+  - community/DataLedger
 ---
 
 # 50 concurrent write operations should all succeed.
 
 ## Connections
-- [[.test_50_concurrent_writes()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_50_concurrent_writes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressPolicy
+#graphify/rationale #graphify/EXTRACTED #community/DataLedger

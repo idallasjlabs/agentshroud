@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/container-security-audit-v0.8.0.md"
+source_file: "docs/planning/v0.8/SECURITY_PLAN.md"
 type: "document"
-community: "HeuristicClassifier"
-location: "L10"
+community: "AgentShroud Security Hardening Plan"
+location: "L356"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/AgentShroud_Security_Hardening_Plan
 ---
 
 # Architecture
 
 ## Connections
-- [[Container Security Audit — AgentShroud v0.8.0]] - `contains` [EXTRACTED]
+- [[Current State (2026-02-24)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Hardening_Plan

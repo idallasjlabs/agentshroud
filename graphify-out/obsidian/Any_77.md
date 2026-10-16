@@ -1,27 +1,17 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: "gateway/security/canary.py"
 type: "code"
-community: "PromptProtection"
-location: "L122"
+community: "AgentRegistry"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptProtection
+  - community/AgentRegistry
 ---
 
 # Any
 
 ## Connections
-- [[_advisory_patched_versions()]] - `references` [EXTRACTED]
-- [[_advisory_text_tokens()]] - `references` [EXTRACTED]
-- [[build_id_plan()]] - `references` [EXTRACTED]
-- [[compute_stats()]] - `references` [EXTRACTED]
-- [[fetch_advisories()]] - `references` [EXTRACTED]
-- [[gather_advisories()]] - `references` [EXTRACTED]
-- [[load_registry()_1]] - `references` [EXTRACTED]
-- [[load_snapshot()]] - `references` [EXTRACTED]
-- [[match_entry()]] - `references` [EXTRACTED]
-- [[render_manual_review()]] - `references` [EXTRACTED]
-- [[rewrite_registry_text()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_14]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptProtection
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

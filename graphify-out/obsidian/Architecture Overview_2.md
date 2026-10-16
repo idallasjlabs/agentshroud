@@ -1,22 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "PipelineAction"
-location: "L1"
+community: "OpenClaw Setup Guide - agentshroud.ai Bot"
+location: "L279"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
 ---
 
-# Architecture Overview.md
+# Architecture Overview
 
 ## Connections
-- [[Architecture Overview_3]] - `contains` [EXTRACTED]
-- [[Data Flow]] - `references` [EXTRACTED]
-- [[Home]] - `references` [EXTRACTED]
-- [[Startup Sequence]] - `references` [EXTRACTED]
-- [[System Overview]] - `references` [EXTRACTED]
-- [[main.py_3]] - `references` [EXTRACTED]
+- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PipelineAction
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot

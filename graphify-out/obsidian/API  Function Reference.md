@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-tw/SKILL.md"
+source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
 type: "document"
-community: "TestCollaboratorPersistence"
+community: "hermes/skills/i-cr/SKILL.md"
 location: "L153"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestCollaboratorPersistence
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # API / Function Reference
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[If not → escalate to field team via ops-alerts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestCollaboratorPersistence
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

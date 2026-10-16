@@ -1,30 +1,25 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "falco_monitor.py"
-location: "L88"
+community: "Enum"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/falco_monitorpy
+  - community/Enum
 ---
 
 # Any
 
 ## Connections
-- [[._process_inbound_core()]] - `references` [EXTRACTED]
-- [[._process_outbound_core()]] - `references` [EXTRACTED]
-- [[.append()]] - `references` [EXTRACTED]
-- [[.append_block()]] - `references` [EXTRACTED]
-- [[.append_owner_bypass()]] - `references` [EXTRACTED]
-- [[.get_stats()_6]] - `references` [EXTRACTED]
-- [[.process_inbound()]] - `references` [EXTRACTED]
-- [[.process_outbound()]] - `references` [EXTRACTED]
-- [[.to_dict()_1]] - `references` [EXTRACTED]
-- [[BotIncidentSeverity]] - `uses` [INFERRED]
-- [[FilterResult]] - `uses` [INFERRED]
-- [[InjectionAction]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[ViolationType]] - `uses` [INFERRED]
+- [[SecurityEvent_1]] - `uses` [INFERRED]
+- [[Severity_2]] - `uses` [INFERRED]
+- [[_map_severity()]] - `references` [EXTRACTED]
+- [[collect_recent_events()]] - `references` [EXTRACTED]
+- [[from_anomaly_alert()]] - `references` [EXTRACTED]
+- [[from_audit_chain_entry()]] - `references` [EXTRACTED]
+- [[from_dict()]] - `references` [EXTRACTED]
+- [[from_egress_attempt()]] - `references` [EXTRACTED]
+- [[from_pipeline_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/falco_monitorpy
+#graphify/code #graphify/EXTRACTED #community/Enum

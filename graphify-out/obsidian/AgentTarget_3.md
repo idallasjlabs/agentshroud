@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
 type: "document"
-community: "Function Details"
+community: "models.py"
 location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/modelspy
 ---
 
 # AgentTarget
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Model Details]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/modelspy

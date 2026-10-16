@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tw/SKILL.md"
+source_file: ".agents/skills/i-mm/SKILL.md"
 type: "document"
-community: "TestCollaboratorPersistence"
-location: "L40"
+community: "Skill: Mindmap Architect (MM)"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestCollaboratorPersistence
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Technical Writer (TW)]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestCollaboratorPersistence
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

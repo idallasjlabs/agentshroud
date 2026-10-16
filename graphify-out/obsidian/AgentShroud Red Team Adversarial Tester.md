@@ -1,24 +1,24 @@
 ---
 source_file: ".agents/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "Skill: Project Management (PM)"
+community: "AgentShroud Red Team Adversarial Tester"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM
+  - community/AgentShroud_Red_Team_Adversarial_Tester
 ---
 
 # AgentShroud Red Team Adversarial Tester
 
 ## Connections
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-sec-offenseSKILL]] - `contains` [EXTRACTED]
 - [[Adversary Model]] - `contains` [EXTRACTED]
 - [[Attack Phases]] - `contains` [EXTRACTED]
-- [[Critical Rules_2]] - `contains` [EXTRACTED]
+- [[Critical Rules_4]] - `contains` [EXTRACTED]
 - [[Infrastructure]] - `contains` [EXTRACTED]
-- [[Output_1]] - `contains` [EXTRACTED]
-- [[SKILL_15]] - `contains` [EXTRACTED]
-- [[SKILL_52]] - `contains` [EXTRACTED]
+- [[Output_3]] - `contains` [EXTRACTED]
 - [[Writing Exploit Tests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester

@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "WebhookReceiver"
-location: "L123"
+community: "lifespan.py"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - community/lifespanpy
 ---
 
 # Any
 
 ## Connections
-- [[.inspect()_2]] - `references` [EXTRACTED]
+- [[dot-from_dict()_4]] - `references` [EXTRACTED]
+- [[dot-get_integrity_status()]] - `references` [EXTRACTED]
+- [[dot-get_recent_alerts()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_4]] - `references` [EXTRACTED]
+- [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

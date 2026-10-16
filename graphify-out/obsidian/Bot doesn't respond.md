@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/TELEGRAM_SETUP.md"
 type: "document"
-community: "asb"
+community: "Telegram Bot Setup for OpenClaw"
 location: "L117"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/asb
+  - community/Telegram_Bot_Setup_for_OpenClaw
 ---
 
 # Bot doesn't respond
 
 ## Connections
-- [[Troubleshooting_32]] - `contains` [EXTRACTED]
+- [[Troubleshooting_34]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/asb
+#graphify/document #graphify/EXTRACTED #community/Telegram_Bot_Setup_for_OpenClaw

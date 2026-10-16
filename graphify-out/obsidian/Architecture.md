@@ -1,19 +1,17 @@
 ---
-source_file: "README.md"
+source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "Release Notes - AgentShroud v0.9.0"
-location: "L100"
+community: "7. Pi-hole DNS Security Layer (Built-In)"
+location: "L218"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Release_Notes_-_AgentShroud_v090
+  - community/7_Pi-hole_DNS_Security_Layer_Built-In
 ---
 
 # Architecture
 
 ## Connections
-- [[75 Security Modules]] - `shares_data_with` [EXTRACTED]
-- [[AgentShroud™ README]] - `contains` [EXTRACTED]
-- [[README_37]] - `contains` [EXTRACTED]
+- [[7. Pi-hole DNS Security Layer (Built-In)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Release_Notes_-_AgentShroud_v090
+#graphify/document #graphify/EXTRACTED #community/7_Pi-hole_DNS_Security_Layer_Built-In

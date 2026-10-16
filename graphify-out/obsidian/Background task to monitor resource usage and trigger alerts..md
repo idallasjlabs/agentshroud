@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "rbac_config.py"
+community: "ResourceGuard"
 location: "L137"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/rbac_configpy
+  - community/ResourceGuard
 ---
 
 # Background task to monitor resource usage and trigger alerts.
 
 ## Connections
-- [[._monitor_resources()]] - `rationale_for` [EXTRACTED]
+- [[dot-_monitor_resources()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/rbac_configpy
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

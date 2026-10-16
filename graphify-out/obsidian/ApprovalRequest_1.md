@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/approval_queue/group_router.py"
-type: "code"
-community: "TestEgressApprovalQueue"
-location: "L63"
+source_file: "docs/data/data-dictionary.md"
+type: "document"
+community: "AgentShroud Data Dictionary"
+location: "L57"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/AgentShroud_Data_Dictionary
 ---
 
 # ApprovalRequest
 
 ## Connections
-- [[._build_group_reply_text()]] - `references` [EXTRACTED]
-- [[._build_owner_dm_text()]] - `references` [EXTRACTED]
-- [[.route_approval()]] - `references` [EXTRACTED]
-- [[ApprovalRequest_3]] - `uses` [INFERRED]
+- [[Approval Workflows]] - `contains` [EXTRACTED]
+- [[Security Management Entities]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Dictionary

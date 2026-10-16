@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "rationale"
-community: "_call_agent_stream()"
+community: "api.py"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_call_agent_stream
+  - community/apipy
 ---
 
 # An unverified competitor claim submitted for citation checking.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DraftEntry]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_call_agent_stream
+#graphify/rationale #graphify/EXTRACTED #community/apipy

@@ -1,20 +1,20 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Auth Errors.md"
 type: "document"
-community: "test_playback_state.c"
+community: "Error Index.md"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/test_playback_statec
+  - graphify/EXTRACTED
+  - community/Error_Indexmd
 ---
 
 # Auth Errors.md
 
 ## Connections
-- [[Auth Errors_1]] - `contains` [EXTRACTED]
+- [[Auth Errors_2]] - `contains` [EXTRACTED]
 - [[Egress Filter Errors]] - `semantically_similar_to` [INFERRED]
 - [[Error Index]] - `references` [EXTRACTED]
-- [[auth.py_2]] - `references` [INFERRED]
+- [[auth.py_1]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/test_playback_statec
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

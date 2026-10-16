@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "ReportStore"
+community: "EgressApprovalQueue"
 location: "L640"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/EgressApprovalQueue
 ---
 
 # Append an entry to the capped decision audit log (CC-40).
 
 ## Connections
-- [[._append_decision()]] - `rationale_for` [EXTRACTED]
+- [[dot-_append_decision()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ReportStore
+#graphify/rationale #graphify/EXTRACTED #community/EgressApprovalQueue

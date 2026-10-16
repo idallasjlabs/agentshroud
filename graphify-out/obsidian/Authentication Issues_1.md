@@ -1,17 +1,17 @@
 ---
-source_file: ".github/COPILOT_CLI_SETUP.md"
+source_file: ".agents/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "OpenClaw Live Cron Job Index (11 jobs)"
-location: "L383"
+community: "10. Troubleshooting"
+location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Live_Cron_Job_Index_11_jobs
+  - community/10_Troubleshooting
 ---
 
 # Authentication Issues
 
 ## Connections
-- [[Troubleshooting_3]] - `contains` [EXTRACTED]
+- [[10. Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Live_Cron_Job_Index_11_jobs
+#graphify/document #graphify/EXTRACTED #community/10_Troubleshooting

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
 type: "document"
-community: "chatbot/main.py"
+community: "AGENTSHROUD_MODE"
 location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/AGENTSHROUD_MODE
 ---
 
 # Affected Modules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_MODE

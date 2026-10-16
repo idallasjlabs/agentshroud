@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_audit.py"
 type: "rationale"
-community: "brand-guidelines.md"
+community: "MCPAuditTrail"
 location: "L27"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/brand-guidelinesmd
+  - community/MCPAuditTrail
 ---
 
 # A single MCP tool call audit entry.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCPAuditEntry]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/brand-guidelinesmd
+#graphify/rationale #graphify/EXTRACTED #community/MCPAuditTrail

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/QUICK_REFERENCE.md"
 type: "document"
-community: ".from_dict()"
+community: "Quick Reference Commands"
 location: "L117"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/from_dict
+  - community/Quick_Reference_Commands
 ---
 
 # Access Points
@@ -15,4 +15,4 @@ tags:
 - [[Quick Reference Card]] - `contains` [EXTRACTED]
 - [[Quick Reference Commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/from_dict
+#graphify/document #graphify/EXTRACTED #community/Quick_Reference_Commands

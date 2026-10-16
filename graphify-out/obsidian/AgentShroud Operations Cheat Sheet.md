@@ -1,17 +1,16 @@
 ---
 source_file: "CHEATSHEET.md"
 type: "document"
-community: "AgentShroud Docker Configuration"
+community: "AgentShroud Operations Cheat Sheet"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Docker_Configuration
+  - community/AgentShroud_Operations_Cheat_Sheet
 ---
 
 # AgentShroud Operations Cheat Sheet
 
 ## Connections
-- [[AgentShroud Production Docker Compose stack]] - `references` [EXTRACTED]
 - [[CHEATSHEET]] - `contains` [EXTRACTED]
 - [[Colima VM]] - `references` [EXTRACTED]
 - [[Container Basics]] - `contains` [EXTRACTED]
@@ -26,12 +25,12 @@ tags:
 - [[OpenClaw (Bot) Management]] - `contains` [EXTRACTED]
 - [[SOC API]] - `references` [EXTRACTED]
 - [[SOC API — Common Queries]] - `contains` [EXTRACTED]
-- [[Secrets]] - `contains` [EXTRACTED]
+- [[Secrets_1]] - `contains` [EXTRACTED]
 - [[Security Scanners]] - `references` [EXTRACTED]
 - [[Telegram Bot Commands (Owner)]] - `contains` [EXTRACTED]
-- [[Tests_1]] - `contains` [EXTRACTED]
+- [[Tests]] - `contains` [EXTRACTED]
 - [[Upgrades & Rollbacks]] - `contains` [EXTRACTED]
 - [[Web Management UI]] - `contains` [EXTRACTED]
 - [[asb Wrapper Script]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet

@@ -1,18 +1,27 @@
 ---
-source_file: "gateway/ingest_api/routes/forward.py"
+source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "RateLimiter"
-location: "L332"
+community: "AgentTarget"
+location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/AgentTarget
 ---
 
 # AgentTarget
 
 ## Connections
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[_resolve_user_trust_level()]] - `references` [EXTRACTED]
+- [[dot-__init__()_135]] - `calls` [EXTRACTED]
+- [[dot-_build_forward_payload()]] - `references` [EXTRACTED]
+- [[dot-forward_to_agent()]] - `references` [EXTRACTED]
+- [[dot-forward_to_agent_stream()]] - `references` [EXTRACTED]
+- [[dot-health_check()_4]] - `references` [EXTRACTED]
+- [[dot-list_targets()]] - `references` [EXTRACTED]
+- [[dot-register_bots()]] - `calls` [EXTRACTED]
+- [[dot-resolve_target()]] - `references` [EXTRACTED]
+- [[AgentTarget]] - `uses` [INFERRED]
+- [[ForwardRequest_3]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimiter
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

@@ -1,12 +1,12 @@
 ---
-source_file: "reports/upgrade-2026-08-30.md"
+source_file: "reports/upgrade-2026-08-30-20260830-2010.md"
 type: "document"
-community: "graphify reference: extra exports and benchmark"
-location: "L341"
+community: "AgentShroud Weekly Upgrade Report — 2026-08-30"
+location: "L301"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark
+  - community/AgentShroud_Weekly_Upgrade_Report__2026-08-30
 ---
 
 # Appendix: first-pass abort evidence (07:34–08:26 ET, superseded)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Weekly Upgrade Report — 2026-08-30_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade_Report__2026-08-30

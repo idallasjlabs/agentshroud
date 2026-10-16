@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "LLMProxy"
-location: "L439"
+community: "PodmanEngine"
+location: "L159"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/LLMProxy
+  - graphify/INFERRED
+  - community/PodmanEngine
 ---
 
 # Any
 
 ## Connections
-- [[.get_findings_summary()]] - `references` [EXTRACTED]
+- [[dot-inspect()_1]] - `references` [EXTRACTED]
+- [[ContainerEngine]] - `uses` [INFERRED]
+- [[ContainerInfo]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/INFERRED #community/PodmanEngine

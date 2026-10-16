@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-19-incident-response.svg"
 type: "concept"
-community: "render_md_email.py"
+community: "Assess severity"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/render_md_emailpy
+  - community/Assess_severity
 ---
 
 # Assess severity
@@ -17,4 +17,4 @@ tags:
 - [[P3 — Medium (respond within 4 hours; review logs, apply config fix)]] - `calls` [EXTRACTED]
 - [[P4 — Low (resolve in next session; fix branch + PR)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/render_md_emailpy
+#graphify/concept #graphify/EXTRACTED #community/Assess_severity

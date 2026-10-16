@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-capability.md"
 type: "document"
-community: "agent_isolation.py"
+community: "SSH Capability Architecture Document"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agent_isolationpy
+  - community/SSH_Capability_Architecture_Document
 ---
 
 # Auto-Approved Commands
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Request Flow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agent_isolationpy
+#graphify/document #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document

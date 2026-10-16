@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "WebhookReceiver"
+community: "ContainerEngine"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - community/ContainerEngine
 ---
 
 # ABC
 
 ## Connections
-- [[ContainerEngine_2]] - `inherits` [EXTRACTED]
+- [[ContainerEngine]] - `inherits` [EXTRACTED]
 - [[engine.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/code #graphify/EXTRACTED #community/ContainerEngine

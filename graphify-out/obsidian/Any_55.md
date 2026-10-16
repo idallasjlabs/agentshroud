@@ -1,21 +1,23 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L187"
+community: "AgentTarget"
+location: "L152"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/MiddlewareManager
+  - graphify/EXTRACTED
+  - community/AgentTarget
 ---
 
 # Any
 
 ## Connections
-- [[.check_permission()]] - `references` [EXTRACTED]
-- [[.get_user_permissions_summary()]] - `references` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[dot-_build_forward_payload()]] - `references` [EXTRACTED]
+- [[dot-forward_to_agent()]] - `references` [EXTRACTED]
+- [[dot-forward_to_agent_stream()]] - `references` [EXTRACTED]
+- [[dot-health_check()_4]] - `references` [EXTRACTED]
+- [[AgentTarget]] - `uses` [INFERRED]
+- [[ForwardRequest_3]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

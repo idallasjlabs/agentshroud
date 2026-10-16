@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docker_compose.py"
 type: "rationale"
-community: "PodmanEngine"
+community: "TestProductionCompose"
 location: "L134"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PodmanEngine
+  - community/TestProductionCompose
 ---
 
 # All compose files should be valid YAML.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAllComposeFilesValid]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PodmanEngine
+#graphify/rationale #graphify/EXTRACTED #community/TestProductionCompose

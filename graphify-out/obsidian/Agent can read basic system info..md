@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "Enum"
+community: "MiddlewareManager"
 location: "L218"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enum
+  - community/MiddlewareManager
 ---
 
 # Agent can read basic system info.
 
 ## Connections
-- [[.test_system_info_read_allowed()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_system_info_read_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enum
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

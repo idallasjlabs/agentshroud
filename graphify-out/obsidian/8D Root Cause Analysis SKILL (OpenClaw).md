@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
 type: "document"
-community: "TestIsFresh"
+community: "8D Root Cause Analysis SKILL (OpenClaw)"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/TestIsFresh
+  - graphify/AMBIGUOUS
+  - community/8D_Root_Cause_Analysis_SKILL_OpenClaw
 ---
 
 # 8D Root Cause Analysis SKILL (OpenClaw)
@@ -15,4 +15,4 @@ tags:
 - [[Code Review (CR) SKILL (OpenClaw)]] - `semantically_similar_to` [AMBIGUOUS]
 - [[Data Validation (DATA-VAL) SKILL (OpenClaw)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/TestIsFresh
+#graphify/document #graphify/AMBIGUOUS #community/8D_Root_Cause_Analysis_SKILL_OpenClaw

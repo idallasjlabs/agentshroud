@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "A2APolicyEngine"
+community: "create_auth_dependency"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/create_auth_dependency
 ---
 
 # ApprovalDecision
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[decide_approval()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

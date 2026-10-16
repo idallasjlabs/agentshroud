@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "Attack Teardowns: How AgentShroud Stops RovoBlas"
+community: "Skill: MCP Tools Usage (MCP-TOOLS)"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Attack_Teardowns_How_AgentShroud_Stops_RovoBlas
+  - community/Skill_MCP_Tools_Usage_MCP-TOOLS
 ---
 
 # Available MCP Servers
@@ -17,4 +17,4 @@ tags:
 - [[3. AWS API MCP]] - `contains` [EXTRACTED]
 - [[Skill MCP Tools Usage (MCP-TOOLS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Attack_Teardowns_How_AgentShroud_Stops_RovoBlas
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Tools_Usage_MCP-TOOLS

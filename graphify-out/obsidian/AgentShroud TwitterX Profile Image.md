@@ -1,13 +1,13 @@
 ---
 source_file: "branding/social/twitter-profile-400x400.png"
 type: "image"
-community: "EnhancedApprovalQueue._notify_telegram"
+community: "AgentShroud Twitter/X Profile Image"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue_notify_telegram
+  - community/AgentShroud_Twitter/X_Profile_Image
 ---
 
 # AgentShroud Twitter/X Profile Image
 
-#graphify/image #graphify/EXTRACTED #community/EnhancedApprovalQueue_notify_telegram
+#graphify/image #graphify/EXTRACTED #community/AgentShroud_Twitter/X_Profile_Image

@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "A2APeer"
-location: "L71"
+community: "ApprovalQueueItem"
+location: "L19"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/A2APeer
+  - graphify/INFERRED
+  - community/ApprovalQueueItem
 ---
 
 # ApprovalQueueItem
 
 ## Connections
-- [[.decide()_1]] - `references` [EXTRACTED]
-- [[.get_item()_1]] - `references` [EXTRACTED]
-- [[.get_pending()_1]] - `references` [EXTRACTED]
-- [[.submit()_1]] - `references` [EXTRACTED]
+- [[ApprovalQueueItem_2]] - `uses` [INFERRED]
+- [[ApprovalStore]] - `uses` [INFERRED]
+- [[AuditStore_1]] - `uses` [INFERRED]
+- [[_make_item()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APeer
+#graphify/code #graphify/INFERRED #community/ApprovalQueueItem

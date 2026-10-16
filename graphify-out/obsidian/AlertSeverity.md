@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "apply-patches.js (OpenClaw)"
+community: "AlertDispatcher"
 location: "L32"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/apply-patchesjs_OpenClaw
+  - community/AlertDispatcher
 ---
 
 # AlertSeverity
@@ -22,4 +22,4 @@ tags:
 - [[egress_monitor.py]] - `contains` [EXTRACTED]
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/apply-patchesjs_OpenClaw
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

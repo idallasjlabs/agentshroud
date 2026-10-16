@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/himalaya/references/message-composition.md"
+source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: "TestPerAgentUpstreamChecks"
-location: "L72"
+community: "Common Operations"
+location: "L215"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestPerAgentUpstreamChecks
+  - community/Common_Operations
 ---
 
 # Attachments
 
 ## Connections
-- [[MML for Rich Emails]] - `contains` [EXTRACTED]
+- [[Himalaya Email CLI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestPerAgentUpstreamChecks
+#graphify/document #graphify/EXTRACTED #community/Common_Operations

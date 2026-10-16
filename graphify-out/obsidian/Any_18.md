@@ -1,29 +1,19 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "TestParanoidConfig"
-location: "L119"
+community: "logs_recent"
+location: "L67"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/TestParanoidConfig
+  - graphify/EXTRACTED
+  - community/logs_recent
 ---
 
 # Any
 
 ## Connections
-- [[._execute_tool_call()]] - `references` [EXTRACTED]
-- [[._extract_egress_targets()]] - `references` [EXTRACTED]
-- [[._sanitize_admin_private_data()]] - `references` [EXTRACTED]
-- [[.get_stats()_5]] - `references` [EXTRACTED]
-- [[.send_request()]] - `references` [EXTRACTED]
-- [[.send_request()_1]] - `references` [EXTRACTED]
-- [[InspectionResult]] - `uses` [INFERRED]
-- [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector]] - `uses` [INFERRED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPServerConfig]] - `uses` [INFERRED]
-- [[MCPTransport]] - `uses` [INFERRED]
+- [[dot-recent()]] - `references` [EXTRACTED]
+- [[dot-tail()]] - `references` [EXTRACTED]
+- [[_check_host()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TestParanoidConfig
+#graphify/code #graphify/EXTRACTED #community/logs_recent

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
+source_file: "docker/config/hermes/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Technical Specification"
-location: "L40"
+community: "Skill: Test-Driven Development (TDD)"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Specification
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Technical Writer (TW)_2]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Specification
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD
