@@ -255,6 +255,90 @@ networks also carry 5.1.4 labels and its compose binary is 5.6.0; with voice-gat
 running it will fail the same way. Check: `docker network inspect <project>_agentshroud-internal
 --format '{{index .Labels "com.docker.compose.version"}}'` vs `docker-compose version --short`.
 
+## Root cause of the broken chat since Sunday: Nemotron + the Qwen-only `/no_think` suffix (prod, 07:10 EDT)
+
+The owner's instinct that "it broke at the last unattended update" was right. The
+2026-10-11/12 upgrade moved Rapid-MLX's anchor model from Qwen3 to NVIDIA Nemotron 3.5.
+Two consequences stacked (proven by prod with live calls, fixed in `0ffa0cd794`):
+
+1. Nemotron reasons in-band, in plain text, and burned the whole `max_tokens` budget on
+   "Here's a thinking process: 1. Analyze User Input…" before answering
+   (`finish_reason=length`). That is the "Working — 3/6 min" stalls, the empty replies
+   and the "Something went wrong" errors in both Hermes and OpenClaw.
+2. The gateway's `_suppress_qwen3_thinking` (`gateway/proxy/llm_proxy.py`) appended the
+   Qwen3 chat-template suffix ` /no_think` to every Rapid-MLX request regardless of
+   model. Nemotron treated it as literal user text — Hermes turned "hello" into
+   `echo "hello / no_think"` — which then tripped the elevated-command approval gate and
+   produced the "typing forever" symptom.
+
+Fixes: `local-llms/scripts/services.sh` launches Nemotron with
+`--default-reasoning-effort none` (separate repo, prod's host); `llm_proxy.py` now sends
+`reasoning_effort: "none"` to non-Qwen models and only adds `/no_think` for Qwen
+(`gateway/tests/test_llm_proxy_thinking_suppression.py`, 8 cases, pass on dev). The proxy
+change is baked into the gateway image — both hosts rebuilt: prod first, dev at
+07:44 EDT (gateway) and 07:57 EDT (OpenClaw, after two transient download failures —
+an apt `Hash Sum mismatch` and a curl TLS `bad record mac` under the build-time load
+spike; third attempt clean). Dev's rebuilt OpenClaw boots with `mode=off` in its own init
+log, `doctor --fix` ran at init with no schema-v23 complaint, and it has logged zero
+`getUpdates` conflicts since — so the earlier dev-bot conflicts (see below) stopped with
+the fresh container.
+
+Related trap found on both hosts: rebuilding/recreating OpenClaw seeds the pinned
+2026.10.2 over a volume that was at 2026.9.6, leaving every agent DB at schema v23 —
+"stop active agents and run openclaw doctor --fix … Sessions remain unavailable".
+`init-openclaw-config.sh` runs `doctor --fix` BEFORE the version seed, so the first boot
+after a bump doesn't catch it; it migrates on the next boot or a manual
+`openclaw doctor --fix` (which needs the gateway process stopped — it holds the state
+DB). Moving that doctor call after the seed is follow-up work, not done tonight.
+
+## Dev Hermes was polling prod's Hermes Telegram bot (found 07:12 EDT)
+
+`docker/secrets/hermes_telegram_bot_token.txt` and `hermes_telegram_bot_token_marvin.txt`
+are byte-identical on dev — there is no separate dev Hermes bot. So whenever dev's Hermes
+container is up (it was, most of tonight), two Hermes instances long-poll the same bot:
+Telegram 409s both ("terminated by other getUpdates request"), each reconnects, and the
+owner's messages to Hermes are split unpredictably between dev and prod. Dev's Hermes
+logged a conflict every ~minute; prod's Hermes showed the other side as "Telegram SSL
+UNEXPECTED_EOF_WHILE_READING, reconnecting" every few minutes all night.
+
+Fix tonight, in two parts (the first alone was NOT enough — verified):
+- `docker/bots/hermes/run-standalone.sh`: opt-in `AGENTSHROUD_HERMES_DISABLE_TELEGRAM=1`
+  skips mounting only the Telegram token and forwards the flag into the container.
+- `docker/bots/hermes/agentshroud-secrets.sh` (s6 cont-init, runs as root before any
+  service): with the flag set it skips the `TELEGRAM_BOT_TOKEN` injection AND strips any
+  persisted `TELEGRAM_BOT_TOKEN=` line from `/opt/data/.env` on the config volume. That
+  second part matters: with only the mount skipped, `start.sh` correctly logged
+  "TELEGRAM_BOT_TOKEN not set — Telegram channel disabled" and Hermes's adapter then
+  connected anyway, because its dotenv tier read the token an earlier boot had persisted.
+  Verified after stripping it: no "Connecting/Connected to Telegram" lines, container
+  healthy; prod's Hermes reported zero 409/SSL-EOF lines from its clean restart onward.
+Default (flag unset) = unchanged, so prod's Hermes launches are unaffected. Dev's Hermes
+is launched with `AGENTSHROUD_HERMES_DISABLE_TELEGRAM=1 scripts/asb up hermes`.
+Persisting the flag in dev's `docker/.env` (which `asb` sources for Hermes launches) was
+blocked by the session's secret-store guardrail — the owner should add that one line so a
+future dev launch without the flag doesn't silently re-enable polling. Durable fix: a
+dedicated dev Hermes bot (BotFather) stored as `hermes_telegram_bot_token_marvin.txt`, so
+the `_marvin` variant actually means something.
+
+Side effect the owner noticed: the `agentshroud_marvin_op…` Telegram chat (the dev
+OpenClaw bot) received dev Hermes lifecycle banners — "Hermes starting 07:07", "Hermes
+online — missing secrets…", "Hermes is shutting down 07:16" — which read like prod Hermes
+bouncing. They were dev's, from before the flag took effect; `start.sh`'s and
+`crashwatch.sh`'s notifiers send only when `TELEGRAM_BOT_TOKEN` is set, so with the flag
+they now log "No Telegram bot token available — cannot send notification" instead
+(verified 07:17). Follow-up worth a look: why those banners landed in the *OpenClaw* bot's
+chat at all when dev Hermes was holding the Hermes token — `gateway/ingest_api/lifespan.py:98`
+resolves per-bot tokens as `telegram_bot_token_{bot_id}`, but the Hermes secret is named
+`hermes_telegram_bot_token`, so system sends attributed to "hermes" may be falling back to
+the gateway's default (OpenClaw) token. Not changed tonight.
+
+**Open, dev-only:** dev's OpenClaw (now correctly on the marvin dev-bot token) still logs
+a `getUpdates` conflict about once a minute. Nothing on prod references that token
+(verified by prod via per-container mount listing), and nothing else under the dev account
+polls it (process + tmux sweep). Hypothesis under test: OpenClaw 2026.10.x runs two
+Telegram ingress workers and conflicts with itself ("isolated polling ingress failed …
+restarting"); prod's rebuilt 2026.10.2 container is the control. Affects the dev bot only.
+
 ## What prod should document separately
 
 Everything prod did live tonight that has no corresponding git commit: the

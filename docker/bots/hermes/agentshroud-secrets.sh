@@ -29,7 +29,24 @@ inject() {
 }
 
 # Hermes Telegram bot token (separate from OpenClaw's token)
-inject TELEGRAM_BOT_TOKEN   /run/secrets/hermes_telegram_bot_token
+#
+# AGENTSHROUD_HERMES_DISABLE_TELEGRAM=1 (set by run-standalone.sh from the launching
+# shell) means: this container must never poll Telegram. Not mounting the secret is
+# not enough on its own -- an earlier boot persisted the token into /opt/data/.env on
+# the config volume, and Hermes's dotenv tier reads it back and starts the adapter
+# anyway (observed 2026-10-16: "TELEGRAM_BOT_TOKEN not set" from start.sh, then
+# "Connected to Telegram (polling mode)" from the adapter). Strip it here, before any
+# supervised service starts.
+if [ "${AGENTSHROUD_HERMES_DISABLE_TELEGRAM:-0}" = "1" ]; then
+    echo "[agentshroud-secrets] AGENTSHROUD_HERMES_DISABLE_TELEGRAM=1 -- not injecting TELEGRAM_BOT_TOKEN"
+    rm -f "$S6_ENV/TELEGRAM_BOT_TOKEN"
+    if [ -f /opt/data/.env ] && grep -q '^TELEGRAM_BOT_TOKEN=' /opt/data/.env; then
+        sed -i '/^TELEGRAM_BOT_TOKEN=/d' /opt/data/.env
+        echo "[agentshroud-secrets] Removed persisted TELEGRAM_BOT_TOKEN from /opt/data/.env"
+    fi
+else
+    inject TELEGRAM_BOT_TOKEN   /run/secrets/hermes_telegram_bot_token
+fi
 
 # Gateway auth token — needed by email_helper.sh to call /email/send-owner
 inject GATEWAY_AUTH_TOKEN   /run/secrets/gateway_password

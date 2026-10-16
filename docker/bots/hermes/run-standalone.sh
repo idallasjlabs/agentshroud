@@ -190,6 +190,15 @@ _dashboard_host_default() {
 _secret_mount_args() {
   local key path
   for key in "${HERMES_SECRET_KEYS[@]}"; do
+    # Opt-in: skip the Telegram token so start.sh sees no TELEGRAM_BOT_TOKEN and
+    # Hermes never starts its Telegram poller. Needed on the dev host, where
+    # hermes_telegram_bot_token*.txt is the SAME bot as prod's -- two pollers on
+    # one token make Telegram 409 both of them and silently split the owner's
+    # messages between dev and prod (2026-10-16). Default (unset) = unchanged.
+    if [ "$key" = "hermes_telegram_bot_token" ] && [ "${AGENTSHROUD_HERMES_DISABLE_TELEGRAM:-0}" = "1" ]; then
+      echo "  [hermes-standalone] AGENTSHROUD_HERMES_DISABLE_TELEGRAM=1 -- NOT mounting ${key}; Telegram channel will be disabled in this container" >&2
+      continue
+    fi
     path="$SECRETS_DIR/${key}.txt"
     if [ ! -f "$path" ] || [ ! -s "$path" ]; then
       path="$FALLBACK_SECRETS_DIR/${key}.txt"
@@ -289,6 +298,7 @@ cmd_up() {
     -e TELEGRAM_ALLOWED_USERS="8096968754" \
     -e TELEGRAM_HOME_CHANNEL="8096968754" \
     -e HERMES_TELEGRAM_DISABLE_FALLBACK_IPS="1" \
+    -e AGENTSHROUD_HERMES_DISABLE_TELEGRAM="${AGENTSHROUD_HERMES_DISABLE_TELEGRAM:-0}" \
     -e HERMES_TELEGRAM_HTTP_CONNECT_TIMEOUT="90" \
     -e HERMES_TELEGRAM_INIT_TIMEOUT="90" \
     -e HERMES_DASHBOARD="1" \
