@@ -638,12 +638,21 @@ settings must survive reboots):
   start, so no resize ever stuck; both now pass only `--network-address` once a saved
   config exists. Dev's installed LaunchAgent updated in place (backup kept); prod must
   reinstall from the repo copy.
-- Dev VM resized 8 CPU / 10 GiB → **4 CPU / 8 GiB** (persisted; verified `nproc`=4,
-  `free`=7.9 GiB). Prod VM target **6 CPU / 10 GiB** (prod applies it at its restart).
-- `3955d3b267` — dev container caps under that VM: gateway 3g/1.0, openclaw 2560m/1.5,
-  voice-gateway 2560m/1.5, wazuh-manager 768m/0.5, Hermes 2g/1.0 (run-standalone.sh now
-  sets caps by environment; prod keeps 4g/1.0, 4g/2.0, 4g/2.0, 1g/1.0, 3g/1.5). Prod's
-  compose caps left unchanged pending `docker stats` at steady state.
+- Prod's measured steady state after its rebuild (17:20 EDT): VM 8 CPU / 10 GiB with
+  9.25 GiB used, 667 MiB available, no swap, "Pressure L2" in the local-llms watchdog
+  all afternoon; containers 7.6 GiB (openclaw 3.33 GiB, voice-gateway 1.59, gateway
+  1.23, hermes 0.54, wazuh-manager 0.29, plus homeassistant/librechat/searxng ≈0.55).
+  So prod cannot give up VM memory; the Mac's real memory consumers are the local LLM
+  servers (rapid-mlx ≈17 GB, TurboFieldfare, oMLX, LM Studio), not Colima.
+- Dev VM resized 8 CPU / 10 GiB → **4 CPU / 9 GiB** (first set to 8 GiB, raised to 9
+  once prod's OpenClaw RSS showed 2.5 GiB caps would OOM it; persisted in colima.yaml).
+  Prod VM target **6 CPU / 10 GiB** (CPU only; prod applies it at its restart).
+- `3955d3b267` + follow-up — dev container caps under that VM: gateway 3g/1.0,
+  openclaw 3584m/1.5, voice-gateway 2560m/1.5, wazuh-manager 768m/0.5, Hermes 2g/1.0
+  (run-standalone.sh sets caps by environment; prod keeps 4g/1.0, 4g/2.0, 4g/2.0,
+  1g/1.0, 3g/1.5). Prod's compose caps unchanged.
+- Worth a separate look: OpenClaw at 3.33 GiB RSS is the single largest container on
+  both hosts and already trips its own RSS warning.
 
 ### Still open for Sunday (not changed today)
 - `graphify-out/` is stale (manifest 2026-09-27; 17 commits since touching

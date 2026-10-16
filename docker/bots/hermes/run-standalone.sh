@@ -85,7 +85,7 @@ IMAGE="agentshroud/hermes:${VERSION}"
 # 2026-10-16 owner directive: the Mac is tight on memory and dev must run with
 # less than prod. Prod keeps the caps this script always had (3g / 1.5 CPUs,
 # mirrored from docker-compose.yml's hermes block); dev — auto-detected above
-# from the invoking account — gets 2g / 1.0, which fits its 4 CPU / 8 GiB
+# from the invoking account — gets 2g / 1.0, which fits its 4 CPU / 9 GiB
 # Colima VM next to the lowered caps in docker-compose.agentshroud-bot.marvin.yml.
 # Override either explicitly with AGENTSHROUD_HERMES_MEMORY / AGENTSHROUD_HERMES_CPUS.
 if [ "$AGENTSHROUD_ENV" = "dev" ]; then

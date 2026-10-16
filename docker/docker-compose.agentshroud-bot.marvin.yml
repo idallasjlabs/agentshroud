@@ -42,17 +42,23 @@ services:
       # to agentshroud-hermes-v2:9120 did not resolve). Same bridge port 9120.
       - HERMES_DASHBOARD_UPSTREAM=http://agentshroud-dev-hermes-v2:9120
     # 2026-10-16 owner directive: the Mac is tight on memory, so dev runs with
-    # less than prod. Dev's Colima VM is 4 CPU / 8 GiB (saved in this
+    # less than prod. Dev's Colima VM is 4 CPU / 9 GiB (saved in this
     # account's ~/.colima/default/colima.yaml); these caps are sized under
     # that, below the base file's prod values (gateway 4g/1.0, openclaw 4g/2.0,
-    # voice-gateway 4g/2.0, wazuh-manager 1g/1.0). Hermes is not in this file
-    # (run-standalone.sh, which lowers its own caps when AGENTSHROUD_ENV=dev).
+    # voice-gateway 4g/2.0, wazuh-manager 1g/1.0) and above prod's MEASURED
+    # steady-state use (gateway 1.23 GiB, openclaw 3.33 GiB, voice-gateway
+    # 1.59 GiB, wazuh-manager 292 MiB — docker stats, prod, 2026-10-16 17:20).
+    # Hermes is not in this file (run-standalone.sh, which lowers its own
+    # caps when AGENTSHROUD_ENV=dev).
     mem_limit: 3g
     cpus: 1.0
 
   openclaw:
     container_name: agentshroud-dev-openclaw
-    mem_limit: 2560m
+    # 3.5 GiB, not lower: OpenClaw's resident set is 3.33 GiB on prod at
+    # steady state (it already trips its own 1.5 GiB RSS warning); a 2.5 GiB
+    # cap would simply OOM-kill it on dev.
+    mem_limit: 3584m
     cpus: 1.5
     ports: !override
       - "127.0.0.1:18790:18789"
