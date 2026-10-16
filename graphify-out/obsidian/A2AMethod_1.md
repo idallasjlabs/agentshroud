@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[A2AMethod]] - `uses` [INFERRED]
 - [[A2APolicyAction]] - `uses` [INFERRED]
-- [[A2APolicyConfig_1]] - `uses` [INFERRED]
+- [[A2APolicyConfig]] - `uses` [INFERRED]
 - [[A2APolicyDecision]] - `uses` [INFERRED]
 - [[A2APolicyEngine_2]] - `uses` [INFERRED]
 - [[test_high_risk_methods_require_approval()]] - `references` [EXTRACTED]

@@ -12,7 +12,7 @@ tags:
 # Any
 
 ## Connections
-- [[dot-to_dict()_15]] - `references` [EXTRACTED]
+- [[dot-to_dict()_13]] - `references` [EXTRACTED]
 - [[load_registry()_1]] - `references` [EXTRACTED]
 - [[plan_remediation()]] - `references` [EXTRACTED]
 

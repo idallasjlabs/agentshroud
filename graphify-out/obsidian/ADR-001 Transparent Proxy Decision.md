@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
 type: "concept"
-community: "Audit Ledger (SHA-256 hash only)"
+community: "AgentShroud (system, C4 context)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Audit_Ledger_SHA-256_hash_only
+  - community/AgentShroud_system_C4_context
 ---
 
 # ADR-001: Transparent Proxy Decision
@@ -16,4 +16,4 @@ tags:
 - [[Proxy Mode (Recommended)_1]] - `implements` [EXTRACTED]
 - [[Sidecar Mode (Performance Optimized)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_system_C4_context

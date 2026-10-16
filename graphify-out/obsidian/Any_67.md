@@ -1,23 +1,17 @@
 ---
-source_file: "gateway/soc/services.py"
+source_file: "gateway/security/canary.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L25"
+community: "test_e2e_proxy.py"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/test_e2e_proxypy
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_172]] - `references` [EXTRACTED]
-- [[dot-_describe_service()]] - `references` [EXTRACTED]
-- [[dot-_get_engine()]] - `references` [EXTRACTED]
-- [[HealthStatus_1]] - `uses` [INFERRED]
-- [[ServiceDescriptor_1]] - `uses` [INFERRED]
-- [[ServiceStatus_1]] - `uses` [INFERRED]
-- [[_inspect_via_socket()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_11]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

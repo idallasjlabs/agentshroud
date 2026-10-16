@@ -13,13 +13,13 @@ tags:
 
 ## Connections
 - [[A2AMethod]] - `uses` [INFERRED]
-- [[A2APolicyConfig_1]] - `uses` [INFERRED]
+- [[A2APolicyConfig]] - `uses` [INFERRED]
 - [[A2APolicyEngine_2]] - `uses` [INFERRED]
 - [[A2AProxy_1]] - `uses` [INFERRED]
 - [[A2AProxyResult]] - `uses` [INFERRED]
 - [[DifferentialPIIConfig_1]] - `uses` [INFERRED]
 - [[DifferentialPIIDetector_1]] - `uses` [INFERRED]
-- [[proxy()_1]] - `references` [EXTRACTED]
+- [[proxy()]] - `references` [EXTRACTED]
 - [[test_agent_card_discovery_is_never_policy_gated()]] - `references` [EXTRACTED]
 - [[test_agent_card_discovery_is_still_audited()]] - `references` [EXTRACTED]
 - [[test_process_inbound_request_allowed_peer_low_risk_forwards()]] - `references` [EXTRACTED]

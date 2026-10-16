@@ -1,18 +1,25 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L379"
+community: "_FakeRBAC"
+location: "L58"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - graphify/INFERRED
+  - community/_FakeRBAC
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_lifecycle_status()]] - `references` [EXTRACTED]
-- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult_1]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller_2]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLInterface_1]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[_log_audit()]] - `references` [EXTRACTED]
+- [[auth_ws_token()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/INFERRED #community/_FakeRBAC

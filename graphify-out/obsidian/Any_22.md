@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/cli/client.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "SCLClient"
-location: "L23"
+community: "MiddlewareManager"
+location: "L187"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/SCLClient
+  - graphify/INFERRED
+  - community/MiddlewareManager
 ---
 
 # Any
 
 ## Connections
-- [[dot-_request()]] - `references` [EXTRACTED]
-- [[dot-delete()]] - `references` [EXTRACTED]
-- [[dot-get()]] - `references` [EXTRACTED]
-- [[dot-post()]] - `references` [EXTRACTED]
-- [[dot-put()]] - `references` [EXTRACTED]
+- [[dot-check_permission()]] - `references` [EXTRACTED]
+- [[dot-get_user_permissions_summary()]] - `references` [EXTRACTED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[Role_21]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/SCLClient
+#graphify/code #graphify/INFERRED #community/MiddlewareManager

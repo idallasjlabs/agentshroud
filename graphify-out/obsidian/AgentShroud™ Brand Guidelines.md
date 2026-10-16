@@ -25,7 +25,7 @@ tags:
 - [[Colors]] - `contains` [EXTRACTED]
 - [[Communication Templates]] - `contains` [EXTRACTED]
 - [[Contact]] - `contains` [EXTRACTED]
-- [[Directory Structure]] - `contains` [EXTRACTED]
+- [[Directory Structure_1]] - `contains` [EXTRACTED]
 - [[File Formats]] - `contains` [EXTRACTED]
 - [[File Formats & Deliverables]] - `contains` [EXTRACTED]
 - [[Key Messaging]] - `contains` [EXTRACTED]
@@ -40,7 +40,7 @@ tags:
 - [[Typography]] - `contains` [EXTRACTED]
 - [[Typography in Practice]] - `contains` [EXTRACTED]
 - [[Usage Guidelines]] - `contains` [EXTRACTED]
-- [[Voice & Tone_1]] - `contains` [EXTRACTED]
+- [[Voice & Tone_2]] - `contains` [EXTRACTED]
 - [[brand-guidelines]] - `contains` [EXTRACTED]
 - [[brandingREADME]] - `contains` [EXTRACTED]
 

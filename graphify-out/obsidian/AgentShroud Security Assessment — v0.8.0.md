@@ -12,8 +12,8 @@ tags:
 # AgentShroud Security Assessment — v0.8.0
 
 ## Connections
-- [[Critical Findings_1]] - `contains` [EXTRACTED]
-- [[Executive Summary_13]] - `contains` [EXTRACTED]
+- [[Critical Findings_2]] - `contains` [EXTRACTED]
+- [[Executive Summary_14]] - `contains` [EXTRACTED]
 - [[High-Priority Gaps]] - `contains` [EXTRACTED]
 - [[Low-Priority  Informational]] - `contains` [EXTRACTED]
 - [[Medium-Priority Gaps]] - `contains` [EXTRACTED]

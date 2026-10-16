@@ -1,13 +1,19 @@
 ---
-source_file: ""
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "._filter_streaming_event"
+community: "PodmanEngine"
+location: "L159"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/_filter_streaming_event
+  - graphify/INFERRED
+  - community/PodmanEngine
 ---
 
 # Any
 
-#graphify/code #graphify/EXTRACTED #community/_filter_streaming_event
+## Connections
+- [[dot-inspect()_1]] - `references` [EXTRACTED]
+- [[ContainerEngine]] - `uses` [INFERRED]
+- [[ContainerInfo]] - `uses` [INFERRED]
+
+#graphify/code #graphify/INFERRED #community/PodmanEngine

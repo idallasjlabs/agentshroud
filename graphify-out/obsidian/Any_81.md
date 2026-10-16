@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "TestOutputCanary"
-location: "L231"
+community: "EgressFilterConfig"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutputCanary
+  - community/EgressFilterConfig
 ---
 
 # Any
 
 ## Connections
-- [[dot-_scan_for_canary()]] - `references` [EXTRACTED]
-- [[dot-get_status()_2]] - `references` [EXTRACTED]
+- [[dot-get_stats()_19]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutputCanary
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

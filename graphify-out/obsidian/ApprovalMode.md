@@ -16,7 +16,7 @@ tags:
 - [[dot-add_rule()]] - `references` [EXTRACTED]
 - [[dot-approve()]] - `references` [EXTRACTED]
 - [[dot-deny()]] - `references` [EXTRACTED]
-- [[Any_71]] - `uses` [INFERRED]
+- [[Any_80]] - `uses` [INFERRED]
 - [[Approval modes for rules.]] - `rationale_for` [EXTRACTED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
 - [[FakeAuditStore]] - `uses` [INFERRED]
@@ -29,7 +29,7 @@ tags:
 - [[_Svc]] - `uses` [INFERRED]
 - [[egress_approval.py]] - `contains` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
-- [[telegram_proxy.py_2]] - `imports` [EXTRACTED]
+- [[telegram_proxy.py]] - `imports` [EXTRACTED]
 - [[test_egress_approval.py]] - `imports` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `imports` [EXTRACTED]
 

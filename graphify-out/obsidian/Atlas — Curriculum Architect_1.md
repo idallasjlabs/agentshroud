@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/README.md"
+source_file: "docker/config/hermes/skills/i-atlas/README.md"
 type: "document"
-community: "Atlas — Curriculum Architect"
+community: "hermes/skills/i-bs/README.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Atlas — Curriculum Architect
 
 ## Connections
-- [[Purpose_39]] - `contains` [EXTRACTED]
-- [[Related Skills_25]] - `contains` [EXTRACTED]
-- [[Usage_29]] - `contains` [EXTRACTED]
-- [[openclawskillsi-atlasREADME]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[Purpose_85]] - `contains` [EXTRACTED]
+- [[Related Skills_64]] - `contains` [EXTRACTED]
+- [[Usage_75]] - `contains` [EXTRACTED]
+- [[hermesskillsi-atlasREADME]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

@@ -12,9 +12,9 @@ tags:
 # A2APolicyAction
 
 ## Connections
-- [[dot-from_dict()_7]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_11]] - `calls` [EXTRACTED]
 - [[A2AMethod_1]] - `uses` [INFERRED]
-- [[A2APolicyConfig]] - `uses` [INFERRED]
+- [[A2APolicyConfig_1]] - `uses` [INFERRED]
 - [[A2APolicyEngine_3]] - `uses` [INFERRED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `uses` [INFERRED]

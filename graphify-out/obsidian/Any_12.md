@@ -1,17 +1,25 @@
 ---
-source_file: "gateway/security/soc_correlation.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "soc.js"
-location: "L44"
+community: "ApprovalQueueConfig"
+location: "L141"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/socjs
+  - graphify/INFERRED
+  - community/ApprovalQueueConfig
 ---
 
 # Any
 
 ## Connections
-- [[dot-to_dict()_5]] - `references` [EXTRACTED]
+- [[dot-broadcast()]] - `references` [EXTRACTED]
+- [[dot-submit_tool_request()]] - `references` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_2]] - `uses` [INFERRED]
+- [[ApprovalRequest_1]] - `uses` [INFERRED]
+- [[ApprovalStore]] - `uses` [INFERRED]
+- [[MFAGuard_2]] - `uses` [INFERRED]
+- [[ToolRiskConfig]] - `uses` [INFERRED]
+- [[ToolRiskPolicy]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/socjs
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig

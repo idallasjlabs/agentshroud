@@ -12,8 +12,8 @@ tags:
 # API Documentation
 
 ## Connections
-- [[Current Status_4]] - `contains` [EXTRACTED]
-- [[Planned Documents_2]] - `contains` [EXTRACTED]
+- [[Current Status_3]] - `contains` [EXTRACTED]
+- [[Planned Documents_3]] - `contains` [EXTRACTED]
 - [[apiREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/API_Documentation

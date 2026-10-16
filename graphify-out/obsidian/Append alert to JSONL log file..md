@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "First Time Setup"
 location: "L119"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/First_Time_Setup
 ---
 
 # Append alert to JSONL log file.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_log_alert()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/First_Time_Setup

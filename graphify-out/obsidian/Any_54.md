@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: ""
 type: "code"
-community: ".decide"
-location: "L369"
+community: "discover_upstream_versions.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/decide
+  - community/discover_upstream_versionspy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_append_audit_event()]] - `references` [EXTRACTED]
-- [[dot-broadcast()]] - `references` [EXTRACTED]
+- [[_digest_for_tag()]] - `references` [EXTRACTED]
+- [[_retry()]] - `references` [EXTRACTED]
+- [[discover()]] - `references` [EXTRACTED]
+- [[fetch_dockerhub_tags()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/decide
+#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy

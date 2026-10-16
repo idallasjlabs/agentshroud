@@ -1,18 +1,30 @@
 ---
-source_file: "scripts/soak_status.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "TestClassify"
-location: "L33"
+community: "PipelineAction"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestClassify
+  - community/PipelineAction
 ---
 
 # Any
 
 ## Connections
-- [[_is_benign_skip()]] - `references` [EXTRACTED]
-- [[classify()_2]] - `references` [EXTRACTED]
+- [[dot-_process_inbound_core()]] - `references` [EXTRACTED]
+- [[dot-_process_outbound_core()]] - `references` [EXTRACTED]
+- [[dot-append()_1]] - `references` [EXTRACTED]
+- [[dot-append_block()]] - `references` [EXTRACTED]
+- [[dot-append_owner_bypass()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_10]] - `references` [EXTRACTED]
+- [[dot-process_inbound()_1]] - `references` [EXTRACTED]
+- [[dot-process_outbound()_2]] - `references` [EXTRACTED]
+- [[dot-to_dict()_6]] - `references` [EXTRACTED]
+- [[BotIncidentSeverity]] - `uses` [INFERRED]
+- [[FilterResult_1]] - `uses` [INFERRED]
+- [[InjectionAction]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[ViolationType]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TestClassify
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

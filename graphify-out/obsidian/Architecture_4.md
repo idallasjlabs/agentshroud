@@ -1,17 +1,19 @@
 ---
-source_file: "docs/setup-slack.md"
+source_file: "docker/README.md"
 type: "document"
-community: "Slack Channel Setup"
-location: "L3"
+community: "AgentShroud Docker Configuration"
+location: "L107"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Slack_Channel_Setup
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # Architecture
 
 ## Connections
-- [[Slack Channel Setup]] - `contains` [EXTRACTED]
+- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
+- [[Container Stack]] - `contains` [EXTRACTED]
+- [[Security Features (Implemented)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Slack_Channel_Setup
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

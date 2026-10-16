@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/canvas/SKILL.md"
+source_file: "docs/setup-slack.md"
 type: "document"
-community: "Canvas Skill"
-location: "L15"
+community: "Slack Channel Setup"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Canvas_Skill
+  - community/Slack_Channel_Setup
 ---
 
 # Architecture
 
 ## Connections
-- [[How It Works]] - `contains` [EXTRACTED]
+- [[Slack Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Canvas_Skill
+#graphify/document #graphify/EXTRACTED #community/Slack_Channel_Setup

@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/killswitch_config.py"
+source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L100"
+community: "ResourceGuard"
+location: "L62"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - graphify/INFERRED
+  - community/ResourceGuard
 ---
 
 # Any
 
 ## Connections
-- [[dot-to_dict()_6]] - `references` [EXTRACTED]
+- [[dot-_build_bridge()]] - `references` [EXTRACTED]
+- [[ResourceGuard]] - `uses` [INFERRED]
+- [[ResourceLimits]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/INFERRED #community/ResourceGuard

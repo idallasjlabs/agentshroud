@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "gateway/tests/test_llm_proxy_thinking_suppression.py (8 cases)"
+community: "LLMProxy"
 location: "L449"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
+  - community/LLMProxy
 ---
 
 # Append '/no_think' to the last user message, in place, if not already present.…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_suppress_qwen3_thinking()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxy

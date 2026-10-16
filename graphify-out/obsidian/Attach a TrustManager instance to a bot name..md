@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "rationale"
-community: "AuditChain"
+community: "CrossBotTrustLedger"
 location: "L210"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/CrossBotTrustLedger
 ---
 
 # Attach a TrustManager instance to a bot name.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-register_trust_manager()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AuditChain
+#graphify/rationale #graphify/EXTRACTED #community/CrossBotTrustLedger

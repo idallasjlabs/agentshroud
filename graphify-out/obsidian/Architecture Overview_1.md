@@ -1,23 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "main.py.md"
-location: "L8"
+community: "OpenClaw Setup Guide - agentshroud.ai Bot"
+location: "L279"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpymd
+  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
 ---
 
 # Architecture Overview
 
 ## Connections
-- [[Architecture Overview]] - `contains` [EXTRACTED]
-- [[Container Architecture]] - `contains` [EXTRACTED]
-- [[Full System Diagram]] - `contains` [EXTRACTED]
-- [[Gateway Internal Layer Order]] - `contains` [EXTRACTED]
-- [[Network Topology]] - `contains` [EXTRACTED]
-- [[Related Notes_19]] - `contains` [EXTRACTED]
-- [[Summary]] - `contains` [EXTRACTED]
+- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpymd
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot

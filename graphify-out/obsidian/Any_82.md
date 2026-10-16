@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/session_security.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "SessionManager"
-location: "L127"
+community: "A2APolicyEngine"
+location: "L210"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/A2APolicyEngine
 ---
 
 # Any
 
 ## Connections
-- [[dot-validate_event()]] - `references` [EXTRACTED]
+- [[dot-from_dict()_11]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

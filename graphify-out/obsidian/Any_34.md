@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/forwarder.py"
+source_file: ""
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L160"
+community: "LLMProxy"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/LLMProxy
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_stats()_9]] - `references` [EXTRACTED]
+- [[dot-_filter_streaming_event()]] - `references` [EXTRACTED]
+- [[dot-proxy_messages_streaming()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

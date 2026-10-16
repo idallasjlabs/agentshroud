@@ -12,6 +12,6 @@ tags:
 # Accept a WebSocket connection and add to connected set.
 
 ## Connections
-- [[dot-connect()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-connect()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

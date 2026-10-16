@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/resource_guard.py"
+source_file: "gateway/proxy/telegram_replay.py"
 type: "code"
-community: "ResourceGuard"
-location: "L102"
+community: "test_telegram_replay.py"
+location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/test_telegram_replaypy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_alert_high_usage()]] - `references` [EXTRACTED]
-- [[dot-_get_disk_io_stats()]] - `references` [EXTRACTED]
-- [[dot-add_alert_callback()]] - `references` [EXTRACTED]
-- [[dot-get_usage_stats()]] - `references` [EXTRACTED]
+- [[dot-pull_undelivered()]] - `references` [EXTRACTED]
+- [[dot-record_inbound()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy

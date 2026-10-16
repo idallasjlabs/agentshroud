@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/egress_retry.py"
+source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: "egress_retry.py"
-location: "L75"
+community: "GroupApprovalRouter"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_retrypy
+  - community/GroupApprovalRouter
 ---
 
 # Any
 
 ## Connections
-- [[retry_request()]] - `references` [EXTRACTED]
-- [[retry_request_sync()]] - `references` [EXTRACTED]
+- [[dot-__init__()_178]] - `references` [EXTRACTED]
+- [[dot-_default_send()]] - `references` [EXTRACTED]
+- [[ApprovalRequest_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_retrypy
+#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter

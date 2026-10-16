@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
+source_file: "scripts/soak_status.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L93"
+community: "TestClassify"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/TestClassify
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_stats()_10]] - `references` [EXTRACTED]
+- [[_is_benign_skip()]] - `references` [EXTRACTED]
+- [[classify()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/TestClassify

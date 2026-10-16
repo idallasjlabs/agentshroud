@@ -17,7 +17,7 @@ tags:
 - [[CDAS — Central Data Acquisition Systems]] - `references` [EXTRACTED]
 - [[Cross-Account & Future Proofing_1]] - `contains` [EXTRACTED]
 - [[Decision Framework_1]] - `contains` [EXTRACTED]
-- [[Deliverables]] - `contains` [EXTRACTED]
+- [[Deliverables_1]] - `contains` [EXTRACTED]
 - [[Expertise_1]] - `contains` [EXTRACTED]
 - [[FODL — Fluence Operational Data Lakehouse]] - `references` [EXTRACTED]
 - [[FY26 40% Cost Reduction Target]] - `references` [EXTRACTED]

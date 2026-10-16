@@ -1,43 +1,22 @@
 ---
-source_file: "gateway/security/a2a_policy.py"
+source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L175"
+community: "test_a2a_policy.py"
+location: "L38"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/A2APolicyEngine
+  - community/test_a2a_policypy
 ---
 
 # A2APolicyConfig
 
 ## Connections
-- [[dot-__init__()_125]] - `references` [EXTRACTED]
-- [[dot-__post_init__()_2]] - `method` [EXTRACTED]
-- [[dot-from_dict()_7]] - `method` [EXTRACTED]
-- [[dot-test_bare_config_denies_every_peer()]] - `calls` [EXTRACTED]
-- [[A2AMethod_1]] - `uses` [INFERRED]
-- [[A2APeerTestDouble]] - `uses` [INFERRED]
+- [[A2AMethod]] - `uses` [INFERRED]
+- [[A2APolicyAction]] - `uses` [INFERRED]
 - [[A2APolicyConfig]] - `uses` [INFERRED]
-- [[A2APolicyEngine_3]] - `uses` [INFERRED]
-- [[A2APolicyEngine]] - `uses` [INFERRED]
-- [[A2AProxy]] - `uses` [INFERRED]
-- [[Declarative A2A security policy.      Loaded from the ``a2a_policy`` section of]] - `rationale_for` [EXTRACTED]
-- [[Request_5]] - `uses` [INFERRED]
-- [[Response_1]] - `uses` [INFERRED]
-- [[TestDefaultA2APolicyIsFailClosed]] - `uses` [INFERRED]
-- [[TrustManager_2]] - `uses` [INFERRED]
-- [[_Event]] - `uses` [INFERRED]
-- [[_LegacyStubApprovalQueue]] - `uses` [INFERRED]
-- [[_StubApprovalQueue]] - `uses` [INFERRED]
-- [[_StubAuditStore]] - `uses` [INFERRED]
-- [[_StubForwarder_1]] - `uses` [INFERRED]
-- [[_StubForwarder_2]] - `uses` [INFERRED]
-- [[a2a_policy.py]] - `contains` [EXTRACTED]
-- [[test_a2a_integration.py]] - `imports` [EXTRACTED]
-- [[test_a2a_policy.py]] - `imports` [EXTRACTED]
-- [[test_a2a_policy_default_failclosed.py]] - `imports` [EXTRACTED]
-- [[test_a2a_proxy.py]] - `imports` [EXTRACTED]
-- [[test_a2a_trust_scoring.py]] - `imports` [EXTRACTED]
+- [[A2APolicyDecision]] - `uses` [INFERRED]
+- [[A2APolicyEngine_2]] - `uses` [INFERRED]
+- [[_base_config()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/A2APolicyEngine
+#graphify/code #graphify/INFERRED #community/test_a2a_policypy

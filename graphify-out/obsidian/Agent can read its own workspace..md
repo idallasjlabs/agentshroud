@@ -12,6 +12,6 @@ tags:
 # Agent can read its own workspace.
 
 ## Connections
-- [[dot-test_workspace_read_allowed()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_workspace_read_allowed()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

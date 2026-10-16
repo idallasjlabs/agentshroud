@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/security/context_integrity.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "ContextSegment"
-location: "L64"
+community: "UserSessionManager"
+location: "L62"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ContextSegment
+  - graphify/EXTRACTED
+  - community/UserSessionManager
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_149]] - `references` [EXTRACTED]
-- [[ContextSegment]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
-- [[SystemPromptFingerprint]] - `uses` [INFERRED]
+- [[dot-add_conversation_message()]] - `references` [EXTRACTED]
+- [[dot-from_dict()_6]] - `references` [EXTRACTED]
+- [[dot-get_session_context()]] - `references` [EXTRACTED]
+- [[dot-reanchor_system_prompt()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_10]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

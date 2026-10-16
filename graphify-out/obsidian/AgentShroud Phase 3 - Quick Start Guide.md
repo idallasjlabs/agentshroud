@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Architecture Diagram_1]] - `contains` [EXTRACTED]
 - [[Launch the Stack]] - `contains` [EXTRACTED]
-- [[Next Steps_4]] - `contains` [EXTRACTED]
+- [[Next Steps_5]] - `contains` [EXTRACTED]
 - [[Prerequisites_3]] - `contains` [EXTRACTED]
 - [[QUICKSTART]] - `contains` [EXTRACTED]
 - [[Security Validation_1]] - `contains` [EXTRACTED]

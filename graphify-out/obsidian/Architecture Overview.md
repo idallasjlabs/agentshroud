@@ -1,22 +1,23 @@
 ---
 source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "main.py.md"
-location: "L1"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpymd
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
-# Architecture Overview.md
+# Architecture Overview
 
 ## Connections
-- [[Architecture Overview_1]] - `contains` [EXTRACTED]
-- [[Data Flow]] - `references` [EXTRACTED]
-- [[Home]] - `references` [EXTRACTED]
-- [[Startup Sequence]] - `references` [EXTRACTED]
-- [[System Overview]] - `references` [EXTRACTED]
-- [[main.py]] - `references` [EXTRACTED]
+- [[Architecture Overview_3]] - `contains` [EXTRACTED]
+- [[Container Architecture]] - `contains` [EXTRACTED]
+- [[Full System Diagram]] - `contains` [EXTRACTED]
+- [[Gateway Internal Layer Order]] - `contains` [EXTRACTED]
+- [[Network Topology]] - `contains` [EXTRACTED]
+- [[Related Notes_12]] - `contains` [EXTRACTED]
+- [[Summary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpymd
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

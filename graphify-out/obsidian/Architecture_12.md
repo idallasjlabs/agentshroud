@@ -1,23 +1,17 @@
 ---
-source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
+source_file: "docs/architecture/per-agent-isolation.md"
 type: "document"
-community: "Architecture"
-location: "L28"
+community: "Per-Agent Container Isolation Architecture"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture
+  - community/Per-Agent_Container_Isolation_Architecture
 ---
 
 # Architecture
 
 ## Connections
-- [[AgentShroud™ — Project Knowledge Base]] - `contains` [EXTRACTED]
-- [[Design Philosophy]] - `contains` [EXTRACTED]
-- [[F. Infrastructure]] - `contains` [EXTRACTED]
-- [[Infrastructure_10]] - `contains` [EXTRACTED]
-- [[Multi-Platform Support]] - `contains` [EXTRACTED]
-- [[Security Modules]] - `contains` [EXTRACTED]
-- [[The Security Pipeline]] - `contains` [EXTRACTED]
+- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture
+#graphify/document #graphify/EXTRACTED #community/Per-Agent_Container_Isolation_Architecture

@@ -12,6 +12,6 @@ tags:
 # Agent can write to /tmp for temporary files.
 
 ## Connections
-- [[dot-test_tmp_write_allowed()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_tmp_write_allowed()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

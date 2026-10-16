@@ -16,7 +16,7 @@ tags:
 - [[Claude Code skill catalog (59 skills)]] - `references` [EXTRACTED]
 - [[Cross-Account & Future Proofing_2]] - `contains` [EXTRACTED]
 - [[Decision Framework_2]] - `contains` [EXTRACTED]
-- [[Deliverables_2]] - `contains` [EXTRACTED]
+- [[Deliverables_3]] - `contains` [EXTRACTED]
 - [[EBS bottleneck vs oversize distinction]] - `rationale_for` [EXTRACTED]
 - [[Expertise_2]] - `contains` [EXTRACTED]
 - [[FY26 Cost Reduction Context]] - `contains` [EXTRACTED]

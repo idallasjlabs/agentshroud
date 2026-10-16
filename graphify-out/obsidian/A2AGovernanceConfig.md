@@ -12,11 +12,11 @@ tags:
 # A2AGovernanceConfig
 
 ## Connections
-- [[dot-__init__()_138]] - `references` [EXTRACTED]
+- [[dot-__init__()_130]] - `references` [EXTRACTED]
 - [[dot-test_complete_task_frees_slot()]] - `calls` [EXTRACTED]
 - [[dot-test_disabled_allows_all()]] - `calls` [EXTRACTED]
 - [[dot-test_oversized_denied()]] - `calls` [EXTRACTED]
-- [[dot-test_rate_limit_exceeded()]] - `calls` [EXTRACTED]
+- [[dot-test_rate_limit_exceeded()_1]] - `calls` [EXTRACTED]
 - [[dot-test_task_limit_exceeded()]] - `calls` [EXTRACTED]
 - [[A2AGovernanceProxy]] - `shares_data_with` [EXTRACTED]
 - [[Configuration for the A2A governance proxy.]] - `rationale_for` [EXTRACTED]
@@ -27,12 +27,12 @@ tags:
 - [[TestOutboundProcessing]] - `uses` [INFERRED]
 - [[TestPIISanitization]] - `uses` [INFERRED]
 - [[TestPeerManagement]] - `uses` [INFERRED]
-- [[TestRateLimiting_2]] - `uses` [INFERRED]
+- [[TestRateLimiting_3]] - `uses` [INFERRED]
 - [[TestReporting]] - `uses` [INFERRED]
 - [[TestTaskConcurrency]] - `uses` [INFERRED]
 - [[a2a_governance.py]] - `contains` [EXTRACTED]
 - [[monitor_proxy()]] - `calls` [EXTRACTED]
-- [[proxy()_3]] - `calls` [EXTRACTED]
+- [[proxy()_2]] - `calls` [EXTRACTED]
 - [[test_a2a_governance.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

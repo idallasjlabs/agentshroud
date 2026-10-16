@@ -12,6 +12,6 @@ tags:
 # A source counts as proven only on a 2xx with non-empty content.
 
 ## Connections
-- [[dot-ok()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-ok()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/FetchOutcome

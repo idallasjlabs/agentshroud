@@ -24,7 +24,7 @@ tags:
 - [[AgentShroud v0.7.0 Enforcement Audit Results]] - `conceptually_related_to` [INFERRED]
 - [[ContextGuard (context window poisoning defense)]] - `references` [EXTRACTED]
 - [[Egress Filter  SSRF Protection]] - `references` [EXTRACTED]
-- [[Executive Summary_5]] - `contains` [EXTRACTED]
+- [[Executive Summary_1]] - `contains` [EXTRACTED]
 - [[FileSandbox (path isolation)]] - `references` [EXTRACTED]
 - [[GitGuard (supply-chain hook scanning)]] - `references` [EXTRACTED]
 - [[PII Sanitizer (Presidio + regex hybrid)]] - `references` [EXTRACTED]

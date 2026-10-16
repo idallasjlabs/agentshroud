@@ -1,11 +1,11 @@
 ---
 source_file: "examples/docker-compose.production.yml"
 type: "document"
-community: "Docker Commands Reference"
+community: "Restart Procedure"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Docker_Commands_Reference
+  - community/Restart_Procedure
 ---
 
 # AgentShroud Production Docker Compose
@@ -15,4 +15,4 @@ tags:
 - [[Health Checks_1]] - `conceptually_related_to` [INFERRED]
 - [[docker-commands]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Docker_Commands_Reference
+#graphify/document #graphify/INFERRED #community/Restart_Procedure

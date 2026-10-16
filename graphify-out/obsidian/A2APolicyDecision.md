@@ -17,7 +17,7 @@ tags:
 - [[dot-enforce()]] - `references` [EXTRACTED]
 - [[dot-evaluate()]] - `references` [EXTRACTED]
 - [[A2AMethod_1]] - `uses` [INFERRED]
-- [[A2APolicyConfig]] - `uses` [INFERRED]
+- [[A2APolicyConfig_1]] - `uses` [INFERRED]
 - [[A2APolicyEngine_3]] - `uses` [INFERRED]
 - [[The result of evaluating a single A2A request against the policy.]] - `rationale_for` [EXTRACTED]
 - [[_LegacyStubApprovalQueue]] - `uses` [INFERRED]

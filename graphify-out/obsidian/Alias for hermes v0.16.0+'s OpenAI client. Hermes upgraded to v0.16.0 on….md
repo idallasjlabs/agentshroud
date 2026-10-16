@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "LLMProxy.proxy_messages (non-streaming)"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L4292"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Alias for hermes v0.16.0+'s OpenAI client. Hermes upgraded to v0.16.0 on…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[llm_openai_chat_alias]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

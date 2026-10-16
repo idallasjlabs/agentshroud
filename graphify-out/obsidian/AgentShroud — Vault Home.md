@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Configuration & Infrastructure]] - `contains` [EXTRACTED]
 - [[Diagrams]] - `contains` [EXTRACTED]
-- [[Home]] - `contains` [EXTRACTED]
+- [[Home_1]] - `contains` [EXTRACTED]
 - [[Module Index]] - `contains` [EXTRACTED]
 - [[Navigate This Vault]] - `contains` [EXTRACTED]
 - [[Operations]] - `contains` [EXTRACTED]

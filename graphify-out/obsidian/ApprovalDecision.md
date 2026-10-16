@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/ingest_api/routes/approval.py"
+source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "DataLedger"
-location: "L67"
+community: "Request"
+location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/Request
 ---
 
 # ApprovalDecision
 
 ## Connections
-- [[decide_approval()]] - `references` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[User's decision on a pending approval request]] - `rationale_for` [EXTRACTED]
+- [[approval.py]] - `imports` [EXTRACTED]
+- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
+- [[test_approval_decision_valid()]] - `calls` [EXTRACTED]
+- [[test_main_simple.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataLedger
+#graphify/code #graphify/EXTRACTED #community/Request

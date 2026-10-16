@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/canary.py"
+source_file: "gateway/security/killswitch_config.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L50"
+community: "KillSwitchMonitor"
+location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/KillSwitchMonitor
 ---
 
 # Any
 
 ## Connections
-- [[dot-to_dict()_9]] - `references` [EXTRACTED]
+- [[dot-to_dict()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

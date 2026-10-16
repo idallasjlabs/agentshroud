@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/approval_queue/group_router.py"
+source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "GroupApprovalRouter"
-location: "L63"
+community: "create_auth_dependency"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/create_auth_dependency
 ---
 
 # ApprovalRequest
 
 ## Connections
-- [[dot-_build_group_reply_text()]] - `references` [EXTRACTED]
-- [[dot-_build_owner_dm_text()]] - `references` [EXTRACTED]
-- [[dot-route_approval()]] - `references` [EXTRACTED]
-- [[ApprovalRequest_5]] - `uses` [INFERRED]
+- [[submit_approval_request()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

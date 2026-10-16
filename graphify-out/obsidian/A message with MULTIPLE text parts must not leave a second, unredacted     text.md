@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "rationale"
-community: "A2APolicyEngine"
+community: "test_a2a_proxy.py"
 location: "L508"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/test_a2a_proxypy
 ---
 
 # A message with MULTIPLE text parts must not leave a second, unredacted     text
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_redact_message_text_clears_all_text_parts_not_just_the_first()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/rationale #graphify/EXTRACTED #community/test_a2a_proxypy

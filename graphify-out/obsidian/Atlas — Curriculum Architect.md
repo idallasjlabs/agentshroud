@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-atlas/README.md"
+source_file: "docker/config/openclaw/skills/i-atlas/README.md"
 type: "document"
 community: "Atlas — Curriculum Architect"
 location: "L1"
@@ -12,10 +12,10 @@ tags:
 # Atlas — Curriculum Architect
 
 ## Connections
-- [[dot-agentsskillsi-atlasREADME]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_17]] - `contains` [EXTRACTED]
-- [[Related Skills_3]] - `contains` [EXTRACTED]
-- [[Usage_7]] - `contains` [EXTRACTED]
+- [[Purpose_28]] - `contains` [EXTRACTED]
+- [[Related Skills_17]] - `contains` [EXTRACTED]
+- [[Usage_20]] - `contains` [EXTRACTED]
+- [[openclawskillsi-atlasREADME]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

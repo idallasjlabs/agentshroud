@@ -1,19 +1,18 @@
 ---
-source_file: "docker/README.md"
+source_file: "README.md"
 type: "document"
-community: "AgentShroud Docker Configuration"
-location: "L107"
+community: "AgentShroud™ README"
+location: "L100"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Docker_Configuration
+  - community/AgentShroud_README
 ---
 
 # Architecture
 
 ## Connections
-- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
-- [[Container Stack]] - `contains` [EXTRACTED]
-- [[Security Features (Implemented)]] - `contains` [EXTRACTED]
+- [[75 Security Modules]] - `shares_data_with` [EXTRACTED]
+- [[AgentShroud™ README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_README

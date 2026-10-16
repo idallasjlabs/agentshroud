@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/ingest_api/alert_telegram_relay.py"
+source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "AlertTelegramRelay"
-location: "L55"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertTelegramRelay
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Any
 
 ## Connections
-- [[dot-__call__()_5]] - `references` [EXTRACTED]
-- [[dot-__init__()_81]] - `references` [EXTRACTED]
-- [[dot-_clean_tool()]] - `references` [EXTRACTED]
-- [[dot-_coerce()]] - `references` [EXTRACTED]
-- [[dot-_handle()]] - `references` [EXTRACTED]
+- [[dot-__init__()_100]] - `references` [EXTRACTED]
+- [[dot-get_protection_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

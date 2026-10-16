@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: ".decide"
-location: "L71"
+community: "TestSSRFDetection"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/decide
+  - community/TestSSRFDetection
 ---
 
 # ApprovalQueueItem
 
 ## Connections
-- [[dot-decide()]] - `references` [EXTRACTED]
-- [[dot-get_item()]] - `references` [EXTRACTED]
-- [[dot-get_pending()]] - `references` [EXTRACTED]
-- [[dot-submit()]] - `references` [EXTRACTED]
+- [[dot-load_all()]] - `references` [EXTRACTED]
+- [[dot-load_pending()]] - `references` [EXTRACTED]
+- [[dot-save()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/decide
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

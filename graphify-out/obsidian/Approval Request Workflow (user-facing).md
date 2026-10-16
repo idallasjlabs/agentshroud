@@ -1,11 +1,11 @@
 ---
 source_file: "docs/user-guide.md"
 type: "concept"
-community: "34 Security Modules Pipeline (P0-P3)"
+community: "Slack Channel Setup"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/34_Security_Modules_Pipeline_P0-P3
+  - community/Slack_Channel_Setup
 ---
 
 # Approval Request Workflow (user-facing)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SSH Auto-Approve Commands]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/34_Security_Modules_Pipeline_P0-P3
+#graphify/concept #graphify/INFERRED #community/Slack_Channel_Setup

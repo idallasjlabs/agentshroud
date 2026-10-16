@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "MultiTurnTracker"
-location: "L94"
+community: "DockerEngine"
+location: "L139"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/MultiTurnTracker
+  - graphify/INFERRED
+  - community/DockerEngine
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_118]] - `references` [EXTRACTED]
-- [[dot-get_global_stats()_1]] - `references` [EXTRACTED]
-- [[dot-get_session_stats()_1]] - `references` [EXTRACTED]
+- [[dot-inspect()_2]] - `references` [EXTRACTED]
+- [[ContainerEngine]] - `uses` [INFERRED]
+- [[ContainerInfo]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker
+#graphify/code #graphify/INFERRED #community/DockerEngine

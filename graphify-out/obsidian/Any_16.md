@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/tests/test_resource_guard_wiring.py"
+source_file: "gateway/cli/client.py"
 type: "code"
-community: "ResourceGuard"
-location: "L62"
+community: "SCLClient"
+location: "L23"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ResourceGuard
+  - graphify/EXTRACTED
+  - community/SCLClient
 ---
 
 # Any
 
 ## Connections
-- [[dot-_build_bridge()]] - `references` [EXTRACTED]
-- [[ResourceGuard]] - `uses` [INFERRED]
-- [[ResourceLimits]] - `uses` [INFERRED]
+- [[dot-_request()]] - `references` [EXTRACTED]
+- [[dot-delete()]] - `references` [EXTRACTED]
+- [[dot-get()]] - `references` [EXTRACTED]
+- [[dot-post()]] - `references` [EXTRACTED]
+- [[dot-put()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/SCLClient

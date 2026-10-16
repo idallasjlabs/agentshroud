@@ -18,8 +18,8 @@ tags:
 - [[Monitoring Integration]] - `contains` [EXTRACTED]
 - [[SECURITY_SCRIPTS_REFERENCE]] - `contains` [EXTRACTED]
 - [[Script Permissions]] - `contains` [EXTRACTED]
-- [[Troubleshooting_26]] - `contains` [EXTRACTED]
-- [[scan.sh_1]] - `contains` [EXTRACTED]
+- [[Troubleshooting_27]] - `contains` [EXTRACTED]
+- [[scan.sh]] - `contains` [EXTRACTED]
 - [[verify-security.sh]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Kill_Switch

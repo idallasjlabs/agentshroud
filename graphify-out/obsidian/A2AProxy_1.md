@@ -12,7 +12,7 @@ tags:
 # A2AProxy
 
 ## Connections
-- [[dot-__init__()_123]] - `method` [EXTRACTED]
+- [[dot-__init__()_57]] - `method` [EXTRACTED]
 - [[dot-_audit()_1]] - `method` [EXTRACTED]
 - [[dot-_record_trust_violation()]] - `method` [EXTRACTED]
 - [[dot-extract_text_for_pii_scan()]] - `method` [EXTRACTED]
@@ -26,7 +26,7 @@ tags:
 - [[A2APolicyEngine_2]] - `uses` [INFERRED]
 - [[A2AProxy]] - `uses` [INFERRED]
 - [[HermesA2AForwarder]] - `calls` [EXTRACTED]
-- [[Request_5]] - `uses` [INFERRED]
+- [[Request_2]] - `uses` [INFERRED]
 - [[Response_1]] - `uses` [INFERRED]
 - [[Terminates inbound A2A HTTP requests, enforces policy, forwards.      Usage]] - `rationale_for` [EXTRACTED]
 - [[TrustManager_2]] - `uses` [INFERRED]
@@ -34,8 +34,8 @@ tags:
 - [[ViolationType]] - `uses` [INFERRED]
 - [[_Event]] - `uses` [INFERRED]
 - [[_StubAuditStore]] - `uses` [INFERRED]
+- [[_StubForwarder]] - `uses` [INFERRED]
 - [[_StubForwarder_1]] - `uses` [INFERRED]
-- [[_StubForwarder_2]] - `uses` [INFERRED]
 - [[a2a_proxy.py]] - `contains` [EXTRACTED]
 - [[test_a2a_integration.py]] - `imports` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `imports` [EXTRACTED]

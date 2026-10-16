@@ -18,6 +18,6 @@ tags:
 - [[Context_3]] - `contains` [EXTRACTED]
 - [[Decision_3]] - `contains` [EXTRACTED]
 - [[Related_7]] - `contains` [EXTRACTED]
-- [[Status_2]] - `contains` [EXTRACTED]
+- [[Status_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy

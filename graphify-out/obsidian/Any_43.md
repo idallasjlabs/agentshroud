@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/proxy/mcp_inspector.py"
+source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "MCPInspector"
-location: "L140"
+community: "AppleContainerEngine"
+location: "L149"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/MCPInspector
+  - graphify/INFERRED
+  - community/AppleContainerEngine
 ---
 
 # Any
 
 ## Connections
-- [[dot-_redact_pii()]] - `references` [EXTRACTED]
-- [[dot-_scan_value()]] - `references` [EXTRACTED]
-- [[dot-inspect_tool_call()]] - `references` [EXTRACTED]
-- [[dot-inspect_tool_result()]] - `references` [EXTRACTED]
+- [[dot-inspect()_3]] - `references` [EXTRACTED]
+- [[ContainerEngine]] - `uses` [INFERRED]
+- [[ContainerInfo]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPInspector
+#graphify/code #graphify/INFERRED #community/AppleContainerEngine

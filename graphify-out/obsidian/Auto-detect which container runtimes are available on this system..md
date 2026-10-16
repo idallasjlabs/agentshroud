@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/__init__.py"
 type: "rationale"
-community: "test_runtime_engines.py"
+community: "get_engine"
 location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_runtime_enginespy
+  - community/get_engine
 ---
 
 # Auto-detect which container runtimes are available on this system.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[detect_runtime()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_runtime_enginespy
+#graphify/rationale #graphify/EXTRACTED #community/get_engine

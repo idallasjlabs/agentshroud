@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/context_guard.py"
+source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "PIIConfig"
-location: "L465"
+community: "AlertDispatcher"
+location: "L289"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/AlertDispatcher
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_attack_summary()]] - `references` [EXTRACTED]
+- [[dot-get_leakage_summary()]] - `references` [EXTRACTED]
+- [[dot-monitor_environment_access()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

@@ -1,29 +1,20 @@
 ---
-source_file: "gateway/security/key_rotation.py"
+source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "KeyRotationManager"
-location: "L110"
+community: "ResourceGuard"
+location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/ResourceGuard
 ---
 
 # Any
 
 ## Connections
-- [[dot-_generate_new_credential()]] - `references` [EXTRACTED]
-- [[dot-_validate_credential()]] - `references` [EXTRACTED]
-- [[dot-check_and_rotate_due_credentials()]] - `references` [EXTRACTED]
-- [[dot-cleanup_retired_credentials()]] - `references` [EXTRACTED]
-- [[dot-emergency_rotate_credential()]] - `references` [EXTRACTED]
-- [[dot-get_all_credentials_status()]] - `references` [EXTRACTED]
-- [[dot-get_credential_status()]] - `references` [EXTRACTED]
-- [[dot-get_health_score()]] - `references` [EXTRACTED]
-- [[dot-register_credential()]] - `references` [EXTRACTED]
-- [[dot-rotate_credential()]] - `references` [EXTRACTED]
-- [[dot-validate()]] - `references` [EXTRACTED]
-- [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
-- [[KeyRotationConfig_1]] - `uses` [INFERRED]
+- [[dot-_alert_high_usage()]] - `references` [EXTRACTED]
+- [[dot-_get_disk_io_stats()]] - `references` [EXTRACTED]
+- [[dot-add_alert_callback()]] - `references` [EXTRACTED]
+- [[dot-get_usage_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

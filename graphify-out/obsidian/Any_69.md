@@ -1,30 +1,20 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "AuditChain"
-location: "L88"
+community: "create_auth_dependency"
+location: "L347"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/AuditChain
+  - graphify/INFERRED
+  - community/create_auth_dependency
 ---
 
 # Any
 
 ## Connections
-- [[dot-_process_inbound_core()]] - `references` [EXTRACTED]
-- [[dot-_process_outbound_core()]] - `references` [EXTRACTED]
-- [[dot-append()_1]] - `references` [EXTRACTED]
-- [[dot-append_block()]] - `references` [EXTRACTED]
-- [[dot-append_owner_bypass()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_18]] - `references` [EXTRACTED]
-- [[dot-process_inbound()_6]] - `references` [EXTRACTED]
-- [[dot-process_outbound()_4]] - `references` [EXTRACTED]
-- [[dot-to_dict()_12]] - `references` [EXTRACTED]
-- [[BotIncidentSeverity]] - `uses` [INFERRED]
-- [[FilterResult_1]] - `uses` [INFERRED]
-- [[InjectionAction]] - `uses` [INFERRED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
-- [[ViolationType]] - `uses` [INFERRED]
+- [[dot-get_stats()_17]] - `references` [EXTRACTED]
+- [[LedgerConfig]] - `uses` [INFERRED]
+- [[LedgerEntry]] - `uses` [INFERRED]
+- [[LedgerQueryResponse]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/INFERRED #community/create_auth_dependency

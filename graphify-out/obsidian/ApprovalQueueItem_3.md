@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/tests/test_approval_store.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L19"
+community: "UserSessionManager"
+location: "L71"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ApprovalQueueConfig
+  - graphify/EXTRACTED
+  - community/UserSessionManager
 ---
 
 # ApprovalQueueItem
 
 ## Connections
-- [[ApprovalQueueItem_4]] - `uses` [INFERRED]
-- [[ApprovalStore]] - `uses` [INFERRED]
-- [[AuditStore_1]] - `uses` [INFERRED]
-- [[_make_item()]] - `references` [EXTRACTED]
+- [[dot-decide()_1]] - `references` [EXTRACTED]
+- [[dot-get_item()_1]] - `references` [EXTRACTED]
+- [[dot-get_pending()_1]] - `references` [EXTRACTED]
+- [[dot-submit()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

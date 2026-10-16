@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/runtime/podman_engine.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "PodmanEngine"
-location: "L159"
+community: "dashboard_endpoints.py"
+location: "L67"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/PodmanEngine
+  - graphify/EXTRACTED
+  - community/dashboard_endpointspy
 ---
 
 # Any
 
 ## Connections
-- [[dot-inspect()_1]] - `references` [EXTRACTED]
-- [[ContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo_3]] - `uses` [INFERRED]
+- [[dot-recent()]] - `references` [EXTRACTED]
+- [[dot-tail()]] - `references` [EXTRACTED]
+- [[_check_host()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PodmanEngine
+#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy

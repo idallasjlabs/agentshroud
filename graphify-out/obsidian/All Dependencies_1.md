@@ -16,6 +16,6 @@ tags:
 - [[Bot  Docker Container Dependencies]] - `contains` [EXTRACTED]
 - [[Dependency Notes]] - `contains` [EXTRACTED]
 - [[Gateway Python Dependencies (`gatewayrequirements.txt`)]] - `contains` [EXTRACTED]
-- [[Related Notes_52]] - `contains` [EXTRACTED]
+- [[Related Notes_48]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Gateway_Python_Dependencies_gateway/requirementstxt

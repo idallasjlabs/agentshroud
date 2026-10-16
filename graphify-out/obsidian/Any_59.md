@@ -1,22 +1,19 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "gateway/proxy/canvas_proxy.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L58"
+community: "canvas_proxy_app"
+location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/canvas_proxy_app
 ---
 
 # Any
 
 ## Connections
-- [[dot-_format_alert_message()]] - `references` [EXTRACTED]
-- [[dot-_log_alert()]] - `references` [EXTRACTED]
-- [[dot-_send_notification()]] - `references` [EXTRACTED]
-- [[dot-dispatch()]] - `references` [EXTRACTED]
-- [[dot-get_digest()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_16]] - `references` [EXTRACTED]
+- [[_handle_http()]] - `references` [EXTRACTED]
+- [[_handle_websocket()]] - `references` [EXTRACTED]
+- [[canvas_proxy_app()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/canvas_proxy_app

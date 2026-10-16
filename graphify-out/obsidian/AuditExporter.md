@@ -12,7 +12,7 @@ tags:
 # AuditExporter
 
 ## Connections
-- [[dot-__init__()_66]] - `method` [EXTRACTED]
+- [[dot-__init__()_201]] - `method` [EXTRACTED]
 - [[dot-_export_cef()]] - `method` [EXTRACTED]
 - [[dot-_export_json()]] - `method` [EXTRACTED]
 - [[dot-_export_jsonld()]] - `method` [EXTRACTED]
@@ -25,8 +25,8 @@ tags:
 - [[dot-test_tamper_detection()]] - `calls` [EXTRACTED]
 - [[dot-test_verify_export_integrity()]] - `calls` [EXTRACTED]
 - [[dot-verify_export_integrity()]] - `method` [EXTRACTED]
-- [[AuditEvent]] - `uses` [INFERRED]
-- [[AuditStore_1]] - `uses` [INFERRED]
+- [[AuditEvent_1]] - `uses` [INFERRED]
+- [[AuditStore]] - `uses` [INFERRED]
 - [[Exports audit events in various compliance formats.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditEvent]] - `uses` [INFERRED]
 - [[TestAuditExporter]] - `uses` [INFERRED]

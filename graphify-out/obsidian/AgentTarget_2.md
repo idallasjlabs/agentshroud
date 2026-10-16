@@ -12,7 +12,7 @@ tags:
 # AgentTarget
 
 ## Connections
-- [[dot-__init__()_183]] - `calls` [EXTRACTED]
+- [[dot-__init__()_170]] - `calls` [EXTRACTED]
 - [[dot-_build_forward_payload()]] - `references` [EXTRACTED]
 - [[dot-forward_to_agent()]] - `references` [EXTRACTED]
 - [[dot-forward_to_agent_stream()]] - `references` [EXTRACTED]

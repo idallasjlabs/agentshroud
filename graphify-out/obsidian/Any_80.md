@@ -1,29 +1,33 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L119"
+community: "._filter_outbound"
+location: "L2713"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/MCPPermissionManager
+  - graphify/EXTRACTED
+  - community/_filter_outbound
 ---
 
 # Any
 
 ## Connections
-- [[dot-_execute_tool_call()]] - `references` [EXTRACTED]
-- [[dot-_extract_egress_targets()]] - `references` [EXTRACTED]
-- [[dot-_sanitize_admin_private_data()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_19]] - `references` [EXTRACTED]
-- [[dot-send_request()]] - `references` [EXTRACTED]
-- [[dot-send_request()_1]] - `references` [EXTRACTED]
-- [[InspectionResult_1]] - `uses` [INFERRED]
-- [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector]] - `uses` [INFERRED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxyConfig_3]] - `uses` [INFERRED]
-- [[MCPServerConfig_2]] - `uses` [INFERRED]
-- [[MCPTransport]] - `uses` [INFERRED]
+- [[dot-_apply_outbound_model_error_rewrites()]] - `references` [EXTRACTED]
+- [[dot-_apply_outbound_status_notices()]] - `references` [EXTRACTED]
+- [[dot-_build_ack_only_updates()]] - `references` [EXTRACTED]
+- [[dot-_check_collaborator_leakage()]] - `references` [EXTRACTED]
+- [[dot-_extract_embedded_tool_call_json()]] - `references` [EXTRACTED]
+- [[dot-_handle_outbound_tool_calls()]] - `references` [EXTRACTED]
+- [[dot-_parse_tool_call_json()]] - `references` [EXTRACTED]
+- [[dot-_redact_owner_ids()]] - `references` [EXTRACTED]
+- [[dot-_resolve_text_field()]] - `references` [EXTRACTED]
+- [[dot-_trigger_web_fetch_approval()]] - `references` [EXTRACTED]
+- [[dot-_trigger_web_search_log()]] - `references` [EXTRACTED]
+- [[ApprovalMode]] - `uses` [INFERRED]
+- [[DelegationPrivilege]] - `uses` [INFERRED]
+- [[GroupWorkspaceManager]] - `uses` [INFERRED]
+- [[ProgressiveLockdown]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[RateLimiter_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/_filter_outbound

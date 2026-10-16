@@ -12,6 +12,6 @@ tags:
 # A single competitor record in a competitive intel report.
 
 ## Connections
-- [[CompetitorEntry]] - `rationale_for` [EXTRACTED]
+- [[CompetitorEntry_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/CompetitiveIntelReport

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
+source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
 type: "document"
-community: "Technical Details"
-location: "L153"
+community: "Error Index.md"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Details
+  - community/Error_Indexmd
 ---
 
 # Architecture
 
 ## Connections
-- [[Technical Details]] - `contains` [EXTRACTED]
+- [[Presidio Analyzer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Details
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

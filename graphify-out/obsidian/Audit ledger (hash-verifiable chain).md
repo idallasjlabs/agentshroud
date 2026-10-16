@@ -12,6 +12,6 @@ tags:
 
 ## Connections
 - [[AgentShroud Security Perimeter]] - `rationale_for` [EXTRACTED]
-- [[ledger.py]] - `conceptually_related_to` [INFERRED]
+- [[ledger.py_2]] - `conceptually_related_to` [INFERRED]
 
 #graphify/rationale #graphify/EXTRACTED #community/mainpymd

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Cross-Account & Future Proofing]] - `contains` [EXTRACTED]
 - [[Decision Framework]] - `contains` [EXTRACTED]
-- [[Deliverables_1]] - `contains` [EXTRACTED]
+- [[Deliverables_2]] - `contains` [EXTRACTED]
 - [[Expertise]] - `contains` [EXTRACTED]
 - [[FY26 Cost Reduction Context_1]] - `contains` [EXTRACTED]
 - [[Guardrails_4]] - `contains` [EXTRACTED]

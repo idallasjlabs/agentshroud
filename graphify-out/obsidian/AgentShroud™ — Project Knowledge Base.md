@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[About the Creator]] - `contains` [EXTRACTED]
-- [[Architecture_12]] - `contains` [EXTRACTED]
+- [[Architecture_13]] - `contains` [EXTRACTED]
 - [[Current Status_7]] - `contains` [EXTRACTED]
 - [[Frequently Asked Questions]] - `contains` [EXTRACTED]
 - [[How to Contribute]] - `contains` [EXTRACTED]

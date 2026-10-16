@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/proxy/mcp_config.py"
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L98"
+community: "First Time Setup"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/First_Time_Setup
 ---
 
 # Any
 
 ## Connections
-- [[dot-from_dict()_11]] - `references` [EXTRACTED]
+- [[dot-_format_alert_message()]] - `references` [EXTRACTED]
+- [[dot-_log_alert()]] - `references` [EXTRACTED]
+- [[dot-_send_notification()]] - `references` [EXTRACTED]
+- [[dot-dispatch()]] - `references` [EXTRACTED]
+- [[dot-get_digest()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_18]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/First_Time_Setup
