@@ -12,7 +12,7 @@ tags:
 # SlackSocketClient
 
 ## Connections
-- [[dot-__init__()_56]] - `method` [EXTRACTED]
+- [[dot-__init__()_65]] - `method` [EXTRACTED]
 - [[dot-_connect_and_handle()]] - `method` [EXTRACTED]
 - [[dot-_get_wss_url()]] - `method` [EXTRACTED]
 - [[dot-run()_1]] - `method` [EXTRACTED]

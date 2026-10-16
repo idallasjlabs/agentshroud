@@ -1,17 +1,18 @@
 ---
-source_file: "docs/operations/deployment-procedure.md"
+source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
-location: "L475"
+community: "Dockerfile — Gateway"
+location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/Dockerfile__Gateway
 ---
 
 # Security Hardening
 
 ## Connections
-- [[Production Hardening]] - `contains` [EXTRACTED]
+- [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
+- [[Dockerfile.gateway vault note]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Gateway

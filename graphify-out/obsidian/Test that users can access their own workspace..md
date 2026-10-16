@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "TestMiddlewareSessionEnforcement"
+community: "UserSessionManager"
 location: "L450"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestMiddlewareSessionEnforcement
+  - community/UserSessionManager
 ---
 
 # Test that users can access their own workspace.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_middleware_own_workspace_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestMiddlewareSessionEnforcement
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

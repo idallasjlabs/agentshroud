@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/LOG_LEVEL.md"
+source_file: "docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md"
 type: "document"
-community: "agentshroud.yaml.md"
-location: "L24"
+community: "TELEGRAM_API_BASE_URL"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroudyamlmd
+  - community/TELEGRAM_API_BASE_URL
 ---
 
 # Set In
 
 ## Connections
-- [[LOG_LEVEL_1]] - `contains` [EXTRACTED]
+- [[TELEGRAM_API_BASE_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroudyamlmd
+#graphify/document #graphify/EXTRACTED #community/TELEGRAM_API_BASE_URL

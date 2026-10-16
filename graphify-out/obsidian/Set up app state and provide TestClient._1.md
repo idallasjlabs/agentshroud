@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "rationale"
-community: "DataLedger"
+community: "ApprovalQueueConfig"
 location: "L93"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/ApprovalQueueConfig
 ---
 
 # Set up app state and provide TestClient.
 
 ## Connections
-- [[client()_18]] - `rationale_for` [EXTRACTED]
+- [[client()_10]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DataLedger
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

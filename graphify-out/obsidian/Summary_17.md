@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
+source_file: "reports/upgrade-2026-09-06-prod.md"
 type: "document"
-community: "4. Environment Variables"
-location: "L11"
+community: "AgentShroud Weekly Upgrade — 2026-09-06"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/4_Environment_Variables
+  - community/AgentShroud_Weekly_Upgrade__2026-09-06
 ---
 
 # Summary
 
 ## Connections
-- [[4. Environment Variables]] - `contains` [EXTRACTED]
+- [[AgentShroud Weekly Upgrade — 2026-09-06]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/4_Environment_Variables
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade__2026-09-06

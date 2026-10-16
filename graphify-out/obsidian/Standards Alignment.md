@@ -12,6 +12,6 @@ tags:
 # Standards Alignment
 
 ## Connections
-- [[Compliance]] - `contains` [EXTRACTED]
+- [[Compliance_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/SecureBrowser_Security_Policies

@@ -12,7 +12,7 @@ tags:
 # ScanRequest
 
 ## Connections
-- [[dot-scan()_4]] - `references` [EXTRACTED]
+- [[dot-scan()_2]] - `references` [EXTRACTED]
 - [[Request to scan a message.]] - `rationale_for` [EXTRACTED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
 - [[_StubForwarder_1]] - `uses` [INFERRED]

@@ -1,17 +1,17 @@
 ---
-source_file: "reports/upgrade-2026-09-06-prod.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "document"
-community: "AgentShroud Weekly Upgrade — 2026-09-06"
-location: "L3"
+community: "agentshroud-gateway"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Weekly_Upgrade__2026-09-06
+  - community/agentshroud-gateway
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud Weekly Upgrade — 2026-09-06_1]] - `contains` [EXTRACTED]
+- [[agentshroud-gateway_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade__2026-09-06
+#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway

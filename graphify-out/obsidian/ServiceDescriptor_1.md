@@ -12,7 +12,7 @@ tags:
 # ServiceDescriptor
 
 ## Connections
-- [[dot-test_defaults()_2]] - `calls` [EXTRACTED]
+- [[dot-test_defaults()_1]] - `calls` [EXTRACTED]
 - [[dot-test_filters_services_by_bot_image()]] - `calls` [EXTRACTED]
 - [[dot-test_no_bot_id_returns_all_services()]] - `calls` [EXTRACTED]
 - [[dot-test_running_service()]] - `calls` [EXTRACTED]
@@ -20,7 +20,7 @@ tags:
 - [[dot-test_stopped_service()]] - `calls` [EXTRACTED]
 - [[dot-test_unhealthy_service()]] - `calls` [EXTRACTED]
 - [[dot-test_with_resource_usage()]] - `calls` [EXTRACTED]
-- [[Any_75]] - `uses` [INFERRED]
+- [[Any_25]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[HealthStatus]] - `uses` [INFERRED]
 - [[ServiceDescriptor]] - `uses` [INFERRED]

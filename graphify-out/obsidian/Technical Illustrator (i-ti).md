@@ -14,12 +14,12 @@ tags:
 - [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[dot-agentsskillsi-tiREADME]] - `contains` [EXTRACTED]
 - [[Mindmap Architect (MM)]] - `references` [EXTRACTED]
+- [[Purpose_162]] - `contains` [EXTRACTED]
 - [[Purpose_163]] - `contains` [EXTRACTED]
-- [[Purpose_164]] - `contains` [EXTRACTED]
 - [[Related Skills_105]] - `contains` [EXTRACTED]
 - [[Related Skills_106]] - `contains` [EXTRACTED]
-- [[Usage_114]] - `contains` [EXTRACTED]
 - [[Usage_115]] - `contains` [EXTRACTED]
+- [[Usage_116]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_i-ti

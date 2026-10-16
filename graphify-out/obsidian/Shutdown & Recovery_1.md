@@ -12,11 +12,11 @@ tags:
 # Shutdown & Recovery
 
 ## Connections
-- [[Crash Recovery]] - `contains` [EXTRACTED]
+- [[Crash Recovery_2]] - `contains` [EXTRACTED]
 - [[Data Integrity After Crash]] - `contains` [EXTRACTED]
 - [[Graceful Shutdown_1]] - `contains` [EXTRACTED]
 - [[Kill Switch (Emergency Stop)]] - `contains` [EXTRACTED]
-- [[Related Notes_33]] - `contains` [EXTRACTED]
+- [[Related Notes_47]] - `contains` [EXTRACTED]
 - [[Shutdown & Recovery]] - `contains` [EXTRACTED]
 - [[State After Recovery]] - `contains` [EXTRACTED]
 

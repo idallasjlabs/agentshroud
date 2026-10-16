@@ -12,7 +12,7 @@ tags:
 # Security Findings
 
 ## Connections
-- [[AgentShroud Weekly Upgrade — 2026-09-06_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Weekly Upgrade — 2026-09-06]] - `contains` [EXTRACTED]
 - [[Application CVE registry (OpenClaw  Hermes agents, per `docssecuritycve-mitigation-matrix.md`)]] - `contains` [EXTRACTED]
 - [[Fresh Trivy scans (run today, CRITICAL+HIGH only, `--scanners vuln`)]] - `contains` [EXTRACTED]
 - [[GitHub-hosted findings]] - `contains` [EXTRACTED]

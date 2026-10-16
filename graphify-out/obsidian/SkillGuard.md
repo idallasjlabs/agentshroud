@@ -47,6 +47,6 @@ tags:
 - [[Severity]] - `uses` [INFERRED]
 - [[SkillGuard_1]] - `uses` [INFERRED]
 - [[SkillScanError]] - `uses` [INFERRED]
-- [[guard()_3]] - `references` [EXTRACTED]
+- [[guard()_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SkillGuard

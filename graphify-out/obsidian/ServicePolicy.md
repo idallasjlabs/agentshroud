@@ -12,10 +12,10 @@ tags:
 # ServicePolicy
 
 ## Connections
-- [[dot-from_dict()_2]] - `calls` [EXTRACTED]
-- [[dot-from_dict()_3]] - `method` [EXTRACTED]
+- [[dot-from_dict()_10]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_11]] - `method` [EXTRACTED]
 - [[Privacy policy for a single service.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[privacy_policy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

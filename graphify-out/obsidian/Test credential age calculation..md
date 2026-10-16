@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "CredentialInfo"
+community: "KeyRotationManager"
 location: "L101"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CredentialInfo
+  - community/KeyRotationManager
 ---
 
 # Test credential age calculation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_age_calculation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CredentialInfo
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager

@@ -12,6 +12,6 @@ tags:
 # Set collaboration mode for a group.
 
 ## Connections
-- [[set_mode()]] - `rationale_for` [EXTRACTED]
+- [[set_mode()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/cli/mainpy

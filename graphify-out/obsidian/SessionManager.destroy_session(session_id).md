@@ -12,6 +12,6 @@ tags:
 # SessionManager.destroy_session(session_id)
 
 ## Connections
-- [[Function Details_12]] - `contains` [EXTRACTED]
+- [[Function Details_11]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

@@ -1,39 +1,39 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "StdioConnection"
+community: "MCPPermissionManager"
 location: "L92"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/StdioConnection
+  - community/MCPPermissionManager
 ---
 
 # StdioConnection
 
 ## Connections
-- [[dot-__init__()_152]] - `method` [EXTRACTED]
+- [[dot-__init__()_171]] - `method` [EXTRACTED]
 - [[dot-get_or_create()]] - `references` [EXTRACTED]
 - [[dot-is_running()]] - `method` [EXTRACTED]
 - [[dot-send_request()]] - `method` [EXTRACTED]
 - [[dot-start()_1]] - `method` [EXTRACTED]
-- [[dot-stop()_4]] - `method` [EXTRACTED]
+- [[dot-stop()_1]] - `method` [EXTRACTED]
 - [[dot-test_start_send_and_stop()]] - `calls` [EXTRACTED]
 - [[dot-test_start_without_env_passes_none()]] - `calls` [EXTRACTED]
 - [[dot-test_stop_kills_on_wait_timeout()]] - `calls` [EXTRACTED]
-- [[Exception]] - `uses` [INFERRED]
+- [[Exception_3]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
 - [[InspectionResult_1]] - `uses` [INFERRED]
 - [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector]] - `uses` [INFERRED]
+- [[MCPInspector_1]] - `uses` [INFERRED]
 - [[MCPPermissionManager_1]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPProxyConfig_2]] - `uses` [INFERRED]
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]
-- [[MCPToolCall_1]] - `uses` [INFERRED]
+- [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
 - [[Manages a stdio connection to an MCP server process.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalQueue]] - `uses` [INFERRED]
@@ -51,4 +51,4 @@ tags:
 - [[mcp_proxy.py]] - `contains` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/StdioConnection
+#graphify/code #graphify/INFERRED #community/MCPPermissionManager

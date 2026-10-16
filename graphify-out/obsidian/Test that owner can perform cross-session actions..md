@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "TestMiddlewareSessionEnforcement"
+community: "UserSessionManager"
 location: "L428"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestMiddlewareSessionEnforcement
+  - community/UserSessionManager
 ---
 
 # Test that owner can perform cross-session actions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_middleware_owner_bypass()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestMiddlewareSessionEnforcement
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

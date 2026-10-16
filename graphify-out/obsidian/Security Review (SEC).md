@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[dot-agentsskillsi-secREADME]] - `contains` [EXTRACTED]
-- [[Purpose_1]] - `contains` [EXTRACTED]
+- [[Purpose]] - `contains` [EXTRACTED]
 - [[Related Skills]] - `contains` [EXTRACTED]
 - [[Usage]] - `contains` [EXTRACTED]
 - [[hermesagentsi-security-reviewer]] - `contains` [EXTRACTED]

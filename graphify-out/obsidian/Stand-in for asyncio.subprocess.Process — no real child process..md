@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "rationale"
-community: "FakeProcess"
+community: "MCPPermissionManager"
 location: "L94"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FakeProcess
+  - community/MCPPermissionManager
 ---
 
 # Stand-in for asyncio.subprocess.Process — no real child process.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FakeProcess]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FakeProcess
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

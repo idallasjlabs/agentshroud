@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "EgressFilter"
+community: "EgressFilterConfig"
 location: "L126"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/EgressFilterConfig
 ---
 
 # Set the Telegram notifier for egress approval requests.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-set_notifier()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilter
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

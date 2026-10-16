@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "OutboundInfoFilter"
+community: "AuditChain"
 location: "L36"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/OutboundInfoFilter
+  - community/AuditChain
 ---
 
 # ScanResult
 
 ## Connections
 - [[dot-_blocking_prompt_guard()]] - `calls` [EXTRACTED]
-- [[dot-scan()_1]] - `references` [EXTRACTED]
-- [[dot-scan_tool_result()]] - `references` [EXTRACTED]
-- [[TestAuditChain_1]] - `uses` [INFERRED]
+- [[dot-scan()_4]] - `references` [EXTRACTED]
+- [[dot-scan_tool_result()_3]] - `references` [EXTRACTED]
+- [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestContextGuardInPipeline]] - `uses` [INFERRED]
 - [[TestContextIntegrityInPipeline]] - `uses` [INFERRED]
@@ -30,4 +30,4 @@ tags:
 - [[prompt_guard.py]] - `contains` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/OutboundInfoFilter
+#graphify/code #graphify/INFERRED #community/AuditChain

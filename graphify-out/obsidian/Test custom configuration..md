@@ -12,6 +12,6 @@ tags:
 # Test custom configuration.
 
 ## Connections
-- [[dot-test_custom_config()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-test_custom_config()_3]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

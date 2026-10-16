@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "rationale"
-community: "TestMultiTurnTracker"
+community: "MultiTurnTracker"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestMultiTurnTracker
+  - community/MultiTurnTracker
 ---
 
 # Test that disabled tracker doesn't track or score.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_disabled_tracker()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestMultiTurnTracker
+#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker

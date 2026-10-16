@@ -24,7 +24,7 @@ tags:
 - [[Security Configuration]] - `contains` [EXTRACTED]
 - [[Security Guarantees]] - `contains` [EXTRACTED]
 - [[See Also]] - `contains` [EXTRACTED]
-- [[Troubleshooting_9]] - `contains` [EXTRACTED]
+- [[Troubleshooting_7]] - `contains` [EXTRACTED]
 - [[Usage_54]] - `contains` [EXTRACTED]
 - [[securebrowserSKILL]] - `contains` [EXTRACTED]
 

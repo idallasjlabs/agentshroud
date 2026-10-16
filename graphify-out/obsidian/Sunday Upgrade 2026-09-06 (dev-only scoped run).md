@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-06.md"
 type: "document"
-community: "Hermes Cron Dedupe (dev)"
+community: "ESP32-S3-BOX-3 Voice Terminal"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Dedupe_dev
+  - community/ESP32-S3-BOX-3_Voice_Terminal
 ---
 
 # Sunday Upgrade 2026-09-06 (dev-only scoped run)
@@ -15,4 +15,4 @@ tags:
 - [[DevProd Mapping Keyed Off $USER via scriptsasb]] - `references` [EXTRACTED]
 - [[Voice-Gateway Bookworm Rebase Measured And Reverted]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Dedupe_dev
+#graphify/document #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal

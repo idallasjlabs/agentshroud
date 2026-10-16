@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Collaborators_1]] - `contains` [EXTRACTED]
-- [[Prerequisites_4]] - `contains` [EXTRACTED]
+- [[Prerequisites_5]] - `contains` [EXTRACTED]
 - [[Step 1 Create a Bot]] - `contains` [EXTRACTED]
 - [[Step 2 Write the Token to Secrets]] - `contains` [EXTRACTED]
 - [[Step 3 Find Your Telegram User ID]] - `contains` [EXTRACTED]

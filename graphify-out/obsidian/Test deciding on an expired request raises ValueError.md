@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "ApprovalRequest"
+community: "ApprovalQueueConfig"
 location: "L262"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/ApprovalQueueConfig
 ---
 
 # Test deciding on an expired request raises ValueError
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_decide_expired_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

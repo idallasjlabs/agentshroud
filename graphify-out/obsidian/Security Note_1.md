@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
+source_file: "docs/vault/05 - Dependencies/httpx.md"
 type: "document"
-community: "OpenClaw Control UI Pairing Instructions"
-location: "L80"
+community: "All Dependencies.md"
+location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Control_UI_Pairing_Instructions
+  - community/All_Dependenciesmd
 ---
 
 # Security Note
 
 ## Connections
-- [[OpenClaw Control UI Pairing Instructions]] - `contains` [EXTRACTED]
+- [[httpx_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Control_UI_Pairing_Instructions
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

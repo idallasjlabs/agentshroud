@@ -12,6 +12,6 @@ tags:
 # Set AGENTSHROUD_MODE at runtime with automatic revert to 'enforce'.
 
 ## Connections
-- [[set_mode()_1]] - `rationale_for` [EXTRACTED]
+- [[set_mode()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_observatory_modepy

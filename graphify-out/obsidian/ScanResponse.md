@@ -12,7 +12,7 @@ tags:
 # ScanResponse
 
 ## Connections
-- [[dot-scan()_4]] - `references` [EXTRACTED]
+- [[dot-scan()_2]] - `references` [EXTRACTED]
 - [[Response from sidecar scan.]] - `rationale_for` [EXTRACTED]
 - [[sidecar.py]] - `contains` [EXTRACTED]
 

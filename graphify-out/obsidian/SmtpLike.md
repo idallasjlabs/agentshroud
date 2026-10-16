@@ -12,8 +12,8 @@ tags:
 # SmtpLike
 
 ## Connections
-- [[dot-login()]] - `method` [EXTRACTED]
-- [[dot-sendmail()]] - `method` [EXTRACTED]
+- [[dot-login()_1]] - `method` [EXTRACTED]
+- [[dot-sendmail()_1]] - `method` [EXTRACTED]
 - [[Protocol]] - `inherits` [EXTRACTED]
 - [[The subset of ``smtplib.SMTP_SSL`` the service uses.]] - `rationale_for` [EXTRACTED]
 - [[email_service.py]] - `contains` [EXTRACTED]

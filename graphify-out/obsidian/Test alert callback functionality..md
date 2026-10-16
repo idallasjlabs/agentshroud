@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_multi_turn_tracker.py"
+source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "TestMultiTurnTracker"
-location: "L380"
+community: "TestToolChainAnalyzer"
+location: "L321"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestMultiTurnTracker
+  - community/TestToolChainAnalyzer
 ---
 
 # Test alert callback functionality.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_alert_callbacks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestMultiTurnTracker
+#graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer

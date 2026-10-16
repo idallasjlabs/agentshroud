@@ -12,7 +12,7 @@ tags:
 # Security Review (SEC)
 
 ## Connections
-- [[Purpose_53]] - `contains` [EXTRACTED]
+- [[Purpose_58]] - `contains` [EXTRACTED]
 - [[Related Skills_46]] - `contains` [EXTRACTED]
 - [[Usage_49]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]

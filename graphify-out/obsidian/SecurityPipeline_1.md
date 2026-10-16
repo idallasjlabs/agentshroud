@@ -18,9 +18,9 @@ tags:
 - [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[PipelineAction]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
-- [[_make_pipeline()]] - `references` [EXTRACTED]
+- [[_make_pipeline()_3]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/PIIConfig

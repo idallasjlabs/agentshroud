@@ -12,7 +12,7 @@ tags:
 # Set up test environment.
 
 ## Connections
-- [[dot-setup_method()_24]] - `rationale_for` [EXTRACTED]
-- [[dot-setup_method()_23]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_18]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_17]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Action

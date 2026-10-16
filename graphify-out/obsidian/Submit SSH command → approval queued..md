@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "rationale"
-community: "test_e2e.py"
+community: "ForwardRequest"
 location: "L115"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_e2epy
+  - community/ForwardRequest
 ---
 
 # Submit SSH command → approval queued.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ssh_submit_queues_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_e2epy
+#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest

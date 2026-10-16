@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "TestMiddlewareSessionEnforcement"
+community: "UserSessionManager"
 location: "L503"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestMiddlewareSessionEnforcement
+  - community/UserSessionManager
 ---
 
 # Test complete isolation between two users.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_complete_user_isolation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestMiddlewareSessionEnforcement
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

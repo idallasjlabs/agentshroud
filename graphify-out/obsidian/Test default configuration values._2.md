@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
+source_file: "gateway/tests/test_egress_enforce.py"
 type: "rationale"
-community: "ToolResultSanitizer"
-location: "L21"
+community: "EgressFilterConfig"
+location: "L31"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/EgressFilterConfig
 ---
 
 # Test default configuration values.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_default_config()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

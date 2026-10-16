@@ -12,6 +12,6 @@ tags:
 # Stop a running container.
 
 ## Connections
-- [[dot-stop()_6]] - `rationale_for` [EXTRACTED]
+- [[dot-stop()_7]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ContainerEngine

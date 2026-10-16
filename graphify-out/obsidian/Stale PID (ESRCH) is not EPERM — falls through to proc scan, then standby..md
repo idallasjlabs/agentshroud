@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "rationale"
-community: "_patch_open"
+community: "ServiceManager"
 location: "L274"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_patch_open
+  - community/ServiceManager
 ---
 
 # Stale PID (ESRCH) is not EPERM — falls through to /proc scan, then standby.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_esrch_falls_through_to_proc_scan()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_patch_open
+#graphify/rationale #graphify/EXTRACTED #community/ServiceManager

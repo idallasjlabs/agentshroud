@@ -12,7 +12,7 @@ tags:
 # System Audit Vault
 
 ## Connections
-- [[Purpose_28]] - `contains` [EXTRACTED]
+- [[Purpose_33]] - `contains` [EXTRACTED]
 - [[Related Skills_21]] - `contains` [EXTRACTED]
 - [[Usage_24]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Brand Applications"
+community: "AgentShroud Brand Guidelines"
 location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Brand_Applications
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Social Media
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Brand Applications]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Brand_Applications
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

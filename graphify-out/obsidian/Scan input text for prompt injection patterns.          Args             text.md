@@ -12,6 +12,6 @@ tags:
 # Scan input text for prompt injection patterns.          Args:             text:
 
 ## Connections
-- [[dot-scan()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-scan()_4]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/OutboundInfoFilter

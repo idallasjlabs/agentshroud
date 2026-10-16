@@ -12,6 +12,6 @@ tags:
 # SubagentMonitor.check_tool_usage(session_id, agent_id, tool_name, required_trust)
 
 ## Connections
-- [[Function Details_13]] - `contains` [EXTRACTED]
+- [[Function Details_12]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

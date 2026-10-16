@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "rationale"
-community: "TestMultiTurnTracker"
+community: "MultiTurnTracker"
 location: "L284"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestMultiTurnTracker
+  - community/MultiTurnTracker
 ---
 
 # Test analysis of agent responses for potential leaks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_agent_response_analysis()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestMultiTurnTracker
+#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker

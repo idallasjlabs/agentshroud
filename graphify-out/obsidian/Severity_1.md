@@ -1,19 +1,31 @@
 ---
-source_file: "gateway/soc/event_adapter.py"
+source_file: "gateway/soc/models.py"
 type: "code"
-community: "Enum"
-location: "L23"
+community: "test_soc_realtime_coverage.py"
+location: "L31"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Enum
+  - graphify/EXTRACTED
+  - community/test_soc_realtime_coveragepy
 ---
 
 # Severity
 
 ## Connections
-- [[SecurityEvent_1]] - `uses` [INFERRED]
+- [[Any_44]] - `uses` [INFERRED]
+- [[Enum_1]] - `inherits` [EXTRACTED]
+- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
+- [[SecurityEvent]] - `uses` [INFERRED]
 - [[Severity_2]] - `uses` [INFERRED]
-- [[_map_severity()]] - `references` [EXTRACTED]
+- [[WSEvent_1]] - `uses` [INFERRED]
+- [[WebSocket_1]] - `uses` [INFERRED]
+- [[event_adapter.py]] - `imports` [EXTRACTED]
+- [[socmodels.py]] - `contains` [EXTRACTED]
+- [[str_1]] - `inherits` [EXTRACTED]
+- [[test_soc_bots.py]] - `imports` [EXTRACTED]
+- [[test_soc_models.py]] - `imports` [EXTRACTED]
+- [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
+- [[test_soc_websocket.py]] - `imports` [EXTRACTED]
+- [[websocket.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

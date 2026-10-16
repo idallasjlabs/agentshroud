@@ -16,6 +16,6 @@ tags:
 - [[Audit Trail]] - `contains` [EXTRACTED]
 - [[Risk Classification]] - `contains` [EXTRACTED]
 - [[SecureBrowser Skill]] - `contains` [EXTRACTED]
-- [[URL Access Control_1]] - `contains` [EXTRACTED]
+- [[URL Access Control]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

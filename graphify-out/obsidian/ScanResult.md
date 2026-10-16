@@ -22,6 +22,6 @@ tags:
 - [[dot-flagged()_1]] - `method` [EXTRACTED]
 - [[dot-scan()]] - `calls` [EXTRACTED]
 - [[Result of scanning web content.]] - `rationale_for` [EXTRACTED]
-- [[web_content_scanner.py]] - `contains` [EXTRACTED]
+- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebContentScanner

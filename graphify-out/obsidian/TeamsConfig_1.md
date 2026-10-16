@@ -1,23 +1,24 @@
 ---
-source_file: "gateway/tests/test_group_config.py"
+source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "GroupConfig"
-location: "L68"
+community: "RBACConfig"
+location: "L28"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/GroupConfig
+  - graphify/INFERRED
+  - community/RBACConfig
 ---
 
 # TeamsConfig
 
 ## Connections
-- [[dot-test_apply_persisted_overrides_skips_user_overrides_key()]] - `calls` [EXTRACTED]
-- [[dot-test_empty_teams_parses()]] - `calls` [EXTRACTED]
-- [[dot-test_get_user_collab_mode_falls_back_to_group()]] - `calls` [EXTRACTED]
-- [[dot-test_user_override_takes_precedence_over_group()]] - `calls` [EXTRACTED]
-- [[GroupConfig]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
-- [[teams()_4]] - `references` [EXTRACTED]
+- [[dot-test_group_allowlist_grants_extra_tool()]] - `calls` [EXTRACTED]
+- [[dot-test_project_allowed_tools_grant_access()]] - `calls` [EXTRACTED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[Role_91]] - `uses` [INFERRED]
+- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[ToolACLConfig]] - `uses` [INFERRED]
+- [[ToolACLEnforcer]] - `uses` [INFERRED]
+- [[_make_rbac()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupConfig
+#graphify/code #graphify/INFERRED #community/RBACConfig

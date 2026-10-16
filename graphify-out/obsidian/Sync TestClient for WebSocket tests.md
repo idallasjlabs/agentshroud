@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_dashboard.py"
+source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "test_dashboard.py"
-location: "L42"
+community: "ApprovalQueueConfig"
+location: "L39"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/ApprovalQueueConfig
 ---
 
 # Sync TestClient for WebSocket tests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[sync_client()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

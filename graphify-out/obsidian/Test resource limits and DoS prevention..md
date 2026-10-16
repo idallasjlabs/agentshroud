@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "ResourceGuard"
+community: "AlertDispatcher"
 location: "L1031"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/AlertDispatcher
 ---
 
 # Test resource limits and DoS prevention.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestResourceProtection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

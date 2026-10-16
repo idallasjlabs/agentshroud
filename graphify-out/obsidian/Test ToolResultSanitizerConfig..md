@@ -12,7 +12,7 @@ tags:
 # Test ToolResultSanitizerConfig.
 
 ## Connections
-- [[TestToolResultSanitizer]] - `rationale_for` [EXTRACTED]
+- [[TestToolResultSanitizer_1]] - `rationale_for` [EXTRACTED]
 - [[TestToolResultSanitizerConfig]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

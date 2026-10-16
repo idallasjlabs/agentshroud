@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "management.py"
+community: "KeyRotationManager"
 location: "L733"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/managementpy
+  - community/KeyRotationManager
 ---
 
 # Security tools overview — links to all tool-specific dashboards.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[security_overview()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/managementpy
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager

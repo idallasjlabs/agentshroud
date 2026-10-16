@@ -12,6 +12,6 @@ tags:
 # Schema for a Hermes-generated competitive intelligence report.      The ``conten
 
 ## Connections
-- [[CompetitiveIntelReport_2]] - `rationale_for` [EXTRACTED]
+- [[CompetitiveIntelReport_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/CompetitiveIntelReport

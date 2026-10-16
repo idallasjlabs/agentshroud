@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_enforce.py"
 type: "rationale"
-community: "EgressFilter"
+community: "EgressFilterConfig"
 location: "L166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/EgressFilterConfig
 ---
 
 # Test that denylist overrides allowlist in strict mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_denylist_overrides_allowlist()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilter
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

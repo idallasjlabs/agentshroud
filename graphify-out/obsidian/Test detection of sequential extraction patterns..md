@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "rationale"
-community: "TestMultiTurnTracker"
+community: "MultiTurnTracker"
 location: "L263"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestMultiTurnTracker
+  - community/MultiTurnTracker
 ---
 
 # Test detection of sequential extraction patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_sequential_extraction_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestMultiTurnTracker
+#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker

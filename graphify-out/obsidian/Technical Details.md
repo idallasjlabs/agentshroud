@@ -12,7 +12,7 @@ tags:
 # Technical Details
 
 ## Connections
-- [[Architecture_1]] - `contains` [EXTRACTED]
+- [[Architecture]] - `contains` [EXTRACTED]
 - [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
 - [[Files]] - `contains` [EXTRACTED]
 - [[Security Features]] - `contains` [EXTRACTED]

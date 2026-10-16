@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "SlackAPIProxy"
+community: "AsyncMock"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/AsyncMock
 ---
 
 # SlackAPIProxy
 
 ## Connections
-- [[dot-__init__()_85]] - `method` [EXTRACTED]
+- [[dot-__init__()_124]] - `method` [EXTRACTED]
 - [[dot-_call_slack_api()]] - `method` [EXTRACTED]
 - [[dot-_intercept_connections_open()]] - `method` [EXTRACTED]
 - [[dot-_is_owner_channel()]] - `method` [EXTRACTED]
 - [[dot-consume_relay_token()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_11]] - `method` [EXTRACTED]
+- [[dot-get_stats()_13]] - `method` [EXTRACTED]
 - [[dot-handle_event()]] - `method` [EXTRACTED]
 - [[dot-invite_channel_member()]] - `method` [EXTRACTED]
 - [[dot-kick_channel_member()]] - `method` [EXTRACTED]
@@ -28,7 +28,7 @@ tags:
 - [[SlackAPIProxy]] - `uses` [INFERRED]
 - [[SlackAPIProxy_2]] - `uses` [INFERRED]
 - [[SlackSocketClient]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[TestBodyParsing]] - `uses` [INFERRED]
 - [[TestCallSlackApi]] - `uses` [INFERRED]
 - [[TestHandleEvent]] - `uses` [INFERRED]
@@ -43,11 +43,11 @@ tags:
 - [[TestSocketModeRelay]] - `uses` [INFERRED]
 - [[TestWebhookReceiverSlackExtraction]] - `uses` [INFERRED]
 - [[_RaisingRedactionResult]] - `uses` [INFERRED]
-- [[_make_proxy()_1]] - `calls` [EXTRACTED]
+- [[_make_proxy()_2]] - `calls` [EXTRACTED]
 - [[_make_proxy()_4]] - `calls` [EXTRACTED]
 - [[slack_proxy.py]] - `contains` [EXTRACTED]
 - [[slack_socket_client.py]] - `imports` [EXTRACTED]
 - [[test_slack_proxy.py]] - `imports` [EXTRACTED]
 - [[test_slack_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

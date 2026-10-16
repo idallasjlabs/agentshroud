@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_web_proxy_security.py"
+source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "WebProxy"
-location: "L63"
+community: "ToolResultSanitizer"
+location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/ToolResultSanitizer
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[dot-setUp()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_36]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxy
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

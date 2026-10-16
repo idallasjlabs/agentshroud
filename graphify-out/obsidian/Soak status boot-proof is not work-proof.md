@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-25.md"
 type: "rationale"
-community: "Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)"
+community: "colima-health-check.sh"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+  - community/colima-health-checksh
 ---
 
 # Soak status: boot-proof is not work-proof
@@ -16,4 +16,4 @@ tags:
 - [[Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)]] - `references` [EXTRACTED]
 - [[check-soak-status.sh]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+#graphify/rationale #graphify/EXTRACTED #community/colima-health-checksh

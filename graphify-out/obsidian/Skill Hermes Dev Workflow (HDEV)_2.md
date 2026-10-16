@@ -12,7 +12,7 @@ tags:
 # Skill: Hermes Dev Workflow (HDEV)
 
 ## Connections
-- [[Guardrails_6]] - `contains` [EXTRACTED]
+- [[Guardrails_5]] - `contains` [EXTRACTED]
 - [[Invocation_4]] - `contains` [EXTRACTED]
 - [[Jira ticket — every development batch gets one_4]] - `contains` [EXTRACTED]
 - [[Mode A — Single task]] - `contains` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "rationale"
-community: "make_event"
+community: "ForwardRequest"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/make_event
+  - community/ForwardRequest
 ---
 
 # Subscribe to all events
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-subscribe()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/make_event
+#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest

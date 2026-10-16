@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "management.py"
+community: "KeyRotationManager"
 location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/managementpy
+  - community/KeyRotationManager
 ---
 
 # Serve the security modules page (dynamic — fetches live data).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[modules()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/managementpy
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager

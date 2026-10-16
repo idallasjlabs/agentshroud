@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "Performance Considerations"
+community: "AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist"
 location: "L1613"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Performance_Considerations
+  - community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist
 ---
 
 # Temperature Management
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Performance Considerations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Performance_Considerations
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist

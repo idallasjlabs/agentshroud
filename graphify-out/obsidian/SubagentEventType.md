@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_log_event()]] - `references` [EXTRACTED]
-- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[Enum_1]] - `inherits` [EXTRACTED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestConcurrentLimits]] - `uses` [INFERRED]
@@ -31,7 +31,7 @@ tags:
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestTrustInheritance]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
-- [[str_2]] - `inherits` [EXTRACTED]
+- [[str_1]] - `inherits` [EXTRACTED]
 - [[subagent_monitor.py]] - `contains` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `imports` [EXTRACTED]
 

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
+source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "ToolResultSanitizer"
-location: "L52"
+community: "TestOutboundInfoFilter"
+location: "L23"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/TestOutboundInfoFilter
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[dot-setup_method()_19]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_11]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter

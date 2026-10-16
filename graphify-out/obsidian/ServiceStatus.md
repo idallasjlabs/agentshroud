@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Enum"
+community: "ServiceManager"
 location: "L190"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Enum
+  - community/ServiceManager
 ---
 
 # ServiceStatus
@@ -17,4 +17,4 @@ tags:
 - [[ServiceStatus_1]] - `uses` [INFERRED]
 - [[_engine_status_to_service_status()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Enum
+#graphify/code #graphify/INFERRED #community/ServiceManager

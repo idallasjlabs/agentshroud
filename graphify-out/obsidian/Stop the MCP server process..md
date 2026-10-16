@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "StdioConnection"
+community: "MCPPermissionManager"
 location: "L144"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/MCPPermissionManager
 ---
 
 # Stop the MCP server process.
 
 ## Connections
-- [[dot-stop()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-stop()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/StdioConnection
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

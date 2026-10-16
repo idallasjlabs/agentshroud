@@ -15,7 +15,7 @@ tags:
 - [[Anti-Patterns to Flag_13]] - `contains` [EXTRACTED]
 - [[Brand Theme Block (Mermaid)_1]] - `contains` [EXTRACTED]
 - [[Core Discipline Understand → Diagram → Validate → Export_1]] - `contains` [EXTRACTED]
-- [[Dependencies_13]] - `contains` [EXTRACTED]
+- [[Dependencies_14]] - `contains` [EXTRACTED]
 - [[Diagram Types and Data Lakehouse Examples_1]] - `contains` [EXTRACTED]
 - [[File and Directory Conventions_1]] - `contains` [EXTRACTED]
 - [[Rendering and Export_1]] - `contains` [EXTRACTED]

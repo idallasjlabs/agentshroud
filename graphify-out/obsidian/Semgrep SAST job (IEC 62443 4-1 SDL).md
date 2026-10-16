@@ -1,12 +1,12 @@
 ---
 source_file: ".github/workflows/security-scan.yml"
 type: "code"
-community: "The run is judged on state change, not steps completed"
+community: "docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)"
 location: "91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/The_run_is_judged_on_state_change_not_steps_completed
+  - community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
 ---
 
 # Semgrep SAST job (IEC 62443 4-1 SDL)
@@ -16,4 +16,4 @@ tags:
 - [[pre-commit as single owner of .githookspre-commit]] - `conceptually_related_to` [EXTRACTED]
 - [[pre-commit semgrep local hook (new findings only, system semgrep)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/The_run_is_judged_on_state_change_not_steps_completed
+#graphify/code #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes

@@ -12,9 +12,9 @@ tags:
 # SidecarScanner
 
 ## Connections
-- [[dot-__init__()_168]] - `method` [EXTRACTED]
-- [[dot-get_stats()_18]] - `method` [EXTRACTED]
-- [[dot-scan()_4]] - `method` [EXTRACTED]
+- [[dot-__init__()_98]] - `method` [EXTRACTED]
+- [[dot-get_stats()_10]] - `method` [EXTRACTED]
+- [[dot-scan()_2]] - `method` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `conceptually_related_to` [EXTRACTED]
 - [[SecurityPipeline_2]] - `calls` [EXTRACTED]
 - [[SecurityPipeline (external, referenced)]] - `shares_data_with` [EXTRACTED]

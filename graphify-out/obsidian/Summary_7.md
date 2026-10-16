@@ -1,17 +1,19 @@
 ---
-source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
+source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "Development Workflow: Read-Only Filesystem Strategy"
-location: "L604"
+community: "Telegram & Gmail Integration Guide"
+location: "L339"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Development_Workflow_Read-Only_Filesystem_Strategy
+  - community/Telegram__Gmail_Integration_Guide
 ---
 
 # Summary
 
 ## Connections
-- [[Development Workflow Read-Only Filesystem Strategy]] - `contains` [EXTRACTED]
+- [[Quick Start Commands]] - `contains` [EXTRACTED]
+- [[Telegram & Gmail Integration Guide]] - `contains` [EXTRACTED]
+- [[✅ Current Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Development_Workflow_Read-Only_Filesystem_Strategy
+#graphify/document #graphify/EXTRACTED #community/Telegram__Gmail_Integration_Guide

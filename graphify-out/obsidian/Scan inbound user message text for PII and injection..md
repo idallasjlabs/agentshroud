@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: ".proxy_messages"
-location: "L1517"
+community: "LLMProxy"
+location: "L1624"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/proxy_messages
+  - community/LLMProxy
 ---
 
 # Scan inbound user message text for PII and injection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_scan_inbound()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/proxy_messages
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxy

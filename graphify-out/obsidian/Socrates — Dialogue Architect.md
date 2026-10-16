@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-agentsskillsi-socratesREADME]] - `contains` [EXTRACTED]
 - [[dot-agentsskillsi-socratesSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_6]] - `contains` [EXTRACTED]
+- [[Purpose_11]] - `contains` [EXTRACTED]
 - [[Related Skills_1]] - `contains` [EXTRACTED]
 - [[Usage_3]] - `contains` [EXTRACTED]
 

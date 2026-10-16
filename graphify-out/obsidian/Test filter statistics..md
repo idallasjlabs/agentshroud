@@ -12,6 +12,6 @@ tags:
 # Test filter statistics.
 
 ## Connections
-- [[dot-test_stats()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-test_stats()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter

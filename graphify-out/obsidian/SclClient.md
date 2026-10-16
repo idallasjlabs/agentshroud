@@ -12,7 +12,7 @@ tags:
 # SCLClient
 
 ## Connections
-- [[dot-__init__()_54]] - `method` [EXTRACTED]
+- [[dot-__init__()_61]] - `method` [EXTRACTED]
 - [[dot-_request()]] - `method` [EXTRACTED]
 - [[dot-add_collaborator()]] - `method` [EXTRACTED]
 - [[dot-add_group_member()]] - `method` [EXTRACTED]
@@ -26,7 +26,7 @@ tags:
 - [[dot-get_egress_pending()]] - `method` [EXTRACTED]
 - [[dot-get_events()_1]] - `method` [EXTRACTED]
 - [[dot-get_groups()]] - `method` [EXTRACTED]
-- [[dot-get_health()_1]] - `method` [EXTRACTED]
+- [[dot-get_health()]] - `method` [EXTRACTED]
 - [[dot-get_logs()]] - `method` [EXTRACTED]
 - [[dot-get_risk()]] - `method` [EXTRACTED]
 - [[dot-get_services()]] - `method` [EXTRACTED]

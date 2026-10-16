@@ -1,17 +1,17 @@
 ---
-source_file: ".github/PULL_REQUEST_TEMPLATE.md"
+source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "AgentShroud Semgrep SAST Configuration"
-location: "L1"
+community: "AgentShroud — Master Feature List (Everything Ever Mentioned)"
+location: "L406"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Semgrep_SAST_Configuration
+  - community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned
 ---
 
 # Summary
 
 ## Connections
-- [[PULL_REQUEST_TEMPLATE]] - `contains` [EXTRACTED]
+- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Semgrep_SAST_Configuration
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned

@@ -13,6 +13,6 @@ tags:
 ## Connections
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `semantically_similar_to` [AMBIGUOUS]
 - [[Security Review (SEC) README]] - `references` [EXTRACTED]
-- [[verify-security.sh]] - `references` [EXTRACTED]
+- [[verify-security.sh_1]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Verification_13-check_driver

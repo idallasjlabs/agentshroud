@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "ServerConfig"
+community: "ConsentFramework"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServerConfig
+  - community/ConsentFramework
 ---
 
 # ServerConfig
@@ -35,4 +35,4 @@ tags:
 - [[TestWhitelistBlacklist]] - `uses` [INFERRED]
 - [[consent_framework.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServerConfig
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework

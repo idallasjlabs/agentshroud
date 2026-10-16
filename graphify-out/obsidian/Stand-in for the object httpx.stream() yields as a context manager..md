@@ -12,6 +12,6 @@ tags:
 # Stand-in for the object httpx.stream() yields as a context manager.
 
 ## Connections
-- [[_FakeStreamResponse]] - `rationale_for` [EXTRACTED]
+- [[_FakeStreamResponse_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/FetchOutcome

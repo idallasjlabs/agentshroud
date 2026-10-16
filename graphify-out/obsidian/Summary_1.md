@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/planning/reviews/phase-review-2026-02-23.md"
 type: "document"
-community: "main.py.md"
-location: "L10"
+community: "AgentShroud Phase Review — 2026-02-23"
+location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpymd
+  - community/AgentShroud_Phase_Review__2026-02-23
 ---
 
 # Summary
 
 ## Connections
-- [[Architecture Overview_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Phase Review — 2026-02-23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpymd
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23

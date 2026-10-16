@@ -12,6 +12,6 @@ tags:
 # Test the ToolResultSanitizer class
 
 ## Connections
-- [[TestToolResultSanitizer_1]] - `rationale_for` [EXTRACTED]
+- [[TestToolResultSanitizer]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

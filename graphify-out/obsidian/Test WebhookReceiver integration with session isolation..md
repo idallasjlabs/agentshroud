@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "WebhookReceiver"
+community: "UserSessionManager"
 location: "L226"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - community/UserSessionManager
 ---
 
 # Test WebhookReceiver integration with session isolation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestWebhookReceiverIntegration]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

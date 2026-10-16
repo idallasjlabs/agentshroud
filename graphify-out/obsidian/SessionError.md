@@ -22,11 +22,11 @@ tags:
 - [[SessionExpired]] - `inherits` [EXTRACTED]
 - [[TestEventInjection]] - `uses` [INFERRED]
 - [[TestInstructionNonce]] - `uses` [INFERRED]
-- [[TestRateLimiting_4]] - `uses` [INFERRED]
+- [[TestRateLimiting_1]] - `uses` [INFERRED]
 - [[TestSessionCleanup]] - `uses` [INFERRED]
 - [[TestSessionCreation]] - `uses` [INFERRED]
 - [[TestSessionRotation]] - `uses` [INFERRED]
 - [[TestSessionValidation]] - `uses` [INFERRED]
-- [[session_security.py_2]] - `contains` [EXTRACTED]
+- [[session_security.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SessionError

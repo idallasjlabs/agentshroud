@@ -12,7 +12,6 @@ tags:
 # Seed Job: Monthly Chaos Engineering Drill
 
 ## Connections
-- [[Hermes cron Monthly Chaos Engineering Drill (gemma-4-26b-a4b-it)]] - `semantically_similar_to` [INFERRED]
 - [[Monthly Chaos Engineering Drill (Hermes Prompt)]] - `semantically_similar_to` [INFERRED]
 - [[Prompt Monthly Chaos Engineering Drill]] - `conceptually_related_to` [INFERRED]
 

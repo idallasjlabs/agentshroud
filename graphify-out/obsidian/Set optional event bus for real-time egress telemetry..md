@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "EgressFilter"
+community: "EgressFilterConfig"
 location: "L134"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/EgressFilterConfig
 ---
 
 # Set optional event bus for real-time egress telemetry.
 
 ## Connections
-- [[dot-set_event_bus()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-set_event_bus()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilter
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

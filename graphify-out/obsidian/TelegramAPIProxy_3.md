@@ -16,7 +16,7 @@ tags:
 - [[dot-_run_owner_cmd()_1]] - `references` [EXTRACTED]
 - [[LockdownLevel]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[_make_proxy()_3]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

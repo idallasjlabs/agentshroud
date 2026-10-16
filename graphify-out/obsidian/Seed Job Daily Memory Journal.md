@@ -13,7 +13,6 @@ tags:
 
 ## Connections
 - [[Daily Memory Journal (Hermes Prompt)]] - `semantically_similar_to` [INFERRED]
-- [[Hermes cron Daily Memory Journal (silent, local delivery)]] - `semantically_similar_to` [INFERRED]
 - [[Prompt Daily Memory Journal]] - `conceptually_related_to` [INFERRED]
 
 #graphify/document #graphify/INFERRED #community/Report_Delivery_Format_Instructions
