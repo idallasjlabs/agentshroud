@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "code"
-community: "WebProxyConfig"
+community: "TestSSRFDetection"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/TestSSRFDetection
 ---
 
 # web_config.py
@@ -19,4 +19,4 @@ tags:
 - [[url_analyzer.py]] - `references` [EXTRACTED]
 - [[web_content_scanner.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

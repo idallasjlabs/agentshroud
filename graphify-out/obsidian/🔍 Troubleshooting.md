@@ -12,9 +12,9 @@ tags:
 # 🔍 Troubleshooting
 
 ## Connections
-- [[401 Unauthorized_3]] - `contains` [EXTRACTED]
+- [[401 Unauthorized_4]] - `contains` [EXTRACTED]
 - [[403 Forbidden]] - `contains` [EXTRACTED]
-- [[Connection timeout_3]] - `contains` [EXTRACTED]
+- [[Connection timeout_4]] - `contains` [EXTRACTED]
 - [[Notes folder not found]] - `contains` [EXTRACTED]
 - [[iCloud Services Setup - Complete Guide]] - `contains` [EXTRACTED]
 

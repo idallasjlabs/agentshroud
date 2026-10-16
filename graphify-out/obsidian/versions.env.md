@@ -11,6 +11,7 @@ tags:
 # versions.env
 
 ## Connections
+- [[S14 Hermes run-standalone.sh image tag falls back to dockerversions.env, not 'latest']] - `references` [EXTRACTED]
 - [[TestVersion]] - `references` [EXTRACTED]
 - [[_read_running_version_str]] - `references` [EXTRACTED]
 - [[auto_remediate_cves.py]] - `references` [EXTRACTED]

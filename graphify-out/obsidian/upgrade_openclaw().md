@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "ModeRequest"
+community: "api.py"
 location: "L605"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/apipy
 ---
 
 # upgrade_openclaw()
@@ -17,4 +17,4 @@ tags:
 - [[api.py_2]] - `contains` [EXTRACTED]
 - [[upgrade_bot()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModeRequest
+#graphify/code #graphify/EXTRACTED #community/apipy

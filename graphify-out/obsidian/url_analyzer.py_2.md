@@ -13,11 +13,11 @@ tags:
 
 ## Connections
 - [[Configuration  Environment Variables_20]] - `contains` [EXTRACTED]
-- [[Function Details_37]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_39]] - `contains` [EXTRACTED]
+- [[Function Details_36]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_38]] - `contains` [EXTRACTED]
 - [[Purpose_160]] - `contains` [EXTRACTED]
-- [[Related_43]] - `contains` [EXTRACTED]
-- [[Responsibilities_41]] - `contains` [EXTRACTED]
+- [[Related_42]] - `contains` [EXTRACTED]
+- [[Responsibilities_40]] - `contains` [EXTRACTED]
 - [[SSRF Detection Coverage]] - `contains` [EXTRACTED]
 - [[url_analyzer.py_1]] - `contains` [EXTRACTED]
 

@@ -15,7 +15,7 @@ tags:
 - [[dot-test_clean_compose_yields_zero_critical()]] - `calls` [EXTRACTED]
 - [[dot-test_get_security_report_shape()]] - `calls` [EXTRACTED]
 - [[dot-test_privileged_service_is_critical()]] - `calls` [EXTRACTED]
-- [[Path_54]] - `references` [EXTRACTED]
+- [[Path_53]] - `references` [EXTRACTED]
 - [[test_network_validator_gate.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/validate_network_security

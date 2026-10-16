@@ -12,6 +12,6 @@ tags:
 # verify-security.sh fails
 
 ## Connections
-- [[Troubleshooting_26]] - `contains` [EXTRACTED]
+- [[Troubleshooting_27]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Kill_Switch

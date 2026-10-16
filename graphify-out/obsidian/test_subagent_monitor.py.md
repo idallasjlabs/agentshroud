@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "SubagentMonitor"
+community: "TrustConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentMonitor
+  - community/TrustConfig
 ---
 
 # test_subagent_monitor.py
@@ -22,10 +22,10 @@ tags:
 - [[TestSubagentMonitorConfig]] - `contains` [EXTRACTED]
 - [[TestSubagentTracking]] - `contains` [EXTRACTED]
 - [[TestTrustInheritance]] - `contains` [EXTRACTED]
-- [[default_config()]] - `contains` [EXTRACTED]
-- [[monitor()]] - `contains` [EXTRACTED]
-- [[monitor_config()]] - `contains` [EXTRACTED]
+- [[default_config()_2]] - `contains` [EXTRACTED]
+- [[monitor()_1]] - `contains` [EXTRACTED]
+- [[monitor_config()_1]] - `contains` [EXTRACTED]
 - [[strict_config()_1]] - `contains` [EXTRACTED]
 - [[strict_monitor()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentMonitor
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

@@ -13,12 +13,12 @@ tags:
 
 ## Connections
 - [[Configuration  Environment Variables_14]] - `contains` [EXTRACTED]
-- [[Function Details_27]] - `contains` [EXTRACTED]
+- [[Function Details_26]] - `contains` [EXTRACTED]
 - [[Injection Pattern Weights]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_29]] - `contains` [EXTRACTED]
-- [[Purpose_148]] - `contains` [EXTRACTED]
-- [[Related_33]] - `contains` [EXTRACTED]
-- [[Responsibilities_31]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_28]] - `contains` [EXTRACTED]
+- [[Purpose_145]] - `contains` [EXTRACTED]
+- [[Related_32]] - `contains` [EXTRACTED]
+- [[Responsibilities_30]] - `contains` [EXTRACTED]
 - [[web_content_scanner.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/web_content_scannerpy

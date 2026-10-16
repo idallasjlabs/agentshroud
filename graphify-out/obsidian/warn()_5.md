@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/tailscale-check.sh"
 type: "code"
-community: "ProxyDashboard"
+community: "egress_filter.py"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/egress_filterpy
 ---
 
 # warn()
@@ -15,4 +15,4 @@ tags:
 - [[tailscale-check.sh]] - `defines` [EXTRACTED]
 - [[tailscale-check.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/code #graphify/EXTRACTED #community/egress_filterpy

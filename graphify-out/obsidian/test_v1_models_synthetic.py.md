@@ -12,7 +12,7 @@ tags:
 # test_v1_models_synthetic.py
 
 ## Connections
-- [[client()_4]] - `contains` [EXTRACTED]
+- [[client()_6]] - `contains` [EXTRACTED]
 - [[test_v1_messages_still_goes_through_proxy()]] - `contains` [EXTRACTED]
 - [[test_v1_models_get_returns_synthetic_200()]] - `contains` [EXTRACTED]
 - [[test_v1_models_post_still_goes_through_proxy()]] - `contains` [EXTRACTED]

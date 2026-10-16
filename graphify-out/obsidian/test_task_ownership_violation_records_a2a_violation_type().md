@@ -15,7 +15,7 @@ tags:
 - [[A2APolicyEngine_2]] - `calls` [EXTRACTED]
 - [[A2AProxy_1]] - `calls` [EXTRACTED]
 - [[TrustManager_2]] - `references` [EXTRACTED]
-- [[_StubForwarder_2]] - `calls` [EXTRACTED]
+- [[_StubForwarder_1]] - `calls` [EXTRACTED]
 - [[_jsonrpc()_2]] - `calls` [EXTRACTED]
 - [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
 

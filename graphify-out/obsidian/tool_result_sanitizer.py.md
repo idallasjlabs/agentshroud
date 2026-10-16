@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
-- [[PIIConfig_1]] - `imports` [EXTRACTED]
-- [[PIISanitizer_2]] - `imports` [EXTRACTED]
-- [[RedactionResult_3]] - `imports` [EXTRACTED]
+- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PIISanitizer_1]] - `imports` [EXTRACTED]
+- [[RedactionResult_2]] - `imports` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `contains` [EXTRACTED]
 - [[ToolResultSanitizer]] - `contains` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]

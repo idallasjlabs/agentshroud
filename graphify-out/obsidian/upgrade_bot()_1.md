@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "ModeRequest"
+community: "api.py"
 location: "L556"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/apipy
 ---
 
 # upgrade_bot()
@@ -20,4 +20,4 @@ tags:
 - [[upgrade()]] - `semantically_similar_to` [INFERRED]
 - [[upgrade_openclaw()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModeRequest
+#graphify/code #graphify/EXTRACTED #community/apipy

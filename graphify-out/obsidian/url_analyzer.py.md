@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "TestSSRFDetection"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/TestSSRFDetection
 ---
 
 # url_analyzer.py
 
 ## Connections
 - [[Enum_3]] - `imports_from` [EXTRACTED]
-- [[URLAnalysisResult_1]] - `contains` [EXTRACTED]
+- [[URLAnalysisResult]] - `contains` [EXTRACTED]
 - [[URLAnalyzer_1]] - `contains` [EXTRACTED]
 - [[URLFinding]] - `contains` [EXTRACTED]
 - [[URLVerdict]] - `contains` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[web_config.py]] - `references` [EXTRACTED]
 - [[web_content_scanner.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

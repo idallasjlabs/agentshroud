@@ -12,9 +12,9 @@ tags:
 # websocket.py
 
 ## Connections
-- [[RBACConfig_4]] - `imports` [EXTRACTED]
-- [[SOCWebSocketHandler_2]] - `contains` [EXTRACTED]
-- [[Severity_1]] - `imports` [EXTRACTED]
+- [[RBACConfig_3]] - `imports` [EXTRACTED]
+- [[SOCWebSocketHandler_1]] - `contains` [EXTRACTED]
+- [[Severity]] - `imports` [EXTRACTED]
 - [[WSEvent]] - `imports` [EXTRACTED]
 - [[WSEventType]] - `imports` [EXTRACTED]
 - [[_coerce_to_ws_event()]] - `contains` [EXTRACTED]

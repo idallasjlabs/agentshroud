@@ -21,7 +21,7 @@ tags:
 - [[dot-test_successful_downgrade()]] - `calls` [EXTRACTED]
 - [[dot-test_successful_rollback()]] - `calls` [EXTRACTED]
 - [[dot-test_successful_upgrade()]] - `calls` [EXTRACTED]
-- [[Any_61]] - `references` [EXTRACTED]
+- [[Any_56]] - `references` [EXTRACTED]
 - [[Upgrade OpenClaw to a target version.      Requires a prior security review and]] - `rationale_for` [EXTRACTED]
 - [[_get_db()]] - `calls` [EXTRACTED]
 - [[agentshroud_manager.py]] - `contains` [EXTRACTED]

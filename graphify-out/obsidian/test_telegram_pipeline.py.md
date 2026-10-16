@@ -26,6 +26,6 @@ tags:
 - [[_getUpdates_response()]] - `contains` [EXTRACTED]
 - [[_make_pipeline_result()]] - `contains` [EXTRACTED]
 - [[_make_proxy()_2]] - `contains` [EXTRACTED]
-- [[_make_update()_1]] - `contains` [EXTRACTED]
+- [[_make_update()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PipelineAction

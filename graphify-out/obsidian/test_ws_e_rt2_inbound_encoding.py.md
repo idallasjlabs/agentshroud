@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "PIIConfig"
+community: "InjectionAction"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/InjectionAction
 ---
 
 # test_ws_e_rt2_inbound_encoding.py
@@ -15,8 +15,8 @@ tags:
 - [[EncodingConfig]] - `imports` [EXTRACTED]
 - [[EncodingDetector]] - `references` [EXTRACTED]
 - [[InjectionAction]] - `imports` [EXTRACTED]
-- [[PIIConfig_1]] - `imports` [EXTRACTED]
-- [[PIISanitizer_2]] - `imports` [EXTRACTED]
+- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PIISanitizer_1]] - `imports` [EXTRACTED]
 - [[PipelineAction]] - `imports` [EXTRACTED]
 - [[PromptGuard]] - `references` [EXTRACTED]
 - [[SecurityPipeline_2]] - `references` [EXTRACTED]
@@ -44,4 +44,4 @@ tags:
 - [[test_tool_injection_hex_encoded_uses_full_ruleset()]] - `contains` [EXTRACTED]
 - [[test_tool_injection_scan_blocks_encoded_lower_ranked_rule()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/InjectionAction

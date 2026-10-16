@@ -15,8 +15,8 @@ tags:
 - [[ADMIN_TOOLS]] - `references` [EXTRACTED]
 - [[COLLABORATOR_ALLOWED_TOOLS]] - `references` [EXTRACTED]
 - [[PRIVATE_TOOLS]] - `references` [EXTRACTED]
-- [[RBACConfig_4]] - `imports` [EXTRACTED]
-- [[Role_22]] - `imports` [EXTRACTED]
+- [[RBACConfig_3]] - `imports` [EXTRACTED]
+- [[Role_21]] - `imports` [EXTRACTED]
 - [[TeamsConfig_2]] - `imports` [EXTRACTED]
 - [[TestAdminAccess]] - `contains` [EXTRACTED]
 - [[TestCVE2026_9367TerminalToolDenied]] - `contains` [EXTRACTED]
@@ -31,9 +31,9 @@ tags:
 - [[TestViewerAccess]] - `contains` [EXTRACTED]
 - [[ToolACLConfig]] - `references` [EXTRACTED]
 - [[ToolACLEnforcer]] - `references` [EXTRACTED]
-- [[_make_rbac()_1]] - `contains` [EXTRACTED]
+- [[_make_rbac()]] - `contains` [EXTRACTED]
 - [[can_use_tool_from_origin]] - `references` [EXTRACTED]
 - [[enforcer()_1]] - `contains` [EXTRACTED]
-- [[rbac()_6]] - `contains` [EXTRACTED]
+- [[rbac()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RBACConfig

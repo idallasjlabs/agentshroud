@@ -24,10 +24,10 @@ tags:
 - [[TestEncodedPayloads]] - `contains` [EXTRACTED]
 - [[TestHiddenContent]] - `contains` [EXTRACTED]
 - [[TestIsDomainAllowed]] - `contains` [EXTRACTED]
-- [[TestPIIDetection_1]] - `contains` [EXTRACTED]
+- [[TestPIIDetection_2]] - `contains` [EXTRACTED]
 - [[TestPassthroughMode]] - `contains` [EXTRACTED]
 - [[TestPromptInjectionDetection]] - `contains` [EXTRACTED]
-- [[TestRateLimiting_1]] - `contains` [EXTRACTED]
+- [[TestRateLimiting_2]] - `contains` [EXTRACTED]
 - [[TestResponseSizeLimits]] - `contains` [EXTRACTED]
 - [[TestSSRFBlocking]] - `contains` [EXTRACTED]
 - [[TestStats_1]] - `contains` [EXTRACTED]
@@ -36,8 +36,8 @@ tags:
 - [[WebProxy]] - `imports` [EXTRACTED]
 - [[WebProxyConfig_1]] - `imports` [EXTRACTED]
 - [[audit_chain()]] - `contains` [EXTRACTED]
-- [[config()_2]] - `contains` [EXTRACTED]
+- [[config()_3]] - `contains` [EXTRACTED]
 - [[passthrough_proxy()]] - `contains` [EXTRACTED]
-- [[proxy()_2]] - `contains` [EXTRACTED]
+- [[proxy()_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebProxyConfig

@@ -1,18 +1,19 @@
 ---
-source_file: "docker/scripts/container-net-diag.sh"
+source_file: "scripts/check-vendor-compat.sh"
 type: "code"
-community: "colima-health-check.sh"
-location: "L74"
+community: "check-vendor-compat.sh"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/check-vendor-compatsh
 ---
 
 # warn()
 
 ## Connections
-- [[container-net-diag.sh]] - `defines` [EXTRACTED]
-- [[container-net-diag.sh script]] - `calls` [EXTRACTED]
+- [[check-vendor-compat.sh]] - `defines` [EXTRACTED]
+- [[check_hermes()]] - `calls` [EXTRACTED]
+- [[check_openclaw()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh

@@ -12,6 +12,6 @@ tags:
 # 🔬 **P3 — Advanced Features (Lower Priority)**
 
 ## Connections
-- [[3. Remaining Work — Prioritized by Value_3]] - `contains` [EXTRACTED]
+- [[3. Remaining Work — Prioritized by Value]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/3_Remaining_Work__Prioritized_by_Value

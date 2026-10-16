@@ -1,19 +1,18 @@
 ---
-source_file: "docker/scripts/workspace.sh"
+source_file: "skills/openclaw/video-frames/scripts/frame.sh"
 type: "code"
-community: "workspace.sh"
-location: "L13"
+community: "frame.sh"
+location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/workspacesh
+  - community/framesh
 ---
 
 # usage()
 
 ## Connections
-- [[main command dispatcher (case $COMMAND)]] - `calls` [EXTRACTED]
-- [[workspace.sh]] - `defines` [EXTRACTED]
-- [[workspace.sh script]] - `calls` [EXTRACTED]
+- [[frame.sh]] - `defines` [EXTRACTED]
+- [[frame.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/workspacesh
+#graphify/code #graphify/EXTRACTED #community/framesh

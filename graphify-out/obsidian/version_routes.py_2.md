@@ -12,13 +12,13 @@ tags:
 # version_routes.py
 
 ## Connections
-- [[Config Keys Read_4]] - `contains` [EXTRACTED]
+- [[Config Keys Read_3]] - `contains` [EXTRACTED]
 - [[Environment Variables Used_5]] - `contains` [EXTRACTED]
 - [[Function Details_15]] - `contains` [EXTRACTED]
-- [[Imports From  Exports To_4]] - `contains` [EXTRACTED]
+- [[Imports From  Exports To_3]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_17]] - `contains` [EXTRACTED]
-- [[Known Issues  Notes_5]] - `contains` [EXTRACTED]
-- [[Purpose_124]] - `contains` [EXTRACTED]
+- [[Known Issues  Notes_4]] - `contains` [EXTRACTED]
+- [[Purpose_121]] - `contains` [EXTRACTED]
 - [[Related_21]] - `contains` [EXTRACTED]
 - [[Responsibilities_19]] - `contains` [EXTRACTED]
 - [[VersionRequest Fields]] - `contains` [EXTRACTED]

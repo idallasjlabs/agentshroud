@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "code"
-community: "InjectionAction"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # xml_leak_filter.py
@@ -18,4 +18,4 @@ tags:
 - [[XMLLeakFilter]] - `contains` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionAction
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
