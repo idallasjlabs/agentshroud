@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[__init__.py_2]] - code - gateway/approval_queue/__init__.py
+- [[Architecture Review Skill (stub)]] - document - .agents/skills/i-architecture-review/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

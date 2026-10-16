@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Blue Team Security Auditor (SEC-DEFENSE)
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[.test_five_openscap_all_passing()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_four_with_openscap_running_but_failures()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_three_baseline_no_openscap()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreContainerHardening_1]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-agentsskillsi-sec-defenseREADME]] - document - .agents/skills/i-sec-defense/README.md
+- [[Blue Team Security Auditor (SEC-DEFENSE)]] - document - .agents/skills/i-sec-defense/README.md
+- [[Purpose_18]] - document - .agents/skills/i-sec-defense/README.md
+- [[Related Skills_11]] - document - .agents/skills/i-sec-defense/README.md
+- [[Usage_14]] - document - .agents/skills/i-sec-defense/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Skill Create PR with Pre-Flight Audit (CRPR)]]
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[TestScoreContainerHardening_1]] - degree 4, connects to 1 community
+- [[Blue Team Security Auditor (SEC-DEFENSE)]] - degree 5, connects to 1 community

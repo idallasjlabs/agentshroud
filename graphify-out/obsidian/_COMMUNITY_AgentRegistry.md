@@ -1,108 +1,266 @@
 ---
 type: community
-cohesion: 0.03
-members: 93
+cohesion: 0.02
+members: 251
 ---
 
 # AgentRegistry
 
-**Cohesion:** 0.03 - loosely connected
-**Members:** 93 nodes
+**Cohesion:** 0.02 - loosely connected
+**Members:** 251 nodes
 
 ## Members
-- [[7 app-level entries + 7 dependency-chain entries added 2026-07-31 after a     re]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[A real CVE always came from a GHSA advisory, so cve_id implies ghsa_id.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[A single shared output path makes multi-agent coverage impossible.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[An agent with no version source must be refused, never verdicted.      Emitting]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Any_30]] - code - gateway/security/agent_cve_registry.py
-- [[Backward compatibility the default openclaw run must still exit 0.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[CRITICAL GUARD no entry `id` may look like a real CVE id.      This is the load]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[CompletedProcess_5]] - code - gateway/tests/test_agent_cve_registry.py
-- [[Coverage gaps must be loud and must fail an automated caller.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Every `id` must be a zero-padded ASH-OCLAW-NNN  ASH-HERMES-NNN ref.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Every registry must be reachable, not just openclaw.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Freshly-synced advisories must never arrive pre-marked as mitigated —     that r]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Hermes has no NATIVE GHSA advisory feed (nousresearchhermes-agent publishes]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Import the triage script by path.      It must be registered in sys.modules befo]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Return a summary of the advisory registry for the specified agent.      Counts a]] - rationale - gateway/security/agent_cve_registry.py
-- [[Return the list of registered agent bot IDs with CVE coverage.      Returns]] - rationale - gateway/security/agent_cve_registry.py
-- [[Same integrity guard as test_no_entry_id_looks_like_a_cve, extended to     the s]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Synthetic ids are unique and numbered 1..N in list order for each agent.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[The first curated OpenClaw entry (Feishu media download) survives migration.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[The migration produced a real (non-zero) verified GHSA match set.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[_HERMES_CVE_REGISTRY (HERMES_CVE_REGISTRY alias)]] - code - gateway/security/agent_cve_registry.py
-- [[_OPENCLAW_CVE_REGISTRY (AGENT_CVE_REGISTRY alias)]] - code - gateway/security/agent_cve_registry.py
-- [[_all_entries()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[_hermes_by_title()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[_load_triage_module()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[_run_triage()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[agent_cve_registry.py]] - code - gateway/security/agent_cve_registry.py
-- [[cve_id must be either None or a real-looking CVE id — never junk.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[get_agent_cve_summary()]] - code - gateway/security/agent_cve_registry.py
-- [[ghsacvepending counts must be internally consistent and honest.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[ghsa_id must be either None or a real-looking GHSA id.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[list_cve_agents()]] - code - gateway/security/agent_cve_registry.py
-- [[test_agent_cve_registries_contains_both()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_agent_cve_registries_objects_match_lists()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_agent_cve_registry.py]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_agent_cve_registry_alias_is_openclaw_list()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_agent_cve_registry_alias_nonempty()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_all_agents_flag_exists()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_all_agents_run_reports_untriaged_and_exits_nonzero()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_all_registered_sources_are_wrapped_agents_plus_security_tools()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_ash_ids_are_unique_and_stable_order()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_cve_id_field_only_holds_real_looking_cve_ids()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_default_single_agent_run_still_succeeds()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_default_summary_equals_openclaw_summary()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_default_summary_wrapped_agent_openclaw()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_empty_bot_id_raises_key_error()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_entry_with_cve_id_also_has_ghsa_id()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_every_entry_id_is_synthetic_ash_ref()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_every_security_tool_entry_id_is_synthetic_ash_ref()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_gap_reports_are_per_agent()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_ghsa_id_field_only_holds_real_looking_ghsa_ids()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_all_cves_have_required_fields()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_all_cvss_are_numeric()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_all_defense_layers_are_lists()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_all_required_titles_present()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_all_severities_valid()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_all_statuses_valid()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_auth_entries_use_gateway_auth_gate()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_by_severity_totals_match()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_by_status_totals_match()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_command_injection_high_severity()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_cve_registry_public_alias()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_summary_count_is_fourteen()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_summary_count_matches_registry()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_summary_cves_is_hermes_list()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_summary_keys()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_summary_wrapped_agent_is_hermes()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_symlink_entry_upstream_fix()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_verified_ids_are_never_fabricated()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_hermes_wechat_adapter_fully_mitigated()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_list_cve_agents_is_list_of_str()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_list_cve_agents_returns_wrapped_agents_and_security_tools()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_no_entry_id_looks_like_a_cve()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_no_security_tool_entry_id_looks_like_a_cve()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_all_cves_have_required_fields()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_all_severities_valid()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_all_statuses_valid()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_by_severity_totals_match()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_by_status_totals_match()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_first_entry_is_feishu_media_download()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_has_some_confident_ghsa_matches()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_match_counts_are_consistent()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_summary_count_matches_registry()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_summary_cves_is_openclaw_list()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_openclaw_summary_keys()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_security_tool_entries_ghsa_and_cve_ids_well_formed()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_security_tool_entries_have_required_fields()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_security_tool_entries_have_valid_status_and_severity()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_security_tool_entries_start_as_under_review_never_pre_claimed_mitigated()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_security_tool_registries_present_in_registries_dict()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_unknown_bot_id_raises_key_error()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_untriageable_agents_are_refused_not_guessed()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_wrapped_agent_constant_unchanged()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[dot-__init__()_182]] - code - gateway/security/agent_isolation.py
+- [[dot-__init__()_183]] - code - gateway/security/agent_isolation.py
+- [[dot-__init__()_184]] - code - gateway/security/encrypted_store.py
+- [[dot-__init__()_185]] - code - gateway/security/prompt_guard.py
+- [[dot-_derive_key()]] - code - gateway/security/encrypted_store.py
+- [[dot-_resolve_secret()]] - code - gateway/security/encrypted_store.py
+- [[dot-check_drift()]] - code - gateway/security/drift_detector.py
+- [[dot-config_hash()]] - code - gateway/security/drift_detector.py
+- [[dot-decrypt()]] - code - gateway/security/encrypted_store.py
+- [[dot-decrypt_b64()]] - code - gateway/security/encrypted_store.py
+- [[dot-decrypt_json()]] - code - gateway/security/encrypted_store.py
+- [[dot-decrypt_str()]] - code - gateway/security/encrypted_store.py
+- [[dot-encrypt()]] - code - gateway/security/encrypted_store.py
+- [[dot-encrypt_b64()]] - code - gateway/security/encrypted_store.py
+- [[dot-from_dict()_9]] - code - gateway/security/agent_isolation.py
+- [[dot-from_dict()_10]] - code - gateway/security/drift_detector.py
+- [[dot-generate_compose()]] - code - gateway/security/agent_isolation.py
+- [[dot-get()_4]] - code - gateway/security/agent_isolation.py
+- [[dot-get_baseline()]] - code - gateway/security/drift_detector.py
+- [[dot-get_blob_key_id()]] - code - gateway/security/encrypted_store.py
+- [[dot-list_agents()]] - code - gateway/security/agent_isolation.py
+- [[dot-register()]] - code - gateway/security/agent_isolation.py
+- [[dot-rotate()]] - code - gateway/security/encrypted_store.py
+- [[dot-set_baseline()]] - code - gateway/security/drift_detector.py
+- [[dot-setup_method()_30]] - code - gateway/tests/test_security_hardening.py
+- [[dot-setup_method()_31]] - code - gateway/tests/test_security_hardening.py
+- [[dot-setup_method()_32]] - code - gateway/tests/test_security_hardening.py
+- [[dot-setup_method()_33]] - code - gateway/tests/test_security_hardening.py
+- [[dot-setup_method()_34]] - code - gateway/tests/test_security_hardening.py
+- [[dot-setup_method()_35]] - code - gateway/tests/test_security_hardening.py
+- [[dot-teardown_method()_6]] - code - gateway/tests/test_security_hardening.py
+- [[dot-teardown_method()_7]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_acknowledge_alert()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_action_allowed_basic()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_action_denied_high_trust()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_action_unknown_agent()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_alerts_persisted()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_b64_roundtrip()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_base64_encoded_injection()_2]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_benign_base64()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_capabilities_not_dropped_flagged()]] - code - gateway/tests/test_agent_isolation.py
+- [[dot-test_clean_input()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_combined_attack_high_score()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_compose_contains_all_agents()]] - code - gateway/tests/test_agent_isolation.py
+- [[dot-test_compose_networks_are_internal()]] - code - gateway/tests/test_agent_isolation.py
+- [[dot-test_compose_security_opts()]] - code - gateway/tests/test_agent_isolation.py
+- [[dot-test_config_hash_changes()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_config_hash_consistency()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_container_config_defaults()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_custom_key_id()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_custom_pattern()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_dan_jailbreak()_1]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_delimiter_injection()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_different_encryptions_differ()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_double_base64_injection()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_empty_input()_3]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_encrypt_decrypt_bytes()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_encrypt_decrypt_dict()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_encrypt_decrypt_still_works_after_zeroing()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_encrypt_decrypt_string()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_encrypted_store_constant_time()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[dot-test_encrypted_store_error_no_key_leak()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[dot-test_env_var_secret()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_event_type_validation()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_failure_decreases_score()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_file_secret()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_forget_everything()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_fullwidth_detection()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_fully_isolated_agents_pass()]] - code - gateway/tests/test_agent_isolation.py
+- [[dot-test_generate_compose()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_get_blob_key_id()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_get_missing_returns_none()_1]] - code - gateway/tests/test_agent_isolation.py
+- [[dot-test_get_trust()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_get_trust_unknown()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_group_agents_are_isolatable()]] - code - gateway/tests/test_group_isolation.py
+- [[dot-test_group_and_collab_identities_coexist()]] - code - gateway/tests/test_group_isolation.py
+- [[dot-test_history()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_homoglyph_detection()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_ignore_instructions()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_image_change()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_indirect_injection()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_invalid_blob_too_short()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_invalid_blob_version()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_key_rotation()_1]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_key_rotation_auto_increment()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_key_rotation_with_zeroing()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_large_data()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_list_agents()]] - code - gateway/tests/test_agent_isolation.py
+- [[dot-test_list_agents()_1]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_mixed_case_still_caught()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_network_isolation_ok()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_network_isolation_violation()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_new_capability()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_new_env_var()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_new_instructions_override()_1]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_new_mount()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_new_privileges_allowed_flagged()]] - code - gateway/tests/test_agent_isolation.py
+- [[dot-test_no_baseline_no_alerts()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_no_drift()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_no_secret_raises()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_none_input()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_privileged_escalation()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_prompt_extraction()_1]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_prompt_leak_question()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_rate_limiting_prevents_rapid_escalation()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_read_only_disabled()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_register_agent()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_register_and_get()]] - code - gateway/tests/test_agent_isolation.py
+- [[dot-test_register_and_get()_1]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_register_group_agent_identity()]] - code - gateway/tests/test_group_isolation.py
+- [[dot-test_register_group_agent_with_chat_type_supergroup()]] - code - gateway/tests/test_group_isolation.py
+- [[dot-test_register_idempotent()_1]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_removed_capability()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_role_reassignment()_2]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_rtl_override()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_rtl_override_detection()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_sanitized_output()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_score_never_negative()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_seccomp_drift()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_secure_zero_bytearray()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_secure_zero_empty()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_separate_networks_pass()]] - code - gateway/tests/test_agent_isolation.py
+- [[dot-test_separate_volumes_pass()]] - code - gateway/tests/test_agent_isolation.py
+- [[dot-test_serialization()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_serialization_roundtrip()]] - code - gateway/tests/test_agent_isolation.py
+- [[dot-test_set_and_get_baseline()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_shared_network_detected()]] - code - gateway/tests/test_agent_isolation.py
+- [[dot-test_shared_network_flagged_in_full_check()]] - code - gateway/tests/test_agent_isolation.py
+- [[dot-test_shared_nothing_ok()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_shared_nothing_security_issue()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_shared_volume_detected()]] - code - gateway/tests/test_agent_isolation.py
+- [[dot-test_shared_volume_flagged_in_full_check()]] - code - gateway/tests/test_agent_isolation.py
+- [[dot-test_simultaneous_baseline_and_config_change()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_single_agent_fully_secure()]] - code - gateway/tests/test_agent_isolation.py
+- [[dot-test_sqlite_persistence()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_success_increases_score()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_trust_escalation_attack()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_trust_level_progression()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_unicode_zero_width()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_unregister()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_unregister_missing_returns_none()]] - code - gateway/tests/test_agent_isolation.py
+- [[dot-test_unregister_removes_agent()]] - code - gateway/tests/test_agent_isolation.py
+- [[dot-test_violation_large_decrease()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_volume_isolation_ok()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_volume_isolation_violation()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_warn_threshold()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_writable_root_flagged()]] - code - gateway/tests/test_agent_isolation.py
+- [[dot-test_wrong_key_fails()_1]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_xml_tag_injection()_1]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_zero_width_evasion()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-to_dict()_13]] - code - gateway/security/agent_isolation.py
+- [[dot-to_dict()_14]] - code - gateway/security/canary.py
+- [[dot-to_dict()_15]] - code - gateway/security/drift_detector.py
+- [[dot-unregister()]] - code - gateway/security/agent_isolation.py
+- [[dot-verify_network_isolation()]] - code - gateway/security/agent_isolation.py
+- [[dot-verify_shared_nothing()]] - code - gateway/security/agent_isolation.py
+- [[dot-verify_volume_isolation()]] - code - gateway/security/agent_isolation.py
+- [[A single properly-configured agent should have zero issues.]] - rationale - gateway/tests/test_agent_isolation.py
+- [[AES-256-GCM encrypted storage with key derivation and rotation support.]] - rationale - gateway/security/encrypted_store.py
+- [[AgentRegistry]] - code - gateway/security/agent_isolation.py
+- [[Any_77]] - code - gateway/security/canary.py
+- [[Args             block_threshold Score at or above which input is blocked.]] - rationale - gateway/security/prompt_guard.py
+- [[Best-effort zeroing of key material using ctypes.memset.      Works on bytearray]] - rationale - gateway/security/encrypted_store.py
+- [[CanaryCheck]] - code - gateway/security/canary.py
+- [[CanaryResult_2]] - code - gateway/security/canary.py
+- [[Compare current config against baseline, return any drift alerts.]] - rationale - gateway/security/drift_detector.py
+- [[ContainerConfig]] - code - gateway/tests/test_agent_isolation.py
+- [[ContainerConfig_1]] - code - gateway/security/agent_isolation.py
+- [[ContainerSnapshot]] - code - gateway/security/drift_detector.py
+- [[Decrypt a base64-encoded blob.]] - rationale - gateway/security/encrypted_store.py
+- [[Decrypt an AES-256-GCM encrypted blob.          Args             blob The encr]] - rationale - gateway/security/encrypted_store.py
+- [[Decrypt and return as UTF-8 string.]] - rationale - gateway/security/encrypted_store.py
+- [[Decrypt and return as parsed JSON dict.]] - rationale - gateway/security/encrypted_store.py
+- [[Decryption errors shouldn't expose the encryption key.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Derive a 256-bit key from master secret using PBKDF2-HMAC-SHA256.]] - rationale - gateway/security/encrypted_store.py
+- [[Deserialize registry from dict.]] - rationale - gateway/security/agent_isolation.py
+- [[Double-encoded base64 injection should be caught.]] - rationale - gateway/tests/test_security_hardening.py
+- [[Drift detector catches container config changes during operation.]] - rationale - gateway/tests/test_security_integration.py
+- [[DriftAlert]] - code - gateway/security/drift_detector.py
+- [[Encrypt and return as base64-encoded string.]] - rationale - gateway/security/encrypted_store.py
+- [[Encrypt data using AES-256-GCM.          Args             data String, bytes,]] - rationale - gateway/security/encrypted_store.py
+- [[EncryptedStore]] - code - gateway/security/encrypted_store.py
+- [[Encryptiondecryption time should not leak plaintext length.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Ensure zeroing doesn't break normal encryptdecrypt flow.]] - rationale - gateway/tests/test_security_hardening.py
+- [[Extract the key_id from an encrypted blob without decrypting.]] - rationale - gateway/security/encrypted_store.py
+- [[Full shared-nothing verification network + volume + security settings.]] - rationale - gateway/security/agent_isolation.py
+- [[Fullwidth chars NFKC-normalized — injection defeated.]] - rationale - gateway/tests/test_security_hardening.py
+- [[Generate Docker Compose config for all registered agents.]] - rationale - gateway/security/agent_isolation.py
+- [[Get container config for an agent.]] - rationale - gateway/security/agent_isolation.py
+- [[Helper to create a ContainerConfig with sensible defaults.]] - rationale - gateway/tests/test_agent_isolation.py
+- [[Individual canary check result.]] - rationale - gateway/security/canary.py
+- [[Initialize the encrypted store.          Args             master_secret The ma]] - rationale - gateway/security/encrypted_store.py
+- [[IsolationCheck]] - code - gateway/security/agent_isolation.py
+- [[IsolationStatus]] - code - gateway/security/agent_isolation.py
+- [[IsolationVerifier]] - code - gateway/security/agent_isolation.py
+- [[List all registered agent IDs.]] - rationale - gateway/security/agent_isolation.py
+- [[Mix of Latin and Cyrillic should trigger homoglyph detection.]] - rationale - gateway/tests/test_security_hardening.py
+- [[PatternRule]] - code - gateway/security/prompt_guard.py
+- [[Rapid successes should be capped by rate limiting.]] - rationale - gateway/tests/test_security_hardening.py
+- [[Re-encrypt blobs with a new master secret.          Args             blobs Lis]] - rationale - gateway/security/encrypted_store.py
+- [[Register a group-{chat_id} identity in AgentRegistry.]] - rationale - gateway/tests/test_group_isolation.py
+- [[Register a supergroup-type agent identity.]] - rationale - gateway/tests/test_group_isolation.py
+- [[Register an agent with its container configuration.]] - rationale - gateway/security/agent_isolation.py
+- [[Registry mapping agent IDs to container configurations.]] - rationale - gateway/security/agent_isolation.py
+- [[Remove an agent from the registry.]] - rationale - gateway/security/agent_isolation.py
+- [[Resolve master secret from args, file, or environment.]] - rationale - gateway/security/encrypted_store.py
+- [[Result of running the canary system.]] - rationale - gateway/security/canary.py
+- [[Retrieve baseline snapshot for a container.]] - rationale - gateway/security/drift_detector.py
+- [[SHA-256 hash of the config for quick comparison.]] - rationale - gateway/security/drift_detector.py
+- [[Same plaintext should produce different blobs (random saltnonce).]] - rationale - gateway/tests/test_security_hardening.py
+- [[Serialize registry to dict.]] - rationale - gateway/security/agent_isolation.py
+- [[Store a known-good baseline configuration. Returns config hash.]] - rationale - gateway/security/drift_detector.py
+- [[TestAgentIsolation]] - code - gateway/tests/test_security_hardening.py
+- [[TestAgentRegistry]] - code - gateway/tests/test_agent_isolation.py
+- [[TestDriftDetector]] - code - gateway/tests/test_security_hardening.py
+- [[TestDriftDetectorHardened]] - code - gateway/tests/test_security_hardening.py
+- [[TestEncryptedStore]] - code - gateway/tests/test_security_hardening.py
+- [[TestGenerateCompose]] - code - gateway/tests/test_agent_isolation.py
+- [[TestNetworkIsolation]] - code - gateway/tests/test_agent_isolation.py
+- [[TestPromptGuard_1]] - code - gateway/tests/test_security_hardening.py
+- [[TestPromptGuardEvasion]] - code - gateway/tests/test_security_hardening.py
+- [[TestSecureZero]] - code - gateway/tests/test_security_hardening.py
+- [[TestSharedNothing]] - code - gateway/tests/test_agent_isolation.py
+- [[TestTrustManager]] - code - gateway/tests/test_security_hardening.py
+- [[TestTrustManagerHardened]] - code - gateway/tests/test_security_hardening.py
+- [[TestVolumeIsolation]] - code - gateway/tests/test_agent_isolation.py
+- [[Tests for drift detector hardening.]] - rationale - gateway/tests/test_security_hardening.py
+- [[Tests for key material zeroing (C2 fix).]] - rationale - gateway/tests/test_security_hardening.py
+- [[Tests for prompt guard evasion techniques.]] - rationale - gateway/tests/test_security_hardening.py
+- [[Tests for trust manager hardening.]] - rationale - gateway/tests/test_security_hardening.py
+- [[Two group identities should each have distinct volumes.]] - rationale - gateway/tests/test_group_isolation.py
+- [[Unknown event types should not inject SQL.]] - rationale - gateway/tests/test_security_hardening.py
+- [[Verify container isolation properties.]] - rationale - gateway/security/agent_isolation.py
+- [[Verify drift is detected even with rapid changes.]] - rationale - gateway/tests/test_security_hardening.py
+- [[Verify that each agent has its own network namespace.]] - rationale - gateway/security/agent_isolation.py
+- [[Verify that each agent has its own volume (no shared filesystems).]] - rationale - gateway/security/agent_isolation.py
+- [[Verify you can't jump from UNTRUSTED to FULL in one step.]] - rationale - gateway/tests/test_security_hardening.py
+- [[Zero-width chars between letters should not bypass detection.]] - rationale - gateway/tests/test_security_hardening.py
+- [[_make_config()]] - code - gateway/tests/test_agent_isolation.py
+- [[_secure_zero()]] - code - gateway/security/encrypted_store.py
+- [[agent_isolation.py_2]] - code - gateway/security/agent_isolation.py
+- [[alert_dispatcher.py_2]] - code - gateway/security/alert_dispatcher.py
+- [[canary.py]] - code - gateway/security/canary.py
+- [[clamav_scanner.py_2]] - code - gateway/security/clamav_scanner.py
+- [[drift_detector.py_2]] - code - gateway/security/drift_detector.py
+- [[encrypted_store()]] - code - gateway/tests/test_security_integration.py
+- [[encrypted_store.py_2]] - code - gateway/security/encrypted_store.py
+- [[group-{chat_id} and collab-{uid} identities can coexist in the same registry.]] - rationale - gateway/tests/test_group_isolation.py
+- [[test_agent_isolation.py]] - code - gateway/tests/test_agent_isolation.py
+- [[test_drift_detection_in_pipeline()]] - code - gateway/tests/test_security_integration.py
+- [[test_security_hardening.py]] - code - gateway/tests/test_security_hardening.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -112,20 +270,34 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_mcp_oauth_preflight.py]]
-- 4 edges to [[_COMMUNITY_PrivacyPolicyEnforcer]]
-- 4 edges to [[_COMMUNITY_Browser-Fetch Skill for 1Password Share Links]]
-- 1 edge to [[_COMMUNITY_SSHProxy]]
-- 1 edge to [[_COMMUNITY_mcp-proxy-wrapper.js]]
-- 1 edge to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide]]
-- 1 edge to [[_COMMUNITY_URLAnalyzer]]
-- 1 edge to [[_COMMUNITY_AgentShroud™ Security Policy]]
-- 1 edge to [[_COMMUNITY_MCPServerConfig]]
-- 1 edge to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
+- 86 edges to [[_COMMUNITY_AlertDispatcher]]
+- 39 edges to [[_COMMUNITY_PIIConfig]]
+- 23 edges to [[_COMMUNITY_TrustConfig]]
+- 21 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 18 edges to [[_COMMUNITY_EgressFilter]]
+- 12 edges to [[_COMMUNITY_OutboundInfoFilter]]
+- 12 edges to [[_COMMUNITY_RBACConfig]]
+- 11 edges to [[_COMMUNITY_MiddlewareManager]]
+- 10 edges to [[_COMMUNITY_lifespan.py]]
+- 10 edges to [[_COMMUNITY_EgressPolicy]]
+- 8 edges to [[_COMMUNITY_TestEgressSSRF]]
+- 5 edges to [[_COMMUNITY_parse_clamscan_output]]
+- 3 edges to [[_COMMUNITY_ResourceGuard]]
+- 3 edges to [[_COMMUNITY_Enum]]
+- 3 edges to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]]
+- 2 edges to [[_COMMUNITY_test_security_toolchain.py]]
+- 2 edges to [[_COMMUNITY_Path]]
+- 2 edges to [[_COMMUNITY_All Dependencies]]
+- 2 edges to [[_COMMUNITY_AGENTSHROUD_MODE]]
+- 1 edge to [[_COMMUNITY_test_clamav_pipeline.py]]
+- 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
+- 1 edge to [[_COMMUNITY_WebContentScanner]]
+- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
+- 1 edge to [[_COMMUNITY_FR3 System Integrity]]
 
 ## Top bridge nodes
-- [[agent_cve_registry.py]] - degree 13, connects to 6 communities
-- [[get_agent_cve_summary()]] - degree 30, connects to 4 communities
-- [[list_cve_agents()]] - degree 15, connects to 4 communities
-- [[test_agent_cve_registry.py]] - degree 68, connects to 1 community
+- [[test_security_hardening.py]] - degree 30, connects to 8 communities
+- [[TestPromptGuard_1]] - degree 40, connects to 7 communities
+- [[TestDriftDetector]] - degree 35, connects to 7 communities
+- [[TestEncryptedStore]] - degree 35, connects to 7 communities
+- [[TestTrustManager]] - degree 35, connects to 7 communities

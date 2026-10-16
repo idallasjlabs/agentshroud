@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Newsletter Model Version Tracker_1]] - document - docker/config/hermes/cron/prompts/newsletter-model-version-tracker.txt
+- [[CLAUDE.md as the repo constitution]] - rationale - .llm_settings/docs/Claude-Code-TDD-Playbook.md
 
 ## Live Query (requires Dataview plugin)
 

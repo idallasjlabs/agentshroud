@@ -1,41 +1,34 @@
 ---
 type: community
-cohesion: 0.08
-members: 26
+cohesion: 0.11
+members: 19
 ---
 
 # API Keys Setup Guide
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 26 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 19 nodes
 
 ## Members
-- [[Approval Queue]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Auto-Restart]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Crash Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Data Integrity After Crash]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Detecting a Crash]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[Environment Variables Used_9]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[Graceful Shutdown_1]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Key Class `EnhancedApprovalQueue`]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[Kill Switch (Emergency Stop)]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Ledger Database]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Manual Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Normal Stop]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[OOM Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Persistence]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[Purpose_123]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[Related Notes_4]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Related Notes_9]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[Responsibilities_9]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[Shutdown & Recovery_1]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Shutdown Sequence]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[State After Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Timeout Behavior]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[Tool Risk Tiers]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[WebSocket Notifications]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[approval_queue.py]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
+- [[API Keys Setup Guide]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Create the Anthropic OAuth Token File]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Option 1 Use Anthropic Claude (Recommended)]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Option 2 Use OpenAI GPT-4]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Option A Via Control UI (Recommended)]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Option B Via Command Line]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Overview_13]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Security Notes_3]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 1 Save API Keys to Secret Files]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 2 Restart OpenClaw Container]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 3 Configure API Keys in OpenClaw]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 4 Set Default Model]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 5 Verify Configuration]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 6 Add Telegram Bot]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 7 Test the Bot]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Summary Checklist]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Test via Control UI]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Test via Telegram]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Verify OpenAI Key Exists]] - document - docs/setup/SETUP_API_KEYS.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,13 +38,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_10. Troubleshooting]]
-- 1 edge to [[_COMMUNITY_AgentShroud Brand Quick Reference]]
-- 1 edge to [[_COMMUNITY__FakeUpstreamWS]]
-- 1 edge to [[_COMMUNITY_PipelineAction]]
-- 1 edge to [[_COMMUNITY_SecureBrowser Security Policies]]
-- 1 edge to [[_COMMUNITY_container-net-diag.sh]]
+- 1 edge to [[_COMMUNITY_Troubleshooting_2]]
+- 1 edge to [[_COMMUNITY_OpenClaw Bot Container]]
+- 1 edge to [[_COMMUNITY_Quick Reference]]
 
 ## Top bridge nodes
-- [[approval_queue.py]] - degree 7, connects to 5 communities
-- [[Shutdown & Recovery_1]] - degree 7, connects to 1 community
+- [[API Keys Setup Guide]] - degree 13, connects to 3 communities

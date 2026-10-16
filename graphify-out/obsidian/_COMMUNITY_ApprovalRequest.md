@@ -1,193 +1,99 @@
 ---
 type: community
-cohesion: 0.02
-members: 178
+cohesion: 0.03
+members: 84
 ---
 
 # ApprovalRequest
 
-**Cohesion:** 0.02 - loosely connected
-**Members:** 178 nodes
+**Cohesion:** 0.03 - loosely connected
+**Members:** 84 nodes
 
 ## Members
-- [[.__init__()_15]] - code - gateway/ingest_api/router.py
-- [[.__init__()_156]] - code - gateway/tests/test_forward_routing.py
-- [[.__init__()_157]] - code - gateway/tests/test_forward_routing.py
-- [[._build_forward_payload()]] - code - gateway/ingest_api/router.py
-- [[._post()]] - code - gateway/tests/test_forward_routing.py
-- [[._post_forward()]] - code - gateway/tests/test_forward_routing.py
-- [[._run_forward()]] - code - gateway/tests/test_forward_routing.py
-- [[.content_not_empty()]] - code - gateway/ingest_api/models.py
-- [[.forward_to_agent()]] - code - gateway/ingest_api/router.py
-- [[.forward_to_agent_stream()]] - code - gateway/ingest_api/router.py
-- [[.health_check()]] - code - gateway/ingest_api/router.py
-- [[.list_targets()]] - code - gateway/ingest_api/router.py
-- [[.process_inbound()_4]] - code - gateway/tests/test_forward_routing.py
-- [[.process_inbound()_3]] - code - gateway/tests/test_forward_routing.py
-- [[.process_inbound()_5]] - code - gateway/tests/test_forward_routing.py
-- [[.process_outbound()_4]] - code - gateway/tests/test_forward_routing.py
-- [[.process_outbound()_3]] - code - gateway/tests/test_forward_routing.py
-- [[.process_outbound()_5]] - code - gateway/tests/test_forward_routing.py
-- [[.register_bots()]] - code - gateway/ingest_api/router.py
-- [[.resolve_target()]] - code - gateway/ingest_api/router.py
-- [[.test_agent_id_propagated_for_hermes()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_agent_id_propagated_for_openclaw()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_blocked_outbound_replaced_with_policy_notice()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_body_owner_id_with_matching_trusted_header_is_honored()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_body_owner_id_without_trusted_header_is_stripped()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_default_not_used_in_pipeline()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_empty_user_id_does_not_elevate_trust()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_file_exists()]] - code - gateway/tests/test_config_validation.py
-- [[.test_forward_passes_user_id_in_metadata_to_process_inbound()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_has_auth_token()]] - code - gateway/tests/test_config_validation.py
-- [[.test_has_gateway_bind()]] - code - gateway/tests/test_config_validation.py
-- [[.test_has_gateway_port()]] - code - gateway/tests/test_config_validation.py
-- [[.test_has_log_level()]] - code - gateway/tests/test_config_validation.py
-- [[.test_no_user_id_does_not_elevate_trust()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_non_owner_body_user_id_passes_through()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_non_owner_user_id_does_not_elevate_trust()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_owner_id_without_trusted_header_does_not_elevate_trust()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_owner_user_id_elevates_trust_to_full()]] - code - gateway/tests/test_forward_routing.py
-- [[.validate_default_url()]] - code - gateway/ingest_api/config.py
-- [[.validate_source()]] - code - gateway/ingest_api/models.py
-- [[.validate_targets()]] - code - gateway/ingest_api/config.py
-- [[A collaborator's user_id must NOT trigger the owner elevation.]] - rationale - gateway/tests/test_forward_routing.py
-- [[A non-owner user_id is not a spoof risk and must pass through unchanged]] - rationale - gateway/tests/test_forward_routing.py
-- [[AgentShroud Secure Chat Interface (static HTMLJS)]] - code - gateway/ingest_api/static/chat.html
-- [[AgentTarget_1]] - code - gateway/ingest_api/router.py
-- [[AgentTarget]] - code - gateway/ingest_api/models.py
-- [[AgentTarget accepts custom chat_path and health_path.]] - rationale - gateway/tests/test_router.py
-- [[AgentTarget defaults chat_path and health_path correctly.]] - rationale - gateway/tests/test_router.py
-- [[An empty string user_id must not match the owner.]] - rationale - gateway/tests/test_forward_routing.py
-- [[Any_9]] - code - gateway/ingest_api/router.py
-- [[Both bots must be reachable via the same router without conflict.]] - rationale - gateway/tests/test_router.py
-- [[Build a fake httpx.Response whose .json() returns body.]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[Build a minimal mock app_state that returns a target with the given bot name.]] - rationale - gateway/tests/test_forward_routing.py
-- [[Build the outbound payload for `target`, shared by the blocking and         stre]] - rationale - gateway/ingest_api/router.py
-- [[Check health of one or all agent targets          Args             target Spec]] - rationale - gateway/ingest_api/router.py
-- [[Create a router configuration for testing]] - rationale - gateway/tests/test_router.py
-- [[Create a router instance for testing]] - rationale - gateway/tests/test_router.py
-- [[Determine which agent should receive this content          Args             req]] - rationale - gateway/ingest_api/router.py
-- [[Downstream agent target]] - rationale - gateway/ingest_api/models.py
-- [[Empty choices list raises ForwardError.]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[Forward sanitized content to agent via HTTP POST          Args             targ]] - rationale - gateway/ingest_api/router.py
-- [[ForwardError]] - code - gateway/ingest_api/router.py
-- [[ForwardRequest_1]] - code - gateway/ingest_api/router.py
-- [[ForwardRequest]] - code - gateway/ingest_api/models.py
-- [[Inbound passes; outbound returns blocked=True with the original text intact.]] - rationale - gateway/tests/test_forward_routing.py
-- [[Initialize router          Args             config Router configuration]] - rationale - gateway/ingest_api/router.py
-- [[Legitimate voice-gateway path owner ID in body + matching trusted         heade]] - rationale - gateway/tests/test_forward_routing.py
-- [[Live regression 2026-08-07 Hermes's own internal LLM failover     (Anthropic cr]] - rationale - gateway/tests/test_router_streaming.py
-- [[Malformed OpenAI response (missing choices) raises ForwardError, not KeyError.]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[Minimal app_state for owner-trust tests.]] - rationale - gateway/tests/test_forward_routing.py
-- [[Minimal pipeline mock that records which agent_id it was called with.]] - rationale - gateway/tests/test_forward_routing.py
-- [[Multi-agent router configuration]] - rationale - gateway/ingest_api/config.py
-- [[MultiAgentRouter]] - code - gateway/ingest_api/router.py
-- [[Owner ID claimed in the body with NO trusted header must not reach the         p]] - rationale - gateway/tests/test_forward_routing.py
-- [[Path_26]] - code - gateway/tests/test_config_validation.py
-- [[Pipeline mock that records the user_trust_level passed to process_outbound.]] - rationale - gateway/tests/test_forward_routing.py
-- [[Pipeline receives 'hermes' as agent_id when routed to hermes.]] - rationale - gateway/tests/test_forward_routing.py
-- [[Pipeline receives 'openclaw' as agent_id when routed to openclaw.]] - rationale - gateway/tests/test_forward_routing.py
-- [[Populate routing targets from the bots registry.          Iterates all BotConfig]] - rationale - gateway/ingest_api/router.py
-- [[Raised when forwarding to agent fails]] - rationale - gateway/ingest_api/router.py
-- [[Raised when no valid routing target found]] - rationale - gateway/ingest_api/router.py
-- [[Regression 'default' must never appear in agent_id when a named target is resol]] - rationale - gateway/tests/test_forward_routing.py
-- [[Regression forward returned out_result.sanitized_message without checking]] - rationale - gateway/tests/test_forward_routing.py
-- [[Request to forward content through the gateway      Received from iOS Shortcuts,]] - rationale - gateway/ingest_api/models.py
-- [[Requests with no user_id must not be elevated to FULL.]] - rationale - gateway/tests/test_forward_routing.py
-- [[Return all configured agent targets          Returns             List of AgentT]] - rationale - gateway/ingest_api/router.py
-- [[RouterConfig]] - code - gateway/ingest_api/config.py
-- [[RouterConfig_1]] - code - gateway/ingest_api/router.py
-- [[RouterError]] - code - gateway/ingest_api/router.py
-- [[Routes content to appropriate agent containers      Routing priority     1. Exp]] - rationale - gateway/ingest_api/router.py
-- [[SCRUM-46 verify forward.py elevates trust to FULL for the owner's user_id.]] - rationale - gateway/tests/test_forward_routing.py
-- [[Stream sanitized content to an OpenAI-compatible agent, yielding text         de]] - rationale - gateway/ingest_api/router.py
-- [[Test forwarding handles HTTP error responses]] - rationale - gateway/tests/test_router.py
-- [[Test forwarding handles timeout exception]] - rationale - gateway/tests/test_router.py
-- [[Test forwarding handles unexpected exceptions]] - rationale - gateway/tests/test_router.py
-- [[Test forwarding to offline agent raises ForwardError]] - rationale - gateway/tests/test_router.py
-- [[Test health check for offline agent]] - rationale - gateway/tests/test_router.py
-- [[Test health check for single target]] - rationale - gateway/tests/test_router.py
-- [[Test health check with healthy agent]] - rationale - gateway/tests/test_router.py
-- [[Test listing all configured targets]] - rationale - gateway/tests/test_router.py
-- [[Test routing to default target]] - rationale - gateway/tests/test_router.py
-- [[Test routing with explicit route_to]] - rationale - gateway/tests/test_router.py
-- [[Test routing with invalid explicit target falls back to default]] - rationale - gateway/tests/test_router.py
-- [[TestAgentIdPropagatedFromTarget]] - code - gateway/tests/test_forward_routing.py
-- [[TestAllExampleConfigsExist]] - code - gateway/tests/test_config_validation.py
-- [[TestMinimalConfig]] - code - gateway/tests/test_config_validation.py
-- [[TestOutboundBlockedNotDelivered]] - code - gateway/tests/test_forward_routing.py
-- [[TestOwnerSpoofingViaForwardBody]] - code - gateway/tests/test_forward_routing.py
-- [[TestOwnerTrustElevation]] - code - gateway/tests/test_forward_routing.py
-- [[The OpenAI payload must include a non-empty model field.]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[Validate that default_url uses httphttps and targets an internal Docker host.]] - rationale - gateway/ingest_api/config.py
-- [[Validate that each target URL uses httphttps and targets an internal Docker hos]] - rationale - gateway/ingest_api/config.py
-- [[Verify all referenced example configs exist.]] - rationale - gateway/tests/test_config_validation.py
-- [[Verify that the resolved target.name is used as agent_id in pipeline calls.]] - rationale - gateway/tests/test_forward_routing.py
-- [[WS-E SCRUM-7374 a body-supplied user_id must NOT grant owner identity     to t]] - rationale - gateway/tests/test_forward_routing.py
-- [[WS-E SCRUM-7374 a spoofed owner user_id in the body WITHOUT the         truste]] - rationale - gateway/tests/test_forward_routing.py
-- [[When request.user_id matches _owner_user_id (with the trusted header),         p]] - rationale - gateway/tests/test_forward_routing.py
-- [[_BlockedOutboundPipeline]] - code - gateway/tests/test_forward_routing.py
-- [[_PipelineCaptor]] - code - gateway/tests/test_forward_routing.py
-- [[_TrustCaptor]] - code - gateway/tests/test_forward_routing.py
-- [[_make_mock_app_state()]] - code - gateway/tests/test_forward_routing.py
-- [[_make_trust_app_state()]] - code - gateway/tests/test_forward_routing.py
-- [[_mock_response()]] - code - gateway/tests/test_router_openai_translation.py
-- [[_mock_stream_response()]] - code - gateway/tests/test_router_streaming.py
-- [[_sse_lines()]] - code - gateway/tests/test_router_streaming.py
-- [[forward-routing agent_id propagation into security pipeline]] - code - gateway/ingest_api/routes/forward.py
-- [[forward_to_agent builds URL from target.chat_path.]] - rationale - gateway/tests/test_router.py
-- [[forward_to_agent extracts choices0.message.content and returns a string.]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[forward_to_agent passes response.json() through unchanged for chat targets.]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[forward_to_agent sends the generic {content, ledger_id, ...} body for chat targ]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[forward_to_agent sends {model, messages} when chat_path ends v1chatcompleti]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[health_check builds URL from target.health_path.]] - rationale - gateway/tests/test_router.py
-- [[minimal.env should have reasonable defaults.]] - rationale - gateway/tests/test_config_validation.py
-- [[process_inbound must receive metadata={'user_id' ...} from forward so that]] - rationale - gateway/tests/test_forward_routing.py
-- [[route_to='hermes' must resolve to the Hermes AgentTarget.]] - rationale - gateway/tests/test_router.py
-- [[router()_2]] - code - gateway/tests/test_router_openai_translation.py
-- [[router()_1]] - code - gateway/tests/test_router.py
-- [[router()_3]] - code - gateway/tests/test_router_streaming.py
-- [[router.py]] - code - gateway/ingest_api/router.py
-- [[router_config()]] - code - gateway/tests/test_router.py
-- [[sendMessage() JS — POST forward from browser chat UI]] - code - gateway/ingest_api/static/chat.html
-- [[test_agent_target_custom_paths()]] - code - gateway/tests/test_router.py
-- [[test_agent_target_default_paths()]] - code - gateway/tests/test_router.py
-- [[test_config_validation.py]] - code - gateway/tests/test_config_validation.py
-- [[test_forward_routing.py]] - code - gateway/tests/test_forward_routing.py
-- [[test_forward_to_agent_http_error()]] - code - gateway/tests/test_router.py
-- [[test_forward_to_agent_offline()]] - code - gateway/tests/test_router.py
-- [[test_forward_to_agent_timeout()]] - code - gateway/tests/test_router.py
-- [[test_forward_to_agent_unexpected_error()]] - code - gateway/tests/test_router.py
-- [[test_forward_uses_chat_path()]] - code - gateway/tests/test_router.py
-- [[test_generic_target_returns_json_as_is()]] - code - gateway/tests/test_router_openai_translation.py
-- [[test_generic_target_sends_content_body()]] - code - gateway/tests/test_router_openai_translation.py
-- [[test_health_check_healthy_agent()]] - code - gateway/tests/test_router.py
-- [[test_health_check_offline_agent()]] - code - gateway/tests/test_router.py
-- [[test_health_check_single_target()]] - code - gateway/tests/test_router.py
-- [[test_health_check_uses_health_path()]] - code - gateway/tests/test_router.py
-- [[test_hermes_and_openclaw_coexist()]] - code - gateway/tests/test_router.py
-- [[test_list_targets()]] - code - gateway/tests/test_router.py
-- [[test_openai_empty_choices_raises_forward_error()]] - code - gateway/tests/test_router_openai_translation.py
-- [[test_openai_malformed_response_raises_forward_error()]] - code - gateway/tests/test_router_openai_translation.py
-- [[test_openai_payload_includes_model()]] - code - gateway/tests/test_router_openai_translation.py
-- [[test_openai_target_returns_content_string()]] - code - gateway/tests/test_router_openai_translation.py
-- [[test_openai_target_sends_messages_body()]] - code - gateway/tests/test_router_openai_translation.py
-- [[test_resolve_target_default()]] - code - gateway/tests/test_router.py
-- [[test_resolve_target_explicit()]] - code - gateway/tests/test_router.py
-- [[test_resolve_target_invalid_explicit()]] - code - gateway/tests/test_router.py
-- [[test_resolves_hermes_target()]] - code - gateway/tests/test_router.py
-- [[test_router.py]] - code - gateway/tests/test_router.py
-- [[test_router_openai_translation.py]] - code - gateway/tests/test_router_openai_translation.py
-- [[test_router_streaming.py]] - code - gateway/tests/test_router_streaming.py
-- [[test_stream_ignores_lines_without_data_prefix()]] - code - gateway/tests/test_router_streaming.py
-- [[test_stream_payload_sets_stream_true()]] - code - gateway/tests/test_router_streaming.py
-- [[test_stream_raises_forward_error_on_connect_failure()]] - code - gateway/tests/test_router_streaming.py
-- [[test_stream_raises_forward_error_on_http_status_error()]] - code - gateway/tests/test_router_streaming.py
-- [[test_stream_raises_forward_error_on_malformed_json()]] - code - gateway/tests/test_router_streaming.py
-- [[test_stream_rejects_non_openai_compat_target()]] - code - gateway/tests/test_router_streaming.py
-- [[test_stream_skips_chunk_missing_choices_key_and_continues()]] - code - gateway/tests/test_router_streaming.py
-- [[test_stream_yields_content_deltas_in_order()]] - code - gateway/tests/test_router_streaming.py
+- [[dot-send_json()_1]] - code - gateway/tests/test_approval_queue.py
+- [[dot-test_both_owner_dm_and_group_notified()]] - code - gateway/tests/test_group_approval_routing.py
+- [[dot-test_dm_approval_no_group_side_effect()]] - code - gateway/tests/test_group_approval_routing.py
+- [[dot-test_dm_approval_routes_only_to_owner()]] - code - gateway/tests/test_group_approval_routing.py
+- [[dot-test_expired_request_cannot_be_decided()]] - code - gateway/tests/test_approval_stress.py
+- [[dot-test_get_pending_expires_stale()]] - code - gateway/tests/test_approval_stress.py
+- [[dot-test_group_chat_receives_thread_reply()]] - code - gateway/tests/test_group_approval_routing.py
+- [[dot-test_owner_dm_contains_action_type()]] - code - gateway/tests/test_group_approval_routing.py
+- [[dot-test_owner_dm_references_group_chat_id()]] - code - gateway/tests/test_group_approval_routing.py
+- [[dot-test_owner_receives_dm_for_group_approval()]] - code - gateway/tests/test_group_approval_routing.py
+- [[dot-test_timeout_auto_deny()]] - code - gateway/tests/test_enhanced_approval.py
+- [[A WebSocket stand-in whose send_json never returns — models a dead     client (c]] - rationale - gateway/tests/test_approval_queue.py
+- [[A single group-context approval triggers both owner DM AND group reply.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[ApprovalRequest_5]] - code - gateway/ingest_api/models.py
+- [[Create approval queue configuration for testing]] - rationale - gateway/tests/test_approval_queue.py
+- [[Create approval queue instance for testing]] - rationale - gateway/tests/test_approval_queue.py
+- [[DM approval must not send any message to a group chat ID.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[DM-context approvals must not trigger group notifications.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[Expired request raises ValueError on decide.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Owner DM message text must reference the originating group chat_id.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[Owner DM must describe the action_type that requires approval.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[Owner must receive a DM when an approval originates from a group chat.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[Queue should restore persisted items from store file on startup.]] - rationale - gateway/tests/test_approval_queue.py
+- [[Queue store file should persist items and status transitions.]] - rationale - gateway/tests/test_approval_queue.py
+- [[Request for human approval of a sensitive action      Submitted by an agent when]] - rationale - gateway/ingest_api/models.py
+- [[SCRUM-110 cleanup_decided() must persist the removal, not just mutate     the i]] - rationale - gateway/tests/test_approval_queue.py
+- [[SCRUM-110 writes go through a temp file + os.replace so a crash     mid-write c]] - rationale - gateway/tests/test_approval_queue.py
+- [[SCRUM-154 a dead WebSocket client must never wedge the approval lock.      subm_1]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test WebSocket client connection]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test approving a pending request]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test broadcast handles failed client sends]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test deciding on already-decided request raises ValueError]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test deciding on an expired request raises ValueError]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test deciding on nonexistent request raises KeyError]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test getting a specific item by ID]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test getting all pending requests]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test getting nonexistent item returns None]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test rejecting a pending request]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test submitting an approval request]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test that concurrent decision attempts are handled correctly]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test that get_pending excludes decided requests]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test that requests expire after timeout]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test timeout with auto-deny.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[TestApprovalTimeout]] - code - gateway/tests/test_approval_stress.py
+- [[TestDMApprovalOwnerOnly]] - code - gateway/tests/test_group_approval_routing.py
+- [[TestGroupApprovalOwnerDM]] - code - gateway/tests/test_group_approval_routing.py
+- [[The originating group chat must receive a thread-reply notification.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[Timeout handling for approval requests.]] - rationale - gateway/tests/test_approval_stress.py
+- [[When group_chat_id is None, only the owner receives a notification.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[_HangingWebSocket_1]] - code - gateway/tests/test_approval_queue.py
+- [[approval_queue()_1]] - code - gateway/tests/test_approval_queue.py
+- [[broadcast() bounds each client's send with a timeout — defense in     depth so a]] - rationale - gateway/tests/test_approval_queue.py
+- [[cleanup_decided() must not remove pending items regardless of age.]] - rationale - gateway/tests/test_approval_queue.py
+- [[cleanup_decided() should not remove decided items newer than threshold.]] - rationale - gateway/tests/test_approval_queue.py
+- [[cleanup_decided() should remove approvedrejected items older than threshold.]] - rationale - gateway/tests/test_approval_queue.py
+- [[get_pending should expire stale items.]] - rationale - gateway/tests/test_approval_stress.py
+- [[owner_chat_id receives a DM notification for every group-context approval.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[queue_config()]] - code - gateway/tests/test_approval_queue.py
+- [[test_approval_queue.py]] - code - gateway/tests/test_approval_queue.py
+- [[test_broadcast_does_not_hang_forever_on_dead_client()_1]] - code - gateway/tests/test_approval_queue.py
+- [[test_broadcast_with_failed_client()]] - code - gateway/tests/test_approval_queue.py
+- [[test_cleanup_decided_keeps_pending_items()]] - code - gateway/tests/test_approval_queue.py
+- [[test_cleanup_decided_keeps_recent_decided_items()]] - code - gateway/tests/test_approval_queue.py
+- [[test_cleanup_decided_persists_removal_to_disk()]] - code - gateway/tests/test_approval_queue.py
+- [[test_cleanup_decided_removes_old_decided_items()]] - code - gateway/tests/test_approval_queue.py
+- [[test_concurrent_decisions()]] - code - gateway/tests/test_approval_queue.py
+- [[test_decide_already_decided()]] - code - gateway/tests/test_approval_queue.py
+- [[test_decide_approval_approve()]] - code - gateway/tests/test_approval_queue.py
+- [[test_decide_approval_reject()]] - code - gateway/tests/test_approval_queue.py
+- [[test_decide_expired_request()]] - code - gateway/tests/test_approval_queue.py
+- [[test_decide_nonexistent_request()]] - code - gateway/tests/test_approval_queue.py
+- [[test_enhanced_tool_call_medium_not_gated()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_get_item()]] - code - gateway/tests/test_approval_queue.py
+- [[test_get_item_nonexistent()]] - code - gateway/tests/test_approval_queue.py
+- [[test_get_pending()]] - code - gateway/tests/test_approval_queue.py
+- [[test_get_pending_excludes_decided()]] - code - gateway/tests/test_approval_queue.py
+- [[test_persist_pending_store_writes_atomically()]] - code - gateway/tests/test_approval_queue.py
+- [[test_request_expiration()]] - code - gateway/tests/test_approval_queue.py
+- [[test_store_persists_submit_and_decision()]] - code - gateway/tests/test_approval_queue.py
+- [[test_store_restores_items_on_init()]] - code - gateway/tests/test_approval_queue.py
+- [[test_submit_approval_request()]] - code - gateway/tests/test_approval_queue.py
+- [[test_submit_does_not_deadlock_on_hung_websocket_client()_1]] - code - gateway/tests/test_approval_queue.py
+- [[test_websocket_connect()]] - code - gateway/tests/test_approval_queue.py
+- [[test_websocket_disconnect()]] - code - gateway/tests/test_approval_queue.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -197,34 +103,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 30 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 14 edges to [[_COMMUNITY_EgressPolicy]]
-- 14 edges to [[_COMMUNITY_TestMultiTurnTracker]]
-- 13 edges to [[_COMMUNITY_ModeRequest]]
-- 10 edges to [[_COMMUNITY_MCPToolCall]]
-- 9 edges to [[_COMMUNITY_AgentShroud Enterprise Governance for Autonomou]]
-- 9 edges to [[_COMMUNITY_test_jira_dev_ticket.py]]
-- 6 edges to [[_COMMUNITY_RateLimiter]]
-- 4 edges to [[_COMMUNITY__wrap_response()]]
-- 4 edges to [[_COMMUNITY_SSHProxy]]
-- 4 edges to [[_COMMUNITY_TestNormalizeForSpeech]]
-- 3 edges to [[_COMMUNITY_main.rs]]
-- 3 edges to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
-- 3 edges to [[_COMMUNITY_OutboundInfoFilter]]
-- 2 edges to [[_COMMUNITY_test_scorecard_integrity.py]]
-- 2 edges to [[_COMMUNITY_Test-Driven Development README]]
-- 1 edge to [[_COMMUNITY_STPA-Sec Analysis of AgentShroud]]
-- 1 edge to [[_COMMUNITY_llm_proxy.py]]
-- 1 edge to [[_COMMUNITY_PipelineAction]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
-- 1 edge to [[_COMMUNITY_SkillGuard]]
-- 1 edge to [[_COMMUNITY_AgentShroud Recovery Plan v0.4.0]]
-- 1 edge to [[_COMMUNITY_The 8D Investigation Process]]
-- 1 edge to [[_COMMUNITY_wazuh_client.py]]
+- 24 edges to [[_COMMUNITY_ApprovalQueueConfig]]
+- 13 edges to [[_COMMUNITY_GroupApprovalRouter]]
+- 8 edges to [[_COMMUNITY_ApprovalQueueItem]]
+- 8 edges to [[_COMMUNITY_DataLedger]]
+- 6 edges to [[_COMMUNITY_test_mfa_guard.py]]
+- 2 edges to [[_COMMUNITY_Request]]
+- 2 edges to [[_COMMUNITY_AsyncMock]]
+- 2 edges to [[_COMMUNITY_forward.py]]
+- 1 edge to [[_COMMUNITY_ingest_apimodels.py]]
+- 1 edge to [[_COMMUNITY_ThreatAssessment]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_create_auth_dependency]]
 
 ## Top bridge nodes
-- [[RouterConfig]] - degree 66, connects to 8 communities
-- [[ForwardRequest]] - degree 57, connects to 8 communities
-- [[MultiAgentRouter]] - degree 47, connects to 7 communities
-- [[router.py]] - degree 14, connects to 6 communities
-- [[test_config_validation.py]] - degree 11, connects to 5 communities
+- [[ApprovalRequest_5]] - degree 79, connects to 9 communities
+- [[TestApprovalTimeout]] - degree 9, connects to 3 communities
+- [[test_approval_queue.py]] - degree 30, connects to 2 communities
+- [[_HangingWebSocket_1]] - degree 8, connects to 2 communities
+- [[test_broadcast_with_failed_client()]] - degree 4, connects to 2 communities

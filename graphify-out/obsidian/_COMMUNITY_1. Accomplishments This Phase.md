@@ -1,20 +1,28 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.15
+members: 13
 ---
 
 # 1. Accomplishments This Phase
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[8D Root Cause Analysis_2]] - document - docker/config/openclaw/skills/i-eightd/README.md
-- [[Purpose_84]] - document - docker/config/openclaw/skills/i-eightd/README.md
-- [[README_89]] - document - docker/config/openclaw/skills/i-eightd/README.md
-- [[Related Skills_90]] - document - docker/config/openclaw/skills/i-eightd/README.md
-- [[Usage_93]] - document - docker/config/openclaw/skills/i-eightd/README.md
+- [[1. Accomplishments This Phase_3]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🌐 NetworkValidator Graceful Degradation]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[💾 Resource Management]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[📁 AlertDispatcher Storage Fix]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[📊 Management API Enhancement]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[📡 Reliable Shutdown Notifications]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🔄 Op-proxy Communication Hardening]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🔐 EncryptedStore Security Hardening]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🔒 Complete Security Module Integration]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🔧 Auto-Configuration Pipeline]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🖥️ Control Interface Authentication]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🚀 Async Startup Optimization]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🧠 Enhanced PII Detection Pipeline]] - document - docs/planning/reviews/phase-review-2026-02-24.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +30,9 @@ members: 5
 TABLE source_file, type FROM #community/1_Accomplishments_This_Phase
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
+
+## Top bridge nodes
+- [[1. Accomplishments This Phase_3]] - degree 13, connects to 1 community

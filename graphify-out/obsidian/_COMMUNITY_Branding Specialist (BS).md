@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Branding Specialist (BS)
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[.test_returns_false_when_file_missing()_2]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_returns_false_when_ingested_yesterday()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_returns_true_when_ingested_today()]] - code - gateway/tests/test_daily_cve_report.py
-- [[TestAlreadyIngestedGhsaToday]] - code - gateway/tests/test_daily_cve_report.py
+- [[Branding Specialist (BS)]] - document - docker/config/openclaw/skills/i-bs/README.md
+- [[Purpose_35]] - document - docker/config/openclaw/skills/i-bs/README.md
+- [[Related Skills_28]] - document - docker/config/openclaw/skills/i-bs/README.md
+- [[Usage_31]] - document - docker/config/openclaw/skills/i-bs/README.md
+- [[openclawskillsi-bsREADME]] - document - docker/config/openclaw/skills/i-bs/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_PrivacyPolicyEnforcer]]
+- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[TestAlreadyIngestedGhsaToday]] - degree 4, connects to 1 community
+- [[Branding Specialist (BS)]] - degree 5, connects to 1 community

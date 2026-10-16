@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[LOCAL_MODEL_ROUTES First-Prefix-Match-Wins Ordering Bug Class]] - rationale - gateway/proxy/llm_proxy.py
+- [[AI Agent]] - concept - docs/project/glossary.md
 
 ## Live Query (requires Dataview plugin)
 

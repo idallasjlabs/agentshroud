@@ -1,66 +1,60 @@
 ---
 type: community
 cohesion: 0.04
-members: 51
+members: 45
 ---
 
 # AgentShroud Phase Review — 2026-02-23
 
 **Cohesion:** 0.04 - loosely connected
-**Members:** 51 nodes
+**Members:** 45 nodes
 
 ## Members
-- [[.contributing()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.readme()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.security_md()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_actual_test_count_meets_minimum()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_all_module_attrs_exist_after_init()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_architecture_diagram_present()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_branch_naming_convention()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_claims_75_security_modules()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_endpoint_reports_no_key_collisions_and_high_total()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_every_pipeline_module_attr_is_a_lifespan_kwarg()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_has_disclosure_policy()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_has_security_contact()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_has_supported_versions()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_lists_security_features()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_manage_modules_endpoint_uses_the_same_registry()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_mentions_coverage_requirement()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_mentions_mit_license()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_mentions_pytest()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_mentions_python_311()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_mentions_test_directory()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_module_has_implementation()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_pytest_command_syntax()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_python_version_claim()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_quickstart_section_present()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_readme_p1_count_matches_middleware_manager()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_security_modules_listed()]] - code - gateway/tests/test_docs_accuracy.py
-- [[.test_version_table_present()]] - code - gateway/tests/test_docs_accuracy.py
-- [[CONTRIBUTING]] - document - CONTRIBUTING.md
-- [[Every SecurityPipeline.ALL_MODULE_ATTRS name must be passed as a kwarg     in li]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[Execute the real endpoint against a fully-populated app_state and         verify]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[README claims Python 3.9+.]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[SECURITY]] - document - SECURITY.md
-- [[TestContributingMdAccuracy]] - code - gateway/tests/test_docs_accuracy.py
-- [[TestLifespanWiresEveryPipelineModule]] - code - gateway/tests/test_docs_accuracy.py
-- [[TestManageModulesEndpointAccuracy]] - code - gateway/tests/test_docs_accuracy.py
-- [[TestReadmeAccuracy]] - code - gateway/tests/test_docs_accuracy.py
-- [[TestReadmeModulesMatchCode]] - code - gateway/tests/test_docs_accuracy.py
-- [[TestSecurityMdAccuracy]] - code - gateway/tests/test_docs_accuracy.py
-- [[TestTestCountAccuracy]] - code - gateway/tests/test_docs_accuracy.py
-- [[The endpoint's P1 section must be generated from ALL_MODULE_ATTRS,         not a]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[The test command in CONTRIBUTING.md should be valid.]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[This representative sample of modules mentioned in README should exist as code.]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[Verify managemodules enumerates every module MiddlewareManager wires.      Mid]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[Verify CONTRIBUTING.md references are correct.]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[Verify README.md claims match actual implementation.]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[Verify SECURITY.md content.]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[Verify each module listed in README has actual implementation.]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[Verify test count claims in READMEdocs are reasonable.]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[We should have at least 350 tests (README says 351+).]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[_read_file()]] - code - gateway/tests/test_docs_accuracy.py
-- [[test_docs_accuracy.py]] - code - gateway/tests/test_docs_accuracy.py
+- [[GO — Continue Development]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[High Risk]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[High Value (Critical Security Gaps)]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[Lower Value (Nice-to-Have)]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[Medium Risk]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[Medium Value (Enhancement & Hardening)]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[Monitoring Blindspots]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[⚠️ Moderate Risks]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[💡 Design Gaps]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[🔴 Priority 1 Critical Security Gaps]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[🚨 Critical Risks]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[🟡 Priority 2 Operational Security Maturity]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[🟢 Priority 3 Security Enhancement]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[1. Accomplishments This Phase (Feb 25 – Mar 3)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[1. Changes in This Diff]] - document - docs/planning/reviews/phase-review-2026-03-04.md
+- [[1. Changes in This Diff (Summary)]] - document - docs/planning/reviews/phase-review-2026-03-05.md
+- [[1. Prior Review Verification]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[2. New Blue Team Changes Since Round 1]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[3. Remaining Work — Prioritized by Value]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[3. Remaining Work — Prioritized by Value_1]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[4. Risks & Gaps_1]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[4. Risks & Gaps_2]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[4. Test Coverage Assessment]] - document - docs/planning/reviews/phase-review-2026-03-05.md
+- [[4. Test Results Summary]] - document - docs/planning/reviews/phase-review-2026-03-04.md
+- [[5. Errors & Warnings Summary]] - document - docs/planning/reviews/phase-review-2026-03-04.md
+- [[5. Errors & Warnings Summary_1]] - document - docs/planning/reviews/phase-review-2026-03-05.md
+- [[5. Summary]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[6. Go  No-Go Recommendation]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[6. Verdict]] - document - docs/planning/reviews/phase-review-2026-03-04.md
+- [[6. Verdict_1]] - document - docs/planning/reviews/phase-review-2026-03-05.md
+- [[6. Verdict_2]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[7. Fix Log]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[7. Post-Fix Verification]] - document - docs/planning/reviews/phase-review-2026-03-05.md
+- [[Action Items Before Merge]] - document - docs/planning/reviews/phase-review-2026-03-04.md
+- [[AgentShroud Phase Review — 2026-02-23]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[Conditions for Continued Investment]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Delivered]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Fix Status]] - document - docs/planning/reviews/phase-review-2026-03-05.md
+- [[Next Milestone That Validates the Investment]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Summary_3]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[Summary_4]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[Summary_5]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[What This Means_1]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[What Would Change This to NO-GO]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[phase-review-2026-02-23]] - document - docs/planning/reviews/phase-review-2026-02-23.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -70,16 +64,28 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_TrustManager]]
-- 8 edges to [[_COMMUNITY_RBACConfig]]
-- 1 edge to [[_COMMUNITY_SSHProxy]]
-- 1 edge to [[_COMMUNITY_Release Notes - AgentShroud v0.9.0]]
-- 1 edge to [[_COMMUNITY_sanitizer.py]]
-- 1 edge to [[_COMMUNITY_SessionContext]]
+- 2 edges to [[_COMMUNITY_Phase Review P0 — Core Pipeline Wiring]]
+- 2 edges to [[_COMMUNITY_AgentShroud v0.8.0 Peer Review Round 3 (FINAL)]]
+- 2 edges to [[_COMMUNITY_Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]]
+- 1 edge to [[_COMMUNITY_4. Risks & Gaps]]
+- 1 edge to [[_COMMUNITY_1. Accomplishments This Phase_1]]
+- 1 edge to [[_COMMUNITY_3. Brutally Honest Self-Assessment]]
+- 1 edge to [[_COMMUNITY_1. Accomplishments This Phase_2]]
+- 1 edge to [[_COMMUNITY_1. Accomplishments This Phase — Delivered Security Infrastructure]]
+- 1 edge to [[_COMMUNITY_2. Security Value Audit — Real Protection vs. Theater Assessment]]
+- 1 edge to [[_COMMUNITY_2. Security Value Audit]]
+- 1 edge to [[_COMMUNITY_2. Security Value Audit_1]]
+- 1 edge to [[_COMMUNITY_5. Test Results]]
+- 1 edge to [[_COMMUNITY_2. Security Value Audit — Genuine Protection vs. Security Theater]]
+- 1 edge to [[_COMMUNITY_5. Strategic Recommendations]]
+- 1 edge to [[_COMMUNITY_6. Conclusion — Mission-Critical Security Infrastructure Delivered]]
+- 1 edge to [[_COMMUNITY_2. Security Value Audit_2]]
+- 1 edge to [[_COMMUNITY_3. Code Quality]]
+- 1 edge to [[_COMMUNITY_1. Accomplishments This Phase]]
+- 1 edge to [[_COMMUNITY_3. Remaining Work — Prioritized by Value]]
+- 1 edge to [[_COMMUNITY_🟢 INFO (nice to have)]]
+- 1 edge to [[_COMMUNITY_🟢 INFO (nice to have)_1]]
+- 1 edge to [[_COMMUNITY_2. Security Analysis]]
 
 ## Top bridge nodes
-- [[test_docs_accuracy.py]] - degree 14, connects to 4 communities
-- [[TestContributingMdAccuracy]] - degree 11, connects to 2 communities
-- [[TestReadmeAccuracy]] - degree 11, connects to 2 communities
-- [[TestSecurityMdAccuracy]] - degree 10, connects to 2 communities
-- [[TestManageModulesEndpointAccuracy]] - degree 8, connects to 2 communities
+- [[AgentShroud Phase Review — 2026-02-23]] - degree 49, connects to 22 communities

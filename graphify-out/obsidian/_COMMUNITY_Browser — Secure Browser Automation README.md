@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[MCP Integrations (GitHub, Atlassian, AWS, XMind)]] - concept - docs/architecture/agentic-os.md
+- [[Browser — Secure Browser Automation README]] - document - .agents/skills/i-browser/README.md
 
 ## Live Query (requires Dataview plugin)
 

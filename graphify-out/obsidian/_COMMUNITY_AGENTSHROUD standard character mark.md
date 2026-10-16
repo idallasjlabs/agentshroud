@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.33
+members: 6
 ---
 
 # AGENTSHROUD standard character mark
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Purpose_50]] - document - docker/config/hermes/skills/i-icloud/README.md
-- [[README_55]] - document - docker/config/hermes/skills/i-icloud/README.md
-- [[Related Skills_53]] - document - docker/config/hermes/skills/i-icloud/README.md
-- [[Usage_56]] - document - docker/config/hermes/skills/i-icloud/README.md
-- [[iCloud Data Manager (ICLOUD)_1]] - document - docker/config/hermes/skills/i-icloud/README.md
+- [[AGENTSHROUD standard character mark]] - concept - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Class 42 — Software as a Service (SaaS)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Class 9 — Computer Software]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Class 9 — Downloadable Computer Software]] - concept - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Filing Basis (Section 1(a) Use in Commerce  1(b) Intent to Use)]] - concept - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 3 GOODS AND SERVICES]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +23,9 @@ members: 5
 TABLE source_file, type FROM #community/AGENTSHROUD_standard_character_mark
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_AgentShroud -- USPTO Trademark Application]]
+
+## Top bridge nodes
+- [[SECTION 3 GOODS AND SERVICES]] - degree 3, connects to 1 community

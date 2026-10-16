@@ -1,38 +1,107 @@
 ---
 type: community
-cohesion: 0.09
-members: 23
+cohesion: 0.06
+members: 92
 ---
 
 # A2AGovernanceProxy
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 23 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 92 nodes
 
 ## Members
-- [[.setup_method()_27]] - code - gateway/tests/test_security_hardening.py
-- [[.test_base64_encoded_injection()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_benign_base64()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_clean_input()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_combined_attack_high_score()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_custom_pattern()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_dan_jailbreak()_1]] - code - gateway/tests/test_security_hardening.py
-- [[.test_delimiter_injection()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_empty_input()_3]] - code - gateway/tests/test_security_hardening.py
-- [[.test_forget_everything()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_ignore_instructions()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_indirect_injection()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_new_instructions_override()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_none_input()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_prompt_extraction()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_prompt_leak_question()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_role_reassignment()_1]] - code - gateway/tests/test_security_hardening.py
-- [[.test_rtl_override()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_sanitized_output()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_unicode_zero_width()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_warn_threshold()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_xml_tag_injection()_1]] - code - gateway/tests/test_security_hardening.py
-- [[TestPromptGuard_1]] - code - gateway/tests/test_security_hardening.py
+- [[dot-__init__()_141]] - code - gateway/security/a2a_governance.py
+- [[dot-_check_message_size()]] - code - gateway/security/a2a_governance.py
+- [[dot-_check_peer()]] - code - gateway/security/a2a_governance.py
+- [[dot-_check_rate_limit()]] - code - gateway/security/a2a_governance.py
+- [[dot-_check_task_concurrency()]] - code - gateway/security/a2a_governance.py
+- [[dot-_finalize()]] - code - gateway/security/a2a_governance.py
+- [[dot-_process()]] - code - gateway/security/a2a_governance.py
+- [[dot-_sanitize_message()]] - code - gateway/security/a2a_governance.py
+- [[dot-complete_task()]] - code - gateway/security/a2a_governance.py
+- [[dot-fingerprint()]] - code - gateway/security/a2a_governance.py
+- [[dot-get_events()_2]] - code - gateway/security/a2a_governance.py
+- [[dot-get_peer()]] - code - gateway/security/a2a_governance.py
+- [[dot-get_summary()]] - code - gateway/security/a2a_governance.py
+- [[dot-is_trusted()]] - code - gateway/security/a2a_governance.py
+- [[dot-process_inbound()_5]] - code - gateway/security/a2a_governance.py
+- [[dot-process_outbound()_6]] - code - gateway/security/a2a_governance.py
+- [[dot-register_peer()_1]] - code - gateway/security/a2a_governance.py
+- [[dot-test_api_key_sanitized()]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-test_clean_payload_not_sanitized()]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-test_complete_task_frees_slot()]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-test_disabled_allows_all()]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-test_fingerprint_deterministic()]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-test_fingerprint_differs_for_different_payloads()]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-test_get_events_filtered()]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-test_normal_size_allowed()]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-test_outbound_to_trusted_peer()]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-test_outbound_to_unknown_quarantined()]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-test_oversized_denied()]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-test_peer_stats_updated()]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-test_rate_limit_exceeded()]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-test_register_peer()_1]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-test_ssn_sanitized()]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-test_summary()]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-test_task_limit_exceeded()]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-test_task_within_limit()]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-test_trust_clamped()]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-test_trusted_peer_allowed()]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-test_unknown_peer_quarantined()]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-test_unregister_peer()]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-test_untrusted_peer_allowed_in_monitor()]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-test_untrusted_peer_denied()]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-test_update_trust()]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-test_within_rate_limit()]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-to_dict()_11]] - code - gateway/security/a2a_governance.py
+- [[dot-unregister_peer()]] - code - gateway/security/a2a_governance.py
+- [[dot-update_peer_trust()]] - code - gateway/security/a2a_governance.py
+- [[A2A protocol message types (based on A2A v1.0 spec).]] - rationale - gateway/security/a2a_governance.py
+- [[A2ADecision]] - code - gateway/security/a2a_governance.py
+- [[A2AGovernanceConfig]] - code - gateway/security/a2a_governance.py
+- [[A2AGovernanceEvent]] - code - gateway/security/a2a_governance.py
+- [[A2AGovernanceProxy]] - code - gateway/security/a2a_governance.py
+- [[A2AMessage]] - code - gateway/security/a2a_governance.py
+- [[A2AMessageType]] - code - gateway/security/a2a_governance.py
+- [[A2APeer]] - code - gateway/security/a2a_governance.py
+- [[An A2A protocol message passing through the governance proxy.]] - rationale - gateway/security/a2a_governance.py
+- [[Apply final decision and log governance event.]] - rationale - gateway/security/a2a_governance.py
+- [[Audit event for A2A governance decisions.]] - rationale - gateway/security/a2a_governance.py
+- [[Check concurrent task limit for task_request messages.]] - rationale - gateway/security/a2a_governance.py
+- [[Check message payload size.]] - rationale - gateway/security/a2a_governance.py
+- [[Check per-peer rate limit.]] - rationale - gateway/security/a2a_governance.py
+- [[Configuration for the A2A governance proxy.]] - rationale - gateway/security/a2a_governance.py
+- [[Content hash for deduplication and audit.]] - rationale - gateway/security/a2a_governance.py
+- [[Core message processing pipeline.]] - rationale - gateway/security/a2a_governance.py
+- [[Get governance proxy summary.]] - rationale - gateway/security/a2a_governance.py
+- [[Governance decision for an A2A message.]] - rationale - gateway/security/a2a_governance.py
+- [[Governance proxy for Agent-to-Agent communication.      Sits between local agent]] - rationale - gateway/security/a2a_governance.py
+- [[Look up a registered peer.]] - rationale - gateway/security/a2a_governance.py
+- [[Mark a delegated task as complete (decrements active task counter).]] - rationale - gateway/security/a2a_governance.py
+- [[Register a known A2A peer agent.]] - rationale - gateway/security/a2a_governance.py
+- [[Registered A2A peer agent.]] - rationale - gateway/security/a2a_governance.py
+- [[Remove a peer from the registry.]] - rationale - gateway/security/a2a_governance.py
+- [[Sanitize PII from A2A message payload. Returns list of sanitizations applied.]] - rationale - gateway/security/a2a_governance.py
+- [[TestDisabledProxy]] - code - gateway/tests/test_a2a_governance.py
+- [[TestInboundProcessing]] - code - gateway/tests/test_a2a_governance.py
+- [[TestMessageFingerprint]] - code - gateway/tests/test_a2a_governance.py
+- [[TestMessageSize]] - code - gateway/tests/test_a2a_governance.py
+- [[TestOutboundProcessing]] - code - gateway/tests/test_a2a_governance.py
+- [[TestPIISanitization]] - code - gateway/tests/test_a2a_governance.py
+- [[TestPeerManagement]] - code - gateway/tests/test_a2a_governance.py
+- [[TestRateLimiting_2]] - code - gateway/tests/test_a2a_governance.py
+- [[TestReporting]] - code - gateway/tests/test_a2a_governance.py
+- [[TestTaskConcurrency]] - code - gateway/tests/test_a2a_governance.py
+- [[Update a peer's trust score (called by TrustManager integration).]] - rationale - gateway/security/a2a_governance.py
+- [[Validate and govern an inbound A2A message from a remote peer.]] - rationale - gateway/security/a2a_governance.py
+- [[Validate that the peer is registered and trusted.]] - rationale - gateway/security/a2a_governance.py
+- [[_msg()]] - code - gateway/tests/test_a2a_governance.py
+- [[a2a_governance.py]] - code - gateway/security/a2a_governance.py
+- [[monitor_proxy()]] - code - gateway/tests/test_a2a_governance.py
+- [[proxy()_2]] - code - gateway/tests/test_a2a_governance.py
+- [[test_a2a_governance.py]] - code - gateway/tests/test_a2a_governance.py
+- [[trusted_peer()]] - code - gateway/tests/test_a2a_governance.py
+- [[untrusted_peer()]] - code - gateway/tests/test_a2a_governance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,18 +111,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_ConsentFramework]]
-- 4 edges to [[_COMMUNITY_lifespan.py]]
-- 4 edges to [[_COMMUNITY_ServiceManager]]
-- 3 edges to [[_COMMUNITY_test_mfa_guard.py]]
-- 2 edges to [[_COMMUNITY_MemoryIntegrityMonitor]]
-- 1 edge to [[_COMMUNITY_EgressApprovalQueue]]
-- 1 edge to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
-- 1 edge to [[_COMMUNITY_RBACConfig]]
-- 1 edge to [[_COMMUNITY_TrustConfig]]
+- 5 edges to [[_COMMUNITY_Enum]]
+- 1 edge to [[_COMMUNITY__t]]
+- 1 edge to [[_COMMUNITY_Role]]
+- 1 edge to [[_COMMUNITY_GovernanceAction]]
 
 ## Top bridge nodes
-- [[TestPromptGuard_1]] - degree 40, connects to 9 communities
-- [[.test_custom_pattern()]] - degree 3, connects to 2 communities
-- [[.setup_method()_27]] - degree 2, connects to 1 community
-- [[.test_warn_threshold()]] - degree 2, connects to 1 community
+- [[A2ADecision]] - degree 26, connects to 2 communities
+- [[A2AGovernanceProxy]] - degree 43, connects to 1 community
+- [[A2AMessageType]] - degree 15, connects to 1 community
+- [[a2a_governance.py]] - degree 8, connects to 1 community
+- [[dot-get_events()_2]] - degree 4, connects to 1 community

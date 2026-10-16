@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # 7. Pi-hole DNS Security Layer (Built-In)
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[Guardrails_4]] - document - .agents/skills/i-odev/SKILL.md
-- [[Invocation_2]] - document - .agents/skills/i-odev/SKILL.md
-- [[Jira ticket — every development batch gets one_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Reviewers and fixer available to you_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Role_22]] - document - .agents/skills/i-odev/SKILL.md
-- [[SKILL_38]] - document - .agents/skills/i-odev/SKILL.md
-- [[Skill OpenClaw Dev Workflow (ODEV)]] - document - .agents/skills/i-odev/SKILL.md
-- [[Tools you have for this workflow_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[7. Pi-hole DNS Security Layer (Built-In)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[8. Comprehensive Multilingual Prompt Injection Defense]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[AgentShroud Web Console Integration]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Architecture]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Configuration]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Default Blocklists (Auto-Updated)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Deliverables]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Design Philosophy]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Risk Register]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,9 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud Security Overview v0.8.0]]
-- 1 edge to [[_COMMUNITY_jira_dev_ticket run()]]
-- 1 edge to [[_COMMUNITY_Troubleshooting Common Issues]]
+- 1 edge to [[_COMMUNITY_🛡️ AgentShroud Release Plan]]
 
 ## Top bridge nodes
-- [[Skill OpenClaw Dev Workflow (ODEV)]] - degree 10, connects to 3 communities
+- [[Risk Register]] - degree 3, connects to 1 community

@@ -10,24 +10,24 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[Configuration  Environment Variables_27]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[Default Limits]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[Function Details_46]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[Key Classes  Functions_49]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[Purpose_167]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[Related_53]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[ResourceGuard.__init__(limits)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[ResourceGuard.add_alert_callback(callback)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[ResourceGuard.check_cpu_limit(agent_id)  check_memory_limit(agent_id)  check_disk_write_limit(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[ResourceGuard.check_resource(agent_id, resource_type, amount)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[ResourceGuard.cleanup_temp_files(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[ResourceGuard.get_usage_stats(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[ResourceGuard.register_temp_file(agent_id, file_path)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[ResourceGuard.start_request_tracking(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[Responsibilities_51]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[Threat Model_22]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[resource_guard.py_2]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
-- [[resource_guard.py_1]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[dot-agentsskillsi-sec-offenseSKILL]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Adversary Model]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[AgentShroud Red Team Adversarial Tester]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Attack Phases]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Attack Techniques Reference]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Coverage Requirements]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Critical Rules_4]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Infrastructure]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Key Principle]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Output_3]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Phase 1 Reconnaissance & Trust Probing]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Phase 2 Prompt Injection]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Phase 3 Indirect Injection]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Phase 4 Data Exfiltration]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Phase 5 Exploitation Chains]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Phase 6 Detection Validation]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Test Structure]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Writing Exploit Tests]] - document - .agents/skills/i-sec-offense/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,3 +35,9 @@ members: 18
 TABLE source_file, type FROM #community/AgentShroud_Red_Team_Adversarial_Tester
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
+
+## Top bridge nodes
+- [[AgentShroud Red Team Adversarial Tester]] - degree 8, connects to 1 community

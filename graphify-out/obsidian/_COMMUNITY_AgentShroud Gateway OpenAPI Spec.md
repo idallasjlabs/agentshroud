@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SharedMemoryManager User Private Memory Tests]] - code - gateway/tests/test_shared_memory.py
+- [[AgentShroud Gateway OpenAPI Spec]] - document - gateway/openapi.json
 
 ## Live Query (requires Dataview plugin)
 

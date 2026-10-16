@@ -1,36 +1,20 @@
 ---
 type: community
-cohesion: 0.10
-members: 21
+cohesion: 0.40
+members: 5
 ---
 
 # 8. Governance Model
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 21 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[1. Container Hardening]] - document - docs/security/container-policy.md
-- [[1.1 Capabilities]] - document - docs/security/container-policy.md
-- [[1.2 Seccomp Profile]] - document - docs/security/container-policy.md
-- [[1.3 Read-Only Filesystem (Planned)]] - document - docs/security/container-policy.md
-- [[1.4 Non-Root Execution]] - document - docs/security/container-policy.md
-- [[1.5 Resource Limits]] - document - docs/security/container-policy.md
-- [[3. Secret Management]] - document - docs/security/container-policy.md
-- [[3.1 Hierarchy]] - document - docs/security/container-policy.md
-- [[3.2 Rules]] - document - docs/security/container-policy.md
-- [[3.3 Secret Rotation]] - document - docs/security/container-policy.md
-- [[4. Image Provenance and Updates]] - document - docs/security/container-policy.md
-- [[4.1 Base Images]] - document - docs/security/container-policy.md
-- [[4.2 Dependencies]] - document - docs/security/container-policy.md
-- [[4.3 Image Build]] - document - docs/security/container-policy.md
-- [[4.4 Image Storage]] - document - docs/security/container-policy.md
-- [[5. Runtime Monitoring]] - document - docs/security/container-policy.md
-- [[5.1 Health Checks]] - document - docs/security/container-policy.md
-- [[5.2 Logging]] - document - docs/security/container-policy.md
-- [[5.3 Monitoring Checklist]] - document - docs/security/container-policy.md
-- [[6. Incident Response (Container-Specific)]] - document - docs/security/container-policy.md
-- [[Container Security Policy — AgentShroud]] - document - docs/security/container-policy.md
+- [[Get Shit Done (GSD) Cadence]] - document - docs/architecture/agentic-os.md
+- [[8. Governance Model]] - document - docs/architecture/agentic-os.md
+- [[Branch Protection (belt-and-suspenders)]] - document - docs/architecture/agentic-os.md
+- [[No Security Theater (Rule A-E)]] - rationale - CLAUDE.md
+- [[Recurring Governance Rituals]] - document - docs/architecture/agentic-os.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,8 +24,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestBenchmarkRegression]]
-- 1 edge to [[_COMMUNITY_AgentShroud Brand Quick Reference]]
+- 1 edge to [[_COMMUNITY_AgentShroud Agentic OS]]
+- 1 edge to [[_COMMUNITY_sunday-upgrade-apply.sh]]
 
 ## Top bridge nodes
-- [[Container Security Policy — AgentShroud]] - degree 7, connects to 2 communities
+- [[8. Governance Model]] - degree 5, connects to 1 community
+- [[No Security Theater (Rule A-E)]] - degree 2, connects to 1 community

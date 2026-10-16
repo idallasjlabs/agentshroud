@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[EnhancedApprovalQueue.wait_for_decision]] - code - gateway/approval_queue/enhanced_queue.py
+- [[Agile Skill (stub)]] - document - .agents/skills/i-agile/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Vulcan (i-vulcan skill, script approver)]] - concept - docker/config/hermes/skills/i-apollo/SKILL.md
+- [[AgentShroud TwitterX Profile Image]] - image - branding/social/twitter-profile-400x400.png
 
 ## Live Query (requires Dataview plugin)
 

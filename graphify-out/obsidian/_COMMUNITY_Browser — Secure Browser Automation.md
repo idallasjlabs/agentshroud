@@ -1,19 +1,45 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.07
+members: 30
 ---
 
 # Browser — Secure Browser Automation
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 30 nodes
 
 ## Members
-- [[.test_returns_false_when_checked_yesterday()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_returns_false_when_file_missing()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_returns_true_when_checked_today()]] - code - gateway/tests/test_daily_cve_report.py
-- [[TestAlreadyCheckedUpstreamToday]] - code - gateway/tests/test_daily_cve_report.py
+- [[Action requires approval but none granted_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Browser timeout_3]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[CAPTCHA detected_3]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Rate limit exceeded_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[URL not in allowlist_3]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[1. Always Specify Risk Level_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[2. Use Allowlisting Liberally_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[3. Take Screenshots for Audit Trail_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[4. Handle CAPTCHAs Gracefully_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[5. Never Extract Credentials_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Approval Integration_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Audit Logging_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Best Practices_4]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Browser — Secure Browser Automation_3]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Click Element_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Core Security Principles_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Example Apple ID Creation (Semi-Automated)_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Extract Data_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Fetch JavaScript-Heavy Page (Node.js)]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Fill Form]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Limitations_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Navigate to URL_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Risk Levels_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Security Architecture_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Security Configuration_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Security Guarantees_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Take Screenshot_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Troubleshooting_17]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Usage_62]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[hermesskillsi-browserSKILL]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +47,3 @@ members: 4
 TABLE source_file, type FROM #community/Browser__Secure_Browser_Automation
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_PrivacyPolicyEnforcer]]
-
-## Top bridge nodes
-- [[TestAlreadyCheckedUpstreamToday]] - degree 4, connects to 1 community

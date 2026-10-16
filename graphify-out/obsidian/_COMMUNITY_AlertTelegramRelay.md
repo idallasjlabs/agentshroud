@@ -1,52 +1,50 @@
 ---
 type: community
-cohesion: 0.06
-members: 37
+cohesion: 0.15
+members: 35
 ---
 
 # AlertTelegramRelay
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 37 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 35 nodes
 
 ## Members
-- [[AgentShroud Docker Configuration]] - document - docker/README.md
-- [[Architecture_1]] - document - docker/README.md
-- [[Check Status_1]] - document - docker/README.md
-- [[Container Runtime Support (SCRUM-92)]] - document - docker/README.md
-- [[Container Stack]] - document - docker/README.md
-- [[Core Configuration]] - document - docker/README.md
-- [[Cron Failure Alerting (SCRUM-61)]] - document - docker/README.md
-- [[Detection contract]] - document - docker/README.md
-- [[Development_1]] - document - docker/README.md
-- [[Documentation_3]] - document - docker/README.md
-- [[Exec into Container]] - document - docker/README.md
-- [[Files]] - document - docker/README.md
-- [[Hermes  HCI]] - document - docker/README.md
-- [[MFA for High-Risk Approvals — IEC 62443 FR1 (SCRUM-93)]] - concept - docker/README.md
-- [[Multi-Bot Shared Report Store (SCRUM-79)]] - document - docker/README.md
-- [[Network DMZ — IEC 62443 FR5 (Restricted Data Flow) · SCRUM-93]] - document - docker/README.md
-- [[Network DMZ — IEC 62443 FR5 (SCRUM-93)]] - concept - docker/README.md
-- [[Next Steps (Phase 4+)]] - document - docker/README.md
-- [[Port Reference]] - document - docker/README.md
-- [[Progressive-Trust Enforcement Mode (SCRUM-78)]] - document - docker/README.md
-- [[Quick Start_1]] - document - docker/README.md
-- [[README_41]] - document - docker/README.md
-- [[Rebuild Containers]] - document - docker/README.md
-- [[Reference]] - document - docker/README.md
-- [[Reproducible dev shell (Nix flake)]] - document - docker/README.md
-- [[SOC Per-Module Enforcement Heat-Map (SCRUM-80)]] - document - docker/README.md
-- [[Secrets_1]] - document - docker/README.md
-- [[Security Features (Deferred to Phase 5+)]] - document - docker/README.md
-- [[Security Features (Implemented)]] - document - docker/README.md
-- [[Start the Stack]] - document - docker/README.md
-- [[Startup Warnings Reference]] - document - docker/README.md
-- [[Stop the Stack_1]] - document - docker/README.md
-- [[Test Chat]] - document - docker/README.md
-- [[Troubleshooting_5]] - document - docker/README.md
-- [[Usage_40]] - document - docker/README.md
-- [[Verify Security]] - document - docker/README.md
-- [[View Logs]] - document - docker/README.md
+- [[dot-__call__()_6]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[dot-__call__()_7]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[dot-__init__()_79]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[dot-__init__()_80]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[dot-_clean_tool()]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[dot-_coerce()]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[dot-_dedup_key()]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[dot-_handle()]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[dot-_spawn_send()]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[dot-flush()]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[Accept GatewayEvent objects or plain dicts from legacy emitters.]] - rationale - gateway/ingest_api/alert_telegram_relay.py
+- [[AlertTelegramRelay]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[Any_32]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[Await in-flight sends (testshutdown helper).]] - rationale - gateway/ingest_api/alert_telegram_relay.py
+- [[Subscribe to the gateway EventBus; relay security alerts to Telegram.]] - rationale - gateway/ingest_api/alert_telegram_relay.py
+- [[_SendSpy]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[_alert_event()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[alert_telegram_relay.py]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[test_alert_telegram_relay.py]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_async_sanitizer_supported()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_critical_alert_relayed_to_owner()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_dedup_key_includes_source()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_dedup_same_alert_sent_once()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_final_text_capped_below_telegram_limit()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_info_severity_not_relayed()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_non_alert_events_ignored()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_outgoing_text_passes_through_sanitizer()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_plain_dict_event_tolerated()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_rate_limit_caps_sends_per_hour()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_send_failure_rolls_back_dedup_for_retry()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_send_failure_swallowed()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_subscribed_relay_receives_bus_emissions()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_tool_field_control_chars_stripped_and_capped()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_warning_alert_relayed_with_orange_marker()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_warning_flood_cannot_starve_critical()]] - code - gateway/tests/test_alert_telegram_relay.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -56,9 +54,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestAuth]]
-- 1 edge to [[_COMMUNITY_AgentTarget]]
+- 7 edges to [[_COMMUNITY_make_event]]
+- 3 edges to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY_gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]]
+- 1 edge to [[_COMMUNITY_DataLedger]]
+- 1 edge to [[_COMMUNITY_ForwardRequest]]
 
 ## Top bridge nodes
-- [[MFA for High-Risk Approvals — IEC 62443 FR1 (SCRUM-93)]] - degree 3, connects to 1 community
-- [[SOC Per-Module Enforcement Heat-Map (SCRUM-80)]] - degree 2, connects to 1 community
+- [[AlertTelegramRelay]] - degree 33, connects to 3 communities
+- [[test_alert_telegram_relay.py]] - degree 23, connects to 2 communities
+- [[_SendSpy]] - degree 21, connects to 1 community
+- [[_alert_event()]] - degree 16, connects to 1 community
+- [[test_subscribed_relay_receives_bus_emissions()]] - degree 5, connects to 1 community

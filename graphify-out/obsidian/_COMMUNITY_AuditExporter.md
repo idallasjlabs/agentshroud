@@ -1,42 +1,53 @@
 ---
 type: community
-cohesion: 0.09
-members: 27
+cohesion: 0.08
+members: 38
 ---
 
 # AuditExporter
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 27 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 38 nodes
 
 ## Members
-- [[Code Review (CR)]] - document - docker/config/hermes/skills/i-cr/README.md
-- [[Code Review (i-cr)]] - document - .agents/skills/i-cr/SKILL.md
-- [[Environment Management (env — unresolved reference)]] - concept - .agents/skills/i-env/SKILL.md
-- [[GitHub Workflow Standards (i-gg)]] - document - .agents/skills/i-gg/SKILL.md
-- [[Production-Ready PR (i-crpr)]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Project Management (PM)]] - document - docker/config/hermes/skills/i-pm/README.md
-- [[Project Management (README)]] - document - .agents/skills/i-pm/README.md
-- [[Project Management (SKILL)]] - document - .agents/skills/i-pm/SKILL.md
-- [[Pull Request Generator (README)]] - document - .agents/skills/i-pr/README.md
-- [[Pull Request Generator (SKILL)]] - document - .agents/skills/i-pr/SKILL.md
-- [[Purpose_7]] - document - .agents/skills/i-cr/README.md
-- [[Purpose_22]] - document - .agents/skills/i-pm/README.md
-- [[Purpose_44]] - document - docker/config/hermes/skills/i-cr/README.md
-- [[Purpose_59]] - document - docker/config/hermes/skills/i-pm/README.md
-- [[README_7]] - document - .agents/skills/i-cr/README.md
-- [[README_22]] - document - .agents/skills/i-pm/README.md
-- [[README_49]] - document - docker/config/hermes/skills/i-cr/README.md
-- [[README_64]] - document - docker/config/hermes/skills/i-pm/README.md
-- [[Related Skills_7]] - document - .agents/skills/i-cr/README.md
-- [[Related Skills_25]] - document - .agents/skills/i-pm/README.md
-- [[Related Skills_47]] - document - docker/config/hermes/skills/i-cr/README.md
-- [[Related Skills_65]] - document - docker/config/hermes/skills/i-pm/README.md
-- [[Security Audit (i-sec)]] - document - .agents/skills/i-sec/SKILL.md
-- [[Usage_9]] - document - .agents/skills/i-cr/README.md
-- [[Usage_25]] - document - .agents/skills/i-pm/README.md
-- [[Usage_50]] - document - docker/config/hermes/skills/i-cr/README.md
-- [[Usage_66]] - document - docker/config/hermes/skills/i-pm/README.md
+- [[dot-__init__()_99]] - code - gateway/security/audit_export.py
+- [[dot-__init__()_100]] - code - gateway/security/audit_export.py
+- [[dot-_default_jsonld_context()]] - code - gateway/security/audit_export.py
+- [[dot-export_config()]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_export_cef()]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_export_filtering()]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_export_json()]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_export_json_ld()]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_hash_chain_integrity()]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_log_event()]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_query_events()]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_stats()_1]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_tamper_detection()]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_verify_export_integrity()]] - code - gateway/tests/test_audit_export.py
+- [[AuditExportConfig_1]] - code - gateway/security/audit_export.py
+- [[AuditExporter]] - code - gateway/security/audit_export.py
+- [[AuditStore]] - code - gateway/security/audit_export.py
+- [[Configuration for audit export functionality.]] - rationale - gateway/security/audit_export.py
+- [[Create test export configuration.]] - rationale - gateway/tests/test_audit_export.py
+- [[Default JSON-LD context for security ontology.]] - rationale - gateway/security/audit_export.py
+- [[Exports audit events in various compliance formats.]] - rationale - gateway/security/audit_export.py
+- [[Test AuditEvent functionality.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test AuditExporter functionality.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test AuditStore functionality.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test CEF export format.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test JSON export format.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test JSON-LD export format.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test audit store statistics.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test export integrity verification.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test export with filters.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test hash chain maintains integrity.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test logging audit events.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test querying events with filters.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test tamper detection in exports.]] - rationale - gateway/tests/test_audit_export.py
+- [[TestAuditEvent]] - code - gateway/tests/test_audit_export.py
+- [[TestAuditExporter]] - code - gateway/tests/test_audit_export.py
+- [[TestAuditStore]] - code - gateway/tests/test_audit_export.py
+- [[test_audit_export.py]] - code - gateway/tests/test_audit_export.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,13 +57,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY__w()]]
-- 2 edges to [[_COMMUNITY_DNSFilterConfig]]
-- 2 edges to [[_COMMUNITY_SlackAPIProxy]]
-- 1 edge to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
+- 14 edges to [[_COMMUNITY_AuditStore]]
+- 10 edges to [[_COMMUNITY_AuditEvent]]
+- 6 edges to [[_COMMUNITY_AuditEvent_1]]
 
 ## Top bridge nodes
-- [[Project Management (README)]] - degree 11, connects to 3 communities
-- [[Code Review (i-cr)]] - degree 10, connects to 2 communities
-- [[Project Management (SKILL)]] - degree 8, connects to 2 communities
-- [[Pull Request Generator (README)]] - degree 2, connects to 1 community
+- [[AuditExporter]] - degree 22, connects to 3 communities
+- [[TestAuditExporter]] - degree 15, connects to 2 communities
+- [[AuditExportConfig_1]] - degree 13, connects to 2 communities
+- [[TestAuditStore]] - degree 12, connects to 2 communities
+- [[TestAuditEvent]] - degree 9, connects to 2 communities

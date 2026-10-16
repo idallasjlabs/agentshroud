@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # 6. System Updates
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[installapiprerequisites endpoint]] - concept - gateway/web/templates/installer.html
-- [[checkPrereqs()]] - code - gateway/web/templates/installer.html
+- [[6. System Updates]] - document - docs/operations/runbook.md
+- [[AgentShroud Updates]] - document - docs/operations/runbook.md
+- [[Configuration Updates]] - document - docs/operations/runbook.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +20,9 @@ members: 2
 TABLE source_file, type FROM #community/6_System_Updates
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_AgentShroud Incident Response Plan]]
+
+## Top bridge nodes
+- [[6. System Updates]] - degree 3, connects to 1 community

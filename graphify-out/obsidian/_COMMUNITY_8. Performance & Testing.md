@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.25
+members: 8
 ---
 
 # 8. Performance & Testing
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[Operating Rules (Non-Negotiable)]] - document - .agents/skills/i-aws/SKILL.md
-- [[Rule 1 All Regions, Every Time]] - document - .agents/skills/i-aws/SKILL.md
-- [[Rule 2 Default Read-Only]] - document - .agents/skills/i-aws/SKILL.md
-- [[Rule 3 Script Everything]] - document - .agents/skills/i-aws/SKILL.md
-- [[Rule 4 Evidence-First Recommendations]] - document - .agents/skills/i-aws/SKILL.md
-- [[Rule 5 Safe Tagging]] - document - .agents/skills/i-aws/SKILL.md
-- [[Rule 6 Never Delete Automatically]] - document - .agents/skills/i-aws/SKILL.md
+- [[8. Performance & Testing]] - document - docs/papers/agentshroud-whitepaper.md
+- [[8.1 Test Coverage]] - document - docs/papers/agentshroud-whitepaper.md
+- [[8.2 Resource Footprint]] - document - docs/papers/agentshroud-whitepaper.md
+- [[8.3 Latency]] - document - docs/papers/agentshroud-whitepaper.md
+- [[Docker Test]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[GitHub Integration Test]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Phase 10 Validation Checklist]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[System Verification]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +27,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_gen.py]]
+- 1 edge to [[_COMMUNITY_AgentShroud Enterprise Governance for Autonomous AI Agents]]
+- 1 edge to [[_COMMUNITY_AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]]
 
 ## Top bridge nodes
-- [[Operating Rules (Non-Negotiable)]] - degree 7, connects to 1 community
+- [[8. Performance & Testing]] - degree 5, connects to 1 community
+- [[Phase 10 Validation Checklist]] - degree 5, connects to 1 community

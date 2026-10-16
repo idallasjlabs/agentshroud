@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[DNSQuery (data entity)]] - concept - docs/data/data-dictionary.md
+- [[AgentShroud Logo — GlowLight Variant]] - image - branding/agentshroud-logo-light-bg.png
 
 ## Live Query (requires Dataview plugin)
 

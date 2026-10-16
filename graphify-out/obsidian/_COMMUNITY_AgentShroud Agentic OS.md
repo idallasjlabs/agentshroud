@@ -59,10 +59,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Mode A — Single task]]
-- 1 edge to [[_COMMUNITY_AgentShroud v1.2.0 — Red Team Assessment]]
-- 1 edge to [[_COMMUNITY_Slack Channel Setup]]
-- 1 edge to [[_COMMUNITY_.get_or_create_session()]]
+- 1 edge to [[_COMMUNITY_Key Skills in Detail]]
+- 1 edge to [[_COMMUNITY_8. Governance Model]]
+- 1 edge to [[_COMMUNITY_`SecurityPipeline`]]
+- 1 edge to [[_COMMUNITY_Gateway ManagementControl-Plane API (v1.3.0)]]
 
 ## Top bridge nodes
 - [[AgentShroud Agentic OS]] - degree 18, connects to 4 communities

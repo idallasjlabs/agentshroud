@@ -1,28 +1,29 @@
 ---
 type: community
-cohesion: 0.18
-members: 13
+cohesion: 0.15
+members: 14
 ---
 
 # 1. GitHub MCP Authentication Reset
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 13 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[Curriculum Architect (i-atlas)]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Mindmap Architect (MM)]] - document - .agents/skills/i-mm/SKILL.md
-- [[Purpose_34]] - document - .agents/skills/i-ti/README.md
-- [[Purpose_71]] - document - docker/config/hermes/skills/i-ti/README.md
-- [[README_34]] - document - .agents/skills/i-ti/README.md
-- [[README_76]] - document - docker/config/hermes/skills/i-ti/README.md
-- [[Related Skills_37]] - document - .agents/skills/i-ti/README.md
-- [[Related Skills_77]] - document - docker/config/hermes/skills/i-ti/README.md
-- [[Technical Illustrator (TI)]] - document - docker/config/hermes/skills/i-ti/README.md
-- [[Technical Illustrator (i-ti)]] - document - .agents/skills/i-ti/SKILL.md
-- [[Technical Writing (i-tw)]] - document - .agents/skills/i-tw/SKILL.md
-- [[Usage_37]] - document - .agents/skills/i-ti/README.md
-- [[Usage_78]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[1. GitHub MCP Authentication Reset]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[2. Atlassian MCP Authentication Reset]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[3. AWS API MCP Authentication Reset]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Authentication Reset Procedures]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[If Using SSO]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Manual Re-authentication]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Option A Default AWS Profile]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Option B Named Profile]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 1 Generate New Personal Access Token]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 2 Update .env File]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 3 Verify Authentication]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 4 Restart Codex]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Verify Authentication]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[When Authentication Expires]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,8 +33,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
-- 1 edge to [[_COMMUNITY_SlackAPIProxy]]
+- 1 edge to [[_COMMUNITY_Skill MCP Auth Reset (MCPM-AUTH-RESET)]]
+- 1 edge to [[_COMMUNITY_1. GitHub MCP Authentication Reset_2]]
+- 1 edge to [[_COMMUNITY_1. GitHub MCP Authentication Reset_1]]
 
 ## Top bridge nodes
-- [[Technical Illustrator (i-ti)]] - degree 10, connects to 2 communities
+- [[Step 4 Restart Codex]] - degree 3, connects to 2 communities
+- [[Authentication Reset Procedures]] - degree 4, connects to 1 community

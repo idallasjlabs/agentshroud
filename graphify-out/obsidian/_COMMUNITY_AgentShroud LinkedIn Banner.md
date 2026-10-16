@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[build_merge() avoids NetworkX round-trip (801)]] - rationale - docker/config/hermes/skills/graphify/references/update.md
+- [[AgentShroud LinkedIn Banner]] - image - branding/social/linkedin-banner-1584x396.png
 
 ## Live Query (requires Dataview plugin)
 

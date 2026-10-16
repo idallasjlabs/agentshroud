@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[.test_installed_not_running_is_clean_note()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_not_installed_not_running()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_running_with_alerts_sets_timestamp()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_running_without_alert_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestFalcoSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-agentsskillsi-eightdREADME]] - document - .agents/skills/i-eightd/README.md
+- [[8D Root Cause Analysis]] - document - .agents/skills/i-eightd/README.md
+- [[Purpose_13]] - document - .agents/skills/i-eightd/README.md
+- [[Related Skills_6]] - document - .agents/skills/i-eightd/README.md
+- [[Usage_9]] - document - .agents/skills/i-eightd/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_wazuh_client.py]]
-- 1 edge to [[_COMMUNITY_TestMultilingualInjection]]
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[TestFalcoSummary]] - degree 5, connects to 1 community
-- [[.test_installed_not_running_is_clean_note()]] - degree 2, connects to 1 community
+- [[8D Root Cause Analysis]] - degree 5, connects to 1 community

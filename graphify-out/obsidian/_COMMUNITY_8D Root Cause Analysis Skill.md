@@ -1,19 +1,19 @@
 ---
 type: community
-cohesion: 0.50
+cohesion: 0.67
 members: 4
 ---
 
 # 8D Root Cause Analysis Skill
 
-**Cohesion:** 0.50 - moderately connected
+**Cohesion:** 0.67 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[Add Long Description]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Add Screenshots]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Add Security Badge]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[🎨 Customize Skill Page (Optional)]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[8D Root Cause Analysis README]] - document - .agents/skills/i-eightd/README.md
+- [[8D Root Cause Analysis Skill]] - document - .agents/skills/i-eightd/SKILL.md
+- [[AWS Agent (data retrieval layer)]] - concept - .agents/skills/i-eightd/SKILL.md
+- [[AWS Athena  BESS Telemetry Data Lake]] - concept - .agents/skills/i-eightd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +21,3 @@ members: 4
 TABLE source_file, type FROM #community/8D_Root_Cause_Analysis_Skill
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_security.py]]
-
-## Top bridge nodes
-- [[🎨 Customize Skill Page (Optional)]] - degree 4, connects to 1 community

@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # 2. Security Value Audit
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[EU AI Act & NIST Alignment Matrix]] - document - docs/compliance/eu-ai-act-nist-matrix.md
-- [[Governance Proxy Positioning (deployer compliance enabler)]] - rationale - docs/compliance/eu-ai-act-nist-matrix.md
-- [[SOC 2 Type II Attestation Path (SCRUM-99)]] - document - docs/compliance/soc2-attestation-path.md
+- [[2. Security Value Audit]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[⚠️ Partial Value  Needs Hardening]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[✅ Genuine Security Value]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[🚫 Security Theater]] - document - docs/planning/reviews/phase-review-2026-02-23.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +21,9 @@ members: 3
 TABLE source_file, type FROM #community/2_Security_Value_Audit
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
+
+## Top bridge nodes
+- [[2. Security Value Audit]] - degree 4, connects to 1 community

@@ -1,50 +1,45 @@
 ---
 type: community
-cohesion: 0.06
-members: 35
+cohesion: 0.08
+members: 30
 ---
 
 # AuditStore
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 35 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 30 nodes
 
 ## Members
-- [[AGENTSHROUD_CONFIG_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[AGENTSHROUD_CONFIG]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[Config Search Order]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[Current Status_11]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Debug Mode]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[Default Search Order (when NOT set)]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[Description]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[Description_5]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Description_6]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[Gateway Proxy Port]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[HTTP_PROXY  HTTPS_PROXY]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[HTTP_PROXY]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[LOG_LEVEL_1]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[LOG_LEVEL]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[Purpose_176]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[Related Notes_19]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[Related Notes_28]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[Related Notes_33]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Related Notes_34]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[Set In_2]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[Top-Level Sections]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[Usage_125]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[Value_3]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Values_3]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[When Enabled]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[When to Set]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[agentshroud.yaml_1]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[agentshroud.yaml]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[channels section]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[gateway section]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[mcp_proxy section]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[proxy section]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[security section]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[security_modules section]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[ssh section]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
+- [[dot-__init__()_120]] - code - gateway/security/audit_store.py
+- [[dot-audit_store()]] - code - gateway/tests/test_audit_export.py
+- [[dot-audit_store()_1]] - code - gateway/tests/test_audit_export.py
+- [[dot-close()_8]] - code - gateway/security/audit_store.py
+- [[dot-get_recent_entries()_1]] - code - gateway/security/audit_store.py
+- [[dot-get_stats()_14]] - code - gateway/security/audit_store.py
+- [[dot-initialize()]] - code - gateway/security/audit_store.py
+- [[dot-query_events()]] - code - gateway/security/audit_store.py
+- [[dot-store()_1]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_event_to_dict_includes_bot_id()]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_log_event_default_bot_id_is_openclaw()]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_log_event_stores_bot_id()]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_migration_adds_bot_id_column()]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_query_events_bot_filter()]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_query_events_bot_filter_combined_with_severity()]] - code - gateway/tests/test_audit_export.py
+- [[AuditStore_1]] - code - gateway/security/audit_store.py
+- [[Close the database connection.]] - rationale - gateway/security/audit_store.py
+- [[Create audit store with test data.]] - rationale - gateway/tests/test_audit_export.py
+- [[Create in-memory audit store for testing.]] - rationale - gateway/tests/test_audit_export.py
+- [[Get audit store statistics.]] - rationale - gateway/security/audit_store.py
+- [[Open the database, create the schema, and run column migrations.          Initia]] - rationale - gateway/security/audit_store.py
+- [[Opening a pre-migration DB (no bot_id column) should auto-migrate.]] - rationale - gateway/tests/test_audit_export.py
+- [[Path_36]] - code - gateway/security/audit_store.py
+- [[Query audit events with optional filters.          Args             bot_id Whe]] - rationale - gateway/security/audit_store.py
+- [[Return the most recent audit entries (alias for query_events with limit).]] - rationale - gateway/security/audit_store.py
+- [[SQLite-backed audit event store with tamper-evident hash chain.]] - rationale - gateway/security/audit_store.py
+- [[TestAuditStoreBotId]] - code - gateway/tests/test_audit_export.py
+- [[Verify per-bot filtering in AuditStore (v1.1.0 multi-bot support).]] - rationale - gateway/tests/test_audit_export.py
+- [[audit_export.py]] - code - gateway/security/audit_export.py
+- [[audit_store.py]] - code - gateway/security/audit_store.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -54,10 +49,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_chatbotmain.py]]
-- 1 edge to [[_COMMUNITY_GitGuard]]
-- 1 edge to [[_COMMUNITY_Mnemosyne — Retention Engineer]]
+- 14 edges to [[_COMMUNITY_AuditExporter]]
+- 8 edges to [[_COMMUNITY_AuditEvent]]
+- 4 edges to [[_COMMUNITY_ApprovalQueueItem]]
+- 2 edges to [[_COMMUNITY_lifespan.py]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 2 edges to [[_COMMUNITY_agentshroud-blueteamSKILL]]
+- 2 edges to [[_COMMUNITY_AuditEvent_1]]
+- 1 edge to [[_COMMUNITY_archive_old_events]]
+- 1 edge to [[_COMMUNITY_All Dependencies]]
+- 1 edge to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]]
+- 1 edge to [[_COMMUNITY_IEC 62443 Compliance Matrix — AgentShroud]]
 
 ## Top bridge nodes
-- [[agentshroud.yaml]] - degree 8, connects to 3 communities
-- [[HTTP_PROXY]] - degree 4, connects to 1 community
+- [[AuditStore_1]] - degree 36, connects to 7 communities
+- [[audit_store.py]] - degree 6, connects to 4 communities
+- [[audit_export.py]] - degree 7, connects to 3 communities
+- [[TestAuditStoreBotId]] - degree 13, connects to 2 communities
+- [[dot-query_events()]] - degree 4, connects to 1 community

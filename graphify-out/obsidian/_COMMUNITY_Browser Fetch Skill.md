@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.33
+members: 6
 ---
 
 # Browser Fetch Skill
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Hermes — Podcast Production Orchestrator]] - document - .agents/skills/i-hermes/README.md
-- [[Purpose_12]] - document - .agents/skills/i-hermes/README.md
-- [[README_12]] - document - .agents/skills/i-hermes/README.md
-- [[Related Skills_12]] - document - .agents/skills/i-hermes/README.md
-- [[Usage_14]] - document - .agents/skills/i-hermes/README.md
+- [[Browser Fetch Skill]] - document - skills/custom/browser-fetch/SKILL.md
+- [[Features]] - document - skills/custom/browser-fetch/SKILL.md
+- [[Security_2]] - document - skills/custom/browser-fetch/SKILL.md
+- [[Usage_4]] - document - skills/custom/browser-fetch/SKILL.md
+- [[Use Cases]] - document - skills/custom/browser-fetch/SKILL.md
+- [[browser-fetchSKILL]] - document - skills/custom/browser-fetch/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

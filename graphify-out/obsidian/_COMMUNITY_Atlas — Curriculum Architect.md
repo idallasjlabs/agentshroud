@@ -1,19 +1,32 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.12
+members: 17
 ---
 
 # Atlas — Curriculum Architect
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 17 nodes
 
 ## Members
-- [[._domain_matches_pattern()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[._is_domain_allowed()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Check if a URL's domain is in the allowlist.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
-- [[Check if domain matches pattern (supports wildcards).]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Atlas — Curriculum Architect_3]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[CPA Curriculum Frontmatter Addition_1]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Coverage Types_1]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Episode Closing_1]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Exam Weight Integration_1]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Gleim Unit Mapping_1]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Input Requirements_12]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Mandatory Acronym Expansion_1]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[OKE Channel — CPA Exam Context_1]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Output Format_22]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Persona_8]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Quality Checklist_9]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Role_63]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[System Prompt_8]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[User Prompt Template_3]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[User Prompt Template — OKE Channel]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[openclawskillsi-atlasSKILL]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,8 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Integration Guide]]
+- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[._domain_matches_pattern()]] - degree 3, connects to 1 community
-- [[._is_domain_allowed()]] - degree 3, connects to 1 community
+- [[Atlas — Curriculum Architect_3]] - degree 11, connects to 1 community

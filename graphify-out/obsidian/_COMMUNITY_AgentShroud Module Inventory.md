@@ -1,24 +1,25 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.20
+members: 10
 ---
 
 # AgentShroud Module Inventory
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[Command Details]] - document - skills/openclaw/xurl/SKILL.md
-- [[Direct Messages]] - document - skills/openclaw/xurl/SKILL.md
-- [[Engagement]] - document - skills/openclaw/xurl/SKILL.md
-- [[Media Upload]] - document - skills/openclaw/xurl/SKILL.md
-- [[Posting]] - document - skills/openclaw/xurl/SKILL.md
-- [[Reading]] - document - skills/openclaw/xurl/SKILL.md
-- [[Social Graph]] - document - skills/openclaw/xurl/SKILL.md
-- [[Timelines & Mentions]] - document - skills/openclaw/xurl/SKILL.md
-- [[User Info]] - document - skills/openclaw/xurl/SKILL.md
+- [[AgentShroud Module Inventory]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
+- [[AgentShroud Module Inventory_1]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
+- [[Original 33 Modules (v0.6.0)]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
+- [[Original 33 Modules (v0.6.0)_1]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
+- [[Pipeline Integration Points]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
+- [[Pipeline Integration Points_1]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
+- [[agentshroud-blueteamreferencesmodule-inventory]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
+- [[agentshroud-redteamreferencesmodule-inventory]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
+- [[v0.7.0 New Modules (Tier 2+3 + Hardening)]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
+- [[v0.7.0 New Modules (Tier 2+3 + Hardening)_1]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,9 +27,3 @@ members: 9
 TABLE source_file, type FROM #community/AgentShroud_Module_Inventory
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Voice Terminal — ESP32-S3-BOX-3 (Optional AgentS]]
-
-## Top bridge nodes
-- [[Command Details]] - degree 9, connects to 1 community

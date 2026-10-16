@@ -1,26 +1,31 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+cohesion: 0.12
+members: 16
 ---
 
 # AgentShroud Recovery Plan v0.4.0
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 16 nodes
 
 ## Members
-- [[.test_demotion_on_violations()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_failure_decreases_score()_1]] - code - gateway/tests/test_trust_manager.py
-- [[.test_promotion_on_threshold()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_score_floor_at_zero()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_success_increases_score()_1]] - code - gateway/tests/test_trust_manager.py
-- [[.test_violation_severe_penalty()]] - code - gateway/tests/test_trust_manager.py
-- [[Agent should be demoted on violations.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Agent should be promoted when score crosses threshold.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Score should not go below 0.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Test earning and losing trust.]] - rationale - gateway/tests/test_trust_manager.py
-- [[TestTrustProgression]] - code - gateway/tests/test_trust_manager.py
+- [[0.1 Code Inventory ✅]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[0.2 Current State ✅]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[2.1 Top Up Anthropic API Credits]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[2.2 Grant iMessage Automation Permission]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[2.3 Verify Both Working]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[3.1 Test Manual Send from Host]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[3.2 Test from Container]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[3.3 Test via OpenClaw chat Endpoint]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[3.4 Verify End-to-End Message Flow]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[AgentShroud Recovery Plan v0.4.0]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[EXECUTIVE SUMMARY_11]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[NEXT STEPS_8]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[PHASE 0 STABILIZATION ✅ COMPLETE]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[PHASE 2 USER ACTIONS REQUIRED]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[PHASE 3 iMESSAGE INTEGRATION TEST]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[RECOVERY_PLAN]] - document - docs/planning/recovery/RECOVERY_PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,8 +35,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_MemoryIntegrityMonitor]]
-- 2 edges to [[_COMMUNITY_TrustConfig]]
+- 1 edge to [[_COMMUNITY_PHASE 4 CLEANUP & v0.4.0 RELEASE]]
+- 1 edge to [[_COMMUNITY_1.4 Implementation Plan]]
 
 ## Top bridge nodes
-- [[TestTrustProgression]] - degree 11, connects to 2 communities
+- [[AgentShroud Recovery Plan v0.4.0]] - degree 8, connects to 2 communities

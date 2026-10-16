@@ -1,21 +1,22 @@
 ---
 type: community
 cohesion: 0.33
-members: 6
+members: 7
 ---
 
 # BROWSER_FETCH_SKILL.md
 
 **Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[Purpose_32]] - document - .agents/skills/i-socrates/README.md
-- [[README_32]] - document - .agents/skills/i-socrates/README.md
-- [[Related Skills_35]] - document - .agents/skills/i-socrates/README.md
-- [[SKILL_55]] - document - .agents/skills/i-socrates/SKILL.md
-- [[Socrates — Dialogue Architect]] - document - .agents/skills/i-socrates/README.md
-- [[Usage_35]] - document - .agents/skills/i-socrates/README.md
+- [[BROWSER_FETCH_SKILL]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Browser-Fetch Approval Queue Integration]] - concept - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Browser-Fetch Audit Logging]] - concept - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Browser-Fetch ClawHub Auto-Discovery Plan]] - rationale - docs/reference/BROWSER_FETCH_SKILL.md
+- [[PUBLISH-TO-CLAWHUB]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Playwright Headless Chromium Decryption]] - concept - docs/reference/BROWSER_FETCH_SKILL.md
+- [[SecureBrowser Skill_1]] - concept - docs/reference/PUBLISH-TO-CLAWHUB.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +26,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_gh-issues — Auto-fix GitHub Issues with Parallel]]
+- 1 edge to [[_COMMUNITY_Browser-Fetch Skill for 1Password Share Links]]
+- 1 edge to [[_COMMUNITY_Publish SecureBrowser to ClawHub - Step-by-Step Guide]]
 
 ## Top bridge nodes
-- [[SKILL_55]] - degree 2, connects to 1 community
+- [[BROWSER_FETCH_SKILL]] - degree 6, connects to 1 community
+- [[PUBLISH-TO-CLAWHUB]] - degree 3, connects to 1 community

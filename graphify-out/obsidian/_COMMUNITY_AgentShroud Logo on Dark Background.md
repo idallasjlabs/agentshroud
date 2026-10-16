@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[--watch debounce avoids per-file rebuild storms]] - rationale - docker/config/hermes/skills/graphify/references/add-watch.md
+- [[AgentShroud Logo on Dark Background]] - image - branding/logos/variants/logo-on-dark-1024x1024.png
 
 ## Live Query (requires Dataview plugin)
 

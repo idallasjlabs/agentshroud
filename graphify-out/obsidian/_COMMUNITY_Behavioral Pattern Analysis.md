@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SecurityPipeline.process_outbound]] - code - gateway/proxy/pipeline.py
+- [[Behavioral Pattern Analysis]] - concept - docs/project/glossary.md
 
 ## Live Query (requires Dataview plugin)
 

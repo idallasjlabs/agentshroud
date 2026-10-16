@@ -1,29 +1,28 @@
 ---
 type: community
-cohesion: 0.14
-members: 14
+cohesion: 0.15
+members: 13
 ---
 
 # 4. Environment Variables
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 14 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[.manager()]] - code - gateway/tests/test_key_rotation.py
-- [[.sample_credential()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_get_credential_status()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_get_health_score_all_healthy()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_get_health_score_mixed_states()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_register_credential()]] - code - gateway/tests/test_key_rotation.py
-- [[Create a manager with test configuration.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Create a sample credential for testing.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test credential registration.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test credential status reporting.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test health score calculation with all healthy credentials.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test health score with mixed credential states.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test key rotation manager functionality.]] - rationale - gateway/tests/test_key_rotation.py
-- [[TestKeyRotationManager]] - code - gateway/tests/test_key_rotation.py
+- [[4. Environment Variables]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[All Environment Variables (reference)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Bot Container (`agentshroud-bot`)_1]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Derived (set at runtime by `config.py`)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Gateway Container (`agentshroud-gateway`)_1]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Loaded at Startup via 1Password op-proxy]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Optional  Runtime]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Related Notes_40]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Required]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Required Secrets (as Docker secret files)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Security Notes_7]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Set in `docker-compose.yml`]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Summary_17]] - document - docs/vault/03 - Configuration/All Environment Variables.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,17 +32,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_TestInspectorEdgeCases]]
-- 2 edges to [[_COMMUNITY_Google Services Setup - Calendar, Contacts, Keep]]
-- 2 edges to [[_COMMUNITY_TestNormalizeForSpeech]]
-- 2 edges to [[_COMMUNITY_OpenClaw Bot Container]]
-- 1 edge to [[_COMMUNITY_3. Security Controls]]
-- 1 edge to [[_COMMUNITY_TestOpProxyEndpoint]]
-- 1 edge to [[_COMMUNITY_DOCKER-VPN-NETWORKING]]
+- 1 edge to [[_COMMUNITY_Dockerfile — Gateway]]
+- 1 edge to [[_COMMUNITY_Deployment Runbook — AgentShroud]]
+- 1 edge to [[_COMMUNITY_Local LLM Support — Implementation Review]]
+- 1 edge to [[_COMMUNITY_Dockerfile — Bot (OpenClaw)]]
 
 ## Top bridge nodes
-- [[TestKeyRotationManager]] - degree 15, connects to 7 communities
-- [[.manager()]] - degree 4, connects to 2 communities
-- [[.sample_credential()]] - degree 3, connects to 1 community
-- [[.test_get_health_score_all_healthy()]] - degree 3, connects to 1 community
-- [[.test_get_health_score_mixed_states()]] - degree 3, connects to 1 community
+- [[4. Environment Variables]] - degree 8, connects to 2 communities
+- [[All Environment Variables (reference)]] - degree 3, connects to 2 communities

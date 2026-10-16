@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Prune old nodes for changed files before AST re-insert (1178)]] - rationale - docker/config/hermes/skills/graphify/references/update.md
+- [[AgentShroud LinkedIn Profile Image]] - image - branding/social/linkedin-profile-400x400.png
 
 ## Live Query (requires Dataview plugin)
 

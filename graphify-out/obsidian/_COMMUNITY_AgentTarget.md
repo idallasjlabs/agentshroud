@@ -1,204 +1,87 @@
 ---
 type: community
-cohesion: 0.02
-members: 189
+cohesion: 0.04
+members: 72
 ---
 
 # AgentTarget
 
-**Cohesion:** 0.02 - loosely connected
-**Members:** 189 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 72 nodes
 
 ## Members
-- [[NOTE gatewaysecurityegress_filter.py_is_private_ip has the same class]] - rationale - gateway/security/a2a_policy.py
-- [[.__init__()_17]] - code - gateway/proxy/a2a_proxy.py
-- [[.__init__()_18]] - code - gateway/proxy/a2a_proxy.py
-- [[.__init__()_50]] - code - gateway/security/a2a_policy.py
-- [[.__init__()_134]] - code - gateway/tests/test_a2a_integration.py
-- [[.__init__()_136]] - code - gateway/tests/test_a2a_policy.py
-- [[.__init__()_135]] - code - gateway/tests/test_a2a_policy.py
-- [[.__init__()_138]] - code - gateway/tests/test_a2a_proxy.py
-- [[.__post_init__()_2]] - code - gateway/security/a2a_policy.py
-- [[._audit()]] - code - gateway/proxy/a2a_proxy.py
-- [[._decide()]] - code - gateway/security/a2a_policy.py
-- [[._handle()_1]] - code - gateway/tests/test_a2a_integration.py
-- [[._record_trust_violation()]] - code - gateway/proxy/a2a_proxy.py
-- [[._tier_for()]] - code - gateway/security/a2a_policy.py
-- [[.allowed()]] - code - gateway/security/a2a_policy.py
-- [[.close()_7]] - code - gateway/proxy/a2a_proxy.py
-- [[.enforce()]] - code - gateway/security/a2a_policy.py
-- [[.evaluate()]] - code - gateway/security/a2a_policy.py
-- [[.extract_text_for_pii_scan()]] - code - gateway/proxy/a2a_proxy.py
-- [[.forward()]] - code - gateway/proxy/a2a_proxy.py
-- [[.forward()_3]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[.from_dict()_2]] - code - gateway/security/a2a_policy.py
-- [[.parse_jsonrpc_request()]] - code - gateway/proxy/a2a_proxy.py
-- [[.process_agent_card_request()]] - code - gateway/proxy/a2a_proxy.py
-- [[.process_inbound_request()]] - code - gateway/proxy/a2a_proxy.py
-- [[.resolve_peer_id()]] - code - gateway/proxy/a2a_proxy.py
-- [[.submit_tool_request()_2]] - code - gateway/tests/test_a2a_policy.py
-- [[.submit_tool_request()_1]] - code - gateway/tests/test_a2a_policy.py
-- [[.test_bare_config_denies_every_peer()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[.test_configured_allowlist_still_works_alongside_fail_closed_default()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[.test_engine_constructed_with_no_config_at_all_is_fail_closed()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[.test_from_dict_empty_dict_is_fail_closed()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[.test_from_dict_none_is_fail_closed()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[.test_invalid_default_action_string_falls_back_to_deny()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[.test_owner_bypass_is_always_false_regardless_of_input()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[.wait_for_decision()_2]] - code - gateway/tests/test_a2a_policy.py
-- [[.wait_for_decision()_1]] - code - gateway/tests/test_a2a_policy.py
-- [[A 10-digit decimal string (matches the decimal-IPv4 pattern) whose     value exc]] - rationale - gateway/tests/test_a2a_policy.py
-- [[A duck-typed queue predating the ``force_tier`` kwarg — enforce() must     fall]] - rationale - gateway/tests/test_a2a_policy.py
-- [[A freshly-constructed, un-set result must default to blocked, not     allowed —]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[A message with MULTIPLE text parts must not leave a second, unredacted     text]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[A plain default-deny (unknownunlisted peer) is a routing decision, not     evid]] - rationale - gateway/tests/test_a2a_trust_scoring.py
-- [[A queue reporting requires_wait=False for a call the engine deemed     high-risk]] - rationale - gateway/tests/test_a2a_policy.py
-- [[A task_id AgentShroud never saw created (e.g. the very first GetTask     against]] - rationale - gateway/tests/test_a2a_policy.py
-- [[A typo'd default_action (e.g. 'allow-all') must not silently open         the ga]] - rationale - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[A2A peers are never equivalent to the human operator — unlike MCP,     owner_byp]] - rationale - gateway/tests/test_a2a_policy.py
-- [[A2AMethod_1]] - code - gateway/tests/test_a2a_policy.py
-- [[A2AMethod]] - code - gateway/security/a2a_policy.py
-- [[A2APeerTestDouble]] - code - gateway/tests/test_a2a_integration.py
-- [[A2APolicyAction]] - code - gateway/security/a2a_policy.py
-- [[A2APolicyConfig_1]] - code - gateway/tests/test_a2a_policy.py
-- [[A2APolicyConfig]] - code - gateway/security/a2a_policy.py
-- [[A2APolicyConfig() with no arguments — the shape a fresh deploy gets         if n]] - rationale - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[A2APolicyDecision]] - code - gateway/security/a2a_policy.py
-- [[A2APolicyEngine]] - code - gateway/proxy/a2a_proxy.py
-- [[A2APolicyEngine_2]] - code - gateway/tests/test_a2a_policy.py
-- [[A2APolicyEngine_1]] - code - gateway/security/a2a_policy.py
-- [[A2AProxy]] - code - gateway/proxy/a2a_proxy.py
-- [[A2AProxyResult]] - code - gateway/proxy/a2a_proxy.py
-- [[Accept either the enum or its string value (JSON-RPC payloads arrive     as plai]] - rationale - gateway/security/a2a_policy.py
-- [[An operator who explicitly opts into default_action=allow gets normal     risk-t]] - rationale - gateway/tests/test_a2a_policy.py
-- [[Any_11]] - code - gateway/proxy/a2a_proxy.py
-- [[Any_29]] - code - gateway/security/a2a_policy.py
-- [[Best-effort canonicalization of alternate IPv4 encodings that     ``ipaddress.ip]] - rationale - gateway/security/a2a_policy.py
-- [[Canonical (v1.0 PascalCase) A2A JSON-RPC methods this engine governs.]] - rationale - gateway/security/a2a_policy.py
-- [[DNS rebinding a public-looking hostname that currently resolves to a     privat]] - rationale - gateway/tests/test_a2a_policy.py
-- [[Decides allow  deny  require-approval for inbound A2A requests.      Usage]] - rationale - gateway/security/a2a_policy.py
-- [[Declarative A2A security policy.      Loaded from the ``a2a_policy`` section of]] - rationale - gateway/security/a2a_policy.py
-- [[Ergonomic recorder for enforcement points — never raises.      ``sanitized=True`]] - rationale - gateway/security/module_stats.py
-- [[Evaluate a single A2A request. Pure — no IO, no side effects         beyond bes]] - rationale - gateway/security/a2a_policy.py
-- [[Evaluate and resolve the decision to a terminal ALLOWDENY.          Identical f]] - rationale - gateway/security/a2a_policy.py
-- [[Fail-closed-by-default must not mean impossible to allow anything         — an]] - rationale - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[Flatten an A2A Message's `parts` array to plain text for PII         scanning.]] - rationale - gateway/proxy/a2a_proxy.py
-- [[GET .well-knownagent-card.json — never policy-gated (the A2A         spec requ]] - rationale - gateway/proxy/a2a_proxy.py
-- [[Hardened SSRF guard for A2A push-notification callback URLs.      Independent mi]] - rationale - gateway/security/a2a_policy.py
-- [[Hermes A2A Plugin Upstream Gaps (83701, 8053480779, 78298, 77872, 81042)]] - concept - docs/security/threat-model.md
-- [[HermesA2AForwarder]] - code - gateway/proxy/a2a_proxy.py
-- [[Hostname resolution is mocked — this test asserts the validator's own     logic,]] - rationale - gateway/tests/test_a2a_policy.py
-- [[IPv4Address]] - code - gateway/security/a2a_policy.py
-- [[Minimal JSON-RPC 2.0 responder standing in for a real A2A peer.      Explicitly]] - rationale - gateway/tests/test_a2a_integration.py
-- [[Negative control for the SSRF suite above — a genuinely public     callback URL]] - rationale - gateway/tests/test_a2a_integration.py
-- [[Normalize a peer-id reference for robust, evasion-resistant matching.      Same]] - rationale - gateway/security/a2a_policy.py
-- [[Ownership is checked before the risk-tier gate — a mismatched peer must     be d]] - rationale - gateway/tests/test_a2a_policy.py
-- [[Parse a JSON-RPC 2.0 A2A request body into methodtask_id         callback_url.]] - rationale - gateway/proxy/a2a_proxy.py
-- [[Parse a policy config from a plain dict (e.g. loaded from YAML).]] - rationale - gateway/security/a2a_policy.py
-- [[ParsedA2ARequest]] - code - gateway/proxy/a2a_proxy.py
-- [[Real HTTP forwarder to Hermes's internal A2A JSON-RPC listener.      Matches the]] - rationale - gateway/proxy/a2a_proxy.py
-- [[Real JSON-RPC payloads deliver the method as a plain string — evaluate()     mus]] - rationale - gateway/tests/test_a2a_policy.py
-- [[Record a typed violation against the peer's trust score for the         two A2A-]] - rationale - gateway/proxy/a2a_proxy.py
-- [[Request_7]] - code - gateway/tests/test_a2a_integration.py
-- [[Resolve peer identity from the Authorization Bearer token.          Never falls]] - rationale - gateway/proxy/a2a_proxy.py
-- [[Response]] - code - gateway/tests/test_a2a_integration.py
-- [[Result of proxying a single inbound A2A request.]] - rationale - gateway/proxy/a2a_proxy.py
-- [[Return a copy of raw_body with the first text Part's content replaced     by the]] - rationale - gateway/proxy/a2a_proxy.py
-- [[Terminates inbound A2A HTTP requests, enforces policy, forwards.      Usage]] - rationale - gateway/proxy/a2a_proxy.py
-- [[TestDefaultA2APolicyIsFailClosed]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[The `engine` fixture has no approval_queue configured at all — a     high-risk m]] - rationale - gateway/tests/test_a2a_policy.py
-- [[The result of evaluating a single A2A request against the policy.]] - rationale - gateway/security/a2a_policy.py
-- [[ToolACLEnforcer.can_use_tool]] - code - gateway/security/tool_acl.py
-- [[ToolACLEnforcer.can_use_tool_from_origin]] - code - gateway/security/tool_acl.py
-- [[ToolACLEnforcer.can_use_tool_in_group_context]] - code - gateway/security/tool_acl.py
-- [[True only for a terminal ALLOW. REQUIRE_APPROVAL is not allowed on         its o]] - rationale - gateway/security/a2a_policy.py
-- [[TrustManager_2]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[Two allowlisted peers, one denylisted peer, default-deny for everyone else.]] - rationale - gateway/tests/test_a2a_policy.py
-- [[Unambiguous malicious intent — immediate demotion, not a slow decay.]] - rationale - gateway/tests/test_a2a_trust_scoring.py
-- [[Unlike MCP, owner_bypass is not operator-configurable for A2A at         all — a]] - rationale - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[Upstream A2A Gap 78298 — SSRF Push-Notification Callback URL Bypass]] - concept - gateway/tests/test_a2a_integration.py
-- [[Upstream A2A Gap 83701 — TaskContextId Collision Hijack]] - concept - gateway/tests/test_a2a_integration.py
-- [[Upstream Hermes Gap 80534 — Peer Identity Resolved From SocketX-Forwarded-For Instead Of Bearer Token]] - concept - gateway/tests/test_a2a_proxy.py
-- [[_BaseAddress]] - code - gateway/security/a2a_policy.py
-- [[_Event]] - code - gateway/tests/test_a2a_proxy.py
-- [[_LegacyStubApprovalQueue]] - code - gateway/tests/test_a2a_policy.py
-- [[_StubApprovalQueue]] - code - gateway/tests/test_a2a_policy.py
-- [[_StubForwarder_1]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[_address_is_public()]] - code - gateway/security/a2a_policy.py
-- [[_base_config()]] - code - gateway/tests/test_a2a_policy.py
-- [[_canonicalize_ip_literal()]] - code - gateway/security/a2a_policy.py
-- [[_int_to_ipv4()]] - code - gateway/security/a2a_policy.py
-- [[_jsonrpc()]] - code - gateway/tests/test_a2a_integration.py
-- [[_jsonrpc()_2]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[_method_of()]] - code - gateway/security/a2a_policy.py
-- [[_norm()]] - code - gateway/security/a2a_policy.py
-- [[_redact_message_text()]] - code - gateway/proxy/a2a_proxy.py
-- [[`A2APolicyEngine()` with no config argument — the laziest possible         call]] - rationale - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[a2a_policy.py]] - code - gateway/security/a2a_policy.py
-- [[a2a_proxy.py]] - code - gateway/proxy/a2a_proxy.py
-- [[alice legitimately creates a task; bob (a distinct, also-allowlisted     peer) a]] - rationale - gateway/tests/test_a2a_integration.py
-- [[engine()]] - code - gateway/tests/test_a2a_policy.py
-- [[is_safe_a2a_callback_url()]] - code - gateway/security/a2a_policy.py
-- [[load_config-style callers pass whatever the YAML section resolved         to, wh]] - rationale - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[record_decision()]] - code - gateway/security/module_stats.py
-- [[test_a2a_integration.py]] - code - gateway/tests/test_a2a_integration.py
-- [[test_a2a_policy.py]] - code - gateway/tests/test_a2a_policy.py
-- [[test_a2a_policy_default_failclosed.py]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
-- [[test_a2a_ssrf_callback_is_a_severe_violation_by_default()]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[test_a2a_ssrf_callback_penalty_matches_malicious_intent_tier()]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[test_a2a_task_ownership_violation_has_a_configured_penalty_heavier_than_generic_policy()]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[test_a2a_trust_scoring.py]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[test_a2a_violation_types_exist()]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[test_adversarial_ssrf_callback_bypass_attempts_over_real_http()]] - code - gateway/tests/test_a2a_integration.py
-- [[test_adversarial_task_ownership_hijack_attempt_over_real_http()]] - code - gateway/tests/test_a2a_integration.py
-- [[test_allowlisted_peer_low_risk_method_is_allowed()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_callback_url_bare_dot_host_is_rejected()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_callback_url_hostname_resolving_to_a_private_ip_is_rejected()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_callback_url_ipv4_mapped_ipv6_loopback_is_rejected()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_callback_url_legitimate_public_urls_are_allowed()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_callback_url_malformed_url_is_rejected()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_callback_url_out_of_range_decimal_literal_is_not_treated_as_a_valid_ip()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_callback_url_rejects_non_http_schemes()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_callback_url_scheme_only_no_host_is_rejected()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_callback_url_ssrf_bypass_encodings_are_rejected()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_callback_url_unresolvable_hostname_fails_closed()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_decision_allowed_property_only_true_for_terminal_allow()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_default_action_allow_lets_unlisted_peers_through_to_risk_tier_check()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_deny_wins_over_allow_for_a_peer_on_both_lists()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_denylisted_peer_is_denied_even_if_method_safe()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_double_peer()]] - code - gateway/tests/test_a2a_integration.py
-- [[test_enforce_denies_when_queue_downgrades_requires_wait_to_false()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_enforce_falls_back_to_legacy_queue_signature_without_force_tier()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_enforce_high_risk_method_approved_resolves_to_allow()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_enforce_high_risk_method_rejected_resolves_to_deny()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_enforce_high_risk_method_with_no_approval_queue_fails_closed()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_enforce_low_risk_method_bypasses_approval_queue_entirely()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_enforce_task_ownership_violation_never_reaches_approval_queue()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_evaluate_accepts_a_plain_string_method_not_just_the_enum()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_full_round_trip_allowed_request_reaches_the_peer()]] - code - gateway/tests/test_a2a_integration.py
-- [[test_full_round_trip_denied_request_never_reaches_the_peer()]] - code - gateway/tests/test_a2a_integration.py
-- [[test_generic_denial_does_not_record_a2a_specific_violation_types()]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[test_high_risk_methods_require_approval()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_legitimate_callback_url_is_forwarded_over_real_http()]] - code - gateway/tests/test_a2a_integration.py
-- [[test_low_risk_methods_are_allowed()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_medium_risk_methods_are_allowed()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_owner_bypass_defaults_false_and_does_not_bypass_a2a_high_risk()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_peer_cannot_access_another_peers_task()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_peer_cannot_cancel_another_peers_task()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_peer_cannot_subscribe_to_another_peers_task()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_proxy_result_defaults_are_safe()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_proxy_without_trust_manager_does_not_raise()]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[test_redact_message_text_clears_all_text_parts_not_just_the_first()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_set_push_notification_config_with_safe_callback_still_requires_approval()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_set_push_notification_config_with_unsafe_callback_is_denied_and_severe()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_ssrf_callback_rejection_triggers_severe_demotion()]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[test_task_creator_can_access_their_own_task()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_task_ownership_check_is_a_no_op_for_an_unknown_task_id()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_task_ownership_denial_is_not_bypassable_by_high_risk_approval_path()]] - code - gateway/tests/test_a2a_policy.py
-- [[test_task_ownership_violation_records_a2a_violation_type()]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[test_unknown_peer_is_denied_by_default()]] - code - gateway/tests/test_a2a_policy.py
-- [[trust_manager is an optional dependency — a proxy built without one     (e.g. be]] - rationale - gateway/tests/test_a2a_trust_scoring.py
-- [[trust_manager()_1]] - code - gateway/tests/test_a2a_trust_scoring.py
+- [[dot-process_inbound()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-process_outbound()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-test_blocked_outbound_replaced_with_policy_notice()]] - code - gateway/tests/test_forward_routing.py
+- [[AgentTarget]] - code - gateway/ingest_api/models.py
+- [[AgentTarget accepts custom chat_path and health_path.]] - rationale - gateway/tests/test_router.py
+- [[AgentTarget defaults chat_path and health_path correctly.]] - rationale - gateway/tests/test_router.py
+- [[Create a router configuration for testing]] - rationale - gateway/tests/test_router.py
+- [[Create a router instance for testing]] - rationale - gateway/tests/test_router.py
+- [[Downstream agent target]] - rationale - gateway/ingest_api/models.py
+- [[Empty choices list raises ForwardError.]] - rationale - gateway/tests/test_router_openai_translation.py
+- [[Inbound passes; outbound returns blocked=True with the original text intact.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Live regression 2026-08-07 Hermes's own internal LLM failover     (Anthropic cr]] - rationale - gateway/tests/test_router_streaming.py
+- [[Malformed OpenAI response (missing choices) raises ForwardError, not KeyError.]] - rationale - gateway/tests/test_router_openai_translation.py
+- [[Regression forward returned out_result.sanitized_message without checking]] - rationale - gateway/tests/test_forward_routing.py
+- [[Test forwarding handles HTTP error responses]] - rationale - gateway/tests/test_router.py
+- [[Test forwarding handles timeout exception]] - rationale - gateway/tests/test_router.py
+- [[Test forwarding handles unexpected exceptions]] - rationale - gateway/tests/test_router.py
+- [[Test forwarding to offline agent raises ForwardError]] - rationale - gateway/tests/test_router.py
+- [[Test health check for offline agent]] - rationale - gateway/tests/test_router.py
+- [[Test health check for single target]] - rationale - gateway/tests/test_router.py
+- [[Test health check with healthy agent]] - rationale - gateway/tests/test_router.py
+- [[Test listing all configured targets]] - rationale - gateway/tests/test_router.py
+- [[Test routing to default target]] - rationale - gateway/tests/test_router.py
+- [[Test routing with explicit route_to]] - rationale - gateway/tests/test_router.py
+- [[Test routing with invalid explicit target falls back to default]] - rationale - gateway/tests/test_router.py
+- [[TestOutboundBlockedNotDelivered]] - code - gateway/tests/test_forward_routing.py
+- [[The OpenAI payload must include a non-empty model field.]] - rationale - gateway/tests/test_router_openai_translation.py
+- [[_BlockedOutboundPipeline]] - code - gateway/tests/test_forward_routing.py
+- [[_mock_stream_response()]] - code - gateway/tests/test_router_streaming.py
+- [[_sse_lines()]] - code - gateway/tests/test_router_streaming.py
+- [[forward_to_agent builds URL from target.chat_path.]] - rationale - gateway/tests/test_router.py
+- [[forward_to_agent extracts choices0.message.content and returns a string.]] - rationale - gateway/tests/test_router_openai_translation.py
+- [[forward_to_agent passes response.json() through unchanged for chat targets.]] - rationale - gateway/tests/test_router_openai_translation.py
+- [[forward_to_agent sends the generic {content, ledger_id, ...} body for chat targ]] - rationale - gateway/tests/test_router_openai_translation.py
+- [[forward_to_agent sends {model, messages} when chat_path ends v1chatcompleti]] - rationale - gateway/tests/test_router_openai_translation.py
+- [[health_check builds URL from target.health_path.]] - rationale - gateway/tests/test_router.py
+- [[load_config computes CORS origins from the configured port.]] - rationale - gateway/tests/test_router.py
+- [[router()]] - code - gateway/tests/test_router.py
+- [[router_config()]] - code - gateway/tests/test_router.py
+- [[test_agent_target_custom_paths()]] - code - gateway/tests/test_router.py
+- [[test_agent_target_default_paths()]] - code - gateway/tests/test_router.py
+- [[test_cors_origins_include_configured_port()]] - code - gateway/tests/test_router.py
+- [[test_forward_to_agent_http_error()]] - code - gateway/tests/test_router.py
+- [[test_forward_to_agent_offline()]] - code - gateway/tests/test_router.py
+- [[test_forward_to_agent_timeout()]] - code - gateway/tests/test_router.py
+- [[test_forward_to_agent_unexpected_error()]] - code - gateway/tests/test_router.py
+- [[test_forward_uses_chat_path()]] - code - gateway/tests/test_router.py
+- [[test_generic_target_returns_json_as_is()]] - code - gateway/tests/test_router_openai_translation.py
+- [[test_generic_target_sends_content_body()]] - code - gateway/tests/test_router_openai_translation.py
+- [[test_health_check_healthy_agent()]] - code - gateway/tests/test_router.py
+- [[test_health_check_offline_agent()]] - code - gateway/tests/test_router.py
+- [[test_health_check_single_target()]] - code - gateway/tests/test_router.py
+- [[test_health_check_uses_health_path()]] - code - gateway/tests/test_router.py
+- [[test_list_targets()]] - code - gateway/tests/test_router.py
+- [[test_openai_empty_choices_raises_forward_error()]] - code - gateway/tests/test_router_openai_translation.py
+- [[test_openai_malformed_response_raises_forward_error()]] - code - gateway/tests/test_router_openai_translation.py
+- [[test_openai_payload_includes_model()]] - code - gateway/tests/test_router_openai_translation.py
+- [[test_openai_target_returns_content_string()]] - code - gateway/tests/test_router_openai_translation.py
+- [[test_openai_target_sends_messages_body()]] - code - gateway/tests/test_router_openai_translation.py
+- [[test_resolve_target_default()]] - code - gateway/tests/test_router.py
+- [[test_resolve_target_explicit()]] - code - gateway/tests/test_router.py
+- [[test_resolve_target_invalid_explicit()]] - code - gateway/tests/test_router.py
+- [[test_router.py]] - code - gateway/tests/test_router.py
+- [[test_router_streaming.py]] - code - gateway/tests/test_router_streaming.py
+- [[test_stream_ignores_lines_without_data_prefix()]] - code - gateway/tests/test_router_streaming.py
+- [[test_stream_payload_sets_stream_true()]] - code - gateway/tests/test_router_streaming.py
+- [[test_stream_raises_forward_error_on_connect_failure()]] - code - gateway/tests/test_router_streaming.py
+- [[test_stream_raises_forward_error_on_http_status_error()]] - code - gateway/tests/test_router_streaming.py
+- [[test_stream_raises_forward_error_on_malformed_json()]] - code - gateway/tests/test_router_streaming.py
+- [[test_stream_rejects_non_openai_compat_target()]] - code - gateway/tests/test_router_streaming.py
+- [[test_stream_skips_chunk_missing_choices_key_and_continues()]] - code - gateway/tests/test_router_streaming.py
+- [[test_stream_yields_content_deltas_in_order()]] - code - gateway/tests/test_router_streaming.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -208,24 +91,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 34 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
-- 29 edges to [[_COMMUNITY_MemoryIntegrityMonitor]]
-- 5 edges to [[_COMMUNITY_EncryptedStore]]
-- 5 edges to [[_COMMUNITY_REQUIRED NOTES — PRODUCE EVERY ONE OF THESE]]
-- 3 edges to [[_COMMUNITY_test_e2e_proxy.py]]
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 1 edge to [[_COMMUNITY_TestAlertDispatcher]]
-- 1 edge to [[_COMMUNITY_hermesskillsi-icloudscriptscalendar.js]]
-- 1 edge to [[_COMMUNITY_climain.py]]
-- 1 edge to [[_COMMUNITY_chatbotmain.py]]
-- 1 edge to [[_COMMUNITY_Production Safety Checklist (SKILL)]]
-- 1 edge to [[_COMMUNITY_AlertTelegramRelay]]
-- 1 edge to [[_COMMUNITY_Hermes — Reference Verifier]]
-- 1 edge to [[_COMMUNITY_frame.sh]]
+- 21 edges to [[_COMMUNITY_DataLedger]]
+- 13 edges to [[_COMMUNITY__PipelineCaptor]]
+- 9 edges to [[_COMMUNITY_test_forward_stream.py]]
+- 6 edges to [[_COMMUNITY_ForwardRequest]]
+- 5 edges to [[_COMMUNITY_AgentTarget_1]]
+- 1 edge to [[_COMMUNITY_forward.py]]
+- 1 edge to [[_COMMUNITY_ingest_apimodels.py]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_AsyncMock]]
+- 1 edge to [[_COMMUNITY_test_scanner_integration_coverage.py]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy_failover.py]]
 
 ## Top bridge nodes
-- [[record_decision()]] - degree 20, connects to 6 communities
-- [[A2APolicyEngine_1]] - degree 58, connects to 2 communities
-- [[A2AProxy]] - degree 37, connects to 2 communities
-- [[A2AMethod]] - degree 29, connects to 2 communities
-- [[a2a_policy.py]] - degree 16, connects to 2 communities
+- [[AgentTarget]] - degree 58, connects to 7 communities
+- [[test_router.py]] - degree 28, connects to 4 communities
+- [[test_router_streaming.py]] - degree 17, connects to 3 communities
+- [[_BlockedOutboundPipeline]] - degree 7, connects to 2 communities
+- [[TestOutboundBlockedNotDelivered]] - degree 5, connects to 2 communities

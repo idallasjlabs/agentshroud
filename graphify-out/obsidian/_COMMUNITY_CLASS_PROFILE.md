@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[__init__.py_16]] - code - gateway/web/__init__.py
+- [[CLASS_PROFILE]] - code - scripts/triage-cve-mitigations.py
 
 ## Live Query (requires Dataview plugin)
 

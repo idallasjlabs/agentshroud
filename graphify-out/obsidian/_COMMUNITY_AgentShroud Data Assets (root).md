@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.33
+members: 6
 ---
 
 # AgentShroud Data Assets (root)
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[ClamAV (malware detection)]] - concept - gateway/security/__init__.py
-- [[Falco (runtime security monitoring)]] - concept - gateway/security/__init__.py
-- [[Trivy (container vulnerability scanning)]] - concept - gateway/security/__init__.py
-- [[Wazuh (file integrity monitoring)]] - concept - gateway/security/__init__.py
-- [[__init__.py_9]] - code - gateway/security/__init__.py
+- [[AgentShroud Data Assets (root)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[External Credentials (1Password vault)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[OpenClaw Volume (openclaw.json, cronjobs.json, sessions)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[SQLite DBs (Backed by SQLite)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[approval_items table (pending, approved, rejected, expired; 1h TTL)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[ledger table (indexed on timestamp, source, forwarded_to)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +23,9 @@ members: 5
 TABLE source_file, type FROM #community/AgentShroud_Data_Assets_root
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Approval Queue (human-in-the-loop)]]
+
+## Top bridge nodes
+- [[AgentShroud Data Assets (root)]] - degree 4, connects to 1 community

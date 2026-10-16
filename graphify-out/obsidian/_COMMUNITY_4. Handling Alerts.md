@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # 4. Handling Alerts
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[Claude Code (PRIMARY agent)]] - concept - docs/architecture/agentic-os.md
-- [[Codex CLI (TERTIARY agent)]] - concept - docs/architecture/agentic-os.md
-- [[Gemini CLI (SECONDARY agent)]] - concept - docs/architecture/agentic-os.md
+- [[4. Handling Alerts]] - document - docs/operations/runbook.md
+- [[Alert Severity Levels]] - document - docs/operations/runbook.md
+- [[Critical Alert Response]] - document - docs/operations/runbook.md
+- [[High Alert Response]] - document - docs/operations/runbook.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +21,9 @@ members: 3
 TABLE source_file, type FROM #community/4_Handling_Alerts
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_AgentShroud Incident Response Plan]]
+
+## Top bridge nodes
+- [[4. Handling Alerts]] - degree 4, connects to 1 community

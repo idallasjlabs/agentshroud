@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[API Documentation (planned, under development)]] - document - docs/api/README.md
+- [[Chaos Engineering Skill]] - document - .agents/skills/i-chaos-engineering/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

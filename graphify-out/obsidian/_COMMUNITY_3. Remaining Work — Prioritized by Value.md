@@ -1,18 +1,24 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 0.22
+members: 9
 ---
 
 # 3. Remaining Work — Prioritized by Value
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[Jira Weekly Review]] - document - docker/config/hermes/cron/prompts/jira-weekly-review.txt
-- [[SCRUM-81 (Jira weekly review ticket)]] - concept - docker/config/hermes/cron/prompts/jira-weekly-review.txt
-- [[jira_weekly_review.py_1]] - code - docker/config/hermes/cron/prompts/jira-weekly-review.txt
+- [[3. Remaining Work — Prioritized by Value_3]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[Deprioritized (complexity without proportional value)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Tier 1 Critical (directly increases real security)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Tier 2 Important (hardens existing security)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Tier 3 Nice to Have (adds value but not critical)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[📊 P2 — Operational Excellence (Medium Value)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[🔧 P1 — Enhanced Security Capabilities (High Value)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[🔬 P3 — Advanced Features (Lower Priority)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[🚨 P0 — Critical Security Gaps (Immediate)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +26,9 @@ members: 3
 TABLE source_file, type FROM #community/3_Remaining_Work__Prioritized_by_Value
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_AgentShroud Phase Review — 2026-02-23]]
+
+## Top bridge nodes
+- [[3. Remaining Work — Prioritized by Value_3]] - degree 9, connects to 1 community

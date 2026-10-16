@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Architecture
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[Kill Switch Triggered]] - document - docs/operations/incident-response.md
-- [[Layer 1 Pattern Matching]] - document - docs/security/security-architecture.md
-- [[Layer 2 Unicode Normalization]] - document - docs/security/security-architecture.md
-- [[Layer 3 Multi-Layer Decoding]] - document - docs/security/security-architecture.md
-- [[Multi-Layer Detection Strategy]] - document - docs/security/security-architecture.md
-- [[P2 High Priority Incidents]] - document - docs/operations/incident-response.md
-- [[PII Leak Incident]] - document - docs/operations/incident-response.md
-- [[Prompt Injection Detected]] - document - docs/operations/incident-response.md
+- [[Architecture_13]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Design Philosophy_1]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Egress Pipeline (Agent → Internet)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Inbound Pipeline (User → Agent)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Infrastructure_10]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Multi-Platform Support]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Outbound Pipeline (Agent → User)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Security Modules]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[The Security Pipeline]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,9 +28,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_anthropic_openai_translator.py]]
-- 1 edge to [[_COMMUNITY_TestConfigValidation]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ — Project Knowledge Base]]
+- 1 edge to [[_COMMUNITY_AgentShroud Blue Team Security Auditor]]
 
 ## Top bridge nodes
-- [[P2 High Priority Incidents]] - degree 4, connects to 1 community
-- [[Prompt Injection Detected]] - degree 3, connects to 1 community
+- [[Architecture_13]] - degree 7, connects to 2 communities

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[CVE-2026-35190 — execute_command owner-only fix]] - document - gateway/security/tool_acl.py
+- [[AWS Athena (data lakehouse)]] - concept - docker/config/openclaw/skills/i-qa/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

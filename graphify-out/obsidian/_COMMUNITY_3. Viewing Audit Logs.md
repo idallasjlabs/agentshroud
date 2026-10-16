@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # 3. Viewing Audit Logs
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[SOC Models SecurityEvent Tests]] - code - gateway/tests/test_soc_models.py
-- [[SOC ServiceManager Tests (get_logs, module_filter)]] - code - gateway/tests/test_soc_services.py
+- [[3. Viewing Audit Logs]] - document - docs/operations/runbook.md
+- [[Command-Line Access]] - document - docs/operations/runbook.md
+- [[Web Interface Access]] - document - docs/operations/runbook.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +20,9 @@ members: 2
 TABLE source_file, type FROM #community/3_Viewing_Audit_Logs
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_AgentShroud Incident Response Plan]]
+
+## Top bridge nodes
+- [[3. Viewing Audit Logs]] - degree 3, connects to 1 community
