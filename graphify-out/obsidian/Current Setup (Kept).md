@@ -12,6 +12,6 @@ tags:
 # Current Setup (Kept)
 
 ## Connections
-- [[Configuration_1]] - `contains` [EXTRACTED]
+- [[Configuration]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

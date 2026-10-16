@@ -12,7 +12,7 @@ tags:
 # Contributing to AgentShroud™
 
 ## Connections
-- [[CONTRIBUTING_1]] - `contains` [EXTRACTED]
+- [[CONTRIBUTING]] - `contains` [EXTRACTED]
 - [[Code Style]] - `contains` [EXTRACTED]
 - [[Code of Conduct]] - `contains` [EXTRACTED]
 - [[Development Setup]] - `contains` [EXTRACTED]

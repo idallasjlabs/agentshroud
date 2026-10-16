@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "rbac_config.py"
+community: "Action"
 location: "L265"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/rbac_configpy
+  - community/Action
 ---
 
 # Create or replace a custom group and persist it.
@@ -15,4 +15,4 @@ tags:
 - [[dot-create_group()]] - `rationale_for` [EXTRACTED]
 - [[dot-delete_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/rbac_configpy
+#graphify/rationale #graphify/EXTRACTED #community/Action

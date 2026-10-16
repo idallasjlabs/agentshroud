@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "Role"
+community: "RBACConfig"
 location: "L642"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Role
+  - community/RBACConfig
 ---
 
 # Collect additional tools granted to the user via their group memberships.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_get_group_tool_allowlist()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Role
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

@@ -12,6 +12,6 @@ tags:
 # Create a router instance for testing
 
 ## Connections
-- [[router()]] - `rationale_for` [EXTRACTED]
+- [[router()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AgentTarget

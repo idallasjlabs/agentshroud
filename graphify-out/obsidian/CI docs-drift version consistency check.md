@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Release test job (py3.13, tagversion sync checks)]] - `semantically_similar_to` [INFERRED]
-- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `references` [EXTRACTED]
+- [[ingest_apimain.py]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Commit_list_2026-10-10_through_2026-10-16_on_main

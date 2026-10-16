@@ -1,24 +1,20 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Container Errors.md"
 type: "document"
-community: "First Time Setup"
-location: "L9"
+community: "Error Index.md"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/First_Time_Setup
+  - community/Error_Indexmd
 ---
 
-# Container Errors
+# Container Errors.md
 
 ## Connections
 - [[Container Errors]] - `contains` [EXTRACTED]
-- [[Container Won't Stop (Stuck in Stopping)]] - `contains` [EXTRACTED]
-- [[Exit Code Reference]] - `contains` [EXTRACTED]
-- [[OOM Kill (Exit Code 137)]] - `contains` [EXTRACTED]
-- [[Port Already in Use_2]] - `contains` [EXTRACTED]
-- [[Read-Only Filesystem Errors]] - `contains` [EXTRACTED]
-- [[Related Notes_36]] - `contains` [EXTRACTED]
-- [[`no-new-privileges` Security Denial]] - `contains` [EXTRACTED]
+- [[Crash Recovery]] - `references` [EXTRACTED]
+- [[Error Index]] - `references` [EXTRACTED]
+- [[Startup Errors]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/First_Time_Setup
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

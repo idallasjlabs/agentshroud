@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/tests/test_skill_guard.py"
+source_file: "gateway/tests/test_switch_model_idempotent.py"
 type: "code"
-community: "Severity"
-location: "L458"
+community: "._run_and_read"
+location: "L41"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Severity
+  - graphify/EXTRACTED
+  - community/_run_and_read
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_4]] - `uses` [INFERRED]
-- [[Severity]] - `uses` [INFERRED]
-- [[SkillGuard_1]] - `uses` [INFERRED]
-- [[SkillScanError]] - `uses` [INFERRED]
-- [[_run_scan_cli()]] - `references` [EXTRACTED]
+- [[_run_switch()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Severity
+#graphify/code #graphify/EXTRACTED #community/_run_and_read

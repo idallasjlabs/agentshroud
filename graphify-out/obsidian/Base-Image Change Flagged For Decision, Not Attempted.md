@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "rationale"
-community: "Hermes Cron Dedupe (dev)"
+community: "ESP32-S3-BOX-3 Voice Terminal"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Dedupe_dev
+  - community/ESP32-S3-BOX-3_Voice_Terminal
 ---
 
 # Base-Image Change Flagged For Decision, Not Attempted
@@ -14,4 +14,4 @@ tags:
 - [[Currently Unmitigable Residual Class]] - `rationale_for` [EXTRACTED]
 - [[OpenClaw BLOCKED — nodesqlite NUL Truncation]] - `semantically_similar_to` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Hermes_Cron_Dedupe_dev
+#graphify/rationale #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal

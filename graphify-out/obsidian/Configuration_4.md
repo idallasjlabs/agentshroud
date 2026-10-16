@@ -1,5 +1,5 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
+source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
 community: "iCloud Services"
 location: "L125"
@@ -12,6 +12,6 @@ tags:
 # Configuration
 
 ## Connections
-- [[iCloud Services]] - `contains` [EXTRACTED]
+- [[iCloud Services_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/iCloud_Services

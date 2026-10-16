@@ -12,6 +12,6 @@ tags:
 # Build a TelegramAPIProxy with mocked RBAC and rate limiter.      RBACConfig and
 
 ## Connections
-- [[_make_proxy()]] - `rationale_for` [EXTRACTED]
+- [[_make_proxy()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/PipelineAction

@@ -12,6 +12,6 @@ tags:
 # Compile regex patterns for detecting disclosure attempts.
 
 ## Connections
-- [[dot-_compile_detection_patterns()]] - `rationale_for` [EXTRACTED]
+- [[dot-_compile_detection_patterns()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

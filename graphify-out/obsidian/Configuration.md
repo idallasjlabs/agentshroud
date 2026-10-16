@@ -1,17 +1,18 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+source_file: "docs/architecture/WORKSPACE_DECISION.md"
 type: "document"
-community: "7. Pi-hole DNS Security Layer (Built-In)"
-location: "L267"
+community: "OpenClaw Workspace Usage Guide"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/7_Pi-hole_DNS_Security_Layer_Built-In
+  - community/OpenClaw_Workspace_Usage_Guide
 ---
 
 # Configuration
 
 ## Connections
-- [[7. Pi-hole DNS Security Layer (Built-In)]] - `contains` [EXTRACTED]
+- [[Current Setup (Kept)]] - `contains` [EXTRACTED]
+- [[Workspace Configuration Decision]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/7_Pi-hole_DNS_Security_Layer_Built-In
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

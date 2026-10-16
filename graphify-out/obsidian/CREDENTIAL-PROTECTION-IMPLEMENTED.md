@@ -17,7 +17,7 @@ tags:
 - [[Credential Access Audit Logging (Layer 3)]] - `references` [EXTRACTED]
 - [[Gateway Credential Filter (Layer 1)]] - `references` [EXTRACTED]
 - [[SECURITY-POLICY-FINAL]] - `conceptually_related_to` [EXTRACTED]
-- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `references` [EXTRACTED]
+- [[ingest_apimain.py]] - `references` [EXTRACTED]
 - [[✅ What the Bot CAN Do via Telegram]] - `contains` [EXTRACTED]
 - [[✅ Your Requirements Met]] - `contains` [EXTRACTED]
 - [[❌ What the Bot CANNOT Do via Telegram]] - `contains` [EXTRACTED]

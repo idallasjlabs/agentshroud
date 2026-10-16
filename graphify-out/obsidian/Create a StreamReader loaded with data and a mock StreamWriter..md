@@ -12,6 +12,6 @@ tags:
 # Create a StreamReader loaded with data and a mock StreamWriter.
 
 ## Connections
-- [[_make_stream()_1]] - `rationale_for` [EXTRACTED]
+- [[_make_stream()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/WebProxy

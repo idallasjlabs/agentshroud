@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: ".proxy_messages"
-location: "L1672"
+community: "LLMProxy"
+location: "L1779"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/proxy_messages
+  - community/LLMProxy
 ---
 
 # Build provider-compatible timeout fallback message to avoid silent Telegram…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_build_timeout_fallback_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/proxy_messages
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxy

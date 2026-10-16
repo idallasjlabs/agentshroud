@@ -12,6 +12,6 @@ tags:
 # Decides allow / deny / require-approval for inbound A2A requests.      Usage::
 
 ## Connections
-- [[A2APolicyEngine_1]] - `rationale_for` [EXTRACTED]
+- [[A2APolicyEngine_3]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/A2APolicyEngine

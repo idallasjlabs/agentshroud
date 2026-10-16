@@ -12,7 +12,7 @@ tags:
 # Browser — Secure Browser Automation
 
 ## Connections
-- [[Purpose_21]] - `contains` [EXTRACTED]
+- [[Purpose_26]] - `contains` [EXTRACTED]
 - [[Related Skills_14]] - `contains` [EXTRACTED]
 - [[Usage_17]] - `contains` [EXTRACTED]
 - [[hermesskillsi-browserREADME]] - `contains` [EXTRACTED]

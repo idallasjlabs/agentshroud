@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "CompetitiveIntelReport"
+community: "api.py"
 location: "L60"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/CompetitiveIntelReport
+  - community/apipy
 ---
 
 # Citation
@@ -16,12 +16,12 @@ tags:
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[Citation]] - `uses` [INFERRED]
 - [[CitationVerifier]] - `uses` [INFERRED]
-- [[CompetitiveIntelReport]] - `uses` [INFERRED]
-- [[CompetitorEntry]] - `uses` [INFERRED]
+- [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
+- [[CompetitorEntry_1]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
-- [[FetchOutcome]] - `uses` [INFERRED]
+- [[FetchOutcome_1]] - `uses` [INFERRED]
 - [[Fetcher]] - `uses` [INFERRED]
 - [[citation_verifier.py]] - `imports` [EXTRACTED]
 - [[intel_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/CompetitiveIntelReport
+#graphify/code #graphify/INFERRED #community/apipy

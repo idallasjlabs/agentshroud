@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "load_config"
+community: "ApprovalQueueConfig"
 location: "L112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/ApprovalQueueConfig
 ---
 
 # ChannelsConfig
@@ -19,4 +19,4 @@ tags:
 - [[ingest_apiconfig.py]] - `contains` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

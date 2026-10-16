@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "rationale"
-community: "._get_hmac_key"
+community: "ContextSegment"
 location: "L616"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_get_hmac_key
+  - community/ContextSegment
 ---
 
 # Compute and return an HMAC-SHA256 fingerprint for the system prompt.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-register_system_prompt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_get_hmac_key
+#graphify/rationale #graphify/EXTRACTED #community/ContextSegment

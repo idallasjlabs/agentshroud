@@ -1,17 +1,19 @@
 ---
-source_file: "docs/setup/TAILSCALE_SETUP.md"
+source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "OpenClaw Bot Container"
-location: "L63"
+community: "AgentShroud™ — Project Knowledge Base"
+location: "L105"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_Container
+  - community/AgentShroud__Project_Knowledge_Base
 ---
 
 # Current Status
 
 ## Connections
-- [[Tailscale Access to OpenClaw Control UI]] - `contains` [EXTRACTED]
+- [[AgentShroud™ — Project Knowledge Base]] - `contains` [EXTRACTED]
+- [[Development Phases]] - `contains` [EXTRACTED]
+- [[v0.8.0 Focus Areas]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_Container
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Project_Knowledge_Base

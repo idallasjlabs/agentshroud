@@ -12,6 +12,6 @@ tags:
 # Complete security configuration
 
 ## Connections
-- [[SecurityConfig_4]] - `rationale_for` [EXTRACTED]
+- [[SecurityConfig]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

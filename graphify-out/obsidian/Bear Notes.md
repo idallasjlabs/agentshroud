@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Common Commands_3]] - `contains` [EXTRACTED]
-- [[Configuration_21]] - `contains` [EXTRACTED]
+- [[Configuration_20]] - `contains` [EXTRACTED]
 - [[Getting a Bear Token]] - `contains` [EXTRACTED]
 - [[Notes_11]] - `contains` [EXTRACTED]
 - [[Options]] - `contains` [EXTRACTED]

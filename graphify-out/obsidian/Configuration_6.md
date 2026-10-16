@@ -1,17 +1,18 @@
 ---
-source_file: "skills/custom/icloud/SKILL.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "iCloud Services"
-location: "L125"
+community: "Canvas Skill"
+location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/Canvas_Skill
 ---
 
 # Configuration
 
 ## Connections
-- [[iCloud Services_3]] - `contains` [EXTRACTED]
+- [[Canvas Skill]] - `contains` [EXTRACTED]
+- [[Live Reload]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/Canvas_Skill

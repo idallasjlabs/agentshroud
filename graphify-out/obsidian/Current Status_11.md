@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
+source_file: "docs/reference/TAILSCALE_COMMANDS.md"
 type: "document"
-community: "agentshroud.yaml.md"
-location: "L22"
+community: "Tailscale Remote Access Setup"
+location: "L71"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroudyamlmd
+  - community/Tailscale_Remote_Access_Setup
 ---
 
 # Current Status
 
 ## Connections
-- [[HTTP_PROXY  HTTPS_PROXY]] - `contains` [EXTRACTED]
+- [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroudyamlmd
+#graphify/document #graphify/EXTRACTED #community/Tailscale_Remote_Access_Setup

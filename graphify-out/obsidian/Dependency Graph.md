@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
 type: "document"
-community: "ingest_api/models.py"
+community: "DataLedger"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/DataLedger
 ---
 
 # Dependency Graph.md
@@ -16,4 +16,4 @@ tags:
 - [[Gateway Startup Initialization Order]] - `conceptually_related_to` [EXTRACTED]
 - [[gatewayREADME]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/document #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/document #graphify/EXTRACTED #community/DataLedger

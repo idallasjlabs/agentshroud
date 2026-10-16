@@ -12,6 +12,6 @@ tags:
 # Drift Categories and Severity
 
 ## Connections
-- [[drift_detector.py_1]] - `contains` [EXTRACTED]
+- [[drift_detector.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/drift_detectorpy

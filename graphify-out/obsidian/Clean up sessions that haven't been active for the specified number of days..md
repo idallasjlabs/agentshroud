@@ -12,6 +12,6 @@ tags:
 # Clean up sessions that haven't been active for the specified number of days.
 
 ## Connections
-- [[dot-cleanup_old_sessions()]] - `rationale_for` [EXTRACTED]
+- [[dot-cleanup_old_sessions()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

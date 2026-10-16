@@ -12,6 +12,6 @@ tags:
 # Configuration (DNSFilterConfig)
 
 ## Connections
-- [[dns_filter.py_2]] - `contains` [EXTRACTED]
+- [[dns_filter.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/dns_filterpy

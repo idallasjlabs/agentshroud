@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "ThreatAssessment"
+community: "ConsentFramework"
 location: "L39"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ThreatAssessment
+  - community/ConsentFramework
 ---
 
 # CredentialEntryBlocked
@@ -20,4 +20,4 @@ tags:
 - [[TestURLReputation]] - `uses` [INFERRED]
 - [[browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ThreatAssessment
+#graphify/code #graphify/INFERRED #community/ConsentFramework

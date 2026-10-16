@@ -12,7 +12,7 @@ tags:
 # ControlCenter
 
 ## Connections
-- [[dot-__init__()_98]] - `method` [EXTRACTED]
+- [[dot-__init__()_105]] - `method` [EXTRACTED]
 - [[dot-clear_screen()]] - `method` [EXTRACTED]
 - [[dot-draw_approvals()]] - `method` [EXTRACTED]
 - [[dot-draw_box()]] - `method` [EXTRACTED]
@@ -24,8 +24,8 @@ tags:
 - [[dot-get_auth()]] - `method` [EXTRACTED]
 - [[dot-get_key()]] - `method` [EXTRACTED]
 - [[dot-make_api_request()]] - `method` [EXTRACTED]
-- [[dot-run()_2]] - `method` [EXTRACTED]
-- [[main()_17]] - `calls` [EXTRACTED]
+- [[dot-run()_4]] - `method` [EXTRACTED]
+- [[main()_12]] - `calls` [EXTRACTED]
 - [[text_control_center.py_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ControlCenter

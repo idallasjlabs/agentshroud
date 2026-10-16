@@ -1,16 +1,16 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Network Topology.md"
 type: "rationale"
-community: "Network Topology"
+community: "`SecurityPipeline`"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Network_Topology
+  - community/SecurityPipeline
 ---
 
 # Bot Network Isolation Design
 
 ## Connections
-- [[Network Topology_2]] - `rationale_for` [EXTRACTED]
+- [[Network Topology_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Network_Topology
+#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline

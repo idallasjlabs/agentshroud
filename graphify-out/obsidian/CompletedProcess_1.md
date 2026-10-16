@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_switch_model_idempotent.py"
+source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "code"
-community: "._run_and_read"
-location: "L41"
+community: "test_bots_ssh_exec_wrapper.py"
+location: "L269"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_run_and_read
+  - community/test_bots_ssh_exec_wrapperpy
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[_run_switch()]] - `references` [EXTRACTED]
+- [[_run_wrapper_capture_bearer()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_run_and_read
+#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy

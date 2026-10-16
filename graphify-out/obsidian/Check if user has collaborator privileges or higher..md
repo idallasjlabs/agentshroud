@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: ".get_user_role"
+community: "RBACConfig"
 location: "L184"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/get_user_role
+  - community/RBACConfig
 ---
 
 # Check if user has collaborator privileges or higher.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-is_collaborator_or_higher()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/get_user_role
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

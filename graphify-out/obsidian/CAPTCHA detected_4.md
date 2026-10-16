@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
-location: "L295"
+community: "SecureBrowser Skill"
+location: "L310"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/SecureBrowser_Skill
 ---
 
 # "CAPTCHA detected"
 
 ## Connections
-- [[Troubleshooting_18]] - `contains` [EXTRACTED]
+- [[Troubleshooting_17]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

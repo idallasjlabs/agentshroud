@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/bot_config.py"
 type: "rationale"
-community: "BotConfig"
+community: "ApprovalQueueConfig"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/ApprovalQueueConfig
 ---
 
 # Compute the bot's internal base URL from hostname and port.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-base_url()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/BotConfig
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

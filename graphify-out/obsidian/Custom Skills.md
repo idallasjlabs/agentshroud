@@ -1,12 +1,12 @@
 ---
 source_file: "skills/README.md"
 type: "document"
-community: "AgentShroud Skills Library"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Skills_Library
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Custom Skills
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Skills_Library
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

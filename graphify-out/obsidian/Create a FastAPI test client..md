@@ -12,6 +12,6 @@ tags:
 # Create a FastAPI test client.
 
 ## Connections
-- [[dot-client()_6]] - `rationale_for` [EXTRACTED]
+- [[dot-client()_5]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TestOpenAPIContract

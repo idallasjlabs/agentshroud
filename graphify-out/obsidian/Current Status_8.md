@@ -1,17 +1,17 @@
 ---
-source_file: "docs/data/README.md"
+source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
 type: "document"
-community: "03-data.md"
-location: "L13"
+community: "egress_filter.py"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/03-datamd
+  - community/egress_filterpy
 ---
 
 # Current Status
 
 ## Connections
-- [[Data Documentation]] - `contains` [EXTRACTED]
+- [[HTTP_PROXY  HTTPS_PROXY]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/03-datamd
+#graphify/document #graphify/EXTRACTED #community/egress_filterpy

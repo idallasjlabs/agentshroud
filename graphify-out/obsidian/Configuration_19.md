@@ -1,17 +1,21 @@
 ---
-source_file: "docs/api/integration-guide.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "OpenSCAP"
-location: "L22"
+community: "SSH Config"
+location: "L191"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenSCAP
+  - community/SSH_Config
 ---
 
 # Configuration
 
 ## Connections
-- [[OpenClaw Integration (Primary Target)]] - `contains` [EXTRACTED]
+- [[7. Deployment]] - `contains` [EXTRACTED]
+- [[Full Configuration Example]] - `contains` [EXTRACTED]
+- [[SSH Config]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[iCloud Services_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenSCAP
+#graphify/document #graphify/EXTRACTED #community/SSH_Config

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "rationale"
-community: "ApprovalQueueItem"
+community: "ApprovalQueueConfig"
 location: "L69"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueItem
+  - community/ApprovalQueueConfig
 ---
 
 # Deciding an item persists the new status.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_decide_persists()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueItem
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

@@ -1,18 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md"
+source_file: "docs/adr/ADR-001-proxy-layer-inversion.md"
 type: "document"
-community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
-location: "L15"
+community: "Enterprise Governance Proxy System (invention)"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
+  - community/Enterprise_Governance_Proxy_System_invention
 ---
 
 # Decision
 
 ## Connections
-- [[ADR-005 SHA-256 Hash Chain Audit Integrity]] - `contains` [EXTRACTED]
-- [[Hash Chain Structure_1]] - `contains` [EXTRACTED]
+- [[ADR-001-proxy-layer-inversion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
+#graphify/document #graphify/EXTRACTED #community/Enterprise_Governance_Proxy_System_invention

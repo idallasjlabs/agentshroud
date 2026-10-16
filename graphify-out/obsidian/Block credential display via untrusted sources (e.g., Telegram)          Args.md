@@ -12,6 +12,6 @@ tags:
 # Block credential display via untrusted sources (e.g., Telegram)          Args:
 
 ## Connections
-- [[dot-block_credentials()]] - `rationale_for` [EXTRACTED]
+- [[dot-block_credentials()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/PIIConfig

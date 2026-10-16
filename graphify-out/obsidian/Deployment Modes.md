@@ -1,19 +1,19 @@
 ---
-source_file: "docs/architecture/deployment-diagram.md"
+source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "ADR-001: Transparent Proxy Decision"
-location: "L7"
+community: "Deployment Modes"
+location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-001_Transparent_Proxy_Decision
+  - community/Deployment_Modes
 ---
 
 # Deployment Modes
 
 ## Connections
-- [[AgentShroud Deployment Architecture]] - `contains` [EXTRACTED]
+- [[AgentShroud Deployment Procedure]] - `contains` [EXTRACTED]
 - [[Proxy Mode (Recommended)]] - `contains` [EXTRACTED]
-- [[Sidecar Mode (Performance Optimized)]] - `contains` [EXTRACTED]
+- [[Sidecar Mode (Advanced)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_Decision
+#graphify/document #graphify/EXTRACTED #community/Deployment_Modes

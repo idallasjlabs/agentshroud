@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "AgentRegistry"
+community: "AlertDispatcher"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AgentRegistry
+  - community/AlertDispatcher
 ---
 
 # ContainerSnapshot
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[dot-check_drift()]] - `references` [EXTRACTED]
 - [[dot-config_hash()]] - `method` [EXTRACTED]
-- [[dot-from_dict()_10]] - `method` [EXTRACTED]
+- [[dot-from_dict()]] - `method` [EXTRACTED]
 - [[dot-get_baseline()]] - `references` [EXTRACTED]
 - [[dot-set_baseline()]] - `references` [EXTRACTED]
-- [[dot-setup_method()_31]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_1]] - `calls` [EXTRACTED]
 - [[dot-test_acknowledge_alert()]] - `calls` [EXTRACTED]
 - [[dot-test_alerts_persisted()]] - `calls` [EXTRACTED]
 - [[dot-test_config_hash_changes()]] - `calls` [EXTRACTED]
@@ -36,7 +36,7 @@ tags:
 - [[dot-test_removed_capability()]] - `calls` [EXTRACTED]
 - [[dot-test_seccomp_drift()]] - `calls` [EXTRACTED]
 - [[dot-test_simultaneous_baseline_and_config_change()]] - `calls` [EXTRACTED]
-- [[dot-to_dict()_15]] - `method` [EXTRACTED]
+- [[dot-to_dict()_1]] - `method` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
@@ -70,10 +70,10 @@ tags:
 - [[TestTrustManager]] - `uses` [INFERRED]
 - [[TestTrustManagerHardened]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
-- [[drift_detector.py_2]] - `contains` [EXTRACTED]
+- [[drift_detector.py]] - `contains` [EXTRACTED]
 - [[test_drift_detection_in_pipeline()]] - `calls` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AgentRegistry
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

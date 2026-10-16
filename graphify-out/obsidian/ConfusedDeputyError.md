@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "OAuthSecurityValidator"
+community: "AlertDispatcher"
 location: "L31"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/OAuthSecurityValidator
+  - community/AlertDispatcher
 ---
 
 # ConfusedDeputyError
@@ -31,7 +31,7 @@ tags:
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestStateValidation]] - `uses` [INFERRED]
 - [[TestSupplyChain]] - `uses` [INFERRED]
-- [[oauth_security.py_2]] - `contains` [EXTRACTED]
+- [[oauth_security.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/OAuthSecurityValidator
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

@@ -12,6 +12,6 @@ tags:
 # Current Usage
 
 ## Connections
-- [[python-jose_1]] - `contains` [EXTRACTED]
+- [[python-jose]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/python-jose

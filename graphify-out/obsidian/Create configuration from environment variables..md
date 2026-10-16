@@ -12,6 +12,6 @@ tags:
 # Create configuration from environment variables.
 
 ## Connections
-- [[dot-from_env()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-from_env()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Path

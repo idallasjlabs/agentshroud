@@ -1,20 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
+source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "AWS Cloud Management & FinOps Agent"
-location: "L191"
+community: "7. Pi-hole DNS Security Layer (Built-In)"
+location: "L300"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent
+  - community/7_Pi-hole_DNS_Security_Layer_Built-In
 ---
 
 # Deliverables
 
 ## Connections
-- [[AWS Cloud Management & FinOps Agent_1]] - `contains` [EXTRACTED]
-- [[Reports (`.reports`)_2]] - `contains` [EXTRACTED]
-- [[Script Templates_2]] - `contains` [EXTRACTED]
-- [[Scripts (`.scripts`)_2]] - `contains` [EXTRACTED]
+- [[7. Pi-hole DNS Security Layer (Built-In)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent
+#graphify/document #graphify/EXTRACTED #community/7_Pi-hole_DNS_Security_Layer_Built-In

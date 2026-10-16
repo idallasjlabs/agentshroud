@@ -12,6 +12,6 @@ tags:
 # Check if an IP address is private/reserved/loopback.
 
 ## Connections
-- [[dot-_is_private_ip()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-_is_private_ip()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection

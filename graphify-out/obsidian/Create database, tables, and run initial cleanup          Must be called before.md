@@ -12,6 +12,6 @@ tags:
 # Create database, tables, and run initial cleanup          Must be called before
 
 ## Connections
-- [[dot-initialize()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-initialize()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/DataLedger

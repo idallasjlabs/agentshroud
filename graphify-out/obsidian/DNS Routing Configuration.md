@@ -12,6 +12,6 @@ tags:
 # DNS Routing Configuration
 
 ## Connections
-- [[Network Topology_1]] - `contains` [EXTRACTED]
+- [[Network Topology]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture

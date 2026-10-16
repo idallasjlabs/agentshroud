@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: ".analyze_message"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L241"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/analyze_message
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Detect instruction injection attempts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_detect_instruction_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/analyze_message
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

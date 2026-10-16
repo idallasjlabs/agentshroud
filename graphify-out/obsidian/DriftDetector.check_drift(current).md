@@ -12,6 +12,6 @@ tags:
 # DriftDetector.check_drift(current)
 
 ## Connections
-- [[Function Details_5]] - `contains` [EXTRACTED]
+- [[Function Details_4]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/drift_detectorpy

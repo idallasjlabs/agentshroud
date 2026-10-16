@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-05-network-topology.svg"
 type: "image"
-community: "Gateway Management/Control-Plane API (v1.3.0)"
+community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Gateway_Management/Control-Plane_API_v130
+  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
 ---
 
 # Blocked by default (private RFC1918 ranges)
@@ -14,4 +14,4 @@ tags:
 - [[URLAnalysisResult (data entity)]] - `conceptually_related_to` [EXTRACTED]
 - [[egress-config.yml]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Gateway_Management/Control-Plane_API_v130
+#graphify/image #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity

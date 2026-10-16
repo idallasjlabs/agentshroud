@@ -12,6 +12,6 @@ tags:
 # Create approval queue instance for testing
 
 ## Connections
-- [[approval_queue()_1]] - `rationale_for` [EXTRACTED]
+- [[approval_queue()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest

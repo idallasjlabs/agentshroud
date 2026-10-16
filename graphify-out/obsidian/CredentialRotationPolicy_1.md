@@ -1,40 +1,20 @@
 ---
-source_file: "gateway/security/key_rotation_config.py"
+source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "KeyRotationConfig"
-location: "L21"
+community: "KeyRotationManager"
+location: "L97"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/KeyRotationConfig
+  - graphify/EXTRACTED
+  - community/KeyRotationManager
 ---
 
 # CredentialRotationPolicy
 
 ## Connections
-- [[dot-add_custom_policy()]] - `references` [EXTRACTED]
-- [[dot-get_policy()]] - `references` [EXTRACTED]
-- [[dot-test_add_custom_policy()]] - `calls` [EXTRACTED]
-- [[dot-test_default_policy_values()]] - `calls` [EXTRACTED]
-- [[dot-test_should_rotate()]] - `calls` [EXTRACTED]
-- [[dot-test_should_warn()]] - `calls` [EXTRACTED]
-- [[Any_11]] - `uses` [INFERRED]
-- [[CredentialInfo]] - `uses` [INFERRED]
+- [[dot-should_rotate()]] - `references` [EXTRACTED]
+- [[dot-should_warn()]] - `references` [EXTRACTED]
 - [[CredentialRotationPolicy]] - `uses` [INFERRED]
-- [[CredentialValidator]] - `uses` [INFERRED]
-- [[KeyRotationConfig]] - `uses` [INFERRED]
-- [[KeyRotationManager]] - `uses` [INFERRED]
-- [[MockValidator]] - `uses` [INFERRED]
-- [[Rotation policy for a specific credential type.]] - `rationale_for` [EXTRACTED]
-- [[RotationStatus]] - `uses` [INFERRED]
-- [[TestCredentialInfo]] - `uses` [INFERRED]
-- [[TestCredentialRotationPolicy]] - `uses` [INFERRED]
-- [[TestKeyRotationConfig]] - `uses` [INFERRED]
-- [[TestKeyRotationManager]] - `uses` [INFERRED]
-- [[TestKeyRotationWorkflow]] - `uses` [INFERRED]
-- [[datetime_4]] - `uses` [INFERRED]
-- [[key_rotation.py]] - `imports` [EXTRACTED]
-- [[key_rotation_config.py]] - `contains` [EXTRACTED]
-- [[test_key_rotation.py]] - `imports` [EXTRACTED]
+- [[KeyRotationConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/KeyRotationConfig
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

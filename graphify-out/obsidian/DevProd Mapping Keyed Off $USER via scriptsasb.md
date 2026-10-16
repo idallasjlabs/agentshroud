@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-06.md"
 type: "rationale"
-community: "Hermes Cron Dedupe (dev)"
+community: "ESP32-S3-BOX-3 Voice Terminal"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Dedupe_dev
+  - community/ESP32-S3-BOX-3_Voice_Terminal
 ---
 
 # Dev/Prod Mapping Keyed Off $USER via scripts/asb
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Sunday Upgrade 2026-09-06 (dev-only scoped run)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Hermes_Cron_Dedupe_dev
+#graphify/rationale #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal

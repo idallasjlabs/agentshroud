@@ -1,8 +1,8 @@
 ---
-source_file: "reports/upgrade-2026-09-06-20260906-0808.md"
+source_file: "reports/upgrade-2026-09-06-prod.md"
 type: "document"
 community: "AgentShroud Weekly Upgrade — 2026-09-06"
-location: "L156"
+location: "L303"
 tags:
   - graphify/document
   - graphify/EXTRACTED

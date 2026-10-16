@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "load_config"
+community: "ApprovalQueueConfig"
 location: "L276"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/load_config
+  - community/ApprovalQueueConfig
 ---
 
 # Configuration for compliance audit export functionality.
 
 ## Connections
-- [[AuditExportConfig]] - `rationale_for` [EXTRACTED]
+- [[AuditExportConfig_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/load_config
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

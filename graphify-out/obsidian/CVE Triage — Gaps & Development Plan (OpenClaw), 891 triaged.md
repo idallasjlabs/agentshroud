@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-triage-gaps.md"
 type: "document"
-community: "colima-health-check.sh"
+community: "triage-cve-mitigations.py"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/triage-cve-mitigationspy
 ---
 
 # CVE Triage — Gaps & Development Plan (OpenClaw), 891 triaged
@@ -18,4 +18,4 @@ tags:
 - [[Upgrade Report 2026-09-22 (dev, PARTIAL, 3 sessions)]] - `references` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `shares_data_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/document #graphify/EXTRACTED #community/triage-cve-mitigationspy

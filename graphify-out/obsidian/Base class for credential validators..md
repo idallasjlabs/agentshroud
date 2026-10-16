@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "CredentialValidator"
+community: "KeyRotationManager"
 location: "L108"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CredentialValidator
+  - community/KeyRotationManager
 ---
 
 # Base class for credential validators.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CredentialValidator]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CredentialValidator
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager

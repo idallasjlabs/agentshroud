@@ -12,6 +12,6 @@ tags:
 # Configuration / Environment Variables
 
 ## Connections
-- [[oauth_security.py_1]] - `contains` [EXTRACTED]
+- [[oauth_security.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

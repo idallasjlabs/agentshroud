@@ -12,6 +12,6 @@ tags:
 # CollaboratorActivityTracker.record_activity
 
 ## Connections
-- [[TelegramAPIProxy_2]] - `calls` [INFERRED]
+- [[TelegramAPIProxy]] - `calls` [INFERRED]
 
 #graphify/code #graphify/INFERRED #community/TelegramAPIProxy

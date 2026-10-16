@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/TAILSCALE_COMMANDS.md"
+source_file: "docs/setup/IMESSAGE_PERMISSION_FIX.md"
 type: "document"
-community: "Tailscale Remote Access Setup"
-location: "L71"
+community: "How to Fix (5 Minutes)"
+location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Tailscale_Remote_Access_Setup
+  - community/How_to_Fix_5_Minutes
 ---
 
 # Current Status
 
 ## Connections
-- [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
+- [[iMessage Permission Fix - Step by Step]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Tailscale_Remote_Access_Setup
+#graphify/document #graphify/EXTRACTED #community/How_to_Fix_5_Minutes

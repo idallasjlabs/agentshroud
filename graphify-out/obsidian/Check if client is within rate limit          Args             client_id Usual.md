@@ -12,6 +12,6 @@ tags:
 # Check if client is within rate limit          Args:             client_id: Usual
 
 ## Connections
-- [[dot-check()_5]] - `rationale_for` [EXTRACTED]
+- [[dot-check()_3]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/create_auth_dependency

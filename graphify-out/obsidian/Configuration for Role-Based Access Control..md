@@ -12,6 +12,6 @@ tags:
 # Configuration for Role-Based Access Control.
 
 ## Connections
-- [[RBACConfig_1]] - `rationale_for` [EXTRACTED]
+- [[RBACConfig_4]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/RBACConfig

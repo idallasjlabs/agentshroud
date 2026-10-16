@@ -12,7 +12,7 @@ tags:
 # CI/CD Pipeline Advisor (CICD)
 
 ## Connections
-- [[Purpose_36]] - `contains` [EXTRACTED]
+- [[Purpose_41]] - `contains` [EXTRACTED]
 - [[Related Skills_29]] - `contains` [EXTRACTED]
 - [[Usage_32]] - `contains` [EXTRACTED]
 - [[openclawskillsi-cicdREADME]] - `contains` [EXTRACTED]

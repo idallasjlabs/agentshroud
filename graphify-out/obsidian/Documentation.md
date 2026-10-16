@@ -1,17 +1,17 @@
 ---
-source_file: "branding/guidelines/brand-guidelines.md"
+source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Brand Applications"
-location: "L121"
+community: "Resources"
+location: "L636"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Brand_Applications
+  - community/Resources
 ---
 
 # Documentation
 
 ## Connections
-- [[Brand Applications]] - `contains` [EXTRACTED]
+- [[Resources]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Brand_Applications
+#graphify/document #graphify/EXTRACTED #community/Resources

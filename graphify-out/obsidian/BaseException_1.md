@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: ".proxy_messages"
+community: "LLMProxy"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/proxy_messages
+  - community/LLMProxy
 ---
 
 # BaseException
@@ -14,4 +14,4 @@ tags:
 - [[dot-_is_connect_error()]] - `references` [EXTRACTED]
 - [[dot-_local_backend_unavailable_response()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/proxy_messages
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

@@ -12,8 +12,8 @@ tags:
 # Data Documentation
 
 ## Connections
-- [[Current Status_8]] - `contains` [EXTRACTED]
-- [[Planned Documents_5]] - `contains` [EXTRACTED]
+- [[Current Status_7]] - `contains` [EXTRACTED]
+- [[Planned Documents_6]] - `contains` [EXTRACTED]
 - [[dataREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/03-datamd

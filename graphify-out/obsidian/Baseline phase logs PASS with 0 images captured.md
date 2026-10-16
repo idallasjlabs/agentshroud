@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-22.md"
 type: "concept"
-community: "sunday-upgrade-apply.sh"
+community: "colima-health-check.sh"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/sunday-upgrade-applysh
+  - community/colima-health-checksh
 ---
 
 # Baseline phase logs PASS with 0 images captured
@@ -16,4 +16,4 @@ tags:
 - [[Upgrade Report 2026-09-22 (dev, PARTIAL, 3 sessions)]] - `references` [EXTRACTED]
 - [[phase_baseline()]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/sunday-upgrade-applysh
+#graphify/concept #graphify/EXTRACTED #community/colima-health-checksh

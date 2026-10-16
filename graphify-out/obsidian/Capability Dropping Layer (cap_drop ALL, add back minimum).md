@@ -1,12 +1,12 @@
 ---
 source_file: "docs/archive/SECURITY.md"
 type: "rationale"
-community: "AgentShroud Falco Rules"
+community: "start-agentshroud.sh"
 location: "L69-L94"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/AgentShroud_Falco_Rules
+  - community/start-agentshroudsh
 ---
 
 # Capability Dropping Layer (cap_drop ALL, add back minimum)
@@ -16,4 +16,4 @@ tags:
 - [[Rule Privilege Escalation Attempt]] - `semantically_similar_to` [INFERRED]
 - [[macOS Bridge (localhost-only BlueBubbles webhook relay)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/AgentShroud_Falco_Rules
+#graphify/rationale #graphify/INFERRED #community/start-agentshroudsh

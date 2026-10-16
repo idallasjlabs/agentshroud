@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "lifespan.py"
+community: "MiddlewareManager"
 location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/MiddlewareManager
 ---
 
 # Convert to dictionary for JSON serialization.
 
 ## Connections
-- [[dot-to_dict()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-to_dict()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

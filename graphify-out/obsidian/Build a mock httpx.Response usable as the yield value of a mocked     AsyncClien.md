@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[_mock_llm_stream_resp()]] - `rationale_for` [EXTRACTED]
-- [[_mock_stream_resp()_1]] - `rationale_for` [EXTRACTED]
+- [[_mock_stream_resp()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_voice_gatewaypy

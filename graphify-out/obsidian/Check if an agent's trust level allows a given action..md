@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "._update_score"
+community: "TrustConfig"
 location: "L205"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_update_score
+  - community/TrustConfig
 ---
 
 # Check if an agent's trust level allows a given action.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-is_action_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_update_score
+#graphify/rationale #graphify/EXTRACTED #community/TrustConfig

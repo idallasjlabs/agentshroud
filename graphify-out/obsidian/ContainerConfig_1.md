@@ -12,10 +12,10 @@ tags:
 # ContainerConfig
 
 ## Connections
-- [[dot-from_dict()_9]] - `calls` [EXTRACTED]
-- [[dot-get()_4]] - `references` [EXTRACTED]
+- [[dot-from_dict()_4]] - `calls` [EXTRACTED]
+- [[dot-get()_2]] - `references` [EXTRACTED]
 - [[dot-register()]] - `references` [EXTRACTED]
-- [[dot-setup_method()_30]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_25]] - `calls` [EXTRACTED]
 - [[dot-test_container_config_defaults()]] - `calls` [EXTRACTED]
 - [[dot-test_group_agents_are_isolatable()]] - `calls` [EXTRACTED]
 - [[dot-test_group_and_collab_identities_coexist()]] - `calls` [EXTRACTED]
@@ -46,7 +46,7 @@ tags:
 - [[TestTrustManagerHardened]] - `uses` [INFERRED]
 - [[TestVolumeIsolation]] - `uses` [INFERRED]
 - [[_make_config()]] - `calls` [EXTRACTED]
-- [[agent_isolation.py_2]] - `contains` [EXTRACTED]
+- [[agent_isolation.py]] - `contains` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_agent_isolation.py]] - `imports` [EXTRACTED]

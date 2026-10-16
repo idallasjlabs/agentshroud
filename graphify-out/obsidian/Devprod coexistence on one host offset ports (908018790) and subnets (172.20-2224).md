@@ -15,6 +15,6 @@ tags:
 - [[Dev override gateway (agentshroud-dev-gateway, 9080, dev Hermes upstreams)]] - `rationale_for` [EXTRACTED]
 - [[Dev override voice-gateway on 127.0.0.18766]] - `rationale_for` [EXTRACTED]
 - [[Three-tier network segmentation (internal edge  isolated DMZ  dmz) — IEC 62443 FR5]] - `references` [EXTRACTED]
-- [[dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]] - `references` [EXTRACTED]
+- [[run-standalone.sh (Hermes docker run launcher)]] - `references` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes

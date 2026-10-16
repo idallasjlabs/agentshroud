@@ -1,21 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: "skills/openclaw/bear-notes/SKILL.md"
 type: "document"
-community: "SSH Config"
-location: "L191"
+community: "Bear Notes"
+location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSH_Config
+  - community/Bear_Notes
 ---
 
 # Configuration
 
 ## Connections
-- [[7. Deployment]] - `contains` [EXTRACTED]
-- [[Full Configuration Example]] - `contains` [EXTRACTED]
-- [[SSH Config]] - `contains` [EXTRACTED]
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
-- [[iCloud Services_2]] - `contains` [EXTRACTED]
+- [[Bear Notes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SSH_Config
+#graphify/document #graphify/EXTRACTED #community/Bear_Notes

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "Role"
+community: "RBACConfig"
 location: "L249"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Role
+  - community/RBACConfig
 ---
 
 # Check whether user_id may invoke the named tool.          Returns:             (
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_can_use_tool_impl()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Role
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/archive/SECURITY-ANALYSIS.md"
 type: "rationale"
-community: "AgentShroud Falco Rules"
+community: "start-agentshroud.sh"
 location: "L204-L225"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/AgentShroud_Falco_Rules
+  - community/start-agentshroudsh
 ---
 
 # Docker Hardening Measures (no-new-privileges, cap_drop ALL, non-root)
@@ -15,4 +15,4 @@ tags:
 - [[Capability Dropping Layer (cap_drop ALL, add back minimum)]] - `conceptually_related_to` [INFERRED]
 - [[Rule File Access Outside Workspace]] - `semantically_similar_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/AgentShroud_Falco_Rules
+#graphify/rationale #graphify/INFERRED #community/start-agentshroudsh

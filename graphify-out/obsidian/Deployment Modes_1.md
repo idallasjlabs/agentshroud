@@ -1,19 +1,19 @@
 ---
-source_file: "docs/operations/deployment-procedure.md"
+source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "Deployment Modes"
-location: "L66"
+community: "AgentShroud Deployment Architecture"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deployment_Modes
+  - community/AgentShroud_Deployment_Architecture
 ---
 
 # Deployment Modes
 
 ## Connections
-- [[AgentShroud Deployment Procedure]] - `contains` [EXTRACTED]
+- [[AgentShroud Deployment Architecture]] - `contains` [EXTRACTED]
 - [[Proxy Mode (Recommended)_1]] - `contains` [EXTRACTED]
-- [[Sidecar Mode (Advanced)]] - `contains` [EXTRACTED]
+- [[Sidecar Mode (Performance Optimized)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deployment_Modes
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture

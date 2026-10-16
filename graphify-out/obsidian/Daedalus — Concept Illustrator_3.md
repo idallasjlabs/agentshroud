@@ -18,7 +18,7 @@ tags:
 - [[Output Format_38]] - `contains` [EXTRACTED]
 - [[Persona_17]] - `contains` [EXTRACTED]
 - [[Quality Checklist_20]] - `contains` [EXTRACTED]
-- [[Role_93]] - `contains` [EXTRACTED]
+- [[Role_94]] - `contains` [EXTRACTED]
 - [[System Prompt_17]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator
