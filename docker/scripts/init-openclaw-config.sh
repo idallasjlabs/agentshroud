@@ -436,15 +436,27 @@ if [ -n "${_openclaw_bin}" ]; then
     return 1
   }
 
+  # TEMPORARY (2026-10-16, owner-approved stopgap): mode forced to "off", not
+  # "all". /home/node/.openclaw/workspace is a named Docker volume
+  # (agentshroud_agentshroud-config), not a host bind-mount -- sandbox
+  # provisioning needs a real host path to hand through to the sibling
+  # sandbox container it spawns, and a named volume can't be referenced that
+  # way. With mode=all this failed on every message that triggered sandbox
+  # provisioning ("Cannot resolve sandbox bind sources from this Gateway
+  # container"), i.e. OpenClaw couldn't reply to anything. mode=off is a real,
+  # lasting reduction in isolation -- exec/read/write/edit run in OpenClaw's
+  # own container instead of an ephemeral per-session sandbox -- not a
+  # same-night-only workaround; it persists across every future restart until
+  # someone restores mode=all AND fixes the volume/bind-mount mismatch.
   _sandbox_ok=1
-  _oc_config_set agents.defaults.sandbox.mode all                      || _sandbox_ok=0
+  _oc_config_set agents.defaults.sandbox.mode off                      || _sandbox_ok=0
   _oc_config_set agents.defaults.sandbox.backend docker                || _sandbox_ok=0
   _oc_config_set agents.defaults.sandbox.scope session                 || _sandbox_ok=0
   _oc_config_set agents.defaults.sandbox.workspaceAccess rw            || _sandbox_ok=0
   _oc_config_set agents.defaults.sandbox.docker.network "${_sandbox_network}" || _sandbox_ok=0
 
   if [ "${_sandbox_ok}" -eq 1 ]; then
-    echo "[init] ✓ Sandbox config applied (mode=all, backend=docker, scope=session, workspaceAccess=rw, docker.network=${_sandbox_network})"
+    echo "[init] ✓ Sandbox config applied (mode=off [TEMPORARY stopgap, see comment above], backend=docker, scope=session, workspaceAccess=rw, docker.network=${_sandbox_network})"
   else
     # Loud, not fatal. Sandboxing being off is a real security regression, so
     # it must be visible in the log and to the SOC surface — but a config-write

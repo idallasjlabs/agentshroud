@@ -279,6 +279,16 @@ COPY docker/bots/hermes/patch_edge_tts_proxy.py /tmp/patch_edge_tts_proxy.py
 RUN /opt/hermes/.venv/bin/python3 /tmp/patch_edge_tts_proxy.py \
     && rm /tmp/patch_edge_tts_proxy.py
 
+# python-telegram-bot's Message._de_json does a bare data["date"] subscript
+# when parsing editMessageText's response. Telegram has returned edit-success
+# payloads with no "date" key at all (not an InaccessibleMessage -- those use
+# date=0), raising KeyError('date') after the edit already applied
+# server-side -- see patch script header for the full trace (reproduced live
+# 2026-10-16).
+COPY docker/bots/hermes/patch_telegram_edit_message_date.py /tmp/patch_telegram_edit_message_date.py
+RUN /opt/hermes/.venv/bin/python3 /tmp/patch_telegram_edit_message_date.py \
+    && rm /tmp/patch_telegram_edit_message_date.py
+
 # Give s6 15s grace before SIGKILL so the TERM trap can release the Telegram
 # long-poll lock and wait up to 8s for the asyncio daemon to exit cleanly.
 # Default is 5000ms which cuts the trap short before lock release completes.
