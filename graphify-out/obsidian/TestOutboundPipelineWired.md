@@ -16,7 +16,7 @@ tags:
 - [[dot-test_send_message_draft_also_runs_outbound_filtering()]] - `method` [EXTRACTED]
 - [[PipelineAction]] - `uses` [INFERRED]
 - [[PipelineResult_1]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_pipeline.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PipelineAction

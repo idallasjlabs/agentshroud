@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_prompt_extraction_detection_rate()]] - `method` [EXTRACTED]
 - [[HeuristicClassifier_1]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[System prompt extraction payloads.]] - `rationale_for` [EXTRACTED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: ".github/workflows/security-scan.yml"
 type: "code"
-community: "The run is judged on state change, not steps completed"
+community: "docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)"
 location: "60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/The_run_is_judged_on_state_change_not_steps_completed
+  - community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
 ---
 
 # Trivy filesystem scan job (SHA-pinned action)
@@ -15,4 +15,4 @@ tags:
 - [[Inventory EVERYTHING MEANS EVERYTHING — a component missing from the table is a failed run]] - `references` [EXTRACTED]
 - [[pre-commit git-secrets local hook (AWS credential patterns)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/The_run_is_judged_on_state_change_not_steps_completed
+#graphify/code #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes

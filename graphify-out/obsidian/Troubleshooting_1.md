@@ -1,8 +1,8 @@
 ---
-source_file: "docker/scripts/README.md"
+source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
 community: "Troubleshooting"
-location: "L247"
+location: "L204"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[Missing auth for API providers]] - `contains` [EXTRACTED]
-- [[Container unhealthy]] - `contains` [EXTRACTED]
-- [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
-- [[Telegram bot not responding]] - `contains` [EXTRACTED]
+- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
+- [[Bot not responding on Telegram]] - `contains` [EXTRACTED]
+- [[Container won't start after adding Anthropic secret]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Troubleshooting

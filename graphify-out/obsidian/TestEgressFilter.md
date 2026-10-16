@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "EgressFilter"
+community: "EgressFilterConfig"
 location: "L406"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/EgressFilterConfig
 ---
 
 # TestEgressFilter
 
 ## Connections
-- [[dot-setup_method()_15]] - `method` [EXTRACTED]
+- [[dot-setup_method()_29]] - `method` [EXTRACTED]
 - [[dot-test_allowed_domain()]] - `method` [EXTRACTED]
-- [[dot-test_allowed_ip()_1]] - `method` [EXTRACTED]
+- [[dot-test_allowed_ip()]] - `method` [EXTRACTED]
 - [[dot-test_allowed_specific_ip()]] - `method` [EXTRACTED]
 - [[dot-test_denied_domain()]] - `method` [EXTRACTED]
 - [[dot-test_denied_ip()]] - `method` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[dot-test_empty_ports_allows_all()]] - `method` [EXTRACTED]
 - [[dot-test_log()]] - `method` [EXTRACTED]
 - [[dot-test_per_agent_policy()]] - `method` [EXTRACTED]
-- [[dot-test_stats()]] - `method` [EXTRACTED]
+- [[dot-test_stats()_2]] - `method` [EXTRACTED]
 - [[dot-test_url_parsing()_1]] - `method` [EXTRACTED]
 - [[dot-test_url_port_extraction()]] - `method` [EXTRACTED]
 - [[dot-test_wildcard_base_domain()]] - `method` [EXTRACTED]
@@ -33,18 +33,18 @@ tags:
 - [[ContainerSnapshot]] - `uses` [INFERRED]
 - [[DriftDetector]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
-- [[EgressFilter_2]] - `uses` [INFERRED]
+- [[EgressFilter_1]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[EncryptedStore]] - `uses` [INFERRED]
 - [[IsolationStatus]] - `uses` [INFERRED]
 - [[IsolationVerifier]] - `uses` [INFERRED]
 - [[PatternRule]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilter
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

@@ -1,21 +1,21 @@
 ---
-source_file: "docs/setup/OPENCLAW_SETUP.md"
+source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "OpenClaw Setup Guide - agentshroud.ai Bot"
-location: "L356"
+community: "AgentShroud Phase 3 - Quick Start Guide"
+location: "L232"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Control UI Not Accessible]] - `contains` [EXTRACTED]
-- [[Gateway Can't Reach OpenClaw]] - `contains` [EXTRACTED]
-- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
-- [[OpenClaw Won't Start]] - `contains` [EXTRACTED]
-- [[SSH Not Working]] - `contains` [EXTRACTED]
+- [[API Key Error]] - `contains` [EXTRACTED]
+- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
+- [[Container Won't Start_1]] - `contains` [EXTRACTED]
+- [[Gateway Returns 401 Unauthorized]] - `contains` [EXTRACTED]
+- [[OpenClaw Not Responding]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/IMESSAGE_FIX.md"
+source_file: "docs/planning/redteam/06-outbound-info-filter.md"
 type: "document"
-community: "iMessage Integration Fix - Using imsg + imessage-exporter"
-location: "L69"
+community: "Implement gateway-level outbound information filtering module"
+location: "L357"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iMessage_Integration_Fix_-_Using_imsg__imessage-exporter
+  - community/Implement_gateway-level_outbound_information_filtering_module
 ---
 
 # Verification
 
 ## Connections
-- [[iMessage Integration Fix - Using imsg + imessage-exporter]] - `contains` [EXTRACTED]
+- [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Fix_-_Using_imsg__imessage-exporter
+#graphify/document #graphify/EXTRACTED #community/Implement_gateway-level_outbound_information_filtering_module

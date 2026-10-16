@@ -12,10 +12,10 @@ tags:
 # TestEncodingDetector
 
 ## Connections
-- [[dot-setup_method()_3]] - `method` [EXTRACTED]
+- [[dot-setup_method()_15]] - `method` [EXTRACTED]
 - [[dot-test_base64_detected()]] - `method` [EXTRACTED]
 - [[dot-test_config_disable_base64()]] - `method` [EXTRACTED]
-- [[dot-test_empty_input()_1]] - `method` [EXTRACTED]
+- [[dot-test_empty_input()_2]] - `method` [EXTRACTED]
 - [[dot-test_homoglyph_replaced()]] - `method` [EXTRACTED]
 - [[dot-test_nested_encoding()]] - `method` [EXTRACTED]
 - [[dot-test_plain_text_no_detection()]] - `method` [EXTRACTED]

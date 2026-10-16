@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_consent_framework.py"
 type: "code"
-community: "ServerConfig"
+community: "ConsentFramework"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServerConfig
+  - community/ConsentFramework
 ---
 
 # TestServerConfigValidation
@@ -26,4 +26,4 @@ tags:
 - [[ShellInjectionDetected]] - `uses` [INFERRED]
 - [[test_consent_framework.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServerConfig
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework

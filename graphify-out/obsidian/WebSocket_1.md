@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/ingest_api/routes/dashboard.py"
+source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "activity_websocket"
-location: "L561"
+community: "test_soc_realtime_coverage.py"
+location: "L29"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/activity_websocket
+  - graphify/INFERRED
+  - community/test_soc_realtime_coveragepy
 ---
 
 # WebSocket
 
 ## Connections
-- [[activity_websocket()]] - `references` [EXTRACTED]
-- [[egress_websocket()]] - `references` [EXTRACTED]
+- [[dot-__init__()_69]] - `references` [EXTRACTED]
+- [[Severity_1]] - `uses` [INFERRED]
+- [[WSEvent]] - `uses` [INFERRED]
+- [[WSEventType]] - `uses` [INFERRED]
+- [[ws_soc_endpoint()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/activity_websocket
+#graphify/code #graphify/INFERRED #community/test_soc_realtime_coveragepy

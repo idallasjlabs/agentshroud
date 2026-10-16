@@ -16,9 +16,9 @@ tags:
 - [[dot-test_legacy_no_author_write_still_appends()]] - `method` [EXTRACTED]
 - [[dot-test_owner_write_into_user_memory_succeeds()]] - `method` [EXTRACTED]
 - [[dot-test_self_write_succeeds()]] - `method` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
+- [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_shared_memory_write_acl.py]] - `contains` [EXTRACTED]
 

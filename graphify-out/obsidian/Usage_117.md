@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-oracle/README.md"
+source_file: ".agents/skills/i-mnemosyne/README.md"
 type: "document"
-community: "Oracle — Feedback Analyst"
+community: "Mnemosyne — Retention Engineer"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Usage
 
 ## Connections
-- [[Oracle — Feedback Analyst_2]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

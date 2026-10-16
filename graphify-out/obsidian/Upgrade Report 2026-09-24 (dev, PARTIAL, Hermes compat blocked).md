@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-24.md"
 type: "document"
-community: "colima-health-check.sh"
+community: "check-vendor-compat.sh"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/check-vendor-compatsh
 ---
 
 # Upgrade Report 2026-09-24 (dev, PARTIAL, Hermes compat blocked)
@@ -20,4 +20,4 @@ tags:
 - [[triage_agent_full()]] - `references` [EXTRACTED]
 - [[update-agentshroud.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/document #graphify/EXTRACTED #community/check-vendor-compatsh

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "AgentRegistry"
+community: "AlertDispatcher"
 location: "L508"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/AlertDispatcher
 ---
 
 # TestDriftDetector
 
 ## Connections
-- [[dot-setup_method()_31]] - `method` [EXTRACTED]
-- [[dot-teardown_method()_6]] - `method` [EXTRACTED]
+- [[dot-setup_method()_1]] - `method` [EXTRACTED]
+- [[dot-teardown_method()_1]] - `method` [EXTRACTED]
 - [[dot-test_acknowledge_alert()]] - `method` [EXTRACTED]
 - [[dot-test_alerts_persisted()]] - `method` [EXTRACTED]
 - [[dot-test_config_hash_changes()]] - `method` [EXTRACTED]
@@ -34,18 +34,18 @@ tags:
 - [[ContainerSnapshot]] - `uses` [INFERRED]
 - [[DriftDetector]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
-- [[EgressFilter_2]] - `uses` [INFERRED]
+- [[EgressFilter_1]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[EncryptedStore]] - `uses` [INFERRED]
 - [[IsolationStatus]] - `uses` [INFERRED]
 - [[IsolationVerifier]] - `uses` [INFERRED]
 - [[PatternRule]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ti/README.md"
+source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
 type: "document"
-community: "Technical Illustrator (i-ti)"
-location: "L10"
+community: "mcp-proxy-wrapper.js"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Illustrator_i-ti
+  - community/mcp-proxy-wrapperjs
 ---
 
 # Usage
 
 ## Connections
-- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
+- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_i-ti
+#graphify/document #graphify/EXTRACTED #community/mcp-proxy-wrapperjs

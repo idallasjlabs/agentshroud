@@ -12,8 +12,8 @@ tags:
 # WebContentScanner
 
 ## Connections
-- [[dot-__init__()_2]] - `references` [EXTRACTED]
-- [[dot-__init__()_1]] - `method` [EXTRACTED]
+- [[dot-__init__()_9]] - `references` [EXTRACTED]
+- [[dot-__init__()_8]] - `method` [EXTRACTED]
 - [[dot-_scan_encoded_payloads()]] - `method` [EXTRACTED]
 - [[dot-_scan_hidden_content()]] - `method` [EXTRACTED]
 - [[dot-_scan_pii()]] - `method` [EXTRACTED]
@@ -28,11 +28,11 @@ tags:
 - [[TestDangerousXMLDetection]] - `uses` [INFERRED]
 - [[TestDangerousXMLIsBlockedNotFlagged]] - `uses` [INFERRED]
 - [[TestDefenseLayerVocabulary]] - `uses` [INFERRED]
-- [[URLAnalyzer_1]] - `semantically_similar_to` [INFERRED]
+- [[URLAnalyzer]] - `semantically_similar_to` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]
 - [[test_triage_cve_mitigations.py]] - `imports` [EXTRACTED]
 - [[test_xml_dtd_control.py]] - `imports` [EXTRACTED]
-- [[web_content_scanner.py]] - `contains` [EXTRACTED]
-- [[web_proxy.py]] - `imports` [EXTRACTED]
+- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
+- [[web_proxy.py_2]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebContentScanner

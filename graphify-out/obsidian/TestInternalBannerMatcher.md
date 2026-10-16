@@ -22,7 +22,7 @@ tags:
 - [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[_contains_internal_approval_banner must only fire on real egress banners.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 

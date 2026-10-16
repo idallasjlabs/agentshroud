@@ -1,17 +1,17 @@
 ---
-source_file: "skills/README.md"
+source_file: ".agents/skills/i-pm/README.md"
 type: "document"
-community: "AgentShroud Skills Library"
-location: "L24"
+community: "Project Management (README)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Skills_Library
+  - community/Project_Management_README
 ---
 
 # Usage
 
 ## Connections
-- [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
+- [[Project Management (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Skills_Library
+#graphify/document #graphify/EXTRACTED #community/Project_Management_README

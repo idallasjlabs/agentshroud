@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "Troubleshooting"
+community: "AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist"
 location: "L1683"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Troubleshooting
+  - community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist
 ---
 
 # Troubleshooting
@@ -19,4 +19,4 @@ tags:
 - [[SSH Connection Refused]] - `contains` [EXTRACTED]
 - [[Slow Builds]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist

@@ -1,22 +1,21 @@
 ---
-source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "10. Troubleshooting"
-location: "L160"
+community: "OpenClaw Setup Guide - agentshroud.ai Bot"
+location: "L356"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/10_Troubleshooting
+  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AWS Token expired (SSO)]] - `contains` [EXTRACTED]
-- [[AWS Unable to locate credentials]] - `contains` [EXTRACTED]
-- [[Atlassian OAuth flow failed]] - `contains` [EXTRACTED]
-- [[GitHub Bad credentials]] - `contains` [EXTRACTED]
-- [[GitHub Docker image not found]] - `contains` [EXTRACTED]
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
+- [[Control UI Not Accessible]] - `contains` [EXTRACTED]
+- [[Gateway Can't Reach OpenClaw]] - `contains` [EXTRACTED]
+- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
+- [[OpenClaw Won't Start]] - `contains` [EXTRACTED]
+- [[SSH Not Working]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/10_Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot

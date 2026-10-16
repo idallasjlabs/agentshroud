@@ -100,7 +100,7 @@ tags:
 - [[dot-test_streaming_chunking_probe_gets_output_delivery_policy_notice()]] - `method` [EXTRACTED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RateLimiter_1]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[Unit tests for collaborator-facing prompt classification helpers.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 

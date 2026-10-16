@@ -12,6 +12,6 @@ tags:
 # WebProxy._audit(event_type, url, metadata)
 
 ## Connections
-- [[Function Details_44]] - `contains` [EXTRACTED]
+- [[Function Details_45]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/web_proxypy

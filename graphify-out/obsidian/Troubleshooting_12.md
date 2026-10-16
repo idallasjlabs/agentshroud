@@ -1,20 +1,22 @@
 ---
-source_file: "docs/setup/DEVICE_PAIRING.md"
+source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "AgentShroud Device Pairing Management"
-location: "L333"
+community: "10. Troubleshooting"
+location: "L160"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Device_Pairing_Management
+  - community/10_Troubleshooting
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
-- [[Problem pairing required but no pending requests]] - `contains` [EXTRACTED]
-- [[Problem Approved device still can't connect]] - `contains` [EXTRACTED]
-- [[Problem Too many pending requests]] - `contains` [EXTRACTED]
+- [[AWS Token expired (SSO)]] - `contains` [EXTRACTED]
+- [[AWS Unable to locate credentials]] - `contains` [EXTRACTED]
+- [[Atlassian OAuth flow failed]] - `contains` [EXTRACTED]
+- [[GitHub Bad credentials]] - `contains` [EXTRACTED]
+- [[GitHub Docker image not found]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management
+#graphify/document #graphify/EXTRACTED #community/10_Troubleshooting

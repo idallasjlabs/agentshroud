@@ -44,7 +44,7 @@ tags:
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[PKCEViolation]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[RedirectMismatch]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
 - [[ResourceLimits]] - `uses` [INFERRED]
@@ -53,7 +53,7 @@ tags:
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test audit chain integrity and tamper detection.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/AlertDispatcher

@@ -12,10 +12,10 @@ tags:
 # TestToolResultSanitizerConfig
 
 ## Connections
-- [[dot-test_custom_config()_1]] - `method` [EXTRACTED]
-- [[dot-test_default_config()_3]] - `method` [EXTRACTED]
+- [[dot-test_custom_config()_3]] - `method` [EXTRACTED]
+- [[dot-test_default_config()_8]] - `method` [EXTRACTED]
 - [[Test ToolResultSanitizerConfig.]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer]] - `uses` [INFERRED]
+- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
 - [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
 - [[test_tool_result_sanitizer_enhanced.py]] - `contains` [EXTRACTED]
 

@@ -1,17 +1,18 @@
 ---
-source_file: "docs/planning/redteam/01-enforce-by-default.md"
+source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "Flip core security modules from monitor to enforce mode"
-location: "L130"
+community: "Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility"
+location: "L93"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Flip_core_security_modules_from_monitor_to_enforce_mode
+  - community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility
 ---
 
 # Verification
 
 ## Connections
-- [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
+- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - `contains` [EXTRACTED]
+- [[With VPN connected]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Flip_core_security_modules_from_monitor_to_enforce_mode
+#graphify/document #graphify/EXTRACTED #community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility

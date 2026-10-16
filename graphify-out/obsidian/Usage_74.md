@@ -1,17 +1,23 @@
 ---
-source_file: "docker/config/openclaw/skills/i-production/README.md"
+source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "Phase 3: MITIGATE (Rollback First!)"
-location: "L10"
+community: "Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)"
+location: "L226"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First
+  - community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On
 ---
 
 # Usage
 
 ## Connections
-- [[Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
+- [[Adding a future agent_1]] - `contains` [EXTRACTED]
+- [[Agent toggle (MUTE button — BSP_BUTTON_MUTE)]] - `contains` [EXTRACTED]
+- [[Physical button (top button — BSP_BUTTON_MAIN)]] - `contains` [EXTRACTED]
+- [[Tap to talk]] - `contains` [EXTRACTED]
+- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
+- [[Voice volume]] - `contains` [EXTRACTED]
+- [[Wake word]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First
+#graphify/document #graphify/EXTRACTED #community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On

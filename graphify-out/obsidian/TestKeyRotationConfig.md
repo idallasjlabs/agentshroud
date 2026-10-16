@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "KeyRotationConfig"
+community: "KeyRotationManager"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationConfig
+  - community/KeyRotationManager
 ---
 
 # TestKeyRotationConfig
@@ -17,7 +17,7 @@ tags:
 - [[dot-test_get_op_reference_builds_correctly()]] - `method` [EXTRACTED]
 - [[dot-test_get_policy_returns_default_for_unknown_type()]] - `method` [EXTRACTED]
 - [[CredentialInfo]] - `uses` [INFERRED]
-- [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
+- [[CredentialRotationPolicy]] - `uses` [INFERRED]
 - [[CredentialValidator]] - `uses` [INFERRED]
 - [[KeyRotationConfig_1]] - `uses` [INFERRED]
 - [[KeyRotationManager]] - `uses` [INFERRED]
@@ -25,4 +25,4 @@ tags:
 - [[Test key rotation configuration.]] - `rationale_for` [EXTRACTED]
 - [[test_key_rotation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationConfig
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

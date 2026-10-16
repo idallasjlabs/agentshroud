@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "lifespan.py"
+community: "MiddlewareManager"
 location: "L391"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/lifespanpy
+  - community/MiddlewareManager
 ---
 
 # TestMemorySecurityIntegration
 
 ## Connections
-- [[dot-setup_method()_10]] - `method` [EXTRACTED]
+- [[dot-setup_method()_5]] - `method` [EXTRACTED]
 - [[dot-teardown_method()_4]] - `method` [EXTRACTED]
 - [[dot-test_integrated_memory_protection()]] - `method` [EXTRACTED]
 - [[dot-test_status_reporting()]] - `method` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[Test integration of memory security components.]] - `rationale_for` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/lifespanpy
+#graphify/code #graphify/INFERRED #community/MiddlewareManager

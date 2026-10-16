@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "lifespan.py"
+community: "MiddlewareManager"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/MiddlewareManager
 ---
 
 # TestMemoryIntegrityMonitor
 
 ## Connections
-- [[dot-setup_method()_8]] - `method` [EXTRACTED]
+- [[dot-setup_method()_3]] - `method` [EXTRACTED]
 - [[dot-teardown_method()_2]] - `method` [EXTRACTED]
 - [[dot-test_expected_write_window()]] - `method` [EXTRACTED]
 - [[dot-test_file_monitoring_new_file()]] - `method` [EXTRACTED]
@@ -30,4 +30,4 @@ tags:
 - [[Test memory integrity monitoring.]] - `rationale_for` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

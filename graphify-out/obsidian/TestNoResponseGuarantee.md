@@ -19,7 +19,7 @@ tags:
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[Owner messages are never rate-limited by the collaborator limiter.]] - `rationale_for` [EXTRACTED]
 - [[RateLimiter_1]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RateLimiter

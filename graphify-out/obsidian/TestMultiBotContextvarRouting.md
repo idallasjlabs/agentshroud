@@ -12,7 +12,7 @@ tags:
 # TestMultiBotContextvarRouting
 
 ## Connections
-- [[dot-_make_proxy()_4]] - `method` [EXTRACTED]
+- [[dot-_make_proxy()_1]] - `method` [EXTRACTED]
 - [[dot-test_active_bot_id_falls_back_to_openclaw()]] - `method` [EXTRACTED]
 - [[dot-test_active_bot_id_returns_contextvar_when_set()]] - `method` [EXTRACTED]
 - [[dot-test_active_send_token_returns_contextvar_inside_request()]] - `method` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[dot-test_send_telegram_text_uses_inbound_token()]] - `method` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[Cross-bot reply misrouting fix via contextvar-scoped send token]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[Tests for per-request bot token routing via contextvars.      Regression suite f]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_multibot.py]] - `contains` [EXTRACTED]
 

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/weekly-kaizen-review.txt"
 type: "document"
-community: "_seed_cron"
+community: "Hermes Cron Jobs Reference & Recreation Guide"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/_seed_cron
+  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
 ---
 
 # Weekly Kaizen Review (Hermes Prompt)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Seed Job Weekly Kaizen Review]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/_seed_cron
+#graphify/document #graphify/INFERRED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide

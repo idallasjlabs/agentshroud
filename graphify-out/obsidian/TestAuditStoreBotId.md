@@ -20,7 +20,7 @@ tags:
 - [[dot-test_query_events_bot_filter()]] - `method` [EXTRACTED]
 - [[dot-test_query_events_bot_filter_combined_with_severity()]] - `method` [EXTRACTED]
 - [[AuditEvent]] - `uses` [INFERRED]
-- [[AuditExportConfig_1]] - `uses` [INFERRED]
+- [[AuditExportConfig]] - `uses` [INFERRED]
 - [[AuditExporter]] - `uses` [INFERRED]
 - [[AuditStore_1]] - `uses` [INFERRED]
 - [[Verify per-bot filtering in AuditStore (v1.1.0 multi-bot support).]] - `rationale_for` [EXTRACTED]

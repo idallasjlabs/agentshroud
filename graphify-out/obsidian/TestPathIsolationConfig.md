@@ -12,8 +12,8 @@ tags:
 # TestPathIsolationConfig
 
 ## Connections
-- [[dot-test_custom_config()]] - `method` [EXTRACTED]
-- [[dot-test_default_config()_2]] - `method` [EXTRACTED]
+- [[dot-test_custom_config()_2]] - `method` [EXTRACTED]
+- [[dot-test_default_config()_7]] - `method` [EXTRACTED]
 - [[PathIsolationConfig]] - `uses` [INFERRED]
 - [[PathIsolationManager]] - `uses` [INFERRED]
 - [[PathRewriteResult]] - `uses` [INFERRED]

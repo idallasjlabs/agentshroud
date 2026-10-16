@@ -19,7 +19,7 @@ tags:
 - [[dot-test_supergroup_is_group()]] - `method` [EXTRACTED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RateLimiter_1]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[Unit tests for TelegramAPIProxy._is_group_message().]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 

@@ -18,7 +18,7 @@ tags:
 - [[dot-test_oversize_body_is_capped()]] - `method` [EXTRACTED]
 - [[dot-test_redirect_is_not_proven()]] - `method` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
-- [[FetchOutcome]] - `uses` [INFERRED]
+- [[FetchOutcome_1]] - `uses` [INFERRED]
 - [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FetchOutcome

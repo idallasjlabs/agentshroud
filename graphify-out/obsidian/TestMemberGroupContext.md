@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "GroupRoleResolver"
+community: "RBACConfig"
 location: "L229"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/RBACConfig
 ---
 
 # TestMemberGroupContext
@@ -19,11 +19,11 @@ tags:
 - [[dot-test_member_denied_ssh_private_tool_in_group()]] - `method` [EXTRACTED]
 - [[GroupRole]] - `uses` [INFERRED]
 - [[GroupRoleResolver]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[Regular members can use medium-risk tools but not privateadmin tools.]] - `rationale_for` [EXTRACTED]
-- [[TeamsConfig]] - `uses` [INFERRED]
+- [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[ToolACLConfig]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_group_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

@@ -18,7 +18,7 @@ tags:
 - [[EgressAction]] - `uses` [INFERRED]
 - [[EgressAttempt]] - `uses` [INFERRED]
 - [[EgressAttempt stores the right fields.]] - `rationale_for` [EXTRACTED]
-- [[EgressFilter_2]] - `uses` [INFERRED]
+- [[EgressFilter_1]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]

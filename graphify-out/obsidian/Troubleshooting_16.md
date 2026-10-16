@@ -1,21 +1,22 @@
 ---
-source_file: "docker/QUICKSTART.md"
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "AgentShroud Phase 3 - Quick Start Guide"
-location: "L232"
+community: "Browser — Secure Browser Automation"
+location: "L281"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[API Key Error]] - `contains` [EXTRACTED]
-- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
-- [[Container Won't Start_1]] - `contains` [EXTRACTED]
-- [[Gateway Returns 401 Unauthorized]] - `contains` [EXTRACTED]
-- [[OpenClaw Not Responding]] - `contains` [EXTRACTED]
+- [[Action requires approval but none granted_3]] - `contains` [EXTRACTED]
+- [[Browser timeout_3]] - `contains` [EXTRACTED]
+- [[CAPTCHA detected_3]] - `contains` [EXTRACTED]
+- [[Rate limit exceeded_3]] - `contains` [EXTRACTED]
+- [[URL not in allowlist_3]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

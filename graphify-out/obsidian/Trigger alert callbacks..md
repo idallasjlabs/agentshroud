@@ -12,6 +12,6 @@ tags:
 # Trigger alert callbacks.
 
 ## Connections
-- [[dot-_trigger_alert()]] - `rationale_for` [EXTRACTED]
+- [[dot-_trigger_alert()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker

@@ -12,12 +12,12 @@ tags:
 # TestSystemPromptHMAC
 
 ## Connections
-- [[dot-guard()_5]] - `method` [EXTRACTED]
+- [[dot-guard()_3]] - `method` [EXTRACTED]
 - [[dot-test_empty_prompt()]] - `method` [EXTRACTED]
 - [[dot-test_explicit_key_used()]] - `method` [EXTRACTED]
 - [[dot-test_register_and_verify()]] - `method` [EXTRACTED]
 - [[dot-test_tamper_detected()]] - `method` [EXTRACTED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[SystemPromptFingerprint]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[test_prompt_guard.py]] - `contains` [EXTRACTED]

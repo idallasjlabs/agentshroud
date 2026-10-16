@@ -19,7 +19,7 @@ tags:
 - [[ApprovalResult]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
 - [[EgressAttempt]] - `uses` [INFERRED]
-- [[EgressFilter_2]] - `uses` [INFERRED]
+- [[EgressFilter_1]] - `uses` [INFERRED]
 - [[EgressFilter records attempts and provides stats.]] - `rationale_for` [EXTRACTED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]

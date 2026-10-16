@@ -12,7 +12,7 @@ tags:
 # TestPromptGuard
 
 ## Connections
-- [[dot-guard()_1]] - `method` [EXTRACTED]
+- [[dot-guard()_4]] - `method` [EXTRACTED]
 - [[dot-test_base64_injection()]] - `method` [EXTRACTED]
 - [[dot-test_clean_message_not_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_clean_technical_message()]] - `method` [EXTRACTED]
@@ -52,7 +52,7 @@ tags:
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[PKCEViolation]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[RedirectMismatch]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
 - [[ResourceLimits]] - `uses` [INFERRED]
@@ -61,7 +61,7 @@ tags:
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test prompt injection detection with adversarial payloads.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/AlertDispatcher

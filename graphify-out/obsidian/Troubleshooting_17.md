@@ -1,22 +1,22 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
-location: "L281"
+community: "SecureBrowser Skill"
+location: "L293"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/SecureBrowser_Skill
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Action requires approval but none granted_2]] - `contains` [EXTRACTED]
-- [[Browser timeout_3]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected_3]] - `contains` [EXTRACTED]
-- [[Rate limit exceeded_2]] - `contains` [EXTRACTED]
-- [[URL not in allowlist_3]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation_3]] - `contains` [EXTRACTED]
+- [[Approval required but none granted]] - `contains` [EXTRACTED]
+- [[Browser timeout_4]] - `contains` [EXTRACTED]
+- [[CAPTCHA detected_4]] - `contains` [EXTRACTED]
+- [[Credential extraction blocked]] - `contains` [EXTRACTED]
+- [[URL not in allowlist_4]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

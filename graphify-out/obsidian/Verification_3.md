@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/TAILSCALE_SETUP.md"
+source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "OpenClaw Bot Container"
-location: "L67"
+community: "AgentShroud Prerequisites"
+location: "L560"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_Container
+  - community/AgentShroud_Prerequisites
 ---
 
 # Verification
 
 ## Connections
-- [[Tailscale Access to OpenClaw Control UI]] - `contains` [EXTRACTED]
+- [[✅ Setup Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_Container
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites

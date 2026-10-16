@@ -21,7 +21,7 @@ tags:
 - [[dot-test_tamper_detection()]] - `method` [EXTRACTED]
 - [[dot-test_verify_export_integrity()]] - `method` [EXTRACTED]
 - [[AuditEvent]] - `uses` [INFERRED]
-- [[AuditExportConfig_1]] - `uses` [INFERRED]
+- [[AuditExportConfig]] - `uses` [INFERRED]
 - [[AuditExporter]] - `uses` [INFERRED]
 - [[AuditStore_1]] - `uses` [INFERRED]
 - [[Test AuditExporter functionality.]] - `rationale_for` [EXTRACTED]

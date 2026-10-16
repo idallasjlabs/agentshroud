@@ -16,7 +16,7 @@ tags:
 - [[dot-test_entry_hash_chain()]] - `method` [EXTRACTED]
 - [[dot-test_event_creation()]] - `method` [EXTRACTED]
 - [[AuditEvent]] - `uses` [INFERRED]
-- [[AuditExportConfig_1]] - `uses` [INFERRED]
+- [[AuditExportConfig]] - `uses` [INFERRED]
 - [[AuditExporter]] - `uses` [INFERRED]
 - [[AuditStore_1]] - `uses` [INFERRED]
 - [[Test AuditEvent functionality.]] - `rationale_for` [EXTRACTED]

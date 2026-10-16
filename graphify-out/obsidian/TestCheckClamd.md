@@ -12,7 +12,7 @@ tags:
 # TestCheckClamd
 
 ## Connections
-- [[dot-test_not_installed()_3]] - `method` [EXTRACTED]
+- [[dot-test_not_installed()_1]] - `method` [EXTRACTED]
 - [[dot-test_running_via_proc_scan()]] - `method` [EXTRACTED]
 - [[dot-test_running_via_socket()]] - `method` [EXTRACTED]
 - [[dot-test_standby_when_no_socket_and_no_process()]] - `method` [EXTRACTED]

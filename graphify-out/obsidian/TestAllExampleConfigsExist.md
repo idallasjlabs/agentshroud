@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-test_file_exists()]] - `method` [EXTRACTED]
-- [[ForwardRequest_3]] - `uses` [INFERRED]
+- [[ForwardRequest_1]] - `uses` [INFERRED]
 - [[RouterConfig_1]] - `uses` [INFERRED]
 - [[Verify all referenced example configs exist.]] - `rationale_for` [EXTRACTED]
 - [[test_config_validation.py]] - `contains` [EXTRACTED]

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
+source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "AGENTSHROUD_MODE"
-location: "L15"
+community: "AgentShroud Brand Guidelines"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AGENTSHROUD_MODE
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Values
 
 ## Connections
-- [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
+- [[Brand Identity_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_MODE
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

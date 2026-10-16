@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Role"
+community: "RBACConfig"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Role
+  - community/RBACConfig
 ---
 
 # TestCollaboratorAccess
@@ -18,11 +18,11 @@ tags:
 - [[dot-test_collaborator_can_use_allowed_tool()]] - `method` [EXTRACTED]
 - [[dot-test_collaborator_denied_tools_includes_admin_and_private()]] - `method` [EXTRACTED]
 - [[dot-test_collaborator_denied_unknown_by_default()]] - `method` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_96]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[Role_91]] - `uses` [INFERRED]
+- [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[ToolACLConfig]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Role
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

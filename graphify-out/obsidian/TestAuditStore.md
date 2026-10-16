@@ -18,7 +18,7 @@ tags:
 - [[dot-test_query_events()]] - `method` [EXTRACTED]
 - [[dot-test_stats()_1]] - `method` [EXTRACTED]
 - [[AuditEvent]] - `uses` [INFERRED]
-- [[AuditExportConfig_1]] - `uses` [INFERRED]
+- [[AuditExportConfig]] - `uses` [INFERRED]
 - [[AuditExporter]] - `uses` [INFERRED]
 - [[AuditStore_1]] - `uses` [INFERRED]
 - [[Test AuditStore functionality.]] - `rationale_for` [EXTRACTED]

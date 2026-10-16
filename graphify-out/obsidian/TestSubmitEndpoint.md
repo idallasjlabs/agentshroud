@@ -19,7 +19,7 @@ tags:
 - [[dot-test_too_many_candidate_urls_rejected()]] - `method` [EXTRACTED]
 - [[dot-test_too_many_entries_rejected()]] - `method` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
-- [[FetchOutcome]] - `uses` [INFERRED]
+- [[FetchOutcome_1]] - `uses` [INFERRED]
 - [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FetchOutcome

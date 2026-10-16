@@ -18,7 +18,7 @@ tags:
 - [[dot-test_stranger_within_limit_triggers_approval_workflow()]] - `method` [EXTRACTED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RateLimiter_1]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[Unknownunapproved users have stricter rate limits than collaborators.      Afte]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 

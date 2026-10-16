@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-test_bot_id_calls_compute_bot_scorecard()]] - `method` [EXTRACTED]
 - [[dot-test_no_bot_id_calls_global_scorecard()]] - `method` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_96]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[Role_91]] - `uses` [INFERRED]
 - [[get_security_scorecard()]] - `calls` [EXTRACTED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 

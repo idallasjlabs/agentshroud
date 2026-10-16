@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestOutboundScanUnification"
+community: "TestMultipartOutboundPipeline"
 location: "L5195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundScanUnification
+  - community/TestMultipartOutboundPipeline
 ---
 
 # TestOutboundScanUnification
@@ -23,7 +23,7 @@ tags:
 - [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[Regression tests for the JSONformmultipart scan unification.      Each test pi]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundScanUnification
+#graphify/code #graphify/EXTRACTED #community/TestMultipartOutboundPipeline

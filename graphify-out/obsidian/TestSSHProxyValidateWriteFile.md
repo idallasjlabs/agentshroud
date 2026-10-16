@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "code"
-community: "SSHProxy"
+community: "ApprovalQueueConfig"
 location: "L338"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/ApprovalQueueConfig
 ---
 
 # TestSSHProxyValidateWriteFile
@@ -25,10 +25,10 @@ tags:
 - [[dot-test_root_itself_rejected()]] - `method` [EXTRACTED]
 - [[dot-test_unknown_host_rejected()]] - `method` [EXTRACTED]
 - [[dot-test_whitespace_only_path_rejected_at_proxy_layer()]] - `method` [EXTRACTED]
-- [[ApprovalQueue_1]] - `uses` [INFERRED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueue]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
 - [[DataLedger]] - `uses` [INFERRED]
-- [[GatewayConfig_3]] - `uses` [INFERRED]
+- [[GatewayConfig_4]] - `uses` [INFERRED]
 - [[LedgerConfig_1]] - `uses` [INFERRED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
@@ -36,9 +36,9 @@ tags:
 - [[RouterConfig_1]] - `uses` [INFERRED]
 - [[SSHConfig_2]] - `uses` [INFERRED]
 - [[SSHHostConfig]] - `uses` [INFERRED]
-- [[SSHProxy]] - `uses` [INFERRED]
+- [[SSHProxy_1]] - `uses` [INFERRED]
 - [[SSHWriteResult]] - `uses` [INFERRED]
 - [[Unit tests for SSHProxy.validate_cwd().]] - `rationale_for` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

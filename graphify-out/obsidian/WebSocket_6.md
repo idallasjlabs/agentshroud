@@ -1,24 +1,18 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "soc/router.py"
-location: "L2704"
+community: "activity_websocket"
+location: "L561"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/soc/routerpy
+  - graphify/EXTRACTED
+  - community/activity_websocket
 ---
 
 # WebSocket
 
 ## Connections
-- [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult_1]] - `uses` [INFERRED]
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller_1]] - `uses` [INFERRED]
-- [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface_1]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
-- [[soc_websocket()]] - `references` [EXTRACTED]
+- [[activity_websocket()]] - `references` [EXTRACTED]
+- [[egress_websocket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/activity_websocket

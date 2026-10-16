@@ -12,14 +12,14 @@ tags:
 # TestGitGuardDefaultEnforce
 
 ## Connections
-- [[dot-test_default_mode_is_enforce()_5]] - `method` [EXTRACTED]
+- [[dot-test_default_mode_is_enforce()_1]] - `method` [EXTRACTED]
 - [[dot-test_scan_repository_default_enforce()]] - `method` [EXTRACTED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EnvironmentGuard]] - `uses` [INFERRED]
 - [[FileSandboxConfig]] - `uses` [INFERRED]
 - [[GitGuard]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_round2_hardening.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/GitGuard

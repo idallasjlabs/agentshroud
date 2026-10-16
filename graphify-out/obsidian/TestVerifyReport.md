@@ -19,10 +19,10 @@ tags:
 - [[dot-test_report_keeps_verified_and_counts_dropped()]] - `method` [EXTRACTED]
 - [[dot-test_verified_report_persists_with_intact_hashchain()]] - `method` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
-- [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
+- [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
-- [[FetchOutcome]] - `uses` [INFERRED]
-- [[IntelReportStore]] - `uses` [INFERRED]
+- [[FetchOutcome_1]] - `uses` [INFERRED]
+- [[IntelReportStore_1]] - `uses` [INFERRED]
 - [[test_citation_verifier.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy

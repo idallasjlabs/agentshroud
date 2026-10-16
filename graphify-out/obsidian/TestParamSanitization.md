@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "TestParamSanitization"
+community: "TestToolChainAnalyzer"
 location: "L483"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestParamSanitization
+  - community/TestToolChainAnalyzer
 ---
 
 # TestParamSanitization
@@ -23,8 +23,8 @@ tags:
 - [[ChainMatch]] - `uses` [INFERRED]
 - [[ParamScanResult]] - `uses` [INFERRED]
 - [[ReversibilityScore]] - `uses` [INFERRED]
-- [[RiskLevel_5]] - `uses` [INFERRED]
+- [[RiskLevel_6]] - `uses` [INFERRED]
 - [[ToolChainAnalyzer]] - `uses` [INFERRED]
 - [[test_tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestParamSanitization
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

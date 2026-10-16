@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Troubleshooting"
-location: "L295"
+community: "SecureBrowser - Enterprise Secure Browser Automation"
+location: "L319"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Troubleshooting
+  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
 ---
 
 # "URL not in allowlist"
 
 ## Connections
-- [[Troubleshooting_3]] - `contains` [EXTRACTED]
+- [[Troubleshooting_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automation

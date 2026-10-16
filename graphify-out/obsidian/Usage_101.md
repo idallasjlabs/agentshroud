@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-apollo/README.md"
+source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
-location: "L10"
+community: "egress_filter.py"
+location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/egress_filterpy
 ---
 
 # Usage
 
 ## Connections
-- [[Apollo — Audio Systems Producer_2]] - `contains` [EXTRACTED]
+- [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/egress_filterpy

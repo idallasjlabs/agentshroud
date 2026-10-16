@@ -12,6 +12,6 @@ tags:
 # What We Don't Protect Against
 
 ## Connections
-- [[Threat Model_3]] - `contains` [EXTRACTED]
+- [[Threat Model_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/SecureBrowser_Security_Policies

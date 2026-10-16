@@ -11,6 +11,6 @@ tags:
 # WebProxyConfig
 
 ## Connections
-- [[dot-__init__()_2]] - `references` [EXTRACTED]
+- [[dot-__init__()_9]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebContentScanner

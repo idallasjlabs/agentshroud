@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY-POLICY-FINAL.md"
 type: "rationale"
-community: "Git History Purge Plan"
+community: "AgentShroud Security Value Proposition - Revised"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Git_History_Purge_Plan
+  - community/AgentShroud_Security_Value_Proposition_-_Revised
 ---
 
 # Ultra-Conservative Credential Display Policy
@@ -16,4 +16,4 @@ tags:
 - [[SECURITY-POLICY-FINAL]] - `references` [EXTRACTED]
 - [[SECURITY_VALUE_PROPOSITION]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Git_History_Purge_Plan
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_Revised

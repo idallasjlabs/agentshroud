@@ -12,7 +12,7 @@ tags:
 # TestSubagentMonitorConfig
 
 ## Connections
-- [[dot-test_default_mode_is_enforce()_1]] - `method` [EXTRACTED]
+- [[dot-test_default_mode_is_enforce()_2]] - `method` [EXTRACTED]
 - [[dot-test_generous_concurrent_default()]] - `method` [EXTRACTED]
 - [[dot-test_trust_inheritance_default_on()]] - `method` [EXTRACTED]
 - [[SubagentEventType]] - `uses` [INFERRED]

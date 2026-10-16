@@ -214,7 +214,7 @@ tags:
 - [[dot-test_unknown_user_repeated_start_still_gets_pending_notice()]] - `method` [EXTRACTED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RateLimiter_1]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[Verify that _filter_inbound_updates() calls pipeline.process_inbound().]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 

@@ -1,8 +1,8 @@
 ---
-source_file: "docs/setup/SETUP_API_KEYS.md"
+source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
 community: "Troubleshooting"
-location: "L204"
+location: "L246"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -12,9 +12,10 @@ tags:
 # Troubleshooting
 
 ## Connections
-- [[Missing auth for API providers]] - `contains` [EXTRACTED]
-- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
-- [[Bot not responding on Telegram]] - `contains` [EXTRACTED]
-- [[Container won't start after adding Anthropic secret]] - `contains` [EXTRACTED]
+- [[Access Denied]] - `contains` [EXTRACTED]
+- [[Token expired (SSO)]] - `contains` [EXTRACTED]
+- [[Unable to locate credentials]] - `contains` [EXTRACTED]
+- [[MCP Not Using Profile]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Troubleshooting

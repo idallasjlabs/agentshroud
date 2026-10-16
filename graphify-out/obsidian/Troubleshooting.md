@@ -1,8 +1,8 @@
 ---
-source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
+source_file: "docker/scripts/README.md"
 type: "document"
 community: "Troubleshooting"
-location: "L237"
+location: "L247"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -12,10 +12,9 @@ tags:
 # Troubleshooting
 
 ## Connections
-- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
-- [[Problem 1Password link shows only page shell]] - `contains` [EXTRACTED]
-- [[Problem Browser binaries not found]] - `contains` [EXTRACTED]
-- [[Problem Permission denied executing browser]] - `contains` [EXTRACTED]
-- [[Problem Skill not auto-discovered by bot]] - `contains` [EXTRACTED]
+- [[Missing auth for API providers]] - `contains` [EXTRACTED]
+- [[Container unhealthy]] - `contains` [EXTRACTED]
+- [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
+- [[Telegram bot not responding]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Troubleshooting

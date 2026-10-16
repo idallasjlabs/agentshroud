@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "TestCleanSkill"
+community: "SkillGuard"
 location: "L74"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TestCleanSkill
+  - community/SkillGuard
 ---
 
 # TestCleanSkill
@@ -22,4 +22,4 @@ tags:
 - [[SkillScanError]] - `uses` [INFERRED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TestCleanSkill
+#graphify/code #graphify/INFERRED #community/SkillGuard

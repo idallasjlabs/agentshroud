@@ -23,10 +23,10 @@ tags:
 - [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[PipelineAction]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/PIIConfig

@@ -19,7 +19,7 @@ tags:
 - [[dot-test_unlock_without_user_id_shows_usage()]] - `method` [EXTRACTED]
 - [[LockdownLevel]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

@@ -17,7 +17,7 @@ tags:
 - [[dot-test_suspended_user_gets_drop_notice()]] - `method` [EXTRACTED]
 - [[LockdownLevel]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[Verify suspended users get a drop notice (rate-limited to avoid spam).]] - `rationale_for` [EXTRACTED]
 - [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]
 

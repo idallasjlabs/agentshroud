@@ -12,7 +12,7 @@ tags:
 # TestMiddlewareResult
 
 ## Connections
-- [[dot-test_defaults()_1]] - `method` [EXTRACTED]
+- [[dot-test_defaults()]] - `method` [EXTRACTED]
 - [[dot-test_denied_with_reason()]] - `method` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]

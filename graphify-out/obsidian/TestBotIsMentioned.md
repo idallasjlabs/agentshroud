@@ -22,7 +22,7 @@ tags:
 - [[dot-test_no_entities_not_matched()]] - `method` [EXTRACTED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RateLimiter_1]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[Unit tests for TelegramAPIProxy._bot_is_mentioned().]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 

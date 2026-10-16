@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "SSHProxy"
+community: "ApprovalQueueConfig"
 location: "L241"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SSHProxy
+  - community/ApprovalQueueConfig
 ---
 
 # TestSSHValidateCwd
@@ -18,10 +18,10 @@ tags:
 - [[dot-test_pipe_rejected()]] - `method` [EXTRACTED]
 - [[dot-test_relative_path_rejected()]] - `method` [EXTRACTED]
 - [[dot-test_semicolon_rejected()]] - `method` [EXTRACTED]
-- [[ApprovalQueue_1]] - `uses` [INFERRED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueue]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
 - [[DataLedger]] - `uses` [INFERRED]
-- [[GatewayConfig_3]] - `uses` [INFERRED]
+- [[GatewayConfig_4]] - `uses` [INFERRED]
 - [[LedgerConfig_1]] - `uses` [INFERRED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
@@ -29,9 +29,9 @@ tags:
 - [[RouterConfig_1]] - `uses` [INFERRED]
 - [[SSHConfig_2]] - `uses` [INFERRED]
 - [[SSHHostConfig]] - `uses` [INFERRED]
-- [[SSHProxy]] - `uses` [INFERRED]
+- [[SSHProxy_1]] - `uses` [INFERRED]
 - [[SSHResult]] - `uses` [INFERRED]
 - [[Unit tests for SSHProxy.validate_cwd().]] - `rationale_for` [EXTRACTED]
 - [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SSHProxy
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig

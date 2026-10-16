@@ -21,7 +21,7 @@ tags:
 - [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[Regression tests for Telegram HTML parse error caused by PII placeholders.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestParseModeStrippedAfterPIIRedaction

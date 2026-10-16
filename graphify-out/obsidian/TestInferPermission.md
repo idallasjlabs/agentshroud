@@ -22,7 +22,7 @@ tags:
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]
 - [[MCPToolConfig]] - `uses` [INFERRED]
-- [[PermissionLevel]] - `uses` [INFERRED]
+- [[PermissionLevel_1]] - `uses` [INFERRED]
 - [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PermissionLevel

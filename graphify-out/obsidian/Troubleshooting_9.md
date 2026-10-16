@@ -1,22 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/SKILL.md"
+source_file: "docker/README.md"
 type: "document"
-community: "SecureBrowser - Enterprise Secure Browser Automation"
-location: "L317"
+community: "AgentShroud Docker Configuration"
+location: "L370"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Action requires approval but none granted]] - `contains` [EXTRACTED]
-- [[Browser timeout_1]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected_1]] - `contains` [EXTRACTED]
-- [[Rate limit exceeded]] - `contains` [EXTRACTED]
-- [[URL not in allowlist_1]] - `contains` [EXTRACTED]
-- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
+- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

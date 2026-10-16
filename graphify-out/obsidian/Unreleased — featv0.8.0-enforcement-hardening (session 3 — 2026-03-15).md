@@ -16,8 +16,8 @@ tags:
 - [[Changed]] - `contains` [EXTRACTED]
 - [[Changelog — AgentShroud™]] - `contains` [EXTRACTED]
 - [[Fixed]] - `contains` [EXTRACTED]
-- [[Summary_27]] - `contains` [EXTRACTED]
-- [[Tests_3]] - `contains` [EXTRACTED]
+- [[Summary]] - `contains` [EXTRACTED]
+- [[Tests]] - `contains` [EXTRACTED]
 - [[Tranche Status]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Added

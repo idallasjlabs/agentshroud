@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Enum"
+community: "test_soc_realtime_coverage.py"
 location: "L541"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/test_soc_realtime_coveragepy
 ---
 
 # TestCoerceToWSEventExtra
@@ -22,10 +22,10 @@ tags:
 - [[dot-test_wsevent_passthrough()]] - `method` [EXTRACTED]
 - [[Action_2]] - `uses` [INFERRED]
 - [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[Resource_2]] - `uses` [INFERRED]
-- [[Role_96]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler]] - `uses` [INFERRED]
+- [[Role_91]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

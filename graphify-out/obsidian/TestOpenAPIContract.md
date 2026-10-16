@@ -12,7 +12,7 @@ tags:
 # TestOpenAPIContract
 
 ## Connections
-- [[dot-client()_6]] - `method` [EXTRACTED]
+- [[dot-client()_5]] - `method` [EXTRACTED]
 - [[dot-test_health_endpoint_unauthenticated()]] - `method` [EXTRACTED]
 - [[dot-test_no_500_on_empty_requests()]] - `method` [EXTRACTED]
 - [[dot-test_openapi_schema_is_valid()]] - `method` [EXTRACTED]

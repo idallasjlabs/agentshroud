@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "test_security_fixes.py"
+community: "ApprovalQueueConfig"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_fixespy
+  - community/ApprovalQueueConfig
 ---
 
 # TestSSHStrictHostKeyChecking
@@ -16,8 +16,8 @@ tags:
 - [[dot-test_strict_host_key_checking_in_source()]] - `method` [EXTRACTED]
 - [[SSHConfig_2]] - `uses` [INFERRED]
 - [[SSHHostConfig]] - `uses` [INFERRED]
-- [[SSHProxy]] - `uses` [INFERRED]
+- [[SSHProxy_1]] - `uses` [INFERRED]
 - [[Verify SSH proxy uses StrictHostKeyChecking=yes, not accept-new]] - `rationale_for` [EXTRACTED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_fixespy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

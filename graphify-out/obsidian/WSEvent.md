@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Enum"
+community: "test_soc_realtime_coverage.py"
 location: "L270"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/test_soc_realtime_coveragepy
 ---
 
 # WSEvent
@@ -17,9 +17,9 @@ tags:
 - [[dot-test_send_event_swallows_transport_error()]] - `calls` [EXTRACTED]
 - [[dot-test_wsevent_passthrough()]] - `calls` [EXTRACTED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
-- [[SOCWebSocketHandler]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
 - [[WSEvent_1]] - `uses` [INFERRED]
-- [[WebSocket_5]] - `uses` [INFERRED]
+- [[WebSocket_1]] - `uses` [INFERRED]
 - [[_coerce_to_ws_event()]] - `calls` [EXTRACTED]
 - [[_connectWS()]] - `shares_data_with` [INFERRED]
 - [[socmodels.py]] - `contains` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

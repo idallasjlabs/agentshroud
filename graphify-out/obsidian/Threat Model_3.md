@@ -1,19 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/references/security-policies.md"
+source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
 type: "document"
-community: "SecureBrowser Security Policies"
-location: "L69"
+community: "env_guard.py"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Security_Policies
+  - community/env_guardpy
 ---
 
 # Threat Model
 
 ## Connections
-- [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
-- [[What We Don't Protect Against]] - `contains` [EXTRACTED]
-- [[What We Protect Against]] - `contains` [EXTRACTED]
+- [[env_guard.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Security_Policies
+#graphify/document #graphify/EXTRACTED #community/env_guardpy

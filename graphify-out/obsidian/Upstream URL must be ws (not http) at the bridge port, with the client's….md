@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
 community: "test_main_endpoints.py"
-location: "L481"
+location: "L588"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

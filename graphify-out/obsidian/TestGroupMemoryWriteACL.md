@@ -18,9 +18,9 @@ tags:
 - [[dot-test_non_member_write_is_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_owner_write_succeeds()]] - `method` [EXTRACTED]
 - [[dot-test_unknown_group_write_is_blocked()]] - `method` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
+- [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_shared_memory_write_acl.py]] - `contains` [EXTRACTED]
 

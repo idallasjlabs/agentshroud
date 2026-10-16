@@ -1,17 +1,19 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
+source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "TrustManager"
-location: "L15"
+community: "SecureBrowser Security Policies"
+location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/SecureBrowser_Security_Policies
 ---
 
 # Threat Model
 
 ## Connections
-- [[TrustManager_5]] - `contains` [EXTRACTED]
+- [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
+- [[What We Don't Protect Against]] - `contains` [EXTRACTED]
+- [[What We Protect Against]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TrustManager
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Security_Policies

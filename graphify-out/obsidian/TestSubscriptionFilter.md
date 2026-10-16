@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "code"
-community: "TestSubscriptionFilter"
+community: "test_soc_realtime_coverage.py"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSubscriptionFilter
+  - community/test_soc_realtime_coveragepy
 ---
 
 # TestSubscriptionFilter
@@ -18,8 +18,8 @@ tags:
 - [[dot-test_no_subscription_accepts_log_event()]] - `method` [EXTRACTED]
 - [[dot-test_no_subscription_accepts_security_event()]] - `method` [EXTRACTED]
 - [[dot-test_subscription_filters_correctly()]] - `method` [EXTRACTED]
-- [[SOCWebSocketHandler]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
 - [[Test event filtering via the subscriptions set (mirrors _event_fan_out logic).]] - `rationale_for` [EXTRACTED]
 - [[test_soc_websocket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSubscriptionFilter
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

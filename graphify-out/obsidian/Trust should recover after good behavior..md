@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "TrustConfig"
 location: "L442"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/TrustConfig
 ---
 
 # Trust should recover after good behavior.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_trust_recovery()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/TrustConfig

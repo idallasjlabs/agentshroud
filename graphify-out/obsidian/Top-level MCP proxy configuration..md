@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "rationale"
-community: "DataLedger"
+community: "MCPPermissionManager"
 location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/MCPPermissionManager
 ---
 
 # Top-level MCP proxy configuration.
@@ -15,4 +15,4 @@ tags:
 - [[MCPProxyConfig_3]] - `rationale_for` [EXTRACTED]
 - [[SSHConfig_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DataLedger
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

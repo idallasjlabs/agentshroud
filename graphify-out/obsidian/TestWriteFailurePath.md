@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[dot-test_group_write_io_failure_returns_false()]] - `method` [EXTRACTED]
 - [[dot-test_user_write_io_failure_returns_false()]] - `method` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
+- [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_shared_memory_write_acl.py]] - `contains` [EXTRACTED]
 

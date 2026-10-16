@@ -12,7 +12,7 @@ tags:
 # WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)
 
 ## Connections
-- [[Executive Summary_5]] - `contains` [EXTRACTED]
+- [[Executive Summary_6]] - `contains` [EXTRACTED]
 - [[IEC 62443 Industrial Security Framework]] - `references` [EXTRACTED]
 - [[Part 1 — Blue-Team Posture Review (SCRUM-72)]] - `contains` [EXTRACTED]
 - [[Part 2 — Red-Team Attack Run (SCRUM-73)]] - `contains` [EXTRACTED]

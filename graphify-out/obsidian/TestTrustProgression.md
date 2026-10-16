@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "TestTrustProgression"
+community: "TrustConfig"
 location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestTrustProgression
+  - community/TrustConfig
 ---
 
 # TestTrustProgression
@@ -21,7 +21,7 @@ tags:
 - [[Test earning and losing trust.]] - `rationale_for` [EXTRACTED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestTrustProgression
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

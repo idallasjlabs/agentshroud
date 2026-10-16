@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_integrity.py"
 type: "rationale"
-community: "TestContextIntegrityScorer"
+community: "ContextSegment"
 location: "L74"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestContextIntegrityScorer
+  - community/ContextSegment
 ---
 
 # Untrusted segment injected after system segment reduces score.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_injected_untrusted_segment_lowers_score()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestContextIntegrityScorer
+#graphify/rationale #graphify/EXTRACTED #community/ContextSegment

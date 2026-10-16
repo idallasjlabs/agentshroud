@@ -19,7 +19,7 @@ tags:
 - [[dot-test_basic_traversal_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_double_encoded_traversal_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_enforce_vs_monitor_contrast()]] - `method` [EXTRACTED]
-- [[dot-test_monitor_mode_allows_everything()]] - `method` [EXTRACTED]
+- [[dot-test_monitor_mode_allows_everything()_1]] - `method` [EXTRACTED]
 - [[dot-test_null_byte_injection_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_proc_meminfo_allowed()]] - `method` [EXTRACTED]
 - [[dot-test_proc_self_environ_blocked()]] - `method` [EXTRACTED]
@@ -56,7 +56,7 @@ tags:
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[PKCEViolation]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[RedirectMismatch]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
 - [[ResourceLimits]] - `uses` [INFERRED]
@@ -65,7 +65,7 @@ tags:
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test file system sandboxing in enforce mode — blocks unauthorized access.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/AlertDispatcher

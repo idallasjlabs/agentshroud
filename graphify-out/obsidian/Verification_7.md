@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/06-outbound-info-filter.md"
+source_file: "docs/planning/redteam/03-session-isolation.md"
 type: "document"
-community: "Implement gateway-level outbound information filtering module"
-location: "L357"
+community: "Implement per-user session isolation using Telegram user ID"
+location: "L228"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Implement_gateway-level_outbound_information_filtering_module
+  - community/Implement_per-user_session_isolation_using_Telegram_user_ID
 ---
 
 # Verification
 
 ## Connections
-- [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
+- [[Implement per-user session isolation using Telegram user ID]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Implement_gateway-level_outbound_information_filtering_module
+#graphify/document #graphify/EXTRACTED #community/Implement_per-user_session_isolation_using_Telegram_user_ID

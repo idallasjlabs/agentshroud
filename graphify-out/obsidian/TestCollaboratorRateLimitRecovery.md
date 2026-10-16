@@ -17,7 +17,7 @@ tags:
 - [[After the rate-limit window expires, collaborator messages go through normally.]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RateLimiter_1]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RateLimiter

@@ -20,10 +20,10 @@ tags:
 - [[dot-test_non_2xx_status_passed_through()]] - `method` [EXTRACTED]
 - [[dot-test_secure_stream_kwargs_are_pinned()]] - `method` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
-- [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
+- [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
-- [[FetchOutcome]] - `uses` [INFERRED]
-- [[IntelReportStore]] - `uses` [INFERRED]
+- [[FetchOutcome_1]] - `uses` [INFERRED]
+- [[IntelReportStore_1]] - `uses` [INFERRED]
 - [[test_citation_verifier.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FetchOutcome

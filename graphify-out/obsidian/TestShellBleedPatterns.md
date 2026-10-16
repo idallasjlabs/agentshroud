@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "TestParamSanitization"
+community: "TestToolChainAnalyzer"
 location: "L551"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TestParamSanitization
+  - community/TestToolChainAnalyzer
 ---
 
 # TestShellBleedPatterns
@@ -19,9 +19,9 @@ tags:
 - [[ChainMatch]] - `uses` [INFERRED]
 - [[ParamScanResult]] - `uses` [INFERRED]
 - [[ReversibilityScore]] - `uses` [INFERRED]
-- [[RiskLevel_5]] - `uses` [INFERRED]
+- [[RiskLevel_6]] - `uses` [INFERRED]
 - [[ToolChainAnalyzer]] - `uses` [INFERRED]
 - [[Verify expanded _PARAM_INJECTION_PATTERNS catch piped-interpreter and     heredo]] - `rationale_for` [EXTRACTED]
 - [[test_tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TestParamSanitization
+#graphify/code #graphify/INFERRED #community/TestToolChainAnalyzer

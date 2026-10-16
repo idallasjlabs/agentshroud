@@ -1,20 +1,17 @@
 ---
-source_file: "CHANGELOG.md"
+source_file: "browser-extension/README.md"
 type: "document"
-community: "Added"
-location: "L512"
+community: "Browser Extension"
+location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Added
+  - community/Browser_Extension
 ---
 
 # Tests
 
 ## Connections
-- [[0.9.0 — featv0.9.0-soc-team-collab — Sentinel (2026-03-18)]] - `contains` [EXTRACTED]
-- [[1.2.1 — releasev1.2.1-quality-sweep (2026-06-27)]] - `contains` [EXTRACTED]
-- [[Unreleased — feathttp-connect-proxy + featcredential-isolation]] - `contains` [EXTRACTED]
-- [[Unreleased — featv0.8.0-enforcement-hardening (session 3 — 2026-03-15)]] - `contains` [EXTRACTED]
+- [[Structure_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Added
+#graphify/document #graphify/EXTRACTED #community/Browser_Extension

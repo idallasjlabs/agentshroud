@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "RBACConfig"
+community: "AgentRegistry"
 location: "L191"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/AgentRegistry
 ---
 
 # TestAgentRegistryGroupIdentity
@@ -19,10 +19,10 @@ tags:
 - [[AgentRegistry]] - `uses` [INFERRED]
 - [[AgentRegistry must accept group-{chat_id} agent IDs with chat_type metadata.]] - `rationale_for` [EXTRACTED]
 - [[ContainerConfig_1]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
+- [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_group_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

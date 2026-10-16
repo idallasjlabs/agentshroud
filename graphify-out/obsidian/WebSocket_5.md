@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/soc/websocket.py"
+source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "Enum"
-location: "L29"
+community: "activity_websocket"
+location: "L119"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Enum
+  - graphify/EXTRACTED
+  - community/activity_websocket
 ---
 
 # WebSocket
 
 ## Connections
-- [[dot-__init__()_48]] - `references` [EXTRACTED]
-- [[Severity_2]] - `uses` [INFERRED]
-- [[WSEvent]] - `uses` [INFERRED]
-- [[WSEventType]] - `uses` [INFERRED]
-- [[ws_soc_endpoint()]] - `references` [EXTRACTED]
+- [[approval_websocket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/activity_websocket

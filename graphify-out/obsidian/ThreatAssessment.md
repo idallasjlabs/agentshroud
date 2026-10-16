@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "ThreatAssessment"
+community: "AlertDispatcher"
 location: "L44"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ThreatAssessment
+  - community/AlertDispatcher
 ---
 
 # ThreatAssessment
@@ -35,4 +35,4 @@ tags:
 - [[browser_security.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ThreatAssessment
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

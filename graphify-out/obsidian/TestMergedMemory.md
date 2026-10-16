@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "test_shared_memory.py"
+community: "RBACConfig"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_shared_memorypy
+  - community/RBACConfig
 ---
 
 # TestMergedMemory
@@ -18,10 +18,10 @@ tags:
 - [[dot-test_user_does_not_see_other_group_memory()]] - `method` [EXTRACTED]
 - [[dot-test_user_sees_own_private_memory()]] - `method` [EXTRACTED]
 - [[dot-test_user_sees_their_group_memory()]] - `method` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
+- [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_shared_memory.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_shared_memorypy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

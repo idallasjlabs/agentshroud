@@ -1,22 +1,22 @@
 ---
-source_file: "gateway/tests/test_outbound_filter.py"
+source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "TestFabricatedSecurityNotice"
-location: "L600"
+community: "ToolResultSanitizer"
+location: "L327"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice
+  - community/ToolResultSanitizer
 ---
 
 # TestIntegration
 
 ## Connections
-- [[dot-test_real_world_agent_responses()]] - `method` [EXTRACTED]
-- [[dot-test_with_pii_sanitizer_compatibility()]] - `method` [EXTRACTED]
-- [[InfoCategory]] - `uses` [INFERRED]
-- [[Integration tests with other security components.]] - `rationale_for` [EXTRACTED]
-- [[OutboundInfoFilter]] - `uses` [INFERRED]
-- [[test_outbound_filter.py]] - `contains` [EXTRACTED]
+- [[dot-test_performance_with_large_content()]] - `method` [EXTRACTED]
+- [[dot-test_realistic_web_scraping_result()]] - `method` [EXTRACTED]
+- [[Integration tests for the sanitizer.]] - `rationale_for` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
+- [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
+- [[test_tool_result_sanitizer_enhanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

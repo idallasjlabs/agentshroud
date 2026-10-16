@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "TestKillSwitchVerification"
+community: "KillSwitchMonitor"
 location: "L265"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestKillSwitchVerification
+  - community/KillSwitchMonitor
 ---
 
 # TestKillSwitchVerification
@@ -26,4 +26,4 @@ tags:
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestKillSwitchVerification
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

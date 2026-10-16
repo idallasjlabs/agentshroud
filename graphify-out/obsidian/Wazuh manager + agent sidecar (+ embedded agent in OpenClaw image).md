@@ -1,11 +1,11 @@
 ---
 source_file: "docker/docker-compose.yml"
 type: "concept"
-community: "Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)"
+community: "colima-health-check.sh"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+  - community/colima-health-checksh
 ---
 
 # Wazuh manager + agent sidecar (+ embedded agent in OpenClaw image)
@@ -16,4 +16,4 @@ tags:
 - [[Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)]] - `references` [EXTRACTED]
 - [[dockerdocker-compose.yml]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+#graphify/concept #graphify/EXTRACTED #community/colima-health-checksh

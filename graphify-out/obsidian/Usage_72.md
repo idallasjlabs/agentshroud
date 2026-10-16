@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
+source_file: "skills/README.md"
 type: "document"
-community: "What You Must Do When Invoked"
-location: "L10"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Usage
 
 ## Connections
-- [[graphify_2]] - `contains` [EXTRACTED]
+- [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

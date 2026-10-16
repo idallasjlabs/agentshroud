@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
 community: "test_main_endpoints.py"
-location: "L370"
+location: "L370-L430"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -19,6 +19,7 @@ tags:
 - [[dot-test_proxy_returns_400_on_traversal()]] - `method` [EXTRACTED]
 - [[dot-test_proxy_returns_400_on_traversal_in_query()]] - `method` [EXTRACTED]
 - [[dot-test_safe_path_passes()]] - `method` [EXTRACTED]
+- [[hermes_dashboard_proxy (hermes-dashboard{path} HTTP reverse proxy)]] - `calls` [INFERRED]
 - [[hermes_dashboard_proxy must reject traversal sequences before forwarding.]] - `rationale_for` [EXTRACTED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 

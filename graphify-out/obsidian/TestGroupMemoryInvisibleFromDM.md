@@ -19,9 +19,9 @@ tags:
 - [[AgentRegistry]] - `uses` [INFERRED]
 - [[ContainerConfig_1]] - `uses` [INFERRED]
 - [[Group workspace content must not leak into any user's DM workspace.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
+- [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_group_isolation.py]] - `contains` [EXTRACTED]
 

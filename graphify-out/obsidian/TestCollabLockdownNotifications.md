@@ -21,7 +21,7 @@ tags:
 - [[dot-test_owner_also_notified_on_threshold()]] - `method` [EXTRACTED]
 - [[LockdownLevel]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[Verify _quarantine_blocked_message sends threshold warnings to the collaborator.]] - `rationale_for` [EXTRACTED]
 - [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]
 

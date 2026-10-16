@@ -12,7 +12,7 @@ tags:
 # TestFromAuditChainEntry
 
 ## Connections
-- [[dot-test_conversion_error_path()_2]] - `method` [EXTRACTED]
+- [[dot-test_conversion_error_path()_4]] - `method` [EXTRACTED]
 - [[dot-test_full_context_summary_from_details()]] - `method` [EXTRACTED]
 - [[dot-test_missing_timestamp_uses_now()]] - `method` [EXTRACTED]
 - [[dot-test_summary_falls_back_to_block_reason()]] - `method` [EXTRACTED]
@@ -23,10 +23,10 @@ tags:
 - [[dot-test_user_key_fallback()]] - `method` [EXTRACTED]
 - [[Action_2]] - `uses` [INFERRED]
 - [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[Resource_2]] - `uses` [INFERRED]
-- [[Role_96]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler]] - `uses` [INFERRED]
+- [[Role_91]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestFromAuditChainEntry

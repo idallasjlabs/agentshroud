@@ -12,7 +12,7 @@ tags:
 # TestWebAPI
 
 ## Connections
-- [[dot-client()_7]] - `method` [EXTRACTED]
+- [[dot-client()_6]] - `method` [EXTRACTED]
 - [[dot-test_check_agentshroud_updates()]] - `method` [EXTRACTED]
 - [[dot-test_check_openclaw_updates()]] - `method` [EXTRACTED]
 - [[dot-test_export_config()]] - `method` [EXTRACTED]
@@ -26,7 +26,7 @@ tags:
 - [[dot-test_stop_service()]] - `method` [EXTRACTED]
 - [[dot-test_update_history()]] - `method` [EXTRACTED]
 - [[AppleContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo]] - `uses` [INFERRED]
+- [[ContainerInfo_3]] - `uses` [INFERRED]
 - [[DockerEngine]] - `uses` [INFERRED]
 - [[PodmanEngine]] - `uses` [INFERRED]
 - [[ServiceDef]] - `uses` [INFERRED]

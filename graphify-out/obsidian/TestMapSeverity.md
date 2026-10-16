@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Action"
+community: "test_soc_realtime_coverage.py"
 location: "L269"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Action
+  - community/test_soc_realtime_coveragepy
 ---
 
 # TestMapSeverity
@@ -16,10 +16,10 @@ tags:
 - [[dot-test_string_mapping()]] - `method` [EXTRACTED]
 - [[Action_2]] - `uses` [INFERRED]
 - [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[Resource_2]] - `uses` [INFERRED]
-- [[Role_96]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler]] - `uses` [INFERRED]
+- [[Role_91]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Action
+#graphify/code #graphify/INFERRED #community/test_soc_realtime_coveragepy

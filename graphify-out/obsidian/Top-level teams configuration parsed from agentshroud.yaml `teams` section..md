@@ -12,6 +12,6 @@ tags:
 # Top-level teams configuration parsed from agentshroud.yaml `teams:` section.
 
 ## Connections
-- [[TeamsConfig]] - `rationale_for` [EXTRACTED]
+- [[TeamsConfig_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/RBACConfig

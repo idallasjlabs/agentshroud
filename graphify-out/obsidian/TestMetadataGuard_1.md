@@ -12,7 +12,7 @@ tags:
 # TestMetadataGuard
 
 ## Connections
-- [[dot-setup_method()_25]] - `method` [EXTRACTED]
+- [[dot-setup_method()_31]] - `method` [EXTRACTED]
 - [[dot-test_all_unicode_control_chars_stripped()]] - `method` [EXTRACTED]
 - [[dot-test_check_for_exif_detects_magic_bytes()]] - `method` [EXTRACTED]
 - [[dot-test_check_oversized_headers_flags_large_headers()]] - `method` [EXTRACTED]

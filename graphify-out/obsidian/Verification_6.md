@@ -1,18 +1,17 @@
 ---
-source_file: "docker/DOCKER-VPN-NETWORKING.md"
+source_file: "docs/planning/redteam/02-human-in-the-loop.md"
 type: "document"
-community: "Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility"
-location: "L93"
+community: "Remediation"
+location: "L215"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility
+  - community/Remediation
 ---
 
 # Verification
 
 ## Connections
-- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - `contains` [EXTRACTED]
-- [[With VPN connected]] - `contains` [EXTRACTED]
+- [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility
+#graphify/document #graphify/EXTRACTED #community/Remediation

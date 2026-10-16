@@ -12,10 +12,10 @@ tags:
 # TestConfigRoundTrip
 
 ## Connections
-- [[dot-client()_3]] - `method` [EXTRACTED]
+- [[dot-client()_2]] - `method` [EXTRACTED]
 - [[dot-test_put_then_get()]] - `method` [EXTRACTED]
 - [[AppleContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo]] - `uses` [INFERRED]
+- [[ContainerInfo_3]] - `uses` [INFERRED]
 - [[DockerEngine]] - `uses` [INFERRED]
 - [[PodmanEngine]] - `uses` [INFERRED]
 - [[ServiceDef]] - `uses` [INFERRED]

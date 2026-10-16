@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "CredentialValidator"
+community: "KeyRotationManager"
 location: "L233"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/CredentialValidator
+  - community/KeyRotationManager
 ---
 
 # TestCheckAndRotateDisabled
@@ -20,4 +20,4 @@ tags:
 - [[RotationStatus]] - `uses` [INFERRED]
 - [[test_key_rotation_internals.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/CredentialValidator
+#graphify/code #graphify/INFERRED #community/KeyRotationManager

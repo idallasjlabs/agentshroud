@@ -17,13 +17,13 @@ tags:
 - [[dot-test_tool_result_config_default_meets_floor()]] - `method` [EXTRACTED]
 - [[0.9 PII Confidence Floor (CLAUDE.md §7.8)]] - `rationale_for` [EXTRACTED]
 - [[CLAUDE.md §7.8 mandates a 0.9 minimum PII confidence — guard the floor.      The]] - `rationale_for` [EXTRACTED]
-- [[GatewayConfig_3]] - `uses` [INFERRED]
+- [[GatewayConfig_4]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
 - [[RedactionDetail_1]] - `uses` [INFERRED]
 - [[RedactionResult_3]] - `uses` [INFERRED]
 - [[ToolResultPIIConfig]] - `uses` [INFERRED]
-- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
+- [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[test_tool_result_pii.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/ToolResultSanitizer

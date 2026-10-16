@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "AgentRegistry"
+community: "AlertDispatcher"
 location: "L923"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/AlertDispatcher
 ---
 
 # Verify drift is detected even with rapid changes.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_simultaneous_baseline_and_config_change()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

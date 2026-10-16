@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "SSHHostConfig"
+community: "ApprovalQueueConfig"
 location: "L210"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHHostConfig
+  - community/ApprovalQueueConfig
 ---
 
 # TestApprovalQueuePIISanitization
@@ -16,7 +16,7 @@ tags:
 - [[Approval queue details must be PII-sanitized before storage]] - `rationale_for` [EXTRACTED]
 - [[SSHConfig_2]] - `uses` [INFERRED]
 - [[SSHHostConfig]] - `uses` [INFERRED]
-- [[SSHProxy]] - `uses` [INFERRED]
+- [[SSHProxy_1]] - `uses` [INFERRED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHHostConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

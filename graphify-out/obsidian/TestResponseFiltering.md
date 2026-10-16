@@ -22,10 +22,10 @@ tags:
 - [[dot-test_owner_response_not_filtered()]] - `method` [EXTRACTED]
 - [[PrivacyPolicy]] - `uses` [INFERRED]
 - [[PrivacyPolicyEnforcer]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_96]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[Role_91]] - `uses` [INFERRED]
 - [[ServicePrivacy]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
+- [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[test_privacy_policy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

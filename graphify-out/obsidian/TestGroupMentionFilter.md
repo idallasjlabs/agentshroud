@@ -12,7 +12,7 @@ tags:
 # TestGroupMentionFilter
 
 ## Connections
-- [[dot-_make_proxy()]] - `method` [EXTRACTED]
+- [[dot-_make_proxy()_3]] - `method` [EXTRACTED]
 - [[dot-test_filter_disabled_does_not_set_eligibility()]] - `method` [EXTRACTED]
 - [[dot-test_group_command_with_bot_suffix_eligible()]] - `method` [EXTRACTED]
 - [[dot-test_group_message_with_mention_forwarded_and_eligible()]] - `method` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[Integration tests for group at-mention filtering.      The bot reads ALL group m]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RateLimiter_1]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_wrap_response

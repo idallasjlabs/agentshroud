@@ -12,7 +12,7 @@ tags:
 # TestProgressiveLockdownUX
 
 ## Connections
-- [[dot-_make_proxy()_2]] - `method` [EXTRACTED]
+- [[dot-_make_proxy()_5]] - `method` [EXTRACTED]
 - [[dot-test_collab_gets_alert_notice_at_3_blocks()]] - `method` [EXTRACTED]
 - [[dot-test_collab_gets_escalation_notice_at_5_blocks()]] - `method` [EXTRACTED]
 - [[dot-test_collab_gets_suspension_notice_at_10_blocks()]] - `method` [EXTRACTED]
@@ -37,7 +37,7 @@ tags:
 - [[dot-test_unlock_unknown_user_returns_no_state_notice()]] - `method` [EXTRACTED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RateLimiter_1]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[Tests for lockdown UX unlock fix, collaborator notifications, locked, immunit]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 

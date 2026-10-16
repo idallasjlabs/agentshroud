@@ -19,7 +19,7 @@ tags:
 - [[dot-test_paused_user_reports_paused_true()]] - `method` [EXTRACTED]
 - [[ContributorManager]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[Role_96]] - `uses` [INFERRED]
+- [[Role_91]] - `uses` [INFERRED]
 - [[paused feature ContributorRecord.paused reflects the persisted paused set.]] - `rationale_for` [EXTRACTED]
 - [[test_soc_contributors.py]] - `contains` [EXTRACTED]
 

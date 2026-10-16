@@ -16,6 +16,6 @@ tags:
 - [[Phase 3A3B Implementation Verification Results]] - `contains` [EXTRACTED]
 - [[SECURITY-IMPLEMENTATION-VERIFICATION]] - `conceptually_related_to` [AMBIGUOUS]
 - [[SECURITY_VALUE_PROPOSITION]] - `conceptually_related_to` [INFERRED]
-- [[verify-security.sh_1]] - `references` [EXTRACTED]
+- [[verify-security.sh]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Kill_Switch

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "TestMiddlewareSessionEnforcement"
+community: "UserSessionManager"
 location: "L491"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMiddlewareSessionEnforcement
+  - community/UserSessionManager
 ---
 
 # TestSessionIsolationEndToEnd
@@ -18,9 +18,9 @@ tags:
 - [[dot-test_session_persistence()]] - `method` [EXTRACTED]
 - [[End-to-end integration tests for session isolation.]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[Role_96]] - `uses` [INFERRED]
+- [[Role_91]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[test_session_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMiddlewareSessionEnforcement
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

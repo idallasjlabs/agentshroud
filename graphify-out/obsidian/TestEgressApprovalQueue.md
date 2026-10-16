@@ -37,7 +37,7 @@ tags:
 - [[ApprovalResult]] - `uses` [INFERRED]
 - [[EgressApprovalQueue]] - `uses` [INFERRED]
 - [[EgressRequest_1]] - `uses` [INFERRED]
-- [[RiskLevel_6]] - `uses` [INFERRED]
+- [[RiskLevel_5]] - `uses` [INFERRED]
 - [[Test suite for EgressApprovalQueue functionality.]] - `rationale_for` [EXTRACTED]
 - [[TestEnforceMode]] - `semantically_similar_to` [INFERRED]
 - [[test_egress_approval.py]] - `contains` [EXTRACTED]

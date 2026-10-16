@@ -12,13 +12,13 @@ tags:
 # TestInstallerAPI
 
 ## Connections
-- [[dot-client()_2]] - `method` [EXTRACTED]
+- [[dot-client()_1]] - `method` [EXTRACTED]
 - [[dot-test_install()]] - `method` [EXTRACTED]
 - [[dot-test_installer_page()]] - `method` [EXTRACTED]
 - [[dot-test_prerequisites()]] - `method` [EXTRACTED]
 - [[dot-test_runtimes()]] - `method` [EXTRACTED]
 - [[AppleContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo]] - `uses` [INFERRED]
+- [[ContainerInfo_3]] - `uses` [INFERRED]
 - [[DockerEngine]] - `uses` [INFERRED]
 - [[PodmanEngine]] - `uses` [INFERRED]
 - [[ServiceDef]] - `uses` [INFERRED]

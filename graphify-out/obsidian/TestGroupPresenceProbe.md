@@ -12,7 +12,7 @@ tags:
 # TestGroupPresenceProbe
 
 ## Connections
-- [[dot-_make_proxy()_5]] - `method` [EXTRACTED]
+- [[dot-_make_proxy()_2]] - `method` [EXTRACTED]
 - [[dot-test_cooldown_suppresses_second_ack()]] - `method` [EXTRACTED]
 - [[dot-test_dm_hello_does_not_trigger_probe()]] - `method` [EXTRACTED]
 - [[dot-test_hello_in_group_sends_hermes_ack()]] - `method` [EXTRACTED]
@@ -30,7 +30,7 @@ tags:
 - [[Group presence probe bare trigger phrases make each bot reply with a short live]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RateLimiter_1]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_wrap_response

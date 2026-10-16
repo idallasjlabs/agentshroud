@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "rationale"
-community: "CollaboratorActivityTracker"
+community: "test_collaborator_tracker.py"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CollaboratorActivityTracker
+  - community/test_collaborator_trackerpy
 ---
 
 # Tracks collaborator messages at the gateway level.      Records every inbound me
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CollaboratorActivityTracker_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CollaboratorActivityTracker
+#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy

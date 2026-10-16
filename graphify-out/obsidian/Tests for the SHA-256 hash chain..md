@@ -12,6 +12,6 @@ tags:
 # Tests for the SHA-256 hash chain.
 
 ## Connections
-- [[TestAuditChain_1]] - `rationale_for` [EXTRACTED]
+- [[TestAuditChain]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AuditChain

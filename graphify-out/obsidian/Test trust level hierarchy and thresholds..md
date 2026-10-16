@@ -12,6 +12,6 @@ tags:
 # Test trust level hierarchy and thresholds.
 
 ## Connections
-- [[TestTrustLevels_1]] - `rationale_for` [EXTRACTED]
+- [[TestTrustLevels]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TrustConfig

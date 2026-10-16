@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Network Topology.md"
 type: "document"
-community: "Network Topology"
+community: "`SecurityPipeline`"
 location: "L83"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Network_Topology
+  - community/SecurityPipeline
 ---
 
 # Traffic Routing
 
 ## Connections
-- [[Network Topology_3]] - `contains` [EXTRACTED]
+- [[Network Topology_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Network_Topology
+#graphify/document #graphify/EXTRACTED #community/SecurityPipeline

@@ -1,8 +1,8 @@
 ---
-source_file: "docs/planning/redteam/02-human-in-the-loop.md"
+source_file: "docs/planning/redteam/05-credential-isolation.md"
 type: "document"
 community: "Remediation"
-location: "L215"
+location: "L285"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # Verification
 
 ## Connections
-- [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - `contains` [EXTRACTED]
+- [[Remove secret mounts from agent container and implement transparent credential injection]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Remediation

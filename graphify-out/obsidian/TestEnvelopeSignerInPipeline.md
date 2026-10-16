@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "EnvelopeSigner"
+community: "AuditChain"
 location: "L502"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EnvelopeSigner
+  - community/AuditChain
 ---
 
 # TestEnvelopeSignerInPipeline
@@ -32,7 +32,7 @@ tags:
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EnvelopeSigner
+#graphify/code #graphify/INFERRED #community/AuditChain

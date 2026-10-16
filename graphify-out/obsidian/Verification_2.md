@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/PREREQUISITES.md"
+source_file: "docs/setup/IMESSAGE_FIX.md"
 type: "document"
-community: "AgentShroud Prerequisites"
-location: "L560"
+community: "iMessage Integration Fix - Using imsg + imessage-exporter"
+location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Prerequisites
+  - community/iMessage_Integration_Fix_-_Using_imsg__imessage-exporter
 ---
 
 # Verification
 
 ## Connections
-- [[✅ Setup Checklist]] - `contains` [EXTRACTED]
+- [[iMessage Integration Fix - Using imsg + imessage-exporter]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites
+#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Fix_-_Using_imsg__imessage-exporter

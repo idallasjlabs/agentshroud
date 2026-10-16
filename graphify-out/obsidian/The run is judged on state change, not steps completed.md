@@ -1,12 +1,12 @@
 ---
 source_file: "prompts/sunday-upgrade.md"
 type: "rationale"
-community: "The run is judged on state change, not steps completed"
+community: "docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)"
 location: "9"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/The_run_is_judged_on_state_change_not_steps_completed
+  - community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
 ---
 
 # The run is judged on state change, not steps completed
@@ -18,6 +18,5 @@ tags:
 - [[Soak, not just boot check-soak-status.sh must report SOAKED on dev OpenClaw]] - `semantically_similar_to` [INFERRED]
 - [[Sunday upgrade mission every component in dev and prod to latest stable, resolve every finding, dev first]] - `rationale_for` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `references` [EXTRACTED]
-- [[sunday-upgrade-apply.sh no-op gate fixes (Hermes feeds UPGRADE_AVAILABLE, unknown != current, merge-base 'before' pins)]] - `implements` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/The_run_is_judged_on_state_change_not_steps_completed
+#graphify/rationale #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes

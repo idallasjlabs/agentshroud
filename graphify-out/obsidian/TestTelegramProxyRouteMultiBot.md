@@ -19,7 +19,7 @@ tags:
 - [[dot-test_valid_openclaw_token_accepted()]] - `method` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[Integration tests for the telegram-api{path} route with multi-bot registry.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_multibot.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/BotConfig

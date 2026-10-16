@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "test_observatory_mode.py"
 location: "L156"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/KillSwitchMonitor
+  - community/test_observatory_modepy
 ---
 
 # TestCriticalLogging
@@ -20,4 +20,4 @@ tags:
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/KillSwitchMonitor
+#graphify/code #graphify/INFERRED #community/test_observatory_modepy

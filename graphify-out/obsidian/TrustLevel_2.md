@@ -18,7 +18,7 @@ tags:
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustLevel]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
 - [[_set_state()]] - `references` [EXTRACTED]
 

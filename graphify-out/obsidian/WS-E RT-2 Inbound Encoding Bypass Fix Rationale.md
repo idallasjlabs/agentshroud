@@ -12,7 +12,7 @@ tags:
 
 ## Connections
 - [[EncodingDetector]] - `rationale_for` [EXTRACTED]
-- [[PromptGuard]] - `rationale_for` [EXTRACTED]
+- [[PromptGuard_1]] - `rationale_for` [EXTRACTED]
 - [[SecurityPipeline_2]] - `rationale_for` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `rationale_for` [EXTRACTED]
 

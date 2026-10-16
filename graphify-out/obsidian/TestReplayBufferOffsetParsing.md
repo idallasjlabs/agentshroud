@@ -19,7 +19,7 @@ tags:
 - [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[Verify URL-encoded and JSON getUpdates bodies both trigger mark_delivered correc]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 

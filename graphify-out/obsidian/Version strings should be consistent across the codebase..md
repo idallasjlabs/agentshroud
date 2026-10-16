@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "test_security_fixes.py"
+community: "ApprovalQueueConfig"
 location: "L380"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_security_fixespy
+  - community/ApprovalQueueConfig
 ---
 
 # Version strings should be consistent across the codebase.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestVersionConsistency]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_security_fixespy
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

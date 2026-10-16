@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/web/api.py"
 type: "code"
-community: ".connect"
-location: "L350"
+community: "api.py"
+location: "L882"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/connect
+  - graphify/INFERRED
+  - community/apipy
 ---
 
 # WebSocket
 
 ## Connections
-- [[dot-connect()]] - `references` [EXTRACTED]
-- [[dot-disconnect()]] - `references` [EXTRACTED]
+- [[CitationVerifier]] - `uses` [INFERRED]
+- [[DraftEntry]] - `uses` [INFERRED]
+- [[IntelReportStore_1]] - `uses` [INFERRED]
+- [[ws_logs()]] - `references` [EXTRACTED]
+- [[ws_updates()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/connect
+#graphify/code #graphify/INFERRED #community/apipy

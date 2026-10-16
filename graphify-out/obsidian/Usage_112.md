@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-vulcan/README.md"
+source_file: ".agents/skills/i-tw/README.md"
 type: "document"
 community: ".agents/skills/i-cr/SKILL.md"
 location: "L10"
@@ -12,6 +12,6 @@ tags:
 # Usage
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_1]] - `contains` [EXTRACTED]
+- [[Technical Writer (TW)_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

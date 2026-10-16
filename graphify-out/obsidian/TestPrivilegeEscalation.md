@@ -36,11 +36,11 @@ tags:
 - [[MetadataGuard]] - `uses` [INFERRED]
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[PromptGuard_1]] - `uses` [INFERRED]
 - [[Session]] - `uses` [INFERRED]
 - [[SubagentEventType]] - `uses` [INFERRED]
 - [[Test trust boundaries and privilege escalation prevention.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/AlertDispatcher

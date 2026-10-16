@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-gg/README.md"
+source_file: ".agents/skills/i-daedalus/README.md"
 type: "document"
 community: ".agents/skills/i-cr/SKILL.md"
 location: "L10"
@@ -12,6 +12,6 @@ tags:
 # Usage
 
 ## Connections
-- [[Git Workflow Guardian (GIT-GUARD)_2]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

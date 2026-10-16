@@ -12,7 +12,7 @@ tags:
 # TestSkillsReloadEndpoint
 
 ## Connections
-- [[dot-client()_5]] - `method` [EXTRACTED]
+- [[dot-client()_7]] - `method` [EXTRACTED]
 - [[dot-test_reload_requires_auth()]] - `method` [EXTRACTED]
 - [[dot-test_reload_returns_200_with_skills_list()]] - `method` [EXTRACTED]
 - [[dot-test_reload_returns_500_on_source_missing()]] - `method` [EXTRACTED]

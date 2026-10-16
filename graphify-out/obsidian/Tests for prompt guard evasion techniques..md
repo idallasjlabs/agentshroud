@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "AgentRegistry"
+community: "AlertDispatcher"
 location: "L798"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/AlertDispatcher
 ---
 
 # Tests for prompt guard evasion techniques.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPromptGuardEvasion]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[dot-register_trust_manager()]] - `references` [EXTRACTED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

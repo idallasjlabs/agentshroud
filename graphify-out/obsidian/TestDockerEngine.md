@@ -12,7 +12,7 @@ tags:
 # TestDockerEngine
 
 ## Connections
-- [[dot-setup_method()_26]] - `method` [EXTRACTED]
+- [[dot-setup_method()_32]] - `method` [EXTRACTED]
 - [[dot-test_build()]] - `method` [EXTRACTED]
 - [[dot-test_build_with_args()]] - `method` [EXTRACTED]
 - [[dot-test_compose_down()]] - `method` [EXTRACTED]
@@ -36,7 +36,7 @@ tags:
 - [[dot-test_stop()]] - `method` [EXTRACTED]
 - [[dot-test_volume_create()]] - `method` [EXTRACTED]
 - [[AppleContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo]] - `uses` [INFERRED]
+- [[ContainerInfo_3]] - `uses` [INFERRED]
 - [[DockerEngine]] - `uses` [INFERRED]
 - [[PodmanEngine]] - `uses` [INFERRED]
 - [[ServiceDef]] - `uses` [INFERRED]

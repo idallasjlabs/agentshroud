@@ -30,9 +30,9 @@ tags:
 - [[dot-test_verify_chain_empty_store_is_valid()]] - `method` [EXTRACTED]
 - [[dot-test_verify_chain_fails_for_tampered_entry()]] - `method` [EXTRACTED]
 - [[dot-test_verify_chain_passes_for_intact_store()]] - `method` [EXTRACTED]
-- [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
-- [[CompetitorEntry_1]] - `uses` [INFERRED]
-- [[IntelReportStore]] - `uses` [INFERRED]
+- [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
+- [[CompetitorEntry]] - `uses` [INFERRED]
+- [[IntelReportStore_1]] - `uses` [INFERRED]
 - [[ReportIntegrityError]] - `uses` [INFERRED]
 - [[test_intel_pipeline.py]] - `contains` [EXTRACTED]
 

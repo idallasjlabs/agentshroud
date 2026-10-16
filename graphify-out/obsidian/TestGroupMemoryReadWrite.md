@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "test_shared_memory.py"
+community: "RBACConfig"
 location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_shared_memorypy
+  - community/RBACConfig
 ---
 
 # TestGroupMemoryReadWrite
@@ -15,10 +15,10 @@ tags:
 - [[dot-test_append_to_group_memory()]] - `method` [EXTRACTED]
 - [[dot-test_get_group_memory_empty_initially()]] - `method` [EXTRACTED]
 - [[dot-test_multiple_appends_accumulate()]] - `method` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
+- [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_shared_memory.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_shared_memorypy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

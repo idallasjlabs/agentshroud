@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-test_filters_egress_log_by_bot_id()]] - `method` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_96]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[Role_91]] - `uses` [INFERRED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_botspy

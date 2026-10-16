@@ -34,7 +34,7 @@ tags:
 - [[IncidentRecord]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustDecayPolicy]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[hermes_tm()]] - `references` [EXTRACTED]
 - [[openclaw_tm()]] - `references` [EXTRACTED]
 

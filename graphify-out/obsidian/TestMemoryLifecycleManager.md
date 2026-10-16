@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "lifespan.py"
+community: "MiddlewareManager"
 location: "L189"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/MiddlewareManager
 ---
 
 # TestMemoryLifecycleManager
 
 ## Connections
-- [[dot-setup_method()_9]] - `method` [EXTRACTED]
+- [[dot-setup_method()_4]] - `method` [EXTRACTED]
 - [[dot-teardown_method()_3]] - `method` [EXTRACTED]
 - [[dot-test_content_sanitization()]] - `method` [EXTRACTED]
 - [[dot-test_daily_notes_retention()]] - `method` [EXTRACTED]
@@ -33,4 +33,4 @@ tags:
 - [[Test memory lifecycle management.]] - `rationale_for` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

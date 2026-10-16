@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "Severity"
+community: "Path"
 location: "L358"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Severity
+  - community/Path
 ---
 
 # TestReloadIntegration
 
 ## Connections
-- [[dot-client()_1]] - `method` [EXTRACTED]
+- [[dot-client()_4]] - `method` [EXTRACTED]
 - [[dot-test_reload_allows_clean_skill()]] - `method` [EXTRACTED]
 - [[dot-test_reload_blocks_dangerous_skill()]] - `method` [EXTRACTED]
 - [[dot-test_reload_fails_closed_on_unreadable_file()]] - `method` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[SkillScanError]] - `uses` [INFERRED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Severity
+#graphify/code #graphify/EXTRACTED #community/Path

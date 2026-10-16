@@ -12,10 +12,10 @@ tags:
 # TestManagementPage
 
 ## Connections
-- [[dot-client()_4]] - `method` [EXTRACTED]
+- [[dot-client()_3]] - `method` [EXTRACTED]
 - [[dot-test_dashboard_page()]] - `method` [EXTRACTED]
 - [[AppleContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo]] - `uses` [INFERRED]
+- [[ContainerInfo_3]] - `uses` [INFERRED]
 - [[DockerEngine]] - `uses` [INFERRED]
 - [[PodmanEngine]] - `uses` [INFERRED]
 - [[ServiceDef]] - `uses` [INFERRED]

@@ -12,7 +12,7 @@ tags:
 # TestWazuhSummary
 
 ## Connections
-- [[dot-test_summary_clean()]] - `method` [EXTRACTED]
+- [[dot-test_summary_clean()_3]] - `method` [EXTRACTED]
 - [[dot-test_summary_with_rootkit()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]

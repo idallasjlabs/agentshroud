@@ -18,10 +18,10 @@ tags:
 - [[dot-test_workspace_ids_are_distinct_per_group()]] - `method` [EXTRACTED]
 - [[GroupAccessDenied]] - `uses` [INFERRED]
 - [[GroupWorkspaceManager]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TeamsConfig_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 

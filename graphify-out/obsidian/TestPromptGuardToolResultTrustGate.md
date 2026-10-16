@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "OutboundInfoFilter"
+community: "AuditChain"
 location: "L651"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/OutboundInfoFilter
+  - community/AuditChain
 ---
 
 # TestPromptGuardToolResultTrustGate
@@ -32,7 +32,7 @@ tags:
 - [[Step 1.76 PromptGuard tool-result scan must respect user_trust_level.      CVE-2]] - `rationale_for` [EXTRACTED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/OutboundInfoFilter
+#graphify/code #graphify/INFERRED #community/AuditChain

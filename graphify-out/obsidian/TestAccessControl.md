@@ -1,25 +1,19 @@
 ---
-source_file: "gateway/tests/test_session_manager.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "UserSessionManager"
-location: "L65"
+community: "test_scanner_integration_coverage.py"
+location: "L725"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/test_scanner_integration_coveragepy
 ---
 
 # TestAccessControl
 
 ## Connections
-- [[dot-test_non_owner_cannot_view_other_sessions()]] - `method` [EXTRACTED]
-- [[dot-test_non_owner_empty_when_no_session()]] - `method` [EXTRACTED]
-- [[dot-test_owner_can_access_any_session()]] - `method` [EXTRACTED]
-- [[dot-test_owner_can_view_all_sessions()]] - `method` [EXTRACTED]
-- [[dot-test_user_can_access_own_session()]] - `method` [EXTRACTED]
-- [[dot-test_user_cannot_access_other_session()]] - `method` [EXTRACTED]
-- [[UserSession]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
-- [[test_session_manager.py]] - `contains` [EXTRACTED]
+- [[dot-test_full_stack_with_review_evidence()]] - `method` [EXTRACTED]
+- [[dot-test_missing_rbac_zero()]] - `method` [EXTRACTED]
+- [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integration_coveragepy

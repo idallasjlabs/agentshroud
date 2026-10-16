@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "GroupRoleResolver"
+community: "RBACConfig"
 location: "L145"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/GroupRoleResolver
+  - community/RBACConfig
 ---
 
 # ToolRateLimit
@@ -15,8 +15,8 @@ tags:
 - [[GroupRole]] - `uses` [INFERRED]
 - [[GroupRoleResolver]] - `uses` [INFERRED]
 - [[Per-tool call rate limit configuration.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_96]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[Role_91]] - `uses` [INFERRED]
 - [[tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/GroupRoleResolver
+#graphify/code #graphify/INFERRED #community/RBACConfig

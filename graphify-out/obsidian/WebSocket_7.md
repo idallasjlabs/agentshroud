@@ -1,21 +1,25 @@
 ---
-source_file: "gateway/web/api.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "api.py"
-location: "L882"
+community: "ApprovalQueueConfig"
+location: "L498"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/apipy
+  - community/ApprovalQueueConfig
 ---
 
 # WebSocket
 
 ## Connections
-- [[CitationVerifier]] - `uses` [INFERRED]
-- [[DraftEntry]] - `uses` [INFERRED]
-- [[IntelReportStore]] - `uses` [INFERRED]
-- [[ws_logs()]] - `references` [EXTRACTED]
-- [[ws_updates()]] - `references` [EXTRACTED]
+- [[dot-connect()_2]] - `references` [EXTRACTED]
+- [[dot-disconnect()_1]] - `references` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_4]] - `uses` [INFERRED]
+- [[ApprovalRequest_4]] - `uses` [INFERRED]
+- [[ApprovalStore]] - `uses` [INFERRED]
+- [[MFAGuard_1]] - `uses` [INFERRED]
+- [[ToolRiskConfig]] - `uses` [INFERRED]
+- [[ToolRiskPolicy]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/apipy
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig

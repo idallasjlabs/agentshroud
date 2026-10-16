@@ -13,14 +13,14 @@ tags:
 
 ## Connections
 - [[dot-test_config_with_tool_result_pii()]] - `method` [EXTRACTED]
-- [[GatewayConfig_3]] - `uses` [INFERRED]
+- [[GatewayConfig_4]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
 - [[RedactionDetail_1]] - `uses` [INFERRED]
 - [[RedactionResult_3]] - `uses` [INFERRED]
 - [[Test configuration loading and validation]] - `rationale_for` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `uses` [INFERRED]
-- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
+- [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[test_tool_result_pii.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/ToolResultSanitizer

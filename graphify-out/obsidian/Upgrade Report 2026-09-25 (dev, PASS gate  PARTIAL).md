@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-25.md"
 type: "document"
-community: "Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)"
+community: "colima-health-check.sh"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+  - community/colima-health-checksh
 ---
 
 # Upgrade Report 2026-09-25 (dev, PASS gate / PARTIAL)
@@ -24,4 +24,4 @@ tags:
 - [[promptssunday-upgrade.md (Sunday mission procedure)]] - `references` [EXTRACTED]
 - [[sunday-scan.sh (Trivy scan gate library)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+#graphify/document #graphify/EXTRACTED #community/colima-health-checksh

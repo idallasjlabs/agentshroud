@@ -12,10 +12,10 @@ tags:
 # WebhookReceiver
 
 ## Connections
-- [[dot-__init__()_34]] - `method` [EXTRACTED]
+- [[dot-__init__()_64]] - `method` [EXTRACTED]
 - [[dot-_can_create_directory()]] - `method` [EXTRACTED]
 - [[dot-_extract_message()]] - `method` [EXTRACTED]
-- [[dot-_extract_user_id()]] - `method` [EXTRACTED]
+- [[dot-_extract_user_id()_1]] - `method` [EXTRACTED]
 - [[dot-_extract_username()]] - `method` [EXTRACTED]
 - [[dot-_prepare_session_payload()]] - `method` [EXTRACTED]
 - [[dot-_replace_message()]] - `method` [EXTRACTED]
@@ -26,7 +26,7 @@ tags:
 - [[dot-test_webhook_user_id_extraction()]] - `calls` [EXTRACTED]
 - [[dot-validate_signature()]] - `method` [EXTRACTED]
 - [[Collaborator Tracker Tests]] - `references` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
 - [[Receives webhooks and routes them through the security pipeline.      In product]] - `rationale_for` [EXTRACTED]
 - [[SecurityPipeline_2]] - `calls` [EXTRACTED]
 - [[SlackAPIProxy_2]] - `uses` [INFERRED]

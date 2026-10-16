@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/bot_config.py"
 type: "rationale"
-community: "BotConfig"
+community: "ApprovalQueueConfig"
 location: "L82"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/ApprovalQueueConfig
 ---
 
 # The real docker container name for this bot — see container_name field.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-resolved_container_name()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/BotConfig
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

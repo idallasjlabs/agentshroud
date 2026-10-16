@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "AgentRegistry"
+community: "TrustConfig"
 location: "L370"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/TrustConfig
 ---
 
 # Verify you can't jump from UNTRUSTED to FULL in one step.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_trust_escalation_attack()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry
+#graphify/rationale #graphify/EXTRACTED #community/TrustConfig

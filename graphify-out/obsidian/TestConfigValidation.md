@@ -53,7 +53,7 @@ tags:
 - [[dot-test_switch_model_script_uses_current_target_syntax()]] - `method` [EXTRACTED]
 - [[dot-test_valid_forward_request()]] - `method` [EXTRACTED]
 - [[dot-test_valid_router_url_accepted()]] - `method` [EXTRACTED]
-- [[ForwardRequest_3]] - `uses` [INFERRED]
+- [[ForwardRequest_1]] - `uses` [INFERRED]
 - [[GatewayConfig validation behavior.]] - `rationale_for` [EXTRACTED]
 - [[RouterConfig_1]] - `uses` [INFERRED]
 - [[test_config_validation.py]] - `contains` [EXTRACTED]

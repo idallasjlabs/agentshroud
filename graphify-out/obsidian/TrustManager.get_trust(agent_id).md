@@ -12,6 +12,6 @@ tags:
 # TrustManager.get_trust(agent_id)
 
 ## Connections
-- [[Function Details_1]] - `contains` [EXTRACTED]
+- [[Function Details]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/TrustManager

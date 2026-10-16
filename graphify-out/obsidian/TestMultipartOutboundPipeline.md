@@ -25,7 +25,7 @@ tags:
 - [[Multipart captions must get the full pipeline scan, not just the XML filter.]] - `rationale_for` [EXTRACTED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestMultipartOutboundPipeline

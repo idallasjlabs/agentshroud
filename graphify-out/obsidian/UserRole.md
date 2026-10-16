@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Enum"
+community: "test_soc_realtime_coverage.py"
 location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/test_soc_realtime_coveragepy
 ---
 
 # UserRole
 
 ## Connections
 - [[ContributorManager]] - `uses` [INFERRED]
-- [[ContributorRecord]] - `uses` [INFERRED]
-- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[ContributorRecord_1]] - `uses` [INFERRED]
+- [[Enum_1]] - `inherits` [EXTRACTED]
 - [[UserRole_1]] - `uses` [INFERRED]
 - [[contributors.py]] - `imports` [EXTRACTED]
 - [[socmodels.py]] - `contains` [EXTRACTED]
-- [[str_2]] - `inherits` [EXTRACTED]
+- [[str_1]] - `inherits` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
