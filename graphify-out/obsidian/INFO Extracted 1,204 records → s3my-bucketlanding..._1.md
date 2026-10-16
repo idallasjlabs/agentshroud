@@ -1,19 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
+source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "_make_tm()"
+community: ".agents/skills/i-tw/SKILL.md"
 location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_make_tm
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # [INFO] Extracted 1,204 records → s3://my-bucket/landing/...
 
 ## Connections
+- [[dot-agentsskillsi-twSKILL]] - `contains` [EXTRACTED]
 - [[Runbook — Operational Decision Tree_1]] - `contains` [EXTRACTED]
-- [[SKILL_79]] - `contains` [EXTRACTED]
-- [[SKILL_122]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_make_tm
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

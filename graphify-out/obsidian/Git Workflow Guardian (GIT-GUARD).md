@@ -1,21 +1,21 @@
 ---
-source_file: ".agents/skills/i-gg/README.md"
+source_file: "docker/config/hermes/skills/i-gg/README.md"
 type: "document"
-community: "DNSFilterConfig"
+community: "Git Workflow Guardian (GIT-GUARD)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/Git_Workflow_Guardian_GIT-GUARD
 ---
 
 # Git Workflow Guardian (GIT-GUARD)
 
 ## Connections
-- [[Purpose_11]] - `contains` [EXTRACTED]
-- [[README_11]] - `contains` [EXTRACTED]
-- [[Related Skills_11]] - `contains` [EXTRACTED]
-- [[SKILL_15]] - `contains` [EXTRACTED]
-- [[Usage_13]] - `contains` [EXTRACTED]
+- [[Purpose_23]] - `contains` [EXTRACTED]
+- [[Related Skills_16]] - `contains` [EXTRACTED]
+- [[Usage_19]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[hermesskillsi-ggREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/Git_Workflow_Guardian_GIT-GUARD

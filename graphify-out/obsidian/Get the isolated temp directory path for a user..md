@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "TrustManager"
+community: "TestPathIsolationManager"
 location: "L105"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/TestPathIsolationManager
 ---
 
 # Get the isolated temp directory path for a user.
 
 ## Connections
-- [[._get_user_temp_dir()]] - `rationale_for` [EXTRACTED]
+- [[dot-_get_user_temp_dir()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager

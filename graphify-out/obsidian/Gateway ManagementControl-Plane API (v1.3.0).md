@@ -1,11 +1,11 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "Mode A — Single task"
+community: "Gateway Management/Control-Plane API (v1.3.0)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task
+  - community/Gateway_Management/Control-Plane_API_v130
 ---
 
 # Gateway Management/Control-Plane API (v1.3.0)
@@ -15,8 +15,8 @@ tags:
 - [[Egress Monitor]] - `conceptually_related_to` [EXTRACTED]
 - [[Op-Proxy (Credential Gateway)]] - `conceptually_related_to` [EXTRACTED]
 - [[OpenClaw Integration Guide (v0.9.0)]] - `conceptually_related_to` [AMBIGUOUS]
+- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `implements` [EXTRACTED]
 - [[gatewaysocrouter.py (SOC Shared Command Layer)]] - `implements` [EXTRACTED]
 - [[gatewaywebapi.py (Web control center)]] - `implements` [EXTRACTED]
-- [[main.py_2]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task
+#graphify/document #graphify/EXTRACTED #community/Gateway_Management/Control-Plane_API_v130

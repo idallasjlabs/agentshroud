@@ -1,17 +1,17 @@
 ---
 source_file: "src/interfaces/text_control_center.py"
 type: "rationale"
-community: "TestNewPatternsV080"
+community: "ControlCenter"
 location: "L266"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestNewPatternsV080
+  - community/ControlCenter
 ---
 
 # Draw modules list screen
 
 ## Connections
-- [[.draw_modules()]] - `rationale_for` [EXTRACTED]
+- [[dot-draw_modules()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestNewPatternsV080
+#graphify/rationale #graphify/EXTRACTED #community/ControlCenter

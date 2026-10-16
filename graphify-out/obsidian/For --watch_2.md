@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/graphify/references/add-watch.md"
+source_file: ".agents/skills/graphify/references/add-watch.md"
 type: "document"
-community: "TrustLevel"
+community: "graphify reference: extra exports and benchmark"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TrustLevel
+  - community/graphify_reference_extra_exports_and_benchmark
 ---
 
 # For --watch
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference add a URL and watch a folder_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TrustLevel
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark

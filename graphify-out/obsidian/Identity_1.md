@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/IDENTITY.md"
+source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "document"
-community: "LOW Findings"
-location: "L1"
+community: "AWS Cloud Management & FinOps Agent"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LOW_Findings
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
-# IDENTITY.md
+# Identity
 
 ## Connections
-- [[Identity Reference - AgentShroud System]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LOW_Findings
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

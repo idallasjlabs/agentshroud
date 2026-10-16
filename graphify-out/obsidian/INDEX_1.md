@@ -1,12 +1,12 @@
 ---
 source_file: "branding/INDEX.md"
 type: "document"
-community: "Community 831"
+community: "branding/README.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_831
+  - community/branding/READMEmd
 ---
 
 # INDEX.md
@@ -18,4 +18,4 @@ tags:
 - [[brand-guidelines]] - `references` [EXTRACTED]
 - [[typography_2]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_831
+#graphify/document #graphify/EXTRACTED #community/branding/READMEmd

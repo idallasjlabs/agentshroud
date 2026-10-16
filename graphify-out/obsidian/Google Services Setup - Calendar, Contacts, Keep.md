@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "Skills by Category"
+community: "Google Services Setup - Calendar, Contacts, Keep"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skills_by_Category
+  - community/Google_Services_Setup_-_Calendar_Contacts_Keep
 ---
 
 # Google Services Setup - Calendar, Contacts, Keep
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[GOOGLE-SERVICES-SETUP]] - `contains` [EXTRACTED]
 - [[✅ Quick Start Command]] - `contains` [EXTRACTED]
-- [[🎯 Next Steps_1]] - `contains` [EXTRACTED]
+- [[🎯 Next Steps]] - `contains` [EXTRACTED]
 - [[📅 Google Calendar (CalDAV)]] - `contains` [EXTRACTED]
 - [[📊 Comparison CalDAV vs OAuth2]] - `contains` [EXTRACTED]
 - [[📝 Google Keep (Notes)]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[🚀 Recommended Approach]] - `contains` [EXTRACTED]
 - [[🛠️ OAuth2 Setup (If Needed)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skills_by_Category
+#graphify/document #graphify/EXTRACTED #community/Google_Services_Setup_-_Calendar_Contacts_Keep

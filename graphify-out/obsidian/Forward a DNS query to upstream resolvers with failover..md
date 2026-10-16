@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "rationale"
-community: "Skill: Git Workflow Guardian (GIT-GUARD)"
+community: "forward_query"
 location: "L131"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Skill_Git_Workflow_Guardian_GIT-GUARD
+  - community/forward_query
 ---
 
 # Forward a DNS query to upstream resolvers with failover.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[forward_query()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Skill_Git_Workflow_Guardian_GIT-GUARD
+#graphify/rationale #graphify/EXTRACTED #community/forward_query

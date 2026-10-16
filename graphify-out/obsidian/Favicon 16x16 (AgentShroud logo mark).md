@@ -1,13 +1,13 @@
 ---
 source_file: "branding/favicons/favicon-16x16.png"
 type: "image"
-community: "nemotron-named models misclassified as needing c"
+community: "Favicon 16x16 (AgentShroud logo mark)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/nemotron-named_models_misclassified_as_needing_c
+  - community/Favicon_16x16_AgentShroud_logo_mark
 ---
 
 # Favicon 16x16 (AgentShroud logo mark)
 
-#graphify/image #graphify/EXTRACTED #community/nemotron-named_models_misclassified_as_needing_c
+#graphify/image #graphify/EXTRACTED #community/Favicon_16x16_AgentShroud_logo_mark

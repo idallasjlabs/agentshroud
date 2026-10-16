@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "SlackSocketClient"
+community: "ResourceGuard"
 location: "L460"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SlackSocketClient
+  - community/ResourceGuard
 ---
 
 # Get the global resource guard instance, creating it lazily on first call.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_resource_guard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SlackSocketClient
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

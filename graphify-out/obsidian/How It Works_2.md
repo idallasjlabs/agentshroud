@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md"
+source_file: "docs/TEAM.md"
 type: "document"
-community: "Browser Extension"
-location: "L23"
+community: "AgentShroud Development Team — Agile Structure"
+location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Extension
+  - community/AgentShroud_Development_Team__Agile_Structure
 ---
 
 # How It Works
 
 ## Connections
-- [[ANTHROPIC_BASE_URL_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Development Team — Agile Structure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Extension
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Development_Team__Agile_Structure

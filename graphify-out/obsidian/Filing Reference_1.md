@@ -1,17 +1,17 @@
 ---
-source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
+source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "mcp-proxy-wrapper.js"
+community: "AgentShroud -- USPTO Provisional Patent Application"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp-proxy-wrapperjs
+  - community/AgentShroud_--_USPTO_Provisional_Patent_Application
 ---
 
 # Filing Reference
 
 ## Connections
-- [[AgentShroud -- USPTO Trademark Application]] - `contains` [EXTRACTED]
+- [[AgentShroud -- USPTO Provisional Patent Application]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp-proxy-wrapperjs
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Provisional_Patent_Application

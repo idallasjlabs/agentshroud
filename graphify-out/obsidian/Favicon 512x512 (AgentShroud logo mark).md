@@ -1,13 +1,13 @@
 ---
 source_file: "branding/favicons/favicon-512x512.png"
 type: "image"
-community: "Approval queue — email/file-deletion/external-AP"
+community: "Favicon 512x512 (AgentShroud logo mark)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Approval_queue__email/file-deletion/external-AP
+  - community/Favicon_512x512_AgentShroud_logo_mark
 ---
 
 # Favicon 512x512 (AgentShroud logo mark)
 
-#graphify/image #graphify/EXTRACTED #community/Approval_queue__email/file-deletion/external-AP
+#graphify/image #graphify/EXTRACTED #community/Favicon_512x512_AgentShroud_logo_mark

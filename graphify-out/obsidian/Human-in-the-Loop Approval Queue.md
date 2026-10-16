@@ -1,16 +1,17 @@
 ---
-source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
-type: "concept"
-community: "DNSForwarderProtocol"
+source_file: "docs/vault/00 - START HERE/System Overview.md"
+type: "rationale"
+community: "main.py.md"
 tags:
-  - graphify/concept
+  - graphify/rationale
   - graphify/EXTRACTED
-  - community/DNSForwarderProtocol
+  - community/mainpymd
 ---
 
-# Human-in-the-Loop Approval Queue
+# Human-in-the-loop approval queue
 
 ## Connections
-- [[Enterprise Governance Proxy System (invention)]] - `conceptually_related_to` [EXTRACTED]
+- [[AgentShroud Security Perimeter]] - `rationale_for` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/DNSForwarderProtocol
+#graphify/rationale #graphify/EXTRACTED #community/mainpymd

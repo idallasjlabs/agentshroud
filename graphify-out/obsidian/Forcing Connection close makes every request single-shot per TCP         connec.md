@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_hermes_dashboard_bridge.py"
 type: "rationale"
-community: "Athena — Knowledge Distiller"
+community: "TestRewriteRequestHeaders"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller
+  - community/TestRewriteRequestHeaders
 ---
 
 # Forcing Connection: close makes every request single-shot per TCP         connec
 
 ## Connections
-- [[.test_forces_connection_close_on_plain_request()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_forces_connection_close_on_plain_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Athena__Knowledge_Distiller
+#graphify/rationale #graphify/EXTRACTED #community/TestRewriteRequestHeaders

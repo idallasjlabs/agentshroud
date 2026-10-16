@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/hermes/init-config.sh"
 type: "code"
-community: "ssh-configuration.md"
+community: "_seed_cron"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ssh-configurationmd
+  - community/_seed_cron
 ---
 
 # Hermes cron: Competitive Landscape Update AM/PM (zero-hallucination sourcing)
@@ -14,4 +14,4 @@ tags:
 - [[OpenClaw cron Daily Competitive Landscape Update (zero-hallucination sourcing rules)]] - `semantically_similar_to` [INFERRED]
 - [[_seed_cron()]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ssh-configurationmd
+#graphify/code #graphify/EXTRACTED #community/_seed_cron

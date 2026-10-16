@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "ApprovalRequest"
+community: "AgentTarget"
 location: "L116"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalRequest
+  - community/AgentTarget
 ---
 
 # ForwardRequest
 
 ## Connections
-- [[.resolve_target()]] - `references` [EXTRACTED]
+- [[dot-resolve_target()]] - `references` [EXTRACTED]
 - [[AgentTarget]] - `uses` [INFERRED]
-- [[ForwardRequest]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[ForwardRequest_3]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalRequest
+#graphify/code #graphify/INFERRED #community/AgentTarget

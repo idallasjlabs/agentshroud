@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
+source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
 type: "document"
-community: "test_sanitizer.py"
-location: "L388"
+community: "Mode A — Single task"
+location: "L478"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_sanitizerpy
+  - community/Mode_A__Single_task
 ---
 
 # Guardrails
 
 ## Connections
-- [[AWS Cloud Management & FinOps Agent]] - `contains` [EXTRACTED]
+- [[Skill OpenClaw Dev Workflow (ODEV)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_sanitizerpy
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

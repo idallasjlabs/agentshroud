@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "env_guard.py"
+community: "generate_branding_assets.py"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/env_guardpy
+  - community/generate_branding_assetspy
 ---
 
 # FreeTypeFont
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_font()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/env_guardpy
+#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy

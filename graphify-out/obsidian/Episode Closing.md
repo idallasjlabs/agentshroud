@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-atlas/SKILL.md"
 type: "document"
-community: "P2 High Priority Incidents"
+community: "OKE Channel — CPA Exam Context"
 location: "L138"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/P2_High_Priority_Incidents
+  - community/OKE_Channel__CPA_Exam_Context
 ---
 
 # Episode Closing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OKE Channel — CPA Exam Context]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/P2_High_Priority_Incidents
+#graphify/document #graphify/EXTRACTED #community/OKE_Channel__CPA_Exam_Context

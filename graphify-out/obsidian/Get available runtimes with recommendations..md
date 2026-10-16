@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "rationale"
-community: "get_trivy_summary()"
+community: "installer.py"
 location: "L184"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/get_trivy_summary
+  - community/installerpy
 ---
 
 # Get available runtimes with recommendations.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_runtimes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/get_trivy_summary
+#graphify/rationale #graphify/EXTRACTED #community/installerpy

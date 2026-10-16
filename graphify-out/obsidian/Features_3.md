@@ -1,21 +1,22 @@
 ---
-source_file: "docs/planning/v0.9/v0.9.0-release-plan.md"
+source_file: "dashboard/README.md"
 type: "document"
-community: "Flip core security modules from monitor to enfor"
-location: "L5"
+community: "DOCKER-VPN-NETWORKING.md"
+location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Flip_core_security_modules_from_monitor_to_enfor
+  - community/DOCKER-VPN-NETWORKINGmd
 ---
 
 # Features
 
 ## Connections
-- [[1. Multi-Runtime Testing (Podman + Apple Containers)]] - `contains` [EXTRACTED]
-- [[2. Multi-Host Deployment Orchestration]] - `contains` [EXTRACTED]
-- [[3. ARM32  Low-Resource Support]] - `contains` [EXTRACTED]
-- [[4. Compliance & Standards Alignment]] - `contains` [EXTRACTED]
-- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
+- [[Action Feed]] - `contains` [EXTRACTED]
+- [[AgentShroud Dashboard]] - `contains` [EXTRACTED]
+- [[Data Ledger Viewer]] - `contains` [EXTRACTED]
+- [[Kill Switch_1]] - `contains` [EXTRACTED]
+- [[Memory Browser]] - `contains` [EXTRACTED]
+- [[Network Inspector]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Flip_core_security_modules_from_monitor_to_enfor
+#graphify/document #graphify/EXTRACTED #community/DOCKER-VPN-NETWORKINGmd

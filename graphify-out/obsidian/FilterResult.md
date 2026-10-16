@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "falco_monitor.py"
+community: "OutboundInfoFilter"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/falco_monitorpy
+  - community/OutboundInfoFilter
 ---
 
 # FilterResult
 
 ## Connections
-- [[.filter_response()]] - `references` [EXTRACTED]
-- [[Any_19]] - `uses` [INFERRED]
+- [[dot-filter_response()]] - `references` [EXTRACTED]
+- [[Any_10]] - `uses` [INFERRED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[AuditChainEntry]] - `uses` [INFERRED]
 - [[PipelineAction]] - `uses` [INFERRED]
-- [[PipelineResult]] - `uses` [INFERRED]
+- [[PipelineResult_1]] - `uses` [INFERRED]
 - [[Result of filtering agent response content.]] - `rationale_for` [EXTRACTED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[outbound_filter.py]] - `contains` [EXTRACTED]
 - [[pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/falco_monitorpy
+#graphify/code #graphify/INFERRED #community/OutboundInfoFilter

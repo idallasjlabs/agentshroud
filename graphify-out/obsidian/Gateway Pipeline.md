@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "Claude Code (claude-sonnet-4-6) — Lead Engineer "
+community: "v0.8.0 \"Watchtower\" — Security Fixes + Module Wiring (104 items)"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Claude_Code_claude-sonnet-4-6__Lead_Engineer_
+  - community/v080_Watchtower__Security_Fixes__Module_Wiring_104_items
 ---
 
 # Gateway Pipeline
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🔴 P0 — Security Fixes (17 items)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Claude_Code_claude-sonnet-4-6__Lead_Engineer_
+#graphify/document #graphify/EXTRACTED #community/v080_Watchtower__Security_Fixes__Module_Wiring_104_items

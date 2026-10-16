@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "rationale"
-community: "KeyVault"
+community: "PortManager"
 location: "L244"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/PortManager
 ---
 
 # Generate docker-compose port mapping strings from resolution.          Returns d
 
 ## Connections
-- [[.generate_compose_ports()]] - `rationale_for` [EXTRACTED]
+- [[dot-generate_compose_ports()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyVault
+#graphify/rationale #graphify/EXTRACTED #community/PortManager

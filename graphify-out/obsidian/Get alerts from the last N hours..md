@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "TestTail"
+community: "lifespan.py"
 location: "L326"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestTail
+  - community/lifespanpy
 ---
 
 # Get alerts from the last N hours.
 
 ## Connections
-- [[.get_recent_alerts()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_recent_alerts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestTail
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

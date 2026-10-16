@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "MCPToolCall"
+community: "ForwardRequest"
 location: "L700"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/ForwardRequest
 ---
 
 # Hermes SOUL.md must instruct the agent never to issue a blanket 'cannot connect'
 
 ## Connections
-- [[.test_hermes_soul_has_no_refuse_directive()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_hermes_soul_has_no_refuse_directive()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPToolCall
+#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest

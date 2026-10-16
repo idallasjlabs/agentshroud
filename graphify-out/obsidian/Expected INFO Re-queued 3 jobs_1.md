@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
+source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "_make_tm()"
+community: ".agents/skills/i-tw/SKILL.md"
 location: "L107"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_make_tm
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # Expected: [INFO] Re-queued 3 jobs
 
 ## Connections
-- [[SKILL_79]] - `contains` [EXTRACTED]
-- [[SKILL_122]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-twSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_make_tm
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

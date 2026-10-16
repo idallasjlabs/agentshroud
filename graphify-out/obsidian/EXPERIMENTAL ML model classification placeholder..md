@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "rationale"
-community: "BotConfig"
+community: "HeuristicClassifier"
 location: "L216"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/HeuristicClassifier
 ---
 
 # [EXPERIMENTAL] ML model classification placeholder.
 
 ## Connections
-- [[._classify_ml()]] - `rationale_for` [EXTRACTED]
+- [[dot-_classify_ml()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/BotConfig
+#graphify/rationale #graphify/EXTRACTED #community/HeuristicClassifier

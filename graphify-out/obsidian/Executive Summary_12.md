@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/threat-model.md"
+source_file: "docs/planning/v0.8/security-assessment-v0.8.0.md"
 type: "document"
-community: "9. Deep Security Hardening (v0.9.0)"
-location: "L3"
+community: "AgentShroud Security Assessment — v0.8.0"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/9_Deep_Security_Hardening_v090
+  - community/AgentShroud_Security_Assessment__v080
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud Threat Model (STRIDE Analysis)]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Assessment — v0.8.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/9_Deep_Security_Hardening_v090
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Assessment__v080

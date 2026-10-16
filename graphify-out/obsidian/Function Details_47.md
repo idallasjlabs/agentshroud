@@ -1,25 +1,19 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
 type: "document"
-community: "ANTHROPIC_BASE_URL"
-location: "L40"
+community: "event_bus.py"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ANTHROPIC_BASE_URL
+  - community/event_buspy
 ---
 
 # Function Details
 
 ## Connections
-- [[SessionManager.__init__(max_session_age, max_sessions_per_ip, rate_limit_window)]] - `contains` [EXTRACTED]
-- [[SessionManager.cleanup_expired()]] - `contains` [EXTRACTED]
-- [[SessionManager.create_session(ip, user_agent)]] - `contains` [EXTRACTED]
-- [[SessionManager.destroy_session(session_id)]] - `contains` [EXTRACTED]
-- [[SessionManager.register_event_source(session_id, source)]] - `contains` [EXTRACTED]
-- [[SessionManager.rotate_session(old_session_id, ip, user_agent)]] - `contains` [EXTRACTED]
-- [[SessionManager.validate_event(session_id, source, event)]] - `contains` [EXTRACTED]
-- [[SessionManager.validate_session(session_id, ip, user_agent)]] - `contains` [EXTRACTED]
-- [[session_security.py_2]] - `contains` [EXTRACTED]
+- [[EventBus.emit(event)]] - `contains` [EXTRACTED]
+- [[event_bus.py_2]] - `contains` [EXTRACTED]
+- [[make_event(event_type, summary, details, severity)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL
+#graphify/document #graphify/EXTRACTED #community/event_buspy

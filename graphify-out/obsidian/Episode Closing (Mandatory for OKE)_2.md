@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
 type: "document"
-community: "BlockingPipeline"
+community: "Socrates — Dialogue Architect"
 location: "L149"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BlockingPipeline
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Episode Closing (Mandatory for OKE)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OKE Channel — CPA Exam Prep Dialogue Guidelines_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BlockingPipeline
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

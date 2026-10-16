@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
+community: "Google Calendar & Contacts - Quick Setup"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/Google_Calendar__Contacts_-_Quick_Setup
 ---
 
 # Google Calendar & Contacts - Quick Setup
@@ -21,4 +21,4 @@ tags:
 - [[📊 Comparison]] - `contains` [EXTRACTED]
 - [[🚀 Option A Simple Setup (5 minutes)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/Google_Calendar__Contacts_-_Quick_Setup

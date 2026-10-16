@@ -1,12 +1,12 @@
 ---
 source_file: "docs/archive/SECURITY.md"
 type: "rationale"
-community: "Diagram 08: Entity Relationship Diagram"
+community: "Host Application Firewall Layer (Little Snitch / Lulu on vpnkit)"
 location: "L133-L144"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Diagram_08_Entity_Relationship_Diagram
+  - community/Host_Application_Firewall_Layer_Little_Snitch_/_Lulu_on_vpnkit
 ---
 
 # In-Container iptables Firewall (container-firewall.sh, needs privileges)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Host Application Firewall Layer (Little Snitch  Lulu on vpnkit)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Diagram_08_Entity_Relationship_Diagram
+#graphify/rationale #graphify/EXTRACTED #community/Host_Application_Firewall_Layer_Little_Snitch_/_Lulu_on_vpnkit

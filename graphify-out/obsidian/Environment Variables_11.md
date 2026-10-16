@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "document"
-community: "_FakeUpstreamWS"
+community: "dns_filter.py"
 location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_FakeUpstreamWS
+  - community/dns_filterpy
 ---
 
 # Environment Variables
 
 ## Connections
-- [[EgressFilter_3]] - `contains` [EXTRACTED]
+- [[dns_filter.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_FakeUpstreamWS
+#graphify/document #graphify/EXTRACTED #community/dns_filterpy

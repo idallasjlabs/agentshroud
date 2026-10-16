@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "lifespan.py"
+community: "AgentRegistry"
 location: "L45"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/AgentRegistry
 ---
 
 # Encryption/decryption time should not leak plaintext length.
 
 ## Connections
-- [[.test_encrypted_store_constant_time()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_encrypted_store_constant_time()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry

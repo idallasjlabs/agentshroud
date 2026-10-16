@@ -12,6 +12,6 @@ tags:
 # Evaluate one job.  Returns 1 if a NEW episode was alerted.          Flood guard
 
 ## Connections
-- [[._evaluate()]] - `rationale_for` [EXTRACTED]
+- [[dot-_evaluate()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/CronStateMonitor

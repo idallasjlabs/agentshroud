@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "check_message()"
+community: "RBACConfig"
 location: "L148"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/check_message
+  - community/RBACConfig
 ---
 
 # Group workspace content must not leak into any user's DM workspace.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGroupMemoryInvisibleFromDM]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/check_message
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

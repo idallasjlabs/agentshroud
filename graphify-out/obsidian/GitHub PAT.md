@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "PromptGuard"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
 location: "L201"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # GitHub PAT
 
 ## Connections
-- [[Security Best Practices]] - `contains` [EXTRACTED]
+- [[Security Best Practices_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PromptGuard
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

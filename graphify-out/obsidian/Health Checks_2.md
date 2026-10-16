@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Health Checks.md"
 type: "document"
-community: "Oracle — Feedback Analyst"
+community: "Health Checks"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst
+  - community/Health_Checks
 ---
 
 # Health Checks
@@ -20,7 +20,7 @@ tags:
 - [[Health Checks_1]] - `contains` [EXTRACTED]
 - [[Ledger Health]] - `contains` [EXTRACTED]
 - [[Monitoring Script]] - `contains` [EXTRACTED]
-- [[Related Notes_67]] - `contains` [EXTRACTED]
+- [[Related Notes_60]] - `contains` [EXTRACTED]
 - [[Security Health Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst
+#graphify/document #graphify/EXTRACTED #community/Health_Checks

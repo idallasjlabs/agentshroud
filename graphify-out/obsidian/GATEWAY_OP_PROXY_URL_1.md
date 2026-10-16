@@ -1,23 +1,23 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md"
 type: "document"
-community: "test_apply_patches.js"
+community: "GATEWAY_OP_PROXY_URL"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_apply_patchesjs
+  - community/GATEWAY_OP_PROXY_URL
 ---
 
 # GATEWAY_OP_PROXY_URL
 
 ## Connections
-- [[Description_3]] - `contains` [EXTRACTED]
+- [[Description]] - `contains` [EXTRACTED]
 - [[GATEWAY_OP_PROXY_URL]] - `contains` [EXTRACTED]
-- [[Related Notes_31]] - `contains` [EXTRACTED]
-- [[Security_8]] - `contains` [EXTRACTED]
-- [[Set In_1]] - `contains` [EXTRACTED]
+- [[Related Notes_1]] - `contains` [EXTRACTED]
+- [[Security_1]] - `contains` [EXTRACTED]
+- [[Set In]] - `contains` [EXTRACTED]
 - [[Usage Flow]] - `contains` [EXTRACTED]
-- [[Value_2]] - `contains` [EXTRACTED]
+- [[Value]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_apply_patchesjs
+#graphify/document #graphify/EXTRACTED #community/GATEWAY_OP_PROXY_URL

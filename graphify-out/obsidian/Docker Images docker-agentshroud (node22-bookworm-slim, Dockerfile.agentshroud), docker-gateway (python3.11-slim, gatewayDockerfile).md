@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-22-dependency-graph.png"
 type: "image"
-community: "MCP Auth Reset Skill"
+community: "Containers startup order: agentshroud-gateway starts first, agentshroud-bot starts after gateway healthy"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/MCP_Auth_Reset_Skill
+  - community/Containers_startup_order_agentshroud-gateway_starts_first_agentshroud-bot_starts_after_gateway_healthy
 ---
 
 # Docker Images: docker-agentshroud (node:22-bookworm-slim, Dockerfile.agentshroud), docker-gateway (python:3.11-slim, gateway/Dockerfile)
@@ -14,4 +14,4 @@ tags:
 - [[Containers startup order agentshroud-gateway starts first, agentshroud-bot starts after gateway healthy]] - `shares_data_with` [EXTRACTED]
 - [[Docker Deployment Dependency Graph]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/MCP_Auth_Reset_Skill
+#graphify/image #graphify/EXTRACTED #community/Containers_startup_order_agentshroud-gateway_starts_first_agentshroud-bot_starts_after_gateway_healthy

@@ -1,17 +1,17 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "rationale"
-community: "server.py"
+community: "chatbot/main.py"
 location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/serverpy
+  - community/chatbot/mainpy
 ---
 
 # Import chatbot.main with a fresh module state (no real OpenAI).
 
 ## Connections
-- [[app()]] - `rationale_for` [EXTRACTED]
+- [[app()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/serverpy
+#graphify/rationale #graphify/EXTRACTED #community/chatbot/mainpy

@@ -1,24 +1,25 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
 type: "document"
-community: "TestWebAPI"
-location: "L37"
+community: "Function Details"
+location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestWebAPI
+  - community/Function_Details
 ---
 
 # Function Details
 
 ## Connections
-- [[ConnectionPool.get_or_create(server_name, config)]] - `contains` [EXTRACTED]
-- [[MCPProxy._execute_tool_call(tool_call, sanitized_params)]] - `contains` [EXTRACTED]
-- [[MCPProxy.check_approval_required(tool_call)]] - `contains` [EXTRACTED]
-- [[MCPProxy.get_stats()]] - `contains` [EXTRACTED]
-- [[MCPProxy.process_tool_call(tool_call, execute)]] - `contains` [EXTRACTED]
-- [[MCPProxy.process_tool_result(tool_result, agent_id)]] - `contains` [EXTRACTED]
-- [[StdioConnection.send_request(method, params)]] - `contains` [EXTRACTED]
-- [[mcp_proxy.py_2]] - `contains` [EXTRACTED]
+- [[SessionManager.__init__(max_session_age, max_sessions_per_ip, rate_limit_window)]] - `contains` [EXTRACTED]
+- [[SessionManager.cleanup_expired()]] - `contains` [EXTRACTED]
+- [[SessionManager.create_session(ip, user_agent)]] - `contains` [EXTRACTED]
+- [[SessionManager.destroy_session(session_id)]] - `contains` [EXTRACTED]
+- [[SessionManager.register_event_source(session_id, source)]] - `contains` [EXTRACTED]
+- [[SessionManager.rotate_session(old_session_id, ip, user_agent)]] - `contains` [EXTRACTED]
+- [[SessionManager.validate_event(session_id, source, event)]] - `contains` [EXTRACTED]
+- [[SessionManager.validate_session(session_id, ip, user_agent)]] - `contains` [EXTRACTED]
+- [[session_security.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestWebAPI
+#graphify/document #graphify/EXTRACTED #community/Function_Details

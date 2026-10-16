@@ -1,24 +1,27 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "TestParanoidConfig"
-location: "L230"
+community: "ApprovalQueueConfig"
+location: "L410"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TestParanoidConfig
+  - community/ApprovalQueueConfig
 ---
 
 # EnhancedApprovalQueue
 
 ## Connections
-- [[.__init__()_31]] - `references` [EXTRACTED]
-- [[InspectionResult]] - `uses` [INFERRED]
-- [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector]] - `uses` [INFERRED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPServerConfig]] - `uses` [INFERRED]
-- [[MCPTransport]] - `uses` [INFERRED]
+- [[ApprovalQueue_1]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalRequest_5]] - `uses` [INFERRED]
+- [[ApprovalStore]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
+- [[MFAGuard_2]] - `uses` [INFERRED]
+- [[MFAResult]] - `uses` [INFERRED]
+- [[ToolRiskConfig]] - `uses` [INFERRED]
+- [[_submit_enhanced_high_risk()]] - `references` [EXTRACTED]
+- [[_submit_tool_call()]] - `references` [EXTRACTED]
+- [[enhanced_mfa_queue()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TestParanoidConfig
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "DataLedger"
 location: "L592"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/DataLedger
 ---
 
 # Gap coverage: prove the 'content is DATA, not a shell string' design     goal ac
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/DataLedger

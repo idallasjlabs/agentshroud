@@ -1,19 +1,19 @@
 ---
 source_file: "examples/docker-commands.md"
 type: "document"
-community: "Red Team Assessment v1.2.0"
+community: "Docker Commands Reference"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Red_Team_Assessment_v120
+  - community/Docker_Commands_Reference
 ---
 
 # Docker Commands Reference
 
 ## Connections
-- [[Container management]] - `contains` [EXTRACTED]
-- [[Container status]] - `contains` [EXTRACTED]
+- [[Container management_2]] - `contains` [EXTRACTED]
+- [[Container status_1]] - `contains` [EXTRACTED]
 - [[Debugging read-only filesystem errors]] - `contains` [EXTRACTED]
 - [[Exec into containers]] - `contains` [EXTRACTED]
 - [[Logs_4]] - `contains` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[Writing files to containers]] - `contains` [EXTRACTED]
 - [[docker-commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Red_Team_Assessment_v120
+#graphify/document #graphify/EXTRACTED #community/Docker_Commands_Reference

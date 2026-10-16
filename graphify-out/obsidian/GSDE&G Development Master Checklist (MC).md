@@ -1,20 +1,21 @@
 ---
-source_file: ".agents/skills/i-mc/README.md"
+source_file: "docker/config/openclaw/skills/i-mc/README.md"
 type: "document"
-community: "SecurityEvent"
+community: "GSDE&G Development Master Checklist (MC)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecurityEvent
+  - community/GSDEG_Development_Master_Checklist_MC
 ---
 
 # GSDE&G Development Master Checklist (MC)
 
 ## Connections
-- [[Purpose_15]] - `contains` [EXTRACTED]
-- [[README_15]] - `contains` [EXTRACTED]
-- [[Related Skills_15]] - `contains` [EXTRACTED]
-- [[Usage_17]] - `contains` [EXTRACTED]
+- [[Purpose_43]] - `contains` [EXTRACTED]
+- [[Related Skills_36]] - `contains` [EXTRACTED]
+- [[Usage_39]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-mcREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecurityEvent
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_MC

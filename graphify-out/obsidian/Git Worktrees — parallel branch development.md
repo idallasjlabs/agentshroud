@@ -1,11 +1,11 @@
 ---
 source_file: "docs/TEAM.md"
 type: "concept"
-community: "start-agentshroud.sh"
+community: "AgentShroud™ Communication Templates"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/start-agentshroudsh
+  - community/AgentShroud_Communication_Templates
 ---
 
 # Git Worktrees — parallel branch development
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Claude Code — Primary development agent]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/start-agentshroudsh
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Communication_Templates

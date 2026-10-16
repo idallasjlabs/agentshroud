@@ -1,20 +1,19 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
+source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "_make_tm()"
+community: ".agents/skills/i-tw/SKILL.md"
 location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_make_tm
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # If not → escalate to field team via #ops-alerts
 
 ## Connections
+- [[dot-agentsskillsi-twSKILL]] - `contains` [EXTRACTED]
 - [[API  Function Reference_1]] - `contains` [EXTRACTED]
 - [[Architecture Decision Record (ADR)_1]] - `contains` [EXTRACTED]
-- [[SKILL_79]] - `contains` [EXTRACTED]
-- [[SKILL_122]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_make_tm
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

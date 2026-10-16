@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "EgressFilter"
+community: "PIIConfig"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/PIIConfig
 ---
 
 # EncodingResult
 
 ## Connections
-- [[.analyze()_1]] - `calls` [EXTRACTED]
+- [[dot-analyze()]] - `calls` [EXTRACTED]
 - [[encoding_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilter
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

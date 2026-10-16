@@ -1,13 +1,13 @@
 ---
 source_file: "CLAUDE.md"
 type: "rationale"
-community: ".test_proxy_allowed_network_default_includes_cur"
+community: "Graphify query-first-then-keep-current workflow"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_proxy_allowed_network_default_includes_cur
+  - community/Graphify_query-first-then-keep-current_workflow
 ---
 
 # Graphify query-first-then-keep-current workflow
 
-#graphify/rationale #graphify/EXTRACTED #community/test_proxy_allowed_network_default_includes_cur
+#graphify/rationale #graphify/EXTRACTED #community/Graphify_query-first-then-keep-current_workflow

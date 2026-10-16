@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "rationale"
-community: "Detailed Profiles"
+community: "AlertDispatcher"
 location: "L59"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Detailed_Profiles
+  - community/AlertDispatcher
 ---
 
 # Dispatch an alert based on severity.          Args:             alert: Alert dic
 
 ## Connections
-- [[.dispatch()]] - `rationale_for` [EXTRACTED]
+- [[dot-dispatch()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Detailed_Profiles
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md"
+source_file: "docs/planning/v0.8/v0.8.0-execution-summary-draft.md"
 type: "document"
-community: "ENTERPRISE GOVERNANCE PROXY SYSTEM AND METHOD FO"
-location: "L3"
+community: "AgentShroud v0.8.0 \"Watchtower\" — Execution Summary (Draft)"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ENTERPRISE_GOVERNANCE_PROXY_SYSTEM_AND_METHOD_FO
+  - community/AgentShroud_v080_Watchtower__Execution_Summary_Draft
 ---
 
 # Executive Summary
 
 ## Connections
-- [[Secrets Usage and Collaborator Checklist]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 Watchtower — Execution Summary (Draft)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ENTERPRISE_GOVERNANCE_PROXY_SYSTEM_AND_METHOD_FO
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Execution_Summary_Draft

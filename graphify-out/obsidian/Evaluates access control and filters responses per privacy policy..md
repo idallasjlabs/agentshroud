@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "rationale"
-community: "Local-Model Job Quality Matrix"
+community: "PrivacyPolicyEnforcer"
 location: "L179"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Local-Model_Job_Quality_Matrix
+  - community/PrivacyPolicyEnforcer
 ---
 
 # Evaluates access control and filters responses per privacy policy.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PrivacyPolicyEnforcer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Local-Model_Job_Quality_Matrix
+#graphify/rationale #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

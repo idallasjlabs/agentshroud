@@ -1,11 +1,11 @@
 ---
 source_file: "docs/governance/GSD_CADENCE.md"
 type: "document"
-community: "TestMultiBotContextvarRouting"
+community: "Multi-Agent Role Matrix"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMultiBotContextvarRouting
+  - community/Multi-Agent_Role_Matrix
 ---
 
 # GSD Cadence — Get Shit Done Governance (doc)
@@ -16,4 +16,4 @@ tags:
 - [[Rule 2 — Approval Tag (approvedisaiah) for High-Severity Changes]] - `references` [EXTRACTED]
 - [[Rule 3 — Weekly Kaizen + Monthly Chaos Drill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMultiBotContextvarRouting
+#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix

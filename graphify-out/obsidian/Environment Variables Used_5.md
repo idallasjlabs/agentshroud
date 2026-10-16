@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
 type: "document"
-community: "Deploying AgentShroud on macOS (Apple Silicon / "
-location: "L67"
+community: "version_routes.py"
+location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_
+  - community/version_routespy
 ---
 
 # Environment Variables Used
 
 ## Connections
-- [[router.py_3]] - `contains` [EXTRACTED]
+- [[version_routes.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_
+#graphify/document #graphify/EXTRACTED #community/version_routespy

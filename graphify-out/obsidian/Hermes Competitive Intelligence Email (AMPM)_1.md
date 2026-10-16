@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt"
 type: "document"
-community: "Skill: Test-Driven Development (TDD)"
+community: "competitive-report-*.md dated reports"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Test-Driven_Development_TDD
+  - community/competitive-report-md_dated_reports
 ---
 
 # Hermes Competitive Intelligence Email (AM/PM)
@@ -16,6 +16,6 @@ tags:
 - [[agentshroud-email-send.sh]] - `references` [EXTRACTED]
 - [[competitive-report-.md dated reports]] - `references` [EXTRACTED]
 - [[cron-operations skill]] - `references` [EXTRACTED]
-- [[render_md_email.py_1]] - `references` [EXTRACTED]
+- [[render_md_email.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD
+#graphify/document #graphify/EXTRACTED #community/competitive-report-md_dated_reports

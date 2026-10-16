@@ -1,11 +1,11 @@
 ---
 source_file: "docs/runbooks/backup-restore.md"
 type: "concept"
-community: ".scan()"
+community: "Backup & Restore Runbook — AgentShroud"
 tags:
   - graphify/concept
   - graphify/AMBIGUOUS
-  - community/scan
+  - community/Backup__Restore_Runbook__AgentShroud
 ---
 
 # Disaster Recovery Full Rebuild Procedure
@@ -14,4 +14,4 @@ tags:
 - [[backup-restore]] - `references` [EXTRACTED]
 - [[raspberry-pi]] - `references` [AMBIGUOUS]
 
-#graphify/concept #graphify/AMBIGUOUS #community/scan
+#graphify/concept #graphify/AMBIGUOUS #community/Backup__Restore_Runbook__AgentShroud

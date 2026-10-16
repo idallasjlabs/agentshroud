@@ -1,19 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
 type: "document"
-community: "OpenClaw Host Hardening"
-location: "L36"
+community: "TrustManager"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Host_Hardening
+  - community/TrustManager
 ---
 
 # Function Details
 
 ## Connections
-- [[EventBus.emit(event)]] - `contains` [EXTRACTED]
-- [[event_bus.py_2]] - `contains` [EXTRACTED]
-- [[make_event(event_type, summary, details, severity)]] - `contains` [EXTRACTED]
+- [[TrustManager_5]] - `contains` [EXTRACTED]
+- [[TrustManager._apply_decay(score, last_action_time)]] - `contains` [EXTRACTED]
+- [[TrustManager._update_score(agent_id, delta, event_type, details)]] - `contains` [EXTRACTED]
+- [[TrustManager.get_history(agent_id, limit)]] - `contains` [EXTRACTED]
+- [[TrustManager.get_trust(agent_id)]] - `contains` [EXTRACTED]
+- [[TrustManager.is_action_allowed(agent_id, action)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Host_Hardening
+#graphify/document #graphify/EXTRACTED #community/TrustManager

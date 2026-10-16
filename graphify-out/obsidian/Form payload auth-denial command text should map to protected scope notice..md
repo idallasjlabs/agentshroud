@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "test_llm_proxy.py"
+community: "TelegramAPIProxy"
 location: "L574"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/TelegramAPIProxy
 ---
 
 # Form payload auth-denial command text should map to protected scope notice.
 
 ## Connections
-- [[.test_collaborator_not_authorized_command_text_is_normalized_form()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_collaborator_not_authorized_command_text_is_normalized_form()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

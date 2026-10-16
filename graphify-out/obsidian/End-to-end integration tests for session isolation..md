@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "ModuleStatsCollector"
+community: "TestMiddlewareSessionEnforcement"
 location: "L492"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/TestMiddlewareSessionEnforcement
 ---
 
 # End-to-end integration tests for session isolation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSessionIsolationEndToEnd]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/rationale #graphify/EXTRACTED #community/TestMiddlewareSessionEnforcement

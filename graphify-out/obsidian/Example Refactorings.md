@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/safe-refactor.agent.md"
 type: "document"
-community: "v0.8.0 — \"Watchtower\" (Complete Security + Every"
+community: "Safe Refactor Specialist"
 location: "L175"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/v080__Watchtower_Complete_Security__Every
+  - community/Safe_Refactor_Specialist
 ---
 
 # Example Refactorings
@@ -18,4 +18,4 @@ tags:
 - [[Good Variable Renaming]] - `contains` [EXTRACTED]
 - [[Safe Refactor Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/v080__Watchtower_Complete_Security__Every
+#graphify/document #graphify/EXTRACTED #community/Safe_Refactor_Specialist

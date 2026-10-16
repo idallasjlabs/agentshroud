@@ -1,18 +1,18 @@
 ---
 source_file: "skills/openclaw/gemini/SKILL.md"
 type: "document"
-community: "AgentShroud Setup Guide"
+community: "Coding Agent (bash-first)"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Setup_Guide
+  - community/Coding_Agent_bash-first
 ---
 
 # Gemini CLI
 
 ## Connections
 - [[OpenClaw Dev Workflow (ODEV)]] - `references` [EXTRACTED]
-- [[SKILL_206]] - `contains` [EXTRACTED]
+- [[geminiSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/Coding_Agent_bash-first

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "document"
-community: "frame.sh"
+community: "Role"
 location: "477"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/framesh
+  - community/Role
 ---
 
 # GHSA-rrxp-5mx8-mvhh — inbound voice calls inherit owner tool authorization
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Owner-elevation-over-unverified-origin refusal (owner directive 2026-09-15)]] - `cites` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/framesh
+#graphify/document #graphify/EXTRACTED #community/Role

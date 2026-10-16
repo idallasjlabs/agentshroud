@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-aws/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
 type: "document"
-community: "gen.py"
+community: "AWS Cloud Management & FinOps Agent"
 location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/genpy
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # EBS Performance Analysis (Critical Pattern)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Decision Framework]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/genpy
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

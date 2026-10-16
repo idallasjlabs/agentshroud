@@ -1,22 +1,22 @@
 ---
 source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
 type: "document"
-community: "encrypted_store.py"
+community: "Discovery Strategy"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/encrypted_storepy
+  - community/Discovery_Strategy
 ---
 
 # Discovery Strategy
 
 ## Connections
 - [[Mac App Discovery Skill_1]] - `contains` [EXTRACTED]
-- [[Phase 1 — Raw Collection_1]] - `contains` [EXTRACTED]
+- [[Phase 1 — Raw Collection]] - `contains` [EXTRACTED]
 - [[Phase 2 — Deduplication & Normalization_1]] - `contains` [EXTRACTED]
 - [[Phase 3 — Categorization_1]] - `contains` [EXTRACTED]
 - [[Phase 4 — Enrichment_1]] - `contains` [EXTRACTED]
 - [[Phase 5 — Output Generation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/encrypted_storepy
+#graphify/document #graphify/EXTRACTED #community/Discovery_Strategy

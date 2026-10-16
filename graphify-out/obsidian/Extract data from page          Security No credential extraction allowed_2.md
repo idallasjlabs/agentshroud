@@ -12,6 +12,6 @@ tags:
 # Extract data from page          Security: No credential extraction allowed
 
 ## Connections
-- [[.extract()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-extract()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

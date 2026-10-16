@@ -1,25 +1,20 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
 type: "document"
-community: "AgentShroud Red Team Adversarial Tester"
-location: "L37"
+community: "config.py"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester
+  - community/configpy
 ---
 
 # Function Details
 
 ## Connections
-- [[ResourceGuard.__init__(limits)]] - `contains` [EXTRACTED]
-- [[ResourceGuard.add_alert_callback(callback)]] - `contains` [EXTRACTED]
-- [[ResourceGuard.check_cpu_limit(agent_id)  check_memory_limit(agent_id)  check_disk_write_limit(agent_id)]] - `contains` [EXTRACTED]
-- [[ResourceGuard.check_resource(agent_id, resource_type, amount)]] - `contains` [EXTRACTED]
-- [[ResourceGuard.cleanup_temp_files(agent_id)]] - `contains` [EXTRACTED]
-- [[ResourceGuard.get_usage_stats(agent_id)]] - `contains` [EXTRACTED]
-- [[ResourceGuard.register_temp_file(agent_id, file_path)]] - `contains` [EXTRACTED]
-- [[ResourceGuard.start_request_tracking(agent_id)]] - `contains` [EXTRACTED]
-- [[resource_guard.py_2]] - `contains` [EXTRACTED]
+- [[RuntimeConfig.effective_rootless (property)]] - `contains` [EXTRACTED]
+- [[RuntimeConfig.from_dict(data)]] - `contains` [EXTRACTED]
+- [[RuntimeConfig.from_env()]] - `contains` [EXTRACTED]
+- [[config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester
+#graphify/document #graphify/EXTRACTED #community/configpy

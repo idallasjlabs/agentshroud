@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "concept"
-community: "pick_latest_hermes_tag()"
+community: "ESP32-S3-BOX-3 Voice Terminal"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/pick_latest_hermes_tag
+  - community/ESP32-S3-BOX-3_Voice_Terminal
 ---
 
 # Governed Voice Path (device to gateway to Hermes)
@@ -16,4 +16,4 @@ tags:
 - [[Spoken High-Risk Command Approval Pause]] - `references` [EXTRACTED]
 - [[Voice Gateway Service (STTTTS on marvin)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/pick_latest_hermes_tag
+#graphify/concept #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal

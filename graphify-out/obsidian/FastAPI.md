@@ -1,20 +1,18 @@
 ---
-source_file: "docs/vault/05 - Dependencies/fastapi.md"
-type: "document"
-community: "TestFileSandbox"
-location: "L1"
+source_file: "voice_gateway/server.py"
+type: "code"
+community: "server.py"
+location: "L357"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/TestFileSandbox
+  - community/serverpy
 ---
 
-# fastapi.md
+# FastAPI
 
 ## Connections
-- [[All Dependencies]] - `references` [EXTRACTED]
-- [[FastAPI_4]] - `contains` [EXTRACTED]
-- [[main.py_3]] - `references` [INFERRED]
-- [[pydantic]] - `references` [EXTRACTED]
+- [[_lifespan()]] - `references` [EXTRACTED]
+- [[server.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFileSandbox
+#graphify/code #graphify/EXTRACTED #community/serverpy

@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-env/SKILL.md"
 type: "concept"
-community: "AuditExporter"
+community: "Project Management (README)"
 tags:
   - graphify/concept
   - graphify/AMBIGUOUS
-  - community/AuditExporter
+  - community/Project_Management_README
 ---
 
 # Environment Management (env — unresolved reference)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Project Management (SKILL)]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/concept #graphify/AMBIGUOUS #community/AuditExporter
+#graphify/concept #graphify/AMBIGUOUS #community/Project_Management_README

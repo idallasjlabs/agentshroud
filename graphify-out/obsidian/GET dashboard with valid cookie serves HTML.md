@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "Socrates — Dialogue Architect"
+community: "test_e2e.py"
 location: "L177"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/test_e2epy
 ---
 
 # GET /dashboard with valid cookie serves HTML
 
 ## Connections
-- [[.test_dashboard_cookie_auth_serves_html()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_dashboard_cookie_auth_serves_html()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/rationale #graphify/EXTRACTED #community/test_e2epy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "Community 37"
-location: "L1891"
+community: ".proxy_messages"
+location: "L1908"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_37
+  - community/proxy_messages
 ---
 
 # Forward request to the real LLM API provider. Retries up to 3 times on…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_forward_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_37
+#graphify/rationale #graphify/EXTRACTED #community/proxy_messages

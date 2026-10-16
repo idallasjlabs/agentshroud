@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "Skill: Data Validation (DATA-VAL)"
-location: "L1542"
+community: "._filter_streaming_event"
+location: "L1559"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Skill_Data_Validation_DATA-VAL
+  - community/_filter_streaming_event
 ---
 
 # Filter outbound LLM response for credential leaks and XML.
 
 ## Connections
-- [[._filter_outbound()]] - `rationale_for` [EXTRACTED]
+- [[dot-_filter_outbound()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL
+#graphify/rationale #graphify/EXTRACTED #community/_filter_streaming_event

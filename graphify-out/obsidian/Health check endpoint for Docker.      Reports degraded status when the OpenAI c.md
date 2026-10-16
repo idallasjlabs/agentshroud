@@ -1,17 +1,17 @@
 ---
 source_file: "chatbot/main.py"
 type: "rationale"
-community: "server.py"
+community: "chatbot/main.py"
 location: "L167"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/serverpy
+  - community/chatbot/mainpy
 ---
 
 # Health check endpoint for Docker.      Reports degraded status when the OpenAI c
 
 ## Connections
-- [[health_check()]] - `rationale_for` [EXTRACTED]
+- [[health_check()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/serverpy
+#graphify/rationale #graphify/EXTRACTED #community/chatbot/mainpy

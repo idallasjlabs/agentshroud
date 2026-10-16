@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/01-architecture.md"
 type: "concept"
-community: "Error Index"
+community: "01-architecture.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Error_Index
+  - community/01-architecturemd
 ---
 
 # Gateway Internals Component Diagram
@@ -15,4 +15,4 @@ tags:
 - [[C4 Level 1 — Container Diagram]] - `references` [INFERRED]
 - [[Rendered Gateway Components Diagram (PNG)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Error_Index
+#graphify/concept #graphify/EXTRACTED #community/01-architecturemd

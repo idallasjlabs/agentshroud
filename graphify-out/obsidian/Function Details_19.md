@@ -1,24 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
 type: "document"
-community: "Security Implementation Verification"
-location: "L29"
+community: "prompt_guard.py.md"
+location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Implementation_Verification
+  - community/prompt_guardpymd
 ---
 
 # Function Details
 
 ## Connections
-- [[AppleContainerEngine.compose_up(file, detach)  compose_down(file)]] - `contains` [EXTRACTED]
-- [[AppleContainerEngine.health_check()]] - `contains` [EXTRACTED]
-- [[AppleContainerEngine.inspect(name)]] - `contains` [EXTRACTED]
-- [[AppleContainerEngine.network_create  network_rm  volume_create  volume_rm]] - `contains` [EXTRACTED]
-- [[AppleContainerEngine.pause(name)  unpause(name)]] - `contains` [EXTRACTED]
-- [[AppleContainerEngine.ps(all)]] - `contains` [EXTRACTED]
-- [[AppleContainerEngine.run(image, name, , ports, volumes, env, privileged, caps, seccomp, detach, ...)]] - `contains` [EXTRACTED]
-- [[apple_engine.py_2]] - `contains` [EXTRACTED]
+- [[PromptGuard.__init__(block_threshold, warn_threshold, custom_patterns)]] - `contains` [EXTRACTED]
+- [[PromptGuard._check_encoded_content(text)]] - `contains` [EXTRACTED]
+- [[PromptGuard._check_unicode_tricks(text)]] - `contains` [EXTRACTED]
+- [[PromptGuard.scan(text)]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Implementation_Verification
+#graphify/document #graphify/EXTRACTED #community/prompt_guardpymd

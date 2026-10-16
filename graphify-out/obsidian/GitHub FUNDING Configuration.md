@@ -1,13 +1,13 @@
 ---
 source_file: ".github/FUNDING.yml"
 type: "document"
-community: "soc.html — unified SOC web dashboard SPA templat"
+community: "GitHub FUNDING Configuration"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sochtml__unified_SOC_web_dashboard_SPA_templat
+  - community/GitHub_FUNDING_Configuration
 ---
 
 # GitHub FUNDING Configuration
 
-#graphify/document #graphify/EXTRACTED #community/sochtml__unified_SOC_web_dashboard_SPA_templat
+#graphify/document #graphify/EXTRACTED #community/GitHub_FUNDING_Configuration

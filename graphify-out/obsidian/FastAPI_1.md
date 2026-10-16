@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "_wrap_response()"
+community: "lifespan.py"
 location: "L107"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_wrap_response
+  - community/lifespanpy
 ---
 
 # FastAPI
@@ -18,10 +18,10 @@ tags:
 - [[GroupRegistry]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
-- [[lifespan()_1]] - `references` [EXTRACTED]
+- [[lifespan()]] - `references` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_wrap_response
+#graphify/code #graphify/INFERRED #community/lifespanpy

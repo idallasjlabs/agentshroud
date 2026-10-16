@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/init-config.sh"
 type: "code"
-community: "ssh-configuration.md"
+community: "_seed_cron"
 location: "689-748"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ssh-configurationmd
+  - community/_seed_cron
 ---
 
 # Env-split cron reconciliation (prod pause / dev resume)
@@ -16,4 +16,4 @@ tags:
 - [[_seed_cron()]] - `calls` [EXTRACTED]
 - [[init-config.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ssh-configurationmd
+#graphify/code #graphify/EXTRACTED #community/_seed_cron

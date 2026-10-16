@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "GSDE&G Development Master Checklist"
-location: "L404"
+community: "ToolChainAnalyzer"
+location: "L531"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist
+  - community/ToolChainAnalyzer
 ---
 
 # Get statistics for a session.
 
 ## Connections
-- [[.get_session_stats()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_session_stats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist
+#graphify/rationale #graphify/EXTRACTED #community/ToolChainAnalyzer

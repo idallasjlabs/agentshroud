@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: ".test_collaborator_service_control_request_is_bl"
+community: "Contact Information"
 location: "L581"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_collaborator_service_control_request_is_bl
+  - community/Contact_Information
 ---
 
 # External Contacts
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Contact Information]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_collaborator_service_control_request_is_bl
+#graphify/document #graphify/EXTRACTED #community/Contact_Information

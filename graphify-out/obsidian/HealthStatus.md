@@ -1,28 +1,20 @@
 ---
-source_file: "gateway/soc/models.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: "EncryptedStore"
-location: "L50"
+community: "Enum"
+location: "L204"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/EncryptedStore
+  - graphify/INFERRED
+  - community/Enum
 ---
 
 # HealthStatus
 
 ## Connections
-- [[Any_68]] - `uses` [INFERRED]
-- [[Enum]] - `inherits` [EXTRACTED]
 - [[HealthStatus_1]] - `uses` [INFERRED]
 - [[ServiceDescriptor_1]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
 - [[ServiceStatus_1]] - `uses` [INFERRED]
-- [[models.py_1]] - `contains` [EXTRACTED]
-- [[services.py]] - `imports` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
-- [[test_soc_models.py]] - `imports` [EXTRACTED]
-- [[test_soc_services.py]] - `imports` [EXTRACTED]
-- [[test_soc_services_coverage.py]] - `imports` [EXTRACTED]
+- [[_engine_health_to_health()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EncryptedStore
+#graphify/code #graphify/INFERRED #community/Enum

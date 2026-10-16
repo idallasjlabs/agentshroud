@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-whitepaper.md"
 type: "concept"
-community: "SecurityConfig"
+community: "AgentShroud v0.7.0 Enforcement Audit Results"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/SecurityConfig
+  - community/AgentShroud_v070_Enforcement_Audit_Results
 ---
 
 # GitGuard (supply-chain hook scanning)
@@ -16,4 +16,4 @@ tags:
 - [[AgentShroud v0.7.0 Enforcement Audit Results]] - `references` [EXTRACTED]
 - [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/SecurityConfig
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results

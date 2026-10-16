@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "Quick Reference — AgentShroud"
+community: "SubagentGovernance"
 location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Quick_Reference__AgentShroud
+  - community/SubagentGovernance
 ---
 
 # GovernanceConfig
 
 ## Connections
-- [[.__init__()_119]] - `references` [EXTRACTED]
-- [[.test_api_calls_exceed()]] - `calls` [EXTRACTED]
-- [[.test_tokens_exceed_budget()]] - `calls` [EXTRACTED]
-- [[.test_tool_calls_budget_blocks_authorize_tool()]] - `calls` [EXTRACTED]
-- [[.test_warning_at_80_percent()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_146]] - `references` [EXTRACTED]
+- [[dot-test_api_calls_exceed()]] - `calls` [EXTRACTED]
+- [[dot-test_tokens_exceed_budget()]] - `calls` [EXTRACTED]
+- [[dot-test_tool_calls_budget_blocks_authorize_tool()]] - `calls` [EXTRACTED]
+- [[dot-test_warning_at_80_percent()]] - `calls` [EXTRACTED]
 - [[TestLifecycle_1]] - `uses` [INFERRED]
 - [[TestOutputTrustScoring]] - `uses` [INFERRED]
 - [[TestPatternDetection]] - `uses` [INFERRED]
@@ -30,4 +30,4 @@ tags:
 - [[subagent_governance.py]] - `contains` [EXTRACTED]
 - [[test_subagent_governance.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Quick_Reference__AgentShroud
+#graphify/code #graphify/EXTRACTED #community/SubagentGovernance

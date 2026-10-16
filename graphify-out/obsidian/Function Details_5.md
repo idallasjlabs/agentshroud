@@ -1,21 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
 type: "document"
-community: "Step-by-Step Deployment"
-location: "L37"
+community: "drift_detector.py"
+location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Step-by-Step_Deployment
+  - community/drift_detectorpy
 ---
 
 # Function Details
 
 ## Connections
-- [[downgrade_version(request)]] - `contains` [EXTRACTED]
-- [[get_version_history()_1]] - `contains` [EXTRACTED]
-- [[rollback_version(request)]] - `contains` [EXTRACTED]
-- [[upgrade_version(request)]] - `contains` [EXTRACTED]
-- [[version_routes.py_2]] - `contains` [EXTRACTED]
+- [[ContainerSnapshot.config_hash()]] - `contains` [EXTRACTED]
+- [[DriftDetector.acknowledge_alert(alert_id)]] - `contains` [EXTRACTED]
+- [[DriftDetector.check_drift(current)]] - `contains` [EXTRACTED]
+- [[DriftDetector.get_alerts(container_id, unacknowledged_only, limit)]] - `contains` [EXTRACTED]
+- [[DriftDetector.set_baseline(snapshot)]] - `contains` [EXTRACTED]
+- [[drift_detector.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Deployment
+#graphify/document #graphify/EXTRACTED #community/drift_detectorpy

@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-hermes/SKILL.md"
 type: "document"
-community: "MCP OAuth preflight checker (mcp_oauth_preflight"
+community: "Hermes Podcast Production Orchestrator README"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/MCP_OAuth_preflight_checker_mcp_oauth_preflight
+  - community/Hermes_Podcast_Production_Orchestrator_README
 ---
 
 # Hermes Reference Verifier Skill
@@ -14,4 +14,4 @@ tags:
 - [[Hermes Podcast Production Orchestrator README]] - `references` [AMBIGUOUS]
 - [[Podcast Production Pipeline (multi-agent)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/MCP_OAuth_preflight_checker_mcp_oauth_preflight
+#graphify/document #graphify/INFERRED #community/Hermes_Podcast_Production_Orchestrator_README

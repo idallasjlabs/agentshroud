@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
 type: "document"
-community: "is_overloaded()"
+community: "First Time Setup"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/is_overloaded
+  - community/First_Time_Setup
 ---
 
 # First Time Setup.md
@@ -16,4 +16,4 @@ tags:
 - [[Restart Procedure_1]] - `references` [EXTRACTED]
 - [[Startup Errors_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/is_overloaded
+#graphify/document #graphify/EXTRACTED #community/First_Time_Setup

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v1.0/ROADMAP-POST-v1.0.md"
+source_file: "docs/planning/redteam/v0.7.0-remediation-plan.md"
 type: "document"
-community: "1password-skill.sh"
-location: "L33"
+community: "AgentShroud v0.7.0 — Red Team Remediation Plan"
+location: "L232"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1password-skillsh
+  - community/AgentShroud_v070__Red_Team_Remediation_Plan
 ---
 
 # Implementation Notes
 
 ## Connections
-- [[Apple Platform Integration]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.7.0 — Red Team Remediation Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1password-skillsh
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070__Red_Team_Remediation_Plan

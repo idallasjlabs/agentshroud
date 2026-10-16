@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-gg/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mc/SKILL.md"
 type: "document"
-community: "Quick Reference"
-location: "L69"
+community: "GSDE&G Development Master Checklist"
+location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_Reference
+  - community/GSDEG_Development_Master_Checklist
 ---
 
 # Emergency Hotfix
 
 ## Connections
-- [[Skill Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_Reference
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: ".test_owner_revoke_command_requires_target_user_"
+community: "Incident Classification System"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_owner_revoke_command_requires_target_user_
+  - community/Incident_Classification_System
 ---
 
 # Incident Classification System
@@ -16,4 +16,4 @@ tags:
 - [[Priority Levels]] - `contains` [EXTRACTED]
 - [[Severity Assessment Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_owner_revoke_command_requires_target_user_
+#graphify/document #graphify/EXTRACTED #community/Incident_Classification_System

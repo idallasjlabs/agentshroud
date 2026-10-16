@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "rationale"
-community: "MCPAuditTrail"
+community: "scanner_integration.py"
 location: "L950"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPAuditTrail
+  - community/scanner_integrationpy
 ---
 
 # ISO 42001 domain map references only valid domain IDs.
 
 ## Connections
-- [[.test_iso_42001_domain_map_valid()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_iso_42001_domain_map_valid()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPAuditTrail
+#graphify/rationale #graphify/EXTRACTED #community/scanner_integrationpy

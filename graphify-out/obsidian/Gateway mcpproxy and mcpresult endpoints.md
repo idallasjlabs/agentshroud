@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/mcp-proxy-wrapper.js"
 type: "concept"
-community: "egress_config.py"
+community: "mcp-proxy-wrapper.js"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/egress_configpy
+  - community/mcp-proxy-wrapperjs
 ---
 
 # Gateway /mcp/proxy and /mcp/result endpoints
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[mcp-proxy-wrapper.js]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/egress_configpy
+#graphify/concept #graphify/EXTRACTED #community/mcp-proxy-wrapperjs

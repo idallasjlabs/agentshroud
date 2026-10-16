@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "llm_proxy.py"
+community: "Implementation Status"
 location: "L349"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/llm_proxypy
+  - community/Implementation_Status
 ---
 
 # Emergency Override
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Credential Security Policy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/llm_proxypy
+#graphify/document #graphify/EXTRACTED #community/Implementation_Status

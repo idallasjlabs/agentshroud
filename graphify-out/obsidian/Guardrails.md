@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ab/SKILL.md"
+source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "document"
-community: "CredentialInjector"
-location: "L226"
+community: "Skill: Hermes Dev Workflow (HDEV)"
+location: "L478"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CredentialInjector
+  - community/Skill_Hermes_Dev_Workflow_HDEV
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill Audit Branch (AB) — Merge Regression Detection]] - `contains` [EXTRACTED]
+- [[Skill Hermes Dev Workflow (HDEV)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CredentialInjector
+#graphify/document #graphify/EXTRACTED #community/Skill_Hermes_Dev_Workflow_HDEV

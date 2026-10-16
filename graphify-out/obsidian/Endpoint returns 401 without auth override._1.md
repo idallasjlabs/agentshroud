@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_op_proxy.py"
 type: "rationale"
-community: "Mode A — Single task"
+community: "_is_op_reference_allowed"
 location: "L185"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task
+  - community/_is_op_reference_allowed
 ---
 
 # Endpoint returns 401 without auth override.
 
 ## Connections
-- [[.test_requires_auth()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-test_requires_auth()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Mode_A__Single_task
+#graphify/rationale #graphify/EXTRACTED #community/_is_op_reference_allowed

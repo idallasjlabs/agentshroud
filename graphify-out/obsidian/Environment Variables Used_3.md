@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
 type: "document"
-community: "_get_gmail_app_password()"
+community: "middleware.py"
 location: "L110"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_get_gmail_app_password
+  - community/middlewarepy
 ---
 
 # Environment Variables Used
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[middleware.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_get_gmail_app_password
+#graphify/document #graphify/EXTRACTED #community/middlewarepy

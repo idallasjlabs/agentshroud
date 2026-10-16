@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/ingest_api/routes/forward.py"
-type: "code"
-community: "RateLimiter"
-location: "L332"
+source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
+type: "document"
+community: "models.py"
+location: "L43"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/modelspy
 ---
 
 # ForwardRequest
 
 ## Connections
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[_process_inbound()]] - `references` [EXTRACTED]
-- [[_resolve_user_trust_level()]] - `references` [EXTRACTED]
-- [[forward_content()]] - `references` [EXTRACTED]
-- [[forward_content_stream()]] - `references` [EXTRACTED]
+- [[Model Details]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimiter
+#graphify/document #graphify/EXTRACTED #community/modelspy

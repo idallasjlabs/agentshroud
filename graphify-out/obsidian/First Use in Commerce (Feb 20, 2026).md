@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/legal/PRIOR-USE.md"
 type: "concept"
-community: "Message Composition with MML (MIME Meta Language"
+community: "AgentShroud™ — Trademark Prior Use Record"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Message_Composition_with_MML_MIME_Meta_Language
+  - community/AgentShroud__Trademark_Prior_Use_Record
 ---
 
 # First Use in Commerce (Feb 20, 2026)
@@ -14,4 +14,4 @@ tags:
 - [[PRIOR-USE]] - `references` [EXTRACTED]
 - [[USPTO Class 042 Filing (ScientificTechnological Services)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Message_Composition_with_MML_MIME_Meta_Language
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record

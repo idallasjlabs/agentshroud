@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-mc/SKILL.md"
 type: "concept"
-community: "SecurityEvent"
+community: "GSDE&G Development Master Checklist Skill"
 tags:
   - graphify/concept
-  - graphify/INFERRED
-  - community/SecurityEvent
+  - graphify/EXTRACTED
+  - community/GSDEG_Development_Master_Checklist_Skill
 ---
 
 # GSDE&G SDLC Lifecycle (Plan-TDD-QA-CR-PR-CI-Deploy)
@@ -14,4 +14,4 @@ tags:
 - [[GIT-GUARD Skill]] - `conceptually_related_to` [INFERRED]
 - [[GSDE&G Development Master Checklist Skill]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/SecurityEvent
+#graphify/concept #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_Skill

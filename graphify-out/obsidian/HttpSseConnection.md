@@ -1,35 +1,35 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "test_voice_gateway.py"
+community: "StdioConnection"
 location: "L158"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_voice_gatewaypy
+  - community/StdioConnection
 ---
 
 # HttpSseConnection
 
 ## Connections
-- [[.__init__()_29]] - `method` [EXTRACTED]
-- [[.get_or_create()]] - `references` [EXTRACTED]
-- [[.send_request()_1]] - `method` [EXTRACTED]
-- [[.stop()_3]] - `method` [EXTRACTED]
-- [[.test_missing_aiohttp_raises_runtime_error()]] - `calls` [EXTRACTED]
-- [[.test_send_request_and_session_reuse()]] - `calls` [EXTRACTED]
-- [[Exception_4]] - `uses` [INFERRED]
+- [[dot-__init__()_150]] - `method` [EXTRACTED]
+- [[dot-get_or_create()]] - `references` [EXTRACTED]
+- [[dot-send_request()_1]] - `method` [EXTRACTED]
+- [[dot-stop()_3]] - `method` [EXTRACTED]
+- [[dot-test_missing_aiohttp_raises_runtime_error()]] - `calls` [EXTRACTED]
+- [[dot-test_send_request_and_session_reuse()]] - `calls` [EXTRACTED]
+- [[Exception]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
-- [[InspectionResult]] - `uses` [INFERRED]
+- [[InspectionResult_1]] - `uses` [INFERRED]
 - [[MCPAuditTrail]] - `uses` [INFERRED]
 - [[MCPInspector]] - `uses` [INFERRED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxy_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPProxy]] - `uses` [INFERRED]
 - [[MCPProxyConfig]] - `uses` [INFERRED]
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
-- [[MCPServerConfig]] - `uses` [INFERRED]
+- [[MCPServerConfig_2]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
 - [[Manages an HTTPSSE connection to an MCP server.]] - `rationale_for` [EXTRACTED]
@@ -48,4 +48,4 @@ tags:
 - [[mcp_proxy.py]] - `contains` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_voice_gatewaypy
+#graphify/code #graphify/INFERRED #community/StdioConnection

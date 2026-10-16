@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Update AgentShroud"
+community: "Integration Guide"
 location: "L154"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Update_AgentShroud
+  - community/Integration_Guide
 ---
 
 # HTTP Proxy Mode
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Generic AI Agent Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Update_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Integration_Guide

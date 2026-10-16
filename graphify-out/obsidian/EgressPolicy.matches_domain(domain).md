@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
 type: "document"
-community: "_FakeUpstreamWS"
+community: "EgressFilter"
 location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_FakeUpstreamWS
+  - community/EgressFilter
 ---
 
 # EgressPolicy.matches_domain(domain)
 
 ## Connections
-- [[Function Details_35]] - `contains` [EXTRACTED]
+- [[Function Details]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_FakeUpstreamWS
+#graphify/document #graphify/EXTRACTED #community/EgressFilter

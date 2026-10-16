@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-crpr/SKILL.md"
+source_file: ".agents/skills/i-aws/SKILL.md"
 type: "document"
-community: "v1.3.0 — Platform Expansion (53 items)"
-location: "L254"
+community: "AWS Cloud Management & FinOps Agent"
+location: "L388"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/v130__Platform_Expansion_53_items
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill Create PR with Pre-Flight Audit (CRPR)_1]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/v130__Platform_Expansion_53_items
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

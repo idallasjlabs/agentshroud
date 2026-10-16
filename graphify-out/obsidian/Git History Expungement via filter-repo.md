@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/secrets-inventory.md"
 type: "rationale"
-community: "Container Security Policy — AgentShroud"
+community: "ESP32-S3-BOX-3 Voice Terminal"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Container_Security_Policy__AgentShroud
+  - community/ESP32-S3-BOX-3_Voice_Terminal
 ---
 
 # Git History Expungement via filter-repo
@@ -15,4 +15,4 @@ tags:
 - [[Post-Purge Gitleaks Verification]] - `conceptually_related_to` [INFERRED]
 - [[Real Credentials Present in Git History]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Container_Security_Policy__AgentShroud
+#graphify/rationale #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal

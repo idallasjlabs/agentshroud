@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
 type: "document"
-community: "TestFromAuditChainEntry"
-location: "L84"
+community: "clamav_scanner.py"
+location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestFromAuditChainEntry
+  - community/clamav_scannerpy
 ---
 
 # Environment Variables
 
 ## Connections
-- [[dns_filter.py_2]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFromAuditChainEntry
+#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/weather/SKILL.md"
 type: "document"
-community: "Findings"
+community: "Weather Skill"
 location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Findings
+  - community/Weather_Skill
 ---
 
 # Forecasts
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Commands_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Findings
+#graphify/document #graphify/EXTRACTED #community/Weather_Skill

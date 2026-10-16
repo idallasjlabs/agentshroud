@@ -1,20 +1,20 @@
 ---
 source_file: ".agents/skills/i-hermes/README.md"
 type: "document"
-community: "Browser Fetch Skill"
+community: "Hermes — Podcast Production Orchestrator"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Fetch_Skill
+  - community/Hermes__Podcast_Production_Orchestrator
 ---
 
 # Hermes — Podcast Production Orchestrator
 
 ## Connections
-- [[Purpose_12]] - `contains` [EXTRACTED]
-- [[README_12]] - `contains` [EXTRACTED]
-- [[Related Skills_12]] - `contains` [EXTRACTED]
-- [[Usage_14]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-hermesREADME]] - `contains` [EXTRACTED]
+- [[Purpose_14]] - `contains` [EXTRACTED]
+- [[Related Skills_7]] - `contains` [EXTRACTED]
+- [[Usage_10]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Fetch_Skill
+#graphify/document #graphify/EXTRACTED #community/Hermes__Podcast_Production_Orchestrator

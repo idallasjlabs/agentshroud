@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "FileSandbox"
+community: "TelegramAPIProxy"
 location: "L7780"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/TelegramAPIProxy
 ---
 
 # Fail-closed member check for a group-context inbound message.          Returns T
 
 ## Connections
-- [[._enforce_group_workspace_access()]] - `rationale_for` [EXTRACTED]
+- [[dot-_enforce_group_workspace_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FileSandbox
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

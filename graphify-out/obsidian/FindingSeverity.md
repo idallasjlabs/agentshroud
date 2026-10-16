@@ -1,19 +1,22 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "EncryptedStore"
+community: "WebContentScanner"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/WebContentScanner
 ---
 
 # FindingSeverity
 
 ## Connections
-- [[Enum]] - `inherits` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[TestDangerousXMLDetection]] - `uses` [INFERRED]
+- [[TestDangerousXMLIsBlockedNotFlagged]] - `uses` [INFERRED]
+- [[str_3]] - `inherits` [EXTRACTED]
+- [[test_xml_dtd_control.py]] - `imports` [EXTRACTED]
 - [[web_content_scanner.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EncryptedStore
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

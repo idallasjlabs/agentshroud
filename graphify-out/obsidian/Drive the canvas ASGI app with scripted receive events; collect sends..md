@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "rationale"
-community: "AgentShroud Operations Cheat Sheet"
+community: "_FakeUpstreamWS"
 location: "L565"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Operations_Cheat_Sheet
+  - community/_FakeUpstreamWS
 ---
 
 # Drive the canvas ASGI app with scripted receive events; collect sends.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_run_asgi()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet
+#graphify/rationale #graphify/EXTRACTED #community/_FakeUpstreamWS

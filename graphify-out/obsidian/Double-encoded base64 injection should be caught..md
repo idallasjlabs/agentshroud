@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "Local LLM Support — Implementation Review"
+community: "AgentRegistry"
 location: "L819"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Local_LLM_Support__Implementation_Review
+  - community/AgentRegistry
 ---
 
 # Double-encoded base64 injection should be caught.
 
 ## Connections
-- [[.test_double_base64_injection()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_double_base64_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Local_LLM_Support__Implementation_Review
+#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry

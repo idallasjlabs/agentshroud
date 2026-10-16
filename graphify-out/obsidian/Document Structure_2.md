@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
+source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "Technical Specification"
+community: ".agents/skills/i-tw/SKILL.md"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Specification
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # Document Structure
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Technical Writer (TW)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Specification
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

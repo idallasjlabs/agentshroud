@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "document"
-community: "Kill Switch Procedure"
+community: "4. Environment Variables"
 location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Kill_Switch_Procedure
+  - community/4_Environment_Variables
 ---
 
 # Gateway Container (`agentshroud-gateway`)
@@ -17,4 +17,4 @@ tags:
 - [[Optional  Runtime]] - `contains` [EXTRACTED]
 - [[Required]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Kill_Switch_Procedure
+#graphify/document #graphify/EXTRACTED #community/4_Environment_Variables

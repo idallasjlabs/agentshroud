@@ -1,21 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "LVGL KAWAII FACE"
-location: "L31"
+community: "encrypted_store.py"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LVGL_KAWAII_FACE
+  - community/encrypted_storepy
 ---
 
 # Function Details
 
 ## Connections
-- [[HTTPForwarder.forward(path, body, headers, method)]] - `contains` [EXTRACTED]
-- [[HTTPForwarder.get_stats()]] - `contains` [EXTRACTED]
-- [[HTTPForwarder.health_check()]] - `contains` [EXTRACTED]
-- [[HTTPForwarder.set_response_handler(handler)]] - `contains` [EXTRACTED]
-- [[forwarder.py_2]] - `contains` [EXTRACTED]
+- [[EncryptedStore.__init__(master_secret, secret_path, iterations, key_id)]] - `contains` [EXTRACTED]
+- [[EncryptedStore.decrypt(blob)]] - `contains` [EXTRACTED]
+- [[EncryptedStore.encrypt(data)]] - `contains` [EXTRACTED]
+- [[EncryptedStore.rotate(blobs, new_secret, new_key_id)]] - `contains` [EXTRACTED]
+- [[_secure_zero(buffer)]] - `contains` [EXTRACTED]
+- [[encrypted_store.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LVGL_KAWAII_FACE
+#graphify/document #graphify/EXTRACTED #community/encrypted_storepy

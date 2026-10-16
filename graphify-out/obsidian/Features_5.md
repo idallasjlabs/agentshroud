@@ -1,17 +1,21 @@
 ---
-source_file: "skills/custom/browser-fetch/SKILL.md"
+source_file: "docs/planning/v0.9/v0.9.0-release-plan.md"
 type: "document"
-community: "TestRecommendedConfig"
+community: "4. Compliance & Standards Alignment"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestRecommendedConfig
+  - community/4_Compliance__Standards_Alignment
 ---
 
 # Features
 
 ## Connections
-- [[Browser Fetch Skill]] - `contains` [EXTRACTED]
+- [[1. Multi-Runtime Testing (Podman + Apple Containers)]] - `contains` [EXTRACTED]
+- [[2. Multi-Host Deployment Orchestration]] - `contains` [EXTRACTED]
+- [[3. ARM32  Low-Resource Support]] - `contains` [EXTRACTED]
+- [[4. Compliance & Standards Alignment]] - `contains` [EXTRACTED]
+- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestRecommendedConfig
+#graphify/document #graphify/EXTRACTED #community/4_Compliance__Standards_Alignment

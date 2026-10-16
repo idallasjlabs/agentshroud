@@ -1,20 +1,17 @@
 ---
-source_file: "docker/README.md"
+source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "AlertTelegramRelay"
-location: "L90"
+community: "Technical Details"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AlertTelegramRelay
+  - community/Technical_Details
 ---
 
 # Files
 
 ## Connections
-- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
-- [[Core Configuration]] - `contains` [EXTRACTED]
-- [[Documentation_3]] - `contains` [EXTRACTED]
-- [[Secrets_1]] - `contains` [EXTRACTED]
+- [[Technical Details]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AlertTelegramRelay
+#graphify/document #graphify/EXTRACTED #community/Technical_Details

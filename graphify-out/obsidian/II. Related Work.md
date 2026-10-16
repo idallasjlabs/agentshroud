@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "TestMCPProxyEndpoint"
+community: "AgentShroud: A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMCPProxyEndpoint
+  - community/AgentShroud_A_Transparent_Proxy_Framework_for_Enterprise_Governance_of_Autonomous_AI_Agents
 ---
 
 # II. Related Work
@@ -17,4 +17,4 @@ tags:
 - [[II-B. STPA-Sec]] - `contains` [EXTRACTED]
 - [[II-C. Transparent Proxy Architectures]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMCPProxyEndpoint
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_A_Transparent_Proxy_Framework_for_Enterprise_Governance_of_Autonomous_AI_Agents

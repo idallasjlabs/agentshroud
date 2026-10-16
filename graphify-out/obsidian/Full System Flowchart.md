@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Full System Flowchart.md"
 type: "document"
-community: ".get_or_create_session()"
+community: "Network Topology"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/get_or_create_session
+  - community/Network_Topology
 ---
 
 # Full System Flowchart.md
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Full System Flowchart_1]] - `contains` [EXTRACTED]
 - [[Network Topology_2]] - `references` [EXTRACTED]
-- [[README_128]] - `conceptually_related_to` [INFERRED]
 - [[Security Pipeline Flow]] - `references` [EXTRACTED]
+- [[gatewayREADME]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/get_or_create_session
+#graphify/document #graphify/EXTRACTED #community/Network_Topology

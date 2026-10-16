@@ -1,18 +1,17 @@
 ---
-source_file: "docs/security/cve-mitigation-matrix.md"
+source_file: "docs/planning/recovery/RECOVERY_PLAN.md"
 type: "document"
-community: "TestCheckCommandExecution"
-location: "L13"
+community: "AgentShroud Recovery Plan v0.4.0"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestCheckCommandExecution
+  - community/AgentShroud_Recovery_Plan_v040
 ---
 
-# Executive Summary
+# EXECUTIVE SUMMARY
 
 ## Connections
-- [[AgentShroud™ CVE Mitigation Matrix]] - `contains` [EXTRACTED]
-- [[Application CVEs (OpenClaw  Hermes)]] - `contains` [EXTRACTED]
+- [[AgentShroud Recovery Plan v0.4.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestCheckCommandExecution
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Recovery_Plan_v040

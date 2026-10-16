@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "lifespan.py"
+community: "AgentRegistry"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/AgentRegistry
 ---
 
 # DriftAlert
 
 ## Connections
-- [[.check_drift()]] - `references` [EXTRACTED]
-- [[drift_detector.py]] - `contains` [EXTRACTED]
+- [[dot-check_drift()]] - `references` [EXTRACTED]
+- [[drift_detector.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

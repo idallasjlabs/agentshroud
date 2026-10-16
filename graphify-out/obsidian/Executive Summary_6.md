@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-execution-summary-draft.md"
+source_file: "docs/planning/reviews/phase-review-p0-2026-02-23.md"
 type: "document"
-community: "wakeword.c"
-location: "L8"
+community: "Phase Review: P0 — Core Pipeline Wiring"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/wakewordc
+  - community/Phase_Review_P0__Core_Pipeline_Wiring
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud v0.8.0 Watchtower — Execution Summary (Draft)]] - `contains` [EXTRACTED]
+- [[Phase Review P0 — Core Pipeline Wiring]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/wakewordc
+#graphify/document #graphify/EXTRACTED #community/Phase_Review_P0__Core_Pipeline_Wiring

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "rationale"
-community: "AgentShroud v1.0.0 Fortress Release Announcement"
+community: "test_e2e.py"
 location: "L25"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_v100_Fortress_Release_Announcement
+  - community/test_e2epy
 ---
 
 # Fully initialized async client with lifespan.
 
 ## Connections
-- [[client()_6]] - `rationale_for` [EXTRACTED]
+- [[client()_11]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_v100_Fortress_Release_Announcement
+#graphify/rationale #graphify/EXTRACTED #community/test_e2epy

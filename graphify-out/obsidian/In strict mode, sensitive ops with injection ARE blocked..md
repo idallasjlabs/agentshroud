@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "rationale"
-community: "test_llm_proxy_local_parity.py"
+community: "MCPToolCall"
 location: "L250"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy
+  - community/MCPToolCall
 ---
 
 # In strict mode, sensitive ops with injection ARE blocked.
 
 ## Connections
-- [[.test_sensitive_blocked_strict_with_injection()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_sensitive_blocked_strict_with_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy
+#graphify/rationale #graphify/EXTRACTED #community/MCPToolCall

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/README.md"
 type: "document"
-community: "gateway.security.agent_cve_registry"
+community: "diagrams/README.md"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/gatewaysecurityagent_cve_registry
+  - community/diagrams/READMEmd
 ---
 
 # Index
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud — Diagram Library]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/gatewaysecurityagent_cve_registry
+#graphify/document #graphify/EXTRACTED #community/diagrams/READMEmd

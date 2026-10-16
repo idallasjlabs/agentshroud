@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/incident-response.md"
+source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: ".test_collaborator_service_control_request_is_bl"
-location: "L572"
+community: "GSDE&G Skills Reference"
+location: "L260"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_collaborator_service_control_request_is_bl
+  - community/GSDEG_Skills_Reference
 ---
 
 # Emergency Contacts
 
 ## Connections
-- [[Contact Information]] - `contains` [EXTRACTED]
+- [[Emergency Procedures_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_collaborator_service_control_request_is_bl
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference

@@ -1,17 +1,24 @@
 ---
-source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
+source_file: "docs/user-guide.md"
 type: "document"
-community: "llm_proxy.py"
-location: "L361"
+community: "AgentShroud User Guide"
+location: "L116"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/llm_proxypy
+  - community/AgentShroud_User_Guide
 ---
 
 # FAQ
 
 ## Connections
-- [[Credential Security Policy]] - `contains` [EXTRACTED]
+- [[AgentShroud User Guide]] - `contains` [EXTRACTED]
+- [[Q Can I request the AI to do something on the server]] - `contains` [EXTRACTED]
+- [[Q Can I use the bot in group chats]] - `contains` [EXTRACTED]
+- [[Q Can the AI see my personal information]] - `contains` [EXTRACTED]
+- [[Q How do I know my data is being protected]] - `contains` [EXTRACTED]
+- [[Q The bot isn't responding. What do I do]] - `contains` [EXTRACTED]
+- [[Q What happens if I accidentally send a password]] - `contains` [EXTRACTED]
+- [[Q What's the kill switch]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/llm_proxypy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_User_Guide

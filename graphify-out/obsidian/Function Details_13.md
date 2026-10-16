@@ -1,19 +1,25 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
 type: "document"
-community: "GSDE&G Development Master Checklist"
-location: "L31"
+community: "Function Details"
+location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist
+  - community/Function_Details
 ---
 
 # Function Details
 
 ## Connections
-- [[SidecarScanner.get_stats()]] - `contains` [EXTRACTED]
-- [[SidecarScanner.scan(request)]] - `contains` [EXTRACTED]
-- [[sidecar.py_2]] - `contains` [EXTRACTED]
+- [[SubagentMonitor.check_tool_usage(session_id, agent_id, tool_name, required_trust)]] - `contains` [EXTRACTED]
+- [[SubagentMonitor.deregister(session_id, agent_id)]] - `contains` [EXTRACTED]
+- [[SubagentMonitor.get_active(session_id)]] - `contains` [EXTRACTED]
+- [[SubagentMonitor.get_audit_log(session_id, agent_id)]] - `contains` [EXTRACTED]
+- [[SubagentMonitor.get_flagged_events(session_id)]] - `contains` [EXTRACTED]
+- [[SubagentMonitor.kill_agent(session_id, agent_id)]] - `contains` [EXTRACTED]
+- [[SubagentMonitor.kill_all(session_id)]] - `contains` [EXTRACTED]
+- [[SubagentMonitor.register_spawn(session_id, agent_id, parent_id, parent_trust)]] - `contains` [EXTRACTED]
+- [[subagent_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist
+#graphify/document #graphify/EXTRACTED #community/Function_Details

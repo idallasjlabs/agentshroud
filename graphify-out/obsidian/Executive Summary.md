@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/recovery/RECOVERY_PLAN.md"
+source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "sunday_run_scan_gate"
-location: "L9"
+community: "AgentShroud Security Architecture"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sunday_run_scan_gate
+  - community/AgentShroud_Security_Architecture
 ---
 
-# EXECUTIVE SUMMARY
+# Executive Summary
 
 ## Connections
-- [[AgentShroud Recovery Plan v0.4.0]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sunday_run_scan_gate
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

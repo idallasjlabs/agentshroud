@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "SECTION 1: COVER SHEET (Form PTO/SB/16)"
+community: "HostStatus"
 location: "L60"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SECTION_1_COVER_SHEET_Form_PTO/SB/16
+  - community/HostStatus
 ---
 
 # HostStatus
 
 ## Connections
-- [[Enum]] - `inherits` [EXTRACTED]
+- [[Enum_2]] - `inherits` [EXTRACTED]
 - [[Outcome classification for a single host.]] - `rationale_for` [EXTRACTED]
-- [[Path_33]] - `uses` [INFERRED]
+- [[Path_63]] - `uses` [INFERRED]
 - [[TestBuildSshArgv]] - `uses` [INFERRED]
-- [[TestClassify]] - `uses` [INFERRED]
+- [[TestClassify_1]] - `uses` [INFERRED]
 - [[TestHostResult]] - `uses` [INFERRED]
-- [[TestMain]] - `uses` [INFERRED]
+- [[TestMain_1]] - `uses` [INFERRED]
 - [[TestMultiHostResultProperties]] - `uses` [INFERRED]
 - [[TestParseHosts]] - `uses` [INFERRED]
 - [[TestParserAndCommandResolution]] - `uses` [INFERRED]
@@ -26,9 +26,9 @@ tags:
 - [[TestSshRunner]] - `uses` [INFERRED]
 - [[TestTail]] - `uses` [INFERRED]
 - [[TestWrapperSubprocess]] - `uses` [INFERRED]
-- [[classify()]] - `references` [EXTRACTED]
+- [[classify()_1]] - `references` [EXTRACTED]
 - [[multi_host_test.py]] - `contains` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[str_2]] - `inherits` [EXTRACTED]
 - [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SECTION_1_COVER_SHEET_Form_PTO/SB/16
+#graphify/code #graphify/INFERRED #community/HostStatus

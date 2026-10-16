@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "_make_proxy()"
+community: "TelegramAPIProxy"
 location: "L663"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/TelegramAPIProxy
 ---
 
 # Form payload legacy 'Protected' wording should normalize to canonical protected
 
 ## Connections
-- [[.test_collaborator_legacy_protected_prefix_is_normalized_form()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_collaborator_legacy_protected_prefix_is_normalized_form()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_proxy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

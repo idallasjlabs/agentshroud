@@ -1,23 +1,25 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
 type: "document"
-community: "TestDNSForwarderProtocol"
-location: "L29"
+community: "Function Details"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestDNSForwarderProtocol
+  - community/Function_Details
 ---
 
 # Function Details
 
 ## Connections
-- [[MCPAuditTrail.generate_report()]] - `contains` [EXTRACTED]
-- [[MCPAuditTrail.log_tool_call(agent_id, server_name, tool_name, parameters, findings_count, threat_level, blocked, block_reason, pii_redacted, call_id)]] - `contains` [EXTRACTED]
-- [[MCPAuditTrail.log_tool_result(call_id, agent_id, server_name, tool_name, success, error_message, result_summary, findings_count, threat_level, pii_redacted)]] - `contains` [EXTRACTED]
-- [[MCPAuditTrail.start_call(call_id)]] - `contains` [EXTRACTED]
-- [[MCPAuditTrail.verify_chain()]] - `contains` [EXTRACTED]
-- [[Query Methods]] - `contains` [EXTRACTED]
-- [[mcp_audit.py_2]] - `contains` [EXTRACTED]
+- [[ResourceGuard.__init__(limits)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.add_alert_callback(callback)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.check_cpu_limit(agent_id)  check_memory_limit(agent_id)  check_disk_write_limit(agent_id)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.check_resource(agent_id, resource_type, amount)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.cleanup_temp_files(agent_id)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.get_usage_stats(agent_id)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.register_temp_file(agent_id, file_path)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.start_request_tracking(agent_id)]] - `contains` [EXTRACTED]
+- [[resource_guard.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestDNSForwarderProtocol
+#graphify/document #graphify/EXTRACTED #community/Function_Details

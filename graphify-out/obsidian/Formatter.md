@@ -1,17 +1,17 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "launch-instance.sh"
+community: "main.rs"
 location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/launch-instancesh
+  - community/mainrs
 ---
 
 # Formatter
 
 ## Connections
-- [[.fmt()]] - `references` [EXTRACTED]
+- [[dot-fmt()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/launch-instancesh
+#graphify/code #graphify/EXTRACTED #community/mainrs

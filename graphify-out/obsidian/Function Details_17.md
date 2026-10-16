@@ -1,23 +1,24 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/podman_engine.py.md"
 type: "document"
-community: "_mock_dir_with_files()"
-location: "L33"
+community: "Function Details"
+location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_mock_dir_with_files
+  - community/Function_Details
 ---
 
 # Function Details
 
 ## Connections
-- [[WebContentScanner._scan_encoded_payloads(content, result)]] - `contains` [EXTRACTED]
-- [[WebContentScanner._scan_hidden_content(content, result)]] - `contains` [EXTRACTED]
-- [[WebContentScanner._scan_pii(content, result)]] - `contains` [EXTRACTED]
-- [[WebContentScanner._scan_prompt_injection(content, result)]] - `contains` [EXTRACTED]
-- [[WebContentScanner._scan_zero_width(content, result)]] - `contains` [EXTRACTED]
-- [[WebContentScanner.scan(content, content_type)]] - `contains` [EXTRACTED]
-- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
+- [[PodmanEngine.__init__(cli)]] - `contains` [EXTRACTED]
+- [[PodmanEngine._detect_compose()]] - `contains` [EXTRACTED]
+- [[PodmanEngine.compose_up(file, detach)  compose_down(file)]] - `contains` [EXTRACTED]
+- [[PodmanEngine.generate_systemd(name)]] - `contains` [EXTRACTED]
+- [[PodmanEngine.health_check()]] - `contains` [EXTRACTED]
+- [[PodmanEngine.ps(all)]] - `contains` [EXTRACTED]
+- [[PodmanEngine.run(image, name, , volumes, ...)]] - `contains` [EXTRACTED]
+- [[podman_engine.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_mock_dir_with_files
+#graphify/document #graphify/EXTRACTED #community/Function_Details

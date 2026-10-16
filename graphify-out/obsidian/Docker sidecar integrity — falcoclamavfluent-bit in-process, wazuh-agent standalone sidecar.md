@@ -1,16 +1,13 @@
 ---
 source_file: "CLAUDE.md"
 type: "rationale"
-community: "Skills by Category"
+community: "Docker sidecar integrity — falco/clamav/fluent-bit in-process, wazuh-agent standalone sidecar"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Skills_by_Category
+  - community/Docker_sidecar_integrity__falco/clamav/fluent-bit_in-process_wazuh-agent_standalone_sidecar
 ---
 
 # Docker sidecar integrity — falco/clamav/fluent-bit in-process, wazuh-agent standalone sidecar
 
-## Connections
-- [[wazuh-agent service (standalone sidecar, split from gateway 2026-09-06)]] - `references` [EXTRACTED]
-
-#graphify/rationale #graphify/EXTRACTED #community/Skills_by_Category
+#graphify/rationale #graphify/EXTRACTED #community/Docker_sidecar_integrity__falco/clamav/fluent-bit_in-process_wazuh-agent_standalone_sidecar

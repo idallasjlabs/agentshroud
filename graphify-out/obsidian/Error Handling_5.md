@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
+source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "gateway.proxy.llm_proxy"
-location: "L121"
+community: "xurl — Agent Skill Reference"
+location: "L444"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/gatewayproxyllm_proxy
+  - community/xurl__Agent_Skill_Reference
 ---
 
 # Error Handling
 
 ## Connections
-- [[Technical Specification_2]] - `contains` [EXTRACTED]
+- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/gatewayproxyllm_proxy
+#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference

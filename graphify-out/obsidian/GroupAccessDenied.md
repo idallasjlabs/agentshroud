@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "test_security_audit.py"
+community: "RBACConfig"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_security_auditpy
+  - community/RBACConfig
 ---
 
 # GroupAccessDenied
 
 ## Connections
-- [[.resolve_workspace()]] - `calls` [EXTRACTED]
+- [[dot-resolve_workspace()]] - `calls` [EXTRACTED]
 - [[PermissionError]] - `inherits` [EXTRACTED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[Raised when a user is not permitted to access a group workspace.      Subclasses]] - `rationale_for` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[group_workspace.py]] - `contains` [EXTRACTED]
 - [[test_group_workspace_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_security_auditpy
+#graphify/code #graphify/INFERRED #community/RBACConfig

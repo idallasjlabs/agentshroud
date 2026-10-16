@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "Local LLM Support — Implementation Review"
+community: "AgentRegistry"
 location: "L811"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Local_LLM_Support__Implementation_Review
+  - community/AgentRegistry
 ---
 
 # Fullwidth chars NFKC-normalized — injection defeated.
 
 ## Connections
-- [[.test_fullwidth_detection()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_fullwidth_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Local_LLM_Support__Implementation_Review
+#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry

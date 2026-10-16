@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "Integration Guide"
+community: "ToolResultSanitizer"
 location: "L91"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Integration_Guide
+  - community/ToolResultSanitizer
 ---
 
 # Enhanced markdown sanitizer with configurable domain allowlist.
 
 ## Connections
-- [[ToolResultSanitizer_1]] - `rationale_for` [EXTRACTED]
+- [[ToolResultSanitizer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Integration_Guide
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

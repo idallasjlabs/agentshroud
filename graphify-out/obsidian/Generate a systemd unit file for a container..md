@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/podman_engine.py"
 type: "rationale"
-community: "GatewayEmailService"
+community: "PodmanEngine"
 location: "L196"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/PodmanEngine
 ---
 
 # Generate a systemd unit file for a container.
 
 ## Connections
-- [[.generate_systemd()]] - `rationale_for` [EXTRACTED]
+- [[dot-generate_systemd()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/rationale #graphify/EXTRACTED #community/PodmanEngine

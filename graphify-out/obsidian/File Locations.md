@@ -1,17 +1,17 @@
 ---
-source_file: "branding/QUICK-REFERENCE.md"
+source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "agentshroud-ssh-exec.sh"
-location: "L75"
+community: "AgentShroud Device Pairing Management"
+location: "L432"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-ssh-execsh
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # File Locations
 
 ## Connections
-- [[AgentShroud Brand Quick Reference]] - `contains` [EXTRACTED]
+- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-ssh-execsh
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "Production Safety Checklist (SKILL)"
+community: "EgressAttempt"
 location: "L160"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_SKILL
+  - community/EgressAttempt
 ---
 
 # Get effective policy for an agent.
 
 ## Connections
-- [[.get_policy()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_policy()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL
+#graphify/rationale #graphify/EXTRACTED #community/EgressAttempt

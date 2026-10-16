@@ -1,11 +1,11 @@
 ---
 source_file: "CHANGELOG.md"
 type: "rationale"
-community: "ssh-configuration.md"
+community: "_seed_cron"
 tags:
   - graphify/rationale
-  - graphify/INFERRED
-  - community/ssh-configurationmd
+  - graphify/EXTRACTED
+  - community/_seed_cron
 ---
 
 # Duplicate/overlapping Hermes cron jobs colliding at same minute — retired duplicate
@@ -14,4 +14,4 @@ tags:
 - [[_seed_cron()]] - `references` [INFERRED]
 - [[v1.5.2 Release — local-model routing and cron reliability]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/INFERRED #community/ssh-configurationmd
+#graphify/rationale #graphify/EXTRACTED #community/_seed_cron

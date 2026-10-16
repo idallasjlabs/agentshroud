@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-13-network-security-egress.svg"
 type: "concept"
-community: "test-sunday-upgrade-scan.sh"
+community: "Domain allowlisted? (agentshroud.yaml proxy.allowed_domains)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test-sunday-upgrade-scansh
+  - community/Domain_allowlisted_agentshroudyaml_proxyallowed_domains
 ---
 
 # Domain allowlisted? (agentshroud.yaml proxy.allowed_domains)
@@ -16,4 +16,4 @@ tags:
 - [[HTTP CONNECT tunnel to gateway8181]] - `calls` [EXTRACTED]
 - [[HTTP_PROXY set (httpgateway8181)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test-sunday-upgrade-scansh
+#graphify/concept #graphify/EXTRACTED #community/Domain_allowlisted_agentshroudyaml_proxyallowed_domains

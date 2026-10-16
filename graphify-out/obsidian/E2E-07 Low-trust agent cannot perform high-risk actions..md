@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "WebProxyConfig"
+community: "PIIConfig"
 location: "L254"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/PIIConfig
 ---
 
 # E2E-07: Low-trust agent cannot perform high-risk actions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestE2E07TrustEnforcement]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

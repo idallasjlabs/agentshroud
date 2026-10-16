@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "Phase 3: MITIGATE (Rollback First!)"
+community: "FalcoAlertWatcher"
 location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First
+  - community/FalcoAlertWatcher
 ---
 
 # FalcoAlertWatcher
 
 ## Connections
-- [[.__init__()_80]] - `method` [EXTRACTED]
-- [[._handle_critical()]] - `method` [EXTRACTED]
-- [[._process_new_alerts()]] - `method` [EXTRACTED]
-- [[.run()_4]] - `method` [EXTRACTED]
-- [[.stop()_10]] - `method` [EXTRACTED]
-- [[SecurityPipeline]] - `conceptually_related_to` [INFERRED]
+- [[dot-__init__()_158]] - `method` [EXTRACTED]
+- [[dot-_handle_critical()]] - `method` [EXTRACTED]
+- [[dot-_process_new_alerts()]] - `method` [EXTRACTED]
+- [[dot-run()_6]] - `method` [EXTRACTED]
+- [[dot-stop()_10]] - `method` [EXTRACTED]
+- [[SecurityPipeline_2]] - `conceptually_related_to` [INFERRED]
 - [[Tail Falco alert files and trigger progressive lockdown on CRITICAL alerts.]] - `rationale_for` [EXTRACTED]
 - [[Test Falco Watcher Module]] - `references` [EXTRACTED]
 - [[falco_monitor.py]] - `contains` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[test_stop_halts_run_loop()]] - `calls` [EXTRACTED]
 - [[test_warning_alert_not_blocked()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

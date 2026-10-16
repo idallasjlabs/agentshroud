@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "StdioConnection"
+community: "telegram_proxy.py"
 location: "L7890"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/telegram_proxypy
 ---
 
 # Handle /projects — list accessible projects.
 
 ## Connections
-- [[._handle_projects_command()]] - `rationale_for` [EXTRACTED]
+- [[dot-_handle_projects_command()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/StdioConnection
+#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy

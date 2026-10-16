@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: ".test_collaborator_approval_action_request_is_bl"
+community: "Incident Response Team Structure"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_collaborator_approval_action_request_is_bl
+  - community/Incident_Response_Team_Structure
 ---
 
 # Incident Response Team Structure
@@ -16,4 +16,4 @@ tags:
 - [[Escalation Chain]] - `contains` [EXTRACTED]
 - [[Primary Roles]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_collaborator_approval_action_request_is_bl
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_Team_Structure

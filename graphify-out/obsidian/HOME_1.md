@@ -12,6 +12,6 @@ tags:
 # HOME
 
 ## Connections
-- [[start.sh_1]] - `defines` [EXTRACTED]
+- [[start.sh]] - `defines` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/startsh

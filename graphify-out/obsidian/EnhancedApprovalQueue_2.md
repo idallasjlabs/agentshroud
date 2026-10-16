@@ -1,27 +1,24 @@
 ---
-source_file: "gateway/tests/test_mfa_guard.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "TestAuth"
-location: "L410"
+community: "MCPPermissionManager"
+location: "L230"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TestAuth
+  - community/MCPPermissionManager
 ---
 
 # EnhancedApprovalQueue
 
 ## Connections
-- [[ApprovalQueue]] - `uses` [INFERRED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalRequest_3]] - `uses` [INFERRED]
-- [[ApprovalStore_1]] - `uses` [INFERRED]
-- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
-- [[MFAGuard_2]] - `uses` [INFERRED]
-- [[MFAResult]] - `uses` [INFERRED]
-- [[ToolRiskConfig_1]] - `uses` [INFERRED]
-- [[_submit_enhanced_high_risk()]] - `references` [EXTRACTED]
-- [[_submit_tool_call()]] - `references` [EXTRACTED]
-- [[enhanced_mfa_queue()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_151]] - `references` [EXTRACTED]
+- [[InspectionResult_1]] - `uses` [INFERRED]
+- [[MCPAuditTrail]] - `uses` [INFERRED]
+- [[MCPInspector]] - `uses` [INFERRED]
+- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
+- [[MCPServerConfig_2]] - `uses` [INFERRED]
+- [[MCPTransport]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/TestAuth
+#graphify/code #graphify/INFERRED #community/MCPPermissionManager

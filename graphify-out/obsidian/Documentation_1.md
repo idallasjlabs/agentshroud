@@ -1,17 +1,17 @@
 ---
-source_file: "branding/INDEX.md"
+source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Atlas — Curriculum Architect"
-location: "L81"
+community: "Resources"
+location: "L636"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect
+  - community/Resources
 ---
 
 # Documentation
 
 ## Connections
-- [[🎨 Quick Access]] - `contains` [EXTRACTED]
+- [[Resources]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect
+#graphify/document #graphify/EXTRACTED #community/Resources

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-21-team-structure.png"
 type: "image"
-community: "OKE Channel — CPA Exam Context"
+community: "Claude Code (claude-sonnet-4-6) — Lead Engineer / Primary Developer"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/OKE_Channel__CPA_Exam_Context
+  - community/Claude_Code_claude-sonnet-4-6__Lead_Engineer_/_Primary_Developer
 ---
 
 # Gemini CLI — Secondary/Test Engineer (cannot direct Claude)
@@ -14,4 +14,4 @@ tags:
 - [[Claude Code (claude-sonnet-4-6) — Lead Engineer  Primary Developer]] - `conceptually_related_to` [EXTRACTED]
 - [[TeamAgent Role Structure Diagram]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/OKE_Channel__CPA_Exam_Context
+#graphify/image #graphify/EXTRACTED #community/Claude_Code_claude-sonnet-4-6__Lead_Engineer_/_Primary_Developer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cron_jobs_prompts.py"
 type: "rationale"
-community: "AgentShroud Recovery Plan v0.4.0"
+community: "test_cron_jobs_prompts.py"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Recovery_Plan_v040
+  - community/test_cron_jobs_promptspy
 ---
 
 # Every collaborator report prompt must instruct LLM to exclude short UIDs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_cron_prompts_exclude_short_uids()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Recovery_Plan_v040
+#graphify/rationale #graphify/EXTRACTED #community/test_cron_jobs_promptspy

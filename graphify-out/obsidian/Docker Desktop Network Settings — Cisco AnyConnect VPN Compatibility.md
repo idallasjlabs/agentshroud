@@ -1,12 +1,12 @@
 ---
 source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "TestFullAccessMiddlewareBypass"
+community: "Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestFullAccessMiddlewareBypass
+  - community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility
 ---
 
 # Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility
@@ -16,10 +16,10 @@ tags:
 - [[How to Apply]] - `contains` [EXTRACTED]
 - [[If It Stops Working After a VPN Reconnect]] - `contains` [EXTRACTED]
 - [[Network Architecture (unchanged)]] - `contains` [EXTRACTED]
-- [[Problem_1]] - `contains` [EXTRACTED]
+- [[Problem_2]] - `contains` [EXTRACTED]
 - [[Related Files]] - `contains` [EXTRACTED]
 - [[Root Cause_1]] - `contains` [EXTRACTED]
 - [[Settings Changed]] - `contains` [EXTRACTED]
-- [[Verification]] - `contains` [EXTRACTED]
+- [[Verification_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFullAccessMiddlewareBypass
+#graphify/document #graphify/EXTRACTED #community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility

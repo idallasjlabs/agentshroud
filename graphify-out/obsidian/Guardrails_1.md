@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-aws/SKILL.md"
+source_file: ".agents/skills/i-odev/SKILL.md"
 type: "document"
-community: "gen.py"
-location: "L388"
+community: "Skill: OpenClaw Dev Workflow (ODEV)"
+location: "L478"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/genpy
+  - community/Skill_OpenClaw_Dev_Workflow_ODEV
 ---
 
 # Guardrails
 
 ## Connections
-- [[AWS Cloud Management & FinOps Agent_2]] - `contains` [EXTRACTED]
+- [[Skill OpenClaw Dev Workflow (ODEV)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/genpy
+#graphify/document #graphify/EXTRACTED #community/Skill_OpenClaw_Dev_Workflow_ODEV

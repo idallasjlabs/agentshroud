@@ -1,17 +1,17 @@
 ---
-source_file: "skills/README.md"
+source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
 type: "document"
-community: "test_jira_weekly_review.py"
-location: "L5"
+community: "Dockerfile — Bot (OpenClaw)"
+location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_jira_weekly_reviewpy
+  - community/Dockerfile__Bot_OpenClaw
 ---
 
 # Directory Structure
 
 ## Connections
-- [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
+- [[Dockerfile — Bot (OpenClaw)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_jira_weekly_reviewpy
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw

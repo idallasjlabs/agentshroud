@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
+source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "package_skill()"
-location: "L260"
+community: "Contact Information"
+location: "L572"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/package_skill
+  - community/Contact_Information
 ---
 
 # Emergency Contacts
 
 ## Connections
-- [[Emergency Procedures]] - `contains` [EXTRACTED]
+- [[Contact Information]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/package_skill
+#graphify/document #graphify/EXTRACTED #community/Contact_Information

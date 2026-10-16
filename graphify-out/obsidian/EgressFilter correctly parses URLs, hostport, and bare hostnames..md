@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "test_http_proxy.py"
+community: "_make_filter"
 location: "L184"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_http_proxypy
+  - community/_make_filter
 ---
 
 # EgressFilter correctly parses URLs, host:port, and bare hostnames.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestURLParsing]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_http_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/_make_filter

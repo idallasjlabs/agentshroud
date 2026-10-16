@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/SKILL.md"
+source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "EgressTelegramNotifier"
+community: "Browser — Secure Browser Automation"
 location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressTelegramNotifier
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Fetch JavaScript-Heavy Page (Node.js)
 
 ## Connections
-- [[Usage_6]] - `contains` [EXTRACTED]
+- [[Usage_62]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressTelegramNotifier
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

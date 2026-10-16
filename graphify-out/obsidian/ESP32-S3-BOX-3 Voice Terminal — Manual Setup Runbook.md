@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "document"
-community: "AppleContainerEngine"
+community: "ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AppleContainerEngine
+  - community/ESP32-S3-BOX-3_Voice_Terminal__Manual_Setup_Runbook
 ---
 
 # ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook
@@ -26,7 +26,7 @@ tags:
 - [[8. Connect to Hermes (governed path) ✅ LIVE — Hermes is the boot-default agent]] - `contains` [EXTRACTED]
 - [[9. Bring-up order — one cause per failure]] - `contains` [EXTRACTED]
 - [[Quick-reference commands]] - `contains` [EXTRACTED]
-- [[SETUP]] - `contains` [EXTRACTED]
+- [[SETUP_4]] - `contains` [EXTRACTED]
 - [[What you're building]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AppleContainerEngine
+#graphify/document #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal__Manual_Setup_Runbook

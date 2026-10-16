@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "concept"
-community: "Function Details"
+community: "AgentShroud Security Value Proposition - Revised"
 location: "L443-521"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/AgentShroud_Security_Value_Proposition_-_Revised
 ---
 
 # IEC 62443 Compliance Matrix
@@ -16,6 +16,5 @@ tags:
 - [[AgentShroud Semgrep SAST Configuration]] - `conceptually_related_to` [INFERRED]
 - [[Approval Queue Control]] - `references` [EXTRACTED]
 - [[SECURITY_VALUE_PROPOSITION]] - `references` [EXTRACTED]
-- [[Three-tier network segmentation (IEC 62443 FR5)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Function_Details
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_Revised

@@ -1,18 +1,21 @@
 ---
-source_file: "voice_gateway/server.py"
-type: "code"
-community: "test_a2a_policy.py"
-location: "L357"
+source_file: "docs/vault/05 - Dependencies/fastapi.md"
+type: "document"
+community: "All Dependencies.md"
+location: "L9"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/All_Dependenciesmd
 ---
 
 # FastAPI
 
 ## Connections
-- [[_lifespan()]] - `references` [EXTRACTED]
-- [[server.py]] - `imports_from` [EXTRACTED]
+- [[Key FastAPI Features Used]] - `contains` [EXTRACTED]
+- [[Purpose_67]] - `contains` [EXTRACTED]
+- [[Related Notes_22]] - `contains` [EXTRACTED]
+- [[Where Used_2]] - `contains` [EXTRACTED]
+- [[fastapi_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

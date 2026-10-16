@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "WebProxyConfig"
+community: "PIIConfig"
 location: "L357"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/PIIConfig
 ---
 
 # E2E-10: SecurityPipeline refuses to operate without PII sanitizer.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestE2E10FailClosed]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

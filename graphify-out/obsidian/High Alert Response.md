@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "TestWazuhSummary"
+community: "4. Handling Alerts"
 location: "L314"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestWazuhSummary
+  - community/4_Handling_Alerts
 ---
 
 # High Alert Response
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[4. Handling Alerts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestWazuhSummary
+#graphify/document #graphify/EXTRACTED #community/4_Handling_Alerts

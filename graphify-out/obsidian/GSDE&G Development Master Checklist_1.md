@@ -1,18 +1,18 @@
 ---
 source_file: "docker/config/hermes/skills/i-mc/SKILL.md"
 type: "document"
-community: "Skill: Security Review (SEC)"
+community: "GSDE&G Development Master Checklist"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Security_Review_SEC
+  - community/GSDEG_Development_Master_Checklist
 ---
 
 # GSDE&G Development Master Checklist
 
 ## Connections
-- [[Emergency Hotfix_3]] - `contains` [EXTRACTED]
+- [[Emergency Hotfix_1]] - `contains` [EXTRACTED]
 - [[Phase 1 · Plan & Branch  → `ggSKILL.md`_1]] - `contains` [EXTRACTED]
 - [[Phase 2 · TDD  → `tddSKILL.md`_1]] - `contains` [EXTRACTED]
 - [[Phase 3 · QA  → `qaSKILL.md`_1]] - `contains` [EXTRACTED]
@@ -21,8 +21,8 @@ tags:
 - [[Phase 6 · CI  → `cicdSKILL.md`_1]] - `contains` [EXTRACTED]
 - [[Phase 7 · Deploy  → `psSKILL.md`_1]] - `contains` [EXTRACTED]
 - [[Quick Commands_1]] - `contains` [EXTRACTED]
-- [[SKILL_79]] - `contains` [EXTRACTED]
-- [[SKILL_94]] - `contains` [EXTRACTED]
 - [[Skill Index_1]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-mcSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "ToolResultSanitizer"
-location: "L596"
+community: "MCPPermissionManager"
+location: "L841"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/MCPPermissionManager
 ---
 
 # Get proxy statistics.
 
 ## Connections
-- [[.get_stats()_10]] - `rationale_for` [EXTRACTED]
+- [[dot-get_stats()_16]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

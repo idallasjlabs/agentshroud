@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "OpenClaw Bot Container"
+community: "management.py"
 location: "L933"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_Container
+  - community/managementpy
 ---
 
 # EgressAllowlistResponse
@@ -19,4 +19,4 @@ tags:
 - [[get_egress_allowlist()]] - `calls` [EXTRACTED]
 - [[management.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OpenClaw_Bot_Container
+#graphify/code #graphify/EXTRACTED #community/managementpy

@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "TestEgressTelegramNotify"
+community: "Applies to: Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)"
 location: "L110"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestEgressTelegramNotify
+  - community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary
 ---
 
 # EVERYTHING MEANS EVERYTHING (owner directive 2026-09-15, verbatim intent)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[0.05) WEEKLY UPGRADES — UNATTENDED, AND ON DEMAND]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestEgressTelegramNotify
+#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary

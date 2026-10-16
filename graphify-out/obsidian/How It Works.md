@@ -1,17 +1,19 @@
 ---
-source_file: "firmware/voice-terminal/SETUP.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "AppleContainerEngine"
-location: "L494"
+community: "Canvas Skill"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AppleContainerEngine
+  - community/Canvas_Skill
 ---
 
-# How it works
+# How It Works
 
 ## Connections
-- [[12. OTA Wireless Firmware Updates]] - `contains` [EXTRACTED]
+- [[Architecture_6]] - `contains` [EXTRACTED]
+- [[Canvas Skill]] - `contains` [EXTRACTED]
+- [[Tailscale Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AppleContainerEngine
+#graphify/document #graphify/EXTRACTED #community/Canvas_Skill

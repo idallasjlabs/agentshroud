@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "Daedalus — Concept Illustrator"
+community: "AgentShroud -- USPTO Provisional Patent Application"
 location: "L839"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator
+  - community/AgentShroud_--_USPTO_Provisional_Patent_Application
 ---
 
 # Employment IP Considerations
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SECTION 5 IMPORTANT NOTES]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Provisional_Patent_Application

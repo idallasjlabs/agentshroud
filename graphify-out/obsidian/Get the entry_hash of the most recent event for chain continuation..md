@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "rationale"
-community: "load_config()"
+community: "AuditEvent"
 location: "L374"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/load_config
+  - community/AuditEvent
 ---
 
 # Get the entry_hash of the most recent event for chain continuation.
 
 ## Connections
-- [[._get_latest_hash()]] - `rationale_for` [EXTRACTED]
+- [[dot-_get_latest_hash()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/load_config
+#graphify/rationale #graphify/EXTRACTED #community/AuditEvent

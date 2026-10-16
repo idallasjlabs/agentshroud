@@ -1,17 +1,17 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "test_block_credentials.py"
+community: "AgentShroud Audit Specification"
 location: "L227"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_block_credentialspy
+  - community/AgentShroud_Audit_Specification
 ---
 
 # Genesis Block Specification
 
 ## Connections
-- [[Hash Chain Structure_1]] - `contains` [EXTRACTED]
+- [[Hash Chain Structure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_block_credentialspy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification

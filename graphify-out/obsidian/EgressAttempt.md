@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "Production Safety Checklist (SKILL)"
+community: "EgressAttempt"
 location: "L36"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Production_Safety_Checklist_SKILL
+  - community/EgressAttempt
 ---
 
 # EgressAttempt
 
 ## Connections
-- [[._check_impl()]] - `references` [EXTRACTED]
-- [[._record()_1]] - `references` [EXTRACTED]
-- [[.check()_5]] - `references` [EXTRACTED]
-- [[.check_async()]] - `references` [EXTRACTED]
-- [[.get_log()]] - `references` [EXTRACTED]
-- [[EgressFilter_2]] - `uses` [INFERRED]
+- [[dot-_check_impl()]] - `references` [EXTRACTED]
+- [[dot-_record()_1]] - `references` [EXTRACTED]
+- [[dot-check()_3]] - `references` [EXTRACTED]
+- [[dot-check_async()]] - `references` [EXTRACTED]
+- [[dot-get_log()]] - `references` [EXTRACTED]
+- [[EgressFilter]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
-- [[FakeAuditStore]] - `uses` [INFERRED]
+- [[FakeAuditStore_1]] - `uses` [INFERRED]
 - [[TestAuditStorePersistence]] - `uses` [INFERRED]
 - [[TestEgressAttempt]] - `uses` [INFERRED]
 - [[TestEgressPolicy]] - `uses` [INFERRED]
@@ -32,7 +32,7 @@ tags:
 - [[TestPerAgentPolicy]] - `uses` [INFERRED]
 - [[TestSMTPIMAPPorts]] - `uses` [INFERRED]
 - [[TestURLParsing]] - `uses` [INFERRED]
-- [[egress_filter.py]] - `contains` [EXTRACTED]
+- [[egress_filter.py_1]] - `contains` [EXTRACTED]
 - [[test_egress_filter.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Production_Safety_Checklist_SKILL
+#graphify/code #graphify/INFERRED #community/EgressAttempt

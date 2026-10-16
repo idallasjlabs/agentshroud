@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-gg/README.md"
+source_file: ".agents/skills/i-gg/README.md"
 type: "document"
-community: "1. Accomplishments This Phase — Delivered Securi"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1_Accomplishments_This_Phase__Delivered_Securi
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Git Workflow Guardian (GIT-GUARD)
 
 ## Connections
-- [[Purpose_85]] - `contains` [EXTRACTED]
-- [[README_90]] - `contains` [EXTRACTED]
-- [[Related Skills_91]] - `contains` [EXTRACTED]
-- [[SKILL_142]] - `contains` [EXTRACTED]
-- [[Usage_94]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-ggREADME]] - `contains` [EXTRACTED]
+- [[Purpose_125]] - `contains` [EXTRACTED]
+- [[Related Skills_97]] - `contains` [EXTRACTED]
+- [[Usage_105]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1_Accomplishments_This_Phase__Delivered_Securi
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

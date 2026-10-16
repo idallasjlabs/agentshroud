@@ -1,17 +1,20 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
+source_file: "docs/runbooks/deployment.md"
 type: "document"
-community: "test_claude_via_openai_path.py"
-location: "L102"
+community: "Deployment Runbook — AgentShroud"
+location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_claude_via_openai_pathpy
+  - community/Deployment_Runbook__AgentShroud
 ---
 
 # Environment Variables
 
 ## Connections
-- [[TrustManager_5]] - `contains` [EXTRACTED]
+- [[4. Environment Variables]] - `contains` [EXTRACTED]
+- [[Deployment Runbook — AgentShroud]] - `contains` [EXTRACTED]
+- [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
+- [[auth.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_claude_via_openai_pathpy
+#graphify/document #graphify/EXTRACTED #community/Deployment_Runbook__AgentShroud

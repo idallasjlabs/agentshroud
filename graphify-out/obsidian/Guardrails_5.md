@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-release/SKILL.md"
+source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "document"
-community: "parse_query()"
-location: "L197"
+community: "AWS Cloud Management & FinOps Agent"
+location: "L388"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/parse_query
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill Release (i-release)]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/parse_query
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

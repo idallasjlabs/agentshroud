@@ -1,11 +1,11 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "concept"
-community: "IntelReportStore"
+community: "KillSwitchMonitor"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/IntelReportStore
+  - community/KillSwitchMonitor
 ---
 
 # FR2: Use Control
@@ -19,4 +19,4 @@ tags:
 - [[progressive_lockdown.py]] - `references` [EXTRACTED]
 - [[rbac.py]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/IntelReportStore
+#graphify/concept #graphify/EXTRACTED #community/KillSwitchMonitor

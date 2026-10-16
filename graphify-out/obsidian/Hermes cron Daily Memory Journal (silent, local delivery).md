@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/hermes/init-config.sh"
 type: "code"
-community: "TELEGRAM_ISSUES.md"
+community: "Report Delivery Format Instructions"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TELEGRAM_ISSUESmd
+  - community/Report_Delivery_Format_Instructions
 ---
 
 # Hermes cron: Daily Memory Journal (silent, local delivery)
@@ -14,4 +14,4 @@ tags:
 - [[Seed Job Daily Memory Journal]] - `semantically_similar_to` [INFERRED]
 - [[_seed_cron()]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd
+#graphify/code #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions

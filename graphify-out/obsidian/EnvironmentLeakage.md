@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "GroupApprovalRouter"
+community: "AlertDispatcher"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/AlertDispatcher
 ---
 
 # EnvironmentLeakage
 
 ## Connections
-- [[._record_leakage()]] - `calls` [EXTRACTED]
+- [[dot-_record_leakage()]] - `calls` [EXTRACTED]
 - [[Detected environment variable leakage.]] - `rationale_for` [EXTRACTED]
 - [[env_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

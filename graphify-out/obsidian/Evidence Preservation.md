@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "TestTextReaders"
+community: "Post-Incident Activities"
 location: "L537"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestTextReaders
+  - community/Post-Incident_Activities
 ---
 
 # Evidence Preservation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Incident Activities]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestTextReaders
+#graphify/document #graphify/EXTRACTED #community/Post-Incident_Activities

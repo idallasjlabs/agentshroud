@@ -1,11 +1,11 @@
 ---
 source_file: ".github/workflows/pages.yml"
 type: "document"
-community: "Release Notes - AgentShroud v0.9.0"
+community: "AgentShroud™ README"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Release_Notes_-_AgentShroud_v090
+  - community/AgentShroud_README
 ---
 
 # GitHub Pages Deploy Workflow
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud™ README]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Release_Notes_-_AgentShroud_v090
+#graphify/document #graphify/INFERRED #community/AgentShroud_README

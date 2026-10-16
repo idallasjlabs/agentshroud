@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "Enum"
+community: "MiddlewareManager"
 location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/MiddlewareManager
 ---
 
 # FileVerdict
 
 ## Connections
-- [[._check()]] - `references` [EXTRACTED]
-- [[.check_read()]] - `references` [EXTRACTED]
-- [[.check_write()]] - `references` [EXTRACTED]
+- [[dot-_check()]] - `references` [EXTRACTED]
+- [[dot-check_read()]] - `references` [EXTRACTED]
+- [[dot-check_write()]] - `references` [EXTRACTED]
 - [[file_sandbox.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

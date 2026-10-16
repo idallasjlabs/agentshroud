@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "AgentShroud Security Value Proposition - REVISED"
+community: "._parse_service_network_config"
 location: "L593"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition_-_REVISED
+  - community/_parse_service_network_config
 ---
 
 # Export network security report to file.
 
 ## Connections
-- [[.export_report()]] - `rationale_for` [EXTRACTED]
+- [[dot-export_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_REVISED
+#graphify/rationale #graphify/EXTRACTED #community/_parse_service_network_config

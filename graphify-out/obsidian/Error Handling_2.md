@@ -1,19 +1,17 @@
 ---
-source_file: ".github/agents/validation-runner.agent.md"
+source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
 type: "document"
-community: "SOCWebSocketHandler"
-location: "L177"
+community: "Mac App Discovery Skill"
+location: "L344"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - community/Mac_App_Discovery_Skill
 ---
 
 # Error Handling
 
 ## Connections
-- [[Validation Runner Specialist]] - `contains` [EXTRACTED]
-- [[When Environment Issues]] - `contains` [EXTRACTED]
-- [[When Validation Fails]] - `contains` [EXTRACTED]
+- [[Mac App Discovery Skill_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill

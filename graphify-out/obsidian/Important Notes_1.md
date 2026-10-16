@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/TELEGRAM_SETUP.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "asb"
-location: "L80"
+community: "AgentShroud Setup Guide"
+location: "L490"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/asb
+  - community/AgentShroud_Setup_Guide
 ---
 
 # Important Notes
 
 ## Connections
-- [[Security Considerations_1]] - `contains` [EXTRACTED]
+- [[1Password Integration_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/asb
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

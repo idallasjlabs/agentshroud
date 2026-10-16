@@ -1,24 +1,24 @@
 ---
 source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
 type: "document"
-community: "GATEWAY_OP_PROXY_URL"
+community: "Hermes — Reference Verifier"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GATEWAY_OP_PROXY_URL
+  - community/Hermes__Reference_Verifier
 ---
 
 # Hermes — Reference Verifier
 
 ## Connections
-- [[Input Requirements_15]] - `contains` [EXTRACTED]
-- [[Output Format_17]] - `contains` [EXTRACTED]
-- [[Persona_11]] - `contains` [EXTRACTED]
-- [[Quality Checklist_13]] - `contains` [EXTRACTED]
-- [[Role_52]] - `contains` [EXTRACTED]
-- [[SKILL_79]] - `contains` [EXTRACTED]
-- [[SKILL_88]] - `contains` [EXTRACTED]
-- [[System Prompt_11]] - `contains` [EXTRACTED]
+- [[Input Requirements_2]] - `contains` [EXTRACTED]
+- [[Output Format_1]] - `contains` [EXTRACTED]
+- [[Persona_1]] - `contains` [EXTRACTED]
+- [[Quality Checklist_2]] - `contains` [EXTRACTED]
+- [[Role_4]] - `contains` [EXTRACTED]
+- [[System Prompt_1]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-hermesSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GATEWAY_OP_PROXY_URL
+#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier

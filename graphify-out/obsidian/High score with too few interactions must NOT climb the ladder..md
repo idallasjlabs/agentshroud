@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "rationale"
-community: "MemoryIntegrityMonitor"
+community: "TrustConfig"
 location: "L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/TrustConfig
 ---
 
 # High score with too few interactions must NOT climb the ladder.
 
 ## Connections
-- [[.test_score_alone_cannot_promote_with_ladder()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_score_alone_cannot_promote_with_ladder()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/rationale #graphify/EXTRACTED #community/TrustConfig

@@ -1,25 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
 type: "document"
-community: "Shutdown & Recovery"
-location: "L38"
+community: "web_proxy.py"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Shutdown__Recovery
+  - community/web_proxypy
 ---
 
 # Function Details
 
 ## Connections
-- [[OAuthSecurityValidator.__init__(allowed_redirect_uris, require_pkce)]] - `contains` [EXTRACTED]
-- [[OAuthSecurityValidator.create_consent_cookie(client_id, scopes, user_id)]] - `contains` [EXTRACTED]
-- [[OAuthSecurityValidator.record_state_used(state)  check_state_reuse(state)]] - `contains` [EXTRACTED]
-- [[OAuthSecurityValidator.register_known_shared_ids(ids)]] - `contains` [EXTRACTED]
-- [[OAuthSecurityValidator.validate_consent_cookie(cookie, client_id, scopes, user_id)]] - `contains` [EXTRACTED]
-- [[OAuthSecurityValidator.validate_redirect_uri(uri)]] - `contains` [EXTRACTED]
-- [[OAuthSecurityValidator.validate_request(req)]] - `contains` [EXTRACTED]
-- [[OAuthSecurityValidator.verify_pkce(verifier, challenge, method)]] - `contains` [EXTRACTED]
-- [[oauth_security.py_2]] - `contains` [EXTRACTED]
+- [[RateLimiter.check(domain, rpm_limit)]] - `contains` [EXTRACTED]
+- [[WebProxy._audit(event_type, url, metadata)]] - `contains` [EXTRACTED]
+- [[WebProxy.check_request(url, method, headers)]] - `contains` [EXTRACTED]
+- [[WebProxy.scan_response(url, body, content_type, status_code, response_size)]] - `contains` [EXTRACTED]
+- [[web_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Shutdown__Recovery
+#graphify/document #graphify/EXTRACTED #community/web_proxypy

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "TrustManager"
+community: "TestPathIsolationManager"
 location: "L94"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/TestPathIsolationManager
 ---
 
 # End a user session and optionally clean up their isolated directory.
 
 ## Connections
-- [[.end_user_session()]] - `rationale_for` [EXTRACTED]
+- [[dot-end_user_session()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager

@@ -1,23 +1,23 @@
 ---
 source_file: ".agents/skills/i-hermes/SKILL.md"
 type: "document"
-community: "HIGH — Should Fix Before Release"
+community: "Hermes — Reference Verifier"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/HIGH__Should_Fix_Before_Release
+  - community/Hermes__Reference_Verifier
 ---
 
 # Hermes — Reference Verifier
 
 ## Connections
-- [[Input Requirements_5]] - `contains` [EXTRACTED]
-- [[Output Format_4]] - `contains` [EXTRACTED]
-- [[Persona_3]] - `contains` [EXTRACTED]
-- [[Quality Checklist_4]] - `contains` [EXTRACTED]
-- [[Role_15]] - `contains` [EXTRACTED]
-- [[SKILL_24]] - `contains` [EXTRACTED]
-- [[System Prompt_3]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-hermesSKILL]] - `contains` [EXTRACTED]
+- [[Input Requirements_1]] - `contains` [EXTRACTED]
+- [[Output Format]] - `contains` [EXTRACTED]
+- [[Persona]] - `contains` [EXTRACTED]
+- [[Quality Checklist_1]] - `contains` [EXTRACTED]
+- [[Role_2]] - `contains` [EXTRACTED]
+- [[System Prompt]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/HIGH__Should_Fix_Before_Release
+#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier

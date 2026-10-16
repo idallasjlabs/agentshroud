@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "quick-setup.sh script"
+community: "Error Index.md"
 location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/quick-setupsh_script
+  - community/Error_Indexmd
 ---
 
 # Fallback Behavior
 
 ## Connections
-- [[spaCy]] - `contains` [EXTRACTED]
+- [[spaCy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/quick-setupsh_script
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

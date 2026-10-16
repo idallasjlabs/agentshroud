@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
+source_file: "branding/INDEX.md"
 type: "document"
-community: "translate_openai_sse_to_anthropic()"
-location: "L636"
+community: "AgentShroud Branding Assets Index"
+location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/translate_openai_sse_to_anthropic
+  - community/AgentShroud_Branding_Assets_Index
 ---
 
 # Documentation
 
 ## Connections
-- [[Resources]] - `contains` [EXTRACTED]
+- [[🎨 Quick Access]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/translate_openai_sse_to_anthropic
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Branding_Assets_Index

@@ -1,18 +1,17 @@
 ---
 source_file: "reports/upgrade-2026-09-20.md"
 type: "concept"
-community: "Skills by Category"
+community: "Sunday Upgrade Report — 2026-09-20 (PROD run, full)"
 location: "L232-246"
 tags:
   - graphify/concept
-  - graphify/INFERRED
-  - community/Skills_by_Category
+  - graphify/EXTRACTED
+  - community/Sunday_Upgrade_Report__2026-09-20_PROD_run_full
 ---
 
 # Floating-tag containers found (github-mcp-server:latest, home-assistant:stable)
 
 ## Connections
 - [[Sunday Upgrade Report — 2026-09-20 (PROD run, full)]] - `references` [EXTRACTED]
-- [[docker-socket-proxy service (scoped, no image-pull, digest-pinned)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Skills_by_Category
+#graphify/concept #graphify/EXTRACTED #community/Sunday_Upgrade_Report__2026-09-20_PROD_run_full

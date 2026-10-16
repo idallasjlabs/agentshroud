@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "rationale"
-community: "test_telegram_proxy_outbound.py"
+community: "make_event"
 location: "L65"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_outboundpy
+  - community/make_event
 ---
 
 # Emit an event to all subscribers
 
 ## Connections
-- [[.emit()]] - `rationale_for` [EXTRACTED]
+- [[dot-emit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy
+#graphify/rationale #graphify/EXTRACTED #community/make_event

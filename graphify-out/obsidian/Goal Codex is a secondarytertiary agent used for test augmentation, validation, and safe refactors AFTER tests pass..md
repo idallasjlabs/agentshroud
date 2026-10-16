@@ -1,12 +1,12 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "OpenClaw Skill Metadata Schema (frontmatter conv"
+community: "Goal: Codex is a secondary/tertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass."
 location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv
+  - community/Goal_Codex_is_a_secondary/tertiary_agent_used_for_test_augmentation_validation_and_safe_refactors_AFTER_tests_pass
 ---
 
 # Goal: Codex is a secondary/tertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.
@@ -19,11 +19,10 @@ tags:
 - [[3) DEFINITION OF DONE (DoD)]] - `contains` [EXTRACTED]
 - [[4) LANGUAGE & TOOLING STANDARDS]] - `contains` [EXTRACTED]
 - [[5) ENVIRONMENT SETUP]] - `contains` [EXTRACTED]
-- [[6) SECURITY & SAFETY REQUIREMENTS]] - `contains` [EXTRACTED]
+- [[6) SECURITY & SAFETY REQUIREMENTS_1]] - `contains` [EXTRACTED]
 - [[7) CODEX CLI OPERATIONAL RULES]] - `contains` [EXTRACTED]
 - [[8) CODEX CLI CONFIGURATION]] - `contains` [EXTRACTED]
-- [[AGENTS]] - `contains` [EXTRACTED]
 - [[AGENTS.md — Codex CLI Guidance]] - `contains` [EXTRACTED]
 - [[ssh-configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv
+#graphify/document #graphify/EXTRACTED #community/Goal_Codex_is_a_secondary/tertiary_agent_used_for_test_augmentation_validation_and_safe_refactors_AFTER_tests_pass

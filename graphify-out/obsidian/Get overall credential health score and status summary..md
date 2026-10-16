@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "OpenClaw Bot Container"
+community: "management.py"
 location: "L1021"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_Container
+  - community/managementpy
 ---
 
 # Get overall credential health score and status summary.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[credentials_health()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OpenClaw_Bot_Container
+#graphify/rationale #graphify/EXTRACTED #community/managementpy

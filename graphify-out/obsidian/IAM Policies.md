@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/i-qa/SKILL.md"
 type: "concept"
-community: "WebhookReceiver Session Isolation Integration"
+community: "IAM Policies"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/WebhookReceiver_Session_Isolation_Integration
+  - community/IAM_Policies
 ---
 
 # IAM Policies
 
-#graphify/concept #graphify/EXTRACTED #community/WebhookReceiver_Session_Isolation_Integration
+#graphify/concept #graphify/EXTRACTED #community/IAM_Policies

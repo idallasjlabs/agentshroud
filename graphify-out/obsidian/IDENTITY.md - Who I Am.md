@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/agents/openclaw-identity.md"
 type: "document"
-community: "Mnemosyne — Retention Engineer"
+community: "IDENTITY.md - Who I Am"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mnemosyne__Retention_Engineer
+  - community/IDENTITYmd_-_Who_I_Am
 ---
 
 # IDENTITY.md - Who I Am
@@ -16,7 +16,7 @@ tags:
 - [[Competitive Intelligence Protocol_1]] - `contains` [EXTRACTED]
 - [[My Owner]] - `contains` [EXTRACTED]
 - [[My Role]] - `contains` [EXTRACTED]
-- [[Responsibilities]] - `contains` [EXTRACTED]
-- [[openclaw-identity]] - `contains` [EXTRACTED]
+- [[Responsibilities_51]] - `contains` [EXTRACTED]
+- [[hermesagentsopenclaw-identity]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer
+#graphify/document #graphify/EXTRACTED #community/IDENTITYmd_-_Who_I_Am

@@ -1,21 +1,19 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
 type: "document"
-community: "TestAtomicRegistryWrites"
-location: "L37"
+community: "mcp_config.py"
+location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestAtomicRegistryWrites
+  - community/mcp_configpy
 ---
 
 # Function Details
 
 ## Connections
-- [[LogSanitizer._sanitize_text(text)]] - `contains` [EXTRACTED]
-- [[LogSanitizer.filter(record)]] - `contains` [EXTRACTED]
-- [[get_sanitizer_stats()_1]] - `contains` [EXTRACTED]
-- [[install_log_sanitizer()_1]] - `contains` [EXTRACTED]
-- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[MCPProxyConfig.from_dict(data)]] - `contains` [EXTRACTED]
+- [[PermissionLevel comparison operators]] - `contains` [EXTRACTED]
+- [[mcp_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestAtomicRegistryWrites
+#graphify/document #graphify/EXTRACTED #community/mcp_configpy

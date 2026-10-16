@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/volumes.md"
 type: "document"
-community: "Pre-Deployment Checklist"
+community: "Docker Volumes"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist
+  - community/Docker_Volumes
 ---
 
 # Docker Volumes
@@ -15,9 +15,9 @@ tags:
 - [[Backup]] - `contains` [EXTRACTED]
 - [[Cleanup Warning]] - `contains` [EXTRACTED]
 - [[Inspecting Volumes]] - `contains` [EXTRACTED]
-- [[Related Notes_54]] - `contains` [EXTRACTED]
+- [[Related Notes_42]] - `contains` [EXTRACTED]
 - [[Volume Details]] - `contains` [EXTRACTED]
 - [[Volume Inventory]] - `contains` [EXTRACTED]
-- [[volumes]] - `contains` [EXTRACTED]
+- [[volumes_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist
+#graphify/document #graphify/EXTRACTED #community/Docker_Volumes

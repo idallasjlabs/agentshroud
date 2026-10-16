@@ -1,12 +1,12 @@
 ---
 source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "TestFullAccessMiddlewareBypass"
+community: "Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility"
 location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestFullAccessMiddlewareBypass
+  - community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility
 ---
 
 # How to Apply
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFullAccessMiddlewareBypass
+#graphify/document #graphify/EXTRACTED #community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility

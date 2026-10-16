@@ -1,17 +1,17 @@
 ---
-source_file: "reports/upgrade-2026-09-06-20260906-0808.md"
+source_file: "reports/upgrade-2026-09-06-prod.md"
 type: "document"
-community: "_process_inbound()"
-location: "L137"
+community: "AgentShroud Weekly Upgrade — 2026-09-06"
+location: "L185"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_process_inbound
+  - community/AgentShroud_Weekly_Upgrade__2026-09-06
 ---
 
 # GitHub-hosted findings
 
 ## Connections
-- [[SecurityFinding_1]] - `contains` [EXTRACTED]
+- [[Security Findings]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_process_inbound
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade__2026-09-06

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ps/SKILL.md"
 type: "document"
-community: "TestVersionRoutes"
+community: "Pre-Deployment Checklist"
 location: "L134"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestVersionRoutes
+  - community/Pre-Deployment_Checklist
 ---
 
 # Emergency Stop (P1 Incidents Only)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[8. Service Control Commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestVersionRoutes
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

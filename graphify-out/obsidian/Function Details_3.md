@@ -1,20 +1,23 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
 type: "document"
-community: "Deploying AgentShroud on macOS (Apple Silicon / "
-location: "L36"
+community: "env_guard.py"
+location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_
+  - community/env_guardpy
 ---
 
 # Function Details
 
 ## Connections
-- [[forward_to_agent(target, sanitized_content, ledger_id, metadata)]] - `contains` [EXTRACTED]
-- [[health_check(target)]] - `contains` [EXTRACTED]
-- [[resolve_target(request)]] - `contains` [EXTRACTED]
-- [[router.py_3]] - `contains` [EXTRACTED]
+- [[EnvironmentGuard.check_command_execution(command, agent_id)]] - `contains` [EXTRACTED]
+- [[EnvironmentGuard.check_file_access(file_path, agent_id)]] - `contains` [EXTRACTED]
+- [[EnvironmentGuard.monitor_environment_access(agent_id)]] - `contains` [EXTRACTED]
+- [[EnvironmentGuard.scrub_command_output(output, command)]] - `contains` [EXTRACTED]
+- [[check_command(cmd)]] - `contains` [EXTRACTED]
+- [[env_guard.py_2]] - `contains` [EXTRACTED]
+- [[scrub_output(text)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_
+#graphify/document #graphify/EXTRACTED #community/env_guardpy

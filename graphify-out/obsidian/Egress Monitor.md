@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "Mode A — Single task"
+community: "Gateway Management/Control-Plane API (v1.3.0)"
 tags:
   - graphify/concept
-  - graphify/INFERRED
-  - community/Mode_A__Single_task
+  - graphify/EXTRACTED
+  - community/Gateway_Management/Control-Plane_API_v130
 ---
 
 # Egress Monitor
@@ -14,4 +14,4 @@ tags:
 - [[DNS Filter]] - `conceptually_related_to` [INFERRED]
 - [[Gateway ManagementControl-Plane API (v1.3.0)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Mode_A__Single_task
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Management/Control-Plane_API_v130

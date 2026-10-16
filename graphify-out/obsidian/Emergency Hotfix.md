@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-gg/SKILL.md"
+source_file: ".agents/skills/i-mc/SKILL.md"
 type: "document"
-community: "multi_host_test.py"
-location: "L69"
+community: "GSDE&G Development Master Checklist"
+location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/multi_host_testpy
+  - community/GSDEG_Development_Master_Checklist
 ---
 
 # Emergency Hotfix
 
 ## Connections
-- [[Skill Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/multi_host_testpy
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist

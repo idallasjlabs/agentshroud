@@ -1,17 +1,19 @@
 ---
-source_file: "docs/security/SECURITY_ARCHITECTURE.md"
+source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "TestConfigValidation"
-location: "L541"
+community: "GSDE&G Skills Reference"
+location: "L252"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/GSDEG_Skills_Reference
 ---
 
 # Emergency Procedures
 
 ## Connections
-- [[Quick Reference_6]] - `contains` [EXTRACTED]
+- [[Emergency Contacts_2]] - `contains` [EXTRACTED]
+- [[GSDE&G Skills Reference_1]] - `contains` [EXTRACTED]
+- [[P1 Incident Response_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference

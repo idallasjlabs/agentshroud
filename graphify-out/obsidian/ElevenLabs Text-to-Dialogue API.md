@@ -1,16 +1,16 @@
 ---
-source_file: "docker/config/hermes/skills/i-apollo/SKILL.md"
+source_file: ".agents/skills/i-apollo/SKILL.md"
 type: "concept"
-community: ".update_peer_trust()"
+community: "Apollo — Audio Systems Producer"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/update_peer_trust
+  - community/Apollo__Audio_Systems_Producer
 ---
 
 # ElevenLabs Text-to-Dialogue API
 
 ## Connections
-- [[eleven_v3 model]] - `conceptually_related_to` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_6]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/update_peer_trust
+#graphify/concept #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer

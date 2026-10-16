@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/COMMUNICATION-TEMPLATES.md"
 type: "document"
-community: "start-agentshroud.sh"
+community: "AgentShroud™ Communication Templates"
 location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/start-agentshroudsh
+  - community/AgentShroud_Communication_Templates
 ---
 
 # Gemini CLI / ChatGPT Codex (secondary agents)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[For Agents and Bots]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/start-agentshroudsh
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Communication_Templates

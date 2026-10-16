@@ -1,22 +1,22 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/GATEWAY_URL.md"
 type: "document"
-community: "Browser Extension"
+community: "ANTHROPIC_BASE_URL"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Extension
+  - community/ANTHROPIC_BASE_URL
 ---
 
 # GATEWAY_URL
 
 ## Connections
 - [[Configuration_16]] - `contains` [EXTRACTED]
-- [[Description_4]] - `contains` [EXTRACTED]
+- [[Description_7]] - `contains` [EXTRACTED]
 - [[GATEWAY_URL]] - `contains` [EXTRACTED]
-- [[Related Notes_32]] - `contains` [EXTRACTED]
+- [[Related Notes_46]] - `contains` [EXTRACTED]
 - [[Typical Value]] - `contains` [EXTRACTED]
 - [[Usage Contexts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Extension
+#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL

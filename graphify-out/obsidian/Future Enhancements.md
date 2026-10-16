@@ -1,17 +1,22 @@
 ---
-source_file: "docs/architecture/per-agent-isolation.md"
+source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "start.sh"
-location: "L141"
+community: "Future Enhancements"
+location: "L338"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/startsh
+  - community/Future_Enhancements
 ---
 
 # Future Enhancements
 
 ## Connections
-- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
+- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
+- [[Priority 1 Auto-Discovery]] - `contains` [EXTRACTED]
+- [[Priority 2 Enhanced Extraction]] - `contains` [EXTRACTED]
+- [[Priority 3 Screenshot Capture]] - `contains` [EXTRACTED]
+- [[Priority 4 Multi-Page Support]] - `contains` [EXTRACTED]
+- [[Priority 5 Direct Gmail Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/startsh
+#graphify/document #graphify/EXTRACTED #community/Future_Enhancements

@@ -1,19 +1,17 @@
 ---
-source_file: "CHANGELOG.md"
+source_file: "README.md"
 type: "concept"
-community: "mcp-proxy-wrapper.js"
-location: "## [1.1.0]"
+community: "AgentShroud Operations Cheat Sheet"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/mcp-proxy-wrapperjs
+  - community/AgentShroud_Operations_Cheat_Sheet
 ---
 
 # Hermes Bot
 
 ## Connections
-- [[A2A Governance (A2APolicyEngine  A2AProxy)]] - `references` [EXTRACTED]
-- [[AgentShroud Changelog]] - `references` [EXTRACTED]
-- [[Hermes Cron Jobs Reference & Recreation Guide]] - `references` [EXTRACTED]
+- [[AgentShroud™ README]] - `references` [EXTRACTED]
+- [[Hermes Control Interface (HCI)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/mcp-proxy-wrapperjs
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet

@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-mc/SKILL.md"
 type: "concept"
-community: "Security Integration — Full Pipeline Tests"
+community: "GSDE&G Team (concept)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Security_Integration__Full_Pipeline_Tests
+  - community/GSDEG_Team_concept
 ---
 
 # GSDE&G Team (concept)
 
-#graphify/concept #graphify/EXTRACTED #community/Security_Integration__Full_Pipeline_Tests
+#graphify/concept #graphify/EXTRACTED #community/GSDEG_Team_concept

@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "v0.8.0 Watchtower Complete Feature List Final"
+community: "EnhancedApprovalQueue.submit"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/v080_Watchtower_Complete_Feature_List_Final
+  - community/EnhancedApprovalQueuesubmit
 ---
 
 # EnhancedApprovalQueue.submit
 
-#graphify/code #graphify/EXTRACTED #community/v080_Watchtower_Complete_Feature_List_Final
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueuesubmit

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "KeyVaultConfig"
+community: "UserSessionManager"
 location: "L371"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/UserSessionManager
 ---
 
 # If the write to the temp file fails mid-flight, the existing         registry on
 
 ## Connections
-- [[.test_atomic_save_never_leaves_partial_registry_on_crash()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_atomic_save_never_leaves_partial_registry_on_crash()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

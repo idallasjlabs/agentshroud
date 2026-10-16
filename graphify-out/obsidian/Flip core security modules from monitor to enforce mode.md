@@ -1,24 +1,24 @@
 ---
 source_file: "docs/planning/redteam/01-enforce-by-default.md"
 type: "document"
-community: "AgentShroud Deployment & Troubleshooting Runbook"
+community: "Flip core security modules from monitor to enforce mode"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Deployment__Troubleshooting_Runbook
+  - community/Flip_core_security_modules_from_monitor_to_enforce_mode
 ---
 
 # Flip core security modules from monitor to enforce mode
 
 ## Connections
 - [[01-enforce-by-default]] - `contains` [EXTRACTED]
-- [[Constraints_4]] - `contains` [EXTRACTED]
-- [[Evidence_1]] - `contains` [EXTRACTED]
-- [[Problem_4]] - `contains` [EXTRACTED]
-- [[Remediation_2]] - `contains` [EXTRACTED]
-- [[Root Cause_3]] - `contains` [EXTRACTED]
-- [[Severity_4]] - `contains` [EXTRACTED]
-- [[Verification_3]] - `contains` [EXTRACTED]
+- [[Constraints_5]] - `contains` [EXTRACTED]
+- [[Evidence_5]] - `contains` [EXTRACTED]
+- [[Problem_8]] - `contains` [EXTRACTED]
+- [[Remediation_6]] - `contains` [EXTRACTED]
+- [[Root Cause_6]] - `contains` [EXTRACTED]
+- [[Severity_8]] - `contains` [EXTRACTED]
+- [[Verification_12]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment__Troubleshooting_Runbook
+#graphify/document #graphify/EXTRACTED #community/Flip_core_security_modules_from_monitor_to_enforce_mode

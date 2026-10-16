@@ -1,21 +1,17 @@
 ---
-source_file: "docs/security/audit-specification.md"
+source_file: "docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md"
 type: "document"
-community: "test_block_credentials.py"
-location: "L146"
+community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_block_credentialspy
+  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
 ---
 
 # Hash Chain Structure
 
 ## Connections
-- [[AgentShroud Audit Specification]] - `contains` [EXTRACTED]
-- [[Block Structure]] - `contains` [EXTRACTED]
-- [[Chain Architecture]] - `contains` [EXTRACTED]
-- [[Genesis Block Specification]] - `contains` [EXTRACTED]
-- [[Hash Calculation Algorithm]] - `contains` [EXTRACTED]
+- [[Decision_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_block_credentialspy
+#graphify/document #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity

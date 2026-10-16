@@ -1,11 +1,11 @@
 ---
 source_file: "docs/dev-notes/cron-backup-20260831-161542/DEDUPE-REPORT.md"
 type: "rationale"
-community: "start.sh"
+community: "Hermes Cron Dedupe (dev)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/startsh
+  - community/Hermes_Cron_Dedupe_dev
 ---
 
 # Hermes Cron Dedupe (dev)
@@ -17,4 +17,4 @@ tags:
 - [[Sunday Upgrade 2026-09-14 (dev)]] - `references` [AMBIGUOUS]
 - [[_seed_cron Missing --all Defect]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/startsh
+#graphify/rationale #graphify/EXTRACTED #community/Hermes_Cron_Dedupe_dev

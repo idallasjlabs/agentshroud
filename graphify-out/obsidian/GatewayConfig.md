@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/ingest_api/auth.py"
+source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L92"
+community: "load_config"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/load_config
 ---
 
 # GatewayConfig
 
 ## Connections
-- [[GatewayConfig_1]] - `uses` [INFERRED]
-- [[create_auth_dependency()]] - `references` [EXTRACTED]
-- [[get_auth_dependency()]] - `references` [EXTRACTED]
+- [[GatewayConfig_3]] - `uses` [INFERRED]
+- [[_load()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/load_config

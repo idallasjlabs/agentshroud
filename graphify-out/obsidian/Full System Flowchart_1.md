@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Full System Flowchart.md"
 type: "document"
-community: ".get_or_create_session()"
+community: "Network Topology"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/get_or_create_session
+  - community/Network_Topology
 ---
 
 # Full System Flowchart
@@ -15,6 +15,6 @@ tags:
 - [[Complete System Diagram]] - `contains` [EXTRACTED]
 - [[Full System Flowchart]] - `contains` [EXTRACTED]
 - [[Legend]] - `contains` [EXTRACTED]
-- [[Related Notes_71]] - `contains` [EXTRACTED]
+- [[Related Notes_53]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/get_or_create_session
+#graphify/document #graphify/EXTRACTED #community/Network_Topology

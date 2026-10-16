@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/auto_remediate_cves.py"
 type: "rationale"
-community: "AgentShroud v0.7.0 Enforcement Audit Results"
+community: "plan_remediation"
 location: "L221"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Enforcement_Audit_Results
+  - community/plan_remediation
 ---
 
 # Import the committed OpenClaw registry.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[load_registry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results
+#graphify/rationale #graphify/EXTRACTED #community/plan_remediation

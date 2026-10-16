@@ -1,25 +1,23 @@
 ---
-source_file: "gateway/soc/models.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "EncryptedStore"
-location: "L129"
+community: "TestEgressApprovalQueue"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/TestEgressApprovalQueue
 ---
 
 # EgressRequest
 
 ## Connections
-- [[.test_approved_status()]] - `calls` [EXTRACTED]
-- [[.test_construction()]] - `calls` [EXTRACTED]
-- [[.test_pending_status_default()]] - `calls` [EXTRACTED]
-- [[.test_red_risk_high_threat()]] - `calls` [EXTRACTED]
-- [[BaseModel]] - `inherits` [EXTRACTED]
-- [[_loadEgress()]] - `shares_data_with` [INFERRED]
-- [[models.py_1]] - `contains` [EXTRACTED]
-- [[test_soc_egress.py]] - `imports` [EXTRACTED]
-- [[test_soc_models.py]] - `imports` [EXTRACTED]
+- [[dot-request_approval()]] - `calls` [EXTRACTED]
+- [[dot-test_cleanup_expired_requests()_1]] - `calls` [EXTRACTED]
+- [[Represents a pending egress approval request.]] - `rationale_for` [EXTRACTED]
+- [[TestEgressApprovalAPI]] - `uses` [INFERRED]
+- [[TestEgressApprovalQueue]] - `uses` [INFERRED]
+- [[egress_approval.py]] - `contains` [EXTRACTED]
+- [[test_egress_approval.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EncryptedStore
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/governance/SPRINT_CADENCE.md"
 type: "concept"
-community: "Skill: UI Expert (UI)"
+community: "Incident → Test Backfill Rule (R3 extension): every postmortem must add a regression test in the same PR as the fix, not deferred"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_UI_Expert_UI
+  - community/Incident__Test_Backfill_Rule_R3_extension_every_postmortem_must_add_a_regression_test_in_the_same_PR_as_the_fix_not_deferred
 ---
 
 # GSD (Get Shit Done) cadence — adopted in place of formal Scrum/SAFe sprints
@@ -17,4 +17,4 @@ tags:
 - [[Sprint Cadence Decision (docsgovernanceSPRINT_CADENCE.md)]] - `conceptually_related_to` [EXTRACTED]
 - [[Weekly Kaizen retrospective cron job (Friday 500 PM ET)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_UI_Expert_UI
+#graphify/concept #graphify/EXTRACTED #community/Incident__Test_Backfill_Rule_R3_extension_every_postmortem_must_add_a_regression_test_in_the_same_PR_as_the_fix_not_deferred
