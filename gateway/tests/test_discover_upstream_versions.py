@@ -18,13 +18,21 @@ or Docker Hub.
 
 from __future__ import annotations
 
+import socket
 import sys
+import threading
 from pathlib import Path
 
 _REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(_REPO_ROOT / "scripts"))
 
+import pytest  # noqa: E402
 from discover_upstream_versions import (  # noqa: E402
+    _call_with_deadline,
+    _guarded_fetch,
+    _ipv4_only,
+    _retry,
+    discover,
     is_stable,
     pick_latest_hermes_tag,
     pick_latest_stable,
@@ -133,3 +141,255 @@ class TestPickLatestHermesTag:
 
     def test_empty_returns_none(self):
         assert pick_latest_hermes_tag([]) is None
+
+
+class TestRetry:
+    """Upstream fetches must survive a transient blip.
+
+    2026-10-16, dev host marvin: two consecutive runs of this script failed
+    the Hermes lookup ("<urlopen error timed out>", then
+    "SSL: UNEXPECTED_EOF_WHILE_READING") while the identical URL succeeded
+    10/10 immediately before and after from both curl and urllib. This host
+    has a documented pattern of intermittent transport failures (see
+    scripts/sunday-upgrade.sh's git-fetch retry loop). A single-shot fetch
+    turns one blip into "Hermes latest = UNKNOWN" for the whole unattended
+    Sunday run, which the no-op gate then cannot catch.
+    """
+
+    def test_returns_result_after_transient_failures(self):
+        calls = {"n": 0}
+
+        def flaky(_attempt):
+            calls["n"] += 1
+            if calls["n"] < 3:
+                raise OSError("transient")
+            return "ok"
+
+        slept: list[float] = []
+        assert _retry(flaky, attempts=4, delays=(5, 10, 20), sleep=slept.append) == "ok"
+        assert calls["n"] == 3
+        assert slept == [5, 10]
+
+    def test_gives_up_after_attempts_and_reraises_last_error(self):
+        calls = {"n": 0}
+
+        def always_fails(_attempt):
+            calls["n"] += 1
+            raise OSError(f"boom {calls['n']}")
+
+        slept: list[float] = []
+        with pytest.raises(OSError, match="boom 4"):
+            _retry(always_fails, attempts=4, delays=(5, 10, 20), sleep=slept.append)
+        assert calls["n"] == 4
+        assert slept == [5, 10, 20]
+
+    def test_single_attempt_never_sleeps(self):
+        slept: list[float] = []
+        with pytest.raises(OSError):
+            _retry(
+                lambda _i: (_ for _ in ()).throw(OSError("x")),
+                attempts=1,
+                sleep=slept.append,
+            )
+        assert slept == []
+
+    def test_passes_zero_based_attempt_index(self):
+        seen: list[int] = []
+
+        def fn(attempt):
+            seen.append(attempt)
+            if attempt < 2:
+                raise OSError("again")
+            return attempt
+
+        assert _retry(fn, attempts=3, delays=(0,), sleep=lambda _s: None) == 2
+        assert seen == [0, 1, 2]
+
+
+class TestCallWithDeadline:
+    """A fetch that never returns must not hang the unattended run.
+
+    2026-10-16: the Sunday job's python3 (Homebrew 3.15 / OpenSSL 4.0.3) sat
+    10+ minutes at 0% CPU inside one urlopen(timeout=60) to hub.docker.com,
+    socket in CLOSE_WAIT on an IPv6 address — the socket timeout never fired.
+    """
+
+    def test_returns_value_when_fn_finishes_in_time(self):
+        assert _call_with_deadline(lambda: "done", seconds=5) == "done"
+
+    def test_propagates_fn_exception(self):
+        def boom():
+            raise OSError("SSL: UNEXPECTED_EOF_WHILE_READING")
+
+        with pytest.raises(OSError, match="UNEXPECTED_EOF"):
+            _call_with_deadline(boom, seconds=5)
+
+    def test_raises_timeout_when_fn_hangs(self):
+        release = threading.Event()
+        try:
+            with pytest.raises(TimeoutError, match="hard deadline"):
+                _call_with_deadline(release.wait, seconds=0.05)
+        finally:
+            release.set()  # free the abandoned daemon thread
+
+
+class TestIPv4Only:
+    """Every Docker Hub failure on marvin was on IPv6; curl -4 was 100% clean."""
+
+    def test_forces_af_inet_inside_block_and_restores_after(self, monkeypatch):
+        seen: list[tuple] = []
+
+        def recorder(host, port, family=0, type=0, proto=0, flags=0):
+            seen.append((host, port, family))
+            return []
+
+        monkeypatch.setattr(socket, "getaddrinfo", recorder)
+        with _ipv4_only():
+            socket.getaddrinfo("hub.docker.com", 443)
+            assert socket.getaddrinfo is not recorder
+        assert seen == [("hub.docker.com", 443, socket.AF_INET)]
+        assert socket.getaddrinfo is recorder  # restored on exit
+
+    def test_restores_even_when_block_raises(self, monkeypatch):
+        def recorder(host, port, family=0, type=0, proto=0, flags=0):
+            return []
+
+        monkeypatch.setattr(socket, "getaddrinfo", recorder)
+        with pytest.raises(RuntimeError), _ipv4_only():
+            raise RuntimeError("inside")
+        assert socket.getaddrinfo is recorder
+
+
+class TestGuardedFetch:
+    def test_first_attempt_keeps_default_resolver(self, monkeypatch):
+        def recorder(host, port, family=0, type=0, proto=0, flags=0):
+            return []
+
+        monkeypatch.setattr(socket, "getaddrinfo", recorder)
+        observed = {}
+
+        def fetch():
+            observed["resolver_is_default"] = socket.getaddrinfo is recorder
+            return "ok"
+
+        assert _guarded_fetch(fetch, attempt=0, deadline=5) == "ok"
+        assert observed["resolver_is_default"] is True
+
+    def test_retry_attempts_force_ipv4(self, monkeypatch):
+        def recorder(host, port, family=0, type=0, proto=0, flags=0):
+            return []
+
+        monkeypatch.setattr(socket, "getaddrinfo", recorder)
+        observed = {}
+
+        def fetch():
+            observed["resolver_is_default"] = socket.getaddrinfo is recorder
+            return "ok"
+
+        assert _guarded_fetch(fetch, attempt=1, deadline=5) == "ok"
+        assert observed["resolver_is_default"] is False
+        assert socket.getaddrinfo is recorder
+
+    def test_hang_is_cut_by_deadline(self):
+        release = threading.Event()
+        try:
+            with pytest.raises(TimeoutError):
+                _guarded_fetch(release.wait, attempt=0, deadline=0.05)
+        finally:
+            release.set()
+
+
+class TestDiscoverRetries:
+    """discover() applies the retry to both sources, independently."""
+
+    _TAGS = [
+        {"name": "latest", "digest": "sha256:aaa"},
+        {"name": "v0.22.2", "digest": "sha256:bbb"},
+        {"name": "v0.21.5", "digest": "sha256:ccc"},
+    ]
+
+    def test_hermes_recovers_from_one_transient_failure(self):
+        calls = {"n": 0}
+
+        def hub():
+            calls["n"] += 1
+            if calls["n"] == 1:
+                raise OSError("<urlopen error timed out>")
+            return list(self._TAGS)
+
+        found = discover(fetch_npm=lambda: ["2026.10.4"], fetch_hub=hub, sleep=lambda _s: None)
+        assert found["hermes"]["latest"] == "v0.22.2"
+        assert found["hermes"]["digest"] == "sha256:bbb"
+        assert found["hermes"]["error"] is None
+        assert found["openclaw"]["latest"] == "2026.10.4"
+        assert calls["n"] == 2
+
+    def test_hermes_failure_is_reported_as_unknown_after_exhaustion(self):
+        def hub():
+            raise OSError("SSL: UNEXPECTED_EOF_WHILE_READING")
+
+        found = discover(fetch_npm=lambda: ["2026.10.4"], fetch_hub=hub, sleep=lambda _s: None)
+        assert found["hermes"]["latest"] is None
+        assert found["hermes"]["digest"] is None
+        assert "UNEXPECTED_EOF" in found["hermes"]["error"]
+        # One source failing must never mask the other.
+        assert found["openclaw"]["latest"] == "2026.10.4"
+        assert found["openclaw"]["error"] is None
+
+    def test_openclaw_recovers_from_one_transient_failure(self):
+        calls = {"n": 0}
+
+        def npm():
+            calls["n"] += 1
+            if calls["n"] == 1:
+                raise RuntimeError("npm view openclaw failed: ETIMEDOUT")
+            return ["2026.10.2", "2026.10.4"]
+
+        found = discover(fetch_npm=npm, fetch_hub=lambda: list(self._TAGS), sleep=lambda _s: None)
+        assert found["openclaw"]["latest"] == "2026.10.4"
+        assert found["openclaw"]["error"] is None
+        assert calls["n"] == 2
+
+    def test_hung_hub_fetch_is_cut_by_deadline_and_retried(self):
+        """The 2026-10-16 CLOSE_WAIT hang: attempt 1 never returns; the hard
+        deadline must cut it and attempt 2 (IPv4-forced) must succeed."""
+        release = threading.Event()
+        calls = {"n": 0}
+
+        def hub():
+            calls["n"] += 1
+            if calls["n"] == 1:
+                release.wait()  # hangs until the test releases it
+                return []
+            return list(self._TAGS)
+
+        try:
+            found = discover(
+                fetch_npm=lambda: ["2026.10.4"],
+                fetch_hub=hub,
+                sleep=lambda _s: None,
+                deadline=0.05,
+            )
+        finally:
+            release.set()
+        assert found["hermes"]["latest"] == "v0.22.2"
+        assert found["hermes"]["error"] is None
+        assert calls["n"] == 2
+
+    def test_retry_attempt_runs_with_ipv4_forced(self, monkeypatch):
+        def recorder(host, port, family=0, type=0, proto=0, flags=0):
+            return []
+
+        monkeypatch.setattr(socket, "getaddrinfo", recorder)
+        resolver_default_per_call: list[bool] = []
+
+        def hub():
+            resolver_default_per_call.append(socket.getaddrinfo is recorder)
+            if len(resolver_default_per_call) == 1:
+                raise OSError("<urlopen error timed out>")
+            return list(self._TAGS)
+
+        found = discover(fetch_npm=lambda: ["2026.10.4"], fetch_hub=hub, sleep=lambda _s: None)
+        assert found["hermes"]["latest"] == "v0.22.2"
+        assert resolver_default_per_call == [True, False]
+        assert socket.getaddrinfo is recorder

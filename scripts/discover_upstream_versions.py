@@ -46,12 +46,42 @@ Exit codes:
 from __future__ import annotations
 
 import argparse
+import contextlib
 import json
 import re
+import socket
 import subprocess
 import sys
+import threading
+import time
 import urllib.request
-from typing import Any, Optional
+from collections.abc import Callable, Iterator
+from typing import Any, Optional, TypeVar
+
+_T = TypeVar("_T")
+
+# Hard wall-clock bound per fetch attempt, enforced from OUTSIDE the call.
+# 2026-10-16 on marvin: the Sunday job's `python3` (Homebrew 3.15 / OpenSSL
+# 4.0.3) sat for 10+ minutes at 0% CPU inside a single urlopen(timeout=60) to
+# hub.docker.com — the socket was in CLOSE_WAIT on an IPv6 Cloudflare address
+# and the read never returned. A socket timeout does not cover every state an
+# SSL read can block in, and urllib also walks every resolved address
+# sequentially (an attempt with timeout=20 was observed to take 84s). An
+# unattended run has no one to notice a hang; it would sit until
+# sunday-upgrade.sh's 180-minute watchdog killed the whole session.
+FETCH_DEADLINE_S = 90.0
+
+# Bounded retry for the two upstream fetches. 2026-10-16 on marvin: two
+# consecutive runs failed the Hermes lookup ("<urlopen error timed out>", then
+# "SSL: UNEXPECTED_EOF_WHILE_READING") while the identical URL succeeded 10/10
+# from both urllib and curl immediately before and after. This host has a
+# documented pattern of intermittent transport failures (scripts/sunday-
+# upgrade.sh retries `git fetch` 5x for the same reason). A single-shot fetch
+# turns one blip into "latest = UNKNOWN" for the whole unattended Sunday run,
+# and the no-op gate in sunday-upgrade-apply.sh then cannot tell "behind" from
+# "already current". ~35s of total backoff is negligible against a weekly job.
+RETRY_ATTEMPTS = 4
+RETRY_DELAYS: tuple[float, ...] = (5, 10, 20)
 
 NPM_PACKAGE = "openclaw"
 HERMES_REPO = "nousresearch/hermes-agent"
@@ -156,8 +186,107 @@ def _digest_for_tag(tags: list[dict[str, Any]], tag: str) -> Optional[str]:
     return None
 
 
+def _call_with_deadline(fn: Callable[[], _T], seconds: float) -> _T:
+    """Run ``fn`` in a daemon thread; raise ``TimeoutError`` if it outlives ``seconds``.
+
+    The hung thread is abandoned (daemon, so it cannot keep the process alive
+    at exit). This is the only bound that holds when the socket layer itself
+    stops honouring its timeout — see FETCH_DEADLINE_S.
+    """
+    outcome: dict[str, Any] = {}
+
+    def _run() -> None:
+        try:
+            outcome["value"] = fn()
+        except BaseException as exc:  # noqa: BLE001 - re-raised in the caller
+            outcome["error"] = exc
+
+    worker = threading.Thread(target=_run, name="discover-fetch", daemon=True)
+    worker.start()
+    worker.join(seconds)
+    if worker.is_alive():
+        raise TimeoutError(f"fetch exceeded hard deadline of {seconds:g}s")
+    if "error" in outcome:
+        raise outcome["error"]
+    return outcome["value"]
+
+
+@contextlib.contextmanager
+def _ipv4_only() -> Iterator[None]:
+    """Force AF_INET for name resolution inside the block.
+
+    Every Docker Hub failure seen on marvin (timeout, SSL EOF, the CLOSE_WAIT
+    hang) was on an IPv6 path; `curl -4` to the same URL succeeded 100% of the
+    time. Used from the SECOND attempt onwards — the first attempt keeps the
+    system default so a healthy dual-stack host is never second-guessed.
+    """
+    original = socket.getaddrinfo
+
+    def _getaddrinfo_v4(
+        host: Any,
+        port: Any,
+        family: int = 0,
+        type: int = 0,
+        proto: int = 0,
+        flags: int = 0,
+    ) -> Any:
+        return original(host, port, socket.AF_INET, type, proto, flags)
+
+    socket.getaddrinfo = _getaddrinfo_v4  # type: ignore[assignment]
+    try:
+        yield
+    finally:
+        socket.getaddrinfo = original  # type: ignore[assignment]
+
+
+def _guarded_fetch(fetch: Callable[[], _T], attempt: int, deadline: float) -> _T:
+    """One attempt of ``fetch``: hard-bounded, IPv4-only after the first failure."""
+    ctx = _ipv4_only() if attempt >= 1 else contextlib.nullcontext()
+    with ctx:
+        return _call_with_deadline(fetch, deadline)
+
+
+def _retry(
+    fn: Callable[[int], _T],
+    *,
+    attempts: int = RETRY_ATTEMPTS,
+    delays: tuple[float, ...] = RETRY_DELAYS,
+    sleep: Callable[[float], Any] = time.sleep,
+) -> _T:
+    """Call ``fn(attempt)`` up to ``attempts`` times; re-raise the last error if all fail.
+
+    ``attempt`` is 0-based so a callee can change strategy on retries.
+    ``delays[i]`` is slept after the i-th failure (the last delay repeats if
+    there are more gaps than delays). ``sleep`` is injectable so tests never
+    actually wait.
+    """
+    if attempts < 1:
+        raise ValueError("attempts must be >= 1")
+    last_exc: Optional[BaseException] = None
+    for i in range(attempts):
+        try:
+            return fn(i)
+        except Exception as exc:  # noqa: BLE001 - retried, then re-raised
+            last_exc = exc
+            if i < attempts - 1:
+                delay = delays[min(i, len(delays) - 1)] if delays else 0
+                print(
+                    f"[discover] attempt {i + 1}/{attempts} failed ({str(exc)[:80]}) "
+                    f"— retrying in {delay}s",
+                    file=sys.stderr,
+                )
+                sleep(delay)
+    assert last_exc is not None  # attempts >= 1 guarantees a raise or a return
+    raise last_exc
+
+
 # ── discovery ─────────────────────────────────────────────────────────────────
-def discover() -> dict[str, Any]:
+def discover(
+    fetch_npm: Callable[[], list[str]] = fetch_npm_versions,
+    fetch_hub: Callable[[], list[dict[str, Any]]] = fetch_dockerhub_tags,
+    sleep: Callable[[float], Any] = time.sleep,
+    deadline: float = FETCH_DEADLINE_S,
+) -> dict[str, Any]:
     """Resolve the latest stable release of each wrapped tool.
 
     Each entry is independent: one source being unreachable must not mask the
@@ -169,15 +298,21 @@ def discover() -> dict[str, Any]:
 
     try:
         result["openclaw"] = {
-            "latest": pick_latest_stable(fetch_npm_versions()),
+            "latest": pick_latest_stable(
+                _retry(lambda i: _guarded_fetch(fetch_npm, i, deadline), sleep=sleep)
+            ),
             "source": f"npm:{NPM_PACKAGE}",
             "error": None,
         }
     except Exception as exc:  # noqa: BLE001 - reported, not swallowed
-        result["openclaw"] = {"latest": None, "source": f"npm:{NPM_PACKAGE}", "error": str(exc)}
+        result["openclaw"] = {
+            "latest": None,
+            "source": f"npm:{NPM_PACKAGE}",
+            "error": str(exc),
+        }
 
     try:
-        tags = fetch_dockerhub_tags()
+        tags = _retry(lambda i: _guarded_fetch(fetch_hub, i, deadline), sleep=sleep)
         latest = pick_latest_hermes_tag([t.get("name", "") for t in tags])
         result["hermes"] = {
             "latest": latest,
@@ -199,7 +334,9 @@ def discover() -> dict[str, Any]:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--json", action="store_true")
-    ap.add_argument("--shell", action="store_true", help="KEY=VALUE lines for bash eval")
+    ap.add_argument(
+        "--shell", action="store_true", help="KEY=VALUE lines for bash eval"
+    )
     args = ap.parse_args()
 
     found = discover()
@@ -217,7 +354,9 @@ def main() -> int:
         print("AgentShroud™ — upstream release discovery")
         for name, info in found.items():
             if info["error"]:
-                print(f"  {name:<9} UNKNOWN — {info['source']} failed: {info['error'][:80]}")
+                print(
+                    f"  {name:<9} UNKNOWN — {info['source']} failed: {info['error'][:80]}"
+                )
             else:
                 print(f"  {name:<9} latest={info['latest']}  ({info['source']})")
 

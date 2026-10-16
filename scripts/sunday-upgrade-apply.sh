@@ -650,6 +650,12 @@ phase_baseline() {
 DISCOVERED_OPENCLAW_VERSION=""
 DISCOVERED_HERMES_TAG=""
 UPGRADE_AVAILABLE=0
+# 1 only when BOTH upstream lookups returned a value. Anything less is
+# "unknown", and the no-op gate below must not call an unknown "already
+# current" (2026-10-16 dry run: discovery was killed mid-run, the gate printed
+# "NO-OP (honest) — already on the latest upstream release" and would have
+# published status=PASS while OpenClaw 2026.10.4 and Hermes v0.22.2 existed).
+DISCOVERY_COMPLETE=0
 
 phase_discover() {
   local discover_py="$REPO/scripts/discover_upstream_versions.py"
@@ -669,11 +675,29 @@ phase_discover() {
 
   log "discover: openclaw pinned=${OPENCLAW_VERSION:-<unset>} latest=${DISCOVERED_OPENCLAW_VERSION:-<unknown>}"
   log "discover: hermes   pinned=${HERMES_VERSION:-<unset>} latest_tag=${DISCOVERED_HERMES_TAG:-<unknown>}"
+  if [ -n "$DISCOVERED_OPENCLAW_VERSION" ] && [ -n "$DISCOVERED_HERMES_TAG" ]; then
+    DISCOVERY_COMPLETE=1
+  else
+    warn "discover: at least one upstream is UNKNOWN (openclaw='${DISCOVERED_OPENCLAW_VERSION:-}', hermes='${DISCOVERED_HERMES_TAG:-}') — the no-op gate cannot claim 'already current' this run"
+  fi
 
   if [ -n "$DISCOVERED_OPENCLAW_VERSION" ] \
      && [ "$DISCOVERED_OPENCLAW_VERSION" != "${OPENCLAW_VERSION:-}" ]; then
     UPGRADE_AVAILABLE=1
     warn "discover: OpenClaw is BEHIND — pinned ${OPENCLAW_VERSION:-<unset>}, latest ${DISCOVERED_OPENCLAW_VERSION}"
+  fi
+
+  # Hermes too. Until 2026-10-16 only OpenClaw fed UPGRADE_AVAILABLE, so a
+  # Sunday where OpenClaw was already current but Hermes was behind (e.g.
+  # pinned 0.21.5 while Docker Hub had v0.22.2) could rebuild the same Hermes
+  # and still pass the no-op gate — the exact blind spot that gate exists to
+  # close. Docker Hub tags carry a leading "v" (v0.22.2); versions.env's
+  # HERMES_VERSION does not (0.21.5) — compare with the prefix stripped.
+  local hermes_latest_plain="${DISCOVERED_HERMES_TAG#v}"
+  if [ -n "$hermes_latest_plain" ] \
+     && [ "$hermes_latest_plain" != "${HERMES_VERSION:-}" ]; then
+    UPGRADE_AVAILABLE=1
+    warn "discover: Hermes is BEHIND — pinned ${HERMES_VERSION:-<unset>}, latest ${DISCOVERED_HERMES_TAG}"
   fi
 }
 
@@ -704,8 +728,21 @@ check_noop_gate() {
   if [ "$UPGRADE_AVAILABLE" -eq 1 ]; then
     err "no-op gate: FAILED — this run changed no upstream pin, but a newer release exists."
     err "no-op gate:   OpenClaw pinned=${OPENCLAW_VERSION:-<unset>} latest=${DISCOVERED_OPENCLAW_VERSION:-<unknown>}"
+    err "no-op gate:   Hermes   pinned=${HERMES_VERSION:-<unset>} latest=${DISCOVERED_HERMES_TAG:-<unknown>}"
     err "no-op gate: The stack may be healthy, but nothing was upgraded. Reporting this as"
     err "no-op gate: a PASS is what hid seven weeks of no-op Sunday runs."
+    return 25
+  fi
+  if [ "$DISCOVERY_COMPLETE" -ne 1 ]; then
+    # No pin changed AND we could not establish what latest is. "Already
+    # current" is a claim that needs discovery output to back it; without it
+    # this is the seven-week silent no-op with a different excuse. Same exit
+    # code as the known-behind case — the caller's contract is "25 = nothing
+    # was upgraded and that is not proven acceptable".
+    err "no-op gate: FAILED — this run changed no upstream pin and upstream discovery is INCOMPLETE"
+    err "no-op gate:   OpenClaw latest=${DISCOVERED_OPENCLAW_VERSION:-<unknown>}  Hermes latest=${DISCOVERED_HERMES_TAG:-<unknown>}"
+    err "no-op gate: Cannot claim 'already on the latest release' without discovery output. Fix the"
+    err "no-op gate: lookup (scripts/discover_upstream_versions.py) and re-run; never report this as PASS."
     return 25
   fi
   log "no-op gate: NO-OP (honest) — already on the latest upstream release; nothing to upgrade"
@@ -1352,6 +1389,24 @@ _take_apply_lock || exit 10
 _record_head
 
 PINS_BEFORE="$(_capture_pins)"
+# The mission (prompts/sunday-upgrade.md §3.0-3.1) edits and COMMITS the pins on
+# its chore/upgrade-* branch BEFORE invoking this script, so "pins at script
+# start" already equals "pins at script end" and the gate above read every real
+# upgrade as "no pin changed" (2026-10-04 and 2026-10-11: handoff upgraded:false
+# on runs that demonstrably upgraded OpenClaw — the report had to be corrected
+# by hand). The honest "before" is what main had before this run's branch:
+# docker/versions.env at the merge-base with origin/main. When HEAD *is* that
+# merge-base (prod after merge, or a run with no branch) this is a no-op and the
+# start-of-script capture stands.
+_pins_base_rev="$(git -C "$REPO" merge-base HEAD origin/main 2>/dev/null || true)"
+if [ -n "$_pins_base_rev" ] && [ "$_pins_base_rev" != "${HEAD_AT_START:-}" ]; then
+  _pins_at_base="$(git -C "$REPO" show "${_pins_base_rev}:docker/versions.env" 2>/dev/null \
+    | grep -E '^(OPENCLAW_VERSION|HERMES_VERSION|HERMES_IMAGE)=' | sort || true)"
+  if [ -n "$_pins_at_base" ]; then
+    PINS_BEFORE="$_pins_at_base"
+    log "no-op gate: 'before' pins taken from merge-base $(printf '%.12s' "$_pins_base_rev") (main before this run's branch), not from the already-committed checkout"
+  fi
+fi
 
 _should_run preflight && phase_preflight
 _should_run discover  && phase_discover

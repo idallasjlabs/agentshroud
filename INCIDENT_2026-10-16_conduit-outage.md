@@ -374,3 +374,118 @@ committed, per the owner's no-more-changes instruction). Key facts from it folde
   context**. This is flagged as unresolved and needing dedicated investigation — not
   something either session root-caused tonight. Worth the owner's direct attention given
   this is a security product.
+
+## Morning verification + Sunday-upgrade prep (dev, 09:15–10:15 EDT, 2026-10-16)
+
+Owner asked for a full working-state confirmation and then for dev to start preparing
+for Sunday's unattended upgrade (2026-10-19, dev 03:00 / prod 06:00 EDT). Every item
+below was checked with command output, not assumed.
+
+### Verified working (dev side)
+- Dev `main` at `27fef92e9d` == `origin/main`, clean tree; all 7 dev containers healthy;
+  `scripts/check-version-pins-parity.sh` → PASS.
+- Local models: direct completion to Rapid-MLX `nemotron-3.5-lightning-rapid` → clean
+  `OK-DIRECT`; through the dev gateway proxy (`POST /v1/chat/completions` on :9080) → clean
+  `OK-VIA-GATEWAY`, no in-band reasoning, no `/no_think`, 200 in the gateway log.
+- Tailscale at boot: `tailscaled` runs from the Homebrew LaunchDaemon
+  (`/Library/LaunchDaemons/sh.brew.tailscale.plist`, RunAtLoad + KeepAlive, one daemon
+  only — no `/Applications/Tailscale.app` dual-daemon conflict); serve config is
+  persisted in tailscaled state and re-applied on boot; `com.local.tailscale-watchdog`
+  (every 5 min) logs `ok (Running, Online)`. Live serve table includes `:8080` → prod
+  gateway (`/status` 200), `:9119` → `127.0.0.1:9220` (the prod dashboard relay, 302),
+  `:8765` (200). `:18789` returns 502 from the tailnet — nothing listens on
+  127.0.0.1:18789 on the host (prod's OpenClaw Control UI port) — asked prod to check.
+  `:8642` is the known-dead direct Hermes API serve (see "Known open issues").
+- Dev Hermes: `Connected to Telegram` count 0, `conflict` count 0 — the
+  `AGENTSHROUD_HERMES_DISABLE_TELEGRAM=1` launch is holding.
+- Auth/tooling the unattended job needs on this account: `claude auth status` loggedIn,
+  `gh auth status` logged in with `repo`/`workflow`, `git push --dry-run` OK, `npm`
+  11.20.0, `tmux`/`colima`/`trivy` on PATH, host memory pressure level 1, dev-VM egress
+  to registry-1.docker.io / mirror.gcr.io / ghcr.io / npmjs 401/401/401/200 (reachable).
+- Dev cron (`crontab -l`): `0 3 * * 0` plus retries at 05/08/11/14, all with
+  `SUNDAY_UPGRADE_AUTON=1`; `colima-health-check.sh` every 5 min and `@reboot`.
+
+### Not verifiable from dev (asked prod twice, no reply received by 10:15 EDT)
+- Prod's Hermes cron history and whether today's Daily Brief **podcast** was produced and
+  delivered; prod's `git rev-parse HEAD`; `hermes-dashboard-relay` restart policy; the
+  `:18789` 502; what restores Colima + the relay after a prod reboot. Cross-session
+  messages to a Remote Control session are held for that user's approval, so silence
+  is not a result either way.
+
+### lazydocker leak recurred (09:13–09:46 EDT) — found during the first dry run
+- A fresh `lazydocker` (pid 63045, user agentshroud-bot, started ~09:13 from the owner's
+  `asb` tmux layout, which has a pane that `exec lazydocker`s) had 861 docker.sock
+  connections open through Colima's ssh forward within 31 minutes. Effects: dockerd
+  290% CPU / containerd 218%, host load 27, dev VM 209 MB free, the VM OOM-killer
+  SIGKILLed OpenClaw's node process at 13:43:17Z (clean exit 0 → docker restart, 5 min
+  to healthy), `docker version` >120 s, and every trivy scan in the dry run died with
+  `use of closed network connection` after its 300 s timeout — i.e. the same "trivy
+  always fails on Sunday" symptom recorded on 10-04 and 10-11 is at least partly this.
+- `kill 63045` → socket count 732 → 2 in 10 s, `docker ps` back to 60 ms, VM back to
+  2.6 GB free. The other lazydocker (pid 60869, ijefferson.admin) is on PROD's socket
+  and is not dev's problem; prod was told to check its own count.
+- Durable fix is in the owner's tmux layout (don't auto-launch lazydocker), not in this
+  repo.
+
+### Changes committed for Sunday (this commit)
+1. `scripts/discover_upstream_versions.py` — three hardenings, all TDD'd
+   (`gateway/tests/test_discover_upstream_versions.py`, 34 passed):
+   - bounded retry (4 attempts, 5/10/20 s) around both upstream fetches. Two
+     consecutive real runs failed Hermes discovery (`<urlopen error timed out>`, then
+     `SSL: UNEXPECTED_EOF_WHILE_READING`) while the identical URL succeeded 10/10 from
+     curl and urllib immediately before and after — a single blip turned into
+     "Hermes latest = UNKNOWN" for the whole run.
+   - hard per-attempt deadline (90 s) enforced from a daemon thread. The dry run's own
+     discovery, run with the cron job's interpreter (`/opt/homebrew/bin/python3` =
+     Python 3.15.0 / OpenSSL 4.0.3), sat **10+ minutes at 0% CPU** inside one
+     `urlopen(timeout=60)` with the socket in CLOSE_WAIT on an IPv6 Cloudflare address.
+     The socket timeout never fired. Unattended, that hang runs until the 180-min
+     watchdog kills the session.
+   - IPv4-only name resolution from the second attempt onward (`curl -4` was 100%
+     clean; every observed failure was on the IPv6 path). First attempt keeps the
+     system default.
+   - Live proof after the change, same interpreter: two runs, 4 s and 1 s, both
+     returning `OPENCLAW=2026.10.4`, `HERMES=v0.22.2` + digest.
+2. `scripts/sunday-upgrade-apply.sh` — three no-op-gate fixes (CLAUDE.md §0.0):
+   - **Hermes now feeds `UPGRADE_AVAILABLE`.** Before, only OpenClaw did, so a Sunday
+     with OpenClaw current and Hermes behind could rebuild the same Hermes and pass.
+     (Today both are behind: OpenClaw 2026.10.2→2026.10.4, Hermes 0.21.5→v0.22.2.)
+   - **Unknown discovery can no longer read as "already current".** The first dry run
+     today (discovery killed mid-run) printed `NO-OP (honest) — already on the latest
+     upstream release` and would have published `status=PASS`. Now: no pin changed +
+     discovery incomplete → exit 25 / `NOTHING_UPGRADED`, same as known-behind.
+   - **"Before" pins come from the merge-base with `origin/main`**, not from script
+     start. The mission commits its pin bumps on `chore/upgrade-*` before invoking the
+     script, so start==end and every real upgrade was reported `upgraded:false`
+     (10-04, 10-11 — hand-corrected in those reports). On prod (HEAD == merge-base) the
+     old behaviour is unchanged.
+   - Proof, two full `--dry-run` runs with the patched script: on `main` → `OpenClaw is
+     BEHIND`, `Hermes is BEHIND`, no-op gate FAILED, **exit 25**, handoff would be
+     `NOTHING_UPGRADED`/`FAIL` (correct — nothing bumped). On a throwaway branch with
+     the two real bumps committed → `'before' pins taken from merge-base 27fef92e9d13`,
+     `no-op gate: PASS — upstream pins changed this run`, **exit 0**, handoff would be
+     `PASS`. Branch deleted afterwards; pins on `main` untouched (2026.10.2 / 0.21.5 —
+     Sunday's run makes the real bump through the normal PR flow).
+   - With a healthy daemon the scan phase is fast: 3/3 images in ~80 s, 0 CRITICAL
+     (gateway 135 HIGH, openclaw 166 HIGH, hermes 414 HIGH — untriaged, as on 10-11).
+3. `docker/docker-compose.agentshroud-bot.marvin.yml` — dev gateway's
+   `HERMES_DASHBOARD_UPSTREAM` now names `agentshroud-dev-hermes-v2:9120`. The 2026-09-18
+   dev rename only covered lifespan.py's TCP forwarders; main.py's HTTP reverse proxy for
+   `/hermes-dashboard/*` (the gateway-routed path Conduit should eventually use instead
+   of the `:9119` relay bypass) still pointed at the prod hostname, so on dev it was
+   always 502. After `up -d --no-deps gateway`: healthy in 40 s, `GET /hermes-dashboard/`
+   → 200. (`gateway/tests/test_security_regressions_v1_2.py::TestHermesDashboardBridge*`
+   2 passed.)
+
+### Still open for Sunday (not changed today)
+- `graphify-out/` is stale (manifest 2026-09-27; 17 commits since touching
+  gateway/scripts/docker). CLAUDE.md makes a refresh mandatory before a prod rebuild —
+  to be run and committed separately once the host is not under memory pressure
+  (63 GB used / 31 GB compressor at 10:06 EDT with the local models loaded).
+- Dev VM is 10 GiB (`colima list`), not the 12 GiB in project memory; it OOM-killed
+  OpenClaw once today under the lazydocker load. Not changed (would restart every dev
+  container); flag for the owner.
+- `.trivyignore.yaml` accepted-risk entries CVE-2026-6653 (expires 2026-10-27) and
+  CVE-2026-43185 (2026-11-10) are within the warn window — re-review before they lapse.
+- Dependabot PRs #499/#500/#501 (fastapi, pydantic, aiohttp bumps) are open and will be
+  in Sunday's scope.

@@ -32,6 +32,15 @@ services:
       # API checks bypass this proxy entirely, so they didn't catch it either).
       - HERMES_DASHBOARD_HOST_UPSTREAM=agentshroud-dev-hermes-v2
       - HERMES_API_HOST_UPSTREAM=agentshroud-dev-hermes-v2
+      # The 2026-09-18 rename above only covered lifespan.py's TCP forwarders.
+      # main.py's HTTP reverse proxy for /hermes-dashboard/* (the route Conduit
+      # is meant to use once it stops going through the :9119 relay bypass)
+      # reads HERMES_DASHBOARD_UPSTREAM instead, which the base file sets to
+      # the prod hostname — so on this host every GET /hermes-dashboard/ was
+      # a 502 (found 2026-10-16 while verifying the gateway-routed path; curl
+      # from inside the gateway to agentshroud-dev-hermes-v2:9120 returned 200,
+      # to agentshroud-hermes-v2:9120 did not resolve). Same bridge port 9120.
+      - HERMES_DASHBOARD_UPSTREAM=http://agentshroud-dev-hermes-v2:9120
 
   openclaw:
     container_name: agentshroud-dev-openclaw

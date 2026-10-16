@@ -28,6 +28,12 @@ repos:
       - id: detect-aws-credentials
         args: ['--allow-missing-credentials']
       - id: check-yaml
+        # docker/docker-compose.agentshroud-bot.marvin.yml uses Compose's
+        # `ports: !override` merge tag (since 2026-09-18). PyYAML's safe loader
+        # has no constructor for it, so the default mode rejected every commit
+        # that staged that file (2026-10-16). --unsafe = syntax-only parse,
+        # which is all this hook is for here.
+        args: ['--unsafe']
       - id: check-json
       - id: check-merge-conflict
       # Vendored upstream compliance content must stay byte-identical to what
