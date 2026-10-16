@@ -250,6 +250,15 @@ check "S15: asb _preserve_nonempty_secrets restores empty/missing values, keeps 
     "expected 'old-url|old-key|new-pat', got '${_s15_got}'"
 rm -rf "$_s15_prev" "$_s15_new"
 
+# S16: asb rebuild / clean-rebuild pass the profile flag to `compose build`.
+# Without `--profile voice`, compose builds only un-profiled services, so
+# `asb rebuild full` left voice-gateway on its old image (prod, 2026-10-16).
+_s16_count="$(grep -c '^\s*\$COMPOSE \$_PROFILE_FLAG build --no-cache$' "$asb_sh" || true)"
+_s16_bare="$(grep -c '^\s*\$COMPOSE build --no-cache$' "$asb_sh" || true)"
+check "S16: asb rebuild/clean-rebuild build with \$_PROFILE_FLAG (voice-gateway included)" \
+    "$([[ "$_s16_count" -ge 2 && "$_s16_bare" -le 1 ]] && echo true || echo false)" \
+    "profiled build calls=${_s16_count} (need >=2), bare build calls=${_s16_bare} (only the plain 'build' command may be bare)"
+
 # ── Summary ────────────────────────────────────────────────────────────────
 echo ""
 total=$(( pass + fail ))

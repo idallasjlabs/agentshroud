@@ -622,7 +622,11 @@ case "${1:-}" in
     $COMPOSE --profile full down 2>/dev/null || true
     _prune_docker
     setup_ephemeral_secrets
-    $COMPOSE build --no-cache
+    # $_PROFILE_FLAG must reach `build` too: without `--profile voice` compose
+    # builds only the un-profiled services, so `rebuild full` brought every
+    # container up on fresh images EXCEPT voice-gateway, which silently kept
+    # its old image (found on prod's 2026-10-16 rebuild from a7b8cee1e2).
+    $COMPOSE $_PROFILE_FLAG build --no-cache
     [[ "$_WANT_HERMES" == "1" ]] && $COMPOSE build hermes --no-cache
     _ensure_sandbox_image
     $COMPOSE $_PROFILE_FLAG up -d
@@ -648,7 +652,11 @@ case "${1:-}" in
     # hermes-config is intentionally excluded — it persists Hermes skills, cron, MCP, memory
     _prune_docker
     setup_ephemeral_secrets
-    $COMPOSE build --no-cache
+    # $_PROFILE_FLAG must reach `build` too: without `--profile voice` compose
+    # builds only the un-profiled services, so `rebuild full` brought every
+    # container up on fresh images EXCEPT voice-gateway, which silently kept
+    # its old image (found on prod's 2026-10-16 rebuild from a7b8cee1e2).
+    $COMPOSE $_PROFILE_FLAG build --no-cache
     [[ "$_WANT_HERMES" == "1" ]] && $COMPOSE build hermes --no-cache
     _ensure_sandbox_image
     $COMPOSE $_PROFILE_FLAG up -d
