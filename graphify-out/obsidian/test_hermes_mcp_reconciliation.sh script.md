@@ -1,18 +1,18 @@
 ---
 source_file: "tests/startup_smoke/test_hermes_mcp_reconciliation.sh"
 type: "code"
-community: "graphify reference: GitHub clone and cross-repo "
+community: "test_hermes_mcp_reconciliation.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/graphify_reference_GitHub_clone_and_cross-repo_
+  - community/test_hermes_mcp_reconciliationsh
 ---
 
 # test_hermes_mcp_reconciliation.sh script
 
 ## Connections
-- [[check()_10]] - `calls` [EXTRACTED]
+- [[check()_6]] - `calls` [EXTRACTED]
 - [[test_hermes_mcp_reconciliation.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/graphify_reference_GitHub_clone_and_cross-repo_
+#graphify/code #graphify/EXTRACTED #community/test_hermes_mcp_reconciliationsh

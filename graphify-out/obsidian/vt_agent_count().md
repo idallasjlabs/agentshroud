@@ -1,17 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/main/app_main.c"
+source_file: "firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c"
 type: "code"
-community: "_t()"
-location: "L72"
+community: "test_ptt_state.c"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t
+  - community/test_ptt_statec
 ---
 
 # vt_agent_count()
 
 ## Connections
-- [[app_main.c]] - `contains` [EXTRACTED]
+- [[test_ptt_state.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t
+#graphify/code #graphify/EXTRACTED #community/test_ptt_statec

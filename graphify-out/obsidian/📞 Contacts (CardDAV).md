@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "LLMProxy.proxy_messages"
+community: "Apple Services Setup Guide"
 location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages
+  - community/Apple_Services_Setup_Guide
 ---
 
 # 📞 Contacts (CardDAV)
@@ -15,4 +15,4 @@ tags:
 - [[Apple Services Setup Guide]] - `contains` [EXTRACTED]
 - [[CardDAV Server]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LLMProxyproxy_messages
+#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide

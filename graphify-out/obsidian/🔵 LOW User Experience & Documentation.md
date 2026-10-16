@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/TELEGRAM_ISSUES.md"
 type: "document"
-community: "xurl — Agent Skill Reference"
+community: "AgentShroud™ Telegram-Reported Issues"
 location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/xurl__Agent_Skill_Reference
+  - community/AgentShroud_Telegram-Reported_Issues
 ---
 
 # 🔵 LOW: User Experience & Documentation
@@ -17,4 +17,4 @@ tags:
 - [[13. Hallucination in Competitor Reports]] - `contains` [EXTRACTED]
 - [[AgentShroud™ Telegram-Reported Issues]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Telegram-Reported_Issues

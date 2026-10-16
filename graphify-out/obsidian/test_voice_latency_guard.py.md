@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_voice_latency_guard.py"
 type: "code"
-community: "test_hermes_model_resolver.py"
+community: "test_voice_latency_guard.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy
+  - community/test_voice_latency_guardpy
 ---
 
 # test_voice_latency_guard.py
 
 ## Connections
 - [[_call_agent_stream()]] - `imports` [EXTRACTED]
-- [[_mock_stream_resp()_1]] - `contains` [EXTRACTED]
+- [[_mock_stream_resp()]] - `contains` [EXTRACTED]
 - [[_record_turn_latency()]] - `imports` [EXTRACTED]
 - [[_sse_body()_1]] - `contains` [EXTRACTED]
 - [[_voice_forward_metadata()]] - `imports` [EXTRACTED]
@@ -32,4 +32,4 @@ tags:
 - [[test_voice_forward_metadata_module_default_is_off()]] - `contains` [EXTRACTED]
 - [[test_voice_forward_metadata_on_sets_no_memory_tag()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy
+#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy

@@ -1,17 +1,20 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/text_control_center.py.md"
-type: "document"
-community: "TestDockerSecretIsolation"
+source_file: "src/interfaces/text_control_center.py"
+type: "code"
+community: "ControlCenter"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/TestDockerSecretIsolation
+  - community/ControlCenter
 ---
 
-# text_control_center.py.md
+# text_control_center.py
 
 ## Connections
-- [[text_control_center.py  agentshroud_manager.py]] - `contains` [EXTRACTED]
+- [[ANSI]] - `contains` [EXTRACTED]
+- [[ControlCenter]] - `contains` [EXTRACTED]
+- [[main()_17]] - `contains` [EXTRACTED]
+- [[start-control-center]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestDockerSecretIsolation
+#graphify/code #graphify/EXTRACTED #community/ControlCenter

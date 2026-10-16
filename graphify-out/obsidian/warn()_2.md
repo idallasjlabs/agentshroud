@@ -1,19 +1,18 @@
 ---
-source_file: "scripts/check-vendor-compat.sh"
+source_file: "scripts/security-scan.sh"
 type: "code"
-community: "OutputSchemaEnforcer"
-location: "L52"
+community: "scripts/security-scan.sh"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputSchemaEnforcer
+  - community/scripts/security-scansh
 ---
 
 # warn()
 
 ## Connections
-- [[check-vendor-compat.sh]] - `defines` [EXTRACTED]
-- [[check_hermes()]] - `calls` [EXTRACTED]
-- [[check_openclaw()]] - `calls` [EXTRACTED]
+- [[scriptssecurity-scan.sh]] - `defines` [EXTRACTED]
+- [[security-scan.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer
+#graphify/code #graphify/EXTRACTED #community/scripts/security-scansh

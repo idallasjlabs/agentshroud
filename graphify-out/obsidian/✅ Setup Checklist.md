@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "Kill Switch"
+community: "AgentShroud Prerequisites"
 location: "L529"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Kill_Switch
+  - community/AgentShroud_Prerequisites
 ---
 
 # ✅ Setup Checklist
@@ -16,6 +16,6 @@ tags:
 - [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
 - [[Configuration_7]] - `contains` [EXTRACTED]
 - [[Software]] - `contains` [EXTRACTED]
-- [[Verification_10]] - `contains` [EXTRACTED]
+- [[Verification_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Kill_Switch
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites

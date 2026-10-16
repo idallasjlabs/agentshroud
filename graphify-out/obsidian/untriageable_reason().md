@@ -1,19 +1,19 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "EncryptedStore"
+community: "triage-cve-mitigations.py"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/triage-cve-mitigationspy
 ---
 
 # untriageable_reason()
 
 ## Connections
 - [[Why agent_id cannot be triaged, or None if it can.]] - `rationale_for` [EXTRACTED]
-- [[main()_28]] - `calls` [EXTRACTED]
+- [[main()]] - `calls` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EncryptedStore
+#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy

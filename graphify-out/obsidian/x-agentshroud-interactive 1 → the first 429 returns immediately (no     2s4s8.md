@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "rationale"
-community: "The 8D Investigation Process"
+community: "test_llm_proxy_failover.py"
 location: "L105"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process
+  - community/test_llm_proxy_failoverpy
 ---
 
 # x-agentshroud-interactive: 1 → the first 429 returns immediately (no     2s/4s/8
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_forward_request_interactive_header_skips_retries()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/The_8D_Investigation_Process
+#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_failoverpy

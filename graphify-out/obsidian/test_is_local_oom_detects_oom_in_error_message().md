@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "asyncio"
+community: "test_llm_proxy_local_parity.py"
 location: "L812"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/test_llm_proxy_local_paritypy
 ---
 
 # test_is_local_oom_detects_oom_in_error_message()
@@ -15,4 +15,4 @@ tags:
 - [[_is_local_oom detects 'out of memory' in error message string.]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

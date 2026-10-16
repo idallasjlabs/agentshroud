@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard_endpoints.py"
 type: "code"
-community: "Phase 3: MITIGATE (Rollback First!)"
+community: "test_dashboard_endpoints.py"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First
+  - community/test_dashboard_endpointspy
 ---
 
 # test_proxy_status_includes_pipeline_stats()
@@ -15,4 +15,4 @@ tags:
 - [[When pipeline exists, stats should reflect its data.]] - `rationale_for` [EXTRACTED]
 - [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

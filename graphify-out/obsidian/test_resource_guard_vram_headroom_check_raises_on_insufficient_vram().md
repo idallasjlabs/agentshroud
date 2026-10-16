@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "voice_task"
+community: "ResourceGuard"
 location: "L480"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/voice_task
+  - community/ResourceGuard
 ---
 
 # test_resource_guard_vram_headroom_check_raises_on_insufficient_vram()
@@ -17,4 +17,4 @@ tags:
 - [[check_vram_headroom raises VRAMHeadroomError when estimated VRAM exceeds budget.]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/voice_task
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

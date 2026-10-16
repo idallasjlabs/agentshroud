@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "rationale"
-community: "test_voice_gateway.py"
+community: "test_soc_router_coverage.py"
 location: "L2091"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/test_soc_router_coveragepy
 ---
 
 # update_service() must be called with the real container name     (agentshroud-he
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_upgrade_hermes_restarts_the_real_container_name()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/rationale #graphify/EXTRACTED #community/test_soc_router_coveragepy

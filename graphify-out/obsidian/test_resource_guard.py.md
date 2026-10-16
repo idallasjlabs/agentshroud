@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "code"
-community: "voice_task"
+community: "ResourceGuard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/voice_task
+  - community/ResourceGuard
 ---
 
 # test_resource_guard.py
@@ -17,4 +17,4 @@ tags:
 - [[TestResourceGuard]] - `contains` [EXTRACTED]
 - [[test_resource_guard_wiring.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/voice_task
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

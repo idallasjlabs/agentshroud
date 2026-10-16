@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+community: "UserSessionManager"
 location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR
+  - community/UserSessionManager
 ---
 
 # usm()
@@ -15,4 +15,4 @@ tags:
 - [[UserSessionManager]] - `calls` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

@@ -1,28 +1,19 @@
 ---
-source_file: "scripts/sunday-upgrade-apply.sh"
+source_file: "scripts/check-vendor-compat.sh"
 type: "code"
-community: "DraftEntry"
-location: "L119"
+community: "check-vendor-compat.sh"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DraftEntry
+  - community/check-vendor-compatsh
 ---
 
 # warn()
 
 ## Connections
-- [[_attempt_rollback()]] - `calls` [EXTRACTED]
-- [[_ensure_build_space()]] - `calls` [EXTRACTED]
-- [[_prune_build_cache()]] - `calls` [EXTRACTED]
-- [[_take_apply_lock()]] - `calls` [EXTRACTED]
-- [[phase_apply()]] - `calls` [EXTRACTED]
-- [[phase_baseline()]] - `calls` [EXTRACTED]
-- [[phase_discover()]] - `calls` [EXTRACTED]
-- [[phase_preflight()]] - `calls` [EXTRACTED]
-- [[phase_verify()]] - `calls` [EXTRACTED]
-- [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
-- [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
-- [[write_handoff()]] - `calls` [EXTRACTED]
+- [[check-vendor-compat.sh]] - `defines` [EXTRACTED]
+- [[check_hermes()]] - `calls` [EXTRACTED]
+- [[check_openclaw()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DraftEntry
+#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh

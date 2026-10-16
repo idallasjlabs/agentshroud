@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "AsyncMock"
+community: "KeyVault"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/KeyVault
 ---
 
 # test_key_vault.py
@@ -23,7 +23,7 @@ tags:
 - [[TestKeyScoping]] - `contains` [EXTRACTED]
 - [[TestKeyStorage]] - `contains` [EXTRACTED]
 - [[TestKeyVaultConfig]] - `contains` [EXTRACTED]
-- [[config()]] - `contains` [EXTRACTED]
+- [[config()_3]] - `contains` [EXTRACTED]
 - [[vault()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/KeyVault

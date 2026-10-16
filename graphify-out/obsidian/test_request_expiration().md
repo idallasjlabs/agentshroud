@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "ApprovalRequest"
 location: "L177"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/ApprovalRequest
 ---
 
 # test_request_expiration()
 
 ## Connections
-- [[ApprovalRequest_3]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_5]] - `calls` [EXTRACTED]
 - [[Test that requests expire after timeout]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

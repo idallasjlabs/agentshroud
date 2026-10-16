@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "code"
-community: "TeamsConfig"
+community: "KillSwitchMonitor"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/KillSwitchMonitor
 ---
 
 # test_killswitch_monitor.py
 
 ## Connections
-- [[KillSwitchConfig]] - `imports` [EXTRACTED]
+- [[KillSwitchConfig_1]] - `imports` [EXTRACTED]
 - [[KillSwitchMonitor]] - `imports` [EXTRACTED]
-- [[TestKillSwitchConfig_1]] - `contains` [EXTRACTED]
+- [[TestKillSwitchConfig]] - `contains` [EXTRACTED]
 - [[TestKillSwitchMonitor]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

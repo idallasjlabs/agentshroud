@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multilingual_injection.py"
 type: "code"
-community: "TestApprovalHardening"
+community: "OutboundInfoFilter"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestApprovalHardening
+  - community/OutboundInfoFilter
 ---
 
 # test_multilingual_injection.py
@@ -16,4 +16,4 @@ tags:
 - [[TestMultilingualInjection]] - `contains` [EXTRACTED]
 - [[prompt_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestApprovalHardening
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

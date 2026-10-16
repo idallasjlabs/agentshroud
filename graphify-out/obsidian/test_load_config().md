@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "code"
-community: "ModeRequest"
+community: "test_config.py"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/test_configpy
 ---
 
 # test_load_config()
@@ -16,4 +16,4 @@ tags:
 - [[_load_config()]] - `calls` [EXTRACTED]
 - [[test_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModeRequest
+#graphify/code #graphify/EXTRACTED #community/test_configpy

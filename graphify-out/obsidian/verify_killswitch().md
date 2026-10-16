@@ -1,21 +1,20 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "SSHProxy"
+community: "gateway/ingest_api/main.py (/hermes-dashboard/ HTTP + WebSocket reverse proxy)"
 location: "L3873"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
 ---
 
 # verify_killswitch()
 
 ## Connections
-- [[AuthRequired]] - `references` [EXTRACTED]
-- [[AuthRequired_5]] - `references` [EXTRACTED]
-- [[FastAPI app instance]] - `shares_data_with` [EXTRACTED]
-- [[Run kill switch verification test.      Args         dry_run If True (default)]] - `rationale_for` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
+- [[AuthRequired_2]] - `references` [EXTRACTED]
+- [[Run kill switch verification test. Args dry_run If True (default), only…]] - `rationale_for` [EXTRACTED]
+- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `contains` [EXTRACTED]
+- [[post_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy

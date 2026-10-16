@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rate_limit_failover.py"
 type: "code"
-community: "Oracle — Feedback Analyst"
+community: "is_rate_limited_post_retry"
 location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst
+  - community/is_rate_limited_post_retry
 ---
 
 # test_proxy_failover_on_post_retry_429()
@@ -16,4 +16,4 @@ tags:
 - [[LLMProxy]] - `calls` [EXTRACTED]
 - [[test_rate_limit_failover.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Oracle__Feedback_Analyst
+#graphify/code #graphify/EXTRACTED #community/is_rate_limited_post_retry

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "TestPromptProtection"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/TestPromptProtection
 ---
 
 # test_prompt_protection.py
@@ -17,4 +17,4 @@ tags:
 - [[prompt_protection()]] - `contains` [EXTRACTED]
 - [[sample_protected_content()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/TestPromptProtection

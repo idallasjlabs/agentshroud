@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-24-final.md"
 type: "document"
-community: "API Documentation"
+community: "5. Strategic Recommendations"
 location: "L221"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/API_Documentation
+  - community/5_Strategic_Recommendations
 ---
 
 # 📋 **Architecture Evolution (Next Quarter)**
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[5. Strategic Recommendations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/API_Documentation
+#graphify/document #graphify/EXTRACTED #community/5_Strategic_Recommendations

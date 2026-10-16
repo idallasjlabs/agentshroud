@@ -1,25 +1,24 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
-type: "document"
-community: "TestNoResponseGuarantee"
-location: "L10"
+source_file: "gateway/security/trivy_report.py"
+type: "code"
+community: "test_daily_cve_report.py"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/TestNoResponseGuarantee
+  - community/test_daily_cve_reportpy
 ---
 
 # trivy_report.py
 
 ## Connections
-- [[Configuration  Environment Variables_30]] - `contains` [EXTRACTED]
-- [[Function Details_49]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_52]] - `contains` [EXTRACTED]
-- [[Purpose_170]] - `contains` [EXTRACTED]
-- [[Related_56]] - `contains` [EXTRACTED]
-- [[Responsibilities_54]] - `contains` [EXTRACTED]
-- [[Severity Order (for ranking)]] - `contains` [EXTRACTED]
-- [[Threat Model_25]] - `contains` [EXTRACTED]
-- [[trivy_report.py_1]] - `contains` [EXTRACTED]
+- [[daily_cve_report.py]] - `imports_from` [EXTRACTED]
+- [[generate_summary()_3]] - `contains` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[parse_trivy_output()]] - `contains` [EXTRACTED]
+- [[run_trivy_scan()_1]] - `contains` [EXTRACTED]
+- [[save_report()]] - `contains` [EXTRACTED]
+- [[test_daily_cve_report.py]] - `imports_from` [EXTRACTED]
+- [[test_security_audit.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestNoResponseGuarantee
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

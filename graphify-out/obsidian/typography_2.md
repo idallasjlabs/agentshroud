@@ -1,12 +1,12 @@
 ---
 source_file: "branding/typography/typography.md"
 type: "document"
-community: "Community 831"
+community: "branding/README.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_831
+  - community/branding/READMEmd
 ---
 
 # typography.md
@@ -17,4 +17,4 @@ tags:
 - [[Inter Typeface (Primary)]] - `references` [EXTRACTED]
 - [[JetBrains Mono Typeface (Monospace)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_831
+#graphify/document #graphify/EXTRACTED #community/branding/READMEmd

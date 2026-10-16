@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "AgentShroud™ Brand Guidelines"
+community: "SkillGuard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/SkillGuard
 ---
 
 # test_skill_guard.py
 
 ## Connections
 - [[Recommendation]] - `imports` [EXTRACTED]
-- [[ScanResult_2]] - `imports` [EXTRACTED]
+- [[ScanResult_4]] - `imports` [EXTRACTED]
 - [[Severity]] - `imports` [EXTRACTED]
-- [[SkillGuard]] - `imports` [EXTRACTED]
+- [[SkillGuard_1]] - `imports` [EXTRACTED]
 - [[SkillScanError]] - `imports` [EXTRACTED]
 - [[TestAggregation]] - `contains` [EXTRACTED]
 - [[TestCleanSkill]] - `contains` [EXTRACTED]
@@ -33,12 +33,12 @@ tags:
 - [[TestSyncScriptPreflight]] - `contains` [EXTRACTED]
 - [[_finding_categories()]] - `contains` [EXTRACTED]
 - [[_run_scan_cli()]] - `contains` [EXTRACTED]
-- [[_write_tree()]] - `contains` [EXTRACTED]
+- [[_write_tree()_1]] - `contains` [EXTRACTED]
 - [[gatewaysecurityskill_guard.py (SkillGuard)]] - `references` [EXTRACTED]
 - [[gatewayskillsscan.py (scan CLI)]] - `references` [EXTRACTED]
-- [[guard()_4]] - `contains` [EXTRACTED]
-- [[require_auth()_1]] - `imports` [EXTRACTED]
+- [[guard()_3]] - `contains` [EXTRACTED]
+- [[require_auth()]] - `imports` [EXTRACTED]
 - [[scan.py]] - `imports_from` [EXTRACTED]
 - [[webapi.py (POST apiintelreports)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-24.md"
 type: "document"
-community: "config.py"
+community: "1. Accomplishments This Phase"
 location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/configpy
+  - community/1_Accomplishments_This_Phase
 ---
 
 # 🖥️ **Control Interface Authentication**
 
 ## Connections
-- [[1. Accomplishments This Phase_2]] - `contains` [EXTRACTED]
+- [[1. Accomplishments This Phase_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/configpy
+#graphify/document #graphify/EXTRACTED #community/1_Accomplishments_This_Phase

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/REPORTED_ISSUES.md"
 type: "document"
-community: "TestLogSanitizer"
+community: "AgentShroud Consolidated Issues Report"
 location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestLogSanitizer
+  - community/AgentShroud_Consolidated_Issues_Report
 ---
 
 # 🔵 LOW: Improvements & Formatting
@@ -18,4 +18,4 @@ tags:
 - [[17. Hardcoded JWT Metadata]] - `contains` [EXTRACTED]
 - [[AgentShroud Consolidated Issues Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestLogSanitizer
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Consolidated_Issues_Report

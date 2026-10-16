@@ -1,7 +1,7 @@
 ---
 source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/FreeRTOS.h"
 type: "code"
-community: "xTaskGetTickCount()"
+community: "xTaskGetTickCount"
 location: "L1"
 tags:
   - graphify/code

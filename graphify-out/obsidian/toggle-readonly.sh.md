@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/toggle-readonly.sh"
 type: "code"
-community: "Incident Response Plan (stop, investigate, conta"
+community: "toggle-readonly.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Incident_Response_Plan_stop_investigate_conta
+  - community/toggle-readonlysh
 ---
 
 # toggle-readonly.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[toggle-readonly.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Incident_Response_Plan_stop_investigate_conta
+#graphify/code #graphify/EXTRACTED #community/toggle-readonlysh

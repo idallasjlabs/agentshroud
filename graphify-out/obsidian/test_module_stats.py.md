@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_module_stats.py"
 type: "code"
-community: "REQUIRED NOTES — PRODUCE EVERY ONE OF THESE"
+community: "ModuleStatsCollector"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE
+  - community/ModuleStatsCollector
 ---
 
 # test_module_stats.py
 
 ## Connections
-- [[Decision]] - `imports` [EXTRACTED]
+- [[Decision_2]] - `imports` [EXTRACTED]
 - [[EgressAction]] - `imports` [EXTRACTED]
-- [[EgressFilter_1]] - `imports` [EXTRACTED]
+- [[EgressFilter_2]] - `imports` [EXTRACTED]
 - [[ModuleStatsCollector]] - `imports` [EXTRACTED]
 - [[TestEgressWiringEndToEnd]] - `contains` [EXTRACTED]
 - [[TestEnforcementWiring]] - `contains` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[test_thread_safe_under_concurrency()]] - `contains` [EXTRACTED]
 - [[test_unknown_module_created_on_demand()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE
+#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector

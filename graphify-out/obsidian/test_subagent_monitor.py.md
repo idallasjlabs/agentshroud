@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "cli/main.py"
+community: "SubagentMonitor"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/cli/mainpy
+  - community/SubagentMonitor
 ---
 
 # test_subagent_monitor.py
@@ -15,17 +15,17 @@ tags:
 - [[SubagentEventType]] - `imports` [EXTRACTED]
 - [[SubagentMonitor]] - `imports` [EXTRACTED]
 - [[SubagentMonitorConfig]] - `imports` [EXTRACTED]
-- [[TestAuditTrail_2]] - `contains` [EXTRACTED]
+- [[TestAuditTrail_1]] - `contains` [EXTRACTED]
 - [[TestConcurrentLimits]] - `contains` [EXTRACTED]
 - [[TestKillSwitch]] - `contains` [EXTRACTED]
 - [[TestPermissionMonitoring]] - `contains` [EXTRACTED]
 - [[TestSubagentMonitorConfig]] - `contains` [EXTRACTED]
 - [[TestSubagentTracking]] - `contains` [EXTRACTED]
 - [[TestTrustInheritance]] - `contains` [EXTRACTED]
-- [[default_config()_4]] - `contains` [EXTRACTED]
+- [[default_config()_1]] - `contains` [EXTRACTED]
 - [[monitor()_1]] - `contains` [EXTRACTED]
-- [[monitor_config()_2]] - `contains` [EXTRACTED]
-- [[strict_config()_2]] - `contains` [EXTRACTED]
+- [[monitor_config()_1]] - `contains` [EXTRACTED]
+- [[strict_config()]] - `contains` [EXTRACTED]
 - [[strict_monitor()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/cli/mainpy
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

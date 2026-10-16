@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "Dependency Graph"
+community: "📋 Detailed Step-by-Step"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dependency_Graph
+  - community/_Detailed_Step-by-Step
 ---
 
 # 📋 Detailed Step-by-Step
@@ -20,4 +20,4 @@ tags:
 - [[Step 5 Verify Publication]] - `contains` [EXTRACTED]
 - [[Step 6 Test Installation (Optional)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dependency_Graph
+#graphify/document #graphify/EXTRACTED #community/_Detailed_Step-by-Step

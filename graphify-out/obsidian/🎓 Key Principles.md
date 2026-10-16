@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "document"
-community: "AgentShroud Color Palette"
+community: "Core Security Principles"
 location: "L235"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Color_Palette
+  - community/Core_Security_Principles
 ---
 
 # 🎓 Key Principles
@@ -17,4 +17,4 @@ tags:
 - [[3. Bot's Superior Reasoning]] - `contains` [EXTRACTED]
 - [[Security Implementation Verification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Color_Palette
+#graphify/document #graphify/EXTRACTED #community/Core_Security_Principles

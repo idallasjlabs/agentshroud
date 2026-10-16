@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_soak_status.py"
 type: "code"
-community: "Incident Response Playbook — AgentShroud"
+community: "TestClassify"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Incident_Response_Playbook__AgentShroud
+  - community/TestClassify
 ---
 
 # test_soak_status.py
 
 ## Connections
-- [[TestClassify_1]] - `contains` [EXTRACTED]
+- [[TestClassify_2]] - `contains` [EXTRACTED]
 - [[_job()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Incident_Response_Playbook__AgentShroud
+#graphify/code #graphify/EXTRACTED #community/TestClassify

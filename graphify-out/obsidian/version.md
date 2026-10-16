@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/package.json"
+source_file: "docker/config/hermes/manifest.json"
 type: "code"
-community: "TestParseHosts"
-location: "L3"
+community: "hermes/manifest.json"
+location: "L2"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestParseHosts
+  - community/hermes/manifestjson
 ---
 
 # version
 
 ## Connections
-- [[package.json]] - `contains` [EXTRACTED]
+- [[hermesmanifest.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestParseHosts
+#graphify/code #graphify/EXTRACTED #community/hermes/manifestjson

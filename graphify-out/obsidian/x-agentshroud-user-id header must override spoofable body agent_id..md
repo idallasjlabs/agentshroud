@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "rationale"
-community: "Safe Refactor Specialist"
+community: "TestMCPProxyEndpoint"
 location: "L129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Safe_Refactor_Specialist
+  - community/TestMCPProxyEndpoint
 ---
 
 # x-agentshroud-user-id header must override spoofable body agent_id.
 
 ## Connections
-- [[.test_header_user_id_overrides_body_agent_id()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_header_user_id_overrides_body_agent_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Safe_Refactor_Specialist
+#graphify/rationale #graphify/EXTRACTED #community/TestMCPProxyEndpoint

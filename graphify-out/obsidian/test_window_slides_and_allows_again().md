@@ -12,7 +12,7 @@ tags:
 # test_window_slides_and_allows_again()
 
 ## Connections
-- [[.advance()]] - `calls` [EXTRACTED]
+- [[dot-advance()]] - `calls` [EXTRACTED]
 - [[RateLimitConfig]] - `calls` [EXTRACTED]
 - [[RateLimitGuard]] - `calls` [EXTRACTED]
 - [[test_rate_limit_guard.py]] - `contains` [EXTRACTED]

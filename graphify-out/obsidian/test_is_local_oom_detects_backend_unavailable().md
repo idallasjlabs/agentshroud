@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "asyncio"
+community: "test_llm_proxy_local_parity.py"
 location: "L792"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/test_llm_proxy_local_paritypy
 ---
 
 # test_is_local_oom_detects_backend_unavailable()
@@ -15,4 +15,4 @@ tags:
 - [[_is_local_oom returns True for backend_unavailable 503 bodies.]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

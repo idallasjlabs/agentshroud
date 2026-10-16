@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "code"
-community: "EncryptedStore"
+community: "Enum"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/Enum
 ---
 
 # test_multi_turn_tracker.py
@@ -15,10 +15,10 @@ tags:
 - [[AlertLevel]] - `imports` [EXTRACTED]
 - [[DisclosureCategory]] - `imports` [EXTRACTED]
 - [[MultiTurnTracker]] - `imports` [EXTRACTED]
-- [[TestMultiTurnTracker_1]] - `contains` [EXTRACTED]
+- [[TestMultiTurnTracker]] - `contains` [EXTRACTED]
 - [[TestResponseConsistency]] - `contains` [EXTRACTED]
 - [[mock_alert_callback()]] - `contains` [EXTRACTED]
 - [[multi_turn_tracker()]] - `contains` [EXTRACTED]
 - [[multi_turn_tracker.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EncryptedStore
+#graphify/code #graphify/EXTRACTED #community/Enum

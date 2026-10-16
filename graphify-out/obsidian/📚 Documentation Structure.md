@@ -1,12 +1,12 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "_stub_client()"
+community: "AgentShroud Documentation"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_stub_client
+  - community/AgentShroud_Documentation
 ---
 
 # 📚 Documentation Structure
@@ -19,4 +19,4 @@ tags:
 - [[security(.security) - Security Documentation]] - `contains` [EXTRACTED]
 - [[setup(.setup) - Setup & Configuration Guides]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_stub_client
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Documentation

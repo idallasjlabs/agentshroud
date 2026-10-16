@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "MiddlewareManager"
+community: "test_soc_realtime_coverage.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/test_soc_realtime_coveragepy
 ---
 
 # test_soc_realtime_coverage.py
 
 ## Connections
-- [[Action_1]] - `imports` [EXTRACTED]
+- [[Action_2]] - `imports` [EXTRACTED]
 - [[PermissionResult]] - `imports` [EXTRACTED]
 - [[RBACConfig_1]] - `imports` [EXTRACTED]
-- [[Resource_1]] - `imports` [EXTRACTED]
-- [[Role_1]] - `imports` [EXTRACTED]
-- [[SCLCaller]] - `imports` [EXTRACTED]
+- [[Resource_2]] - `imports` [EXTRACTED]
+- [[Role_96]] - `imports` [EXTRACTED]
+- [[SCLCaller_1]] - `imports` [EXTRACTED]
 - [[SOCWebSocketHandler]] - `imports` [EXTRACTED]
 - [[SecurityEvent_1]] - `imports` [EXTRACTED]
 - [[Severity_2]] - `imports` [EXTRACTED]
@@ -41,7 +41,7 @@ tags:
 - [[WSEvent]] - `imports` [EXTRACTED]
 - [[WSEventType]] - `imports` [EXTRACTED]
 - [[_FakeBus]] - `contains` [EXTRACTED]
-- [[_FakeRBAC_2]] - `contains` [EXTRACTED]
+- [[_FakeRBAC]] - `contains` [EXTRACTED]
 - [[_audit_entry()]] - `contains` [EXTRACTED]
 - [[_block_run_secrets()]] - `contains` [EXTRACTED]
 - [[_coerce_to_ws_event()]] - `imports` [EXTRACTED]
@@ -60,4 +60,4 @@ tags:
 - [[redeem_ws_token()]] - `imports` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

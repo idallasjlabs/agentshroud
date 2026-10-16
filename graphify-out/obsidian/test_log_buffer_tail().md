@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard_endpoints.py"
 type: "code"
-community: "Phase 3: MITIGATE (Rollback First!)"
+community: "LogBuffer"
 location: "L203"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Phase_3_MITIGATE_Rollback_First
+  - community/LogBuffer
 ---
 
 # test_log_buffer_tail()
@@ -15,4 +15,4 @@ tags:
 - [[LogBuffer]] - `calls` [EXTRACTED]
 - [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First
+#graphify/code #graphify/EXTRACTED #community/LogBuffer

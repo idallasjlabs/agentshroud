@@ -1,14 +1,14 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.h"
 type: "code"
-community: "agentshroud-knowledge.md"
+community: "wakeword.h"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-knowledgemd
+  - community/wakewordh
 ---
 
 # wakeword.h
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-knowledgemd
+#graphify/code #graphify/EXTRACTED #community/wakewordh

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_security_regressions_v1_2.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "test_security_audit.py"
-location: "L56"
+community: "test_e2e_proxy.py"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_auditpy
+  - community/test_e2e_proxypy
 ---
 
 # trust_manager()
 
 ## Connections
-- [[TrustManager_1]] - `calls` [EXTRACTED]
-- [[test_security_regressions_v1_2.py]] - `contains` [EXTRACTED]
+- [[TrustConfig]] - `calls` [EXTRACTED]
+- [[TrustManager]] - `calls` [EXTRACTED]
+- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_auditpy
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

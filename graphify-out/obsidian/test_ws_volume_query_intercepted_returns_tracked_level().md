@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "ToolACLEnforcer"
+community: "_pcm_bytes"
 location: "L2708"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolACLEnforcer
+  - community/_pcm_bytes
 ---
 
 # test_ws_volume_query_intercepted_returns_tracked_level()
@@ -17,4 +17,4 @@ tags:
 - [[_pcm_bytes()]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolACLEnforcer
+#graphify/code #graphify/EXTRACTED #community/_pcm_bytes

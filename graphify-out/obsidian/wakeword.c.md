@@ -1,19 +1,17 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "A2AGovernanceProxy"
+community: "wakeword.c"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/wakewordc
 ---
 
 # wakeword.c
 
 ## Connections
-- [[String]] - `imports` [EXTRACTED]
-- [[Task]] - `imports` [EXTRACTED]
 - [[_agent_btn_pressed()]] - `contains` [EXTRACTED]
 - [[_btn_pressed()]] - `contains` [EXTRACTED]
 - [[_btn_released()]] - `contains` [EXTRACTED]
@@ -41,4 +39,4 @@ tags:
 - [[wakeword_tts_stop_request()]] - `contains` [EXTRACTED]
 - [[wakeword_tts_stop_requested()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/wakewordc

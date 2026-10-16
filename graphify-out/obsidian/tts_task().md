@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "compute_scorecard()"
+community: "test_playback_state.c"
 location: "L322"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/compute_scorecard
+  - community/test_playback_statec
 ---
 
 # tts_task()
@@ -22,4 +22,4 @@ tags:
 - [[wakeword_tts_stop_clear()]] - `calls` [INFERRED]
 - [[wakeword_tts_stop_requested()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/compute_scorecard
+#graphify/code #graphify/INFERRED #community/test_playback_statec

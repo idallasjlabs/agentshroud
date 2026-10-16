@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_ledger.py"
 type: "code"
-community: "EgressPolicy"
+community: "test_ledger.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressPolicy
+  - community/test_ledgerpy
 ---
 
 # test_ledger.py
 
 ## Connections
 - [[DataLedger]] - `imports` [EXTRACTED]
-- [[LedgerConfig]] - `imports` [EXTRACTED]
+- [[LedgerConfig_1]] - `imports` [EXTRACTED]
 - [[test_delete_entry()]] - `contains` [EXTRACTED]
 - [[test_delete_nonexistent()]] - `contains` [EXTRACTED]
 - [[test_get_entry()]] - `contains` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[test_query_with_time_filters()]] - `contains` [EXTRACTED]
 - [[test_record_entry()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressPolicy
+#graphify/code #graphify/EXTRACTED #community/test_ledgerpy

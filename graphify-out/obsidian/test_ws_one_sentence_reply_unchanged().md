@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "ToolACLEnforcer"
+community: "_pcm_bytes"
 location: "L1408"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolACLEnforcer
+  - community/_pcm_bytes
 ---
 
 # test_ws_one_sentence_reply_unchanged()
@@ -16,4 +16,4 @@ tags:
 - [[_pcm_bytes()]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolACLEnforcer
+#graphify/code #graphify/EXTRACTED #community/_pcm_bytes

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "ApprovalRequest"
+community: "DataLedger"
 location: "L352"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/DataLedger
 ---
 
 # test_hermes_and_openclaw_coexist()
 
 ## Connections
 - [[Both bots must be reachable via the same router without conflict.]] - `rationale_for` [EXTRACTED]
-- [[ForwardRequest]] - `calls` [EXTRACTED]
+- [[ForwardRequest_3]] - `calls` [EXTRACTED]
 - [[MultiAgentRouter]] - `calls` [EXTRACTED]
-- [[RouterConfig]] - `calls` [EXTRACTED]
+- [[RouterConfig_1]] - `calls` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/code #graphify/EXTRACTED #community/DataLedger

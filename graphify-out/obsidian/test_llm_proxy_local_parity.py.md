@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "asyncio"
+community: "test_llm_proxy_local_parity.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/test_llm_proxy_local_paritypy
 ---
 
 # test_llm_proxy_local_parity.py
@@ -16,13 +16,13 @@ tags:
 - [[ResourceGuard]] - `imports` [EXTRACTED]
 - [[ResourceLimits]] - `imports` [EXTRACTED]
 - [[VRAMHeadroomError]] - `imports` [EXTRACTED]
-- [[_FakeSanitizer_1]] - `contains` [EXTRACTED]
+- [[_FakeSanitizer]] - `contains` [EXTRACTED]
 - [[_anthropic_ok()]] - `contains` [EXTRACTED]
 - [[_anthropic_tool_use_ok()]] - `contains` [EXTRACTED]
-- [[_make_proxy()]] - `contains` [EXTRACTED]
+- [[_make_proxy()_2]] - `contains` [EXTRACTED]
 - [[_openai_ok()]] - `contains` [EXTRACTED]
 - [[_openai_tool_use_ok()]] - `contains` [EXTRACTED]
-- [[llm_proxy.py]] - `imports_from` [EXTRACTED]
+- [[llm_proxy.py_2]] - `imports_from` [EXTRACTED]
 - [[test_cloud_mode_anthropic_tool_use_shape_passes_through()]] - `contains` [EXTRACTED]
 - [[test_deepseek_r1_routes_to_mlxlm()]] - `contains` [EXTRACTED]
 - [[test_get_local_model_reads_fieldflare_ref()]] - `contains` [EXTRACTED]
@@ -73,4 +73,4 @@ tags:
 - [[test_stats_local_secondary_failover_succeeded_incremented()]] - `contains` [EXTRACTED]
 - [[test_vram_headroom_error_is_not_resource_warning()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

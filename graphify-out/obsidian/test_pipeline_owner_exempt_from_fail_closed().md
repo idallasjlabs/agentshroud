@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "WebProxyConfig"
+community: "PIIConfig"
 location: "L428"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/PIIConfig
 ---
 
 # test_pipeline_owner_exempt_from_fail_closed()
 
 ## Connections
 - [[Owner messages should NOT be blocked when security module crashes (owner exempti]] - `rationale_for` [EXTRACTED]
-- [[SecurityPipeline]] - `calls` [EXTRACTED]
+- [[SecurityPipeline_2]] - `calls` [EXTRACTED]
 - [[_BrokenSanitizer]] - `calls` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

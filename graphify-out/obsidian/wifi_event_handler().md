@@ -1,20 +1,20 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "_t()"
+community: "app_main.c"
 location: "L199"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t
+  - community/app_mainc
 ---
 
 # wifi_event_handler()
 
 ## Connections
 - [[app_main.c]] - `contains` [EXTRACTED]
-- [[esp_event_base_t]] - `references` [EXTRACTED]
+- [[esp_event_base_t_1]] - `references` [EXTRACTED]
 - [[ui_update()]] - `calls` [EXTRACTED]
-- [[vt_remote_log()]] - `calls` [EXTRACTED]
+- [[vt_remote_log()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t
+#graphify/code #graphify/EXTRACTED #community/app_mainc

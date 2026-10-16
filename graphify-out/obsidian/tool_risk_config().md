@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "ApprovalQueueConfig"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/ApprovalQueueConfig
 ---
 
 # tool_risk_config()
 
 ## Connections
 - [[Create a test tool risk configuration.]] - `rationale_for` [EXTRACTED]
-- [[ToolRiskConfig_1]] - `calls` [EXTRACTED]
-- [[ToolRiskPolicy_1]] - `calls` [EXTRACTED]
+- [[ToolRiskConfig]] - `calls` [EXTRACTED]
+- [[ToolRiskPolicy]] - `calls` [EXTRACTED]
 - [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

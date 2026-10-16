@@ -1,12 +1,12 @@
 ---
 source_file: "branding/INDEX.md"
 type: "document"
-community: "Atlas — Curriculum Architect"
+community: "AgentShroud Branding Assets Index"
 location: "L65"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect
+  - community/AgentShroud_Branding_Assets_Index
 ---
 
 # 🎨 Quick Access
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AgentShroud Branding Assets Index]] - `contains` [EXTRACTED]
 - [[Brand Color]] - `contains` [EXTRACTED]
-- [[Documentation_1]] - `contains` [EXTRACTED]
-- [[Logo Files]] - `contains` [EXTRACTED]
+- [[Documentation_4]] - `contains` [EXTRACTED]
+- [[Logo Files_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Branding_Assets_Index

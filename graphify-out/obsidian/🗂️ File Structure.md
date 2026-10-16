@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "Kill Switch"
+community: "AgentShroud Prerequisites"
 location: "L461"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Kill_Switch
+  - community/AgentShroud_Prerequisites
 ---
 
 # 🗂️ File Structure
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Kill_Switch
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites

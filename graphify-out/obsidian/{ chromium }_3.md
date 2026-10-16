@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/browser-fetch.js"
+source_file: ".agents/skills/i-browser/browse.js"
 type: "code"
-community: "openclaw/workspace/jira_dev_ticket.py"
+community: "Browser — Secure Browser Automation (SKILL)"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/workspace/jira_dev_ticketpy
+  - community/Browser__Secure_Browser_Automation_SKILL
 ---
 
 # { chromium }
 
 ## Connections
-- [[browser-fetch.js]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy
+#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL

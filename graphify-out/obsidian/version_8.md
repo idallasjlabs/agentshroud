@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/skill.json"
+source_file: "docker/config/openclaw/skills/i-browser/package.json"
 type: "code"
-community: "router.py"
+community: "openclaw/skills/i-browser/package.json"
 location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/routerpy
+  - community/openclaw/skills/i-browser/packagejson
 ---
 
 # version
 
 ## Connections
-- [[skill.json]] - `contains` [EXTRACTED]
+- [[openclawskillsi-browserpackage.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/routerpy
+#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-browser/packagejson

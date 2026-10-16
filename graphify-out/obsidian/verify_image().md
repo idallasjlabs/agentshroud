@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/image_verifier.py"
 type: "code"
-community: "MultiHostResult"
+community: "test_image_verifier.py"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MultiHostResult
+  - community/test_image_verifierpy
 ---
 
 # verify_image()
@@ -22,4 +22,4 @@ tags:
 - [[test_image_verifier.py]] - `imports` [EXTRACTED]
 - [[verify_images()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MultiHostResult
+#graphify/code #graphify/EXTRACTED #community/test_image_verifierpy

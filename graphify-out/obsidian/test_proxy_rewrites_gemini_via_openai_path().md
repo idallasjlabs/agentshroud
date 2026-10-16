@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_gemini_via_openai_path.py"
 type: "code"
-community: "AgentShroud Security Hardening Plan"
+community: "test_claude_via_openai_path.py"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Hardening_Plan
+  - community/test_claude_via_openai_pathpy
 ---
 
 # test_proxy_rewrites_gemini_via_openai_path()
@@ -16,4 +16,4 @@ tags:
 - [[The combined path v1chatcompletions with model=gemini- must end     up POST]] - `rationale_for` [EXTRACTED]
 - [[test_gemini_via_openai_path.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Hardening_Plan
+#graphify/code #graphify/EXTRACTED #community/test_claude_via_openai_pathpy

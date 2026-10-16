@@ -1,18 +1,19 @@
 ---
-source_file: "skills/openclaw/openai-whisper-api/scripts/transcribe.sh"
+source_file: "docker/scripts/workspace.sh"
 type: "code"
-community: "web_proxy.py"
-location: "L4"
+community: "workspace.sh"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/web_proxypy
+  - community/workspacesh
 ---
 
 # usage()
 
 ## Connections
-- [[transcribe.sh]] - `defines` [EXTRACTED]
-- [[transcribe.sh script]] - `calls` [EXTRACTED]
+- [[main command dispatcher (case $COMMAND)]] - `calls` [EXTRACTED]
+- [[workspace.sh]] - `defines` [EXTRACTED]
+- [[workspace.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/web_proxypy
+#graphify/code #graphify/EXTRACTED #community/workspacesh

@@ -1,22 +1,22 @@
 ---
 source_file: "docs/vault/05 - Dependencies/trivy.md"
 type: "document"
-community: "Mode A — Single task"
+community: "Trivy"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task
+  - community/Trivy
 ---
 
 # Trivy
 
 ## Connections
 - [[ARM64 Support]] - `contains` [EXTRACTED]
-- [[Gateway Usage_1]] - `contains` [EXTRACTED]
-- [[Purpose_195]] - `contains` [EXTRACTED]
-- [[Related Notes_50]] - `contains` [EXTRACTED]
+- [[Gateway Usage]] - `contains` [EXTRACTED]
+- [[Purpose_57]] - `contains` [EXTRACTED]
+- [[Related Notes_16]] - `contains` [EXTRACTED]
 - [[Script Usage]] - `contains` [EXTRACTED]
-- [[trivy]] - `contains` [EXTRACTED]
+- [[trivy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task
+#graphify/document #graphify/EXTRACTED #community/Trivy

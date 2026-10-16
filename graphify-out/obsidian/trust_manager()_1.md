@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_a2a_trust_scoring.py"
+source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "AgentTarget"
-location: "L74"
+community: "PIIConfig"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/PIIConfig
 ---
 
 # trust_manager()
 
 ## Connections
-- [[ProgressiveTrustConfig]] - `calls` [EXTRACTED]
-- [[TrustManager_2]] - `calls` [EXTRACTED]
-- [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
+- [[TrustConfig]] - `calls` [EXTRACTED]
+- [[TrustManager]] - `calls` [EXTRACTED]
+- [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "code"
-community: "EncryptedStore"
+community: "Enum"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/Enum
 ---
 
 # test_soc_websocket.py
@@ -20,4 +20,4 @@ tags:
 - [[WSEventType]] - `imports` [EXTRACTED]
 - [[_coerce_to_ws_event()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EncryptedStore
+#graphify/code #graphify/EXTRACTED #community/Enum

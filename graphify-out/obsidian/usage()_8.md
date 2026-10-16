@@ -1,18 +1,18 @@
 ---
-source_file: "skills/openclaw/video-frames/scripts/frame.sh"
+source_file: "scripts/switch_model.sh"
 type: "code"
-community: "Skill: Hermes Dev Workflow (HDEV)"
-location: "L4"
+community: "switch_model.sh"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_Hermes_Dev_Workflow_HDEV
+  - community/switch_modelsh
 ---
 
 # usage()
 
 ## Connections
-- [[frame.sh]] - `defines` [EXTRACTED]
-- [[frame.sh script]] - `calls` [EXTRACTED]
+- [[switch_model.sh]] - `defines` [EXTRACTED]
+- [[switch_model.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_Hermes_Dev_Workflow_HDEV
+#graphify/code #graphify/EXTRACTED #community/switch_modelsh

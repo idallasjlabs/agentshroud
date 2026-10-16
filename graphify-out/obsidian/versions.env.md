@@ -1,11 +1,11 @@
 ---
 source_file: "docker/versions.env"
 type: "document"
-community: "CI/CD Pipeline Advisor (README)"
+community: "colima-health-check.sh"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_README
+  - community/colima-health-checksh
 ---
 
 # versions.env
@@ -16,6 +16,6 @@ tags:
 - [[asb (AgentShroud Bot helper)]] - `references` [EXTRACTED]
 - [[auto_remediate_cves.py]] - `references` [EXTRACTED]
 - [[check-version-pins-parity.sh]] - `references` [EXTRACTED]
-- [[sunday-upgrade-apply.sh]] - `references` [EXTRACTED]
+- [[sunday-upgrade-apply.sh]] - `imports_from` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README
+#graphify/document #graphify/EXTRACTED #community/colima-health-checksh

@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "compute_scorecard()"
+community: "test_ptt_state.c"
 location: "L416"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/compute_scorecard
+  - community/test_ptt_statec
 ---
 
 # wakeword_triggered()
@@ -28,4 +28,4 @@ tags:
 - [[voice_task()]] - `calls` [INFERRED]
 - [[wakeword.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/compute_scorecard
+#graphify/code #graphify/INFERRED #community/test_ptt_statec

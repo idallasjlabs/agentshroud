@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agentshroud_manager.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "upgrade"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/upgrade
 ---
 
 # tmp_db()
@@ -15,4 +15,4 @@ tags:
 - [[Create a temporary database for testing.]] - `rationale_for` [EXTRACTED]
 - [[test_agentshroud_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/upgrade

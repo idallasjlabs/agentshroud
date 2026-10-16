@@ -1,12 +1,12 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "_stub_client()"
+community: "AgentShroud Documentation"
 location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_stub_client
+  - community/AgentShroud_Documentation
 ---
 
 # ✅ Phase 2: Gateway & Integration (Complete)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📋 Current Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_stub_client
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Documentation

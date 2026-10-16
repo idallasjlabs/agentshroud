@@ -1,22 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
+source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "Skill: Branding Specialist (BS)"
+community: ".agents/skills/i-tw/SKILL.md"
 location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Branding_Specialist_BS
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # → {"site": "site1", "test_mode": True, "output_prefix": "_test/site1/"}
 
 ## Connections
+- [[dot-agentsskillsi-twSKILL]] - `contains` [EXTRACTED]
 - [[Changelog Entry_2]] - `contains` [EXTRACTED]
-- [[Dependencies_15]] - `contains` [EXTRACTED]
-- [[SKILL_142]] - `contains` [EXTRACTED]
-- [[SKILL_185]] - `contains` [EXTRACTED]
-- [[Validation Checklist_8]] - `contains` [EXTRACTED]
+- [[Dependencies_11]] - `contains` [EXTRACTED]
+- [[Validation Checklist_5]] - `contains` [EXTRACTED]
 - [[Writing Style Rules_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Branding_Specialist_BS
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

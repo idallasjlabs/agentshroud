@@ -1,21 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/main/app_main.c"
+source_file: "firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c"
 type: "code"
-community: "_t()"
-location: "L521"
+community: "test_ptt_state.c"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t
+  - community/test_ptt_statec
 ---
 
 # vt_remote_log()
 
 ## Connections
-- [[_deliver_utterance()]] - `calls` [EXTRACTED]
-- [[_on_ws_ctrl()]] - `calls` [EXTRACTED]
-- [[app_main.c]] - `contains` [EXTRACTED]
-- [[voice_task()]] - `calls` [EXTRACTED]
-- [[wifi_event_handler()]] - `calls` [EXTRACTED]
+- [[test_ptt_state.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t
+#graphify/code #graphify/EXTRACTED #community/test_ptt_statec

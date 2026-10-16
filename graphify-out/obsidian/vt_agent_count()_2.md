@@ -1,17 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c"
+source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "A2AGovernanceProxy"
-location: "L31"
+community: "app_main.c"
+location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/app_mainc
 ---
 
 # vt_agent_count()
 
 ## Connections
-- [[test_ptt_state.c]] - `contains` [EXTRACTED]
+- [[app_main.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/app_mainc

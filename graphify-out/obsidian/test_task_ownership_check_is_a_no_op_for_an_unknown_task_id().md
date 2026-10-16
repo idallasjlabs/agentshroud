@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "AgentTarget"
+community: "test_a2a_policy.py"
 location: "L191"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/test_a2a_policypy
 ---
 
 # test_task_ownership_check_is_a_no_op_for_an_unknown_task_id()
@@ -16,4 +16,4 @@ tags:
 - [[A2APolicyEngine_2]] - `references` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

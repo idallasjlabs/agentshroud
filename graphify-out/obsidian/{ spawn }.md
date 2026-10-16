@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/mcp-proxy-wrapper.js"
 type: "code"
-community: "egress_config.py"
+community: "mcp-proxy-wrapper.js"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_configpy
+  - community/mcp-proxy-wrapperjs
 ---
 
 # { spawn }
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[mcp-proxy-wrapper.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_configpy
+#graphify/code #graphify/EXTRACTED #community/mcp-proxy-wrapperjs

@@ -1,7 +1,7 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h"
 type: "code"
-community: "iot_button_register_cb()"
+community: "iot_button_register_cb"
 location: "L1"
 tags:
   - graphify/code

@@ -1,20 +1,20 @@
 ---
 source_file: "scripts/verify-proxy.sh"
 type: "code"
-community: "awslabs.aws-api-mcp-server configuration (--read"
+community: "ProxyDashboard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/awslabsaws-api-mcp-server_configuration_--read
+  - community/ProxyDashboard
 ---
 
 # verify-proxy.sh
 
 ## Connections
-- [[fail()_5]] - `defines` [EXTRACTED]
-- [[info()_2]] - `defines` [EXTRACTED]
-- [[pass()_3]] - `defines` [EXTRACTED]
+- [[fail()_2]] - `defines` [EXTRACTED]
+- [[info()_1]] - `defines` [EXTRACTED]
+- [[pass()_1]] - `defines` [EXTRACTED]
 - [[preflight-check.sh]] - `semantically_similar_to` [INFERRED]
 - [[run_bypass()]] - `defines` [EXTRACTED]
 - [[run_canary()_1]] - `defines` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[run_quick()]] - `defines` [EXTRACTED]
 - [[verify-proxy.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/awslabsaws-api-mcp-server_configuration_--read
+#graphify/code #graphify/EXTRACTED #community/ProxyDashboard

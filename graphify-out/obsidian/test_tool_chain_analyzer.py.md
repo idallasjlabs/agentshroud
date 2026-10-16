@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "GroupRoleResolver"
+community: "TestParamSanitization"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/TestParamSanitization
 ---
 
 # test_tool_chain_analyzer.py
@@ -16,7 +16,7 @@ tags:
 - [[ChainMatch]] - `imports` [EXTRACTED]
 - [[ParamScanResult]] - `imports` [EXTRACTED]
 - [[ReversibilityScore]] - `imports` [EXTRACTED]
-- [[RiskLevel_4]] - `imports` [EXTRACTED]
+- [[RiskLevel_5]] - `imports` [EXTRACTED]
 - [[TestParamSanitization]] - `contains` [EXTRACTED]
 - [[TestReversibilityScoring]] - `contains` [EXTRACTED]
 - [[TestShellBleedPatterns]] - `contains` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[mock_alert_callback()_1]] - `contains` [EXTRACTED]
 - [[tool_chain_analyzer()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/TestParamSanitization

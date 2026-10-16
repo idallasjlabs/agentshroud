@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "Telegram Channel Setup"
+community: "wakeword.c"
 location: "L246"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Telegram_Channel_Setup
+  - community/wakewordc
 ---
 
 # ui_face_init()
@@ -18,4 +18,4 @@ tags:
 - [[face_set_emotion()]] - `calls` [INFERRED]
 - [[ui_face.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Telegram_Channel_Setup
+#graphify/code #graphify/INFERRED #community/wakewordc

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_jira_weekly_review.py"
 type: "code"
-community: "AgentShroud™ README"
+community: "test_jira_weekly_review.py"
 location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_README
+  - community/test_jira_weekly_reviewpy
 ---
 
 # test_tenant_info_url_rejects_empty_domain()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_jira_weekly_review.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_README
+#graphify/code #graphify/EXTRACTED #community/test_jira_weekly_reviewpy

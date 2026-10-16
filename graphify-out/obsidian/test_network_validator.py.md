@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_network_validator.py"
 type: "code"
-community: "CREDENTIAL-PROTECTION-IMPLEMENTED.md"
+community: "TestNetworkValidator"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
+  - community/TestNetworkValidator
 ---
 
 # test_network_validator.py
@@ -16,4 +16,4 @@ tags:
 - [[NetworkValidator]] - `imports` [EXTRACTED]
 - [[TestNetworkValidator]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
+#graphify/code #graphify/EXTRACTED #community/TestNetworkValidator

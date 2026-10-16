@@ -1,20 +1,19 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/test_playback_state.c"
 type: "code"
-community: "compute_scorecard()"
+community: "test_playback_state.c"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/compute_scorecard
+  - community/test_playback_statec
 ---
 
 # test_playback_state.c
 
 ## Connections
-- [[String]] - `imports` [EXTRACTED]
 - [[face_set_state()]] - `contains` [EXTRACTED]
-- [[main()_9]] - `contains` [EXTRACTED]
+- [[main()_14]] - `contains` [EXTRACTED]
 - [[playback_step()]] - `contains` [EXTRACTED]
 - [[reset_all()]] - `contains` [EXTRACTED]
 - [[test_drain_clears_playing_and_returns_idle()]] - `contains` [EXTRACTED]
@@ -31,4 +30,4 @@ tags:
 - [[vt_agent_count()_1]] - `contains` [EXTRACTED]
 - [[vt_remote_log()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/compute_scorecard
+#graphify/code #graphify/EXTRACTED #community/test_playback_statec

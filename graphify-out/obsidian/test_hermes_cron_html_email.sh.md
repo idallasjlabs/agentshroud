@@ -1,18 +1,18 @@
 ---
 source_file: "tests/startup_smoke/test_hermes_cron_html_email.sh"
 type: "code"
-community: "AgentShroud — Master Feature List (Everything Ev"
+community: "test_openclaw_photo.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud__Master_Feature_List_Everything_Ev
+  - community/test_openclaw_photosh
 ---
 
 # test_hermes_cron_html_email.sh
 
 ## Connections
-- [[check()_9]] - `defines` [EXTRACTED]
+- [[check()_11]] - `defines` [EXTRACTED]
 - [[email_helper.sh]] - `references` [EXTRACTED]
 - [[jobs.yaml (Hermes cron)]] - `references` [EXTRACTED]
 - [[smoke.sh]] - `references` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[test_hermes_cron_html_email.sh script]] - `contains` [EXTRACTED]
 - [[test_openclaw_photo.sh]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud__Master_Feature_List_Everything_Ev
+#graphify/code #graphify/EXTRACTED #community/test_openclaw_photosh

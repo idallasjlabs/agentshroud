@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "ApprovalQueueItem"
 location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/ApprovalQueueItem
 ---
 
 # test_store_survives_restart()
 
 ## Connections
-- [[ApprovalStore_1]] - `calls` [EXTRACTED]
-- [[Path_24]] - `references` [EXTRACTED]
+- [[ApprovalStore]] - `calls` [EXTRACTED]
+- [[Path_13]] - `references` [EXTRACTED]
 - [[Simulates a full restart cycle save, close, reopen, verify.]] - `rationale_for` [EXTRACTED]
 - [[_make_item()]] - `calls` [EXTRACTED]
 - [[test_approval_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueItem

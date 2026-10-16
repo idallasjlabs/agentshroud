@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "code"
-community: "_wrap_response()"
+community: "test_collaborator_tracker.py"
 location: "L241"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/test_collaborator_trackerpy
 ---
 
 # test_record_activity_mirror_is_single_line_for_multiline_message()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_collaborator_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

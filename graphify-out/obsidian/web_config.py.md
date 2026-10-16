@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "code"
-community: "EncryptedStore"
+community: "WebProxyConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/WebProxyConfig
 ---
 
 # web_config.py
@@ -18,6 +18,5 @@ tags:
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 - [[url_analyzer.py]] - `references` [EXTRACTED]
 - [[web_content_scanner.py]] - `references` [EXTRACTED]
-- [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EncryptedStore
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

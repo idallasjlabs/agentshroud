@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "test_soc_bots.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/test_soc_botspy
 ---
 
 # test_soc_bots.py
 
 ## Connections
 - [[RBACConfig_1]] - `imports` [EXTRACTED]
-- [[Role_1]] - `imports` [EXTRACTED]
-- [[SCLCaller]] - `imports` [EXTRACTED]
+- [[Role_96]] - `imports` [EXTRACTED]
+- [[SCLCaller_1]] - `imports` [EXTRACTED]
 - [[SecurityEvent_1]] - `imports` [EXTRACTED]
-- [[ServiceDescriptor]] - `imports` [EXTRACTED]
-- [[ServiceStatus]] - `imports` [EXTRACTED]
+- [[ServiceDescriptor_1]] - `imports` [EXTRACTED]
+- [[ServiceStatus_1]] - `imports` [EXTRACTED]
 - [[Severity_2]] - `imports` [EXTRACTED]
 - [[TestAgentCvesBotId]] - `contains` [EXTRACTED]
 - [[TestBotSelectorFrontend]] - `contains` [EXTRACTED]
@@ -44,11 +44,11 @@ tags:
 - [[get_config()]] - `imports` [EXTRACTED]
 - [[get_egress_history()]] - `imports` [EXTRACTED]
 - [[get_egress_log()]] - `imports` [EXTRACTED]
-- [[get_egress_pending()_1]] - `imports` [EXTRACTED]
+- [[get_egress_pending()]] - `imports` [EXTRACTED]
 - [[get_scanner_results()]] - `imports` [EXTRACTED]
 - [[get_security_events()]] - `imports` [EXTRACTED]
 - [[get_security_scorecard()]] - `imports` [EXTRACTED]
 - [[list_bots()]] - `imports` [EXTRACTED]
 - [[list_services()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

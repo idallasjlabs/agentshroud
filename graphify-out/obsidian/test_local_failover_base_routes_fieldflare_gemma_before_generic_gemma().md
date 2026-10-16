@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "asyncio"
+community: "test_llm_proxy_local_parity.py"
 location: "L580"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/test_llm_proxy_local_paritypy
 ---
 
 # test_local_failover_base_routes_fieldflare_gemma_before_generic_gemma()
@@ -15,4 +15,4 @@ tags:
 - [[Turbo Fieldflare's exact model ID must win over the generic 'gemma' LM     Studi]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

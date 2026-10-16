@@ -12,7 +12,6 @@ tags:
 # workspace/IDENTITY.md
 
 ## Connections
-- [[IDENTITY.md - Who I Am]] - `contains` [EXTRACTED]
-- [[agentshroud-ssh-exec.sh]] - `references` [EXTRACTED]
+- [[IDENTITY.md - Who I Am_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/proxy_statuspy

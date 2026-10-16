@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-POLICY-FINAL.md"
 type: "document"
-community: "TestLooksLikeSafeCollaboratorInfoQuery"
+community: "AgentShroud Security Policy - Final Decision"
 location: "L163"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestLooksLikeSafeCollaboratorInfoQuery
+  - community/AgentShroud_Security_Policy_-_Final_Decision
 ---
 
 # ✅ Implementation Status
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Security Policy - Final Decision]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestLooksLikeSafeCollaboratorInfoQuery
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Policy_-_Final_Decision

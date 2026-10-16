@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "_t()"
+community: "voice_task"
 location: "L407"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/_t
+  - graphify/EXTRACTED
+  - community/voice_task
 ---
 
 # wakeword_feed_bytes()
@@ -15,4 +15,4 @@ tags:
 - [[voice_task()]] - `calls` [INFERRED]
 - [[wakeword.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_t
+#graphify/code #graphify/EXTRACTED #community/voice_task

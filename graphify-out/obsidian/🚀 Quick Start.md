@@ -1,12 +1,12 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "_stub_client()"
+community: "AgentShroud Documentation"
 location: "L88"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_stub_client
+  - community/AgentShroud_Documentation
 ---
 
 # 🚀 Quick Start
@@ -16,4 +16,4 @@ tags:
 - [[For Developers]] - `contains` [EXTRACTED]
 - [[For New Users]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_stub_client
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Documentation

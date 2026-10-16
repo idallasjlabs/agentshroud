@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_openclaw_model_provider_consistency.sh"
 type: "code"
-community: "graphify reference: extra exports and benchmark"
+community: "smoke.sh Startup Smoke Runner"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/graphify_reference_extra_exports_and_benchmark
+  - community/smokesh_Startup_Smoke_Runner
 ---
 
 # test_openclaw_model_provider_consistency.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_openclaw_model_provider_consistency.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark
+#graphify/code #graphify/EXTRACTED #community/smokesh_Startup_Smoke_Runner

@@ -5,7 +5,7 @@ community: "Weather Skill"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/Weather_Skill
 ---
 
@@ -15,4 +15,4 @@ tags:
 - [[OpenClaw Skill Metadata Schema (frontmatter convention)]] - `conceptually_related_to` [INFERRED]
 - [[Weather Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Weather_Skill
+#graphify/document #graphify/EXTRACTED #community/Weather_Skill

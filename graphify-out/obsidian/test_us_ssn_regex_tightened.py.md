@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_us_ssn_regex_tightened.py"
 type: "code"
-community: "AgentShroud™ — OpenClaw Local-Model Tool-Use Ins"
+community: "test_us_ssn_regex_tightened.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud__OpenClaw_Local-Model_Tool-Use_Ins
+  - community/test_us_ssn_regex_tightenedpy
 ---
 
 # test_us_ssn_regex_tightened.py
@@ -18,4 +18,4 @@ tags:
 - [[test_real_ssn_still_flagged()]] - `contains` [EXTRACTED]
 - [[test_ssn_at_start_of_string_still_flagged()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud__OpenClaw_Local-Model_Tool-Use_Ins
+#graphify/code #graphify/EXTRACTED #community/test_us_ssn_regex_tightenedpy

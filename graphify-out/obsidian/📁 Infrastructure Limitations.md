@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/REPORTED_ISSUES.md"
 type: "document"
-community: "TestLogSanitizer"
+community: "AgentShroud Consolidated Issues Report"
 location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestLogSanitizer
+  - community/AgentShroud_Consolidated_Issues_Report
 ---
 
 # 📁 Infrastructure Limitations
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Consolidated Issues Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestLogSanitizer
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Consolidated_Issues_Report

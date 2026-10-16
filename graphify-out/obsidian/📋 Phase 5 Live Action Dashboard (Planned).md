@@ -1,12 +1,12 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "_stub_client()"
+community: "AgentShroud Documentation"
 location: "L139"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_stub_client
+  - community/AgentShroud_Documentation
 ---
 
 # 📋 Phase 5: Live Action Dashboard (Planned)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📋 Current Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_stub_client
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Documentation

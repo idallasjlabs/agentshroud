@@ -1,17 +1,25 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
 type: "document"
-community: "TestNoResponseGuarantee"
-location: "L1"
+community: "trivy_report.py"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestNoResponseGuarantee
+  - community/trivy_reportpy
 ---
 
-# trivy_report.py.md
+# trivy_report.py
 
 ## Connections
-- [[trivy_report.py_2]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables_23]] - `contains` [EXTRACTED]
+- [[Function Details_41]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_43]] - `contains` [EXTRACTED]
+- [[Purpose_162]] - `contains` [EXTRACTED]
+- [[Related_47]] - `contains` [EXTRACTED]
+- [[Responsibilities_45]] - `contains` [EXTRACTED]
+- [[Severity Order (for ranking)]] - `contains` [EXTRACTED]
+- [[Threat Model_27]] - `contains` [EXTRACTED]
+- [[trivy_report.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestNoResponseGuarantee
+#graphify/document #graphify/EXTRACTED #community/trivy_reportpy

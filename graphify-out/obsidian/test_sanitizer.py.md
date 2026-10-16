@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "code"
-community: "Skill: Technical Illustrator (TI)"
+community: "test_sanitizer.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_Technical_Illustrator_TI
+  - community/test_sanitizerpy
 ---
 
 # test_sanitizer.py
@@ -25,4 +25,4 @@ tags:
 - [[test_telegram_uid_not_redacted_as_phone()]] - `contains` [EXTRACTED]
 - [[test_uid_inside_parens_preserved()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI
+#graphify/code #graphify/EXTRACTED #community/test_sanitizerpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_jira_dev_ticket.py"
 type: "code"
-community: "SecureBrowser - Enterprise Secure Browser Automa"
+community: "test_jira_dev_ticket.py"
 location: "L371"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automa
+  - community/test_jira_dev_ticketpy
 ---
 
 # test_run_returns_1_on_jira_rejection()
@@ -15,4 +15,4 @@ tags:
 - [[_MockTransport]] - `calls` [EXTRACTED]
 - [[test_jira_dev_ticket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automa
+#graphify/code #graphify/EXTRACTED #community/test_jira_dev_ticketpy

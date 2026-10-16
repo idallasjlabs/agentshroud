@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_cron_seed.py"
 type: "code"
-community: "Currently Unmitigable Residual Class"
+community: "test_hermes_cron_seed.py"
 location: "L196"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Currently_Unmitigable_Residual_Class
+  - community/test_hermes_cron_seedpy
 ---
 
 # test_jira_weekly_review_not_pinned_to_a_model()
@@ -16,4 +16,4 @@ tags:
 - [[jira-weekly-review is pure script execution (near-zero free-form     generation)]] - `rationale_for` [EXTRACTED]
 - [[test_hermes_cron_seed.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Currently_Unmitigable_Residual_Class
+#graphify/code #graphify/EXTRACTED #community/test_hermes_cron_seedpy

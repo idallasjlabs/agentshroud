@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "GitHub Copilot CLI Setup Guide"
+community: "WebhookReceiver"
 location: "L384"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GitHub_Copilot_CLI_Setup_Guide
+  - community/WebhookReceiver
 ---
 
 # test_webhook_blocks_injection()
@@ -16,4 +16,4 @@ tags:
 - [[WebhookReceiver]] - `calls` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide
+#graphify/code #graphify/EXTRACTED #community/WebhookReceiver

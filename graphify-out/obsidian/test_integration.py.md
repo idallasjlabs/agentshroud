@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_integration.py"
 type: "code"
-community: ".test_short_text_passes_through_unchanged()"
+community: "test_integration.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_short_text_passes_through_unchanged
+  - community/test_integrationpy
 ---
 
 # test_integration.py
@@ -18,4 +18,4 @@ tags:
 - [[test_ledger_query()]] - `contains` [EXTRACTED]
 - [[test_websocket_auth()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_short_text_passes_through_unchanged
+#graphify/code #graphify/EXTRACTED #community/test_integrationpy

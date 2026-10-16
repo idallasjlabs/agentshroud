@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/manifest.json"
+source_file: "browser-extension/package.json"
 type: "code"
-community: "Key Skills in Detail"
-location: "L2"
+community: "browser-extension/package.json"
+location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Key_Skills_in_Detail
+  - community/browser-extension/packagejson
 ---
 
 # version
 
 ## Connections
-- [[manifest.json_1]] - `contains` [EXTRACTED]
+- [[browser-extensionpackage.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Key_Skills_in_Detail
+#graphify/code #graphify/EXTRACTED #community/browser-extension/packagejson

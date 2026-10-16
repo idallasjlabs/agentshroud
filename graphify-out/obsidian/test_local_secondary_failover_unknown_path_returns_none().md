@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "asyncio"
+community: "test_llm_proxy_local_parity.py"
 location: "L859"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/test_llm_proxy_local_paritypy
 ---
 
 # test_local_secondary_failover_unknown_path_returns_none()
 
 ## Connections
 - [[Unknown path (not v1messages, not is_openai) returns None.]] - `rationale_for` [EXTRACTED]
-- [[_make_proxy()]] - `calls` [EXTRACTED]
+- [[_make_proxy()_2]] - `calls` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

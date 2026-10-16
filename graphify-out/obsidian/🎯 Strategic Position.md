@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-24-final.md"
 type: "document"
-community: "Resources"
+community: "6. Conclusion — Mission-Critical Security Infrastructure Delivered"
 location: "L239"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Resources
+  - community/6_Conclusion__Mission-Critical_Security_Infrastructure_Delivered
 ---
 
 # 🎯 **Strategic Position**
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[6. Conclusion — Mission-Critical Security Infrastructure Delivered]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Resources
+#graphify/document #graphify/EXTRACTED #community/6_Conclusion__Mission-Critical_Security_Infrastructure_Delivered

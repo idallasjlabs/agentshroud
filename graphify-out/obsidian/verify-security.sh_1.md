@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "AgentShroud Security Value Proposition"
+community: "Kill Switch"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition
+  - community/Kill_Switch
 ---
 
 # verify-security.sh
@@ -16,4 +16,4 @@ tags:
 - [[SECURITY_SCRIPTS_REFERENCE]] - `references` [EXTRACTED]
 - [[VERIFICATION_RESULTS]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch

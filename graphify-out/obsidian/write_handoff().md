@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "DraftEntry"
-location: "L777"
+community: "sunday-upgrade-apply.sh"
+location: "L1303"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DraftEntry
+  - community/sunday-upgrade-applysh
 ---
 
 # write_handoff()
@@ -16,11 +16,11 @@ tags:
 - [[Prove the Outcome, Never the Steps]] - `rationale_for` [EXTRACTED]
 - [[_mutating()]] - `calls` [EXTRACTED]
 - [[check_noop_gate()]] - `shares_data_with` [EXTRACTED]
-- [[log()_9]] - `calls` [EXTRACTED]
+- [[log()]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 - [[sunday-upgrade-apply.sh main flow]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
 - [[test-sunday-upgrade-scan.sh]] - `references` [EXTRACTED]
-- [[warn()_5]] - `calls` [EXTRACTED]
+- [[warn()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DraftEntry
+#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

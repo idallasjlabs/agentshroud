@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_op_proxy.py"
 type: "code"
-community: "Mode A — Single task"
+community: "_is_op_reference_allowed"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task
+  - community/_is_op_reference_allowed
 ---
 
 # test_op_proxy.py
@@ -17,7 +17,7 @@ tags:
 - [[TestOpRefAllowlistCoverage]] - `contains` [EXTRACTED]
 - [[_is_op_reference_allowed()]] - `imports` [EXTRACTED]
 - [[auth_dep()]] - `imports` [EXTRACTED]
-- [[client()_12]] - `contains` [EXTRACTED]
-- [[main.py_2]] - `references` [EXTRACTED]
+- [[client()_5]] - `contains` [EXTRACTED]
+- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mode_A__Single_task
+#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed

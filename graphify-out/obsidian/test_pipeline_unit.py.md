@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "RBACConfig"
+community: "OutboundInfoFilter"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/OutboundInfoFilter
 ---
 
 # test_pipeline_unit.py
 
 ## Connections
 - [[AuditChain]] - `imports` [EXTRACTED]
-- [[CrossBotTrustLedger]] - `imports` [EXTRACTED]
+- [[CrossBotTrustLedger_1]] - `imports` [EXTRACTED]
 - [[EnvelopeSigner]] - `imports` [EXTRACTED]
 - [[InjectionAction]] - `imports` [EXTRACTED]
 - [[InstructionEnvelope]] - `imports` [EXTRACTED]
@@ -23,8 +23,8 @@ tags:
 - [[OutboundInfoFilter]] - `imports` [EXTRACTED]
 - [[PipelineAction]] - `imports` [EXTRACTED]
 - [[ScanResult_1]] - `imports` [EXTRACTED]
-- [[SecurityPipeline]] - `imports` [EXTRACTED]
-- [[TestAuditChain]] - `contains` [EXTRACTED]
+- [[SecurityPipeline_2]] - `imports` [EXTRACTED]
+- [[TestAuditChain_1]] - `contains` [EXTRACTED]
 - [[TestAuditChainBounded]] - `contains` [EXTRACTED]
 - [[TestContextGuardInPipeline]] - `contains` [EXTRACTED]
 - [[TestContextIntegrityInPipeline]] - `contains` [EXTRACTED]
@@ -36,12 +36,12 @@ tags:
 - [[TestTrustViolationRecording]] - `contains` [EXTRACTED]
 - [[ThreatAction]] - `imports` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
-- [[TrustManager_1]] - `imports` [EXTRACTED]
+- [[TrustManager]] - `imports` [EXTRACTED]
 - [[_FakeAttack]] - `contains` [EXTRACTED]
 - [[_FakeIntegrityScore]] - `contains` [EXTRACTED]
 - [[_make_integrity_pipeline()]] - `contains` [EXTRACTED]
-- [[_make_pipeline()_2]] - `contains` [EXTRACTED]
+- [[_make_pipeline()_3]] - `contains` [EXTRACTED]
 - [[_make_signer_pipeline()]] - `contains` [EXTRACTED]
 - [[pipeline.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_latency_guard.py"
 type: "code"
-community: "test_hermes_model_resolver.py"
+community: "test_voice_latency_guard.py"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy
+  - community/test_voice_latency_guardpy
 ---
 
 # test_voice_forward_metadata_default_off_is_empty()
@@ -16,4 +16,4 @@ tags:
 - [[_voice_forward_metadata()]] - `calls` [EXTRACTED]
 - [[test_voice_latency_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy
+#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy

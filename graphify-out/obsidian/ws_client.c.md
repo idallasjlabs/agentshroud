@@ -1,18 +1,17 @@
 ---
 source_file: "firmware/voice-terminal/main/ws_client.c"
 type: "code"
-community: "_t()"
+community: "voice_task"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t
+  - community/voice_task
 ---
 
 # ws_client.c
 
 ## Connections
-- [[String]] - `imports` [EXTRACTED]
 - [[_on_event()]] - `contains` [EXTRACTED]
 - [[remote_log.h]] - `imports` [EXTRACTED]
 - [[ws_client_connected()]] - `contains` [EXTRACTED]
@@ -26,4 +25,4 @@ tags:
 - [[ws_client_send_pcm()]] - `contains` [EXTRACTED]
 - [[ws_client_send_stop()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t
+#graphify/code #graphify/EXTRACTED #community/voice_task

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "api.py"
+community: "_get_engine"
 location: "L605"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/_get_engine
 ---
 
 # upgrade_openclaw()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[UpdateRequest]] - `references` [EXTRACTED]
 - [[Upgrade OpenClaw (backward-compat alias for updatesbotopenclawupgrade).]] - `rationale_for` [EXTRACTED]
-- [[api.py]] - `contains` [EXTRACTED]
-- [[upgrade_bot()_1]] - `calls` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
+- [[upgrade_bot()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/_get_engine

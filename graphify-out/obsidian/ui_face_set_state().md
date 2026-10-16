@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "compute_scorecard()"
+community: "wakeword.c"
 location: "L371"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/compute_scorecard
+  - community/wakewordc
 ---
 
 # ui_face_set_state()
@@ -19,4 +19,4 @@ tags:
 - [[voice_task()]] - `calls` [INFERRED]
 - [[ws_vg_state_t_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/compute_scorecard
+#graphify/code #graphify/INFERRED #community/wakewordc

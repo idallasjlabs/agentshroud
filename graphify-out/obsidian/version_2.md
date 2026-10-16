@@ -1,17 +1,17 @@
 ---
-source_file: "browser-extension/package.json"
+source_file: "browser-extension/manifest.json"
 type: "code"
-community: "AgentShroud -- USPTO Trademark Application"
-location: "L3"
+community: "browser-extension/manifest.json"
+location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_--_USPTO_Trademark_Application
+  - community/browser-extension/manifestjson
 ---
 
 # version
 
 ## Connections
-- [[package.json_1]] - `contains` [EXTRACTED]
+- [[browser-extensionmanifest.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Trademark_Application
+#graphify/code #graphify/EXTRACTED #community/browser-extension/manifestjson

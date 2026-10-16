@@ -1,21 +1,19 @@
 ---
-source_file: "docs/setup/setup-guide.md"
+source_file: "docs/operations/updating.md"
 type: "document"
-community: "Google Calendar & Contacts - Quick Setup"
-location: "L724"
+community: "Update AgentShroud"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Google_Calendar__Contacts_-_Quick_Setup
+  - community/Update_AgentShroud
 ---
 
-# Updating
+# updating.md
 
 ## Connections
-- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
-- [[Manual Update Process]] - `contains` [EXTRACTED]
-- [[Rollback If Needed]] - `contains` [EXTRACTED]
+- [[Database Migrations]] - `references` [EXTRACTED]
+- [[Rollback Procedure]] - `references` [EXTRACTED]
 - [[Update AgentShroud]] - `contains` [EXTRACTED]
-- [[Update OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Google_Calendar__Contacts_-_Quick_Setup
+#graphify/document #graphify/EXTRACTED #community/Update_AgentShroud

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "ResourceGuard"
+community: "test_telegram_proxy_outbound.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # test_telegram_proxy_outbound.py
 
 ## Connections
-- [[CollaboratorActivityTracker]] - `imports` [EXTRACTED]
-- [[PIIConfig]] - `imports` [EXTRACTED]
-- [[PIISanitizer]] - `imports` [EXTRACTED]
-- [[TelegramAPIProxy]] - `imports` [EXTRACTED]
+- [[CollaboratorActivityTracker_1]] - `imports` [EXTRACTED]
+- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PIISanitizer_2]] - `imports` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `imports` [EXTRACTED]
 - [[TestBuildCollaboratorSafeInfoResponse]] - `contains` [EXTRACTED]
 - [[TestDefaultBotId]] - `contains` [EXTRACTED]
 - [[TestDomainValidationHelper]] - `contains` [EXTRACTED]
@@ -43,4 +43,4 @@ tags:
 - [[_make_sanitizer()]] - `contains` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

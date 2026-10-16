@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 type: "document"
-community: "REQUIRED NOTES — PRODUCE EVERY ONE OF THESE"
+community: "CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 location: "L215"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE
+  - community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
 ---
 
 # 📋 Security Guarantees
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CREDENTIAL-PROTECTION-IMPLEMENTED]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE
+#graphify/document #graphify/EXTRACTED #community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd

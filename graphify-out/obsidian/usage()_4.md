@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/switch_model.sh"
+source_file: "scripts/agentshroud-manage.sh"
 type: "code"
-community: "test_multi_host_test.py"
-location: "L18"
+community: "agentshroud-manage.sh"
+location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_multi_host_testpy
+  - community/agentshroud-managesh
 ---
 
 # usage()
 
 ## Connections
-- [[switch_model.sh]] - `defines` [EXTRACTED]
-- [[switch_model.sh script]] - `calls` [EXTRACTED]
+- [[agentshroud-manage.sh]] - `defines` [EXTRACTED]
+- [[agentshroud-manage.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_multi_host_testpy
+#graphify/code #graphify/EXTRACTED #community/agentshroud-managesh

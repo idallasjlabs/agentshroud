@@ -1,18 +1,21 @@
 ---
-source_file: "docs/reference/PREREQUISITES.md"
+source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "Kill Switch"
-location: "L640"
+community: "🆘 Troubleshooting"
+location: "L364"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Kill_Switch
+  - community/_Troubleshooting
 ---
 
 # 🆘 Troubleshooting
 
 ## Connections
-- [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
-- [[Common Issues]] - `contains` [EXTRACTED]
+- [[Authentication required]] - `contains` [EXTRACTED]
+- [[Permission denied]] - `contains` [EXTRACTED]
+- [[Skill validation failed]] - `contains` [EXTRACTED]
+- [[clawhub command not found]] - `contains` [EXTRACTED]
+- [[Publish SecureBrowser to ClawHub - Step-by-Step Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Kill_Switch
+#graphify/document #graphify/EXTRACTED #community/_Troubleshooting

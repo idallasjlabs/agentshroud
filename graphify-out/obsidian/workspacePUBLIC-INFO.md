@@ -5,7 +5,7 @@ community: "AgentShroud — Collaborator Knowledge Base"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/AgentShroud__Collaborator_Knowledge_Base
 ---
 
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud — Collaborator Knowledge Base]] - `contains` [EXTRACTED]
 - [[collaborator-workspacePUBLIC-INFO]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/AgentShroud__Collaborator_Knowledge_Base
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Collaborator_Knowledge_Base

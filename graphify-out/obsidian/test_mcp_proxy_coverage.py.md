@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "test_voice_gateway.py"
+community: "StdioConnection"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/StdioConnection
 ---
 
 # test_mcp_proxy_coverage.py
@@ -19,10 +19,10 @@ tags:
 - [[HttpSseConnection]] - `imports` [EXTRACTED]
 - [[MCPAuditTrail]] - `imports` [EXTRACTED]
 - [[MCPInspector]] - `imports` [EXTRACTED]
-- [[MCPPermissionManager]] - `imports` [EXTRACTED]
-- [[MCPProxy]] - `imports` [EXTRACTED]
-- [[MCPProxyConfig]] - `imports` [EXTRACTED]
-- [[MCPServerConfig]] - `imports` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `imports` [EXTRACTED]
+- [[MCPProxy_1]] - `imports` [EXTRACTED]
+- [[MCPProxyConfig_3]] - `imports` [EXTRACTED]
+- [[MCPServerConfig_2]] - `imports` [EXTRACTED]
 - [[MCPToolCall]] - `imports` [EXTRACTED]
 - [[MCPToolConfig]] - `imports` [EXTRACTED]
 - [[MCPToolResult]] - `imports` [EXTRACTED]
@@ -43,8 +43,8 @@ tags:
 - [[TestStdioConnection]] - `contains` [EXTRACTED]
 - [[make_call()]] - `contains` [EXTRACTED]
 - [[make_config()]] - `contains` [EXTRACTED]
-- [[make_proxy()_1]] - `contains` [EXTRACTED]
+- [[make_proxy()]] - `contains` [EXTRACTED]
 - [[test_mcp_permissions.py]] - `shares_data_with` [INFERRED]
 - [[test_mcp_proxy_endpoint.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

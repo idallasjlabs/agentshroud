@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "PrivacyPolicyEnforcer"
+community: "test_daily_cve_report.py"
 location: "L815"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/test_daily_cve_reportpy
 ---
 
 # upstream_cve_check_scheduler()
@@ -18,4 +18,4 @@ tags:
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[run_upstream_cve_check_all_agents()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

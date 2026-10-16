@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "code"
-community: "test_jira_dev_ticket.py"
+community: "test_security.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_jira_dev_ticketpy
+  - community/test_securitypy
 ---
 
 # test_security.py
 
 ## Connections
-- [[ForwardRequest]] - `imports` [EXTRACTED]
-- [[RateLimiter]] - `imports` [EXTRACTED]
+- [[ForwardRequest_3]] - `imports` [EXTRACTED]
+- [[RateLimiter_1]] - `imports` [EXTRACTED]
 - [[gatewayingest_apiauth.py (RateLimiter, verify_token)]] - `references` [EXTRACTED]
 - [[test_constant_time_comparison()]] - `contains` [EXTRACTED]
 - [[test_empty_content_rejection()]] - `contains` [EXTRACTED]
@@ -38,4 +38,4 @@ tags:
 - [[test_xss_attempt()]] - `contains` [EXTRACTED]
 - [[verify_token()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_jira_dev_ticketpy
+#graphify/code #graphify/EXTRACTED #community/test_securitypy

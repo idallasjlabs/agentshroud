@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "Role"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/Role
 ---
 
 # test_tool_acl.py
@@ -16,7 +16,7 @@ tags:
 - [[COLLABORATOR_ALLOWED_TOOLS]] - `references` [EXTRACTED]
 - [[PRIVATE_TOOLS]] - `references` [EXTRACTED]
 - [[RBACConfig_1]] - `imports` [EXTRACTED]
-- [[Role_1]] - `imports` [EXTRACTED]
+- [[Role_96]] - `imports` [EXTRACTED]
 - [[TeamsConfig]] - `imports` [EXTRACTED]
 - [[TestAdminAccess]] - `contains` [EXTRACTED]
 - [[TestCVE2026_9367TerminalToolDenied]] - `contains` [EXTRACTED]
@@ -36,4 +36,4 @@ tags:
 - [[enforcer()_3]] - `contains` [EXTRACTED]
 - [[rbac()_6]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/Role

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "InjectionAction"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/InjectionAction
 ---
 
 # test_tool_result_injection.py
@@ -23,4 +23,4 @@ tags:
 - [[ToolResultInjectionScanner]] - `imports` [EXTRACTED]
 - [[scanner()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/InjectionAction

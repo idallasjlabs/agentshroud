@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "ToolACLEnforcer"
+community: "_pcm_bytes"
 location: "L2977"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolACLEnforcer
+  - community/_pcm_bytes
 ---
 
 # test_ws_use_local_command_confirms_with_model_name()
@@ -17,4 +17,4 @@ tags:
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 - [[use qwen' sets agent='direct', model='qwen3-14b', and confirms with     the actu]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolACLEnforcer
+#graphify/code #graphify/EXTRACTED #community/_pcm_bytes

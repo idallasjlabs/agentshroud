@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "AgentShroud Data Flow Diagrams (doc)"
+community: "🛡️ AgentShroud Release Plan"
 location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Data_Flow_Diagrams_doc
+  - community/_AgentShroud_Release_Plan
 ---
 
 # 🟡 Security Tools — Full Integration (5 items)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v0.9.0 Sentinel — Data Isolation + SOC + Remediation (37 items)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Flow_Diagrams_doc
+#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan

@@ -1,19 +1,19 @@
 ---
 source_file: "skills/openclaw/tmux/scripts/wait-for-text.sh"
 type: "code"
-community: "→ {\"site\": \"site1\", \"test_mode\": True, \"output_p"
+community: "find-sessions.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_site_site1_test_mode_True_output_p
+  - community/find-sessionssh
 ---
 
 # wait-for-text.sh
 
 ## Connections
-- [[SKILL_234]] - `conceptually_related_to` [INFERRED]
-- [[usage()_7]] - `defines` [EXTRACTED]
+- [[tmuxSKILL]] - `conceptually_related_to` [INFERRED]
+- [[usage()_2]] - `defines` [EXTRACTED]
 - [[wait-for-text.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_site_site1_test_mode_True_output_p
+#graphify/code #graphify/EXTRACTED #community/find-sessionssh

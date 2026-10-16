@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/version_routes.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "upgrade"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/upgrade
 ---
 
 # version_routes.py
@@ -23,7 +23,6 @@ tags:
 - [[get_version_history()]] - `contains` [EXTRACTED]
 - [[list_available_versions()]] - `imports` [EXTRACTED]
 - [[list_versions()]] - `imports` [EXTRACTED]
-- [[main.py_2]] - `imports_from` [EXTRACTED]
 - [[mask_credentials()]] - `imports` [EXTRACTED]
 - [[review_version()]] - `contains` [EXTRACTED]
 - [[rollback()]] - `imports` [EXTRACTED]
@@ -32,4 +31,4 @@ tags:
 - [[upgrade()]] - `imports` [EXTRACTED]
 - [[upgrade_version()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/upgrade

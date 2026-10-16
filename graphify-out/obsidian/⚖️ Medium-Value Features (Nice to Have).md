@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "_DummyTargetWriter"
+community: "🎯 High-Value Features (Justify the Effort)"
 location: "L168"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_DummyTargetWriter
+  - community/_High-Value_Features_Justify_the_Effort
 ---
 
 # ⚖️ Medium-Value Features (Nice to Have)
@@ -16,4 +16,4 @@ tags:
 - [[6. Separate Bot Accounts (iCloud, Gmail)]] - `contains` [EXTRACTED]
 - [[Where's The REAL Value]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_DummyTargetWriter
+#graphify/document #graphify/EXTRACTED #community/_High-Value_Features_Justify_the_Effort

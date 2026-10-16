@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "ApprovalQueueConfig"
 location: "L447"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/ApprovalQueueConfig
 ---
 
 # test_websocket_notifications()
 
 ## Connections
 - [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
-- [[ApprovalStore]] - `calls` [INFERRED]
-- [[ApprovalStore_1]] - `calls` [EXTRACTED]
+- [[ApprovalStore]] - `calls` [EXTRACTED]
+- [[ApprovalStore_1]] - `calls` [INFERRED]
 - [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
 - [[Test that approval events are generated for WebSocket notification.]] - `rationale_for` [EXTRACTED]
-- [[ToolRiskConfig_1]] - `calls` [EXTRACTED]
+- [[ToolRiskConfig]] - `calls` [EXTRACTED]
 - [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "test_voice_gateway.py"
+community: "test_soc_router_coverage.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/test_soc_router_coveragepy
 ---
 
 # test_soc_router_coverage.py
 
 ## Connections
 - [[ApprovalMode]] - `imports` [EXTRACTED]
-- [[FakeAuditStore_1]] - `contains` [EXTRACTED]
+- [[FakeAuditStore]] - `contains` [EXTRACTED]
 - [[FakeCaller]] - `contains` [EXTRACTED]
 - [[FakeGroup]] - `contains` [EXTRACTED]
-- [[Role_1]] - `imports` [EXTRACTED]
+- [[Role_96]] - `imports` [EXTRACTED]
 - [[_Svc]] - `contains` [EXTRACTED]
 - [[_fake_contributor_manager()]] - `contains` [EXTRACTED]
 - [[_make_service_manager()]] - `contains` [EXTRACTED]
-- [[client()_15]] - `contains` [EXTRACTED]
+- [[client()_16]] - `contains` [EXTRACTED]
 - [[gatewaysocauth.py (get_caller)]] - `references` [EXTRACTED]
 - [[get_caller()]] - `imports` [EXTRACTED]
 - [[holder()]] - `contains` [EXTRACTED]
-- [[router.py_1]] - `tests` [EXTRACTED]
+- [[socrouter.py]] - `tests` [EXTRACTED]
 - [[state()]] - `contains` [EXTRACTED]
 - [[test_add_collaborator()]] - `contains` [EXTRACTED]
 - [[test_add_group_member_paths()]] - `contains` [EXTRACTED]
@@ -164,4 +164,4 @@ tags:
 - [[test_upgrade_hermes_restarts_the_real_container_name()]] - `contains` [EXTRACTED]
 - [[test_websocket_route_dispatch()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

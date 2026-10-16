@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_jira_dev_ticket.py"
 type: "code"
-community: "SecureBrowser - Enterprise Secure Browser Automa"
+community: "test_jira_dev_ticket.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automa
+  - community/test_jira_dev_ticketpy
 ---
 
 # test_jira_dev_ticket.py
@@ -51,4 +51,4 @@ tags:
 - [[test_transitions_url_rejects_empty_issue_key()]] - `contains` [EXTRACTED]
 - [[test_transitions_url_targets_arbitrary_issue()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automa
+#graphify/code #graphify/EXTRACTED #community/test_jira_dev_ticketpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_cron_seed.py"
 type: "code"
-community: "Currently Unmitigable Residual Class"
+community: "test_hermes_cron_seed.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Currently_Unmitigable_Residual_Class
+  - community/test_hermes_cron_seedpy
 ---
 
 # test_hermes_cron_seed.py
@@ -31,4 +31,4 @@ tags:
 - [[test_seed_cron_supports_optional_model_and_provider_args()]] - `contains` [EXTRACTED]
 - [[test_stability_report_job_present()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Currently_Unmitigable_Residual_Class
+#graphify/code #graphify/EXTRACTED #community/test_hermes_cron_seedpy

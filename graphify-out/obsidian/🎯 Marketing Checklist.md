@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "security.py"
+community: "Publish SecureBrowser to ClawHub - Step-by-Step Guide"
 location: "L312"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/securitypy
+  - community/Publish_SecureBrowser_to_ClawHub_-_Step-by-Step_Guide
 ---
 
 # 🎯 Marketing Checklist
@@ -17,4 +17,4 @@ tags:
 - [[Publish SecureBrowser to ClawHub - Step-by-Step Guide]] - `contains` [EXTRACTED]
 - [[Week 1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/securitypy
+#graphify/document #graphify/EXTRACTED #community/Publish_SecureBrowser_to_ClawHub_-_Step-by-Step_Guide

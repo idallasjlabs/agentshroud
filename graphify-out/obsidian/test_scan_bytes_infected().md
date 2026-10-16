@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "AgentShroud™ — Trademark Prior Use Record"
+community: "test_clamav_pipeline.py"
 location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud__Trademark_Prior_Use_Record
+  - community/test_clamav_pipelinepy
 ---
 
 # test_scan_bytes_infected()
@@ -16,4 +16,4 @@ tags:
 - [[scan_bytes()]] - `calls` [EXTRACTED]
 - [[test_clamav_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record
+#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy

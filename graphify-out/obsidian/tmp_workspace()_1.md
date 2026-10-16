@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_security_regressions_v1_2.py"
+source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "test_security_audit.py"
-location: "L38"
+community: "RBACConfig"
+location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_auditpy
+  - community/RBACConfig
 ---
 
 # tmp_workspace()
 
 ## Connections
-- [[Isolated temporary workspace for session manager.]] - `rationale_for` [EXTRACTED]
-- [[test_security_regressions_v1_2.py]] - `contains` [EXTRACTED]
+- [[test_group_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_auditpy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

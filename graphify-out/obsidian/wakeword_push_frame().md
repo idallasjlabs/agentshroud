@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "A2AGovernanceProxy"
+community: "test_ptt_state.c"
 location: "L295"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/A2AGovernanceProxy
+  - community/test_ptt_statec
 ---
 
 # wakeword_push_frame()
@@ -16,4 +16,4 @@ tags:
 - [[voice_task()]] - `calls` [INFERRED]
 - [[wakeword.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/A2AGovernanceProxy
+#graphify/code #graphify/INFERRED #community/test_ptt_statec

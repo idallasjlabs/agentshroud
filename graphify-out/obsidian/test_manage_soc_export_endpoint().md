@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_egress_endpoints.py"
 type: "code"
-community: "TestOriginAwareAuthorization"
+community: "test_soc_egress_endpoints.py"
 location: "L258"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOriginAwareAuthorization
+  - community/test_soc_egress_endpointspy
 ---
 
 # test_manage_soc_export_endpoint()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_soc_egress_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOriginAwareAuthorization
+#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_stt_model_ab.py"
 type: "code"
-community: ".claude/settings.json (hook + permission wiring)"
+community: "test_voice_stt_model_ab.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/claude/settingsjson_hook__permission_wiring
+  - community/test_voice_stt_model_abpy
 ---
 
 # test_voice_stt_model_ab.py
@@ -28,4 +28,4 @@ tags:
 - [[test_transcribe_emits_latency_record()]] - `contains` [EXTRACTED]
 - [[test_valid_model_sizes_contains_documented_ab_set()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/claude/settingsjson_hook__permission_wiring
+#graphify/code #graphify/EXTRACTED #community/test_voice_stt_model_abpy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "_DummyTargetWriter"
+community: "🎯 High-Value Features (Justify the Effort)"
 location: "L117"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_DummyTargetWriter
+  - community/_High-Value_Features_Justify_the_Effort
 ---
 
 # 🎯 High-Value Features (Justify the Effort)
@@ -18,4 +18,4 @@ tags:
 - [[4. Persona System (Gateway)]] - `contains` [EXTRACTED]
 - [[Where's The REAL Value]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_DummyTargetWriter
+#graphify/document #graphify/EXTRACTED #community/_High-Value_Features_Justify_the_Effort

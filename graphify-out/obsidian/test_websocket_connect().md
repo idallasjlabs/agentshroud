@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "ApprovalRequest"
 location: "L280"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/ApprovalRequest
 ---
 
 # test_websocket_connect()
@@ -16,4 +16,4 @@ tags:
 - [[Test WebSocket client connection]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

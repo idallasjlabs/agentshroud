@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "ApprovalRequest"
+community: "AgentTarget"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/AgentTarget
 ---
 
 # test_router.py
@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[AgentTarget]] - `imports` [EXTRACTED]
 - [[ForwardError]] - `imports` [EXTRACTED]
-- [[ForwardRequest]] - `imports` [EXTRACTED]
-- [[GatewayConfig_1]] - `imports` [EXTRACTED]
+- [[ForwardRequest_3]] - `imports` [EXTRACTED]
+- [[GatewayConfig_3]] - `imports` [EXTRACTED]
 - [[MultiAgentRouter]] - `imports` [EXTRACTED]
-- [[RouterConfig]] - `imports` [EXTRACTED]
-- [[router()_1]] - `contains` [EXTRACTED]
+- [[RouterConfig_1]] - `imports` [EXTRACTED]
+- [[router()]] - `contains` [EXTRACTED]
 - [[router_config()]] - `contains` [EXTRACTED]
 - [[test_agent_target_custom_paths()]] - `contains` [EXTRACTED]
 - [[test_agent_target_default_paths()]] - `contains` [EXTRACTED]
@@ -41,4 +41,4 @@ tags:
 - [[test_router_streaming.py]] - `conceptually_related_to` [INFERRED]
 - [[test_scanner_integration_coverage.py]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

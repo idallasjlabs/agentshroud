@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-04-infrastructure-hosting.svg"
 type: "image"
-community: "OpenClaw Setup Guide - agentshroud.ai Bot"
+community: "ADR-006: Multi-Runtime Container Support"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+  - community/ADR-006_Multi-Runtime_Container_Support
 ---
 
 # trillian (100.94.68.61, development node)
@@ -14,4 +14,4 @@ tags:
 - [[ADR-006 Multi-Runtime Container Support]] - `conceptually_related_to` [EXTRACTED]
 - [[Tailscale Overlay Network (tail240ea8.ts.net)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+#graphify/image #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support

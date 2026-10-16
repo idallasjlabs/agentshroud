@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_model_resolver.py"
 type: "code"
-community: "_t()"
+community: "test_hermes_model_resolver.py"
 location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t
+  - community/test_hermes_model_resolverpy
 ---
 
 # test_local_mode_empty_local_ref_falls_back_to_default_local_model()
@@ -16,4 +16,4 @@ tags:
 - [[resolve_model()]] - `calls` [INFERRED]
 - [[test_hermes_model_resolver.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t
+#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy

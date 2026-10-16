@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "DataLedger"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/DataLedger
 ---
 
 # test_ssh_endpoints.py
 
 ## Connections
-- [[ApprovalQueue]] - `imports` [EXTRACTED]
+- [[ApprovalQueue_1]] - `imports` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
 - [[DataLedger]] - `imports` [EXTRACTED]
-- [[GatewayConfig_1]] - `imports` [EXTRACTED]
-- [[LedgerConfig]] - `imports` [EXTRACTED]
+- [[GatewayConfig_3]] - `imports` [EXTRACTED]
+- [[LedgerConfig_1]] - `imports` [EXTRACTED]
 - [[MultiAgentRouter]] - `imports` [EXTRACTED]
-- [[PIIConfig]] - `imports` [EXTRACTED]
-- [[PIISanitizer]] - `imports` [EXTRACTED]
-- [[RouterConfig]] - `imports` [EXTRACTED]
-- [[SSHConfig]] - `imports` [EXTRACTED]
+- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PIISanitizer_2]] - `imports` [EXTRACTED]
+- [[RouterConfig_1]] - `imports` [EXTRACTED]
+- [[SSHConfig_2]] - `imports` [EXTRACTED]
 - [[SSHHostConfig]] - `imports` [EXTRACTED]
 - [[SSHProxy]] - `imports` [EXTRACTED]
 - [[SSHResult]] - `imports` [EXTRACTED]
@@ -32,8 +32,8 @@ tags:
 - [[TestSSHRequireApprovalFalse]] - `contains` [EXTRACTED]
 - [[TestSSHValidateCwd]] - `contains` [EXTRACTED]
 - [[auth_headers()_3]] - `contains` [EXTRACTED]
-- [[client()_16]] - `contains` [EXTRACTED]
-- [[ssh_config()]] - `contains` [EXTRACTED]
+- [[client()_17]] - `contains` [EXTRACTED]
+- [[ssh_config()_1]] - `contains` [EXTRACTED]
 - [[test_config_with_ssh()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/DataLedger

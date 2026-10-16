@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "system-requirements.md"
+community: "test_observatory_mode.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/system-requirementsmd
+  - community/test_observatory_modepy
 ---
 
 # test_observatory_mode.py
 
 ## Connections
-- [[FastAPI_2]] - `imports_from` [EXTRACTED]
-- [[KillSwitchConfig]] - `imports` [EXTRACTED]
+- [[FastAPI_4]] - `imports_from` [EXTRACTED]
+- [[KillSwitchConfig_1]] - `imports` [EXTRACTED]
 - [[KillSwitchMonitor]] - `imports` [EXTRACTED]
 - [[ModeRequest]] - `imports` [EXTRACTED]
-- [[SecurityPipeline]] - `imports` [EXTRACTED]
+- [[SecurityPipeline_2]] - `imports` [EXTRACTED]
 - [[TestAutoRevert]] - `contains` [EXTRACTED]
 - [[TestCriticalLogging]] - `contains` [EXTRACTED]
 - [[TestGetMode]] - `contains` [EXTRACTED]
@@ -26,10 +26,10 @@ tags:
 - [[TestObservatoryModeAPI]] - `contains` [EXTRACTED]
 - [[TestSetMode]] - `contains` [EXTRACTED]
 - [[_make_app()]] - `contains` [EXTRACTED]
-- [[client()_11]] - `contains` [EXTRACTED]
+- [[client()_19]] - `contains` [EXTRACTED]
 - [[get_module_mode()]] - `imports` [EXTRACTED]
-- [[require_auth()_1]] - `imports` [EXTRACTED]
+- [[require_auth()]] - `imports` [EXTRACTED]
 - [[reset_env_and_task()]] - `contains` [EXTRACTED]
 - [[set_mode()_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/system-requirementsmd
+#graphify/code #graphify/EXTRACTED #community/test_observatory_modepy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "LLMProxy"
+community: "test_security_toolchain.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/test_security_toolchainpy
 ---
 
 # test_security_toolchain.py
@@ -16,7 +16,7 @@ tags:
 - [[TestAlertDispatcher]] - `contains` [EXTRACTED]
 - [[TestClamAVParser]] - `contains` [EXTRACTED]
 - [[TestClamAVRun]] - `contains` [EXTRACTED]
-- [[TestClamAVSummary]] - `contains` [EXTRACTED]
+- [[TestClamAVSummary_1]] - `contains` [EXTRACTED]
 - [[TestFalcoCategorize]] - `contains` [EXTRACTED]
 - [[TestFalcoParser]] - `contains` [EXTRACTED]
 - [[TestFalcoSummary_1]] - `contains` [EXTRACTED]
@@ -35,24 +35,24 @@ tags:
 - [[categorize_alerts()]] - `imports` [EXTRACTED]
 - [[format_report()]] - `imports` [EXTRACTED]
 - [[generate_report()]] - `imports` [EXTRACTED]
-- [[generate_summary()]] - `imports` [EXTRACTED]
+- [[generate_summary()_3]] - `imports` [EXTRACTED]
 - [[generate_summary()_1]] - `imports` [EXTRACTED]
 - [[generate_summary()_2]] - `imports` [EXTRACTED]
-- [[generate_summary()_3]] - `imports` [EXTRACTED]
+- [[generate_summary()]] - `imports` [EXTRACTED]
 - [[get_fim_events()]] - `imports` [EXTRACTED]
 - [[get_rootkit_events()]] - `imports` [EXTRACTED]
 - [[get_trend()]] - `imports` [EXTRACTED]
 - [[is_agentshroud_rule()]] - `imports` [EXTRACTED]
 - [[level_to_severity()]] - `imports` [EXTRACTED]
-- [[parse_alert()]] - `imports` [EXTRACTED]
 - [[parse_alert()_1]] - `imports` [EXTRACTED]
+- [[parse_alert()]] - `imports` [EXTRACTED]
 - [[parse_clamscan_output()]] - `imports` [EXTRACTED]
 - [[parse_trivy_output()]] - `imports` [EXTRACTED]
-- [[read_alerts()]] - `imports` [EXTRACTED]
+- [[read_alerts()_1]] - `imports` [EXTRACTED]
 - [[run_clamscan()]] - `imports` [EXTRACTED]
 - [[run_trivy_scan()_1]] - `imports` [EXTRACTED]
-- [[save_report()_1]] - `imports` [EXTRACTED]
+- [[save_report()]] - `imports` [EXTRACTED]
 - [[score_to_grade()]] - `imports` [EXTRACTED]
 - [[update_virus_db()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

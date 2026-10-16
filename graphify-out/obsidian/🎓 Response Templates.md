@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-POLICY-FINAL.md"
 type: "document"
-community: "TestLooksLikeSafeCollaboratorInfoQuery"
+community: "AgentShroud Security Policy - Final Decision"
 location: "L140"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestLooksLikeSafeCollaboratorInfoQuery
+  - community/AgentShroud_Security_Policy_-_Final_Decision
 ---
 
 # 🎓 Response Templates
@@ -16,4 +16,4 @@ tags:
 - [[When asked for credentials via ANY chat]] - `contains` [EXTRACTED]
 - [[When executing console commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestLooksLikeSafeCollaboratorInfoQuery
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Policy_-_Final_Decision

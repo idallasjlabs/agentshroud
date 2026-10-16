@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "GitHub Copilot CLI Setup Guide"
+community: "WebhookReceiver"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GitHub_Copilot_CLI_Setup_Guide
+  - community/WebhookReceiver
 ---
 
 # webhook_receiver.py
@@ -17,4 +17,4 @@ tags:
 - [[WebhookReceiver]] - `contains` [EXTRACTED]
 - [[forward.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide
+#graphify/code #graphify/EXTRACTED #community/WebhookReceiver

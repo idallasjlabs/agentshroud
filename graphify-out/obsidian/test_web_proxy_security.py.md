@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "FetchOutcome"
+community: "ProxyAction"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/ProxyAction
 ---
 
 # test_web_proxy_security.py
 
 ## Connections
-- [[Enum]] - `imports_from` [EXTRACTED]
+- [[Enum_2]] - `imports_from` [EXTRACTED]
 - [[MockDNSVerdict]] - `contains` [EXTRACTED]
 - [[MockEgressChannel]] - `contains` [EXTRACTED]
 - [[MockEgressEvent]] - `contains` [EXTRACTED]
@@ -20,7 +20,7 @@ tags:
 - [[MockURLResult]] - `contains` [EXTRACTED]
 - [[ProxyAction]] - `imports` [EXTRACTED]
 - [[TestWebProxySecurityIntegration]] - `contains` [EXTRACTED]
-- [[WebProxy_1]] - `imports` [EXTRACTED]
+- [[WebProxy]] - `imports` [EXTRACTED]
 - [[WebProxyResult]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

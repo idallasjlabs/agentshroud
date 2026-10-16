@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_model_resolver.py"
 type: "code"
-community: "_t()"
+community: "test_hermes_model_resolver.py"
 location: "L333"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/_t
+  - graphify/EXTRACTED
+  - community/test_hermes_model_resolverpy
 ---
 
 # test_resolve_model_corrects_stale_alias_from_local_model_ref()
@@ -15,4 +15,4 @@ tags:
 - [[resolve_model()]] - `calls` [INFERRED]
 - [[test_hermes_model_resolver.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_t
+#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy

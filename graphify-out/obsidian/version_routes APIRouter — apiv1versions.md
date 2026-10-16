@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/ingest_api/version_routes.py"
 type: "code"
-community: "Security Modules (58)"
+community: "TestVersionRoutes"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Modules_58
+  - community/TestVersionRoutes
 ---
 
 # version_routes APIRouter — /api/v1/versions
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[TestVersionRoutes]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Modules_58
+#graphify/code #graphify/EXTRACTED #community/TestVersionRoutes

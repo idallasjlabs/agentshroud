@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "_t()"
+community: "app_main.c"
 location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t
+  - community/app_mainc
 ---
 
 # ui_init()
@@ -15,4 +15,4 @@ tags:
 - [[app_main()_1]] - `calls` [EXTRACTED]
 - [[app_main.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t
+#graphify/code #graphify/EXTRACTED #community/app_mainc

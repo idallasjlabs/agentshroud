@@ -1,18 +1,18 @@
 ---
-source_file: "skills/openclaw/tmux/scripts/find-sessions.sh"
+source_file: "skills/openclaw/openai-whisper-api/scripts/transcribe.sh"
 type: "code"
-community: "→ {\"site\": \"site1\", \"test_mode\": True, \"output_p"
+community: "openai-whisper-api/SKILL.md"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_site_site1_test_mode_True_output_p
+  - community/openai-whisper-api/SKILLmd
 ---
 
 # usage()
 
 ## Connections
-- [[find-sessions.sh]] - `defines` [EXTRACTED]
-- [[find-sessions.sh script]] - `calls` [EXTRACTED]
+- [[transcribe.sh]] - `defines` [EXTRACTED]
+- [[transcribe.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_site_site1_test_mode_True_output_p
+#graphify/code #graphify/EXTRACTED #community/openai-whisper-api/SKILLmd

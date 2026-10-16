@@ -1,7 +1,7 @@
 ---
 source_file: "gateway/tests/test_switch_model_idempotent.py"
 type: "code"
-community: "._run_and_read()"
+community: "._run_and_read"
 location: "L1"
 tags:
   - graphify/code

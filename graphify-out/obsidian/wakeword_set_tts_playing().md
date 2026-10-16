@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "compute_scorecard()"
+community: "test_playback_state.c"
 location: "L462"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/compute_scorecard
+  - community/test_playback_statec
 ---
 
 # wakeword_set_tts_playing()
@@ -17,4 +17,4 @@ tags:
 - [[tts_task()]] - `calls` [INFERRED]
 - [[wakeword.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/compute_scorecard
+#graphify/code #graphify/INFERRED #community/test_playback_statec

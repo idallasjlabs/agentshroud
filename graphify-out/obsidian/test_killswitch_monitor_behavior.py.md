@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
 type: "code"
-community: "TeamsConfig"
+community: "KillSwitchMonitor"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/KillSwitchMonitor
 ---
 
 # test_killswitch_monitor_behavior.py
 
 ## Connections
-- [[KillSwitchConfig]] - `imports` [EXTRACTED]
+- [[KillSwitchConfig_1]] - `imports` [EXTRACTED]
 - [[KillSwitchMonitor]] - `imports` [EXTRACTED]
 - [[TestAnomalyDetection_1]] - `contains` [EXTRACTED]
 - [[TestHeartbeat]] - `contains` [EXTRACTED]
 - [[TestStatusAndStats]] - `contains` [EXTRACTED]
 - [[TestVerifyKillswitch]] - `contains` [EXTRACTED]
 - [[_fake_stats()]] - `contains` [EXTRACTED]
-- [[config()_1]] - `contains` [EXTRACTED]
+- [[config()_2]] - `contains` [EXTRACTED]
 - [[dispatcher()_1]] - `contains` [EXTRACTED]
 - [[killswitch_config.py (KillSwitchConfig)]] - `references` [EXTRACTED]
 - [[killswitch_monitor.py (KillSwitchMonitor)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

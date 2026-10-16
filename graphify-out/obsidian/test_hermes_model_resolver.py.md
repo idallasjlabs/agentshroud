@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_model_resolver.py"
 type: "code"
-community: "_t()"
+community: "test_hermes_model_resolver.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t
+  - community/test_hermes_model_resolverpy
 ---
 
 # test_hermes_model_resolver.py
@@ -36,4 +36,4 @@ tags:
 - [[test_unknown_mode_treated_as_cloud()]] - `contains` [EXTRACTED]
 - [[test_unrelated_model_names_pass_through_uncorrected()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t
+#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy

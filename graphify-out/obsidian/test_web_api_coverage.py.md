@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "test_redteam_probes.py"
+community: "ModeRequest"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_redteam_probespy
+  - community/ModeRequest
 ---
 
 # test_web_api_coverage.py
@@ -29,7 +29,7 @@ tags:
 - [[TestResolveBotContainer]] - `contains` [EXTRACTED]
 - [[TestSecurityReport]] - `contains` [EXTRACTED]
 - [[TestServiceControl]] - `contains` [EXTRACTED]
-- [[TestStatus_1]] - `contains` [EXTRACTED]
+- [[TestStatus]] - `contains` [EXTRACTED]
 - [[TestWsLogs]] - `contains` [EXTRACTED]
 - [[TestWsUpdates]] - `contains` [EXTRACTED]
 - [[UpdateRequest]] - `imports` [EXTRACTED]
@@ -39,8 +39,8 @@ tags:
 - [[_gitless_run()]] - `contains` [EXTRACTED]
 - [[_module_state_guard()]] - `contains` [EXTRACTED]
 - [[_resolve_bot_container()]] - `imports` [EXTRACTED]
-- [[client()_20]] - `contains` [EXTRACTED]
-- [[require_auth()_1]] - `imports` [EXTRACTED]
+- [[client()_6]] - `contains` [EXTRACTED]
+- [[require_auth()]] - `imports` [EXTRACTED]
 - [[webapi.py (POST apiintelreports)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_redteam_probespy
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

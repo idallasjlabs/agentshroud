@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "test_e2e_proxy.py"
+community: "MCPPolicyEngine"
 location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/MCPPolicyEngine
 ---
 
 # test_owner_bypass_defaults_to_rbac_owner_identity()
@@ -18,4 +18,4 @@ tags:
 - [[RBACConfig_1]] - `calls` [EXTRACTED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

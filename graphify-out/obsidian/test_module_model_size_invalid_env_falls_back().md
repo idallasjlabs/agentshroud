@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_stt_model_ab.py"
 type: "code"
-community: ".claude/settings.json (hook + permission wiring)"
+community: "test_voice_stt_model_ab.py"
 location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/claude/settingsjson_hook__permission_wiring
+  - community/test_voice_stt_model_abpy
 ---
 
 # test_module_model_size_invalid_env_falls_back()
@@ -15,4 +15,4 @@ tags:
 - [[A garbage WHISPER_MODEL_SIZE env value does not break startup.]] - `rationale_for` [EXTRACTED]
 - [[test_voice_stt_model_ab.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/claude/settingsjson_hook__permission_wiring
+#graphify/code #graphify/EXTRACTED #community/test_voice_stt_model_abpy

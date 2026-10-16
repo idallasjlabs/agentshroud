@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_security_integration.py"
+source_file: "gateway/tests/test_a2a_trust_scoring.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
-location: "L70"
+community: "A2APolicyEngine"
+location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/A2APolicyEngine
 ---
 
 # trust_manager()
 
 ## Connections
-- [[TrustManager_1]] - `calls` [EXTRACTED]
-- [[test_security_integration.py]] - `contains` [EXTRACTED]
+- [[ProgressiveTrustConfig_2]] - `calls` [EXTRACTED]
+- [[TrustManager_4]] - `calls` [EXTRACTED]
+- [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

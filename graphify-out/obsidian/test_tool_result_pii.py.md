@@ -1,29 +1,29 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "version_routes.py"
+community: "ToolResultSanitizer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/version_routespy
+  - community/ToolResultSanitizer
 ---
 
 # test_tool_result_pii.py
 
 ## Connections
-- [[GatewayConfig_1]] - `imports` [EXTRACTED]
+- [[GatewayConfig_3]] - `imports` [EXTRACTED]
 - [[MiddlewareManager]] - `imports` [EXTRACTED]
-- [[PIIConfig]] - `imports` [EXTRACTED]
-- [[RedactionDetail]] - `imports` [EXTRACTED]
-- [[RedactionResult]] - `imports` [EXTRACTED]
+- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[RedactionDetail_1]] - `imports` [EXTRACTED]
+- [[RedactionResult_3]] - `imports` [EXTRACTED]
 - [[TestConfidenceFloor]] - `contains` [EXTRACTED]
 - [[TestConfigurationLoading]] - `contains` [EXTRACTED]
 - [[TestMiddlewareIntegration]] - `contains` [EXTRACTED]
 - [[TestRealWorldScenarios]] - `contains` [EXTRACTED]
 - [[TestToolResultPIIConfig]] - `contains` [EXTRACTED]
-- [[TestToolResultSanitizer]] - `contains` [EXTRACTED]
+- [[TestToolResultSanitizer_1]] - `contains` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `imports` [EXTRACTED]
-- [[ToolResultSanitizer]] - `imports` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/version_routespy
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
