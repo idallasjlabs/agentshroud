@@ -12,6 +12,6 @@ tags:
 # Key Changes (2026-03-04 12:16 UTC)
 
 ## Connections
-- [[Summary_12]] - `contains` [EXTRACTED]
+- [[Summary_11]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan

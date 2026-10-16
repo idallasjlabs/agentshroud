@@ -12,6 +12,6 @@ tags:
 # Get filter statistics.
 
 ## Connections
-- [[dot-get_stats()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-get_stats()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AuditChain

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "EgressAttempt"
+community: "EgressFilterConfig"
 location: "L36"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EgressAttempt
+  - community/EgressFilterConfig
 ---
 
 # EgressAttempt
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[dot-_check_impl()]] - `references` [EXTRACTED]
 - [[dot-_record()_1]] - `references` [EXTRACTED]
-- [[dot-check()_4]] - `references` [EXTRACTED]
+- [[dot-check()_5]] - `references` [EXTRACTED]
 - [[dot-check_async()]] - `references` [EXTRACTED]
 - [[dot-get_log()]] - `references` [EXTRACTED]
-- [[EgressFilter_2]] - `uses` [INFERRED]
+- [[EgressFilter_1]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[FakeAuditStore_1]] - `uses` [INFERRED]
 - [[TestAuditStorePersistence]] - `uses` [INFERRED]
@@ -32,7 +32,7 @@ tags:
 - [[TestPerAgentPolicy]] - `uses` [INFERRED]
 - [[TestSMTPIMAPPorts]] - `uses` [INFERRED]
 - [[TestURLParsing]] - `uses` [INFERRED]
-- [[egress_filter.py_1]] - `contains` [EXTRACTED]
+- [[egress_filter.py]] - `contains` [EXTRACTED]
 - [[test_egress_filter.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EgressAttempt
+#graphify/code #graphify/INFERRED #community/EgressFilterConfig

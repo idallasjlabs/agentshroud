@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
 type: "document"
-community: "sanitizer.py"
-location: "L80"
+community: "middleware.py"
+location: "L120"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sanitizerpy
+  - community/middlewarepy
 ---
 
 # Known Issues / Notes
 
 ## Connections
-- [[sanitizer.py_1]] - `contains` [EXTRACTED]
+- [[middleware.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sanitizerpy
+#graphify/document #graphify/EXTRACTED #community/middlewarepy

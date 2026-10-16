@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "wazuh-ossec.conf"
+community: "FalcoAlertWatcher"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/wazuh-ossecconf
+  - community/FalcoAlertWatcher
 ---
 
 # Key OSSEC Config Sections (Inferred)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/wazuh-ossecconf
+#graphify/document #graphify/EXTRACTED #community/FalcoAlertWatcher

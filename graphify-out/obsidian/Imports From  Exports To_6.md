@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
 type: "document"
-community: "auth.py"
-location: "L69"
+community: "router.py"
+location: "L75"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/authpy
+  - community/routerpy
 ---
 
 # Imports From / Exports To
 
 ## Connections
-- [[auth.py_1]] - `contains` [EXTRACTED]
+- [[router.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/authpy
+#graphify/document #graphify/EXTRACTED #community/routerpy

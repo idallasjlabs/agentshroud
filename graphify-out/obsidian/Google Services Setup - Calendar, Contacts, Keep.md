@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[GOOGLE-SERVICES-SETUP]] - `contains` [EXTRACTED]
 - [[✅ Quick Start Command]] - `contains` [EXTRACTED]
-- [[🎯 Next Steps]] - `contains` [EXTRACTED]
+- [[🎯 Next Steps_1]] - `contains` [EXTRACTED]
 - [[📅 Google Calendar (CalDAV)]] - `contains` [EXTRACTED]
 - [[📊 Comparison CalDAV vs OAuth2]] - `contains` [EXTRACTED]
 - [[📝 Google Keep (Notes)]] - `contains` [EXTRACTED]

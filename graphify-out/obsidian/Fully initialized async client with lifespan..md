@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "rationale"
-community: "test_e2e.py"
+community: "ForwardRequest"
 location: "L25"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_e2epy
+  - community/ForwardRequest
 ---
 
 # Fully initialized async client with lifespan.
 
 ## Connections
-- [[client()_14]] - `rationale_for` [EXTRACTED]
+- [[client()_10]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_e2epy
+#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest

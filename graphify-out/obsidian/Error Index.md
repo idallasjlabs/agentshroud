@@ -13,13 +13,13 @@ tags:
 
 ## Connections
 - [[Auth Errors]] - `references` [EXTRACTED]
-- [[Container Errors_1]] - `references` [EXTRACTED]
+- [[Container Errors]] - `references` [EXTRACTED]
 - [[Egress Filter Errors]] - `references` [EXTRACTED]
 - [[Error Index_1]] - `contains` [EXTRACTED]
 - [[MCP Proxy Errors]] - `references` [EXTRACTED]
 - [[PII Pipeline Errors_1]] - `references` [EXTRACTED]
 - [[Prompt Injection Blocks]] - `references` [EXTRACTED]
-- [[SSH Proxy Errors]] - `references` [EXTRACTED]
+- [[SSH Proxy Errors_1]] - `references` [EXTRACTED]
 - [[Troubleshooting Matrix]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Error_Indexmd

@@ -16,7 +16,7 @@ tags:
 - [[PIIHitSeverity]] - `inherits` [EXTRACTED]
 - [[Recommendation]] - `inherits` [EXTRACTED]
 - [[Severity]] - `inherits` [EXTRACTED]
-- [[ThreatLevel_1]] - `inherits` [EXTRACTED]
+- [[ThreatLevel]] - `inherits` [EXTRACTED]
 - [[TrustLevel_1]] - `inherits` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SkillGuard

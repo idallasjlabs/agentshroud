@@ -12,9 +12,9 @@ tags:
 # GroupWorkspaceManager
 
 ## Connections
-- [[dot-__init__()_176]] - `method` [EXTRACTED]
+- [[dot-__init__()_77]] - `method` [EXTRACTED]
 - [[dot-_group_workspace_manager()]] - `calls` [EXTRACTED]
-- [[dot-_is_owner()_1]] - `method` [EXTRACTED]
+- [[dot-_is_owner()]] - `method` [EXTRACTED]
 - [[dot-_require_memory()]] - `method` [EXTRACTED]
 - [[dot-append_dm_memory()]] - `method` [EXTRACTED]
 - [[dot-append_group_memory()]] - `method` [EXTRACTED]
@@ -32,7 +32,7 @@ tags:
 - [[dot-test_no_teams_config_fails_closed()]] - `calls` [EXTRACTED]
 - [[dot-test_rbac_without_is_owner_callable()]] - `calls` [EXTRACTED]
 - [[dot-test_two_members_of_same_group_share_one_workspace_id()]] - `calls` [EXTRACTED]
-- [[Any_65]] - `uses` [INFERRED]
+- [[Any_71]] - `uses` [INFERRED]
 - [[GroupRoleResolver]] - `semantically_similar_to` [INFERRED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
 - [[Resolve and access-control shared group workspaces.      Args         teams_con]] - `rationale_for` [EXTRACTED]
@@ -49,7 +49,7 @@ tags:
 - [[_OutboundScan]] - `uses` [INFERRED]
 - [[group_config.py]] - `shares_data_with` [EXTRACTED]
 - [[group_workspace.py]] - `contains` [EXTRACTED]
-- [[manager()_3]] - `calls` [EXTRACTED]
+- [[manager()_1]] - `calls` [EXTRACTED]
 - [[rbac_config.py]] - `shares_data_with` [EXTRACTED]
 - [[shared_memory.py]] - `shares_data_with` [EXTRACTED]
 - [[telegram_proxy.py_2]] - `imports` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-cr/SKILL.md"
 type: "document"
-community: "hermes/skills/i-cr/SKILL.md"
+community: "Skill: Code Review (CR)"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-cr/SKILLmd
+  - community/Skill_Code_Review_CR
 ---
 
 # Feedback Guidelines
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Code Review (CR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Skill_Code_Review_CR

@@ -12,7 +12,7 @@ tags:
 # EncodingConfig
 
 ## Connections
-- [[dot-__init__()_85]] - `references` [EXTRACTED]
+- [[dot-__init__()_18]] - `references` [EXTRACTED]
 - [[dot-test_config_disable_base64()]] - `calls` [EXTRACTED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[TestEncodingDetector]] - `uses` [INFERRED]

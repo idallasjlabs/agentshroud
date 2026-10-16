@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: ".process_tool_call"
 location: "L207"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/process_tool_call
 ---
 
 # Get existing connection or create a new one.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_or_create()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/process_tool_call

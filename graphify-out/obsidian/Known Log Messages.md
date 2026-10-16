@@ -30,6 +30,6 @@ tags:
 - [[`health-monitor slackdefault health-monitor restarting (reason stale-socket)`]] - `contains` [EXTRACTED]
 - [[`openclaw Non-fatal unhandled rejection (continuing) Error A request error occurred`]] - `contains` [EXTRACTED]
 - [[`telegram autoSelectFamily=false (config)`  `fetch fallback forcing autoSelectFamily=false + dnsResultOrder=ipv4first`]] - `contains` [EXTRACTED]
-- [[troubleshooting_23]] - `references` [EXTRACTED]
+- [[troubleshooting_22]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Known_Log_Messages

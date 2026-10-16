@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "rationale"
-community: ".inspect_tool_call"
+community: "MCPInspector"
 location: "L181"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/inspect_tool_call
+  - community/MCPInspector
 ---
 
 # Inspect a tool result for PII and encoding issues.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-inspect_tool_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/inspect_tool_call
+#graphify/rationale #graphify/EXTRACTED #community/MCPInspector

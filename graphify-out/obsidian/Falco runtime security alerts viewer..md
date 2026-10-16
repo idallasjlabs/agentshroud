@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "KeyRotationManager"
+community: "EgressFilterConfig"
 location: "L414"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/EgressFilterConfig
 ---
 
 # Falco runtime security alerts viewer.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[falco_dashboard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

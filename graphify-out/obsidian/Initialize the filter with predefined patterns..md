@@ -12,6 +12,6 @@ tags:
 # Initialize the filter with predefined patterns.
 
 ## Connections
-- [[dot-__init__()_25]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_169]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "GitGuard"
+community: "ResourceGuard"
 location: "L440"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/ResourceGuard
 ---
 
 # Get a summary of all findings.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_findings_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GitGuard
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

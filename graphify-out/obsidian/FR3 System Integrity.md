@@ -19,7 +19,7 @@ tags:
 - [[encoding_detector.py]] - `references` [EXTRACTED]
 - [[heuristic_classifier.py]] - `references` [EXTRACTED]
 - [[iec-62443-matrix]] - `conceptually_related_to` [EXTRACTED]
-- [[prompt_guard.py]] - `references` [EXTRACTED]
+- [[prompt_guard.py_1]] - `references` [EXTRACTED]
 - [[security-scan.sh (unified scan dispatcher)]] - `references` [EXTRACTED]
 
 #graphify/concept #graphify/EXTRACTED #community/FR3_System_Integrity

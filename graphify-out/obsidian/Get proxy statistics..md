@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "rationale"
-community: "MCPPermissionManager"
-location: "L841"
+community: "ProxyAction"
+location: "L629"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/ProxyAction
 ---
 
 # Get proxy statistics.
 
 ## Connections
-- [[dot-get_stats()_19]] - `rationale_for` [EXTRACTED]
+- [[dot-get_stats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/ProxyAction

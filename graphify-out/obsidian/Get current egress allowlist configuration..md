@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "KeyRotationManager"
+community: "EgressFilterConfig"
 location: "L943"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/EgressFilterConfig
 ---
 
 # Get current egress allowlist configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_egress_allowlist()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

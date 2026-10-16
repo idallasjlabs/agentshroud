@@ -12,12 +12,12 @@ tags:
 # FetchOutcome
 
 ## Connections
-- [[dot-__call__()_10]] - `references` [EXTRACTED]
+- [[dot-__call__()_3]] - `references` [EXTRACTED]
 - [[dot-test_not_ok_on_non_2xx()]] - `calls` [EXTRACTED]
 - [[dot-test_not_ok_without_content()]] - `calls` [EXTRACTED]
 - [[dot-test_ok_requires_2xx_and_content()]] - `calls` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
-- [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
+- [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
 - [[FetchOutcome_1]] - `uses` [INFERRED]
 - [[IntelReportStore_1]] - `uses` [INFERRED]

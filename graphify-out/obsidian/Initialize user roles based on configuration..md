@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "rbac_config.py"
+community: "telegram_proxy.py"
 location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/rbac_configpy
+  - community/telegram_proxypy
 ---
 
 # Initialize user roles based on configuration.
 
 ## Connections
-- [[dot-__post_init__()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-__post_init__()_9]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/rbac_configpy
+#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy

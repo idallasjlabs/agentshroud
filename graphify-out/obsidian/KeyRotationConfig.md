@@ -12,8 +12,8 @@ tags:
 # KeyRotationConfig
 
 ## Connections
-- [[dot-__init__()_62]] - `references` [EXTRACTED]
-- [[CredentialRotationPolicy]] - `uses` [INFERRED]
+- [[dot-__init__()_116]] - `references` [EXTRACTED]
+- [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
 - [[KeyRotationConfig_1]] - `uses` [INFERRED]
 
 #graphify/code #graphify/INFERRED #community/KeyRotationManager

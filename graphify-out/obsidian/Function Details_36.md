@@ -1,22 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
 type: "document"
-community: "url_analyzer.py"
+community: "mcp_permissions.py"
 location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/url_analyzerpy
+  - community/mcp_permissionspy
 ---
 
 # Function Details
 
 ## Connections
-- [[URLAnalyzer._check_base64(parsed, result)]] - `contains` [EXTRACTED]
-- [[URLAnalyzer._is_private_ip(ip_str)]] - `contains` [EXTRACTED]
-- [[URLAnalyzer._is_ssrf(hostname)]] - `contains` [EXTRACTED]
-- [[URLAnalyzer.analyze(url)]] - `contains` [EXTRACTED]
-- [[URLAnalyzer.analyze_and_pin(url)]] - `contains` [EXTRACTED]
-- [[url_analyzer.py_2]] - `contains` [EXTRACTED]
+- [[MCPPermissionManager.check_agent_server_access(agent_id, server_name)]] - `contains` [EXTRACTED]
+- [[MCPPermissionManager.check_all(agent_id, server_name, tool_name)]] - `contains` [EXTRACTED]
+- [[MCPPermissionManager.check_rate_limit(agent_id, server_name, tool_name)]] - `contains` [EXTRACTED]
+- [[MCPPermissionManager.get_trust_level(agent_id)]] - `contains` [EXTRACTED]
+- [[MCPPermissionManager.infer_permission_level(tool_name, server_config)]] - `contains` [EXTRACTED]
+- [[mcp_permissions.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/url_analyzerpy
+#graphify/document #graphify/EXTRACTED #community/mcp_permissionspy

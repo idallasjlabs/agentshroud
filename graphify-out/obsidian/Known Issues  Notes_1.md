@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "models.py"
-location: "L89"
+community: "main.py"
+location: "L456"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/modelspy
+  - community/mainpy
 ---
 
 # Known Issues / Notes
 
 ## Connections
-- [[models.py_1]] - `contains` [EXTRACTED]
+- [[main.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/modelspy
+#graphify/document #graphify/EXTRACTED #community/mainpy

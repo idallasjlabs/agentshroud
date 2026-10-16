@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_channel_ownership.py"
+source_file: "gateway/tests/test_op_proxy.py"
 type: "rationale"
-community: "TestEmailSend"
-location: "L80"
+community: "_is_op_reference_allowed"
+location: "L185"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEmailSend
+  - community/_is_op_reference_allowed
 ---
 
 # Endpoint returns 401 without auth override.
 
 ## Connections
-- [[dot-test_requires_auth()_3]] - `rationale_for` [EXTRACTED]
-- [[dot-test_requires_auth()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-test_requires_auth()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEmailSend
+#graphify/rationale #graphify/EXTRACTED #community/_is_op_reference_allowed

@@ -1,21 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
 type: "document"
-community: "egress_config.py"
-location: "L40"
+community: "browser_security.py"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_configpy
+  - community/browser_securitypy
 ---
 
 # Function Details
 
 ## Connections
-- [[EgressFilterConfig._matches_any_pattern(domain, patterns)]] - `contains` [EXTRACTED]
-- [[EgressFilterConfig.from_environment()]] - `contains` [EXTRACTED]
-- [[EgressFilterConfig.get_effective_allowlist(agent_id)]] - `contains` [EXTRACTED]
-- [[EgressFilterConfig.is_denylisted(domain)]] - `contains` [EXTRACTED]
-- [[egress_config.py_2]] - `contains` [EXTRACTED]
+- [[BrowserSecurityGuard.analyze_content(content)]] - `contains` [EXTRACTED]
+- [[BrowserSecurityGuard.analyze_screenshot(image_data)]] - `contains` [EXTRACTED]
+- [[BrowserSecurityGuard.can_enter_credentials(url)]] - `contains` [EXTRACTED]
+- [[BrowserSecurityGuard.check_url_reputation(url)]] - `contains` [EXTRACTED]
+- [[BrowserSecurityGuard.register_screenshot_hook(hook)]] - `contains` [EXTRACTED]
+- [[browser_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_configpy
+#graphify/document #graphify/EXTRACTED #community/browser_securitypy

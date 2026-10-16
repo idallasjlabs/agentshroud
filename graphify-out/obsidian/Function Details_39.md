@@ -1,21 +1,19 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
 type: "document"
-community: "consent_framework.py"
+community: "canary.py"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/consent_frameworkpy
+  - community/canarypy
 ---
 
 # Function Details
 
 ## Connections
-- [[ConsentFramework.add_to_blacklist(command)  remove_from_blacklist(command)]] - `contains` [EXTRACTED]
-- [[ConsentFramework.add_to_whitelist(command)  remove_from_whitelist(command)]] - `contains` [EXTRACTED]
-- [[ConsentFramework.get_whitelist()  get_blacklist()]] - `contains` [EXTRACTED]
-- [[ConsentFramework.validate_config(config)]] - `contains` [EXTRACTED]
-- [[consent_framework.py_2]] - `contains` [EXTRACTED]
+- [[CanaryResult.to_dict()]] - `contains` [EXTRACTED]
+- [[canary.py_2]] - `contains` [EXTRACTED]
+- [[run_canary(pipeline, forwarder)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/consent_frameworkpy
+#graphify/document #graphify/EXTRACTED #community/canarypy

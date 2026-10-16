@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
 type: "document"
-community: "AGENTSHROUD_MODE"
+community: "AgentRegistry"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AGENTSHROUD_MODE
+  - community/AgentRegistry
 ---
 
 # Effect
 
 ## Connections
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - `contains` [EXTRACTED]
+- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_MODE
+#graphify/document #graphify/EXTRACTED #community/AgentRegistry

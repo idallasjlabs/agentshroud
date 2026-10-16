@@ -12,14 +12,14 @@ tags:
 # FakeAuditStore
 
 ## Connections
-- [[dot-__init__()_123]] - `method` [EXTRACTED]
-- [[dot-log_event()]] - `method` [EXTRACTED]
+- [[dot-__init__()_152]] - `method` [EXTRACTED]
+- [[dot-log_event()_2]] - `method` [EXTRACTED]
 - [[dot-test_allow_is_not_persisted_to_audit_store()]] - `calls` [EXTRACTED]
 - [[dot-test_deny_is_persisted_to_audit_store()]] - `calls` [EXTRACTED]
 - [[ApprovalResult]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
 - [[EgressAttempt]] - `uses` [INFERRED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
+- [[EgressFilter_2]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
 type: "document"
-community: "trivy_report.py"
-location: "L28"
+community: "log_sanitizer.py"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/trivy_reportpy
+  - community/log_sanitizerpy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[trivy_report.py_2]] - `contains` [EXTRACTED]
+- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/trivy_reportpy
+#graphify/document #graphify/EXTRACTED #community/log_sanitizerpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "ForwardRequest"
+community: "AgentTarget"
 location: "L149"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ForwardRequest
+  - community/AgentTarget
 ---
 
 # GatewayConfig validation behavior.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestConfigValidation]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

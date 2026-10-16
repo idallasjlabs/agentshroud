@@ -12,6 +12,6 @@ tags:
 # Individual redaction record
 
 ## Connections
-- [[RedactionDetail_1]] - `rationale_for` [EXTRACTED]
+- [[RedactionDetail]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

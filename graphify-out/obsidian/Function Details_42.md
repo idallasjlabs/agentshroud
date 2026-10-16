@@ -1,21 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
 type: "document"
-community: "auth.py"
-location: "L33"
+community: "trivy_report.py"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/authpy
+  - community/trivy_reportpy
 ---
 
 # Function Details
 
 ## Connections
-- [[RateLimiter.check(client_id)]] - `contains` [EXTRACTED]
-- [[auth.py_1]] - `contains` [EXTRACTED]
-- [[create_auth_dependency(config)]] - `contains` [EXTRACTED]
-- [[get_auth_dependency(config)]] - `contains` [EXTRACTED]
-- [[verify_token(token, expected_token)]] - `contains` [EXTRACTED]
+- [[generate_summary(report)_1]] - `contains` [EXTRACTED]
+- [[parse_trivy_output(raw)]] - `contains` [EXTRACTED]
+- [[run_trivy_scan(target, scan_type, severity, timeout, trivy_bin)]] - `contains` [EXTRACTED]
+- [[save_report(report, log_dir)_1]] - `contains` [EXTRACTED]
+- [[trivy_report.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/authpy
+#graphify/document #graphify/EXTRACTED #community/trivy_reportpy

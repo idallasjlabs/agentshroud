@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "AgentRegistry"
 location: "L70"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AgentRegistry
 ---
 
 # Install warning filter once for uvicorn logger.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_install_uvicorn_warning_filter()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry

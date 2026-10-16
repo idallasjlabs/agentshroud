@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "EgressAttempt"
+community: "EgressFilterConfig"
 location: "L637"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressAttempt
+  - community/EgressFilterConfig
 ---
 
 # Get egress attempt log, optionally filtered by agent.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_log()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressAttempt
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

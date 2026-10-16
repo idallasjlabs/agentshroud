@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "AgentRegistry"
 location: "L108"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AgentRegistry
 ---
 
 # FastAPI lifespan - startup and shutdown
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[lifespan()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry

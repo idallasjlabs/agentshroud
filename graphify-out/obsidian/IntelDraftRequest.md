@@ -17,7 +17,7 @@ tags:
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
 - [[IntelReportStore_1]] - `uses` [INFERRED]
-- [[api.py]] - `contains` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
 - [[submit_competitive_intel()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy

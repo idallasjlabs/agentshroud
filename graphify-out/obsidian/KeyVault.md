@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "KeyVault"
+community: "AuditChain"
 location: "L71"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/KeyVault
+  - community/AuditChain
 ---
 
 # KeyVault
 
 ## Connections
-- [[dot-__init__()_159]] - `references` [EXTRACTED]
-- [[dot-__init__()_48]] - `references` [EXTRACTED]
-- [[dot-__init__()_160]] - `method` [EXTRACTED]
+- [[dot-__init__()_176]] - `references` [EXTRACTED]
+- [[dot-__init__()_177]] - `references` [EXTRACTED]
+- [[dot-__init__()_178]] - `method` [EXTRACTED]
 - [[dot-_agent_in_scope()]] - `method` [EXTRACTED]
 - [[dot-_log_audit()]] - `method` [EXTRACTED]
 - [[dot-_make_vault_pipeline()]] - `calls` [EXTRACTED]
 - [[dot-check_value_match()]] - `method` [EXTRACTED]
 - [[dot-delete_key()]] - `method` [EXTRACTED]
-- [[dot-get_audit_log()_5]] - `method` [EXTRACTED]
+- [[dot-get_audit_log()_6]] - `method` [EXTRACTED]
 - [[dot-get_key()_1]] - `method` [EXTRACTED]
 - [[dot-list_keys()]] - `method` [EXTRACTED]
 - [[dot-redact()]] - `method` [EXTRACTED]
@@ -29,7 +29,7 @@ tags:
 - [[dot-test_detect_api_key_patterns()]] - `calls` [EXTRACTED]
 - [[dot-test_key_vault_init()]] - `calls` [EXTRACTED]
 - [[Per-agent API key scoping, redaction, leak detection, and rotation]] - `rationale_for` [EXTRACTED]
-- [[TestAuditChain]] - `uses` [INFERRED]
+- [[TestAuditChain_1]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
@@ -60,7 +60,7 @@ tags:
 - [[TestTrustViolationRecording]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
-- [[key_vault.py_2]] - `contains` [EXTRACTED]
+- [[key_vault.py]] - `contains` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_key_vault.py]] - `imports` [EXTRACTED]
@@ -68,4 +68,4 @@ tags:
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[vault()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/KeyVault
+#graphify/code #graphify/INFERRED #community/AuditChain

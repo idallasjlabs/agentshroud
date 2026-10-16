@@ -11,6 +11,6 @@ tags:
 # Kill Switch Won't Deactivate Troubleshooting
 
 ## Connections
-- [[troubleshooting_23]] - `references` [EXTRACTED]
+- [[troubleshooting_22]] - `references` [EXTRACTED]
 
 #graphify/concept #graphify/EXTRACTED #community/troubleshootingmd

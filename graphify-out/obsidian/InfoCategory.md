@@ -12,10 +12,10 @@ tags:
 # InfoCategory
 
 ## Connections
-- [[dot-__init__()_49]] - `calls` [EXTRACTED]
+- [[dot-__init__()_33]] - `calls` [EXTRACTED]
 - [[dot-_is_allowed_for_trust()]] - `references` [EXTRACTED]
 - [[Categories of information that may need filtering.]] - `rationale_for` [EXTRACTED]
-- [[Enum_1]] - `inherits` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[TestFabricatedSecurityNotice]] - `uses` [INFERRED]
 - [[TestIntegration_1]] - `uses` [INFERRED]
 - [[TestOutboundInfoFilter]] - `uses` [INFERRED]

@@ -12,9 +12,9 @@ tags:
 # GatewayEmailService
 
 ## Connections
-- [[dot-__init__()_120]] - `method` [EXTRACTED]
+- [[dot-__init__()_70]] - `method` [EXTRACTED]
 - [[dot-build_message()]] - `method` [EXTRACTED]
-- [[dot-send()_2]] - `method` [EXTRACTED]
+- [[dot-send()]] - `method` [EXTRACTED]
 - [[dot-sender()]] - `method` [EXTRACTED]
 - [[GatewayEmailService]] - `uses` [INFERRED]
 - [[Sends owner-comms email over an injectable SMTP transport.]] - `rationale_for` [EXTRACTED]

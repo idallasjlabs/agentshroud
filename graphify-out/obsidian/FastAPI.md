@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "MiddlewareManager"
+community: "UserSessionManager"
 location: "L107"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MiddlewareManager
+  - community/UserSessionManager
 ---
 
 # FastAPI
@@ -24,4 +24,4 @@ tags:
 - [[lifespan()]] - `references` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager
+#graphify/code #graphify/INFERRED #community/UserSessionManager

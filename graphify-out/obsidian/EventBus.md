@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "ForwardRequest"
+community: "make_event"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ForwardRequest
+  - community/make_event
 ---
 
 # EventBus
 
 ## Connections
-- [[dot-__init__()_135]] - `method` [EXTRACTED]
+- [[dot-__init__()_60]] - `method` [EXTRACTED]
 - [[dot-emit()]] - `method` [EXTRACTED]
 - [[dot-get_recent()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_8]] - `method` [EXTRACTED]
-- [[dot-subscribe()]] - `method` [EXTRACTED]
-- [[dot-unsubscribe()]] - `method` [EXTRACTED]
+- [[dot-get_stats()_3]] - `method` [EXTRACTED]
+- [[dot-subscribe()_1]] - `method` [EXTRACTED]
+- [[dot-unsubscribe()_1]] - `method` [EXTRACTED]
 - [[3+ auth failures within 5 minutes escalates event severity to critical]] - `rationale_for` [EXTRACTED]
 - [[AppState]] - `uses` [INFERRED]
 - [[FastAPI]] - `uses` [INFERRED]
@@ -38,4 +38,4 @@ tags:
 - [[test_event_bus.py]] - `imports` [EXTRACTED]
 - [[test_subscribed_relay_receives_bus_emissions()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ForwardRequest
+#graphify/code #graphify/EXTRACTED #community/make_event

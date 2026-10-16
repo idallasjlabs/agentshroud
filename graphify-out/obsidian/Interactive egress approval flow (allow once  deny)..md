@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "_make_filter"
+community: "EgressFilterConfig"
 location: "L314"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_filter
+  - community/EgressFilterConfig
 ---
 
 # Interactive egress approval flow (allow once / deny).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestInteractiveApproval]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_filter
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

@@ -12,9 +12,9 @@ tags:
 # FileIntegrityRecord
 
 ## Connections
-- [[dot-from_dict()_1]] - `method` [EXTRACTED]
-- [[dot-scan_file()]] - `references` [EXTRACTED]
-- [[dot-to_dict()_2]] - `method` [EXTRACTED]
+- [[dot-from_dict()_3]] - `method` [EXTRACTED]
+- [[dot-scan_file()_1]] - `references` [EXTRACTED]
+- [[dot-to_dict()_4]] - `method` [EXTRACTED]
 - [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
 - [[MemoryIntegrityMonitor]] - `references` [EXTRACTED]
 - [[Record of a file's integrity state.]] - `rationale_for` [EXTRACTED]

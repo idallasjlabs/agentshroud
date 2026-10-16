@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "KeyRotationManager"
+community: "EgressFilterConfig"
 location: "L926"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/EgressFilterConfig
 ---
 
 # EgressAllowlistUpdate
@@ -19,4 +19,4 @@ tags:
 - [[management.py]] - `contains` [EXTRACTED]
 - [[update_egress_allowlist()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

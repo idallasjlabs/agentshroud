@@ -1,5 +1,5 @@
 ---
-source_file: "BRAND.md"
+source_file: "docker/config/openclaw/workspace/BRAND.md"
 type: "document"
 community: "AgentShroud™ Brand Guidelines"
 location: "L64"

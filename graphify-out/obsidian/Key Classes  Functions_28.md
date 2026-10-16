@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md"
 type: "document"
-community: "web_content_scanner.py"
-location: "L24"
+community: "telegram_proxy.py"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/web_content_scannerpy
+  - community/telegram_proxypy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[web_content_scanner.py_1]] - `contains` [EXTRACTED]
+- [[telegram_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/web_content_scannerpy
+#graphify/document #graphify/EXTRACTED #community/telegram_proxypy

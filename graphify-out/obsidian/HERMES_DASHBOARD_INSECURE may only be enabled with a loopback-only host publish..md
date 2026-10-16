@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "ForwardRequest"
+community: "AgentTarget"
 location: "L491"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ForwardRequest
+  - community/AgentTarget
 ---
 
 # HERMES_DASHBOARD_INSECURE may only be enabled with a loopback-only host publish.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_hermes_dashboard_insecure_optin_is_loopback_bounded()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

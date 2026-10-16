@@ -12,6 +12,6 @@ tags:
 # KeyVault.get_audit_log()
 
 ## Connections
-- [[Function Details_6]] - `contains` [EXTRACTED]
+- [[Function Details_7]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

@@ -12,7 +12,7 @@ tags:
 # HostStatus
 
 ## Connections
-- [[Enum_1]] - `inherits` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[Outcome classification for a single host.]] - `rationale_for` [EXTRACTED]
 - [[Path_63]] - `uses` [INFERRED]
 - [[TestBuildSshArgv]] - `uses` [INFERRED]
@@ -28,7 +28,7 @@ tags:
 - [[TestWrapperSubprocess]] - `uses` [INFERRED]
 - [[classify()_1]] - `references` [EXTRACTED]
 - [[multi_host_test.py]] - `contains` [EXTRACTED]
-- [[str_1]] - `inherits` [EXTRACTED]
+- [[str_3]] - `inherits` [EXTRACTED]
 - [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/HostStatus

@@ -12,6 +12,6 @@ tags:
 # Get aggregate statistics          Returns:             Dictionary with total ent
 
 ## Connections
-- [[dot-get_stats()_14]] - `rationale_for` [EXTRACTED]
+- [[dot-get_stats()_7]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/DataLedger

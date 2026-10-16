@@ -12,6 +12,6 @@ tags:
 # Fetch a single queue item by ID          Args:             request_id: Request U
 
 ## Connections
-- [[dot-get_item()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-get_item()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/decide

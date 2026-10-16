@@ -12,6 +12,6 @@ tags:
 # KeyVault.store_key(name, value, scopes)
 
 ## Connections
-- [[Function Details_6]] - `contains` [EXTRACTED]
+- [[Function Details_7]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

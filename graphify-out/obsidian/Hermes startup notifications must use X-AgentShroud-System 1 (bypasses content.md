@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "ForwardRequest"
+community: "AgentTarget"
 location: "L418"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ForwardRequest
+  - community/AgentTarget
 ---
 
 # Hermes startup notifications must use X-AgentShroud-System: 1 (bypasses content
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_hermes_startup_telegram_calls_use_system_header()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

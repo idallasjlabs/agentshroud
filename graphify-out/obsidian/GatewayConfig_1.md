@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "load_config"
+community: "ApprovalQueueConfig"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/ApprovalQueueConfig
 ---
 
 # GatewayConfig
 
 ## Connections
-- [[GatewayConfig_4]] - `uses` [INFERRED]
+- [[GatewayConfig_3]] - `uses` [INFERRED]
 - [[_load()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

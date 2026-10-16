@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/05 - Dependencies/trivy.md"
 type: "document"
-community: "Trivy"
+community: "All Dependencies.md"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Trivy
+  - community/All_Dependenciesmd
 ---
 
 # Gateway Usage
 
 ## Connections
-- [[Trivy]] - `contains` [EXTRACTED]
+- [[Trivy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Trivy
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

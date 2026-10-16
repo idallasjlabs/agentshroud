@@ -12,9 +12,9 @@ tags:
 # EgressFilterConfig
 
 ## Connections
-- [[dot-__init__()_19]] - `references` [EXTRACTED]
+- [[dot-__init__()_150]] - `references` [EXTRACTED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
-- [[run()]] - `calls` [EXTRACTED]
+- [[run()_4]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

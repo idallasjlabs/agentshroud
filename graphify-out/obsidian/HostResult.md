@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-failed()]] - `references` [EXTRACTED]
-- [[dot-ok()_1]] - `method` [EXTRACTED]
+- [[dot-ok()_2]] - `method` [EXTRACTED]
 - [[dot-passed()]] - `references` [EXTRACTED]
 - [[dot-test_ok_only_when_pass()]] - `calls` [EXTRACTED]
 - [[dot-test_render_summary_all_pass_overall()]] - `calls` [EXTRACTED]

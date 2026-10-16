@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "_make_filter"
+community: "EgressFilterConfig"
 location: "L588"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_filter
+  - community/EgressFilterConfig
 ---
 
 # EgressPolicy default allows port 465 (SMTPS).
@@ -15,4 +15,4 @@ tags:
 - [[dot-test_default_policy_allows_imaps()]] - `rationale_for` [EXTRACTED]
 - [[dot-test_default_policy_allows_smtps()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_filter
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

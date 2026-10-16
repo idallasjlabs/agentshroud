@@ -13,7 +13,7 @@ tags:
 ## Connections
 - [[Network Security Diagram — Egress Controls]] - `conceptually_related_to` [INFERRED]
 - [[egress_approval.py]] - `references` [EXTRACTED]
-- [[egress_filter.py_1]] - `references` [EXTRACTED]
+- [[egress_filter.py]] - `references` [EXTRACTED]
 - [[iec-62443-matrix]] - `conceptually_related_to` [EXTRACTED]
 
 #graphify/concept #graphify/EXTRACTED #community/IEC_62443_Compliance_Matrix__AgentShroud

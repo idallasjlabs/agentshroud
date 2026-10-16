@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "PIIConfig"
 location: "L68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/PIIConfig
 ---
 
 # Guard against context window poisoning attacks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ContextGuard]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

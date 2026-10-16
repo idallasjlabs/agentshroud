@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "test_observatory_mode.py"
+community: "KillSwitchMonitor"
 location: "L60"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_observatory_modepy
+  - community/KillSwitchMonitor
 ---
 
 # FastAPI
@@ -19,4 +19,4 @@ tags:
 - [[_make_app()]] - `references` [EXTRACTED]
 - [[test_observatory_mode.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_observatory_modepy
+#graphify/code #graphify/INFERRED #community/KillSwitchMonitor

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "forward.py"
+community: "test_forward_stream.py"
 location: "L362"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/forwardpy
+  - community/test_forward_streampy
 ---
 
 # EmailSendResponse
@@ -18,4 +18,4 @@ tags:
 - [[forward.py]] - `imports` [EXTRACTED]
 - [[ingest_apimodels.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/forwardpy
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy

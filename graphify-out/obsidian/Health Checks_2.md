@@ -20,7 +20,7 @@ tags:
 - [[Health Checks_1]] - `contains` [EXTRACTED]
 - [[Ledger Health]] - `contains` [EXTRACTED]
 - [[Monitoring Script]] - `contains` [EXTRACTED]
-- [[Related Notes_60]] - `contains` [EXTRACTED]
+- [[Related Notes_67]] - `contains` [EXTRACTED]
 - [[Security Health Report]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Health_Checks

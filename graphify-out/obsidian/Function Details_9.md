@@ -1,25 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
 type: "document"
-community: "Function Details"
-location: "L44"
+community: "clamav_scanner.py"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/clamav_scannerpy
 ---
 
 # Function Details
 
 ## Connections
-- [[calculate_overall_score(summaries)]] - `contains` [EXTRACTED]
-- [[calculate_tool_score(summary)]] - `contains` [EXTRACTED]
-- [[format_report(report)]] - `contains` [EXTRACTED]
-- [[generate_report(summaries, db_path, save_history)]] - `contains` [EXTRACTED]
-- [[get_trend(days, db_path)]] - `contains` [EXTRACTED]
-- [[health_report.py_1]] - `contains` [EXTRACTED]
-- [[init_db(db_path)]] - `contains` [EXTRACTED]
-- [[save_to_history(score, grade, details, db_path)]] - `contains` [EXTRACTED]
-- [[score_to_grade(score)]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
+- [[generate_summary(report)]] - `contains` [EXTRACTED]
+- [[parse_clamscan_output(output, returncode)]] - `contains` [EXTRACTED]
+- [[run_clamscan(target, recursive, timeout, clamscan_bin, exclude_patterns)]] - `contains` [EXTRACTED]
+- [[save_report(report, log_dir)]] - `contains` [EXTRACTED]
+- [[update_virus_db(freshclam_bin, timeout)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy

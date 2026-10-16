@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "telegram_proxy.py"
+community: "GroupConfig"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/GroupConfig
 ---
 
 # GroupConfig
@@ -15,7 +15,7 @@ tags:
 - [[dot-coerce_members()]] - `method` [EXTRACTED]
 - [[dot-get_user_groups()]] - `references` [EXTRACTED]
 - [[dot-is_admin()]] - `method` [EXTRACTED]
-- [[dot-is_member()_1]] - `method` [EXTRACTED]
+- [[dot-is_member()]] - `method` [EXTRACTED]
 - [[dot-test_group_config_safe_response_prefix_field()]] - `calls` [EXTRACTED]
 - [[dot-test_group_config_safe_response_prefix_set()]] - `calls` [EXTRACTED]
 - [[dot-validate_mode()]] - `method` [EXTRACTED]
@@ -41,8 +41,8 @@ tags:
 - [[create_group()]] - `calls` [EXTRACTED]
 - [[group_config.py]] - `contains` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
-- [[teams()_3]] - `calls` [EXTRACTED]
+- [[teams()_4]] - `calls` [EXTRACTED]
 - [[test_collaborator_responses.py]] - `imports` [EXTRACTED]
 - [[test_group_config.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/code #graphify/EXTRACTED #community/GroupConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "ToolResultSanitizer"
 location: "L205"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ToolResultSanitizer
 ---
 
 # Get list of tools with specific PII configurations
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_supported_tools()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

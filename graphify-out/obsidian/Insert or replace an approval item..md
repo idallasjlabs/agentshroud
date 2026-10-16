@@ -12,6 +12,6 @@ tags:
 # Insert or replace an approval item.
 
 ## Connections
-- [[dot-save()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-save()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

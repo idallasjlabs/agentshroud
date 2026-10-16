@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "KeyVault"
+community: "AuditChain"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/AuditChain
 ---
 
 # KeyInjector
 
 ## Connections
-- [[dot-__init__()_159]] - `method` [EXTRACTED]
+- [[dot-__init__()_176]] - `method` [EXTRACTED]
 - [[dot-inject_for_request()]] - `method` [EXTRACTED]
 - [[dot-test_inject_auth_header()]] - `calls` [EXTRACTED]
 - [[dot-test_inject_fails_for_unscoped()]] - `calls` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[TestKeyScoping]] - `uses` [INFERRED]
 - [[TestKeyStorage]] - `uses` [INFERRED]
 - [[TestKeyVaultConfig]] - `uses` [INFERRED]
-- [[key_vault.py_2]] - `contains` [EXTRACTED]
+- [[key_vault.py]] - `contains` [EXTRACTED]
 - [[test_key_vault.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/code #graphify/EXTRACTED #community/AuditChain

@@ -12,16 +12,16 @@ tags:
 # HermesA2AForwarder
 
 ## Connections
-- [[dot-__init__()_192]] - `method` [EXTRACTED]
-- [[dot-close()_18]] - `method` [EXTRACTED]
+- [[dot-__init__()_124]] - `method` [EXTRACTED]
+- [[dot-close()_10]] - `method` [EXTRACTED]
 - [[dot-forward()_3]] - `method` [EXTRACTED]
 - [[A2AMethod]] - `uses` [INFERRED]
 - [[A2APeerTestDouble]] - `uses` [INFERRED]
-- [[A2APolicyEngine_3]] - `uses` [INFERRED]
+- [[A2APolicyEngine_2]] - `uses` [INFERRED]
 - [[A2AProxy_1]] - `calls` [EXTRACTED]
 - [[Real HTTP forwarder to Hermes's internal A2A JSON-RPC listener.      Matches the]] - `rationale_for` [EXTRACTED]
-- [[Request_8]] - `uses` [INFERRED]
-- [[Response]] - `uses` [INFERRED]
+- [[Request_5]] - `uses` [INFERRED]
+- [[Response_1]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
 - [[a2a_proxy.py]] - `contains` [EXTRACTED]
 - [[test_a2a_integration.py]] - `imports` [EXTRACTED]

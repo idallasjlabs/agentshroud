@@ -12,7 +12,7 @@ tags:
 # EgressApprovalQueue
 
 ## Connections
-- [[dot-__init__()_102]] - `method` [EXTRACTED]
+- [[dot-__init__()_29]] - `method` [EXTRACTED]
 - [[dot-_append_decision()]] - `method` [EXTRACTED]
 - [[dot-_assess_risk()]] - `method` [EXTRACTED]
 - [[dot-_check_existing_rule()]] - `method` [EXTRACTED]
@@ -36,7 +36,7 @@ tags:
 - [[dot-request_approval()]] - `method` [EXTRACTED]
 - [[dot-revoke_decision()]] - `method` [EXTRACTED]
 - [[dot-set_emergency_block_all()]] - `method` [EXTRACTED]
-- [[dot-set_event_bus()_1]] - `method` [EXTRACTED]
+- [[dot-set_event_bus()]] - `method` [EXTRACTED]
 - [[DelegationManager_1]] - `semantically_similar_to` [INFERRED]
 - [[EgressRule]] - `shares_data_with` [EXTRACTED]
 - [[TelegramAPIProxy]] - `shares_data_with` [INFERRED]

@@ -12,6 +12,6 @@ tags:
 # KeyInjector.inject_for_request(url, headers, agent_id, key_name)
 
 ## Connections
-- [[Function Details_6]] - `contains` [EXTRACTED]
+- [[Function Details_7]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

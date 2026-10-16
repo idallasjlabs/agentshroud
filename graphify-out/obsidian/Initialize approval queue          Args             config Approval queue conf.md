@@ -12,6 +12,6 @@ tags:
 # Initialize approval queue          Args:             config: Approval queue conf
 
 ## Connections
-- [[dot-__init__()_41]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_39]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/__init__

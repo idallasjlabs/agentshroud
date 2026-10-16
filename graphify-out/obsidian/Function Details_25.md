@@ -1,22 +1,24 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
 type: "document"
-community: "telegram_proxy.py"
-location: "L29"
+community: "Function Details"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/Function_Details
 ---
 
 # Function Details
 
 ## Connections
-- [[TelegramAPIProxy._filter_inbound_updates(response_data)]] - `contains` [EXTRACTED]
-- [[TelegramAPIProxy._filter_outbound(body, content_type)]] - `contains` [EXTRACTED]
-- [[TelegramAPIProxy._forward_to_telegram(url, body, content_type)]] - `contains` [EXTRACTED]
-- [[TelegramAPIProxy.get_stats()]] - `contains` [EXTRACTED]
-- [[TelegramAPIProxy.proxy_request(bot_token, method, body, content_type)]] - `contains` [EXTRACTED]
-- [[telegram_proxy.py_1]] - `contains` [EXTRACTED]
+- [[ConnectionPool.get_or_create(server_name, config)]] - `contains` [EXTRACTED]
+- [[MCPProxy._execute_tool_call(tool_call, sanitized_params)]] - `contains` [EXTRACTED]
+- [[MCPProxy.check_approval_required(tool_call)]] - `contains` [EXTRACTED]
+- [[MCPProxy.get_stats()]] - `contains` [EXTRACTED]
+- [[MCPProxy.process_tool_call(tool_call, execute)]] - `contains` [EXTRACTED]
+- [[MCPProxy.process_tool_result(tool_result, agent_id)]] - `contains` [EXTRACTED]
+- [[StdioConnection.send_request(method, params)]] - `contains` [EXTRACTED]
+- [[mcp_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/document #graphify/EXTRACTED #community/Function_Details

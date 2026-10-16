@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-get_events()]] - `references` [EXTRACTED]
-- [[dot-record()]] - `references` [EXTRACTED]
+- [[dot-record()_2]] - `references` [EXTRACTED]
 - [[dot-test_alert_has_description()]] - `calls` [EXTRACTED]
 - [[dot-test_alert_has_severity()]] - `calls` [EXTRACTED]
 - [[dot-test_alert_monitor_mode_no_block()]] - `calls` [EXTRACTED]

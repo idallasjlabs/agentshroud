@@ -16,6 +16,6 @@ tags:
 - [[WebProxy._audit(event_type, url, metadata)]] - `contains` [EXTRACTED]
 - [[WebProxy.check_request(url, method, headers)]] - `contains` [EXTRACTED]
 - [[WebProxy.scan_response(url, body, content_type, status_code, response_size)]] - `contains` [EXTRACTED]
-- [[web_proxy.py_1]] - `contains` [EXTRACTED]
+- [[web_proxy.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/web_proxypy

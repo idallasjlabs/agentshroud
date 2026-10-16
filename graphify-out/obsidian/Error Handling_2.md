@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
+source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "Mac App Discovery Skill"
-location: "L344"
+community: "xurl — Agent Skill Reference"
+location: "L444"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mac_App_Discovery_Skill
+  - community/xurl__Agent_Skill_Reference
 ---
 
 # Error Handling
 
 ## Connections
-- [[Mac App Discovery Skill_1]] - `contains` [EXTRACTED]
+- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill
+#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference

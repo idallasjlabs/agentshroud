@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "rationale"
-community: "PrivacyPolicyEnforcer"
+community: "RBACConfig"
 location: "L179"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/RBACConfig
 ---
 
 # Evaluates access control and filters responses per privacy policy.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PrivacyPolicyEnforcer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[First Time Setup]] - `contains` [EXTRACTED]
-- [[Prerequisites_4]] - `contains` [EXTRACTED]
-- [[Related Notes_28]] - `contains` [EXTRACTED]
+- [[Prerequisites_6]] - `contains` [EXTRACTED]
+- [[Related Notes_45]] - `contains` [EXTRACTED]
 - [[Step 1 Create Secret Files]] - `contains` [EXTRACTED]
 - [[Step 3 Configure 1Password Items]] - `contains` [EXTRACTED]
 - [[Step 4 Build Container Images]] - `contains` [EXTRACTED]

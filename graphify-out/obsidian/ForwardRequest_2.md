@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/ingest_api/routes/forward.py"
+source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "forward.py"
-location: "L332"
+community: "AgentTarget"
+location: "L116"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/forwardpy
+  - graphify/INFERRED
+  - community/AgentTarget
 ---
 
 # ForwardRequest
 
 ## Connections
-- [[RBACConfig_4]] - `uses` [INFERRED]
-- [[_process_inbound()]] - `references` [EXTRACTED]
-- [[_resolve_user_trust_level()]] - `references` [EXTRACTED]
-- [[forward_content()]] - `references` [EXTRACTED]
-- [[forward_content_stream()]] - `references` [EXTRACTED]
+- [[dot-resolve_target()]] - `references` [EXTRACTED]
+- [[AgentTarget_3]] - `uses` [INFERRED]
+- [[ForwardRequest_3]] - `uses` [INFERRED]
+- [[RouterConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/forwardpy
+#graphify/code #graphify/INFERRED #community/AgentTarget

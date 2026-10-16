@@ -12,7 +12,7 @@ tags:
 # FindingType
 
 ## Connections
-- [[Enum_1]] - `inherits` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[TestAllowDenyList]] - `uses` [INFERRED]
 - [[TestAuditQueries]] - `uses` [INFERRED]
 - [[TestAuditTrail_2]] - `uses` [INFERRED]
@@ -23,7 +23,7 @@ tags:
 - [[TestHashChainIntegration]] - `uses` [INFERRED]
 - [[TestInjectionDetection]] - `uses` [INFERRED]
 - [[TestInspectorEdgeCases]] - `uses` [INFERRED]
-- [[TestPIIDetection_1]] - `uses` [INFERRED]
+- [[TestPIIDetection_2]] - `uses` [INFERRED]
 - [[TestPassthroughMode_1]] - `uses` [INFERRED]
 - [[TestPrivacyPolicyEvents]] - `uses` [INFERRED]
 - [[TestProcessingTime]] - `uses` [INFERRED]
@@ -36,7 +36,7 @@ tags:
 - [[TestSuspiciousEncoding]] - `uses` [INFERRED]
 - [[TestThreatLevelCalc]] - `uses` [INFERRED]
 - [[Type of security finding.]] - `rationale_for` [EXTRACTED]
-- [[mcp_inspector.py]] - `contains` [EXTRACTED]
+- [[mcp_inspector.py_2]] - `contains` [EXTRACTED]
 - [[proxy__init__.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 

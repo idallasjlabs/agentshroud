@@ -12,6 +12,6 @@ tags:
 # EgressFilterConfig.is_denylisted(domain)
 
 ## Connections
-- [[Function Details_30]] - `contains` [EXTRACTED]
+- [[Function Details_31]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/egress_configpy

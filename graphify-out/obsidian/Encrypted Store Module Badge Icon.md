@@ -1,17 +1,17 @@
 ---
 source_file: "branding/icons/modules/encrypted-store-256x256.png"
 type: "image"
-community: "KeyVault"
+community: "AgentShroud macOS App Icon (1024x1024, Rounded Squircle)"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/KeyVault
+  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle
 ---
 
 # Encrypted Store Module Badge Icon
 
 ## Connections
 - [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - `conceptually_related_to` [INFERRED]
-- [[encrypted_store.py_2]] - `conceptually_related_to` [INFERRED]
+- [[encrypted_store.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/KeyVault
+#graphify/image #graphify/INFERRED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle

@@ -36,8 +36,8 @@ tags:
 - [[TestStatus]] - `uses` [INFERRED]
 - [[TestWsLogs]] - `uses` [INFERRED]
 - [[TestWsUpdates]] - `uses` [INFERRED]
-- [[api.py]] - `contains` [EXTRACTED]
-- [[killswitch()_1]] - `references` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
+- [[killswitch()]] - `references` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/ModeRequest

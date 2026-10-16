@@ -1,19 +1,17 @@
 ---
-source_file: ".github/agents/validation-runner.agent.md"
+source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
 type: "document"
-community: "Validation Runner Specialist"
-location: "L177"
+community: "Mac App Discovery Skill"
+location: "L344"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Validation_Runner_Specialist
+  - community/Mac_App_Discovery_Skill
 ---
 
 # Error Handling
 
 ## Connections
-- [[Validation Runner Specialist]] - `contains` [EXTRACTED]
-- [[When Environment Issues]] - `contains` [EXTRACTED]
-- [[When Validation Fails]] - `contains` [EXTRACTED]
+- [[Mac App Discovery Skill_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Validation_Runner_Specialist
+#graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill

@@ -1,18 +1,32 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: ""
 type: "code"
-community: "SCLClient"
-location: "L49"
+community: "ConsentFramework"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SCLClient
+  - community/ConsentFramework
 ---
 
 # Exception
 
 ## Connections
-- [[SCLClient]] - `uses` [INFERRED]
-- [[_patch_urlopen()]] - `references` [EXTRACTED]
+- [[ConfigValidationError]] - `inherits` [EXTRACTED]
+- [[CredentialEntryBlocked]] - `inherits` [EXTRACTED]
+- [[ForwardError]] - `inherits` [EXTRACTED]
+- [[OAuthError]] - `inherits` [EXTRACTED]
+- [[PhishingURLDetected]] - `inherits` [EXTRACTED]
+- [[ReportIntegrityError]] - `inherits` [EXTRACTED]
+- [[RouterError]] - `inherits` [EXTRACTED]
+- [[SecurityError]] - `inherits` [EXTRACTED]
+- [[SecurityError_1]] - `inherits` [EXTRACTED]
+- [[SecurityError_2]] - `inherits` [EXTRACTED]
+- [[SecurityError_3]] - `inherits` [EXTRACTED]
+- [[SessionError]] - `inherits` [EXTRACTED]
+- [[SkillGuardBlocked]] - `inherits` [EXTRACTED]
+- [[SocialEngineeringDetected]] - `inherits` [EXTRACTED]
+- [[VRAMHeadroomError]] - `inherits` [EXTRACTED]
+- [[global_exception_handler()]] - `references` [EXTRACTED]
+- [[test_broadcast_with_failed_client()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/SCLClient
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework

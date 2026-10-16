@@ -12,6 +12,6 @@ tags:
 # Injection Pattern Weights
 
 ## Connections
-- [[web_content_scanner.py_1]] - `contains` [EXTRACTED]
+- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/web_content_scannerpy

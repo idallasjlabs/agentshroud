@@ -12,9 +12,9 @@ tags:
 # EgressStatus
 
 ## Connections
-- [[Enum_1]] - `inherits` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[socmodels.py]] - `contains` [EXTRACTED]
-- [[str_1]] - `inherits` [EXTRACTED]
+- [[str_3]] - `inherits` [EXTRACTED]
 - [[test_soc_egress.py]] - `imports` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 

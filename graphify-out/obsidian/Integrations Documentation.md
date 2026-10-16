@@ -12,7 +12,7 @@ tags:
 # Integrations Documentation
 
 ## Connections
-- [[Current Status_6]] - `contains` [EXTRACTED]
+- [[Current Status_8]] - `contains` [EXTRACTED]
 - [[Planned Documents_5]] - `contains` [EXTRACTED]
 - [[integrationsREADME]] - `contains` [EXTRACTED]
 

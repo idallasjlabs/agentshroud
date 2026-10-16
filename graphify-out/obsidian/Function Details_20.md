@@ -1,21 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
 type: "document"
-community: "EgressFilter"
-location: "L46"
+community: "wazuh_client.py"
+location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/wazuh_clientpy
 ---
 
 # Function Details
 
 ## Connections
-- [[EgressFilter_3]] - `contains` [EXTRACTED]
-- [[EgressFilter._is_private_ip(host)]] - `contains` [EXTRACTED]
-- [[EgressFilter._record(agent_id, dest, port, action, rule)]] - `contains` [EXTRACTED]
-- [[EgressFilter.check(agent_id, destination, port)]] - `contains` [EXTRACTED]
-- [[EgressPolicy.matches_domain(domain)]] - `contains` [EXTRACTED]
+- [[generate_summary(alerts)]] - `contains` [EXTRACTED]
+- [[get_fim_events(alerts)  get_rootkit_events(alerts)]] - `contains` [EXTRACTED]
+- [[level_to_severity(level)]] - `contains` [EXTRACTED]
+- [[parse_alert(raw)]] - `contains` [EXTRACTED]
+- [[read_alerts(alert_dir, since)]] - `contains` [EXTRACTED]
+- [[wazuh_client.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/document #graphify/EXTRACTED #community/wazuh_clientpy

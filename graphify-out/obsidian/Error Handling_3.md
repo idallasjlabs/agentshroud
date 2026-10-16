@@ -1,5 +1,5 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mac/SKILL.md"
+source_file: ".agents/skills/i-mac/SKILL.md"
 type: "document"
 community: "Mac App Discovery Skill"
 location: "L344"
@@ -12,7 +12,7 @@ tags:
 # Error Handling
 
 ## Connections
+- [[Mac App Discovery Skill]] - `contains` [EXTRACTED]
 - [[Mac App Discovery Skill_1]] - `contains` [EXTRACTED]
-- [[Mac App Discovery Skill_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill

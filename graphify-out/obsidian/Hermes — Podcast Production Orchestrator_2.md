@@ -12,9 +12,9 @@ tags:
 # Hermes — Podcast Production Orchestrator
 
 ## Connections
-- [[Purpose_177]] - `contains` [EXTRACTED]
-- [[Related Skills_112]] - `contains` [EXTRACTED]
-- [[Usage_123]] - `contains` [EXTRACTED]
+- [[Purpose_171]] - `contains` [EXTRACTED]
+- [[Related Skills_110]] - `contains` [EXTRACTED]
+- [[Usage_119]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-hermesREADME]] - `contains` [EXTRACTED]
 

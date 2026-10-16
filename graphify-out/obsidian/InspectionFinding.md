@@ -16,7 +16,7 @@ tags:
 - [[dot-_scan_value()]] - `references` [EXTRACTED]
 - [[dot-_should_block()]] - `references` [EXTRACTED]
 - [[A single finding from inspection.]] - `rationale_for` [EXTRACTED]
-- [[mcp_inspector.py]] - `contains` [EXTRACTED]
+- [[mcp_inspector.py_2]] - `contains` [EXTRACTED]
 - [[proxy__init__.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

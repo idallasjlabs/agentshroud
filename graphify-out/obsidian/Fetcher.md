@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "api.py"
+community: "CompetitiveIntelReport"
 location: "L71"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/apipy
+  - community/CompetitiveIntelReport
 ---
 
 # Fetcher
 
 ## Connections
-- [[dot-__init__()_198]] - `references` [EXTRACTED]
+- [[dot-__init__()_67]] - `references` [EXTRACTED]
 - [[Citation_1]] - `uses` [INFERRED]
-- [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
+- [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
 - [[CompetitorEntry]] - `uses` [INFERRED]
 - [[make_httpx_fetcher()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/apipy
+#graphify/code #graphify/INFERRED #community/CompetitiveIntelReport

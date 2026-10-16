@@ -12,14 +12,14 @@ tags:
 # KeyLeakDetector
 
 ## Connections
-- [[dot-__init__()_48]] - `method` [EXTRACTED]
+- [[dot-__init__()_177]] - `method` [EXTRACTED]
 - [[dot-_make_vault_pipeline()]] - `calls` [EXTRACTED]
 - [[dot-scan_outbound()]] - `method` [EXTRACTED]
 - [[dot-test_detect_api_key_patterns()]] - `calls` [EXTRACTED]
 - [[dot-test_detect_key_in_outbound()]] - `calls` [EXTRACTED]
 - [[dot-test_leak_detection_logged()]] - `calls` [EXTRACTED]
 - [[dot-test_no_leak_clean_message()]] - `calls` [EXTRACTED]
-- [[TestAuditChain]] - `uses` [INFERRED]
+- [[TestAuditChain_1]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestContextGuardInPipeline]] - `uses` [INFERRED]
 - [[TestContextIntegrityInPipeline]] - `uses` [INFERRED]
@@ -38,7 +38,7 @@ tags:
 - [[TestTrustViolationRecording]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
-- [[key_vault.py_2]] - `contains` [EXTRACTED]
+- [[key_vault.py]] - `contains` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_key_vault.py]] - `imports` [EXTRACTED]

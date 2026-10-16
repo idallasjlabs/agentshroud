@@ -12,6 +12,6 @@ tags:
 # Environment Variables Used
 
 ## Connections
-- [[sanitizer.py_1]] - `contains` [EXTRACTED]
+- [[sanitizer.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/sanitizerpy

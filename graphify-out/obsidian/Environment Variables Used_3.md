@@ -12,6 +12,6 @@ tags:
 # Environment Variables Used
 
 ## Connections
-- [[middleware.py_2]] - `contains` [EXTRACTED]
+- [[middleware.py]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/middlewarepy
