@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-scan_file()]] - `calls` [EXTRACTED]
 - [[CompletedProcess_3]] - `uses` [INFERRED]
-- [[Path_26]] - `uses` [INFERRED]
+- [[Path_23]] - `uses` [INFERRED]
 - [[Raised when SkillGuard is handed content it cannot scan.]] - `rationale_for` [EXTRACTED]
 - [[ScanResult_2]] - `uses` [INFERRED]
 - [[SkillGuard]] - `uses` [INFERRED]

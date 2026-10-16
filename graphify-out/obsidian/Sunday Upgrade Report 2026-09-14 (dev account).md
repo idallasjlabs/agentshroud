@@ -11,7 +11,6 @@ tags:
 # Sunday Upgrade Report 2026-09-14 (dev account)
 
 ## Connections
-- [[No-Op Upgrade Gate (7-week silent no-op)]] - `references` [EXTRACTED]
 - [[check_hermes()]] - `references` [EXTRACTED]
 - [[check_openclaw()]] - `references` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `references` [EXTRACTED]

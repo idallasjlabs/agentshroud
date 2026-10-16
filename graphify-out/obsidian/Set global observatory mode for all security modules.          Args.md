@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "rationale"
-community: "PIIConfig"
+community: "PipelineAction"
 location: "L1669"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/PipelineAction
 ---
 
 # Set global observatory mode for all security modules.          Args:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-set_global_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/PipelineAction

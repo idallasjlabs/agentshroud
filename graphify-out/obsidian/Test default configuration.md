@@ -12,6 +12,6 @@ tags:
 # Test default configuration
 
 ## Connections
-- [[dot-test_default_config()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_config()_3]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

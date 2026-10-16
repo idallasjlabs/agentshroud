@@ -12,6 +12,6 @@ tags:
 # Standard Footer
 
 ## Connections
-- [[Trademark Notice_3]] - `contains` [EXTRACTED]
+- [[Trademark Notice_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record

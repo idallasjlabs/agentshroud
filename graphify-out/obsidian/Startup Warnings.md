@@ -12,6 +12,6 @@ tags:
 # Startup Warnings
 
 ## Connections
-- [[AGENTSHROUD_MODE]] - `contains` [EXTRACTED]
+- [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/egress_filterpy

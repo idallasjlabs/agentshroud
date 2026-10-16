@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_web_proxy_security.py"
+source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "rationale"
-community: "WebProxy"
-location: "L63"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L20"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[dot-setUp()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_25]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxy
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

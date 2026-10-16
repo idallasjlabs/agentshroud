@@ -12,7 +12,7 @@ tags:
 # Step 7: Verify Installation
 
 ## Connections
-- [[Dashboard Access_1]] - `contains` [EXTRACTED]
+- [[Dashboard Access]] - `contains` [EXTRACTED]
 - [[Health Check]] - `contains` [EXTRACTED]
 - [[Step-by-Step Installation]] - `contains` [EXTRACTED]
 - [[Test a Message]] - `contains` [EXTRACTED]

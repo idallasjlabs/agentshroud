@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Recommendation]] - `uses` [INFERRED]
 - [[ScanResult_3]] - `uses` [INFERRED]
-- [[Severity]] - `uses` [INFERRED]
+- [[Severity_1]] - `uses` [INFERRED]
 - [[SkillGuard_1]] - `uses` [INFERRED]
 - [[SkillScanError]] - `uses` [INFERRED]
 - [[_finding_categories()]] - `references` [EXTRACTED]

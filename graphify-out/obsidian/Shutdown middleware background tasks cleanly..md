@@ -12,6 +12,6 @@ tags:
 # Shutdown middleware background tasks cleanly.
 
 ## Connections
-- [[dot-close()_14]] - `rationale_for` [EXTRACTED]
+- [[dot-close()_10]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

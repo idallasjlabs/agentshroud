@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "ModeRequest"
+community: "test_prompt_guard.py"
 location: "L180"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/test_prompt_guardpy
 ---
 
 # Set AGENTSHROUD_MODE at runtime with automatic revert to 'enforce'.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[set_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ModeRequest
+#graphify/rationale #graphify/EXTRACTED #community/test_prompt_guardpy

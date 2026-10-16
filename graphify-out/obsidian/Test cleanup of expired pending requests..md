@@ -12,6 +12,6 @@ tags:
 # Test cleanup of expired pending requests.
 
 ## Connections
-- [[dot-test_cleanup_expired_requests()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-test_cleanup_expired_requests()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue

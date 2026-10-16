@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[TELEGRAM_API_BASE_URL_1]] - `contains` [EXTRACTED]
-- [[telegram_proxy.py_2]] - `references` [INFERRED]
+- [[telegram_proxy.py]] - `references` [INFERRED]
 
 #graphify/document #graphify/EXTRACTED #community/telegram_proxypy

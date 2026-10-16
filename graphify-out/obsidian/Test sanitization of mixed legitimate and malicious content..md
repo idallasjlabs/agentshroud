@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "egress_filter.py"
 location: "L242"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/egress_filterpy
 ---
 
 # Test sanitization of mixed legitimate and malicious content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_mixed_content_sanitization()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/egress_filterpy

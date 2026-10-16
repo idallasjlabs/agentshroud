@@ -17,7 +17,7 @@ tags:
 - [[Core Discipline Understand → Structure → Write → Validate_2]] - `contains` [EXTRACTED]
 - [[Document Structure_2]] - `contains` [EXTRACTED]
 - [[Document-Type Patterns_2]] - `contains` [EXTRACTED]
-- [[Role_38]] - `contains` [EXTRACTED]
+- [[Role_37]] - `contains` [EXTRACTED]
 - [[Rules_12]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

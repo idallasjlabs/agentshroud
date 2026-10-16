@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_security_module_config_default_mode()]] - `calls` [EXTRACTED]
 - [[dot-test_security_module_config_defaults()]] - `calls` [EXTRACTED]
-- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[SSHConfig_2]] - `uses` [INFERRED]
 - [[Security module configuration]] - `rationale_for` [EXTRACTED]

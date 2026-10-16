@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "rationale"
-community: "AgentRegistry"
+community: "MiddlewareManager"
 location: "L59"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/MiddlewareManager
 ---
 
 # Test get_module_mode returns enforce when explicitly set.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_get_module_mode_enforce_override()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

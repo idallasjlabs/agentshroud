@@ -12,6 +12,6 @@ tags:
 # Test Results
 
 ## Connections
-- [[Summary_25]] - `contains` [EXTRACTED]
+- [[Summary_24]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Peer_Review_Round_3_FINAL

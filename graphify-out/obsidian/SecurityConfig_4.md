@@ -28,7 +28,7 @@ tags:
 - [[dot-test_security_config_pii_sanitizer_enforce()]] - `calls` [EXTRACTED]
 - [[dot-test_security_config_prompt_guard_enforce()]] - `calls` [EXTRACTED]
 - [[dot-test_security_config_subagent_monitor_enforce()]] - `calls` [EXTRACTED]
-- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[Complete security configuration]] - `rationale_for` [EXTRACTED]
 - [[SSHConfig_2]] - `uses` [INFERRED]

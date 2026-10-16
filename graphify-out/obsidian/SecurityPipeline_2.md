@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "PIIConfig"
+community: "PipelineAction"
 location: "L317"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/PipelineAction
 ---
 
 # SecurityPipeline
 
 ## Connections
-- [[dot-__init__()_174]] - `method` [EXTRACTED]
+- [[dot-__init__()_122]] - `method` [EXTRACTED]
 - [[dot-_make_vault_pipeline()]] - `calls` [EXTRACTED]
 - [[dot-_maybe_record_trust_violation()]] - `method` [EXTRACTED]
 - [[dot-_pipeline_with_trust()]] - `calls` [EXTRACTED]
 - [[dot-_process_inbound_core()]] - `method` [EXTRACTED]
 - [[dot-_process_outbound_core()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_18]] - `method` [EXTRACTED]
+- [[dot-get_stats()_10]] - `method` [EXTRACTED]
 - [[dot-pipeline()]] - `calls` [EXTRACTED]
 - [[dot-pipeline()_1]] - `calls` [EXTRACTED]
-- [[dot-process_inbound()_6]] - `method` [EXTRACTED]
-- [[dot-process_outbound()_4]] - `method` [EXTRACTED]
+- [[dot-process_inbound()_1]] - `method` [EXTRACTED]
+- [[dot-process_outbound()_2]] - `method` [EXTRACTED]
 - [[dot-set_global_mode()]] - `method` [EXTRACTED]
 - [[dot-test_detector_failure_fails_closed_for_non_owner()]] - `calls` [EXTRACTED]
 - [[dot-test_full_trust_tool_result_injection_audited_not_blocked()]] - `calls` [EXTRACTED]
@@ -39,23 +39,23 @@ tags:
 - [[dot-verify_audit_chain()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `shares_data_with` [EXTRACTED]
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
-- [[Data Flow]] - `references` [EXTRACTED]
+- [[Data Flow_1]] - `references` [EXTRACTED]
 - [[EncodingDetector]] - `calls` [EXTRACTED]
 - [[FakeClock]] - `uses` [INFERRED]
 - [[FalcoAlertWatcher]] - `conceptually_related_to` [INFERRED]
-- [[FastAPI_1]] - `uses` [INFERRED]
+- [[FastAPI_3]] - `uses` [INFERRED]
 - [[FilterResult_1]] - `uses` [INFERRED]
 - [[HTTPConnectProxy_1]] - `semantically_similar_to` [INFERRED]
 - [[HTTPForwarder]] - `references` [EXTRACTED]
 - [[InjectionAction]] - `uses` [INFERRED]
-- [[MCPProxy]] - `references` [EXTRACTED]
+- [[MCPProxy_1]] - `references` [EXTRACTED]
 - [[Main security pipeline that all messages pass through.      Wires together Prom]] - `rationale_for` [EXTRACTED]
-- [[PIISanitizer_1]] - `uses` [INFERRED]
-- [[PIISanitizer_2]] - `conceptually_related_to` [AMBIGUOUS]
-- [[Path_14]] - `uses` [INFERRED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
+- [[PIISanitizer_1]] - `conceptually_related_to` [AMBIGUOUS]
+- [[Path_31]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
 - [[SidecarScanner]] - `calls` [EXTRACTED]
 - [[SlackAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestAuditChain_1]] - `uses` [INFERRED]
@@ -108,7 +108,7 @@ tags:
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder]] - `uses` [INFERRED]
+- [[_StubForwarder_2]] - `uses` [INFERRED]
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
 - [[_make_integrity_pipeline()]] - `calls` [EXTRACTED]
 - [[_make_pipeline()_3]] - `calls` [EXTRACTED]
@@ -125,13 +125,13 @@ tags:
 - [[forward_content_stream()]] - `calls` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[main.py]] - `references` [EXTRACTED]
+- [[main.py_1]] - `references` [EXTRACTED]
+- [[pipeline()_1]] - `calls` [EXTRACTED]
 - [[pipeline()_2]] - `calls` [EXTRACTED]
-- [[pipeline()]] - `calls` [EXTRACTED]
-- [[pipeline.py_1]] - `contains` [EXTRACTED]
+- [[pipeline.py]] - `contains` [EXTRACTED]
 - [[run()_4]] - `calls` [EXTRACTED]
-- [[run_canary()]] - `references` [EXTRACTED]
-- [[run_canary()_1]] - `calls` [INFERRED]
+- [[run_canary()_1]] - `references` [EXTRACTED]
+- [[run_canary()]] - `calls` [INFERRED]
 - [[run_chain()]] - `references` [EXTRACTED]
 - [[run_quick()]] - `references` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
@@ -154,4 +154,4 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

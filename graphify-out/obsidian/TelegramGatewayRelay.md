@@ -12,7 +12,7 @@ tags:
 # TelegramGatewayRelay
 
 ## Connections
-- [[dot-__init__()_200]] - `method` [EXTRACTED]
+- [[dot-__init__()_194]] - `method` [EXTRACTED]
 - [[dot-send_message()]] - `method` [EXTRACTED]
 - [[dot-send_status_update()]] - `method` [EXTRACTED]
 - [[Relay Telegram messages through the gateway control plane.      This enables con]] - `rationale_for` [EXTRACTED]

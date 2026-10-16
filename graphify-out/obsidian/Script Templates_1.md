@@ -12,6 +12,6 @@ tags:
 # Script Templates
 
 ## Connections
-- [[Deliverables_1]] - `contains` [EXTRACTED]
+- [[Deliverables_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

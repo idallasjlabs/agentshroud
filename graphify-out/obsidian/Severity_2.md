@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/soc/event_adapter.py"
-type: "code"
-community: "test_soc_bots.py"
-location: "L23"
+source_file: "docs/planning/redteam/06-outbound-info-filter.md"
+type: "document"
+community: "Implement gateway-level outbound information filtering module"
+location: "L3"
 tags:
-  - graphify/code
-  - graphify/INFERRED
-  - community/test_soc_botspy
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Implement_gateway-level_outbound_information_filtering_module
 ---
 
 # Severity
 
 ## Connections
-- [[SecurityEvent_1]] - `uses` [INFERRED]
-- [[Severity_1]] - `uses` [INFERRED]
-- [[_map_severity()]] - `references` [EXTRACTED]
+- [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_soc_botspy
+#graphify/document #graphify/EXTRACTED #community/Implement_gateway-level_outbound_information_filtering_module

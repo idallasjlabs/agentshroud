@@ -1,22 +1,18 @@
 ---
-source_file: "gateway/proxy/http_proxy.py"
+source_file: "docker/bots/hermes/docker_proxy_relay.py"
 type: "code"
-community: "._process_connect"
-location: "L174"
+community: "dashboard_bridge.py"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_process_connect
+  - community/dashboard_bridgepy
 ---
 
 # StreamReader
 
 ## Connections
-- [[dot-_handle_client()]] - `references` [EXTRACTED]
-- [[dot-_process_connect()]] - `references` [EXTRACTED]
-- [[dot-_relay()]] - `references` [EXTRACTED]
-- [[dot-_relay_and_scan()]] - `references` [EXTRACTED]
-- [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig_1]] - `uses` [INFERRED]
+- [[_handle()_1]] - `references` [EXTRACTED]
+- [[_pump()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_process_connect
+#graphify/code #graphify/EXTRACTED #community/dashboard_bridgepy

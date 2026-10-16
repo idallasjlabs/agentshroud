@@ -12,6 +12,6 @@ tags:
 # TelegramAPIProxy._filter_inbound_updates(response_data)
 
 ## Connections
-- [[Function Details_26]] - `contains` [EXTRACTED]
+- [[Function Details_25]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/telegram_proxypy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "RBACConfig"
+community: "AgentShroud macOS App Icon (1024x1024, Rounded Squircle)"
 location: "1"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBACConfig
+  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle
 ---
 
 # Test Group Config
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_group_isolation.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/RBACConfig
+#graphify/code #graphify/INFERRED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle

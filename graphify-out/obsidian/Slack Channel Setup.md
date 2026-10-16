@@ -12,7 +12,7 @@ tags:
 # Slack Channel Setup
 
 ## Connections
-- [[Architecture_4]] - `contains` [EXTRACTED]
+- [[Architecture_5]] - `contains` [EXTRACTED]
 - [[Collaborators]] - `contains` [EXTRACTED]
 - [[Sending Messages to the Bot]] - `contains` [EXTRACTED]
 - [[Step 10 Verify]] - `contains` [EXTRACTED]

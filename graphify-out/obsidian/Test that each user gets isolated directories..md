@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "UserSessionManager"
+community: "TestFabricatedSecurityNotice"
 location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/TestFabricatedSecurityNotice
 ---
 
 # Test that each user gets isolated directories.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_session_isolation_directories()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager
+#graphify/rationale #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

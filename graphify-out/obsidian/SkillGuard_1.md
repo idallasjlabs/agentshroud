@@ -12,14 +12,14 @@ tags:
 # SkillGuard
 
 ## Connections
-- [[dot-__init__()_92]] - `method` [EXTRACTED]
+- [[dot-__init__()_62]] - `method` [EXTRACTED]
 - [[dot-_line_at()]] - `method` [EXTRACTED]
 - [[dot-_scan_opaque_blobs()]] - `method` [EXTRACTED]
 - [[dot-scan_file()]] - `method` [EXTRACTED]
 - [[dot-scan_skill_tree()]] - `method` [EXTRACTED]
 - [[CompletedProcess_3]] - `uses` [INFERRED]
-- [[Path_24]] - `uses` [INFERRED]
-- [[Path_26]] - `uses` [INFERRED]
+- [[Path_17]] - `uses` [INFERRED]
+- [[Path_23]] - `uses` [INFERRED]
 - [[Scan skill  MCP  agent-definition payloads for supply-chain risk.      Usage]] - `rationale_for` [EXTRACTED]
 - [[ScanResult_1]] - `uses` [INFERRED]
 - [[ScanResult_2]] - `uses` [INFERRED]

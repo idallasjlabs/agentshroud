@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "rationale"
-community: "Request"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Request
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Test request logging middleware
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_log_requests_middleware()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Request
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

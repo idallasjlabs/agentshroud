@@ -12,6 +12,6 @@ tags:
 # Set optional event bus for real-time egress telemetry.
 
 ## Connections
-- [[dot-set_event_bus()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-set_event_bus()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

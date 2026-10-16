@@ -1,18 +1,22 @@
 ---
-source_file: "docker/bots/hermes/dashboard_bridge.py"
+source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "dashboard_bridge.py"
-location: "L89"
+community: "._process_connect"
+location: "L174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/dashboard_bridgepy
+  - community/_process_connect
 ---
 
 # StreamWriter
 
 ## Connections
-- [[_handle()]] - `references` [EXTRACTED]
-- [[_pipe()]] - `references` [EXTRACTED]
+- [[dot-_handle_client()]] - `references` [EXTRACTED]
+- [[dot-_process_connect()]] - `references` [EXTRACTED]
+- [[dot-_relay()]] - `references` [EXTRACTED]
+- [[dot-_relay_and_scan()]] - `references` [EXTRACTED]
+- [[WebProxy]] - `uses` [INFERRED]
+- [[WebProxyConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/dashboard_bridgepy
+#graphify/code #graphify/EXTRACTED #community/_process_connect

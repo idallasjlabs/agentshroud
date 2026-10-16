@@ -1,21 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ti/README.md"
+source_file: "docker/config/hermes/skills/i-ti/README.md"
 type: "document"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "Technical Illustrator (i-ti)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/Technical_Illustrator_i-ti
 ---
 
 # Technical Illustrator (TI)
 
 ## Connections
-- [[Purpose_175]] - `contains` [EXTRACTED]
-- [[Related Skills_114]] - `contains` [EXTRACTED]
+- [[Purpose_174]] - `contains` [EXTRACTED]
+- [[Related Skills_113]] - `contains` [EXTRACTED]
 - [[Usage_123]] - `contains` [EXTRACTED]
-- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[openclawskillsi-tiREADME]] - `contains` [EXTRACTED]
+- [[hermesskillsi-tiREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_i-ti

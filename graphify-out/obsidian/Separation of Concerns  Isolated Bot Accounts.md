@@ -1,17 +1,17 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "rationale"
-community: "agentshroud-ieee-paper.md"
+community: "WebProxyConfig"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/agentshroud-ieee-papermd
+  - community/WebProxyConfig
 ---
 
 # Separation of Concerns / Isolated Bot Accounts
 
 ## Connections
 - [[Credential Isolation Architecture]] - `semantically_similar_to` [INFERRED]
-- [[PREREQUISITES_16]] - `references` [EXTRACTED]
+- [[PREREQUISITES_15]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/agentshroud-ieee-papermd
+#graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig

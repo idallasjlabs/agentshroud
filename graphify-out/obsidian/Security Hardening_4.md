@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/RELEASE-PLAN.md"
+source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "v1.3.0 — Platform Expansion (53 items)"
-location: "L417"
+community: "AgentShroud Incident Response Plan"
+location: "L475"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/v130__Platform_Expansion_53_items
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Security Hardening
 
 ## Connections
-- [[v1.3.0 — Platform Expansion (53 items)]] - `contains` [EXTRACTED]
+- [[Production Hardening]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/v130__Platform_Expansion_53_items
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

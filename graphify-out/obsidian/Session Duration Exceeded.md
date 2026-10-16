@@ -12,6 +12,6 @@ tags:
 # Session Duration Exceeded
 
 ## Connections
-- [[SSH Proxy Errors]] - `contains` [EXTRACTED]
+- [[SSH Proxy Errors_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Error_Indexmd

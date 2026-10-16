@@ -12,6 +12,6 @@ tags:
 # Stop the MCP server process.
 
 ## Connections
-- [[dot-stop()_11]] - `rationale_for` [EXTRACTED]
+- [[dot-stop()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/StdioConnection

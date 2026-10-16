@@ -12,7 +12,7 @@ tags:
 # SharedMemoryManager
 
 ## Connections
-- [[dot-__init__()_79]] - `method` [EXTRACTED]
+- [[dot-__init__()_188]] - `method` [EXTRACTED]
 - [[dot-_is_authorized_group_writer()]] - `method` [EXTRACTED]
 - [[dot-_strip_private_content()]] - `method` [EXTRACTED]
 - [[dot-append_to_group_memory()]] - `method` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[GroupAccessDenied]] - `uses` [INFERRED]
 - [[GroupWorkspaceManager]] - `uses` [INFERRED]
 - [[High-level shared-memory API wrapping UserSessionManager storage.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[TestAgentRegistryGroupIdentity]] - `uses` [INFERRED]
 - [[TestAuthorizationHelper]] - `uses` [INFERRED]
 - [[TestConfigGate]] - `uses` [INFERRED]
@@ -50,8 +50,8 @@ tags:
 - [[get_group_memory()]] - `calls` [EXTRACTED]
 - [[group_workspace.py]] - `imports` [EXTRACTED]
 - [[shared_memory()]] - `calls` [EXTRACTED]
-- [[shared_memory()_1]] - `calls` [EXTRACTED]
 - [[shared_memory()_2]] - `calls` [EXTRACTED]
+- [[shared_memory()_1]] - `calls` [EXTRACTED]
 - [[shared_memory.py]] - `contains` [EXTRACTED]
 - [[smm()_1]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]

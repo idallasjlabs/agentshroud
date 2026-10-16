@@ -16,7 +16,7 @@ tags:
 - [[dot-extract()_1]] - `calls` [EXTRACTED]
 - [[dot-fill_field()_1]] - `calls` [EXTRACTED]
 - [[dot-navigate()_1]] - `calls` [EXTRACTED]
-- [[Exception_1]] - `inherits` [EXTRACTED]
+- [[Exception_2]] - `inherits` [EXTRACTED]
 - [[Raised when security policy is violated_1]] - `rationale_for` [EXTRACTED]
 - [[hermesskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
 

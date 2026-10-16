@@ -12,6 +12,6 @@ tags:
 # TelegramAPIProxy.get_stats()
 
 ## Connections
-- [[Function Details_26]] - `contains` [EXTRACTED]
+- [[Function Details_25]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/telegram_proxypy

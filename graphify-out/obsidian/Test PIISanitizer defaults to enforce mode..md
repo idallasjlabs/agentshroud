@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "rationale"
-community: "PIIConfig"
+community: "MiddlewareManager"
 location: "L136"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/MiddlewareManager
 ---
 
 # Test PIISanitizer defaults to enforce mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_pii_sanitizer_default_enforcement()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

@@ -12,6 +12,6 @@ tags:
 # Step 2: Add Command Restrictions
 
 ## Connections
-- [[Implementation Status]] - `contains` [EXTRACTED]
+- [[Implementation Status_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Implementation_Status

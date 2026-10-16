@@ -40,7 +40,7 @@ tags:
 - [[TestSupplyChain]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
-- [[session_security.py_2]] - `contains` [EXTRACTED]
+- [[session_security.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/AlertDispatcher

@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-_blocking_prompt_guard()]] - `calls` [EXTRACTED]
-- [[dot-scan()_3]] - `references` [EXTRACTED]
-- [[dot-scan_tool_result()_3]] - `references` [EXTRACTED]
+- [[dot-scan()_2]] - `references` [EXTRACTED]
+- [[dot-scan_tool_result()_2]] - `references` [EXTRACTED]
 - [[TestAuditChain_1]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestContextGuardInPipeline]] - `uses` [INFERRED]
@@ -27,7 +27,7 @@ tags:
 - [[TestTrustViolationRecording]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
-- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
+- [[prompt_guard.py]] - `contains` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/AuditChain

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "agentshroud-blueteam/SKILL.md"
+community: "Phase 1 — Raw Collection"
 location: "L176"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/Phase_1__Raw_Collection
 ---
 
 # Scan text for protected content and return redacted version.          Args:
 
 ## Connections
-- [[dot-scan_response()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-scan_response()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/rationale #graphify/EXTRACTED #community/Phase_1__Raw_Collection

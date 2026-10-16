@@ -12,6 +12,6 @@ tags:
 # Test proper initialization of ToolChainAnalyzer.
 
 ## Connections
-- [[dot-test_initialization()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-test_initialization()_5]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer

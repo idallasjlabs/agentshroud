@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "EgressFilterConfig"
+community: "TestSSRFDetection"
 location: "L278"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/TestSSRFDetection
 ---
 
 # Serve the SSH hosts page.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ssh()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection

@@ -12,6 +12,6 @@ tags:
 # Stop background monitoring task cleanly.
 
 ## Connections
-- [[dot-stop()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-stop()_6]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

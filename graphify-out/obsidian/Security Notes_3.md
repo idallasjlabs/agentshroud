@@ -1,17 +1,17 @@
 ---
-source_file: "docker/scripts/README.md"
+source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "OpenClaw Management Scripts"
-location: "L306"
+community: "API Keys Setup Guide"
+location: "L246"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Management_Scripts
+  - community/API_Keys_Setup_Guide
 ---
 
 # Security Notes
 
 ## Connections
-- [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
+- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts
+#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

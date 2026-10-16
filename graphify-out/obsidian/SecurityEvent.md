@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "test_soc_bots.py"
+community: "SlackAPIProxy"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/SlackAPIProxy
 ---
 
 # SecurityEvent
 
 ## Connections
 - [[SecurityEvent_1]] - `uses` [INFERRED]
-- [[Severity_1]] - `uses` [INFERRED]
+- [[Severity]] - `uses` [INFERRED]
 - [[collect_recent_events()]] - `references` [EXTRACTED]
 - [[from_anomaly_alert()]] - `references` [EXTRACTED]
 - [[from_audit_chain_entry()]] - `references` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[from_egress_attempt()]] - `references` [EXTRACTED]
 - [[from_pipeline_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy

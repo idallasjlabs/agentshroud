@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Config_1]] - `contains` [EXTRACTED]
 - [[Model + keys]] - `contains` [EXTRACTED]
-- [[Quick start_6]] - `contains` [EXTRACTED]
+- [[Quick start_7]] - `contains` [EXTRACTED]
 - [[Useful flags]] - `contains` [EXTRACTED]
 - [[When to use (trigger phrases)]] - `contains` [EXTRACTED]
 - [[YouTube summary vs transcript]] - `contains` [EXTRACTED]

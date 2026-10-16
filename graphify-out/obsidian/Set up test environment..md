@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "Action"
+community: "MiddlewareManager"
 location: "L129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Action
+  - community/MiddlewareManager
 ---
 
 # Set up test environment.
 
 ## Connections
-- [[dot-setup_method()_12]] - `rationale_for` [EXTRACTED]
-- [[dot-setup_method()_11]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_14]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_13]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Action
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

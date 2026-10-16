@@ -20,7 +20,7 @@ tags:
 - [[_run_stream (StreamHead test harness)]] - `uses` [INFERRED]
 - [[_stream()]] - `calls` [EXTRACTED]
 - [[llm_api_proxy (v1{path} LLM reverse proxy route)]] - `shares_data_with` [EXTRACTED]
-- [[llm_proxy.py_2]] - `contains` [EXTRACTED]
+- [[llm_proxy.py]] - `contains` [EXTRACTED]
 - [[test_llm_proxy.py]] - `imports` [EXTRACTED]
 - [[test_main_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_streaming_cloud_non_quota_400_also_propagates]] - `uses` [INFERRED]

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "EgressFilterConfig"
+community: "TestSSRFDetection"
 location: "L244"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/TestSSRFDetection
 ---
 
 # Serve the audit log page.
 
 ## Connections
-- [[audit()_1]] - `rationale_for` [EXTRACTED]
+- [[audit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection

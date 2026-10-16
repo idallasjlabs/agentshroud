@@ -18,7 +18,7 @@ tags:
 - [[Brand System Components]] - `contains` [EXTRACTED]
 - [[Core Discipline Audit → Define → Apply → Enforce]] - `contains` [EXTRACTED]
 - [[Patterns by Output Type]] - `contains` [EXTRACTED]
-- [[Role_49]] - `contains` [EXTRACTED]
+- [[Role_48]] - `contains` [EXTRACTED]
 - [[Rules_17]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements

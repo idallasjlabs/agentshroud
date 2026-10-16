@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: ".process_tool_call"
+community: "MCPInspector"
 location: "L166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/process_tool_call
+  - community/MCPInspector
 ---
 
 # Send an HTTP request to the MCP server.
 
 ## Connections
-- [[dot-send_request()]] - `rationale_for` [EXTRACTED]
+- [[dot-send_request()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/process_tool_call
+#graphify/rationale #graphify/EXTRACTED #community/MCPInspector

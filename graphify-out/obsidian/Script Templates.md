@@ -12,6 +12,6 @@ tags:
 # Script Templates
 
 ## Connections
-- [[Deliverables]] - `contains` [EXTRACTED]
+- [[Deliverables_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Deliverables

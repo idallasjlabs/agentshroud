@@ -16,6 +16,6 @@ tags:
 - [[Path Permissions]] - `contains` [EXTRACTED]
 - [[Tool Approval]] - `contains` [EXTRACTED]
 - [[Trusted Folders]] - `contains` [EXTRACTED]
-- [[URL Access Control_1]] - `contains` [EXTRACTED]
+- [[URL Access Control]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide

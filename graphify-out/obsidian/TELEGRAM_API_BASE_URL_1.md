@@ -12,12 +12,12 @@ tags:
 # TELEGRAM_API_BASE_URL
 
 ## Connections
-- [[Description_11]] - `contains` [EXTRACTED]
-- [[Effect_1]] - `contains` [EXTRACTED]
-- [[Related Notes_60]] - `contains` [EXTRACTED]
-- [[SDK Patch_1]] - `contains` [EXTRACTED]
-- [[Set In_5]] - `contains` [EXTRACTED]
+- [[Description_7]] - `contains` [EXTRACTED]
+- [[Effect]] - `contains` [EXTRACTED]
+- [[Related Notes_43]] - `contains` [EXTRACTED]
+- [[SDK Patch]] - `contains` [EXTRACTED]
+- [[Set In_3]] - `contains` [EXTRACTED]
 - [[TELEGRAM_API_BASE_URL]] - `contains` [EXTRACTED]
-- [[Value_5]] - `contains` [EXTRACTED]
+- [[Value_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/telegram_proxypy

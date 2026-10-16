@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "AlertDispatcher"
+community: "TrustConfig"
 location: "L34"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher
+  - community/TrustConfig
 ---
 
 # SubagentEvent
 
 ## Connections
 - [[dot-_log_event()]] - `calls` [EXTRACTED]
-- [[dot-get_audit_log()]] - `references` [EXTRACTED]
+- [[dot-get_audit_log()_6]] - `references` [EXTRACTED]
 - [[dot-get_flagged_events()]] - `references` [EXTRACTED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
@@ -30,4 +30,4 @@ tags:
 - [[subagent_monitor.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher
+#graphify/code #graphify/INFERRED #community/TrustConfig

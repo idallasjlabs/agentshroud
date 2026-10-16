@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "rationale"
-community: "MiddlewareManager"
-location: "L36"
+community: "KillSwitchMonitor"
+location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/KillSwitchMonitor
 ---
 
 # Test default configuration values.
 
 ## Connections
-- [[dot-test_default_config()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_config()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

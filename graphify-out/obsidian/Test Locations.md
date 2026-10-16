@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/03 - Configuration/pytest.ini.md"
 type: "document"
-community: "pytest.ini"
+community: "All Dependencies.md"
 location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pytestini
+  - community/All_Dependenciesmd
 ---
 
 # Test Locations
 
 ## Connections
-- [[pytest.ini]] - `contains` [EXTRACTED]
+- [[pytest.ini_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pytestini
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

@@ -12,11 +12,11 @@ tags:
 # ServicePrivacy
 
 ## Connections
-- [[dot-from_dict()_5]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_9]] - `calls` [EXTRACTED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
 - [[Privacy classification for a service.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[TestAuditAndAlert]] - `uses` [INFERRED]
 - [[TestPrivacyPolicyParsing]] - `uses` [INFERRED]
 - [[TestResponseFiltering]] - `uses` [INFERRED]

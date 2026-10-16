@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "RBACConfig"
+community: "telegram_proxy.py"
 location: "L91"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBACConfig
+  - community/telegram_proxypy
 ---
 
 # TeamsConfig
@@ -19,18 +19,18 @@ tags:
 - [[dot-get_user_collab_mode()]] - `method` [EXTRACTED]
 - [[dot-get_user_groups()]] - `method` [EXTRACTED]
 - [[dot-get_user_projects()]] - `method` [EXTRACTED]
-- [[dot-is_group_admin()]] - `method` [EXTRACTED]
-- [[dot-model_post_init()]] - `method` [EXTRACTED]
+- [[dot-is_group_admin()_1]] - `method` [EXTRACTED]
+- [[dot-model_post_init()_1]] - `method` [EXTRACTED]
 - [[dot-test_group_keyed_by_raw_chat_id()]] - `calls` [EXTRACTED]
-- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[Group]] - `uses` [INFERRED]
 - [[GroupAccessDenied]] - `uses` [INFERRED]
 - [[GroupRegistry]] - `uses` [INFERRED]
 - [[GroupWorkspaceManager]] - `uses` [INFERRED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
-- [[Role_22]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[Role_21]] - `uses` [INFERRED]
 - [[TeamsConfig]] - `uses` [INFERRED]
 - [[TeamsConfig_1]] - `uses` [INFERRED]
 - [[TestAdminAccess]] - `uses` [INFERRED]
@@ -86,23 +86,23 @@ tags:
 - [[TestUserPrivateMemory]] - `uses` [INFERRED]
 - [[TestViewerAccess]] - `uses` [INFERRED]
 - [[TestWriteFailurePath]] - `uses` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 - [[Top-level teams configuration parsed from agentshroud.yaml `teams` section.]] - `rationale_for` [EXTRACTED]
 - [[WorkspaceContext]] - `uses` [INFERRED]
 - [[_apply_persisted_overrides()]] - `references` [EXTRACTED]
-- [[_make_rbac()]] - `calls` [EXTRACTED]
+- [[_make_rbac()_1]] - `calls` [EXTRACTED]
 - [[collaborator_responses.py]] - `imports` [EXTRACTED]
 - [[group_config.py]] - `contains` [EXTRACTED]
 - [[group_workspace.py]] - `imports` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `imports` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
+- [[rbac()_2]] - `calls` [EXTRACTED]
 - [[rbac()_4]] - `calls` [EXTRACTED]
-- [[rbac()_5]] - `calls` [EXTRACTED]
 - [[rbac_config.py]] - `imports` [EXTRACTED]
-- [[teams()_4]] - `calls` [EXTRACTED]
-- [[teams()_1]] - `calls` [EXTRACTED]
 - [[teams()_2]] - `calls` [EXTRACTED]
 - [[teams()_3]] - `calls` [EXTRACTED]
+- [[teams()_1]] - `calls` [EXTRACTED]
+- [[teams()_4]] - `calls` [EXTRACTED]
 - [[test_collaborator_responses.py]] - `references` [EXTRACTED]
 - [[test_group_config.py]] - `imports` [EXTRACTED]
 - [[test_group_isolation.py]] - `imports` [EXTRACTED]
@@ -113,4 +113,4 @@ tags:
 - [[test_shared_memory_write_acl.py]] - `imports` [EXTRACTED]
 - [[test_tool_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBACConfig
+#graphify/code #graphify/INFERRED #community/telegram_proxypy

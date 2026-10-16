@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_outbound_filter.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "rationale"
-community: "TestOutboundInfoFilter"
-location: "L23"
+community: "ProxyAction"
+location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/ProxyAction
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[dot-setup_method()_20]] - `rationale_for` [EXTRACTED]
+- [[dot-setUp()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/rationale #graphify/EXTRACTED #community/ProxyAction

@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[AgentShroud Data Dictionary]] - `contains` [EXTRACTED]
 - [[ApprovalRequest_2]] - `contains` [EXTRACTED]
-- [[TrustLevel_3]] - `contains` [EXTRACTED]
+- [[TrustLevel]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Dictionary

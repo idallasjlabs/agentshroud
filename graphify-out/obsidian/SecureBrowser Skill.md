@@ -13,19 +13,19 @@ tags:
 
 ## Connections
 - [[CLI Reference]] - `contains` [EXTRACTED]
-- [[Configuration_19]] - `contains` [EXTRACTED]
-- [[Integration_2]] - `contains` [EXTRACTED]
+- [[Configuration_20]] - `contains` [EXTRACTED]
+- [[Integration_1]] - `contains` [EXTRACTED]
 - [[Key Features_1]] - `contains` [EXTRACTED]
 - [[License_2]] - `contains` [EXTRACTED]
-- [[Limitations_4]] - `contains` [EXTRACTED]
-- [[Overview_17]] - `contains` [EXTRACTED]
+- [[Limitations_3]] - `contains` [EXTRACTED]
+- [[Overview_11]] - `contains` [EXTRACTED]
 - [[Publishing to ClawHub]] - `contains` [EXTRACTED]
-- [[Quick Start_7]] - `contains` [EXTRACTED]
-- [[Security Guarantees_4]] - `contains` [EXTRACTED]
+- [[Quick Start_6]] - `contains` [EXTRACTED]
+- [[Security Guarantees_3]] - `contains` [EXTRACTED]
 - [[Security Model]] - `contains` [EXTRACTED]
 - [[Support]] - `contains` [EXTRACTED]
-- [[Troubleshooting_2]] - `contains` [EXTRACTED]
-- [[Usage Examples]] - `contains` [EXTRACTED]
+- [[Troubleshooting_3]] - `contains` [EXTRACTED]
+- [[Usage Examples_1]] - `contains` [EXTRACTED]
 - [[securebrowserREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill
