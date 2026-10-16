@@ -23,7 +23,7 @@ tags:
 - [[TestKeyScoping]] - `contains` [EXTRACTED]
 - [[TestKeyStorage]] - `contains` [EXTRACTED]
 - [[TestKeyVaultConfig]] - `contains` [EXTRACTED]
-- [[config()_3]] - `contains` [EXTRACTED]
+- [[config()_2]] - `contains` [EXTRACTED]
 - [[vault()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/KeyVault

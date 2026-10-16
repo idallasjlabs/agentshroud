@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[SSE keepalive comments (' ...') and blank lines are ignored, not     treated as]] - `rationale_for` [EXTRACTED]
 - [[_call_agent_stream()]] - `calls` [EXTRACTED]
-- [[_sse_body()]] - `calls` [EXTRACTED]
+- [[_sse_body()_1]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy

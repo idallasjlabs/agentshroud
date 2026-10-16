@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Re-read ``~.llm_settings`` and sync skillsagentsMCP into both bot configs.]] - `rationale_for` [EXTRACTED]
 - [[_skills_reload_impl()]] - `calls` [EXTRACTED]
-- [[api.py_2]] - `contains` [EXTRACTED]
+- [[api.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy

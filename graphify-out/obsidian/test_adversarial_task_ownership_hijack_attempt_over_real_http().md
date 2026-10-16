@@ -12,10 +12,10 @@ tags:
 # test_adversarial_task_ownership_hijack_attempt_over_real_http()
 
 ## Connections
-- [[A2APolicyEngine_1]] - `calls` [EXTRACTED]
-- [[A2AProxy]] - `calls` [EXTRACTED]
+- [[A2APolicyEngine_3]] - `calls` [EXTRACTED]
+- [[A2AProxy_1]] - `calls` [EXTRACTED]
 - [[HermesA2AForwarder]] - `calls` [EXTRACTED]
-- [[_jsonrpc()]] - `calls` [EXTRACTED]
+- [[_jsonrpc()_1]] - `calls` [EXTRACTED]
 - [[alice legitimately creates a task; bob (a distinct, also-allowlisted     peer) a]] - `rationale_for` [EXTRACTED]
 - [[test_a2a_integration.py]] - `contains` [EXTRACTED]
 

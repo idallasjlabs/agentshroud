@@ -12,6 +12,8 @@ tags:
 # test_is_connect_error_classification()
 
 ## Connections
+- [[dot-_is_connect_error()]] - `calls` [EXTRACTED]
+- [[LLMProxy]] - `uses` [INFERRED]
 - [[_is_connect_error matches connection-level failures only.]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 

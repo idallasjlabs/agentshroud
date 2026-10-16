@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Decision_2]] - `imports` [EXTRACTED]
 - [[EgressAction]] - `imports` [EXTRACTED]
-- [[EgressFilter_2]] - `imports` [EXTRACTED]
+- [[EgressFilter_1]] - `imports` [EXTRACTED]
 - [[ModuleStatsCollector]] - `imports` [EXTRACTED]
 - [[TestEgressWiringEndToEnd]] - `contains` [EXTRACTED]
 - [[TestEnforcementWiring]] - `contains` [EXTRACTED]

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "DataLedger"
+community: "ApprovalQueueConfig"
 location: "L173"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/ApprovalQueueConfig
 ---
 
 # sanitizer()
 
 ## Connections
 - [[Create a PIISanitizer instance for testing]] - `rationale_for` [EXTRACTED]
-- [[GatewayConfig_1]] - `references` [EXTRACTED]
+- [[GatewayConfig_2]] - `references` [EXTRACTED]
 - [[PIISanitizer_3]] - `references` [EXTRACTED]
 - [[conftest.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataLedger
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

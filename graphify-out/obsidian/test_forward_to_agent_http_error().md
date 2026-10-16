@@ -12,7 +12,7 @@ tags:
 # test_forward_to_agent_http_error()
 
 ## Connections
-- [[AgentTarget]] - `calls` [EXTRACTED]
+- [[AgentTarget_1]] - `calls` [EXTRACTED]
 - [[Test forwarding handles HTTP error responses]] - `rationale_for` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 

@@ -15,7 +15,7 @@ tags:
 - [[_bounce()]] - `calls` [EXTRACTED]
 - [[_hc()]] - `calls` [EXTRACTED]
 - [[_mk()]] - `calls` [EXTRACTED]
-- [[check()_9]] - `calls` [EXTRACTED]
+- [[check()_7]] - `calls` [EXTRACTED]
 - [[hc_run()]] - `calls` [EXTRACTED]
 - [[test_colima_and_sdk_patch_fallback_resolution.sh]] - `contains` [EXTRACTED]
 

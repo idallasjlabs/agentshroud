@@ -17,7 +17,7 @@ tags:
 - [[TestPKCE]] - `contains` [EXTRACTED]
 - [[TestRedirectURI]] - `contains` [EXTRACTED]
 - [[TestStateValidation]] - `contains` [EXTRACTED]
-- [[oauth_security.py_2]] - `references` [EXTRACTED]
+- [[oauth_security.py]] - `references` [EXTRACTED]
 - [[validator()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator

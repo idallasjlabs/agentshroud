@@ -12,7 +12,7 @@ tags:
 # test_prompt_injection_blocked()
 
 ## Connections
-- [[dot-process_inbound()_10]] - `calls` [EXTRACTED]
+- [[dot-process_inbound()_3]] - `calls` [EXTRACTED]
 - [[Send prompt injection — verify blocked, not forwarded.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 

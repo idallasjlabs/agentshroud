@@ -1,12 +1,12 @@
 ---
 source_file: ".pre-commit-config.yaml"
 type: "rationale"
-community: "The run is judged on state change, not steps completed"
+community: "docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)"
 location: "6"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/The_run_is_judged_on_state_change_not_steps_completed
+  - community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
 ---
 
 # pre-commit as single owner of .git/hooks/pre-commit
@@ -16,4 +16,4 @@ tags:
 - [[pre-commit detect-secrets hook (v1.5.0, .secrets.baseline)]] - `rationale_for` [EXTRACTED]
 - [[pre-commit git-secrets local hook (AWS credential patterns)]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/The_run_is_judged_on_state_change_not_steps_completed
+#graphify/rationale #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ProxyDashboard]] - `contains` [EXTRACTED]
 - [[ProxyStatusReport]] - `contains` [EXTRACTED]
-- [[api.py_2]] - `calls` [EXTRACTED]
-- [[health_report.py]] - `references` [EXTRACTED]
+- [[api.py]] - `calls` [EXTRACTED]
+- [[health_report.py_2]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ProxyDashboard

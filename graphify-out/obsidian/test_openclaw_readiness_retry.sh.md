@@ -12,7 +12,7 @@ tags:
 # test_openclaw_readiness_retry.sh
 
 ## Connections
-- [[check()_2]] - `defines` [EXTRACTED]
+- [[check()_1]] - `defines` [EXTRACTED]
 - [[smoke.sh Startup Smoke Runner]] - `calls` [EXTRACTED]
 - [[test_openclaw_readiness_retry.sh script]] - `contains` [EXTRACTED]
 

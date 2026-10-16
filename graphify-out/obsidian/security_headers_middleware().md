@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[Add security headers to all responses (defense-in-depth). Also catches Python…]] - `rationale_for` [EXTRACTED]
-- [[Request_1]] - `references` [EXTRACTED]
-- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `contains` [EXTRACTED]
+- [[Request]] - `references` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[middleware]] - `references` [EXTRACTED]
 - [[test_main_simple.py]] - `imports` [EXTRACTED]
 - [[test_security_headers_middleware_catches_exception_group()]] - `calls` [EXTRACTED]

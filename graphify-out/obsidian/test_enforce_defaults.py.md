@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[PIIConfig_2]] - `imports` [EXTRACTED]
 - [[PIISanitizer_2]] - `imports` [EXTRACTED]
-- [[SecurityConfig_4]] - `imports` [EXTRACTED]
+- [[SecurityConfig]] - `imports` [EXTRACTED]
 - [[SecurityModuleConfig]] - `imports` [EXTRACTED]
 - [[TestEnforceDefaults]] - `contains` [EXTRACTED]
 - [[TestModuleEnforcement]] - `contains` [EXTRACTED]

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_acl.py"
+source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "Role"
-location: "L41"
+community: "PrivacyPolicyEnforcer"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Role
+  - community/PrivacyPolicyEnforcer
 ---
 
 # rbac()
 
 ## Connections
 - [[_make_rbac()_1]] - `calls` [EXTRACTED]
-- [[test_tool_acl.py]] - `contains` [EXTRACTED]
+- [[test_privacy_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Role
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

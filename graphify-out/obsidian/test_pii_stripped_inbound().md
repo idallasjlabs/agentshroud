@@ -12,7 +12,7 @@ tags:
 # test_pii_stripped_inbound()
 
 ## Connections
-- [[dot-process_inbound()_10]] - `calls` [EXTRACTED]
+- [[dot-process_inbound()_3]] - `calls` [EXTRACTED]
 - [[Send message with SSN — verify it's redacted before forwarding.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 

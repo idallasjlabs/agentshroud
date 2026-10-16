@@ -12,12 +12,12 @@ tags:
 # test_mfa_guard.py
 
 ## Connections
-- [[ApprovalQueue_1]] - `imports` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_5]] - `imports` [EXTRACTED]
+- [[ApprovalQueue]] - `imports` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_4]] - `imports` [EXTRACTED]
 - [[ApprovalStore]] - `imports` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `imports` [EXTRACTED]
-- [[MFAGuard_2]] - `imports` [EXTRACTED]
+- [[EnhancedApprovalQueue_2]] - `imports` [EXTRACTED]
+- [[MFAGuard_1]] - `imports` [EXTRACTED]
 - [[MFAResult]] - `imports` [EXTRACTED]
 - [[ToolRiskConfig]] - `imports` [EXTRACTED]
 - [[_queue()]] - `contains` [EXTRACTED]

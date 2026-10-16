@@ -12,7 +12,7 @@ tags:
 # phase_scan()
 
 ## Connections
-- [[log()]] - `calls` [EXTRACTED]
+- [[log()_8]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 - [[sunday-upgrade-apply.sh main flow]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]

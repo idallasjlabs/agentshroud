@@ -12,7 +12,7 @@ tags:
 # test_prune_used_drops_stale_entries()
 
 ## Connections
-- [[MFAGuard_2]] - `calls` [EXTRACTED]
+- [[MFAGuard_1]] - `calls` [EXTRACTED]
 - [[_ref_totp()]] - `calls` [EXTRACTED]
 - [[test_mfa_guard.py]] - `contains` [EXTRACTED]
 

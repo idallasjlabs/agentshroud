@@ -12,7 +12,7 @@ tags:
 # test_pipeline_processing_time()
 
 ## Connections
-- [[dot-process_inbound()_10]] - `calls` [EXTRACTED]
+- [[dot-process_inbound()_3]] - `calls` [EXTRACTED]
 - [[Verify processing time is tracked.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 

@@ -20,14 +20,14 @@ tags:
 - [[freertosFreeRTOS.h stub (wakeword PTT test)]] - `references` [EXTRACTED]
 - [[freertostask.h stub (wakeword PTT test)]] - `references` [EXTRACTED]
 - [[iot_button.h stub (wakeword PTT test)]] - `references` [EXTRACTED]
-- [[main()_12]] - `contains` [EXTRACTED]
+- [[main()_14]] - `contains` [EXTRACTED]
 - [[test_clear_allows_fresh_tap()]] - `contains` [EXTRACTED]
 - [[test_ptt_finish_ends_listening()]] - `contains` [EXTRACTED]
 - [[test_ptt_finish_noop_when_idle()]] - `contains` [EXTRACTED]
 - [[test_push_frame_suppressed_while_triggered()]] - `contains` [EXTRACTED]
 - [[test_tap_in_idle_starts_listen()]] - `contains` [EXTRACTED]
 - [[test_vad_timeout_fires_without_audio()]] - `contains` [EXTRACTED]
-- [[vt_agent_count()]] - `contains` [EXTRACTED]
-- [[vt_remote_log()]] - `contains` [EXTRACTED]
+- [[vt_agent_count()_1]] - `contains` [EXTRACTED]
+- [[vt_remote_log()_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_ptt_statec

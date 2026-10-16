@@ -12,8 +12,8 @@ tags:
 # test_persist_pending_store_writes_atomically()
 
 ## Connections
-- [[ApprovalQueue_1]] - `calls` [EXTRACTED]
-- [[ApprovalRequest_5]] - `calls` [EXTRACTED]
+- [[ApprovalQueue]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_4]] - `calls` [EXTRACTED]
 - [[SCRUM-110 writes go through a temp file + os.replace so a crash     mid-write c]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 

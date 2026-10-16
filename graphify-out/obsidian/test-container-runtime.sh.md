@@ -12,7 +12,7 @@ tags:
 # test-container-runtime.sh
 
 ## Connections
-- [[check()]] - `defines` [EXTRACTED]
+- [[check()_2]] - `defines` [EXTRACTED]
 - [[container-runtime.sh (detection shim)]] - `calls` [EXTRACTED]
 - [[make_fake_bin()]] - `defines` [EXTRACTED]
 - [[run_detect()]] - `defines` [EXTRACTED]

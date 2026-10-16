@@ -12,11 +12,11 @@ tags:
 # quarantine_summary()
 
 ## Connections
-- [[AuthRequired_2]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
 - [[Summarize inboundoutbound quarantine state for SOCdashboard use.]] - `rationale_for` [EXTRACTED]
 - [[_count_by_status()]] - `contains` [EXTRACTED]
 - [[_top_reasons()]] - `contains` [EXTRACTED]
-- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `contains` [EXTRACTED]
 - [[get_1]] - `references` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy

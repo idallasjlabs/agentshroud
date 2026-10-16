@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[GitGuard]] - `imports` [EXTRACTED]
-- [[TestGitGuard_1]] - `contains` [EXTRACTED]
+- [[TestGitGuard]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/GitGuard

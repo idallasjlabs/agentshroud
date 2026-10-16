@@ -12,9 +12,9 @@ tags:
 # test_intel_pipeline.py
 
 ## Connections
-- [[CompetitiveIntelReport_2]] - `imports` [EXTRACTED]
-- [[CompetitorEntry_1]] - `imports` [EXTRACTED]
-- [[IntelReportStore]] - `imports` [EXTRACTED]
+- [[CompetitiveIntelReport_1]] - `imports` [EXTRACTED]
+- [[CompetitorEntry]] - `imports` [EXTRACTED]
+- [[IntelReportStore_1]] - `imports` [EXTRACTED]
 - [[ReportIntegrityError]] - `imports` [EXTRACTED]
 - [[TestCompetitiveIntelReportSchema]] - `contains` [EXTRACTED]
 - [[TestIntelReportHashIntegrity]] - `contains` [EXTRACTED]

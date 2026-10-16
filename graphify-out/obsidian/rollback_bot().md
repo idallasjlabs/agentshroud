@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Rollback a named bot container to the previous image tag.]] - `rationale_for` [EXTRACTED]
-- [[api.py_2]] - `contains` [EXTRACTED]
+- [[api.py]] - `contains` [EXTRACTED]
 - [[rollback()]] - `semantically_similar_to` [INFERRED]
 - [[rollback_openclaw()]] - `calls` [EXTRACTED]
 

@@ -12,10 +12,10 @@ tags:
 # rollback_version()
 
 ## Connections
-- [[Any_64]] - `references` [EXTRACTED]
+- [[Any_67]] - `references` [EXTRACTED]
 - [[Rollback to the previous version. Requires approval_id.]] - `rationale_for` [EXTRACTED]
 - [[RollbackRequest]] - `references` [EXTRACTED]
 - [[rollback()]] - `calls` [EXTRACTED]
-- [[version_routes.py]] - `contains` [EXTRACTED]
+- [[version_routes.py_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/upgrade

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[_get_local_secondary_model returns None if env var is unset.]] - `rationale_for` [EXTRACTED]
-- [[_make_proxy()_2]] - `calls` [EXTRACTED]
+- [[_make_proxy()]] - `calls` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

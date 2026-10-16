@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[A2APolicyEngine_2]] - `calls` [EXTRACTED]
-- [[A2APolicyEngine_1]] - `calls` [EXTRACTED]
+- [[A2APolicyEngine_3]] - `calls` [EXTRACTED]
 - [[An operator who explicitly opts into default_action=allow gets normal     risk-t]] - `rationale_for` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 

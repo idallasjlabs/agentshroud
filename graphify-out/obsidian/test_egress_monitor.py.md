@@ -23,8 +23,8 @@ tags:
 - [[TestEgressMonitorConfig]] - `contains` [EXTRACTED]
 - [[TestEventRecording]] - `contains` [EXTRACTED]
 - [[TestSlowDripDetection]] - `contains` [EXTRACTED]
-- [[default_config()]] - `contains` [EXTRACTED]
-- [[monitor()]] - `contains` [EXTRACTED]
-- [[monitor_config()]] - `contains` [EXTRACTED]
+- [[default_config()_1]] - `contains` [EXTRACTED]
+- [[monitor()_1]] - `contains` [EXTRACTED]
+- [[monitor_config()_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher

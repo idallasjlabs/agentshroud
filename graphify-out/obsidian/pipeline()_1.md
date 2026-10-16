@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_e2e_watchtower.py"
+source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
 community: "PIIConfig"
-location: "L67"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,11 +12,7 @@ tags:
 # pipeline()
 
 ## Connections
-- [[CanaryTripwire]] - `calls` [EXTRACTED]
-- [[ContextGuard]] - `calls` [EXTRACTED]
-- [[EncodingDetector]] - `calls` [EXTRACTED]
-- [[PromptGuard]] - `calls` [EXTRACTED]
-- [[SecurityPipeline_2]] - `calls` [EXTRACTED]
-- [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
+- [[_make_full_pipeline()]] - `calls` [EXTRACTED]
+- [[test_redteam_probes.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PIIConfig

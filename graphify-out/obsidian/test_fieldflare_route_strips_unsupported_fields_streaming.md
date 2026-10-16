@@ -1,0 +1,23 @@
+---
+source_file: "gateway/tests/test_llm_proxy_local_parity.py"
+type: "code"
+community: "LLMProxy.proxy_messages (non-streaming)"
+location: "L1155-L1189"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/LLMProxyproxy_messages_non-streaming
+---
+
+# test_fieldflare_route_strips_unsupported_fields_streaming
+
+## Connections
+- [[Hermes's dashboard chat streams, so the streaming path must apply the shim too.]] - `rationale_for` [EXTRACTED]
+- [[LLMProxy.proxy_messages_streaming]] - `calls` [EXTRACTED]
+- [[TurboFieldfare rejects parallel_tool_calls  non-auto tool_choice]] - `cites` [EXTRACTED]
+- [[_FakeStreamResponse]] - `calls` [EXTRACTED]
+- [[_make_proxy()]] - `calls` [EXTRACTED]
+- [[asyncio]] - `references` [EXTRACTED]
+- [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming

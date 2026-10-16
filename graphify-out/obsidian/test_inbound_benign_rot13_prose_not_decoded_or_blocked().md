@@ -12,7 +12,7 @@ tags:
 # test_inbound_benign_rot13_prose_not_decoded_or_blocked()
 
 ## Connections
-- [[_make_pipeline()]] - `calls` [EXTRACTED]
+- [[_make_pipeline()_3]] - `calls` [EXTRACTED]
 - [[rot13-looking prose with no injection indicators is left alone.]] - `rationale_for` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 

@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "ProxyAction"
+community: "triage-cve-mitigations.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction
+  - community/triage-cve-mitigationspy
 ---
 
 # str
 
 ## Connections
-- [[ProxyAction]] - `inherits` [EXTRACTED]
+- [[Coverage]] - `inherits` [EXTRACTED]
+- [[VulnClass]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy

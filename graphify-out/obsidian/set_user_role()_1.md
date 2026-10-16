@@ -12,9 +12,9 @@ tags:
 # set_user_role()
 
 ## Connections
-- [[RBACConfig_1]] - `calls` [EXTRACTED]
+- [[RBACConfig_4]] - `calls` [EXTRACTED]
 - [[RBACManager_2]] - `calls` [EXTRACTED]
-- [[Role_96]] - `calls` [EXTRACTED]
+- [[Role_91]] - `calls` [EXTRACTED]
 - [[SCLCaller]] - `references` [EXTRACTED]
 - [[SetRoleRequest]] - `references` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_fixes.py"
+source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "test_security_fixes.py"
-location: "L38"
+community: "test_dashboard.py"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_fixespy
+  - community/test_dashboardpy
 ---
 
 # sync_client()
 
 ## Connections
 - [[Sync TestClient for WebSocket tests_1]] - `rationale_for` [EXTRACTED]
-- [[test_security_fixes.py]] - `contains` [EXTRACTED]
+- [[test_dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_fixespy
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

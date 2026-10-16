@@ -12,13 +12,13 @@ tags:
 # test_soc_bots.py
 
 ## Connections
-- [[RBACConfig_1]] - `imports` [EXTRACTED]
-- [[Role_96]] - `imports` [EXTRACTED]
+- [[RBACConfig_4]] - `imports` [EXTRACTED]
+- [[Role_91]] - `imports` [EXTRACTED]
 - [[SCLCaller_1]] - `imports` [EXTRACTED]
 - [[SecurityEvent_1]] - `imports` [EXTRACTED]
 - [[ServiceDescriptor_1]] - `imports` [EXTRACTED]
 - [[ServiceStatus_1]] - `imports` [EXTRACTED]
-- [[Severity_2]] - `imports` [EXTRACTED]
+- [[Severity_1]] - `imports` [EXTRACTED]
 - [[TestAgentCvesBotId]] - `contains` [EXTRACTED]
 - [[TestBotSelectorFrontend]] - `contains` [EXTRACTED]
 - [[TestCollaboratorActivityBotFilter]] - `contains` [EXTRACTED]

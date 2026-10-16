@@ -18,9 +18,9 @@ tags:
 - [[Imports From  Exports To_5]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_36]] - `contains` [EXTRACTED]
 - [[Known Issues  Notes_6]] - `contains` [EXTRACTED]
-- [[Purpose_154]] - `contains` [EXTRACTED]
+- [[Purpose_141]] - `contains` [EXTRACTED]
 - [[Related_40]] - `contains` [EXTRACTED]
-- [[Responsibilities_38]] - `contains` [EXTRACTED]
+- [[Responsibilities_37]] - `contains` [EXTRACTED]
 - [[router.py]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/routerpy

@@ -12,6 +12,6 @@ tags:
 # show_notes.md
 
 ## Connections
-- [[Output Format_27]] - `contains` [EXTRACTED]
+- [[Output Format_26]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

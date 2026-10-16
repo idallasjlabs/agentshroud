@@ -12,7 +12,7 @@ tags:
 # test_ptt_finish_noop_when_idle()
 
 ## Connections
-- [[main()_12]] - `calls` [EXTRACTED]
+- [[main()_14]] - `calls` [EXTRACTED]
 - [[test_ptt_state.c]] - `contains` [EXTRACTED]
 - [[wakeword_clear()]] - `calls` [INFERRED]
 - [[wakeword_ended()]] - `calls` [INFERRED]

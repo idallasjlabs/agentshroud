@@ -13,12 +13,12 @@ tags:
 
 ## Connections
 - [[CVE Mitigations]] - `contains` [EXTRACTED]
-- [[Configuration_10]] - `contains` [EXTRACTED]
+- [[Configuration_8]] - `contains` [EXTRACTED]
 - [[Important Behaviors]] - `contains` [EXTRACTED]
-- [[Key Classes_1]] - `contains` [EXTRACTED]
-- [[Overview_20]] - `contains` [EXTRACTED]
+- [[Key Classes]] - `contains` [EXTRACTED]
+- [[Overview_17]] - `contains` [EXTRACTED]
 - [[Pipeline Stages]] - `contains` [EXTRACTED]
-- [[Related_6]] - `contains` [EXTRACTED]
+- [[Related_5]] - `contains` [EXTRACTED]
 - [[pipeline.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[A2APolicyEngine_2]] - `calls` [EXTRACTED]
-- [[A2APolicyEngine_1]] - `calls` [EXTRACTED]
+- [[A2APolicyEngine_3]] - `calls` [EXTRACTED]
 - [[Ownership is checked before the risk-tier gate — a mismatched peer must     be d]] - `rationale_for` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 

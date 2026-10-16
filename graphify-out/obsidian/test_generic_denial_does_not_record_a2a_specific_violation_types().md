@@ -13,11 +13,11 @@ tags:
 
 ## Connections
 - [[A plain default-deny (unknownunlisted peer) is a routing decision, not     evid]] - `rationale_for` [EXTRACTED]
-- [[A2APolicyEngine_1]] - `calls` [EXTRACTED]
-- [[A2AProxy]] - `calls` [EXTRACTED]
+- [[A2APolicyEngine_3]] - `calls` [EXTRACTED]
+- [[A2AProxy_1]] - `calls` [EXTRACTED]
 - [[TrustManager_4]] - `references` [EXTRACTED]
-- [[_StubForwarder]] - `calls` [EXTRACTED]
-- [[_jsonrpc()_1]] - `calls` [EXTRACTED]
+- [[_StubForwarder_2]] - `calls` [EXTRACTED]
+- [[_jsonrpc()_2]] - `calls` [EXTRACTED]
 - [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

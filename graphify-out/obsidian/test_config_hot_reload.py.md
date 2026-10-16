@@ -12,7 +12,7 @@ tags:
 # test_config_hot_reload.py
 
 ## Connections
-- [[GatewayConfig_3]] - `imports` [EXTRACTED]
+- [[GatewayConfig_4]] - `imports` [EXTRACTED]
 - [[_default_mtime()]] - `imports` [EXTRACTED]
 - [[_load()]] - `contains` [EXTRACTED]
 - [[_write()]] - `contains` [EXTRACTED]

@@ -12,10 +12,10 @@ tags:
 # review_version()
 
 ## Connections
-- [[Any_64]] - `references` [EXTRACTED]
+- [[Any_67]] - `references` [EXTRACTED]
 - [[Perform security review for a target version (no approval needed).]] - `rationale_for` [EXTRACTED]
 - [[VersionRequest]] - `references` [EXTRACTED]
 - [[security_review()]] - `calls` [EXTRACTED]
-- [[version_routes.py]] - `contains` [EXTRACTED]
+- [[version_routes.py_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/upgrade

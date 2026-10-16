@@ -12,9 +12,9 @@ tags:
 # save_report()
 
 ## Connections
-- [[Any_48]] - `references` [EXTRACTED]
-- [[Path_37]] - `references` [EXTRACTED]
+- [[Any_39]] - `references` [EXTRACTED]
+- [[Path_26]] - `references` [EXTRACTED]
 - [[Save a ClamAV report to the log directory.]] - `rationale_for` [EXTRACTED]
-- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

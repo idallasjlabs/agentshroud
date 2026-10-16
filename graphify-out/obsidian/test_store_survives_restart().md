@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "ApprovalQueueItem"
+community: "ApprovalQueueConfig"
 location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueItem
+  - community/ApprovalQueueConfig
 ---
 
 # test_store_survives_restart()
 
 ## Connections
 - [[ApprovalStore]] - `calls` [EXTRACTED]
-- [[Path_13]] - `references` [EXTRACTED]
+- [[Path_61]] - `references` [EXTRACTED]
 - [[Simulates a full restart cycle save, close, reopen, verify.]] - `rationale_for` [EXTRACTED]
 - [[_make_item()]] - `calls` [EXTRACTED]
 - [[test_approval_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueItem
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

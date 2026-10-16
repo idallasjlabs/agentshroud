@@ -12,8 +12,8 @@ tags:
 # telegram_webhook()
 
 ## Connections
-- [[AuthRequired]] - `references` [EXTRACTED]
-- [[Request_3]] - `references` [EXTRACTED]
+- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[Request_4]] - `references` [EXTRACTED]
 - [[Telegram inbound webhook (P3 channel ownership).      All Telegram messages des]] - `rationale_for` [EXTRACTED]
 - [[WebhookReceiver]] - `calls` [EXTRACTED]
 - [[forward.py]] - `contains` [EXTRACTED]

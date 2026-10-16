@@ -12,7 +12,7 @@ tags:
 # ssh_hosts()
 
 ## Connections
-- [[dot-append()_1]] - `calls` [EXTRACTED]
+- [[dot-append()]] - `calls` [EXTRACTED]
 - [[SSH host connectivity status.]] - `rationale_for` [EXTRACTED]
 - [[_check_host()]] - `calls` [EXTRACTED]
 - [[dashboard_endpoints.py]] - `contains` [EXTRACTED]

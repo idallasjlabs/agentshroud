@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[PipelineAction]] - `imports` [EXTRACTED]
 - [[PipelineResult_1]] - `imports` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `imports` [EXTRACTED]
+- [[TelegramAPIProxy]] - `imports` [EXTRACTED]
 - [[TestInboundFallbackToDirectSanitizer]] - `contains` [EXTRACTED]
 - [[TestInboundPipelineBlockedNonOwner]] - `contains` [EXTRACTED]
 - [[TestInboundPipelineBlockedOwner]] - `contains` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[TestOutboundPipelineWired]] - `contains` [EXTRACTED]
 - [[_getUpdates_response()]] - `contains` [EXTRACTED]
 - [[_make_pipeline_result()]] - `contains` [EXTRACTED]
-- [[_make_proxy()]] - `contains` [EXTRACTED]
-- [[_make_update()_1]] - `contains` [EXTRACTED]
+- [[_make_proxy()_1]] - `contains` [EXTRACTED]
+- [[_make_update()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PipelineAction

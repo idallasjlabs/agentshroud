@@ -12,7 +12,7 @@ tags:
 # test_forward_to_agent_unexpected_error()
 
 ## Connections
-- [[AgentTarget]] - `calls` [EXTRACTED]
+- [[AgentTarget_1]] - `calls` [EXTRACTED]
 - [[Test forwarding handles unexpected exceptions]] - `rationale_for` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 

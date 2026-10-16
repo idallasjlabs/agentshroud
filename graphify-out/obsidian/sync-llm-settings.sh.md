@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[_python()]] - `defines` [EXTRACTED]
-- [[_sha256()_2]] - `defines` [EXTRACTED]
+- [[_sha256()_1]] - `defines` [EXTRACTED]
 - [[_write_manifest()]] - `defines` [EXTRACTED]
 - [[gatewayskillsscan.py (scan CLI)]] - `calls` [EXTRACTED]
 - [[sync-llm-settings.sh script]] - `contains` [EXTRACTED]

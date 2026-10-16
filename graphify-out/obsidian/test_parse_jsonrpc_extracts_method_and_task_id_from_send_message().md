@@ -12,7 +12,7 @@ tags:
 # test_parse_jsonrpc_extracts_method_and_task_id_from_send_message()
 
 ## Connections
-- [[_jsonrpc()_2]] - `calls` [EXTRACTED]
+- [[_jsonrpc()]] - `calls` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

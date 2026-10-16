@@ -12,10 +12,10 @@ tags:
 # test_tool_result_sanitizer_enhanced.py
 
 ## Connections
-- [[TestIntegration_1]] - `contains` [EXTRACTED]
-- [[TestToolResultSanitizer]] - `contains` [EXTRACTED]
+- [[TestIntegration]] - `contains` [EXTRACTED]
+- [[TestToolResultSanitizer_1]] - `contains` [EXTRACTED]
 - [[TestToolResultSanitizerConfig]] - `contains` [EXTRACTED]
-- [[ToolResultSanitizer]] - `imports` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `imports` [EXTRACTED]
 - [[ToolResultSanitizerConfig]] - `imports` [EXTRACTED]
 - [[sanitize_tool_result()]] - `imports` [EXTRACTED]
 

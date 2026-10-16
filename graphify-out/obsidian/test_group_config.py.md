@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[GroupConfig]] - `imports` [EXTRACTED]
-- [[TeamsConfig]] - `imports` [EXTRACTED]
+- [[TeamsConfig_2]] - `imports` [EXTRACTED]
 - [[TestAdminChecks]] - `contains` [EXTRACTED]
 - [[TestCollabMode]] - `contains` [EXTRACTED]
 - [[TestGroupSafeResponsePrefix]] - `contains` [EXTRACTED]
@@ -22,6 +22,6 @@ tags:
 - [[TestTeamsConfigParsing]] - `contains` [EXTRACTED]
 - [[TestUserCollabModeOverride]] - `contains` [EXTRACTED]
 - [[persist_user_collab_mode()]] - `imports` [EXTRACTED]
-- [[teams()_4]] - `contains` [EXTRACTED]
+- [[teams()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/GroupConfig

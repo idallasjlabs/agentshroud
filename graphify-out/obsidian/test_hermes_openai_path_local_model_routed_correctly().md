@@ -13,7 +13,10 @@ tags:
 
 ## Connections
 - [[Hermes sends OpenAI-compat requests; local qwen3 model routes to LM Studio.]] - `rationale_for` [EXTRACTED]
-- [[_make_proxy()_2]] - `calls` [EXTRACTED]
+- [[_fake_forward()_4]] - `contains` [EXTRACTED]
+- [[_fake_forward()_17]] - `indirect_call` [INFERRED]
+- [[_make_proxy()]] - `calls` [EXTRACTED]
+- [[asyncio]] - `references` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

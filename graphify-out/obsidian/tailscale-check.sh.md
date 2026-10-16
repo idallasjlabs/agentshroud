@@ -12,10 +12,10 @@ tags:
 # tailscale-check.sh
 
 ## Connections
-- [[fail()_1]] - `defines` [EXTRACTED]
+- [[fail()_5]] - `defines` [EXTRACTED]
 - [[infra-check.sh]] - `semantically_similar_to` [INFERRED]
-- [[ok()]] - `defines` [EXTRACTED]
+- [[ok()_1]] - `defines` [EXTRACTED]
 - [[tailscale-check.sh script]] - `contains` [EXTRACTED]
-- [[warn()_3]] - `defines` [EXTRACTED]
+- [[warn()_4]] - `defines` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ProxyDashboard

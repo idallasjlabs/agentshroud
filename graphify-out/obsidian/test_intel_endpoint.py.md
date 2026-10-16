@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[CitationVerifier]] - `imports` [EXTRACTED]
-- [[FetchOutcome]] - `imports` [EXTRACTED]
+- [[FetchOutcome_1]] - `imports` [EXTRACTED]
 - [[TestHttpxFetcher]] - `contains` [EXTRACTED]
 - [[TestSubmitAuth]] - `contains` [EXTRACTED]
 - [[TestSubmitEndpoint]] - `contains` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[_draft()]] - `contains` [EXTRACTED]
 - [[_inject_fetcher()]] - `contains` [EXTRACTED]
 - [[citation_verifier module]] - `references` [EXTRACTED]
-- [[client()_2]] - `contains` [EXTRACTED]
+- [[client()_11]] - `contains` [EXTRACTED]
 - [[make_httpx_fetcher()]] - `imports` [EXTRACTED]
 - [[require_auth()]] - `imports` [EXTRACTED]
 - [[webapi.py (POST apiintelreports)]] - `implements` [EXTRACTED]

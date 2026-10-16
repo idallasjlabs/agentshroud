@@ -23,7 +23,7 @@ tags:
 - [[MultiHostResult]] - `references` [EXTRACTED]
 - [[Run ``command`` on each host via ``runner`` and aggregate the results.      A ru]] - `rationale_for` [EXTRACTED]
 - [[classify()_1]] - `calls` [EXTRACTED]
-- [[main()_32]] - `calls` [EXTRACTED]
+- [[main()_29]] - `calls` [EXTRACTED]
 - [[multi_host_test.py]] - `contains` [EXTRACTED]
 - [[tail()]] - `calls` [EXTRACTED]
 - [[test_multi_host_test.py]] - `imports` [EXTRACTED]

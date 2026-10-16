@@ -16,6 +16,6 @@ tags:
 - [[build_basic_auth_header()_2]] - `calls` [EXTRACTED]
 - [[build_comment_url()_2]] - `calls` [EXTRACTED]
 - [[jira_weekly_review.py]] - `contains` [EXTRACTED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[run()_4]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/jira_weekly_reviewpy

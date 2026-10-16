@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "GroupRoleResolver"
+community: "RBACConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/RBACConfig
 ---
 
 # test_group_rbac.py
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[GroupRole]] - `imports` [EXTRACTED]
 - [[GroupRoleResolver]] - `imports` [EXTRACTED]
-- [[RBACConfig_1]] - `imports` [EXTRACTED]
-- [[TeamsConfig]] - `imports` [EXTRACTED]
+- [[RBACConfig_4]] - `imports` [EXTRACTED]
+- [[TeamsConfig_2]] - `imports` [EXTRACTED]
 - [[TestGroupRoleProperties]] - `contains` [EXTRACTED]
 - [[TestGroupRoleResolver]] - `contains` [EXTRACTED]
 - [[TestMemberGroupContext]] - `contains` [EXTRACTED]
@@ -24,10 +24,10 @@ tags:
 - [[ToolACLConfig]] - `imports` [EXTRACTED]
 - [[ToolACLEnforcer]] - `imports` [EXTRACTED]
 - [[acl_config()]] - `contains` [EXTRACTED]
-- [[enforcer()_2]] - `contains` [EXTRACTED]
+- [[enforcer()_1]] - `contains` [EXTRACTED]
 - [[group_rbac.py (GroupRoleResolver)]] - `implements` [EXTRACTED]
 - [[group_role_resolver()]] - `contains` [EXTRACTED]
-- [[rbac()_5]] - `contains` [EXTRACTED]
-- [[teams()_2]] - `contains` [EXTRACTED]
+- [[rbac()_2]] - `contains` [EXTRACTED]
+- [[teams()_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

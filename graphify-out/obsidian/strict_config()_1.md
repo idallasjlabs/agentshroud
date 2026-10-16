@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_trust_manager.py"
+source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "TrustConfig"
-location: "L35"
+community: "SubagentMonitor"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/SubagentMonitor
 ---
 
 # strict_config()
 
 ## Connections
-- [[Config with strict thresholds.]] - `rationale_for` [EXTRACTED]
-- [[TrustConfig]] - `calls` [EXTRACTED]
-- [[test_trust_manager.py]] - `contains` [EXTRACTED]
+- [[SubagentMonitorConfig]] - `calls` [EXTRACTED]
+- [[test_subagent_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

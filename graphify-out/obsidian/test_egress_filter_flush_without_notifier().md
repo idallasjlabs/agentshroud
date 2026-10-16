@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "test_egress_filter.py"
+community: "_make_filter"
 location: "L493"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_egress_filterpy
+  - community/_make_filter
 ---
 
 # test_egress_filter_flush_without_notifier()
 
 ## Connections
-- [[EgressFilter]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[EgressPolicy]] - `calls` [EXTRACTED]
 - [[flush_notifications with no notifier set should not crash.]] - `rationale_for` [EXTRACTED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_egress_filterpy
+#graphify/code #graphify/EXTRACTED #community/_make_filter

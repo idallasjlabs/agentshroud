@@ -16,7 +16,7 @@ tags:
 - [[EventBus]] - `imports` [EXTRACTED]
 - [[_SendSpy]] - `contains` [EXTRACTED]
 - [[_alert_event()]] - `contains` [EXTRACTED]
-- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `imports_from` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 - [[make_event()]] - `imports` [EXTRACTED]
 - [[test_api_alerts_endpoint_emits_bus_event()]] - `contains` [EXTRACTED]
 - [[test_async_sanitizer_supported()]] - `contains` [EXTRACTED]

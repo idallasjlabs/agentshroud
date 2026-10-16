@@ -12,8 +12,8 @@ tags:
 # test_get_local_model_reads_fieldflare_ref()
 
 ## Connections
-- [[_get_local_model strips the provider prefix for a Fieldflare ref, same     as it]] - `rationale_for` [EXTRACTED]
-- [[_make_proxy()_2]] - `calls` [EXTRACTED]
+- [[_get_local_model strips the provider prefix for a Fieldflare ref, same as it…]] - `rationale_for` [EXTRACTED]
+- [[_make_proxy()]] - `calls` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

@@ -16,7 +16,7 @@ tags:
 - [[_stamp_write()]] - `defines` [EXTRACTED]
 - [[dockerscriptssecurity-scan.sh]] - `calls` [EXTRACTED]
 - [[gateway-seccomp.json (Docker seccomp profile)]] - `conceptually_related_to` [AMBIGUOUS]
-- [[log()_8]] - `defines` [EXTRACTED]
+- [[log()_6]] - `defines` [EXTRACTED]
 - [[security-report-retention.sh]] - `calls` [EXTRACTED]
 - [[security-report.sh]] - `calls` [EXTRACTED]
 - [[security-scan.sh (unified scan dispatcher)]] - `calls` [EXTRACTED]

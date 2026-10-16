@@ -19,8 +19,8 @@ tags:
 - [[_start_lock_heartbeat()]] - `calls` [EXTRACTED]
 - [[_take_apply_lock()]] - `calls` [EXTRACTED]
 - [[check_noop_gate()]] - `calls` [EXTRACTED]
-- [[die()]] - `calls` [EXTRACTED]
-- [[log()]] - `calls` [EXTRACTED]
+- [[die()_1]] - `calls` [EXTRACTED]
+- [[log()_8]] - `calls` [EXTRACTED]
 - [[phase_apply()]] - `calls` [EXTRACTED]
 - [[phase_baseline()]] - `calls` [EXTRACTED]
 - [[phase_discover()]] - `calls` [EXTRACTED]
@@ -28,7 +28,7 @@ tags:
 - [[phase_scan()]] - `calls` [EXTRACTED]
 - [[phase_verify()]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `contains` [EXTRACTED]
-- [[warn()]] - `calls` [EXTRACTED]
+- [[warn()_5]] - `calls` [EXTRACTED]
 - [[write_handoff()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

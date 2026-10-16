@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AuditEvent]] - `imports` [EXTRACTED]
-- [[AuditExportConfig_1]] - `imports` [EXTRACTED]
+- [[AuditExportConfig]] - `imports` [EXTRACTED]
 - [[AuditExporter]] - `imports` [EXTRACTED]
 - [[AuditStore_1]] - `imports` [EXTRACTED]
 - [[TestAuditEvent]] - `contains` [EXTRACTED]

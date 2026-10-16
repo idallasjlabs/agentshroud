@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Image]] - `references` [EXTRACTED]
-- [[Path_45]] - `references` [EXTRACTED]
+- [[Path_35]] - `references` [EXTRACTED]
 - [[ensure()]] - `calls` [EXTRACTED]
 - [[generate_branding_assets.py]] - `contains` [EXTRACTED]
 - [[generate_email()]] - `calls` [EXTRACTED]

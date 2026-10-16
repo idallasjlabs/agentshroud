@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[StreamReader_2]] - `calls` [EXTRACTED]
-- [[_MockWriter]] - `calls` [EXTRACTED]
+- [[_MockWriter_1]] - `calls` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

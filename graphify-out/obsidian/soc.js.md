@@ -74,7 +74,7 @@ tags:
 - [[_tabLoaders]] - `contains` [EXTRACTED]
 - [[_toast()]] - `contains` [EXTRACTED]
 - [[_token]] - `contains` [EXTRACTED]
-- [[_ts()_1]] - `contains` [EXTRACTED]
+- [[_ts()]] - `contains` [EXTRACTED]
 - [[_uptime()]] - `contains` [EXTRACTED]
 - [[socrouter.py]] - `shares_data_with` [EXTRACTED]
 

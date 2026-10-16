@@ -12,7 +12,7 @@ tags:
 # subagent_monitor.py
 
 ## Connections
-- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[Enum_1]] - `imports_from` [EXTRACTED]
 - [[SubagentEvent]] - `contains` [EXTRACTED]
 - [[SubagentEventType]] - `contains` [EXTRACTED]
 - [[SubagentInfo]] - `contains` [EXTRACTED]
@@ -21,6 +21,6 @@ tags:
 - [[ToolCheckResult]] - `contains` [EXTRACTED]
 - [[falco_monitor.py]] - `references` [EXTRACTED]
 - [[resource_guard.py]] - `references` [EXTRACTED]
-- [[session_security.py_2]] - `references` [EXTRACTED]
+- [[session_security.py]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SubagentMonitor

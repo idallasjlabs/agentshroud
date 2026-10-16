@@ -15,9 +15,9 @@ tags:
 - [[PIISanitizer_2]] - `calls` [EXTRACTED]
 - [[TestOwnerEmailBypassesPii]] - `contains` [EXTRACTED]
 - [[auth_dep()]] - `imports` [EXTRACTED]
-- [[auth_dep()_1]] - `imports` [EXTRACTED]
+- [[auth_dep()_2]] - `imports` [EXTRACTED]
 - [[bypass_auth()_1]] - `contains` [EXTRACTED]
-- [[client()_4]] - `contains` [EXTRACTED]
+- [[client()_5]] - `contains` [EXTRACTED]
 - [[email_send()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/forwardpy

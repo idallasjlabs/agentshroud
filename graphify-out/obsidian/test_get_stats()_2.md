@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ledger.py"
 type: "code"
-community: "test_ledger.py"
+community: "DataLedger"
 location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_ledgerpy
+  - community/DataLedger
 ---
 
 # test_get_stats()
@@ -15,4 +15,4 @@ tags:
 - [[Test stats calculation]] - `rationale_for` [EXTRACTED]
 - [[test_ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_ledgerpy
+#graphify/code #graphify/EXTRACTED #community/DataLedger

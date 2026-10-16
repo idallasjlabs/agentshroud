@@ -26,6 +26,6 @@ tags:
 - [[TestWorkspaceAccessPreserved]] - `contains` [EXTRACTED]
 - [[enforce_config()]] - `contains` [EXTRACTED]
 - [[middleware_manager()]] - `contains` [EXTRACTED]
-- [[strict_sandbox()_1]] - `contains` [EXTRACTED]
+- [[strict_sandbox()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

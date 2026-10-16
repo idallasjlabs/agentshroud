@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[container-net-diag.sh]] - `defines` [EXTRACTED]
 - [[container-net-diag.sh script]] - `calls` [EXTRACTED]
-- [[fail()_5]] - `calls` [EXTRACTED]
+- [[fail()_4]] - `calls` [EXTRACTED]
 - [[has()_1]] - `calls` [EXTRACTED]
 - [[pass()_3]] - `calls` [EXTRACTED]
 

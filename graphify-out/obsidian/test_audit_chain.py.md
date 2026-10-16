@@ -19,6 +19,6 @@ tags:
 - [[TestConcurrentWrites]] - `contains` [EXTRACTED]
 - [[TestRetention]] - `contains` [EXTRACTED]
 - [[TestTamperDetection]] - `contains` [EXTRACTED]
-- [[ledger()_1]] - `contains` [EXTRACTED]
+- [[ledger()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DataLedger

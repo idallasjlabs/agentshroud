@@ -12,7 +12,7 @@ tags:
 # test_generic_target_sends_content_body()
 
 ## Connections
-- [[AgentTarget]] - `calls` [EXTRACTED]
+- [[AgentTarget_1]] - `calls` [EXTRACTED]
 - [[forward_to_agent sends the generic {content, ledger_id, ...} body for chat targ]] - `rationale_for` [EXTRACTED]
 - [[test_router_openai_translation.py]] - `contains` [EXTRACTED]
 

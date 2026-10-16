@@ -12,9 +12,9 @@ tags:
 # test_forward_stream.py
 
 ## Connections
-- [[AgentTarget]] - `imports` [EXTRACTED]
+- [[AgentTarget_1]] - `imports` [EXTRACTED]
 - [[ForwardError]] - `imports` [EXTRACTED]
-- [[ForwardRequest_3]] - `imports` [EXTRACTED]
+- [[ForwardRequest_1]] - `imports` [EXTRACTED]
 - [[_BlockingPipeline]] - `contains` [EXTRACTED]
 - [[_PassthroughPipeline]] - `contains` [EXTRACTED]
 - [[_aiter()]] - `contains` [EXTRACTED]
@@ -27,7 +27,7 @@ tags:
 - [[_sentences_from_deltas()]] - `imports` [EXTRACTED]
 - [[_target()]] - `contains` [EXTRACTED]
 - [[auth_dep()]] - `imports` [EXTRACTED]
-- [[auth_dep()_1]] - `imports` [EXTRACTED]
+- [[auth_dep()_2]] - `imports` [EXTRACTED]
 - [[test_filtered_stream_blocked_final_sentence_yields_nothing()]] - `contains` [EXTRACTED]
 - [[test_filtered_stream_blocked_window_releases_nothing_for_that_window()]] - `contains` [EXTRACTED]
 - [[test_filtered_stream_redaction_applies_to_released_sentence()]] - `contains` [EXTRACTED]

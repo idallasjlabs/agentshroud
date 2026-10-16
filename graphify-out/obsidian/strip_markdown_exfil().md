@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/input_normalizer.py"
 type: "code"
-community: ".analyze_message"
+community: "._filter_outbound"
 location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/analyze_message
+  - community/_filter_outbound
 ---
 
 # strip_markdown_exfil()
@@ -20,4 +20,4 @@ tags:
 - [[telegram_proxy.py_2]] - `imports` [EXTRACTED]
 - [[tool_result_injection.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/analyze_message
+#graphify/code #graphify/EXTRACTED #community/_filter_outbound

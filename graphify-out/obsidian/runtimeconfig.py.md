@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[RuntimeConfig]] - `contains` [EXTRACTED]
-- [[api.py_2]] - `imports_from` [EXTRACTED]
+- [[api.py]] - `imports_from` [EXTRACTED]
 - [[engine.py]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RuntimeConfig

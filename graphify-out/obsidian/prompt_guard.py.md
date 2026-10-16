@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "OutboundInfoFilter"
+community: "Action"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutboundInfoFilter
+  - community/Action
 ---
 
 # prompt_guard.py
 
 ## Connections
 - [[AGENTSHROUD_MODE]] - `references` [INFERRED]
-- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[Enum_1]] - `imports_from` [EXTRACTED]
 - [[FR3 System Integrity]] - `references` [EXTRACTED]
 - [[PatternRule]] - `contains` [EXTRACTED]
 - [[Prompt Guard Module Badge Icon]] - `conceptually_related_to` [INFERRED]
-- [[PromptGuard]] - `contains` [EXTRACTED]
+- [[PromptGuard_1]] - `contains` [EXTRACTED]
 - [[ScanResult_1]] - `contains` [EXTRACTED]
 - [[SystemPromptFingerprint]] - `contains` [EXTRACTED]
 - [[ThreatAction]] - `contains` [EXTRACTED]
@@ -30,4 +30,4 @@ tags:
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[test_multilingual_injection.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/Action

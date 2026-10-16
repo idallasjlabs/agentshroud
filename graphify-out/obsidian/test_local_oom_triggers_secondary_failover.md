@@ -1,0 +1,24 @@
+---
+source_file: "gateway/tests/test_llm_proxy_local_parity.py"
+type: "code"
+community: "test_llm_proxy_local_parity.py"
+location: "L336-L375"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/test_llm_proxy_local_paritypy
+---
+
+# test_local_oom_triggers_secondary_failover
+
+## Connections
+- [[LLMProxy._local_secondary_failover_request]] - `references` [INFERRED]
+- [[OOM (503 backend_unavailable from primary local) triggers secondary local…]] - `rationale_for` [EXTRACTED]
+- [[_fake_forward()_9]] - `contains` [EXTRACTED]
+- [[_fake_forward()_17]] - `indirect_call` [INFERRED]
+- [[_make_proxy()]] - `calls` [EXTRACTED]
+- [[_openai_ok()]] - `calls` [EXTRACTED]
+- [[asyncio]] - `references` [EXTRACTED]
+- [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

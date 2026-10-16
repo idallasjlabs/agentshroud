@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "rationale"
-community: "ApprovalRequest"
+community: "GroupApprovalRouter"
 location: "L84"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/GroupApprovalRouter
 ---
 
 # owner_chat_id receives a DM notification for every group-context approval.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_owner_receives_dm_for_group_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/rationale #graphify/EXTRACTED #community/GroupApprovalRouter

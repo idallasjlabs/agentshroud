@@ -12,7 +12,7 @@ tags:
 # test_openclaw_readiness_retry.sh script
 
 ## Connections
-- [[check()_2]] - `calls` [EXTRACTED]
+- [[check()_1]] - `calls` [EXTRACTED]
 - [[test_openclaw_readiness_retry.sh]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/smokesh_Startup_Smoke_Runner

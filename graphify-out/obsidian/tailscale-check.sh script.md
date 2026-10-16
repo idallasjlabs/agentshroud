@@ -12,9 +12,9 @@ tags:
 # tailscale-check.sh script
 
 ## Connections
-- [[fail()_1]] - `calls` [EXTRACTED]
-- [[ok()]] - `calls` [EXTRACTED]
+- [[fail()_5]] - `calls` [EXTRACTED]
+- [[ok()_1]] - `calls` [EXTRACTED]
 - [[tailscale-check.sh]] - `contains` [EXTRACTED]
-- [[warn()_3]] - `calls` [EXTRACTED]
+- [[warn()_4]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ProxyDashboard

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[GroupConfig]] - `calls` [EXTRACTED]
 - [[ProjectConfig]] - `calls` [EXTRACTED]
-- [[TeamsConfig]] - `calls` [EXTRACTED]
+- [[TeamsConfig_2]] - `calls` [EXTRACTED]
 - [[test_collaborator_responses.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/telegram_proxypy

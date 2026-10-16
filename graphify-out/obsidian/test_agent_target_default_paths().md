@@ -12,7 +12,7 @@ tags:
 # test_agent_target_default_paths()
 
 ## Connections
-- [[AgentTarget]] - `calls` [EXTRACTED]
+- [[AgentTarget_1]] - `calls` [EXTRACTED]
 - [[AgentTarget defaults chat_path and health_path correctly.]] - `rationale_for` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 

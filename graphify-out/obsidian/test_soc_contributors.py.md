@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ContributorManager]] - `tests` [EXTRACTED]
 - [[ProgressiveLockdown]] - `imports` [EXTRACTED]
-- [[Role_96]] - `imports` [EXTRACTED]
+- [[Role_91]] - `imports` [EXTRACTED]
 - [[TestLockdownLevelWiring]] - `contains` [EXTRACTED]
 - [[TestPausedFieldWiring]] - `contains` [EXTRACTED]
 - [[_FakeRBAC_2]] - `contains` [EXTRACTED]

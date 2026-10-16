@@ -12,8 +12,11 @@ tags:
 # test_stats_local_secondary_failover_succeeded_incremented()
 
 ## Connections
-- [[_make_proxy()_2]] - `calls` [EXTRACTED]
-- [[failover_local_secondary_succeeded stat increments on successful secondary dispa]] - `rationale_for` [EXTRACTED]
+- [[_fake_forward()_18]] - `contains` [EXTRACTED]
+- [[_fake_forward()_17]] - `indirect_call` [INFERRED]
+- [[_make_proxy()]] - `calls` [EXTRACTED]
+- [[asyncio]] - `references` [EXTRACTED]
+- [[failover_local_secondary_succeeded stat increments on successful secondary…]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

@@ -15,9 +15,9 @@ tags:
 - [[Configuration  Environment Variables_30]] - `contains` [EXTRACTED]
 - [[Function Details_50]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_53]] - `contains` [EXTRACTED]
-- [[Purpose_188]] - `contains` [EXTRACTED]
+- [[Purpose_187]] - `contains` [EXTRACTED]
 - [[Related_57]] - `contains` [EXTRACTED]
-- [[Responsibilities_56]] - `contains` [EXTRACTED]
+- [[Responsibilities_55]] - `contains` [EXTRACTED]
 - [[Security Limitation Warning]] - `contains` [EXTRACTED]
 - [[sidecar.py_1]] - `contains` [EXTRACTED]
 

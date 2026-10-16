@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_integration.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "PIIConfig"
-location: "L60"
+community: "test_e2e_proxy.py"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/test_e2e_proxypy
 ---
 
 # sanitizer()
 
 ## Connections
 - [[PIISanitizer_2]] - `calls` [EXTRACTED]
-- [[test_security_integration.py]] - `contains` [EXTRACTED]
+- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

@@ -12,6 +12,6 @@ tags:
 # score_to_grade(score)
 
 ## Connections
-- [[Function Details_10]] - `contains` [EXTRACTED]
+- [[Function Details_9]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

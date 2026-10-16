@@ -12,7 +12,7 @@ tags:
 # test-op-auth.sh script
 
 ## Connections
-- [[fail()]] - `calls` [EXTRACTED]
+- [[fail()_1]] - `calls` [EXTRACTED]
 - [[pass()]] - `calls` [EXTRACTED]
 - [[test-op-auth.sh]] - `contains` [EXTRACTED]
 

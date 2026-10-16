@@ -1,5 +1,5 @@
 ---
-source_file: "gateway/tests/test_privilege_separation.py"
+source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
 community: "MiddlewareManager"
 location: "L39"
@@ -13,7 +13,6 @@ tags:
 
 ## Connections
 - [[FileSandbox]] - `calls` [EXTRACTED]
-- [[Sandbox with separation of privilege enforcement.]] - `rationale_for` [EXTRACTED]
-- [[test_privilege_separation.py]] - `contains` [EXTRACTED]
+- [[test_file_sandbox.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

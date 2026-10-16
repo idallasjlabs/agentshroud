@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Enum"
+community: "test_soc_realtime_coverage.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/test_soc_realtime_coveragepy
 ---
 
 # soc/models.py
@@ -16,10 +16,10 @@ tags:
 - [[AlarmStatus]] - `contains` [EXTRACTED]
 - [[AuditLogEntry]] - `contains` [EXTRACTED]
 - [[AuditResult_1]] - `contains` [EXTRACTED]
-- [[ContributorRecord_1]] - `contains` [EXTRACTED]
+- [[ContributorRecord]] - `contains` [EXTRACTED]
 - [[EgressRequest]] - `contains` [EXTRACTED]
 - [[EgressStatus]] - `contains` [EXTRACTED]
-- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[Enum_1]] - `imports_from` [EXTRACTED]
 - [[HealthStatus_1]] - `contains` [EXTRACTED]
 - [[Platform]] - `contains` [EXTRACTED]
 - [[ResourceUsage_1]] - `contains` [EXTRACTED]
@@ -30,7 +30,7 @@ tags:
 - [[SecurityEvent_1]] - `contains` [EXTRACTED]
 - [[ServiceDescriptor_1]] - `contains` [EXTRACTED]
 - [[ServiceStatus_1]] - `contains` [EXTRACTED]
-- [[Severity_2]] - `contains` [EXTRACTED]
+- [[Severity_1]] - `contains` [EXTRACTED]
 - [[UserRole]] - `contains` [EXTRACTED]
 - [[WSEvent]] - `contains` [EXTRACTED]
 - [[WSEventType]] - `contains` [EXTRACTED]
@@ -42,4 +42,4 @@ tags:
 - [[socrouter.py]] - `imports_from` [EXTRACTED]
 - [[websocket.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

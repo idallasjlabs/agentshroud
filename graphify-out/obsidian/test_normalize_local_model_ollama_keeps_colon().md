@@ -1,18 +1,20 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "test_llm_proxy_local_parity.py"
+community: "LLMProxy"
 location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy
+  - community/LLMProxy
 ---
 
 # test_normalize_local_model_ollama_keeps_colon()
 
 ## Connections
+- [[dot-_normalize_local_model()]] - `calls` [EXTRACTED]
 - [[For Ollama backend the colon is kept (Ollama expects it).]] - `rationale_for` [EXTRACTED]
+- [[LLMProxy]] - `uses` [INFERRED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

@@ -16,12 +16,12 @@ tags:
 - [[dot-test_default_prefix()]] - `calls` [EXTRACTED]
 - [[dot-test_log_dir_created_if_missing()]] - `calls` [EXTRACTED]
 - [[dot-test_report_content_persisted()]] - `calls` [EXTRACTED]
-- [[Any_47]] - `references` [EXTRACTED]
-- [[Path_35]] - `references` [EXTRACTED]
+- [[Any_37]] - `references` [EXTRACTED]
+- [[Path_24]] - `references` [EXTRACTED]
 - [[Save a Trivy report to the log directory.      Args         report Parsed repo]] - `rationale_for` [EXTRACTED]
 - [[daily_cve_report.py]] - `imports` [EXTRACTED]
 - [[run_and_send_cve_report()]] - `calls` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
-- [[trivy_report.py_2]] - `contains` [EXTRACTED]
+- [[trivy_report.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/parse_trivy_output

@@ -12,10 +12,10 @@ tags:
 # sanitize_tool_result()
 
 ## Connections
-- [[dot-sanitize()_1]] - `calls` [EXTRACTED]
+- [[dot-sanitize()_4]] - `calls` [EXTRACTED]
 - [[dot-test_convenience_function()]] - `calls` [EXTRACTED]
 - [[Convenience function to sanitize tool result content.      Args         content]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer]] - `calls` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `calls` [EXTRACTED]
 - [[ToolResultSanitizerConfig]] - `references` [EXTRACTED]
 - [[test_tool_result_sanitizer_enhanced.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer_enhanced.py]] - `contains` [EXTRACTED]

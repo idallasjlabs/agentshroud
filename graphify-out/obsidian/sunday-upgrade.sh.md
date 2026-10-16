@@ -1,19 +1,19 @@
 ---
 source_file: "scripts/sunday-upgrade.sh"
 type: "code"
-community: "Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)"
+community: "colima-health-check.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+  - community/colima-health-checksh
 ---
 
 # sunday-upgrade.sh
 
 ## Connections
 - [[Jira MCP writes blocked in unattended sessions (don't-ask mode  allowedTools)]] - `references` [EXTRACTED]
-- [[PATH_3]] - `defines` [EXTRACTED]
+- [[PATH_57]] - `defines` [EXTRACTED]
 - [[Same-day reinvocation verify-only, no rebuild]] - `conceptually_related_to` [EXTRACTED]
 - [[Shared working-tree collision between concurrent sessions]] - `conceptually_related_to` [EXTRACTED]
 - [[Sunday upgrade mission every component in dev and prod to latest stable, resolve every finding, dev first]] - `references` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[sunday-upgrade.sh script]] - `contains` [EXTRACTED]
 - [[test_colima_and_sdk_patch_fallback_resolution.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh

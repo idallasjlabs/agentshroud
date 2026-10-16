@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "Action"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/Action
 ---
 
 # soc/auth.py
 
 ## Connections
 - [[Action_2]] - `imports` [EXTRACTED]
-- [[RBACConfig_1]] - `imports` [EXTRACTED]
+- [[RBACConfig_4]] - `imports` [EXTRACTED]
 - [[RBACManager_2]] - `imports` [EXTRACTED]
 - [[Resource_2]] - `imports` [EXTRACTED]
-- [[Role_96]] - `imports` [EXTRACTED]
+- [[Role_91]] - `imports` [EXTRACTED]
 - [[SCLCaller_1]] - `contains` [EXTRACTED]
 - [[_get_config_token()]] - `contains` [EXTRACTED]
 - [[_get_rbac_manager()]] - `contains` [EXTRACTED]
@@ -32,4 +32,4 @@ tags:
 - [[socrouter.py]] - `imports_from` [EXTRACTED]
 - [[websocket.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/Action

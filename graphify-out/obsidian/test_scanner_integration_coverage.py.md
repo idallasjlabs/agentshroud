@@ -12,7 +12,7 @@ tags:
 # test_scanner_integration_coverage.py
 
 ## Connections
-- [[TestAccessControl_1]] - `contains` [EXTRACTED]
+- [[TestAccessControl]] - `contains` [EXTRACTED]
 - [[TestAgenticScorers]] - `contains` [EXTRACTED]
 - [[TestAggregateResults]] - `contains` [EXTRACTED]
 - [[TestAiModelSupplyChain]] - `contains` [EXTRACTED]
@@ -26,7 +26,7 @@ tags:
 - [[TestDaemonConfigReader]] - `contains` [EXTRACTED]
 - [[TestDataConfidentiality]] - `contains` [EXTRACTED]
 - [[TestDockerDaemonConfig]] - `contains` [EXTRACTED]
-- [[TestFalcoSummary]] - `contains` [EXTRACTED]
+- [[TestFalcoSummary_1]] - `contains` [EXTRACTED]
 - [[TestFluentBitSummary]] - `contains` [EXTRACTED]
 - [[TestGetSbom]] - `contains` [EXTRACTED]
 - [[TestHostOsHardening]] - `contains` [EXTRACTED]
@@ -61,6 +61,6 @@ tags:
 - [[fs()]] - `contains` [EXTRACTED]
 - [[test_router.py]] - `conceptually_related_to` [AMBIGUOUS]
 - [[tools()]] - `contains` [EXTRACTED]
-- [[wazuh_client.py]] - `references` [EXTRACTED]
+- [[wazuh_client.py_2]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_scanner_integration_coveragepy

@@ -1,30 +1,24 @@
 ---
-source_file: "gateway/security/session_security.py"
-type: "code"
-community: "SessionError"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
+type: "document"
+community: "Function Details"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/SessionError
+  - community/Function_Details
 ---
 
 # session_security.py
 
 ## Connections
-- [[Chen et al. 2026 (arXiv2602.14364) — Session Hijacking]] - `cites` [EXTRACTED]
-- [[EventInjectionError]] - `contains` [EXTRACTED]
-- [[RateLimitExceeded]] - `contains` [EXTRACTED]
-- [[Session]] - `contains` [EXTRACTED]
-- [[SessionBindingError]] - `contains` [EXTRACTED]
-- [[SessionError]] - `contains` [EXTRACTED]
-- [[SessionExpired]] - `contains` [EXTRACTED]
-- [[SessionManager]] - `contains` [EXTRACTED]
-- [[Wang et al. 2026 (arXiv2602.08412) — Confused Deputy  Event Injection Attacks]] - `cites` [EXTRACTED]
-- [[browser_security.py]] - `references` [EXTRACTED]
-- [[log_sanitizer.py]] - `references` [EXTRACTED]
-- [[oauth_security.py_2]] - `references` [EXTRACTED]
-- [[subagent_monitor.py]] - `references` [EXTRACTED]
-- [[test_session_security.py]] - `imports_from` [EXTRACTED]
+- [[Configuration  Environment Variables_5]] - `contains` [EXTRACTED]
+- [[Function Details_11]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_12]] - `contains` [EXTRACTED]
+- [[Purpose_111]] - `contains` [EXTRACTED]
+- [[Related_16]] - `contains` [EXTRACTED]
+- [[Responsibilities_13]] - `contains` [EXTRACTED]
+- [[Threat Model_12]] - `contains` [EXTRACTED]
+- [[session_security.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionError
+#graphify/document #graphify/EXTRACTED #community/Function_Details

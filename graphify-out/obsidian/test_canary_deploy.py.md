@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[TestDryRun]] - `contains` [EXTRACTED]
 - [[TestGuard]] - `contains` [EXTRACTED]
-- [[_run()_2]] - `contains` [EXTRACTED]
+- [[_run()_1]] - `contains` [EXTRACTED]
 - [[canary-deploy.sh (bluegreen canary deploy)]] - `implements` [EXTRACTED]
 - [[test_help_prints_usage()]] - `contains` [EXTRACTED]
 - [[test_script_exists_and_is_executable()]] - `contains` [EXTRACTED]

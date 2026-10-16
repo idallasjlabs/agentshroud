@@ -1,20 +1,23 @@
 ---
-source_file: "gateway/web/api.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "_get_engine"
-location: "L330"
+community: "soc/router.py"
+location: "L655"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_get_engine
+  - community/soc/routerpy
 ---
 
 # restart_service()
 
 ## Connections
-- [[Restart a specific service container.]] - `rationale_for` [EXTRACTED]
-- [[_get_engine()]] - `calls` [EXTRACTED]
-- [[_validate_service_name()]] - `calls` [EXTRACTED]
-- [[api.py_2]] - `contains` [EXTRACTED]
+- [[JSONResponse]] - `references` [EXTRACTED]
+- [[SCLCaller]] - `references` [EXTRACTED]
+- [[ServiceActionRequest]] - `references` [EXTRACTED]
+- [[ServiceManager]] - `calls` [EXTRACTED]
+- [[_confirmation_required()]] - `calls` [EXTRACTED]
+- [[_log_audit()]] - `calls` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_get_engine
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

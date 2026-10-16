@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[alert_if_critical()]] - `calls` [EXTRACTED]
 - [[dockerscriptssecurity-scan.sh]] - `defines` [EXTRACTED]
-- [[log()_5]] - `calls` [EXTRACTED]
-- [[security-scan.sh script_1]] - `calls` [EXTRACTED]
+- [[log()]] - `calls` [EXTRACTED]
+- [[security-scan.sh script]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/docker/scripts/security-scansh

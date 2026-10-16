@@ -15,9 +15,9 @@ tags:
 - [[Egress filter without _approval_queue attr - bypass proceeds silently.]] - `rationale_for` [EXTRACTED]
 - [[HTTPConnectProxy]] - `calls` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `calls` [EXTRACTED]
-- [[_MockWriter]] - `calls` [EXTRACTED]
+- [[_MockWriter_1]] - `calls` [EXTRACTED]
 - [[_eof_target_connection()]] - `calls` [EXTRACTED]
-- [[_make_stream()]] - `calls` [EXTRACTED]
+- [[_make_stream()_1]] - `calls` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

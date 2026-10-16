@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "ADR-001: Transparent Proxy Decision"
+community: "Audit Ledger (SHA-256 hash only)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/ADR-001_Transparent_Proxy_Decision
+  - community/Audit_Ledger_SHA-256_hash_only
 ---
 
 # sanitizer.py (PII redaction, Presidio/regex)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[PII Sanitizer (Presidio + Regex)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_Decision
+#graphify/image #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only

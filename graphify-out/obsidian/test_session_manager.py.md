@@ -12,12 +12,12 @@ tags:
 # test_session_manager.py
 
 ## Connections
-- [[TestAccessControl]] - `contains` [EXTRACTED]
+- [[TestAccessControl_1]] - `contains` [EXTRACTED]
 - [[TestAtomicRegistryWrites]] - `contains` [EXTRACTED]
 - [[TestConversationHistory]] - `contains` [EXTRACTED]
 - [[TestInputValidation]] - `contains` [EXTRACTED]
 - [[TestMultiBotIsolation]] - `contains` [EXTRACTED]
-- [[TestSerialization]] - `contains` [EXTRACTED]
+- [[TestSerialization_1]] - `contains` [EXTRACTED]
 - [[TestSessionContext]] - `contains` [EXTRACTED]
 - [[TestSessionIsolation]] - `contains` [EXTRACTED]
 - [[TestSystemPromptReanchoring]] - `contains` [EXTRACTED]

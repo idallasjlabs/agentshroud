@@ -1,18 +1,18 @@
 ---
 source_file: "tests/startup_smoke/test_bot_boot_static.sh"
 type: "code"
-community: "test_bot_boot_static.sh"
+community: "run-standalone.sh (Hermes docker run launcher)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_bot_boot_staticsh
+  - community/run-standalonesh_Hermes_docker_run_launcher
 ---
 
 # test_bot_boot_static.sh script
 
 ## Connections
-- [[check()_5]] - `calls` [EXTRACTED]
-- [[test_bot_boot_static.sh]] - `contains` [EXTRACTED]
+- [[check]] - `calls` [EXTRACTED]
+- [[test_bot_boot_static.sh (static bot boot assertions S1-S14)]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_bot_boot_staticsh
+#graphify/code #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher

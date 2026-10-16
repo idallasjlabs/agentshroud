@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[A2A peers are never equivalent to the human operator — unlike MCP,     owner_byp]] - `rationale_for` [EXTRACTED]
 - [[A2APolicyEngine_2]] - `calls` [EXTRACTED]
-- [[A2APolicyEngine_1]] - `calls` [EXTRACTED]
+- [[A2APolicyEngine_3]] - `calls` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

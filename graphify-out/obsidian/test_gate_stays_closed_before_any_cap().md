@@ -12,7 +12,7 @@ tags:
 # test_gate_stays_closed_before_any_cap()
 
 ## Connections
-- [[main()_14]] - `calls` [EXTRACTED]
+- [[main()_9]] - `calls` [EXTRACTED]
 - [[playback_gate_should_open()]] - `calls` [INFERRED]
 - [[test_playback_state.c]] - `contains` [EXTRACTED]
 

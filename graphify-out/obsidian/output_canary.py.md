@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "MiddlewareManager"
+community: "TestOutputCanary"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/TestOutputCanary
 ---
 
 # output_canary.py
 
 ## Connections
 - [[CanaryConfig]] - `contains` [EXTRACTED]
-- [[CanaryResult_1]] - `contains` [EXTRACTED]
+- [[CanaryResult]] - `contains` [EXTRACTED]
 - [[OutputCanary]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/TestOutputCanary

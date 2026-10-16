@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[AgentShroud™ README]] - `references` [EXTRACTED]
-- [[CONTRIBUTING_1]] - `references` [EXTRACTED]
+- [[CONTRIBUTING]] - `references` [EXTRACTED]
 - [[MiddlewareManager]] - `imports` [EXTRACTED]
-- [[SECURITY_10]] - `references` [EXTRACTED]
+- [[SECURITY_1]] - `references` [EXTRACTED]
 - [[SecurityPipeline_2]] - `imports` [EXTRACTED]
 - [[TestContributingMdAccuracy]] - `contains` [EXTRACTED]
 - [[TestLifespanWiresEveryPipelineModule]] - `contains` [EXTRACTED]
@@ -25,6 +25,6 @@ tags:
 - [[TestSecurityMdAccuracy]] - `contains` [EXTRACTED]
 - [[TestTestCountAccuracy]] - `contains` [EXTRACTED]
 - [[_read_file()]] - `contains` [EXTRACTED]
-- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `imports_from` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_docs_accuracypy

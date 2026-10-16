@@ -15,6 +15,6 @@ tags:
 - [[InstallConfig]] - `references` [EXTRACTED]
 - [[Start the installation process. This endpoint kicks off the install and returns…]] - `rationale_for` [EXTRACTED]
 - [[installer.py_2]] - `contains` [EXTRACTED]
-- [[post]] - `references` [EXTRACTED]
+- [[post_2]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/installerpy

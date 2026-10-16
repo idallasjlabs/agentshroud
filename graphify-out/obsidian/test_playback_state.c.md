@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[face_set_state()]] - `contains` [EXTRACTED]
-- [[main()_14]] - `contains` [EXTRACTED]
+- [[main()_9]] - `contains` [EXTRACTED]
 - [[playback_step()]] - `contains` [EXTRACTED]
 - [[reset_all()]] - `contains` [EXTRACTED]
 - [[test_drain_clears_playing_and_returns_idle()]] - `contains` [EXTRACTED]
@@ -27,7 +27,7 @@ tags:
 - [[test_resume_offset_first_attempt_is_zero()]] - `contains` [EXTRACTED]
 - [[test_resume_offset_rewinds_8kb()]] - `contains` [EXTRACTED]
 - [[test_track_sent_ok_is_monotonic()]] - `contains` [EXTRACTED]
-- [[vt_agent_count()_1]] - `contains` [EXTRACTED]
-- [[vt_remote_log()_1]] - `contains` [EXTRACTED]
+- [[vt_agent_count()]] - `contains` [EXTRACTED]
+- [[vt_remote_log()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_playback_statec

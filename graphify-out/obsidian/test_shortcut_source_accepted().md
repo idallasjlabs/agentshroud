@@ -12,7 +12,7 @@ tags:
 # test_shortcut_source_accepted()
 
 ## Connections
-- [[ForwardRequest_3]] - `calls` [EXTRACTED]
+- [[ForwardRequest_1]] - `calls` [EXTRACTED]
 - [[The iOSmacOS Shortcuts source value ('shortcut') is on the allowlist.]] - `rationale_for` [EXTRACTED]
 - [[test_security.py]] - `contains` [EXTRACTED]
 

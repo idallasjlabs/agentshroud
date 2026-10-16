@@ -17,9 +17,9 @@ tags:
 - [[Key Classes  Functions_27]] - `contains` [EXTRACTED]
 - [[Methods Filtered (Inbound)]] - `contains` [EXTRACTED]
 - [[Methods Filtered (Outbound)]] - `contains` [EXTRACTED]
-- [[Purpose_144]] - `contains` [EXTRACTED]
+- [[Purpose_130]] - `contains` [EXTRACTED]
 - [[Related_31]] - `contains` [EXTRACTED]
-- [[Responsibilities_29]] - `contains` [EXTRACTED]
+- [[Responsibilities_28]] - `contains` [EXTRACTED]
 - [[telegram_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/telegram_proxypy
