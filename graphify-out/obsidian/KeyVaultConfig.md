@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "RBACConfig"
+community: "KeyVault"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBACConfig
+  - community/KeyVault
 ---
 
 # KeyVaultConfig
 
 ## Connections
-- [[.__init__()_89]] - `references` [EXTRACTED]
-- [[._make_vault_pipeline()]] - `calls` [EXTRACTED]
-- [[.test_detect_api_key_patterns()]] - `calls` [EXTRACTED]
-- [[.test_key_vault_init()]] - `calls` [EXTRACTED]
-- [[TestAuditChain]] - `uses` [INFERRED]
+- [[dot-__init__()_118]] - `references` [EXTRACTED]
+- [[dot-_make_vault_pipeline()]] - `calls` [EXTRACTED]
+- [[dot-test_detect_api_key_patterns()]] - `calls` [EXTRACTED]
+- [[dot-test_key_vault_init()]] - `calls` [EXTRACTED]
+- [[TestAuditChain_1]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
-- [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth_1]] - `uses` [INFERRED]
+- [[TestAuditTrail]] - `uses` [INFERRED]
+- [[TestAuth]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard_1]] - `uses` [INFERRED]
+- [[TestContextGuard]] - `uses` [INFERRED]
 - [[TestContextGuardInPipeline]] - `uses` [INFERRED]
 - [[TestContextIntegrityInPipeline]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
@@ -39,20 +39,20 @@ tags:
 - [[TestLoggingSecurity]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
-- [[TestPIIDetection_1]] - `uses` [INFERRED]
+- [[TestPIIDetection]] - `uses` [INFERRED]
 - [[TestPromptGuard]] - `uses` [INFERRED]
 - [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
-- [[TestSupplyChain_1]] - `uses` [INFERRED]
+- [[TestSupplyChain]] - `uses` [INFERRED]
 - [[TestTrustViolationRecording]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
-- [[config()]] - `calls` [EXTRACTED]
+- [[config()_3]] - `calls` [EXTRACTED]
 - [[key_vault.py]] - `contains` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_key_vault.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBACConfig
+#graphify/code #graphify/INFERRED #community/KeyVault

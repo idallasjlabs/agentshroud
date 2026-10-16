@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "test_llm_proxy_failover.py"
+community: "MiddlewareManager"
 location: "L499"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxy_failoverpy
+  - community/MiddlewareManager
 ---
 
 # Monitor-mode sandbox for comparison testing.
 
 ## Connections
-- [[.monitor_sandbox()]] - `rationale_for` [EXTRACTED]
+- [[dot-monitor_sandbox()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_failoverpy
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

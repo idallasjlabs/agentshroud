@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0.md"
 type: "document"
-community: "test_hermes_cron_seed.py"
+community: "Findings"
 location: "L62"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_hermes_cron_seedpy
+  - community/Findings
 ---
 
 # L1: State Dir is a Symlink
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LOW — Informational_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_hermes_cron_seedpy
+#graphify/document #graphify/EXTRACTED #community/Findings

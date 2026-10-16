@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "rationale"
-community: "MemoryIntegrityMonitor"
+community: "TrustConfig"
 location: "L191"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/TrustConfig
 ---
 
 # MALICIOUS_INTENT drops a level even when the score would not.
 
 ## Connections
-- [[.test_severe_violation_forces_demotion()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_severe_violation_forces_demotion()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/rationale #graphify/EXTRACTED #community/TrustConfig

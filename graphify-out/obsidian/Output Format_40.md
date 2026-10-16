@@ -1,17 +1,20 @@
 ---
-source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "test_jira_weekly_review.py"
-location: "L129"
+community: "Daedalus — Concept Illustrator"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_jira_weekly_reviewpy
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Output Format
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor_3]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_5]] - `contains` [EXTRACTED]
+- [[architecture.puml (PlantUML)_2]] - `contains` [EXTRACTED]
+- [[diagramsREADME_3]] - `contains` [EXTRACTED]
+- [[flow.mmd (Mermaid)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_jira_weekly_reviewpy
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

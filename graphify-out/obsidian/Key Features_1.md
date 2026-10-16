@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/python-jose.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "A2APolicyEngine"
-location: "L23"
+community: "SecureBrowser Skill"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/SecureBrowser_Skill
 ---
 
 # Key Features
 
 ## Connections
-- [[python-jose_1]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

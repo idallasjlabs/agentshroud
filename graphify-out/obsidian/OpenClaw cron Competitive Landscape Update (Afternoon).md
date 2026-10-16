@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/openclaw/config/cron/jobs.json"
 type: "code"
-community: "Skill: Test-Driven Development (TDD)"
+community: "competitive-report-*.md dated reports"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_Test-Driven_Development_TDD
+  - community/competitive-report-md_dated_reports
 ---
 
 # OpenClaw cron: Competitive Landscape Update (Afternoon)
@@ -17,4 +17,4 @@ tags:
 - [[competitive-report-.md dated reports]] - `references` [EXTRACTED]
 - [[trend-log.md artifact]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD
+#graphify/code #graphify/EXTRACTED #community/competitive-report-md_dated_reports

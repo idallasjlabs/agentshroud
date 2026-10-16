@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "WebProxyConfig"
+community: "PIIConfig"
 location: "L182"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/PIIConfig
 ---
 
 # Injecting a system-level override via a follow-up message is blocked.
 
 ## Connections
-- [[.test_cross_context_injection_blocked()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_cross_context_injection_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "TelegramAPIProxy"
 location: "L8022"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/TelegramAPIProxy
 ---
 
 # On construction, _runtime_revoked_collaborators must be backed by the         pe
 
 ## Connections
-- [[.test_proxy_seeds_runtime_revoked_from_persisted_paused_set()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_proxy_seeds_runtime_revoked_from_persisted_paused_set()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

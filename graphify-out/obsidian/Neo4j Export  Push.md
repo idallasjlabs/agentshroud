@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/exports.md"
 type: "concept"
-community: "Cron: Collaborator Daily Digest"
+community: "Neo4j Export / Push"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Cron_Collaborator_Daily_Digest
+  - community/Neo4j_Export_/_Push
 ---
 
 # Neo4j Export / Push
 
-#graphify/concept #graphify/EXTRACTED #community/Cron_Collaborator_Daily_Digest
+#graphify/concept #graphify/EXTRACTED #community/Neo4j_Export_/_Push

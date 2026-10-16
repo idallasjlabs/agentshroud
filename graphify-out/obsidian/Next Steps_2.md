@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md"
+source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "ContextSegment"
-location: "L293"
+community: "OpenClaw Bot SSH Configuration"
+location: "L366"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/OpenClaw_Bot_SSH_Configuration
 ---
 
 # Next Steps
 
 ## Connections
-- [[PHASE_3A_3B_IMPLEMENTATION]] - `contains` [EXTRACTED]
+- [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ContextSegment
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

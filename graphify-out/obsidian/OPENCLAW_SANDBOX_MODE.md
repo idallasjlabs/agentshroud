@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
 type: "document"
-community: "lvgl_kawaii_face.c"
+community: "AGENTSHROUD_MODE"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/lvgl_kawaii_facec
+  - graphify/EXTRACTED
+  - community/AGENTSHROUD_MODE
 ---
 
 # OPENCLAW_SANDBOX_MODE.md
@@ -15,6 +15,6 @@ tags:
 - [[AGENTSHROUD_MODE]] - `semantically_similar_to` [INFERRED]
 - [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - `references` [EXTRACTED]
 - [[OPENCLAW_SANDBOX_MODE_1]] - `contains` [EXTRACTED]
-- [[agent_isolation.py]] - `references` [INFERRED]
+- [[agent_isolation.py_2]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/lvgl_kawaii_facec
+#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_MODE

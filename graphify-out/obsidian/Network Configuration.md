@@ -1,17 +1,17 @@
 ---
 source_file: "docs/architecture/adr/ADR-003-two-network-container-isolation.md"
 type: "document"
-community: "Dockerfile — Bot (OpenClaw)"
+community: "ADR-003: Two-Network Container Isolation"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dockerfile__Bot_OpenClaw
+  - community/ADR-003_Two-Network_Container_Isolation
 ---
 
 # Network Configuration
 
 ## Connections
-- [[Decision_4]] - `contains` [EXTRACTED]
+- [[Decision_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/ADR-003_Two-Network_Container_Isolation

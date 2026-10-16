@@ -1,11 +1,11 @@
 ---
 source_file: "docs/governance/AGENT_ROLES.md"
 type: "document"
-community: "TestMultiBotContextvarRouting"
+community: "Multi-Agent Role Matrix"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMultiBotContextvarRouting
+  - community/Multi-Agent_Role_Matrix
 ---
 
 # Multi-Agent Role Matrix (AGENT_ROLES.md)
@@ -16,4 +16,4 @@ tags:
 - [[Escalation Path]] - `references` [EXTRACTED]
 - [[Security-Sensitive Paths]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMultiBotContextvarRouting
+#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix

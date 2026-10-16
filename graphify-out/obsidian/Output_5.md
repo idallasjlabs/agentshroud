@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "TestMultiBotIsolation"
+community: "AgentShroud Red Team Adversarial Tester"
 location: "L354"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMultiBotIsolation
+  - community/AgentShroud_Red_Team_Adversarial_Tester
 ---
 
 # Output
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Red Team Adversarial Tester_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMultiBotIsolation
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester

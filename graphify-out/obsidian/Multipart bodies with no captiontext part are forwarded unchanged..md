@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "test_ptt_state.c"
+community: "TestMultipartOutboundPipeline"
 location: "L5151"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_ptt_statec
+  - community/TestMultipartOutboundPipeline
 ---
 
 # Multipart bodies with no caption/text part are forwarded unchanged.
 
 ## Connections
-- [[.test_multipart_without_text_part_passes_through()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_multipart_without_text_part_passes_through()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_ptt_statec
+#graphify/rationale #graphify/EXTRACTED #community/TestMultipartOutboundPipeline

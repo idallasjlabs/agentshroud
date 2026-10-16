@@ -1,17 +1,17 @@
 ---
-source_file: "docs/runbooks/colima-docker-guide.md"
+source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "TestPromptProtection"
-location: "L137"
+community: "main.py.md"
+location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestPromptProtection
+  - community/mainpymd
 ---
 
 # Logs
 
 ## Connections
-- [[5. Container Management]] - `contains` [EXTRACTED]
+- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestPromptProtection
+#graphify/document #graphify/EXTRACTED #community/mainpymd

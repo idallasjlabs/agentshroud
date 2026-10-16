@@ -1,18 +1,23 @@
 ---
-source_file: "docs/project/glossary.md"
-type: "concept"
-community: "test_dashboard_endpoints.py"
+source_file: "docs/vault/05 - Dependencies/openclaw.md"
+type: "document"
+community: "agentshroud-bot"
+location: "L9"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/agentshroud-bot
 ---
 
 # OpenClaw
 
 ## Connections
-- [[AgentShroud v0.8.0 Watchtower — Execution Summary (Draft)]] - `references` [EXTRACTED]
-- [[OPENCLAW_SETUP]] - `references` [EXTRACTED]
-- [[TELEGRAM_GMAIL_SETUP]] - `references` [EXTRACTED]
+- [[Config Location]] - `contains` [EXTRACTED]
+- [[Key Intercepted Paths]] - `contains` [EXTRACTED]
+- [[Purpose_139]] - `contains` [EXTRACTED]
+- [[Related Notes_50]] - `contains` [EXTRACTED]
+- [[Role in AgentShroud]] - `contains` [EXTRACTED]
+- [[Version Note]] - `contains` [EXTRACTED]
+- [[openclaw]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/document #graphify/EXTRACTED #community/agentshroud-bot

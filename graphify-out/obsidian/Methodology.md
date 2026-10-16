@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Mode A — Single task"
+community: "AgentShroud Blue Team Security Auditor"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # Methodology
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AgentShroud Blue Team Security Auditor]] - `contains` [EXTRACTED]
 - [[Heat Map Legend]] - `contains` [EXTRACTED]
-- [[Loss Categories]] - `contains` [EXTRACTED]
+- [[Loss Categories_1]] - `contains` [EXTRACTED]
 - [[Unsafe Control Actions (UCAs)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

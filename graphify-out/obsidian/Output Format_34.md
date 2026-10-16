@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-qa/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-oracle/SKILL.md"
 type: "document"
-community: "TestParanoidConfig"
-location: "L27"
+community: "Oracle — Feedback Analyst"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestParanoidConfig
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Quality Assurance (QA)_2]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestParanoidConfig
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

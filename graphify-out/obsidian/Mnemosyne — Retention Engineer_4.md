@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mnemosyne/README.md"
+source_file: "docker/config/hermes/skills/i-mnemosyne/README.md"
 type: "document"
-community: "TestRunningImageResolution"
+community: "Mnemosyne — Retention Engineer"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestRunningImageResolution
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Mnemosyne — Retention Engineer
 
 ## Connections
-- [[Purpose_94]] - `contains` [EXTRACTED]
-- [[README_99]] - `contains` [EXTRACTED]
-- [[Related Skills_103]] - `contains` [EXTRACTED]
-- [[SKILL_142]] - `contains` [EXTRACTED]
-- [[Usage_104]] - `contains` [EXTRACTED]
+- [[Purpose_174]] - `contains` [EXTRACTED]
+- [[Related Skills_116]] - `contains` [EXTRACTED]
+- [[Usage_125]] - `contains` [EXTRACTED]
+- [[hermesskillsi-mnemosyneREADME]] - `contains` [EXTRACTED]
+- [[hermesskillsi-mnemosyneSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestRunningImageResolution
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

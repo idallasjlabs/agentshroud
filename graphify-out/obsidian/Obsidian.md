@@ -1,19 +1,19 @@
 ---
 source_file: "skills/openclaw/obsidian/SKILL.md"
 type: "document"
-community: "chat_console.py"
+community: "notion"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/chat_consolepy
+  - community/notion
 ---
 
 # Obsidian
 
 ## Connections
 - [[Find the active vault(s)]] - `contains` [EXTRACTED]
-- [[SKILL_219]] - `contains` [EXTRACTED]
 - [[obsidian-cli quick start]] - `contains` [EXTRACTED]
+- [[obsidianSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/chat_consolepy
+#graphify/document #graphify/EXTRACTED #community/notion

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
+source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "document"
-community: "AgentShroud Changelog"
-location: "L72"
+community: "ADR-009: Enforce-by-Default Security Philosophy"
+location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Changelog
+  - community/ADR-009_Enforce-by-Default_Security_Philosophy
 ---
 
 # Negative Consequences
 
 ## Connections
-- [[Consequences]] - `contains` [EXTRACTED]
+- [[Consequences_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Changelog
+#graphify/document #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy

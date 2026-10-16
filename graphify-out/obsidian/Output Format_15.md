@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
+source_file: "docs/claude-security-audit-prompt.md"
 type: "document"
-community: "_make_tm()"
-location: "L36"
+community: "AgentShroud v0.8.0 — Full Security & Functionality Audit"
+location: "L266"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_make_tm
+  - community/AgentShroud_v080__Full_Security__Functionality_Audit
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Code Review (CR)_1]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_make_tm
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080__Full_Security__Functionality_Audit

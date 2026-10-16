@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TestGroupMemoryNamespaceIsolation"
+community: "TestWebSearchLog"
 location: "L3753"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestGroupMemoryNamespaceIsolation
+  - community/TestWebSearchLog
 ---
 
 # Owner chat: raw web_search JSON produces 'Switch to tool-capable model' message.
 
 ## Connections
-- [[.test_raw_web_search_json_owner_message()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_raw_web_search_json_owner_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestGroupMemoryNamespaceIsolation
+#graphify/rationale #graphify/EXTRACTED #community/TestWebSearchLog

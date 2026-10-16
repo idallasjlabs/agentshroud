@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "Obsidian core-plugins.json"
+community: "MCPPolicyEngine.enforce"
 location: "line:401"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Obsidian_core-pluginsjson
+  - community/MCPPolicyEngineenforce
 ---
 
 # MCPPolicyEngine.enforce()
 
-#graphify/code #graphify/EXTRACTED #community/Obsidian_core-pluginsjson
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngineenforce

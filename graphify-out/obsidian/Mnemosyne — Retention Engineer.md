@@ -1,21 +1,24 @@
 ---
-source_file: ".agents/skills/i-mnemosyne/README.md"
+source_file: "docker/config/openclaw/skills/i-mnemosyne/SKILL.md"
 type: "document"
-community: "Workflow: Survey → Draft → Inject → Confirm"
-location: "L1"
+community: "Mnemosyne — Retention Engineer"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workflow_Survey__Draft__Inject__Confirm
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Mnemosyne — Retention Engineer
 
 ## Connections
-- [[Purpose_20]] - `contains` [EXTRACTED]
-- [[README_20]] - `contains` [EXTRACTED]
-- [[Related Skills_23]] - `contains` [EXTRACTED]
-- [[SKILL_36]] - `contains` [EXTRACTED]
-- [[Usage_23]] - `contains` [EXTRACTED]
+- [[Input Requirements_5]] - `contains` [EXTRACTED]
+- [[Output Format_4]] - `contains` [EXTRACTED]
+- [[Persona_4]] - `contains` [EXTRACTED]
+- [[Quality Checklist_5]] - `contains` [EXTRACTED]
+- [[Role_8]] - `contains` [EXTRACTED]
+- [[System Prompt_4]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-mnemosyneSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

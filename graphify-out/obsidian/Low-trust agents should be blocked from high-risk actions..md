@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "MemoryIntegrityMonitor"
+community: "AlertDispatcher"
 location: "L429"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/AlertDispatcher
 ---
 
 # Low-trust agents should be blocked from high-risk actions.
 
 ## Connections
-- [[.test_trust_level_enforcement()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_trust_level_enforcement()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

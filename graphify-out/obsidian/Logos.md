@@ -1,12 +1,12 @@
 ---
 source_file: "branding/README.md"
 type: "document"
-community: "AgentShroud Security Architecture"
+community: "AgentShroud™ Brand Guidelines"
 location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Logos
@@ -17,4 +17,4 @@ tags:
 - [[Available Formats]] - `contains` [EXTRACTED]
 - [[Logo Usage_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

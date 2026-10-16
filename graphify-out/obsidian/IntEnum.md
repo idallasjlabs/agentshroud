@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Daedalus — Concept Illustrator"
+community: "Recommendation"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator
+  - community/Recommendation
 ---
 
 # IntEnum
@@ -19,4 +19,4 @@ tags:
 - [[ThreatLevel_1]] - `inherits` [EXTRACTED]
 - [[TrustLevel_1]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator
+#graphify/code #graphify/EXTRACTED #community/Recommendation

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/project/legal/USPTO-APPLICATION.md"
+source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "TestKillSwitchVerification"
-location: "L102"
+community: "Phase 3 Requirements: Working Chat Container"
+location: "L364"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestKillSwitchVerification
+  - community/Phase_3_Requirements_Working_Chat_Container
 ---
 
 # Notes
 
 ## Connections
-- [[USPTO Trademark Application — AgentShroud™]] - `contains` [EXTRACTED]
+- [[Phase 3 Requirements Working Chat Container]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestKillSwitchVerification
+#graphify/document #graphify/EXTRACTED #community/Phase_3_Requirements_Working_Chat_Container

@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt"
 type: "document"
-community: "Gemini CLI (SECONDARY agent configuration)"
+community: "Newsletter: Coding Agent CLIs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gemini_CLI_SECONDARY_agent_configuration
+  - community/Newsletter_Coding_Agent_CLIs
 ---
 
 # Newsletter: Coding Agent CLIs
 
-#graphify/document #graphify/EXTRACTED #community/Gemini_CLI_SECONDARY_agent_configuration
+#graphify/document #graphify/EXTRACTED #community/Newsletter_Coding_Agent_CLIs

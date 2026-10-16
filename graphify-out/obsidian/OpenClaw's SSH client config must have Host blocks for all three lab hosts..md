@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "MCPToolCall"
+community: "ForwardRequest"
 location: "L760"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/ForwardRequest
 ---
 
 # OpenClaw's SSH client config must have Host blocks for all three lab hosts.
 
 ## Connections
-- [[.test_openclaw_ssh_config_allows_all_lab_hosts()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_openclaw_ssh_config_allows_all_lab_hosts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPToolCall
+#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest

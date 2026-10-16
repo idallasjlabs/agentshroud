@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/hooks.md"
 type: "concept"
-community: "Cron: Collaborator Report - Morning"
+community: "Native CLAUDE.md Integration"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Cron_Collaborator_Report_-_Morning
+  - community/Native_CLAUDEmd_Integration
 ---
 
 # Native CLAUDE.md Integration
 
-#graphify/concept #graphify/EXTRACTED #community/Cron_Collaborator_Report_-_Morning
+#graphify/concept #graphify/EXTRACTED #community/Native_CLAUDEmd_Integration

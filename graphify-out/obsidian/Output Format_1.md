@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sav/SKILL.md"
+source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
 type: "document"
-community: "One Shroud Over Every Wire (founding mantra)"
-location: "L396"
+community: "Hermes — Reference Verifier"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/One_Shroud_Over_Every_Wire_founding_mantra
+  - community/Hermes__Reference_Verifier
 ---
 
-# OUTPUT FORMAT
+# Output Format
 
 ## Connections
-- [[System Audit Vault (Obsidian)_1]] - `contains` [EXTRACTED]
+- [[Hermes — Reference Verifier_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/One_Shroud_Over_Every_Wire_founding_mantra
+#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier

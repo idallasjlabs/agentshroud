@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "LLMProxy"
+community: "GitGuard"
 location: "L434"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/GitGuard
 ---
 
 # Monitor for git clone and npm install operations.
 
 ## Connections
-- [[.monitor_git_operations()]] - `rationale_for` [EXTRACTED]
+- [[dot-monitor_git_operations()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LLMProxy
+#graphify/rationale #graphify/EXTRACTED #community/GitGuard

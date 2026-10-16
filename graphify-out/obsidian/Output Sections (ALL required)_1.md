@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-pca/SKILL.md"
+source_file: ".agents/skills/i-pca/SKILL.md"
 type: "document"
-community: "Vulcan — Subject Matter Auditor"
+community: "Output Sections (ALL required)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Vulcan__Subject_Matter_Auditor
+  - community/Output_Sections_ALL_required
 ---
 
 # Output Sections (ALL required)
@@ -15,12 +15,11 @@ tags:
 - [[1. Scope of Change_1]] - `contains` [EXTRACTED]
 - [[2. What Changes and Why_1]] - `contains` [EXTRACTED]
 - [[3. Scalability Gate_1]] - `contains` [EXTRACTED]
-- [[4. Blast Radius_2]] - `contains` [EXTRACTED]
+- [[4. Blast Radius_4]] - `contains` [EXTRACTED]
 - [[5. Known Limits and Assumptions_1]] - `contains` [EXTRACTED]
 - [[6. Alternatives Considered_1]] - `contains` [EXTRACTED]
 - [[7. Open Questions_1]] - `contains` [EXTRACTED]
-- [[8. Verification Plan]] - `contains` [EXTRACTED]
-- [[Skill Pre-Change Analysis (PCA)_1]] - `contains` [EXTRACTED]
+- [[Skill Pre-Change Analysis (PCA)]] - `contains` [EXTRACTED]
 - [[Verification Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor
+#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required

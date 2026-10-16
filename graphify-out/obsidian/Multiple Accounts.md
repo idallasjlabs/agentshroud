@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: "test_ledger.py"
+community: "Common Operations"
 location: "L201"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_ledgerpy
+  - community/Common_Operations
 ---
 
 # Multiple Accounts
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Himalaya Email CLI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_ledgerpy
+#graphify/document #graphify/EXTRACTED #community/Common_Operations

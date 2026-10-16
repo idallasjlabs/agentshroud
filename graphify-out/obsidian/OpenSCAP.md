@@ -1,24 +1,19 @@
 ---
 source_file: "docs/vault/05 - Dependencies/openscap.md"
 type: "document"
-community: "AgentShroud Blue Team Security Auditor"
-location: "L10"
+community: "All Dependencies.md"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Blue_Team_Security_Auditor
+  - community/All_Dependenciesmd
 ---
 
-# OpenSCAP
+# openscap.md
 
 ## Connections
-- [[Installation in Gateway]] - `contains` [EXTRACTED]
-- [[Integration Testing]] - `contains` [EXTRACTED]
-- [[Key Commands]] - `contains` [EXTRACTED]
-- [[Purpose_189]] - `contains` [EXTRACTED]
-- [[Related Notes_44]] - `contains` [EXTRACTED]
-- [[Relationship to Other Security Tools]] - `contains` [EXTRACTED]
-- [[What It Checks_1]] - `contains` [EXTRACTED]
-- [[openscap]] - `contains` [EXTRACTED]
+- [[OpenSCAP_1]] - `contains` [EXTRACTED]
+- [[clamav]] - `conceptually_related_to` [EXTRACTED]
+- [[trivy_1]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

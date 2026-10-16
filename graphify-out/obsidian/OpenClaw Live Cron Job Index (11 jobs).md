@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/JOBS-REFERENCE.md"
 type: "document"
-community: "run_test()"
+community: "Report Delivery Format Instructions"
 location: "L55-L77"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/run_test
+  - community/Report_Delivery_Format_Instructions
 ---
 
 # OpenClaw Live Cron Job Index (11 jobs)
@@ -23,4 +23,4 @@ tags:
 - [[OpenClaw Live Cron Store (SQLite on agentshroud-config volume)]] - `shares_data_with` [EXTRACTED]
 - [[Scheduled Actions & Automation (in-container cron)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/run_test
+#graphify/document #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions

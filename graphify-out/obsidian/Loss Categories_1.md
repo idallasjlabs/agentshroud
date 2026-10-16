@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
+source_file: ".agents/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "mcp_inspector.py"
+community: "AgentShroud Blue Team Security Auditor"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_inspectorpy
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # Loss Categories
 
 ## Connections
-- [[Methodology_1]] - `contains` [EXTRACTED]
+- [[Methodology]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

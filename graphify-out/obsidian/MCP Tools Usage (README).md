@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-mcpm/README.md"
 type: "document"
-community: "_w()"
+community: "Production Safety Checklist (SKILL)"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/_w
+  - graphify/EXTRACTED
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # MCP Tools Usage (README)
@@ -14,4 +14,4 @@ tags:
 - [[MCP Tools Usage (SKILL)]] - `conceptually_related_to` [INFERRED]
 - [[Skills Guide (catalog)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/_w
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

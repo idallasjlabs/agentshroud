@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
 type: "document"
-community: "test_jira_weekly_review.py"
+community: "AgentShroud Blue Team Security Auditor"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_jira_weekly_reviewpy
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # Loss Categories
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Methodology_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_jira_weekly_reviewpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

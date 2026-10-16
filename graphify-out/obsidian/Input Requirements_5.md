@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-hermes/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mnemosyne/SKILL.md"
 type: "document"
-community: "HIGH — Should Fix Before Release"
+community: "Mnemosyne — Retention Engineer"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/HIGH__Should_Fix_Before_Release
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Input Requirements
 
 ## Connections
-- [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/HIGH__Should_Fix_Before_Release
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

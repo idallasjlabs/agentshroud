@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/README.md"
 type: "document"
-community: "iot_button_register_cb()"
+community: "MCP Auth Reset (MCPM-AUTH-RESET)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iot_button_register_cb
+  - community/MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # MCP Auth Reset (MCPM-AUTH-RESET)
 
 ## Connections
-- [[Purpose_53]] - `contains` [EXTRACTED]
-- [[README_58]] - `contains` [EXTRACTED]
-- [[Related Skills_56]] - `contains` [EXTRACTED]
-- [[Usage_59]] - `contains` [EXTRACTED]
+- [[Purpose_44]] - `contains` [EXTRACTED]
+- [[Related Skills_37]] - `contains` [EXTRACTED]
+- [[Usage_40]] - `contains` [EXTRACTED]
+- [[openclawskillsi-mcpm-auth-resetREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iot_button_register_cb
+#graphify/document #graphify/EXTRACTED #community/MCP_Auth_Reset_MCPM-AUTH-RESET

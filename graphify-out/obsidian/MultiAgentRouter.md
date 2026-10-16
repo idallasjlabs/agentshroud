@@ -1,34 +1,34 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "ApprovalRequest"
+community: "DataLedger"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/DataLedger
 ---
 
 # MultiAgentRouter
 
 ## Connections
-- [[.__init__()_15]] - `method` [EXTRACTED]
-- [[._build_forward_payload()]] - `method` [EXTRACTED]
-- [[.disabled_client()]] - `calls` [EXTRACTED]
-- [[.forward_to_agent()]] - `method` [EXTRACTED]
-- [[.forward_to_agent_stream()]] - `method` [EXTRACTED]
-- [[.health_check()]] - `method` [EXTRACTED]
-- [[.list_targets()]] - `method` [EXTRACTED]
-- [[.no_approval_client()]] - `calls` [EXTRACTED]
-- [[.register_bots()]] - `method` [EXTRACTED]
-- [[.resolve_target()]] - `method` [EXTRACTED]
+- [[dot-__init__()_135]] - `method` [EXTRACTED]
+- [[dot-_build_forward_payload()]] - `method` [EXTRACTED]
+- [[dot-disabled_client()]] - `calls` [EXTRACTED]
+- [[dot-forward_to_agent()]] - `method` [EXTRACTED]
+- [[dot-forward_to_agent_stream()]] - `method` [EXTRACTED]
+- [[dot-health_check()_4]] - `method` [EXTRACTED]
+- [[dot-list_targets()]] - `method` [EXTRACTED]
+- [[dot-no_approval_client()]] - `calls` [EXTRACTED]
+- [[dot-register_bots()]] - `method` [EXTRACTED]
+- [[dot-resolve_target()]] - `method` [EXTRACTED]
 - [[AgentTarget]] - `uses` [INFERRED]
 - [[AppState]] - `uses` [INFERRED]
 - [[FastAPI_1]] - `uses` [INFERRED]
-- [[ForwardRequest]] - `uses` [INFERRED]
+- [[ForwardRequest_3]] - `uses` [INFERRED]
 - [[HTTPForwarder]] - `semantically_similar_to` [INFERRED]
-- [[LogRecord]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[LogRecord_2]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
 - [[Routes content to appropriate agent containers      Routing priority     1. Exp]] - `rationale_for` [EXTRACTED]
 - [[TestSSHDisabledEndpoint]] - `uses` [INFERRED]
 - [[TestSSHExec]] - `uses` [INFERRED]
@@ -42,15 +42,15 @@ tags:
 - [[TestSSHWriteFileLedgerAudit]] - `uses` [INFERRED]
 - [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - `uses` [INFERRED]
 - [[_DropInvalidHTTPRequestFilter]] - `uses` [INFERRED]
-- [[client()_16]] - `calls` [EXTRACTED]
 - [[client()_17]] - `calls` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[client()_18]] - `calls` [EXTRACTED]
+- [[ingest_apirouter.py]] - `contains` [EXTRACTED]
+- [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[main.py_3]] - `references` [EXTRACTED]
-- [[router()_2]] - `calls` [EXTRACTED]
+- [[main.py]] - `references` [EXTRACTED]
 - [[router()_1]] - `calls` [EXTRACTED]
-- [[router()_3]] - `calls` [EXTRACTED]
-- [[router.py]] - `contains` [EXTRACTED]
+- [[router()]] - `calls` [EXTRACTED]
+- [[router()_2]] - `calls` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[test_hermes_and_openclaw_coexist()]] - `calls` [EXTRACTED]
 - [[test_resolves_hermes_target()]] - `calls` [EXTRACTED]
@@ -60,4 +60,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/code #graphify/EXTRACTED #community/DataLedger

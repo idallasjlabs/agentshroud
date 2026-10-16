@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/transcribe.md"
 type: "rationale"
-community: "AgentShroud GitHub Social Preview Image"
+community: "LLM writes its own Whisper domain-hint prompt"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_GitHub_Social_Preview_Image
+  - community/LLM_writes_its_own_Whisper_domain-hint_prompt
 ---
 
 # LLM writes its own Whisper domain-hint prompt
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_GitHub_Social_Preview_Image
+#graphify/rationale #graphify/EXTRACTED #community/LLM_writes_its_own_Whisper_domain-hint_prompt

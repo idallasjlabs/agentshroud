@@ -12,6 +12,6 @@ tags:
 # Log browser action to audit trail
 
 ## Connections
-- [[._log_action()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-_log_action()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

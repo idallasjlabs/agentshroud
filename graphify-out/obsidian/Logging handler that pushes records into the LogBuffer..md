@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "rationale"
-community: "CredentialInjector"
+community: "dashboard_endpoints.py"
 location: "L173"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CredentialInjector
+  - community/dashboard_endpointspy
 ---
 
 # Logging handler that pushes records into the LogBuffer.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[BufferHandler]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CredentialInjector
+#graphify/rationale #graphify/EXTRACTED #community/dashboard_endpointspy

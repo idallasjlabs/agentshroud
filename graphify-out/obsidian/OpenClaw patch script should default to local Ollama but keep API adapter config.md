@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "MCPToolCall"
+community: "ForwardRequest"
 location: "L593"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/ForwardRequest
 ---
 
 # OpenClaw patch script should default to local Ollama but keep API adapter config
 
 ## Connections
-- [[.test_openclaw_patch_defaults_to_qwen_local_model()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_openclaw_patch_defaults_to_qwen_local_model()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPToolCall
+#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest

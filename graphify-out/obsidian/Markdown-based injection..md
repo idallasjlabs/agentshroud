@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "ProgressiveLockdown"
+community: "AlertDispatcher"
 location: "L279"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/AlertDispatcher
 ---
 
 # Markdown-based injection.
 
 ## Connections
-- [[.test_prompt_leaking_via_markdown()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_prompt_leaking_via_markdown()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

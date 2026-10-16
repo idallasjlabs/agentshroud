@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
 type: "document"
-community: "TestInternalBannerMatcher"
+community: "OpenClaw Control UI Pairing Instructions"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestInternalBannerMatcher
+  - community/OpenClaw_Control_UI_Pairing_Instructions
 ---
 
 # OpenClaw Control UI Pairing Instructions
@@ -16,8 +16,8 @@ tags:
 - [[Alternative Auto-Pairing URL]] - `contains` [EXTRACTED]
 - [[Get Token Again]] - `contains` [EXTRACTED]
 - [[PAIRING_INSTRUCTIONS]] - `contains` [EXTRACTED]
-- [[Security Note]] - `contains` [EXTRACTED]
-- [[Troubleshooting_30]] - `contains` [EXTRACTED]
+- [[Security Note_1]] - `contains` [EXTRACTED]
+- [[Troubleshooting_36]] - `contains` [EXTRACTED]
 - [[✅ Step-by-Step Pairing Process]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestInternalBannerMatcher
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Control_UI_Pairing_Instructions

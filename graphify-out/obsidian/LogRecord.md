@@ -1,26 +1,17 @@
 ---
-source_file: "gateway/ingest_api/lifespan.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "test_telegram_proxy_outbound.py"
-location: "L64"
+community: "AlertDispatcher"
+location: "L63"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/test_telegram_proxy_outboundpy
+  - graphify/EXTRACTED
+  - community/AlertDispatcher
 ---
 
 # LogRecord
 
 ## Connections
-- [[.filter()]] - `references` [EXTRACTED]
-- [[AlertTelegramRelay]] - `uses` [INFERRED]
-- [[DataLedger]] - `uses` [INFERRED]
-- [[EventBus]] - `uses` [INFERRED]
-- [[GroupRegistry]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MultiAgentRouter]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
+- [[dot-filter()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_telegram_proxy_outboundpy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

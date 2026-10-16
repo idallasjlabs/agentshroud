@@ -1,13 +1,13 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "Browser — Secure Browser Automation README"
+community: "MCP Integrations (GitHub, Atlassian, AWS, XMind)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_README
+  - community/MCP_Integrations_GitHub_Atlassian_AWS_XMind
 ---
 
 # MCP Integrations (GitHub, Atlassian, AWS, XMind)
 
-#graphify/concept #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_README
+#graphify/concept #graphify/EXTRACTED #community/MCP_Integrations_GitHub_Atlassian_AWS_XMind

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docker_compose.py"
 type: "rationale"
-community: "PodmanEngine"
+community: "TestProductionCompose"
 location: "L27"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PodmanEngine
+  - community/TestProductionCompose
 ---
 
 # Load raw text of a compose file.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_load_compose_raw()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PodmanEngine
+#graphify/rationale #graphify/EXTRACTED #community/TestProductionCompose

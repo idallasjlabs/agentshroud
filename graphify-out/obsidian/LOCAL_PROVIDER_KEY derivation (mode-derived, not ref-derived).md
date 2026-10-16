@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/apply-patches.js"
 type: "code"
-community: "AuditChain"
+community: "apply-patches.js"
 location: "44-61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/apply-patchesjs
 ---
 
 # LOCAL_PROVIDER_KEY derivation (mode-derived, not ref-derived)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[apply-patches.js]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/apply-patchesjs

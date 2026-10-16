@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md"
 type: "document"
-community: "test_integration.py"
-location: "L79"
+community: "MCP Proxy Errors"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_integrationpy
+  - community/MCP_Proxy_Errors
 ---
 
-# MCP Proxy Errors
+# MCP Proxy Errors.md
 
 ## Connections
-- [[Error Index_1]] - `contains` [EXTRACTED]
+- [[Error Index]] - `references` [EXTRACTED]
+- [[MCP Proxy Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_integrationpy
+#graphify/document #graphify/EXTRACTED #community/MCP_Proxy_Errors

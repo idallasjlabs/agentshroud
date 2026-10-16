@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/config.py"
 type: "rationale"
-community: "TestAlertDispatcher"
+community: "Path"
 location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestAlertDispatcher
+  - community/Path
 ---
 
 # Load configuration from environment variables.
 
 ## Connections
-- [[.from_env()]] - `rationale_for` [EXTRACTED]
+- [[dot-from_env()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestAlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/Path

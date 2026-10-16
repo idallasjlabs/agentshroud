@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "rationale"
-community: "test_e2e_proxy.py"
+community: "MCPPolicyEngine"
 location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/MCPPolicyEngine
 ---
 
 # Known/configured MCP servers must be carried into the default allowlist
 
 ## Connections
-- [[.test_configured_servers_are_allowlisted_by_default()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_configured_servers_are_allowlisted_by_default()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine

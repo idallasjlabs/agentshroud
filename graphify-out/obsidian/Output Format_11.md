@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-socrates/SKILL.md"
+source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "gh-issues — Auto-fix GitHub Issues with Parallel"
-location: "L40"
+community: "xurl — Agent Skill Reference"
+location: "L356"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel
+  - community/xurl__Agent_Skill_Reference
 ---
 
 # Output Format
 
 ## Connections
-- [[Socrates — Dialogue Architect_6]] - `contains` [EXTRACTED]
+- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel
+#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference

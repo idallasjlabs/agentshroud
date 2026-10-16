@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "3. AWS API MCP Authentication Reset"
+community: "Animation Guidelines"
 location: "L299"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/3_AWS_API_MCP_Authentication_Reset
+  - community/Animation_Guidelines
 ---
 
 # Logo Animation Constraints
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Animation Guidelines]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/3_AWS_API_MCP_Authentication_Reset
+#graphify/document #graphify/EXTRACTED #community/Animation_Guidelines

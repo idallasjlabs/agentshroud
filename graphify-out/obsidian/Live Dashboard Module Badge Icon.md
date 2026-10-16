@@ -1,11 +1,11 @@
 ---
 source_file: "branding/icons/modules/live-dashboard-256x256.png"
 type: "image"
-community: "CredentialInjector"
+community: "dashboard_endpoints.py"
 tags:
   - graphify/image
   - graphify/AMBIGUOUS
-  - community/CredentialInjector
+  - community/dashboard_endpointspy
 ---
 
 # Live Dashboard Module Badge Icon
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - `conceptually_related_to` [INFERRED]
 - [[dashboard_endpoints.py]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/image #graphify/AMBIGUOUS #community/CredentialInjector
+#graphify/image #graphify/AMBIGUOUS #community/dashboard_endpointspy

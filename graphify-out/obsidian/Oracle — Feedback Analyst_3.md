@@ -1,23 +1,23 @@
 ---
-source_file: "docker/config/hermes/skills/i-oracle/SKILL.md"
+source_file: ".agents/skills/i-oracle/SKILL.md"
 type: "document"
-community: "OpenClaw"
+community: "Oracle — Feedback Analyst"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Oracle — Feedback Analyst
 
 ## Connections
-- [[Input Requirements_17]] - `contains` [EXTRACTED]
-- [[Output Format_20]] - `contains` [EXTRACTED]
-- [[Persona_13]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-oracleSKILL]] - `contains` [EXTRACTED]
+- [[Input Requirements_18]] - `contains` [EXTRACTED]
+- [[Output Format_30]] - `contains` [EXTRACTED]
+- [[Persona_12]] - `contains` [EXTRACTED]
 - [[Quality Checklist_15]] - `contains` [EXTRACTED]
-- [[Role_60]] - `contains` [EXTRACTED]
-- [[SKILL_103]] - `contains` [EXTRACTED]
-- [[System Prompt_13]] - `contains` [EXTRACTED]
+- [[Role_78]] - `contains` [EXTRACTED]
+- [[System Prompt_12]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-vulcan/SKILL.md"
+source_file: ".agents/skills/i-socrates/SKILL.md"
 type: "document"
-community: "TestStrangerRateLimit"
-location: "L21"
+community: "Socrates — Dialogue Architect"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestStrangerRateLimit
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Input Requirements
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_1]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestStrangerRateLimit
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0.md"
 type: "document"
-community: "test_hermes_cron_seed.py"
+community: "Findings"
 location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_hermes_cron_seedpy
+  - community/Findings
 ---
 
 # M1: No Rate Limiting on Security Endpoints
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MEDIUM — Recommended]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_hermes_cron_seedpy
+#graphify/document #graphify/EXTRACTED #community/Findings

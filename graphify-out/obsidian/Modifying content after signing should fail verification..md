@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "rationale"
-community: "RBACConfig"
+community: "EnvelopeSigner"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/EnvelopeSigner
 ---
 
 # Modifying content after signing should fail verification.
 
 ## Connections
-- [[.test_tampered_content_fails()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_tampered_content_fails()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/EnvelopeSigner

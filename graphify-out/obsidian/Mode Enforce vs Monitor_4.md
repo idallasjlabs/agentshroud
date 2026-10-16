@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
 type: "document"
-community: "TestFromAuditChainEntry"
-location: "L80"
+community: "drift_detector.py"
+location: "L97"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestFromAuditChainEntry
+  - community/drift_detectorpy
 ---
 
 # Mode: Enforce vs Monitor
 
 ## Connections
-- [[dns_filter.py_2]] - `contains` [EXTRACTED]
+- [[drift_detector.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFromAuditChainEntry
+#graphify/document #graphify/EXTRACTED #community/drift_detectorpy

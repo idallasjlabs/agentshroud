@@ -1,13 +1,13 @@
 ---
 source_file: "firmware/voice-terminal/main/ota.h"
 type: "code"
-community: "Audit-log-every-fetch design rationale"
+community: "OTA API Header"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Audit-log-every-fetch_design_rationale
+  - community/OTA_API_Header
 ---
 
 # OTA API Header
 
-#graphify/code #graphify/EXTRACTED #community/Audit-log-every-fetch_design_rationale
+#graphify/code #graphify/EXTRACTED #community/OTA_API_Header

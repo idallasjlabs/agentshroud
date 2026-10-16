@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/recovery/RECOVERY_PLAN.md"
+source_file: "docs/setup/IMESSAGE_STATUS.md"
 type: "document"
-community: "sunday_run_scan_gate"
-location: "L507"
+community: "iMessage Integration Status"
+location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sunday_run_scan_gate
+  - community/iMessage_Integration_Status
 ---
 
-# NEXT STEPS
+# Next Steps
 
 ## Connections
-- [[AgentShroud Recovery Plan v0.4.0]] - `contains` [EXTRACTED]
+- [[iMessage Integration Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sunday_run_scan_gate
+#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Status

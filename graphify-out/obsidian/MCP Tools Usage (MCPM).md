@@ -1,21 +1,21 @@
 ---
-source_file: ".agents/skills/i-mcpm/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm/README.md"
 type: "document"
-community: "DNSFilterConfig"
+community: "MCP Tools Usage (MCPM)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/MCP_Tools_Usage_MCPM
 ---
 
 # MCP Tools Usage (MCPM)
 
 ## Connections
-- [[Purpose_19]] - `contains` [EXTRACTED]
-- [[README_19]] - `contains` [EXTRACTED]
-- [[Related Skills_22]] - `contains` [EXTRACTED]
-- [[SKILL_15]] - `contains` [EXTRACTED]
-- [[Usage_22]] - `contains` [EXTRACTED]
+- [[Purpose_46]] - `contains` [EXTRACTED]
+- [[Related Skills_39]] - `contains` [EXTRACTED]
+- [[Usage_42]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-mcpmREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/MCP_Tools_Usage_MCPM

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/export-bot-conversations.py"
 type: "rationale"
-community: "CollaboratorGreeter"
+community: "export-bot-conversations.py"
 location: "L123"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CollaboratorGreeter
+  - community/export-bot-conversationspy
 ---
 
 # OpenClaw message content is a list of blocks (text/tool_use/tool_result/...);
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_extract_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CollaboratorGreeter
+#graphify/rationale #graphify/EXTRACTED #community/export-bot-conversationspy

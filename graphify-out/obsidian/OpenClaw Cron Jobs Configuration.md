@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/cron/jobs.json"
 type: "document"
-community: "AuditChain"
+community: "apply-patches.js"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/AuditChain
+  - community/apply-patchesjs
 ---
 
 # OpenClaw Cron Jobs Configuration
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[apply-patches.js]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/AuditChain
+#graphify/document #graphify/INFERRED #community/apply-patchesjs

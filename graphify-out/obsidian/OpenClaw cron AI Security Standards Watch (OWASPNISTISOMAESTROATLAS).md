@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/openclaw/config/cron/jobs.json"
 type: "code"
-community: "Skills by Category"
+community: "75 Active Security Modules — no stubs, fully wired"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Skills_by_Category
+  - community/75_Active_Security_Modules__no_stubs_fully_wired
 ---
 
 # OpenClaw cron: AI Security Standards Watch (OWASP/NIST/ISO/MAESTRO/ATLAS)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[75 Active Security Modules — no stubs, fully wired]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Skills_by_Category
+#graphify/code #graphify/INFERRED #community/75_Active_Security_Modules__no_stubs_fully_wired

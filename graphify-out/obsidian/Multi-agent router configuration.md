@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "ApprovalRequest"
+community: "DataLedger"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/DataLedger
 ---
 
 # Multi-agent router configuration
 
 ## Connections
-- [[RouterConfig]] - `rationale_for` [EXTRACTED]
+- [[RouterConfig_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/rationale #graphify/EXTRACTED #community/DataLedger

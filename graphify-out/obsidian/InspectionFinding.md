@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "GitGuard"
+community: ".inspect_tool_call"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/inspect_tool_call
 ---
 
 # InspectionFinding
 
 ## Connections
-- [[._scan_text()]] - `references` [EXTRACTED]
-- [[._scan_value()]] - `references` [EXTRACTED]
-- [[._should_block()]] - `references` [EXTRACTED]
+- [[dot-_scan_text()]] - `references` [EXTRACTED]
+- [[dot-_scan_value()]] - `references` [EXTRACTED]
+- [[dot-_should_block()]] - `references` [EXTRACTED]
 - [[A single finding from inspection.]] - `rationale_for` [EXTRACTED]
-- [[__init__.py_7]] - `imports` [EXTRACTED]
 - [[mcp_inspector.py]] - `contains` [EXTRACTED]
+- [[proxy__init__.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GitGuard
+#graphify/code #graphify/EXTRACTED #community/inspect_tool_call

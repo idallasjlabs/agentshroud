@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-doctor/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "SlackAPIProxy"
+community: "MCP Doctor (MCPM-DOCTOR)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/MCP_Doctor_MCPM-DOCTOR
 ---
 
 # MCP Doctor (MCPM-DOCTOR)
 
 ## Connections
-- [[Purpose_55]] - `contains` [EXTRACTED]
-- [[README_47]] - `contains` [EXTRACTED]
-- [[README_60]] - `contains` [EXTRACTED]
-- [[Related Skills_60]] - `contains` [EXTRACTED]
-- [[Usage_62]] - `contains` [EXTRACTED]
+- [[Purpose_45]] - `contains` [EXTRACTED]
+- [[Related Skills_38]] - `contains` [EXTRACTED]
+- [[Usage_41]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-mcpm-doctorREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/MCP_Doctor_MCPM-DOCTOR

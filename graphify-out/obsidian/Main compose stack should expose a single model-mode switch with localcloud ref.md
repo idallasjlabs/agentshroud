@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "MCPToolCall"
+community: "ForwardRequest"
 location: "L623"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/ForwardRequest
 ---
 
 # Main compose stack should expose a single model-mode switch with local/cloud ref
 
 ## Connections
-- [[.test_compose_sets_nemotron_local_model_overrides()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_compose_sets_nemotron_local_model_overrides()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPToolCall
+#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest

@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "TestNetworkValidator"
+community: "main.py"
 location: "L187"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestNetworkValidator
+  - community/mainpy
 ---
 
 # Management API Router — `gateway/web/api.py` (prefix `/api`)
 
 ## Connections
-- [[Endpoints_1]] - `contains` [EXTRACTED]
+- [[Endpoints]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestNetworkValidator
+#graphify/document #graphify/EXTRACTED #community/mainpy

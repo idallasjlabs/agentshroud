@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "TelegramAPIProxy"
 location: "L926"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/TelegramAPIProxy
 ---
 
 # Owner /approve without target, with 2+ pending collaborator         requests, is
 
 ## Connections
-- [[.test_owner_approve_ambiguous_multiple_pending_shows_usage()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_owner_approve_ambiguous_multiple_pending_shows_usage()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

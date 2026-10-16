@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/redteam/00-information-disclosure.md"
 type: "document"
-community: "Post-v1.0.0 — Deferred"
+community: "Add information filtering to prevent agent self-disclosure"
 location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Post-v100__Deferred
+  - community/Add_information_filtering_to_prevent_agent_self-disclosure
 ---
 
 # Option B: Outbound content filter (robust)
 
 ## Connections
-- [[Remediation_1]] - `contains` [EXTRACTED]
+- [[Remediation_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Post-v100__Deferred
+#graphify/document #graphify/EXTRACTED #community/Add_information_filtering_to_prevent_agent_self-disclosure

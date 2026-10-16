@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
 type: "document"
-community: "AgentShroud Deployment Architecture"
+community: "llm_proxy.py"
 location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Deployment_Architecture
+  - community/llm_proxypy
 ---
 
 # LLM Providers
@@ -15,6 +15,6 @@ tags:
 - [[Claude Opus intercept]] - `contains` [EXTRACTED]
 - [[Model prefix routing (`LOCAL_MODEL_ROUTES`)]] - `contains` [EXTRACTED]
 - [[Provider prefix normalization]] - `contains` [EXTRACTED]
-- [[llm_proxy.py_2]] - `contains` [EXTRACTED]
+- [[llm_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture
+#graphify/document #graphify/EXTRACTED #community/llm_proxypy

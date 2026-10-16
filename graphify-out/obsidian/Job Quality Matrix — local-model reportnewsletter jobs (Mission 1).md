@@ -1,12 +1,12 @@
 ---
 source_file: "docs/dev-notes/job-quality-matrix.md"
 type: "document"
-community: "KeyRotationConfig"
+community: "Local-Model Job Quality Matrix"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/KeyRotationConfig
+  - community/Local-Model_Job_Quality_Matrix
 ---
 
 # Job Quality Matrix — local-model report/newsletter jobs (Mission 1)
@@ -18,4 +18,4 @@ tags:
 - [[Related delivery-layer defects (separate from model quality)]] - `contains` [EXTRACTED]
 - [[job-quality-matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/KeyRotationConfig
+#graphify/document #graphify/EXTRACTED #community/Local-Model_Job_Quality_Matrix

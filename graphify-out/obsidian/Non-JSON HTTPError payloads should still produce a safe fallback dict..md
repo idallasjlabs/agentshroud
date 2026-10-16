@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "scanner_integration.py"
+community: "TelegramAPIProxy"
 location: "L3666"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/TelegramAPIProxy
 ---
 
 # Non-JSON HTTPError payloads should still produce a safe fallback dict.
 
 ## Connections
-- [[.test_forward_to_telegram_handles_http_error_non_json()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_forward_to_telegram_handles_http_error_non_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

@@ -12,11 +12,11 @@ tags:
 # JobState
 
 ## Connections
-- [[._dispatch_aggregate()]] - `references` [EXTRACTED]
-- [[._episode_id()]] - `references` [EXTRACTED]
-- [[._evaluate()]] - `references` [EXTRACTED]
-- [[._safe_dispatch()]] - `references` [EXTRACTED]
-- [[.parse_store()]] - `references` [EXTRACTED]
+- [[dot-_dispatch_aggregate()]] - `references` [EXTRACTED]
+- [[dot-_episode_id()]] - `references` [EXTRACTED]
+- [[dot-_evaluate()]] - `references` [EXTRACTED]
+- [[dot-_safe_dispatch()]] - `references` [EXTRACTED]
+- [[dot-parse_store()]] - `references` [EXTRACTED]
 - [[Normalized view of one bot cron job.]] - `rationale_for` [EXTRACTED]
 - [[cron_state_monitor.py]] - `contains` [EXTRACTED]
 

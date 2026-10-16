@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-local-inference-engines.txt"
 type: "document"
-community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements"
+community: "Turbo Fieldfare (MLX inference backend)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Required__45_for_text__30_for_UI_elements
+  - community/Turbo_Fieldfare_MLX_inference_backend
 ---
 
 # Newsletter: Local Inference Engines
@@ -14,4 +14,4 @@ tags:
 - [[Turbo Fieldfare (MLX inference backend)]] - `references` [EXTRACTED]
 - [[oMLX (local model backend)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements
+#graphify/document #graphify/EXTRACTED #community/Turbo_Fieldfare_MLX_inference_backend

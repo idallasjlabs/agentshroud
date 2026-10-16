@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-athena/SKILL.md"
 type: "document"
-community: "BlockingPipeline"
-location: "L40"
+community: "Athena — Knowledge Distiller"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BlockingPipeline
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Output Format
 
 ## Connections
-- [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_4]] - `contains` [EXTRACTED]
+- [[show_notes_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BlockingPipeline
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

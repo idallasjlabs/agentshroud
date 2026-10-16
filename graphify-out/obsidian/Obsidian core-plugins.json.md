@@ -1,13 +1,13 @@
 ---
 source_file: "docs/vault/.obsidian/core-plugins.json"
 type: "document"
-community: "Self-Written Whisper Domain-Hint Prompt"
+community: "Obsidian core-plugins.json"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Self-Written_Whisper_Domain-Hint_Prompt
+  - community/Obsidian_core-pluginsjson
 ---
 
 # Obsidian core-plugins.json
 
-#graphify/document #graphify/EXTRACTED #community/Self-Written_Whisper_Domain-Hint_Prompt
+#graphify/document #graphify/EXTRACTED #community/Obsidian_core-pluginsjson

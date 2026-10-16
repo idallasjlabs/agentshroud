@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "http_proxy.py"
+community: "AgentShroud Color Palette"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/http_proxypy
+  - community/AgentShroud_Color_Palette
 ---
 
 # Master Feature List (historical index)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Blue 1583f0]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/http_proxypy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Color_Palette

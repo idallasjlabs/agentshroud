@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "test_ptt_state.c"
+community: "TestMultipartOutboundPipeline"
 location: "L5020"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_ptt_statec
+  - community/TestMultipartOutboundPipeline
 ---
 
 # Multipart captions must get the full pipeline scan, not just the XML filter.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMultipartOutboundPipeline]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_ptt_statec
+#graphify/rationale #graphify/EXTRACTED #community/TestMultipartOutboundPipeline

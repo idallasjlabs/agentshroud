@@ -1,17 +1,17 @@
 ---
 source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "AgentShroud Security Value Proposition"
+community: "Kill Switch"
 location: "L129"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition
+  - community/Kill_Switch
 ---
 
 # Mode 2: shutdown
 
 ## Connections
-- [[Kill Switch]] - `contains` [EXTRACTED]
+- [[Kill Switch_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch

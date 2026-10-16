@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "rationale"
-community: "AgentShroud Sequence Diagrams"
+community: ".__init__"
 location: "L42"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Sequence_Diagrams
+  - community/__init__
 ---
 
 # Initialize approval queue          Args:             config: Approval queue conf
 
 ## Connections
-- [[.__init__()_5]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_23]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Sequence_Diagrams
+#graphify/rationale #graphify/EXTRACTED #community/__init__

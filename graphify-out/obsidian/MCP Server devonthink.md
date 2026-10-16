@@ -1,13 +1,13 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: ".test_proxy_request_suppresses_duplicate_startup"
+community: "MCP Server: devonthink"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_proxy_request_suppresses_duplicate_startup
+  - community/MCP_Server_devonthink
 ---
 
 # MCP Server: devonthink
 
-#graphify/code #graphify/EXTRACTED #community/test_proxy_request_suppresses_duplicate_startup
+#graphify/code #graphify/EXTRACTED #community/MCP_Server_devonthink

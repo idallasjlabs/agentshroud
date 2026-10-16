@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "rationale"
-community: "AgentShroud™ CVE Mitigation Matrix"
+community: "TestOutputCanary"
 location: "L68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_CVE_Mitigation_Matrix
+  - community/TestOutputCanary
 ---
 
 # Initialize the Output Canary System.          Args:             config: Optional
 
 ## Connections
-- [[.__init__()_104]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_81]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix
+#graphify/rationale #graphify/EXTRACTED #community/TestOutputCanary

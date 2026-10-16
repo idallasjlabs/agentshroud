@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "GSDE&G Development Master Checklist"
+community: "MultiTurnTracker"
 location: "L95"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist
+  - community/MultiTurnTracker
 ---
 
 # Initialize the multi-turn tracker.          Args:             config: Configurat
 
 ## Connections
-- [[.__init__()_100]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_139]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist
+#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "AgentShroud Documentation"
+community: "OpenClaw Setup Guide - agentshroud.ai Bot"
 location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Documentation
+  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
 ---
 
 # Initial Configuration
@@ -19,4 +19,4 @@ tags:
 - [[Step 4 Set Up Channels (Optional)]] - `contains` [EXTRACTED]
 - [[Step 5 Configure SSH Access (For Bot to Work on Remote Systems)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Documentation
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot

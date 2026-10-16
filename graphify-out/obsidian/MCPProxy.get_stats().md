@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
 type: "document"
-community: "TestWebAPI"
+community: "Function Details"
 location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestWebAPI
+  - community/Function_Details
 ---
 
 # MCPProxy.get_stats()
 
 ## Connections
-- [[Function Details_12]] - `contains` [EXTRACTED]
+- [[Function Details_24]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestWebAPI
+#graphify/document #graphify/EXTRACTED #community/Function_Details

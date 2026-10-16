@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "concept"
-community: "mcp-proxy-wrapper.js"
+community: "ESP32-S3-BOX-3 Voice Terminal"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/mcp-proxy-wrapperjs
+  - community/ESP32-S3-BOX-3_Voice_Terminal
 ---
 
 # OTA Wireless Firmware Updates
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ESP32-S3-BOX-3 Voice Terminal]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/mcp-proxy-wrapperjs
+#graphify/concept #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal

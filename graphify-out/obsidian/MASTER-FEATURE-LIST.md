@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "Skill Creation Process"
+community: "AgentShroud — Master Feature List (Everything Ever Mentioned)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Creation_Process
+  - community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned
 ---
 
 # MASTER-FEATURE-LIST.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Creation_Process
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "rationale"
-community: "EgressPolicy"
+community: "PIIConfig"
 location: "L226"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressPolicy
+  - community/PIIConfig
 ---
 
 # Multiple messages through pipeline concurrently — thread safety.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pipeline_concurrent_messages()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressPolicy
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

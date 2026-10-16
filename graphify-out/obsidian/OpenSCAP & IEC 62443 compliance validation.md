@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "rationale"
-community: "Collaborator Setup Checklist"
+community: "Dockerfile — Gateway"
 location: "L121-157"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Setup_Checklist
+  - community/Dockerfile__Gateway
 ---
 
 # OpenSCAP & IEC 62443 compliance validation
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Security Value Proposition - Revised]] - `references` [EXTRACTED]
 - [[OpenSCAP dependency note]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Setup_Checklist
+#graphify/rationale #graphify/EXTRACTED #community/Dockerfile__Gateway

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
-community: "check-vendor-compat.sh"
+community: "iCloud Services"
 location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/check-vendor-compatsh
+  - community/iCloud_Services
 ---
 
 # Mail Operations
@@ -15,6 +15,6 @@ tags:
 - [[List Messages_3]] - `contains` [EXTRACTED]
 - [[Search Mail_3]] - `contains` [EXTRACTED]
 - [[Send Email_3]] - `contains` [EXTRACTED]
-- [[iCloud Services_4]] - `contains` [EXTRACTED]
+- [[iCloud Services_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/check-vendor-compatsh
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

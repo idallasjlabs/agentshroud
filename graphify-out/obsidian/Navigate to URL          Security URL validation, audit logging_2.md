@@ -12,6 +12,6 @@ tags:
 # Navigate to URL          Security: URL validation, audit logging
 
 ## Connections
-- [[.navigate()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-navigate()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

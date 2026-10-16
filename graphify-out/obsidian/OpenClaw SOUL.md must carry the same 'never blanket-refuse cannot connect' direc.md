@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "MCPToolCall"
+community: "ForwardRequest"
 location: "L715"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/ForwardRequest
 ---
 
 # OpenClaw SOUL.md must carry the same 'never blanket-refuse cannot connect' direc
 
 ## Connections
-- [[.test_openclaw_soul_has_no_refuse_directive()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_openclaw_soul_has_no_refuse_directive()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPToolCall
+#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest

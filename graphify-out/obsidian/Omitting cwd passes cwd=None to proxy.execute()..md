@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "rationale"
-community: "Test-Driven Development README"
+community: "SSHHostConfig"
 location: "L216"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Test-Driven_Development_README
+  - community/SSHHostConfig
 ---
 
 # Omitting cwd passes cwd=None to proxy.execute().
 
 ## Connections
-- [[.test_ssh_exec_cwd_none_forwards_none()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_ssh_exec_cwd_none_forwards_none()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Test-Driven_Development_README
+#graphify/rationale #graphify/EXTRACTED #community/SSHHostConfig

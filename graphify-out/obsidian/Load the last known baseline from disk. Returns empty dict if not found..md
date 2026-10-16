@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/config_integrity.py"
 type: "rationale"
-community: "IEC 62443 Compliance Matrix — AgentShroud"
+community: ".check"
 location: "L66"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/IEC_62443_Compliance_Matrix__AgentShroud
+  - community/check
 ---
 
 # Load the last known baseline from disk. Returns empty dict if not found.
 
 ## Connections
-- [[._load_baseline()]] - `rationale_for` [EXTRACTED]
+- [[dot-_load_baseline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/IEC_62443_Compliance_Matrix__AgentShroud
+#graphify/rationale #graphify/EXTRACTED #community/check

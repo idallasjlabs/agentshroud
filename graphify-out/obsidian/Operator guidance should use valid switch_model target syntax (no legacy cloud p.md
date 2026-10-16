@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "MCPToolCall"
+community: "ForwardRequest"
 location: "L584"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/ForwardRequest
 ---
 
 # Operator guidance should use valid switch_model target syntax (no legacy cloud p
 
 ## Connections
-- [[.test_switch_model_script_uses_current_target_syntax()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_switch_model_script_uses_current_target_syntax()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPToolCall
+#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest

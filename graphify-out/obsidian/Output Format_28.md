@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cr/SKILL.md"
+source_file: ".agents/skills/i-atlas/SKILL.md"
 type: "document"
-community: "TestCollaboratorAccess"
-location: "L36"
+community: "Atlas — Curriculum Architect"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestCollaboratorAccess
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Code Review (CR)_2]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestCollaboratorAccess
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

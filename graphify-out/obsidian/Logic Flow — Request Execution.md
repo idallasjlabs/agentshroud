@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/05-behavior.md"
 type: "concept"
-community: "ADR-004: API Keys Never in Agent Container"
+community: "05-behavior.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ADR-004_API_Keys_Never_in_Agent_Container
+  - community/05-behaviormd
 ---
 
 # Logic Flow — Request Execution
@@ -15,4 +15,4 @@ tags:
 - [[Sequence Diagram — Telegram Message to Response]] - `references` [INFERRED]
 - [[State Machine — Approval Queue Item Lifecycle]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ADR-004_API_Keys_Never_in_Agent_Container
+#graphify/concept #graphify/EXTRACTED #community/05-behaviormd

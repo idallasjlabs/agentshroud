@@ -1,13 +1,13 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: "Community 1662"
+community: "MCP Server: xmind"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1662
+  - community/MCP_Server_xmind
 ---
 
 # MCP Server: xmind
 
-#graphify/code #graphify/EXTRACTED #community/Community_1662
+#graphify/code #graphify/EXTRACTED #community/MCP_Server_xmind

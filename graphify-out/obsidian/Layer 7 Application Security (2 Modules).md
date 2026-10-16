@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "test_e2e.py"
+community: "Security Module Inventory"
 location: "L211"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_e2epy
+  - community/Security_Module_Inventory
 ---
 
 # Layer 7: Application Security (2 Modules)
@@ -16,4 +16,4 @@ tags:
 - [[26. MCP Inspector]] - `contains` [EXTRACTED]
 - [[Security Module Inventory]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_e2epy
+#graphify/document #graphify/EXTRACTED #community/Security_Module_Inventory

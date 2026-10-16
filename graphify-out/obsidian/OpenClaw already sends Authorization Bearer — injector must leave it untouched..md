@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "rationale"
-community: "soc.js"
+community: "LLMProxy"
 location: "L456"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/socjs
+  - community/LLMProxy
 ---
 
 # OpenClaw already sends Authorization: Bearer — injector must leave it untouched.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_credential_injector_does_not_overwrite_existing_bearer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/socjs
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxy

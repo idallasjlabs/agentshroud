@@ -1,13 +1,13 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: ".test_html_parse_mode_preserved_without_redactio"
+community: "MCP Server: atlassian-idallasj"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_html_parse_mode_preserved_without_redactio
+  - community/MCP_Server_atlassian-idallasj
 ---
 
 # MCP Server: atlassian-idallasj
 
-#graphify/code #graphify/EXTRACTED #community/test_html_parse_mode_preserved_without_redactio
+#graphify/code #graphify/EXTRACTED #community/MCP_Server_atlassian-idallasj

@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/himalaya/references/message-composition.md"
 type: "concept"
-community: "Phase 3A/3B Implementation Verification Results"
+community: "ssh-configuration.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Phase_3A/3B_Implementation_Verification_Results
+  - community/ssh-configurationmd
 ---
 
 # MML (MIME Meta Language)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[message-composition]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Phase_3A/3B_Implementation_Verification_Results
+#graphify/concept #graphify/EXTRACTED #community/ssh-configurationmd

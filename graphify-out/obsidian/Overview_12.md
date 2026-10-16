@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/access-control-matrix.md"
+source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "_make_cve()"
-location: "L3"
+community: "EgressFilter"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_make_cve
+  - community/EgressFilter
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Access Control Matrix]] - `contains` [EXTRACTED]
+- [[Data Flow_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_make_cve
+#graphify/document #graphify/EXTRACTED #community/EgressFilter

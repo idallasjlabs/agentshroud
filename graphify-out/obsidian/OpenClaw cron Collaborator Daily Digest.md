@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/openclaw/config/cron/jobs.json"
 type: "code"
-community: "3. Code Quality"
+community: "OpenClaw cron: Collaborator Report - Morning (Telegram HTML, PII filter rules)"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/3_Code_Quality
+  - community/OpenClaw_cron_Collaborator_Report_-_Morning_Telegram_HTML_PII_filter_rules
 ---
 
 # OpenClaw cron: Collaborator Daily Digest
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[OpenClaw cron Collaborator Report - Morning (Telegram HTML, PII filter rules)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/3_Code_Quality
+#graphify/code #graphify/INFERRED #community/OpenClaw_cron_Collaborator_Report_-_Morning_Telegram_HTML_PII_filter_rules

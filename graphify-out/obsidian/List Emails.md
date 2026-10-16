@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: "test_ledger.py"
+community: "Common Operations"
 location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_ledgerpy
+  - community/Common_Operations
 ---
 
 # List Emails
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Operations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_ledgerpy
+#graphify/document #graphify/EXTRACTED #community/Common_Operations

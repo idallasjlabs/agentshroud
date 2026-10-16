@@ -1,12 +1,12 @@
 ---
 source_file: "SECURITY.md"
 type: "document"
-community: "SessionContext"
+community: "AgentShroud™ Security Policy"
 location: "L60"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SessionContext
+  - community/AgentShroud_Security_Policy
 ---
 
 # Monitor Mode Warning
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud™ Security Policy]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SessionContext
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Policy

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "test_llm_proxy.py"
+community: "TelegramAPIProxy"
 location: "L1607"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/TelegramAPIProxy
 ---
 
 # JSON message field should keep healthcheck SKILL.md text unchanged when sandbox
 
 ## Connections
-- [[.test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_message_field()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_message_field()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

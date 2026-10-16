@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-odev/SKILL.md"
+source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
 type: "document"
-community: "LLM Operating Context — Isaiah Jefferson"
+community: "Mode A — Single task"
 location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LLM_Operating_Context__Isaiah_Jefferson
+  - community/Mode_A__Single_task
 ---
 
 # Jira ticket — every development batch gets one
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill OpenClaw Dev Workflow (ODEV)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LLM_Operating_Context__Isaiah_Jefferson
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

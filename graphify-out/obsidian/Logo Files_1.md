@@ -1,17 +1,17 @@
 ---
-source_file: "branding/QUICK-REFERENCE.md"
+source_file: "branding/INDEX.md"
 type: "document"
-community: "agentshroud-ssh-exec.sh"
-location: "L3"
+community: "AgentShroud Branding Assets Index"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-ssh-execsh
+  - community/AgentShroud_Branding_Assets_Index
 ---
 
 # Logo Files
 
 ## Connections
-- [[AgentShroud Brand Quick Reference]] - `contains` [EXTRACTED]
+- [[🎨 Quick Access]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-ssh-execsh
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Branding_Assets_Index

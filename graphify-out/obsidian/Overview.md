@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-eightd/SKILL.md"
+source_file: "docs/api/api-reference.md"
 type: "document"
-community: "AgentShroud Phase 3 - Quick Start Guide"
-location: "L16"
+community: "API Reference"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
+  - community/API_Reference
 ---
 
 # Overview
 
 ## Connections
-- [[8D Root Cause Analysis — Data-Driven Control System Investigation]] - `contains` [EXTRACTED]
+- [[AgentShroud v1.3.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide
+#graphify/document #graphify/EXTRACTED #community/API_Reference

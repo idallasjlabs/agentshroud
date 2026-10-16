@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "concept"
-community: "_seed_cron"
+community: "sunday-upgrade-apply.sh"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/_seed_cron
+  - community/sunday-upgrade-applysh
 ---
 
 # No-Op Upgrade Gate (7-week silent no-op)
@@ -15,4 +15,4 @@ tags:
 - [[check_noop_gate()]] - `implements` [EXTRACTED]
 - [[discover_upstream_versions.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/_seed_cron
+#graphify/concept #graphify/EXTRACTED #community/sunday-upgrade-applysh

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "_call_agent_stream()"
+community: "api.py"
 location: "L1106"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_call_agent_stream
+  - community/apipy
 ---
 
 # One unverified competitor claim + its candidate source URLs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IntelDraftEntry]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_call_agent_stream
+#graphify/rationale #graphify/EXTRACTED #community/apipy

@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "AsyncMock"
+community: "KeyVault"
 location: "L165"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AsyncMock
+  - community/KeyVault
 ---
 
 # KeyLeakDetector
 
 ## Connections
-- [[.__init__()_91]] - `method` [EXTRACTED]
-- [[._make_vault_pipeline()]] - `calls` [EXTRACTED]
-- [[.scan_outbound()]] - `method` [EXTRACTED]
-- [[.test_detect_api_key_patterns()]] - `calls` [EXTRACTED]
-- [[.test_detect_key_in_outbound()]] - `calls` [EXTRACTED]
-- [[.test_leak_detection_logged()]] - `calls` [EXTRACTED]
-- [[.test_no_leak_clean_message()]] - `calls` [EXTRACTED]
-- [[TestAuditChain]] - `uses` [INFERRED]
+- [[dot-__init__()_117]] - `method` [EXTRACTED]
+- [[dot-_make_vault_pipeline()]] - `calls` [EXTRACTED]
+- [[dot-scan_outbound()]] - `method` [EXTRACTED]
+- [[dot-test_detect_api_key_patterns()]] - `calls` [EXTRACTED]
+- [[dot-test_detect_key_in_outbound()]] - `calls` [EXTRACTED]
+- [[dot-test_leak_detection_logged()]] - `calls` [EXTRACTED]
+- [[dot-test_no_leak_clean_message()]] - `calls` [EXTRACTED]
+- [[TestAuditChain_1]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestContextGuardInPipeline]] - `uses` [INFERRED]
 - [[TestContextIntegrityInPipeline]] - `uses` [INFERRED]
@@ -39,9 +39,9 @@ tags:
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
 - [[key_vault.py]] - `contains` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_key_vault.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AsyncMock
+#graphify/code #graphify/INFERRED #community/KeyVault

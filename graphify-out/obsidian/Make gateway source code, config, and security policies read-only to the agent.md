@@ -1,24 +1,24 @@
 ---
 source_file: "docs/planning/redteam/04-separation-of-privilege.md"
 type: "document"
-community: "Feature: Global Monitor-Only Mode (\"Observatory "
+community: "Make gateway source code, config, and security policies read-only to the agent"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Feature_Global_Monitor-Only_Mode_Observatory_
+  - community/Make_gateway_source_code_config_and_security_policies_read-only_to_the_agent
 ---
 
 # Make gateway source code, config, and security policies read-only to the agent
 
 ## Connections
 - [[04-separation-of-privilege]] - `contains` [EXTRACTED]
-- [[Constraints_7]] - `contains` [EXTRACTED]
+- [[Constraints_4]] - `contains` [EXTRACTED]
 - [[Evidence_4]] - `contains` [EXTRACTED]
 - [[Problem_7]] - `contains` [EXTRACTED]
 - [[Remediation_5]] - `contains` [EXTRACTED]
-- [[Root Cause_6]] - `contains` [EXTRACTED]
+- [[Root Cause_5]] - `contains` [EXTRACTED]
 - [[Severity_7]] - `contains` [EXTRACTED]
-- [[Verification_6]] - `contains` [EXTRACTED]
+- [[Verification_11]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Feature_Global_Monitor-Only_Mode_Observatory_
+#graphify/document #graphify/EXTRACTED #community/Make_gateway_source_code_config_and_security_policies_read-only_to_the_agent

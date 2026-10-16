@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "TestResourceBudgets"
+community: "AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist"
 location: "L108"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestResourceBudgets
+  - community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist
 ---
 
 # Node.js (for OpenClaw & AgentShroud)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase 2 Development Tools]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestResourceBudgets
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Dev_Environment__Raspberry_Pi_4_8GB_Setup_Checklist

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "test_soc_realtime_coverage.py"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Initialize prompt protection system.          Args:             config: Configur
 
 ## Connections
-- [[.__init__()_110]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_115]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

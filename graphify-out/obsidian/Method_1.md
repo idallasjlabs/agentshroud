@@ -1,17 +1,20 @@
 ---
-source_file: "docs/planning/v1.2/blue-team-assessment-v1.2.0.md"
-type: "document"
-community: "killswitch.sh"
-location: "L11"
+source_file: "cli/src/main.rs"
+type: "code"
+community: "main.rs"
+location: "L213"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/killswitchsh
+  - community/mainrs
 ---
 
 # Method
 
 ## Connections
-- [[AgentShroud v1.2.0 — Blue Team Security Assessment]] - `contains` [EXTRACTED]
+- [[dot-request()_1]] - `references` [EXTRACTED]
+- [[dot-request()_2]] - `references` [EXTRACTED]
+- [[FakeTransport]] - `references` [EXTRACTED]
+- [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/killswitchsh
+#graphify/code #graphify/EXTRACTED #community/mainrs

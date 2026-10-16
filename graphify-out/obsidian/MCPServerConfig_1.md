@@ -1,21 +1,26 @@
 ---
-source_file: "gateway/proxy/mcp_permissions.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "GitGuard"
-location: "L378"
+community: "MCPPermissionManager"
+location: "L95"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/GitGuard
+  - community/MCPPermissionManager
 ---
 
 # MCPServerConfig
 
 ## Connections
-- [[.infer_permission_level()]] - `references` [EXTRACTED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPServerConfig]] - `uses` [INFERRED]
-- [[PermissionLevel]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[dot-__init__()_150]] - `references` [EXTRACTED]
+- [[dot-__init__()_152]] - `references` [EXTRACTED]
+- [[dot-get_or_create()]] - `references` [EXTRACTED]
+- [[InspectionResult_1]] - `uses` [INFERRED]
+- [[MCPAuditTrail]] - `uses` [INFERRED]
+- [[MCPInspector]] - `uses` [INFERRED]
+- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
+- [[MCPServerConfig_2]] - `uses` [INFERRED]
+- [[MCPTransport]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/GitGuard
+#graphify/code #graphify/INFERRED #community/MCPPermissionManager

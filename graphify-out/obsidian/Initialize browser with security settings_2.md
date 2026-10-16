@@ -12,6 +12,6 @@ tags:
 # Initialize browser with security settings
 
 ## Connections
-- [[._init_browser()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-_init_browser()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

@@ -1,12 +1,12 @@
 ---
 source_file: "CHEATSHEET.md"
 type: "concept"
-community: "AgentShroud Docker Configuration"
+community: "AgentShroud Operations Cheat Sheet"
 location: "L355-371"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Docker_Configuration
+  - community/AgentShroud_Operations_Cheat_Sheet
 ---
 
 # Kill Switch (Emergency) commands
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Operations Cheat Sheet]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet

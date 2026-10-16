@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/tests/test_llm_proxy_local_parity.py"
+source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "asyncio"
-location: "L53"
+community: "test_llm_proxy_failover.py"
+location: "L44"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/asyncio
+  - graphify/EXTRACTED
+  - community/test_llm_proxy_failoverpy
 ---
 
 # LLMProxy
 
 ## Connections
 - [[LLMProxy]] - `uses` [INFERRED]
-- [[ResourceGuard]] - `uses` [INFERRED]
-- [[ResourceLimits]] - `uses` [INFERRED]
-- [[VRAMHeadroomError]] - `uses` [INFERRED]
-- [[_make_proxy()]] - `references` [EXTRACTED]
+- [[make_proxy()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy

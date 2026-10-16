@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "app_main.c"
+community: "Best Practices"
 location: "L305"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/app_mainc
+  - community/Best_Practices
 ---
 
 # Organization
 
 ## Connections
-- [[Best Practices_1]] - `contains` [EXTRACTED]
+- [[Best Practices]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/app_mainc
+#graphify/document #graphify/EXTRACTED #community/Best_Practices

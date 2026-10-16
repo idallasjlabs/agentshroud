@@ -1,17 +1,17 @@
 ---
-source_file: "scripts/sync-cve-registry.py"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "mcp_oauth_preflight.py"
-location: "L808"
+community: "migrate-cve-registry-ghsa.py"
+location: "L480"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mcp_oauth_preflightpy
+  - community/migrate-cve-registry-ghsapy
 ---
 
 # Namespace
 
 ## Connections
-- [[_run_nvd_sync()]] - `references` [EXTRACTED]
+- [[gather_advisories()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mcp_oauth_preflightpy
+#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

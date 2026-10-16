@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "test_soc_realtime_coverage.py"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Main system prompt protection engine.      Maintains fingerprints of sensitive c
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PromptProtection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "EgressFilterConfig"
+community: "TestFabricatedSecurityNotice"
 location: "L588"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/TestFabricatedSecurityNotice
 ---
 
 # Matched text is replaced with [RESPONSE_FILTERED].
 
 ## Connections
-- [[.test_redaction_applied()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_redaction_applied()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

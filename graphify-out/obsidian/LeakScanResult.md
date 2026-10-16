@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "AsyncMock"
+community: "KeyVault"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/KeyVault
 ---
 
 # LeakScanResult
 
 ## Connections
-- [[.scan_outbound()]] - `references` [EXTRACTED]
+- [[dot-scan_outbound()]] - `references` [EXTRACTED]
 - [[key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/KeyVault

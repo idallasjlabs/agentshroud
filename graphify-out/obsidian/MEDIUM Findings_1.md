@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md"
 type: "document"
-community: "init_skill.py"
+community: "LOW Findings"
 location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/init_skillpy
+  - community/LOW_Findings
 ---
 
 # MEDIUM Findings
@@ -17,4 +17,4 @@ tags:
 - [[R3-M3 Stale Version String in Root Dashboard HTML]] - `contains` [EXTRACTED]
 - [[Round 3 New Findings]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/init_skillpy
+#graphify/document #graphify/EXTRACTED #community/LOW_Findings

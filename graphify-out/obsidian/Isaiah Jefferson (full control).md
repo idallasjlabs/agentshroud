@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-11-trust-boundary.svg"
 type: "concept"
-community: "Turbo Fieldfare (MLX inference backend)"
+community: "AgentShroud Gateway (holds 1Password service account)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Turbo_Fieldfare_MLX_inference_backend
+  - community/AgentShroud_Gateway_holds_1Password_service_account
 ---
 
 # Isaiah Jefferson (full control)
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Gateway (holds 1Password service account)]] - `calls` [EXTRACTED]
 - [[Trust Zone 0 — Owner (Highest Trust)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Turbo_Fieldfare_MLX_inference_backend
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Gateway_holds_1Password_service_account

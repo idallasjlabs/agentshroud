@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "Production testing guidelines (test isolation pa"
+community: "OpenClaw research/web_search domains pre-approved after 210-denial SOC saturation incident"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Production_testing_guidelines_test_isolation_pa
+  - community/OpenClaw_research/web_search_domains_pre-approved_after_210-denial_SOC_saturation_incident
 ---
 
 # OpenClaw research/web_search domains pre-approved after 210-denial SOC saturation incident
 
-#graphify/rationale #graphify/EXTRACTED #community/Production_testing_guidelines_test_isolation_pa
+#graphify/rationale #graphify/EXTRACTED #community/OpenClaw_research/web_search_domains_pre-approved_after_210-denial_SOC_saturation_incident

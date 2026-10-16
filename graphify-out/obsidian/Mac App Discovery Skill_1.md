@@ -1,39 +1,39 @@
 ---
 source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
 type: "document"
-community: "AgentShroud v0.9.0"
+community: "Mac App Discovery Skill"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v090
+  - community/Mac_App_Discovery_Skill
 ---
 
 # Mac App Discovery Skill
 
 ## Connections
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[Discovery Strategy]] - `contains` [EXTRACTED]
 - [[Discovery Strategy_1]] - `contains` [EXTRACTED]
 - [[Discovery Strategy_2]] - `contains` [EXTRACTED]
 - [[Error Handling_1]] - `contains` [EXTRACTED]
-- [[Error Handling_4]] - `contains` [EXTRACTED]
-- [[Error Handling_6]] - `contains` [EXTRACTED]
+- [[Error Handling_2]] - `contains` [EXTRACTED]
+- [[Error Handling_3]] - `contains` [EXTRACTED]
 - [[Future Extensions (for collaborative sharing)]] - `contains` [EXTRACTED]
 - [[Future Extensions (for collaborative sharing)_1]] - `contains` [EXTRACTED]
 - [[Future Extensions (for collaborative sharing)_2]] - `contains` [EXTRACTED]
 - [[Performance Notes]] - `contains` [EXTRACTED]
 - [[Performance Notes_1]] - `contains` [EXTRACTED]
 - [[Performance Notes_2]] - `contains` [EXTRACTED]
-- [[SKILL_15]] - `contains` [EXTRACTED]
-- [[SKILL_79]] - `contains` [EXTRACTED]
-- [[SKILL_93]] - `contains` [EXTRACTED]
-- [[SKILL_142]] - `contains` [EXTRACTED]
 - [[When to Use This Skill]] - `contains` [EXTRACTED]
 - [[When to Use This Skill_1]] - `contains` [EXTRACTED]
 - [[When to Use This Skill_2]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-macSKILL]] - `contains` [EXTRACTED]
 - [[i-mac README (macOS System Administrator)]] - `references` [EXTRACTED]
 - [[macOS System Administrator (MAC) README]] - `references` [AMBIGUOUS]
 - [[mac_app_catalog.json output artifact]] - `references` [EXTRACTED]
 - [[mac_app_catalog.md output artifact]] - `references` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v090
+#graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill

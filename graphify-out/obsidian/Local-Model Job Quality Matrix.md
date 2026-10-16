@@ -1,11 +1,11 @@
 ---
 source_file: "docs/dev-notes/job-quality-matrix.md"
 type: "document"
-community: "KeyRotationConfig"
+community: "Local-Model Job Quality Matrix"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/KeyRotationConfig
+  - community/Local-Model_Job_Quality_Matrix
 ---
 
 # Local-Model Job Quality Matrix
@@ -18,4 +18,4 @@ tags:
 - [[Per-Bot Status Badge Vocabulary]] - `shares_data_with` [INFERRED]
 - [[ToolResultSanitizer Link Stripping (delivery defect)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/KeyRotationConfig
+#graphify/document #graphify/EXTRACTED #community/Local-Model_Job_Quality_Matrix

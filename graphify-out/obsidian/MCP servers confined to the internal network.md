@@ -1,12 +1,12 @@
 ---
 source_file: "docker-compose.secure.yml"
 type: "rationale"
-community: "TestCVE2026_9367TerminalToolDenied"
+community: "agentshroud-gateway service (proxy mode)"
 location: "L127-151"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestCVE2026_9367TerminalToolDenied
+  - community/agentshroud-gateway_service_proxy_mode
 ---
 
 # MCP servers confined to the internal network
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[agentshroud-internal network (no external access)]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestCVE2026_9367TerminalToolDenied
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-gateway_service_proxy_mode

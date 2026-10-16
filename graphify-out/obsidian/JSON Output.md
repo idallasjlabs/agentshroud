@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/github/SKILL.md"
 type: "document"
-community: "sunday-upgrade.md"
+community: "GitHub Skill"
 location: "L129"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sunday-upgrademd
+  - community/GitHub_Skill
 ---
 
 # JSON Output
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GitHub Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sunday-upgrademd
+#graphify/document #graphify/EXTRACTED #community/GitHub_Skill

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L248"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Match
 
 ## Connections
-- [[._redact_match()]] - `references` [EXTRACTED]
+- [[dot-_redact_match()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

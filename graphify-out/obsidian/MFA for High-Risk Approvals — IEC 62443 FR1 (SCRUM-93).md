@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "concept"
-community: "AlertTelegramRelay"
+community: "AgentShroud Docker Configuration"
 location: "docker/README.md:234"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AlertTelegramRelay
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # MFA for High-Risk Approvals — IEC 62443 FR1 (SCRUM-93)
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
 - [[MFAGuard_2]] - `references` [EXTRACTED]
-- [[README_41]] - `references` [EXTRACTED]
+- [[dockerREADME]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AlertTelegramRelay
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

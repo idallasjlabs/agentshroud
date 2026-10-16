@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "LLMProxy"
+community: "GitGuard"
 location: "L409"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/GitGuard
 ---
 
 # Move suspicious files to quarantine directory.
 
 ## Connections
-- [[._quarantine_suspicious_files()]] - `rationale_for` [EXTRACTED]
+- [[dot-_quarantine_suspicious_files()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LLMProxy
+#graphify/rationale #graphify/EXTRACTED #community/GitGuard

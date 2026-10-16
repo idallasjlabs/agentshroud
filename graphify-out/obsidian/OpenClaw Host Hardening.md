@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "openai-whisper-api/SKILL.md"
+community: "OpenClaw Host Hardening"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openai-whisper-api/SKILLmd
+  - community/OpenClaw_Host_Hardening
 ---
 
 # OpenClaw Host Hardening
@@ -16,10 +16,10 @@ tags:
 - [[Logging and audit trail]] - `contains` [EXTRACTED]
 - [[Memory writes (conditional)]] - `contains` [EXTRACTED]
 - [[OpenClaw command accuracy]] - `contains` [EXTRACTED]
-- [[Overview_27]] - `contains` [EXTRACTED]
+- [[Overview_26]] - `contains` [EXTRACTED]
 - [[Periodic checks]] - `contains` [EXTRACTED]
 - [[Required confirmations (always)]] - `contains` [EXTRACTED]
-- [[SKILL_212]] - `contains` [EXTRACTED]
 - [[Workflow (follow in order)]] - `contains` [EXTRACTED]
+- [[healthcheckSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openai-whisper-api/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Host_Hardening

@@ -1,17 +1,22 @@
 ---
-source_file: "docker/config/openclaw/workspace/BRAND.md"
+source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "AgentShroud Security Architecture"
-location: "L30"
+community: "AgentShroud Brand Guidelines"
+location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Logo Usage
 
 ## Connections
-- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Brand Guidelines]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
+- [[Backgrounds]] - `contains` [EXTRACTED]
+- [[Clear Space]] - `contains` [EXTRACTED]
+- [[Minimum Size]] - `contains` [EXTRACTED]
+- [[Prohibited Uses]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

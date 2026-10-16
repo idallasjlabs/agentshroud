@@ -1,23 +1,23 @@
 ---
 source_file: ".agents/skills/i-mac/SKILL.md"
 type: "document"
-community: "AgentShroud v0.9.0"
+community: "Mac App Discovery Skill"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v090
+  - community/Mac_App_Discovery_Skill
 ---
 
 # Mac App Discovery Skill
 
 ## Connections
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-macSKILL]] - `contains` [EXTRACTED]
 - [[Discovery Strategy]] - `contains` [EXTRACTED]
 - [[Error Handling_1]] - `contains` [EXTRACTED]
 - [[Future Extensions (for collaborative sharing)]] - `contains` [EXTRACTED]
 - [[Performance Notes]] - `contains` [EXTRACTED]
-- [[SKILL_15]] - `contains` [EXTRACTED]
-- [[SKILL_29]] - `contains` [EXTRACTED]
 - [[When to Use This Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v090
+#graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill

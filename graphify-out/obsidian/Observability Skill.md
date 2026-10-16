@@ -1,13 +1,13 @@
 ---
 source_file: ".agents/skills/i-observability/SKILL.md"
 type: "document"
-community: "PromptGuard.reanchor_delimiters() (C8)"
+community: "Observability Skill"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PromptGuardreanchor_delimiters_C8
+  - community/Observability_Skill
 ---
 
 # Observability Skill
 
-#graphify/document #graphify/EXTRACTED #community/PromptGuardreanchor_delimiters_C8
+#graphify/document #graphify/EXTRACTED #community/Observability_Skill

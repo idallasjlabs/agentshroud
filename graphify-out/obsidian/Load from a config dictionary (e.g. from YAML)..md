@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/config.py"
 type: "rationale"
-community: "TestAlertDispatcher"
+community: "Path"
 location: "L58"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestAlertDispatcher
+  - community/Path
 ---
 
 # Load from a config dictionary (e.g. from YAML).
 
 ## Connections
-- [[.from_dict()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-from_dict()_6]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestAlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/Path

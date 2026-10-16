@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
 type: "document"
-community: "ControlCenter"
+community: "Job details"
 location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ControlCenter
+  - community/Job_details
 ---
 
 # Job details
@@ -43,4 +43,4 @@ tags:
 - [[Weekly job-log cleanup]] - `contains` [EXTRACTED]
 - [[jira-weekly-review]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ControlCenter
+#graphify/document #graphify/EXTRACTED #community/Job_details

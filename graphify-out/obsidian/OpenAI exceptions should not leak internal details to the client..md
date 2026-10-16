@@ -1,17 +1,17 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "rationale"
-community: "server.py"
+community: "chatbot/main.py"
 location: "L143"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/serverpy
+  - community/chatbot/mainpy
 ---
 
 # OpenAI exceptions should not leak internal details to the client.
 
 ## Connections
-- [[.test_internal_error_not_leaked()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_internal_error_not_leaked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/serverpy
+#graphify/rationale #graphify/EXTRACTED #community/chatbot/mainpy

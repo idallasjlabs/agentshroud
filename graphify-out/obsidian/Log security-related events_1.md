@@ -12,6 +12,6 @@ tags:
 # Log security-related events
 
 ## Connections
-- [[._log_security_event()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-_log_security_event()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

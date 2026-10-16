@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "gateway.proxy.llm_proxy"
+community: "LLMProxy"
 location: "L2"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/gatewayproxyllm_proxy
+  - community/LLMProxy
 ---
 
 # LLM API Reverse Proxy — intercepts all OpenClaw ↔ (Anthropic/OpenAI/Google)…
 
 ## Connections
-- [[gateway.proxy.llm_proxy]] - `rationale_for` [EXTRACTED]
+- [[llm_proxy.py_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/gatewayproxyllm_proxy
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxy

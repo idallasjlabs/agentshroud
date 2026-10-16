@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-pca/SKILL.md"
 type: "document"
-community: "AgentShroud State Diagrams"
+community: "Skill: Pre-Change Analysis (PCA)"
 location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_State_Diagrams
+  - community/Skill_Pre-Change_Analysis_PCA
 ---
 
 # Output Format Rules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Pre-Change Analysis (PCA)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_State_Diagrams
+#graphify/document #graphify/EXTRACTED #community/Skill_Pre-Change_Analysis_PCA

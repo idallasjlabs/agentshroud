@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "12. OTA Wireless Firmware Updates"
+community: "Manual Usage (Current Method)"
 location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/12_OTA_Wireless_Firmware_Updates
+  - community/Manual_Usage_Current_Method
 ---
 
 # Manual Usage (Current Method)
@@ -17,4 +17,4 @@ tags:
 - [[Step 2 Fetch with Browser-Fetch Skill]] - `contains` [EXTRACTED]
 - [[Step 3 Parse Output]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/12_OTA_Wireless_Firmware_Updates
+#graphify/document #graphify/EXTRACTED #community/Manual_Usage_Current_Method

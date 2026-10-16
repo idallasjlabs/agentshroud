@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Data Flow.md"
+source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "_FakeUpstreamWS"
-location: "L10"
+community: "Hermes Agent — Connection Setup"
+location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_FakeUpstreamWS
+  - community/Hermes_Agent__Connection_Setup
 ---
 
 # Overview
 
 ## Connections
-- [[Data Flow_1]] - `contains` [EXTRACTED]
+- [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_FakeUpstreamWS
+#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup

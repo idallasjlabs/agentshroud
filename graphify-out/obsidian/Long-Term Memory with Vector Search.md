@@ -1,12 +1,12 @@
 ---
 source_file: "docs/archive/FUTURE-FEATURES.md"
 type: "concept"
-community: "TELEGRAM_ISSUES.md"
+community: "Report Delivery Format Instructions"
 location: "L510-L531"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/TELEGRAM_ISSUESmd
+  - community/Report_Delivery_Format_Instructions
 ---
 
 # Long-Term Memory with Vector Search
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[memorycontext.md Continuity File (50 lines)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/TELEGRAM_ISSUESmd
+#graphify/concept #graphify/INFERRED #community/Report_Delivery_Format_Instructions

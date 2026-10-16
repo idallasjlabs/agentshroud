@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/05 - Dependencies/fastapi.md"
 type: "document"
-community: "TestFileSandbox"
+community: "All Dependencies.md"
 location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestFileSandbox
+  - community/All_Dependenciesmd
 ---
 
 # Key FastAPI Features Used
 
 ## Connections
-- [[FastAPI_4]] - `contains` [EXTRACTED]
+- [[FastAPI_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFileSandbox
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

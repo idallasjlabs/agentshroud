@@ -1,17 +1,17 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "PromptProtection"
-location: "L480"
+community: "sync-cve-registry.py"
+location: "L808"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptProtection
+  - community/sync-cve-registrypy
 ---
 
 # Namespace
 
 ## Connections
-- [[gather_advisories()]] - `references` [EXTRACTED]
+- [[_run_nvd_sync()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptProtection
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/init_skill.py"
 type: "rationale"
-community: "AgentShroud -- USPTO Provisional Patent Applicat"
+community: "init_skill.py"
 location: "L256"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_--_USPTO_Provisional_Patent_Applicat
+  - community/init_skillpy
 ---
 
 # Initialize a new skill directory with template SKILL.md.      Args:         skil
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[init_skill()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Provisional_Patent_Applicat
+#graphify/rationale #graphify/EXTRACTED #community/init_skillpy

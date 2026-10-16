@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "test_scanner_integration.py"
+community: ".analyze_message"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/analyze_message
 ---
 
 # InjectionResult
 
 ## Connections
-- [[.scan_tool_result()_3]] - `references` [EXTRACTED]
+- [[dot-scan_tool_result()_1]] - `references` [EXTRACTED]
 - [[Result from tool result injection scan.]] - `rationale_for` [EXTRACTED]
 - [[tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/analyze_message

@@ -1,21 +1,21 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "Deploying AgentShroud on Raspberry Pi (aarch64)"
+community: "AgentShroud Data Dictionary"
 location: "L108"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
+  - community/AgentShroud_Data_Dictionary
 ---
 
 # Network Security Entities
 
 ## Connections
 - [[AgentShroud Data Dictionary]] - `contains` [EXTRACTED]
-- [[DNSQuery_1]] - `contains` [EXTRACTED]
-- [[InspectionResult_1]] - `contains` [EXTRACTED]
+- [[DNSQuery]] - `contains` [EXTRACTED]
+- [[InspectionResult]] - `contains` [EXTRACTED]
 - [[SecurityFinding_1]] - `contains` [EXTRACTED]
-- [[URLAnalysisResult_1]] - `contains` [EXTRACTED]
+- [[URLAnalysisResult]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Dictionary

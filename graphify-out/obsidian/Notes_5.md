@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/model-usage/references/codexbar-cli.md"
+source_file: "skills/openclaw/tmux/SKILL.md"
 type: "document"
-community: "Skill: UX Expert (UX)"
-location: "L28"
+community: "tmux Session Control"
+location: "L148"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UX_Expert_UX
+  - community/tmux_Session_Control
 ---
 
 # Notes
 
 ## Connections
-- [[CodexBar CLI quick ref (usage + cost)]] - `contains` [EXTRACTED]
+- [[tmux Session Control]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX
+#graphify/document #graphify/EXTRACTED #community/tmux_Session_Control

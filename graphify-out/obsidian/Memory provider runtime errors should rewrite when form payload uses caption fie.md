@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "test_llm_proxy.py"
+community: "TelegramAPIProxy"
 location: "L1781"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/TelegramAPIProxy
 ---
 
 # Memory provider runtime errors should rewrite when form payload uses caption fie
 
 ## Connections
-- [[.test_memory_provider_error_is_rewritten_for_form_caption_field()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_memory_provider_error_is_rewritten_for_form_caption_field()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

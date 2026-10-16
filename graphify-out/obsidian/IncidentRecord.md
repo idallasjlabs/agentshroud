@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "TrustConfig"
+community: "CrossBotTrustLedger"
 location: "L108"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TrustConfig
+  - community/CrossBotTrustLedger
 ---
 
 # IncidentRecord
 
 ## Connections
-- [[.get_incidents()]] - `references` [EXTRACTED]
-- [[.record_incident()]] - `references` [EXTRACTED]
+- [[dot-get_incidents()]] - `references` [EXTRACTED]
+- [[dot-record_incident()]] - `references` [EXTRACTED]
 - [[A single cross-bot incident recorded in the ledger.]] - `rationale_for` [EXTRACTED]
-- [[CrossBotTrustLedger_1]] - `uses` [INFERRED]
+- [[CrossBotTrustLedger]] - `uses` [INFERRED]
 - [[TestBotIncidentSeverity]] - `uses` [INFERRED]
 - [[TestBuildFullMesh]] - `uses` [INFERRED]
 - [[TestCrossBotTrustLedgerConstruction]] - `uses` [INFERRED]
@@ -25,8 +25,8 @@ tags:
 - [[TestTrustDecayPolicyValidation]] - `uses` [INFERRED]
 - [[TrustDecayPolicy_1]] - `uses` [INFERRED]
 - [[TrustManager_3]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
 - [[test_cross_bot_trust_ledger.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TrustConfig
+#graphify/code #graphify/INFERRED #community/CrossBotTrustLedger

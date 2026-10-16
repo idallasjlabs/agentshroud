@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
 type: "document"
-community: "validate_network_security()"
-location: "L21"
+community: "EgressFilter"
+location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/validate_network_security
+  - community/EgressFilter
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[auth.py_3]] - `contains` [EXTRACTED]
+- [[EgressFilter_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/validate_network_security
+#graphify/document #graphify/EXTRACTED #community/EgressFilter

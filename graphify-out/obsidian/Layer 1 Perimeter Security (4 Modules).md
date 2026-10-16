@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "test_e2e.py"
+community: "Security Module Inventory"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_e2epy
+  - community/Security_Module_Inventory
 ---
 
 # Layer 1: Perimeter Security (4 Modules)
@@ -18,4 +18,4 @@ tags:
 - [[4. Geo-Blocking]] - `contains` [EXTRACTED]
 - [[Security Module Inventory]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_e2epy
+#graphify/document #graphify/EXTRACTED #community/Security_Module_Inventory

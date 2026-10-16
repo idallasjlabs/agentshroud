@@ -1,18 +1,18 @@
 ---
-source_file: ".agents/skills/i-odev/SKILL.md"
+source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
 type: "document"
-community: "jira_dev_ticket run()"
+community: "Mode A — Single task"
 location: "L122"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/jira_dev_ticket_run
+  - community/Mode_A__Single_task
 ---
 
 # Mode A — Single task
 
 ## Connections
-- [[Skill OpenClaw Dev Workflow (ODEV)]] - `contains` [EXTRACTED]
+- [[Skill OpenClaw Dev Workflow (ODEV)_2]] - `contains` [EXTRACTED]
 - [[Step 1 — Sync and confirm clean state_1]] - `contains` [EXTRACTED]
 - [[Step 10 — Notify the owner_1]] - `contains` [EXTRACTED]
 - [[Step 11 — Merge (only on explicit owner instruction)_1]] - `contains` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[Step 9 — Push and open the PR_1]] - `contains` [EXTRACTED]
 - [[Step 9b — Update the Jira ticket with the PR link_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/jira_dev_ticket_run
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

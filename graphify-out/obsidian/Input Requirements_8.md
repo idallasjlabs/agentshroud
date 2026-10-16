@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-socrates/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
 type: "document"
-community: "gh-issues — Auto-fix GitHub Issues with Parallel"
-location: "L34"
+community: "The 8D Investigation Process"
+location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel
+  - community/The_8D_Investigation_Process
 ---
 
 # Input Requirements
 
 ## Connections
-- [[Socrates — Dialogue Architect_6]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel
+#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process

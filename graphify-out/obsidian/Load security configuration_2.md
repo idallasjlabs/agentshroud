@@ -12,6 +12,6 @@ tags:
 # Load security configuration
 
 ## Connections
-- [[._load_config()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-_load_config()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

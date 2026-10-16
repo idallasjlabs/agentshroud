@@ -1,20 +1,17 @@
 ---
-source_file: ".agents/skills/i-daedalus/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-hermes/SKILL.md"
 type: "document"
-community: "ADR-003: Two-Network Container Isolation"
-location: "L25"
+community: "Hermes — Reference Verifier"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-003_Two-Network_Container_Isolation
+  - community/Hermes__Reference_Verifier
 ---
 
 # Output Format
 
 ## Connections
-- [[Daedalus — Concept Illustrator_1]] - `contains` [EXTRACTED]
-- [[architecture.puml (PlantUML)]] - `contains` [EXTRACTED]
-- [[diagramsREADME]] - `contains` [EXTRACTED]
-- [[flow.mmd (Mermaid)]] - `contains` [EXTRACTED]
+- [[Hermes — Reference Verifier_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-003_Two-Network_Container_Isolation
+#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier

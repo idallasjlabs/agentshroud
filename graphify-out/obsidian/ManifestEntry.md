@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "Incident → Test Backfill Rule (R3 extension): ev"
+community: "Path"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Incident__Test_Backfill_Rule_R3_extension_ev
+  - community/Path
 ---
 
 # ManifestEntry
 
 ## Connections
-- [[.by_name()]] - `references` [EXTRACTED]
-- [[.from_file()]] - `method` [EXTRACTED]
-- [[.to_dict()_15]] - `method` [EXTRACTED]
+- [[dot-by_name()]] - `references` [EXTRACTED]
+- [[dot-from_file()]] - `method` [EXTRACTED]
+- [[dot-to_dict()_8]] - `method` [EXTRACTED]
 - [[A single item in the skills manifest.]] - `rationale_for` [EXTRACTED]
-- [[Path_39]] - `uses` [INFERRED]
+- [[Path_30]] - `uses` [INFERRED]
 - [[TestClient_1]] - `uses` [INFERRED]
 - [[TestDeployDryRun]] - `uses` [INFERRED]
 - [[TestDeployManifest]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[manifest.py]] - `contains` [EXTRACTED]
 - [[test_skills_manifest_sync.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Incident__Test_Backfill_Rule_R3_extension_ev
+#graphify/code #graphify/INFERRED #community/Path

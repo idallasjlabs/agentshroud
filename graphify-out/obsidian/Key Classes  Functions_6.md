@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "test_adversarial_injection.py"
-location: "L23"
+community: "encrypted_store.py"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_adversarial_injectionpy
+  - community/encrypted_storepy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[encrypted_store.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_adversarial_injectionpy
+#graphify/document #graphify/EXTRACTED #community/encrypted_storepy

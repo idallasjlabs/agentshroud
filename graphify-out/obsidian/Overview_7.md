@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/per-agent-isolation.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "start.sh"
-location: "L3"
+community: "SecureBrowser Skill"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/startsh
+  - community/SecureBrowser_Skill
 ---
 
 # Overview
 
 ## Connections
-- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/startsh
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

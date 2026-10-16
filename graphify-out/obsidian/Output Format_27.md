@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
+source_file: ".agents/skills/i-athena/SKILL.md"
 type: "document"
-community: "group_config.py"
+community: "Athena — Knowledge Distiller"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/group_configpy
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Output Format
 
 ## Connections
-- [[Atlas — Curriculum Architect_4]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_6]] - `contains` [EXTRACTED]
+- [[show_notes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/group_configpy
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

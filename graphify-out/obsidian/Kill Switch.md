@@ -1,25 +1,17 @@
 ---
-source_file: "dashboard/README.md"
+source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "AgentShroud Security Value Proposition"
-location: "L43"
+community: "main.py.md"
+location: "L113"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition
+  - community/mainpymd
 ---
 
 # Kill Switch
 
 ## Connections
-- [[AgentShroud Security Architecture]] - `references` [EXTRACTED]
-- [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
-- [[Features_1]] - `contains` [EXTRACTED]
-- [[Mode 1 freeze]] - `contains` [EXTRACTED]
-- [[Mode 2 shutdown]] - `contains` [EXTRACTED]
-- [[Mode 3 disconnect (⚠️ DANGEROUS)]] - `contains` [EXTRACTED]
-- [[SECURITY_SCRIPTS_REFERENCE]] - `references` [EXTRACTED]
-- [[VERIFICATION_RESULTS]] - `references` [EXTRACTED]
-- [[container-policy]] - `references` [EXTRACTED]
+- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition
+#graphify/document #graphify/EXTRACTED #community/mainpymd

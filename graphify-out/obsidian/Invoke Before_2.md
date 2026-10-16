@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ps/SKILL.md"
 type: "document"
-community: "is_quota_exhausted()"
+community: "Pre-Deployment Checklist"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/is_quota_exhausted
+  - community/Pre-Deployment_Checklist
 ---
 
 # Invoke Before
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Production Safety Checklist (PROD-SAFETY)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/is_quota_exhausted
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

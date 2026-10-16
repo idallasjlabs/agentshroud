@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
 type: "document"
-community: "_get_gmail_app_password()"
-location: "L26"
+community: "env_guard.py"
+location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_get_gmail_app_password
+  - community/env_guardpy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[middleware.py_2]] - `contains` [EXTRACTED]
+- [[env_guard.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_get_gmail_app_password
+#graphify/document #graphify/EXTRACTED #community/env_guardpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "rationale"
-community: "RBACConfig"
+community: "OutboundInfoFilter"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/OutboundInfoFilter
 ---
 
 # Main outbound information filtering engine.      Uses compiled regex patterns to
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OutboundInfoFilter]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/OutboundInfoFilter

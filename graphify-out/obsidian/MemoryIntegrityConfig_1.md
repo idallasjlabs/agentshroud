@@ -1,18 +1,34 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/security/memory_config.py"
 type: "code"
-community: "ContainerEngine"
-location: "L65"
+community: "lifespan.py"
+location: "L21"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ContainerEngine
+  - community/lifespanpy
 ---
 
 # MemoryIntegrityConfig
 
 ## Connections
-- [[.__init__()_95]] - `references` [EXTRACTED]
+- [[dot-setup_method()_8]] - `calls` [EXTRACTED]
+- [[dot-test_default_config()_1]] - `calls` [EXTRACTED]
+- [[Any_27]] - `uses` [INFERRED]
+- [[Configuration for memory file integrity monitoring.]] - `rationale_for` [EXTRACTED]
+- [[FileIntegrityRecord]] - `uses` [INFERRED]
 - [[MemoryIntegrityConfig]] - `uses` [INFERRED]
+- [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
+- [[ModificationSource]] - `uses` [INFERRED]
+- [[Path_22]] - `uses` [INFERRED]
+- [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
+- [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]
+- [[TestMemoryLifecycleManager]] - `uses` [INFERRED]
+- [[TestMemorySecurityIntegration]] - `uses` [INFERRED]
+- [[lifespan()]] - `calls` [EXTRACTED]
+- [[lifespan.py]] - `imports` [EXTRACTED]
+- [[memory_config.py]] - `contains` [EXTRACTED]
+- [[memory_integrity.py]] - `imports` [EXTRACTED]
+- [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ContainerEngine
+#graphify/code #graphify/INFERRED #community/lifespanpy

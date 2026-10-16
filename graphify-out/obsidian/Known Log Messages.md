@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "Contributing to AgentShroud™"
+community: "Known Log Messages"
 location: "L200"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Contributing_to_AgentShroud
+  - community/Known_Log_Messages
 ---
 
 # Known Log Messages
@@ -30,6 +30,6 @@ tags:
 - [[`health-monitor slackdefault health-monitor restarting (reason stale-socket)`]] - `contains` [EXTRACTED]
 - [[`openclaw Non-fatal unhandled rejection (continuing) Error A request error occurred`]] - `contains` [EXTRACTED]
 - [[`telegram autoSelectFamily=false (config)`  `fetch fallback forcing autoSelectFamily=false + dnsResultOrder=ipv4first`]] - `contains` [EXTRACTED]
-- [[troubleshooting]] - `references` [EXTRACTED]
+- [[troubleshooting_23]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Contributing_to_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Known_Log_Messages

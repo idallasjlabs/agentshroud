@@ -1,18 +1,18 @@
 ---
-source_file: ".agents/skills/i-hdev/SKILL.md"
+source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
 type: "document"
-community: "EgressFilter"
+community: "Mode A — Single task"
 location: "L122"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/Mode_A__Single_task
 ---
 
 # Mode A — Single task
 
 ## Connections
-- [[Skill Hermes Dev Workflow (HDEV)]] - `contains` [EXTRACTED]
+- [[Skill Hermes Dev Workflow (HDEV)_2]] - `contains` [EXTRACTED]
 - [[Step 1 — Sync and confirm clean state]] - `contains` [EXTRACTED]
 - [[Step 10 — Notify the owner]] - `contains` [EXTRACTED]
 - [[Step 11 — Merge (only on explicit owner instruction)]] - `contains` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[Step 9 — Push and open the PR]] - `contains` [EXTRACTED]
 - [[Step 9b — Update the Jira ticket with the PR link]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

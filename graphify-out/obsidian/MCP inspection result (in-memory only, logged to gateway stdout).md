@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-10-data-dictionary.png"
 type: "image"
-community: "TestDockerEngine"
+community: "Approval Queue (human-in-the-loop)"
 tags:
   - graphify/image
-  - graphify/INFERRED
-  - community/TestDockerEngine
+  - graphify/EXTRACTED
+  - community/Approval_Queue_human-in-the-loop
 ---
 
 # MCP inspection result (in-memory only, logged to gateway stdout)
@@ -14,4 +14,4 @@ tags:
 - [[EphemeralTransient data (never persisted raw)]] - `conceptually_related_to` [EXTRACTED]
 - [[MCP Inspector (injection scan, PII scan, sensitive-op scan; ThreatLevel NONELOWMEDIUMHIGH)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/TestDockerEngine
+#graphify/image #graphify/EXTRACTED #community/Approval_Queue_human-in-the-loop

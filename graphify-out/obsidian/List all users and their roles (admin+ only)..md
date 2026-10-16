@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/ingest_api/main.py"
+source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "SSHProxy"
-location: "L3932"
+community: "Action"
+location: "L315"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/Action
 ---
 
 # List all users and their roles (admin+ only).
 
 ## Connections
-- [[list_users_and_roles()]] - `rationale_for` [EXTRACTED]
+- [[dot-list_users_and_roles()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SSHProxy
+#graphify/rationale #graphify/EXTRACTED #community/Action

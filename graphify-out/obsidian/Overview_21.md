@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
+source_file: "docs/security/security-supply-chain.md"
 type: "document"
-community: "TestNetworkValidator"
-location: "L13"
+community: "Detailed Profiles"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestNetworkValidator
+  - community/Detailed_Profiles
 ---
 
 # Overview
 
 ## Connections
-- [[main.py_4]] - `contains` [EXTRACTED]
+- [[Security Supply Chain Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestNetworkValidator
+#graphify/document #graphify/EXTRACTED #community/Detailed_Profiles

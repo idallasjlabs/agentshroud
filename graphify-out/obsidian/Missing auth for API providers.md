@@ -1,18 +1,18 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "record_decision"
+community: "Troubleshooting"
 location: "L249"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/record_decision
+  - community/Troubleshooting
 ---
 
 # "Missing auth" for API providers
 
 ## Connections
-- [[Troubleshooting_15]] - `contains` [EXTRACTED]
-- [[Troubleshooting_31]] - `contains` [EXTRACTED]
+- [[Troubleshooting_1]] - `contains` [EXTRACTED]
+- [[Troubleshooting_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/record_decision
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting

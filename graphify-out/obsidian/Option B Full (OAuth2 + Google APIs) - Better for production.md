@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
+community: "Google Calendar & Contacts - Quick Setup"
 location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/Google_Calendar__Contacts_-_Quick_Setup
 ---
 
 # Option B: Full (OAuth2 + Google APIs) - Better for production
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🎯 Two Options]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/Google_Calendar__Contacts_-_Quick_Setup

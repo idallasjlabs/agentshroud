@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-14.md"
 type: "rationale"
-community: "start.sh"
+community: "Hermes Cron Dedupe (dev)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/startsh
+  - community/Hermes_Cron_Dedupe_dev
 ---
 
 # OpenClaw BLOCKED — node:sqlite NUL Truncation
@@ -15,4 +15,4 @@ tags:
 - [[Sunday Upgrade 2026-09-14 (dev)]] - `references` [EXTRACTED]
 - [[Voice-Gateway Bookworm Rebase Measured And Reverted]] - `cites` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/startsh
+#graphify/rationale #graphify/EXTRACTED #community/Hermes_Cron_Dedupe_dev

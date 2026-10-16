@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/05 - Dependencies/openscap.md"
 type: "document"
-community: "AgentShroud Blue Team Security Auditor"
+community: "OpenSCAP"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Blue_Team_Security_Auditor
+  - community/OpenSCAP
 ---
 
 # Installation in Gateway
 
 ## Connections
-- [[OpenSCAP]] - `contains` [EXTRACTED]
+- [[OpenSCAP_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor
+#graphify/document #graphify/EXTRACTED #community/OpenSCAP

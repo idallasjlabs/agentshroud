@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "rationale"
-community: "i-icloud SKILL — iCloud Services"
+community: "TestInstallerAPI"
 location: "L808"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/i-icloud_SKILL__iCloud_Services
+  - community/TestInstallerAPI
 ---
 
 # Installer must not fake completion: SCRUM-107.          The endpoint has no auto
 
 ## Connections
-- [[.test_install()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_install()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/i-icloud_SKILL__iCloud_Services
+#graphify/rationale #graphify/EXTRACTED #community/TestInstallerAPI

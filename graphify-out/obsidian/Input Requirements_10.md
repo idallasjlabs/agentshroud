@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-apollo/SKILL.md"
+source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
 type: "document"
-community: ".update()"
-location: "L127"
+community: "Socrates — Dialogue Architect"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/update
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Input Requirements
 
 ## Connections
-- [[Apollo — Audio Systems Producer_2]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/update
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

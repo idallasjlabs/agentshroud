@@ -1,19 +1,19 @@
 ---
 source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "openclaw/workspace/jira_dev_ticket.py"
+community: "SecureBrowser - Enterprise Secure Browser Automation"
 location: "L276"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/workspace/jira_dev_ticketpy
+  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
 ---
 
 # Integration with AgentShroud
 
 ## Connections
-- [[1Password Integration_2]] - `contains` [EXTRACTED]
+- [[1Password Integration]] - `contains` [EXTRACTED]
 - [[Gateway Integration]] - `contains` [EXTRACTED]
 - [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automation

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
+source_file: "skills/custom/agentshroud-redteam/SKILL.md"
 type: "document"
-community: "gateway.proxy.llm_proxy"
-location: "L132"
+community: "AgentShroud Red Team Adversarial Tester"
+location: "L354"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/gatewayproxyllm_proxy
+  - community/AgentShroud_Red_Team_Adversarial_Tester
 ---
 
 # Output
 
 ## Connections
-- [[Apollo — Audio Systems Producer_4]] - `contains` [EXTRACTED]
+- [[AgentShroud Red Team Adversarial Tester_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/gatewayproxyllm_proxy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester

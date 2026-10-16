@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/COMMUNICATION-TEMPLATES.md"
 type: "document"
-community: "start-agentshroud.sh"
+community: "AgentShroud™ Communication Templates"
 location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/start-agentshroudsh
+  - community/AgentShroud_Communication_Templates
 ---
 
 # Option 3 — Full Collaborator Notice
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud™ Communication Templates]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/start-agentshroudsh
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Communication_Templates

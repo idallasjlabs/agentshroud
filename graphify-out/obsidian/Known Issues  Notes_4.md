@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
 type: "document"
-community: "_get_gmail_app_password()"
-location: "L120"
+community: "version_routes.py"
+location: "L71"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_get_gmail_app_password
+  - community/version_routespy
 ---
 
 # Known Issues / Notes
 
 ## Connections
-- [[middleware.py_2]] - `contains` [EXTRACTED]
+- [[version_routes.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_get_gmail_app_password
+#graphify/document #graphify/EXTRACTED #community/version_routespy

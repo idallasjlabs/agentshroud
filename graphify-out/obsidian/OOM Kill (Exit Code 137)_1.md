@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
 type: "document"
-community: "02-infrastructure.md"
+community: "Crash Recovery"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/02-infrastructuremd
+  - community/Crash_Recovery
 ---
 
 # OOM Kill (Exit Code 137)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Crash Diagnosis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/02-infrastructuremd
+#graphify/document #graphify/EXTRACTED #community/Crash_Recovery

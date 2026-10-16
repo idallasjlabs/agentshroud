@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/networks.md"
 type: "document"
-community: "Telegram Formatting Rule (bold only, no headers "
+community: "agentshroud-bot"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Formatting_Rule_bold_only_no_headers_
+  - community/agentshroud-bot
 ---
 
 # Network Architecture
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Docker Networks]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Formatting_Rule_bold_only_no_headers_
+#graphify/document #graphify/EXTRACTED #community/agentshroud-bot

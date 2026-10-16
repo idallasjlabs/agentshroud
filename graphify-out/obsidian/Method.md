@@ -1,20 +1,17 @@
 ---
-source_file: "cli/src/main.rs"
-type: "code"
-community: ".agents/skills/i-cr/SKILL.md"
-location: "L213"
+source_file: "docs/planning/v1.2/blue-team-assessment-v1.2.0.md"
+type: "document"
+community: "AgentShroud v1.2.0 — Blue Team Security Assessment"
+location: "L11"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/AgentShroud_v120__Blue_Team_Security_Assessment
 ---
 
 # Method
 
 ## Connections
-- [[.request()_1]] - `references` [EXTRACTED]
-- [[.request()]] - `references` [EXTRACTED]
-- [[FakeTransport]] - `references` [EXTRACTED]
-- [[main.rs]] - `contains` [EXTRACTED]
+- [[AgentShroud v1.2.0 — Blue Team Security Assessment]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v120__Blue_Team_Security_Assessment

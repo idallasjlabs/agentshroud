@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "TrustManager"
+community: "MiddlewareManager"
 location: "L160"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/MiddlewareManager
 ---
 
 # Initialize all security modules.
 
 ## Connections
-- [[.__init__()_14]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_103]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

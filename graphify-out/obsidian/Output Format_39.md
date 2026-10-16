@@ -1,17 +1,20 @@
 ---
-source_file: "docs/claude-security-audit-prompt.md"
+source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "detect_runtime()"
-location: "L266"
+community: "Daedalus — Concept Illustrator"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/detect_runtime
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Output Format
 
 ## Connections
-- [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_4]] - `contains` [EXTRACTED]
+- [[architecture.puml (PlantUML)_1]] - `contains` [EXTRACTED]
+- [[diagramsREADME_2]] - `contains` [EXTRACTED]
+- [[flow.mmd (Mermaid)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/detect_runtime
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

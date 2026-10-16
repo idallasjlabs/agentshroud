@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "rationale"
-community: "TestConfigValidation"
+community: "SecureBrowser"
 location: "L246"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/SecureBrowser
 ---
 
 # Navigate to URL          Security: URL validation, audit logging
 
 ## Connections
-- [[.navigate()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-navigate()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

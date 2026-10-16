@@ -1,19 +1,16 @@
 ---
-source_file: "docs/papers/agentshroud-whitepaper.md"
+source_file: "docs/user-guide.md"
 type: "concept"
-community: "test_anthropic_openai_translator.py"
+community: "SOC Command Center — Five Pillars"
 tags:
   - graphify/concept
-  - graphify/EXTRACTED
-  - community/test_anthropic_openai_translatorpy
+  - graphify/INFERRED
+  - community/SOC_Command_Center__Five_Pillars
 ---
 
-# Kill Switch (FREEZE/SHUTDOWN/DISCONNECT)
+# Kill Switch (freeze/shutdown/disconnect)
 
 ## Connections
-- [[AgentShroud Deployment Procedure]] - `references` [EXTRACTED]
-- [[AgentShroud Incident Response Plan]] - `references` [EXTRACTED]
-- [[AgentShroud Operations Runbook]] - `references` [EXTRACTED]
-- [[AgentShroud White Paper v1.1 (Feb 2026)]] - `references` [EXTRACTED]
+- [[SOC Command Center — Five Pillars]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy
+#graphify/concept #graphify/INFERRED #community/SOC_Command_Center__Five_Pillars

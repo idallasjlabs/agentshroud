@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
+source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: ".analyze_message()"
-location: "L150"
+community: "AgentShroud — Master Feature List (Everything Ever Mentioned)"
+location: "L395"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/analyze_message
+  - community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned
 ---
 
 # Infrastructure
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor_2]] - `contains` [EXTRACTED]
+- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/analyze_message
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned

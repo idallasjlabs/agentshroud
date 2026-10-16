@@ -1,20 +1,17 @@
 ---
-source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
+source_file: "docs/architecture/WORKSPACE_DECISION.md"
 type: "document"
-community: "Multi-Agent Role Matrix"
-location: "L608"
+community: "OpenClaw Workspace Usage Guide"
+location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Multi-Agent_Role_Matrix
+  - community/OpenClaw_Workspace_Usage_Guide
 ---
 
 # Next Steps
 
 ## Connections
-- [[Decision Points]] - `contains` [EXTRACTED]
-- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
-- [[Implementation Timeline]] - `contains` [EXTRACTED]
-- [[Prerequisites (Before Implementation)]] - `contains` [EXTRACTED]
+- [[Workspace Configuration Decision]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

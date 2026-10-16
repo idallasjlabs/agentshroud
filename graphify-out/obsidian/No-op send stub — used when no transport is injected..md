@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/group_router.py"
 type: "rationale"
-community: "TestEgressApprovalQueue"
+community: "GroupApprovalRouter"
 location: "L153"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/GroupApprovalRouter
 ---
 
 # No-op send stub — used when no transport is injected.
 
 ## Connections
-- [[._default_send()]] - `rationale_for` [EXTRACTED]
+- [[dot-_default_send()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/rationale #graphify/EXTRACTED #community/GroupApprovalRouter

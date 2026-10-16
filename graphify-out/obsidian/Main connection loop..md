@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "Enum"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Enum
 ---
 
 # Main connection loop.
 
 ## Connections
-- [[.run()_5]] - `rationale_for` [EXTRACTED]
+- [[dot-run()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/Enum

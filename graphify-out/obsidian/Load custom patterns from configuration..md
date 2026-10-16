@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "EncryptedStore"
+community: "TestParamSanitization"
 location: "L306"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/TestParamSanitization
 ---
 
 # Load custom patterns from configuration.
 
 ## Connections
-- [[._load_custom_patterns()]] - `rationale_for` [EXTRACTED]
+- [[dot-_load_custom_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EncryptedStore
+#graphify/rationale #graphify/EXTRACTED #community/TestParamSanitization

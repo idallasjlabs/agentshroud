@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-qa/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
 type: "document"
-community: "health_report.py"
-location: "L27"
+community: "Socrates — Dialogue Architect"
+location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/health_reportpy
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/health_reportpy
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

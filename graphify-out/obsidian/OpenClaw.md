@@ -1,23 +1,19 @@
 ---
 source_file: "docs/vault/05 - Dependencies/openclaw.md"
 type: "document"
-community: "Telegram Formatting Rule (bold only, no headers "
-location: "L9"
+community: "agentshroud-bot"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Formatting_Rule_bold_only_no_headers_
+  - community/agentshroud-bot
 ---
 
-# OpenClaw
+# openclaw.md
 
 ## Connections
-- [[Config Location]] - `contains` [EXTRACTED]
-- [[Key Intercepted Paths]] - `contains` [EXTRACTED]
-- [[Purpose_188]] - `contains` [EXTRACTED]
-- [[Related Notes_43]] - `contains` [EXTRACTED]
-- [[Role in AgentShroud]] - `contains` [EXTRACTED]
-- [[Version Note]] - `contains` [EXTRACTED]
-- [[openclaw]] - `contains` [EXTRACTED]
+- [[All Dependencies]] - `references` [EXTRACTED]
+- [[OpenClaw_1]] - `contains` [EXTRACTED]
+- [[agentshroud-bot]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Formatting_Rule_bold_only_no_headers_
+#graphify/document #graphify/EXTRACTED #community/agentshroud-bot

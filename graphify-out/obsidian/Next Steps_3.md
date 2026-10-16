@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/WORKSPACE_DECISION.md"
+source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "OpenClaw Workspace Usage Guide"
-location: "L92"
+community: "OpenClaw Setup Guide - agentshroud.ai Bot"
+location: "L445"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Workspace_Usage_Guide
+  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
 ---
 
 # Next Steps
 
 ## Connections
-- [[Workspace Configuration Decision]] - `contains` [EXTRACTED]
+- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot

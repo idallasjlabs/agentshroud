@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/github/SKILL.md"
+source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "sunday-upgrade.md"
-location: "L159"
+community: "xurl — Agent Skill Reference"
+location: "L453"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sunday-upgrademd
+  - community/xurl__Agent_Skill_Reference
 ---
 
 # Notes
 
 ## Connections
-- [[GitHub Skill]] - `contains` [EXTRACTED]
+- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sunday-upgrademd
+#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference

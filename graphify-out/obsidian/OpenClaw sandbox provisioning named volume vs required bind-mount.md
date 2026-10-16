@@ -1,0 +1,19 @@
+---
+source_file: "INCIDENT_2026-10-16_conduit-outage.md"
+type: "concept"
+community: "docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)"
+location: "134"
+tags:
+  - graphify/concept
+  - graphify/EXTRACTED
+  - community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
+---
+
+# OpenClaw sandbox provisioning: named volume vs required bind-mount
+
+## Connections
+- [[OpenClaw sandbox mode set off (named volume vs bind-mount mismatch)]] - `semantically_similar_to` [INFERRED]
+- [[dockerscriptsinit-openclaw-config.sh (baked into OpenClaw image; seeds sandbox mode, runs doctor --fix)]] - `references` [EXTRACTED]
+- [[openclaw service (isolated network only, egress via gateway8181, DOCKER_HOST=socket-proxy)]] - `references` [EXTRACTED]
+
+#graphify/concept #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes

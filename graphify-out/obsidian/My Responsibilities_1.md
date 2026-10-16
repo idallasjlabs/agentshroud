@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/IDENTITY.md"
 type: "document"
-community: "AgentShroud v0.8.0 — 25-Domain Prompt Injection "
+community: "proxy_status.py"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080__25-Domain_Prompt_Injection_
+  - community/proxy_statuspy
 ---
 
 # My Responsibilities
@@ -15,4 +15,4 @@ tags:
 - [[IDENTITY.md - Who I Am_2]] - `contains` [EXTRACTED]
 - [[proxy_status.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080__25-Domain_Prompt_Injection_
+#graphify/document #graphify/EXTRACTED #community/proxy_statuspy

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
+source_file: "docker/config/hermes/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "BlockingPipeline"
-location: "L34"
+community: "Vulcan — Subject Matter Auditor"
+location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BlockingPipeline
+  - community/Vulcan__Subject_Matter_Auditor
 ---
 
 # Input Requirements
 
 ## Connections
-- [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BlockingPipeline
+#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor

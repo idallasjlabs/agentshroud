@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_output_schema.py"
 type: "rationale"
-community: "hermes/skills/i-cr/SKILL.md"
+community: "OutputSchemaEnforcer"
 location: "L23"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/hermes/skills/i-cr/SKILLmd
+  - community/OutputSchemaEnforcer
 ---
 
 # Normal short text should pass without violations.
 
 ## Connections
-- [[.test_valid_output_passes()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_valid_output_passes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd
+#graphify/rationale #graphify/EXTRACTED #community/OutputSchemaEnforcer

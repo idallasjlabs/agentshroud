@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt"
 type: "rationale"
-community: "TestSplitForSpeech"
+community: "Prompt: Hermes Competitive Intelligence Email (AM/PM)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestSplitForSpeech
+  - community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM
 ---
 
 # No execute_code / python3 -c / pip install in Cron Mode
@@ -14,4 +14,4 @@ tags:
 - [[Prompt Hermes Competitive Intelligence Email (AMPM)]] - `implements` [EXTRACTED]
 - [[Prompt jira-weekly-review]] - `implements` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestSplitForSpeech
+#graphify/rationale #graphify/EXTRACTED #community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM

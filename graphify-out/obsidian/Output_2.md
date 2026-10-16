@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-apollo/SKILL.md"
+source_file: "skills/openclaw/openai-image-gen/SKILL.md"
 type: "document"
-community: ".update()"
-location: "L132"
+community: "gen.py"
+location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/update
+  - community/genpy
 ---
 
 # Output
 
 ## Connections
-- [[Apollo — Audio Systems Producer_2]] - `contains` [EXTRACTED]
+- [[OpenAI Image Gen]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/update
+#graphify/document #graphify/EXTRACTED #community/genpy

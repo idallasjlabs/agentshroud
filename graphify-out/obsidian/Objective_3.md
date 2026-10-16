@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-qa/SKILL.md"
+source_file: ".agents/skills/i-pr/SKILL.md"
 type: "document"
-community: "health_report.py"
+community: "Skill: Pull Request (PR) Generator"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/health_reportpy
+  - community/Skill_Pull_Request_PR_Generator
 ---
 
 # Objective
 
 ## Connections
-- [[Skill Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/health_reportpy
+#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator

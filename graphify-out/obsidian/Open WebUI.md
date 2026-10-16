@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "Skill: Technical Illustrator (TI)"
+community: "Hermes Agent — Connection Setup"
 location: "L133"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Technical_Illustrator_TI
+  - community/Hermes_Agent__Connection_Setup
 ---
 
 # Open WebUI
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Frontend Client Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI
+#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup

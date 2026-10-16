@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Plan: Proxying HexStrike AI MCP Agents via Agent"
+community: "TestBotIsMentioned"
 location: "L8887"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Plan_Proxying_HexStrike_AI_MCP_Agents_via_Agent
+  - community/TestBotIsMentioned
 ---
 
 # Media messages use caption + caption_entities.
 
 ## Connections
-- [[.test_caption_entities_supported()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_caption_entities_supported()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Plan_Proxying_HexStrike_AI_MCP_Agents_via_Agent
+#graphify/rationale #graphify/EXTRACTED #community/TestBotIsMentioned

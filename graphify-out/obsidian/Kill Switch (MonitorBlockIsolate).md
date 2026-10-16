@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "test_claude_via_openai_path.py"
+community: "TrustManager"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_claude_via_openai_pathpy
+  - community/TrustManager
 ---
 
 # Kill Switch (Monitor/Block/Isolate)
@@ -14,4 +14,4 @@ tags:
 - [[Approval Queue (SQLite)]] - `calls` [EXTRACTED]
 - [[Dashboard (WebSocket)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_claude_via_openai_pathpy
+#graphify/concept #graphify/EXTRACTED #community/TrustManager

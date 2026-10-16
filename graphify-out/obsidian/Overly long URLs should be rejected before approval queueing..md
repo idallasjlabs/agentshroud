@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "SOC Models SecurityEvent Tests"
+community: "TelegramAPIProxy"
 location: "L3395"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Models_SecurityEvent_Tests
+  - community/TelegramAPIProxy
 ---
 
 # Overly long URLs should be rejected before approval queueing.
 
 ## Connections
-- [[.test_raw_web_fetch_json_overlong_url_does_not_queue_approval()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_raw_web_fetch_json_overlong_url_does_not_queue_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Models_SecurityEvent_Tests
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

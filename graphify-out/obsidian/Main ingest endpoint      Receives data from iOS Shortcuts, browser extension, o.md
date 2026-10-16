@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "rationale"
-community: "RateLimiter"
+community: "forward.py"
 location: "L588"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/forwardpy
 ---
 
 # Main ingest endpoint      Receives data from iOS Shortcuts, browser extension, o
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[forward_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RateLimiter
+#graphify/rationale #graphify/EXTRACTED #community/forwardpy

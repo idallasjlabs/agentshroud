@@ -1,18 +1,18 @@
 ---
 source_file: "docker/config/openclaw/skills/i-odev/SKILL.md"
 type: "document"
-community: "docker_engine.py"
+community: "Mode A — Single task"
 location: "L122"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker_enginepy
+  - community/Mode_A__Single_task
 ---
 
 # Mode A — Single task
 
 ## Connections
-- [[Skill OpenClaw Dev Workflow (ODEV)_2]] - `contains` [EXTRACTED]
+- [[Skill OpenClaw Dev Workflow (ODEV)_1]] - `contains` [EXTRACTED]
 - [[Step 1 — Sync and confirm clean state_5]] - `contains` [EXTRACTED]
 - [[Step 10 — Notify the owner_5]] - `contains` [EXTRACTED]
 - [[Step 11 — Merge (only on explicit owner instruction)_5]] - `contains` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[Step 9 — Push and open the PR_5]] - `contains` [EXTRACTED]
 - [[Step 9b — Update the Jira ticket with the PR link_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker_enginepy
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task
