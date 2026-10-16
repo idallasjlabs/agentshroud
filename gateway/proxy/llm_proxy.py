@@ -20,6 +20,7 @@ import time
 import urllib.error
 import urllib.request
 from collections.abc import AsyncIterator
+from dataclasses import dataclass
 from typing import Any
 
 from gateway.proxy.anthropic_openai_sse_translator import translate_openai_sse_to_anthropic
@@ -191,6 +192,24 @@ LOCAL_MODEL_ROUTES: dict[str, str] = {
 # host" even when the real backend (LM Studio / Rapid-MLX / etc.) was up
 # (observed 2026-09-16: readiness never passed, "OpenClaw online" never sent).
 LOCAL_PROVIDER_PREFIXES: tuple[str, ...] = ("ollama/", "lmstudio/", "openai-local/")
+
+
+@dataclass(frozen=True)
+class StreamHead:
+    """First item yielded by proxy_messages_streaming(with_head=True).
+
+    Carries the HTTP status + content type the client should receive, known
+    once the upstream (or failover) response headers have arrived and before
+    any body byte is yielded. Added 2026-10-16: the /v1/* route built every
+    streaming response as a fixed 200 text/event-stream, so an upstream 400
+    (TurboFieldfare `unsupported_value`) reached Hermes as a 200 whose body was
+    raw error JSON — the SSE parser dropped it as a non-`data:` line and the
+    user saw "empty stream with no finish_reason" instead of the real error.
+    """
+
+    status: int
+    content_type: str = "application/json"
+
 
 # Per-backend operator hints returned in the structured 503 body when a local
 # backend (mlx_lm / Ollama / LM Studio / Turbo Fieldflare) is unreachable at
@@ -526,6 +545,33 @@ class LLMProxy:
                 elif isinstance(prop_type, list) and "null" not in prop_type:
                     prop_type.append("null")
                     changed = True
+        return changed
+
+    @staticmethod
+    def _strip_fieldflare_unsupported_fields(request_data: dict) -> bool:
+        """Remove OpenAI request fields TurboFieldfare rejects with HTTP 400, in place.
+
+        Probed field-by-field against :8238 on 2026-10-16: the server answers
+        400 {"code": "unsupported_value"} for `parallel_tool_calls` (true OR
+        false), for a named `tool_choice` object and for `tool_choice:
+        "required"`; only the "auto" / "none" strings are accepted. Hermes
+        sends parallel_tool_calls with every tool-enabled request, so every
+        dashboard turn on gemma-4-26b-a4b-it failed (9/9 observed). Stripping
+        here protects any client on the Fieldflare route — same rationale as
+        the Rapid-MLX shims above.
+
+        Returns True if the request body was modified (caller must re-encode).
+        """
+        changed = False
+        if "parallel_tool_calls" in request_data:
+            del request_data["parallel_tool_calls"]
+            changed = True
+        tool_choice = request_data.get("tool_choice")
+        if tool_choice is not None and tool_choice not in ("auto", "none"):
+            # "required" / named-function forms are not expressible on this
+            # backend; "auto" is the closest accepted behaviour.
+            request_data["tool_choice"] = "auto"
+            changed = True
         return changed
 
     @staticmethod
@@ -972,6 +1018,9 @@ class LLMProxy:
                     changed_tools = self._widen_optional_tool_param_types(request_data)
                     if changed_thinking or changed_tools:
                         body = json.dumps(request_data).encode()
+                if base_url == FIELDFLARE_API_BASE:
+                    if self._strip_fieldflare_unsupported_fields(request_data):
+                        body = json.dumps(request_data).encode()
             headers = self._local_backend_headers(base_url, headers)
         elif is_openai:
             base_url = OPENAI_API_BASE
@@ -1156,12 +1205,22 @@ class LLMProxy:
         body: bytes,
         headers: dict[str, str],
         user_id: str = "unknown",
-    ) -> AsyncIterator[bytes]:
+        with_head: bool = False,
+    ) -> AsyncIterator[Any]:
         """Proxy a streaming LLM API request, yielding SSE chunks as they arrive.
 
         Used when the client sends stream:true.  Bypasses the buffering in
         _forward_request so OpenClaw's 60-second HTTP fetch timeout is not
         triggered while waiting for the first response byte from a slow model.
+
+        With ``with_head=True`` the first item yielded is a :class:`StreamHead`
+        (status + content type of what follows), then bytes. The /v1/* route
+        awaits that head before building its response so an upstream 4xx is
+        returned as that 4xx with its body, not as a 200 event stream. The
+        head arrives as soon as the upstream response headers do (measured
+        2026-10-16 against TurboFieldfare: headers at 29 ms, body over 27 s),
+        so no first-token wait is introduced. Default ``with_head=False``
+        keeps the original bytes-only contract for existing callers.
         """
         self._stats["total_requests"] += 1
 
@@ -1246,6 +1305,8 @@ class LLMProxy:
                 if base_url == RAPID_MLX_API_BASE:
                     self._suppress_qwen3_thinking(request_data)
                     self._widen_optional_tool_param_types(request_data)
+                if base_url == FIELDFLARE_API_BASE:
+                    self._strip_fieldflare_unsupported_fields(request_data)
                 body = json.dumps(request_data).encode()
         elif is_openai:
             base_url = OPENAI_API_BASE
@@ -1277,10 +1338,14 @@ class LLMProxy:
         _failover_opt_out = headers.get("x-agentshroud-no-failover", "") == "1"
         _failover_enabled = os.environ.get("AGENTSHROUD_FAILOVER_ON_QUOTA", "1") == "1"
 
-        async def _stream() -> AsyncIterator[bytes]:
+        async def _stream() -> AsyncIterator[Any]:
             import httpx as _httpx
 
             collected_status: list[int] = []
+            # Exactly one StreamHead is yielded per stream, before any body
+            # byte. Tracked so the exception handler below can still emit one
+            # if the failure happened before the upstream headers arrived.
+            head_sent = False
 
             try:
                 async with _httpx.AsyncClient(
@@ -1338,6 +1403,13 @@ class LLMProxy:
                                         fo_url = f"{fo_base}/v1/chat/completions"
                                     else:
                                         self._emit_failover_notice(quota_token, translated=False)
+                                        yield StreamHead(
+                                            response.status_code,
+                                            response.headers.get(
+                                                "content-type", "application/json"
+                                            ),
+                                        )
+                                        head_sent = True
                                         yield error_body
                                         return
 
@@ -1366,6 +1438,8 @@ class LLMProxy:
                                                 self._emit_failover_notice(
                                                     quota_token, translated=True
                                                 )
+                                                yield StreamHead(200, "text/event-stream")
+                                                head_sent = True
                                                 if "/v1/messages" in path:
                                                     async for (
                                                         translated
@@ -1426,6 +1500,8 @@ class LLMProxy:
                                                         "Cloud failover → OpenAI %s",
                                                         _oai_model,
                                                     )
+                                                    yield StreamHead(200, "text/event-stream")
+                                                    head_sent = True
                                                     if "/v1/messages" in path:
                                                         async for (
                                                             _t
@@ -1450,14 +1526,36 @@ class LLMProxy:
                                                     )
                                     except Exception as _fe2:
                                         logger.warning("Cloud failover (OpenAI) error: %s", _fe2)
+                            # Not a quota/overload hit, or every failover arm
+                            # failed: hand the client the upstream status + body.
+                            yield StreamHead(
+                                response.status_code,
+                                response.headers.get("content-type", "application/json"),
+                            )
+                            head_sent = True
                             yield error_body
                         else:
-                            # Normal streaming — forward chunks immediately, no buffering
+                            # Normal streaming — forward chunks immediately, no
+                            # buffering. A local-backend 4xx/5xx lands here too
+                            # (quota failover is cloud-only); its real status
+                            # travels in the head rather than vanishing under 200.
+                            yield StreamHead(
+                                response.status_code,
+                                response.headers.get("content-type", "text/event-stream"),
+                            )
+                            head_sent = True
                             async for chunk in response.aiter_bytes():
                                 if chunk:
                                     yield chunk
 
             except Exception as e:
+                # Pre-header failures (connect refused, TLS, DNS) keep the
+                # established contract: a 200 event stream carrying one
+                # structured SSE error frame, which OpenAI-style SSE clients
+                # surface as an APIError with the message intact.
+                if not head_sent:
+                    yield StreamHead(200, "text/event-stream")
+                    head_sent = True
                 # Added 2026-08-27: OpenClaw always sends stream=true (see
                 # comment above), so it only ever hits this generic handler —
                 # never the friendly _LOCAL_BACKEND_HINTS treatment
@@ -1480,7 +1578,16 @@ class LLMProxy:
                 )
                 yield f"data: {err}\n\n".encode()
 
-        return _stream()
+        if with_head:
+            return _stream()
+
+        async def _bytes_only() -> AsyncIterator[bytes]:
+            async for item in _stream():
+                if isinstance(item, StreamHead):
+                    continue
+                yield item
+
+        return _bytes_only()
 
     async def _scan_request_data(self, request_data: dict, user_id: str):
         """Scan request data for PII and injection across different provider formats."""

@@ -502,6 +502,63 @@ Committed on dev after prod's report:
    count surfaced in the Telegram "Hermes online" message. Takes effect on the next
    Hermes image build (Sunday).
 
+### Afternoon (14:00–14:30 EDT): two more gateway findings from prod, fixed on dev
+
+Prod's live Hermes dashboard chat on `gemma-4-26b-a4b-it` (TurboFieldfare, `:8238`)
+failed 9/9 at 18:03Z with "Provider returned an empty stream with no finish_reason".
+Gateway log each time: `POST host.docker.internal:8238/v1/chat/completions "400 Bad
+Request"` followed by `POST /v1/chat/completions -> 200`. Two defects, both fixed here:
+
+1. **Streaming route masked every upstream 4xx as a 200 event stream.**
+   `gateway/ingest_api/main.py` built the `stream:true` response as a fixed
+   `StreamingResponse(status_code=200, media_type="text/event-stream")` before the
+   upstream had answered, so a backend 400 arrived at the client as a 200 whose body was
+   raw error JSON — SSE parsers drop non-`data:` lines, hence "empty stream".
+   `LLMProxy.proxy_messages_streaming()` now takes `with_head=True` and yields a
+   `StreamHead(status, content_type)` first, as soon as the upstream (or failover)
+   response headers arrive; the route awaits it and returns a plain `Response` with the
+   upstream status + body for ≥400, or the event stream with the real status otherwise.
+   The default `with_head=False` keeps the bytes-only contract for existing callers, and
+   pre-header failures (backend down) keep the established in-stream SSE error frame.
+   No first-token wait is introduced: measured against Fieldflare, headers arrive in
+   29 ms while the body streams for 27 s (`curl -w time_starttransfer`).
+2. **TurboFieldfare rejects OpenAI fields Hermes always sends.** Probed field-by-field
+   against `:8238`: HTTP 400 `{"code":"unsupported_value"}` for `parallel_tool_calls`
+   (true or false), a named `tool_choice` object, and — one more than prod reported —
+   `tool_choice: "required"`; only the `"auto"`/`"none"` strings are accepted.
+   `LLMProxy._strip_fieldflare_unsupported_fields()` drops `parallel_tool_calls` and
+   rewrites any other `tool_choice` to `"auto"`, applied only when the resolved backend is
+   `FIELDFLARE_API_BASE`, in both `proxy_messages` and the streaming path (same shape as
+   the Rapid-MLX thinking shim). Any client on that route is protected, not just Hermes.
+
+Tests (TDD, red first — 15 failed before the change):
+`gateway/tests/test_llm_proxy_local_parity.py` (9 Fieldflare shim tests, unit +
+non-streaming + streaming dispatch, plus a negative test that LM Studio keeps the fields),
+`gateway/tests/test_llm_proxy.py` (5 `StreamHead` tests: 400 local, 400 cloud non-quota,
+200, default bytes-only contract, connect-failure frame), `gateway/tests/test_main_endpoints.py`
+`TestStreamingProxyStatusPropagation` (2 route tests). Affected suites: 174 passed.
+
+Live proof on dev (gateway source is bind-mounted; container restarted 14:21 EDT, healthy
+in 45 s), requests sent from inside `agentshroud-dev-hermes-v2` to `gateway:8080`:
+
+| Request | Before | After (dev gateway log) |
+|---------|--------|-------------------------|
+| stream + tools + `parallel_tool_calls:true` + `tool_choice:"required"` | upstream 400 → client 200 empty | upstream `200 OK` → `-> 200`, 12 streamed tokens, `finish_reason:"length"`, TTFB 0.97 s |
+| stream + `"n":3` (still rejected, not stripped) | upstream 400 → client 200 empty | upstream `400 Bad Request` → `-> 400`, body `{"error":{"code":"unsupported_value","message":"only n=1 is supported"...}}` |
+
+Takes effect on prod with Sunday's gateway rebuild (owner's freeze on prod rebuilds).
+
+Also from prod this afternoon, for the record: the iPad/phone Conduit failure was carrier
+DNS resolving `marvin.tail240ea8.ts.net` to the Funnel ingress, not AgentShroud; the
+owner restored the pre-10-08 serve (`:9119 → 127.0.0.1:9119`) and added Funnel
+`/hermes → 127.0.0.1:8080/hermes-dashboard/` (public exposure, owner's call; recorded in
+`scripts/tailscale-serve.sh` by prod's `9f3ac89909`, dev fast-forwarded). The owner
+installed the `kaishi00/hermes-conduit-notifier` plugin (`conduit_push` 0.41.0) into
+prod's `/opt/data/plugins` for Conduit voice — it lives in the data volume, so Sunday's
+Hermes v0.22.2 bump must keep it loading. Dev has no copy of that plugin, so the dev dry
+run cannot exercise it; prod should check `/api/plugins/conduit_push/capabilities` right
+after Sunday's Hermes restart.
+
 ### Still open for Sunday (not changed today)
 - `graphify-out/` is stale (manifest 2026-09-27; 17 commits since touching
   gateway/scripts/docker). CLAUDE.md makes a refresh mandatory before a prod rebuild —

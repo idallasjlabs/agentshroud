@@ -998,3 +998,192 @@ async def test_model_ref_round_trip(input_ref, expected_model, expected_backend,
         f"model ref {input_ref!r}: expected backend {expected_backend!r}, "
         f"got {captured['url']!r}"
     )
+
+
+# ---------------------------------------------------------------------------
+# Turbo Fieldflare request shim — 2026-10-16
+# ---------------------------------------------------------------------------
+#
+# Probed live against :8238 (2026-10-16): TurboFieldfare returns HTTP 400
+# {"code": "unsupported_value"} for `parallel_tool_calls` (any value), for a
+# named `tool_choice` object, and for `tool_choice: "required"`; it accepts
+# only the "auto" / "none" string forms. Hermes always sends
+# parallel_tool_calls alongside tools, so every tool-enabled dashboard turn on
+# gemma-4-26b-a4b-it 400'd. The gateway strips these for the Fieldflare route
+# so ANY client is protected, the same way the Rapid-MLX thinking shim works.
+
+
+def test_fieldflare_shim_drops_parallel_tool_calls_true_and_false():
+    for value in (True, False):
+        req = {"model": "gemma-4-26b-a4b-it", "parallel_tool_calls": value, "tools": []}
+        assert LLMProxy._strip_fieldflare_unsupported_fields(req) is True
+        assert "parallel_tool_calls" not in req
+
+
+def test_fieldflare_shim_rewrites_named_tool_choice_object_to_auto():
+    req = {
+        "model": "gemma-4-26b-a4b-it",
+        "tool_choice": {"type": "function", "function": {"name": "lookup"}},
+    }
+    assert LLMProxy._strip_fieldflare_unsupported_fields(req) is True
+    assert req["tool_choice"] == "auto"
+
+
+def test_fieldflare_shim_rewrites_required_tool_choice_to_auto():
+    req = {"model": "gemma-4-26b-a4b-it", "tool_choice": "required"}
+    assert LLMProxy._strip_fieldflare_unsupported_fields(req) is True
+    assert req["tool_choice"] == "auto"
+
+
+@pytest.mark.parametrize("accepted", ["auto", "none"])
+def test_fieldflare_shim_leaves_accepted_tool_choice_strings_alone(accepted):
+    req = {"model": "gemma-4-26b-a4b-it", "tool_choice": accepted}
+    assert LLMProxy._strip_fieldflare_unsupported_fields(req) is False
+    assert req["tool_choice"] == accepted
+
+
+def test_fieldflare_shim_is_noop_without_the_fields():
+    req = {"model": "gemma-4-26b-a4b-it", "messages": [{"role": "user", "content": "hi"}]}
+    before = dict(req)
+    assert LLMProxy._strip_fieldflare_unsupported_fields(req) is False
+    assert req == before
+
+
+@pytest.mark.asyncio
+async def test_fieldflare_route_strips_unsupported_fields_non_streaming(monkeypatch):
+    """proxy_messages applies the shim only on the Fieldflare route, before forwarding."""
+    proxy = _make_proxy()
+    monkeypatch.setattr(llm_proxy_module, "MODEL_MODE", "local")
+    captured: dict = {}
+
+    async def _fake_forward(url, body, headers):
+        captured["url"] = url
+        captured["body"] = json.loads(body)
+        return 200, {"content-type": "application/json"}, _openai_ok("gemma-4-26b-a4b-it")
+
+    proxy._forward_request = _fake_forward  # type: ignore[method-assign]
+    await proxy.proxy_messages(
+        "/v1/chat/completions",
+        json.dumps(
+            {
+                "model": "gemma-4-26b-a4b-it",
+                "messages": [{"role": "user", "content": "hi"}],
+                "tools": [{"type": "function", "function": {"name": "f", "parameters": {}}}],
+                "parallel_tool_calls": True,
+                "tool_choice": {"type": "function", "function": {"name": "f"}},
+            }
+        ).encode(),
+        {"content-type": "application/json"},
+        user_id="u1",
+    )
+    assert FIELDFLARE_API_BASE in captured["url"]
+    assert "parallel_tool_calls" not in captured["body"]
+    assert captured["body"]["tool_choice"] == "auto"
+    assert captured["body"]["tools"]  # tools themselves are untouched
+
+
+@pytest.mark.asyncio
+async def test_non_fieldflare_local_route_keeps_fields(monkeypatch):
+    """The shim must not leak onto backends that accept these fields (LM Studio)."""
+    proxy = _make_proxy()
+    monkeypatch.setattr(llm_proxy_module, "MODEL_MODE", "local")
+    captured: dict = {}
+
+    async def _fake_forward(url, body, headers):
+        captured["url"] = url
+        captured["body"] = json.loads(body)
+        return 200, {"content-type": "application/json"}, _openai_ok("qwen3-14b")
+
+    proxy._forward_request = _fake_forward  # type: ignore[method-assign]
+    await proxy.proxy_messages(
+        "/v1/chat/completions",
+        json.dumps(
+            {
+                "model": "qwen3-14b",
+                "messages": [{"role": "user", "content": "hi"}],
+                "parallel_tool_calls": False,
+                "tool_choice": "required",
+            }
+        ).encode(),
+        {"content-type": "application/json"},
+        user_id="u1",
+    )
+    assert LMSTUDIO_API_BASE in captured["url"]
+    assert captured["body"]["parallel_tool_calls"] is False
+    assert captured["body"]["tool_choice"] == "required"
+
+
+class _FakeStreamResponse:
+    def __init__(self, status: int, body: bytes, content_type: str = "application/json"):
+        self.status_code = status
+        self._body = body
+        self.headers = {"content-type": content_type}
+
+    async def __aenter__(self):
+        return self
+
+    async def __aexit__(self, *exc):
+        return False
+
+    async def aread(self):
+        return self._body
+
+    async def aiter_bytes(self):
+        yield self._body
+
+
+class _FakeStreamClient:
+    """Stands in for httpx.AsyncClient inside LLMProxy._stream()."""
+
+    captured: list[dict] = []
+    response: _FakeStreamResponse
+
+    def __init__(self, *args, **kwargs):
+        pass
+
+    async def __aenter__(self):
+        return self
+
+    async def __aexit__(self, *exc):
+        return False
+
+    def stream(self, method, url, content=None, headers=None):
+        type(self).captured.append({"url": url, "body": json.loads(content), "headers": headers})
+        return type(self).response
+
+
+@pytest.mark.asyncio
+async def test_fieldflare_route_strips_unsupported_fields_streaming(monkeypatch):
+    """Hermes's dashboard chat streams, so the streaming path must apply the shim too."""
+    import httpx
+
+    proxy = _make_proxy()
+    monkeypatch.setattr(llm_proxy_module, "MODEL_MODE", "local")
+    _FakeStreamClient.captured = []
+    _FakeStreamClient.response = _FakeStreamResponse(
+        200, b"data: [DONE]\n\n", content_type="text/event-stream"
+    )
+    monkeypatch.setattr(httpx, "AsyncClient", _FakeStreamClient)
+
+    stream = await proxy.proxy_messages_streaming(
+        "/v1/chat/completions",
+        json.dumps(
+            {
+                "model": "gemma-4-26b-a4b-it",
+                "stream": True,
+                "messages": [{"role": "user", "content": "hi"}],
+                "tools": [{"type": "function", "function": {"name": "f", "parameters": {}}}],
+                "parallel_tool_calls": True,
+                "tool_choice": "required",
+            }
+        ).encode(),
+        {"content-type": "application/json"},
+        user_id="u1",
+    )
+    chunks = [c async for c in stream]
+
+    assert chunks == [b"data: [DONE]\n\n"]
+    sent = _FakeStreamClient.captured[0]
+    assert FIELDFLARE_API_BASE in sent["url"]
+    assert "parallel_tool_calls" not in sent["body"]
+    assert sent["body"]["tool_choice"] == "auto"

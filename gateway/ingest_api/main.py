@@ -4385,14 +4385,27 @@ async def llm_api_proxy(request: Request, path: str):
             pass
 
     if is_streaming_request:
-        from starlette.responses import StreamingResponse
+        from starlette.responses import Response, StreamingResponse
 
         stream_gen = await llm_proxy.proxy_messages_streaming(
-            f"/v1/{path}", body, headers, user_id=user_id
+            f"/v1/{path}", body, headers, user_id=user_id, with_head=True
         )
+        # The first item is the StreamHead: the status/content-type of what
+        # follows, available as soon as the upstream headers arrive (no
+        # first-token wait). Before 2026-10-16 this response was a fixed 200
+        # text/event-stream, so an upstream 400 reached the client as a 200
+        # whose body was raw error JSON that SSE parsers silently drop.
+        head = await stream_gen.__anext__()
+        if head.status >= 400:
+            error_payload = b"".join([chunk async for chunk in stream_gen])
+            return Response(
+                content=error_payload,
+                status_code=head.status,
+                media_type=head.content_type or "application/json",
+            )
         return StreamingResponse(
             stream_gen,
-            status_code=200,
+            status_code=head.status,
             media_type="text/event-stream",
             headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
         )

@@ -791,3 +791,72 @@ class TestHealthCheckDetailBotsInventory:
         assert result.bots["hermes"]["container"] == "agentshroud-hermes-v2"
         assert result.bots["hermes"]["healthy"] is True
         assert result.bots["hermes"]["status"] == "Up 2 hours (healthy)"
+
+
+class TestStreamingProxyStatusPropagation:
+    """2026-10-16: a streaming request whose upstream answers 4xx must get that
+    status and body back, not a 200 text/event-stream wrapping the error."""
+
+    @staticmethod
+    def _patches():
+        return (
+            patch("gateway.ingest_api.main.app_state"),
+            patch(
+                "gateway.ingest_api.main._PROXY_ALLOWED_NETWORKS",
+                [ipaddress.ip_network("10.254.111.0/24")],
+            ),
+            patch(
+                "gateway.ingest_api.main._ipaddress.ip_address",
+                return_value=ipaddress.ip_address("10.254.111.10"),
+            ),
+        )
+
+    @staticmethod
+    def _gen(head, chunks):
+        async def _g():
+            yield head
+            for c in chunks:
+                yield c
+
+        return _g()
+
+    def test_upstream_400_returns_400_with_body(self):
+        from gateway.proxy.llm_proxy import StreamHead
+
+        body = b'{"error":{"code":"unsupported_value","message":"parallel_tool_calls=false is not supported"}}'
+        p1, p2, p3 = self._patches()
+        with p1 as mock_app_state, p2, p3:
+            mock_app_state.llm_proxy = MagicMock()
+            mock_app_state.llm_proxy.proxy_messages_streaming = AsyncMock(
+                return_value=self._gen(StreamHead(400, "application/json"), [body])
+            )
+            client = TestClient(app)
+            response = client.post(
+                "/v1/chat/completions",
+                json={"model": "gemma-4-26b-a4b-it", "stream": True, "messages": []},
+            )
+        assert response.status_code == 400
+        assert response.json()["error"]["code"] == "unsupported_value"
+        assert response.headers["content-type"].startswith("application/json")
+        kwargs = mock_app_state.llm_proxy.proxy_messages_streaming.call_args.kwargs
+        assert kwargs.get("with_head") is True
+
+    def test_upstream_200_streams_sse_as_before(self):
+        from gateway.proxy.llm_proxy import StreamHead
+
+        p1, p2, p3 = self._patches()
+        with p1 as mock_app_state, p2, p3:
+            mock_app_state.llm_proxy = MagicMock()
+            mock_app_state.llm_proxy.proxy_messages_streaming = AsyncMock(
+                return_value=self._gen(
+                    StreamHead(200, "text/event-stream"), [b"data: {}\n\n", b"data: [DONE]\n\n"]
+                )
+            )
+            client = TestClient(app)
+            response = client.post(
+                "/v1/chat/completions",
+                json={"model": "gemma-4-26b-a4b-it", "stream": True, "messages": []},
+            )
+        assert response.status_code == 200
+        assert response.headers["content-type"].startswith("text/event-stream")
+        assert response.content == b"data: {}\n\ndata: [DONE]\n\n"

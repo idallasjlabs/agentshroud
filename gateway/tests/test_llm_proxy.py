@@ -777,3 +777,152 @@ def test_all_streaming_clients_use_the_shared_connect_timeout_constant():
         assert (
             connect_arg.strip() == "LLM_CONNECT_TIMEOUT_SECONDS"
         ), f"found a hardcoded connect timeout literal: {connect_arg.strip()!r}"
+
+
+# ---------------------------------------------------------------------------
+# 2026-10-16: upstream error status must reach the streaming client
+# ---------------------------------------------------------------------------
+#
+# Hermes dashboard chat on gemma-4-26b-a4b-it: TurboFieldfare answered
+# HTTP 400 (unsupported_value) nine times in a row, and every time the
+# gateway logged `POST /v1/chat/completions -> 200` and handed the client a
+# 200 whose body was the raw 400 JSON. The SSE parser ignores non-`data:`
+# lines, so the client saw "Provider returned an empty stream with no
+# finish_reason" and never the real error. proxy_messages_streaming now
+# yields a StreamHead first (with_head=True) so the route can send the
+# upstream status + body instead of a fake 200.
+
+
+class _HeadFakeResponse:
+    def __init__(self, status: int, body: bytes, content_type: str):
+        self.status_code = status
+        self._body = body
+        self.headers = {"content-type": content_type}
+
+    async def __aenter__(self):
+        return self
+
+    async def __aexit__(self, *exc):
+        return False
+
+    async def aread(self):
+        return self._body
+
+    async def aiter_bytes(self):
+        yield self._body
+
+
+class _HeadFakeClient:
+    response: _HeadFakeResponse
+
+    def __init__(self, *args, **kwargs):
+        pass
+
+    async def __aenter__(self):
+        return self
+
+    async def __aexit__(self, *exc):
+        return False
+
+    def stream(self, method, url, content=None, headers=None):
+        return type(self).response
+
+
+_FIELDFLARE_400 = (
+    b'{"error":{"code":"unsupported_value","type":"invalid_request_error",'
+    b'"message":"parallel_tool_calls=false is not supported","param":"parallel_tool_calls"}}'
+)
+
+
+async def _run_stream(
+    monkeypatch, status, body, content_type, *, with_head, model="gemma-4-26b-a4b-it"
+):
+    import httpx
+
+    from gateway.proxy.llm_proxy import StreamHead
+
+    proxy = LLMProxy(sanitizer=_FakeSanitizer())
+    monkeypatch.setattr(llm_proxy_module, "MODEL_MODE", "local")
+    _HeadFakeClient.response = _HeadFakeResponse(status, body, content_type)
+    monkeypatch.setattr(httpx, "AsyncClient", _HeadFakeClient)
+    payload = json.dumps(
+        {"model": model, "stream": True, "messages": [{"role": "user", "content": "hi"}]}
+    ).encode()
+    stream = await proxy.proxy_messages_streaming(
+        "/v1/chat/completions",
+        payload,
+        {"content-type": "application/json"},
+        user_id="u1",
+        with_head=with_head,
+    )
+    items = [item async for item in stream]
+    return items, StreamHead
+
+
+@pytest.mark.asyncio
+async def test_streaming_with_head_reports_upstream_400_and_body(monkeypatch):
+    items, StreamHead = await _run_stream(
+        monkeypatch, 400, _FIELDFLARE_400, "application/json", with_head=True
+    )
+    assert isinstance(items[0], StreamHead)
+    assert items[0].status == 400
+    assert items[0].content_type == "application/json"
+    assert b"".join(items[1:]) == _FIELDFLARE_400
+
+
+@pytest.mark.asyncio
+async def test_streaming_with_head_reports_200_then_chunks(monkeypatch):
+    items, StreamHead = await _run_stream(
+        monkeypatch, 200, b"data: [DONE]\n\n", "text/event-stream", with_head=True
+    )
+    assert isinstance(items[0], StreamHead)
+    assert items[0].status == 200
+    assert items[1:] == [b"data: [DONE]\n\n"]
+
+
+@pytest.mark.asyncio
+async def test_streaming_default_contract_yields_only_bytes(monkeypatch):
+    """Existing callers (with_head=False) keep getting bytes only — no StreamHead."""
+    items, _ = await _run_stream(
+        monkeypatch, 400, _FIELDFLARE_400, "application/json", with_head=False
+    )
+    assert all(isinstance(i, bytes) for i in items)
+    assert b"".join(items) == _FIELDFLARE_400
+
+
+@pytest.mark.asyncio
+async def test_streaming_cloud_non_quota_400_also_propagates(monkeypatch):
+    """A cloud 400 that is NOT a quota wall must surface as a 400, not a 200."""
+    body = b'{"error":{"type":"invalid_request_error","message":"messages: required"}}'
+    items, StreamHead = await _run_stream(
+        monkeypatch, 400, body, "application/json", with_head=True, model="gpt-4o-mini"
+    )
+    assert isinstance(items[0], StreamHead)
+    assert items[0].status == 400
+    assert b"".join(items[1:]) == body
+
+
+@pytest.mark.asyncio
+async def test_streaming_connect_failure_keeps_in_stream_error_frame():
+    """Backend-down stays an in-stream SSE error frame under a 200 head (unchanged contract)."""
+    from gateway.proxy.llm_proxy import StreamHead
+
+    proxy = LLMProxy(sanitizer=_FakeSanitizer())
+    payload = json.dumps(
+        {
+            "model": "openai-local/nemotron-3.5-lightning-rapid",
+            "messages": [{"role": "user", "content": "hello"}],
+            "stream": True,
+        }
+    ).encode()
+    stream = await proxy.proxy_messages_streaming(
+        "/v1/chat/completions",
+        payload,
+        {"content-type": "application/json"},
+        user_id="u1",
+        with_head=True,
+    )
+    items = [i async for i in stream]
+    assert isinstance(items[0], StreamHead)
+    assert items[0].status == 200
+    assert b"backend_unavailable" in b"".join(items[1:])
