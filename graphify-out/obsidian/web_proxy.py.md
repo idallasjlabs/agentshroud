@@ -1,25 +1,17 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
-type: "code"
-community: "ProxyAction"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
+type: "document"
+community: "web_proxy.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/ProxyAction
+  - community/web_proxypy
 ---
 
-# web_proxy.py
+# web_proxy.py.md
 
 ## Connections
-- [[Enum]] - `imports_from` [EXTRACTED]
-- [[ProxyAction]] - `contains` [EXTRACTED]
-- [[RateLimiter]] - `contains` [EXTRACTED]
-- [[WebContentScanner]] - `imports` [EXTRACTED]
-- [[WebProxy]] - `contains` [EXTRACTED]
-- [[WebProxyResult]] - `contains` [EXTRACTED]
-- [[http_proxy.py]] - `references` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[web_content_scanner.py]] - `imports_from` [EXTRACTED]
+- [[web_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/document #graphify/EXTRACTED #community/web_proxypy

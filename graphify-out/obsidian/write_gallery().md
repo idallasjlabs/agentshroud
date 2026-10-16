@@ -12,8 +12,8 @@ tags:
 # write_gallery()
 
 ## Connections
-- [[Path_40]] - `references` [EXTRACTED]
+- [[Path_32]] - `references` [EXTRACTED]
 - [[gen.py]] - `contains` [EXTRACTED]
-- [[main()_18]] - `calls` [EXTRACTED]
+- [[main()_15]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/genpy

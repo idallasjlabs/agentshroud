@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[app_main()_1]] - `calls` [INFERRED]
-- [[esp_err_t_6]] - `references` [EXTRACTED]
+- [[esp_err_t_4]] - `references` [EXTRACTED]
 - [[wakeword.c]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/wakewordc

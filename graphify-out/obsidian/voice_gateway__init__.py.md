@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/__init__.py"
 type: "code"
-community: "server.py"
+community: "test_voice_latency_guard.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/serverpy
+  - community/test_voice_latency_guardpy
 ---
 
 # voice_gateway/__init__.py
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[server.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/serverpy
+#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy

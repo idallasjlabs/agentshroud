@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/tailscale-check.sh"
+source_file: "docker/scripts/container-net-diag.sh"
 type: "code"
-community: "ProxyDashboard"
-location: "L18"
+community: "container-net-diag.sh"
+location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/container-net-diagsh
 ---
 
 # warn()
 
 ## Connections
-- [[tailscale-check.sh]] - `defines` [EXTRACTED]
-- [[tailscale-check.sh script]] - `calls` [EXTRACTED]
+- [[container-net-diag.sh]] - `defines` [EXTRACTED]
+- [[container-net-diag.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/code #graphify/EXTRACTED #community/container-net-diagsh

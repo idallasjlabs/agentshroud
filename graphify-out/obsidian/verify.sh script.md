@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/verify.sh"
 type: "code"
-community: "load_config"
+community: "ToolResultSanitizer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/ToolResultSanitizer
 ---
 
 # verify.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[verify.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

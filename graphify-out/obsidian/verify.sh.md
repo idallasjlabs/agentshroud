@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/verify.sh"
 type: "code"
-community: "load_config"
+community: "ToolResultSanitizer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/ToolResultSanitizer
 ---
 
 # verify.sh
 
 ## Connections
-- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `references` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `references` [EXTRACTED]
+- [[ingest_apimain.py]] - `references` [EXTRACTED]
 - [[sanitizer.py_2]] - `references` [EXTRACTED]
 - [[verify.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

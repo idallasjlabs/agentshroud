@@ -12,7 +12,7 @@ tags:
 # test_valid_totp_prev_window_allowed()
 
 ## Connections
-- [[MFAGuard_2]] - `calls` [EXTRACTED]
+- [[MFAGuard_1]] - `calls` [EXTRACTED]
 - [[_ref_totp()]] - `calls` [EXTRACTED]
 - [[test_mfa_guard.py]] - `contains` [EXTRACTED]
 

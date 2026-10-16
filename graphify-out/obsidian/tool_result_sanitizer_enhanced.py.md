@@ -12,7 +12,7 @@ tags:
 # tool_result_sanitizer_enhanced.py
 
 ## Connections
-- [[ToolResultSanitizer]] - `contains` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `contains` [EXTRACTED]
 - [[ToolResultSanitizerConfig]] - `contains` [EXTRACTED]
 - [[sanitize_tool_result()]] - `contains` [EXTRACTED]
 

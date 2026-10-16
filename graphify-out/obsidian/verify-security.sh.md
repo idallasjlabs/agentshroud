@@ -1,21 +1,19 @@
 ---
-source_file: "docker/scripts/verify-security.sh"
-type: "code"
-community: "AgentShroud Security Verification (13-check driver)"
-location: "L1"
+source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
+type: "document"
+community: "Kill Switch"
+location: "L7"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Verification_13-check_driver
+  - community/Kill_Switch
 ---
 
 # verify-security.sh
 
 ## Connections
-- [[SecureClaw Security Review (SEC)]] - `references` [EXTRACTED]
-- [[check_fail()_1]] - `defines` [EXTRACTED]
-- [[check_pass()_1]] - `defines` [EXTRACTED]
-- [[check_warn()]] - `defines` [EXTRACTED]
-- [[verify-security.sh script]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
+- [[SECURITY_SCRIPTS_REFERENCE]] - `references` [EXTRACTED]
+- [[VERIFICATION_RESULTS]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Verification_13-check_driver
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch

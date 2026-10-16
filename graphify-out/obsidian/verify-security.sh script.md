@@ -15,6 +15,6 @@ tags:
 - [[check_fail()_1]] - `calls` [EXTRACTED]
 - [[check_pass()_1]] - `calls` [EXTRACTED]
 - [[check_warn()]] - `calls` [EXTRACTED]
-- [[verify-security.sh]] - `contains` [EXTRACTED]
+- [[verify-security.sh_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Verification_13-check_driver

@@ -13,7 +13,6 @@ tags:
 
 ## Connections
 - [[Three-tier network segmentation (internal edge  isolated DMZ  dmz) — IEC 62443 FR5]] - `rationale_for` [EXTRACTED]
-- [[lazydocker docker.sock connection leak through Colima ssh forward]] - `references` [EXTRACTED]
 - [[wazuh-agent sidecar (root moment for privilege drop, then uid 1000)]] - `shares_data_with` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes

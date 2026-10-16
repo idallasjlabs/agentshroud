@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[CI test job (ubuntumacos x py3.113.13 matrix, cov=84)]] - `references` [EXTRACTED]
-- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `references` [EXTRACTED]
+- [[ingest_apimain.py]] - `references` [EXTRACTED]
 
 #graphify/concept #graphify/EXTRACTED #community/Commit_list_2026-10-10_through_2026-10-16_on_main

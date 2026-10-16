@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/verify-proxy.sh"
 type: "code"
-community: "ProxyDashboard"
+community: "test_e2e_proxy.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/test_e2e_proxypy
 ---
 
 # verify-proxy.sh
@@ -17,10 +17,10 @@ tags:
 - [[pass()_1]] - `defines` [EXTRACTED]
 - [[preflight-check.sh]] - `semantically_similar_to` [INFERRED]
 - [[run_bypass()]] - `defines` [EXTRACTED]
-- [[run_canary()_1]] - `defines` [EXTRACTED]
+- [[run_canary()]] - `defines` [EXTRACTED]
 - [[run_chain()]] - `defines` [EXTRACTED]
 - [[run_full()]] - `defines` [EXTRACTED]
 - [[run_quick()]] - `defines` [EXTRACTED]
 - [[verify-proxy.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

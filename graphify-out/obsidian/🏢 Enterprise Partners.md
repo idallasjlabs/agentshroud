@@ -12,6 +12,6 @@ tags:
 # 🏢 Enterprise Partners
 
 ## Connections
-- [[Acknowledgments_1]] - `contains` [EXTRACTED]
+- [[Acknowledgments]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Release_Notes_-_AgentShroud_v090

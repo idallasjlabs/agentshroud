@@ -1,18 +1,18 @@
 ---
-source_file: "docs/planning/reviews/enforcement-audit-script.py"
+source_file: "scripts/tailscale-check.sh"
 type: "code"
-community: "MiddlewareManager"
-location: "L9"
+community: "ProxyDashboard"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ProxyDashboard
 ---
 
 # warn()
 
 ## Connections
-- [[enforcement-audit-script.py]] - `contains` [EXTRACTED]
-- [[run()_4]] - `calls` [EXTRACTED]
+- [[tailscale-check.sh]] - `defines` [EXTRACTED]
+- [[tailscale-check.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/ProxyDashboard

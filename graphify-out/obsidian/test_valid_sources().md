@@ -12,7 +12,7 @@ tags:
 # test_valid_sources()
 
 ## Connections
-- [[ForwardRequest_3]] - `calls` [EXTRACTED]
+- [[ForwardRequest_1]] - `calls` [EXTRACTED]
 - [[Test all valid sources are accepted]] - `rationale_for` [EXTRACTED]
 - [[test_security.py]] - `contains` [EXTRACTED]
 

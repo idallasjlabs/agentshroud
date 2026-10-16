@@ -16,6 +16,6 @@ tags:
 - [[rlog_task()]] - `calls` [INFERRED]
 - [[voice_task()]] - `calls` [INFERRED]
 - [[ws_client.c]] - `contains` [EXTRACTED]
-- [[ws_client_handle_t]] - `references` [EXTRACTED]
+- [[ws_client_handle_t_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/voice_task

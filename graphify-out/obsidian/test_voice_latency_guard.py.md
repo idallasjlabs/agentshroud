@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[_call_agent_stream()]] - `imports` [EXTRACTED]
-- [[_mock_stream_resp()]] - `contains` [EXTRACTED]
+- [[_mock_stream_resp()_1]] - `contains` [EXTRACTED]
 - [[_record_turn_latency()]] - `imports` [EXTRACTED]
-- [[_sse_body()_1]] - `contains` [EXTRACTED]
+- [[_sse_body()]] - `contains` [EXTRACTED]
 - [[_voice_forward_metadata()]] - `imports` [EXTRACTED]
 - [[server.py]] - `imports_from` [EXTRACTED]
 - [[test_call_agent_default_body_has_no_metadata()]] - `contains` [EXTRACTED]

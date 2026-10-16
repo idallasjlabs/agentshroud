@@ -1,17 +1,26 @@
 ---
-source_file: "firmware/voice-terminal/main/app_main.c"
+source_file: "firmware/voice-terminal/main/ws_client.c"
 type: "code"
-community: "test_ptt_state.c"
-location: "L537"
+community: "voice_task"
+location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_ptt_statec
+  - community/voice_task
 ---
 
 # ws_client_handle_t
 
 ## Connections
-- [[_send_status_beacon()]] - `references` [EXTRACTED]
+- [[ws_client_connected()]] - `references` [EXTRACTED]
+- [[ws_client_create()]] - `references` [EXTRACTED]
+- [[ws_client_destroy()]] - `references` [EXTRACTED]
+- [[ws_client_send_end()]] - `references` [EXTRACTED]
+- [[ws_client_send_keepalive()]] - `references` [EXTRACTED]
+- [[ws_client_send_listen()]] - `references` [EXTRACTED]
+- [[ws_client_send_listen_resume()]] - `references` [EXTRACTED]
+- [[ws_client_send_log()]] - `references` [EXTRACTED]
+- [[ws_client_send_pcm()]] - `references` [EXTRACTED]
+- [[ws_client_send_stop()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_ptt_statec
+#graphify/code #graphify/EXTRACTED #community/voice_task

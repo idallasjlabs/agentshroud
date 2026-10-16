@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[All Dependencies]] - `references` [EXTRACTED]
 - [[Trivy]] - `contains` [EXTRACTED]
-- [[clamav]] - `references` [EXTRACTED]
+- [[clamav_1]] - `references` [EXTRACTED]
 - [[openscap]] - `conceptually_related_to` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd
