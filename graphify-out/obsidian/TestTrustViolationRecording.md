@@ -33,7 +33,7 @@ tags:
 - [[SecurityPipeline._maybe_record_trust_violation — centralized hook that     fires]] - `rationale_for` [EXTRACTED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_4]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/AuditChain

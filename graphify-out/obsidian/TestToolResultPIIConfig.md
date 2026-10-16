@@ -12,13 +12,13 @@ tags:
 # TestToolResultPIIConfig
 
 ## Connections
-- [[dot-test_default_config()_4]] - `method` [EXTRACTED]
+- [[dot-test_default_config()_3]] - `method` [EXTRACTED]
 - [[dot-test_tool_specific_config()]] - `method` [EXTRACTED]
-- [[GatewayConfig_3]] - `uses` [INFERRED]
+- [[GatewayConfig_2]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
 - [[RedactionDetail]] - `uses` [INFERRED]
-- [[RedactionResult_3]] - `uses` [INFERRED]
+- [[RedactionResult_2]] - `uses` [INFERRED]
 - [[Test the ToolResultPIIConfig configuration class]] - `rationale_for` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `uses` [INFERRED]
 - [[ToolResultSanitizer]] - `uses` [INFERRED]

@@ -1,37 +1,38 @@
 ---
-source_file: "gateway/tests/test_tool_result_pii.py"
+source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L56"
+community: "egress_filter.py"
+location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/egress_filterpy
 ---
 
 # TestToolResultSanitizer
 
 ## Connections
-- [[dot-default_config()]] - `method` [EXTRACTED]
-- [[dot-sanitizer()_3]] - `method` [EXTRACTED]
-- [[dot-test_empty_content_handling()]] - `method` [EXTRACTED]
-- [[dot-test_extract_scannable_content_dict()]] - `method` [EXTRACTED]
-- [[dot-test_extract_scannable_content_list()]] - `method` [EXTRACTED]
-- [[dot-test_extract_scannable_content_string()]] - `method` [EXTRACTED]
-- [[dot-test_initialization()_4]] - `method` [EXTRACTED]
-- [[dot-test_sanitize_dict_with_pii()]] - `method` [EXTRACTED]
-- [[dot-test_sanitize_disabled()]] - `method` [EXTRACTED]
-- [[dot-test_sanitize_string_with_pii()]] - `method` [EXTRACTED]
-- [[dot-test_tool_specific_configuration()]] - `method` [EXTRACTED]
-- [[dot-tool_config()]] - `method` [EXTRACTED]
-- [[GatewayConfig_3]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
-- [[RedactionDetail]] - `uses` [INFERRED]
-- [[RedactionResult_3]] - `uses` [INFERRED]
-- [[Test the ToolResultSanitizer class]] - `rationale_for` [EXTRACTED]
-- [[ToolResultPIIConfig]] - `uses` [INFERRED]
-- [[ToolResultSanitizer]] - `uses` [INFERRED]
-- [[test_tool_result_pii.py]] - `contains` [EXTRACTED]
+- [[dot-setup_method()_16]] - `method` [EXTRACTED]
+- [[dot-test_blocked_pattern_detection()]] - `method` [EXTRACTED]
+- [[dot-test_code_blocks_preserved()]] - `method` [EXTRACTED]
+- [[dot-test_convenience_function()]] - `method` [EXTRACTED]
+- [[dot-test_domain_matching_patterns()]] - `method` [EXTRACTED]
+- [[dot-test_edge_cases()_3]] - `method` [EXTRACTED]
+- [[dot-test_empty_alt_text_handling()]] - `method` [EXTRACTED]
+- [[dot-test_empty_or_none_input()]] - `method` [EXTRACTED]
+- [[dot-test_external_domain_stripping()]] - `method` [EXTRACTED]
+- [[dot-test_internal_link_detection()]] - `method` [EXTRACTED]
+- [[dot-test_internal_links_preserved()]] - `method` [EXTRACTED]
+- [[dot-test_is_domain_allowed()]] - `method` [EXTRACTED]
+- [[dot-test_legitimate_links_preserved()]] - `method` [EXTRACTED]
+- [[dot-test_logging()]] - `method` [EXTRACTED]
+- [[dot-test_malicious_image_stripping()]] - `method` [EXTRACTED]
+- [[dot-test_malicious_link_stripping()]] - `method` [EXTRACTED]
+- [[dot-test_mixed_content_sanitization()]] - `method` [EXTRACTED]
+- [[dot-test_warn_mode()]] - `method` [EXTRACTED]
+- [[Test ToolResultSanitizerConfig.]] - `rationale_for` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
+- [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
+- [[test_tool_result_sanitizer_enhanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/egress_filterpy

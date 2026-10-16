@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-test_case_sensitivity()]] - `method` [EXTRACTED]
-- [[dot-test_path_traversal_blocked()_1]] - `method` [EXTRACTED]
+- [[dot-test_path_traversal_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_relative_path_resolution()]] - `method` [EXTRACTED]
 - [[FileSandbox]] - `uses` [INFERRED]
 - [[FileSandboxConfig]] - `uses` [INFERRED]

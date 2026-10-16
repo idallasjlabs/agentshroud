@@ -11,7 +11,7 @@ tags:
 # ToolResultSanitizer.sanitize_tool_result
 
 ## Connections
-- [[PIISanitizer_2]] - `calls` [EXTRACTED]
+- [[PIISanitizer_1]] - `calls` [EXTRACTED]
 - [[ToolResultSanitizer._extract_scannable_content]] - `calls` [EXTRACTED]
 - [[ToolResultSanitizer._get_sanitizer_for_tool]] - `calls` [EXTRACTED]
 - [[ToolResultSanitizer._log_redaction_audit]] - `calls` [EXTRACTED]

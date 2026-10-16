@@ -17,11 +17,11 @@ tags:
 - [[DataLedger]] - `uses` [INFERRED]
 - [[End-to-end pipeline latency for a single message.]] - `rationale_for` [EXTRACTED]
 - [[LedgerConfig]] - `uses` [INFERRED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
-- [[PIISanitizer_2]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIISanitizer_1]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_4]] - `uses` [INFERRED]
 - [[test_performance.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/PIIConfig

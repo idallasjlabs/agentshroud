@@ -33,7 +33,7 @@ tags:
 - [[dot-test_set_role_updates_existing_entry()]] - `method` [EXTRACTED]
 - [[GroupRole]] - `uses` [INFERRED]
 - [[GroupRoleResolver]] - `uses` [INFERRED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[Test GroupRole.rank, can_use_high_risk, and GroupRoleResolver helpers.]] - `rationale_for` [EXTRACTED]
 - [[ToolACLConfig]] - `uses` [INFERRED]

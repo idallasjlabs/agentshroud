@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "OAuthSecurityValidator"
+community: "AlertDispatcher"
 location: "L69"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/OAuthSecurityValidator
+  - community/AlertDispatcher
 ---
 
 # TestStateValidation
@@ -24,4 +24,4 @@ tags:
 - [[RedirectMismatch]] - `uses` [INFERRED]
 - [[test_oauth_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/OAuthSecurityValidator
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

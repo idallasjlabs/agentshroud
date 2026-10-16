@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-test_collaborator_can_use_unknown_tool_when_not_denied()]] - `method` [EXTRACTED]
 - [[dot-test_private_tool_still_blocked_even_when_deny_unknown_false()]] - `method` [EXTRACTED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
-- [[Role_22]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[Role_21]] - `uses` [INFERRED]
 - [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[ToolACLConfig]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]

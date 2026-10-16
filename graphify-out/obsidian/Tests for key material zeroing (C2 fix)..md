@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "KeyVault"
+community: "EgressFilterConfig"
 location: "L767"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/EgressFilterConfig
 ---
 
 # Tests for key material zeroing (C2 fix).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSecureZero]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyVault
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

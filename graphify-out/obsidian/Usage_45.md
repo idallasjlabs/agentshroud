@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pm/README.md"
+source_file: ".agents/skills/i-sad/README.md"
 type: "document"
-community: "Project Management (PM)"
-location: "L10"
+community: "AgentShroud™ Brand Guidelines"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Project_Management_PM
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Usage
 
 ## Connections
-- [[Project Management (PM)]] - `contains` [EXTRACTED]
+- [[System Audit Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Project_Management_PM
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

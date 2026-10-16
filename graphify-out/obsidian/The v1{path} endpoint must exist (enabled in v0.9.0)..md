@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "rationale"
-community: "ResourceGuard"
+community: "AlertDispatcher"
 location: "L143"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/AlertDispatcher
 ---
 
 # The /v1/{path} endpoint must exist (enabled in v0.9.0).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_v1_endpoint_is_defined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

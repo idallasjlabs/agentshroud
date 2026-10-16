@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestGetSbom"
+community: "TestOutboundInfoFilter"
 location: "L494"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestGetSbom
+  - community/TestOutboundInfoFilter
 ---
 
 # TestGetSbom
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_valid()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestGetSbom
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

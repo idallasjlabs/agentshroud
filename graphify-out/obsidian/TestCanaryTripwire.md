@@ -12,14 +12,14 @@ tags:
 # TestCanaryTripwire
 
 ## Connections
-- [[dot-setup_method()_22]] - `method` [EXTRACTED]
+- [[dot-setup_method()_24]] - `method` [EXTRACTED]
 - [[dot-test_api_key_canary()]] - `method` [EXTRACTED]
 - [[dot-test_base64_canary()]] - `method` [EXTRACTED]
-- [[dot-test_case_insensitive()_3]] - `method` [EXTRACTED]
+- [[dot-test_case_insensitive()_2]] - `method` [EXTRACTED]
 - [[dot-test_code_word_canary()]] - `method` [EXTRACTED]
 - [[dot-test_counter_increments()]] - `method` [EXTRACTED]
 - [[dot-test_custom_config()_1]] - `method` [EXTRACTED]
-- [[dot-test_empty_input()_2]] - `method` [EXTRACTED]
+- [[dot-test_empty_input()_1]] - `method` [EXTRACTED]
 - [[dot-test_no_canaries()]] - `method` [EXTRACTED]
 - [[dot-test_normal_content_passes()_1]] - `method` [EXTRACTED]
 - [[dot-test_plain_canary_detected()]] - `method` [EXTRACTED]

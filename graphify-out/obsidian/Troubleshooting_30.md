@@ -1,20 +1,20 @@
 ---
-source_file: ".agents/skills/i-icloud/SKILL.md"
+source_file: "docs/operations/raspberry-pi.md"
 type: "document"
-community: "iCloud Services"
-location: "L142"
+community: "Deploying AgentShroud on Raspberry Pi (aarch64)"
+location: "L123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[401 Unauthorized_4]] - `contains` [EXTRACTED]
-- [[CalendarContacts not found_3]] - `contains` [EXTRACTED]
-- [[Connection timeout_4]] - `contains` [EXTRACTED]
-- [[iCloud Services_4]] - `contains` [EXTRACTED]
+- [[Container Won't Start_2]] - `contains` [EXTRACTED]
+- [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - `contains` [EXTRACTED]
+- [[Out-of-Memory (OOM) Kills]] - `contains` [EXTRACTED]
+- [[Slow Builds_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64

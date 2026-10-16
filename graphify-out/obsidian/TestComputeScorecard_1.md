@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "test_scanner_integration_coverage.py"
+community: "ApprovalQueueConfig"
 location: "L1112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integration_coveragepy
+  - community/ApprovalQueueConfig
 ---
 
 # TestComputeScorecard
@@ -16,4 +16,4 @@ tags:
 - [[dot-test_rich_environment()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integration_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

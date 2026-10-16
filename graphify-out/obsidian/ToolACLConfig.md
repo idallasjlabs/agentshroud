@@ -12,7 +12,7 @@ tags:
 # ToolACLConfig
 
 ## Connections
-- [[dot-__init__()_98]] - `references` [EXTRACTED]
+- [[dot-__init__()_97]] - `references` [EXTRACTED]
 - [[dot-effective_admin()]] - `method` [EXTRACTED]
 - [[dot-effective_collaborator_allowed()]] - `method` [EXTRACTED]
 - [[dot-effective_private()]] - `method` [EXTRACTED]
@@ -24,9 +24,9 @@ tags:
 - [[GroupRole]] - `uses` [INFERRED]
 - [[GroupRoleResolver]] - `uses` [INFERRED]
 - [[Policy configuration for tool ACL enforcement.      Loaded from agentshroud.yaml]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
-- [[Role_22]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[Role_21]] - `uses` [INFERRED]
 - [[TeamsConfig_1]] - `uses` [INFERRED]
 - [[TestAdminAccess]] - `uses` [INFERRED]
 - [[TestCVE2026_9367TerminalToolDenied]] - `uses` [INFERRED]

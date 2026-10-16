@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "test_scanner_integration_coverage.py"
+community: "ApprovalQueueConfig"
 location: "L981"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integration_coveragepy
+  - community/ApprovalQueueConfig
 ---
 
 # TestAgenticScorers
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_all_scorers_zero_without_modules_or_state()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integration_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

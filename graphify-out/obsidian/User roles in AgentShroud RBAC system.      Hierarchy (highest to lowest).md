@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "RBACConfig"
+community: "MiddlewareManager"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/MiddlewareManager
 ---
 
 # User roles in AgentShroud RBAC system.      Hierarchy (highest to lowest):
 
 ## Connections
-- [[Role_22]] - `rationale_for` [EXTRACTED]
+- [[Role_21]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

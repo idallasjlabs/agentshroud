@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "UserSessionManager"
+community: "TestFabricatedSecurityNotice"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/TestFabricatedSecurityNotice
 ---
 
 # TestUserSessionManager
@@ -24,10 +24,10 @@ tags:
 - [[dot-test_session_prompt_isolation()]] - `method` [EXTRACTED]
 - [[dot-test_trust_level_per_user()]] - `method` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[Role_22]] - `uses` [INFERRED]
+- [[Role_21]] - `uses` [INFERRED]
 - [[Test the UserSessionManager for per-user isolation.]] - `rationale_for` [EXTRACTED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[test_session_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

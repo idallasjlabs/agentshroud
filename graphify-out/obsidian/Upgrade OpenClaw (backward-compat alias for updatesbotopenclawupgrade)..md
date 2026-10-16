@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "ModeRequest"
+community: "api.py"
 location: "L606"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/apipy
 ---
 
 # Upgrade OpenClaw (backward-compat alias for /updates/bot/openclaw/upgrade).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[upgrade_openclaw()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ModeRequest
+#graphify/rationale #graphify/EXTRACTED #community/apipy

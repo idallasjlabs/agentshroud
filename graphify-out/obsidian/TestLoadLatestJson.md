@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestLoadLatestJson"
+community: "TelegramAPIProxy"
 location: "L248"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestLoadLatestJson
+  - community/TelegramAPIProxy
 ---
 
 # TestLoadLatestJson
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_missing_dir_returns_none()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestLoadLatestJson
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-sec-offense/README.md"
+source_file: ".agents/skills/i-pr/README.md"
 type: "document"
 community: ".agents/skills/i-cr/SKILL.md"
 location: "L10"
@@ -12,6 +12,6 @@ tags:
 # Usage
 
 ## Connections
-- [[Red Team Adversarial Tester (SEC-OFFENSE)_2]] - `contains` [EXTRACTED]
+- [[Pull Request Generator (PR)_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

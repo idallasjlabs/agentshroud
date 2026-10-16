@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[dot-_detect_tunneling()]] - `references` [EXTRACTED]
-- [[dns_filter.py_2]] - `contains` [EXTRACTED]
+- [[dns_filter.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

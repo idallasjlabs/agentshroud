@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestProcScans"
+community: "AgentShroud v0.7.0 Blue Team Security Audit Report"
 location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestProcScans
+  - community/AgentShroud_v070_Blue_Team_Security_Audit_Report
 ---
 
 # TestProcScans
@@ -19,4 +19,4 @@ tags:
 - [[dot-test_wazuh_agent_detected()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestProcScans
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_v070_Blue_Team_Security_Audit_Report

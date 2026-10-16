@@ -12,7 +12,7 @@ tags:
 # TestGroupPresenceProbe
 
 ## Connections
-- [[dot-_make_proxy()_4]] - `method` [EXTRACTED]
+- [[dot-_make_proxy()_1]] - `method` [EXTRACTED]
 - [[dot-test_cooldown_suppresses_second_ack()]] - `method` [EXTRACTED]
 - [[dot-test_dm_hello_does_not_trigger_probe()]] - `method` [EXTRACTED]
 - [[dot-test_hello_in_group_sends_hermes_ack()]] - `method` [EXTRACTED]

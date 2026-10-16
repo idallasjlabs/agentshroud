@@ -12,7 +12,7 @@ tags:
 # TestTrivySummary
 
 ## Connections
-- [[dot-test_summary_clean()_3]] - `method` [EXTRACTED]
+- [[dot-test_summary_clean()_1]] - `method` [EXTRACTED]
 - [[dot-test_summary_critical()]] - `method` [EXTRACTED]
 - [[dot-test_summary_error()_1]] - `method` [EXTRACTED]
 - [[dot-test_summary_top_cves_ids()]] - `method` [EXTRACTED]

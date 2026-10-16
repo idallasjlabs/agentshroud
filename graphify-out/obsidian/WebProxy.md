@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "WebProxy"
+community: "ProxyAction"
 location: "L140"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/WebProxy
+  - community/ProxyAction
 ---
 
 # WebProxy
@@ -18,7 +18,7 @@ tags:
 - [[dot-check_request()]] - `method` [EXTRACTED]
 - [[dot-get_stats()]] - `method` [EXTRACTED]
 - [[dot-scan_response()]] - `method` [EXTRACTED]
-- [[dot-setUp()_2]] - `calls` [EXTRACTED]
+- [[dot-setUp()_1]] - `calls` [EXTRACTED]
 - [[dot-test_custom_denylist()_1]] - `calls` [EXTRACTED]
 - [[dot-test_custom_domain_size_limit()]] - `calls` [EXTRACTED]
 - [[dot-test_different_domains_independent()]] - `calls` [EXTRACTED]
@@ -34,9 +34,9 @@ tags:
 - [[MockThreatLevel]] - `uses` [INFERRED]
 - [[MockURLResult]] - `uses` [INFERRED]
 - [[RateLimiter]] - `calls` [EXTRACTED]
-- [[StreamReader_3]] - `uses` [INFERRED]
+- [[StreamReader_1]] - `uses` [INFERRED]
 - [[StreamReader]] - `uses` [INFERRED]
-- [[StreamWriter_2]] - `uses` [INFERRED]
+- [[StreamWriter]] - `uses` [INFERRED]
 - [[TestAllowlistMode]] - `uses` [INFERRED]
 - [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestContentTypeFiltering]] - `uses` [INFERRED]
@@ -45,10 +45,10 @@ tags:
 - [[TestEncodedPayloads]] - `uses` [INFERRED]
 - [[TestHiddenContent]] - `uses` [INFERRED]
 - [[TestIsDomainAllowed]] - `uses` [INFERRED]
-- [[TestPIIDetection_1]] - `uses` [INFERRED]
+- [[TestPIIDetection_2]] - `uses` [INFERRED]
 - [[TestPassthroughMode]] - `uses` [INFERRED]
 - [[TestPromptInjectionDetection]] - `uses` [INFERRED]
-- [[TestRateLimiting_1]] - `uses` [INFERRED]
+- [[TestRateLimiting_2]] - `uses` [INFERRED]
 - [[TestResponseSizeLimits]] - `uses` [INFERRED]
 - [[TestSSRFBlocking]] - `uses` [INFERRED]
 - [[TestStats_1]] - `uses` [INFERRED]
@@ -71,7 +71,7 @@ tags:
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[passthrough_proxy()]] - `calls` [EXTRACTED]
-- [[proxy()_2]] - `calls` [EXTRACTED]
+- [[proxy()_1]] - `calls` [EXTRACTED]
 - [[test_blocked_domain_is_tracked_in_recent()]] - `calls` [EXTRACTED]
 - [[test_connect_blocked_domain_returns_403()]] - `calls` [EXTRACTED]
 - [[test_connect_denied_by_egress_filter_returns_403()]] - `calls` [EXTRACTED]
@@ -85,4 +85,4 @@ tags:
 - [[test_web_proxy_security.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/WebProxy
+#graphify/code #graphify/INFERRED #community/ProxyAction

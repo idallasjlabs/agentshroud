@@ -12,7 +12,7 @@ tags:
 # TestWebProxySecurityIntegration
 
 ## Connections
-- [[dot-setUp()_2]] - `method` [EXTRACTED]
+- [[dot-setUp()_1]] - `method` [EXTRACTED]
 - [[dot-test_browser_security_blocks_high_risk_urls()]] - `method` [EXTRACTED]
 - [[dot-test_browser_security_flags_medium_risk_urls()]] - `method` [EXTRACTED]
 - [[dot-test_browser_security_skips_non_browser_user_agents()]] - `method` [EXTRACTED]

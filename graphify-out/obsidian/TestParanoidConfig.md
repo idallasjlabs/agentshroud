@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "ForwardRequest"
+community: "AgentTarget"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ForwardRequest
+  - community/AgentTarget
 ---
 
 # TestParanoidConfig
 
 ## Connections
-- [[dot-config()_3]] - `method` [EXTRACTED]
+- [[dot-config()_1]] - `method` [EXTRACTED]
 - [[dot-test_approval_queue_enabled()]] - `method` [EXTRACTED]
 - [[dot-test_container_hardening()]] - `method` [EXTRACTED]
 - [[dot-test_drift_detector_enabled()]] - `method` [EXTRACTED]
@@ -36,4 +36,4 @@ tags:
 - [[paranoid.env should enable ALL security features.]] - `rationale_for` [EXTRACTED]
 - [[test_config_validation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ForwardRequest
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

@@ -1,17 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/README.md"
+source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
-location: "L10"
+community: "SecureBrowser - Enterprise Secure Browser Automation"
+location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
 ---
 
 # Usage
 
 ## Connections
-- [[Socrates — Dialogue Architect_2]] - `contains` [EXTRACTED]
+- [[Click Element]] - `contains` [EXTRACTED]
+- [[Extract Data]] - `contains` [EXTRACTED]
+- [[Navigate to URL]] - `contains` [EXTRACTED]
+- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
+- [[Take Screenshot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automation

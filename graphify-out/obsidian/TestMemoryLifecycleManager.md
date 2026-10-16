@@ -12,8 +12,8 @@ tags:
 # TestMemoryLifecycleManager
 
 ## Connections
-- [[dot-setup_method()_13]] - `method` [EXTRACTED]
-- [[dot-teardown_method()_4]] - `method` [EXTRACTED]
+- [[dot-setup_method()_10]] - `method` [EXTRACTED]
+- [[dot-teardown_method()_2]] - `method` [EXTRACTED]
 - [[dot-test_content_sanitization()]] - `method` [EXTRACTED]
 - [[dot-test_daily_notes_retention()]] - `method` [EXTRACTED]
 - [[dot-test_lifecycle_maintenance()]] - `method` [EXTRACTED]

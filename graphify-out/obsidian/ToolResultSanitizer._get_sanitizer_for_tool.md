@@ -11,7 +11,7 @@ tags:
 # ToolResultSanitizer._get_sanitizer_for_tool
 
 ## Connections
-- [[PIISanitizer_2]] - `calls` [EXTRACTED]
+- [[PIISanitizer_1]] - `calls` [EXTRACTED]
 - [[ToolResultSanitizer.sanitize_tool_result]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PIIConfig

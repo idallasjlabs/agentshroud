@@ -12,16 +12,16 @@ tags:
 # TestAppleContainerEngine
 
 ## Connections
-- [[dot-setup_method()_38]] - `method` [EXTRACTED]
+- [[dot-setup_method()_1]] - `method` [EXTRACTED]
 - [[dot-test_compose_not_supported()]] - `method` [EXTRACTED]
-- [[dot-test_health_check()_1]] - `method` [EXTRACTED]
+- [[dot-test_health_check()]] - `method` [EXTRACTED]
 - [[dot-test_inspect_non_json()]] - `method` [EXTRACTED]
 - [[dot-test_network_graceful_fail()]] - `method` [EXTRACTED]
 - [[dot-test_pause_fallback()]] - `method` [EXTRACTED]
 - [[dot-test_ps_text_parse()]] - `method` [EXTRACTED]
 - [[dot-test_run_ignores_seccomp()]] - `method` [EXTRACTED]
 - [[AppleContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo_3]] - `uses` [INFERRED]
+- [[ContainerInfo]] - `uses` [INFERRED]
 - [[DockerEngine]] - `uses` [INFERRED]
 - [[PodmanEngine]] - `uses` [INFERRED]
 - [[ServiceDef]] - `uses` [INFERRED]

@@ -12,10 +12,10 @@ tags:
 # TestContainerInfo
 
 ## Connections
-- [[dot-test_defaults()_2]] - `method` [EXTRACTED]
+- [[dot-test_defaults()_1]] - `method` [EXTRACTED]
 - [[dot-test_with_data()]] - `method` [EXTRACTED]
 - [[AppleContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo_3]] - `uses` [INFERRED]
+- [[ContainerInfo]] - `uses` [INFERRED]
 - [[DockerEngine]] - `uses` [INFERRED]
 - [[PodmanEngine]] - `uses` [INFERRED]
 - [[ServiceDef]] - `uses` [INFERRED]

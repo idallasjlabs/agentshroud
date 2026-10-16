@@ -12,7 +12,7 @@ tags:
 # ThresholdConfig
 
 ## Connections
-- [[dot-__init__()_118]] - `calls` [EXTRACTED]
+- [[dot-__init__()_128]] - `calls` [EXTRACTED]
 - [[Configuration for alert thresholds.]] - `rationale_for` [EXTRACTED]
 - [[multi_turn_tracker.py]] - `contains` [EXTRACTED]
 

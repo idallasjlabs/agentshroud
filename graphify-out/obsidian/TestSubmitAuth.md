@@ -12,9 +12,9 @@ tags:
 # TestSubmitAuth
 
 ## Connections
-- [[dot-test_requires_auth()_3]] - `method` [EXTRACTED]
+- [[dot-test_requires_auth()]] - `method` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
-- [[FetchOutcome_1]] - `uses` [INFERRED]
+- [[FetchOutcome]] - `uses` [INFERRED]
 - [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FetchOutcome

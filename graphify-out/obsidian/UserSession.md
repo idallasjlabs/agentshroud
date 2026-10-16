@@ -12,17 +12,17 @@ tags:
 # UserSession
 
 ## Connections
-- [[dot-from_dict()_2]] - `method` [EXTRACTED]
+- [[dot-from_dict()_6]] - `method` [EXTRACTED]
 - [[dot-get_or_create_session()]] - `references` [EXTRACTED]
 - [[dot-test_session_to_dict_and_back()]] - `calls` [EXTRACTED]
-- [[dot-to_dict()_3]] - `method` [EXTRACTED]
+- [[dot-to_dict()_10]] - `method` [EXTRACTED]
 - [[Represents an isolated session for a user within a specific bot workspace.]] - `rationale_for` [EXTRACTED]
 - [[TestAccessControl]] - `uses` [INFERRED]
 - [[TestAtomicRegistryWrites]] - `uses` [INFERRED]
 - [[TestConversationHistory]] - `uses` [INFERRED]
 - [[TestInputValidation]] - `uses` [INFERRED]
 - [[TestMultiBotIsolation]] - `uses` [INFERRED]
-- [[TestSerialization]] - `uses` [INFERRED]
+- [[TestSerialization_1]] - `uses` [INFERRED]
 - [[TestSessionContext]] - `uses` [INFERRED]
 - [[TestSessionIsolation]] - `uses` [INFERRED]
 - [[TestSystemPromptReanchoring]] - `uses` [INFERRED]

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_keepalive_loop()]] - `calls` [EXTRACTED]
 - [[dot-_send_event()]] - `references` [EXTRACTED]
-- [[Severity_1]] - `uses` [INFERRED]
+- [[Severity]] - `uses` [INFERRED]
 - [[WSEvent]] - `uses` [INFERRED]
 - [[WSEventType]] - `uses` [INFERRED]
 - [[_coerce_to_ws_event()]] - `references` [EXTRACTED]

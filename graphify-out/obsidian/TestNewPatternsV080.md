@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_hits()]] - `method` [EXTRACTED]
-- [[dot-pg()]] - `method` [EXTRACTED]
+- [[dot-pg()_1]] - `method` [EXTRACTED]
 - [[dot-test_ascii_art_injection()]] - `method` [EXTRACTED]
 - [[dot-test_authority_escalation()]] - `method` [EXTRACTED]
 - [[dot-test_benign_encoding_discussion()]] - `method` [EXTRACTED]

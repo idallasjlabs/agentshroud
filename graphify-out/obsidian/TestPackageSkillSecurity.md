@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-create_skill()]] - `method` [EXTRACTED]
-- [[dot-setUp()_1]] - `method` [EXTRACTED]
+- [[dot-setUp()_2]] - `method` [EXTRACTED]
 - [[dot-tearDown()]] - `method` [EXTRACTED]
 - [[dot-test_allows_nested_regular_files()]] - `method` [EXTRACTED]
 - [[dot-test_packages_normal_files()]] - `method` [EXTRACTED]

@@ -19,9 +19,9 @@ tags:
 - [[dot-test_disallowed_vault_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_empty_reference_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_missing_op_prefix_blocked()]] - `method` [EXTRACTED]
-- [[dot-test_path_traversal_blocked()]] - `method` [EXTRACTED]
+- [[dot-test_path_traversal_blocked()_1]] - `method` [EXTRACTED]
 - [[_is_op_reference_allowed()]] - `calls` [EXTRACTED]
-- [[setup_ephemeral_secrets]] - `shares_data_with` [INFERRED]
+- [[setup_ephemeral_secrets()]] - `shares_data_with` [INFERRED]
 - [[start-agentshroud.sh]] - `references` [EXTRACTED]
 - [[test_op_proxy.py]] - `contains` [EXTRACTED]
 

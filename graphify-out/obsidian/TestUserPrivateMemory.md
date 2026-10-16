@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "UserSessionManager"
+community: "DataLedger"
 location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/DataLedger
 ---
 
 # TestUserPrivateMemory
@@ -15,10 +15,10 @@ tags:
 - [[dot-test_append_to_user_memory()]] - `method` [EXTRACTED]
 - [[dot-test_get_user_memory_returns_string()]] - `method` [EXTRACTED]
 - [[dot-test_user_memory_isolated_between_users()]] - `method` [EXTRACTED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
 - [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_shared_memory.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/DataLedger

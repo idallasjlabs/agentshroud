@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-test_downstream_counter_sorts_above_its_base_release()]] - `method` [EXTRACTED]
-- [[dot-test_empty_returns_none()]] - `method` [EXTRACTED]
+- [[dot-test_empty_returns_none()_1]] - `method` [EXTRACTED]
 - [[dot-test_ignores_prereleases_even_when_numerically_highest()]] - `method` [EXTRACTED]
 - [[dot-test_no_stable_versions_returns_none()]] - `method` [EXTRACTED]
 - [[dot-test_numeric_ordering_not_lexicographic()]] - `method` [EXTRACTED]

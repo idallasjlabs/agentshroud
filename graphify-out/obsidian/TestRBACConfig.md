@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Action"
+community: "MiddlewareManager"
 location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Action
+  - community/MiddlewareManager
 ---
 
 # TestRBACConfig
@@ -17,15 +17,15 @@ tags:
 - [[dot-test_owner_and_collaborators_can_be_overridden_from_env()]] - `method` [EXTRACTED]
 - [[dot-test_role_assignment()]] - `method` [EXTRACTED]
 - [[dot-test_role_hierarchy_checks()]] - `method` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
+- [[Action_2]] - `uses` [INFERRED]
 - [[GroupRegistry]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
 - [[Resource_2]] - `uses` [INFERRED]
-- [[Role_22]] - `uses` [INFERRED]
+- [[Role_21]] - `uses` [INFERRED]
 - [[Test RBAC configuration.]] - `rationale_for` [EXTRACTED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[ToolTier_1]] - `uses` [INFERRED]
 - [[test_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Action
+#graphify/code #graphify/INFERRED #community/MiddlewareManager

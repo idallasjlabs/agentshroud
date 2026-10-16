@@ -19,7 +19,7 @@ tags:
 - [[Bug 2 contributors.py must call get_status(), not the nonexistent get_level().]] - `rationale_for` [EXTRACTED]
 - [[ContributorManager]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[Role_22]] - `uses` [INFERRED]
+- [[Role_21]] - `uses` [INFERRED]
 - [[test_soc_contributors.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_FakeRBAC

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L35"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # TestEgressMonitorConfig
 
 ## Connections
-- [[dot-test_default_mode_is_enforce()_5]] - `method` [EXTRACTED]
+- [[dot-test_default_mode_is_enforce()]] - `method` [EXTRACTED]
 - [[dot-test_generous_baselines()]] - `method` [EXTRACTED]
 - [[AlertSeverity]] - `uses` [INFERRED]
 - [[EgressChannel]] - `uses` [INFERRED]
@@ -21,4 +21,4 @@ tags:
 - [[EgressMonitorConfig]] - `uses` [INFERRED]
 - [[test_egress_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

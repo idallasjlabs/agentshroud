@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-test_default_allows_all_domains()]] - `method` [EXTRACTED]
-- [[dot-test_default_mode_is_enforce()_6]] - `method` [EXTRACTED]
+- [[dot-test_default_mode_is_enforce()_5]] - `method` [EXTRACTED]
 - [[dot-test_generous_defaults()]] - `method` [EXTRACTED]
 - [[dot-test_strict_has_allowlist()]] - `method` [EXTRACTED]
 - [[DNSFilter]] - `uses` [INFERRED]

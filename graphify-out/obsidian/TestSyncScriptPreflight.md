@@ -18,7 +18,7 @@ tags:
 - [[dot-test_sync_dry_run_does_not_write_but_still_scans()]] - `method` [EXTRACTED]
 - [[Recommendation]] - `uses` [INFERRED]
 - [[ScanResult_3]] - `uses` [INFERRED]
-- [[Severity]] - `uses` [INFERRED]
+- [[Severity_1]] - `uses` [INFERRED]
 - [[SkillGuard_1]] - `uses` [INFERRED]
 - [[SkillScanError]] - `uses` [INFERRED]
 - [[The parallel bash sync path must invoke SkillGuard before copying.]] - `rationale_for` [EXTRACTED]

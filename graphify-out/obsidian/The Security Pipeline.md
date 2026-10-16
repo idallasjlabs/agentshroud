@@ -12,7 +12,7 @@ tags:
 # The Security Pipeline
 
 ## Connections
-- [[Architecture_12]] - `contains` [EXTRACTED]
+- [[Architecture_13]] - `contains` [EXTRACTED]
 - [[Egress Pipeline (Agent → Internet)]] - `contains` [EXTRACTED]
 - [[Inbound Pipeline (User → Agent)]] - `contains` [EXTRACTED]
 - [[Outbound Pipeline (Agent → User)]] - `contains` [EXTRACTED]

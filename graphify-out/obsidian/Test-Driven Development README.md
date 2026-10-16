@@ -14,13 +14,13 @@ tags:
 - [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[dot-agentsskillsi-tddREADME]] - `contains` [EXTRACTED]
 - [[Project Management (SKILL)]] - `references` [EXTRACTED]
-- [[Purpose_105]] - `contains` [EXTRACTED]
-- [[Purpose_106]] - `contains` [EXTRACTED]
+- [[Purpose_102]] - `contains` [EXTRACTED]
+- [[Purpose_103]] - `contains` [EXTRACTED]
+- [[Related Skills_84]] - `contains` [EXTRACTED]
 - [[Related Skills_85]] - `contains` [EXTRACTED]
-- [[Related Skills_86]] - `contains` [EXTRACTED]
 - [[Test-Driven Development (TDD) Coach]] - `references` [EXTRACTED]
+- [[Usage_92]] - `contains` [EXTRACTED]
 - [[Usage_93]] - `contains` [EXTRACTED]
-- [[Usage_94]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README

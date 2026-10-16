@@ -1,23 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+source_file: "docker/config/hermes/skills/i-pm/README.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
-location: "L55"
+community: "Project Management (README)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/Project_Management_README
 ---
 
 # Usage
 
 ## Connections
-- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
-- [[Click Element_2]] - `contains` [EXTRACTED]
-- [[Extract Data_2]] - `contains` [EXTRACTED]
-- [[Fetch JavaScript-Heavy Page (Node.js)_1]] - `contains` [EXTRACTED]
-- [[Fill Form_1]] - `contains` [EXTRACTED]
-- [[Navigate to URL_2]] - `contains` [EXTRACTED]
-- [[Take Screenshot_2]] - `contains` [EXTRACTED]
+- [[Project Management (PM)_1]] - `contains` [EXTRACTED]
+- [[Project Management (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/Project_Management_README

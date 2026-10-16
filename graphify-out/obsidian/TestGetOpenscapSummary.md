@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "_load_latest_json"
+community: "test_collaborator_greeter.py"
 location: "L378"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_load_latest_json
+  - community/test_collaborator_greeterpy
 ---
 
 # TestGetOpenscapSummary
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_warning_on_failures()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_load_latest_json
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy

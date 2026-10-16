@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "Troubleshooting"
+community: "Blue Team Security Auditor (SEC-DEFENSE)"
 location: "L204"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Troubleshooting
+  - community/Blue_Team_Security_Auditor_SEC-DEFENSE
 ---
 
 # Troubleshooting
@@ -17,4 +17,4 @@ tags:
 - [[Bot not responding on Telegram]] - `contains` [EXTRACTED]
 - [[Container won't start after adding Anthropic secret]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/Blue_Team_Security_Auditor_SEC-DEFENSE

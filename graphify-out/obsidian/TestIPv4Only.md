@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "discover_upstream_versions.py"
+community: "UserSessionManager"
 location: "L236"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/discover_upstream_versionspy
+  - community/UserSessionManager
 ---
 
 # TestIPv4Only
@@ -17,4 +17,4 @@ tags:
 - [[Every Docker Hub failure on marvin was on IPv6; curl -4 was 100% clean.]] - `rationale_for` [EXTRACTED]
 - [[test_discover_upstream_versions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

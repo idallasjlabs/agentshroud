@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "rationale"
-community: "test_docs_accuracy.py"
+community: "AgentShroud Brand Guidelines"
 location: "L156"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_docs_accuracypy
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Verify /manage/modules enumerates every module MiddlewareManager wires.      Mid
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestManageModulesEndpointAccuracy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_docs_accuracypy
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

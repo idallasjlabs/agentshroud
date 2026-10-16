@@ -1,28 +1,37 @@
 ---
-source_file: "gateway/tests/test_web_proxy.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "WebProxyConfig"
-location: "L265"
+community: "MCPPermissionManager"
+location: "L183"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - graphify/INFERRED
+  - community/MCPPermissionManager
 ---
 
 # TestPIIDetection
 
 ## Connections
-- [[dot-test_aws_key_in_response_flagged()]] - `method` [EXTRACTED]
-- [[dot-test_pii_in_response_flagged()]] - `method` [EXTRACTED]
-- [[dot-test_pii_in_url_flagged()]] - `method` [EXTRACTED]
-- [[dot-test_private_key_in_response_flagged()]] - `method` [EXTRACTED]
-- [[dot-test_ssn_in_url_flagged()_1]] - `method` [EXTRACTED]
-- [[AuditChain]] - `uses` [INFERRED]
-- [[DomainSettings]] - `uses` [INFERRED]
-- [[ProxyAction]] - `uses` [INFERRED]
-- [[RateLimiter]] - `uses` [INFERRED]
-- [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig_1]] - `uses` [INFERRED]
-- [[test_web_proxy.py]] - `contains` [EXTRACTED]
+- [[dot-test_clean_result_passes_through()]] - `method` [EXTRACTED]
+- [[dot-test_credit_card_detected()]] - `method` [EXTRACTED]
+- [[dot-test_credit_card_redacted()]] - `method` [EXTRACTED]
+- [[dot-test_email_detected_but_low_threat()]] - `method` [EXTRACTED]
+- [[dot-test_pii_in_tool_result_redacted()]] - `method` [EXTRACTED]
+- [[dot-test_ssn_detected_in_params()]] - `method` [EXTRACTED]
+- [[dot-test_ssn_redacted_in_params()]] - `method` [EXTRACTED]
+- [[FindingType]] - `uses` [INFERRED]
+- [[MCPAuditTrail]] - `uses` [INFERRED]
+- [[MCPInspector_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
+- [[MCPProxy_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig_2]] - `uses` [INFERRED]
+- [[MCPServerConfig_2]] - `uses` [INFERRED]
+- [[MCPToolCall_1]] - `uses` [INFERRED]
+- [[MCPToolConfig]] - `uses` [INFERRED]
+- [[MCPToolResult]] - `uses` [INFERRED]
+- [[MCPTransport]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
+- [[ThreatLevel_2]] - `uses` [INFERRED]
+- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/INFERRED #community/MCPPermissionManager

@@ -12,8 +12,8 @@ tags:
 # TestMemoryIntegrityMonitor
 
 ## Connections
-- [[dot-setup_method()_16]] - `method` [EXTRACTED]
-- [[dot-teardown_method()_3]] - `method` [EXTRACTED]
+- [[dot-setup_method()_17]] - `method` [EXTRACTED]
+- [[dot-teardown_method()_1]] - `method` [EXTRACTED]
 - [[dot-test_expected_write_window()]] - `method` [EXTRACTED]
 - [[dot-test_file_monitoring_new_file()]] - `method` [EXTRACTED]
 - [[dot-test_hash_computation()]] - `method` [EXTRACTED]

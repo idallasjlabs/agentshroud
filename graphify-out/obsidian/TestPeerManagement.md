@@ -12,7 +12,7 @@ tags:
 # TestPeerManagement
 
 ## Connections
-- [[dot-test_register_peer()]] - `method` [EXTRACTED]
+- [[dot-test_register_peer()_1]] - `method` [EXTRACTED]
 - [[dot-test_trust_clamped()]] - `method` [EXTRACTED]
 - [[dot-test_unregister_peer()]] - `method` [EXTRACTED]
 - [[dot-test_update_trust()]] - `method` [EXTRACTED]

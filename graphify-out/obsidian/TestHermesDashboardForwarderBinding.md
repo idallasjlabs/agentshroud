@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "TestHermesDashboardForwarderBinding"
+community: "test_security_regressions_v1_2.py"
 location: "L300"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestHermesDashboardForwarderBinding
+  - community/test_security_regressions_v1_2py
 ---
 
 # TestHermesDashboardForwarderBinding
@@ -16,4 +16,4 @@ tags:
 - [[BT-M1 The Hermes TCP dashboard forwarder (port 9119) binds on 0.0.0.0. This is…]] - `rationale_for` [EXTRACTED]
 - [[test_security_regressions_v1_2.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestHermesDashboardForwarderBinding
+#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py

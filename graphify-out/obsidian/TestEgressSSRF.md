@@ -12,7 +12,7 @@ tags:
 # TestEgressSSRF
 
 ## Connections
-- [[dot-setup_method()_31]] - `method` [EXTRACTED]
+- [[dot-setup_method()_27]] - `method` [EXTRACTED]
 - [[dot-test_block_ipv4_mapped_ipv6_loopback()]] - `method` [EXTRACTED]
 - [[dot-test_block_ipv4_mapped_ipv6_private()]] - `method` [EXTRACTED]
 - [[dot-test_block_ipv4_private()]] - `method` [EXTRACTED]
@@ -26,7 +26,7 @@ tags:
 - [[ContainerSnapshot]] - `uses` [INFERRED]
 - [[DriftDetector]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
-- [[EgressFilter_2]] - `uses` [INFERRED]
+- [[EgressFilter_1]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[EncryptedStore]] - `uses` [INFERRED]
@@ -37,8 +37,8 @@ tags:
 - [[Tests for SSRF protection in egress filter.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustLevel_2]] - `uses` [INFERRED]
+- [[TrustManager_4]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/EgressFilterConfig

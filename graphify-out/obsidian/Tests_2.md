@@ -12,6 +12,6 @@ tags:
 # Tests
 
 ## Connections
-- [[Structure_1]] - `contains` [EXTRACTED]
+- [[Structure_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Browser_Extension

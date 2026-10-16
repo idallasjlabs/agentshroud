@@ -17,8 +17,8 @@ tags:
 - [[Health Checks_1]] - `references` [EXTRACTED]
 - [[Kill Switch Procedure]] - `references` [EXTRACTED]
 - [[Startup Errors]] - `references` [EXTRACTED]
-- [[prompt_guard.py_1]] - `references` [INFERRED]
+- [[prompt_guard.py]] - `references` [INFERRED]
 - [[store.py]] - `references` [INFERRED]
-- [[troubleshooting_22]] - `contains` [EXTRACTED]
+- [[troubleshooting_23]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Restart_Procedure

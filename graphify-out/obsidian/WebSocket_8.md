@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/ingest_api/routes/dashboard.py"
+source_file: "gateway/web/api.py"
 type: "code"
-community: "activity_websocket"
-location: "L561"
+community: "api.py"
+location: "L882"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/activity_websocket
+  - graphify/INFERRED
+  - community/apipy
 ---
 
 # WebSocket
 
 ## Connections
-- [[activity_websocket()]] - `references` [EXTRACTED]
-- [[egress_websocket()]] - `references` [EXTRACTED]
+- [[CitationVerifier]] - `uses` [INFERRED]
+- [[DraftEntry]] - `uses` [INFERRED]
+- [[IntelReportStore_1]] - `uses` [INFERRED]
+- [[ws_logs()]] - `references` [EXTRACTED]
+- [[ws_updates()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/activity_websocket
+#graphify/code #graphify/INFERRED #community/apipy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "rationale"
-community: "RBACConfig"
+community: "hermes/SOUL.md"
 location: "L294"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/hermes/SOULmd
 ---
 
 # Tools not in the rate-limit map should always pass.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_unlisted_tool_always_passes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/hermes/SOULmd

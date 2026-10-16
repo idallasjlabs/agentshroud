@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
+source_file: ".agents/skills/i-sec/README.md"
 type: "document"
-community: "egress_filter.py"
-location: "L50"
+community: "Security Review (SEC)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/Security_Review_SEC
 ---
 
 # Usage
 
 ## Connections
-- [[AGENTSHROUD_MODE]] - `contains` [EXTRACTED]
+- [[Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_filterpy
+#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC

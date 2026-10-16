@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
 type: "document"
-community: "All Dependencies.md"
+community: "Restart Procedure"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/Restart_Procedure
 ---
 
 # WAL Mode
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[aiosqlite_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/document #graphify/EXTRACTED #community/Restart_Procedure

@@ -12,7 +12,7 @@ tags:
 # VersionRequest
 
 ## Connections
-- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[Request for version change operations.]] - `rationale_for` [EXTRACTED]
 - [[agentshroud_manager (version manager)]] - `shares_data_with` [INFERRED]
 - [[downgrade_version()]] - `references` [EXTRACTED]

@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/ingest_api/routes/approval.py"
+source_file: "voice_gateway/server.py"
 type: "code"
-community: "activity_websocket"
-location: "L119"
+community: "test_voice_latency_guard.py"
+location: "L425"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/activity_websocket
+  - community/test_voice_latency_guardpy
 ---
 
 # WebSocket
 
 ## Connections
-- [[approval_websocket()]] - `references` [EXTRACTED]
+- [[_keepalive()]] - `references` [EXTRACTED]
+- [[_send_state()]] - `references` [EXTRACTED]
+- [[voice_endpoint()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/activity_websocket
+#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy

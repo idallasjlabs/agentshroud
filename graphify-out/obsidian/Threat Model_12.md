@@ -1,5 +1,5 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
 type: "document"
 community: "Function Details"
 location: "L15"
@@ -12,6 +12,6 @@ tags:
 # Threat Model
 
 ## Connections
-- [[session_security.py_1]] - `contains` [EXTRACTED]
+- [[oauth_security.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

@@ -12,7 +12,6 @@ tags:
 # Three-tier network segmentation (internal edge / isolated DMZ / dmz) — IEC 62443 FR5
 
 ## Connections
-- [[Devprod coexistence on one host offset ports (908018790) and subnets (172.20-2224)]] - `references` [EXTRACTED]
 - [[gateway service (security proxy, sole egress point, read-only rootfs, cap_drop ALL)]] - `rationale_for` [EXTRACTED]
 - [[hermes service block (profiles hermesfull; DEAD CODE — Hermes deploys via run-standalone.sh)]] - `rationale_for` [EXTRACTED]
 - [[hermes-dashboard-relay container (9119 Tailscale bypass of gateway)]] - `conceptually_related_to` [INFERRED]

@@ -12,7 +12,7 @@ tags:
 # TestMinimalConfig
 
 ## Connections
-- [[dot-config()_2]] - `method` [EXTRACTED]
+- [[dot-config()]] - `method` [EXTRACTED]
 - [[dot-test_has_auth_token()]] - `method` [EXTRACTED]
 - [[dot-test_has_gateway_bind()]] - `method` [EXTRACTED]
 - [[dot-test_has_gateway_port()]] - `method` [EXTRACTED]

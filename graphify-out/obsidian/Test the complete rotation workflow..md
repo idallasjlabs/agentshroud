@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "KeyRotationManager"
+community: "gateway/tests/test_llm_proxy_thinking_suppression.py (8 cases)"
 location: "L269"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases
 ---
 
 # Test the complete rotation workflow.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKeyRotationWorkflow]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/rationale #graphify/EXTRACTED #community/gateway/tests/test_llm_proxy_thinking_suppressionpy_8_cases

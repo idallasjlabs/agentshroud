@@ -12,7 +12,7 @@ tags:
 # Validate and govern an inbound A2A message from a remote peer.
 
 ## Connections
-- [[dot-process_inbound()_1]] - `rationale_for` [EXTRACTED]
-- [[dot-process_outbound()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-process_inbound()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-process_outbound()_3]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/A2AGovernanceProxy

@@ -12,9 +12,9 @@ tags:
 # TestHighSeverity
 
 ## Connections
-- [[dot-test_ignore_previous_instructions()_1]] - `method` [EXTRACTED]
-- [[dot-test_new_instructions_override()_1]] - `method` [EXTRACTED]
-- [[dot-test_role_reassignment()_2]] - `method` [EXTRACTED]
+- [[dot-test_ignore_previous_instructions()]] - `method` [EXTRACTED]
+- [[dot-test_new_instructions_override()]] - `method` [EXTRACTED]
+- [[dot-test_role_reassignment()]] - `method` [EXTRACTED]
 - [[dot-test_social_engineering_admin()]] - `method` [EXTRACTED]
 - [[dot-test_system_delimiter_injection()]] - `method` [EXTRACTED]
 - [[dot-test_xml_function_injection()]] - `method` [EXTRACTED]

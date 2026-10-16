@@ -12,7 +12,7 @@ tags:
 # TripwireResponse
 
 ## Connections
-- [[dot-scan_response()_1]] - `references` [EXTRACTED]
+- [[dot-scan_response()_2]] - `references` [EXTRACTED]
 - [[Bridge result returned by scan_response() for pipeline compatibility.]] - `rationale_for` [EXTRACTED]
 - [[TestCanaryTripwire]] - `uses` [INFERRED]
 - [[canary_tripwire.py]] - `contains` [EXTRACTED]

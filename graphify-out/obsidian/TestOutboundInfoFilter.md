@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_time_one_filter()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_20]] - `method` [EXTRACTED]
+- [[dot-setup_method()_21]] - `method` [EXTRACTED]
 - [[dot-test_admin_private_service_data_redacted()]] - `method` [EXTRACTED]
 - [[dot-test_agentshroud_name_not_redacted()]] - `method` [EXTRACTED]
 - [[dot-test_code_block_filtering()]] - `method` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[dot-test_context_aware_user_id_filtering()]] - `method` [EXTRACTED]
 - [[dot-test_credential_path_filtering()]] - `method` [EXTRACTED]
 - [[dot-test_custom_patterns()]] - `method` [EXTRACTED]
-- [[dot-test_edge_cases()_1]] - `method` [EXTRACTED]
+- [[dot-test_edge_cases()_2]] - `method` [EXTRACTED]
 - [[dot-test_initialization_default()]] - `method` [EXTRACTED]
 - [[dot-test_initialization_with_config()]] - `method` [EXTRACTED]
 - [[dot-test_internal_url_filtering()]] - `method` [EXTRACTED]

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-test_base64_clean_content_not_flagged()]] - `method` [EXTRACTED]
-- [[dot-test_base64_encoded_injection()_2]] - `method` [EXTRACTED]
+- [[dot-test_base64_encoded_injection()_1]] - `method` [EXTRACTED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[InjectionSeverity]] - `uses` [INFERRED]
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]

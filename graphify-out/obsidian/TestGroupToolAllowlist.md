@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-test_group_allowlist_grants_extra_tool()]] - `method` [EXTRACTED]
 - [[dot-test_project_allowed_tools_grant_access()]] - `method` [EXTRACTED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
-- [[Role_22]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[Role_21]] - `uses` [INFERRED]
 - [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[ToolACLConfig]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]

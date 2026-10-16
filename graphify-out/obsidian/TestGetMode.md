@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "test_prompt_guard.py"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/test_prompt_guardpy
 ---
 
 # TestGetMode
 
 ## Connections
-- [[dot-test_default_mode_is_enforce()_3]] - `method` [EXTRACTED]
+- [[dot-test_default_mode_is_enforce()_6]] - `method` [EXTRACTED]
 - [[dot-test_response_includes_timestamp()]] - `method` [EXTRACTED]
 - [[dot-test_returns_monitor_when_set()]] - `method` [EXTRACTED]
 - [[dot-test_returns_observatory_when_set()]] - `method` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/test_prompt_guardpy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "AgentShroud: A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents"
+community: "MCP Doctor (MCPM-DOCTOR)"
 location: "L201"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_A_Transparent_Proxy_Framework_for_Enterprise_Governance_of_Autonomous_AI_Agents
+  - community/MCP_Doctor_MCPM-DOCTOR
 ---
 
 # VII. v0.8.0 Remediation
@@ -20,4 +20,4 @@ tags:
 - [[VII-E. Human-in-the-Loop (R-08, R-09)]] - `contains` [EXTRACTED]
 - [[VII-F. Credential Isolation (R-10, R-11, R-12)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_A_Transparent_Proxy_Framework_for_Enterprise_Governance_of_Autonomous_AI_Agents
+#graphify/document #graphify/EXTRACTED #community/MCP_Doctor_MCPM-DOCTOR

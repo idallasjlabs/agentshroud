@@ -12,7 +12,7 @@ tags:
 # TestRecommendedConfig
 
 ## Connections
-- [[dot-config()_4]] - `method` [EXTRACTED]
+- [[dot-config()_2]] - `method` [EXTRACTED]
 - [[dot-test_approval_queue_enabled()_1]] - `method` [EXTRACTED]
 - [[dot-test_kill_switch_enabled()_1]] - `method` [EXTRACTED]
 - [[dot-test_pii_enabled()_1]] - `method` [EXTRACTED]

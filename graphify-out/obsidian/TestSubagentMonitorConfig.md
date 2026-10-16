@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "SubagentMonitor"
+community: "TrustConfig"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentMonitor
+  - community/TrustConfig
 ---
 
 # TestSubagentMonitorConfig
 
 ## Connections
-- [[dot-test_default_mode_is_enforce()]] - `method` [EXTRACTED]
+- [[dot-test_default_mode_is_enforce()_4]] - `method` [EXTRACTED]
 - [[dot-test_generous_concurrent_default()]] - `method` [EXTRACTED]
 - [[dot-test_trust_inheritance_default_on()]] - `method` [EXTRACTED]
 - [[SubagentEventType]] - `uses` [INFERRED]
@@ -20,4 +20,4 @@ tags:
 - [[SubagentMonitorConfig]] - `uses` [INFERRED]
 - [[test_subagent_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentMonitor
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

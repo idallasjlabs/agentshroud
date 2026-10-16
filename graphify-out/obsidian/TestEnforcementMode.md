@@ -12,7 +12,7 @@ tags:
 # TestEnforcementMode
 
 ## Connections
-- [[dot-test_default_mode_is_enforce()_4]] - `method` [EXTRACTED]
+- [[dot-test_default_mode_is_enforce()_7]] - `method` [EXTRACTED]
 - [[dot-test_enforce_mode_blocks()]] - `method` [EXTRACTED]
 - [[dot-test_monitor_mode_logs_but_does_not_block_via_trust_gate()]] - `method` [EXTRACTED]
 - [[dot-test_monitor_mode_still_allows_permitted_tools()]] - `method` [EXTRACTED]
@@ -21,9 +21,9 @@ tags:
 - [[SCRUM-78 — operational monitor↔enforce lever.]] - `rationale_for` [EXTRACTED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustLevel_2]] - `uses` [INFERRED]
+- [[TrustManager_4]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
 - [[test_progressive_trust_integration.py]] - `contains` [EXTRACTED]
 

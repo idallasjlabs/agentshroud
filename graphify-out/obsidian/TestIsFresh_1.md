@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestIsFresh"
+community: "TestOutboundInfoFilter"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestIsFresh
+  - community/TestOutboundInfoFilter
 ---
 
 # TestIsFresh
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_stat_error_returns_false()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestIsFresh
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

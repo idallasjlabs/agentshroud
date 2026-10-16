@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "_req"
+community: "ApprovalQueueConfig"
 location: "L770"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req
+  - community/ApprovalQueueConfig
 ---
 
 # TestIsPathAllowedForUser
@@ -17,12 +17,12 @@ tags:
 - [[dot-test_no_session_manager_denied()]] - `method` [EXTRACTED]
 - [[dot-test_other_user_under_users_base_denied()]] - `method` [EXTRACTED]
 - [[dot-test_own_workspace_allowed()]] - `method` [EXTRACTED]
-- [[dot-test_owner_bypass()_2]] - `method` [EXTRACTED]
+- [[dot-test_owner_bypass()]] - `method` [EXTRACTED]
 - [[dot-test_users_heuristic_denied()]] - `method` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

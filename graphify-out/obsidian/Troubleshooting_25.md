@@ -1,17 +1,20 @@
 ---
-source_file: "docs/setup-telegram.md"
+source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
-community: "First Time Setup"
-location: "L89"
+community: "iCloud Services"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/First_Time_Setup
+  - community/iCloud_Services
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Telegram Channel Setup]] - `contains` [EXTRACTED]
+- [[401 Unauthorized_3]] - `contains` [EXTRACTED]
+- [[CalendarContacts not found_3]] - `contains` [EXTRACTED]
+- [[Connection timeout_3]] - `contains` [EXTRACTED]
+- [[iCloud Services_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/First_Time_Setup
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

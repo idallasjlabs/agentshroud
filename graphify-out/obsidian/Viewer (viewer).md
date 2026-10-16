@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "AgentShroud Access Control Matrix"
+community: "Mac App Discovery Skill"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Access_Control_Matrix
+  - community/Mac_App_Discovery_Skill
 ---
 
 # Viewer (viewer)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Administrative Roles]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix
+#graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill

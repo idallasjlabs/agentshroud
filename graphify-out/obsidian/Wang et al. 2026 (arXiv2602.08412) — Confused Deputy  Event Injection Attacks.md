@@ -12,6 +12,6 @@ tags:
 
 ## Connections
 - [[oauth_security.py]] - `cites` [EXTRACTED]
-- [[session_security.py_2]] - `cites` [EXTRACTED]
+- [[session_security.py]] - `cites` [EXTRACTED]
 
 #graphify/paper #graphify/EXTRACTED #community/SessionManager

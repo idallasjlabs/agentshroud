@@ -12,13 +12,13 @@ tags:
 # TestEnforcementWiring
 
 ## Connections
-- [[dot-setup_method()_5]] - `method` [EXTRACTED]
+- [[dot-setup_method()_23]] - `method` [EXTRACTED]
 - [[dot-test_record_decision_helper()]] - `method` [EXTRACTED]
 - [[dot-test_record_decision_never_raises()]] - `method` [EXTRACTED]
 - [[dot-test_tool_acl_can_use_tool_records()]] - `method` [EXTRACTED]
 - [[Decision_2]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
-- [[EgressFilter_2]] - `uses` [INFERRED]
+- [[EgressFilter_1]] - `uses` [INFERRED]
 - [[ModuleStatsCollector]] - `uses` [INFERRED]
 - [[SCRUM-80 — the record helper + wrapped enforcement points feed real data.]] - `rationale_for` [EXTRACTED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]

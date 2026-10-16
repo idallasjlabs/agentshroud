@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "AuditChain"
+community: "AgentTarget"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AuditChain
+  - community/AgentTarget
 ---
 
 # TestKeyVaultConfig
 
 ## Connections
-- [[dot-test_default_config()_8]] - `method` [EXTRACTED]
+- [[dot-test_default_config()]] - `method` [EXTRACTED]
 - [[KeyInjector]] - `uses` [INFERRED]
 - [[KeyLeakDetector]] - `uses` [INFERRED]
 - [[KeyVault]] - `uses` [INFERRED]
 - [[KeyVaultConfig]] - `uses` [INFERRED]
 - [[test_key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AuditChain
+#graphify/code #graphify/INFERRED #community/AgentTarget

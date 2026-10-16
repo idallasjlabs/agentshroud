@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestTrivyImageSummaries"
+community: "TestOutboundInfoFilter"
 location: "L289"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestTrivyImageSummaries
+  - community/TestOutboundInfoFilter
 ---
 
 # TestTrivyImageSummaries
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_timestamp_suffix_strip_branch()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestTrivyImageSummaries
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

@@ -12,6 +12,6 @@ tags:
 # WebContentScanner._scan_encoded_payloads(content, result)
 
 ## Connections
-- [[Function Details_27]] - `contains` [EXTRACTED]
+- [[Function Details_26]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/web_content_scannerpy

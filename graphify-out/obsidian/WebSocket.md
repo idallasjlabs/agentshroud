@@ -12,8 +12,8 @@ tags:
 # WebSocket
 
 ## Connections
-- [[dot-__init__()_45]] - `references` [EXTRACTED]
-- [[Severity_1]] - `uses` [INFERRED]
+- [[dot-__init__()_36]] - `references` [EXTRACTED]
+- [[Severity]] - `uses` [INFERRED]
 - [[WSEvent]] - `uses` [INFERRED]
 - [[WSEventType]] - `uses` [INFERRED]
 - [[ws_soc_endpoint()]] - `references` [EXTRACTED]

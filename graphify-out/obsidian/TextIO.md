@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "AuditEvent"
+community: "AuditExporter"
 location: "L69"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AuditEvent
+  - community/AuditExporter
 ---
 
 # TextIO
 
 ## Connections
 - [[dot-export_events()]] - `references` [EXTRACTED]
-- [[AuditEvent]] - `uses` [INFERRED]
-- [[AuditStore_1]] - `uses` [INFERRED]
+- [[AuditEvent_1]] - `uses` [INFERRED]
+- [[AuditStore]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/AuditEvent
+#graphify/code #graphify/INFERRED #community/AuditExporter

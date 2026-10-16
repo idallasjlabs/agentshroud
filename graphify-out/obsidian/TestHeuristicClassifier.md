@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_heuristic_classifier.py"
 type: "code"
-community: "HeuristicClassifier"
+community: "A2APolicyEngine"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/A2APolicyEngine
 ---
 
 # TestHeuristicClassifier
 
 ## Connections
-- [[dot-setup_method()_35]] - `method` [EXTRACTED]
+- [[dot-setup_method()_31]] - `method` [EXTRACTED]
 - [[dot-test_backward_compat_alias()]] - `method` [EXTRACTED]
 - [[dot-test_benign_text_low_score()]] - `method` [EXTRACTED]
 - [[dot-test_classification_result_properties()]] - `method` [EXTRACTED]
@@ -32,4 +32,4 @@ tags:
 - [[Test the heuristic injection classifier.]] - `rationale_for` [EXTRACTED]
 - [[test_heuristic_classifier.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

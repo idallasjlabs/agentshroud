@@ -22,7 +22,7 @@ tags:
 - [[dot-test_report_serialises_to_json()]] - `method` [EXTRACTED]
 - [[dot-test_security_score_above_max_rejected()]] - `method` [EXTRACTED]
 - [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
-- [[CompetitorEntry]] - `uses` [INFERRED]
+- [[CompetitorEntry_1]] - `uses` [INFERRED]
 - [[IntelReportStore_1]] - `uses` [INFERRED]
 - [[ReportIntegrityError]] - `uses` [INFERRED]
 - [[Tests for Pydantic model validation.]] - `rationale_for` [EXTRACTED]

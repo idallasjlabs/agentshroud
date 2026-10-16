@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-test_private_and_admin_do_not_overlap()]] - `method` [EXTRACTED]
 - [[dot-test_private_and_admin_do_not_overlap_with_collab_allowed()]] - `method` [EXTRACTED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
-- [[Role_22]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[Role_21]] - `uses` [INFERRED]
 - [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[ToolACLConfig]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]

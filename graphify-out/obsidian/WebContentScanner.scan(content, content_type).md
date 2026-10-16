@@ -12,6 +12,6 @@ tags:
 # WebContentScanner.scan(content, content_type)
 
 ## Connections
-- [[Function Details_27]] - `contains` [EXTRACTED]
+- [[Function Details_26]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/web_content_scannerpy

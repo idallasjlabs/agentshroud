@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/LOG_LEVEL.md"
+source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "egress_filter.py"
-location: "L15"
+community: "AgentShroud Brand Guidelines"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Values
 
 ## Connections
-- [[LOG_LEVEL_1]] - `contains` [EXTRACTED]
+- [[Brand Identity_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_filterpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

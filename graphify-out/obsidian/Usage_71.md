@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-production/README.md"
 type: "document"
-community: "What You Must Do When Invoked"
+community: "Phase 3: MITIGATE (Rollback First!)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked
+  - community/Phase_3_MITIGATE_Rollback_First
 ---
 
 # Usage
 
 ## Connections
-- [[graphify_2]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First

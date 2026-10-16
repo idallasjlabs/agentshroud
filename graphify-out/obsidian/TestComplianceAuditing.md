@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "_age"
+community: "Layer-by-Layer Breakdown"
 location: "L685"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_age
+  - community/Layer-by-Layer_Breakdown
 ---
 
 # TestComplianceAuditing
@@ -19,4 +19,4 @@ tags:
 - [[dot-test_oscap_binary_present_not_run()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_age
+#graphify/code #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown

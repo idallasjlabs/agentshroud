@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "AuditChain"
+community: "PipelineAction"
 location: "L94"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AuditChain
+  - community/PipelineAction
 ---
 
 # TestAuditChainBounded
@@ -35,7 +35,7 @@ tags:
 - [[The in-memory window must be bounded; full history lives in SQLite.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_4]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AuditChain
+#graphify/code #graphify/INFERRED #community/PipelineAction

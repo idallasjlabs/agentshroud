@@ -1,19 +1,18 @@
 ---
-source_file: "voice_gateway/server.py"
+source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "test_voice_latency_guard.py"
-location: "L425"
+community: "test_dashboard.py"
+location: "L561"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/test_dashboardpy
 ---
 
 # WebSocket
 
 ## Connections
-- [[_keepalive()]] - `references` [EXTRACTED]
-- [[_send_state()]] - `references` [EXTRACTED]
-- [[voice_endpoint()]] - `references` [EXTRACTED]
+- [[activity_websocket()]] - `references` [EXTRACTED]
+- [[egress_websocket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

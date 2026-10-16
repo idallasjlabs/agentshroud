@@ -15,10 +15,10 @@ tags:
 - [[dot-test_critical_finding_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_git_guard_exception_fails_closed()]] - `method` [EXTRACTED]
 - [[dot-test_low_finding_allowed()]] - `method` [EXTRACTED]
-- [[dot-test_owner_bypass()_1]] - `method` [EXTRACTED]
+- [[dot-test_owner_bypass()_3]] - `method` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "KeyRotationManager"
+community: "Restart Procedure"
 location: "L47"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/KeyRotationManager
+  - community/Restart_Procedure
 ---
 
 # TestCredentialRotationPolicy
@@ -22,4 +22,4 @@ tags:
 - [[Test credential rotation policy configuration.]] - `rationale_for` [EXTRACTED]
 - [[test_key_rotation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/KeyRotationManager
+#graphify/code #graphify/INFERRED #community/Restart_Procedure

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Enum_3]] - `inherits` [EXTRACTED]
-- [[SOCWebSocketHandler_2]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
 - [[WSEvent_1]] - `uses` [INFERRED]
 - [[WebSocket]] - `uses` [INFERRED]
 - [[_handleWSEvent()]] - `shares_data_with` [INFERRED]
