@@ -12,12 +12,12 @@ tags:
 # FakeRBAC
 
 ## Connections
-- [[dot-__init__()_8]] - `method` [EXTRACTED]
-- [[dot-_make_proxy()]] - `calls` [EXTRACTED]
-- [[dot-_make_proxy()_5]] - `calls` [EXTRACTED]
-- [[dot-_make_proxy()_1]] - `calls` [EXTRACTED]
+- [[dot-__init__()_142]] - `method` [EXTRACTED]
+- [[dot-_make_proxy()_3]] - `calls` [EXTRACTED]
 - [[dot-_make_proxy()_2]] - `calls` [EXTRACTED]
-- [[dot-is_owner()]] - `method` [EXTRACTED]
+- [[dot-_make_proxy()_4]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_5]] - `calls` [EXTRACTED]
+- [[dot-is_owner()_3]] - `method` [EXTRACTED]
 - [[dot-test_allowed_collaborator_model_command_with_mention_is_handled_locally()]] - `calls` [EXTRACTED]
 - [[dot-test_blocked_command_is_quarantined()]] - `calls` [EXTRACTED]
 - [[dot-test_blocked_command_uppercase_is_quarantined()]] - `calls` [EXTRACTED]
@@ -232,7 +232,7 @@ tags:
 - [[dot-test_within_limit_document_update_passes()]] - `calls` [EXTRACTED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RateLimiter_1]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

@@ -16,6 +16,6 @@ tags:
 - [[IsolationVerifier.verify_network_isolation()]] - `contains` [EXTRACTED]
 - [[IsolationVerifier.verify_shared_nothing()]] - `contains` [EXTRACTED]
 - [[IsolationVerifier.verify_volume_isolation()]] - `contains` [EXTRACTED]
-- [[agent_isolation.py_1]] - `contains` [EXTRACTED]
+- [[agent_isolation.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agent_isolationpy

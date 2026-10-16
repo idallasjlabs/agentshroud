@@ -12,12 +12,12 @@ tags:
 # FakePipelineResult
 
 ## Connections
-- [[dot-process_inbound()_6]] - `references` [EXTRACTED]
 - [[dot-process_inbound()_7]] - `references` [EXTRACTED]
 - [[dot-process_inbound()_8]] - `references` [EXTRACTED]
+- [[dot-process_inbound()_9]] - `references` [EXTRACTED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RateLimiter_1]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/BlockingPipeline

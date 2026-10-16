@@ -12,16 +12,16 @@ tags:
 # FakeTransport
 
 ## Connections
-- [[dot-ok()_1]] - `method` [EXTRACTED]
-- [[dot-request()_1]] - `method` [EXTRACTED]
+- [[dot-ok()]] - `method` [EXTRACTED]
+- [[dot-request()]] - `method` [EXTRACTED]
 - [[dot-with()]] - `method` [EXTRACTED]
 - [[HttpResponse]] - `references` [EXTRACTED]
 - [[HttpTransport]] - `implements` [EXTRACTED]
-- [[Method_1]] - `references` [EXTRACTED]
+- [[Method]] - `references` [EXTRACTED]
 - [[Option]] - `references` [EXTRACTED]
 - [[RefCell]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
-- [[Value_3]] - `references` [EXTRACTED]
+- [[Value_1]] - `references` [EXTRACTED]
 - [[Vec]] - `references` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 

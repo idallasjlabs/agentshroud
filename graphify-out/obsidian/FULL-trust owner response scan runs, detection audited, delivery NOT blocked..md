@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "OutboundInfoFilter"
+community: "AuditChain"
 location: "L687"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OutboundInfoFilter
+  - community/AuditChain
 ---
 
 # FULL-trust owner response: scan runs, detection audited, delivery NOT blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_full_trust_tool_result_injection_audited_not_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OutboundInfoFilter
+#graphify/rationale #graphify/EXTRACTED #community/AuditChain

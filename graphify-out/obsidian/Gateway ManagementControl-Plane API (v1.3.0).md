@@ -1,11 +1,11 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "Gateway Management/Control-Plane API (v1.3.0)"
+community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Management/Control-Plane_API_v130
+  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
 ---
 
 # Gateway Management/Control-Plane API (v1.3.0)
@@ -15,8 +15,8 @@ tags:
 - [[Egress Monitor]] - `conceptually_related_to` [EXTRACTED]
 - [[Op-Proxy (Credential Gateway)]] - `conceptually_related_to` [EXTRACTED]
 - [[OpenClaw Integration Guide (v0.9.0)]] - `conceptually_related_to` [AMBIGUOUS]
-- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `implements` [EXTRACTED]
 - [[gatewaysocrouter.py (SOC Shared Command Layer)]] - `implements` [EXTRACTED]
 - [[gatewaywebapi.py (Web control center)]] - `implements` [EXTRACTED]
+- [[ingest_apimain.py]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Management/Control-Plane_API_v130
+#graphify/document #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity

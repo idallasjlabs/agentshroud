@@ -12,6 +12,6 @@ tags:
 # In-place openclaw upgrade: runs npm install -g inside the bot container.      No
 
 ## Connections
-- [[upgrade_bot()_1]] - `rationale_for` [EXTRACTED]
+- [[upgrade_bot()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

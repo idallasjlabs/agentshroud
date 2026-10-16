@@ -12,8 +12,8 @@ tags:
 # FakeClock
 
 ## Connections
-- [[dot-__call__()_4]] - `method` [EXTRACTED]
-- [[dot-__init__()_70]] - `method` [EXTRACTED]
+- [[dot-__call__()_3]] - `method` [EXTRACTED]
+- [[dot-__init__()_77]] - `method` [EXTRACTED]
 - [[dot-advance()]] - `method` [EXTRACTED]
 - [[RateLimitConfig]] - `uses` [INFERRED]
 - [[RateLimitGuard]] - `uses` [INFERRED]

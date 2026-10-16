@@ -12,6 +12,6 @@ tags:
 # Install Script
 
 ## Connections
-- [[Installation]] - `contains` [EXTRACTED]
+- [[Installation_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Installation

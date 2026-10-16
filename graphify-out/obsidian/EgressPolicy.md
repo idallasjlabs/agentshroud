@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "EgressPolicy"
+community: "AlertDispatcher"
 location: "L47"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EgressPolicy
+  - community/AlertDispatcher
 ---
 
 # EgressPolicy
 
 ## Connections
-- [[dot-__init__()_194]] - `references` [EXTRACTED]
+- [[dot-__init__()_19]] - `references` [EXTRACTED]
 - [[dot-get_policy()_1]] - `references` [EXTRACTED]
 - [[dot-matches_domain()]] - `method` [EXTRACTED]
 - [[dot-matches_ip()]] - `method` [EXTRACTED]
 - [[dot-matches_port()]] - `method` [EXTRACTED]
 - [[dot-set_agent_policy()]] - `references` [EXTRACTED]
-- [[dot-setup_method()_15]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_27]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_29]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_26]] - `calls` [EXTRACTED]
 - [[dot-test_agent_specific_policy()]] - `calls` [EXTRACTED]
 - [[dot-test_allowed_cidr()]] - `calls` [EXTRACTED]
 - [[dot-test_connect_proxy_policy_allows_smtp_gmail_465()]] - `calls` [EXTRACTED]
@@ -42,7 +42,7 @@ tags:
 - [[dot-test_port_not_allowed()]] - `calls` [EXTRACTED]
 - [[dot-test_private_ip_allowed_if_in_policy_allowlist()]] - `calls` [EXTRACTED]
 - [[Egress policy for an agent or global default.]] - `rationale_for` [EXTRACTED]
-- [[EgressFilter]] - `uses` [INFERRED]
+- [[EgressFilter_2]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[FakeAuditStore_1]] - `uses` [INFERRED]
 - [[PIISanitizer_1]] - `uses` [INFERRED]
@@ -112,4 +112,4 @@ tags:
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 - [[v0.9.0 cron-email fix SMTPIMAP ports 465587993 allowed for OpenClaw cron email]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EgressPolicy
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

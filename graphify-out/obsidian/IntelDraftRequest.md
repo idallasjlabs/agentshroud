@@ -16,8 +16,8 @@ tags:
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
-- [[IntelReportStore]] - `uses` [INFERRED]
-- [[api.py_2]] - `contains` [EXTRACTED]
+- [[IntelReportStore_1]] - `uses` [INFERRED]
+- [[api.py]] - `contains` [EXTRACTED]
 - [[submit_competitive_intel()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy

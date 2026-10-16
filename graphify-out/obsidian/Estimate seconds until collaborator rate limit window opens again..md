@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "._active_send_token"
+community: "TelegramAPIProxy"
 location: "L7038"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_active_send_token
+  - community/TelegramAPIProxy
 ---
 
 # Estimate seconds until collaborator rate limit window opens again.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_collaborator_rate_limit_retry_after_seconds()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_active_send_token
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

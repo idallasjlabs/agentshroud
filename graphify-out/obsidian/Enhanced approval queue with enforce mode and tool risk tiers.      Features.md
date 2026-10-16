@@ -12,6 +12,6 @@ tags:
 # Enhanced approval queue with enforce mode and tool risk tiers.      Features:
 
 ## Connections
-- [[EnhancedApprovalQueue]] - `rationale_for` [EXTRACTED]
+- [[EnhancedApprovalQueue_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

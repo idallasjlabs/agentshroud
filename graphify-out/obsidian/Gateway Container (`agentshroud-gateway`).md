@@ -1,17 +1,20 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "document"
-community: "main.py.md"
-location: "L103"
+community: "4. Environment Variables"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpymd
+  - community/4_Environment_Variables
 ---
 
 # Gateway Container (`agentshroud-gateway`)
 
 ## Connections
-- [[Container Architecture]] - `contains` [EXTRACTED]
+- [[4. Environment Variables]] - `contains` [EXTRACTED]
+- [[Derived (set at runtime by `config.py`)]] - `contains` [EXTRACTED]
+- [[Optional  Runtime]] - `contains` [EXTRACTED]
+- [[Required]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpymd
+#graphify/document #graphify/EXTRACTED #community/4_Environment_Variables

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "._update_score"
+community: "TrustConfig"
 location: "L177"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_update_score
+  - community/TrustConfig
 ---
 
 # Get current trust level and score for an agent.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_trust()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_update_score
+#graphify/rationale #graphify/EXTRACTED #community/TrustConfig

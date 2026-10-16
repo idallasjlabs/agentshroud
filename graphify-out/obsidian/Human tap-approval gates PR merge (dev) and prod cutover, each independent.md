@@ -1,20 +1,19 @@
 ---
 source_file: "prompts/sunday-upgrade.md"
 type: "rationale"
-community: "colima-health-check.sh"
+community: "Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)"
 location: "296"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
 ---
 
 # Human tap-approval gates: PR merge (dev) and prod cutover, each independent
 
 ## Connections
-- [[Commit list 2026-10-10 through 2026-10-16 on main]] - `references` [EXTRACTED]
 - [[Dev-prod handoff contract via UsersSharedagentshroud-sundaydev-result-YYYY-MM-DD.json]] - `conceptually_related_to` [EXTRACTED]
 - [[check-version-pins-parity.sh]] - `references` [EXTRACTED]
 - [[sunday-upgrade-approve.sh]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/rationale #graphify/EXTRACTED #community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds

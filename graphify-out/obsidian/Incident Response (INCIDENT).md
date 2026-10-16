@@ -12,7 +12,7 @@ tags:
 # Incident Response (INCIDENT)
 
 ## Connections
-- [[Purpose_27]] - `contains` [EXTRACTED]
+- [[Purpose_32]] - `contains` [EXTRACTED]
 - [[Related Skills_20]] - `contains` [EXTRACTED]
 - [[Usage_23]] - `contains` [EXTRACTED]
 - [[hermesskillsi-productionREADME]] - `contains` [EXTRACTED]

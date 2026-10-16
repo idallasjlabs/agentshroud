@@ -12,6 +12,6 @@ tags:
 # Get version change history.
 
 ## Connections
-- [[get_version_history()]] - `rationale_for` [EXTRACTED]
+- [[get_version_history()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/upgrade

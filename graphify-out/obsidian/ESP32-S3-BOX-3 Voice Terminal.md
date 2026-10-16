@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "concept"
-community: "ESP32-S3-BOX-3 Voice Terminal"
+community: "Hermes Cron Jobs Reference & Recreation Guide"
 location: "## [1.2.0]"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ESP32-S3-BOX-3_Voice_Terminal
+  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
 ---
 
 # ESP32-S3-BOX-3 Voice Terminal
@@ -20,4 +20,4 @@ tags:
 - [[OTA Wireless Firmware Updates]] - `references` [EXTRACTED]
 - [[Voice Gateway]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal
+#graphify/concept #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide

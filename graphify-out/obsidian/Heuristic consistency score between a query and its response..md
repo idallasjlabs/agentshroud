@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "Enum"
+community: "MultiTurnTracker"
 location: "L496"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enum
+  - community/MultiTurnTracker
 ---
 
 # Heuristic consistency score between a query and its response.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ConsistencyScore]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enum
+#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker

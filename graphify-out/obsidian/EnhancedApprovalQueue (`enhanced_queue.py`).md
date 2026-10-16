@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
+community: "Layer-by-Layer Breakdown"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue_enhanced_queuepy
+  - community/Layer-by-Layer_Breakdown
 ---
 
 # EnhancedApprovalQueue (`enhanced_queue.py`)
@@ -15,12 +15,12 @@ tags:
 - [[Environment Variables Used]] - `contains` [EXTRACTED]
 - [[Key Class `EnhancedApprovalQueue`]] - `contains` [EXTRACTED]
 - [[Persistence]] - `contains` [EXTRACTED]
-- [[Purpose_76]] - `contains` [EXTRACTED]
-- [[Related Notes_34]] - `contains` [EXTRACTED]
-- [[Responsibilities_2]] - `contains` [EXTRACTED]
+- [[Purpose_68]] - `contains` [EXTRACTED]
+- [[Related Notes_21]] - `contains` [EXTRACTED]
+- [[Responsibilities]] - `contains` [EXTRACTED]
 - [[Timeout Behavior]] - `contains` [EXTRACTED]
 - [[Tool Risk Tiers]] - `contains` [EXTRACTED]
 - [[WebSocket Notifications]] - `contains` [EXTRACTED]
 - [[approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy
+#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown

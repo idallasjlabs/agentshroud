@@ -12,7 +12,7 @@ tags:
 # GatewayEmailService
 
 ## Connections
-- [[dot-__init__()_154]] - `method` [EXTRACTED]
+- [[dot-__init__()_120]] - `method` [EXTRACTED]
 - [[dot-build_message()]] - `method` [EXTRACTED]
 - [[dot-send()_2]] - `method` [EXTRACTED]
 - [[dot-sender()]] - `method` [EXTRACTED]

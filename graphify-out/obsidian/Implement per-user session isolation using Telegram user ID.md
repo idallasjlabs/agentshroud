@@ -15,10 +15,10 @@ tags:
 - [[03-session-isolation]] - `contains` [EXTRACTED]
 - [[Constraints_2]] - `contains` [EXTRACTED]
 - [[Evidence_2]] - `contains` [EXTRACTED]
-- [[Problem_5]] - `contains` [EXTRACTED]
+- [[Problem_4]] - `contains` [EXTRACTED]
 - [[Remediation_3]] - `contains` [EXTRACTED]
-- [[Root Cause_4]] - `contains` [EXTRACTED]
+- [[Root Cause_3]] - `contains` [EXTRACTED]
 - [[Severity_5]] - `contains` [EXTRACTED]
-- [[Verification_9]] - `contains` [EXTRACTED]
+- [[Verification_7]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Implement_per-user_session_isolation_using_Telegram_user_ID

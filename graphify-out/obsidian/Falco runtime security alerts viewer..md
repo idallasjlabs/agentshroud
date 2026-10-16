@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "management.py"
+community: "KeyRotationManager"
 location: "L414"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/managementpy
+  - community/KeyRotationManager
 ---
 
 # Falco runtime security alerts viewer.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[falco_dashboard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/managementpy
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager

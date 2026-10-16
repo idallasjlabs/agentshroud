@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "MCPToolCall"
+community: "MCPPermissionManager"
 location: "L75"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPToolCall
+  - community/MCPPermissionManager
 ---
 
 # FindingType
 
 ## Connections
-- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[Enum_1]] - `inherits` [EXTRACTED]
 - [[TestAllowDenyList]] - `uses` [INFERRED]
 - [[TestAuditQueries]] - `uses` [INFERRED]
 - [[TestAuditTrail_2]] - `uses` [INFERRED]
@@ -40,4 +40,4 @@ tags:
 - [[proxy__init__.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPToolCall
+#graphify/code #graphify/INFERRED #community/MCPPermissionManager

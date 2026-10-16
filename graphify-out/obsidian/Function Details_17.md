@@ -1,24 +1,20 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/podman_engine.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "document"
-community: "Function Details"
-location: "L29"
+community: "dns_filter.py"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/dns_filterpy
 ---
 
 # Function Details
 
 ## Connections
-- [[PodmanEngine.__init__(cli)]] - `contains` [EXTRACTED]
-- [[PodmanEngine._detect_compose()]] - `contains` [EXTRACTED]
-- [[PodmanEngine.compose_up(file, detach)  compose_down(file)]] - `contains` [EXTRACTED]
-- [[PodmanEngine.generate_systemd(name)]] - `contains` [EXTRACTED]
-- [[PodmanEngine.health_check()]] - `contains` [EXTRACTED]
-- [[PodmanEngine.ps(all)]] - `contains` [EXTRACTED]
-- [[PodmanEngine.run(image, name, , volumes, ...)]] - `contains` [EXTRACTED]
-- [[podman_engine.py_2]] - `contains` [EXTRACTED]
+- [[DNSFilter._detect_tunneling(domain)]] - `contains` [EXTRACTED]
+- [[DNSFilter.check(domain, agent_id)]] - `contains` [EXTRACTED]
+- [[EntropyCalculator.shannon_entropy(s)]] - `contains` [EXTRACTED]
+- [[dns_filter.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/dns_filterpy

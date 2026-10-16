@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_config_hot_reload.py"
+source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "load_config"
-location: "L63"
+community: "create_auth_dependency"
+location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/create_auth_dependency
 ---
 
 # GatewayConfig
 
 ## Connections
-- [[GatewayConfig_3]] - `uses` [INFERRED]
-- [[_load()]] - `references` [EXTRACTED]
+- [[GatewayConfig_4]] - `uses` [INFERRED]
+- [[create_auth_dependency()]] - `references` [EXTRACTED]
+- [[get_auth_dependency()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

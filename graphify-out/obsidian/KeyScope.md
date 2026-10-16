@@ -12,6 +12,6 @@ tags:
 # KeyScope
 
 ## Connections
-- [[key_vault.py]] - `contains` [EXTRACTED]
+- [[key_vault.py_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/KeyVault

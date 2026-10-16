@@ -12,12 +12,12 @@ tags:
 # GroupRoleResolver
 
 ## Connections
-- [[dot-__init__()_130]] - `method` [EXTRACTED]
+- [[dot-__init__()_60]] - `method` [EXTRACTED]
 - [[dot-get_all_roles()]] - `method` [EXTRACTED]
 - [[dot-get_role()]] - `method` [EXTRACTED]
 - [[dot-is_high_risk_tool()]] - `method` [EXTRACTED]
 - [[dot-is_member_or_higher()]] - `method` [EXTRACTED]
-- [[dot-is_owner()_4]] - `method` [EXTRACTED]
+- [[dot-is_owner()_1]] - `method` [EXTRACTED]
 - [[dot-remove_role()]] - `method` [EXTRACTED]
 - [[dot-set_role()]] - `method` [EXTRACTED]
 - [[dot-test_get_all_roles_empty_for_unknown_group()]] - `calls` [EXTRACTED]

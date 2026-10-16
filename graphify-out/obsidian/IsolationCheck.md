@@ -15,6 +15,6 @@ tags:
 - [[dot-verify_network_isolation()]] - `references` [EXTRACTED]
 - [[dot-verify_shared_nothing()]] - `references` [EXTRACTED]
 - [[dot-verify_volume_isolation()]] - `references` [EXTRACTED]
-- [[agent_isolation.py_2]] - `contains` [EXTRACTED]
+- [[agent_isolation.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AgentRegistry

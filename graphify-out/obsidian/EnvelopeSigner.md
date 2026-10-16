@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "EnvelopeSigner"
+community: "AuditChain"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnvelopeSigner
+  - community/AuditChain
 ---
 
 # EnvelopeSigner
 
 ## Connections
-- [[dot-__init__()_76]] - `method` [EXTRACTED]
+- [[dot-__init__()_47]] - `method` [EXTRACTED]
 - [[dot-_compute_signature()]] - `method` [EXTRACTED]
 - [[dot-sign()]] - `method` [EXTRACTED]
 - [[dot-test_different_keys_fail_verification()]] - `calls` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[dot-wrap_tool_result()]] - `method` [EXTRACTED]
 - [[C46 Signed Instruction Envelopes (HMAC-SHA256 tamper detection for system promptstool results)]] - `rationale_for` [EXTRACTED]
 - [[Signs and verifies InstructionEnvelopes.      Usage          signer = Envelope]] - `rationale_for` [EXTRACTED]
-- [[TestAuditChain_1]] - `uses` [INFERRED]
+- [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestContextGuardInPipeline]] - `uses` [INFERRED]
 - [[TestContextIntegrityInPipeline]] - `uses` [INFERRED]
@@ -43,4 +43,4 @@ tags:
 - [[test_instruction_envelope.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnvelopeSigner
+#graphify/code #graphify/EXTRACTED #community/AuditChain

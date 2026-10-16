@@ -12,6 +12,6 @@ tags:
 # Extract user ID from webhook payload based on source platform.
 
 ## Connections
-- [[dot-_extract_user_id()]] - `rationale_for` [EXTRACTED]
+- [[dot-_extract_user_id()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/WebhookReceiver

@@ -12,12 +12,12 @@ tags:
 # FakeCaller
 
 ## Connections
-- [[dot-__init__()_63]] - `method` [EXTRACTED]
-- [[dot-is_group_admin()]] - `method` [EXTRACTED]
+- [[dot-__init__()_93]] - `method` [EXTRACTED]
+- [[dot-is_group_admin()_1]] - `method` [EXTRACTED]
 - [[dot-is_owner()_2]] - `method` [EXTRACTED]
 - [[dot-require()_1]] - `method` [EXTRACTED]
 - [[ApprovalMode]] - `uses` [INFERRED]
-- [[Role_96]] - `uses` [INFERRED]
+- [[Role_91]] - `uses` [INFERRED]
 - [[Stands in for SCLCaller RBAC require() is a no-op, owner is switchable.]] - `rationale_for` [EXTRACTED]
 - [[holder()]] - `calls` [EXTRACTED]
 - [[test_add_group_member_paths()]] - `calls` [EXTRACTED]

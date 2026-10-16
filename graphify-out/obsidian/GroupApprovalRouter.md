@@ -12,7 +12,7 @@ tags:
 # GroupApprovalRouter
 
 ## Connections
-- [[dot-__init__()_195]] - `method` [EXTRACTED]
+- [[dot-__init__()_197]] - `method` [EXTRACTED]
 - [[dot-_build_group_reply_text()]] - `method` [EXTRACTED]
 - [[dot-_build_owner_dm_text()]] - `method` [EXTRACTED]
 - [[dot-_default_send()]] - `method` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[dot-test_is_group_context_false_for_default()]] - `calls` [EXTRACTED]
 - [[dot-test_is_group_context_true_for_group_agent_id()]] - `calls` [EXTRACTED]
 - [[dot-test_router_works_without_send_fn()]] - `calls` [EXTRACTED]
-- [[ApprovalRequest_5]] - `uses` [INFERRED]
+- [[ApprovalRequest_4]] - `uses` [INFERRED]
 - [[Routes approval notifications to owner DM and (optionally) group thread.      Ar]] - `rationale_for` [EXTRACTED]
 - [[TestDMApprovalOwnerOnly]] - `uses` [INFERRED]
 - [[TestGroupApprovalOwnerDM]] - `uses` [INFERRED]

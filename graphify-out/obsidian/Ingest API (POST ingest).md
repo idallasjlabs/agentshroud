@@ -11,6 +11,6 @@ tags:
 # Ingest API (POST /ingest)
 
 ## Connections
-- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `conceptually_related_to` [INFERRED]
+- [[ingest_apimain.py]] - `conceptually_related_to` [INFERRED]
 
 #graphify/image #graphify/INFERRED #community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy

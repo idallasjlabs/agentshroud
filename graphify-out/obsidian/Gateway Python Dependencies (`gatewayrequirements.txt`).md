@@ -14,12 +14,12 @@ tags:
 ## Connections
 - [[All Dependencies_1]] - `contains` [EXTRACTED]
 - [[Authentication_2]] - `contains` [EXTRACTED]
-- [[Configuration_17]] - `contains` [EXTRACTED]
+- [[Configuration_15]] - `contains` [EXTRACTED]
 - [[Core Framework]] - `contains` [EXTRACTED]
 - [[Data Storage]] - `contains` [EXTRACTED]
 - [[Networking]] - `contains` [EXTRACTED]
 - [[PII Detection_1]] - `contains` [EXTRACTED]
-- [[Testing]] - `contains` [EXTRACTED]
+- [[Testing_1]] - `contains` [EXTRACTED]
 - [[Utilities]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Gateway_Python_Dependencies_gateway/requirementstxt

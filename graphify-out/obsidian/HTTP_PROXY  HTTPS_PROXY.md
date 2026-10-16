@@ -1,23 +1,23 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
 type: "document"
-community: "agentshroud.yaml.md"
+community: "egress_filter.py"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroudyamlmd
+  - community/egress_filterpy
 ---
 
 # HTTP_PROXY / HTTPS_PROXY
 
 ## Connections
-- [[Current Status_11]] - `contains` [EXTRACTED]
-- [[Description_11]] - `contains` [EXTRACTED]
+- [[Current Status_8]] - `contains` [EXTRACTED]
+- [[Description_7]] - `contains` [EXTRACTED]
 - [[Gateway Proxy Port]] - `contains` [EXTRACTED]
 - [[HTTP_PROXY]] - `contains` [EXTRACTED]
-- [[Related Notes_65]] - `contains` [EXTRACTED]
-- [[Value_5]] - `contains` [EXTRACTED]
+- [[Related Notes_52]] - `contains` [EXTRACTED]
+- [[Value_3]] - `contains` [EXTRACTED]
 - [[When Enabled]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroudyamlmd
+#graphify/document #graphify/EXTRACTED #community/egress_filterpy

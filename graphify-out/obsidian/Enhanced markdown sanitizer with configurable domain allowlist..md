@@ -12,6 +12,6 @@ tags:
 # Enhanced markdown sanitizer with configurable domain allowlist.
 
 ## Connections
-- [[ToolResultSanitizer]] - `rationale_for` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

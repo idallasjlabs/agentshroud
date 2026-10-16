@@ -12,6 +12,6 @@ tags:
 # Get statistics about approval hardening.
 
 ## Connections
-- [[dot-get_stats()_15]] - `rationale_for` [EXTRACTED]
+- [[dot-get_stats()_16]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ApprovalHardening

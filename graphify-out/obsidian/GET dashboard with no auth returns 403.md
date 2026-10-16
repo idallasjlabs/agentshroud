@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "test_security_fixes.py"
+community: "ApprovalQueueConfig"
 location: "L196"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_security_fixespy
+  - community/ApprovalQueueConfig
 ---
 
 # GET /dashboard with no auth returns 403
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_dashboard_no_auth_returns_403()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_security_fixespy
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

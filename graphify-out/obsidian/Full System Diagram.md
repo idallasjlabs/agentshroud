@@ -12,6 +12,6 @@ tags:
 # Full System Diagram
 
 ## Connections
-- [[Architecture Overview_1]] - `contains` [EXTRACTED]
+- [[Architecture Overview_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mainpymd

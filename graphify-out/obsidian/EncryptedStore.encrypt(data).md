@@ -12,6 +12,6 @@ tags:
 # EncryptedStore.encrypt(data)
 
 ## Connections
-- [[Function Details_6]] - `contains` [EXTRACTED]
+- [[Function Details_5]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/encrypted_storepy

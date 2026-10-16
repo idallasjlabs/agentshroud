@@ -12,6 +12,6 @@ tags:
 
 ## Connections
 - [[AgentShroud Security Perimeter]] - `rationale_for` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `conceptually_related_to` [INFERRED]
+- [[EnhancedApprovalQueue_2]] - `conceptually_related_to` [INFERRED]
 
 #graphify/rationale #graphify/EXTRACTED #community/mainpymd

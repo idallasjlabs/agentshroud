@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "test_egress_filter.py"
+community: "EgressFilterConfig"
 location: "L277"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_egress_filterpy
+  - community/EgressFilterConfig
 ---
 
 # FakeAuditStore
@@ -19,9 +19,9 @@ tags:
 - [[ApprovalResult]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
 - [[EgressAttempt]] - `uses` [INFERRED]
-- [[EgressFilter_2]] - `uses` [INFERRED]
+- [[EgressFilter_1]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_egress_filterpy
+#graphify/code #graphify/INFERRED #community/EgressFilterConfig

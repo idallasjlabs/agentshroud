@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
 - [[Core Configuration]] - `contains` [EXTRACTED]
-- [[Documentation_3]] - `contains` [EXTRACTED]
+- [[Documentation_2]] - `contains` [EXTRACTED]
 - [[Secrets]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

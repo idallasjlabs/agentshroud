@@ -12,6 +12,6 @@ tags:
 # Hash Chain Structure
 
 ## Connections
-- [[Decision_5]] - `contains` [EXTRACTED]
+- [[Decision_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity

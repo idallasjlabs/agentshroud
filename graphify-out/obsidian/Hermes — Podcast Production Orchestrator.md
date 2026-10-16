@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-agentsskillsi-hermesREADME]] - `contains` [EXTRACTED]
-- [[Purpose_14]] - `contains` [EXTRACTED]
+- [[Purpose_19]] - `contains` [EXTRACTED]
 - [[Related Skills_7]] - `contains` [EXTRACTED]
 - [[Usage_10]] - `contains` [EXTRACTED]
 

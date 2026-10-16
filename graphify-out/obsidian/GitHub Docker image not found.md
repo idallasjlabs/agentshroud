@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[10. Troubleshooting]] - `contains` [EXTRACTED]
-- [[Troubleshooting_13]] - `contains` [EXTRACTED]
+- [[Troubleshooting_12]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/10_Troubleshooting

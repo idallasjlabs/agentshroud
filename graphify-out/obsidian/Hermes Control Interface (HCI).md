@@ -12,6 +12,6 @@ tags:
 
 ## Connections
 - [[AgentShroud Operations Cheat Sheet]] - `references` [EXTRACTED]
-- [[Hermes Bot_1]] - `conceptually_related_to` [EXTRACTED]
+- [[Hermes Bot]] - `conceptually_related_to` [EXTRACTED]
 
 #graphify/concept #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet

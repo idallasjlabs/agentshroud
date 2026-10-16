@@ -1,19 +1,20 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
 type: "document"
-community: "event_bus.py"
-location: "L36"
+community: "config.py"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/event_buspy
+  - community/configpy
 ---
 
 # Function Details
 
 ## Connections
-- [[EventBus.emit(event)]] - `contains` [EXTRACTED]
-- [[event_bus.py_2]] - `contains` [EXTRACTED]
-- [[make_event(event_type, summary, details, severity)]] - `contains` [EXTRACTED]
+- [[RuntimeConfig.effective_rootless (property)]] - `contains` [EXTRACTED]
+- [[RuntimeConfig.from_dict(data)]] - `contains` [EXTRACTED]
+- [[RuntimeConfig.from_env()]] - `contains` [EXTRACTED]
+- [[config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/event_buspy
+#graphify/document #graphify/EXTRACTED #community/configpy

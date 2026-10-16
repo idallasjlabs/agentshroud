@@ -12,7 +12,7 @@ tags:
 # Git Workflow Guardian (GIT-GUARD)
 
 ## Connections
-- [[Purpose_23]] - `contains` [EXTRACTED]
+- [[Purpose_28]] - `contains` [EXTRACTED]
 - [[Related Skills_16]] - `contains` [EXTRACTED]
 - [[Usage_19]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "ingest_api/models.py"
+community: "DataLedger"
 location: "L348"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/DataLedger
 ---
 
 # Get aggregate statistics          Returns:             Dictionary with total ent
 
 ## Connections
-- [[dot-get_stats()_6]] - `rationale_for` [EXTRACTED]
+- [[dot-get_stats()_14]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/rationale #graphify/EXTRACTED #community/DataLedger

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "test_forward_stream.py"
+community: "AgentTarget"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/AgentTarget
 ---
 
 # ForwardError
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[dot-forward_to_agent()]] - `calls` [EXTRACTED]
 - [[dot-forward_to_agent_stream()]] - `calls` [EXTRACTED]
-- [[AgentTarget]] - `uses` [INFERRED]
+- [[AgentTarget_1]] - `uses` [INFERRED]
 - [[Exception_2]] - `inherits` [EXTRACTED]
-- [[ForwardRequest_3]] - `uses` [INFERRED]
+- [[ForwardRequest_1]] - `uses` [INFERRED]
 - [[Raised when forwarding to agent fails]] - `rationale_for` [EXTRACTED]
 - [[RouterConfig_1]] - `uses` [INFERRED]
 - [[_BlockingPipeline]] - `uses` [INFERRED]
@@ -29,4 +29,4 @@ tags:
 - [[test_router_openai_translation.py]] - `imports` [EXTRACTED]
 - [[test_router_streaming.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

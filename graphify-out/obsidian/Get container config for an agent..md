@@ -12,6 +12,6 @@ tags:
 # Get container config for an agent.
 
 ## Connections
-- [[dot-get()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-get()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AgentRegistry

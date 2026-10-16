@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "ThreatAssessment"
+community: "ConsentFramework"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ThreatAssessment
+  - community/ConsentFramework
 ---
 
 # Exception
@@ -29,4 +29,4 @@ tags:
 - [[global_exception_handler()]] - `references` [EXTRACTED]
 - [[test_broadcast_with_failed_client()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ThreatAssessment
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework

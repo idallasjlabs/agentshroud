@@ -12,6 +12,6 @@ tags:
 # Import the current OpenClaw + Hermes registry lists (in file order).
 
 ## Connections
-- [[load_registry()_1]] - `rationale_for` [EXTRACTED]
+- [[load_registry()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

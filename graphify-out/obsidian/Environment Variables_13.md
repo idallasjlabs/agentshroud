@@ -12,6 +12,6 @@ tags:
 # Environment Variables
 
 ## Connections
-- [[agent_isolation.py_1]] - `contains` [EXTRACTED]
+- [[agent_isolation.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agent_isolationpy

@@ -12,6 +12,6 @@ tags:
 # Integration tests with other security components.
 
 ## Connections
-- [[TestIntegration]] - `rationale_for` [EXTRACTED]
+- [[TestIntegration_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AgentShroud Blue Team Security Auditor]] - `contains` [EXTRACTED]
-- [[Architecture_13]] - `contains` [EXTRACTED]
+- [[Architecture_11]] - `contains` [EXTRACTED]
 - [[v0.9.0 — Sentinel (Blue Team Remediation + Data Isolation + SOC)]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

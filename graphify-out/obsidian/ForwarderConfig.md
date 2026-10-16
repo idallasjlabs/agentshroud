@@ -12,11 +12,11 @@ tags:
 # ForwarderConfig
 
 ## Connections
-- [[dot-__init__()_167]] - `references` [EXTRACTED]
+- [[dot-__init__()_97]] - `references` [EXTRACTED]
 - [[Configuration for the HTTP forwarder.]] - `rationale_for` [EXTRACTED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
 - [[_StubForwarder_1]] - `uses` [INFERRED]
-- [[forwarder()]] - `calls` [EXTRACTED]
+- [[forwarder()_1]] - `calls` [EXTRACTED]
 - [[forwarder.py]] - `contains` [EXTRACTED]
 - [[healthy_forwarder()]] - `calls` [EXTRACTED]
 - [[test_canary.py]] - `imports` [EXTRACTED]

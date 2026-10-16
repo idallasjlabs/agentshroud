@@ -15,7 +15,7 @@ tags:
 - [[AgentShroud — Vault Home]] - `contains` [EXTRACTED]
 - [[Architecture Overview]] - `references` [EXTRACTED]
 - [[Data Flow]] - `references` [EXTRACTED]
-- [[Quick Reference]] - `references` [EXTRACTED]
+- [[Quick Reference_1]] - `references` [EXTRACTED]
 - [[Shutdown & Recovery]] - `references` [EXTRACTED]
 - [[Startup Sequence]] - `references` [EXTRACTED]
 - [[System Overview]] - `references` [EXTRACTED]

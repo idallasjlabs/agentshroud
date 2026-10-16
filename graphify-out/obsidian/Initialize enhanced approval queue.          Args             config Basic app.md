@@ -12,6 +12,6 @@ tags:
 # Initialize enhanced approval queue.          Args:             config: Basic app
 
 ## Connections
-- [[dot-__init__()_147]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_195]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

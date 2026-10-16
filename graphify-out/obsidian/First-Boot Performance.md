@@ -12,6 +12,6 @@ tags:
 # First-Boot Performance
 
 ## Connections
-- [[spaCy_1]] - `contains` [EXTRACTED]
+- [[spaCy]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Error_Indexmd

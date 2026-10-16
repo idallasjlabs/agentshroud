@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "GroupConfig"
+community: "telegram_proxy.py"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupConfig
+  - community/telegram_proxypy
 ---
 
 # GroupConfig
@@ -21,7 +21,7 @@ tags:
 - [[dot-validate_mode()]] - `method` [EXTRACTED]
 - [[A team group with members, admin, projects, and collab mode.]] - `rationale_for` [EXTRACTED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
-- [[TeamsConfig_1]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[TestAdminChecks]] - `uses` [INFERRED]
 - [[TestBuildProjectContextInjection]] - `uses` [INFERRED]
 - [[TestCollabMode]] - `uses` [INFERRED]
@@ -45,4 +45,4 @@ tags:
 - [[test_collaborator_responses.py]] - `imports` [EXTRACTED]
 - [[test_group_config.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupConfig
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

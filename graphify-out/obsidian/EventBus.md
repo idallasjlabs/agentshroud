@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "make_event"
+community: "ForwardRequest"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/ForwardRequest
 ---
 
 # EventBus
 
 ## Connections
-- [[dot-__init__()_71]] - `method` [EXTRACTED]
+- [[dot-__init__()_135]] - `method` [EXTRACTED]
 - [[dot-emit()]] - `method` [EXTRACTED]
 - [[dot-get_recent()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_9]] - `method` [EXTRACTED]
+- [[dot-get_stats()_8]] - `method` [EXTRACTED]
 - [[dot-subscribe()]] - `method` [EXTRACTED]
 - [[dot-unsubscribe()]] - `method` [EXTRACTED]
 - [[3+ auth failures within 5 minutes escalates event severity to critical]] - `rationale_for` [EXTRACTED]
 - [[AppState]] - `uses` [INFERRED]
-- [[FastAPI_1]] - `uses` [INFERRED]
+- [[FastAPI]] - `uses` [INFERRED]
 - [[GatewayEvent]] - `shares_data_with` [EXTRACTED]
 - [[LogRecord_2]] - `uses` [INFERRED]
 - [[Simple in-process event bus with async support]] - `rationale_for` [EXTRACTED]
@@ -38,4 +38,4 @@ tags:
 - [[test_event_bus.py]] - `imports` [EXTRACTED]
 - [[test_subscribed_relay_receives_bus_emissions()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

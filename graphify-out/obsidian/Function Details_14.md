@@ -1,22 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
 type: "document"
-community: "sanitizer.py"
-location: "L38"
+community: "version_routes.py"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sanitizerpy
+  - community/version_routespy
 ---
 
 # Function Details
 
 ## Connections
-- [[_sanitize_presidio(content)]] - `contains` [EXTRACTED]
-- [[_sanitize_regex(content)]] - `contains` [EXTRACTED]
-- [[block_credentials(content, source)]] - `contains` [EXTRACTED]
-- [[filter_xml_blocks(content)]] - `contains` [EXTRACTED]
-- [[sanitize(content)]] - `contains` [EXTRACTED]
-- [[sanitizer.py_1]] - `contains` [EXTRACTED]
+- [[downgrade_version(request)]] - `contains` [EXTRACTED]
+- [[get_version_history()]] - `contains` [EXTRACTED]
+- [[rollback_version(request)]] - `contains` [EXTRACTED]
+- [[upgrade_version(request)]] - `contains` [EXTRACTED]
+- [[version_routes.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sanitizerpy
+#graphify/document #graphify/EXTRACTED #community/version_routespy

@@ -12,7 +12,7 @@ tags:
 # GatewayClient<T>
 
 ## Connections
-- [[dot-get()_2]] - `method` [EXTRACTED]
+- [[dot-get()_3]] - `method` [EXTRACTED]
 - [[dot-new()]] - `method` [EXTRACTED]
 - [[dot-post()_1]] - `method` [EXTRACTED]
 

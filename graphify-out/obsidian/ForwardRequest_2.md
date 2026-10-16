@@ -1,17 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
-type: "document"
-community: "models.py"
-location: "L43"
+source_file: "gateway/ingest_api/routes/forward.py"
+type: "code"
+community: "forward.py"
+location: "L332"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/modelspy
+  - community/forwardpy
 ---
 
 # ForwardRequest
 
 ## Connections
-- [[Model Details]] - `contains` [EXTRACTED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[_process_inbound()]] - `references` [EXTRACTED]
+- [[_resolve_user_trust_level()]] - `references` [EXTRACTED]
+- [[forward_content()]] - `references` [EXTRACTED]
+- [[forward_content_stream()]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/modelspy
+#graphify/code #graphify/EXTRACTED #community/forwardpy

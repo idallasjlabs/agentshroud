@@ -17,6 +17,6 @@ tags:
 - [[TestDangerousXMLIsBlockedNotFlagged]] - `uses` [INFERRED]
 - [[str_3]] - `inherits` [EXTRACTED]
 - [[test_xml_dtd_control.py]] - `imports` [EXTRACTED]
-- [[web_content_scanner.py]] - `contains` [EXTRACTED]
+- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebContentScanner

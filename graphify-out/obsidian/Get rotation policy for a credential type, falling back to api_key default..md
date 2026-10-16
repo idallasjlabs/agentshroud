@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "rationale"
-community: "KeyRotationConfig"
+community: "KeyRotationManager"
 location: "L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyRotationConfig
+  - community/KeyRotationManager
 ---
 
 # Get rotation policy for a credential type, falling back to api_key default.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_policy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyRotationConfig
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager

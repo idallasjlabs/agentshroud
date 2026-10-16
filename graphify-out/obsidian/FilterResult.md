@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "OutboundInfoFilter"
+community: "AuditChain"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/OutboundInfoFilter
+  - community/AuditChain
 ---
 
 # FilterResult
 
 ## Connections
 - [[dot-filter_response()]] - `references` [EXTRACTED]
-- [[Any_10]] - `uses` [INFERRED]
+- [[Any_51]] - `uses` [INFERRED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[AuditChainEntry]] - `uses` [INFERRED]
 - [[PipelineAction]] - `uses` [INFERRED]
@@ -23,4 +23,4 @@ tags:
 - [[outbound_filter.py]] - `contains` [EXTRACTED]
 - [[pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/OutboundInfoFilter
+#graphify/code #graphify/INFERRED #community/AuditChain

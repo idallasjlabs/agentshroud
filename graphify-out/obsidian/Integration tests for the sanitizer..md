@@ -12,6 +12,6 @@ tags:
 # Integration tests for the sanitizer.
 
 ## Connections
-- [[TestIntegration_1]] - `rationale_for` [EXTRACTED]
+- [[TestIntegration]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

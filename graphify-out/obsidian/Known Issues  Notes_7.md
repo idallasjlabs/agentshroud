@@ -12,6 +12,6 @@ tags:
 # Known Issues / Notes
 
 ## Connections
-- [[auth.py]] - `contains` [EXTRACTED]
+- [[auth.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/authpy

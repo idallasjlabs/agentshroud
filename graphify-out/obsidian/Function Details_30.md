@@ -16,6 +16,6 @@ tags:
 - [[EgressFilterConfig.from_environment()]] - `contains` [EXTRACTED]
 - [[EgressFilterConfig.get_effective_allowlist(agent_id)]] - `contains` [EXTRACTED]
 - [[EgressFilterConfig.is_denylisted(domain)]] - `contains` [EXTRACTED]
-- [[egress_config.py_1]] - `contains` [EXTRACTED]
+- [[egress_config.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/egress_configpy

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_file_sandbox.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L79"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # Even blocked paths are allowed in monitor mode (just flagged).
 
 ## Connections
-- [[dot-test_monitor_mode_allows_everything()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-test_monitor_mode_allows_everything()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

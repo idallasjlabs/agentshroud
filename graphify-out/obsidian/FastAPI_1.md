@@ -1,27 +1,22 @@
 ---
-source_file: "gateway/ingest_api/lifespan.py"
+source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "lifespan.py"
-location: "L107"
+community: "test_observatory_mode.py"
+location: "L60"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/lifespanpy
+  - community/test_observatory_modepy
 ---
 
 # FastAPI
 
 ## Connections
-- [[AlertTelegramRelay]] - `uses` [INFERRED]
-- [[DataLedger]] - `uses` [INFERRED]
-- [[EventBus]] - `uses` [INFERRED]
-- [[GroupRegistry]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MultiAgentRouter]] - `uses` [INFERRED]
-- [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
-- [[lifespan()]] - `references` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[KillSwitchConfig_1]] - `uses` [INFERRED]
+- [[KillSwitchMonitor]] - `uses` [INFERRED]
+- [[ModeRequest]] - `uses` [INFERRED]
+- [[SecurityPipeline_2]] - `uses` [INFERRED]
+- [[_make_app()]] - `references` [EXTRACTED]
+- [[test_observatory_mode.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/lifespanpy
+#graphify/code #graphify/INFERRED #community/test_observatory_modepy

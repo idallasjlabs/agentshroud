@@ -12,6 +12,6 @@ tags:
 # EventBus.emit(event)
 
 ## Connections
-- [[Function Details_47]] - `contains` [EXTRACTED]
+- [[Function Details_43]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/event_buspy

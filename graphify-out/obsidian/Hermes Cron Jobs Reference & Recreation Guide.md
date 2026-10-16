@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Cron Daily Competitive Landscape Update]] - `references` [EXTRACTED]
-- [[Hermes Bot]] - `references` [EXTRACTED]
+- [[Hermes Bot_1]] - `references` [EXTRACTED]
 - [[Hermes Live Cron Store (optdatacronjobs.json)]] - `references` [EXTRACTED]
 - [[How to recreate a job]] - `contains` [EXTRACTED]
 - [[Job details]] - `contains` [EXTRACTED]

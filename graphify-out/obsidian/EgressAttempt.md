@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[dot-_check_impl()]] - `references` [EXTRACTED]
 - [[dot-_record()_1]] - `references` [EXTRACTED]
-- [[dot-check()_3]] - `references` [EXTRACTED]
+- [[dot-check()_4]] - `references` [EXTRACTED]
 - [[dot-check_async()]] - `references` [EXTRACTED]
 - [[dot-get_log()]] - `references` [EXTRACTED]
-- [[EgressFilter]] - `uses` [INFERRED]
+- [[EgressFilter_2]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[FakeAuditStore_1]] - `uses` [INFERRED]
 - [[TestAuditStorePersistence]] - `uses` [INFERRED]

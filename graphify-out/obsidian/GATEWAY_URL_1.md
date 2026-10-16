@@ -12,10 +12,10 @@ tags:
 # GATEWAY_URL
 
 ## Connections
-- [[Configuration_16]] - `contains` [EXTRACTED]
-- [[Description_7]] - `contains` [EXTRACTED]
+- [[Configuration_14]] - `contains` [EXTRACTED]
+- [[Description_4]] - `contains` [EXTRACTED]
 - [[GATEWAY_URL]] - `contains` [EXTRACTED]
-- [[Related Notes_46]] - `contains` [EXTRACTED]
+- [[Related Notes_42]] - `contains` [EXTRACTED]
 - [[Typical Value]] - `contains` [EXTRACTED]
 - [[Usage Contexts]] - `contains` [EXTRACTED]
 

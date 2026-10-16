@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "test_security_fixes.py"
+community: "ApprovalQueueConfig"
 location: "L362"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_security_fixespy
+  - community/ApprovalQueueConfig
 ---
 
 # GET /status should include security headers
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_status_has_security_headers()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_security_fixespy
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

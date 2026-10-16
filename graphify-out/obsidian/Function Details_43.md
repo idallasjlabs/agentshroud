@@ -1,19 +1,19 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
 type: "document"
-community: "mcp_config.py"
-location: "L32"
+community: "event_bus.py"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_configpy
+  - community/event_buspy
 ---
 
 # Function Details
 
 ## Connections
-- [[MCPProxyConfig.from_dict(data)]] - `contains` [EXTRACTED]
-- [[PermissionLevel comparison operators]] - `contains` [EXTRACTED]
-- [[mcp_config.py_2]] - `contains` [EXTRACTED]
+- [[EventBus.emit(event)]] - `contains` [EXTRACTED]
+- [[event_bus.py_2]] - `contains` [EXTRACTED]
+- [[make_event(event_type, summary, details, severity)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_configpy
+#graphify/document #graphify/EXTRACTED #community/event_buspy

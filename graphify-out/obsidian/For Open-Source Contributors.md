@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
-- [[Contributing]] - `contains` [EXTRACTED]
+- [[Contributing_1]] - `contains` [EXTRACTED]
 - [[Project Goals]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

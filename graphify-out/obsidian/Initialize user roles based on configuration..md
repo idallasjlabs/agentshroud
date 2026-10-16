@@ -12,6 +12,6 @@ tags:
 # Initialize user roles based on configuration.
 
 ## Connections
-- [[dot-__post_init__()]] - `rationale_for` [EXTRACTED]
+- [[dot-__post_init__()_3]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/rbac_configpy

@@ -1,25 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
 type: "document"
-community: "Function Details"
-location: "L37"
+community: "clamav_scanner.py"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/clamav_scannerpy
 ---
 
 # Function Details
 
 ## Connections
-- [[ResourceGuard.__init__(limits)]] - `contains` [EXTRACTED]
-- [[ResourceGuard.add_alert_callback(callback)]] - `contains` [EXTRACTED]
-- [[ResourceGuard.check_cpu_limit(agent_id)  check_memory_limit(agent_id)  check_disk_write_limit(agent_id)]] - `contains` [EXTRACTED]
-- [[ResourceGuard.check_resource(agent_id, resource_type, amount)]] - `contains` [EXTRACTED]
-- [[ResourceGuard.cleanup_temp_files(agent_id)]] - `contains` [EXTRACTED]
-- [[ResourceGuard.get_usage_stats(agent_id)]] - `contains` [EXTRACTED]
-- [[ResourceGuard.register_temp_file(agent_id, file_path)]] - `contains` [EXTRACTED]
-- [[ResourceGuard.start_request_tracking(agent_id)]] - `contains` [EXTRACTED]
-- [[resource_guard.py_2]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
+- [[generate_summary(report)]] - `contains` [EXTRACTED]
+- [[parse_clamscan_output(output, returncode)]] - `contains` [EXTRACTED]
+- [[run_clamscan(target, recursive, timeout, clamscan_bin, exclude_patterns)]] - `contains` [EXTRACTED]
+- [[save_report(report, log_dir)]] - `contains` [EXTRACTED]
+- [[update_virus_db(freshclam_bin, timeout)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/archive/FUTURE-FEATURES.md"
 type: "concept"
-community: "AgentShroud Falco Rules"
+community: "start-agentshroud.sh"
 location: "L244-L268"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/AgentShroud_Falco_Rules
+  - community/start-agentshroudsh
 ---
 
 # Intrusion Detection & Honeypot Files
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Rule Secret File Access]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/AgentShroud_Falco_Rules
+#graphify/concept #graphify/INFERRED #community/start-agentshroudsh

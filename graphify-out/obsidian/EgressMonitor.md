@@ -1,31 +1,31 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L85"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # EgressMonitor
 
 ## Connections
-- [[dot-__init__()_103]] - `calls` [EXTRACTED]
-- [[dot-__init__()_106]] - `method` [EXTRACTED]
+- [[dot-__init__()_16]] - `calls` [EXTRACTED]
+- [[dot-__init__()_53]] - `method` [EXTRACTED]
 - [[dot-check_anomalies()]] - `method` [EXTRACTED]
 - [[dot-daily_summary()]] - `method` [EXTRACTED]
 - [[dot-get_events()]] - `method` [EXTRACTED]
 - [[dot-record()]] - `method` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[Any_42]] - `uses` [INFERRED]
-- [[Exception_3]] - `uses` [INFERRED]
+- [[Action]] - `uses` [INFERRED]
+- [[Any]] - `uses` [INFERRED]
+- [[Exception]] - `uses` [INFERRED]
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[Slow-drip  coordinated multi-channel exfiltration anomaly detection]] - `rationale_for` [EXTRACTED]
 - [[TestAlertGeneration]] - `uses` [INFERRED]
 - [[TestAnomalyDetection]] - `uses` [INFERRED]
@@ -36,7 +36,7 @@ tags:
 - [[ToolTier]] - `uses` [INFERRED]
 - [[egress_monitor.py]] - `contains` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[monitor()]] - `calls` [EXTRACTED]
+- [[monitor()_1]] - `calls` [EXTRACTED]
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

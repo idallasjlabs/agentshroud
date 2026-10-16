@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_log_audit()]] - `calls` [EXTRACTED]
-- [[dot-get_audit_log()_6]] - `references` [EXTRACTED]
-- [[key_vault.py]] - `contains` [EXTRACTED]
+- [[dot-get_audit_log()_5]] - `references` [EXTRACTED]
+- [[key_vault.py_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/KeyVault

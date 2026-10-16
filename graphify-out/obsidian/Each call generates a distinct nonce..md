@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "rationale"
-community: "TestInstructionNonce"
+community: "SessionError"
 location: "L156"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestInstructionNonce
+  - community/SessionError
 ---
 
 # Each call generates a distinct nonce.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_nonce_generation_unique()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestInstructionNonce
+#graphify/rationale #graphify/EXTRACTED #community/SessionError

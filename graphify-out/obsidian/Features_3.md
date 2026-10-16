@@ -1,22 +1,22 @@
 ---
-source_file: "dashboard/README.md"
+source_file: "browser-extension/README.md"
 type: "document"
-community: "DOCKER-VPN-NETWORKING.md"
-location: "L20"
+community: "Browser Extension"
+location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DOCKER-VPN-NETWORKINGmd
+  - community/Browser_Extension
 ---
 
 # Features
 
 ## Connections
-- [[Action Feed]] - `contains` [EXTRACTED]
-- [[AgentShroud Dashboard]] - `contains` [EXTRACTED]
-- [[Data Ledger Viewer]] - `contains` [EXTRACTED]
-- [[Kill Switch_1]] - `contains` [EXTRACTED]
-- [[Memory Browser]] - `contains` [EXTRACTED]
-- [[Network Inspector]] - `contains` [EXTRACTED]
+- [[1. URL Forwarder]] - `contains` [EXTRACTED]
+- [[2. Page Clipper]] - `contains` [EXTRACTED]
+- [[3. Form Fill Request (Reverse Flow)]] - `contains` [EXTRACTED]
+- [[4. Tab Session Exporter]] - `contains` [EXTRACTED]
+- [[5. Reading List Queue]] - `contains` [EXTRACTED]
+- [[Browser Extension]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DOCKER-VPN-NETWORKINGmd
+#graphify/document #graphify/EXTRACTED #community/Browser_Extension

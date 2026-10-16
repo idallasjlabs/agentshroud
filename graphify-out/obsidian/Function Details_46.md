@@ -1,20 +1,19 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
 type: "document"
-community: "config.py"
-location: "L27"
+community: "compose_generator.py"
+location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/configpy
+  - community/compose_generatorpy
 ---
 
 # Function Details
 
 ## Connections
-- [[RuntimeConfig.effective_rootless (property)]] - `contains` [EXTRACTED]
-- [[RuntimeConfig.from_dict(data)]] - `contains` [EXTRACTED]
-- [[RuntimeConfig.from_env()]] - `contains` [EXTRACTED]
-- [[config.py_1]] - `contains` [EXTRACTED]
+- [[compose_generator.py_2]] - `contains` [EXTRACTED]
+- [[generate_apple_script(services)]] - `contains` [EXTRACTED]
+- [[generate_compose(services, runtime)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/configpy
+#graphify/document #graphify/EXTRACTED #community/compose_generatorpy

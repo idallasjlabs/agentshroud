@@ -1,19 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
 type: "document"
-community: "compose_generator.py"
-location: "L33"
+community: "web_proxy.py"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/compose_generatorpy
+  - community/web_proxypy
 ---
 
 # Function Details
 
 ## Connections
-- [[compose_generator.py_2]] - `contains` [EXTRACTED]
-- [[generate_apple_script(services)]] - `contains` [EXTRACTED]
-- [[generate_compose(services, runtime)]] - `contains` [EXTRACTED]
+- [[RateLimiter.check(domain, rpm_limit)]] - `contains` [EXTRACTED]
+- [[WebProxy._audit(event_type, url, metadata)]] - `contains` [EXTRACTED]
+- [[WebProxy.check_request(url, method, headers)]] - `contains` [EXTRACTED]
+- [[WebProxy.scan_response(url, body, content_type, status_code, response_size)]] - `contains` [EXTRACTED]
+- [[web_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/compose_generatorpy
+#graphify/document #graphify/EXTRACTED #community/web_proxypy

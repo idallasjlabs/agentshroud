@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "ADR-001: Transparent Proxy Decision"
+community: "AgentShroud Deployment Architecture"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ADR-001_Transparent_Proxy_Decision
+  - community/AgentShroud_Deployment_Architecture
 ---
 
 # Gateway (FastAPI)
@@ -16,4 +16,4 @@ tags:
 - [[Gateway Container (Python 3.11FastAPI 8080)]] - `conceptually_related_to` [EXTRACTED]
 - [[PII Sanitizer (Presidio + Regex)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_Decision
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture

@@ -1,21 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
 type: "document"
-community: "alert_dispatcher.py"
-location: "L43"
+community: "drift_detector.py"
+location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/alert_dispatcherpy
+  - community/drift_detectorpy
 ---
 
 # Function Details
 
 ## Connections
-- [[AlertDispatcher._send_notification(alert)]] - `contains` [EXTRACTED]
-- [[AlertDispatcher.cleanup_seen()]] - `contains` [EXTRACTED]
-- [[AlertDispatcher.dispatch(alert)]] - `contains` [EXTRACTED]
-- [[AlertDispatcher.get_digest(clear)]] - `contains` [EXTRACTED]
-- [[alert_dispatcher.py_1]] - `contains` [EXTRACTED]
+- [[ContainerSnapshot.config_hash()]] - `contains` [EXTRACTED]
+- [[DriftDetector.acknowledge_alert(alert_id)]] - `contains` [EXTRACTED]
+- [[DriftDetector.check_drift(current)]] - `contains` [EXTRACTED]
+- [[DriftDetector.get_alerts(container_id, unacknowledged_only, limit)]] - `contains` [EXTRACTED]
+- [[DriftDetector.set_baseline(snapshot)]] - `contains` [EXTRACTED]
+- [[drift_detector.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy
+#graphify/document #graphify/EXTRACTED #community/drift_detectorpy

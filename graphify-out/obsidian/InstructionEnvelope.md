@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "EnvelopeSigner"
+community: "AuditChain"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EnvelopeSigner
+  - community/AuditChain
 ---
 
 # InstructionEnvelope
@@ -18,7 +18,7 @@ tags:
 - [[dot-wrap_system_prompt()]] - `references` [EXTRACTED]
 - [[dot-wrap_tool_result()]] - `references` [EXTRACTED]
 - [[A signed instruction or tool result.]] - `rationale_for` [EXTRACTED]
-- [[TestAuditChain_1]] - `uses` [INFERRED]
+- [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestContextGuardInPipeline]] - `uses` [INFERRED]
 - [[TestContextIntegrityInPipeline]] - `uses` [INFERRED]
@@ -35,4 +35,4 @@ tags:
 - [[test_instruction_envelope.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EnvelopeSigner
+#graphify/code #graphify/INFERRED #community/AuditChain

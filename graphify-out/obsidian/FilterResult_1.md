@@ -12,7 +12,7 @@ tags:
 # FilterResult
 
 ## Connections
-- [[dot-filter_response()_2]] - `references` [EXTRACTED]
+- [[dot-filter_response()_1]] - `references` [EXTRACTED]
 - [[dot-scan_command_injection()]] - `references` [EXTRACTED]
 - [[Result from XML leak filtering.]] - `rationale_for` [EXTRACTED]
 - [[TestCommandInjectionScan]] - `uses` [INFERRED]

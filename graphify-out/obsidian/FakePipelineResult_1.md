@@ -12,10 +12,10 @@ tags:
 # FakePipelineResult
 
 ## Connections
-- [[dot-process_inbound()_9]] - `references` [EXTRACTED]
+- [[dot-process_inbound()_10]] - `references` [EXTRACTED]
 - [[LockdownLevel]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/ProgressiveLockdown

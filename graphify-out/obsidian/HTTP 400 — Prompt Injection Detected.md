@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
 type: "document"
-community: "Prompt Injection Blocks"
+community: "Error Index.md"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prompt_Injection_Blocks
+  - community/Error_Indexmd
 ---
 
 # HTTP 400 — Prompt Injection Detected
 
 ## Connections
-- [[Prompt Injection Blocks]] - `contains` [EXTRACTED]
+- [[Prompt Injection Blocks_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prompt_Injection_Blocks
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd
