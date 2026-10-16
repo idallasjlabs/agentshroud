@@ -1,18 +1,34 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/security/memory_config.py"
 type: "code"
 community: "MiddlewareManager"
-location: "L75"
+location: "L48"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
+  - graphify/INFERRED
   - community/MiddlewareManager
 ---
 
 # MemoryLifecycleConfig
 
 ## Connections
-- [[dot-__init__()_21]] - `references` [EXTRACTED]
+- [[dot-setup_method()_13]] - `calls` [EXTRACTED]
+- [[Any_53]] - `uses` [INFERRED]
+- [[Configuration for memory lifecycle management.]] - `rationale_for` [EXTRACTED]
+- [[ContentThreat]] - `uses` [INFERRED]
+- [[ContentThreatType]] - `uses` [INFERRED]
 - [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
+- [[MemoryLifecycleManager]] - `uses` [INFERRED]
+- [[Path_62]] - `uses` [INFERRED]
+- [[RetentionAction]] - `uses` [INFERRED]
+- [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
+- [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]
+- [[TestMemoryLifecycleManager]] - `uses` [INFERRED]
+- [[TestMemorySecurityIntegration]] - `uses` [INFERRED]
+- [[lifespan()]] - `calls` [EXTRACTED]
+- [[lifespan.py]] - `imports` [EXTRACTED]
+- [[memory_config.py]] - `contains` [EXTRACTED]
+- [[memory_lifecycle.py]] - `imports` [EXTRACTED]
+- [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/INFERRED #community/MiddlewareManager

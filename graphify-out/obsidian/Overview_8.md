@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "SecureBrowser Skill"
+community: "Layer-by-Layer Breakdown"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser_Skill
+  - community/Layer-by-Layer_Breakdown
 ---
 
 # Overview
 
 ## Connections
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[Data Flow_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill
+#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown

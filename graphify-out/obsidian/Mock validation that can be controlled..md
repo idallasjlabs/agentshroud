@@ -12,6 +12,6 @@ tags:
 # Mock validation that can be controlled.
 
 ## Connections
-- [[dot-validate()]] - `rationale_for` [EXTRACTED]
+- [[dot-validate()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager

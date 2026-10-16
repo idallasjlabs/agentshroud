@@ -12,7 +12,7 @@ tags:
 # MFAResult
 
 ## Connections
-- [[dot-verify()_1]] - `references` [EXTRACTED]
+- [[dot-verify()]] - `references` [EXTRACTED]
 - [[ApprovalQueue_1]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
 - [[Outcome of an MFA verification.      Attributes         allowed True if the ac]] - `rationale_for` [EXTRACTED]

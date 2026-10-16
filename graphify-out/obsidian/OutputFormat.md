@@ -12,6 +12,6 @@ tags:
 # OutputFormat
 
 ## Connections
-- [[Cli_1]] - `references` [EXTRACTED]
+- [[Cli]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/mainrs

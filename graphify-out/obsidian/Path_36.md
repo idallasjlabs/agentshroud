@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/security/collaborator_tracker.py"
+source_file: "gateway/tests/test_lifespan_prune.py"
 type: "code"
 community: "test_collaborator_tracker.py"
-location: "L54"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,7 @@ tags:
 # Path
 
 ## Connections
-- [[dot-__init__()_149]] - `references` [EXTRACTED]
+- [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
+- [[_make_md()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

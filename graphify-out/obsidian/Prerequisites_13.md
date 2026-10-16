@@ -1,17 +1,17 @@
 ---
-source_file: "docs/runbooks/deployment.md"
+source_file: "docs/operations/macos.md"
 type: "document"
-community: "Deployment Runbook — AgentShroud"
-location: "L5"
+community: "Deploying AgentShroud on macOS (Apple Silicon / Intel)"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deployment_Runbook__AgentShroud
+  - community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Deployment Runbook — AgentShroud]] - `contains` [EXTRACTED]
+- [[Deploying AgentShroud on macOS (Apple Silicon  Intel)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deployment_Runbook__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel

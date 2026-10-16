@@ -12,6 +12,6 @@ tags:
 # LogSanitizer.filter(record)
 
 ## Connections
-- [[Function Details_40]] - `contains` [EXTRACTED]
+- [[Function Details_41]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/log_sanitizerpy

@@ -1,11 +1,11 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
 type: "concept"
-community: "agentshroud-blueteam/SKILL.md"
+community: "InjectionAction"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/InjectionAction
 ---
 
 # Module Coverage Heat Map Legend (E/M/A/C/?/—)
@@ -14,4 +14,4 @@ tags:
 - [[Enterprise Security Feature Priorities (Steve Hay Assessment, Red Team copy)]] - `references` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/concept #graphify/EXTRACTED #community/InjectionAction

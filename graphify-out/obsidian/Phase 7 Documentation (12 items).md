@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "v1.0.0 \"Fortress\" — Ship-Ready Public Release (116 items)"
+community: "🛡️ AgentShroud Release Plan"
 location: "L249"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/v100_Fortress__Ship-Ready_Public_Release_116_items
+  - community/_AgentShroud_Release_Plan
 ---
 
 # Phase 7: Documentation (12 items)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v1.0.0 Fortress — Ship-Ready Public Release (116 items)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/v100_Fortress__Ship-Ready_Public_Release_116_items
+#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan

@@ -1,17 +1,20 @@
 ---
-source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "First Time Setup"
-location: "L11"
+community: "AgentShroud Setup Guide"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/First_Time_Setup
+  - community/AgentShroud_Setup_Guide
 ---
 
 # Prerequisites
 
 ## Connections
-- [[First Time Setup_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
+- [[Optional Requirements]] - `contains` [EXTRACTED]
+- [[Supported Platforms]] - `contains` [EXTRACTED]
+- [[System Requirements_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/First_Time_Setup
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

@@ -1,21 +1,31 @@
 ---
-source_file: "gateway/proxy/mcp_permissions.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L183"
+community: "StdioConnection"
+location: "L48"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPPermissionManager
+  - community/StdioConnection
 ---
 
 # MCPProxyConfig
 
 ## Connections
-- [[dot-__init__()_167]] - `references` [EXTRACTED]
+- [[ConnectionPool]] - `uses` [INFERRED]
+- [[HttpSseConnection]] - `uses` [INFERRED]
+- [[MCPAuditTrail]] - `uses` [INFERRED]
+- [[MCPInspector]] - `uses` [INFERRED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
+- [[MCPProxy]] - `uses` [INFERRED]
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]
-- [[PermissionLevel_1]] - `uses` [INFERRED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[MCPToolCall_1]] - `uses` [INFERRED]
+- [[MCPToolConfig]] - `uses` [INFERRED]
+- [[MCPToolResult]] - `uses` [INFERRED]
+- [[MCPTransport]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
+- [[StdioConnection]] - `uses` [INFERRED]
+- [[make_config()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPPermissionManager
+#graphify/code #graphify/INFERRED #community/StdioConnection

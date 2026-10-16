@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "PermissionLevel"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPPermissionManager
+  - community/PermissionLevel
 ---
 
 # MCPToolConfig
 
 ## Connections
-- [[dot-from_dict()_7]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_11]] - `calls` [EXTRACTED]
 - [[Configuration for a specific MCP tool.]] - `rationale_for` [EXTRACTED]
-- [[Exception_3]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
-- [[MCPProxy]] - `uses` [INFERRED]
-- [[MCPProxyConfig_2]] - `uses` [INFERRED]
+- [[MCPProxy_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig]] - `uses` [INFERRED]
 - [[MCPToolCall]] - `uses` [INFERRED]
 - [[TestAllowDenyList]] - `uses` [INFERRED]
 - [[TestApprovalQueue]] - `uses` [INFERRED]
@@ -41,7 +41,7 @@ tags:
 - [[TestInferPermission]] - `uses` [INFERRED]
 - [[TestInjectionDetection]] - `uses` [INFERRED]
 - [[TestInspectorEdgeCases]] - `uses` [INFERRED]
-- [[TestPIIDetection_1]] - `uses` [INFERRED]
+- [[TestPIIDetection_2]] - `uses` [INFERRED]
 - [[TestPassthrough]] - `uses` [INFERRED]
 - [[TestPassthroughMode_1]] - `uses` [INFERRED]
 - [[TestPermissionLevel]] - `uses` [INFERRED]
@@ -52,7 +52,7 @@ tags:
 - [[TestProxyRateLimiting]] - `uses` [INFERRED]
 - [[TestProxyResultProcessing]] - `uses` [INFERRED]
 - [[TestProxyStats]] - `uses` [INFERRED]
-- [[TestRateLimiting_3]] - `uses` [INFERRED]
+- [[TestRateLimiting]] - `uses` [INFERRED]
 - [[TestResultProcessingAndLifecycle]] - `uses` [INFERRED]
 - [[TestSanitizeAdminPrivateData]] - `uses` [INFERRED]
 - [[TestSensitiveOps]] - `uses` [INFERRED]
@@ -63,13 +63,13 @@ tags:
 - [[TestToolPermission]] - `uses` [INFERRED]
 - [[TestTrustLevels_1]] - `uses` [INFERRED]
 - [[TestTrustMapping]] - `uses` [INFERRED]
-- [[config()_3]] - `calls` [EXTRACTED]
+- [[config()]] - `calls` [EXTRACTED]
 - [[config()_4]] - `calls` [EXTRACTED]
 - [[make_config()]] - `calls` [EXTRACTED]
-- [[mcp_config.py]] - `contains` [EXTRACTED]
+- [[mcp_config.py_2]] - `contains` [EXTRACTED]
 - [[proxy__init__.py]] - `imports` [EXTRACTED]
 - [[test_mcp_permissions.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPPermissionManager
+#graphify/code #graphify/INFERRED #community/PermissionLevel

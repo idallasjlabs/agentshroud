@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md"
 type: "document"
-community: "MCP Proxy Errors"
+community: "Error Index.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Errors
+  - community/Error_Indexmd
 ---
 
 # MCP Proxy Errors.md
@@ -15,4 +15,4 @@ tags:
 - [[Error Index]] - `references` [EXTRACTED]
 - [[MCP Proxy Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_Proxy_Errors
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

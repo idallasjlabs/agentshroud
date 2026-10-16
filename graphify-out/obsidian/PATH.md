@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_alert_dispatcher_retry.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L27"
+community: "FalcoAlertWatcher"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/FalcoAlertWatcher
 ---
 
 # Path
 
 ## Connections
-- [[AlertDispatcher]] - `uses` [INFERRED]
-- [[dispatcher()]] - `references` [EXTRACTED]
+- [[dot-__init__()_22]] - `references` [EXTRACTED]
+- [[read_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

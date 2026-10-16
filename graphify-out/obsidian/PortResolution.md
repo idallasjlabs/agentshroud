@@ -16,7 +16,7 @@ tags:
 - [[dot-has_conflicts()]] - `method` [EXTRACTED]
 - [[dot-ports()]] - `method` [EXTRACTED]
 - [[dot-resolve_ports()]] - `references` [EXTRACTED]
-- [[dot-summary()]] - `method` [EXTRACTED]
+- [[dot-summary()_1]] - `method` [EXTRACTED]
 - [[dot-test_basic_mapping()]] - `calls` [EXTRACTED]
 - [[dot-test_has_conflicts()]] - `calls` [EXTRACTED]
 - [[dot-test_no_conflict_mapping()]] - `calls` [EXTRACTED]
@@ -30,7 +30,7 @@ tags:
 - [[TestPortResolution]] - `uses` [INFERRED]
 - [[TestResolveports]] - `uses` [INFERRED]
 - [[check_and_report()]] - `references` [EXTRACTED]
-- [[port_manager.py]] - `contains` [EXTRACTED]
+- [[port_manager.py_2]] - `contains` [EXTRACTED]
 - [[test_port_manager.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PortManager

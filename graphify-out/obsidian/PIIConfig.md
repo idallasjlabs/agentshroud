@@ -12,9 +12,9 @@ tags:
 # PIIConfig
 
 ## Connections
-- [[dot-__init__()_84]] - `references` [EXTRACTED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
-- [[RedactionDetail_1]] - `uses` [INFERRED]
+- [[dot-__init__()_16]] - `references` [EXTRACTED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
+- [[RedactionDetail]] - `uses` [INFERRED]
 - [[RedactionResult_3]] - `uses` [INFERRED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]

@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_network_validator_gate.py"
+source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "validate_network_security"
-location: "L33"
+community: "test_dashboard.py"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/validate_network_security
+  - community/test_dashboardpy
 ---
 
 # Path
 
 ## Connections
-- [[NetworkValidator]] - `uses` [INFERRED]
-- [[tmp_compose()]] - `references` [EXTRACTED]
+- [[_load_contributor_logs()]] - `references` [EXTRACTED]
+- [[_parse_collaborator_log_dirs()]] - `references` [EXTRACTED]
+- [[get_collaborators()]] - `calls` [EXTRACTED]
+- [[serve_dashboard()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/validate_network_security
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

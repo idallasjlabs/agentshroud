@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/export-telegram-history.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "export_bot"
-location: "L101"
+community: "_age"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export_bot
+  - community/_age
 ---
 
 # Path
 
 ## Connections
-- [[export()]] - `references` [EXTRACTED]
-- [[main()_22]] - `calls` [EXTRACTED]
+- [[_age()]] - `references` [EXTRACTED]
+- [[_w()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export_bot
+#graphify/code #graphify/EXTRACTED #community/_age

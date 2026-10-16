@@ -12,9 +12,9 @@ tags:
 # Mnemosyne — Retention Engineer
 
 ## Connections
-- [[Purpose_52]] - `contains` [EXTRACTED]
+- [[Purpose_54]] - `contains` [EXTRACTED]
 - [[Related Skills_40]] - `contains` [EXTRACTED]
-- [[Usage_43]] - `contains` [EXTRACTED]
+- [[Usage_44]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-mnemosyneREADME]] - `contains` [EXTRACTED]
 

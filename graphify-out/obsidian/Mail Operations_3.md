@@ -1,5 +1,5 @@
 ---
-source_file: "skills/custom/icloud/SKILL.md"
+source_file: ".agents/skills/i-icloud/SKILL.md"
 type: "document"
 community: "iCloud Services"
 location: "L80"
@@ -15,6 +15,6 @@ tags:
 - [[List Messages_3]] - `contains` [EXTRACTED]
 - [[Search Mail_3]] - `contains` [EXTRACTED]
 - [[Send Email_3]] - `contains` [EXTRACTED]
-- [[iCloud Services_3]] - `contains` [EXTRACTED]
+- [[iCloud Services_4]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/iCloud_Services

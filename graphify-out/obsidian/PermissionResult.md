@@ -12,7 +12,7 @@ tags:
 # PermissionResult
 
 ## Connections
-- [[dot-__init__()_70]] - `calls` [EXTRACTED]
+- [[dot-__init__()_47]] - `calls` [EXTRACTED]
 - [[dot-check_group_permission()]] - `references` [EXTRACTED]
 - [[dot-check_permission()_1]] - `references` [EXTRACTED]
 - [[dot-check_tool_permission()]] - `references` [EXTRACTED]
@@ -21,8 +21,8 @@ tags:
 - [[Any_30]] - `uses` [INFERRED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
 - [[Result of permission check.]] - `rationale_for` [EXTRACTED]
-- [[Role_91]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler_2]] - `uses` [INFERRED]
+- [[Role_22]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[SimpleNamespace]] - `uses` [INFERRED]
 - [[TestCoerceToWSEventExtra]] - `uses` [INFERRED]
 - [[TestCollectRecentEvents]] - `uses` [INFERRED]
@@ -41,7 +41,7 @@ tags:
 - [[TestTokenStorePruning]] - `uses` [INFERRED]
 - [[TestVerifyBearer]] - `uses` [INFERRED]
 - [[TestWSSOCEndpoint]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[ToolTier]] - `uses` [INFERRED]
 - [[_FakeBus]] - `uses` [INFERRED]
 - [[_FakeRBAC]] - `uses` [INFERRED]
 - [[rbac.py]] - `contains` [EXTRACTED]

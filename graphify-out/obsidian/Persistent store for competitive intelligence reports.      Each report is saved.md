@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "CompetitiveIntelReport"
+community: "api.py"
 location: "L195"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CompetitiveIntelReport
+  - community/apipy
 ---
 
 # Persistent store for competitive intelligence reports.      Each report is saved
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IntelReportStore_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CompetitiveIntelReport
+#graphify/rationale #graphify/EXTRACTED #community/apipy

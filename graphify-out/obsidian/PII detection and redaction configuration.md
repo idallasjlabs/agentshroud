@@ -12,6 +12,6 @@ tags:
 # PII detection and redaction configuration
 
 ## Connections
-- [[PIIConfig_2]] - `rationale_for` [EXTRACTED]
+- [[PIIConfig_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/PIIConfig

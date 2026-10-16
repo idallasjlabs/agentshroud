@@ -1,23 +1,20 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
 type: "document"
-community: "AGENTSHROUD_MODE"
-location: "L9"
+community: "AgentRegistry"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AGENTSHROUD_MODE
+  - community/AgentRegistry
 ---
 
-# OPENCLAW_SANDBOX_MODE
+# OPENCLAW_SANDBOX_MODE.md
 
 ## Connections
-- [[Combination with Other Settings]] - `contains` [EXTRACTED]
-- [[Description]] - `contains` [EXTRACTED]
+- [[AGENTSHROUD_MODE_1]] - `semantically_similar_to` [INFERRED]
+- [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - `references` [EXTRACTED]
 - [[OPENCLAW_SANDBOX_MODE_1]] - `contains` [EXTRACTED]
-- [[Production Setting]] - `contains` [EXTRACTED]
-- [[Related Notes_6]] - `contains` [EXTRACTED]
-- [[Set In]] - `contains` [EXTRACTED]
-- [[Values]] - `contains` [EXTRACTED]
+- [[agent_isolation.py]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_MODE
+#graphify/document #graphify/EXTRACTED #community/AgentRegistry

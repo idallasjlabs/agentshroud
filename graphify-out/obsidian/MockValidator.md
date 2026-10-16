@@ -12,14 +12,14 @@ tags:
 # MockValidator
 
 ## Connections
-- [[dot-__init__()_63]] - `method` [EXTRACTED]
+- [[dot-__init__()_142]] - `method` [EXTRACTED]
 - [[dot-setup_manager_with_credential()]] - `calls` [EXTRACTED]
 - [[dot-test_check_and_rotate_due_credentials()]] - `calls` [EXTRACTED]
 - [[dot-test_register_validator()]] - `calls` [EXTRACTED]
 - [[dot-test_rotation_with_validation_failure()]] - `calls` [EXTRACTED]
-- [[dot-validate()]] - `method` [EXTRACTED]
+- [[dot-validate()_2]] - `method` [EXTRACTED]
 - [[CredentialInfo]] - `uses` [INFERRED]
-- [[CredentialRotationPolicy]] - `uses` [INFERRED]
+- [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
 - [[CredentialValidator]] - `uses` [INFERRED]
 - [[KeyRotationConfig_1]] - `uses` [INFERRED]
 - [[KeyRotationManager]] - `uses` [INFERRED]

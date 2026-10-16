@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/agents/openclaw-identity.md"
 type: "document"
-community: "IDENTITY.md - Who I Am"
+community: "auth.py"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/IDENTITYmd_-_Who_I_Am
+  - community/authpy
 ---
 
 # My Responsibilities
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IDENTITY.md - Who I Am_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/IDENTITYmd_-_Who_I_Am
+#graphify/document #graphify/EXTRACTED #community/authpy

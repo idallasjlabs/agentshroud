@@ -12,7 +12,7 @@ tags:
 # LockdownLevel
 
 ## Connections
-- [[Enum_1]] - `inherits` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[FakePipelineResult_1]] - `uses` [INFERRED]
 - [[FakeRBAC_1]] - `uses` [INFERRED]
 - [[PassthroughPipeline_1]] - `uses` [INFERRED]
@@ -24,7 +24,7 @@ tags:
 - [[TestSuspendedDropNotice]] - `uses` [INFERRED]
 - [[TestUnlockCommand]] - `uses` [INFERRED]
 - [[progressive_lockdown.py]] - `contains` [EXTRACTED]
-- [[str_1]] - `inherits` [EXTRACTED]
+- [[str_3]] - `inherits` [EXTRACTED]
 - [[test_progressive_lockdown.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/ProgressiveLockdown

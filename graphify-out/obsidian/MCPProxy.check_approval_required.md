@@ -11,6 +11,6 @@ tags:
 # MCPProxy.check_approval_required
 
 ## Connections
-- [[EnhancedApprovalQueue_2]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

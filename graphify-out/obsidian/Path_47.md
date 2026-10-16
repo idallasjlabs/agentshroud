@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/tests/test_cron_jobs_prompts.py"
 type: "code"
-community: "UserSessionManager"
-location: "L138"
+community: "test_cron_jobs_prompts.py"
+location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/test_cron_jobs_promptspy
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_177]] - `references` [EXTRACTED]
-- [[dot-from_dict()_8]] - `calls` [EXTRACTED]
+- [[_load_jobs()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/test_cron_jobs_promptspy

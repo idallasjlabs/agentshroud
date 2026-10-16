@@ -21,8 +21,8 @@ tags:
 - [[SSH Key Generated]] - `contains` [EXTRACTED]
 - [[Security Considerations]] - `contains` [EXTRACTED]
 - [[Setup Instructions]] - `contains` [EXTRACTED]
-- [[Troubleshooting_10]] - `contains` [EXTRACTED]
-- [[Usage Examples]] - `contains` [EXTRACTED]
+- [[Troubleshooting_9]] - `contains` [EXTRACTED]
+- [[Usage Examples_1]] - `contains` [EXTRACTED]
 - [[Verification Checklist]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

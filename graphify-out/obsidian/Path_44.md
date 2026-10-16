@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_credential_injector.py"
+source_file: "scripts/export-telegram-history.py"
 type: "code"
-community: "TestOAuthInjection"
-location: "L209"
+community: "export_bot"
+location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOAuthInjection
+  - community/export_bot
 ---
 
 # Path
 
 ## Connections
-- [[dot-_make_anthropic_injector()]] - `references` [EXTRACTED]
+- [[export()]] - `references` [EXTRACTED]
+- [[main()_22]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection
+#graphify/code #graphify/EXTRACTED #community/export_bot

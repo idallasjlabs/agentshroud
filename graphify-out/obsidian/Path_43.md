@@ -1,24 +1,19 @@
 ---
-source_file: "gateway/web/api.py"
+source_file: "scripts/export-email-reports.py"
 type: "code"
-community: "api.py"
-location: "L946"
+community: "export_bot"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/export_bot
 ---
 
 # Path
 
 ## Connections
-- [[CitationVerifier]] - `uses` [INFERRED]
-- [[DraftEntry]] - `uses` [INFERRED]
-- [[IntelReportStore_1]] - `uses` [INFERRED]
-- [[_skills_reload_paths()]] - `references` [EXTRACTED]
-- [[dashboard()]] - `calls` [EXTRACTED]
-- [[dashboard_main()]] - `calls` [EXTRACTED]
-- [[get_config()_1]] - `calls` [EXTRACTED]
-- [[update_config()]] - `calls` [EXTRACTED]
+- [[_report_date()]] - `calls` [EXTRACTED]
+- [[export_bot()]] - `references` [EXTRACTED]
+- [[main()_21]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/export_bot

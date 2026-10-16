@@ -12,7 +12,7 @@ tags:
 # MemoryIntegrityConfig
 
 ## Connections
-- [[dot-__init__()_20]] - `references` [EXTRACTED]
+- [[dot-__init__()_76]] - `references` [EXTRACTED]
 - [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

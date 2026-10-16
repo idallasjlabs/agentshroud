@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "group_config.py"
+community: "telegram_proxy.py"
 location: "L301"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/group_configpy
+  - community/telegram_proxypy
 ---
 
 # Persist a per-user collab mode override set via the SOC dashboard.      Stored u
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[persist_user_collab_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/group_configpy
+#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy

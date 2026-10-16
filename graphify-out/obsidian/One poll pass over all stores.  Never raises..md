@@ -12,6 +12,6 @@ tags:
 # One poll pass over all stores.  Never raises.
 
 ## Connections
-- [[dot-check()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-check()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/CronStateMonitor

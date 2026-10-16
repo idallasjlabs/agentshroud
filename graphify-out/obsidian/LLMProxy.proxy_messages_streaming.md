@@ -27,7 +27,6 @@ tags:
 - [[LLMProxy.proxy_messages (non-streaming)]] - `semantically_similar_to` [EXTRACTED]
 - [[LOCAL_MODEL_ROUTES]] - `references` [EXTRACTED]
 - [[StreamHead]] - `shares_data_with` [EXTRACTED]
-- [[Streaming route masked upstream 4xx as 200 event stream]] - `rationale_for` [EXTRACTED]
 - [[_LOCAL_BACKEND_HINTS]] - `references` [EXTRACTED]
 - [[_run_stream (StreamHead test harness)]] - `calls` [EXTRACTED]
 - [[llm_api_proxy (v1{path} LLM reverse proxy route)]] - `calls` [EXTRACTED]

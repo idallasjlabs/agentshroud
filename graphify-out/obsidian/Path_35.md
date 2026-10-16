@@ -1,19 +1,17 @@
 ---
-source_file: "scripts/generate_branding_assets.py"
+source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "generate_branding_assets.py"
-location: "L55"
+community: "test_collaborator_tracker.py"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/generate_branding_assetspy
+  - community/test_collaborator_trackerpy
 ---
 
 # Path
 
 ## Connections
-- [[ensure()]] - `references` [EXTRACTED]
-- [[get_font()]] - `calls` [EXTRACTED]
-- [[save()_1]] - `references` [EXTRACTED]
+- [[dot-__init__()_136]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

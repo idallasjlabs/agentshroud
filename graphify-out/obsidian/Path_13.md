@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/tests/test_config_validation.py"
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "ForwardRequest"
-location: "L17"
+community: "KillSwitchMonitor"
+location: "L38"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ForwardRequest
+  - graphify/EXTRACTED
+  - community/KillSwitchMonitor
 ---
 
 # Path
 
 ## Connections
-- [[ForwardRequest_1]] - `uses` [INFERRED]
-- [[RouterConfig_1]] - `uses` [INFERRED]
-- [[_parse_env_file()]] - `references` [EXTRACTED]
+- [[dot-__init__()_54]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ForwardRequest
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

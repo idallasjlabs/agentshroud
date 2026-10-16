@@ -12,6 +12,6 @@ tags:
 # MCPAuditTrail.verify_chain()
 
 ## Connections
-- [[Function Details_22]] - `contains` [EXTRACTED]
+- [[Function Details_23]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mcp_auditpy

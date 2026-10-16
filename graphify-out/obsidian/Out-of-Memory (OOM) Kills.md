@@ -12,6 +12,6 @@ tags:
 # Out-of-Memory (OOM) Kills
 
 ## Connections
-- [[Troubleshooting_30]] - `contains` [EXTRACTED]
+- [[Troubleshooting_29]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64

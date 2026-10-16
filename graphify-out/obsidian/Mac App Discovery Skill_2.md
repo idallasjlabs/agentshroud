@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Discovery Strategy_2]] - `contains` [EXTRACTED]
-- [[Error Handling_3]] - `contains` [EXTRACTED]
+- [[Error Handling_5]] - `contains` [EXTRACTED]
 - [[Future Extensions (for collaborative sharing)_2]] - `contains` [EXTRACTED]
 - [[Performance Notes_2]] - `contains` [EXTRACTED]
 - [[When to Use This Skill_2]] - `contains` [EXTRACTED]

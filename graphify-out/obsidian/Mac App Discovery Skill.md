@@ -15,7 +15,7 @@ tags:
 - [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[dot-agentsskillsi-macSKILL]] - `contains` [EXTRACTED]
 - [[Discovery Strategy]] - `contains` [EXTRACTED]
-- [[Error Handling_1]] - `contains` [EXTRACTED]
+- [[Error Handling_3]] - `contains` [EXTRACTED]
 - [[Future Extensions (for collaborative sharing)]] - `contains` [EXTRACTED]
 - [[Performance Notes]] - `contains` [EXTRACTED]
 - [[When to Use This Skill]] - `contains` [EXTRACTED]

@@ -1,17 +1,22 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/vault/09 - Diagrams/Network Topology.md"
 type: "document"
-community: "main.py.md"
-location: "L145"
+community: "`SecurityPipeline`"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpymd
+  - community/SecurityPipeline
 ---
 
 # Network Topology
 
 ## Connections
-- [[Architecture Overview_3]] - `contains` [EXTRACTED]
+- [[Container Network Diagram]] - `contains` [EXTRACTED]
+- [[Hostname Resolution]] - `contains` [EXTRACTED]
+- [[Network Security Notes]] - `contains` [EXTRACTED]
+- [[Network Topology_2]] - `contains` [EXTRACTED]
+- [[Related Notes_57]] - `contains` [EXTRACTED]
+- [[Traffic Routing]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpymd
+#graphify/document #graphify/EXTRACTED #community/SecurityPipeline

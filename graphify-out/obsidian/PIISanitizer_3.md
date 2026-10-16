@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "DataLedger"
 location: "L173"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalQueueConfig
+  - community/DataLedger
 ---
 
 # PIISanitizer
 
 ## Connections
-- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[DataLedger]] - `uses` [INFERRED]
-- [[GatewayConfig_4]] - `uses` [INFERRED]
-- [[LedgerConfig_1]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[GatewayConfig_3]] - `uses` [INFERRED]
+- [[LedgerConfig]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[RouterConfig_1]] - `uses` [INFERRED]
-- [[sanitizer()_4]] - `references` [EXTRACTED]
+- [[RouterConfig]] - `uses` [INFERRED]
+- [[sanitizer()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig
+#graphify/code #graphify/INFERRED #community/DataLedger

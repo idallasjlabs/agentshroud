@@ -12,15 +12,15 @@ tags:
 # MemoryIntegrityConfig
 
 ## Connections
-- [[dot-setup_method()_3]] - `calls` [EXTRACTED]
-- [[dot-test_default_config()]] - `calls` [EXTRACTED]
-- [[Any_1]] - `uses` [INFERRED]
+- [[dot-setup_method()_16]] - `calls` [EXTRACTED]
+- [[dot-test_default_config()_3]] - `calls` [EXTRACTED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[Configuration for memory file integrity monitoring.]] - `rationale_for` [EXTRACTED]
 - [[FileIntegrityRecord]] - `uses` [INFERRED]
 - [[MemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
 - [[ModificationSource]] - `uses` [INFERRED]
-- [[Path_1]] - `uses` [INFERRED]
+- [[Path_48]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]
 - [[TestMemoryLifecycleManager]] - `uses` [INFERRED]

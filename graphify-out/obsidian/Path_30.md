@@ -1,21 +1,24 @@
 ---
-source_file: "gateway/tests/test_observatory_mode.py"
+source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L268"
+community: "ApprovalQueueConfig"
+location: "L380"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/KillSwitchMonitor
+  - graphify/EXTRACTED
+  - community/ApprovalQueueConfig
 ---
 
 # Path
 
 ## Connections
-- [[dot-_make_monitor()]] - `references` [EXTRACTED]
-- [[KillSwitchConfig_1]] - `uses` [INFERRED]
-- [[KillSwitchMonitor]] - `uses` [INFERRED]
-- [[ModeRequest]] - `uses` [INFERRED]
-- [[SecurityPipeline_2]] - `uses` [INFERRED]
+- [[dot-model_post_init()_1]] - `calls` [EXTRACTED]
+- [[BotConfig]] - `uses` [INFERRED]
+- [[SSHConfig_2]] - `uses` [INFERRED]
+- [[_default_mtime()]] - `references` [EXTRACTED]
+- [[config_watcher()]] - `references` [EXTRACTED]
+- [[load_config()]] - `references` [EXTRACTED]
+- [[reload_config()]] - `references` [EXTRACTED]
+- [[resolve_config_path()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

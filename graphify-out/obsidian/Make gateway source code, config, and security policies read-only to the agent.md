@@ -19,6 +19,6 @@ tags:
 - [[Remediation_5]] - `contains` [EXTRACTED]
 - [[Root Cause_4]] - `contains` [EXTRACTED]
 - [[Severity_7]] - `contains` [EXTRACTED]
-- [[Verification_9]] - `contains` [EXTRACTED]
+- [[Verification_10]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Make_gateway_source_code_config_and_security_policies_read-only_to_the_agent

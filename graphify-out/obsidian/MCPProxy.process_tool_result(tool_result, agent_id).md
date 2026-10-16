@@ -12,6 +12,6 @@ tags:
 # MCPProxy.process_tool_result(tool_result, agent_id)
 
 ## Connections
-- [[Function Details_24]] - `contains` [EXTRACTED]
+- [[Function Details_25]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

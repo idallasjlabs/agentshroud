@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/skills/scan.py"
+source_file: "gateway/tests/test_generate_cve_page.py"
 type: "code"
-community: "SkillGuard"
-location: "L42"
+community: "_make_cve"
+location: "L249"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/SkillGuard
+  - graphify/EXTRACTED
+  - community/_make_cve
 ---
 
 # Path
 
 ## Connections
-- [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_4]] - `uses` [INFERRED]
-- [[SkillGuard_1]] - `uses` [INFERRED]
-- [[SkillsManifest]] - `uses` [INFERRED]
-- [[_build_tree()]] - `references` [EXTRACTED]
-- [[main()_10]] - `calls` [EXTRACTED]
+- [[dot-_run_generate()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/_make_cve

@@ -16,7 +16,6 @@ tags:
 - [[LLMProxy._widen_optional_tool_param_types]] - `semantically_similar_to` [INFERRED]
 - [[LLMProxy.proxy_messages (non-streaming)]] - `calls` [EXTRACTED]
 - [[LLMProxy.proxy_messages_streaming]] - `calls` [EXTRACTED]
-- [[TurboFieldfare rejects parallel_tool_calls  non-auto tool_choice]] - `rationale_for` [EXTRACTED]
 - [[test_fieldflare_shim_drops_parallel_tool_calls_true_and_false]] - `calls` [EXTRACTED]
 - [[test_fieldflare_shim_rewrites_named_tool_choice_object_to_auto]] - `calls` [EXTRACTED]
 - [[test_fieldflare_shim_rewrites_required_tool_choice_to_auto]] - `calls` [EXTRACTED]

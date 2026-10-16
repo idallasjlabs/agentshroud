@@ -12,14 +12,14 @@ tags:
 # MCPPolicyConfig
 
 ## Connections
-- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
-- [[EnhancedApprovalQueue_2]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
 - [[MCPPolicyAction]] - `uses` [INFERRED]
 - [[MCPPolicyConfig_1]] - `uses` [INFERRED]
 - [[MCPPolicyDecision]] - `uses` [INFERRED]
 - [[MCPPolicyEngine_1]] - `uses` [INFERRED]
-- [[MCPProxy_1]] - `uses` [INFERRED]
+- [[MCPProxy]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
 - [[MCPToolResult]] - `uses` [INFERRED]
 - [[RBACConfig_4]] - `uses` [INFERRED]

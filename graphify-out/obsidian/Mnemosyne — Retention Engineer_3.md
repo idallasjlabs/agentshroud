@@ -17,7 +17,7 @@ tags:
 - [[Output Format_29]] - `contains` [EXTRACTED]
 - [[Persona_11]] - `contains` [EXTRACTED]
 - [[Quality Checklist_14]] - `contains` [EXTRACTED]
-- [[Role_77]] - `contains` [EXTRACTED]
+- [[Role_78]] - `contains` [EXTRACTED]
 - [[System Prompt_11]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

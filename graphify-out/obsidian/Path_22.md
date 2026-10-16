@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_config_hot_reload.py"
+source_file: "gateway/security/config_integrity.py"
 type: "code"
-community: "load_config"
-location: "L58"
+community: "ConfigIntegrityMonitor"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/ConfigIntegrityMonitor
 ---
 
 # Path
 
 ## Connections
-- [[GatewayConfig_4]] - `uses` [INFERRED]
-- [[_load()]] - `references` [EXTRACTED]
-- [[_write()]] - `references` [EXTRACTED]
+- [[dot-__init__()_88]] - `references` [EXTRACTED]
+- [[dot-_hash_file()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor

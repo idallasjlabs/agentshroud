@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L75"
+community: "UserSessionManager"
+location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/UserSessionManager
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_21]] - `references` [EXTRACTED]
-- [[dot-archive_file()]] - `references` [EXTRACTED]
-- [[dot-validate_memory_write()]] - `references` [EXTRACTED]
-- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
-- [[run()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_32]] - `references` [EXTRACTED]
+- [[dot-from_dict()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

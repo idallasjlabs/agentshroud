@@ -12,6 +12,6 @@ tags:
 # Option B: Full OAuth Setup
 
 ## Connections
-- [[🎯 Next Steps]] - `contains` [EXTRACTED]
+- [[🎯 Next Steps_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Google_Services_Setup_-_Calendar_Contacts_Keep

@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "_age"
-location: "L41"
+community: "Path"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_age
+  - community/Path
 ---
 
 # Path
 
 ## Connections
-- [[_age()]] - `references` [EXTRACTED]
-- [[_w()]] - `references` [EXTRACTED]
+- [[dot-from_file()]] - `references` [EXTRACTED]
+- [[dot-from_source()]] - `references` [EXTRACTED]
+- [[deploy_manifest()]] - `references` [EXTRACTED]
+- [[plan_deploy()]] - `references` [EXTRACTED]
+- [[validate_manifest()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_age
+#graphify/code #graphify/EXTRACTED #community/Path

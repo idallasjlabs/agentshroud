@@ -1,18 +1,22 @@
 ---
-source_file: "gateway/security/trivy_report.py"
+source_file: "gateway/skills/scan.py"
 type: "code"
-community: "parse_trivy_output"
-location: "L164"
+community: "SkillGuard"
+location: "L42"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/parse_trivy_output
+  - graphify/INFERRED
+  - community/SkillGuard
 ---
 
 # Path
 
 ## Connections
-- [[_build_image_targets()]] - `calls` [EXTRACTED]
-- [[save_report()]] - `references` [EXTRACTED]
+- [[Recommendation]] - `uses` [INFERRED]
+- [[ScanResult_3]] - `uses` [INFERRED]
+- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[SkillsManifest]] - `uses` [INFERRED]
+- [[_build_tree()]] - `references` [EXTRACTED]
+- [[main()_10]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_trivy_output
+#graphify/code #graphify/INFERRED #community/SkillGuard

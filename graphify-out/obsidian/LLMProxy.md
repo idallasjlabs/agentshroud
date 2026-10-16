@@ -12,7 +12,7 @@ tags:
 # LLMProxy
 
 ## Connections
-- [[dot-__init__()_4]] - `method` [EXTRACTED]
+- [[dot-__init__()_7]] - `method` [EXTRACTED]
 - [[dot-_apply_filters()]] - `method` [EXTRACTED]
 - [[dot-_build_timeout_fallback_response()]] - `method` [EXTRACTED]
 - [[dot-_emit_failover_notice()]] - `method` [EXTRACTED]
@@ -37,7 +37,7 @@ tags:
 - [[dot-_strip_fieldflare_unsupported_fields()]] - `method` [EXTRACTED]
 - [[dot-_suppress_qwen3_thinking()]] - `method` [EXTRACTED]
 - [[dot-_widen_optional_tool_param_types()]] - `method` [EXTRACTED]
-- [[dot-get_stats()]] - `method` [EXTRACTED]
+- [[dot-get_stats()_1]] - `method` [EXTRACTED]
 - [[dot-proxy_messages()]] - `method` [EXTRACTED]
 - [[dot-proxy_messages_streaming()]] - `method` [EXTRACTED]
 - [[LLMProxy_1]] - `uses` [INFERRED]
@@ -51,7 +51,7 @@ tags:
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[llm_proxy.py_2]] - `contains` [EXTRACTED]
-- [[make_proxy()_1]] - `calls` [EXTRACTED]
+- [[make_proxy()]] - `calls` [EXTRACTED]
 - [[test_backend_unavailable_warning_rate_limited()]] - `uses` [INFERRED]
 - [[test_claude_via_openai_path.py]] - `imports` [EXTRACTED]
 - [[test_cloud_backend_connect_failure_still_returns_502()]] - `uses` [INFERRED]

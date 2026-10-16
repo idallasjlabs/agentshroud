@@ -12,7 +12,7 @@ tags:
 # MCPPolicyEngine
 
 ## Connections
-- [[dot-__init__()_143]] - `method` [EXTRACTED]
+- [[dot-__init__()_128]] - `method` [EXTRACTED]
 - [[dot-_decide()_1]] - `method` [EXTRACTED]
 - [[dot-_tier_for()_1]] - `method` [EXTRACTED]
 - [[dot-enforce()_1]] - `method` [EXTRACTED]
@@ -26,7 +26,7 @@ tags:
 - [[MCPPolicyConfig]] - `uses` [INFERRED]
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
-- [[Path_34]] - `uses` [INFERRED]
+- [[Path_32]] - `uses` [INFERRED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
 - [[TestDefaultMcpPolicyIsFailClosed]] - `uses` [INFERRED]
 - [[TestDefaultPolicyNoMcpServers]] - `uses` [INFERRED]

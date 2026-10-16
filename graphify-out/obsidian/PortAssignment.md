@@ -24,7 +24,7 @@ tags:
 - [[TestIsPortAvailable]] - `uses` [INFERRED]
 - [[TestPortResolution]] - `uses` [INFERRED]
 - [[TestResolveports]] - `uses` [INFERRED]
-- [[port_manager.py]] - `contains` [EXTRACTED]
+- [[port_manager.py_2]] - `contains` [EXTRACTED]
 - [[test_port_manager.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PortManager

@@ -12,10 +12,10 @@ tags:
 # LedgerQueryResponse
 
 ## Connections
-- [[Any_47]] - `uses` [INFERRED]
+- [[Any_28]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[DataLedger]] - `uses` [INFERRED]
-- [[LedgerConfig]] - `uses` [INFERRED]
+- [[LedgerConfig_1]] - `uses` [INFERRED]
 - [[LedgerEntry_1]] - `uses` [INFERRED]
 - [[LedgerQueryResponse_1]] - `uses` [INFERRED]
 - [[Paginated ledger query results]] - `rationale_for` [EXTRACTED]

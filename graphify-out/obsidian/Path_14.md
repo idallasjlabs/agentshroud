@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/proxy/webhook_receiver.py"
+source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "WebhookReceiver"
-location: "L89"
+community: "KillSwitchMonitor"
+location: "L268"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - graphify/INFERRED
+  - community/KillSwitchMonitor
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_64]] - `calls` [EXTRACTED]
-- [[dot-_can_create_directory()]] - `references` [EXTRACTED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
-- [[_get_gmail_app_password()]] - `calls` [EXTRACTED]
+- [[dot-_make_monitor()]] - `references` [EXTRACTED]
+- [[KillSwitchConfig_1]] - `uses` [INFERRED]
+- [[KillSwitchMonitor]] - `uses` [INFERRED]
+- [[ModeRequest]] - `uses` [INFERRED]
+- [[SecurityPipeline_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/code #graphify/INFERRED #community/KillSwitchMonitor

@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-agentsskillsi-mcpm-auth-resetREADME]] - `contains` [EXTRACTED]
 - [[dot-agentsskillsi-mcpm-auth-resetSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_116]] - `contains` [EXTRACTED]
+- [[Purpose_121]] - `contains` [EXTRACTED]
 - [[Related Skills_91]] - `contains` [EXTRACTED]
-- [[Usage_98]] - `contains` [EXTRACTED]
+- [[Usage_99]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

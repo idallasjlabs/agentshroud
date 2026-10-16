@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L170"
+community: "KeyVault"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/KeyVault
 ---
 
 # Pattern
 
 ## Connections
-- [[dot-_create_detection_patterns()]] - `references` [EXTRACTED]
+- [[dot-_compile_patterns()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/KeyVault

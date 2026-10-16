@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md"
 type: "document"
-community: "MCP Proxy Errors"
+community: "Error Index.md"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Errors
+  - community/Error_Indexmd
 ---
 
 # MCP Proxy Errors
@@ -18,6 +18,6 @@ tags:
 - [[HTTP 502 — MCP Server Unreachable]] - `contains` [EXTRACTED]
 - [[MCP Proxy Errors]] - `contains` [EXTRACTED]
 - [[MCP Proxy Wrapper Issues (Bot Side)]] - `contains` [EXTRACTED]
-- [[Related Notes_1]] - `contains` [EXTRACTED]
+- [[Related Notes_43]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_Proxy_Errors
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

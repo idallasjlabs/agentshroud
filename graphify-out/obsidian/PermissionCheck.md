@@ -19,10 +19,10 @@ tags:
 - [[dot-check_tool_permission()_2]] - `references` [EXTRACTED]
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]
-- [[PermissionLevel_1]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
 - [[Result of permission check.]] - `rationale_for` [EXTRACTED]
-- [[mcp_permissions.py]] - `contains` [EXTRACTED]
+- [[mcp_permissions.py_2]] - `contains` [EXTRACTED]
 - [[proxy__init__.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

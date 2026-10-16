@@ -12,7 +12,7 @@ tags:
 # Per-Agent Container Isolation Architecture
 
 ## Connections
-- [[Architecture_10]] - `contains` [EXTRACTED]
+- [[Architecture_11]] - `contains` [EXTRACTED]
 - [[Container Configuration]] - `contains` [EXTRACTED]
 - [[Design Principles]] - `contains` [EXTRACTED]
 - [[Docker Compose Template]] - `contains` [EXTRACTED]

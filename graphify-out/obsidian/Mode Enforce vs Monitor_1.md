@@ -12,6 +12,6 @@ tags:
 # Mode: Enforce vs Monitor
 
 ## Connections
-- [[env_guard.py_1]] - `contains` [EXTRACTED]
+- [[env_guard.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/env_guardpy

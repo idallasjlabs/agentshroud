@@ -16,7 +16,7 @@ tags:
 - [[Output Format_34]] - `contains` [EXTRACTED]
 - [[Persona_14]] - `contains` [EXTRACTED]
 - [[Quality Checklist_17]] - `contains` [EXTRACTED]
-- [[Role_86]] - `contains` [EXTRACTED]
+- [[Role_87]] - `contains` [EXTRACTED]
 - [[System Prompt_14]] - `contains` [EXTRACTED]
 - [[openclawskillsi-oracleSKILL]] - `contains` [EXTRACTED]
 

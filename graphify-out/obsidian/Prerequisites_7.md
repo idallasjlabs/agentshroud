@@ -1,20 +1,17 @@
 ---
-source_file: "skills/openclaw/xurl/SKILL.md"
+source_file: "docs/setup-telegram.md"
 type: "document"
-community: "xurl — Agent Skill Reference"
-location: "L67"
+community: "First Time Setup"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/xurl__Agent_Skill_Reference
+  - community/First_Time_Setup
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Other auth methods]] - `contains` [EXTRACTED]
-- [[Register an app (recommended)]] - `contains` [EXTRACTED]
-- [[Secret Safety (Mandatory)]] - `contains` [EXTRACTED]
-- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
+- [[Telegram Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference
+#graphify/document #graphify/EXTRACTED #community/First_Time_Setup

@@ -12,6 +12,6 @@ tags:
 # MiddlewareManager with real session_manager, all other deps mocked.      Uses __
 
 ## Connections
-- [[manager()_4]] - `rationale_for` [EXTRACTED]
+- [[manager()_3]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

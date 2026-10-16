@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
+source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
 type: "code"
-community: "MCPPolicyEngine"
-location: "L73"
+community: "gen.py"
+location: "L22"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/MCPPolicyEngine
+  - graphify/EXTRACTED
+  - community/genpy
 ---
 
 # Path
 
 ## Connections
-- [[MCPPolicyAction]] - `uses` [INFERRED]
-- [[MCPPolicyConfig_1]] - `uses` [INFERRED]
-- [[MCPPolicyEngine_1]] - `uses` [INFERRED]
-- [[_write()_1]] - `references` [EXTRACTED]
+- [[default_out_dir()]] - `references` [EXTRACTED]
+- [[main()_16]] - `calls` [EXTRACTED]
+- [[write_gallery()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/genpy

@@ -21,7 +21,7 @@ tags:
 - [[dot-log_tool_call()]] - `references` [EXTRACTED]
 - [[dot-log_tool_result()]] - `references` [EXTRACTED]
 - [[A single MCP tool call audit entry.]] - `rationale_for` [EXTRACTED]
-- [[mcp_audit.py]] - `contains` [EXTRACTED]
+- [[mcp_audit.py_2]] - `contains` [EXTRACTED]
 - [[proxy__init__.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPAuditTrail

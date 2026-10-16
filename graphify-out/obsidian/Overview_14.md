@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
+source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "main.py"
-location: "L13"
+community: "AgentShroud Deployment Architecture"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpy
+  - community/AgentShroud_Deployment_Architecture
 ---
 
 # Overview
 
 ## Connections
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Deployment Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture

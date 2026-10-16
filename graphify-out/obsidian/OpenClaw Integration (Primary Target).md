@@ -12,7 +12,7 @@ tags:
 # OpenClaw Integration (Primary Target)
 
 ## Connections
-- [[Architecture Overview_2]] - `contains` [EXTRACTED]
+- [[Architecture Overview_3]] - `contains` [EXTRACTED]
 - [[Configuration_18]] - `contains` [EXTRACTED]
 - [[Integration Guide]] - `contains` [EXTRACTED]
 - [[Integration Testing]] - `contains` [EXTRACTED]

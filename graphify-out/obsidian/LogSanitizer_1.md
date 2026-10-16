@@ -12,9 +12,9 @@ tags:
 # LogSanitizer
 
 ## Connections
-- [[dot-__init__()_16]] - `calls` [EXTRACTED]
+- [[dot-__init__()_162]] - `calls` [EXTRACTED]
 - [[dot-get_log_sanitizer()]] - `references` [EXTRACTED]
-- [[Action_2]] - `uses` [INFERRED]
+- [[Action_1]] - `uses` [INFERRED]
 - [[AgentRegistry]] - `uses` [INFERRED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ApprovalHardening]] - `uses` [INFERRED]
@@ -42,11 +42,11 @@ tags:
 - [[NetworkValidator]] - `uses` [INFERRED]
 - [[OAuthSecurityValidator]] - `uses` [INFERRED]
 - [[OutputCanary]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[PathIsolationConfig]] - `uses` [INFERRED]
 - [[PathIsolationManager]] - `uses` [INFERRED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
-- [[RBACManager_2]] - `uses` [INFERRED]
+- [[RBACManager_1]] - `uses` [INFERRED]
 - [[Resource_2]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
 - [[SessionManager]] - `uses` [INFERRED]
@@ -58,7 +58,7 @@ tags:
 - [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[ToolResultSanitizer_1]] - `uses` [INFERRED]
 - [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
-- [[ToolTier_1]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[XMLLeakFilter]] - `uses` [INFERRED]
 

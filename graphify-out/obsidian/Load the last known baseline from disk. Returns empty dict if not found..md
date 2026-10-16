@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/config_integrity.py"
 type: "rationale"
-community: ".check"
+community: "ConfigIntegrityMonitor"
 location: "L66"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/check
+  - community/ConfigIntegrityMonitor
 ---
 
 # Load the last known baseline from disk. Returns empty dict if not found.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_load_baseline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/check
+#graphify/rationale #graphify/EXTRACTED #community/ConfigIntegrityMonitor

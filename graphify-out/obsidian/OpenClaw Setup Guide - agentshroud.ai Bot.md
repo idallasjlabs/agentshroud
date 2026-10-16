@@ -12,7 +12,7 @@ tags:
 # OpenClaw Setup Guide - agentshroud.ai Bot
 
 ## Connections
-- [[Architecture Overview_1]] - `contains` [EXTRACTED]
+- [[Architecture Overview_2]] - `contains` [EXTRACTED]
 - [[Communication Channels]] - `contains` [EXTRACTED]
 - [[Data Locations]] - `contains` [EXTRACTED]
 - [[Initial Configuration]] - `contains` [EXTRACTED]

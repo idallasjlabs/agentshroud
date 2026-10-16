@@ -12,6 +12,6 @@ tags:
 # MCPProxy.check_approval_required(tool_call)
 
 ## Connections
-- [[Function Details_24]] - `contains` [EXTRACTED]
+- [[Function Details_25]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

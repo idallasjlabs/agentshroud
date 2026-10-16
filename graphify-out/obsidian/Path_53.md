@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: "gateway/proxy/dns_blocklist.py"
 type: "code"
-community: "test_security_toolchain.py"
-location: "L66"
+community: ".update"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/update
 ---
 
 # Path
 
 ## Connections
-- [[read_alerts()_1]] - `references` [EXTRACTED]
+- [[dot-__init__()_179]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/EXTRACTED #community/update

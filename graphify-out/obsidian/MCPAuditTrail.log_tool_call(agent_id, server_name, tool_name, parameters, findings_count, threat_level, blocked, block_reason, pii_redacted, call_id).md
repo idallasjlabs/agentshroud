@@ -12,6 +12,6 @@ tags:
 # MCPAuditTrail.log_tool_call(agent_id, server_name, tool_name, parameters, findings_count, threat_level, blocked, block_reason, pii_redacted, call_id)
 
 ## Connections
-- [[Function Details_22]] - `contains` [EXTRACTED]
+- [[Function Details_23]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mcp_auditpy

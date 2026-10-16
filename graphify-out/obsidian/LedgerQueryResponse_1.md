@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-query()]] - `references` [EXTRACTED]
-- [[LedgerConfig_1]] - `uses` [INFERRED]
+- [[LedgerConfig]] - `uses` [INFERRED]
 - [[LedgerEntry]] - `uses` [INFERRED]
 - [[LedgerQueryResponse]] - `uses` [INFERRED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "ssh-configuration.md"
+community: "SSH Configuration Guide"
 location: "L449"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ssh-configurationmd
+  - community/SSH_Configuration_Guide
 ---
 
 # P4 Low Priority Incidents
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Incident Response Plan]] - `contains` [EXTRACTED]
 - [[ssh-configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ssh-configurationmd
+#graphify/document #graphify/EXTRACTED #community/SSH_Configuration_Guide

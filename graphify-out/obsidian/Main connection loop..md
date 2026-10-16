@@ -12,6 +12,6 @@ tags:
 # Main connection loop.
 
 ## Connections
-- [[dot-run()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-run()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

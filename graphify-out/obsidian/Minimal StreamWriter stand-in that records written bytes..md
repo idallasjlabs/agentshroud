@@ -12,6 +12,6 @@ tags:
 # Minimal StreamWriter stand-in that records written bytes.
 
 ## Connections
-- [[_MockWriter_1]] - `rationale_for` [EXTRACTED]
+- [[_MockWriter]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/HTTPConnectProxy

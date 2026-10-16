@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "document"
-community: "4. Environment Variables"
+community: "Dockerfile — Bot (OpenClaw)"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/4_Environment_Variables
+  - community/Dockerfile__Bot_OpenClaw
 ---
 
 # Optional / Runtime
 
 ## Connections
-- [[Gateway Container (`agentshroud-gateway`)]] - `contains` [EXTRACTED]
+- [[Gateway Container (`agentshroud-gateway`)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/4_Environment_Variables
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw
