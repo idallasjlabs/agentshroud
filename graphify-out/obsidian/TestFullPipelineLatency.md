@@ -16,12 +16,12 @@ tags:
 - [[dot-test_single_message_pipeline_under_100ms()]] - `method` [EXTRACTED]
 - [[DataLedger]] - `uses` [INFERRED]
 - [[End-to-end pipeline latency for a single message.]] - `rationale_for` [EXTRACTED]
-- [[LedgerConfig_1]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[LedgerConfig]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[test_performance.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/PIIConfig

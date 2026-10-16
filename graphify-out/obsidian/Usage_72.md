@@ -1,17 +1,18 @@
 ---
-source_file: "skills/README.md"
+source_file: ".agents/skills/i-mc/README.md"
 type: "document"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L24"
+community: "GSDE&G Development Master Checklist Skill"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/GSDEG_Development_Master_Checklist_Skill
 ---
 
 # Usage
 
 ## Connections
-- [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)_1]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_Skill

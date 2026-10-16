@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[Action requires approval but none granted]] - `contains` [EXTRACTED]
-- [[Browser timeout]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected]] - `contains` [EXTRACTED]
+- [[Browser timeout_1]] - `contains` [EXTRACTED]
+- [[CAPTCHA detected_1]] - `contains` [EXTRACTED]
 - [[Rate limit exceeded]] - `contains` [EXTRACTED]
-- [[URL not in allowlist]] - `contains` [EXTRACTED]
+- [[URL not in allowlist_1]] - `contains` [EXTRACTED]
 - [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automation

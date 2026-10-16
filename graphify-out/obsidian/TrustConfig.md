@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "TrustConfig"
+community: "PIIConfig"
 location: "L53"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TrustConfig
+  - community/PIIConfig
 ---
 
 # TrustConfig
 
 ## Connections
-- [[dot-__init__()_26]] - `references` [EXTRACTED]
-- [[dot-__post_init__()_2]] - `method` [EXTRACTED]
+- [[dot-__init__()_99]] - `references` [EXTRACTED]
+- [[dot-__post_init__()]] - `method` [EXTRACTED]
 - [[dot-_pipeline_with_trust()]] - `calls` [EXTRACTED]
 - [[dot-_shared_tm()]] - `calls` [EXTRACTED]
 - [[dot-test_custom_points()]] - `calls` [EXTRACTED]
-- [[dot-test_default_config()_1]] - `calls` [EXTRACTED]
+- [[dot-test_default_config()]] - `calls` [EXTRACTED]
 - [[dot-test_empty_bot_list_does_not_raise()]] - `calls` [EXTRACTED]
 - [[dot-test_propagation_limited_to_max_depth()]] - `calls` [EXTRACTED]
 - [[dot-test_propagation_registers_unregistered_peer_agent()]] - `calls` [EXTRACTED]
@@ -34,7 +34,7 @@ tags:
 - [[TestActionGating]] - `uses` [INFERRED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAgentRegistration]] - `uses` [INFERRED]
-- [[TestAuditChain]] - `uses` [INFERRED]
+- [[TestAuditChain_1]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestBackwardCompat]] - `uses` [INFERRED]
 - [[TestBotIncidentSeverity]] - `uses` [INFERRED]
@@ -89,14 +89,14 @@ tags:
 - [[TrustLevel]] - `uses` [INFERRED]
 - [[TrustLevel_2]] - `uses` [INFERRED]
 - [[TrustManager_3]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
 - [[_BrokenOutputCanary]] - `uses` [INFERRED]
 - [[_BrokenSanitizer]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder_1]] - `uses` [INFERRED]
+- [[_StubForwarder]] - `uses` [INFERRED]
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
 - [[_make_tm()]] - `calls` [EXTRACTED]
 - [[hermes_tm()]] - `calls` [EXTRACTED]
@@ -110,8 +110,8 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_trust_manager.py]] - `imports` [EXTRACTED]
+- [[trust_manager()_1]] - `calls` [EXTRACTED]
 - [[trust_manager()_2]] - `calls` [EXTRACTED]
-- [[trust_manager()_3]] - `calls` [EXTRACTED]
 - [[trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TrustConfig
+#graphify/code #graphify/INFERRED #community/PIIConfig

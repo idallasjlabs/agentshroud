@@ -12,12 +12,12 @@ tags:
 # Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)
 
 ## Connections
-- [[Architecture_6]] - `contains` [EXTRACTED]
+- [[Architecture_7]] - `contains` [EXTRACTED]
 - [[Installation_3]] - `contains` [EXTRACTED]
 - [[Prerequisites_8]] - `contains` [EXTRACTED]
-- [[Security notes_4]] - `contains` [EXTRACTED]
+- [[Security notes_6]] - `contains` [EXTRACTED]
 - [[Success pattern — `docker logs agentshroud-voice-gateway`]] - `contains` [EXTRACTED]
-- [[Troubleshooting_28]] - `contains` [EXTRACTED]
+- [[Troubleshooting_27]] - `contains` [EXTRACTED]
 - [[Updating the firmware (OTA — the normal deploy path)]] - `contains` [EXTRACTED]
 - [[Usage_74]] - `contains` [EXTRACTED]
 - [[voice-terminal-esp32-s3]] - `contains` [EXTRACTED]

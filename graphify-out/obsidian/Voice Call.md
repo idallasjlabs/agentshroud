@@ -12,7 +12,7 @@ tags:
 # Voice Call
 
 ## Connections
-- [[CLI]] - `contains` [EXTRACTED]
+- [[CLI_1]] - `contains` [EXTRACTED]
 - [[Tool]] - `contains` [EXTRACTED]
 - [[voice-callSKILL]] - `contains` [EXTRACTED]
 

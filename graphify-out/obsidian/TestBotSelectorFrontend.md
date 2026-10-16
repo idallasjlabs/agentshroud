@@ -20,7 +20,7 @@ tags:
 - [[dot-test_security_events_nonexistent_bot_returns_empty_not_404()]] - `method` [EXTRACTED]
 - [[dot-test_single_bot_returns_list_of_one()]] - `method` [EXTRACTED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
-- [[Role_91]] - `uses` [INFERRED]
+- [[Role_22]] - `uses` [INFERRED]
 - [[Unit tests for the M6 bot selector backend — socv1bots + bot_id filtering.]] - `rationale_for` [EXTRACTED]
 - [[get_security_events()]] - `calls` [EXTRACTED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]

@@ -12,7 +12,7 @@ tags:
 # TestFileSandboxDefaultEnforce
 
 ## Connections
-- [[dot-test_default_mode_is_enforce()_5]] - `method` [EXTRACTED]
+- [[dot-test_default_mode_is_enforce()_1]] - `method` [EXTRACTED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EnvironmentGuard]] - `uses` [INFERRED]
 - [[FileSandboxConfig]] - `uses` [INFERRED]

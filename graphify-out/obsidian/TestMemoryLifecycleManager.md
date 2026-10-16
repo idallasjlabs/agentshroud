@@ -12,8 +12,8 @@ tags:
 # TestMemoryLifecycleManager
 
 ## Connections
-- [[dot-setup_method()_4]] - `method` [EXTRACTED]
-- [[dot-teardown_method()_3]] - `method` [EXTRACTED]
+- [[dot-setup_method()_13]] - `method` [EXTRACTED]
+- [[dot-teardown_method()_4]] - `method` [EXTRACTED]
 - [[dot-test_content_sanitization()]] - `method` [EXTRACTED]
 - [[dot-test_daily_notes_retention()]] - `method` [EXTRACTED]
 - [[dot-test_lifecycle_maintenance()]] - `method` [EXTRACTED]
@@ -26,7 +26,7 @@ tags:
 - [[ContentThreatType]] - `uses` [INFERRED]
 - [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
 - [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
-- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
+- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
 - [[MemoryLifecycleManager]] - `uses` [INFERRED]
 - [[MemorySecurityConfig]] - `uses` [INFERRED]
 - [[ModificationSource]] - `uses` [INFERRED]

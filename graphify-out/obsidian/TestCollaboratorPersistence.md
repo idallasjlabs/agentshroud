@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "TestCollaboratorPersistence"
+community: "Action"
 location: "L572"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCollaboratorPersistence
+  - community/Action
 ---
 
 # TestCollaboratorPersistence
@@ -32,15 +32,15 @@ tags:
 - [[dot-test_revoke_returns_false_on_io_error()]] - `method` [EXTRACTED]
 - [[dot-test_unpause_returns_false_on_inner_write_error()]] - `method` [EXTRACTED]
 - [[dot-test_unpause_returns_false_on_io_error()]] - `method` [EXTRACTED]
-- [[Action_2]] - `uses` [INFERRED]
+- [[Action_1]] - `uses` [INFERRED]
 - [[GroupRegistry]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
-- [[RBACManager_2]] - `uses` [INFERRED]
+- [[RBACManager_1]] - `uses` [INFERRED]
 - [[Resource_2]] - `uses` [INFERRED]
-- [[Role_91]] - `uses` [INFERRED]
-- [[ToolTier_1]] - `uses` [INFERRED]
+- [[Role_22]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 - [[removed_collaborator_ids  paused_collaborator_ids share approved_collaborators.]] - `rationale_for` [EXTRACTED]
 - [[test_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPersistence
+#graphify/code #graphify/EXTRACTED #community/Action

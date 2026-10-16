@@ -34,7 +34,7 @@ tags:
 - [[dot-test_looks_like_filename_reference_catches_common_extensions()]] - `method` [EXTRACTED]
 - [[dot-test_looks_like_filename_reference_rejects_real_domains()]] - `method` [EXTRACTED]
 - [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[Unit tests for outbound helper classifiers used by collaborator filtering.]] - `rationale_for` [EXTRACTED]

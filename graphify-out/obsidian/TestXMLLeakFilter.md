@@ -12,12 +12,12 @@ tags:
 # TestXMLLeakFilter
 
 ## Connections
-- [[dot-setup_method()_30]] - `method` [EXTRACTED]
+- [[dot-setup_method()_23]] - `method` [EXTRACTED]
 - [[dot-test_clean_response_passes_through()]] - `method` [EXTRACTED]
 - [[dot-test_file_path_removal()]] - `method` [EXTRACTED]
 - [[dot-test_function_calls_xml_removal()]] - `method` [EXTRACTED]
 - [[dot-test_quick_function_calls_filter()]] - `method` [EXTRACTED]
-- [[FilterResult_1]] - `uses` [INFERRED]
+- [[FilterResult]] - `uses` [INFERRED]
 - [[Test cases for XMLLeakFilter.]] - `rationale_for` [EXTRACTED]
 - [[XMLLeakFilter]] - `uses` [INFERRED]
 - [[test_xml_leak_filter.py]] - `contains` [EXTRACTED]

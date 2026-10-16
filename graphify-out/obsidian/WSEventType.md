@@ -12,13 +12,13 @@ tags:
 # WSEventType
 
 ## Connections
-- [[Enum_1]] - `inherits` [EXTRACTED]
-- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[SOCWebSocketHandler_2]] - `uses` [INFERRED]
 - [[WSEvent_1]] - `uses` [INFERRED]
-- [[WebSocket_1]] - `uses` [INFERRED]
+- [[WebSocket]] - `uses` [INFERRED]
 - [[_handleWSEvent()]] - `shares_data_with` [INFERRED]
 - [[socmodels.py]] - `contains` [EXTRACTED]
-- [[str_1]] - `inherits` [EXTRACTED]
+- [[str_3]] - `inherits` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[test_soc_websocket.py]] - `imports` [EXTRACTED]

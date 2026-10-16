@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_metadata_guard.py"
 type: "code"
-community: "TestDocumentTagging"
+community: "test_prompt_guard.py"
 location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDocumentTagging
+  - community/test_prompt_guardpy
 ---
 
 # TestDocumentTagging
 
 ## Connections
-- [[dot-guard()_6]] - `method` [EXTRACTED]
+- [[dot-guard()_4]] - `method` [EXTRACTED]
 - [[dot-test_document_tag_creation()]] - `method` [EXTRACTED]
 - [[dot-test_document_tag_lookup_by_hash()]] - `method` [EXTRACTED]
 - [[dot-test_document_tag_untrusted_source()]] - `method` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[MetadataGuard]] - `uses` [INFERRED]
 - [[test_metadata_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDocumentTagging
+#graphify/code #graphify/EXTRACTED #community/test_prompt_guardpy

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-check_vram_headroom()]] - `calls` [EXTRACTED]
-- [[Exception_2]] - `inherits` [EXTRACTED]
+- [[Exception_1]] - `inherits` [EXTRACTED]
 - [[Raised when a local-model call is rejected because estimated VRAM usage     woul]] - `rationale_for` [EXTRACTED]
 - [[TestCpuMemoryDiskLimits]] - `uses` [INFERRED]
 - [[TestExpiredUsageCleanup]] - `uses` [INFERRED]

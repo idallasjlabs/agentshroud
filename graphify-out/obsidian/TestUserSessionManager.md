@@ -24,7 +24,7 @@ tags:
 - [[dot-test_session_prompt_isolation()]] - `method` [EXTRACTED]
 - [[dot-test_trust_level_per_user()]] - `method` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[Role_91]] - `uses` [INFERRED]
+- [[Role_22]] - `uses` [INFERRED]
 - [[Test the UserSessionManager for per-user isolation.]] - `rationale_for` [EXTRACTED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[WebhookReceiver]] - `uses` [INFERRED]

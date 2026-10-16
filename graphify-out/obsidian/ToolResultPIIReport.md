@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_scan()]] - `references` [EXTRACTED]
 - [[dot-scan_prompt()]] - `references` [EXTRACTED]
-- [[dot-scan_tool_result()_2]] - `references` [EXTRACTED]
+- [[dot-scan_tool_result()]] - `references` [EXTRACTED]
 - [[Full scan result for a tool result or prompt.]] - `rationale_for` [EXTRACTED]
 - [[differential_pii_detector.py]] - `contains` [EXTRACTED]
 

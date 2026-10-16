@@ -12,7 +12,7 @@ tags:
 # TestKeyRotationManager
 
 ## Connections
-- [[dot-manager()]] - `method` [EXTRACTED]
+- [[dot-manager()_1]] - `method` [EXTRACTED]
 - [[dot-sample_credential()]] - `method` [EXTRACTED]
 - [[dot-test_get_credential_status()]] - `method` [EXTRACTED]
 - [[dot-test_get_health_score_all_healthy()]] - `method` [EXTRACTED]
@@ -20,7 +20,7 @@ tags:
 - [[dot-test_register_credential()]] - `method` [EXTRACTED]
 - [[dot-test_register_validator()]] - `method` [EXTRACTED]
 - [[CredentialInfo]] - `uses` [INFERRED]
-- [[CredentialRotationPolicy]] - `uses` [INFERRED]
+- [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
 - [[CredentialValidator]] - `uses` [INFERRED]
 - [[KeyRotationConfig_1]] - `uses` [INFERRED]
 - [[KeyRotationManager]] - `uses` [INFERRED]

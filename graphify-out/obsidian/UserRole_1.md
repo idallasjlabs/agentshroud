@@ -12,7 +12,7 @@ tags:
 # UserRole
 
 ## Connections
-- [[ContributorRecord]] - `uses` [INFERRED]
+- [[ContributorRecord_1]] - `uses` [INFERRED]
 - [[Platform]] - `uses` [INFERRED]
 - [[UserRole]] - `uses` [INFERRED]
 - [[_role_enum()]] - `references` [EXTRACTED]

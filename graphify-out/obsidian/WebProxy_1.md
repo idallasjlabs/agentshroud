@@ -12,8 +12,8 @@ tags:
 # WebProxy
 
 ## Connections
-- [[dot-__init__()_106]] - `references` [EXTRACTED]
+- [[dot-__init__()_105]] - `references` [EXTRACTED]
 - [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[WebProxyConfig_1]] - `uses` [INFERRED]
 
 #graphify/code #graphify/INFERRED #community/WebProxyConfig

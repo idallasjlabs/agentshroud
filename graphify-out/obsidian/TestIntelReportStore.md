@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_make_report()]] - `method` [EXTRACTED]
-- [[dot-store()_2]] - `method` [EXTRACTED]
+- [[dot-store()_1]] - `method` [EXTRACTED]
 - [[dot-store_dir()]] - `method` [EXTRACTED]
 - [[dot-test_chain_hash_links_reports()]] - `method` [EXTRACTED]
 - [[dot-test_integrity_check_fails_for_tampered_file()]] - `method` [EXTRACTED]
@@ -30,7 +30,7 @@ tags:
 - [[dot-test_verify_chain_empty_store_is_valid()]] - `method` [EXTRACTED]
 - [[dot-test_verify_chain_fails_for_tampered_entry()]] - `method` [EXTRACTED]
 - [[dot-test_verify_chain_passes_for_intact_store()]] - `method` [EXTRACTED]
-- [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
+- [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
 - [[CompetitorEntry]] - `uses` [INFERRED]
 - [[IntelReportStore_1]] - `uses` [INFERRED]
 - [[ReportIntegrityError]] - `uses` [INFERRED]

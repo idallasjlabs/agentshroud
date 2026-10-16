@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
+source_file: "BRAND.md"
 type: "document"
-community: "hermes/skills/i-cr/SKILL.md"
-location: "L201"
+community: "AgentShroud™ Brand Guidelines"
+location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-cr/SKILLmd
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Voice & Tone
 
 ## Connections
-- [[Writing Style Rules_1]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

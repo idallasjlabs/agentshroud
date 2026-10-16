@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "rationale"
-community: "api.py"
+community: "CompetitiveIntelReport"
 location: "L223"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apipy
+  - community/CompetitiveIntelReport
 ---
 
 # Verify every draft claim; return a report of only verified claims.          Clai
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-verify_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apipy
+#graphify/rationale #graphify/EXTRACTED #community/CompetitiveIntelReport

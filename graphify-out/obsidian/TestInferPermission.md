@@ -18,11 +18,11 @@ tags:
 - [[dot-test_pattern_list()]] - `method` [EXTRACTED]
 - [[dot-test_pattern_read()]] - `method` [EXTRACTED]
 - [[dot-test_pattern_sensitive()]] - `method` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]
 - [[MCPToolConfig]] - `uses` [INFERRED]
-- [[PermissionLevel_1]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
 - [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PermissionLevel

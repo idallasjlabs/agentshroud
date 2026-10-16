@@ -32,7 +32,7 @@ tags:
 - [[dot-test_extract_first_egress_target_supports_protocol_relative_with_query()]] - `method` [EXTRACTED]
 - [[dot-test_extract_first_egress_target_trims_wrapping_quotes()]] - `method` [EXTRACTED]
 - [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[Unit tests for outbound target extraction helper used by egress preflight.]] - `rationale_for` [EXTRACTED]

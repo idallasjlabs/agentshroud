@@ -12,7 +12,7 @@ tags:
 # TestPerBotGroupMentionFilter
 
 ## Connections
-- [[dot-_make_proxy()_4]] - `method` [EXTRACTED]
+- [[dot-_make_proxy()_2]] - `method` [EXTRACTED]
 - [[dot-test_hermes_mention_ignored_when_processed_as_openclaw()]] - `method` [EXTRACTED]
 - [[dot-test_hermes_mention_sets_hermes_eligibility()]] - `method` [EXTRACTED]
 - [[dot-test_openclaw_mention_does_not_affect_hermes_eligibility()]] - `method` [EXTRACTED]

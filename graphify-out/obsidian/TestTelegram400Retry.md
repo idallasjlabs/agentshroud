@@ -17,7 +17,7 @@ tags:
 - [[dot-test_400_retry_succeeds_when_text_strippable()]] - `method` [EXTRACTED]
 - [[B1 one-shot 400-retry for unbalanced HTML parse errors.]] - `rationale_for` [EXTRACTED]
 - [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]

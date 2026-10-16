@@ -17,7 +17,7 @@ tags:
 - [[dot-test_payload_count_meets_minimum()]] - `method` [EXTRACTED]
 - [[End-to-end all 110+ payloads against combined defense layer.]] - `rationale_for` [EXTRACTED]
 - [[HeuristicClassifier_1]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[TestContextIntegrityScorer]] - `semantically_similar_to` [INFERRED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 

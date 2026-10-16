@@ -30,7 +30,7 @@ tags:
 - [[dot-test_is_valid_domain_name_rejects_whitespace_inside_label()]] - `method` [EXTRACTED]
 - [[dot-test_is_valid_domain_name_strips_surrounding_whitespace()]] - `method` [EXTRACTED]
 - [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[Unit tests for domain validator used by egress approval flow.]] - `rationale_for` [EXTRACTED]

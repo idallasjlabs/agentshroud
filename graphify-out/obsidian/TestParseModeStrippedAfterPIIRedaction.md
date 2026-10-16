@@ -18,7 +18,7 @@ tags:
 - [[dot-test_parse_mode_preserved_and_placeholder_escaped_pipeline_path()]] - `method` [EXTRACTED]
 - [[dot-test_parse_mode_preserved_when_no_pii_detected()]] - `method` [EXTRACTED]
 - [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[Regression tests for Telegram HTML parse error caused by PII placeholders.]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]

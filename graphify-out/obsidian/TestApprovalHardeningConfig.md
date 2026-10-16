@@ -12,8 +12,8 @@ tags:
 # TestApprovalHardeningConfig
 
 ## Connections
-- [[dot-test_custom_config()_1]] - `method` [EXTRACTED]
-- [[dot-test_default_config()_4]] - `method` [EXTRACTED]
+- [[dot-test_custom_config()_2]] - `method` [EXTRACTED]
+- [[dot-test_default_config()_5]] - `method` [EXTRACTED]
 - [[ApprovalHardening]] - `uses` [INFERRED]
 - [[ApprovalHardeningConfig]] - `uses` [INFERRED]
 - [[DeceptionDetection]] - `uses` [INFERRED]

@@ -12,7 +12,7 @@ tags:
 # TestContextGuard
 
 ## Connections
-- [[dot-guard()]] - `method` [EXTRACTED]
+- [[dot-guard()_1]] - `method` [EXTRACTED]
 - [[dot-test_clean_conversation()]] - `method` [EXTRACTED]
 - [[dot-test_context_window_stuffing()]] - `method` [EXTRACTED]
 - [[dot-test_conversation_history_manipulation()]] - `method` [EXTRACTED]
@@ -47,7 +47,7 @@ tags:
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[PKCEViolation]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[RedirectMismatch]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
 - [[ResourceLimits]] - `uses` [INFERRED]
@@ -56,7 +56,7 @@ tags:
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test context manipulation detection.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/AlertDispatcher

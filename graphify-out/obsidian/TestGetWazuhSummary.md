@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_scanner_integration.py"
+community: "test_security_toolchain.py"
 location: "L338"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/test_security_toolchainpy
 ---
 
 # TestGetWazuhSummary
 
 ## Connections
-- [[dot-test_clean_when_installed_not_running()_2]] - `method` [EXTRACTED]
+- [[dot-test_clean_when_installed_not_running()_1]] - `method` [EXTRACTED]
 - [[dot-test_not_run_when_no_alert_dir()_1]] - `method` [EXTRACTED]
 - [[dot-test_returns_summary_for_empty_dir()_1]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

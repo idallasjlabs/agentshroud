@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "ProxyAction"
+community: "WebProxyConfig"
 location: "L482"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ProxyAction
+  - community/WebProxyConfig
 ---
 
 # TestEncodedPayloads
@@ -18,7 +18,7 @@ tags:
 - [[ProxyAction]] - `uses` [INFERRED]
 - [[RateLimiter]] - `uses` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[WebProxyConfig_1]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ProxyAction
+#graphify/code #graphify/INFERRED #community/WebProxyConfig

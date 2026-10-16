@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "TestGoogleAPIProxy"
+community: "test_main_endpoints.py"
 location: "L240"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestGoogleAPIProxy
+  - community/test_main_endpointspy
 ---
 
 # TestGoogleAPIProxy
@@ -17,4 +17,4 @@ tags:
 - [[Regression tests for v1beta proxy response handling.]] - `rationale_for` [EXTRACTED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestGoogleAPIProxy
+#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy

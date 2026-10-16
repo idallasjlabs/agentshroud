@@ -17,7 +17,7 @@ tags:
 - [[dot-test_returns_default_when_no_bots_config()]] - `method` [EXTRACTED]
 - [[dot-test_returns_registered_bots()]] - `method` [EXTRACTED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
-- [[Role_91]] - `uses` [INFERRED]
+- [[Role_22]] - `uses` [INFERRED]
 - [[list_bots()]] - `calls` [EXTRACTED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 

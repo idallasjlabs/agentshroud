@@ -18,7 +18,7 @@ tags:
 - [[dot-test_shell_injection_detected()]] - `method` [EXTRACTED]
 - [[dot-test_sql_injection_detected()]] - `method` [EXTRACTED]
 - [[dot-xml_filter()]] - `method` [EXTRACTED]
-- [[FilterResult_1]] - `uses` [INFERRED]
+- [[FilterResult]] - `uses` [INFERRED]
 - [[XMLLeakFilter]] - `uses` [INFERRED]
 - [[test_xml_leak_filter.py]] - `contains` [EXTRACTED]
 

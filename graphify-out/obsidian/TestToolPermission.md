@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "TestToolPermission"
+community: "MCPPermissionManager"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolPermission
+  - community/MCPPermissionManager
 ---
 
 # TestToolPermission
@@ -33,11 +33,11 @@ tags:
 - [[dot-test_read_tool_at_trust_0()]] - `method` [EXTRACTED]
 - [[dot-test_write_tool_allowed_at_trust_1()]] - `method` [EXTRACTED]
 - [[dot-test_write_tool_denied_at_trust_0()]] - `method` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]
 - [[MCPToolConfig]] - `uses` [INFERRED]
-- [[PermissionLevel_1]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
 - [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolPermission
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

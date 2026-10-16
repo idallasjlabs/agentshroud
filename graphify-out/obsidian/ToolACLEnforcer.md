@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "RBACConfig"
+community: "TrustConfig"
 location: "L206"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/TrustConfig
 ---
 
 # ToolACLEnforcer
 
 ## Connections
-- [[dot-__init__()_186]] - `method` [EXTRACTED]
+- [[dot-__init__()_98]] - `method` [EXTRACTED]
 - [[dot-_can_use_tool_impl()]] - `method` [EXTRACTED]
 - [[dot-_get_group_tool_allowlist()]] - `method` [EXTRACTED]
 - [[dot-_get_role()]] - `method` [EXTRACTED]
@@ -47,7 +47,7 @@ tags:
 - [[ProgressiveTrustConfig_1]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
-- [[Role_91]] - `uses` [INFERRED]
+- [[Role_22]] - `uses` [INFERRED]
 - [[TeamsConfig_1]] - `uses` [INFERRED]
 - [[TestAdminAccess]] - `uses` [INFERRED]
 - [[TestBackwardCompat]] - `uses` [INFERRED]
@@ -78,10 +78,10 @@ tags:
 - [[TestViewerAccess]] - `uses` [INFERRED]
 - [[ToolACLConfig]] - `shares_data_with` [EXTRACTED]
 - [[TrustLevel_2]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[can_use_tool_from_origin]] - `conceptually_related_to` [EXTRACTED]
+- [[enforcer()_3]] - `calls` [EXTRACTED]
 - [[enforcer()_1]] - `calls` [EXTRACTED]
-- [[enforcer()_2]] - `calls` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_group_rbac.py]] - `imports` [EXTRACTED]
@@ -90,4 +90,4 @@ tags:
 - [[test_tool_acl.py]] - `references` [EXTRACTED]
 - [[tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

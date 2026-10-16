@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "run_trivy_scan"
+community: "test_daily_cve_report.py"
 location: "L184"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run_trivy_scan
+  - community/test_daily_cve_reportpy
 ---
 
 # TestTrivyRun
@@ -23,4 +23,4 @@ tags:
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run_trivy_scan
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

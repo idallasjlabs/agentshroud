@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "TestFromAuditChainEntry"
+community: "test_soc_realtime_coverage.py"
 location: "L503"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFromAuditChainEntry
+  - community/test_soc_realtime_coveragepy
 ---
 
 # TestCollectRecentEvents
@@ -16,13 +16,13 @@ tags:
 - [[dot-test_none_store_returns_empty()]] - `method` [EXTRACTED]
 - [[dot-test_severity_filter_drops_lower()]] - `method` [EXTRACTED]
 - [[dot-test_store_error_returns_empty()]] - `method` [EXTRACTED]
-- [[Action_2]] - `uses` [INFERRED]
+- [[Action_1]] - `uses` [INFERRED]
 - [[PermissionResult]] - `uses` [INFERRED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
 - [[Resource_2]] - `uses` [INFERRED]
-- [[Role_91]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
+- [[Role_22]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler_2]] - `uses` [INFERRED]
 - [[collect_recent_events()]] - `calls` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFromAuditChainEntry
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

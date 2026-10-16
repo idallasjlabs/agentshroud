@@ -31,7 +31,7 @@ tags:
 - [[dot-test_security_model()]] - `method` [EXTRACTED]
 - [[dot-test_what_can_you_capability()]] - `method` [EXTRACTED]
 - [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[Static response builder for collaborator conceptual queries.]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]

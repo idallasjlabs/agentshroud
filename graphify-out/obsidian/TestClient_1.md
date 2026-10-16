@@ -12,7 +12,7 @@ tags:
 # TestClient
 
 ## Connections
-- [[dot-client()_7]] - `references` [EXTRACTED]
+- [[dot-client()_6]] - `references` [EXTRACTED]
 - [[dot-test_reload_requires_auth()]] - `calls` [EXTRACTED]
 - [[dot-test_reload_returns_200_with_skills_list()]] - `references` [EXTRACTED]
 - [[dot-test_reload_returns_500_on_source_missing()]] - `references` [EXTRACTED]

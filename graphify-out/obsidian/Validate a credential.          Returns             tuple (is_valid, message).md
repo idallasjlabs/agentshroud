@@ -12,6 +12,6 @@ tags:
 # Validate a credential.          Returns:             tuple: (is_valid, message)
 
 ## Connections
-- [[dot-validate()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-validate()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager

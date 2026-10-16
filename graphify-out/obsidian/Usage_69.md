@@ -1,17 +1,23 @@
 ---
-source_file: "docker/config/hermes/skills/graphify/SKILL.md"
+source_file: ".agents/skills/i-browser/SKILL.md"
 type: "document"
-community: "What You Must Do When Invoked"
-location: "L10"
+community: "Browser — Secure Browser Automation"
+location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Usage
 
 ## Connections
-- [[graphify_1]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
+- [[Click Element_3]] - `contains` [EXTRACTED]
+- [[Extract Data_3]] - `contains` [EXTRACTED]
+- [[Fetch JavaScript-Heavy Page (Node.js)_2]] - `contains` [EXTRACTED]
+- [[Fill Form_2]] - `contains` [EXTRACTED]
+- [[Navigate to URL_3]] - `contains` [EXTRACTED]
+- [[Take Screenshot_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

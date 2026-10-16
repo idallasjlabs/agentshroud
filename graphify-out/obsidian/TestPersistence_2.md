@@ -1,28 +1,20 @@
 ---
-source_file: "gateway/tests/test_enhanced_approval.py"
+source_file: "gateway/tests/test_report_store.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L317"
+community: "ReportStore"
+location: "L90"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ApprovalQueueConfig
+  - graphify/EXTRACTED
+  - community/ReportStore
 ---
 
 # TestPersistence
 
 ## Connections
-- [[dot-test_restart_recovery_preserves_timeout_action()]] - `method` [EXTRACTED]
-- [[dot-test_restore_pending_items()]] - `method` [EXTRACTED]
-- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
-- [[ApprovalRequest_4]] - `uses` [INFERRED]
-- [[ApprovalStore]] - `uses` [INFERRED]
-- [[EnhancedApprovalQueue_2]] - `uses` [INFERRED]
-- [[MCPProxy_1]] - `uses` [INFERRED]
-- [[MCPToolCall_1]] - `uses` [INFERRED]
-- [[Test SQLite persistence across restarts.]] - `rationale_for` [EXTRACTED]
-- [[ToolRiskConfig]] - `uses` [INFERRED]
-- [[ToolRiskPolicy]] - `uses` [INFERRED]
-- [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
+- [[dot-test_delete()]] - `method` [EXTRACTED]
+- [[dot-test_survives_new_instance()]] - `method` [EXTRACTED]
+- [[ReportStore]] - `uses` [INFERRED]
+- [[test_report_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/ReportStore

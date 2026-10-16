@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
+source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
 type: "document"
-community: "AGENTSHROUD_MODE"
+community: "egress_filter.py"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AGENTSHROUD_MODE
+  - community/egress_filterpy
 ---
 
 # Values
 
 ## Connections
-- [[OPENCLAW_SANDBOX_MODE]] - `contains` [EXTRACTED]
+- [[AGENTSHROUD_MODE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_MODE
+#graphify/document #graphify/EXTRACTED #community/egress_filterpy

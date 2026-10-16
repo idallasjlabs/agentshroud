@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "_make_filter"
+community: "EgressFilterConfig"
 location: "L91"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_make_filter
+  - community/EgressFilterConfig
 ---
 
 # TestMonitorMode
@@ -17,10 +17,10 @@ tags:
 - [[ApprovalResult]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
 - [[EgressAttempt]] - `uses` [INFERRED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
+- [[EgressFilter_2]] - `uses` [INFERRED]
 - [[EgressFilter in monitor mode should allow but log unlisted destinations.]] - `rationale_for` [EXTRACTED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_make_filter
+#graphify/code #graphify/INFERRED #community/EgressFilterConfig

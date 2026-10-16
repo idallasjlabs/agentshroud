@@ -1,8 +1,8 @@
 ---
-source_file: ".agents/skills/i-sav/README.md"
+source_file: ".agents/skills/i-sec-offense/README.md"
 type: "document"
 community: ".agents/skills/i-cr/SKILL.md"
-location: "L9"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # Usage
 
 ## Connections
-- [[System Audit Vault_1]] - `contains` [EXTRACTED]
+- [[Red Team Adversarial Tester (SEC-OFFENSE)_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

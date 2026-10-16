@@ -12,7 +12,7 @@ tags:
 # TestHeuristicClassifier
 
 ## Connections
-- [[dot-setup_method()_19]] - `method` [EXTRACTED]
+- [[dot-setup_method()_35]] - `method` [EXTRACTED]
 - [[dot-test_backward_compat_alias()]] - `method` [EXTRACTED]
 - [[dot-test_benign_text_low_score()]] - `method` [EXTRACTED]
 - [[dot-test_classification_result_properties()]] - `method` [EXTRACTED]

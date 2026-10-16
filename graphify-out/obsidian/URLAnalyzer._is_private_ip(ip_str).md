@@ -12,6 +12,6 @@ tags:
 # URLAnalyzer._is_private_ip(ip_str)
 
 ## Connections
-- [[Function Details_36]] - `contains` [EXTRACTED]
+- [[Function Details_37]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/url_analyzerpy

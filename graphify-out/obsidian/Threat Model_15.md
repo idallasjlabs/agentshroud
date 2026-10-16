@@ -12,6 +12,6 @@ tags:
 # Threat Model
 
 ## Connections
-- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
+- [[prompt_guard.py]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/prompt_guardpymd

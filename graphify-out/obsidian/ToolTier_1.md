@@ -1,37 +1,65 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "Action"
-location: "L173"
+community: "MiddlewareManager"
+location: "L925"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Action
+  - community/MiddlewareManager
 ---
 
 # ToolTier
 
 ## Connections
-- [[dot-_build_tool_permissions()]] - `references` [EXTRACTED]
-- [[dot-check_tool_permission()]] - `references` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any]] - `uses` [INFERRED]
-- [[Exception]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
+- [[dot-_analyze_request_for_rbac()]] - `references` [EXTRACTED]
+- [[Action_1]] - `uses` [INFERRED]
+- [[AgentRegistry]] - `uses` [INFERRED]
+- [[AlertDispatcher]] - `uses` [INFERRED]
+- [[ApprovalHardening]] - `uses` [INFERRED]
+- [[ApprovalHardeningConfig]] - `uses` [INFERRED]
+- [[BrowserSecurityGuard]] - `uses` [INFERRED]
+- [[ConsentFramework]] - `uses` [INFERRED]
+- [[ContextGuard]] - `uses` [INFERRED]
+- [[DNSFilter]] - `uses` [INFERRED]
+- [[DNSFilterConfig]] - `uses` [INFERRED]
+- [[DriftDetector]] - `uses` [INFERRED]
+- [[EgressMonitor]] - `uses` [INFERRED]
+- [[EgressMonitorConfig]] - `uses` [INFERRED]
+- [[EnvironmentGuard]] - `uses` [INFERRED]
+- [[FileSandbox]] - `uses` [INFERRED]
+- [[FileSandboxConfig]] - `uses` [INFERRED]
+- [[GitGuard]] - `uses` [INFERRED]
+- [[KeyRotationManager]] - `uses` [INFERRED]
+- [[KillSwitchMonitor]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
+- [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
+- [[MemoryLifecycleManager]] - `uses` [INFERRED]
+- [[MemorySecurityConfig]] - `uses` [INFERRED]
+- [[MetadataGuard]] - `uses` [INFERRED]
+- [[MultiTurnTracker]] - `uses` [INFERRED]
+- [[NetworkValidator]] - `uses` [INFERRED]
+- [[OAuthSecurityValidator]] - `uses` [INFERRED]
+- [[OutputCanary]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
+- [[PathIsolationConfig]] - `uses` [INFERRED]
+- [[PathIsolationManager]] - `uses` [INFERRED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
-- [[Role_91]] - `uses` [INFERRED]
-- [[TestCollaboratorPersistence]] - `uses` [INFERRED]
-- [[TestGroupRegistry]] - `uses` [INFERRED]
-- [[TestRBACConfig]] - `uses` [INFERRED]
-- [[TestRBACErrorHandling]] - `uses` [INFERRED]
-- [[TestRBACIntegration]] - `uses` [INFERRED]
-- [[TestRBACManager]] - `uses` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
+- [[RBACManager_1]] - `uses` [INFERRED]
+- [[Resource_2]] - `uses` [INFERRED]
+- [[ResourceGuard]] - `uses` [INFERRED]
+- [[SessionManager]] - `uses` [INFERRED]
+- [[SubagentMonitor]] - `uses` [INFERRED]
+- [[SubagentMonitorConfig]] - `uses` [INFERRED]
+- [[ToolChainAnalyzer]] - `uses` [INFERRED]
+- [[ToolResultInjectionScanner]] - `uses` [INFERRED]
+- [[ToolResultPIIConfig]] - `uses` [INFERRED]
+- [[ToolResultSanitizer]] - `uses` [INFERRED]
+- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
+- [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
 - [[ToolTier_2]] - `uses` [INFERRED]
+- [[UserSessionManager]] - `uses` [INFERRED]
+- [[XMLLeakFilter]] - `uses` [INFERRED]
+- [[middleware.py_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Action
+#graphify/code #graphify/INFERRED #community/MiddlewareManager

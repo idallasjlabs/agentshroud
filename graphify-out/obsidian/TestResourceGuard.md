@@ -12,8 +12,8 @@ tags:
 # TestResourceGuard
 
 ## Connections
-- [[dot-setup_method()_12]] - `method` [EXTRACTED]
-- [[dot-teardown_method()_6]] - `method` [EXTRACTED]
+- [[dot-setup_method()_6]] - `method` [EXTRACTED]
+- [[dot-teardown_method()_2]] - `method` [EXTRACTED]
 - [[dot-test_brief_spike_below_debounce_does_not_alert()]] - `method` [EXTRACTED]
 - [[dot-test_check_resource_over_limit_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_check_resource_temp_files_limit()]] - `method` [EXTRACTED]

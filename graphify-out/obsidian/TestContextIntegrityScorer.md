@@ -21,7 +21,7 @@ tags:
 - [[ContextIntegrityScorer]] - `uses` [INFERRED]
 - [[ContextSegment]] - `uses` [INFERRED]
 - [[IntegrityScore]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[TestOverallDetectionRate]] - `semantically_similar_to` [INFERRED]
 - [[test_context_integrity.py]] - `contains` [EXTRACTED]
 

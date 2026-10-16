@@ -12,6 +12,6 @@ tags:
 # Three-Network Architecture
 
 ## Connections
-- [[Network Topology]] - `contains` [EXTRACTED]
+- [[Network Topology_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture

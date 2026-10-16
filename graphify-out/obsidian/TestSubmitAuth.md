@@ -12,7 +12,7 @@ tags:
 # TestSubmitAuth
 
 ## Connections
-- [[dot-test_requires_auth()_2]] - `method` [EXTRACTED]
+- [[dot-test_requires_auth()_3]] - `method` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[FetchOutcome_1]] - `uses` [INFERRED]
 - [[test_intel_endpoint.py]] - `contains` [EXTRACTED]

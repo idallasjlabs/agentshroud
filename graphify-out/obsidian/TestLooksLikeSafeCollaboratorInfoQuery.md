@@ -32,7 +32,7 @@ tags:
 - [[dot-test_what_can_you_question()]] - `method` [EXTRACTED]
 - [[Classifier for conceptual collaborator questions.]] - `rationale_for` [EXTRACTED]
 - [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]

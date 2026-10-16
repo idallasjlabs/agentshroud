@@ -13,12 +13,12 @@ tags:
 
 ## Connections
 - [[ContributorManager]] - `uses` [INFERRED]
-- [[ContributorRecord_1]] - `uses` [INFERRED]
-- [[Enum_1]] - `inherits` [EXTRACTED]
+- [[ContributorRecord]] - `uses` [INFERRED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[UserRole_1]] - `uses` [INFERRED]
 - [[contributors.py]] - `imports` [EXTRACTED]
 - [[socmodels.py]] - `contains` [EXTRACTED]
-- [[str_1]] - `inherits` [EXTRACTED]
+- [[str_3]] - `inherits` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

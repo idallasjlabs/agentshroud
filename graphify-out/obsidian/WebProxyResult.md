@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-check_request()]] - `calls` [EXTRACTED]
-- [[dot-flagged()]] - `method` [EXTRACTED]
+- [[dot-flagged()_1]] - `method` [EXTRACTED]
 - [[dot-scan_response()]] - `calls` [EXTRACTED]
 - [[dot-to_dict()]] - `method` [EXTRACTED]
 - [[MockDNSVerdict]] - `uses` [INFERRED]
@@ -24,6 +24,6 @@ tags:
 - [[Result of proxying a web request.]] - `rationale_for` [EXTRACTED]
 - [[TestWebProxySecurityIntegration]] - `uses` [INFERRED]
 - [[test_web_proxy_security.py]] - `imports` [EXTRACTED]
-- [[web_proxy.py_2]] - `contains` [EXTRACTED]
+- [[web_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ProxyAction

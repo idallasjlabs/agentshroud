@@ -29,7 +29,7 @@ tags:
 - [[dot-test_score_clamped_to_hundred()]] - `method` [EXTRACTED]
 - [[dot-test_score_clamped_to_zero()]] - `method` [EXTRACTED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
-- [[Role_91]] - `uses` [INFERRED]
+- [[Role_22]] - `uses` [INFERRED]
 - [[compute_bot_scorecard()]] - `calls` [EXTRACTED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 

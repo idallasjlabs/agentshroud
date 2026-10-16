@@ -12,7 +12,7 @@ tags:
 # TestAuditStoreBotId
 
 ## Connections
-- [[dot-store()_1]] - `method` [EXTRACTED]
+- [[dot-store()_2]] - `method` [EXTRACTED]
 - [[dot-test_event_to_dict_includes_bot_id()]] - `method` [EXTRACTED]
 - [[dot-test_log_event_default_bot_id_is_openclaw()]] - `method` [EXTRACTED]
 - [[dot-test_log_event_stores_bot_id()]] - `method` [EXTRACTED]

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "rationale"
-community: "PipelineAction"
+community: "AuditChain"
 location: "L272"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/AuditChain
 ---
 
 # Verify the integrity of the retained hash-chain window.          When the bounde
 
 ## Connections
-- [[dot-verify_chain()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-verify_chain()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PipelineAction
+#graphify/rationale #graphify/EXTRACTED #community/AuditChain

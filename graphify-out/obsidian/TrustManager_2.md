@@ -1,18 +1,26 @@
 ---
-source_file: "gateway/security/cross_bot_trust_ledger.py"
+source_file: "gateway/tests/test_a2a_trust_scoring.py"
 type: "code"
-community: "CrossBotTrustLedger"
-location: "L209"
+community: "A2APolicyEngine"
+location: "L93"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - graphify/INFERRED
+  - community/A2APolicyEngine
 ---
 
 # TrustManager
 
 ## Connections
-- [[dot-register_trust_manager()]] - `references` [EXTRACTED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[A2APolicyConfig_1]] - `uses` [INFERRED]
+- [[A2APolicyEngine_2]] - `uses` [INFERRED]
+- [[A2AProxy_1]] - `uses` [INFERRED]
+- [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
+- [[ViolationType]] - `uses` [INFERRED]
+- [[test_generic_denial_does_not_record_a2a_specific_violation_types()]] - `references` [EXTRACTED]
+- [[test_ssrf_callback_rejection_triggers_severe_demotion()]] - `references` [EXTRACTED]
+- [[test_task_ownership_violation_records_a2a_violation_type()]] - `references` [EXTRACTED]
+- [[trust_manager()_5]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/INFERRED #community/A2APolicyEngine

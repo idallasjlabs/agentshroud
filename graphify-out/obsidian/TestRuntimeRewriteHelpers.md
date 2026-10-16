@@ -23,7 +23,7 @@ tags:
 - [[dot-test_rewrite_known_runtime_errors_requires_skill_marker_for_healthcheck_branch()]] - `method` [EXTRACTED]
 - [[dot-test_rewrite_known_runtime_errors_returns_none_for_unrelated_text()]] - `method` [EXTRACTED]
 - [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIIConfig_1]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[Unit tests for deterministic runtime error rewrite helper behavior.]] - `rationale_for` [EXTRACTED]

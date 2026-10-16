@@ -12,6 +12,6 @@ tags:
 # True only when the host ran the command and it exited 0.
 
 ## Connections
-- [[dot-ok()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-ok()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MultiHostResult

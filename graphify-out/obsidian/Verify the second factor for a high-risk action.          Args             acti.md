@@ -12,6 +12,6 @@ tags:
 # Verify the second factor for a high-risk action.          Args:             acti
 
 ## Connections
-- [[dot-verify()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-verify()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy

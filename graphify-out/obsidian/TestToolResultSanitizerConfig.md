@@ -12,8 +12,8 @@ tags:
 # TestToolResultSanitizerConfig
 
 ## Connections
-- [[dot-test_custom_config()_3]] - `method` [EXTRACTED]
-- [[dot-test_default_config()_8]] - `method` [EXTRACTED]
+- [[dot-test_custom_config()]] - `method` [EXTRACTED]
+- [[dot-test_default_config()_1]] - `method` [EXTRACTED]
 - [[Test ToolResultSanitizerConfig.]] - `rationale_for` [EXTRACTED]
 - [[ToolResultSanitizer_1]] - `uses` [INFERRED]
 - [[ToolResultSanitizerConfig]] - `uses` [INFERRED]

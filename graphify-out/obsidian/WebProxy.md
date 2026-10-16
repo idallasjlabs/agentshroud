@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "ProxyAction"
+community: "WebProxy"
 location: "L140"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ProxyAction
+  - community/WebProxy
 ---
 
 # WebProxy
 
 ## Connections
-- [[dot-__init__()_9]] - `method` [EXTRACTED]
+- [[dot-__init__()_1]] - `method` [EXTRACTED]
 - [[dot-_audit()]] - `method` [EXTRACTED]
 - [[dot-allowlist_proxy()]] - `calls` [EXTRACTED]
 - [[dot-check_request()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_1]] - `method` [EXTRACTED]
+- [[dot-get_stats()]] - `method` [EXTRACTED]
 - [[dot-scan_response()]] - `method` [EXTRACTED]
 - [[dot-setUp()_2]] - `calls` [EXTRACTED]
 - [[dot-test_custom_denylist()_1]] - `calls` [EXTRACTED]
@@ -35,20 +35,20 @@ tags:
 - [[MockURLResult]] - `uses` [INFERRED]
 - [[RateLimiter]] - `calls` [EXTRACTED]
 - [[StreamReader_3]] - `uses` [INFERRED]
-- [[StreamReader_2]] - `uses` [INFERRED]
+- [[StreamReader]] - `uses` [INFERRED]
 - [[StreamWriter_2]] - `uses` [INFERRED]
 - [[TestAllowlistMode]] - `uses` [INFERRED]
-- [[TestAuditChain_1]] - `uses` [INFERRED]
+- [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestContentTypeFiltering]] - `uses` [INFERRED]
 - [[TestDataExfiltration]] - `uses` [INFERRED]
 - [[TestDomainDenylist]] - `uses` [INFERRED]
 - [[TestEncodedPayloads]] - `uses` [INFERRED]
 - [[TestHiddenContent]] - `uses` [INFERRED]
 - [[TestIsDomainAllowed]] - `uses` [INFERRED]
-- [[TestPIIDetection_2]] - `uses` [INFERRED]
+- [[TestPIIDetection_1]] - `uses` [INFERRED]
 - [[TestPassthroughMode]] - `uses` [INFERRED]
 - [[TestPromptInjectionDetection]] - `uses` [INFERRED]
-- [[TestRateLimiting]] - `uses` [INFERRED]
+- [[TestRateLimiting_1]] - `uses` [INFERRED]
 - [[TestResponseSizeLimits]] - `uses` [INFERRED]
 - [[TestSSRFBlocking]] - `uses` [INFERRED]
 - [[TestStats_1]] - `uses` [INFERRED]
@@ -62,16 +62,16 @@ tags:
 - [[_DummyTargetWriter_1]] - `uses` [INFERRED]
 - [[_DummyTargetWriter]] - `uses` [INFERRED]
 - [[_HeaderTimeoutReader]] - `uses` [INFERRED]
-- [[_MockWriter_1]] - `uses` [INFERRED]
 - [[_MockWriter]] - `uses` [INFERRED]
+- [[_MockWriter_1]] - `uses` [INFERRED]
 - [[_SocketTransportWriter]] - `uses` [INFERRED]
 - [[_TimeoutReader]] - `uses` [INFERRED]
 - [[_allowlist_proxy()]] - `calls` [EXTRACTED]
-- [[http_proxy.py_2]] - `imports` [EXTRACTED]
+- [[http_proxy.py]] - `imports` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[passthrough_proxy()]] - `calls` [EXTRACTED]
-- [[proxy()_1]] - `calls` [EXTRACTED]
+- [[proxy()_2]] - `calls` [EXTRACTED]
 - [[test_blocked_domain_is_tracked_in_recent()]] - `calls` [EXTRACTED]
 - [[test_connect_blocked_domain_returns_403()]] - `calls` [EXTRACTED]
 - [[test_connect_denied_by_egress_filter_returns_403()]] - `calls` [EXTRACTED]
@@ -83,6 +83,6 @@ tags:
 - [[test_telegram_api_blocked_in_connect_proxy()]] - `calls` [EXTRACTED]
 - [[test_web_proxy.py]] - `imports` [EXTRACTED]
 - [[test_web_proxy_security.py]] - `imports` [EXTRACTED]
-- [[web_proxy.py_2]] - `contains` [EXTRACTED]
+- [[web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ProxyAction
+#graphify/code #graphify/INFERRED #community/WebProxy

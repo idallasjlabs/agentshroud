@@ -1,17 +1,17 @@
 ---
-source_file: "docs/governance/BRANCH_PROTECTION.md"
+source_file: "docs/setup/TAILSCALE_SETUP.md"
 type: "document"
-community: "GitHub Branch Protection — `main`"
-location: "L39"
+community: "OpenClaw Bot Container"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Branch_Protection__main
+  - community/OpenClaw_Bot_Container
 ---
 
 # Verification
 
 ## Connections
-- [[GitHub Branch Protection — `main`]] - `contains` [EXTRACTED]
+- [[Tailscale Access to OpenClaw Control UI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Branch_Protection__main
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_Container

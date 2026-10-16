@@ -12,7 +12,7 @@ tags:
 # TestClamavSummary
 
 ## Connections
-- [[dot-test_clean_when_installed_not_running()_1]] - `method` [EXTRACTED]
+- [[dot-test_clean_when_installed_not_running()_2]] - `method` [EXTRACTED]
 - [[dot-test_not_run_when_not_installed()]] - `method` [EXTRACTED]
 - [[dot-test_running_report_mtime_timestamp()]] - `method` [EXTRACTED]
 - [[dot-test_running_without_report()]] - `method` [EXTRACTED]
