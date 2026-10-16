@@ -12,9 +12,9 @@ tags:
 # ._can_create_directory()
 
 ## Connections
-- [[dot-__init__()_34]] - `calls` [EXTRACTED]
+- [[dot-__init__()_64]] - `calls` [EXTRACTED]
 - [[Check if we can create the given directory path.]] - `rationale_for` [EXTRACTED]
-- [[Path_9]] - `references` [EXTRACTED]
+- [[Path_14]] - `references` [EXTRACTED]
 - [[WebhookReceiver]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebhookReceiver

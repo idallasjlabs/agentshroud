@@ -1,23 +1,21 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "UserSessionManager"
-location: "L85"
+community: "MCPPolicyEngine"
+location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/MCPPolicyEngine
 ---
 
 # .from_dict()
 
 ## Connections
-- [[dot-_load_sessions()]] - `calls` [EXTRACTED]
-- [[Any_33]] - `references` [EXTRACTED]
-- [[ConversationMessage]] - `calls` [EXTRACTED]
-- [[Create session from dictionary.]] - `rationale_for` [EXTRACTED]
-- [[Path_26]] - `calls` [EXTRACTED]
-- [[UserSession]] - `method` [EXTRACTED]
+- [[Any_54]] - `references` [EXTRACTED]
+- [[MCPPolicyAction]] - `calls` [EXTRACTED]
+- [[MCPPolicyConfig_1]] - `method` [EXTRACTED]
+- [[Parse a policy config from a plain dict (e.g. loaded from YAML)._1]] - `rationale_for` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

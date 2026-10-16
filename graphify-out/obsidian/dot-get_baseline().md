@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "AgentRegistry"
+community: "AlertDispatcher"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/AlertDispatcher
 ---
 
 # .get_baseline()
 
 ## Connections
 - [[dot-check_drift()]] - `calls` [EXTRACTED]
-- [[dot-from_dict()_10]] - `calls` [EXTRACTED]
+- [[dot-from_dict()]] - `calls` [EXTRACTED]
 - [[ContainerSnapshot]] - `references` [EXTRACTED]
 - [[DriftDetector]] - `method` [EXTRACTED]
 - [[Retrieve baseline snapshot for a container.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

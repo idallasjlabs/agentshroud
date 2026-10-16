@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "asb (AgentShroud Bot helper)"
+community: "run-standalone.sh (Hermes docker run launcher)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asb_AgentShroud_Bot_helper
+  - community/run-standalonesh_Hermes_docker_run_launcher
 ---
 
 # asb (AgentShroud Bot helper)
@@ -23,4 +23,4 @@ tags:
 - [[setup_ephemeral_secrets]] - `calls` [EXTRACTED]
 - [[versions.env]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asb_AgentShroud_Bot_helper
+#graphify/code #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher

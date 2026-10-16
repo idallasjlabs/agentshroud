@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/egress_approval.py"
+source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "EgressApprovalQueue"
-location: "L155"
+community: "AlertDispatcher"
+location: "L187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressApprovalQueue
+  - community/AlertDispatcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_rules()]] - `calls` [EXTRACTED]
-- [[EgressApprovalQueue]] - `method` [EXTRACTED]
-- [[Initialize the approval queue.          Args             rules_file Path to pe]] - `rationale_for` [EXTRACTED]
+- [[FileSandbox]] - `method` [EXTRACTED]
+- [[FileSandboxConfig]] - `references` [EXTRACTED]
+- [[PIIScanner]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

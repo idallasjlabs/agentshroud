@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "test_a2a_proxy.py"
+community: "DifferentialPIIDetector"
 location: "L279"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - community/DifferentialPIIDetector
 ---
 
 # .__post_init__()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DifferentialPIIConfig_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector

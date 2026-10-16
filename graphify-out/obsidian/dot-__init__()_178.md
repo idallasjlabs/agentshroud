@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/soc/services.py"
+source_file: "gateway/proxy/dns_blocklist.py"
 type: "code"
-community: "ServiceManager"
-location: "L218"
+community: ".update"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/update
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_75]] - `references` [EXTRACTED]
-- [[ServiceManager]] - `method` [EXTRACTED]
+- [[dot-update()]] - `calls` [EXTRACTED]
+- [[DNSBlocklist]] - `method` [EXTRACTED]
+- [[Path_48]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/update

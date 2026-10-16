@@ -1,22 +1,21 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "lifespan.py"
-location: "L56"
+community: "AgentRegistry"
+location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/AgentRegistry
 ---
 
 # .from_dict()
 
 ## Connections
-- [[dot-_load_integrity_database()]] - `calls` [EXTRACTED]
-- [[Any_27]] - `references` [EXTRACTED]
-- [[Create from dictionary for JSON deserialization.]] - `rationale_for` [EXTRACTED]
-- [[FileIntegrityRecord]] - `method` [EXTRACTED]
-- [[ModificationSource]] - `calls` [EXTRACTED]
+- [[dot-register()]] - `calls` [EXTRACTED]
+- [[AgentRegistry]] - `method` [EXTRACTED]
+- [[ContainerConfig_1]] - `calls` [EXTRACTED]
+- [[Deserialize registry from dict.]] - `rationale_for` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

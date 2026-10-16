@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_mcp_result_endpoint.py"
+source_file: "gateway/tests/test_dashboard_endpoints.py"
 type: "code"
 community: "test_e2e.py"
-location: "L51"
+location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[AsyncClient]] - `calls` [INFERRED]
-- [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
+- [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_e2epy

@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
 community: "ApprovalQueueConfig"
-location: "L498"
+location: "L350"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,8 +12,8 @@ tags:
 # .connect()
 
 ## Connections
-- [[Accept a WebSocket connection and add to connected set.]] - `rationale_for` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
-- [[WebSocket_8]] - `references` [EXTRACTED]
+- [[Accept a WebSocket connection and add to connected set          Args]] - `rationale_for` [EXTRACTED]
+- [[ApprovalQueue]] - `method` [EXTRACTED]
+- [[WebSocket_2]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

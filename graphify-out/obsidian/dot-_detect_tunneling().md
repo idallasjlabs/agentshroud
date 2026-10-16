@@ -12,7 +12,7 @@ tags:
 # ._detect_tunneling()
 
 ## Connections
-- [[dot-check()_4]] - `calls` [EXTRACTED]
+- [[dot-check()_5]] - `calls` [EXTRACTED]
 - [[dot-shannon_entropy()]] - `calls` [EXTRACTED]
 - [[DNSFilter]] - `method` [EXTRACTED]
 - [[TunnelingPattern]] - `references` [EXTRACTED]

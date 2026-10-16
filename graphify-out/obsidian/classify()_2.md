@@ -12,12 +12,12 @@ tags:
 # classify()
 
 ## Connections
-- [[Any_59]] - `references` [EXTRACTED]
+- [[Any_43]] - `references` [EXTRACTED]
 - [[Return (soaked, message) for the given cron job list.      soaked=True only if a]] - `rationale_for` [EXTRACTED]
 - [[TestClassify_2]] - `calls` [EXTRACTED]
 - [[_is_benign_skip]] - `calls` [EXTRACTED]
 - [[_is_benign_skip()]] - `calls` [EXTRACTED]
-- [[main()_22]] - `calls` [EXTRACTED]
+- [[main()_13]] - `calls` [EXTRACTED]
 - [[soak_status.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestClassify

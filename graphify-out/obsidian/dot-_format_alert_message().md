@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_send_notification()]] - `calls` [EXTRACTED]
 - [[AlertDispatcher]] - `method` [EXTRACTED]
-- [[Any]] - `references` [EXTRACTED]
+- [[Any_60]] - `references` [EXTRACTED]
 - [[Format alert as human-readable message.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher

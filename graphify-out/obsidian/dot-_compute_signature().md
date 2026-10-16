@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "EnvelopeSigner"
+community: "AuditChain"
 location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnvelopeSigner
+  - community/AuditChain
 ---
 
 # ._compute_signature()
@@ -16,4 +16,4 @@ tags:
 - [[dot-verify()]] - `calls` [EXTRACTED]
 - [[EnvelopeSigner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnvelopeSigner
+#graphify/code #graphify/EXTRACTED #community/AuditChain

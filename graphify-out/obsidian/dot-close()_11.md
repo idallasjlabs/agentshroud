@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L466"
+community: "AuditStore"
+location: "L163"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/AuditStore
 ---
 
 # .close()
 
 ## Connections
-- [[HermesA2AForwarder]] - `method` [EXTRACTED]
+- [[AuditStore_1]] - `method` [EXTRACTED]
+- [[Close the database connection.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/AuditStore

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "CollaboratorActivityTracker"
+community: "test_collaborator_tracker.py"
 location: "L245"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CollaboratorActivityTracker
+  - community/test_collaborator_trackerpy
 ---
 
 # ._coerce_timestamp()
@@ -17,4 +17,4 @@ tags:
 - [[Best-effort float timestamp coercion for resilient log reads.]] - `rationale_for` [EXTRACTED]
 - [[CollaboratorActivityTracker_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CollaboratorActivityTracker
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

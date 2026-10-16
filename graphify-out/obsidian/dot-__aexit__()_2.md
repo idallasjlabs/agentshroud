@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "test_cli_coverage.py"
-location: "L641"
+community: "_HeadFakeClient"
+location: "L824"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cli_coveragepy
+  - community/_HeadFakeClient
 ---
 
 # .__aexit__()
 
 ## Connections
-- [[_FakeConnect]] - `method` [EXTRACTED]
+- [[_HeadFakeClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy
+#graphify/code #graphify/EXTRACTED #community/_HeadFakeClient

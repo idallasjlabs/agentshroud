@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/heuristic_classifier.py"
+source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "HeuristicClassifier"
-location: "L95"
+community: "A2AGovernanceProxy"
+location: "L190"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/A2AGovernanceProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_try_load_model()]] - `calls` [EXTRACTED]
-- [[HeuristicClassifier_1]] - `method` [EXTRACTED]
+- [[A2AGovernanceConfig]] - `references` [EXTRACTED]
+- [[A2AGovernanceProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/a2a_policy.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "A2APolicyConfig"
-location: "L199"
+community: "MCPPermissionManager"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyConfig
+  - community/MCPPermissionManager
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[A2APolicyConfig_1]] - `method` [EXTRACTED]
-- [[_norm()]] - `calls` [EXTRACTED]
+- [[MCPToolCall_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/ssh_proxy/proxy.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "SSHProxy"
-location: "L138"
+community: ".__init__"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/__init__
 ---
 
 # .__init__()
 
 ## Connections
-- [[SSHConfig]] - `references` [EXTRACTED]
-- [[SSHProxy]] - `method` [EXTRACTED]
+- [[dot-_load_pending_store()]] - `calls` [EXTRACTED]
+- [[ApprovalQueue]] - `method` [EXTRACTED]
+- [[ApprovalQueueConfig]] - `references` [EXTRACTED]
+- [[Initialize approval queue          Args             config Approval queue conf]] - `rationale_for` [EXTRACTED]
+- [[MFAGuard]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/__init__

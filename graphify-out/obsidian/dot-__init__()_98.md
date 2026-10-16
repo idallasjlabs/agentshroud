@@ -1,17 +1,17 @@
 ---
-source_file: "src/interfaces/text_control_center.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "ControlCenter"
-location: "L66"
+community: "test_e2e_proxy.py"
+location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ControlCenter
+  - community/test_e2e_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[ControlCenter]] - `method` [EXTRACTED]
+- [[SidecarScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ControlCenter
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

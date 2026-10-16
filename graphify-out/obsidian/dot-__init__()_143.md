@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "test_cli_coverage.py"
-location: "L613"
+community: "MCPPolicyEngine"
+location: "L252"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cli_coveragepy
+  - community/MCPPolicyEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeWS]] - `method` [EXTRACTED]
+- [[MCPPolicyConfig_1]] - `references` [EXTRACTED]
+- [[MCPPolicyEngine_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

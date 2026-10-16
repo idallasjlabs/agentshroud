@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_apply_outbound_status_notices()]] - `calls` [EXTRACTED]
 - [[Detect legacy bracket-style block notices for collaborator normalization.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_filter_outbound

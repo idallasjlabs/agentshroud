@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-route_approval()]] - `calls` [EXTRACTED]
-- [[ApprovalRequest_4]] - `references` [EXTRACTED]
+- [[ApprovalRequest_5]] - `references` [EXTRACTED]
 - [[Build the group thread reply notification text.]] - `rationale_for` [EXTRACTED]
 - [[GroupApprovalRouter]] - `method` [EXTRACTED]
 

@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/proxy/http_proxy.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "WebProxyConfig"
-location: "L111"
+community: "PIIConfig"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/PIIConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressFilter_1]] - `references` [EXTRACTED]
-- [[HTTPConnectProxy_1]] - `method` [EXTRACTED]
-- [[WebProxy_1]] - `references` [EXTRACTED]
-- [[WebProxyConfig]] - `calls` [EXTRACTED]
+- [[Any_28]] - `references` [EXTRACTED]
+- [[PIIConfig_1]] - `references` [EXTRACTED]
+- [[ToolResultPIIConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

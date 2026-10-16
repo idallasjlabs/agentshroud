@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/soc/auth.py"
+source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L141"
+community: "OAuthSecurityValidator"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/OAuthSecurityValidator
 ---
 
 # .__init__()
 
 ## Connections
-- [[RBACManager]] - `references` [EXTRACTED]
-- [[Role_20]] - `references` [EXTRACTED]
-- [[SCLCaller_1]] - `method` [EXTRACTED]
+- [[OAuthSecurityValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator

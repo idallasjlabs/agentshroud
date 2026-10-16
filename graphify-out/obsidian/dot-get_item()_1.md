@@ -12,8 +12,8 @@ tags:
 # .get_item()
 
 ## Connections
-- [[ApprovalQueue_1]] - `method` [EXTRACTED]
-- [[ApprovalQueueItem_3]] - `references` [EXTRACTED]
+- [[ApprovalQueue]] - `method` [EXTRACTED]
+- [[ApprovalQueueItem]] - `references` [EXTRACTED]
 - [[Fetch a single queue item by ID          Args             request_id Request U]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/decide

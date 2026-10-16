@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_check_system_resources()]] - `calls` [EXTRACTED]
-- [[Any_16]] - `references` [EXTRACTED]
+- [[Any_22]] - `references` [EXTRACTED]
 - [[ResourceGuard]] - `method` [EXTRACTED]
 - [[Trigger a resource usage alert synchronously.]] - `rationale_for` [EXTRACTED]
 

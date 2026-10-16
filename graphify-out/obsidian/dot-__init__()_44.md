@@ -1,18 +1,18 @@
 ---
-source_file: "skills/custom/securebrowser/scripts/browse.py"
+source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "SecureBrowser"
-location: "L65"
+community: "RateLimiter"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/RateLimiter
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_config()_3]] - `calls` [EXTRACTED]
-- [[SecureBrowser_3]] - `method` [EXTRACTED]
+- [[Args             max_requests Maximum requests allowed in the time window]] - `rationale_for` [EXTRACTED]
+- [[RateLimiter_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/RateLimiter

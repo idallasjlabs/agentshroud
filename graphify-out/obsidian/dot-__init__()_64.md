@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L107"
+community: "WebhookReceiver"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/WebhookReceiver
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeGroup]] - `method` [EXTRACTED]
+- [[dot-_can_create_directory()]] - `calls` [EXTRACTED]
+- [[Path_14]] - `calls` [EXTRACTED]
+- [[RBACConfig_4]] - `calls` [EXTRACTED]
+- [[UserSessionManager]] - `calls` [EXTRACTED]
+- [[WebhookReceiver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/WebhookReceiver

@@ -12,7 +12,7 @@ tags:
 # activity_websocket()
 
 ## Connections
-- [[WebSocket_1]] - `references` [EXTRACTED]
+- [[WebSocket_6]] - `references` [EXTRACTED]
 - [[WebSocket for real-time activity feed]] - `rationale_for` [EXTRACTED]
 - [[_build_egress_live_snapshot()]] - `calls` [EXTRACTED]
 - [[_validate_ws_token()]] - `calls` [EXTRACTED]

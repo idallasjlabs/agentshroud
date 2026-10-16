@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_alert_telegram_relay.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "AlertTelegramRelay"
-location: "L13"
+community: "ServiceManager"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertTelegramRelay
+  - community/ServiceManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[_SendSpy]] - `method` [EXTRACTED]
+- [[_FakeUnixSocket]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

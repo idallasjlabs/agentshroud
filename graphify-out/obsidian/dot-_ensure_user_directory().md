@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "TestPathIsolationManager"
+community: "MiddlewareManager"
 location: "L225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/MiddlewareManager
 ---
 
 # ._ensure_user_directory()
@@ -17,4 +17,4 @@ tags:
 - [[Ensure user's isolated directory exists.]] - `rationale_for` [EXTRACTED]
 - [[PathIsolationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

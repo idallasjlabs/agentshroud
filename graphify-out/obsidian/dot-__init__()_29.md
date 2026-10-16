@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/tool_result_injection.py"
+source_file: "gateway/tools/port_manager.py"
 type: "code"
-community: ".analyze_message"
-location: "L176"
+community: "PortManager"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/analyze_message
+  - community/PortManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[Initialize the scanner with optional custom rules.          Args             cu]] - `rationale_for` [EXTRACTED]
-- [[InjectionRule]] - `references` [EXTRACTED]
-- [[ToolResultInjectionScanner]] - `method` [EXTRACTED]
+- [[PortManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/analyze_message
+#graphify/code #graphify/EXTRACTED #community/PortManager

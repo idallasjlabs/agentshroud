@@ -20,7 +20,7 @@ tags:
 - [[dot-_count_recent_events()]] - `calls` [EXTRACTED]
 - [[dot-_get_system_stats()]] - `calls` [EXTRACTED]
 - [[dot-_send_anomaly_alert()]] - `calls` [EXTRACTED]
-- [[Any_40]] - `references` [EXTRACTED]
+- [[Any_42]] - `references` [EXTRACTED]
 - [[Detect unusual patterns that might indicate rogue behavior.          Args]] - `rationale_for` [EXTRACTED]
 - [[KillSwitchMonitor]] - `method` [EXTRACTED]
 

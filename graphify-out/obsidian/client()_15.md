@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_soc_egress_endpoints.py"
+source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "code"
 community: "test_e2e.py"
-location: "L16"
+location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[AsyncClient]] - `calls` [INFERRED]
-- [[test_soc_egress_endpoints.py]] - `contains` [EXTRACTED]
+- [[test_mcp_proxy_endpoint.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_e2epy

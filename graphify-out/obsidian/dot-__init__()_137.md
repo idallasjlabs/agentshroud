@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "code"
-community: "test_dns_canvas_coverage.py"
-location: "L585"
+community: "EgressTelegramNotifier"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dns_canvas_coveragepy
+  - community/EgressTelegramNotifier
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeUpstreamResponse]] - `method` [EXTRACTED]
+- [[EgressTelegramNotifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy
+#graphify/code #graphify/EXTRACTED #community/EgressTelegramNotifier

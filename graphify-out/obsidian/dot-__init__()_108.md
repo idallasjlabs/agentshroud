@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/network_validator.py"
+source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L54"
+community: "KillSwitchMonitor"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/KillSwitchMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[NetworkValidator]] - `method` [EXTRACTED]
+- [[MCPAuditTrail]] - `method` [EXTRACTED]
+- [[deque]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

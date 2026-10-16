@@ -19,6 +19,6 @@ tags:
 - [[Click an element          Security Risk classification for destructive actions_1]] - `rationale_for` [EXTRACTED]
 - [[SecureBrowser_1]] - `method` [EXTRACTED]
 - [[SecurityError_1]] - `calls` [EXTRACTED]
-- [[main()_8]] - `calls` [EXTRACTED]
+- [[main()_5]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser

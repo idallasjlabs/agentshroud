@@ -16,7 +16,7 @@ tags:
 - [[dot-check_async()]] - `calls` [EXTRACTED]
 - [[EgressAction]] - `references` [EXTRACTED]
 - [[EgressAttempt]] - `references` [EXTRACTED]
-- [[EgressFilter_2]] - `method` [EXTRACTED]
+- [[EgressFilter_1]] - `method` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/EgressAttempt

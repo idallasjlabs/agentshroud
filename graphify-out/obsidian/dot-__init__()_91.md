@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L93"
+community: "PodmanEngine"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/PodmanEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[ToolResultSanitizer]] - `method` [EXTRACTED]
-- [[ToolResultSanitizerConfig]] - `references` [EXTRACTED]
+- [[dot-_detect_compose()]] - `calls` [EXTRACTED]
+- [[PodmanEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/PodmanEngine

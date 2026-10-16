@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_a2a_integration.py"
+source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L55"
+community: "DNSForwarderProtocol"
+location: "L163"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/DNSForwarderProtocol
 ---
 
 # .__init__()
 
 ## Connections
-- [[A2APeerTestDouble]] - `method` [EXTRACTED]
+- [[DNSForwarderProtocol]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol

@@ -1,23 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L230"
+community: "test_cli_coverage.py"
+location: "L630"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/test_cli_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[ConnectionPool]] - `calls` [EXTRACTED]
-- [[EnhancedApprovalQueue_2]] - `references` [EXTRACTED]
-- [[MCPAuditTrail_1]] - `references` [EXTRACTED]
-- [[MCPInspector_1]] - `references` [EXTRACTED]
-- [[MCPPermissionManager]] - `references` [EXTRACTED]
-- [[MCPProxy_1]] - `method` [EXTRACTED]
-- [[MCPProxyConfig_2]] - `references` [EXTRACTED]
+- [[_FakeConnect]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy

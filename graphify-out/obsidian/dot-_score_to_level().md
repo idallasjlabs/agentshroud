@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "._update_score"
+community: "TrustConfig"
 location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_update_score
+  - community/TrustConfig
 ---
 
 # ._score_to_level()
@@ -17,6 +17,6 @@ tags:
 - [[dot-register_agent()]] - `calls` [EXTRACTED]
 - [[Convert score to trust level based on thresholds.]] - `rationale_for` [EXTRACTED]
 - [[TrustLevel_1]] - `references` [EXTRACTED]
-- [[TrustManager]] - `method` [EXTRACTED]
+- [[TrustManager_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_update_score
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L60"
+community: "MCPPermissionManager"
+location: "L201"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/MCPPermissionManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[SidecarScanner]] - `method` [EXTRACTED]
+- [[ConnectionPool]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

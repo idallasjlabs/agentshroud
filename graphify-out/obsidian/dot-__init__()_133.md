@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_citation_verifier.py"
+source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "api.py"
-location: "L29"
+community: "MultiTurnTracker"
+location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/MultiTurnTracker
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeFetcher_1]] - `method` [EXTRACTED]
+- [[dot-_compile_detection_patterns()]] - `calls` [EXTRACTED]
+- [[Any_49]] - `references` [EXTRACTED]
+- [[Initialize the multi-turn tracker.          Args             config Configurat]] - `rationale_for` [EXTRACTED]
+- [[MultiTurnTracker]] - `method` [EXTRACTED]
+- [[ThresholdConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

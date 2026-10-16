@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "lifespan.py"
-location: "L50"
+community: "TrustConfig"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/TrustConfig
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[ContentThreat]] - `method` [EXTRACTED]
+- [[TrustConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

@@ -15,7 +15,7 @@ tags:
 - [[dot-get_all_credentials_status()]] - `calls` [EXTRACTED]
 - [[dot-should_rotate()]] - `calls` [EXTRACTED]
 - [[dot-should_warn()]] - `calls` [EXTRACTED]
-- [[Any_11]] - `references` [EXTRACTED]
+- [[Any_38]] - `references` [EXTRACTED]
 - [[Get detailed status for a credential.]] - `rationale_for` [EXTRACTED]
 - [[KeyRotationManager]] - `method` [EXTRACTED]
 

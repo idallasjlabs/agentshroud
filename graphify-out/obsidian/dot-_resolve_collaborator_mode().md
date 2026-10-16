@@ -17,6 +17,6 @@ tags:
 - [[dot-_handle_outbound_tool_calls()]] - `calls` [EXTRACTED]
 - [[dot-_send_disclosure()]] - `calls` [EXTRACTED]
 - [[Resolve effective collaboration mode for a user.          Resolution order]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

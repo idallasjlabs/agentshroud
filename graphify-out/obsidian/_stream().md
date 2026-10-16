@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: ".proxy_messages"
-location: "L1280"
+community: "LLMProxy"
+location: "L1341"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/proxy_messages
+  - community/LLMProxy
 ---
 
 # _stream()
@@ -20,5 +20,7 @@ tags:
 - [[dot-_normalize_local_model()]] - `calls` [EXTRACTED]
 - [[dot-_record_failover_event()]] - `calls` [EXTRACTED]
 - [[dot-proxy_messages_streaming()]] - `contains` [EXTRACTED]
+- [[StreamHead]] - `calls` [EXTRACTED]
+- [[_bytes_only()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/proxy_messages
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

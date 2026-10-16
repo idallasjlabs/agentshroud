@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_hermes_cron_html_email.sh"
+source_file: "scripts/smoke.d/test-skills-sync.sh"
 type: "code"
-community: "test_openclaw_photo.sh"
-location: "L12"
+community: "sync-llm-settings.sh"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_openclaw_photosh
+  - community/sync-llm-settingssh
 ---
 
 # check()
 
 ## Connections
-- [[test_hermes_cron_html_email.sh]] - `defines` [EXTRACTED]
-- [[test_hermes_cron_html_email.sh script]] - `calls` [EXTRACTED]
+- [[test-skills-sync.sh]] - `defines` [EXTRACTED]
+- [[test-skills-sync.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_openclaw_photosh
+#graphify/code #graphify/EXTRACTED #community/sync-llm-settingssh

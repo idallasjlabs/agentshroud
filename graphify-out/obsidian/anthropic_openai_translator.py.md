@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[_anthropic_content_to_openai()]] - `contains` [EXTRACTED]
 - [[_anthropic_system_to_openai()]] - `contains` [EXTRACTED]
-- [[_random_msg_id()_1]] - `contains` [EXTRACTED]
+- [[_random_msg_id()]] - `contains` [EXTRACTED]
 - [[anthropic_to_openai_request()]] - `contains` [EXTRACTED]
 - [[anthropic_to_openai_response()]] - `contains` [EXTRACTED]
 - [[openai_to_anthropic_request()]] - `contains` [EXTRACTED]

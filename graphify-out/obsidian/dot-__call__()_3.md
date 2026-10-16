@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_jira_dev_ticket.py"
+source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "code"
-community: "test_jira_dev_ticket.py"
-location: "L266"
+community: "RateLimitGuard"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_jira_dev_ticketpy
+  - community/RateLimitGuard
 ---
 
 # .__call__()
 
 ## Connections
-- [[_MockTransport]] - `method` [EXTRACTED]
+- [[FakeClock]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_jira_dev_ticketpy
+#graphify/code #graphify/EXTRACTED #community/RateLimitGuard

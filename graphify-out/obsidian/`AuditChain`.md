@@ -12,6 +12,6 @@ tags:
 # `AuditChain`
 
 ## Connections
-- [[Key Classes_1]] - `contains` [EXTRACTED]
+- [[Key Classes]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/SecurityPipeline

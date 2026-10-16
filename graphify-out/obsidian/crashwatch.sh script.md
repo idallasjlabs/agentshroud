@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/crashwatch.sh"
 type: "code"
-community: "start.sh"
+community: "telegram_api_proxy (/telegram-api/{path})"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/startsh
+  - community/telegram_api_proxy_/telegram-api/path
 ---
 
 # crashwatch.sh script
@@ -17,4 +17,4 @@ tags:
 - [[_write_last_alert_epoch()]] - `calls` [EXTRACTED]
 - [[crashwatch.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/startsh
+#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path

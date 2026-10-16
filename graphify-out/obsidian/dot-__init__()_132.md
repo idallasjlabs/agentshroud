@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/intel_report.py"
+source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "api.py"
-location: "L205"
+community: "A2AProxyResult"
+location: "L446"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/A2AProxyResult
 ---
 
 # .__init__()
 
 ## Connections
-- [[IntelReportStore]] - `method` [EXTRACTED]
-- [[Path_42]] - `references` [EXTRACTED]
+- [[_Event]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/A2AProxyResult

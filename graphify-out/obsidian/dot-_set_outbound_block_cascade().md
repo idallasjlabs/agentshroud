@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-_scan_outbound_text()]] - `calls` [EXTRACTED]
 - [[Activate per-chat cascade window to prevent streaming-fragment leak-through.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_filter_outbound

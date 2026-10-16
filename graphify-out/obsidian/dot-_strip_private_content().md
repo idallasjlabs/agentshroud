@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: ".get_merged_memory_for_user"
+community: "RBACConfig"
 location: "L372"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_merged_memory_for_user
+  - community/RBACConfig
 ---
 
 # ._strip_private_content()
@@ -17,4 +17,4 @@ tags:
 - [[Remove private-looking content from shared memory before serving         to non-]] - `rationale_for` [EXTRACTED]
 - [[SharedMemoryManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_merged_memory_for_user
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

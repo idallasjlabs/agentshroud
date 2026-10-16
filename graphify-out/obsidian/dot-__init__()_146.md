@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/subagent_governance.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "SubagentGovernance"
-location: "L209"
+community: "test_dashboard_endpoints.py"
+location: "L142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentGovernance
+  - community/test_dashboard_endpointspy
 ---
 
 # .__init__()
 
 ## Connections
-- [[GovernanceConfig]] - `references` [EXTRACTED]
-- [[SubagentGovernance]] - `method` [EXTRACTED]
+- [[LogBuffer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentGovernance
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

@@ -15,6 +15,6 @@ tags:
 - [[dot-inspect_tool_call()]] - `calls` [EXTRACTED]
 - [[Decide whether to block based on findings and mode.]] - `rationale_for` [EXTRACTED]
 - [[InspectionFinding]] - `references` [EXTRACTED]
-- [[MCPInspector]] - `method` [EXTRACTED]
+- [[MCPInspector_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/inspect_tool_call

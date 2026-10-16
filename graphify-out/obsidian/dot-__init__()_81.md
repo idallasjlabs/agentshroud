@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "TestOutputCanary"
-location: "L67"
+community: "AlertTelegramRelay"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutputCanary
+  - community/AlertTelegramRelay
 ---
 
 # .__init__()
 
 ## Connections
-- [[CanaryConfig]] - `references` [EXTRACTED]
-- [[Initialize the Output Canary System.          Args             config Optional]] - `rationale_for` [EXTRACTED]
-- [[OutputCanary]] - `method` [EXTRACTED]
+- [[AlertTelegramRelay]] - `method` [EXTRACTED]
+- [[Any_26]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutputCanary
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

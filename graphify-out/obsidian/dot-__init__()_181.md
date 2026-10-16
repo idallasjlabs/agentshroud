@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/url_analyzer.py"
+source_file: "gateway/security/mfa_guard.py"
 type: "code"
-community: "TestSSRFDetection"
-location: "L102"
+community: "test_mfa_guard.py"
+location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/test_mfa_guardpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args             resolve_dns If True, resolve hostnames to IPs and check those]] - `rationale_for` [EXTRACTED]
-- [[URLAnalyzer_1]] - `method` [EXTRACTED]
+- [[dot-_decode_secret()]] - `calls` [EXTRACTED]
+- [[MFAGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

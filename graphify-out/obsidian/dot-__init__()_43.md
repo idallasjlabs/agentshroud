@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "LogBuffer"
-location: "L142"
+community: "test_a2a_proxy.py"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LogBuffer
+  - community/test_a2a_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[LogBuffer]] - `method` [EXTRACTED]
+- [[_StubForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LogBuffer
+#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

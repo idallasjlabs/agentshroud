@@ -2,7 +2,7 @@
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
 community: "gateway/tests/test_llm_proxy_thinking_suppression.py (8 cases)"
-location: "L429"
+location: "L448"
 tags:
   - graphify/code
   - graphify/EXTRACTED

@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/trust_manager.py"
+source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "code"
-community: "TrustConfig"
-location: "L97"
+community: "CronStateMonitor"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/CronStateMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_db()_1]] - `calls` [EXTRACTED]
-- [[ProgressiveTrustConfig]] - `references` [EXTRACTED]
-- [[TrustConfig]] - `references` [EXTRACTED]
-- [[TrustLevel_1]] - `references` [EXTRACTED]
-- [[TrustManager]] - `method` [EXTRACTED]
+- [[_DispatchSpy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

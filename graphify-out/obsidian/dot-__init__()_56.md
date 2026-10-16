@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/slack_socket_client.py"
+source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "SlackSocketClient"
-location: "L59"
+community: "SecureBrowser"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackSocketClient
+  - community/SecureBrowser
 ---
 
 # .__init__()
 
 ## Connections
-- [[SlackSocketClient]] - `method` [EXTRACTED]
+- [[dot-_load_config()_3]] - `calls` [EXTRACTED]
+- [[SecureBrowser_3]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackSocketClient
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

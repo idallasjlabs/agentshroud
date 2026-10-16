@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "TestParamSanitization"
+community: "TestToolChainAnalyzer"
 location: "L305"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestParamSanitization
+  - community/TestToolChainAnalyzer
 ---
 
 # ._load_custom_patterns()
 
 ## Connections
-- [[dot-__init__()_89]] - `calls` [EXTRACTED]
+- [[dot-__init__()_129]] - `calls` [EXTRACTED]
 - [[ChainAction]] - `calls` [EXTRACTED]
 - [[ChainPattern]] - `calls` [EXTRACTED]
 - [[Load custom patterns from configuration.]] - `rationale_for` [EXTRACTED]
-- [[RiskLevel_5]] - `calls` [EXTRACTED]
+- [[RiskLevel_6]] - `calls` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestParamSanitization
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

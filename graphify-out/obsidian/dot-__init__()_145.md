@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_inspector.py"
+source_file: "gateway/security/session_security.py"
 type: "code"
-community: "MCPToolCall"
-location: "L133"
+community: "SessionManager"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/SessionManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPInspector]] - `method` [EXTRACTED]
+- [[SessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPToolCall
+#graphify/code #graphify/EXTRACTED #community/SessionManager

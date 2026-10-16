@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-_proxy_request_impl()]] - `calls` [EXTRACTED]
-- [[Any_81]] - `references` [EXTRACTED]
+- [[Any_65]] - `references` [EXTRACTED]
 - [[Return minimal getUpdates payload entries containing only update_id.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_filter_outbound

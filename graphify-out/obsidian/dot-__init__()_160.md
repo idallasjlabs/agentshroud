@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/dns_filter.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "DNSFilterConfig"
-location: "L78"
+community: "KeyVault"
+location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/KeyVault
 ---
 
 # .__init__()
 
 ## Connections
-- [[DNSFilter]] - `method` [EXTRACTED]
-- [[DNSFilterConfig]] - `references` [EXTRACTED]
+- [[KeyVault]] - `method` [EXTRACTED]
+- [[KeyVaultConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/code #graphify/EXTRACTED #community/KeyVault

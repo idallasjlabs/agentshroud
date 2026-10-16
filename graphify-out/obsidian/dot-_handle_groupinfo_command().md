@@ -15,7 +15,7 @@ tags:
 - [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
 - [[dot-_send_owner_admin_notice()]] - `calls` [EXTRACTED]
 - [[Handle groupinfo group_id.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 - [[format_group_info()]] - `calls` [EXTRACTED]
 - [[format_not_member()]] - `calls` [EXTRACTED]
 - [[format_unknown_group()]] - `calls` [EXTRACTED]

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Active Projects]] - `contains` [EXTRACTED]
-- [[Key Facts]] - `contains` [EXTRACTED]
+- [[Key Facts_1]] - `contains` [EXTRACTED]
 - [[Pending Tasks]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/contextmd

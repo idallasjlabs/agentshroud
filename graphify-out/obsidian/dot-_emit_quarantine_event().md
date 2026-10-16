@@ -15,7 +15,7 @@ tags:
 - [[dot-_quarantine_blocked_message()]] - `calls` [EXTRACTED]
 - [[dot-_quarantine_outbound_block()]] - `calls` [EXTRACTED]
 - [[Best-effort async event emission for quarantine actions.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_filter_outbound

@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L58"
+community: "KeyRotationManager"
+location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/KeyRotationManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeAuditStore]] - `method` [EXTRACTED]
+- [[Initialize the key rotation manager.]] - `rationale_for` [EXTRACTED]
+- [[KeyRotationConfig]] - `references` [EXTRACTED]
+- [[KeyRotationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

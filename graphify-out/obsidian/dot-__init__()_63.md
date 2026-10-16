@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L41"
+community: "KeyRotationManager"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/KeyRotationManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeCaller]] - `method` [EXTRACTED]
+- [[MockValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

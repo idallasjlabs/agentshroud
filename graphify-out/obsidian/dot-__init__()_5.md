@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/env_guard.py"
+source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L36"
+community: "test_llm_proxy_local_parity.py"
+location: "L1141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/test_llm_proxy_local_paritypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[EnvironmentGuard]] - `method` [EXTRACTED]
+- [[_FakeStreamClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

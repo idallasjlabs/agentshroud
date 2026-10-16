@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/proxy/telegram_egress_notify.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "EgressTelegramNotifier"
-location: "L76"
+community: "TestToolChainAnalyzer"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressTelegramNotifier
+  - community/TestToolChainAnalyzer
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressTelegramNotifier]] - `method` [EXTRACTED]
+- [[dot-_load_custom_patterns()]] - `calls` [EXTRACTED]
+- [[dot-_load_default_patterns()]] - `calls` [EXTRACTED]
+- [[Any_46]] - `references` [EXTRACTED]
+- [[Initialize the tool chain analyzer.          Args             config Configura]] - `rationale_for` [EXTRACTED]
+- [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressTelegramNotifier
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

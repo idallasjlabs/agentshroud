@@ -1,19 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
+source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "SecureBrowser"
-location: "L401"
+community: "WebProxy"
+location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/WebProxy
 ---
 
 # .close()
 
 ## Connections
-- [[Clean up browser resources_2]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser_2]] - `method` [EXTRACTED]
-- [[main()_10]] - `calls` [EXTRACTED]
+- [[_MockWriter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/WebProxy

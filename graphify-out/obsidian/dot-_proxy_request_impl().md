@@ -26,6 +26,6 @@ tags:
 - [[dot-_username_for_bot()]] - `calls` [EXTRACTED]
 - [[dot-proxy_request()]] - `calls` [EXTRACTED]
 - [[Proxy a single Telegram API request.          For getUpdates responses scan eac]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_proxy_request_impl

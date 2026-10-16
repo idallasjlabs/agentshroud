@@ -12,11 +12,11 @@ tags:
 # deque
 
 ## Connections
-- [[dot-__init__()_97]] - `calls` [EXTRACTED]
-- [[dot-__init__()_93]] - `calls` [INFERRED]
-- [[dot-__init__()_94]] - `calls` [INFERRED]
-- [[dot-__init__()_95]] - `calls` [INFERRED]
-- [[dot-__init__()_96]] - `calls` [INFERRED]
+- [[dot-__init__()_112]] - `calls` [EXTRACTED]
+- [[dot-__init__()_108]] - `calls` [INFERRED]
+- [[dot-__init__()_109]] - `calls` [INFERRED]
+- [[dot-__init__()_110]] - `calls` [INFERRED]
+- [[dot-__init__()_111]] - `calls` [INFERRED]
 - [[dot-_count_recent_events()]] - `references` [EXTRACTED]
 - [[dot-analyze_message()]] - `calls` [INFERRED]
 - [[KillSwitchConfig_1]] - `uses` [INFERRED]

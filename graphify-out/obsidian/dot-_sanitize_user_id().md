@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "TestPathIsolationManager"
+community: "MiddlewareManager"
 location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/MiddlewareManager
 ---
 
 # ._sanitize_user_id()
@@ -18,4 +18,4 @@ tags:
 - [[PathIsolationManager]] - `method` [EXTRACTED]
 - [[Sanitize user ID to prevent path traversal attacks.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

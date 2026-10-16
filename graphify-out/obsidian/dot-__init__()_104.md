@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/browser_security.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L104"
+community: "AuditStore"
+location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AuditStore
 ---
 
 # .__init__()
 
 ## Connections
-- [[BrowserSecurityGuard]] - `method` [EXTRACTED]
+- [[AuditStore_1]] - `method` [EXTRACTED]
+- [[Path_25]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AuditStore

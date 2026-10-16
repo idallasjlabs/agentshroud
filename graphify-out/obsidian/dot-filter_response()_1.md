@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/privacy_policy.py"
+source_file: "gateway/security/xml_leak_filter.py"
 type: "code"
-community: "PrivacyPolicyEnforcer"
-location: "L261"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # .filter_response()
 
 ## Connections
-- [[dot-_get_role_value()]] - `calls` [EXTRACTED]
-- [[PrivacyPolicyEnforcer]] - `method` [EXTRACTED]
-- [[Strip admin-private content from a response before delivering to user.]] - `rationale_for` [EXTRACTED]
+- [[Filter outbound response content to remove sensitive information.          Args]] - `rationale_for` [EXTRACTED]
+- [[FilterResult_1]] - `references` [EXTRACTED]
+- [[XMLLeakFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

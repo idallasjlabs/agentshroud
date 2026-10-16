@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "DataLedger"
+community: "ApprovalQueueConfig"
 location: "L312"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/ApprovalQueueConfig
 ---
 
 # .disabled_client()
 
 ## Connections
-- [[ApprovalQueue_1]] - `calls` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
+- [[ApprovalQueue]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `calls` [EXTRACTED]
 - [[DataLedger]] - `calls` [EXTRACTED]
-- [[GatewayConfig_3]] - `calls` [EXTRACTED]
+- [[GatewayConfig_4]] - `calls` [EXTRACTED]
 - [[LedgerConfig_1]] - `calls` [EXTRACTED]
 - [[MultiAgentRouter]] - `calls` [EXTRACTED]
 - [[PIIConfig_2]] - `calls` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[SSHConfig_2]] - `calls` [EXTRACTED]
 - [[TestSSHDisabledEndpoint]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataLedger
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

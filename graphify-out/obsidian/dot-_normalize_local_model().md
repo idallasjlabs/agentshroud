@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: ".proxy_messages"
-location: "L400"
+community: "LLMProxy"
+location: "L419"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/proxy_messages
+  - community/LLMProxy
 ---
 
 # ._normalize_local_model()
@@ -18,5 +18,12 @@ tags:
 - [[dot-proxy_messages_streaming()]] - `calls` [EXTRACTED]
 - [[LLMProxy]] - `method` [EXTRACTED]
 - [[_stream()]] - `calls` [EXTRACTED]
+- [[test_normalize_local_model_already_dashed_is_idempotent()]] - `calls` [EXTRACTED]
+- [[test_normalize_local_model_lmstudio_replaces_colon_with_dash()]] - `calls` [EXTRACTED]
+- [[test_normalize_local_model_mlxlm_keeps_colon()]] - `calls` [EXTRACTED]
+- [[test_normalize_local_model_ollama_keeps_colon()]] - `calls` [EXTRACTED]
+- [[test_normalize_local_model_omlx_deepseek_renamed_to_real_catalog_id]] - `calls` [EXTRACTED]
+- [[test_normalize_local_model_omlx_gemma_passes_through_unchanged()]] - `calls` [EXTRACTED]
+- [[test_normalize_local_model_omlx_unknown_model_passes_through_unchanged()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/proxy_messages
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

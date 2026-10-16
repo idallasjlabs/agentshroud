@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/killswitch_monitor.py"
+source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L37"
+community: "test_e2e_proxy.py"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/test_e2e_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_40]] - `references` [EXTRACTED]
-- [[KillSwitchConfig]] - `references` [EXTRACTED]
-- [[KillSwitchMonitor]] - `method` [EXTRACTED]
-- [[deque]] - `calls` [EXTRACTED]
+- [[ForwarderConfig]] - `references` [EXTRACTED]
+- [[HTTPForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

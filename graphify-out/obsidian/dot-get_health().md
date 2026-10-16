@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/collaborator_tracker.py"
+source_file: "gateway/cli/client.py"
 type: "code"
-community: "CollaboratorActivityTracker"
+community: "SCLClient"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CollaboratorActivityTracker
+  - community/SCLClient
 ---
 
 # .get_health()
 
 ## Connections
-- [[CollaboratorActivityTracker_1]] - `method` [EXTRACTED]
-- [[Return a health snapshot suitable for statusdetail.]] - `rationale_for` [EXTRACTED]
+- [[dot-get()_1]] - `calls` [EXTRACTED]
+- [[SCLClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CollaboratorActivityTracker
+#graphify/code #graphify/EXTRACTED #community/SCLClient

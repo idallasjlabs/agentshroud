@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "ToolChainAnalyzer"
+community: "TestToolChainAnalyzer"
 location: "L502"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolChainAnalyzer
+  - community/TestToolChainAnalyzer
 ---
 
 # ._cleanup_old_sessions()
@@ -16,4 +16,4 @@ tags:
 - [[Remove old sessions to prevent memory bloat.]] - `rationale_for` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

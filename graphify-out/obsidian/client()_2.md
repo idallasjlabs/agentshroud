@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/tests/test_v1_models_synthetic.py"
 type: "code"
-community: "FetchOutcome"
-location: "L38"
+community: "test_v1_models_synthetic.py"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/test_v1_models_syntheticpy
 ---
 
 # client()
 
 ## Connections
-- [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[TestClient with a stubbed proxy IP that passes the network allowlist.]] - `rationale_for` [EXTRACTED]
+- [[test_v1_models_synthetic.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/test_v1_models_syntheticpy

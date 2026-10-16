@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "OutboundInfoFilter"
+community: "AuditChain"
 location: "L448"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutboundInfoFilter
+  - community/AuditChain
 ---
 
 # ._is_allowed_for_trust()
@@ -17,4 +17,4 @@ tags:
 - [[InfoCategory]] - `references` [EXTRACTED]
 - [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/AuditChain

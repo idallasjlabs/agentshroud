@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
 - [[Return True if the bot is @mentioned or a bot_command targets this bot.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

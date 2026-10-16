@@ -15,8 +15,8 @@ tags:
 - [[dot-_append_audit_event()]] - `calls` [EXTRACTED]
 - [[dot-_persist_pending_store()]] - `calls` [EXTRACTED]
 - [[dot-broadcast()]] - `calls` [EXTRACTED]
-- [[ApprovalQueue_1]] - `method` [EXTRACTED]
-- [[ApprovalQueueItem_3]] - `references` [EXTRACTED]
+- [[ApprovalQueue]] - `method` [EXTRACTED]
+- [[ApprovalQueueItem]] - `references` [EXTRACTED]
 - [[PermissionError]] - `calls` [INFERRED]
 - [[Process an approval decision          Args             request_id Request UUID]] - `rationale_for` [EXTRACTED]
 

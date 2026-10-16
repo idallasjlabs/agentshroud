@@ -19,6 +19,6 @@ tags:
 - [[DisclosureCategory]] - `references` [EXTRACTED]
 - [[DisclosureEvent]] - `calls` [EXTRACTED]
 - [[MultiTurnTracker]] - `method` [EXTRACTED]
-- [[SessionContext_1]] - `references` [EXTRACTED]
+- [[SessionContext]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/dashboard/proxy_status.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "ProxyDashboard"
-location: "L83"
+community: "AuditChain"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/AuditChain
 ---
 
 # .__init__()
 
 ## Connections
-- [[ProxyDashboard]] - `method` [EXTRACTED]
+- [[dot-_compile_patterns()]] - `calls` [EXTRACTED]
+- [[Any_14]] - `references` [EXTRACTED]
+- [[InfoCategory]] - `calls` [EXTRACTED]
+- [[Initialize the outbound information filter.          Args             config C]] - `rationale_for` [EXTRACTED]
+- [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/code #graphify/EXTRACTED #community/AuditChain

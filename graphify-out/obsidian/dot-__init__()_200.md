@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_a2a_proxy.py"
+source_file: "gateway/proxy/telegram_gateway_relay.py"
 type: "code"
-community: "test_a2a_proxy.py"
-location: "L449"
+community: "TelegramGatewayRelay"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - community/TelegramGatewayRelay
 ---
 
 # .__init__()
 
 ## Connections
-- [[_StubAuditStore]] - `method` [EXTRACTED]
+- [[TelegramGatewayRelay]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/code #graphify/EXTRACTED #community/TelegramGatewayRelay

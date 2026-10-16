@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "PIIConfig"
 location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/PIIConfig
 ---
 
 # ._reconstruct_result()
 
 ## Connections
 - [[dot-sanitize_tool_result()]] - `calls` [EXTRACTED]
-- [[Any_72]] - `references` [EXTRACTED]
+- [[Any_28]] - `references` [EXTRACTED]
 - [[Reconstruct the tool result with sanitized content]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

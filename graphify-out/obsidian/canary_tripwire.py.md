@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 - [[CanaryConfig_1]] - `contains` [EXTRACTED]
-- [[CanaryResult]] - `contains` [EXTRACTED]
+- [[CanaryResult_1]] - `contains` [EXTRACTED]
 - [[CanaryTripwire]] - `contains` [EXTRACTED]
 - [[TripwireResponse]] - `contains` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]

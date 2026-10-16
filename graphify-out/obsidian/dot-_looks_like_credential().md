@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "AlertDispatcher"
+community: "KeyVault"
 location: "L269"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/KeyVault
 ---
 
 # ._looks_like_credential()
@@ -16,4 +16,4 @@ tags:
 - [[Check if a value looks like a credential.]] - `rationale_for` [EXTRACTED]
 - [[EnvironmentGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/KeyVault

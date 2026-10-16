@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/shared_memory.py"
+source_file: "gateway/security/group_rbac.py"
 type: "code"
-community: "RBACConfig"
-location: "L57"
+community: "GroupRoleResolver"
+location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/GroupRoleResolver
 ---
 
 # .__init__()
 
 ## Connections
-- [[SharedMemoryManager]] - `method` [EXTRACTED]
+- [[GroupRoleResolver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

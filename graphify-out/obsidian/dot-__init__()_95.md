@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L38"
+community: "test_soc_router_coverage.py"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/test_soc_router_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[AlertDispatcher]] - `method` [EXTRACTED]
-- [[Path_34]] - `references` [EXTRACTED]
-- [[deque]] - `calls` [INFERRED]
+- [[_Svc]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

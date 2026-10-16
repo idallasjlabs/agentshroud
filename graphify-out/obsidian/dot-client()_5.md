@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_skills_manifest_sync.py"
+source_file: "gateway/tests/test_api_contract.py"
 type: "code"
-community: "Path"
-location: "L328"
+community: "TestOpenAPIContract"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/TestOpenAPIContract
 ---
 
 # .client()
 
 ## Connections
-- [[Path_30]] - `references` [EXTRACTED]
-- [[TestClient_1]] - `references` [EXTRACTED]
-- [[TestSkillsReloadEndpoint]] - `method` [EXTRACTED]
+- [[Create a FastAPI test client.]] - `rationale_for` [EXTRACTED]
+- [[TestOpenAPIContract]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/TestOpenAPIContract

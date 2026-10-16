@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/security/output_schema.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "OutputSchemaEnforcer"
-location: "L67"
+community: "Action"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputSchemaEnforcer
+  - community/Action
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_register_default_schema()]] - `calls` [EXTRACTED]
-- [[OutputSchemaEnforcer]] - `method` [EXTRACTED]
+- [[dot-_build_permission_matrix()]] - `calls` [EXTRACTED]
+- [[dot-_build_tool_permissions()]] - `calls` [EXTRACTED]
+- [[Initialize RBAC manager with configuration.]] - `rationale_for` [EXTRACTED]
+- [[RBACConfig]] - `references` [EXTRACTED]
+- [[RBACManager_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer
+#graphify/code #graphify/EXTRACTED #community/Action

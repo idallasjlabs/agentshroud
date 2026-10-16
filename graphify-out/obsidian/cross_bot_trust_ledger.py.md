@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[BotIncidentSeverity]] - `contains` [EXTRACTED]
 - [[CrossBotTrustLedger_1]] - `contains` [EXTRACTED]
-- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[Enum_1]] - `imports_from` [EXTRACTED]
 - [[IncidentRecord]] - `contains` [EXTRACTED]
 - [[TrustDecayPolicy]] - `contains` [EXTRACTED]
-- [[TrustManager]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

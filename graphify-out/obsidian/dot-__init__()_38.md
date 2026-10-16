@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/consent_framework.py"
+source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "ConsentFramework"
-location: "L71"
+community: "AgentTarget"
+location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/AgentTarget
 ---
 
 # .__init__()
 
 ## Connections
-- [[ConsentFramework]] - `method` [EXTRACTED]
+- [[_PipelineCaptor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConsentFramework
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
 community: "WebProxy"
-location: "L114"
+location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # .drain()
 
 ## Connections
-- [[_DummyTargetWriter]] - `method` [EXTRACTED]
+- [[_MockWriter]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebProxy

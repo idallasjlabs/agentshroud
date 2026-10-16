@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: ".analyze_message"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/analyze_message
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # context_guard.py
@@ -17,9 +17,9 @@ tags:
 - [[ContextAttack]] - `contains` [EXTRACTED]
 - [[ContextGuard]] - `contains` [EXTRACTED]
 - [[ContextSegment]] - `contains` [EXTRACTED]
-- [[SessionContext]] - `contains` [EXTRACTED]
+- [[SessionContext_1]] - `contains` [EXTRACTED]
 - [[check_message()]] - `contains` [EXTRACTED]
 - [[get_context_guard()]] - `contains` [EXTRACTED]
 - [[normalize_input()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/analyze_message
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

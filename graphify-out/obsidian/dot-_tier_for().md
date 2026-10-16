@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-_decide()]] - `calls` [EXTRACTED]
 - [[A2AMethod]] - `references` [EXTRACTED]
-- [[A2APolicyEngine_1]] - `method` [EXTRACTED]
+- [[A2APolicyEngine_3]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2AMethod

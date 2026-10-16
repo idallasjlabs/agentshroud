@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/dns_forwarder.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "DNSForwarderProtocol"
-location: "L163"
+community: "MCPPermissionManager"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSForwarderProtocol
+  - community/MCPPermissionManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[DNSForwarderProtocol]] - `method` [EXTRACTED]
+- [[MCPServerConfig_1]] - `references` [EXTRACTED]
+- [[StdioConnection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

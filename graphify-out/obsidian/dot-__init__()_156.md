@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/a2a_policy.py"
+source_file: "gateway/web/api.py"
 type: "code"
-community: "A2APolicyConfig"
-location: "L393"
+community: "api.py"
+location: "L941"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyConfig
+  - community/apipy
 ---
 
 # .__init__()
 
 ## Connections
-- [[A2APolicyConfig_1]] - `references` [EXTRACTED]
-- [[A2APolicyEngine_1]] - `method` [EXTRACTED]
+- [[SkillGuardBlocked]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig
+#graphify/code #graphify/EXTRACTED #community/apipy

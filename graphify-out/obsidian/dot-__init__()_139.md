@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "MultiTurnTracker"
-location: "L94"
+community: "AuditEvent"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MultiTurnTracker
+  - community/AuditEvent
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_compile_detection_patterns()_1]] - `calls` [EXTRACTED]
-- [[Any_58]] - `references` [EXTRACTED]
-- [[Initialize the multi-turn tracker.          Args             config Configurat]] - `rationale_for` [EXTRACTED]
-- [[MultiTurnTracker]] - `method` [EXTRACTED]
-- [[ThresholdConfig]] - `calls` [EXTRACTED]
+- [[dot-_generate_event_id()]] - `calls` [EXTRACTED]
+- [[AuditEvent]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker
+#graphify/code #graphify/EXTRACTED #community/AuditEvent

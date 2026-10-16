@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[Function Details_29]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_31]] - `contains` [EXTRACTED]
-- [[Purpose_148]] - `contains` [EXTRACTED]
+- [[Purpose_134]] - `contains` [EXTRACTED]
 - [[Related_35]] - `contains` [EXTRACTED]
-- [[Responsibilities_33]] - `contains` [EXTRACTED]
+- [[Responsibilities_32]] - `contains` [EXTRACTED]
 - [[Social Engineering Patterns]] - `contains` [EXTRACTED]
 - [[Threat Model_19]] - `contains` [EXTRACTED]
 - [[URL Reputation Signals]] - `contains` [EXTRACTED]

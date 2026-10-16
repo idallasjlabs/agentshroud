@@ -17,7 +17,7 @@ tags:
 - [[dot-_scan_setup_py()]] - `calls` [EXTRACTED]
 - [[Analyze a script file for malicious patterns.]] - `rationale_for` [EXTRACTED]
 - [[GitGuard]] - `method` [EXTRACTED]
-- [[Path_50]] - `references` [EXTRACTED]
+- [[Path_4]] - `references` [EXTRACTED]
 - [[SecurityFinding]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/GitGuard

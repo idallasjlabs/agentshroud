@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "ServiceManager"
-location: "L45"
+community: "CompetitiveIntelReport"
+location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/CompetitiveIntelReport
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeUnixSocket]] - `method` [EXTRACTED]
+- [[IntelReportStore_1]] - `method` [EXTRACTED]
+- [[Path_50]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

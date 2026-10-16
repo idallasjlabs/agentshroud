@@ -1,24 +1,22 @@
 ---
-source_file: "gateway/proxy/mcp_config.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "PermissionLevel"
-location: "L98"
+community: "MiddlewareManager"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PermissionLevel
+  - community/MiddlewareManager
 ---
 
 # .from_dict()
 
 ## Connections
-- [[Any_9]] - `references` [EXTRACTED]
-- [[MCPProxyConfig_3]] - `method` [EXTRACTED]
-- [[MCPServerConfig_2]] - `calls` [EXTRACTED]
-- [[MCPToolConfig]] - `calls` [EXTRACTED]
-- [[MCPTransport]] - `calls` [EXTRACTED]
-- [[Parse config from a dictionary (e.g. loaded from YAML).]] - `rationale_for` [EXTRACTED]
-- [[PermissionLevel]] - `calls` [EXTRACTED]
+- [[dot-_load_integrity_database()]] - `calls` [EXTRACTED]
+- [[Any_1]] - `references` [EXTRACTED]
+- [[Create from dictionary for JSON deserialization.]] - `rationale_for` [EXTRACTED]
+- [[FileIntegrityRecord]] - `method` [EXTRACTED]
+- [[ModificationSource]] - `calls` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/PermissionLevel
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

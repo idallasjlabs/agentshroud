@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/proxy/collaborator_greeter.py"
+source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "test_collaborator_greeter.py"
-location: "L36"
+community: "test_forward_stream.py"
+location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_greeterpy
+  - community/test_forward_streampy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_state()]] - `calls` [EXTRACTED]
-- [[dot-_load_taglines()]] - `calls` [EXTRACTED]
-- [[AsyncClient]] - `references` [EXTRACTED]
-- [[CollaboratorGreeter]] - `method` [EXTRACTED]
+- [[_PassthroughPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy

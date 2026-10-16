@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_key_rotation.py"
+source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "MockValidator"
-location: "L30"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MockValidator
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # .__init__()
 
 ## Connections
-- [[MockValidator]] - `method` [EXTRACTED]
+- [[dot-_compile_detection_patterns()_1]] - `calls` [EXTRACTED]
+- [[dot-_load_protected_content()]] - `calls` [EXTRACTED]
+- [[Any_53]] - `references` [EXTRACTED]
+- [[Initialize prompt protection system.          Args             config Configur]] - `rationale_for` [EXTRACTED]
+- [[PromptProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MockValidator
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "scripts/export-email-reports.py"
 type: "code"
-community: "FalcoAlertWatcher"
-location: "L67"
+community: "export_bot"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/export_bot
 ---
 
 # datetime
 
 ## Connections
-- [[falco_monitor.py]] - `imports_from` [EXTRACTED]
-- [[read_alerts()_1]] - `references` [EXTRACTED]
+- [[_parse_since()_1]] - `references` [EXTRACTED]
+- [[_report_date()]] - `references` [EXTRACTED]
+- [[export-email-reports.py]] - `imports_from` [EXTRACTED]
+- [[export_bot()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/export_bot

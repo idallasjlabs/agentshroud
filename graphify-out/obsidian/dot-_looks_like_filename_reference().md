@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "._filter_outbound"
 location: "L1123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/_filter_outbound
 ---
 
 # ._looks_like_filename_reference()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_trigger_web_fetch_approval()]] - `calls` [EXTRACTED]
 - [[Best-effort check to avoid treating local file names as egress domains.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/_filter_outbound

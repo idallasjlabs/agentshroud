@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "._active_send_token"
+community: "TelegramAPIProxy"
 location: "L8140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_active_send_token
+  - community/TelegramAPIProxy
 ---
 
 # ._forward_to_telegram()
@@ -16,6 +16,6 @@ tags:
 - [[dot-_telegram_create_invite_link()]] - `calls` [EXTRACTED]
 - [[dot-_telegram_kick_member()]] - `calls` [EXTRACTED]
 - [[Forward request to real Telegram API and return parsed response.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_active_send_token
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

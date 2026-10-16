@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "Action"
-location: "L64"
+community: "AsyncMock"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Action
+  - community/AsyncMock
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_build_permission_matrix()]] - `calls` [EXTRACTED]
-- [[dot-_build_tool_permissions()]] - `calls` [EXTRACTED]
-- [[Initialize RBAC manager with configuration.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_4]] - `references` [EXTRACTED]
-- [[RBACManager_2]] - `method` [EXTRACTED]
+- [[SlackAPIProxy_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Action
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

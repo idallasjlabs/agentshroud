@@ -13,13 +13,13 @@ tags:
 
 ## Connections
 - [[container-net-diag.sh]] - `contains` [EXTRACTED]
-- [[fail()_5]] - `calls` [EXTRACTED]
+- [[fail()_4]] - `calls` [EXTRACTED]
 - [[has()_1]] - `calls` [EXTRACTED]
 - [[header()]] - `calls` [EXTRACTED]
 - [[http_test()]] - `calls` [EXTRACTED]
 - [[info()_2]] - `calls` [EXTRACTED]
 - [[pass()_3]] - `calls` [EXTRACTED]
 - [[tcp_test()]] - `calls` [EXTRACTED]
-- [[warn()_6]] - `calls` [EXTRACTED]
+- [[warn()_3]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/container-net-diagsh

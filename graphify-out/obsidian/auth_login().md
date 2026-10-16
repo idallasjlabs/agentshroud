@@ -15,7 +15,7 @@ tags:
 - [[Exchange gateway token for a session cookie.]] - `rationale_for` [EXTRACTED]
 - [[JSONResponse]] - `references` [EXTRACTED]
 - [[LoginRequest]] - `references` [EXTRACTED]
-- [[RBACConfig_1]] - `calls` [EXTRACTED]
+- [[RBACConfig_4]] - `calls` [EXTRACTED]
 - [[issue_session_token()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]
 

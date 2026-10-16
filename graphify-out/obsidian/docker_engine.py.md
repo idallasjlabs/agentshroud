@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ADR-006 Multi-Runtime Container Support]] - `implements` [EXTRACTED]
 - [[ContainerEngine]] - `imports` [EXTRACTED]
-- [[ContainerInfo]] - `imports` [EXTRACTED]
+- [[ContainerInfo_3]] - `imports` [EXTRACTED]
 - [[DockerEngine]] - `contains` [EXTRACTED]
 - [[RuntimeConfig]] - `references` [EXTRACTED]
 - [[compose_generator.py]] - `references` [EXTRACTED]

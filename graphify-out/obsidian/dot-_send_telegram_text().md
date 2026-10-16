@@ -22,6 +22,6 @@ tags:
 - [[dot-_send_local_notice_with_fallback()]] - `calls` [EXTRACTED]
 - [[dot-_send_owner_admin_notice()]] - `calls` [EXTRACTED]
 - [[Best-effort Telegram sender with bounded retries.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

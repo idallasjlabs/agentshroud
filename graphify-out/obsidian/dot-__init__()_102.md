@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/key_rotation.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "KeyRotationConfig"
-location: "L122"
+community: "TestEgressApprovalQueue"
+location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationConfig
+  - community/TestEgressApprovalQueue
 ---
 
 # .__init__()
 
 ## Connections
-- [[Initialize the key rotation manager.]] - `rationale_for` [EXTRACTED]
-- [[KeyRotationConfig]] - `references` [EXTRACTED]
-- [[KeyRotationManager]] - `method` [EXTRACTED]
+- [[dot-_load_rules()]] - `calls` [EXTRACTED]
+- [[EgressApprovalQueue]] - `method` [EXTRACTED]
+- [[Initialize the approval queue.          Args             rules_file Path to pe]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationConfig
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_scan_value()]] - `calls` [EXTRACTED]
 - [[InspectionFinding]] - `references` [EXTRACTED]
-- [[MCPInspector]] - `method` [EXTRACTED]
+- [[MCPInspector_1]] - `method` [EXTRACTED]
 - [[Scan a single string for all threat types.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/inspect_tool_call

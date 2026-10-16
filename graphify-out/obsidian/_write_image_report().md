@@ -19,8 +19,8 @@ tags:
 - [[dot-test_each_entry_has_image_key()]] - `calls` [EXTRACTED]
 - [[dot-test_ignores_non_image_prefixed_files()]] - `calls` [EXTRACTED]
 - [[dot-test_returns_one_entry_per_report_file()]] - `calls` [EXTRACTED]
-- [[Any_74]] - `references` [EXTRACTED]
-- [[Path_41]] - `references` [EXTRACTED]
+- [[Any_71]] - `references` [EXTRACTED]
+- [[Path_27]] - `references` [EXTRACTED]
 - [[Write a fake image report file in the expected filename format.]] - `rationale_for` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 

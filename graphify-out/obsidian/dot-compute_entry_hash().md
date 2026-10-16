@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-compute_content_hash()]] - `calls` [EXTRACTED]
-- [[dot-log_event()_1]] - `calls` [EXTRACTED]
+- [[dot-log_event()_2]] - `calls` [EXTRACTED]
 - [[dot-verify_hash_chain()]] - `calls` [EXTRACTED]
 - [[AuditEvent]] - `method` [EXTRACTED]
 - [[Compute entry hash including previous hash (chain).]] - `rationale_for` [EXTRACTED]

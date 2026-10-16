@@ -15,6 +15,6 @@ tags:
 - [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
 - [[dot-_proxy_request_impl()]] - `calls` [EXTRACTED]
 - [[Return the @username (without @) for the given bot_id.          Looks up ``_bot_]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_proxy_request_impl

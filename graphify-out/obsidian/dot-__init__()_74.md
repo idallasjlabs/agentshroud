@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "AsyncMock"
-location: "L96"
+community: "AuditExporter"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/AuditExporter
 ---
 
 # .__init__()
 
 ## Connections
-- [[AsyncMock]] - `calls` [INFERRED]
-- [[FakeProcess]] - `method` [EXTRACTED]
+- [[AuditExportConfig]] - `references` [EXTRACTED]
+- [[AuditExporter]] - `method` [EXTRACTED]
+- [[AuditStore]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/AuditExporter

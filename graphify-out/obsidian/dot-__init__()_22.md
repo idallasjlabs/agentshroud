@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_cron_state_monitor.py"
+source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "CronStateMonitor"
-location: "L51"
+community: "MiddlewareManager"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CronStateMonitor
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[_DispatchSpy]] - `method` [EXTRACTED]
+- [[NetworkValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CronStateMonitor
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

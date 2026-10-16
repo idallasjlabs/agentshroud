@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "PIIConfig"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # ._check_plain()
 
 ## Connections
 - [[dot-_normalize()]] - `calls` [EXTRACTED]
-- [[dot-scan()_2]] - `calls` [EXTRACTED]
-- [[CanaryResult]] - `references` [EXTRACTED]
+- [[dot-scan()_1]] - `calls` [EXTRACTED]
+- [[CanaryResult_1]] - `references` [EXTRACTED]
 - [[CanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

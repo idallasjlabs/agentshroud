@@ -12,6 +12,6 @@ tags:
 # `HTTPConnectProxy.get_stats()`
 
 ## Connections
-- [[Function Details_2]] - `contains` [EXTRACTED]
+- [[Function Details_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/http_proxypy

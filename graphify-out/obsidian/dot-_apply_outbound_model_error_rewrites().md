@@ -15,8 +15,8 @@ tags:
 - [[dot-_collaborator_safe_notice()]] - `calls` [EXTRACTED]
 - [[dot-_filter_outbound()_1]] - `calls` [EXTRACTED]
 - [[dot-_rewrite_known_runtime_errors()]] - `calls` [EXTRACTED]
-- [[Any_81]] - `references` [EXTRACTED]
+- [[Any_65]] - `references` [EXTRACTED]
 - [[Rewrite raw modelruntime error texts to actionable user-facing messages.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_filter_outbound

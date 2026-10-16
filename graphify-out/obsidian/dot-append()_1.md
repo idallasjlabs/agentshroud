@@ -1,21 +1,23 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "dashboard_endpoints.py"
-location: "L146"
+community: "PipelineAction"
+location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy
+  - community/PipelineAction
 ---
 
 # .append()
 
 ## Connections
-- [[dot-emit()_1]] - `calls` [EXTRACTED]
-- [[dot-push()_4]] - `calls` [EXTRACTED]
-- [[LogBuffer]] - `method` [EXTRACTED]
-- [[logs_recent()]] - `calls` [EXTRACTED]
-- [[ssh_hosts()_1]] - `calls` [EXTRACTED]
+- [[dot-_process_inbound_core()]] - `calls` [EXTRACTED]
+- [[dot-_process_outbound_core()]] - `calls` [EXTRACTED]
+- [[dot-append_block()]] - `calls` [EXTRACTED]
+- [[dot-append_owner_bypass()]] - `calls` [EXTRACTED]
+- [[Any_51]] - `references` [EXTRACTED]
+- [[AuditChain]] - `method` [EXTRACTED]
+- [[AuditChainEntry]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

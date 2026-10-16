@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 - [[AuditEvent]] - `imports` [EXTRACTED]
-- [[AuditExportConfig_1]] - `contains` [EXTRACTED]
+- [[AuditExportConfig]] - `contains` [EXTRACTED]
 - [[AuditExporter]] - `contains` [EXTRACTED]
 - [[AuditStore_1]] - `imports` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]

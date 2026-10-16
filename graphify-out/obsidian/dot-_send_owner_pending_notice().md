@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "._active_send_token"
+community: "TelegramAPIProxy"
 location: "L7492"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_active_send_token
+  - community/TelegramAPIProxy
 ---
 
 # ._send_owner_pending_notice()
@@ -15,6 +15,6 @@ tags:
 - [[dot-_resolve_display_name()]] - `calls` [EXTRACTED]
 - [[dot-_send_local_notice_with_fallback()]] - `calls` [EXTRACTED]
 - [[Send deterministic owner pending-approval snapshot.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_active_send_token
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

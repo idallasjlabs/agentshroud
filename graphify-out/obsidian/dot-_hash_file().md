@@ -15,7 +15,7 @@ tags:
 - [[dot-check()_6]] - `calls` [EXTRACTED]
 - [[dot-reset_baseline()]] - `calls` [EXTRACTED]
 - [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
-- [[Path_62]] - `references` [EXTRACTED]
+- [[Path_55]] - `references` [EXTRACTED]
 - [[Return hex SHA256 of a file, or None if the file does not exist.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/check

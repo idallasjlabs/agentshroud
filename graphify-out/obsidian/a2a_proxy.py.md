@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[A2AMethod]] - `imports` [EXTRACTED]
-- [[A2APolicyEngine_1]] - `imports` [EXTRACTED]
-- [[A2AProxy]] - `contains` [EXTRACTED]
+- [[A2APolicyEngine_3]] - `imports` [EXTRACTED]
+- [[A2AProxy_1]] - `contains` [EXTRACTED]
 - [[A2AProxyResult]] - `contains` [EXTRACTED]
 - [[Hermes A2A Plugin Upstream Gaps (83701, 8053480779, 78298, 77872, 81042)]] - `implements` [EXTRACTED]
 - [[HermesA2AForwarder]] - `contains` [EXTRACTED]

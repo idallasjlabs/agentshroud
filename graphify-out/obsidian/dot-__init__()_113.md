@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_jira_weekly_review.py"
+source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "test_jira_weekly_review.py"
-location: "L195"
+community: "FetchOutcome"
+location: "L319"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_jira_weekly_reviewpy
+  - community/FetchOutcome
 ---
 
 # .__init__()
 
 ## Connections
-- [[_MockTransport_1]] - `method` [EXTRACTED]
+- [[_FakeStreamResponse_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_jira_weekly_reviewpy
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

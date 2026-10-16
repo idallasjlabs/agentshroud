@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/tests/test_middleware_coverage.py"
+source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "_req"
-location: "L144"
+community: "PIIConfig"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req
+  - community/PIIConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeRBAC_1]] - `method` [EXTRACTED]
+- [[dot-_init_presidio()]] - `calls` [EXTRACTED]
+- [[Initialize sanitizer          Args             config PII configuration from a]] - `rationale_for` [EXTRACTED]
+- [[PIIConfig]] - `references` [EXTRACTED]
+- [[PIISanitizer_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

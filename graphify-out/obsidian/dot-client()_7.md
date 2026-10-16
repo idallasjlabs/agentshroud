@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_runtime_engines.py"
+source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "code"
-community: "TestWebAPI"
-location: "L664"
+community: "Path"
+location: "L328"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestWebAPI
+  - community/Path
 ---
 
 # .client()
 
 ## Connections
-- [[TestWebAPI]] - `method` [EXTRACTED]
+- [[Path_54]] - `references` [EXTRACTED]
+- [[TestClient_1]] - `references` [EXTRACTED]
+- [[TestSkillsReloadEndpoint]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestWebAPI
+#graphify/code #graphify/EXTRACTED #community/Path

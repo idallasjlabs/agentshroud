@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/soc/websocket.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "Enum"
-location: "L29"
+community: "AuditChain"
+location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/AuditChain
 ---
 
 # .__init__()
 
 ## Connections
-- [[SOCWebSocketHandler]] - `method` [EXTRACTED]
-- [[WebSocket_5]] - `references` [EXTRACTED]
+- [[KeyLeakDetector]] - `method` [EXTRACTED]
+- [[KeyVault]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/AuditChain

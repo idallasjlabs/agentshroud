@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-_check_impl()]] - `calls` [EXTRACTED]
 - [[Check if host is a private, loopback, link-local, or reserved IP.          Cover]] - `rationale_for` [EXTRACTED]
-- [[EgressFilter_2]] - `method` [EXTRACTED]
+- [[EgressFilter_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/EgressAttempt

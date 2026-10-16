@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/proxy/telegram_replay.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L106"
+community: "test_telegram_replay.py"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/test_telegram_replaypy
 ---
 
 # .close()
 
 ## Connections
-- [[Close the store and cancel timeout tasks.]] - `rationale_for` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
+- [[Close the SQLite connection (idempotent).]] - `rationale_for` [EXTRACTED]
+- [[UpdateReplayBuffer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy

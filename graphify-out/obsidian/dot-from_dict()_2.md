@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/security/privacy_policy.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "PrivacyPolicyEnforcer"
-location: "L132"
+community: "A2APolicyConfig"
+location: "L210"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/A2APolicyConfig
 ---
 
 # .from_dict()
 
 ## Connections
-- [[dot-default()]] - `calls` [EXTRACTED]
-- [[Parse from a YAMLdict representation.          Example YAML             privac]] - `rationale_for` [EXTRACTED]
-- [[PrivacyPolicy]] - `method` [EXTRACTED]
-- [[ServicePolicy]] - `calls` [EXTRACTED]
+- [[A2APolicyAction]] - `calls` [EXTRACTED]
+- [[A2APolicyConfig_1]] - `method` [EXTRACTED]
+- [[Any_17]] - `references` [EXTRACTED]
+- [[Parse a policy config from a plain dict (e.g. loaded from YAML).]] - `rationale_for` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig

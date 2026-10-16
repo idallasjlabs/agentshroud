@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_web_proxy_security.py"
+source_file: "gateway/security/report_store.py"
 type: "code"
-community: "ProxyAction"
-location: "L47"
+community: "ReportStore"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction
+  - community/ReportStore
 ---
 
 # .__init__()
 
 ## Connections
-- [[MockEgressEvent]] - `method` [EXTRACTED]
+- [[ReportStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/code #graphify/EXTRACTED #community/ReportStore

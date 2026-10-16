@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AlertDispatcher]] - `method` [EXTRACTED]
-- [[Any]] - `references` [EXTRACTED]
+- [[Any_60]] - `references` [EXTRACTED]
 - [[Get buffered alerts for daily digest.          Args             clear Clear bu]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher

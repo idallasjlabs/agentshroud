@@ -15,7 +15,7 @@ tags:
 - [[Translate an Anthropic Messages request body to OpenAI chat completions format.]] - `rationale_for` [EXTRACTED]
 - [[_anthropic_content_to_openai()]] - `calls` [EXTRACTED]
 - [[_anthropic_system_to_openai()]] - `calls` [EXTRACTED]
-- [[_random_msg_id()_1]] - `calls` [EXTRACTED]
+- [[_random_msg_id()]] - `calls` [EXTRACTED]
 - [[anthropic_openai_translator.py]] - `contains` [EXTRACTED]
 - [[gemini_to_openai_request()]] - `semantically_similar_to` [INFERRED]
 - [[test_anthropic_openai_translator.py]] - `imports` [EXTRACTED]

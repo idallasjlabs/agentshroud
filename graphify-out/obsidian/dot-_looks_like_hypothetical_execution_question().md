@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
 - [[Detect policy questions about execution behavior (not actual execution asks).]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

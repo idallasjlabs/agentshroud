@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-evaluate()]] - `calls` [EXTRACTED]
 - [[A2APolicyDecision]] - `references` [EXTRACTED]
-- [[A2APolicyEngine_1]] - `method` [EXTRACTED]
+- [[A2APolicyEngine_3]] - `method` [EXTRACTED]
 - [[Evaluate and resolve the decision to a terminal ALLOWDENY.          Identical f]] - `rationale_for` [EXTRACTED]
 - [[_method_of()]] - `calls` [EXTRACTED]
 - [[_norm()]] - `calls` [EXTRACTED]

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "Enum"
+community: "test_soc_bots.py"
 location: "L203"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/test_soc_botspy
 ---
 
 # collect_recent_events()
 
 ## Connections
-- [[Any_19]] - `references` [EXTRACTED]
+- [[Any_44]] - `references` [EXTRACTED]
 - [[Collect recent SecurityEvents from AuditStore (async-safe read).]] - `rationale_for` [EXTRACTED]
 - [[SecurityEvent]] - `references` [EXTRACTED]
 - [[TestCollectRecentEvents]] - `calls` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[get_security_events()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

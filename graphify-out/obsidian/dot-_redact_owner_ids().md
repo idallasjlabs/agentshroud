@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-_collaborator_safe_notice()]] - `calls` [EXTRACTED]
 - [[dot-_filter_outbound()_1]] - `calls` [EXTRACTED]
-- [[Any_81]] - `references` [EXTRACTED]
+- [[Any_65]] - `references` [EXTRACTED]
 - [[Redact the owner's Telegram user ID from collaborator-bound text.          Strip]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_filter_outbound

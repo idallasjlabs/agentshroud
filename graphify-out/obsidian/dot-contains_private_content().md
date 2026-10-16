@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: ".get_merged_memory_for_user"
+community: "RBACConfig"
 location: "L365"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_merged_memory_for_user
+  - community/RBACConfig
 ---
 
 # .contains_private_content()
@@ -17,4 +17,4 @@ tags:
 - [[Return True if text contains patterns matching privatesensitive content.]] - `rationale_for` [EXTRACTED]
 - [[SharedMemoryManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_merged_memory_for_user
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

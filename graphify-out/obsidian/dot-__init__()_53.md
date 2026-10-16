@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_differential_pii_detector.py"
+source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "DifferentialPIIDetector"
-location: "L210"
+community: "AlertDispatcher"
+location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/AlertDispatcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeRecognizerResult]] - `method` [EXTRACTED]
+- [[EgressMonitor]] - `method` [EXTRACTED]
+- [[EgressMonitorConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

@@ -17,7 +17,7 @@ tags:
 - [[dot-test_initial_when_not_run()_1]] - `calls` [EXTRACTED]
 - [[dot-test_one_when_sbom_exists()]] - `calls` [EXTRACTED]
 - [[dot-test_zero_when_no_sbom_no_trivy()]] - `calls` [EXTRACTED]
-- [[Any_74]] - `references` [EXTRACTED]
+- [[Any_71]] - `references` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

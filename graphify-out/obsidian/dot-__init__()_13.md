@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/subagent_monitor.py"
+source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "SubagentMonitor"
-location: "L67"
+community: "AlertDispatcher"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentMonitor
+  - community/AlertDispatcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[SubagentMonitor]] - `method` [EXTRACTED]
-- [[SubagentMonitorConfig]] - `references` [EXTRACTED]
+- [[EnvironmentGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentMonitor
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

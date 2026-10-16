@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Return deduplicated list of all user IDs across all groups.]] - `rationale_for` [EXTRACTED]
-- [[TeamsConfig]] - `method` [EXTRACTED]
+- [[TeamsConfig_2]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RBACConfig

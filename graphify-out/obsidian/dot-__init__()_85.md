@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/slack_proxy.py"
+source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "SlackAPIProxy"
+community: "PIIConfig"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/PIIConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[SlackAPIProxy_1]] - `method` [EXTRACTED]
+- [[EncodingConfig]] - `references` [EXTRACTED]
+- [[EncodingDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

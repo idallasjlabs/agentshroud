@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/runtime/podman_engine.py"
+source_file: "gateway/security/output_schema.py"
 type: "code"
-community: "PodmanEngine"
-location: "L32"
+community: "OutputSchemaEnforcer"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PodmanEngine
+  - community/OutputSchemaEnforcer
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_detect_compose()]] - `calls` [EXTRACTED]
-- [[PodmanEngine]] - `method` [EXTRACTED]
+- [[dot-_register_default_schema()]] - `calls` [EXTRACTED]
+- [[OutputSchemaEnforcer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PodmanEngine
+#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer

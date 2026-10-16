@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-forward_to_agent()]] - `calls` [EXTRACTED]
 - [[dot-forward_to_agent_stream()]] - `calls` [EXTRACTED]
-- [[AgentTarget_2]] - `references` [EXTRACTED]
-- [[Any_55]] - `references` [EXTRACTED]
+- [[AgentTarget]] - `references` [EXTRACTED]
+- [[Any_10]] - `references` [EXTRACTED]
 - [[Build the outbound payload for `target`, shared by the blocking and         stre]] - `rationale_for` [EXTRACTED]
 - [[MultiAgentRouter]] - `method` [EXTRACTED]
 

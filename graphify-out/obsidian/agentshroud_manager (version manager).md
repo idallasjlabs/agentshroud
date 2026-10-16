@@ -12,6 +12,6 @@ tags:
 
 ## Connections
 - [[VersionRequest]] - `shares_data_with` [INFERRED]
-- [[get_version_history()]] - `calls` [EXTRACTED]
+- [[get_version_history()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/upgrade

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/path_isolation.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L65"
+community: "KillSwitchMonitor"
+location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/KillSwitchMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_ensure_base_directory()]] - `calls` [EXTRACTED]
-- [[PathIsolationConfig]] - `references` [EXTRACTED]
-- [[PathIsolationManager]] - `method` [EXTRACTED]
+- [[AuditChain]] - `method` [EXTRACTED]
+- [[deque]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

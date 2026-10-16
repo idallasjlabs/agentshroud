@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-_proxy_request_impl()]] - `calls` [EXTRACTED]
 - [[Forward a Telegram file download and return a raw-binary sentinel dict.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_proxy_request_impl

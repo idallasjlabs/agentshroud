@@ -15,6 +15,6 @@ tags:
 - [[dot-get_contributor()]] - `calls` [EXTRACTED]
 - [[dot-list_contributors()]] - `calls` [EXTRACTED]
 - [[ContributorManager]] - `method` [EXTRACTED]
-- [[RBACConfig_1]] - `calls` [EXTRACTED]
+- [[RBACConfig_4]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/rbac_configpy

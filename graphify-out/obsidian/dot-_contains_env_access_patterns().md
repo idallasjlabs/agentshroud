@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "AlertDispatcher"
+community: "KeyVault"
 location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/KeyVault
 ---
 
 # ._contains_env_access_patterns()
@@ -16,4 +16,4 @@ tags:
 - [[Check if command contains patterns that could access environment.]] - `rationale_for` [EXTRACTED]
 - [[EnvironmentGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/KeyVault

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "rationale"
-community: "LLMProxy"
+community: "test_llm_proxy.py"
 location: "L551"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/test_llm_proxypy
 ---
 
 # content_block_start with terminal_tool must be replaced with a text error block.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_streaming_tool_acl_blocks_terminal_tool()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LLMProxy
+#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxypy

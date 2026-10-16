@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[dot-_handle_outbound_tool_calls()]] - `calls` [EXTRACTED]
-- [[Any_81]] - `references` [EXTRACTED]
+- [[Any_65]] - `references` [EXTRACTED]
 - [[Log a web_search egress event with user attribution when raw JSON leaks.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_filter_outbound

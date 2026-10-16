@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/cli/client.py"
+source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "SCLClient"
-location: "L17"
+community: "SecureBrowser"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SCLClient
+  - community/SecureBrowser
 ---
 
 # .__init__()
 
 ## Connections
-- [[SCLClient]] - `method` [EXTRACTED]
+- [[dot-_load_config()_1]] - `calls` [EXTRACTED]
+- [[SecureBrowser_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SCLClient
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

@@ -16,6 +16,6 @@ tags:
 - [[dot-set_user_role()]] - `calls` [EXTRACTED]
 - [[Log privilege changes; emit WARNING for escalations (unusual patterns).]] - `rationale_for` [EXTRACTED]
 - [[RBACManager_2]] - `method` [EXTRACTED]
-- [[Role_37]] - `references` [EXTRACTED]
+- [[Role_21]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Action

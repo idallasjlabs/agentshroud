@@ -15,7 +15,7 @@ tags:
 - [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
 - [[dot-_send_owner_admin_notice()]] - `calls` [EXTRACTED]
 - [[Handle groups — list groups this user belongs to.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 - [[format_groups_list()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/telegram_proxypy

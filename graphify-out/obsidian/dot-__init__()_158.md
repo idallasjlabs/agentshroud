@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "FalcoAlertWatcher"
-location: "L194"
+community: "TestSSRFDetection"
+location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/TestSSRFDetection
 ---
 
 # .__init__()
 
 ## Connections
-- [[FalcoAlertWatcher]] - `method` [EXTRACTED]
-- [[Path_49]] - `references` [EXTRACTED]
+- [[Args             resolve_dns If True, resolve hostnames to IPs and check those]] - `rationale_for` [EXTRACTED]
+- [[URLAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/context_integrity.py"
+source_file: "gateway/dashboard/proxy_status.py"
 type: "code"
-community: "ContextSegment"
-location: "L64"
+community: "ProxyDashboard"
+location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/ProxyDashboard
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_24]] - `references` [EXTRACTED]
-- [[ContextIntegrityScorer]] - `method` [EXTRACTED]
+- [[ProxyDashboard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/ProxyDashboard

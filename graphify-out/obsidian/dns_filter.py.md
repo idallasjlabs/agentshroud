@@ -1,25 +1,17 @@
 ---
-source_file: "gateway/security/dns_filter.py"
-type: "code"
-community: "DNSFilterConfig"
+source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
+type: "document"
+community: "dns_filter.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/dns_filterpy
 ---
 
-# dns_filter.py
+# dns_filter.py.md
 
 ## Connections
-- [[DNSFilter]] - `contains` [EXTRACTED]
-- [[DNSFilterConfig]] - `contains` [EXTRACTED]
-- [[DNSQuery_1]] - `contains` [EXTRACTED]
-- [[DNSVerdict]] - `contains` [EXTRACTED]
-- [[EntropyCalculator]] - `contains` [EXTRACTED]
-- [[TunnelingPattern]] - `contains` [EXTRACTED]
-- [[alert_dispatcher.py_2]] - `references` [EXTRACTED]
-- [[cve-mitigation-matrix]] - `references` [EXTRACTED]
-- [[egress_filter.py_1]] - `references` [EXTRACTED]
+- [[dns_filter.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/dns_filterpy

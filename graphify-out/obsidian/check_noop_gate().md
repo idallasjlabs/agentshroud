@@ -19,7 +19,7 @@ tags:
 - [[_capture_pins]] - `calls` [EXTRACTED]
 - [[_capture_pins()]] - `calls` [EXTRACTED]
 - [[err()]] - `calls` [EXTRACTED]
-- [[log()]] - `calls` [EXTRACTED]
+- [[log()_8]] - `calls` [EXTRACTED]
 - [[phase_discover()]] - `shares_data_with` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 - [[sunday-upgrade-apply.sh main flow]] - `calls` [EXTRACTED]

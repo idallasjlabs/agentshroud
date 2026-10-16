@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L148"
+community: "KeyVault"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/KeyVault
 ---
 
 # .__init__()
 
 ## Connections
-- [[A2APolicyEngine]] - `references` [EXTRACTED]
-- [[A2AProxy]] - `method` [EXTRACTED]
-- [[Any_68]] - `references` [EXTRACTED]
+- [[dot-_compile_patterns()_1]] - `calls` [EXTRACTED]
+- [[LogSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/KeyVault

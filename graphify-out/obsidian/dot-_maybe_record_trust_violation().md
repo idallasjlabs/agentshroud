@@ -12,8 +12,8 @@ tags:
 # ._maybe_record_trust_violation()
 
 ## Connections
-- [[dot-process_inbound()_3]] - `calls` [EXTRACTED]
-- [[dot-process_outbound()_3]] - `calls` [EXTRACTED]
+- [[dot-process_inbound()_5]] - `calls` [EXTRACTED]
+- [[dot-process_outbound()_6]] - `calls` [EXTRACTED]
 - [[PipelineResult_1]] - `references` [EXTRACTED]
 - [[Record a trust-score violation and propagate cross-bot decay.          Called on]] - `rationale_for` [EXTRACTED]
 - [[SecurityPipeline_2]] - `method` [EXTRACTED]

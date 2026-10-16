@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-export_attack_report()]] - `calls` [EXTRACTED]
 - [[dot-get_session_risk_level()]] - `calls` [EXTRACTED]
-- [[Any_43]] - `references` [EXTRACTED]
+- [[Any_8]] - `references` [EXTRACTED]
 - [[ContextGuard]] - `method` [EXTRACTED]
 - [[Get summary of detected attacks.]] - `rationale_for` [EXTRACTED]
 

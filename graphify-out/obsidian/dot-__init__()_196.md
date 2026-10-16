@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/config_integrity.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: ".check"
-location: "L49"
+community: "ApprovalQueueConfig"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check
+  - community/ApprovalQueueConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
-- [[Path_62]] - `references` [EXTRACTED]
+- [[ApprovalStore]] - `method` [EXTRACTED]
+- [[Path_60]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

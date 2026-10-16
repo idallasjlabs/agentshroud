@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L136"
+community: "test_soc_router_coverage.py"
+location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/test_soc_router_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[AuditChain]] - `method` [EXTRACTED]
-- [[deque]] - `calls` [INFERRED]
+- [[FakeGroup]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

@@ -12,6 +12,6 @@ tags:
 # `no-new-privileges` Security Denial
 
 ## Connections
-- [[Container Errors_1]] - `contains` [EXTRACTED]
+- [[Container Errors]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/First_Time_Setup

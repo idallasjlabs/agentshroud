@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "create_auth_dependency"
+community: "AgentTarget"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/AgentTarget
 ---
 
 # approval.py
 
 ## Connections
 - [[ApprovalDecision]] - `imports` [EXTRACTED]
-- [[ApprovalQueueItem_2]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_5]] - `imports` [EXTRACTED]
+- [[ApprovalQueueItem_4]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_4]] - `imports` [EXTRACTED]
 - [[_validate_ws_token()]] - `imports` [EXTRACTED]
 - [[approval_websocket()]] - `contains` [EXTRACTED]
 - [[auth_dep()_3]] - `contains` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[submit_approval_request()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

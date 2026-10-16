@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/runtime/apple_engine.py"
+source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: "AppleContainerEngine"
-location: "L31"
+community: "RBACConfig"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AppleContainerEngine
+  - community/RBACConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[AppleContainerEngine]] - `method` [EXTRACTED]
+- [[SharedMemoryManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

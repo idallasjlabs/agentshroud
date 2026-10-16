@@ -16,7 +16,7 @@ tags:
 - [[dot-cleanup_decided()]] - `calls` [EXTRACTED]
 - [[dot-decide()]] - `calls` [EXTRACTED]
 - [[dot-submit()]] - `calls` [EXTRACTED]
-- [[ApprovalQueue_1]] - `method` [EXTRACTED]
+- [[ApprovalQueue]] - `method` [EXTRACTED]
 - [[Persist queue items to disk for restart durability (best effort).          Uses]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/decide

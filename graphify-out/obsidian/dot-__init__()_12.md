@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/report_store.py"
+source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "ReportStore"
-location: "L66"
+community: "AlertDispatcher"
+location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/AlertDispatcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[ReportStore]] - `method` [EXTRACTED]
+- [[dot-_resolve_secret()]] - `calls` [EXTRACTED]
+- [[EncryptedStore]] - `method` [EXTRACTED]
+- [[Initialize the encrypted store.          Args             master_secret The ma]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ReportStore
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

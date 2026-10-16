@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_egress_monitor.py"
+source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L21"
+community: "SubagentMonitor"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/SubagentMonitor
 ---
 
 # default_config()
 
 ## Connections
-- [[EgressMonitorConfig]] - `calls` [EXTRACTED]
-- [[test_egress_monitor.py]] - `contains` [EXTRACTED]
+- [[SubagentMonitorConfig]] - `calls` [EXTRACTED]
+- [[test_subagent_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[agentshroud-bot_1]] - `contains` [EXTRACTED]
-- [[networks_2]] - `references` [EXTRACTED]
+- [[networks_1]] - `references` [EXTRACTED]
 - [[openclaw]] - `references` [EXTRACTED]
 - [[volumes_1]] - `references` [EXTRACTED]
 

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/canary_tripwire.py"
+source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L45"
+community: "FetchOutcome"
+location: "L191"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/FetchOutcome
 ---
 
 # .__init__()
 
 ## Connections
-- [[CanaryConfig_1]] - `references` [EXTRACTED]
-- [[CanaryTripwire]] - `method` [EXTRACTED]
+- [[_StreamResp]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

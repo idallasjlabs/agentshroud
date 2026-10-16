@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Path"
+community: "api.py"
 location: "L961"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/apipy
 ---
 
 # _skills_reload_impl()
@@ -17,8 +17,8 @@ tags:
 - [[SkillGuardBlocked]] - `calls` [EXTRACTED]
 - [[SkillsManifest]] - `calls` [EXTRACTED]
 - [[_skills_reload_paths()]] - `calls` [EXTRACTED]
-- [[api.py_2]] - `contains` [EXTRACTED]
+- [[api.py]] - `contains` [EXTRACTED]
 - [[deploy_manifest()]] - `calls` [EXTRACTED]
 - [[skills_reload()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/apipy

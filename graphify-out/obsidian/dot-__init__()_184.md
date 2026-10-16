@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/encrypted_store.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "AgentRegistry"
-location: "L61"
+community: "_DummyTargetWriter"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/_DummyTargetWriter
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_resolve_secret()]] - `calls` [EXTRACTED]
-- [[EncryptedStore]] - `method` [EXTRACTED]
-- [[Initialize the encrypted store.          Args             master_secret The ma]] - `rationale_for` [EXTRACTED]
+- [[_DummyTargetWriter_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/_DummyTargetWriter

@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/security/cron_state_monitor.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "CronStateMonitor"
-location: "L69"
+community: "MiddlewareManager"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CronStateMonitor
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[CronStateMonitor]] - `method` [EXTRACTED]
+- [[dot-_load_integrity_database()]] - `calls` [EXTRACTED]
+- [[dot-_load_write_windows()]] - `calls` [EXTRACTED]
+- [[MemoryIntegrityConfig]] - `references` [EXTRACTED]
+- [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
+- [[Path_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CronStateMonitor
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

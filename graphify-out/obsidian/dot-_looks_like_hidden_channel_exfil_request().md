@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
 - [[Detect requests to extract hidden-channel content from sensitiveinternal source]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

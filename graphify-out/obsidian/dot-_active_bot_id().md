@@ -16,6 +16,6 @@ tags:
 - [[dot-_proxy_request_impl()]] - `calls` [EXTRACTED]
 - [[dot-_send_collaborator_safe_info_response()]] - `calls` [EXTRACTED]
 - [[Per-request bot_id for activity tracking.          Returns the bot_id set by pro]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

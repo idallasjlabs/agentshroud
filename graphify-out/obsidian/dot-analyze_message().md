@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: ".analyze_message"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/analyze_message
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # .analyze_message()
@@ -20,9 +20,9 @@ tags:
 - [[Analyze a message for context poisoning attempts.          Args             ses]] - `rationale_for` [EXTRACTED]
 - [[ContextAttack]] - `references` [EXTRACTED]
 - [[ContextGuard]] - `method` [EXTRACTED]
-- [[SessionContext]] - `calls` [EXTRACTED]
+- [[SessionContext_1]] - `calls` [EXTRACTED]
 - [[check_message()]] - `calls` [EXTRACTED]
 - [[deque]] - `calls` [INFERRED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/analyze_message
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

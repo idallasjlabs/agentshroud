@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_channel_ownership.py"
+source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "forward.py"
-location: "L37"
+community: "test_observatory_mode.py"
+location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/forwardpy
+  - community/test_observatory_modepy
 ---
 
 # client()
 
 ## Connections
-- [[test_channel_ownership.py]] - `contains` [EXTRACTED]
+- [[_make_app()]] - `calls` [EXTRACTED]
+- [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/forwardpy
+#graphify/code #graphify/EXTRACTED #community/test_observatory_modepy

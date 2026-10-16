@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AgentShroud Security Verification (13-check driver)]] - `calls` [EXTRACTED]
-- [[verify-security.sh]] - `defines` [EXTRACTED]
+- [[verify-security.sh_1]] - `defines` [EXTRACTED]
 - [[verify-security.sh script]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Verification_13-check_driver

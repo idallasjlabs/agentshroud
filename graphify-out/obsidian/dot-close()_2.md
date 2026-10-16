@@ -1,19 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/scripts/browse.py"
+source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "SecureBrowser"
-location: "L401"
+community: "TrustConfig"
+location: "L442"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/TrustConfig
 ---
 
 # .close()
 
 ## Connections
-- [[Clean up browser resources]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser]] - `method` [EXTRACTED]
-- [[main()_7]] - `calls` [EXTRACTED]
+- [[TrustManager_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

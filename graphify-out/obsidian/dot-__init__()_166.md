@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_progressive_lockdown.py"
+source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "ProgressiveLockdown"
-location: "L34"
+community: "MCPPermissionManager"
+location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/MCPPermissionManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeRBAC_1]] - `method` [EXTRACTED]
+- [[MCPInspector_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-process_tool_call()]] - `calls` [EXTRACTED]
 - [[dot-process_tool_result()_1]] - `calls` [EXTRACTED]
-- [[Any_61]] - `references` [EXTRACTED]
+- [[Any_64]] - `references` [EXTRACTED]
 - [[MCPProxy_1]] - `method` [EXTRACTED]
 - [[Redact admin-private data from tool results for non-owner agents.]] - `rationale_for` [EXTRACTED]
 

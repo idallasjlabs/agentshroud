@@ -12,6 +12,6 @@ tags:
 # `HTTPConnectProxy._relay_and_scan(reader, writer, host, scan_limit=4*1024*1024)`
 
 ## Connections
-- [[Function Details_2]] - `contains` [EXTRACTED]
+- [[Function Details_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/http_proxypy

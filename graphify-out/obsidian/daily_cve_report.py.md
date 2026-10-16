@@ -20,10 +20,10 @@ tags:
 - [[_send_telegram()]] - `contains` [EXTRACTED]
 - [[check_upstream_cves()]] - `contains` [EXTRACTED]
 - [[cve_report_scheduler()]] - `contains` [EXTRACTED]
-- [[datetime_8]] - `imports_from` [EXTRACTED]
+- [[datetime_7]] - `imports_from` [EXTRACTED]
 - [[format_cve_report()]] - `contains` [EXTRACTED]
 - [[format_upstream_cve_alert()]] - `contains` [EXTRACTED]
-- [[generate_summary()_3]] - `imports` [EXTRACTED]
+- [[generate_summary()_2]] - `imports` [EXTRACTED]
 - [[get_agent_cve_source()]] - `imports` [EXTRACTED]
 - [[get_agent_ghsa_repo()]] - `imports` [EXTRACTED]
 - [[ghsa_ingest_scheduler()]] - `contains` [EXTRACTED]
@@ -35,7 +35,7 @@ tags:
 - [[run_upstream_cve_check_all_agents()]] - `contains` [EXTRACTED]
 - [[save_report()]] - `imports` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `imports_from` [EXTRACTED]
-- [[trivy_report.py_2]] - `imports_from` [EXTRACTED]
+- [[trivy_report.py]] - `imports_from` [EXTRACTED]
 - [[upstream_cve_check_scheduler()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

@@ -12,7 +12,7 @@ tags:
 # ._start_monitoring_task()
 
 ## Connections
-- [[dot-__init__()_37]] - `calls` [EXTRACTED]
+- [[dot-__init__()_66]] - `calls` [EXTRACTED]
 - [[dot-_monitor_resources()]] - `calls` [EXTRACTED]
 - [[ResourceGuard]] - `method` [EXTRACTED]
 - [[Start background monitoring task.]] - `rationale_for` [EXTRACTED]

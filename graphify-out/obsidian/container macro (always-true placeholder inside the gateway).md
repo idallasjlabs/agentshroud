@@ -1,12 +1,12 @@
 ---
 source_file: "docker/falco/rules.yaml"
 type: "rationale"
-community: "AgentShroud Falco Rules"
+community: "start-agentshroud.sh"
 location: "L11-L19"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Falco_Rules
+  - community/start-agentshroudsh
 ---
 
 # container macro (always-true placeholder inside the gateway)
@@ -20,4 +20,4 @@ tags:
 - [[Rule Unexpected Outbound Connection from AgentShroud]] - `references` [EXTRACTED]
 - [[gateway service (security proxy, sole egress point, read-only rootfs, cap_drop ALL)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Falco_Rules
+#graphify/rationale #graphify/EXTRACTED #community/start-agentshroudsh

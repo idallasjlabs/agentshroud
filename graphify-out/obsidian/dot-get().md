@@ -16,7 +16,7 @@ tags:
 - [[dot-_path()]] - `calls` [EXTRACTED]
 - [[dot-_valid_id()]] - `calls` [EXTRACTED]
 - [[dot-list()]] - `calls` [EXTRACTED]
-- [[Any_4]] - `references` [EXTRACTED]
+- [[Any_6]] - `references` [EXTRACTED]
 - [[ReportStore]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ReportStore

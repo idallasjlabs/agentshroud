@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/group_workspace.py"
+source_file: "gateway/proxy/telegram_replay.py"
 type: "code"
-community: "RBACConfig"
-location: "L95"
+community: "test_telegram_replay.py"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/test_telegram_replaypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[GroupWorkspaceManager]] - `method` [EXTRACTED]
+- [[dot-_init_db()_2]] - `calls` [EXTRACTED]
+- [[UpdateReplayBuffer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy

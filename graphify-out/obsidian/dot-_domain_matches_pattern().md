@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-_is_domain_allowed()]] - `calls` [EXTRACTED]
 - [[Check if domain matches pattern (supports wildcards).]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

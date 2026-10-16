@@ -15,6 +15,6 @@ tags:
 - [[dot-analyze()_1]] - `calls` [EXTRACTED]
 - [[dot-analyze_and_pin()]] - `calls` [EXTRACTED]
 - [[Resolve hostname to IP. Returns None on failure.          NOTE DNS rebinding at]] - `rationale_for` [EXTRACTED]
-- [[URLAnalyzer_1]] - `method` [EXTRACTED]
+- [[URLAnalyzer]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

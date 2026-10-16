@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/module_stats.py"
+source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "ModuleStatsCollector"
-location: "L41"
+community: "_req"
+location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/_req
 ---
 
 # .__init__()
 
 ## Connections
-- [[ModuleStatsCollector]] - `method` [EXTRACTED]
+- [[_FakeRBAC_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/code #graphify/EXTRACTED #community/_req

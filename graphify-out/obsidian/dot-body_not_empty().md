@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "ingest_api/models.py"
+community: "forward.py"
 location: "L356"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/forwardpy
 ---
 
 # .body_not_empty()
 
 ## Connections
-- [[EmailSendRequest]] - `method` [EXTRACTED]
+- [[EmailSendRequest_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/code #graphify/EXTRACTED #community/forwardpy

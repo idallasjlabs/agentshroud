@@ -23,6 +23,6 @@ tags:
 - [[dot-_queue_collaborator_access_request()]] - `calls` [EXTRACTED]
 - [[dot-_send_telegram_text()]] - `calls` [EXTRACTED]
 - [[Send deterministic owner admin notice without model invocation.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/telegram_proxypy

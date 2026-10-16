@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "LLMProxy"
-location: "L391"
+community: "ProxyAction"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/ProxyAction
 ---
 
 # .__init__()
 
 ## Connections
-- [[_TrackingInjector]] - `method` [EXTRACTED]
+- [[MockDNSVerdict]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

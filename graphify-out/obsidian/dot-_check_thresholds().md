@@ -12,10 +12,10 @@ tags:
 # ._check_thresholds()
 
 ## Connections
-- [[dot-_trigger_alert()]] - `calls` [EXTRACTED]
+- [[dot-_trigger_alert()_1]] - `calls` [EXTRACTED]
 - [[dot-track_message()]] - `calls` [EXTRACTED]
 - [[Check session score against thresholds and take action.]] - `rationale_for` [EXTRACTED]
 - [[MultiTurnTracker]] - `method` [EXTRACTED]
-- [[SessionContext_1]] - `references` [EXTRACTED]
+- [[SessionContext]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

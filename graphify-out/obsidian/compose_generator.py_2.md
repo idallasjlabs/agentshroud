@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[Configuration  Environment Variables_26]] - `contains` [EXTRACTED]
 - [[Default Service Configuration]] - `contains` [EXTRACTED]
-- [[Function Details_45]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_47]] - `contains` [EXTRACTED]
-- [[Purpose_179]] - `contains` [EXTRACTED]
-- [[Related_51]] - `contains` [EXTRACTED]
+- [[Function Details_46]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_48]] - `contains` [EXTRACTED]
+- [[Purpose_172]] - `contains` [EXTRACTED]
+- [[Related_52]] - `contains` [EXTRACTED]
 - [[Responsibilities_48]] - `contains` [EXTRACTED]
 - [[compose_generator.py_1]] - `contains` [EXTRACTED]
 

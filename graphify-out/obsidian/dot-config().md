@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_path_isolation.py"
+source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "TestPathIsolationManager"
-location: "L62"
+community: "ForwardRequest"
+location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/ForwardRequest
 ---
 
 # .config()
 
 ## Connections
-- [[Create test configuration.]] - `rationale_for` [EXTRACTED]
-- [[PathIsolationConfig]] - `calls` [EXTRACTED]
-- [[TestPathIsolationManager]] - `method` [EXTRACTED]
+- [[TestMinimalConfig]] - `method` [EXTRACTED]
+- [[_parse_env_file()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

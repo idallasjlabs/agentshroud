@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/runtime/docker_engine.py"
+source_file: "gateway/tests/test_gateway_email_service.py"
 type: "code"
-community: "DockerEngine"
-location: "L24"
+community: "GatewayEmailService"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DockerEngine
+  - community/GatewayEmailService
 ---
 
 # .__init__()
 
 ## Connections
-- [[DockerEngine]] - `method` [EXTRACTED]
+- [[_FakeSmtp]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DockerEngine
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

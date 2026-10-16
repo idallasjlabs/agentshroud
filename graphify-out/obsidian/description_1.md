@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md"
+source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
 type: "document"
-community: "TELEGRAM_API_BASE_URL"
+community: "AGENTSHROUD_MODE"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TELEGRAM_API_BASE_URL
+  - community/AGENTSHROUD_MODE
 ---
 
 # Description
 
 ## Connections
-- [[TELEGRAM_API_BASE_URL_1]] - `contains` [EXTRACTED]
+- [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TELEGRAM_API_BASE_URL
+#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_MODE

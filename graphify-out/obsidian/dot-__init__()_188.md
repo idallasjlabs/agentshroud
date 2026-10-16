@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/security/delegation.py"
 type: "code"
-community: "LLMProxy"
-location: "L540"
+community: "DelegationManager"
+location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/DelegationManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeToolACL]] - `method` [EXTRACTED]
+- [[dot-_load()]] - `calls` [EXTRACTED]
+- [[DelegationManager_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/DelegationManager

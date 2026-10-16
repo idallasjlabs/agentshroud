@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "._update_score"
+community: "TrustConfig"
 location: "L196"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_update_score
+  - community/TrustConfig
 ---
 
 # ._apply_decay()
@@ -15,6 +15,6 @@ tags:
 - [[dot-_update_score()]] - `calls` [EXTRACTED]
 - [[dot-get_trust()]] - `calls` [EXTRACTED]
 - [[Apply time-based decay to score.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager]] - `method` [EXTRACTED]
+- [[TrustManager_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_update_score
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

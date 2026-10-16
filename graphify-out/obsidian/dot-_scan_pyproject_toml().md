@@ -15,7 +15,7 @@ tags:
 - [[dot-_analyze_file_content()]] - `calls` [EXTRACTED]
 - [[dot-scan_git_repository()]] - `calls` [EXTRACTED]
 - [[GitGuard]] - `method` [EXTRACTED]
-- [[Path_50]] - `references` [EXTRACTED]
+- [[Path_4]] - `references` [EXTRACTED]
 - [[Scan pyproject.toml for suspicious build scripts.]] - `rationale_for` [EXTRACTED]
 - [[SecurityFinding]] - `references` [EXTRACTED]
 

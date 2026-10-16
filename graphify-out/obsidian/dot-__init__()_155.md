@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_gateway_email_service.py"
+source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "GatewayEmailService"
-location: "L23"
+community: "ApprovalQueueConfig"
+location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/ApprovalQueueConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeSmtp]] - `method` [EXTRACTED]
+- [[SSHConfig]] - `references` [EXTRACTED]
+- [[SSHProxy_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

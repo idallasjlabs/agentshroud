@@ -16,6 +16,6 @@ tags:
 - [[dot-track_message()]] - `calls` [EXTRACTED]
 - [[Analyze agent response for potential information leaks.]] - `rationale_for` [EXTRACTED]
 - [[MultiTurnTracker]] - `method` [EXTRACTED]
-- [[SessionContext_1]] - `references` [EXTRACTED]
+- [[SessionContext]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

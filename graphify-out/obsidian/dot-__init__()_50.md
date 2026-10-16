@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/telegram_replay.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "test_telegram_replay.py"
-location: "L45"
+community: "TestOutputCanary"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_replaypy
+  - community/TestOutputCanary
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_db()_2]] - `calls` [EXTRACTED]
-- [[UpdateReplayBuffer]] - `method` [EXTRACTED]
+- [[CanaryConfig]] - `references` [EXTRACTED]
+- [[Initialize the Output Canary System.          Args             config Optional]] - `rationale_for` [EXTRACTED]
+- [[OutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy
+#graphify/code #graphify/EXTRACTED #community/TestOutputCanary

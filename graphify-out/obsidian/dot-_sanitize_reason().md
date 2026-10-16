@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-_notify_user_blocked()]] - `calls` [EXTRACTED]
 - [[Strip internal paths and module names from block reasons before user display.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_filter_outbound

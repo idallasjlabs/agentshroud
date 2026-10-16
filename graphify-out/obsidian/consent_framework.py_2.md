@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[Function Details_39]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_41]] - `contains` [EXTRACTED]
-- [[Purpose_160]] - `contains` [EXTRACTED]
+- [[Purpose_159]] - `contains` [EXTRACTED]
 - [[Related_45]] - `contains` [EXTRACTED]
-- [[Responsibilities_43]] - `contains` [EXTRACTED]
+- [[Responsibilities_42]] - `contains` [EXTRACTED]
 - [[Secret Patterns in Environment Variables]] - `contains` [EXTRACTED]
 - [[Shell Injection Patterns Detected]] - `contains` [EXTRACTED]
 - [[Threat Model_25]] - `contains` [EXTRACTED]

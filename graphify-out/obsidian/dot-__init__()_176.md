@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/oauth_security.py"
+source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "OAuthSecurityValidator"
-location: "L55"
+community: "RBACConfig"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OAuthSecurityValidator
+  - community/RBACConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[OAuthSecurityValidator]] - `method` [EXTRACTED]
+- [[GroupWorkspaceManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

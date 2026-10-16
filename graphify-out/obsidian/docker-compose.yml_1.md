@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Alternate Compose Files]] - `contains` [EXTRACTED]
 - [[Networks]] - `contains` [EXTRACTED]
-- [[Related Notes_38]] - `contains` [EXTRACTED]
+- [[Related Notes_34]] - `contains` [EXTRACTED]
 - [[Secrets Files]] - `contains` [EXTRACTED]
 - [[Services]] - `contains` [EXTRACTED]
 - [[Volumes]] - `contains` [EXTRACTED]

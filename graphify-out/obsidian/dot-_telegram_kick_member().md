@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "._active_send_token"
+community: "TelegramAPIProxy"
 location: "L702"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_active_send_token
+  - community/TelegramAPIProxy
 ---
 
 # ._telegram_kick_member()
@@ -15,6 +15,6 @@ tags:
 - [[dot-_active_send_token()]] - `calls` [EXTRACTED]
 - [[dot-_forward_to_telegram()]] - `calls` [EXTRACTED]
 - [[Kick (ban + unban) a user from a Telegram group. Returns True on success.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_active_send_token
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

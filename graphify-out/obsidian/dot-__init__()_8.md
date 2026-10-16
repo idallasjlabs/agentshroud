@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L139"
+community: "WebContentScanner"
+location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/WebContentScanner
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeRBAC]] - `method` [EXTRACTED]
+- [[WebContentScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

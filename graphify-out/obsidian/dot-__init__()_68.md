@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/tests/test_jira_dev_ticket.py"
 type: "code"
-community: "lifespan.py"
-location: "L75"
+community: "test_jira_dev_ticket.py"
+location: "L256"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/test_jira_dev_ticketpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[MemoryLifecycleConfig]] - `references` [EXTRACTED]
-- [[MemoryLifecycleManager]] - `method` [EXTRACTED]
-- [[Path_23]] - `references` [EXTRACTED]
+- [[_MockTransport]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/test_jira_dev_ticketpy

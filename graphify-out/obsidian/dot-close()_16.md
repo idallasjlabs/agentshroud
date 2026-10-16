@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "DataLedger"
-location: "L401"
+community: "_DummyTargetWriter"
+location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/_DummyTargetWriter
 ---
 
 # .close()
 
 ## Connections
-- [[Close database connection]] - `rationale_for` [EXTRACTED]
-- [[DataLedger]] - `method` [EXTRACTED]
+- [[_CloseRaisesTargetWriter]] - `method` [EXTRACTED]
+- [[test_start_serves_and_stop_closes_loopback()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataLedger
+#graphify/code #graphify/EXTRACTED #community/_DummyTargetWriter

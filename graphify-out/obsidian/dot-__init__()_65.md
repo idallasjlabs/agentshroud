@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/proxy/slack_socket_client.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L66"
+community: "SlackSocketClient"
+location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/SlackSocketClient
 ---
 
 # .__init__()
 
 ## Connections
-- [[_Svc]] - `method` [EXTRACTED]
+- [[SlackSocketClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/SlackSocketClient

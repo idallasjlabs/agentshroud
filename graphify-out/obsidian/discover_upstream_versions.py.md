@@ -26,7 +26,6 @@ tags:
 - [[_sortable()]] - `contains` [EXTRACTED]
 - [[auto_remediate_cves.py]] - `semantically_similar_to` [INFERRED]
 - [[discover()]] - `contains` [EXTRACTED]
-- [[discover_upstream_versions.py hardening bounded retry, 90s deadline thread, IPv4 fallback]] - `references` [EXTRACTED]
 - [[fetch_dockerhub_tags()]] - `contains` [EXTRACTED]
 - [[fetch_npm_versions()]] - `contains` [EXTRACTED]
 - [[is_stable()]] - `contains` [EXTRACTED]

@@ -15,7 +15,7 @@ tags:
 - [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
 - [[dot-_looks_like_safe_collaborator_info_query()]] - `calls` [EXTRACTED]
 - [[Best-effort guardrail collaborator prompts requesting direct file access.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

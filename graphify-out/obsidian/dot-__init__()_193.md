@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "_DummyTargetWriter"
-location: "L78"
+community: "A2APolicyEngine"
+location: "L393"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_DummyTargetWriter
+  - community/A2APolicyEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[_HeaderTimeoutReader]] - `method` [EXTRACTED]
+- [[A2APolicyConfig_1]] - `references` [EXTRACTED]
+- [[A2APolicyEngine_3]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_DummyTargetWriter
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

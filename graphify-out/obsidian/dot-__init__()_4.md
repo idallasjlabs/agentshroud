@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/drift_detector.py"
+source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L62"
+community: "LLMProxy"
+location: "L251"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/LLMProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_db()]] - `calls` [EXTRACTED]
-- [[DriftDetector]] - `method` [EXTRACTED]
+- [[LLMProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

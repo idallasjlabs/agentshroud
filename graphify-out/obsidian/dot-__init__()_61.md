@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/privacy_policy.py"
+source_file: "gateway/cli/client.py"
 type: "code"
-community: "PrivacyPolicyEnforcer"
-location: "L181"
+community: "SCLClient"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/SCLClient
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-default()]] - `calls` [EXTRACTED]
-- [[PrivacyPolicy]] - `references` [EXTRACTED]
-- [[PrivacyPolicyEnforcer]] - `method` [EXTRACTED]
+- [[SCLClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/EXTRACTED #community/SCLClient

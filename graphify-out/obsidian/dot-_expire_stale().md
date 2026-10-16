@@ -16,7 +16,7 @@ tags:
 - [[dot-_persist_pending_store()]] - `calls` [EXTRACTED]
 - [[dot-broadcast()]] - `calls` [EXTRACTED]
 - [[dot-get_pending()]] - `calls` [EXTRACTED]
-- [[ApprovalQueue_1]] - `method` [EXTRACTED]
+- [[ApprovalQueue]] - `method` [EXTRACTED]
 - [[Check all pending items and expire those past timeout          Returns]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/decide

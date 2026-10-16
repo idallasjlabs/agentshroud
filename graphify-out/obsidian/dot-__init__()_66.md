@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/data_exfil_volume_guard.py"
+source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "DataExfilVolumeGuard"
-location: "L86"
+community: "ResourceGuard"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataExfilVolumeGuard
+  - community/ResourceGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[DataExfilVolumeConfig]] - `references` [EXTRACTED]
-- [[DataExfilVolumeGuard]] - `method` [EXTRACTED]
+- [[dot-_get_disk_io_stats()]] - `calls` [EXTRACTED]
+- [[dot-_start_monitoring_task()]] - `calls` [EXTRACTED]
+- [[ResourceGuard]] - `method` [EXTRACTED]
+- [[ResourceLimits]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

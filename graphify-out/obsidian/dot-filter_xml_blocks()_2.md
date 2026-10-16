@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "LLMProxy"
-location: "L18"
+community: "PIIConfig"
+location: "L517"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/PIIConfig
 ---
 
 # .filter_xml_blocks()
 
 ## Connections
-- [[_FakeSanitizer_1]] - `method` [EXTRACTED]
+- [[PIISanitizer_2]] - `method` [EXTRACTED]
+- [[Remove Claude XML function call blocks from responses          Strips out intern]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

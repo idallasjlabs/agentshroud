@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "TestKillSwitchVerification"
+community: "KillSwitchMonitor"
 location: "L268"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestKillSwitchVerification
+  - community/KillSwitchMonitor
 ---
 
 # ._make_monitor()
@@ -20,7 +20,7 @@ tags:
 - [[dot-test_verification_log_written()]] - `calls` [EXTRACTED]
 - [[KillSwitchConfig_1]] - `calls` [EXTRACTED]
 - [[KillSwitchMonitor]] - `calls` [EXTRACTED]
-- [[Path_60]] - `references` [EXTRACTED]
+- [[Path_30]] - `references` [EXTRACTED]
 - [[TestKillSwitchVerification]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestKillSwitchVerification
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

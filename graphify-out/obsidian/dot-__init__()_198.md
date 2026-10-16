@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/telegram_gateway_relay.py"
+source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "TelegramGatewayRelay"
-location: "L53"
+community: "api.py"
+location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramGatewayRelay
+  - community/apipy
 ---
 
 # .__init__()
 
 ## Connections
-- [[TelegramGatewayRelay]] - `method` [EXTRACTED]
+- [[CitationVerifier]] - `method` [EXTRACTED]
+- [[Fetcher]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramGatewayRelay
+#graphify/code #graphify/EXTRACTED #community/apipy

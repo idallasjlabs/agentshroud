@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_realtime_coverage.py"
+source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L167"
+community: "AuditExporter"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/AuditExporter
 ---
 
 # .__init__()
 
 ## Connections
-- [[PermissionResult]] - `calls` [EXTRACTED]
-- [[SimpleNamespace]] - `calls` [EXTRACTED]
-- [[_FakeRBAC]] - `method` [EXTRACTED]
+- [[dot-_default_jsonld_context()]] - `calls` [EXTRACTED]
+- [[AuditExportConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/AuditExporter

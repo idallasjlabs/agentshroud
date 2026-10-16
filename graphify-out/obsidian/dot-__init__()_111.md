@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "_FakeUpstreamWS"
-location: "L718"
+community: "KillSwitchMonitor"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeUpstreamWS
+  - community/KillSwitchMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeUpstreamWS]] - `method` [EXTRACTED]
+- [[CrossBotTrustLedger_1]] - `method` [EXTRACTED]
+- [[TrustDecayPolicy]] - `references` [EXTRACTED]
+- [[deque]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeUpstreamWS
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

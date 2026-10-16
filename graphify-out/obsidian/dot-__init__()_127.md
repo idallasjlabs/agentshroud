@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/approval_hardening.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "ApprovalHardening"
-location: "L114"
+community: "AsyncMock"
+location: "L8615"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalHardening
+  - community/AsyncMock
 ---
 
 # .__init__()
 
 ## Connections
-- [[ApprovalHardening]] - `method` [EXTRACTED]
-- [[ApprovalHardeningConfig]] - `references` [EXTRACTED]
+- [[AsyncMock]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalHardening
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

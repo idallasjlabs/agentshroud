@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "code"
-community: "HTTPConnectProxy"
-location: "L43"
+community: "DifferentialPIIDetector"
+location: "L210"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/DifferentialPIIDetector
 ---
 
 # .__init__()
 
 ## Connections
-- [[_MockWriter]] - `method` [EXTRACTED]
+- [[_FakeRecognizerResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector

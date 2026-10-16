@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_policy.py"
+source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "MCPPolicyEngine"
-location: "L278"
+community: "AsyncMock"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/AsyncMock
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeApprovalQueue]] - `method` [EXTRACTED]
+- [[_RaisingRedactionResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

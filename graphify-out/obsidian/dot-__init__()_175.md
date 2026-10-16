@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "HTTPConnectProxy"
-location: "L480"
+community: "DNSFilterConfig"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/DNSFilterConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[_SocketTransportWriter]] - `method` [EXTRACTED]
+- [[DNSFilter]] - `method` [EXTRACTED]
+- [[DNSFilterConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

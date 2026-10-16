@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: "gateway/security/xml_leak_filter.py"
 type: "code"
-community: "AlertStore"
-location: "L46"
+community: "MiddlewareManager"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertStore
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[AlertStore]] - `method` [EXTRACTED]
+- [[Initialize the filter with predefined patterns.]] - `rationale_for` [EXTRACTED]
+- [[XMLLeakFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertStore
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

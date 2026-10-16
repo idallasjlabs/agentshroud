@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-_apply_outbound_model_error_rewrites()]] - `calls` [EXTRACTED]
 - [[Map recurring runtimeprovider failures to deterministic operator guidance.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_filter_outbound

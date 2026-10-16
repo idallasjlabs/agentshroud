@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-from_file()]] - `calls` [EXTRACTED]
 - [[Build a manifest by walking source (``~.llm_settings``).          Raises]] - `rationale_for` [EXTRACTED]
-- [[Path_29]] - `references` [EXTRACTED]
+- [[Path_38]] - `references` [EXTRACTED]
 - [[SkillsManifest]] - `method` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 

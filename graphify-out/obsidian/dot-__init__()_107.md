@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/file_sandbox.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L187"
+community: "dashboard_endpoints.py"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/dashboard_endpointspy
 ---
 
 # .__init__()
 
 ## Connections
-- [[FileSandbox]] - `method` [EXTRACTED]
-- [[FileSandboxConfig]] - `references` [EXTRACTED]
-- [[PIIScanner]] - `calls` [EXTRACTED]
+- [[AlertStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy

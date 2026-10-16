@@ -15,9 +15,9 @@ tags:
 - [[dot-_scan_text()]] - `calls` [EXTRACTED]
 - [[dot-inspect_tool_call()]] - `calls` [EXTRACTED]
 - [[dot-inspect_tool_result()]] - `calls` [EXTRACTED]
-- [[Any_37]] - `references` [EXTRACTED]
+- [[Any_74]] - `references` [EXTRACTED]
 - [[InspectionFinding]] - `references` [EXTRACTED]
-- [[MCPInspector]] - `method` [EXTRACTED]
+- [[MCPInspector_1]] - `method` [EXTRACTED]
 - [[Recursively scan a value, appending findings in-place.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/inspect_tool_call

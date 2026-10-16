@@ -12,7 +12,7 @@ tags:
 # .emit()
 
 ## Connections
-- [[dot-append()_1]] - `calls` [EXTRACTED]
+- [[dot-append()]] - `calls` [EXTRACTED]
 - [[BufferHandler]] - `method` [EXTRACTED]
 - [[LogRecord_1]] - `references` [EXTRACTED]
 

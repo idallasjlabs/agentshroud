@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/key_vault.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "KeyVault"
-location: "L166"
+community: "AgentRegistry"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/AgentRegistry
 ---
 
 # .__init__()
 
 ## Connections
-- [[KeyLeakDetector]] - `method` [EXTRACTED]
-- [[KeyVault]] - `references` [EXTRACTED]
+- [[AgentRegistry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

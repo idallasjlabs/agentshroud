@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-_domain_matches_pattern()]] - `calls` [EXTRACTED]
 - [[Check if a URL's domain is in the allowlist.]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

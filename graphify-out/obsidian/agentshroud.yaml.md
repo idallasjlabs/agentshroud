@@ -1,28 +1,24 @@
 ---
 source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
 type: "document"
-community: "agentshroud.yaml"
-location: "L10"
+community: "egress_filter.py"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroudyaml
+  - community/egress_filterpy
 ---
 
-# agentshroud.yaml
+# agentshroud.yaml.md
 
 ## Connections
-- [[Config Search Order]] - `contains` [EXTRACTED]
-- [[Purpose_64]] - `contains` [EXTRACTED]
-- [[Related Notes_19]] - `contains` [EXTRACTED]
-- [[Top-Level Sections]] - `contains` [EXTRACTED]
+- [[AGENTSHROUD_CONFIG]] - `references` [EXTRACTED]
+- [[AGENTSHROUD_MODE]] - `references` [EXTRACTED]
+- [[HTTP_PROXY]] - `references` [EXTRACTED]
+- [[LOG_LEVEL]] - `references` [EXTRACTED]
 - [[agentshroud.yaml_1]] - `contains` [EXTRACTED]
-- [[channels section]] - `contains` [EXTRACTED]
-- [[gateway section]] - `contains` [EXTRACTED]
-- [[mcp_proxy section]] - `contains` [EXTRACTED]
-- [[proxy section]] - `contains` [EXTRACTED]
-- [[security section]] - `contains` [EXTRACTED]
-- [[security_modules section]] - `contains` [EXTRACTED]
-- [[ssh section]] - `contains` [EXTRACTED]
+- [[egress_filter.py_1]] - `references` [INFERRED]
+- [[mcp_config.py]] - `references` [INFERRED]
+- [[ssh-config]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroudyaml
+#graphify/document #graphify/EXTRACTED #community/egress_filterpy

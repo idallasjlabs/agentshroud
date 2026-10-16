@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[app_main()_1]] - `calls` [INFERRED]
 - [[audio.c]] - `contains` [EXTRACTED]
-- [[esp_err_t_5]] - `references` [EXTRACTED]
+- [[esp_err_t_6]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/app_mainc

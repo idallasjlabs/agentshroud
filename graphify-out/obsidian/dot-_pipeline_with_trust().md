@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "_FakeAttack"
+community: "AuditChain"
 location: "L841"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeAttack
+  - community/AuditChain
 ---
 
 # ._pipeline_with_trust()
@@ -20,6 +20,6 @@ tags:
 - [[SecurityPipeline_2]] - `calls` [EXTRACTED]
 - [[TestTrustViolationRecording]] - `method` [EXTRACTED]
 - [[TrustConfig]] - `calls` [EXTRACTED]
-- [[TrustManager]] - `calls` [EXTRACTED]
+- [[TrustManager_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeAttack
+#graphify/code #graphify/EXTRACTED #community/AuditChain

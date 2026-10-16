@@ -12,7 +12,7 @@ tags:
 # anthropic_openai_sse_translator.py
 
 ## Connections
-- [[_random_msg_id()]] - `contains` [EXTRACTED]
+- [[_random_msg_id()_1]] - `contains` [EXTRACTED]
 - [[_sse()]] - `contains` [EXTRACTED]
 - [[translate_openai_sse_to_anthropic()]] - `contains` [EXTRACTED]
 

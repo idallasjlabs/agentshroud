@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "code"
-community: "KeyRotationConfig"
+community: "KeyRotationManager"
 location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationConfig
+  - community/KeyRotationManager
 ---
 
 # .add_custom_policy()
 
 ## Connections
 - [[Add or update a rotation policy for a specific credential type.]] - `rationale_for` [EXTRACTED]
-- [[CredentialRotationPolicy_1]] - `references` [EXTRACTED]
+- [[CredentialRotationPolicy]] - `references` [EXTRACTED]
 - [[KeyRotationConfig_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationConfig
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

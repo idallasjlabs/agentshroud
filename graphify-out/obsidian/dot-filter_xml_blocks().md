@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ingest_api/sanitizer.py"
+source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "PIIConfig"
-location: "L517"
+community: "_FakeSanitizer"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/_FakeSanitizer
 ---
 
 # .filter_xml_blocks()
 
 ## Connections
-- [[PIISanitizer_2]] - `method` [EXTRACTED]
-- [[Remove Claude XML function call blocks from responses          Strips out intern]] - `rationale_for` [EXTRACTED]
+- [[_FakeSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/_FakeSanitizer

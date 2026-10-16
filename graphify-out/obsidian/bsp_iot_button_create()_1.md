@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[button_handle_t_3]] - `references` [EXTRACTED]
-- [[esp_err_t_3]] - `references` [EXTRACTED]
+- [[esp_err_t_2]] - `references` [EXTRACTED]
 - [[test_wakeword_statestubsbspesp-bsp.h]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/bsp_iot_button_create

@@ -18,6 +18,6 @@ tags:
 - [[AWS_REGION]] - `requires_env` [EXTRACTED]
 - [[FASTMCP_LOG_LEVEL]] - `requires_env` [EXTRACTED]
 - [[FASTMCP_NO_BANNER]] - `requires_env` [EXTRACTED]
-- [[PATH_27]] - `requires_env` [EXTRACTED]
+- [[PATH_20]] - `requires_env` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/mcpjson

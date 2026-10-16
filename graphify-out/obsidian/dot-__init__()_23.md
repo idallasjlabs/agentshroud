@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: ".__init__"
-location: "L41"
+community: "MiddlewareManager"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/__init__
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_pending_store()]] - `calls` [EXTRACTED]
-- [[ApprovalQueue_1]] - `method` [EXTRACTED]
-- [[ApprovalQueueConfig]] - `references` [EXTRACTED]
-- [[Initialize approval queue          Args             config Approval queue conf]] - `rationale_for` [EXTRACTED]
-- [[MFAGuard]] - `references` [EXTRACTED]
+- [[dot-_ensure_base_directory()]] - `calls` [EXTRACTED]
+- [[PathIsolationConfig]] - `references` [EXTRACTED]
+- [[PathIsolationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/__init__
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

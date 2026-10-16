@@ -12,8 +12,8 @@ tags:
 # ._load()
 
 ## Connections
-- [[dot-__init__()_191]] - `calls` [EXTRACTED]
-- [[dot-from_dict()_11]] - `calls` [EXTRACTED]
+- [[dot-__init__()_188]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_9]] - `calls` [EXTRACTED]
 - [[DelegationManager_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DelegationManager

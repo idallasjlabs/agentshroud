@@ -12,7 +12,7 @@ tags:
 # .check_rebinding()
 
 ## Connections
-- [[dot-_is_private_ip()_1]] - `calls` [EXTRACTED]
+- [[dot-_is_private_ip()_2]] - `calls` [EXTRACTED]
 - [[dot-resolve_and_cache()]] - `calls` [EXTRACTED]
 - [[DNSFilter]] - `method` [EXTRACTED]
 - [[Return True if a DNS rebinding attack is detected.          Re-resolves the doma]] - `rationale_for` [EXTRACTED]

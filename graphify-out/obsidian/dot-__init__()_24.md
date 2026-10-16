@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "_FakeHTTPResponse"
-location: "L36"
+community: "MiddlewareManager"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeHTTPResponse
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeHTTPResponse]] - `method` [EXTRACTED]
+- [[ToolResultPIIConfig]] - `references` [EXTRACTED]
+- [[ToolResultSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeHTTPResponse
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

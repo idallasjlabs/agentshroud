@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "StdioConnection"
-location: "L125"
+community: "AuditChain"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/AuditChain
 ---
 
 # .__init__()
 
 ## Connections
-- [[Exception]] - `references` [EXTRACTED]
-- [[FakeConn]] - `method` [EXTRACTED]
+- [[EnvelopeSigner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/AuditChain

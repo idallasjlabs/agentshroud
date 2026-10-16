@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Colima docker-socket forward death under load]] - `conceptually_related_to` [EXTRACTED]
 - [[Exclusive mkdir run lock + HEAD-pinned build guard (PR 475)]] - `conceptually_related_to` [EXTRACTED]
-- [[PATH_61]] - `defines` [EXTRACTED]
+- [[PATH_56]] - `defines` [EXTRACTED]
 - [[Upgrade Report 2026-09-20 (dev, ABORTED)]] - `references` [EXTRACTED]
 - [[Upgrade Report 2026-09-22 (dev, PARTIAL, 3 sessions)]] - `references` [EXTRACTED]
 - [[Upgrade Report 2026-09-23 0300 (dev, ABORTED)]] - `references` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[colima-firewall.sh]] - `calls` [EXTRACTED]
 - [[colima-health-check.sh script]] - `contains` [EXTRACTED]
 - [[container-net-diag.sh]] - `calls` [EXTRACTED]
-- [[log()_9]] - `defines` [EXTRACTED]
+- [[log()_7]] - `defines` [EXTRACTED]
 - [[notify()_1]] - `defines` [EXTRACTED]
 - [[read_state()]] - `defines` [EXTRACTED]
 - [[resolve_docker_host()]] - `references` [EXTRACTED]

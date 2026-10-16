@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[CORS middleware that uses config from app_state]] - `rationale_for` [EXTRACTED]
-- [[Request_1]] - `references` [EXTRACTED]
-- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `contains` [EXTRACTED]
+- [[Request]] - `references` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[middleware]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Request

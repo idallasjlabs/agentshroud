@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dockerscriptssecurity-scan.sh]] - `defines` [EXTRACTED]
-- [[log()_5]] - `calls` [EXTRACTED]
+- [[log()]] - `calls` [EXTRACTED]
 - [[run_clamav()]] - `calls` [EXTRACTED]
 - [[run_trivy()]] - `calls` [EXTRACTED]
 

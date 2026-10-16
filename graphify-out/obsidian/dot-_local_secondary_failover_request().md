@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: ".proxy_messages"
-location: "L318"
+community: "LLMProxy"
+location: "L337"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/proxy_messages
+  - community/LLMProxy
 ---
 
 # ._local_secondary_failover_request()
@@ -21,4 +21,4 @@ tags:
 - [[Attempt a local→local-secondary failover when the primary local model hits OOM.…]] - `rationale_for` [EXTRACTED]
 - [[LLMProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/proxy_messages
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

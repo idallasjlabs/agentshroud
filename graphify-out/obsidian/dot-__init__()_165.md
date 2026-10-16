@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/progressive_lockdown.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "ProgressiveLockdown"
-location: "L69"
+community: "HTTPConnectProxy"
+location: "L480"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/HTTPConnectProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[ProgressiveLockdown]] - `method` [EXTRACTED]
+- [[_SocketTransportWriter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

@@ -12,6 +12,6 @@ tags:
 # .__exit__()
 
 ## Connections
-- [[_FakeStreamResponse]] - `method` [EXTRACTED]
+- [[_FakeStreamResponse_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FetchOutcome

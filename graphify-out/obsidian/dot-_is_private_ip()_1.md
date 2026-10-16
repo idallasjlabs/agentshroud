@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/security/dns_filter.py"
+source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "DNSFilterConfig"
-location: "L226"
+community: "TestSSRFDetection"
+location: "L258"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/TestSSRFDetection
 ---
 
 # ._is_private_ip()
 
 ## Connections
-- [[dot-check_rebinding()]] - `calls` [EXTRACTED]
-- [[DNSFilter]] - `method` [EXTRACTED]
-- [[Return True if the IP address is in a private  loopback range.]] - `rationale_for` [EXTRACTED]
+- [[dot-_is_ssrf()]] - `calls` [EXTRACTED]
+- [[dot-analyze()_1]] - `calls` [EXTRACTED]
+- [[dot-analyze_and_pin()]] - `calls` [EXTRACTED]
+- [[Check if an IP address is privatereservedloopback.]] - `rationale_for` [EXTRACTED]
+- [[URLAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

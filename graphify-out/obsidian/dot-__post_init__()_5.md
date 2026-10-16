@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[MCPPolicyConfig_1]] - `method` [EXTRACTED]
-- [[RBACConfig_1]] - `calls` [EXTRACTED]
+- [[RBACConfig_4]] - `calls` [EXTRACTED]
 - [[_norm()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

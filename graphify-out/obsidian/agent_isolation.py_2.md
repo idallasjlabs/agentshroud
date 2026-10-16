@@ -1,28 +1,27 @@
 ---
-source_file: "gateway/security/agent_isolation.py"
-type: "code"
-community: "AgentRegistry"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
+type: "document"
+community: "agent_isolation.py"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/agent_isolationpy
 ---
 
 # agent_isolation.py
 
 ## Connections
-- [[Agent Isolation Module Badge Icon]] - `conceptually_related_to` [INFERRED]
-- [[AgentRegistry]] - `contains` [EXTRACTED]
-- [[ContainerConfig_1]] - `contains` [EXTRACTED]
-- [[Enum_2]] - `imports_from` [EXTRACTED]
-- [[IsolationCheck]] - `contains` [EXTRACTED]
-- [[IsolationStatus]] - `contains` [EXTRACTED]
-- [[IsolationVerifier]] - `contains` [EXTRACTED]
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - `references` [INFERRED]
-- [[OPENCLAW_SANDBOX_MODE]] - `references` [INFERRED]
-- [[drift_detector.py_2]] - `references` [EXTRACTED]
-- [[env_guard.py]] - `references` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[ContainerConfig Defaults]] - `contains` [EXTRACTED]
+- [[Environment Variables_13]] - `contains` [EXTRACTED]
+- [[Function Details_28]] - `contains` [EXTRACTED]
+- [[Integration Testing]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_30]] - `contains` [EXTRACTED]
+- [[Mode Enforce vs Monitor_9]] - `contains` [EXTRACTED]
+- [[Purpose_133]] - `contains` [EXTRACTED]
+- [[Related_34]] - `contains` [EXTRACTED]
+- [[Responsibilities_31]] - `contains` [EXTRACTED]
+- [[Threat Model_18]] - `contains` [EXTRACTED]
+- [[agent_isolation.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/document #graphify/EXTRACTED #community/agent_isolationpy

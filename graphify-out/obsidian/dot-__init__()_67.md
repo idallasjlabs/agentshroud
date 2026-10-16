@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "lifespan.py"
-location: "L65"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_integrity_database()]] - `calls` [EXTRACTED]
-- [[dot-_load_write_windows()]] - `calls` [EXTRACTED]
-- [[MemoryIntegrityConfig]] - `references` [EXTRACTED]
-- [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
-- [[Path_22]] - `references` [EXTRACTED]
+- [[CanaryConfig_1]] - `references` [EXTRACTED]
+- [[CanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

@@ -1,17 +1,28 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
-type: "document"
-community: "agent_isolation.py"
+source_file: "gateway/security/agent_isolation.py"
+type: "code"
+community: "AgentRegistry"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/agent_isolationpy
+  - community/AgentRegistry
 ---
 
-# agent_isolation.py.md
+# agent_isolation.py
 
 ## Connections
-- [[agent_isolation.py_1]] - `contains` [EXTRACTED]
+- [[Agent Isolation Module Badge Icon]] - `conceptually_related_to` [INFERRED]
+- [[AgentRegistry]] - `contains` [EXTRACTED]
+- [[ContainerConfig_1]] - `contains` [EXTRACTED]
+- [[Enum_1]] - `imports_from` [EXTRACTED]
+- [[IsolationCheck]] - `contains` [EXTRACTED]
+- [[IsolationStatus]] - `contains` [EXTRACTED]
+- [[IsolationVerifier]] - `contains` [EXTRACTED]
+- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - `references` [INFERRED]
+- [[OPENCLAW_SANDBOX_MODE_1]] - `references` [INFERRED]
+- [[drift_detector.py]] - `references` [EXTRACTED]
+- [[env_guard.py_2]] - `references` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agent_isolationpy
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

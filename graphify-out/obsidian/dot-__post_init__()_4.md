@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/cross_bot_trust_ledger.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "CrossBotTrustLedger"
-location: "L98"
+community: "A2AMethod"
+location: "L199"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/A2AMethod
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[TrustDecayPolicy]] - `method` [EXTRACTED]
+- [[A2APolicyConfig_1]] - `method` [EXTRACTED]
+- [[_norm()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/A2AMethod

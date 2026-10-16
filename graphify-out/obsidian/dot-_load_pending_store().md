@@ -12,8 +12,8 @@ tags:
 # ._load_pending_store()
 
 ## Connections
-- [[dot-__init__()_23]] - `calls` [EXTRACTED]
-- [[ApprovalQueue_1]] - `method` [EXTRACTED]
+- [[dot-__init__()_41]] - `calls` [EXTRACTED]
+- [[ApprovalQueue]] - `method` [EXTRACTED]
 - [[Load queue items from store file when present.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/__init__

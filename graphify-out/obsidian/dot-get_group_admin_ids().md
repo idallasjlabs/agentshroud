@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Return mapping of group_id → admin_user_id for all groups that have an admin.]] - `rationale_for` [EXTRACTED]
-- [[TeamsConfig]] - `method` [EXTRACTED]
+- [[TeamsConfig_2]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RBACConfig

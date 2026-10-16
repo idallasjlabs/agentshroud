@@ -1,17 +1,29 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
-type: "document"
-community: "clamav_scanner.py"
+source_file: "gateway/security/clamav_scanner.py"
+type: "code"
+community: "AlertDispatcher"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/clamav_scannerpy
+  - community/AlertDispatcher
 ---
 
-# clamav_scanner.py.md
+# clamav_scanner.py
 
 ## Connections
-- [[clamav_scanner.py_1]] - `contains` [EXTRACTED]
+- [[FR3 System Integrity]] - `references` [EXTRACTED]
+- [[alert_dispatcher.py]] - `references` [EXTRACTED]
+- [[clamav_1]] - `references` [INFERRED]
+- [[drift_detector.py]] - `references` [EXTRACTED]
+- [[generate_summary()_1]] - `contains` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[parse_clamscan_output()]] - `contains` [EXTRACTED]
+- [[run_clamscan()]] - `contains` [EXTRACTED]
+- [[save_report()_1]] - `contains` [EXTRACTED]
+- [[scan_bytes()]] - `contains` [EXTRACTED]
+- [[test_security_audit.py]] - `imports_from` [EXTRACTED]
+- [[update_virus_db()]] - `contains` [EXTRACTED]
+- [[web_content_scanner.py_2]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

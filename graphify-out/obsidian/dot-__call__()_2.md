@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/tests/test_jira_dev_ticket.py"
 type: "code"
-community: "FetchOutcome"
-location: "L32"
+community: "test_jira_dev_ticket.py"
+location: "L266"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/test_jira_dev_ticketpy
 ---
 
 # .__call__()
 
 ## Connections
-- [[FetchOutcome]] - `calls` [EXTRACTED]
-- [[_FakeFetcher]] - `method` [EXTRACTED]
+- [[_MockTransport]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/test_jira_dev_ticketpy

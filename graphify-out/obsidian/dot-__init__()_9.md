@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tools/port_manager.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "PortManager"
-location: "L88"
+community: "WebContentScanner"
+location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/WebContentScanner
 ---
 
 # .__init__()
 
 ## Connections
-- [[PortManager]] - `method` [EXTRACTED]
+- [[RateLimiter]] - `calls` [EXTRACTED]
+- [[URLAnalyzer_1]] - `references` [EXTRACTED]
+- [[WebContentScanner]] - `references` [EXTRACTED]
+- [[WebProxy]] - `method` [EXTRACTED]
+- [[WebProxyConfig_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PortManager
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

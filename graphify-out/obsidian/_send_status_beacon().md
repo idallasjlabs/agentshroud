@@ -15,7 +15,7 @@ tags:
 - [[app_main.c]] - `contains` [EXTRACTED]
 - [[voice_task()]] - `calls` [EXTRACTED]
 - [[wakeword_triggered()]] - `calls` [INFERRED]
-- [[ws_client_handle_t_1]] - `references` [EXTRACTED]
+- [[ws_client_handle_t]] - `references` [EXTRACTED]
 - [[ws_client_send_log()]] - `calls` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/test_ptt_statec

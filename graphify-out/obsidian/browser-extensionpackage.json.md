@@ -12,7 +12,7 @@ tags:
 # browser-extension/package.json
 
 ## Connections
-- [[description_8]] - `contains` [EXTRACTED]
+- [[description_9]] - `contains` [EXTRACTED]
 - [[devDependencies]] - `contains` [EXTRACTED]
 - [[jest_1]] - `contains` [EXTRACTED]
 - [[license_3]] - `contains` [EXTRACTED]

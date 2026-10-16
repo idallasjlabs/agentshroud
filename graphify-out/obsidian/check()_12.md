@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_openclaw_photo.sh"
+source_file: "scripts/preflight-check.sh"
 type: "code"
-community: "test_openclaw_photo.sh"
-location: "L10"
+community: "ProxyDashboard"
+location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_openclaw_photosh
+  - community/ProxyDashboard
 ---
 
 # check()
 
 ## Connections
-- [[test_openclaw_photo.sh]] - `defines` [EXTRACTED]
-- [[test_openclaw_photo.sh script]] - `calls` [EXTRACTED]
+- [[preflight-check.sh]] - `defines` [EXTRACTED]
+- [[preflight-check.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_openclaw_photosh
+#graphify/code #graphify/EXTRACTED #community/ProxyDashboard

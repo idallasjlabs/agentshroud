@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCPToolResult"
+community: "MCPPermissionManager"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPToolResult
+  - community/MCPPermissionManager
 ---
 
 # .__post_init__()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCPToolResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPToolResult
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

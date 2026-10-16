@@ -21,7 +21,7 @@ tags:
 - [[dot-_quarantine_outbound_block()]] - `calls` [EXTRACTED]
 - [[dot-_scan_outbound_text()]] - `calls` [EXTRACTED]
 - [[Filter multipartform-data outbound bodies (sendPhotosendDocument).          Te]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 - [[strip_markdown_exfil()]] - `calls` [EXTRACTED]
 

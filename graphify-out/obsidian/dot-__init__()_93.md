@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_audit.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L62"
+community: "test_soc_router_coverage.py"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/test_soc_router_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPAuditTrail]] - `method` [EXTRACTED]
-- [[deque]] - `calls` [INFERRED]
+- [[FakeCaller]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

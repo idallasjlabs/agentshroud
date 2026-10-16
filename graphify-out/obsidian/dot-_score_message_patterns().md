@@ -16,6 +16,6 @@ tags:
 - [[dot-_analyze_user_message()]] - `calls` [EXTRACTED]
 - [[MultiTurnTracker]] - `method` [EXTRACTED]
 - [[Score message based on disclosure patterns.]] - `rationale_for` [EXTRACTED]
-- [[SessionContext_1]] - `references` [EXTRACTED]
+- [[SessionContext]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

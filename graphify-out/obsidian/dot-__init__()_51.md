@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/collaborator_tracker.py"
+source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "CollaboratorActivityTracker"
-location: "L54"
+community: "SecureBrowser"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CollaboratorActivityTracker
+  - community/SecureBrowser
 ---
 
 # .__init__()
 
 ## Connections
-- [[CollaboratorActivityTracker_1]] - `method` [EXTRACTED]
-- [[Path_14]] - `references` [EXTRACTED]
+- [[dot-_load_config()]] - `calls` [EXTRACTED]
+- [[SecureBrowser]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CollaboratorActivityTracker
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_proxy_request_impl()]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 - [[True when filtered payload should be dropped instead of forwarded.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_proxy_request_impl

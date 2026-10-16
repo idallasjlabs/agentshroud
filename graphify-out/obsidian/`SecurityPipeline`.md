@@ -14,14 +14,14 @@ tags:
 ## Connections
 - [[7-Layer Defense Architecture]] - `contains` [EXTRACTED]
 - [[AgentShroud Agentic OS]] - `contains` [EXTRACTED]
-- [[Key Classes_1]] - `contains` [EXTRACTED]
+- [[Key Classes]] - `contains` [EXTRACTED]
 - [[Layer Reference]] - `contains` [EXTRACTED]
 - [[Layer-by-Layer Breakdown]] - `contains` [EXTRACTED]
 - [[Module Count by Layer]] - `contains` [EXTRACTED]
 - [[Monitor Mode]] - `contains` [EXTRACTED]
-- [[Overview_25]] - `contains` [EXTRACTED]
+- [[Overview_11]] - `contains` [EXTRACTED]
 - [[Proxy Layer]] - `contains` [EXTRACTED]
-- [[Related Notes_58]] - `contains` [EXTRACTED]
+- [[Related Notes_31]] - `contains` [EXTRACTED]
 - [[Security Pipeline Flow]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/SecurityPipeline

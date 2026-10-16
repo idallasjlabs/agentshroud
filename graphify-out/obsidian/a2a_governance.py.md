@@ -19,6 +19,6 @@ tags:
 - [[A2AMessage]] - `contains` [EXTRACTED]
 - [[A2AMessageType]] - `contains` [EXTRACTED]
 - [[A2APeer]] - `contains` [EXTRACTED]
-- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[Enum_1]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

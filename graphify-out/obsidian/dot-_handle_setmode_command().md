@@ -15,7 +15,7 @@ tags:
 - [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
 - [[dot-_send_owner_admin_notice()]] - `calls` [EXTRACTED]
 - [[Handle setmode group_iduser_id local_onlyproject_scopedfull_access (owne]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 - [[format_setmode_success()]] - `calls` [EXTRACTED]
 - [[persist_group_collab_mode()]] - `calls` [EXTRACTED]
 

@@ -18,7 +18,7 @@ tags:
 - [[dot-_check_repeat_request_patterns()]] - `calls` [EXTRACTED]
 - [[dot-_normalize_description()]] - `calls` [EXTRACTED]
 - [[Analyze an approval request for potential deception or social engineering.]] - `rationale_for` [EXTRACTED]
-- [[Any_54]] - `references` [EXTRACTED]
+- [[Any_56]] - `references` [EXTRACTED]
 - [[ApprovalHardening]] - `method` [EXTRACTED]
 - [[DeceptionDetection]] - `references` [EXTRACTED]
 

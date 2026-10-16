@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: ".proxy_messages"
-location: "L1947"
+community: "LLMProxy"
+location: "L2054"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/proxy_messages
+  - community/LLMProxy
 ---
 
 # _urlopen_and_read()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_forward_request()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/proxy_messages
+#graphify/code #graphify/INFERRED #community/LLMProxy

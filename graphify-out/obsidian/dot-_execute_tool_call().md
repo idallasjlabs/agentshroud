@@ -16,9 +16,9 @@ tags:
 - [[dot-process_tool_call()]] - `calls` [EXTRACTED]
 - [[dot-send_request()_1]] - `calls` [EXTRACTED]
 - [[Actually execute the tool call against the MCP server.]] - `rationale_for` [EXTRACTED]
-- [[Any_61]] - `references` [EXTRACTED]
+- [[Any_64]] - `references` [EXTRACTED]
 - [[MCPProxy_1]] - `method` [EXTRACTED]
-- [[MCPToolCall]] - `references` [EXTRACTED]
+- [[MCPToolCall_1]] - `references` [EXTRACTED]
 - [[MCPToolResult]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/process_tool_call

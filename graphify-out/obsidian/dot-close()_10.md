@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/approval_queue/store.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L57"
+community: "ServiceManager"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/ServiceManager
 ---
 
 # .close()
 
 ## Connections
-- [[ApprovalStore]] - `method` [EXTRACTED]
-- [[Close the database connection._1]] - `rationale_for` [EXTRACTED]
+- [[_FakeUnixSocket]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

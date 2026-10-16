@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/differential_pii_detector.py"
+source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "DifferentialPIIDetector"
-location: "L314"
+community: "soc/router.py"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/soc/routerpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_presidio()_1]] - `calls` [EXTRACTED]
-- [[DifferentialPIIConfig_1]] - `references` [EXTRACTED]
-- [[DifferentialPIIDetector_1]] - `method` [EXTRACTED]
+- [[ContributorManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

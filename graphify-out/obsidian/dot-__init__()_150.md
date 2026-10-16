@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L161"
+community: "SubagentGovernance"
+location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/SubagentGovernance
 ---
 
 # .__init__()
 
 ## Connections
-- [[HttpSseConnection]] - `method` [EXTRACTED]
-- [[MCPServerConfig_1]] - `references` [EXTRACTED]
+- [[GovernanceConfig]] - `references` [EXTRACTED]
+- [[SubagentGovernance]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/SubagentGovernance

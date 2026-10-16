@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "SSHHostConfig"
+community: "ApprovalQueueConfig"
 location: "L401"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHHostConfig
+  - community/ApprovalQueueConfig
 ---
 
 # .execute()
 
 ## Connections
 - [[Execute a command on a remote host via SSH.]] - `rationale_for` [EXTRACTED]
-- [[SSHProxy]] - `method` [EXTRACTED]
+- [[SSHProxy_1]] - `method` [EXTRACTED]
 - [[SSHResult]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHHostConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

@@ -12,7 +12,7 @@ tags:
 # ._load_taglines()
 
 ## Connections
-- [[dot-__init__()_128]] - `calls` [EXTRACTED]
+- [[dot-__init__()_71]] - `calls` [EXTRACTED]
 - [[CollaboratorGreeter]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy

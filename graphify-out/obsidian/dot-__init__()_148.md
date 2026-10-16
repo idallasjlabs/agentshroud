@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/approval_queue/store.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L43"
+community: "test_dns_canvas_coverage.py"
+location: "L585"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/test_dns_canvas_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[ApprovalStore]] - `method` [EXTRACTED]
-- [[Path_46]] - `references` [EXTRACTED]
+- [[_FakeUpstreamResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy

@@ -12,11 +12,11 @@ tags:
 # ._build_permission_matrix()
 
 ## Connections
-- [[dot-__init__()_124]] - `calls` [EXTRACTED]
+- [[dot-__init__()_88]] - `calls` [EXTRACTED]
 - [[Action_2]] - `references` [EXTRACTED]
 - [[Build the permission matrix for all roles.]] - `rationale_for` [EXTRACTED]
 - [[RBACManager_2]] - `method` [EXTRACTED]
 - [[Resource_2]] - `references` [EXTRACTED]
-- [[Role_37]] - `references` [EXTRACTED]
+- [[Role_21]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Action

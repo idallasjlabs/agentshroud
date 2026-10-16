@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ssh_config.py"
 type: "code"
-community: "SSHHostConfig"
+community: "ApprovalQueueConfig"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHHostConfig
+  - community/ApprovalQueueConfig
 ---
 
 # .expand_key_path()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSHHostConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHHostConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

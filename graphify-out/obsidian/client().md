@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_api_contract_fuzz.py"
+source_file: "gateway/tests/test_chat_completions_alias.py"
 type: "code"
-community: "test_api_contract_fuzz.py"
-location: "L144"
+community: "test_claude_via_openai_path.py"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_api_contract_fuzzpy
+  - community/test_claude_via_openai_pathpy
 ---
 
 # client()
 
 ## Connections
-- [[test_api_contract_fuzz.py]] - `contains` [EXTRACTED]
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[test_chat_completions_alias.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_api_contract_fuzzpy
+#graphify/code #graphify/EXTRACTED #community/test_claude_via_openai_pathpy

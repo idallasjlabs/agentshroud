@@ -2,26 +2,16 @@
 source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
 type: "document"
 community: "clamav_scanner.py"
-location: "L10"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
   - community/clamav_scannerpy
 ---
 
-# clamav_scanner.py
+# clamav_scanner.py.md
 
 ## Connections
-- [[Configuration_15]] - `contains` [EXTRACTED]
-- [[Environment Variables_9]] - `contains` [EXTRACTED]
-- [[Error Handling_6]] - `contains` [EXTRACTED]
-- [[Function Details_9]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_10]] - `contains` [EXTRACTED]
-- [[Mode Enforce vs Monitor_6]] - `contains` [EXTRACTED]
-- [[Purpose_110]] - `contains` [EXTRACTED]
-- [[Related_14]] - `contains` [EXTRACTED]
-- [[Responsibilities_12]] - `contains` [EXTRACTED]
-- [[Threat Model_10]] - `contains` [EXTRACTED]
-- [[clamav_scanner.py]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/clamav_scannerpy

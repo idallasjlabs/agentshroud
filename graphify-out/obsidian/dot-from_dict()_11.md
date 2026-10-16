@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/delegation.py"
+source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "DelegationManager"
-location: "L77"
+community: "PrivacyPolicyEnforcer"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/PrivacyPolicyEnforcer
 ---
 
 # .from_dict()
 
 ## Connections
-- [[dot-_load()]] - `calls` [EXTRACTED]
-- [[Delegation_1]] - `method` [EXTRACTED]
+- [[ServicePolicy]] - `method` [EXTRACTED]
+- [[ServicePrivacy]] - `calls` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/DelegationManager
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

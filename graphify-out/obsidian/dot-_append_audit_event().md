@@ -15,8 +15,8 @@ tags:
 - [[dot-_expire_stale()]] - `calls` [EXTRACTED]
 - [[dot-decide()]] - `calls` [EXTRACTED]
 - [[dot-submit()]] - `calls` [EXTRACTED]
-- [[Any_56]] - `references` [EXTRACTED]
-- [[ApprovalQueue_1]] - `method` [EXTRACTED]
+- [[Any_55]] - `references` [EXTRACTED]
+- [[ApprovalQueue]] - `method` [EXTRACTED]
 - [[Best-effort JSONL persistence for queue lifecycle events.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/decide

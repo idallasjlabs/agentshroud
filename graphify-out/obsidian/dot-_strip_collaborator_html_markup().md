@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-_filter_outbound()_1]] - `calls` [EXTRACTED]
 - [[Remove Telegram HTML formatting tags from collaborator outbound text.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_filter_outbound

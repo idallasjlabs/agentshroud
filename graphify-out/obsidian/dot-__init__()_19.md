@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/encoding_detector.py"
+source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "PIIConfig"
-location: "L69"
+community: "MiddlewareManager"
+location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[EncodingConfig]] - `references` [EXTRACTED]
-- [[EncodingDetector]] - `method` [EXTRACTED]
+- [[EgressFilter_1]] - `method` [EXTRACTED]
+- [[EgressFilterConfig_1]] - `references` [EXTRACTED]
+- [[EgressPolicy]] - `references` [EXTRACTED]
+- [[get_egress_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

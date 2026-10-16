@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "AlertDispatcher"
+community: "KeyVault"
 location: "L143"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/KeyVault
 ---
 
 # .check_command_execution()
@@ -18,4 +18,4 @@ tags:
 - [[EnvironmentGuard]] - `method` [EXTRACTED]
 - [[check_command()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/KeyVault

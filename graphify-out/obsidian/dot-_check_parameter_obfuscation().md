@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-analyze_request()]] - `calls` [EXTRACTED]
-- [[Any_54]] - `references` [EXTRACTED]
+- [[Any_56]] - `references` [EXTRACTED]
 - [[ApprovalHardening]] - `method` [EXTRACTED]
 - [[Check for obfuscated or encoded parameters.]] - `rationale_for` [EXTRACTED]
 - [[DeceptionDetection]] - `references` [EXTRACTED]

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[author_2]] - `contains` [EXTRACTED]
-- [[description_14]] - `contains` [EXTRACTED]
+- [[description_12]] - `contains` [EXTRACTED]
 - [[keywords_2]] - `contains` [EXTRACTED]
 - [[license_6]] - `contains` [EXTRACTED]
 - [[main_1]] - `contains` [EXTRACTED]

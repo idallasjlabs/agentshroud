@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/ingest_api/email_service.py"
 type: "code"
-community: "AuditStore"
-location: "L125"
+community: "GatewayEmailService"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/GatewayEmailService
 ---
 
 # .__init__()
 
 ## Connections
-- [[AuditStore_1]] - `method` [EXTRACTED]
-- [[Path_36]] - `references` [EXTRACTED]
+- [[GatewayEmailService_1]] - `method` [EXTRACTED]
+- [[TransportFactory]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

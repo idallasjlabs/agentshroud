@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_chat_completions_alias.py"
+source_file: "gateway/tests/test_op_proxy.py"
 type: "code"
-community: "test_claude_via_openai_path.py"
-location: "L27"
+community: "_is_op_reference_allowed"
+location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_claude_via_openai_pathpy
+  - community/_is_op_reference_allowed
 ---
 
 # client()
 
 ## Connections
-- [[AsyncMock]] - `calls` [INFERRED]
-- [[test_chat_completions_alias.py]] - `contains` [EXTRACTED]
+- [[test_op_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_claude_via_openai_pathpy
+#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed

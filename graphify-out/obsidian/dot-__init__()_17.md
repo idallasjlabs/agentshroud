@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_forward_routing.py"
+source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "_PipelineCaptor"
-location: "L404"
+community: "MiddlewareManager"
+location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_PipelineCaptor
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[_TrustCaptor]] - `method` [EXTRACTED]
+- [[ApprovalHardening]] - `method` [EXTRACTED]
+- [[ApprovalHardeningConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_PipelineCaptor
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

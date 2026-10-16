@@ -1,29 +1,27 @@
 ---
-source_file: "gateway/security/clamav_scanner.py"
-type: "code"
-community: "AgentRegistry"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
+type: "document"
+community: "clamav_scanner.py"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/clamav_scannerpy
 ---
 
 # clamav_scanner.py
 
 ## Connections
-- [[FR3 System Integrity]] - `references` [EXTRACTED]
-- [[alert_dispatcher.py_2]] - `references` [EXTRACTED]
-- [[clamav]] - `references` [INFERRED]
-- [[drift_detector.py_2]] - `references` [EXTRACTED]
-- [[generate_summary()_1]] - `contains` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[parse_clamscan_output()]] - `contains` [EXTRACTED]
-- [[run_clamscan()]] - `contains` [EXTRACTED]
-- [[save_report()_1]] - `contains` [EXTRACTED]
-- [[scan_bytes()]] - `contains` [EXTRACTED]
-- [[test_security_audit.py]] - `imports_from` [EXTRACTED]
-- [[update_virus_db()]] - `contains` [EXTRACTED]
-- [[web_content_scanner.py]] - `semantically_similar_to` [INFERRED]
+- [[Configuration_13]] - `contains` [EXTRACTED]
+- [[Environment Variables_8]] - `contains` [EXTRACTED]
+- [[Error Handling_6]] - `contains` [EXTRACTED]
+- [[Function Details_8]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_9]] - `contains` [EXTRACTED]
+- [[Mode Enforce vs Monitor_5]] - `contains` [EXTRACTED]
+- [[Purpose_108]] - `contains` [EXTRACTED]
+- [[Related_13]] - `contains` [EXTRACTED]
+- [[Responsibilities_10]] - `contains` [EXTRACTED]
+- [[Threat Model_9]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy

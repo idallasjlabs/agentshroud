@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-_process_inbound_core()]] - `calls` [EXTRACTED]
 - [[dot-_process_outbound_core()]] - `calls` [EXTRACTED]
-- [[dot-append()]] - `calls` [EXTRACTED]
-- [[Any_10]] - `references` [EXTRACTED]
+- [[dot-append()_1]] - `calls` [EXTRACTED]
+- [[Any_51]] - `references` [EXTRACTED]
 - [[Append to the chain with guaranteed SQLite persistence.          Used exclusivel]] - `rationale_for` [EXTRACTED]
 - [[AuditChain]] - `method` [EXTRACTED]
 - [[AuditChainEntry]] - `references` [EXTRACTED]

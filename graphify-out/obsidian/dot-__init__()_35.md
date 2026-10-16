@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_forward_stream.py"
+source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "code"
-community: "test_forward_stream.py"
-location: "L140"
+community: "CronStateMonitor"
+location: "L193"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/CronStateMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[_PassthroughPipeline]] - `method` [EXTRACTED]
+- [[_DedupDispatchFake]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

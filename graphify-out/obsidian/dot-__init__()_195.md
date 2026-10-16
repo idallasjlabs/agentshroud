@@ -1,18 +1,22 @@
 ---
-source_file: "gateway/approval_queue/group_router.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "GroupApprovalRouter"
-location: "L49"
+community: "ApprovalQueueConfig"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/ApprovalQueueConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_79]] - `references` [EXTRACTED]
-- [[GroupApprovalRouter]] - `method` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `references` [EXTRACTED]
+- [[ApprovalStore_1]] - `references` [EXTRACTED]
+- [[EnhancedApprovalQueue_2]] - `method` [EXTRACTED]
+- [[Initialize enhanced approval queue.          Args             config Basic app]] - `rationale_for` [EXTRACTED]
+- [[MFAGuard_2]] - `references` [EXTRACTED]
+- [[ToolRiskConfig_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

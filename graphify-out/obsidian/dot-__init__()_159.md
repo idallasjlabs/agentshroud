@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "GitGuard"
-location: "L53"
+community: "KeyVault"
+location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/KeyVault
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args             mode 'monitor' (log findings) or 'enforce' (quarantine suspic]] - `rationale_for` [EXTRACTED]
-- [[GitGuard]] - `method` [EXTRACTED]
-- [[Path_50]] - `calls` [EXTRACTED]
+- [[KeyInjector]] - `method` [EXTRACTED]
+- [[KeyVault]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GitGuard
+#graphify/code #graphify/EXTRACTED #community/KeyVault

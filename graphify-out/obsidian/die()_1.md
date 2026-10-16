@@ -1,18 +1,22 @@
 ---
-source_file: "scripts/lib/sunday-scan.sh"
+source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)"
-location: "L57"
+community: "sunday-upgrade-apply.sh"
+location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+  - community/sunday-upgrade-applysh
 ---
 
 # die()
 
 ## Connections
-- [[sunday-scan.sh (Trivy scan gate library)]] - `defines` [EXTRACTED]
-- [[sunday_run_scan_gate()]] - `calls` [EXTRACTED]
+- [[_attempt_rollback()]] - `calls` [EXTRACTED]
+- [[err()]] - `calls` [EXTRACTED]
+- [[phase_baseline()]] - `calls` [EXTRACTED]
+- [[phase_preflight()]] - `calls` [EXTRACTED]
+- [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
+- [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

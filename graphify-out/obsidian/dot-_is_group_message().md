@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
 - [[Return True if message originates from a group or supergroup chat.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

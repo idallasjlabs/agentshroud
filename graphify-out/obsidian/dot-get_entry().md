@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "ingest_api/models.py"
+community: "DataLedger"
 location: "L289"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/DataLedger
 ---
 
 # .get_entry()
@@ -16,4 +16,4 @@ tags:
 - [[Fetch a single ledger entry by ID          Args             entry_id Entry UUI]] - `rationale_for` [EXTRACTED]
 - [[LedgerEntry_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/code #graphify/EXTRACTED #community/DataLedger

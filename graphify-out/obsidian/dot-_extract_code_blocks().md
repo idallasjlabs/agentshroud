@@ -12,8 +12,8 @@ tags:
 # ._extract_code_blocks()
 
 ## Connections
-- [[dot-sanitize()_1]] - `calls` [EXTRACTED]
+- [[dot-sanitize()_4]] - `calls` [EXTRACTED]
 - [[Extract code blocks to preserve them during sanitization.]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

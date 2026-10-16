@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "FetchOutcome"
-location: "L29"
+community: "WebProxy"
+location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/WebProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeFetcher]] - `method` [EXTRACTED]
+- [[_MockWriter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/WebProxy

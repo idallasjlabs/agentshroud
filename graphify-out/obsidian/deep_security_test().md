@@ -12,12 +12,12 @@ tags:
 # deep_security_test()
 
 ## Connections
-- [[AuthRequired_2]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
 - [[Comprehensive security integration test — tests every module with real payloads.]] - `rationale_for` [EXTRACTED]
 - [[_check_mod()]] - `contains` [EXTRACTED]
 - [[_pii()]] - `contains` [EXTRACTED]
 - [[atest()]] - `contains` [EXTRACTED]
-- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `contains` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[post_1]] - `references` [EXTRACTED]
 - [[t_alert()]] - `indirect_call` [INFERRED]
 - [[t_audit()]] - `indirect_call` [INFERRED]

@@ -12,11 +12,11 @@ tags:
 # ._process_inbound_core()
 
 ## Connections
-- [[dot-append()]] - `calls` [EXTRACTED]
+- [[dot-append()_1]] - `calls` [EXTRACTED]
 - [[dot-append_block()]] - `calls` [EXTRACTED]
 - [[dot-append_owner_bypass()]] - `calls` [EXTRACTED]
-- [[dot-process_inbound()_3]] - `calls` [EXTRACTED]
-- [[Any_10]] - `references` [EXTRACTED]
+- [[dot-process_inbound()_5]] - `calls` [EXTRACTED]
+- [[Any_51]] - `references` [EXTRACTED]
 - [[PipelineResult_1]] - `references` [EXTRACTED]
 - [[Process an inbound message through the full security pipeline.]] - `rationale_for` [EXTRACTED]
 - [[SecurityPipeline_2]] - `method` [EXTRACTED]

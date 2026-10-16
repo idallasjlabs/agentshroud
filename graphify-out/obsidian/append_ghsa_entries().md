@@ -12,7 +12,7 @@ tags:
 # append_ghsa_entries()
 
 ## Connections
-- [[Any_8]] - `references` [EXTRACTED]
+- [[Any_13]] - `references` [EXTRACTED]
 - [[Append under_review new_entries to agent_id's OWN registry list.      Insert]] - `rationale_for` [EXTRACTED]
 - [[_ghsa_entry_to_py()]] - `calls` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]

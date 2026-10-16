@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/preflight-check.sh"
+source_file: "tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh"
 type: "code"
-community: "ProxyDashboard"
-location: "L12"
+community: "test_colima_and_sdk_patch_fallback_resolution.sh"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/test_colima_and_sdk_patch_fallback_resolutionsh
 ---
 
 # check()
 
 ## Connections
-- [[preflight-check.sh]] - `defines` [EXTRACTED]
-- [[preflight-check.sh script]] - `calls` [EXTRACTED]
+- [[test_colima_and_sdk_patch_fallback_resolution.sh]] - `defines` [EXTRACTED]
+- [[test_colima_and_sdk_patch_fallback_resolution.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/code #graphify/EXTRACTED #community/test_colima_and_sdk_patch_fallback_resolutionsh

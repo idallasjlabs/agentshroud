@@ -1,19 +1,22 @@
 ---
-source_file: "gateway/ingest_api/auth.py"
+source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "create_auth_dependency"
-location: "L47"
+community: "DNSFilterConfig"
+location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/DNSFilterConfig
 ---
 
 # .check()
 
 ## Connections
-- [[Check if client is within rate limit          Args             client_id Usual]] - `rationale_for` [EXTRACTED]
-- [[RateLimiter_1]] - `method` [EXTRACTED]
-- [[get_auth_dependency()]] - `calls` [EXTRACTED]
+- [[dot-_cleanup_rate_window()]] - `calls` [EXTRACTED]
+- [[dot-_detect_tunneling()]] - `calls` [EXTRACTED]
+- [[dot-_domain_in_allowlist()]] - `calls` [EXTRACTED]
+- [[DNSFilter]] - `method` [EXTRACTED]
+- [[DNSQuery_1]] - `calls` [EXTRACTED]
+- [[DNSVerdict]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

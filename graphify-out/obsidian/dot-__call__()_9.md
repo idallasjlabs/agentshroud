@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_citation_verifier.py"
+source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "api.py"
-location: "L33"
+community: "FetchOutcome"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/FetchOutcome
 ---
 
 # .__call__()
 
 ## Connections
-- [[FetchOutcome_1]] - `references` [EXTRACTED]
-- [[_FakeFetcher_1]] - `method` [EXTRACTED]
+- [[FetchOutcome_1]] - `calls` [EXTRACTED]
+- [[_FakeFetcher]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

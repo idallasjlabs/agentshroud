@@ -15,6 +15,6 @@ tags:
 - [[dot-_handle()]] - `calls` [EXTRACTED]
 - [[Accept GatewayEvent objects or plain dicts from legacy emitters.]] - `rationale_for` [EXTRACTED]
 - [[AlertTelegramRelay]] - `method` [EXTRACTED]
-- [[Any_32]] - `references` [EXTRACTED]
+- [[Any_26]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

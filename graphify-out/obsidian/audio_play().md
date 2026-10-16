@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[audio.c]] - `contains` [EXTRACTED]
-- [[esp_err_t_5]] - `references` [EXTRACTED]
+- [[esp_err_t_6]] - `references` [EXTRACTED]
 - [[tts_task()]] - `calls` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/app_mainc

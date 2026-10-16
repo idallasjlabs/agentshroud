@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/soc/contributors.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: "soc/router.py"
-location: "L27"
+community: "ServiceManager"
+location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/ServiceManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[ContributorManager]] - `method` [EXTRACTED]
+- [[Any_25]] - `references` [EXTRACTED]
+- [[ServiceManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

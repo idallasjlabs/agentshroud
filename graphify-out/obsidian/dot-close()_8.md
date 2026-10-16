@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "AuditStore"
-location: "L163"
+community: "SecureBrowser"
+location: "L401"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/SecureBrowser
 ---
 
 # .close()
 
 ## Connections
-- [[AuditStore_1]] - `method` [EXTRACTED]
-- [[Close the database connection.]] - `rationale_for` [EXTRACTED]
+- [[Clean up browser resources_3]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_3]] - `method` [EXTRACTED]
+- [[main()_7]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

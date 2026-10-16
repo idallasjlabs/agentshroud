@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[CI benchmark regression job (macOS)]] - `references` [EXTRACTED]
-- [[main()_9]] - `contains` [EXTRACTED]
+- [[main()_8]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/check_benchmark_regressionpy
