@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "SSHProxy"
 location: "L206"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/SSHProxy
 ---
 
 # Validate a structured /ssh/write_file request (host, path, content).          Re
 
 ## Connections
-- [[.validate_write_file()]] - `rationale_for` [EXTRACTED]
+- [[dot-validate_write_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

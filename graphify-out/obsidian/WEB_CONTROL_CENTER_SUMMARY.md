@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/WEB_CONTROL_CENTER_SUMMARY.md"
 type: "document"
-community: "test_dashboard_endpoints.py"
+community: "system-requirements.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/system-requirementsmd
 ---
 
 # WEB_CONTROL_CENTER_SUMMARY.md
@@ -19,4 +19,4 @@ tags:
 - [[Kill Switch_2]] - `references` [EXTRACTED]
 - [[access-control-matrix]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/document #graphify/EXTRACTED #community/system-requirementsmd

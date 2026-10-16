@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "TelegramAPIProxy"
 location: "L1916"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/TelegramAPIProxy
 ---
 
 # Web access intent without explicit URL should remain restricted and not queue ap
 
 ## Connections
-- [[.test_collaborator_web_access_request_without_url_is_restricted_without_approval()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_collaborator_web_access_request_without_url_is_restricted_without_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

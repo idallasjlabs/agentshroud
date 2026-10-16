@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/README.md"
+source_file: ".agents/skills/i-mnemosyne/README.md"
 type: "document"
-community: "TestSessionIsolation"
+community: "Mnemosyne — Retention Engineer"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestSessionIsolation
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Usage
 
 ## Connections
-- [[Socrates — Dialogue Architect_3]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestSessionIsolation
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

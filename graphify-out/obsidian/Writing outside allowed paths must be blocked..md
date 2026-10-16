@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "test_llm_proxy_failover.py"
+community: "AlertDispatcher"
 location: "L563"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxy_failoverpy
+  - community/AlertDispatcher
 ---
 
 # Writing outside allowed paths must be blocked.
 
 ## Connections
-- [[.test_write_outside_allowed_blocked()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_write_outside_allowed_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_failoverpy
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ingest_api/routes/dashboard.py"
+source_file: ""
 type: "code"
-community: "TestCollaboratorPromptClassifiers"
-location: "L561"
+community: "test_main_endpoints.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCollaboratorPromptClassifiers
+  - community/test_main_endpointspy
 ---
 
-# WebSocket
+# websocket
 
 ## Connections
-- [[activity_websocket()]] - `references` [EXTRACTED]
-- [[egress_websocket()]] - `references` [EXTRACTED]
+- [[hermes_dashboard_ws_proxy()]] - `references` [EXTRACTED]
+- [[slack_ws_relay()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers
+#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy

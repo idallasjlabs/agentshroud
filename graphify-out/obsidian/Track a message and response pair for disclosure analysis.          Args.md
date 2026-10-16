@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "background.js"
+community: "MultiTurnTracker"
 location: "L171"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/backgroundjs
+  - community/MultiTurnTracker
 ---
 
 # Track a message and response pair for disclosure analysis.          Args:
 
 ## Connections
-- [[.track_message()]] - `rationale_for` [EXTRACTED]
+- [[dot-track_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/backgroundjs
+#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker

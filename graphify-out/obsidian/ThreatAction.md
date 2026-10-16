@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "RBACConfig"
+community: "OutboundInfoFilter"
 location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBACConfig
+  - community/OutboundInfoFilter
 ---
 
 # ThreatAction
 
 ## Connections
-- [[Enum]] - `inherits` [EXTRACTED]
+- [[Enum_2]] - `inherits` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
-- [[TestAuditChain]] - `uses` [INFERRED]
+- [[TestAuditChain_1]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestContextGuardInPipeline]] - `uses` [INFERRED]
 - [[TestContextIntegrityInPipeline]] - `uses` [INFERRED]
@@ -41,9 +41,9 @@ tags:
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
 - [[prompt_guard.py]] - `contains` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[str_2]] - `inherits` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[test_prompt_guard.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBACConfig
+#graphify/code #graphify/INFERRED #community/OutboundInfoFilter

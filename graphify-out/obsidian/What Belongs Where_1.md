@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
 type: "document"
-community: "_make_tm()"
+community: "hermes/skills/i-cr/SKILL.md"
 location: "L218"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_make_tm
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # What Belongs Where
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Writing Style Rules_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_make_tm
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

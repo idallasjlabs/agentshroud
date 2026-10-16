@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
+source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "document"
-community: "group_config.py"
+community: "Atlas — Curriculum Architect"
 location: "L173"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/group_configpy
+  - community/Atlas__Curriculum_Architect
 ---
 
 # User Prompt Template — OKE Channel
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Atlas — Curriculum Architect_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/group_configpy
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

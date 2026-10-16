@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "test_agent_cve_registry.py"
+community: "_make_proxy"
 location: "L386"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy
+  - community/_make_proxy
 ---
 
 # TestSocketModeRelay
 
 ## Connections
-- [[.test_connections_open_missing_url_passthrough()]] - `method` [EXTRACTED]
-- [[.test_connections_open_rewrites_url()]] - `method` [EXTRACTED]
-- [[.test_connections_open_skips_content_pipeline()]] - `method` [EXTRACTED]
-- [[.test_connections_open_slack_error_passthrough()]] - `method` [EXTRACTED]
-- [[.test_consume_relay_token_one_time()]] - `method` [EXTRACTED]
-- [[.test_consume_relay_token_unknown()]] - `method` [EXTRACTED]
-- [[.test_each_reconnect_issues_unique_token()]] - `method` [EXTRACTED]
-- [[SlackAPIProxy]] - `uses` [INFERRED]
+- [[dot-test_connections_open_missing_url_passthrough()]] - `method` [EXTRACTED]
+- [[dot-test_connections_open_rewrites_url()]] - `method` [EXTRACTED]
+- [[dot-test_connections_open_skips_content_pipeline()]] - `method` [EXTRACTED]
+- [[dot-test_connections_open_slack_error_passthrough()]] - `method` [EXTRACTED]
+- [[dot-test_consume_relay_token_one_time()]] - `method` [EXTRACTED]
+- [[dot-test_consume_relay_token_unknown()]] - `method` [EXTRACTED]
+- [[dot-test_each_reconnect_issues_unique_token()]] - `method` [EXTRACTED]
+- [[SlackAPIProxy_1]] - `uses` [INFERRED]
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[test_slack_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

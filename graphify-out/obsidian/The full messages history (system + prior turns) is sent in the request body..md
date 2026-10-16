@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "test_a2a_policy.py"
+community: "server.py"
 location: "L657"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/serverpy
 ---
 
 # The full messages history (system + prior turns) is sent in the request body.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_call_llm_stream_sends_full_history()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/rationale #graphify/EXTRACTED #community/serverpy

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "rationale"
-community: "discover_upstream_versions.py"
-location: "L80"
+community: "pick_latest_stable"
+location: "L110"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/discover_upstream_versionspy
+  - community/pick_latest_stable
 ---
 
 # Version -> comparable int tuple, or None if not numeric. A trailing ``-N``…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_sortable()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/discover_upstream_versionspy
+#graphify/rationale #graphify/EXTRACTED #community/pick_latest_stable

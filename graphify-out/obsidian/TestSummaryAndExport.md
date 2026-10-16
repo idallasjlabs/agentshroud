@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_env_guard_class.py"
 type: "code"
-community: "test_observatory_mode.py"
+community: "TestCheckCommandExecution"
 location: "L169"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_observatory_modepy
+  - community/TestCheckCommandExecution
 ---
 
 # TestSummaryAndExport
 
 ## Connections
-- [[.test_clear_resets_leakages()]] - `method` [EXTRACTED]
-- [[.test_export_writes_valid_json_report()]] - `method` [EXTRACTED]
-- [[.test_summary_aggregates_by_severity_and_method()]] - `method` [EXTRACTED]
+- [[dot-test_clear_resets_leakages()]] - `method` [EXTRACTED]
+- [[dot-test_export_writes_valid_json_report()]] - `method` [EXTRACTED]
+- [[dot-test_summary_aggregates_by_severity_and_method()]] - `method` [EXTRACTED]
 - [[EnvironmentGuard]] - `uses` [INFERRED]
 - [[test_env_guard_class.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_observatory_modepy
+#graphify/code #graphify/EXTRACTED #community/TestCheckCommandExecution

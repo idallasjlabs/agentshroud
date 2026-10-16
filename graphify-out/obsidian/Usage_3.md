@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-atlas/README.md"
+source_file: ".agents/skills/i-socrates/README.md"
 type: "document"
-community: "Skill: Code Review (CR)"
+community: "Socrates — Dialogue Architect"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Code_Review_CR
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Usage
 
 ## Connections
-- [[Atlas — Curriculum Architect]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Code_Review_CR
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

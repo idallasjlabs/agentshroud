@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "rationale"
-community: "test_e2e_proxy.py"
+community: "MCPPolicyEngine"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/MCPPolicyEngine
 ---
 
 # The three terminal policy outcomes for an MCP tool call.
@@ -15,4 +15,4 @@ tags:
 - [[A2APolicyAction]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyAction]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine

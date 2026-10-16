@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "Core Principles"
+community: "RBACConfig"
 location: "L96"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Core_Principles
+  - community/RBACConfig
 ---
 
 # Writes in group-A must not be readable from group-B.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGroupMemoryNamespaceIsolation]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Core_Principles
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

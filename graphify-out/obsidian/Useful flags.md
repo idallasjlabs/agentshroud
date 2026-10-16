@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/openai-whisper-api/SKILL.md"
+source_file: "skills/openclaw/summarize/SKILL.md"
 type: "document"
-community: "web_proxy.py"
-location: "L31"
+community: "OpenClaw Skill Metadata Schema (frontmatter convention)"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/web_proxypy
+  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention
 ---
 
 # Useful flags
 
 ## Connections
-- [[OpenAI Whisper API (curl)]] - `contains` [EXTRACTED]
+- [[Summarize]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/web_proxypy
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "ProgressiveLockdown"
+community: "AlertDispatcher"
 location: "L284"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/AlertDispatcher
 ---
 
 # URL-based indirect injection.
 
 ## Connections
-- [[.test_indirect_injection_url()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_indirect_injection_url()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

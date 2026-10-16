@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/himalaya/SKILL.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "test_ledger.py"
-location: "L252"
+community: "Canvas Skill"
+location: "L192"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_ledgerpy
+  - community/Canvas_Skill
 ---
 
 # Tips
 
 ## Connections
-- [[Himalaya Email CLI]] - `contains` [EXTRACTED]
+- [[Canvas Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_ledgerpy
+#graphify/document #graphify/EXTRACTED #community/Canvas_Skill

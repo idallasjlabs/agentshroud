@@ -1,17 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-gg/README.md"
+source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "SECTION 2: MARK INFORMATION"
-location: "L10"
+community: "SecureBrowser - Enterprise Secure Browser Automation"
+location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SECTION_2_MARK_INFORMATION
+  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
 ---
 
 # Usage
 
 ## Connections
-- [[Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
+- [[Click Element]] - `contains` [EXTRACTED]
+- [[Extract Data]] - `contains` [EXTRACTED]
+- [[Navigate to URL]] - `contains` [EXTRACTED]
+- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
+- [[Take Screenshot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SECTION_2_MARK_INFORMATION
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automation

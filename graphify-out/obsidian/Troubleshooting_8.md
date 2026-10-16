@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
+source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "Gateway Management/Control-Plane API (v1.3.0)"
-location: "L142"
+community: "OpenClaw Workspace Usage Guide"
+location: "L275"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Management/Control-Plane_API_v130
+  - community/OpenClaw_Workspace_Usage_Guide
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[401 Unauthorized_1]] - `contains` [EXTRACTED]
-- [[CalendarContacts not found_1]] - `contains` [EXTRACTED]
-- [[Connection timeout_1]] - `contains` [EXTRACTED]
-- [[iCloud Services_1]] - `contains` [EXTRACTED]
+- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
+- [[Problem Container not running]] - `contains` [EXTRACTED]
+- [[Problem File not found]] - `contains` [EXTRACTED]
+- [[Problem Permission denied]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Management/Control-Plane_API_v130
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "document"
-community: "test_sanitizer.py"
+community: "AWS Cloud Management & FinOps Agent"
 location: "L364"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_sanitizerpy
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # Workflow
 
 ## Connections
-- [[AWS Cloud Management & FinOps Agent]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_sanitizerpy
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "rationale"
-community: "hermes/skills/i-bs/README.md"
+community: "A2AGovernanceProxy"
 location: "L214"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/A2AGovernanceProxy
 ---
 
 # Update a peer's trust score (called by TrustManager integration).
 
 ## Connections
-- [[.update_peer_trust()]] - `rationale_for` [EXTRACTED]
+- [[dot-update_peer_trust()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/rationale #graphify/EXTRACTED #community/A2AGovernanceProxy

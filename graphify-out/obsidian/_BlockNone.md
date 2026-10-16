@@ -12,8 +12,8 @@ tags:
 # _BlockNone
 
 ## Connections
-- [[.is_blocked()_2]] - `method` [EXTRACTED]
-- [[.test_forwarded_query_relays_upstream_response()]] - `calls` [EXTRACTED]
+- [[dot-is_blocked()_1]] - `method` [EXTRACTED]
+- [[dot-test_forwarded_query_relays_upstream_response()]] - `calls` [EXTRACTED]
 - [[Blocklist stub that blocks nothing.]] - `rationale_for` [EXTRACTED]
 - [[DNSBlocklist]] - `uses` [INFERRED]
 - [[DNSForwarderProtocol]] - `uses` [INFERRED]

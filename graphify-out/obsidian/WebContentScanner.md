@@ -1,36 +1,38 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L176"
+community: "WebContentScanner"
+location: "L203"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ToolResultSanitizer
+  - graphify/EXTRACTED
+  - community/WebContentScanner
 ---
 
 # WebContentScanner
 
 ## Connections
-- [[.__init__()_42]] - `method` [EXTRACTED]
-- [[._scan_encoded_payloads()]] - `method` [EXTRACTED]
-- [[._scan_hidden_content()]] - `method` [EXTRACTED]
-- [[._scan_pii()]] - `method` [EXTRACTED]
-- [[._scan_prompt_injection()]] - `method` [EXTRACTED]
-- [[._scan_zero_width()]] - `method` [EXTRACTED]
-- [[.scan()_1]] - `method` [EXTRACTED]
-- [[Any_23]] - `uses` [INFERRED]
+- [[dot-__init__()_2]] - `references` [EXTRACTED]
+- [[dot-__init__()_1]] - `method` [EXTRACTED]
+- [[dot-_scan_encoded_payloads()]] - `method` [EXTRACTED]
+- [[dot-_scan_hidden_content()]] - `method` [EXTRACTED]
+- [[dot-_scan_pii()]] - `method` [EXTRACTED]
+- [[dot-_scan_prompt_injection()]] - `method` [EXTRACTED]
+- [[dot-_scan_xml_dtd()]] - `method` [EXTRACTED]
+- [[dot-_scan_zero_width()]] - `method` [EXTRACTED]
+- [[dot-scan()]] - `method` [EXTRACTED]
+- [[dot-setUp()]] - `calls` [EXTRACTED]
+- [[dot-test_finding_severity_is_critical()]] - `calls` [EXTRACTED]
 - [[DNSFilter]] - `semantically_similar_to` [INFERRED]
-- [[ProxyAction]] - `uses` [INFERRED]
-- [[RateLimiter_1]] - `uses` [INFERRED]
-- [[Scan web content for prompt injection, PII, and hidden payloads.      All findin]] - `rationale_for` [EXTRACTED]
-- [[URLAnalyzer]] - `semantically_similar_to` [INFERRED]
-- [[URLAnalyzer_1]] - `uses` [INFERRED]
-- [[WebContentScanner_1]] - `uses` [INFERRED]
-- [[WebProxy_1]] - `uses` [INFERRED]
-- [[WebProxyConfig_1]] - `uses` [INFERRED]
-- [[WebProxyResult]] - `uses` [INFERRED]
+- [[Scan web content for prompt injection, PII, and hidden payloads. All findings…]] - `rationale_for` [EXTRACTED]
+- [[TestDangerousXMLDetection]] - `uses` [INFERRED]
+- [[TestDangerousXMLIsBlockedNotFlagged]] - `uses` [INFERRED]
+- [[TestDefenseLayerVocabulary]] - `uses` [INFERRED]
+- [[URLAnalyzer_1]] - `semantically_similar_to` [INFERRED]
+- [[WebProxy]] - `uses` [INFERRED]
+- [[test_triage_cve_mitigations.py]] - `imports` [EXTRACTED]
+- [[test_xml_dtd_control.py]] - `imports` [EXTRACTED]
 - [[web_content_scanner.py]] - `contains` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

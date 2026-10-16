@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "rationale"
-community: "test_llm_proxy_local_parity.py"
+community: "MCPToolCall"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy
+  - community/MCPToolCall
 ---
 
 # Threat level classification.
 
 ## Connections
-- [[ThreatLevel]] - `rationale_for` [EXTRACTED]
+- [[ThreatLevel_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy
+#graphify/rationale #graphify/EXTRACTED #community/MCPToolCall

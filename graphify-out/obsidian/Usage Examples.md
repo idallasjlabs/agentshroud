@@ -1,17 +1,19 @@
 ---
-source_file: "docker/bot-capabilities.md"
+source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "Credential Isolation — Gateway op-proxy (ACTIVE)"
-location: "L58"
+community: "OpenClaw Bot SSH Configuration"
+location: "L202"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Credential_Isolation__Gateway_op-proxy_ACTIVE
+  - community/OpenClaw_Bot_SSH_Configuration
 ---
 
 # Usage Examples
 
 ## Connections
-- [[Credential Management - 1Password Integration]] - `contains` [EXTRACTED]
+- [[From Docker Command Line]] - `contains` [EXTRACTED]
+- [[From OpenClaw Bot (Natural Language)]] - `contains` [EXTRACTED]
+- [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Credential_Isolation__Gateway_op-proxy_ACTIVE
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

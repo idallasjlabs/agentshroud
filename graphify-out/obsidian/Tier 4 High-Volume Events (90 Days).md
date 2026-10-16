@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "test_block_credentials.py"
+community: "AgentShroud Audit Specification"
 location: "L275"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_block_credentialspy
+  - community/AgentShroud_Audit_Specification
 ---
 
 # Tier 4: High-Volume Events (90 Days)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Tier-Based Retention Strategy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_block_credentialspy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification

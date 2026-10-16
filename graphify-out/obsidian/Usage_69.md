@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ps/README.md"
+source_file: ".agents/skills/graphify/SKILL.md"
 type: "document"
-community: "_w()"
+community: "What You Must Do When Invoked"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_w
+  - community/What_You_Must_Do_When_Invoked
 ---
 
 # Usage
 
 ## Connections
-- [[Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
-- [[Production Safety Checklist (SKILL)]] - `contains` [EXTRACTED]
+- [[graphify]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_w
+#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked

@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-ui/SKILL.md"
 type: "document"
-community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+community: "Test-Driven Development README"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR
+  - community/Test-Driven_Development_README
 ---
 
 # UI Expert (UI)
@@ -15,4 +15,4 @@ tags:
 - [[Technical Illustrator (TI)_2]] - `references` [EXTRACTED]
 - [[UX Skill (i-ux, external)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR
+#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README

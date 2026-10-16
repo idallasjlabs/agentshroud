@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
+source_file: "docs/vault/05 - Dependencies/httpx.md"
 type: "document"
-community: "test_egress_callback_stale.py"
-location: "L56"
+community: "All Dependencies.md"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_egress_callback_stalepy
+  - community/All_Dependenciesmd
 ---
 
 # Where Used
 
 ## Connections
-- [[Presidio Analyzer]] - `contains` [EXTRACTED]
+- [[httpx_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_egress_callback_stalepy
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

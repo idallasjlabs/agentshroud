@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "test_clamav_pipeline.py"
+community: "troubleshooting.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_clamav_pipelinepy
+  - community/troubleshootingmd
 ---
 
 # Troubleshooting Runbook — AgentShroud
@@ -16,6 +16,6 @@ tags:
 - [[Diagnostic Commands]] - `contains` [EXTRACTED]
 - [[Getting Help]] - `contains` [EXTRACTED]
 - [[Known Log Messages]] - `contains` [EXTRACTED]
-- [[troubleshooting]] - `contains` [EXTRACTED]
+- [[troubleshooting_23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_clamav_pipelinepy
+#graphify/document #graphify/EXTRACTED #community/troubleshootingmd

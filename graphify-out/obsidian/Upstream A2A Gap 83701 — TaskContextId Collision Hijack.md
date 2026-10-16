@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_a2a_integration.py"
 type: "concept"
-community: "AgentTarget"
+community: "A2APolicyEngine"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/A2APolicyEngine
 ---
 
 # Upstream A2A Gap #83701 — Task/ContextId Collision Hijack
@@ -16,4 +16,4 @@ tags:
 - [[test_a2a_policy.py]] - `references` [EXTRACTED]
 - [[test_a2a_trust_scoring.py]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentTarget
+#graphify/concept #graphify/EXTRACTED #community/A2APolicyEngine

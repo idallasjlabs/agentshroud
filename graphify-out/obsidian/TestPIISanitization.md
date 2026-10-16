@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "hermes/skills/i-bs/README.md"
+community: "A2AGovernanceProxy"
 location: "L195"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/A2AGovernanceProxy
 ---
 
 # TestPIISanitization
 
 ## Connections
-- [[.test_api_key_sanitized()]] - `method` [EXTRACTED]
-- [[.test_clean_payload_not_sanitized()]] - `method` [EXTRACTED]
-- [[.test_ssn_sanitized()]] - `method` [EXTRACTED]
+- [[dot-test_api_key_sanitized()]] - `method` [EXTRACTED]
+- [[dot-test_clean_payload_not_sanitized()]] - `method` [EXTRACTED]
+- [[dot-test_ssn_sanitized()]] - `method` [EXTRACTED]
 - [[A2ADecision]] - `uses` [INFERRED]
 - [[A2AGovernanceConfig]] - `uses` [INFERRED]
 - [[A2AGovernanceProxy]] - `uses` [INFERRED]
@@ -23,4 +23,4 @@ tags:
 - [[A2APeer]] - `uses` [INFERRED]
 - [[test_a2a_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/hermes/skills/i-bs/READMEmd
+#graphify/code #graphify/INFERRED #community/A2AGovernanceProxy

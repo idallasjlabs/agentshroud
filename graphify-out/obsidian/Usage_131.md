@@ -1,24 +1,17 @@
 ---
-source_file: "skills/openclaw/trello/SKILL.md"
+source_file: ".agents/skills/i-cicd/README.md"
 type: "document"
-community: "Docker Volumes"
-location: "L26"
+community: "CI/CD Pipeline Advisor (README)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Volumes
+  - community/CI/CD_Pipeline_Advisor_README
 ---
 
 # Usage
 
 ## Connections
-- [[Add a comment to a card]] - `contains` [EXTRACTED]
-- [[Archive a card]] - `contains` [EXTRACTED]
-- [[Create a card]] - `contains` [EXTRACTED]
-- [[List boards]] - `contains` [EXTRACTED]
-- [[List cards in a list]] - `contains` [EXTRACTED]
-- [[List lists in a board]] - `contains` [EXTRACTED]
-- [[Move a card to another list]] - `contains` [EXTRACTED]
-- [[Trello Skill]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Volumes
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README

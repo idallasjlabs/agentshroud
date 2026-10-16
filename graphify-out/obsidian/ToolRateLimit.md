@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "GroupRoleResolver"
 location: "L145"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TelegramAPIProxy
+  - community/GroupRoleResolver
 ---
 
 # ToolRateLimit
@@ -16,7 +16,7 @@ tags:
 - [[GroupRoleResolver]] - `uses` [INFERRED]
 - [[Per-tool call rate limit configuration.]] - `rationale_for` [EXTRACTED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
+- [[Role_96]] - `uses` [INFERRED]
 - [[tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TelegramAPIProxy
+#graphify/code #graphify/INFERRED #community/GroupRoleResolver

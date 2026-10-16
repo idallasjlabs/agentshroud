@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services.py"
 type: "rationale"
-community: "Hermes Cron Jobs Reference & Recreation Guide"
+community: "ServiceManager"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+  - community/ServiceManager
 ---
 
 # Unit tests for ServiceManager.get_logs — including module_filter behaviour.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestServiceManagerGetLogs]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+#graphify/rationale #graphify/EXTRACTED #community/ServiceManager

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "rationale"
-community: "_seed_cron"
-location: "L73"
+community: "pick_latest_stable"
+location: "L103"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_seed_cron
+  - community/pick_latest_stable
 ---
 
 # True when ``version`` is a shippable release rather than a pre-release.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[is_stable()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_seed_cron
+#graphify/rationale #graphify/EXTRACTED #community/pick_latest_stable

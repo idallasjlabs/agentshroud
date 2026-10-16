@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/prompts/daily-memory-journal.txt"
 type: "rationale"
-community: "TELEGRAM_ISSUES.md"
+community: "Report Delivery Format Instructions"
 location: "L3"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TELEGRAM_ISSUESmd
+  - community/Report_Delivery_Format_Instructions
 ---
 
 # Zero Hallucinations On Errors Policy
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Daily Memory Journal Job (nightly memory consolidation)]] - `implements` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd
+#graphify/rationale #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions

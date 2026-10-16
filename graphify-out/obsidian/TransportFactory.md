@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/email_service.py"
 type: "code"
-community: "RateLimiter"
+community: "GatewayEmailService"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/GatewayEmailService
 ---
 
 # TransportFactory
 
 ## Connections
-- [[.__init__()_11]] - `references` [EXTRACTED]
+- [[dot-__init__()_154]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimiter
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

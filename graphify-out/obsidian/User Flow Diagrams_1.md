@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
 type: "document"
-community: "sunday-upgrade-apply.sh"
+community: "Skill: UX Expert (UX)"
 location: "L123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sunday-upgrade-applysh
+  - community/Skill_UX_Expert_UX
 ---
 
 # User Flow Diagrams
@@ -16,4 +16,4 @@ tags:
 - [[Site Alarm Acknowledgment Flow_1]] - `contains` [EXTRACTED]
 - [[Skill UX Expert (UX)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sunday-upgrade-applysh
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pm/README.md"
+source_file: ".agents/skills/i-mcpm/README.md"
 type: "document"
-community: "TestErrorHandling"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestErrorHandling
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Usage
 
 ## Connections
-- [[Project Management (PM)_1]] - `contains` [EXTRACTED]
+- [[MCP Tools Usage (MCPM)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestErrorHandling
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

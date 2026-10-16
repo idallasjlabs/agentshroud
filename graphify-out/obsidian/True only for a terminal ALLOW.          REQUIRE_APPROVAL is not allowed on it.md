@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "rationale"
-community: "test_e2e_proxy.py"
+community: "MCPPolicyEngine"
 location: "L72"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/MCPPolicyEngine
 ---
 
 # True only for a terminal ALLOW.          REQUIRE_APPROVAL is *not* allowed on it
 
 ## Connections
-- [[.allowed()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-allowed()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine

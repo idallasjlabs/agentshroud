@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-18-runbook.png"
 type: "image"
-community: "alert_dispatcher.py"
+community: "1Password op-proxy (POST /credentials/op-proxy; validates GATEWAY_AUTH_TOKEN + allowed_op_paths; cascading retry 5s,10s,15s,30s,60s)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/alert_dispatcherpy
+  - community/1Password_op-proxy_POST_/credentials/op-proxy_validates_GATEWAY_AUTH_TOKEN__allowed_op_paths_cascading_retry_5s10s15s30s60s
 ---
 
 # Troubleshooting Runbook Decision Tree
@@ -17,4 +17,4 @@ tags:
 - [[Runbook branch Security alert → review blocked_domainHIGH threat entries → legitimate action allowlist vs kill switch]] - `conceptually_related_to` [EXTRACTED]
 - [[Severity matrix P1 Critical  P2 High  P3 Medium  P4 Low, with owners and response windows]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/EXTRACTED #community/alert_dispatcherpy
+#graphify/image #graphify/EXTRACTED #community/1Password_op-proxy_POST_/credentials/op-proxy_validates_GATEWAY_AUTH_TOKEN__allowed_op_paths_cascading_retry_5s10s15s30s60s

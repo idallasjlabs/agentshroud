@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "GroupRoleResolver"
+community: "tool_chain_analyzer.py"
 location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/tool_chain_analyzerpy
 ---
 
 # ToolCall
 
 ## Connections
-- [[._calculate_risk_score()]] - `references` [EXTRACTED]
-- [[._detect_chain_patterns()]] - `references` [EXTRACTED]
-- [[._matches_source_pattern()]] - `references` [EXTRACTED]
-- [[.analyze_tool_call()]] - `calls` [EXTRACTED]
+- [[dot-_calculate_risk_score()]] - `references` [EXTRACTED]
+- [[dot-_detect_chain_patterns()]] - `references` [EXTRACTED]
+- [[dot-_matches_source_pattern()]] - `references` [EXTRACTED]
+- [[dot-analyze_tool_call()]] - `calls` [EXTRACTED]
 - [[Represents a single tool call.]] - `rationale_for` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/tool_chain_analyzerpy

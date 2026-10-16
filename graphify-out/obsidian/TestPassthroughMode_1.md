@@ -1,26 +1,32 @@
 ---
-source_file: "gateway/tests/test_web_proxy.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "SOCWebSocketHandler"
-location: "L407"
+community: "MCPToolCall"
+location: "L645"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOCWebSocketHandler
+  - community/MCPToolCall
 ---
 
 # TestPassthroughMode
 
 ## Connections
-- [[.test_passthrough_adds_header()]] - `method` [EXTRACTED]
-- [[.test_passthrough_allows_everything()_1]] - `method` [EXTRACTED]
-- [[.test_passthrough_skips_content_scan()]] - `method` [EXTRACTED]
-- [[AuditChain]] - `uses` [INFERRED]
-- [[DomainSettings]] - `uses` [INFERRED]
-- [[ProxyAction]] - `uses` [INFERRED]
-- [[RateLimiter_1]] - `uses` [INFERRED]
-- [[WebProxy_1]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
-- [[test_web_proxy.py]] - `contains` [EXTRACTED]
+- [[dot-test_passthrough_allows_everything()_1]] - `method` [EXTRACTED]
+- [[dot-test_passthrough_still_audits()]] - `method` [EXTRACTED]
+- [[FindingType]] - `uses` [INFERRED]
+- [[MCPAuditTrail]] - `uses` [INFERRED]
+- [[MCPInspector]] - `uses` [INFERRED]
+- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPProxy_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
+- [[MCPServerConfig_2]] - `uses` [INFERRED]
+- [[MCPToolCall]] - `uses` [INFERRED]
+- [[MCPToolConfig]] - `uses` [INFERRED]
+- [[MCPToolResult]] - `uses` [INFERRED]
+- [[MCPTransport]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
+- [[ThreatLevel_2]] - `uses` [INFERRED]
+- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOCWebSocketHandler
+#graphify/code #graphify/INFERRED #community/MCPToolCall

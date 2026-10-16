@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "test_security_audit.py"
+community: "RBACConfig"
 location: "L63"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/test_security_auditpy
+  - graphify/EXTRACTED
+  - community/RBACConfig
 ---
 
 # WorkspaceContext
 
 ## Connections
-- [[.resolve_workspace()]] - `references` [EXTRACTED]
+- [[dot-resolve_workspace()]] - `references` [EXTRACTED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[Resolved workspacecontext identity for a single inbound message.      Attribute]] - `rationale_for` [EXTRACTED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
 - [[TeamsConfig]] - `uses` [INFERRED]
 - [[group_workspace.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_security_auditpy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

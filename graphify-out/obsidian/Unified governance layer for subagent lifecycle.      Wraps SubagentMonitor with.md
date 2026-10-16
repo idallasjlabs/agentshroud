@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "Quick Reference — AgentShroud"
+community: "SubagentGovernance"
 location: "L183"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Quick_Reference__AgentShroud
+  - community/SubagentGovernance
 ---
 
 # Unified governance layer for subagent lifecycle.      Wraps SubagentMonitor with
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SubagentGovernance]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Quick_Reference__AgentShroud
+#graphify/rationale #graphify/EXTRACTED #community/SubagentGovernance

@@ -1,22 +1,26 @@
 ---
-source_file: "gateway/tests/test_dns_filter.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "URLAnalyzer"
-location: "L161"
+community: "WebProxyConfig"
+location: "L326"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/URLAnalyzer
+  - community/WebProxyConfig
 ---
 
 # TestRateLimiting
 
 ## Connections
-- [[.test_burst_queries_flagged()]] - `method` [EXTRACTED]
-- [[.test_normal_rate_not_flagged()]] - `method` [EXTRACTED]
-- [[DNSFilter]] - `uses` [INFERRED]
-- [[DNSFilterConfig]] - `uses` [INFERRED]
-- [[EntropyCalculator]] - `uses` [INFERRED]
-- [[test_dns_filter.py]] - `contains` [EXTRACTED]
+- [[dot-test_different_domains_independent()]] - `method` [EXTRACTED]
+- [[dot-test_rate_limit_blocks_excess()]] - `method` [EXTRACTED]
+- [[dot-test_rate_limiter_reset()]] - `method` [EXTRACTED]
+- [[AuditChain]] - `uses` [INFERRED]
+- [[DomainSettings]] - `uses` [INFERRED]
+- [[ProxyAction]] - `uses` [INFERRED]
+- [[RateLimiter]] - `uses` [INFERRED]
+- [[WebProxy]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/URLAnalyzer
+#graphify/code #graphify/INFERRED #community/WebProxyConfig

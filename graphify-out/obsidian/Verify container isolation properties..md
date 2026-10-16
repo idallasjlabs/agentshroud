@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "rationale"
-community: "test_mfa_guard.py"
+community: "AgentRegistry"
 location: "L88"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/AgentRegistry
 ---
 
 # Verify container isolation properties.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IsolationVerifier]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry

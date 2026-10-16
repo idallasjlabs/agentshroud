@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/macos.md"
+source_file: "docs/operations/linux.md"
 type: "document"
-community: "url_analyzer.py"
-location: "L78"
+community: "Deploying AgentShroud on Linux (x86_64 / aarch64)"
+location: "L131"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/url_analyzerpy
+  - community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64
 ---
 
 # Updating to Latest Release
 
 ## Connections
-- [[Deploying AgentShroud on macOS (Apple Silicon  Intel)]] - `contains` [EXTRACTED]
+- [[Deploying AgentShroud on Linux (x86_64  aarch64)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/url_analyzerpy
+#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64

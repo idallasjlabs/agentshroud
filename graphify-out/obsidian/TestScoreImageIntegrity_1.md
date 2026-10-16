@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "System Audit & Documentation"
+community: "_mock_dir_with_files"
 location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/System_Audit__Documentation
+  - community/_mock_dir_with_files
 ---
 
 # TestScoreImageIntegrity
 
 ## Connections
-- [[.test_five_optimal()]] - `method` [EXTRACTED]
-- [[.test_four_with_zero_highs()]] - `method` [EXTRACTED]
-- [[.test_max_capped_at_five()]] - `method` [EXTRACTED]
-- [[.test_one_when_only_sbom_exists()]] - `method` [EXTRACTED]
-- [[.test_three_with_sbom_trivy_no_criticals_but_has_highs()]] - `method` [EXTRACTED]
-- [[.test_zero_when_nothing_present()]] - `method` [EXTRACTED]
+- [[dot-test_five_optimal()]] - `method` [EXTRACTED]
+- [[dot-test_four_with_zero_highs()]] - `method` [EXTRACTED]
+- [[dot-test_max_capped_at_five()]] - `method` [EXTRACTED]
+- [[dot-test_one_when_only_sbom_exists()]] - `method` [EXTRACTED]
+- [[dot-test_three_with_sbom_trivy_no_criticals_but_has_highs()]] - `method` [EXTRACTED]
+- [[dot-test_zero_when_nothing_present()]] - `method` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/System_Audit__Documentation
+#graphify/code #graphify/EXTRACTED #community/_mock_dir_with_files

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "rationale"
-community: "test_daily_cve_report.py"
+community: "WebProxy"
 location: "L393"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/WebProxy
 ---
 
 # Unknown IP with no bot_hostnames registered → generic label, cached.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_agent_id_for_peer_unknown_no_hostnames()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/rationale #graphify/EXTRACTED #community/WebProxy

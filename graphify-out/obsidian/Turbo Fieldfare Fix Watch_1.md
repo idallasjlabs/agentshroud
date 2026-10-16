@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/turbo-fieldfare-fix-watch.txt"
 type: "document"
-community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements"
+community: "Turbo Fieldfare (MLX inference backend)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Required__45_for_text__30_for_UI_elements
+  - community/Turbo_Fieldfare_MLX_inference_backend
 ---
 
 # Turbo Fieldfare Fix Watch
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Turbo Fieldfare GitHub Issue 84 (decoder_consume bug)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements
+#graphify/document #graphify/EXTRACTED #community/Turbo_Fieldfare_MLX_inference_backend

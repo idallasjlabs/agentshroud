@@ -1,18 +1,18 @@
 ---
 source_file: ".agents/skills/i-bs/SKILL.md"
 type: "document"
-community: "AWS Cloud Management & FinOps Agent"
+community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements"
 location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent
+  - community/Required__45_for_text__30_for_UI_elements
 ---
 
 # Validate contrast ratio
 
 ## Connections
-- [[SKILL_10]] - `contains` [EXTRACTED]
-- [[SKILL_15]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-bsSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent
+#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "SSHProxy"
 location: "L283"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/SSHProxy
 ---
 
 # Write file content to a remote host via structured (non-shell-string) transport.
 
 ## Connections
-- [[.write_file()]] - `rationale_for` [EXTRACTED]
+- [[dot-write_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

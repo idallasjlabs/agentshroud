@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "make_event()"
+community: "DelegationManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/DelegationManager
 ---
 
 # ValueError
@@ -14,4 +14,4 @@ tags:
 - [[DelegationError]] - `inherits` [EXTRACTED]
 - [[SkillScanError]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/DelegationManager

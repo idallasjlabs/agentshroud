@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_stt_model_ab.py"
 type: "rationale"
-community: ".claude/settings.json (hook + permission wiring)"
+community: "test_voice_stt_model_ab.py"
 location: "L76"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/claude/settingsjson_hook__permission_wiring
+  - community/test_voice_stt_model_abpy
 ---
 
 # The helper returns a record tagged with model size + duration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_record_transcription_latency_returns_structured_record()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/claude/settingsjson_hook__permission_wiring
+#graphify/rationale #graphify/EXTRACTED #community/test_voice_stt_model_abpy

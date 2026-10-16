@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Local LLM Support — Implementation Review"
+community: "AgentRegistry"
 location: "L797"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Local_LLM_Support__Implementation_Review
+  - community/AgentRegistry
 ---
 
 # TestPromptGuardEvasion
 
 ## Connections
-- [[.setup_method()_32]] - `method` [EXTRACTED]
-- [[.test_double_base64_injection()]] - `method` [EXTRACTED]
-- [[.test_fullwidth_detection()]] - `method` [EXTRACTED]
-- [[.test_homoglyph_detection()]] - `method` [EXTRACTED]
-- [[.test_mixed_case_still_caught()]] - `method` [EXTRACTED]
-- [[.test_rtl_override_detection()]] - `method` [EXTRACTED]
-- [[.test_zero_width_evasion()]] - `method` [EXTRACTED]
+- [[dot-setup_method()_34]] - `method` [EXTRACTED]
+- [[dot-test_double_base64_injection()]] - `method` [EXTRACTED]
+- [[dot-test_fullwidth_detection()]] - `method` [EXTRACTED]
+- [[dot-test_homoglyph_detection()]] - `method` [EXTRACTED]
+- [[dot-test_mixed_case_still_caught()]] - `method` [EXTRACTED]
+- [[dot-test_rtl_override_detection()]] - `method` [EXTRACTED]
+- [[dot-test_zero_width_evasion()]] - `method` [EXTRACTED]
 - [[AgentRegistry]] - `uses` [INFERRED]
-- [[ContainerConfig]] - `uses` [INFERRED]
+- [[ContainerConfig_1]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
 - [[DriftDetector]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
+- [[EgressFilter_2]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[EncryptedStore]] - `uses` [INFERRED]
@@ -36,7 +36,7 @@ tags:
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Local_LLM_Support__Implementation_Review
+#graphify/code #graphify/INFERRED #community/AgentRegistry

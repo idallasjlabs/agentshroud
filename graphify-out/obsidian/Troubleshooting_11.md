@@ -1,22 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "_sync()"
-location: "L281"
+community: "OpenClaw Bot SSH Configuration"
+location: "L242"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_sync
+  - community/OpenClaw_Bot_SSH_Configuration
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Action requires approval but none granted_2]] - `contains` [EXTRACTED]
-- [[Browser timeout_2]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected_2]] - `contains` [EXTRACTED]
-- [[Rate limit exceeded_2]] - `contains` [EXTRACTED]
-- [[URL not in allowlist_2]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
+- [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
+- [[Problem Bad owner or permissions on ~.sshconfig]] - `contains` [EXTRACTED]
+- [[Problem Connection timeout]] - `contains` [EXTRACTED]
+- [[Problem Host key verification failed]] - `contains` [EXTRACTED]
+- [[Problem Permission denied (publickey)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_sync
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

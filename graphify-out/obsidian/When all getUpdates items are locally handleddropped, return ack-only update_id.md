@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "TelegramAPIProxy"
 location: "L294"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/TelegramAPIProxy
 ---
 
 # When all getUpdates items are locally handled/dropped, return ack-only update_id
 
 ## Connections
-- [[.test_proxy_request_returns_ack_only_updates_when_all_dropped()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_proxy_request_returns_ack_only_updates_when_all_dropped()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

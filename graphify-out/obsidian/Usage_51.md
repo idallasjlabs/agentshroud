@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-daedalus/README.md"
+source_file: "docker/config/openclaw/skills/i-tdd/README.md"
 type: "document"
-community: "Containers startup order: agentshroud-gateway st"
+community: "Test-Driven Development (TDD)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Containers_startup_order_agentshroud-gateway_st
+  - community/Test-Driven_Development_TDD
 ---
 
 # Usage
 
 ## Connections
-- [[Daedalus — Concept Illustrator_2]] - `contains` [EXTRACTED]
+- [[Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Containers_startup_order_agentshroud-gateway_st
+#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_TDD

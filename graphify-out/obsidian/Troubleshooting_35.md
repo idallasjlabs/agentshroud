@@ -1,20 +1,22 @@
 ---
-source_file: "skills/custom/icloud/SKILL.md"
+source_file: "docs/runbooks/RUNBOOK.md"
 type: "document"
-community: "check-vendor-compat.sh"
-location: "L142"
+community: "AgentShroud Deployment & Troubleshooting Runbook"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/check-vendor-compatsh
+  - community/AgentShroud_Deployment__Troubleshooting_Runbook
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[401 Unauthorized_4]] - `contains` [EXTRACTED]
-- [[CalendarContacts not found_3]] - `contains` [EXTRACTED]
-- [[Connection timeout_4]] - `contains` [EXTRACTED]
-- [[iCloud Services_4]] - `contains` [EXTRACTED]
+- [[Fatal glibc error Cannot allocate TLS block]] - `contains` [EXTRACTED]
+- [[AgentShroud Deployment & Troubleshooting Runbook]] - `contains` [EXTRACTED]
+- [[Colima won't start]] - `contains` [EXTRACTED]
+- [[Container starts but unhealthy]] - `contains` [EXTRACTED]
+- [[Docker says Cannot connect to Docker daemon]] - `contains` [EXTRACTED]
+- [[Tests failing after deploy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/check-vendor-compatsh
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment__Troubleshooting_Runbook

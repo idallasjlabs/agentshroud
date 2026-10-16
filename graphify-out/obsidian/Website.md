@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Competitive Security Matrix — AgentShroud vs AI "
+community: "Brand Applications"
 location: "L115"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Competitive_Security_Matrix__AgentShroud_vs_AI_
+  - community/Brand_Applications
 ---
 
 # Website
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Brand Applications]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Competitive_Security_Matrix__AgentShroud_vs_AI_
+#graphify/document #graphify/EXTRACTED #community/Brand_Applications

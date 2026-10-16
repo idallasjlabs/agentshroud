@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
+source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "Skill: Branding Specialist (BS)"
+community: ".agents/skills/i-tw/SKILL.md"
 location: "L199"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Branding_Specialist_BS
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # Writing Style Rules
 
 ## Connections
 - [[Formatting_2]] - `contains` [EXTRACTED]
-- [[Voice & Tone_4]] - `contains` [EXTRACTED]
+- [[Voice & Tone_5]] - `contains` [EXTRACTED]
 - [[What Belongs Where_2]] - `contains` [EXTRACTED]
 - [[→ {site site1, test_mode True, output_prefix _testsite1}_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Branding_Specialist_BS
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

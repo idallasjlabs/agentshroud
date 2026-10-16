@@ -1,21 +1,17 @@
 ---
-source_file: "docs/setup/OPENCLAW_SETUP.md"
+source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "AgentShroud Documentation"
-location: "L356"
+community: "Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)"
+location: "L295"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Documentation
+  - community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Control UI Not Accessible]] - `contains` [EXTRACTED]
-- [[Gateway Can't Reach OpenClaw]] - `contains` [EXTRACTED]
-- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
-- [[OpenClaw Won't Start]] - `contains` [EXTRACTED]
-- [[SSH Not Working]] - `contains` [EXTRACTED]
+- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Documentation
+#graphify/document #graphify/EXTRACTED #community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On

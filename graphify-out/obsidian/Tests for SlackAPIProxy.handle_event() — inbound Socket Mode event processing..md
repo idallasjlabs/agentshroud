@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "input_normalizer.py"
+community: "TestHandleEvent"
 location: "L476"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/input_normalizerpy
+  - community/TestHandleEvent
 ---
 
 # Tests for SlackAPIProxy.handle_event() — inbound Socket Mode event processing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestHandleEvent]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/input_normalizerpy
+#graphify/rationale #graphify/EXTRACTED #community/TestHandleEvent

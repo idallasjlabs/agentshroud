@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
 type: "document"
-community: "1. Accomplishments This Phase"
+community: "web_proxy.py"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1_Accomplishments_This_Phase
+  - community/web_proxypy
 ---
 
 # WebProxy.check_request(url, method, headers)
 
 ## Connections
-- [[Function Details_18]] - `contains` [EXTRACTED]
+- [[Function Details_44]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1_Accomplishments_This_Phase
+#graphify/document #graphify/EXTRACTED #community/web_proxypy

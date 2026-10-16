@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "paper"
-community: "test_dashboard.py"
+community: "SessionManager"
 tags:
   - graphify/paper
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/SessionManager
 ---
 
 # Wang et al. 2026 — Event injection attacks (arXiv:2602.08412)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SessionManager]] - `cites` [EXTRACTED]
 
-#graphify/paper #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/paper #graphify/EXTRACTED #community/SessionManager

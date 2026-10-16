@@ -1,29 +1,29 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "asyncio"
+community: "PermissionLevel"
 location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/PermissionLevel
 ---
 
 # TestServerAccess
 
 ## Connections
-- [[.test_allowed_agent()]] - `method` [EXTRACTED]
-- [[.test_denied_agent()]] - `method` [EXTRACTED]
-- [[.test_disabled_server()]] - `method` [EXTRACTED]
-- [[.test_not_in_allowlist()]] - `method` [EXTRACTED]
-- [[.test_trust_sufficient_for_server()]] - `method` [EXTRACTED]
-- [[.test_trust_too_low_for_server()]] - `method` [EXTRACTED]
-- [[.test_unknown_server_default_allow()]] - `method` [EXTRACTED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPServerConfig]] - `uses` [INFERRED]
+- [[dot-test_allowed_agent()]] - `method` [EXTRACTED]
+- [[dot-test_denied_agent()]] - `method` [EXTRACTED]
+- [[dot-test_disabled_server()]] - `method` [EXTRACTED]
+- [[dot-test_not_in_allowlist()]] - `method` [EXTRACTED]
+- [[dot-test_trust_sufficient_for_server()]] - `method` [EXTRACTED]
+- [[dot-test_trust_too_low_for_server()]] - `method` [EXTRACTED]
+- [[dot-test_unknown_server_default_allow()]] - `method` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
+- [[MCPServerConfig_2]] - `uses` [INFERRED]
 - [[MCPToolConfig]] - `uses` [INFERRED]
 - [[PermissionLevel]] - `uses` [INFERRED]
 - [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

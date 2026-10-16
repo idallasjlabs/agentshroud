@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "hermes/skills/i-bs/README.md"
+community: "A2AGovernanceProxy"
 location: "L59"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/A2AGovernanceProxy
 ---
 
 # TestPeerManagement
 
 ## Connections
-- [[.test_register_peer()]] - `method` [EXTRACTED]
-- [[.test_trust_clamped()]] - `method` [EXTRACTED]
-- [[.test_unregister_peer()]] - `method` [EXTRACTED]
-- [[.test_update_trust()]] - `method` [EXTRACTED]
+- [[dot-test_register_peer()_1]] - `method` [EXTRACTED]
+- [[dot-test_trust_clamped()]] - `method` [EXTRACTED]
+- [[dot-test_unregister_peer()]] - `method` [EXTRACTED]
+- [[dot-test_update_trust()]] - `method` [EXTRACTED]
 - [[A2ADecision]] - `uses` [INFERRED]
 - [[A2AGovernanceConfig]] - `uses` [INFERRED]
 - [[A2AGovernanceProxy]] - `uses` [INFERRED]
@@ -24,4 +24,4 @@ tags:
 - [[A2APeer]] - `uses` [INFERRED]
 - [[test_a2a_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/hermes/skills/i-bs/READMEmd
+#graphify/code #graphify/INFERRED #community/A2AGovernanceProxy

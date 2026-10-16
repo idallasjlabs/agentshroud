@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "ADR-007: Zero-Config Security (docker-compose up"
+community: "Proxy Layer"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ADR-007_Zero-Config_Security_docker-compose_up
+  - community/Proxy_Layer
 ---
 
 # Web Proxy
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[web_proxy.py (domain allowlist engine)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ADR-007_Zero-Config_Security_docker-compose_up
+#graphify/concept #graphify/EXTRACTED #community/Proxy_Layer

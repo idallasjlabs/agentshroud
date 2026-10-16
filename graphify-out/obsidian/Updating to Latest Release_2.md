@@ -1,19 +1,17 @@
 ---
-source_file: "docs/operations/raspberry-pi.md"
+source_file: "docs/operations/macos.md"
 type: "document"
-community: "TestKillSwitchScript"
-location: "L93"
+community: "Deploying AgentShroud on macOS (Apple Silicon / Intel)"
+location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestKillSwitchScript
+  - community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel
 ---
 
 # Updating to Latest Release
 
 ## Connections
-- [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - `contains` [EXTRACTED]
-- [[From Git (tracking main)]] - `contains` [EXTRACTED]
-- [[From a Tagged Release]] - `contains` [EXTRACTED]
+- [[Deploying AgentShroud on macOS (Apple Silicon  Intel)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestKillSwitchScript
+#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel

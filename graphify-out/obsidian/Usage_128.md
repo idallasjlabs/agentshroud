@@ -1,17 +1,17 @@
 ---
-source_file: "skills/README.md"
+source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
 type: "document"
-community: "test_jira_weekly_review.py"
-location: "L24"
+community: "apply-patches.js"
+location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_jira_weekly_reviewpy
+  - community/apply-patchesjs
 ---
 
 # Usage
 
 ## Connections
-- [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
+- [[apply-patches.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_jira_weekly_reviewpy
+#graphify/document #graphify/EXTRACTED #community/apply-patchesjs

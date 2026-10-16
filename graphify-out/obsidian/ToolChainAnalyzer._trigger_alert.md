@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "gemini-review.py"
+community: "ToolChainAnalyzer.analyze_tool_call"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gemini-reviewpy
+  - community/ToolChainAnalyzeranalyze_tool_call
 ---
 
 # ToolChainAnalyzer._trigger_alert
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ToolChainAnalyzer.analyze_tool_call]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gemini-reviewpy
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzeranalyze_tool_call

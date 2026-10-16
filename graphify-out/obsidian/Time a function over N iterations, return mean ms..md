@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_benchmark_regression.py"
 type: "rationale"
-community: "Test Augmentation Specialist"
+community: "TestBenchmarkRegression"
 location: "L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Test_Augmentation_Specialist
+  - community/TestBenchmarkRegression
 ---
 
 # Time a function over N iterations, return mean ms.
 
 ## Connections
-- [[._time_fn()]] - `rationale_for` [EXTRACTED]
+- [[dot-_time_fn()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Test_Augmentation_Specialist
+#graphify/rationale #graphify/EXTRACTED #community/TestBenchmarkRegression

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "rationale"
-community: "Skill: Branding Specialist (BS)"
+community: "Path"
 location: "L381"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Skill_Branding_Specialist_BS
+  - community/Path
 ---
 
 # The plan is a pure function: it maps canonical source entries to each     per-bo
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPlanDeploy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Skill_Branding_Specialist_BS
+#graphify/rationale #graphify/EXTRACTED #community/Path

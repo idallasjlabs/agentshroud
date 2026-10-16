@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/00-information-disclosure.md"
+source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "Post-v1.0.0 — Deferred"
-location: "L51"
+community: "AgentShroud Prerequisites"
+location: "L560"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Post-v100__Deferred
+  - community/AgentShroud_Prerequisites
 ---
 
 # Verification
 
 ## Connections
-- [[Add information filtering to prevent agent self-disclosure]] - `contains` [EXTRACTED]
+- [[✅ Setup Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Post-v100__Deferred
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites

@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "iMessage Integration Fix - Using imsg + imessage"
+community: "postmortem.md"
 location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iMessage_Integration_Fix_-_Using_imsg__imessage
+  - community/postmortemmd
 ---
 
 # These instructions are authoritative. Follow them strictly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CLAUDE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Fix_-_Using_imsg__imessage
+#graphify/document #graphify/EXTRACTED #community/postmortemmd

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-qa/README.md"
+source_file: ".agents/skills/i-sec-offense/README.md"
 type: "document"
-community: "TestScoreMalwareDefense"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestScoreMalwareDefense
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Usage
 
 ## Connections
-- [[Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
+- [[Red Team Adversarial Tester (SEC-OFFENSE)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestScoreMalwareDefense
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

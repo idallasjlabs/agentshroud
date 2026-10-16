@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
 type: "document"
-community: "TestParseHostsLine"
+community: "alert_dispatcher.py"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestParseHostsLine
+  - community/alert_dispatcherpy
 ---
 
 # Threat Model
 
 ## Connections
-- [[canary.py_2]] - `contains` [EXTRACTED]
+- [[alert_dispatcher.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestParseHostsLine
+#graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy

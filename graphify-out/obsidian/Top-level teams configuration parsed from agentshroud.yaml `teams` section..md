@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "RBACConfig"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/RBACConfig
 ---
 
 # Top-level teams configuration parsed from agentshroud.yaml `teams:` section.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TeamsConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

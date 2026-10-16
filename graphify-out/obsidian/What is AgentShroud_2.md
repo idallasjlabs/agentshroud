@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/setup-guide.md"
+source_file: "docs/claude-security-audit-prompt.md"
 type: "document"
-community: "AgentShroud v0.8.0 \"Watchtower\" — Execution Summ"
-location: "L5"
+community: "AgentShroud v0.8.0 — Full Security & Functionality Audit"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080_Watchtower__Execution_Summ
+  - community/AgentShroud_v080__Full_Security__Functionality_Audit
 ---
 
 # What is AgentShroud?
 
 ## Connections
-- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Execution_Summ
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080__Full_Security__Functionality_Audit

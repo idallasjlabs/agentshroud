@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/LOG_LEVEL.md"
 type: "document"
-community: "AuditStore"
+community: "agentshroud.yaml.md"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/agentshroudyamlmd
 ---
 
 # Values
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LOG_LEVEL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditStore
+#graphify/document #graphify/EXTRACTED #community/agentshroudyamlmd

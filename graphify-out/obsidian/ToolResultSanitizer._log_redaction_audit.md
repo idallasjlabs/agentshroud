@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "ResourceGuard"
+community: "PIIConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/PIIConfig
 ---
 
 # ToolResultSanitizer._log_redaction_audit
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ToolResultSanitizer.sanitize_tool_result]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "test_wakeword_state/stubs/esp_err.h"
+community: "WebhookReceiver Session Isolation Integration"
 location: "line 225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_wakeword_state/stubs/esp_errh
+  - community/WebhookReceiver_Session_Isolation_Integration
 ---
 
 # WebhookReceiver Session Isolation Integration
 
-#graphify/code #graphify/EXTRACTED #community/test_wakeword_state/stubs/esp_errh
+#graphify/code #graphify/EXTRACTED #community/WebhookReceiver_Session_Isolation_Integration

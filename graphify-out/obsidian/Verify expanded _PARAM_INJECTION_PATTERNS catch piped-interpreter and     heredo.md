@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "GroupRoleResolver"
+community: "TestParamSanitization"
 location: "L552"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/TestParamSanitization
 ---
 
 # Verify expanded _PARAM_INJECTION_PATTERNS catch piped-interpreter and     heredo
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestShellBleedPatterns]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/rationale #graphify/EXTRACTED #community/TestParamSanitization

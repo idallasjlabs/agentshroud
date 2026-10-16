@@ -1,21 +1,20 @@
 ---
-source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "app_main.c"
-location: "L246"
+community: "Troubleshooting"
+location: "L204"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/app_mainc
+  - community/Troubleshooting
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Access Denied]] - `contains` [EXTRACTED]
-- [[Token expired (SSO)]] - `contains` [EXTRACTED]
-- [[Unable to locate credentials]] - `contains` [EXTRACTED]
-- [[MCP Not Using Profile]] - `contains` [EXTRACTED]
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
+- [[Missing auth for API providers]] - `contains` [EXTRACTED]
+- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
+- [[Bot not responding on Telegram]] - `contains` [EXTRACTED]
+- [[Container won't start after adding Anthropic secret]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/app_mainc
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting

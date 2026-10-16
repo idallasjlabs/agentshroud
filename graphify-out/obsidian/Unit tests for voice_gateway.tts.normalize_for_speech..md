@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "auto_remediate_cves.py"
+community: "TestNormalizeForSpeech"
 location: "L222"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/auto_remediate_cvespy
+  - community/TestNormalizeForSpeech
 ---
 
 # Unit tests for voice_gateway.tts.normalize_for_speech.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestNormalizeForSpeech]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/auto_remediate_cvespy
+#graphify/rationale #graphify/EXTRACTED #community/TestNormalizeForSpeech

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md"
+source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "test_image_verifier.py"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_image_verifierpy
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # When to Invoke
 
 ## Connections
-- [[Skill MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_image_verifierpy
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

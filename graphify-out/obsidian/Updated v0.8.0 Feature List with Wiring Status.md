@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-wiring-audit.md"
 type: "document"
-community: "main.py"
+community: "AgentShroud™ v0.8.0 \"Watchtower\" — Complete Feature List"
 location: "L179"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpy
+  - community/AgentShroud_v080_Watchtower__Complete_Feature_List
 ---
 
 # Updated v0.8.0 Feature List with Wiring Status
@@ -25,4 +25,4 @@ tags:
 - [[J. Code Cleanup (5) — ALL ✅]] - `contains` [EXTRACTED]
 - [[K. Misc Quick Wins (11) — ALL ✅]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Complete_Feature_List

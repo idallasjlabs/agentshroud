@@ -1,42 +1,42 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "Role"
 location: "L206"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/Role
 ---
 
 # ToolACLEnforcer
 
 ## Connections
-- [[.__init__()_121]] - `method` [EXTRACTED]
-- [[._can_use_tool_impl()]] - `method` [EXTRACTED]
-- [[._get_group_tool_allowlist()]] - `method` [EXTRACTED]
-- [[._get_role()]] - `method` [EXTRACTED]
-- [[.can_use_tool()]] - `method` [EXTRACTED]
-- [[.can_use_tool_from_origin()]] - `method` [EXTRACTED]
-- [[.can_use_tool_in_group_context()]] - `method` [EXTRACTED]
-- [[.check_tool_rate_limit()]] - `method` [EXTRACTED]
-- [[.enforcer()]] - `calls` [EXTRACTED]
-- [[.get_allowed_tools()]] - `method` [EXTRACTED]
-- [[.get_denial_counts()]] - `method` [EXTRACTED]
-- [[.get_denied_tools()]] - `method` [EXTRACTED]
-- [[.test_collaborator_can_use_unknown_tool_when_not_denied()]] - `calls` [EXTRACTED]
-- [[.test_enforce_mode_blocks()]] - `calls` [EXTRACTED]
-- [[.test_enforcer_without_trust_manager_unchanged()]] - `calls` [EXTRACTED]
-- [[.test_group_allowlist_grants_extra_tool()]] - `calls` [EXTRACTED]
-- [[.test_monitor_mode_logs_but_does_not_block_via_trust_gate()]] - `calls` [EXTRACTED]
-- [[.test_monitor_mode_still_allows_permitted_tools()]] - `calls` [EXTRACTED]
-- [[.test_no_rbac_allows_read()]] - `calls` [EXTRACTED]
-- [[.test_no_rbac_defaults_to_viewer()]] - `calls` [EXTRACTED]
-- [[.test_private_tool_still_blocked_even_when_deny_unknown_false()]] - `calls` [EXTRACTED]
-- [[.test_project_allowed_tools_grant_access()]] - `calls` [EXTRACTED]
-- [[.test_tool_acl_can_use_tool_records()]] - `calls` [EXTRACTED]
-- [[.test_trust_deny_wins_over_acl()]] - `calls` [EXTRACTED]
-- [[.test_unknown_tool_falls_through_to_acl()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_197]] - `method` [EXTRACTED]
+- [[dot-_can_use_tool_impl()]] - `method` [EXTRACTED]
+- [[dot-_get_group_tool_allowlist()]] - `method` [EXTRACTED]
+- [[dot-_get_role()]] - `method` [EXTRACTED]
+- [[dot-can_use_tool()_1]] - `method` [EXTRACTED]
+- [[dot-can_use_tool_from_origin()]] - `method` [EXTRACTED]
+- [[dot-can_use_tool_in_group_context()]] - `method` [EXTRACTED]
+- [[dot-check_tool_rate_limit()]] - `method` [EXTRACTED]
+- [[dot-enforcer()]] - `calls` [EXTRACTED]
+- [[dot-get_allowed_tools()]] - `method` [EXTRACTED]
+- [[dot-get_denial_counts()]] - `method` [EXTRACTED]
+- [[dot-get_denied_tools()]] - `method` [EXTRACTED]
+- [[dot-test_collaborator_can_use_unknown_tool_when_not_denied()]] - `calls` [EXTRACTED]
+- [[dot-test_enforce_mode_blocks()]] - `calls` [EXTRACTED]
+- [[dot-test_enforcer_without_trust_manager_unchanged()]] - `calls` [EXTRACTED]
+- [[dot-test_group_allowlist_grants_extra_tool()]] - `calls` [EXTRACTED]
+- [[dot-test_monitor_mode_logs_but_does_not_block_via_trust_gate()]] - `calls` [EXTRACTED]
+- [[dot-test_monitor_mode_still_allows_permitted_tools()]] - `calls` [EXTRACTED]
+- [[dot-test_no_rbac_allows_read()]] - `calls` [EXTRACTED]
+- [[dot-test_no_rbac_defaults_to_viewer()]] - `calls` [EXTRACTED]
+- [[dot-test_private_tool_still_blocked_even_when_deny_unknown_false()]] - `calls` [EXTRACTED]
+- [[dot-test_project_allowed_tools_grant_access()]] - `calls` [EXTRACTED]
+- [[dot-test_tool_acl_can_use_tool_records()]] - `calls` [EXTRACTED]
+- [[dot-test_trust_deny_wins_over_acl()]] - `calls` [EXTRACTED]
+- [[dot-test_unknown_tool_falls_through_to_acl()]] - `calls` [EXTRACTED]
 - [[A2AGovernanceProxy]] - `semantically_similar_to` [INFERRED]
 - [[ADMIN_TOOLS]] - `shares_data_with` [EXTRACTED]
 - [[COLLABORATOR_ALLOWED_TOOLS]] - `shares_data_with` [EXTRACTED]
@@ -44,10 +44,10 @@ tags:
 - [[GroupRole]] - `uses` [INFERRED]
 - [[GroupRoleResolver]] - `uses` [INFERRED]
 - [[PRIVATE_TOOLS]] - `shares_data_with` [EXTRACTED]
-- [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
+- [[ProgressiveTrustConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
+- [[Role_96]] - `uses` [INFERRED]
 - [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[TestAdminAccess]] - `uses` [INFERRED]
 - [[TestBackwardCompat]] - `uses` [INFERRED]
@@ -78,11 +78,11 @@ tags:
 - [[TestViewerAccess]] - `uses` [INFERRED]
 - [[ToolACLConfig]] - `shares_data_with` [EXTRACTED]
 - [[TrustLevel_2]] - `uses` [INFERRED]
-- [[TrustManager_4]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[can_use_tool_from_origin]] - `conceptually_related_to` [EXTRACTED]
-- [[enforcer()]] - `calls` [EXTRACTED]
+- [[enforcer()_2]] - `calls` [EXTRACTED]
 - [[enforcer()_3]] - `calls` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_group_rbac.py]] - `imports` [EXTRACTED]
 - [[test_llm_proxy.py]] - `conceptually_related_to` [INFERRED]
@@ -91,4 +91,4 @@ tags:
 - [[test_tool_acl.py]] - `references` [EXTRACTED]
 - [[tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/Role

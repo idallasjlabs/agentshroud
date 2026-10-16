@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/USPTO-APPLICATION.md"
 type: "document"
-community: "Message Composition with MML (MIME Meta Language"
+community: "AgentShroud™ — Trademark Prior Use Record"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Message_Composition_with_MML_MIME_Meta_Language
+  - community/AgentShroud__Trademark_Prior_Use_Record
 ---
 
 # USPTO-APPLICATION.md
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[PRIOR-USE]] - `conceptually_related_to` [INFERRED]
 - [[TEAS Plus Filing Process]] - `references` [EXTRACTED]
-- [[TRADEMARK]] - `references` [EXTRACTED]
+- [[TRADEMARK_2]] - `references` [EXTRACTED]
 - [[USPTO Class 009 Filing (Downloadable Software)]] - `references` [EXTRACTED]
 - [[USPTO Class 042 Filing (ScientificTechnological Services)]] - `references` [EXTRACTED]
 - [[USPTO Trademark Application — AgentShroud™]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Message_Composition_with_MML_MIME_Meta_Language
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record

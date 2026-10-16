@@ -1,18 +1,18 @@
 ---
 source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
 type: "document"
-community: "_age()"
+community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements"
 location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_age
+  - community/Required__45_for_text__30_for_UI_elements
 ---
 
 # Validate contrast ratio
 
 ## Connections
-- [[SKILL_74]] - `contains` [EXTRACTED]
-- [[SKILL_79]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_age
+#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "test_dashboard.py"
+community: "SessionError"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_dashboardpy
+  - community/SessionError
 ---
 
 # TestSessionCreation
 
 ## Connections
-- [[.test_create_session()]] - `method` [EXTRACTED]
-- [[.test_session_bound_to_identity()]] - `method` [EXTRACTED]
-- [[.test_session_id_is_cryptographically_random()]] - `method` [EXTRACTED]
+- [[dot-test_create_session()]] - `method` [EXTRACTED]
+- [[dot-test_session_bound_to_identity()]] - `method` [EXTRACTED]
+- [[dot-test_session_id_is_cryptographically_random()]] - `method` [EXTRACTED]
 - [[EventInjectionError]] - `uses` [INFERRED]
 - [[RateLimitExceeded]] - `uses` [INFERRED]
 - [[SessionBindingError]] - `uses` [INFERRED]
@@ -23,4 +23,4 @@ tags:
 - [[SessionManager]] - `uses` [INFERRED]
 - [[test_session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_dashboardpy
+#graphify/code #graphify/INFERRED #community/SessionError

@@ -1,28 +1,20 @@
 ---
-source_file: "gateway/tests/test_enhanced_approval.py"
+source_file: "gateway/tests/test_report_store.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L317"
+community: "ReportStore"
+location: "L90"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/TelegramAPIProxy
+  - graphify/EXTRACTED
+  - community/ReportStore
 ---
 
 # TestPersistence
 
 ## Connections
-- [[.test_restart_recovery_preserves_timeout_action()]] - `method` [EXTRACTED]
-- [[.test_restore_pending_items()]] - `method` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalRequest_3]] - `uses` [INFERRED]
-- [[ApprovalStore_1]] - `uses` [INFERRED]
-- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
-- [[MCPProxy]] - `uses` [INFERRED]
-- [[MCPToolCall]] - `uses` [INFERRED]
-- [[Test SQLite persistence across restarts.]] - `rationale_for` [EXTRACTED]
-- [[ToolRiskConfig_1]] - `uses` [INFERRED]
-- [[ToolRiskPolicy_1]] - `uses` [INFERRED]
-- [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
+- [[dot-test_delete()]] - `method` [EXTRACTED]
+- [[dot-test_survives_new_instance()]] - `method` [EXTRACTED]
+- [[ReportStore]] - `uses` [INFERRED]
+- [[test_report_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/ReportStore

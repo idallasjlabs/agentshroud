@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "Skill: Technical Illustrator (TI)"
+community: "Path"
 location: "L561"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_Technical_Illustrator_TI
+  - community/Path
 ---
 
 # TestSyncScriptPreflight
 
 ## Connections
-- [[._run_sync()]] - `method` [EXTRACTED]
-- [[.test_sync_aborts_on_dangerous_tree()]] - `method` [EXTRACTED]
-- [[.test_sync_allows_clean_tree()]] - `method` [EXTRACTED]
-- [[.test_sync_dry_run_does_not_write_but_still_scans()]] - `method` [EXTRACTED]
+- [[dot-_run_sync()]] - `method` [EXTRACTED]
+- [[dot-test_sync_aborts_on_dangerous_tree()]] - `method` [EXTRACTED]
+- [[dot-test_sync_allows_clean_tree()]] - `method` [EXTRACTED]
+- [[dot-test_sync_dry_run_does_not_write_but_still_scans()]] - `method` [EXTRACTED]
 - [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_2]] - `uses` [INFERRED]
+- [[ScanResult_4]] - `uses` [INFERRED]
 - [[Severity]] - `uses` [INFERRED]
-- [[SkillGuard]] - `uses` [INFERRED]
+- [[SkillGuard_1]] - `uses` [INFERRED]
 - [[SkillScanError]] - `uses` [INFERRED]
 - [[The parallel bash sync path must invoke SkillGuard before copying.]] - `rationale_for` [EXTRACTED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI
+#graphify/code #graphify/EXTRACTED #community/Path

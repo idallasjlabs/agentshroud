@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-apollo/SKILL.md"
 type: "document"
-community: ".update()"
+community: "Technical Specification"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/update
+  - community/Technical_Specification
 ---
 
 # Voice Configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Technical Specification_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/update
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

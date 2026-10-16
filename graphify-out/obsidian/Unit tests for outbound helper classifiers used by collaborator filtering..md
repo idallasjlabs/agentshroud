@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "AWS Cloud Management & FinOps Agent"
+community: "TestOutboundClassifierHelpers"
 location: "L4035"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps_Agent
+  - community/TestOutboundClassifierHelpers
 ---
 
 # Unit tests for outbound helper classifiers used by collaborator filtering.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOutboundClassifierHelpers]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundClassifierHelpers

@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "Seccomp Profiles"
+community: "test_dns_canvas_coverage.py"
 location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Seccomp_Profiles
+  - community/test_dns_canvas_coveragepy
 ---
 
 # TestParseDomainName
 
 ## Connections
-- [[.test_compression_pointer()]] - `method` [EXTRACTED]
-- [[.test_pointer_loop_bounded()]] - `method` [EXTRACTED]
-- [[.test_simple_name()]] - `method` [EXTRACTED]
-- [[.test_truncated_name_breaks()]] - `method` [EXTRACTED]
+- [[dot-test_compression_pointer()]] - `method` [EXTRACTED]
+- [[dot-test_pointer_loop_bounded()]] - `method` [EXTRACTED]
+- [[dot-test_simple_name()]] - `method` [EXTRACTED]
+- [[dot-test_truncated_name_breaks()]] - `method` [EXTRACTED]
 - [[DNSBlocklist]] - `uses` [INFERRED]
 - [[DNSForwarderProtocol]] - `uses` [INFERRED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Seccomp_Profiles
+#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy

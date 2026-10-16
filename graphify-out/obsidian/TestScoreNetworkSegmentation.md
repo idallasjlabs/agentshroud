@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_scanner_integration.py"
+source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "openclaw/skills/i-cr/SKILL.md"
-location: "L756"
+community: "TestScoreNetworkSegmentation"
+location: "L380"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/TestScoreNetworkSegmentation
 ---
 
 # TestScoreNetworkSegmentation
 
 ## Connections
-- [[.test_baseline_three_without_daemon_config()]] - `method` [EXTRACTED]
-- [[test_scanner_integration.py]] - `contains` [EXTRACTED]
+- [[dot-test_five_with_icc_disabled_and_validator()]] - `method` [EXTRACTED]
+- [[dot-test_four_with_icc_disabled()]] - `method` [EXTRACTED]
+- [[dot-test_three_baseline()]] - `method` [EXTRACTED]
+- [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/TestScoreNetworkSegmentation

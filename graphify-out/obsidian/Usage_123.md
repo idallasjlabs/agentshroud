@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
+source_file: "docker/config/openclaw/skills/i-ti/README.md"
 type: "document"
-community: "mcp_permissions.py"
-location: "L34"
+community: "openclaw/skills/i-cr/SKILL.md"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_permissionspy
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Usage
 
 ## Connections
-- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_permissionspy
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

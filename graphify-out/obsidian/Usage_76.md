@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-socrates/README.md"
+source_file: "docker/config/hermes/skills/i-apollo/README.md"
 type: "document"
-community: "ToolChainAnalyzer.analyze_tool_call"
+community: "hermes/skills/i-bs/README.md"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ToolChainAnalyzeranalyze_tool_call
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Usage
 
 ## Connections
-- [[Socrates — Dialogue Architect_1]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ToolChainAnalyzeranalyze_tool_call
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "iMessage Integration Status"
+community: "AgentShroud Security Value Proposition"
 location: "L289"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iMessage_Integration_Status
+  - community/AgentShroud_Security_Value_Proposition
 ---
 
 # The Bottom Line
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Security Value Proposition]] - `contains` [EXTRACTED]
 - [[Is AgentShroud worth the effort]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Status
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition

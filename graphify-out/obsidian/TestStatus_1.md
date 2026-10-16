@@ -1,22 +1,19 @@
 ---
-source_file: "gateway/tests/test_web_api_coverage.py"
+source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "test_redteam_probes.py"
-location: "L209"
+community: "test_credential_injector.py"
+location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_redteam_probespy
+  - community/test_credential_injectorpy
 ---
 
 # TestStatus
 
 ## Connections
-- [[.test_status_runtime_failure_degrades_gracefully()]] - `method` [EXTRACTED]
-- [[.test_status_with_running_and_stopped_containers()]] - `method` [EXTRACTED]
-- [[KillSwitchAction]] - `uses` [INFERRED]
-- [[ModeRequest]] - `uses` [INFERRED]
-- [[UpdateRequest]] - `uses` [INFERRED]
-- [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
+- [[dot-test_credential_never_in_logs()]] - `method` [EXTRACTED]
+- [[dot-test_get_status_structure()]] - `method` [EXTRACTED]
+- [[test_credential_injector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_redteam_probespy
+#graphify/code #graphify/EXTRACTED #community/test_credential_injectorpy

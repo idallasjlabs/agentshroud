@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
 type: "document"
-community: "sunday-scan.sh"
+community: "gitleaks.toml"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sunday-scansh
+  - community/gitleakstoml
 ---
 
 # What It Checks
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[gitleaks.toml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sunday-scansh
+#graphify/document #graphify/EXTRACTED #community/gitleakstoml

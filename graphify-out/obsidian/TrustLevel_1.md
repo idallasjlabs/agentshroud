@@ -1,39 +1,37 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
+community: "TrustConfig"
 location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MemoryIntegrityMonitor
+  - community/TrustConfig
 ---
 
 # TrustLevel
 
 ## Connections
-- [[.__init__()_127]] - `references` [EXTRACTED]
-- [[._force_demotion()]] - `references` [EXTRACTED]
-- [[._promotion_allowed()]] - `references` [EXTRACTED]
-- [[._score_to_level()]] - `references` [EXTRACTED]
-- [[._update_score()]] - `references` [EXTRACTED]
-- [[.get_trust()]] - `references` [EXTRACTED]
-- [[.record_failure()]] - `references` [EXTRACTED]
-- [[.record_success()]] - `references` [EXTRACTED]
-- [[.record_violation()]] - `references` [EXTRACTED]
-- [[.register_agent()]] - `references` [EXTRACTED]
+- [[dot-__init__()_36]] - `references` [EXTRACTED]
+- [[dot-_force_demotion()]] - `references` [EXTRACTED]
+- [[dot-_promotion_allowed()]] - `references` [EXTRACTED]
+- [[dot-_score_to_level()]] - `references` [EXTRACTED]
+- [[dot-_update_score()]] - `references` [EXTRACTED]
+- [[dot-get_trust()]] - `references` [EXTRACTED]
+- [[dot-record_failure()]] - `references` [EXTRACTED]
+- [[dot-record_success()]] - `references` [EXTRACTED]
+- [[dot-record_violation()]] - `references` [EXTRACTED]
+- [[dot-register_agent()]] - `references` [EXTRACTED]
 - [[IntEnum]] - `inherits` [EXTRACTED]
-- [[PIISanitizer_3]] - `uses` [INFERRED]
-- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
+- [[PIISanitizer_1]] - `uses` [INFERRED]
+- [[ProgressiveTrustConfig_1]] - `uses` [INFERRED]
 - [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
-- [[SecurityPipeline_1]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
 - [[TestActionGating]] - `uses` [INFERRED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAgentRegistration]] - `uses` [INFERRED]
 - [[TestBackwardCompat]] - `uses` [INFERRED]
-- [[TestBotIdIsolationInSharedMemory]] - `uses` [INFERRED]
 - [[TestConfig]] - `uses` [INFERRED]
-- [[TestCrossBotTrustPivot]] - `uses` [INFERRED]
 - [[TestDriftDetector]] - `uses` [INFERRED]
 - [[TestDriftDetectorHardened]] - `uses` [INFERRED]
 - [[TestEgressFilter]] - `uses` [INFERRED]
@@ -43,17 +41,12 @@ tags:
 - [[TestEnforcementModeResolver]] - `uses` [INFERRED]
 - [[TestEnumMapping]] - `uses` [INFERRED]
 - [[TestGatedPromotion]] - `uses` [INFERRED]
-- [[TestHermesDashboardBridgeReachability]] - `uses` [INFERRED]
-- [[TestHermesDashboardForwarderBinding]] - `uses` [INFERRED]
-- [[TestHermesEgressAllowlist]] - `uses` [INFERRED]
-- [[TestHermesTrustSeeding]] - `uses` [INFERRED]
 - [[TestHistory]] - `uses` [INFERRED]
-- [[TestPersistence_2]] - `uses` [INFERRED]
+- [[TestPersistence_1]] - `uses` [INFERRED]
 - [[TestProgressiveTrustConfigUnit]] - `uses` [INFERRED]
 - [[TestPromptGuard_1]] - `uses` [INFERRED]
 - [[TestPromptGuardEvasion]] - `uses` [INFERRED]
 - [[TestSecureZero]] - `uses` [INFERRED]
-- [[TestSessionPathSeparation]] - `uses` [INFERRED]
 - [[TestToolACLComposition]] - `uses` [INFERRED]
 - [[TestToolGating]] - `uses` [INFERRED]
 - [[TestTrustLevels_1]] - `uses` [INFERRED]
@@ -63,7 +56,7 @@ tags:
 - [[TestTypedViolations]] - `uses` [INFERRED]
 - [[TrustLevel]] - `uses` [INFERRED]
 - [[TrustLevel_2]] - `uses` [INFERRED]
-- [[TrustManager_4]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_e2e.py]] - `imports` [EXTRACTED]
@@ -71,8 +64,7 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
-- [[test_security_regressions_v1_2.py]] - `imports` [EXTRACTED]
 - [[test_trust_manager.py]] - `imports` [EXTRACTED]
 - [[trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/INFERRED #community/TrustConfig

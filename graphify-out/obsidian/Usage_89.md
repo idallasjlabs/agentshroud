@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cicd/README.md"
+source_file: "docker/config/hermes/skills/i-sec-offense/README.md"
 type: "document"
-community: "text_control_center.py / agentshroud_manager.py"
+community: "hermes/skills/i-bs/README.md"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/text_control_centerpy_/_agentshroud_managerpy
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Usage
 
 ## Connections
-- [[CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
+- [[Red Team Adversarial Tester (SEC-OFFENSE)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/text_control_centerpy_/_agentshroud_managerpy
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

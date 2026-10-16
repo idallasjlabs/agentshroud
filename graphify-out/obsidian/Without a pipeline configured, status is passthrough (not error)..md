@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "rationale"
-community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-P"
+community: "TestEmailSend"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P
+  - community/TestEmailSend
 ---
 
 # Without a pipeline configured, status is passthrough (not error).
 
 ## Connections
-- [[.test_passthrough_status_without_pipeline()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_passthrough_status_without_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P
+#graphify/rationale #graphify/EXTRACTED #community/TestEmailSend

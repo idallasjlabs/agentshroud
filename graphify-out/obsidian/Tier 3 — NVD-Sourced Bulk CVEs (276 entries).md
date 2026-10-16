@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "TestCheckCommandExecution"
+community: "AgentShroud™ CVE Mitigation Matrix"
 location: "L410"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestCheckCommandExecution
+  - community/AgentShroud_CVE_Mitigation_Matrix
 ---
 
 # Tier 3 — NVD-Sourced Bulk CVEs (276 entries)
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud™ CVE Mitigation Matrix]] - `contains` [EXTRACTED]
 - [[Representative Examples]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestCheckCommandExecution
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix

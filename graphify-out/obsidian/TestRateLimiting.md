@@ -1,25 +1,25 @@
 ---
-source_file: "gateway/tests/test_a2a_governance.py"
+source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "hermes/skills/i-bs/README.md"
-location: "L121"
+community: "PermissionLevel"
+location: "L392"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/PermissionLevel
 ---
 
 # TestRateLimiting
 
 ## Connections
-- [[.test_rate_limit_exceeded()]] - `method` [EXTRACTED]
-- [[.test_within_rate_limit()]] - `method` [EXTRACTED]
-- [[A2ADecision]] - `uses` [INFERRED]
-- [[A2AGovernanceConfig]] - `uses` [INFERRED]
-- [[A2AGovernanceProxy]] - `uses` [INFERRED]
-- [[A2AMessage]] - `uses` [INFERRED]
-- [[A2AMessageType]] - `uses` [INFERRED]
-- [[A2APeer]] - `uses` [INFERRED]
-- [[test_a2a_governance.py]] - `contains` [EXTRACTED]
+- [[dot-test_no_limit_always_allowed()]] - `method` [EXTRACTED]
+- [[dot-test_rate_limit_enforced()]] - `method` [EXTRACTED]
+- [[dot-test_rate_limit_per_agent()]] - `method` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
+- [[MCPServerConfig_2]] - `uses` [INFERRED]
+- [[MCPToolConfig]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
+- [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/hermes/skills/i-bs/READMEmd
+#graphify/code #graphify/INFERRED #community/PermissionLevel

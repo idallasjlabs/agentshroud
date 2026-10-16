@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-aws/README.md"
+source_file: "skills/custom/browser-fetch/SKILL.md"
 type: "document"
-community: "DNSFilterConfig"
-location: "L10"
+community: "Browser Fetch Skill"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/Browser_Fetch_Skill
 ---
 
 # Usage
 
 ## Connections
-- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
+- [[Browser Fetch Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/Browser_Fetch_Skill

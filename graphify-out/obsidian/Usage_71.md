@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sad/README.md"
+source_file: "docker/config/hermes/skills/graphify/SKILL.md"
 type: "document"
-community: "SlackAPIProxy"
-location: "L9"
+community: "What You Must Do When Invoked"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/What_You_Must_Do_When_Invoked
 ---
 
 # Usage
 
 ## Connections
-- [[System Audit Documentation_1]] - `contains` [EXTRACTED]
+- [[graphify_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked

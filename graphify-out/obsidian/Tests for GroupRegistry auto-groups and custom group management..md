@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "Action"
 location: "L469"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Action
 ---
 
 # Tests for GroupRegistry auto-groups and custom group management.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGroupRegistry]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/Action

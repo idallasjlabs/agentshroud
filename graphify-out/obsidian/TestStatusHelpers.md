@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "Google Services Setup - Calendar, Contacts, Keep"
+community: "CredentialValidator"
 location: "L184"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Google_Services_Setup_-_Calendar_Contacts_Keep
+  - community/CredentialValidator
 ---
 
 # TestStatusHelpers
 
 ## Connections
-- [[.test_get_all_credentials_status_lists_registered()]] - `method` [EXTRACTED]
-- [[.test_get_credential_status_none_for_unknown()]] - `method` [EXTRACTED]
-- [[.test_health_score_empty_is_perfect()]] - `method` [EXTRACTED]
+- [[dot-test_get_all_credentials_status_lists_registered()]] - `method` [EXTRACTED]
+- [[dot-test_get_credential_status_none_for_unknown()]] - `method` [EXTRACTED]
+- [[dot-test_health_score_empty_is_perfect()]] - `method` [EXTRACTED]
 - [[CredentialInfo]] - `uses` [INFERRED]
 - [[CredentialValidator]] - `uses` [INFERRED]
 - [[KeyRotationConfig_1]] - `uses` [INFERRED]
@@ -22,4 +22,4 @@ tags:
 - [[RotationStatus]] - `uses` [INFERRED]
 - [[test_key_rotation_internals.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Google_Services_Setup_-_Calendar_Contacts_Keep
+#graphify/code #graphify/INFERRED #community/CredentialValidator

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md"
 type: "document"
-community: "archive_old_events()"
+community: "First Time Setup"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/archive_old_events
+  - community/First_Time_Setup
 ---
 
 # Troubleshooting Matrix.md
@@ -19,6 +19,6 @@ tags:
 - [[Startup Errors_1]] - `references` [EXTRACTED]
 - [[prompt_guard.py]] - `references` [INFERRED]
 - [[store.py]] - `references` [INFERRED]
-- [[troubleshooting]] - `contains` [EXTRACTED]
+- [[troubleshooting_23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/archive_old_events
+#graphify/document #graphify/EXTRACTED #community/First_Time_Setup

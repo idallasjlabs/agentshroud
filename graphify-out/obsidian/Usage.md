@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/graphify/SKILL.md"
+source_file: ".agents/skills/i-sec/README.md"
 type: "document"
-community: "pick_latest_stable()"
+community: "Security Review (SEC)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pick_latest_stable
+  - community/Security_Review_SEC
 ---
 
 # Usage
 
 ## Connections
-- [[graphify]] - `contains` [EXTRACTED]
+- [[Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pick_latest_stable
+#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC

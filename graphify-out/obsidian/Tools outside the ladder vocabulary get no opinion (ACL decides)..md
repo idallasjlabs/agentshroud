@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "rationale"
-community: "MemoryIntegrityMonitor"
+community: "TrustConfig"
 location: "L254"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/TrustConfig
 ---
 
 # Tools outside the ladder vocabulary get no opinion (ACL decides).
 
 ## Connections
-- [[.test_unknown_tool_returns_none()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_unknown_tool_returns_none()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/rationale #graphify/EXTRACTED #community/TrustConfig

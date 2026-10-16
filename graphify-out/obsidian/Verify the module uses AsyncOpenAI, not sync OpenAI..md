@@ -1,17 +1,17 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "rationale"
-community: "server.py"
+community: "chatbot/main.py"
 location: "L199"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/serverpy
+  - community/chatbot/mainpy
 ---
 
 # Verify the module uses AsyncOpenAI, not sync OpenAI.
 
 ## Connections
-- [[.test_uses_async_openai_client()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_uses_async_openai_client()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/serverpy
+#graphify/rationale #graphify/EXTRACTED #community/chatbot/mainpy

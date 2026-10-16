@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/TAILSCALE_SETUP.md"
+source_file: "docs/planning/redteam/00-information-disclosure.md"
 type: "document"
-community: "pipeline.py — Security Pipeline"
-location: "L67"
+community: "Add information filtering to prevent agent self-disclosure"
+location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pipelinepy__Security_Pipeline
+  - community/Add_information_filtering_to_prevent_agent_self-disclosure
 ---
 
 # Verification
 
 ## Connections
-- [[Tailscale Access to OpenClaw Control UI]] - `contains` [EXTRACTED]
+- [[Add information filtering to prevent agent self-disclosure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline
+#graphify/document #graphify/EXTRACTED #community/Add_information_filtering_to_prevent_agent_self-disclosure

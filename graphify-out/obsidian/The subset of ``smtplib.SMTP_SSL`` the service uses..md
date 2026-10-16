@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/email_service.py"
 type: "rationale"
-community: "RateLimiter"
+community: "GatewayEmailService"
 location: "L36"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/GatewayEmailService
 ---
 
 # The subset of ``smtplib.SMTP_SSL`` the service uses.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SmtpLike]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RateLimiter
+#graphify/rationale #graphify/EXTRACTED #community/GatewayEmailService

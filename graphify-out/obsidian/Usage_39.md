@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-vulcan/README.md"
+source_file: "docker/config/openclaw/skills/i-mc/README.md"
 type: "document"
-community: "DNSFilterConfig"
+community: "GSDE&G Development Master Checklist (MC)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/GSDEG_Development_Master_Checklist_MC
 ---
 
 # Usage
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_MC

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-production/README.md"
+source_file: "docker/config/openclaw/skills/i-athena/README.md"
 type: "document"
-community: "_w()"
+community: "Athena — Knowledge Distiller"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_w
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Usage
 
 ## Connections
-- [[incident-response]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_w
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

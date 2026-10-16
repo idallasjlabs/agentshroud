@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mm/SKILL.md"
 type: "document"
-community: "iCloud Services"
+community: "Skill: Mindmap Architect (MM)"
 location: "L177"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # Use Case Patterns
@@ -19,4 +19,4 @@ tags:
 - [[Project Planning Map_2]] - `contains` [EXTRACTED]
 - [[Skill Mindmap Architect (MM)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

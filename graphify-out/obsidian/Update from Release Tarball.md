@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/updating.md"
 type: "document"
-community: "Google Calendar & Contacts - Quick Setup"
+community: "Update AgentShroud"
 location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Google_Calendar__Contacts_-_Quick_Setup
+  - community/Update_AgentShroud
 ---
 
 # Update from Release Tarball
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Update AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Google_Calendar__Contacts_-_Quick_Setup
+#graphify/document #graphify/EXTRACTED #community/Update_AgentShroud

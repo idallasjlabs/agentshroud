@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec/README.md"
+source_file: "docker/config/hermes/skills/i-ti/README.md"
 type: "document"
-community: "TestDashboardWSToken"
+community: "Technical Illustrator (i-ti)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestDashboardWSToken
+  - community/Technical_Illustrator_i-ti
 ---
 
 # Usage
 
 ## Connections
-- [[Security Review (SEC)_2]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (TI)]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestDashboardWSToken
+#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_i-ti

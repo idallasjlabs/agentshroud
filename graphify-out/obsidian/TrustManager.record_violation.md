@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "TestTrivySummary"
+community: "TrustManager._update_score"
 location: "221"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestTrivySummary
+  - community/TrustManager_update_score
 ---
 
 # TrustManager.record_violation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TrustManager._update_score]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestTrivySummary
+#graphify/code #graphify/EXTRACTED #community/TrustManager_update_score

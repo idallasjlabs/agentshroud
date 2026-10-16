@@ -1,17 +1,21 @@
 ---
-source_file: "docker/bot-capabilities.md"
+source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "Credential Isolation — Gateway op-proxy (ACTIVE)"
-location: "L211"
+community: "GitHub Copilot CLI Setup Guide"
+location: "L381"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Credential_Isolation__Gateway_op-proxy_ACTIVE
+  - community/GitHub_Copilot_CLI_Setup_Guide
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Credential Management - 1Password Integration]] - `contains` [EXTRACTED]
+- [[Agent Not Found]] - `contains` [EXTRACTED]
+- [[Authentication Issues]] - `contains` [EXTRACTED]
+- [[Configuration Not Loading]] - `contains` [EXTRACTED]
+- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
+- [[Path Permission Denied]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Credential_Isolation__Gateway_op-proxy_ACTIVE
+#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide

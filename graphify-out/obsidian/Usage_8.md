@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-cicd/README.md"
+source_file: ".agents/skills/i-data/README.md"
 type: "document"
-community: "_FakeRBAC"
+community: "Data Validation (DATA-VAL)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/Data_Validation_DATA-VAL
 ---
 
 # Usage
 
 ## Connections
-- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
+- [[Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/document #graphify/EXTRACTED #community/Data_Validation_DATA-VAL

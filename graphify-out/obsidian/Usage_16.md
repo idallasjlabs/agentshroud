@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mac/README.md"
+source_file: "docker/config/hermes/skills/i-aws/README.md"
 type: "document"
-community: "hermes/skills/i-browser/browse.js"
+community: "AWS Cloud Management & FinOps"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-browser/browsejs
+  - community/AWS_Cloud_Management__FinOps
 ---
 
 # Usage
 
 ## Connections
-- [[macOS System Administrator (MAC)]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-browser/browsejs
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps

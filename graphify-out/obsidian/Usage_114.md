@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-offense/README.md"
+source_file: ".agents/skills/i-ti/README.md"
 type: "document"
-community: "TestScoreVulnerabilityManagement"
+community: "Technical Illustrator (i-ti)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestScoreVulnerabilityManagement
+  - community/Technical_Illustrator_i-ti
 ---
 
 # Usage
 
 ## Connections
-- [[Red Team Adversarial Tester (SEC-OFFENSE)_2]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestScoreVulnerabilityManagement
+#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_i-ti

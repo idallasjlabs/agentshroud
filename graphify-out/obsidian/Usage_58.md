@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mc/README.md"
+source_file: ".agents/skills/i-qa/README.md"
 type: "document"
-community: "SlackAPIProxy"
+community: "Production Safety Checklist (SKILL)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # Usage
 
 ## Connections
-- [[GSDE&G Development Master Checklist (MC)_1]] - `contains` [EXTRACTED]
+- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

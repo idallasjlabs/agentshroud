@@ -1,21 +1,22 @@
 ---
-source_file: "docker/QUICKSTART.md"
+source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "discover_upstream_versions.py"
-location: "L232"
+community: "Troubleshooting"
+location: "L1683"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/discover_upstream_versionspy
+  - community/Troubleshooting
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[API Key Error]] - `contains` [EXTRACTED]
-- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
-- [[Container Won't Start]] - `contains` [EXTRACTED]
-- [[Gateway Returns 401 Unauthorized]] - `contains` [EXTRACTED]
-- [[OpenClaw Not Responding]] - `contains` [EXTRACTED]
+- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]] - `contains` [EXTRACTED]
+- [[Docker Permission Denied]] - `contains` [EXTRACTED]
+- [[High Temperature]] - `contains` [EXTRACTED]
+- [[Out of Memory]] - `contains` [EXTRACTED]
+- [[SSH Connection Refused]] - `contains` [EXTRACTED]
+- [[Slow Builds]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/discover_upstream_versionspy
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting

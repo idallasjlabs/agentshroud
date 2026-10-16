@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auto_remediate_cves.py"
 type: "rationale"
-community: "PHASE_3A_3B_IMPLEMENTATION.md"
+community: "plan_remediation"
 location: "L1"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PHASE_3A_3B_IMPLEMENTATIONmd
+  - community/plan_remediation
 ---
 
 # Tests for scripts/auto_remediate_cves.py — automated CVE remediation planning.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_auto_remediate_cves.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PHASE_3A_3B_IMPLEMENTATIONmd
+#graphify/rationale #graphify/EXTRACTED #community/plan_remediation

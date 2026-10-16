@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "document"
-community: "AgentShroud Security Verification (13-check driv"
+community: "dns_filter.py"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Verification_13-check_driv
+  - community/dns_filterpy
 ---
 
 # Threat Model
 
 ## Connections
-- [[falco_monitor.py_2]] - `contains` [EXTRACTED]
+- [[dns_filter.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Verification_13-check_driv
+#graphify/document #graphify/EXTRACTED #community/dns_filterpy

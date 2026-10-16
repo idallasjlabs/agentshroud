@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "rationale"
-community: "rbac_config.py"
+community: "ResourceGuard"
 location: "L11"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/rbac_configpy
+  - community/ResourceGuard
 ---
 
 # Verify resource check methods return False (deny) on exception.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestResourceGuardFailClosed]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/rbac_configpy
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

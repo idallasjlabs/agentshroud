@@ -1,21 +1,24 @@
 ---
-source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/README.md"
+source_file: "skills/openclaw/trello/SKILL.md"
 type: "document"
-community: "_is_op_reference_allowed()"
-location: "L58"
+community: "Usage"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_is_op_reference_allowed
+  - community/Usage
 ---
 
 # Usage
 
 ## Connections
-- [[1. Create a parent panel]] - `contains` [EXTRACTED]
-- [[2. Initialise]] - `contains` [EXTRACTED]
-- [[3. Set an emotion]] - `contains` [EXTRACTED]
-- [[4. Reposition]] - `contains` [EXTRACTED]
-- [[LVGL KAWAII FACE]] - `contains` [EXTRACTED]
+- [[Add a comment to a card]] - `contains` [EXTRACTED]
+- [[Archive a card]] - `contains` [EXTRACTED]
+- [[Create a card]] - `contains` [EXTRACTED]
+- [[List boards]] - `contains` [EXTRACTED]
+- [[List cards in a list]] - `contains` [EXTRACTED]
+- [[List lists in a board]] - `contains` [EXTRACTED]
+- [[Move a card to another list]] - `contains` [EXTRACTED]
+- [[Trello Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_is_op_reference_allowed
+#graphify/document #graphify/EXTRACTED #community/Usage

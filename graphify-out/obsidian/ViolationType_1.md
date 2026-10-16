@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
+community: "TrustConfig"
 location: "L221"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MemoryIntegrityMonitor
+  - community/TrustConfig
 ---
 
 # ViolationType
 
 ## Connections
-- [[.record_violation()]] - `references` [EXTRACTED]
-- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
+- [[dot-record_violation()]] - `references` [EXTRACTED]
+- [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
 - [[TrustLevel]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/INFERRED #community/TrustConfig

@@ -1,13 +1,13 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "append_trend_log.py"
+community: "Voice Gateway FastAPI Server"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/append_trend_logpy
+  - community/Voice_Gateway_FastAPI_Server
 ---
 
 # Voice Gateway FastAPI Server
 
-#graphify/code #graphify/EXTRACTED #community/append_trend_logpy
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_FastAPI_Server

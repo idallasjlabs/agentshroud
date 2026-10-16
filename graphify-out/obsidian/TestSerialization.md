@@ -1,22 +1,20 @@
 ---
-source_file: "gateway/tests/test_delegation.py"
+source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "make_event()"
-location: "L192"
+community: "UserSessionManager"
+location: "L178"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/make_event
+  - graphify/EXTRACTED
+  - community/UserSessionManager
 ---
 
 # TestSerialization
 
 ## Connections
-- [[.test_delegation_to_dict_and_back()]] - `method` [EXTRACTED]
-- [[Delegation]] - `uses` [INFERRED]
-- [[DelegationError]] - `uses` [INFERRED]
-- [[DelegationManager]] - `uses` [INFERRED]
-- [[DelegationPrivilege]] - `uses` [INFERRED]
-- [[test_delegation.py]] - `contains` [EXTRACTED]
+- [[dot-test_session_to_dict_and_back()]] - `method` [EXTRACTED]
+- [[UserSession]] - `uses` [INFERRED]
+- [[UserSessionManager]] - `uses` [INFERRED]
+- [[test_session_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

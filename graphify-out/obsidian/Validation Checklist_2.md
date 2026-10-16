@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tw/SKILL.md"
+source_file: ".agents/skills/i-mm/SKILL.md"
 type: "document"
-community: "TestCollaboratorPersistence"
-location: "L231"
+community: "Skill: Mindmap Architect (MM)"
+location: "L320"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestCollaboratorPersistence
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # Validation Checklist
 
 ## Connections
-- [[→ {site site1, test_mode True, output_prefix _testsite1}]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestCollaboratorPersistence
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

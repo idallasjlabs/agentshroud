@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_output_schema.py"
 type: "rationale"
-community: "hermes/skills/i-cr/SKILL.md"
+community: "OutputSchemaEnforcer"
 location: "L83"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/hermes/skills/i-cr/SKILLmd
+  - community/OutputSchemaEnforcer
 ---
 
 # Unknown schema names fall back to 'default'.
 
 ## Connections
-- [[.test_default_schema_used_when_unknown()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_schema_used_when_unknown()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd
+#graphify/rationale #graphify/EXTRACTED #community/OutputSchemaEnforcer

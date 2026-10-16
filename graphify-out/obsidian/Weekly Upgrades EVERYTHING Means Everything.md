@@ -1,11 +1,11 @@
 ---
 source_file: "CLAUDE.md"
 type: "rationale"
-community: "Slack Channel Setup"
+community: "sunday-upgrade-apply.sh"
 tags:
   - graphify/rationale
-  - graphify/INFERRED
-  - community/Slack_Channel_Setup
+  - graphify/EXTRACTED
+  - community/sunday-upgrade-applysh
 ---
 
 # Weekly Upgrades: EVERYTHING Means Everything
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud CLAUDE.md operating rules]] - `references` [EXTRACTED]
 - [[gatewaysecurityagent_cve_registry.py GHSA registry]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Slack_Channel_Setup
+#graphify/rationale #graphify/EXTRACTED #community/sunday-upgrade-applysh

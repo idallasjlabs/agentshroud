@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
 type: "document"
-community: "_mock_dir_with_files()"
+community: "web_content_scanner.py"
 location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_mock_dir_with_files
+  - community/web_content_scannerpy
 ---
 
 # WebContentScanner._scan_zero_width(content, result)
 
 ## Connections
-- [[Function Details_17]] - `contains` [EXTRACTED]
+- [[Function Details_26]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_mock_dir_with_files
+#graphify/document #graphify/EXTRACTED #community/web_content_scannerpy

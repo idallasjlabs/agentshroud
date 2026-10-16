@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-daedalus/README.md"
+source_file: ".agents/skills/i-hermes/README.md"
 type: "document"
-community: "DNSFilterConfig"
+community: "Hermes — Podcast Production Orchestrator"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/Hermes__Podcast_Production_Orchestrator
 ---
 
 # Usage
 
 ## Connections
-- [[Daedalus — Concept Illustrator]] - `contains` [EXTRACTED]
+- [[Hermes — Podcast Production Orchestrator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/Hermes__Podcast_Production_Orchestrator

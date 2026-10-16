@@ -1,23 +1,17 @@
 ---
-source_file: "docs/ssh-security-review.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
 type: "document"
-community: "Atlas — Curriculum Architect"
-location: "L5"
+community: "EgressFilter"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect
+  - community/EgressFilter
 ---
 
 # Threat Model
 
 ## Connections
-- [[1. Command Injection]] - `contains` [EXTRACTED]
-- [[2. Host Spoofing  Man-in-the-Middle]] - `contains` [EXTRACTED]
-- [[3. Credential Theft]] - `contains` [EXTRACTED]
-- [[4. Privilege Escalation]] - `contains` [EXTRACTED]
-- [[6. Audit Log Tampering  PII Leakage]] - `contains` [EXTRACTED]
-- [[D - Denial of Service]] - `contains` [EXTRACTED]
-- [[SSH Security Review]] - `contains` [EXTRACTED]
+- [[EgressFilter_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect
+#graphify/document #graphify/EXTRACTED #community/EgressFilter

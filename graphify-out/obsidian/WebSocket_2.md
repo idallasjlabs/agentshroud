@@ -1,31 +1,19 @@
 ---
-source_file: "gateway/ingest_api/main.py"
+source_file: "voice_gateway/server.py"
 type: "code"
-community: "SSHProxy"
-location: "L4758"
+community: "server.py"
+location: "L425"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/SSHProxy
+  - graphify/EXTRACTED
+  - community/serverpy
 ---
 
 # WebSocket
 
 ## Connections
-- [[Action_1]] - `uses` [INFERRED]
-- [[ApprovalMode]] - `uses` [INFERRED]
-- [[ApprovalRequest_3]] - `uses` [INFERRED]
-- [[AuditExportConfig_1]] - `uses` [INFERRED]
-- [[AuditExporter]] - `uses` [INFERRED]
-- [[LedgerEntry_1]] - `uses` [INFERRED]
-- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[SSHExecRequest_1]] - `uses` [INFERRED]
-- [[SSHExecResponse]] - `uses` [INFERRED]
-- [[SSHWriteFileRequest_1]] - `uses` [INFERRED]
-- [[SSHWriteFileResponse]] - `uses` [INFERRED]
-- [[slack_ws_relay()]] - `references` [EXTRACTED]
+- [[_keepalive()]] - `references` [EXTRACTED]
+- [[_send_state()]] - `references` [EXTRACTED]
+- [[voice_endpoint()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/serverpy

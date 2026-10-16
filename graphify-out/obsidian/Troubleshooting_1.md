@@ -1,22 +1,20 @@
 ---
-source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docker/scripts/README.md"
 type: "document"
-community: "Telegram & Gmail Integration Guide"
-location: "L160"
+community: "Troubleshooting"
+location: "L247"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram__Gmail_Integration_Guide
+  - community/Troubleshooting
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AWS Token expired (SSO)]] - `contains` [EXTRACTED]
-- [[AWS Unable to locate credentials]] - `contains` [EXTRACTED]
-- [[Atlassian OAuth flow failed]] - `contains` [EXTRACTED]
-- [[GitHub Bad credentials]] - `contains` [EXTRACTED]
-- [[GitHub Docker image not found]] - `contains` [EXTRACTED]
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
+- [[Missing auth for API providers]] - `contains` [EXTRACTED]
+- [[Container unhealthy]] - `contains` [EXTRACTED]
+- [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
+- [[Telegram bot not responding]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram__Gmail_Integration_Guide
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting

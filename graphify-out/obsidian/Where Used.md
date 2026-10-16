@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
+source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "archive_old_events()"
-location: "L19"
+community: "Pydantic"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/archive_old_events
+  - community/Pydantic
 ---
 
 # Where Used
 
 ## Connections
-- [[aiosqlite_1]] - `contains` [EXTRACTED]
+- [[Pydantic]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/archive_old_events
+#graphify/document #graphify/EXTRACTED #community/Pydantic

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/reviews/phase-review-2026-03-03.md"
+source_file: "docs/setup/IMESSAGE_STATUS.md"
 type: "document"
-community: "SecureBrowser"
-location: "L28"
+community: "iMessage Integration Status"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/iMessage_Integration_Status
 ---
 
 # What This Means
 
 ## Connections
-- [[1. Accomplishments This Phase (Feb 25 – Mar 3)]] - `contains` [EXTRACTED]
+- [[iMessage Integration Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecureBrowser
+#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Status

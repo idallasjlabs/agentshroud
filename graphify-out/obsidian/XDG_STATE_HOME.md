@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/start.sh"
 type: "code"
-community: "MockValidator"
+community: "start.sh"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MockValidator
+  - community/startsh
 ---
 
 # XDG_STATE_HOME
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[start.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MockValidator
+#graphify/code #graphify/EXTRACTED #community/startsh

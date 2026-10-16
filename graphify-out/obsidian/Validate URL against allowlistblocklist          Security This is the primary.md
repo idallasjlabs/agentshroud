@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "KeyRotationManager"
+community: "SecureBrowser"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/SecureBrowser
 ---
 
 # Validate URL against allowlist/blocklist          Security: This is the primary
 
 ## Connections
-- [[._validate_url()]] - `rationale_for` [EXTRACTED]
+- [[dot-_validate_url()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

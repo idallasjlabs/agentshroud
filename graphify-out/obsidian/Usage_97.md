@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mac/README.md"
+source_file: ".agents/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "sunday-upgrade.sh"
+community: "MCP AWS Profile Configuration README"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sunday-upgradesh
+  - community/MCP_AWS_Profile_Configuration_README
 ---
 
 # Usage
 
 ## Connections
-- [[macOS System Administrator (MAC)_2]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sunday-upgradesh
+#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_README

@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "EgressPolicy"
+community: "DataLedger"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressPolicy
+  - community/DataLedger
 ---
 
 # TestTamperDetection
 
 ## Connections
-- [[.test_delete_entry_removes_it()]] - `method` [EXTRACTED]
-- [[.test_delete_nonexistent_returns_false()]] - `method` [EXTRACTED]
-- [[.test_entry_retrieval_by_id()]] - `method` [EXTRACTED]
-- [[.test_nonexistent_entry_returns_none()]] - `method` [EXTRACTED]
+- [[dot-test_delete_entry_removes_it()]] - `method` [EXTRACTED]
+- [[dot-test_delete_nonexistent_returns_false()]] - `method` [EXTRACTED]
+- [[dot-test_entry_retrieval_by_id()]] - `method` [EXTRACTED]
+- [[dot-test_nonexistent_entry_returns_none()]] - `method` [EXTRACTED]
 - [[DataLedger]] - `uses` [INFERRED]
-- [[LedgerConfig]] - `uses` [INFERRED]
+- [[LedgerConfig_1]] - `uses` [INFERRED]
 - [[Tamper detection at various chain positions.]] - `rationale_for` [EXTRACTED]
 - [[test_audit_chain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressPolicy
+#graphify/code #graphify/EXTRACTED #community/DataLedger

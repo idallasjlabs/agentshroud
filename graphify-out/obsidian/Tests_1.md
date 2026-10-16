@@ -1,17 +1,18 @@
 ---
-source_file: "CHEATSHEET.md"
+source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "document"
-community: "AgentShroud Docker Configuration"
-location: "L375"
+community: "Plan: AgentShroud Security Hardening — Real Agent Containment"
+location: "L191"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Docker_Configuration
+  - community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment
 ---
 
 # Tests
 
 ## Connections
-- [[AgentShroud Operations Cheat Sheet]] - `contains` [EXTRACTED]
+- [[P4 Wire MCP Proxy]] - `contains` [EXTRACTED]
+- [[P5 Wire SecurityPipeline to forward]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration
+#graphify/document #graphify/EXTRACTED #community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment

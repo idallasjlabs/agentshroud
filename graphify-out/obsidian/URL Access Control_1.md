@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "What Does OpenClaw Actually Need to Write?"
+community: "SecureBrowser Skill"
 location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_Does_OpenClaw_Actually_Need_to_Write
+  - community/SecureBrowser_Skill
 ---
 
 # URL Access Control
 
 ## Connections
-- [[Security Model_1]] - `contains` [EXTRACTED]
+- [[Security Model]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

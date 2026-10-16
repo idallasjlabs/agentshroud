@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "test_llm_proxy_failover.py"
+community: "AlertDispatcher"
 location: "L553"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxy_failoverpy
+  - community/AlertDispatcher
 ---
 
 # Writing to /tmp should be allowed.
 
 ## Connections
-- [[.test_write_to_tmp_allowed()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_write_to_tmp_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_failoverpy
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

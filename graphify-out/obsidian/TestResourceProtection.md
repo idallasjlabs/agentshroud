@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "lifespan.py"
+community: "ResourceGuard"
 location: "L1030"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/lifespanpy
+  - community/ResourceGuard
 ---
 
 # TestResourceProtection
 
 ## Connections
-- [[.test_cpu_limit_check()]] - `method` [EXTRACTED]
-- [[.test_disk_write_limit()]] - `method` [EXTRACTED]
-- [[.test_memory_limit_check()]] - `method` [EXTRACTED]
-- [[.test_prompt_guard_large_input()]] - `method` [EXTRACTED]
-- [[.test_resource_guard_init()]] - `method` [EXTRACTED]
-- [[.test_session_rate_limit()]] - `method` [EXTRACTED]
-- [[.test_subagent_monitor_loaded()]] - `method` [EXTRACTED]
-- [[.test_usage_stats()]] - `method` [EXTRACTED]
+- [[dot-test_cpu_limit_check()]] - `method` [EXTRACTED]
+- [[dot-test_disk_write_limit()]] - `method` [EXTRACTED]
+- [[dot-test_memory_limit_check()]] - `method` [EXTRACTED]
+- [[dot-test_prompt_guard_large_input()]] - `method` [EXTRACTED]
+- [[dot-test_resource_guard_init()]] - `method` [EXTRACTED]
+- [[dot-test_session_rate_limit()]] - `method` [EXTRACTED]
+- [[dot-test_subagent_monitor_loaded()]] - `method` [EXTRACTED]
+- [[dot-test_usage_stats()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ConfusedDeputyError]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
@@ -38,11 +38,11 @@ tags:
 - [[IsolationStatus]] - `uses` [INFERRED]
 - [[KeyVault]] - `uses` [INFERRED]
 - [[KeyVaultConfig]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MetadataGuard]] - `uses` [INFERRED]
 - [[NetworkValidator]] - `uses` [INFERRED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[PKCEViolation]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[RedirectMismatch]] - `uses` [INFERRED]
@@ -53,7 +53,7 @@ tags:
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test resource limits and DoS prevention.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/lifespanpy
+#graphify/code #graphify/INFERRED #community/ResourceGuard

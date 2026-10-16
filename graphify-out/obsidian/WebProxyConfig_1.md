@@ -1,20 +1,16 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: ""
 type: "code"
-community: "ToolResultSanitizer"
-location: "L155"
+community: "WebContentScanner"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ToolResultSanitizer
+  - graphify/EXTRACTED
+  - community/WebContentScanner
 ---
 
 # WebProxyConfig
 
 ## Connections
-- [[.__init__()_44]] - `references` [EXTRACTED]
-- [[URLAnalyzer]] - `uses` [INFERRED]
-- [[WebContentScanner]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[dot-__init__()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

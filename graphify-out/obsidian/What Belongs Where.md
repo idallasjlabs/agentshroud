@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-tw/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
 type: "document"
-community: "TestCollaboratorPersistence"
+community: "→ {\"site\": \"site1\", \"test_mode\": True, \"output_prefix\": \"_test/site1/\"}"
 location: "L218"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestCollaboratorPersistence
+  - community/_site_site1_test_mode_True_output_prefix__test/site1/
 ---
 
 # What Belongs Where
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Writing Style Rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestCollaboratorPersistence
+#graphify/document #graphify/EXTRACTED #community/_site_site1_test_mode_True_output_prefix__test/site1/

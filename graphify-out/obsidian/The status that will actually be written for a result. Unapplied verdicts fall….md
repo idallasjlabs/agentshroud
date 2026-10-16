@@ -2,7 +2,7 @@
 source_file: "scripts/triage-cve-mitigations.py"
 type: "rationale"
 community: "triage-cve-mitigations.py"
-location: "L847"
+location: "L943"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

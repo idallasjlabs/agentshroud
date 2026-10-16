@@ -1,23 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/SKILL.md"
+source_file: ".agents/skills/i-atlas/README.md"
 type: "document"
-community: "EgressTelegramNotifier"
-location: "L55"
+community: "Atlas — Curriculum Architect"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressTelegramNotifier
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Usage
 
 ## Connections
-- [[Browser — Secure Browser Automation_1]] - `contains` [EXTRACTED]
-- [[Click Element]] - `contains` [EXTRACTED]
-- [[Extract Data]] - `contains` [EXTRACTED]
-- [[Fetch JavaScript-Heavy Page (Node.js)]] - `contains` [EXTRACTED]
-- [[Fill Form]] - `contains` [EXTRACTED]
-- [[Navigate to URL]] - `contains` [EXTRACTED]
-- [[Take Screenshot]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressTelegramNotifier
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

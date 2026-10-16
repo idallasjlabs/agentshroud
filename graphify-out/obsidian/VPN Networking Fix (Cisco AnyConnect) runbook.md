@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/colima-docker-guide.md"
 type: "rationale"
-community: "OpenClaw Setup Guide - agentshroud.ai Bot"
+community: "ADR-006: Multi-Runtime Container Support"
 location: "L446-505"
 tags:
   - graphify/rationale
-  - graphify/INFERRED
-  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+  - graphify/EXTRACTED
+  - community/ADR-006_Multi-Runtime_Container_Support
 ---
 
 # VPN Networking Fix (Cisco AnyConnect) runbook
@@ -15,4 +15,4 @@ tags:
 - [[Cisco AnyConnect VPN Networking Fix (col0 vmnet route)]] - `semantically_similar_to` [INFERRED]
 - [[Colima & Docker Operations Guide]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/INFERRED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+#graphify/rationale #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support

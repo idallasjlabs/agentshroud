@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "TestNormalizeForSpeech"
+community: "Request"
 location: "L101"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestNormalizeForSpeech
+  - community/Request
 ---
 
 # User's decision on a pending approval request
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ApprovalDecision]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestNormalizeForSpeech
+#graphify/rationale #graphify/EXTRACTED #community/Request

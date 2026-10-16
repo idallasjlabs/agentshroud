@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "aiosqlite"
+community: "ToolResultSanitizer"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/aiosqlite
+  - community/ToolResultSanitizer
 ---
 
 # TestToolResultSanitizerConfig
 
 ## Connections
-- [[.test_custom_config()_3]] - `method` [EXTRACTED]
-- [[.test_default_config()_7]] - `method` [EXTRACTED]
+- [[dot-test_custom_config()_1]] - `method` [EXTRACTED]
+- [[dot-test_default_config()_3]] - `method` [EXTRACTED]
 - [[Test ToolResultSanitizerConfig.]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
+- [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
 - [[test_tool_result_sanitizer_enhanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/aiosqlite
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

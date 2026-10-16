@@ -1,20 +1,23 @@
 ---
-source_file: "docs/setup/DEVICE_PAIRING.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Browser — Secure Browser Automation (SKILL)"
-location: "L333"
+community: "AgentShroud Setup Guide"
+location: "L787"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_SKILL
+  - community/AgentShroud_Setup_Guide
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
-- [[Problem pairing required but no pending requests]] - `contains` [EXTRACTED]
-- [[Problem Approved device still can't connect]] - `contains` [EXTRACTED]
-- [[Problem Too many pending requests]] - `contains` [EXTRACTED]
+- [[1Password Authentication Failed]] - `contains` [EXTRACTED]
+- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
+- [[Container Unhealthy_1]] - `contains` [EXTRACTED]
+- [[Gmail Connection Issues]] - `contains` [EXTRACTED]
+- [[Performance Issues_1]] - `contains` [EXTRACTED]
+- [[Port Already in Use_1]] - `contains` [EXTRACTED]
+- [[Tests Failing_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

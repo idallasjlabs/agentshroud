@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "GSDE&G Development Master Checklist"
+community: "MultiTurnTracker"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist
+  - community/MultiTurnTracker
 ---
 
 # ThresholdConfig
 
 ## Connections
-- [[.__init__()_100]] - `calls` [EXTRACTED]
+- [[dot-__init__()_139]] - `calls` [EXTRACTED]
 - [[Configuration for alert thresholds.]] - `rationale_for` [EXTRACTED]
 - [[multi_turn_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist
+#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

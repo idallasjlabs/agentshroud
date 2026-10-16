@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TestPathIsolationManager"
+community: "._proxy_request_impl"
 location: "L2908"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/_proxy_request_impl
 ---
 
 # Thin wrapper: sets per-request bot identity in contextvars so local replies
 
 ## Connections
-- [[.proxy_request()]] - `rationale_for` [EXTRACTED]
+- [[dot-proxy_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/rationale #graphify/EXTRACTED #community/_proxy_request_impl

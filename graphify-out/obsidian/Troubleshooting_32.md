@@ -1,20 +1,22 @@
 ---
-source_file: "docs/setup/TELEGRAM_SETUP.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "asb"
-location: "L115"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
+location: "L160"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/asb
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Bot doesn't respond]] - `contains` [EXTRACTED]
-- [[Cannot find bot]] - `contains` [EXTRACTED]
-- [[Messages delayed]] - `contains` [EXTRACTED]
-- [[Telegram Bot Setup for OpenClaw]] - `contains` [EXTRACTED]
+- [[AWS Token expired (SSO)_2]] - `contains` [EXTRACTED]
+- [[AWS Unable to locate credentials_2]] - `contains` [EXTRACTED]
+- [[Atlassian OAuth flow failed_2]] - `contains` [EXTRACTED]
+- [[GitHub Bad credentials_2]] - `contains` [EXTRACTED]
+- [[GitHub Docker image not found_2]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/asb
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

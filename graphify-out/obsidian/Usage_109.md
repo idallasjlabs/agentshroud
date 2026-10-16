@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ps/README.md"
+source_file: ".agents/skills/i-sav/README.md"
 type: "document"
-community: "TestProcScans"
-location: "L10"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestProcScans
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Usage
 
 ## Connections
-- [[Production Safety Checklist (PROD-SAFETY)_1]] - `contains` [EXTRACTED]
+- [[System Audit Vault_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestProcScans
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

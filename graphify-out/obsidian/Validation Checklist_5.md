@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
+source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "_make_tm()"
+community: ".agents/skills/i-tw/SKILL.md"
 location: "L231"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_make_tm
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # Validation Checklist
 
 ## Connections
-- [[→ {site site1, test_mode True, output_prefix _testsite1}_1]] - `contains` [EXTRACTED]
+- [[→ {site site1, test_mode True, output_prefix _testsite1}_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_make_tm
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

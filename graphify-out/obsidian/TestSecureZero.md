@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "ConsentFramework"
+community: "AgentRegistry"
 location: "L766"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ConsentFramework
+  - community/AgentRegistry
 ---
 
 # TestSecureZero
 
 ## Connections
-- [[.test_encrypt_decrypt_still_works_after_zeroing()]] - `method` [EXTRACTED]
-- [[.test_key_rotation_with_zeroing()]] - `method` [EXTRACTED]
-- [[.test_secure_zero_bytearray()]] - `method` [EXTRACTED]
-- [[.test_secure_zero_empty()]] - `method` [EXTRACTED]
+- [[dot-test_encrypt_decrypt_still_works_after_zeroing()]] - `method` [EXTRACTED]
+- [[dot-test_key_rotation_with_zeroing()]] - `method` [EXTRACTED]
+- [[dot-test_secure_zero_bytearray()]] - `method` [EXTRACTED]
+- [[dot-test_secure_zero_empty()]] - `method` [EXTRACTED]
 - [[AgentRegistry]] - `uses` [INFERRED]
-- [[ContainerConfig]] - `uses` [INFERRED]
+- [[ContainerConfig_1]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
 - [[DriftDetector]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
+- [[EgressFilter_2]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[EncryptedStore]] - `uses` [INFERRED]
@@ -33,7 +33,7 @@ tags:
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ConsentFramework
+#graphify/code #graphify/INFERRED #community/AgentRegistry

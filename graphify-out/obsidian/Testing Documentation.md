@@ -1,19 +1,19 @@
 ---
 source_file: "docs/testing/README.md"
 type: "document"
-community: "AWS Cloud Management & FinOps"
+community: "Testing Documentation"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps
+  - community/Testing_Documentation
 ---
 
 # Testing Documentation
 
 ## Connections
-- [[Current Status_10]] - `contains` [EXTRACTED]
-- [[Planned Documents_6]] - `contains` [EXTRACTED]
-- [[README_126]] - `contains` [EXTRACTED]
+- [[Current Status_3]] - `contains` [EXTRACTED]
+- [[Planned Documents_3]] - `contains` [EXTRACTED]
+- [[testingREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps
+#graphify/document #graphify/EXTRACTED #community/Testing_Documentation

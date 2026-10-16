@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Update AgentShroud"
+community: "Integration Guide"
 location: "L342"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Update_AgentShroud
+  - community/Integration_Guide
 ---
 
 # Webhook Alerts
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Monitoring System Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Update_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Integration_Guide

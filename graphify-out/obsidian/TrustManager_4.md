@@ -1,26 +1,26 @@
 ---
-source_file: "gateway/tests/test_progressive_trust_integration.py"
+source_file: "gateway/tests/test_a2a_trust_scoring.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
-location: "L54"
+community: "A2APolicyEngine"
+location: "L93"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MemoryIntegrityMonitor
+  - community/A2APolicyEngine
 ---
 
 # TrustManager
 
 ## Connections
-- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
-- [[PromotionThreshold]] - `uses` [INFERRED]
-- [[ToolACLEnforcer]] - `uses` [INFERRED]
-- [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel]] - `uses` [INFERRED]
-- [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[A2APolicyConfig_1]] - `uses` [INFERRED]
+- [[A2APolicyEngine_1]] - `uses` [INFERRED]
+- [[A2AProxy]] - `uses` [INFERRED]
+- [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
-- [[_make_tm()]] - `references` [EXTRACTED]
-- [[_set_state()]] - `references` [EXTRACTED]
+- [[test_generic_denial_does_not_record_a2a_specific_violation_types()]] - `references` [EXTRACTED]
+- [[test_ssrf_callback_rejection_triggers_severe_demotion()]] - `references` [EXTRACTED]
+- [[test_task_ownership_violation_records_a2a_violation_type()]] - `references` [EXTRACTED]
+- [[trust_manager()_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/INFERRED #community/A2APolicyEngine

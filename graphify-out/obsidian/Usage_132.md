@@ -1,17 +1,18 @@
 ---
-source_file: "src/interfaces/README.md"
+source_file: "docker/config/hermes/skills/i-cicd/README.md"
 type: "document"
-community: "v0.9.0 — Apple Messages Integration"
-location: "L7"
+community: "CI/CD Pipeline Advisor (README)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/v090__Apple_Messages_Integration
+  - community/CI/CD_Pipeline_Advisor_README
 ---
 
 # Usage
 
 ## Connections
-- [[Control Center]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/v090__Apple_Messages_Integration
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README

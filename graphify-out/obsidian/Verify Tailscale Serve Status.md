@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/TAILSCALE_COMMANDS.md"
 type: "document"
-community: "ledger row (id, timestamp, source, hashes, sanit"
+community: "Tailscale Remote Access Setup"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ledger_row_id_timestamp_source_hashes_sanit
+  - community/Tailscale_Remote_Access_Setup
 ---
 
 # Verify Tailscale Serve Status
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ledger_row_id_timestamp_source_hashes_sanit
+#graphify/document #graphify/EXTRACTED #community/Tailscale_Remote_Access_Setup

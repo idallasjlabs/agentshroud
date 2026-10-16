@@ -1,23 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-qa/README.md"
 type: "document"
-community: "AgentShroud v0.7.0 Blue Team Security Audit Repo"
-location: "L55"
+community: "Quality Assurance (QA)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Blue_Team_Security_Audit_Repo
+  - community/Quality_Assurance_QA
 ---
 
 # Usage
 
 ## Connections
-- [[Browser — Secure Browser Automation_3]] - `contains` [EXTRACTED]
-- [[Click Element_1]] - `contains` [EXTRACTED]
-- [[Extract Data_1]] - `contains` [EXTRACTED]
-- [[Fetch JavaScript-Heavy Page (Node.js)_1]] - `contains` [EXTRACTED]
-- [[Fill Form_1]] - `contains` [EXTRACTED]
-- [[Navigate to URL_1]] - `contains` [EXTRACTED]
-- [[Take Screenshot_1]] - `contains` [EXTRACTED]
+- [[Quality Assurance (QA)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Blue_Team_Security_Audit_Repo
+#graphify/document #graphify/EXTRACTED #community/Quality_Assurance_QA

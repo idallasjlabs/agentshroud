@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/httpx.md"
+source_file: "docs/vault/05 - Dependencies/fastapi.md"
 type: "document"
-community: "TestFileSandbox"
-location: "L19"
+community: "All Dependencies.md"
+location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestFileSandbox
+  - community/All_Dependenciesmd
 ---
 
 # Where Used
 
 ## Connections
-- [[httpx_1]] - `contains` [EXTRACTED]
+- [[FastAPI_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFileSandbox
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

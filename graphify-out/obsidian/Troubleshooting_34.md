@@ -1,17 +1,20 @@
 ---
-source_file: "shortcuts/README.md"
+source_file: "docs/setup/TELEGRAM_SETUP.md"
 type: "document"
-community: "ADR-001: Transparent Proxy vs Agent Modification"
-location: "L291"
+community: "Telegram Bot Setup for OpenClaw"
+location: "L115"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-001_Transparent_Proxy_vs_Agent_Modification
+  - community/Telegram_Bot_Setup_for_OpenClaw
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[iOS  macOS Shortcuts — Relay to AgentShroud]] - `contains` [EXTRACTED]
+- [[Bot doesn't respond]] - `contains` [EXTRACTED]
+- [[Cannot find bot]] - `contains` [EXTRACTED]
+- [[Messages delayed]] - `contains` [EXTRACTED]
+- [[Telegram Bot Setup for OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_vs_Agent_Modification
+#graphify/document #graphify/EXTRACTED #community/Telegram_Bot_Setup_for_OpenClaw

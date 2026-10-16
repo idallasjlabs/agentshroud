@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "TestCheckCommandExecution"
+community: "AgentShroud™ CVE Mitigation Matrix"
 location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestCheckCommandExecution
+  - community/AgentShroud_CVE_Mitigation_Matrix
 ---
 
 # Three-status taxonomy (SCRUM-101, 2026-07-14)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Infrastructure — Container Image Vulnerabilities]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestCheckCommandExecution
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix

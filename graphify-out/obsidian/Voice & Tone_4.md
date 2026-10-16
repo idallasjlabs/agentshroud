@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
+source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Skill: Branding Specialist (BS)"
-location: "L201"
+community: "AgentShroud Brand Guidelines"
+location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Branding_Specialist_BS
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Voice & Tone
 
 ## Connections
-- [[Writing Style Rules_2]] - `contains` [EXTRACTED]
+- [[Brand Personality]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Branding_Specialist_BS
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

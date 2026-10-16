@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pr/README.md"
+source_file: ".agents/skills/i-pr/README.md"
 type: "document"
-community: "TestComputeBotScorecard"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestComputeBotScorecard
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Usage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Pull Request Generator (PR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestComputeBotScorecard
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

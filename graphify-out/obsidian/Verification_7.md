@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/05-credential-isolation.md"
+source_file: "docs/planning/redteam/06-outbound-info-filter.md"
 type: "document"
-community: "wazuh_client.py"
-location: "L285"
+community: "Implement gateway-level outbound information filtering module"
+location: "L357"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/wazuh_clientpy
+  - community/Implement_gateway-level_outbound_information_filtering_module
 ---
 
 # Verification
 
 ## Connections
-- [[Remove secret mounts from agent container and implement transparent credential injection]] - `contains` [EXTRACTED]
+- [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/wazuh_clientpy
+#graphify/document #graphify/EXTRACTED #community/Implement_gateway-level_outbound_information_filtering_module

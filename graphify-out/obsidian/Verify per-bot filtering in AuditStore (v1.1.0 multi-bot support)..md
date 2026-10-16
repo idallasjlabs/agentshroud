@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "rationale"
-community: "load_config()"
+community: "AuditStore"
 location: "L300"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/load_config
+  - community/AuditStore
 ---
 
 # Verify per-bot filtering in AuditStore (v1.1.0 multi-bot support).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAuditStoreBotId]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/load_config
+#graphify/rationale #graphify/EXTRACTED #community/AuditStore

@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "TrustManager"
+community: "ToolChainAnalyzer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/ToolChainAnalyzer
 ---
 
 # ToolChainAnalyzer._load_default_patterns
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ToolChainAnalyzer]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

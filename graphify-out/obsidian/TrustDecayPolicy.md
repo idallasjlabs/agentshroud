@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "TrustConfig"
+community: "CrossBotTrustLedger"
 location: "L82"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TrustConfig
+  - community/CrossBotTrustLedger
 ---
 
 # TrustDecayPolicy
 
 ## Connections
-- [[.__init__()_68]] - `references` [EXTRACTED]
-- [[.__post_init__()_3]] - `method` [EXTRACTED]
-- [[.build_full_mesh()]] - `references` [EXTRACTED]
+- [[dot-__init__()_96]] - `references` [EXTRACTED]
+- [[dot-__post_init__()_4]] - `method` [EXTRACTED]
+- [[dot-build_full_mesh()]] - `references` [EXTRACTED]
 - [[Configuration for how incidents decay peer trust scores.      Attributes]] - `rationale_for` [EXTRACTED]
-- [[CrossBotTrustLedger_1]] - `uses` [INFERRED]
+- [[CrossBotTrustLedger]] - `uses` [INFERRED]
 - [[TestBotIncidentSeverity]] - `uses` [INFERRED]
 - [[TestBuildFullMesh]] - `uses` [INFERRED]
 - [[TestCrossBotTrustLedgerConstruction]] - `uses` [INFERRED]
@@ -26,8 +26,8 @@ tags:
 - [[TestTrustDecayPolicyValidation]] - `uses` [INFERRED]
 - [[TrustDecayPolicy_1]] - `uses` [INFERRED]
 - [[TrustManager_3]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
 - [[test_cross_bot_trust_ledger.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TrustConfig
+#graphify/code #graphify/INFERRED #community/CrossBotTrustLedger

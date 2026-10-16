@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_pipeline.py"
 type: "rationale"
-community: "HTTPConnectProxy"
+community: "CompetitiveIntelReport"
 location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/CompetitiveIntelReport
 ---
 
 # Tests for Pydantic model validation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCompetitiveIntelReportSchema]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/rationale #graphify/EXTRACTED #community/CompetitiveIntelReport

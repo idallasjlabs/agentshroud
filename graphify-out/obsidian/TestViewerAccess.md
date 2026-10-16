@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "Role"
 location: "L140"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TelegramAPIProxy
+  - community/Role
 ---
 
 # TestViewerAccess
 
 ## Connections
-- [[.test_viewer_blocked_from_admin_tool()]] - `method` [EXTRACTED]
-- [[.test_viewer_blocked_from_private_tool()]] - `method` [EXTRACTED]
+- [[dot-test_viewer_blocked_from_admin_tool()]] - `method` [EXTRACTED]
+- [[dot-test_viewer_blocked_from_private_tool()]] - `method` [EXTRACTED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
+- [[Role_96]] - `uses` [INFERRED]
 - [[TeamsConfig]] - `uses` [INFERRED]
 - [[ToolACLConfig]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TelegramAPIProxy
+#graphify/code #graphify/INFERRED #community/Role

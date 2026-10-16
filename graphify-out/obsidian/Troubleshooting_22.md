@@ -1,20 +1,17 @@
 ---
-source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
+source_file: "docs/setup-telegram.md"
 type: "document"
-community: "AgentShroud Security Value Proposition"
-location: "L277"
+community: "Slack Channel Setup"
+location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition
+  - community/Slack_Channel_Setup
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
-- [[killswitch.sh doesn't confirm]] - `contains` [EXTRACTED]
-- [[scan.sh reports missing OpenSCAP]] - `contains` [EXTRACTED]
-- [[verify-security.sh fails]] - `contains` [EXTRACTED]
+- [[Telegram Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition
+#graphify/document #graphify/EXTRACTED #community/Slack_Channel_Setup

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "Role"
 location: "L294"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/Role
 ---
 
 # Tools not in the rate-limit map should always pass.
 
 ## Connections
-- [[.test_unlisted_tool_always_passes()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_unlisted_tool_always_passes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/Role

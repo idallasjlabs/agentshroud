@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "rationale"
-community: "LLMProxy"
+community: "GitGuard"
 location: "L152"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/GitGuard
 ---
 
 # The /llm-proxy/stats endpoint must exist.
 
 ## Connections
-- [[.test_llm_stats_endpoint_is_defined()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_llm_stats_endpoint_is_defined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LLMProxy
+#graphify/rationale #graphify/EXTRACTED #community/GitGuard

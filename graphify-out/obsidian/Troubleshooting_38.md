@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/QUICK_REFERENCE.md"
+source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Community 787"
-location: "L80"
+community: "Credential Management - 1Password Integration"
+location: "L211"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_787
+  - community/Credential_Management_-_1Password_Integration
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Quick Reference Card]] - `contains` [EXTRACTED]
+- [[Credential Management - 1Password Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_787
+#graphify/document #graphify/EXTRACTED #community/Credential_Management_-_1Password_Integration

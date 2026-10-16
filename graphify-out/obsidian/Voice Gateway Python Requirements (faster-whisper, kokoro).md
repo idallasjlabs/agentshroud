@@ -1,11 +1,11 @@
 ---
 source_file: "voice_gateway/requirements.txt"
 type: "code"
-community: "AgentShroud Typography Guidelines"
+community: "Voice Gateway Service (STT/TTS WebSocket Bridge to Governed Path)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Typography_Guidelines
+  - community/Voice_Gateway_Service_STT/TTS_WebSocket_Bridge_to_Governed_Path
 ---
 
 # Voice Gateway Python Requirements (faster-whisper, kokoro)
@@ -14,4 +14,4 @@ tags:
 - [[Kokoro TTS Engine]] - `references` [EXTRACTED]
 - [[faster-whisper STT Engine (Local, CPU-friendly)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Typography_Guidelines
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Service_STT/TTS_WebSocket_Bridge_to_Governed_Path

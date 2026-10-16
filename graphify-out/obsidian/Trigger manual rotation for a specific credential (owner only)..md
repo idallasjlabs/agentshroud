@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "OpenClaw Bot Container"
+community: "management.py"
 location: "L1002"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_Container
+  - community/managementpy
 ---
 
 # Trigger manual rotation for a specific credential (owner only).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[rotate_credential()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OpenClaw_Bot_Container
+#graphify/rationale #graphify/EXTRACTED #community/managementpy

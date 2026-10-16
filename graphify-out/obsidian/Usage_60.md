@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docker/config/hermes/skills/i-qa/README.md"
 type: "document"
-community: "_any_detector_fires()"
-location: "L18"
+community: "Production Safety Checklist (SKILL)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_any_detector_fires
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # Usage
 
 ## Connections
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
+- [[Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
+- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_any_detector_fires
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

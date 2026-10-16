@@ -1,11 +1,11 @@
 ---
 source_file: "docs/flows/data-flow-diagram.md"
 type: "concept"
-community: "Discord (Via `message`)"
+community: "AgentShroud Data Flow Diagrams (doc)"
 tags:
   - graphify/concept
-  - graphify/INFERRED
-  - community/Discord_Via_message
+  - graphify/EXTRACTED
+  - community/AgentShroud_Data_Flow_Diagrams_doc
 ---
 
 # Trust Manager (Level 1 security component)
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Data Flow Diagrams (doc)]] - `references` [EXTRACTED]
 - [[Diagram 11 Trust Boundary]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Discord_Via_message
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Data_Flow_Diagrams_doc

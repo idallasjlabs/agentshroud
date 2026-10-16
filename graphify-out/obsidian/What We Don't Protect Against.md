@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "Pre-Deployment Checklist"
+community: "SecureBrowser Security Policies"
 location: "L98"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist
+  - community/SecureBrowser_Security_Policies
 ---
 
 # What We Don't Protect Against
 
 ## Connections
-- [[Threat Model_28]] - `contains` [EXTRACTED]
+- [[Threat Model_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Security_Policies

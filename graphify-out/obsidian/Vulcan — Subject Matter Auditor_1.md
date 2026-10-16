@@ -1,24 +1,21 @@
 ---
-source_file: ".agents/skills/i-vulcan/SKILL.md"
+source_file: ".agents/skills/i-vulcan/README.md"
 type: "document"
-community: "TestStrangerRateLimit"
-location: "L6"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestStrangerRateLimit
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Vulcan — Subject Matter Auditor
 
 ## Connections
-- [[Input Requirements_9]] - `contains` [EXTRACTED]
-- [[Output Format_12]] - `contains` [EXTRACTED]
-- [[Persona_7]] - `contains` [EXTRACTED]
-- [[Quality Checklist_8]] - `contains` [EXTRACTED]
-- [[Role_39]] - `contains` [EXTRACTED]
-- [[SKILL_63]] - `contains` [EXTRACTED]
-- [[System Prompt_7]] - `contains` [EXTRACTED]
-- [[User Prompt Template_3]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-vulcanREADME]] - `contains` [EXTRACTED]
+- [[Purpose_132]] - `contains` [EXTRACTED]
+- [[Related Skills_104]] - `contains` [EXTRACTED]
+- [[Usage_112]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestStrangerRateLimit
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

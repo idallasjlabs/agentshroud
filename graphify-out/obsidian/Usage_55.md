@@ -1,17 +1,24 @@
 ---
-source_file: "docker/config/hermes/skills/i-hermes/README.md"
+source_file: "docker/README.md"
 type: "document"
-community: "SlackAPIProxy"
-location: "L10"
+community: "AgentShroud Docker Configuration"
+location: "L274"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # Usage
 
 ## Connections
-- [[Hermes — Podcast Production Orchestrator_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
+- [[Check Status]] - `contains` [EXTRACTED]
+- [[Hermes  HCI]] - `contains` [EXTRACTED]
+- [[Port Reference]] - `contains` [EXTRACTED]
+- [[Start the Stack]] - `contains` [EXTRACTED]
+- [[Stop the Stack]] - `contains` [EXTRACTED]
+- [[Test Chat]] - `contains` [EXTRACTED]
+- [[View Logs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

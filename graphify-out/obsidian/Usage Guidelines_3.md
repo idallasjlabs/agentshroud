@@ -1,18 +1,19 @@
 ---
-source_file: "docs/project/legal/TRADEMARK.md"
+source_file: "branding/typography/typography.md"
 type: "document"
-community: "Message Composition with MML (MIME Meta Language"
-location: "L23"
+community: "AgentShroud Typography Guidelines"
+location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Message_Composition_with_MML_MIME_Meta_Language
+  - community/AgentShroud_Typography_Guidelines
 ---
 
 # Usage Guidelines
 
 ## Connections
-- [[TRADEMARK]] - `references` [EXTRACTED]
-- [[Trademark Notice_3]] - `contains` [EXTRACTED]
+- [[AgentShroud Typography Guidelines]] - `contains` [EXTRACTED]
+- [[Do's_1]] - `contains` [EXTRACTED]
+- [[Don'ts_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Message_Composition_with_MML_MIME_Meta_Language
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Typography_Guidelines

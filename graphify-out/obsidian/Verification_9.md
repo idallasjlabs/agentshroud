@@ -1,23 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
+source_file: "docs/planning/redteam/03-session-isolation.md"
 type: "document"
-community: "model_usage.py"
-location: "L65"
+community: "Implement per-user session isolation using Telegram user ID"
+location: "L228"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/model_usagepy
+  - community/Implement_per-user_session_isolation_using_Telegram_user_ID
 ---
 
 # Verification
 
 ## Connections
-- [[FINAL Network Lockdown Activation]] - `contains` [EXTRACTED]
-- [[P0 Fix 54 Pre-Existing Test Failures ✅ DONE — PR 23 open]] - `contains` [EXTRACTED]
-- [[P1 HTTP CONNECT Proxy + Domain Allowlist]] - `contains` [EXTRACTED]
-- [[P2 Credential Isolation (op-proxy)]] - `contains` [EXTRACTED]
-- [[P3 Channel Ownership — Telegram + Email]] - `contains` [EXTRACTED]
-- [[P4 Wire MCP Proxy]] - `contains` [EXTRACTED]
-- [[P5 Wire SecurityPipeline to forward]] - `contains` [EXTRACTED]
+- [[Implement per-user session isolation using Telegram user ID]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/model_usagepy
+#graphify/document #graphify/EXTRACTED #community/Implement_per-user_session_isolation_using_Telegram_user_ID

@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-gg/README.md"
+source_file: "docker/config/hermes/skills/i-tdd/README.md"
 type: "document"
-community: "1. Accomplishments This Phase — Delivered Securi"
+community: "Test-Driven Development README"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1_Accomplishments_This_Phase__Delivered_Securi
+  - community/Test-Driven_Development_README
 ---
 
 # Usage
 
 ## Connections
-- [[Git Workflow Guardian (GIT-GUARD)_2]] - `contains` [EXTRACTED]
+- [[Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
+- [[Test-Driven Development README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1_Accomplishments_This_Phase__Delivered_Securi
+#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README

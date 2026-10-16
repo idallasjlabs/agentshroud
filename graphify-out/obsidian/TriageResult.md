@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "EncryptedStore"
-location: "L719"
+community: "triage-cve-mitigations.py"
+location: "L815"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/triage-cve-mitigationspy
 ---
 
 # TriageResult
@@ -15,11 +15,11 @@ tags:
 - [[The verdict for one advisory.]] - `rationale_for` [EXTRACTED]
 - [[final_status()]] - `references` [EXTRACTED]
 - [[render_gap_report()]] - `references` [EXTRACTED]
-- [[rewrite_registry_text()_1]] - `references` [EXTRACTED]
+- [[rewrite_registry_text()]] - `references` [EXTRACTED]
 - [[summarize()]] - `references` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 - [[triage_agent()]] - `references` [EXTRACTED]
 - [[triage_agent_full()]] - `references` [EXTRACTED]
-- [[triage_entry()]] - `references` [EXTRACTED]
+- [[triage_entry()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EncryptedStore
+#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy

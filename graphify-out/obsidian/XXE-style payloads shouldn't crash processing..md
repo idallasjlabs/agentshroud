@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "lifespan.py"
+community: "AlertDispatcher"
 location: "L148"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/AlertDispatcher
 ---
 
 # XXE-style payloads shouldn't crash processing.
 
 ## Connections
-- [[.test_xml_entity_expansion()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_xml_entity_expansion()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-11-trust-boundary.svg"
 type: "concept"
-community: "Turbo Fieldfare (MLX inference backend)"
+community: "AgentShroud Gateway (holds 1Password service account)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Turbo_Fieldfare_MLX_inference_backend
+  - community/AgentShroud_Gateway_holds_1Password_service_account
 ---
 
 # Trust Zone 1 — Gateway (Trusted Enforcer)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Gateway (holds 1Password service account)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Turbo_Fieldfare_MLX_inference_backend
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Gateway_holds_1Password_service_account

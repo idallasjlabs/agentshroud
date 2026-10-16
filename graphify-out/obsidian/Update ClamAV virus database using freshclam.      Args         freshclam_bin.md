@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "rationale"
-community: "test_runtime_engines.py"
+community: "parse_clamscan_output"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_runtime_enginespy
+  - community/parse_clamscan_output
 ---
 
 # Update ClamAV virus database using freshclam.      Args:         freshclam_bin:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[update_virus_db()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_runtime_enginespy
+#graphify/rationale #graphify/EXTRACTED #community/parse_clamscan_output

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "System Audit Vault"
+community: "TestTrivySummary"
 location: "L267"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/System_Audit_Vault
+  - community/TestTrivySummary
 ---
 
 # TestTrivySummary
 
 ## Connections
-- [[.test_clean_when_installed_without_report()]] - `method` [EXTRACTED]
-- [[.test_not_run_without_binary_or_report()]] - `method` [EXTRACTED]
-- [[.test_timestamp_falls_back_to_file_mtime()]] - `method` [EXTRACTED]
+- [[dot-test_clean_when_installed_without_report()]] - `method` [EXTRACTED]
+- [[dot-test_not_run_without_binary_or_report()]] - `method` [EXTRACTED]
+- [[dot-test_timestamp_falls_back_to_file_mtime()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/System_Audit_Vault
+#graphify/code #graphify/EXTRACTED #community/TestTrivySummary

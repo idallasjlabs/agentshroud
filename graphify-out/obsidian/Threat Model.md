@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "TestConfigValidation"
+community: "AgentShroud Security Architecture"
 location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/AgentShroud_Security_Architecture
 ---
 
 # Threat Model
@@ -16,4 +16,4 @@ tags:
 - [[What AgentShroud Does]] - `contains` [EXTRACTED]
 - [[What We're Protecting Against]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

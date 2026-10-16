@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-data/SKILL.md"
 type: "document"
-community: "TestPatternDetection"
+community: "Skill: Data Validation (DATA-VAL)"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestPatternDetection
+  - community/Skill_Data_Validation_DATA-VAL
 ---
 
 # Validation Layers
@@ -18,4 +18,4 @@ tags:
 - [[4. Cross-Site Comparison]] - `contains` [EXTRACTED]
 - [[Skill Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestPatternDetection
+#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL

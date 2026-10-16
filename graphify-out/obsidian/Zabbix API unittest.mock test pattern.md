@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/i-tdd/SKILL.md"
 type: "concept"
-community: "SCRUM-110: restart recovery must preserve origin"
+community: "Zabbix API unittest.mock test pattern"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/SCRUM-110_restart_recovery_must_preserve_origin
+  - community/Zabbix_API_unittestmock_test_pattern
 ---
 
 # Zabbix API unittest.mock test pattern
 
-#graphify/concept #graphify/EXTRACTED #community/SCRUM-110_restart_recovery_must_preserve_origin
+#graphify/concept #graphify/EXTRACTED #community/Zabbix_API_unittestmock_test_pattern

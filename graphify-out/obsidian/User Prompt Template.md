@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-athena/SKILL.md"
+source_file: ".agents/skills/i-socrates/SKILL.md"
 type: "document"
-community: "AgentShroud Consolidated Issues Report"
-location: "L131"
+community: "Socrates — Dialogue Architect"
+location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Consolidated_Issues_Report
+  - community/Socrates__Dialogue_Architect
 ---
 
 # User Prompt Template
 
 ## Connections
-- [[description of what this does]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Consolidated_Issues_Report
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

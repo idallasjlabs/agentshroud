@@ -1,17 +1,17 @@
 ---
-source_file: "docs/user-guide.md"
+source_file: "skills/openclaw/session-logs/SKILL.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM)"
-location: "L48"
+community: "Common Queries"
+location: "L104"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM
+  - community/Common_Queries
 ---
 
 # Tips
 
 ## Connections
-- [[Interacting via Telegram]] - `contains` [EXTRACTED]
+- [[session-logs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM
+#graphify/document #graphify/EXTRACTED #community/Common_Queries

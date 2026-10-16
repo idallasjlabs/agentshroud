@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/README.md"
+source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
 type: "document"
-community: "_handle()"
-location: "L10"
+community: "AGENTSHROUD_MODE"
+location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_handle
+  - community/AGENTSHROUD_MODE
 ---
 
 # Usage
 
 ## Connections
-- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
-- [[MCP AWS Profile Configuration README]] - `contains` [EXTRACTED]
+- [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_handle
+#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_MODE

@@ -1,17 +1,23 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-doctor/README.md"
+source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "SlackAPIProxy"
-location: "L10"
+community: "Browser — Secure Browser Automation"
+location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Usage
 
 ## Connections
-- [[MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_3]] - `contains` [EXTRACTED]
+- [[Click Element_1]] - `contains` [EXTRACTED]
+- [[Extract Data_1]] - `contains` [EXTRACTED]
+- [[Fetch JavaScript-Heavy Page (Node.js)]] - `contains` [EXTRACTED]
+- [[Fill Form]] - `contains` [EXTRACTED]
+- [[Navigate to URL_1]] - `contains` [EXTRACTED]
+- [[Take Screenshot_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

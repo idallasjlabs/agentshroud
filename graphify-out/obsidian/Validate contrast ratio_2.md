@@ -1,18 +1,18 @@
 ---
 source_file: "docker/config/openclaw/skills/i-bs/SKILL.md"
 type: "document"
-community: "AgentShroud Semgrep SAST Configuration"
+community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements"
 location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Semgrep_SAST_Configuration
+  - community/Required__45_for_text__30_for_UI_elements
 ---
 
 # Validate contrast ratio
 
 ## Connections
-- [[SKILL_137]] - `contains` [EXTRACTED]
-- [[SKILL_142]] - `contains` [EXTRACTED]
+- [[openclawskillsi-bsSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Semgrep_SAST_Configuration
+#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements

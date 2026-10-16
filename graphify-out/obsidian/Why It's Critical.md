@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md"
 type: "document"
-community: "Browser Extension"
+community: "ANTHROPIC_BASE_URL"
 location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Extension
+  - community/ANTHROPIC_BASE_URL
 ---
 
 # Why It's Critical
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ANTHROPIC_BASE_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Extension
+#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL

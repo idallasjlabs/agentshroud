@@ -1,11 +1,11 @@
 ---
 source_file: "docker/docker-compose.agentshroud-bot.trillian.yml"
 type: "document"
-community: "logs.sh"
+community: "upgrade.sh"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/logssh
+  - community/upgradesh
 ---
 
 # Trillian Host Compose Override
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[upgrade.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/logssh
+#graphify/document #graphify/EXTRACTED #community/upgradesh

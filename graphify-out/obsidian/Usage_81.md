@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
+source_file: "docker/config/hermes/skills/i-hermes/README.md"
 type: "document"
-community: "AgentShroud™ v0.8.0 \"Watchtower\" — Complete Feat"
+community: "hermes/skills/i-bs/README.md"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080_Watchtower__Complete_Feat
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Usage
 
 ## Connections
-- [[graphify_2]] - `contains` [EXTRACTED]
+- [[Hermes — Podcast Production Orchestrator_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Complete_Feat
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

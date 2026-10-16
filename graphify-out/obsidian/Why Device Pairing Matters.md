@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Browser — Secure Browser Automation (SKILL)"
+community: "AgentShroud Device Pairing Management"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_SKILL
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # Why Device Pairing Matters
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

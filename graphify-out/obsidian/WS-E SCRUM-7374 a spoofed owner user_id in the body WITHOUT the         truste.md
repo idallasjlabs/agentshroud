@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "ApprovalRequest"
+community: "_PipelineCaptor"
 location: "L548"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/_PipelineCaptor
 ---
 
 # WS-E SCRUM-73/74: a spoofed owner user_id in the body WITHOUT the         truste
 
 ## Connections
-- [[.test_owner_id_without_trusted_header_does_not_elevate_trust()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_owner_id_without_trusted_header_does_not_elevate_trust()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/rationale #graphify/EXTRACTED #community/_PipelineCaptor

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Mode A — Single task"
+community: "TestOutboundScanUnification"
 location: "L5289"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task
+  - community/TestOutboundScanUnification
 ---
 
 # Unknown raw tool-call JSON in form bodies is quarantined for audit.          Tig
 
 ## Connections
-- [[.test_form_unknown_tool_call_quarantined()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_form_unknown_tool_call_quarantined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Mode_A__Single_task
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundScanUnification

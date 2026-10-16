@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_api_contract.py"
 type: "rationale"
-community: "AgentShroud macOS App Icon (1024x1024, Rounded S"
+community: "TestOpenAPIContract"
 location: "L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_S
+  - community/TestOpenAPIContract
 ---
 
 # The committed gateway/openapi.json snapshot must match the live schema.
 
 ## Connections
-- [[.test_openapi_snapshot_matches_live_schema()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_openapi_snapshot_matches_live_schema()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_S
+#graphify/rationale #graphify/EXTRACTED #community/TestOpenAPIContract

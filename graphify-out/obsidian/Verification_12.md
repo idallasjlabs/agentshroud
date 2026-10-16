@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/IMESSAGE_FIX.md"
+source_file: "docs/planning/redteam/01-enforce-by-default.md"
 type: "document"
-community: "TestBenchmarkRegression"
-location: "L69"
+community: "Flip core security modules from monitor to enforce mode"
+location: "L130"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestBenchmarkRegression
+  - community/Flip_core_security_modules_from_monitor_to_enforce_mode
 ---
 
 # Verification
 
 ## Connections
-- [[iMessage Integration Fix - Using imsg + imessage-exporter]] - `contains` [EXTRACTED]
+- [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestBenchmarkRegression
+#graphify/document #graphify/EXTRACTED #community/Flip_core_security_modules_from_monitor_to_enforce_mode

@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "Skill: Data Validation (DATA-VAL)"
+community: "Severity"
 location: "L358"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Skill_Data_Validation_DATA-VAL
+  - graphify/EXTRACTED
+  - community/Severity
 ---
 
 # TestReloadIntegration
 
 ## Connections
-- [[.client()_6]] - `method` [EXTRACTED]
-- [[.test_reload_allows_clean_skill()]] - `method` [EXTRACTED]
-- [[.test_reload_blocks_dangerous_skill()]] - `method` [EXTRACTED]
-- [[.test_reload_fails_closed_on_unreadable_file()]] - `method` [EXTRACTED]
+- [[dot-client()_1]] - `method` [EXTRACTED]
+- [[dot-test_reload_allows_clean_skill()]] - `method` [EXTRACTED]
+- [[dot-test_reload_blocks_dangerous_skill()]] - `method` [EXTRACTED]
+- [[dot-test_reload_fails_closed_on_unreadable_file()]] - `method` [EXTRACTED]
 - [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_2]] - `uses` [INFERRED]
+- [[ScanResult_4]] - `uses` [INFERRED]
 - [[Severity]] - `uses` [INFERRED]
-- [[SkillGuard]] - `uses` [INFERRED]
+- [[SkillGuard_1]] - `uses` [INFERRED]
 - [[SkillScanError]] - `uses` [INFERRED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Skill_Data_Validation_DATA-VAL
+#graphify/code #graphify/EXTRACTED #community/Severity

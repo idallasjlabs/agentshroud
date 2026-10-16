@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "SSH Proxy Threat Model (6 threats)"
+community: "Workflow (follow in order)"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSH_Proxy_Threat_Model_6_threats
+  - community/Workflow_follow_in_order
 ---
 
 # Workflow (follow in order)
@@ -23,4 +23,4 @@ tags:
 - [[8) Verify and report]] - `contains` [EXTRACTED]
 - [[OpenClaw Host Hardening]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SSH_Proxy_Threat_Model_6_threats
+#graphify/document #graphify/EXTRACTED #community/Workflow_follow_in_order

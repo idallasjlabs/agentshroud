@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "TelegramGatewayRelay"
+community: "E - Elevation of Privilege"
 location: "L221"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TelegramGatewayRelay
+  - community/E_-_Elevation_of_Privilege
 ---
 
 # Threat: Container Escape
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[E - Elevation of Privilege]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TelegramGatewayRelay
+#graphify/document #graphify/EXTRACTED #community/E_-_Elevation_of_Privilege

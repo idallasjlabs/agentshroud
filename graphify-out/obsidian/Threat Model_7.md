@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "TestKeyRotationManager"
+community: "encrypted_store.py"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestKeyRotationManager
+  - community/encrypted_storepy
 ---
 
 # Threat Model
 
 ## Connections
-- [[consent_framework.py_2]] - `contains` [EXTRACTED]
+- [[encrypted_store.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestKeyRotationManager
+#graphify/document #graphify/EXTRACTED #community/encrypted_storepy

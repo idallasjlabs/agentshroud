@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-vulcan/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
 type: "document"
-community: "TestStrangerRateLimit"
-location: "L108"
+community: "Atlas — Curriculum Architect"
+location: "L154"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestStrangerRateLimit
+  - community/Atlas__Curriculum_Architect
 ---
 
 # User Prompt Template
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_1]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestStrangerRateLimit
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

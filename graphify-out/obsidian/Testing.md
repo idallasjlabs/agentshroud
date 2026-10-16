@@ -1,17 +1,17 @@
 ---
-source_file: "CHANGELOG.md"
+source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
 type: "document"
-community: "WebProxy"
-location: "L69"
+community: "Gateway Python Dependencies (`gateway/requirements.txt`)"
+location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/Gateway_Python_Dependencies_gateway/requirementstxt
 ---
 
 # Testing
 
 ## Connections
-- [[1.6.0 (2026-08-28)]] - `contains` [EXTRACTED]
+- [[Gateway Python Dependencies (`gatewayrequirements.txt`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/WebProxy
+#graphify/document #graphify/EXTRACTED #community/Gateway_Python_Dependencies_gateway/requirementstxt

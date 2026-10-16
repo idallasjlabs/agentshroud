@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-icloud/README.md"
+source_file: "docker/config/hermes/skills/i-athena/README.md"
 type: "document"
-community: "Test Coverage Report (AgentShroud v1.3.0)"
+community: "Athena — Knowledge Distiller"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test_Coverage_Report_AgentShroud_v130
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Usage
 
 ## Connections
-- [[iCloud Data Manager (ICLOUD)]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test_Coverage_Report_AgentShroud_v130
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

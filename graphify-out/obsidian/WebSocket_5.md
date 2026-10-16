@@ -1,24 +1,21 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "main.rs"
-location: "L2704"
+community: "Enum"
+location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/mainrs
+  - community/Enum
 ---
 
 # WebSocket
 
 ## Connections
-- [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult]] - `uses` [INFERRED]
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller]] - `uses` [INFERRED]
-- [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
-- [[soc_websocket()]] - `references` [EXTRACTED]
+- [[dot-__init__()_48]] - `references` [EXTRACTED]
+- [[Severity_2]] - `uses` [INFERRED]
+- [[WSEvent]] - `uses` [INFERRED]
+- [[WSEventType]] - `uses` [INFERRED]
+- [[ws_soc_endpoint()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/mainrs
+#graphify/code #graphify/INFERRED #community/Enum

@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "WebProxy"
+community: "Added"
 location: "L903"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/Added
 ---
 
 # [Unreleased] — feat/http-connect-proxy + feat/credential-isolation
@@ -16,8 +16,8 @@ tags:
 - [[Changed]] - `contains` [EXTRACTED]
 - [[Changelog — AgentShroud™]] - `contains` [EXTRACTED]
 - [[Fixed]] - `contains` [EXTRACTED]
-- [[Security_2]] - `contains` [EXTRACTED]
-- [[Summary_1]] - `contains` [EXTRACTED]
-- [[Tests]] - `contains` [EXTRACTED]
+- [[Security_12]] - `contains` [EXTRACTED]
+- [[Summary_27]] - `contains` [EXTRACTED]
+- [[Tests_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/WebProxy
+#graphify/document #graphify/EXTRACTED #community/Added

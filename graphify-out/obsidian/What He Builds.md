@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "check_upstream_cves()"
+community: "AgentShroud™ — Project Knowledge Base"
 location: "L147"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/check_upstream_cves
+  - community/AgentShroud__Project_Knowledge_Base
 ---
 
 # What He Builds
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[About the Creator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/check_upstream_cves
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Project_Knowledge_Base

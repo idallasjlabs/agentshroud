@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-oracle/README.md"
+source_file: ".agents/skills/i-cr/README.md"
 type: "document"
-community: "iot_button_register_cb()"
+community: "Project Management (README)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iot_button_register_cb
+  - community/Project_Management_README
 ---
 
 # Usage
 
 ## Connections
-- [[Oracle — Feedback Analyst_2]] - `contains` [EXTRACTED]
+- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iot_button_register_cb
+#graphify/document #graphify/EXTRACTED #community/Project_Management_README

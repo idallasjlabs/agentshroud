@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "test_security_fixes.py"
 location: "L380"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/test_security_fixespy
 ---
 
 # Version strings should be consistent across the codebase.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestVersionConsistency]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/test_security_fixespy

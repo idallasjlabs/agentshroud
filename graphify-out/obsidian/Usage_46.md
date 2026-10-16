@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/README.md"
+source_file: "docker/config/openclaw/skills/i-ps/README.md"
 type: "document"
-community: "agentshroud-gateway container (starts first)"
+community: "Production Safety Checklist (PROD-SAFETY)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-gateway_container_starts_first
+  - community/Production_Safety_Checklist_PROD-SAFETY
 ---
 
 # Usage
 
 ## Connections
-- [[Browser — Secure Browser Automation_2]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway_container_starts_first
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_PROD-SAFETY

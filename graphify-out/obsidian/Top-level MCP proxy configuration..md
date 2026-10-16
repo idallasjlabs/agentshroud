@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "DataLedger"
 location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/DataLedger
 ---
 
 # Top-level MCP proxy configuration.
 
 ## Connections
-- [[MCPProxyConfig]] - `rationale_for` [EXTRACTED]
-- [[SSHConfig]] - `rationale_for` [EXTRACTED]
+- [[MCPProxyConfig_3]] - `rationale_for` [EXTRACTED]
+- [[SSHConfig_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/DataLedger

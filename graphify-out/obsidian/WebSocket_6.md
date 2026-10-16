@@ -1,21 +1,24 @@
 ---
-source_file: "gateway/soc/websocket.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "EncryptedStore"
-location: "L29"
+community: "soc/router.py"
+location: "L2704"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EncryptedStore
+  - community/soc/routerpy
 ---
 
 # WebSocket
 
 ## Connections
-- [[.__init__()_132]] - `references` [EXTRACTED]
-- [[Severity_2]] - `uses` [INFERRED]
-- [[WSEvent]] - `uses` [INFERRED]
-- [[WSEventType]] - `uses` [INFERRED]
-- [[ws_soc_endpoint()]] - `references` [EXTRACTED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult_1]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller_1]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLInterface_1]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[soc_websocket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EncryptedStore
+#graphify/code #graphify/INFERRED #community/soc/routerpy

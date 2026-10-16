@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
 type: "document"
-community: "TestBuildCollaboratorSafeInfoResponse"
+community: "The 8D Investigation Process"
 location: "L497"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestBuildCollaboratorSafeInfoResponse
+  - community/The_8D_Investigation_Process
 ---
 
 # XML Configuration File Parsing
@@ -17,4 +17,4 @@ tags:
 - [[What to Extract_1]] - `contains` [EXTRACTED]
 - [[Why This Matters_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestBuildCollaboratorSafeInfoResponse
+#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process

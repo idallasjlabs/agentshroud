@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
 type: "document"
-community: "test_playback_state.c"
+community: "Prompt Injection Blocks"
 location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_playback_statec
+  - community/Prompt_Injection_Blocks
 ---
 
 # Tool Result Injections
 
 ## Connections
-- [[Prompt Injection Blocks_2]] - `contains` [EXTRACTED]
+- [[Prompt Injection Blocks]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_playback_statec
+#graphify/document #graphify/EXTRACTED #community/Prompt_Injection_Blocks

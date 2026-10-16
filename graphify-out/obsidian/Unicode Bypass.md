@@ -1,13 +1,13 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "Hyperedges Rule (max 3/chunk)"
+community: "Unicode Bypass"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Hyperedges_Rule_max_3/chunk
+  - community/Unicode_Bypass
 ---
 
 # Unicode Bypass
 
-#graphify/concept #graphify/EXTRACTED #community/Hyperedges_Rule_max_3/chunk
+#graphify/concept #graphify/EXTRACTED #community/Unicode_Bypass

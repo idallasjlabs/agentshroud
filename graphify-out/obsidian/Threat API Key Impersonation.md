@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "TelegramGatewayRelay"
+community: "STRIDE Threat Analysis"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TelegramGatewayRelay
+  - community/STRIDE_Threat_Analysis
 ---
 
 # Threat: API Key Impersonation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[S - Spoofing Identity]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TelegramGatewayRelay
+#graphify/document #graphify/EXTRACTED #community/STRIDE_Threat_Analysis

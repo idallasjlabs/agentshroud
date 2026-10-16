@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/IMESSAGE_STATUS.md"
+source_file: "docs/planning/reviews/phase-review-2026-03-03.md"
 type: "document"
-community: "check_command()"
-location: "L13"
+community: "AgentShroud Phase Review — 2026-02-23"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/check_command
+  - community/AgentShroud_Phase_Review__2026-02-23
 ---
 
 # What This Means
 
 ## Connections
-- [[iMessage Integration Status]] - `contains` [EXTRACTED]
+- [[1. Accomplishments This Phase (Feb 25 – Mar 3)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/check_command
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23

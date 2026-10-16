@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "rationale"
-community: "_call_agent_stream()"
+community: "CompetitiveIntelReport"
 location: "L223"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_call_agent_stream
+  - community/CompetitiveIntelReport
 ---
 
 # Verify every draft claim; return a report of only verified claims.          Clai
 
 ## Connections
-- [[.verify_report()]] - `rationale_for` [EXTRACTED]
+- [[dot-verify_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_call_agent_stream
+#graphify/rationale #graphify/EXTRACTED #community/CompetitiveIntelReport

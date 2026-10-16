@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "CREDENTIAL-PROTECTION-IMPLEMENTED.md"
+community: "NetworkSecurityFinding"
 location: "L488"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
+  - community/NetworkSecurityFinding
 ---
 
 # Validate a single container's runtime network configuration.
 
 ## Connections
-- [[._validate_container_runtime_config()]] - `rationale_for` [EXTRACTED]
+- [[dot-_validate_container_runtime_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
+#graphify/rationale #graphify/EXTRACTED #community/NetworkSecurityFinding

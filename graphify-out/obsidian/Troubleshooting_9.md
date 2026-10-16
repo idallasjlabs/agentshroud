@@ -1,22 +1,22 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "_any_detector_fires()"
-location: "L160"
+community: "SecureBrowser - Enterprise Secure Browser Automation"
+location: "L317"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_any_detector_fires
+  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AWS Token expired (SSO)_1]] - `contains` [EXTRACTED]
-- [[AWS Unable to locate credentials_1]] - `contains` [EXTRACTED]
-- [[Atlassian OAuth flow failed_1]] - `contains` [EXTRACTED]
-- [[GitHub Bad credentials_1]] - `contains` [EXTRACTED]
-- [[GitHub Docker image not found_1]] - `contains` [EXTRACTED]
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
+- [[Action requires approval but none granted]] - `contains` [EXTRACTED]
+- [[Browser timeout_1]] - `contains` [EXTRACTED]
+- [[CAPTCHA detected_1]] - `contains` [EXTRACTED]
+- [[Rate limit exceeded]] - `contains` [EXTRACTED]
+- [[URL not in allowlist_1]] - `contains` [EXTRACTED]
+- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_any_detector_fires
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automation

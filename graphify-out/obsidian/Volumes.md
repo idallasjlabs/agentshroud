@@ -1,20 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/volumes.md"
+source_file: "docs/vault/03 - Configuration/docker-compose.yml.md"
 type: "document"
-community: "Pre-Deployment Checklist"
-location: "L1"
+community: "Seccomp Profiles"
+location: "L129"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist
+  - community/Seccomp_Profiles
 ---
 
-# volumes.md
+# Volumes
 
 ## Connections
-- [[Docker Volumes]] - `contains` [EXTRACTED]
-- [[agentshroud-bot]] - `references` [EXTRACTED]
-- [[ledger.py_1]] - `references` [INFERRED]
-- [[playwright_1]] - `references` [EXTRACTED]
+- [[docker-compose.yml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist
+#graphify/document #graphify/EXTRACTED #community/Seccomp_Profiles

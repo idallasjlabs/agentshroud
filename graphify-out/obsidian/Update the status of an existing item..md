@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "ApprovalQueueConfig"
 location: "L87"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/ApprovalQueueConfig
 ---
 
 # Update the status of an existing item.
 
 ## Connections
-- [[.update_status()]] - `rationale_for` [EXTRACTED]
+- [[dot-update_status()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "ApprovalRequest"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/ApprovalRequest
 ---
 
 # Timeout handling for approval requests.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestApprovalTimeout]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest

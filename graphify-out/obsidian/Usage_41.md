@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/graphify/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "TestMultipartOutboundPipeline"
+community: "MCP Doctor (MCPM-DOCTOR)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMultipartOutboundPipeline
+  - community/MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Usage
 
 ## Connections
-- [[graphify_1]] - `contains` [EXTRACTED]
+- [[MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMultipartOutboundPipeline
+#graphify/document #graphify/EXTRACTED #community/MCP_Doctor_MCPM-DOCTOR

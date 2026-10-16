@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "face_animation_pause() — freezes canvas redraw t"
+community: "ToolACLEnforcer.get_allowed_tools"
 location: "558"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/face_animation_pause__freezes_canvas_redraw_t
+  - community/ToolACLEnforcerget_allowed_tools
 ---
 
 # ToolACLEnforcer.get_allowed_tools
 
-#graphify/code #graphify/EXTRACTED #community/face_animation_pause__freezes_canvas_redraw_t
+#graphify/code #graphify/EXTRACTED #community/ToolACLEnforcerget_allowed_tools

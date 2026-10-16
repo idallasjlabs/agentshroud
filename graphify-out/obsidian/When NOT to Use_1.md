@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/github/SKILL.md"
+source_file: "skills/openclaw/apple-reminders/SKILL.md"
 type: "document"
-community: "sunday-upgrade.md"
-location: "L46"
+community: "Apple Reminders CLI (remindctl)"
+location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sunday-upgrademd
+  - community/Apple_Reminders_CLI_remindctl
 ---
 
 # When NOT to Use
 
 ## Connections
-- [[GitHub Skill]] - `contains` [EXTRACTED]
+- [[Apple Reminders CLI (remindctl)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sunday-upgrademd
+#graphify/document #graphify/EXTRACTED #community/Apple_Reminders_CLI_remindctl

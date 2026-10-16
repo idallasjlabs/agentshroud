@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-mc/README.md"
+source_file: "docker/config/hermes/skills/i-browser/README.md"
 type: "document"
-community: "SecurityEvent"
+community: "Browser — Secure Browser Automation"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecurityEvent
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Usage
 
 ## Connections
-- [[GSDE&G Development Master Checklist (MC)]] - `contains` [EXTRACTED]
-- [[GSDE&G Development Master Checklist Skill]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecurityEvent
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

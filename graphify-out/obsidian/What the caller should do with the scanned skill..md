@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "rationale"
-community: "Daedalus — Concept Illustrator"
+community: "Recommendation"
 location: "L87"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator
+  - community/Recommendation
 ---
 
 # What the caller should do with the scanned skill.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Recommendation]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator
+#graphify/rationale #graphify/EXTRACTED #community/Recommendation

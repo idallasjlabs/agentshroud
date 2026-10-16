@@ -1,17 +1,23 @@
 ---
-source_file: "docs/planning/redteam/02-human-in-the-loop.md"
+source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "document"
-community: "format_cve_report()"
-location: "L215"
+community: "Plan: AgentShroud Security Hardening — Real Agent Containment"
+location: "L65"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/format_cve_report
+  - community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment
 ---
 
 # Verification
 
 ## Connections
-- [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - `contains` [EXTRACTED]
+- [[FINAL Network Lockdown Activation]] - `contains` [EXTRACTED]
+- [[P0 Fix 54 Pre-Existing Test Failures ✅ DONE — PR 23 open]] - `contains` [EXTRACTED]
+- [[P1 HTTP CONNECT Proxy + Domain Allowlist]] - `contains` [EXTRACTED]
+- [[P2 Credential Isolation (op-proxy)]] - `contains` [EXTRACTED]
+- [[P3 Channel Ownership — Telegram + Email]] - `contains` [EXTRACTED]
+- [[P4 Wire MCP Proxy]] - `contains` [EXTRACTED]
+- [[P5 Wire SecurityPipeline to forward]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/format_cve_report
+#graphify/document #graphify/EXTRACTED #community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment

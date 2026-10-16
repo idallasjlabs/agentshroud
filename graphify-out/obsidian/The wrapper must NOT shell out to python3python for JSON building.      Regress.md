@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "rationale"
-community: "Colima & Docker Operations Guide — AgentShroud"
+community: "test_bots_ssh_exec_wrapper.py"
 location: "L150"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Colima__Docker_Operations_Guide__AgentShroud
+  - community/test_bots_ssh_exec_wrapperpy
 ---
 
 # The wrapper must NOT shell out to python3/python for JSON building.      Regress
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_wrapper_has_no_python_dependency()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Colima__Docker_Operations_Guide__AgentShroud
+#graphify/rationale #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy

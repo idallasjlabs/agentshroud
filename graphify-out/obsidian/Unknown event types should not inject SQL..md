@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "MemoryIntegrityMonitor"
+community: "AgentRegistry"
 location: "L909"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/AgentRegistry
 ---
 
 # Unknown event types should not inject SQL.
 
 ## Connections
-- [[.test_event_type_validation()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_event_type_validation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry

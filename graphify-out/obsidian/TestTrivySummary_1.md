@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "AgentShroud User Guide"
+community: "parse_trivy_output"
 location: "L146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_User_Guide
+  - community/parse_trivy_output
 ---
 
 # TestTrivySummary
 
 ## Connections
-- [[.test_summary_clean()]] - `method` [EXTRACTED]
-- [[.test_summary_critical()]] - `method` [EXTRACTED]
-- [[.test_summary_error()]] - `method` [EXTRACTED]
-- [[.test_summary_top_cves_ids()]] - `method` [EXTRACTED]
-- [[.test_summary_warning_high_only()]] - `method` [EXTRACTED]
+- [[dot-test_summary_clean()_1]] - `method` [EXTRACTED]
+- [[dot-test_summary_critical()]] - `method` [EXTRACTED]
+- [[dot-test_summary_error()]] - `method` [EXTRACTED]
+- [[dot-test_summary_top_cves_ids()]] - `method` [EXTRACTED]
+- [[dot-test_summary_warning_high_only()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_User_Guide
+#graphify/code #graphify/EXTRACTED #community/parse_trivy_output

@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "MCP AWS Profile Configuration README"
+community: "Atlas — Curriculum Architect"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_AWS_Profile_Configuration_README
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Vulcan Subject Matter Auditor Skill
@@ -15,4 +15,4 @@ tags:
 - [[Socrates — Dialogue Architect_6]] - `references` [EXTRACTED]
 - [[Vulcan README]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_README
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mm/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM)"
-location: "L320"
+community: "→ {\"site\": \"site1\", \"test_mode\": True, \"output_prefix\": \"_test/site1/\"}"
+location: "L231"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM
+  - community/_site_site1_test_mode_True_output_prefix__test/site1/
 ---
 
 # Validation Checklist
 
 ## Connections
-- [[Skill Mindmap Architect (MM)]] - `contains` [EXTRACTED]
+- [[→ {site site1, test_mode True, output_prefix _testsite1}]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM
+#graphify/document #graphify/EXTRACTED #community/_site_site1_test_mode_True_output_prefix__test/site1/

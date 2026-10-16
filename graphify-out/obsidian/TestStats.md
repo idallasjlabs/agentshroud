@@ -12,7 +12,7 @@ tags:
 # TestStats
 
 ## Connections
-- [[.test_stats_attributes()]] - `method` [EXTRACTED]
+- [[dot-test_stats_attributes()]] - `method` [EXTRACTED]
 - [[DNSBlocklist]] - `uses` [INFERRED]
 - [[stats() — verify blockedallowlistdenylist counts.]] - `rationale_for` [EXTRACTED]
 - [[test_dns_blocklist.py]] - `contains` [EXTRACTED]

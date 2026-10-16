@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "cli/main.py"
+community: "SubagentMonitor"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/cli/mainpy
+  - community/SubagentMonitor
 ---
 
 # ToolCheckResult
 
 ## Connections
-- [[.check_tool_usage()]] - `references` [EXTRACTED]
+- [[dot-check_tool_usage()]] - `references` [EXTRACTED]
 - [[subagent_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/cli/mainpy
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

@@ -1,25 +1,17 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L498"
+community: "activity_websocket"
+location: "L119"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/TelegramAPIProxy
+  - graphify/EXTRACTED
+  - community/activity_websocket
 ---
 
 # WebSocket
 
 ## Connections
-- [[.connect()]] - `references` [EXTRACTED]
-- [[.disconnect()]] - `references` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
-- [[ApprovalRequest_3]] - `uses` [INFERRED]
-- [[ApprovalStore_1]] - `uses` [INFERRED]
-- [[MFAGuard_2]] - `uses` [INFERRED]
-- [[ToolRiskConfig_1]] - `uses` [INFERRED]
-- [[ToolRiskPolicy_1]] - `uses` [INFERRED]
+- [[approval_websocket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/activity_websocket

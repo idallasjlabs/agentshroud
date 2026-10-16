@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+source_file: ".agents/skills/i-browser/SKILL.md"
 type: "document"
-community: "_sync()"
+community: "10. Troubleshooting"
 location: "L283"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_sync
+  - community/10_Troubleshooting
 ---
 
 # "URL not in allowlist"
 
 ## Connections
-- [[Troubleshooting_11]] - `contains` [EXTRACTED]
+- [[10. Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_sync
+#graphify/document #graphify/EXTRACTED #community/10_Troubleshooting

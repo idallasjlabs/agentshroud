@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "TestOriginAwareAuthorization"
 location: "L364"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/TestOriginAwareAuthorization
 ---
 
 # The core of the CVE class: a side channel claiming to be the owner.          ter
 
 ## Connections
-- [[.test_owner_claim_over_unverified_origin_is_refused_elevation()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_owner_claim_over_unverified_origin_is_refused_elevation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/TestOriginAwareAuthorization

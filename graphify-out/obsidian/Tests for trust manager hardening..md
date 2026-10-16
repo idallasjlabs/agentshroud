@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "ConsentFramework"
+community: "AgentRegistry"
 location: "L888"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/AgentRegistry
 ---
 
 # Tests for trust manager hardening.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustManagerHardened]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ConsentFramework
+#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry

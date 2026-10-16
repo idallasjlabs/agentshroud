@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "TrustManager"
+community: "MiddlewareManager"
 location: "L925"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TrustManager
+  - community/MiddlewareManager
 ---
 
 # ToolTier
 
 ## Connections
-- [[._analyze_request_for_rbac()]] - `references` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
+- [[dot-_analyze_request_for_rbac()]] - `references` [EXTRACTED]
+- [[Action_2]] - `uses` [INFERRED]
 - [[AgentRegistry]] - `uses` [INFERRED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ApprovalHardening]] - `uses` [INFERRED]
@@ -32,7 +32,7 @@ tags:
 - [[GitGuard]] - `uses` [INFERRED]
 - [[KeyRotationManager]] - `uses` [INFERRED]
 - [[KillSwitchMonitor]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
 - [[MemoryLifecycleManager]] - `uses` [INFERRED]
 - [[MemorySecurityConfig]] - `uses` [INFERRED]
@@ -41,12 +41,12 @@ tags:
 - [[NetworkValidator]] - `uses` [INFERRED]
 - [[OAuthSecurityValidator]] - `uses` [INFERRED]
 - [[OutputCanary]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PathIsolationConfig]] - `uses` [INFERRED]
 - [[PathIsolationManager]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
-- [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
+- [[RBACManager_2]] - `uses` [INFERRED]
+- [[Resource_2]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
 - [[SessionManager]] - `uses` [INFERRED]
 - [[SubagentMonitor]] - `uses` [INFERRED]
@@ -62,4 +62,4 @@ tags:
 - [[XMLLeakFilter]] - `uses` [INFERRED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TrustManager
+#graphify/code #graphify/INFERRED #community/MiddlewareManager

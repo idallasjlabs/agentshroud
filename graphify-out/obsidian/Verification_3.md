@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/01-enforce-by-default.md"
+source_file: "docs/setup/TAILSCALE_SETUP.md"
 type: "document"
-community: "AgentShroud Deployment & Troubleshooting Runbook"
-location: "L130"
+community: "OpenClaw Bot Container"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Deployment__Troubleshooting_Runbook
+  - community/OpenClaw_Bot_Container
 ---
 
 # Verification
 
 ## Connections
-- [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
+- [[Tailscale Access to OpenClaw Control UI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment__Troubleshooting_Runbook
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_Container

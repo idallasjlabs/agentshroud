@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
+source_file: "docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md"
 type: "document"
-community: "lvgl_kawaii_face.c"
-location: "L15"
+community: "SOUL"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/lvgl_kawaii_facec
+  - community/SOUL
 ---
 
 # Values
 
 ## Connections
-- [[OPENCLAW_SANDBOX_MODE_1]] - `contains` [EXTRACTED]
+- [[SOUL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/lvgl_kawaii_facec
+#graphify/document #graphify/EXTRACTED #community/SOUL

@@ -1,18 +1,17 @@
 ---
-source_file: "docker/DOCKER-VPN-NETWORKING.md"
+source_file: "docs/governance/BRANCH_PROTECTION.md"
 type: "document"
-community: "TestFullAccessMiddlewareBypass"
-location: "L93"
+community: "GitHub Branch Protection — `main`"
+location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestFullAccessMiddlewareBypass
+  - community/GitHub_Branch_Protection__main
 ---
 
 # Verification
 
 ## Connections
-- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - `contains` [EXTRACTED]
-- [[With VPN connected]] - `contains` [EXTRACTED]
+- [[GitHub Branch Protection — `main`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFullAccessMiddlewareBypass
+#graphify/document #graphify/EXTRACTED #community/GitHub_Branch_Protection__main

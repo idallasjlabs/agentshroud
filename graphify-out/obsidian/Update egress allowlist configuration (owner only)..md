@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "SkillGuard"
+community: "EgressFilterConfig"
 location: "L952"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/EgressFilterConfig
 ---
 
 # Update egress allowlist configuration (owner only).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[update_egress_allowlist()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SkillGuard
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

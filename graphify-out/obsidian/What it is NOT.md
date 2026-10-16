@@ -1,12 +1,12 @@
 ---
 source_file: "BRAND.md"
 type: "document"
-community: "AgentShroud Security Architecture"
+community: "AgentShroud™ Brand Guidelines"
 location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # What it is NOT
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Key Messaging]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

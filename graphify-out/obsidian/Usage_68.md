@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-production/README.md"
+source_file: "docker/config/hermes/skills/i-pm/README.md"
 type: "document"
-community: "_is_stale_callback_error()"
+community: "Project Management (README)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_is_stale_callback_error
+  - community/Project_Management_README
 ---
 
 # Usage
 
 ## Connections
-- [[Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
+- [[Project Management (PM)_1]] - `contains` [EXTRACTED]
+- [[Project Management (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_is_stale_callback_error
+#graphify/document #graphify/EXTRACTED #community/Project_Management_README

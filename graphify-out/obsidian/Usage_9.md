@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-cr/README.md"
+source_file: ".agents/skills/i-eightd/README.md"
 type: "document"
-community: "AuditExporter"
+community: "8D Root Cause Analysis"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditExporter
+  - community/8D_Root_Cause_Analysis
 ---
 
 # Usage
 
 ## Connections
-- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditExporter
+#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis

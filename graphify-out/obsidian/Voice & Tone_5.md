@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/workspace/BRAND.md"
+source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "AgentShroud Security Architecture"
-location: "L52"
+community: ".agents/skills/i-tw/SKILL.md"
+location: "L201"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # Voice & Tone
 
 ## Connections
-- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
+- [[Writing Style Rules_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

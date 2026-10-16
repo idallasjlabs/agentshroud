@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
+community: "ResourceUsage"
 location: "L135"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue_enhanced_queuepy
+  - community/ResourceUsage
 ---
 
 # Tracks cumulative resource consumption for a single subagent.
 
 ## Connections
-- [[ResourceUsage_1]] - `rationale_for` [EXTRACTED]
+- [[ResourceUsage_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy
+#graphify/rationale #graphify/EXTRACTED #community/ResourceUsage

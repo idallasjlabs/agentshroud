@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "CRITICAL — Must Fix Before Release"
+community: "3. Viewing Audit Logs"
 location: "L232"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CRITICAL__Must_Fix_Before_Release
+  - community/3_Viewing_Audit_Logs
 ---
 
 # Web Interface Access
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[3. Viewing Audit Logs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CRITICAL__Must_Fix_Before_Release
+#graphify/document #graphify/EXTRACTED #community/3_Viewing_Audit_Logs

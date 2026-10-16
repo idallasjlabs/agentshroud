@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-athena/README.md"
+source_file: "docker/config/openclaw/skills/i-mnemosyne/README.md"
 type: "document"
-community: "AgentShroud State Diagrams (doc)"
+community: "Mnemosyne — Retention Engineer"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_State_Diagrams_doc
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Usage
 
 ## Connections
-- [[Athena — Knowledge Distiller_1]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_State_Diagrams_doc
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

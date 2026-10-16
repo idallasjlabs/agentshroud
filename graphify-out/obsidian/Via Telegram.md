@@ -1,17 +1,17 @@
 ---
-source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
+source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "AgentShroud v1.2.0 Master Plan"
-location: "L304"
+community: "OpenClaw Workspace Usage Guide"
+location: "L316"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v120_Master_Plan
+  - community/OpenClaw_Workspace_Usage_Guide
 ---
 
 # Via Telegram
 
 ## Connections
-- [[💬 Example Conversations]] - `contains` [EXTRACTED]
+- [[Integration with Bot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v120_Master_Plan
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

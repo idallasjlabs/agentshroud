@@ -1,17 +1,17 @@
 ---
-source_file: "docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md"
+source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
 type: "document"
-community: "ADR-001: Transparent Proxy Decision"
-location: "L19"
+community: "AGENTSHROUD_MODE"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-001_Transparent_Proxy_Decision
+  - community/AGENTSHROUD_MODE
 ---
 
 # Values
 
 ## Connections
-- [[SOUL_1]] - `contains` [EXTRACTED]
+- [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_Decision
+#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_MODE

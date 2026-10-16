@@ -1,22 +1,21 @@
 ---
-source_file: "gateway/tests/test_scorecard_scoring.py"
+source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "3. Remaining Work — Prioritized by Value"
-location: "L473"
+community: "test_scanner_integration.py"
+location: "L794"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/3_Remaining_Work__Prioritized_by_Value
+  - community/test_scanner_integrationpy
 ---
 
 # TestScoreComplianceAuditing
 
 ## Connections
-- [[.test_five_zero_failures_fresh_report()]] - `method` [EXTRACTED]
-- [[.test_four_zero_failures_stale_report()]] - `method` [EXTRACTED]
-- [[.test_three_zero_failures_no_report_on_disk()]] - `method` [EXTRACTED]
-- [[.test_two_with_failures()]] - `method` [EXTRACTED]
-- [[.test_zero_when_not_run()_1]] - `method` [EXTRACTED]
-- [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
+- [[dot-test_defined_when_all_passing_no_report_on_disk()]] - `method` [EXTRACTED]
+- [[dot-test_defined_when_oscap_binary_present()]] - `method` [EXTRACTED]
+- [[dot-test_managed_when_has_failures()]] - `method` [EXTRACTED]
+- [[dot-test_zero_when_not_run()_1]] - `method` [EXTRACTED]
+- [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/3_Remaining_Work__Prioritized_by_Value
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

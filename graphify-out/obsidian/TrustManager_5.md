@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/SOUL.md"
 type: "concept"
-community: "test_claude_via_openai_path.py"
+community: "TrustManager"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_claude_via_openai_pathpy
+  - community/TrustManager
 ---
 
 # TrustManager
@@ -15,19 +15,19 @@ tags:
 - [[Approval Queue (SQLite)]] - `calls` [EXTRACTED]
 - [[Audit Ledger (SHA-256 hash only)]] - `calls` [EXTRACTED]
 - [[Configuration (TrustConfig)]] - `contains` [EXTRACTED]
-- [[Database Schema_2]] - `contains` [EXTRACTED]
+- [[Database Schema]] - `contains` [EXTRACTED]
 - [[Default Action Trust Requirements]] - `contains` [EXTRACTED]
-- [[Environment Variables_16]] - `contains` [EXTRACTED]
-- [[Function Details_50]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_53]] - `contains` [EXTRACTED]
+- [[Environment Variables_3]] - `contains` [EXTRACTED]
+- [[Function Details_1]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_1]] - `contains` [EXTRACTED]
 - [[MCP Proxy]] - `calls` [EXTRACTED]
-- [[Mode Enforce vs Monitor_11]] - `contains` [EXTRACTED]
-- [[Purpose_171]] - `contains` [EXTRACTED]
-- [[Related_57]] - `contains` [EXTRACTED]
-- [[Responsibilities_55]] - `contains` [EXTRACTED]
-- [[SOUL_2]] - `references` [EXTRACTED]
-- [[Threat Model_26]] - `contains` [EXTRACTED]
+- [[Mode Enforce vs Monitor_1]] - `contains` [EXTRACTED]
+- [[Purpose_78]] - `contains` [EXTRACTED]
+- [[Related_1]] - `contains` [EXTRACTED]
+- [[Responsibilities_3]] - `contains` [EXTRACTED]
+- [[Threat Model_2]] - `contains` [EXTRACTED]
+- [[hermesSOUL]] - `references` [EXTRACTED]
 - [[trust_manager (trust levels)]] - `conceptually_related_to` [EXTRACTED]
 - [[trust_manager.py_1]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_claude_via_openai_pathpy
+#graphify/concept #graphify/EXTRACTED #community/TrustManager

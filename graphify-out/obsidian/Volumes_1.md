@@ -1,17 +1,20 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
+source_file: "docs/vault/06 - Containers & Services/volumes.md"
 type: "document"
-community: "Apple Reminders CLI (remindctl)"
-location: "L44"
+community: "Docker Volumes"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Reminders_CLI_remindctl
+  - community/Docker_Volumes
 ---
 
-# Volumes
+# volumes.md
 
 ## Connections
-- [[agentshroud-bot_1]] - `contains` [EXTRACTED]
+- [[Docker Volumes]] - `contains` [EXTRACTED]
+- [[agentshroud-bot]] - `references` [EXTRACTED]
+- [[ledger.py]] - `references` [INFERRED]
+- [[playwright]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Reminders_CLI_remindctl
+#graphify/document #graphify/EXTRACTED #community/Docker_Volumes

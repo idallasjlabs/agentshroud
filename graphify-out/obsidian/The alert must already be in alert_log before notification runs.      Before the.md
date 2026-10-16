@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_alert_dispatcher_retry.py"
 type: "rationale"
-community: "openclaw/skills/i-icloud/scripts/calendar.js"
+community: "test_alert_dispatcher_retry.py"
 location: "L108"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-icloud/scripts/calendarjs
+  - community/test_alert_dispatcher_retrypy
 ---
 
 # The alert must already be in alert_log before notification runs.      Before the
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_dispatch_persists_alert_even_if_notification_fails()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/openclaw/skills/i-icloud/scripts/calendarjs
+#graphify/rationale #graphify/EXTRACTED #community/test_alert_dispatcher_retrypy

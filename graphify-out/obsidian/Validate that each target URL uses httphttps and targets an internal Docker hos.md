@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "ApprovalRequest"
+community: "DataLedger"
 location: "L87"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/DataLedger
 ---
 
 # Validate that each target URL uses http/https and targets an internal Docker hos
 
 ## Connections
-- [[.validate_targets()]] - `rationale_for` [EXTRACTED]
+- [[dot-validate_targets()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/rationale #graphify/EXTRACTED #community/DataLedger

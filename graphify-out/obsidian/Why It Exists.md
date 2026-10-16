@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "document"
-community: "PipelineAction"
+community: "main.py.md"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/mainpymd
 ---
 
 # Why It Exists
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud — System Overview]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PipelineAction
+#graphify/document #graphify/EXTRACTED #community/mainpymd

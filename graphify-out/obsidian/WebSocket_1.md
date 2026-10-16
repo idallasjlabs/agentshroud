@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "container-runtime.sh"
-location: "L350"
+community: "activity_websocket"
+location: "L561"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/container-runtimesh
+  - community/activity_websocket
 ---
 
 # WebSocket
 
 ## Connections
-- [[.connect()_1]] - `references` [EXTRACTED]
-- [[.disconnect()_1]] - `references` [EXTRACTED]
+- [[activity_websocket()]] - `references` [EXTRACTED]
+- [[egress_websocket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/container-runtimesh
+#graphify/code #graphify/EXTRACTED #community/activity_websocket

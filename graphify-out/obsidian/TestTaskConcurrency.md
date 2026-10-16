@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "hermes/skills/i-bs/README.md"
+community: "A2AGovernanceProxy"
 location: "L160"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/A2AGovernanceProxy
 ---
 
 # TestTaskConcurrency
 
 ## Connections
-- [[.test_complete_task_frees_slot()]] - `method` [EXTRACTED]
-- [[.test_task_limit_exceeded()]] - `method` [EXTRACTED]
-- [[.test_task_within_limit()]] - `method` [EXTRACTED]
+- [[dot-test_complete_task_frees_slot()]] - `method` [EXTRACTED]
+- [[dot-test_task_limit_exceeded()]] - `method` [EXTRACTED]
+- [[dot-test_task_within_limit()]] - `method` [EXTRACTED]
 - [[A2ADecision]] - `uses` [INFERRED]
 - [[A2AGovernanceConfig]] - `uses` [INFERRED]
 - [[A2AGovernanceProxy]] - `uses` [INFERRED]
@@ -23,4 +23,4 @@ tags:
 - [[A2APeer]] - `uses` [INFERRED]
 - [[test_a2a_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/hermes/skills/i-bs/READMEmd
+#graphify/code #graphify/INFERRED #community/A2AGovernanceProxy

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "KeyVaultConfig"
+community: "UserSessionManager"
 location: "L244"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/UserSessionManager
 ---
 
 # Validate and sanitize user_id to prevent path traversal.          Only allows al
 
 ## Connections
-- [[._validate_user_id()]] - `rationale_for` [EXTRACTED]
+- [[dot-_validate_user_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

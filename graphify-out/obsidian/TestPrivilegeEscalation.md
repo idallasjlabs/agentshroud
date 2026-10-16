@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "lifespan.py"
+community: "AlertDispatcher"
 location: "L511"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/lifespanpy
+  - community/AlertDispatcher
 ---
 
 # TestPrivilegeEscalation
 
 ## Connections
-- [[.test_consent_required_for_sensitive_ops()]] - `method` [EXTRACTED]
-- [[.test_session_cannot_impersonate()]] - `method` [EXTRACTED]
-- [[.test_subagent_monitor_tracks_events()]] - `method` [EXTRACTED]
-- [[.test_trust_cannot_exceed_max()]] - `method` [EXTRACTED]
-- [[.test_unregistered_agent_blocked()]] - `method` [EXTRACTED]
-- [[.test_violation_drops_trust_significantly()]] - `method` [EXTRACTED]
+- [[dot-test_consent_required_for_sensitive_ops()]] - `method` [EXTRACTED]
+- [[dot-test_session_cannot_impersonate()]] - `method` [EXTRACTED]
+- [[dot-test_subagent_monitor_tracks_events()]] - `method` [EXTRACTED]
+- [[dot-test_trust_cannot_exceed_max()]] - `method` [EXTRACTED]
+- [[dot-test_unregistered_agent_blocked()]] - `method` [EXTRACTED]
+- [[dot-test_violation_drops_trust_significantly()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
@@ -32,15 +32,15 @@ tags:
 - [[FileSandbox]] - `uses` [INFERRED]
 - [[FileSandboxConfig]] - `uses` [INFERRED]
 - [[GitGuard]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MetadataGuard]] - `uses` [INFERRED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[Session]] - `uses` [INFERRED]
 - [[SubagentEventType]] - `uses` [INFERRED]
 - [[Test trust boundaries and privilege escalation prevention.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/lifespanpy
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

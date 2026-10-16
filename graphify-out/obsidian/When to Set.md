@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
 type: "document"
-community: "AuditStore"
+community: "agentshroud.yaml.md"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/agentshroudyamlmd
 ---
 
 # When to Set
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AGENTSHROUD_CONFIG_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditStore
+#graphify/document #graphify/EXTRACTED #community/agentshroudyamlmd

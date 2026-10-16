@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/README.md"
+source_file: "docker/config/openclaw/skills/i-pr/README.md"
 type: "document"
-community: "Assess severity"
+community: "Pull Request Generator (PR)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Assess_severity
+  - community/Pull_Request_Generator_PR
 ---
 
 # Usage
 
 ## Connections
-- [[AWS Cloud Management & FinOps_1]] - `contains` [EXTRACTED]
+- [[Pull Request Generator (PR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Assess_severity
+#graphify/document #graphify/EXTRACTED #community/Pull_Request_Generator_PR

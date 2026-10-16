@@ -1,21 +1,22 @@
 ---
-source_file: ".github/COPILOT_CLI_SETUP.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "OpenClaw Live Cron Job Index (11 jobs)"
-location: "L381"
+community: "Troubleshooting"
+location: "L293"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Live_Cron_Job_Index_11_jobs
+  - community/Troubleshooting
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Agent Not Found]] - `contains` [EXTRACTED]
-- [[Authentication Issues_1]] - `contains` [EXTRACTED]
-- [[Configuration Not Loading]] - `contains` [EXTRACTED]
-- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
-- [[Path Permission Denied]] - `contains` [EXTRACTED]
+- [[Approval required but none granted]] - `contains` [EXTRACTED]
+- [[Browser timeout]] - `contains` [EXTRACTED]
+- [[CAPTCHA detected]] - `contains` [EXTRACTED]
+- [[Credential extraction blocked]] - `contains` [EXTRACTED]
+- [[URL not in allowlist]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Live_Cron_Job_Index_11_jobs
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting

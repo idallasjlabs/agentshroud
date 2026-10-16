@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "rationale"
-community: "TestCollaboratorPromptClassifiers"
+community: "test_dashboard.py"
 location: "L241"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestCollaboratorPromptClassifiers
+  - community/test_dashboardpy
 ---
 
 # WebSocket /ws/egress should forward auth_* events for SOC visibility.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_egress_receives_auth_event()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers
+#graphify/rationale #graphify/EXTRACTED #community/test_dashboardpy

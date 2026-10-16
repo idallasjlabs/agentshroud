@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
+community: "TrustConfig"
 location: "L44"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MemoryIntegrityMonitor
+  - community/TrustConfig
 ---
 
 # ViolationType
@@ -15,18 +15,18 @@ tags:
 - [[A2APolicyEngine]] - `uses` [INFERRED]
 - [[A2AProxy]] - `uses` [INFERRED]
 - [[A2AProxyResult]] - `uses` [INFERRED]
-- [[Any_11]] - `uses` [INFERRED]
-- [[Any_19]] - `uses` [INFERRED]
+- [[Any_68]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[AuditChainEntry]] - `uses` [INFERRED]
-- [[Enum]] - `inherits` [EXTRACTED]
+- [[Enum_2]] - `inherits` [EXTRACTED]
 - [[HermesA2AForwarder]] - `uses` [INFERRED]
 - [[ParsedA2ARequest]] - `uses` [INFERRED]
 - [[PipelineAction]] - `uses` [INFERRED]
-- [[PipelineResult]] - `uses` [INFERRED]
+- [[PipelineResult_1]] - `uses` [INFERRED]
+- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
 - [[ProgressiveTrustConfig_1]] - `uses` [INFERRED]
-- [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[TestBackwardCompat]] - `uses` [INFERRED]
 - [[TestEnforcementMode]] - `uses` [INFERRED]
 - [[TestEnforcementModeResolver]] - `uses` [INFERRED]
@@ -39,12 +39,12 @@ tags:
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]
 - [[TrustLevel_2]] - `uses` [INFERRED]
-- [[TrustManager_2]] - `uses` [INFERRED]
 - [[TrustManager_4]] - `uses` [INFERRED]
 - [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[Types of security violations.]] - `rationale_for` [EXTRACTED]
 - [[ViolationType_1]] - `uses` [INFERRED]
-- [[_StubForwarder_1]] - `uses` [INFERRED]
+- [[_StubForwarder]] - `uses` [INFERRED]
 - [[a2a_proxy.py]] - `imports` [EXTRACTED]
 - [[pipeline.py]] - `imports` [EXTRACTED]
 - [[progressive_trust_config.py]] - `contains` [EXTRACTED]
@@ -52,4 +52,4 @@ tags:
 - [[test_progressive_trust_integration.py]] - `imports` [EXTRACTED]
 - [[trust_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/INFERRED #community/TrustConfig

@@ -1,23 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sad/README.md"
 type: "document"
-community: "_sync()"
-location: "L55"
+community: "hermes/skills/i-bs/README.md"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_sync
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Usage
 
 ## Connections
-- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
-- [[Click Element_2]] - `contains` [EXTRACTED]
-- [[Extract Data_2]] - `contains` [EXTRACTED]
-- [[Fetch JavaScript-Heavy Page (Node.js)_2]] - `contains` [EXTRACTED]
-- [[Fill Form_2]] - `contains` [EXTRACTED]
-- [[Navigate to URL_2]] - `contains` [EXTRACTED]
-- [[Take Screenshot_2]] - `contains` [EXTRACTED]
+- [[System Audit Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_sync
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

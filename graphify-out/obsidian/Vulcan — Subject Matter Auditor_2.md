@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-vulcan/README.md"
+source_file: "docker/config/openclaw/skills/i-vulcan/README.md"
 type: "document"
-community: "SlackAPIProxy"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Vulcan — Subject Matter Auditor
 
 ## Connections
-- [[Purpose_73]] - `contains` [EXTRACTED]
-- [[README_47]] - `contains` [EXTRACTED]
-- [[README_78]] - `contains` [EXTRACTED]
-- [[Related Skills_79]] - `contains` [EXTRACTED]
-- [[Usage_80]] - `contains` [EXTRACTED]
+- [[Purpose_173]] - `contains` [EXTRACTED]
+- [[Related Skills_115]] - `contains` [EXTRACTED]
+- [[Usage_124]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-vulcanREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

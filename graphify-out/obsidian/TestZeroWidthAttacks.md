@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "SOCWebSocketHandler"
+community: "WebProxyConfig"
 location: "L243"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOCWebSocketHandler
+  - community/WebProxyConfig
 ---
 
 # TestZeroWidthAttacks
 
 ## Connections
-- [[.test_single_zwc_not_flagged()]] - `method` [EXTRACTED]
-- [[.test_zero_width_chars_detected()]] - `method` [EXTRACTED]
+- [[dot-test_single_zwc_not_flagged()]] - `method` [EXTRACTED]
+- [[dot-test_zero_width_chars_detected()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[DomainSettings]] - `uses` [INFERRED]
 - [[ProxyAction]] - `uses` [INFERRED]
-- [[RateLimiter_1]] - `uses` [INFERRED]
-- [[WebProxy_1]] - `uses` [INFERRED]
+- [[RateLimiter]] - `uses` [INFERRED]
+- [[WebProxy]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOCWebSocketHandler
+#graphify/code #graphify/INFERRED #community/WebProxyConfig

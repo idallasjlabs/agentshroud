@@ -1,38 +1,38 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "test_scorecard_integrity.py"
+community: "ThreatAssessment"
 location: "L44"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_scorecard_integritypy
+  - community/ThreatAssessment
 ---
 
 # ThreatAssessment
 
 ## Connections
-- [[.analyze_content()]] - `references` [EXTRACTED]
-- [[.analyze_screenshot()]] - `references` [EXTRACTED]
-- [[.test_hook_can_flag_threat()]] - `calls` [EXTRACTED]
-- [[.test_screenshot_hook_registered()]] - `calls` [EXTRACTED]
-- [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth_1]] - `uses` [INFERRED]
+- [[dot-analyze_content()]] - `references` [EXTRACTED]
+- [[dot-analyze_screenshot()]] - `references` [EXTRACTED]
+- [[dot-test_hook_can_flag_threat()]] - `calls` [EXTRACTED]
+- [[dot-test_screenshot_hook_registered()]] - `calls` [EXTRACTED]
+- [[TestAuditTrail]] - `uses` [INFERRED]
+- [[TestAuth]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard_1]] - `uses` [INFERRED]
+- [[TestContextGuard]] - `uses` [INFERRED]
 - [[TestCredentialProtection]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestFileSandbox]] - `uses` [INFERRED]
 - [[TestLoggingSecurity]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
-- [[TestPIIDetection_1]] - `uses` [INFERRED]
+- [[TestPIIDetection]] - `uses` [INFERRED]
 - [[TestPromptGuard]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestScreenshotAnalysis]] - `uses` [INFERRED]
 - [[TestSocialEngineeringDetection]] - `uses` [INFERRED]
-- [[TestSupplyChain_1]] - `uses` [INFERRED]
+- [[TestSupplyChain]] - `uses` [INFERRED]
 - [[TestURLReputation]] - `uses` [INFERRED]
 - [[browser_security.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_scorecard_integritypy
+#graphify/code #graphify/INFERRED #community/ThreatAssessment

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sav/README.md"
+source_file: "docker/config/openclaw/skills/i-bs/README.md"
 type: "document"
-community: "DNSFilterConfig"
-location: "L9"
+community: "Branding Specialist (BS)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/Branding_Specialist_BS
 ---
 
 # Usage
 
 ## Connections
-- [[System Audit Vault]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/Branding_Specialist_BS

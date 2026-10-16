@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "check-status.sh"
+community: ".test_timeout_error_is_sanitized_for_json_message_field"
 location: "L848"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/check-statussh
+  - community/test_timeout_error_is_sanitized_for_json_message_field
 ---
 
 # Timeout rewrites should apply when JSON payload uses message field.
 
 ## Connections
-- [[.test_timeout_error_is_sanitized_for_json_message_field()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_timeout_error_is_sanitized_for_json_message_field()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/check-statussh
+#graphify/rationale #graphify/EXTRACTED #community/test_timeout_error_is_sanitized_for_json_message_field

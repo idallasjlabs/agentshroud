@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "ApprovalQueueConfig"
 location: "L202"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/ApprovalQueueConfig
 ---
 
 # Tool risk tier configuration
 
 ## Connections
-- [[ToolRiskConfig_1]] - `rationale_for` [EXTRACTED]
+- [[ToolRiskConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

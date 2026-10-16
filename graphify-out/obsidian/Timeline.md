@@ -1,17 +1,17 @@
 ---
-source_file: ".github/ISSUE_TEMPLATE/postmortem.md"
+source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "iMessage Integration Fix - Using imsg + imessage"
-location: "L13"
+community: "Phase 3 Requirements: Working Chat Container"
+location: "L354"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iMessage_Integration_Fix_-_Using_imsg__imessage
+  - community/Phase_3_Requirements_Working_Chat_Container
 ---
 
 # Timeline
 
 ## Connections
-- [[postmortem]] - `contains` [EXTRACTED]
+- [[Phase 3 Requirements Working Chat Container]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Fix_-_Using_imsg__imessage
+#graphify/document #graphify/EXTRACTED #community/Phase_3_Requirements_Working_Chat_Container

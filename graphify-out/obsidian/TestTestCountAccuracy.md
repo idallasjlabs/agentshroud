@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "code"
-community: "AgentShroud Phase Review — 2026-02-23"
+community: "test_docs_accuracy.py"
 location: "L307"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Phase_Review__2026-02-23
+  - community/test_docs_accuracypy
 ---
 
 # TestTestCountAccuracy
 
 ## Connections
-- [[.test_actual_test_count_meets_minimum()]] - `method` [EXTRACTED]
+- [[dot-test_actual_test_count_meets_minimum()]] - `method` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[Verify test count claims in READMEdocs are reasonable.]] - `rationale_for` [EXTRACTED]
 - [[test_docs_accuracy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-23
+#graphify/code #graphify/EXTRACTED #community/test_docs_accuracypy

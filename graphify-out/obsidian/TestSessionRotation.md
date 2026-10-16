@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "test_dashboard.py"
+community: "SessionError"
 location: "L77"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_dashboardpy
+  - community/SessionError
 ---
 
 # TestSessionRotation
 
 ## Connections
-- [[.test_rotate_session()]] - `method` [EXTRACTED]
-- [[.test_rotated_session_valid()]] - `method` [EXTRACTED]
+- [[dot-test_rotate_session()]] - `method` [EXTRACTED]
+- [[dot-test_rotated_session_valid()]] - `method` [EXTRACTED]
 - [[EventInjectionError]] - `uses` [INFERRED]
 - [[RateLimitExceeded]] - `uses` [INFERRED]
 - [[SessionBindingError]] - `uses` [INFERRED]
@@ -22,4 +22,4 @@ tags:
 - [[SessionManager]] - `uses` [INFERRED]
 - [[test_session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_dashboardpy
+#graphify/code #graphify/INFERRED #community/SessionError

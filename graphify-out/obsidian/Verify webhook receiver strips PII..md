@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "GitHub Copilot CLI Setup Guide"
+community: "WebhookReceiver"
 location: "L398"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GitHub_Copilot_CLI_Setup_Guide
+  - community/WebhookReceiver
 ---
 
 # Verify webhook receiver strips PII.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_webhook_strips_pii()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide
+#graphify/rationale #graphify/EXTRACTED #community/WebhookReceiver

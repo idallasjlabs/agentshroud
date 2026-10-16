@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "InjectionAction"
 location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/InjectionAction
 ---
 
 # TestToolResultInjectionScanner
 
 ## Connections
-- [[.setup_method()_36]] - `method` [EXTRACTED]
-- [[.test_base64_encoded_injection()_1]] - `method` [EXTRACTED]
-- [[.test_clean_content_passes_through()]] - `method` [EXTRACTED]
-- [[.test_ignore_instructions_injection_high_severity()]] - `method` [EXTRACTED]
-- [[.test_xml_function_injection_detection()]] - `method` [EXTRACTED]
+- [[dot-setup_method()_4]] - `method` [EXTRACTED]
+- [[dot-test_base64_encoded_injection()]] - `method` [EXTRACTED]
+- [[dot-test_clean_content_passes_through()]] - `method` [EXTRACTED]
+- [[dot-test_ignore_instructions_injection_high_severity()]] - `method` [EXTRACTED]
+- [[dot-test_xml_function_injection_detection()]] - `method` [EXTRACTED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[InjectionSeverity]] - `uses` [INFERRED]
 - [[Test cases for ToolResultInjectionScanner.]] - `rationale_for` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[test_tool_injection_scan.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/InjectionAction

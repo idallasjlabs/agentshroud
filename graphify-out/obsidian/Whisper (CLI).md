@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/openai-whisper/SKILL.md"
 type: "document"
-community: "web_proxy.py"
+community: "openai-whisper-api/SKILL.md"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/web_proxypy
+  - community/openai-whisper-api/SKILLmd
 ---
 
 # Whisper (CLI)
 
 ## Connections
-- [[SKILL_222]] - `contains` [EXTRACTED]
+- [[openai-whisperSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/web_proxypy
+#graphify/document #graphify/EXTRACTED #community/openai-whisper-api/SKILLmd

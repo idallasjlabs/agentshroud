@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "test_redteam_probes.py"
+community: "ModeRequest"
 location: "L150"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_redteam_probespy
+  - community/ModeRequest
 ---
 
 # UpdateRequest
 
 ## Connections
-- [[.test_update_request_defaults()]] - `calls` [EXTRACTED]
+- [[dot-test_update_request_defaults()]] - `calls` [EXTRACTED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
@@ -33,13 +33,13 @@ tags:
 - [[TestResolveBotContainer]] - `uses` [INFERRED]
 - [[TestSecurityReport]] - `uses` [INFERRED]
 - [[TestServiceControl]] - `uses` [INFERRED]
-- [[TestStatus_1]] - `uses` [INFERRED]
+- [[TestStatus]] - `uses` [INFERRED]
 - [[TestWsLogs]] - `uses` [INFERRED]
 - [[TestWsUpdates]] - `uses` [INFERRED]
-- [[api.py]] - `contains` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `imports` [EXTRACTED]
 - [[upgrade_agentshroud()]] - `references` [EXTRACTED]
-- [[upgrade_bot()_1]] - `references` [EXTRACTED]
+- [[upgrade_bot()]] - `references` [EXTRACTED]
 - [[upgrade_openclaw()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_redteam_probespy
+#graphify/code #graphify/INFERRED #community/ModeRequest

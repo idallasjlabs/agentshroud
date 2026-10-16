@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/validation-runner.agent.md"
 type: "document"
-community: "SOCWebSocketHandler"
+community: "Validation Runner Specialist"
 location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - community/Validation_Runner_Specialist
 ---
 
 # Validation Workflows
@@ -16,4 +16,4 @@ tags:
 - [[Python Validation]] - `contains` [EXTRACTED]
 - [[Validation Runner Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/document #graphify/EXTRACTED #community/Validation_Runner_Specialist

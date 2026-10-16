@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "HTTPConnectProxy"
+community: "CompetitiveIntelReport"
 location: "L279"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/CompetitiveIntelReport
 ---
 
 # Walk the entire report chain and verify hash linkage.          Returns:
 
 ## Connections
-- [[.verify_chain()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-verify_chain()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/rationale #graphify/EXTRACTED #community/CompetitiveIntelReport

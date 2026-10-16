@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "EgressPolicy"
+community: "DataLedger"
 location: "L91"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressPolicy
+  - community/DataLedger
 ---
 
 # Verify hash matches SHA-256 of the content.
 
 ## Connections
-- [[.test_hash_matches_content()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_hash_matches_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressPolicy
+#graphify/rationale #graphify/EXTRACTED #community/DataLedger

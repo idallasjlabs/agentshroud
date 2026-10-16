@@ -1,12 +1,12 @@
 ---
 source_file: "branding/typography/typography.md"
 type: "document"
-community: ".dispatch()"
+community: "AgentShroud Typography Guidelines"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dispatch
+  - community/AgentShroud_Typography_Guidelines
 ---
 
 # Type Scale
@@ -17,4 +17,4 @@ tags:
 - [[CodeMonospace]] - `contains` [EXTRACTED]
 - [[Headings]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dispatch
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Typography_Guidelines

@@ -1,20 +1,21 @@
 ---
-source_file: "docs/architecture/WORKSPACE_USAGE.md"
+source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "OpenClaw Workspace Usage Guide"
-location: "L275"
+community: "AgentShroud Phase 3 - Quick Start Guide"
+location: "L232"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Workspace_Usage_Guide
+  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
-- [[Problem Container not running]] - `contains` [EXTRACTED]
-- [[Problem File not found]] - `contains` [EXTRACTED]
-- [[Problem Permission denied]] - `contains` [EXTRACTED]
+- [[API Key Error]] - `contains` [EXTRACTED]
+- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
+- [[Container Won't Start_1]] - `contains` [EXTRACTED]
+- [[Gateway Returns 401 Unauthorized]] - `contains` [EXTRACTED]
+- [[OpenClaw Not Responding]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
+source_file: "docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md"
 type: "document"
-community: "lvgl_kawaii_face.c"
+community: "ANTHROPIC_BASE_URL"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/lvgl_kawaii_facec
+  - community/ANTHROPIC_BASE_URL
 ---
 
 # Value
 
 ## Connections
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - `contains` [EXTRACTED]
+- [[ANTHROPIC_BASE_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/lvgl_kawaii_facec
+#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL

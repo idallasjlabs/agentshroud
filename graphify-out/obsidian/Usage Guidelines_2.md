@@ -1,19 +1,18 @@
 ---
-source_file: "branding/typography/typography.md"
+source_file: "docs/project/legal/TRADEMARK.md"
 type: "document"
-community: ".dispatch()"
-location: "L72"
+community: "AgentShroud™ — Trademark Prior Use Record"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dispatch
+  - community/AgentShroud__Trademark_Prior_Use_Record
 ---
 
 # Usage Guidelines
 
 ## Connections
-- [[AgentShroud Typography Guidelines]] - `contains` [EXTRACTED]
-- [[Do's_1]] - `contains` [EXTRACTED]
-- [[Don'ts_1]] - `contains` [EXTRACTED]
+- [[TRADEMARK_2]] - `references` [EXTRACTED]
+- [[Trademark Notice_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dispatch
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record

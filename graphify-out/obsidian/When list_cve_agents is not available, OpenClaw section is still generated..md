@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_generate_cve_page.py"
 type: "rationale"
-community: "apply-patches.js"
+community: "_make_cve"
 location: "L336"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apply-patchesjs
+  - community/_make_cve
 ---
 
 # When list_cve_agents is not available, OpenClaw section is still generated.
 
 ## Connections
-- [[.test_legacy_fallback_openclaw_only()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_legacy_fallback_openclaw_only()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apply-patchesjs
+#graphify/rationale #graphify/EXTRACTED #community/_make_cve

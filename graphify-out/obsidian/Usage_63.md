@@ -1,17 +1,23 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm/README.md"
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "SlackAPIProxy"
-location: "L10"
+community: "Browser — Secure Browser Automation"
+location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Usage
 
 ## Connections
-- [[MCP Tools Usage (MCPM)_1]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
+- [[Click Element_2]] - `contains` [EXTRACTED]
+- [[Extract Data_2]] - `contains` [EXTRACTED]
+- [[Fetch JavaScript-Heavy Page (Node.js)_1]] - `contains` [EXTRACTED]
+- [[Fill Form_1]] - `contains` [EXTRACTED]
+- [[Navigate to URL_2]] - `contains` [EXTRACTED]
+- [[Take Screenshot_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

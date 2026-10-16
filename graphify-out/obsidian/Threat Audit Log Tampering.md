@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "Key Messaging"
+community: "STRIDE Threat Analysis"
 location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Key_Messaging
+  - community/STRIDE_Threat_Analysis
 ---
 
 # Threat: Audit Log Tampering
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[T - Tampering with Data]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Key_Messaging
+#graphify/document #graphify/EXTRACTED #community/STRIDE_Threat_Analysis

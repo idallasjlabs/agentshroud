@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "hermes/skills/i-bs/README.md"
+community: "A2AGovernanceProxy"
 location: "L253"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/A2AGovernanceProxy
 ---
 
 # TestReporting
 
 ## Connections
-- [[.test_get_events_filtered()]] - `method` [EXTRACTED]
-- [[.test_peer_stats_updated()]] - `method` [EXTRACTED]
-- [[.test_summary()]] - `method` [EXTRACTED]
+- [[dot-test_get_events_filtered()]] - `method` [EXTRACTED]
+- [[dot-test_peer_stats_updated()]] - `method` [EXTRACTED]
+- [[dot-test_summary()]] - `method` [EXTRACTED]
 - [[A2ADecision]] - `uses` [INFERRED]
 - [[A2AGovernanceConfig]] - `uses` [INFERRED]
 - [[A2AGovernanceProxy]] - `uses` [INFERRED]
@@ -23,4 +23,4 @@ tags:
 - [[A2APeer]] - `uses` [INFERRED]
 - [[test_a2a_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/hermes/skills/i-bs/READMEmd
+#graphify/code #graphify/INFERRED #community/A2AGovernanceProxy

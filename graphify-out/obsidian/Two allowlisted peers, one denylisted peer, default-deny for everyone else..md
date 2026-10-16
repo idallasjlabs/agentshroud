@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "rationale"
-community: "AgentTarget"
+community: "test_a2a_policy.py"
 location: "L39"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/test_a2a_policypy
 ---
 
 # Two allowlisted peers, one denylisted peer, default-deny for everyone else.
 
 ## Connections
-- [[_base_config()]] - `rationale_for` [EXTRACTED]
+- [[_base_config()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget
+#graphify/rationale #graphify/EXTRACTED #community/test_a2a_policypy

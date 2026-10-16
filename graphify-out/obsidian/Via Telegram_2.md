@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/WORKSPACE_USAGE.md"
+source_file: "docs/architecture/IDENTITY.md"
 type: "document"
-community: "OpenClaw Workspace Usage Guide"
-location: "L316"
+community: "Identity Reference - AgentShroud System"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Workspace_Usage_Guide
+  - community/Identity_Reference_-_AgentShroud_System
 ---
 
-# Via Telegram
+# Via Telegram:
 
 ## Connections
-- [[Integration with Bot]] - `contains` [EXTRACTED]
+- [[💬 Communication Flow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide
+#graphify/document #graphify/EXTRACTED #community/Identity_Reference_-_AgentShroud_System

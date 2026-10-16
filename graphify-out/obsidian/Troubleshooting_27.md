@@ -1,17 +1,20 @@
 ---
-source_file: "docs/setup/HERMES_SETUP.md"
+source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "Skill: Technical Illustrator (TI)"
-location: "L253"
+community: "Kill Switch"
+location: "L277"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Technical_Illustrator_TI
+  - community/Kill_Switch
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
+- [[killswitch.sh doesn't confirm]] - `contains` [EXTRACTED]
+- [[scan.sh reports missing OpenSCAP]] - `contains` [EXTRACTED]
+- [[verify-security.sh fails]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch

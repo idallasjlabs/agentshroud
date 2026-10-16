@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec/README.md"
+source_file: "docker/config/openclaw/skills/i-data/README.md"
 type: "document"
-community: "AgentShroud v1.2.0 — Blue Team Security Assessme"
+community: "Data Validation (DATA-VAL)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v120__Blue_Team_Security_Assessme
+  - community/Data_Validation_DATA-VAL
 ---
 
 # Usage
 
 ## Connections
-- [[Security Review (SEC)]] - `contains` [EXTRACTED]
+- [[Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v120__Blue_Team_Security_Assessme
+#graphify/document #graphify/EXTRACTED #community/Data_Validation_DATA-VAL

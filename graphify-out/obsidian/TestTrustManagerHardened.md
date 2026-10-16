@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "ConsentFramework"
+community: "AgentRegistry"
 location: "L887"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ConsentFramework
+  - community/AgentRegistry
 ---
 
 # TestTrustManagerHardened
 
 ## Connections
-- [[.test_event_type_validation()]] - `method` [EXTRACTED]
-- [[.test_rate_limiting_prevents_rapid_escalation()]] - `method` [EXTRACTED]
+- [[dot-test_event_type_validation()]] - `method` [EXTRACTED]
+- [[dot-test_rate_limiting_prevents_rapid_escalation()]] - `method` [EXTRACTED]
 - [[AgentRegistry]] - `uses` [INFERRED]
-- [[ContainerConfig]] - `uses` [INFERRED]
+- [[ContainerConfig_1]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
 - [[DriftDetector]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
+- [[EgressFilter_2]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[EncryptedStore]] - `uses` [INFERRED]
@@ -31,7 +31,7 @@ tags:
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ConsentFramework
+#graphify/code #graphify/INFERRED #community/AgentRegistry

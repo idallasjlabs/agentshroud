@@ -1,17 +1,18 @@
 ---
-source_file: "docs/planning/redteam/04-separation-of-privilege.md"
+source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "Feature: Global Monitor-Only Mode (\"Observatory "
-location: "L250"
+community: "Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility"
+location: "L93"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Feature_Global_Monitor-Only_Mode_Observatory_
+  - community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility
 ---
 
 # Verification
 
 ## Connections
-- [[Make gateway source code, config, and security policies read-only to the agent]] - `contains` [EXTRACTED]
+- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - `contains` [EXTRACTED]
+- [[With VPN connected]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Feature_Global_Monitor-Only_Mode_Observatory_
+#graphify/document #graphify/EXTRACTED #community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility

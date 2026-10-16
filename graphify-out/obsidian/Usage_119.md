@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/README.md"
+source_file: "docker/config/openclaw/skills/i-hermes/README.md"
 type: "document"
-community: ".test_collaborator_cross_user_messaging_request_"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_collaborator_cross_user_messaging_request_
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Usage
 
 ## Connections
-- [[Technical Writer (TW)_2]] - `contains` [EXTRACTED]
+- [[Hermes — Podcast Production Orchestrator_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_collaborator_cross_user_messaging_request_
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

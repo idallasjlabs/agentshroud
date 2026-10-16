@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY-POLICY-FINAL.md"
 type: "rationale"
-community: "Function Details"
+community: "Git History Purge Plan"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/Git_History_Purge_Plan
 ---
 
 # Ultra-Conservative Credential Display Policy
@@ -16,4 +16,4 @@ tags:
 - [[SECURITY-POLICY-FINAL]] - `references` [EXTRACTED]
 - [[SECURITY_VALUE_PROPOSITION]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Function_Details
+#graphify/rationale #graphify/EXTRACTED #community/Git_History_Purge_Plan

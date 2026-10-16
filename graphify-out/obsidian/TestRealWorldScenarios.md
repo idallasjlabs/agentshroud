@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "version_routes.py"
+community: "ToolResultSanitizer"
 location: "L440"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/version_routespy
+  - community/ToolResultSanitizer
 ---
 
 # TestRealWorldScenarios
 
 ## Connections
-- [[.test_email_content_scanning()]] - `method` [EXTRACTED]
-- [[.test_icloud_contact_scanning()]] - `method` [EXTRACTED]
-- [[GatewayConfig_1]] - `uses` [INFERRED]
+- [[dot-test_email_content_scanning()]] - `method` [EXTRACTED]
+- [[dot-test_icloud_contact_scanning()]] - `method` [EXTRACTED]
+- [[GatewayConfig_3]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[RedactionDetail]] - `uses` [INFERRED]
-- [[RedactionResult]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[RedactionDetail_1]] - `uses` [INFERRED]
+- [[RedactionResult_3]] - `uses` [INFERRED]
 - [[Test realistic tool result scenarios]] - `rationale_for` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `uses` [INFERRED]
-- [[ToolResultSanitizer]] - `uses` [INFERRED]
+- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
 - [[test_tool_result_pii.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/version_routespy
+#graphify/code #graphify/INFERRED #community/ToolResultSanitizer

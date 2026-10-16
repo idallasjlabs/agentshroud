@@ -1,17 +1,19 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
+source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
-location: "L15"
+community: "SecureBrowser Security Policies"
+location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
+  - community/SecureBrowser_Security_Policies
 ---
 
 # Threat Model
 
 ## Connections
-- [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
+- [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
+- [[What We Don't Protect Against]] - `contains` [EXTRACTED]
+- [[What We Protect Against]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Security_Policies

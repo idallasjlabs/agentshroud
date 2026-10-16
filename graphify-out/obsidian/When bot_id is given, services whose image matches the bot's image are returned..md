@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "test_soc_bots.py"
 location: "L475"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/test_soc_botspy
 ---
 
 # When bot_id is given, services whose image matches the bot's image are returned.
 
 ## Connections
-- [[.test_filters_services_by_bot_image()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_filters_services_by_bot_image()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/test_soc_botspy

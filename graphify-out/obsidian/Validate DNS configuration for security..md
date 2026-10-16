@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "AgentShroud Security Value Proposition - REVISED"
+community: ".validate_docker_compose_config"
 location: "L355"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition_-_REVISED
+  - community/validate_docker_compose_config
 ---
 
 # Validate DNS configuration for security.
 
 ## Connections
-- [[._validate_dns_configuration()]] - `rationale_for` [EXTRACTED]
+- [[dot-_validate_dns_configuration()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_REVISED
+#graphify/rationale #graphify/EXTRACTED #community/validate_docker_compose_config
