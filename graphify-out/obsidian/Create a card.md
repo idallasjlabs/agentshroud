@@ -12,6 +12,6 @@ tags:
 # Create a card
 
 ## Connections
-- [[Usage_121]] - `contains` [EXTRACTED]
+- [[Usage_127]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Usage

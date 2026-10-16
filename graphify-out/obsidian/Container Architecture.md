@@ -1,17 +1,19 @@
 ---
-source_file: "docs/architecture/agentic-os.md"
+source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "AgentShroud Agentic OS"
-location: "L693"
+community: "main.py.md"
+location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Agentic_OS
+  - community/mainpymd
 ---
 
 # Container Architecture
 
 ## Connections
-- [[10. Infrastructure & Runtime]] - `contains` [EXTRACTED]
+- [[Architecture Overview_1]] - `contains` [EXTRACTED]
+- [[Bot Container (`agentshroud-bot`)]] - `contains` [EXTRACTED]
+- [[Gateway Container (`agentshroud-gateway`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Agentic_OS
+#graphify/document #graphify/EXTRACTED #community/mainpymd

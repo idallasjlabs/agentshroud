@@ -12,6 +12,6 @@ tags:
 # Close sqlite-holding sub-modules so Python 3.13's GC does not         finalize t
 
 ## Connections
-- [[dot-teardown_method()_7]] - `rationale_for` [EXTRACTED]
+- [[dot-teardown_method()_5]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Action

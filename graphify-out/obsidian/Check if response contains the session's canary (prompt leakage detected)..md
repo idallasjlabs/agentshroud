@@ -12,6 +12,6 @@ tags:
 # Check if response contains the session's canary (prompt leakage detected).
 
 ## Connections
-- [[dot-check_response()]] - `rationale_for` [EXTRACTED]
+- [[dot-check_response()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TestOutputCanary

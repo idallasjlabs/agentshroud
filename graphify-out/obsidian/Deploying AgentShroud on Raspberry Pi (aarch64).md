@@ -16,7 +16,7 @@ tags:
 - [[Pi-Specific Notes]] - `contains` [EXTRACTED]
 - [[Prerequisites_10]] - `contains` [EXTRACTED]
 - [[Tailscale Remote Access (Optional)]] - `contains` [EXTRACTED]
-- [[Troubleshooting_30]] - `contains` [EXTRACTED]
+- [[Troubleshooting_29]] - `contains` [EXTRACTED]
 - [[Updating to Latest Release]] - `contains` [EXTRACTED]
 - [[raspberry-pi]] - `contains` [EXTRACTED]
 

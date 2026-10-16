@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: "Common Operations"
+community: "AgentShroud Data Dictionary"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Common_Operations
+  - community/AgentShroud_Data_Dictionary
 ---
 
 # Configuration Setup
@@ -15,4 +15,4 @@ tags:
 - [[Configuration Entities]] - `contains` [EXTRACTED]
 - [[Himalaya Email CLI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Common_Operations
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Dictionary

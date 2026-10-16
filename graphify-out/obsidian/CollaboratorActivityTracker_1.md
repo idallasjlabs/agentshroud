@@ -12,7 +12,7 @@ tags:
 # CollaboratorActivityTracker
 
 ## Connections
-- [[dot-__init__()_149]] - `method` [EXTRACTED]
+- [[dot-__init__()_136]] - `method` [EXTRACTED]
 - [[dot-_append_contributor_log()]] - `method` [EXTRACTED]
 - [[dot-_coerce_timestamp()]] - `method` [EXTRACTED]
 - [[dot-_normalize_preview()]] - `method` [EXTRACTED]
@@ -25,8 +25,8 @@ tags:
 - [[dot-test_initial_state_healthy()]] - `calls` [EXTRACTED]
 - [[Collaborator Tracker Tests]] - `references` [EXTRACTED]
 - [[CollaboratorActivityTracker]] - `uses` [INFERRED]
-- [[Path_37]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
+- [[Path_36]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
 - [[TestBuildCollaboratorSafeInfoResponse]] - `uses` [INFERRED]
 - [[TestDefaultBotId]] - `uses` [INFERRED]
 - [[TestDomainValidationHelper]] - `uses` [INFERRED]

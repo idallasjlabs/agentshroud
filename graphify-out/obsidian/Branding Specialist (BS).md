@@ -12,9 +12,9 @@ tags:
 # Branding Specialist (BS)
 
 ## Connections
-- [[Purpose_40]] - `contains` [EXTRACTED]
+- [[Purpose_42]] - `contains` [EXTRACTED]
 - [[Related Skills_28]] - `contains` [EXTRACTED]
-- [[Usage_31]] - `contains` [EXTRACTED]
+- [[Usage_32]] - `contains` [EXTRACTED]
 - [[openclawskillsi-bsREADME]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 

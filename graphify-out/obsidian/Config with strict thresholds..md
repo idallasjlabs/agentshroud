@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "rationale"
-community: "TrustConfig"
+community: "PIIConfig"
 location: "L36"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/PIIConfig
 ---
 
 # Config with strict thresholds.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[strict_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustConfig
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

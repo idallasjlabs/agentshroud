@@ -12,6 +12,6 @@ tags:
 # Create path isolation manager for testing.
 
 ## Connections
-- [[dot-manager()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-manager()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager

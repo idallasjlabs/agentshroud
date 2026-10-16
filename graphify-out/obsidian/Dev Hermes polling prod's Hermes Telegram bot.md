@@ -1,20 +1,19 @@
 ---
 source_file: "INCIDENT_2026-10-16_conduit-outage.md"
-type: "rationale"
-community: "telegram_api_proxy (/telegram-api/{path})"
+type: "concept"
+community: "setup-secrets.sh"
 location: "L294-L340"
 tags:
-  - graphify/rationale
+  - graphify/concept
   - graphify/EXTRACTED
-  - community/telegram_api_proxy_/telegram-api/path
+  - community/setup-secretssh
 ---
 
 # Dev Hermes polling prod's Hermes Telegram bot
 
 ## Connections
-- [[Incident 2026-10-16 ConduitHermes instability record]] - `references` [EXTRACTED]
-- [[_build_telegram_token_registry]] - `references` [AMBIGUOUS]
-- [[_secret_mount_args]] - `rationale_for` [EXTRACTED]
-- [[start.sh (Hermes s6 main program  startup wrapper)]] - `references` [EXTRACTED]
+- [[Incident 2026-10-16 ConduitHermes instability]] - `references` [EXTRACTED]
+- [[SECRET_DEFS]] - `references` [EXTRACTED]
+- [[_hermes_up]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path
+#graphify/concept #graphify/EXTRACTED #community/setup-secretssh

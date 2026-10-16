@@ -15,7 +15,7 @@ tags:
 - [[dot-_missing_()]] - `method` [EXTRACTED]
 - [[dot-record_incident()]] - `references` [EXTRACTED]
 - [[dot-test_from_string()]] - `calls` [EXTRACTED]
-- [[Any_51]] - `uses` [INFERRED]
+- [[Any_69]] - `uses` [INFERRED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[AuditChainEntry]] - `uses` [INFERRED]
 - [[CrossBotTrustLedger]] - `uses` [INFERRED]
@@ -33,9 +33,9 @@ tags:
 - [[TestTrustDecayPolicyValidation]] - `uses` [INFERRED]
 - [[TrustDecayPolicy_1]] - `uses` [INFERRED]
 - [[TrustManager_3]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
-- [[pipeline.py]] - `imports` [EXTRACTED]
+- [[pipeline.py_1]] - `imports` [EXTRACTED]
 - [[test_cross_bot_trust_ledger.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/CrossBotTrustLedger

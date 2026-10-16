@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AgentShroud Development Team — Agile Structure]] - `contains` [EXTRACTED]
 - [[Communication & Tooling]] - `contains` [EXTRACTED]
-- [[Container Architecture_1]] - `contains` [EXTRACTED]
+- [[Container Architecture_2]] - `contains` [EXTRACTED]
 - [[Development Workflow_1]] - `contains` [EXTRACTED]
 - [[Hardware]] - `contains` [EXTRACTED]
 

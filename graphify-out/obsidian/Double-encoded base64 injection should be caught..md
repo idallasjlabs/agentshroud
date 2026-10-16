@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "EgressFilterConfig"
 location: "L819"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/EgressFilterConfig
 ---
 
 # Double-encoded base64 injection should be caught.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_double_base64_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

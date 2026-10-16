@@ -22,7 +22,7 @@ tags:
 - [[Key Benefits]] - `contains` [EXTRACTED]
 - [[Migration Path (SSH → Distributed Node)]] - `contains` [EXTRACTED]
 - [[Monitoring and Observability]] - `contains` [EXTRACTED]
-- [[Next Steps_6]] - `contains` [EXTRACTED]
+- [[Next Steps_5]] - `contains` [EXTRACTED]
 - [[Resources]] - `contains` [EXTRACTED]
 - [[Security Architecture_5]] - `contains` [EXTRACTED]
 - [[Use Cases_1]] - `contains` [EXTRACTED]

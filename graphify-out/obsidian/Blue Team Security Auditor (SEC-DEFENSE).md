@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[dot-agentsskillsi-sec-defenseREADME]] - `contains` [EXTRACTED]
-- [[Purpose_23]] - `contains` [EXTRACTED]
+- [[Purpose_25]] - `contains` [EXTRACTED]
 - [[Related Skills_11]] - `contains` [EXTRACTED]
-- [[Usage_14]] - `contains` [EXTRACTED]
+- [[Usage_15]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Blue_Team_Security_Auditor_SEC-DEFENSE

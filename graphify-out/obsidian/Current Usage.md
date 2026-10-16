@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "python-jose"
+community: "test_security.py"
 location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/python-jose
+  - community/test_securitypy
 ---
 
 # Current Usage
 
 ## Connections
-- [[python-jose]] - `contains` [EXTRACTED]
+- [[python-jose_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/python-jose
+#graphify/document #graphify/EXTRACTED #community/test_securitypy

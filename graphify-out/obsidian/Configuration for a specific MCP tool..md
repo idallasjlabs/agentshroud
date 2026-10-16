@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "PermissionLevel"
 location: "L56"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/PermissionLevel
 ---
 
 # Configuration for a specific MCP tool.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCPToolConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/PermissionLevel

@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[dot-is_operator_or_higher()]] - `rationale_for` [EXTRACTED]
-- [[dot-is_owner()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-is_owner()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/RBACConfig

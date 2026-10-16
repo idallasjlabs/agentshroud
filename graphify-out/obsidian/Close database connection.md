@@ -12,6 +12,6 @@ tags:
 # Close database connection
 
 ## Connections
-- [[dot-close()_12]] - `rationale_for` [EXTRACTED]
+- [[dot-close()_7]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/DataLedger

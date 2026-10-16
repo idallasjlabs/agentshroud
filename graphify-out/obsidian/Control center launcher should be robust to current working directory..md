@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "ForwardRequest"
+community: "AgentTarget"
 location: "L547"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ForwardRequest
+  - community/AgentTarget
 ---
 
 # Control center launcher should be robust to current working directory.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_start_control_center_script_uses_repo_relative_exec()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

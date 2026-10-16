@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "EgressAttempt"
+community: "EgressFilterConfig"
 location: "L455"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressAttempt
+  - community/EgressFilterConfig
 ---
 
 # Check if host looks like an IPv6 address.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_is_ipv6()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressAttempt
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

@@ -12,6 +12,6 @@ tags:
 # Clean up integration test environment.
 
 ## Connections
-- [[dot-teardown_method()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-teardown_method()_6]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

@@ -12,6 +12,6 @@ tags:
 # DriftDetector.acknowledge_alert(alert_id)
 
 ## Connections
-- [[Function Details_4]] - `contains` [EXTRACTED]
+- [[Function Details_5]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/drift_detectorpy

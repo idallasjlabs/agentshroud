@@ -12,6 +12,6 @@ tags:
 # Compile regex patterns for sensitive data detection.
 
 ## Connections
-- [[dot-_compile_patterns()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-_compile_patterns()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/KeyVault

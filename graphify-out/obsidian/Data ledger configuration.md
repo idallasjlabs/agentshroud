@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
+community: "DataLedger"
 location: "L44"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/DataLedger
 ---
 
 # Data ledger configuration
 
 ## Connections
-- [[LedgerConfig_1]] - `rationale_for` [EXTRACTED]
+- [[LedgerConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/DataLedger

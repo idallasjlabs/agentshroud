@@ -1,5 +1,5 @@
 ---
-source_file: "skills/custom/icloud/SKILL.md"
+source_file: ".agents/skills/i-icloud/SKILL.md"
 type: "document"
 community: "iCloud Services"
 location: "L150"
@@ -12,6 +12,6 @@ tags:
 # "Calendar/Contacts not found"
 
 ## Connections
-- [[Troubleshooting_25]] - `contains` [EXTRACTED]
+- [[Troubleshooting_30]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/iCloud_Services

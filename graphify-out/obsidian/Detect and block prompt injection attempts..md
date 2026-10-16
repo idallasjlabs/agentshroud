@@ -12,6 +12,6 @@ tags:
 # Detect and block prompt injection attempts.
 
 ## Connections
-- [[PromptGuard_1]] - `rationale_for` [EXTRACTED]
+- [[PromptGuard]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/PIIConfig

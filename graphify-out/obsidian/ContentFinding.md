@@ -19,6 +19,6 @@ tags:
 - [[dot-_scan_xml_dtd()]] - `calls` [EXTRACTED]
 - [[dot-_scan_zero_width()]] - `calls` [EXTRACTED]
 - [[A single finding from content scanning.]] - `rationale_for` [EXTRACTED]
-- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
+- [[web_content_scanner.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebContentScanner

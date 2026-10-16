@@ -12,6 +12,6 @@ tags:
 # Check if the OpenClaw backend is healthy.
 
 ## Connections
-- [[dot-health_check()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-health_check()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy

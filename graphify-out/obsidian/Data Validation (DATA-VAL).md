@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[dot-agentsskillsi-dataREADME]] - `contains` [EXTRACTED]
-- [[Purpose_17]] - `contains` [EXTRACTED]
+- [[Purpose_19]] - `contains` [EXTRACTED]
 - [[Related Skills_5]] - `contains` [EXTRACTED]
-- [[Usage_8]] - `contains` [EXTRACTED]
+- [[Usage_9]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Data_Validation_DATA-VAL

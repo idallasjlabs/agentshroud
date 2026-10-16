@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "PIIConfig"
 location: "L480"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/PIIConfig
 ---
 
 # Context guard should detect tool result manipulation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_context_guard_tool_manipulation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

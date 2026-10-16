@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "AuditChain"
 location: "L125"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/CrossBotTrustLedger
+  - community/AuditChain
 ---
 
 # CrossBotTrustLedger
 
 ## Connections
-- [[dot-__init__()_111]] - `method` [EXTRACTED]
+- [[dot-__init__()_55]] - `method` [EXTRACTED]
 - [[dot-_propagate()]] - `method` [EXTRACTED]
 - [[dot-build_full_mesh()]] - `method` [EXTRACTED]
 - [[dot-get_incidents()]] - `method` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[dot-register_trust_manager()]] - `method` [EXTRACTED]
 - [[CrossBotTrustLedger]] - `uses` [INFERRED]
 - [[Shared trust decay channel for multi-bot deployments.      Usage          ledg]] - `rationale_for` [EXTRACTED]
-- [[TestAuditChain]] - `uses` [INFERRED]
+- [[TestAuditChain_1]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestBotIncidentSeverity]] - `uses` [INFERRED]
 - [[TestBuildFullMesh]] - `uses` [INFERRED]
@@ -42,7 +42,7 @@ tags:
 - [[TestTrustViolationRecording]] - `uses` [INFERRED]
 - [[TrustDecayPolicy_1]] - `uses` [INFERRED]
 - [[TrustManager_3]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
 - [[cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
@@ -50,4 +50,4 @@ tags:
 - [[test_cross_bot_trust_ledger.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/CrossBotTrustLedger
+#graphify/code #graphify/INFERRED #community/AuditChain

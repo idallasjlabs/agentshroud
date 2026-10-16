@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "soc/router.py"
+community: "_FakeRBAC"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/soc/routerpy
+  - community/_FakeRBAC
 ---
 
 # ContributorManager
 
 ## Connections
-- [[dot-__init__()_52]] - `method` [EXTRACTED]
+- [[dot-__init__()_103]] - `method` [EXTRACTED]
 - [[dot-_build_record()]] - `method` [EXTRACTED]
 - [[dot-_ensure_rbac()]] - `method` [EXTRACTED]
 - [[dot-_ensure_teams()]] - `method` [EXTRACTED]
@@ -29,11 +29,11 @@ tags:
 - [[dot-test_paused_user_reports_paused_true()]] - `calls` [EXTRACTED]
 - [[AddCollaboratorRequest]] - `uses` [INFERRED]
 - [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_16]] - `uses` [INFERRED]
+- [[Any_23]] - `uses` [INFERRED]
 - [[ApprovalDecisionRequest]] - `uses` [INFERRED]
 - [[AuditResult]] - `uses` [INFERRED]
 - [[Builds ContributorRecord instances from RBACConfig + TeamsConfig.]] - `rationale_for` [EXTRACTED]
-- [[ContributorRecord]] - `uses` [INFERRED]
+- [[ContributorRecord_1]] - `uses` [INFERRED]
 - [[CreateDelegationRequest]] - `uses` [INFERRED]
 - [[CreateGroupRequest]] - `uses` [INFERRED]
 - [[DisconnectRequest]] - `uses` [INFERRED]
@@ -47,7 +47,7 @@ tags:
 - [[ProgressiveLockdown]] - `calls` [EXTRACTED]
 - [[RBACConfig_4]] - `references` [EXTRACTED]
 - [[RenameGroupRequest]] - `uses` [INFERRED]
-- [[Request_1]] - `uses` [INFERRED]
+- [[Request_2]] - `uses` [INFERRED]
 - [[SCLCaller]] - `uses` [INFERRED]
 - [[SCLInterface]] - `uses` [INFERRED]
 - [[ScanRequest]] - `uses` [INFERRED]
@@ -61,7 +61,7 @@ tags:
 - [[TestPausedFieldWiring]] - `uses` [INFERRED]
 - [[UpdateDisplayNameRequest]] - `uses` [INFERRED]
 - [[UserRole]] - `uses` [INFERRED]
-- [[WebSocket]] - `uses` [INFERRED]
+- [[WebSocket_2]] - `uses` [INFERRED]
 - [[_FakeRBAC_2]] - `uses` [INFERRED]
 - [[contributors.py]] - `contains` [EXTRACTED]
 - [[get_user()]] - `calls` [EXTRACTED]
@@ -70,4 +70,4 @@ tags:
 - [[socrouter.py]] - `imports` [EXTRACTED]
 - [[test_soc_contributors.py]] - `tests` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/soc/routerpy
+#graphify/code #graphify/INFERRED #community/_FakeRBAC

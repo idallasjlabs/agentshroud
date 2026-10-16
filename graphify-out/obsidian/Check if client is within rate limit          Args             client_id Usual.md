@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "rationale"
-community: "create_auth_dependency"
+community: "RateLimiter"
 location: "L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/RateLimiter
 ---
 
 # Check if client is within rate limit          Args:             client_id: Usual
 
 ## Connections
-- [[dot-check()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-check()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/rationale #graphify/EXTRACTED #community/RateLimiter

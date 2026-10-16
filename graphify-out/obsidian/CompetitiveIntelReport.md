@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_make_report()]] - `references` [EXTRACTED]
 - [[dot-test_content_hash_is_deterministic()]] - `calls` [EXTRACTED]
-- [[dot-test_different_content_different_hash()_1]] - `calls` [EXTRACTED]
+- [[dot-test_different_content_different_hash()]] - `calls` [EXTRACTED]
 - [[dot-test_empty_report_id_rejected()]] - `calls` [EXTRACTED]
 - [[dot-test_empty_source_rejected()]] - `calls` [EXTRACTED]
 - [[dot-test_full_valid_report()]] - `calls` [EXTRACTED]
@@ -27,7 +27,7 @@ tags:
 - [[dot-test_report_with_whitespace_only_source_rejected()]] - `calls` [EXTRACTED]
 - [[dot-test_verify_integrity_fails_after_tampering()]] - `calls` [EXTRACTED]
 - [[dot-test_verify_integrity_passes_for_valid_report()]] - `calls` [EXTRACTED]
-- [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
+- [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
 - [[CompetitorEntry]] - `uses` [INFERRED]
 - [[IntelReportStore_1]] - `uses` [INFERRED]
 - [[ReportIntegrityError]] - `uses` [INFERRED]

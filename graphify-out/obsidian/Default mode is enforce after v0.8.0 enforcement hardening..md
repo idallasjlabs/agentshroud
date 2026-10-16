@@ -12,6 +12,6 @@ tags:
 # Default mode is enforce after v0.8.0 enforcement hardening.
 
 ## Connections
-- [[dot-test_default_mode_is_enforce()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_mode_is_enforce()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/SubagentMonitor

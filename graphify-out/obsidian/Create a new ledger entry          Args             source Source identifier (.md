@@ -12,6 +12,6 @@ tags:
 # Create a new ledger entry          Args:             source: Source identifier (
 
 ## Connections
-- [[dot-record()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-record()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/DataLedger

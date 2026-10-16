@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-icloud/SKILL.md"
+source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
 community: "iCloud Services"
 location: "L43"

@@ -20,6 +20,6 @@ tags:
 - [[Option 4 Role-Based Access Control]] - `references` [EXTRACTED]
 - [[SECURITY-POLICY-FINAL]] - `cites` [EXTRACTED]
 - [[ingest_apirouter.py]] - `references` [EXTRACTED]
-- [[sanitizer.py_2]] - `references` [EXTRACTED]
+- [[sanitizer.py]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Implementation_Status

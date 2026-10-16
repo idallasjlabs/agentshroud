@@ -12,7 +12,7 @@ tags:
 # DNSVerdict
 
 ## Connections
-- [[dot-check()_5]] - `references` [EXTRACTED]
+- [[dot-check()_6]] - `references` [EXTRACTED]
 - [[MockDNSVerdict]] - `shares_data_with` [AMBIGUOUS]
 - [[dns_filter.py_2]] - `contains` [EXTRACTED]
 

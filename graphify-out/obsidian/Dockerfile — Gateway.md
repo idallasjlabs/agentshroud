@@ -19,7 +19,7 @@ tags:
 - [[Environment Variables_16]] - `contains` [EXTRACTED]
 - [[Image Labels (OCI)_1]] - `contains` [EXTRACTED]
 - [[Pre-installed Tools_1]] - `contains` [EXTRACTED]
-- [[Related Notes_37]] - `contains` [EXTRACTED]
+- [[Related Notes_27]] - `contains` [EXTRACTED]
 - [[Runtime Command]] - `contains` [EXTRACTED]
 - [[Security Hardening]] - `contains` [EXTRACTED]
 - [[test_openclaw_photo.sh]] - `references` [EXTRACTED]

@@ -12,6 +12,6 @@ tags:
 # Create from dictionary for JSON deserialization.
 
 ## Connections
-- [[dot-from_dict()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-from_dict()_3]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

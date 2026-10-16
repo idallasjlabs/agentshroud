@@ -12,7 +12,7 @@ tags:
 # CorrelationSummary
 
 ## Connections
-- [[dot-to_dict()_12]] - `method` [EXTRACTED]
+- [[dot-to_dict()_5]] - `method` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `semantically_similar_to` [INFERRED]
 - [[_renderCorrelation()]] - `shares_data_with` [INFERRED]
 - [[build_correlation_summary()]] - `references` [EXTRACTED]

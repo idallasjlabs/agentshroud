@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AgentShroud Text Interfaces]] - `contains` [EXTRACTED]
 - [[Controls]] - `contains` [EXTRACTED]
-- [[Usage_2]] - `contains` [EXTRACTED]
+- [[Usage_3]] - `contains` [EXTRACTED]
 - [[What it Shows]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Control_Center

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "rationale"
-community: "AgentRegistry"
+community: "KeyVault"
 location: "L200"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/KeyVault
 ---
 
 # Decrypt and return as parsed JSON dict.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-decrypt_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry
+#graphify/rationale #graphify/EXTRACTED #community/KeyVault

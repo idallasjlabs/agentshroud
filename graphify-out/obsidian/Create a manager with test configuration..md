@@ -12,6 +12,6 @@ tags:
 # Create a manager with test configuration.
 
 ## Connections
-- [[dot-manager()]] - `rationale_for` [EXTRACTED]
+- [[dot-manager()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager

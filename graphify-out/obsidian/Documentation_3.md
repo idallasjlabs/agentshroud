@@ -1,17 +1,17 @@
 ---
-source_file: "branding/guidelines/brand-guidelines.md"
+source_file: "docker/README.md"
 type: "document"
-community: "AgentShroud Brand Guidelines"
-location: "L121"
+community: "AgentShroud Docker Configuration"
+location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Brand_Guidelines
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # Documentation
 
 ## Connections
-- [[Brand Applications]] - `contains` [EXTRACTED]
+- [[Files_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

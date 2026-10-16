@@ -20,7 +20,7 @@ tags:
 - [[DifferentialPIIDetector_1]] - `uses` [INFERRED]
 - [[PIIHit]] - `uses` [INFERRED]
 - [[PIIHitSeverity]] - `uses` [INFERRED]
-- [[default_config()_2]] - `references` [EXTRACTED]
+- [[default_config()_1]] - `references` [EXTRACTED]
 - [[detector()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector

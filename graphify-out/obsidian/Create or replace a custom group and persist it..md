@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Action"
+community: "telegram_proxy.py"
 location: "L265"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Action
+  - community/telegram_proxypy
 ---
 
 # Create or replace a custom group and persist it.
@@ -15,4 +15,4 @@ tags:
 - [[dot-create_group()]] - `rationale_for` [EXTRACTED]
 - [[dot-delete_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Action
+#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy

@@ -12,6 +12,6 @@ tags:
 # Check health of one or all agent targets          Args:             target: Spec
 
 ## Connections
-- [[dot-health_check()]] - `rationale_for` [EXTRACTED]
+- [[dot-health_check()_5]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AgentTarget

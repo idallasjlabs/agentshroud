@@ -12,6 +12,6 @@ tags:
 # Configuration / Environment Variables
 
 ## Connections
-- [[key_vault.py_1]] - `contains` [EXTRACTED]
+- [[key_vault.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

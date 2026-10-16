@@ -12,9 +12,9 @@ tags:
 # Data Validation (DATA-VAL)
 
 ## Connections
-- [[Purpose_43]] - `contains` [EXTRACTED]
+- [[Purpose_45]] - `contains` [EXTRACTED]
 - [[Related Skills_31]] - `contains` [EXTRACTED]
-- [[Usage_34]] - `contains` [EXTRACTED]
+- [[Usage_35]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-dataREADME]] - `contains` [EXTRACTED]
 

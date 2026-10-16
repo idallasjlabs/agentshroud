@@ -12,11 +12,11 @@ tags:
 # ContextIntegrityScorer
 
 ## Connections
-- [[dot-__init__()_40]] - `method` [EXTRACTED]
+- [[dot-__init__()_149]] - `method` [EXTRACTED]
 - [[dot-score_context()]] - `method` [EXTRACTED]
 - [[ContextSegment]] - `uses` [INFERRED]
 - [[IntegrityScore]] - `shares_data_with` [EXTRACTED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
 - [[Scores the integrity of a session's context.      Usage          scorer = Cont]] - `rationale_for` [EXTRACTED]
 - [[SystemPromptFingerprint]] - `uses` [INFERRED]
 - [[TestContextIntegrityScorer]] - `uses` [INFERRED]

@@ -12,6 +12,6 @@ tags:
 # Development Phases
 
 ## Connections
-- [[Current Status_5]] - `contains` [EXTRACTED]
+- [[Current Status_7]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud__Project_Knowledge_Base

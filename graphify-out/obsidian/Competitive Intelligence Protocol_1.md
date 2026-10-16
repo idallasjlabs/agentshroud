@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/agents/openclaw-identity.md"
 type: "document"
-community: "IDENTITY.md - Who I Am"
+community: "auth.py"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/IDENTITYmd_-_Who_I_Am
+  - community/authpy
 ---
 
 # Competitive Intelligence Protocol
@@ -16,4 +16,4 @@ tags:
 - [[IDENTITY.md - Who I Am_1]] - `contains` [EXTRACTED]
 - [[OpenClawAgentShroud Bot Identity]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/IDENTITYmd_-_Who_I_Am
+#graphify/document #graphify/EXTRACTED #community/authpy

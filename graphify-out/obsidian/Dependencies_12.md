@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "🛡️ AgentShroud Release Plan"
-location: "L177"
+community: ".agents/skills/i-tw/SKILL.md"
+location: "L246"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_AgentShroud_Release_Plan
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # Dependencies
 
 ## Connections
-- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
+- [[→ {site site1, test_mode True, output_prefix _testsite1}_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

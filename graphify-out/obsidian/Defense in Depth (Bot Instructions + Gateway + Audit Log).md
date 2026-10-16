@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "rationale"
-community: "Git History Purge Plan"
+community: "AgentShroud Security Value Proposition - Revised"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Git_History_Purge_Plan
+  - community/AgentShroud_Security_Value_Proposition_-_Revised
 ---
 
 # Defense in Depth (Bot Instructions + Gateway + Audit Log)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SECURITY-IMPLEMENTATION-VERIFICATION]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Git_History_Purge_Plan
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_Revised

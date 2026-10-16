@@ -12,6 +12,6 @@ tags:
 # Check group admin status via TeamsConfig if available.
 
 ## Connections
-- [[dot-is_group_admin()]] - `rationale_for` [EXTRACTED]
+- [[dot-is_group_admin()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

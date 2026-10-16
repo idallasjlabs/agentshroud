@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/attack-teardowns-rovoblast-cross-turn.md"
 type: "concept"
-community: "RovoBlast Attack (Atlassian Rovo AI)"
+community: "A2AMethod"
 location: "lines 39-49"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/RovoBlast_Attack_Atlassian_Rovo_AI
+  - community/A2AMethod
 ---
 
 # Cross-Turn Correlation Capability
@@ -18,4 +18,4 @@ tags:
 - [[context_guard.py Provenance Tagging (ContextSegment)]] - `implements` [EXTRACTED]
 - [[multi_turn_tracker.py  SubagentMonitor]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/RovoBlast_Attack_Atlassian_Rovo_AI
+#graphify/concept #graphify/EXTRACTED #community/A2AMethod

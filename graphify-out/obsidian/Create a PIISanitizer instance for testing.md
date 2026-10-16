@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "rationale"
-community: "ApprovalQueueConfig"
+community: "DataLedger"
 location: "L174"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/DataLedger
 ---
 
 # Create a PIISanitizer instance for testing
 
 ## Connections
-- [[sanitizer()_4]] - `rationale_for` [EXTRACTED]
+- [[sanitizer()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/rationale #graphify/EXTRACTED #community/DataLedger

@@ -12,7 +12,7 @@ tags:
 # DifferentialPIIDetector
 
 ## Connections
-- [[dot-__init__()_173]] - `method` [EXTRACTED]
+- [[dot-__init__()_144]] - `method` [EXTRACTED]
 - [[dot-_deduplicate()]] - `method` [EXTRACTED]
 - [[dot-_detect_pii()]] - `method` [EXTRACTED]
 - [[dot-_detect_presidio()]] - `method` [EXTRACTED]
@@ -21,7 +21,7 @@ tags:
 - [[dot-_redact()]] - `method` [EXTRACTED]
 - [[dot-_scan()]] - `method` [EXTRACTED]
 - [[dot-scan_prompt()]] - `method` [EXTRACTED]
-- [[dot-scan_tool_result()_2]] - `method` [EXTRACTED]
+- [[dot-scan_tool_result()]] - `method` [EXTRACTED]
 - [[A2APolicyEngine]] - `uses` [INFERRED]
 - [[A2AProxy]] - `uses` [INFERRED]
 - [[Asymmetric PII detector lower floor for tool results, 0.9 for prompts.      Thi]] - `rationale_for` [EXTRACTED]
@@ -42,7 +42,7 @@ tags:
 - [[_Event]] - `uses` [INFERRED]
 - [[_FakeRecognizerResult]] - `uses` [INFERRED]
 - [[_StubAuditStore]] - `uses` [INFERRED]
-- [[_StubForwarder]] - `uses` [INFERRED]
+- [[_StubForwarder_1]] - `uses` [INFERRED]
 - [[differential_pii_detector.py]] - `contains` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]

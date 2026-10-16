@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "EgressAttempt"
+community: "EgressFilterConfig"
 location: "L94"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressAttempt
+  - community/EgressFilterConfig
 ---
 
 # Check if port is allowed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-matches_port()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressAttempt
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

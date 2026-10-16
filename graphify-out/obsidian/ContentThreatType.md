@@ -12,8 +12,8 @@ tags:
 # ContentThreatType
 
 ## Connections
-- [[Enum_1]] - `inherits` [EXTRACTED]
-- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]
 - [[TestMemoryLifecycleManager]] - `uses` [INFERRED]

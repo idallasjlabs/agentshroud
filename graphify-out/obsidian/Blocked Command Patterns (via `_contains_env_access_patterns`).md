@@ -12,6 +12,6 @@ tags:
 # Blocked Command Patterns (via `_contains_env_access_patterns`)
 
 ## Connections
-- [[env_guard.py_1]] - `contains` [EXTRACTED]
+- [[env_guard.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/env_guardpy

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
+community: "PIIConfig"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/PIIConfig
 ---
 
 # CanaryTripwire
 
 ## Connections
-- [[dot-__init__()_67]] - `method` [EXTRACTED]
+- [[dot-__init__()_120]] - `method` [EXTRACTED]
 - [[dot-_check_encoded()]] - `method` [EXTRACTED]
 - [[dot-_check_plain()]] - `method` [EXTRACTED]
 - [[dot-_normalize()]] - `method` [EXTRACTED]
@@ -21,8 +21,8 @@ tags:
 - [[dot-register_canary()]] - `method` [EXTRACTED]
 - [[dot-scan()_1]] - `method` [EXTRACTED]
 - [[dot-scan_response()_1]] - `method` [EXTRACTED]
-- [[dot-setup_method()_13]] - `calls` [EXTRACTED]
-- [[dot-test_custom_config()]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_22]] - `calls` [EXTRACTED]
+- [[dot-test_custom_config()_1]] - `calls` [EXTRACTED]
 - [[dot-test_no_canaries()]] - `calls` [EXTRACTED]
 - [[dot-test_scan_response_no_block_when_block_disabled()]] - `calls` [EXTRACTED]
 - [[TestCanaryTripwire]] - `uses` [INFERRED]
@@ -43,8 +43,8 @@ tags:
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[pipeline()]] - `calls` [EXTRACTED]
-- [[run()]] - `calls` [EXTRACTED]
+- [[run()_4]] - `calls` [EXTRACTED]
 - [[test_canary_tripwire.py]] - `imports` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

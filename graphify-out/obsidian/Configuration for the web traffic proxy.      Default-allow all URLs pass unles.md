@@ -12,6 +12,6 @@ tags:
 # Configuration for the web traffic proxy.      Default-allow: all URLs pass unles
 
 ## Connections
-- [[WebProxyConfig]] - `rationale_for` [EXTRACTED]
+- [[WebProxyConfig_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig

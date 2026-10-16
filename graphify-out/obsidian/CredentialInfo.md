@@ -27,7 +27,7 @@ tags:
 - [[dot-test_not_due_without_force_is_rejected()]] - `calls` [EXTRACTED]
 - [[dot-test_should_rotate()]] - `calls` [EXTRACTED]
 - [[dot-test_should_warn()]] - `calls` [EXTRACTED]
-- [[CredentialRotationPolicy]] - `uses` [INFERRED]
+- [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
 - [[Information about a managed credential.]] - `rationale_for` [EXTRACTED]
 - [[KeyRotationConfig_1]] - `uses` [INFERRED]
 - [[MockValidator]] - `uses` [INFERRED]

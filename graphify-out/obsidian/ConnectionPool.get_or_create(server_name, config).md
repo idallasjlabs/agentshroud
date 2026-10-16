@@ -12,6 +12,6 @@ tags:
 # ConnectionPool.get_or_create(server_name, config)
 
 ## Connections
-- [[Function Details_24]] - `contains` [EXTRACTED]
+- [[Function Details_25]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

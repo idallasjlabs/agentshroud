@@ -16,7 +16,7 @@ tags:
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
 - [[IntelReportStore_1]] - `uses` [INFERRED]
-- [[api.py]] - `contains` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
 - [[import_config()]] - `references` [EXTRACTED]
 - [[update_config()]] - `references` [EXTRACTED]
 

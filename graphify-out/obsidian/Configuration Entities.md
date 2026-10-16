@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "Common Operations"
+community: "AgentShroud Data Dictionary"
 location: "L208"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Common_Operations
+  - community/AgentShroud_Data_Dictionary
 ---
 
 # Configuration Entities
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Data Dictionary]] - `contains` [EXTRACTED]
 - [[Configuration Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Common_Operations
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Dictionary

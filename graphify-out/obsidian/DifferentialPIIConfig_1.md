@@ -12,8 +12,8 @@ tags:
 # DifferentialPIIConfig
 
 ## Connections
-- [[dot-__init__()_173]] - `references` [EXTRACTED]
-- [[dot-__post_init__()_9]] - `method` [EXTRACTED]
+- [[dot-__init__()_144]] - `references` [EXTRACTED]
+- [[dot-__post_init__()_6]] - `method` [EXTRACTED]
 - [[A2APolicyEngine]] - `uses` [INFERRED]
 - [[A2AProxy]] - `uses` [INFERRED]
 - [[Configuration for DifferentialPIIDetector.      Attributes         tool_result_]] - `rationale_for` [EXTRACTED]
@@ -31,7 +31,7 @@ tags:
 - [[_Event]] - `uses` [INFERRED]
 - [[_FakeRecognizerResult]] - `uses` [INFERRED]
 - [[_StubAuditStore]] - `uses` [INFERRED]
-- [[_StubForwarder]] - `uses` [INFERRED]
+- [[_StubForwarder_1]] - `uses` [INFERRED]
 - [[differential_pii_detector.py]] - `contains` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `imports` [EXTRACTED]
 - [[test_differential_pii_detector.py]] - `imports` [EXTRACTED]

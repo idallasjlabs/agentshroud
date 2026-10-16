@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sec-defense/README.md"
 type: "document"
-community: "agentshroud-blueteam/SKILL.md"
+community: "InjectionAction"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/InjectionAction
 ---
 
 # Blue Team Security Auditor README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/InjectionAction

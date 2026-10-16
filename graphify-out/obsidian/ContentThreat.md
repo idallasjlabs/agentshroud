@@ -12,14 +12,14 @@ tags:
 # ContentThreat
 
 ## Connections
-- [[dot-__post_init__()]] - `method` [EXTRACTED]
+- [[dot-__post_init__()_1]] - `method` [EXTRACTED]
 - [[dot-get_recent_threats()]] - `references` [EXTRACTED]
 - [[dot-sanitize_content()]] - `references` [EXTRACTED]
 - [[dot-scan_content_for_threats()]] - `references` [EXTRACTED]
 - [[dot-test_threat_cleanup()]] - `calls` [EXTRACTED]
 - [[dot-validate_memory_write()]] - `references` [EXTRACTED]
 - [[Detected threat in memory file content.]] - `rationale_for` [EXTRACTED]
-- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
+- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
 - [[MemoryLifecycleManager]] - `references` [EXTRACTED]
 - [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]

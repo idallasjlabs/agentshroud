@@ -12,7 +12,7 @@ tags:
 # ControlCenter
 
 ## Connections
-- [[dot-__init__()_105]] - `method` [EXTRACTED]
+- [[dot-__init__()_102]] - `method` [EXTRACTED]
 - [[dot-clear_screen()]] - `method` [EXTRACTED]
 - [[dot-draw_approvals()]] - `method` [EXTRACTED]
 - [[dot-draw_box()]] - `method` [EXTRACTED]

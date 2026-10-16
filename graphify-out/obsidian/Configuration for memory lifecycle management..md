@@ -12,6 +12,6 @@ tags:
 # Configuration for memory lifecycle management.
 
 ## Connections
-- [[MemoryLifecycleConfig_1]] - `rationale_for` [EXTRACTED]
+- [[MemoryLifecycleConfig]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

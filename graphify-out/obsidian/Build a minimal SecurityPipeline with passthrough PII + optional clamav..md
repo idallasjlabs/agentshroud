@@ -12,6 +12,6 @@ tags:
 # Build a minimal SecurityPipeline with passthrough PII + optional clamav.
 
 ## Connections
-- [[_make_pipeline()_4]] - `rationale_for` [EXTRACTED]
+- [[_make_pipeline()_3]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_clamav_pipelinepy

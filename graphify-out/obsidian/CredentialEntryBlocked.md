@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-can_enter_credentials()]] - `calls` [EXTRACTED]
-- [[Exception_2]] - `inherits` [EXTRACTED]
+- [[Exception_1]] - `inherits` [EXTRACTED]
 - [[TestCredentialProtection]] - `uses` [INFERRED]
 - [[TestScreenshotAnalysis]] - `uses` [INFERRED]
 - [[TestSocialEngineeringDetection]] - `uses` [INFERRED]

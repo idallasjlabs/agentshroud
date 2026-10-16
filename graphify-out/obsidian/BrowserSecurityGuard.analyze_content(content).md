@@ -12,6 +12,6 @@ tags:
 # BrowserSecurityGuard.analyze_content(content)
 
 ## Connections
-- [[Function Details_29]] - `contains` [EXTRACTED]
+- [[Function Details_30]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/browser_securitypy

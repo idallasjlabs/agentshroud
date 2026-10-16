@@ -12,6 +12,6 @@ tags:
 # Create a UserSessionManager with a temp base workspace and an owner.
 
 ## Connections
-- [[mgr()_1]] - `rationale_for` [EXTRACTED]
+- [[mgr()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/UserSessionManager
