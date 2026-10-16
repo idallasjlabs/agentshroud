@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/runtime/docker_engine.py"
+source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "DockerEngine"
-location: "L96"
+community: "ContainerEngine"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DockerEngine
+  - community/ContainerEngine
 ---
 
 # .stop()
 
 ## Connections
-- [[dot-_cmd()_1]] - `calls` [EXTRACTED]
-- [[DockerEngine]] - `method` [EXTRACTED]
+- [[ContainerEngine]] - `method` [EXTRACTED]
+- [[Stop a running container.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DockerEngine
+#graphify/code #graphify/EXTRACTED #community/ContainerEngine

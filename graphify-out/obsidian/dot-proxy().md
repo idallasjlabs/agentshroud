@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "RBACConfig"
+community: "diagrams/README.md"
 location: "L285"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/diagrams/READMEmd
 ---
 
 # .proxy()
@@ -15,4 +15,4 @@ tags:
 - [[TelegramAPIProxy]] - `calls` [EXTRACTED]
 - [[TestInboundChokepointWiring]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/diagrams/READMEmd

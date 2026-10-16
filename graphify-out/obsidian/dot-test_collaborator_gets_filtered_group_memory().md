@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "UserSessionManager"
+community: "DataLedger"
 location: "L204"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/DataLedger
 ---
 
 # .test_collaborator_gets_filtered_group_memory()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPrivateContentDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/DataLedger

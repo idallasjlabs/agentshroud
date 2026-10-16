@@ -12,7 +12,7 @@ tags:
 # .register_credential()
 
 ## Connections
-- [[Any_18]] - `references` [EXTRACTED]
+- [[Any_30]] - `references` [EXTRACTED]
 - [[CredentialInfo]] - `calls` [EXTRACTED]
 - [[KeyRotationManager]] - `method` [EXTRACTED]
 - [[Register a credential for rotation management.]] - `rationale_for` [EXTRACTED]

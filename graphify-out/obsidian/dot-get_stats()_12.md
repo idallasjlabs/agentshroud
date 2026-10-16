@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/slack_proxy.py"
+source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "AsyncMock"
-location: "L439"
+community: "test_dashboard_endpoints.py"
+location: "L385"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/test_dashboard_endpointspy
 ---
 
 # .get_stats()
 
 ## Connections
-- [[SlackAPIProxy_1]] - `method` [EXTRACTED]
+- [[Any_50]] - `references` [EXTRACTED]
+- [[WebhookReceiver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

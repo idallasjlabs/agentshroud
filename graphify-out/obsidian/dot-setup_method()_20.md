@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
 community: "TestOutboundInfoFilter"
-location: "L22"
+location: "L521"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,7 +13,6 @@ tags:
 
 ## Connections
 - [[OutboundInfoFilter]] - `calls` [EXTRACTED]
-- [[Set up test fixtures._2]] - `rationale_for` [EXTRACTED]
-- [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
+- [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

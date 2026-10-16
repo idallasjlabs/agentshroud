@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_soc_contributors.py"
+source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "_FakeRBAC"
-location: "L28"
+community: "_req"
+location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/_req
 ---
 
 # .get_user_role()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeRBAC_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/_req

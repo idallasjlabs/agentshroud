@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_trust_manager.py"
+source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "PIIConfig"
-location: "L63"
+community: "AgentTarget"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/AgentTarget
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[TestTrustLevels]] - `method` [EXTRACTED]
-- [[TrustConfig]] - `calls` [EXTRACTED]
+- [[TestKeyVaultConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

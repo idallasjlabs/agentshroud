@@ -15,6 +15,6 @@ tags:
 - [[CrossBotTrustLedger]] - `references` [EXTRACTED]
 - [[Propagation to a peer with no registered TrustManager must not raise.]] - `rationale_for` [EXTRACTED]
 - [[TestIncidentPropagation]] - `method` [EXTRACTED]
-- [[TrustManager_3]] - `references` [EXTRACTED]
+- [[TrustManager_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

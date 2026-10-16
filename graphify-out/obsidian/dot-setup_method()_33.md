@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_injection_scan.py"
+source_file: "gateway/tests/test_log_sanitizer.py"
 type: "code"
-community: "InjectionAction"
-location: "L23"
+community: "TestLogSanitizer"
+location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionAction
+  - community/TestLogSanitizer
 ---
 
 # .setup_method()
 
 ## Connections
-- [[Set up test fixtures._4]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultInjectionScanner]] - `method` [EXTRACTED]
-- [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
+- [[LogSanitizer]] - `calls` [EXTRACTED]
+- [[TestLogSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionAction
+#graphify/code #graphify/EXTRACTED #community/TestLogSanitizer

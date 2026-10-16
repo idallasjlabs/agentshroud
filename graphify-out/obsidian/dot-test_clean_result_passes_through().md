@@ -12,6 +12,6 @@ tags:
 # .test_clean_result_passes_through()
 
 ## Connections
-- [[TestPIIDetection_2]] - `method` [EXTRACTED]
+- [[TestPIIDetection_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

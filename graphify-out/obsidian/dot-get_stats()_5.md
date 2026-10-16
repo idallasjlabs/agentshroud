@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/rate_limit_guard.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "RateLimitGuard"
-location: "L218"
+community: "TestOutboundInfoFilter"
+location: "L471"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimitGuard
+  - community/TestOutboundInfoFilter
 ---
 
 # .get_stats()
 
 ## Connections
-- [[RateLimitGuard]] - `method` [EXTRACTED]
+- [[Any_28]] - `references` [EXTRACTED]
+- [[Get filter statistics.]] - `rationale_for` [EXTRACTED]
+- [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimitGuard
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

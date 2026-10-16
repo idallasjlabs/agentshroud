@@ -16,8 +16,8 @@ tags:
 - [[dot-_get_sanitizer_for_tool()]] - `calls` [EXTRACTED]
 - [[dot-_log_redaction_audit()]] - `calls` [EXTRACTED]
 - [[dot-_reconstruct_result()]] - `calls` [EXTRACTED]
-- [[Any_50]] - `references` [EXTRACTED]
-- [[RedactionResult]] - `references` [EXTRACTED]
+- [[Any_32]] - `references` [EXTRACTED]
+- [[RedactionResult_1]] - `references` [EXTRACTED]
 - [[Sanitize a tool result for PII before it reaches the agent          Args]] - `rationale_for` [EXTRACTED]
 - [[ToolResultSanitizer]] - `method` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "SlackAPIProxy"
+community: "AsyncMock"
 location: "L488"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/AsyncMock
 ---
 
 # .kick_channel_member()
@@ -16,4 +16,4 @@ tags:
 - [[Remove a Slack user from a channel. Returns True on success.]] - `rationale_for` [EXTRACTED]
 - [[SlackAPIProxy_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

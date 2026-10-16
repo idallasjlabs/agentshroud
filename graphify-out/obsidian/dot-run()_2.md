@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/proxy/slack_socket_client.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "SlackSocketClient"
-location: "L66"
+community: "PodmanEngine"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackSocketClient
+  - community/PodmanEngine
 ---
 
 # .run()
 
 ## Connections
-- [[dot-_connect_and_handle()]] - `calls` [EXTRACTED]
-- [[dot-_get_wss_url()]] - `calls` [EXTRACTED]
-- [[Main reconnect loop. Runs until stop() is called.]] - `rationale_for` [EXTRACTED]
-- [[SlackSocketClient]] - `method` [EXTRACTED]
-- [[compute_backoff()]] - `calls` [EXTRACTED]
+- [[PodmanEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackSocketClient
+#graphify/code #graphify/EXTRACTED #community/PodmanEngine

@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/tests/test_output_canary.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "TestOutputCanary"
-location: "L20"
+community: "MiddlewareManager"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutputCanary
+  - community/MiddlewareManager
 ---
 
 # .setup_method()
 
 ## Connections
-- [[CanaryConfig]] - `calls` [EXTRACTED]
-- [[OutputCanary]] - `calls` [EXTRACTED]
-- [[Set up test fixtures._1]] - `rationale_for` [EXTRACTED]
-- [[TestOutputCanary]] - `method` [EXTRACTED]
+- [[MemoryIntegrityConfig_1]] - `calls` [EXTRACTED]
+- [[MemoryIntegrityMonitor]] - `calls` [EXTRACTED]
+- [[Set up test environment._1]] - `rationale_for` [EXTRACTED]
+- [[TestMemoryIntegrityMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutputCanary
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

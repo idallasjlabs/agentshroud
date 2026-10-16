@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "OAuthSecurityValidator"
+community: "AlertDispatcher"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OAuthSecurityValidator
+  - community/AlertDispatcher
 ---
 
 # .test_empty_state_rejected()
@@ -15,4 +15,4 @@ tags:
 - [[OAuthRequest]] - `calls` [EXTRACTED]
 - [[TestStateValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

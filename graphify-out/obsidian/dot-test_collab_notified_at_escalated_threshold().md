@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "TestCollabLockdownNotifications"
+community: "ProgressiveLockdown"
 location: "L214"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCollabLockdownNotifications
+  - community/ProgressiveLockdown
 ---
 
 # .test_collab_notified_at_escalated_threshold()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_setup_proxy_with_capture()]] - `calls` [EXTRACTED]
 - [[TestCollabLockdownNotifications]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCollabLockdownNotifications
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

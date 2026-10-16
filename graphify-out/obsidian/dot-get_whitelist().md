@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "MiddlewareManager"
+community: "ConsentFramework"
 location: "L81"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ConsentFramework
 ---
 
 # .get_whitelist()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ConsentFramework]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework

@@ -12,7 +12,7 @@ tags:
 # .score_reversibility()
 
 ## Connections
-- [[Any_37]] - `references` [EXTRACTED]
+- [[Any_76]] - `references` [EXTRACTED]
 - [[Return a reversibility score for the given tool call (1.0 = safe, 0.1 = irrevers]] - `rationale_for` [EXTRACTED]
 - [[ReversibilityScore]] - `references` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `method` [EXTRACTED]

@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/security/canary_tripwire.py"
+source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "PIIConfig"
-location: "L127"
+community: "Phase 1 — Raw Collection"
+location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/Phase_1__Raw_Collection
 ---
 
 # .scan_response()
 
 ## Connections
-- [[dot-scan()_1]] - `calls` [EXTRACTED]
-- [[CanaryTripwire]] - `method` [EXTRACTED]
-- [[Pipeline-compatible bridge scan response text and return TripwireResponse.]] - `rationale_for` [EXTRACTED]
-- [[TripwireResponse]] - `references` [EXTRACTED]
+- [[dot-_calculate_similarity()]] - `calls` [EXTRACTED]
+- [[dot-_redact_fuzzy_match()]] - `calls` [EXTRACTED]
+- [[PromptProtection]] - `method` [EXTRACTED]
+- [[RedactionResult_3]] - `references` [EXTRACTED]
+- [[Scan text for protected content and return redacted version.          Args]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/Phase_1__Raw_Collection

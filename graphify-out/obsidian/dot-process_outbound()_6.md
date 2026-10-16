@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
 community: "AgentTarget"
-location: "L42"
+location: "L421"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,7 @@ tags:
 # .process_outbound()
 
 ## Connections
-- [[_PipelineCaptor]] - `method` [EXTRACTED]
+- [[dot-test_agent_id_propagated_for_hermes()]] - `calls` [EXTRACTED]
+- [[_TrustCaptor]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AgentTarget

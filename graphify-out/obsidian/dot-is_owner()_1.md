@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/rbac_config.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "RBACConfig"
-location: "L169"
+community: "test_soc_router_coverage.py"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/test_soc_router_coveragepy
 ---
 
 # .is_owner()
 
 ## Connections
-- [[Check if user is the owner (any platform).]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_4]] - `method` [EXTRACTED]
+- [[FakeCaller]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

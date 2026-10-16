@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-verify()]] - `calls` [EXTRACTED]
-- [[MFAGuard_1]] - `method` [EXTRACTED]
+- [[MFAGuard_2]] - `method` [EXTRACTED]
 - [[Return True if ``action_type`` requires a second factor right now.          Two]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

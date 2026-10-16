@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/slack_socket_client.py"
+source_file: "gateway/proxy/dns_blocklist.py"
 type: "code"
-community: "SlackSocketClient"
-location: "L93"
+community: "DNSBlocklist"
+location: "L273"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackSocketClient
+  - community/DNSBlocklist
 ---
 
 # .stop()
 
 ## Connections
-- [[Signal the run loop to exit.]] - `rationale_for` [EXTRACTED]
-- [[SlackSocketClient]] - `method` [EXTRACTED]
+- [[DNSBlocklist]] - `method` [EXTRACTED]
+- [[Stop periodic updates.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackSocketClient
+#graphify/code #graphify/EXTRACTED #community/DNSBlocklist

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "GroupConfig"
+community: "telegram_proxy.py"
 location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupConfig
+  - community/telegram_proxypy
 ---
 
 # .get_user_groups()
@@ -19,4 +19,4 @@ tags:
 - [[Return all groups the user belongs to.]] - `rationale_for` [EXTRACTED]
 - [[TeamsConfig_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupConfig
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

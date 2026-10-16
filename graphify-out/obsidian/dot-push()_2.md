@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/runtime/docker_engine.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "DockerEngine"
-location: "L51"
+community: "dashboard_endpoints.py"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DockerEngine
+  - community/dashboard_endpointspy
 ---
 
 # .push()
 
 ## Connections
-- [[dot-_cmd()_1]] - `calls` [EXTRACTED]
-- [[DockerEngine]] - `method` [EXTRACTED]
+- [[dot-append()]] - `calls` [EXTRACTED]
+- [[Alert]] - `calls` [EXTRACTED]
+- [[AlertStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DockerEngine
+#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy

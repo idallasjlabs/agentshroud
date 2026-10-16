@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "KeyVault"
+community: "KillSwitchMonitor"
 location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/KillSwitchMonitor
 ---
 
 # .rotate()
@@ -18,4 +18,4 @@ tags:
 - [[Re-encrypt blobs with a new master secret.          Args             blobs Lis]] - `rationale_for` [EXTRACTED]
 - [[_secure_zero()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

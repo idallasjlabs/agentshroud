@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "MCPInspector"
+community: "MCPPermissionManager"
 location: "L404"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPInspector
+  - community/MCPPermissionManager
 ---
 
 # .test_filter_by_server()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAuditQueries]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPInspector
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

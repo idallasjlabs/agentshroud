@@ -17,7 +17,7 @@ tags:
 - [[dot-is_action_allowed()]] - `calls` [EXTRACTED]
 - [[dot-is_tool_allowed()_1]] - `calls` [EXTRACTED]
 - [[Get current trust level and score for an agent.]] - `rationale_for` [EXTRACTED]
-- [[TrustLevel_1]] - `references` [EXTRACTED]
-- [[TrustManager]] - `method` [EXTRACTED]
+- [[TrustLevel_2]] - `references` [EXTRACTED]
+- [[TrustManager_4]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "AuditChain"
+community: "CrossBotTrustLedger"
 location: "L213"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/CrossBotTrustLedger
 ---
 
 # .peers_of()
@@ -16,4 +16,4 @@ tags:
 - [[CrossBotTrustLedger_1]] - `method` [EXTRACTED]
 - [[Return the registered peers for bot_name (empty list if none).]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_encoding_detector.py"
+source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "PIIConfig"
-location: "L10"
+community: "TestLoadFromText"
+location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/TestLoadFromText
 ---
 
 # .setup_method()
 
 ## Connections
-- [[EncodingDetector]] - `calls` [EXTRACTED]
-- [[TestEncodingDetector]] - `method` [EXTRACTED]
+- [[DNSBlocklist]] - `calls` [EXTRACTED]
+- [[TestLoadFromText]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/TestLoadFromText

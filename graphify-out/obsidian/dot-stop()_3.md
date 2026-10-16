@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/proxy/dns_blocklist.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "DNSBlocklist"
-location: "L273"
+community: "StdioConnection"
+location: "L137"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSBlocklist
+  - community/StdioConnection
 ---
 
 # .stop()
 
 ## Connections
-- [[DNSBlocklist]] - `method` [EXTRACTED]
-- [[Stop periodic updates.]] - `rationale_for` [EXTRACTED]
+- [[dot-test_send_request_and_session_reuse()]] - `calls` [EXTRACTED]
+- [[dot-test_start_send_and_stop()]] - `calls` [EXTRACTED]
+- [[dot-test_stop_kills_on_wait_timeout()]] - `calls` [EXTRACTED]
+- [[FakeConn]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSBlocklist
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

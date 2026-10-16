@@ -12,8 +12,8 @@ tags:
 # .test_disabled_server_blocked()
 
 ## Connections
-- [[MCPProxy]] - `calls` [EXTRACTED]
-- [[MCPProxyConfig_3]] - `calls` [EXTRACTED]
+- [[MCPProxy_1]] - `calls` [EXTRACTED]
+- [[MCPProxyConfig_2]] - `calls` [EXTRACTED]
 - [[MCPServerConfig_2]] - `calls` [EXTRACTED]
 - [[MCPToolCall_1]] - `calls` [EXTRACTED]
 - [[TestAllowDenyList]] - `method` [EXTRACTED]

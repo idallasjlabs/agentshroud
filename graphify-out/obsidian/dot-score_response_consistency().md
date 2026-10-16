@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "MultiTurnTracker"
+community: "ConsistencyScore"
 location: "L451"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MultiTurnTracker
+  - community/ConsistencyScore
 ---
 
 # .score_response_consistency()
@@ -16,4 +16,4 @@ tags:
 - [[ConsistencyScore]] - `calls` [EXTRACTED]
 - [[MultiTurnTracker]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker
+#graphify/code #graphify/EXTRACTED #community/ConsistencyScore

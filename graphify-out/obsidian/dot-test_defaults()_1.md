@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_models.py"
+source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L80"
+community: "test_runtime_engines.py"
+location: "L638"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/test_runtime_enginespy
 ---
 
 # .test_defaults()
 
 ## Connections
-- [[ServiceDescriptor_1]] - `calls` [EXTRACTED]
-- [[TestServiceDescriptor]] - `method` [EXTRACTED]
+- [[ContainerInfo]] - `calls` [EXTRACTED]
+- [[TestContainerInfo]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy

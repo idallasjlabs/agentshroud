@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/forwarder.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L160"
+community: "AuditStore"
+location: "L383"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/AuditStore
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_34]] - `references` [EXTRACTED]
-- [[HTTPForwarder]] - `method` [EXTRACTED]
+- [[AuditStore]] - `method` [EXTRACTED]
+- [[Get audit store statistics.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/AuditStore

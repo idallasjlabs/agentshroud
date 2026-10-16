@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "main.rs"
+community: "MCPPermissionManager"
 location: "L341"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/MCPPermissionManager
 ---
 
 # .new()
@@ -16,4 +16,4 @@ tags:
 - [[Self]] - `references` [EXTRACTED]
 - [[_T]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

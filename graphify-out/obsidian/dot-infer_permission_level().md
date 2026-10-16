@@ -12,10 +12,10 @@ tags:
 # .infer_permission_level()
 
 ## Connections
-- [[dot-check_tool_permission()_2]] - `calls` [EXTRACTED]
+- [[dot-check_tool_permission()]] - `calls` [EXTRACTED]
 - [[Infer the permission level needed for a tool based on its name.          Checks]] - `rationale_for` [EXTRACTED]
 - [[MCPPermissionManager]] - `method` [EXTRACTED]
-- [[MCPServerConfig]] - `references` [EXTRACTED]
+- [[MCPServerConfig_1]] - `references` [EXTRACTED]
 - [[PermissionLevel_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

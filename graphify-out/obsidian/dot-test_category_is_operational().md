@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "TestFabricatedSecurityNotice"
+community: "TestOutboundInfoFilter"
 location: "L592"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice
+  - community/TestOutboundInfoFilter
 ---
 
 # .test_category_is_operational()
@@ -15,4 +15,4 @@ tags:
 - [[Pattern is in the OPERATIONAL category.]] - `rationale_for` [EXTRACTED]
 - [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

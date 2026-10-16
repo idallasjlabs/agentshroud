@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-is_member_or_higher()]] - `calls` [EXTRACTED]
-- [[dot-is_owner()_5]] - `calls` [EXTRACTED]
+- [[dot-is_owner()_2]] - `calls` [EXTRACTED]
 - [[GroupRole]] - `references` [EXTRACTED]
 - [[GroupRoleResolver]] - `method` [EXTRACTED]
 - [[Return the GroupRole for user_id in group_chat_id.          Returns GroupRole.RE]] - `rationale_for` [EXTRACTED]

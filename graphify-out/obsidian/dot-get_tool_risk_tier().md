@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-requires_approval()]] - `calls` [EXTRACTED]
-- [[dot-submit_tool_request()_4]] - `calls` [EXTRACTED]
+- [[dot-submit_tool_request()]] - `calls` [EXTRACTED]
 - [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
 - [[Get the risk tier for a tool.]] - `rationale_for` [EXTRACTED]
 

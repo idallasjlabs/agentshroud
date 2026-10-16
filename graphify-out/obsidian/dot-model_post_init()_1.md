@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/ingest_api/config.py"
+source_file: "gateway/security/group_config.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L287"
+community: "telegram_proxy.py"
+location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/telegram_proxypy
 ---
 
 # .model_post_init()
 
 ## Connections
-- [[AuditExportConfig_1]] - `method` [EXTRACTED]
-- [[Path_30]] - `calls` [EXTRACTED]
+- [[TeamsConfig_2]] - `method` [EXTRACTED]
+- [[_apply_persisted_overrides()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

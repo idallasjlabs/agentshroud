@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "_req"
-location: "L890"
+community: "test_prompt_guard.py"
+location: "L866"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req
+  - community/test_prompt_guardpy
 ---
 
 # .test_exception_fails_open()
 
 ## Connections
-- [[TestFilterOutboundResponse]] - `method` [EXTRACTED]
+- [[TestScanToolResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req
+#graphify/code #graphify/EXTRACTED #community/test_prompt_guardpy

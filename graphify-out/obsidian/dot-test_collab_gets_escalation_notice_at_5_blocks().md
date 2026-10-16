@@ -12,7 +12,7 @@ tags:
 # .test_collab_gets_escalation_notice_at_5_blocks()
 
 ## Connections
-- [[dot-_make_proxy()_4]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_1]] - `calls` [EXTRACTED]
 - [[Collaborator must receive escalation notice at block 5.]] - `rationale_for` [EXTRACTED]
 - [[TestProgressiveLockdownUX]] - `method` [EXTRACTED]
 

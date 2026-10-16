@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "OAuthSecurityValidator"
+community: "AlertDispatcher"
 location: "L227"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OAuthSecurityValidator
+  - community/AlertDispatcher
 ---
 
 # .test_cookie_custom_max_age_expires_sooner()
@@ -15,4 +15,4 @@ tags:
 - [[OAuthSecurityValidator]] - `calls` [EXTRACTED]
 - [[TestConsentCookieBinding]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

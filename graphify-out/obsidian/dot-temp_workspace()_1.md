@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "UserSessionManager"
+community: "TestFabricatedSecurityNotice"
 location: "L495"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/TestFabricatedSecurityNotice
 ---
 
 # .temp_workspace()
@@ -15,4 +15,4 @@ tags:
 - [[Create a temporary workspace.]] - `rationale_for` [EXTRACTED]
 - [[TestSessionIsolationEndToEnd]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "PIIConfig"
+community: "PipelineAction"
 location: "L181"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/PipelineAction
 ---
 
 # .test_cross_context_injection_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[Injecting a system-level override via a follow-up message is blocked.]] - `rationale_for` [EXTRACTED]
 - [[TestE2E04ContextGuardBlocking]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

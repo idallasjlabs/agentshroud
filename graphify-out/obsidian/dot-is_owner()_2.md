@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/security/group_rbac.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L50"
+community: "GroupRoleResolver"
+location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/GroupRoleResolver
 ---
 
 # .is_owner()
 
 ## Connections
-- [[FakeCaller]] - `method` [EXTRACTED]
+- [[dot-get_role()]] - `calls` [EXTRACTED]
+- [[GroupRoleResolver]] - `method` [EXTRACTED]
+- [[Return True if user_id is the owner in group_chat_id.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

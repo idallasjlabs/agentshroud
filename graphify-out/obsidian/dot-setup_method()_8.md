@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_soc_auth.py"
+source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L19"
+community: "InjectionAction"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/InjectionAction
 ---
 
 # .setup_method()
 
 ## Connections
-- [[Clear token store before each test.]] - `rationale_for` [EXTRACTED]
-- [[TestWSTokens]] - `method` [EXTRACTED]
+- [[Set up test fixtures._1]] - `rationale_for` [EXTRACTED]
+- [[TestToolResultInjectionScanner]] - `method` [EXTRACTED]
+- [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/InjectionAction

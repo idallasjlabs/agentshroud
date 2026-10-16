@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/ingest_api/sanitizer.py"
+source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L171"
+community: "PipelineAction"
+location: "L379"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/PipelineAction
 ---
 
 # .sanitize()
 
 ## Connections
-- [[dot-_sanitize_presidio()]] - `calls` [EXTRACTED]
-- [[dot-_sanitize_regex()]] - `calls` [EXTRACTED]
-- [[Detect and redact PII from content          Args             content Text to s]] - `rationale_for` [EXTRACTED]
-- [[PIISanitizer_2]] - `method` [EXTRACTED]
-- [[RedactionResult_2]] - `references` [EXTRACTED]
+- [[_BrokenSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

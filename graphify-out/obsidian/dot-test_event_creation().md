@@ -12,7 +12,7 @@ tags:
 # .test_event_creation()
 
 ## Connections
-- [[AuditEvent]] - `calls` [EXTRACTED]
+- [[AuditEvent_1]] - `calls` [EXTRACTED]
 - [[Test basic audit event creation.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditEvent]] - `method` [EXTRACTED]
 

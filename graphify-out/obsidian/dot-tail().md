@@ -12,7 +12,7 @@ tags:
 # .tail()
 
 ## Connections
-- [[Any_10]] - `references` [EXTRACTED]
+- [[Any_33]] - `references` [EXTRACTED]
 - [[LogBuffer]] - `method` [EXTRACTED]
 - [[logs_recent()]] - `calls` [EXTRACTED]
 

@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[dot-_redact_pii()]] - `calls` [EXTRACTED]
 - [[dot-_scan_value()]] - `calls` [EXTRACTED]
-- [[Any_43]] - `references` [EXTRACTED]
+- [[Any_38]] - `references` [EXTRACTED]
 - [[Inspect a tool result for PII and encoding issues.]] - `rationale_for` [EXTRACTED]
-- [[InspectionResult_1]] - `references` [EXTRACTED]
-- [[MCPInspector]] - `method` [EXTRACTED]
+- [[InspectionResult]] - `references` [EXTRACTED]
+- [[MCPInspector_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPInspector

@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "DataLedger"
-location: "L114"
+community: "AlertDispatcher"
+location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/AlertDispatcher
 ---
 
 # .record()
 
 ## Connections
-- [[dot-_hash_content()]] - `calls` [EXTRACTED]
-- [[Create a new ledger entry          Args             source Source identifier (]] - `rationale_for` [EXTRACTED]
-- [[DataLedger]] - `method` [EXTRACTED]
-- [[LedgerEntry_1]] - `references` [EXTRACTED]
+- [[EgressEvent]] - `references` [EXTRACTED]
+- [[EgressMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataLedger
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_dns_blocklist.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TestParseHostsLine"
-location: "L16"
+community: "CrossBotTrustLedger"
+location: "L281"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestParseHostsLine
+  - community/CrossBotTrustLedger
 ---
 
 # .setup_method()
 
 ## Connections
-- [[DNSBlocklist]] - `calls` [EXTRACTED]
-- [[TestParseHostsLine]] - `method` [EXTRACTED]
+- [[TestTrustManager]] - `method` [EXTRACTED]
+- [[TrustManager_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestParseHostsLine
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

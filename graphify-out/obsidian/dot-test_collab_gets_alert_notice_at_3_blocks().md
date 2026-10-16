@@ -12,7 +12,7 @@ tags:
 # .test_collab_gets_alert_notice_at_3_blocks()
 
 ## Connections
-- [[dot-_make_proxy()_4]] - `calls` [EXTRACTED]
+- [[dot-_make_proxy()_1]] - `calls` [EXTRACTED]
 - [[Collaborator must receive warning text when they reach 3 security blocks.]] - `rationale_for` [EXTRACTED]
 - [[TestProgressiveLockdownUX]] - `method` [EXTRACTED]
 

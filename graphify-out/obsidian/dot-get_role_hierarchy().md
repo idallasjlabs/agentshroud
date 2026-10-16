@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Action"
+community: "MiddlewareManager"
 location: "L342"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Action
+  - community/MiddlewareManager
 ---
 
 # .get_role_hierarchy()
@@ -17,4 +17,4 @@ tags:
 - [[Get role hierarchy levels (higher number = more privileges).]] - `rationale_for` [EXTRACTED]
 - [[RBACManager_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Action
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

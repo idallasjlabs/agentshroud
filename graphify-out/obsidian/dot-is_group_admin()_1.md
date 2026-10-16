@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/soc/auth.py"
+source_file: "gateway/security/group_config.py"
 type: "code"
-community: "soc/router.py"
-location: "L162"
+community: "telegram_proxy.py"
+location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/telegram_proxypy
 ---
 
 # .is_group_admin()
 
 ## Connections
-- [[Check group admin status via TeamsConfig if available.]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller_1]] - `method` [EXTRACTED]
+- [[dot-is_admin()]] - `calls` [EXTRACTED]
+- [[TeamsConfig_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

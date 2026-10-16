@@ -19,7 +19,7 @@ tags:
 - [[dot-scan_all_monitored_files()]] - `calls` [EXTRACTED]
 - [[FileIntegrityRecord]] - `references` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
-- [[Path_48]] - `references` [EXTRACTED]
+- [[Path_47]] - `references` [EXTRACTED]
 - [[Scan a single file for integrity changes.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

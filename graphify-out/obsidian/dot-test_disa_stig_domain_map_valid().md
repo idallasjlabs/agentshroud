@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "scanner_integration.py"
+community: "AgentTarget"
 location: "L961"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/AgentTarget
 ---
 
 # .test_disa_stig_domain_map_valid()
@@ -15,4 +15,4 @@ tags:
 - [[DISA STIG domain map references only valid domain IDs.]] - `rationale_for` [EXTRACTED]
 - [[TestComputeScorecard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

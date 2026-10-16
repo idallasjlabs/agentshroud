@@ -15,6 +15,6 @@ tags:
 - [[ContributorManager]] - `calls` [EXTRACTED]
 - [[ProgressiveLockdown]] - `calls` [EXTRACTED]
 - [[TestLockdownLevelWiring]] - `method` [EXTRACTED]
-- [[_FakeRBAC_2]] - `calls` [EXTRACTED]
+- [[_FakeRBAC_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_FakeRBAC

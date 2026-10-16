@@ -12,7 +12,7 @@ tags:
 # .parse_store()
 
 ## Connections
-- [[dot-check()_2]] - `calls` [EXTRACTED]
+- [[dot-check()_1]] - `calls` [EXTRACTED]
 - [[CronStateMonitor]] - `method` [EXTRACTED]
 - [[JobState]] - `references` [EXTRACTED]
 - [[Read one bot's cron store; tolerate absencecorruption.]] - `rationale_for` [EXTRACTED]

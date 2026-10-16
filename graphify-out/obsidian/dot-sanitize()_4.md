@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "ForwardRequest"
 location: "L228"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/ForwardRequest
 ---
 
 # .sanitize()
@@ -20,4 +20,4 @@ tags:
 - [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
 - [[sanitize_tool_result()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

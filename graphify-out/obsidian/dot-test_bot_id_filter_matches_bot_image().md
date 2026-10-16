@@ -12,7 +12,7 @@ tags:
 # .test_bot_id_filter_matches_bot_image()
 
 ## Connections
-- [[Path_29]] - `calls` [EXTRACTED]
+- [[Path_28]] - `calls` [EXTRACTED]
 - [[TestGetTrivyImageSummaries]] - `method` [EXTRACTED]
 - [[_clean_trivy_report()]] - `calls` [EXTRACTED]
 - [[_write_image_report()]] - `calls` [EXTRACTED]

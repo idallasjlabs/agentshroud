@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "DataLedger"
+community: "create_auth_dependency"
 location: "L206"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/create_auth_dependency
 ---
 
 # .query()
@@ -17,4 +17,4 @@ tags:
 - [[LedgerQueryResponse_1]] - `references` [EXTRACTED]
 - [[Query ledger entries with pagination and filters          Args             page]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataLedger
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_runtime_engines.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TestAppleContainerEngine"
-location: "L360"
+community: "Audit Ledger (SHA-256 hash only)"
+location: "L800"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAppleContainerEngine
+  - community/Audit_Ledger_SHA-256_hash_only
 ---
 
 # .setup_method()
 
 ## Connections
-- [[AppleContainerEngine]] - `calls` [EXTRACTED]
-- [[TestAppleContainerEngine]] - `method` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[TestPromptGuardEvasion]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAppleContainerEngine
+#graphify/code #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only

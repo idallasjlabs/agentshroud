@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "pick_latest_stable"
+community: "UserSessionManager"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pick_latest_stable
+  - community/UserSessionManager
 ---
 
 # .test_empty_is_not_stable()
@@ -15,4 +15,4 @@ tags:
 - [[TestIsStable]] - `method` [EXTRACTED]
 - [[is_stable()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/pick_latest_stable
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

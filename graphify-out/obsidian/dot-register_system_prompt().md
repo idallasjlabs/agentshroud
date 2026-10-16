@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "test_prompt_guard.py"
+community: "ContextSegment"
 location: "L613"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_prompt_guardpy
+  - community/ContextSegment
 ---
 
 # .register_system_prompt()
@@ -17,4 +17,4 @@ tags:
 - [[PromptGuard]] - `method` [EXTRACTED]
 - [[SystemPromptFingerprint]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_prompt_guardpy
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

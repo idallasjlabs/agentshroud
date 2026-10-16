@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/http_proxy.py"
+source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "HTTPConnectProxy"
-location: "L165"
+community: "MiddlewareManager"
+location: "L286"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/MiddlewareManager
 ---
 
 # .get_stats()
 
 ## Connections
-- [[HTTPConnectProxy_1]] - `method` [EXTRACTED]
-- [[Return proxy traffic statistics.]] - `rationale_for` [EXTRACTED]
+- [[Get statistics about path isolation manager.]] - `rationale_for` [EXTRACTED]
+- [[PathIsolationManager]] - `method` [EXTRACTED]
+- [[any_62]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

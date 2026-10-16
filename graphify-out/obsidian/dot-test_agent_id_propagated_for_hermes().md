@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-process_inbound()_9]] - `calls` [EXTRACTED]
-- [[dot-process_outbound()_7]] - `calls` [EXTRACTED]
+- [[dot-process_outbound()_6]] - `calls` [EXTRACTED]
 - [[AgentTarget_3]] - `calls` [EXTRACTED]
 - [[Pipeline receives 'hermes' as agent_id when routed to hermes.]] - `rationale_for` [EXTRACTED]
 - [[TestAgentIdPropagatedFromTarget]] - `method` [EXTRACTED]

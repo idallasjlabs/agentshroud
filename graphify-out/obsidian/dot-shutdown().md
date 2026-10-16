@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-stop_all()]] - `calls` [EXTRACTED]
 - [[Clean shutdown — close all connections.]] - `rationale_for` [EXTRACTED]
-- [[MCPProxy]] - `method` [EXTRACTED]
+- [[MCPProxy_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/StdioConnection

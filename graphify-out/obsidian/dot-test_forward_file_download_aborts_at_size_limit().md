@@ -12,7 +12,7 @@ tags:
 # .test_forward_file_download_aborts_at_size_limit()
 
 ## Connections
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestFileDownload]] - `method` [EXTRACTED]
 - [[_FakeResponse]] - `calls` [INFERRED]
 - [[_forward_file_download must raise when streamed bytes exceed limit (CVE-2026-320]] - `rationale_for` [EXTRACTED]

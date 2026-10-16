@@ -12,6 +12,6 @@ tags:
 # .test_burst_queries_flagged()
 
 ## Connections
-- [[TestRateLimiting_3]] - `method` [EXTRACTED]
+- [[TestRateLimiting_4]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

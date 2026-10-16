@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "test_telegram_proxy_outbound.py"
+community: "test_collaborator_tracker.py"
 location: "L4580"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_outboundpy
+  - community/test_collaborator_trackerpy
 ---
 
 # .test_400_retry_no_loop()
@@ -16,4 +16,4 @@ tags:
 - [[Persistent 400 returns the error after exactly one retry (no infinite loop).]] - `rationale_for` [EXTRACTED]
 - [[TestTelegram400Retry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

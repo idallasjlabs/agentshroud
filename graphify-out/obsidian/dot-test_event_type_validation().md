@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[TestTrustManagerHardened]] - `method` [EXTRACTED]
-- [[TrustManager]] - `calls` [EXTRACTED]
+- [[TrustManager_4]] - `calls` [EXTRACTED]
 - [[Unknown event types should not inject SQL.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

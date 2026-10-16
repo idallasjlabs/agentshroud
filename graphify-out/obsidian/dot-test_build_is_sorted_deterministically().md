@@ -12,7 +12,7 @@ tags:
 # .test_build_is_sorted_deterministically()
 
 ## Connections
-- [[Path_52]] - `references` [EXTRACTED]
+- [[Path_59]] - `references` [EXTRACTED]
 - [[TestSkillsManifest]] - `method` [EXTRACTED]
 - [[_write_tree()_1]] - `calls` [EXTRACTED]
 

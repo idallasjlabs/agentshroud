@@ -12,8 +12,8 @@ tags:
 # .get_flagged_queries()
 
 ## Connections
-- [[dot-get_audit_log()_5]] - `calls` [EXTRACTED]
+- [[dot-get_audit_log()_7]] - `calls` [EXTRACTED]
 - [[DNSFilter]] - `method` [EXTRACTED]
-- [[DNSQuery_1]] - `references` [EXTRACTED]
+- [[DNSQuery]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

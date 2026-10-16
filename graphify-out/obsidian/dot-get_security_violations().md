@@ -12,7 +12,7 @@ tags:
 # .get_security_violations()
 
 ## Connections
-- [[dot-get_audit_log()_7]] - `calls` [EXTRACTED]
+- [[dot-get_audit_log()_5]] - `calls` [EXTRACTED]
 - [[FileOperation]] - `references` [EXTRACTED]
 - [[FileSandbox]] - `method` [EXTRACTED]
 - [[Get all flagged operations that indicate security violations.]] - `rationale_for` [EXTRACTED]

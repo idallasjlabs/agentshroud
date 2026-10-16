@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_enhanced_approval.py"
+source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
 community: "ApprovalQueueConfig"
-location: "L486"
+location: "L497"
 tags:
   - graphify/code
   - graphify/EXTRACTED

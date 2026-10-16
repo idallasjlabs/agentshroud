@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/http_proxy.py"
+source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "HTTPConnectProxy"
-location: "L158"
+community: "DockerEngine"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/DockerEngine
 ---
 
 # .stop()
 
 ## Connections
-- [[HTTPConnectProxy_1]] - `method` [EXTRACTED]
-- [[Stop the CONNECT proxy server.]] - `rationale_for` [EXTRACTED]
+- [[dot-_cmd()_1]] - `calls` [EXTRACTED]
+- [[DockerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/code #graphify/EXTRACTED #community/DockerEngine

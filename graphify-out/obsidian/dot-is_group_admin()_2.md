@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/soc/auth.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L53"
+community: "_FakeRBAC"
+location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/_FakeRBAC
 ---
 
 # .is_group_admin()
 
 ## Connections
-- [[FakeCaller]] - `method` [EXTRACTED]
+- [[Check group admin status via TeamsConfig if available.]] - `rationale_for` [EXTRACTED]
+- [[SCLCaller_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

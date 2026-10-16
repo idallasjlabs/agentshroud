@@ -12,7 +12,7 @@ tags:
 # .test_allowlisted_domain_still_prompts_when_approval_all_enabled()
 
 ## Connections
-- [[EgressFilter_1]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[FakeApprovalQueue]] - `calls` [INFERRED]
 - [[TestInteractiveApproval]] - `method` [EXTRACTED]

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-export_findings_report()]] - `calls` [EXTRACTED]
-- [[Any_14]] - `references` [EXTRACTED]
+- [[Any_2]] - `references` [EXTRACTED]
 - [[Get a summary of all findings.]] - `rationale_for` [EXTRACTED]
 - [[GitGuard]] - `method` [EXTRACTED]
 

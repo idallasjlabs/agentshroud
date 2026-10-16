@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/tests/test_forward_stream.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "test_forward_stream.py"
-location: "L168"
+community: "PipelineAction"
+location: "L1032"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/PipelineAction
 ---
 
 # .process_outbound()
 
 ## Connections
-- [[_BlockingPipeline]] - `method` [EXTRACTED]
+- [[dot-_maybe_record_trust_violation()]] - `calls` [EXTRACTED]
+- [[dot-_process_outbound_core()]] - `calls` [EXTRACTED]
+- [[Any_41]] - `references` [EXTRACTED]
+- [[PipelineResult_1]] - `references` [EXTRACTED]
+- [[Process an outbound response through the security pipeline.          Thin wrappe]] - `rationale_for` [EXTRACTED]
+- [[SecurityPipeline_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

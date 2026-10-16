@@ -1,23 +1,23 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "main.rs"
-location: "L362"
+community: "MCPPermissionManager"
+location: "L515"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/MCPPermissionManager
 ---
 
 # .post()
 
 ## Connections
-- [[dot-request()]] - `calls` [EXTRACTED]
-- [[GatewayClientT]] - `method` [EXTRACTED]
+- [[dot-request()_2]] - `calls` [EXTRACTED]
 - [[Option]] - `references` [EXTRACTED]
 - [[Result]] - `references` [EXTRACTED]
-- [[Value_3]] - `references` [EXTRACTED]
-- [[build_url()]] - `calls` [EXTRACTED]
-- [[map_http_error()]] - `calls` [EXTRACTED]
+- [[SclClient_1]] - `method` [EXTRACTED]
+- [[Value_1]] - `references` [EXTRACTED]
+- [[main()_19]] - `calls` [EXTRACTED]
+- [[run_approvals_decide()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

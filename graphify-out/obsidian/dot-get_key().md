@@ -1,19 +1,20 @@
 ---
-source_file: "src/interfaces/text_control_center.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "ControlCenter"
-location: "L349"
+community: "AgentTarget"
+location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ControlCenter
+  - community/AgentTarget
 ---
 
 # .get_key()
 
 ## Connections
-- [[dot-run()_4]] - `calls` [EXTRACTED]
-- [[ControlCenter]] - `method` [EXTRACTED]
-- [[Get a single keypress (non-blocking)]] - `rationale_for` [EXTRACTED]
+- [[dot-_agent_in_scope()]] - `calls` [EXTRACTED]
+- [[dot-_log_audit()]] - `calls` [EXTRACTED]
+- [[dot-inject_for_request()]] - `calls` [EXTRACTED]
+- [[KeyVault]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ControlCenter
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

@@ -12,9 +12,9 @@ tags:
 # .get_top_destinations()
 
 ## Connections
-- [[dot-get_stats()_14]] - `calls` [EXTRACTED]
+- [[dot-get_stats()_8]] - `calls` [EXTRACTED]
 - [[Counter]] - `calls` [INFERRED]
-- [[EgressFilter_2]] - `method` [EXTRACTED]
+- [[EgressFilter_1]] - `method` [EXTRACTED]
 - [[Return top destination domains by volume.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

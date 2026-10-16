@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "PIIConfig"
+community: "TrustConfig"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/TrustConfig
 ---
 
 # .test_10000_lookups_under_1s()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[10000 trust lookups in under 1 second.]] - `rationale_for` [EXTRACTED]
 - [[TestTrustManagerPerformance]] - `method` [EXTRACTED]
-- [[TrustManager]] - `calls` [EXTRACTED]
+- [[TrustManager_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

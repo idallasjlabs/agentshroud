@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_session_security.py"
+source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "SessionManager"
-location: "L152"
+community: "MiddlewareManager"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/MiddlewareManager
 ---
 
 # .manager()
 
 ## Connections
-- [[SessionManager]] - `calls` [EXTRACTED]
-- [[TestInstructionNonce]] - `method` [EXTRACTED]
+- [[Create path isolation manager for testing.]] - `rationale_for` [EXTRACTED]
+- [[PathIsolationManager]] - `calls` [EXTRACTED]
+- [[TestPathIsolationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

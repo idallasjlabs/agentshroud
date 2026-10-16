@@ -12,6 +12,6 @@ tags:
 # .test_clamp_low()
 
 ## Connections
-- [[TestTrustLevels_1]] - `method` [EXTRACTED]
+- [[TestTrustLevels]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PermissionLevel

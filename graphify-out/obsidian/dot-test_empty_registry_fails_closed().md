@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "code"
-community: "BotConfig"
+community: "telegram_api_proxy (/telegram-api/{path})"
 location: "L108"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/telegram_api_proxy_/telegram-api/path
 ---
 
 # .test_empty_registry_fails_closed()
@@ -15,4 +15,4 @@ tags:
 - [[If no tokens are registered, any token must be rejected.]] - `rationale_for` [EXTRACTED]
 - [[TestTelegramProxyRouteMultiBot]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BotConfig
+#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path

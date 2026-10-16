@@ -12,7 +12,7 @@ tags:
 # .test_connect_proxy_policy_allows_smtp_gmail_465()
 
 ## Connections
-- [[EgressFilter_1]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[EgressPolicy]] - `calls` [EXTRACTED]
 - [[TestSMTPIMAPPorts]] - `method` [EXTRACTED]

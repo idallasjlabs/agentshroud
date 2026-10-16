@@ -12,7 +12,7 @@ tags:
 # .test_defined_when_oscap_binary_present()
 
 ## Connections
-- [[TestScoreComplianceAuditing]] - `method` [EXTRACTED]
+- [[TestScoreComplianceAuditing_1]] - `method` [EXTRACTED]
 - [[_openscap_not_run()]] - `calls` [EXTRACTED]
 - [[_score_compliance_auditing()]] - `calls` [EXTRACTED]
 

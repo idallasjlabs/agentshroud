@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_heuristic_classifier.py"
+source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "HeuristicClassifier"
-location: "L13"
+community: "TestParseHostsLine"
+location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/TestParseHostsLine
 ---
 
 # .setup_method()
 
 ## Connections
-- [[HeuristicClassifier_1]] - `calls` [EXTRACTED]
-- [[TestHeuristicClassifier]] - `method` [EXTRACTED]
+- [[DNSBlocklist]] - `calls` [EXTRACTED]
+- [[TestParseHostsLine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/code #graphify/EXTRACTED #community/TestParseHostsLine

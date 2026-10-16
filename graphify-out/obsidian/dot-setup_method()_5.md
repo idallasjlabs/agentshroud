@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_module_stats.py"
+source_file: "gateway/tests/test_soc_auth.py"
 type: "code"
-community: "ModuleStatsCollector"
-location: "L83"
+community: "test_soc_realtime_coverage.py"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .setup_method()
 
 ## Connections
-- [[TestEnforcementWiring]] - `method` [EXTRACTED]
-- [[get_collector()]] - `calls` [EXTRACTED]
+- [[Clear token store before each test.]] - `rationale_for` [EXTRACTED]
+- [[TestWSTokens]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "StdioConnection"
-location: "L143"
+community: "HTTPConnectProxy"
+location: "L158"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/HTTPConnectProxy
 ---
 
 # .stop()
 
 ## Connections
-- [[StdioConnection]] - `method` [EXTRACTED]
-- [[Stop the MCP server process.]] - `rationale_for` [EXTRACTED]
+- [[HTTPConnectProxy_1]] - `method` [EXTRACTED]
+- [[Stop the CONNECT proxy server.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

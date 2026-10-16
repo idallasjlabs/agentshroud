@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "KeyRotationManager"
+community: "UserSessionManager"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/UserSessionManager
 ---
 
 # .test_add_custom_policy()
@@ -17,4 +17,4 @@ tags:
 - [[Test adding custom policy for new credential type.]] - `rationale_for` [EXTRACTED]
 - [[TestKeyRotationConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

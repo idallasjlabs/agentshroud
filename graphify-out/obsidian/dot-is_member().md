@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "GroupConfig"
+community: "telegram_proxy.py"
 location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupConfig
+  - community/telegram_proxypy
 ---
 
 # .is_member()
@@ -16,4 +16,4 @@ tags:
 - [[dot-get_user_groups()]] - `calls` [EXTRACTED]
 - [[GroupConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupConfig
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

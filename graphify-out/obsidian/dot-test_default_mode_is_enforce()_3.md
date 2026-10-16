@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_observatory_mode.py"
+source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L80"
+community: "MiddlewareManager"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/MiddlewareManager
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
-- [[TestGetMode]] - `method` [EXTRACTED]
+- [[TestFileSandboxConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

@@ -12,7 +12,7 @@ tags:
 # .register()
 
 ## Connections
-- [[dot-from_dict()_6]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_1]] - `calls` [EXTRACTED]
 - [[AgentRegistry]] - `method` [EXTRACTED]
 - [[ContainerConfig_1]] - `references` [EXTRACTED]
 - [[Register an agent with its container configuration.]] - `rationale_for` [EXTRACTED]

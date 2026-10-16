@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "StdioConnection"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/StdioConnection
 ---
 
 # .terminate()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FakeProcess]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

@@ -1,21 +1,24 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
+source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L66"
+community: "ContextSegment"
+location: "L705"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/ContextSegment
 ---
 
 # .scan()
 
 ## Connections
-- [[Scan a message through the security pipeline.]] - `rationale_for` [EXTRACTED]
-- [[ScanRequest_1]] - `references` [EXTRACTED]
-- [[ScanResponse]] - `references` [EXTRACTED]
-- [[SecurityPipeline (external, referenced)]] - `calls` [EXTRACTED]
-- [[SidecarScanner]] - `method` [EXTRACTED]
+- [[dot-_check_encoded_content()]] - `calls` [EXTRACTED]
+- [[dot-_check_unicode_tricks()]] - `calls` [EXTRACTED]
+- [[dot-scan_tool_result()_2]] - `calls` [EXTRACTED]
+- [[PromptGuard]] - `method` [EXTRACTED]
+- [[Scan input text for prompt injection patterns.          Args             text]] - `rationale_for` [EXTRACTED]
+- [[ScanResult_4]] - `references` [EXTRACTED]
+- [[detect_base64_payloads()]] - `calls` [EXTRACTED]
+- [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

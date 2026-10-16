@@ -12,7 +12,7 @@ tags:
 # .test_denied_egress_counts_as_blocked()
 
 ## Connections
-- [[EgressFilter_2]] - `calls` [EXTRACTED]
+- [[EgressFilter_1]] - `calls` [EXTRACTED]
 - [[TestEgressWiringEndToEnd]] - `method` [EXTRACTED]
 - [[get_collector()]] - `calls` [EXTRACTED]
 

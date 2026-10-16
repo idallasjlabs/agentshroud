@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-query_events()]] - `calls` [EXTRACTED]
-- [[AuditStore_1]] - `method` [EXTRACTED]
+- [[AuditStore]] - `method` [EXTRACTED]
 - [[Return the most recent audit entries (alias for query_events with limit).]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AuditStore

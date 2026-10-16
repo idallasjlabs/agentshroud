@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_make_state_with_bot()]] - `calls` [EXTRACTED]
-- [[TestComputeBotScorecard_1]] - `method` [EXTRACTED]
+- [[TestComputeBotScorecard]] - `method` [EXTRACTED]
 - [[compute_bot_scorecard()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_botspy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "RBACConfig"
+community: "export_bot"
 location: "L402"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/export_bot
 ---
 
 # .test_denial_is_counted_for_soc_correlation()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOriginAwareAuthorization]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/export_bot

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/key_vault.py"
+source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "AuditChain"
-location: "L127"
+community: "TrustConfig"
+location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/TrustConfig
 ---
 
 # .get_audit_log()
 
 ## Connections
-- [[KeyAuditEvent]] - `references` [EXTRACTED]
-- [[KeyVault]] - `method` [EXTRACTED]
+- [[SubagentEvent]] - `references` [EXTRACTED]
+- [[SubagentMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

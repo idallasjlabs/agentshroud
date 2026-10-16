@@ -1,22 +1,18 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "AuditChain"
-location: "L482"
+community: "ProgressiveLockdown"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/ProgressiveLockdown
 ---
 
 # .process_inbound()
 
 ## Connections
-- [[dot-_maybe_record_trust_violation()]] - `calls` [EXTRACTED]
-- [[dot-_process_inbound_core()]] - `calls` [EXTRACTED]
-- [[Any_69]] - `references` [EXTRACTED]
-- [[PipelineResult_1]] - `references` [EXTRACTED]
-- [[Process an inbound message through the full security pipeline.          Thin wra]] - `rationale_for` [EXTRACTED]
-- [[SecurityPipeline_2]] - `method` [EXTRACTED]
+- [[FakePipelineResult_1]] - `references` [EXTRACTED]
+- [[PassthroughPipeline_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

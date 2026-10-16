@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/tests/test_rbac.py"
+source_file: "gateway/tests/test_resource_guard.py"
 type: "code"
-community: "Action"
-location: "L128"
+community: "ResourceGuard"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Action
+  - community/ResourceGuard
 ---
 
 # .setup_method()
 
 ## Connections
-- [[RBACConfig_1]] - `calls` [EXTRACTED]
-- [[RBACManager_1]] - `calls` [EXTRACTED]
-- [[Set up test environment.]] - `rationale_for` [EXTRACTED]
-- [[TestRBACManager]] - `method` [EXTRACTED]
+- [[ResourceGuard]] - `calls` [EXTRACTED]
+- [[ResourceLimits]] - `calls` [EXTRACTED]
+- [[TestResourceGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Action
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

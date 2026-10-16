@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_prompt_guard.py"
+source_file: "gateway/tests/test_metadata_guard.py"
 type: "code"
 community: "test_prompt_guard.py"
-location: "L176"
+location: "L188"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # .guard()
 
 ## Connections
-- [[PromptGuard]] - `calls` [EXTRACTED]
-- [[TestSystemPromptHMAC]] - `method` [EXTRACTED]
+- [[MetadataGuard]] - `calls` [EXTRACTED]
+- [[TestDocumentTagging]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_prompt_guardpy

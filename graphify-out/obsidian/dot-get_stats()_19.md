@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L840"
+community: "EgressFilterConfig"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/EgressFilterConfig
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_80]] - `references` [EXTRACTED]
-- [[Get proxy statistics._1]] - `rationale_for` [EXTRACTED]
-- [[MCPProxy]] - `method` [EXTRACTED]
+- [[Any_81]] - `references` [EXTRACTED]
+- [[SidecarScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

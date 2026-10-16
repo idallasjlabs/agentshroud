@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Markdown exfil links are stripped from form bodies (parity with JSON).]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
 - [[TestOutboundScanUnification]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 

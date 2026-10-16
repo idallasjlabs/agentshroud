@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "code"
-community: "test_docs_accuracy.py"
+community: "AgentShroud Brand Guidelines"
 location: "L192"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_docs_accuracypy
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # .test_endpoint_reports_no_key_collisions_and_high_total()
@@ -16,4 +16,4 @@ tags:
 - [[MiddlewareManager]] - `calls` [EXTRACTED]
 - [[TestManageModulesEndpointAccuracy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_docs_accuracypy
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

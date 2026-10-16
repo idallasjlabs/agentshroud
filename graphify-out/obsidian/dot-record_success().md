@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_update_score()]] - `calls` [EXTRACTED]
 - [[Record a successful action, increasing trust.]] - `rationale_for` [EXTRACTED]
-- [[TrustLevel_1]] - `references` [EXTRACTED]
-- [[TrustManager]] - `method` [EXTRACTED]
+- [[TrustLevel_2]] - `references` [EXTRACTED]
+- [[TrustManager_4]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

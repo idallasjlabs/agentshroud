@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "TestSSRFDetection"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/TestSSRFDetection
 ---
 
 # .load_pending()
 
 ## Connections
-- [[ApprovalQueueItem_2]] - `references` [EXTRACTED]
+- [[ApprovalQueueItem]] - `references` [EXTRACTED]
 - [[ApprovalStore]] - `method` [EXTRACTED]
 - [[Load all pending (non-expired, non-decided) items.          Items whose expires_]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

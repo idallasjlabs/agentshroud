@@ -12,7 +12,7 @@ tags:
 # .test_content_hash()
 
 ## Connections
-- [[AuditEvent]] - `calls` [EXTRACTED]
+- [[AuditEvent_1]] - `calls` [EXTRACTED]
 - [[Test content hash computation.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditEvent]] - `method` [EXTRACTED]
 

@@ -12,7 +12,7 @@ tags:
 # .sanitize_tool_params()
 
 ## Connections
-- [[Any_37]] - `references` [EXTRACTED]
+- [[Any_76]] - `references` [EXTRACTED]
 - [[ParamScanResult]] - `references` [EXTRACTED]
 - [[Scan tool parameters for injection payloads and return sanitized copy.]] - `rationale_for` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `method` [EXTRACTED]

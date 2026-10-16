@@ -16,9 +16,9 @@ tags:
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
 - [[Rate-limit notice path should key retry window by user_id, not chat_id.]] - `rationale_for` [EXTRACTED]
 - [[RateLimiter_1]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[_make_update()]] - `calls` [EXTRACTED]
+- [[_make_update()_1]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RateLimiter

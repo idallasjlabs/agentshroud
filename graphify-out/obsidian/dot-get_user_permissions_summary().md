@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Action"
+community: "MiddlewareManager"
 location: "L293"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Action
+  - community/MiddlewareManager
 ---
 
 # .get_user_permissions_summary()
 
 ## Connections
-- [[dot-get_user_role()]] - `calls` [EXTRACTED]
-- [[Any_26]] - `references` [EXTRACTED]
+- [[dot-get_user_role()_1]] - `calls` [EXTRACTED]
+- [[Any_22]] - `references` [EXTRACTED]
 - [[Get a summary of permissions for a user.]] - `rationale_for` [EXTRACTED]
 - [[RBACManager_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Action
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "DifferentialPIIDetector"
+community: "Phase 1 — Raw Collection"
 location: "L371"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/Phase_1__Raw_Collection
 ---
 
 # .scan_tool_result()
@@ -17,4 +17,4 @@ tags:
 - [[Scan a tool result with the lower confidence floor.          Args             t]] - `rationale_for` [EXTRACTED]
 - [[ToolResultPIIReport]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/Phase_1__Raw_Collection

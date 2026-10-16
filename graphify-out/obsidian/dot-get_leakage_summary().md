@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-export_leakage_report()]] - `calls` [EXTRACTED]
-- [[Any_7]] - `references` [EXTRACTED]
+- [[Any]] - `references` [EXTRACTED]
 - [[EnvironmentGuard]] - `method` [EXTRACTED]
 - [[Get summary of all detected leakages.]] - `rationale_for` [EXTRACTED]
 

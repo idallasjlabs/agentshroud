@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_runtime_engines.py"
+source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "code"
-community: "TestDockerEngine"
-location: "L126"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDockerEngine
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # .setup_method()
 
 ## Connections
-- [[DockerEngine]] - `calls` [EXTRACTED]
-- [[TestDockerEngine]] - `method` [EXTRACTED]
+- [[Set up test fixtures._5]] - `rationale_for` [EXTRACTED]
+- [[TestXMLLeakFilter]] - `method` [EXTRACTED]
+- [[XMLLeakFilter]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDockerEngine
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "test_telegram_proxy_outbound.py"
+community: "test_collaborator_tracker.py"
 location: "L3848"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_outboundpy
+  - community/test_collaborator_trackerpy
 ---
 
 # .test_extract_first_egress_target_strips_trailing_punctuation()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEgressTargetExtraction]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

@@ -12,7 +12,7 @@ tags:
 # .test_expired_request_cannot_be_decided()
 
 ## Connections
-- [[ApprovalRequest_5]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_1]] - `calls` [EXTRACTED]
 - [[Expired request raises ValueError on decide.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalTimeout]] - `method` [EXTRACTED]
 

@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_killswitch_monitor.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L27"
+community: "MiddlewareManager"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/MiddlewareManager
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[KillSwitchConfig_1]] - `calls` [EXTRACTED]
+- [[MemoryIntegrityConfig_1]] - `calls` [EXTRACTED]
 - [[Test default configuration values._1]] - `rationale_for` [EXTRACTED]
-- [[TestKillSwitchConfig]] - `method` [EXTRACTED]
+- [[TestMemoryIntegrityConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

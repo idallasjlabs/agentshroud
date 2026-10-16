@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestIsFresh"
+community: "TestOutboundInfoFilter"
 location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestIsFresh
+  - community/TestOutboundInfoFilter
 ---
 
 # .test_empty_dir_returns_false()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestIsFresh_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestIsFresh
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

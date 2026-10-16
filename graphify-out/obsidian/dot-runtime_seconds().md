@@ -12,6 +12,6 @@ tags:
 # .runtime_seconds()
 
 ## Connections
-- [[ResourceUsage_2]] - `method` [EXTRACTED]
+- [[ResourceUsage_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ResourceUsage

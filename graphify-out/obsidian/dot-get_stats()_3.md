@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "code"
-community: "make_event"
-location: "L95"
+community: "DataExfilVolumeGuard"
+location: "L219"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/DataExfilVolumeGuard
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_24]] - `references` [EXTRACTED]
-- [[EventBus]] - `method` [EXTRACTED]
+- [[DataExfilVolumeGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

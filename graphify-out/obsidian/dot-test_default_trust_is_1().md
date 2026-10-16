@@ -12,6 +12,6 @@ tags:
 # .test_default_trust_is_1()
 
 ## Connections
-- [[TestTrustLevels_1]] - `method` [EXTRACTED]
+- [[TestTrustLevels]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PermissionLevel

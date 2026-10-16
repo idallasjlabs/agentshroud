@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "DataLedger"
-location: "L347"
+community: "MCPInspector"
+location: "L840"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/MCPInspector
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_28]] - `references` [EXTRACTED]
-- [[DataLedger]] - `method` [EXTRACTED]
-- [[Get aggregate statistics          Returns             Dictionary with total ent]] - `rationale_for` [EXTRACTED]
+- [[Any_39]] - `references` [EXTRACTED]
+- [[Get proxy statistics._1]] - `rationale_for` [EXTRACTED]
+- [[MCPProxy_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataLedger
+#graphify/code #graphify/EXTRACTED #community/MCPInspector

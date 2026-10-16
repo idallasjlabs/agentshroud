@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-check_agent_server_access()]] - `calls` [EXTRACTED]
 - [[dot-check_tool_parameters()]] - `calls` [EXTRACTED]
-- [[dot-check_tool_permission()_2]] - `calls` [EXTRACTED]
+- [[dot-check_tool_permission()]] - `calls` [EXTRACTED]
 - [[Get trust level, defaulting to 1 (write) for unknown agents.]] - `rationale_for` [EXTRACTED]
 - [[MCPPermissionManager]] - `method` [EXTRACTED]
 

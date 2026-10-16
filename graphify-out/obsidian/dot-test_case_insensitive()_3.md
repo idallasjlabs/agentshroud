@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_canary_tripwire.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L30"
+community: "WebProxyConfig"
+location: "L598"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/WebProxyConfig
 ---
 
 # .test_case_insensitive()
 
 ## Connections
-- [[TestCanaryTripwire]] - `method` [EXTRACTED]
+- [[TestIsDomainAllowed]] - `method` [EXTRACTED]
+- [[WebProxyConfig_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

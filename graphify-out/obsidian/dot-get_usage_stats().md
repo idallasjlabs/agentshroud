@@ -12,7 +12,7 @@ tags:
 # .get_usage_stats()
 
 ## Connections
-- [[Any_15]] - `references` [EXTRACTED]
+- [[Any_18]] - `references` [EXTRACTED]
 - [[Get current usage statistics.]] - `rationale_for` [EXTRACTED]
 - [[ResourceGuard]] - `method` [EXTRACTED]
 - [[ResourceUsage]] - `calls` [EXTRACTED]

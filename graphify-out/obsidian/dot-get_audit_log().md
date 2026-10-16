@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/subagent_monitor.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "SubagentMonitor"
-location: "L159"
+community: "AgentTarget"
+location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentMonitor
+  - community/AgentTarget
 ---
 
 # .get_audit_log()
 
 ## Connections
-- [[SubagentEvent]] - `references` [EXTRACTED]
-- [[SubagentMonitor]] - `method` [EXTRACTED]
+- [[KeyAuditEvent]] - `references` [EXTRACTED]
+- [[KeyVault]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentMonitor
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

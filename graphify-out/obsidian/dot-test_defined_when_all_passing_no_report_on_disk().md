@@ -12,7 +12,7 @@ tags:
 # .test_defined_when_all_passing_no_report_on_disk()
 
 ## Connections
-- [[TestScoreComplianceAuditing]] - `method` [EXTRACTED]
+- [[TestScoreComplianceAuditing_1]] - `method` [EXTRACTED]
 - [[_openscap_clean()]] - `calls` [EXTRACTED]
 - [[_score_compliance_auditing()]] - `calls` [EXTRACTED]
 

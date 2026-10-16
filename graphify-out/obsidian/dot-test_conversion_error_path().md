@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L460"
+community: "export_bot"
+location: "L361"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/export_bot
 ---
 
 # .test_conversion_error_path()
 
 ## Connections
-- [[TestFromAnomalyAlert]] - `method` [EXTRACTED]
+- [[TestFromAuditChainEntry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/export_bot

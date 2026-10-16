@@ -12,7 +12,7 @@ tags:
 # .grant_timed_approval()
 
 ## Connections
-- [[EgressFilter_2]] - `method` [EXTRACTED]
+- [[EgressFilter_1]] - `method` [EXTRACTED]
 - [[Record a time-limited interactive approval for a domain.          Called by the]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

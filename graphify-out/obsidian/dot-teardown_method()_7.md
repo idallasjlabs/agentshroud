@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TrustConfig"
+community: "CrossBotTrustLedger"
 location: "L284"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/CrossBotTrustLedger
 ---
 
 # .teardown_method()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "PIIConfig"
+community: "ContextSegment"
 location: "L638"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ContextSegment
 ---
 
 # .reanchor_delimiters()
@@ -15,4 +15,4 @@ tags:
 - [[PromptGuard]] - `method` [EXTRACTED]
 - [[Strip injected fake delimiters and return sanitized message.          Called whe]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

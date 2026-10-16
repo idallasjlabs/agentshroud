@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/telegram_proxy.py"
+source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L1002"
+community: "AsyncMock"
+location: "L439"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/AsyncMock
 ---
 
 # .get_stats()
 
 ## Connections
-- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[SlackAPIProxy_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

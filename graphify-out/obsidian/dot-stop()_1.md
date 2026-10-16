@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/cron_state_monitor.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "CronStateMonitor"
-location: "L315"
+community: "StdioConnection"
+location: "L192"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CronStateMonitor
+  - community/StdioConnection
 ---
 
 # .stop()
 
 ## Connections
-- [[CronStateMonitor]] - `method` [EXTRACTED]
+- [[dot-stop_all()]] - `calls` [EXTRACTED]
+- [[HttpSseConnection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CronStateMonitor
+#graphify/code #graphify/EXTRACTED #community/StdioConnection
