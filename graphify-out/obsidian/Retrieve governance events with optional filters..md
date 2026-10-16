@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "rationale"
-community: "A2AGovernanceProxy"
+community: "GovernanceAction"
 location: "L463"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/GovernanceAction
 ---
 
 # Retrieve governance events with optional filters.
@@ -15,4 +15,4 @@ tags:
 - [[dot-get_events()_2]] - `rationale_for` [EXTRACTED]
 - [[dot-get_governance_events()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/rationale #graphify/EXTRACTED #community/GovernanceAction

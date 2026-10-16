@@ -12,6 +12,6 @@ tags:
 # Save a Trivy report to the log directory.      Args:         report: Parsed repo
 
 ## Connections
-- [[save_report()_1]] - `rationale_for` [EXTRACTED]
+- [[save_report()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_daily_cve_reportpy

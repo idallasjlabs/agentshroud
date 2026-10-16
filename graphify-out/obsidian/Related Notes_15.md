@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md"
+source_file: "docs/vault/05 - Dependencies/trivy.md"
 type: "document"
-community: "Error Index.md"
-location: "L97"
+community: "ClamAV"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd
+  - community/ClamAV
 ---
 
 # Related Notes
 
 ## Connections
-- [[SSH Proxy Errors]] - `contains` [EXTRACTED]
+- [[Trivy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd
+#graphify/document #graphify/EXTRACTED #community/ClamAV

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "KeyVault"
+community: "AlertDispatcher"
 location: "L345"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/AlertDispatcher
 ---
 
 # Record a detected environment leakage.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_record_leakage()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyVault
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

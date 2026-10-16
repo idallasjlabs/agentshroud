@@ -12,6 +12,6 @@ tags:
 # Return a health snapshot suitable for /status/detail.
 
 ## Connections
-- [[dot-get_health()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-get_health()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_collaborator_trackerpy

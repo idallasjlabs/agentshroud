@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-cr/README.md"
+source_file: "docker/config/openclaw/skills/i-production/README.md"
 type: "document"
-community: "Project Management (README)"
+community: "Phase 3: MITIGATE (Rollback First!)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Project_Management_README
+  - community/Phase_3_MITIGATE_Rollback_First
 ---
 
 # Related Skills
 
 ## Connections
-- [[Code Review (CR)_1]] - `contains` [EXTRACTED]
-- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Project_Management_README
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First

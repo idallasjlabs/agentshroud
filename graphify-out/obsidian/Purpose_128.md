@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-aws/README.md"
+source_file: ".agents/skills/i-daedalus/README.md"
 type: "document"
 community: ".agents/skills/i-cr/SKILL.md"
 location: "L6"
@@ -12,6 +12,6 @@ tags:
 # Purpose
 
 ## Connections
-- [[AWS Cloud Management & FinOps_2]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

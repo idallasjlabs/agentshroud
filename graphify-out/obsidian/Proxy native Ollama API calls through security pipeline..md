@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "LLMProxy.proxy_messages (non-streaming)"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L4507"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Proxy native Ollama API calls through security pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ollama_api_proxy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

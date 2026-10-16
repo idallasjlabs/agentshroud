@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
+source_file: "docs/vault/02 - Modules/Other/text_control_center.py.md"
 type: "document"
-community: "installer.py"
-location: "L15"
+community: "text_control_center.py / agentshroud_manager.py"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/installerpy
+  - community/text_control_centerpy_/_agentshroud_managerpy
 ---
 
 # Purpose
 
 ## Connections
-- [[installer.py_1]] - `contains` [EXTRACTED]
+- [[text_control_center.py  agentshroud_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/installerpy
+#graphify/document #graphify/EXTRACTED #community/text_control_centerpy_/_agentshroud_managerpy

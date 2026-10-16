@@ -1,11 +1,11 @@
 ---
 source_file: "docs/ssh-security-review.md"
 type: "concept"
-community: "34 Security Modules Pipeline (P0-P3)"
+community: "Slack Channel Setup"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/34_Security_Modules_Pipeline_P0-P3
+  - community/Slack_Channel_Setup
 ---
 
 # SSH Proxy Threat Model (6 threats)
@@ -17,4 +17,4 @@ tags:
 - [[Option 1 Direct SSH (current approach)]] - `semantically_similar_to` [INFERRED]
 - [[SSH Proxy Config Schema (agentshroud.yaml ssh section)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/34_Security_Modules_Pipeline_P0-P3
+#graphify/concept #graphify/EXTRACTED #community/Slack_Channel_Setup

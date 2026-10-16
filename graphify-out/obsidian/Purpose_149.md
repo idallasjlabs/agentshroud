@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/docker_engine.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
 type: "document"
-community: "docker_engine.py"
+community: "egress_config.py"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker_enginepy
+  - community/egress_configpy
 ---
 
 # Purpose
 
 ## Connections
-- [[docker_engine.py_2]] - `contains` [EXTRACTED]
+- [[egress_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker_enginepy
+#graphify/document #graphify/EXTRACTED #community/egress_configpy

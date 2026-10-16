@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/openclaw.md"
+source_file: "docs/vault/05 - Dependencies/playwright.md"
 type: "document"
-community: "agentshroud-bot"
-location: "L56"
+community: "Docker Volumes"
+location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-bot
+  - community/Docker_Volumes
 ---
 
 # Related Notes
 
 ## Connections
-- [[OpenClaw_1]] - `contains` [EXTRACTED]
+- [[Playwright_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-bot
+#graphify/document #graphify/EXTRACTED #community/Docker_Volumes

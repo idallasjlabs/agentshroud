@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pr/README.md"
+source_file: "docker/config/hermes/skills/i-pr/README.md"
 type: "document"
-community: "Pull Request Generator (PR)"
+community: "ApprovalHardening"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pull_Request_Generator_PR
+  - community/ApprovalHardening
 ---
 
 # Purpose
 
 ## Connections
-- [[Pull Request Generator (PR)]] - `contains` [EXTRACTED]
+- [[Pull Request Generator (PR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pull_Request_Generator_PR
+#graphify/document #graphify/EXTRACTED #community/ApprovalHardening

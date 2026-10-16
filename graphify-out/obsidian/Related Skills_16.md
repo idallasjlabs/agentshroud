@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-gg/README.md"
+source_file: "docker/config/openclaw/skills/i-athena/README.md"
 type: "document"
-community: "Git Workflow Guardian (GIT-GUARD)"
+community: "Athena — Knowledge Distiller"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Git_Workflow_Guardian_GIT-GUARD
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Related Skills
 
 ## Connections
-- [[Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Git_Workflow_Guardian_GIT-GUARD
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

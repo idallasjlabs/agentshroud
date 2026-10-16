@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
+source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "falco_monitor.py"
-location: "L12"
+community: "FalcoAlertWatcher"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/falco_monitorpy
+  - community/FalcoAlertWatcher
 ---
 
 # Purpose
 
 ## Connections
-- [[falco_monitor.py_2]] - `contains` [EXTRACTED]
+- [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/falco_monitorpy
+#graphify/document #graphify/EXTRACTED #community/FalcoAlertWatcher

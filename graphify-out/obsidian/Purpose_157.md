@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
+source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "router.py"
-location: "L12"
+community: "create_auth_dependency"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/routerpy
+  - community/create_auth_dependency
 ---
 
 # Purpose
 
 ## Connections
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[python-jose_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/routerpy
+#graphify/document #graphify/EXTRACTED #community/create_auth_dependency

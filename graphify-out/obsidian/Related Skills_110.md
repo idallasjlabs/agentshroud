@@ -1,5 +1,5 @@
 ---
-source_file: "docker/config/openclaw/skills/i-hermes/README.md"
+source_file: "docker/config/openclaw/skills/i-ti/README.md"
 type: "document"
 community: "openclaw/skills/i-cr/SKILL.md"
 location: "L14"
@@ -12,6 +12,6 @@ tags:
 # Related Skills
 
 ## Connections
-- [[Hermes — Podcast Production Orchestrator_2]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (TI)]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

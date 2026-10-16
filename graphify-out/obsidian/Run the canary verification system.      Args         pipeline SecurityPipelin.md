@@ -12,6 +12,6 @@ tags:
 # Run the canary verification system.      Args:         pipeline: SecurityPipelin
 
 ## Connections
-- [[run_canary()_1]] - `rationale_for` [EXTRACTED]
+- [[run_canary()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy

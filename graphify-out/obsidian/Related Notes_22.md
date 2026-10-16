@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
+source_file: "docs/vault/05 - Dependencies/fastapi.md"
 type: "document"
-community: "browser-fetch.js"
-location: "L37"
+community: "All Dependencies.md"
+location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser-fetchjs
+  - community/All_Dependenciesmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[browser-fetch.js_1]] - `contains` [EXTRACTED]
+- [[FastAPI_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser-fetchjs
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

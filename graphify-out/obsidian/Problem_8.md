@@ -1,17 +1,17 @@
 ---
-source_file: "docker/DOCKER-VPN-NETWORKING.md"
+source_file: "docs/planning/redteam/00-information-disclosure.md"
 type: "document"
-community: "Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility"
-location: "L3"
+community: "Add information filtering to prevent agent self-disclosure"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility
+  - community/Add_information_filtering_to_prevent_agent_self-disclosure
 ---
 
 # Problem
 
 ## Connections
-- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - `contains` [EXTRACTED]
+- [[Add information filtering to prevent agent self-disclosure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility
+#graphify/document #graphify/EXTRACTED #community/Add_information_filtering_to_prevent_agent_self-disclosure

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "rationale"
-community: "AuditChain"
+community: "CrossBotTrustLedger"
 location: "L344"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/CrossBotTrustLedger
 ---
 
 # Return the number of incidents currently in the ledger.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-incident_count()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AuditChain
+#graphify/rationale #graphify/EXTRACTED #community/CrossBotTrustLedger

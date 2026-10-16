@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "soc/router.py"
+community: "_FakeRBAC"
 location: "L233"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/_FakeRBAC
 ---
 
 # Request to execute an SSH command
 
 ## Connections
-- [[SSHExecRequest]] - `rationale_for` [EXTRACTED]
+- [[SSHExecRequest_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy
+#graphify/rationale #graphify/EXTRACTED #community/_FakeRBAC

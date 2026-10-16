@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/openscap.md"
+source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "OpenSCAP"
-location: "L64"
+community: "FalcoAlertWatcher"
+location: "L75"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenSCAP
+  - community/FalcoAlertWatcher
 ---
 
 # Related Notes
 
 ## Connections
-- [[OpenSCAP_1]] - `contains` [EXTRACTED]
+- [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenSCAP
+#graphify/document #graphify/EXTRACTED #community/FalcoAlertWatcher

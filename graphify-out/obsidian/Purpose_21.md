@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-hermes/README.md"
+source_file: "docker/config/hermes/skills/i-icloud/README.md"
 type: "document"
-community: "Hermes — Podcast Production Orchestrator"
+community: "iCloud Data Manager (ICLOUD)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes__Podcast_Production_Orchestrator
+  - community/iCloud_Data_Manager_ICLOUD
 ---
 
 # Purpose
 
 ## Connections
-- [[Hermes — Podcast Production Orchestrator]] - `contains` [EXTRACTED]
+- [[iCloud Data Manager (ICLOUD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes__Podcast_Production_Orchestrator
+#graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD

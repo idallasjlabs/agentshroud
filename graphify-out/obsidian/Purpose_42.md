@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-bs/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm/README.md"
 type: "document"
-community: "Branding Specialist (BS)"
+community: "MCP Tools Usage (MCPM)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Branding_Specialist_BS
+  - community/MCP_Tools_Usage_MCPM
 ---
 
 # Purpose
 
 ## Connections
-- [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
+- [[MCP Tools Usage (MCPM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Branding_Specialist_BS
+#graphify/document #graphify/EXTRACTED #community/MCP_Tools_Usage_MCPM

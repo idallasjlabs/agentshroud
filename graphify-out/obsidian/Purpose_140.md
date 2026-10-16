@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "document"
-community: "prompt_guard.py.md"
+community: "ledger.py"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/prompt_guardpymd
+  - community/ledgerpy
 ---
 
 # Purpose
 
 ## Connections
-- [[prompt_guard.py]] - `contains` [EXTRACTED]
+- [[ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/prompt_guardpymd
+#graphify/document #graphify/EXTRACTED #community/ledgerpy

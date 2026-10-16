@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "gateway/ingest_api/main.py (/hermes-dashboard/ HTTP + WebSocket reverse proxy)"
+community: "AuditChain"
 location: "L2260"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
+  - community/AuditChain
 ---
 
 # Release a blocked outbound message for admin/manual resend flow.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[release_blocked_outbound()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
+#graphify/rationale #graphify/EXTRACTED #community/AuditChain

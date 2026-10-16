@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
+source_file: "docs/vault/05 - Dependencies/trivy.md"
 type: "document"
-community: "All Dependencies.md"
+community: "ClamAV"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/ClamAV
 ---
 
 # Purpose
 
 ## Connections
-- [[aiosqlite_1]] - `contains` [EXTRACTED]
+- [[Trivy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/document #graphify/EXTRACTED #community/ClamAV

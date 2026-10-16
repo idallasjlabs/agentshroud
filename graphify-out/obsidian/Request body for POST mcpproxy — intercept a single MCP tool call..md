@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "gateway/ingest_api/main.py (/hermes-dashboard/ HTTP + WebSocket reverse proxy)"
+community: "test_prompt_guard.py"
 location: "L669"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
+  - community/test_prompt_guardpy
 ---
 
 # Request body for POST /mcp/proxy — intercept a single MCP tool call.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCPProxyRequest]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy
+#graphify/rationale #graphify/EXTRACTED #community/test_prompt_guardpy

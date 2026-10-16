@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "rationale"
-community: "TestCrossBotTrustPivot"
+community: "test_security_regressions_v1_2.py"
 location: "L204"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestCrossBotTrustPivot
+  - community/test_security_regressions_v1_2py
 ---
 
 # RT-N1 (reverse): Hermes violation must not demote OpenClaw.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_hermes_violation_does_not_affect_openclaw_trust()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestCrossBotTrustPivot
+#graphify/rationale #graphify/EXTRACTED #community/test_security_regressions_v1_2py

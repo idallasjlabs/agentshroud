@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-__init__()_1]] - `calls` [EXTRACTED]
-- [[dot-__init__()_6]] - `method` [EXTRACTED]
+- [[dot-__init__()_7]] - `method` [EXTRACTED]
 - [[dot-check()]] - `method` [EXTRACTED]
 - [[dot-reset()]] - `method` [EXTRACTED]
 - [[dot-test_rate_limiter_reset()]] - `calls` [EXTRACTED]
@@ -26,10 +26,10 @@ tags:
 - [[TestEncodedPayloads]] - `uses` [INFERRED]
 - [[TestHiddenContent]] - `uses` [INFERRED]
 - [[TestIsDomainAllowed]] - `uses` [INFERRED]
-- [[TestPIIDetection_1]] - `uses` [INFERRED]
+- [[TestPIIDetection_2]] - `uses` [INFERRED]
 - [[TestPassthroughMode]] - `uses` [INFERRED]
 - [[TestPromptInjectionDetection]] - `uses` [INFERRED]
-- [[TestRateLimiting_1]] - `uses` [INFERRED]
+- [[TestRateLimiting_2]] - `uses` [INFERRED]
 - [[TestResponseSizeLimits]] - `uses` [INFERRED]
 - [[TestSSRFBlocking]] - `uses` [INFERRED]
 - [[TestStats_1]] - `uses` [INFERRED]

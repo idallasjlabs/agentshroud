@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "AgentRegistry"
+community: "MiddlewareManager"
 location: "L151"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/MiddlewareManager
 ---
 
 # Return module mode, respecting the global permissive override.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_module_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

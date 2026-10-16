@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
+source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
 type: "document"
-community: "ssh_config.py"
-location: "L12"
+community: "apply-patches.js"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ssh_configpy
+  - community/apply-patchesjs
 ---
 
 # Purpose
 
 ## Connections
-- [[ssh_config.py_2]] - `contains` [EXTRACTED]
+- [[apply-patches.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ssh_configpy
+#graphify/document #graphify/EXTRACTED #community/apply-patchesjs

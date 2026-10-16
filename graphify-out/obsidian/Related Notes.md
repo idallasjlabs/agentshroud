@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/api.py.md"
+source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "api.py"
-location: "L74"
+community: "TestFabricatedSecurityNotice"
+location: "L173"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/apipy
+  - community/TestFabricatedSecurityNotice
 ---
 
 # Related Notes
 
 ## Connections
-- [[api.py_1]] - `contains` [EXTRACTED]
+- [[Startup Sequence]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/apipy
+#graphify/document #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

@@ -17,7 +17,7 @@ tags:
 - [[SSHHostConfig]] - `uses` [INFERRED]
 - [[SSHProxy]] - `uses` [INFERRED]
 - [[SSHResult]] - `uses` [INFERRED]
-- [[proxy()]] - `references` [EXTRACTED]
+- [[proxy()_3]] - `references` [EXTRACTED]
 - [[ssh_config()_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/ApprovalQueueConfig

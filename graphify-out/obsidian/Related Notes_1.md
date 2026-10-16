@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/pytest.ini.md"
+source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "pytest.ini"
-location: "L58"
+community: "TestSSRFDetection"
+location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pytestini
+  - community/TestSSRFDetection
 ---
 
 # Related Notes
 
 ## Connections
-- [[pytest.ini]] - `contains` [EXTRACTED]
+- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pytestini
+#graphify/document #graphify/EXTRACTED #community/TestSSRFDetection

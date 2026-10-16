@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Action"
+community: "MiddlewareManager"
 location: "L64"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Action
+  - community/MiddlewareManager
 ---
 
 # RBACConfig
 
 ## Connections
-- [[dot-__init__()_62]] - `references` [EXTRACTED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
-- [[Role_22]] - `uses` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
+- [[dot-__init__()_78]] - `references` [EXTRACTED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
+- [[Role_21]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Action
+#graphify/code #graphify/INFERRED #community/MiddlewareManager

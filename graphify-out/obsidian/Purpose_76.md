@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pm/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
 type: "document"
-community: "Project Management (README)"
-location: "L6"
+community: "TrustManager"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Project_Management_README
+  - community/TrustManager
 ---
 
 # Purpose
 
 ## Connections
-- [[Project Management (README)]] - `contains` [EXTRACTED]
+- [[TrustManager_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Project_Management_README
+#graphify/document #graphify/EXTRACTED #community/TrustManager

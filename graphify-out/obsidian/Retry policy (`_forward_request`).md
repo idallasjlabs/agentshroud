@@ -12,6 +12,6 @@ tags:
 # Retry policy (`_forward_request`)
 
 ## Connections
-- [[Configuration_7]] - `contains` [EXTRACTED]
+- [[Configuration_9]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/llm_proxypy

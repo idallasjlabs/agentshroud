@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-sad/README.md"
+source_file: ".agents/skills/i-sav/README.md"
 type: "document"
 community: ".agents/skills/i-cr/SKILL.md"
 location: "L6"
@@ -12,6 +12,6 @@ tags:
 # Purpose
 
 ## Connections
-- [[System Audit Documentation_1]] - `contains` [EXTRACTED]
+- [[System Audit Vault_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

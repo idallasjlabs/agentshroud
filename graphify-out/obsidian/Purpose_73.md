@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/05 - Dependencies/trivy.md"
+source_file: "docker/config/hermes/skills/i-pm/README.md"
 type: "document"
-community: "All Dependencies.md"
-location: "L15"
+community: "Project Management (README)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/Project_Management_README
 ---
 
 # Purpose
 
 ## Connections
-- [[Trivy_1]] - `contains` [EXTRACTED]
+- [[Project Management (PM)_1]] - `contains` [EXTRACTED]
+- [[Project Management (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/document #graphify/EXTRACTED #community/Project_Management_README

@@ -1,12 +1,12 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "Basic Usage"
+community: "TestOutboundInfoFilter"
 location: "L174"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Basic_Usage
+  - community/TestOutboundInfoFilter
 ---
 
 # Run with Specific Agent
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Basic Usage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Basic_Usage
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter

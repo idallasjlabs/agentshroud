@@ -12,6 +12,6 @@ tags:
 # Represents a pending egress approval request.
 
 ## Connections
-- [[EgressRequest_1]] - `rationale_for` [EXTRACTED]
+- [[EgressRequest]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue

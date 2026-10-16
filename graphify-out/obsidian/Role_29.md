@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-cicd/SKILL.md"
+source_file: ".agents/skills/i-mm/SKILL.md"
 type: "document"
-community: "CI/CD Pipeline Advisor (SKILL)"
+community: "Skill: Mindmap Architect (MM)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_SKILL
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # Role
 
 ## Connections
-- [[Skill CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

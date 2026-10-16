@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/text_control_center.py.md"
+source_file: "docs/vault/05 - Dependencies/httpx.md"
 type: "document"
-community: "text_control_center.py / agentshroud_manager.py"
-location: "L31"
+community: "All Dependencies.md"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/text_control_centerpy_/_agentshroud_managerpy
+  - community/All_Dependenciesmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[text_control_center.py  agentshroud_manager.py]] - `contains` [EXTRACTED]
+- [[httpx_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/text_control_centerpy_/_agentshroud_managerpy
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

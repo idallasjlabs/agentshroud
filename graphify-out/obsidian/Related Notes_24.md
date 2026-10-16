@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Startup Flow Diagram.md"
+source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
 type: "document"
-community: "Startup Flow Diagram"
-location: "L83"
+community: "Restart Procedure"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Startup_Flow_Diagram
+  - community/Restart_Procedure
 ---
 
 # Related Notes
 
 ## Connections
-- [[Startup Flow Diagram_1]] - `contains` [EXTRACTED]
+- [[aiosqlite_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Startup_Flow_Diagram
+#graphify/document #graphify/EXTRACTED #community/Restart_Procedure

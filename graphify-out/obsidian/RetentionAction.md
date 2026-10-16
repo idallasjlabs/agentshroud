@@ -12,7 +12,7 @@ tags:
 # RetentionAction
 
 ## Connections
-- [[dot-__post_init__()_5]] - `method` [EXTRACTED]
+- [[dot-__post_init__()_4]] - `method` [EXTRACTED]
 - [[dot-archive_file()]] - `calls` [EXTRACTED]
 - [[dot-enforce_memory_md_size_limit()]] - `calls` [EXTRACTED]
 - [[dot-get_recent_actions()]] - `references` [EXTRACTED]

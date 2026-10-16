@@ -12,6 +12,6 @@ tags:
 # Quick Diagnosis Flow
 
 ## Connections
-- [[troubleshooting_22]] - `contains` [EXTRACTED]
+- [[troubleshooting_23]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/troubleshootingmd

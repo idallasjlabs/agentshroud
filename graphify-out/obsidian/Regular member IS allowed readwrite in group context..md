@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "RBACConfig"
+community: "TestSSRFDetection"
 location: "L243"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/TestSSRFDetection
 ---
 
 # Regular member IS allowed read/write in group context.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_member_allowed_read_write_in_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection

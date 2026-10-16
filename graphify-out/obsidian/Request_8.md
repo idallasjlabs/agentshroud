@@ -1,16 +1,20 @@
 ---
-source_file: ""
+source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "installer.py"
+community: "create_auth_dependency"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/installerpy
+  - community/create_auth_dependency
 ---
 
 # Request
 
 ## Connections
-- [[installer_page()]] - `references` [EXTRACTED]
+- [[auth_dep()_3]] - `references` [EXTRACTED]
+- [[decide_approval()]] - `references` [EXTRACTED]
+- [[list_pending_approvals()_1]] - `references` [EXTRACTED]
+- [[submit_approval_request()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/installerpy
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

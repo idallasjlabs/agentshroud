@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/seccomp-profiles.md"
+source_file: "docs/vault/04 - Environment Variables/GATEWAY_URL.md"
 type: "document"
-community: "Seccomp Profiles"
-location: "L84"
+community: "ANTHROPIC_BASE_URL"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Seccomp_Profiles
+  - community/ANTHROPIC_BASE_URL
 ---
 
 # Related Notes
 
 ## Connections
-- [[Seccomp Profiles]] - `contains` [EXTRACTED]
+- [[GATEWAY_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Seccomp_Profiles
+#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL

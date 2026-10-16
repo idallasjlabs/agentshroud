@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "main.py.md"
+community: "TestSSRFDetection"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpymd
+  - community/TestSSRFDetection
 ---
 
 # Quick Reference — AgentShroud
@@ -19,9 +19,9 @@ tags:
 - [[Key Ports]] - `contains` [EXTRACTED]
 - [[Kill Switch]] - `contains` [EXTRACTED]
 - [[Logs]] - `contains` [EXTRACTED]
-- [[Quick Reference]] - `contains` [EXTRACTED]
-- [[Related Notes_17]] - `contains` [EXTRACTED]
+- [[Quick Reference_8]] - `contains` [EXTRACTED]
+- [[Related Notes_1]] - `contains` [EXTRACTED]
 - [[Security Mode Toggle]] - `contains` [EXTRACTED]
 - [[Start  Stop]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpymd
+#graphify/document #graphify/EXTRACTED #community/TestSSRFDetection

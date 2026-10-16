@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
+source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "document"
-community: "apply-patches.js"
-location: "L78"
+community: "main.py.md"
+location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/apply-patchesjs
+  - community/mainpymd
 ---
 
 # Related Notes
 
 ## Connections
-- [[apply-patches.js_2]] - `contains` [EXTRACTED]
+- [[AgentShroud — System Overview]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/apply-patchesjs
+#graphify/document #graphify/EXTRACTED #community/mainpymd

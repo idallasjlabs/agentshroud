@@ -12,9 +12,9 @@ tags:
 # Production Safety Checklist (PROD-SAFETY)
 
 ## Connections
-- [[Purpose_57]] - `contains` [EXTRACTED]
-- [[Related Skills_43]] - `contains` [EXTRACTED]
-- [[Usage_47]] - `contains` [EXTRACTED]
+- [[Purpose_46]] - `contains` [EXTRACTED]
+- [[Related Skills_35]] - `contains` [EXTRACTED]
+- [[Usage_38]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-psREADME]] - `contains` [EXTRACTED]
 

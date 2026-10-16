@@ -12,6 +12,6 @@ tags:
 # Result of re-fetching a candidate citation URL through the web proxy.
 
 ## Connections
-- [[FetchOutcome_1]] - `rationale_for` [EXTRACTED]
+- [[FetchOutcome]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/FetchOutcome

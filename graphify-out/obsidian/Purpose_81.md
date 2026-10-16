@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/playwright.md"
+source_file: "docs/vault/03 - Configuration/seccomp-profiles.md"
 type: "document"
-community: "agentshroud-bot"
-location: "L15"
+community: "Seccomp Profiles"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-bot
+  - community/Seccomp_Profiles
 ---
 
 # Purpose
 
 ## Connections
-- [[Playwright_1]] - `contains` [EXTRACTED]
+- [[Seccomp Profiles]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-bot
+#graphify/document #graphify/EXTRACTED #community/Seccomp_Profiles

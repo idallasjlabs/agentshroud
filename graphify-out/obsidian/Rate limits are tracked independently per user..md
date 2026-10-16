@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "rationale"
-community: "RBACConfig"
+community: "hermes/SOUL.md"
 location: "L285"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/hermes/SOULmd
 ---
 
 # Rate limits are tracked independently per user.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_per_user_isolation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/hermes/SOULmd

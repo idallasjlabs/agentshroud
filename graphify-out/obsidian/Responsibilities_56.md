@@ -12,6 +12,6 @@ tags:
 # Responsibilities
 
 ## Connections
-- [[sidecar.py_2]] - `contains` [EXTRACTED]
+- [[sidecar.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/sidecarpy

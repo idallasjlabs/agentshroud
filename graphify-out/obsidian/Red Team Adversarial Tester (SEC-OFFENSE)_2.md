@@ -1,21 +1,21 @@
 ---
-source_file: ".agents/skills/i-sec-offense/README.md"
+source_file: "docker/config/hermes/skills/i-sec-offense/README.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "hermes/skills/i-bs/README.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Red Team Adversarial Tester (SEC-OFFENSE)
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-sec-offenseREADME]] - `contains` [EXTRACTED]
-- [[Purpose_136]] - `contains` [EXTRACTED]
-- [[Related Skills_102]] - `contains` [EXTRACTED]
-- [[Usage_110]] - `contains` [EXTRACTED]
+- [[Purpose_99]] - `contains` [EXTRACTED]
+- [[Related Skills_78]] - `contains` [EXTRACTED]
+- [[Usage_89]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[hermesskillsi-sec-offenseREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

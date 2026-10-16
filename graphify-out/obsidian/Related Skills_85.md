@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-tdd/README.md"
+source_file: "docker/config/hermes/skills/i-tdd/README.md"
 type: "document"
 community: "Test-Driven Development README"
 location: "L14"
@@ -12,6 +12,7 @@ tags:
 # Related Skills
 
 ## Connections
+- [[Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
 - [[Test-Driven Development README]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README

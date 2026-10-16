@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "test_telegram_proxy_outbound.py"
 location: "L110"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # Retrieve baseline snapshot for a container.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_baseline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

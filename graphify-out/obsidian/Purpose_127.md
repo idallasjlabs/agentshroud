@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-apollo/README.md"
+source_file: ".agents/skills/i-bs/README.md"
 type: "document"
 community: ".agents/skills/i-cr/SKILL.md"
 location: "L6"
@@ -12,6 +12,6 @@ tags:
 # Purpose
 
 ## Connections
-- [[Apollo — Audio Systems Producer_2]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

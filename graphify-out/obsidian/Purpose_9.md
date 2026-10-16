@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/pydantic.md"
+source_file: ".agents/skills/i-socrates/README.md"
 type: "document"
-community: "Pydantic"
-location: "L15"
+community: "Socrates — Dialogue Architect"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pydantic
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Purpose
 
 ## Connections
-- [[Pydantic]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pydantic
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

@@ -12,7 +12,7 @@ tags:
 # SSHProxy
 
 ## Connections
-- [[dot-__init__()_20]] - `method` [EXTRACTED]
+- [[dot-__init__()_151]] - `method` [EXTRACTED]
 - [[dot-execute()]] - `method` [EXTRACTED]
 - [[dot-is_auto_approved()]] - `method` [EXTRACTED]
 - [[dot-no_approval_client()]] - `calls` [EXTRACTED]

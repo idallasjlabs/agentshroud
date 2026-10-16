@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/00 - START HERE/System Overview.md"
+source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "main.py.md"
-location: "L114"
+community: "UserSessionManager"
+location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpymd
+  - community/UserSessionManager
 ---
 
 # Related Notes
 
 ## Connections
-- [[AgentShroud — System Overview]] - `contains` [EXTRACTED]
+- [[spaCy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpymd
+#graphify/document #graphify/EXTRACTED #community/UserSessionManager

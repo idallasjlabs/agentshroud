@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/playwright.md"
+source_file: "docs/vault/06 - Containers & Services/volumes.md"
 type: "document"
-community: "agentshroud-bot"
-location: "L46"
+community: "Docker Volumes"
+location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-bot
+  - community/Docker_Volumes
 ---
 
 # Related Notes
 
 ## Connections
-- [[Playwright_1]] - `contains` [EXTRACTED]
+- [[Docker Volumes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-bot
+#graphify/document #graphify/EXTRACTED #community/Docker_Volumes

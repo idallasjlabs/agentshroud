@@ -1,5 +1,5 @@
 ---
-source_file: "docker/config/hermes/skills/i-apollo/README.md"
+source_file: "docker/config/hermes/skills/i-data/README.md"
 type: "document"
 community: "hermes/skills/i-bs/README.md"
 location: "L6"
@@ -12,6 +12,6 @@ tags:
 # Purpose
 
 ## Connections
-- [[Apollo — Audio Systems Producer_1]] - `contains` [EXTRACTED]
+- [[Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

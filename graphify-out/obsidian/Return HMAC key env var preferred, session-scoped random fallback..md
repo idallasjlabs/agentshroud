@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "rationale"
-community: "test_prompt_guard.py"
+community: "ContextSegment"
 location: "L605"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_prompt_guardpy
+  - community/ContextSegment
 ---
 
 # Return HMAC key: env var preferred, session-scoped random fallback.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_get_hmac_key()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_prompt_guardpy
+#graphify/rationale #graphify/EXTRACTED #community/ContextSegment

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
 type: "document"
-community: "router.py"
-location: "L86"
+community: "mcp_permissions.py"
+location: "L79"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/routerpy
+  - community/mcp_permissionspy
 ---
 
 # Related
 
 ## Connections
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[mcp_permissions.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/routerpy
+#graphify/document #graphify/EXTRACTED #community/mcp_permissionspy

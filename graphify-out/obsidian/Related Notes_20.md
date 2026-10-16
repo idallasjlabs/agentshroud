@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
+source_file: "docs/vault/03 - Configuration/ci-workflows.md"
 type: "document"
-community: "installer.py"
-location: "L42"
+community: "All Dependencies.md"
+location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/installerpy
+  - community/All_Dependenciesmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[installer.py_1]] - `contains` [EXTRACTED]
+- [[CI Workflows]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/installerpy
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "PIIConfig"
+community: "MiddlewareManager"
 location: "L102"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/MiddlewareManager
 ---
 
 # Probe 1.1c: admin_action must require approval or be trust-blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_admin_action_requires_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/clamav.md"
+source_file: "docs/vault/03 - Configuration/pytest.ini.md"
 type: "document"
-community: "ClamAV"
-location: "L48"
+community: "All Dependencies.md"
+location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ClamAV
+  - community/All_Dependenciesmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[ClamAV]] - `contains` [EXTRACTED]
+- [[pytest.ini_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ClamAV
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

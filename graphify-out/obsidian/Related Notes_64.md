@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
+source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
 type: "document"
-community: "egress_filter.py"
-location: "L213"
+community: "First Time Setup"
+location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/First_Time_Setup
 ---
 
 # Related Notes
 
 ## Connections
-- [[agentshroud.yaml]] - `contains` [EXTRACTED]
+- [[First Time Setup_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_filterpy
+#graphify/document #graphify/EXTRACTED #community/First_Time_Setup

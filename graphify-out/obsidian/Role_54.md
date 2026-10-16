@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-pm/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-bs/SKILL.md"
 type: "document"
-community: "Skill: Project Management (PM)"
+community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM
+  - community/Required__45_for_text__30_for_UI_elements
 ---
 
 # Role
 
 ## Connections
-- [[Skill Project Management (PM)_1]] - `contains` [EXTRACTED]
+- [[Skill Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM
+#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements

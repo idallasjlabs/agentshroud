@@ -12,7 +12,7 @@ tags:
 # ProgressiveTrustConfig
 
 ## Connections
-- [[dot-test_default_mode_is_enforce()_4]] - `calls` [EXTRACTED]
+- [[dot-test_default_mode_is_enforce()_7]] - `calls` [EXTRACTED]
 - [[dot-test_default_penalties_cover_all_violation_types()]] - `calls` [EXTRACTED]
 - [[dot-test_enforce_mode_blocks()]] - `calls` [EXTRACTED]
 - [[dot-test_full_level_wildcard_allows_everything()]] - `calls` [EXTRACTED]
@@ -32,9 +32,9 @@ tags:
 - [[PromotionThreshold]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustLevel_2]] - `uses` [INFERRED]
+- [[TrustManager_4]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
 - [[_fast_ladder()]] - `references` [EXTRACTED]
 

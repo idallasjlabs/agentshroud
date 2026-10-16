@@ -12,6 +12,6 @@ tags:
 
 ## Connections
 - [[PrivacyPolicyEnforcer]] - `references` [EXTRACTED]
-- [[RBACConfig_4]] - `references` [EXTRACTED]
+- [[RBACConfig_3]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RBACConfig

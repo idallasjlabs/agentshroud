@@ -17,7 +17,7 @@ tags:
 - [[dot-no_approval_client()]] - `calls` [EXTRACTED]
 - [[dot-test_ssh_approval_sanitizes_command_pii()]] - `calls` [EXTRACTED]
 - [[dot-test_ssh_command_uses_strict_checking()]] - `calls` [EXTRACTED]
-- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[Configuration for a single SSH host]] - `rationale_for` [EXTRACTED]
 - [[SSHConfig_1]] - `uses` [INFERRED]
 - [[SSHProxy_1]] - `uses` [INFERRED]

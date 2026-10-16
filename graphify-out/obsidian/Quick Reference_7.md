@@ -1,17 +1,17 @@
 ---
-source_file: "docker/scripts/README.md"
+source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "OpenClaw Management Scripts"
-location: "L5"
+community: "xurl — Agent Skill Reference"
+location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Management_Scripts
+  - community/xurl__Agent_Skill_Reference
 ---
 
 # Quick Reference
 
 ## Connections
-- [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
+- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts
+#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference

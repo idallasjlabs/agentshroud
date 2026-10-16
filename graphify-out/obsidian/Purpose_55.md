@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pm/README.md"
+source_file: ".agents/skills/i-tw/README.md"
 type: "document"
-community: "Project Management (PM)"
+community: "FR3: System Integrity"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Project_Management_PM
+  - community/FR3_System_Integrity
 ---
 
 # Purpose
 
 ## Connections
-- [[Project Management (PM)]] - `contains` [EXTRACTED]
+- [[Technical Writer (TW)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Project_Management_PM
+#graphify/document #graphify/EXTRACTED #community/FR3_System_Integrity

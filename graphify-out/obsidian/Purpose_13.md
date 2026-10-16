@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-socrates/README.md"
+source_file: ".agents/skills/i-athena/README.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
+community: "Athena — Knowledge Distiller"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Purpose
 
 ## Connections
-- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "rationale"
-community: "RBACConfig"
+community: "export_bot"
 location: "L375"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/export_bot
 ---
 
 # Refusing ELEVATION is not the same as blanket denial — an unverified         ori
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_unverified_origin_still_allows_public_tools()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/export_bot

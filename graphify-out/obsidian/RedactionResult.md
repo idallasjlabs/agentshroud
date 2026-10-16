@@ -1,20 +1,22 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "PIIConfig"
-location: "L71"
+community: "ToolResultSanitizer"
+location: "L171"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/PIIConfig
+  - graphify/EXTRACTED
+  - community/ToolResultSanitizer
 ---
 
 # RedactionResult
 
 ## Connections
-- [[dot-sanitize_tool_result()]] - `references` [EXTRACTED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
-- [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[RedactionResult_3]] - `uses` [INFERRED]
+- [[dot-_sanitize_presidio()]] - `references` [EXTRACTED]
+- [[dot-_sanitize_regex()]] - `references` [EXTRACTED]
+- [[dot-sanitize()_2]] - `references` [EXTRACTED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[RedactionDetail]] - `uses` [INFERRED]
+- [[RedactionResult_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

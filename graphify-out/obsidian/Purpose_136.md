@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-sec-offense/README.md"
+source_file: ".agents/skills/i-vulcan/README.md"
 type: "document"
 community: ".agents/skills/i-cr/SKILL.md"
 location: "L6"
@@ -12,6 +12,6 @@ tags:
 # Purpose
 
 ## Connections
-- [[Red Team Adversarial Tester (SEC-OFFENSE)_2]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Container Errors.md"
+source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "Restart Procedure"
-location: "L119"
+community: "Audit Ledger (SHA-256 hash only)"
+location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Restart_Procedure
+  - community/Audit_Ledger_SHA-256_hash_only
 ---
 
 # Related Notes
 
 ## Connections
-- [[Container Errors_1]] - `contains` [EXTRACTED]
+- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Restart_Procedure
+#graphify/document #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only

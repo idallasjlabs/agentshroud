@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/networks.md"
+source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
 type: "document"
-community: "agentshroud-bot"
-location: "L72"
+community: "Crash Recovery"
+location: "L197"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-bot
+  - community/Crash_Recovery
 ---
 
 # Related Notes
 
 ## Connections
-- [[Docker Networks]] - `contains` [EXTRACTED]
+- [[Crash Recovery_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-bot
+#graphify/document #graphify/EXTRACTED #community/Crash_Recovery

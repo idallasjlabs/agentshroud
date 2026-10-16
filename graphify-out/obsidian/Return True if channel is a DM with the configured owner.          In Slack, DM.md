@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/slack_proxy.py"
 type: "rationale"
-community: "SlackAPIProxy"
+community: "AsyncMock"
 location: "L111"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/AsyncMock
 ---
 
 # Return True if channel is a DM with the configured owner.          In Slack, DM
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_is_owner_channel()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/AsyncMock

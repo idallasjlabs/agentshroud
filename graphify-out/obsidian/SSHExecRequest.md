@@ -1,19 +1,16 @@
 ---
-source_file: "gateway/ingest_api/models.py"
+source_file: ""
 type: "code"
-community: "soc/router.py"
-location: "L232"
+community: "AuditChain"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/AuditChain
 ---
 
 # SSHExecRequest
 
 ## Connections
-- [[BaseModel]] - `inherits` [EXTRACTED]
-- [[Request to execute an SSH command]] - `rationale_for` [EXTRACTED]
-- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
+- [[ssh_exec()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/AuditChain

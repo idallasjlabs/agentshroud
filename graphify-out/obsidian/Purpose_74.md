@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
+source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
 type: "document"
-community: "Audit Ledger (SHA-256 hash only)"
-location: "L15"
+community: "egress_filter.py"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Audit_Ledger_SHA-256_hash_only
+  - community/egress_filterpy
 ---
 
 # Purpose
 
 ## Connections
-- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
+- [[agentshroud.yaml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only
+#graphify/document #graphify/EXTRACTED #community/egress_filterpy

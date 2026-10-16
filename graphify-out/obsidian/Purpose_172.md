@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sad/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
 type: "document"
-community: "openclaw/skills/i-cr/SKILL.md"
-location: "L6"
+community: "trivy_report.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/trivy_reportpy
 ---
 
 # Purpose
 
 ## Connections
-- [[System Audit Documentation_2]] - `contains` [EXTRACTED]
+- [[trivy_report.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/trivy_reportpy

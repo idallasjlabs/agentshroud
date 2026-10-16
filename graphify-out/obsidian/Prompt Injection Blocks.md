@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Error Index]] - `references` [EXTRACTED]
-- [[PII Pipeline Errors_1]] - `semantically_similar_to` [INFERRED]
+- [[PII Pipeline Errors]] - `semantically_similar_to` [INFERRED]
 - [[Prompt Injection Blocks_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Error_Indexmd

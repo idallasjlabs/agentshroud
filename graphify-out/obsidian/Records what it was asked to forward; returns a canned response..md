@@ -12,6 +12,6 @@ tags:
 # Records what it was asked to forward; returns a canned response.
 
 ## Connections
-- [[_StubForwarder_1]] - `rationale_for` [EXTRACTED]
+- [[_StubForwarder]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_a2a_proxypy

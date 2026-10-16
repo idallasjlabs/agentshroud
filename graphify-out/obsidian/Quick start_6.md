@@ -1,17 +1,20 @@
 ---
-source_file: "skills/openclaw/summarize/SKILL.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "OpenClaw Skill Metadata Schema (frontmatter convention)"
+community: "SecureBrowser Skill"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention
+  - community/SecureBrowser_Skill
 ---
 
-# Quick start
+# Quick Start
 
 ## Connections
-- [[Summarize]] - `contains` [EXTRACTED]
+- [[1. Verify Installation]] - `contains` [EXTRACTED]
+- [[2. Configure Allowlist]] - `contains` [EXTRACTED]
+- [[3. Test Navigation]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

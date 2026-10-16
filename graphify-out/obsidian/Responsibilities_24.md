@@ -12,6 +12,6 @@ tags:
 # Responsibilities
 
 ## Connections
-- [[wazuh_client.py_2]] - `contains` [EXTRACTED]
+- [[wazuh_client.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/wazuh_clientpy

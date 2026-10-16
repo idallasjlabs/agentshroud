@@ -12,7 +12,7 @@ tags:
 # RouterConfig
 
 ## Connections
-- [[dot-__init__()_183]] - `references` [EXTRACTED]
+- [[dot-__init__()_170]] - `references` [EXTRACTED]
 - [[AgentTarget_3]] - `uses` [INFERRED]
 - [[ForwardRequest_3]] - `uses` [INFERRED]
 - [[RouterConfig]] - `uses` [INFERRED]

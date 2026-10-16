@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-gg/README.md"
+source_file: ".agents/skills/i-data/README.md"
 type: "document"
 community: ".agents/skills/i-cr/SKILL.md"
 location: "L14"
@@ -12,6 +12,6 @@ tags:
 # Related Skills
 
 ## Connections
-- [[Git Workflow Guardian (GIT-GUARD)_2]] - `contains` [EXTRACTED]
+- [[Data Validation (DATA-VAL)_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

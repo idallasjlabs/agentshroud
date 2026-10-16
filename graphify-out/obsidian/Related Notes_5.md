@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
+source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
 type: "document"
-community: "PII Pipeline Errors"
-location: "L103"
+community: "Error Index.md"
+location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PII_Pipeline_Errors
+  - community/Error_Indexmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[PII Pipeline Errors]] - `contains` [EXTRACTED]
+- [[Presidio Analyzer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PII_Pipeline_Errors
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

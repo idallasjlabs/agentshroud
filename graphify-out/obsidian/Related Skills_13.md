@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/README.md"
+source_file: "docker/config/hermes/skills/i-production/README.md"
 type: "document"
-community: "AWS Cloud Management & FinOps"
+community: "Incident Response (INCIDENT)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps
+  - community/Incident_Response_INCIDENT
 ---
 
 # Related Skills
 
 ## Connections
-- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_INCIDENT

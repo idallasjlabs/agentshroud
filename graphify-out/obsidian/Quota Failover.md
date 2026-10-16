@@ -16,6 +16,6 @@ tags:
 - [[Failover controls]] - `contains` [EXTRACTED]
 - [[Failover notifications]] - `contains` [EXTRACTED]
 - [[Stats tracked]] - `contains` [EXTRACTED]
-- [[llm_proxy.py_1]] - `contains` [EXTRACTED]
+- [[llm_proxy.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/llm_proxypy

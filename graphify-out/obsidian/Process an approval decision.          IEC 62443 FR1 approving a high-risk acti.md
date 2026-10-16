@@ -12,6 +12,6 @@ tags:
 # Process an approval decision.          IEC 62443 FR1: approving a high-risk acti
 
 ## Connections
-- [[dot-decide()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-decide()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

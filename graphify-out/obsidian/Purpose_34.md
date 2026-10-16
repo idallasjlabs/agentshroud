@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-production/README.md"
+source_file: "docker/config/openclaw/skills/i-data/README.md"
 type: "document"
-community: "Incident Response (INCIDENT)"
+community: "Data Validation (DATA-VAL)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Incident_Response_INCIDENT
+  - community/Data_Validation_DATA-VAL
 ---
 
 # Purpose
 
 ## Connections
-- [[Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
+- [[Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Incident_Response_INCIDENT
+#graphify/document #graphify/EXTRACTED #community/Data_Validation_DATA-VAL

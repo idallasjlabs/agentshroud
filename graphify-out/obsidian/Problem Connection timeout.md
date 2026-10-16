@@ -12,6 +12,6 @@ tags:
 # Problem: "Connection timeout"
 
 ## Connections
-- [[Troubleshooting_9]] - `contains` [EXTRACTED]
+- [[Troubleshooting_11]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

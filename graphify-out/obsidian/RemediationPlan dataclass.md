@@ -12,7 +12,7 @@ tags:
 # RemediationPlan dataclass
 
 ## Connections
-- [[dot-to_dict()_15]] - `method` [EXTRACTED]
+- [[dot-to_dict()_13]] - `method` [EXTRACTED]
 - [[TestPlanAgainstRealRegistry]] - `uses` [INFERRED]
 - [[TestPlanRemediation]] - `uses` [INFERRED]
 - [[TestVersionPinIO]] - `uses` [INFERRED]

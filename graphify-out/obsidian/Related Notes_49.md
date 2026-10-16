@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/python-jose.md"
+source_file: "docs/vault/05 - Dependencies/openclaw.md"
 type: "document"
-community: "test_security.py"
-location: "L44"
+community: "agentshroud-bot"
+location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_securitypy
+  - community/agentshroud-bot
 ---
 
 # Related Notes
 
 ## Connections
-- [[python-jose_1]] - `contains` [EXTRACTED]
+- [[OpenClaw_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_securitypy
+#graphify/document #graphify/EXTRACTED #community/agentshroud-bot

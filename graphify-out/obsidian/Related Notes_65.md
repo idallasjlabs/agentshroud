@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/ssh-config.md"
+source_file: "docs/vault/08 - Runbooks/Kill Switch Procedure.md"
 type: "document"
-community: "SSH Config"
-location: "L51"
+community: "Kill Switch Procedure"
+location: "L141"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSH_Config
+  - community/Kill_Switch_Procedure
 ---
 
 # Related Notes
 
 ## Connections
-- [[SSH Config]] - `contains` [EXTRACTED]
+- [[Kill Switch Procedure_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SSH_Config
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch_Procedure

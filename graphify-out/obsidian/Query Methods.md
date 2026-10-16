@@ -12,6 +12,6 @@ tags:
 # Query Methods
 
 ## Connections
-- [[Function Details_23]] - `contains` [EXTRACTED]
+- [[Function Details_22]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mcp_auditpy

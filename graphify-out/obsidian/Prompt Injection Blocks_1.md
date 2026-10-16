@@ -17,7 +17,7 @@ tags:
 - [[HTTP 400 — Prompt Injection Detected]] - `contains` [EXTRACTED]
 - [[Prompt Injection Blocks]] - `contains` [EXTRACTED]
 - [[Prompt Injection in Monitor Mode]] - `contains` [EXTRACTED]
-- [[Related Notes_44]] - `contains` [EXTRACTED]
+- [[Related Notes_27]] - `contains` [EXTRACTED]
 - [[Tool Result Injections]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Error_Indexmd

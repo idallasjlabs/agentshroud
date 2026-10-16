@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_enhanced_approval.py"
+source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
 community: "ApprovalQueueConfig"
-location: "L492"
+location: "L503"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

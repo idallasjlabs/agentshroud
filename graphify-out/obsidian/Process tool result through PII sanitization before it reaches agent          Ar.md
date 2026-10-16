@@ -12,6 +12,6 @@ tags:
 # Process tool result through PII sanitization before it reaches agent          Ar
 
 ## Connections
-- [[dot-process_tool_result()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-process_tool_result()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

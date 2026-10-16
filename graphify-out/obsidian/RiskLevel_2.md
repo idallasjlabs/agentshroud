@@ -1,5 +1,5 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
+source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
 community: "SecureBrowser"
 location: "L34"
@@ -12,11 +12,11 @@ tags:
 # RiskLevel
 
 ## Connections
-- [[dot-_classify_risk()_2]] - `references` [EXTRACTED]
-- [[dot-_log_action()_2]] - `references` [EXTRACTED]
-- [[dot-_requires_approval()_2]] - `references` [EXTRACTED]
+- [[dot-_classify_risk()_1]] - `references` [EXTRACTED]
+- [[dot-_log_action()_1]] - `references` [EXTRACTED]
+- [[dot-_requires_approval()_1]] - `references` [EXTRACTED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
-- [[Risk classification for browser actions_2]] - `rationale_for` [EXTRACTED]
-- [[openclawskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
+- [[Risk classification for browser actions_1]] - `rationale_for` [EXTRACTED]
+- [[hermesskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser

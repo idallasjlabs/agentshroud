@@ -1,17 +1,18 @@
 ---
-source_file: ".agents/skills/i-pm/README.md"
+source_file: ".agents/skills/i-mc/README.md"
 type: "document"
-community: "Project Management (README)"
+community: "GSDE&G Development Master Checklist Skill"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Project_Management_README
+  - community/GSDEG_Development_Master_Checklist_Skill
 ---
 
 # Related Skills
 
 ## Connections
-- [[Project Management (README)]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)_1]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Project_Management_README
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_Skill

@@ -1,5 +1,5 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-defense/README.md"
+source_file: "docker/config/hermes/skills/i-tw/README.md"
 type: "document"
 community: "hermes/skills/i-bs/README.md"
 location: "L14"
@@ -12,6 +12,6 @@ tags:
 # Related Skills
 
 ## Connections
-- [[Blue Team Security Auditor (SEC-DEFENSE)_1]] - `contains` [EXTRACTED]
+- [[Technical Writer (TW)_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

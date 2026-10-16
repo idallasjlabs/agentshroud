@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mnemosyne/README.md"
+source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
 type: "document"
-community: "Mnemosyne — Retention Engineer"
-location: "L6"
+community: "security.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mnemosyne__Retention_Engineer
+  - community/securitypy
 ---
 
 # Purpose
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_2]] - `contains` [EXTRACTED]
+- [[security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer
+#graphify/document #graphify/EXTRACTED #community/securitypy

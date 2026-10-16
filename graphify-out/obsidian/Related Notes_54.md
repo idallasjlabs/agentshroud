@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
+source_file: "docs/vault/09 - Diagrams/Full System Flowchart.md"
 type: "document"
-community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
-location: "L192"
+community: "`SecurityPipeline`"
+location: "L129"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue_enhanced_queuepy
+  - community/SecurityPipeline
 ---
 
 # Related Notes
 
 ## Connections
-- [[Shutdown & Recovery_1]] - `contains` [EXTRACTED]
+- [[Full System Flowchart_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy
+#graphify/document #graphify/EXTRACTED #community/SecurityPipeline

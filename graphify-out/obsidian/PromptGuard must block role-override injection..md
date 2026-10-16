@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "PIIConfig"
+community: "MiddlewareManager"
 location: "L207"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/MiddlewareManager
 ---
 
 # PromptGuard must block role-override injection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_prompt_injection_role_override()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

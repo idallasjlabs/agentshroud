@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
+source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "All Dependencies.md"
-location: "L42"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[aiosqlite_1]] - `contains` [EXTRACTED]
+- [[Architecture Overview]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

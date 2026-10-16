@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-pr/README.md"
+source_file: ".agents/skills/i-mcpm-doctor/README.md"
 type: "document"
 community: ".agents/skills/i-cr/SKILL.md"
 location: "L14"
@@ -12,6 +12,6 @@ tags:
 # Related Skills
 
 ## Connections
-- [[Pull Request Generator (PR)_2]] - `contains` [EXTRACTED]
+- [[MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

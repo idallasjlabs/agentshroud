@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "AlertDispatcher"
+community: "ResourceGuard"
 location: "L49"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher
+  - community/ResourceGuard
 ---
 
 # ResourceLimits
 
 ## Connections
-- [[dot-__init__()_42]] - `references` [EXTRACTED]
-- [[dot-setup_method()_6]] - `calls` [EXTRACTED]
+- [[dot-__init__()_74]] - `references` [EXTRACTED]
+- [[dot-setup_method()_12]] - `calls` [EXTRACTED]
 - [[dot-test_cpu_limit_check()]] - `calls` [EXTRACTED]
 - [[dot-test_disk_write_limit()]] - `calls` [EXTRACTED]
 - [[dot-test_memory_limit_check()]] - `calls` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[dot-test_setup_with_custom_limits_overrides_defaults()]] - `calls` [EXTRACTED]
 - [[dot-test_stop_cancels_monitor_task()]] - `calls` [EXTRACTED]
 - [[dot-test_usage_stats()]] - `calls` [EXTRACTED]
-- [[Any_16]] - `uses` [INFERRED]
+- [[Any_19]] - `uses` [INFERRED]
 - [[Configuration for resource limits.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
@@ -54,4 +54,4 @@ tags:
 - [[test_resource_guard_wiring.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher
+#graphify/code #graphify/INFERRED #community/ResourceGuard

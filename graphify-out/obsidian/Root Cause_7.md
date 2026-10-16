@@ -1,17 +1,20 @@
 ---
-source_file: "docs/planning/redteam/00-information-disclosure.md"
+source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "Add information filtering to prevent agent self-disclosure"
-location: "L23"
+community: "ModeRequest"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Add_information_filtering_to_prevent_agent_self-disclosure
+  - community/ModeRequest
 ---
 
 # Root Cause
 
 ## Connections
-- [[Add information filtering to prevent agent self-disclosure]] - `contains` [EXTRACTED]
+- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - `contains` [EXTRACTED]
+- [[Primary gVisor networking mode]] - `contains` [EXTRACTED]
+- [[Secondary Python IPv6 fallback (misleading error)]] - `contains` [EXTRACTED]
+- [[Secondary transparent HTTPS proxy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Add_information_filtering_to_prevent_agent_self-disclosure
+#graphify/document #graphify/EXTRACTED #community/ModeRequest

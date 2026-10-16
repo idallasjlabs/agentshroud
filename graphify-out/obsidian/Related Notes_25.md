@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Container Errors.md"
 type: "document"
-community: "Dockerfile — Bot (OpenClaw)"
-location: "L114"
+community: "Restart Procedure"
+location: "L119"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dockerfile__Bot_OpenClaw
+  - community/Restart_Procedure
 ---
 
 # Related Notes
 
 ## Connections
-- [[4. Environment Variables]] - `contains` [EXTRACTED]
+- [[Container Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/Restart_Procedure

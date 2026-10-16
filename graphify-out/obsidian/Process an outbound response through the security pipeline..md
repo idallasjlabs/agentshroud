@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "rationale"
-community: "AuditChain"
+community: "PipelineAction"
 location: "L1062"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/PipelineAction
 ---
 
 # Process an outbound response through the security pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_process_outbound_core()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AuditChain
+#graphify/rationale #graphify/EXTRACTED #community/PipelineAction

@@ -41,6 +41,6 @@ tags:
 - [[SSHHostConfig]] - `uses` [INFERRED]
 - [[SSHProxy]] - `uses` [INFERRED]
 - [[SSHResult]] - `uses` [INFERRED]
-- [[proxy()]] - `references` [EXTRACTED]
+- [[proxy()_3]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

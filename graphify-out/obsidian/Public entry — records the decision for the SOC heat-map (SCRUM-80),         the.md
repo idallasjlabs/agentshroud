@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "ModuleStatsCollector"
+community: "RBACConfig"
 location: "L234"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/RBACConfig
 ---
 
 # Public entry — records the decision for the SOC heat-map (SCRUM-80),         the
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-can_use_tool()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

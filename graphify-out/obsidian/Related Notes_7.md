@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
+source_file: "docs/vault/08 - Runbooks/Restart Procedure.md"
 type: "document"
-community: "FalcoAlertWatcher"
-location: "L75"
+community: "02-infrastructure.md"
+location: "L145"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/02-infrastructuremd
 ---
 
 # Related Notes
 
 ## Connections
-- [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
+- [[Restart Procedure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/document #graphify/EXTRACTED #community/02-infrastructuremd

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/openscap.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
 type: "document"
-community: "OpenSCAP"
-location: "L16"
+community: "router.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenSCAP
+  - community/routerpy
 ---
 
 # Purpose
 
 ## Connections
-- [[OpenSCAP_1]] - `contains` [EXTRACTED]
+- [[router.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenSCAP
+#graphify/document #graphify/EXTRACTED #community/routerpy

@@ -12,6 +12,6 @@ tags:
 # SQLite-backed audit event store with tamper-evident hash chain.
 
 ## Connections
-- [[AuditStore_1]] - `rationale_for` [EXTRACTED]
+- [[AuditStore]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AuditStore

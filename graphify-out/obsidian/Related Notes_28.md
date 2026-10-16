@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md"
 type: "document"
-community: "AgentRegistry"
-location: "L36"
+community: "Error Index.md"
+location: "L97"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/Error_Indexmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - `contains` [EXTRACTED]
+- [[SSH Proxy Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentRegistry
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

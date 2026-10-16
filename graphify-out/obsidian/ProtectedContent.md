@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
+community: "Phase 1 — Raw Collection"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/Phase_1__Raw_Collection
 ---
 
 # ProtectedContent
@@ -18,4 +18,4 @@ tags:
 - [[A piece of content that should be protected from disclosure.]] - `rationale_for` [EXTRACTED]
 - [[prompt_protection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/Phase_1__Raw_Collection

@@ -12,7 +12,7 @@ tags:
 # Prompt Injection Assessment — AgentShroud v0.7.0
 
 ## Connections
-- [[Critical Findings_2]] - `contains` [EXTRACTED]
+- [[Critical Findings_1]] - `contains` [EXTRACTED]
 - [[Current Defenses (3 Layers)]] - `contains` [EXTRACTED]
 - [[Threat Matrix What Gets Through]] - `contains` [EXTRACTED]
 - [[prompt-injection-assessment-2026-02-25]] - `contains` [EXTRACTED]

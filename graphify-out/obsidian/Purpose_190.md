@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md"
+source_file: "docs/vault/03 - Configuration/ssh-config.md"
 type: "document"
-community: "proxy_status.py"
-location: "L15"
+community: "SSH Config"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/proxy_statuspy
+  - community/SSH_Config
 ---
 
 # Purpose
 
 ## Connections
-- [[proxy_status.py_2]] - `contains` [EXTRACTED]
+- [[SSH Config]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/proxy_statuspy
+#graphify/document #graphify/EXTRACTED #community/SSH_Config

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
 type: "document"
-community: "mcp_config.py"
+community: "web_proxy.py"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_configpy
+  - community/web_proxypy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[mcp_config.py_1]] - `contains` [EXTRACTED]
+- [[web_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_configpy
+#graphify/document #graphify/EXTRACTED #community/web_proxypy

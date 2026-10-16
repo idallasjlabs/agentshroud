@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-bs/README.md"
+source_file: "docker/config/openclaw/skills/i-mc/README.md"
 type: "document"
-community: "Branding Specialist (BS)"
+community: "GSDE&G Development Master Checklist (MC)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Branding_Specialist_BS
+  - community/GSDEG_Development_Master_Checklist_MC
 ---
 
 # Related Skills
 
 ## Connections
-- [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Branding_Specialist_BS
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_MC

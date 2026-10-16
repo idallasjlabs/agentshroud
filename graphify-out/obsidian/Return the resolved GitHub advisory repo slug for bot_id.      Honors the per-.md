@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_cve_registry.py"
 type: "rationale"
-community: "agent_cve_registry.py"
+community: "sync-cve-registry.py"
 location: "L18493"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/agent_cve_registrypy
+  - community/sync-cve-registrypy
 ---
 
 # Return the resolved GitHub advisory repo slug for *bot_id*.      Honors the per-
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_agent_ghsa_repo()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/agent_cve_registrypy
+#graphify/rationale #graphify/EXTRACTED #community/sync-cve-registrypy

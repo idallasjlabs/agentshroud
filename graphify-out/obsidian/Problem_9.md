@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/00-information-disclosure.md"
+source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "Add information filtering to prevent agent self-disclosure"
-location: "L6"
+community: "ModeRequest"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Add_information_filtering_to_prevent_agent_self-disclosure
+  - community/ModeRequest
 ---
 
 # Problem
 
 ## Connections
-- [[Add information filtering to prevent agent self-disclosure]] - `contains` [EXTRACTED]
+- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Add_information_filtering_to_prevent_agent_self-disclosure
+#graphify/document #graphify/EXTRACTED #community/ModeRequest

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec/README.md"
+source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "Security Review (SEC)"
-location: "L6"
+community: "Pydantic"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Review_SEC
+  - community/Pydantic
 ---
 
 # Purpose
 
 ## Connections
-- [[Security Review (SEC)]] - `contains` [EXTRACTED]
+- [[Pydantic]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC
+#graphify/document #graphify/EXTRACTED #community/Pydantic

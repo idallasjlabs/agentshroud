@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ledger.py"
 type: "rationale"
-community: "DataLedger"
+community: "PIIConfig"
 location: "L217"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/PIIConfig
 ---
 
 # Re-initializing must not orphan the first aiosqlite connection.      aiosqlite c
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_initialize_is_idempotent()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DataLedger
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

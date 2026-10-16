@@ -12,6 +12,6 @@ tags:
 # Related
 
 ## Connections
-- [[session_security.py_1]] - `contains` [EXTRACTED]
+- [[session_security.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

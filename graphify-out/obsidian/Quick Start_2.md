@@ -12,6 +12,6 @@ tags:
 # Quick Start
 
 ## Connections
-- [[Documentation_2]] - `contains` [EXTRACTED]
+- [[Documentation_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_README

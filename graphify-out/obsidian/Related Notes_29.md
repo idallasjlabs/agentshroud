@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
+source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
 type: "document"
-community: "AgentRegistry"
-location: "L44"
+community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
+location: "L192"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/EnhancedApprovalQueue_enhanced_queuepy
 ---
 
 # Related Notes
 
 ## Connections
-- [[OPENCLAW_SANDBOX_MODE_1]] - `contains` [EXTRACTED]
+- [[Shutdown & Recovery]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentRegistry
+#graphify/document #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy

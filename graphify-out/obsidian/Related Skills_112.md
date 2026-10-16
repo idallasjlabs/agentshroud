@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sav/README.md"
+source_file: ".agents/skills/i-ti/README.md"
 type: "document"
-community: "openclaw/skills/i-cr/SKILL.md"
-location: "L12"
+community: "Technical Illustrator (i-ti)"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/Technical_Illustrator_i-ti
 ---
 
 # Related Skills
 
 ## Connections
-- [[System Audit Vault_2]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_i-ti

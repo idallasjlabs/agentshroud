@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-data/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm/README.md"
 type: "document"
-community: "Data Validation (DATA-VAL)"
+community: "MCP Tools Usage (MCPM)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Data_Validation_DATA-VAL
+  - community/MCP_Tools_Usage_MCPM
 ---
 
 # Related Skills
 
 ## Connections
-- [[Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
+- [[MCP Tools Usage (MCPM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Data_Validation_DATA-VAL
+#graphify/document #graphify/EXTRACTED #community/MCP_Tools_Usage_MCPM

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md"
+source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
 type: "document"
-community: "GATEWAY_OP_PROXY_URL"
-location: "L49"
+community: "pytest.ini"
+location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GATEWAY_OP_PROXY_URL
+  - community/pytestini
 ---
 
 # Related Notes
 
 ## Connections
-- [[GATEWAY_OP_PROXY_URL_1]] - `contains` [EXTRACTED]
+- [[Dockerfile — Bot (OpenClaw)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GATEWAY_OP_PROXY_URL
+#graphify/document #graphify/EXTRACTED #community/pytestini

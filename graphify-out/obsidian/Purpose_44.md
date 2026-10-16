@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cr/README.md"
+source_file: "docker/config/openclaw/skills/i-pm/README.md"
 type: "document"
-community: "Code Review (CR)"
+community: "Project Management (PM)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Code_Review_CR
+  - community/Project_Management_PM
 ---
 
 # Purpose
 
 ## Connections
-- [[Code Review (CR)]] - `contains` [EXTRACTED]
+- [[Project Management (PM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Code_Review_CR
+#graphify/document #graphify/EXTRACTED #community/Project_Management_PM

@@ -1,36 +1,36 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "PIIConfig"
+community: "ContextSegment"
 location: "L581"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PIIConfig
+  - community/ContextSegment
 ---
 
 # PromptGuard
 
 ## Connections
-- [[dot-__init__()_151]] - `method` [EXTRACTED]
+- [[dot-__init__()_77]] - `method` [EXTRACTED]
 - [[dot-_check_encoded_content()]] - `method` [EXTRACTED]
 - [[dot-_check_unicode_tricks()]] - `method` [EXTRACTED]
 - [[dot-_get_hmac_key()]] - `method` [EXTRACTED]
-- [[dot-guard()]] - `calls` [EXTRACTED]
-- [[dot-guard()_5]] - `calls` [EXTRACTED]
-- [[dot-guard()_6]] - `calls` [EXTRACTED]
+- [[dot-guard()_1]] - `calls` [EXTRACTED]
 - [[dot-guard()_2]] - `calls` [EXTRACTED]
-- [[dot-pg()]] - `calls` [EXTRACTED]
+- [[dot-guard()_3]] - `calls` [EXTRACTED]
+- [[dot-guard()_4]] - `calls` [EXTRACTED]
 - [[dot-pg()_1]] - `calls` [EXTRACTED]
+- [[dot-pg()]] - `calls` [EXTRACTED]
 - [[dot-pipeline()]] - `calls` [EXTRACTED]
 - [[dot-pipeline()_1]] - `calls` [EXTRACTED]
 - [[dot-reanchor_delimiters()]] - `method` [EXTRACTED]
 - [[dot-register_system_prompt()]] - `method` [EXTRACTED]
-- [[dot-scan()_3]] - `method` [EXTRACTED]
-- [[dot-scan_tool_result()_3]] - `method` [EXTRACTED]
-- [[dot-setup_method()_15]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_27]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_32]] - `calls` [EXTRACTED]
+- [[dot-scan()_2]] - `method` [EXTRACTED]
+- [[dot-scan_tool_result()_2]] - `method` [EXTRACTED]
+- [[dot-setup_method()_18]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_36]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_38]] - `calls` [EXTRACTED]
 - [[dot-test_custom_pattern()]] - `calls` [EXTRACTED]
 - [[dot-test_pipeline_raises_with_only_prompt_guard()]] - `calls` [EXTRACTED]
 - [[dot-test_prompt_guard_instantiates()]] - `calls` [EXTRACTED]
@@ -39,17 +39,17 @@ tags:
 - [[dot-test_warn_threshold()]] - `calls` [EXTRACTED]
 - [[dot-test_write_baseline_json()]] - `calls` [EXTRACTED]
 - [[dot-verify_system_prompt()]] - `method` [EXTRACTED]
-- [[Any_57]] - `uses` [INFERRED]
+- [[Any_20]] - `uses` [INFERRED]
 - [[ContextIntegrityScorer]] - `uses` [INFERRED]
-- [[Data Flow]] - `references` [EXTRACTED]
+- [[Data Flow_1]] - `references` [EXTRACTED]
 - [[Detect and block prompt injection attempts.]] - `rationale_for` [EXTRACTED]
 - [[HeuristicClassifier]] - `uses` [INFERRED]
 - [[IntegrityScore]] - `uses` [INFERRED]
-- [[PIISanitizer_1]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[PromptGuard_1]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
-- [[Startup Sequence]] - `references` [EXTRACTED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[Startup Sequence_1]] - `references` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAuditChainPerformance]] - `uses` [INFERRED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
@@ -123,24 +123,24 @@ tags:
 - [[_BrokenOutputCanary]] - `uses` [INFERRED]
 - [[_BrokenSanitizer]] - `uses` [INFERRED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder]] - `uses` [INFERRED]
+- [[_StubForwarder_2]] - `uses` [INFERRED]
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
 - [[_make_pipeline()]] - `calls` [EXTRACTED]
 - [[canary-cron.sh embedded Python main()]] - `calls` [EXTRACTED]
 - [[canary_pipeline()]] - `calls` [EXTRACTED]
 - [[context_integrity.py]] - `imports` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
-- [[guard()_4]] - `calls` [EXTRACTED]
+- [[guard()_3]] - `calls` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[main.py]] - `references` [EXTRACTED]
-- [[pipeline()]] - `calls` [EXTRACTED]
-- [[prompt_guard()_1]] - `calls` [EXTRACTED]
+- [[main.py_1]] - `references` [EXTRACTED]
+- [[pipeline()_2]] - `calls` [EXTRACTED]
 - [[prompt_guard()_2]] - `calls` [EXTRACTED]
 - [[prompt_guard()]] - `calls` [EXTRACTED]
-- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
+- [[prompt_guard()_1]] - `calls` [EXTRACTED]
+- [[prompt_guard.py]] - `contains` [EXTRACTED]
 - [[run()_4]] - `calls` [EXTRACTED]
-- [[run_canary()]] - `references` [EXTRACTED]
+- [[run_canary()_1]] - `references` [EXTRACTED]
 - [[run_chain()]] - `references` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[test_adversarial_injection.py]] - `imports` [EXTRACTED]
@@ -162,4 +162,4 @@ tags:
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PIIConfig
+#graphify/code #graphify/INFERRED #community/ContextSegment

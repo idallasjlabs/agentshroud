@@ -1,11 +1,11 @@
 ---
 source_file: "branding/icons/modules/ssh-proxy-256x256.png"
 type: "image"
-community: "AgentShroud macOS App Icon (1024x1024, Rounded Squircle)"
+community: "egress_filter.py"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle
+  - community/egress_filterpy
 ---
 
 # SSH Proxy Module Badge Icon
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - `conceptually_related_to` [INFERRED]
 - [[proxy.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle
+#graphify/image #graphify/INFERRED #community/egress_filterpy

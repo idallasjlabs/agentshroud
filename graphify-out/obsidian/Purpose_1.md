@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/pytest.ini.md"
+source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
 type: "document"
-community: "pytest.ini"
-location: "L15"
+community: "Error Index.md"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pytestini
+  - community/Error_Indexmd
 ---
 
 # Purpose
 
 ## Connections
-- [[pytest.ini]] - `contains` [EXTRACTED]
+- [[Presidio Analyzer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pytestini
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-tw/README.md"
+source_file: ".agents/skills/i-sec-defense/README.md"
 type: "document"
 community: ".agents/skills/i-cr/SKILL.md"
 location: "L14"
@@ -12,6 +12,6 @@ tags:
 # Related Skills
 
 ## Connections
-- [[Technical Writer (TW)_2]] - `contains` [EXTRACTED]
+- [[Blue Team Security Auditor (SEC-DEFENSE)_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

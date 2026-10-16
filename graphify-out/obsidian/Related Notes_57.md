@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Network Topology.md"
+source_file: "docs/vault/03 - Configuration/falco-rules.md"
 type: "document"
-community: "`SecurityPipeline`"
-location: "L106"
+community: "FalcoAlertWatcher"
+location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/FalcoAlertWatcher
 ---
 
 # Related Notes
 
 ## Connections
-- [[Network Topology_3]] - `contains` [EXTRACTED]
+- [[falco-rules.yaml]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/document #graphify/EXTRACTED #community/FalcoAlertWatcher

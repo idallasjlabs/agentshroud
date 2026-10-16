@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
+source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
 type: "document"
-community: "DataLedger"
-location: "L137"
+community: "browser-fetch.js"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/browser-fetchjs
 ---
 
 # Related Notes
 
 ## Connections
-- [[Dependency Graph_1]] - `contains` [EXTRACTED]
+- [[browser-fetch.js_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DataLedger
+#graphify/document #graphify/EXTRACTED #community/browser-fetchjs

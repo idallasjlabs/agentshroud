@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "http_proxy.py"
-location: "L15"
+community: "Audit Ledger (SHA-256 hash only)"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/http_proxypy
+  - community/Audit_Ledger_SHA-256_hash_only
 ---
 
 # Responsibilities
 
 ## Connections
-- [[http_proxy.py_2]] - `contains` [EXTRACTED]
+- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/http_proxypy
+#graphify/document #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only

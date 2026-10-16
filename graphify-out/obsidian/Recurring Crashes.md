@@ -12,6 +12,6 @@ tags:
 # Recurring Crashes
 
 ## Connections
-- [[Crash Recovery_1]] - `contains` [EXTRACTED]
+- [[Crash Recovery_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Crash_Recovery

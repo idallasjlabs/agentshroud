@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/text_control_center.py.md"
+source_file: ".agents/skills/i-eightd/README.md"
 type: "document"
-community: "text_control_center.py / agentshroud_manager.py"
-location: "L14"
+community: "8D Root Cause Analysis"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/text_control_centerpy_/_agentshroud_managerpy
+  - community/8D_Root_Cause_Analysis
 ---
 
 # Purpose
 
 ## Connections
-- [[text_control_center.py  agentshroud_manager.py]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/text_control_centerpy_/_agentshroud_managerpy
+#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis

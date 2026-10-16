@@ -12,7 +12,7 @@ tags:
 # RateLimitConfig
 
 ## Connections
-- [[dot-__init__()_73]] - `references` [EXTRACTED]
+- [[dot-__init__()_72]] - `references` [EXTRACTED]
 - [[Configuration for class`RateLimitGuard`.      All windows are per (agent_id, t]] - `rationale_for` [EXTRACTED]
 - [[FakeClock]] - `uses` [INFERRED]
 - [[lifespan()]] - `calls` [EXTRACTED]

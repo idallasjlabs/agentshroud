@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-production/README.md"
+source_file: "docs/vault/03 - Configuration/pytest.ini.md"
 type: "document"
-community: "Production Safety Checklist (SKILL)"
-location: "L6"
+community: "All Dependencies.md"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_SKILL
+  - community/All_Dependenciesmd
 ---
 
 # Purpose
 
 ## Connections
-- [[operationsincident-response]] - `contains` [EXTRACTED]
+- [[pytest.ini_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

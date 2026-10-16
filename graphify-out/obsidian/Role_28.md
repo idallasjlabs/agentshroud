@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ux/SKILL.md"
+source_file: "docker/config/hermes/skills/i-cicd/SKILL.md"
 type: "document"
-community: "Skill: UX Expert (UX)"
+community: "CI/CD Pipeline Advisor (SKILL)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UX_Expert_UX
+  - community/CI/CD_Pipeline_Advisor_SKILL
 ---
 
 # Role
 
 ## Connections
-- [[Skill UX Expert (UX)_2]] - `contains` [EXTRACTED]
+- [[Skill CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL

@@ -1,5 +1,5 @@
 ---
-source_file: "docker/config/hermes/skills/i-eightd/README.md"
+source_file: "docker/config/hermes/skills/i-mac/README.md"
 type: "document"
 community: "hermes/skills/i-bs/README.md"
 location: "L6"
@@ -12,6 +12,6 @@ tags:
 # Purpose
 
 ## Connections
-- [[8D Root Cause Analysis_2]] - `contains` [EXTRACTED]
+- [[macOS System Administrator (MAC)_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

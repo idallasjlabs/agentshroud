@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "agentshroud-ieee-paper.md"
+community: "WebProxyConfig"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-ieee-papermd
+  - community/WebProxyConfig
 ---
 
 # RELEASE-PLAN.md
@@ -20,4 +20,4 @@ tags:
 - [[v1.3.0 — Platform Expansion]] - `references` [EXTRACTED]
 - [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-ieee-papermd
+#graphify/document #graphify/EXTRACTED #community/WebProxyConfig

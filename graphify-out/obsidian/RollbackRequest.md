@@ -12,7 +12,7 @@ tags:
 # RollbackRequest
 
 ## Connections
-- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[Request for rollback operation.]] - `rationale_for` [EXTRACTED]
 - [[rollback_version()]] - `references` [EXTRACTED]
 - [[version_routes.py]] - `contains` [EXTRACTED]

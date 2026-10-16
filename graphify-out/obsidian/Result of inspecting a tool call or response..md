@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "MCPInspector"
 location: "L98"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/MCPInspector
 ---
 
 # Result of inspecting a tool call or response.
 
 ## Connections
-- [[InspectionResult_1]] - `rationale_for` [EXTRACTED]
+- [[InspectionResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/MCPInspector

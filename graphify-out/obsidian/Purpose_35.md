@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sav/README.md"
+source_file: "docker/config/openclaw/skills/i-eightd/README.md"
 type: "document"
-community: "System Audit Vault"
+community: "8D Root Cause Analysis"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Audit_Vault
+  - community/8D_Root_Cause_Analysis
 ---
 
 # Purpose
 
 ## Connections
-- [[System Audit Vault]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Audit_Vault
+#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-data/README.md"
+source_file: ".agents/skills/i-hermes/README.md"
 type: "document"
-community: "Data Validation (DATA-VAL)"
+community: "Hermes — Podcast Production Orchestrator"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Data_Validation_DATA-VAL
+  - community/Hermes__Podcast_Production_Orchestrator
 ---
 
 # Related Skills
 
 ## Connections
-- [[Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
+- [[Hermes — Podcast Production Orchestrator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Data_Validation_DATA-VAL
+#graphify/document #graphify/EXTRACTED #community/Hermes__Podcast_Production_Orchestrator

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
 type: "document"
-community: "main.py.md"
-location: "L173"
+community: "First Time Setup"
+location: "L161"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpymd
+  - community/First_Time_Setup
 ---
 
 # Related Notes
 
 ## Connections
-- [[Startup Sequence_1]] - `contains` [EXTRACTED]
+- [[Startup Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpymd
+#graphify/document #graphify/EXTRACTED #community/First_Time_Setup

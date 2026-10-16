@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
+source_file: "docs/vault/05 - Dependencies/openscap.md"
 type: "document"
-community: "input_normalizer.py"
-location: "L12"
+community: "OpenSCAP"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/input_normalizerpy
+  - community/OpenSCAP
 ---
 
 # Purpose
 
 ## Connections
-- [[input_normalizer.py_1]] - `contains` [EXTRACTED]
+- [[OpenSCAP_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/input_normalizerpy
+#graphify/document #graphify/EXTRACTED #community/OpenSCAP

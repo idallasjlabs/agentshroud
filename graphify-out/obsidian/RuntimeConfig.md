@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-effective_rootless()]] - `method` [EXTRACTED]
-- [[dot-from_dict()_9]] - `method` [EXTRACTED]
+- [[dot-from_dict()_5]] - `method` [EXTRACTED]
 - [[dot-from_env()]] - `method` [EXTRACTED]
 - [[dot-test_effective_rootless_docker()]] - `calls` [EXTRACTED]
 - [[dot-test_effective_rootless_override()]] - `calls` [EXTRACTED]

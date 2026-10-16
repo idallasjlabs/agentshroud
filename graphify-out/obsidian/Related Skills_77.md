@@ -1,5 +1,5 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm/README.md"
+source_file: "docker/config/hermes/skills/i-sec-defense/README.md"
 type: "document"
 community: "hermes/skills/i-bs/README.md"
 location: "L14"
@@ -12,6 +12,6 @@ tags:
 # Related Skills
 
 ## Connections
-- [[MCP Tools Usage (MCPM)_1]] - `contains` [EXTRACTED]
+- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

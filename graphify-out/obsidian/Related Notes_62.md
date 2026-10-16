@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/Kill Switch Procedure.md"
+source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
 type: "document"
-community: "Kill Switch Procedure"
-location: "L141"
+community: "mcp-proxy-wrapper.js"
+location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Kill_Switch_Procedure
+  - community/mcp-proxy-wrapperjs
 ---
 
 # Related Notes
 
 ## Connections
-- [[Kill Switch Procedure_1]] - `contains` [EXTRACTED]
+- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Kill_Switch_Procedure
+#graphify/document #graphify/EXTRACTED #community/mcp-proxy-wrapperjs

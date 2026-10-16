@@ -1,24 +1,23 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "soc/router.py"
-location: "L2717"
+community: "A2APolicyEngine"
+location: "L61"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/soc/routerpy
+  - community/A2APolicyEngine
 ---
 
 # Request
 
 ## Connections
-- [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult_1]] - `uses` [INFERRED]
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller_1]] - `uses` [INFERRED]
-- [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface_1]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
-- [[soc_dashboard()]] - `references` [EXTRACTED]
+- [[dot-_handle()]] - `references` [EXTRACTED]
+- [[A2APolicyConfig]] - `uses` [INFERRED]
+- [[A2APolicyEngine_2]] - `uses` [INFERRED]
+- [[A2AProxy_1]] - `uses` [INFERRED]
+- [[HermesA2AForwarder]] - `uses` [INFERRED]
+- [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
+- [[TrustManager_4]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/soc/routerpy
+#graphify/code #graphify/INFERRED #community/A2APolicyEngine

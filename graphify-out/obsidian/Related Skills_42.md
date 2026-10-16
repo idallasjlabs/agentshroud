@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pr/README.md"
+source_file: ".agents/skills/i-sad/README.md"
 type: "document"
-community: "Pull Request Generator (PR)"
-location: "L14"
+community: "AgentShroud™ Brand Guidelines"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pull_Request_Generator_PR
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Related Skills
 
 ## Connections
-- [[Pull Request Generator (PR)]] - `contains` [EXTRACTED]
+- [[System Audit Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pull_Request_Generator_PR
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

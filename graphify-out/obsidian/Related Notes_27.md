@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
 type: "document"
-community: "Dockerfile — Bot (OpenClaw)"
-location: "L96"
+community: "Error Index.md"
+location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dockerfile__Bot_OpenClaw
+  - community/Error_Indexmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
+- [[Prompt Injection Blocks_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

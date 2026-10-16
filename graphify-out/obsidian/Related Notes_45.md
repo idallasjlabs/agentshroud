@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
+source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "First Time Setup"
-location: "L183"
+community: "Layer-by-Layer Breakdown"
+location: "L221"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/First_Time_Setup
+  - community/Layer-by-Layer_Breakdown
 ---
 
 # Related Notes
 
 ## Connections
-- [[First Time Setup_1]] - `contains` [EXTRACTED]
+- [[Data Flow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/First_Time_Setup
+#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown

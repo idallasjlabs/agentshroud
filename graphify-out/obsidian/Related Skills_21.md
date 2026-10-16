@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sav/README.md"
+source_file: "docker/config/openclaw/skills/i-cicd/README.md"
 type: "document"
-community: "System Audit Vault"
-location: "L12"
+community: "CI/CD Pipeline Advisor (CICD)"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Audit_Vault
+  - community/CI/CD_Pipeline_Advisor_CICD
 ---
 
 # Related Skills
 
 ## Connections
-- [[System Audit Vault]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Audit_Vault
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_CICD

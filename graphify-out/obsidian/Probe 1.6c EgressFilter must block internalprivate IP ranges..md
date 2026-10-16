@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "PIIConfig"
+community: "MiddlewareManager"
 location: "L137"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/MiddlewareManager
 ---
 
 # Probe 1.6c: EgressFilter must block internal/private IP ranges.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_egress_blocks_internal_ip()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
+source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
 type: "document"
-community: "Gateway Python Dependencies (`gateway/requirements.txt`)"
-location: "L120"
+community: "Dockerfile — Bot (OpenClaw)"
+location: "L96"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Python_Dependencies_gateway/requirementstxt
+  - community/Dockerfile__Bot_OpenClaw
 ---
 
 # Related Notes
 
 ## Connections
-- [[All Dependencies_1]] - `contains` [EXTRACTED]
+- [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Python_Dependencies_gateway/requirementstxt
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw

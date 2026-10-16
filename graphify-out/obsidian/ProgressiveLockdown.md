@@ -12,11 +12,11 @@ tags:
 # ProgressiveLockdown
 
 ## Connections
-- [[dot-__init__()_188]] - `calls` [EXTRACTED]
-- [[dot-__init__()_189]] - `method` [EXTRACTED]
+- [[dot-__init__()_147]] - `calls` [EXTRACTED]
+- [[dot-__init__()_154]] - `method` [EXTRACTED]
 - [[dot-_get_state()]] - `method` [EXTRACTED]
 - [[dot-all_statuses()]] - `method` [EXTRACTED]
-- [[dot-get_status()_1]] - `method` [EXTRACTED]
+- [[dot-get_status()_2]] - `method` [EXTRACTED]
 - [[dot-is_suspended()]] - `method` [EXTRACTED]
 - [[dot-record_block()]] - `method` [EXTRACTED]
 - [[dot-reset()_2]] - `method` [EXTRACTED]
@@ -35,7 +35,7 @@ tags:
 - [[dot-test_reset_removes_suspended_state()]] - `calls` [EXTRACTED]
 - [[dot-test_reset_true_for_known_user()]] - `calls` [EXTRACTED]
 - [[dot-test_suspended_level_at_10_blocks()]] - `calls` [EXTRACTED]
-- [[Any_71]] - `uses` [INFERRED]
+- [[Any_80]] - `uses` [INFERRED]
 - [[ContributorManager]] - `calls` [EXTRACTED]
 - [[FakePipelineResult_1]] - `uses` [INFERRED]
 - [[FakeRBAC_1]] - `uses` [INFERRED]
@@ -53,10 +53,10 @@ tags:
 - [[TestSuspendedDropNotice]] - `uses` [INFERRED]
 - [[TestUnlockCommand]] - `uses` [INFERRED]
 - [[Tracks per-user block counts and returns escalation actions.      Thread-safe fo]] - `rationale_for` [EXTRACTED]
-- [[_FakeRBAC_2]] - `uses` [INFERRED]
+- [[_FakeRBAC_1]] - `uses` [INFERRED]
 - [[_OutboundScan]] - `uses` [INFERRED]
 - [[progressive_lockdown.py]] - `contains` [EXTRACTED]
-- [[telegram_proxy.py_2]] - `imports` [EXTRACTED]
+- [[telegram_proxy.py]] - `imports` [EXTRACTED]
 - [[test_progressive_lockdown.py]] - `imports` [EXTRACTED]
 - [[test_soc_contributors.py]] - `imports` [EXTRACTED]
 

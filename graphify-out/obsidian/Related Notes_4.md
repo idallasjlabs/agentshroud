@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
+source_file: "docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md"
 type: "document"
-community: "Error Index.md"
-location: "L63"
+community: "GATEWAY_OP_PROXY_URL"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd
+  - community/GATEWAY_OP_PROXY_URL
 ---
 
 # Related Notes
 
 ## Connections
-- [[Presidio Analyzer]] - `contains` [EXTRACTED]
+- [[GATEWAY_OP_PROXY_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd
+#graphify/document #graphify/EXTRACTED #community/GATEWAY_OP_PROXY_URL

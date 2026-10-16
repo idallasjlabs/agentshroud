@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "document"
-community: "EgressFilter"
-location: "L87"
+community: "ledger.py"
+location: "L107"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/ledgerpy
 ---
 
 # Related
 
 ## Connections
-- [[EgressFilter_3]] - `contains` [EXTRACTED]
+- [[ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/document #graphify/EXTRACTED #community/ledgerpy

@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
 type: "document"
-community: "PII Pipeline Errors"
+community: "Error Index.md"
 location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PII_Pipeline_Errors
+  - community/Error_Indexmd
 ---
 
 # Redaction Breaking JSON/Structured Data
 
 ## Connections
-- [[PII Pipeline Errors]] - `contains` [EXTRACTED]
+- [[PII Pipeline Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PII_Pipeline_Errors
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

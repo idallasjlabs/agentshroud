@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/LOG_LEVEL.md"
+source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "egress_filter.py"
-location: "L50"
+community: "Pydantic"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/Pydantic
 ---
 
 # Related Notes
 
 ## Connections
-- [[LOG_LEVEL_1]] - `contains` [EXTRACTED]
+- [[Pydantic]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_filterpy
+#graphify/document #graphify/EXTRACTED #community/Pydantic

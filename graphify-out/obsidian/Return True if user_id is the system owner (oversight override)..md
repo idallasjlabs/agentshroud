@@ -12,6 +12,6 @@ tags:
 # Return True if user_id is the system owner (oversight override).
 
 ## Connections
-- [[dot-_is_owner()]] - `rationale_for` [EXTRACTED]
+- [[dot-_is_owner()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/RBACConfig

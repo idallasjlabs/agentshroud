@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pm/SKILL.md"
-type: "document"
-community: "Skill: Project Management (PM)"
-location: "L7"
+source_file: "gateway/soc/auth.py"
+type: "code"
+community: "_FakeRBAC"
+location: "L141"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM
+  - community/_FakeRBAC
 ---
 
 # Role
 
 ## Connections
-- [[Skill Project Management (PM)_2]] - `contains` [EXTRACTED]
+- [[dot-__init__()_148]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

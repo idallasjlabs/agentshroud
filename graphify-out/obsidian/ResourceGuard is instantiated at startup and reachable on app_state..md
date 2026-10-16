@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "rationale"
-community: "AgentRegistry"
+community: "ResourceGuard"
 location: "L21"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/ResourceGuard
 ---
 
 # ResourceGuard is instantiated at startup and reachable on app_state.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestResourceGuardWiring]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard
