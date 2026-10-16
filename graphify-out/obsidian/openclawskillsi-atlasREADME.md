@@ -12,6 +12,6 @@ tags:
 # openclaw/skills/i-atlas/README.md
 
 ## Connections
-- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

@@ -21,6 +21,6 @@ tags:
 - [[load_persisted_collaborators()]] - `calls` [EXTRACTED]
 - [[rbac_config.py]] - `contains` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
-- [[telegram_proxy.py_2]] - `imports` [EXTRACTED]
+- [[telegram_proxy.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/telegram_proxypy

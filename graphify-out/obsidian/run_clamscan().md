@@ -15,7 +15,7 @@ tags:
 - [[dot-_clamav_scan_bytes()]] - `calls` [EXTRACTED]
 - [[dot-test_clamav_binary_not_found()]] - `calls` [EXTRACTED]
 - [[dot-test_run_not_found()]] - `calls` [EXTRACTED]
-- [[Any_38]] - `references` [EXTRACTED]
+- [[Any_48]] - `references` [EXTRACTED]
 - [[Run ClamAV scan and return parsed results.      Args         target Directory]] - `rationale_for` [EXTRACTED]
 - [[clamav_scanner.py]] - `contains` [EXTRACTED]
 - [[http_proxy.py]] - `imports` [EXTRACTED]

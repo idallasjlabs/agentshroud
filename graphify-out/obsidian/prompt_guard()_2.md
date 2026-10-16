@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_prompt_guard.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "test_prompt_guard.py"
-location: "L17"
+community: "EgressFilterConfig"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_prompt_guardpy
+  - community/EgressFilterConfig
 ---
 
 # prompt_guard()
 
 ## Connections
-- [[Create a PromptGuard instance for testing]] - `rationale_for` [EXTRACTED]
 - [[PromptGuard]] - `calls` [EXTRACTED]
-- [[test_prompt_guard.py]] - `contains` [EXTRACTED]
+- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_prompt_guardpy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

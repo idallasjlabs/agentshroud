@@ -1,8 +1,8 @@
 ---
-source_file: "scripts/verify-proxy.sh"
+source_file: "gateway/security/canary.py"
 type: "code"
 community: "test_e2e_proxy.py"
-location: "L54"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,16 +12,25 @@ tags:
 # run_canary()
 
 ## Connections
-- [[PIIConfig_1]] - `references` [EXTRACTED]
-- [[PIISanitizer_2]] - `references` [EXTRACTED]
-- [[PromptGuard]] - `references` [EXTRACTED]
-- [[SecurityPipeline_2]] - `references` [EXTRACTED]
-- [[fail()_1]] - `calls` [EXTRACTED]
-- [[info()_1]] - `calls` [EXTRACTED]
-- [[pass()_1]] - `calls` [EXTRACTED]
+- [[AlertDispatcher]] - `conceptually_related_to` [INFERRED]
+- [[CanaryCheck]] - `calls` [EXTRACTED]
+- [[CanaryResult_2]] - `references` [EXTRACTED]
+- [[HTTPForwarder]] - `calls` [INFERRED]
+- [[Run the canary verification system.      Args         pipeline SecurityPipelin]] - `rationale_for` [EXTRACTED]
+- [[SecurityPipeline_2]] - `calls` [INFERRED]
+- [[canary-cron.sh embedded Python main()]] - `calls` [EXTRACTED]
+- [[canary.py]] - `contains` [EXTRACTED]
+- [[lifespan.py]] - `imports` [EXTRACTED]
 - [[run_canary()_1]] - `references` [EXTRACTED]
-- [[run_full()]] - `calls` [EXTRACTED]
-- [[verify-proxy.sh]] - `defines` [EXTRACTED]
-- [[verify-proxy.sh script]] - `calls` [EXTRACTED]
+- [[run_quick()]] - `references` [EXTRACTED]
+- [[test_canary.py]] - `imports` [EXTRACTED]
+- [[test_canary_fails_without_pipeline()]] - `calls` [EXTRACTED]
+- [[test_canary_passes_with_pipeline()]] - `calls` [EXTRACTED]
+- [[test_canary_result_serialization()]] - `calls` [EXTRACTED]
+- [[test_canary_verifies_audit_chain()]] - `calls` [EXTRACTED]
+- [[test_canary_verifies_pii_stripping()]] - `calls` [EXTRACTED]
+- [[test_canary_with_healthy_forwarder()]] - `calls` [EXTRACTED]
+- [[test_canary_with_unhealthy_forwarder()]] - `calls` [EXTRACTED]
+- [[test_security_audit.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

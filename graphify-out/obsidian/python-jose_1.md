@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "test_security.py"
+community: "create_auth_dependency"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_securitypy
+  - community/create_auth_dependency
 ---
 
 # python-jose
@@ -15,9 +15,9 @@ tags:
 - [[Auth Methods]] - `contains` [EXTRACTED]
 - [[Current Usage]] - `contains` [EXTRACTED]
 - [[Key Features_2]] - `contains` [EXTRACTED]
-- [[Purpose_118]] - `contains` [EXTRACTED]
-- [[Related Notes_49]] - `contains` [EXTRACTED]
+- [[Purpose_157]] - `contains` [EXTRACTED]
+- [[Related Notes_60]] - `contains` [EXTRACTED]
 - [[Security Note_1]] - `contains` [EXTRACTED]
 - [[python-jose]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_securitypy
+#graphify/document #graphify/EXTRACTED #community/create_auth_dependency

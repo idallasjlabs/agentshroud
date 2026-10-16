@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
-- [[GatewayConfig_3]] - `calls` [EXTRACTED]
+- [[GatewayConfig_2]] - `calls` [EXTRACTED]
 - [[LedgerConfig]] - `calls` [EXTRACTED]
-- [[PIIConfig_1]] - `calls` [EXTRACTED]
+- [[PIIConfig_2]] - `calls` [EXTRACTED]
 - [[RouterConfig]] - `calls` [EXTRACTED]
 - [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 

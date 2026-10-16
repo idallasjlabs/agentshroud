@@ -12,8 +12,8 @@ tags:
 # test_pipeline_all_modules_disabled()
 
 ## Connections
-- [[PIIConfig_1]] - `calls` [EXTRACTED]
-- [[PIISanitizer_2]] - `calls` [EXTRACTED]
+- [[PIIConfig_2]] - `calls` [EXTRACTED]
+- [[PIISanitizer_1]] - `calls` [EXTRACTED]
 - [[Pipeline with all modules disabled acts as passthrough.]] - `rationale_for` [EXTRACTED]
 - [[PromptGuard]] - `calls` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]

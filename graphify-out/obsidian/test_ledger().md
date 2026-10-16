@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "DataLedger"
+community: "PIIConfig"
 location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/PIIConfig
 ---
 
 # test_ledger()
@@ -18,4 +18,4 @@ tags:
 - [[LedgerConfig]] - `calls` [EXTRACTED]
 - [[conftest.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataLedger
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "PIIConfig"
+community: "PipelineAction"
 location: "L428"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/PipelineAction
 ---
 
 # test_pipeline_owner_exempt_from_fail_closed()
@@ -17,4 +17,4 @@ tags:
 - [[_BrokenSanitizer]] - `calls` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

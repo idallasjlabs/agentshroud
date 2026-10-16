@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "code"
-community: "TestPromptProtection"
+community: "TestOutboundInfoFilter"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPromptProtection
+  - community/TestOutboundInfoFilter
 ---
 
 # test_prompt_protection.py
@@ -17,4 +17,4 @@ tags:
 - [[prompt_protection()]] - `contains` [EXTRACTED]
 - [[sample_protected_content()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPromptProtection
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

@@ -12,7 +12,7 @@ tags:
 # soc/router.py
 
 ## Connections
-- [[Action_1]] - `imports` [EXTRACTED]
+- [[Action_2]] - `imports` [EXTRACTED]
 - [[AddCollaboratorRequest]] - `contains` [EXTRACTED]
 - [[AddGroupMemberRequest]] - `contains` [EXTRACTED]
 - [[ApprovalDecisionRequest]] - `contains` [EXTRACTED]
@@ -31,12 +31,12 @@ tags:
 - [[EmergencyBlockRequest]] - `contains` [EXTRACTED]
 - [[GroupConfig]] - `imports` [EXTRACTED]
 - [[LoginRequest]] - `contains` [EXTRACTED]
-- [[RBACConfig_4]] - `imports` [EXTRACTED]
+- [[RBACConfig_3]] - `imports` [EXTRACTED]
 - [[RBACManager_1]] - `imports` [EXTRACTED]
 - [[RenameGroupRequest]] - `contains` [EXTRACTED]
 - [[Resource_2]] - `imports` [EXTRACTED]
-- [[Role_22]] - `imports` [EXTRACTED]
-- [[SCLCaller_1]] - `imports` [EXTRACTED]
+- [[Role_21]] - `imports` [EXTRACTED]
+- [[SCLCaller_2]] - `imports` [EXTRACTED]
 - [[SCLConfirmationRequired]] - `imports` [EXTRACTED]
 - [[SCLInterface_1]] - `imports` [EXTRACTED]
 - [[ScanRequest]] - `contains` [EXTRACTED]

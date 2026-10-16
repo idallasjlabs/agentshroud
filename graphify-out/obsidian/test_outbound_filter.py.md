@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "TestFabricatedSecurityNotice"
+community: "TestOutboundInfoFilter"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestFabricatedSecurityNotice
+  - community/TestOutboundInfoFilter
 ---
 
 # test_outbound_filter.py
@@ -15,7 +15,7 @@ tags:
 - [[InfoCategory]] - `imports` [EXTRACTED]
 - [[OutboundInfoFilter]] - `imports` [EXTRACTED]
 - [[TestFabricatedSecurityNotice]] - `contains` [EXTRACTED]
-- [[TestIntegration_1]] - `contains` [EXTRACTED]
+- [[TestIntegration]] - `contains` [EXTRACTED]
 - [[TestOutboundInfoFilter]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

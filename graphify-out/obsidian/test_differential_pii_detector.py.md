@@ -26,7 +26,7 @@ tags:
 - [[TestStandardPIIAlwaysCaught]] - `contains` [EXTRACTED]
 - [[TestToolResultPIIReport]] - `contains` [EXTRACTED]
 - [[_FakeRecognizerResult]] - `contains` [EXTRACTED]
-- [[default_config()_1]] - `contains` [EXTRACTED]
+- [[default_config()_3]] - `contains` [EXTRACTED]
 - [[detector()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector

@@ -16,6 +16,6 @@ tags:
 - [[MetadataGuard]] - `imports` [EXTRACTED]
 - [[Numbered security control catalog (C8, C9, C18, C47, ...)]] - `conceptually_related_to` [EXTRACTED]
 - [[TestDocumentTagging]] - `contains` [EXTRACTED]
-- [[TestMetadataGuard_1]] - `contains` [EXTRACTED]
+- [[TestMetadataGuard]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_prompt_guardpy

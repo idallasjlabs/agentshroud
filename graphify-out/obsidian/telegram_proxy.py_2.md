@@ -1,10 +1,10 @@
 ---
-source_file: "gateway/proxy/telegram_proxy.py"
-type: "code"
+source_file: "docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md"
+type: "document"
 community: "telegram_proxy.py"
-location: "L1"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
   - community/telegram_proxypy
 ---
@@ -12,39 +12,14 @@ tags:
 # telegram_proxy.py
 
 ## Connections
-- [[ApprovalMode]] - `imports` [EXTRACTED]
-- [[DOCKER-VPN-NETWORKING]] - `references` [EXTRACTED]
-- [[DelegationPrivilege]] - `imports` [EXTRACTED]
-- [[GroupWorkspaceManager]] - `imports` [EXTRACTED]
-- [[ProgressiveLockdown]] - `imports` [EXTRACTED]
-- [[RBACConfig_4]] - `imports` [EXTRACTED]
-- [[RateLimiter_1]] - `imports` [EXTRACTED]
-- [[TELEGRAM_API_BASE_URL]] - `references` [INFERRED]
-- [[TelegramAPIProxy]] - `contains` [EXTRACTED]
-- [[_OutboundScan]] - `contains` [EXTRACTED]
-- [[_ipv4_first_getaddrinfo()]] - `contains` [EXTRACTED]
-- [[_persist_groups()]] - `imports` [EXTRACTED]
-- [[egress_retry.py]] - `semantically_similar_to` [AMBIGUOUS]
-- [[format_addtogroup_success()]] - `imports` [EXTRACTED]
-- [[format_group_info()]] - `imports` [EXTRACTED]
-- [[format_groups_list()]] - `imports` [EXTRACTED]
-- [[format_not_member()]] - `imports` [EXTRACTED]
-- [[format_projects_list()]] - `imports` [EXTRACTED]
-- [[format_rmfromgroup_success()]] - `imports` [EXTRACTED]
-- [[format_setmode_success()]] - `imports` [EXTRACTED]
-- [[format_unknown_group()]] - `imports` [EXTRACTED]
-- [[http_proxy.py]] - `references` [EXTRACTED]
-- [[load_paused_collaborator_ids()]] - `imports` [EXTRACTED]
-- [[make_event()]] - `imports` [EXTRACTED]
-- [[normalize_input()]] - `imports` [EXTRACTED]
-- [[pause_collaborator()]] - `imports` [EXTRACTED]
-- [[persist_approved_collaborator()]] - `imports` [EXTRACTED]
-- [[persist_group_collab_mode()]] - `imports` [EXTRACTED]
-- [[persist_group_member_add()]] - `imports` [EXTRACTED]
-- [[persist_group_member_remove()]] - `imports` [EXTRACTED]
-- [[strip_markdown_exfil()]] - `imports` [EXTRACTED]
-- [[telegram_gateway_relay.py]] - `semantically_similar_to` [AMBIGUOUS]
-- [[test_telegram_proxy_multibot.py]] - `imports_from` [EXTRACTED]
-- [[unpause_collaborator()]] - `imports` [EXTRACTED]
+- [[Configuration  Environment Variables_13]] - `contains` [EXTRACTED]
+- [[Function Details_25]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_27]] - `contains` [EXTRACTED]
+- [[Methods Filtered (Inbound)]] - `contains` [EXTRACTED]
+- [[Methods Filtered (Outbound)]] - `contains` [EXTRACTED]
+- [[Purpose_144]] - `contains` [EXTRACTED]
+- [[Related_31]] - `contains` [EXTRACTED]
+- [[Responsibilities_29]] - `contains` [EXTRACTED]
+- [[telegram_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/document #graphify/EXTRACTED #community/telegram_proxypy

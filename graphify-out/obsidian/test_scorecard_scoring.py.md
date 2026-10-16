@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[TestAppStateHas_1]] - `contains` [EXTRACTED]
 - [[TestIsFresh]] - `contains` [EXTRACTED]
-- [[TestScoreComplianceAuditing_1]] - `contains` [EXTRACTED]
+- [[TestScoreComplianceAuditing]] - `contains` [EXTRACTED]
 - [[TestScoreContainerHardening]] - `contains` [EXTRACTED]
 - [[TestScoreImageIntegrity_1]] - `contains` [EXTRACTED]
 - [[TestScoreIncidentResponse]] - `contains` [EXTRACTED]

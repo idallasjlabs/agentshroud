@@ -19,6 +19,6 @@ tags:
 - [[group_config.py]] - `contains` [EXTRACTED]
 - [[remove_group_member()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
-- [[telegram_proxy.py_2]] - `imports` [EXTRACTED]
+- [[telegram_proxy.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/telegram_proxypy

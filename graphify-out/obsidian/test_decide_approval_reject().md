@@ -12,7 +12,7 @@ tags:
 # test_decide_approval_reject()
 
 ## Connections
-- [[ApprovalRequest_5]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_1]] - `calls` [EXTRACTED]
 - [[Test rejecting a pending request]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 

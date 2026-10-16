@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_soc_egress.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "_FakeRBAC"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/_FakeRBAC
 ---
 
 # test_soc_egress.py
 
 ## Connections
-- [[EgressRequest]] - `imports` [EXTRACTED]
+- [[EgressRequest_1]] - `imports` [EXTRACTED]
 - [[EgressStatus]] - `imports` [EXTRACTED]
-- [[RiskLevel_5]] - `imports` [EXTRACTED]
+- [[RiskLevel_6]] - `imports` [EXTRACTED]
 - [[SCLConfirmationRequired]] - `imports` [EXTRACTED]
 - [[SCLError]] - `imports` [EXTRACTED]
 - [[TestConfirmationModel]] - `contains` [EXTRACTED]
 - [[TestEgressRequestModel]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

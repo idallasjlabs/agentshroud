@@ -12,6 +12,6 @@ tags:
 # openclaw/skills/i-gg/README.md
 
 ## Connections
-- [[Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
+- [[Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Git_Workflow_Guardian_GIT-GUARD

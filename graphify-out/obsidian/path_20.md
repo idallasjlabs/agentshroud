@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/apply-patches.js"
+source_file: "gateway/tests/test_generate_cve_page.py"
 type: "code"
-community: "apply-patches.js"
-location: "L10"
+community: "_make_cve"
+location: "L249"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apply-patchesjs
+  - community/_make_cve
 ---
 
-# path
+# Path
 
 ## Connections
-- [[apply-patches.js]] - `contains` [EXTRACTED]
+- [[dot-_run_generate()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apply-patchesjs
+#graphify/code #graphify/EXTRACTED #community/_make_cve

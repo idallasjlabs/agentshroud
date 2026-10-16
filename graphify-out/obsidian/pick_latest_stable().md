@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-test_downstream_counter_sorts_above_its_base_release()]] - `calls` [INFERRED]
-- [[dot-test_empty_returns_none()]] - `calls` [INFERRED]
+- [[dot-test_empty_returns_none()_1]] - `calls` [INFERRED]
 - [[dot-test_ignores_prereleases_even_when_numerically_highest()]] - `calls` [INFERRED]
 - [[dot-test_no_stable_versions_returns_none()]] - `calls` [INFERRED]
 - [[dot-test_numeric_ordering_not_lexicographic()]] - `calls` [INFERRED]

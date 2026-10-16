@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/patch-anthropic-sdk.sh"
 type: "code"
-community: "test_colima_and_sdk_patch_fallback_resolution.sh"
+community: "patch-anthropic-sdk.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_colima_and_sdk_patch_fallback_resolutionsh
+  - community/patch-anthropic-sdksh
 ---
 
 # patch-anthropic-sdk.sh
@@ -14,6 +14,5 @@ tags:
 ## Connections
 - [[patch-anthropic-sdk.sh script]] - `contains` [EXTRACTED]
 - [[patch-telegram-sdk.sh]] - `semantically_similar_to` [INFERRED]
-- [[test_colima_and_sdk_patch_fallback_resolution.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_colima_and_sdk_patch_fallback_resolutionsh
+#graphify/code #graphify/EXTRACTED #community/patch-anthropic-sdksh

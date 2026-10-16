@@ -12,7 +12,7 @@ tags:
 # test_approval_decision_valid()
 
 ## Connections
-- [[ApprovalDecision_1]] - `calls` [EXTRACTED]
+- [[ApprovalDecision]] - `calls` [EXTRACTED]
 - [[Test ApprovalDecision with valid data]] - `rationale_for` [EXTRACTED]
 - [[test_main_simple.py]] - `contains` [EXTRACTED]
 

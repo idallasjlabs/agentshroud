@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "code"
-community: "Request"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Request
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # test_log_requests_middleware()
@@ -16,4 +16,4 @@ tags:
 - [[log_requests()]] - `calls` [EXTRACTED]
 - [[test_main_simple.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Request
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

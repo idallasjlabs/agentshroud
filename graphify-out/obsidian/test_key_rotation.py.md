@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "KeyRotationManager"
+community: "Restart Procedure"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/Restart_Procedure
 ---
 
 # test_key_rotation.py
@@ -31,4 +31,4 @@ tags:
 - [[test_key_rotation_internals.py]] - `references` [EXTRACTED]
 - [[test_rotate_credential_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/Restart_Procedure

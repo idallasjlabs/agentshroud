@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Canary should verify audit chain integrity.]] - `rationale_for` [EXTRACTED]
-- [[run_canary()_1]] - `calls` [EXTRACTED]
+- [[run_canary()]] - `calls` [EXTRACTED]
 - [[test_canary.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

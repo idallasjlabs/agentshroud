@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_security_integration.py"
+source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "code"
-community: "PIIConfig"
-location: "L60"
+community: "test_filter_xml_blocks.py"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/test_filter_xml_blockspy
 ---
 
 # sanitizer()
 
 ## Connections
-- [[PIISanitizer_2]] - `calls` [EXTRACTED]
-- [[test_security_integration.py]] - `contains` [EXTRACTED]
+- [[PIIConfig_2]] - `calls` [EXTRACTED]
+- [[PIISanitizer_1]] - `calls` [EXTRACTED]
+- [[test_filter_xml_blocks.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/test_filter_xml_blockspy

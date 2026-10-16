@@ -16,10 +16,10 @@ tags:
 - [[Default Limits]] - `contains` [EXTRACTED]
 - [[Function Details_8]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_8]] - `contains` [EXTRACTED]
-- [[Purpose_111]] - `contains` [EXTRACTED]
+- [[Purpose_108]] - `contains` [EXTRACTED]
 - [[Related_12]] - `contains` [EXTRACTED]
 - [[Responsibilities_10]] - `contains` [EXTRACTED]
-- [[Threat Model_8]] - `contains` [EXTRACTED]
+- [[Threat Model_9]] - `contains` [EXTRACTED]
 - [[resource_guard.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ledger.py"
 type: "code"
-community: "DataLedger"
+community: "PIIConfig"
 location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/PIIConfig
 ---
 
 # test_record_entry()
@@ -15,4 +15,4 @@ tags:
 - [[Test creating a ledger entry]] - `rationale_for` [EXTRACTED]
 - [[test_ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataLedger
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

@@ -26,9 +26,9 @@ tags:
 - [[TestVersionConsistency]] - `contains` [EXTRACTED]
 - [[TestWebSocketHandshakeAuth]] - `contains` [EXTRACTED]
 - [[_create_ws_token()]] - `imports` [EXTRACTED]
-- [[client()_13]] - `contains` [EXTRACTED]
+- [[client()_17]] - `contains` [EXTRACTED]
 - [[gatewayingest_apiroutesdashboard.py (_create_ws_token)]] - `references` [EXTRACTED]
-- [[sync_client()]] - `contains` [EXTRACTED]
+- [[sync_client()_1]] - `contains` [EXTRACTED]
 - [[telegram_api_proxy (telegram-api{path})]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

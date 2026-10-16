@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_web_proxy.py"
+source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "WebProxyConfig"
-location: "L34"
+community: "A2AGovernanceProxy"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/A2AGovernanceProxy
 ---
 
 # proxy()
 
 ## Connections
-- [[WebProxy]] - `calls` [EXTRACTED]
-- [[test_web_proxy.py]] - `contains` [EXTRACTED]
+- [[A2AGovernanceConfig]] - `calls` [EXTRACTED]
+- [[A2AGovernanceProxy]] - `calls` [EXTRACTED]
+- [[test_a2a_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

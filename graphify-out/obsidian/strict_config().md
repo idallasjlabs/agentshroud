@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_trust_manager.py"
+source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "PIIConfig"
-location: "L35"
+community: "MiddlewareManager"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/MiddlewareManager
 ---
 
 # strict_config()
 
 ## Connections
-- [[Config with strict thresholds.]] - `rationale_for` [EXTRACTED]
-- [[TrustConfig]] - `calls` [EXTRACTED]
-- [[test_trust_manager.py]] - `contains` [EXTRACTED]
+- [[FileSandboxConfig]] - `calls` [EXTRACTED]
+- [[test_file_sandbox.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

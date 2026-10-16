@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_log_sanitizer.py"
 type: "code"
-community: "TestLogSanitizer"
+community: "AlertDispatcher"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestLogSanitizer
+  - community/AlertDispatcher
 ---
 
 # test_log_sanitizer.py
@@ -16,4 +16,4 @@ tags:
 - [[TestLogSanitizer]] - `contains` [EXTRACTED]
 - [[install_log_sanitizer()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestLogSanitizer
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

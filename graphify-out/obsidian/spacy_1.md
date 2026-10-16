@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[All Dependencies]] - `references` [EXTRACTED]
-- [[PII Pipeline Errors_1]] - `references` [EXTRACTED]
+- [[PII Pipeline Errors]] - `references` [EXTRACTED]
 - [[presidio-analyzer]] - `references` [EXTRACTED]
 - [[spaCy]] - `contains` [EXTRACTED]
 

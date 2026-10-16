@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "PIIConfig"
+community: "InjectionAction"
 location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/InjectionAction
 ---
 
 # test_inbound_nested_base64_injection_blocked()
@@ -16,4 +16,4 @@ tags:
 - [[_make_pipeline()]] - `calls` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/InjectionAction

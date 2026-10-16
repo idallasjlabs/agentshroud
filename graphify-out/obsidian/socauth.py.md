@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "MiddlewareManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/MiddlewareManager
 ---
 
 # soc/auth.py
 
 ## Connections
-- [[Action_1]] - `imports` [EXTRACTED]
-- [[RBACConfig_4]] - `imports` [EXTRACTED]
+- [[Action_2]] - `imports` [EXTRACTED]
+- [[RBACConfig_3]] - `imports` [EXTRACTED]
 - [[RBACManager_1]] - `imports` [EXTRACTED]
 - [[Resource_2]] - `imports` [EXTRACTED]
-- [[Role_22]] - `imports` [EXTRACTED]
-- [[SCLCaller_1]] - `contains` [EXTRACTED]
+- [[Role_21]] - `imports` [EXTRACTED]
+- [[SCLCaller_2]] - `contains` [EXTRACTED]
 - [[_get_config_token()]] - `contains` [EXTRACTED]
 - [[_get_rbac_manager()]] - `contains` [EXTRACTED]
 - [[_resolve_caller()]] - `contains` [EXTRACTED]
@@ -32,4 +32,4 @@ tags:
 - [[socrouter.py]] - `imports_from` [EXTRACTED]
 - [[websocket.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

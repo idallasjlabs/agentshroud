@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "SubagentMonitor"
+community: "TrustConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentMonitor
+  - community/TrustConfig
 ---
 
 # subagent_monitor.py
@@ -19,8 +19,8 @@ tags:
 - [[SubagentMonitor]] - `contains` [EXTRACTED]
 - [[SubagentMonitorConfig]] - `contains` [EXTRACTED]
 - [[ToolCheckResult]] - `contains` [EXTRACTED]
-- [[falco_monitor.py]] - `references` [EXTRACTED]
+- [[falco_monitor.py_2]] - `references` [EXTRACTED]
 - [[resource_guard.py]] - `references` [EXTRACTED]
-- [[session_security.py_2]] - `references` [EXTRACTED]
+- [[session_security.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentMonitor
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

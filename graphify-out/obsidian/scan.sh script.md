@@ -12,6 +12,6 @@ tags:
 # scan.sh script
 
 ## Connections
-- [[scan.sh]] - `contains` [EXTRACTED]
+- [[scan.sh_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FR3_System_Integrity

@@ -12,8 +12,8 @@ tags:
 # test_main_simple.py
 
 ## Connections
-- [[ApprovalDecision_1]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_5]] - `imports` [EXTRACTED]
+- [[ApprovalDecision]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_1]] - `imports` [EXTRACTED]
 - [[ForwardRequest_3]] - `imports` [EXTRACTED]
 - [[global_exception_handler()]] - `imports` [EXTRACTED]
 - [[limit_request_body()]] - `imports` [EXTRACTED]

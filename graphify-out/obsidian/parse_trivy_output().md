@@ -26,14 +26,14 @@ tags:
 - [[dot-test_parse_total_vulnerabilities()]] - `calls` [EXTRACTED]
 - [[dot-test_parse_unknown_severity()]] - `calls` [EXTRACTED]
 - [[dot-test_report_content_persisted()]] - `calls` [EXTRACTED]
-- [[dot-test_summary_clean()_3]] - `calls` [EXTRACTED]
+- [[dot-test_summary_clean()_1]] - `calls` [EXTRACTED]
 - [[dot-test_summary_critical()]] - `calls` [EXTRACTED]
 - [[dot-test_summary_top_cves_ids()]] - `calls` [EXTRACTED]
 - [[dot-test_summary_warning_high_only()]] - `calls` [EXTRACTED]
-- [[Any_77]] - `references` [EXTRACTED]
+- [[Any_11]] - `references` [EXTRACTED]
 - [[Parse raw Trivy JSON output into a structured summary.      Args         raw R]] - `rationale_for` [EXTRACTED]
 - [[run_trivy_scan()_1]] - `calls` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
-- [[trivy_report.py_2]] - `contains` [EXTRACTED]
+- [[trivy_report.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/parse_trivy_output

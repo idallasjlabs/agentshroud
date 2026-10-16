@@ -12,7 +12,7 @@ tags:
 # test_group_approval_routing.py
 
 ## Connections
-- [[ApprovalRequest_5]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_1]] - `imports` [EXTRACTED]
 - [[GroupApprovalRouter]] - `imports` [EXTRACTED]
 - [[TestDMApprovalOwnerOnly]] - `contains` [EXTRACTED]
 - [[TestGroupApprovalOwnerDM]] - `contains` [EXTRACTED]

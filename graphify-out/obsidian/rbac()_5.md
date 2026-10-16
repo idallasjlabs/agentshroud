@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_shared_memory_write_acl.py"
+source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
 community: "RBACConfig"
-location: "L74"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,8 +12,7 @@ tags:
 # rbac()
 
 ## Connections
-- [[RBACConfig_4]] - `calls` [EXTRACTED]
-- [[TeamsConfig_2]] - `calls` [EXTRACTED]
-- [[test_shared_memory_write_acl.py]] - `contains` [EXTRACTED]
+- [[_make_rbac()_1]] - `calls` [EXTRACTED]
+- [[test_privacy_policy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RBACConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "DataLedger"
+community: "PIIConfig"
 location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/PIIConfig
 ---
 
 # test_client()
@@ -16,4 +16,4 @@ tags:
 - [[GatewayConfig]] - `references` [EXTRACTED]
 - [[conftest.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataLedger
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

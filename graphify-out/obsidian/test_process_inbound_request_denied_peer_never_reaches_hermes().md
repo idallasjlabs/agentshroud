@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[A2APolicyEngine]] - `calls` [EXTRACTED]
 - [[A2AProxy]] - `calls` [EXTRACTED]
-- [[_StubForwarder_1]] - `references` [EXTRACTED]
+- [[_StubForwarder]] - `references` [EXTRACTED]
 - [[_jsonrpc()]] - `calls` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 

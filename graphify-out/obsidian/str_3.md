@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "MiddlewareManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/MiddlewareManager
 ---
 
 # str
@@ -15,7 +15,7 @@ tags:
 - [[A2AMessageType]] - `inherits` [EXTRACTED]
 - [[A2AMethod]] - `inherits` [EXTRACTED]
 - [[A2APolicyAction]] - `inherits` [EXTRACTED]
-- [[Action_1]] - `inherits` [EXTRACTED]
+- [[Action_2]] - `inherits` [EXTRACTED]
 - [[AlarmStatus]] - `inherits` [EXTRACTED]
 - [[AlertLevel]] - `inherits` [EXTRACTED]
 - [[AuditResult_1]] - `inherits` [EXTRACTED]
@@ -41,19 +41,19 @@ tags:
 - [[PipelineAction]] - `inherits` [EXTRACTED]
 - [[Platform]] - `inherits` [EXTRACTED]
 - [[Resource_2]] - `inherits` [EXTRACTED]
-- [[RiskLevel_4]] - `inherits` [EXTRACTED]
 - [[RiskLevel_5]] - `inherits` [EXTRACTED]
-- [[Role_22]] - `inherits` [EXTRACTED]
+- [[RiskLevel_6]] - `inherits` [EXTRACTED]
+- [[Role_21]] - `inherits` [EXTRACTED]
 - [[SCLInterface_1]] - `inherits` [EXTRACTED]
 - [[ServicePrivacy]] - `inherits` [EXTRACTED]
 - [[ServiceStatus_1]] - `inherits` [EXTRACTED]
-- [[Severity_1]] - `inherits` [EXTRACTED]
+- [[Severity]] - `inherits` [EXTRACTED]
 - [[SubagentEventType]] - `inherits` [EXTRACTED]
 - [[ThreatAction]] - `inherits` [EXTRACTED]
 - [[ThreatLevel_1]] - `inherits` [EXTRACTED]
-- [[ToolTier]] - `inherits` [EXTRACTED]
+- [[ToolTier_2]] - `inherits` [EXTRACTED]
 - [[URLVerdict]] - `inherits` [EXTRACTED]
 - [[UserRole]] - `inherits` [EXTRACTED]
 - [[WSEventType]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

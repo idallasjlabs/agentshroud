@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "Mac App Discovery Skill"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/Mac_App_Discovery_Skill
 ---
 
 # test_approval_store.py
 
 ## Connections
-- [[ApprovalQueueItem_4]] - `imports` [EXTRACTED]
+- [[ApprovalQueueItem_2]] - `imports` [EXTRACTED]
 - [[ApprovalStore]] - `imports` [EXTRACTED]
-- [[AuditStore_1]] - `imports` [EXTRACTED]
+- [[AuditStore]] - `imports` [EXTRACTED]
 - [[_make_item()]] - `contains` [EXTRACTED]
-- [[store()]] - `contains` [EXTRACTED]
+- [[store()_1]] - `contains` [EXTRACTED]
 - [[test_audit_store_initialize_is_idempotent()]] - `contains` [EXTRACTED]
 - [[test_decide_persists()]] - `contains` [EXTRACTED]
 - [[test_expired_items_on_reload()]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[test_persist_and_reload()]] - `contains` [EXTRACTED]
 - [[test_store_survives_restart()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/Mac_App_Discovery_Skill

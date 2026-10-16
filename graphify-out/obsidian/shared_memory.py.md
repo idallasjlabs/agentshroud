@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[GroupWorkspaceManager]] - `shares_data_with` [EXTRACTED]
-- [[RBACConfig_4]] - `imports` [EXTRACTED]
+- [[RBACConfig_3]] - `imports` [EXTRACTED]
 - [[SharedMemoryManager]] - `contains` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
 

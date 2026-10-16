@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "AgentRegistry"
+community: "ResourceGuard"
 location: "L467"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/ResourceGuard
 ---
 
 # setup_resource_guard()
@@ -22,4 +22,4 @@ tags:
 - [[resource_guard.py]] - `contains` [EXTRACTED]
 - [[test_resource_guard_wiring.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

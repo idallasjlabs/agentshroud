@@ -12,7 +12,7 @@ tags:
 # test_forwarder_error_handling()
 
 ## Connections
-- [[dot-forward()_2]] - `calls` [EXTRACTED]
+- [[dot-forward()_4]] - `calls` [EXTRACTED]
 - [[ForwarderConfig]] - `calls` [EXTRACTED]
 - [[HTTPForwarder]] - `calls` [EXTRACTED]
 - [[Verify forwarder handles errors gracefully.]] - `rationale_for` [EXTRACTED]

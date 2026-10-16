@@ -1,18 +1,22 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L82"
+community: "PipelineAction"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/PipelineAction
 ---
 
 # pipeline()
 
 ## Connections
+- [[CanaryTripwire]] - `calls` [EXTRACTED]
+- [[ContextGuard]] - `calls` [EXTRACTED]
+- [[EncodingDetector]] - `calls` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
 - [[SecurityPipeline_2]] - `calls` [EXTRACTED]
-- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
+- [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

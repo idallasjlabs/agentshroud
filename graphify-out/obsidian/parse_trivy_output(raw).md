@@ -12,6 +12,6 @@ tags:
 # parse_trivy_output(raw)
 
 ## Connections
-- [[Function Details_42]] - `contains` [EXTRACTED]
+- [[Function Details_41]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/trivy_reportpy

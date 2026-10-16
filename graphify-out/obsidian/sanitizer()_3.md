@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/conftest.py"
+source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "DataLedger"
-location: "L173"
+community: "PipelineAction"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/PipelineAction
 ---
 
 # sanitizer()
 
 ## Connections
-- [[Create a PIISanitizer instance for testing]] - `rationale_for` [EXTRACTED]
-- [[GatewayConfig]] - `references` [EXTRACTED]
-- [[PIISanitizer_3]] - `references` [EXTRACTED]
-- [[conftest.py]] - `contains` [EXTRACTED]
+- [[PIISanitizer_1]] - `calls` [EXTRACTED]
+- [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataLedger
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

@@ -12,7 +12,7 @@ tags:
 # proxy_status()
 
 ## Connections
-- [[AuthRequired]] - `references` [EXTRACTED]
+- [[AuthRequired_1]] - `references` [EXTRACTED]
 - [[HTTP CONNECT proxy traffic statistics. Shows allowedblocked counts and recent…]] - `rationale_for` [EXTRACTED]
 - [[get]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "_FakeRBAC"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/_FakeRBAC
 ---
 
 # soc/models.py
@@ -17,20 +17,20 @@ tags:
 - [[AuditLogEntry]] - `contains` [EXTRACTED]
 - [[AuditResult_1]] - `contains` [EXTRACTED]
 - [[ContributorRecord_1]] - `contains` [EXTRACTED]
-- [[EgressRequest]] - `contains` [EXTRACTED]
+- [[EgressRequest_1]] - `contains` [EXTRACTED]
 - [[EgressStatus]] - `contains` [EXTRACTED]
 - [[Enum_3]] - `imports_from` [EXTRACTED]
 - [[HealthStatus_1]] - `contains` [EXTRACTED]
 - [[Platform]] - `contains` [EXTRACTED]
-- [[ResourceUsage_1]] - `contains` [EXTRACTED]
-- [[RiskLevel_5]] - `contains` [EXTRACTED]
+- [[ResourceUsage_2]] - `contains` [EXTRACTED]
+- [[RiskLevel_6]] - `contains` [EXTRACTED]
 - [[SCLConfirmationRequired]] - `contains` [EXTRACTED]
 - [[SCLError]] - `contains` [EXTRACTED]
 - [[SCLInterface_1]] - `contains` [EXTRACTED]
 - [[SecurityEvent_1]] - `contains` [EXTRACTED]
 - [[ServiceDescriptor_1]] - `contains` [EXTRACTED]
 - [[ServiceStatus_1]] - `contains` [EXTRACTED]
-- [[Severity_1]] - `contains` [EXTRACTED]
+- [[Severity]] - `contains` [EXTRACTED]
 - [[UserRole]] - `contains` [EXTRACTED]
 - [[WSEvent]] - `contains` [EXTRACTED]
 - [[WSEventType]] - `contains` [EXTRACTED]
@@ -42,4 +42,4 @@ tags:
 - [[socrouter.py]] - `imports_from` [EXTRACTED]
 - [[websocket.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

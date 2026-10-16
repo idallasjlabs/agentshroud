@@ -14,9 +14,10 @@ tags:
 ## Connections
 - [[Crash backoff escalation (rolling 10-minute start window)]] - `implements` [EXTRACTED]
 - [[HERMES_HOME]] - `defines` [EXTRACTED]
-- [[HOME_1]] - `defines` [EXTRACTED]
+- [[HOME]] - `defines` [EXTRACTED]
 - [[Missing-secret visibility banner (expected secrets loop)]] - `implements` [EXTRACTED]
 - [[Post-migration model lock + sandboxed terminal + cron fleet default]] - `implements` [EXTRACTED]
+- [[S13 Hermes start.sh expected-secrets banner accepts env vars in place of mounted files]] - `references` [EXTRACTED]
 - [[XDG_CACHE_HOME]] - `defines` [EXTRACTED]
 - [[XDG_DATA_HOME]] - `defines` [EXTRACTED]
 - [[XDG_STATE_HOME]] - `defines` [EXTRACTED]
@@ -26,7 +27,6 @@ tags:
 - [[_telegram_get_me_ready]] - `defines` [EXTRACTED]
 - [[_telegram_send]] - `defines` [EXTRACTED]
 - [[_telegram_send_photo]] - `defines` [EXTRACTED]
-- [[cmd_up]] - `shares_data_with` [INFERRED]
 - [[init-config.sh (Hermes first-boot config materialisation)]] - `calls` [EXTRACTED]
 - [[start.sh script]] - `contains` [EXTRACTED]
 

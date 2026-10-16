@@ -12,6 +12,6 @@ tags:
 # save_report(report, log_dir)
 
 ## Connections
-- [[Function Details_42]] - `contains` [EXTRACTED]
+- [[Function Details_41]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/trivy_reportpy

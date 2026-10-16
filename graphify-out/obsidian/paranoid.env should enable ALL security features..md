@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "ForwardRequest"
+community: "AgentTarget"
 location: "L31"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ForwardRequest
+  - community/AgentTarget
 ---
 
 # paranoid.env should enable ALL security features.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestParanoidConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

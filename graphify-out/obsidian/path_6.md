@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/browse.js"
+source_file: ""
 type: "code"
-community: "openclaw/skills/i-browser/browse.js"
-location: "L8"
+community: "triage-cve-mitigations.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-browser/browsejs
+  - community/triage-cve-mitigationspy
 ---
 
-# path
+# Path
 
 ## Connections
-- [[openclawskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
+- [[_rel()]] - `references` [EXTRACTED]
+- [[gap_report_path()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-browser/browsejs
+#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy

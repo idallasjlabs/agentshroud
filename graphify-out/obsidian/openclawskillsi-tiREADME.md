@@ -12,6 +12,6 @@ tags:
 # openclaw/skills/i-ti/README.md
 
 ## Connections
-- [[Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (TI)]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

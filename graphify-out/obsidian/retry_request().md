@@ -12,7 +12,7 @@ tags:
 # retry_request()
 
 ## Connections
-- [[Any_75]] - `references` [EXTRACTED]
+- [[Any_78]] - `references` [EXTRACTED]
 - [[Execute a request with exponential backoff retry on transient failures.      Arg]] - `rationale_for` [EXTRACTED]
 - [[RetryConfig]] - `references` [EXTRACTED]
 - [[RetryResult]] - `references` [EXTRACTED]

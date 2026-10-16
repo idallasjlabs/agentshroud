@@ -12,7 +12,7 @@ tags:
 # test-skills-sync.sh script
 
 ## Connections
-- [[check()_10]] - `calls` [EXTRACTED]
+- [[check()_11]] - `calls` [EXTRACTED]
 - [[test-skills-sync.sh]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/sync-llm-settingssh

@@ -21,7 +21,7 @@ tags:
 - [[TestIsAutoApproved]] - `contains` [EXTRACTED]
 - [[TestSSHDisabled]] - `contains` [EXTRACTED]
 - [[TestValidateCommand]] - `contains` [EXTRACTED]
-- [[proxy()]] - `contains` [EXTRACTED]
+- [[proxy()_3]] - `contains` [EXTRACTED]
 - [[ssh_config()_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

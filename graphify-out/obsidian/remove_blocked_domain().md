@@ -12,7 +12,7 @@ tags:
 # remove_blocked_domain()
 
 ## Connections
-- [[AuthRequired]] - `references` [EXTRACTED]
+- [[AuthRequired_1]] - `references` [EXTRACTED]
 - [[Remove a domain from the local denylist. Authentication required.]] - `rationale_for` [EXTRACTED]
 - [[delete]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]

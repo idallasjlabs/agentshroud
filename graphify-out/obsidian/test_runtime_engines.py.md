@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AppleContainerEngine]] - `imports` [EXTRACTED]
-- [[ContainerInfo_3]] - `imports` [EXTRACTED]
+- [[ContainerInfo]] - `imports` [EXTRACTED]
 - [[DockerEngine]] - `imports` [EXTRACTED]
 - [[PodmanEngine]] - `imports` [EXTRACTED]
 - [[RuntimeConfig]] - `imports` [EXTRACTED]

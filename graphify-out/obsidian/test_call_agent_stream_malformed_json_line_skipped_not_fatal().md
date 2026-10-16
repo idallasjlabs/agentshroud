@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[A single corrupted SSE line logs a warning and is skipped — it must not     abor]] - `rationale_for` [EXTRACTED]
 - [[_call_agent_stream()]] - `calls` [EXTRACTED]
-- [[_sse_body()_1]] - `calls` [EXTRACTED]
+- [[_sse_body()]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy

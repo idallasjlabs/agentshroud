@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[aiohttp ClientSession closed-session crash-loop fix (partial)]] - `references` [EXTRACTED]
-- [[run-standalone.sh (Hermes docker run launcher)]] - `conceptually_related_to` [INFERRED]
+- [[run-standalone.sh]] - `conceptually_related_to` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_group_workspace_manager.py"
+source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "RBACConfig"
-location: "L74"
+community: "AgentShroud macOS App Icon (1024x1024, Rounded Squircle)"
+location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle
 ---
 
 # teams()
 
 ## Connections
 - [[TeamsConfig_2]] - `calls` [EXTRACTED]
-- [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
+- [[test_group_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle

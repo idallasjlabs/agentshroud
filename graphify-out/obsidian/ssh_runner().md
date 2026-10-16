@@ -16,7 +16,7 @@ tags:
 - [[dot-test_ssh_runner_uses_subprocess()]] - `calls` [EXTRACTED]
 - [[HostRunner]] - `references` [EXTRACTED]
 - [[Return a HostRunner that executes the command on the host over SSH.      SSH con]] - `rationale_for` [EXTRACTED]
-- [[main()_30]] - `calls` [EXTRACTED]
+- [[main()_33]] - `calls` [EXTRACTED]
 - [[multi_host_test.py]] - `contains` [EXTRACTED]
 - [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 

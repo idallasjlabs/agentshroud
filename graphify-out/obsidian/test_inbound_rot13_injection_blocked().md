@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "PIIConfig"
+community: "InjectionAction"
 location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/InjectionAction
 ---
 
 # test_inbound_rot13_injection_blocked()
@@ -16,4 +16,4 @@ tags:
 - [[rot13-obfuscated injection is decoded-and-blocked on the inbound path.]] - `rationale_for` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/InjectionAction

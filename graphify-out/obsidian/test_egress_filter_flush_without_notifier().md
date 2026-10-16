@@ -12,7 +12,7 @@ tags:
 # test_egress_filter_flush_without_notifier()
 
 ## Connections
-- [[EgressFilter_1]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[EgressPolicy]] - `calls` [EXTRACTED]
 - [[flush_notifications with no notifier set should not crash.]] - `rationale_for` [EXTRACTED]

@@ -12,8 +12,8 @@ tags:
 # test_pipeline_selective_modules()
 
 ## Connections
-- [[PIIConfig_1]] - `calls` [EXTRACTED]
-- [[PIISanitizer_2]] - `calls` [EXTRACTED]
+- [[PIIConfig_2]] - `calls` [EXTRACTED]
+- [[PIISanitizer_1]] - `calls` [EXTRACTED]
 - [[Pipeline with only PII enabled, prompt guard disabled.]] - `rationale_for` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 

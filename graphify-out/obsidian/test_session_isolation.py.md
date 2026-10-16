@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "UserSessionManager"
+community: "TestFabricatedSecurityNotice"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/TestFabricatedSecurityNotice
 ---
 
 # test_session_isolation.py
 
 ## Connections
 - [[MiddlewareManager]] - `imports` [EXTRACTED]
-- [[Role_22]] - `imports` [EXTRACTED]
+- [[Role_21]] - `imports` [EXTRACTED]
 - [[TestMiddlewareSessionEnforcement]] - `contains` [EXTRACTED]
 - [[TestSessionIsolationEndToEnd]] - `contains` [EXTRACTED]
 - [[TestUserSessionManager]] - `contains` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[UserSessionManager]] - `imports` [EXTRACTED]
 - [[WebhookReceiver]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

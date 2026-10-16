@@ -27,7 +27,7 @@ tags:
 - [[_old_cred()]] - `contains` [EXTRACTED]
 - [[key_rotation.py (KeyRotationManager)]] - `implements` [EXTRACTED]
 - [[key_rotation_config.py (KeyRotationConfig)]] - `references` [EXTRACTED]
-- [[manager()_2]] - `contains` [EXTRACTED]
+- [[manager()_1]] - `contains` [EXTRACTED]
 - [[test_key_rotation.py]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/KeyRotationManager

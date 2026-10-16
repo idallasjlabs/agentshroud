@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[MCPPermissionManager]] - `imports` [EXTRACTED]
-- [[MCPProxyConfig_3]] - `imports` [EXTRACTED]
+- [[MCPProxyConfig_2]] - `imports` [EXTRACTED]
 - [[MCPServerConfig_2]] - `imports` [EXTRACTED]
 - [[MCPToolConfig]] - `imports` [EXTRACTED]
 - [[PermissionLevel]] - `imports` [EXTRACTED]
@@ -23,10 +23,10 @@ tags:
 - [[TestRateLimiting]] - `contains` [EXTRACTED]
 - [[TestServerAccess]] - `contains` [EXTRACTED]
 - [[TestToolPermission]] - `contains` [EXTRACTED]
-- [[TestTrustLevels_1]] - `contains` [EXTRACTED]
+- [[TestTrustLevels]] - `contains` [EXTRACTED]
 - [[TestTrustMapping]] - `contains` [EXTRACTED]
-- [[config()]] - `contains` [EXTRACTED]
-- [[mgr()_1]] - `contains` [EXTRACTED]
+- [[config()_1]] - `contains` [EXTRACTED]
+- [[mgr()]] - `contains` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `shares_data_with` [INFERRED]
 - [[test_mcp_proxy_endpoint.py]] - `conceptually_related_to` [INFERRED]
 

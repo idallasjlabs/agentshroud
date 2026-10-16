@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "PIIConfig"
+community: "MiddlewareManager"
 location: "L352"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/MiddlewareManager
 ---
 
 # test_non_owner_blocked_by_prompt_guard()
@@ -15,4 +15,4 @@ tags:
 - [[Non-owner collaborators must be blocked by prompt guard.]] - `rationale_for` [EXTRACTED]
 - [[test_redteam_probes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,26 +1,25 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "FalcoAlertWatcher"
-location: "L67"
+community: "test_security_toolchain.py"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/test_security_toolchainpy
 ---
 
 # read_alerts()
 
 ## Connections
-- [[dot-test_read_alerts_missing_dir()]] - `calls` [EXTRACTED]
-- [[Any_1]] - `references` [EXTRACTED]
-- [[Path]] - `references` [EXTRACTED]
-- [[Read Falco alerts from the alert directory.      Args         alert_dir Direct]] - `rationale_for` [EXTRACTED]
-- [[datetime]] - `references` [EXTRACTED]
-- [[falco_monitor.py]] - `contains` [EXTRACTED]
-- [[is_agentshroud_rule()]] - `calls` [EXTRACTED]
+- [[Any_61]] - `references` [EXTRACTED]
+- [[Path_46]] - `references` [EXTRACTED]
+- [[Read Wazuh alerts from the alert directory.      Args         alert_dir Direct]] - `rationale_for` [EXTRACTED]
+- [[datetime_4]] - `references` [EXTRACTED]
+- [[get_falco_summary()]] - `calls` [EXTRACTED]
+- [[get_wazuh_summary()]] - `calls` [EXTRACTED]
 - [[parse_alert()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `imports` [EXTRACTED]
-- [[test_security_toolchain.py]] - `imports` [EXTRACTED]
+- [[wazuh_client.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

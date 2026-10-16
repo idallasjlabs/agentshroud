@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[All Dependencies]] - `references` [EXTRACTED]
 - [[Pydantic]] - `contains` [EXTRACTED]
-- [[fastapi_2]] - `references` [EXTRACTED]
+- [[fastapi_1]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

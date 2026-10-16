@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "test_e2e_proxy.py"
+community: "EgressFilterConfig"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/EgressFilterConfig
 ---
 
 # sanitizer()
 
 ## Connections
-- [[PIISanitizer_2]] - `calls` [EXTRACTED]
+- [[PIISanitizer_1]] - `calls` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

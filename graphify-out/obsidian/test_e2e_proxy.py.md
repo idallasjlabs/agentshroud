@@ -1,40 +1,40 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "test_e2e_proxy.py"
+community: "EgressFilterConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/EgressFilterConfig
 ---
 
 # test_e2e_proxy.py
 
 ## Connections
 - [[AuditChain]] - `imports` [EXTRACTED]
-- [[EgressFilter_2]] - `imports` [EXTRACTED]
+- [[EgressFilter_1]] - `imports` [EXTRACTED]
 - [[EgressFilterConfig]] - `imports` [EXTRACTED]
 - [[EgressPolicy]] - `imports` [EXTRACTED]
 - [[ForwarderConfig]] - `imports` [EXTRACTED]
 - [[HTTPForwarder]] - `imports` [EXTRACTED]
-- [[PIIConfig_1]] - `imports` [EXTRACTED]
-- [[PIISanitizer_2]] - `imports` [EXTRACTED]
+- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PIISanitizer_1]] - `imports` [EXTRACTED]
 - [[PipelineAction]] - `imports` [EXTRACTED]
 - [[PromptGuard]] - `imports` [EXTRACTED]
 - [[ScanRequest_1]] - `imports` [EXTRACTED]
 - [[SecurityPipeline_2]] - `imports` [EXTRACTED]
 - [[SidecarScanner]] - `imports` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
-- [[TrustManager]] - `imports` [EXTRACTED]
+- [[TrustManager_4]] - `imports` [EXTRACTED]
 - [[WebhookReceiver]] - `imports` [EXTRACTED]
 - [[_PassInboundPipeline]] - `contains` [EXTRACTED]
-- [[_StubForwarder]] - `contains` [EXTRACTED]
-- [[egress_filter()]] - `contains` [EXTRACTED]
+- [[_StubForwarder_2]] - `contains` [EXTRACTED]
+- [[egress_filter()_1]] - `contains` [EXTRACTED]
 - [[forwarder()_1]] - `contains` [EXTRACTED]
 - [[pii_config()_1]] - `contains` [EXTRACTED]
-- [[pipeline()_2]] - `contains` [EXTRACTED]
-- [[prompt_guard()_1]] - `contains` [EXTRACTED]
+- [[pipeline()_1]] - `contains` [EXTRACTED]
+- [[prompt_guard()_2]] - `contains` [EXTRACTED]
 - [[run_full()]] - `references` [EXTRACTED]
 - [[sanitizer()_4]] - `contains` [EXTRACTED]
 - [[test_approval_queue_enforced()]] - `contains` [EXTRACTED]
@@ -64,6 +64,6 @@ tags:
 - [[test_webhook_outbound_pipeline_crash_fails_closed()]] - `contains` [EXTRACTED]
 - [[test_webhook_receiver_processes()]] - `contains` [EXTRACTED]
 - [[test_webhook_strips_pii()]] - `contains` [EXTRACTED]
-- [[trust_manager()_1]] - `contains` [EXTRACTED]
+- [[trust_manager()_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

@@ -36,7 +36,6 @@ tags:
 - [[_telegram_get_me_ready()]] - `defines` [EXTRACTED]
 - [[_telegram_send()]] - `defines` [EXTRACTED]
 - [[_telegram_send_photo()]] - `defines` [EXTRACTED]
-- [[colima-health-check.sh]] - `conceptually_related_to` [INFERRED]
 - [[dockerscriptsinit-openclaw-config.sh (baked into OpenClaw image; seeds sandbox mode, runs doctor --fix)]] - `calls` [EXTRACTED]
 - [[gateway-start.sh]] - `semantically_similar_to` [INFERRED]
 - [[op_proxy_read_with_retry()]] - `defines` [EXTRACTED]

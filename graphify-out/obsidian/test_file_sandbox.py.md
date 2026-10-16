@@ -21,9 +21,9 @@ tags:
 - [[TestPIIScanning]] - `contains` [EXTRACTED]
 - [[TestSensitivePathBlocking]] - `contains` [EXTRACTED]
 - [[TestStagingPatternDetection]] - `contains` [EXTRACTED]
-- [[default_config()_4]] - `contains` [EXTRACTED]
+- [[default_config()_1]] - `contains` [EXTRACTED]
 - [[sandbox()]] - `contains` [EXTRACTED]
-- [[strict_config()_3]] - `contains` [EXTRACTED]
-- [[strict_sandbox()_1]] - `contains` [EXTRACTED]
+- [[strict_config()]] - `contains` [EXTRACTED]
+- [[strict_sandbox()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

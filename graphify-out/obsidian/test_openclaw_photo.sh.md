@@ -15,7 +15,7 @@ tags:
 - [[AgentShroud Taglines List]] - `references` [EXTRACTED]
 - [[CollaboratorGreeter]] - `references` [EXTRACTED]
 - [[Dockerfile — Gateway]] - `references` [EXTRACTED]
-- [[check()_7]] - `defines` [EXTRACTED]
+- [[check()_8]] - `defines` [EXTRACTED]
 - [[smoke.sh]] - `references` [EXTRACTED]
 - [[test_hermes_chown_coverage.sh]] - `semantically_similar_to` [INFERRED]
 - [[test_hermes_cron_html_email.sh]] - `semantically_similar_to` [INFERRED]

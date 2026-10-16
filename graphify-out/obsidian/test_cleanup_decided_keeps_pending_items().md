@@ -12,7 +12,7 @@ tags:
 # test_cleanup_decided_keeps_pending_items()
 
 ## Connections
-- [[ApprovalRequest_5]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_1]] - `calls` [EXTRACTED]
 - [[cleanup_decided() must not remove pending items regardless of age.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 

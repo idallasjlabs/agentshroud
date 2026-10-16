@@ -12,16 +12,15 @@ tags:
 # phase_preflight()
 
 ## Connections
-- [[ColimaDocker VM Storage Exhaustion]] - `references` [EXTRACTED]
 - [[Sunday Upgrade Report 2026-09-06 (prod, disk-exhaustion incident)]] - `references` [EXTRACTED]
 - [[_docker_free_gb()]] - `calls` [EXTRACTED]
 - [[_wait_for_docker()]] - `calls` [EXTRACTED]
-- [[die()_1]] - `calls` [EXTRACTED]
+- [[die()]] - `calls` [EXTRACTED]
 - [[err()]] - `calls` [EXTRACTED]
-- [[log()_8]] - `calls` [EXTRACTED]
+- [[log()]] - `calls` [EXTRACTED]
+- [[sunday-upgrade-apply main sequence]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
-- [[sunday-upgrade-apply.sh main flow]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
-- [[warn()_4]] - `calls` [EXTRACTED]
+- [[warn()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

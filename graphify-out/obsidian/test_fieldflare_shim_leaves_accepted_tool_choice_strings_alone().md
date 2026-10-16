@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "LLMProxy"
+community: "test_llm_proxy_local_parity.py"
 location: "L1039"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/test_llm_proxy_local_paritypy
 ---
 
 # test_fieldflare_shim_leaves_accepted_tool_choice_strings_alone()
@@ -17,4 +17,4 @@ tags:
 - [[parametrize]] - `references` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

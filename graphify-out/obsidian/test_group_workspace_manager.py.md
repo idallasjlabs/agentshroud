@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[GroupAccessDenied]] - `imports` [EXTRACTED]
 - [[GroupWorkspaceManager]] - `imports` [EXTRACTED]
-- [[RBACConfig_4]] - `imports` [EXTRACTED]
+- [[RBACConfig_3]] - `imports` [EXTRACTED]
 - [[SharedMemoryManager]] - `imports` [EXTRACTED]
 - [[TeamsConfig_2]] - `imports` [EXTRACTED]
 - [[TelegramAPIProxy]] - `imports` [EXTRACTED]
@@ -27,12 +27,12 @@ tags:
 - [[TestNonMemberDenied]] - `contains` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
 - [[group_workspace.py (GroupWorkspaceManager)]] - `implements` [EXTRACTED]
-- [[manager()_1]] - `contains` [EXTRACTED]
-- [[rbac()_2]] - `contains` [EXTRACTED]
-- [[session_manager()_3]] - `contains` [EXTRACTED]
+- [[manager()_4]] - `contains` [EXTRACTED]
+- [[rbac()_6]] - `contains` [EXTRACTED]
+- [[session_manager()_4]] - `contains` [EXTRACTED]
 - [[session_manager.py (UserSessionManager)]] - `references` [EXTRACTED]
-- [[shared_memory()_1]] - `contains` [EXTRACTED]
+- [[shared_memory()_2]] - `contains` [EXTRACTED]
 - [[shared_memory.py (SharedMemoryManager)]] - `references` [EXTRACTED]
-- [[teams()_3]] - `contains` [EXTRACTED]
+- [[teams()_4]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RBACConfig

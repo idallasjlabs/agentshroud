@@ -27,7 +27,7 @@ tags:
 - [[RemediationPlan dataclass]] - `references` [EXTRACTED]
 - [[Work out the minimum version bump that remediates the most advisories.      Only]] - `rationale_for` [EXTRACTED]
 - [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
-- [[main()_31]] - `calls` [EXTRACTED]
+- [[main()_29]] - `calls` [EXTRACTED]
 - [[parse_version()_1]] - `calls` [EXTRACTED]
 - [[test_auto_remediate_cves.py (CVE remediation planner tests)]] - `calls` [EXTRACTED]
 - [[test_real_registry_plan_is_internally_consistent]] - `calls` [EXTRACTED]

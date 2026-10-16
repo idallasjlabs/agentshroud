@@ -15,7 +15,7 @@ tags:
 - [[Enum_3]] - `imports_from` [EXTRACTED]
 - [[PrivacyPolicy]] - `contains` [EXTRACTED]
 - [[PrivacyPolicyEnforcer]] - `contains` [EXTRACTED]
-- [[RBACConfig_4]] - `imports` [EXTRACTED]
+- [[RBACConfig_3]] - `imports` [EXTRACTED]
 - [[ServicePolicy]] - `contains` [EXTRACTED]
 - [[ServicePrivacy]] - `contains` [EXTRACTED]
 

@@ -12,6 +12,6 @@ tags:
 # security_modules section
 
 ## Connections
-- [[agentshroud.yaml]] - `contains` [EXTRACTED]
+- [[agentshroud.yaml_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/egress_filterpy

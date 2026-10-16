@@ -16,7 +16,7 @@ tags:
 - [[_fake_forward()_2]] - `contains` [EXTRACTED]
 - [[_fake_forward()_17]] - `indirect_call` [INFERRED]
 - [[_make_proxy()]] - `calls` [EXTRACTED]
-- [[asyncio_1]] - `references` [EXTRACTED]
+- [[asyncio_2]] - `references` [EXTRACTED]
 - [[proxy_messages applies the shim only on the Fieldflare route, before forwarding.]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 

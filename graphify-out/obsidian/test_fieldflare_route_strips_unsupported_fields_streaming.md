@@ -16,7 +16,7 @@ tags:
 - [[LLMProxy.proxy_messages_streaming]] - `calls` [EXTRACTED]
 - [[_FakeStreamResponse]] - `calls` [EXTRACTED]
 - [[_make_proxy()]] - `calls` [EXTRACTED]
-- [[asyncio_1]] - `references` [EXTRACTED]
+- [[asyncio_2]] - `references` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

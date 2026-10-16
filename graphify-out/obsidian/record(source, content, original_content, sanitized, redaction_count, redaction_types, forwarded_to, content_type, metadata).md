@@ -12,6 +12,6 @@ tags:
 # record(source, content, original_content, sanitized, redaction_count, redaction_types, forwarded_to, content_type, metadata)
 
 ## Connections
-- [[Function Details_22]] - `contains` [EXTRACTED]
+- [[Function Details_21]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/ledgerpy

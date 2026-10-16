@@ -18,7 +18,7 @@ tags:
 - [[PromptGuard]] - `imports` [EXTRACTED]
 - [[TestContextIntegrityScorer]] - `contains` [EXTRACTED]
 - [[_make_segment()]] - `contains` [EXTRACTED]
-- [[guard()_4]] - `contains` [EXTRACTED]
+- [[guard()_3]] - `contains` [EXTRACTED]
 - [[scorer()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ContextSegment

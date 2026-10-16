@@ -14,14 +14,14 @@ tags:
 ## Connections
 - [[ApprovalQueue]] - `imports` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
-- [[ApprovalQueueItem_4]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_5]] - `imports` [EXTRACTED]
+- [[ApprovalQueueItem_2]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_1]] - `imports` [EXTRACTED]
 - [[ApprovalStore]] - `imports` [EXTRACTED]
 - [[TestApprovalStorePersistence]] - `contains` [EXTRACTED]
 - [[TestApprovalTimeout]] - `contains` [EXTRACTED]
 - [[TestAutoExpire]] - `contains` [EXTRACTED]
 - [[TestConcurrentApprovalRequests]] - `contains` [EXTRACTED]
 - [[queue()]] - `contains` [EXTRACTED]
-- [[store()_1]] - `contains` [EXTRACTED]
+- [[store()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

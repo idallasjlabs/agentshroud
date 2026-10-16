@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[ApprovalQueue]] - `imports` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_5]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_1]] - `imports` [EXTRACTED]
 - [[ApprovalStore]] - `imports` [EXTRACTED]
 - [[EnhancedApprovalQueue]] - `imports` [EXTRACTED]
-- [[MFAGuard_1]] - `imports` [EXTRACTED]
+- [[MFAGuard_2]] - `imports` [EXTRACTED]
 - [[MFAResult]] - `imports` [EXTRACTED]
 - [[ToolRiskConfig]] - `imports` [EXTRACTED]
 - [[_queue()]] - `contains` [EXTRACTED]

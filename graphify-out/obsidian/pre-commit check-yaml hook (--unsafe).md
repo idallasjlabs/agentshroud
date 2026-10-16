@@ -1,17 +1,17 @@
 ---
 source_file: ".pre-commit-config.yaml"
 type: "code"
-community: "docker/bots/hermes/run-standalone.sh (docker run launcher for Hermes)"
+community: "run-standalone.sh (Hermes docker run launcher)"
 location: "30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
+  - community/run-standalonesh_Hermes_docker_run_launcher
 ---
 
 # pre-commit check-yaml hook (--unsafe)
 
 ## Connections
-- [[Dev override gateway (agentshroud-dev-gateway, 9080, dev Hermes upstreams)]] - `references` [EXTRACTED]
+- [[gateway service (dev override)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docker/bots/hermes/run-standalonesh_docker_run_launcher_for_Hermes
+#graphify/code #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher

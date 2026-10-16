@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[A2AMethod]] - `imports` [EXTRACTED]
 - [[A2APolicyAction]] - `imports` [EXTRACTED]
-- [[A2APolicyConfig_1]] - `imports` [EXTRACTED]
+- [[A2APolicyConfig]] - `imports` [EXTRACTED]
 - [[A2APolicyEngine_2]] - `imports` [EXTRACTED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `contains` [EXTRACTED]
 

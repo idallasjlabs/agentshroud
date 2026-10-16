@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "UserSessionManager"
+community: "DataLedger"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/DataLedger
 ---
 
 # test_shared_memory.py
 
 ## Connections
-- [[RBACConfig_4]] - `imports` [EXTRACTED]
+- [[RBACConfig_3]] - `imports` [EXTRACTED]
 - [[SharedMemoryManager]] - `imports` [EXTRACTED]
 - [[TeamsConfig_2]] - `imports` [EXTRACTED]
 - [[TestGroupMemoryReadWrite]] - `contains` [EXTRACTED]
@@ -21,9 +21,9 @@ tags:
 - [[TestTopicScopedMemory]] - `contains` [EXTRACTED]
 - [[TestUserPrivateMemory]] - `contains` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
-- [[rbac()_4]] - `contains` [EXTRACTED]
+- [[rbac()_2]] - `contains` [EXTRACTED]
 - [[session_mgr()]] - `contains` [EXTRACTED]
 - [[smm()_1]] - `contains` [EXTRACTED]
 - [[tmp_workspace()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/DataLedger

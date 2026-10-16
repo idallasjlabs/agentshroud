@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[A2AProxy]] - `references` [EXTRACTED]
-- [[_StubForwarder_1]] - `references` [EXTRACTED]
+- [[_StubForwarder]] - `references` [EXTRACTED]
 - [[_jsonrpc()]] - `calls` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 

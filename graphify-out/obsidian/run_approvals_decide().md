@@ -1,18 +1,18 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "main.rs"
+community: "MCPPermissionManager"
 location: "L585"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/MCPPermissionManager
 ---
 
 # run_approvals_decide()
 
 ## Connections
-- [[dot-post()_2]] - `calls` [EXTRACTED]
+- [[dot-post()_1]] - `calls` [EXTRACTED]
 - [[GatewayClient]] - `references` [EXTRACTED]
 - [[Result]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[decide_errors_on_409_conflict()]] - `calls` [EXTRACTED]
 - [[deny_sends_false_and_formats()]] - `calls` [EXTRACTED]
 - [[format_decision()]] - `calls` [EXTRACTED]
-- [[main()_15]] - `calls` [EXTRACTED]
+- [[main()_19]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

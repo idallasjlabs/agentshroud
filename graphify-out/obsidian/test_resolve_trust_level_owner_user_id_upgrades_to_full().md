@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "test_forward_stream.py"
+community: "WebContentScanner"
 location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/WebContentScanner
 ---
 
 # test_resolve_trust_level_owner_user_id_upgrades_to_full()
@@ -17,4 +17,4 @@ tags:
 - [[_target()]] - `calls` [EXTRACTED]
 - [[test_forward_stream.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

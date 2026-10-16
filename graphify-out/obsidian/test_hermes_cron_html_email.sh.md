@@ -12,7 +12,7 @@ tags:
 # test_hermes_cron_html_email.sh
 
 ## Connections
-- [[check()_6]] - `defines` [EXTRACTED]
+- [[check()_7]] - `defines` [EXTRACTED]
 - [[email_helper.sh]] - `references` [EXTRACTED]
 - [[jobs.yaml (Hermes cron)]] - `references` [EXTRACTED]
 - [[smoke.sh]] - `references` [EXTRACTED]

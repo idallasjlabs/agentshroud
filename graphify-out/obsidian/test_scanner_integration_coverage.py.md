@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "test_scanner_integration_coverage.py"
+community: "ApprovalQueueConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integration_coveragepy
+  - community/ApprovalQueueConfig
 ---
 
 # test_scanner_integration_coverage.py
@@ -20,13 +20,13 @@ tags:
 - [[TestClamavSummary]] - `contains` [EXTRACTED]
 - [[TestComplianceAuditing]] - `contains` [EXTRACTED]
 - [[TestComplianceMaths]] - `contains` [EXTRACTED]
-- [[TestComputeBotScorecard]] - `contains` [EXTRACTED]
+- [[TestComputeBotScorecard_1]] - `contains` [EXTRACTED]
 - [[TestComputeScorecard_1]] - `contains` [EXTRACTED]
 - [[TestContainerRuntimeIsolation]] - `contains` [EXTRACTED]
 - [[TestDaemonConfigReader]] - `contains` [EXTRACTED]
 - [[TestDataConfidentiality]] - `contains` [EXTRACTED]
 - [[TestDockerDaemonConfig]] - `contains` [EXTRACTED]
-- [[TestFalcoSummary_1]] - `contains` [EXTRACTED]
+- [[TestFalcoSummary]] - `contains` [EXTRACTED]
 - [[TestFluentBitSummary]] - `contains` [EXTRACTED]
 - [[TestGetSbom]] - `contains` [EXTRACTED]
 - [[TestHostOsHardening]] - `contains` [EXTRACTED]
@@ -51,16 +51,16 @@ tags:
 - [[TestTrivyImageSummaries]] - `contains` [EXTRACTED]
 - [[TestTrivySummary]] - `contains` [EXTRACTED]
 - [[TestVulnerabilityManagement]] - `contains` [EXTRACTED]
-- [[TestWazuhSummary_1]] - `contains` [EXTRACTED]
+- [[TestWazuhSummary]] - `contains` [EXTRACTED]
 - [[_FakeResp]] - `contains` [EXTRACTED]
 - [[_age()]] - `contains` [EXTRACTED]
 - [[_stub_summary()]] - `contains` [EXTRACTED]
 - [[_w()]] - `contains` [EXTRACTED]
-- [[falco_monitor.py]] - `references` [EXTRACTED]
+- [[falco_monitor.py_2]] - `references` [EXTRACTED]
 - [[flags()]] - `contains` [EXTRACTED]
 - [[fs()]] - `contains` [EXTRACTED]
 - [[test_router.py]] - `conceptually_related_to` [AMBIGUOUS]
 - [[tools()]] - `contains` [EXTRACTED]
-- [[wazuh_client.py]] - `references` [EXTRACTED]
+- [[wazuh_client.py_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integration_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

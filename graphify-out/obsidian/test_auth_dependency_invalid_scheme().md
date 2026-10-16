@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auth.py"
 type: "code"
-community: "test_security.py"
+community: "create_auth_dependency"
 location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_securitypy
+  - community/create_auth_dependency
 ---
 
 # test_auth_dependency_invalid_scheme()
@@ -16,4 +16,4 @@ tags:
 - [[create_auth_dependency()]] - `calls` [EXTRACTED]
 - [[test_auth.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_securitypy
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

@@ -1,18 +1,18 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "code"
-community: "discover_upstream_versions.py"
+community: "egress_filter.py"
 location: "L139"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/discover_upstream_versionspy
+  - community/egress_filterpy
 ---
 
 # pick_latest_hermes_tag()
 
 ## Connections
-- [[dot-test_empty_returns_none()_1]] - `calls` [INFERRED]
+- [[dot-test_empty_returns_none()]] - `calls` [INFERRED]
 - [[dot-test_handles_four_component_tags()]] - `calls` [INFERRED]
 - [[dot-test_picks_newest_date_tag()]] - `calls` [INFERRED]
 - [[dot-test_real_hermes_tail_picks_latest_date()]] - `calls` [INFERRED]
@@ -21,4 +21,4 @@ tags:
 - [[discover()]] - `calls` [EXTRACTED]
 - [[discover_upstream_versions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/discover_upstream_versionspy
+#graphify/code #graphify/INFERRED #community/egress_filterpy

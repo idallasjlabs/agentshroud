@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "AuditChain"
+community: "AgentTarget"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/AgentTarget
 ---
 
 # test_key_vault.py
@@ -23,7 +23,7 @@ tags:
 - [[TestKeyScoping]] - `contains` [EXTRACTED]
 - [[TestKeyStorage]] - `contains` [EXTRACTED]
 - [[TestKeyVaultConfig]] - `contains` [EXTRACTED]
-- [[config()_3]] - `contains` [EXTRACTED]
+- [[config()]] - `contains` [EXTRACTED]
 - [[vault()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

@@ -36,12 +36,12 @@ tags:
 - [[TestTrustViolationRecording]] - `contains` [EXTRACTED]
 - [[ThreatAction]] - `imports` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
-- [[TrustManager]] - `imports` [EXTRACTED]
+- [[TrustManager_4]] - `imports` [EXTRACTED]
 - [[_FakeAttack]] - `contains` [EXTRACTED]
 - [[_FakeIntegrityScore]] - `contains` [EXTRACTED]
 - [[_make_integrity_pipeline()]] - `contains` [EXTRACTED]
 - [[_make_pipeline()_4]] - `contains` [EXTRACTED]
 - [[_make_signer_pipeline()]] - `contains` [EXTRACTED]
-- [[pipeline.py_1]] - `references` [EXTRACTED]
+- [[pipeline.py]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AuditChain

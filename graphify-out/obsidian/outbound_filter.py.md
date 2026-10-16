@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "AuditChain"
+community: "TestOutboundInfoFilter"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/TestOutboundInfoFilter
 ---
 
 # outbound_filter.py
@@ -22,4 +22,4 @@ tags:
 - [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

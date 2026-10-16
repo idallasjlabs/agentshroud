@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_tool_acl.py"
+source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
 community: "RBACConfig"
-location: "L41"
+location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # rbac()
 
 ## Connections
-- [[_make_rbac()_1]] - `calls` [EXTRACTED]
-- [[test_tool_acl.py]] - `contains` [EXTRACTED]
+- [[RBACConfig_3]] - `calls` [EXTRACTED]
+- [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RBACConfig

@@ -1,16 +1,16 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "test_security.py"
+community: "create_auth_dependency"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_securitypy
+  - community/create_auth_dependency
 ---
 
 # rate_limiter (module-level instance)
 
 ## Connections
-- [[auth.py_1]] - `references` [EXTRACTED]
+- [[auth.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_securitypy
+#graphify/code #graphify/EXTRACTED #community/create_auth_dependency

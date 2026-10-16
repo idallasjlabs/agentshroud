@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "A2APolicyEngine"
+community: "test_a2a_proxy.py"
 location: "L395"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/test_a2a_proxypy
 ---
 
 # test_proxy_result_defaults_are_safe()
@@ -16,4 +16,4 @@ tags:
 - [[A2AProxyResult]] - `calls` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

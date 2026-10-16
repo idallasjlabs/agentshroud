@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[End-to-end the engine wired into MCPProxy with a REAL approval queue     must n]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyEngine_1]] - `calls` [EXTRACTED]
-- [[MCPProxy]] - `calls` [EXTRACTED]
+- [[MCPProxy_1]] - `calls` [EXTRACTED]
 - [[MCPToolCall_1]] - `calls` [EXTRACTED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 

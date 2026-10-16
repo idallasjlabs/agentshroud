@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_group_workspace_manager.py"
+source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "RBACConfig"
-location: "L86"
+community: "ApprovalQueueConfig"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/ApprovalQueueConfig
 ---
 
 # session_manager()
 
 ## Connections
 - [[UserSessionManager]] - `calls` [EXTRACTED]
-- [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
+- [[test_shared_memory_write_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

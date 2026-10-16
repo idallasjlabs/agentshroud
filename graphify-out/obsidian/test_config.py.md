@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[BotConfig]] - `imports` [EXTRACTED]
-- [[GatewayConfig_3]] - `imports` [EXTRACTED]
+- [[GatewayConfig_2]] - `imports` [EXTRACTED]
 - [[RouterConfig]] - `imports` [EXTRACTED]
 - [[_bot_service_names()]] - `imports` [EXTRACTED]
 - [[_entity_type_mapping()]] - `imports` [EXTRACTED]

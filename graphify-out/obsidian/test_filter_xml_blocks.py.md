@@ -12,9 +12,9 @@ tags:
 # test_filter_xml_blocks.py
 
 ## Connections
-- [[PIIConfig_1]] - `imports` [EXTRACTED]
-- [[PIISanitizer_2]] - `imports` [EXTRACTED]
-- [[sanitizer()_1]] - `contains` [EXTRACTED]
+- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PIISanitizer_1]] - `imports` [EXTRACTED]
+- [[sanitizer()_2]] - `contains` [EXTRACTED]
 - [[test_collapses_excessive_newlines()]] - `contains` [EXTRACTED]
 - [[test_does_not_filter_normal_text()]] - `contains` [EXTRACTED]
 - [[test_does_not_filter_regular_html_tags()]] - `contains` [EXTRACTED]

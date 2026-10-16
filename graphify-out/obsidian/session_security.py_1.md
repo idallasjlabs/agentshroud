@@ -2,23 +2,16 @@
 source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
 type: "document"
 community: "Function Details"
-location: "L10"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
   - community/Function_Details
 ---
 
-# session_security.py
+# session_security.py.md
 
 ## Connections
-- [[Configuration  Environment Variables_5]] - `contains` [EXTRACTED]
-- [[Function Details_12]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_13]] - `contains` [EXTRACTED]
-- [[Purpose_116]] - `contains` [EXTRACTED]
-- [[Related_17]] - `contains` [EXTRACTED]
-- [[Responsibilities_15]] - `contains` [EXTRACTED]
-- [[Threat Model_12]] - `contains` [EXTRACTED]
-- [[session_security.py]] - `contains` [EXTRACTED]
+- [[session_security.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

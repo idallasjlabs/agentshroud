@@ -15,8 +15,8 @@ tags:
 - [[ApprovalMode]] - `imports` [EXTRACTED]
 - [[ApprovalResult]] - `imports` [EXTRACTED]
 - [[EgressApprovalQueue]] - `imports` [EXTRACTED]
-- [[EgressRequest_1]] - `imports` [EXTRACTED]
-- [[RiskLevel_6]] - `imports` [EXTRACTED]
+- [[EgressRequest]] - `imports` [EXTRACTED]
+- [[RiskLevel]] - `imports` [EXTRACTED]
 - [[TestEgressApprovalAPI]] - `contains` [EXTRACTED]
 - [[TestEgressApprovalQueue]] - `contains` [EXTRACTED]
 

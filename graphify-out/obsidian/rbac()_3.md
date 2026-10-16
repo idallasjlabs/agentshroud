@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_privacy_policy.py"
+source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "RBACConfig"
-location: "L46"
+community: "AgentShroud macOS App Icon (1024x1024, Rounded Squircle)"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle
 ---
 
 # rbac()
 
 ## Connections
-- [[_make_rbac()]] - `calls` [EXTRACTED]
-- [[test_privacy_policy.py]] - `contains` [EXTRACTED]
+- [[RBACConfig_3]] - `calls` [EXTRACTED]
+- [[test_group_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle

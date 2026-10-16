@@ -1,17 +1,21 @@
 ---
-source_file: "tests/startup_smoke/test_apply_patches.js"
+source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "test_apply_patches.js"
-location: "L23"
+community: "test_multi_host_test.py"
+location: "L324"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_apply_patchesjs
+  - graphify/INFERRED
+  - community/test_multi_host_testpy
 ---
 
-# path
+# Path
 
 ## Connections
-- [[test_apply_patches.js]] - `contains` [EXTRACTED]
+- [[HostResult]] - `uses` [INFERRED]
+- [[HostStatus]] - `uses` [INFERRED]
+- [[MultiHostResult]] - `uses` [INFERRED]
+- [[_run_wrapper()]] - `references` [EXTRACTED]
+- [[_write_exec()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_apply_patchesjs
+#graphify/code #graphify/INFERRED #community/test_multi_host_testpy
