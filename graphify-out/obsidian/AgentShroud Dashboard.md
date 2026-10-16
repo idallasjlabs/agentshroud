@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[Components (to be implemented in Week 2)]] - `contains` [EXTRACTED]
-- [[Features_3]] - `contains` [EXTRACTED]
-- [[Implementation Status_2]] - `contains` [EXTRACTED]
+- [[Features_2]] - `contains` [EXTRACTED]
+- [[Implementation Status_1]] - `contains` [EXTRACTED]
 - [[Tech Stack]] - `contains` [EXTRACTED]
 - [[dashboardREADME]] - `contains` [EXTRACTED]
 

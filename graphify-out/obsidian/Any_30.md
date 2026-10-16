@@ -1,17 +1,23 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "ContainerEngine"
-location: "L123"
+community: "Action"
+location: "L726"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ContainerEngine
+  - graphify/INFERRED
+  - community/Action
 ---
 
 # Any
 
 ## Connections
-- [[dot-inspect()]] - `references` [EXTRACTED]
+- [[dot-_handler()]] - `references` [EXTRACTED]
+- [[Action_2]] - `uses` [INFERRED]
+- [[PermissionResult]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[Resource_2]] - `uses` [INFERRED]
+- [[Role_91]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerEngine
+#graphify/code #graphify/INFERRED #community/Action

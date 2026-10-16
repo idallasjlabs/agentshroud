@@ -12,6 +12,6 @@ tags:
 # Alert JSONL Format
 
 ## Connections
-- [[alert_dispatcher.py_1]] - `contains` [EXTRACTED]
+- [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy

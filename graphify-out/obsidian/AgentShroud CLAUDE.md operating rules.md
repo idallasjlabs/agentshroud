@@ -1,11 +1,11 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "sunday-upgrade-apply.sh"
+community: "main"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sunday-upgrade-applysh
+  - community/main
 ---
 
 # AgentShroud CLAUDE.md operating rules
@@ -15,4 +15,4 @@ tags:
 - [[Prove the Outcome, Never the Steps]] - `references` [EXTRACTED]
 - [[Weekly Upgrades EVERYTHING Means Everything]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sunday-upgrade-applysh
+#graphify/document #graphify/EXTRACTED #community/main

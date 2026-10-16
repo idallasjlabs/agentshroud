@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: "gateway/ingest_api/version_routes.py"
 type: "code"
-community: "GitGuard"
-location: "L439"
+community: "upgrade"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/upgrade
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_findings_summary()]] - `references` [EXTRACTED]
+- [[downgrade_version()]] - `references` [EXTRACTED]
+- [[get_current_version()]] - `references` [EXTRACTED]
+- [[get_version_history()_1]] - `references` [EXTRACTED]
+- [[review_version()]] - `references` [EXTRACTED]
+- [[rollback_version()]] - `references` [EXTRACTED]
+- [[upgrade_version()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GitGuard
+#graphify/code #graphify/EXTRACTED #community/upgrade

@@ -20,6 +20,6 @@ tags:
 - [[Script Permissions]] - `contains` [EXTRACTED]
 - [[Troubleshooting_27]] - `contains` [EXTRACTED]
 - [[scan.sh]] - `contains` [EXTRACTED]
-- [[verify-security.sh_1]] - `contains` [EXTRACTED]
+- [[verify-security.sh]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Kill_Switch

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "CollaboratorActivityTracker"
+community: "test_telegram_proxy_outbound.py"
 location: "L4527"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CollaboratorActivityTracker
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # B1: one-shot 400-retry for unbalanced HTML parse errors.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTelegram400Retry]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CollaboratorActivityTracker
+#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

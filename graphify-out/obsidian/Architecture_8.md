@@ -1,17 +1,17 @@
 ---
-source_file: "docs/integrations/voice-terminal-esp32-s3.md"
+source_file: "docs/planning/v0.8/container-security-audit-v0.8.0.md"
 type: "document"
-community: "Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)"
-location: "L13"
+community: "Findings & Mitigations"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On
+  - community/Findings__Mitigations
 ---
 
 # Architecture
 
 ## Connections
-- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
+- [[Container Security Audit — AgentShroud v0.8.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On
+#graphify/document #graphify/EXTRACTED #community/Findings__Mitigations

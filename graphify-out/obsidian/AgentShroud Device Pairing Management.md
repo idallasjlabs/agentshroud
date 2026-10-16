@@ -20,13 +20,13 @@ tags:
 - [[How Device Pairing Works]] - `contains` [EXTRACTED]
 - [[Integration with AgentShroud Workflow]] - `contains` [EXTRACTED]
 - [[Listing Paired Devices]] - `contains` [EXTRACTED]
-- [[Overview_6]] - `contains` [EXTRACTED]
+- [[Overview_2]] - `contains` [EXTRACTED]
 - [[Quick Reference Commands]] - `contains` [EXTRACTED]
 - [[Rejecting Pairing Requests]] - `contains` [EXTRACTED]
 - [[Revoking Device Access]] - `contains` [EXTRACTED]
 - [[Security Best Practices]] - `contains` [EXTRACTED]
 - [[Security Notes]] - `contains` [EXTRACTED]
-- [[Troubleshooting_12]] - `contains` [EXTRACTED]
+- [[Troubleshooting_11]] - `contains` [EXTRACTED]
 - [[Why Device Pairing Matters]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

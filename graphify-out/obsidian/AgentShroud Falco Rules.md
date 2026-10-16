@@ -1,11 +1,11 @@
 ---
 source_file: "docker/falco/rules.yaml"
 type: "document"
-community: "AgentShroud Falco Rules"
+community: "start-agentshroud.sh"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Falco_Rules
+  - community/start-agentshroudsh
 ---
 
 # AgentShroud Falco Rules
@@ -19,4 +19,4 @@ tags:
 - [[Rule Privilege Escalation Attempt]] - `conceptually_related_to` [EXTRACTED]
 - [[Rule Secret File Access]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Falco_Rules
+#graphify/document #graphify/EXTRACTED #community/start-agentshroudsh

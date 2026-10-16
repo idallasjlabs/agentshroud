@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
 type: "concept"
-community: "ADR-001: Transparent Proxy Decision"
+community: "AgentShroud Deployment Architecture"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ADR-001_Transparent_Proxy_Decision
+  - community/AgentShroud_Deployment_Architecture
 ---
 
 # Agent Modification Approach (rejected alternative)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ADR-001 Transparent Proxy Decision]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_Decision
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture

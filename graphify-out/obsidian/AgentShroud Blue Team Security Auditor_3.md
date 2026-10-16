@@ -16,7 +16,7 @@ tags:
 - [[Critical Rules_11]] - `contains` [EXTRACTED]
 - [[Infrastructure_8]] - `contains` [EXTRACTED]
 - [[Methodology_3]] - `contains` [EXTRACTED]
-- [[Output Format_26]] - `contains` [EXTRACTED]
+- [[Output Format_27]] - `contains` [EXTRACTED]
 - [[agentshroud-blueteamSKILL]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

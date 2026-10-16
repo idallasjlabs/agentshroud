@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # AnomalyAlert
@@ -15,4 +15,4 @@ tags:
 - [[dot-check_anomalies()]] - `references` [EXTRACTED]
 - [[egress_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

@@ -1,27 +1,29 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "migrate-cve-registry-ghsa.py"
-location: "L122"
+community: "KeyRotationManager"
+location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/migrate-cve-registry-ghsapy
+  - community/KeyRotationManager
 ---
 
 # Any
 
 ## Connections
-- [[_advisory_patched_versions()]] - `references` [EXTRACTED]
-- [[_advisory_text_tokens()]] - `references` [EXTRACTED]
-- [[build_id_plan()]] - `references` [EXTRACTED]
-- [[compute_stats()]] - `references` [EXTRACTED]
-- [[fetch_advisories()]] - `references` [EXTRACTED]
-- [[gather_advisories()]] - `references` [EXTRACTED]
-- [[load_registry()_1]] - `references` [EXTRACTED]
-- [[load_snapshot()]] - `references` [EXTRACTED]
-- [[match_entry()]] - `references` [EXTRACTED]
-- [[render_manual_review()]] - `references` [EXTRACTED]
-- [[rewrite_registry_text()_1]] - `references` [EXTRACTED]
+- [[dot-_generate_new_credential()]] - `references` [EXTRACTED]
+- [[dot-_validate_credential()]] - `references` [EXTRACTED]
+- [[dot-check_and_rotate_due_credentials()]] - `references` [EXTRACTED]
+- [[dot-cleanup_retired_credentials()]] - `references` [EXTRACTED]
+- [[dot-emergency_rotate_credential()]] - `references` [EXTRACTED]
+- [[dot-get_all_credentials_status()]] - `references` [EXTRACTED]
+- [[dot-get_credential_status()]] - `references` [EXTRACTED]
+- [[dot-get_health_score()]] - `references` [EXTRACTED]
+- [[dot-register_credential()]] - `references` [EXTRACTED]
+- [[dot-rotate_credential()]] - `references` [EXTRACTED]
+- [[dot-validate()_2]] - `references` [EXTRACTED]
+- [[CredentialRotationPolicy]] - `uses` [INFERRED]
+- [[KeyRotationConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

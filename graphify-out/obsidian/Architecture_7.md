@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/SECURITY_PLAN.md"
+source_file: "docs/claude-security-audit-prompt.md"
 type: "document"
-community: "AgentShroud Security Hardening Plan"
-location: "L356"
+community: "AgentShroud v0.8.0 — Full Security & Functionality Audit"
+location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Hardening_Plan
+  - community/AgentShroud_v080__Full_Security__Functionality_Audit
 ---
 
 # Architecture
 
 ## Connections
-- [[Current State (2026-02-24)]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Hardening_Plan
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080__Full_Security__Functionality_Audit

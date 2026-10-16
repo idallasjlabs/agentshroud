@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/log_sanitizer.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L157"
+community: "MiddlewareManager"
+location: "L379"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/MiddlewareManager
 ---
 
 # Any
 
 ## Connections
-- [[get_sanitizer_stats()]] - `references` [EXTRACTED]
+- [[dot-get_lifecycle_status()]] - `references` [EXTRACTED]
+- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

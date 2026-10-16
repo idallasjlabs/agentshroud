@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup-slack.md"
+source_file: "docs/planning/v0.8/SECURITY_PLAN.md"
 type: "document"
-community: "Slack Channel Setup"
-location: "L3"
+community: "AgentShroud Security Hardening Plan"
+location: "L356"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Slack_Channel_Setup
+  - community/AgentShroud_Security_Hardening_Plan
 ---
 
 # Architecture
 
 ## Connections
-- [[Slack Channel Setup]] - `contains` [EXTRACTED]
+- [[Current State (2026-02-24)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Slack_Channel_Setup
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Hardening_Plan

@@ -17,7 +17,7 @@ tags:
 - [[Athena README]] - `references` [EXTRACTED]
 - [[Atlas — Curriculum Architect_6]] - `shares_data_with` [EXTRACTED]
 - [[Input Requirements_13]] - `contains` [EXTRACTED]
-- [[Output Format_27]] - `contains` [EXTRACTED]
+- [[Output Format_26]] - `contains` [EXTRACTED]
 - [[Persona_9]] - `contains` [EXTRACTED]
 - [[Role_72]] - `contains` [EXTRACTED]
 

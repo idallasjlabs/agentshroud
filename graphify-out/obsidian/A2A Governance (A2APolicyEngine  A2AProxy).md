@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AgentShroud Changelog]] - `references` [EXTRACTED]
-- [[Hermes Bot]] - `references` [EXTRACTED]
+- [[Hermes Bot_1]] - `references` [EXTRACTED]
 - [[TrustManager Progressive-Trust Ladder]] - `conceptually_related_to` [EXTRACTED]
 
 #graphify/concept #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide

@@ -1,18 +1,25 @@
 ---
-source_file: "scripts/soak_status.py"
+source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
 type: "code"
-community: "TestClassify"
-location: "L33"
+community: "model_usage.py"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestClassify
+  - community/model_usagepy
 ---
 
 # Any
 
 ## Connections
-- [[_is_benign_skip()]] - `references` [EXTRACTED]
-- [[classify()_2]] - `references` [EXTRACTED]
+- [[aggregate_costs()]] - `references` [EXTRACTED]
+- [[build_json_all()]] - `references` [EXTRACTED]
+- [[build_json_current()]] - `references` [EXTRACTED]
+- [[filter_by_days()]] - `references` [EXTRACTED]
+- [[latest_day_cost()]] - `references` [EXTRACTED]
+- [[load_payload()]] - `references` [EXTRACTED]
+- [[parse_daily_entries()]] - `references` [EXTRACTED]
+- [[pick_current_model()]] - `references` [EXTRACTED]
+- [[run_codexbar_cost()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestClassify
+#graphify/code #graphify/EXTRACTED #community/model_usagepy

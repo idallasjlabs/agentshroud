@@ -1,11 +1,11 @@
 ---
 source_file: "branding/icons/modules/approval-queue-256x256.png"
 type: "image"
-community: "test_mfa_guard.py"
+community: "AgentShroud macOS App Icon (1024x1024, Rounded Squircle)"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/test_mfa_guardpy
+  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle
 ---
 
 # Approval Queue Module Badge Icon
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - `conceptually_related_to` [INFERRED]
 - [[queue.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/test_mfa_guardpy
+#graphify/image #graphify/INFERRED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle

@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "lifespan.py"
-location: "L49"
+community: "ContainerEngine"
+location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/ContainerEngine
 ---
 
 # Any
 
 ## Connections
-- [[dot-from_dict()_4]] - `references` [EXTRACTED]
-- [[dot-get_integrity_status()]] - `references` [EXTRACTED]
-- [[dot-get_recent_alerts()]] - `references` [EXTRACTED]
-- [[dot-to_dict()_4]] - `references` [EXTRACTED]
-- [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
+- [[dot-inspect()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/ContainerEngine

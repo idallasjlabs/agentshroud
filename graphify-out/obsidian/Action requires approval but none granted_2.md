@@ -12,6 +12,6 @@ tags:
 # "Action requires approval but none granted"
 
 ## Connections
-- [[Troubleshooting_17]] - `contains` [EXTRACTED]
+- [[Troubleshooting_15]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

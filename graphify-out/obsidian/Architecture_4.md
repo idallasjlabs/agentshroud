@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Error Index.md"
-location: "L23"
+community: "Canvas Skill"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd
+  - community/Canvas_Skill
 ---
 
 # Architecture
 
 ## Connections
-- [[Presidio Analyzer]] - `contains` [EXTRACTED]
+- [[How It Works]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd
+#graphify/document #graphify/EXTRACTED #community/Canvas_Skill

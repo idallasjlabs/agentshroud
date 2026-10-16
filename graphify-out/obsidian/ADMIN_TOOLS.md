@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "Role"
+community: "RBACConfig"
 location: "87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Role
+  - community/RBACConfig
 ---
 
 # ADMIN_TOOLS
@@ -15,4 +15,4 @@ tags:
 - [[ToolACLEnforcer]] - `shares_data_with` [EXTRACTED]
 - [[test_tool_acl.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Role
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

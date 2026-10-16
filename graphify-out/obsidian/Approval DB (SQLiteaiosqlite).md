@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-02-c4-container.svg"
 type: "image"
-community: "ADR-008: Progressive Trust Level System"
+community: "AgentShroud (system, C4 context)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/ADR-008_Progressive_Trust_Level_System
+  - community/AgentShroud_system_C4_context
 ---
 
 # Approval DB (SQLite/aiosqlite)
@@ -14,4 +14,4 @@ tags:
 - [[ApprovalRequest (data entity)]] - `implements` [INFERRED]
 - [[Gateway Container (Python 3.11FastAPI 8080)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/ADR-008_Progressive_Trust_Level_System
+#graphify/image #graphify/EXTRACTED #community/AgentShroud_system_C4_context

@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/security/tool_chain_analyzer.py"
+source_file: "gateway/security/canary.py"
 type: "code"
-community: "ToolChainAnalyzer"
-location: "L183"
+community: "test_e2e_proxy.py"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolChainAnalyzer
+  - community/test_e2e_proxypy
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_89]] - `references` [EXTRACTED]
-- [[dot-analyze_tool_call()]] - `references` [EXTRACTED]
-- [[dot-get_global_stats()]] - `references` [EXTRACTED]
-- [[dot-get_session_stats()]] - `references` [EXTRACTED]
-- [[dot-sanitize_tool_params()]] - `references` [EXTRACTED]
-- [[dot-score_reversibility()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

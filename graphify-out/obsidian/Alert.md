@@ -12,7 +12,7 @@ tags:
 # Alert
 
 ## Connections
-- [[dot-push()_4]] - `calls` [EXTRACTED]
+- [[dot-push()_2]] - `calls` [EXTRACTED]
 - [[dashboard_endpoints.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy

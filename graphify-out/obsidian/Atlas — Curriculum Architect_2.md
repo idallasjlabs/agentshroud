@@ -12,9 +12,9 @@ tags:
 # Atlas — Curriculum Architect
 
 ## Connections
-- [[Purpose_85]] - `contains` [EXTRACTED]
-- [[Related Skills_66]] - `contains` [EXTRACTED]
-- [[Usage_77]] - `contains` [EXTRACTED]
+- [[Purpose_86]] - `contains` [EXTRACTED]
+- [[Related Skills_71]] - `contains` [EXTRACTED]
+- [[Usage_78]] - `contains` [EXTRACTED]
 - [[hermesskillsi-atlasREADME]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 

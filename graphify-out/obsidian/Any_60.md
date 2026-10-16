@@ -1,25 +1,22 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L141"
+community: "AlertDispatcher"
+location: "L58"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ApprovalQueueConfig
+  - graphify/EXTRACTED
+  - community/AlertDispatcher
 ---
 
 # Any
 
 ## Connections
-- [[dot-broadcast()_1]] - `references` [EXTRACTED]
-- [[dot-submit_tool_request()_3]] - `references` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_2]] - `uses` [INFERRED]
-- [[ApprovalRequest_5]] - `uses` [INFERRED]
-- [[ApprovalStore]] - `uses` [INFERRED]
-- [[MFAGuard_2]] - `uses` [INFERRED]
-- [[ToolRiskConfig]] - `uses` [INFERRED]
-- [[ToolRiskPolicy]] - `uses` [INFERRED]
+- [[dot-_format_alert_message()]] - `references` [EXTRACTED]
+- [[dot-_log_alert()]] - `references` [EXTRACTED]
+- [[dot-_send_notification()]] - `references` [EXTRACTED]
+- [[dot-dispatch()]] - `references` [EXTRACTED]
+- [[dot-get_digest()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_17]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

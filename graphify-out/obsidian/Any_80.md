@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/egress_retry.py"
+source_file: ""
 type: "code"
-community: "egress_retry.py"
-location: "L75"
+community: "ProxyAction"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_retrypy
+  - community/ProxyAction
 ---
 
 # Any
 
 ## Connections
-- [[retry_request()]] - `references` [EXTRACTED]
-- [[retry_request_sync()]] - `references` [EXTRACTED]
+- [[dot-_audit()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_1]] - `references` [EXTRACTED]
+- [[dot-to_dict()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_retrypy
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

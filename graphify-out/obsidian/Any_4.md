@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/report_store.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "ReportStore"
-location: "L182"
+community: "TestAggregateResults"
+location: "L516"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/TestAggregateResults
 ---
 
 # Any
 
 ## Connections
-- [[dot-get()]] - `references` [EXTRACTED]
-- [[dot-list()]] - `references` [EXTRACTED]
+- [[_stub_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ReportStore
+#graphify/code #graphify/EXTRACTED #community/TestAggregateResults

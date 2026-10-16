@@ -1,5 +1,5 @@
 ---
-source_file: "reports/upgrade-2026-08-30-20260830-2010.md"
+source_file: "reports/upgrade-2026-08-30.md"
 type: "document"
 community: "AgentShroud Weekly Upgrade Report — 2026-08-30"
 location: "L1"

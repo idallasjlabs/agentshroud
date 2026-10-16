@@ -12,6 +12,6 @@ tags:
 # "Access Denied"
 
 ## Connections
-- [[Troubleshooting_7]] - `contains` [EXTRACTED]
+- [[Troubleshooting_5]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

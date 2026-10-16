@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "ingest_api/models.py"
-location: "L347"
+community: "ResourceGuard"
+location: "L62"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ingest_api/modelspy
+  - community/ResourceGuard
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_stats()_6]] - `references` [EXTRACTED]
-- [[LedgerConfig_1]] - `uses` [INFERRED]
-- [[LedgerEntry]] - `uses` [INFERRED]
-- [[LedgerQueryResponse]] - `uses` [INFERRED]
+- [[dot-_build_bridge()]] - `references` [EXTRACTED]
+- [[ResourceGuard]] - `uses` [INFERRED]
+- [[ResourceLimits]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/ingest_api/modelspy
+#graphify/code #graphify/INFERRED #community/ResourceGuard

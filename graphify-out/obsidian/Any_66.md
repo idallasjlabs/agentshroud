@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: ""
 type: "code"
-community: "FalcoAlertWatcher"
-location: "L67"
+community: "discover_upstream_versions.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/discover_upstream_versionspy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_handle_critical()]] - `references` [EXTRACTED]
-- [[categorize_alerts()]] - `references` [EXTRACTED]
-- [[generate_summary()_2]] - `references` [EXTRACTED]
-- [[parse_alert()_1]] - `references` [EXTRACTED]
-- [[read_alerts()_1]] - `references` [EXTRACTED]
+- [[_digest_for_tag()]] - `references` [EXTRACTED]
+- [[_retry()]] - `references` [EXTRACTED]
+- [[discover()]] - `references` [EXTRACTED]
+- [[fetch_dockerhub_tags()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy

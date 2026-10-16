@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/mcp_config.py"
+source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "PermissionLevel"
-location: "L98"
+community: "AlertDispatcher"
+location: "L289"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PermissionLevel
+  - community/AlertDispatcher
 ---
 
 # Any
 
 ## Connections
-- [[dot-from_dict()_1]] - `references` [EXTRACTED]
+- [[dot-get_leakage_summary()]] - `references` [EXTRACTED]
+- [[dot-monitor_environment_access()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PermissionLevel
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

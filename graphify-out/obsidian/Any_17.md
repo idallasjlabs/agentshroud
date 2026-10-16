@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/tests/test_resource_guard_wiring.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "ResourceGuard"
-location: "L62"
+community: "A2APolicyConfig"
+location: "L210"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ResourceGuard
+  - graphify/EXTRACTED
+  - community/A2APolicyConfig
 ---
 
 # Any
 
 ## Connections
-- [[dot-_build_bridge()]] - `references` [EXTRACTED]
-- [[ResourceGuard]] - `uses` [INFERRED]
-- [[ResourceLimits]] - `uses` [INFERRED]
+- [[dot-from_dict()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig

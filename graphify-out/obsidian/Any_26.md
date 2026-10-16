@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "test_security_toolchain.py"
-location: "L66"
+community: "AlertTelegramRelay"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/AlertTelegramRelay
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary()]] - `references` [EXTRACTED]
-- [[get_fim_events()]] - `references` [EXTRACTED]
-- [[get_rootkit_events()]] - `references` [EXTRACTED]
-- [[parse_alert()]] - `references` [EXTRACTED]
-- [[read_alerts()]] - `references` [EXTRACTED]
+- [[dot-__call__()_4]] - `references` [EXTRACTED]
+- [[dot-__init__()_81]] - `references` [EXTRACTED]
+- [[dot-_clean_tool()]] - `references` [EXTRACTED]
+- [[dot-_coerce()]] - `references` [EXTRACTED]
+- [[dot-_handle()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/session_security.py"
+source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: "SessionError"
-location: "L127"
+community: "GroupApprovalRouter"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionError
+  - community/GroupApprovalRouter
 ---
 
 # Any
 
 ## Connections
-- [[dot-validate_event()]] - `references` [EXTRACTED]
+- [[dot-__init__()_197]] - `references` [EXTRACTED]
+- [[dot-_default_send()]] - `references` [EXTRACTED]
+- [[ApprovalRequest_4]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionError
+#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter

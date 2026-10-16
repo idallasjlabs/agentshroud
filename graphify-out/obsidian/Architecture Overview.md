@@ -12,7 +12,7 @@ tags:
 # Architecture Overview.md
 
 ## Connections
-- [[Architecture Overview_1]] - `contains` [EXTRACTED]
+- [[Architecture Overview_3]] - `contains` [EXTRACTED]
 - [[Data Flow]] - `references` [EXTRACTED]
 - [[Home]] - `references` [EXTRACTED]
 - [[Startup Sequence]] - `references` [EXTRACTED]

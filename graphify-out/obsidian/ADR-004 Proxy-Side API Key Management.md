@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md"
 type: "concept"
-community: "ADR-001: Transparent Proxy Decision"
+community: "AgentShroud Deployment Architecture"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/ADR-001_Transparent_Proxy_Decision
+  - community/AgentShroud_Deployment_Architecture
 ---
 
 # ADR-004: Proxy-Side API Key Management
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Gateway (FastAPI)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/ADR-001_Transparent_Proxy_Decision
+#graphify/concept #graphify/INFERRED #community/AgentShroud_Deployment_Architecture

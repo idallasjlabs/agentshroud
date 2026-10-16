@@ -1,24 +1,22 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/tools/agentshroud_manager.py"
 type: "code"
-community: "A2AProxyResult"
-location: "L148"
+community: "upgrade"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AProxyResult
+  - community/upgrade
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_161]] - `references` [EXTRACTED]
-- [[dot-extract_text_for_pii_scan()]] - `references` [EXTRACTED]
-- [[dot-parse_jsonrpc_request()]] - `references` [EXTRACTED]
-- [[dot-process_inbound_request()]] - `references` [EXTRACTED]
-- [[A2AMethod]] - `uses` [INFERRED]
-- [[A2APolicyEngine_1]] - `uses` [INFERRED]
-- [[ViolationType]] - `uses` [INFERRED]
-- [[_redact_message_text()]] - `references` [EXTRACTED]
+- [[check_current_version()]] - `references` [EXTRACTED]
+- [[downgrade()]] - `references` [EXTRACTED]
+- [[list_versions()]] - `references` [EXTRACTED]
+- [[rollback()]] - `references` [EXTRACTED]
+- [[security_review()]] - `references` [EXTRACTED]
+- [[upgrade()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AProxyResult
+#graphify/code #graphify/EXTRACTED #community/upgrade

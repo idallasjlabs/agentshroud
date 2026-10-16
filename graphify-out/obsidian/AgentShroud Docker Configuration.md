@@ -12,7 +12,7 @@ tags:
 # AgentShroud Docker Configuration
 
 ## Connections
-- [[Architecture_3]] - `contains` [EXTRACTED]
+- [[Architecture_2]] - `contains` [EXTRACTED]
 - [[Container Runtime Support (SCRUM-92)]] - `contains` [EXTRACTED]
 - [[Cron Failure Alerting (SCRUM-61)]] - `contains` [EXTRACTED]
 - [[Development_1]] - `contains` [EXTRACTED]
@@ -27,7 +27,7 @@ tags:
 - [[SOC Per-Module Enforcement Heat-Map (SCRUM-80)]] - `contains` [EXTRACTED]
 - [[Security Features (Deferred to Phase 5+)]] - `contains` [EXTRACTED]
 - [[Startup Warnings Reference]] - `contains` [EXTRACTED]
-- [[Troubleshooting_10]] - `contains` [EXTRACTED]
+- [[Troubleshooting_9]] - `contains` [EXTRACTED]
 - [[Usage_55]] - `contains` [EXTRACTED]
 - [[dockerREADME]] - `contains` [EXTRACTED]
 

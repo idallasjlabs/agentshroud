@@ -1,16 +1,18 @@
 ---
-source_file: ""
+source_file: "gateway/security/report_store.py"
 type: "code"
-community: "._filter_streaming_event"
+community: "ReportStore"
+location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_filter_streaming_event
+  - community/ReportStore
 ---
 
 # Any
 
 ## Connections
-- [[dot-_filter_streaming_event()]] - `references` [EXTRACTED]
+- [[dot-get()]] - `references` [EXTRACTED]
+- [[dot-list()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_filter_streaming_event
+#graphify/code #graphify/EXTRACTED #community/ReportStore

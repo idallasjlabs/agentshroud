@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/runtime/podman_engine.py"
+source_file: "gateway/security/killswitch_config.py"
 type: "code"
-community: "PodmanEngine"
-location: "L159"
+community: "KillSwitchMonitor"
+location: "L100"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/PodmanEngine
+  - graphify/EXTRACTED
+  - community/KillSwitchMonitor
 ---
 
 # Any
 
 ## Connections
-- [[dot-inspect()_1]] - `references` [EXTRACTED]
-- [[ContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo]] - `uses` [INFERRED]
+- [[dot-to_dict()_6]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PodmanEngine
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

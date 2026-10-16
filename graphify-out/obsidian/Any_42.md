@@ -1,71 +1,37 @@
 ---
-source_file: "gateway/ingest_api/middleware.py"
+source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L496"
+community: "KillSwitchMonitor"
+location: "L37"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/MiddlewareManager
+  - graphify/EXTRACTED
+  - community/KillSwitchMonitor
 ---
 
 # Any
 
 ## Connections
-- [[dot-_analyze_request_for_rbac()]] - `references` [EXTRACTED]
-- [[dot-_check_cross_session_access()]] - `references` [EXTRACTED]
-- [[dot-_check_rbac_permissions()]] - `references` [EXTRACTED]
-- [[dot-_enforce_session_isolation()]] - `references` [EXTRACTED]
-- [[dot-_extract_user_id()_1]] - `references` [EXTRACTED]
-- [[dot-_is_tool_call_request()]] - `references` [EXTRACTED]
-- [[dot-process_request()]] - `references` [EXTRACTED]
-- [[dot-process_tool_result()]] - `references` [EXTRACTED]
-- [[Action_2]] - `uses` [INFERRED]
-- [[AgentRegistry]] - `uses` [INFERRED]
-- [[AlertDispatcher]] - `uses` [INFERRED]
-- [[ApprovalHardening]] - `uses` [INFERRED]
-- [[ApprovalHardeningConfig]] - `uses` [INFERRED]
-- [[BrowserSecurityGuard]] - `uses` [INFERRED]
-- [[ConsentFramework]] - `uses` [INFERRED]
-- [[ContextGuard]] - `uses` [INFERRED]
-- [[DNSFilter]] - `uses` [INFERRED]
-- [[DNSFilterConfig]] - `uses` [INFERRED]
-- [[DriftDetector]] - `uses` [INFERRED]
-- [[EgressMonitor]] - `uses` [INFERRED]
-- [[EgressMonitorConfig]] - `uses` [INFERRED]
-- [[EnvironmentGuard]] - `uses` [INFERRED]
-- [[FileSandbox]] - `uses` [INFERRED]
-- [[FileSandboxConfig]] - `uses` [INFERRED]
-- [[GitGuard]] - `uses` [INFERRED]
-- [[KeyRotationManager]] - `uses` [INFERRED]
-- [[KillSwitchMonitor]] - `uses` [INFERRED]
-- [[LogSanitizer]] - `uses` [INFERRED]
-- [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
-- [[MemoryLifecycleManager]] - `uses` [INFERRED]
-- [[MemorySecurityConfig]] - `uses` [INFERRED]
-- [[MetadataGuard]] - `uses` [INFERRED]
-- [[MultiTurnTracker]] - `uses` [INFERRED]
-- [[NetworkValidator]] - `uses` [INFERRED]
-- [[OAuthSecurityValidator]] - `uses` [INFERRED]
-- [[OutputCanary]] - `uses` [INFERRED]
-- [[PIIConfig_2]] - `uses` [INFERRED]
-- [[PathIsolationConfig]] - `uses` [INFERRED]
-- [[PathIsolationManager]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[RBACManager_2]] - `uses` [INFERRED]
-- [[Resource_2]] - `uses` [INFERRED]
-- [[ResourceGuard]] - `uses` [INFERRED]
-- [[SessionManager]] - `uses` [INFERRED]
-- [[SubagentMonitor]] - `uses` [INFERRED]
-- [[SubagentMonitorConfig]] - `uses` [INFERRED]
-- [[ToolChainAnalyzer]] - `uses` [INFERRED]
-- [[ToolResultInjectionScanner]] - `uses` [INFERRED]
-- [[ToolResultPIIConfig]] - `uses` [INFERRED]
-- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
-- [[ToolResultSanitizer]] - `uses` [INFERRED]
-- [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
-- [[ToolTier_1]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
-- [[XMLLeakFilter]] - `uses` [INFERRED]
+- [[dot-__init__()_112]] - `references` [EXTRACTED]
+- [[dot-_check_request_rate()]] - `references` [EXTRACTED]
+- [[dot-_check_system_resources()_1]] - `references` [EXTRACTED]
+- [[dot-_check_token_usage()]] - `references` [EXTRACTED]
+- [[dot-_check_tool_call_rate()]] - `references` [EXTRACTED]
+- [[dot-_get_system_stats()]] - `references` [EXTRACTED]
+- [[dot-_log_heartbeat_result()]] - `references` [EXTRACTED]
+- [[dot-_log_verification_result()]] - `references` [EXTRACTED]
+- [[dot-_send_anomaly_alert()]] - `references` [EXTRACTED]
+- [[dot-_send_heartbeat_alert()]] - `references` [EXTRACTED]
+- [[dot-_send_verification_alert()]] - `references` [EXTRACTED]
+- [[dot-_test_docker_available()]] - `references` [EXTRACTED]
+- [[dot-_test_killswitch_mode()]] - `references` [EXTRACTED]
+- [[dot-_test_script_exists()]] - `references` [EXTRACTED]
+- [[dot-_test_script_permissions()]] - `references` [EXTRACTED]
+- [[dot-_test_script_syntax()]] - `references` [EXTRACTED]
+- [[dot-anomaly_detection()]] - `references` [EXTRACTED]
+- [[dot-get_status()_1]] - `references` [EXTRACTED]
+- [[dot-heartbeat_check()]] - `references` [EXTRACTED]
+- [[dot-verify_killswitch()]] - `references` [EXTRACTED]
+- [[KillSwitchConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

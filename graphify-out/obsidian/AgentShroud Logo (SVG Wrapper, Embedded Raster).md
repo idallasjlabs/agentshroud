@@ -1,11 +1,11 @@
 ---
 source_file: "branding/logos/svg/logo.svg"
 type: "image"
-community: "AgentShroud Primary Logo Lockup"
+community: "AgentShroud macOS App Icon (1024x1024, Rounded Squircle)"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/AgentShroud_Primary_Logo_Lockup
+  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle
 ---
 
 # AgentShroud Logo (SVG Wrapper, Embedded Raster)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Primary Logo Lockup]] - `references` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/AgentShroud_Primary_Logo_Lockup
+#graphify/image #graphify/INFERRED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle

@@ -16,7 +16,7 @@ tags:
 - [[Agent Containment]] - `contains` [EXTRACTED]
 - [[AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]] - `contains` [EXTRACTED]
 - [[AgentShroud™ README]] - `contains` [EXTRACTED]
-- [[Architecture_2]] - `shares_data_with` [EXTRACTED]
+- [[Architecture_1]] - `shares_data_with` [EXTRACTED]
 - [[Content & Context Guards]] - `contains` [EXTRACTED]
 - [[Core Security Pipeline]] - `contains` [EXTRACTED]
 - [[Infrastructure & Monitoring]] - `contains` [EXTRACTED]

@@ -16,7 +16,7 @@ tags:
 - [[STPA-Sec Methodology]] - `references` [EXTRACTED]
 - [[Steve Hay Adversary Model]] - `references` [EXTRACTED]
 - [[docsreviewsred-team-report-v0.7.0]] - `references` [EXTRACTED]
-- [[gatewayingest_apimain.py (hermes-dashboard HTTP + WebSocket reverse proxy)]] - `references` [EXTRACTED]
+- [[ingest_apimain.py]] - `references` [EXTRACTED]
 - [[test_redteam_probes.py]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

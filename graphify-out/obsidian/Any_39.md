@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/security/killswitch_config.py"
+source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L100"
+community: "parse_clamscan_output"
+location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/parse_clamscan_output
 ---
 
 # Any
 
 ## Connections
-- [[dot-to_dict()_10]] - `references` [EXTRACTED]
+- [[generate_summary()_1]] - `references` [EXTRACTED]
+- [[parse_clamscan_output()]] - `references` [EXTRACTED]
+- [[run_clamscan()]] - `references` [EXTRACTED]
+- [[save_report()_1]] - `references` [EXTRACTED]
+- [[scan_bytes()]] - `references` [EXTRACTED]
+- [[update_virus_db()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

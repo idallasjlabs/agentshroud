@@ -1,19 +1,25 @@
 ---
-source_file: ""
+source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "discover_upstream_versions.py"
+community: "WebhookReceiver"
+location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/discover_upstream_versionspy
+  - community/WebhookReceiver
 ---
 
 # Any
 
 ## Connections
-- [[_digest_for_tag()]] - `references` [EXTRACTED]
-- [[_retry()]] - `references` [EXTRACTED]
-- [[discover()]] - `references` [EXTRACTED]
-- [[fetch_dockerhub_tags()]] - `references` [EXTRACTED]
+- [[dot-_extract_message()]] - `references` [EXTRACTED]
+- [[dot-_extract_user_id()_1]] - `references` [EXTRACTED]
+- [[dot-_extract_username()]] - `references` [EXTRACTED]
+- [[dot-_prepare_session_payload()]] - `references` [EXTRACTED]
+- [[dot-_replace_message()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_5]] - `references` [EXTRACTED]
+- [[dot-process_webhook()]] - `references` [EXTRACTED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[UserSessionManager]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy
+#graphify/code #graphify/EXTRACTED #community/WebhookReceiver

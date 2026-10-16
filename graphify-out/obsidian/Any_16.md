@@ -1,20 +1,25 @@
 ---
-source_file: "gateway/security/resource_guard.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "ResourceGuard"
-location: "L102"
+community: "soc/router.py"
+location: "L58"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ResourceGuard
+  - graphify/INFERRED
+  - community/soc/routerpy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_alert_high_usage()]] - `references` [EXTRACTED]
-- [[dot-_get_disk_io_stats()]] - `references` [EXTRACTED]
-- [[dot-add_alert_callback()]] - `references` [EXTRACTED]
-- [[dot-get_usage_stats()]] - `references` [EXTRACTED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult_1]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller_1]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLInterface_1]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[_log_audit()]] - `references` [EXTRACTED]
+- [[auth_ws_token()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/INFERRED #community/soc/routerpy

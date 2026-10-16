@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "TestAggregateResults"
-location: "L516"
+community: "FalcoAlertWatcher"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAggregateResults
+  - community/FalcoAlertWatcher
 ---
 
 # Any
 
 ## Connections
-- [[_stub_summary()]] - `references` [EXTRACTED]
+- [[dot-_handle_critical()]] - `references` [EXTRACTED]
+- [[categorize_alerts()]] - `references` [EXTRACTED]
+- [[generate_summary()]] - `references` [EXTRACTED]
+- [[parse_alert()]] - `references` [EXTRACTED]
+- [[read_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAggregateResults
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

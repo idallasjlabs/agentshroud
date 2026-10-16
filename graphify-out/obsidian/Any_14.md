@@ -1,25 +1,19 @@
 ---
-source_file: "gateway/proxy/webhook_receiver.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "WebhookReceiver"
-location: "L121"
+community: "AuditChain"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - community/AuditChain
 ---
 
 # Any
 
 ## Connections
-- [[dot-_extract_message()]] - `references` [EXTRACTED]
-- [[dot-_extract_user_id()]] - `references` [EXTRACTED]
-- [[dot-_extract_username()]] - `references` [EXTRACTED]
-- [[dot-_prepare_session_payload()]] - `references` [EXTRACTED]
-- [[dot-_replace_message()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_5]] - `references` [EXTRACTED]
-- [[dot-process_webhook()]] - `references` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
+- [[dot-__init__()_49]] - `references` [EXTRACTED]
+- [[dot-_compile_patterns()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/code #graphify/EXTRACTED #community/AuditChain

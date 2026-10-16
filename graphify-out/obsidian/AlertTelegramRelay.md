@@ -12,15 +12,15 @@ tags:
 # AlertTelegramRelay
 
 ## Connections
-- [[dot-__call__()_6]] - `method` [EXTRACTED]
-- [[dot-__init__()_79]] - `method` [EXTRACTED]
+- [[dot-__call__()_4]] - `method` [EXTRACTED]
+- [[dot-__init__()_81]] - `method` [EXTRACTED]
 - [[dot-_clean_tool()]] - `method` [EXTRACTED]
 - [[dot-_coerce()]] - `method` [EXTRACTED]
 - [[dot-_dedup_key()]] - `method` [EXTRACTED]
 - [[dot-_handle()]] - `method` [EXTRACTED]
 - [[dot-_spawn_send()]] - `method` [EXTRACTED]
 - [[dot-flush()]] - `method` [EXTRACTED]
-- [[FastAPI_1]] - `uses` [INFERRED]
+- [[FastAPI]] - `uses` [INFERRED]
 - [[LogRecord_2]] - `uses` [INFERRED]
 - [[Subscribe to the gateway EventBus; relay security alerts to Telegram.]] - `rationale_for` [EXTRACTED]
 - [[_DropInvalidHTTPRequestFilter]] - `uses` [INFERRED]

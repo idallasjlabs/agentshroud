@@ -12,7 +12,7 @@ tags:
 # AgentShroud v0.8.0 — Full Security & Functionality Audit
 
 ## Connections
-- [[Architecture_9]] - `contains` [EXTRACTED]
+- [[Architecture_7]] - `contains` [EXTRACTED]
 - [[Context for Claude]] - `contains` [EXTRACTED]
 - [[Key Files to Review]] - `contains` [EXTRACTED]
 - [[Known Findings (Blue Team Assessment + Steve Hay's Review)]] - `contains` [EXTRACTED]

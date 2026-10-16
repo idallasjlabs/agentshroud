@@ -9069,10 +9069,10 @@
     "semantic_hash": "6c8414270b956cb8e017a338accbfe90"
   },
   "/Users/agentshroud-bot/Development/agentshroud/docker/bots/hermes/init-config.sh": {
-    "mtime": 1790021470.3296742,
-    "seen": 1792161677.1770911,
-    "ast_hash": "911a373efa1b041ee711836153dcdf77",
-    "semantic_hash": "911a373efa1b041ee711836153dcdf77"
+    "mtime": 1792166842.0545464,
+    "seen": 1792176952.978654,
+    "ast_hash": "37adf4efca9aa920ae4aec34e385cd00",
+    "semantic_hash": "37adf4efca9aa920ae4aec34e385cd00"
   },
   "/Users/agentshroud-bot/Development/agentshroud/docker/bots/hermes/patch_edge_tts_proxy.py": {
     "mtime": 1791973841.5404918,
@@ -9117,16 +9117,16 @@
     "semantic_hash": "e6ea8fe1bde88213743b1c99ecea982b"
   },
   "/Users/agentshroud-bot/Development/agentshroud/docker/bots/hermes/run-standalone.sh": {
-    "mtime": 1792149428.146194,
-    "seen": 1792161677.1770968,
-    "ast_hash": "44852768c09dba85fb6380b915cf8c8a",
-    "semantic_hash": "44852768c09dba85fb6380b915cf8c8a"
+    "mtime": 1792176209.6956096,
+    "seen": 1792176952.978661,
+    "ast_hash": "12f7d000c3b3c717df32462bee63ab2c",
+    "semantic_hash": "12f7d000c3b3c717df32462bee63ab2c"
   },
   "/Users/agentshroud-bot/Development/agentshroud/docker/bots/hermes/start.sh": {
-    "mtime": 1789315904.1760676,
-    "seen": 1792161677.177098,
-    "ast_hash": "15a9ec2eeb70a50c75433810cac1c2a8",
-    "semantic_hash": "15a9ec2eeb70a50c75433810cac1c2a8"
+    "mtime": 1792176014.155944,
+    "seen": 1792176952.978661,
+    "ast_hash": "2c125eef677f53899b523aaba657b567",
+    "semantic_hash": "2c125eef677f53899b523aaba657b567"
   },
   "/Users/agentshroud-bot/Development/agentshroud/docker/bots/openclaw/config/cron/jobs.json": {
     "mtime": 1789367697.9029758,
@@ -9507,10 +9507,10 @@
     "semantic_hash": "81b9b720979447899a6e4e2f81fb63b0"
   },
   "/Users/agentshroud-bot/Development/agentshroud/docker/setup-secrets.sh": {
-    "mtime": 1789766728.6985357,
-    "seen": 1792161677.177139,
-    "ast_hash": "4f2e120b105dc552205d2a0114103e08",
-    "semantic_hash": "4f2e120b105dc552205d2a0114103e08"
+    "mtime": 1792176751.1811092,
+    "seen": 1792176952.9787169,
+    "ast_hash": "0f1508b0e5b4bc85516d3aa0bdf18a5a",
+    "semantic_hash": "0f1508b0e5b4bc85516d3aa0bdf18a5a"
   },
   "/Users/agentshroud-bot/Development/agentshroud/docker/tests/test-get-credential.sh": {
     "mtime": 1771447016.9925354,
@@ -9855,10 +9855,10 @@
     "semantic_hash": "e5946b16ef9d3d341278e92609814d9f"
   },
   "/Users/agentshroud-bot/Development/agentshroud/gateway/ingest_api/main.py": {
-    "mtime": 1791973841.5411766,
-    "seen": 1792161677.1771781,
-    "ast_hash": "61959c915462a34a980985cd616aade5",
-    "semantic_hash": "61959c915462a34a980985cd616aade5"
+    "mtime": 1792175309.910474,
+    "seen": 1792176952.9787679,
+    "ast_hash": "2006f6a484a38f2b8c565884a8fbb502",
+    "semantic_hash": "2006f6a484a38f2b8c565884a8fbb502"
   },
   "/Users/agentshroud-bot/Development/agentshroud/gateway/ingest_api/middleware.py": {
     "mtime": 1785935493.0152671,
@@ -10011,10 +10011,10 @@
     "semantic_hash": "b23118b76107331e4e058135ff37adff"
   },
   "/Users/agentshroud-bot/Development/agentshroud/gateway/proxy/llm_proxy.py": {
-    "mtime": 1792149456.350702,
-    "seen": 1792161677.177193,
-    "ast_hash": "7e7ca782d7b1be34aeeccbd2b3b5d188",
-    "semantic_hash": "7e7ca782d7b1be34aeeccbd2b3b5d188"
+    "mtime": 1792175309.9113665,
+    "seen": 1792176952.9787898,
+    "ast_hash": "5f9246d7d62091f1beb46a37a8df8037",
+    "semantic_hash": "5f9246d7d62091f1beb46a37a8df8037"
   },
   "/Users/agentshroud-bot/Development/agentshroud/gateway/proxy/llm_quota_detector.py": {
     "mtime": 1784041562.705022,
@@ -11607,10 +11607,10 @@
     "semantic_hash": "1138f698723af3622c5d645af662d1e5"
   },
   "/Users/agentshroud-bot/Development/agentshroud/gateway/tests/test_llm_proxy.py": {
-    "mtime": 1789763160.70342,
-    "seen": 1792161677.177355,
-    "ast_hash": "e012b53a7935a5d5131d65f371cc649b",
-    "semantic_hash": "e012b53a7935a5d5131d65f371cc649b"
+    "mtime": 1792175309.912036,
+    "seen": 1792176952.979006,
+    "ast_hash": "b8eb6d98f62501ef4e4f7aceabe077cf",
+    "semantic_hash": "b8eb6d98f62501ef4e4f7aceabe077cf"
   },
   "/Users/agentshroud-bot/Development/agentshroud/gateway/tests/test_llm_proxy_failover.py": {
     "mtime": 1786708660.6084046,
@@ -11619,10 +11619,10 @@
     "semantic_hash": "83262e3f0c0c65d02bc4c8cdc626628f"
   },
   "/Users/agentshroud-bot/Development/agentshroud/gateway/tests/test_llm_proxy_local_parity.py": {
-    "mtime": 1787526557.1126928,
-    "seen": 1792161677.177356,
-    "ast_hash": "32d8240210c2471b88198388b7977045",
-    "semantic_hash": "32d8240210c2471b88198388b7977045"
+    "mtime": 1792175309.9124846,
+    "seen": 1792176952.979008,
+    "ast_hash": "20efddf96a2ce62ced858cef8cd006ff",
+    "semantic_hash": "20efddf96a2ce62ced858cef8cd006ff"
   },
   "/Users/agentshroud-bot/Development/agentshroud/gateway/tests/test_llm_proxy_thinking_suppression.py": {
     "mtime": 1792149456.3510787,
@@ -11643,10 +11643,10 @@
     "semantic_hash": "e65fd01cb93624cc66de1a60ccc3fd2b"
   },
   "/Users/agentshroud-bot/Development/agentshroud/gateway/tests/test_main_endpoints.py": {
-    "mtime": 1791973841.5446887,
-    "seen": 1792161677.177359,
-    "ast_hash": "be12493a0fab51f3dfee48f680909fac",
-    "semantic_hash": "be12493a0fab51f3dfee48f680909fac"
+    "mtime": 1792175309.9130101,
+    "seen": 1792176952.979011,
+    "ast_hash": "d39e27e41ee238734c60548083777efc",
+    "semantic_hash": "d39e27e41ee238734c60548083777efc"
   },
   "/Users/agentshroud-bot/Development/agentshroud/gateway/tests/test_main_simple.py": {
     "mtime": 1782597635.2179868,
@@ -12447,10 +12447,10 @@
     "semantic_hash": "aaf6604b9713b4364751ee1f928a623a"
   },
   "/Users/agentshroud-bot/Development/agentshroud/scripts/asb": {
-    "mtime": 1790021470.3324292,
-    "seen": 1792161677.177439,
-    "ast_hash": "64460a375041875d52cb082fbad7756b",
-    "semantic_hash": "64460a375041875d52cb082fbad7756b"
+    "mtime": 1792176938.8383324,
+    "seen": 1792176952.979115,
+    "ast_hash": "919e0ad9df8183c1005d9e2715b2d762",
+    "semantic_hash": "919e0ad9df8183c1005d9e2715b2d762"
   },
   "/Users/agentshroud-bot/Development/agentshroud/scripts/auto_remediate_cves.py": {
     "mtime": 1789763168.1331356,
@@ -12819,10 +12819,10 @@
     "semantic_hash": "d09146c250423466b8d8d7ab4e51db31"
   },
   "/Users/agentshroud-bot/Development/agentshroud/scripts/tailscale-serve.sh": {
-    "mtime": 1791873541.0980427,
-    "seen": 1792161677.177479,
-    "ast_hash": "ca166d7eccc17e85a02616c995ce66b4",
-    "semantic_hash": "ca166d7eccc17e85a02616c995ce66b4"
+    "mtime": 1792174637.457243,
+    "seen": 1792176952.979164,
+    "ast_hash": "e05b8b519c9850474f3b147d4359b81e",
+    "semantic_hash": "e05b8b519c9850474f3b147d4359b81e"
   },
   "/Users/agentshroud-bot/Development/agentshroud/scripts/triage-cve-mitigations.py": {
     "mtime": 1790446300.8471193,
@@ -12987,10 +12987,10 @@
     "semantic_hash": "559911a41bc21572da23c97fdd78636a"
   },
   "/Users/agentshroud-bot/Development/agentshroud/tests/startup_smoke/test_bot_boot_static.sh": {
-    "mtime": 1785980699.6522481,
-    "seen": 1792161677.177496,
-    "ast_hash": "1ee7649c50157fdb3190dcb2cd30d0e6",
-    "semantic_hash": "1ee7649c50157fdb3190dcb2cd30d0e6"
+    "mtime": 1792176751.2334747,
+    "seen": 1792176952.979187,
+    "ast_hash": "efe3bd8746e2818ee89cb20ed1f66c4b",
+    "semantic_hash": "efe3bd8746e2818ee89cb20ed1f66c4b"
   },
   "/Users/agentshroud-bot/Development/agentshroud/tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh": {
     "mtime": 1790444967.4356298,
@@ -13035,10 +13035,10 @@
     "semantic_hash": "8f0069d1a52917a59f51d14f93ccbd9b"
   },
   "/Users/agentshroud-bot/Development/agentshroud/tests/startup_smoke/test_setup_secrets.sh": {
-    "mtime": 1790508508.331813,
-    "seen": 1792161677.177501,
-    "ast_hash": "2d1246a067066a68500557b1004a0e4b",
-    "semantic_hash": "2d1246a067066a68500557b1004a0e4b"
+    "mtime": 1792176751.208563,
+    "seen": 1792176952.979193,
+    "ast_hash": "efd9e756424b07c3f9d1b5d4cde413b4",
+    "semantic_hash": "efd9e756424b07c3f9d1b5d4cde413b4"
   },
   "/Users/agentshroud-bot/Development/agentshroud/tests/startup_smoke/test_wire_llm_settings.js": {
     "mtime": 1785935495.3928292,
@@ -14019,10 +14019,10 @@
     "semantic_hash": "c87a37a49efb9a768b950f9e4764c749"
   },
   "/Users/agentshroud-bot/Development/agentshroud/INCIDENT_2026-10-16_conduit-outage.md": {
-    "mtime": 1792160019.5546324,
-    "seen": 1792161677.177654,
-    "ast_hash": "357c79522e5858d78e5717e2cb166c43",
-    "semantic_hash": "357c79522e5858d78e5717e2cb166c43"
+    "mtime": 1792176964.8573627,
+    "seen": 1792177271.394151,
+    "ast_hash": "13fe89f5b17473c0ec21c4a73bf3325a",
+    "semantic_hash": "13fe89f5b17473c0ec21c4a73bf3325a"
   },
   "/Users/agentshroud-bot/Development/agentshroud/README.md": {
     "mtime": 1785935492.8864794,

@@ -1,18 +1,25 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L231"
+community: "test_soc_bots.py"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/test_soc_botspy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_scan_for_canary()]] - `references` [EXTRACTED]
-- [[dot-get_status()_1]] - `references` [EXTRACTED]
+- [[SecurityEvent_1]] - `uses` [INFERRED]
+- [[Severity_1]] - `uses` [INFERRED]
+- [[_map_severity()]] - `references` [EXTRACTED]
+- [[collect_recent_events()]] - `references` [EXTRACTED]
+- [[from_anomaly_alert()]] - `references` [EXTRACTED]
+- [[from_audit_chain_entry()]] - `references` [EXTRACTED]
+- [[from_dict()]] - `references` [EXTRACTED]
+- [[from_egress_attempt()]] - `references` [EXTRACTED]
+- [[from_pipeline_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

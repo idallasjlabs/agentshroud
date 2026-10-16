@@ -12,7 +12,7 @@ tags:
 # A2AGovernanceProxy
 
 ## Connections
-- [[dot-__init__()_141]] - `method` [EXTRACTED]
+- [[dot-__init__()_153]] - `method` [EXTRACTED]
 - [[dot-_check_message_size()]] - `method` [EXTRACTED]
 - [[dot-_check_peer()]] - `method` [EXTRACTED]
 - [[dot-_check_rate_limit()]] - `method` [EXTRACTED]
@@ -24,13 +24,13 @@ tags:
 - [[dot-get_events()_2]] - `method` [EXTRACTED]
 - [[dot-get_peer()]] - `method` [EXTRACTED]
 - [[dot-get_summary()]] - `method` [EXTRACTED]
-- [[dot-process_inbound()_5]] - `method` [EXTRACTED]
-- [[dot-process_outbound()_6]] - `method` [EXTRACTED]
-- [[dot-register_peer()_1]] - `method` [EXTRACTED]
+- [[dot-process_inbound()_6]] - `method` [EXTRACTED]
+- [[dot-process_outbound()_7]] - `method` [EXTRACTED]
+- [[dot-register_peer()]] - `method` [EXTRACTED]
 - [[dot-test_complete_task_frees_slot()]] - `calls` [EXTRACTED]
 - [[dot-test_disabled_allows_all()]] - `calls` [EXTRACTED]
 - [[dot-test_oversized_denied()]] - `calls` [EXTRACTED]
-- [[dot-test_rate_limit_exceeded()]] - `calls` [EXTRACTED]
+- [[dot-test_rate_limit_exceeded()_1]] - `calls` [EXTRACTED]
 - [[dot-test_task_limit_exceeded()]] - `calls` [EXTRACTED]
 - [[dot-unregister_peer()]] - `method` [EXTRACTED]
 - [[dot-update_peer_trust()]] - `method` [EXTRACTED]

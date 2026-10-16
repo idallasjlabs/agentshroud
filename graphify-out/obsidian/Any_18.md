@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "logs_recent"
-location: "L67"
+community: "MCPAuditTrail"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/logs_recent
+  - community/MCPAuditTrail
 ---
 
 # Any
 
 ## Connections
-- [[dot-recent()]] - `references` [EXTRACTED]
-- [[dot-tail()]] - `references` [EXTRACTED]
-- [[_check_host()]] - `references` [EXTRACTED]
+- [[dot-generate_report()]] - `references` [EXTRACTED]
+- [[dot-log_tool_call()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/logs_recent
+#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail

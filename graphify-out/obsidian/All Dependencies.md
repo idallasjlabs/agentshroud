@@ -15,7 +15,7 @@ tags:
 - [[All Dependencies_1]] - `contains` [EXTRACTED]
 - [[aiosqlite]] - `references` [EXTRACTED]
 - [[ci-workflows]] - `references` [EXTRACTED]
-- [[clamav]] - `references` [EXTRACTED]
+- [[clamav_1]] - `references` [EXTRACTED]
 - [[fastapi_2]] - `references` [EXTRACTED]
 - [[httpx]] - `references` [EXTRACTED]
 - [[openclaw]] - `references` [EXTRACTED]
@@ -23,8 +23,8 @@ tags:
 - [[presidio-analyzer]] - `references` [EXTRACTED]
 - [[pydantic_1]] - `references` [EXTRACTED]
 - [[pytest.ini]] - `references` [EXTRACTED]
-- [[python-jose]] - `references` [EXTRACTED]
-- [[spacy]] - `references` [EXTRACTED]
+- [[python-jose_1]] - `references` [EXTRACTED]
+- [[spacy_1]] - `references` [EXTRACTED]
 - [[trivy_1]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

@@ -1,23 +1,19 @@
 ---
-source_file: "gateway/tests/test_soc_realtime_coverage.py"
+source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "Action"
-location: "L726"
+community: "AppleContainerEngine"
+location: "L149"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Action
+  - community/AppleContainerEngine
 ---
 
 # Any
 
 ## Connections
-- [[dot-_handler()]] - `references` [EXTRACTED]
-- [[Action_2]] - `uses` [INFERRED]
-- [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Resource_2]] - `uses` [INFERRED]
-- [[Role_96]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler]] - `uses` [INFERRED]
+- [[dot-inspect()_3]] - `references` [EXTRACTED]
+- [[ContainerEngine]] - `uses` [INFERRED]
+- [[ContainerInfo_3]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Action
+#graphify/code #graphify/INFERRED #community/AppleContainerEngine

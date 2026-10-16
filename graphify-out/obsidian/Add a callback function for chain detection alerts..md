@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "ToolChainAnalyzer"
+community: "MiddlewareManager"
 location: "L577"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolChainAnalyzer
+  - community/MiddlewareManager
 ---
 
 # Add a callback function for chain detection alerts.
 
 ## Connections
-- [[dot-add_alert_callback()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-add_alert_callback()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolChainAnalyzer
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

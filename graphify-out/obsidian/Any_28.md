@@ -1,18 +1,24 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "lifespan.py"
-location: "L379"
+community: "PIIConfig"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/PIIConfig
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_lifecycle_status()]] - `references` [EXTRACTED]
-- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
+- [[dot-__init__()_87]] - `references` [EXTRACTED]
+- [[dot-_extract_dict_content()]] - `references` [EXTRACTED]
+- [[dot-_extract_scannable_content()]] - `references` [EXTRACTED]
+- [[dot-_reconstruct_result()]] - `references` [EXTRACTED]
+- [[dot-sanitize_tool_result()]] - `references` [EXTRACTED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
+- [[RedactionResult_3]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

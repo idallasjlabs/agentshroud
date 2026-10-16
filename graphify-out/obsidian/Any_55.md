@@ -1,23 +1,18 @@
 ---
-source_file: "gateway/ingest_api/router.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "AgentTarget"
-location: "L152"
+community: ".decide"
+location: "L369"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/decide
 ---
 
 # Any
 
 ## Connections
-- [[dot-_build_forward_payload()]] - `references` [EXTRACTED]
-- [[dot-forward_to_agent()]] - `references` [EXTRACTED]
-- [[dot-forward_to_agent_stream()]] - `references` [EXTRACTED]
-- [[dot-health_check()_4]] - `references` [EXTRACTED]
-- [[AgentTarget]] - `uses` [INFERRED]
-- [[ForwardRequest_3]] - `uses` [INFERRED]
-- [[RouterConfig_1]] - `uses` [INFERRED]
+- [[dot-_append_audit_event()]] - `references` [EXTRACTED]
+- [[dot-broadcast()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/decide

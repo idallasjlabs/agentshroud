@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "_make_filter"
+community: "TestEgressApprovalQueue"
 location: "L21"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_make_filter
+  - community/TestEgressApprovalQueue
 ---
 
 # ApprovalResult
 
 ## Connections
 - [[dot-request_approval()]] - `references` [EXTRACTED]
-- [[EgressFilter]] - `uses` [INFERRED]
-- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[EgressFilter_2]] - `uses` [INFERRED]
+- [[Enum_1]] - `inherits` [EXTRACTED]
 - [[FakeAuditStore_1]] - `uses` [INFERRED]
 - [[Result of an approval request.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditStorePersistence]] - `uses` [INFERRED]
@@ -35,4 +35,4 @@ tags:
 - [[test_egress_approval.py]] - `imports` [EXTRACTED]
 - [[test_egress_filter.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_make_filter
+#graphify/code #graphify/INFERRED #community/TestEgressApprovalQueue

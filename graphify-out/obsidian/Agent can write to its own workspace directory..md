@@ -12,6 +12,6 @@ tags:
 # Agent can write to its own workspace directory.
 
 ## Connections
-- [[dot-test_workspace_write_allowed()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-test_workspace_write_allowed()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

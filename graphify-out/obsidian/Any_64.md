@@ -1,22 +1,29 @@
 ---
-source_file: "gateway/ingest_api/version_routes.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "upgrade"
-location: "L51"
+community: "MCPPermissionManager"
+location: "L119"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/upgrade
+  - graphify/INFERRED
+  - community/MCPPermissionManager
 ---
 
 # Any
 
 ## Connections
-- [[downgrade_version()]] - `references` [EXTRACTED]
-- [[get_current_version()]] - `references` [EXTRACTED]
-- [[get_version_history()]] - `references` [EXTRACTED]
-- [[review_version()]] - `references` [EXTRACTED]
-- [[rollback_version()]] - `references` [EXTRACTED]
-- [[upgrade_version()]] - `references` [EXTRACTED]
+- [[dot-_execute_tool_call()]] - `references` [EXTRACTED]
+- [[dot-_extract_egress_targets()]] - `references` [EXTRACTED]
+- [[dot-_sanitize_admin_private_data()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_19]] - `references` [EXTRACTED]
+- [[dot-send_request()_1]] - `references` [EXTRACTED]
+- [[dot-send_request()]] - `references` [EXTRACTED]
+- [[InspectionResult_1]] - `uses` [INFERRED]
+- [[MCPAuditTrail]] - `uses` [INFERRED]
+- [[MCPInspector_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
+- [[MCPServerConfig_2]] - `uses` [INFERRED]
+- [[MCPTransport]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/upgrade
+#graphify/code #graphify/INFERRED #community/MCPPermissionManager

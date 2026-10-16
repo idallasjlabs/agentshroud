@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/context_guard.py"
+source_file: "scripts/soak_status.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L465"
+community: "TestClassify"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/TestClassify
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_attack_summary()]] - `references` [EXTRACTED]
+- [[_is_benign_skip()]] - `references` [EXTRACTED]
+- [[classify()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/TestClassify

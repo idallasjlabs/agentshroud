@@ -1,20 +1,13 @@
 ---
-source_file: "gateway/security/context_integrity.py"
+source_file: ""
 type: "code"
-community: "ContextSegment"
-location: "L64"
+community: "._filter_streaming_event"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ContextSegment
+  - graphify/EXTRACTED
+  - community/_filter_streaming_event
 ---
 
 # Any
 
-## Connections
-- [[dot-__init__()_57]] - `references` [EXTRACTED]
-- [[ContextSegment]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
-- [[SystemPromptFingerprint]] - `uses` [INFERRED]
-
-#graphify/code #graphify/INFERRED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/_filter_streaming_event

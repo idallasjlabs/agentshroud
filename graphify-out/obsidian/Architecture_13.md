@@ -1,23 +1,17 @@
 ---
-source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
+source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
 type: "document"
-community: "Architecture"
-location: "L28"
+community: "Error Index.md"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture
+  - community/Error_Indexmd
 ---
 
 # Architecture
 
 ## Connections
-- [[AgentShroud™ — Project Knowledge Base]] - `contains` [EXTRACTED]
-- [[Design Philosophy_1]] - `contains` [EXTRACTED]
-- [[F. Infrastructure]] - `contains` [EXTRACTED]
-- [[Infrastructure_10]] - `contains` [EXTRACTED]
-- [[Multi-Platform Support]] - `contains` [EXTRACTED]
-- [[Security Modules]] - `contains` [EXTRACTED]
-- [[The Security Pipeline]] - `contains` [EXTRACTED]
+- [[Presidio Analyzer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

@@ -12,9 +12,9 @@ tags:
 # 8D Root Cause Analysis
 
 ## Connections
-- [[Purpose_88]] - `contains` [EXTRACTED]
-- [[Related Skills_69]] - `contains` [EXTRACTED]
-- [[Usage_80]] - `contains` [EXTRACTED]
+- [[Purpose_89]] - `contains` [EXTRACTED]
+- [[Related Skills_74]] - `contains` [EXTRACTED]
+- [[Usage_81]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 - [[hermesskillsi-eightdREADME]] - `contains` [EXTRACTED]
 

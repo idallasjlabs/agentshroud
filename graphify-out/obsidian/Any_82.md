@@ -1,22 +1,25 @@
 ---
-source_file: "gateway/security/daily_cve_report.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "test_daily_cve_report.py"
-location: "L85"
+community: "ApprovalQueueConfig"
+location: "L141"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - graphify/INFERRED
+  - community/ApprovalQueueConfig
 ---
 
 # Any
 
 ## Connections
-- [[check_upstream_cves()]] - `references` [EXTRACTED]
-- [[format_cve_report()]] - `references` [EXTRACTED]
-- [[format_upstream_cve_alert()]] - `references` [EXTRACTED]
-- [[run_and_send_cve_report()]] - `references` [EXTRACTED]
-- [[run_upstream_cve_check()]] - `references` [EXTRACTED]
-- [[run_upstream_cve_check_all_agents()]] - `references` [EXTRACTED]
+- [[dot-broadcast()_1]] - `references` [EXTRACTED]
+- [[dot-submit_tool_request()_4]] - `references` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_4]] - `uses` [INFERRED]
+- [[ApprovalRequest_4]] - `uses` [INFERRED]
+- [[ApprovalStore]] - `uses` [INFERRED]
+- [[MFAGuard_1]] - `uses` [INFERRED]
+- [[ToolRiskConfig]] - `uses` [INFERRED]
+- [[ToolRiskPolicy]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/INFERRED #community/ApprovalQueueConfig

@@ -1,22 +1,24 @@
 ---
-source_file: "gateway/security/clamav_scanner.py"
+source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "parse_clamscan_output"
-location: "L25"
+community: "A2AProxyResult"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_clamscan_output
+  - community/A2AProxyResult
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary()_1]] - `references` [EXTRACTED]
-- [[parse_clamscan_output()]] - `references` [EXTRACTED]
-- [[run_clamscan()]] - `references` [EXTRACTED]
-- [[save_report()_1]] - `references` [EXTRACTED]
-- [[scan_bytes()]] - `references` [EXTRACTED]
-- [[update_virus_db()]] - `references` [EXTRACTED]
+- [[dot-__init__()_131]] - `references` [EXTRACTED]
+- [[dot-extract_text_for_pii_scan()]] - `references` [EXTRACTED]
+- [[dot-parse_jsonrpc_request()]] - `references` [EXTRACTED]
+- [[dot-process_inbound_request()]] - `references` [EXTRACTED]
+- [[A2AMethod]] - `uses` [INFERRED]
+- [[A2APolicyEngine_3]] - `uses` [INFERRED]
+- [[ViolationType]] - `uses` [INFERRED]
+- [[_redact_message_text()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output
+#graphify/code #graphify/EXTRACTED #community/A2AProxyResult

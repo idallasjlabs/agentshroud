@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "make_event"
-location: "L35"
+community: "Action"
+location: "L187"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/make_event
+  - graphify/INFERRED
+  - community/Action
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_recent()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_9]] - `references` [EXTRACTED]
-- [[dot-to_dict()_5]] - `references` [EXTRACTED]
-- [[make_event()]] - `references` [EXTRACTED]
+- [[dot-check_permission()_1]] - `references` [EXTRACTED]
+- [[dot-get_user_permissions_summary()]] - `references` [EXTRACTED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[Role_91]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/INFERRED #community/Action

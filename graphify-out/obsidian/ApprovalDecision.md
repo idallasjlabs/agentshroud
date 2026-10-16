@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Request"
+community: "AgentTarget"
 location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Request
+  - community/AgentTarget
 ---
 
 # ApprovalDecision
@@ -19,4 +19,4 @@ tags:
 - [[test_approval_decision_valid()]] - `calls` [EXTRACTED]
 - [[test_main_simple.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Request
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

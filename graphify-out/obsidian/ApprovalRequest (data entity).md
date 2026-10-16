@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "concept"
-community: "ADR-008: Progressive Trust Level System"
+community: "AgentShroud (system, C4 context)"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/ADR-008_Progressive_Trust_Level_System
+  - community/AgentShroud_system_C4_context
 ---
 
 # ApprovalRequest (data entity)
@@ -15,4 +15,4 @@ tags:
 - [[TrustLevel (data entity)]] - `conceptually_related_to` [INFERRED]
 - [[approval_requests SQLite table]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/ADR-008_Progressive_Trust_Level_System
+#graphify/concept #graphify/INFERRED #community/AgentShroud_system_C4_context

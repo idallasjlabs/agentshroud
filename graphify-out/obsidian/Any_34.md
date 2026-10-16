@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_audit.py"
+source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "MCPAuditTrail"
-location: "L93"
+community: "test_e2e_proxy.py"
+location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPAuditTrail
+  - community/test_e2e_proxypy
 ---
 
 # Any
 
 ## Connections
-- [[dot-generate_report()]] - `references` [EXTRACTED]
-- [[dot-log_tool_call()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_9]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

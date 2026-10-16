@@ -12,7 +12,7 @@ tags:
 # Athena — Knowledge Distiller
 
 ## Connections
-- [[Purpose_19]] - `contains` [EXTRACTED]
+- [[Purpose_24]] - `contains` [EXTRACTED]
 - [[Related Skills_12]] - `contains` [EXTRACTED]
 - [[Usage_15]] - `contains` [EXTRACTED]
 - [[hermesskillsi-athenaREADME]] - `contains` [EXTRACTED]

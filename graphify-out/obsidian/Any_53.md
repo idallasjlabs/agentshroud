@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "MCPPolicyEngine"
-location: "L200"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Any
 
 ## Connections
-- [[dot-enforce()_1]] - `references` [EXTRACTED]
-- [[dot-evaluate()_1]] - `references` [EXTRACTED]
-- [[dot-from_dict()_7]] - `references` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[dot-__init__()_140]] - `references` [EXTRACTED]
+- [[dot-get_protection_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

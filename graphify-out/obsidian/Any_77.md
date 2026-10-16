@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/security/canary.py"
+source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "AgentRegistry"
-location: "L50"
+community: "test_security_toolchain.py"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/test_security_toolchainpy
 ---
 
 # Any
 
 ## Connections
-- [[dot-to_dict()_14]] - `references` [EXTRACTED]
+- [[generate_summary()_3]] - `references` [EXTRACTED]
+- [[get_fim_events()]] - `references` [EXTRACTED]
+- [[get_rootkit_events()]] - `references` [EXTRACTED]
+- [[parse_alert()_1]] - `references` [EXTRACTED]
+- [[read_alerts()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

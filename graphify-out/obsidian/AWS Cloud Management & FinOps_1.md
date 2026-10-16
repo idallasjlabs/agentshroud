@@ -12,7 +12,7 @@ tags:
 # AWS Cloud Management & FinOps
 
 ## Connections
-- [[Purpose_33]] - `contains` [EXTRACTED]
+- [[Purpose_38]] - `contains` [EXTRACTED]
 - [[Related Skills_26]] - `contains` [EXTRACTED]
 - [[Usage_29]] - `contains` [EXTRACTED]
 - [[openclawskillsi-awsREADME]] - `contains` [EXTRACTED]

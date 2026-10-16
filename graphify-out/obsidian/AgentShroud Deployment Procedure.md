@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AgentShroud Incident Response Plan]] - `conceptually_related_to` [INFERRED]
 - [[AgentShroud Operations Runbook]] - `conceptually_related_to` [INFERRED]
-- [[Deployment Modes_1]] - `contains` [EXTRACTED]
+- [[Deployment Modes]] - `contains` [EXTRACTED]
 - [[Kill Switch (FREEZESHUTDOWNDISCONNECT)_1]] - `references` [EXTRACTED]
 - [[Maintenance Procedures]] - `contains` [EXTRACTED]
 - [[Monitoring Setup]] - `contains` [EXTRACTED]

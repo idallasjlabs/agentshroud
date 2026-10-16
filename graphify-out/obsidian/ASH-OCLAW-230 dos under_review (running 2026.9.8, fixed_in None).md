@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/cve-triage-gaps.md"
 type: "concept"
-community: "colima-health-check.sh"
+community: "triage-cve-mitigations.py"
 location: "38"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/triage-cve-mitigationspy
 ---
 
 # ASH-OCLAW-230 dos under_review (running 2026.9.8, fixed_in None)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CVE Triage — Gaps & Development Plan (OpenClaw), 891 triaged]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/concept #graphify/EXTRACTED #community/triage-cve-mitigationspy

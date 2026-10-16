@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "_PipelineCaptor"
+community: "AgentTarget"
 location: "L540"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_PipelineCaptor
+  - community/AgentTarget
 ---
 
 # An empty string user_id must not match the owner.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_empty_user_id_does_not_elevate_trust()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_PipelineCaptor
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

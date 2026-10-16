@@ -1,11 +1,11 @@
 ---
 source_file: "examples/docker-compose.minimal.yml"
 type: "document"
-community: "First Time Setup"
+community: "Error Index.md"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/First_Time_Setup
+  - community/Error_Indexmd
 ---
 
 # AgentShroud Minimal Docker Compose
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Production Docker Compose]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/First_Time_Setup
+#graphify/document #graphify/INFERRED #community/Error_Indexmd

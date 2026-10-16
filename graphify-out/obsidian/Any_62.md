@@ -1,25 +1,19 @@
 ---
-source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
+source_file: "gateway/proxy/canvas_proxy.py"
 type: "code"
-community: "model_usage.py"
-location: "L23"
+community: "canvas_proxy_app"
+location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/model_usagepy
+  - community/canvas_proxy_app
 ---
 
 # Any
 
 ## Connections
-- [[aggregate_costs()]] - `references` [EXTRACTED]
-- [[build_json_all()]] - `references` [EXTRACTED]
-- [[build_json_current()]] - `references` [EXTRACTED]
-- [[filter_by_days()]] - `references` [EXTRACTED]
-- [[latest_day_cost()]] - `references` [EXTRACTED]
-- [[load_payload()]] - `references` [EXTRACTED]
-- [[parse_daily_entries()]] - `references` [EXTRACTED]
-- [[pick_current_model()]] - `references` [EXTRACTED]
-- [[run_codexbar_cost()]] - `references` [EXTRACTED]
+- [[_handle_http()]] - `references` [EXTRACTED]
+- [[_handle_websocket()]] - `references` [EXTRACTED]
+- [[canvas_proxy_app()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/model_usagepy
+#graphify/code #graphify/EXTRACTED #community/canvas_proxy_app

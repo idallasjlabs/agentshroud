@@ -1,17 +1,17 @@
 ---
-source_file: "docs/claude-security-audit-prompt.md"
+source_file: "docs/ssh-capability.md"
 type: "document"
-community: "AgentShroud v0.8.0 — Full Security & Functionality Audit"
-location: "L30"
+community: "SSH Capability Architecture Document"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080__Full_Security__Functionality_Audit
+  - community/SSH_Capability_Architecture_Document
 ---
 
 # Architecture
 
 ## Connections
-- [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - `contains` [EXTRACTED]
+- [[SSH Capability Architecture Document]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080__Full_Security__Functionality_Audit
+#graphify/document #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document

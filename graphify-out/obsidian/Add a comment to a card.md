@@ -12,6 +12,6 @@ tags:
 # Add a comment to a card
 
 ## Connections
-- [[Usage_127]] - `contains` [EXTRACTED]
+- [[Usage_121]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Usage

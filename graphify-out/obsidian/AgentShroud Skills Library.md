@@ -1,12 +1,12 @@
 ---
 source_file: "skills/README.md"
 type: "document"
-community: "AgentShroud Skills Library"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Skills_Library
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # AgentShroud Skills Library
@@ -15,7 +15,7 @@ tags:
 - [[Custom Skills]] - `contains` [EXTRACTED]
 - [[Directory Structure_1]] - `contains` [EXTRACTED]
 - [[OpenClaw Built-in Skills]] - `contains` [EXTRACTED]
-- [[Usage_64]] - `contains` [EXTRACTED]
+- [[Usage_72]] - `contains` [EXTRACTED]
 - [[skillsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Skills_Library
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

@@ -12,7 +12,7 @@ tags:
 # AgentShroud v1.2.0 — Blue Team Security Assessment
 
 ## Connections
-- [[Method]] - `contains` [EXTRACTED]
+- [[Method_1]] - `contains` [EXTRACTED]
 - [[red-team-assessment-v1.2.0]] - `contains` [EXTRACTED]
 - [[§1 — Re-audit of v0.8.0 Prior Findings]] - `contains` [EXTRACTED]
 - [[§2 — New v1.2.0 Findings (OpenClaw-specific)]] - `contains` [EXTRACTED]

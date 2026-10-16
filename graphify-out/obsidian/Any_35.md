@@ -1,19 +1,17 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "plan_remediation"
-location: "L153"
+community: "test_e2e_proxy.py"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/test_e2e_proxypy
 ---
 
 # Any
 
 ## Connections
-- [[dot-to_dict()_7]] - `references` [EXTRACTED]
-- [[load_registry()]] - `references` [EXTRACTED]
-- [[plan_remediation()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_10]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

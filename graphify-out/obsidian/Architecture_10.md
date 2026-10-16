@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/container-security-audit-v0.8.0.md"
+source_file: "docs/architecture/per-agent-isolation.md"
 type: "document"
-community: "Findings & Mitigations"
-location: "L10"
+community: "Per-Agent Container Isolation Architecture"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Findings__Mitigations
+  - community/Per-Agent_Container_Isolation_Architecture
 ---
 
 # Architecture
 
 ## Connections
-- [[Container Security Audit — AgentShroud v0.8.0]] - `contains` [EXTRACTED]
+- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Findings__Mitigations
+#graphify/document #graphify/EXTRACTED #community/Per-Agent_Container_Isolation_Architecture

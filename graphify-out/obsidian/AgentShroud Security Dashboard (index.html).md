@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/dashboard/index.html"
 type: "code"
-community: "test_mfa_guard.py"
+community: "DataLedger"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_mfa_guardpy
+  - community/DataLedger
 ---
 
 # AgentShroud Security Dashboard (index.html)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[queue.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/test_mfa_guardpy
+#graphify/code #graphify/INFERRED #community/DataLedger

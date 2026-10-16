@@ -12,7 +12,7 @@ tags:
 # AuditStore
 
 ## Connections
-- [[dot-__init__()_100]] - `references` [EXTRACTED]
+- [[dot-__init__()_74]] - `references` [EXTRACTED]
 - [[AuditEvent]] - `uses` [INFERRED]
 - [[AuditStore_1]] - `uses` [INFERRED]
 

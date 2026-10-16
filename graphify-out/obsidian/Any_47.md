@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/security/trivy_report.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "parse_trivy_output"
-location: "L27"
+community: "DataLedger"
+location: "L347"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/parse_trivy_output
+  - graphify/INFERRED
+  - community/DataLedger
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary()_3]] - `references` [EXTRACTED]
-- [[parse_trivy_output()]] - `references` [EXTRACTED]
-- [[run_trivy_scan()_1]] - `references` [EXTRACTED]
-- [[save_report()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_14]] - `references` [EXTRACTED]
+- [[LedgerConfig_1]] - `uses` [INFERRED]
+- [[LedgerEntry]] - `uses` [INFERRED]
+- [[LedgerQueryResponse]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_trivy_output
+#graphify/code #graphify/INFERRED #community/DataLedger

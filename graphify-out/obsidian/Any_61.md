@@ -1,29 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L119"
+community: "KeyVault"
+location: "L157"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/MCPPermissionManager
+  - graphify/EXTRACTED
+  - community/KeyVault
 ---
 
 # Any
 
 ## Connections
-- [[dot-_execute_tool_call()]] - `references` [EXTRACTED]
-- [[dot-_extract_egress_targets()]] - `references` [EXTRACTED]
-- [[dot-_sanitize_admin_private_data()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_16]] - `references` [EXTRACTED]
-- [[dot-send_request()_1]] - `references` [EXTRACTED]
-- [[dot-send_request()]] - `references` [EXTRACTED]
-- [[InspectionResult_1]] - `uses` [INFERRED]
-- [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector]] - `uses` [INFERRED]
-- [[MCPPermissionManager_1]] - `uses` [INFERRED]
-- [[MCPProxyConfig_3]] - `uses` [INFERRED]
-- [[MCPServerConfig_2]] - `uses` [INFERRED]
-- [[MCPTransport]] - `uses` [INFERRED]
+- [[get_sanitizer_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/KeyVault

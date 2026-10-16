@@ -1,18 +1,22 @@
 ---
-source_file: "gateway/ingest_api/routes/dashboard.py"
+source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "test_dashboard.py"
-location: "L401"
+community: "forward.py"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/forwardpy
 ---
 
 # AuthRequired
 
 ## Connections
-- [[dashboard_stats()]] - `references` [EXTRACTED]
-- [[get_collaborators()]] - `references` [EXTRACTED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[email_send()]] - `references` [EXTRACTED]
+- [[email_send_owner()]] - `references` [EXTRACTED]
+- [[forward_content()]] - `references` [EXTRACTED]
+- [[forward_content_stream()]] - `references` [EXTRACTED]
+- [[telegram_webhook()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/forwardpy

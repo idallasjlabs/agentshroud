@@ -1,21 +1,30 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Action"
-location: "L187"
+community: "PipelineAction"
+location: "L88"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Action
+  - graphify/EXTRACTED
+  - community/PipelineAction
 ---
 
 # Any
 
 ## Connections
-- [[dot-check_permission()_2]] - `references` [EXTRACTED]
-- [[dot-get_user_permissions_summary()]] - `references` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_96]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[dot-_process_inbound_core()]] - `references` [EXTRACTED]
+- [[dot-_process_outbound_core()]] - `references` [EXTRACTED]
+- [[dot-append()_1]] - `references` [EXTRACTED]
+- [[dot-append_block()]] - `references` [EXTRACTED]
+- [[dot-append_owner_bypass()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_15]] - `references` [EXTRACTED]
+- [[dot-process_inbound()_5]] - `references` [EXTRACTED]
+- [[dot-process_outbound()_6]] - `references` [EXTRACTED]
+- [[dot-to_dict()_8]] - `references` [EXTRACTED]
+- [[BotIncidentSeverity]] - `uses` [INFERRED]
+- [[FilterResult]] - `uses` [INFERRED]
+- [[InjectionAction]] - `uses` [INFERRED]
+- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[ViolationType]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Action
+#graphify/code #graphify/EXTRACTED #community/PipelineAction
