@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "_parse_env_file()"
+community: "Required Software"
 location: "L250"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_parse_env_file
+  - community/Required_Software
 ---
 
 # Required Software
@@ -20,4 +20,4 @@ tags:
 - [[6. Tailscale (Optional but Recommended)]] - `contains` [EXTRACTED]
 - [[💻 System Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_parse_env_file
+#graphify/document #graphify/EXTRACTED #community/Required_Software

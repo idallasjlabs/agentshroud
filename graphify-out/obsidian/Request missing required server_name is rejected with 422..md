@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "rationale"
-community: "STPA-Sec Analysis of AgentShroud"
+community: "TestMCPResultEndpoint"
 location: "L144"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/STPA-Sec_Analysis_of_AgentShroud
+  - community/TestMCPResultEndpoint
 ---
 
 # Request missing required server_name is rejected with 422.
 
 ## Connections
-- [[.test_result_missing_server_name_rejected()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_result_missing_server_name_rejected()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/STPA-Sec_Analysis_of_AgentShroud
+#graphify/rationale #graphify/EXTRACTED #community/TestMCPResultEndpoint

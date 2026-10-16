@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "rationale"
-community: "TestCredentialInjection"
+community: "ModeRequest"
 location: "L425"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestCredentialInjection
+  - community/ModeRequest
 ---
 
 # SCRUM-107: the `bots` top-level key must be allowed through PUT         /api/con
 
 ## Connections
-- [[.test_update_config_round_trips_bots_key()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_update_config_round_trips_bots_key()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestCredentialInjection
+#graphify/rationale #graphify/EXTRACTED #community/ModeRequest

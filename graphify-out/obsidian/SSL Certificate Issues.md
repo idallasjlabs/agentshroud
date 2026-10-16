@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "v1.6.0 Release — Voice Terminal"
+community: "Troubleshooting Common Issues"
 location: "L583"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/v160_Release__Voice_Terminal
+  - community/Troubleshooting_Common_Issues
 ---
 
 # SSL Certificate Issues
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Troubleshooting Common Issues]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/v160_Release__Voice_Terminal
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting_Common_Issues

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cr/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mnemosyne/SKILL.md"
 type: "document"
-community: "TestCollaboratorAccess"
-location: "L7"
+community: "Mnemosyne — Retention Engineer"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestCollaboratorAccess
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Role
 
 ## Connections
-- [[Skill Code Review (CR)_2]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestCollaboratorAccess
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

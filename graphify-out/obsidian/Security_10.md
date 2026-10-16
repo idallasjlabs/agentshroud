@@ -1,17 +1,18 @@
 ---
-source_file: "skills/custom/icloud/SKILL.md"
+source_file: "SECURITY.md"
 type: "document"
-community: "check-vendor-compat.sh"
-location: "L135"
+community: "AgentShroud™ Security Policy"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/check-vendor-compatsh
+  - community/AgentShroud_Security_Policy
 ---
 
-# Security
+# SECURITY.md
 
 ## Connections
-- [[iCloud Services_4]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Security Policy]] - `contains` [EXTRACTED]
+- [[test_docs_accuracy.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/check-vendor-compatsh
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Policy

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "rationale"
-community: "oracle — best use"
+community: "TestSubscriptionFilter"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/oracle__best_use
+  - community/TestSubscriptionFilter
 ---
 
 # Replicate the filter logic from _event_fan_out.
 
 ## Connections
-- [[._matches()]] - `rationale_for` [EXTRACTED]
+- [[dot-_matches()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/oracle__best_use
+#graphify/rationale #graphify/EXTRACTED #community/TestSubscriptionFilter

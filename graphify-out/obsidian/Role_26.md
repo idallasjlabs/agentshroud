@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pr/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-ux/SKILL.md"
 type: "document"
-community: "TestBotIdIsolationInSharedMemory"
+community: "Skill: UX Expert (UX)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestBotIdIsolationInSharedMemory
+  - community/Skill_UX_Expert_UX
 ---
 
 # Role
 
 ## Connections
-- [[Skill Pull Request (PR) Generator]] - `contains` [EXTRACTED]
+- [[Skill UX Expert (UX)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestBotIdIsolationInSharedMemory
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

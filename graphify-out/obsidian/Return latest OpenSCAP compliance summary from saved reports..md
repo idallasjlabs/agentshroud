@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Canvas Skill"
+community: "_load_latest_json"
 location: "L779"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Canvas_Skill
+  - community/_load_latest_json
 ---
 
 # Return latest OpenSCAP compliance summary from saved reports.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_openscap_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Canvas_Skill
+#graphify/rationale #graphify/EXTRACTED #community/_load_latest_json

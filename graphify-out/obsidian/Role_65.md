@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ps/SKILL.md"
+source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "test_dns_canvas_coverage.py"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_dns_canvas_coveragepy
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # Role
 
 ## Connections
-- [[Skill Production Safety Checklist (PROD-SAFETY)_1]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_dns_canvas_coveragepy
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

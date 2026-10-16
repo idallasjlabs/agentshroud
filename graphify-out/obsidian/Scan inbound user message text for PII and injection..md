@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "test_trust_manager.py"
-location: "L1500"
+community: ".proxy_messages"
+location: "L1517"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_trust_managerpy
+  - community/proxy_messages
 ---
 
 # Scan inbound user message text for PII and injection.
 
 ## Connections
-- [[._scan_inbound()]] - `rationale_for` [EXTRACTED]
+- [[dot-_scan_inbound()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_trust_managerpy
+#graphify/rationale #graphify/EXTRACTED #community/proxy_messages

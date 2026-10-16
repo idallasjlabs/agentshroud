@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-cr/SKILL.md"
+source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
 type: "document"
-community: "Phase 2 — Security Core (HMAC Auth + PII Sanitiz"
+community: "Skill: Code Review (CR)"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_2__Security_Core_HMAC_Auth__PII_Sanitiz
+  - community/Skill_Code_Review_CR
 ---
 
 # Review Principles
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Code Review (CR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_2__Security_Core_HMAC_Auth__PII_Sanitiz
+#graphify/document #graphify/EXTRACTED #community/Skill_Code_Review_CR

@@ -1,30 +1,30 @@
 ---
 source_file: ".agents/skills/i-ui/SKILL.md"
 type: "document"
-community: "Coding Agent (bash-first)"
+community: "Skill: UI Expert (UI)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Coding_Agent_bash-first
+  - community/Skill_UI_Expert_UI
 ---
 
 # Skill: UI Expert (UI)
 
 ## Connections
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-uiSKILL]] - `contains` [EXTRACTED]
 - [[Accessibility Requirements]] - `contains` [EXTRACTED]
 - [[Anti-Patterns to Flag_6]] - `contains` [EXTRACTED]
 - [[CSS Architecture Recommendations]] - `contains` [EXTRACTED]
 - [[Component Patterns]] - `contains` [EXTRACTED]
 - [[Core Discipline Structure → Component → Layout → Validate]] - `contains` [EXTRACTED]
 - [[Dark  Light Theme Implementation]] - `contains` [EXTRACTED]
-- [[Dependencies_4]] - `contains` [EXTRACTED]
+- [[Dependencies_6]] - `contains` [EXTRACTED]
 - [[React  Next.js Component Architecture]] - `contains` [EXTRACTED]
 - [[Responsive Layout System]] - `contains` [EXTRACTED]
-- [[Role_37]] - `contains` [EXTRACTED]
-- [[Rules_6]] - `contains` [EXTRACTED]
-- [[SKILL_15]] - `contains` [EXTRACTED]
-- [[SKILL_60]] - `contains` [EXTRACTED]
+- [[Role_29]] - `contains` [EXTRACTED]
+- [[Rules_7]] - `contains` [EXTRACTED]
 - [[UI Validation Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Coding_Agent_bash-first
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

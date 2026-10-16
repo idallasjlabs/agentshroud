@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/04-separation-of-privilege.md"
+source_file: "docs/planning/redteam/01-enforce-by-default.md"
 type: "document"
-community: "Feature: Global Monitor-Only Mode (\"Observatory "
-location: "L21"
+community: "Flip core security modules from monitor to enforce mode"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Feature_Global_Monitor-Only_Mode_Observatory_
+  - community/Flip_core_security_modules_from_monitor_to_enforce_mode
 ---
 
 # Root Cause
 
 ## Connections
-- [[Make gateway source code, config, and security policies read-only to the agent]] - `contains` [EXTRACTED]
+- [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Feature_Global_Monitor-Only_Mode_Observatory_
+#graphify/document #graphify/EXTRACTED #community/Flip_core_security_modules_from_monitor_to_enforce_mode

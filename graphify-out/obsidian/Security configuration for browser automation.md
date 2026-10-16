@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "KeyRotationManager"
+community: "SecureBrowser"
 location: "L44"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/SecureBrowser
 ---
 
 # Security configuration for browser automation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SecurityConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

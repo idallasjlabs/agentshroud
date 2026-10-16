@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "falco_monitor.py"
+community: "lifespan.py"
 location: "L207"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/falco_monitorpy
+  - community/lifespanpy
 ---
 
 # Scan a single file for integrity changes.
 
 ## Connections
-- [[.scan_file()]] - `rationale_for` [EXTRACTED]
+- [[dot-scan_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/falco_monitorpy
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

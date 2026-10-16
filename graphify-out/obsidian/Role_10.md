@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-crpr/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
 type: "document"
-community: "Starting a Development Task via Hermes / OpenCla"
+community: "Skill: Technical Writer (TW)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Starting_a_Development_Task_via_Hermes_/_OpenCla
+  - community/Skill_Technical_Writer_TW
 ---
 
 # Role
 
 ## Connections
-- [[Skill Create PR with Pre-Flight Audit (CRPR)]] - `contains` [EXTRACTED]
+- [[Skill Technical Writer (TW)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Starting_a_Development_Task_via_Hermes_/_OpenCla
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Writer_TW

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/cron/jobs.yaml"
 type: "document"
-community: "TestSplitForSpeech"
+community: "Prompt: Hermes Competitive Intelligence Email (AM/PM)"
 location: "L159-L175"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/TestSplitForSpeech
+  - community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM
 ---
 
 # Seed Job: jira-weekly-review
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Prompt jira-weekly-review]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/TestSplitForSpeech
+#graphify/document #graphify/INFERRED #community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM

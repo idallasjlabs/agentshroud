@@ -1,17 +1,18 @@
 ---
-source_file: ".agents/skills/i-agile/SKILL.md"
+source_file: "docker/config/hermes/skills/i-agile/SKILL.md"
 type: "document"
-community: "A2APolicyEngine (gateway/security/a2a_policy.py)"
+community: "hermes/skills/i-cr/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/A2APolicyEngine_gateway/security/a2a_policypy
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # Skill: agile
 
 ## Connections
-- [[SKILL_2]] - `contains` [EXTRACTED]
+- [[hermesskillsi-agileSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/A2APolicyEngine_gateway/security/a2a_policypy
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

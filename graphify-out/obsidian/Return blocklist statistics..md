@@ -12,6 +12,6 @@ tags:
 # Return blocklist statistics.
 
 ## Connections
-- [[.stats()]] - `rationale_for` [EXTRACTED]
+- [[dot-stats()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/DNSBlocklist

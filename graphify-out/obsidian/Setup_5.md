@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/apple-reminders/SKILL.md"
 type: "document"
-community: "Backup & Restore Runbook — AgentShroud"
+community: "Apple Reminders CLI (remindctl)"
 location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Backup__Restore_Runbook__AgentShroud
+  - community/Apple_Reminders_CLI_remindctl
 ---
 
 # Setup
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Apple Reminders CLI (remindctl)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Backup__Restore_Runbook__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Apple_Reminders_CLI_remindctl

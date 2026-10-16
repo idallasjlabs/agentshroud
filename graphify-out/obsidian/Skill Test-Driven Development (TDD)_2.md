@@ -1,24 +1,24 @@
 ---
 source_file: "docker/config/openclaw/skills/i-tdd/SKILL.md"
 type: "document"
-community: "event_bus.py"
+community: "Skill: Test-Driven Development (TDD)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/event_buspy
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Skill: Test-Driven Development (TDD)
 
 ## Connections
-- [[Anti-Patterns to Flag_19]] - `contains` [EXTRACTED]
+- [[Anti-Patterns to Flag_23]] - `contains` [EXTRACTED]
 - [[Core Discipline Red → Green → Refactor_2]] - `contains` [EXTRACTED]
-- [[Role_106]] - `contains` [EXTRACTED]
-- [[Rules_22]] - `contains` [EXTRACTED]
-- [[SKILL_142]] - `contains` [EXTRACTED]
-- [[SKILL_183]] - `contains` [EXTRACTED]
+- [[Role_89]] - `contains` [EXTRACTED]
+- [[Rules_25]] - `contains` [EXTRACTED]
 - [[Stack-Specific Testing Patterns_2]] - `contains` [EXTRACTED]
-- [[Test Structure_5]] - `contains` [EXTRACTED]
+- [[Test Structure_6]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-tddSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/event_buspy
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

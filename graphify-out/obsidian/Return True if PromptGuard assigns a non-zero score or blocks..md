@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "rationale"
-community: "BotConfig"
+community: "HeuristicClassifier"
 location: "L223"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/HeuristicClassifier
 ---
 
 # Return True if PromptGuard assigns a non-zero score or blocks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_prompt_guard_detects()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/BotConfig
+#graphify/rationale #graphify/EXTRACTED #community/HeuristicClassifier

@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "MiddlewareManager"
+community: "Enum"
 location: "L26"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MiddlewareManager
+  - community/Enum
 ---
 
 # SOCWebSocketHandler
 
 ## Connections
-- [[.__init__()_132]] - `method` [EXTRACTED]
-- [[._event_fan_out()]] - `method` [EXTRACTED]
-- [[._keepalive_loop()]] - `method` [EXTRACTED]
-- [[._send_event()]] - `method` [EXTRACTED]
-- [[.run()_5]] - `method` [EXTRACTED]
-- [[Any_72]] - `uses` [INFERRED]
+- [[dot-__init__()_48]] - `method` [EXTRACTED]
+- [[dot-_event_fan_out()]] - `method` [EXTRACTED]
+- [[dot-_keepalive_loop()]] - `method` [EXTRACTED]
+- [[dot-_send_event()]] - `method` [EXTRACTED]
+- [[dot-run()]] - `method` [EXTRACTED]
+- [[Any_52]] - `uses` [INFERRED]
 - [[Manages a single wssoc client connection.]] - `rationale_for` [EXTRACTED]
 - [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
 - [[SOCWebSocketHandler_2]] - `uses` [INFERRED]
@@ -46,11 +46,11 @@ tags:
 - [[WSEvent]] - `uses` [INFERRED]
 - [[WSEventType]] - `uses` [INFERRED]
 - [[_FakeBus]] - `uses` [INFERRED]
-- [[_FakeRBAC_2]] - `uses` [INFERRED]
+- [[_FakeRBAC]] - `uses` [INFERRED]
 - [[_coerce_to_ws_event()]] - `calls` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[test_soc_websocket.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `contains` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager
+#graphify/code #graphify/INFERRED #community/Enum

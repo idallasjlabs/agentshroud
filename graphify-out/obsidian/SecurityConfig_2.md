@@ -12,8 +12,8 @@ tags:
 # SecurityConfig
 
 ## Connections
-- [[._load_config()_2]] - `references` [EXTRACTED]
+- [[dot-_load_config()_2]] - `references` [EXTRACTED]
 - [[Security configuration for browser automation_2]] - `rationale_for` [EXTRACTED]
-- [[browse.py_2]] - `contains` [EXTRACTED]
+- [[openclawskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser

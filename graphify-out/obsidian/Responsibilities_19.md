@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
 type: "document"
-community: "test_scorecard_scoring.py"
+community: "version_routes.py"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_scorecard_scoringpy
+  - community/version_routespy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[telegram_proxy.py_2]] - `contains` [EXTRACTED]
+- [[version_routes.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_scorecard_scoringpy
+#graphify/document #graphify/EXTRACTED #community/version_routespy

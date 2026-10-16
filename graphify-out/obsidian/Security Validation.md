@@ -1,19 +1,17 @@
 ---
-source_file: "docker/QUICKSTART.md"
+source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "discover_upstream_versions.py"
-location: "L326"
+community: "Post-Deployment Validation"
+location: "L449"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/discover_upstream_versionspy
+  - community/Post-Deployment_Validation
 ---
 
 # Security Validation
 
 ## Connections
-- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
-- [[Check File Permissions]] - `contains` [EXTRACTED]
-- [[Verify Isolation]] - `contains` [EXTRACTED]
+- [[Post-Deployment Validation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/discover_upstream_versionspy
+#graphify/document #graphify/EXTRACTED #community/Post-Deployment_Validation

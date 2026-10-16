@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-kaizen/SKILL.md"
+source_file: "docker/config/hermes/skills/i-kaizen/SKILL.md"
 type: "document"
-community: "DNSFilterConfig"
+community: "hermes/skills/i-kaizen/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/hermes/skills/i-kaizen/SKILLmd
 ---
 
 # Skill: kaizen
 
 ## Connections
-- [[SKILL_15]] - `contains` [EXTRACTED]
-- [[SKILL_27]] - `contains` [EXTRACTED]
+- [[hermesskillsi-kaizenSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-kaizen/SKILLmd

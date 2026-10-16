@@ -1,17 +1,25 @@
 ---
-source_file: ".agents/skills/i-ui/SKILL.md"
-type: "document"
-community: "Coding Agent (bash-first)"
-location: "L7"
+source_file: "gateway/security/rbac.py"
+type: "code"
+community: "Action"
+location: "L76"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Coding_Agent_bash-first
+  - community/Action
 ---
 
 # Role
 
 ## Connections
-- [[Skill UI Expert (UI)]] - `contains` [EXTRACTED]
+- [[dot-_build_permission_matrix()]] - `references` [EXTRACTED]
+- [[dot-_build_tool_permissions()]] - `references` [EXTRACTED]
+- [[dot-audit_privilege_change()]] - `references` [EXTRACTED]
+- [[dot-get_user_role()_3]] - `references` [EXTRACTED]
+- [[dot-is_privilege_escalation()]] - `references` [EXTRACTED]
+- [[dot-set_user_role()]] - `references` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Role_96]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Coding_Agent_bash-first
+#graphify/code #graphify/EXTRACTED #community/Action

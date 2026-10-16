@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "GroupRoleResolver"
+community: "TestParamSanitization"
 location: "L109"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/TestParamSanitization
 ---
 
 # Result of scanning tool parameters for injection patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ParamScanResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/rationale #graphify/EXTRACTED #community/TestParamSanitization

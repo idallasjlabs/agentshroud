@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-hdev/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-sec/SKILL.md"
 type: "document"
-community: "Container Errors"
-location: "L8"
+community: "Skill: Security Review (SEC)"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Container_Errors
+  - community/Skill_Security_Review_SEC
 ---
 
 # Role
 
 ## Connections
-- [[Skill Hermes Dev Workflow (HDEV)_2]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Container_Errors
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

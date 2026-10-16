@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "RateLimiter"
+community: "ingest_api/models.py"
 location: "L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/ingest_api/modelspy
 ---
 
 # Response after content is ingested, sanitized, and logged
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ForwardResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RateLimiter
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/modelspy

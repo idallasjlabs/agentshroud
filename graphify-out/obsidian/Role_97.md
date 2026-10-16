@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pca/SKILL.md"
+source_file: ".agents/skills/i-data/SKILL.md"
 type: "document"
-community: "GitHub Skill"
+community: "Skill: Data Validation (DATA-VAL)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Skill
+  - community/Skill_Data_Validation_DATA-VAL
 ---
 
 # Role
 
 ## Connections
-- [[Skill Pre-Change Analysis (PCA)_2]] - `contains` [EXTRACTED]
+- [[Skill Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Skill
+#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL

@@ -1,17 +1,17 @@
 ---
 source_file: "scripts/auto_remediate_cves.py"
 type: "rationale"
-community: "AgentShroud v0.7.0 Enforcement Audit Results"
+community: "plan_remediation"
 location: "L154"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Enforcement_Audit_Results
+  - community/plan_remediation
 ---
 
 # Serialise for the unattended run's audit trail.
 
 ## Connections
-- [[.to_dict()_17]] - `rationale_for` [EXTRACTED]
+- [[dot-to_dict()_7]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results
+#graphify/rationale #graphify/EXTRACTED #community/plan_remediation

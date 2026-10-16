@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "rationale"
-community: "openclaw/skills/i-browser/package.json"
+community: "MiddlewareManager"
 location: "L33"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-browser/packagejson
+  - community/MiddlewareManager
 ---
 
 # Result of checking a response for canary presence.
 
 ## Connections
-- [[CanaryResult_2]] - `rationale_for` [EXTRACTED]
+- [[CanaryResult_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/openclaw/skills/i-browser/packagejson
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,11 +1,11 @@
 ---
 source_file: ".semgrep.yml"
 type: "concept"
-community: "chatbot/main.py"
+community: "AgentShroud Semgrep SAST Configuration"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/AgentShroud_Semgrep_SAST_Configuration
 ---
 
 # Rule: agentshroud-subprocess-shell-true
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Semgrep SAST Configuration]] - `references` [EXTRACTED]
 - [[key_rotation.py]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Semgrep_SAST_Configuration

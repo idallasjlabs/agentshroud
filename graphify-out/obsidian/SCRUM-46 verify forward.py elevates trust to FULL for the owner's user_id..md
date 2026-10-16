@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "ApprovalRequest"
+community: "_PipelineCaptor"
 location: "L471"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/_PipelineCaptor
 ---
 
 # SCRUM-46: verify forward.py elevates trust to FULL for the owner's user_id.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOwnerTrustElevation]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/rationale #graphify/EXTRACTED #community/_PipelineCaptor

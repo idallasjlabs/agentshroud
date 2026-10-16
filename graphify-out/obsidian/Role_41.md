@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-apollo/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
 type: "document"
-community: ".update()"
-location: "L8"
+community: "Skill: Technical Illustrator (TI)"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/update
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # Role
 
 ## Connections
-- [[Apollo — Audio Systems Producer_2]] - `contains` [EXTRACTED]
+- [[Skill Technical Illustrator (TI)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/update
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI

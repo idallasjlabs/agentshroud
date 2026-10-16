@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_tool_injection_scan.py"
+source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "MCPPermissionManager"
-location: "L24"
+community: "ToolResultSanitizer"
+location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/ToolResultSanitizer
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[.setup_method()_36]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_19]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

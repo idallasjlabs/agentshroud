@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "Cross-Bot Trust Ledger (Module 27)"
+community: "SOC Models ServiceDescriptor Tests"
 location: "line 79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust_Ledger_Module_27
+  - community/SOC_Models_ServiceDescriptor_Tests
 ---
 
 # SOC Models ServiceDescriptor Tests
 
-#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger_Module_27
+#graphify/code #graphify/EXTRACTED #community/SOC_Models_ServiceDescriptor_Tests

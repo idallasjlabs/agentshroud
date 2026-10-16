@@ -1,12 +1,12 @@
 ---
 source_file: "docs/archive/FUTURE-FEATURES.md"
 type: "concept"
-community: "run_test()"
+community: "Report Delivery Format Instructions"
 location: "L357-L376"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/run_test
+  - community/Report_Delivery_Format_Instructions
 ---
 
 # Scheduled Actions & Automation (in-container cron)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw Live Cron Job Index (11 jobs)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/run_test
+#graphify/concept #graphify/INFERRED #community/Report_Delivery_Format_Instructions

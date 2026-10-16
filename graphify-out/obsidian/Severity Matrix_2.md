@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-production/SKILL.md"
+source_file: "docker/config/hermes/skills/i-production/SKILL.md"
 type: "document"
-community: "TestSSRFDetection"
+community: "Phase 3: MITIGATE (Rollback First!)"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/Phase_3_MITIGATE_Rollback_First
 ---
 
 # Severity Matrix
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Incident Response (INCIDENT)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First

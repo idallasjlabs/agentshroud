@@ -1,18 +1,24 @@
 ---
-source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
+source_file: "SECURITY.md"
 type: "document"
-community: "Multi-Agent Role Matrix"
-location: "L404"
+community: "AgentShroud™ Security Policy"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Multi-Agent_Role_Matrix
+  - community/AgentShroud_Security_Policy
 ---
 
 # Security Architecture
 
 ## Connections
-- [[Defense in Depth]] - `contains` [EXTRACTED]
-- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Security Policy]] - `contains` [EXTRACTED]
+- [[Layer 1 — Core Pipeline (P0)]] - `contains` [EXTRACTED]
+- [[Layer 2 — Middleware (P1)]] - `contains` [EXTRACTED]
+- [[Layer 3 — Output Protection]] - `contains` [EXTRACTED]
+- [[Layer 4 — Tool & Agent Control]] - `contains` [EXTRACTED]
+- [[Layer 5 — Network & Egress]] - `contains` [EXTRACTED]
+- [[Layer 6 — File & Memory Integrity]] - `contains` [EXTRACTED]
+- [[Layer 7 — Infrastructure & Supply Chain]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Policy

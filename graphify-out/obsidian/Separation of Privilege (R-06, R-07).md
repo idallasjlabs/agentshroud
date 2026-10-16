@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "concept"
-community: "Function Details"
+community: "agentshroud-ieee-paper.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/agentshroud-ieee-papermd
 ---
 
 # Separation of Privilege (R-06, R-07)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[STPA-Sec Analysis of AgentShroud]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Function_Details
+#graphify/concept #graphify/EXTRACTED #community/agentshroud-ieee-papermd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/group_router.py"
 type: "rationale"
-community: "TestEgressApprovalQueue"
+community: "GroupApprovalRouter"
 location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/GroupApprovalRouter
 ---
 
 # Routes approval notifications to owner DM and (optionally) group thread.      Ar
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GroupApprovalRouter]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/rationale #graphify/EXTRACTED #community/GroupApprovalRouter

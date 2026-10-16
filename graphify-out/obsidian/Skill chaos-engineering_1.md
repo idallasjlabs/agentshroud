@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-chaos-engineering/SKILL.md"
 type: "document"
-community: ".get_denial_counts()"
+community: "hermes/skills/i-chaos-engineering/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/get_denial_counts
+  - community/hermes/skills/i-chaos-engineering/SKILLmd
 ---
 
 # Skill: chaos-engineering
 
 ## Connections
-- [[SKILL_76]] - `contains` [EXTRACTED]
+- [[hermesskillsi-chaos-engineeringSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/get_denial_counts
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-chaos-engineering/SKILLmd

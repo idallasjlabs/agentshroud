@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/GSD_CADENCE.md"
 type: "document"
-community: "TestMultiBotContextvarRouting"
+community: "Multi-Agent Role Matrix"
 location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMultiBotContextvarRouting
+  - community/Multi-Agent_Role_Matrix
 ---
 
 # Rule 3 — Weekly Kaizen + Monthly Chaos Drill
@@ -17,4 +17,4 @@ tags:
 - [[Monthly (1st of month)]] - `contains` [EXTRACTED]
 - [[Weekly (every Friday)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMultiBotContextvarRouting
+#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix

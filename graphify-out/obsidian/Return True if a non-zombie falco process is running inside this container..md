@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "scanner_integration.py"
 location: "L655"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/scanner_integrationpy
 ---
 
 # Return True if a non-zombie falco process is running inside this container.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_is_falco_running()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/rationale #graphify/EXTRACTED #community/scanner_integrationpy

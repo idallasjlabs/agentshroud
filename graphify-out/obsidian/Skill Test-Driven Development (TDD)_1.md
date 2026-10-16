@@ -1,24 +1,24 @@
 ---
 source_file: "docker/config/hermes/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Workflow: Survey → Draft → Inject → Confirm"
+community: "Skill: Test-Driven Development (TDD)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workflow_Survey__Draft__Inject__Confirm
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Skill: Test-Driven Development (TDD)
 
 ## Connections
-- [[Anti-Patterns to Flag_11]] - `contains` [EXTRACTED]
+- [[Anti-Patterns to Flag_21]] - `contains` [EXTRACTED]
 - [[Core Discipline Red → Green → Refactor_1]] - `contains` [EXTRACTED]
-- [[Role_70]] - `contains` [EXTRACTED]
-- [[Rules_13]] - `contains` [EXTRACTED]
-- [[SKILL_79]] - `contains` [EXTRACTED]
-- [[SKILL_120]] - `contains` [EXTRACTED]
+- [[Role_85]] - `contains` [EXTRACTED]
+- [[Rules_23]] - `contains` [EXTRACTED]
 - [[Stack-Specific Testing Patterns_1]] - `contains` [EXTRACTED]
-- [[Test Structure_3]] - `contains` [EXTRACTED]
+- [[Test Structure_5]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-tddSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

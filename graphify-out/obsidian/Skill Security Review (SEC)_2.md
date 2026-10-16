@@ -1,25 +1,25 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sec/SKILL.md"
 type: "document"
-community: "workspace.sh"
+community: "Skill: Security Review (SEC)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/workspacesh
+  - community/Skill_Security_Review_SEC
 ---
 
 # Skill: Security Review (SEC)
 
 ## Connections
-- [[Anti-Patterns to Flag_18]] - `contains` [EXTRACTED]
+- [[Anti-Patterns to Flag_22]] - `contains` [EXTRACTED]
 - [[Core Principle_2]] - `contains` [EXTRACTED]
-- [[Output Format_36]] - `contains` [EXTRACTED]
+- [[Output Format_35]] - `contains` [EXTRACTED]
 - [[Review Layers_2]] - `contains` [EXTRACTED]
-- [[Role_103]] - `contains` [EXTRACTED]
-- [[SKILL_142]] - `contains` [EXTRACTED]
-- [[SKILL_179]] - `contains` [EXTRACTED]
+- [[Role_87]] - `contains` [EXTRACTED]
 - [[SecureClaw-Specific Threat Model_2]] - `contains` [EXTRACTED]
 - [[Verification Commands_2]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-secSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/workspacesh
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

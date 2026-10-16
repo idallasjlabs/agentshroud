@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md"
+source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
 type: "document"
-community: "test_image_verifier.py"
-location: "L7"
+community: "Athena — Knowledge Distiller"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_image_verifierpy
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Role
 
 ## Connections
-- [[Skill MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_image_verifierpy
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

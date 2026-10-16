@@ -1,19 +1,19 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "Deploying AgentShroud on Raspberry Pi (aarch64)"
+community: "AgentShroud Data Dictionary"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
+  - community/AgentShroud_Data_Dictionary
 ---
 
 # Security Management Entities
 
 ## Connections
 - [[AgentShroud Data Dictionary]] - `contains` [EXTRACTED]
-- [[ApprovalRequest_5]] - `contains` [EXTRACTED]
+- [[ApprovalRequest_1]] - `contains` [EXTRACTED]
 - [[TrustLevel_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Data_Dictionary

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/job-schedule.html"
 type: "concept"
-community: "start.sh"
+community: "Hermes Cron Dedupe (dev)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/startsh
+  - community/Hermes_Cron_Dedupe_dev
 ---
 
 # Responsive Table-to-Card Collapse Pattern
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Job Schedule Dashboard]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/startsh
+#graphify/concept #graphify/EXTRACTED #community/Hermes_Cron_Dedupe_dev

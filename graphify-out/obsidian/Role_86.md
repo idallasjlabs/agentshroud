@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-gg/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-oracle/SKILL.md"
 type: "document"
-community: "forwarder.test.js test suite"
-location: "L7"
+community: "Oracle — Feedback Analyst"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/forwardertestjs_test_suite
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Role
 
 ## Connections
-- [[Skill Git Workflow Guardian (GIT-GUARD)_2]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/forwardertestjs_test_suite
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "SkillGuard"
+community: "management.py"
 location: "L51"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/managementpy
 ---
 
 # Serve the approval queue page.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[approvals()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SkillGuard
+#graphify/rationale #graphify/EXTRACTED #community/managementpy

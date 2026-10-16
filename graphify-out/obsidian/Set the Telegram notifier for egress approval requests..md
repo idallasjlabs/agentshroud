@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "Production Safety Checklist (SKILL)"
+community: "EgressFilter"
 location: "L126"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_SKILL
+  - community/EgressFilter
 ---
 
 # Set the Telegram notifier for egress approval requests.
 
 ## Connections
-- [[.set_notifier()]] - `rationale_for` [EXTRACTED]
+- [[dot-set_notifier()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilter

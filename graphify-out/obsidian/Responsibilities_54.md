@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
 type: "document"
-community: "TestNoResponseGuarantee"
-location: "L18"
+community: "web_config.py"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestNoResponseGuarantee
+  - community/web_configpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[trivy_report.py_2]] - `contains` [EXTRACTED]
+- [[web_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestNoResponseGuarantee
+#graphify/document #graphify/EXTRACTED #community/web_configpy

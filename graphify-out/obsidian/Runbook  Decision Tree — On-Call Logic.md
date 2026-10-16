@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/06-operations.md"
 type: "concept"
-community: "gateway.security.agent_cve_registry"
+community: "diagrams/README.md"
 tags:
   - graphify/concept
-  - graphify/EXTRACTED
-  - community/gatewaysecurityagent_cve_registry
+  - graphify/AMBIGUOUS
+  - community/diagrams/READMEmd
 ---
 
 # Runbook / Decision Tree — On-Call Logic
@@ -15,4 +15,4 @@ tags:
 - [[DM Policy Allowlist Configuration]] - `conceptually_related_to` [AMBIGUOUS]
 - [[Incident Response Flow — Severity & Escalation]] - `references` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/gatewaysecurityagent_cve_registry
+#graphify/concept #graphify/AMBIGUOUS #community/diagrams/READMEmd

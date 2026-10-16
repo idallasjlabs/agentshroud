@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
+source_file: ".agents/skills/i-ti/SKILL.md"
 type: "document"
-community: "test_security_integration.py"
+community: "Skill: Technical Illustrator (TI)"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_security_integrationpy
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
+- [[Skill Technical Illustrator (TI)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_security_integrationpy
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI

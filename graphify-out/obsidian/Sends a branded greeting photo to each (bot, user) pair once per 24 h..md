@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/collaborator_greeter.py"
 type: "rationale"
-community: "Validation Runner Specialist"
+community: "test_collaborator_greeter.py"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Validation_Runner_Specialist
+  - community/test_collaborator_greeterpy
 ---
 
 # Sends a branded greeting photo to each (bot, user) pair once per 24 h.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CollaboratorGreeter]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Validation_Runner_Specialist
+#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_greeterpy

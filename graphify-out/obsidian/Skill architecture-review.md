@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-architecture-review/SKILL.md"
 type: "document"
-community: "block_credential_write.sh"
+community: ".agents/skills/i-architecture-review/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/block_credential_writesh
+  - community/agents/skills/i-architecture-review/SKILLmd
 ---
 
 # Skill: architecture-review
 
 ## Connections
-- [[SKILL_4]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-architecture-reviewSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/block_credential_writesh
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-architecture-review/SKILLmd

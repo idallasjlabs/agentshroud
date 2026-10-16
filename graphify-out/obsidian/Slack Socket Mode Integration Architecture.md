@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup-slack.md"
 type: "concept"
-community: "DNSForwarderProtocol"
+community: "Enterprise Governance Proxy System (invention)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/DNSForwarderProtocol
+  - community/Enterprise_Governance_Proxy_System_invention
 ---
 
 # Slack Socket Mode Integration Architecture
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Telegram Bot Setup (BotFather token + gateway config)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/DNSForwarderProtocol
+#graphify/concept #graphify/EXTRACTED #community/Enterprise_Governance_Proxy_System_invention

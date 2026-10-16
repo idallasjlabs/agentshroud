@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "document"
-community: "`docs/planning/` — Index"
+community: "AGENTSHROUD standard character mark"
 location: "L83"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/planning/__Index
+  - community/AGENTSHROUD_standard_character_mark
 ---
 
 # SECTION 3: GOODS AND SERVICES
@@ -16,4 +16,4 @@ tags:
 - [[Class 42 — Software as a Service (SaaS)]] - `contains` [EXTRACTED]
 - [[Class 9 — Computer Software]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/planning/__Index
+#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_standard_character_mark

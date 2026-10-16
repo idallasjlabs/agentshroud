@@ -1,19 +1,19 @@
 ---
 source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "KeyRotationManager"
+community: "SecureBrowser"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/SecureBrowser
 ---
 
 # SecurityConfig
 
 ## Connections
-- [[._load_config()]] - `references` [EXTRACTED]
+- [[dot-_load_config()]] - `references` [EXTRACTED]
+- [[dot-agentsskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
 - [[Security configuration for browser automation]] - `rationale_for` [EXTRACTED]
-- [[browse.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
 type: "document"
-community: "TestFromAuditChainEntry"
+community: "input_normalizer.py"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestFromAuditChainEntry
+  - community/input_normalizerpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[dns_filter.py_2]] - `contains` [EXTRACTED]
+- [[input_normalizer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFromAuditChainEntry
+#graphify/document #graphify/EXTRACTED #community/input_normalizerpy

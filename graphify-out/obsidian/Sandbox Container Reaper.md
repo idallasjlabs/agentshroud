@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/cron/JOBS-REFERENCE.md"
 type: "rationale"
-community: "cve-registry-manual-review.md"
+community: "Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)"
 location: "L114-L120"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/cve-registry-manual-reviewmd
+  - community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
 ---
 
 # Sandbox Container Reaper
 
 ## Connections
-- [[Docker Socket Proxy Service]] - `conceptually_related_to` [INFERRED]
+- [[docker-socket-proxy service (digest-pinned tecnativa, narrow allowlist)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/cve-registry-manual-reviewmd
+#graphify/rationale #graphify/INFERRED #community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds

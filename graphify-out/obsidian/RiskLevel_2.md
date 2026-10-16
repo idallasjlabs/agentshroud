@@ -12,11 +12,11 @@ tags:
 # RiskLevel
 
 ## Connections
-- [[._classify_risk()_2]] - `references` [EXTRACTED]
-- [[._log_action()_2]] - `references` [EXTRACTED]
-- [[._requires_approval()_2]] - `references` [EXTRACTED]
-- [[Enum]] - `inherits` [EXTRACTED]
+- [[dot-_classify_risk()_2]] - `references` [EXTRACTED]
+- [[dot-_log_action()_2]] - `references` [EXTRACTED]
+- [[dot-_requires_approval()_2]] - `references` [EXTRACTED]
+- [[Enum_2]] - `inherits` [EXTRACTED]
 - [[Risk classification for browser actions_2]] - `rationale_for` [EXTRACTED]
-- [[browse.py_2]] - `contains` [EXTRACTED]
+- [[openclawskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser

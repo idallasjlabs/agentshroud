@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-gg/SKILL.md"
+source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
 type: "document"
-community: "multi_host_test.py"
+community: "Skill: Code Review (CR)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/multi_host_testpy
+  - community/Skill_Code_Review_CR
 ---
 
 # Role
 
 ## Connections
-- [[Skill Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
+- [[Skill Code Review (CR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/multi_host_testpy
+#graphify/document #graphify/EXTRACTED #community/Skill_Code_Review_CR

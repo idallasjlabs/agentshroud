@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-aws/SKILL.md"
 type: "document"
-community: "gen.py"
+community: "Deliverables"
 location: "L206"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/genpy
+  - community/Deliverables
 ---
 
 # Scripts (`./scripts/`)
 
 ## Connections
-- [[Deliverables]] - `contains` [EXTRACTED]
+- [[Deliverables_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/genpy
+#graphify/document #graphify/EXTRACTED #community/Deliverables

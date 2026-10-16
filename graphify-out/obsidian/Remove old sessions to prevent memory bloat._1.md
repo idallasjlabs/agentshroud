@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/tool_chain_analyzer.py"
+source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "GroupRoleResolver"
-location: "L503"
+community: "MultiTurnTracker"
+location: "L364"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/MultiTurnTracker
 ---
 
 # Remove old sessions to prevent memory bloat.
 
 ## Connections
-- [[._cleanup_old_sessions()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-_cleanup_old_sessions()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker

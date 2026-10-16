@@ -1,17 +1,17 @@
 ---
-source_file: "docs/integrations/voice-terminal-esp32-s3.md"
+source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: ".decide()"
-location: "L281"
+community: "AgentShroud Device Pairing Management"
+location: "L443"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/decide
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
-# Security notes
+# Security Notes
 
 ## Connections
-- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
+- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/decide
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

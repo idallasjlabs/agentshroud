@@ -1,22 +1,22 @@
 ---
-source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
+source_file: ".agents/skills/i-cr/SKILL.md"
 type: "document"
-community: "_make_tm()"
+community: "Skill: Code Review (CR)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_make_tm
+  - community/Skill_Code_Review_CR
 ---
 
 # Skill: Code Review (CR)
 
 ## Connections
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[Feedback Guidelines_1]] - `contains` [EXTRACTED]
-- [[Output Format_15]] - `contains` [EXTRACTED]
+- [[Output Format_6]] - `contains` [EXTRACTED]
 - [[Production-Specific Review Checks_1]] - `contains` [EXTRACTED]
 - [[Review Principles_1]] - `contains` [EXTRACTED]
-- [[Role_46]] - `contains` [EXTRACTED]
-- [[SKILL_79]] - `contains` [EXTRACTED]
+- [[Role_14]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_make_tm
+#graphify/document #graphify/EXTRACTED #community/Skill_Code_Review_CR

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "rationale"
-community: "openclaw/skills/i-browser/package.json"
+community: "MiddlewareManager"
 location: "L301"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-browser/packagejson
+  - community/MiddlewareManager
 ---
 
 # Return canary status for dashboard.          Args:             session_id: Sessi
 
 ## Connections
-- [[.get_status()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-get_status()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/openclaw/skills/i-browser/packagejson
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

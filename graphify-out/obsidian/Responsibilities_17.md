@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
 type: "document"
-community: "TestWebAPI"
+community: "middleware.py"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestWebAPI
+  - community/middlewarepy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[mcp_proxy.py_2]] - `contains` [EXTRACTED]
+- [[middleware.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestWebAPI
+#graphify/document #graphify/EXTRACTED #community/middlewarepy

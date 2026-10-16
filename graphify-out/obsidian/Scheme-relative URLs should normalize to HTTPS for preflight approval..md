@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "TelegramAPIProxy"
 location: "L6470"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/TelegramAPIProxy
 ---
 
 # Scheme-relative URLs should normalize to HTTPS for preflight approval.
 
 ## Connections
-- [[.test_non_owner_scheme_relative_url_queues_https_preflight()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_non_owner_scheme_relative_url_queues_https_preflight()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

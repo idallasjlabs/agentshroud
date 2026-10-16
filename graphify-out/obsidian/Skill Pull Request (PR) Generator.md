@@ -1,22 +1,22 @@
 ---
 source_file: ".agents/skills/i-pr/SKILL.md"
 type: "document"
-community: "TestBotIdIsolationInSharedMemory"
+community: "Skill: Pull Request (PR) Generator"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestBotIdIsolationInSharedMemory
+  - community/Skill_Pull_Request_PR_Generator
 ---
 
 # Skill: Pull Request (PR) Generator
 
 ## Connections
-- [[Constraints]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-prSKILL]] - `contains` [EXTRACTED]
+- [[Constraints_7]] - `contains` [EXTRACTED]
 - [[Content Requirements]] - `contains` [EXTRACTED]
-- [[Objective]] - `contains` [EXTRACTED]
-- [[Role_26]] - `contains` [EXTRACTED]
-- [[SKILL_15]] - `contains` [EXTRACTED]
-- [[SKILL_42]] - `contains` [EXTRACTED]
+- [[Objective_3]] - `contains` [EXTRACTED]
+- [[Role_104]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestBotIdIsolationInSharedMemory
+#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator

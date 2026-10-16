@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/SKILL.md"
+source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
-community: "TestRecommendedConfig"
-location: "L19"
+community: "iCloud Services"
+location: "L135"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestRecommendedConfig
+  - community/iCloud_Services
 ---
 
 # Security
 
 ## Connections
-- [[Browser Fetch Skill]] - `contains` [EXTRACTED]
+- [[iCloud Services_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestRecommendedConfig
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

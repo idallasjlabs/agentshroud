@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "Findings & Mitigations"
+community: "Enum"
 location: "L23"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Findings__Mitigations
+  - community/Enum
 ---
 
 # Severity
@@ -16,4 +16,4 @@ tags:
 - [[Severity_2]] - `uses` [INFERRED]
 - [[_map_severity()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Findings__Mitigations
+#graphify/code #graphify/INFERRED #community/Enum

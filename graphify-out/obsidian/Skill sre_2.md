@@ -1,18 +1,18 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sre/SKILL.md"
 type: "document"
-community: "BaseModel"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BaseModel
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Skill: sre
 
 ## Connections
-- [[SKILL_142]] - `contains` [EXTRACTED]
-- [[SKILL_182]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-sreSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BaseModel
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

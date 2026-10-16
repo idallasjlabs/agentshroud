@@ -1,25 +1,17 @@
 ---
-source_file: "gateway/security/rbac.py"
-type: "code"
-community: "MiddlewareManager"
-location: "L76"
+source_file: ".agents/skills/i-apollo/SKILL.md"
+type: "document"
+community: "Apollo — Audio Systems Producer"
+location: "L8"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Apollo__Audio_Systems_Producer
 ---
 
 # Role
 
 ## Connections
-- [[._build_permission_matrix()]] - `references` [EXTRACTED]
-- [[._build_tool_permissions()]] - `references` [EXTRACTED]
-- [[.audit_privilege_change()]] - `references` [EXTRACTED]
-- [[.get_user_role()]] - `references` [EXTRACTED]
-- [[.is_privilege_escalation()]] - `references` [EXTRACTED]
-- [[.set_user_role()]] - `references` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[Apollo — Audio Systems Producer_6]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/document #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer

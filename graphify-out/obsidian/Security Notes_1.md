@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/DEVICE_PAIRING.md"
+source_file: "docker/scripts/README.md"
 type: "document"
-community: "Browser — Secure Browser Automation (SKILL)"
-location: "L443"
+community: "OpenClaw Management Scripts"
+location: "L306"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_SKILL
+  - community/OpenClaw_Management_Scripts
 ---
 
 # Security Notes
 
 ## Connections
-- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
+- [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts

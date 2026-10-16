@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-data/SKILL.md"
+source_file: ".agents/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: ".agents/skills/i-browser/package.json"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-browser/packagejson
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Role
 
 ## Connections
-- [[Skill Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
+- [[Skill MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-browser/packagejson
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

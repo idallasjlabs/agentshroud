@@ -1,34 +1,34 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "voice_task"
+community: "ResourceGuard"
 location: "L49"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/voice_task
+  - community/ResourceGuard
 ---
 
 # ResourceLimits
 
 ## Connections
-- [[.__init__()_114]] - `references` [EXTRACTED]
-- [[.setup_method()_22]] - `calls` [EXTRACTED]
-- [[.test_cpu_limit_check()]] - `calls` [EXTRACTED]
-- [[.test_disk_write_limit()]] - `calls` [EXTRACTED]
-- [[.test_memory_limit_check()]] - `calls` [EXTRACTED]
-- [[.test_resource_guard_config()]] - `calls` [EXTRACTED]
-- [[.test_resource_guard_init()]] - `calls` [EXTRACTED]
-- [[.test_setup_with_custom_limits_overrides_defaults()]] - `calls` [EXTRACTED]
-- [[.test_stop_cancels_monitor_task()]] - `calls` [EXTRACTED]
-- [[.test_usage_stats()]] - `calls` [EXTRACTED]
-- [[Any_69]] - `uses` [INFERRED]
+- [[dot-__init__()_37]] - `references` [EXTRACTED]
+- [[dot-setup_method()_6]] - `calls` [EXTRACTED]
+- [[dot-test_cpu_limit_check()]] - `calls` [EXTRACTED]
+- [[dot-test_disk_write_limit()]] - `calls` [EXTRACTED]
+- [[dot-test_memory_limit_check()]] - `calls` [EXTRACTED]
+- [[dot-test_resource_guard_config()]] - `calls` [EXTRACTED]
+- [[dot-test_resource_guard_init()]] - `calls` [EXTRACTED]
+- [[dot-test_setup_with_custom_limits_overrides_defaults()]] - `calls` [EXTRACTED]
+- [[dot-test_stop_cancels_monitor_task()]] - `calls` [EXTRACTED]
+- [[dot-test_usage_stats()]] - `calls` [EXTRACTED]
+- [[Any_17]] - `uses` [INFERRED]
 - [[Configuration for resource limits.]] - `rationale_for` [EXTRACTED]
-- [[LLMProxy_2]] - `uses` [INFERRED]
-- [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth_1]] - `uses` [INFERRED]
+- [[LLMProxy_1]] - `uses` [INFERRED]
+- [[TestAuditTrail]] - `uses` [INFERRED]
+- [[TestAuth]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard_1]] - `uses` [INFERRED]
+- [[TestContextGuard]] - `uses` [INFERRED]
 - [[TestCpuMemoryDiskLimits]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestExpiredUsageCleanup]] - `uses` [INFERRED]
@@ -36,20 +36,19 @@ tags:
 - [[TestGlobalAccessor]] - `uses` [INFERRED]
 - [[TestLoggingSecurity]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
-- [[TestPIIDetection_1]] - `uses` [INFERRED]
+- [[TestPIIDetection]] - `uses` [INFERRED]
 - [[TestPromptGuard]] - `uses` [INFERRED]
 - [[TestResourceGuard]] - `uses` [INFERRED]
 - [[TestResourceGuardAlertBridge]] - `uses` [INFERRED]
 - [[TestResourceGuardLifecycle]] - `uses` [INFERRED]
 - [[TestResourceGuardWiring]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
-- [[TestSupplyChain_1]] - `uses` [INFERRED]
+- [[TestSupplyChain]] - `uses` [INFERRED]
 - [[TestTempFiles]] - `uses` [INFERRED]
 - [[TestUsageStatsAndTracking]] - `uses` [INFERRED]
 - [[TestVramHeadroom]] - `uses` [INFERRED]
-- [[_FakeSanitizer_1]] - `uses` [INFERRED]
-- [[guard()_3]] - `calls` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
+- [[_FakeSanitizer]] - `uses` [INFERRED]
+- [[guard()]] - `calls` [EXTRACTED]
 - [[resource_guard.py]] - `contains` [EXTRACTED]
 - [[setup_resource_guard()]] - `references` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `imports` [EXTRACTED]
@@ -62,4 +61,4 @@ tags:
 - [[test_resource_guard_wiring.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/voice_task
+#graphify/code #graphify/INFERRED #community/ResourceGuard

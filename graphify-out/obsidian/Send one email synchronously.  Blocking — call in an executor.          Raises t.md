@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/email_service.py"
 type: "rationale"
-community: "RateLimiter"
+community: "GatewayEmailService"
 location: "L96"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/GatewayEmailService
 ---
 
 # Send one email synchronously.  Blocking — call in an executor.          Raises t
 
 ## Connections
-- [[.send()]] - `rationale_for` [EXTRACTED]
+- [[dot-send()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RateLimiter
+#graphify/rationale #graphify/EXTRACTED #community/GatewayEmailService

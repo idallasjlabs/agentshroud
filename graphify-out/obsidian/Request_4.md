@@ -1,24 +1,21 @@
 ---
-source_file: "gateway/ingest_api/routes/forward.py"
+source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "RateLimiter"
-location: "L126"
+community: "test_dashboard.py"
+location: "L385"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/test_dashboardpy
 ---
 
 # Request
 
 ## Connections
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[_process_inbound()]] - `references` [EXTRACTED]
-- [[auth_dep()_3]] - `references` [EXTRACTED]
-- [[email_send()]] - `references` [EXTRACTED]
-- [[email_send_owner()]] - `references` [EXTRACTED]
-- [[forward_content()]] - `references` [EXTRACTED]
-- [[forward_content_stream()]] - `references` [EXTRACTED]
-- [[telegram_webhook()]] - `references` [EXTRACTED]
+- [[auth_dep()_2]] - `references` [EXTRACTED]
+- [[dashboard_stats()]] - `references` [EXTRACTED]
+- [[dashboard_ws_token()]] - `references` [EXTRACTED]
+- [[get_collaborators()]] - `references` [EXTRACTED]
+- [[serve_dashboard()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimiter
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mm/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-ui/SKILL.md"
 type: "document"
-community: "test_cli_coverage.py"
-location: "L27"
+community: "Skill: UI Expert (UI)"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_cli_coveragepy
+  - community/Skill_UI_Expert_UI
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Mindmap Architect (MM)_1]] - `contains` [EXTRACTED]
+- [[Skill UI Expert (UI)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_cli_coveragepy
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

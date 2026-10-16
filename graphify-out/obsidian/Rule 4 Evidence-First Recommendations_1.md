@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "document"
-community: "find-sessions.sh"
+community: "Operating Rules (Non-Negotiable)"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/find-sessionssh
+  - community/Operating_Rules_Non-Negotiable
 ---
 
 # Rule 4: Evidence-First Recommendations
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Operating Rules (Non-Negotiable)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/find-sessionssh
+#graphify/document #graphify/EXTRACTED #community/Operating_Rules_Non-Negotiable

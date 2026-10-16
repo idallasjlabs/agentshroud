@@ -1,17 +1,17 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "TestConfigValidation"
+community: "AgentShroud Security Architecture"
 location: "L530"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/AgentShroud_Security_Architecture
 ---
 
 # Security Checklist
 
 ## Connections
-- [[Quick Reference_6]] - `contains` [EXTRACTED]
+- [[Quick Reference_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

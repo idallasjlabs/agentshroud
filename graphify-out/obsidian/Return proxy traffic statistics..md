@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "rationale"
-community: "test_daily_cve_report.py"
+community: "HTTPConnectProxy"
 location: "L166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/HTTPConnectProxy
 ---
 
 # Return proxy traffic statistics.
 
 ## Connections
-- [[.get_stats()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-get_stats()_19]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/rationale #graphify/EXTRACTED #community/HTTPConnectProxy

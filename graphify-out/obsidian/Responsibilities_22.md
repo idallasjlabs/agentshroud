@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "document"
-community: "_mock_dir_with_files()"
-location: "L15"
+community: "dns_filter.py"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_mock_dir_with_files
+  - community/dns_filterpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
+- [[dns_filter.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_mock_dir_with_files
+#graphify/document #graphify/EXTRACTED #community/dns_filterpy

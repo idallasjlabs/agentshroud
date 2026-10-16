@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "ResourceGuard"
+community: "PIIConfig"
 location: "L410"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/PIIConfig
 ---
 
 # Return current enforcement mode          Returns:             "enforce" or "moni
 
 ## Connections
-- [[.get_mode()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

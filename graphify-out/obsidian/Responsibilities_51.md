@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "AgentShroud Red Team Adversarial Tester"
-location: "L18"
+community: "IDENTITY.md - Who I Am"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester
+  - community/IDENTITYmd_-_Who_I_Am
 ---
 
 # Responsibilities
 
 ## Connections
-- [[resource_guard.py_2]] - `contains` [EXTRACTED]
+- [[IDENTITY.md - Who I Am]] - `contains` [EXTRACTED]
+- [[auth.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester
+#graphify/document #graphify/EXTRACTED #community/IDENTITYmd_-_Who_I_Am

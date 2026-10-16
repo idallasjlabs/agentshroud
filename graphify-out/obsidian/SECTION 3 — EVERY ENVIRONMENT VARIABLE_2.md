@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sad/SKILL.md"
 type: "document"
-community: "DeniedRequest"
+community: "System Audit & Documentation"
 location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DeniedRequest
+  - community/System_Audit__Documentation
 ---
 
 # SECTION 3 — EVERY ENVIRONMENT VARIABLE
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[System Audit & Documentation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DeniedRequest
+#graphify/document #graphify/EXTRACTED #community/System_Audit__Documentation

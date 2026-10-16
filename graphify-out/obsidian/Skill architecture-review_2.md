@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-architecture-review/SKILL.md"
 type: "document"
-community: "Test Kill Switch Monitor"
+community: "openclaw/skills/i-architecture-review/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test_Kill_Switch_Monitor
+  - community/openclaw/skills/i-architecture-review/SKILLmd
 ---
 
 # Skill: architecture-review
 
 ## Connections
-- [[SKILL_131]] - `contains` [EXTRACTED]
+- [[openclawskillsi-architecture-reviewSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test_Kill_Switch_Monitor
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-architecture-review/SKILLmd

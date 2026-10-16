@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
+source_file: ".agents/skills/i-sec/SKILL.md"
 type: "document"
-community: "group_config.py"
-location: "L8"
+community: "Skill: Security Review (SEC)"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/group_configpy
+  - community/Skill_Security_Review_SEC
 ---
 
 # Role
 
 ## Connections
-- [[Atlas — Curriculum Architect_4]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/group_configpy
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

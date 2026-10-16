@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mm/SKILL.md"
 type: "document"
-community: "_age()"
-location: "L23"
+community: "Skill: Mindmap Architect (MM)"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_age
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_age
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cicd/SKILL.md"
+source_file: ".agents/skills/i-tdd/SKILL.md"
 type: "document"
-community: "A2A (Agent-to-Agent) Protocol Threat Analysis"
+community: "Skill: Test-Driven Development (TDD)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/A2A_Agent-to-Agent_Protocol_Threat_Analysis
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Role
 
 ## Connections
-- [[Skill CICD Pipeline Advisor (CICD)_2]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/A2A_Agent-to-Agent_Protocol_Threat_Analysis
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

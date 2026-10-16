@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "3. AWS API MCP Authentication Reset"
+community: "lifespan.py"
 location: "L104"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/3_AWS_API_MCP_Authentication_Reset
+  - community/lifespanpy
 ---
 
 # Scan memory file content for security threats.
 
 ## Connections
-- [[.scan_content_for_threats()]] - `rationale_for` [EXTRACTED]
+- [[dot-scan_content_for_threats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/3_AWS_API_MCP_Authentication_Reset
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

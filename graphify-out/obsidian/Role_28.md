@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ps/SKILL.md"
+source_file: ".agents/skills/i-mm/SKILL.md"
 type: "document"
-community: "TestVersionRoutes"
+community: "Skill: Mindmap Architect (MM)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestVersionRoutes
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # Role
 
 ## Connections
-- [[Skill Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestVersionRoutes
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

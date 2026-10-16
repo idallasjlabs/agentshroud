@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/competitive-analysis.md"
 type: "document"
-community: "05-behavior.md"
+community: "REPORT STRUCTURE"
 location: "L198"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/05-behaviormd
+  - community/REPORT_STRUCTURE
 ---
 
 # SECTION 4: NEXT STEPS TO STAY AHEAD
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[REPORT STRUCTURE_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/05-behaviormd
+#graphify/document #graphify/EXTRACTED #community/REPORT_STRUCTURE

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-socrates/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ui/SKILL.md"
 type: "document"
-community: "gh-issues — Auto-fix GitHub Issues with Parallel"
-location: "L8"
+community: "Skill: UI Expert (UI)"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel
+  - community/Skill_UI_Expert_UI
 ---
 
 # Role
 
 ## Connections
-- [[Socrates — Dialogue Architect_6]] - `contains` [EXTRACTED]
+- [[Skill UI Expert (UI)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

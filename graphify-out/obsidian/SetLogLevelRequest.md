@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "main.rs"
+community: "soc/router.py"
 location: "L1963"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/mainrs
+  - community/soc/routerpy
 ---
 
 # SetLogLevelRequest
 
 ## Connections
 - [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult]] - `uses` [INFERRED]
+- [[AuditResult_1]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller]] - `uses` [INFERRED]
+- [[SCLCaller_1]] - `uses` [INFERRED]
 - [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface]] - `uses` [INFERRED]
+- [[SCLInterface_1]] - `uses` [INFERRED]
 - [[ServiceManager]] - `uses` [INFERRED]
-- [[router.py_1]] - `contains` [EXTRACTED]
 - [[set_log_level()]] - `references` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/mainrs
+#graphify/code #graphify/INFERRED #community/soc/routerpy

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "ReportStore"
+community: "EgressApprovalQueue"
 location: "L783"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/EgressApprovalQueue
 ---
 
 # Remove expired session rules and timed-out requests.
 
 ## Connections
-- [[.cleanup_expired()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-cleanup_expired()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ReportStore
+#graphify/rationale #graphify/EXTRACTED #community/EgressApprovalQueue

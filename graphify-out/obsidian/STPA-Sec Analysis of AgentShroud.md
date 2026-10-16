@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "rationale"
-community: "Function Details"
+community: "agentshroud-ieee-paper.md"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/agentshroud-ieee-papermd
 ---
 
 # STPA-Sec Analysis of AgentShroud
@@ -21,4 +21,4 @@ tags:
 - [[agentshroud-ieee-paper]] - `references` [EXTRACTED]
 - [[v0.8.0 Watchtower — Security Fixes + Module Wiring]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Function_Details
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-ieee-papermd

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "Pre-Deployment Checklist"
+community: "SecureBrowser Security Policies"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist
+  - community/SecureBrowser_Security_Policies
 ---
 
 # SecureBrowser Security Policies
@@ -14,13 +14,13 @@ tags:
 ## Connections
 - [[Approval Workflows]] - `contains` [EXTRACTED]
 - [[Audit Trail Standards]] - `contains` [EXTRACTED]
-- [[Compliance_1]] - `contains` [EXTRACTED]
+- [[Compliance]] - `contains` [EXTRACTED]
 - [[Core Security Principles_4]] - `contains` [EXTRACTED]
-- [[Future Enhancements_2]] - `contains` [EXTRACTED]
+- [[Future Enhancements_1]] - `contains` [EXTRACTED]
 - [[Incident Response]] - `contains` [EXTRACTED]
 - [[Risk Classification Matrix]] - `contains` [EXTRACTED]
 - [[Security Testing_1]] - `contains` [EXTRACTED]
-- [[Threat Model_28]] - `contains` [EXTRACTED]
+- [[Threat Model_3]] - `contains` [EXTRACTED]
 - [[security-policies]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Security_Policies

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "Known Log Messages"
+community: "Route map (by router)"
 location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Known_Log_Messages
+  - community/Route_map_by_router
 ---
 
 # Route map (by router)
@@ -24,4 +24,4 @@ tags:
 - [[Scanning]] - `contains` [EXTRACTED]
 - [[Web control center (`gatewaywebapi.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Known_Log_Messages
+#graphify/document #graphify/EXTRACTED #community/Route_map_by_router

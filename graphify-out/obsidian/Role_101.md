@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ps/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "is_quota_exhausted()"
+community: "Skill: MCP Tools Usage (MCP-TOOLS)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/is_quota_exhausted
+  - community/Skill_MCP_Tools_Usage_MCP-TOOLS
 ---
 
 # Role
 
 ## Connections
-- [[Skill Production Safety Checklist (PROD-SAFETY)_2]] - `contains` [EXTRACTED]
+- [[Skill MCP Tools Usage (MCP-TOOLS)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/is_quota_exhausted
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Tools_Usage_MCP-TOOLS

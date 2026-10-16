@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "ToolACLEnforcer"
+community: "._active_send_token"
 location: "L7725"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolACLEnforcer
+  - community/_active_send_token
 ---
 
 # Send deterministic pending-approval notice to unknown/revoked users.
 
 ## Connections
-- [[._send_collaborator_pending_notice()]] - `rationale_for` [EXTRACTED]
+- [[dot-_send_collaborator_pending_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolACLEnforcer
+#graphify/rationale #graphify/EXTRACTED #community/_active_send_token

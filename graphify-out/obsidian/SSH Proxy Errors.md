@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md"
 type: "document"
-community: "test_playback_state.c"
+community: "Error Index.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_playback_statec
+  - community/Error_Indexmd
 ---
 
 # SSH Proxy Errors.md
@@ -15,4 +15,4 @@ tags:
 - [[Error Index]] - `references` [EXTRACTED]
 - [[SSH Proxy Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_playback_statec
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

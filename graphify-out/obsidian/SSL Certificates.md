@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "TestScoreIncidentResponse"
+community: "5. API Key Rotation"
 location: "L385"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestScoreIncidentResponse
+  - community/5_API_Key_Rotation
 ---
 
 # SSL Certificates
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[5. API Key Rotation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestScoreIncidentResponse
+#graphify/document #graphify/EXTRACTED #community/5_API_Key_Rotation

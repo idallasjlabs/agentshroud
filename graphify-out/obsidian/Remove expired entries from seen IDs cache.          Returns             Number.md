@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "rationale"
-community: "lifespan.py"
+community: "AlertDispatcher"
 location: "L235"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/AlertDispatcher
 ---
 
 # Remove expired entries from seen IDs cache.          Returns:             Number
 
 ## Connections
-- [[.cleanup_seen()]] - `rationale_for` [EXTRACTED]
+- [[dot-cleanup_seen()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

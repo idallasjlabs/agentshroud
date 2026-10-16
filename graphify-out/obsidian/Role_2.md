@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/soc/auth.py"
-type: "code"
-community: "main.rs"
-location: "L141"
+source_file: ".agents/skills/i-hermes/SKILL.md"
+type: "document"
+community: "Hermes — Reference Verifier"
+location: "L8"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/Hermes__Reference_Verifier
 ---
 
 # Role
 
 ## Connections
-- [[.__init__()_129]] - `references` [EXTRACTED]
+- [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md"
+source_file: ".agents/skills/i-icloud/SKILL.md"
 type: "document"
-community: "test_apply_patches.js"
-location: "L35"
+community: "iCloud Services"
+location: "L135"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_apply_patchesjs
+  - community/iCloud_Services
 ---
 
 # Security
 
 ## Connections
-- [[GATEWAY_OP_PROXY_URL_1]] - `contains` [EXTRACTED]
+- [[iCloud Services_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_apply_patchesjs
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

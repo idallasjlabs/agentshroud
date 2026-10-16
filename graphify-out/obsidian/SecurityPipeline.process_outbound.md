@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Behavioral Pattern Analysis"
+community: "SecurityPipeline.process_outbound"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Behavioral_Pattern_Analysis
+  - community/SecurityPipelineprocess_outbound
 ---
 
 # SecurityPipeline.process_outbound
 
-#graphify/code #graphify/EXTRACTED #community/Behavioral_Pattern_Analysis
+#graphify/code #graphify/EXTRACTED #community/SecurityPipelineprocess_outbound

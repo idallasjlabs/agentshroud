@@ -1,20 +1,24 @@
 ---
-source_file: "gateway/ingest_api/routes/approval.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L33"
+community: "soc/router.py"
+location: "L2717"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - graphify/INFERRED
+  - community/soc/routerpy
 ---
 
 # Request
 
 ## Connections
-- [[auth_dep()_1]] - `references` [EXTRACTED]
-- [[decide_approval()]] - `references` [EXTRACTED]
-- [[list_pending_approvals()]] - `references` [EXTRACTED]
-- [[submit_approval_request()]] - `references` [EXTRACTED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult_1]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller_1]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLInterface_1]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[soc_dashboard()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/INFERRED #community/soc/routerpy

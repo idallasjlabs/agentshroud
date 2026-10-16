@@ -1,17 +1,18 @@
 ---
-source_file: ".agents/skills/i-cd/SKILL.md"
+source_file: "docker/config/hermes/skills/i-cd/SKILL.md"
 type: "document"
-community: "TestAuditTrail"
+community: "hermes/skills/i-cr/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestAuditTrail
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # Skill: cd
 
 ## Connections
-- [[SKILL_11]] - `contains` [EXTRACTED]
+- [[hermesskillsi-cdSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestAuditTrail
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

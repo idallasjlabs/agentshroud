@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "rationale"
-community: "soc.js"
+community: "LLMProxy"
 location: "L413"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/socjs
+  - community/LLMProxy
 ---
 
 # Return a monkeypatched urlopen that captures the Request headers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_fake_urlopen()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/socjs
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxy

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-devsecops/SKILL.md"
 type: "document"
-community: ".test_chat_console_script_uses_repo_relative_exe"
+community: "hermes/skills/i-devsecops/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_chat_console_script_uses_repo_relative_exe
+  - community/hermes/skills/i-devsecops/SKILLmd
 ---
 
 # Skill: devsecops
 
 ## Connections
-- [[SKILL_83]] - `contains` [EXTRACTED]
+- [[hermesskillsi-devsecopsSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_chat_console_script_uses_repo_relative_exe
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-devsecops/SKILLmd

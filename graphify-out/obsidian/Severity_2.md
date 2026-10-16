@@ -1,31 +1,31 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "EncryptedStore"
+community: "Enum"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/Enum
 ---
 
 # Severity
 
 ## Connections
-- [[Any_66]] - `uses` [INFERRED]
-- [[Enum]] - `inherits` [EXTRACTED]
+- [[Any_19]] - `uses` [INFERRED]
+- [[Enum_2]] - `inherits` [EXTRACTED]
 - [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[SecurityEvent]] - `uses` [INFERRED]
 - [[Severity_1]] - `uses` [INFERRED]
 - [[WSEvent_1]] - `uses` [INFERRED]
-- [[WebSocket_6]] - `uses` [INFERRED]
+- [[WebSocket_5]] - `uses` [INFERRED]
 - [[event_adapter.py]] - `imports` [EXTRACTED]
-- [[models.py_1]] - `contains` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[socmodels.py]] - `contains` [EXTRACTED]
+- [[str_2]] - `inherits` [EXTRACTED]
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[test_soc_websocket.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EncryptedStore
+#graphify/code #graphify/EXTRACTED #community/Enum

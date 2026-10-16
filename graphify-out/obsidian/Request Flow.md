@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-capability.md"
 type: "document"
-community: "agent_isolation.py"
+community: "SSH Capability Architecture Document"
 location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agent_isolationpy
+  - community/SSH_Capability_Architecture_Document
 ---
 
 # Request Flow
@@ -17,4 +17,4 @@ tags:
 - [[Denied Commands]] - `contains` [EXTRACTED]
 - [[SSH Capability Architecture Document]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agent_isolationpy
+#graphify/document #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document

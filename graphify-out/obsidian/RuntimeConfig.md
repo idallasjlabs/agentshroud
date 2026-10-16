@@ -1,29 +1,29 @@
 ---
 source_file: "gateway/runtime/config.py"
 type: "code"
-community: "ADR-009: Enforce-by-Default Security Philosophy"
+community: "RuntimeConfig"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ADR-009_Enforce-by-Default_Security_Philosophy
+  - community/RuntimeConfig
 ---
 
 # RuntimeConfig
 
 ## Connections
-- [[.effective_rootless()]] - `method` [EXTRACTED]
-- [[.from_dict()_1]] - `method` [EXTRACTED]
-- [[.from_env()]] - `method` [EXTRACTED]
-- [[.test_effective_rootless_docker()]] - `calls` [EXTRACTED]
-- [[.test_effective_rootless_override()]] - `calls` [EXTRACTED]
-- [[.test_effective_rootless_podman()]] - `calls` [EXTRACTED]
+- [[dot-effective_rootless()]] - `method` [EXTRACTED]
+- [[dot-from_dict()_6]] - `method` [EXTRACTED]
+- [[dot-from_env()]] - `method` [EXTRACTED]
+- [[dot-test_effective_rootless_docker()]] - `calls` [EXTRACTED]
+- [[dot-test_effective_rootless_override()]] - `calls` [EXTRACTED]
+- [[dot-test_effective_rootless_podman()]] - `calls` [EXTRACTED]
 - [[Configuration for container runtime selection and behavior.      Loaded from env]] - `rationale_for` [EXTRACTED]
-- [[api.py]] - `imports` [EXTRACTED]
+- [[api.py_2]] - `imports` [EXTRACTED]
 - [[apple_engine.py]] - `references` [EXTRACTED]
-- [[config.py_1]] - `contains` [EXTRACTED]
 - [[docker_engine.py]] - `references` [EXTRACTED]
 - [[podman_engine.py]] - `references` [EXTRACTED]
+- [[runtimeconfig.py]] - `contains` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy
+#graphify/code #graphify/EXTRACTED #community/RuntimeConfig

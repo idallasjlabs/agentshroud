@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "lifespan.py"
+community: "AlertDispatcher"
 location: "L45"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/lifespanpy
+  - community/AlertDispatcher
 ---
 
 # Session
 
 ## Connections
-- [[.create_session()]] - `references` [EXTRACTED]
-- [[.rotate_session()]] - `references` [EXTRACTED]
-- [[.test_session_binding()]] - `calls` [EXTRACTED]
-- [[.test_session_cannot_impersonate()]] - `calls` [INFERRED]
-- [[.test_session_different_fingerprints()]] - `calls` [EXTRACTED]
-- [[.test_session_rate_limit()]] - `calls` [EXTRACTED]
-- [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth_1]] - `uses` [INFERRED]
+- [[dot-create_session()]] - `references` [EXTRACTED]
+- [[dot-rotate_session()]] - `references` [EXTRACTED]
+- [[dot-test_session_binding()]] - `calls` [EXTRACTED]
+- [[dot-test_session_cannot_impersonate()]] - `calls` [INFERRED]
+- [[dot-test_session_different_fingerprints()]] - `calls` [EXTRACTED]
+- [[dot-test_session_rate_limit()]] - `calls` [EXTRACTED]
+- [[TestAuditTrail]] - `uses` [INFERRED]
+- [[TestAuth]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard_1]] - `uses` [INFERRED]
+- [[TestContextGuard]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
 - [[TestDoSPrevention]] - `uses` [INFERRED]
@@ -33,15 +33,14 @@ tags:
 - [[TestLoggingSecurity]] - `uses` [INFERRED]
 - [[TestMCPSecurity]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
-- [[TestPIIDetection_1]] - `uses` [INFERRED]
+- [[TestPIIDetection]] - `uses` [INFERRED]
 - [[TestPrivilegeEscalation]] - `uses` [INFERRED]
 - [[TestPromptGuard]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
-- [[TestSupplyChain_1]] - `uses` [INFERRED]
+- [[TestSupplyChain]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
-- [[main.py_2]] - `imports` [EXTRACTED]
-- [[session_security.py]] - `contains` [EXTRACTED]
+- [[session_security.py_2]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/lifespanpy
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
+source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "rationale"
-community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-P"
-location: "L226"
+community: "jira_weekly_review.py"
+location: "L238"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P
+  - community/jira_weekly_reviewpy
 ---
 
 # Resolve a site domain to its Atlassian cloud ID via the public,     unauthentica
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[resolve_cloud_id()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P
+#graphify/rationale #graphify/EXTRACTED #community/jira_weekly_reviewpy

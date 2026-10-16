@@ -1,17 +1,16 @@
 ---
-source_file: "gateway/ingest_api/routes/health.py"
+source_file: ""
 type: "code"
-community: "start-agentshroud.sh"
-location: "L18"
+community: "installer.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/start-agentshroudsh
+  - community/installerpy
 ---
 
 # Request
 
 ## Connections
-- [[auth_dep()_4]] - `references` [EXTRACTED]
+- [[installer_page()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/start-agentshroudsh
+#graphify/code #graphify/EXTRACTED #community/installerpy

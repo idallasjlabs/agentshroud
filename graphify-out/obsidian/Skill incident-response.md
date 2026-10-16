@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-incident-response/SKILL.md"
 type: "document"
-community: "gen-code-graph.sh"
+community: ".agents/skills/i-incident-response/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/gen-code-graphsh
+  - community/agents/skills/i-incident-response/SKILLmd
 ---
 
 # Skill: incident-response
 
 ## Connections
-- [[SKILL_26]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-incident-responseSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/gen-code-graphsh
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-incident-response/SKILLmd

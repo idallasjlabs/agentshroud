@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "LLMProxy"
+community: "GitGuard"
 location: "L303"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/GitGuard
 ---
 
 # Scan pyproject.toml for suspicious build scripts.
 
 ## Connections
-- [[._scan_pyproject_toml()]] - `rationale_for` [EXTRACTED]
+- [[dot-_scan_pyproject_toml()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LLMProxy
+#graphify/rationale #graphify/EXTRACTED #community/GitGuard

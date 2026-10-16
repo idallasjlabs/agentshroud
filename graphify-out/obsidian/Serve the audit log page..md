@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "SkillGuard"
+community: "management.py"
 location: "L244"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/managementpy
 ---
 
 # Serve the audit log page.
 
 ## Connections
-- [[audit()_1]] - `rationale_for` [EXTRACTED]
+- [[audit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SkillGuard
+#graphify/rationale #graphify/EXTRACTED #community/managementpy

@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/tts.py"
 type: "rationale"
-community: "Skill: Audit Branch (AB) — Merge Regression Dete"
+community: "tts.py"
 location: "L222"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Skill_Audit_Branch_AB__Merge_Regression_Dete
+  - community/ttspy
 ---
 
 # Return *text* suitable for TTS synthesis on the ESP32 voice interface.      Two
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[normalize_for_speech()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Dete
+#graphify/rationale #graphify/EXTRACTED #community/ttspy

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tdd/SKILL.md"
+source_file: "AGENTS.md"
 type: "document"
-community: "Workflow: Survey → Draft → Inject → Confirm"
-location: "L20"
+community: "Goal: Codex is a secondary/tertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass."
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workflow_Survey__Draft__Inject__Confirm
+  - community/Goal_Codex_is_a_secondary/tertiary_agent_used_for_test_augmentation_validation_and_safe_refactors_AFTER_tests_pass
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
+- [[0) PRIME DIRECTIVE (CODEX ROLE - NON-NEGOTIABLE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm
+#graphify/document #graphify/EXTRACTED #community/Goal_Codex_is_a_secondary/tertiary_agent_used_for_test_augmentation_validation_and_safe_refactors_AFTER_tests_pass

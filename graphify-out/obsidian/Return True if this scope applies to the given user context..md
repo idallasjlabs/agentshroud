@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "ReportStore"
+community: "EgressApprovalQueue"
 location: "L76"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/EgressApprovalQueue
 ---
 
 # Return True if this scope applies to the given user context.
 
 ## Connections
-- [[.matches()]] - `rationale_for` [EXTRACTED]
+- [[dot-matches()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ReportStore
+#graphify/rationale #graphify/EXTRACTED #community/EgressApprovalQueue

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-data/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-cicd/SKILL.md"
 type: "document"
-community: "TestPatternDetection"
+community: "Skill: CI/CD Pipeline Advisor (CICD)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestPatternDetection
+  - community/Skill_CI/CD_Pipeline_Advisor_CICD
 ---
 
 # Role
 
 ## Connections
-- [[Skill Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
+- [[Skill CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestPatternDetection
+#graphify/document #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD

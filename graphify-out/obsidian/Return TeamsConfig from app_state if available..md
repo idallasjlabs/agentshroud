@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "FileSandbox"
+community: "TelegramAPIProxy"
 location: "L7743"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/TelegramAPIProxy
 ---
 
 # Return TeamsConfig from app_state if available.
 
 ## Connections
-- [[._teams_config()]] - `rationale_for` [EXTRACTED]
+- [[dot-_teams_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FileSandbox
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

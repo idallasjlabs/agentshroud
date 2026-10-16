@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-devsecops/SKILL.md"
 type: "document"
-community: "EU AI Act & NIST Alignment Matrix"
+community: ".agents/skills/i-devsecops/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EU_AI_Act__NIST_Alignment_Matrix
+  - community/agents/skills/i-devsecops/SKILLmd
 ---
 
 # Skill: devsecops
 
 ## Connections
-- [[SKILL_19]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-devsecopsSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EU_AI_Act__NIST_Alignment_Matrix
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-devsecops/SKILLmd

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "Production Safety Checklist (SKILL)"
+community: "EgressFilter"
 location: "L607"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_SKILL
+  - community/EgressFilter
 ---
 
 # Send pending egress notifications via Telegram. Called from request handler.
 
 ## Connections
-- [[.flush_notifications()]] - `rationale_for` [EXTRACTED]
+- [[dot-flush_notifications()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilter

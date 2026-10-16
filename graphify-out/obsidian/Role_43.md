@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ps/SKILL.md"
 type: "document"
-community: "AGENTS.md — Codex CLI Guidance"
-location: "L8"
+community: "Pre-Deployment Checklist"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AGENTSmd__Codex_CLI_Guidance
+  - community/Pre-Deployment_Checklist
 ---
 
 # Role
 
 ## Connections
-- [[Atlas — Curriculum Architect_2]] - `contains` [EXTRACTED]
+- [[Skill Production Safety Checklist (PROD-SAFETY)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AGENTSmd__Codex_CLI_Guidance
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

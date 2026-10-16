@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "GroupApprovalRouter"
+community: "AlertDispatcher"
 location: "L217"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/AlertDispatcher
 ---
 
 # Scrub environment variables and API keys from command output.          Args:
 
 ## Connections
-- [[.scrub_command_output()]] - `rationale_for` [EXTRACTED]
+- [[dot-scrub_command_output()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "SkillGuard"
+community: "management.py"
 location: "L891"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/managementpy
 ---
 
 # Serve the emergency kill switch page.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[killswitch()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SkillGuard
+#graphify/rationale #graphify/EXTRACTED #community/managementpy

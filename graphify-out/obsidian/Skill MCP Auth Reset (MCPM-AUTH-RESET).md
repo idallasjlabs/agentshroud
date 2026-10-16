@@ -1,26 +1,25 @@
 ---
-source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "PromptGuard"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # Skill: MCP Auth Reset (MCPM-AUTH-RESET)
 
 ## Connections
-- [[10. Troubleshooting]] - `contains` [EXTRACTED]
 - [[Authentication Reset Procedures]] - `contains` [EXTRACTED]
-- [[Related Skills_17]] - `contains` [EXTRACTED]
-- [[Role_16]] - `contains` [EXTRACTED]
-- [[SKILL_31]] - `contains` [EXTRACTED]
-- [[Security Best Practices]] - `contains` [EXTRACTED]
-- [[Troubleshooting_1]] - `contains` [EXTRACTED]
-- [[Usage_19]] - `contains` [EXTRACTED]
-- [[Verification Checklist]] - `contains` [EXTRACTED]
-- [[When to Invoke]] - `contains` [EXTRACTED]
+- [[Related Skills_87]] - `contains` [EXTRACTED]
+- [[Role_61]] - `contains` [EXTRACTED]
+- [[Security Best Practices_1]] - `contains` [EXTRACTED]
+- [[Troubleshooting_31]] - `contains` [EXTRACTED]
+- [[Usage_95]] - `contains` [EXTRACTED]
+- [[Verification Checklist_1]] - `contains` [EXTRACTED]
+- [[When to Invoke_6]] - `contains` [EXTRACTED]
+- [[hermesskillsi-mcpm-auth-resetSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PromptGuard
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

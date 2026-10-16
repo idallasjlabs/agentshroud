@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "rationale"
-community: "A2AProxyResult"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L149"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2AProxyResult
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Scan outbound text for command / code injection patterns.          Does NOT modi
 
 ## Connections
-- [[.scan_command_injection()]] - `rationale_for` [EXTRACTED]
+- [[dot-scan_command_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2AProxyResult
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

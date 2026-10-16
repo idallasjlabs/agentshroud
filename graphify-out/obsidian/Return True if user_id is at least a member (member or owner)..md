@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "GroupRoleResolver"
 location: "L118"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/GroupRoleResolver
 ---
 
 # Return True if user_id is at least a member (member or owner).
 
 ## Connections
-- [[.is_member_or_higher()]] - `rationale_for` [EXTRACTED]
+- [[dot-is_member_or_higher()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver

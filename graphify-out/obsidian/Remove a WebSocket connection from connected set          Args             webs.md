@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "rationale"
-community: "container-runtime.sh"
+community: ".connect"
 location: "L361"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/container-runtimesh
+  - community/connect
 ---
 
 # Remove a WebSocket connection from connected set          Args:             webs
 
 ## Connections
-- [[.disconnect()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-disconnect()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/container-runtimesh
+#graphify/rationale #graphify/EXTRACTED #community/connect

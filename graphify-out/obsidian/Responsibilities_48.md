@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
 type: "document"
-community: "TestAtomicRegistryWrites"
-location: "L18"
+community: "compose_generator.py"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestAtomicRegistryWrites
+  - community/compose_generatorpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[compose_generator.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestAtomicRegistryWrites
+#graphify/document #graphify/EXTRACTED #community/compose_generatorpy

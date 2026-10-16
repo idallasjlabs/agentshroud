@@ -2,7 +2,7 @@
 source_file: "scripts/discover_upstream_versions.py"
 type: "rationale"
 community: "discover_upstream_versions.py"
-location: "L161"
+location: "L290"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

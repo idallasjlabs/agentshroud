@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
 type: "document"
-community: "Docker Commands Reference"
+community: "ssh_config.py"
 location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Commands_Reference
+  - community/ssh_configpy
 ---
 
 # SSHHostConfig Fields
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ssh_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Commands_Reference
+#graphify/document #graphify/EXTRACTED #community/ssh_configpy

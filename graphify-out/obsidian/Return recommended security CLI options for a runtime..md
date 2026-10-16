@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/security.py"
 type: "rationale"
-community: "TestObservatoryMode"
+community: "TestSecurityFeatures"
 location: "L163"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestObservatoryMode
+  - community/TestSecurityFeatures
 ---
 
 # Return recommended security CLI options for a runtime.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_security_options()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestObservatoryMode
+#graphify/rationale #graphify/EXTRACTED #community/TestSecurityFeatures

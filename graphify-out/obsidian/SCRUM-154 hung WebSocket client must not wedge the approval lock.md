@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "Community 1920"
+community: "SCRUM-154: hung WebSocket client must not wedge the approval lock"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1920
+  - community/SCRUM-154_hung_WebSocket_client_must_not_wedge_the_approval_lock
 ---
 
 # SCRUM-154: hung WebSocket client must not wedge the approval lock
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1920
+#graphify/rationale #graphify/EXTRACTED #community/SCRUM-154_hung_WebSocket_client_must_not_wedge_the_approval_lock

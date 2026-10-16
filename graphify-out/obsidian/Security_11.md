@@ -1,17 +1,21 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md"
-type: "document"
-community: "Community 977"
-location: "L35"
+source_file: "skills/custom/browser-fetch/skill.json"
+type: "code"
+community: "skill.json"
+location: "L34"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_977
+  - community/skilljson
 ---
 
-# Security
+# security
 
 ## Connections
-- [[GATEWAY_OP_PROXY_URL_1]] - `contains` [EXTRACTED]
+- [[auditLogging]] - `contains` [EXTRACTED]
+- [[filesystemAccess]] - `contains` [EXTRACTED]
+- [[networkAccess]] - `contains` [EXTRACTED]
+- [[requiresApproval]] - `contains` [EXTRACTED]
+- [[skill.json]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_977
+#graphify/code #graphify/EXTRACTED #community/skilljson

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "TestInputValidation"
+community: "Technical Details"
 location: "L209"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestInputValidation
+  - community/Technical_Details
 ---
 
 # Security Features
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Technical Details]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestInputValidation
+#graphify/document #graphify/EXTRACTED #community/Technical_Details

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "AlertTelegramRelay"
+community: "AgentShroud Docker Configuration"
 location: "L545"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AlertTelegramRelay
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # SOC Per-Module Enforcement Heat-Map (SCRUM-80)
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
 - [[record_decision()]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AlertTelegramRelay
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

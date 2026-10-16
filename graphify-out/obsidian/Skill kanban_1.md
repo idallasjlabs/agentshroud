@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-kanban/SKILL.md"
 type: "document"
-community: ".test_openclaw_patch_script_recovers_corrupt_jso"
+community: "hermes/skills/i-kanban/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_openclaw_patch_script_recovers_corrupt_jso
+  - community/hermes/skills/i-kanban/SKILLmd
 ---
 
 # Skill: kanban
 
 ## Connections
-- [[SKILL_92]] - `contains` [EXTRACTED]
+- [[hermesskillsi-kanbanSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_openclaw_patch_script_recovers_corrupt_jso
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-kanban/SKILLmd

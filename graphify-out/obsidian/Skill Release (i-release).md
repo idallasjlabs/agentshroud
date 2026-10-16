@@ -1,21 +1,21 @@
 ---
 source_file: ".agents/skills/i-release/SKILL.md"
 type: "document"
-community: "parse_query()"
+community: "Steps"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/parse_query
+  - community/Steps
 ---
 
 # Skill: Release (i-release)
 
 ## Connections
-- [[Guardrails_5]] - `contains` [EXTRACTED]
-- [[Invocation_3]] - `contains` [EXTRACTED]
-- [[Role_30]] - `contains` [EXTRACTED]
-- [[SKILL_46]] - `contains` [EXTRACTED]
+- [[Guardrails_15]] - `contains` [EXTRACTED]
+- [[Invocation_9]] - `contains` [EXTRACTED]
+- [[Role_90]] - `contains` [EXTRACTED]
 - [[Steps]] - `contains` [EXTRACTED]
+- [[i-releaseSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/parse_query
+#graphify/document #graphify/EXTRACTED #community/Steps

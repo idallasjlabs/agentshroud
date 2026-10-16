@@ -1,17 +1,17 @@
 ---
 source_file: ".semgrep.yml"
 type: "concept"
-community: "chatbot/main.py"
+community: "EgressFilterConfig"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/EgressFilterConfig
 ---
 
 # Rule: agentshroud-ssrf-httpx
 
 ## Connections
 - [[AgentShroud Semgrep SAST Configuration]] - `references` [EXTRACTED]
-- [[egress_filter.py]] - `references` [EXTRACTED]
+- [[egress_filter.py_1]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/concept #graphify/EXTRACTED #community/EgressFilterConfig

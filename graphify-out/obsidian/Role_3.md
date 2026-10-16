@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ab/SKILL.md"
+source_file: ".agents/skills/i-odev/SKILL.md"
 type: "document"
-community: "CredentialInjector"
-location: "L7"
+community: "Skill: OpenClaw Dev Workflow (ODEV)"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CredentialInjector
+  - community/Skill_OpenClaw_Dev_Workflow_ODEV
 ---
 
 # Role
 
 ## Connections
-- [[Skill Audit Branch (AB) — Merge Regression Detection]] - `contains` [EXTRACTED]
+- [[Skill OpenClaw Dev Workflow (ODEV)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CredentialInjector
+#graphify/document #graphify/EXTRACTED #community/Skill_OpenClaw_Dev_Workflow_ODEV

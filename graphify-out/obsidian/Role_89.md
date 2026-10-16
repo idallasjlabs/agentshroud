@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-tdd/SKILL.md"
 type: "document"
-community: "CredentialInfo"
+community: "Skill: Test-Driven Development (TDD)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CredentialInfo
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Role
 
 ## Connections
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CredentialInfo
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

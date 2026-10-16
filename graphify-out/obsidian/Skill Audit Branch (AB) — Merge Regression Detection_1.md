@@ -1,28 +1,28 @@
 ---
 source_file: "docker/config/hermes/skills/i-ab/SKILL.md"
 type: "document"
-community: "TestHandleEvent"
+community: "Skill: Audit Branch (AB) — Merge Regression Detection"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestHandleEvent
+  - community/Skill_Audit_Branch_AB__Merge_Regression_Detection
 ---
 
 # Skill: Audit Branch (AB) — Merge Regression Detection
 
 ## Connections
-- [[Guardrails_6]] - `contains` [EXTRACTED]
+- [[Guardrails_11]] - `contains` [EXTRACTED]
 - [[Invocation Forms_1]] - `contains` [EXTRACTED]
 - [[Jira  PR Comment Format_1]] - `contains` [EXTRACTED]
-- [[Role_40]] - `contains` [EXTRACTED]
-- [[SKILL_65]] - `contains` [EXTRACTED]
-- [[SKILL_79]] - `contains` [EXTRACTED]
+- [[Role_68]] - `contains` [EXTRACTED]
 - [[Step 1 — Verify the script exists_1]] - `contains` [EXTRACTED]
 - [[Step 2 — Determine the target_1]] - `contains` [EXTRACTED]
 - [[Step 3 — Run the audit script_1]] - `contains` [EXTRACTED]
 - [[Step 4 — Triage each finding_1]] - `contains` [EXTRACTED]
 - [[Step 5 — Classify findings_1]] - `contains` [EXTRACTED]
 - [[Step 6 — Output the report_1]] - `contains` [EXTRACTED]
+- [[hermesskillsi-abSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestHandleEvent
+#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Detection

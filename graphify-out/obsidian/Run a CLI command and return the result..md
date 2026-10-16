@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "WebhookReceiver"
+community: "ContainerEngine"
 location: "L44"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - community/ContainerEngine
 ---
 
 # Run a CLI command and return the result.
 
 ## Connections
-- [[._run()]] - `rationale_for` [EXTRACTED]
+- [[dot-_run()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/rationale #graphify/EXTRACTED #community/ContainerEngine

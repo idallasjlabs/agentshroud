@@ -1,25 +1,25 @@
 ---
 source_file: ".agents/skills/i-sec/SKILL.md"
 type: "document"
-community: "Per-Agent Container Isolation Architecture"
+community: "Skill: Security Review (SEC)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Per-Agent_Container_Isolation_Architecture
+  - community/Skill_Security_Review_SEC
 ---
 
 # Skill: Security Review (SEC)
 
 ## Connections
-- [[Anti-Patterns to Flag_2]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-secSKILL]] - `contains` [EXTRACTED]
+- [[Anti-Patterns to Flag_18]] - `contains` [EXTRACTED]
 - [[Core Principle]] - `contains` [EXTRACTED]
-- [[Output Format_10]] - `contains` [EXTRACTED]
+- [[Output Format_31]] - `contains` [EXTRACTED]
 - [[Review Layers]] - `contains` [EXTRACTED]
-- [[Role_31]] - `contains` [EXTRACTED]
-- [[SKILL_15]] - `contains` [EXTRACTED]
-- [[SKILL_53]] - `contains` [EXTRACTED]
+- [[Role_79]] - `contains` [EXTRACTED]
 - [[SecureClaw-Specific Threat Model]] - `contains` [EXTRACTED]
 - [[Verification Commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Per-Agent_Container_Isolation_Architecture
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

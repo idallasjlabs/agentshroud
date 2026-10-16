@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-apollo/SKILL.md"
+source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
 type: "document"
-community: "TestIsContainerRunning"
+community: "Hermes — Reference Verifier"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestIsContainerRunning
+  - community/Hermes__Reference_Verifier
 ---
 
 # Role
 
 ## Connections
-- [[Apollo — Audio Systems Producer_6]] - `contains` [EXTRACTED]
+- [[Hermes — Reference Verifier_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestIsContainerRunning
+#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier

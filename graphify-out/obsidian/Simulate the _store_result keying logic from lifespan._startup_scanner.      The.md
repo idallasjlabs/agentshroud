@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "rationale"
-community: "Apollo — Audio Systems Producer"
+community: "TestStartupScannerKeying"
 location: "L301"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Apollo__Audio_Systems_Producer
+  - community/TestStartupScannerKeying
 ---
 
 # Simulate the _store_result keying logic from lifespan._startup_scanner.      The
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestStartupScannerKeying]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer
+#graphify/rationale #graphify/EXTRACTED #community/TestStartupScannerKeying

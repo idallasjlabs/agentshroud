@@ -1,23 +1,26 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L33"
+community: "soc/router.py"
+location: "L2040"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - graphify/INFERRED
+  - community/soc/routerpy
 ---
 
 # ScanRequest
 
 ## Connections
-- [[.scan()]] - `references` [EXTRACTED]
-- [[Request to scan a message.]] - `rationale_for` [EXTRACTED]
-- [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder_2]] - `uses` [INFERRED]
-- [[sidecar.py]] - `contains` [EXTRACTED]
-- [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
-- [[test_sidecar_scanner()]] - `calls` [EXTRACTED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult_1]] - `uses` [INFERRED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller_1]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLInterface_1]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[run_scanner()]] - `references` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/INFERRED #community/soc/routerpy

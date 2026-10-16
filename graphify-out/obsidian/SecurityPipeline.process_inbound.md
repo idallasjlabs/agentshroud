@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "test_e2e_proxy.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/test_e2e_proxypy
 ---
 
 # SecurityPipeline.process_inbound
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SidecarScanner]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

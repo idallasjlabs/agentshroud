@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
 type: "document"
-community: "Deployment Runbook — AgentShroud"
+community: "url_analyzer.py"
 location: "L62"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deployment_Runbook__AgentShroud
+  - community/url_analyzerpy
 ---
 
 # SSRF Detection Coverage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[url_analyzer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deployment_Runbook__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/url_analyzerpy

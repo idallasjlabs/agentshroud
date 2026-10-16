@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
 type: "document"
-community: "GSDE&G Development Master Checklist"
+community: "sidecar.py"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist
+  - community/sidecarpy
 ---
 
 # SidecarScanner.get_stats()
 
 ## Connections
-- [[Function Details_13]] - `contains` [EXTRACTED]
+- [[Function Details_50]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist
+#graphify/document #graphify/EXTRACTED #community/sidecarpy

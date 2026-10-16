@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "document"
-community: "postmortem.md"
+community: "Security Modules (58)"
 location: "L135"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/postmortemmd
+  - community/Security_Modules_58
 ---
 
 # Security Architecture Documents (24)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🛡️ AgentShroud Security Inventory (v0.8.0)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/postmortemmd
+#graphify/document #graphify/EXTRACTED #community/Security_Modules_58

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TestPathIsolationManager"
+community: "._filter_outbound"
 location: "L3216"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/_filter_outbound
 ---
 
 # Return minimal getUpdates payload entries containing only update_id.
 
 ## Connections
-- [[._build_ack_only_updates()]] - `rationale_for` [EXTRACTED]
+- [[dot-_build_ack_only_updates()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/rationale #graphify/EXTRACTED #community/_filter_outbound

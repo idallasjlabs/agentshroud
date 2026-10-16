@@ -1,22 +1,22 @@
 ---
 source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "KeyRotationManager"
+community: "SecureBrowser"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/SecureBrowser
 ---
 
 # RiskLevel
 
 ## Connections
-- [[._classify_risk()]] - `references` [EXTRACTED]
-- [[._log_action()]] - `references` [EXTRACTED]
-- [[._requires_approval()]] - `references` [EXTRACTED]
-- [[Enum]] - `inherits` [EXTRACTED]
+- [[dot-_classify_risk()]] - `references` [EXTRACTED]
+- [[dot-_log_action()]] - `references` [EXTRACTED]
+- [[dot-_requires_approval()]] - `references` [EXTRACTED]
+- [[dot-agentsskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
+- [[Enum_2]] - `inherits` [EXTRACTED]
 - [[Risk classification for browser actions]] - `rationale_for` [EXTRACTED]
-- [[browse.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

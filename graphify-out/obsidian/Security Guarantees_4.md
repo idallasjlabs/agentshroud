@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: ".agents/skills/i-browser/SKILL.md"
 type: "document"
-community: "What Does OpenClaw Actually Need to Write?"
-location: "L320"
+community: "Browser — Secure Browser Automation"
+location: "L298"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/What_Does_OpenClaw_Actually_Need_to_Write
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Security Guarantees
 
 ## Connections
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

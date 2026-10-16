@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "rationale"
-community: "AgentShroud™ CVE Mitigation Matrix"
+community: "TestOutputCanary"
 location: "L21"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_CVE_Mitigation_Matrix
+  - community/TestOutputCanary
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[.setup_method()_19]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_14]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix
+#graphify/rationale #graphify/EXTRACTED #community/TestOutputCanary

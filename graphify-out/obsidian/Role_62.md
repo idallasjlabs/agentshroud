@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-pm/SKILL.md"
+source_file: "docker/config/hermes/skills/i-production/SKILL.md"
 type: "document"
-community: "_fw_client()"
+community: "Phase 3: MITIGATE (Rollback First!)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_fw_client
+  - community/Phase_3_MITIGATE_Rollback_First
 ---
 
 # Role
 
 ## Connections
-- [[Skill Project Management (PM)_1]] - `contains` [EXTRACTED]
+- [[Skill Incident Response (INCIDENT)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_fw_client
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First

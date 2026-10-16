@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-athena/SKILL.md"
 type: "document"
-community: "01-architecture.md"
-location: "L7"
+community: "Athena — Knowledge Distiller"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/01-architecturemd
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Role
 
 ## Connections
-- [[Skill MCP Tools Usage (MCP-TOOLS)_2]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/01-architecturemd
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

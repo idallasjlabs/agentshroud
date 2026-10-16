@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-production/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-data/SKILL.md"
 type: "document"
-community: "TestSSRFDetection"
+community: "Skill: Data Validation (DATA-VAL)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/Skill_Data_Validation_DATA-VAL
 ---
 
 # Role
 
 ## Connections
-- [[Skill Incident Response (INCIDENT)_2]] - `contains` [EXTRACTED]
+- [[Skill Data Validation (DATA-VAL)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL

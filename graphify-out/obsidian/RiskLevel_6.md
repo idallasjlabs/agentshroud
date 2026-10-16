@@ -1,22 +1,23 @@
 ---
-source_file: "skills/custom/securebrowser/scripts/browse.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "TestConfigValidation"
-location: "L34"
+community: "TestEgressApprovalQueue"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/TestEgressApprovalQueue
 ---
 
 # RiskLevel
 
 ## Connections
-- [[._classify_risk()_3]] - `references` [EXTRACTED]
-- [[._log_action()_3]] - `references` [EXTRACTED]
-- [[._requires_approval()_3]] - `references` [EXTRACTED]
-- [[Enum]] - `inherits` [EXTRACTED]
-- [[Risk classification for browser actions_3]] - `rationale_for` [EXTRACTED]
-- [[browse.py_3]] - `contains` [EXTRACTED]
+- [[dot-_assess_risk()]] - `references` [EXTRACTED]
+- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[Risk assessment levels for egress requests.]] - `rationale_for` [EXTRACTED]
+- [[TestEgressApprovalAPI]] - `uses` [INFERRED]
+- [[TestEgressApprovalQueue]] - `uses` [INFERRED]
+- [[egress_approval.py]] - `contains` [EXTRACTED]
+- [[test_egress_approval.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

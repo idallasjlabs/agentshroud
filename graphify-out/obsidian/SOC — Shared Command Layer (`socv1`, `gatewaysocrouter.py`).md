@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "Known Log Messages"
+community: "Route map (by router)"
 location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Known_Log_Messages
+  - community/Route_map_by_router
 ---
 
 # SOC — Shared Command Layer (`/soc/v1/*`, `gateway/soc/router.py`)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Route map (by router)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Known_Log_Messages
+#graphify/document #graphify/EXTRACTED #community/Route_map_by_router

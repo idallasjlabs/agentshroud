@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/v0.8/security-assessment-v0.8.0.md"
 type: "document"
-community: "agentshroud-ieee-paper.md"
+community: "AgentShroud v1.0.0 Fortress Release Announcement"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-ieee-papermd
+  - community/AgentShroud_v100_Fortress_Release_Announcement
 ---
 
 # Security Assessment v0.8.0
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Security Overview v0.8.0]] - `references` [EXTRACTED]
 - [[v0.8.0 25-Domain Prompt Injection Defense Assessment]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-ieee-papermd
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v100_Fortress_Release_Announcement

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "rationale"
-community: "TrustManager"
+community: "EgressTelegramNotifier"
 location: "L271"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/EgressTelegramNotifier
 ---
 
 # Send answerCallbackQuery to dismiss the button loading state.          Pass ``to
 
 ## Connections
-- [[.answer_callback()]] - `rationale_for` [EXTRACTED]
+- [[dot-answer_callback()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/EgressTelegramNotifier

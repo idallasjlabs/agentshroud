@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "ProgressiveLockdown"
+community: "AlertDispatcher"
 location: "L293"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/AlertDispatcher
 ---
 
 # Same injection multiple times shouldn't bypass.
 
 ## Connections
-- [[.test_repeated_injection()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_repeated_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

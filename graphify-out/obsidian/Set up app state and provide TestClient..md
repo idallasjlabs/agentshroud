@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "DataLedger"
 location: "L80"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/DataLedger
 ---
 
 # Set up app state and provide TestClient.
 
 ## Connections
-- [[client()_16]] - `rationale_for` [EXTRACTED]
+- [[client()_17]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/DataLedger

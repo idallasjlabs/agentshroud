@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
 type: "document"
-community: "gateway.proxy.llm_proxy"
+community: "Technical Specification"
 location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/gatewayproxyllm_proxy
+  - community/Technical_Specification
 ---
 
 # Script Parsing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Technical Specification_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/gatewayproxyllm_proxy
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

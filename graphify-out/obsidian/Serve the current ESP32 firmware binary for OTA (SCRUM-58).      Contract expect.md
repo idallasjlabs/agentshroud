@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "rationale"
-community: "test_a2a_policy.py"
+community: "server.py"
 location: "L378"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/serverpy
 ---
 
 # Serve the current ESP32 firmware binary for OTA (SCRUM-58).      Contract expect
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[firmware_bin()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/rationale #graphify/EXTRACTED #community/serverpy

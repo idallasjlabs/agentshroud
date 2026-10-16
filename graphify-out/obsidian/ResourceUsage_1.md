@@ -1,23 +1,20 @@
 ---
-source_file: "gateway/security/subagent_governance.py"
+source_file: "gateway/soc/models.py"
 type: "code"
-community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
-location: "L134"
+community: "Enum"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue_enhanced_queuepy
+  - community/Enum
 ---
 
 # ResourceUsage
 
 ## Connections
-- [[.authorize_spawn()]] - `calls` [EXTRACTED]
-- [[.deregister()]] - `references` [EXTRACTED]
-- [[.get_usage()]] - `references` [EXTRACTED]
-- [[.runtime_seconds()]] - `method` [EXTRACTED]
-- [[.to_dict()_14]] - `method` [EXTRACTED]
-- [[Tracks cumulative resource consumption for a single subagent.]] - `rationale_for` [EXTRACTED]
-- [[subagent_governance.py]] - `contains` [EXTRACTED]
+- [[dot-test_with_resource_usage()]] - `calls` [EXTRACTED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[socmodels.py]] - `contains` [EXTRACTED]
+- [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy
+#graphify/code #graphify/EXTRACTED #community/Enum

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VERIFICATION.md"
 type: "document"
-community: "Function Details"
+community: "Git History Purge Plan"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/Git_History_Purge_Plan
 ---
 
 # SECURITY_VERIFICATION.md
@@ -17,4 +17,4 @@ tags:
 - [[Security Verification Report]] - `contains` [EXTRACTED]
 - [[history-purge-plan]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/Git_History_Purge_Plan

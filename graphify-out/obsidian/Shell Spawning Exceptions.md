@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/falco-rules.md"
 type: "document"
-community: "GroupApprovalRouter"
+community: "FalcoAlertWatcher"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/FalcoAlertWatcher
 ---
 
 # Shell Spawning Exceptions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[falco-rules.yaml]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/document #graphify/EXTRACTED #community/FalcoAlertWatcher

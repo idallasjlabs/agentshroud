@@ -1,18 +1,18 @@
 ---
 source_file: "docker/config/openclaw/skills/i-scrum/SKILL.md"
 type: "document"
-community: "BaseModel"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BaseModel
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Skill: scrum
 
 ## Connections
-- [[SKILL_142]] - `contains` [EXTRACTED]
-- [[SKILL_175]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-scrumSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BaseModel
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

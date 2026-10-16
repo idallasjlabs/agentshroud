@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-ps/SKILL.md"
 type: "document"
-community: "_age()"
+community: "Pre-Deployment Checklist"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_age
+  - community/Pre-Deployment_Checklist
 ---
 
 # Role
 
 ## Connections
-- [[Skill Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
+- [[Skill Production Safety Checklist (PROD-SAFETY)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_age
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

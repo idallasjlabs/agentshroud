@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: "docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md"
 type: "document"
-community: "app_main.c"
-location: "L298"
+community: "GATEWAY_OP_PROXY_URL"
+location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/app_mainc
+  - community/GATEWAY_OP_PROXY_URL
 ---
 
 # Security
 
 ## Connections
-- [[Best Practices_1]] - `contains` [EXTRACTED]
+- [[GATEWAY_OP_PROXY_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/app_mainc
+#graphify/document #graphify/EXTRACTED #community/GATEWAY_OP_PROXY_URL

@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/reference/SKILLS_GUIDE.md"
 type: "document"
-community: "_w()"
+community: "Production Safety Checklist (SKILL)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_w
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # Skills Guide (catalog)
@@ -19,6 +19,6 @@ tags:
 - [[Pull Request Generator (README)]] - `references` [EXTRACTED]
 - [[Quality Assurance (README)]] - `references` [EXTRACTED]
 - [[System Audit Documentation (README)]] - `references` [EXTRACTED]
-- [[incident-response]] - `references` [EXTRACTED]
+- [[operationsincident-response]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_w
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

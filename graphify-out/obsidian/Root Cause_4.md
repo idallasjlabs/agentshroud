@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/02-human-in-the-loop.md"
+source_file: "docs/planning/redteam/03-session-isolation.md"
 type: "document"
-community: "format_cve_report()"
-location: "L16"
+community: "Implement per-user session isolation using Telegram user ID"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/format_cve_report
+  - community/Implement_per-user_session_isolation_using_Telegram_user_ID
 ---
 
 # Root Cause
 
 ## Connections
-- [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - `contains` [EXTRACTED]
+- [[Implement per-user session isolation using Telegram user ID]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/format_cve_report
+#graphify/document #graphify/EXTRACTED #community/Implement_per-user_session_isolation_using_Telegram_user_ID

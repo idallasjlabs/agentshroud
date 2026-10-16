@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "ToolACLEnforcer"
+community: "_pcm_bytes"
 location: "L2601"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolACLEnforcer
+  - community/_pcm_bytes
 ---
 
 # Set volume 80. What time is it?' must apply the volume AND route the     remaini
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_volume_command_with_chained_question()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolACLEnforcer
+#graphify/rationale #graphify/EXTRACTED #community/_pcm_bytes

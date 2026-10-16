@@ -1,17 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/SETUP.md"
+source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "document"
-community: "AppleContainerEngine"
-location: "L1"
+community: "iCloud Services"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AppleContainerEngine
+  - community/iCloud_Services
 ---
 
-# SETUP.md
+# Setup
 
 ## Connections
-- [[ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook]] - `contains` [EXTRACTED]
+- [[iCloud Services]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AppleContainerEngine
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

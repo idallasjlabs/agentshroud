@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-session-prompt/SKILL.md"
+source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
 type: "document"
-community: "Core Components"
-location: "L7"
+community: "Mode A — Single task"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Core_Components
+  - community/Mode_A__Single_task
 ---
 
 # Role
 
 ## Connections
-- [[Skill Session Prompt Generator (SESSION-PROMPT)]] - `contains` [EXTRACTED]
+- [[Skill OpenClaw Dev Workflow (ODEV)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Core_Components
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-release/SKILL.md"
+source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
 type: "document"
-community: "parse_query()"
+community: "Mode A — Single task"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/parse_query
+  - community/Mode_A__Single_task
 ---
 
 # Role
 
 ## Connections
-- [[Skill Release (i-release)]] - `contains` [EXTRACTED]
+- [[Skill Hermes Dev Workflow (HDEV)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/parse_query
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pr/SKILL.md"
+source_file: "docker/config/hermes/skills/i-data/SKILL.md"
 type: "document"
-community: "AgentShroud — Collaborator Knowledge Base"
+community: "Skill: Data Validation (DATA-VAL)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud__Collaborator_Knowledge_Base
+  - community/Skill_Data_Validation_DATA-VAL
 ---
 
 # Role
 
 ## Connections
-- [[Skill Pull Request (PR) Generator_2]] - `contains` [EXTRACTED]
+- [[Skill Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud__Collaborator_Knowledge_Base
+#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL

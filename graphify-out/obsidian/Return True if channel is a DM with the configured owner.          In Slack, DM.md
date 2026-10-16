@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/slack_proxy.py"
 type: "rationale"
-community: "OutboundInfoFilter"
+community: "SlackAPIProxy"
 location: "L111"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OutboundInfoFilter
+  - community/SlackAPIProxy
 ---
 
 # Return True if channel is a DM with the configured owner.          In Slack, DM
 
 ## Connections
-- [[._is_owner_channel()]] - `rationale_for` [EXTRACTED]
+- [[dot-_is_owner_channel()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OutboundInfoFilter
+#graphify/rationale #graphify/EXTRACTED #community/SlackAPIProxy

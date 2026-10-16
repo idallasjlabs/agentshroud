@@ -1,25 +1,25 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "_any_detector_fires()"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_any_detector_fires
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # Skill: MCP Auth Reset (MCPM-AUTH-RESET)
 
 ## Connections
 - [[Authentication Reset Procedures_1]] - `contains` [EXTRACTED]
-- [[Related Skills_57]] - `contains` [EXTRACTED]
-- [[Role_53]] - `contains` [EXTRACTED]
-- [[SKILL_95]] - `contains` [EXTRACTED]
-- [[Security Best Practices_1]] - `contains` [EXTRACTED]
-- [[Troubleshooting_9]] - `contains` [EXTRACTED]
-- [[Usage_60]] - `contains` [EXTRACTED]
-- [[Verification Checklist_1]] - `contains` [EXTRACTED]
-- [[When to Invoke_3]] - `contains` [EXTRACTED]
+- [[Related Skills_88]] - `contains` [EXTRACTED]
+- [[Role_64]] - `contains` [EXTRACTED]
+- [[Security Best Practices_2]] - `contains` [EXTRACTED]
+- [[Troubleshooting_32]] - `contains` [EXTRACTED]
+- [[Usage_96]] - `contains` [EXTRACTED]
+- [[Verification Checklist_2]] - `contains` [EXTRACTED]
+- [[When to Invoke_7]] - `contains` [EXTRACTED]
+- [[openclawskillsi-mcpm-auth-resetSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_any_detector_fires
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

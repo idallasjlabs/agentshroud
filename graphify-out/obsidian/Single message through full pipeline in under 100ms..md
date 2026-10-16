@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "ServiceManager"
+community: "PIIConfig"
 location: "L224"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/PIIConfig
 ---
 
 # Single message through full pipeline in under 100ms.
 
 ## Connections
-- [[.test_single_message_pipeline_under_100ms()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_single_message_pipeline_under_100ms()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ServiceManager
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

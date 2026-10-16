@@ -1,31 +1,31 @@
 ---
 source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "openclaw/workspace/jira_dev_ticket.py"
+community: "SecureBrowser - Enterprise Secure Browser Automation"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/workspace/jira_dev_ticketpy
+  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
 ---
 
 # SecureBrowser - Enterprise Secure Browser Automation
 
 ## Connections
-- [[Approval Integration_3]] - `contains` [EXTRACTED]
-- [[Audit Logging_4]] - `contains` [EXTRACTED]
-- [[Best Practices_7]] - `contains` [EXTRACTED]
-- [[Core Security Principles_3]] - `contains` [EXTRACTED]
-- [[Example Apple ID Creation (Semi-Automated)_3]] - `contains` [EXTRACTED]
+- [[Approval Integration]] - `contains` [EXTRACTED]
+- [[Audit Logging]] - `contains` [EXTRACTED]
+- [[Best Practices_2]] - `contains` [EXTRACTED]
+- [[Core Security Principles]] - `contains` [EXTRACTED]
+- [[Example Apple ID Creation (Semi-Automated)]] - `contains` [EXTRACTED]
 - [[Integration with AgentShroud]] - `contains` [EXTRACTED]
-- [[Limitations_4]] - `contains` [EXTRACTED]
-- [[Risk Levels_3]] - `contains` [EXTRACTED]
-- [[SKILL_194]] - `contains` [EXTRACTED]
-- [[Security Architecture_5]] - `contains` [EXTRACTED]
-- [[Security Configuration_3]] - `contains` [EXTRACTED]
-- [[Security Guarantees_5]] - `contains` [EXTRACTED]
+- [[Limitations]] - `contains` [EXTRACTED]
+- [[Risk Levels]] - `contains` [EXTRACTED]
+- [[Security Architecture]] - `contains` [EXTRACTED]
+- [[Security Configuration]] - `contains` [EXTRACTED]
+- [[Security Guarantees]] - `contains` [EXTRACTED]
 - [[See Also]] - `contains` [EXTRACTED]
-- [[Troubleshooting_37]] - `contains` [EXTRACTED]
-- [[Usage_130]] - `contains` [EXTRACTED]
+- [[Troubleshooting_9]] - `contains` [EXTRACTED]
+- [[Usage_54]] - `contains` [EXTRACTED]
+- [[securebrowserSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automation

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docker/config/hermes/skills/i-pm/SKILL.md"
 type: "document"
-community: "_any_detector_fires()"
+community: "Skill: Project Management (PM)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_any_detector_fires
+  - community/Skill_Project_Management_PM
 ---
 
 # Role
 
 ## Connections
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
+- [[Skill Project Management (PM)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_any_detector_fires
+#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM

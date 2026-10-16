@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "rationale"
-community: "PromptProtection"
+community: "migrate-cve-registry-ghsa.py"
 location: "L415"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PromptProtection
+  - community/migrate-cve-registry-ghsapy
 ---
 
 # Render the manual-review markdown listing every unmatched entry.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[render_manual_review()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PromptProtection
+#graphify/rationale #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

@@ -1,18 +1,18 @@
 ---
 source_file: "docker/config/openclaw/skills/i-bdd/SKILL.md"
 type: "document"
-community: "BaseModel"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BaseModel
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Skill: bdd
 
 ## Connections
-- [[SKILL_135]] - `contains` [EXTRACTED]
-- [[SKILL_142]] - `contains` [EXTRACTED]
+- [[openclawskillsi-bddSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BaseModel
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

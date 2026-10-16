@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "rationale"
-community: "falco_monitor.py"
+community: "OutboundInfoFilter"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/falco_monitorpy
+  - community/OutboundInfoFilter
 ---
 
 # Result of filtering agent response content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FilterResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/falco_monitorpy
+#graphify/rationale #graphify/EXTRACTED #community/OutboundInfoFilter

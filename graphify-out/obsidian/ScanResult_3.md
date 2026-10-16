@@ -1,21 +1,22 @@
 ---
-source_file: "gateway/skills/scan.py"
+source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "Daedalus — Concept Illustrator"
-location: "L59"
+community: "SkillGuard"
+location: "L50"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Daedalus__Concept_Illustrator
+  - community/SkillGuard
 ---
 
 # ScanResult
 
 ## Connections
 - [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_2]] - `uses` [INFERRED]
-- [[SkillGuard]] - `uses` [INFERRED]
-- [[SkillsManifest]] - `uses` [INFERRED]
-- [[_print_findings()]] - `references` [EXTRACTED]
+- [[ScanResult_4]] - `uses` [INFERRED]
+- [[Severity]] - `uses` [INFERRED]
+- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[SkillScanError]] - `uses` [INFERRED]
+- [[_finding_categories()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Daedalus__Concept_Illustrator
+#graphify/code #graphify/INFERRED #community/SkillGuard

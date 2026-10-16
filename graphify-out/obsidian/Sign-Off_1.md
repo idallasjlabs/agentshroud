@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ps/SKILL.md"
 type: "document"
-community: "test_dns_canvas_coverage.py"
+community: "Pre-Deployment Checklist"
 location: "L167"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_dns_canvas_coveragepy
+  - community/Pre-Deployment_Checklist
 ---
 
 # Sign-Off
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Deployment Verification_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_dns_canvas_coveragepy
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

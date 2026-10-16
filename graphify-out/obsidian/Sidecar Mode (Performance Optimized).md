@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "Phase Review: P0 — Core Pipeline Wiring"
+community: "ADR-001: Transparent Proxy Decision"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_Review_P0__Core_Pipeline_Wiring
+  - community/ADR-001_Transparent_Proxy_Decision
 ---
 
 # Sidecar Mode (Performance Optimized)
@@ -15,4 +15,4 @@ tags:
 - [[ADR-001 Transparent Proxy Decision]] - `conceptually_related_to` [INFERRED]
 - [[Deployment Modes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_Review_P0__Core_Pipeline_Wiring
+#graphify/document #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_Decision

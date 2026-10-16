@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
 type: "document"
-community: "test_security_integration.py"
+community: "Skill: Technical Illustrator (TI)"
 location: "L236"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_security_integrationpy
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # Render locally with mmdc
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Rendering and Export_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_security_integrationpy
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI

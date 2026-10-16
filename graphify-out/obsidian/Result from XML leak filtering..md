@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "rationale"
-community: "A2AProxyResult"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L21"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2AProxyResult
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Result from XML leak filtering.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FilterResult_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2AProxyResult
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

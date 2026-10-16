@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/security.py"
 type: "rationale"
-community: "api.py"
+community: "TestSecurityFeatures"
 location: "L149"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apipy
+  - community/TestSecurityFeatures
 ---
 
 # Return warning messages for missing security features.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[warn_missing_features()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apipy
+#graphify/rationale #graphify/EXTRACTED #community/TestSecurityFeatures

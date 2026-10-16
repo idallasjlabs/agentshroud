@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md"
 type: "document"
-community: "ENTERPRISE GOVERNANCE PROXY SYSTEM AND METHOD FO"
+community: "Collaborator Setup Checklist"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ENTERPRISE_GOVERNANCE_PROXY_SYSTEM_AND_METHOD_FO
+  - community/Collaborator_Setup_Checklist
 ---
 
 # Required if using external LLM providers
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Collaborator Setup Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ENTERPRISE_GOVERNANCE_PROXY_SYSTEM_AND_METHOD_FO
+#graphify/document #graphify/EXTRACTED #community/Collaborator_Setup_Checklist

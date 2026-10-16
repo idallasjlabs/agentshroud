@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mm/SKILL.md"
+source_file: ".agents/skills/i-socrates/SKILL.md"
 type: "document"
-community: "test_cli_coverage.py"
-location: "L7"
+community: "Socrates — Dialogue Architect"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_cli_coveragepy
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Role
 
 ## Connections
-- [[Skill Mindmap Architect (MM)_1]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_cli_coveragepy
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

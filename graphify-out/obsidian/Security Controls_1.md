@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
+source_file: "docs/vault/05 - Dependencies/playwright.md"
 type: "document"
-community: "TestOverallDetectionRate"
-location: "L27"
+community: "Docker Volumes"
+location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOverallDetectionRate
+  - community/Docker_Volumes
 ---
 
 # Security Controls
 
 ## Connections
-- [[browser-fetch.js_2]] - `contains` [EXTRACTED]
+- [[Playwright_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOverallDetectionRate
+#graphify/document #graphify/EXTRACTED #community/Docker_Volumes

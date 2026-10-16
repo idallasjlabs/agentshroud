@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/cron/templates/html-report-instructions.md"
+source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
 type: "document"
-community: "run_test()"
-location: "L84"
+community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/run_test
+  - community/Required__45_for_text__30_for_UI_elements
 ---
 
 # Rules
 
 ## Connections
-- [[Source Verification Policy (MANDATORY)]] - `contains` [EXTRACTED]
+- [[Skill Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/run_test
+#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements

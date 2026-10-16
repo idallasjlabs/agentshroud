@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-hermes/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-cr/SKILL.md"
 type: "document"
-community: "HIGH — Should Fix Before Release"
-location: "L8"
+community: "Skill: Code Review (CR)"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/HIGH__Should_Fix_Before_Release
+  - community/Skill_Code_Review_CR
 ---
 
 # Role
 
 ## Connections
-- [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
+- [[Skill Code Review (CR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/HIGH__Should_Fix_Before_Release
+#graphify/document #graphify/EXTRACTED #community/Skill_Code_Review_CR

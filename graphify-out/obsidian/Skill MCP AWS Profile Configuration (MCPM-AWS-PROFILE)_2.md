@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "triage-cve-mitigations.py"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)
@@ -14,17 +14,17 @@ tags:
 ## Connections
 - [[AWS Profile Basics_2]] - `contains` [EXTRACTED]
 - [[AWS SSO Configuration_2]] - `contains` [EXTRACTED]
-- [[Best Practices_5]] - `contains` [EXTRACTED]
-- [[Configuration Files_2]] - `contains` [EXTRACTED]
+- [[Best Practices_3]] - `contains` [EXTRACTED]
+- [[Configuration Files_3]] - `contains` [EXTRACTED]
 - [[Configure New Profile_2]] - `contains` [EXTRACTED]
 - [[List Available Profiles_2]] - `contains` [EXTRACTED]
 - [[Multi-Account AWS Access_2]] - `contains` [EXTRACTED]
-- [[Quick Reference_2]] - `contains` [EXTRACTED]
-- [[Related Skills_99]] - `contains` [EXTRACTED]
-- [[Role_90]] - `contains` [EXTRACTED]
-- [[SKILL_159]] - `contains` [EXTRACTED]
+- [[Quick Reference_7]] - `contains` [EXTRACTED]
+- [[Related Skills_58]] - `contains` [EXTRACTED]
+- [[Role_23]] - `contains` [EXTRACTED]
 - [[Switch AWS Profile for MCP_2]] - `contains` [EXTRACTED]
-- [[Troubleshooting_14]] - `contains` [EXTRACTED]
-- [[When to Invoke_7]] - `contains` [EXTRACTED]
+- [[Troubleshooting_5]] - `contains` [EXTRACTED]
+- [[When to Invoke_2]] - `contains` [EXTRACTED]
+- [[hermesskillsi-mcpm-aws-profileSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/triage-cve-mitigationspy
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

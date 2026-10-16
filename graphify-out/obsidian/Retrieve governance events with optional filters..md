@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "rationale"
-community: "TestCanvasAuthHelpers"
+community: "GovernanceAction"
 location: "L463"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestCanvasAuthHelpers
+  - community/GovernanceAction
 ---
 
 # Retrieve governance events with optional filters.
 
 ## Connections
-- [[.get_events()_1]] - `rationale_for` [EXTRACTED]
-- [[.get_governance_events()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_events()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-get_governance_events()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestCanvasAuthHelpers
+#graphify/rationale #graphify/EXTRACTED #community/GovernanceAction

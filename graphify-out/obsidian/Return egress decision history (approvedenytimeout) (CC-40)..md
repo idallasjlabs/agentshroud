@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "test_soc_bots.py"
 location: "L503"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/test_soc_botspy
 ---
 
 # Return egress decision history (approve/deny/timeout) (CC-40).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_egress_history()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/test_soc_botspy

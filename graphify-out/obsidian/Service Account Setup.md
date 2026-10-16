@@ -1,17 +1,17 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Update AgentShroud"
+community: "Integration Guide"
 location: "L461"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Update_AgentShroud
+  - community/Integration_Guide
 ---
 
 # Service Account Setup
 
 ## Connections
-- [[1Password Integration]] - `contains` [EXTRACTED]
+- [[1Password Integration_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Update_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Integration_Guide

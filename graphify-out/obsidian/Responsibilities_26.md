@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md"
 type: "document"
-community: "🎯 High-Value Features (Justify the Effort)"
+community: "mcp_audit.py"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_High-Value_Features_Justify_the_Effort
+  - community/mcp_auditpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[config.py_3]] - `contains` [EXTRACTED]
+- [[mcp_audit.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_High-Value_Features_Justify_the_Effort
+#graphify/document #graphify/EXTRACTED #community/mcp_auditpy

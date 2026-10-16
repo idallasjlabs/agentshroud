@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "document"
-community: "🔴 CRITICAL — Not Wired (code exists, tests pass,"
+community: "SECTION 9: IMPORTANT NOTES"
 location: "L265"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_CRITICAL__Not_Wired_code_exists_tests_pass
+  - community/SECTION_9_IMPORTANT_NOTES
 ---
 
 # SECTION 9: IMPORTANT NOTES
@@ -18,4 +18,4 @@ tags:
 - [[Trademark vs. Patent]] - `contains` [EXTRACTED]
 - [[Why Standard Character Mark First]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_CRITICAL__Not_Wired_code_exists_tests_pass
+#graphify/document #graphify/EXTRACTED #community/SECTION_9_IMPORTANT_NOTES

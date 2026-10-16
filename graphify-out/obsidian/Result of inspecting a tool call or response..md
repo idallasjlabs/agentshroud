@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "rationale"
-community: "TestParanoidConfig"
+community: "MCPPermissionManager"
 location: "L98"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestParanoidConfig
+  - community/MCPPermissionManager
 ---
 
 # Result of inspecting a tool call or response.
 
 ## Connections
-- [[InspectionResult]] - `rationale_for` [EXTRACTED]
+- [[InspectionResult_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestParanoidConfig
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

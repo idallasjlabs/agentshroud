@@ -1,21 +1,26 @@
 ---
-source_file: "gateway/soc/models.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "EncryptedStore"
-location: "L91"
+community: "TestParamSanitization"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/TestParamSanitization
 ---
 
 # RiskLevel
 
 ## Connections
-- [[Enum]] - `inherits` [EXTRACTED]
-- [[models.py_1]] - `contains` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
-- [[test_soc_egress.py]] - `imports` [EXTRACTED]
-- [[test_soc_models.py]] - `imports` [EXTRACTED]
+- [[dot-_load_custom_patterns()]] - `calls` [EXTRACTED]
+- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[Risk levels for tool call chains.]] - `rationale_for` [EXTRACTED]
+- [[TestParamSanitization]] - `uses` [INFERRED]
+- [[TestReversibilityScoring]] - `uses` [INFERRED]
+- [[TestShellBleedPatterns]] - `uses` [INFERRED]
+- [[TestToolChainAnalyzer_1]] - `uses` [INFERRED]
+- [[str_2]] - `inherits` [EXTRACTED]
+- [[test_tool_chain_analyzer.py]] - `imports` [EXTRACTED]
+- [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EncryptedStore
+#graphify/code #graphify/EXTRACTED #community/TestParamSanitization

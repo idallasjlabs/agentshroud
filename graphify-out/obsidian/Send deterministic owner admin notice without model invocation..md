@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "StdioConnection"
+community: "telegram_proxy.py"
 location: "L7711"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/telegram_proxypy
 ---
 
 # Send deterministic owner admin notice without model invocation.
 
 ## Connections
-- [[._send_owner_admin_notice()]] - `rationale_for` [EXTRACTED]
+- [[dot-_send_owner_admin_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/StdioConnection
+#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy

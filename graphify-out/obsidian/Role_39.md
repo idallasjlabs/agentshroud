@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-vulcan/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
 type: "document"
-community: "TestStrangerRateLimit"
-location: "L8"
+community: "Skill: Technical Illustrator (TI)"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestStrangerRateLimit
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # Role
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_1]] - `contains` [EXTRACTED]
+- [[Skill Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestStrangerRateLimit
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI

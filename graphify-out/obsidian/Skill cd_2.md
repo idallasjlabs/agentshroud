@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cd/SKILL.md"
+source_file: ".agents/skills/i-cd/SKILL.md"
 type: "document"
-community: "BaseModel"
+community: "Skill: CI/CD Pipeline Advisor (CICD)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BaseModel
+  - community/Skill_CI/CD_Pipeline_Advisor_CICD
 ---
 
 # Skill: cd
 
 ## Connections
-- [[SKILL_138]] - `contains` [EXTRACTED]
-- [[SKILL_142]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-cdSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BaseModel
+#graphify/document #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD

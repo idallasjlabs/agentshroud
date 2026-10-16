@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "GroupRoleResolver"
 location: "L155"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/GroupRoleResolver
 ---
 
 # Return all user→role mappings for a group.
 
 ## Connections
-- [[.get_all_roles()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_all_roles()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver

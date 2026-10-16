@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-observability/SKILL.md"
 type: "document"
-community: "Jira Weekly Review"
+community: ".agents/skills/i-observability/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Jira_Weekly_Review
+  - community/agents/skills/i-observability/SKILLmd
 ---
 
 # Skill: observability
 
 ## Connections
-- [[SKILL_37]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-observabilitySKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Jira_Weekly_Review
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-observability/SKILLmd

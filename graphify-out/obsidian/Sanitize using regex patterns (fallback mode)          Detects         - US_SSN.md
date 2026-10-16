@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "ResourceGuard"
+community: "ToolResultSanitizer"
 location: "L271"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/ToolResultSanitizer
 ---
 
 # Sanitize using regex patterns (fallback mode)          Detects:         - US_SSN
 
 ## Connections
-- [[._sanitize_regex()]] - `rationale_for` [EXTRACTED]
+- [[dot-_sanitize_regex()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

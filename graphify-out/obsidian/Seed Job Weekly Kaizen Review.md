@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/cron/jobs.yaml"
 type: "document"
-community: "ssh-configuration.md"
+community: "_seed_cron"
 location: "L44-L57"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/ssh-configurationmd
+  - community/_seed_cron
 ---
 
 # Seed Job: Weekly Kaizen Review
@@ -16,4 +16,4 @@ tags:
 - [[Prompt Weekly Kaizen Review]] - `conceptually_related_to` [INFERRED]
 - [[Weekly Kaizen Review (Hermes Prompt)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/ssh-configurationmd
+#graphify/document #graphify/INFERRED #community/_seed_cron

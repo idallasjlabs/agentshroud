@@ -1,26 +1,25 @@
 ---
-source_file: "docker/config/openclaw/skills/i-odev/SKILL.md"
+source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
 type: "document"
-community: "LLM Operating Context — Isaiah Jefferson"
+community: "Mode A — Single task"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LLM_Operating_Context__Isaiah_Jefferson
+  - community/Mode_A__Single_task
 ---
 
 # Skill: OpenClaw Dev Workflow (ODEV)
 
 ## Connections
-- [[Guardrails_15]] - `contains` [EXTRACTED]
-- [[Invocation_9]] - `contains` [EXTRACTED]
+- [[Guardrails_7]] - `contains` [EXTRACTED]
+- [[Invocation_5]] - `contains` [EXTRACTED]
 - [[Jira ticket — every development batch gets one_5]] - `contains` [EXTRACTED]
-- [[Mode A — Single task_5]] - `contains` [EXTRACTED]
+- [[Mode A — Single task_1]] - `contains` [EXTRACTED]
 - [[Mode B — Comprehensive review sweep_5]] - `contains` [EXTRACTED]
 - [[Reviewers and fixer available to you_5]] - `contains` [EXTRACTED]
-- [[Role_95]] - `contains` [EXTRACTED]
-- [[SKILL_150]] - `contains` [EXTRACTED]
-- [[SKILL_165]] - `contains` [EXTRACTED]
+- [[Role_32]] - `contains` [EXTRACTED]
 - [[Tools you have for this workflow_5]] - `contains` [EXTRACTED]
+- [[hermesskillsi-odevSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LLM_Operating_Context__Isaiah_Jefferson
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

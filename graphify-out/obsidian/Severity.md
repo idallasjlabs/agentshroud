@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "Skill: Data Validation (DATA-VAL)"
+community: "Severity"
 location: "L76"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Skill_Data_Validation_DATA-VAL
+  - community/Severity
 ---
 
 # Severity
 
 ## Connections
-- [[.severity()]] - `references` [EXTRACTED]
-- [[CompletedProcess_3]] - `uses` [INFERRED]
+- [[dot-severity()]] - `references` [EXTRACTED]
+- [[CompletedProcess]] - `uses` [INFERRED]
 - [[IntEnum]] - `inherits` [EXTRACTED]
 - [[Ordered severity ladder (``IntEnum`` so comparisons work).]] - `rationale_for` [EXTRACTED]
-- [[Path_38]] - `uses` [INFERRED]
-- [[ScanResult_4]] - `uses` [INFERRED]
-- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[Path_44]] - `uses` [INFERRED]
+- [[ScanResult_3]] - `uses` [INFERRED]
+- [[SkillGuard]] - `uses` [INFERRED]
 - [[TestAggregation]] - `uses` [INFERRED]
 - [[TestCleanSkill]] - `uses` [INFERRED]
 - [[TestClient]] - `uses` [INFERRED]
@@ -37,4 +37,4 @@ tags:
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 - [[test_skill_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Skill_Data_Validation_DATA-VAL
+#graphify/code #graphify/INFERRED #community/Severity

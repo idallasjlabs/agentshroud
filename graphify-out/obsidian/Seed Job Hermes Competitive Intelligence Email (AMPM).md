@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/cron/jobs.yaml"
 type: "document"
-community: "TestSplitForSpeech"
+community: "Prompt: Hermes Competitive Intelligence Email (AM/PM)"
 location: "L177-L206"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/TestSplitForSpeech
+  - graphify/EXTRACTED
+  - community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM
 ---
 
 # Seed Job: Hermes Competitive Intelligence Email (AM/PM)
@@ -15,4 +15,4 @@ tags:
 - [[Prompt Hermes Competitive Intelligence Email (AMPM)]] - `conceptually_related_to` [INFERRED]
 - [[Seed Job Hermes Competitive Landscape Update (AMPM)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/TestSplitForSpeech
+#graphify/document #graphify/EXTRACTED #community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM

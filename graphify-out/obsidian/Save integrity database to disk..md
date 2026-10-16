@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "falco_monitor.py"
+community: "lifespan.py"
 location: "L112"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/falco_monitorpy
+  - community/lifespanpy
 ---
 
 # Save integrity database to disk.
 
 ## Connections
-- [[._save_integrity_database()]] - `rationale_for` [EXTRACTED]
+- [[dot-_save_integrity_database()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/falco_monitorpy
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

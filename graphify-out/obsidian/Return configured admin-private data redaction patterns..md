@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "asyncio"
+community: "MCPPermissionManager"
 location: "L363"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/MCPPermissionManager
 ---
 
 # Return configured admin-private data redaction patterns.
 
 ## Connections
-- [[.get_private_data_patterns()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_private_data_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/asyncio
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

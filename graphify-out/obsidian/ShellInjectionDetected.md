@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "test_filter_xml_blocks.py"
+community: "ConsentFramework"
 location: "L27"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_filter_xml_blockspy
+  - community/ConsentFramework
 ---
 
 # ShellInjectionDetected
 
 ## Connections
-- [[.validate_config()]] - `calls` [EXTRACTED]
+- [[dot-validate_config()]] - `calls` [EXTRACTED]
 - [[ConfigValidationError]] - `inherits` [EXTRACTED]
 - [[TestConsentDecision]] - `uses` [INFERRED]
 - [[TestEnvironmentValidation]] - `uses` [INFERRED]
@@ -20,4 +20,4 @@ tags:
 - [[TestWhitelistBlacklist]] - `uses` [INFERRED]
 - [[consent_framework.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_filter_xml_blockspy
+#graphify/code #graphify/INFERRED #community/ConsentFramework

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
 type: "concept"
-community: "AgentShroud: A Transparent Proxy Framework for E"
+community: "GSDE&G Skills Reference Guide"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_A_Transparent_Proxy_Framework_for_E
+  - community/GSDEG_Skills_Reference_Guide
 ---
 
 # STPA-Sec Methodology
@@ -14,4 +14,4 @@ tags:
 - [[i-sec-defense SKILL (Blue Team Security Auditor, AgentShroud)]] - `references` [EXTRACTED]
 - [[i-sec-offense SKILL (Red Team Adversarial Tester, AgentShroud)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_A_Transparent_Proxy_Framework_for_E
+#graphify/concept #graphify/EXTRACTED #community/GSDEG_Skills_Reference_Guide

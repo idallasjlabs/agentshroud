@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "background.js"
-location: "L364"
+community: "ToolChainAnalyzer"
+location: "L503"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/backgroundjs
+  - community/ToolChainAnalyzer
 ---
 
 # Remove old sessions to prevent memory bloat.
 
 ## Connections
-- [[._cleanup_old_sessions()]] - `rationale_for` [EXTRACTED]
+- [[dot-_cleanup_old_sessions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/backgroundjs
+#graphify/rationale #graphify/EXTRACTED #community/ToolChainAnalyzer

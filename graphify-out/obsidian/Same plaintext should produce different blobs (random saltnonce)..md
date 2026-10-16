@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "lifespan.py"
+community: "AgentRegistry"
 location: "L68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/AgentRegistry
 ---
 
 # Same plaintext should produce different blobs (random salt/nonce).
 
 ## Connections
-- [[.test_different_encryptions_differ()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_different_encryptions_differ()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry

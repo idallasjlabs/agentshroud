@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-odev/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "LLM Operating Context — Isaiah Jefferson"
+community: "Daedalus — Concept Illustrator"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LLM_Operating_Context__Isaiah_Jefferson
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Role
 
 ## Connections
-- [[Skill OpenClaw Dev Workflow (ODEV)_2]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LLM_Operating_Context__Isaiah_Jefferson
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

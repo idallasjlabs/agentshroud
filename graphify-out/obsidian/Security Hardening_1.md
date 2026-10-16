@@ -1,17 +1,18 @@
 ---
-source_file: "docs/planning/RELEASE-PLAN.md"
+source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
 type: "document"
-community: "Telegram Bot Setup for OpenClaw"
-location: "L417"
+community: "Dockerfile — Gateway"
+location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Bot_Setup_for_OpenClaw
+  - community/Dockerfile__Gateway
 ---
 
 # Security Hardening
 
 ## Connections
-- [[v1.3.0 — Platform Expansion (53 items)]] - `contains` [EXTRACTED]
+- [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
+- [[Dockerfile.gateway vault note]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Bot_Setup_for_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Gateway

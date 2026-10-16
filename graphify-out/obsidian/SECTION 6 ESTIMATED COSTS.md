@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "Daedalus — Concept Illustrator"
+community: "AgentShroud -- USPTO Provisional Patent Application"
 location: "L847"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator
+  - community/AgentShroud_--_USPTO_Provisional_Patent_Application
 ---
 
 # SECTION 6: ESTIMATED COSTS
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud -- USPTO Provisional Patent Application]] - `contains` [EXTRACTED]
 - [[Combined Filing Costs (Patent + Trademark)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Provisional_Patent_Application

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "ApprovalRequest"
+community: "ForwardRequest"
 location: "L23"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/ForwardRequest
 ---
 
 # Request to forward content through the gateway      Received from iOS Shortcuts,
 
 ## Connections
-- [[ForwardRequest]] - `rationale_for` [EXTRACTED]
+- [[ForwardRequest_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/rationale #graphify/EXTRACTED #community/ForwardRequest

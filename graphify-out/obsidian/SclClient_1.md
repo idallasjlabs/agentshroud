@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "Community 36"
+community: "main.rs"
 location: "L490"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_36
+  - community/mainrs
 ---
 
 # SclClient
@@ -17,7 +17,7 @@ tags:
 - [[dot-post()_2]] - `method` [EXTRACTED]
 - [[Client]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
-- [[main()_18]] - `calls` [EXTRACTED]
+- [[main()_21]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_36
+#graphify/code #graphify/EXTRACTED #community/mainrs

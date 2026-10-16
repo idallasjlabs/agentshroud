@@ -1,17 +1,17 @@
 ---
-source_file: "AGENTS.md"
+source_file: "docker/config/hermes/skills/i-mm/SKILL.md"
 type: "document"
-community: "OpenClaw Skill Metadata Schema (frontmatter conv"
-location: "L19"
+community: "Skill: Mindmap Architect (MM)"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # Rules
 
 ## Connections
-- [[0) PRIME DIRECTIVE (CODEX ROLE - NON-NEGOTIABLE)]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

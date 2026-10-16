@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-kanban/SKILL.md"
 type: "document"
-community: "AgentShroud Config with Tool Risk Tiers (example"
+community: ".agents/skills/i-kanban/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Config_with_Tool_Risk_Tiers_example
+  - community/agents/skills/i-kanban/SKILLmd
 ---
 
 # Skill: kanban
 
 ## Connections
-- [[SKILL_28]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-kanbanSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Config_with_Tool_Risk_Tiers_example
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-kanban/SKILLmd

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "Hermes Dev Workflow (HDEV) Skill"
+community: "SECTION 3: DRAWINGS"
 location: "L263"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Dev_Workflow_HDEV_Skill
+  - community/SECTION_3_DRAWINGS
 ---
 
 # SECTION 3: DRAWINGS
@@ -21,4 +21,4 @@ tags:
 - [[FIGURE 5 — Multi-Agent Governance with Isolation]] - `contains` [EXTRACTED]
 - [[FIGURE 6 — Delegated Authority Model]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Dev_Workflow_HDEV_Skill
+#graphify/document #graphify/EXTRACTED #community/SECTION_3_DRAWINGS

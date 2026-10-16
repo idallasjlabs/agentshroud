@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "test_llm_proxy_local_parity.py"
+community: "MCPToolCall"
 location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxy_local_paritypy
+  - community/MCPToolCall
 ---
 
 # Represents an MCP tool_use request.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCPToolCall]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy
+#graphify/rationale #graphify/EXTRACTED #community/MCPToolCall

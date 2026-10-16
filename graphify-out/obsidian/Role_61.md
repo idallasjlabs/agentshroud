@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-pca/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "AgentShroud State Diagrams"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_State_Diagrams
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # Role
 
 ## Connections
-- [[Skill Pre-Change Analysis (PCA)_1]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_State_Diagrams
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

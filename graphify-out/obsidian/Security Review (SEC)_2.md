@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec/README.md"
+source_file: "docker/config/hermes/skills/i-sec/README.md"
 type: "document"
-community: "TestDashboardWSToken"
+community: "hermes/skills/i-bs/README.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestDashboardWSToken
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Security Review (SEC)
 
 ## Connections
-- [[Purpose_105]] - `contains` [EXTRACTED]
-- [[README_110]] - `contains` [EXTRACTED]
-- [[Related Skills_114]] - `contains` [EXTRACTED]
-- [[SKILL_142]] - `contains` [EXTRACTED]
-- [[Usage_115]] - `contains` [EXTRACTED]
+- [[Purpose_98]] - `contains` [EXTRACTED]
+- [[Related Skills_79]] - `contains` [EXTRACTED]
+- [[Usage_90]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[hermesskillsi-secREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestDashboardWSToken
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

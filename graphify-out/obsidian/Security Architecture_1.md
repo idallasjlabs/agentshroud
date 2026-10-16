@@ -1,24 +1,17 @@
 ---
-source_file: "SECURITY.md"
+source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "SessionContext"
-location: "L15"
+community: "Browser — Secure Browser Automation"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SessionContext
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Security Architecture
 
 ## Connections
-- [[AgentShroud™ Security Policy]] - `contains` [EXTRACTED]
-- [[Layer 1 — Core Pipeline (P0)]] - `contains` [EXTRACTED]
-- [[Layer 2 — Middleware (P1)]] - `contains` [EXTRACTED]
-- [[Layer 3 — Output Protection]] - `contains` [EXTRACTED]
-- [[Layer 4 — Tool & Agent Control]] - `contains` [EXTRACTED]
-- [[Layer 5 — Network & Egress]] - `contains` [EXTRACTED]
-- [[Layer 6 — File & Memory Integrity]] - `contains` [EXTRACTED]
-- [[Layer 7 — Infrastructure & Supply Chain]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SessionContext
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

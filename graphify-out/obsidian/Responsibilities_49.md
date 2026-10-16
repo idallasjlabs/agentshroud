@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
 type: "document"
-community: "Shutdown & Recovery"
-location: "L18"
+community: "config.py"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Shutdown__Recovery
+  - community/configpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[oauth_security.py_2]] - `contains` [EXTRACTED]
+- [[config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Shutdown__Recovery
+#graphify/document #graphify/EXTRACTED #community/configpy

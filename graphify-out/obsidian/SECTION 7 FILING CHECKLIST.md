@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "document"
-community: "TestRunUpstreamCveCheck"
+community: "SECTION 7: FILING CHECKLIST"
 location: "L227"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestRunUpstreamCveCheck
+  - community/SECTION_7_FILING_CHECKLIST
 ---
 
 # SECTION 7: FILING CHECKLIST
@@ -18,4 +18,4 @@ tags:
 - [[Post-Filing]] - `contains` [EXTRACTED]
 - [[Pre-Filing Preparation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestRunUpstreamCveCheck
+#graphify/document #graphify/EXTRACTED #community/SECTION_7_FILING_CHECKLIST

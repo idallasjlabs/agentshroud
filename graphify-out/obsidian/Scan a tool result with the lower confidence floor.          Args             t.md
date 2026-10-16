@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "rationale"
-community: "test_soc_router_coverage.py"
+community: "DifferentialPIIDetector"
 location: "L372"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/DifferentialPIIDetector
 ---
 
 # Scan a tool result with the lower confidence floor.          Args:             t
 
 ## Connections
-- [[.scan_tool_result()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-scan_tool_result()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/DifferentialPIIDetector

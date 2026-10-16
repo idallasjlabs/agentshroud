@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "rationale"
-community: "TestConfigValidation"
+community: "SecureBrowser"
 location: "L35"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/SecureBrowser
 ---
 
 # Risk classification for browser actions
 
 ## Connections
-- [[RiskLevel_6]] - `rationale_for` [EXTRACTED]
+- [[RiskLevel_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

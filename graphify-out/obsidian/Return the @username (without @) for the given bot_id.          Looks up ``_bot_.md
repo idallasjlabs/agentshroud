@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TestPathIsolationManager"
+community: "._proxy_request_impl"
 location: "L627"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/_proxy_request_impl
 ---
 
 # Return the @username (without @) for the given bot_id.          Looks up ``_bot_
 
 ## Connections
-- [[._username_for_bot()]] - `rationale_for` [EXTRACTED]
+- [[dot-_username_for_bot()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/rationale #graphify/EXTRACTED #community/_proxy_request_impl

@@ -1,18 +1,18 @@
 ---
-source_file: ".agents/skills/i-sdlc/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sdlc/SKILL.md"
 type: "document"
-community: "DNSFilterConfig"
+community: "hermes/skills/i-cr/SKILL.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # Skill: sdlc
 
 ## Connections
-- [[SKILL_15]] - `contains` [EXTRACTED]
-- [[SKILL_50]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-sdlcSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

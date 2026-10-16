@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/agents/i-security-reviewer.md"
 type: "document"
-community: "10. Troubleshooting"
+community: "hermes/SOUL.md"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/10_Troubleshooting
+  - community/hermes/SOULmd
 ---
 
 # Security Reviewer Agent
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Agents Folder README]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/10_Troubleshooting
+#graphify/document #graphify/INFERRED #community/hermes/SOULmd

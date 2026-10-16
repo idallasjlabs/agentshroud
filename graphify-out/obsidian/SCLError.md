@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "EncryptedStore"
+community: "Enum"
 location: "L241"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/Enum
 ---
 
 # SCLError
 
 ## Connections
-- [[.test_error_model()]] - `calls` [EXTRACTED]
-- [[.test_permission_denied_error()]] - `calls` [EXTRACTED]
+- [[dot-test_error_model()]] - `calls` [EXTRACTED]
+- [[dot-test_permission_denied_error()]] - `calls` [EXTRACTED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
-- [[models.py_1]] - `contains` [EXTRACTED]
+- [[socmodels.py]] - `contains` [EXTRACTED]
 - [[test_soc_egress.py]] - `imports` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EncryptedStore
+#graphify/code #graphify/EXTRACTED #community/Enum

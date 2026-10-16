@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ab/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-production/SKILL.md"
 type: "document"
-community: "TestHandleEvent"
+community: "Phase 3: MITIGATE (Rollback First!)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestHandleEvent
+  - community/Phase_3_MITIGATE_Rollback_First
 ---
 
 # Role
 
 ## Connections
-- [[Skill Audit Branch (AB) — Merge Regression Detection_1]] - `contains` [EXTRACTED]
+- [[Skill Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestHandleEvent
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First

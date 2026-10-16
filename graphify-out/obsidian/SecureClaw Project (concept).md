@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-pm/SKILL.md"
 type: "concept"
-community: "curriculum.md (podcast pipeline learning objecti"
+community: "SecureClaw Project (concept)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/curriculummd_podcast_pipeline_learning_objecti
+  - community/SecureClaw_Project_concept
 ---
 
 # SecureClaw Project (concept)
 
-#graphify/concept #graphify/EXTRACTED #community/curriculummd_podcast_pipeline_learning_objecti
+#graphify/concept #graphify/EXTRACTED #community/SecureClaw_Project_concept

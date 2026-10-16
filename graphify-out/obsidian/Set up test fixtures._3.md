@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
+source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "rationale"
-community: "export-openapi.sh"
-location: "L52"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L20"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/export-openapish
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[.setup_method()_37]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_21]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/export-openapish
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

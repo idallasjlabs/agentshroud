@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "scanner_integration.py"
 location: "L680"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/scanner_integrationpy
 ---
 
 # Return True if wazuh-agentd is running as a local process inside this container.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_is_wazuh_agent_running()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/rationale #graphify/EXTRACTED #community/scanner_integrationpy

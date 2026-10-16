@@ -12,12 +12,12 @@ tags:
 # SecurityError
 
 ## Connections
-- [[.click()_2]] - `calls` [EXTRACTED]
-- [[.extract()_2]] - `calls` [EXTRACTED]
-- [[.fill_field()_2]] - `calls` [EXTRACTED]
-- [[.navigate()_2]] - `calls` [EXTRACTED]
-- [[Exception]] - `inherits` [EXTRACTED]
+- [[dot-click()_2]] - `calls` [EXTRACTED]
+- [[dot-extract()_2]] - `calls` [EXTRACTED]
+- [[dot-fill_field()_2]] - `calls` [EXTRACTED]
+- [[dot-navigate()_2]] - `calls` [EXTRACTED]
+- [[Exception_2]] - `inherits` [EXTRACTED]
 - [[Raised when security policy is violated_2]] - `rationale_for` [EXTRACTED]
-- [[browse.py_2]] - `contains` [EXTRACTED]
+- [[openclawskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser

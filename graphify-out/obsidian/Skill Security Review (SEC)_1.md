@@ -1,25 +1,25 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec/SKILL.md"
 type: "document"
-community: "Technical Specification"
+community: "Skill: Security Review (SEC)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Specification
+  - community/Skill_Security_Review_SEC
 ---
 
 # Skill: Security Review (SEC)
 
 ## Connections
-- [[Anti-Patterns to Flag_10]] - `contains` [EXTRACTED]
+- [[Anti-Patterns to Flag_20]] - `contains` [EXTRACTED]
 - [[Core Principle_1]] - `contains` [EXTRACTED]
-- [[Output Format_23]] - `contains` [EXTRACTED]
+- [[Output Format_33]] - `contains` [EXTRACTED]
 - [[Review Layers_1]] - `contains` [EXTRACTED]
-- [[Role_67]] - `contains` [EXTRACTED]
-- [[SKILL_79]] - `contains` [EXTRACTED]
-- [[SKILL_116]] - `contains` [EXTRACTED]
+- [[Role_83]] - `contains` [EXTRACTED]
 - [[SecureClaw-Specific Threat Model_1]] - `contains` [EXTRACTED]
 - [[Verification Commands_1]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-secSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Specification
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

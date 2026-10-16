@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "test_image_verifier.py"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_image_verifierpy
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Skill: MCP Doctor (MCPM-DOCTOR)
@@ -15,11 +15,11 @@ tags:
 - [[Common Issues & Fixes_2]] - `contains` [EXTRACTED]
 - [[Diagnostic Capabilities_2]] - `contains` [EXTRACTED]
 - [[Diagnostic Workflow_2]] - `contains` [EXTRACTED]
-- [[Output Format_31]] - `contains` [EXTRACTED]
-- [[Related Skills_101]] - `contains` [EXTRACTED]
-- [[Role_91]] - `contains` [EXTRACTED]
-- [[SKILL_142]] - `contains` [EXTRACTED]
-- [[SKILL_160]] - `contains` [EXTRACTED]
-- [[When to Invoke_8]] - `contains` [EXTRACTED]
+- [[Output Format_18]] - `contains` [EXTRACTED]
+- [[Related Skills_84]] - `contains` [EXTRACTED]
+- [[Role_55]] - `contains` [EXTRACTED]
+- [[When to Invoke_5]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-mcpm-doctorSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_image_verifierpy
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "rationale"
-community: "AgentShroud Red Team Adversarial Tester"
+community: "MultiHostResult"
 location: "L70"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester
+  - community/MultiHostResult
 ---
 
 # Result of running the command on a single host.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[HostResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester
+#graphify/rationale #graphify/EXTRACTED #community/MultiHostResult

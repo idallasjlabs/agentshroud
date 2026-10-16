@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "ResourceGuard"
+community: "MiddlewareManager"
 location: "L128"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ResourceGuard
+  - community/MiddlewareManager
 ---
 
 # SecurityModuleConfig
 
 ## Connections
-- [[.test_security_module_config_default_mode()]] - `calls` [EXTRACTED]
-- [[.test_security_module_config_defaults()]] - `calls` [EXTRACTED]
+- [[dot-test_security_module_config_default_mode()]] - `calls` [EXTRACTED]
+- [[dot-test_security_module_config_defaults()]] - `calls` [EXTRACTED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
-- [[SSHConfig]] - `uses` [INFERRED]
+- [[SSHConfig_2]] - `uses` [INFERRED]
 - [[Security module configuration]] - `rationale_for` [EXTRACTED]
 - [[TestEnforceDefaults]] - `uses` [INFERRED]
 - [[TestGetModuleModeEnforceDefault]] - `uses` [INFERRED]
@@ -24,8 +24,8 @@ tags:
 - [[TestModuleEnforcement]] - `uses` [INFERRED]
 - [[TestModuleInstantiationInEnforceMode]] - `uses` [INFERRED]
 - [[TestSecurityConfigDefaults]] - `uses` [INFERRED]
-- [[config.py]] - `contains` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `contains` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_enforce_defaults.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ResourceGuard
+#graphify/code #graphify/INFERRED #community/MiddlewareManager

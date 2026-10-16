@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-aws/SKILL.md"
 type: "document"
-community: "8. Performance & Testing"
+community: "Operating Rules (Non-Negotiable)"
 location: "L77"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/8_Performance__Testing
+  - community/Operating_Rules_Non-Negotiable
 ---
 
 # Rule 6: Never Delete Automatically
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Operating Rules (Non-Negotiable)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/8_Performance__Testing
+#graphify/document #graphify/EXTRACTED #community/Operating_Rules_Non-Negotiable

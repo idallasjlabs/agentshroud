@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "rationale"
-community: "soc.js"
+community: "LLMProxy"
 location: "L683"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/socjs
+  - community/LLMProxy
 ---
 
 # Repeated connect failures log one WARNING per window, not per request.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_backend_unavailable_warning_rate_limited()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/socjs
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxy

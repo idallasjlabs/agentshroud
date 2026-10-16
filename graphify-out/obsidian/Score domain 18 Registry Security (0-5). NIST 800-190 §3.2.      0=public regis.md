@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "scanner_integration.py"
 location: "L1503"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/scanner_integrationpy
 ---
 
 # Score domain 18: Registry Security (0-5). NIST 800-190 §3.2.      0=public regis
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_score_registry_security()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/rationale #graphify/EXTRACTED #community/scanner_integrationpy
