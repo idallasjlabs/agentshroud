@@ -12,6 +12,6 @@ tags:
 # EgressPolicy.matches_domain(domain)
 
 ## Connections
-- [[Function Details_21]] - `contains` [EXTRACTED]
+- [[Function Details]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/EgressFilter

@@ -16,6 +16,6 @@ tags:
 - [[PromptGuard._check_encoded_content(text)]] - `contains` [EXTRACTED]
 - [[PromptGuard._check_unicode_tricks(text)]] - `contains` [EXTRACTED]
 - [[PromptGuard.scan(text)]] - `contains` [EXTRACTED]
-- [[prompt_guard.py]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/prompt_guardpymd

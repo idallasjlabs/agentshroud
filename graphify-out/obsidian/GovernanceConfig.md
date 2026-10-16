@@ -12,7 +12,7 @@ tags:
 # GovernanceConfig
 
 ## Connections
-- [[dot-__init__()_173]] - `references` [EXTRACTED]
+- [[dot-__init__()_138]] - `references` [EXTRACTED]
 - [[dot-test_api_calls_exceed()]] - `calls` [EXTRACTED]
 - [[dot-test_tokens_exceed_budget()]] - `calls` [EXTRACTED]
 - [[dot-test_tool_calls_budget_blocks_authorize_tool()]] - `calls` [EXTRACTED]

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/security-architecture.md"
+source_file: "docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md"
 type: "document"
-community: "AgentShroud Security Architecture"
+community: "AgentShroud (system, C4 context)"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/AgentShroud_system_C4_context
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
+- [[Secrets Usage and Collaborator Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_system_C4_context

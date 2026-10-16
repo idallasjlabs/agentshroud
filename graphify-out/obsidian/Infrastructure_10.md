@@ -12,6 +12,6 @@ tags:
 # Infrastructure
 
 ## Connections
-- [[Architecture_12]] - `contains` [EXTRACTED]
+- [[Architecture_13]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Architecture

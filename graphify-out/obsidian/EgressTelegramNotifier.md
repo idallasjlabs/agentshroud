@@ -12,7 +12,7 @@ tags:
 # EgressTelegramNotifier
 
 ## Connections
-- [[dot-__init__()_132]] - `method` [EXTRACTED]
+- [[dot-__init__()_127]] - `method` [EXTRACTED]
 - [[dot-_api_url()]] - `method` [EXTRACTED]
 - [[dot-_async_send()]] - `method` [EXTRACTED]
 - [[dot-_send_request()]] - `method` [EXTRACTED]

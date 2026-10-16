@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "PIIConfig"
+community: "PipelineAction"
 location: "L318"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/PipelineAction
 ---
 
 # E2E-09: Two agents process independently with no cross-contamination.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestE2E09SessionIsolation]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/PipelineAction

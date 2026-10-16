@@ -12,6 +12,6 @@ tags:
 # Initialize user roles based on configuration.
 
 ## Connections
-- [[dot-__post_init__()_9]] - `rationale_for` [EXTRACTED]
+- [[dot-__post_init__()_6]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy

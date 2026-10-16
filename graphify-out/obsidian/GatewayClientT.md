@@ -1,19 +1,19 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "main.rs"
+community: "test_soc_realtime_coverage.py"
 location: "L340"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/test_soc_realtime_coveragepy
 ---
 
 # GatewayClient<T>
 
 ## Connections
-- [[dot-get()_2]] - `method` [EXTRACTED]
+- [[dot-get()_3]] - `method` [EXTRACTED]
 - [[dot-new()]] - `method` [EXTRACTED]
-- [[dot-post()_1]] - `method` [EXTRACTED]
+- [[dot-post()_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

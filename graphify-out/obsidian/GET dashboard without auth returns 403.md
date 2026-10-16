@@ -12,6 +12,6 @@ tags:
 # GET /dashboard without auth returns 403
 
 ## Connections
-- [[test_dashboard_requires_auth()_1]] - `rationale_for` [EXTRACTED]
+- [[test_dashboard_requires_auth()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_dashboardpy

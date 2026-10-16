@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[AgentShroud v0.9.0]] - `contains` [EXTRACTED]
-- [[AgentShroud v1.3.0]] - `contains` [EXTRACTED]
+- [[AgentShroud v1.3.0_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_v090

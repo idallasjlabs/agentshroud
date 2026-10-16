@@ -22,6 +22,6 @@ tags:
 - [[Management Dashboard Router — `gatewaywebmanagement.py` (prefix `manage`)]] - `contains` [EXTRACTED]
 - [[SOC Router — `gatewaysocrouter.py` (prefix `socv1`)]] - `contains` [EXTRACTED]
 - [[Version Router — `gatewayingest_apiversion_routes.py` (prefix `apiv1versions`)]] - `contains` [EXTRACTED]
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[main.py]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/mainpy

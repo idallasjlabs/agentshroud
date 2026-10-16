@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/trivy.md"
 type: "document"
-community: "All Dependencies.md"
+community: "ClamAV"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - community/ClamAV
 ---
 
 # Gateway Usage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Trivy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/document #graphify/EXTRACTED #community/ClamAV

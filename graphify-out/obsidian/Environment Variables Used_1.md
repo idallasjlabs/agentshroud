@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
+source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "main.py"
-location: "L433"
+community: "Audit Ledger (SHA-256 hash only)"
+location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpy
+  - community/Audit_Ledger_SHA-256_hash_only
 ---
 
 # Environment Variables Used
 
 ## Connections
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpy
+#graphify/document #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only

@@ -12,7 +12,7 @@ tags:
 # IntelReportStore
 
 ## Connections
-- [[dot-store()_1]] - `references` [EXTRACTED]
+- [[dot-store()_2]] - `references` [EXTRACTED]
 - [[dot-test_chain_hash_links_reports()]] - `references` [EXTRACTED]
 - [[dot-test_integrity_check_fails_for_tampered_file()]] - `references` [EXTRACTED]
 - [[dot-test_integrity_check_passes_for_saved_report()]] - `references` [EXTRACTED]
@@ -27,7 +27,7 @@ tags:
 - [[dot-test_verify_chain_fails_for_tampered_entry()]] - `references` [EXTRACTED]
 - [[dot-test_verify_chain_passes_for_intact_store()]] - `references` [EXTRACTED]
 - [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
-- [[CompetitorEntry]] - `uses` [INFERRED]
+- [[CompetitorEntry_1]] - `uses` [INFERRED]
 - [[IntelReportStore_1]] - `uses` [INFERRED]
 - [[ReportIntegrityError]] - `uses` [INFERRED]
 

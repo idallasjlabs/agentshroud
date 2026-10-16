@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "TestSSRFDetection"
 location: "L328"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/TestSSRFDetection
 ---
 
 # Integration tests for the sanitizer.
 
 ## Connections
-- [[TestIntegration]] - `rationale_for` [EXTRACTED]
+- [[TestIntegration_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection

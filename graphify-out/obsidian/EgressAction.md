@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_record()_1]] - `references` [EXTRACTED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
+- [[EgressFilter_2]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
 - [[FakeAuditStore_1]] - `uses` [INFERRED]
@@ -47,7 +47,7 @@ tags:
 - [[TestURLParsing]] - `uses` [INFERRED]
 - [[_DummyTargetWriter]] - `uses` [INFERRED]
 - [[_MockWriter_1]] - `uses` [INFERRED]
-- [[egress_filter.py]] - `contains` [EXTRACTED]
+- [[egress_filter.py_1]] - `contains` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[http_proxy.py]] - `imports` [EXTRACTED]
 - [[str_3]] - `inherits` [EXTRACTED]

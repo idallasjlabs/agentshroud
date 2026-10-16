@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "PIIConfig"
+community: "PipelineAction"
 location: "L202"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/PipelineAction
 ---
 
 # If an agent response contains a registered canary value, block it.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_canary_token_triggers_block()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/PipelineAction

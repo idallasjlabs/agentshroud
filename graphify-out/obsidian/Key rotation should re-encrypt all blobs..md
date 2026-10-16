@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "KillSwitchMonitor"
 location: "L747"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/KillSwitchMonitor
 ---
 
 # Key rotation should re-encrypt all blobs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_key_rotation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

@@ -1,21 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
 type: "document"
-community: "log_sanitizer.py"
+community: "trivy_report.py"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/log_sanitizerpy
+  - community/trivy_reportpy
 ---
 
 # Function Details
 
 ## Connections
-- [[LogSanitizer._sanitize_text(text)]] - `contains` [EXTRACTED]
-- [[LogSanitizer.filter(record)]] - `contains` [EXTRACTED]
-- [[get_sanitizer_stats()_1]] - `contains` [EXTRACTED]
-- [[install_log_sanitizer()_1]] - `contains` [EXTRACTED]
-- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[generate_summary(report)_1]] - `contains` [EXTRACTED]
+- [[parse_trivy_output(raw)]] - `contains` [EXTRACTED]
+- [[run_trivy_scan(target, scan_type, severity, timeout, trivy_bin)]] - `contains` [EXTRACTED]
+- [[save_report(report, log_dir)_1]] - `contains` [EXTRACTED]
+- [[trivy_report.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/log_sanitizerpy
+#graphify/document #graphify/EXTRACTED #community/trivy_reportpy

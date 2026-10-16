@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "PIIConfig"
+community: "MiddlewareManager"
 location: "L329"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/MiddlewareManager
 ---
 
 # Every pipeline operation must produce an audit chain entry.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_audit_chain_records_all_events()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

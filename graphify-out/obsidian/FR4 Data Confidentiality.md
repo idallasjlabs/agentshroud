@@ -1,11 +1,11 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "concept"
-community: "KeyVault"
+community: "TestOutboundInfoFilter"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/TestOutboundInfoFilter
 ---
 
 # FR4: Data Confidentiality
@@ -20,4 +20,4 @@ tags:
 - [[outbound_filter.py]] - `references` [EXTRACTED]
 - [[sanitizer.py]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/KeyVault
+#graphify/concept #graphify/EXTRACTED #community/TestOutboundInfoFilter

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "AlertDispatcher"
+community: "AgentTarget"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher
+  - community/AgentTarget
 ---
 
 # KeyVaultConfig
 
 ## Connections
-- [[dot-__init__()_178]] - `references` [EXTRACTED]
+- [[dot-__init__()_23]] - `references` [EXTRACTED]
 - [[dot-_make_vault_pipeline()]] - `calls` [EXTRACTED]
 - [[dot-test_detect_api_key_patterns()]] - `calls` [EXTRACTED]
 - [[dot-test_key_vault_init()]] - `calls` [EXTRACTED]
@@ -47,7 +47,7 @@ tags:
 - [[TestTrustViolationRecording]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
-- [[config()_3]] - `calls` [EXTRACTED]
+- [[config()]] - `calls` [EXTRACTED]
 - [[key_vault.py]] - `contains` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
@@ -55,4 +55,4 @@ tags:
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher
+#graphify/code #graphify/INFERRED #community/AgentTarget

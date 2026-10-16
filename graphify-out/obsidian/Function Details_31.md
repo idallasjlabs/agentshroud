@@ -1,21 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
 type: "document"
-community: "egress_config.py"
-location: "L40"
+community: "egress_monitor.py"
+location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_configpy
+  - community/egress_monitorpy
 ---
 
 # Function Details
 
 ## Connections
-- [[EgressFilterConfig._matches_any_pattern(domain, patterns)]] - `contains` [EXTRACTED]
-- [[EgressFilterConfig.from_environment()]] - `contains` [EXTRACTED]
-- [[EgressFilterConfig.get_effective_allowlist(agent_id)]] - `contains` [EXTRACTED]
-- [[EgressFilterConfig.is_denylisted(domain)]] - `contains` [EXTRACTED]
-- [[egress_config.py_2]] - `contains` [EXTRACTED]
+- [[EgressMonitor.check_anomalies(agent_id)]] - `contains` [EXTRACTED]
+- [[EgressMonitor.daily_summary(agent_id)]] - `contains` [EXTRACTED]
+- [[EgressMonitor.get_events(agent_id, channel)]] - `contains` [EXTRACTED]
+- [[EgressMonitor.record(event)]] - `contains` [EXTRACTED]
+- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_configpy
+#graphify/document #graphify/EXTRACTED #community/egress_monitorpy

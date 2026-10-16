@@ -12,15 +12,15 @@ tags:
 # FalcoAlertWatcher
 
 ## Connections
-- [[dot-__init__()_22]] - `method` [EXTRACTED]
+- [[dot-__init__()_167]] - `method` [EXTRACTED]
 - [[dot-_handle_critical()]] - `method` [EXTRACTED]
 - [[dot-_process_new_alerts()]] - `method` [EXTRACTED]
-- [[dot-run()]] - `method` [EXTRACTED]
-- [[dot-stop()]] - `method` [EXTRACTED]
+- [[dot-run()_6]] - `method` [EXTRACTED]
+- [[dot-stop()_12]] - `method` [EXTRACTED]
 - [[SecurityPipeline_2]] - `conceptually_related_to` [INFERRED]
 - [[Tail Falco alert files and trigger progressive lockdown on CRITICAL alerts.]] - `rationale_for` [EXTRACTED]
 - [[Test Falco Watcher Module]] - `references` [EXTRACTED]
-- [[falco_monitor.py]] - `contains` [EXTRACTED]
+- [[falco_monitor.py_2]] - `contains` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_critical_alert_triggers_lockdown()]] - `calls` [EXTRACTED]
 - [[test_deduplication_same_alert_twice()]] - `calls` [EXTRACTED]

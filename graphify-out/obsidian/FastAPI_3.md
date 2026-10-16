@@ -1,21 +1,22 @@
 ---
-source_file: "docs/vault/05 - Dependencies/fastapi.md"
-type: "document"
-community: "All Dependencies.md"
-location: "L9"
+source_file: "gateway/tests/test_observatory_mode.py"
+type: "code"
+community: "test_prompt_guard.py"
+location: "L60"
 tags:
-  - graphify/document
-  - graphify/EXTRACTED
-  - community/All_Dependenciesmd
+  - graphify/code
+  - graphify/INFERRED
+  - community/test_prompt_guardpy
 ---
 
 # FastAPI
 
 ## Connections
-- [[Key FastAPI Features Used]] - `contains` [EXTRACTED]
-- [[Purpose_71]] - `contains` [EXTRACTED]
-- [[Related Notes_31]] - `contains` [EXTRACTED]
-- [[Where Used_4]] - `contains` [EXTRACTED]
-- [[fastapi_2]] - `contains` [EXTRACTED]
+- [[KillSwitchConfig_1]] - `uses` [INFERRED]
+- [[KillSwitchMonitor]] - `uses` [INFERRED]
+- [[ModeRequest]] - `uses` [INFERRED]
+- [[SecurityPipeline_2]] - `uses` [INFERRED]
+- [[_make_app()]] - `references` [EXTRACTED]
+- [[test_observatory_mode.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd
+#graphify/code #graphify/INFERRED #community/test_prompt_guardpy

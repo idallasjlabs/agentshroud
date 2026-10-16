@@ -12,6 +12,6 @@ tags:
 # Guard Presence and Startup Behavior
 
 ## Connections
-- [[Configuration_8]] - `contains` [EXTRACTED]
+- [[Configuration_10]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "KeyVault"
+community: "AlertDispatcher"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/AlertDispatcher
 ---
 
 # EnvironmentLeakage
@@ -16,4 +16,4 @@ tags:
 - [[Detected environment variable leakage.]] - `rationale_for` [EXTRACTED]
 - [[env_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

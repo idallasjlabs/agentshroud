@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "rationale"
-community: ".__init__"
+community: "Git Workflow Guardian (GIT-GUARD)"
 location: "L42"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/__init__
+  - community/Git_Workflow_Guardian_GIT-GUARD
 ---
 
 # Initialize approval queue          Args:             config: Approval queue conf
 
 ## Connections
-- [[dot-__init__()_39]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_43]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/__init__
+#graphify/rationale #graphify/EXTRACTED #community/Git_Workflow_Guardian_GIT-GUARD

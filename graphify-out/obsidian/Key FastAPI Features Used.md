@@ -12,6 +12,6 @@ tags:
 # Key FastAPI Features Used
 
 ## Connections
-- [[FastAPI_3]] - `contains` [EXTRACTED]
+- [[FastAPI_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

@@ -12,6 +12,6 @@ tags:
 # Key Components Referenced (v1.0.0)
 
 ## Connections
-- [[Summary_24]] - `contains` [EXTRACTED]
+- [[Summary_25]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/IEC_62443_Compliance_Matrix__AgentShroud

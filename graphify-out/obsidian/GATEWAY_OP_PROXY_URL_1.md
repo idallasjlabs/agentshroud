@@ -12,9 +12,9 @@ tags:
 # GATEWAY_OP_PROXY_URL
 
 ## Connections
-- [[Description_1]] - `contains` [EXTRACTED]
+- [[Description]] - `contains` [EXTRACTED]
 - [[GATEWAY_OP_PROXY_URL]] - `contains` [EXTRACTED]
-- [[Related Notes_3]] - `contains` [EXTRACTED]
+- [[Related Notes_4]] - `contains` [EXTRACTED]
 - [[Security_1]] - `contains` [EXTRACTED]
 - [[Set In]] - `contains` [EXTRACTED]
 - [[Usage Flow]] - `contains` [EXTRACTED]

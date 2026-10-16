@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "rationale"
-community: "AgentRegistry"
+community: "PIIConfig"
 location: "L108"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/PIIConfig
 ---
 
 # FastAPI lifespan - startup and shutdown
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[lifespan()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

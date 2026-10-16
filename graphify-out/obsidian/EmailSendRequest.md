@@ -12,7 +12,7 @@ tags:
 # EmailSendRequest
 
 ## Connections
-- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[email_send()]] - `references` [EXTRACTED]
 - [[email_send_owner()]] - `calls` [EXTRACTED]
 

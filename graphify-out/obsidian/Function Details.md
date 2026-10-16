@@ -1,21 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
 type: "document"
-community: "auth.py"
-location: "L33"
+community: "EgressFilter"
+location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/authpy
+  - community/EgressFilter
 ---
 
 # Function Details
 
 ## Connections
-- [[RateLimiter.check(client_id)]] - `contains` [EXTRACTED]
-- [[auth.py]] - `contains` [EXTRACTED]
-- [[create_auth_dependency(config)]] - `contains` [EXTRACTED]
-- [[get_auth_dependency(config)]] - `contains` [EXTRACTED]
-- [[verify_token(token, expected_token)]] - `contains` [EXTRACTED]
+- [[EgressFilter_3]] - `contains` [EXTRACTED]
+- [[EgressFilter._is_private_ip(host)]] - `contains` [EXTRACTED]
+- [[EgressFilter._record(agent_id, dest, port, action, rule)]] - `contains` [EXTRACTED]
+- [[EgressFilter.check(agent_id, destination, port)]] - `contains` [EXTRACTED]
+- [[EgressPolicy.matches_domain(domain)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/authpy
+#graphify/document #graphify/EXTRACTED #community/EgressFilter

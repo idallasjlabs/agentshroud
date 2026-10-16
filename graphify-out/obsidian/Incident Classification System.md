@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AgentShroud Incident Response Plan]] - `contains` [EXTRACTED]
-- [[Priority Levels_1]] - `contains` [EXTRACTED]
+- [[Priority Levels]] - `contains` [EXTRACTED]
 - [[Severity Assessment Matrix]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Incident_Classification_System

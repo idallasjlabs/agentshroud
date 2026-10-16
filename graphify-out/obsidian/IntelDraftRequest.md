@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[A draft competitive-intel report submitted for citation verification.]] - `rationale_for` [EXTRACTED]
-- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
 - [[IntelReportStore_1]] - `uses` [INFERRED]

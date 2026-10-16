@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md"
+source_file: "docs/papers/agentshroud-whitepaper.md"
 type: "document"
-community: "iMessage Integration Fix - Using imsg + imessage-exporter"
-location: "L3"
+community: "AgentShroud: Enterprise Governance for Autonomous AI Agents"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iMessage_Integration_Fix_-_Using_imsg__imessage-exporter
+  - community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents
 ---
 
 # Executive Summary
 
 ## Connections
-- [[Secrets Usage and Collaborator Checklist]] - `contains` [EXTRACTED]
+- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Fix_-_Using_imsg__imessage-exporter
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Enterprise_Governance_for_Autonomous_AI_Agents

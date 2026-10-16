@@ -12,7 +12,7 @@ tags:
 # EmailSendResponse
 
 ## Connections
-- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[Response from POST emailsend.]] - `rationale_for` [EXTRACTED]
 - [[email_send()]] - `calls` [EXTRACTED]
 - [[forward.py]] - `imports` [EXTRACTED]

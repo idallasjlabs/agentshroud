@@ -20,6 +20,6 @@ tags:
 - [[SessionManager.rotate_session(old_session_id, ip, user_agent)]] - `contains` [EXTRACTED]
 - [[SessionManager.validate_event(session_id, source, event)]] - `contains` [EXTRACTED]
 - [[SessionManager.validate_session(session_id, ip, user_agent)]] - `contains` [EXTRACTED]
-- [[session_security.py_1]] - `contains` [EXTRACTED]
+- [[session_security.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

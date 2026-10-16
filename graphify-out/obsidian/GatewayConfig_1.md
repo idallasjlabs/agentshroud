@@ -12,7 +12,7 @@ tags:
 # GatewayConfig
 
 ## Connections
-- [[GatewayConfig_3]] - `uses` [INFERRED]
+- [[GatewayConfig_2]] - `uses` [INFERRED]
 - [[_load()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

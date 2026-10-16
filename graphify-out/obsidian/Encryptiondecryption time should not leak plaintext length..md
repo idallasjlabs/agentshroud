@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "KillSwitchMonitor"
 location: "L45"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/KillSwitchMonitor
 ---
 
 # Encryption/decryption time should not leak plaintext length.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_encrypted_store_constant_time()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

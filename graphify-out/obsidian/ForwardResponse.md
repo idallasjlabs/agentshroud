@@ -12,7 +12,7 @@ tags:
 # ForwardResponse
 
 ## Connections
-- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[Response after content is ingested, sanitized, and logged]] - `rationale_for` [EXTRACTED]
 - [[forward.py]] - `imports` [EXTRACTED]
 - [[ingest_apimodels.py]] - `contains` [EXTRACTED]

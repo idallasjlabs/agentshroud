@@ -12,7 +12,7 @@ tags:
 # ForwardRequest
 
 ## Connections
-- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[_process_inbound()]] - `references` [EXTRACTED]
 - [[_resolve_user_trust_level()]] - `references` [EXTRACTED]
 - [[forward_content()]] - `references` [EXTRACTED]

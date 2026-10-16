@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
 type: "document"
-community: "env_guard.py"
-location: "L100"
+community: "llm_proxy.py"
+location: "L150"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/env_guardpy
+  - community/llm_proxypy
 ---
 
-# Environment Variables
+# Environment variables
 
 ## Connections
-- [[env_guard.py_2]] - `contains` [EXTRACTED]
+- [[Configuration_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/env_guardpy
+#graphify/document #graphify/EXTRACTED #community/llm_proxypy

@@ -12,6 +12,6 @@ tags:
 # EgressFilterConfig.from_environment()
 
 ## Connections
-- [[Function Details_31]] - `contains` [EXTRACTED]
+- [[Function Details_30]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/egress_configpy

@@ -1,21 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
 type: "document"
-community: "consent_framework.py"
-location: "L38"
+community: "log_sanitizer.py"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/consent_frameworkpy
+  - community/log_sanitizerpy
 ---
 
 # Function Details
 
 ## Connections
-- [[ConsentFramework.add_to_blacklist(command)  remove_from_blacklist(command)]] - `contains` [EXTRACTED]
-- [[ConsentFramework.add_to_whitelist(command)  remove_from_whitelist(command)]] - `contains` [EXTRACTED]
-- [[ConsentFramework.get_whitelist()  get_blacklist()]] - `contains` [EXTRACTED]
-- [[ConsentFramework.validate_config(config)]] - `contains` [EXTRACTED]
-- [[consent_framework.py_2]] - `contains` [EXTRACTED]
+- [[LogSanitizer._sanitize_text(text)]] - `contains` [EXTRACTED]
+- [[LogSanitizer.filter(record)]] - `contains` [EXTRACTED]
+- [[get_sanitizer_stats()_1]] - `contains` [EXTRACTED]
+- [[install_log_sanitizer()_1]] - `contains` [EXTRACTED]
+- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/consent_frameworkpy
+#graphify/document #graphify/EXTRACTED #community/log_sanitizerpy

@@ -12,6 +12,6 @@ tags:
 # Environment Variables Used
 
 ## Connections
-- [[ledger.py_2]] - `contains` [EXTRACTED]
+- [[ledger.py]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/ledgerpy

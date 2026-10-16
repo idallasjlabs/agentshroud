@@ -2,19 +2,20 @@
 source_file: "docs/vault/05 - Dependencies/fastapi.md"
 type: "document"
 community: "All Dependencies.md"
-location: "L1"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
   - community/All_Dependenciesmd
 ---
 
-# fastapi.md
+# FastAPI
 
 ## Connections
-- [[All Dependencies]] - `references` [EXTRACTED]
-- [[FastAPI_3]] - `contains` [EXTRACTED]
-- [[main.py]] - `references` [INFERRED]
-- [[pydantic_1]] - `references` [EXTRACTED]
+- [[Key FastAPI Features Used]] - `contains` [EXTRACTED]
+- [[Purpose_66]] - `contains` [EXTRACTED]
+- [[Related Notes_22]] - `contains` [EXTRACTED]
+- [[Where Used_3]] - `contains` [EXTRACTED]
+- [[fastapi_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

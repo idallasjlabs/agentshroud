@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "AuditChain"
+community: "AgentTarget"
 location: "L165"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AuditChain
+  - community/AgentTarget
 ---
 
 # KeyLeakDetector
 
 ## Connections
-- [[dot-__init__()_177]] - `method` [EXTRACTED]
+- [[dot-__init__()_22]] - `method` [EXTRACTED]
 - [[dot-_make_vault_pipeline()]] - `calls` [EXTRACTED]
 - [[dot-scan_outbound()]] - `method` [EXTRACTED]
 - [[dot-test_detect_api_key_patterns()]] - `calls` [EXTRACTED]
@@ -44,4 +44,4 @@ tags:
 - [[test_key_vault.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AuditChain
+#graphify/code #graphify/INFERRED #community/AgentTarget

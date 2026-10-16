@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "main.py.md"
+community: "TestSSRFDetection"
 location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mainpymd
+  - community/TestSSRFDetection
 ---
 
 # Health Checks
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mainpymd
+#graphify/document #graphify/EXTRACTED #community/TestSSRFDetection

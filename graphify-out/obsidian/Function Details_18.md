@@ -15,6 +15,6 @@ tags:
 - [[DNSFilter._detect_tunneling(domain)]] - `contains` [EXTRACTED]
 - [[DNSFilter.check(domain, agent_id)]] - `contains` [EXTRACTED]
 - [[EntropyCalculator.shannon_entropy(s)]] - `contains` [EXTRACTED]
-- [[dns_filter.py_1]] - `contains` [EXTRACTED]
+- [[dns_filter.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/dns_filterpy

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/ssh-security-review.md"
 type: "rationale"
-community: "34 Security Modules Pipeline (P0-P3)"
+community: "Slack Channel Setup"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/34_Security_Modules_Pipeline_P0-P3
+  - community/Slack_Channel_Setup
 ---
 
 # Host Spoofing/MITM Threat — TOFU model residual risk
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SSH Proxy Threat Model (6 threats)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/34_Security_Modules_Pipeline_P0-P3
+#graphify/rationale #graphify/EXTRACTED #community/Slack_Channel_Setup

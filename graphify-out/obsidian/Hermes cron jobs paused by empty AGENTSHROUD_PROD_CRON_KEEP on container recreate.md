@@ -12,6 +12,6 @@ tags:
 # Hermes cron jobs paused by empty AGENTSHROUD_PROD_CRON_KEEP on container recreate
 
 ## Connections
-- [[run-standalone.sh (Hermes docker run launcher)]] - `references` [EXTRACTED]
+- [[run-standalone.sh]] - `references` [EXTRACTED]
 
 #graphify/concept #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher

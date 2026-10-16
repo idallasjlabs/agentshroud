@@ -12,6 +12,6 @@ tags:
 # Full Configuration Example
 
 ## Connections
-- [[Configuration_19]] - `contains` [EXTRACTED]
+- [[Configuration_20]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/SSH_Config

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "rationale"
-community: "AuditChain"
+community: "TestOutboundInfoFilter"
 location: "L472"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/TestOutboundInfoFilter
 ---
 
 # Get filter statistics.
 
 ## Connections
-- [[dot-get_stats()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-get_stats()_5]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AuditChain
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter

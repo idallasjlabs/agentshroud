@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "rationale"
-community: "AuditChain"
+community: "TestOutboundInfoFilter"
 location: "L354"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/TestOutboundInfoFilter
 ---
 
 # Filter agent response for sensitive information disclosure.          Args:
 
 ## Connections
-- [[dot-filter_response()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-filter_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AuditChain
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter

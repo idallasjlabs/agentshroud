@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "rationale"
-community: "TestLogSanitizer"
+community: "AlertDispatcher"
 location: "L134"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestLogSanitizer
+  - community/AlertDispatcher
 ---
 
 # Install the log sanitizer on all existing loggers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[install_log_sanitizer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestLogSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

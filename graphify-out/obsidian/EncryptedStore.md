@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "AlertDispatcher"
+community: "KillSwitchMonitor"
 location: "L58"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AlertDispatcher
+  - community/KillSwitchMonitor
 ---
 
 # EncryptedStore
 
 ## Connections
-- [[dot-__init__()_11]] - `method` [EXTRACTED]
+- [[dot-__init__()_29]] - `method` [EXTRACTED]
 - [[dot-_derive_key()]] - `method` [EXTRACTED]
 - [[dot-_resolve_secret()]] - `method` [EXTRACTED]
 - [[dot-decrypt()]] - `method` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[dot-encrypt_b64()]] - `method` [EXTRACTED]
 - [[dot-get_blob_key_id()]] - `method` [EXTRACTED]
 - [[dot-rotate()]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_34]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_3]] - `calls` [EXTRACTED]
 - [[dot-store()]] - `calls` [EXTRACTED]
 - [[dot-test_custom_key_id()]] - `calls` [EXTRACTED]
 - [[dot-test_encrypt_decrypt_still_works_after_zeroing()]] - `calls` [EXTRACTED]
@@ -78,4 +78,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AlertDispatcher
+#graphify/code #graphify/INFERRED #community/KillSwitchMonitor

@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "AuditChain"
+community: "AgentTarget"
 location: "L71"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AuditChain
+  - community/AgentTarget
 ---
 
 # KeyVault
 
 ## Connections
-- [[dot-__init__()_176]] - `references` [EXTRACTED]
-- [[dot-__init__()_177]] - `references` [EXTRACTED]
-- [[dot-__init__()_178]] - `method` [EXTRACTED]
+- [[dot-__init__()_21]] - `references` [EXTRACTED]
+- [[dot-__init__()_22]] - `references` [EXTRACTED]
+- [[dot-__init__()_23]] - `method` [EXTRACTED]
 - [[dot-_agent_in_scope()]] - `method` [EXTRACTED]
 - [[dot-_log_audit()]] - `method` [EXTRACTED]
 - [[dot-_make_vault_pipeline()]] - `calls` [EXTRACTED]
 - [[dot-check_value_match()]] - `method` [EXTRACTED]
 - [[dot-delete_key()]] - `method` [EXTRACTED]
-- [[dot-get_audit_log()_6]] - `method` [EXTRACTED]
-- [[dot-get_key()_1]] - `method` [EXTRACTED]
+- [[dot-get_audit_log()]] - `method` [EXTRACTED]
+- [[dot-get_key()]] - `method` [EXTRACTED]
 - [[dot-list_keys()]] - `method` [EXTRACTED]
 - [[dot-redact()]] - `method` [EXTRACTED]
 - [[dot-rotate_key()]] - `method` [EXTRACTED]
@@ -68,4 +68,4 @@ tags:
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[vault()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AuditChain
+#graphify/code #graphify/INFERRED #community/AgentTarget

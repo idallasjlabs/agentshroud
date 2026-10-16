@@ -12,8 +12,8 @@ tags:
 # Integrations Documentation
 
 ## Connections
-- [[Current Status_8]] - `contains` [EXTRACTED]
-- [[Planned Documents_5]] - `contains` [EXTRACTED]
+- [[Current Status_2]] - `contains` [EXTRACTED]
+- [[Planned Documents_2]] - `contains` [EXTRACTED]
 - [[integrationsREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/1Password_op-proxy_POST_/credentials/op-proxy_validates_GATEWAY_AUTH_TOKEN__allowed_op_paths_cascading_retry_5s10s15s30s60s

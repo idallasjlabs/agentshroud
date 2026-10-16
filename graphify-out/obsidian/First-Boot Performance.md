@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "Error Index.md"
+community: "UserSessionManager"
 location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd
+  - community/UserSessionManager
 ---
 
 # First-Boot Performance
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[spaCy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd
+#graphify/document #graphify/EXTRACTED #community/UserSessionManager

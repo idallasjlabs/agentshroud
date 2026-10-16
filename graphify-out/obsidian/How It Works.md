@@ -12,7 +12,7 @@ tags:
 # How It Works
 
 ## Connections
-- [[Architecture_5]] - `contains` [EXTRACTED]
+- [[Architecture_6]] - `contains` [EXTRACTED]
 - [[Canvas Skill]] - `contains` [EXTRACTED]
 - [[Tailscale Integration]] - `contains` [EXTRACTED]
 

@@ -12,6 +12,6 @@ tags:
 # EgressMonitor.check_anomalies(agent_id)
 
 ## Connections
-- [[Function Details_32]] - `contains` [EXTRACTED]
+- [[Function Details_31]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/egress_monitorpy

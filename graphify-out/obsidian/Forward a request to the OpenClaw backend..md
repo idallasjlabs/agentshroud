@@ -12,6 +12,6 @@ tags:
 # Forward a request to the OpenClaw backend.
 
 ## Connections
-- [[dot-forward()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-forward()_3]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy

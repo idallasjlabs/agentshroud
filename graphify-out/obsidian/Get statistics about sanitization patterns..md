@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "rationale"
-community: "KeyVault"
+community: "AlertDispatcher"
 location: "L158"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/AlertDispatcher
 ---
 
 # Get statistics about sanitization patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_sanitizer_stats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyVault
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

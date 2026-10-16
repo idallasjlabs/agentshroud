@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/security-assessment-v0.8.0.md"
+source_file: "docs/planning/recovery/RECOVERY_PLAN.md"
 type: "document"
-community: "AgentShroud Security Assessment — v0.8.0"
-location: "L10"
+community: "AgentShroud Recovery Plan v0.4.0"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Assessment__v080
+  - community/AgentShroud_Recovery_Plan_v040
 ---
 
-# Executive Summary
+# EXECUTIVE SUMMARY
 
 ## Connections
-- [[AgentShroud Security Assessment — v0.8.0]] - `contains` [EXTRACTED]
+- [[AgentShroud Recovery Plan v0.4.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Assessment__v080
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Recovery_Plan_v040

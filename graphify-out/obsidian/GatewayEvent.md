@@ -12,12 +12,12 @@ tags:
 # GatewayEvent
 
 ## Connections
-- [[dot-emit()]] - `shares_data_with` [EXTRACTED]
-- [[dot-to_dict()_7]] - `method` [EXTRACTED]
+- [[dot-emit()_1]] - `shares_data_with` [EXTRACTED]
+- [[dot-to_dict()_9]] - `method` [EXTRACTED]
 - [[A single gateway event]] - `rationale_for` [EXTRACTED]
 - [[EventBus]] - `shares_data_with` [EXTRACTED]
-- [[event_bus.py]] - `contains` [EXTRACTED]
-- [[event_bus.py_1]] - `references` [EXTRACTED]
+- [[event_bus.py_1]] - `contains` [EXTRACTED]
+- [[event_bus.py]] - `references` [EXTRACTED]
 - [[make_event()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/make_event

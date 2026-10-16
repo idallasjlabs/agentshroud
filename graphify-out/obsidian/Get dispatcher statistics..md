@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "rationale"
-community: "AlertDispatcher"
+community: "First Time Setup"
 location: "L221"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/First_Time_Setup
 ---
 
 # Get dispatcher statistics.
 
 ## Connections
-- [[dot-get_stats()_16]] - `rationale_for` [EXTRACTED]
+- [[dot-get_stats()_18]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/First_Time_Setup

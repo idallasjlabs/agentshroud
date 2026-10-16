@@ -12,6 +12,6 @@ tags:
 # Example 4: Handle CAPTCHA
 
 ## Connections
-- [[Usage Examples]] - `contains` [EXTRACTED]
+- [[Usage Examples_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

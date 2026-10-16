@@ -12,6 +12,6 @@ tags:
 # EgressFilterConfig.get_effective_allowlist(agent_id)
 
 ## Connections
-- [[Function Details_31]] - `contains` [EXTRACTED]
+- [[Function Details_30]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/egress_configpy

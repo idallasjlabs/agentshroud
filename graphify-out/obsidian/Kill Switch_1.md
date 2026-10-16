@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AgentShroud Security Architecture]] - `references` [EXTRACTED]
 - [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
-- [[Features_2]] - `contains` [EXTRACTED]
+- [[Features_1]] - `contains` [EXTRACTED]
 - [[Mode 1 freeze]] - `contains` [EXTRACTED]
 - [[Mode 2 shutdown]] - `contains` [EXTRACTED]
 - [[Mode 3 disconnect (⚠️ DANGEROUS)]] - `contains` [EXTRACTED]

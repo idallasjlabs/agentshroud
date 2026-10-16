@@ -12,10 +12,10 @@ tags:
 # HTTPForwarder
 
 ## Connections
-- [[dot-__init__()_93]] - `method` [EXTRACTED]
-- [[dot-forward()_1]] - `method` [EXTRACTED]
-- [[dot-get_stats()_9]] - `method` [EXTRACTED]
-- [[dot-health_check()_2]] - `method` [EXTRACTED]
+- [[dot-__init__()_169]] - `method` [EXTRACTED]
+- [[dot-forward()_3]] - `method` [EXTRACTED]
+- [[dot-get_stats()_16]] - `method` [EXTRACTED]
+- [[dot-health_check()_4]] - `method` [EXTRACTED]
 - [[dot-is_healthy()]] - `method` [EXTRACTED]
 - [[dot-last_forward_time()]] - `method` [EXTRACTED]
 - [[dot-set_response_handler()]] - `method` [EXTRACTED]
@@ -24,11 +24,11 @@ tags:
 - [[MultiAgentRouter]] - `semantically_similar_to` [INFERRED]
 - [[SecurityPipeline_2]] - `references` [EXTRACTED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder]] - `uses` [INFERRED]
+- [[_StubForwarder_2]] - `uses` [INFERRED]
 - [[forwarder()_1]] - `calls` [EXTRACTED]
 - [[forwarder.py]] - `contains` [EXTRACTED]
 - [[healthy_forwarder()]] - `calls` [EXTRACTED]
-- [[run_canary()_1]] - `calls` [INFERRED]
+- [[run_canary()]] - `calls` [INFERRED]
 - [[test_canary.py]] - `imports` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
 - [[test_forwarder_error_handling()]] - `calls` [EXTRACTED]

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "agentshroud-ieee-paper.md"
+community: "WebProxyConfig"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-ieee-papermd
+  - community/WebProxyConfig
 ---
 
 # Hay, Enterprise Security Feature Priorities Assessment (2026)
@@ -15,4 +15,4 @@ tags:
 - [[Steve Hay Blue Team Assessment]] - `conceptually_related_to` [INFERRED]
 - [[agentshroud-ieee-paper]] - `cites` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-ieee-papermd
+#graphify/document #graphify/EXTRACTED #community/WebProxyConfig

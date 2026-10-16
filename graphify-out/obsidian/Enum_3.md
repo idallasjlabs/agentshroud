@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "TrustConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/TrustConfig
 ---
 
 # Enum
@@ -16,7 +16,7 @@ tags:
 - [[A2AMessageType]] - `inherits` [EXTRACTED]
 - [[A2AMethod]] - `inherits` [EXTRACTED]
 - [[A2APolicyAction]] - `inherits` [EXTRACTED]
-- [[Action_1]] - `inherits` [EXTRACTED]
+- [[Action_2]] - `inherits` [EXTRACTED]
 - [[AlarmStatus]] - `inherits` [EXTRACTED]
 - [[AlertLevel]] - `inherits` [EXTRACTED]
 - [[ApprovalMode]] - `inherits` [EXTRACTED]
@@ -50,25 +50,25 @@ tags:
 - [[PipelineAction]] - `inherits` [EXTRACTED]
 - [[Platform]] - `inherits` [EXTRACTED]
 - [[Resource_2]] - `inherits` [EXTRACTED]
-- [[RiskLevel]] - `inherits` [EXTRACTED]
 - [[RiskLevel_1]] - `inherits` [EXTRACTED]
 - [[RiskLevel_2]] - `inherits` [EXTRACTED]
-- [[RiskLevel_6]] - `inherits` [EXTRACTED]
-- [[RiskLevel_4]] - `inherits` [EXTRACTED]
 - [[RiskLevel_3]] - `inherits` [EXTRACTED]
+- [[RiskLevel]] - `inherits` [EXTRACTED]
 - [[RiskLevel_5]] - `inherits` [EXTRACTED]
-- [[Role_22]] - `inherits` [EXTRACTED]
+- [[RiskLevel_4]] - `inherits` [EXTRACTED]
+- [[RiskLevel_6]] - `inherits` [EXTRACTED]
+- [[Role_21]] - `inherits` [EXTRACTED]
 - [[RotationStatus]] - `inherits` [EXTRACTED]
 - [[SCLInterface_1]] - `inherits` [EXTRACTED]
 - [[ServicePrivacy]] - `inherits` [EXTRACTED]
 - [[ServiceStatus_1]] - `inherits` [EXTRACTED]
-- [[Severity_1]] - `inherits` [EXTRACTED]
+- [[Severity]] - `inherits` [EXTRACTED]
 - [[SubagentEventType]] - `inherits` [EXTRACTED]
 - [[ThreatAction]] - `inherits` [EXTRACTED]
 - [[ThreatLevel_2]] - `inherits` [EXTRACTED]
 - [[ThreatLevel_1]] - `inherits` [EXTRACTED]
-- [[ToolTier]] - `inherits` [EXTRACTED]
-- [[TrustLevel]] - `inherits` [EXTRACTED]
+- [[ToolTier_2]] - `inherits` [EXTRACTED]
+- [[TrustLevel_1]] - `inherits` [EXTRACTED]
 - [[URLVerdict]] - `inherits` [EXTRACTED]
 - [[UserRole]] - `inherits` [EXTRACTED]
 - [[ViolationType]] - `inherits` [EXTRACTED]
@@ -82,14 +82,14 @@ tags:
 - [[delegation.py]] - `imports_from` [EXTRACTED]
 - [[differential_pii_detector.py]] - `imports_from` [EXTRACTED]
 - [[egress_approval.py]] - `imports_from` [EXTRACTED]
-- [[egress_filter.py]] - `imports_from` [EXTRACTED]
+- [[egress_filter.py_1]] - `imports_from` [EXTRACTED]
 - [[egress_monitor.py]] - `imports_from` [EXTRACTED]
 - [[git_guard.py]] - `imports_from` [EXTRACTED]
 - [[group_rbac.py]] - `imports_from` [EXTRACTED]
 - [[hermesskillsi-browserscriptsbrowse.py]] - `imports_from` [EXTRACTED]
 - [[key_rotation.py]] - `imports_from` [EXTRACTED]
-- [[mcp_config.py_2]] - `imports_from` [EXTRACTED]
-- [[mcp_inspector.py_2]] - `imports_from` [EXTRACTED]
+- [[mcp_config.py]] - `imports_from` [EXTRACTED]
+- [[mcp_inspector.py]] - `imports_from` [EXTRACTED]
 - [[mcp_policy.py]] - `imports_from` [EXTRACTED]
 - [[memory_integrity.py]] - `imports_from` [EXTRACTED]
 - [[memory_lifecycle.py]] - `imports_from` [EXTRACTED]
@@ -98,11 +98,11 @@ tags:
 - [[multi_turn_tracker.py]] - `imports_from` [EXTRACTED]
 - [[openclawskillsi-browserscriptsbrowse.py]] - `imports_from` [EXTRACTED]
 - [[outbound_filter.py]] - `imports_from` [EXTRACTED]
-- [[pipeline.py_1]] - `imports_from` [EXTRACTED]
+- [[pipeline.py]] - `imports_from` [EXTRACTED]
 - [[privacy_policy.py]] - `imports_from` [EXTRACTED]
 - [[progressive_lockdown.py]] - `imports_from` [EXTRACTED]
 - [[progressive_trust_config.py]] - `imports_from` [EXTRACTED]
-- [[prompt_guard.py_1]] - `imports_from` [EXTRACTED]
+- [[prompt_guard.py]] - `imports_from` [EXTRACTED]
 - [[rbac.py]] - `imports_from` [EXTRACTED]
 - [[rbac_config.py]] - `imports_from` [EXTRACTED]
 - [[securebrowserscriptsbrowse.py]] - `imports_from` [EXTRACTED]
@@ -114,7 +114,7 @@ tags:
 - [[test_web_proxy_security.py]] - `imports_from` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `imports_from` [EXTRACTED]
 - [[tool_result_injection.py]] - `imports_from` [EXTRACTED]
-- [[trust_manager.py]] - `imports_from` [EXTRACTED]
+- [[trust_manager.py_1]] - `imports_from` [EXTRACTED]
 - [[url_analyzer.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

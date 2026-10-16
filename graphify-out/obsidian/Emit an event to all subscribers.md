@@ -12,6 +12,6 @@ tags:
 # Emit an event to all subscribers
 
 ## Connections
-- [[dot-emit()]] - `rationale_for` [EXTRACTED]
+- [[dot-emit()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/make_event

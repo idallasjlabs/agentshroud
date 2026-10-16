@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "Action"
+community: "MiddlewareManager"
 location: "L260"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Action
+  - community/MiddlewareManager
 ---
 
 # Get the role for a user.
 
 ## Connections
-- [[dot-get_user_role()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_user_role()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Action
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

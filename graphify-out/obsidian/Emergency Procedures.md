@@ -12,6 +12,6 @@ tags:
 # Emergency Procedures
 
 ## Connections
-- [[Quick Reference_1]] - `contains` [EXTRACTED]
+- [[Quick Reference]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

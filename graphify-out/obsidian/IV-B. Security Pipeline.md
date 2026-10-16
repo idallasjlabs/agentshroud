@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "AgentShroud: A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents"
+community: "TestOutboundInfoFilter"
 location: "L77"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_A_Transparent_Proxy_Framework_for_Enterprise_Governance_of_Autonomous_AI_Agents
+  - community/TestOutboundInfoFilter
 ---
 
 # IV-B. Security Pipeline
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IV. System Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_A_Transparent_Proxy_Framework_for_Enterprise_Governance_of_Autonomous_AI_Agents
+#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter

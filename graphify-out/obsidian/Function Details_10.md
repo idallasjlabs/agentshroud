@@ -17,7 +17,7 @@ tags:
 - [[format_report(report)]] - `contains` [EXTRACTED]
 - [[generate_report(summaries, db_path, save_history)]] - `contains` [EXTRACTED]
 - [[get_trend(days, db_path)]] - `contains` [EXTRACTED]
-- [[health_report.py_2]] - `contains` [EXTRACTED]
+- [[health_report.py_1]] - `contains` [EXTRACTED]
 - [[init_db(db_path)]] - `contains` [EXTRACTED]
 - [[save_to_history(score, grade, details, db_path)]] - `contains` [EXTRACTED]
 - [[score_to_grade(score)]] - `contains` [EXTRACTED]

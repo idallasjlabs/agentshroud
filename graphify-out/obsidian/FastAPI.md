@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "UserSessionManager"
+community: "PIIConfig"
 location: "L107"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/UserSessionManager
+  - community/PIIConfig
 ---
 
 # FastAPI
@@ -18,10 +18,10 @@ tags:
 - [[GroupRegistry]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
-- [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[PIISanitizer_1]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[lifespan()]] - `references` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/UserSessionManager
+#graphify/code #graphify/INFERRED #community/PIIConfig

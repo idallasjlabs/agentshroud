@@ -12,6 +12,6 @@ tags:
 # Extract Data
 
 ## Connections
-- [[Usage_69]] - `contains` [EXTRACTED]
+- [[Usage_67]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

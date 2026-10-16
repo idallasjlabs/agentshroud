@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "DataLedger"
+community: "PIIConfig"
 location: "L153"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/PIIConfig
 ---
 
 # Export chain and re-verify.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestChainExportAndVerification]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DataLedger
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

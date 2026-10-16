@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-agentsskillsi-hermesREADME]] - `contains` [EXTRACTED]
-- [[Purpose_21]] - `contains` [EXTRACTED]
-- [[Related Skills_7]] - `contains` [EXTRACTED]
-- [[Usage_11]] - `contains` [EXTRACTED]
+- [[Purpose_16]] - `contains` [EXTRACTED]
+- [[Related Skills_5]] - `contains` [EXTRACTED]
+- [[Usage_8]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Hermes__Podcast_Production_Orchestrator

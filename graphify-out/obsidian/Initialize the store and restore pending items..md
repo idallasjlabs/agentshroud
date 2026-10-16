@@ -12,6 +12,6 @@ tags:
 # Initialize the store and restore pending items.
 
 ## Connections
-- [[dot-initialize()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-initialize()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

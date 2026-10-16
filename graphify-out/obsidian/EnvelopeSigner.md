@@ -12,7 +12,7 @@ tags:
 # EnvelopeSigner
 
 ## Connections
-- [[dot-__init__()_175]] - `method` [EXTRACTED]
+- [[dot-__init__()_168]] - `method` [EXTRACTED]
 - [[dot-_compute_signature()]] - `method` [EXTRACTED]
 - [[dot-sign()]] - `method` [EXTRACTED]
 - [[dot-test_different_keys_fail_verification()]] - `calls` [EXTRACTED]

@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[Missing-secret visibility banner (expected secrets loop)]] - `shares_data_with` [EXTRACTED]
 - [[_hermes_cron_ids_names]] - `calls` [EXTRACTED]
-- [[cmd_up]] - `shares_data_with` [EXTRACTED]
 - [[init-config.sh (Hermes first-boot config materialisation)]] - `implements` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_hermes_cron_seedpy

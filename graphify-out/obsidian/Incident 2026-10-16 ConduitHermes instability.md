@@ -1,32 +1,30 @@
 ---
 source_file: "INCIDENT_2026-10-16_conduit-outage.md"
 type: "document"
-community: "setup-secrets.sh"
-location: "L1-L8"
+community: "AgentTarget"
+location: "INCIDENT_2026-10-16_conduit-outage.md:1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/setup-secretssh
+  - community/AgentTarget
 ---
 
 # Incident 2026-10-16: Conduit/Hermes instability
 
 ## Connections
-- [[Compose version mismatch forces network recreate + stale endpoints]] - `references` [EXTRACTED]
-- [[Dev Hermes polling prod's Hermes Telegram bot]] - `references` [EXTRACTED]
+- [[2026-10-16 resource cut dev below prod, reboot-safe]] - `references` [EXTRACTED]
+- [[Compose version mismatch forces network recreation]] - `references` [EXTRACTED]
 - [[Edge TTS 403 from Microsoft anti-abuse]] - `references` [EXTRACTED]
-- [[Nemotron in-band reasoning + Qwen-only no_think suffix]] - `references` [EXTRACTED]
+- [[Nemotron + Qwen-only no_think suffix broke chat]] - `references` [EXTRACTED]
 - [[OpenClaw sandbox mode set to off (isolation reduction)]] - `references` [EXTRACTED]
 - [[Prod secrets clobbered by a killed extract]] - `references` [EXTRACTED]
-- [[Streaming route masked upstream 4xx as 200 (StreamHead fix)]] - `references` [EXTRACTED]
-- [[Suspected prompt-injection  phishing (fake Tailscale credential request)]] - `references` [EXTRACTED]
-- [[Why a blanket revert to Oct 10 was not done]] - `rationale_for` [EXTRACTED]
-- [[_strip_fieldflare_unsupported_fields shim]] - `references` [EXTRACTED]
-- [[discover_upstream_versions.py retrydeadlineIPv4 hardening]] - `references` [EXTRACTED]
-- [[hermes-dashboard-relay gateway bypass]] - `references` [EXTRACTED]
-- [[hermes_dashboard_proxy multi-Set-Cookie header relay fix]] - `references` [EXTRACTED]
+- [[StreamHead streaming route propagates upstream 4xx]] - `references` [EXTRACTED]
+- [[Suspected prompt-injection  phishing message]] - `references` [EXTRACTED]
+- [[Why a blanket revert to Oct 10 was not done]] - `references` [EXTRACTED]
+- [[discover_upstream_versions.py hardening for Sunday]] - `references` [EXTRACTED]
+- [[hermes-dashboard-relay bypass of the gateway proxy]] - `references` [EXTRACTED]
 - [[lazydocker docker.sock connection leak]] - `references` [EXTRACTED]
 - [[patch_telegram_edit_message_date.py (KeyError 'date')]] - `references` [EXTRACTED]
-- [[sunday-upgrade-apply.sh no-op gate fixes]] - `references` [EXTRACTED]
+- [[sunday-upgrade-apply.sh no-op gate fixes (CLAUDE.md 0.0)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/setup-secretssh
+#graphify/document #graphify/EXTRACTED #community/AgentTarget

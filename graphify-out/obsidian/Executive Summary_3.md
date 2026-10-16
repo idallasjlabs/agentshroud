@@ -1,18 +1,18 @@
 ---
-source_file: "docs/security/cve-mitigation-matrix.md"
+source_file: "docs/testing/test-coverage-report.md"
 type: "document"
-community: "AgentShroud™ CVE Mitigation Matrix"
-location: "L13"
+community: "AgentShroud v0.9.0"
+location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_CVE_Mitigation_Matrix
+  - community/AgentShroud_v090
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud™ CVE Mitigation Matrix]] - `contains` [EXTRACTED]
-- [[Application CVEs (OpenClaw  Hermes)]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.9.0]] - `contains` [EXTRACTED]
+- [[AgentShroud v1.3.0_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v090

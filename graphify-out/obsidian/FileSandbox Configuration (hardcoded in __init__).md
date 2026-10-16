@@ -12,6 +12,6 @@ tags:
 # FileSandbox Configuration (hardcoded in __init__)
 
 ## Connections
-- [[middleware.py]] - `contains` [EXTRACTED]
+- [[middleware.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/middlewarepy

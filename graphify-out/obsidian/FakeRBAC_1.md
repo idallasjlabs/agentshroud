@@ -12,8 +12,8 @@ tags:
 # FakeRBAC
 
 ## Connections
-- [[dot-__init__()_190]] - `method` [EXTRACTED]
-- [[dot-is_owner()_4]] - `method` [EXTRACTED]
+- [[dot-__init__()_155]] - `method` [EXTRACTED]
+- [[dot-is_owner()_5]] - `method` [EXTRACTED]
 - [[LockdownLevel]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `uses` [INFERRED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]

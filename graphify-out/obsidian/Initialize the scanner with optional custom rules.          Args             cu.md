@@ -12,6 +12,6 @@ tags:
 # Initialize the scanner with optional custom rules.          Args:             cu
 
 ## Connections
-- [[dot-__init__()_153]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_48]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/InjectionAction

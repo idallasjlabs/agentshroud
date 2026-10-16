@@ -12,6 +12,6 @@ tags:
 # Get effective policy for an agent.
 
 ## Connections
-- [[dot-get_policy()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-get_policy()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

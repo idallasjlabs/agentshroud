@@ -15,10 +15,10 @@ tags:
 - [[HCI (Hermes Control Interface)]] - `contains` [EXTRACTED]
 - [[HERMES_SETUP]] - `contains` [EXTRACTED]
 - [[Hermes OpenAI-Compatible API]] - `contains` [EXTRACTED]
-- [[Overview_15]] - `contains` [EXTRACTED]
-- [[Prerequisites_9]] - `contains` [EXTRACTED]
+- [[Overview_18]] - `contains` [EXTRACTED]
+- [[Prerequisites_8]] - `contains` [EXTRACTED]
 - [[Security Model_1]] - `contains` [EXTRACTED]
 - [[Table of Contents_1]] - `contains` [EXTRACTED]
-- [[Troubleshooting_28]] - `contains` [EXTRACTED]
+- [[Troubleshooting_29]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup

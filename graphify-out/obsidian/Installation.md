@@ -12,6 +12,6 @@ tags:
 # Installation
 
 ## Connections
-- [[ClamAV]] - `contains` [EXTRACTED]
+- [[ClamAV_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/ClamAV

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-resolve_workspace()]] - `calls` [EXTRACTED]
 - [[PermissionError]] - `inherits` [EXTRACTED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[Raised when a user is not permitted to access a group workspace.      Subclasses]] - `rationale_for` [EXTRACTED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
 - [[TeamsConfig_2]] - `uses` [INFERRED]

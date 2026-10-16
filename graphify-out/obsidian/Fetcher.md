@@ -12,10 +12,10 @@ tags:
 # Fetcher
 
 ## Connections
-- [[dot-__init__()_67]] - `references` [EXTRACTED]
+- [[dot-__init__()_192]] - `references` [EXTRACTED]
 - [[Citation_1]] - `uses` [INFERRED]
 - [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
-- [[CompetitorEntry]] - `uses` [INFERRED]
+- [[CompetitorEntry_1]] - `uses` [INFERRED]
 - [[make_httpx_fetcher()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/CompetitiveIntelReport

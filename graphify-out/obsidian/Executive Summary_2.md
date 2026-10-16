@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.9/release-notes-v0.9.0.md"
+source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Release Notes - AgentShroud v0.9.0"
-location: "L10"
+community: "AgentShroud Security Architecture"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Release_Notes_-_AgentShroud_v090
+  - community/AgentShroud_Security_Architecture
 ---
 
 # Executive Summary
 
 ## Connections
-- [[Release Notes - AgentShroud v0.9.0]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Release_Notes_-_AgentShroud_v090
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

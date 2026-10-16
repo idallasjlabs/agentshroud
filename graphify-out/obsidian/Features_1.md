@@ -1,23 +1,22 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+source_file: "dashboard/README.md"
 type: "document"
-community: "v0.8.0 — \"Watchtower\" (Complete Security + Everything We Know Today)"
-location: "L6"
+community: "DOCKER-VPN-NETWORKING.md"
+location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/v080__Watchtower_Complete_Security__Everything_We_Know_Today
+  - community/DOCKER-VPN-NETWORKINGmd
 ---
 
 # Features
 
 ## Connections
-- [[1. Observatory Mode (Global Monitor-Only Switch)]] - `contains` [EXTRACTED]
-- [[2. Prompt Injection Hardening]] - `contains` [EXTRACTED]
-- [[3. Interactive Egress Firewall (Little Snitch for Agents)]] - `contains` [EXTRACTED]
-- [[4. ML-Based Injection Classifier (Stretch)]] - `contains` [EXTRACTED]
-- [[5. Output Canary System]] - `contains` [EXTRACTED]
-- [[6. Enhanced Audit & Compliance]] - `contains` [EXTRACTED]
-- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
+- [[Action Feed]] - `contains` [EXTRACTED]
+- [[AgentShroud Dashboard]] - `contains` [EXTRACTED]
+- [[Data Ledger Viewer]] - `contains` [EXTRACTED]
+- [[Kill Switch_1]] - `contains` [EXTRACTED]
+- [[Memory Browser]] - `contains` [EXTRACTED]
+- [[Network Inspector]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/v080__Watchtower_Complete_Security__Everything_We_Know_Today
+#graphify/document #graphify/EXTRACTED #community/DOCKER-VPN-NETWORKINGmd

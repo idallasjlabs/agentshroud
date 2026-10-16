@@ -12,6 +12,6 @@ tags:
 
 ## Connections
 - [[Glibc TLS Incompatibility (Trillian)]] - `conceptually_related_to` [INFERRED]
-- [[RUNBOOK_1]] - `references` [EXTRACTED]
+- [[RUNBOOK]] - `references` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd

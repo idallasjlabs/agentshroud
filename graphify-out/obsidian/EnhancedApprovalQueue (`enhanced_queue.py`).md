@@ -12,12 +12,12 @@ tags:
 # EnhancedApprovalQueue (`enhanced_queue.py`)
 
 ## Connections
-- [[Environment Variables Used]] - `contains` [EXTRACTED]
+- [[Environment Variables Used_1]] - `contains` [EXTRACTED]
 - [[Key Class `EnhancedApprovalQueue`]] - `contains` [EXTRACTED]
 - [[Persistence]] - `contains` [EXTRACTED]
-- [[Purpose_74]] - `contains` [EXTRACTED]
-- [[Related Notes_34]] - `contains` [EXTRACTED]
-- [[Responsibilities_1]] - `contains` [EXTRACTED]
+- [[Purpose_79]] - `contains` [EXTRACTED]
+- [[Related Notes_37]] - `contains` [EXTRACTED]
+- [[Responsibilities_4]] - `contains` [EXTRACTED]
 - [[Timeout Behavior]] - `contains` [EXTRACTED]
 - [[Tool Risk Tiers]] - `contains` [EXTRACTED]
 - [[WebSocket Notifications]] - `contains` [EXTRACTED]

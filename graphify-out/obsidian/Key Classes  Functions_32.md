@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
 type: "document"
-community: "browser_security.py"
-location: "L25"
+community: "egress_config.py"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser_securitypy
+  - community/egress_configpy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[browser_security.py_2]] - `contains` [EXTRACTED]
+- [[egress_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser_securitypy
+#graphify/document #graphify/EXTRACTED #community/egress_configpy

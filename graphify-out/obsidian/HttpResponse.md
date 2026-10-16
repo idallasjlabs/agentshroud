@@ -1,21 +1,21 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "main.rs"
+community: "test_soc_realtime_coverage.py"
 location: "L220"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/test_soc_realtime_coveragepy
 ---
 
 # HttpResponse
 
 ## Connections
-- [[dot-request()]] - `references` [EXTRACTED]
 - [[dot-request()_1]] - `references` [EXTRACTED]
+- [[dot-request()_2]] - `references` [EXTRACTED]
 - [[FakeTransport]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

@@ -12,6 +12,6 @@ tags:
 # Inspects MCP tool calls and responses for security threats.
 
 ## Connections
-- [[MCPInspector]] - `rationale_for` [EXTRACTED]
+- [[MCPInspector_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MCPInspector

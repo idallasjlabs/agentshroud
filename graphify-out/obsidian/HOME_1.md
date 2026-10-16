@@ -1,17 +1,24 @@
 ---
-source_file: "docker/bots/hermes/start.sh"
-type: "code"
-community: "telegram_api_proxy (/telegram-api/{path})"
-location: "L21"
+source_file: "docs/vault/00 - START HERE/Home.md"
+type: "document"
+community: "main.py.md"
+location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/telegram_api_proxy_/telegram-api/path
+  - community/mainpymd
 ---
 
-# HOME
+# Home.md
 
 ## Connections
-- [[start.sh (Hermes s6 main program  startup wrapper)]] - `defines` [EXTRACTED]
+- [[AgentShroud — Vault Home]] - `contains` [EXTRACTED]
+- [[Architecture Overview_3]] - `references` [EXTRACTED]
+- [[Data Flow_1]] - `references` [EXTRACTED]
+- [[Quick Reference_8]] - `references` [EXTRACTED]
+- [[Shutdown & Recovery_1]] - `references` [EXTRACTED]
+- [[Startup Sequence_1]] - `references` [EXTRACTED]
+- [[System Overview]] - `references` [EXTRACTED]
+- [[main.py_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path
+#graphify/document #graphify/EXTRACTED #community/mainpymd

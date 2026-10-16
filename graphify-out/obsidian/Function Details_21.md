@@ -1,21 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "document"
-community: "EgressFilter"
-location: "L46"
+community: "ledger.py"
+location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/ledgerpy
 ---
 
 # Function Details
 
 ## Connections
-- [[EgressFilter_3]] - `contains` [EXTRACTED]
-- [[EgressFilter._is_private_ip(host)]] - `contains` [EXTRACTED]
-- [[EgressFilter._record(agent_id, dest, port, action, rule)]] - `contains` [EXTRACTED]
-- [[EgressFilter.check(agent_id, destination, port)]] - `contains` [EXTRACTED]
-- [[EgressPolicy.matches_domain(domain)]] - `contains` [EXTRACTED]
+- [[enforce_retention()]] - `contains` [EXTRACTED]
+- [[initialize()]] - `contains` [EXTRACTED]
+- [[ledger.py]] - `contains` [EXTRACTED]
+- [[query(page, page_size, source, since, until, forwarded_to)]] - `contains` [EXTRACTED]
+- [[record(source, content, original_content, sanitized, redaction_count, redaction_types, forwarded_to, content_type, metadata)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressFilter
+#graphify/document #graphify/EXTRACTED #community/ledgerpy

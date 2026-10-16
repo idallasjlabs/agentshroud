@@ -1,17 +1,18 @@
 ---
-source_file: "docs/planning/reviews/blue-team-audit-v0.7.0.md"
+source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "AgentShroud v0.7.0 Blue Team Security Audit Report"
-location: "L8"
+community: "AgentShroud™ CVE Mitigation Matrix"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Blue_Team_Security_Audit_Report
+  - community/AgentShroud_CVE_Mitigation_Matrix
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud v0.7.0 Blue Team Security Audit Report]] - `contains` [EXTRACTED]
+- [[AgentShroud™ CVE Mitigation Matrix]] - `contains` [EXTRACTED]
+- [[Application CVEs (OpenClaw  Hermes)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Blue_Team_Security_Audit_Report
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "rationale"
-community: "discover_upstream_versions.py"
+community: "egress_filter.py"
 location: "L115"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/discover_upstream_versionspy
+  - community/egress_filterpy
 ---
 
 # Hermes publishes date-based image tags (vYYYY.M.D).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPickLatestHermesTag]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/discover_upstream_versionspy
+#graphify/rationale #graphify/EXTRACTED #community/egress_filterpy

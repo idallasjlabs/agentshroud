@@ -1,22 +1,23 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
 type: "document"
-community: "telegram_proxy.py"
-location: "L29"
+community: "web_content_scanner.py"
+location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/web_content_scannerpy
 ---
 
 # Function Details
 
 ## Connections
-- [[TelegramAPIProxy._filter_inbound_updates(response_data)]] - `contains` [EXTRACTED]
-- [[TelegramAPIProxy._filter_outbound(body, content_type)]] - `contains` [EXTRACTED]
-- [[TelegramAPIProxy._forward_to_telegram(url, body, content_type)]] - `contains` [EXTRACTED]
-- [[TelegramAPIProxy.get_stats()]] - `contains` [EXTRACTED]
-- [[TelegramAPIProxy.proxy_request(bot_token, method, body, content_type)]] - `contains` [EXTRACTED]
-- [[telegram_proxy.py_1]] - `contains` [EXTRACTED]
+- [[WebContentScanner._scan_encoded_payloads(content, result)]] - `contains` [EXTRACTED]
+- [[WebContentScanner._scan_hidden_content(content, result)]] - `contains` [EXTRACTED]
+- [[WebContentScanner._scan_pii(content, result)]] - `contains` [EXTRACTED]
+- [[WebContentScanner._scan_prompt_injection(content, result)]] - `contains` [EXTRACTED]
+- [[WebContentScanner._scan_zero_width(content, result)]] - `contains` [EXTRACTED]
+- [[WebContentScanner.scan(content, content_type)]] - `contains` [EXTRACTED]
+- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/document #graphify/EXTRACTED #community/web_content_scannerpy

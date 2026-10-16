@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_record_guard_init_failure()]] - `references` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
+- [[Action_2]] - `uses` [INFERRED]
 - [[AgentRegistry]] - `uses` [INFERRED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ApprovalHardening]] - `uses` [INFERRED]
@@ -41,10 +41,10 @@ tags:
 - [[NetworkValidator]] - `uses` [INFERRED]
 - [[OAuthSecurityValidator]] - `uses` [INFERRED]
 - [[OutputCanary]] - `uses` [INFERRED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PathIsolationConfig]] - `uses` [INFERRED]
 - [[PathIsolationManager]] - `uses` [INFERRED]
-- [[RBACConfig_4]] - `uses` [INFERRED]
+- [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
 - [[Resource_2]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
@@ -57,7 +57,7 @@ tags:
 - [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[ToolResultSanitizer_1]] - `uses` [INFERRED]
 - [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[ToolTier_1]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[XMLLeakFilter]] - `uses` [INFERRED]
 

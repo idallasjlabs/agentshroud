@@ -17,9 +17,9 @@ tags:
 - [[Egress Filter Errors]] - `references` [EXTRACTED]
 - [[Error Index_1]] - `contains` [EXTRACTED]
 - [[MCP Proxy Errors]] - `references` [EXTRACTED]
-- [[PII Pipeline Errors_1]] - `references` [EXTRACTED]
+- [[PII Pipeline Errors]] - `references` [EXTRACTED]
 - [[Prompt Injection Blocks]] - `references` [EXTRACTED]
-- [[SSH Proxy Errors_1]] - `references` [EXTRACTED]
+- [[SSH Proxy Errors]] - `references` [EXTRACTED]
 - [[Troubleshooting Matrix]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Error_Indexmd

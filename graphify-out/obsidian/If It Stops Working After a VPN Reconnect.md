@@ -1,12 +1,12 @@
 ---
 source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility"
+community: "ModeRequest"
 location: "L133"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility
+  - community/ModeRequest
 ---
 
 # If It Stops Working After a VPN Reconnect
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility
+#graphify/document #graphify/EXTRACTED #community/ModeRequest

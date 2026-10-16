@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "MiddlewareManager"
+community: "AlertDispatcher"
 location: "L72"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MiddlewareManager
+  - community/AlertDispatcher
 ---
 
 # EgressMonitorConfig
 
 ## Connections
-- [[dot-__init__()_162]] - `calls` [EXTRACTED]
-- [[dot-__init__()_166]] - `references` [EXTRACTED]
+- [[dot-__init__()_11]] - `calls` [EXTRACTED]
+- [[dot-__init__()_13]] - `references` [EXTRACTED]
 - [[dot-test_egress_monitor_default_enforce()]] - `calls` [EXTRACTED]
-- [[Action_3]] - `uses` [INFERRED]
-- [[Any_63]] - `uses` [INFERRED]
+- [[Action_1]] - `uses` [INFERRED]
+- [[Any_21]] - `uses` [INFERRED]
 - [[Exception_3]] - `uses` [INFERRED]
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager_2]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
 - [[TestAlertGeneration]] - `uses` [INFERRED]
 - [[TestAnomalyDetection]] - `uses` [INFERRED]
@@ -33,12 +33,12 @@ tags:
 - [[TestModuleInstantiationInEnforceMode]] - `uses` [INFERRED]
 - [[TestSecurityConfigDefaults]] - `uses` [INFERRED]
 - [[TestSlowDripDetection]] - `uses` [INFERRED]
-- [[ToolTier_1]] - `uses` [INFERRED]
-- [[default_config()_2]] - `calls` [EXTRACTED]
+- [[ToolTier]] - `uses` [INFERRED]
+- [[default_config()]] - `calls` [EXTRACTED]
 - [[egress_monitor.py]] - `contains` [EXTRACTED]
-- [[middleware.py_1]] - `imports` [EXTRACTED]
-- [[monitor_config()_1]] - `calls` [EXTRACTED]
+- [[middleware.py]] - `imports` [EXTRACTED]
+- [[monitor_config()]] - `calls` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager
+#graphify/code #graphify/INFERRED #community/AlertDispatcher

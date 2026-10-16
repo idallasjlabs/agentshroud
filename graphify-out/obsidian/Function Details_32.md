@@ -1,21 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
 type: "document"
-community: "egress_monitor.py"
-location: "L39"
+community: "falco_monitor.py"
+location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/egress_monitorpy
+  - community/falco_monitorpy
 ---
 
 # Function Details
 
 ## Connections
-- [[EgressMonitor.check_anomalies(agent_id)]] - `contains` [EXTRACTED]
-- [[EgressMonitor.daily_summary(agent_id)]] - `contains` [EXTRACTED]
-- [[EgressMonitor.get_events(agent_id, channel)]] - `contains` [EXTRACTED]
-- [[EgressMonitor.record(event)]] - `contains` [EXTRACTED]
-- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
+- [[categorize_alerts(alerts)]] - `contains` [EXTRACTED]
+- [[falco_monitor.py_1]] - `contains` [EXTRACTED]
+- [[generate_summary(alerts)_1]] - `contains` [EXTRACTED]
+- [[is_agentshroud_rule(rule_name)]] - `contains` [EXTRACTED]
+- [[parse_alert(raw)_1]] - `contains` [EXTRACTED]
+- [[read_alerts(alert_dir, since, agentshroud_only)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/egress_monitorpy
+#graphify/document #graphify/EXTRACTED #community/falco_monitorpy

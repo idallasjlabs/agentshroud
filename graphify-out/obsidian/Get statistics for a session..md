@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/security/tool_chain_analyzer.py"
+source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "TestToolChainAnalyzer"
-location: "L531"
+community: "MultiTurnTracker"
+location: "L404"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/MultiTurnTracker
 ---
 
 # Get statistics for a session.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_session_stats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker
