@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_ssh_endpoints.py"
+source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
 community: "ApprovalQueueConfig"
-location: "L74"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # auth_headers()
 
 ## Connections
-- [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
+- [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

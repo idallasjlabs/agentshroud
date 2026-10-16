@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Close the store and cancel timeout tasks.]] - `rationale_for` [EXTRACTED]
-- [[EnhancedApprovalQueue_2]] - `method` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

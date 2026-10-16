@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/tests/test_a2a_integration.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L55"
+community: "ApprovalQueueConfig"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/ApprovalQueueConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[A2APeerTestDouble]] - `method` [EXTRACTED]
+- [[ApprovalQueueConfig_1]] - `references` [EXTRACTED]
+- [[ApprovalStore_1]] - `references` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
+- [[Initialize enhanced approval queue.          Args             config Basic app]] - `rationale_for` [EXTRACTED]
+- [[MFAGuard_2]] - `references` [EXTRACTED]
+- [[ToolRiskConfig_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

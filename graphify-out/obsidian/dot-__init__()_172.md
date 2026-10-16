@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L125"
+community: "test_soc_realtime_coverage.py"
+location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[Exception_3]] - `references` [EXTRACTED]
-- [[FakeConn]] - `method` [EXTRACTED]
+- [[Any_67]] - `references` [EXTRACTED]
+- [[ServiceManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

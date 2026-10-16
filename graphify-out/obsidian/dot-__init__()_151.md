@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "test_cli_coverage.py"
-location: "L630"
+community: "EgressFilterConfig"
+location: "L584"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cli_coveragepy
+  - community/EgressFilterConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeConnect]] - `method` [EXTRACTED]
+- [[Args             block_threshold Score at or above which input is blocked.]] - `rationale_for` [EXTRACTED]
+- [[PatternRule]] - `references` [EXTRACTED]
+- [[PromptGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

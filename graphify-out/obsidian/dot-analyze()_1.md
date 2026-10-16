@@ -19,7 +19,7 @@ tags:
 - [[dot-analyze_and_pin()]] - `calls` [EXTRACTED]
 - [[Analyze a URL for security issues.          Returns URLAnalysisResult with verdi]] - `rationale_for` [EXTRACTED]
 - [[URLAnalysisResult_1]] - `references` [EXTRACTED]
-- [[URLAnalyzer]] - `method` [EXTRACTED]
+- [[URLAnalyzer_1]] - `method` [EXTRACTED]
 - [[URLFinding]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

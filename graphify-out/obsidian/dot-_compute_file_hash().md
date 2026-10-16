@@ -12,9 +12,9 @@ tags:
 # ._compute_file_hash()
 
 ## Connections
-- [[dot-scan_file()]] - `calls` [EXTRACTED]
+- [[dot-scan_file()_1]] - `calls` [EXTRACTED]
 - [[Compute SHA-256 hash of a file.]] - `rationale_for` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
-- [[Path_1]] - `references` [EXTRACTED]
+- [[Path_48]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

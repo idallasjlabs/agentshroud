@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "WebContentScanner"
-location: "L155"
+community: "test_llm_proxy.py"
+location: "L391"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebContentScanner
+  - community/test_llm_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[RateLimiter]] - `calls` [EXTRACTED]
-- [[URLAnalyzer_1]] - `references` [EXTRACTED]
-- [[WebContentScanner]] - `references` [EXTRACTED]
-- [[WebProxy]] - `method` [EXTRACTED]
-- [[WebProxyConfig_1]] - `references` [EXTRACTED]
+- [[_TrackingInjector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebContentScanner
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

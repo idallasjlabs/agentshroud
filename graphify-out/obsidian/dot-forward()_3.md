@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "A2AProxyResult"
+community: "A2APolicyEngine"
 location: "L446"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AProxyResult
+  - community/A2APolicyEngine
 ---
 
 # .forward()
@@ -16,4 +16,4 @@ tags:
 - [[dot-process_inbound_request()]] - `calls` [EXTRACTED]
 - [[HermesA2AForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AProxyResult
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

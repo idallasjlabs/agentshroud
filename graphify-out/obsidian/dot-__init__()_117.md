@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/agent_isolation.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "AgentRegistry"
-location: "L55"
+community: "TelegramAPIProxy"
+location: "L139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/TelegramAPIProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[AgentRegistry]] - `method` [EXTRACTED]
+- [[FakeRBAC]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

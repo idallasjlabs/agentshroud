@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_v1_models_synthetic.py"
+source_file: "gateway/tests/test_chat_completions_alias.py"
 type: "code"
-community: "test_v1_models_synthetic.py"
-location: "L31"
+community: "test_claude_via_openai_path.py"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_v1_models_syntheticpy
+  - community/test_claude_via_openai_pathpy
 ---
 
 # client()
 
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[TestClient with a stubbed proxy IP that passes the network allowlist.]] - `rationale_for` [EXTRACTED]
-- [[test_v1_models_synthetic.py]] - `contains` [EXTRACTED]
+- [[test_chat_completions_alias.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_v1_models_syntheticpy
+#graphify/code #graphify/EXTRACTED #community/test_claude_via_openai_pathpy

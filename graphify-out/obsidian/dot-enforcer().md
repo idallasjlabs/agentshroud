@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "RBACConfig"
+community: "TrustConfig"
 location: "L268"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/TrustConfig
 ---
 
 # .enforcer()
@@ -15,4 +15,4 @@ tags:
 - [[TestToolRateLimiting]] - `method` [EXTRACTED]
 - [[ToolACLEnforcer]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

@@ -12,6 +12,6 @@ tags:
 # .agents/skills/i-agile/SKILL.md
 
 ## Connections
-- [[Skill agile_1]] - `contains` [EXTRACTED]
+- [[Skill agile]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/agents/skills/i-agile/SKILLmd

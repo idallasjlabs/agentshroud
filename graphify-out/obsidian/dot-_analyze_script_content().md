@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "GitGuard"
+community: "ResourceGuard"
 location: "L382"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/ResourceGuard
 ---
 
 # ._analyze_script_content()
@@ -18,4 +18,4 @@ tags:
 - [[GitGuard]] - `method` [EXTRACTED]
 - [[SecurityFinding]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GitGuard
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

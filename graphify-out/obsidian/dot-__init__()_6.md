@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "test_llm_proxy.py"
-location: "L540"
+community: "WebProxyConfig"
+location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/WebProxyConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeToolACL]] - `method` [EXTRACTED]
+- [[RateLimiter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

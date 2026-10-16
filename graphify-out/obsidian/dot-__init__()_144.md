@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_mcp_policy.py"
+source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "MCPPolicyEngine"
-location: "L278"
+community: "DifferentialPIIDetector"
+location: "L314"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/DifferentialPIIDetector
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeApprovalQueue]] - `method` [EXTRACTED]
+- [[dot-_init_presidio()_1]] - `calls` [EXTRACTED]
+- [[DifferentialPIIConfig_1]] - `references` [EXTRACTED]
+- [[DifferentialPIIDetector_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_episode_id()]] - `calls` [EXTRACTED]
 - [[dot-_safe_dispatch()]] - `calls` [EXTRACTED]
-- [[dot-check()_1]] - `calls` [EXTRACTED]
+- [[dot-check()_2]] - `calls` [EXTRACTED]
 - [[CronStateMonitor]] - `method` [EXTRACTED]
 - [[Evaluate one job.  Returns 1 if a NEW episode was alerted.          Flood guard]] - `rationale_for` [EXTRACTED]
 - [[JobState]] - `references` [EXTRACTED]

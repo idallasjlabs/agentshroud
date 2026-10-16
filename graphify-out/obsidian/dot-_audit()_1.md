@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "A2AProxyResult"
+community: "A2APolicyEngine"
 location: "L394"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AProxyResult
+  - community/A2APolicyEngine
 ---
 
 # ._audit()
@@ -18,4 +18,4 @@ tags:
 - [[A2AProxyResult]] - `references` [EXTRACTED]
 - [[record_decision()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AProxyResult
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

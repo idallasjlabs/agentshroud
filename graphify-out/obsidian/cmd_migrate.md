@@ -2,19 +2,20 @@
 source_file: "docker/setup-secrets.sh"
 type: "code"
 community: "setup-secrets.sh"
-location: "L500"
+location: "L576-L626"
 tags:
   - graphify/code
   - graphify/EXTRACTED
   - community/setup-secretssh
 ---
 
-# cmd_interactive()
+# cmd_migrate
 
 ## Connections
-- [[generate_gateway_password()]] - `calls` [EXTRACTED]
-- [[read_secret_masked()]] - `calls` [EXTRACTED]
-- [[read_secret_plain()]] - `calls` [EXTRACTED]
+- [[SECRET_DEFS]] - `references` [EXTRACTED]
+- [[ensure_keychain]] - `calls` [EXTRACTED]
+- [[keychain_store]] - `calls` [EXTRACTED]
+- [[op_get]] - `calls` [EXTRACTED]
 - [[setup-secrets.sh]] - `defines` [EXTRACTED]
 - [[setup-secrets.sh script]] - `calls` [EXTRACTED]
 

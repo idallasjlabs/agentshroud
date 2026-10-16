@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-verify_killswitch()]] - `calls` [EXTRACTED]
-- [[Any_42]] - `references` [EXTRACTED]
+- [[Any_20]] - `references` [EXTRACTED]
 - [[KillSwitchMonitor]] - `method` [EXTRACTED]
 - [[Test if the kill switch script has valid syntax.]] - `rationale_for` [EXTRACTED]
 

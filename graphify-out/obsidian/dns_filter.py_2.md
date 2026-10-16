@@ -20,6 +20,6 @@ tags:
 - [[TunnelingPattern]] - `contains` [EXTRACTED]
 - [[alert_dispatcher.py]] - `references` [EXTRACTED]
 - [[cve-mitigation-matrix]] - `references` [EXTRACTED]
-- [[egress_filter.py_1]] - `references` [EXTRACTED]
+- [[egress_filter.py]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

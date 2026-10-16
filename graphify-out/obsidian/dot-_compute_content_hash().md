@@ -12,7 +12,7 @@ tags:
 # ._compute_content_hash()
 
 ## Connections
-- [[CompetitiveIntelReport_1]] - `method` [EXTRACTED]
+- [[CompetitiveIntelReport_2]] - `method` [EXTRACTED]
 - [[Derive content_hash from the canonical content fields.          Only computed wh]] - `rationale_for` [EXTRACTED]
 - [[_compute_hash()]] - `calls` [EXTRACTED]
 

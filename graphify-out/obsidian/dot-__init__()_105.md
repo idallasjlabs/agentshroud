@@ -1,17 +1,20 @@
 ---
-source_file: "src/interfaces/text_control_center.py"
+source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "ControlCenter"
-location: "L66"
+community: "WebProxyConfig"
+location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ControlCenter
+  - community/WebProxyConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[ControlCenter]] - `method` [EXTRACTED]
+- [[EgressFilter]] - `references` [EXTRACTED]
+- [[HTTPConnectProxy_1]] - `method` [EXTRACTED]
+- [[WebProxy_1]] - `references` [EXTRACTED]
+- [[WebProxyConfig_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ControlCenter
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_http_proxy.py"
+source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "WebProxy"
-location: "L117"
+community: "SecureBrowser"
+location: "L401"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/SecureBrowser
 ---
 
 # .close()
 
 ## Connections
-- [[_DummyTargetWriter]] - `method` [EXTRACTED]
+- [[Clean up browser resources_1]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_1]] - `method` [EXTRACTED]
+- [[main()_5]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

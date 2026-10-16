@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_realtime_coverage.py"
+source_file: "gateway/ingest_api/email_service.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L167"
+community: "GatewayEmailService"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/GatewayEmailService
 ---
 
 # .__init__()
 
 ## Connections
-- [[PermissionResult]] - `calls` [EXTRACTED]
-- [[SimpleNamespace]] - `calls` [EXTRACTED]
-- [[_FakeRBAC]] - `method` [EXTRACTED]
+- [[GatewayEmailService_1]] - `method` [EXTRACTED]
+- [[TransportFactory]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

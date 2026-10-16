@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/network_validator.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L54"
+community: "FalcoAlertWatcher"
+location: "L194"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/FalcoAlertWatcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[NetworkValidator]] - `method` [EXTRACTED]
+- [[FalcoAlertWatcher]] - `method` [EXTRACTED]
+- [[Path]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

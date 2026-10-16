@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/soc/services.py"
+source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "ServiceManager"
-location: "L218"
+community: "RBACConfig"
+location: "L181"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/RBACConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_25]] - `references` [EXTRACTED]
-- [[ServiceManager]] - `method` [EXTRACTED]
+- [[dot-default()]] - `calls` [EXTRACTED]
+- [[PrivacyPolicy]] - `references` [EXTRACTED]
+- [[PrivacyPolicyEnforcer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

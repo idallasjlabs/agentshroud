@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/oauth_security.py"
+source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "code"
-community: "OAuthSecurityValidator"
-location: "L55"
+community: "DataExfilVolumeGuard"
+location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OAuthSecurityValidator
+  - community/DataExfilVolumeGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[OAuthSecurityValidator]] - `method` [EXTRACTED]
+- [[DataExfilVolumeConfig]] - `references` [EXTRACTED]
+- [[DataExfilVolumeGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator
+#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

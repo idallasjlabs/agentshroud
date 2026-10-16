@@ -16,7 +16,7 @@ tags:
 - [[dot-check_all()]] - `calls` [EXTRACTED]
 - [[dot-get_trust_level()]] - `calls` [EXTRACTED]
 - [[Block non-owner tool calls that reference admin-private data pathscontent.]] - `rationale_for` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
+- [[MCPPermissionManager]] - `method` [EXTRACTED]
 - [[PermissionCheck]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

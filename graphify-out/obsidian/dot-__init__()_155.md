@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ssh_proxy/proxy.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L138"
+community: "HTTPConnectProxy"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/HTTPConnectProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[SSHConfig]] - `references` [EXTRACTED]
-- [[SSHProxy_1]] - `method` [EXTRACTED]
+- [[_MockWriter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/ingest_api/routes/approval.py"
+source_file: "gateway/ingest_api/routes/health.py"
 type: "code"
-community: "create_auth_dependency"
-location: "L33"
+community: "test_security.py"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/test_securitypy
 ---
 
 # auth_dep()
 
 ## Connections
 - [[Auth dependency that uses the app state config._2]] - `rationale_for` [EXTRACTED]
-- [[Request_6]] - `references` [EXTRACTED]
-- [[approval.py]] - `contains` [EXTRACTED]
+- [[Request_7]] - `references` [EXTRACTED]
 - [[create_auth_dependency()]] - `calls` [EXTRACTED]
+- [[health.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/test_securitypy

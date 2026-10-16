@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "load_config"
+community: "ApprovalQueueConfig"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/ApprovalQueueConfig
 ---
 
 # _write()
 
 ## Connections
-- [[Path_22]] - `references` [EXTRACTED]
+- [[Path_31]] - `references` [EXTRACTED]
 - [[test_apply_swaps_only_reloadable_fields()]] - `calls` [EXTRACTED]
 - [[test_config_hot_reload.py]] - `contains` [EXTRACTED]
 - [[test_default_mtime_reads_real_file_and_handles_missing()]] - `calls` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[test_watcher_reloads_on_mtime_change()]] - `calls` [EXTRACTED]
 - [[test_watcher_stops_on_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

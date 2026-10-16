@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/path_isolation.py"
+source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L65"
+community: "SubagentMonitor"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/SubagentMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_ensure_base_directory()]] - `calls` [EXTRACTED]
-- [[PathIsolationConfig]] - `references` [EXTRACTED]
-- [[PathIsolationManager]] - `method` [EXTRACTED]
+- [[SubagentMonitor]] - `method` [EXTRACTED]
+- [[SubagentMonitorConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

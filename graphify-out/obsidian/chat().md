@@ -15,7 +15,7 @@ tags:
 - [[ChatRequest]] - `references` [EXTRACTED]
 - [[ChatResponse]] - `calls` [EXTRACTED]
 - [[Process chat message with Isaiah's personality.]] - `rationale_for` [EXTRACTED]
-- [[Request_9]] - `references` [EXTRACTED]
+- [[Request_10]] - `references` [EXTRACTED]
 - [[TestAsyncClient]] - `calls` [EXTRACTED]
 - [[TestErrorSanitization]] - `calls` [EXTRACTED]
 - [[_check_rate_limit()]] - `calls` [EXTRACTED]

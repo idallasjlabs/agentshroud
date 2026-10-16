@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "HTTPConnectProxy"
-location: "L63"
+community: "MiddlewareManager"
+location: "L1438"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/MiddlewareManager
 ---
 
 # .close()
 
 ## Connections
-- [[_CloseRaisesWriter]] - `method` [EXTRACTED]
+- [[MiddlewareManager]] - `method` [EXTRACTED]
+- [[Shutdown middleware background tasks cleanly.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

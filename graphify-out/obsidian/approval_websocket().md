@@ -12,7 +12,7 @@ tags:
 # approval_websocket()
 
 ## Connections
-- [[WebSocket_5]] - `references` [EXTRACTED]
+- [[WebSocket_7]] - `references` [EXTRACTED]
 - [[WebSocket endpoint for real-time approval notifications      Protocol     1. Cl]] - `rationale_for` [EXTRACTED]
 - [[_validate_ws_token()]] - `calls` [EXTRACTED]
 - [[approval.py]] - `contains` [EXTRACTED]

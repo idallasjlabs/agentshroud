@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
+source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "forward.py"
-location: "L38"
+community: "KillSwitchMonitor"
+location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/forwardpy
+  - community/KillSwitchMonitor
 ---
 
 # client()
 
 ## Connections
-- [[test_email_owner_bypasses_pii.py]] - `contains` [EXTRACTED]
+- [[_make_app()]] - `calls` [EXTRACTED]
+- [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/forwardpy
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

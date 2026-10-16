@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-decide()_1]] - `calls` [EXTRACTED]
 - [[ApprovalQueueItem_1]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue_2]] - `method` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
 - [[Fetch a single queue item by ID.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

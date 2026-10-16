@@ -29,6 +29,6 @@ tags:
 - [[dot-test_wildcard_allowlist_match_kept()]] - `calls` [EXTRACTED]
 - [[CitationVerifier]] - `calls` [EXTRACTED]
 - [[TestVerifyReport]] - `method` [EXTRACTED]
-- [[_FakeFetcher_1]] - `calls` [EXTRACTED]
+- [[_FakeFetcher]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy

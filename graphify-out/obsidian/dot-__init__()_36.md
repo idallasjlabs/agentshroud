@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_cron_state_monitor.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "CronStateMonitor"
-location: "L51"
+community: "ProxyAction"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CronStateMonitor
+  - community/ProxyAction
 ---
 
 # .__init__()
 
 ## Connections
-- [[_DispatchSpy]] - `method` [EXTRACTED]
+- [[MockDNSVerdict]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CronStateMonitor
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

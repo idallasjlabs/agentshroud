@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/slack_socket_client.py"
+source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "SlackSocketClient"
-location: "L59"
+community: "AuditExporter"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackSocketClient
+  - community/AuditExporter
 ---
 
 # .__init__()
 
 ## Connections
-- [[SlackSocketClient]] - `method` [EXTRACTED]
+- [[dot-_default_jsonld_context()]] - `calls` [EXTRACTED]
+- [[AuditExportConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackSocketClient
+#graphify/code #graphify/EXTRACTED #community/AuditExporter

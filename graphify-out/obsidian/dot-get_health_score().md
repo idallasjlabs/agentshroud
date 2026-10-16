@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-should_rotate()]] - `calls` [EXTRACTED]
 - [[dot-should_warn()]] - `calls` [EXTRACTED]
-- [[Any_38]] - `references` [EXTRACTED]
+- [[Any_18]] - `references` [EXTRACTED]
 - [[Calculate overall credential health score.]] - `rationale_for` [EXTRACTED]
 - [[KeyRotationManager]] - `method` [EXTRACTED]
 

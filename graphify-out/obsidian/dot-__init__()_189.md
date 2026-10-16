@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_web_proxy_security.py"
+source_file: "gateway/security/progressive_lockdown.py"
 type: "code"
-community: "ProxyAction"
-location: "L24"
+community: "ProgressiveLockdown"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction
+  - community/ProgressiveLockdown
 ---
 
 # .__init__()
 
 ## Connections
-- [[MockDNSVerdict]] - `method` [EXTRACTED]
+- [[ProgressiveLockdown]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

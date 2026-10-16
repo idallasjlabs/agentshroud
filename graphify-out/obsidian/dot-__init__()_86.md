@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/prompt_guard.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "PIIConfig"
-location: "L584"
+community: "test_soc_router_coverage.py"
+location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/test_soc_router_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args             block_threshold Score at or above which input is blocked.]] - `rationale_for` [EXTRACTED]
-- [[PatternRule]] - `references` [EXTRACTED]
-- [[PromptGuard_1]] - `method` [EXTRACTED]
+- [[FakeGroup]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

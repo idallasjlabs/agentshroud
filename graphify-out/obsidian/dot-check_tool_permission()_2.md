@@ -17,7 +17,7 @@ tags:
 - [[dot-get_trust_level()]] - `calls` [EXTRACTED]
 - [[dot-infer_permission_level()]] - `calls` [EXTRACTED]
 - [[Check if an agent can call a specific tool.          Default-allow only blocks]] - `rationale_for` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
+- [[MCPPermissionManager]] - `method` [EXTRACTED]
 - [[PermissionCheck]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/approval_queue/store.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L43"
+community: "MCPPermissionManager"
+location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/MCPPermissionManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[ApprovalStore]] - `method` [EXTRACTED]
-- [[Path_60]] - `references` [EXTRACTED]
+- [[HttpSseConnection]] - `method` [EXTRACTED]
+- [[MCPServerConfig_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_forward_routing.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "AgentTarget"
-location: "L404"
+community: ".__init__"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/__init__
 ---
 
 # .__init__()
 
 ## Connections
-- [[_TrustCaptor]] - `method` [EXTRACTED]
+- [[dot-_load_pending_store()]] - `calls` [EXTRACTED]
+- [[ApprovalQueue]] - `method` [EXTRACTED]
+- [[ApprovalQueueConfig]] - `references` [EXTRACTED]
+- [[Initialize approval queue          Args             config Approval queue conf]] - `rationale_for` [EXTRACTED]
+- [[MFAGuard]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/__init__

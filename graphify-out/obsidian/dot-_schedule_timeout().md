@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-initialize()_2]] - `calls` [EXTRACTED]
 - [[dot-submit()_1]] - `calls` [EXTRACTED]
-- [[EnhancedApprovalQueue_2]] - `method` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
 - [[Schedule a timeout task for a request.]] - `rationale_for` [EXTRACTED]
 - [[ToolRiskPolicy_1]] - `references` [EXTRACTED]
 

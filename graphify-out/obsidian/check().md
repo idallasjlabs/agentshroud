@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/smoke.d/test-sunday-upgrade-scan.sh"
+source_file: "scripts/smoke.d/test-container-runtime.sh"
 type: "code"
-community: "test-sunday-upgrade-scan.sh"
-location: "L56"
+community: "test-container-runtime.sh"
+location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test-sunday-upgrade-scansh
+  - community/test-container-runtimesh
 ---
 
 # check()
 
 ## Connections
-- [[test-sunday-upgrade-scan.sh]] - `defines` [EXTRACTED]
-- [[test-sunday-upgrade-scan.sh script]] - `calls` [EXTRACTED]
+- [[test-container-runtime.sh]] - `defines` [EXTRACTED]
+- [[test-container-runtime.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test-sunday-upgrade-scansh
+#graphify/code #graphify/EXTRACTED #community/test-container-runtimesh

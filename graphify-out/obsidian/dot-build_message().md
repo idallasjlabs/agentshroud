@@ -12,7 +12,7 @@ tags:
 # .build_message()
 
 ## Connections
-- [[dot-send()_2]] - `calls` [EXTRACTED]
+- [[dot-send()]] - `calls` [EXTRACTED]
 - [[Build the MIME message string (multipartalternative).          For HTML mail th]] - `rationale_for` [EXTRACTED]
 - [[GatewayEmailService_1]] - `method` [EXTRACTED]
 

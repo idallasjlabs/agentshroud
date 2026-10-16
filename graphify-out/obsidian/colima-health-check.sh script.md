@@ -15,7 +15,7 @@ tags:
 - [[_upgrade_in_progress()]] - `calls` [EXTRACTED]
 - [[colima-health-check.sh]] - `contains` [EXTRACTED]
 - [[log()_7]] - `calls` [EXTRACTED]
-- [[notify()_1]] - `calls` [EXTRACTED]
+- [[notify()]] - `calls` [EXTRACTED]
 - [[resolve_docker_host()]] - `calls` [EXTRACTED]
 - [[write_state()]] - `calls` [EXTRACTED]
 

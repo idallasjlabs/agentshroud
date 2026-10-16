@@ -15,7 +15,7 @@ tags:
 - [[_read_auth_token()]] - `contains` [EXTRACTED]
 - [[chat-console launcher]] - `references` [EXTRACTED]
 - [[check_status()]] - `contains` [EXTRACTED]
-- [[main()_31]] - `contains` [EXTRACTED]
+- [[main()_32]] - `contains` [EXTRACTED]
 - [[print_banner()]] - `contains` [EXTRACTED]
 - [[print_help()]] - `contains` [EXTRACTED]
 - [[send_message()]] - `contains` [EXTRACTED]

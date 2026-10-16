@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/egress_filter.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L105"
+community: "PIIConfig"
+location: "L412"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/PIIConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressFilter_1]] - `method` [EXTRACTED]
-- [[EgressFilterConfig_1]] - `references` [EXTRACTED]
-- [[EgressPolicy]] - `references` [EXTRACTED]
-- [[get_egress_config()]] - `calls` [EXTRACTED]
+- [[_StubForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

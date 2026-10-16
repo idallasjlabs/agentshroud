@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/dns_forwarder.py"
+source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "DNSForwarderProtocol"
-location: "L163"
+community: "MiddlewareManager"
+location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSForwarderProtocol
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[DNSForwarderProtocol]] - `method` [EXTRACTED]
+- [[ApprovalHardening]] - `method` [EXTRACTED]
+- [[ApprovalHardeningConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

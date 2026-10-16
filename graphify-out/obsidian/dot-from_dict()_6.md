@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/runtime/config.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "Path"
-location: "L57"
+community: "AgentRegistry"
+location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/AgentRegistry
 ---
 
 # .from_dict()
 
 ## Connections
-- [[Load from a config dictionary (e.g. from YAML).]] - `rationale_for` [EXTRACTED]
-- [[RuntimeConfig]] - `method` [EXTRACTED]
+- [[dot-register()]] - `calls` [EXTRACTED]
+- [[AgentRegistry]] - `method` [EXTRACTED]
+- [[ContainerConfig_1]] - `calls` [EXTRACTED]
+- [[Deserialize registry from dict.]] - `rationale_for` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

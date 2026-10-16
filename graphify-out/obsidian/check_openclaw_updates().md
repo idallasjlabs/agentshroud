@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Check for OpenClaw updates (backward-compat alias for updatesbotopenclaw).]] - `rationale_for` [EXTRACTED]
-- [[api.py]] - `contains` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
 - [[check_bot_updates()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy

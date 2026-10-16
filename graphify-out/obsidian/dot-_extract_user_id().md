@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/ingest_api/middleware.py"
+source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L1019"
+community: "WebhookReceiver"
+location: "L325"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/WebhookReceiver
 ---
 
 # ._extract_user_id()
 
 ## Connections
-- [[dot-process_request()]] - `calls` [EXTRACTED]
-- [[Any]] - `references` [EXTRACTED]
-- [[Extract user ID from request data.]] - `rationale_for` [EXTRACTED]
-- [[MiddlewareManager]] - `method` [EXTRACTED]
+- [[dot-process_webhook()]] - `calls` [EXTRACTED]
+- [[Any_4]] - `references` [EXTRACTED]
+- [[Extract user ID from webhook payload based on source platform.]] - `rationale_for` [EXTRACTED]
+- [[WebhookReceiver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/WebhookReceiver

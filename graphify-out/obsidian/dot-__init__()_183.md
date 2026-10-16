@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/tests/test_a2a_policy.py"
+source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "test_a2a_policy.py"
-location: "L323"
+community: "AgentTarget"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/AgentTarget
 ---
 
 # .__init__()
 
 ## Connections
-- [[_StubApprovalQueue]] - `method` [EXTRACTED]
+- [[AgentTarget_2]] - `calls` [EXTRACTED]
+- [[Initialize router          Args             config Router configuration]] - `rationale_for` [EXTRACTED]
+- [[MultiAgentRouter]] - `method` [EXTRACTED]
+- [[RouterConfig_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

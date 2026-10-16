@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[dot-get_user_role()]] - `calls` [EXTRACTED]
-- [[Action_2]] - `references` [EXTRACTED]
+- [[Action_1]] - `references` [EXTRACTED]
 - [[Check if a user can perform an action on a group.          Permission matrix]] - `rationale_for` [EXTRACTED]
 - [[PermissionResult]] - `references` [EXTRACTED]
-- [[RBACManager_2]] - `method` [EXTRACTED]
+- [[RBACManager_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Action

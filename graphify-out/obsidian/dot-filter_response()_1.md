@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Filter outbound response content to remove sensitive information.          Args]] - `rationale_for` [EXTRACTED]
-- [[FilterResult_1]] - `references` [EXTRACTED]
+- [[FilterResult]] - `references` [EXTRACTED]
 - [[XMLLeakFilter]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

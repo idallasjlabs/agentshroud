@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "AgentRegistry"
+community: "KeyVault"
 location: "L203"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/KeyVault
 ---
 
 # .encrypt_b64()
@@ -16,4 +16,4 @@ tags:
 - [[Encrypt and return as base64-encoded string.]] - `rationale_for` [EXTRACTED]
 - [[EncryptedStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/KeyVault

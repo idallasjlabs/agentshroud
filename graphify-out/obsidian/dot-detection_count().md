@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
+community: "PIIConfig"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/PIIConfig
 ---
 
 # .detection_count()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[Container runtime auto-detection contract (SCRUM-92)]] - `references` [EXTRACTED]
 - [[_cr_plugin_works()]] - `calls` [EXTRACTED]
-- [[asb (AgentShroud Bot helper)]] - `calls` [EXTRACTED]
 - [[container-runtime.sh]] - `defines` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `calls` [EXTRACTED]
 

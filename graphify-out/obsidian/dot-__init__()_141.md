@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/tool_result_injection.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L176"
+community: "test_dns_canvas_coverage.py"
+location: "L585"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/test_dns_canvas_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[Initialize the scanner with optional custom rules.          Args             cu]] - `rationale_for` [EXTRACTED]
-- [[InjectionRule]] - `references` [EXTRACTED]
-- [[ToolResultInjectionScanner]] - `method` [EXTRACTED]
+- [[_FakeUpstreamResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy

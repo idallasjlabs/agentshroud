@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
-community: "test_agent_cve_registry.py"
+community: "agent_cve_registry.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy
+  - community/agent_cve_registrypy
 ---
 
 # agent_cve_registry.py
@@ -30,4 +30,4 @@ tags:
 - [[test_daily_cve_report.py]] - `imports_from` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy
+#graphify/code #graphify/EXTRACTED #community/agent_cve_registrypy

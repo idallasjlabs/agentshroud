@@ -12,7 +12,7 @@ tags:
 # ._domain_in_allowlist()
 
 ## Connections
-- [[dot-check()_5]] - `calls` [EXTRACTED]
+- [[dot-check()_6]] - `calls` [EXTRACTED]
 - [[DNSFilter]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "dashboard_endpoints.py"
-location: "L46"
+community: "FetchOutcome"
+location: "L319"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy
+  - community/FetchOutcome
 ---
 
 # .__init__()
 
 ## Connections
-- [[AlertStore]] - `method` [EXTRACTED]
+- [[_FakeStreamResponse_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

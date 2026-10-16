@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/templates/dashboard.html"
 type: "code"
-community: "management.py"
+community: "api.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/managementpy
+  - community/apipy
 ---
 
 # dashboard.html (Control Center Template)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dashboard()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/managementpy
+#graphify/code #graphify/EXTRACTED #community/apipy

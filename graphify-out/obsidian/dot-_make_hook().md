@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_git_guard.py"
 type: "code"
-community: "GitGuard"
+community: "ResourceGuard"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/ResourceGuard
 ---
 
 # ._make_hook()
@@ -20,4 +20,4 @@ tags:
 - [[dot-test_wget_flagged()]] - `calls` [EXTRACTED]
 - [[TestGitGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GitGuard
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

@@ -1,17 +1,18 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: "gateway/security/output_schema.py"
 type: "code"
-community: "migrate-cve-registry-ghsa.py"
-location: "L186"
+community: "OutputSchemaEnforcer"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/migrate-cve-registry-ghsapy
+  - community/OutputSchemaEnforcer
 ---
 
 # .__init__()
 
 ## Connections
-- [[MatchResult]] - `method` [EXTRACTED]
+- [[dot-_register_default_schema()]] - `calls` [EXTRACTED]
+- [[OutputSchemaEnforcer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy
+#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer

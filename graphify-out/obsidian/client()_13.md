@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_dashboard_endpoints.py"
+source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "test_e2e.py"
-location: "L25"
+community: "ForwardRequest"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2epy
+  - community/ForwardRequest
 ---
 
 # client()
 
 ## Connections
 - [[AsyncClient]] - `calls` [INFERRED]
-- [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
+- [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2epy
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

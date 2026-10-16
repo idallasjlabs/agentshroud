@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L75"
+community: "RateLimiter"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/RateLimiter
 ---
 
 # .__init__()
 
 ## Connections
-- [[MemoryLifecycleConfig]] - `references` [EXTRACTED]
-- [[MemoryLifecycleManager]] - `method` [EXTRACTED]
-- [[Path_2]] - `references` [EXTRACTED]
+- [[Args             max_requests Maximum requests allowed in the time window]] - `rationale_for` [EXTRACTED]
+- [[RateLimiter_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/RateLimiter

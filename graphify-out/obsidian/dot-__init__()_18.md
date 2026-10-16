@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/browser_security.py"
+source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L104"
+community: "PIIConfig"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/PIIConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[BrowserSecurityGuard]] - `method` [EXTRACTED]
+- [[EncodingConfig]] - `references` [EXTRACTED]
+- [[EncodingDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

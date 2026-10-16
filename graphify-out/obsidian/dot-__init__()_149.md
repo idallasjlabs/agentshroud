@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/collaborator_tracker.py"
+source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "test_collaborator_tracker.py"
-location: "L54"
+community: "ContextSegment"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/ContextSegment
 ---
 
 # .__init__()
 
 ## Connections
-- [[CollaboratorActivityTracker_1]] - `method` [EXTRACTED]
-- [[Path_36]] - `references` [EXTRACTED]
+- [[Any_57]] - `references` [EXTRACTED]
+- [[ContextIntegrityScorer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/ContextSegment

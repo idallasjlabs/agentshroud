@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "ForwardRequest"
-location: "L42"
+community: "AuditEvent"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ForwardRequest
+  - community/AuditEvent
 ---
 
 # .__init__()
 
 ## Connections
-- [[EventBus]] - `method` [EXTRACTED]
+- [[dot-_generate_event_id()]] - `calls` [EXTRACTED]
+- [[AuditEvent]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ForwardRequest
+#graphify/code #graphify/EXTRACTED #community/AuditEvent

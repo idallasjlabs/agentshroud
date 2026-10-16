@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L437"
+community: "test_a2a_policy.py"
+location: "L388"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/test_a2a_policypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[HermesA2AForwarder]] - `method` [EXTRACTED]
+- [[_LegacyStubApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy

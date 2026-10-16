@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "FetchOutcome"
-location: "L29"
+community: "ToolResultSanitizer"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/ToolResultSanitizer
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeFetcher]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
+- [[ToolResultSanitizerConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

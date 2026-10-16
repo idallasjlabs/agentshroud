@@ -12,9 +12,9 @@ tags:
 # ._load_sessions()
 
 ## Connections
-- [[dot-__init__()_177]] - `calls` [EXTRACTED]
+- [[dot-__init__()_32]] - `calls` [EXTRACTED]
 - [[dot-_session_key()]] - `calls` [EXTRACTED]
-- [[dot-from_dict()_8]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_2]] - `calls` [EXTRACTED]
 - [[Load existing sessions from metadata file.          Handles both the new ``{use]] - `rationale_for` [EXTRACTED]
 - [[UserSessionManager]] - `method` [EXTRACTED]
 

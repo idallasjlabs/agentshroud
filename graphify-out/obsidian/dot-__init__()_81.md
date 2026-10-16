@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[AlertTelegramRelay]] - `method` [EXTRACTED]
-- [[Any_26]] - `references` [EXTRACTED]
+- [[Any_31]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

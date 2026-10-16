@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-_persist()]] - `calls` [EXTRACTED]
-- [[dot-delete()]] - `calls` [EXTRACTED]
-- [[dot-get()]] - `calls` [EXTRACTED]
+- [[dot-delete()_1]] - `calls` [EXTRACTED]
+- [[dot-get()_4]] - `calls` [EXTRACTED]
 - [[ReportStore]] - `method` [EXTRACTED]
 - [[_intel_store()]] - `calls` [INFERRED]
 - [[lifespan()]] - `calls` [INFERRED]

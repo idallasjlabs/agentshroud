@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "PrivacyPolicyEnforcer"
+community: "RBACConfig"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/RBACConfig
 ---
 
 # default_policy()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_privacy_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

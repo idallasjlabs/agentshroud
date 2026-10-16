@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_proxy_request_impl()]] - `calls` [EXTRACTED]
-- [[Any_65]] - `references` [EXTRACTED]
+- [[Any_71]] - `references` [EXTRACTED]
 - [[Return minimal getUpdates payload entries containing only update_id.]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy]] - `method` [EXTRACTED]
 

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
 type: "code"
-community: "test_e2e.py"
-location: "L135"
+community: "test_forward_stream.py"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2epy
+  - community/test_forward_streampy
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
+- [[test_email_owner_bypasses_pii.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2epy
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy

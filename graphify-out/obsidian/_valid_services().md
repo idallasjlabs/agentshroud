@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Compute valid service names from config + sidecars at call-time. Uses     each b]] - `rationale_for` [EXTRACTED]
 - [[_validate_service_name()]] - `calls` [EXTRACTED]
-- [[api.py]] - `contains` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
 - [[get_status()]] - `calls` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 

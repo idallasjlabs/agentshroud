@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L412"
+community: "migrate-cve-registry-ghsa.py"
+location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/migrate-cve-registry-ghsapy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_StubForwarder_1]] - `method` [EXTRACTED]
+- [[MatchResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

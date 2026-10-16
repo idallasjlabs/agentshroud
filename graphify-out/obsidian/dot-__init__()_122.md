@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/shared_memory.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "RBACConfig"
-location: "L57"
+community: "ServiceManager"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/ServiceManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[SharedMemoryManager]] - `method` [EXTRACTED]
+- [[_FakeUnixSocket]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

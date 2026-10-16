@@ -15,7 +15,7 @@ tags:
 - [[ContextIntegrityScorer]] - `contains` [EXTRACTED]
 - [[ContextSegment]] - `imports` [EXTRACTED]
 - [[IntegrityScore]] - `contains` [EXTRACTED]
-- [[PromptGuard_1]] - `imports` [EXTRACTED]
+- [[PromptGuard]] - `imports` [EXTRACTED]
 - [[SystemPromptFingerprint]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ContextSegment

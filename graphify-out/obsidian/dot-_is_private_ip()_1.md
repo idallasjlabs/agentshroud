@@ -16,6 +16,6 @@ tags:
 - [[dot-analyze()_1]] - `calls` [EXTRACTED]
 - [[dot-analyze_and_pin()]] - `calls` [EXTRACTED]
 - [[Check if an IP address is privatereservedloopback.]] - `rationale_for` [EXTRACTED]
-- [[URLAnalyzer]] - `method` [EXTRACTED]
+- [[URLAnalyzer_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

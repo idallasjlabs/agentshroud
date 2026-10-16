@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/egress_monitor.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L86"
+community: "KillSwitchMonitor"
+location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/KillSwitchMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressMonitor]] - `method` [EXTRACTED]
-- [[EgressMonitorConfig]] - `references` [EXTRACTED]
+- [[AuditChain]] - `method` [EXTRACTED]
+- [[deque]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

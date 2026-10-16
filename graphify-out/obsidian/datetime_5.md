@@ -1,20 +1,18 @@
 ---
-source_file: "scripts/export-email-reports.py"
+source_file: "gateway/security/audit_archive.py"
 type: "code"
-community: "export_bot"
-location: "L41"
+community: "archive_old_events"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export_bot
+  - community/archive_old_events
 ---
 
 # datetime
 
 ## Connections
-- [[_parse_since()_1]] - `references` [EXTRACTED]
-- [[_report_date()]] - `references` [EXTRACTED]
-- [[export-email-reports.py]] - `imports_from` [EXTRACTED]
-- [[export_bot()]] - `references` [EXTRACTED]
+- [[archive_old_events()]] - `references` [EXTRACTED]
+- [[audit_archive.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export_bot
+#graphify/code #graphify/EXTRACTED #community/archive_old_events

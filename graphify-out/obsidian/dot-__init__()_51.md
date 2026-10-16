@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/scripts/browse.py"
+source_file: "gateway/dashboard/proxy_status.py"
 type: "code"
-community: "SecureBrowser"
-location: "L65"
+community: "ProxyDashboard"
+location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/ProxyDashboard
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_config()]] - `calls` [EXTRACTED]
-- [[SecureBrowser]] - `method` [EXTRACTED]
+- [[ProxyDashboard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/ProxyDashboard

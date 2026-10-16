@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L466"
+community: "_DummyTargetWriter"
+location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/_DummyTargetWriter
 ---
 
 # .close()
 
 ## Connections
-- [[HermesA2AForwarder]] - `method` [EXTRACTED]
+- [[_DummyTargetWriter_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/_DummyTargetWriter

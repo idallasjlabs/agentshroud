@@ -12,6 +12,6 @@ tags:
 # calculate_tool_score(summary)
 
 ## Connections
-- [[Function Details_9]] - `contains` [EXTRACTED]
+- [[Function Details_10]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Function_Details

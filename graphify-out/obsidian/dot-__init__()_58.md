@@ -12,8 +12,8 @@ tags:
 # .__init__()
 
 ## Connections
-- [[RBACManager_1]] - `references` [EXTRACTED]
-- [[Role_19]] - `references` [EXTRACTED]
+- [[RBACManager]] - `references` [EXTRACTED]
+- [[Role_18]] - `references` [EXTRACTED]
 - [[SCLCaller_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

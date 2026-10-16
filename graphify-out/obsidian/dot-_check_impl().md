@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "EgressAttempt"
+community: "EgressFilterConfig"
 location: "L180"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressAttempt
+  - community/EgressFilterConfig
 ---
 
 # ._check_impl()
@@ -17,13 +17,13 @@ tags:
 - [[dot-_matches_allowlist_domain()]] - `calls` [EXTRACTED]
 - [[dot-_matches_ip_list()]] - `calls` [EXTRACTED]
 - [[dot-_record()_1]] - `calls` [EXTRACTED]
-- [[dot-check()_4]] - `calls` [EXTRACTED]
+- [[dot-check()_5]] - `calls` [EXTRACTED]
 - [[dot-get_policy()_1]] - `calls` [EXTRACTED]
 - [[dot-matches_domain()]] - `calls` [EXTRACTED]
 - [[dot-matches_ip()]] - `calls` [EXTRACTED]
 - [[dot-matches_port()]] - `calls` [EXTRACTED]
 - [[Check if an outbound connection is allowed.          Args             agent_id]] - `rationale_for` [EXTRACTED]
 - [[EgressAttempt]] - `references` [EXTRACTED]
-- [[EgressFilter_1]] - `method` [EXTRACTED]
+- [[EgressFilter_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressAttempt
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

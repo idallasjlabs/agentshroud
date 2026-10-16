@@ -25,7 +25,7 @@ tags:
 - [[dot-test_timestamp_present()]] - `calls` [EXTRACTED]
 - [[dot-test_totals_present()]] - `calls` [EXTRACTED]
 - [[dot-test_version_is_v090()]] - `calls` [EXTRACTED]
-- [[Any_70]] - `references` [EXTRACTED]
+- [[Any_65]] - `references` [EXTRACTED]
 - [[Compute the 33-domain Security Scorecard.      Domains 1–21 Container infrastru]] - `rationale_for` [EXTRACTED]
 - [[_compute_weighted_subscore()]] - `calls` [EXTRACTED]
 - [[_determine_compliance_level()]] - `calls` [EXTRACTED]

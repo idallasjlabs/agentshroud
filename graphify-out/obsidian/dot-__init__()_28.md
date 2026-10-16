@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/heuristic_classifier.py"
+source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "code"
-community: "HeuristicClassifier"
-location: "L95"
+community: "CronStateMonitor"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/CronStateMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_try_load_model()]] - `calls` [EXTRACTED]
-- [[HeuristicClassifier_1]] - `method` [EXTRACTED]
+- [[_DispatchSpy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

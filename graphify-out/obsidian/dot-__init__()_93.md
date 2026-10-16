@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L41"
+community: "test_e2e_proxy.py"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/test_e2e_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeCaller]] - `method` [EXTRACTED]
+- [[ForwarderConfig]] - `references` [EXTRACTED]
+- [[HTTPForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

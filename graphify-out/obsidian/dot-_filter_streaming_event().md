@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_apply_filters()]] - `calls` [EXTRACTED]
 - [[dot-_filter_outbound_streaming()]] - `calls` [EXTRACTED]
-- [[Any_57]] - `references` [EXTRACTED]
+- [[Any_44]] - `references` [EXTRACTED]
 - [[Apply outbound text filters to known streaming response formats. Also enforces…]] - `rationale_for` [EXTRACTED]
 - [[LLMProxy]] - `method` [EXTRACTED]
 

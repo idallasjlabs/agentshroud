@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-sign()]] - `calls` [EXTRACTED]
-- [[dot-verify()]] - `calls` [EXTRACTED]
+- [[dot-verify()_1]] - `calls` [EXTRACTED]
 - [[EnvelopeSigner]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AuditChain

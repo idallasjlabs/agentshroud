@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L38"
+community: "_FakeUpstreamWS"
+location: "L745"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/_FakeUpstreamWS
 ---
 
 # .__init__()
 
 ## Connections
-- [[AlertDispatcher]] - `method` [EXTRACTED]
-- [[Path_29]] - `references` [EXTRACTED]
-- [[deque]] - `calls` [INFERRED]
+- [[_FakeWSConnect]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/_FakeUpstreamWS

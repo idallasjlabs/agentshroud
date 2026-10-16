@@ -12,7 +12,7 @@ tags:
 # ._load_write_windows()
 
 ## Connections
-- [[dot-__init__()_20]] - `calls` [EXTRACTED]
+- [[dot-__init__()_76]] - `calls` [EXTRACTED]
 - [[Load active write windows from disk.]] - `rationale_for` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
 

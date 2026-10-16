@@ -12,7 +12,7 @@ tags:
 # crashwatch.sh script
 
 ## Connections
-- [[_log()_1]] - `calls` [EXTRACTED]
+- [[_log()]] - `calls` [EXTRACTED]
 - [[_telegram_alert()]] - `calls` [EXTRACTED]
 - [[_write_last_alert_epoch()]] - `calls` [EXTRACTED]
 - [[crashwatch.sh]] - `contains` [EXTRACTED]

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/config_integrity.py"
+source_file: "gateway/security/delegation.py"
 type: "code"
-community: ".check"
-location: "L49"
+community: "DelegationManager"
+location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check
+  - community/DelegationManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
-- [[Path_55]] - `references` [EXTRACTED]
+- [[dot-_load()]] - `calls` [EXTRACTED]
+- [[DelegationManager_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check
+#graphify/code #graphify/EXTRACTED #community/DelegationManager

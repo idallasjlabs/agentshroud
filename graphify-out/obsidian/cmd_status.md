@@ -1,18 +1,18 @@
 ---
-source_file: "docker/bots/hermes/run-standalone.sh"
+source_file: "scripts/tailscale-serve.sh"
 type: "code"
-community: "run-standalone.sh (Hermes docker run launcher)"
-location: "L367-L370"
+community: "test_main_endpoints.py"
+location: "L138-L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run-standalonesh_Hermes_docker_run_launcher
+  - community/test_main_endpointspy
 ---
 
 # cmd_status
 
 ## Connections
-- [[run-standalone.sh (Hermes docker run launcher)]] - `defines` [EXTRACTED]
-- [[run-standalone.sh script]] - `calls` [EXTRACTED]
+- [[tailscale-serve.sh]] - `defines` [EXTRACTED]
+- [[tailscale-serve.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher
+#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy

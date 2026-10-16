@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L50"
+community: "PIIConfig"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/PIIConfig
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[ContentThreat]] - `method` [EXTRACTED]
+- [[TrustConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

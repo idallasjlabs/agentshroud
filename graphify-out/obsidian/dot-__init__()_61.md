@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/cli/client.py"
+source_file: "gateway/proxy/slack_socket_client.py"
 type: "code"
-community: "SCLClient"
-location: "L17"
+community: "SlackSocketClient"
+location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SCLClient
+  - community/SlackSocketClient
 ---
 
 # .__init__()
 
 ## Connections
-- [[SCLClient]] - `method` [EXTRACTED]
+- [[SlackSocketClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SCLClient
+#graphify/code #graphify/EXTRACTED #community/SlackSocketClient

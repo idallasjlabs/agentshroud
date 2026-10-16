@@ -1,12 +1,12 @@
 ---
 source_file: "examples/docker-commands.md"
 type: "document"
-community: "Error Index.md"
+community: "Docker Commands Reference"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_Indexmd
+  - community/Docker_Commands_Reference
 ---
 
 # docker-commands.md
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Production Docker Compose]] - `conceptually_related_to` [INFERRED]
 - [[Docker Commands Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_Indexmd
+#graphify/document #graphify/EXTRACTED #community/Docker_Commands_Reference

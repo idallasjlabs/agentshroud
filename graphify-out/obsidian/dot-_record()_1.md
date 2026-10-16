@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "EgressAttempt"
+community: "EgressFilterConfig"
 location: "L482"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressAttempt
+  - community/EgressFilterConfig
 ---
 
 # ._record()
@@ -16,7 +16,7 @@ tags:
 - [[dot-check_async()]] - `calls` [EXTRACTED]
 - [[EgressAction]] - `references` [EXTRACTED]
 - [[EgressAttempt]] - `references` [EXTRACTED]
-- [[EgressFilter_1]] - `method` [EXTRACTED]
+- [[EgressFilter_2]] - `method` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressAttempt
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

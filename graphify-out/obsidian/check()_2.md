@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/smoke.d/test-container-runtime.sh"
+source_file: "tests/startup_smoke/test_hermes_mcp_reconciliation.sh"
 type: "code"
-community: "test-container-runtime.sh"
-location: "L40"
+community: "test_hermes_mcp_reconciliation.sh"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test-container-runtimesh
+  - community/test_hermes_mcp_reconciliationsh
 ---
 
 # check()
 
 ## Connections
-- [[test-container-runtime.sh]] - `defines` [EXTRACTED]
-- [[test-container-runtime.sh script]] - `calls` [EXTRACTED]
+- [[test_hermes_mcp_reconciliation.sh]] - `defines` [EXTRACTED]
+- [[test_hermes_mcp_reconciliation.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test-container-runtimesh
+#graphify/code #graphify/EXTRACTED #community/test_hermes_mcp_reconciliationsh

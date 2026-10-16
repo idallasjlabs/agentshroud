@@ -17,7 +17,7 @@ tags:
 - [[dot-_contains_high_risk_collaborator_leakage()]] - `calls` [EXTRACTED]
 - [[dot-_filter_outbound()_1]] - `calls` [EXTRACTED]
 - [[dot-_resolve_collaborator_mode()]] - `calls` [EXTRACTED]
-- [[Any_65]] - `references` [EXTRACTED]
+- [[Any_71]] - `references` [EXTRACTED]
 - [[Return a safe-notice replacement when protected content would leak.          Cri]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy]] - `method` [EXTRACTED]
 

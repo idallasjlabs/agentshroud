@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/intel_report.py"
+source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "CompetitiveIntelReport"
-location: "L205"
+community: "WebProxy"
+location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CompetitiveIntelReport
+  - community/WebProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[IntelReportStore_1]] - `method` [EXTRACTED]
-- [[Path_50]] - `references` [EXTRACTED]
+- [[_MockWriter_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport
+#graphify/code #graphify/EXTRACTED #community/WebProxy

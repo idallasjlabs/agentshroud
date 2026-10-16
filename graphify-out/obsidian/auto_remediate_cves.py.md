@@ -19,7 +19,7 @@ tags:
 - [[check-vendor-compat.sh]] - `semantically_similar_to` [INFERRED]
 - [[discover_upstream_versions.py]] - `semantically_similar_to` [INFERRED]
 - [[load_registry()_1]] - `contains` [EXTRACTED]
-- [[main()_32]] - `contains` [EXTRACTED]
+- [[main()_31]] - `contains` [EXTRACTED]
 - [[parse_version()_1]] - `contains` [EXTRACTED]
 - [[plan_remediation()]] - `contains` [EXTRACTED]
 - [[promptssunday-upgrade.md (Sunday mission procedure)]] - `references` [EXTRACTED]

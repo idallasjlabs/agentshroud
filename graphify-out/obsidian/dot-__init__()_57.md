@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/dashboard/proxy_status.py"
+source_file: "gateway/proxy/telegram_replay.py"
 type: "code"
-community: "ProxyDashboard"
-location: "L83"
+community: "test_telegram_replay.py"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/test_telegram_replaypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[ProxyDashboard]] - `method` [EXTRACTED]
+- [[dot-_init_db()_1]] - `calls` [EXTRACTED]
+- [[UpdateReplayBuffer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy

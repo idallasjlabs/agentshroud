@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "AsyncMock"
-location: "L96"
+community: "A2APolicyEngine"
+location: "L393"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/A2APolicyEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[AsyncMock]] - `calls` [INFERRED]
-- [[FakeProcess]] - `method` [EXTRACTED]
+- [[A2APolicyConfig_1]] - `references` [EXTRACTED]
+- [[A2APolicyEngine_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

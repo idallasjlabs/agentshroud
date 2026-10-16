@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "HTTPConnectProxy"
-location: "L480"
+community: "MiddlewareManager"
+location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[_SocketTransportWriter]] - `method` [EXTRACTED]
+- [[ConsentFramework]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "test_llm_proxy.py"
-location: "L391"
+community: "LLMProxy"
+location: "L251"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/LLMProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_TrackingInjector]] - `method` [EXTRACTED]
+- [[LLMProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/citation_verifier.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "api.py"
-location: "L126"
+community: "MCPPermissionManager"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/MCPPermissionManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[CitationVerifier]] - `method` [EXTRACTED]
-- [[Fetcher]] - `references` [EXTRACTED]
+- [[MCPServerConfig_1]] - `references` [EXTRACTED]
+- [[StdioConnection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

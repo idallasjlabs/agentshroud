@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/proxy/dns_blocklist.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: ".update"
-location: "L64"
+community: "AuditChain"
+location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/update
+  - community/AuditChain
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-update()]] - `calls` [EXTRACTED]
-- [[DNSBlocklist]] - `method` [EXTRACTED]
-- [[Path_48]] - `references` [EXTRACTED]
+- [[KeyVault]] - `method` [EXTRACTED]
+- [[KeyVaultConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/update
+#graphify/code #graphify/EXTRACTED #community/AuditChain

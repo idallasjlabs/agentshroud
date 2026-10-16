@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AuthRequired]] - `references` [EXTRACTED]
 - [[Comprehensive container security profile — runs all applicable checks.]] - `rationale_for` [EXTRACTED]
-- [[get_1]] - `references` [EXTRACTED]
+- [[get]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/gateway/ingest_api/mainpy_/hermes-dashboard/_HTTP__WebSocket_reverse_proxy

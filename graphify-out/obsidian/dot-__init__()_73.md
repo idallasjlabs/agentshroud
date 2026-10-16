@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/audit_export.py"
+source_file: "gateway/security/rate_limit_guard.py"
 type: "code"
-community: "AuditExporter"
-location: "L28"
+community: "RateLimitGuard"
+location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditExporter
+  - community/RateLimitGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_default_jsonld_context()]] - `calls` [EXTRACTED]
-- [[AuditExportConfig]] - `method` [EXTRACTED]
+- [[RateLimitConfig]] - `references` [EXTRACTED]
+- [[RateLimitGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditExporter
+#graphify/code #graphify/EXTRACTED #community/RateLimitGuard

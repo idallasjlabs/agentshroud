@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/security/file_sandbox.py"
+source_file: "gateway/security/metadata_guard.py"
 type: "code"
 community: "AlertDispatcher"
-location: "L187"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,8 +12,6 @@ tags:
 # .__init__()
 
 ## Connections
-- [[FileSandbox]] - `method` [EXTRACTED]
-- [[FileSandboxConfig]] - `references` [EXTRACTED]
-- [[PIIScanner]] - `calls` [EXTRACTED]
+- [[MetadataGuard]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher

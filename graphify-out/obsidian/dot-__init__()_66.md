@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/security/resource_guard.py"
+source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "ResourceGuard"
-location: "L88"
+community: "AuditExporter"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/AuditExporter
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_get_disk_io_stats()]] - `calls` [EXTRACTED]
-- [[dot-_start_monitoring_task()]] - `calls` [EXTRACTED]
-- [[ResourceGuard]] - `method` [EXTRACTED]
-- [[ResourceLimits]] - `references` [EXTRACTED]
+- [[AuditExportConfig]] - `references` [EXTRACTED]
+- [[AuditExporter]] - `method` [EXTRACTED]
+- [[AuditStore]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/AuditExporter

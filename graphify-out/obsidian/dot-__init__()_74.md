@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/audit_export.py"
+source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "code"
-community: "AuditExporter"
-location: "L65"
+community: "RateLimitGuard"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditExporter
+  - community/RateLimitGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[AuditExportConfig]] - `references` [EXTRACTED]
-- [[AuditExporter]] - `method` [EXTRACTED]
-- [[AuditStore]] - `references` [EXTRACTED]
+- [[FakeClock]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditExporter
+#graphify/code #graphify/EXTRACTED #community/RateLimitGuard

@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "DataLedger"
-location: "L73"
+community: "DockerEngine"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/DockerEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[DataLedger]] - `method` [EXTRACTED]
-- [[LedgerConfig]] - `references` [EXTRACTED]
-- [[Store configuration          Actual database connection created in initialize().]] - `rationale_for` [EXTRACTED]
+- [[DockerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataLedger
+#graphify/code #graphify/EXTRACTED #community/DockerEngine

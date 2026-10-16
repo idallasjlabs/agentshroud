@@ -12,8 +12,8 @@ tags:
 # ._make_vault_pipeline()
 
 ## Connections
-- [[dot-_passthrough_pii()]] - `calls` [EXTRACTED]
-- [[dot-test_clean_response_passes_unchanged()]] - `calls` [EXTRACTED]
+- [[dot-_passthrough_pii()_1]] - `calls` [EXTRACTED]
+- [[dot-test_clean_response_passes_unchanged()_1]] - `calls` [EXTRACTED]
 - [[dot-test_generic_key_pattern_audited_but_not_blocked()]] - `calls` [EXTRACTED]
 - [[dot-test_key_leak_increments_sanitized_stat_and_audits()]] - `calls` [EXTRACTED]
 - [[dot-test_stored_key_value_redacted_from_outbound()]] - `calls` [EXTRACTED]

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_dashboard.py"
+source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "test_e2e.py"
-location: "L32"
+community: "ForwardRequest"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2epy
+  - community/ForwardRequest
 ---
 
 # client()
 
 ## Connections
 - [[AsyncClient]] - `calls` [INFERRED]
-- [[test_dashboard.py]] - `contains` [EXTRACTED]
+- [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2epy
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

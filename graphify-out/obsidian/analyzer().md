@@ -12,7 +12,7 @@ tags:
 # analyzer()
 
 ## Connections
-- [[URLAnalyzer]] - `calls` [EXTRACTED]
+- [[URLAnalyzer_1]] - `calls` [EXTRACTED]
 - [[test_url_analyzer.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

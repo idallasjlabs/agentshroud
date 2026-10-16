@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/encoding_detector.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "PIIConfig"
-location: "L69"
+community: "test_soc_router_coverage.py"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/test_soc_router_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[EncodingConfig]] - `references` [EXTRACTED]
-- [[EncodingDetector]] - `method` [EXTRACTED]
+- [[FakeCaller]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

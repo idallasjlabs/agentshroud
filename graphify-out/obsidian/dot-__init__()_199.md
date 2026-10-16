@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_citation_verifier.py"
+source_file: "gateway/security/group_rbac.py"
 type: "code"
-community: "api.py"
-location: "L29"
+community: "GroupRoleResolver"
+location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/GroupRoleResolver
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeFetcher_1]] - `method` [EXTRACTED]
+- [[GroupRoleResolver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

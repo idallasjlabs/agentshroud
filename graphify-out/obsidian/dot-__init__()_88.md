@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/security/config_integrity.py"
 type: "code"
-community: "Action"
-location: "L64"
+community: "ConfigIntegrityMonitor"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Action
+  - community/ConfigIntegrityMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_build_permission_matrix()]] - `calls` [EXTRACTED]
-- [[dot-_build_tool_permissions()]] - `calls` [EXTRACTED]
-- [[Initialize RBAC manager with configuration.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig]] - `references` [EXTRACTED]
-- [[RBACManager_2]] - `method` [EXTRACTED]
+- [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
+- [[Path_22]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Action
+#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor

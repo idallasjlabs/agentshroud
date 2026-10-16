@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/group_workspace.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "RBACConfig"
-location: "L95"
+community: "AuditChain"
+location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/AuditChain
 ---
 
 # .__init__()
 
 ## Connections
-- [[GroupWorkspaceManager]] - `method` [EXTRACTED]
+- [[KeyInjector]] - `method` [EXTRACTED]
+- [[KeyVault]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/AuditChain

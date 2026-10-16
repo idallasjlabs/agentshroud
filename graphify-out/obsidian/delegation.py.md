@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "DelegationManager"
+community: "KillSwitchMonitor"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/KillSwitchMonitor
 ---
 
 # delegation.py
@@ -16,7 +16,7 @@ tags:
 - [[DelegationError]] - `contains` [EXTRACTED]
 - [[DelegationManager_1]] - `contains` [EXTRACTED]
 - [[DelegationPrivilege]] - `contains` [EXTRACTED]
-- [[Enum_1]] - `imports_from` [EXTRACTED]
+- [[Enum_3]] - `imports_from` [EXTRACTED]
 - [[FR2 Use Control]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DelegationManager
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

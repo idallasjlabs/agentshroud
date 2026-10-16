@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
+source_file: "gateway/proxy/dns_blocklist.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L93"
+community: ".update"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/update
 ---
 
 # .__init__()
 
 ## Connections
-- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
-- [[ToolResultSanitizerConfig]] - `references` [EXTRACTED]
+- [[dot-update()]] - `calls` [EXTRACTED]
+- [[DNSBlocklist]] - `method` [EXTRACTED]
+- [[Path_53]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/update

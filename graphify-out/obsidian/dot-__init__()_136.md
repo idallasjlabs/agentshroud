@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/runtime/apple_engine.py"
+source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "AppleContainerEngine"
-location: "L31"
+community: "test_collaborator_tracker.py"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AppleContainerEngine
+  - community/test_collaborator_trackerpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[AppleContainerEngine]] - `method` [EXTRACTED]
+- [[CollaboratorActivityTracker_1]] - `method` [EXTRACTED]
+- [[Path_35]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

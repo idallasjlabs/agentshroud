@@ -12,7 +12,7 @@ tags:
 # .get_policy()
 
 ## Connections
-- [[CredentialRotationPolicy]] - `references` [EXTRACTED]
+- [[CredentialRotationPolicy_1]] - `references` [EXTRACTED]
 - [[Get rotation policy for a credential type, falling back to api_key default.]] - `rationale_for` [EXTRACTED]
 - [[KeyRotationConfig_1]] - `method` [EXTRACTED]
 

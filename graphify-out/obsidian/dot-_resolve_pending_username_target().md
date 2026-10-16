@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "HeuristicClassifier"
+community: "TelegramAPIProxy"
 location: "L772"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/TelegramAPIProxy
 ---
 
 # ._resolve_pending_username_target()
@@ -17,4 +17,4 @@ tags:
 - [[TelegramAPIProxy]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

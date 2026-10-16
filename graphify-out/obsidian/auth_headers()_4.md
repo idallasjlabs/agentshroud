@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
+source_file: "gateway/tests/test_dashboard_endpoints.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L87"
+community: "test_dashboard_endpoints.py"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/test_dashboard_endpointspy
 ---
 
 # auth_headers()
 
 ## Connections
-- [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
+- [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

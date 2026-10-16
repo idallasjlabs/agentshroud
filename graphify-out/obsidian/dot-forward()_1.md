@@ -12,7 +12,7 @@ tags:
 # .forward()
 
 ## Connections
-- [[dot-health_check()_3]] - `calls` [EXTRACTED]
+- [[dot-health_check()_2]] - `calls` [EXTRACTED]
 - [[Forward a request to the OpenClaw backend.]] - `rationale_for` [EXTRACTED]
 - [[ForwardResult]] - `references` [EXTRACTED]
 - [[HTTPForwarder]] - `method` [EXTRACTED]

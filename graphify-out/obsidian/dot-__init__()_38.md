@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_forward_routing.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "AgentTarget"
-location: "L22"
+community: "ProxyAction"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/ProxyAction
 ---
 
 # .__init__()
 
 ## Connections
-- [[_PipelineCaptor]] - `method` [EXTRACTED]
+- [[MockURLResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

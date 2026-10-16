@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L107"
+community: "test_e2e_proxy.py"
+location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/test_e2e_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeGroup]] - `method` [EXTRACTED]
+- [[SidecarScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

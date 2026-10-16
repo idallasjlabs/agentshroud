@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "PrivacyPolicyEnforcer"
+community: "RBACConfig"
 location: "L301"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/RBACConfig
 ---
 
 # .contains_private_data()
@@ -15,4 +15,4 @@ tags:
 - [[PrivacyPolicyEnforcer]] - `method` [EXTRACTED]
 - [[Return True if text appears to contain admin-private data.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

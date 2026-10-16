@@ -12,10 +12,10 @@ tags:
 # .agents/skills/i-browser/scripts/browse.py
 
 ## Connections
-- [[Enum_1]] - `imports_from` [EXTRACTED]
+- [[Enum_3]] - `imports_from` [EXTRACTED]
 - [[RiskLevel]] - `contains` [EXTRACTED]
 - [[SecureBrowser]] - `contains` [EXTRACTED]
-- [[SecurityConfig_1]] - `contains` [EXTRACTED]
+- [[SecurityConfig]] - `contains` [EXTRACTED]
 - [[SecurityError]] - `contains` [EXTRACTED]
 - [[main()_4]] - `contains` [EXTRACTED]
 

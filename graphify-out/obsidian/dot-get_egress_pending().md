@@ -12,7 +12,7 @@ tags:
 # .get_egress_pending()
 
 ## Connections
-- [[dot-get()_1]] - `calls` [EXTRACTED]
+- [[dot-get()]] - `calls` [EXTRACTED]
 - [[SCLClient]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SCLClient

@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "GitGuard"
-location: "L53"
+community: "UserSessionManager"
+location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/UserSessionManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args             mode 'monitor' (log findings) or 'enforce' (quarantine suspic]] - `rationale_for` [EXTRACTED]
-- [[GitGuard]] - `method` [EXTRACTED]
-- [[Path_4]] - `calls` [EXTRACTED]
+- [[dot-_load_sessions()]] - `calls` [EXTRACTED]
+- [[Initialize session manager.          Args             base_workspace Base dire]] - `rationale_for` [EXTRACTED]
+- [[Path_2]] - `references` [EXTRACTED]
+- [[UserSessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GitGuard
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

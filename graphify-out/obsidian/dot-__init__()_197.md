@@ -1,18 +1,23 @@
 ---
-source_file: "gateway/approval_queue/group_router.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "GroupApprovalRouter"
-location: "L49"
+community: "MCPPermissionManager"
+location: "L230"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/MCPPermissionManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_83]] - `references` [EXTRACTED]
-- [[GroupApprovalRouter]] - `method` [EXTRACTED]
+- [[ConnectionPool]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue_2]] - `references` [EXTRACTED]
+- [[MCPAuditTrail_1]] - `references` [EXTRACTED]
+- [[MCPInspector_1]] - `references` [EXTRACTED]
+- [[MCPPermissionManager_1]] - `references` [EXTRACTED]
+- [[MCPProxy]] - `method` [EXTRACTED]
+- [[MCPProxyConfig_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

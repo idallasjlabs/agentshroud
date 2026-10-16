@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "._proxy_request_impl"
+community: "telegram_proxy.py"
 location: "L7409"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_proxy_request_impl
+  - community/telegram_proxypy
 ---
 
 # ._mirror_to_owner_if_collaborator()
@@ -18,4 +18,4 @@ tags:
 - [[Send a rate-limited activity mirror to the owner chat for collaborator messages.]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_proxy_request_impl
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

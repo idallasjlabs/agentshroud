@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "_HeadFakeClient"
-location: "L818"
+community: "_HeadFakeResponse"
+location: "L797"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_HeadFakeClient
+  - community/_HeadFakeResponse
 ---
 
 # .__init__()
 
 ## Connections
-- [[_HeadFakeClient]] - `method` [EXTRACTED]
+- [[_HeadFakeResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_HeadFakeClient
+#graphify/code #graphify/EXTRACTED #community/_HeadFakeResponse

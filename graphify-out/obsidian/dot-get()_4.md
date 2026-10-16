@@ -1,29 +1,22 @@
 ---
-source_file: "cli/src/main.rs"
+source_file: "gateway/security/report_store.py"
 type: "code"
-community: "main.rs"
-location: "L509"
+community: "ReportStore"
+location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/ReportStore
 ---
 
 # .get()
 
 ## Connections
-- [[dot-request()_1]] - `calls` [EXTRACTED]
-- [[Result]] - `references` [EXTRACTED]
-- [[SclClient_1]] - `method` [EXTRACTED]
-- [[Value_1]] - `references` [EXTRACTED]
-- [[format_cves()]] - `calls` [EXTRACTED]
-- [[format_deploy_status()]] - `calls` [EXTRACTED]
-- [[json_str()]] - `calls` [EXTRACTED]
-- [[main()_17]] - `calls` [EXTRACTED]
-- [[map_http_error()]] - `calls` [EXTRACTED]
-- [[run_approvals_list()]] - `calls` [EXTRACTED]
-- [[run_cves()]] - `calls` [EXTRACTED]
-- [[run_deploy_status()]] - `calls` [EXTRACTED]
-- [[run_status()]] - `calls` [EXTRACTED]
+- [[dot-_enforce_count_cap()]] - `calls` [EXTRACTED]
+- [[dot-_path()]] - `calls` [EXTRACTED]
+- [[dot-_valid_id()]] - `calls` [EXTRACTED]
+- [[dot-list()]] - `calls` [EXTRACTED]
+- [[Any_84]] - `references` [EXTRACTED]
+- [[ReportStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainrs
+#graphify/code #graphify/EXTRACTED #community/ReportStore

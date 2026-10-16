@@ -12,7 +12,7 @@ tags:
 # ._check_size()
 
 ## Connections
-- [[dot-save()]] - `calls` [EXTRACTED]
+- [[dot-save()_2]] - `calls` [EXTRACTED]
 - [[dot-save_async()]] - `calls` [EXTRACTED]
 - [[ReportStore]] - `method` [EXTRACTED]
 

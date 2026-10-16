@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "ContextSegment"
+community: "test_prompt_guard.py"
 location: "L604"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/test_prompt_guardpy
 ---
 
 # ._get_hmac_key()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-register_system_prompt()]] - `calls` [EXTRACTED]
 - [[dot-verify_system_prompt()]] - `calls` [EXTRACTED]
-- [[PromptGuard_1]] - `method` [EXTRACTED]
+- [[PromptGuard]] - `method` [EXTRACTED]
 - [[Return HMAC key env var preferred, session-scoped random fallback.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/test_prompt_guardpy

@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
 community: "ApprovalQueueConfig"
-location: "L47"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,11 +12,7 @@ tags:
 # .__init__()
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `references` [EXTRACTED]
-- [[ApprovalStore_1]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue_2]] - `method` [EXTRACTED]
-- [[Initialize enhanced approval queue.          Args             config Basic app]] - `rationale_for` [EXTRACTED]
-- [[MFAGuard_2]] - `references` [EXTRACTED]
-- [[ToolRiskConfig_1]] - `references` [EXTRACTED]
+- [[ApprovalStore]] - `method` [EXTRACTED]
+- [[Path_58]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

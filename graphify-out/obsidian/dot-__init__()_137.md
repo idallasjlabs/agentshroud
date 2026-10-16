@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/telegram_egress_notify.py"
+source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "EgressTelegramNotifier"
-location: "L76"
+community: "FetchOutcome"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressTelegramNotifier
+  - community/FetchOutcome
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressTelegramNotifier]] - `method` [EXTRACTED]
+- [[_FakeFetcher_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressTelegramNotifier
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

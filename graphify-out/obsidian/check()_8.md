@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_hermes_chown_coverage.sh"
+source_file: "scripts/smoke.d/test-sunday-upgrade-scan.sh"
 type: "code"
-community: "test_openclaw_photo.sh"
-location: "L11"
+community: "test-sunday-upgrade-scan.sh"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_openclaw_photosh
+  - community/test-sunday-upgrade-scansh
 ---
 
 # check()
 
 ## Connections
-- [[test_hermes_chown_coverage.sh]] - `defines` [EXTRACTED]
-- [[test_hermes_chown_coverage.sh script]] - `calls` [EXTRACTED]
+- [[test-sunday-upgrade-scan.sh]] - `defines` [EXTRACTED]
+- [[test-sunday-upgrade-scan.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_openclaw_photosh
+#graphify/code #graphify/EXTRACTED #community/test-sunday-upgrade-scansh

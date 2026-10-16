@@ -12,7 +12,7 @@ tags:
 # client_from_env()
 
 ## Connections
-- [[dot-get()_1]] - `calls` [EXTRACTED]
+- [[dot-get()]] - `calls` [EXTRACTED]
 - [[dot-test_env_token_and_url_used()]] - `calls` [EXTRACTED]
 - [[dot-test_explicit_args_win()]] - `calls` [EXTRACTED]
 - [[dot-test_gateway_password_fallback()]] - `calls` [EXTRACTED]

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L58"
+community: "SkillGuard"
+location: "L314"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/SkillGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeAuditStore]] - `method` [EXTRACTED]
+- [[SkillGuard_1]] - `method` [EXTRACTED]
+- [[_Rule]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

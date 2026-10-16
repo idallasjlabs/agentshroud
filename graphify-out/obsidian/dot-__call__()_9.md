@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[FetchOutcome_1]] - `calls` [EXTRACTED]
-- [[_FakeFetcher]] - `method` [EXTRACTED]
+- [[_FakeFetcher_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FetchOutcome

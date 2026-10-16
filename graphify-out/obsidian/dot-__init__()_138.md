@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_realtime_coverage.py"
+source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "SOCWebSocketHandler"
-location: "L605"
+community: "A2AGovernanceProxy"
+location: "L190"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - community/A2AGovernanceProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeBus]] - `method` [EXTRACTED]
+- [[A2AGovernanceConfig]] - `references` [EXTRACTED]
+- [[A2AGovernanceProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy

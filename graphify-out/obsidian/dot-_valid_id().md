@@ -12,8 +12,8 @@ tags:
 # ._valid_id()
 
 ## Connections
-- [[dot-delete()]] - `calls` [EXTRACTED]
-- [[dot-get()]] - `calls` [EXTRACTED]
+- [[dot-delete()_1]] - `calls` [EXTRACTED]
+- [[dot-get()_4]] - `calls` [EXTRACTED]
 - [[dot-list()]] - `calls` [EXTRACTED]
 - [[ReportStore]] - `method` [EXTRACTED]
 

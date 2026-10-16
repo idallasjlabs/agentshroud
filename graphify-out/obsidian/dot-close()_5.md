@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/i-browser/scripts/browse.py"
+source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
 community: "SecureBrowser"
 location: "L401"
@@ -12,8 +12,8 @@ tags:
 # .close()
 
 ## Connections
-- [[Clean up browser resources]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser]] - `method` [EXTRACTED]
-- [[main()_4]] - `calls` [EXTRACTED]
+- [[Clean up browser resources_3]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_3]] - `method` [EXTRACTED]
+- [[main()_7]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser

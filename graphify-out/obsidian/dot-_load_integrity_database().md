@@ -12,8 +12,8 @@ tags:
 # ._load_integrity_database()
 
 ## Connections
-- [[dot-__init__()_20]] - `calls` [EXTRACTED]
-- [[dot-from_dict()_1]] - `calls` [EXTRACTED]
+- [[dot-__init__()_76]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_3]] - `calls` [EXTRACTED]
 - [[Load integrity database from disk.]] - `rationale_for` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
 

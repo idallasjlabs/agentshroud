@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/dns_filter.py"
+source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "DNSFilterConfig"
-location: "L78"
+community: "AuditChain"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/AuditChain
 ---
 
 # .__init__()
 
 ## Connections
-- [[DNSFilter]] - `method` [EXTRACTED]
-- [[DNSFilterConfig]] - `references` [EXTRACTED]
+- [[EnvelopeSigner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/code #graphify/EXTRACTED #community/AuditChain

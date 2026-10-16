@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "MiddlewareManager"
+community: "PIIConfig"
 location: "L535"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/PIIConfig
 ---
 
 # .export_attack_report()
@@ -16,4 +16,4 @@ tags:
 - [[ContextGuard]] - `method` [EXTRACTED]
 - [[Export attack detection report.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

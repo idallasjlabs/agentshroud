@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/instruction_envelope.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "AuditChain"
-location: "L51"
+community: "test_soc_realtime_coverage.py"
+location: "L167"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[EnvelopeSigner]] - `method` [EXTRACTED]
+- [[PermissionResult]] - `calls` [EXTRACTED]
+- [[SimpleNamespace]] - `calls` [EXTRACTED]
+- [[_FakeRBAC]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

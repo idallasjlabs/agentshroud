@@ -12,9 +12,9 @@ tags:
 # ._load_privacy_policy()
 
 ## Connections
-- [[dot-__init__()_167]] - `calls` [EXTRACTED]
+- [[dot-__init__()_43]] - `calls` [EXTRACTED]
 - [[dot-_recompile_private_data_patterns()]] - `calls` [EXTRACTED]
 - [[Load optional admin-private tool patterns from policy file.]] - `rationale_for` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
+- [[MCPPermissionManager]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

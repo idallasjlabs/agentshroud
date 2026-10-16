@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "rbac_config.py"
+community: "_FakeRBAC"
 location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/rbac_configpy
+  - community/_FakeRBAC
 ---
 
 # .get_contributor()
@@ -17,6 +17,6 @@ tags:
 - [[dot-_ensure_teams()]] - `calls` [EXTRACTED]
 - [[dot-_load_paused_ids()]] - `calls` [EXTRACTED]
 - [[ContributorManager]] - `method` [EXTRACTED]
-- [[ContributorRecord_1]] - `references` [EXTRACTED]
+- [[ContributorRecord]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/rbac_configpy
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

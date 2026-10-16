@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
+source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L60"
+community: "TrustConfig"
+location: "L214"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/TrustConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[SidecarScanner]] - `method` [EXTRACTED]
+- [[ToolACLConfig]] - `references` [EXTRACTED]
+- [[ToolACLEnforcer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

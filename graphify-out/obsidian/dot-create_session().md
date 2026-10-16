@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_fingerprint()]] - `calls` [EXTRACTED]
-- [[dot-cleanup_expired()_2]] - `calls` [EXTRACTED]
+- [[dot-cleanup_expired()_3]] - `calls` [EXTRACTED]
 - [[RateLimitExceeded]] - `calls` [EXTRACTED]
 - [[Session]] - `references` [EXTRACTED]
 - [[SessionManager]] - `method` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "AuditChain"
 location: "L272"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/AuditChain
 ---
 
 # ._propagate()
@@ -17,4 +17,4 @@ tags:
 - [[CrossBotTrustLedger_1]] - `method` [EXTRACTED]
 - [[Recursive BFS propagation up to max_propagation_depth hops.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/AuditChain

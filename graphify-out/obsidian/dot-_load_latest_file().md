@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[dot-load_latest()]] - `calls` [EXTRACTED]
-- [[dot-save()_1]] - `calls` [EXTRACTED]
+- [[dot-save()]] - `calls` [EXTRACTED]
 - [[IntelReportStore_1]] - `method` [EXTRACTED]
-- [[Path_50]] - `references` [EXTRACTED]
+- [[Path_18]] - `references` [EXTRACTED]
 - [[Return the most recent JSON file in the store, or None.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

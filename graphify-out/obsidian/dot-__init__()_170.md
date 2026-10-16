@@ -1,23 +1,18 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/security/mfa_guard.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L230"
+community: "test_mfa_guard.py"
+location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/test_mfa_guardpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[ConnectionPool]] - `calls` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `references` [EXTRACTED]
-- [[MCPAuditTrail_1]] - `references` [EXTRACTED]
-- [[MCPInspector]] - `references` [EXTRACTED]
-- [[MCPPermissionManager]] - `references` [EXTRACTED]
-- [[MCPProxy_1]] - `method` [EXTRACTED]
-- [[MCPProxyConfig_1]] - `references` [EXTRACTED]
+- [[dot-_decode_secret()]] - `calls` [EXTRACTED]
+- [[MFAGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

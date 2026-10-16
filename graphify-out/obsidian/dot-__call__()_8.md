@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "test_cli_coverage.py"
-location: "L634"
+community: "AsyncMock"
+location: "L8618"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cli_coveragepy
+  - community/AsyncMock
 ---
 
 # .__call__()
 
 ## Connections
-- [[_FakeConnect]] - `method` [EXTRACTED]
+- [[AsyncMock]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

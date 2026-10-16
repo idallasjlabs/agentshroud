@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "AlertDispatcher"
+community: "PIIConfig"
 location: "L486"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/PIIConfig
 ---
 
 # .cleanup_old_sessions()
@@ -15,4 +15,4 @@ tags:
 - [[Clean up old session data.]] - `rationale_for` [EXTRACTED]
 - [[ContextGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

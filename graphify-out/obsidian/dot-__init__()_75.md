@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/data_exfil_volume_guard.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "DataExfilVolumeGuard"
-location: "L86"
+community: "DataLedger"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataExfilVolumeGuard
+  - community/DataLedger
 ---
 
 # .__init__()
 
 ## Connections
-- [[DataExfilVolumeConfig]] - `references` [EXTRACTED]
-- [[DataExfilVolumeGuard]] - `method` [EXTRACTED]
+- [[DataLedger]] - `method` [EXTRACTED]
+- [[LedgerConfig_1]] - `references` [EXTRACTED]
+- [[Store configuration          Actual database connection created in initialize().]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard
+#graphify/code #graphify/EXTRACTED #community/DataLedger

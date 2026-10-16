@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "AsyncMock"
-location: "L8615"
+community: "A2APolicyEngine"
+location: "L446"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/A2APolicyEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[AsyncMock]] - `method` [EXTRACTED]
+- [[_Event]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

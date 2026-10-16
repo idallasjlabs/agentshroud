@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "WebProxyConfig"
-location: "L100"
+community: "test_llm_proxy_local_parity.py"
+location: "L1141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/test_llm_proxy_local_paritypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[RateLimiter]] - `method` [EXTRACTED]
+- [[_FakeStreamClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_local_paritypy

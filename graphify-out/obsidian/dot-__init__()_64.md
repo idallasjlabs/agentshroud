@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/proxy/webhook_receiver.py"
+source_file: "gateway/proxy/collaborator_greeter.py"
 type: "code"
-community: "WebhookReceiver"
-location: "L37"
+community: "test_collaborator_greeter.py"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - community/test_collaborator_greeterpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_can_create_directory()]] - `calls` [EXTRACTED]
-- [[Path_14]] - `calls` [EXTRACTED]
-- [[RBACConfig_4]] - `calls` [EXTRACTED]
-- [[UserSessionManager]] - `calls` [EXTRACTED]
-- [[WebhookReceiver]] - `method` [EXTRACTED]
+- [[dot-_load_state()]] - `calls` [EXTRACTED]
+- [[dot-_load_taglines()]] - `calls` [EXTRACTED]
+- [[AsyncClient]] - `references` [EXTRACTED]
+- [[CollaboratorGreeter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy

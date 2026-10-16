@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_middleware_coverage.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "_req"
-location: "L144"
+community: "AgentRegistry"
+location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_req
+  - community/AgentRegistry
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeRBAC_1]] - `method` [EXTRACTED]
+- [[AgentRegistry]] - `references` [EXTRACTED]
+- [[IsolationVerifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_req
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

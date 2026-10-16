@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L95"
+community: "DNSFilterConfig"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/DNSFilterConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPServerConfig_1]] - `references` [EXTRACTED]
-- [[StdioConnection]] - `method` [EXTRACTED]
+- [[DNSFilter]] - `method` [EXTRACTED]
+- [[DNSFilterConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/security/git_guard.py"
 type: "code"
-community: ".__init__"
-location: "L41"
+community: "ResourceGuard"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/__init__
+  - community/ResourceGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_pending_store()]] - `calls` [EXTRACTED]
-- [[ApprovalQueue]] - `method` [EXTRACTED]
-- [[ApprovalQueueConfig]] - `references` [EXTRACTED]
-- [[Initialize approval queue          Args             config Approval queue conf]] - `rationale_for` [EXTRACTED]
-- [[MFAGuard]] - `references` [EXTRACTED]
+- [[Args             mode 'monitor' (log findings) or 'enforce' (quarantine suspic]] - `rationale_for` [EXTRACTED]
+- [[GitGuard]] - `method` [EXTRACTED]
+- [[Path_8]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/__init__
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

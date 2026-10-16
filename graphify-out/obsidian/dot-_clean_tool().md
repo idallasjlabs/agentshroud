@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-_handle()]] - `calls` [EXTRACTED]
 - [[AlertTelegramRelay]] - `method` [EXTRACTED]
-- [[Any_26]] - `references` [EXTRACTED]
+- [[Any_31]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

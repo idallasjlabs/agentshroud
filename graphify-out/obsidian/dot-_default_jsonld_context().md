@@ -12,7 +12,7 @@ tags:
 # ._default_jsonld_context()
 
 ## Connections
-- [[dot-__init__()_73]] - `calls` [EXTRACTED]
+- [[dot-__init__()_65]] - `calls` [EXTRACTED]
 - [[AuditExportConfig]] - `method` [EXTRACTED]
 - [[Default JSON-LD context for security ontology.]] - `rationale_for` [EXTRACTED]
 

@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/security/rate_limit_guard.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "RateLimitGuard"
-location: "L82"
+community: "MiddlewareManager"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimitGuard
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[RateLimitConfig]] - `references` [EXTRACTED]
-- [[RateLimitGuard]] - `method` [EXTRACTED]
+- [[dot-_load_integrity_database()]] - `calls` [EXTRACTED]
+- [[dot-_load_write_windows()]] - `calls` [EXTRACTED]
+- [[MemoryIntegrityConfig]] - `references` [EXTRACTED]
+- [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
+- [[Path_48]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimitGuard
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

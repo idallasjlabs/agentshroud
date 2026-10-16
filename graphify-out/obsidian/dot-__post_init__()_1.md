@@ -2,7 +2,7 @@
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
 community: "MiddlewareManager"
-location: "L67"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # .__post_init__()
 
 ## Connections
-- [[RetentionAction]] - `method` [EXTRACTED]
+- [[ContentThreat]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

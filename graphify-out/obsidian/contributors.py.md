@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[ContributorManager]] - `contains` [EXTRACTED]
-- [[ContributorRecord]] - `imports` [EXTRACTED]
+- [[ContributorRecord_1]] - `imports` [EXTRACTED]
 - [[Platform]] - `imports` [EXTRACTED]
 - [[RBACConfig_4]] - `imports` [EXTRACTED]
 - [[UserRole]] - `imports` [EXTRACTED]

@@ -15,6 +15,6 @@ tags:
 - [[dot-_update_score()]] - `calls` [EXTRACTED]
 - [[dot-get_trust()]] - `calls` [EXTRACTED]
 - [[Apply time-based decay to score.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager_1]] - `method` [EXTRACTED]
+- [[TrustManager]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

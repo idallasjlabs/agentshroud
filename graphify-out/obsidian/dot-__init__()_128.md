@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_forward_stream.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "test_forward_stream.py"
-location: "L140"
+community: "MCPPolicyEngine"
+location: "L252"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/MCPPolicyEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[_PassthroughPipeline]] - `method` [EXTRACTED]
+- [[MCPPolicyConfig_1]] - `references` [EXTRACTED]
+- [[MCPPolicyEngine_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

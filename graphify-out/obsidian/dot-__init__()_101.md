@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/output_schema.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "OutputSchemaEnforcer"
-location: "L67"
+community: "AuditStore"
+location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputSchemaEnforcer
+  - community/AuditStore
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_register_default_schema()]] - `calls` [EXTRACTED]
-- [[OutputSchemaEnforcer]] - `method` [EXTRACTED]
+- [[AuditStore_1]] - `method` [EXTRACTED]
+- [[Path_28]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer
+#graphify/code #graphify/EXTRACTED #community/AuditStore

@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/security/rate_limit_guard.py"
+source_file: "gateway/security/cron_state_monitor.py"
 type: "code"
-community: "RateLimitGuard"
-location: "L108"
+community: "CronStateMonitor"
+location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimitGuard
+  - community/CronStateMonitor
 ---
 
 # .check()
 
 ## Connections
-- [[dot-_burst_limit()]] - `calls` [EXTRACTED]
-- [[dot-_sustained_limit()]] - `calls` [EXTRACTED]
-- [[RateLimitDecision]] - `references` [EXTRACTED]
-- [[RateLimitGuard]] - `method` [EXTRACTED]
-- [[Record one request for (agent_id, tool) and decide allowblock.          Fail-cl]] - `rationale_for` [EXTRACTED]
+- [[dot-_dispatch_aggregate()]] - `calls` [EXTRACTED]
+- [[dot-_evaluate()]] - `calls` [EXTRACTED]
+- [[dot-parse_store()]] - `calls` [EXTRACTED]
+- [[CronStateMonitor]] - `method` [EXTRACTED]
+- [[One poll pass over all stores.  Never raises.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimitGuard
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_slack_proxy_coverage.py"
+source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "AsyncMock"
-location: "L78"
+community: "A2APolicyEngine"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/A2APolicyEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[_RaisingRedactionResult]] - `method` [EXTRACTED]
+- [[A2APeerTestDouble]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

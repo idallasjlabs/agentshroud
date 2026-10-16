@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "_FakeHTTPResponse"
-location: "L36"
+community: "test_soc_realtime_coverage.py"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeHTTPResponse
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeHTTPResponse]] - `method` [EXTRACTED]
+- [[SOCWebSocketHandler_2]] - `method` [EXTRACTED]
+- [[WebSocket]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeHTTPResponse
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

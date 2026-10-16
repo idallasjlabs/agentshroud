@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-check_tool_parameters()]] - `calls` [EXTRACTED]
 - [[dot-check_tool_permission()_2]] - `calls` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
+- [[MCPPermissionManager]] - `method` [EXTRACTED]
 - [[PrivateAccessAttempt]] - `calls` [EXTRACTED]
 - [[Record blocked private-tool access attempts for SOCaudit views.]] - `rationale_for` [EXTRACTED]
 

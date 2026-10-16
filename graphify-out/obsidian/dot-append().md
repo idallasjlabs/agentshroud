@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-emit()_1]] - `calls` [EXTRACTED]
-- [[dot-push()_2]] - `calls` [EXTRACTED]
+- [[dot-push()_4]] - `calls` [EXTRACTED]
 - [[LogBuffer]] - `method` [EXTRACTED]
 - [[logs_recent()]] - `calls` [EXTRACTED]
 - [[ssh_hosts()_1]] - `calls` [EXTRACTED]

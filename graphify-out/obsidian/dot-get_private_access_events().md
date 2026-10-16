@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-get_private_access_summary()]] - `calls` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
+- [[MCPPermissionManager]] - `method` [EXTRACTED]
 - [[Return recent blocked private-tool attempts for auditing.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

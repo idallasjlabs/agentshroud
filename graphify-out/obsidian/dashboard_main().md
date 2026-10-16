@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "KeyRotationManager"
+community: "api.py"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/apipy
 ---
 
 # dashboard_main()
 
 ## Connections
-- [[Path_43]] - `calls` [EXTRACTED]
+- [[Path_39]] - `calls` [EXTRACTED]
 - [[Serve the main dashboard page.]] - `rationale_for` [EXTRACTED]
 - [[management.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/apipy

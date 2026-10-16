@@ -15,8 +15,8 @@ tags:
 - [[dot-_timeout_request()]] - `calls` [EXTRACTED]
 - [[dot-decide()_1]] - `calls` [EXTRACTED]
 - [[dot-submit()_1]] - `calls` [EXTRACTED]
-- [[Any_82]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue_2]] - `method` [EXTRACTED]
+- [[Any_78]] - `references` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
 - [[Send a JSON message to all connected WebSocket clients.          SCRUM-154 boun]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "AgentTarget"
+community: "DataLedger"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/DataLedger
 ---
 
 # approval.py
 
 ## Connections
-- [[ApprovalDecision]] - `imports` [EXTRACTED]
+- [[ApprovalDecision_1]] - `imports` [EXTRACTED]
 - [[ApprovalQueueItem_4]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_4]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_5]] - `imports` [EXTRACTED]
 - [[_validate_ws_token()]] - `imports` [EXTRACTED]
 - [[approval_websocket()]] - `contains` [EXTRACTED]
-- [[auth_dep()_3]] - `contains` [EXTRACTED]
+- [[auth_dep()_1]] - `contains` [EXTRACTED]
 - [[create_auth_dependency()]] - `imports` [EXTRACTED]
 - [[decide_approval()]] - `contains` [EXTRACTED]
 - [[event_bus.py]] - `imports_from` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[submit_approval_request()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/DataLedger

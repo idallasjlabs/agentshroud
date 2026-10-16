@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/module_stats.py"
+source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "ModuleStatsCollector"
-location: "L41"
+community: "_FakeRBAC"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/_FakeRBAC
 ---
 
 # .__init__()
 
 ## Connections
-- [[ModuleStatsCollector]] - `method` [EXTRACTED]
+- [[ContributorManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

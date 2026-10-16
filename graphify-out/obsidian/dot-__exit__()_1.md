@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_citation_verifier.py"
+source_file: "gateway/tests/test_gateway_email_service.py"
 type: "code"
-community: "FetchOutcome"
-location: "L326"
+community: "GatewayEmailService"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/GatewayEmailService
 ---
 
 # .__exit__()
 
 ## Connections
-- [[_FakeStreamResponse_1]] - `method` [EXTRACTED]
+- [[_FakeSmtp]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

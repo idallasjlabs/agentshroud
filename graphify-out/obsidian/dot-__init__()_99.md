@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L424"
+community: "TrustConfig"
+location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/TrustConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[_PassInboundPipeline]] - `method` [EXTRACTED]
+- [[dot-_init_db()_2]] - `calls` [EXTRACTED]
+- [[ProgressiveTrustConfig]] - `references` [EXTRACTED]
+- [[TrustConfig]] - `references` [EXTRACTED]
+- [[TrustLevel_1]] - `references` [EXTRACTED]
+- [[TrustManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

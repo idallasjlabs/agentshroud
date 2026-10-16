@@ -15,7 +15,7 @@ tags:
 - [[dot-test_full_trust_tool_result_injection_audited_not_blocked()]] - `calls` [EXTRACTED]
 - [[dot-test_standard_trust_tool_result_injection_is_blocked()]] - `calls` [EXTRACTED]
 - [[dot-test_untrusted_tool_result_injection_is_blocked()]] - `calls` [EXTRACTED]
-- [[ScanResult_1]] - `calls` [EXTRACTED]
+- [[ScanResult_4]] - `calls` [EXTRACTED]
 - [[TestPromptGuardToolResultTrustGate]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AuditChain

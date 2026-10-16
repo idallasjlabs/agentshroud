@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_security_fixes.py"
+source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "test_e2e.py"
-location: "L29"
+community: "FetchOutcome"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2epy
+  - community/FetchOutcome
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[test_security_fixes.py]] - `contains` [EXTRACTED]
+- [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2epy
+#graphify/code #graphify/EXTRACTED #community/FetchOutcome

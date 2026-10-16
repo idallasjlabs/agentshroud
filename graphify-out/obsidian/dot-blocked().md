@@ -12,6 +12,6 @@ tags:
 # .blocked()
 
 ## Connections
-- [[ScanResult_4]] - `method` [EXTRACTED]
+- [[ScanResult_3]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SkillGuard

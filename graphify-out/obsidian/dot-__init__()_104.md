@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/tests/test_soc_contributors.py"
 type: "code"
-community: "AuditStore"
-location: "L125"
+community: "_FakeRBAC"
+location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/_FakeRBAC
 ---
 
 # .__init__()
 
 ## Connections
-- [[AuditStore_1]] - `method` [EXTRACTED]
-- [[Path_25]] - `references` [EXTRACTED]
+- [[_FakeRBAC_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

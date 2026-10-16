@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/mcp_inspector.py"
+source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L133"
+community: "MiddlewareManager"
+location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPInspector_1]] - `method` [EXTRACTED]
+- [[EgressMonitor]] - `method` [EXTRACTED]
+- [[EgressMonitorConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

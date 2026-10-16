@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/cron_state_monitor.py"
+source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "CronStateMonitor"
-location: "L155"
+community: "RateLimiter"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CronStateMonitor
+  - community/RateLimiter
 ---
 
 # .check()
 
 ## Connections
-- [[dot-_dispatch_aggregate()]] - `calls` [EXTRACTED]
-- [[dot-_evaluate()]] - `calls` [EXTRACTED]
-- [[dot-parse_store()]] - `calls` [EXTRACTED]
-- [[CronStateMonitor]] - `method` [EXTRACTED]
-- [[One poll pass over all stores.  Never raises.]] - `rationale_for` [EXTRACTED]
+- [[Check if client is within rate limit          Args             client_id Usual]] - `rationale_for` [EXTRACTED]
+- [[RateLimiter_1]] - `method` [EXTRACTED]
+- [[get_auth_dependency()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CronStateMonitor
+#graphify/code #graphify/EXTRACTED #community/RateLimiter

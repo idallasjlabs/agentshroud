@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "subagent_governance.py"
+community: "GovernanceAction"
 location: "L173"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/subagent_governancepy
+  - community/GovernanceAction
 ---
 
 # .acceptable()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OutputScore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/subagent_governancepy
+#graphify/code #graphify/EXTRACTED #community/GovernanceAction

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "_HeadFakeResponse"
-location: "L797"
+community: "WebContentScanner"
+location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_HeadFakeResponse
+  - community/WebContentScanner
 ---
 
 # .__init__()
 
 ## Connections
-- [[_HeadFakeResponse]] - `method` [EXTRACTED]
+- [[WebContentScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_HeadFakeResponse
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

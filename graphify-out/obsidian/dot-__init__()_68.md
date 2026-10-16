@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_jira_dev_ticket.py"
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "test_jira_dev_ticket.py"
-location: "L256"
+community: "CompetitiveIntelReport"
+location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_jira_dev_ticketpy
+  - community/CompetitiveIntelReport
 ---
 
 # .__init__()
 
 ## Connections
-- [[_MockTransport]] - `method` [EXTRACTED]
+- [[IntelReportStore_1]] - `method` [EXTRACTED]
+- [[Path_18]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_jira_dev_ticketpy
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

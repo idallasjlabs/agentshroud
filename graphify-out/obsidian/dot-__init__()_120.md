@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/ingest_api/email_service.py"
+source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "GatewayEmailService"
-location: "L51"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # .__init__()
 
 ## Connections
-- [[GatewayEmailService_1]] - `method` [EXTRACTED]
-- [[TransportFactory]] - `references` [EXTRACTED]
+- [[CanaryConfig_1]] - `references` [EXTRACTED]
+- [[CanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/subagent_governance.py"
+source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "SubagentGovernance"
-location: "L209"
+community: "EgressFilterConfig"
+location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentGovernance
+  - community/EgressFilterConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[GovernanceConfig]] - `references` [EXTRACTED]
-- [[SubagentGovernance]] - `method` [EXTRACTED]
+- [[EgressFilter_2]] - `method` [EXTRACTED]
+- [[EgressFilterConfig_1]] - `references` [EXTRACTED]
+- [[EgressPolicy]] - `references` [EXTRACTED]
+- [[get_egress_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentGovernance
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

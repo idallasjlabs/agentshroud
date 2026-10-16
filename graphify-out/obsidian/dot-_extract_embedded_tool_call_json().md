@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_handle_outbound_tool_calls()]] - `calls` [EXTRACTED]
-- [[Any_65]] - `references` [EXTRACTED]
+- [[Any_71]] - `references` [EXTRACTED]
 - [[Find first embedded tool-call JSON object inside arbitrary text.]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy]] - `method` [EXTRACTED]
 

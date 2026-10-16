@@ -11,9 +11,9 @@ tags:
 # canary-cron.sh embedded Python main()
 
 ## Connections
-- [[PIIConfig_2]] - `calls` [EXTRACTED]
+- [[PIIConfig_1]] - `calls` [EXTRACTED]
 - [[PIISanitizer_2]] - `calls` [EXTRACTED]
-- [[PromptGuard_1]] - `calls` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
 - [[SecurityPipeline_2]] - `calls` [EXTRACTED]
 - [[run_canary()_1]] - `calls` [EXTRACTED]
 

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "load_config"
+community: "ApprovalQueueConfig"
 location: "L783"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/ApprovalQueueConfig
 ---
 
 # config_watcher()
 
 ## Connections
 - [[Background mtime-poll watcher reload the config when the file changes.      Pol]] - `rationale_for` [EXTRACTED]
-- [[GatewayConfig_4]] - `references` [EXTRACTED]
-- [[Path_21]] - `references` [EXTRACTED]
+- [[GatewayConfig_3]] - `references` [EXTRACTED]
+- [[Path_30]] - `references` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `contains` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[test_watcher_reloads_on_mtime_change()]] - `calls` [EXTRACTED]
 - [[test_watcher_stops_on_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

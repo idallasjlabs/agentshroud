@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/session_security.py"
+source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "code"
-community: "SessionManager"
-location: "L57"
+community: "DifferentialPIIDetector"
+location: "L210"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/DifferentialPIIDetector
 ---
 
 # .__init__()
 
 ## Connections
-- [[SessionManager]] - `method` [EXTRACTED]
+- [[_FakeRecognizerResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector

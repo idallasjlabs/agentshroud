@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/security/subagent_monitor.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "SubagentMonitor"
-location: "L67"
+community: "AuditChain"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentMonitor
+  - community/AuditChain
 ---
 
 # .__init__()
 
 ## Connections
-- [[SubagentMonitor]] - `method` [EXTRACTED]
-- [[SubagentMonitorConfig]] - `references` [EXTRACTED]
+- [[dot-_compile_patterns()_1]] - `calls` [EXTRACTED]
+- [[Any_9]] - `references` [EXTRACTED]
+- [[InfoCategory]] - `calls` [EXTRACTED]
+- [[Initialize the outbound information filter.          Args             config C]] - `rationale_for` [EXTRACTED]
+- [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentMonitor
+#graphify/code #graphify/EXTRACTED #community/AuditChain

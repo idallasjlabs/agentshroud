@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/web/api.py"
 type: "code"
-community: "MCPPolicyEngine"
-location: "L252"
+community: "api.py"
+location: "L941"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/apipy
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPPolicyConfig_1]] - `references` [EXTRACTED]
-- [[MCPPolicyEngine_1]] - `method` [EXTRACTED]
+- [[SkillGuardBlocked]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/apipy

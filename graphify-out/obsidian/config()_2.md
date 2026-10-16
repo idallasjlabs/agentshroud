@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_key_vault.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "KeyVault"
-location: "L20"
+community: "WebProxyConfig"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/WebProxyConfig
 ---
 
 # config()
 
 ## Connections
-- [[KeyVaultConfig]] - `calls` [EXTRACTED]
-- [[test_key_vault.py]] - `contains` [EXTRACTED]
+- [[WebProxyConfig_1]] - `calls` [EXTRACTED]
+- [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/code #graphify/EXTRACTED #community/WebProxyConfig

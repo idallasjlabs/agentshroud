@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_detect_modification_source()]] - `calls` [EXTRACTED]
 - [[dot-_save_write_windows()]] - `calls` [EXTRACTED]
-- [[dot-scan_file()]] - `calls` [EXTRACTED]
+- [[dot-scan_file()_1]] - `calls` [EXTRACTED]
 - [[Check if a file is currently in a write grace window.]] - `rationale_for` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
 

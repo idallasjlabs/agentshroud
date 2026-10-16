@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "SOCWebSocketHandler"
+community: "test_soc_realtime_coverage.py"
 location: "L726"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - community/test_soc_realtime_coveragepy
 ---
 
 # ._handler()
@@ -20,7 +20,7 @@ tags:
 - [[dot-test_inner_timeout_continues_loop()]] - `calls` [EXTRACTED]
 - [[Any_30]] - `references` [EXTRACTED]
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[SOCWebSocketHandler_2]] - `references` [EXTRACTED]
+- [[SOCWebSocketHandler]] - `references` [EXTRACTED]
 - [[TestHandlerRun]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

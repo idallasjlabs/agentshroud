@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L139"
+community: "KeyRotationManager"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/KeyRotationManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeRBAC]] - `method` [EXTRACTED]
+- [[MockValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

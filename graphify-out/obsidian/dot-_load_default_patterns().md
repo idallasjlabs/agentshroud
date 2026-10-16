@@ -12,7 +12,7 @@ tags:
 # ._load_default_patterns()
 
 ## Connections
-- [[dot-__init__()_129]] - `calls` [EXTRACTED]
+- [[dot-__init__()_97]] - `calls` [EXTRACTED]
 - [[ChainPattern]] - `calls` [EXTRACTED]
 - [[Load default suspicious chain patterns.]] - `rationale_for` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `method` [EXTRACTED]

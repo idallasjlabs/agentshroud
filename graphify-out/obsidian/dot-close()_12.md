@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "DataLedger"
-location: "L401"
+community: "HTTPConnectProxy"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataLedger
+  - community/HTTPConnectProxy
 ---
 
 # .close()
 
 ## Connections
-- [[Close database connection]] - `rationale_for` [EXTRACTED]
-- [[DataLedger]] - `method` [EXTRACTED]
+- [[_MockWriter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataLedger
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

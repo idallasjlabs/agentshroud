@@ -15,7 +15,7 @@ tags:
 - [[dot-broadcast()_1]] - `calls` [EXTRACTED]
 - [[dot-get_item()_2]] - `calls` [EXTRACTED]
 - [[ApprovalQueueItem_1]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue_2]] - `method` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
 - [[PermissionError]] - `calls` [INFERRED]
 - [[Process an approval decision.          IEC 62443 FR1 approving a high-risk acti]] - `rationale_for` [EXTRACTED]
 

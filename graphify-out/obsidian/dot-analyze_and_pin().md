@@ -17,7 +17,7 @@ tags:
 - [[dot-analyze()_1]] - `calls` [EXTRACTED]
 - [[Analyze URL and pin resolved IP to mitigate DNS rebinding TOCTOU.          When]] - `rationale_for` [EXTRACTED]
 - [[URLAnalysisResult_1]] - `references` [EXTRACTED]
-- [[URLAnalyzer]] - `method` [EXTRACTED]
+- [[URLAnalyzer_1]] - `method` [EXTRACTED]
 - [[URLFinding]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestSSRFDetection

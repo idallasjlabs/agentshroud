@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_collaborator_safe_notice()]] - `calls` [EXTRACTED]
 - [[dot-_filter_outbound()_1]] - `calls` [EXTRACTED]
-- [[Any_65]] - `references` [EXTRACTED]
+- [[Any_71]] - `references` [EXTRACTED]
 - [[Redact the owner's Telegram user ID from collaborator-bound text.          Strip]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy]] - `method` [EXTRACTED]
 

@@ -1,18 +1,19 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "SecureBrowser"
-location: "L65"
+community: "KillSwitchMonitor"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/KillSwitchMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_config()_1]] - `calls` [EXTRACTED]
-- [[SecureBrowser_1]] - `method` [EXTRACTED]
+- [[AlertDispatcher]] - `method` [EXTRACTED]
+- [[Path_13]] - `references` [EXTRACTED]
+- [[deque]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

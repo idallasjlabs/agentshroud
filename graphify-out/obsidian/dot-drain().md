@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_http_proxy.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "WebProxy"
-location: "L114"
+community: "HTTPConnectProxy"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/HTTPConnectProxy
 ---
 
 # .drain()
 
 ## Connections
-- [[_DummyTargetWriter]] - `method` [EXTRACTED]
+- [[_MockWriter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

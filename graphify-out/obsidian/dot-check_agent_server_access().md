@@ -15,7 +15,7 @@ tags:
 - [[dot-check_all()]] - `calls` [EXTRACTED]
 - [[dot-get_trust_level()]] - `calls` [EXTRACTED]
 - [[Check if an agent can access a server at all.]] - `rationale_for` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
+- [[MCPPermissionManager]] - `method` [EXTRACTED]
 - [[PermissionCheck]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

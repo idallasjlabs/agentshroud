@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "create_auth_dependency"
+community: "test_security.py"
 location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/create_auth_dependency
+  - community/test_securitypy
 ---
 
 # create_auth_dependency()
 
 ## Connections
 - [[Create authentication dependency callable      This is a synchronous wrapper tha]] - `rationale_for` [EXTRACTED]
-- [[GatewayConfig]] - `references` [EXTRACTED]
+- [[GatewayConfig_4]] - `references` [EXTRACTED]
 - [[approval.py]] - `imports` [EXTRACTED]
-- [[auth.py]] - `references` [EXTRACTED]
-- [[auth_dep()_3]] - `calls` [EXTRACTED]
+- [[auth.py_1]] - `references` [EXTRACTED]
+- [[auth_dep()_1]] - `calls` [EXTRACTED]
 - [[auth_dep()_4]] - `calls` [EXTRACTED]
 - [[auth_dep()_2]] - `calls` [EXTRACTED]
-- [[auth_dep()_1]] - `calls` [EXTRACTED]
+- [[auth_dep()_3]] - `calls` [EXTRACTED]
 - [[dashboard.py]] - `imports` [EXTRACTED]
 - [[forward.py]] - `imports` [EXTRACTED]
 - [[get_auth_dependency()]] - `calls` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[test_auth_dependency_missing_header()]] - `calls` [EXTRACTED]
 - [[test_auth_dependency_valid_token()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/create_auth_dependency
+#graphify/code #graphify/EXTRACTED #community/test_securitypy

@@ -20,6 +20,6 @@ tags:
 - [[dot-record_violation()]] - `calls` [EXTRACTED]
 - [[dot-register_agent()]] - `calls` [EXTRACTED]
 - [[TrustLevel_1]] - `references` [EXTRACTED]
-- [[TrustManager_1]] - `method` [EXTRACTED]
+- [[TrustManager]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustConfig

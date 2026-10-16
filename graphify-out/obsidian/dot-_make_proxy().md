@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_400_retry_no_loop()]] - `calls` [EXTRACTED]
 - [[dot-test_400_retry_succeeds_when_text_strippable()]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `references` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `references` [EXTRACTED]
 - [[TestTelegram400Retry]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "RBACConfig"
+community: "telegram_proxy.py"
 location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/telegram_proxypy
 ---
 
 # .get_active_project_for_user()
@@ -17,4 +17,4 @@ tags:
 - [[Return the first project accessible to a user (primary project).]] - `rationale_for` [EXTRACTED]
 - [[TeamsConfig_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

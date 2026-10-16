@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/tailscale-serve.sh"
 type: "code"
-community: "run-standalone.sh (Hermes docker run launcher)"
+community: "test_main_endpoints.py"
 location: "L152-L204"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run-standalonesh_Hermes_docker_run_launcher
+  - community/test_main_endpointspy
 ---
 
 # cmd_persist
@@ -16,4 +16,4 @@ tags:
 - [[tailscale-serve.sh]] - `defines` [EXTRACTED]
 - [[tailscale-serve.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run-standalonesh_Hermes_docker_run_launcher
+#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy

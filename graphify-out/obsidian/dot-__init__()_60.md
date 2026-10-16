@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/group_rbac.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "GroupRoleResolver"
-location: "L87"
+community: "make_event"
+location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/make_event
 ---
 
 # .__init__()
 
 ## Connections
-- [[GroupRoleResolver]] - `method` [EXTRACTED]
+- [[EventBus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/make_event

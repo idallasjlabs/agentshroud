@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/a2a_governance.py"
+source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "A2AGovernanceProxy"
-location: "L190"
+community: "InjectionAction"
+location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/InjectionAction
 ---
 
 # .__init__()
 
 ## Connections
-- [[A2AGovernanceConfig]] - `references` [EXTRACTED]
-- [[A2AGovernanceProxy]] - `method` [EXTRACTED]
+- [[Initialize the scanner with optional custom rules.          Args             cu]] - `rationale_for` [EXTRACTED]
+- [[InjectionRule]] - `references` [EXTRACTED]
+- [[ToolResultInjectionScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/InjectionAction

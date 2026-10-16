@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/context_integrity.py"
+source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "ContextSegment"
-location: "L64"
+community: "_FakeHTTPResponse"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/_FakeHTTPResponse
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_12]] - `references` [EXTRACTED]
-- [[ContextIntegrityScorer]] - `method` [EXTRACTED]
+- [[_FakeHTTPResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/_FakeHTTPResponse

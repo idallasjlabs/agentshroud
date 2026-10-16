@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/key_vault.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "KeyVault"
-location: "L154"
+community: "StdioConnection"
+location: "L445"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/StdioConnection
 ---
 
 # .__init__()
 
 ## Connections
-- [[KeyInjector]] - `method` [EXTRACTED]
-- [[KeyVault]] - `references` [EXTRACTED]
+- [[FakeApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/code #graphify/EXTRACTED #community/StdioConnection

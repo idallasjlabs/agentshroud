@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/privacy_policy.py"
+source_file: "gateway/security/delegation.py"
 type: "code"
-community: "PrivacyPolicyEnforcer"
-location: "L132"
+community: "DelegationManager"
+location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/DelegationManager
 ---
 
 # .from_dict()
 
 ## Connections
-- [[dot-default()]] - `calls` [EXTRACTED]
-- [[Parse from a YAMLdict representation.          Example YAML             privac]] - `rationale_for` [EXTRACTED]
-- [[PrivacyPolicy]] - `method` [EXTRACTED]
-- [[ServicePolicy]] - `calls` [EXTRACTED]
+- [[dot-_load()]] - `calls` [EXTRACTED]
+- [[Delegation_1]] - `method` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/EXTRACTED #community/DelegationManager

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_progressive_lockdown.py"
+source_file: "gateway/tools/port_manager.py"
 type: "code"
-community: "ProgressiveLockdown"
-location: "L34"
+community: "PortManager"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/PortManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeRBAC_1]] - `method` [EXTRACTED]
+- [[PortManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/code #graphify/EXTRACTED #community/PortManager

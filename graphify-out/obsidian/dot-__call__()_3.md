@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_rate_limit_guard.py"
+source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "RateLimitGuard"
-location: "L32"
+community: "api.py"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimitGuard
+  - community/apipy
 ---
 
 # .__call__()
 
 ## Connections
-- [[FakeClock]] - `method` [EXTRACTED]
+- [[FetchOutcome]] - `references` [EXTRACTED]
+- [[_FakeFetcher]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimitGuard
+#graphify/code #graphify/EXTRACTED #community/apipy

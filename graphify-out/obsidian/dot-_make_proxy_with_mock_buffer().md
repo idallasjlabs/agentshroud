@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_json_body_still_calls_mark_delivered()]] - `calls` [EXTRACTED]
 - [[dot-test_url_encoded_body_calls_mark_delivered()]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestReplayBufferOffsetParsing]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 

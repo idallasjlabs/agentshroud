@@ -20,7 +20,7 @@ tags:
 - [[dot-test_timestamp_present()_1]] - `calls` [EXTRACTED]
 - [[dot-test_totals_sum_across_scanners()]] - `calls` [EXTRACTED]
 - [[Aggregate results from all security scanners into a unified dict.      Returns]] - `rationale_for` [EXTRACTED]
-- [[Any_70]] - `references` [EXTRACTED]
+- [[Any_65]] - `references` [EXTRACTED]
 - [[get_clamav_summary()]] - `calls` [EXTRACTED]
 - [[get_falco_summary()]] - `calls` [EXTRACTED]
 - [[get_fluent_bit_summary()]] - `calls` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "ApprovalRequest"
+community: "ApprovalQueueConfig"
 location: "L534"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/ApprovalQueueConfig
 ---
 
 # broadcast() bounds each client's send with a timeout — defense in     depth so a
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_broadcast_does_not_hang_forever_on_dead_client()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

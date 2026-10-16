@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-broadcast()_1]] - `calls` [EXTRACTED]
-- [[EnhancedApprovalQueue_2]] - `method` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
 - [[Handle timeout for a pending request.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

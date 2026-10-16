@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "RBACConfig"
+community: "ModuleStatsCollector"
 location: "L233"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/ModuleStatsCollector
 ---
 
 # .can_use_tool()
@@ -15,8 +15,8 @@ tags:
 - [[dot-_can_use_tool_impl()]] - `calls` [EXTRACTED]
 - [[dot-can_use_tool_from_origin()]] - `calls` [EXTRACTED]
 - [[dot-can_use_tool_in_group_context()]] - `calls` [EXTRACTED]
-- [[Public entry — records the decision for the SOC heat-map (SCRUM-80),         the_1]] - `rationale_for` [EXTRACTED]
+- [[Public entry — records the decision for the SOC heat-map (SCRUM-80),         the]] - `rationale_for` [EXTRACTED]
 - [[ToolACLEnforcer]] - `method` [EXTRACTED]
 - [[record_decision()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig
+#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector

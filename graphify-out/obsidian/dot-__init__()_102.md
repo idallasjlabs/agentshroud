@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/egress_approval.py"
+source_file: "src/interfaces/text_control_center.py"
 type: "code"
-community: "TestEgressApprovalQueue"
-location: "L155"
+community: "ControlCenter"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/ControlCenter
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_rules()]] - `calls` [EXTRACTED]
-- [[EgressApprovalQueue]] - `method` [EXTRACTED]
-- [[Initialize the approval queue.          Args             rules_file Path to pe]] - `rationale_for` [EXTRACTED]
+- [[ControlCenter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/ControlCenter

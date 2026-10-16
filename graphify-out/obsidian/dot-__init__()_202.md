@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/progressive_lockdown.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "ProgressiveLockdown"
-location: "L69"
+community: "MiddlewareManager"
+location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/MiddlewareManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[ProgressiveLockdown]] - `method` [EXTRACTED]
+- [[MemoryLifecycleConfig_1]] - `references` [EXTRACTED]
+- [[MemoryLifecycleManager]] - `method` [EXTRACTED]
+- [[Path_62]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

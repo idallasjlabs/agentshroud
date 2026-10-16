@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "PIIConfig"
-location: "L28"
+community: "test_soc_router_coverage.py"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/test_soc_router_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_28]] - `references` [EXTRACTED]
-- [[PIIConfig_1]] - `references` [EXTRACTED]
-- [[ToolResultPIIConfig]] - `method` [EXTRACTED]
+- [[_Svc]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

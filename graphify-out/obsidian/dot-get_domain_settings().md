@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[DomainSettings]] - `references` [EXTRACTED]
 - [[Get settings for a specific domain, falling back to defaults.]] - `rationale_for` [EXTRACTED]
-- [[WebProxyConfig]] - `method` [EXTRACTED]
+- [[WebProxyConfig_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebProxyConfig

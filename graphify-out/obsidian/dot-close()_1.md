@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ingest_api/middleware.py"
+source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L1438"
+community: "PIIConfig"
+location: "L442"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/PIIConfig
 ---
 
 # .close()
 
 ## Connections
-- [[MiddlewareManager]] - `method` [EXTRACTED]
-- [[Shutdown middleware background tasks cleanly.]] - `rationale_for` [EXTRACTED]
+- [[TrustManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

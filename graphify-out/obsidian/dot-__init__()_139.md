@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "AuditEvent"
-location: "L62"
+community: "test_dashboard_endpoints.py"
+location: "L142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditEvent
+  - community/test_dashboard_endpointspy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_generate_event_id()]] - `calls` [EXTRACTED]
-- [[AuditEvent]] - `method` [EXTRACTED]
+- [[LogBuffer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditEvent
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

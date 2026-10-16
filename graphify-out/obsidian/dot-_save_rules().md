@@ -18,7 +18,7 @@ tags:
 - [[dot-deny()]] - `calls` [EXTRACTED]
 - [[dot-remove_rule()]] - `calls` [EXTRACTED]
 - [[dot-revoke_decision()]] - `calls` [EXTRACTED]
-- [[dot-to_dict()_5]] - `calls` [EXTRACTED]
+- [[dot-to_dict()_2]] - `calls` [EXTRACTED]
 - [[EgressApprovalQueue]] - `method` [EXTRACTED]
 - [[EgressScope]] - `calls` [EXTRACTED]
 - [[Save rules to persistent storage.]] - `rationale_for` [EXTRACTED]

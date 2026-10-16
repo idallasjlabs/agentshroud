@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_result_endpoint.py"
+source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L46"
+community: "DataLedger"
+location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/DataLedger
 ---
 
 # auth_headers()
 
 ## Connections
-- [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
+- [[Return Authorization headers with test token]] - `rationale_for` [EXTRACTED]
+- [[conftest.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/DataLedger

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L66"
+community: "CrossBotTrustLedger"
+location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/CrossBotTrustLedger
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[MCPToolResult]] - `method` [EXTRACTED]
+- [[TrustDecayPolicy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger

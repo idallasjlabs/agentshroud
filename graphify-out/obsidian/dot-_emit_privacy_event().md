@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[dot-process_tool_call()]] - `calls` [EXTRACTED]
-- [[dot-process_tool_result()_1]] - `calls` [EXTRACTED]
+- [[dot-process_tool_result()]] - `calls` [EXTRACTED]
 - [[Best-effort privacy event emission.]] - `rationale_for` [EXTRACTED]
-- [[MCPProxy_1]] - `method` [EXTRACTED]
+- [[MCPProxy]] - `method` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/process_tool_call

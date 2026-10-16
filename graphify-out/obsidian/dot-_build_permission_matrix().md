@@ -12,10 +12,10 @@ tags:
 # ._build_permission_matrix()
 
 ## Connections
-- [[dot-__init__()_88]] - `calls` [EXTRACTED]
-- [[Action_2]] - `references` [EXTRACTED]
+- [[dot-__init__()_62]] - `calls` [EXTRACTED]
+- [[Action_1]] - `references` [EXTRACTED]
 - [[Build the permission matrix for all roles.]] - `rationale_for` [EXTRACTED]
-- [[RBACManager_2]] - `method` [EXTRACTED]
+- [[RBACManager_1]] - `method` [EXTRACTED]
 - [[Resource_2]] - `references` [EXTRACTED]
 - [[Role_21]] - `references` [EXTRACTED]
 

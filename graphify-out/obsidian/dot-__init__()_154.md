@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_contributors.py"
+source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "_FakeRBAC"
-location: "L25"
+community: "HeuristicClassifier"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/HeuristicClassifier
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeRBAC_2]] - `method` [EXTRACTED]
+- [[dot-_try_load_model()]] - `calls` [EXTRACTED]
+- [[HeuristicClassifier_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

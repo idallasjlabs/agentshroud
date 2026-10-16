@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "MultiTurnTracker"
-location: "L94"
+community: "ToolResultSanitizer"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MultiTurnTracker
+  - community/ToolResultSanitizer
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_compile_detection_patterns()]] - `calls` [EXTRACTED]
-- [[Any_49]] - `references` [EXTRACTED]
-- [[Initialize the multi-turn tracker.          Args             config Configurat]] - `rationale_for` [EXTRACTED]
-- [[MultiTurnTracker]] - `method` [EXTRACTED]
-- [[ThresholdConfig]] - `calls` [EXTRACTED]
+- [[Any_50]] - `references` [EXTRACTED]
+- [[PIIConfig_2]] - `references` [EXTRACTED]
+- [[ToolResultPIIConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

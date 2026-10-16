@@ -15,7 +15,7 @@ tags:
 - [[dot-_sanitize_presidio()]] - `calls` [EXTRACTED]
 - [[dot-sanitize()_3]] - `calls` [EXTRACTED]
 - [[PIISanitizer_2]] - `method` [EXTRACTED]
-- [[RedactionDetail_1]] - `calls` [EXTRACTED]
+- [[RedactionDetail]] - `calls` [EXTRACTED]
 - [[RedactionResult_2]] - `references` [EXTRACTED]
 - [[Sanitize using regex patterns (fallback mode)          Detects         - US_SSN]] - `rationale_for` [EXTRACTED]
 

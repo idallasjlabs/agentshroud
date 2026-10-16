@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_check()]] - `calls` [EXTRACTED]
-- [[dot-scan()_3]] - `calls` [EXTRACTED]
+- [[dot-scan()_4]] - `calls` [EXTRACTED]
 - [[FileSandbox]] - `method` [EXTRACTED]
 - [[FileVerdict]] - `references` [EXTRACTED]
 

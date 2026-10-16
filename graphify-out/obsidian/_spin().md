@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "SOCWebSocketHandler"
+community: "test_soc_realtime_coverage.py"
 location: "L616"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - community/test_soc_realtime_coveragepy
 ---
 
 # _spin()
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_keepalive_sends_pings()]] - `calls` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/conftest.py"
+source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "code"
 community: "ApprovalQueueConfig"
-location: "L154"
+location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,6 @@ tags:
 # auth_headers()
 
 ## Connections
-- [[Return Authorization headers with test token]] - `rationale_for` [EXTRACTED]
-- [[conftest.py]] - `contains` [EXTRACTED]
+- [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

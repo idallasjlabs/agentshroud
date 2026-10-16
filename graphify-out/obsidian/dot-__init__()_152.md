@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "test_cli_coverage.py"
-location: "L613"
+community: "EgressFilterConfig"
+location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cli_coveragepy
+  - community/EgressFilterConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeWS]] - `method` [EXTRACTED]
+- [[FakeAuditStore_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

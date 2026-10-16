@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-_build_forward_payload()]] - `calls` [EXTRACTED]
-- [[AgentTarget]] - `references` [EXTRACTED]
-- [[Any_10]] - `references` [EXTRACTED]
+- [[AgentTarget_2]] - `references` [EXTRACTED]
+- [[Any_72]] - `references` [EXTRACTED]
 - [[ForwardError]] - `calls` [EXTRACTED]
 - [[MultiAgentRouter]] - `method` [EXTRACTED]
 - [[Stream sanitized content to an OpenAI-compatible agent, yielding text         de]] - `rationale_for` [EXTRACTED]

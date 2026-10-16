@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "_DummyTargetWriter"
-location: "L78"
+community: "AgentTarget"
+location: "L404"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_DummyTargetWriter
+  - community/AgentTarget
 ---
 
 # .__init__()
 
 ## Connections
-- [[_HeaderTimeoutReader]] - `method` [EXTRACTED]
+- [[_TrustCaptor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_DummyTargetWriter
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

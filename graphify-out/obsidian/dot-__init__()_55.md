@@ -1,18 +1,19 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
+source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "SecureBrowser"
-location: "L65"
+community: "KillSwitchMonitor"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/KillSwitchMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_config()_2]] - `calls` [EXTRACTED]
-- [[SecureBrowser_2]] - `method` [EXTRACTED]
+- [[CrossBotTrustLedger_1]] - `method` [EXTRACTED]
+- [[TrustDecayPolicy]] - `references` [EXTRACTED]
+- [[deque]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_a2a_proxy.py"
+source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "code"
-community: "A2AProxyResult"
-location: "L446"
+community: "EgressTelegramNotifier"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AProxyResult
+  - community/EgressTelegramNotifier
 ---
 
 # .__init__()
 
 ## Connections
-- [[_Event]] - `method` [EXTRACTED]
+- [[EgressTelegramNotifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AProxyResult
+#graphify/code #graphify/EXTRACTED #community/EgressTelegramNotifier

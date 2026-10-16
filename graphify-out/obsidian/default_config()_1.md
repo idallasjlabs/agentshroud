@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_egress_monitor.py"
+source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L21"
+community: "DifferentialPIIDetector"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/DifferentialPIIDetector
 ---
 
 # default_config()
 
 ## Connections
-- [[EgressMonitorConfig]] - `calls` [EXTRACTED]
-- [[test_egress_monitor.py]] - `contains` [EXTRACTED]
+- [[DifferentialPIIConfig]] - `references` [EXTRACTED]
+- [[test_differential_pii_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector

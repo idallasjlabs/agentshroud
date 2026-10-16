@@ -1,11 +1,11 @@
 ---
 source_file: "docker/docker-compose.yml"
 type: "code"
-community: "Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)"
+community: "colima-health-check.sh"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+  - community/colima-health-checksh
 ---
 
 # docker/docker-compose.yml
@@ -18,4 +18,4 @@ tags:
 - [[docker-socket-proxy service (digest-pinned tecnativa, narrow allowlist)]] - `references` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh

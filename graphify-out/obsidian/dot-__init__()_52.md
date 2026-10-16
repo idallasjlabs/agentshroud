@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/soc/contributors.py"
+source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "soc/router.py"
-location: "L27"
+community: "KillSwitchMonitor"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/KillSwitchMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[ContributorManager]] - `method` [EXTRACTED]
+- [[MCPAuditTrail]] - `method` [EXTRACTED]
+- [[deque]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

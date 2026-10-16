@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_cron_state_monitor.py"
+source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "CronStateMonitor"
-location: "L193"
+community: "test_a2a_proxy.py"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CronStateMonitor
+  - community/test_a2a_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_DedupDispatchFake]] - `method` [EXTRACTED]
+- [[_StubForwarder_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CronStateMonitor
+#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy

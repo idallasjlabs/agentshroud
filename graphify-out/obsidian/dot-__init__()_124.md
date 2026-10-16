@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/slack_proxy.py"
+source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "AsyncMock"
-location: "L69"
+community: "A2APolicyEngine"
+location: "L437"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/A2APolicyEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[SlackAPIProxy_1]] - `method` [EXTRACTED]
+- [[HermesA2AForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

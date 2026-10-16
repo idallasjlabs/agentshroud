@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[dot-get_or_create()]] - `calls` [EXTRACTED]
 - [[dot-process_tool_call()]] - `calls` [EXTRACTED]
-- [[dot-send_request()_1]] - `calls` [EXTRACTED]
+- [[dot-send_request()]] - `calls` [EXTRACTED]
 - [[Actually execute the tool call against the MCP server.]] - `rationale_for` [EXTRACTED]
-- [[Any_64]] - `references` [EXTRACTED]
-- [[MCPProxy_1]] - `method` [EXTRACTED]
+- [[Any_80]] - `references` [EXTRACTED]
+- [[MCPProxy]] - `method` [EXTRACTED]
 - [[MCPToolCall_1]] - `references` [EXTRACTED]
 - [[MCPToolResult]] - `references` [EXTRACTED]
 

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L58"
+community: "dashboard_endpoints.py"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/dashboard_endpointspy
 ---
 
 # .__init__()
 
 ## Connections
-- [[ToolResultPIIConfig]] - `references` [EXTRACTED]
-- [[ToolResultSanitizer]] - `method` [EXTRACTED]
+- [[AlertStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_citation_verifier.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "FetchOutcome"
-location: "L319"
+community: "AsyncMock"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/AsyncMock
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeStreamResponse_1]] - `method` [EXTRACTED]
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[FakeProcess]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

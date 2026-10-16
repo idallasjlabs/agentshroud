@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/proxy/forwarder.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L57"
+community: "TestToolChainAnalyzer"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/TestToolChainAnalyzer
 ---
 
 # .__init__()
 
 ## Connections
-- [[ForwarderConfig]] - `references` [EXTRACTED]
-- [[HTTPForwarder]] - `method` [EXTRACTED]
+- [[dot-_load_custom_patterns()]] - `calls` [EXTRACTED]
+- [[dot-_load_default_patterns()]] - `calls` [EXTRACTED]
+- [[Any_37]] - `references` [EXTRACTED]
+- [[Initialize the tool chain analyzer.          Args             config Configura]] - `rationale_for` [EXTRACTED]
+- [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/web_content_scanner.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "WebContentScanner"
-location: "L59"
+community: "ProxyAction"
+location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebContentScanner
+  - community/ProxyAction
 ---
 
 # .flagged()
 
 ## Connections
-- [[ScanResult]] - `method` [EXTRACTED]
+- [[WebProxyResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebContentScanner
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

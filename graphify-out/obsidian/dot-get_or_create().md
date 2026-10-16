@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCPPermissionManager"
+community: ".process_tool_call"
 location: "L204"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/process_tool_call
 ---
 
 # .get_or_create()
@@ -19,4 +19,4 @@ tags:
 - [[MCPServerConfig_1]] - `references` [EXTRACTED]
 - [[StdioConnection]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/process_tool_call

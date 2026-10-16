@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/xml_leak_filter.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L50"
+community: "KeyVault"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/KeyVault
 ---
 
 # .__init__()
 
 ## Connections
-- [[Initialize the filter with predefined patterns.]] - `rationale_for` [EXTRACTED]
-- [[XMLLeakFilter]] - `method` [EXTRACTED]
+- [[dot-_compile_patterns()]] - `calls` [EXTRACTED]
+- [[LogSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/KeyVault

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_citation_verifier.py"
+source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "api.py"
-location: "L33"
+community: "test_cli_coverage.py"
+location: "L634"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/test_cli_coveragepy
 ---
 
 # .__call__()
 
 ## Connections
-- [[FetchOutcome]] - `references` [EXTRACTED]
-- [[_FakeFetcher_1]] - `method` [EXTRACTED]
+- [[_FakeConnect]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy

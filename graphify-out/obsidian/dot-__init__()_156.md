@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/web/api.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "api.py"
-location: "L941"
+community: "HTTPConnectProxy"
+location: "L480"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/HTTPConnectProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[SkillGuardBlocked]] - `method` [EXTRACTED]
+- [[_SocketTransportWriter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

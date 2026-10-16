@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/outbound_filter.py"
+source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "AuditChain"
-location: "L73"
+community: "SecureBrowser"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/SecureBrowser
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_compile_patterns()]] - `calls` [EXTRACTED]
-- [[Any_14]] - `references` [EXTRACTED]
-- [[InfoCategory]] - `calls` [EXTRACTED]
-- [[Initialize the outbound information filter.          Args             config C]] - `rationale_for` [EXTRACTED]
-- [[OutboundInfoFilter]] - `method` [EXTRACTED]
+- [[dot-_load_config()_2]] - `calls` [EXTRACTED]
+- [[SecureBrowser_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

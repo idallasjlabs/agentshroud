@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "_FakeUpstreamWS"
-location: "L745"
+community: "KeyRotationManager"
+location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeUpstreamWS
+  - community/KeyRotationManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeWSConnect]] - `method` [EXTRACTED]
+- [[Initialize the key rotation manager.]] - `rationale_for` [EXTRACTED]
+- [[KeyRotationConfig]] - `references` [EXTRACTED]
+- [[KeyRotationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeUpstreamWS
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

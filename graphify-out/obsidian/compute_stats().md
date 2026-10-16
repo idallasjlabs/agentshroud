@@ -12,7 +12,7 @@ tags:
 # compute_stats()
 
 ## Connections
-- [[Any_33]] - `references` [EXTRACTED]
+- [[Any_39]] - `references` [EXTRACTED]
 - [[main()_11]] - `calls` [EXTRACTED]
 - [[migrate-cve-registry-ghsa.py]] - `contains` [EXTRACTED]
 

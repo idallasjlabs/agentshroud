@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "PIIConfig"
+community: "ToolResultSanitizer"
 location: "L120"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ToolResultSanitizer
 ---
 
 # ._extract_scannable_content()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-_extract_dict_content()]] - `calls` [EXTRACTED]
 - [[dot-sanitize_tool_result()]] - `calls` [EXTRACTED]
-- [[Any_28]] - `references` [EXTRACTED]
+- [[Any_50]] - `references` [EXTRACTED]
 - [[Extract text content from various tool result formats for PII scanning]] - `rationale_for` [EXTRACTED]
 - [[ToolResultSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

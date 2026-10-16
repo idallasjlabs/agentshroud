@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/security/agent_isolation.py"
+source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "AgentRegistry"
-location: "L79"
+community: "RBACConfig"
+location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/RBACConfig
 ---
 
 # .from_dict()
 
 ## Connections
-- [[dot-register()]] - `calls` [EXTRACTED]
-- [[AgentRegistry]] - `method` [EXTRACTED]
-- [[ContainerConfig_1]] - `calls` [EXTRACTED]
-- [[Deserialize registry from dict.]] - `rationale_for` [EXTRACTED]
+- [[dot-default()]] - `calls` [EXTRACTED]
+- [[Parse from a YAMLdict representation.          Example YAML             privac]] - `rationale_for` [EXTRACTED]
+- [[PrivacyPolicy]] - `method` [EXTRACTED]
+- [[ServicePolicy]] - `calls` [EXTRACTED]
 - [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

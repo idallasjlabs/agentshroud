@@ -12,7 +12,7 @@ tags:
 # ._register_default_schema()
 
 ## Connections
-- [[dot-__init__()_101]] - `calls` [EXTRACTED]
+- [[dot-__init__()_96]] - `calls` [EXTRACTED]
 - [[OutputSchemaEnforcer]] - `method` [EXTRACTED]
 - [[Register the built-in default schema.]] - `rationale_for` [EXTRACTED]
 - [[SchemaRule]] - `calls` [EXTRACTED]

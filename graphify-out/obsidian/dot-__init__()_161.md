@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/log_sanitizer.py"
+source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "KeyVault"
-location: "L20"
+community: "DNSForwarderProtocol"
+location: "L163"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/DNSForwarderProtocol
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_compile_patterns()_1]] - `calls` [EXTRACTED]
-- [[LogSanitizer]] - `method` [EXTRACTED]
+- [[DNSForwarderProtocol]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "PipelineAction"
+community: "AuditChain"
 location: "L302"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/AuditChain
 ---
 
 # .entries()
@@ -15,4 +15,4 @@ tags:
 - [[AuditChain]] - `method` [EXTRACTED]
 - [[AuditChainEntry]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/AuditChain

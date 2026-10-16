@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-can_enter_credentials()]] - `calls` [EXTRACTED]
 - [[BrowserSecurityGuard]] - `method` [EXTRACTED]
-- [[ThreatLevel_1]] - `references` [EXTRACTED]
+- [[ThreatLevel]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ConsentFramework

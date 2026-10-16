@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/security/delegation.py"
+source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "DelegationManager"
-location: "L103"
+community: "ProgressiveLockdown"
+location: "L398"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/ProgressiveLockdown
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load()]] - `calls` [EXTRACTED]
-- [[DelegationManager_1]] - `method` [EXTRACTED]
+- [[ProgressiveLockdown]] - `calls` [EXTRACTED]
+- [[RBACConfig_4]] - `calls` [EXTRACTED]
+- [[RateLimiter_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[load_paused_collaborator_ids()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DelegationManager
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

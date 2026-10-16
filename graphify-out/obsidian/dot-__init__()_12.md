@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/security/encrypted_store.py"
+source_file: "gateway/security/env_guard.py"
 type: "code"
 community: "AlertDispatcher"
-location: "L61"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,8 +12,6 @@ tags:
 # .__init__()
 
 ## Connections
-- [[dot-_resolve_secret()]] - `calls` [EXTRACTED]
-- [[EncryptedStore]] - `method` [EXTRACTED]
-- [[Initialize the encrypted store.          Args             master_secret The ma]] - `rationale_for` [EXTRACTED]
+- [[EnvironmentGuard]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher

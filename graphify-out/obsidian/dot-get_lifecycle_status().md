@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-get_recent_actions()]] - `calls` [EXTRACTED]
 - [[dot-get_recent_threats()]] - `calls` [EXTRACTED]
-- [[Any_2]] - `references` [EXTRACTED]
+- [[Any_53]] - `references` [EXTRACTED]
 - [[Get current lifecycle management status.]] - `rationale_for` [EXTRACTED]
 - [[MemoryLifecycleManager]] - `method` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "TestCollaboratorPersistence"
+community: "Action"
 location: "L575"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCollaboratorPersistence
+  - community/Action
 ---
 
 # ._store_path()
@@ -33,4 +33,4 @@ tags:
 - [[dot-test_unpause_returns_false_on_io_error()]] - `calls` [EXTRACTED]
 - [[TestCollaboratorPersistence]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPersistence
+#graphify/code #graphify/EXTRACTED #community/Action

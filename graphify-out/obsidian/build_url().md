@@ -12,7 +12,7 @@ tags:
 # build_url()
 
 ## Connections
-- [[dot-get()_3]] - `calls` [EXTRACTED]
+- [[dot-get()_2]] - `calls` [EXTRACTED]
 - [[dot-post()_1]] - `calls` [EXTRACTED]
 - [[GatewayClient]] - `calls` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]

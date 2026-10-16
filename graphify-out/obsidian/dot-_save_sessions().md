@@ -15,7 +15,7 @@ tags:
 - [[dot-add_conversation_message()]] - `calls` [EXTRACTED]
 - [[dot-cleanup_old_sessions()_1]] - `calls` [EXTRACTED]
 - [[dot-get_or_create_session()]] - `calls` [EXTRACTED]
-- [[dot-to_dict()_11]] - `calls` [EXTRACTED]
+- [[dot-to_dict()_3]] - `calls` [EXTRACTED]
 - [[dot-update_user_trust_level()]] - `calls` [EXTRACTED]
 - [[Atomically persist current sessions to the metadata file.          Writes are se]] - `rationale_for` [EXTRACTED]
 - [[UserSessionManager]] - `method` [EXTRACTED]

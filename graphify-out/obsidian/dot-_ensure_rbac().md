@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "rbac_config.py"
+community: "_FakeRBAC"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/rbac_configpy
+  - community/_FakeRBAC
 ---
 
 # ._ensure_rbac()
@@ -17,4 +17,4 @@ tags:
 - [[ContributorManager]] - `method` [EXTRACTED]
 - [[RBACConfig_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/rbac_configpy
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

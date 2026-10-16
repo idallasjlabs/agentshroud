@@ -17,7 +17,7 @@ tags:
 - [[AWS Cloud Management & FinOps_2]] - `contains` [EXTRACTED]
 - [[AgentShroud Blue Team Security Auditor]] - `contains` [EXTRACTED]
 - [[AgentShroud Red Team Adversarial Tester]] - `contains` [EXTRACTED]
-- [[Apollo — Audio Systems Producer_4]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_2]] - `contains` [EXTRACTED]
 - [[Atlas — Curriculum Architect]] - `contains` [EXTRACTED]
 - [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
 - [[Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
@@ -76,7 +76,7 @@ tags:
 - [[Test-Driven Development README]] - `contains` [EXTRACTED]
 - [[Validate contrast ratio]] - `contains` [EXTRACTED]
 - [[Vulcan — Subject Matter Auditor_1]] - `contains` [EXTRACTED]
-- [[iCloud Services_2]] - `contains` [EXTRACTED]
+- [[iCloud Services_4]] - `contains` [EXTRACTED]
 - [[macOS System Administrator (MAC)]] - `contains` [EXTRACTED]
 - [[operationsincident-response]] - `contains` [EXTRACTED]
 

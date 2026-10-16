@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_differential_pii_detector.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "DifferentialPIIDetector"
-location: "L210"
+community: "AuditChain"
+location: "L348"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/AuditChain
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeRecognizerResult]] - `method` [EXTRACTED]
+- [[AuditChain]] - `calls` [EXTRACTED]
+- [[RBACConfig_4]] - `calls` [EXTRACTED]
+- [[SecurityPipeline_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/AuditChain

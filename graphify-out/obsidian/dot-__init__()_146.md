@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "test_dashboard_endpoints.py"
-location: "L142"
+community: "test_forward_stream.py"
+location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/test_forward_streampy
 ---
 
 # .__init__()
 
 ## Connections
-- [[LogBuffer]] - `method` [EXTRACTED]
+- [[_PassthroughPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy

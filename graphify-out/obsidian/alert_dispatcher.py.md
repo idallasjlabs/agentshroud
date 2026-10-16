@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "AlertDispatcher"
+community: "parse_clamscan_output"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/parse_clamscan_output
 ---
 
 # alert_dispatcher.py
@@ -18,9 +18,9 @@ tags:
 - [[clamav_scanner.py]] - `references` [EXTRACTED]
 - [[dns_filter.py_2]] - `references` [EXTRACTED]
 - [[drift_detector.py]] - `references` [EXTRACTED]
-- [[egress_filter.py_1]] - `references` [EXTRACTED]
+- [[egress_filter.py]] - `references` [EXTRACTED]
 - [[falco-rules]] - `references` [INFERRED]
-- [[health_report.py_2]] - `semantically_similar_to` [INFERRED]
+- [[health_report.py]] - `semantically_similar_to` [INFERRED]
 - [[wazuh-ossec]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

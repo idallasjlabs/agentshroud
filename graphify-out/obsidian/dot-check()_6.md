@@ -1,21 +1,22 @@
 ---
-source_file: "gateway/security/config_integrity.py"
+source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: ".check"
-location: "L85"
+community: "DNSFilterConfig"
+location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check
+  - community/DNSFilterConfig
 ---
 
 # .check()
 
 ## Connections
-- [[dot-_hash_file()]] - `calls` [EXTRACTED]
-- [[dot-_load_baseline()]] - `calls` [EXTRACTED]
-- [[dot-_save_baseline()]] - `calls` [EXTRACTED]
-- [[Compare current file hashes against baseline.          Returns a list of change]] - `rationale_for` [EXTRACTED]
-- [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
+- [[dot-_cleanup_rate_window()]] - `calls` [EXTRACTED]
+- [[dot-_detect_tunneling()]] - `calls` [EXTRACTED]
+- [[dot-_domain_in_allowlist()]] - `calls` [EXTRACTED]
+- [[DNSFilter]] - `method` [EXTRACTED]
+- [[DNSQuery_1]] - `calls` [EXTRACTED]
+- [[DNSVerdict]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_observatory_mode.py"
+source_file: "gateway/tests/test_api_contract_fuzz.py"
 type: "code"
-community: "test_observatory_mode.py"
-location: "L72"
+community: "test_api_contract_fuzz.py"
+location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_observatory_modepy
+  - community/test_api_contract_fuzzpy
 ---
 
 # client()
 
 ## Connections
-- [[_make_app()]] - `calls` [EXTRACTED]
-- [[test_observatory_mode.py]] - `contains` [EXTRACTED]
+- [[test_api_contract_fuzz.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_observatory_modepy
+#graphify/code #graphify/EXTRACTED #community/test_api_contract_fuzzpy

@@ -1,23 +1,19 @@
 ---
-source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
+source_file: "gateway/tests/test_e2e.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L92"
+community: "ForwardRequest"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/ForwardRequest
 ---
 
 # client()
 
 ## Connections
-- [[ApprovalQueue]] - `calls` [EXTRACTED]
-- [[DataLedger]] - `calls` [EXTRACTED]
-- [[MultiAgentRouter]] - `calls` [EXTRACTED]
-- [[PIISanitizer_2]] - `calls` [EXTRACTED]
-- [[SSHProxy_1]] - `calls` [EXTRACTED]
-- [[Set up app state and provide TestClient._1]] - `rationale_for` [EXTRACTED]
-- [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
+- [[AsyncClient]] - `calls` [INFERRED]
+- [[Fully initialized async client with lifespan.]] - `rationale_for` [EXTRACTED]
+- [[test_e2e.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/ForwardRequest

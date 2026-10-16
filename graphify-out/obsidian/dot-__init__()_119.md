@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_jira_weekly_review.py"
+source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "test_jira_weekly_review.py"
-location: "L195"
+community: "MCPInspector"
+location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_jira_weekly_reviewpy
+  - community/MCPInspector
 ---
 
 # .__init__()
 
 ## Connections
-- [[_MockTransport_1]] - `method` [EXTRACTED]
+- [[MCPInspector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_jira_weekly_reviewpy
+#graphify/code #graphify/EXTRACTED #community/MCPInspector

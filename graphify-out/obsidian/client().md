@@ -1,18 +1,23 @@
 ---
-source_file: "gateway/tests/test_chat_completions_alias.py"
+source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "test_claude_via_openai_path.py"
-location: "L27"
+community: "ApprovalQueueConfig"
+location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_claude_via_openai_pathpy
+  - community/ApprovalQueueConfig
 ---
 
 # client()
 
 ## Connections
-- [[AsyncMock]] - `calls` [INFERRED]
-- [[test_chat_completions_alias.py]] - `contains` [EXTRACTED]
+- [[ApprovalQueue]] - `calls` [EXTRACTED]
+- [[DataLedger]] - `calls` [EXTRACTED]
+- [[MultiAgentRouter]] - `calls` [EXTRACTED]
+- [[PIISanitizer_2]] - `calls` [EXTRACTED]
+- [[SSHProxy]] - `calls` [EXTRACTED]
+- [[Set up app state and provide TestClient.]] - `rationale_for` [EXTRACTED]
+- [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_claude_via_openai_pathpy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

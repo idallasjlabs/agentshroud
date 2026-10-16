@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh"
+source_file: "tests/startup_smoke/test_openclaw_photo.sh"
 type: "code"
-community: "test_colima_and_sdk_patch_fallback_resolution.sh"
-location: "L34"
+community: "test_openclaw_photo.sh"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_colima_and_sdk_patch_fallback_resolutionsh
+  - community/test_openclaw_photosh
 ---
 
 # check()
 
 ## Connections
-- [[test_colima_and_sdk_patch_fallback_resolution.sh]] - `defines` [EXTRACTED]
-- [[test_colima_and_sdk_patch_fallback_resolution.sh script]] - `calls` [EXTRACTED]
+- [[test_openclaw_photo.sh]] - `defines` [EXTRACTED]
+- [[test_openclaw_photo.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_colima_and_sdk_patch_fallback_resolutionsh
+#graphify/code #graphify/EXTRACTED #community/test_openclaw_photosh

@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_openclaw_readiness_retry.sh"
+source_file: "tests/startup_smoke/test_bot_boot_live.sh"
 type: "code"
-community: "smoke.sh Startup Smoke Runner"
-location: "L21"
+community: "test_bot_boot_live.sh"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/smokesh_Startup_Smoke_Runner
+  - community/test_bot_boot_livesh
 ---
 
 # check()
 
 ## Connections
-- [[test_openclaw_readiness_retry.sh]] - `defines` [EXTRACTED]
-- [[test_openclaw_readiness_retry.sh script]] - `calls` [EXTRACTED]
+- [[test_bot_boot_live.sh]] - `defines` [EXTRACTED]
+- [[test_bot_boot_live.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/smokesh_Startup_Smoke_Runner
+#graphify/code #graphify/EXTRACTED #community/test_bot_boot_livesh

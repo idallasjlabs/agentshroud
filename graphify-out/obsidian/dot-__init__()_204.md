@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/privacy_policy.py"
+source_file: "gateway/security/report_store.py"
 type: "code"
-community: "PrivacyPolicyEnforcer"
-location: "L181"
+community: "ReportStore"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/ReportStore
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-default()]] - `calls` [EXTRACTED]
-- [[PrivacyPolicy]] - `references` [EXTRACTED]
-- [[PrivacyPolicyEnforcer]] - `method` [EXTRACTED]
+- [[ReportStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/EXTRACTED #community/ReportStore

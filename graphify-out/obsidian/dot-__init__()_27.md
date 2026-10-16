@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_http_proxy.py"
+source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "code"
-community: "WebProxy"
-location: "L91"
+community: "CronStateMonitor"
+location: "L193"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/CronStateMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[_MockWriter]] - `method` [EXTRACTED]
+- [[_DedupDispatchFake]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

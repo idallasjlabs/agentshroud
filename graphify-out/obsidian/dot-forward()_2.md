@@ -12,7 +12,7 @@ tags:
 # .forward()
 
 ## Connections
-- [[_StubForwarder_1]] - `method` [EXTRACTED]
+- [[_StubForwarder]] - `method` [EXTRACTED]
 - [[test_forwarder_error_handling()]] - `calls` [EXTRACTED]
 - [[test_forwarder_mock()]] - `calls` [EXTRACTED]
 

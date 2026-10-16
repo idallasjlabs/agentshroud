@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[A2APeerTestDouble]] - `method` [EXTRACTED]
-- [[Request_8]] - `references` [EXTRACTED]
-- [[Response]] - `references` [EXTRACTED]
+- [[Request_5]] - `references` [EXTRACTED]
+- [[Response_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

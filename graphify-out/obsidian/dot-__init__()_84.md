@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/ingest_api/sanitizer.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "PIIConfig"
-location: "L32"
+community: "test_soc_router_coverage.py"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/test_soc_router_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_presidio()]] - `calls` [EXTRACTED]
-- [[Initialize sanitizer          Args             config PII configuration from a]] - `rationale_for` [EXTRACTED]
-- [[PIIConfig]] - `references` [EXTRACTED]
-- [[PIISanitizer_2]] - `method` [EXTRACTED]
+- [[FakeAuditStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

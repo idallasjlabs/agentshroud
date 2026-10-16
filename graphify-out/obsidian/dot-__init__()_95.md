@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L66"
+community: "test_e2e_proxy.py"
+location: "L424"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/test_e2e_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_Svc]] - `method` [EXTRACTED]
+- [[_PassInboundPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

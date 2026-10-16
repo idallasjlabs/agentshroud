@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "OutboundInfoFilter"
+community: "AuditChain"
 location: "L685"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutboundInfoFilter
+  - community/AuditChain
 ---
 
 # ._check_unicode_tricks()
 
 ## Connections
-- [[dot-scan()_4]] - `calls` [EXTRACTED]
+- [[dot-scan()_3]] - `calls` [EXTRACTED]
 - [[Detect unicode obfuscation tricks.]] - `rationale_for` [EXTRACTED]
-- [[PromptGuard_1]] - `method` [EXTRACTED]
+- [[PromptGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/AuditChain

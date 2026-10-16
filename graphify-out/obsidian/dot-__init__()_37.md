@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/ingest_api/router.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "AgentTarget"
-location: "L52"
+community: "ProxyAction"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/ProxyAction
 ---
 
 # .__init__()
 
 ## Connections
-- [[AgentTarget]] - `calls` [EXTRACTED]
-- [[Initialize router          Args             config Router configuration]] - `rationale_for` [EXTRACTED]
-- [[MultiAgentRouter]] - `method` [EXTRACTED]
-- [[RouterConfig]] - `references` [EXTRACTED]
+- [[MockEgressEvent]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/ProxyAction

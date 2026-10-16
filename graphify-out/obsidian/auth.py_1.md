@@ -1,27 +1,26 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "auth.py"
-location: "L10"
+community: "test_security.py"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/authpy
+  - community/test_securitypy
 ---
 
-# auth.py
+# auth.py.md
 
 ## Connections
-- [[Config Keys Read_6]] - `contains` [EXTRACTED]
-- [[Environment Variables_16]] - `contains` [EXTRACTED]
-- [[Function Details_42]] - `contains` [EXTRACTED]
-- [[HTTP Responses]] - `contains` [EXTRACTED]
-- [[Imports From  Exports To_6]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_44]] - `contains` [EXTRACTED]
-- [[Known Issues  Notes_7]] - `contains` [EXTRACTED]
-- [[Purpose_168]] - `contains` [EXTRACTED]
-- [[Related_48]] - `contains` [EXTRACTED]
-- [[Responsibilities_50]] - `contains` [EXTRACTED]
+- [[Auth Errors]] - `references` [INFERRED]
+- [[GatewayConfig_3]] - `references` [EXTRACTED]
+- [[RateLimiter_1]] - `references` [EXTRACTED]
 - [[auth.py]] - `contains` [EXTRACTED]
+- [[create_auth_dependency()]] - `references` [EXTRACTED]
+- [[get_auth_dependency()]] - `references` [EXTRACTED]
+- [[main.py]] - `references` [EXTRACTED]
+- [[python-jose]] - `references` [INFERRED]
+- [[rate_limiter (module-level instance)]] - `references` [EXTRACTED]
+- [[verify_token()]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/authpy
+#graphify/document #graphify/EXTRACTED #community/test_securitypy

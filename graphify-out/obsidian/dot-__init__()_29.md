@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tools/port_manager.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "PortManager"
-location: "L88"
+community: "TestEgressApprovalQueue"
+location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/TestEgressApprovalQueue
 ---
 
 # .__init__()
 
 ## Connections
-- [[PortManager]] - `method` [EXTRACTED]
+- [[dot-_load_rules()]] - `calls` [EXTRACTED]
+- [[EgressApprovalQueue]] - `method` [EXTRACTED]
+- [[Initialize the approval queue.          Args             rules_file Path to pe]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PortManager
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

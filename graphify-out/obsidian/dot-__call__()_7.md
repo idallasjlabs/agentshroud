@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_jira_weekly_review.py"
 type: "code"
-community: "AsyncMock"
-location: "L8618"
+community: "test_jira_weekly_review.py"
+location: "L203"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/test_jira_weekly_reviewpy
 ---
 
 # .__call__()
 
 ## Connections
-- [[AsyncMock]] - `method` [EXTRACTED]
+- [[_MockTransport_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/test_jira_weekly_reviewpy

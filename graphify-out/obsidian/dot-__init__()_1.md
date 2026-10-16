@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_llm_proxy_local_parity.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "_FakeStreamResponse"
-location: "L1117"
+community: "WebContentScanner"
+location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeStreamResponse
+  - community/WebContentScanner
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeStreamResponse]] - `method` [EXTRACTED]
+- [[RateLimiter]] - `calls` [EXTRACTED]
+- [[URLAnalyzer]] - `references` [EXTRACTED]
+- [[WebContentScanner]] - `references` [EXTRACTED]
+- [[WebProxy]] - `method` [EXTRACTED]
+- [[WebProxyConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeStreamResponse
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

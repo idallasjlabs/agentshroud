@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-get_private_redaction_events()]] - `calls` [EXTRACTED]
 - [[Aggregate recent private-data redaction events.]] - `rationale_for` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `method` [EXTRACTED]
+- [[MCPPermissionManager]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

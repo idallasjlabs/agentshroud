@@ -12,7 +12,7 @@ tags:
 # ._hash_content()
 
 ## Connections
-- [[dot-record()_2]] - `calls` [EXTRACTED]
+- [[dot-record()_1]] - `calls` [EXTRACTED]
 - [[DataLedger]] - `method` [EXTRACTED]
 - [[SHA-256 hash of content string          Args             content Text to hash]] - `rationale_for` [EXTRACTED]
 

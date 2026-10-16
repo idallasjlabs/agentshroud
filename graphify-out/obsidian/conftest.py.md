@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "DataLedger"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/DataLedger
 ---
 
 # conftest.py
 
 ## Connections
-- [[ApprovalQueueConfig_1]] - `imports` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
 - [[DataLedger]] - `imports` [EXTRACTED]
-- [[GatewayConfig_4]] - `imports` [EXTRACTED]
-- [[LedgerConfig_1]] - `imports` [EXTRACTED]
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[GatewayConfig_3]] - `imports` [EXTRACTED]
+- [[LedgerConfig]] - `imports` [EXTRACTED]
+- [[PIIConfig_1]] - `imports` [EXTRACTED]
 - [[PIISanitizer_2]] - `imports` [EXTRACTED]
-- [[RouterConfig_1]] - `imports` [EXTRACTED]
+- [[RouterConfig]] - `imports` [EXTRACTED]
 - [[_ensure_agentshroud_config_resolvable()]] - `contains` [EXTRACTED]
-- [[auth_headers()_1]] - `contains` [EXTRACTED]
+- [[auth_headers()_2]] - `contains` [EXTRACTED]
 - [[resolve_config_path()]] - `imports` [EXTRACTED]
-- [[sanitizer()_4]] - `contains` [EXTRACTED]
+- [[sanitizer()_3]] - `contains` [EXTRACTED]
 - [[test_client()]] - `contains` [EXTRACTED]
 - [[test_config()]] - `contains` [EXTRACTED]
 - [[test_ledger()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/DataLedger

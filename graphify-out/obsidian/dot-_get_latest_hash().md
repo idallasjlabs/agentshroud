@@ -12,7 +12,7 @@ tags:
 # ._get_latest_hash()
 
 ## Connections
-- [[dot-log_event()_2]] - `calls` [EXTRACTED]
+- [[dot-log_event()_1]] - `calls` [EXTRACTED]
 - [[AuditStore_1]] - `method` [EXTRACTED]
 - [[Get the entry_hash of the most recent event for chain continuation.]] - `rationale_for` [EXTRACTED]
 
