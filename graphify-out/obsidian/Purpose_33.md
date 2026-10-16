@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tdd/README.md"
+source_file: "docker/config/openclaw/skills/i-aws/README.md"
 type: "document"
-community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+community: "AWS Cloud Management & FinOps"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR
+  - community/AWS_Cloud_Management__FinOps
 ---
 
 # Purpose
 
 ## Connections
-- [[Test-Driven Development README]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps

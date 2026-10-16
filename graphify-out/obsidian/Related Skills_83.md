@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-aws/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "browser-fetch.js"
-location: "L14"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+location: "L161"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser-fetchjs
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Related Skills
 
 ## Connections
-- [[AWS Cloud Management & FinOps_2]] - `contains` [EXTRACTED]
+- [[Skill MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser-fetchjs
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "SlackSocketClient"
+community: "ResourceGuard"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SlackSocketClient
+  - community/ResourceGuard
 ---
 
 # Raised when a local-model call is rejected because estimated VRAM usage     woul
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[VRAMHeadroomError]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SlackSocketClient
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

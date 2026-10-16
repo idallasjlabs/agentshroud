@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-aws/README.md"
+source_file: ".agents/skills/i-mc/README.md"
 type: "document"
-community: "browser-fetch.js"
+community: "GSDE&G Development Master Checklist Skill"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser-fetchjs
+  - community/GSDEG_Development_Master_Checklist_Skill
 ---
 
 # Purpose
 
 ## Connections
-- [[AWS Cloud Management & FinOps_2]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)_1]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser-fetchjs
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_Skill

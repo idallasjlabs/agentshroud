@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "TestSessionIsolation"
-location: "L6"
+community: "encrypted_store.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestSessionIsolation
+  - community/encrypted_storepy
 ---
 
 # Purpose
 
 ## Connections
-- [[Socrates — Dialogue Architect_3]] - `contains` [EXTRACTED]
+- [[encrypted_store.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestSessionIsolation
+#graphify/document #graphify/EXTRACTED #community/encrypted_storepy

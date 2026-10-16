@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "WebProxy"
+community: "Added"
 location: "L919"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/Added
 ---
 
 # P2: Credential Isolation (PR #25)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Added]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/WebProxy
+#graphify/document #graphify/EXTRACTED #community/Added

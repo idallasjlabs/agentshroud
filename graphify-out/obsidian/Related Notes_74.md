@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Startup Flow Diagram.md"
+source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
 type: "document"
-community: "Brand Identity"
-location: "L83"
+community: "ssh_proxy.py"
+location: "L65"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Brand_Identity
+  - community/ssh_proxypy
 ---
 
 # Related Notes
 
 ## Connections
-- [[Startup Flow Diagram_1]] - `contains` [EXTRACTED]
+- [[ssh_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Brand_Identity
+#graphify/document #graphify/EXTRACTED #community/ssh_proxypy

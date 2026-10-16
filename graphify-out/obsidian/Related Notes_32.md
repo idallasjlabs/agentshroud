@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/GATEWAY_URL.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
 type: "document"
-community: "Browser Extension"
-location: "L42"
+community: "Gateway Container Startup Failures"
+location: "L161"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Extension
+  - community/Gateway_Container_Startup_Failures
 ---
 
 # Related Notes
 
 ## Connections
-- [[GATEWAY_URL_1]] - `contains` [EXTRACTED]
+- [[Startup Errors]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Extension
+#graphify/document #graphify/EXTRACTED #community/Gateway_Container_Startup_Failures

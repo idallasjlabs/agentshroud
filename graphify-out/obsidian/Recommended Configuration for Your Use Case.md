@@ -1,19 +1,19 @@
 ---
 source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "document"
-community: "TestProductionCompose"
+community: "What Does OpenClaw Actually Need to Write?"
 location: "L485"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestProductionCompose
+  - community/What_Does_OpenClaw_Actually_Need_to_Write
 ---
 
 # Recommended Configuration for Your Use Case
 
 ## Connections
-- [[Configuration_3]] - `contains` [EXTRACTED]
+- [[Configuration_2]] - `contains` [EXTRACTED]
 - [[Goals]] - `contains` [EXTRACTED]
 - [[What Does OpenClaw Actually Need to Write]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestProductionCompose
+#graphify/document #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write

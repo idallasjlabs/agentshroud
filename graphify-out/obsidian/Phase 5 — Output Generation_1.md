@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
 type: "document"
-community: "encrypted_store.py"
+community: "Discovery Strategy"
 location: "L287"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/encrypted_storepy
+  - community/Discovery_Strategy
 ---
 
 # Phase 5 — Output Generation
@@ -16,4 +16,4 @@ tags:
 - [[B. `mac_app_catalog.md` — Human-readable catalog_1]] - `contains` [EXTRACTED]
 - [[Discovery Strategy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/encrypted_storepy
+#graphify/document #graphify/EXTRACTED #community/Discovery_Strategy

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
 type: "document"
-community: "browser_security.py"
-location: "L107"
+community: "http_proxy.py"
+location: "L204"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser_securitypy
+  - community/http_proxypy
 ---
 
 # Related
 
 ## Connections
-- [[ledger.py_2]] - `contains` [EXTRACTED]
+- [[http_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser_securitypy
+#graphify/document #graphify/EXTRACTED #community/http_proxypy

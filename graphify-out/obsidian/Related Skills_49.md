@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-data/README.md"
+source_file: "docker/config/openclaw/skills/i-tw/README.md"
 type: "document"
-community: "SlackAPIProxy"
+community: "Technical Writer (TW)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/Technical_Writer_TW
 ---
 
 # Related Skills
 
 ## Connections
-- [[Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
+- [[Technical Writer (TW)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/Technical_Writer_TW

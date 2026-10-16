@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_gateway_relay.py"
 type: "rationale"
-community: "get_engine()"
+community: "TelegramGatewayRelay"
 location: "L47"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/get_engine
+  - community/TelegramGatewayRelay
 ---
 
 # Relay Telegram messages through the gateway control plane.      This enables con
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TelegramGatewayRelay]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/get_engine
+#graphify/rationale #graphify/EXTRACTED #community/TelegramGatewayRelay

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
+source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "ModeRequest"
-location: "L137"
+community: "wazuh-ossec.conf"
+location: "L75"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/wazuh-ossecconf
 ---
 
 # Related Notes
 
 ## Connections
-- [[Dependency Graph_1]] - `contains` [EXTRACTED]
+- [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ModeRequest
+#graphify/document #graphify/EXTRACTED #community/wazuh-ossecconf

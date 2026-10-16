@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-daedalus/SKILL.md"
+source_file: "docker/config/hermes/skills/i-oracle/SKILL.md"
 type: "document"
-community: "ADR-003: Two-Network Container Isolation"
-location: "L78"
+community: "Oracle — Feedback Analyst"
+location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-003_Two-Network_Container_Isolation
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Daedalus — Concept Illustrator_1]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-003_Two-Network_Container_Isolation
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

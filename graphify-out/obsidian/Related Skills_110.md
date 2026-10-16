@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sad/README.md"
+source_file: "docker/config/openclaw/skills/i-hermes/README.md"
 type: "document"
-community: "BaseModel"
-location: "L12"
+community: "openclaw/skills/i-cr/SKILL.md"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BaseModel
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Related Skills
 
 ## Connections
-- [[System Audit Documentation_2]] - `contains` [EXTRACTED]
+- [[Hermes — Podcast Production Orchestrator_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BaseModel
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

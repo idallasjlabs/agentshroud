@@ -1,18 +1,21 @@
 ---
-source_file: "docs/architecture/WORKSPACE_USAGE.md"
+source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "OpenClaw Workspace Usage Guide"
-location: "L17"
+community: "OpenClaw Bot SSH Configuration"
+location: "L375"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Workspace_Usage_Guide
+  - community/OpenClaw_Bot_SSH_Configuration
 ---
 
 # Quick Reference
 
 ## Connections
-- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
-- [[Using the Helper Script]] - `contains` [EXTRACTED]
+- [[One-Liner to Add to Pi]] - `contains` [EXTRACTED]
+- [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
+- [[Public Key (Copy-Paste Ready)]] - `contains` [EXTRACTED]
+- [[Test Connection]] - `contains` [EXTRACTED]
+- [[🔐 Credentials in 1Password]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

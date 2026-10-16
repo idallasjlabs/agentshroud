@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "TestNormalizeForSpeech"
+community: "KeyRotationManager"
 location: "L496"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestNormalizeForSpeech
+  - community/KeyRotationManager
 ---
 
 # Perform emergency rotation of a credential.
 
 ## Connections
-- [[.emergency_rotate_credential()]] - `rationale_for` [EXTRACTED]
+- [[dot-emergency_rotate_credential()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestNormalizeForSpeech
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager

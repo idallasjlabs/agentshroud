@@ -1,11 +1,11 @@
 ---
 source_file: "docs/ssh-security-review.md"
 type: "concept"
-community: "SecureBrowser Security Policies"
+community: "34 Security Modules Pipeline (P0-P3)"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/SecureBrowser_Security_Policies
+  - community/34_Security_Modules_Pipeline_P0-P3
 ---
 
 # Production Deployment Recommendations
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SSH AllowDeny List Evaluation Order]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/SecureBrowser_Security_Policies
+#graphify/concept #graphify/INFERRED #community/34_Security_Modules_Pipeline_P0-P3

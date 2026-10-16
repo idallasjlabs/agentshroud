@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/openscap.md"
+source_file: "docs/vault/03 - Configuration/falco-rules.md"
 type: "document"
-community: "AgentShroud Blue Team Security Auditor"
+community: "FalcoAlertWatcher"
 location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Blue_Team_Security_Auditor
+  - community/FalcoAlertWatcher
 ---
 
 # Related Notes
 
 ## Connections
-- [[OpenSCAP]] - `contains` [EXTRACTED]
+- [[falco-rules.yaml]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor
+#graphify/document #graphify/EXTRACTED #community/FalcoAlertWatcher

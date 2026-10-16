@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
 type: "document"
-community: "TestDashboardWSToken"
-location: "L6"
+community: "drift_detector.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestDashboardWSToken
+  - community/drift_detectorpy
 ---
 
 # Purpose
 
 ## Connections
-- [[Security Review (SEC)_2]] - `contains` [EXTRACTED]
+- [[drift_detector.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestDashboardWSToken
+#graphify/document #graphify/EXTRACTED #community/drift_detectorpy

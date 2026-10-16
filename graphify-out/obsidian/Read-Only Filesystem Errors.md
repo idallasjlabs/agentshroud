@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Container Errors.md"
 type: "document"
-community: "archive_old_events()"
+community: "First Time Setup"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/archive_old_events
+  - community/First_Time_Setup
 ---
 
 # Read-Only Filesystem Errors
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Container Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/archive_old_events
+#graphify/document #graphify/EXTRACTED #community/First_Time_Setup

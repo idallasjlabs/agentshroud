@@ -1,17 +1,17 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "rationale"
-community: "test_soc_router_coverage.py"
+community: "DifferentialPIIDetector"
 location: "line 130"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/test_soc_router_coveragepy
+  - community/DifferentialPIIDetector
 ---
 
 # PII Sanitizer Mitigation (Presidio + custom regex)
 
 ## Connections
-- [[DifferentialPIIDetector]] - `semantically_similar_to` [INFERRED]
+- [[DifferentialPIIDetector_1]] - `semantically_similar_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/test_soc_router_coveragepy
+#graphify/rationale #graphify/INFERRED #community/DifferentialPIIDetector

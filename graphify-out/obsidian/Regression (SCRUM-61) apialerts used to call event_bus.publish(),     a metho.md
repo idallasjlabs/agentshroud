@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "rationale"
-community: "test_telegram_proxy_outbound.py"
+community: "make_event"
 location: "L127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_outboundpy
+  - community/make_event
 ---
 
 # Regression (SCRUM-61): /api/alerts used to call event_bus.publish(),     a metho
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_api_alerts_endpoint_emits_bus_event()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy
+#graphify/rationale #graphify/EXTRACTED #community/make_event

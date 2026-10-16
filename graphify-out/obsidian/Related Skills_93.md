@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/README.md"
+source_file: ".agents/skills/i-apollo/README.md"
 type: "document"
-community: "security-entrypoint.sh"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/security-entrypointsh
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Related Skills
 
 ## Connections
-- [[iCloud Data Manager (ICLOUD)_2]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/security-entrypointsh
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mac/README.md"
+source_file: "docker/config/hermes/skills/i-browser/README.md"
 type: "document"
-community: "hermes/skills/i-browser/browse.js"
+community: "Browser — Secure Browser Automation"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-browser/browsejs
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Related Skills
 
 ## Connections
-- [[macOS System Administrator (MAC)]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-browser/browsejs
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

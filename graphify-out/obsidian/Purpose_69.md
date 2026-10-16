@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-socrates/README.md"
+source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
 type: "document"
-community: "ToolChainAnalyzer.analyze_tool_call"
-location: "L6"
+community: "Error Index.md"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ToolChainAnalyzeranalyze_tool_call
+  - community/Error_Indexmd
 ---
 
 # Purpose
 
 ## Connections
-- [[Socrates — Dialogue Architect_1]] - `contains` [EXTRACTED]
+- [[Presidio Analyzer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ToolChainAnalyzeranalyze_tool_call
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

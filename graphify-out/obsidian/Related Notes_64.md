@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md"
+source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
 type: "document"
-community: "test_clamav_pipeline.py"
-location: "L143"
+community: "agentshroud.yaml.md"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_clamav_pipelinepy
+  - community/agentshroudyamlmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[troubleshooting]] - `contains` [EXTRACTED]
+- [[AGENTSHROUD_CONFIG_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_clamav_pipelinepy
+#graphify/document #graphify/EXTRACTED #community/agentshroudyamlmd

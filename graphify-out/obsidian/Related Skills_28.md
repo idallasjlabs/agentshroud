@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ps/README.md"
+source_file: "docker/config/openclaw/skills/i-bs/README.md"
 type: "document"
-community: "_w()"
+community: "Branding Specialist (BS)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_w
+  - community/Branding_Specialist_BS
 ---
 
 # Related Skills
 
 ## Connections
-- [[Production Safety Checklist (SKILL)]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_w
+#graphify/document #graphify/EXTRACTED #community/Branding_Specialist_BS

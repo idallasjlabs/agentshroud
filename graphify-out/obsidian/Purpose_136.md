@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
 type: "document"
-community: "Deployment Runbook — AgentShroud"
+community: "prompt_guard.py.md"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deployment_Runbook__AgentShroud
+  - community/prompt_guardpymd
 ---
 
 # Purpose
 
 ## Connections
-- [[url_analyzer.py_2]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deployment_Runbook__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/prompt_guardpymd

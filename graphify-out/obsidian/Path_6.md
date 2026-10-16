@@ -1,17 +1,17 @@
 ---
-source_file: "tests/startup_smoke/test_wire_llm_settings.js"
+source_file: "docker/config/hermes/skills/i-browser/browse.js"
 type: "code"
-community: "browser-extension/package.json"
-location: "L35"
+community: "hermes/skills/i-browser/browse.js"
+location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser-extension/packagejson
+  - community/hermes/skills/i-browser/browsejs
 ---
 
 # path
 
 ## Connections
-- [[test_wire_llm_settings.js]] - `contains` [EXTRACTED]
+- [[hermesskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser-extension/packagejson
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-browser/browsejs

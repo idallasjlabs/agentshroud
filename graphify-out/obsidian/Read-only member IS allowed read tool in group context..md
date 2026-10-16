@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "GroupRoleResolver"
 location: "L214"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/GroupRoleResolver
 ---
 
 # Read-only member IS allowed read tool in group context.
 
 ## Connections
-- [[.test_readonly_allowed_read_in_group()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_readonly_allowed_read_in_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver

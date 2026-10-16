@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/spacy.md"
+source_file: "docs/vault/05 - Dependencies/clamav.md"
 type: "document"
-community: "quick-setup.sh script"
-location: "L45"
+community: "ClamAV"
+location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/quick-setupsh_script
+  - community/ClamAV
 ---
 
 # Related Notes
 
 ## Connections
-- [[spaCy]] - `contains` [EXTRACTED]
+- [[ClamAV_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/quick-setupsh_script
+#graphify/document #graphify/EXTRACTED #community/ClamAV

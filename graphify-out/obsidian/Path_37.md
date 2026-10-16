@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "TestGroupRoleResolver"
-location: "L41"
+community: "parse_clamscan_output"
+location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestGroupRoleResolver
+  - community/parse_clamscan_output
 ---
 
 # Path
 
 ## Connections
-- [[_age()]] - `references` [EXTRACTED]
-- [[_w()]] - `references` [EXTRACTED]
+- [[save_report()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestGroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

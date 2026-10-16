@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/agentshroud-daily-check-in.txt"
 type: "document"
-community: "mcp-proxy-wrapper.js"
+community: "Hermes Cron Jobs Reference & Recreation Guide"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp-proxy-wrapperjs
+  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
 ---
 
 # Prompt: AgentShroud Daily Check-in
@@ -16,4 +16,4 @@ tags:
 - [[Seed Job AgentShroud Daily Check-in]] - `conceptually_related_to` [INFERRED]
 - [[Telegram Formatting Rule (bold only, no headers or tables)]] - `rationale_for` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp-proxy-wrapperjs
+#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide

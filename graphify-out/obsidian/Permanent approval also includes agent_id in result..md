@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_telegram_notify.py"
 type: "rationale"
-community: "ConfigIntegrityMonitor"
+community: "TestEgressTelegramNotify"
 location: "L224"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ConfigIntegrityMonitor
+  - community/TestEgressTelegramNotify
 ---
 
 # Permanent approval also includes agent_id in result.
 
 ## Connections
-- [[.test_handle_callback_allow_always_returns_agent_id()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_handle_callback_allow_always_returns_agent_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ConfigIntegrityMonitor
+#graphify/rationale #graphify/EXTRACTED #community/TestEgressTelegramNotify

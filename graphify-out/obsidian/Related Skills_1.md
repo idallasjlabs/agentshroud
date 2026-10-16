@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-athena/README.md"
+source_file: ".agents/skills/i-socrates/README.md"
 type: "document"
-community: "FY26 Cost Reduction Context"
+community: "Socrates — Dialogue Architect"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/FY26_Cost_Reduction_Context
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Related Skills
 
 ## Connections
-- [[Athena — Knowledge Distiller]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/FY26_Cost_Reduction_Context
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

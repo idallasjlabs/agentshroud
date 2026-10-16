@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-local-inference-engines.txt"
 type: "document"
-community: "test_telegram_replay.py"
+community: "Hermes Cron Jobs Reference & Recreation Guide"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_telegram_replaypy
+  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
 ---
 
 # Prompt: Newsletter — Local Inference Engines
@@ -16,4 +16,4 @@ tags:
 - [[Strict Sequential 4-Query Search Protocol]] - `implements` [EXTRACTED]
 - [[append_finding.py Finding-Append Script]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_telegram_replaypy
+#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide

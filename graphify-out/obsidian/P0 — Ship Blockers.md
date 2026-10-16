@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/prompt-injection-assessment-2026-02-25.md"
 type: "document"
-community: "AgentShroud Color Palette"
+community: "Core Security Principles"
 location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Color_Palette
+  - community/Core_Security_Principles
 ---
 
 # P0 — Ship Blockers
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v0.8.0 Recommendations (Priority Order)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Color_Palette
+#graphify/document #graphify/EXTRACTED #community/Core_Security_Principles

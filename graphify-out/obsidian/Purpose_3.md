@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-aws/README.md"
+source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
 type: "document"
-community: "DNSFilterConfig"
-location: "L6"
+community: "gitleaks.toml"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/gitleakstoml
 ---
 
 # Purpose
 
 ## Connections
-- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
+- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/gitleakstoml

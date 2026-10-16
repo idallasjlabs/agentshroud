@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/intel_report.py"
+source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "HTTPConnectProxy"
-location: "L205"
+community: "CollaboratorActivityTracker"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/CollaboratorActivityTracker
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_87]] - `references` [EXTRACTED]
-- [[._load_latest_file()]] - `references` [EXTRACTED]
-- [[.save()_1]] - `references` [EXTRACTED]
+- [[dot-__init__()_51]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/code #graphify/EXTRACTED #community/CollaboratorActivityTracker

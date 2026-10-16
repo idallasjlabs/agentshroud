@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
+source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L73"
+community: "load_config"
+location: "L58"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/test_e2e_proxypy
+  - graphify/EXTRACTED
+  - community/load_config
 ---
 
 # Path
 
 ## Connections
-- [[MCPPolicyAction]] - `uses` [INFERRED]
-- [[MCPPolicyConfig]] - `uses` [INFERRED]
-- [[MCPPolicyEngine]] - `uses` [INFERRED]
-- [[_write()_1]] - `references` [EXTRACTED]
+- [[GatewayConfig_3]] - `uses` [INFERRED]
+- [[_load()]] - `references` [EXTRACTED]
+- [[_write()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/load_config

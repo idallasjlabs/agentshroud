@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
+source_file: "docker/config/hermes/skills/i-apollo/SKILL.md"
 type: "document"
-community: "AGENTS.md — Codex CLI Guidance"
-location: "L201"
+community: "Technical Specification"
+location: "L137"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AGENTSmd__Codex_CLI_Guidance
+  - community/Technical_Specification
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Atlas — Curriculum Architect_2]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AGENTSmd__Codex_CLI_Guidance
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

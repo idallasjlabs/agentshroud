@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-data/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm/README.md"
 type: "document"
-community: "SlackAPIProxy"
+community: "MCP Tools Usage (MCPM)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/MCP_Tools_Usage_MCPM
 ---
 
 # Purpose
 
 ## Connections
-- [[Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
+- [[MCP Tools Usage (MCPM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/MCP_Tools_Usage_MCPM

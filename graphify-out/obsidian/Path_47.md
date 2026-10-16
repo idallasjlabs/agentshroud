@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "PromptProtection"
-location: "L472"
+community: "_age"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptProtection
+  - community/_age
 ---
 
 # Path
 
 ## Connections
-- [[gather_advisories()]] - `calls` [EXTRACTED]
-- [[load_snapshot()]] - `references` [EXTRACTED]
+- [[_age()]] - `references` [EXTRACTED]
+- [[_w()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptProtection
+#graphify/code #graphify/EXTRACTED #community/_age

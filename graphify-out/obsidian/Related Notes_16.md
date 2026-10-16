@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
+source_file: "docs/vault/05 - Dependencies/trivy.md"
 type: "document"
-community: "Kill Switch Procedure"
-location: "L114"
+community: "Trivy"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Kill_Switch_Procedure
+  - community/Trivy
 ---
 
 # Related Notes
 
 ## Connections
-- [[4. Environment Variables]] - `contains` [EXTRACTED]
+- [[Trivy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Kill_Switch_Procedure
+#graphify/document #graphify/EXTRACTED #community/Trivy

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-gg/SKILL.md"
 type: "document"
-community: "forwarder.test.js test suite"
+community: "Skill: Git Workflow Guardian (GIT-GUARD)"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/forwardertestjs_test_suite
+  - community/Skill_Git_Workflow_Guardian_GIT-GUARD
 ---
 
 # Protected Branch
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Git Workflow Guardian (GIT-GUARD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/forwardertestjs_test_suite
+#graphify/document #graphify/EXTRACTED #community/Skill_Git_Workflow_Guardian_GIT-GUARD

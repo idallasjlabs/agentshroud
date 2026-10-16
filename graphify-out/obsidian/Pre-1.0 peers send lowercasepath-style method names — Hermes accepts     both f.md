@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "rationale"
-community: "test_soc_router_coverage.py"
+community: "test_a2a_proxy.py"
 location: "L123"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/test_a2a_proxypy
 ---
 
 # Pre-1.0 peers send lowercase/path-style method names — Hermes accepts     both f
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_parse_jsonrpc_accepts_legacy_path_style_method_alias()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/test_a2a_proxypy

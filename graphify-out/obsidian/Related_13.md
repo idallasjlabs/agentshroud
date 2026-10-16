@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
 type: "document"
-community: "AgentShroud Deployment Architecture"
-location: "L187"
+community: "models.py"
+location: "L95"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Deployment_Architecture
+  - community/modelspy
 ---
 
 # Related
 
 ## Connections
-- [[llm_proxy.py_2]] - `contains` [EXTRACTED]
+- [[models.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture
+#graphify/document #graphify/EXTRACTED #community/modelspy

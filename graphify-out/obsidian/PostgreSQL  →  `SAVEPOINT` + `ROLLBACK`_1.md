@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Workflow: Survey → Draft → Inject → Confirm"
+community: "Skill: Test-Driven Development (TDD)"
 location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workflow_Survey__Draft__Inject__Confirm
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # PostgreSQL  →  `SAVEPOINT` + `ROLLBACK`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Stack-Specific Testing Patterns_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

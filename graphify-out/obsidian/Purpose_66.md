@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-defense/README.md"
+source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
 type: "document"
-community: "SlackAPIProxy"
-location: "L6"
+community: "All Dependencies.md"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/All_Dependenciesmd
 ---
 
 # Purpose
 
 ## Connections
-- [[Blue Team Security Auditor (SEC-DEFENSE)_1]] - `contains` [EXTRACTED]
+- [[aiosqlite_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pr/README.md"
+source_file: "docker/config/hermes/skills/i-gg/README.md"
 type: "document"
-community: "DNSFilterConfig"
+community: "Git Workflow Guardian (GIT-GUARD)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/Git_Workflow_Guardian_GIT-GUARD
 ---
 
 # Purpose
 
 ## Connections
-- [[Pull Request Generator (PR)]] - `contains` [EXTRACTED]
+- [[Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/Git_Workflow_Guardian_GIT-GUARD

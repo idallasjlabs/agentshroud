@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md"
+source_file: "docs/vault/03 - Configuration/ssh-config.md"
 type: "document"
-community: "TestInjectionDetection"
-location: "L104"
+community: "SSH Config"
+location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestInjectionDetection
+  - community/SSH_Config
 ---
 
 # Related Notes
 
 ## Connections
-- [[MCP Proxy Errors_2]] - `contains` [EXTRACTED]
+- [[SSH Config]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestInjectionDetection
+#graphify/document #graphify/EXTRACTED #community/SSH_Config

@@ -1,17 +1,21 @@
 ---
-source_file: "docker/QUICKSTART.md"
+source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "discover_upstream_versions.py"
-location: "L7"
+community: "Prerequisites"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/discover_upstream_versionspy
+  - community/Prerequisites
 ---
 
 # Prerequisites
 
 ## Connections
-- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
+- [[1Password Integration (Optional)]] - `contains` [EXTRACTED]
+- [[AgentShroud Deployment Procedure]] - `contains` [EXTRACTED]
+- [[Network Requirements]] - `contains` [EXTRACTED]
+- [[Software Dependencies]] - `contains` [EXTRACTED]
+- [[System Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/discover_upstream_versionspy
+#graphify/document #graphify/EXTRACTED #community/Prerequisites

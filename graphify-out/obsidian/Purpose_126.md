@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/text_control_center.py.md"
+source_file: ".agents/skills/i-mcpm/README.md"
 type: "document"
-community: "TestDockerSecretIsolation"
-location: "L14"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestDockerSecretIsolation
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Purpose
 
 ## Connections
-- [[text_control_center.py  agentshroud_manager.py]] - `contains` [EXTRACTED]
+- [[MCP Tools Usage (MCPM)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestDockerSecretIsolation
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

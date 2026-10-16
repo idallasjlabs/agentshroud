@@ -1,20 +1,20 @@
 ---
-source_file: "skills/openclaw/xurl/SKILL.md"
+source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "Voice Terminal — ESP32-S3-BOX-3 (Optional AgentS"
-location: "L67"
+community: "Quick Reference Commands"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentS
+  - community/Quick_Reference_Commands
 ---
 
-# Prerequisites
+# PREREQUISITES.md
 
 ## Connections
-- [[Other auth methods]] - `contains` [EXTRACTED]
-- [[Register an app (recommended)]] - `contains` [EXTRACTED]
-- [[Secret Safety (Mandatory)]] - `contains` [EXTRACTED]
-- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
+- [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
+- [[QUICK_REFERENCE]] - `conceptually_related_to` [INFERRED]
+- [[Secrets Backend Auto-Detection]] - `references` [EXTRACTED]
+- [[Separation of Concerns  Isolated Bot Accounts]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentS
+#graphify/document #graphify/EXTRACTED #community/Quick_Reference_Commands

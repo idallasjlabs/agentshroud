@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "Function Details"
+community: "agentshroud-ieee-paper.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/agentshroud-ieee-papermd
 ---
 
 # RELEASE-PLAN.md
@@ -20,4 +20,4 @@ tags:
 - [[v1.3.0 — Platform Expansion]] - `references` [EXTRACTED]
 - [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/agentshroud-ieee-papermd

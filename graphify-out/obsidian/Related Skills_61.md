@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-doctor/SKILL.md"
+source_file: "docker/config/hermes/skills/i-cr/README.md"
 type: "document"
-community: "_fake_kokoro_pipeline()"
-location: "L161"
+community: "Project Management (README)"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_fake_kokoro_pipeline
+  - community/Project_Management_README
 ---
 
 # Related Skills
 
 ## Connections
-- [[Skill MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
+- [[Code Review (CR)_1]] - `contains` [EXTRACTED]
+- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_fake_kokoro_pipeline
+#graphify/document #graphify/EXTRACTED #community/Project_Management_README

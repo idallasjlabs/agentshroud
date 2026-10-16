@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "code"
-community: "KeyVault"
+community: "PortManager"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/PortManager
 ---
 
 # PortResolution
 
 ## Connections
-- [[.generate_compose_ports()]] - `references` [EXTRACTED]
-- [[.has_conflicts()]] - `method` [EXTRACTED]
-- [[.ports()]] - `method` [EXTRACTED]
-- [[.resolve_ports()]] - `references` [EXTRACTED]
-- [[.summary()]] - `method` [EXTRACTED]
-- [[.test_basic_mapping()]] - `calls` [EXTRACTED]
-- [[.test_has_conflicts()]] - `calls` [EXTRACTED]
-- [[.test_no_conflict_mapping()]] - `calls` [EXTRACTED]
-- [[.test_ports_property()]] - `calls` [EXTRACTED]
-- [[.test_summary_format()]] - `calls` [EXTRACTED]
+- [[dot-generate_compose_ports()]] - `references` [EXTRACTED]
+- [[dot-has_conflicts()]] - `method` [EXTRACTED]
+- [[dot-ports()]] - `method` [EXTRACTED]
+- [[dot-resolve_ports()]] - `references` [EXTRACTED]
+- [[dot-summary()]] - `method` [EXTRACTED]
+- [[dot-test_basic_mapping()]] - `calls` [EXTRACTED]
+- [[dot-test_has_conflicts()]] - `calls` [EXTRACTED]
+- [[dot-test_no_conflict_mapping()]] - `calls` [EXTRACTED]
+- [[dot-test_ports_property()]] - `calls` [EXTRACTED]
+- [[dot-test_summary_format()]] - `calls` [EXTRACTED]
 - [[PortManager]] - `shares_data_with` [EXTRACTED]
 - [[Result of resolving all ports for an instance.]] - `rationale_for` [EXTRACTED]
 - [[TestFindAvailablePort]] - `uses` [INFERRED]
@@ -33,4 +33,4 @@ tags:
 - [[port_manager.py]] - `contains` [EXTRACTED]
 - [[test_port_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/code #graphify/EXTRACTED #community/PortManager

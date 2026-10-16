@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
 type: "document"
-community: "Function Details"
-location: "L95"
+community: "pipeline.py — Security Pipeline"
+location: "L345"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/pipelinepy__Security_Pipeline
 ---
 
 # Related
 
 ## Connections
-- [[models.py_3]] - `contains` [EXTRACTED]
+- [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline

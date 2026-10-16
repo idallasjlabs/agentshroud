@@ -1,17 +1,17 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Key Benefits"
+community: "Troubleshooting"
 location: "L239"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Key_Benefits
+  - community/Troubleshooting
 ---
 
 # Problem: Browser binaries not found
 
 ## Connections
-- [[Troubleshooting_19]] - `contains` [EXTRACTED]
+- [[Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Key_Benefits
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting

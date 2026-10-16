@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
 type: "document"
-community: "Bot Container (agent decides: reply + tool call)"
-location: "L42"
+community: "PII Pipeline Errors"
+location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Container_agent_decides_reply__tool_call
+  - community/PII_Pipeline_Errors
 ---
 
 # Related Notes
 
 ## Connections
-- [[installer.py_2]] - `contains` [EXTRACTED]
+- [[PII Pipeline Errors]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Container_agent_decides_reply__tool_call
+#graphify/document #graphify/EXTRACTED #community/PII_Pipeline_Errors

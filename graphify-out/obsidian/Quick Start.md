@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/model-usage/SKILL.md"
+source_file: "skills/openclaw/video-frames/SKILL.md"
 type: "document"
-community: "Skill: UX Expert (UX)"
-location: "L33"
+community: "frame.sh"
+location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UX_Expert_UX
+  - community/framesh
 ---
 
 # Quick start
 
 ## Connections
-- [[Model usage]] - `contains` [EXTRACTED]
+- [[Video Frames (ffmpeg)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX
+#graphify/document #graphify/EXTRACTED #community/framesh

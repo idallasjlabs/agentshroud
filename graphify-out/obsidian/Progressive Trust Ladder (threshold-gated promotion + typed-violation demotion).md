@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "MemoryIntegrityMonitor"
+community: "TrustConfig"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/TrustConfig
 ---
 
 # Progressive Trust Ladder (threshold-gated promotion + typed-violation demotion)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[progressive_trust_config.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/rationale #graphify/EXTRACTED #community/TrustConfig

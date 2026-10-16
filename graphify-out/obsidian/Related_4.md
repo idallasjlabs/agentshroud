@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
 type: "document"
-community: "TestNetworkValidator"
-location: "L464"
+community: "llm_proxy.py"
+location: "L187"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestNetworkValidator
+  - community/llm_proxypy
 ---
 
 # Related
 
 ## Connections
-- [[main.py_4]] - `contains` [EXTRACTED]
+- [[llm_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestNetworkValidator
+#graphify/document #graphify/EXTRACTED #community/llm_proxypy

@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-qa/README.md"
+source_file: "docker/config/hermes/skills/i-eightd/README.md"
 type: "document"
-community: "_w()"
+community: "hermes/skills/i-bs/README.md"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_w
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Related Skills
 
 ## Connections
-- [[Quality Assurance (QA)]] - `contains` [EXTRACTED]
-- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_w
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

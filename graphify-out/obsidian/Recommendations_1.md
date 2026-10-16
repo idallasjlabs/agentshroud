@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/OPENCLAW_SETUP.md"
+source_file: "docs/security/security-supply-chain.md"
 type: "document"
-community: "AgentShroud Documentation"
-location: "L435"
+community: "Detailed Profiles"
+location: "L116"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Documentation
+  - community/Detailed_Profiles
 ---
 
 # Recommendations
 
 ## Connections
-- [[Security Notes_2]] - `contains` [EXTRACTED]
+- [[Security Supply Chain Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Documentation
+#graphify/document #graphify/EXTRACTED #community/Detailed_Profiles

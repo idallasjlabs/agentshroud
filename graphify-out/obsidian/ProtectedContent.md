@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # ProtectedContent
 
 ## Connections
-- [[._calculate_similarity()]] - `references` [EXTRACTED]
-- [[._redact_fuzzy_match()]] - `references` [EXTRACTED]
-- [[.add_protected_content()]] - `calls` [EXTRACTED]
+- [[dot-_calculate_similarity()]] - `references` [EXTRACTED]
+- [[dot-_redact_fuzzy_match()]] - `references` [EXTRACTED]
+- [[dot-add_protected_content()]] - `calls` [EXTRACTED]
 - [[A piece of content that should be protected from disclosure.]] - `rationale_for` [EXTRACTED]
 - [[prompt_protection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

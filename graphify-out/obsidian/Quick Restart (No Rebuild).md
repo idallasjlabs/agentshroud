@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/RUNBOOK.md"
 type: "document"
-community: "log_sanitizer.py"
+community: "AgentShroud Deployment & Troubleshooting Runbook"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/log_sanitizerpy
+  - community/AgentShroud_Deployment__Troubleshooting_Runbook
 ---
 
 # Quick Restart (No Rebuild)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Deployment & Troubleshooting Runbook]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/log_sanitizerpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment__Troubleshooting_Runbook

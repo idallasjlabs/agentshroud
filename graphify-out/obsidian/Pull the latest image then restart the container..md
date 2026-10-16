@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "rationale"
-community: "main.rs"
+community: "ServiceManager"
 location: "L377"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/mainrs
+  - community/ServiceManager
 ---
 
 # Pull the latest image then restart the container.
 
 ## Connections
-- [[.update_service()]] - `rationale_for` [EXTRACTED]
+- [[dot-update_service()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/mainrs
+#graphify/rationale #graphify/EXTRACTED #community/ServiceManager

@@ -1,23 +1,19 @@
 ---
-source_file: "gateway/tests/test_switch_model_idempotent.py"
+source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
 type: "code"
-community: "._run_and_read()"
-location: "L28"
+community: "gen.py"
+location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_run_and_read
+  - community/genpy
 ---
 
 # Path
 
 ## Connections
-- [[._run_and_read()_1]] - `calls` [EXTRACTED]
-- [[._run_and_read()]] - `calls` [EXTRACTED]
-- [[._run_twice()]] - `calls` [EXTRACTED]
-- [[.test_verify_flag_accepted_without_error()]] - `calls` [EXTRACTED]
-- [[.test_verify_flag_with_model_ref()]] - `calls` [EXTRACTED]
-- [[_read_env()]] - `references` [EXTRACTED]
-- [[_run_switch()]] - `references` [EXTRACTED]
+- [[default_out_dir()]] - `references` [EXTRACTED]
+- [[main()_18]] - `calls` [EXTRACTED]
+- [[write_gallery()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_run_and_read
+#graphify/code #graphify/EXTRACTED #community/genpy

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/requirements/README.md"
+source_file: "docs/data/README.md"
 type: "document"
-community: "Skill: Branding Specialist (BS)"
+community: "03-data.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Branding_Specialist_BS
+  - community/03-datamd
 ---
 
 # Planned Documents
 
 ## Connections
-- [[Requirements Documentation]] - `contains` [EXTRACTED]
+- [[Data Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Branding_Specialist_BS
+#graphify/document #graphify/EXTRACTED #community/03-datamd

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/python-jose.md"
+source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "A2APolicyEngine"
-location: "L15"
+community: "wazuh-ossec.conf"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/wazuh-ossecconf
 ---
 
 # Purpose
 
 ## Connections
-- [[python-jose_1]] - `contains` [EXTRACTED]
+- [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/document #graphify/EXTRACTED #community/wazuh-ossecconf

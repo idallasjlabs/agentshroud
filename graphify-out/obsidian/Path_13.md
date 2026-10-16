@@ -1,20 +1,26 @@
 ---
-source_file: "gateway/security/health_report.py"
+source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "gateway.security.daily_cve_report"
-location: "L116"
+community: "ApprovalQueueItem"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gatewaysecuritydaily_cve_report
+  - community/ApprovalQueueItem
 ---
 
 # Path
 
 ## Connections
-- [[generate_report()]] - `references` [EXTRACTED]
-- [[get_trend()]] - `references` [EXTRACTED]
-- [[init_db()]] - `references` [EXTRACTED]
-- [[save_to_history()]] - `references` [EXTRACTED]
+- [[ApprovalQueueItem_2]] - `uses` [INFERRED]
+- [[ApprovalStore]] - `uses` [INFERRED]
+- [[AuditStore_1]] - `uses` [INFERRED]
+- [[store()_1]] - `references` [EXTRACTED]
+- [[test_audit_store_initialize_is_idempotent()]] - `references` [EXTRACTED]
+- [[test_decide_persists()]] - `references` [EXTRACTED]
+- [[test_expired_items_on_reload()]] - `references` [EXTRACTED]
+- [[test_initialize_is_idempotent()]] - `references` [EXTRACTED]
+- [[test_persist_and_reload()]] - `references` [EXTRACTED]
+- [[test_store_survives_restart()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gatewaysecuritydaily_cve_report
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueItem

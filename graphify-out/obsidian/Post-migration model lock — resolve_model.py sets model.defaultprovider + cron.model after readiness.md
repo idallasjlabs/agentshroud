@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/hermes/start.sh"
 type: "rationale"
-community: "Skill: UX Expert (UX)"
+community: "start.sh"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Skill_UX_Expert_UX
+  - community/startsh
 ---
 
 # Post-migration model lock — resolve_model.py sets model.default/provider + cron.model after readiness
@@ -16,4 +16,4 @@ tags:
 - [[_seed_cron()]] - `shares_data_with` [INFERRED]
 - [[start.sh — Hermes s6-overlay startup wrapper (main program)]] - `calls` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Skill_UX_Expert_UX
+#graphify/rationale #graphify/EXTRACTED #community/startsh

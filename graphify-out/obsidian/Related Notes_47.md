@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/pydantic.md"
+source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
 type: "document"
-community: "Pre-commit hook strategy (framework vs manual)"
-location: "L53"
+community: "Gateway Python Dependencies (`gateway/requirements.txt`)"
+location: "L120"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pre-commit_hook_strategy_framework_vs_manual
+  - community/Gateway_Python_Dependencies_gateway/requirementstxt
 ---
 
 # Related Notes
 
 ## Connections
-- [[Pydantic]] - `contains` [EXTRACTED]
+- [[All Dependencies_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pre-commit_hook_strategy_framework_vs_manual
+#graphify/document #graphify/EXTRACTED #community/Gateway_Python_Dependencies_gateway/requirementstxt

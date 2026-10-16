@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/memory/context.md"
 type: "document"
-community: "TestGetSbom"
+community: "context.md"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestGetSbom
+  - community/contextmd
 ---
 
 # Pending Tasks
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[context]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestGetSbom
+#graphify/document #graphify/EXTRACTED #community/contextmd

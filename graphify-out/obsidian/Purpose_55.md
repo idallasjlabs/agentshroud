@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-doctor/README.md"
+source_file: "docker/config/openclaw/skills/i-tdd/README.md"
 type: "document"
-community: "SlackAPIProxy"
+community: "Test-Driven Development (TDD)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/Test-Driven_Development_TDD
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
+- [[Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_TDD

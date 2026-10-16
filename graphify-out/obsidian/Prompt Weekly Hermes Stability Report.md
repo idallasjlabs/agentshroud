@@ -1,21 +1,21 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/weekly-hermes-stability-report.txt"
 type: "document"
-community: "GroupRegistry"
+community: "Hermes Cron Jobs Reference & Recreation Guide"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GroupRegistry
+  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
 ---
 
 # Prompt: Weekly Hermes Stability Report
 
 ## Connections
-- [[.start-history Epoch Restart Ledger]] - `references` [EXTRACTED]
+- [[dot-start-history Epoch Restart Ledger]] - `references` [EXTRACTED]
 - [[Hermes Cron Jobs Reference & Recreation Guide]] - `references` [EXTRACTED]
 - [[Restart Backoff Pause (5-minute sleep)]] - `references` [EXTRACTED]
 - [[Seed Job Weekly Hermes Stability Report]] - `conceptually_related_to` [INFERRED]
 - [[Telegram Formatting Rule (bold only, no headers or tables)]] - `implements` [EXTRACTED]
 - [[gateway-exit-diag.log RestartExit Telemetry]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GroupRegistry
+#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide

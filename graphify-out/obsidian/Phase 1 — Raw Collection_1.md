@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mac/SKILL.md"
 type: "document"
-community: "encrypted_store.py"
+community: "Phase 1 — Raw Collection"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/encrypted_storepy
+  - community/Phase_1__Raw_Collection
 ---
 
 # Phase 1 — Raw Collection
@@ -22,6 +22,6 @@ tags:
 - [[7. CLI Tools & Utilities (non-.app installs)_1]] - `contains` [EXTRACTED]
 - [[8. Launch Agents & Daemons (background services)_1]] - `contains` [EXTRACTED]
 - [[9. Browser Extensions (optional but useful)_1]] - `contains` [EXTRACTED]
-- [[Discovery Strategy_1]] - `contains` [EXTRACTED]
+- [[Discovery Strategy_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/encrypted_storepy
+#graphify/document #graphify/EXTRACTED #community/Phase_1__Raw_Collection

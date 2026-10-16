@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
+source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
 type: "document"
-community: "GroupApprovalRouter"
-location: "L75"
+community: "Error Index.md"
+location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/Error_Indexmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
+- [[Presidio Analyzer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

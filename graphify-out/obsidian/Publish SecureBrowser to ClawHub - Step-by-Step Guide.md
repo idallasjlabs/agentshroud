@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "security.py"
+community: "Publish SecureBrowser to ClawHub - Step-by-Step Guide"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/securitypy
+  - community/Publish_SecureBrowser_to_ClawHub_-_Step-by-Step_Guide
 ---
 
 # Publish SecureBrowser to ClawHub - Step-by-Step Guide
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[PUBLISH-TO-CLAWHUB]] - `contains` [EXTRACTED]
 - [[✅ Success Indicators]] - `contains` [EXTRACTED]
-- [[🆘 Troubleshooting_1]] - `contains` [EXTRACTED]
+- [[🆘 Troubleshooting]] - `contains` [EXTRACTED]
 - [[🎉 You're Done!]] - `contains` [EXTRACTED]
 - [[🎨 Customize Skill Page (Optional)]] - `contains` [EXTRACTED]
 - [[🎯 Marketing Checklist]] - `contains` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[🔄 Update Published Skill]] - `contains` [EXTRACTED]
 - [[🚀 Quick Publish (3 Commands)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/securitypy
+#graphify/document #graphify/EXTRACTED #community/Publish_SecureBrowser_to_ClawHub_-_Step-by-Step_Guide

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-doctor/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "_FakeHTTPResponse"
+community: "hermes/skills/i-bs/README.md"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_FakeHTTPResponse
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Purpose
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_FakeHTTPResponse
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

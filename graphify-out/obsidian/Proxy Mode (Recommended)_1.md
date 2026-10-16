@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: ".test_collaborator_plugin_discovery_request_is_b"
+community: "Deployment Modes"
 location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_collaborator_plugin_discovery_request_is_b
+  - community/Deployment_Modes
 ---
 
 # Proxy Mode (Recommended)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Deployment Modes_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_collaborator_plugin_discovery_request_is_b
+#graphify/document #graphify/EXTRACTED #community/Deployment_Modes

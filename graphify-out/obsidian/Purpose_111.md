@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
 type: "document"
-community: "validate_network_security()"
+community: "Function Details"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/validate_network_security
+  - community/Function_Details
 ---
 
 # Purpose
 
 ## Connections
-- [[auth.py_3]] - `contains` [EXTRACTED]
+- [[health_report.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/validate_network_security
+#graphify/document #graphify/EXTRACTED #community/Function_Details

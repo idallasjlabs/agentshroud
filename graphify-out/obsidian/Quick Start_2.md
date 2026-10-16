@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/openai-whisper-api/SKILL.md"
+source_file: "README.md"
 type: "document"
-community: "web_proxy.py"
-location: "L20"
+community: "AgentShroud™ README"
+location: "L409"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/web_proxypy
+  - community/AgentShroud_README
 ---
 
-# Quick start
+# Quick Start
 
 ## Connections
-- [[OpenAI Whisper API (curl)]] - `contains` [EXTRACTED]
+- [[Documentation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/web_proxypy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_README

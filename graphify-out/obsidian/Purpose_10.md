@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-eightd/README.md"
+source_file: ".agents/skills/i-atlas/README.md"
 type: "document"
-community: "i-eightd SKILL — 8D Root Cause Analysis"
+community: "Atlas — Curriculum Architect"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/i-eightd_SKILL__8D_Root_Cause_Analysis
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Purpose
 
 ## Connections
-- [[8D Root Cause Analysis]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/i-eightd_SKILL__8D_Root_Cause_Analysis
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

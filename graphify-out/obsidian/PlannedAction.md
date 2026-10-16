@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "Incident → Test Backfill Rule (R3 extension): ev"
+community: "Path"
 location: "L149"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Incident__Test_Backfill_Rule_R3_extension_ev
+  - community/Path
 ---
 
 # PlannedAction
 
 ## Connections
-- [[.test_planned_action_is_immutable()]] - `calls` [EXTRACTED]
+- [[dot-test_planned_action_is_immutable()]] - `calls` [EXTRACTED]
 - [[One unit of work in a deploy plan (canonical entry - per-bot path).      ``acti]] - `rationale_for` [EXTRACTED]
-- [[Path_39]] - `uses` [INFERRED]
+- [[Path_30]] - `uses` [INFERRED]
 - [[TestClient_1]] - `uses` [INFERRED]
 - [[TestDeployDryRun]] - `uses` [INFERRED]
 - [[TestDeployManifest]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[plan_deploy()]] - `references` [EXTRACTED]
 - [[test_skills_manifest_sync.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Incident__Test_Backfill_Rule_R3_extension_ev
+#graphify/code #graphify/INFERRED #community/Path

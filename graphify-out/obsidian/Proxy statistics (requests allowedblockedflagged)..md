@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "rationale"
-community: "CredentialInjector"
+community: "dashboard_endpoints.py"
 location: "L203"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CredentialInjector
+  - community/dashboard_endpointspy
 ---
 
 # Proxy statistics (requests allowed/blocked/flagged).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[proxy_status()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CredentialInjector
+#graphify/rationale #graphify/EXTRACTED #community/dashboard_endpointspy

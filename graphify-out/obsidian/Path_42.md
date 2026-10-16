@@ -1,18 +1,19 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "AgentShroud v0.7.0 Enforcement Audit Results"
-location: "L89"
+community: "api.py"
+location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Enforcement_Audit_Results
+  - community/apipy
 ---
 
 # Path
 
 ## Connections
-- [[read_pin()]] - `references` [EXTRACTED]
-- [[write_pin()]] - `references` [EXTRACTED]
+- [[dot-__init__()_132]] - `references` [EXTRACTED]
+- [[dot-_load_latest_file()]] - `references` [EXTRACTED]
+- [[dot-save()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results
+#graphify/code #graphify/EXTRACTED #community/apipy

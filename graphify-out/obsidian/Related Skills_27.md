@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-production/README.md"
+source_file: "docker/config/openclaw/skills/i-browser/README.md"
 type: "document"
-community: "_w()"
+community: "Browser — Secure Browser Automation"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_w
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Related Skills
 
 ## Connections
-- [[incident-response]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_w
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

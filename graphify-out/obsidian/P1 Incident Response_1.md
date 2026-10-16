@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "clamav_scanner.py"
+community: "GSDE&G Skills Reference"
 location: "L254"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/clamav_scannerpy
+  - community/GSDEG_Skills_Reference
 ---
 
 # P1 Incident Response
 
 ## Connections
-- [[Emergency Procedures_1]] - `contains` [EXTRACTED]
+- [[Emergency Procedures_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference

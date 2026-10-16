@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-production/README.md"
+source_file: ".agents/skills/i-mnemosyne/README.md"
 type: "document"
-community: "TestSSRFDetection"
+community: "Mnemosyne — Retention Engineer"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Related Skills
 
 ## Connections
-- [[Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

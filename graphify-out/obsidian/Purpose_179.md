@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
+source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
 type: "document"
-community: "sunday-scan.sh"
-location: "L15"
+community: "compose_generator.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sunday-scansh
+  - community/compose_generatorpy
 ---
 
 # Purpose
 
 ## Connections
-- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
+- [[compose_generator.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sunday-scansh
+#graphify/document #graphify/EXTRACTED #community/compose_generatorpy

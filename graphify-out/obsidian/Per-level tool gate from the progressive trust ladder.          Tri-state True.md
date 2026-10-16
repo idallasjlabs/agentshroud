@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "MemoryIntegrityMonitor"
+community: "._update_score"
 location: "L290"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/_update_score
 ---
 
 # Per-level tool gate from the progressive trust ladder.          Tri-state: True/
 
 ## Connections
-- [[.is_tool_allowed()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-is_tool_allowed()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/rationale #graphify/EXTRACTED #community/_update_score

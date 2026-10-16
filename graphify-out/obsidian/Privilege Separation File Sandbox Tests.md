@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "Enum"
+community: "MiddlewareManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/MiddlewareManager
 ---
 
 # Privilege Separation File Sandbox Tests
@@ -14,4 +14,4 @@ tags:
 - [[FileSandbox]] - `references` [EXTRACTED]
 - [[Path Isolation Manager Tests]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

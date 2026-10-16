@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
 type: "document"
-community: "Route map (by router)"
-location: "L78"
+community: "Technical Specification"
+location: "L137"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Route_map_by_router
+  - community/Technical_Specification
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Daedalus — Concept Illustrator_3]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Route_map_by_router
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

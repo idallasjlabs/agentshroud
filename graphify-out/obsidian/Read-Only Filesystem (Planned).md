@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/container-policy.md"
 type: "concept"
-community: "Function Details"
+community: "AgentShroud Security Value Proposition - Revised"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/AgentShroud_Security_Value_Proposition_-_Revised
 ---
 
 # Read-Only Filesystem (Planned)
@@ -15,4 +15,4 @@ tags:
 - [[SECURITY_VALUE_PROPOSITION]] - `references` [EXTRACTED]
 - [[container-policy]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Function_Details
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_Revised

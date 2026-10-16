@@ -1,26 +1,18 @@
 ---
-source_file: "gateway/tests/test_approval_store.py"
+source_file: "gateway/security/audit_archive.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L38"
+community: "archive_old_events"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/archive_old_events
 ---
 
 # Path
 
 ## Connections
-- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
-- [[ApprovalStore_1]] - `uses` [INFERRED]
-- [[AuditStore_1]] - `uses` [INFERRED]
-- [[store()]] - `references` [EXTRACTED]
-- [[test_audit_store_initialize_is_idempotent()]] - `references` [EXTRACTED]
-- [[test_decide_persists()]] - `references` [EXTRACTED]
-- [[test_expired_items_on_reload()]] - `references` [EXTRACTED]
-- [[test_initialize_is_idempotent()]] - `references` [EXTRACTED]
-- [[test_persist_and_reload()]] - `references` [EXTRACTED]
-- [[test_store_survives_restart()]] - `references` [EXTRACTED]
+- [[archive_old_events()]] - `references` [EXTRACTED]
+- [[purge_low_value_events()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/archive_old_events

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
+source_file: "docker/config/openclaw/skills/i-hermes/README.md"
 type: "document"
-community: "ANTHROPIC_BASE_URL"
-location: "L12"
+community: "openclaw/skills/i-cr/SKILL.md"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ANTHROPIC_BASE_URL
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Purpose
 
 ## Connections
-- [[session_security.py_2]] - `contains` [EXTRACTED]
+- [[Hermes — Podcast Production Orchestrator_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

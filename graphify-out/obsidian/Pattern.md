@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/heuristic_classifier.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "BotConfig"
-location: "L129"
+community: "AlertDispatcher"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/AlertDispatcher
 ---
 
 # Pattern
 
 ## Connections
-- [[._score_signal()]] - `references` [EXTRACTED]
+- [[dot-_compile_patterns()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BotConfig
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

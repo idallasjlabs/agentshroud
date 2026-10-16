@@ -1,11 +1,11 @@
 ---
 source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "concept"
-community: "TestFullAccessMiddlewareBypass"
+community: "DOCKER-VPN-NETWORKING.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/TestFullAccessMiddlewareBypass
+  - community/DOCKER-VPN-NETWORKINGmd
 ---
 
 # Python IPv6 Fallback Red Herring (ENETUNREACH masking ETIMEDOUT)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[DOCKER-VPN-NETWORKING]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/TestFullAccessMiddlewareBypass
+#graphify/concept #graphify/EXTRACTED #community/DOCKER-VPN-NETWORKINGmd

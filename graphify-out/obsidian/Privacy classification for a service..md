@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "rationale"
-community: "What You Must Do When Invoked"
+community: "PrivacyPolicyEnforcer"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/What_You_Must_Do_When_Invoked
+  - community/PrivacyPolicyEnforcer
 ---
 
 # Privacy classification for a service.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ServicePrivacy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked
+#graphify/rationale #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

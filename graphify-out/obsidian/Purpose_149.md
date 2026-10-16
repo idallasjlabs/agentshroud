@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
 type: "document"
-community: "Skill: Create PR with Pre-Flight Audit (CRPR)"
+community: "egress_config.py"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
+  - community/egress_configpy
 ---
 
 # Purpose
 
 ## Connections
-- [[browser_security.py_2]] - `contains` [EXTRACTED]
+- [[egress_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
+#graphify/document #graphify/EXTRACTED #community/egress_configpy

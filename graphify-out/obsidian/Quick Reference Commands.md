@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: ".from_dict()"
+community: "Quick Reference Commands"
 location: "L405"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/from_dict
+  - community/Quick_Reference_Commands
 ---
 
 # Quick Reference Commands
@@ -22,6 +22,6 @@ tags:
 - [[QUICK_REFERENCE]] - `contains` [EXTRACTED]
 - [[System Instructions Credential Security (Ultra-Conservative)]] - `contains` [EXTRACTED]
 - [[Telegram Bot]] - `contains` [EXTRACTED]
-- [[Troubleshooting_20]] - `contains` [EXTRACTED]
+- [[Troubleshooting_37]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/from_dict
+#graphify/document #graphify/EXTRACTED #community/Quick_Reference_Commands

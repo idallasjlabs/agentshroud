@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-bs/README.md"
+source_file: "docker/config/openclaw/skills/i-sec-offense/README.md"
 type: "document"
-community: "SlackAPIProxy"
+community: "Red Team Adversarial Tester (SEC-OFFENSE)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/Red_Team_Adversarial_Tester_SEC-OFFENSE
 ---
 
 # Related Skills
 
 ## Connections
-- [[Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
+- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/Red_Team_Adversarial_Tester_SEC-OFFENSE

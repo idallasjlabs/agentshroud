@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pm/README.md"
+source_file: "docker/config/openclaw/skills/i-atlas/README.md"
 type: "document"
-community: "AuditExporter"
+community: "Atlas — Curriculum Architect"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditExporter
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Related Skills
 
 ## Connections
-- [[Project Management (README)]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditExporter
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

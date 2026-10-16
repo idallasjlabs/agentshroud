@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-cicd/README.md"
+source_file: ".agents/skills/i-socrates/README.md"
 type: "document"
-community: "_FakeRBAC"
+community: "Socrates — Dialogue Architect"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Purpose
 
 ## Connections
-- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

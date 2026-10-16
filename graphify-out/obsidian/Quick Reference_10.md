@@ -1,17 +1,21 @@
 ---
-source_file: "skills/openclaw/xurl/SKILL.md"
+source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "Voice Terminal — ESP32-S3-BOX-3 (Optional AgentS"
-location: "L109"
+community: "Quick Reference"
+location: "L257"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentS
+  - community/Quick_Reference
 ---
 
 # Quick Reference
 
 ## Connections
-- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
+- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
+- [[Change Default Model]] - `contains` [EXTRACTED]
+- [[Check Telegram Channel Status]] - `contains` [EXTRACTED]
+- [[List Available Models]] - `contains` [EXTRACTED]
+- [[View Configured Providers]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentS
+#graphify/document #graphify/EXTRACTED #community/Quick_Reference

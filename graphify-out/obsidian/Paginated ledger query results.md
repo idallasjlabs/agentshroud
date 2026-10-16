@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "SSHProxy"
+community: "ingest_api/models.py"
 location: "L153"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/ingest_api/modelspy
 ---
 
 # Paginated ledger query results
 
 ## Connections
-- [[LedgerQueryResponse_1]] - `rationale_for` [EXTRACTED]
+- [[LedgerQueryResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SSHProxy
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/modelspy

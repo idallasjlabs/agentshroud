@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_op_proxy.py"
 type: "rationale"
-community: "Mode A — Single task"
+community: "_is_op_reference_allowed"
 location: "L25"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task
+  - community/_is_op_reference_allowed
 ---
 
 # Real functional check, not a boot-time smoke test: every op:// reference     doc
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOpRefAllowlistCoverage]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Mode_A__Single_task
+#graphify/rationale #graphify/EXTRACTED #community/_is_op_reference_allowed

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "test_anthropic_openai_translator.py"
+community: "AgentShroud Incident Response Plan"
 location: "L473"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_anthropic_openai_translatorpy
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Production Hardening
@@ -16,4 +16,4 @@ tags:
 - [[Performance Tuning]] - `contains` [EXTRACTED]
 - [[Security Hardening]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

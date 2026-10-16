@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-oracle/README.md"
+source_file: "docker/config/hermes/skills/i-browser/README.md"
 type: "document"
-community: "AgentShroud System Architecture Document (SAD)"
+community: "Browser — Secure Browser Automation"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_System_Architecture_Document_SAD
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Purpose
 
 ## Connections
-- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Architecture_Document_SAD
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

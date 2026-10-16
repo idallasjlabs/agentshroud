@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/clamav.md"
+source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "document"
-community: "Mode A — Single task"
-location: "L48"
+community: "4. Environment Variables"
+location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task
+  - community/4_Environment_Variables
 ---
 
 # Related Notes
 
 ## Connections
-- [[ClamAV]] - `contains` [EXTRACTED]
+- [[4. Environment Variables]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task
+#graphify/document #graphify/EXTRACTED #community/4_Environment_Variables

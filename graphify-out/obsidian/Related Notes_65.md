@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
+source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
 type: "document"
-community: "02-infrastructure.md"
-location: "L197"
+community: "agentshroud.yaml.md"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/02-infrastructuremd
+  - community/agentshroudyamlmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[Crash Recovery_2]] - `contains` [EXTRACTED]
+- [[HTTP_PROXY  HTTPS_PROXY]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/02-infrastructuremd
+#graphify/document #graphify/EXTRACTED #community/agentshroudyamlmd

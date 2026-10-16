@@ -1,25 +1,17 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: "scripts/deploy.sh"
 type: "code"
-community: "LLMProxy"
-location: "L219"
+community: "deploy.sh"
+location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/deploysh
 ---
 
-# Path
+# PATH
 
 ## Connections
-- [[.__init__()_82]] - `calls` [EXTRACTED]
-- [[._analyze_file_content()]] - `references` [EXTRACTED]
-- [[._analyze_script_file()]] - `references` [EXTRACTED]
-- [[._quarantine_suspicious_files()]] - `calls` [EXTRACTED]
-- [[._scan_git_hooks()]] - `references` [EXTRACTED]
-- [[._scan_package_json()]] - `references` [EXTRACTED]
-- [[._scan_pyproject_toml()]] - `references` [EXTRACTED]
-- [[._scan_setup_py()]] - `references` [EXTRACTED]
-- [[.scan_git_repository()]] - `calls` [EXTRACTED]
+- [[deploy.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/deploysh

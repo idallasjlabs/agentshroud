@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-data/README.md"
+source_file: ".agents/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "Future Enhancements"
+community: "MCP AWS Profile Configuration README"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Future_Enhancements
+  - community/MCP_AWS_Profile_Configuration_README
 ---
 
 # Related Skills
 
 ## Connections
-- [[Data Validation (DATA-VAL)_2]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Future_Enhancements
+#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_README

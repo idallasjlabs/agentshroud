@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "docker/config/openclaw/skills/i-browser/browse.js"
 type: "code"
-community: "load_config()"
-location: "L125"
+community: "openclaw/skills/i-browser/browse.js"
+location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/openclaw/skills/i-browser/browsejs
 ---
 
-# Path
+# path
 
 ## Connections
-- [[.__init__()_58]] - `references` [EXTRACTED]
+- [[openclawskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-browser/browsejs

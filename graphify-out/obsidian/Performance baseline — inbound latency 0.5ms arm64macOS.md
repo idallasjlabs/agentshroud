@@ -1,13 +1,13 @@
 ---
 source_file: "CLAUDE.md"
 type: "rationale"
-community: ".test_skill_sandbox_message_without_healthcheck_"
+community: "Performance baseline — inbound latency <0.5ms arm64/macOS"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_skill_sandbox_message_without_healthcheck_
+  - community/Performance_baseline__inbound_latency_05ms_arm64/macOS
 ---
 
 # Performance baseline — inbound latency <0.5ms arm64/macOS
 
-#graphify/rationale #graphify/EXTRACTED #community/test_skill_sandbox_message_without_healthcheck_
+#graphify/rationale #graphify/EXTRACTED #community/Performance_baseline__inbound_latency_05ms_arm64/macOS

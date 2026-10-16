@@ -1,23 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
-community: "test_playback_state.c"
-location: "L9"
+community: "Error Index"
+location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_playback_statec
+  - community/Error_Index
 ---
 
 # Prompt Injection Blocks
 
 ## Connections
-- [[Common Injection Signatures Detected]] - `contains` [EXTRACTED]
-- [[False Positive (Legitimate Content Blocked)]] - `contains` [EXTRACTED]
-- [[HTTP 400 — Prompt Injection Detected]] - `contains` [EXTRACTED]
-- [[Prompt Injection Blocks_1]] - `contains` [EXTRACTED]
-- [[Prompt Injection in Monitor Mode]] - `contains` [EXTRACTED]
-- [[Related Notes_61]] - `contains` [EXTRACTED]
-- [[Tool Result Injections]] - `contains` [EXTRACTED]
+- [[Error Index_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_playback_statec
+#graphify/document #graphify/EXTRACTED #community/Error_Index

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/falco-rules.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
 type: "document"
-community: "GroupApprovalRouter"
-location: "L16"
+community: "web_proxy.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/web_proxypy
 ---
 
 # Purpose
 
 ## Connections
-- [[falco-rules.yaml]] - `contains` [EXTRACTED]
+- [[web_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/document #graphify/EXTRACTED #community/web_proxypy

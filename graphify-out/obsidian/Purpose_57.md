@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mnemosyne/README.md"
+source_file: "docs/vault/05 - Dependencies/trivy.md"
 type: "document"
-community: "Workflow: Survey → Draft → Inject → Confirm"
-location: "L6"
+community: "Trivy"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workflow_Survey__Draft__Inject__Confirm
+  - community/Trivy
 ---
 
 # Purpose
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_2]] - `contains` [EXTRACTED]
+- [[Trivy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm
+#graphify/document #graphify/EXTRACTED #community/Trivy

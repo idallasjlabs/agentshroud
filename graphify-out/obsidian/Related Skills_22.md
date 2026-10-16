@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm/README.md"
+source_file: "docker/config/hermes/skills/i-socrates/README.md"
 type: "document"
-community: "DNSFilterConfig"
+community: "Socrates — Dialogue Architect"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Related Skills
 
 ## Connections
-- [[MCP Tools Usage (MCPM)]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

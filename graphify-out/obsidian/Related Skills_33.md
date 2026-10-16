@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec-offense/README.md"
+source_file: "docker/config/openclaw/skills/i-gg/README.md"
 type: "document"
-community: "DNSFilterConfig"
+community: "Git Workflow Guardian (GIT-GUARD)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/Git_Workflow_Guardian_GIT-GUARD
 ---
 
 # Related Skills
 
 ## Connections
-- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - `contains` [EXTRACTED]
+- [[Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/Git_Workflow_Guardian_GIT-GUARD

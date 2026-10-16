@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Mode A — Single task"
+community: "TestOutboundScanUnification"
 location: "L5233"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task
+  - community/TestOutboundScanUnification
 ---
 
 # Pipeline-blocked caption payloads must have the caption replaced.
 
 ## Connections
-- [[.test_json_caption_pipeline_block_replaces_caption()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_json_caption_pipeline_block_replaces_caption()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Mode_A__Single_task
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundScanUnification

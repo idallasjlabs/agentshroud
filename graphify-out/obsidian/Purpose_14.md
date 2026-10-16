@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mac/README.md"
+source_file: ".agents/skills/i-hermes/README.md"
 type: "document"
-community: "hermes/skills/i-browser/browse.js"
+community: "Hermes — Podcast Production Orchestrator"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-browser/browsejs
+  - community/Hermes__Podcast_Production_Orchestrator
 ---
 
 # Purpose
 
 ## Connections
-- [[macOS System Administrator (MAC)]] - `contains` [EXTRACTED]
+- [[Hermes — Podcast Production Orchestrator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-browser/browsejs
+#graphify/document #graphify/EXTRACTED #community/Hermes__Podcast_Production_Orchestrator

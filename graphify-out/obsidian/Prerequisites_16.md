@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Community 929"
+community: "Quickstart"
 location: "L264"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_929
+  - community/Quickstart
 ---
 
 # Prerequisites
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Quickstart_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_929
+#graphify/document #graphify/EXTRACTED #community/Quickstart

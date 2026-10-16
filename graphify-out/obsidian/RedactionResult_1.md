@@ -1,22 +1,19 @@
 ---
-source_file: "gateway/ingest_api/sanitizer.py"
+source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "ResourceGuard"
-location: "L171"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L39"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ResourceGuard
+  - graphify/EXTRACTED
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # RedactionResult
 
 ## Connections
-- [[._sanitize_presidio()]] - `references` [EXTRACTED]
-- [[._sanitize_regex()]] - `references` [EXTRACTED]
-- [[.sanitize()]] - `references` [EXTRACTED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[RedactionDetail]] - `uses` [INFERRED]
-- [[RedactionResult]] - `uses` [INFERRED]
+- [[dot-scan_response()_2]] - `references` [EXTRACTED]
+- [[Result of scanning and redacting content.]] - `rationale_for` [EXTRACTED]
+- [[prompt_protection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

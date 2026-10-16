@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
+source_file: "docs/operations/macos.md"
 type: "document"
-community: "is_overloaded()"
-location: "L11"
+community: "Deploying AgentShroud on macOS (Apple Silicon / Intel)"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/is_overloaded
+  - community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel
 ---
 
 # Prerequisites
 
 ## Connections
-- [[First Time Setup_1]] - `contains` [EXTRACTED]
+- [[Deploying AgentShroud on macOS (Apple Silicon  Intel)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/is_overloaded
+#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel

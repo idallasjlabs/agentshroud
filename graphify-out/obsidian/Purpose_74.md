@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-apollo/README.md"
+source_file: "docker/config/hermes/skills/i-cr/README.md"
 type: "document"
-community: "test_call_agent_uses_structured_timeout()"
+community: "Project Management (README)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_call_agent_uses_structured_timeout
+  - community/Project_Management_README
 ---
 
 # Purpose
 
 ## Connections
-- [[Apollo — Audio Systems Producer_3]] - `contains` [EXTRACTED]
+- [[Code Review (CR)_1]] - `contains` [EXTRACTED]
+- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_call_agent_uses_structured_timeout
+#graphify/document #graphify/EXTRACTED #community/Project_Management_README

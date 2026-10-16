@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/LOG_LEVEL.md"
+source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "AuditStore"
-location: "L50"
+community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
+location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/EnhancedApprovalQueue_enhanced_queuepy
 ---
 
 # Related Notes
 
 ## Connections
-- [[LOG_LEVEL_1]] - `contains` [EXTRACTED]
+- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditStore
+#graphify/document #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy

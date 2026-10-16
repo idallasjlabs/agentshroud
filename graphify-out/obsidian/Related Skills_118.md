@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/README.md"
+source_file: ".agents/skills/i-cicd/README.md"
 type: "document"
-community: ".test_collaborator_cross_user_messaging_request_"
+community: "CI/CD Pipeline Advisor (README)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_collaborator_cross_user_messaging_request_
+  - community/CI/CD_Pipeline_Advisor_README
 ---
 
 # Related Skills
 
 ## Connections
-- [[Technical Writer (TW)_2]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_collaborator_cross_user_messaging_request_
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README

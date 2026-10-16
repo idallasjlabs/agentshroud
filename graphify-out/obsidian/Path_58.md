@@ -1,19 +1,17 @@
 ---
-source_file: "scripts/export-email-reports.py"
+source_file: "gateway/proxy/dns_blocklist.py"
 type: "code"
-community: "Community 895"
-location: "L96"
+community: ".update"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_895
+  - community/update
 ---
 
 # Path
 
 ## Connections
-- [[_report_date()]] - `calls` [EXTRACTED]
-- [[export_bot()]] - `references` [EXTRACTED]
-- [[main()_33]] - `calls` [EXTRACTED]
+- [[dot-__init__()_186]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_895
+#graphify/code #graphify/EXTRACTED #community/update

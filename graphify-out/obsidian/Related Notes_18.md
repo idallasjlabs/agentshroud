@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
+source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
 type: "document"
-community: "Pre-Deployment Checklist"
-location: "L96"
+community: "ingest_api/models.py"
+location: "L137"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist
+  - community/ingest_api/modelspy
 ---
 
 # Related Notes
 
 ## Connections
-- [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
+- [[Dependency Graph_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist
+#graphify/document #graphify/EXTRACTED #community/ingest_api/modelspy

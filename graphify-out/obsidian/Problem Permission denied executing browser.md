@@ -1,17 +1,17 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Key Benefits"
+community: "Troubleshooting"
 location: "L257"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Key_Benefits
+  - community/Troubleshooting
 ---
 
 # Problem: Permission denied executing browser
 
 ## Connections
-- [[Troubleshooting_19]] - `contains` [EXTRACTED]
+- [[Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Key_Benefits
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting

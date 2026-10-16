@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "Local-Model Job Quality Matrix"
+community: "PrivacyPolicyEnforcer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Local-Model_Job_Quality_Matrix
+  - community/PrivacyPolicyEnforcer
 ---
 
 # Privacy Policy Enforcement Tests
@@ -14,4 +14,4 @@ tags:
 - [[PrivacyPolicyEnforcer]] - `references` [EXTRACTED]
 - [[RBACConfig_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Local-Model_Job_Quality_Matrix
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

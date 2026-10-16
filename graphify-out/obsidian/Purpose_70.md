@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tdd/README.md"
+source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "Skill: MCP Doctor (MCPM-DOCTOR)"
-location: "L6"
+community: "Error Index.md"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR
+  - community/Error_Indexmd
 ---
 
 # Purpose
 
 ## Connections
-- [[Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
-- [[Test-Driven Development README]] - `contains` [EXTRACTED]
+- [[spaCy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

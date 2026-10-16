@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/ingest_api/routes/dashboard.py"
+source_file: "scripts/export-telegram-history.py"
 type: "code"
-community: "Community 65"
-location: "L66"
+community: "export_bot"
+location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_65
+  - community/export_bot
 ---
 
 # Path
 
 ## Connections
-- [[_load_contributor_logs()]] - `references` [EXTRACTED]
-- [[_parse_collaborator_log_dirs()]] - `references` [EXTRACTED]
-- [[get_collaborators()]] - `calls` [EXTRACTED]
-- [[serve_dashboard()]] - `calls` [EXTRACTED]
+- [[export()]] - `references` [EXTRACTED]
+- [[main()_26]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_65
+#graphify/code #graphify/EXTRACTED #community/export_bot

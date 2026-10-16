@@ -1,17 +1,22 @@
 ---
-source_file: "scripts/deploy.sh"
+source_file: "gateway/skills/scan.py"
 type: "code"
-community: "§5 — Trivy Container Scan Results"
-location: "L12"
+community: "Recommendation"
+location: "L42"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/5__Trivy_Container_Scan_Results
+  - graphify/INFERRED
+  - community/Recommendation
 ---
 
-# PATH
+# Path
 
 ## Connections
-- [[deploy.sh]] - `defines` [EXTRACTED]
+- [[Recommendation]] - `uses` [INFERRED]
+- [[ScanResult_4]] - `uses` [INFERRED]
+- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[SkillsManifest]] - `uses` [INFERRED]
+- [[_build_tree()]] - `references` [EXTRACTED]
+- [[main()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/5__Trivy_Container_Scan_Results
+#graphify/code #graphify/INFERRED #community/Recommendation

@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sav/README.md"
+source_file: "docker/config/hermes/skills/i-tdd/README.md"
 type: "document"
-community: "BaseModel"
+community: "Test-Driven Development README"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BaseModel
+  - community/Test-Driven_Development_README
 ---
 
 # Purpose
 
 ## Connections
-- [[System Audit Vault_2]] - `contains` [EXTRACTED]
+- [[Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
+- [[Test-Driven Development README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BaseModel
+#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README

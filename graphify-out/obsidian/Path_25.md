@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/tests/test_config_hot_reload.py"
+source_file: ".agents/skills/i-browser/browse.js"
 type: "code"
-community: "ModeRequest"
-location: "L58"
+community: "Browser — Secure Browser Automation (SKILL)"
+location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/Browser__Secure_Browser_Automation_SKILL
 ---
 
-# Path
+# path
 
 ## Connections
-- [[GatewayConfig_1]] - `uses` [INFERRED]
-- [[_load()]] - `references` [EXTRACTED]
-- [[_write()]] - `references` [EXTRACTED]
+- [[dot-agentsskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModeRequest
+#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL

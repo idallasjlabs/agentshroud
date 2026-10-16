@@ -1,17 +1,17 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "AlertTelegramRelay"
+community: "AgentShroud Docker Configuration"
 location: "L302"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AlertTelegramRelay
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # Port Reference
 
 ## Connections
-- [[Usage_40]] - `contains` [EXTRACTED]
+- [[Usage_55]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AlertTelegramRelay
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

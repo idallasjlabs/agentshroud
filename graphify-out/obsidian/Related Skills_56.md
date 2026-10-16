@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/README.md"
+source_file: "docker/config/hermes/skills/i-qa/README.md"
 type: "document"
-community: "iot_button_register_cb()"
+community: "Production Safety Checklist (SKILL)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iot_button_register_cb
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # Related Skills
 
 ## Connections
-- [[MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
+- [[Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
+- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iot_button_register_cb
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

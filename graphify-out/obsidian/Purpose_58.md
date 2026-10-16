@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-oracle/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "iot_button_register_cb()"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iot_button_register_cb
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # Purpose
 
 ## Connections
-- [[Oracle — Feedback Analyst_2]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iot_button_register_cb
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

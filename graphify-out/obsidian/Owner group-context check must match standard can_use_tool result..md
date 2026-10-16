@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "GroupRoleResolver"
 location: "L315"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/GroupRoleResolver
 ---
 
 # Owner group-context check must match standard can_use_tool result.
 
 ## Connections
-- [[.test_owner_unrestricted_matches_dm_behavior()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_owner_unrestricted_matches_dm_behavior()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver

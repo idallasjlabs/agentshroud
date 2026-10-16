@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/SECURITY_ARCHITECTURE.md"
+source_file: "docker/bots/openclaw/config/workspace/PUBLIC-INFO.md"
 type: "document"
-community: "TestConfigValidation"
-location: "L508"
+community: "AgentShroud — Collaborator Knowledge Base"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/AgentShroud__Collaborator_Knowledge_Base
 ---
 
 # Project Goals
 
 ## Connections
-- [[For Open-Source Contributors]] - `contains` [EXTRACTED]
+- [[AgentShroud — Collaborator Knowledge Base]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Collaborator_Knowledge_Base

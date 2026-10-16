@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm-aws-profile/README.md"
+source_file: ".agents/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "_handle()"
+community: "MCP Doctor (MCPM-DOCTOR)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_handle
+  - community/MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP AWS Profile Configuration README]] - `contains` [EXTRACTED]
+- [[MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_handle
+#graphify/document #graphify/EXTRACTED #community/MCP_Doctor_MCPM-DOCTOR

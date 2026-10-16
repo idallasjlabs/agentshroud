@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
+source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "Deploying AgentShroud on macOS (Apple Silicon / "
-location: "L12"
+community: "MCP AWS Profile Configuration README"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_
+  - community/MCP_AWS_Profile_Configuration_README
 ---
 
 # Purpose
 
 ## Connections
-- [[router.py_3]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_
+#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_README

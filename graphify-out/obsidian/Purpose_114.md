@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
 type: "document"
-community: "_get_gmail_app_password()"
+community: "Function Details"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_get_gmail_app_password
+  - community/Function_Details
 ---
 
 # Purpose
 
 ## Connections
-- [[middleware.py_2]] - `contains` [EXTRACTED]
+- [[subagent_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_get_gmail_app_password
+#graphify/document #graphify/EXTRACTED #community/Function_Details

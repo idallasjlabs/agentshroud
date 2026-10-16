@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-vulcan/README.md"
+source_file: ".agents/skills/i-pm/README.md"
 type: "document"
-community: "SlackAPIProxy"
+community: "Project Management (README)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/Project_Management_README
 ---
 
 # Purpose
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_2]] - `contains` [EXTRACTED]
+- [[Project Management (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/Project_Management_README

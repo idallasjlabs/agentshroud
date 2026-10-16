@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "SSHProxy"
+community: "Request"
 location: "L4325"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/Request
 ---
 
 # Proxy Anthropic API calls through security pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[llm_api_proxy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SSHProxy
+#graphify/rationale #graphify/EXTRACTED #community/Request

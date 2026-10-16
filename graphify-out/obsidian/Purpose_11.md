@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-gg/README.md"
+source_file: ".agents/skills/i-browser/README.md"
 type: "document"
-community: "DNSFilterConfig"
+community: "Browser — Secure Browser Automation"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Purpose
 
 ## Connections
-- [[Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

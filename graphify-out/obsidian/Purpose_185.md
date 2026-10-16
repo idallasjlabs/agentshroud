@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/clamav.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
 type: "document"
-community: "Mode A — Single task"
-location: "L15"
+community: "forwarder.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task
+  - community/forwarderpy
 ---
 
 # Purpose
 
 ## Connections
-- [[ClamAV]] - `contains` [EXTRACTED]
+- [[forwarder.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task
+#graphify/document #graphify/EXTRACTED #community/forwarderpy

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "Role"
 location: "L285"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/Role
 ---
 
 # Rate limits are tracked independently per user.
 
 ## Connections
-- [[.test_per_user_isolation()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_per_user_isolation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/Role

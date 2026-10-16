@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "GroupRoleResolver"
 location: "L233"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/GroupRoleResolver
 ---
 
 # Regular member IS allowed web_search in group context.
 
 ## Connections
-- [[.test_member_allowed_web_search_in_group()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_member_allowed_web_search_in_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver

@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "WebProxy"
+community: "Added"
 location: "L1175"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/Added
 ---
 
 # Recommended Steps
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Migration Notes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/WebProxy
+#graphify/document #graphify/EXTRACTED #community/Added

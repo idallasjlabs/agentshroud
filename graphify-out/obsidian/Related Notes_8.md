@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
+source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "document"
-community: "mcp_permissions.py"
-location: "L112"
+community: "main.py.md"
+location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp_permissionspy
+  - community/mainpymd
 ---
 
 # Related Notes
 
 ## Connections
-- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
+- [[AgentShroud — System Overview]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp_permissionspy
+#graphify/document #graphify/EXTRACTED #community/mainpymd

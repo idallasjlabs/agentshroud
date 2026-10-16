@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ti/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/README.md"
 type: "document"
-community: "1. GitHub MCP Authentication Reset"
+community: "MCP Auth Reset (MCPM-AUTH-RESET)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1_GitHub_MCP_Authentication_Reset
+  - community/MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # Related Skills
 
 ## Connections
-- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
+- [[MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset
+#graphify/document #graphify/EXTRACTED #community/MCP_Auth_Reset_MCPM-AUTH-RESET

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
 type: "document"
-community: "browser_security.py"
+community: "Function Details"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser_securitypy
+  - community/Function_Details
 ---
 
 # Purpose
 
 ## Connections
-- [[ledger.py_2]] - `contains` [EXTRACTED]
+- [[session_security.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser_securitypy
+#graphify/document #graphify/EXTRACTED #community/Function_Details

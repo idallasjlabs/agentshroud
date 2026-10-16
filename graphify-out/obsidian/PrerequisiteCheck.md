@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "code"
-community: "get_trivy_summary()"
+community: "installer.py"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_trivy_summary
+  - community/installerpy
 ---
 
 # PrerequisiteCheck
 
 ## Connections
-- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[check_prerequisites()]] - `calls` [EXTRACTED]
-- [[installer.py]] - `contains` [EXTRACTED]
+- [[installer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_trivy_summary
+#graphify/code #graphify/EXTRACTED #community/installerpy

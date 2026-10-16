@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
 type: "document"
-community: "notion"
+community: "wazuh_client.py"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/notion
+  - community/wazuh_clientpy
 ---
 
 # Purpose
 
 ## Connections
-- [[web_config.py_2]] - `contains` [EXTRACTED]
+- [[wazuh_client.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/notion
+#graphify/document #graphify/EXTRACTED #community/wazuh_clientpy

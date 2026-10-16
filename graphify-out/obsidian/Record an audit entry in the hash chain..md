@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "rationale"
-community: "FetchOutcome"
-location: "L581"
+community: "ProxyAction"
+location: "L614"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/ProxyAction
 ---
 
 # Record an audit entry in the hash chain.
 
 ## Connections
-- [[._audit()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-_audit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FetchOutcome
+#graphify/rationale #graphify/EXTRACTED #community/ProxyAction

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-qa/README.md"
+source_file: "docker/config/openclaw/skills/i-cicd/README.md"
 type: "document"
-community: "_w()"
+community: "CI/CD Pipeline Advisor (CICD)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_w
+  - community/CI/CD_Pipeline_Advisor_CICD
 ---
 
 # Related Skills
 
 ## Connections
-- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_w
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_CICD

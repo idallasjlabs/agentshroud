@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
 type: "document"
-community: "Docker Commands Reference"
+community: "middleware.py"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Commands_Reference
+  - community/middlewarepy
 ---
 
 # Purpose
 
 ## Connections
-- [[ssh_config.py_2]] - `contains` [EXTRACTED]
+- [[middleware.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Commands_Reference
+#graphify/document #graphify/EXTRACTED #community/middlewarepy

@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-qa/README.md"
 type: "document"
-community: "_w()"
+community: "Production Safety Checklist (SKILL)"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/_w
+  - graphify/EXTRACTED
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # Quality Assurance (README)
@@ -14,4 +14,4 @@ tags:
 - [[Quality Assurance (SKILL)]] - `conceptually_related_to` [INFERRED]
 - [[Skills Guide (catalog)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/_w
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

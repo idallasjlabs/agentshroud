@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/himalaya/SKILL.md"
+source_file: "docs/governance/AGENT_ROLES.md"
 type: "document"
-community: "test_ledger.py"
-location: "L29"
+community: "Multi-Agent Role Matrix"
+location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_ledgerpy
+  - community/Multi-Agent_Role_Matrix
 ---
 
 # References
 
 ## Connections
-- [[Himalaya Email CLI]] - `contains` [EXTRACTED]
+- [[Multi-Agent Role Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_ledgerpy
+#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix

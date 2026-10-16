@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm/README.md"
+source_file: "docker/config/hermes/skills/i-athena/README.md"
 type: "document"
-community: "DNSFilterConfig"
+community: "Athena — Knowledge Distiller"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP Tools Usage (MCPM)]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

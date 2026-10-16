@@ -1,29 +1,24 @@
 ---
-source_file: "gateway/tests/test_redteam_probes.py"
+source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "ResourceGuard"
-location: "L30"
+community: "DataLedger"
+location: "L173"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ResourceGuard
+  - community/DataLedger
 ---
 
 # PIISanitizer
 
 ## Connections
-- [[ContextGuard]] - `uses` [INFERRED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
-- [[EgressFilterConfig]] - `uses` [INFERRED]
-- [[EgressPolicy]] - `uses` [INFERRED]
-- [[EncodingDetector]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
-- [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
-- [[_make_pii_sanitizer()]] - `references` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[DataLedger]] - `uses` [INFERRED]
+- [[GatewayConfig_3]] - `uses` [INFERRED]
+- [[LedgerConfig_1]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
+- [[sanitizer()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ResourceGuard
+#graphify/code #graphify/INFERRED #community/DataLedger

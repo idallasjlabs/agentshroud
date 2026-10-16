@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "ResourceGuard"
+community: "PIIConfig"
 location: "L68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/PIIConfig
 ---
 
 # Process 1000 mixed messages in under 10 seconds.
 
 ## Connections
-- [[.test_1000_messages_under_10s()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_1000_messages_under_10s()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

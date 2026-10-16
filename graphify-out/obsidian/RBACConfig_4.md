@@ -1,22 +1,20 @@
 ---
-source_file: "gateway/tests/test_tool_acl.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L28"
+community: "Role"
+location: "L64"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TelegramAPIProxy
+  - community/Role
 ---
 
 # RBACConfig
 
 ## Connections
+- [[dot-__init__()_124]] - `references` [EXTRACTED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
-- [[ToolACLConfig]] - `uses` [INFERRED]
-- [[ToolACLEnforcer]] - `uses` [INFERRED]
-- [[_make_rbac()_1]] - `references` [EXTRACTED]
+- [[Role_96]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/TelegramAPIProxy
+#graphify/code #graphify/INFERRED #community/Role

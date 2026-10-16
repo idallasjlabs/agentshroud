@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "Examples"
+community: "_build_image_targets"
 location: "L923"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Examples
+  - community/_build_image_targets
 ---
 
 # Pin _running_image to the docker-unavailable fallback path so these         test
 
 ## Connections
-- [[._no_docker()]] - `rationale_for` [EXTRACTED]
+- [[dot-_no_docker()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Examples
+#graphify/rationale #graphify/EXTRACTED #community/_build_image_targets

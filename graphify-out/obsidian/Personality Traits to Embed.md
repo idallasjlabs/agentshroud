@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "Core Security Principles"
+community: "Phase 3 Requirements: Working Chat Container"
 location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Core_Security_Principles
+  - community/Phase_3_Requirements_Working_Chat_Container
 ---
 
 # Personality Traits to Embed
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Part 1 Isaiah's Persona Package]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Core_Security_Principles
+#graphify/document #graphify/EXTRACTED #community/Phase_3_Requirements_Working_Chat_Container

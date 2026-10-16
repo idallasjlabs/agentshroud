@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-hermes/README.md"
+source_file: "docker/config/hermes/skills/i-athena/README.md"
 type: "document"
-community: "Browser Fetch Skill"
+community: "Athena — Knowledge Distiller"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Fetch_Skill
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Related Skills
 
 ## Connections
-- [[Hermes — Podcast Production Orchestrator]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Fetch_Skill
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

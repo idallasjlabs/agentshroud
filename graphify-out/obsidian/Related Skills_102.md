@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm/README.md"
+source_file: ".agents/skills/i-sec-offense/README.md"
 type: "document"
-community: "TestRecommendedConfig"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestRecommendedConfig
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Related Skills
 
 ## Connections
-- [[MCP Tools Usage (MCPM)_2]] - `contains` [EXTRACTED]
+- [[Red Team Adversarial Tester (SEC-OFFENSE)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestRecommendedConfig
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

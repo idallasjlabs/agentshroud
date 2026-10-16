@@ -1,17 +1,36 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
-type: "document"
-community: "Function Details"
-location: "L62"
+source_file: "gateway/ingest_api/models.py"
+type: "code"
+community: "ToolResultSanitizer"
+location: "L197"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/ToolResultSanitizer
 ---
 
 # RedactionDetail
 
 ## Connections
-- [[Model Details]] - `contains` [EXTRACTED]
+- [[dot-_sanitize_regex()]] - `calls` [EXTRACTED]
+- [[dot-test_email_content_scanning()]] - `calls` [EXTRACTED]
+- [[dot-test_icloud_contact_scanning()]] - `calls` [EXTRACTED]
+- [[dot-test_process_tool_result_success()]] - `calls` [EXTRACTED]
+- [[dot-test_sanitize_dict_with_pii()]] - `calls` [EXTRACTED]
+- [[dot-test_sanitize_string_with_pii()]] - `calls` [EXTRACTED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[Individual redaction record]] - `rationale_for` [EXTRACTED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
+- [[RedactionResult_2]] - `uses` [INFERRED]
+- [[TestConfidenceFloor]] - `uses` [INFERRED]
+- [[TestConfigurationLoading]] - `uses` [INFERRED]
+- [[TestMiddlewareIntegration]] - `uses` [INFERRED]
+- [[TestRealWorldScenarios]] - `uses` [INFERRED]
+- [[TestToolResultPIIConfig]] - `uses` [INFERRED]
+- [[TestToolResultSanitizer_1]] - `uses` [INFERRED]
+- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
+- [[sanitizer.py_2]] - `imports` [EXTRACTED]
+- [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

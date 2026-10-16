@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "WebhookReceiver"
+community: "ContainerEngine"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - community/ContainerEngine
 ---
 
 # Push an image to a registry.
 
 ## Connections
-- [[.push()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-push()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/rationale #graphify/EXTRACTED #community/ContainerEngine

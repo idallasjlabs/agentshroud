@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
+source_file: "docker/config/openclaw/skills/i-daedalus/README.md"
 type: "document"
-community: "AgentShroud Red Team Adversarial Tester"
-location: "L12"
+community: "openclaw/skills/i-cr/SKILL.md"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Purpose
 
 ## Connections
-- [[resource_guard.py_2]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

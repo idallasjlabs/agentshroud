@@ -1,20 +1,24 @@
 ---
-source_file: "scripts/export-bot-conversations.py"
+source_file: "gateway/web/api.py"
 type: "code"
-community: "CollaboratorGreeter"
-location: "L60"
+community: "api.py"
+location: "L946"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CollaboratorGreeter
+  - community/apipy
 ---
 
 # Path
 
 ## Connections
-- [[_docker_read_file()]] - `references` [EXTRACTED]
-- [[export_hermes()]] - `references` [EXTRACTED]
-- [[export_openclaw()]] - `references` [EXTRACTED]
-- [[main()_18]] - `calls` [EXTRACTED]
+- [[CitationVerifier]] - `uses` [INFERRED]
+- [[DraftEntry]] - `uses` [INFERRED]
+- [[IntelReportStore]] - `uses` [INFERRED]
+- [[_skills_reload_paths()]] - `references` [EXTRACTED]
+- [[dashboard()]] - `calls` [EXTRACTED]
+- [[dashboard_main()]] - `calls` [EXTRACTED]
+- [[get_config()_1]] - `calls` [EXTRACTED]
+- [[update_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CollaboratorGreeter
+#graphify/code #graphify/EXTRACTED #community/apipy

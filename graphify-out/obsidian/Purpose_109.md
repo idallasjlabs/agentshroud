@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/README.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
 type: "document"
-community: ".test_collaborator_cross_user_messaging_request_"
-location: "L6"
+community: "models.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_collaborator_cross_user_messaging_request_
+  - community/modelspy
 ---
 
 # Purpose
 
 ## Connections
-- [[Technical Writer (TW)_2]] - `contains` [EXTRACTED]
+- [[models.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_collaborator_cross_user_messaging_request_
+#graphify/document #graphify/EXTRACTED #community/modelspy

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/fastapi.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
 type: "document"
-community: "TestFileSandbox"
-location: "L15"
+community: "web_config.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestFileSandbox
+  - community/web_configpy
 ---
 
 # Purpose
 
 ## Connections
-- [[FastAPI_4]] - `contains` [EXTRACTED]
+- [[web_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFileSandbox
+#graphify/document #graphify/EXTRACTED #community/web_configpy

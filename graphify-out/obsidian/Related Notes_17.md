@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
+source_file: "docs/vault/09 - Diagrams/Startup Flow Diagram.md"
 type: "document"
-community: "Pre-Deployment Checklist"
-location: "L109"
+community: "Startup Flow Diagram"
+location: "L83"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist
+  - community/Startup_Flow_Diagram
 ---
 
 # Related Notes
 
 ## Connections
-- [[Dockerfile — Bot (OpenClaw)]] - `contains` [EXTRACTED]
+- [[Startup Flow Diagram_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist
+#graphify/document #graphify/EXTRACTED #community/Startup_Flow_Diagram

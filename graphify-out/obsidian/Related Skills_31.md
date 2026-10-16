@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sav/README.md"
+source_file: "docker/config/openclaw/skills/i-data/README.md"
 type: "document"
-community: "DNSFilterConfig"
-location: "L12"
+community: "Data Validation (DATA-VAL)"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/Data_Validation_DATA-VAL
 ---
 
 # Related Skills
 
 ## Connections
-- [[System Audit Vault]] - `contains` [EXTRACTED]
+- [[Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/Data_Validation_DATA-VAL

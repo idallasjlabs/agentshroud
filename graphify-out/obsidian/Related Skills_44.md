@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/README.md"
+source_file: "docker/config/openclaw/skills/i-qa/README.md"
 type: "document"
-community: "agentshroud-gateway container (starts first)"
+community: "Quality Assurance (QA)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-gateway_container_starts_first
+  - community/Quality_Assurance_QA
 ---
 
 # Related Skills
 
 ## Connections
-- [[Browser — Secure Browser Automation_2]] - `contains` [EXTRACTED]
+- [[Quality Assurance (QA)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway_container_starts_first
+#graphify/document #graphify/EXTRACTED #community/Quality_Assurance_QA

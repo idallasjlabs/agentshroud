@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-athena/README.md"
+source_file: "docker/config/hermes/skills/i-pm/README.md"
 type: "document"
-community: "GitHub Branch Protection — `main`"
+community: "Project Management (README)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Branch_Protection__main
+  - community/Project_Management_README
 ---
 
 # Purpose
 
 ## Connections
-- [[Athena — Knowledge Distiller_3]] - `contains` [EXTRACTED]
+- [[Project Management (PM)_1]] - `contains` [EXTRACTED]
+- [[Project Management (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Branch_Protection__main
+#graphify/document #graphify/EXTRACTED #community/Project_Management_README

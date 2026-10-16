@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md"
 type: "document"
-community: "lvgl_kawaii_face.c"
-location: "L36"
+community: "troubleshooting.md"
+location: "L143"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/lvgl_kawaii_facec
+  - community/troubleshootingmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - `contains` [EXTRACTED]
+- [[troubleshooting_23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/lvgl_kawaii_facec
+#graphify/document #graphify/EXTRACTED #community/troubleshootingmd

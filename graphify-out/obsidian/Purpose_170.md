@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
+source_file: "docker/config/openclaw/skills/i-sav/README.md"
 type: "document"
-community: "TestNoResponseGuarantee"
-location: "L12"
+community: "openclaw/skills/i-cr/SKILL.md"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestNoResponseGuarantee
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Purpose
 
 ## Connections
-- [[trivy_report.py_2]] - `contains` [EXTRACTED]
+- [[System Audit Vault_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestNoResponseGuarantee
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

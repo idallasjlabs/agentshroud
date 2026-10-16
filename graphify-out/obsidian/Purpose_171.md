@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
+source_file: "docker/config/openclaw/skills/i-sec-defense/README.md"
 type: "document"
-community: "test_claude_via_openai_path.py"
-location: "L12"
+community: "openclaw/skills/i-cr/SKILL.md"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_claude_via_openai_pathpy
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Purpose
 
 ## Connections
-- [[TrustManager_5]] - `contains` [EXTRACTED]
+- [[Blue Team Security Auditor (SEC-DEFENSE)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_claude_via_openai_pathpy
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

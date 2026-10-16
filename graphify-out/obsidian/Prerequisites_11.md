@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
+source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: ".mcp.json"
-location: "L43"
+community: "Common Operations"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcpjson
+  - community/Common_Operations
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Part 2 Set Up Gmail Integration]] - `contains` [EXTRACTED]
+- [[Himalaya Email CLI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcpjson
+#graphify/document #graphify/EXTRACTED #community/Common_Operations

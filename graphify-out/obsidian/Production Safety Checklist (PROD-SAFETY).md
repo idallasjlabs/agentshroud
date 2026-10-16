@@ -1,20 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-ps/README.md"
+source_file: "docker/config/openclaw/skills/i-ps/README.md"
 type: "document"
-community: "_w()"
+community: "Production Safety Checklist (PROD-SAFETY)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_w
+  - community/Production_Safety_Checklist_PROD-SAFETY
 ---
 
 # Production Safety Checklist (PROD-SAFETY)
 
 ## Connections
-- [[Purpose_62]] - `contains` [EXTRACTED]
-- [[README_67]] - `contains` [EXTRACTED]
-- [[Related Skills_68]] - `contains` [EXTRACTED]
-- [[Usage_69]] - `contains` [EXTRACTED]
+- [[Purpose_50]] - `contains` [EXTRACTED]
+- [[Related Skills_43]] - `contains` [EXTRACTED]
+- [[Usage_46]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-psREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_w
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_PROD-SAFETY

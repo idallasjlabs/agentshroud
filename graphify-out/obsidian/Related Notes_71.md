@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Full System Flowchart.md"
+source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: ".get_or_create_session()"
-location: "L129"
+community: "python-jose"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/get_or_create_session
+  - community/python-jose
 ---
 
 # Related Notes
 
 ## Connections
-- [[Full System Flowchart_1]] - `contains` [EXTRACTED]
+- [[python-jose_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/get_or_create_session
+#graphify/document #graphify/EXTRACTED #community/python-jose

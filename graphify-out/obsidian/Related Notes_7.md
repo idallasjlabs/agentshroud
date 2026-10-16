@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
+source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "TestOverallDetectionRate"
-location: "L37"
+community: "main.py.md"
+location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOverallDetectionRate
+  - community/mainpymd
 ---
 
 # Related Notes
 
 ## Connections
-- [[browser-fetch.js_2]] - `contains` [EXTRACTED]
+- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOverallDetectionRate
+#graphify/document #graphify/EXTRACTED #community/mainpymd

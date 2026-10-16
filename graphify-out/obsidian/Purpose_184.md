@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
+source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
 type: "document"
-community: "archive_old_events()"
-location: "L15"
+community: "apply-patches.js"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/archive_old_events
+  - community/apply-patchesjs
 ---
 
 # Purpose
 
 ## Connections
-- [[aiosqlite_1]] - `contains` [EXTRACTED]
+- [[apply-patches.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/archive_old_events
+#graphify/document #graphify/EXTRACTED #community/apply-patchesjs

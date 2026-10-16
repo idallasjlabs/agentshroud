@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/log_sanitizer.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "iCloud Services"
-location: "L24"
+community: "MiddlewareManager"
+location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/MiddlewareManager
 ---
 
 # Pattern
 
 ## Connections
-- [[._compile_patterns()]] - `references` [EXTRACTED]
+- [[dot-_create_detection_patterns()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/iCloud_Services
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

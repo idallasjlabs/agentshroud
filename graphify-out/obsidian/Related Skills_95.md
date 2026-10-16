@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mc/README.md"
+source_file: ".agents/skills/i-bs/README.md"
 type: "document"
-community: "._get_hmac_key()"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_get_hmac_key
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Related Skills
 
 ## Connections
-- [[GSDE&G Development Master Checklist (MC)_2]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_get_hmac_key
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

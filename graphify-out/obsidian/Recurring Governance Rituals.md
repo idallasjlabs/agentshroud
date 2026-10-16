@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Slack Channel Setup"
+community: "8. Governance Model"
 location: "L615"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Slack_Channel_Setup
+  - community/8_Governance_Model
 ---
 
 # Recurring Governance Rituals
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[8. Governance Model]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Slack_Channel_Setup
+#graphify/document #graphify/EXTRACTED #community/8_Governance_Model

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "RateLimiter"
+community: "GatewayEmailService"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/GatewayEmailService
 ---
 
 # Protocol
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SmtpLike]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimiter
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

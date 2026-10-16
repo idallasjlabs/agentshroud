@@ -1,42 +1,22 @@
 ---
-source_file: "gateway/ingest_api/sanitizer.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "lifespan.py"
-location: "L32"
+community: "PIIConfig"
+location: "L28"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/lifespanpy
+  - graphify/EXTRACTED
+  - community/PIIConfig
 ---
 
 # PIIConfig
 
 ## Connections
-- [[.__init__()_16]] - `references` [EXTRACTED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[RedactionDetail]] - `uses` [INFERRED]
-- [[RedactionResult]] - `uses` [INFERRED]
-- [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth_1]] - `uses` [INFERRED]
-- [[TestConcurrency]] - `uses` [INFERRED]
-- [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard_1]] - `uses` [INFERRED]
-- [[TestCryptography]] - `uses` [INFERRED]
-- [[TestDependencySecurity]] - `uses` [INFERRED]
-- [[TestDoSPrevention]] - `uses` [INFERRED]
-- [[TestExfiltrationDetection]] - `uses` [INFERRED]
-- [[TestFileSandbox]] - `uses` [INFERRED]
-- [[TestHTTPSecurity]] - `uses` [INFERRED]
-- [[TestInfoLeakage]] - `uses` [INFERRED]
-- [[TestLoggingSecurity]] - `uses` [INFERRED]
-- [[TestMCPSecurity]] - `uses` [INFERRED]
-- [[TestNetworkSecurity]] - `uses` [INFERRED]
-- [[TestPIIDetection_1]] - `uses` [INFERRED]
-- [[TestPrivilegeEscalation]] - `uses` [INFERRED]
-- [[TestPromptGuard]] - `uses` [INFERRED]
-- [[TestResourceProtection]] - `uses` [INFERRED]
-- [[TestSupplyChain_1]] - `uses` [INFERRED]
-- [[TestTimingAttacks]] - `uses` [INFERRED]
-- [[TestWebSecurity]] - `uses` [INFERRED]
+- [[dot-__init__()_172]] - `references` [EXTRACTED]
+- [[dot-get_config_for_tool()]] - `references` [EXTRACTED]
+- [[dot-get_tool_config()]] - `references` [EXTRACTED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PIISanitizer_2]] - `uses` [INFERRED]
+- [[RedactionResult_3]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

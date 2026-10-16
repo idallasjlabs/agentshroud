@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
 type: "document"
-community: "1. Accomplishments This Phase"
-location: "L72"
+community: "prompt_guard.py.md"
+location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1_Accomplishments_This_Phase
+  - community/prompt_guardpymd
 ---
 
 # Related
 
 ## Connections
-- [[web_proxy.py_2]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1_Accomplishments_This_Phase
+#graphify/document #graphify/EXTRACTED #community/prompt_guardpymd

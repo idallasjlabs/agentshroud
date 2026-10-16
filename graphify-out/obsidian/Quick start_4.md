@@ -1,17 +1,20 @@
 ---
-source_file: "skills/openclaw/video-frames/SKILL.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Skill: Hermes Dev Workflow (HDEV)"
-location: "L29"
+community: "SecureBrowser Skill"
+location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Hermes_Dev_Workflow_HDEV
+  - community/SecureBrowser_Skill
 ---
 
-# Quick start
+# Quick Start
 
 ## Connections
-- [[Video Frames (ffmpeg)]] - `contains` [EXTRACTED]
+- [[1. Verify Installation]] - `contains` [EXTRACTED]
+- [[2. Configure Allowlist]] - `contains` [EXTRACTED]
+- [[3. Test Navigation]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Hermes_Dev_Workflow_HDEV
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

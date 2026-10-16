@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-oracle/README.md"
+source_file: "docker/config/openclaw/skills/i-athena/README.md"
 type: "document"
-community: "AgentShroud System Architecture Document (SAD)"
+community: "Athena — Knowledge Distiller"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_System_Architecture_Document_SAD
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Related Skills
 
 ## Connections
-- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Architecture_Document_SAD
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

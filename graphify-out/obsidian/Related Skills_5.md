@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-bs/README.md"
+source_file: ".agents/skills/i-data/README.md"
 type: "document"
-community: "DNSFilterConfig"
+community: "Data Validation (DATA-VAL)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/Data_Validation_DATA-VAL
 ---
 
 # Related Skills
 
 ## Connections
-- [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
+- [[Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/Data_Validation_DATA-VAL

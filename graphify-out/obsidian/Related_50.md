@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
 type: "document"
-community: "TestAtomicRegistryWrites"
-location: "L84"
+community: "web_proxy.py"
+location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestAtomicRegistryWrites
+  - community/web_proxypy
 ---
 
 # Related
 
 ## Connections
-- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[web_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestAtomicRegistryWrites
+#graphify/document #graphify/EXTRACTED #community/web_proxypy

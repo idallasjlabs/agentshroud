@@ -1,20 +1,22 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L64"
+community: "RBACConfig"
+location: "L28"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MiddlewareManager
+  - community/RBACConfig
 ---
 
 # RBACConfig
 
 ## Connections
-- [[.__init__()_112]] - `references` [EXTRACTED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[Role_96]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
+- [[ToolACLConfig]] - `uses` [INFERRED]
+- [[ToolACLEnforcer]] - `uses` [INFERRED]
+- [[_make_rbac()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MiddlewareManager
+#graphify/code #graphify/INFERRED #community/RBACConfig

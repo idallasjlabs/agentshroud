@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/LLM_PROVIDER_SETUP.md"
 type: "document"
-community: "pipeline.py — Security Pipeline"
+community: "AgentShroud™ LLM Provider Setup & Switching Guide"
 location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pipelinepy__Security_Pipeline
+  - community/AgentShroud_LLM_Provider_Setup__Switching_Guide
 ---
 
 # Provider Model Strings:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[3. Switching Models in OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_LLM_Provider_Setup__Switching_Guide

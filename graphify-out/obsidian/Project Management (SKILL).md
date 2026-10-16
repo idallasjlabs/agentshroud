@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-pm/SKILL.md"
 type: "document"
-community: "AuditExporter"
+community: "Project Management (README)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditExporter
+  - community/Project_Management_README
 ---
 
 # Project Management (SKILL)
@@ -20,4 +20,4 @@ tags:
 - [[Security Audit (i-sec)]] - `references` [EXTRACTED]
 - [[Test-Driven Development README]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditExporter
+#graphify/document #graphify/EXTRACTED #community/Project_Management_README

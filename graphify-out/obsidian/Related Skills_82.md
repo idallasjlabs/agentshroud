@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/README.md"
+source_file: ".agents/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "ssh_runner()"
-location: "L14"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+location: "L161"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ssh_runner
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Related Skills
 
 ## Connections
-- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
+- [[Skill MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ssh_runner
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

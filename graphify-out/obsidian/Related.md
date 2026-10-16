@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
 type: "document"
-community: "Skill: Project Management (PM)"
-location: "L97"
+community: "EgressFilter"
+location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM
+  - community/EgressFilter
 ---
 
 # Related
 
 ## Connections
-- [[ADR-009 Enforce-by-Default Security Philosophy]] - `contains` [EXTRACTED]
+- [[EgressFilter_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM
+#graphify/document #graphify/EXTRACTED #community/EgressFilter

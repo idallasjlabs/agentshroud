@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
 type: "document"
-community: "TestParseHostsLine"
-location: "L75"
+community: "egress_config.py"
+location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestParseHostsLine
+  - community/egress_configpy
 ---
 
 # Related
 
 ## Connections
-- [[canary.py_2]] - `contains` [EXTRACTED]
+- [[egress_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestParseHostsLine
+#graphify/document #graphify/EXTRACTED #community/egress_configpy

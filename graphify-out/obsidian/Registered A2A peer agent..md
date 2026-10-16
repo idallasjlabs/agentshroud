@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "rationale"
-community: "hermes/skills/i-bs/README.md"
+community: "A2AGovernanceProxy"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/A2AGovernanceProxy
 ---
 
 # Registered A2A peer agent.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[A2APeer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/rationale #graphify/EXTRACTED #community/A2AGovernanceProxy

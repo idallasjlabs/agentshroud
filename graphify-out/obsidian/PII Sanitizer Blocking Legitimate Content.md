@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "test_clamav_pipeline.py"
+community: "troubleshooting.md"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_clamav_pipelinepy
+  - community/troubleshootingmd
 ---
 
 # PII Sanitizer Blocking Legitimate Content
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Common Issues_1]] - `contains` [EXTRACTED]
 - [[ContextGuard False Positive Collaborator Block]] - `semantically_similar_to` [INFERRED]
-- [[troubleshooting]] - `references` [EXTRACTED]
+- [[troubleshooting_23]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_clamav_pipelinepy
+#graphify/document #graphify/EXTRACTED #community/troubleshootingmd

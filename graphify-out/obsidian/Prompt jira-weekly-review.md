@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/jira-weekly-review.txt"
 type: "document"
-community: "TestSplitForSpeech"
+community: "Prompt: Hermes Competitive Intelligence Email (AM/PM)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestSplitForSpeech
+  - community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM
 ---
 
 # Prompt: jira-weekly-review
@@ -17,4 +17,4 @@ tags:
 - [[Seed Job jira-weekly-review]] - `conceptually_related_to` [INFERRED]
 - [[jira_weekly_review.py Pre-Committed Posting Script]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestSplitForSpeech
+#graphify/document #graphify/EXTRACTED #community/Prompt_Hermes_Competitive_Intelligence_Email_AM/PM

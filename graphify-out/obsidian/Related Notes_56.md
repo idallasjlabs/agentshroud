@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Container Errors.md"
+source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
 type: "document"
-community: "archive_old_events()"
-location: "L119"
+community: "mcp-proxy-wrapper.js"
+location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/archive_old_events
+  - community/mcp-proxy-wrapperjs
 ---
 
 # Related Notes
 
 ## Connections
-- [[Container Errors_1]] - `contains` [EXTRACTED]
+- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/archive_old_events
+#graphify/document #graphify/EXTRACTED #community/mcp-proxy-wrapperjs

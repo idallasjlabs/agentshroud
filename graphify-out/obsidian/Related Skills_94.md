@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mac/README.md"
+source_file: ".agents/skills/i-aws/README.md"
 type: "document"
-community: "sunday-upgrade.sh"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sunday-upgradesh
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Related Skills
 
 ## Connections
-- [[macOS System Administrator (MAC)_2]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sunday-upgradesh
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

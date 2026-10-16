@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/README.md"
+source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "Available MCP Servers"
-location: "L6"
+community: "Pydantic"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Available_MCP_Servers
+  - community/Pydantic
 ---
 
 # Purpose
 
 ## Connections
-- [[Browser — Secure Browser Automation]] - `contains` [EXTRACTED]
+- [[Pydantic]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers
+#graphify/document #graphify/EXTRACTED #community/Pydantic

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Architecture"
+community: "P2 High Priority Incidents"
 location: "L315"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture
+  - community/P2_High_Priority_Incidents
 ---
 
 # PII Leak Incident
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[P2 High Priority Incidents]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture
+#graphify/document #graphify/EXTRACTED #community/P2_High_Priority_Incidents

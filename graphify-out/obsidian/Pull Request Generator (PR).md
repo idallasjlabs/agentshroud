@@ -1,21 +1,21 @@
 ---
-source_file: ".agents/skills/i-pr/README.md"
+source_file: "docker/config/openclaw/skills/i-pr/README.md"
 type: "document"
-community: "DNSFilterConfig"
+community: "Pull Request Generator (PR)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/Pull_Request_Generator_PR
 ---
 
 # Pull Request Generator (PR)
 
 ## Connections
-- [[Purpose_23]] - `contains` [EXTRACTED]
-- [[README_23]] - `contains` [EXTRACTED]
-- [[Related Skills_26]] - `contains` [EXTRACTED]
-- [[SKILL_15]] - `contains` [EXTRACTED]
-- [[Usage_26]] - `contains` [EXTRACTED]
+- [[Purpose_49]] - `contains` [EXTRACTED]
+- [[Related Skills_42]] - `contains` [EXTRACTED]
+- [[Usage_45]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-prREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/Pull_Request_Generator_PR

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "test_mfa_guard.py"
+community: "AgentRegistry"
 location: "L211"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/AgentRegistry
 ---
 
 # Register a supergroup-type agent identity.
 
 ## Connections
-- [[.test_register_group_agent_with_chat_type_supergroup()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_register_group_agent_with_chat_type_supergroup()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry

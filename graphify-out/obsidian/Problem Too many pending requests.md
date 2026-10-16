@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Browser — Secure Browser Automation (SKILL)"
+community: "AgentShroud Device Pairing Management"
 location: "L358"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_SKILL
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # Problem: Too many pending requests
 
 ## Connections
-- [[Troubleshooting_26]] - `contains` [EXTRACTED]
+- [[Troubleshooting_12]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

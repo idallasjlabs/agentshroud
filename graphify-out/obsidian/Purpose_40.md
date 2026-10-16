@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/README.md"
+source_file: "docker/config/openclaw/skills/i-gg/README.md"
 type: "document"
-community: "Assess severity"
+community: "Git Workflow Guardian (GIT-GUARD)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Assess_severity
+  - community/Git_Workflow_Guardian_GIT-GUARD
 ---
 
 # Purpose
 
 ## Connections
-- [[AWS Cloud Management & FinOps_1]] - `contains` [EXTRACTED]
+- [[Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Assess_severity
+#graphify/document #graphify/EXTRACTED #community/Git_Workflow_Guardian_GIT-GUARD

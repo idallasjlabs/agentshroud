@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/raspberry-pi.md"
+source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
 type: "document"
-community: "TestKillSwitchScript"
-location: "L3"
+community: "First Time Setup"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestKillSwitchScript
+  - community/First_Time_Setup
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - `contains` [EXTRACTED]
+- [[First Time Setup_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestKillSwitchScript
+#graphify/document #graphify/EXTRACTED #community/First_Time_Setup

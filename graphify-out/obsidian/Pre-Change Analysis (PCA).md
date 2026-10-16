@@ -1,13 +1,13 @@
 ---
 source_file: ".agents/skills/i-pca/SKILL.md"
 type: "document"
-community: "agentshroud-blueteam/references/steve-hay-assess"
+community: "Pre-Change Analysis (PCA)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/references/steve-hay-assess
+  - community/Pre-Change_Analysis_PCA
 ---
 
 # Pre-Change Analysis (PCA)
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/references/steve-hay-assess
+#graphify/document #graphify/EXTRACTED #community/Pre-Change_Analysis_PCA

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "LLMProxy"
-location: "L1143"
+community: ".proxy_messages"
+location: "L1160"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/proxy_messages
 ---
 
 # Proxy a streaming LLM API request, yielding SSE chunks as they arrive. Used…
 
 ## Connections
-- [[.proxy_messages_streaming()]] - `rationale_for` [EXTRACTED]
+- [[dot-proxy_messages_streaming()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LLMProxy
+#graphify/rationale #graphify/EXTRACTED #community/proxy_messages

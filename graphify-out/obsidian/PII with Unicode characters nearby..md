@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "lifespan.py"
+community: "AlertDispatcher"
 location: "L189"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/AlertDispatcher
 ---
 
 # PII with Unicode characters nearby.
 
 ## Connections
-- [[.test_unicode_pii()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_unicode_pii()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

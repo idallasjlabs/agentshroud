@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
+source_file: "docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md"
 type: "document"
-community: "TestMinimalConfig"
-location: "L78"
+community: "TELEGRAM_API_BASE_URL"
+location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMinimalConfig
+  - community/TELEGRAM_API_BASE_URL
 ---
 
 # Related Notes
 
 ## Connections
-- [[apply-patches.js_2]] - `contains` [EXTRACTED]
+- [[TELEGRAM_API_BASE_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMinimalConfig
+#graphify/document #graphify/EXTRACTED #community/TELEGRAM_API_BASE_URL

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec-defense/README.md"
+source_file: "docker/config/openclaw/skills/i-eightd/README.md"
 type: "document"
-community: "Skill: CI/CD Pipeline Advisor (CICD)"
+community: "8D Root Cause Analysis"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_CI/CD_Pipeline_Advisor_CICD
+  - community/8D_Root_Cause_Analysis
 ---
 
 # Related Skills
 
 ## Connections
-- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD
+#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis

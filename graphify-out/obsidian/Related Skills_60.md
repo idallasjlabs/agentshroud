@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-doctor/README.md"
+source_file: ".agents/skills/i-pm/README.md"
 type: "document"
-community: "SlackAPIProxy"
+community: "Project Management (README)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/Project_Management_README
 ---
 
 # Related Skills
 
 ## Connections
-- [[MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
+- [[Project Management (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/Project_Management_README

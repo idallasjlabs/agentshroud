@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/README.md"
+source_file: "docker/config/openclaw/skills/i-vulcan/README.md"
 type: "document"
-community: "TestSessionIsolation"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestSessionIsolation
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Related Skills
 
 ## Connections
-- [[Socrates — Dialogue Architect_3]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestSessionIsolation
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

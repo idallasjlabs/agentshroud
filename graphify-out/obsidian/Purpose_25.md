@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ps/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/README.md"
 type: "document"
-community: "_w()"
+community: "MCP Auth Reset (MCPM-AUTH-RESET)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_w
+  - community/MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # Purpose
 
 ## Connections
-- [[Production Safety Checklist (SKILL)]] - `contains` [EXTRACTED]
+- [[MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_w
+#graphify/document #graphify/EXTRACTED #community/MCP_Auth_Reset_MCPM-AUTH-RESET

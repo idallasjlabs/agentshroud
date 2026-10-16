@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "rationale"
-community: "GitHub Copilot CLI Setup Guide"
+community: "WebhookReceiver"
 location: "L31"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GitHub_Copilot_CLI_Setup_Guide
+  - community/WebhookReceiver
 ---
 
 # Receives webhooks and routes them through the security pipeline.      In product
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[WebhookReceiver]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide
+#graphify/rationale #graphify/EXTRACTED #community/WebhookReceiver

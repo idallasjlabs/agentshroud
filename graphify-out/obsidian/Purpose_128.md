@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
+source_file: ".agents/skills/i-sad/README.md"
 type: "document"
-community: "Layer-by-Layer Breakdown"
-location: "L12"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Layer-by-Layer_Breakdown
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Purpose
 
 ## Connections
-- [[http_proxy.py_2]] - `contains` [EXTRACTED]
+- [[System Audit Documentation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

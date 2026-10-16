@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/falco-rules.md"
+source_file: "docs/vault/05 - Dependencies/fastapi.md"
 type: "document"
-community: "GroupApprovalRouter"
-location: "L64"
+community: "All Dependencies.md"
+location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/All_Dependenciesmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[falco-rules.yaml]] - `contains` [EXTRACTED]
+- [[FastAPI_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

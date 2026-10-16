@@ -1,20 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-pm/README.md"
+source_file: "docker/config/openclaw/skills/i-pm/README.md"
 type: "document"
-community: "AuditExporter"
+community: "Project Management (PM)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditExporter
+  - community/Project_Management_PM
 ---
 
 # Project Management (PM)
 
 ## Connections
-- [[Purpose_59]] - `contains` [EXTRACTED]
-- [[README_64]] - `contains` [EXTRACTED]
-- [[Related Skills_65]] - `contains` [EXTRACTED]
-- [[Usage_66]] - `contains` [EXTRACTED]
+- [[Purpose_48]] - `contains` [EXTRACTED]
+- [[Related Skills_41]] - `contains` [EXTRACTED]
+- [[Usage_44]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-pmREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditExporter
+#graphify/document #graphify/EXTRACTED #community/Project_Management_PM

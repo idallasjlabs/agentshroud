@@ -1,16 +1,17 @@
 ---
-source_file: "docker/config/hermes/SOUL.md"
+source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "concept"
-community: "10. Troubleshooting"
+community: "agentshroud-ieee-paper.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/10_Troubleshooting
+  - community/agentshroud-ieee-papermd
 ---
 
 # PII Sanitizer
 
 ## Connections
-- [[SOUL_2]] - `references` [EXTRACTED]
+- [[Microsoft Presidio PII Detection Engine]] - `implements` [EXTRACTED]
+- [[agentshroud-ieee-paper]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/10_Troubleshooting
+#graphify/concept #graphify/EXTRACTED #community/agentshroud-ieee-papermd

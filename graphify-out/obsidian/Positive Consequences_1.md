@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-002-default-allow-security-philosophy.md"
+source_file: "docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md"
 type: "document"
-community: "Weather Skill"
-location: "L49"
+community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
+location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Weather_Skill
+  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
 ---
 
 # Positive Consequences
 
 ## Connections
-- [[Consequences_1]] - `contains` [EXTRACTED]
+- [[Consequences_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Weather_Skill
+#graphify/document #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity

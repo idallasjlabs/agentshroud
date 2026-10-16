@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/AGENTS.md"
 type: "concept"
-community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+community: "awslabs.aws-api-mcp-server configuration (--readonly)"
 location: "Section 11"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR
+  - community/awslabsaws-api-mcp-server_configuration_--readonly
 ---
 
 # Pre-change analysis protocol (Codex CHANGE PROPOSAL)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Pre-change analysis protocol (CHANGE PROPOSAL, Section 15)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Skill_MCP_Doctor_MCPM-DOCTOR
+#graphify/concept #graphify/INFERRED #community/awslabsaws-api-mcp-server_configuration_--readonly

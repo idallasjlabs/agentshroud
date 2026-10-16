@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
+source_file: "docs/vault/03 - Configuration/seccomp-profiles.md"
 type: "document"
-community: "archive_old_events()"
-location: "L42"
+community: "Seccomp Profiles"
+location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/archive_old_events
+  - community/Seccomp_Profiles
 ---
 
 # Related Notes
 
 ## Connections
-- [[aiosqlite_1]] - `contains` [EXTRACTED]
+- [[Seccomp Profiles]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/archive_old_events
+#graphify/document #graphify/EXTRACTED #community/Seccomp_Profiles

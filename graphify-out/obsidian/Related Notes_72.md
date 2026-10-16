@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Network Topology.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Auth Errors.md"
 type: "document"
-community: ".get_or_create_session()"
-location: "L106"
+community: "HTTP 401 — Unauthorized"
+location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/get_or_create_session
+  - community/HTTP_401__Unauthorized
 ---
 
 # Related Notes
 
 ## Connections
-- [[Network Topology_3]] - `contains` [EXTRACTED]
+- [[Auth Errors_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/get_or_create_session
+#graphify/document #graphify/EXTRACTED #community/HTTP_401__Unauthorized

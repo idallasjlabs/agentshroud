@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "test_trust_manager.py"
-location: "L585"
+community: ".proxy_messages"
+location: "L602"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_trust_managerpy
+  - community/proxy_messages
 ---
 
 # Persist a failover event to the audit chain if wired.
 
 ## Connections
-- [[._record_failover_event()]] - `rationale_for` [EXTRACTED]
+- [[dot-_record_failover_event()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_trust_managerpy
+#graphify/rationale #graphify/EXTRACTED #community/proxy_messages

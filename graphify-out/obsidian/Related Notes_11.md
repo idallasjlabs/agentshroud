@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
+source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
 type: "document"
-community: "Available MCP Servers"
-location: "L65"
+community: "browser-fetch.js"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Available_MCP_Servers
+  - community/browser-fetchjs
 ---
 
 # Related Notes
 
 ## Connections
-- [[ssh_proxy.py_1]] - `contains` [EXTRACTED]
+- [[browser-fetch.js_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers
+#graphify/document #graphify/EXTRACTED #community/browser-fetchjs

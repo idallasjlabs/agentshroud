@@ -12,6 +12,6 @@ tags:
 # Read one bot's cron store; tolerate absence/corruption.
 
 ## Connections
-- [[.parse_store()]] - `rationale_for` [EXTRACTED]
+- [[dot-parse_store()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/CronStateMonitor

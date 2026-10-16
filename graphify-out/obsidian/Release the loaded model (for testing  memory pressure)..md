@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/stt.py"
 type: "rationale"
-community: "TestSSRFBlocking"
+community: "stt.py"
 location: "L158"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestSSRFBlocking
+  - community/sttpy
 ---
 
 # Release the loaded model (for testing / memory pressure).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[reset_model()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestSSRFBlocking
+#graphify/rationale #graphify/EXTRACTED #community/sttpy

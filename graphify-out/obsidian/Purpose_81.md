@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cr/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
 type: "document"
-community: "PHASE 4: CLEANUP & v0.4.0 RELEASE"
-location: "L6"
+community: "env_guard.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PHASE_4_CLEANUP__v040_RELEASE
+  - community/env_guardpy
 ---
 
 # Purpose
 
 ## Connections
-- [[Code Review (CR)_1]] - `contains` [EXTRACTED]
+- [[env_guard.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PHASE_4_CLEANUP__v040_RELEASE
+#graphify/document #graphify/EXTRACTED #community/env_guardpy

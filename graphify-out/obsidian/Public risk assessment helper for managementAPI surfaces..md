@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "ReportStore"
+community: "EgressApprovalQueue"
 location: "L274"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/EgressApprovalQueue
 ---
 
 # Public risk assessment helper for management/API surfaces.
 
 ## Connections
-- [[._assess_risk()]] - `rationale_for` [EXTRACTED]
+- [[dot-_assess_risk()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ReportStore
+#graphify/rationale #graphify/EXTRACTED #community/EgressApprovalQueue

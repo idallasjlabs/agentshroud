@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "document"
-community: "Security Implementation Verification"
+community: "ledger.py"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Implementation_Verification
+  - community/ledgerpy
 ---
 
 # Purpose
 
 ## Connections
-- [[apple_engine.py_2]] - `contains` [EXTRACTED]
+- [[ledger.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Implementation_Verification
+#graphify/document #graphify/EXTRACTED #community/ledgerpy

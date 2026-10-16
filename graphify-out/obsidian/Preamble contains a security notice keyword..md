@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "KeyVaultConfig"
+community: "UserSessionManager"
 location: "L442"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/UserSessionManager
 ---
 
 # Preamble contains a security notice keyword.
 
 ## Connections
-- [[.test_reanchor_contains_security_notice()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_reanchor_contains_security_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

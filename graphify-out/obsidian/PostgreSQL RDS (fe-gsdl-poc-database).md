@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/i-qa/SKILL.md"
 type: "concept"
-community: "calendar.js (iCloud CalDAV skill)"
+community: "PostgreSQL RDS (fe-gsdl-poc-database)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/calendarjs_iCloud_CalDAV_skill
+  - community/PostgreSQL_RDS_fe-gsdl-poc-database
 ---
 
 # PostgreSQL RDS (fe-gsdl-poc-database)
 
-#graphify/concept #graphify/EXTRACTED #community/calendarjs_iCloud_CalDAV_skill
+#graphify/concept #graphify/EXTRACTED #community/PostgreSQL_RDS_fe-gsdl-poc-database

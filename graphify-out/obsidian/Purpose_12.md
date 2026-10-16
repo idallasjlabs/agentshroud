@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-hermes/README.md"
+source_file: ".agents/skills/i-data/README.md"
 type: "document"
-community: "Browser Fetch Skill"
+community: "Data Validation (DATA-VAL)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Fetch_Skill
+  - community/Data_Validation_DATA-VAL
 ---
 
 # Purpose
 
 ## Connections
-- [[Hermes — Podcast Production Orchestrator]] - `contains` [EXTRACTED]
+- [[Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Fetch_Skill
+#graphify/document #graphify/EXTRACTED #community/Data_Validation_DATA-VAL

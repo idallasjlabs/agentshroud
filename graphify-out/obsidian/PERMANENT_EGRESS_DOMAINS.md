@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "ConsentFramework"
+community: "EgressFilterConfig"
 location: "23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/EgressFilterConfig
 ---
 
 # PERMANENT_EGRESS_DOMAINS
@@ -15,4 +15,4 @@ tags:
 - [[EgressFilterConfig]] - `shares_data_with` [EXTRACTED]
 - [[FEED_HOSTS]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConsentFramework
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

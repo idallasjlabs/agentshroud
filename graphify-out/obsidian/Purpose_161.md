@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
 type: "document"
-community: "Security Controls"
+community: "log_sanitizer.py"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Controls
+  - community/log_sanitizerpy
 ---
 
 # Purpose
 
 ## Connections
-- [[health_report.py_2]] - `contains` [EXTRACTED]
+- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Controls
+#graphify/document #graphify/EXTRACTED #community/log_sanitizerpy

@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tdd/README.md"
+source_file: "docker/config/hermes/skills/i-sad/README.md"
 type: "document"
-community: "Skill: MCP Doctor (MCPM-DOCTOR)"
-location: "L14"
+community: "hermes/skills/i-bs/README.md"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Related Skills
 
 ## Connections
-- [[Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
-- [[Test-Driven Development README]] - `contains` [EXTRACTED]
+- [[System Audit Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

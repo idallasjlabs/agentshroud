@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
+source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "EU AI Act & NIST Alignment Matrix — AgentShroud™"
-location: "L49"
+community: "main.py.md"
+location: "L173"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EU_AI_Act__NIST_Alignment_Matrix__AgentShroud
+  - community/mainpymd
 ---
 
 # Related Notes
 
 ## Connections
-- [[port_manager.py_2]] - `contains` [EXTRACTED]
+- [[Startup Sequence_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EU_AI_Act__NIST_Alignment_Matrix__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/mainpymd

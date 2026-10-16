@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/blue-team-assessment-v1.2.0.md"
 type: "document"
-community: "killswitch.sh"
+community: "AgentShroud v1.2.0 — Blue Team Security Assessment"
 location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/killswitchsh
+  - community/AgentShroud_v120__Blue_Team_Security_Assessment
 ---
 
 # Previously FIXED findings — verification
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[§1 — Re-audit of v0.8.0 Prior Findings]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/killswitchsh
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v120__Blue_Team_Security_Assessment

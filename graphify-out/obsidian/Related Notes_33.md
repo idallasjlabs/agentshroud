@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
+source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
 type: "document"
-community: "AuditStore"
-location: "L49"
+community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
+location: "L192"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/EnhancedApprovalQueue_enhanced_queuepy
 ---
 
 # Related Notes
 
 ## Connections
-- [[HTTP_PROXY  HTTPS_PROXY]] - `contains` [EXTRACTED]
+- [[Shutdown & Recovery_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditStore
+#graphify/document #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy

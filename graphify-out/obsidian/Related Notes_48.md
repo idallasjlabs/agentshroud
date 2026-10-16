@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/python-jose.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "document"
-community: "A2APolicyEngine"
-location: "L44"
+community: "agentshroud-gateway"
+location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/agentshroud-gateway
 ---
 
 # Related Notes
 
 ## Connections
-- [[python-jose_1]] - `contains` [EXTRACTED]
+- [[agentshroud-gateway_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway

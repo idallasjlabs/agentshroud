@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "rationale"
-community: "KeyVault"
+community: "PortManager"
 location: "L51"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/PortManager
 ---
 
 # Record of a port assignment decision.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PortAssignment]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyVault
+#graphify/rationale #graphify/EXTRACTED #community/PortManager

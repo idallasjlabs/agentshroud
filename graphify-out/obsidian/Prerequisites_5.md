@@ -1,17 +1,20 @@
 ---
-source_file: "docs/operations/macos.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "url_analyzer.py"
-location: "L3"
+community: "AgentShroud Setup Guide"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/url_analyzerpy
+  - community/AgentShroud_Setup_Guide
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Deploying AgentShroud on macOS (Apple Silicon  Intel)]] - `contains` [EXTRACTED]
+- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
+- [[Optional Requirements]] - `contains` [EXTRACTED]
+- [[Supported Platforms]] - `contains` [EXTRACTED]
+- [[System Requirements_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/url_analyzerpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

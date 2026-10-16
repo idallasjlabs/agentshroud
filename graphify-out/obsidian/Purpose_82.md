@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-daedalus/README.md"
+source_file: "docs/vault/03 - Configuration/seccomp-profiles.md"
 type: "document"
-community: "BaseModel"
-location: "L6"
+community: "Seccomp Profiles"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BaseModel
+  - community/Seccomp_Profiles
 ---
 
 # Purpose
 
 ## Connections
-- [[Daedalus — Concept Illustrator_4]] - `contains` [EXTRACTED]
+- [[Seccomp Profiles]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BaseModel
+#graphify/document #graphify/EXTRACTED #community/Seccomp_Profiles

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-defense/README.md"
+source_file: "docs/vault/03 - Configuration/falco-rules.md"
 type: "document"
-community: "BaseModel"
-location: "L6"
+community: "FalcoAlertWatcher"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BaseModel
+  - community/FalcoAlertWatcher
 ---
 
 # Purpose
 
 ## Connections
-- [[Blue Team Security Auditor (SEC-DEFENSE)_2]] - `contains` [EXTRACTED]
+- [[falco-rules.yaml]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BaseModel
+#graphify/document #graphify/EXTRACTED #community/FalcoAlertWatcher

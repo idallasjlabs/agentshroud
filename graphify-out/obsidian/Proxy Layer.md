@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: ".get_or_create_session()"
+community: "`SecurityPipeline`"
 location: "L470"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/get_or_create_session
+  - community/SecurityPipeline
 ---
 
 # Proxy Layer
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[`SecurityPipeline`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/get_or_create_session
+#graphify/document #graphify/EXTRACTED #community/SecurityPipeline

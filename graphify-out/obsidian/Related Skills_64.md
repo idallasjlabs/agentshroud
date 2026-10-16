@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-oracle/README.md"
+source_file: "docker/config/openclaw/skills/i-production/README.md"
 type: "document"
-community: "iot_button_register_cb()"
+community: "Phase 3: MITIGATE (Rollback First!)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iot_button_register_cb
+  - community/Phase_3_MITIGATE_Rollback_First
 ---
 
 # Related Skills
 
 ## Connections
-- [[Oracle — Feedback Analyst_2]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iot_button_register_cb
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First

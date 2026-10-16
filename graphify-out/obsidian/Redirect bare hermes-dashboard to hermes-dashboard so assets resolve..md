@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "SSHProxy"
+community: "Request"
 location: "L4847"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/Request
 ---
 
 # Redirect bare /hermes-dashboard to /hermes-dashboard/ so assets resolve.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[hermes_dashboard_root()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SSHProxy
+#graphify/rationale #graphify/EXTRACTED #community/Request

@@ -1,17 +1,24 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
 type: "document"
-community: "test_integration.py"
-location: "L54"
+community: "PII Pipeline Errors"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_integrationpy
+  - community/PII_Pipeline_Errors
 ---
 
 # PII Pipeline Errors
 
 ## Connections
-- [[Error Index_1]] - `contains` [EXTRACTED]
+- [[Excessive False Positives]] - `contains` [EXTRACTED]
+- [[PII Engine Not Initialized]] - `contains` [EXTRACTED]
+- [[PII Not Being Detected]] - `contains` [EXTRACTED]
+- [[PII Pipeline Errors_1]] - `contains` [EXTRACTED]
+- [[Redaction Breaking JSONStructured Data]] - `contains` [EXTRACTED]
+- [[Related Notes_14]] - `contains` [EXTRACTED]
+- [[Tool Result PII Not Scanned]] - `contains` [EXTRACTED]
+- [[spaCy Model Issues]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_integrationpy
+#graphify/document #graphify/EXTRACTED #community/PII_Pipeline_Errors

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
+source_file: "docs/vault/05 - Dependencies/httpx.md"
 type: "document"
-community: "sunday-scan.sh"
-location: "L43"
+community: "All Dependencies.md"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sunday-scansh
+  - community/All_Dependenciesmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
+- [[httpx_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sunday-scansh
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

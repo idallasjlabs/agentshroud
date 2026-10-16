@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
+source_file: "docs/vault/09 - Diagrams/Security Pipeline Flow.md"
 type: "document"
-community: "test_integration.py"
-location: "L116"
+community: "`SecurityPipeline`"
+location: "L117"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_integrationpy
+  - community/SecurityPipeline
 ---
 
 # Related Notes
 
 ## Connections
-- [[Error Index_1]] - `contains` [EXTRACTED]
+- [[`SecurityPipeline`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_integrationpy
+#graphify/document #graphify/EXTRACTED #community/SecurityPipeline

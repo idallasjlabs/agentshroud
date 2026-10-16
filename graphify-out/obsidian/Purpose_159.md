@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
 type: "document"
-community: "Distributed OpenClaw Node Architecture — Raspber"
+community: "canary.py"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Distributed_OpenClaw_Node_Architecture__Raspber
+  - community/canarypy
 ---
 
 # Purpose
 
 ## Connections
-- [[env_guard.py_2]] - `contains` [EXTRACTED]
+- [[canary.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspber
+#graphify/document #graphify/EXTRACTED #community/canarypy

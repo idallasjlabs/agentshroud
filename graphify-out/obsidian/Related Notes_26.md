@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/ssh-config.md"
+source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
 type: "document"
-community: "Mnemosyne — Retention Engineer"
-location: "L51"
+community: "AGENTSHROUD_MODE"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mnemosyne__Retention_Engineer
+  - community/AGENTSHROUD_MODE
 ---
 
 # Related Notes
 
 ## Connections
-- [[SSH Config]] - `contains` [EXTRACTED]
+- [[OPENCLAW_SANDBOX_MODE_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer
+#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_MODE

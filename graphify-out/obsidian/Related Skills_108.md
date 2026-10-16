@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ps/README.md"
+source_file: ".agents/skills/i-oracle/README.md"
 type: "document"
-community: "TestProcScans"
+community: "Oracle — Feedback Analyst"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestProcScans
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Related Skills
 
 ## Connections
-- [[Production Safety Checklist (PROD-SAFETY)_1]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestProcScans
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

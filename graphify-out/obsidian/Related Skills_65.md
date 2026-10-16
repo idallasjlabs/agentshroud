@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-pm/README.md"
+source_file: "docker/config/hermes/skills/i-apollo/README.md"
 type: "document"
-community: "AuditExporter"
+community: "hermes/skills/i-bs/README.md"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditExporter
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Related Skills
 
 ## Connections
-- [[Project Management (PM)]] - `contains` [EXTRACTED]
-- [[Project Management (README)]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditExporter
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

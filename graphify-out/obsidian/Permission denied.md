@@ -1,17 +1,17 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "Hermes Service"
+community: "🆘 Troubleshooting"
 location: "L400"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Service
+  - community/_Troubleshooting
 ---
 
 # "Permission denied"
 
 ## Connections
-- [[🆘 Troubleshooting_1]] - `contains` [EXTRACTED]
+- [[🆘 Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Service
+#graphify/document #graphify/EXTRACTED #community/_Troubleshooting

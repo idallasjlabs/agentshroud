@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-athena/README.md"
+source_file: "docker/config/openclaw/skills/i-pm/README.md"
 type: "document"
-community: "AgentShroud State Diagrams (doc)"
+community: "Project Management (PM)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_State_Diagrams_doc
+  - community/Project_Management_PM
 ---
 
 # Related Skills
 
 ## Connections
-- [[Athena — Knowledge Distiller_1]] - `contains` [EXTRACTED]
+- [[Project Management (PM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_State_Diagrams_doc
+#graphify/document #graphify/EXTRACTED #community/Project_Management_PM

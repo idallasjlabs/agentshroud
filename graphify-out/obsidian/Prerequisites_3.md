@@ -1,21 +1,17 @@
 ---
-source_file: "docs/operations/deployment-procedure.md"
+source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
-location: "L5"
+community: "AgentShroud Phase 3 - Quick Start Guide"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
 ---
 
 # Prerequisites
 
 ## Connections
-- [[1Password Integration (Optional)]] - `contains` [EXTRACTED]
-- [[AgentShroud Deployment Procedure]] - `contains` [EXTRACTED]
-- [[Network Requirements]] - `contains` [EXTRACTED]
-- [[Software Dependencies]] - `contains` [EXTRACTED]
-- [[System Requirements]] - `contains` [EXTRACTED]
+- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide

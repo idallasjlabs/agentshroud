@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.9/release-notes-v0.9.0.md"
 type: "document"
-community: "hermes/workspace/jira_dev_ticket.py"
+community: "Release Notes - AgentShroud v0.9.0"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/workspace/jira_dev_ticketpy
+  - community/Release_Notes_-_AgentShroud_v090
 ---
 
 # Release Notes - AgentShroud v0.9.0
@@ -16,7 +16,7 @@ tags:
 - [[Acknowledgments_1]] - `contains` [EXTRACTED]
 - [[Breaking Changes and Migration]] - `contains` [EXTRACTED]
 - [[Deployment and Operations]] - `contains` [EXTRACTED]
-- [[Executive Summary_8]] - `contains` [EXTRACTED]
+- [[Executive Summary_2]] - `contains` [EXTRACTED]
 - [[Installation and Upgrade Instructions]] - `contains` [EXTRACTED]
 - [[Known Issues and Limitations]] - `contains` [EXTRACTED]
 - [[Performance Benchmarks]] - `contains` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[What's New in v0.9.0]] - `contains` [EXTRACTED]
 - [[release-notes-v0.9.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/workspace/jira_dev_ticketpy
+#graphify/document #graphify/EXTRACTED #community/Release_Notes_-_AgentShroud_v090

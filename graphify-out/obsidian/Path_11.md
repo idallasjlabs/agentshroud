@@ -1,18 +1,23 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "gateway/tests/test_switch_model_idempotent.py"
 type: "code"
-community: "LLMProxy"
-location: "L67"
+community: "._run_and_read"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/_run_and_read
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_80]] - `references` [EXTRACTED]
-- [[read_alerts()]] - `references` [EXTRACTED]
+- [[dot-_run_and_read()]] - `calls` [EXTRACTED]
+- [[dot-_run_and_read()_1]] - `calls` [EXTRACTED]
+- [[dot-_run_twice()]] - `calls` [EXTRACTED]
+- [[dot-test_verify_flag_accepted_without_error()]] - `calls` [EXTRACTED]
+- [[dot-test_verify_flag_with_model_ref()]] - `calls` [EXTRACTED]
+- [[_read_env()]] - `references` [EXTRACTED]
+- [[_run_switch()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/_run_and_read

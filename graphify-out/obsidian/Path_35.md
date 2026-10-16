@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/tests/test_observatory_mode.py"
+source_file: "gateway/security/trivy_report.py"
 type: "code"
-community: "TeamsConfig"
-location: "L268"
+community: "parse_trivy_output"
+location: "L164"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/TeamsConfig
+  - graphify/EXTRACTED
+  - community/parse_trivy_output
 ---
 
 # Path
 
 ## Connections
-- [[._make_monitor()]] - `references` [EXTRACTED]
-- [[KillSwitchConfig]] - `uses` [INFERRED]
-- [[KillSwitchMonitor]] - `uses` [INFERRED]
-- [[ModeRequest]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[_build_image_targets()]] - `calls` [EXTRACTED]
+- [[save_report()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/parse_trivy_output

@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "docker/config/openclaw/apply-patches.js"
 type: "code"
-community: "3. AWS API MCP Authentication Reset"
-location: "L75"
+community: "apply-patches.js"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/3_AWS_API_MCP_Authentication_Reset
+  - community/apply-patchesjs
 ---
 
-# Path
+# path
 
 ## Connections
-- [[.__init__()_96]] - `references` [EXTRACTED]
-- [[.archive_file()]] - `references` [EXTRACTED]
-- [[.validate_memory_write()]] - `references` [EXTRACTED]
-- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[apply-patches.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/3_AWS_API_MCP_Authentication_Reset
+#graphify/code #graphify/EXTRACTED #community/apply-patchesjs

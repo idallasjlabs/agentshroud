@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/ci-workflows.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
 type: "document"
-community: "TestFileSandbox"
-location: "L15"
+community: "mcp_config.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestFileSandbox
+  - community/mcp_configpy
 ---
 
 # Purpose
 
 ## Connections
-- [[CI Workflows]] - `contains` [EXTRACTED]
+- [[mcp_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFileSandbox
+#graphify/document #graphify/EXTRACTED #community/mcp_configpy

@@ -1,20 +1,17 @@
 ---
-source_file: "docs/reference/PREREQUISITES.md"
+source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: ".from_dict()"
-location: "L1"
+community: "v0.9.0 — Apple Messages Integration"
+location: "L375"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/from_dict
+  - community/v090__Apple_Messages_Integration
 ---
 
-# PREREQUISITES.md
+# Prerequisites
 
 ## Connections
-- [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
-- [[QUICK_REFERENCE]] - `conceptually_related_to` [INFERRED]
-- [[Secrets Backend Auto-Detection]] - `references` [EXTRACTED]
-- [[Separation of Concerns  Isolated Bot Accounts]] - `references` [EXTRACTED]
+- [[v0.9.0 — Apple Messages Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/from_dict
+#graphify/document #graphify/EXTRACTED #community/v090__Apple_Messages_Integration

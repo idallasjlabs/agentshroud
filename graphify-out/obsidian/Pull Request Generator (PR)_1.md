@@ -1,21 +1,21 @@
 ---
 source_file: "docker/config/hermes/skills/i-pr/README.md"
 type: "document"
-community: "SlackAPIProxy"
+community: "hermes/skills/i-bs/README.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Pull Request Generator (PR)
 
 ## Connections
-- [[Purpose_60]] - `contains` [EXTRACTED]
-- [[README_47]] - `contains` [EXTRACTED]
-- [[README_65]] - `contains` [EXTRACTED]
-- [[Related Skills_66]] - `contains` [EXTRACTED]
-- [[Usage_67]] - `contains` [EXTRACTED]
+- [[Purpose_94]] - `contains` [EXTRACTED]
+- [[Related Skills_75]] - `contains` [EXTRACTED]
+- [[Usage_86]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[hermesskillsi-prREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

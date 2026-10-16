@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-aws/README.md"
+source_file: ".agents/skills/i-atlas/README.md"
 type: "document"
-community: "DNSFilterConfig"
+community: "Atlas — Curriculum Architect"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Related Skills
 
 ## Connections
-- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

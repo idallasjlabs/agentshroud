@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md"
 type: "document"
-community: "chatbot/main.py"
-location: "L64"
+community: "Error Index.md"
+location: "L97"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/Error_Indexmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
+- [[SSH Proxy Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

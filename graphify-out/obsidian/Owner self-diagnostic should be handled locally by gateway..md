@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "TelegramAPIProxy"
 location: "L5015"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/TelegramAPIProxy
 ---
 
 # Owner /self-diagnostic should be handled locally by gateway.
 
 ## Connections
-- [[.test_self_diagnostic_command_is_handled_locally_for_owner()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_self_diagnostic_command_is_handled_locally_for_owner()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

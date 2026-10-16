@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/ssh-config.md"
 type: "document"
-community: "Mnemosyne — Retention Engineer"
+community: "SSH Config"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mnemosyne__Retention_Engineer
+  - community/SSH_Config
 ---
 
 # Purpose
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSH Config]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer
+#graphify/document #graphify/EXTRACTED #community/SSH_Config

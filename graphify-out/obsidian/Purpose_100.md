@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-qa/README.md"
+source_file: "docker/config/hermes/skills/i-vulcan/README.md"
 type: "document"
-community: "TestScoreMalwareDefense"
+community: "hermes/skills/i-bs/README.md"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestScoreMalwareDefense
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Purpose
 
 ## Connections
-- [[Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestScoreMalwareDefense
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

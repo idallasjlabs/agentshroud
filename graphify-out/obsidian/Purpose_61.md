@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-production/README.md"
+source_file: ".agents/skills/i-qa/README.md"
 type: "document"
-community: "_is_stale_callback_error()"
+community: "Production Safety Checklist (SKILL)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_is_stale_callback_error
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # Purpose
 
 ## Connections
-- [[Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
+- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_is_stale_callback_error
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

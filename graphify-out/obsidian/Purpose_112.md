@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
 type: "document"
-community: "OpenClaw Host Hardening"
+community: "Function Details"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Host_Hardening
+  - community/Function_Details
 ---
 
 # Purpose
 
 ## Connections
-- [[event_bus.py_2]] - `contains` [EXTRACTED]
+- [[oauth_security.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Host_Hardening
+#graphify/document #graphify/EXTRACTED #community/Function_Details

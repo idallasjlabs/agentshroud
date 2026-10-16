@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/README.md"
+source_file: ".agents/skills/i-ps/README.md"
 type: "document"
-community: "AGENTSHROUD standard character mark"
+community: "Production Safety Checklist (SKILL)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AGENTSHROUD_standard_character_mark
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # Related Skills
 
 ## Connections
-- [[iCloud Data Manager (ICLOUD)_1]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_standard_character_mark
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

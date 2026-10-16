@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-athena/README.md"
+source_file: "docker/config/hermes/skills/i-vulcan/README.md"
 type: "document"
-community: "GitHub Branch Protection — `main`"
+community: "hermes/skills/i-bs/README.md"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Branch_Protection__main
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Related Skills
 
 ## Connections
-- [[Athena — Knowledge Distiller_3]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Branch_Protection__main
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

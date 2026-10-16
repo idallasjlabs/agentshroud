@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "test_dashboard.py"
+community: "SessionManager"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_dashboardpy
+  - community/SessionManager
 ---
 
 # RateLimitExceeded
 
 ## Connections
-- [[.create_session()]] - `calls` [EXTRACTED]
+- [[dot-create_session()]] - `calls` [EXTRACTED]
 - [[SessionError]] - `inherits` [EXTRACTED]
 - [[TestEventInjection]] - `uses` [INFERRED]
 - [[TestInstructionNonce]] - `uses` [INFERRED]
-- [[TestRateLimiting_3]] - `uses` [INFERRED]
+- [[TestRateLimiting_4]] - `uses` [INFERRED]
 - [[TestSessionCleanup]] - `uses` [INFERRED]
 - [[TestSessionCreation]] - `uses` [INFERRED]
 - [[TestSessionRotation]] - `uses` [INFERRED]
 - [[TestSessionValidation]] - `uses` [INFERRED]
-- [[session_security.py]] - `contains` [EXTRACTED]
+- [[session_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_dashboardpy
+#graphify/code #graphify/INFERRED #community/SessionManager

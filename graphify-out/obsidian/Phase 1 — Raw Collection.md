@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-mac/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
 type: "document"
-community: "AgentShroud v0.9.0"
+community: "Phase 1 — Raw Collection"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v090
+  - community/Phase_1__Raw_Collection
 ---
 
 # Phase 1 — Raw Collection
@@ -22,6 +22,6 @@ tags:
 - [[7. CLI Tools & Utilities (non-.app installs)]] - `contains` [EXTRACTED]
 - [[8. Launch Agents & Daemons (background services)]] - `contains` [EXTRACTED]
 - [[9. Browser Extensions (optional but useful)]] - `contains` [EXTRACTED]
-- [[Discovery Strategy]] - `contains` [EXTRACTED]
+- [[Discovery Strategy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v090
+#graphify/document #graphify/EXTRACTED #community/Phase_1__Raw_Collection

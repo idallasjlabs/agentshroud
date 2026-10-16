@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec/README.md"
+source_file: "docker/config/openclaw/skills/i-icloud/README.md"
 type: "document"
-community: "AgentShroud v1.2.0 — Blue Team Security Assessme"
+community: "iCloud Data Manager (ICLOUD)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v120__Blue_Team_Security_Assessme
+  - community/iCloud_Data_Manager_ICLOUD
 ---
 
 # Related Skills
 
 ## Connections
-- [[Security Review (SEC)]] - `contains` [EXTRACTED]
+- [[iCloud Data Manager (ICLOUD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v120__Blue_Team_Security_Assessme
+#graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD

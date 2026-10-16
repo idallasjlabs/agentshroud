@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "test_http_proxy.py"
+community: "_make_filter"
 location: "L128"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_http_proxypy
+  - community/_make_filter
 ---
 
 # Private IPs are blocked by default to prevent SSRF.
 
 ## Connections
-- [[.test_private_ip_blocked_ssrf()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_private_ip_blocked_ssrf()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_http_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/_make_filter

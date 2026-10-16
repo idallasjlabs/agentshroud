@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md"
 type: "document"
-community: "DeceptionDetection"
+community: "mcp_audit.py"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DeceptionDetection
+  - community/mcp_auditpy
 ---
 
 # Purpose
 
 ## Connections
-- [[compose_generator.py_2]] - `contains` [EXTRACTED]
+- [[mcp_audit.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DeceptionDetection
+#graphify/document #graphify/EXTRACTED #community/mcp_auditpy

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-eightd/README.md"
+source_file: "docker/config/hermes/skills/i-apollo/README.md"
 type: "document"
-community: "1. Accomplishments This Phase"
+community: "hermes/skills/i-bs/README.md"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1_Accomplishments_This_Phase
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Purpose
 
 ## Connections
-- [[8D Root Cause Analysis_2]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1_Accomplishments_This_Phase
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

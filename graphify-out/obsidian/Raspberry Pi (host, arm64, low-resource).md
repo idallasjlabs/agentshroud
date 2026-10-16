@@ -1,11 +1,11 @@
 ---
 source_file: "docs/runbooks/colima-docker-guide.md"
 type: "concept"
-community: "test_dashboard_endpoints.py"
+community: "system-requirements.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/system-requirementsmd
 ---
 
 # Raspberry Pi (host, arm64, low-resource)
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud v0.8.0 Watchtower Release Plan]] - `references` [EXTRACTED]
 - [[AgentShroud v0.9.0 Multi-Runtime & Multi-Platform Release Plan]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/concept #graphify/EXTRACTED #community/system-requirementsmd

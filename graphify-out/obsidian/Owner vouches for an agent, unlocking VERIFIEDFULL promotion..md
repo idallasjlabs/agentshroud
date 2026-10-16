@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "MemoryIntegrityMonitor"
+community: "PIIConfig"
 location: "L286"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/PIIConfig
 ---
 
 # Owner vouches for an agent, unlocking VERIFIED/FULL promotion.
 
 ## Connections
-- [[.vouch_for_agent()]] - `rationale_for` [EXTRACTED]
+- [[dot-vouch_for_agent()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

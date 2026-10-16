@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "concept"
-community: "AgentShroud Setup Guide"
+community: "Coding Agent (bash-first)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Setup_Guide
+  - community/Coding_Agent_bash-first
 ---
 
 # Pi Coding Agent CLI
 
 ## Connections
-- [[SKILL_203]] - `implements` [EXTRACTED]
+- [[coding-agentSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Setup_Guide
+#graphify/concept #graphify/EXTRACTED #community/Coding_Agent_bash-first

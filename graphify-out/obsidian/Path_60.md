@@ -1,18 +1,21 @@
 ---
-source_file: "scripts/export-telegram-history.py"
+source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Community 957"
-location: "L101"
+community: "TestKillSwitchVerification"
+location: "L268"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_957
+  - graphify/INFERRED
+  - community/TestKillSwitchVerification
 ---
 
 # Path
 
 ## Connections
-- [[export()]] - `references` [EXTRACTED]
-- [[main()_35]] - `calls` [EXTRACTED]
+- [[dot-_make_monitor()]] - `references` [EXTRACTED]
+- [[KillSwitchConfig_1]] - `uses` [INFERRED]
+- [[KillSwitchMonitor]] - `uses` [INFERRED]
+- [[ModeRequest]] - `uses` [INFERRED]
+- [[SecurityPipeline_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_957
+#graphify/code #graphify/INFERRED #community/TestKillSwitchVerification

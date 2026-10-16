@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
+source_file: "docker/config/hermes/skills/i-mnemosyne/README.md"
 type: "document"
-community: "Bot Container (agent decides: reply + tool call)"
-location: "L15"
+community: "Mnemosyne — Retention Engineer"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Container_agent_decides_reply__tool_call
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Purpose
 
 ## Connections
-- [[installer.py_2]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Container_agent_decides_reply__tool_call
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

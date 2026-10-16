@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-vulcan/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-oracle/SKILL.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
-location: "L127"
+community: "Oracle — Feedback Analyst"
+location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_3]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

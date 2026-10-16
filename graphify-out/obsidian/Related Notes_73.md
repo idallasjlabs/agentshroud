@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Security Pipeline Flow.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md"
 type: "document"
-community: ".get_or_create_session()"
-location: "L117"
+community: "Egress Filter Errors"
+location: "L99"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/get_or_create_session
+  - community/Egress_Filter_Errors
 ---
 
 # Related Notes
 
 ## Connections
-- [[`SecurityPipeline`]] - `contains` [EXTRACTED]
+- [[Egress Filter Errors_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/get_or_create_session
+#graphify/document #graphify/EXTRACTED #community/Egress_Filter_Errors

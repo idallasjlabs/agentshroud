@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-pr/README.md"
+source_file: ".agents/skills/i-ps/README.md"
 type: "document"
-community: "SlackAPIProxy"
+community: "Production Safety Checklist (SKILL)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # Purpose
 
 ## Connections
-- [[Pull Request Generator (PR)_1]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

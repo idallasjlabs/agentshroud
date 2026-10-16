@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-crpr/SKILL.md"
 type: "document"
-community: "AuditExporter"
+community: "Project Management (README)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditExporter
+  - community/Project_Management_README
 ---
 
 # Production-Ready PR (i-crpr)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Pull Request Generator (SKILL)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditExporter
+#graphify/document #graphify/EXTRACTED #community/Project_Management_README

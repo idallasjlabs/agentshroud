@@ -1,18 +1,18 @@
 ---
 source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: ".mcp.json"
+community: "Telegram & Gmail Integration Guide"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcpjson
+  - community/Telegram__Gmail_Integration_Guide
 ---
 
 # Part 2: Set Up Gmail Integration
 
 ## Connections
-- [[Prerequisites_11]] - `contains` [EXTRACTED]
+- [[Prerequisites_2]] - `contains` [EXTRACTED]
 - [[Step 1 Enable IMAP in Gmail]] - `contains` [EXTRACTED]
 - [[Step 2 Create Gmail App Password]] - `contains` [EXTRACTED]
 - [[Step 3 Add Gmail to OpenClaw]] - `contains` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[Step 5 Test Gmail]] - `contains` [EXTRACTED]
 - [[Telegram & Gmail Integration Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcpjson
+#graphify/document #graphify/EXTRACTED #community/Telegram__Gmail_Integration_Guide

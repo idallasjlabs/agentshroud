@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
+source_file: ".agents/skills/i-daedalus/README.md"
 type: "document"
-community: "EU AI Act & NIST Alignment Matrix — AgentShroud™"
-location: "L15"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EU_AI_Act__NIST_Alignment_Matrix__AgentShroud
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Purpose
 
 ## Connections
-- [[port_manager.py_2]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EU_AI_Act__NIST_Alignment_Matrix__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

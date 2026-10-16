@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "EgressFilterConfig"
+community: "TestFabricatedSecurityNotice"
 location: "L593"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/TestFabricatedSecurityNotice
 ---
 
 # Pattern is in the OPERATIONAL category.
 
 ## Connections
-- [[.test_category_is_operational()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_category_is_operational()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

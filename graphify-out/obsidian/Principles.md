@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
+community: "AgentShroud Brand Guidelines"
 location: "L219"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Principles
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Co-Branding Guidelines]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

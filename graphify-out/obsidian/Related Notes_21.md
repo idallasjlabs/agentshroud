@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/docker-compose.yml.md"
+source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
 type: "document"
-community: "diagrams/README.md"
-location: "L166"
+community: "All Dependencies.md"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/diagrams/READMEmd
+  - community/All_Dependenciesmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[docker-compose.yml_1]] - `contains` [EXTRACTED]
+- [[aiosqlite_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/diagrams/READMEmd
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

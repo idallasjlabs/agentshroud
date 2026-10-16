@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-gg/README.md"
+source_file: "docker/config/openclaw/skills/i-pm/README.md"
 type: "document"
-community: "SECTION 2: MARK INFORMATION"
+community: "Project Management (PM)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SECTION_2_MARK_INFORMATION
+  - community/Project_Management_PM
 ---
 
 # Purpose
 
 ## Connections
-- [[Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
+- [[Project Management (PM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SECTION_2_MARK_INFORMATION
+#graphify/document #graphify/EXTRACTED #community/Project_Management_PM

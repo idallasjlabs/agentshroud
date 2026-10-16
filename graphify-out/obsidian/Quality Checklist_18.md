@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
+source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
 type: "document"
-community: "gateway.proxy.llm_proxy"
-location: "L137"
+community: "Athena — Knowledge Distiller"
+location: "L149"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/gatewayproxyllm_proxy
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Apollo — Audio Systems Producer_4]] - `contains` [EXTRACTED]
+- [[description of what this does_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/gatewayproxyllm_proxy
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

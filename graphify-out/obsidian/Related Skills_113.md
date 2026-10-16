@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-offense/README.md"
+source_file: "docker/config/openclaw/skills/i-sec-defense/README.md"
 type: "document"
-community: "TestScoreVulnerabilityManagement"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestScoreVulnerabilityManagement
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Related Skills
 
 ## Connections
-- [[Red Team Adversarial Tester (SEC-OFFENSE)_2]] - `contains` [EXTRACTED]
+- [[Blue Team Security Auditor (SEC-DEFENSE)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestScoreVulnerabilityManagement
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

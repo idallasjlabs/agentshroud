@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md"
+source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "Browser Extension"
-location: "L50"
+community: "EgressFilter"
+location: "L221"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Extension
+  - community/EgressFilter
 ---
 
 # Related Notes
 
 ## Connections
-- [[ANTHROPIC_BASE_URL_1]] - `contains` [EXTRACTED]
+- [[Data Flow_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Extension
+#graphify/document #graphify/EXTRACTED #community/EgressFilter

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "test-container-runtime.sh"
-location: "L14"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+location: "L161"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test-container-runtimesh
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Related Skills
 
 ## Connections
-- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
+- [[Skill MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test-container-runtimesh
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

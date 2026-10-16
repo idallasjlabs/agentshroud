@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "RBACConfig"
+community: "OutboundInfoFilter"
 location: "L742"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/OutboundInfoFilter
 ---
 
 # PII sanitiser mock that simulates two entity redactions.
 
 ## Connections
-- [[._redacting_pii()]] - `rationale_for` [EXTRACTED]
+- [[dot-_redacting_pii()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/OutboundInfoFilter

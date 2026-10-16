@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "rationale"
-community: "Common Operations"
+community: "TestParseHosts"
 location: "L89"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Common_Operations
+  - community/TestParseHosts
 ---
 
 # Parse a comma/whitespace-separated host list into a de-duplicated list.      Emp
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[parse_hosts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Common_Operations
+#graphify/rationale #graphify/EXTRACTED #community/TestParseHosts

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
-location: "L93"
+community: "auth.py"
+location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/authpy
 ---
 
 # Related
 
 ## Connections
-- [[input_normalizer.py_2]] - `contains` [EXTRACTED]
+- [[auth.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/authpy

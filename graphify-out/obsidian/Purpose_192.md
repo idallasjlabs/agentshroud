@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/pydantic.md"
+source_file: "docs/vault/03 - Configuration/pytest.ini.md"
 type: "document"
-community: "Pre-commit hook strategy (framework vs manual)"
+community: "pytest.ini"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pre-commit_hook_strategy_framework_vs_manual
+  - community/pytestini
 ---
 
 # Purpose
 
 ## Connections
-- [[Pydantic]] - `contains` [EXTRACTED]
+- [[pytest.ini_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pre-commit_hook_strategy_framework_vs_manual
+#graphify/document #graphify/EXTRACTED #community/pytestini

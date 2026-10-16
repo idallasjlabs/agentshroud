@@ -12,14 +12,14 @@ tags:
 # RateLimitGuard
 
 ## Connections
-- [[.__init__()_111]] - `method` [EXTRACTED]
-- [[._burst_limit()]] - `method` [EXTRACTED]
-- [[._sustained_limit()]] - `method` [EXTRACTED]
-- [[.check()_6]] - `method` [EXTRACTED]
-- [[.get_stats()_19]] - `method` [EXTRACTED]
+- [[dot-__init__()_69]] - `method` [EXTRACTED]
+- [[dot-_burst_limit()]] - `method` [EXTRACTED]
+- [[dot-_sustained_limit()]] - `method` [EXTRACTED]
+- [[dot-check()_2]] - `method` [EXTRACTED]
+- [[dot-get_stats()_8]] - `method` [EXTRACTED]
 - [[Adaptive per-agent  per-tool sliding-window rate limiter with burst detection.]] - `rationale_for` [EXTRACTED]
 - [[FakeClock]] - `uses` [INFERRED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[rate_limit_guard.py]] - `contains` [EXTRACTED]
 - [[test_burst_clears_after_burst_window()]] - `calls` [EXTRACTED]

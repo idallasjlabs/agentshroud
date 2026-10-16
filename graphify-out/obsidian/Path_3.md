@@ -1,17 +1,17 @@
 ---
-source_file: "scripts/launch-instance.sh"
+source_file: "scripts/sunday-upgrade.sh"
 type: "code"
-community: "Browser — Secure Browser Automation"
-location: "L14"
+community: "Upgrade Report 2026-09-27 (dev, PARTIAL, Hermes creds)"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds
 ---
 
 # PATH
 
 ## Connections
-- [[launch-instance.sh]] - `defines` [EXTRACTED]
+- [[sunday-upgrade.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/code #graphify/EXTRACTED #community/Upgrade_Report_2026-09-27_dev_PARTIAL_Hermes_creds

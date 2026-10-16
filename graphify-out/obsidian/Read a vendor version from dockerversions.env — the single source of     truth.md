@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "mcp_oauth_preflight.py"
+community: "sync-cve-registry.py"
 location: "L782"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/mcp_oauth_preflightpy
+  - community/sync-cve-registrypy
 ---
 
 # Read a vendor version from docker/versions.env — the single source of     truth
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_read_pinned_version()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/mcp_oauth_preflightpy
+#graphify/rationale #graphify/EXTRACTED #community/sync-cve-registrypy

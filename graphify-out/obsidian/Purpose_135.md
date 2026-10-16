@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "document"
-community: "test_scorecard_scoring.py"
+community: "dns_filter.py"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_scorecard_scoringpy
+  - community/dns_filterpy
 ---
 
 # Purpose
 
 ## Connections
-- [[telegram_proxy.py_2]] - `contains` [EXTRACTED]
+- [[dns_filter.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_scorecard_scoringpy
+#graphify/document #graphify/EXTRACTED #community/dns_filterpy

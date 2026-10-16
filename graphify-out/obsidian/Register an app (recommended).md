@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "Voice Terminal — ESP32-S3-BOX-3 (Optional AgentS"
+community: "xurl — Agent Skill Reference"
 location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentS
+  - community/xurl__Agent_Skill_Reference
 ---
 
 # Register an app (recommended)
 
 ## Connections
-- [[Prerequisites_15]] - `contains` [EXTRACTED]
+- [[Prerequisites_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentS
+#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference

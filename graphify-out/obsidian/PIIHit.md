@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "DifferentialPIIDetector"
 location: "L94"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_soc_router_coveragepy
+  - community/DifferentialPIIDetector
 ---
 
 # PIIHit
 
 ## Connections
-- [[._deduplicate()]] - `references` [EXTRACTED]
-- [[._detect_pii()]] - `references` [EXTRACTED]
-- [[._detect_presidio()]] - `references` [EXTRACTED]
-- [[._detect_regex()]] - `references` [EXTRACTED]
-- [[._redact()]] - `references` [EXTRACTED]
+- [[dot-_deduplicate()]] - `references` [EXTRACTED]
+- [[dot-_detect_pii()]] - `references` [EXTRACTED]
+- [[dot-_detect_presidio()]] - `references` [EXTRACTED]
+- [[dot-_detect_regex()]] - `references` [EXTRACTED]
+- [[dot-_redact()]] - `references` [EXTRACTED]
 - [[A single PII detection result.]] - `rationale_for` [EXTRACTED]
-- [[DifferentialPIIConfig_1]] - `uses` [INFERRED]
-- [[DifferentialPIIDetector_1]] - `uses` [INFERRED]
+- [[DifferentialPIIConfig]] - `uses` [INFERRED]
+- [[DifferentialPIIDetector]] - `uses` [INFERRED]
 - [[TestAdversarialFormattingCaught]] - `uses` [INFERRED]
 - [[TestAsymmetricFloor]] - `uses` [INFERRED]
 - [[TestDeterministicPresidioInit]] - `uses` [INFERRED]
@@ -33,4 +33,4 @@ tags:
 - [[differential_pii_detector.py]] - `contains` [EXTRACTED]
 - [[test_differential_pii_detector.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_soc_router_coveragepy
+#graphify/code #graphify/INFERRED #community/DifferentialPIIDetector

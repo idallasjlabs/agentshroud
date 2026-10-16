@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "RBACConfig"
+community: "OutboundInfoFilter"
 location: "L755"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/OutboundInfoFilter
 ---
 
 # Owner query must pass through PII sanitisation unchanged; sanitiser not called.
 
 ## Connections
-- [[.test_owner_inbound_query_not_pii_redacted()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_owner_inbound_query_not_pii_redacted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/OutboundInfoFilter

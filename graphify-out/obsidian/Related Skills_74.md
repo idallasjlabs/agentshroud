@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm/README.md"
 type: "document"
-community: "SlackAPIProxy"
+community: "hermes/skills/i-bs/README.md"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Related Skills
 
 ## Connections
-- [[Security Review (SEC)_1]] - `contains` [EXTRACTED]
+- [[MCP Tools Usage (MCPM)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

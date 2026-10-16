@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "Role"
 location: "L234"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/Role
 ---
 
 # Public entry — records the decision for the SOC heat-map (SCRUM-80),         the
 
 ## Connections
-- [[.can_use_tool()]] - `rationale_for` [EXTRACTED]
+- [[dot-can_use_tool()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/Role

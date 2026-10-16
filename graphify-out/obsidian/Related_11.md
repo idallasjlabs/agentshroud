@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
 type: "document"
-community: "LVGL KAWAII FACE"
-location: "L57"
+community: "Function Details"
+location: "L93"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LVGL_KAWAII_FACE
+  - community/Function_Details
 ---
 
 # Related
 
 ## Connections
-- [[forwarder.py_2]] - `contains` [EXTRACTED]
+- [[key_vault.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LVGL_KAWAII_FACE
+#graphify/document #graphify/EXTRACTED #community/Function_Details

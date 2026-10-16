@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
+source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "API Keys Setup Guide"
-location: "L76"
+community: "main.py.md"
+location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/API_Keys_Setup_Guide
+  - community/mainpymd
 ---
 
 # Related Notes
 
 ## Connections
-- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
+- [[Architecture Overview_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/mainpymd

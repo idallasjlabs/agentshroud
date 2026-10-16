@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_network_validator_gate.py"
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "AgentShroud™ Telegram-Reported Issues"
-location: "L33"
+community: "KillSwitchMonitor"
+location: "L38"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/AgentShroud_Telegram-Reported_Issues
+  - graphify/EXTRACTED
+  - community/KillSwitchMonitor
 ---
 
 # Path
 
 ## Connections
-- [[NetworkValidator]] - `uses` [INFERRED]
-- [[tmp_compose()]] - `references` [EXTRACTED]
+- [[dot-__init__()_95]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AgentShroud_Telegram-Reported_Issues
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

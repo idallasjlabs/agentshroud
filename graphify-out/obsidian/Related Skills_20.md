@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm-doctor/README.md"
+source_file: "docker/config/hermes/skills/i-production/README.md"
 type: "document"
-community: "Available MCP Servers"
+community: "Incident Response (INCIDENT)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Available_MCP_Servers
+  - community/Incident_Response_INCIDENT
 ---
 
 # Related Skills
 
 ## Connections
-- [[MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_INCIDENT

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/engine.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md"
 type: "document"
-community: "test_subagent_governance.py"
+community: "telegram_proxy.py"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_subagent_governancepy
+  - community/telegram_proxypy
 ---
 
 # Purpose
 
 ## Connections
-- [[engine.py_2]] - `contains` [EXTRACTED]
+- [[telegram_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_subagent_governancepy
+#graphify/document #graphify/EXTRACTED #community/telegram_proxypy

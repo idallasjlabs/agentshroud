@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mnemosyne/README.md"
+source_file: "docker/config/openclaw/skills/i-apollo/README.md"
 type: "document"
-community: "Workflow: Survey → Draft → Inject → Confirm"
+community: "Apollo — Audio Systems Producer"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workflow_Survey__Draft__Inject__Confirm
+  - community/Apollo__Audio_Systems_Producer
 ---
 
 # Related Skills
 
 ## Connections
-- [[Mnemosyne — Retention Engineer]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm
+#graphify/document #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer

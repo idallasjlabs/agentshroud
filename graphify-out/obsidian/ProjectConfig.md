@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "StdioConnection"
+community: "telegram_proxy.py"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/telegram_proxypy
 ---
 
 # ProjectConfig
 
 ## Connections
-- [[.get_active_project_for_user()]] - `references` [EXTRACTED]
-- [[.get_user_projects()]] - `references` [EXTRACTED]
-- [[.matches_topic()]] - `method` [EXTRACTED]
-- [[.normalise_topics()]] - `method` [EXTRACTED]
+- [[dot-get_active_project_for_user()]] - `references` [EXTRACTED]
+- [[dot-get_user_projects()]] - `references` [EXTRACTED]
+- [[dot-matches_topic()]] - `method` [EXTRACTED]
+- [[dot-normalise_topics()]] - `method` [EXTRACTED]
 - [[A project defines a scoped focus area for a team.]] - `rationale_for` [EXTRACTED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[TestBuildProjectContextInjection]] - `uses` [INFERRED]
@@ -28,7 +28,7 @@ tags:
 - [[collaborator_responses.py]] - `imports` [EXTRACTED]
 - [[group_config.py]] - `contains` [EXTRACTED]
 - [[project()]] - `calls` [EXTRACTED]
-- [[teams()]] - `calls` [EXTRACTED]
+- [[teams()_3]] - `calls` [EXTRACTED]
 - [[test_collaborator_responses.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

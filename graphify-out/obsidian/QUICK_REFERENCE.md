@@ -1,21 +1,21 @@
 ---
 source_file: "docs/reference/QUICK_REFERENCE.md"
 type: "document"
-community: ".from_dict()"
+community: "Quick Reference Commands"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/from_dict
+  - community/Quick_Reference_Commands
 ---
 
 # QUICK_REFERENCE.md
 
 ## Connections
-- [[PREREQUISITES]] - `conceptually_related_to` [INFERRED]
+- [[PREREQUISITES_15]] - `conceptually_related_to` [INFERRED]
 - [[Quick Reference Card]] - `contains` [EXTRACTED]
 - [[Quick Reference Commands]] - `contains` [EXTRACTED]
-- [[RUNBOOK]] - `conceptually_related_to` [INFERRED]
+- [[RUNBOOK_1]] - `conceptually_related_to` [INFERRED]
 - [[TAILSCALE_COMMANDS]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/from_dict
+#graphify/document #graphify/INFERRED #community/Quick_Reference_Commands

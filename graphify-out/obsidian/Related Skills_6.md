@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-cicd/README.md"
+source_file: ".agents/skills/i-eightd/README.md"
 type: "document"
-community: "_FakeRBAC"
+community: "8D Root Cause Analysis"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/8D_Root_Cause_Analysis
 ---
 
 # Related Skills
 
 ## Connections
-- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis

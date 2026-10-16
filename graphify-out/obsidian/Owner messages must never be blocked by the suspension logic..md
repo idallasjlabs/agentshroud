@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "rationale"
-community: "IntelReportStore"
+community: "ProgressiveLockdown"
 location: "L305"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/IntelReportStore
+  - community/ProgressiveLockdown
 ---
 
 # Owner messages must never be blocked by the suspension logic.
 
 ## Connections
-- [[.test_owner_messages_pass_despite_collab_suspension()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_owner_messages_pass_despite_collab_suspension()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/IntelReportStore
+#graphify/rationale #graphify/EXTRACTED #community/ProgressiveLockdown

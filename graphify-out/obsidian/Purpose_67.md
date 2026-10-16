@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-offense/README.md"
+source_file: "docs/vault/05 - Dependencies/fastapi.md"
 type: "document"
-community: "SlackAPIProxy"
-location: "L6"
+community: "All Dependencies.md"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/All_Dependenciesmd
 ---
 
 # Purpose
 
 ## Connections
-- [[Red Team Adversarial Tester (SEC-OFFENSE)_1]] - `contains` [EXTRACTED]
+- [[FastAPI_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

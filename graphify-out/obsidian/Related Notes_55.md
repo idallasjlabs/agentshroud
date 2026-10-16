@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Auth Errors.md"
+source_file: "docs/vault/05 - Dependencies/openscap.md"
 type: "document"
-community: "TestCredentialLeakDetection"
-location: "L80"
+community: "OpenSCAP"
+location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestCredentialLeakDetection
+  - community/OpenSCAP
 ---
 
 # Related Notes
 
 ## Connections
-- [[Auth Errors_1]] - `contains` [EXTRACTED]
+- [[OpenSCAP_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestCredentialLeakDetection
+#graphify/document #graphify/EXTRACTED #community/OpenSCAP

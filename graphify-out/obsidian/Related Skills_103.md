@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mnemosyne/README.md"
+source_file: ".agents/skills/i-tw/README.md"
 type: "document"
-community: "TestRunningImageResolution"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestRunningImageResolution
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Related Skills
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_4]] - `contains` [EXTRACTED]
+- [[Technical Writer (TW)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestRunningImageResolution
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

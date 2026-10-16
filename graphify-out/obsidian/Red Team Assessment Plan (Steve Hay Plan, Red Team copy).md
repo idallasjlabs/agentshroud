@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/agentshroud-redteam/references/steve-hay-plan.md"
 type: "document"
-community: "test_jira_weekly_review.py"
+community: "agentshroud-blueteam/SKILL.md"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/test_jira_weekly_reviewpy
+  - graphify/EXTRACTED
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Red Team Assessment Plan (Steve Hay Plan, Red Team copy)
 
 ## Connections
-- [[SKILL_190]] - `references` [INFERRED]
 - [[STPA-Sec Methodology_1]] - `references` [EXTRACTED]
+- [[agentshroud-blueteamSKILL]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/test_jira_weekly_reviewpy
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

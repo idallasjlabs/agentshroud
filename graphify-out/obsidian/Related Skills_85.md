@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-bs/README.md"
+source_file: ".agents/skills/i-tdd/README.md"
 type: "document"
-community: "8. Common Troubleshooting Scenarios"
+community: "Test-Driven Development README"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/8_Common_Troubleshooting_Scenarios
+  - community/Test-Driven_Development_README
 ---
 
 # Related Skills
 
 ## Connections
-- [[Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
+- [[Test-Driven Development README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/8_Common_Troubleshooting_Scenarios
+#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README

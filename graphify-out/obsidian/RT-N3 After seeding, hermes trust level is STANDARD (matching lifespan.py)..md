@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "rationale"
-community: "MemoryIntegrityMonitor"
+community: "TestHermesTrustSeeding"
 location: "L274"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/TestHermesTrustSeeding
 ---
 
 # RT-N3: After seeding, hermes trust level is STANDARD (matching lifespan.py).
 
 ## Connections
-- [[.test_hermes_registered_with_standard_trust()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_hermes_registered_with_standard_trust()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/rationale #graphify/EXTRACTED #community/TestHermesTrustSeeding

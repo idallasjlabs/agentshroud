@@ -1,17 +1,23 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
 type: "document"
-community: "test_integration.py"
-location: "L92"
+community: "Prompt Injection Blocks"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_integrationpy
+  - community/Prompt_Injection_Blocks
 ---
 
 # Prompt Injection Blocks
 
 ## Connections
-- [[Error Index_1]] - `contains` [EXTRACTED]
+- [[Common Injection Signatures Detected]] - `contains` [EXTRACTED]
+- [[False Positive (Legitimate Content Blocked)]] - `contains` [EXTRACTED]
+- [[HTTP 400 — Prompt Injection Detected]] - `contains` [EXTRACTED]
+- [[Prompt Injection Blocks_1]] - `contains` [EXTRACTED]
+- [[Prompt Injection in Monitor Mode]] - `contains` [EXTRACTED]
+- [[Related Notes_15]] - `contains` [EXTRACTED]
+- [[Tool Result Injections]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_integrationpy
+#graphify/document #graphify/EXTRACTED #community/Prompt_Injection_Blocks

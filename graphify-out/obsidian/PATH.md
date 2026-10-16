@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/approval_queue/store.py"
+source_file: "gateway/tests/test_alert_dispatcher_retry.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L43"
+community: "AlertDispatcher"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/AlertDispatcher
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_6]] - `references` [EXTRACTED]
+- [[AlertDispatcher]] - `uses` [INFERRED]
+- [[dispatcher()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "ToolACLEnforcer"
+community: "._active_send_token"
 location: "L855"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolACLEnforcer
+  - community/_active_send_token
 ---
 
 # Queue owner approval request for unknown/revoked users.
 
 ## Connections
-- [[._queue_collaborator_access_request()]] - `rationale_for` [EXTRACTED]
+- [[dot-_queue_collaborator_access_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolACLEnforcer
+#graphify/rationale #graphify/EXTRACTED #community/_active_send_token

@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ti/README.md"
+source_file: "docker/config/hermes/skills/i-sec-defense/README.md"
 type: "document"
-community: "1. GitHub MCP Authentication Reset"
+community: "hermes/skills/i-bs/README.md"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1_GitHub_MCP_Authentication_Reset
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Related Skills
 
 ## Connections
-- [[Technical Illustrator (TI)]] - `contains` [EXTRACTED]
-- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
+- [[Blue Team Security Auditor (SEC-DEFENSE)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

@@ -1,17 +1,16 @@
 ---
-source_file: "docs/papers/agentshroud-ieee-paper.md"
+source_file: "docker/config/hermes/SOUL.md"
 type: "concept"
-community: "UserSession"
+community: "hermes/SOUL.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/UserSession
+  - community/hermes/SOULmd
 ---
 
 # PII Sanitizer
 
 ## Connections
-- [[Microsoft Presidio PII Detection Engine]] - `implements` [EXTRACTED]
-- [[agentshroud-ieee-paper]] - `references` [EXTRACTED]
+- [[hermesSOUL]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/UserSession
+#graphify/concept #graphify/EXTRACTED #community/hermes/SOULmd

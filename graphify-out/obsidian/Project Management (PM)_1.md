@@ -1,21 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pm/README.md"
+source_file: "docker/config/hermes/skills/i-pm/README.md"
 type: "document"
-community: "TestErrorHandling"
+community: "Project Management (README)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestErrorHandling
+  - community/Project_Management_README
 ---
 
 # Project Management (PM)
 
 ## Connections
-- [[Purpose_96]] - `contains` [EXTRACTED]
-- [[README_101]] - `contains` [EXTRACTED]
-- [[Related Skills_105]] - `contains` [EXTRACTED]
-- [[SKILL_142]] - `contains` [EXTRACTED]
-- [[Usage_106]] - `contains` [EXTRACTED]
+- [[Purpose_75]] - `contains` [EXTRACTED]
+- [[Related Skills_62]] - `contains` [EXTRACTED]
+- [[Usage_68]] - `contains` [EXTRACTED]
+- [[hermesskillsi-pmREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestErrorHandling
+#graphify/document #graphify/EXTRACTED #community/Project_Management_README

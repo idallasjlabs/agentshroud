@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec-defense/README.md"
+source_file: "docker/config/hermes/skills/i-socrates/README.md"
 type: "document"
-community: "Skill: CI/CD Pipeline Advisor (CICD)"
+community: "Socrates — Dialogue Architect"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_CI/CD_Pipeline_Advisor_CICD
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Purpose
 
 ## Connections
-- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

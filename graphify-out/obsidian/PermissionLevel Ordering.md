@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
 type: "document"
-community: "Use Cases"
+community: "mcp_config.py"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Use_Cases
+  - community/mcp_configpy
 ---
 
 # PermissionLevel Ordering
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[mcp_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Use_Cases
+#graphify/document #graphify/EXTRACTED #community/mcp_configpy

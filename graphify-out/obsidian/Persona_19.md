@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-hermes/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "MCP Proxy Errors"
+community: "Daedalus — Concept Illustrator"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Errors
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Persona
 
 ## Connections
-- [[Hermes — Reference Verifier_2]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_Proxy_Errors
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

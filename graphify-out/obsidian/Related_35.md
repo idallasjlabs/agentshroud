@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
 type: "document"
-community: "Skill: Create PR with Pre-Flight Audit (CRPR)"
+community: "browser_security.py"
 location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
+  - community/browser_securitypy
 ---
 
 # Related
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[browser_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
+#graphify/document #graphify/EXTRACTED #community/browser_securitypy

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/Restart Procedure.md"
+source_file: "docs/vault/03 - Configuration/pytest.ini.md"
 type: "document"
-community: "TestScanParameterAllowlists"
-location: "L145"
+community: "pytest.ini"
+location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestScanParameterAllowlists
+  - community/pytestini
 ---
 
 # Related Notes
 
 ## Connections
-- [[Restart Procedure_2]] - `contains` [EXTRACTED]
+- [[pytest.ini_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestScanParameterAllowlists
+#graphify/document #graphify/EXTRACTED #community/pytestini

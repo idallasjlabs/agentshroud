@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/tests/test_multi_host_test.py"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements"
-location: "L324"
+community: "migrate-cve-registry-ghsa.py"
+location: "L472"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Required__45_for_text__30_for_UI_elements
+  - graphify/EXTRACTED
+  - community/migrate-cve-registry-ghsapy
 ---
 
 # Path
 
 ## Connections
-- [[HostResult]] - `uses` [INFERRED]
-- [[HostStatus]] - `uses` [INFERRED]
-- [[MultiHostResult]] - `uses` [INFERRED]
-- [[_run_wrapper()]] - `references` [EXTRACTED]
-- [[_write_exec()]] - `references` [EXTRACTED]
+- [[gather_advisories()]] - `calls` [EXTRACTED]
+- [[load_snapshot()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Required__45_for_text__30_for_UI_elements
+#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

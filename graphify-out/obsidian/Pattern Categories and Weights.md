@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
 type: "document"
-community: "AgentShroud Security Assessment — v0.8.0"
+community: "prompt_guard.py.md"
 location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Assessment__v080
+  - community/prompt_guardpymd
 ---
 
 # Pattern Categories and Weights
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[prompt_guard.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Assessment__v080
+#graphify/document #graphify/EXTRACTED #community/prompt_guardpymd

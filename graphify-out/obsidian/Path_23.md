@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/tests/test_alert_dispatcher_retry.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "openclaw/skills/i-icloud/scripts/calendar.js"
-location: "L27"
+community: "lifespan.py"
+location: "L75"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/openclaw/skills/i-icloud/scripts/calendarjs
+  - graphify/EXTRACTED
+  - community/lifespanpy
 ---
 
 # Path
 
 ## Connections
-- [[AlertDispatcher]] - `uses` [INFERRED]
-- [[dispatcher()]] - `references` [EXTRACTED]
+- [[dot-__init__()_68]] - `references` [EXTRACTED]
+- [[dot-archive_file()]] - `references` [EXTRACTED]
+- [[dot-validate_memory_write()]] - `references` [EXTRACTED]
+- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
+- [[run()_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/openclaw/skills/i-icloud/scripts/calendarjs
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

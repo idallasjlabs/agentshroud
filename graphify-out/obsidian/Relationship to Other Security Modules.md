@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "GroupApprovalRouter"
+community: "wazuh-ossec.conf"
 location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/wazuh-ossecconf
 ---
 
 # Relationship to Other Security Modules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/document #graphify/EXTRACTED #community/wazuh-ossecconf

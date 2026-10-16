@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
 type: "document"
-community: "TestMinimalConfig"
+community: "apply-patches.js"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMinimalConfig
+  - community/apply-patchesjs
 ---
 
 # Patches Applied
@@ -18,4 +18,4 @@ tags:
 - [[Patch 3 Telegram Bot Token (if $TELEGRAM_BOT_TOKEN is set)]] - `contains` [EXTRACTED]
 - [[apply-patches.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMinimalConfig
+#graphify/document #graphify/EXTRACTED #community/apply-patchesjs

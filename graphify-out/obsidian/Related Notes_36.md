@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Container Errors.md"
 type: "document"
-community: "lvgl_kawaii_face.c"
-location: "L44"
+community: "First Time Setup"
+location: "L119"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/lvgl_kawaii_facec
+  - community/First_Time_Setup
 ---
 
 # Related Notes
 
 ## Connections
-- [[OPENCLAW_SANDBOX_MODE_1]] - `contains` [EXTRACTED]
+- [[Container Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/lvgl_kawaii_facec
+#graphify/document #graphify/EXTRACTED #community/First_Time_Setup

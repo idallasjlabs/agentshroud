@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/RUNBOOK.md"
 type: "document"
-community: "Community 785"
+community: "TELEGRAM_ISSUES.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_785
+  - community/TELEGRAM_ISSUESmd
 ---
 
 # RUNBOOK.md
@@ -18,6 +18,6 @@ tags:
 - [[Multi-Host Infrastructure (MarvinTrillianPi)]] - `references` [EXTRACTED]
 - [[QUICK_REFERENCE]] - `conceptually_related_to` [INFERRED]
 - [[deployment]] - `conceptually_related_to` [INFERRED]
-- [[troubleshooting_25]] - `conceptually_related_to` [INFERRED]
+- [[troubleshooting_23]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_785
+#graphify/document #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd

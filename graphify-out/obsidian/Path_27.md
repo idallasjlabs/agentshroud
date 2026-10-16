@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_credential_injector.py"
+source_file: ".mcp.json"
 type: "code"
-community: "AgentShroud System Status Report"
-location: "L209"
+community: ".mcp.json"
+location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_System_Status_Report
+  - community/mcpjson
 ---
 
-# Path
+# PATH
 
 ## Connections
-- [[._make_anthropic_injector()]] - `references` [EXTRACTED]
+- [[awslabs.aws-api-mcp-server]] - `requires_env` [EXTRACTED]
+- [[safari]] - `requires_env` [EXTRACTED]
+- [[xmind]] - `requires_env` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_System_Status_Report
+#graphify/code #graphify/EXTRACTED #community/mcpjson

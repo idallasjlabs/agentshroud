@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md"
+source_file: ".agents/skills/i-sav/README.md"
 type: "document"
-community: "test_image_verifier.py"
-location: "L161"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_image_verifierpy
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Related Skills
 
 ## Connections
-- [[Skill MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
+- [[System Audit Vault_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_image_verifierpy
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

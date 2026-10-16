@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
+source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "OpenClaw Setup Guide - agentshroud.ai Bot"
-location: "L50"
+community: "Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+  - community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility
 ---
 
 # Problem
 
 ## Connections
-- [[Cisco AnyConnect VPN Networking Fix]] - `contains` [EXTRACTED]
+- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+#graphify/document #graphify/EXTRACTED #community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/README.md"
+source_file: "docker/config/hermes/skills/i-data/README.md"
 type: "document"
-community: "security-entrypoint.sh"
+community: "hermes/skills/i-bs/README.md"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/security-entrypointsh
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Purpose
 
 ## Connections
-- [[iCloud Data Manager (ICLOUD)_2]] - `contains` [EXTRACTED]
+- [[Data Validation (DATA-VAL)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/security-entrypointsh
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

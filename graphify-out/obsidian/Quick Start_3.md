@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/summarize/SKILL.md"
+source_file: "docker/README.md"
 type: "document"
-community: "browser-extension/manifest.json"
-location: "L38"
+community: "AgentShroud Docker Configuration"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser-extension/manifestjson
+  - community/AgentShroud_Docker_Configuration
 ---
 
-# Quick start
+# Quick Start
 
 ## Connections
-- [[Summarize]] - `contains` [EXTRACTED]
+- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser-extension/manifestjson
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

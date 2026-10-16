@@ -1,14 +1,14 @@
 ---
 source_file: ".llm_settings/docs/SKILLS_REFERENCE.md"
 type: "rationale"
-community: "Lifespan 64-Worker Executor and HTTP Peek Filter"
+community: "Production testing guidelines (test isolation patterns)"
 location: "Production Testing Guidelines"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Lifespan_64-Worker_Executor_and_HTTP_Peek_Filter
+  - community/Production_testing_guidelines_test_isolation_patterns
 ---
 
 # Production testing guidelines (test isolation patterns)
 
-#graphify/rationale #graphify/EXTRACTED #community/Lifespan_64-Worker_Executor_and_HTTP_Peek_Filter
+#graphify/rationale #graphify/EXTRACTED #community/Production_testing_guidelines_test_isolation_patterns

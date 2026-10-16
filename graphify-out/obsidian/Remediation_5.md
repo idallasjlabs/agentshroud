@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/04-separation-of-privilege.md"
 type: "document"
-community: "Feature: Global Monitor-Only Mode (\"Observatory "
+community: "Make gateway source code, config, and security policies read-only to the agent"
 location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Feature_Global_Monitor-Only_Mode_Observatory_
+  - community/Make_gateway_source_code_config_and_security_policies_read-only_to_the_agent
 ---
 
 # Remediation
@@ -20,4 +20,4 @@ tags:
 - [[Step 5 Add integrity checking for security-critical files]] - `contains` [EXTRACTED]
 - [[Step 6 Enforce read-only at the Docker layer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Feature_Global_Monitor-Only_Mode_Observatory_
+#graphify/document #graphify/EXTRACTED #community/Make_gateway_source_code_config_and_security_policies_read-only_to_the_agent

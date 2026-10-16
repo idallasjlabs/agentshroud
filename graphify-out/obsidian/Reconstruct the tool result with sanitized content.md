@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "rationale"
-community: "ResourceGuard"
+community: "ToolResultSanitizer"
 location: "L163"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/ToolResultSanitizer
 ---
 
 # Reconstruct the tool result with sanitized content
 
 ## Connections
-- [[._reconstruct_result()]] - `rationale_for` [EXTRACTED]
+- [[dot-_reconstruct_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

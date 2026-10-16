@@ -1,17 +1,17 @@
 ---
-source_file: "docs/governance/AGENT_ROLES.md"
+source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "TestMultiBotContextvarRouting"
-location: "L81"
+community: "Phase 3 Requirements: Working Chat Container"
+location: "L387"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMultiBotContextvarRouting
+  - community/Phase_3_Requirements_Working_Chat_Container
 ---
 
 # References
 
 ## Connections
-- [[Multi-Agent Role Matrix]] - `contains` [EXTRACTED]
+- [[Phase 3 Requirements Working Chat Container]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMultiBotContextvarRouting
+#graphify/document #graphify/EXTRACTED #community/Phase_3_Requirements_Working_Chat_Container

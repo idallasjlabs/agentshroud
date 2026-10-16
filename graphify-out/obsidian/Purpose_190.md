@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/05 - Dependencies/playwright.md"
+source_file: "docker/config/hermes/skills/i-cicd/README.md"
 type: "document"
-community: "Pre-Deployment Checklist"
-location: "L15"
+community: "CI/CD Pipeline Advisor (README)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pre-Deployment_Checklist
+  - community/CI/CD_Pipeline_Advisor_README
 ---
 
 # Purpose
 
 ## Connections
-- [[Playwright]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README

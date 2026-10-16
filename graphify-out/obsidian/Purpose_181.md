@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/seccomp-profiles.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
 type: "document"
-community: "diagrams/README.md"
-location: "L18"
+community: "event_bus.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/diagrams/READMEmd
+  - community/event_buspy
 ---
 
 # Purpose
 
 ## Connections
-- [[Seccomp Profiles]] - `contains` [EXTRACTED]
+- [[event_bus.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/diagrams/READMEmd
+#graphify/document #graphify/EXTRACTED #community/event_buspy

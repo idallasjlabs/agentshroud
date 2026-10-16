@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ti/README.md"
+source_file: "docker/config/openclaw/skills/i-browser/README.md"
 type: "document"
-community: "1. GitHub MCP Authentication Reset"
+community: "Browser — Secure Browser Automation"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1_GitHub_MCP_Authentication_Reset
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Purpose
 
 ## Connections
-- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

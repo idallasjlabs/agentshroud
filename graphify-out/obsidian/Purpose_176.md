@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "AuditStore"
-location: "L16"
+community: "auth.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/authpy
 ---
 
 # Purpose
 
 ## Connections
-- [[agentshroud.yaml_1]] - `contains` [EXTRACTED]
+- [[auth.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditStore
+#graphify/document #graphify/EXTRACTED #community/authpy

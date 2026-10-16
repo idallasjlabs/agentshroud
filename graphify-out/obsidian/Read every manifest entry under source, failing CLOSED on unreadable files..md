@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/scan.py"
 type: "rationale"
-community: "Daedalus — Concept Illustrator"
+community: "Recommendation"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator
+  - community/Recommendation
 ---
 
 # Read every manifest entry under *source*, failing CLOSED on unreadable files.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_build_tree()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator
+#graphify/rationale #graphify/EXTRACTED #community/Recommendation

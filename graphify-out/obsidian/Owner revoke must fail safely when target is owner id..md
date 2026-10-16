@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "TelegramAPIProxy"
 location: "L733"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/TelegramAPIProxy
 ---
 
 # Owner /revoke must fail safely when target is owner id.
 
 ## Connections
-- [[.test_owner_revoke_command_cannot_revoke_owner()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_owner_revoke_command_cannot_revoke_owner()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

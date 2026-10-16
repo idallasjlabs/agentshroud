@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cr/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "PHASE 4: CLEANUP & v0.4.0 RELEASE"
-location: "L14"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
+location: "L221"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PHASE_4_CLEANUP__v040_RELEASE
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # Related Skills
 
 ## Connections
-- [[Code Review (CR)_1]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PHASE_4_CLEANUP__v040_RELEASE
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

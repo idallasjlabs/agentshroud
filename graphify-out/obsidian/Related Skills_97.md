@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: ".agents/skills/i-gg/README.md"
 type: "document"
-community: "CredentialInfo"
-location: "L221"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CredentialInfo
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Related Skills
 
 ## Connections
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
+- [[Git Workflow Guardian (GIT-GUARD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CredentialInfo
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

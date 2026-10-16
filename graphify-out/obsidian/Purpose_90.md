@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/README.md"
+source_file: "docker/config/hermes/skills/i-mac/README.md"
 type: "document"
-community: "Phase 2: Development Tools"
+community: "hermes/skills/i-bs/README.md"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_2_Development_Tools
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
+- [[macOS System Administrator (MAC)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_2_Development_Tools
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

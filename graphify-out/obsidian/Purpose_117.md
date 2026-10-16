@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
+source_file: ".agents/skills/i-mcpm-auth-reset/README.md"
 type: "document"
-community: "test_adversarial_injection.py"
-location: "L12"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_adversarial_injectionpy
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # Purpose
 
 ## Connections
-- [[sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_adversarial_injectionpy
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

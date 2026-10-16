@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-gg/README.md"
+source_file: ".agents/skills/i-sec-defense/README.md"
 type: "document"
-community: "DNSFilterConfig"
+community: "Blue Team Security Auditor (SEC-DEFENSE)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/Blue_Team_Security_Auditor_SEC-DEFENSE
 ---
 
 # Related Skills
 
 ## Connections
-- [[Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
+- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/Blue_Team_Security_Auditor_SEC-DEFENSE

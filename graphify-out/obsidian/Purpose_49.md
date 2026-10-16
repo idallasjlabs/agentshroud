@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-hermes/README.md"
+source_file: "docker/config/openclaw/skills/i-pr/README.md"
 type: "document"
-community: "SlackAPIProxy"
+community: "Pull Request Generator (PR)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/Pull_Request_Generator_PR
 ---
 
 # Purpose
 
 ## Connections
-- [[Hermes — Podcast Production Orchestrator_1]] - `contains` [EXTRACTED]
+- [[Pull Request Generator (PR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/Pull_Request_Generator_PR

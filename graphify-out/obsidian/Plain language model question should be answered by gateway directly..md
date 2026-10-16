@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "TelegramAPIProxy"
 location: "L4690"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/TelegramAPIProxy
 ---
 
 # Plain language model question should be answered by gateway directly.
 
 ## Connections
-- [[.test_plain_model_question_is_handled_locally()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_plain_model_question_is_handled_locally()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

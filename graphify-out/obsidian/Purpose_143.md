@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/docker_engine.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
 type: "document"
-community: "tts.py"
+community: "Function Details"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ttspy
+  - community/Function_Details
 ---
 
 # Purpose
 
 ## Connections
-- [[docker_engine.py_2]] - `contains` [EXTRACTED]
+- [[mcp_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ttspy
+#graphify/document #graphify/EXTRACTED #community/Function_Details

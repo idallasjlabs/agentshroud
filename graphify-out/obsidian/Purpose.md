@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-apollo/README.md"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/api.py.md"
 type: "document"
-community: "DNSFilterConfig"
-location: "L6"
+community: "api.py"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/apipy
 ---
 
 # Purpose
 
 ## Connections
-- [[Apollo — Audio Systems Producer]] - `contains` [EXTRACTED]
+- [[api.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/apipy

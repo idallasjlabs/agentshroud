@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
+source_file: "docs/vault/05 - Dependencies/openclaw.md"
 type: "document"
-community: "1. Accomplishments This Phase"
-location: "L12"
+community: "agentshroud-bot"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1_Accomplishments_This_Phase
+  - community/agentshroud-bot
 ---
 
 # Purpose
 
 ## Connections
-- [[web_proxy.py_2]] - `contains` [EXTRACTED]
+- [[OpenClaw_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1_Accomplishments_This_Phase
+#graphify/document #graphify/EXTRACTED #community/agentshroud-bot

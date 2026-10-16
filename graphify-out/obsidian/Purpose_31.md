@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec/README.md"
+source_file: "docker/config/openclaw/skills/i-athena/README.md"
 type: "document"
-community: "AgentShroud v1.2.0 — Blue Team Security Assessme"
+community: "Athena — Knowledge Distiller"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v120__Blue_Team_Security_Assessme
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Purpose
 
 ## Connections
-- [[Security Review (SEC)]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v120__Blue_Team_Security_Assessme
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

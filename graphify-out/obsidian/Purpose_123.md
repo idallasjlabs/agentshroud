@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
+source_file: ".agents/skills/i-bs/README.md"
 type: "document"
-community: "API Keys Setup Guide"
-location: "L15"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/API_Keys_Setup_Guide
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Purpose
 
 ## Connections
-- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

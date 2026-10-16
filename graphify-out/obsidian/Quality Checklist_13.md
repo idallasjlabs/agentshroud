@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
+source_file: ".agents/skills/i-atlas/SKILL.md"
 type: "document"
-community: "GATEWAY_OP_PROXY_URL"
-location: "L71"
+community: "Atlas — Curriculum Architect"
+location: "L201"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GATEWAY_OP_PROXY_URL
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Hermes — Reference Verifier_1]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GATEWAY_OP_PROXY_URL
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

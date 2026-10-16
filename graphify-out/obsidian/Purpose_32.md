@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-socrates/README.md"
+source_file: "docker/config/openclaw/skills/i-atlas/README.md"
 type: "document"
-community: "BROWSER_FETCH_SKILL.md"
+community: "Atlas — Curriculum Architect"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BROWSER_FETCH_SKILLmd
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Purpose
 
 ## Connections
-- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BROWSER_FETCH_SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec-offense/README.md"
+source_file: "docker/config/openclaw/skills/i-apollo/README.md"
 type: "document"
-community: "DNSFilterConfig"
+community: "Apollo — Audio Systems Producer"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/Apollo__Audio_Systems_Producer
 ---
 
 # Purpose
 
 ## Connections
-- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer

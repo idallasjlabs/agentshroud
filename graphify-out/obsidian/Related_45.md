@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
 type: "document"
-community: "Distributed OpenClaw Node Architecture — Raspber"
-location: "L106"
+community: "consent_framework.py"
+location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Distributed_OpenClaw_Node_Architecture__Raspber
+  - community/consent_frameworkpy
 ---
 
 # Related
 
 ## Connections
-- [[env_guard.py_2]] - `contains` [EXTRACTED]
+- [[consent_framework.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspber
+#graphify/document #graphify/EXTRACTED #community/consent_frameworkpy

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-bs/README.md"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
 type: "document"
-community: "DNSFilterConfig"
-location: "L6"
+community: "installer.py"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/installerpy
 ---
 
 # Purpose
 
 ## Connections
-- [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
+- [[installer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/installerpy

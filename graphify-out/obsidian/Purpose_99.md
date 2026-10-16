@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ps/README.md"
+source_file: "docker/config/hermes/skills/i-tw/README.md"
 type: "document"
-community: "TestProcScans"
+community: "hermes/skills/i-bs/README.md"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestProcScans
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Purpose
 
 ## Connections
-- [[Production Safety Checklist (PROD-SAFETY)_1]] - `contains` [EXTRACTED]
+- [[Technical Writer (TW)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestProcScans
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

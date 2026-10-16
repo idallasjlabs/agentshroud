@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-cr/README.md"
+source_file: ".agents/skills/i-hermes/README.md"
 type: "document"
-community: "AuditExporter"
+community: "Hermes — Podcast Production Orchestrator"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditExporter
+  - community/Hermes__Podcast_Production_Orchestrator
 ---
 
 # Related Skills
 
 ## Connections
-- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
+- [[Hermes — Podcast Production Orchestrator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditExporter
+#graphify/document #graphify/EXTRACTED #community/Hermes__Podcast_Production_Orchestrator

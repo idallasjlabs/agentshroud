@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
 type: "document"
-community: "TestMinimalConfig"
-location: "L17"
+community: "version_routes.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMinimalConfig
+  - community/version_routespy
 ---
 
 # Purpose
 
 ## Connections
-- [[apply-patches.js_2]] - `contains` [EXTRACTED]
+- [[version_routes.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMinimalConfig
+#graphify/document #graphify/EXTRACTED #community/version_routespy

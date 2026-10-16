@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
+source_file: "skills/openclaw/model-usage/SKILL.md"
 type: "document"
-community: "Core Security Principles"
-location: "L387"
+community: "Common Queries"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Core_Security_Principles
+  - community/Common_Queries
 ---
 
 # References
 
 ## Connections
-- [[Phase 3 Requirements Working Chat Container]] - `contains` [EXTRACTED]
+- [[Model usage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Core_Security_Principles
+#graphify/document #graphify/EXTRACTED #community/Common_Queries

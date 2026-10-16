@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pm/README.md"
+source_file: "docker/config/hermes/skills/i-daedalus/README.md"
 type: "document"
-community: "AuditExporter"
+community: "Daedalus — Concept Illustrator"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditExporter
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Purpose
 
 ## Connections
-- [[Project Management (README)]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditExporter
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

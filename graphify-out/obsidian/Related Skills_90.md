@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-eightd/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "1. Accomplishments This Phase"
+community: "MCP AWS Profile Configuration README"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1_Accomplishments_This_Phase
+  - community/MCP_AWS_Profile_Configuration_README
 ---
 
 # Related Skills
 
 ## Connections
-- [[8D Root Cause Analysis_2]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1_Accomplishments_This_Phase
+#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_README

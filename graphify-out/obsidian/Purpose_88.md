@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mac/README.md"
+source_file: "docker/config/hermes/skills/i-eightd/README.md"
 type: "document"
-community: "sunday-upgrade.sh"
+community: "hermes/skills/i-bs/README.md"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sunday-upgradesh
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Purpose
 
 ## Connections
-- [[macOS System Administrator (MAC)_2]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sunday-upgradesh
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

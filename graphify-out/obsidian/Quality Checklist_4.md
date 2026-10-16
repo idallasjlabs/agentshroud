@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-hermes/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-hermes/SKILL.md"
 type: "document"
-community: "HIGH — Should Fix Before Release"
+community: "Hermes — Reference Verifier"
 location: "L71"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/HIGH__Should_Fix_Before_Release
+  - community/Hermes__Reference_Verifier
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
+- [[Hermes — Reference Verifier_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/HIGH__Should_Fix_Before_Release
+#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mnemosyne/README.md"
+source_file: "docker/config/hermes/skills/i-pr/README.md"
 type: "document"
-community: "TestRunningImageResolution"
+community: "hermes/skills/i-bs/README.md"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestRunningImageResolution
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Purpose
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_4]] - `contains` [EXTRACTED]
+- [[Pull Request Generator (PR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestRunningImageResolution
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

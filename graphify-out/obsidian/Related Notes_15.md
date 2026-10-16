@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
 type: "document"
-community: "AgentShroud v0.8.0 — 25-Domain Prompt Injection "
-location: "L40"
+community: "Prompt Injection Blocks"
+location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080__25-Domain_Prompt_Injection_
+  - community/Prompt_Injection_Blocks
 ---
 
 # Related Notes
 
 ## Connections
-- [[proxy_status.py_2]] - `contains` [EXTRACTED]
+- [[Prompt Injection Blocks]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080__25-Domain_Prompt_Injection_
+#graphify/document #graphify/EXTRACTED #community/Prompt_Injection_Blocks

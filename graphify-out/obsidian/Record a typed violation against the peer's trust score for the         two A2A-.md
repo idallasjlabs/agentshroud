@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "rationale"
-community: "AgentTarget"
+community: "A2AProxyResult"
 location: "L370"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/A2AProxyResult
 ---
 
 # Record a typed violation against the peer's trust score for the         two A2A-
 
 ## Connections
-- [[._record_trust_violation()]] - `rationale_for` [EXTRACTED]
+- [[dot-_record_trust_violation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget
+#graphify/rationale #graphify/EXTRACTED #community/A2AProxyResult

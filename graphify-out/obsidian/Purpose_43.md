@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-cicd/README.md"
+source_file: "docker/config/openclaw/skills/i-mc/README.md"
 type: "document"
-community: "_FakeRBAC"
+community: "GSDE&G Development Master Checklist (MC)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/GSDEG_Development_Master_Checklist_MC
 ---
 
 # Purpose
 
 ## Connections
-- [[CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
-- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_MC

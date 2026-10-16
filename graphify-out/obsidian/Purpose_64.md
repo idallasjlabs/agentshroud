@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sad/README.md"
+source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
 type: "document"
-community: "SlackAPIProxy"
-location: "L6"
+community: "agentshroud.yaml"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/agentshroudyaml
 ---
 
 # Purpose
 
 ## Connections
-- [[System Audit Documentation_1]] - `contains` [EXTRACTED]
+- [[agentshroud.yaml]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/agentshroudyaml

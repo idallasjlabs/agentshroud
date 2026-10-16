@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
 type: "document"
-community: "validate_network_security()"
-location: "L80"
+community: "TrustManager"
+location: "L110"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/validate_network_security
+  - community/TrustManager
 ---
 
 # Related
 
 ## Connections
-- [[auth.py_3]] - `contains` [EXTRACTED]
+- [[TrustManager_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/validate_network_security
+#graphify/document #graphify/EXTRACTED #community/TrustManager

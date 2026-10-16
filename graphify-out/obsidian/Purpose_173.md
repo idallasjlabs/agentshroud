@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/api.py.md"
+source_file: "docker/config/openclaw/skills/i-vulcan/README.md"
 type: "document"
-community: "STRIDE Threat Analysis"
-location: "L16"
+community: "openclaw/skills/i-cr/SKILL.md"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/STRIDE_Threat_Analysis
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Purpose
 
 ## Connections
-- [[api.py_2]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/STRIDE_Threat_Analysis
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

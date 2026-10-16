@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "Role"
 location: "L171"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/Role
 ---
 
 # Policy configuration for tool ACL enforcement.      Loaded from agentshroud.yaml
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ToolACLConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/Role

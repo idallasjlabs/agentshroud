@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
+source_file: "docs/vault/05 - Dependencies/clamav.md"
 type: "document"
-community: "_mock_dir_with_files()"
-location: "L12"
+community: "ClamAV"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_mock_dir_with_files
+  - community/ClamAV
 ---
 
 # Purpose
 
 ## Connections
-- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
+- [[ClamAV_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_mock_dir_with_files
+#graphify/document #graphify/EXTRACTED #community/ClamAV

@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "TestEgressTelegramNotify"
+community: "Applies to: Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)"
 location: "L274"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestEgressTelegramNotify
+  - community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary
 ---
 
 # RULE D — TEST TABLE FORMAT FOR STATUS REPORTS
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[2) ⚠️ NO SECURITY THEATER (NON-NEGOTIABLE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestEgressTelegramNotify
+#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary

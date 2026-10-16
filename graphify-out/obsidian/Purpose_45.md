@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-daedalus/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "Containers startup order: agentshroud-gateway st"
+community: "MCP Doctor (MCPM-DOCTOR)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Containers_startup_order_agentshroud-gateway_st
+  - community/MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Purpose
 
 ## Connections
-- [[Daedalus — Concept Illustrator_2]] - `contains` [EXTRACTED]
+- [[MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Containers_startup_order_agentshroud-gateway_st
+#graphify/document #graphify/EXTRACTED #community/MCP_Doctor_MCPM-DOCTOR

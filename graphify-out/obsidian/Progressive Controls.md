@@ -1,17 +1,17 @@
 ---
 source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
 type: "document"
-community: "Enterprise Governance Proxy System (invention)"
+community: "ADR-008-progressive-trust-levels.md"
 location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Enterprise_Governance_Proxy_System_invention
+  - community/ADR-008-progressive-trust-levelsmd
 ---
 
 # Progressive Controls
 
 ## Connections
-- [[Decision_9]] - `contains` [EXTRACTED]
+- [[Decision_10]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Enterprise_Governance_Proxy_System_invention
+#graphify/document #graphify/EXTRACTED #community/ADR-008-progressive-trust-levelsmd

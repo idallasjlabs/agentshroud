@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
 type: "document"
-community: "Goal: Codex is a secondary/tertiary agent used f"
-location: "L345"
+community: "middleware.py"
+location: "L128"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Goal_Codex_is_a_secondary/tertiary_agent_used_f
+  - community/middlewarepy
 ---
 
 # Related
 
 ## Connections
-- [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
+- [[middleware.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Goal_Codex_is_a_secondary/tertiary_agent_used_f
+#graphify/document #graphify/EXTRACTED #community/middlewarepy

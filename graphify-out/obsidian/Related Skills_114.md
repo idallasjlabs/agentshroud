@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec/README.md"
+source_file: "docker/config/openclaw/skills/i-ti/README.md"
 type: "document"
-community: "TestDashboardWSToken"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestDashboardWSToken
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Related Skills
 
 ## Connections
-- [[Security Review (SEC)_2]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestDashboardWSToken
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "USPTO Trademark Application — AgentShroud™"
+community: "Post-v1.0.0 — Deferred"
 location: "L341"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/USPTO_Trademark_Application__AgentShroud
+  - community/Post-v100__Deferred
 ---
 
 # Personal Infrastructure Monitor (Phase 15)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-v1.0.0 — Deferred]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/USPTO_Trademark_Application__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Post-v100__Deferred

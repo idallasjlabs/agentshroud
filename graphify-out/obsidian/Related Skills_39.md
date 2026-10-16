@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-vulcan/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm/README.md"
 type: "document"
-community: "DNSFilterConfig"
+community: "MCP Tools Usage (MCPM)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/MCP_Tools_Usage_MCPM
 ---
 
 # Related Skills
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor]] - `contains` [EXTRACTED]
+- [[MCP Tools Usage (MCPM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/MCP_Tools_Usage_MCPM

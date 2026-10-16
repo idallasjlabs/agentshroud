@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mnemosyne/README.md"
+source_file: "docker/config/hermes/skills/i-aws/README.md"
 type: "document"
-community: "Workflow: Survey → Draft → Inject → Confirm"
+community: "AWS Cloud Management & FinOps"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workflow_Survey__Draft__Inject__Confirm
+  - community/AWS_Cloud_Management__FinOps
 ---
 
 # Purpose
 
 ## Connections
-- [[Mnemosyne — Retention Engineer]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps

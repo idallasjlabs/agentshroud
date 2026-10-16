@@ -1,33 +1,33 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "GitGuard"
+community: "PermissionLevel"
 location: "L23"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/GitGuard
+  - community/PermissionLevel
 ---
 
 # PermissionLevel
 
 ## Connections
-- [[.__ge__()]] - `method` [EXTRACTED]
-- [[.__gt__()]] - `method` [EXTRACTED]
-- [[.__le__()]] - `method` [EXTRACTED]
-- [[.__lt__()]] - `method` [EXTRACTED]
-- [[.from_dict()]] - `calls` [EXTRACTED]
-- [[.level_value()]] - `method` [EXTRACTED]
-- [[Enum]] - `inherits` [EXTRACTED]
-- [[Exception_4]] - `uses` [INFERRED]
+- [[dot-__ge__()]] - `method` [EXTRACTED]
+- [[dot-__gt__()]] - `method` [EXTRACTED]
+- [[dot-__le__()]] - `method` [EXTRACTED]
+- [[dot-__lt__()]] - `method` [EXTRACTED]
+- [[dot-from_dict()_1]] - `calls` [EXTRACTED]
+- [[dot-level_value()]] - `method` [EXTRACTED]
+- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[Exception]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxy_1]] - `uses` [INFERRED]
+- [[MCPPermissionManager_1]] - `uses` [INFERRED]
+- [[MCPProxy]] - `uses` [INFERRED]
 - [[MCPProxyConfig_1]] - `uses` [INFERRED]
-- [[MCPProxyConfig_3]] - `uses` [INFERRED]
-- [[MCPServerConfig_1]] - `uses` [INFERRED]
+- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPServerConfig]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
 - [[PermissionCheck]] - `uses` [INFERRED]
 - [[PermissionLevel_1]] - `uses` [INFERRED]
@@ -37,7 +37,7 @@ tags:
 - [[TestAllowDenyList]] - `uses` [INFERRED]
 - [[TestApprovalQueue]] - `uses` [INFERRED]
 - [[TestAuditQueries]] - `uses` [INFERRED]
-- [[TestAuditTrail]] - `uses` [INFERRED]
+- [[TestAuditTrail_2]] - `uses` [INFERRED]
 - [[TestAuditTrailBounded]] - `uses` [INFERRED]
 - [[TestChainIntegrityMultiple]] - `uses` [INFERRED]
 - [[TestCheckAll]] - `uses` [INFERRED]
@@ -54,9 +54,9 @@ tags:
 - [[TestInferPermission]] - `uses` [INFERRED]
 - [[TestInjectionDetection]] - `uses` [INFERRED]
 - [[TestInspectorEdgeCases]] - `uses` [INFERRED]
-- [[TestPIIDetection]] - `uses` [INFERRED]
+- [[TestPIIDetection_1]] - `uses` [INFERRED]
 - [[TestPassthrough]] - `uses` [INFERRED]
-- [[TestPassthroughMode]] - `uses` [INFERRED]
+- [[TestPassthroughMode_1]] - `uses` [INFERRED]
 - [[TestPermissionLevel]] - `uses` [INFERRED]
 - [[TestPrivacyPolicyEvents]] - `uses` [INFERRED]
 - [[TestProcessingTime]] - `uses` [INFERRED]
@@ -65,7 +65,7 @@ tags:
 - [[TestProxyRateLimiting]] - `uses` [INFERRED]
 - [[TestProxyResultProcessing]] - `uses` [INFERRED]
 - [[TestProxyStats]] - `uses` [INFERRED]
-- [[TestRateLimiting_2]] - `uses` [INFERRED]
+- [[TestRateLimiting]] - `uses` [INFERRED]
 - [[TestResultProcessingAndLifecycle]] - `uses` [INFERRED]
 - [[TestSanitizeAdminPrivateData]] - `uses` [INFERRED]
 - [[TestSensitiveOps]] - `uses` [INFERRED]
@@ -76,12 +76,12 @@ tags:
 - [[TestToolPermission]] - `uses` [INFERRED]
 - [[TestTrustLevels]] - `uses` [INFERRED]
 - [[TestTrustMapping]] - `uses` [INFERRED]
-- [[__init__.py_7]] - `imports` [EXTRACTED]
 - [[mcp_config.py]] - `contains` [EXTRACTED]
 - [[mcp_permissions.py]] - `imports` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[proxy__init__.py]] - `imports` [EXTRACTED]
+- [[str_2]] - `inherits` [EXTRACTED]
 - [[test_mcp_permissions.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/GitGuard
+#graphify/code #graphify/INFERRED #community/PermissionLevel

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_replay.py"
 type: "rationale"
-community: "_sleep()"
+community: "test_telegram_replay.py"
 location: "L83"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_sleep
+  - community/test_telegram_replaypy
 ---
 
 # Persist inbound updates so they can be replayed after a crash.
 
 ## Connections
-- [[.record_inbound()]] - `rationale_for` [EXTRACTED]
+- [[dot-record_inbound()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_sleep
+#graphify/rationale #graphify/EXTRACTED #community/test_telegram_replaypy

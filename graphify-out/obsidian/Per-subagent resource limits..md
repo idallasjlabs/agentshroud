@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "Quick Reference — AgentShroud"
+community: "SubagentGovernance"
 location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Quick_Reference__AgentShroud
+  - community/SubagentGovernance
 ---
 
 # Per-subagent resource limits.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ResourceBudget]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Quick_Reference__AgentShroud
+#graphify/rationale #graphify/EXTRACTED #community/SubagentGovernance

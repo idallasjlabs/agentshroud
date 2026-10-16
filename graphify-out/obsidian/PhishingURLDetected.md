@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "test_scorecard_integrity.py"
+community: "ThreatAssessment"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scorecard_integritypy
+  - community/ThreatAssessment
 ---
 
 # PhishingURLDetected
 
 ## Connections
-- [[Exception]] - `inherits` [EXTRACTED]
+- [[Exception_2]] - `inherits` [EXTRACTED]
 - [[browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scorecard_integritypy
+#graphify/code #graphify/EXTRACTED #community/ThreatAssessment

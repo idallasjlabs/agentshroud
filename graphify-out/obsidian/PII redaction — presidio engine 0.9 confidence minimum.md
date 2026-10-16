@@ -1,13 +1,13 @@
 ---
 source_file: "CLAUDE.md"
 type: "rationale"
-community: ".test_healthcheck_skill_message_without_sandbox_"
+community: "PII redaction — presidio engine 0.9 confidence minimum"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_healthcheck_skill_message_without_sandbox_
+  - community/PII_redaction__presidio_engine_09_confidence_minimum
 ---
 
 # PII redaction — presidio engine 0.9 confidence minimum
 
-#graphify/rationale #graphify/EXTRACTED #community/test_healthcheck_skill_message_without_sandbox_
+#graphify/rationale #graphify/EXTRACTED #community/PII_redaction__presidio_engine_09_confidence_minimum

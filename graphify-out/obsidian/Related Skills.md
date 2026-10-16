@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-apollo/README.md"
+source_file: ".agents/skills/i-sec/README.md"
 type: "document"
-community: "DNSFilterConfig"
+community: "Security Review (SEC)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/Security_Review_SEC
 ---
 
 # Related Skills
 
 ## Connections
-- [[Apollo — Audio Systems Producer]] - `contains` [EXTRACTED]
+- [[Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC

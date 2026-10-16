@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mac/SKILL.md"
+source_file: ".agents/skills/i-mac/SKILL.md"
 type: "document"
-community: "TestMCPResultEndpoint"
+community: "Phase 1 — Raw Collection"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMCPResultEndpoint
+  - community/Phase_1__Raw_Collection
 ---
 
 # Phase 1 — Raw Collection
@@ -22,6 +22,6 @@ tags:
 - [[7. CLI Tools & Utilities (non-.app installs)_2]] - `contains` [EXTRACTED]
 - [[8. Launch Agents & Daemons (background services)_2]] - `contains` [EXTRACTED]
 - [[9. Browser Extensions (optional but useful)_2]] - `contains` [EXTRACTED]
-- [[Discovery Strategy_2]] - `contains` [EXTRACTED]
+- [[Discovery Strategy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMCPResultEndpoint
+#graphify/document #graphify/EXTRACTED #community/Phase_1__Raw_Collection

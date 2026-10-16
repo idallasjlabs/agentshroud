@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/trivy.md"
+source_file: "docs/vault/05 - Dependencies/openclaw.md"
 type: "document"
-community: "Mode A — Single task"
-location: "L43"
+community: "agentshroud-bot"
+location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task
+  - community/agentshroud-bot
 ---
 
 # Related Notes
 
 ## Connections
-- [[Trivy]] - `contains` [EXTRACTED]
+- [[OpenClaw_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task
+#graphify/document #graphify/EXTRACTED #community/agentshroud-bot

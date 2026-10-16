@@ -1,20 +1,17 @@
 ---
-source_file: "docs/setup/setup-guide.md"
+source_file: "docs/operations/linux.md"
 type: "document"
-community: "AgentShroud v0.8.0 \"Watchtower\" — Execution Summ"
-location: "L17"
+community: "Deploying AgentShroud on Linux (x86_64 / aarch64)"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080_Watchtower__Execution_Summ
+  - community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64
 ---
 
 # Prerequisites
 
 ## Connections
-- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
-- [[Optional Requirements]] - `contains` [EXTRACTED]
-- [[Supported Platforms]] - `contains` [EXTRACTED]
-- [[System Requirements_1]] - `contains` [EXTRACTED]
+- [[Deploying AgentShroud on Linux (x86_64  aarch64)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Execution_Summ
+#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64

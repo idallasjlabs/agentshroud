@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-apollo/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
 type: "document"
-community: ".update()"
-location: "L137"
+community: "Atlas — Curriculum Architect"
+location: "L201"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/update
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Apollo — Audio Systems Producer_2]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/update
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

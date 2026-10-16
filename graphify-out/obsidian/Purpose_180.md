@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/pytest.ini.md"
+source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
 type: "document"
-community: "TestFileSandbox"
-location: "L15"
+community: "config.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestFileSandbox
+  - community/configpy
 ---
 
 # Purpose
 
 ## Connections
-- [[pytest.ini_1]] - `contains` [EXTRACTED]
+- [[config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFileSandbox
+#graphify/document #graphify/EXTRACTED #community/configpy

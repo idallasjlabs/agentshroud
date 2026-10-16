@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tdd/README.md"
+source_file: "docker/config/openclaw/skills/i-mc/README.md"
 type: "document"
-community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+community: "GSDE&G Development Master Checklist (MC)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR
+  - community/GSDEG_Development_Master_Checklist_MC
 ---
 
 # Related Skills
 
 ## Connections
-- [[Test-Driven Development README]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_MC

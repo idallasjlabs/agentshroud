@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/openscap.md"
+source_file: ".agents/skills/i-cicd/README.md"
 type: "document"
-community: "AgentShroud Blue Team Security Auditor"
-location: "L16"
+community: "CI/CD Pipeline Advisor (README)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Blue_Team_Security_Auditor
+  - community/CI/CD_Pipeline_Advisor_README
 ---
 
 # Purpose
 
 ## Connections
-- [[OpenSCAP]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README

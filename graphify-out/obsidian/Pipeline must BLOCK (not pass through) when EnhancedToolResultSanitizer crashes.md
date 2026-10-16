@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "WebProxyConfig"
+community: "PIIConfig"
 location: "L392"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/PIIConfig
 ---
 
 # Pipeline must BLOCK (not pass through) when EnhancedToolResultSanitizer crashes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pipeline_fails_closed_on_enhanced_sanitizer_error()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

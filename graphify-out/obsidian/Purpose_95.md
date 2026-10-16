@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-oracle/README.md"
+source_file: "docker/config/hermes/skills/i-sad/README.md"
 type: "document"
-community: "Docker Desktop Network Settings — Cisco AnyConne"
+community: "hermes/skills/i-bs/README.md"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Desktop_Network_Settings__Cisco_AnyConne
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Purpose
 
 ## Connections
-- [[Oracle — Feedback Analyst_4]] - `contains` [EXTRACTED]
+- [[System Audit Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Desktop_Network_Settings__Cisco_AnyConne
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

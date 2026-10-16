@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-athena/README.md"
+source_file: ".agents/skills/i-sec/README.md"
 type: "document"
-community: "FY26 Cost Reduction Context"
+community: "Security Review (SEC)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/FY26_Cost_Reduction_Context
+  - community/Security_Review_SEC
 ---
 
 # Purpose
 
 ## Connections
-- [[Athena — Knowledge Distiller]] - `contains` [EXTRACTED]
+- [[Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/FY26_Cost_Reduction_Context
+#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC

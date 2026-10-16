@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
+source_file: "docker/config/hermes/skills/i-ti/README.md"
 type: "document"
-community: "TestAtomicRegistryWrites"
-location: "L12"
+community: "Technical Illustrator (i-ti)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestAtomicRegistryWrites
+  - community/Technical_Illustrator_i-ti
 ---
 
 # Purpose
 
 ## Connections
-- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (TI)]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestAtomicRegistryWrites
+#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_i-ti

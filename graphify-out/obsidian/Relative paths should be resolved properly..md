@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "Enum"
+community: "MiddlewareManager"
 location: "L326"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enum
+  - community/MiddlewareManager
 ---
 
 # Relative paths should be resolved properly.
 
 ## Connections
-- [[.test_relative_path_resolution()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_relative_path_resolution()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enum
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

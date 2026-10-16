@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-socrates/README.md"
+source_file: "docker/config/openclaw/skills/i-mac/README.md"
 type: "document"
-community: "BROWSER_FETCH_SKILL.md"
+community: "macOS System Administrator (MAC)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BROWSER_FETCH_SKILLmd
+  - community/macOS_System_Administrator_MAC
 ---
 
 # Related Skills
 
 ## Connections
-- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
+- [[macOS System Administrator (MAC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BROWSER_FETCH_SKILLmd
+#graphify/document #graphify/EXTRACTED #community/macOS_System_Administrator_MAC

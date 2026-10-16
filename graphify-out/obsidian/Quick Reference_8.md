@@ -1,21 +1,17 @@
 ---
-source_file: "docs/setup/SETUP_API_KEYS.md"
+source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "TestParseModeStrippedAfterPIIRedaction"
-location: "L257"
+community: "xurl — Agent Skill Reference"
+location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestParseModeStrippedAfterPIIRedaction
+  - community/xurl__Agent_Skill_Reference
 ---
 
 # Quick Reference
 
 ## Connections
-- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
-- [[Change Default Model]] - `contains` [EXTRACTED]
-- [[Check Telegram Channel Status]] - `contains` [EXTRACTED]
-- [[List Available Models]] - `contains` [EXTRACTED]
-- [[View Configured Providers]] - `contains` [EXTRACTED]
+- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestParseModeStrippedAfterPIIRedaction
+#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
+source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "API Keys Setup Guide"
-location: "L192"
+community: "Pydantic"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/API_Keys_Setup_Guide
+  - community/Pydantic
 ---
 
 # Related Notes
 
 ## Connections
-- [[Shutdown & Recovery_1]] - `contains` [EXTRACTED]
+- [[Pydantic]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/Pydantic

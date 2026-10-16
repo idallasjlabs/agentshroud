@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
+source_file: "docs/vault/06 - Containers & Services/networks.md"
 type: "document"
-community: "03-data.md"
-location: "L127"
+community: "agentshroud-bot"
+location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/03-datamd
+  - community/agentshroud-bot
 ---
 
 # Related Notes
 
 ## Connections
-- [[agentshroud-gateway_1]] - `contains` [EXTRACTED]
+- [[Docker Networks]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/03-datamd
+#graphify/document #graphify/EXTRACTED #community/agentshroud-bot

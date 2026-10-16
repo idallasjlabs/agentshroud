@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/daily-memory-journal.txt"
 type: "document"
-community: "TELEGRAM_ISSUES.md"
+community: "Report Delivery Format Instructions"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TELEGRAM_ISSUESmd
+  - community/Report_Delivery_Format_Instructions
 ---
 
 # Prompt: Daily Memory Journal
@@ -17,4 +17,4 @@ tags:
 - [[OpenClaw Cron Jobs Reference & Recreation Guide]] - `references` [EXTRACTED]
 - [[Seed Job Daily Memory Journal]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd
+#graphify/document #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions

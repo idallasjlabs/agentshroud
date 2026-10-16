@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tw/README.md"
+source_file: "docker/config/openclaw/skills/i-bs/README.md"
 type: "document"
-community: "DNSFilterConfig"
+community: "Branding Specialist (BS)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/Branding_Specialist_BS
 ---
 
 # Purpose
 
 ## Connections
-- [[Technical Writer (TW)]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/Branding_Specialist_BS

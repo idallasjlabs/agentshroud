@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tw/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "DNSFilterConfig"
+community: "MCP Doctor (MCPM-DOCTOR)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Related Skills
 
 ## Connections
-- [[Technical Writer (TW)]] - `contains` [EXTRACTED]
+- [[MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/MCP_Doctor_MCPM-DOCTOR

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "test_http_proxy.py"
+community: "EgressPolicy"
 location: "L158"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_http_proxypy
+  - community/EgressPolicy
 ---
 
 # Per-agent policies override the default.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPerAgentPolicy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_http_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/EgressPolicy

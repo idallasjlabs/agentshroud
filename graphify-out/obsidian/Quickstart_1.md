@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Community 929"
+community: "Quickstart"
 location: "L262"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_929
+  - community/Quickstart
 ---
 
 # Quickstart
@@ -22,4 +22,4 @@ tags:
 - [[`asb` reference]] - `contains` [EXTRACTED]
 - [[asb Wrapper Script]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_929
+#graphify/document #graphify/EXTRACTED #community/Quickstart

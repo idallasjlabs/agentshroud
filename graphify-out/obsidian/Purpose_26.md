@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-qa/README.md"
+source_file: "docker/config/hermes/skills/i-oracle/README.md"
 type: "document"
-community: "_w()"
+community: "Oracle — Feedback Analyst"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_w
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Purpose
 
 ## Connections
-- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_w
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

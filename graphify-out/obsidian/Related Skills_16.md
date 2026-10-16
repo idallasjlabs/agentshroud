@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm-auth-reset/README.md"
+source_file: "docker/config/hermes/skills/i-gg/README.md"
 type: "document"
-community: "PromptGuard"
+community: "Git Workflow Guardian (GIT-GUARD)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/Git_Workflow_Guardian_GIT-GUARD
 ---
 
 # Related Skills
 
 ## Connections
-- [[MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
+- [[Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PromptGuard
+#graphify/document #graphify/EXTRACTED #community/Git_Workflow_Guardian_GIT-GUARD

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-bs/README.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
 type: "document"
-community: "8. Common Troubleshooting Scenarios"
-location: "L6"
+community: "http_proxy.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/8_Common_Troubleshooting_Scenarios
+  - community/http_proxypy
 ---
 
 # Purpose
 
 ## Connections
-- [[Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
+- [[http_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/8_Common_Troubleshooting_Scenarios
+#graphify/document #graphify/EXTRACTED #community/http_proxypy

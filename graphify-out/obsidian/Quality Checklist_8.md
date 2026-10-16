@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-vulcan/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
 type: "document"
-community: "TestStrangerRateLimit"
-location: "L127"
+community: "Socrates — Dialogue Architect"
+location: "L158"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestStrangerRateLimit
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_1]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestStrangerRateLimit
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

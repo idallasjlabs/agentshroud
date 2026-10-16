@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "sync-cve-registry.py"
+community: "TestPathIsolationManager"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/TestPathIsolationManager
 ---
 
 # PathRewriteResult
 
 ## Connections
-- [[.rewrite_path()]] - `references` [EXTRACTED]
-- [[.test_basic_result()]] - `calls` [EXTRACTED]
-- [[.test_blocked_result()]] - `calls` [EXTRACTED]
+- [[dot-rewrite_path()]] - `references` [EXTRACTED]
+- [[dot-test_basic_result()]] - `calls` [EXTRACTED]
+- [[dot-test_blocked_result()]] - `calls` [EXTRACTED]
 - [[Result of path rewriting operation.]] - `rationale_for` [EXTRACTED]
 - [[TestPathIsolationConfig]] - `uses` [INFERRED]
 - [[TestPathIsolationManager]] - `uses` [INFERRED]
@@ -22,4 +22,4 @@ tags:
 - [[path_isolation.py]] - `contains` [EXTRACTED]
 - [[test_path_isolation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager

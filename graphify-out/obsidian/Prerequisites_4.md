@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/linux.md"
+source_file: "docs/setup-telegram.md"
 type: "document"
-community: "Remediation"
+community: "Slack Channel Setup"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Remediation
+  - community/Slack_Channel_Setup
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Deploying AgentShroud on Linux (x86_64  aarch64)]] - `contains` [EXTRACTED]
+- [[Telegram Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Remediation
+#graphify/document #graphify/EXTRACTED #community/Slack_Channel_Setup

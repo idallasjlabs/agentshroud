@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ti/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
 type: "document"
-community: "1. GitHub MCP Authentication Reset"
-location: "L6"
+community: "EgressFilter"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1_GitHub_MCP_Authentication_Reset
+  - community/EgressFilter
 ---
 
 # Purpose
 
 ## Connections
-- [[Technical Illustrator (TI)]] - `contains` [EXTRACTED]
-- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
+- [[EgressFilter_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset
+#graphify/document #graphify/EXTRACTED #community/EgressFilter

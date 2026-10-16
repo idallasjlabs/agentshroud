@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-tdd/SKILL.md"
 type: "document"
-community: "AuditEvent"
+community: "Skill: Test-Driven Development (TDD)"
 location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditEvent
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Python / Boto3 / AWS  →  `moto`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Stack-Specific Testing Patterns]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditEvent
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

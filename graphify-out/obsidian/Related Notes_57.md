@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md"
+source_file: "docs/vault/08 - Runbooks/Kill Switch Procedure.md"
 type: "document"
-community: "TestGroupMemoryInvisibleFromDM"
-location: "L99"
+community: "Kill Switch Procedure"
+location: "L141"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestGroupMemoryInvisibleFromDM
+  - community/Kill_Switch_Procedure
 ---
 
 # Related Notes
 
 ## Connections
-- [[Egress Filter Errors_1]] - `contains` [EXTRACTED]
+- [[Kill Switch Procedure_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestGroupMemoryInvisibleFromDM
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch_Procedure

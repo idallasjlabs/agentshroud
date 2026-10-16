@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cicd/README.md"
+source_file: "docker/config/hermes/skills/i-tdd/README.md"
 type: "document"
-community: "text_control_center.py / agentshroud_manager.py"
+community: "Test-Driven Development README"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/text_control_centerpy_/_agentshroud_managerpy
+  - community/Test-Driven_Development_README
 ---
 
 # Related Skills
 
 ## Connections
-- [[CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
+- [[Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
+- [[Test-Driven Development README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/text_control_centerpy_/_agentshroud_managerpy
+#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README

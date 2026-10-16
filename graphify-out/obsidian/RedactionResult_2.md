@@ -1,19 +1,22 @@
 ---
-source_file: "gateway/security/prompt_protection.py"
+source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "DockerEngine"
-location: "L39"
+community: "ToolResultSanitizer"
+location: "L171"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DockerEngine
+  - community/ToolResultSanitizer
 ---
 
 # RedactionResult
 
 ## Connections
-- [[.scan_response()_2]] - `references` [EXTRACTED]
-- [[Result of scanning and redacting content.]] - `rationale_for` [EXTRACTED]
-- [[prompt_protection.py]] - `contains` [EXTRACTED]
+- [[dot-_sanitize_presidio()]] - `references` [EXTRACTED]
+- [[dot-_sanitize_regex()]] - `references` [EXTRACTED]
+- [[dot-sanitize()_3]] - `references` [EXTRACTED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[RedactionDetail_1]] - `uses` [INFERRED]
+- [[RedactionResult_3]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/DockerEngine
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

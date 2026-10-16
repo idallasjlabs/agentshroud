@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-production/README.md"
+source_file: "docker/config/hermes/skills/i-bs/README.md"
 type: "document"
-community: "_is_stale_callback_error()"
+community: "hermes/skills/i-bs/README.md"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_is_stale_callback_error
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Related Skills
 
 ## Connections
-- [[Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_is_stale_callback_error
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

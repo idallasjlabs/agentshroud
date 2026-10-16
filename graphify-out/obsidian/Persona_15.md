@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-vulcan/SKILL.md"
+source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
+community: "Athena — Knowledge Distiller"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Persona
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_3]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/seccomp-profiles.md"
+source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
 type: "document"
-community: "diagrams/README.md"
-location: "L84"
+community: "AGENTSHROUD_MODE"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/diagrams/READMEmd
+  - community/AGENTSHROUD_MODE
 ---
 
 # Related Notes
 
 ## Connections
-- [[Seccomp Profiles]] - `contains` [EXTRACTED]
+- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/diagrams/READMEmd
+#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_MODE

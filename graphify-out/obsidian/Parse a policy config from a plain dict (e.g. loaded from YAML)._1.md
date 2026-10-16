@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "rationale"
-community: "test_e2e_proxy.py"
-location: "L201"
+community: "A2APolicyConfig"
+location: "L211"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/A2APolicyConfig
 ---
 
 # Parse a policy config from a plain dict (e.g. loaded from YAML).
 
 ## Connections
-- [[.from_dict()_7]] - `rationale_for` [EXTRACTED]
+- [[dot-from_dict()_8]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/A2APolicyConfig

@@ -1,17 +1,19 @@
 ---
-source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "app_main.c"
-location: "L319"
+community: "main.py.md"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/app_mainc
+  - community/mainpymd
 ---
 
-# Quick Reference
+# Quick Reference.md
 
 ## Connections
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
+- [[Home]] - `references` [EXTRACTED]
+- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
+- [[System Overview]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/app_mainc
+#graphify/document #graphify/EXTRACTED #community/mainpymd

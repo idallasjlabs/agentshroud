@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "RBACConfig"
+community: "OutboundInfoFilter"
 location: "L388"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/OutboundInfoFilter
 ---
 
 # Pipeline with ContextGuard + ContextIntegrityScorer mocks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_integrity_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/OutboundInfoFilter

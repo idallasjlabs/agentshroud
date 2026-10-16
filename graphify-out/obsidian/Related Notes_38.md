@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
+source_file: "docs/vault/03 - Configuration/docker-compose.yml.md"
 type: "document"
-community: "AgentShroud Gateway (Trust Zone 1): holds 1Passw"
-location: "L120"
+community: "Seccomp Profiles"
+location: "L166"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Gateway_Trust_Zone_1_holds_1Passw
+  - community/Seccomp_Profiles
 ---
 
 # Related Notes
 
 ## Connections
-- [[All Dependencies_1]] - `contains` [EXTRACTED]
+- [[docker-compose.yml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Gateway_Trust_Zone_1_holds_1Passw
+#graphify/document #graphify/EXTRACTED #community/Seccomp_Profiles

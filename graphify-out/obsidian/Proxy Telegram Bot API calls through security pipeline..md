@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "gateway service (prod, sole egress point, 75-mod"
+community: "BotConfig"
 location: "L4590"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/gateway_service_prod_sole_egress_point_75-mod
+  - community/BotConfig
 ---
 
 # Proxy Telegram Bot API calls through security pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[telegram_api_proxy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/gateway_service_prod_sole_egress_point_75-mod
+#graphify/rationale #graphify/EXTRACTED #community/BotConfig

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
+source_file: ".agents/skills/i-oracle/README.md"
 type: "document"
-community: "AgentShroud Security Assessment — v0.8.0"
-location: "L12"
+community: "Oracle — Feedback Analyst"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Assessment__v080
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Purpose
 
 ## Connections
-- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Assessment__v080
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

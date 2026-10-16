@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "document"
-community: "drift_detector.py"
+community: "AgentShroud Schema Documentation"
 location: "L198"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/drift_detectorpy
+  - community/AgentShroud_Schema_Documentation
 ---
 
 # Rate Limiter State
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[In-Memory Data Structures]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/drift_detectorpy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Schema_Documentation

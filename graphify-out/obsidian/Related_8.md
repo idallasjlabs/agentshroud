@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
 type: "document"
-community: "test_adversarial_injection.py"
-location: "L88"
+community: "alert_dispatcher.py"
+location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_adversarial_injectionpy
+  - community/alert_dispatcherpy
 ---
 
 # Related
 
 ## Connections
-- [[sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[alert_dispatcher.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_adversarial_injectionpy
+#graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy

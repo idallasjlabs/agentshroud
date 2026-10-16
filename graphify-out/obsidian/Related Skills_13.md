@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-icloud/README.md"
+source_file: "docker/config/hermes/skills/i-aws/README.md"
 type: "document"
-community: "Test Coverage Report (AgentShroud v1.3.0)"
+community: "AWS Cloud Management & FinOps"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test_Coverage_Report_AgentShroud_v130
+  - community/AWS_Cloud_Management__FinOps
 ---
 
 # Related Skills
 
 ## Connections
-- [[iCloud Data Manager (ICLOUD)]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test_Coverage_Report_AgentShroud_v130
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps

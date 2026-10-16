@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-vulcan/README.md"
+source_file: "docker/config/hermes/skills/i-cicd/README.md"
 type: "document"
-community: "BaseModel"
+community: "CI/CD Pipeline Advisor (README)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BaseModel
+  - community/CI/CD_Pipeline_Advisor_README
 ---
 
 # Related Skills
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_4]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BaseModel
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README

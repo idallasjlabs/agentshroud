@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-eightd/README.md"
+source_file: ".agents/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "i-eightd SKILL — 8D Root Cause Analysis"
+community: "MCP Doctor (MCPM-DOCTOR)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/i-eightd_SKILL__8D_Root_Cause_Analysis
+  - community/MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Related Skills
 
 ## Connections
-- [[8D Root Cause Analysis]] - `contains` [EXTRACTED]
+- [[MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/i-eightd_SKILL__8D_Root_Cause_Analysis
+#graphify/document #graphify/EXTRACTED #community/MCP_Doctor_MCPM-DOCTOR

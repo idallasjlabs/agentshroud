@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docker/config/hermes/skills/i-icloud/README.md"
 type: "document"
-community: "PromptGuard"
-location: "L221"
+community: "iCloud Data Manager (ICLOUD)"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/iCloud_Data_Manager_ICLOUD
 ---
 
 # Related Skills
 
 ## Connections
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
+- [[iCloud Data Manager (ICLOUD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PromptGuard
+#graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD

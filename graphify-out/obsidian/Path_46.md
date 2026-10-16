@@ -1,19 +1,17 @@
 ---
-source_file: "scripts/generate_branding_assets.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "env_guard.py"
-location: "L55"
+community: "ApprovalQueueConfig"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/env_guardpy
+  - community/ApprovalQueueConfig
 ---
 
 # Path
 
 ## Connections
-- [[ensure()]] - `references` [EXTRACTED]
-- [[get_font()]] - `calls` [EXTRACTED]
-- [[save()_1]] - `references` [EXTRACTED]
+- [[dot-__init__()_148]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/env_guardpy
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

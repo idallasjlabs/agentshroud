@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "rationale"
-community: "test_mfa_guard.py"
+community: "AgentRegistry"
 location: "L59"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/AgentRegistry
 ---
 
 # Register an agent with its container configuration.
 
 ## Connections
-- [[.register()]] - `rationale_for` [EXTRACTED]
+- [[dot-register()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry

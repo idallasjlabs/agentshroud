@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "test_soc_bots.py"
+community: "_wrap_response"
 location: "L9003"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/_wrap_response
 ---
 
 # Per-bot eligibility — each bot in a shared group tracks mention state independen
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPerBotGroupMentionFilter]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/rationale #graphify/EXTRACTED #community/_wrap_response

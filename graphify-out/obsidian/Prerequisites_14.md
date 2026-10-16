@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/himalaya/SKILL.md"
+source_file: "docs/runbooks/deployment.md"
 type: "document"
-community: "test_ledger.py"
-location: "L34"
+community: "Deployment Runbook — AgentShroud"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_ledgerpy
+  - community/Deployment_Runbook__AgentShroud
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Himalaya Email CLI]] - `contains` [EXTRACTED]
+- [[Deployment Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_ledgerpy
+#graphify/document #graphify/EXTRACTED #community/Deployment_Runbook__AgentShroud

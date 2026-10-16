@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
 type: "document"
-community: "test_playback_state.c"
+community: "PII Pipeline Errors"
 location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_playback_statec
+  - community/PII_Pipeline_Errors
 ---
 
 # Redaction Breaking JSON/Structured Data
 
 ## Connections
-- [[PII Pipeline Errors_2]] - `contains` [EXTRACTED]
+- [[PII Pipeline Errors]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_playback_statec
+#graphify/document #graphify/EXTRACTED #community/PII_Pipeline_Errors

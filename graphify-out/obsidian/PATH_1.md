@@ -1,24 +1,17 @@
 ---
-source_file: "gateway/ingest_api/config.py"
+source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "ModeRequest"
-location: "L380"
+community: "sunday-upgrade-apply.sh"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/sunday-upgrade-applysh
 ---
 
-# Path
+# PATH
 
 ## Connections
-- [[.model_post_init()]] - `calls` [EXTRACTED]
-- [[BotConfig]] - `uses` [INFERRED]
-- [[SSHConfig]] - `uses` [INFERRED]
-- [[_default_mtime()]] - `references` [EXTRACTED]
-- [[config_watcher()]] - `references` [EXTRACTED]
-- [[load_config()]] - `references` [EXTRACTED]
-- [[reload_config()]] - `references` [EXTRACTED]
-- [[resolve_config_path()]] - `references` [EXTRACTED]
+- [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModeRequest
+#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
+source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
 type: "document"
-community: "test_playback_state.c"
+community: "apply-patches.js"
 location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_playback_statec
+  - community/apply-patchesjs
 ---
 
 # Related Notes
 
 ## Connections
-- [[Prompt Injection Blocks_2]] - `contains` [EXTRACTED]
+- [[apply-patches.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_playback_statec
+#graphify/document #graphify/EXTRACTED #community/apply-patchesjs

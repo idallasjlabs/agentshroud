@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/Kill Switch Procedure.md"
+source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
 type: "document"
-community: "Claude Code skill catalog (59 skills)"
-location: "L141"
+community: "Dockerfile — Bot (OpenClaw)"
+location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Claude_Code_skill_catalog_59_skills
+  - community/Dockerfile__Bot_OpenClaw
 ---
 
 # Related Notes
 
 ## Connections
-- [[Kill Switch Procedure_1]] - `contains` [EXTRACTED]
+- [[Dockerfile — Bot (OpenClaw)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Claude_Code_skill_catalog_59_skills
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw

@@ -1,27 +1,27 @@
 ---
 source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "PipelineAction"
+community: "main.py.md"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/mainpymd
 ---
 
 # Quick Reference — AgentShroud
 
 ## Connections
-- [[Common Issues_2]] - `contains` [EXTRACTED]
-- [[Configuration Files_3]] - `contains` [EXTRACTED]
+- [[Common Issues]] - `contains` [EXTRACTED]
+- [[Configuration Files]] - `contains` [EXTRACTED]
 - [[Environment Variables (required)]] - `contains` [EXTRACTED]
 - [[Health Checks]] - `contains` [EXTRACTED]
 - [[Key Ports]] - `contains` [EXTRACTED]
-- [[Kill Switch_1]] - `contains` [EXTRACTED]
-- [[Logs_1]] - `contains` [EXTRACTED]
-- [[Quick Reference_9]] - `contains` [EXTRACTED]
-- [[Related Notes]] - `contains` [EXTRACTED]
+- [[Kill Switch]] - `contains` [EXTRACTED]
+- [[Logs]] - `contains` [EXTRACTED]
+- [[Quick Reference]] - `contains` [EXTRACTED]
+- [[Related Notes_7]] - `contains` [EXTRACTED]
 - [[Security Mode Toggle]] - `contains` [EXTRACTED]
 - [[Start  Stop]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PipelineAction
+#graphify/document #graphify/EXTRACTED #community/mainpymd

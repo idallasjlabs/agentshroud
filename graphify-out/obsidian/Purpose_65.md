@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sav/README.md"
+source_file: "docs/vault/03 - Configuration/ci-workflows.md"
 type: "document"
-community: "SubagentMonitor._log_event"
-location: "L6"
+community: "All Dependencies.md"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SubagentMonitor_log_event
+  - community/All_Dependenciesmd
 ---
 
 # Purpose
 
 ## Connections
-- [[System Audit Vault_1]] - `contains` [EXTRACTED]
+- [[CI Workflows]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SubagentMonitor_log_event
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

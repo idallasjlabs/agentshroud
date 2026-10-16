@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ti/README.md"
+source_file: "docker/config/openclaw/skills/i-oracle/README.md"
 type: "document"
-community: "BaseModel"
+community: "Oracle — Feedback Analyst"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/BaseModel
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Related Skills
 
 ## Connections
-- [[Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/BaseModel
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

@@ -1,45 +1,63 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "SOCWebSocketHandler"
-location: "L95"
+community: "RateLimiter"
+location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOCWebSocketHandler
+  - community/RateLimiter
 ---
 
 # RateLimiter
 
 ## Connections
-- [[.__init__()_43]] - `method` [EXTRACTED]
-- [[.__init__()_44]] - `calls` [EXTRACTED]
-- [[.check()_1]] - `method` [EXTRACTED]
-- [[.reset()]] - `method` [EXTRACTED]
-- [[.test_rate_limiter_reset()]] - `calls` [EXTRACTED]
-- [[Simple in-memory per-domain rate limiter using sliding window.]] - `rationale_for` [EXTRACTED]
-- [[TestAllowlistMode]] - `uses` [INFERRED]
-- [[TestAuditChain_1]] - `uses` [INFERRED]
-- [[TestContentTypeFiltering]] - `uses` [INFERRED]
-- [[TestDataExfiltration_1]] - `uses` [INFERRED]
-- [[TestDomainDenylist]] - `uses` [INFERRED]
-- [[TestEncodedPayloads]] - `uses` [INFERRED]
-- [[TestHiddenContent]] - `uses` [INFERRED]
-- [[TestIsDomainAllowed]] - `uses` [INFERRED]
-- [[TestPIIDetection_2]] - `uses` [INFERRED]
-- [[TestPassthroughMode_1]] - `uses` [INFERRED]
-- [[TestPromptInjectionDetection]] - `uses` [INFERRED]
-- [[TestRateLimiting_4]] - `uses` [INFERRED]
-- [[TestResponseSizeLimits]] - `uses` [INFERRED]
-- [[TestSSRFBlocking]] - `uses` [INFERRED]
-- [[TestStats_1]] - `uses` [INFERRED]
-- [[TestWebProxyConfig]] - `uses` [INFERRED]
-- [[TestZeroWidthAttacks]] - `uses` [INFERRED]
-- [[URLAnalyzer]] - `uses` [INFERRED]
-- [[WebContentScanner]] - `uses` [INFERRED]
-- [[WebProxy_1]] - `calls` [EXTRACTED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
-- [[test_web_proxy.py]] - `imports` [EXTRACTED]
-- [[web_proxy.py]] - `contains` [EXTRACTED]
+- [[dot-__init__()_15]] - `calls` [EXTRACTED]
+- [[dot-__init__()_33]] - `method` [EXTRACTED]
+- [[dot-check()_5]] - `method` [EXTRACTED]
+- [[dot-test_collaborator_rate_limit_notice_falls_back_without_markdown()]] - `calls` [EXTRACTED]
+- [[dot-test_collaborator_rate_limit_notice_includes_retry_window()]] - `calls` [EXTRACTED]
+- [[dot-test_collaborator_rate_limit_notice_is_sent_for_each_limited_message()]] - `calls` [EXTRACTED]
+- [[dot-test_collaborator_rate_limit_notice_retries_next_message_when_send_fails()]] - `calls` [EXTRACTED]
+- [[dot-test_collaborator_rate_limit_resets_after_window()]] - `calls` [EXTRACTED]
+- [[dot-test_collaborator_rate_limit_retry_after_seconds_uses_window()]] - `calls` [EXTRACTED]
+- [[dot-test_collaborator_rate_limit_uses_user_id_when_chat_id_differs()]] - `calls` [EXTRACTED]
+- [[Any_81]] - `uses` [INFERRED]
+- [[AsyncMock]] - `uses` [INFERRED]
+- [[BlockingPipeline]] - `uses` [INFERRED]
+- [[EncodingDetectingPipeline]] - `uses` [INFERRED]
+- [[FakePipelineResult]] - `uses` [INFERRED]
+- [[FakeRBAC]] - `uses` [INFERRED]
+- [[GatewayConfig_3]] - `uses` [INFERRED]
+- [[PassthroughPipeline]] - `uses` [INFERRED]
+- [[Simple token-bucket rate limiter      Limits requests per client IP to prevent r]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TestBotIsMentioned]] - `uses` [INFERRED]
+- [[TestCollaboratorPromptClassifiers]] - `uses` [INFERRED]
+- [[TestCollaboratorRateLimitRecovery]] - `uses` [INFERRED]
+- [[TestCommandTokenNormalization]] - `uses` [INFERRED]
+- [[TestFileDownload]] - `uses` [INFERRED]
+- [[TestFullAccessMiddlewareBypass]] - `uses` [INFERRED]
+- [[TestGroupMentionFilter]] - `uses` [INFERRED]
+- [[TestGroupPresenceProbe]] - `uses` [INFERRED]
+- [[TestInboundPipelineOnGetUpdates]] - `uses` [INFERRED]
+- [[TestIsGroupMessage]] - `uses` [INFERRED]
+- [[TestNoResponseGuarantee]] - `uses` [INFERRED]
+- [[TestPerBotGroupMentionFilter]] - `uses` [INFERRED]
+- [[TestProgressiveLockdownUX]] - `uses` [INFERRED]
+- [[TestStrangerRateLimit]] - `uses` [INFERRED]
+- [[_OutboundScan]] - `uses` [INFERRED]
+- [[auth.py_1]] - `references` [EXTRACTED]
+- [[ingest_apiauth.py]] - `contains` [EXTRACTED]
+- [[telegram_proxy.py_2]] - `imports` [EXTRACTED]
+- [[test_auth.py]] - `imports` [EXTRACTED]
+- [[test_rate_limiter()]] - `calls` [EXTRACTED]
+- [[test_rate_limiter_allows_requests()]] - `calls` [EXTRACTED]
+- [[test_rate_limiter_blocks_excess_requests()]] - `calls` [EXTRACTED]
+- [[test_rate_limiter_separate_clients()]] - `calls` [EXTRACTED]
+- [[test_rate_limiter_window_cleanup()]] - `calls` [EXTRACTED]
+- [[test_security.py]] - `imports` [EXTRACTED]
+- [[test_telegram_proxy_inbound.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOCWebSocketHandler
+#graphify/code #graphify/INFERRED #community/RateLimiter

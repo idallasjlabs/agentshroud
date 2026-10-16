@@ -1,12 +1,12 @@
 ---
 source_file: "shortcuts/README.md"
 type: "document"
-community: "ADR-001: Transparent Proxy vs Agent Modification"
+community: "iOS / macOS Shortcuts — Relay to AgentShroud"
 location: "L181"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-001_Transparent_Proxy_vs_Agent_Modification
+  - community/iOS_/_macOS_Shortcuts__Relay_to_AgentShroud
 ---
 
 # Recipe C — Screenshot relay (OCR text)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[iOS  macOS Shortcuts — Relay to AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_vs_Agent_Modification
+#graphify/document #graphify/EXTRACTED #community/iOS_/_macOS_Shortcuts__Relay_to_AgentShroud

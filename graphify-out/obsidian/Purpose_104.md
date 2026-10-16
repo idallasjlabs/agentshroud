@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-offense/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
 type: "document"
-community: "TestScoreVulnerabilityManagement"
-location: "L6"
+community: "alert_dispatcher.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestScoreVulnerabilityManagement
+  - community/alert_dispatcherpy
 ---
 
 # Purpose
 
 ## Connections
-- [[Red Team Adversarial Tester (SEC-OFFENSE)_2]] - `contains` [EXTRACTED]
+- [[alert_dispatcher.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestScoreVulnerabilityManagement
+#graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy

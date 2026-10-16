@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TestPathIsolationManager"
+community: "._filter_outbound"
 location: "L6922"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/_filter_outbound
 ---
 
 # Persist blocked outbound messages for admin review.
 
 ## Connections
-- [[._quarantine_outbound_block()]] - `rationale_for` [EXTRACTED]
+- [[dot-_quarantine_outbound_block()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/rationale #graphify/EXTRACTED #community/_filter_outbound

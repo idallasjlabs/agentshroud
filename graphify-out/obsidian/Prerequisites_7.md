@@ -1,17 +1,20 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "TestRunningImageResolution"
-location: "L375"
+community: "xurl — Agent Skill Reference"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestRunningImageResolution
+  - community/xurl__Agent_Skill_Reference
 ---
 
 # Prerequisites
 
 ## Connections
-- [[v0.9.0 — Apple Messages Integration]] - `contains` [EXTRACTED]
+- [[Other auth methods]] - `contains` [EXTRACTED]
+- [[Register an app (recommended)]] - `contains` [EXTRACTED]
+- [[Secret Safety (Mandatory)]] - `contains` [EXTRACTED]
+- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestRunningImageResolution
+#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference

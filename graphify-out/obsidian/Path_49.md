@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/triage-cve-mitigations.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "EncryptedStore"
-location: "L1124"
+community: "FalcoAlertWatcher"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/FalcoAlertWatcher
 ---
 
 # Path
 
 ## Connections
-- [[_rel()]] - `references` [EXTRACTED]
-- [[gap_report_path()]] - `references` [EXTRACTED]
+- [[dot-__init__()_158]] - `references` [EXTRACTED]
+- [[read_alerts()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EncryptedStore
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

@@ -1,17 +1,19 @@
 ---
-source_file: "tests/startup_smoke/test_apply_patches.js"
+source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "Animation Guidelines"
-location: "L23"
+community: "sync-cve-registry.py"
+location: "L704"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Animation_Guidelines
+  - community/sync-cve-registrypy
 ---
 
-# path
+# Path
 
 ## Connections
-- [[test_apply_patches.js]] - `contains` [EXTRACTED]
+- [[main()_5]] - `calls` [EXTRACTED]
+- [[run_ghsa_sync()]] - `references` [EXTRACTED]
+- [[sync_agent_ghsa()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Animation_Guidelines
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

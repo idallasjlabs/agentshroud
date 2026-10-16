@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-cicd/README.md"
+source_file: "docker/config/openclaw/skills/i-sec/README.md"
 type: "document"
-community: "_FakeRBAC"
+community: "Security Review (SEC)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/Security_Review_SEC
 ---
 
 # Related Skills
 
 ## Connections
-- [[CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
-- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
+- [[Security Review (SEC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC

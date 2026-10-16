@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup-telegram.md"
+source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "iCloud Services"
-location: "L3"
+community: "Hermes Agent — Connection Setup"
+location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/Hermes_Agent__Connection_Setup
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Telegram Channel Setup]] - `contains` [EXTRACTED]
+- [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/model-usage/SKILL.md"
 type: "document"
-community: "Community 265"
+community: "Common Queries"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_265
+  - community/Common_Queries
 ---
 
 # Quick start
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Model usage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_265
+#graphify/document #graphify/EXTRACTED #community/Common_Queries

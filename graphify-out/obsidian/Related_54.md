@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
 type: "document"
-community: "ANTHROPIC_BASE_URL"
-location: "L82"
+community: "ssh_config.py"
+location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ANTHROPIC_BASE_URL
+  - community/ssh_configpy
 ---
 
 # Related
 
 ## Connections
-- [[session_security.py_2]] - `contains` [EXTRACTED]
+- [[ssh_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL
+#graphify/document #graphify/EXTRACTED #community/ssh_configpy

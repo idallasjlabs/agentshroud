@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-data/README.md"
+source_file: ".agents/skills/i-athena/README.md"
 type: "document"
-community: ".__init__()"
+community: "Athena — Knowledge Distiller"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/__init__
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Purpose
 
 ## Connections
-- [[Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/__init__
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

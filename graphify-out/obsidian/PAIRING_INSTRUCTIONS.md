@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
 type: "document"
-community: "pipeline.py — Security Pipeline"
+community: "OpenClaw Bot Container"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/pipelinepy__Security_Pipeline
+  - community/OpenClaw_Bot_Container
 ---
 
 # PAIRING_INSTRUCTIONS.md
@@ -17,4 +17,4 @@ tags:
 - [[TAILSCALE_SETUP]] - `conceptually_related_to` [INFERRED]
 - [[TELEGRAM_SETUP]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_Container

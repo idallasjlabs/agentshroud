@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pr/README.md"
+source_file: "docker/config/hermes/skills/i-sec-offense/README.md"
 type: "document"
-community: "TestComputeBotScorecard"
+community: "hermes/skills/i-bs/README.md"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestComputeBotScorecard
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Purpose
 
 ## Connections
-- [[Pull Request Generator (PR)_2]] - `contains` [EXTRACTED]
+- [[Red Team Adversarial Tester (SEC-OFFENSE)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestComputeBotScorecard
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

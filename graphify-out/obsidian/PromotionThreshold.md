@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
+community: "TrustConfig"
 location: "L76"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MemoryIntegrityMonitor
+  - community/TrustConfig
 ---
 
 # PromotionThreshold
 
 ## Connections
-- [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
+- [[ProgressiveTrustConfig_1]] - `uses` [INFERRED]
 - [[TestBackwardCompat]] - `uses` [INFERRED]
 - [[TestEnforcementMode]] - `uses` [INFERRED]
 - [[TestEnforcementModeResolver]] - `uses` [INFERRED]
@@ -24,9 +24,9 @@ tags:
 - [[TestTypedViolations]] - `uses` [INFERRED]
 - [[Threshold for promoting to a trust level.]] - `rationale_for` [EXTRACTED]
 - [[TrustLevel_2]] - `uses` [INFERRED]
-- [[TrustManager_4]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[_fast_ladder()]] - `calls` [EXTRACTED]
 - [[progressive_trust_config.py]] - `contains` [EXTRACTED]
 - [[test_progressive_trust_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/INFERRED #community/TrustConfig

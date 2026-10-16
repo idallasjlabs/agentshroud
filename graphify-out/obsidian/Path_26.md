@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_config_validation.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "ApprovalRequest"
-location: "L17"
+community: "UserSessionManager"
+location: "L138"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ApprovalRequest
+  - graphify/EXTRACTED
+  - community/UserSessionManager
 ---
 
 # Path
 
 ## Connections
-- [[ForwardRequest]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
-- [[_parse_env_file()]] - `references` [EXTRACTED]
+- [[dot-__init__()_82]] - `references` [EXTRACTED]
+- [[dot-from_dict()_5]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalRequest
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

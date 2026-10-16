@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-atlas/README.md"
+source_file: "docker/config/openclaw/skills/i-pr/README.md"
 type: "document"
-community: "SlackAPIProxy"
+community: "Pull Request Generator (PR)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/Pull_Request_Generator_PR
 ---
 
 # Related Skills
 
 ## Connections
-- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
+- [[Pull Request Generator (PR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/Pull_Request_Generator_PR

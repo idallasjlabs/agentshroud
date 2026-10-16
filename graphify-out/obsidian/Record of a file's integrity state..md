@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "ContainerEngine"
+community: "lifespan.py"
 location: "L39"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContainerEngine
+  - community/lifespanpy
 ---
 
 # Record of a file's integrity state.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FileIntegrityRecord]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContainerEngine
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
+source_file: ".agents/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "group_config.py"
+community: "Daedalus — Concept Illustrator"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/group_configpy
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Persona
 
 ## Connections
-- [[Atlas — Curriculum Architect_4]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/group_configpy
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md"
 type: "document"
-community: "init_skill.py"
+community: "LOW Findings"
 location: "L159"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/init_skillpy
+  - community/LOW_Findings
 ---
 
 # R3-L5: Backup Files Contain Pre-Hardening Code
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LOW Findings_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/init_skillpy
+#graphify/document #graphify/EXTRACTED #community/LOW_Findings

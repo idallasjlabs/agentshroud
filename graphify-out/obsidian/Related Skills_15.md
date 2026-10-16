@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-mc/README.md"
+source_file: "docker/config/hermes/skills/i-daedalus/README.md"
 type: "document"
-community: "SecurityEvent"
+community: "Daedalus — Concept Illustrator"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SecurityEvent
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Related Skills
 
 ## Connections
-- [[GSDE&G Development Master Checklist (MC)]] - `contains` [EXTRACTED]
-- [[GSDE&G Development Master Checklist Skill]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SecurityEvent
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

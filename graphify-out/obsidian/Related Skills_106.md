@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pr/README.md"
+source_file: "docker/config/hermes/skills/i-ti/README.md"
 type: "document"
-community: "TestComputeBotScorecard"
+community: "Technical Illustrator (i-ti)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestComputeBotScorecard
+  - community/Technical_Illustrator_i-ti
 ---
 
 # Related Skills
 
 ## Connections
-- [[Pull Request Generator (PR)_2]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (TI)]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestComputeBotScorecard
+#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_i-ti

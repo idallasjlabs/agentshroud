@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm/README.md"
+source_file: "docker/config/openclaw/skills/i-tw/README.md"
 type: "document"
-community: "SlackAPIProxy"
+community: "Technical Writer (TW)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/Technical_Writer_TW
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP Tools Usage (MCPM)_1]] - `contains` [EXTRACTED]
+- [[Technical Writer (TW)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/Technical_Writer_TW

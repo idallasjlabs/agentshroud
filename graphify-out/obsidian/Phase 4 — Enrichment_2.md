@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mac/SKILL.md"
 type: "document"
-community: "TestMCPResultEndpoint"
+community: "Discovery Strategy"
 location: "L266"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMCPResultEndpoint
+  - community/Discovery_Strategy
 ---
 
 # Phase 4 — Enrichment
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Discovery Strategy_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMCPResultEndpoint
+#graphify/document #graphify/EXTRACTED #community/Discovery_Strategy

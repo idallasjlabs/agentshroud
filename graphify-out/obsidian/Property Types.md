@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/notion/SKILL.md"
 type: "document"
-community: "chat_console.py"
+community: "notion"
 location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/chat_consolepy
+  - community/notion
 ---
 
 # Property Types
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[notion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/chat_consolepy
+#graphify/document #graphify/EXTRACTED #community/notion

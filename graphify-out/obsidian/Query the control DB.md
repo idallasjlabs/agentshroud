@@ -1,17 +1,18 @@
 ---
-source_file: ".agents/skills/i-tw/SKILL.md"
+source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
 type: "document"
-community: "TestCollaboratorPersistence"
+community: "hermes/skills/i-cr/SKILL.md"
 location: "L95"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestCollaboratorPersistence
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # Query the control DB
 
 ## Connections
-- [[SKILL_59]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-twSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestCollaboratorPersistence
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

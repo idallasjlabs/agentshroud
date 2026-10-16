@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-production/README.md"
+source_file: "docker/config/hermes/skills/i-sec/README.md"
 type: "document"
-community: "TestSSRFDetection"
+community: "hermes/skills/i-bs/README.md"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestSSRFDetection
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Purpose
 
 ## Connections
-- [[Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
+- [[Security Review (SEC)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestSSRFDetection
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

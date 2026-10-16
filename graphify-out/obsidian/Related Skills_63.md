@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-mnemosyne/README.md"
+source_file: ".agents/skills/i-mc/README.md"
 type: "document"
-community: "Workflow: Survey → Draft → Inject → Confirm"
+community: "GSDE&G Development Master Checklist Skill"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workflow_Survey__Draft__Inject__Confirm
+  - community/GSDEG_Development_Master_Checklist_Skill
 ---
 
 # Related Skills
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_2]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)_1]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_Skill

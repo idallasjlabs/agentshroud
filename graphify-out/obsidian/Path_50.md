@@ -1,19 +1,25 @@
 ---
-source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
+source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "ESP32-S3-BOX-3 Voice Terminal for Hermes (behind"
-location: "L22"
+community: "GitGuard"
+location: "L219"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32-S3-BOX-3_Voice_Terminal_for_Hermes_behind
+  - community/GitGuard
 ---
 
 # Path
 
 ## Connections
-- [[default_out_dir()]] - `references` [EXTRACTED]
-- [[main()_32]] - `calls` [EXTRACTED]
-- [[write_gallery()]] - `references` [EXTRACTED]
+- [[dot-__init__()_159]] - `calls` [EXTRACTED]
+- [[dot-_analyze_file_content()]] - `references` [EXTRACTED]
+- [[dot-_analyze_script_file()]] - `references` [EXTRACTED]
+- [[dot-_quarantine_suspicious_files()]] - `calls` [EXTRACTED]
+- [[dot-_scan_git_hooks()]] - `references` [EXTRACTED]
+- [[dot-_scan_package_json()]] - `references` [EXTRACTED]
+- [[dot-_scan_pyproject_toml()]] - `references` [EXTRACTED]
+- [[dot-_scan_setup_py()]] - `references` [EXTRACTED]
+- [[dot-scan_git_repository()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal_for_Hermes_behind
+#graphify/code #graphify/EXTRACTED #community/GitGuard

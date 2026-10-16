@@ -1,12 +1,12 @@
 ---
-source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
+source_file: "docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md"
 type: "document"
-community: "Skill: Project Management (PM)"
-location: "L75"
+community: "ADR-004: API Keys Never in Agent Container"
+location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM
+  - community/ADR-004_API_Keys_Never_in_Agent_Container
 ---
 
 # Positive Consequences
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Consequences_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM
+#graphify/document #graphify/EXTRACTED #community/ADR-004_API_Keys_Never_in_Agent_Container

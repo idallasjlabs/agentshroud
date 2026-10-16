@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "purge_low_value_events()"
+community: "._check_budget"
 location: "L321"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/purge_low_value_events
+  - community/_check_budget
 ---
 
 # Record an LLM API call.
 
 ## Connections
-- [[.record_api_call()]] - `rationale_for` [EXTRACTED]
+- [[dot-record_api_call()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/purge_low_value_events
+#graphify/rationale #graphify/EXTRACTED #community/_check_budget

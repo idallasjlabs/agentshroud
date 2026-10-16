@@ -1,17 +1,19 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "SSHProxy"
-location: "L319"
+community: "AgentShroud Security Architecture"
+location: "L528"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/AgentShroud_Security_Architecture
 ---
 
 # Quick Reference
 
 ## Connections
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
+- [[Emergency Procedures]] - `contains` [EXTRACTED]
+- [[Security Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SSHProxy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

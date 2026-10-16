@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "rationale"
-community: "TrustManager"
+community: "MiddlewareManager"
 location: "L172"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/MiddlewareManager
 ---
 
 # Quick filter that only removes function call XML (for performance).          Arg
 
 ## Connections
-- [[.filter_function_calls_only()]] - `rationale_for` [EXTRACTED]
+- [[dot-filter_function_calls_only()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/bots/openclaw/config/workspace/PUBLIC-INFO.md"
+source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "HTTP 401 — Unauthorized"
-location: "L42"
+community: "AgentShroud Security Architecture"
+location: "L508"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/HTTP_401__Unauthorized
+  - community/AgentShroud_Security_Architecture
 ---
 
 # Project Goals
 
 ## Connections
-- [[AgentShroud — Collaborator Knowledge Base]] - `contains` [EXTRACTED]
+- [[For Open-Source Contributors]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/HTTP_401__Unauthorized
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

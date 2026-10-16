@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/gh-issues/SKILL.md"
 type: "document"
-community: "AgentShroud Red Team Adversarial Tester"
+community: "gh-issues — Auto-fix GitHub Issues with Parallel Sub-agents"
 location: "L283"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester
+  - community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel_Sub-agents
 ---
 
 # Phase 5 — Spawn Sub-agents (Parallel)
@@ -17,4 +17,4 @@ tags:
 - [[Timeout Handling]] - `contains` [EXTRACTED]
 - [[gh-issues — Auto-fix GitHub Issues with Parallel Sub-agents]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester
+#graphify/document #graphify/EXTRACTED #community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel_Sub-agents

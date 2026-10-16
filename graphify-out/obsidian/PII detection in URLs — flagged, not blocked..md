@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "rationale"
-community: "ToolResultSanitizer"
+community: "TestSSRFDetection"
 location: "L152"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/TestSSRFDetection
 ---
 
 # PII detection in URLs — flagged, not blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPIIInURLs]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/TestSSRFDetection

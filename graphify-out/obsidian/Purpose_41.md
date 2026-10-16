@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/README.md"
+source_file: "docker/config/openclaw/skills/i-icloud/README.md"
 type: "document"
-community: "agentshroud-gateway container (starts first)"
+community: "iCloud Data Manager (ICLOUD)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-gateway_container_starts_first
+  - community/iCloud_Data_Manager_ICLOUD
 ---
 
 # Purpose
 
 ## Connections
-- [[Browser — Secure Browser Automation_2]] - `contains` [EXTRACTED]
+- [[iCloud Data Manager (ICLOUD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway_container_starts_first
+#graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD

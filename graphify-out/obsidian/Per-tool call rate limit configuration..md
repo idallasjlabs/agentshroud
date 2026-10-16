@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "GroupRoleResolver"
 location: "L146"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/GroupRoleResolver
 ---
 
 # Per-tool call rate limit configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ToolRateLimit]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver

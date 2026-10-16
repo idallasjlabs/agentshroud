@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_us_ssn_regex_tightened.py"
 type: "rationale"
-community: "AgentShroud™ — OpenClaw Local-Model Tool-Use Ins"
+community: "test_us_ssn_regex_tightened.py"
 location: "L41"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud__OpenClaw_Local-Model_Tool-Use_Ins
+  - community/test_us_ssn_regex_tightenedpy
 ---
 
 # Real SSNs (not preceded by uppercase) must still be detected.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_real_ssn_still_flagged()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud__OpenClaw_Local-Model_Tool-Use_Ins
+#graphify/rationale #graphify/EXTRACTED #community/test_us_ssn_regex_tightenedpy

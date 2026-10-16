@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/README.md"
 type: "document"
-community: "Skill: CI/CD Pipeline Advisor (CICD)"
+community: "Security Hardening Plan Reset — Real Agent Containment v0.8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_CI/CD_Pipeline_Advisor_CICD
+  - community/Security_Hardening_Plan_Reset__Real_Agent_Containment_v08
 ---
 
 # Planning Docs Index (redteam, reviews, recovery, version buckets)
@@ -14,4 +14,4 @@ tags:
 - [[Recovery Plan v0.4.0 — Systematic Stabilization]] - `references` [EXTRACTED]
 - [[Security Hardening Plan Reset — Real Agent Containment v0.8]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD
+#graphify/document #graphify/EXTRACTED #community/Security_Hardening_Plan_Reset__Real_Agent_Containment_v08

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-pm/SKILL.md"
 type: "document"
-community: "Production Testing Procedures  ⚠️  NO SEPARATE D"
+community: "Skill: Project Management (PM)"
 location: "L108"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Testing_Procedures____NO_SEPARATE_D
+  - community/Skill_Project_Management_PM
 ---
 
 # Quick Status (for chat/Telegram)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Status Reporting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_D
+#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM

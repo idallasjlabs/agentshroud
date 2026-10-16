@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/httpx.md"
+source_file: "docs/vault/06 - Containers & Services/volumes.md"
 type: "document"
-community: "TestFileSandbox"
-location: "L42"
+community: "Docker Volumes"
+location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestFileSandbox
+  - community/Docker_Volumes
 ---
 
 # Related Notes
 
 ## Connections
-- [[httpx_1]] - `contains` [EXTRACTED]
+- [[Docker Volumes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFileSandbox
+#graphify/document #graphify/EXTRACTED #community/Docker_Volumes

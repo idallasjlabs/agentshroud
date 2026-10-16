@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/clamav_scanner.py"
+source_file: "scripts/launch-instance.sh"
 type: "code"
-community: "test_runtime_engines.py"
-location: "L145"
+community: "launch-instance.sh"
+location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_runtime_enginespy
+  - community/launch-instancesh
 ---
 
-# Path
+# PATH
 
 ## Connections
-- [[save_report()]] - `references` [EXTRACTED]
+- [[launch-instance.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy
+#graphify/code #graphify/EXTRACTED #community/launch-instancesh

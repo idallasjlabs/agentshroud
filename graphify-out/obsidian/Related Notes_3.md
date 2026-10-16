@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Data Flow.md"
+source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
 type: "document"
-community: "_FakeUpstreamWS"
-location: "L221"
+community: "gitleaks.toml"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_FakeUpstreamWS
+  - community/gitleakstoml
 ---
 
 # Related Notes
 
 ## Connections
-- [[Data Flow_1]] - `contains` [EXTRACTED]
+- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_FakeUpstreamWS
+#graphify/document #graphify/EXTRACTED #community/gitleakstoml

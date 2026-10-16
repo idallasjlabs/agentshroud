@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "ServiceManager"
+community: "PIIConfig"
 location: "L93"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/PIIConfig
 ---
 
 # Prompt guard: 1000 messages in < 5s.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPromptGuardPerformance]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ServiceManager
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

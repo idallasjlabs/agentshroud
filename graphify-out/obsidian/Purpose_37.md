@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-apollo/README.md"
+source_file: "docker/config/openclaw/skills/i-cr/README.md"
 type: "document"
-community: "SlackAPIProxy"
+community: "Code Review (CR)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/Code_Review_CR
 ---
 
 # Purpose
 
 ## Connections
-- [[Apollo — Audio Systems Producer_1]] - `contains` [EXTRACTED]
+- [[Code Review (CR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/Code_Review_CR

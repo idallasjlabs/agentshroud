@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-hermes/README.md"
+source_file: ".agents/skills/i-production/README.md"
 type: "document"
-community: "SlackAPIProxy"
+community: "Production Safety Checklist (SKILL)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # Related Skills
 
 ## Connections
-- [[Hermes — Podcast Production Orchestrator_1]] - `contains` [EXTRACTED]
+- [[operationsincident-response]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
+source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "AuditStore"
-location: "L34"
+community: "Error Index.md"
+location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/Error_Indexmd
 ---
 
 # Related Notes
 
 ## Connections
-- [[AGENTSHROUD_CONFIG_1]] - `contains` [EXTRACTED]
+- [[spaCy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditStore
+#graphify/document #graphify/EXTRACTED #community/Error_Indexmd

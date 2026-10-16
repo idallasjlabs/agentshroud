@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-oracle/SKILL.md"
 type: "document"
-community: "Function Details"
+community: "Oracle — Feedback Analyst"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Persona
 
 ## Connections
-- [[Socrates — Dialogue Architect_2]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "rationale"
-community: "MemoryIntegrityMonitor"
+community: "TestCrossBotTrustPivot"
 location: "L204"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/TestCrossBotTrustPivot
 ---
 
 # RT-N1 (reverse): Hermes violation must not demote OpenClaw.
 
 ## Connections
-- [[.test_hermes_violation_does_not_affect_openclaw_trust()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_hermes_violation_does_not_affect_openclaw_trust()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/rationale #graphify/EXTRACTED #community/TestCrossBotTrustPivot

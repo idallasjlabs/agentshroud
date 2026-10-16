@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
+source_file: ".agents/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Route map (by router)"
+community: "Atlas — Curriculum Architect"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Route_map_by_router
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Persona
 
 ## Connections
-- [[Daedalus — Concept Illustrator_3]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Route_map_by_router
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

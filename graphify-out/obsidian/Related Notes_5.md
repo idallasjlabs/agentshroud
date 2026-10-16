@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
 type: "document"
-community: "Health Checks"
-location: "L173"
+community: "installer.py"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Health_Checks
+  - community/installerpy
 ---
 
 # Related Notes
 
 ## Connections
-- [[Startup Sequence_1]] - `contains` [EXTRACTED]
+- [[installer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Health_Checks
+#graphify/document #graphify/EXTRACTED #community/installerpy

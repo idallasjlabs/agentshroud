@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: "scripts/export-bot-conversations.py"
 type: "code"
-community: "LLMProxy"
-location: "L66"
+community: "export-bot-conversations.py"
+location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/export-bot-conversationspy
 ---
 
 # Path
 
 ## Connections
-- [[read_alerts()_1]] - `references` [EXTRACTED]
+- [[_docker_read_file()]] - `references` [EXTRACTED]
+- [[export_hermes()]] - `references` [EXTRACTED]
+- [[export_openclaw()]] - `references` [EXTRACTED]
+- [[main()_13]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy

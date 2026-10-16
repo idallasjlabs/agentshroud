@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0.md"
 type: "document"
-community: "test_hermes_cron_seed.py"
+community: "Findings"
 location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_hermes_cron_seedpy
+  - community/Findings
 ---
 
 # Remediation Plan
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud v0.8.0 — Blue Team Security Assessment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_hermes_cron_seedpy
+#graphify/document #graphify/EXTRACTED #community/Findings

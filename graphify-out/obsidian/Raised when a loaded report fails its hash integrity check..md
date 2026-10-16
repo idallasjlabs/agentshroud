@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "HTTPConnectProxy"
+community: "CompetitiveIntelReport"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/CompetitiveIntelReport
 ---
 
 # Raised when a loaded report fails its hash integrity check.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ReportIntegrityError]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/rationale #graphify/EXTRACTED #community/CompetitiveIntelReport

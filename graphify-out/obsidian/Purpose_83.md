@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-data/README.md"
+source_file: "docs/vault/05 - Dependencies/playwright.md"
 type: "document"
-community: "Future Enhancements"
-location: "L6"
+community: "Docker Volumes"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Future_Enhancements
+  - community/Docker_Volumes
 ---
 
 # Purpose
 
 ## Connections
-- [[Data Validation (DATA-VAL)_2]] - `contains` [EXTRACTED]
+- [[Playwright_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Future_Enhancements
+#graphify/document #graphify/EXTRACTED #community/Docker_Volumes

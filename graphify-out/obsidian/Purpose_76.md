@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/README.md"
+source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "ssh_runner()"
-location: "L6"
+community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ssh_runner
+  - community/EnhancedApprovalQueue_enhanced_queuepy
 ---
 
 # Purpose
 
 ## Connections
-- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
+- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ssh_runner
+#graphify/document #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Output Sections (ALL required)"
+community: "Atlas — Curriculum Architect"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Output_Sections_ALL_required
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Persona
 
 ## Connections
-- [[Athena — Knowledge Distiller_2]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

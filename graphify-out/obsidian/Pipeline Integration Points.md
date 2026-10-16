@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/references/module-inventory.md"
 type: "document"
-community: "Required Software"
+community: "AgentShroud Module Inventory"
 location: "L65"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Required_Software
+  - community/AgentShroud_Module_Inventory
 ---
 
 # Pipeline Integration Points
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Module Inventory]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Required_Software
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Module_Inventory

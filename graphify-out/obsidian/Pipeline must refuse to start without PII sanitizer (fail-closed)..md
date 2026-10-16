@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "test_approval_queue.py"
+community: "PIIConfig"
 location: "L319"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_approval_queuepy
+  - community/PIIConfig
 ---
 
 # Pipeline must refuse to start without PII sanitizer (fail-closed).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pipeline_fails_closed_without_pii()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_approval_queuepy
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

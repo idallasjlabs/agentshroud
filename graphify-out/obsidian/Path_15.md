@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/tests/test_lifespan_prune.py"
 type: "code"
-community: "falco_monitor.py"
-location: "L65"
+community: "CollaboratorActivityTracker"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/falco_monitorpy
+  - community/CollaboratorActivityTracker
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_95]] - `references` [EXTRACTED]
-- [[._compute_file_hash()]] - `references` [EXTRACTED]
-- [[._detect_modification_source()]] - `references` [EXTRACTED]
-- [[.scan_file()]] - `references` [EXTRACTED]
-- [[MemoryIntegrityConfig]] - `uses` [INFERRED]
+- [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
+- [[_make_md()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/falco_monitorpy
+#graphify/code #graphify/EXTRACTED #community/CollaboratorActivityTracker

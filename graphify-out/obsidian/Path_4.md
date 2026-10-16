@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/browser-fetch.js"
+source_file: "scripts/peer-review.sh"
 type: "code"
-community: "openclaw/workspace/jira_dev_ticket.py"
-location: "L8"
+community: "gemini-review.py"
+location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/workspace/jira_dev_ticketpy
+  - community/gemini-reviewpy
 ---
 
-# path
+# PATH
 
 ## Connections
-- [[browser-fetch.js]] - `contains` [EXTRACTED]
+- [[peer-review.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy
+#graphify/code #graphify/EXTRACTED #community/gemini-reviewpy

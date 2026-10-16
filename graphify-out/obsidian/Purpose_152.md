@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
 type: "document"
-community: "TestKeyRotationManager"
+community: "input_normalizer.py"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestKeyRotationManager
+  - community/input_normalizerpy
 ---
 
 # Purpose
 
 ## Connections
-- [[consent_framework.py_2]] - `contains` [EXTRACTED]
+- [[input_normalizer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestKeyRotationManager
+#graphify/document #graphify/EXTRACTED #community/input_normalizerpy

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
+source_file: ".agents/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "Function Details"
-location: "L12"
+community: "MCP AWS Profile Configuration README"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/MCP_AWS_Profile_Configuration_README
 ---
 
 # Purpose
 
 ## Connections
-- [[models.py_3]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_README

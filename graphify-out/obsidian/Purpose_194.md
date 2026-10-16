@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/spacy.md"
+source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "quick-setup.sh script"
-location: "L16"
+community: "python-jose"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/quick-setupsh_script
+  - community/python-jose
 ---
 
 # Purpose
 
 ## Connections
-- [[spaCy]] - `contains` [EXTRACTED]
+- [[python-jose_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/quick-setupsh_script
+#graphify/document #graphify/EXTRACTED #community/python-jose

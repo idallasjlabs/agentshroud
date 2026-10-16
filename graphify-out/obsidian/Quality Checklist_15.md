@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-oracle/SKILL.md"
+source_file: ".agents/skills/i-oracle/SKILL.md"
 type: "document"
-community: "OpenClaw"
+community: "Oracle — Feedback Analyst"
 location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Quality Checklist
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Oracle — Feedback Analyst_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

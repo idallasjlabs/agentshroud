@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/config_integrity.py"
+source_file: ""
 type: "code"
-community: "IEC 62443 Compliance Matrix — AgentShroud"
-location: "L49"
+community: "triage-cve-mitigations.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/IEC_62443_Compliance_Matrix__AgentShroud
+  - community/triage-cve-mitigationspy
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_63]] - `references` [EXTRACTED]
-- [[._hash_file()]] - `references` [EXTRACTED]
+- [[_rel()]] - `references` [EXTRACTED]
+- [[gap_report_path()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/IEC_62443_Compliance_Matrix__AgentShroud
+#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy

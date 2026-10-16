@@ -1,17 +1,18 @@
 ---
-source_file: "docker/scripts/README.md"
+source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: ".agents/skills/i-tw/SKILL.md"
-location: "L5"
+community: "OpenClaw Workspace Usage Guide"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-tw/SKILLmd
+  - community/OpenClaw_Workspace_Usage_Guide
 ---
 
 # Quick Reference
 
 ## Connections
-- [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
+- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
+- [[Using the Helper Script]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ps/README.md"
+source_file: "docker/config/hermes/skills/i-data/README.md"
 type: "document"
-community: "_w()"
+community: "hermes/skills/i-bs/README.md"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_w
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Related Skills
 
 ## Connections
-- [[Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
-- [[Production Safety Checklist (SKILL)]] - `contains` [EXTRACTED]
+- [[Data Validation (DATA-VAL)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_w
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

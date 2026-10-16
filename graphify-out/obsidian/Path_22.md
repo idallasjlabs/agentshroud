@@ -1,22 +1,21 @@
 ---
-source_file: "gateway/skills/scan.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "Daedalus — Concept Illustrator"
-location: "L42"
+community: "lifespan.py"
+location: "L65"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Daedalus__Concept_Illustrator
+  - graphify/EXTRACTED
+  - community/lifespanpy
 ---
 
 # Path
 
 ## Connections
-- [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_2]] - `uses` [INFERRED]
-- [[SkillGuard]] - `uses` [INFERRED]
-- [[SkillsManifest]] - `uses` [INFERRED]
-- [[_build_tree()]] - `references` [EXTRACTED]
-- [[main()_13]] - `calls` [EXTRACTED]
+- [[dot-__init__()_67]] - `references` [EXTRACTED]
+- [[dot-_compute_file_hash()]] - `references` [EXTRACTED]
+- [[dot-_detect_modification_source()]] - `references` [EXTRACTED]
+- [[dot-scan_file()]] - `references` [EXTRACTED]
+- [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Daedalus__Concept_Illustrator
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

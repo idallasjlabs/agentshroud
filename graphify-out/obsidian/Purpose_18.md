@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm-doctor/README.md"
+source_file: ".agents/skills/i-sec-defense/README.md"
 type: "document"
-community: "Available MCP Servers"
+community: "Blue Team Security Auditor (SEC-DEFENSE)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Available_MCP_Servers
+  - community/Blue_Team_Security_Auditor_SEC-DEFENSE
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
+- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers
+#graphify/document #graphify/EXTRACTED #community/Blue_Team_Security_Auditor_SEC-DEFENSE

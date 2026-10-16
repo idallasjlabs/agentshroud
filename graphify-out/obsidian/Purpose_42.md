@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-bs/README.md"
+source_file: "docker/config/openclaw/skills/i-mac/README.md"
 type: "document"
-community: "SlackAPIProxy"
+community: "macOS System Administrator (MAC)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/macOS_System_Administrator_MAC
 ---
 
 # Purpose
 
 ## Connections
-- [[Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
+- [[macOS System Administrator (MAC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/macOS_System_Administrator_MAC

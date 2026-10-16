@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
+source_file: "docs/vault/04 - Environment Variables/GATEWAY_URL.md"
 type: "document"
-community: "test_egress_callback_stale.py"
-location: "L63"
+community: "ANTHROPIC_BASE_URL"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_egress_callback_stalepy
+  - community/ANTHROPIC_BASE_URL
 ---
 
 # Related Notes
 
 ## Connections
-- [[Presidio Analyzer]] - `contains` [EXTRACTED]
+- [[GATEWAY_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_egress_callback_stalepy
+#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL

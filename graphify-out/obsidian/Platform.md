@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "EncryptedStore"
+community: "Enum"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/Enum
 ---
 
 # Platform
@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[ContributorManager]] - `uses` [INFERRED]
 - [[ContributorRecord]] - `uses` [INFERRED]
-- [[Enum]] - `inherits` [EXTRACTED]
-- [[UserRole]] - `uses` [INFERRED]
+- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[UserRole_1]] - `uses` [INFERRED]
 - [[contributors.py]] - `imports` [EXTRACTED]
-- [[models.py_1]] - `contains` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[socmodels.py]] - `contains` [EXTRACTED]
+- [[str_2]] - `inherits` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EncryptedStore
+#graphify/code #graphify/EXTRACTED #community/Enum

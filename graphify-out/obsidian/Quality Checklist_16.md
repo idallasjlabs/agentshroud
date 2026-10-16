@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mnemosyne/SKILL.md"
 type: "document"
-community: "Function Details"
-location: "L158"
+community: "Mnemosyne — Retention Engineer"
+location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Socrates — Dialogue Architect_2]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

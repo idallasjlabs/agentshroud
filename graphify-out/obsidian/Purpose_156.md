@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
 type: "document"
-community: "_FakeUpstreamWS"
+community: "mcp_permissions.py"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_FakeUpstreamWS
+  - community/mcp_permissionspy
 ---
 
 # Purpose
 
 ## Connections
-- [[EgressFilter_3]] - `contains` [EXTRACTED]
+- [[mcp_permissions.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_FakeUpstreamWS
+#graphify/document #graphify/EXTRACTED #community/mcp_permissionspy

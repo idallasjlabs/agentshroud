@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/openclaw.md"
+source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
 type: "document"
-community: "Telegram Formatting Rule (bold only, no headers "
-location: "L56"
+community: "Crash Recovery"
+location: "L197"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Formatting_Rule_bold_only_no_headers_
+  - community/Crash_Recovery
 ---
 
 # Related Notes
 
 ## Connections
-- [[OpenClaw]] - `contains` [EXTRACTED]
+- [[Crash Recovery_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Formatting_Rule_bold_only_no_headers_
+#graphify/document #graphify/EXTRACTED #community/Crash_Recovery
