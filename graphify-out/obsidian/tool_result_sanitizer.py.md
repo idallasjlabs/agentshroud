@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "PIIConfig"
+community: "ToolResultSanitizer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ToolResultSanitizer
 ---
 
 # tool_result_sanitizer.py
 
 ## Connections
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
-- [[PIIConfig_2]] - `imports` [EXTRACTED]
+- [[PIIConfig_1]] - `imports` [EXTRACTED]
 - [[PIISanitizer_2]] - `imports` [EXTRACTED]
 - [[RedactionResult_3]] - `imports` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `contains` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[cve-mitigation-matrix]] - `references` [EXTRACTED]
 - [[job-quality-matrix]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

@@ -1,27 +1,18 @@
 ---
-source_file: "scripts/sunday-upgrade-apply.sh"
+source_file: "scripts/tailscale-check.sh"
 type: "code"
-community: "sunday-upgrade-apply.sh"
-location: "L130"
+community: "ProxyDashboard"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sunday-upgrade-applysh
+  - community/ProxyDashboard
 ---
 
 # warn()
 
 ## Connections
-- [[_attempt_rollback()]] - `calls` [EXTRACTED]
-- [[_ensure_build_space()]] - `calls` [EXTRACTED]
-- [[_prune_build_cache()]] - `calls` [EXTRACTED]
-- [[_take_apply_lock()]] - `calls` [EXTRACTED]
-- [[phase_apply()]] - `calls` [EXTRACTED]
-- [[phase_discover()]] - `calls` [EXTRACTED]
-- [[phase_preflight()]] - `calls` [EXTRACTED]
-- [[phase_verify()]] - `calls` [EXTRACTED]
-- [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
-- [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
-- [[write_handoff()]] - `calls` [EXTRACTED]
+- [[tailscale-check.sh]] - `defines` [EXTRACTED]
+- [[tailscale-check.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh
+#graphify/code #graphify/EXTRACTED #community/ProxyDashboard

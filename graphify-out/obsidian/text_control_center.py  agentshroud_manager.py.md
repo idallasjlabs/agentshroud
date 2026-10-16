@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[Key Operations (Inferred)]] - `contains` [EXTRACTED]
-- [[Purpose_13]] - `contains` [EXTRACTED]
-- [[Related Notes_16]] - `contains` [EXTRACTED]
+- [[Purpose_15]] - `contains` [EXTRACTED]
+- [[Related Notes_23]] - `contains` [EXTRACTED]
 - [[Relationship to Web API]] - `contains` [EXTRACTED]
 - [[text_control_center.py]] - `contains` [EXTRACTED]
 

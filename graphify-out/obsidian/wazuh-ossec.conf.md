@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "wazuh-ossec.conf"
+community: "FalcoAlertWatcher"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/wazuh-ossecconf
+  - community/FalcoAlertWatcher
 ---
 
 # wazuh-ossec.conf
@@ -15,10 +15,10 @@ tags:
 - [[Alert Levels]] - `contains` [EXTRACTED]
 - [[Integration with Gateway]] - `contains` [EXTRACTED]
 - [[Key OSSEC Config Sections (Inferred)]] - `contains` [EXTRACTED]
-- [[Purpose_194]] - `contains` [EXTRACTED]
-- [[Related Notes_71]] - `contains` [EXTRACTED]
+- [[Purpose_4]] - `contains` [EXTRACTED]
+- [[Related Notes_7]] - `contains` [EXTRACTED]
 - [[Relationship to Other Security Modules]] - `contains` [EXTRACTED]
 - [[What Wazuh Monitors in AgentShroud]] - `contains` [EXTRACTED]
 - [[wazuh-ossec]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/wazuh-ossecconf
+#graphify/document #graphify/EXTRACTED #community/FalcoAlertWatcher

@@ -1,17 +1,30 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
-type: "document"
-community: "wazuh_client.py"
+source_file: "gateway/security/wazuh_client.py"
+type: "code"
+community: "test_security_toolchain.py"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/wazuh_clientpy
+  - community/test_security_toolchainpy
 ---
 
-# wazuh_client.py.md
+# wazuh_client.py
 
 ## Connections
-- [[wazuh_client.py_1]] - `contains` [EXTRACTED]
+- [[api.py_2]] - `conceptually_related_to` [INFERRED]
+- [[datetime_1]] - `imports_from` [EXTRACTED]
+- [[falco_monitor.py]] - `references` [EXTRACTED]
+- [[generate_summary()]] - `contains` [EXTRACTED]
+- [[get_fim_events()]] - `contains` [EXTRACTED]
+- [[get_rootkit_events()]] - `contains` [EXTRACTED]
+- [[health_report.py]] - `references` [EXTRACTED]
+- [[level_to_severity()]] - `contains` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[parse_alert()_1]] - `contains` [EXTRACTED]
+- [[read_alerts()_1]] - `contains` [EXTRACTED]
+- [[test_scanner_integration_coverage.py]] - `references` [EXTRACTED]
+- [[test_security_audit.py]] - `imports_from` [EXTRACTED]
+- [[wazuh-ossec]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/wazuh_clientpy
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

@@ -12,10 +12,10 @@ tags:
 # test_websocket_notifications()
 
 ## Connections
-- [[ApprovalQueueConfig_1]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
 - [[ApprovalStore]] - `calls` [EXTRACTED]
 - [[ApprovalStore_1]] - `calls` [INFERRED]
-- [[EnhancedApprovalQueue_2]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
 - [[Test that approval events are generated for WebSocket notification.]] - `rationale_for` [EXTRACTED]
 - [[ToolRiskConfig]] - `calls` [EXTRACTED]
 - [[test_enhanced_approval.py]] - `contains` [EXTRACTED]

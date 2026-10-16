@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[ProgressiveTrustConfig_2]] - `calls` [EXTRACTED]
-- [[TrustManager_4]] - `calls` [EXTRACTED]
+- [[TrustManager_2]] - `calls` [EXTRACTED]
 - [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

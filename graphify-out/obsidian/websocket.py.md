@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[RBACConfig_4]] - `imports` [EXTRACTED]
-- [[SOCWebSocketHandler_1]] - `contains` [EXTRACTED]
+- [[SOCWebSocketHandler_2]] - `contains` [EXTRACTED]
 - [[Severity_1]] - `imports` [EXTRACTED]
 - [[WSEvent]] - `imports` [EXTRACTED]
 - [[WSEventType]] - `imports` [EXTRACTED]

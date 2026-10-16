@@ -1,18 +1,18 @@
 ---
-source_file: "docker/scripts/container-net-diag.sh"
+source_file: "docs/planning/reviews/enforcement-audit-script.py"
 type: "code"
-community: "container-net-diag.sh"
-location: "L74"
+community: "MiddlewareManager"
+location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/container-net-diagsh
+  - community/MiddlewareManager
 ---
 
 # warn()
 
 ## Connections
-- [[container-net-diag.sh]] - `defines` [EXTRACTED]
-- [[container-net-diag.sh script]] - `calls` [EXTRACTED]
+- [[enforcement-audit-script.py]] - `contains` [EXTRACTED]
+- [[run()_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/container-net-diagsh
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

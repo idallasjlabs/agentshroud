@@ -1,26 +1,24 @@
 ---
-source_file: "gateway/proxy/web_content_scanner.py"
-type: "code"
-community: "WebContentScanner"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
+type: "document"
+community: "web_content_scanner.py"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/WebContentScanner
+  - community/web_content_scannerpy
 ---
 
 # web_content_scanner.py
 
 ## Connections
-- [[ContentFinding]] - `contains` [EXTRACTED]
-- [[Enum_3]] - `imports_from` [EXTRACTED]
-- [[FindingSeverity]] - `contains` [EXTRACTED]
-- [[ScanResult]] - `contains` [EXTRACTED]
-- [[WebContentScanner]] - `contains` [EXTRACTED]
-- [[clamav_scanner.py]] - `semantically_similar_to` [INFERRED]
-- [[test_xml_dtd_control.py]] - `imports_from` [EXTRACTED]
-- [[url_analyzer.py]] - `references` [EXTRACTED]
-- [[web_config.py]] - `references` [EXTRACTED]
-- [[web_proxy.py_2]] - `imports_from` [EXTRACTED]
+- [[Configuration  Environment Variables_14]] - `contains` [EXTRACTED]
+- [[Function Details_27]] - `contains` [EXTRACTED]
+- [[Injection Pattern Weights]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_29]] - `contains` [EXTRACTED]
+- [[Purpose_148]] - `contains` [EXTRACTED]
+- [[Related_33]] - `contains` [EXTRACTED]
+- [[Responsibilities_31]] - `contains` [EXTRACTED]
+- [[web_content_scanner.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebContentScanner
+#graphify/document #graphify/EXTRACTED #community/web_content_scannerpy

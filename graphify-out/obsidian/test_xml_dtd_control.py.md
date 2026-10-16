@@ -18,6 +18,6 @@ tags:
 - [[TestDangerousXMLIsBlockedNotFlagged]] - `contains` [EXTRACTED]
 - [[TestTriageClassLevelCoverage]] - `contains` [EXTRACTED]
 - [[WebContentScanner]] - `imports` [EXTRACTED]
-- [[web_content_scanner.py_2]] - `imports_from` [EXTRACTED]
+- [[web_content_scanner.py]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebContentScanner

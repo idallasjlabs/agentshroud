@@ -12,7 +12,7 @@ tags:
 # triage_entry()
 
 ## Connections
-- [[Any_11]] - `references` [EXTRACTED]
+- [[Any_6]] - `references` [EXTRACTED]
 - [[Produce an honest mitigation verdict for a single advisory entry. Combines the…]] - `rationale_for` [EXTRACTED]
 - [[TestTriageEntry]] - `calls` [EXTRACTED]
 - [[TriageResult]] - `calls` [EXTRACTED]

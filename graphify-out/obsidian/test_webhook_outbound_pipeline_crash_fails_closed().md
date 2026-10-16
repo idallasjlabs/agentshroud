@@ -15,7 +15,7 @@ tags:
 - [[If the outbound pipeline crashes, the bot response must be withheld.]] - `rationale_for` [EXTRACTED]
 - [[WebhookReceiver]] - `calls` [EXTRACTED]
 - [[_PassInboundPipeline]] - `calls` [EXTRACTED]
-- [[_StubForwarder_1]] - `calls` [EXTRACTED]
+- [[_StubForwarder]] - `calls` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

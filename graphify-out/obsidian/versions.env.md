@@ -13,7 +13,6 @@ tags:
 ## Connections
 - [[TestVersion]] - `references` [EXTRACTED]
 - [[_read_running_version_str]] - `references` [EXTRACTED]
-- [[asb (AgentShroud Bot helper)]] - `references` [EXTRACTED]
 - [[auto_remediate_cves.py]] - `references` [EXTRACTED]
 - [[check-version-pins-parity.sh]] - `references` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `imports_from` [INFERRED]

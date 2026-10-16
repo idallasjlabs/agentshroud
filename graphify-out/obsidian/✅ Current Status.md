@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Part 1 Test Telegram Bot]] - `contains` [EXTRACTED]
-- [[Summary_7]] - `contains` [EXTRACTED]
+- [[Summary_6]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Telegram__Gmail_Integration_Guide

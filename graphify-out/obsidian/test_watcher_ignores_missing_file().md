@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "load_config"
+community: "ApprovalQueueConfig"
 location: "L245"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/ApprovalQueueConfig
 ---
 
 # test_watcher_ignores_missing_file()
@@ -18,4 +18,4 @@ tags:
 - [[config_watcher()]] - `calls` [EXTRACTED]
 - [[test_config_hot_reload.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig

@@ -12,7 +12,7 @@ tags:
 # test_xml_leak_filter.py
 
 ## Connections
-- [[FilterResult_1]] - `imports` [EXTRACTED]
+- [[FilterResult]] - `imports` [EXTRACTED]
 - [[TestCommandInjectionScan]] - `contains` [EXTRACTED]
 - [[TestXMLLeakFilter]] - `contains` [EXTRACTED]
 - [[XMLLeakFilter]] - `imports` [EXTRACTED]

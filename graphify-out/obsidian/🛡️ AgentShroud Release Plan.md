@@ -13,14 +13,14 @@ tags:
 
 ## Connections
 - [[Current Execution Tracker (2026-03-14)]] - `contains` [EXTRACTED]
-- [[Dependencies_12]] - `contains` [EXTRACTED]
+- [[Dependencies_5]] - `contains` [EXTRACTED]
 - [[Features_1]] - `contains` [EXTRACTED]
 - [[Features_5]] - `contains` [EXTRACTED]
 - [[Milestones]] - `contains` [EXTRACTED]
 - [[RELEASE-PLAN]] - `contains` [EXTRACTED]
 - [[Risk Register]] - `contains` [EXTRACTED]
-- [[Success Criteria_2]] - `contains` [EXTRACTED]
-- [[Summary_12]] - `contains` [EXTRACTED]
+- [[Success Criteria_1]] - `contains` [EXTRACTED]
+- [[Summary_11]] - `contains` [EXTRACTED]
 - [[v0.8.0 Watchtower — Security Fixes + Module Wiring (104 items)]] - `contains` [EXTRACTED]
 - [[v0.8.0-release-plan]] - `contains` [EXTRACTED]
 - [[v0.9.0 Sentinel — Data Isolation + SOC + Remediation (37 items)]] - `contains` [EXTRACTED]
