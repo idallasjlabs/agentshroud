@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "DEVELOPER.md — Development Context for AgentShro"
+community: "ToolResultSanitizer"
 location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DEVELOPERmd__Development_Context_for_AgentShro
+  - community/ToolResultSanitizer
 ---
 
 # Configuration for tool result markdown sanitization.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ToolResultSanitizerConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DEVELOPERmd__Development_Context_for_AgentShro
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

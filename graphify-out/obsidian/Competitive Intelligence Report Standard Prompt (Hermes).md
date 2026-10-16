@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/workspace/competitive-analysis.md"
 type: "document"
-community: "6. Go / No-Go Recommendation"
+community: "Gateway-Enforced Intel Verification (SCRUM-75)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/6_Go_/_No-Go_Recommendation
+  - community/Gateway-Enforced_Intel_Verification_SCRUM-75
 ---
 
 # Competitive Intelligence Report Standard Prompt (Hermes)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Gateway-Enforced Intel Verification (SCRUM-75)]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/6_Go_/_No-Go_Recommendation
+#graphify/document #graphify/EXTRACTED #community/Gateway-Enforced_Intel_Verification_SCRUM-75

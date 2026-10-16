@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "GitHub Copilot CLI Setup Guide"
+community: "WebhookReceiver"
 location: "L237"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GitHub_Copilot_CLI_Setup_Guide
+  - community/WebhookReceiver
 ---
 
 # Create a session manager.
 
 ## Connections
-- [[.session_manager()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-session_manager()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide
+#graphify/rationale #graphify/EXTRACTED #community/WebhookReceiver

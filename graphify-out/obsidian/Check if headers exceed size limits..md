@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "rationale"
-community: "lifespan.py"
+community: "AlertDispatcher"
 location: "L189"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/AlertDispatcher
 ---
 
 # Check if headers exceed size limits.
 
 ## Connections
-- [[.check_oversized_headers()]] - `rationale_for` [EXTRACTED]
+- [[dot-check_oversized_headers()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

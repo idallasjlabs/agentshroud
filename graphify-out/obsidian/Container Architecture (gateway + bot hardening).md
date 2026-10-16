@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "daily-checkin.sh"
+community: "asb CLI — Deployment Tool"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/daily-checkinsh
+  - community/asb_CLI__Deployment_Tool
 ---
 
 # Container Architecture (gateway + bot hardening)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[asb CLI — Deployment Tool]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/daily-checkinsh
+#graphify/concept #graphify/EXTRACTED #community/asb_CLI__Deployment_Tool

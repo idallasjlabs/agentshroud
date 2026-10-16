@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md"
-type: "document"
-community: "test_credential_injector.py"
-location: "L11"
+source_file: "skills/custom/browser-fetch/skill.json"
+type: "code"
+community: "skill.json"
+location: "L4"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/test_credential_injectorpy
+  - community/skilljson
 ---
 
-# Description
+# description
 
 ## Connections
-- [[TELEGRAM_API_BASE_URL_1]] - `contains` [EXTRACTED]
+- [[skill.json]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_credential_injectorpy
+#graphify/code #graphify/EXTRACTED #community/skilljson

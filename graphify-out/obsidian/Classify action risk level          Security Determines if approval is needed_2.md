@@ -12,6 +12,6 @@ tags:
 # Classify action risk level          Security: Determines if approval is needed
 
 ## Connections
-- [[._classify_risk()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-_classify_risk()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

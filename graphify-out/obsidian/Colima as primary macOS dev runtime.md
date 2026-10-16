@@ -1,17 +1,17 @@
 ---
 source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "concept"
-community: "OpenClaw Setup Guide - agentshroud.ai Bot"
+community: "ADR-006: Multi-Runtime Container Support"
 location: "L25-46"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+  - community/ADR-006_Multi-Runtime_Container_Support
 ---
 
 # Colima as primary macOS dev runtime
 
 ## Connections
-- [[Decision_7]] - `references` [EXTRACTED]
+- [[Decision_1]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+#graphify/concept #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support

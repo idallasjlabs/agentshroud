@@ -1,17 +1,17 @@
 ---
-source_file: "docs/project/README.md"
+source_file: "docs/setup/TAILSCALE_SETUP.md"
 type: "document"
-community: "Skill: Branding Specialist (BS)"
-location: "L14"
+community: "OpenClaw Bot Container"
+location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Branding_Specialist_BS
+  - community/OpenClaw_Bot_Container
 ---
 
 # Current Status
 
 ## Connections
-- [[Project Documentation]] - `contains` [EXTRACTED]
+- [[Tailscale Access to OpenClaw Control UI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Branding_Specialist_BS
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_Container

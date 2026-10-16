@@ -1,20 +1,20 @@
 ---
-source_file: "docs/architecture/adr/ADR-002-default-allow-security-philosophy.md"
+source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "document"
-community: "Weather Skill"
-location: "L47"
+community: "ADR-009: Enforce-by-Default Security Philosophy"
+location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Weather_Skill
+  - community/ADR-009_Enforce-by-Default_Security_Philosophy
 ---
 
 # Consequences
 
 ## Connections
-- [[ADR-002 Default-Allow Security Philosophy]] - `contains` [EXTRACTED]
-- [[Mitigation Strategies_1]] - `contains` [EXTRACTED]
-- [[Negative Consequences_1]] - `contains` [EXTRACTED]
-- [[Positive Consequences_1]] - `contains` [EXTRACTED]
+- [[ADR-009 Enforce-by-Default Security Philosophy]] - `contains` [EXTRACTED]
+- [[Migration from ADR-002]] - `contains` [EXTRACTED]
+- [[Negative Consequences]] - `contains` [EXTRACTED]
+- [[Positive Consequences]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Weather_Skill
+#graphify/document #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "TestConfigValidation"
+community: "AgentShroud Security Architecture"
 location: "L424"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/AgentShroud_Security_Architecture
 ---
 
 # Deployment Security
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
 - [[Recommended Production Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

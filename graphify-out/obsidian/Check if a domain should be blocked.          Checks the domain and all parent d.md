@@ -12,6 +12,6 @@ tags:
 # Check if a domain should be blocked.          Checks the domain and all parent d
 
 ## Connections
-- [[.is_blocked()]] - `rationale_for` [EXTRACTED]
+- [[dot-is_blocked()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/DNSBlocklist

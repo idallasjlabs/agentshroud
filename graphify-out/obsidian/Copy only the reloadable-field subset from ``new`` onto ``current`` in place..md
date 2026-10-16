@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "ModeRequest"
+community: "load_config"
 location: "L728"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/load_config
 ---
 
 # Copy only the reloadable-field subset from ``new`` onto ``current`` in place.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[apply_reloadable_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ModeRequest
+#graphify/rationale #graphify/EXTRACTED #community/load_config

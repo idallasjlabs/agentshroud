@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mm/SKILL.md"
 type: "document"
-community: "_make_tm()"
-location: "L246"
+community: "Skill: Mindmap Architect (MM)"
+location: "L336"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_make_tm
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # Dependencies
 
 ## Connections
-- [[→ {site site1, test_mode True, output_prefix _testsite1}_1]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_make_tm
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

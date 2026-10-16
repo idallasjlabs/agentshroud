@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
 type: "document"
-community: "_FakeUpstreamWS"
-location: "L70"
+community: "drift_detector.py"
+location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_FakeUpstreamWS
+  - community/drift_detectorpy
 ---
 
 # Configuration
 
 ## Connections
-- [[EgressFilter_3]] - `contains` [EXTRACTED]
+- [[drift_detector.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_FakeUpstreamWS
+#graphify/document #graphify/EXTRACTED #community/drift_detectorpy

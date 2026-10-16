@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
 type: "document"
-community: "API Keys Setup Guide"
+community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
 location: "L152"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/API_Keys_Setup_Guide
+  - community/EnhancedApprovalQueue_enhanced_queuepy
 ---
 
 # Data Integrity After Crash
@@ -17,4 +17,4 @@ tags:
 - [[Shutdown & Recovery_1]] - `contains` [EXTRACTED]
 - [[approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy

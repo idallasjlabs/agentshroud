@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "rationale"
-community: "MemoryIntegrityMonitor"
+community: "TrustConfig"
 location: "L87"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/TrustConfig
 ---
 
 # Configuration for the progressive trust system.
 
 ## Connections
-- [[ProgressiveTrustConfig]] - `rationale_for` [EXTRACTED]
+- [[ProgressiveTrustConfig_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/rationale #graphify/EXTRACTED #community/TrustConfig

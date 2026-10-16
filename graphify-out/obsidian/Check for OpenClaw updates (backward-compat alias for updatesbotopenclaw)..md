@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "api.py"
+community: "_get_engine"
 location: "L600"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/apipy
+  - community/_get_engine
 ---
 
 # Check for OpenClaw updates (backward-compat alias for /updates/bot/openclaw).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check_openclaw_updates()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/apipy
+#graphify/rationale #graphify/EXTRACTED #community/_get_engine

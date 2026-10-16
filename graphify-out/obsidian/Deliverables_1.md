@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
+source_file: ".agents/skills/i-aws/SKILL.md"
 type: "document"
-community: "test_sanitizer.py"
+community: "Deliverables"
 location: "L191"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_sanitizerpy
+  - community/Deliverables
 ---
 
 # Deliverables
 
 ## Connections
-- [[AWS Cloud Management & FinOps Agent]] - `contains` [EXTRACTED]
-- [[Reports (`.reports`)_1]] - `contains` [EXTRACTED]
-- [[Script Templates_1]] - `contains` [EXTRACTED]
-- [[Scripts (`.scripts`)_1]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent_2]] - `contains` [EXTRACTED]
+- [[Reports (`.reports`)]] - `contains` [EXTRACTED]
+- [[Script Templates]] - `contains` [EXTRACTED]
+- [[Scripts (`.scripts`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_sanitizerpy
+#graphify/document #graphify/EXTRACTED #community/Deliverables

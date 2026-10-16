@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "ModeRequest"
+community: "DataLedger"
 location: "L297"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/DataLedger
 ---
 
 # Complete gateway configuration
 
 ## Connections
-- [[GatewayConfig_1]] - `rationale_for` [EXTRACTED]
+- [[GatewayConfig_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ModeRequest
+#graphify/rationale #graphify/EXTRACTED #community/DataLedger

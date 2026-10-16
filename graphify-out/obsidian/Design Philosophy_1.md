@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "generate-job-schedule.py"
-location: "L213"
+community: "Architecture"
+location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/generate-job-schedulepy
+  - community/Architecture
 ---
 
 # Design Philosophy
 
 ## Connections
-- [[7. Pi-hole DNS Security Layer (Built-In)]] - `contains` [EXTRACTED]
+- [[Architecture_13]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/generate-job-schedulepy
+#graphify/document #graphify/EXTRACTED #community/Architecture

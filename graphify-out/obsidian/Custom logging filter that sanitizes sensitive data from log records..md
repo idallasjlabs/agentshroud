@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "rationale"
-community: "lifespan.py"
+community: "AlertDispatcher"
 location: "L18"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/AlertDispatcher
 ---
 
 # Custom logging filter that sanitizes sensitive data from log records.
 
 ## Connections
-- [[LogSanitizer_1]] - `rationale_for` [EXTRACTED]
+- [[LogSanitizer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

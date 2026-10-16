@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/cron/prompts/collaborator-daily-digest.txt"
 type: "document"
-community: "run_test()"
+community: "Report Delivery Format Instructions"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/run_test
+  - community/Report_Delivery_Format_Instructions
 ---
 
 # Collaborator Daily Digest Cron Prompt
@@ -18,4 +18,4 @@ tags:
 - [[OpenClaw Live Cron Job Index (11 jobs)]] - `references` [EXTRACTED]
 - [[Report Delivery Format Instructions]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/run_test
+#graphify/document #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions

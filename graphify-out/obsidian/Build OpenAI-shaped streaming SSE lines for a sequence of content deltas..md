@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "test_a2a_policy.py"
+community: "server.py"
 location: "L551"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/serverpy
 ---
 
 # Build OpenAI-shaped streaming SSE lines for a sequence of content deltas.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_openai_delta_lines()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/rationale #graphify/EXTRACTED #community/serverpy

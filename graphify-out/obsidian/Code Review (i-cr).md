@@ -1,25 +1,25 @@
 ---
 source_file: ".agents/skills/i-cr/SKILL.md"
 type: "document"
-community: "AuditExporter"
+community: "Project Management (README)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AuditExporter
+  - community/Project_Management_README
 ---
 
 # Code Review (i-cr)
 
 ## Connections
+- [[dot-agentsskillsi-crREADME]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[Project Management (SKILL)]] - `references` [EXTRACTED]
-- [[Purpose_7]] - `contains` [EXTRACTED]
-- [[Purpose_44]] - `contains` [EXTRACTED]
-- [[README_7]] - `contains` [EXTRACTED]
-- [[README_47]] - `contains` [EXTRACTED]
-- [[Related Skills_7]] - `contains` [EXTRACTED]
-- [[Related Skills_47]] - `contains` [EXTRACTED]
-- [[SKILL_15]] - `contains` [EXTRACTED]
-- [[Usage_9]] - `contains` [EXTRACTED]
-- [[Usage_50]] - `contains` [EXTRACTED]
+- [[Purpose_72]] - `contains` [EXTRACTED]
+- [[Purpose_74]] - `contains` [EXTRACTED]
+- [[Related Skills_59]] - `contains` [EXTRACTED]
+- [[Related Skills_61]] - `contains` [EXTRACTED]
+- [[Usage_65]] - `contains` [EXTRACTED]
+- [[Usage_67]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AuditExporter
+#graphify/document #graphify/EXTRACTED #community/Project_Management_README

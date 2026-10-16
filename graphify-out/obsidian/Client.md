@@ -1,18 +1,18 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "main.rs"
 location: "L239"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/mainrs
 ---
 
 # Client
 
 ## Connections
 - [[ReqwestTransport]] - `references` [EXTRACTED]
-- [[SclClient]] - `references` [EXTRACTED]
+- [[SclClient_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/mainrs

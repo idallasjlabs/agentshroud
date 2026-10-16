@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "AgentShroud™ Telegram-Reported Issues"
+community: "validate_network_security"
 location: "L617"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Telegram-Reported_Issues
+  - community/validate_network_security
 ---
 
 # Convenience function to validate network security.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[validate_network_security()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Telegram-Reported_Issues
+#graphify/rationale #graphify/EXTRACTED #community/validate_network_security

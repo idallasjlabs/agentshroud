@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
 type: "document"
-community: "Security Controls"
-location: "L86"
+community: "trivy_report.py"
+location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Controls
+  - community/trivy_reportpy
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[health_report.py_2]] - `contains` [EXTRACTED]
+- [[trivy_report.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Controls
+#graphify/document #graphify/EXTRACTED #community/trivy_reportpy

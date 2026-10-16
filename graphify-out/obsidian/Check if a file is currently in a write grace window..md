@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "falco_monitor.py"
+community: "lifespan.py"
 location: "L156"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/falco_monitorpy
+  - community/lifespanpy
 ---
 
 # Check if a file is currently in a write grace window.
 
 ## Connections
-- [[._is_in_write_window()]] - `rationale_for` [EXTRACTED]
+- [[dot-_is_in_write_window()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/falco_monitorpy
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

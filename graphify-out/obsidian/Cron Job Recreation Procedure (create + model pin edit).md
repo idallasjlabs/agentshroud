@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
 type: "concept"
-community: "test_telegram_replay.py"
+community: "Hermes Cron Jobs Reference & Recreation Guide"
 location: "L9-L23"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_telegram_replaypy
+  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
 ---
 
 # Cron Job Recreation Procedure (create + model pin edit)
@@ -16,4 +16,4 @@ tags:
 - [[Provider Must Be `custom` (not ollama  openai-local)]] - `rationale_for` [EXTRACTED]
 - [[gemma-4-26b-a4b-it Model Pin]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_telegram_replaypy
+#graphify/concept #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide

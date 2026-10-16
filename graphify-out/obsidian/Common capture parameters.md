@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/peekaboo/SKILL.md"
 type: "document"
-community: "apple_engine.py"
+community: "Examples"
 location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/apple_enginepy
+  - community/Examples
 ---
 
 # Common capture parameters
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Peekaboo]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/apple_enginepy
+#graphify/document #graphify/EXTRACTED #community/Examples

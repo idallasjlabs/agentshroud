@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Browser — Secure Browser Automation (SKILL)"
+community: "AgentShroud Device Pairing Management"
 location: "L208"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation_SKILL
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # Common Scenarios
@@ -19,4 +19,4 @@ tags:
 - [[Scenario 4 LostStolen Device]] - `contains` [EXTRACTED]
 - [[Scenario 5 Clear All Devices (Nuclear Option)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation_SKILL
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

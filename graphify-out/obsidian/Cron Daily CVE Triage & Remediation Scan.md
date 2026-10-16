@@ -1,17 +1,17 @@
 ---
 source_file: "docker/bots/openclaw/config/cron/jobs.json"
 type: "document"
-community: "Slack Channel Setup"
+community: "main"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/Slack_Channel_Setup
+  - graphify/EXTRACTED
+  - community/main
 ---
 
 # Cron: Daily CVE Triage & Remediation Scan
 
 ## Connections
 - [[gatewaysecurityagent_cve_registry.py GHSA registry]] - `references` [EXTRACTED]
-- [[main()_7]] - `shares_data_with` [INFERRED]
+- [[main()_30]] - `shares_data_with` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Slack_Channel_Setup
+#graphify/document #graphify/EXTRACTED #community/main

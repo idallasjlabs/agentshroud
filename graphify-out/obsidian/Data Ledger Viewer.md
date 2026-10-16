@@ -1,17 +1,17 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "_build_image_targets()"
+community: "DOCKER-VPN-NETWORKING.md"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_build_image_targets
+  - community/DOCKER-VPN-NETWORKINGmd
 ---
 
 # Data Ledger Viewer
 
 ## Connections
-- [[Features_1]] - `contains` [EXTRACTED]
+- [[Features_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_build_image_targets
+#graphify/document #graphify/EXTRACTED #community/DOCKER-VPN-NETWORKINGmd

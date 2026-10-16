@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/docker_engine.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
 type: "document"
-community: "tts.py"
-location: "L64"
+community: "egress_config.py"
+location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ttspy
+  - community/egress_configpy
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[docker_engine.py_2]] - `contains` [EXTRACTED]
+- [[egress_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ttspy
+#graphify/document #graphify/EXTRACTED #community/egress_configpy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "TestConfigValidation"
+community: "AgentShroud Security Architecture"
 location: "L383"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/AgentShroud_Security_Architecture
 ---
 
 # Data Entry Points (All User-Controlled)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Data Flow Control]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

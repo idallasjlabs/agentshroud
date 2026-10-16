@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "concept"
-community: "OpenClaw Setup Guide - agentshroud.ai Bot"
+community: "ADR-006: Multi-Runtime Container Support"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+  - community/ADR-006_Multi-Runtime_Container_Support
 ---
 
 # Colima (primary macOS runtime)
@@ -14,4 +14,4 @@ tags:
 - [[ADR-006 Multi-Runtime Container Support]] - `implements` [EXTRACTED]
 - [[Cisco AnyConnect VPN Networking Fix (col0 vmnet route)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
+#graphify/concept #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support

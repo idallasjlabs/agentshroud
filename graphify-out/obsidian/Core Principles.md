@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/SKILL.md"
 type: "document"
-community: "tool_result_injection.py"
+community: "Core Principles"
 location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/tool_result_injectionpy
+  - community/Core_Principles
 ---
 
 # Core Principles
@@ -18,4 +18,4 @@ tags:
 - [[Set Appropriate Degrees of Freedom]] - `contains` [EXTRACTED]
 - [[Skill Creator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/tool_result_injectionpy
+#graphify/document #graphify/EXTRACTED #community/Core_Principles

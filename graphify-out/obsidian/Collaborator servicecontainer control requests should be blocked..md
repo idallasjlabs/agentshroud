@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "TestAlreadyCheckedUpstreamToday"
+community: ".test_collaborator_service_control_request_is_blocked_and_quarantined"
 location: "L4294"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestAlreadyCheckedUpstreamToday
+  - community/test_collaborator_service_control_request_is_blocked_and_quarantined
 ---
 
 # Collaborator service/container control requests should be blocked.
 
 ## Connections
-- [[.test_collaborator_service_control_request_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_collaborator_service_control_request_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestAlreadyCheckedUpstreamToday
+#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_service_control_request_is_blocked_and_quarantined

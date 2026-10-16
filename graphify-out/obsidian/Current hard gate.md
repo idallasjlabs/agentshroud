@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "test_wire_llm_settings.js"
+community: "🛡️ AgentShroud Release Plan"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_wire_llm_settingsjs
+  - community/_AgentShroud_Release_Plan
 ---
 
 # Current hard gate
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Current Execution Tracker (2026-03-14)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_wire_llm_settingsjs
+#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "TestParseModeStrippedAfterPIIRedaction"
+community: "Quick Reference"
 location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestParseModeStrippedAfterPIIRedaction
+  - community/Quick_Reference
 ---
 
 # Check Current Profile
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[List Available Profiles_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestParseModeStrippedAfterPIIRedaction
+#graphify/document #graphify/EXTRACTED #community/Quick_Reference

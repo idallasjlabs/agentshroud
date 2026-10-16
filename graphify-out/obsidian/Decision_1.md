@@ -1,17 +1,20 @@
 ---
-source_file: "docs/adr/ADR-001-proxy-layer-inversion.md"
+source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "document"
-community: "DNSForwarderProtocol"
-location: "L8"
+community: "ADR-006: Multi-Runtime Container Support"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSForwarderProtocol
+  - community/ADR-006_Multi-Runtime_Container_Support
 ---
 
 # Decision
 
 ## Connections
-- [[ADR-001-proxy-layer-inversion]] - `contains` [EXTRACTED]
+- [[ADR-006 Multi-Runtime Container Support]] - `contains` [EXTRACTED]
+- [[Cisco AnyConnect VPN Networking Fix (col0 vmnet route)]] - `references` [EXTRACTED]
+- [[Colima as primary macOS dev runtime]] - `references` [EXTRACTED]
+- [[Runtime Abstraction Layer]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSForwarderProtocol
+#graphify/document #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support

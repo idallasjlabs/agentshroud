@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/test-augmenter.agent.md"
+source_file: ".github/agents/safe-refactor.agent.md"
 type: "document"
-community: "session-prompt-setup.sh"
-location: "L87"
+community: "Safe Refactor Specialist"
+location: "L166"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/session-prompt-setupsh
+  - community/Safe_Refactor_Specialist
 ---
 
 # Definition of Done
 
 ## Connections
-- [[Test Augmentation Specialist]] - `contains` [EXTRACTED]
+- [[Safe Refactor Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/session-prompt-setupsh
+#graphify/document #graphify/EXTRACTED #community/Safe_Refactor_Specialist

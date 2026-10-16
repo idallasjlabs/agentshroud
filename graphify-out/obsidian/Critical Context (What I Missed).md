@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "document"
-community: "Plan: AgentShroud Security Hardening — Real Agen"
+community: "AgentShroud Security Value Proposition - Revised"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Plan_AgentShroud_Security_Hardening__Real_Agen
+  - community/AgentShroud_Security_Value_Proposition_-_Revised
 ---
 
 # Critical Context (What I Missed)
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Security Value Proposition - Revised]] - `contains` [EXTRACTED]
 - [[This is NOT a Personal Tool]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Plan_AgentShroud_Security_Hardening__Real_Agen
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_Revised

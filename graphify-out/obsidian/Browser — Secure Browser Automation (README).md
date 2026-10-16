@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/README.md"
 type: "document"
-community: "test_skill_guard.py"
+community: "Browser — Secure Browser Automation (SKILL)"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/test_skill_guardpy
+  - community/Browser__Secure_Browser_Automation_SKILL
 ---
 
 # Browser — Secure Browser Automation (README)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Browser — Secure Browser Automation (SKILL)]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/test_skill_guardpy
+#graphify/document #graphify/INFERRED #community/Browser__Secure_Browser_Automation_SKILL

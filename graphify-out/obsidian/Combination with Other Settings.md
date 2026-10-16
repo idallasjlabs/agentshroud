@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
 type: "document"
-community: "lvgl_kawaii_face.c"
+community: "AGENTSHROUD_MODE"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/lvgl_kawaii_facec
+  - community/AGENTSHROUD_MODE
 ---
 
 # Combination with Other Settings
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OPENCLAW_SANDBOX_MODE_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/lvgl_kawaii_facec
+#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_MODE

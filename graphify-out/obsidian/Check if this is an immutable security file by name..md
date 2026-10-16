@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "rationale"
-community: "Enum"
+community: "MiddlewareManager"
 location: "L335"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enum
+  - community/MiddlewareManager
 ---
 
 # Check if this is an immutable security file by name.
 
 ## Connections
-- [[._is_immutable_file()]] - `rationale_for` [EXTRACTED]
+- [[dot-_is_immutable_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enum
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

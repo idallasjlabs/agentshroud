@@ -12,6 +12,6 @@ tags:
 # Detect if CAPTCHA is present on page
 
 ## Connections
-- [[.detect_captcha()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-detect_captcha()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

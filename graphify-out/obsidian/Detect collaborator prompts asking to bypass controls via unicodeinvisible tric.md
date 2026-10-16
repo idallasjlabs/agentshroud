@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "FileSandbox"
+community: "TelegramAPIProxy"
 location: "L1386"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/TelegramAPIProxy
 ---
 
 # Detect collaborator prompts asking to bypass controls via unicode/invisible tric
 
 ## Connections
-- [[._looks_like_unicode_obfuscation_bypass_request()]] - `rationale_for` [EXTRACTED]
+- [[dot-_looks_like_unicode_obfuscation_bypass_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FileSandbox
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

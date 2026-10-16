@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "GroupApprovalRouter"
+community: "AlertDispatcher"
 location: "L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/AlertDispatcher
 ---
 
 # Check if file access should be blocked to prevent environment leakage.
 
 ## Connections
-- [[.check_file_access()]] - `rationale_for` [EXTRACTED]
+- [[dot-check_file_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

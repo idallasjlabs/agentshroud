@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_agent_cve_registry.py"
+source_file: "gateway/tests/test_gmail_credential_retrieval.py"
 type: "code"
-community: "AgentRegistry"
-location: "L580"
+community: "_get_gmail_app_password"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/_get_gmail_app_password
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[_run_triage()]] - `references` [EXTRACTED]
+- [[_completed()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/_get_gmail_app_password

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "AgentShroud Security Value Proposition"
+community: "Kill Switch"
 location: "L234"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition
+  - community/Kill_Switch
 ---
 
 # CI/CD Integration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Automation Examples]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch

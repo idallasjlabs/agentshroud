@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "translate_openai_sse_to_anthropic()"
+community: "Resources"
 location: "L646"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/translate_openai_sse_to_anthropic
+  - community/Resources
 ---
 
 # Community
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Resources]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/translate_openai_sse_to_anthropic
+#graphify/document #graphify/EXTRACTED #community/Resources

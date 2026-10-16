@@ -12,6 +12,6 @@ tags:
 # Create a trust manager with temp DB.
 
 ## Connections
-- [[manager()_4]] - `rationale_for` [EXTRACTED]
+- [[manager()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TrustConfig

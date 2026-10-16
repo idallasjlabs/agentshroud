@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "Skill Creation Process"
+community: "AgentShroud — Master Feature List (Everything Ever Mentioned)"
 location: "L205"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Creation_Process
+  - community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned
 ---
 
 # D. Apple Messages Integration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v0.9.0 — Sentinel (Blue Team Remediation + Data Isolation + SOC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Creation_Process
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned

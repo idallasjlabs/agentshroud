@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "TestTail"
+community: "lifespan.py"
 location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestTail
+  - community/lifespanpy
 ---
 
 # Convert to dictionary for JSON serialization.
 
 ## Connections
-- [[.to_dict()_11]] - `rationale_for` [EXTRACTED]
+- [[dot-to_dict()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestTail
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "KeyRotationManager"
+community: "SecureBrowser"
 location: "L402"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/SecureBrowser
 ---
 
 # Clean up browser resources
 
 ## Connections
-- [[.close()]] - `rationale_for` [EXTRACTED]
+- [[dot-close()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

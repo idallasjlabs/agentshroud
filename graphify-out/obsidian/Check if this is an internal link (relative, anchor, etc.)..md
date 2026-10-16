@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "Integration Guide"
+community: "ToolResultSanitizer"
 location: "L142"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Integration_Guide
+  - community/ToolResultSanitizer
 ---
 
 # Check if this is an internal link (relative, anchor, etc.).
 
 ## Connections
-- [[._is_internal_link()]] - `rationale_for` [EXTRACTED]
+- [[dot-_is_internal_link()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Integration_Guide
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

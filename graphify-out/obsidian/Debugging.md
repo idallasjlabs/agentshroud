@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Credential Management - 1Password Integration"
+community: "Canvas Skill"
 location: "L151"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Credential_Management_-_1Password_Integration
+  - community/Canvas_Skill
 ---
 
 # Debugging
@@ -18,4 +18,4 @@ tags:
 - [[Content not updating]] - `contains` [EXTRACTED]
 - [[White screen  content not loading]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Credential_Management_-_1Password_Integration
+#graphify/document #graphify/EXTRACTED #community/Canvas_Skill

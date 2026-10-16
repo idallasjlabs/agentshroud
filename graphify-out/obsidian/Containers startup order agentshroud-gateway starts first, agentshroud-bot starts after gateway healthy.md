@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-22-dependency-graph.png"
 type: "image"
-community: "MCP Auth Reset Skill"
+community: "Containers startup order: agentshroud-gateway starts first, agentshroud-bot starts after gateway healthy"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/MCP_Auth_Reset_Skill
+  - community/Containers_startup_order_agentshroud-gateway_starts_first_agentshroud-bot_starts_after_gateway_healthy
 ---
 
 # Containers startup order: agentshroud-gateway starts first, agentshroud-bot starts after gateway healthy
@@ -17,4 +17,4 @@ tags:
 - [[Docker Secrets required before containers start (openai_api_key.txt, 1password_bot_ , gateway_password.txt, 1password_service_account)]] - `shares_data_with` [EXTRACTED]
 - [[External Dependencies (no deploy) 1Password Cloud, OpenAIAnthropicTelegram APIs, Tailscale Network via SSH]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/MCP_Auth_Reset_Skill
+#graphify/image #graphify/EXTRACTED #community/Containers_startup_order_agentshroud-gateway_starts_first_agentshroud-bot_starts_after_gateway_healthy

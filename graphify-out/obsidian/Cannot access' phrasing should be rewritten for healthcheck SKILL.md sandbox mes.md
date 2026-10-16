@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "test_llm_proxy.py"
+community: "TelegramAPIProxy"
 location: "L1354"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/TelegramAPIProxy
 ---
 
 # Cannot access' phrasing should be rewritten for healthcheck SKILL.md sandbox mes
 
 ## Connections
-- [[.test_healthcheck_skill_sandbox_error_with_cannot_is_rewritten()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_healthcheck_skill_sandbox_error_with_cannot_is_rewritten()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

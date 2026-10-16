@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "rationale"
-community: "TeamsConfig"
+community: "KillSwitchMonitor"
 location: "L150"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/KillSwitchMonitor
 ---
 
 # Check if the agent is responding within expected parameters.          Returns:
 
 ## Connections
-- [[.heartbeat_check()]] - `rationale_for` [EXTRACTED]
+- [[dot-heartbeat_check()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "upgrade"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/upgrade
 ---
 
 # Connection
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_get_db()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/upgrade

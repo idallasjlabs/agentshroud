@@ -1,17 +1,18 @@
 ---
-source_file: "examples/docker-commands.md"
+source_file: "docs/security/VERIFICATION_RESULTS.md"
 type: "document"
-community: "Red Team Assessment v1.2.0"
-location: "L25"
+community: "Phase 3A/3B Implementation Verification Results"
+location: "L97"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Red_Team_Assessment_v120
+  - community/Phase_3A/3B_Implementation_Verification_Results
 ---
 
-# Container status
+# Container Status
 
 ## Connections
-- [[Docker Commands Reference]] - `contains` [EXTRACTED]
+- [[OpenClaw Bot Logs (Recent)]] - `contains` [EXTRACTED]
+- [[Phase 3A3B Implementation Verification Results]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Red_Team_Assessment_v120
+#graphify/document #graphify/EXTRACTED #community/Phase_3A/3B_Implementation_Verification_Results

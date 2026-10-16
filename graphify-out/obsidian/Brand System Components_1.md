@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
 type: "document"
-community: "_age()"
+community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_age
+  - community/Required__45_for_text__30_for_UI_elements
 ---
 
 # Brand System Components
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_age
+#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements

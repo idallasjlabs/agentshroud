@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/COMMUNICATION-TEMPLATES.md"
 type: "document"
-community: "start-agentshroud.sh"
+community: "AgentShroud™ Communication Templates"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/start-agentshroudsh
+  - community/AgentShroud_Communication_Templates
 ---
 
 # COMMUNICATION-TEMPLATES.md
@@ -17,6 +17,6 @@ tags:
 - [[Option 2 — Compact Trademark Notice]] - `references` [EXTRACTED]
 - [[Option 3 — Full Collaborator Trademark Notice]] - `references` [EXTRACTED]
 - [[Option 4 — Documentation Footer Trademark Notice]] - `references` [EXTRACTED]
-- [[TRADEMARK]] - `conceptually_related_to` [INFERRED]
+- [[TRADEMARK_2]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/start-agentshroudsh
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Communication_Templates

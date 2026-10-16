@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "WebhookReceiver"
+community: "ContainerEngine"
 location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - community/ContainerEngine
 ---
 
 # Build an image. Returns the image id/tag.
 
 ## Connections
-- [[.build()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-build()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/rationale #graphify/EXTRACTED #community/ContainerEngine

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "GSDE&G Development Master Checklist"
+community: "MultiTurnTracker"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist
+  - community/MultiTurnTracker
 ---
 
 # Compile regex patterns for detecting disclosure categories.
 
 ## Connections
-- [[._compile_detection_patterns()]] - `rationale_for` [EXTRACTED]
+- [[dot-_compile_detection_patterns()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist
+#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker

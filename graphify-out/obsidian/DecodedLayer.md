@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "EgressFilter"
+community: "PIIConfig"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/PIIConfig
 ---
 
 # DecodedLayer
 
 ## Connections
-- [[.analyze()_1]] - `calls` [EXTRACTED]
-- [[.decode_rot13()]] - `calls` [EXTRACTED]
+- [[dot-analyze()]] - `calls` [EXTRACTED]
+- [[dot-decode_rot13()]] - `calls` [EXTRACTED]
 - [[encoding_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilter
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

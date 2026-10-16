@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "rationale"
-community: "TrustManager"
+community: "ApprovalHardening"
 location: "L289"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/ApprovalHardening
 ---
 
 # Check for obfuscated or encoded parameters.
 
 ## Connections
-- [[._check_parameter_obfuscation()]] - `rationale_for` [EXTRACTED]
+- [[dot-_check_parameter_obfuscation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalHardening

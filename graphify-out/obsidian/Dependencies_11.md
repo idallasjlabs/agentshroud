@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
+source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "sunday-upgrade-apply.sh"
-location: "L279"
+community: ".agents/skills/i-tw/SKILL.md"
+location: "L246"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sunday-upgrade-applysh
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # Dependencies
 
 ## Connections
-- [[Skill UX Expert (UX)_1]] - `contains` [EXTRACTED]
+- [[→ {site site1, test_mode True, output_prefix _testsite1}_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sunday-upgrade-applysh
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

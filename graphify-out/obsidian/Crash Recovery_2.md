@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
 type: "document"
-community: "02-infrastructure.md"
+community: "Crash Recovery"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/02-infrastructuremd
+  - community/Crash_Recovery
 ---
 
 # Crash Recovery
@@ -20,6 +20,6 @@ tags:
 - [[Post-Recovery Verification]] - `contains` [EXTRACTED]
 - [[Recovery Procedures]] - `contains` [EXTRACTED]
 - [[Recurring Crashes]] - `contains` [EXTRACTED]
-- [[Related Notes_65]] - `contains` [EXTRACTED]
+- [[Related Notes_43]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/02-infrastructuremd
+#graphify/document #graphify/EXTRACTED #community/Crash_Recovery

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/auto_remediate_cves.py"
 type: "rationale"
-community: "AgentShroud v0.7.0 Enforcement Audit Results"
+community: "plan_remediation"
 location: "L236"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_v070_Enforcement_Audit_Results
+  - community/plan_remediation
 ---
 
 # Bump the pin, run the gated upgrade, revert the pin if it does not hold.      Re
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[apply_remediation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results
+#graphify/rationale #graphify/EXTRACTED #community/plan_remediation

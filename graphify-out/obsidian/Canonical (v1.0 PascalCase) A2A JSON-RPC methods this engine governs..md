@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "rationale"
-community: "AgentTarget"
+community: "A2AMethod"
 location: "L78"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/A2AMethod
 ---
 
 # Canonical (v1.0 PascalCase) A2A JSON-RPC methods this engine governs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[A2AMethod]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentTarget
+#graphify/rationale #graphify/EXTRACTED #community/A2AMethod

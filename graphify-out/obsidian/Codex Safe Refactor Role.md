@@ -1,11 +1,11 @@
 ---
 source_file: "AGENTS.md"
 type: "concept"
-community: "ADR-002: Default-Allow Security Philosophy"
+community: "AGENTS.md — Codex CLI Guidance"
 tags:
   - graphify/concept
-  - graphify/INFERRED
-  - community/ADR-002_Default-Allow_Security_Philosophy
+  - graphify/EXTRACTED
+  - community/AGENTSmd__Codex_CLI_Guidance
 ---
 
 # Codex Safe Refactor Role
@@ -14,4 +14,4 @@ tags:
 - [[AGENTS.md — Codex CLI Guidance]] - `references` [EXTRACTED]
 - [[safe-refactor.agent]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/ADR-002_Default-Allow_Security_Philosophy
+#graphify/concept #graphify/EXTRACTED #community/AGENTSmd__Codex_CLI_Guidance

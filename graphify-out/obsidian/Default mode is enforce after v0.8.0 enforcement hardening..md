@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_dns_filter.py"
+source_file: "gateway/tests/test_egress_monitor.py"
 type: "rationale"
-community: "URLAnalyzer"
-location: "L57"
+community: "AlertDispatcher"
+location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/URLAnalyzer
+  - community/AlertDispatcher
 ---
 
 # Default mode is enforce after v0.8.0 enforcement hardening.
 
 ## Connections
-- [[.test_default_mode_is_enforce()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_mode_is_enforce()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/URLAnalyzer
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

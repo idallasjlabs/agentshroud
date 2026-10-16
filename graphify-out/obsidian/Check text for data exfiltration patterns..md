@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "Skill: Project Management (PM)"
+community: "TestPatternDetection"
 location: "L623"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM
+  - community/TestPatternDetection
 ---
 
 # Check text for data exfiltration patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_check_exfil_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Skill_Project_Management_PM
+#graphify/rationale #graphify/EXTRACTED #community/TestPatternDetection

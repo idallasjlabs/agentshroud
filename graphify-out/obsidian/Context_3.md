@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md"
+source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "document"
-community: "run_multi_host()"
-location: "L6"
+community: "ADR-009: Enforce-by-Default Security Philosophy"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/run_multi_host
+  - community/ADR-009_Enforce-by-Default_Security_Philosophy
 ---
 
 # Context
 
 ## Connections
-- [[ADR-004 API Keys Never in Agent Container]] - `contains` [EXTRACTED]
+- [[ADR-009 Enforce-by-Default Security Philosophy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/run_multi_host
+#graphify/document #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy

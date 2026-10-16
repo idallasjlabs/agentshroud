@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/02-human-in-the-loop.md"
+source_file: "docs/planning/redteam/01-enforce-by-default.md"
 type: "document"
-community: "format_cve_report()"
-location: "L229"
+community: "Flip core security modules from monitor to enforce mode"
+location: "L144"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/format_cve_report
+  - community/Flip_core_security_modules_from_monitor_to_enforce_mode
 ---
 
 # Constraints
 
 ## Connections
-- [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - `contains` [EXTRACTED]
+- [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/format_cve_report
+#graphify/document #graphify/EXTRACTED #community/Flip_core_security_modules_from_monitor_to_enforce_mode

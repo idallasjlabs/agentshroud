@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "lifespan.py"
+community: "AlertDispatcher"
 location: "L193"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/AlertDispatcher
 ---
 
 # Concurrent baseline updates — SQLite is single-threaded by default.         This
 
 ## Connections
-- [[.test_drift_detector_concurrent_writes()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_drift_detector_concurrent_writes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

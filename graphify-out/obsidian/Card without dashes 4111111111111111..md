@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "lifespan.py"
+community: "AlertDispatcher"
 location: "L107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/AlertDispatcher
 ---
 
 # Card without dashes: 4111111111111111.
 
 ## Connections
-- [[.test_credit_card_no_dashes()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_credit_card_no_dashes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

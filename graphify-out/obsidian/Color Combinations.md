@@ -1,12 +1,12 @@
 ---
 source_file: "branding/colors/palette.md"
 type: "document"
-community: "http_proxy.py"
+community: "AgentShroud Color Palette"
 location: "L99"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/http_proxypy
+  - community/AgentShroud_Color_Palette
 ---
 
 # Color Combinations
@@ -16,4 +16,4 @@ tags:
 - [[Dark Theme]] - `contains` [EXTRACTED]
 - [[Light Theme]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/http_proxypy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Color_Palette

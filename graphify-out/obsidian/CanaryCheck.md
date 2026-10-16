@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "AgentRegistry"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/AgentRegistry
 ---
 
 # CanaryCheck
@@ -16,4 +16,4 @@ tags:
 - [[canary.py]] - `contains` [EXTRACTED]
 - [[run_canary()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

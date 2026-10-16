@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
 type: "document"
-community: "archive_old_events()"
+community: "First Time Setup"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/archive_old_events
+  - community/First_Time_Setup
 ---
 
 # Crash Recovery.md
@@ -19,4 +19,4 @@ tags:
 - [[Troubleshooting Matrix]] - `references` [EXTRACTED]
 - [[store.py]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/archive_old_events
+#graphify/document #graphify/EXTRACTED #community/First_Time_Setup

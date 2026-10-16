@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-cr/README.md"
 type: "document"
-community: "troubleshooting.md"
+community: "CI/CD Pipeline Advisor (SKILL)"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/troubleshootingmd
+  - community/CI/CD_Pipeline_Advisor_SKILL
 ---
 
 # Code Review (CR) (README)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Code Review (CR) (SKILL)]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/troubleshootingmd
+#graphify/document #graphify/INFERRED #community/CI/CD_Pipeline_Advisor_SKILL

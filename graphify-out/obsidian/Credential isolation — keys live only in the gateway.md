@@ -1,12 +1,12 @@
 ---
 source_file: "docker-compose.secure.yml"
 type: "rationale"
-community: "TestCVE2026_9367TerminalToolDenied"
+community: "agentshroud-gateway service (proxy mode)"
 location: "L42-45, L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestCVE2026_9367TerminalToolDenied
+  - community/agentshroud-gateway_service_proxy_mode
 ---
 
 # Credential isolation — keys live only in the gateway
@@ -15,4 +15,4 @@ tags:
 - [[direnv-based environment variable management]] - `semantically_similar_to` [INFERRED]
 - [[openclaw service (internal network only)]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestCVE2026_9367TerminalToolDenied
+#graphify/rationale #graphify/EXTRACTED #community/agentshroud-gateway_service_proxy_mode

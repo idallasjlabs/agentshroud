@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "lifespan.py"
+community: "AlertDispatcher"
 location: "L257"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/AlertDispatcher
 ---
 
 # Concurrent alert dispatch shouldn't lose or corrupt alerts.
 
 ## Connections
-- [[.test_alert_dispatcher_concurrent_dispatch()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_alert_dispatcher_concurrent_dispatch()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

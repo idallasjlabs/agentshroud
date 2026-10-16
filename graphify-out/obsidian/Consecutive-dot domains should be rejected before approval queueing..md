@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "LogSanitizer PII-Scrubbing Log Filter"
+community: "TelegramAPIProxy"
 location: "L3003"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LogSanitizer_PII-Scrubbing_Log_Filter
+  - community/TelegramAPIProxy
 ---
 
 # Consecutive-dot domains should be rejected before approval queueing.
 
 ## Connections
-- [[.test_raw_web_fetch_json_consecutive_dot_domain_does_not_queue_approval()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_raw_web_fetch_json_consecutive_dot_domain_does_not_queue_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LogSanitizer_PII-Scrubbing_Log_Filter
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

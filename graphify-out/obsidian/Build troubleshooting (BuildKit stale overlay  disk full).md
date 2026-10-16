@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/colima-docker-guide.md"
 type: "concept"
-community: "AgentShroud Docker Configuration"
+community: "Quickstart"
 location: "L229-397"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AgentShroud_Docker_Configuration
+  - community/Quickstart
 ---
 
 # Build troubleshooting (BuildKit stale overlay / disk full)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Colima & Docker Operations Guide]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration
+#graphify/concept #graphify/EXTRACTED #community/Quickstart

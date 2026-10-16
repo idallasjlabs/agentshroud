@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
+source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "Gateway Management/Control-Plane API (v1.3.0)"
-location: "L125"
+community: "7. Pi-hole DNS Security Layer (Built-In)"
+location: "L267"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Management/Control-Plane_API_v130
+  - community/7_Pi-hole_DNS_Security_Layer_Built-In
 ---
 
 # Configuration
 
 ## Connections
-- [[iCloud Services_1]] - `contains` [EXTRACTED]
+- [[7. Pi-hole DNS Security Layer (Built-In)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Management/Control-Plane_API_v130
+#graphify/document #graphify/EXTRACTED #community/7_Pi-hole_DNS_Security_Layer_Built-In

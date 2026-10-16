@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
 type: "document"
-community: "TestProductionCompose"
-location: "L495"
+community: "EgressFilter"
+location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestProductionCompose
+  - community/EgressFilter
 ---
 
-# Configuration:
+# Configuration
 
 ## Connections
-- [[Recommended Configuration for Your Use Case]] - `contains` [EXTRACTED]
+- [[EgressFilter_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestProductionCompose
+#graphify/document #graphify/EXTRACTED #community/EgressFilter

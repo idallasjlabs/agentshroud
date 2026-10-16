@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
 type: "document"
-community: "DeceptionDetection"
-location: "L69"
+community: "web_content_scanner.py"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DeceptionDetection
+  - community/web_content_scannerpy
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[compose_generator.py_2]] - `contains` [EXTRACTED]
+- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DeceptionDetection
+#graphify/document #graphify/EXTRACTED #community/web_content_scannerpy

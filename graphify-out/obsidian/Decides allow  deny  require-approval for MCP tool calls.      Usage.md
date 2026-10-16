@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "rationale"
-community: "test_e2e_proxy.py"
+community: "MCPPolicyEngine"
 location: "L242"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/MCPPolicyEngine
 ---
 
 # Decides allow / deny / require-approval for MCP tool calls.      Usage::
 
 ## Connections
-- [[MCPPolicyEngine]] - `rationale_for` [EXTRACTED]
+- [[MCPPolicyEngine_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine

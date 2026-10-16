@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "AgentShroud Module Inventory"
+community: "Command Details"
 location: "L159"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Module_Inventory
+  - community/Command_Details
 ---
 
 # Command Details
@@ -22,4 +22,4 @@ tags:
 - [[User Info]] - `contains` [EXTRACTED]
 - [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Module_Inventory
+#graphify/document #graphify/EXTRACTED #community/Command_Details

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "GroupApprovalRouter"
+community: "AlertDispatcher"
 location: "L144"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/AlertDispatcher
 ---
 
 # Check if command execution should be blocked to prevent environment leakage.
 
 ## Connections
-- [[.check_command_execution()]] - `rationale_for` [EXTRACTED]
+- [[dot-check_command_execution()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
 type: "document"
-community: "GSDE&G Development Master Checklist"
-location: "L49"
+community: "apple_engine.py"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist
+  - community/apple_enginepy
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[sidecar.py_2]] - `contains` [EXTRACTED]
+- [[apple_engine.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist
+#graphify/document #graphify/EXTRACTED #community/apple_enginepy

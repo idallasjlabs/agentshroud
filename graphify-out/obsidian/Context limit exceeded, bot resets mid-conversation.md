@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-18-runbook.svg"
 type: "concept"
-community: "test_api_contract_fuzz.py"
+community: "What is the symptom?"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_api_contract_fuzzpy
+  - community/What_is_the_symptom
 ---
 
 # Context limit exceeded, bot resets mid-conversation
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[What is the symptom]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_api_contract_fuzzpy
+#graphify/concept #graphify/EXTRACTED #community/What_is_the_symptom

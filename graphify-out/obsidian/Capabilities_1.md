@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/agents/hermes-soul.md"
+source_file: "docker/config/openclaw/agents/hermes-soul.md"
 type: "document"
-community: "AGENTSHROUD_MODE"
+community: "AgentShroud Hermes — System Identity"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AGENTSHROUD_MODE
+  - community/AgentShroud_Hermes__System_Identity
 ---
 
 # Capabilities
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Hermes — System Identity_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_MODE
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Hermes__System_Identity

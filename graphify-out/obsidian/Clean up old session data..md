@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "TrustManager"
+community: "MiddlewareManager"
 location: "L487"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/MiddlewareManager
 ---
 
 # Clean up old session data.
 
 ## Connections
-- [[.cleanup_old_sessions()]] - `rationale_for` [EXTRACTED]
+- [[dot-cleanup_old_sessions()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

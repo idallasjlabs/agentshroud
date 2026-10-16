@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "TrustManager"
+community: "MiddlewareManager"
 location: "L480"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/MiddlewareManager
 ---
 
 # Context guard should detect tool result manipulation.
 
 ## Connections
-- [[.test_context_guard_tool_manipulation()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_context_guard_tool_manipulation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

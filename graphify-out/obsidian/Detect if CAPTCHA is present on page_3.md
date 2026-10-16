@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "rationale"
-community: "TestConfigValidation"
+community: "SecureBrowser"
 location: "L380"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/SecureBrowser
 ---
 
 # Detect if CAPTCHA is present on page
 
 ## Connections
-- [[.detect_captcha()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-detect_captcha()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

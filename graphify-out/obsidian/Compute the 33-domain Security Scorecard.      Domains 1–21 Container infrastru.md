@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "MCPAuditTrail"
+community: "scanner_integration.py"
 location: "L2398"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPAuditTrail
+  - community/scanner_integrationpy
 ---
 
 # Compute the 33-domain Security Scorecard.      Domains 1–21: Container infrastru
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[compute_scorecard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPAuditTrail
+#graphify/rationale #graphify/EXTRACTED #community/scanner_integrationpy

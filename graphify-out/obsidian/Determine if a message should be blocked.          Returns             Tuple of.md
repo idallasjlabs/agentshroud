@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "test_scanner_integration.py"
+community: ".analyze_message"
 location: "L448"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/analyze_message
 ---
 
 # Determine if a message should be blocked.          Returns:             Tuple of
 
 ## Connections
-- [[.should_block_message()]] - `rationale_for` [EXTRACTED]
+- [[dot-should_block_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/rationale #graphify/EXTRACTED #community/analyze_message

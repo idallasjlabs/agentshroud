@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "KeyRotationManager"
+community: "SecureBrowser"
 location: "L321"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/SecureBrowser
 ---
 
 # Click an element          Security: Risk classification for destructive actions
 
 ## Connections
-- [[.click()]] - `rationale_for` [EXTRACTED]
+- [[dot-click()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

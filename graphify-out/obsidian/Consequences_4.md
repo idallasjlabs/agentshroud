@@ -1,20 +1,20 @@
 ---
-source_file: "docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md"
+source_file: "docs/architecture/adr/ADR-002-default-allow-security-philosophy.md"
 type: "document"
-community: "1.4 Implementation Plan"
-location: "L38"
+community: "ADR-002: Default-Allow Security Philosophy"
+location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/14_Implementation_Plan
+  - community/ADR-002_Default-Allow_Security_Philosophy
 ---
 
 # Consequences
 
 ## Connections
-- [[ADR-005 SHA-256 Hash Chain Audit Integrity]] - `contains` [EXTRACTED]
-- [[Implementation Details]] - `contains` [EXTRACTED]
-- [[Negative Consequences_4]] - `contains` [EXTRACTED]
-- [[Positive Consequences_4]] - `contains` [EXTRACTED]
+- [[ADR-002 Default-Allow Security Philosophy]] - `contains` [EXTRACTED]
+- [[Mitigation Strategies_1]] - `contains` [EXTRACTED]
+- [[Negative Consequences_3]] - `contains` [EXTRACTED]
+- [[Positive Consequences_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/14_Implementation_Plan
+#graphify/document #graphify/EXTRACTED #community/ADR-002_Default-Allow_Security_Philosophy

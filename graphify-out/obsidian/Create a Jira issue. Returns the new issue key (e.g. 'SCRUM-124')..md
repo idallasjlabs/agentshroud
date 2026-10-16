@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
+source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "rationale"
-community: "test_config_hot_reload.py"
+community: "openclaw/workspace/jira_dev_ticket.py"
 location: "L273"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_config_hot_reloadpy
+  - community/openclaw/workspace/jira_dev_ticketpy
 ---
 
 # Create a Jira issue. Returns the new issue key (e.g. 'SCRUM-124').
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[create_issue()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_config_hot_reloadpy
+#graphify/rationale #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy

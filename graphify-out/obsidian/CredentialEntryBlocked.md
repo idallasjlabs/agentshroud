@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "test_scorecard_integrity.py"
+community: "ThreatAssessment"
 location: "L39"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_scorecard_integritypy
+  - community/ThreatAssessment
 ---
 
 # CredentialEntryBlocked
 
 ## Connections
-- [[.can_enter_credentials()]] - `calls` [EXTRACTED]
-- [[Exception]] - `inherits` [EXTRACTED]
+- [[dot-can_enter_credentials()]] - `calls` [EXTRACTED]
+- [[Exception_2]] - `inherits` [EXTRACTED]
 - [[TestCredentialProtection]] - `uses` [INFERRED]
 - [[TestScreenshotAnalysis]] - `uses` [INFERRED]
 - [[TestSocialEngineeringDetection]] - `uses` [INFERRED]
 - [[TestURLReputation]] - `uses` [INFERRED]
 - [[browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_scorecard_integritypy
+#graphify/code #graphify/INFERRED #community/ThreatAssessment

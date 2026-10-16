@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "document"
-community: "Kill Switch Procedure"
+community: "4. Environment Variables"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Kill_Switch_Procedure
+  - community/4_Environment_Variables
 ---
 
 # Derived (set at runtime by `config.py`)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Gateway Container (`agentshroud-gateway`)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Kill_Switch_Procedure
+#graphify/document #graphify/EXTRACTED #community/4_Environment_Variables

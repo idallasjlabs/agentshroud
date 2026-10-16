@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
 type: "document"
-community: "AgentShroud Security Verification (13-check driv"
-location: "L68"
+community: "log_sanitizer.py"
+location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Verification_13-check_driv
+  - community/log_sanitizerpy
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[falco_monitor.py_2]] - `contains` [EXTRACTED]
+- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Verification_13-check_driv
+#graphify/document #graphify/EXTRACTED #community/log_sanitizerpy

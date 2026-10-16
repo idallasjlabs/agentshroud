@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ab/SKILL.md"
 type: "document"
-community: "CredentialInjector"
+community: "Skill: Audit Branch (AB) — Merge Regression Detection"
 location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CredentialInjector
+  - community/Skill_Audit_Branch_AB__Merge_Regression_Detection
 ---
 
 # Check A — Substantive change on the losing side?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 4 — Triage each finding]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CredentialInjector
+#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Detection

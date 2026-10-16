@@ -1,18 +1,17 @@
 ---
-source_file: "docs/setup-telegram.md"
+source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "iCloud Services"
-location: "L76"
+community: "AgentShroud — Master Feature List (Everything Ever Mentioned)"
+location: "L388"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned
 ---
 
 # Collaborators
 
 ## Connections
-- [[Collaborators_1]] - `conceptually_related_to` [EXTRACTED]
-- [[Telegram Channel Setup]] - `contains` [EXTRACTED]
+- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned

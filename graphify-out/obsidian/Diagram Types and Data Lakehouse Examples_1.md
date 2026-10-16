@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
 type: "document"
-community: "test_security_integration.py"
+community: "Skill: Technical Illustrator (TI)"
 location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_security_integrationpy
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # Diagram Types and Data Lakehouse Examples
@@ -21,4 +21,4 @@ tags:
 - [[Skill Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
 - [[State Diagram — Job or process lifecycle_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_security_integrationpy
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI

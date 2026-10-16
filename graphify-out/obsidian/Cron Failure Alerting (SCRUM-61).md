@@ -1,18 +1,18 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "AlertTelegramRelay"
+community: "AgentShroud Docker Configuration"
 location: "L476"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AlertTelegramRelay
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # Cron Failure Alerting (SCRUM-61)
 
 ## Connections
 - [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
-- [[README_41]] - `references` [EXTRACTED]
+- [[dockerREADME]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AlertTelegramRelay
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

@@ -1,13 +1,13 @@
 ---
 source_file: "docs/diagrams/images/diagram-20-observability-map.svg"
 type: "image"
-community: "i-scrum SKILL"
+community: "Diagram 20: Observability Map"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/i-scrum_SKILL
+  - community/Diagram_20_Observability_Map
 ---
 
 # Diagram 20: Observability Map
 
-#graphify/image #graphify/EXTRACTED #community/i-scrum_SKILL
+#graphify/image #graphify/EXTRACTED #community/Diagram_20_Observability_Map

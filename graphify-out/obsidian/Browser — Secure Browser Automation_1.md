@@ -1,30 +1,20 @@
 ---
-source_file: ".agents/skills/i-browser/SKILL.md"
+source_file: "docker/config/hermes/skills/i-browser/README.md"
 type: "document"
-community: "EgressTelegramNotifier"
-location: "L6"
+community: "Browser — Secure Browser Automation"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EgressTelegramNotifier
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Browser — Secure Browser Automation
 
 ## Connections
-- [[10. Troubleshooting]] - `contains` [EXTRACTED]
-- [[Approval Integration]] - `contains` [EXTRACTED]
-- [[Audit Logging]] - `contains` [EXTRACTED]
-- [[Best Practices]] - `contains` [EXTRACTED]
-- [[Core Security Principles]] - `contains` [EXTRACTED]
-- [[Example Apple ID Creation (Semi-Automated)]] - `contains` [EXTRACTED]
-- [[Limitations]] - `contains` [EXTRACTED]
-- [[Risk Levels]] - `contains` [EXTRACTED]
-- [[SKILL_9]] - `contains` [EXTRACTED]
-- [[SKILL_15]] - `contains` [EXTRACTED]
-- [[Security Architecture]] - `contains` [EXTRACTED]
-- [[Security Configuration]] - `contains` [EXTRACTED]
-- [[Security Guarantees]] - `contains` [EXTRACTED]
-- [[Usage_6]] - `contains` [EXTRACTED]
+- [[Purpose_21]] - `contains` [EXTRACTED]
+- [[Related Skills_14]] - `contains` [EXTRACTED]
+- [[Usage_17]] - `contains` [EXTRACTED]
+- [[hermesskillsi-browserREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EgressTelegramNotifier
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

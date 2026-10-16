@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "test_scanner_integration.py"
+community: "check_message"
 location: "L574"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/check_message
 ---
 
 # Check if message should be allowed, with detailed findings.      Args:         t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/rationale #graphify/EXTRACTED #community/check_message

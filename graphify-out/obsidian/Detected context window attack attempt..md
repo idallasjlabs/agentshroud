@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "test_scanner_integration.py"
+community: ".analyze_message"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/analyze_message
 ---
 
 # Detected context window attack attempt.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ContextAttack]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/rationale #graphify/EXTRACTED #community/analyze_message

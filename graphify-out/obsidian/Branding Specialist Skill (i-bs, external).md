@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-bs/SKILL.md"
 type: "concept"
-community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+community: "Test-Driven Development README"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR
+  - community/Test-Driven_Development_README
 ---
 
 # Branding Specialist Skill (i-bs, external)
@@ -15,4 +15,4 @@ tags:
 - [[UI Expert (UI)]] - `references` [EXTRACTED]
 - [[UX Skill (i-ux, external)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR
+#graphify/concept #graphify/EXTRACTED #community/Test-Driven_Development_README

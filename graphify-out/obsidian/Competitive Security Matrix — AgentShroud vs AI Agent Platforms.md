@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/competitive-security-matrix.md"
 type: "document"
-community: "Migration Path (SSH → Distributed Node)"
+community: "Competitive Security Matrix — AgentShroud vs AI Agent Platforms"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Migration_Path_SSH__Distributed_Node
+  - community/Competitive_Security_Matrix__AgentShroud_vs_AI_Agent_Platforms
 ---
 
 # Competitive Security Matrix — AgentShroud vs AI Agent Platforms
@@ -19,4 +19,4 @@ tags:
 - [[Updated Magic Quadrant Position]] - `contains` [EXTRACTED]
 - [[competitive-security-matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Migration_Path_SSH__Distributed_Node
+#graphify/document #graphify/EXTRACTED #community/Competitive_Security_Matrix__AgentShroud_vs_AI_Agent_Platforms

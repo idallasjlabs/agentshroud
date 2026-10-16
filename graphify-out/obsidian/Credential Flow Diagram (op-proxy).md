@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/04-security.md"
 type: "concept"
-community: "gateway.security.agent_cve_registry"
+community: "diagrams/README.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/gatewaysecurityagent_cve_registry
+  - community/diagrams/READMEmd
 ---
 
 # Credential Flow Diagram (op-proxy)
@@ -14,4 +14,4 @@ tags:
 - [[04-security]] - `conceptually_related_to` [EXTRACTED]
 - [[FR4 Data Confidentiality]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/gatewaysecurityagent_cve_registry
+#graphify/concept #graphify/EXTRACTED #community/diagrams/READMEmd

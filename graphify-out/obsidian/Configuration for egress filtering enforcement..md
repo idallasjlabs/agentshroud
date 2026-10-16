@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "rationale"
-community: "ConsentFramework"
-location: "L184"
+community: "EgressFilterConfig"
+location: "L201"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/EgressFilterConfig
 ---
 
 # Configuration for egress filtering enforcement.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EgressFilterConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ConsentFramework
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

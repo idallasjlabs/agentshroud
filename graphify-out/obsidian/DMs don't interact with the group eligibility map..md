@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "test_soc_bots.py"
+community: "_wrap_response"
 location: "L8977"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/_wrap_response
 ---
 
 # DMs don't interact with the group eligibility map.
 
 ## Connections
-- [[.test_private_message_does_not_set_eligibility_flag()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_private_message_does_not_set_eligibility_flag()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/rationale #graphify/EXTRACTED #community/_wrap_response

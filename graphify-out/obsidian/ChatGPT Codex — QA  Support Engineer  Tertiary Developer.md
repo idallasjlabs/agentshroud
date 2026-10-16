@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-21-team-structure.svg"
 type: "concept"
-community: "OKE Channel — CPA Exam Context"
+community: "Claude Code (claude-sonnet-4-6) — Lead Engineer / Primary Developer"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/OKE_Channel__CPA_Exam_Context
+  - community/Claude_Code_claude-sonnet-4-6__Lead_Engineer_/_Primary_Developer
 ---
 
 # ChatGPT Codex — QA / Support Engineer / Tertiary Developer
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Claude Code (claude-sonnet-4-6) — Lead Engineer  Primary Developer]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/OKE_Channel__CPA_Exam_Context
+#graphify/concept #graphify/EXTRACTED #community/Claude_Code_claude-sonnet-4-6__Lead_Engineer_/_Primary_Developer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_schema.py"
 type: "rationale"
-community: "hermes/skills/i-cr/SKILL.md"
+community: "OutputSchemaEnforcer"
 location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/hermes/skills/i-cr/SKILLmd
+  - community/OutputSchemaEnforcer
 ---
 
 # Definition for a named output schema.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SchemaRule]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd
+#graphify/rationale #graphify/EXTRACTED #community/OutputSchemaEnforcer

@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 340"
+community: "AgentShroud Setup Guide"
 location: "L830"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_340
+  - community/AgentShroud_Setup_Guide
 ---
 
 # Container Unhealthy
 
 ## Connections
-- [[Troubleshooting_27]] - `contains` [EXTRACTED]
+- [[Troubleshooting_26]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_340
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

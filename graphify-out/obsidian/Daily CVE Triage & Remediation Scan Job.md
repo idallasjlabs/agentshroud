@@ -1,18 +1,18 @@
 ---
 source_file: "docker/config/openclaw/cron/prompts/cve-triage-report.txt"
 type: "document"
-community: "TELEGRAM_ISSUES.md"
+community: "Report Delivery Format Instructions"
 location: "L1-L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TELEGRAM_ISSUESmd
+  - community/Report_Delivery_Format_Instructions
 ---
 
 # Daily CVE Triage & Remediation Scan Job
 
 ## Connections
-- [[.new-cves.json (pre-diffed advisory handoff file)]] - `shares_data_with` [EXTRACTED]
+- [[dot-new-cves.json (pre-diffed advisory handoff file)]] - `shares_data_with` [EXTRACTED]
 - [[CVE Triage 3-Job Pipeline]] - `implements` [EXTRACTED]
 - [[NO_REPLY Suppression Token]] - `references` [EXTRACTED]
 - [[OpenClaw Cron Jobs Reference & Recreation Guide]] - `references` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[Per-CVE Mitigation Assessment (FULLY  PARTIALLY  NOT_MITIGATED)]] - `implements` [EXTRACTED]
 - [[cve_prefetch.py (CVE fetch-and-diff)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd
+#graphify/document #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions

@@ -1,17 +1,17 @@
 ---
-source_file: "examples/docker-commands.md"
+source_file: "docker/scripts/README.md"
 type: "document"
-community: "Red Team Assessment v1.2.0"
-location: "L5"
+community: "OpenClaw Management Scripts"
+location: "L195"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Red_Team_Assessment_v120
+  - community/OpenClaw_Management_Scripts
 ---
 
-# Container management
+# Container Management
 
 ## Connections
-- [[Docker Commands Reference]] - `contains` [EXTRACTED]
+- [[Direct Docker Commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Red_Team_Assessment_v120
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts

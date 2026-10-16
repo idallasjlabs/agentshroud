@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-data/README.md"
+source_file: "docker/config/openclaw/skills/i-data/README.md"
 type: "document"
-community: "SlackAPIProxy"
+community: "Data Validation (DATA-VAL)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/Data_Validation_DATA-VAL
 ---
 
 # Data Validation (DATA-VAL)
 
 ## Connections
-- [[Purpose_46]] - `contains` [EXTRACTED]
-- [[README_47]] - `contains` [EXTRACTED]
-- [[README_51]] - `contains` [EXTRACTED]
-- [[Related Skills_49]] - `contains` [EXTRACTED]
-- [[Usage_52]] - `contains` [EXTRACTED]
+- [[Purpose_38]] - `contains` [EXTRACTED]
+- [[Related Skills_31]] - `contains` [EXTRACTED]
+- [[Usage_34]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-dataREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/document #graphify/EXTRACTED #community/Data_Validation_DATA-VAL

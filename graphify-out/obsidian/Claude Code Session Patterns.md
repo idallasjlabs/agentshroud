@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/tmux/SKILL.md"
 type: "document"
-community: "AgentShroud Branding Assets Index"
+community: "tmux Session Control"
 location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Branding_Assets_Index
+  - community/tmux_Session_Control
 ---
 
 # Claude Code Session Patterns
@@ -18,4 +18,4 @@ tags:
 - [[Send Task to Session]] - `contains` [EXTRACTED]
 - [[tmux Session Control]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Branding_Assets_Index
+#graphify/document #graphify/EXTRACTED #community/tmux_Session_Control

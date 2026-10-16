@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "rationale"
-community: "AgentShroud Threat Model (STRIDE Analysis)"
+community: "multi_host_test.py"
 location: "L213"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentShroud_Threat_Model_STRIDE_Analysis
+  - community/multi_host_testpy
 ---
 
 # Build the ssh argv for a host. Non-interactive, fail-fast on connect.      ``Bat
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[build_ssh_argv()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Threat_Model_STRIDE_Analysis
+#graphify/rationale #graphify/EXTRACTED #community/multi_host_testpy

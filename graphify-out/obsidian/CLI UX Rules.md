@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ux/SKILL.md"
 type: "document"
-community: "REQUIRED NOTES — PRODUCE EVERY ONE OF THESE"
+community: "Skill: UX Expert (UX)"
 location: "L197"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE
+  - community/Skill_UX_Expert_UX
 ---
 
 # CLI UX Rules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CLI  TUI UX]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

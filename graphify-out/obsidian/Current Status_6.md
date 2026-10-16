@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/TAILSCALE_COMMANDS.md"
+source_file: "docs/setup/IMESSAGE_PERMISSION_FIX.md"
 type: "document"
-community: "ledger row (id, timestamp, source, hashes, sanit"
-location: "L71"
+community: "How to Fix (5 Minutes)"
+location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ledger_row_id_timestamp_source_hashes_sanit
+  - community/How_to_Fix_5_Minutes
 ---
 
 # Current Status
 
 ## Connections
-- [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
+- [[iMessage Permission Fix - Step by Step]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ledger_row_id_timestamp_source_hashes_sanit
+#graphify/document #graphify/EXTRACTED #community/How_to_Fix_5_Minutes

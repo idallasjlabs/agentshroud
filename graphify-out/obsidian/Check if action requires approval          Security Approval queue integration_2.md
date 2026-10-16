@@ -12,6 +12,6 @@ tags:
 # Check if action requires approval          Security: Approval queue integration
 
 ## Connections
-- [[._requires_approval()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-_requires_approval()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

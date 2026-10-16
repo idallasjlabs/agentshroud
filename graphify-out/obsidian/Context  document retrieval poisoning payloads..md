@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "rationale"
-community: "BotConfig"
+community: "HeuristicClassifier"
 location: "L300"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/HeuristicClassifier
 ---
 
 # Context / document retrieval poisoning payloads.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestContextInjection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/BotConfig
+#graphify/rationale #graphify/EXTRACTED #community/HeuristicClassifier

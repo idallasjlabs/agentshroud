@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "rbac_config.py"
+community: "ResourceGuard"
 location: "L331"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/rbac_configpy
+  - community/ResourceGuard
 ---
 
 # Check if agent has exceeded disk write limit.
 
 ## Connections
-- [[.check_disk_write_limit()]] - `rationale_for` [EXTRACTED]
+- [[dot-check_disk_write_limit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/rbac_configpy
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

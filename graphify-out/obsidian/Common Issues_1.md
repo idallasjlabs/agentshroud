@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "test_clamav_pipeline.py"
+community: "troubleshooting.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_clamav_pipelinepy
+  - community/troubleshootingmd
 ---
 
 # Common Issues
@@ -22,4 +22,4 @@ tags:
 - [[Tests Failing]] - `contains` [EXTRACTED]
 - [[Troubleshooting Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_clamav_pipelinepy
+#graphify/document #graphify/EXTRACTED #community/troubleshootingmd

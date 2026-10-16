@@ -1,13 +1,13 @@
 ---
 source_file: "docker/bots/openclaw/config/cron/jobs.json"
 type: "document"
-community: "App Icon 512x512 (AgentShroud logo mark)"
+community: "Cron: Monthly Chaos Engineering Drill"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/App_Icon_512x512_AgentShroud_logo_mark
+  - community/Cron_Monthly_Chaos_Engineering_Drill
 ---
 
 # Cron: Monthly Chaos Engineering Drill
 
-#graphify/document #graphify/EXTRACTED #community/App_Icon_512x512_AgentShroud_logo_mark
+#graphify/document #graphify/EXTRACTED #community/Cron_Monthly_Chaos_Engineering_Drill

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-03.md"
 type: "document"
-community: "Skill: Pull Request (PR) Generator"
+community: "4. Risks & Gaps"
 location: "L222"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Pull_Request_PR_Generator
+  - community/4_Risks__Gaps
 ---
 
 # Design Decisions That Could Backfire
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[4. Risks & Gaps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator
+#graphify/document #graphify/EXTRACTED #community/4_Risks__Gaps

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "test_dashboard_endpoints.py"
+community: "system-requirements.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/system-requirementsmd
 ---
 
 # Container Runtime
@@ -17,4 +17,4 @@ tags:
 - [[setup-guide]] - `references` [EXTRACTED]
 - [[system-requirements]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/concept #graphify/EXTRACTED #community/system-requirementsmd

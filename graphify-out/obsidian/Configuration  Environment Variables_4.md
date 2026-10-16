@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
 type: "document"
-community: "FakeProcess"
-location: "L71"
+community: "Function Details"
+location: "L77"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/FakeProcess
+  - community/Function_Details
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[mcp_inspector.py_2]] - `contains` [EXTRACTED]
+- [[oauth_security.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/FakeProcess
+#graphify/document #graphify/EXTRACTED #community/Function_Details

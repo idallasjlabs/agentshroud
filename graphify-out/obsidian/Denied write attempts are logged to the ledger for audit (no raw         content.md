@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "SSHProxy"
 location: "L320"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/SSHProxy
 ---
 
 # Denied write attempts are logged to the ledger for audit (no raw         content
 
 ## Connections
-- [[.test_write_file_denial_is_audited()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_write_file_denial_is_audited()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

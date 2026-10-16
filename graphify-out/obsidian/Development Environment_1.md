@@ -1,17 +1,21 @@
 ---
-source_file: "docs/security/VERIFICATION_RESULTS.md"
+source_file: "docs/TEAM.md"
 type: "document"
-community: "Crash Recovery"
-location: "L206"
+community: "AgentShroud Development Team — Agile Structure"
+location: "L126"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crash_Recovery
+  - community/AgentShroud_Development_Team__Agile_Structure
 ---
 
 # Development Environment
 
 ## Connections
-- [[Deployment Readiness]] - `contains` [EXTRACTED]
+- [[AgentShroud Development Team — Agile Structure]] - `contains` [EXTRACTED]
+- [[Communication & Tooling]] - `contains` [EXTRACTED]
+- [[Container Architecture_2]] - `contains` [EXTRACTED]
+- [[Development Workflow_1]] - `contains` [EXTRACTED]
+- [[Hardware]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crash_Recovery
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Development_Team__Agile_Structure

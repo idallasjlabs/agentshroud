@@ -1,17 +1,17 @@
 ---
-source_file: "docker/bots/openclaw/config/workspace/PUBLIC-INFO.md"
+source_file: "docs/project/legal/TRADEMARK.md"
 type: "document"
-community: "HTTP 401 — Unauthorized"
-location: "L48"
+community: "AgentShroud™ — Trademark Prior Use Record"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/HTTP_401__Unauthorized
+  - community/AgentShroud__Trademark_Prior_Use_Record
 ---
 
 # Contact
 
 ## Connections
-- [[AgentShroud — Collaborator Knowledge Base]] - `contains` [EXTRACTED]
+- [[Trademark Notice_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/HTTP_401__Unauthorized
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record

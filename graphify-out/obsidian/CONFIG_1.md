@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/scripts/calendar.js"
-type: "code"
-community: "Daedalus — Concept Illustrator"
-location: "L10"
+source_file: "skills/openclaw/summarize/SKILL.md"
+type: "document"
+community: "OpenClaw Skill Metadata Schema (frontmatter convention)"
+location: "L76"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator
+  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention
 ---
 
-# CONFIG
+# Config
 
 ## Connections
-- [[calendar.js_1]] - `contains` [EXTRACTED]
+- [[Summarize]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention

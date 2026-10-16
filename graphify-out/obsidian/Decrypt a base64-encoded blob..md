@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "rationale"
-community: "GroupApprovalRouter"
+community: "AgentRegistry"
 location: "L208"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/AgentRegistry
 ---
 
 # Decrypt a base64-encoded blob.
 
 ## Connections
-- [[.decrypt_b64()]] - `rationale_for` [EXTRACTED]
+- [[dot-decrypt_b64()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "Core Principles"
+community: "RBACConfig"
 location: "L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Core_Principles
+  - community/RBACConfig
 ---
 
 # Content appended to group-A memory must not appear in group-B memory.
 
 ## Connections
-- [[.test_group_a_write_invisible_from_group_b()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_group_a_write_invisible_from_group_b()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Core_Principles
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

@@ -1,11 +1,11 @@
 ---
 source_file: "AGENTS.md"
 type: "concept"
-community: "ADR-002: Default-Allow Security Philosophy"
+community: "AGENTS.md — Codex CLI Guidance"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ADR-002_Default-Allow_Security_Philosophy
+  - community/AGENTSmd__Codex_CLI_Guidance
 ---
 
 # Data Lakehouse Platform (GSDL)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AGENTS.md — Codex CLI Guidance]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ADR-002_Default-Allow_Security_Philosophy
+#graphify/concept #graphify/EXTRACTED #community/AGENTSmd__Codex_CLI_Guidance

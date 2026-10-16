@@ -1,13 +1,13 @@
 ---
 source_file: ".agents/skills/i-chaos-engineering/SKILL.md"
 type: "document"
-community: "set-model.sh"
+community: "Chaos Engineering Skill"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/set-modelsh
+  - community/Chaos_Engineering_Skill
 ---
 
 # Chaos Engineering Skill
 
-#graphify/document #graphify/EXTRACTED #community/set-modelsh
+#graphify/document #graphify/EXTRACTED #community/Chaos_Engineering_Skill

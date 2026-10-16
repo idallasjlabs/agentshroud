@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "lifespan.py"
+community: "AlertDispatcher"
 location: "L393"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/AlertDispatcher
 ---
 
 # Clear the list of detected leakages.
 
 ## Connections
-- [[.clear_detected_leakages()]] - `rationale_for` [EXTRACTED]
+- [[dot-clear_detected_leakages()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

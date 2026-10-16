@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "AgentShroud Incident Response Plan"
+community: "AgentShroud Brand Guidelines"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Brand Personality
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AgentShroud Brand Guidelines]] - `contains` [EXTRACTED]
 - [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
-- [[Voice & Tone_2]] - `contains` [EXTRACTED]
+- [[Voice & Tone_4]] - `contains` [EXTRACTED]
 - [[Writing Style]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

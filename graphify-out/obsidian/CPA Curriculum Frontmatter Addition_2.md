@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
+source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "document"
-community: "group_config.py"
+community: "OKE Channel — CPA Exam Context"
 location: "L143"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/group_configpy
+  - community/OKE_Channel__CPA_Exam_Context
 ---
 
 # CPA Curriculum Frontmatter Addition
 
 ## Connections
-- [[OKE Channel — CPA Exam Context_1]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Context_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/group_configpy
+#graphify/document #graphify/EXTRACTED #community/OKE_Channel__CPA_Exam_Context

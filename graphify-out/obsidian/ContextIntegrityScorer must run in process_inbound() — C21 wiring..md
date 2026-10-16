@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "RBACConfig"
+community: "OutboundInfoFilter"
 location: "L411"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/OutboundInfoFilter
 ---
 
 # ContextIntegrityScorer must run in process_inbound() — C21 wiring.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestContextIntegrityInPipeline]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/OutboundInfoFilter

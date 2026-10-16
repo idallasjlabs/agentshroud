@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/macos.md"
 type: "document"
-community: "url_analyzer.py"
+community: "Deploying AgentShroud on macOS (Apple Silicon / Intel)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/url_analyzerpy
+  - community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel
 ---
 
 # Deploying AgentShroud on macOS (Apple Silicon / Intel)
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[Apple Silicon vs Intel]] - `contains` [EXTRACTED]
 - [[Docker Desktop Resource Allocation]] - `contains` [EXTRACTED]
-- [[Fresh Install_1]] - `contains` [EXTRACTED]
-- [[Prerequisites_5]] - `contains` [EXTRACTED]
+- [[Fresh Install_2]] - `contains` [EXTRACTED]
+- [[Prerequisites_13]] - `contains` [EXTRACTED]
 - [[Running Without Docker (Native Python)]] - `contains` [EXTRACTED]
-- [[Updating to Latest Release_1]] - `contains` [EXTRACTED]
+- [[Updating to Latest Release_2]] - `contains` [EXTRACTED]
 - [[macos]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/url_analyzerpy
+#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel

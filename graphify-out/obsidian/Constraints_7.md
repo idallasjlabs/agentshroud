@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/04-separation-of-privilege.md"
+source_file: ".agents/skills/i-pr/SKILL.md"
 type: "document"
-community: "Feature: Global Monitor-Only Mode (\"Observatory "
-location: "L266"
+community: "Skill: Pull Request (PR) Generator"
+location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Feature_Global_Monitor-Only_Mode_Observatory_
+  - community/Skill_Pull_Request_PR_Generator
 ---
 
 # Constraints
 
 ## Connections
-- [[Make gateway source code, config, and security policies read-only to the agent]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Feature_Global_Monitor-Only_Mode_Observatory_
+#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator

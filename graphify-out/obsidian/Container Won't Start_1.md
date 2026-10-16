@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/deployment-procedure.md"
+source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "v1.6.0 Release — Voice Terminal"
-location: "L598"
+community: "AgentShroud Phase 3 - Quick Start Guide"
+location: "L234"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/v160_Release__Voice_Terminal
+  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
 ---
 
 # Container Won't Start
 
 ## Connections
-- [[Troubleshooting Common Issues]] - `contains` [EXTRACTED]
+- [[Troubleshooting_16]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/v160_Release__Voice_Terminal
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide

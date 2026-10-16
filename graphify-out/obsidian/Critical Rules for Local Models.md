@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/AGENTS.md"
 type: "document"
-community: "apply-patches.js"
+community: "AgentShroud™ — OpenClaw Local-Model Tool-Use Instructions"
 location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/apply-patchesjs
+  - community/AgentShroud__OpenClaw_Local-Model_Tool-Use_Instructions
 ---
 
 # Critical Rules for Local Models
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud™ — OpenClaw Local-Model Tool-Use Instructions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/apply-patchesjs
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__OpenClaw_Local-Model_Tool-Use_Instructions

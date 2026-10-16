@@ -1,20 +1,21 @@
 ---
-source_file: "docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md"
+source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
 type: "document"
-community: "run_multi_host()"
-location: "L39"
+community: "ADR-001: Transparent Proxy vs Agent Modification"
+location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/run_multi_host
+  - community/ADR-001_Transparent_Proxy_vs_Agent_Modification
 ---
 
 # Consequences
 
 ## Connections
-- [[ADR-004 API Keys Never in Agent Container]] - `contains` [EXTRACTED]
-- [[Mitigation_1]] - `contains` [EXTRACTED]
-- [[Negative Consequences_3]] - `contains` [EXTRACTED]
-- [[Positive Consequences_3]] - `contains` [EXTRACTED]
+- [[ADR-001 Transparent Proxy vs Agent Modification]] - `contains` [EXTRACTED]
+- [[Mitigation Strategies]] - `contains` [EXTRACTED]
+- [[Negative Consequences_2]] - `contains` [EXTRACTED]
+- [[Positive Consequences_2]] - `contains` [EXTRACTED]
+- [[Risk Assessment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/run_multi_host
+#graphify/document #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_vs_Agent_Modification

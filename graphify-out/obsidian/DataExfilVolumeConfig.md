@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "code"
-community: "AgentShroud Access Control Matrix"
+community: "DataExfilVolumeGuard"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Access_Control_Matrix
+  - community/DataExfilVolumeGuard
 ---
 
 # DataExfilVolumeConfig
 
 ## Connections
-- [[.__init__()_69]] - `references` [EXTRACTED]
+- [[dot-__init__()_66]] - `references` [EXTRACTED]
 - [[Configuration for class`DataExfilVolumeGuard`.]] - `rationale_for` [EXTRACTED]
 - [[data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_accepts_str_and_bytes()]] - `calls` [EXTRACTED]
 - [[test_adaptive_floor_prevents_noise_blocks()]] - `calls` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[test_single_response_over_cap_blocks()]] - `calls` [EXTRACTED]
 - [[test_under_single_cap_allows()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix
+#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

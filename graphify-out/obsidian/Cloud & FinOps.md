@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Skill: Test-Driven Development (TDD)"
+community: "Skills by Category"
 location: "L195"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Test-Driven_Development_TDD
+  - community/Skills_by_Category
 ---
 
 # Cloud & FinOps
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skills by Category]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD
+#graphify/document #graphify/EXTRACTED #community/Skills_by_Category

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "GSDE&G Development Master Checklist"
+community: "MultiTurnTracker"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist
+  - community/MultiTurnTracker
 ---
 
 # Configuration for alert thresholds.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ThresholdConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist
+#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker

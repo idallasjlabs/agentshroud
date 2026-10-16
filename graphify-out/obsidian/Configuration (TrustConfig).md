@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
 type: "document"
-community: "test_claude_via_openai_path.py"
+community: "TrustManager"
 location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_claude_via_openai_pathpy
+  - community/TrustManager
 ---
 
 # Configuration (TrustConfig)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TrustManager_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_claude_via_openai_pathpy
+#graphify/document #graphify/EXTRACTED #community/TrustManager

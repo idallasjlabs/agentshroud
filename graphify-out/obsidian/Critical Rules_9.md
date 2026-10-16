@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "TestMultiBotIsolation"
-location: "L376"
+community: "AgentShroud Blue Team Security Auditor"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestMultiBotIsolation
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # Critical Rules
 
 ## Connections
-- [[AgentShroud Red Team Adversarial Tester_2]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestMultiBotIsolation
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

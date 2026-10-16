@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "TelegramAPIProxy"
 location: "L3073"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/TelegramAPIProxy
 ---
 
 # Collaborator tool/command inventory probes should return safe local guidance.
 
 ## Connections
-- [[.test_collaborator_command_inventory_query_gets_safe_info_response()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_collaborator_command_inventory_query_gets_safe_info_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

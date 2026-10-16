@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "gateway.security.daily_cve_report"
+community: "test_security_toolchain.py"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gatewaysecuritydaily_cve_report
+  - community/test_security_toolchainpy
 ---
 
 # Connection
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[init_db()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gatewaysecuritydaily_cve_report
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

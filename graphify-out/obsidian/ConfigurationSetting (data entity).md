@@ -1,13 +1,13 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "concept"
-community: "Performance Baseline v1.0.0"
+community: "ConfigurationSetting (data entity)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Performance_Baseline_v100
+  - community/ConfigurationSetting_data_entity
 ---
 
 # ConfigurationSetting (data entity)
 
-#graphify/concept #graphify/EXTRACTED #community/Performance_Baseline_v100
+#graphify/concept #graphify/EXTRACTED #community/ConfigurationSetting_data_entity

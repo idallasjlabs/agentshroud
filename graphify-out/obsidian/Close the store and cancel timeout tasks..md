@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "ApprovalQueueConfig"
 location: "L107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/ApprovalQueueConfig
 ---
 
 # Close the store and cancel timeout tasks.
 
 ## Connections
-- [[.close()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-close()_9]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "rationale"
-community: "KillSwitchMonitor"
+community: "PIIConfig"
 location: "L107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/PIIConfig
 ---
 
 # Canary should fail when no pipeline configured.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_canary_fails_without_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

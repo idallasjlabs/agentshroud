@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md"
 type: "document"
-community: "ContextSegment"
+community: "PHASE_3A_3B_IMPLEMENTATION.md"
 location: "L308"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/PHASE_3A_3B_IMPLEMENTATIONmd
 ---
 
 # Created
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Files Changed]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ContextSegment
+#graphify/document #graphify/EXTRACTED #community/PHASE_3A_3B_IMPLEMENTATIONmd

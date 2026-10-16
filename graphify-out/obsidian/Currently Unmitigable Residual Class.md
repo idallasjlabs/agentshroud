@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "rationale"
-community: "pick_latest_hermes_tag()"
+community: "ESP32-S3-BOX-3 Voice Terminal"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/pick_latest_hermes_tag
+  - community/ESP32-S3-BOX-3_Voice_Terminal
 ---
 
 # Currently Unmitigable Residual Class
@@ -17,6 +17,5 @@ tags:
 - [[Post-Rebuild CVE Rescan Delta (40 to 22 CRITICAL)]] - `references` [EXTRACTED]
 - [[Reachability Context (cap_drop ALL, isolated network)]] - `references` [EXTRACTED]
 - [[Two-Terminal-State Finding Taxonomy]] - `rationale_for` [EXTRACTED]
-- [[python-jose Removal (CVE-2024-3366333664)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/pick_latest_hermes_tag
+#graphify/rationale #graphify/EXTRACTED #community/ESP32-S3-BOX-3_Voice_Terminal

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "test_llm_proxy.py"
+community: "TelegramAPIProxy"
 location: "L27"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/TelegramAPIProxy
 ---
 
 # Create a PIISanitizer with default enforce config.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_sanitizer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

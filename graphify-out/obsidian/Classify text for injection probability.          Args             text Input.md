@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "rationale"
-community: "BotConfig"
+community: "HeuristicClassifier"
 location: "L165"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/HeuristicClassifier
 ---
 
 # Classify text for injection probability.          Args:             text: Input
 
 ## Connections
-- [[.classify()]] - `rationale_for` [EXTRACTED]
+- [[dot-classify()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/BotConfig
+#graphify/rationale #graphify/EXTRACTED #community/HeuristicClassifier

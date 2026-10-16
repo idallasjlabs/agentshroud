@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
-type: "document"
-community: "lvgl_kawaii_face.c"
-location: "L11"
+source_file: "browser-extension/package.json"
+type: "code"
+community: "browser-extension/package.json"
+location: "L5"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/lvgl_kawaii_facec
+  - community/browser-extension/packagejson
 ---
 
-# Description
+# description
 
 ## Connections
-- [[OPENCLAW_SANDBOX_MODE_1]] - `contains` [EXTRACTED]
+- [[browser-extensionpackage.json]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/lvgl_kawaii_facec
+#graphify/code #graphify/EXTRACTED #community/browser-extension/packagejson

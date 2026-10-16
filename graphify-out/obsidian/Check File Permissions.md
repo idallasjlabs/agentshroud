@@ -1,17 +1,17 @@
 ---
 source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "discover_upstream_versions.py"
+community: "AgentShroud Phase 3 - Quick Start Guide"
 location: "L343"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/discover_upstream_versionspy
+  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
 ---
 
 # Check File Permissions
 
 ## Connections
-- [[Security Validation]] - `contains` [EXTRACTED]
+- [[Security Validation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/discover_upstream_versionspy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide

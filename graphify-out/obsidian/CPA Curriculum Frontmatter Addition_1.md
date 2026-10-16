@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
 type: "document"
-community: "3. AWS API MCP Authentication Reset"
+community: "Atlas — Curriculum Architect"
 location: "L143"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/3_AWS_API_MCP_Authentication_Reset
+  - community/Atlas__Curriculum_Architect
 ---
 
 # CPA Curriculum Frontmatter Addition
 
 ## Connections
-- [[OKE Channel — CPA Exam Context_2]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Context_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/3_AWS_API_MCP_Authentication_Reset
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

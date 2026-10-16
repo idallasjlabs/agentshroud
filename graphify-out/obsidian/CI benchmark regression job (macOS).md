@@ -1,14 +1,17 @@
 ---
 source_file: ".github/workflows/ci.yml"
 type: "code"
-community: "Collaborator Greeter State Debug Helper"
-location: "L214-231"
+community: "check_benchmark_regression.py"
+location: "214"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Greeter_State_Debug_Helper
+  - community/check_benchmark_regressionpy
 ---
 
 # CI benchmark regression job (macOS)
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Greeter_State_Debug_Helper
+## Connections
+- [[check_benchmark_regression.py]] - `references` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/check_benchmark_regressionpy

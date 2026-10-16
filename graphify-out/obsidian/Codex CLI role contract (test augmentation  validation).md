@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/AGENTS.md"
 type: "concept"
-community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+community: "awslabs.aws-api-mcp-server configuration (--readonly)"
 location: "Section 0"
 tags:
   - graphify/concept
-  - graphify/INFERRED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR
+  - graphify/EXTRACTED
+  - community/awslabsaws-api-mcp-server_configuration_--readonly
 ---
 
 # Codex CLI role contract (test augmentation / validation)
@@ -15,4 +15,4 @@ tags:
 - [[Codex CLI (TERTIARY agent, TOML config)]] - `implements` [INFERRED]
 - [[awslabs.aws-api-mcp-server configuration (--readonly)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Skill_MCP_Doctor_MCPM-DOCTOR
+#graphify/concept #graphify/EXTRACTED #community/awslabsaws-api-mcp-server_configuration_--readonly

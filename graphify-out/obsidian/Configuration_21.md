@@ -1,18 +1,17 @@
 ---
-source_file: "skills/openclaw/canvas/SKILL.md"
+source_file: "skills/openclaw/bear-notes/SKILL.md"
 type: "document"
-community: "Credential Management - 1Password Integration"
-location: "L58"
+community: "Bear Notes"
+location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Credential_Management_-_1Password_Integration
+  - community/Bear_Notes
 ---
 
 # Configuration
 
 ## Connections
-- [[Canvas Skill]] - `contains` [EXTRACTED]
-- [[Live Reload]] - `contains` [EXTRACTED]
+- [[Bear Notes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Credential_Management_-_1Password_Integration
+#graphify/document #graphify/EXTRACTED #community/Bear_Notes

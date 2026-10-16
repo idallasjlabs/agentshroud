@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "TrustManager"
+community: "MiddlewareManager"
 location: "L1079"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/MiddlewareManager
 ---
 
 # Check if user_id is the system owner via RBAC config (single source of truth).
 
 ## Connections
-- [[._is_owner()]] - `rationale_for` [EXTRACTED]
+- [[dot-_is_owner()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

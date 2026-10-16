@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md"
-type: "document"
-community: "Community 977"
-location: "L11"
+source_file: "docker/config/openclaw/skills/i-browser/package.json"
+type: "code"
+community: "openclaw/skills/i-browser/package.json"
+location: "L4"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_977
+  - community/openclaw/skills/i-browser/packagejson
 ---
 
-# Description
+# description
 
 ## Connections
-- [[GATEWAY_OP_PROXY_URL_1]] - `contains` [EXTRACTED]
+- [[openclawskillsi-browserpackage.json]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_977
+#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-browser/packagejson

@@ -12,6 +12,6 @@ tags:
 # Check if domain matches pattern (supports wildcards)
 
 ## Connections
-- [[._domain_matches()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-_domain_matches()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

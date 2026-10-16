@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "HTTPConnectProxy"
+community: "CompetitiveIntelReport"
 location: "L146"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/CompetitiveIntelReport
 ---
 
 # Derive content_hash from the canonical content fields.          Only computed wh
 
 ## Connections
-- [[._compute_content_hash()]] - `rationale_for` [EXTRACTED]
+- [[dot-_compute_content_hash()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/rationale #graphify/EXTRACTED #community/CompetitiveIntelReport

@@ -1,21 +1,20 @@
 ---
-source_file: ".agents/skills/i-daedalus/README.md"
+source_file: "docker/config/hermes/skills/i-daedalus/README.md"
 type: "document"
-community: "DNSFilterConfig"
+community: "Daedalus — Concept Illustrator"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Daedalus — Concept Illustrator
 
 ## Connections
-- [[Purpose_8]] - `contains` [EXTRACTED]
-- [[README_8]] - `contains` [EXTRACTED]
-- [[Related Skills_8]] - `contains` [EXTRACTED]
-- [[SKILL_15]] - `contains` [EXTRACTED]
-- [[Usage_10]] - `contains` [EXTRACTED]
+- [[Purpose_22]] - `contains` [EXTRACTED]
+- [[Related Skills_15]] - `contains` [EXTRACTED]
+- [[Usage_18]] - `contains` [EXTRACTED]
+- [[hermesskillsi-daedalusREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

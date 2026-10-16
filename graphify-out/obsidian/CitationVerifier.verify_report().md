@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "HTTPConnectProxy"
+community: "CompetitiveIntelReport"
 location: "line:212"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/CompetitiveIntelReport
 ---
 
 # CitationVerifier.verify_report()
 
 ## Connections
-- [[CompetitiveIntelReport_1]] - `calls` [EXTRACTED]
+- [[CompetitiveIntelReport_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

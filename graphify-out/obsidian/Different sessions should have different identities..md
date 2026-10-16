@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "lifespan.py"
+community: "AlertDispatcher"
 location: "L562"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/AlertDispatcher
 ---
 
 # Different sessions should have different identities.
 
 ## Connections
-- [[.test_session_cannot_impersonate()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_session_cannot_impersonate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

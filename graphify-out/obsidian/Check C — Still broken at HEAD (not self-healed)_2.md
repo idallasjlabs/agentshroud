@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ab/SKILL.md"
 type: "document"
-community: "web_content_scanner.py"
+community: "Skill: Audit Branch (AB) — Merge Regression Detection"
 location: "L118"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/web_content_scannerpy
+  - community/Skill_Audit_Branch_AB__Merge_Regression_Detection
 ---
 
 # Check C — Still broken at HEAD (not self-healed)?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 4 — Triage each finding_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/web_content_scannerpy
+#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Detection

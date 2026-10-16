@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/security/canary.py"
+source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L41"
+community: "PIIConfig"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/PIIConfig
 ---
 
 # CanaryResult
 
 ## Connections
-- [[.to_dict()_6]] - `method` [EXTRACTED]
-- [[Result of running the canary system.]] - `rationale_for` [EXTRACTED]
-- [[canary.py]] - `contains` [EXTRACTED]
-- [[run_canary()]] - `references` [EXTRACTED]
+- [[dot-_check_encoded()]] - `references` [EXTRACTED]
+- [[dot-_check_plain()]] - `references` [EXTRACTED]
+- [[dot-scan()_2]] - `references` [EXTRACTED]
+- [[canary_tripwire.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

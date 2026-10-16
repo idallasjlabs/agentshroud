@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "GitGuard"
+community: "MCPPermissionManager"
 location: "L446"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/MCPPermissionManager
 ---
 
 # Check if an agent can call a specific tool.          Default-allow: only blocks
 
 ## Connections
-- [[.check_tool_permission()]] - `rationale_for` [EXTRACTED]
+- [[dot-check_tool_permission()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GitGuard
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

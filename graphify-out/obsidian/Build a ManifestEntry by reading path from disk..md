@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "rationale"
-community: "TestAlertDispatcher"
+community: "Path"
 location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestAlertDispatcher
+  - community/Path
 ---
 
 # Build a ManifestEntry by reading *path* from disk.
 
 ## Connections
-- [[.from_file()]] - `rationale_for` [EXTRACTED]
+- [[dot-from_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestAlertDispatcher
+#graphify/rationale #graphify/EXTRACTED #community/Path

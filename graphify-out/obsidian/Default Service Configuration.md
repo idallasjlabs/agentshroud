@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
 type: "document"
-community: "DeceptionDetection"
+community: "compose_generator.py"
 location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DeceptionDetection
+  - community/compose_generatorpy
 ---
 
 # Default Service Configuration
@@ -16,4 +16,4 @@ tags:
 - [[gateway service]] - `contains` [EXTRACTED]
 - [[openclaw service]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DeceptionDetection
+#graphify/document #graphify/EXTRACTED #community/compose_generatorpy

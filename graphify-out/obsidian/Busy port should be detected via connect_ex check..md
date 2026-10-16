@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_port_manager.py"
 type: "rationale"
-community: "KeyVault"
+community: "PortManager"
 location: "L33"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/PortManager
 ---
 
 # Busy port should be detected via connect_ex check.
 
 ## Connections
-- [[.test_bound_port_is_not_available()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_bound_port_is_not_available()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyVault
+#graphify/rationale #graphify/EXTRACTED #community/PortManager

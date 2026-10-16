@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "Health Checks"
+community: "main.py.md"
 location: "L158"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Health_Checks
+  - community/mainpymd
 ---
 
 # Common Startup Failures
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Startup Sequence_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Health_Checks
+#graphify/document #graphify/EXTRACTED #community/mainpymd

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ui/SKILL.md"
+source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM)"
-location: "L390"
+community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements"
+location: "L297"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM
+  - community/Required__45_for_text__30_for_UI_elements
 ---
 
 # Dependencies
 
 ## Connections
-- [[Skill UI Expert (UI)_2]] - `contains` [EXTRACTED]
+- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM
+#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements

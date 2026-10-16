@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "test_scanner_integration.py"
+community: ".analyze_message"
 location: "L241"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/analyze_message
 ---
 
 # Detect instruction injection attempts.
 
 ## Connections
-- [[._detect_instruction_injection()]] - `rationale_for` [EXTRACTED]
+- [[dot-_detect_instruction_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/rationale #graphify/EXTRACTED #community/analyze_message

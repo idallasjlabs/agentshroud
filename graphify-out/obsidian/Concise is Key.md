@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/SKILL.md"
 type: "document"
-community: "tool_result_injection.py"
+community: "Core Principles"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/tool_result_injectionpy
+  - community/Core_Principles
 ---
 
 # Concise is Key
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Core Principles]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/tool_result_injectionpy
+#graphify/document #graphify/EXTRACTED #community/Core_Principles

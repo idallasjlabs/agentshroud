@@ -1,17 +1,17 @@
 ---
 source_file: ".github/agents/test-augmenter.agent.md"
 type: "document"
-community: "session-prompt-setup.sh"
+community: "Test Augmentation Specialist"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/session-prompt-setupsh
+  - community/Test_Augmentation_Specialist
 ---
 
 # C) Test Quality
 
 ## Connections
-- [[Your Responsibilities]] - `contains` [EXTRACTED]
+- [[Your Responsibilities_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/session-prompt-setupsh
+#graphify/document #graphify/EXTRACTED #community/Test_Augmentation_Specialist

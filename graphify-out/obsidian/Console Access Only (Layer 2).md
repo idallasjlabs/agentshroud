@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 type: "rationale"
-community: "REQUIRED NOTES — PRODUCE EVERY ONE OF THESE"
+community: "CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE
+  - community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
 ---
 
 # Console Access Only (Layer 2)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[CREDENTIAL-PROTECTION-IMPLEMENTED]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE
+#graphify/rationale #graphify/EXTRACTED #community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "rationale"
-community: "MCPAuditTrail"
+community: "scanner_integration.py"
 location: "L962"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPAuditTrail
+  - community/scanner_integrationpy
 ---
 
 # DISA STIG domain map references only valid domain IDs.
 
 ## Connections
-- [[.test_disa_stig_domain_map_valid()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_disa_stig_domain_map_valid()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPAuditTrail
+#graphify/rationale #graphify/EXTRACTED #community/scanner_integrationpy

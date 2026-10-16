@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/00 - START HERE/Quick Reference.md"
+source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "PipelineAction"
-location: "L134"
+community: "AgentShroud Prerequisites"
+location: "L642"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/AgentShroud_Prerequisites
 ---
 
 # Common Issues
 
 ## Connections
-- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
+- [[🆘 Troubleshooting_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/PipelineAction
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites

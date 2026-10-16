@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "4. Handling Alerts"
+community: "Claude Code (PRIMARY agent)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/4_Handling_Alerts
+  - community/Claude_Code_PRIMARY_agent
 ---
 
 # Claude Code (PRIMARY agent)
@@ -14,4 +14,4 @@ tags:
 - [[Codex CLI (TERTIARY agent)]] - `conceptually_related_to` [EXTRACTED]
 - [[Gemini CLI (SECONDARY agent)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/4_Handling_Alerts
+#graphify/concept #graphify/EXTRACTED #community/Claude_Code_PRIMARY_agent

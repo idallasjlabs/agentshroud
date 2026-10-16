@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/icloud/SKILL.md"
+source_file: "docs/setup/ICLOUD-SERVICES-SETUP.md"
 type: "document"
-community: "check-vendor-compat.sh"
-location: "L147"
+community: "iCloud Services Setup - Complete Guide"
+location: "L444"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/check-vendor-compatsh
+  - community/iCloud_Services_Setup_-_Complete_Guide
 ---
 
 # "Connection timeout"
 
 ## Connections
-- [[Troubleshooting_35]] - `contains` [EXTRACTED]
+- [[🔍 Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/check-vendor-compatsh
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services_Setup_-_Complete_Guide

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "rationale"
-community: "RBACConfig"
+community: "EnvelopeSigner"
 location: "L85"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/EnvelopeSigner
 ---
 
 # Convenience: sign a system prompt as issuer='system'.
 
 ## Connections
-- [[.wrap_system_prompt()]] - `rationale_for` [EXTRACTED]
+- [[dot-wrap_system_prompt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/EnvelopeSigner

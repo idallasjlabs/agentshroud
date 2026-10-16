@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/history-purge-plan.md"
 type: "document"
-community: "Function Details"
+community: "Git History Purge Plan"
 location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/Git_History_Purge_Plan
 ---
 
 # Claude (Codex on Marvin)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Purge — Other Instances]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/Git_History_Purge_Plan

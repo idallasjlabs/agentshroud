@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "KeyVaultConfig"
+community: "UserSessionManager"
 location: "L21"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/UserSessionManager
 ---
 
 # Create a UserSessionManager with a temp base workspace and an owner.
 
 ## Connections
-- [[mgr()_2]] - `rationale_for` [EXTRACTED]
+- [[mgr()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

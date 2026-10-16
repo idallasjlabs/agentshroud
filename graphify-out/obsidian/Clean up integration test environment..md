@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "DataExfilVolumeGuard"
+community: "lifespan.py"
 location: "L405"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DataExfilVolumeGuard
+  - community/lifespanpy
 ---
 
 # Clean up integration test environment.
 
 ## Connections
-- [[.teardown_method()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-teardown_method()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DataExfilVolumeGuard
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

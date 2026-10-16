@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
-community: "check-vendor-compat.sh"
+community: "iCloud Services"
 location: "L111"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/check-vendor-compatsh
+  - community/iCloud_Services
 ---
 
 # Create Note
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Notes Operations_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/check-vendor-compatsh
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

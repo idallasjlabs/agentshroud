@@ -1,17 +1,19 @@
 ---
-source_file: "docs/TEAM.md"
+source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "TestEmailSend"
-location: "L149"
+community: "main.py.md"
+location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestEmailSend
+  - community/mainpymd
 ---
 
 # Container Architecture
 
 ## Connections
-- [[Development Environment]] - `contains` [EXTRACTED]
+- [[Architecture Overview_1]] - `contains` [EXTRACTED]
+- [[Bot Container (`agentshroud-bot`)]] - `contains` [EXTRACTED]
+- [[Gateway Container (`agentshroud-gateway`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestEmailSend
+#graphify/document #graphify/EXTRACTED #community/mainpymd

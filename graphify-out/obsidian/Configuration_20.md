@@ -1,17 +1,21 @@
 ---
-source_file: "skills/openclaw/bear-notes/SKILL.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "ADR-008-progressive-trust-levels.md"
-location: "L85"
+community: "SSH Config"
+location: "L191"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-008-progressive-trust-levelsmd
+  - community/SSH_Config
 ---
 
 # Configuration
 
 ## Connections
-- [[Bear Notes]] - `contains` [EXTRACTED]
+- [[7. Deployment]] - `contains` [EXTRACTED]
+- [[Full Configuration Example]] - `contains` [EXTRACTED]
+- [[SSH Config]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[iCloud Services_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-008-progressive-trust-levelsmd
+#graphify/document #graphify/EXTRACTED #community/SSH_Config

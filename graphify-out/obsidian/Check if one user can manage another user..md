@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "Action"
 location: "L373"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Action
 ---
 
 # Check if one user can manage another user.
 
 ## Connections
-- [[.can_user_manage_user()]] - `rationale_for` [EXTRACTED]
+- [[dot-can_user_manage_user()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/Action

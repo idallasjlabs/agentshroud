@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/security/canary_tripwire.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "WebProxyConfig"
-location: "L28"
+community: "MiddlewareManager"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/MiddlewareManager
 ---
 
 # CanaryResult
 
 ## Connections
-- [[._check_encoded()]] - `references` [EXTRACTED]
-- [[._check_plain()]] - `references` [EXTRACTED]
-- [[.scan()_2]] - `references` [EXTRACTED]
-- [[canary_tripwire.py]] - `contains` [EXTRACTED]
+- [[dot-_scan_for_canary()]] - `references` [EXTRACTED]
+- [[dot-check_response()_1]] - `references` [EXTRACTED]
+- [[Result of checking a response for canary presence.]] - `rationale_for` [EXTRACTED]
+- [[output_canary.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,12 +1,12 @@
 ---
 source_file: "branding/QUICK-REFERENCE.md"
 type: "document"
-community: "agentshroud-ssh-exec.sh"
+community: "AgentShroud Brand Quick Reference"
 location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-ssh-execsh
+  - community/AgentShroud_Brand_Quick_Reference
 ---
 
 # Dark Mode
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Use Cases]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-ssh-execsh
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Quick_Reference

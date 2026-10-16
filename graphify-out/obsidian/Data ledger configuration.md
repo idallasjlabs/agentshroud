@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "EgressPolicy"
+community: "DataLedger"
 location: "L44"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressPolicy
+  - community/DataLedger
 ---
 
 # Data ledger configuration
 
 ## Connections
-- [[LedgerConfig]] - `rationale_for` [EXTRACTED]
+- [[LedgerConfig_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressPolicy
+#graphify/rationale #graphify/EXTRACTED #community/DataLedger

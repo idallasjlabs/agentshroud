@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/clawhub/SKILL.md"
 type: "document"
-community: "eightctl/SKILL.md"
+community: "clawhub/SKILL.md"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/eightctl/SKILLmd
+  - community/clawhub/SKILLmd
 ---
 
 # ClawHub CLI
 
 ## Connections
-- [[SKILL_202]] - `implements` [EXTRACTED]
+- [[clawhubSKILL]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/eightctl/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/clawhub/SKILLmd

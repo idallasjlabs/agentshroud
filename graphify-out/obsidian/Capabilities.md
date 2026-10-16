@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/SOUL.md"
+source_file: "docker/config/hermes/agents/hermes-soul.md"
 type: "document"
-community: "10. Troubleshooting"
+community: "AgentShroud Hermes — System Identity"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/10_Troubleshooting
+  - community/AgentShroud_Hermes__System_Identity
 ---
 
 # Capabilities
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Hermes — System Identity]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/10_Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Hermes__System_Identity

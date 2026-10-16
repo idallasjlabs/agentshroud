@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/apple_engine.py"
 type: "rationale"
-community: "iCloud Services"
+community: "AppleContainerEngine"
 location: "L27"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/iCloud_Services
+  - community/AppleContainerEngine
 ---
 
 # Container engine backed by Apple's `container` CLI.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AppleContainerEngine]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/iCloud_Services
+#graphify/rationale #graphify/EXTRACTED #community/AppleContainerEngine

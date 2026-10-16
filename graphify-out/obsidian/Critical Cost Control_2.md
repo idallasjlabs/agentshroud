@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-data/SKILL.md"
 type: "document"
-community: "Identity Reference - AgentShroud System"
+community: "Skill: Data Validation (DATA-VAL)"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Identity_Reference_-_AgentShroud_System
+  - community/Skill_Data_Validation_DATA-VAL
 ---
 
 # Critical: Cost Control
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Data Validation (DATA-VAL)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Identity_Reference_-_AgentShroud_System
+#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL

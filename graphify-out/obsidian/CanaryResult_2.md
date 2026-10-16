@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: "gateway/security/canary.py"
 type: "code"
-community: "openclaw/skills/i-browser/package.json"
-location: "L32"
+community: "AgentRegistry"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-browser/packagejson
+  - community/AgentRegistry
 ---
 
 # CanaryResult
 
 ## Connections
-- [[._scan_for_canary()]] - `references` [EXTRACTED]
-- [[.check_response()]] - `references` [EXTRACTED]
-- [[Result of checking a response for canary presence.]] - `rationale_for` [EXTRACTED]
-- [[output_canary.py]] - `contains` [EXTRACTED]
+- [[dot-to_dict()_14]] - `method` [EXTRACTED]
+- [[Result of running the canary system.]] - `rationale_for` [EXTRACTED]
+- [[canary.py]] - `contains` [EXTRACTED]
+- [[run_canary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-browser/packagejson
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

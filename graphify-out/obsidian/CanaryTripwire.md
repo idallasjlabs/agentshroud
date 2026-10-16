@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "WebProxyConfig"
+community: "PIIConfig"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig
+  - community/PIIConfig
 ---
 
 # CanaryTripwire
 
 ## Connections
-- [[.__init__()_60]] - `method` [EXTRACTED]
-- [[._check_encoded()]] - `method` [EXTRACTED]
-- [[._check_plain()]] - `method` [EXTRACTED]
-- [[._normalize()]] - `method` [EXTRACTED]
-- [[._record()]] - `method` [EXTRACTED]
-- [[.detection_count()]] - `method` [EXTRACTED]
-- [[.register_canary()]] - `method` [EXTRACTED]
-- [[.scan()_2]] - `method` [EXTRACTED]
-- [[.scan_response()_1]] - `method` [EXTRACTED]
-- [[.setup_method()_1]] - `calls` [EXTRACTED]
-- [[.test_custom_config()_1]] - `calls` [EXTRACTED]
-- [[.test_no_canaries()]] - `calls` [EXTRACTED]
-- [[.test_scan_response_no_block_when_block_disabled()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_114]] - `method` [EXTRACTED]
+- [[dot-_check_encoded()]] - `method` [EXTRACTED]
+- [[dot-_check_plain()]] - `method` [EXTRACTED]
+- [[dot-_normalize()]] - `method` [EXTRACTED]
+- [[dot-_record()]] - `method` [EXTRACTED]
+- [[dot-detection_count()]] - `method` [EXTRACTED]
+- [[dot-register_canary()]] - `method` [EXTRACTED]
+- [[dot-scan()_2]] - `method` [EXTRACTED]
+- [[dot-scan_response()_1]] - `method` [EXTRACTED]
+- [[dot-setup_method()_20]] - `calls` [EXTRACTED]
+- [[dot-test_custom_config()_2]] - `calls` [EXTRACTED]
+- [[dot-test_no_canaries()]] - `calls` [EXTRACTED]
+- [[dot-test_scan_response_no_block_when_block_disabled()]] - `calls` [EXTRACTED]
 - [[TestCanaryTripwire]] - `uses` [INFERRED]
 - [[TestE2E01PromptGuardBlocking]] - `uses` [INFERRED]
 - [[TestE2E02InboundPIIRedaction]] - `uses` [INFERRED]
@@ -40,11 +40,11 @@ tags:
 - [[_BrokenSanitizer]] - `uses` [INFERRED]
 - [[canary_tripwire.py]] - `contains` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[pipeline()_1]] - `calls` [EXTRACTED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[run()_4]] - `calls` [EXTRACTED]
 - [[test_canary_tripwire.py]] - `imports` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

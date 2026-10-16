@@ -1,22 +1,22 @@
 ---
 source_file: "docs/vault/05 - Dependencies/clamav.md"
 type: "document"
-community: "Mode A — Single task"
-location: "L9"
+community: "All Dependencies.md"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task
+  - community/All_Dependenciesmd
 ---
 
-# ClamAV
+# clamav.md
 
 ## Connections
-- [[First Boot]] - `contains` [EXTRACTED]
-- [[Gateway Usage]] - `contains` [EXTRACTED]
-- [[Installation_2]] - `contains` [EXTRACTED]
-- [[Purpose_185]] - `contains` [EXTRACTED]
-- [[Related Notes_40]] - `contains` [EXTRACTED]
-- [[clamav]] - `contains` [EXTRACTED]
+- [[All Dependencies]] - `references` [EXTRACTED]
+- [[ClamAV_1]] - `contains` [EXTRACTED]
+- [[alert_dispatcher.py_2]] - `references` [INFERRED]
+- [[clamav_scanner.py_2]] - `references` [INFERRED]
+- [[openscap]] - `conceptually_related_to` [EXTRACTED]
+- [[trivy_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

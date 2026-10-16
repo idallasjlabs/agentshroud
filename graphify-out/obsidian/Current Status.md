@@ -1,19 +1,17 @@
 ---
-source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
+source_file: "docs/project/README.md"
 type: "document"
-community: "check_upstream_cves()"
-location: "L105"
+community: "Project Documentation"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/check_upstream_cves
+  - community/Project_Documentation
 ---
 
 # Current Status
 
 ## Connections
-- [[AgentShroud™ — Project Knowledge Base]] - `contains` [EXTRACTED]
-- [[Development Phases]] - `contains` [EXTRACTED]
-- [[v0.8.0 Focus Areas]] - `contains` [EXTRACTED]
+- [[Project Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/check_upstream_cves
+#graphify/document #graphify/EXTRACTED #community/Project_Documentation

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agentshroud_manager.py"
 type: "rationale"
-community: "EgressFilterConfig"
+community: "upgrade"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/upgrade
 ---
 
 # Create a temporary database for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[tmp_db()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/upgrade

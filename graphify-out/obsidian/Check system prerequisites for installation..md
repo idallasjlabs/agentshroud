@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "rationale"
-community: "get_trivy_summary()"
+community: "installer.py"
 location: "L66"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/get_trivy_summary
+  - community/installerpy
 ---
 
 # Check system prerequisites for installation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check_prerequisites()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/get_trivy_summary
+#graphify/rationale #graphify/EXTRACTED #community/installerpy

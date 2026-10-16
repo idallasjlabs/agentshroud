@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "TelegramAPIProxy"
 location: "L6850"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/TelegramAPIProxy
 ---
 
 # Default collaborator limiter should use 5000 msgs/hour unless overridden.
 
 ## Connections
-- [[.test_collaborator_rate_limiter_defaults_to_5000_per_hour()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_collaborator_rate_limiter_defaults_to_5000_per_hour()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

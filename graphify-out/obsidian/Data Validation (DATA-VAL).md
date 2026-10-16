@@ -1,21 +1,21 @@
 ---
 source_file: ".agents/skills/i-data/README.md"
 type: "document"
-community: ".__init__()"
+community: "Data Validation (DATA-VAL)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/__init__
+  - community/Data_Validation_DATA-VAL
 ---
 
 # Data Validation (DATA-VAL)
 
 ## Connections
-- [[Purpose_9]] - `contains` [EXTRACTED]
-- [[README_9]] - `contains` [EXTRACTED]
-- [[Related Skills_9]] - `contains` [EXTRACTED]
-- [[SKILL_15]] - `contains` [EXTRACTED]
-- [[Usage_11]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-dataREADME]] - `contains` [EXTRACTED]
+- [[Purpose_12]] - `contains` [EXTRACTED]
+- [[Related Skills_5]] - `contains` [EXTRACTED]
+- [[Usage_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/__init__
+#graphify/document #graphify/EXTRACTED #community/Data_Validation_DATA-VAL

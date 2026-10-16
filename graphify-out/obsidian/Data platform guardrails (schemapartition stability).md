@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/CLAUDE.md"
 type: "concept"
-community: "port_manager.py"
+community: "FODL — Fluence Operational Data Lakehouse"
 location: "Section 7"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/port_managerpy
+  - community/FODL__Fluence_Operational_Data_Lakehouse
 ---
 
 # Data platform guardrails (schema/partition stability)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FODL — Fluence Operational Data Lakehouse]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/port_managerpy
+#graphify/concept #graphify/INFERRED #community/FODL__Fluence_Operational_Data_Lakehouse

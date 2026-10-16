@@ -1,21 +1,30 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/README.md"
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "test-container-runtime.sh"
-location: "L1"
+community: "Browser — Secure Browser Automation"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test-container-runtimesh
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Browser — Secure Browser Automation
 
 ## Connections
-- [[Purpose_78]] - `contains` [EXTRACTED]
-- [[README_83]] - `contains` [EXTRACTED]
-- [[Related Skills_84]] - `contains` [EXTRACTED]
-- [[SKILL_142]] - `contains` [EXTRACTED]
-- [[Usage_86]] - `contains` [EXTRACTED]
+- [[Approval Integration_2]] - `contains` [EXTRACTED]
+- [[Audit Logging_2]] - `contains` [EXTRACTED]
+- [[Best Practices_5]] - `contains` [EXTRACTED]
+- [[Core Security Principles_2]] - `contains` [EXTRACTED]
+- [[Example Apple ID Creation (Semi-Automated)_2]] - `contains` [EXTRACTED]
+- [[Limitations_3]] - `contains` [EXTRACTED]
+- [[Risk Levels_2]] - `contains` [EXTRACTED]
+- [[Security Architecture_2]] - `contains` [EXTRACTED]
+- [[Security Configuration_2]] - `contains` [EXTRACTED]
+- [[Security Guarantees_3]] - `contains` [EXTRACTED]
+- [[Troubleshooting_18]] - `contains` [EXTRACTED]
+- [[Usage_63]] - `contains` [EXTRACTED]
+- [[openclawskillsi-browserSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test-container-runtimesh
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

@@ -1,24 +1,24 @@
 ---
 source_file: "docker/config/openclaw/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Bear Notes"
+community: "Daedalus — Concept Illustrator"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bear_Notes
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Daedalus — Concept Illustrator
 
 ## Connections
-- [[Input Requirements_23]] - `contains` [EXTRACTED]
-- [[Output Format_29]] - `contains` [EXTRACTED]
-- [[Persona_18]] - `contains` [EXTRACTED]
-- [[Quality Checklist_21]] - `contains` [EXTRACTED]
-- [[Role_84]] - `contains` [EXTRACTED]
-- [[SKILL_142]] - `contains` [EXTRACTED]
-- [[SKILL_144]] - `contains` [EXTRACTED]
-- [[System Prompt_18]] - `contains` [EXTRACTED]
+- [[Input Requirements_25]] - `contains` [EXTRACTED]
+- [[Output Format_40]] - `contains` [EXTRACTED]
+- [[Persona_19]] - `contains` [EXTRACTED]
+- [[Quality Checklist_22]] - `contains` [EXTRACTED]
+- [[Role_95]] - `contains` [EXTRACTED]
+- [[System Prompt_19]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-daedalusSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bear_Notes
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

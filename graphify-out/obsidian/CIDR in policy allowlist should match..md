@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "EgressApprovalQueue"
+community: "_make_filter"
 location: "L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressApprovalQueue
+  - community/_make_filter
 ---
 
 # CIDR in policy allowlist should match.
 
 ## Connections
-- [[.test_allowed_cidr()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_allowed_cidr()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressApprovalQueue
+#graphify/rationale #graphify/EXTRACTED #community/_make_filter

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "DataExfilVolumeGuard"
+community: "lifespan.py"
 location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/DataExfilVolumeGuard
+  - community/lifespanpy
 ---
 
 # ContentThreatType
 
 ## Connections
-- [[Enum]] - `inherits` [EXTRACTED]
-- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
+- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]
 - [[TestMemoryLifecycleManager]] - `uses` [INFERRED]
@@ -22,4 +22,4 @@ tags:
 - [[memory_lifecycle.py]] - `contains` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/DataExfilVolumeGuard
+#graphify/code #graphify/INFERRED #community/lifespanpy

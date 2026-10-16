@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/reviews/phase-review-p0-2026-02-23.md"
+source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "AgentShroud Prerequisites"
-location: "L192"
+community: "Distributed OpenClaw Node Architecture — Raspberry Pi 4"
+location: "L652"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Prerequisites
+  - community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
 ---
 
 # Conclusion
 
 ## Connections
-- [[Phase Review P0 — Core Pipeline Wiring]] - `contains` [EXTRACTED]
+- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites
+#graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4

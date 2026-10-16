@@ -1,21 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cicd/README.md"
+source_file: "docker/config/hermes/skills/i-cicd/README.md"
 type: "document"
-community: "text_control_center.py / agentshroud_manager.py"
+community: "CI/CD Pipeline Advisor (README)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/text_control_centerpy_/_agentshroud_managerpy
+  - community/CI/CD_Pipeline_Advisor_README
 ---
 
 # CI/CD Pipeline Advisor (CICD)
 
 ## Connections
-- [[Purpose_80]] - `contains` [EXTRACTED]
-- [[README_85]] - `contains` [EXTRACTED]
-- [[Related Skills_86]] - `contains` [EXTRACTED]
-- [[SKILL_142]] - `contains` [EXTRACTED]
-- [[Usage_89]] - `contains` [EXTRACTED]
+- [[Purpose_190]] - `contains` [EXTRACTED]
+- [[Related Skills_119]] - `contains` [EXTRACTED]
+- [[Usage_132]] - `contains` [EXTRACTED]
+- [[hermesskillsi-cicdREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/text_control_centerpy_/_agentshroud_managerpy
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_README

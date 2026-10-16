@@ -1,13 +1,13 @@
 ---
 source_file: "docs/diagrams/images/diagram-07-data-flow.svg"
 type: "image"
-community: "i-devsecops SKILL (stub)"
+community: "Diagram 07: Data Flow"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/i-devsecops_SKILL_stub
+  - community/Diagram_07_Data_Flow
 ---
 
 # Diagram 07: Data Flow
 
-#graphify/image #graphify/EXTRACTED #community/i-devsecops_SKILL_stub
+#graphify/image #graphify/EXTRACTED #community/Diagram_07_Data_Flow

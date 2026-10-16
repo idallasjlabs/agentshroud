@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "TrustManager"
+community: "MiddlewareManager"
 location: "L74"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/MiddlewareManager
 ---
 
 # Create base agentshroud temp directory if it doesn't exist.
 
 ## Connections
-- [[._ensure_base_directory()]] - `rationale_for` [EXTRACTED]
+- [[dot-_ensure_base_directory()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

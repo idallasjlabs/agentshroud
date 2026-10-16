@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "rationale"
-community: "RBACConfig"
+community: "EnvelopeSigner"
 location: "L89"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBACConfig
+  - community/EnvelopeSigner
 ---
 
 # Convenience: sign a tool result as issuer='tool:<tool_name>'.
 
 ## Connections
-- [[.wrap_tool_result()]] - `rationale_for` [EXTRACTED]
+- [[dot-wrap_tool_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/EnvelopeSigner

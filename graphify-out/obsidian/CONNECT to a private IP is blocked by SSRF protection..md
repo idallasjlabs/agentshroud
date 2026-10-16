@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "rationale"
-community: "test_daily_cve_report.py"
+community: "WebProxy"
 location: "L167"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/WebProxy
 ---
 
 # CONNECT to a private IP is blocked by SSRF protection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ssrf_attempt_returns_403()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/rationale #graphify/EXTRACTED #community/WebProxy

@@ -1,18 +1,23 @@
 ---
-source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
-type: "document"
-community: "AgentShroud Changelog"
-location: "L43"
+source_file: "gateway/security/module_stats.py"
+type: "code"
+community: "ModuleStatsCollector"
+location: "L29"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Changelog
+  - community/ModuleStatsCollector
 ---
 
 # Decision
 
 ## Connections
-- [[ADR-001 Transparent Proxy vs Agent Modification]] - `contains` [EXTRACTED]
-- [[Implementation Status]] - `contains` [EXTRACTED]
+- [[dot-record()_1]] - `references` [EXTRACTED]
+- [[Enum_2]] - `inherits` [EXTRACTED]
+- [[TestEgressWiringEndToEnd]] - `uses` [INFERRED]
+- [[TestEnforcementWiring]] - `uses` [INFERRED]
+- [[module_stats.py]] - `contains` [EXTRACTED]
+- [[str_2]] - `inherits` [EXTRACTED]
+- [[test_module_stats.py]] - `imports` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Changelog
+#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector

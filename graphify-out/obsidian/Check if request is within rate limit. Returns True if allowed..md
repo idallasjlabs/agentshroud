@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "rationale"
-community: "FetchOutcome"
+community: "WebProxyConfig"
 location: "L104"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/WebProxyConfig
 ---
 
 # Check if request is within rate limit. Returns True if allowed.
 
 ## Connections
-- [[.check()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-check()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FetchOutcome
+#graphify/rationale #graphify/EXTRACTED #community/WebProxyConfig

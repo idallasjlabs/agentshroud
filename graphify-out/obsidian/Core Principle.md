@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sec/SKILL.md"
 type: "document"
-community: "Per-Agent Container Isolation Architecture"
+community: "Skill: Security Review (SEC)"
 location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Per-Agent_Container_Isolation_Architecture
+  - community/Skill_Security_Review_SEC
 ---
 
 # Core Principle
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Per-Agent_Container_Isolation_Architecture
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/testing/README.md"
+source_file: "docs/reference/TAILSCALE_COMMANDS.md"
 type: "document"
-community: "AWS Cloud Management & FinOps"
-location: "L14"
+community: "Tailscale Remote Access Setup"
+location: "L71"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps
+  - community/Tailscale_Remote_Access_Setup
 ---
 
 # Current Status
 
 ## Connections
-- [[Testing Documentation]] - `contains` [EXTRACTED]
+- [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps
+#graphify/document #graphify/EXTRACTED #community/Tailscale_Remote_Access_Setup

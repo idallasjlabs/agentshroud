@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/email_service.py"
 type: "rationale"
-community: "RateLimiter"
+community: "GatewayEmailService"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RateLimiter
+  - community/GatewayEmailService
 ---
 
 # Build the MIME message string (multipart/alternative).          For HTML mail th
 
 ## Connections
-- [[.build_message()]] - `rationale_for` [EXTRACTED]
+- [[dot-build_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RateLimiter
+#graphify/rationale #graphify/EXTRACTED #community/GatewayEmailService

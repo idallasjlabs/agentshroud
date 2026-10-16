@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/IMESSAGE_PERMISSION_FIX.md"
+source_file: "docs/data/README.md"
 type: "document"
-community: "check_command()"
-location: "L89"
+community: "03-data.md"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/check_command
+  - community/03-datamd
 ---
 
 # Current Status
 
 ## Connections
-- [[iMessage Permission Fix - Step by Step]] - `contains` [EXTRACTED]
+- [[Data Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/check_command
+#graphify/document #graphify/EXTRACTED #community/03-datamd

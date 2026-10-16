@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_config.py"
 type: "rationale"
-community: "TrustManager"
+community: "lifespan.py"
 location: "L98"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/lifespanpy
 ---
 
 # Combined memory security configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MemorySecurityConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

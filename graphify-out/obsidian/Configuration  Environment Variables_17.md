@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/engine.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
 type: "document"
-community: "test_subagent_governance.py"
-location: "L59"
+community: "egress_monitor.py"
+location: "L60"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_subagent_governancepy
+  - community/egress_monitorpy
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[engine.py_2]] - `contains` [EXTRACTED]
+- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_subagent_governancepy
+#graphify/document #graphify/EXTRACTED #community/egress_monitorpy

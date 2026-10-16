@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
 type: "document"
-community: "sunday-upgrade-apply.sh"
+community: "Skill: UX Expert (UX)"
 location: "L219"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/sunday-upgrade-applysh
+  - community/Skill_UX_Expert_UX
 ---
 
 # Data Density Rules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Dashboard UX_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/sunday-upgrade-applysh
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

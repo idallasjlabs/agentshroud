@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "rationale"
-community: "EgressFilterConfig"
+community: "upgrade"
 location: "L69"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/upgrade
 ---
 
 # Check the currently installed OpenClaw version.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check_current_version()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/rationale #graphify/EXTRACTED #community/upgrade

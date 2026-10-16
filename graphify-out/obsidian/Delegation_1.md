@@ -1,17 +1,33 @@
 ---
-source_file: "docs/planning/v0.9/v0.9.0-testing-guide.md"
-type: "document"
-community: "Security Module Inventory"
-location: "L218"
+source_file: "gateway/security/delegation.py"
+type: "code"
+community: "DelegationManager"
+location: "L59"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Module_Inventory
+  - community/DelegationManager
 ---
 
 # Delegation
 
 ## Connections
-- [[2. Telegram Command Testing]] - `contains` [EXTRACTED]
+- [[dot-delegate()]] - `references` [EXTRACTED]
+- [[dot-from_dict()_11]] - `method` [EXTRACTED]
+- [[dot-get_active_delegations()]] - `references` [EXTRACTED]
+- [[dot-get_delegations_for_user()]] - `references` [EXTRACTED]
+- [[dot-is_active()]] - `method` [EXTRACTED]
+- [[dot-to_dict()_16]] - `method` [EXTRACTED]
+- [[A single time-bounded privilege delegation record.]] - `rationale_for` [EXTRACTED]
+- [[DelegationManager]] - `uses` [INFERRED]
+- [[TestAccessControl_2]] - `uses` [INFERRED]
+- [[TestDelegateBasic]] - `uses` [INFERRED]
+- [[TestIsDelegated]] - `uses` [INFERRED]
+- [[TestListAndCleanup]] - `uses` [INFERRED]
+- [[TestRedelegation]] - `uses` [INFERRED]
+- [[TestRevoke]] - `uses` [INFERRED]
+- [[TestSerialization_2]] - `uses` [INFERRED]
+- [[delegation.py]] - `contains` [EXTRACTED]
+- [[test_delegation.py]] - `imports` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Module_Inventory
+#graphify/code #graphify/EXTRACTED #community/DelegationManager

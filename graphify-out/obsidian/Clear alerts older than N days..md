@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "falco_monitor.py"
+community: "lifespan.py"
 location: "L331"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/falco_monitorpy
+  - community/lifespanpy
 ---
 
 # Clear alerts older than N days.
 
 ## Connections
-- [[.clear_old_alerts()]] - `rationale_for` [EXTRACTED]
+- [[dot-clear_old_alerts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/falco_monitorpy
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

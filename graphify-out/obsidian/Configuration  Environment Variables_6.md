@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
 type: "document"
-community: "TestWebAPI"
-location: "L72"
+community: "Function Details"
+location: "L74"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestWebAPI
+  - community/Function_Details
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[mcp_proxy.py_2]] - `contains` [EXTRACTED]
+- [[subagent_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestWebAPI
+#graphify/document #graphify/EXTRACTED #community/Function_Details

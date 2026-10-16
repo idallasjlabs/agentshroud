@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/agentshroud-redteam/SKILL.md"
+source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
 type: "document"
-community: ".process_tool_call()"
-location: "L376"
+community: "AgentShroud Blue Team Security Auditor"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/process_tool_call
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # Critical Rules
 
 ## Connections
-- [[AgentShroud Red Team Adversarial Tester_3]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/process_tool_call
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

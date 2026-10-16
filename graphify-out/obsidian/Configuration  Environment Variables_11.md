@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md"
 type: "document"
-community: "_mock_dir_with_files()"
-location: "L67"
+community: "mcp_inspector.py"
+location: "L71"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_mock_dir_with_files
+  - community/mcp_inspectorpy
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
+- [[mcp_inspector.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_mock_dir_with_files
+#graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy

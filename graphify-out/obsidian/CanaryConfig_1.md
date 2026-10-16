@@ -1,24 +1,23 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "AgentShroud™ CVE Mitigation Matrix"
-location: "L47"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_CVE_Mitigation_Matrix
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # CanaryConfig
 
 ## Connections
-- [[.__init__()_104]] - `references` [EXTRACTED]
-- [[.setup_method()_19]] - `calls` [EXTRACTED]
-- [[.test_incident_logging()]] - `calls` [EXTRACTED]
-- [[.test_partial_canary_match_handling()]] - `calls` [EXTRACTED]
-- [[Configuration for the Output Canary System.]] - `rationale_for` [EXTRACTED]
-- [[TestOutputCanary]] - `uses` [INFERRED]
-- [[output_canary.py]] - `contains` [EXTRACTED]
-- [[test_output_canary.py]] - `imports` [EXTRACTED]
+- [[dot-__init__()_114]] - `references` [EXTRACTED]
+- [[dot-test_custom_config()_2]] - `calls` [EXTRACTED]
+- [[dot-test_no_canaries()]] - `calls` [EXTRACTED]
+- [[dot-test_scan_response_no_block_when_block_disabled()]] - `calls` [EXTRACTED]
+- [[TestCanaryTripwire]] - `uses` [INFERRED]
+- [[canary_tripwire.py]] - `contains` [EXTRACTED]
+- [[test_canary_tripwire.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix
+#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

@@ -1,18 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-003-two-network-container-isolation.md"
+source_file: "docs/adr/ADR-001-proxy-layer-inversion.md"
 type: "document"
-community: "Dockerfile — Bot (OpenClaw)"
-location: "L14"
+community: "Enterprise Governance Proxy System (invention)"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dockerfile__Bot_OpenClaw
+  - community/Enterprise_Governance_Proxy_System_invention
 ---
 
 # Decision
 
 ## Connections
-- [[ADR-003 Two-Network Container Isolation]] - `contains` [EXTRACTED]
-- [[Network Configuration]] - `contains` [EXTRACTED]
+- [[ADR-001-proxy-layer-inversion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/Enterprise_Governance_Proxy_System_invention

@@ -1,26 +1,41 @@
 ---
-source_file: "gateway/tests/test_differential_pii_detector.py"
+source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L35"
+community: "test_a2a_proxy.py"
+location: "L259"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - graphify/INFERRED
+  - community/test_a2a_proxypy
 ---
 
 # DifferentialPIIConfig
 
 ## Connections
-- [[.test_cannot_set_tool_floor_above_prompt_floor()]] - `calls` [EXTRACTED]
-- [[.test_cannot_set_tool_floor_below_minimum()]] - `calls` [EXTRACTED]
-- [[.test_redact_on_hit_false_preserves_original()]] - `calls` [EXTRACTED]
-- [[.test_tool_specific_floor_override()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_52]] - `references` [EXTRACTED]
+- [[dot-__post_init__()_9]] - `method` [EXTRACTED]
+- [[A2APolicyEngine_3]] - `uses` [INFERRED]
+- [[A2AProxy_1]] - `uses` [INFERRED]
+- [[Configuration for DifferentialPIIDetector.      Attributes         tool_result_]] - `rationale_for` [EXTRACTED]
 - [[DifferentialPIIConfig]] - `uses` [INFERRED]
 - [[DifferentialPIIDetector]] - `uses` [INFERRED]
-- [[PIIHit]] - `uses` [INFERRED]
-- [[PIIHitSeverity]] - `uses` [INFERRED]
-- [[default_config()]] - `references` [EXTRACTED]
-- [[detector()]] - `references` [EXTRACTED]
+- [[TestAdversarialFormattingCaught]] - `uses` [INFERRED]
+- [[TestAsymmetricFloor]] - `uses` [INFERRED]
+- [[TestDeterministicPresidioInit]] - `uses` [INFERRED]
+- [[TestDifferentialPIIDetectorConstruction]] - `uses` [INFERRED]
+- [[TestPerToolConfiguration]] - `uses` [INFERRED]
+- [[TestPresidioPathContract]] - `uses` [INFERRED]
+- [[TestRedaction]] - `uses` [INFERRED]
+- [[TestStandardPIIAlwaysCaught]] - `uses` [INFERRED]
+- [[TestToolResultPIIReport]] - `uses` [INFERRED]
+- [[_Event]] - `uses` [INFERRED]
+- [[_FakeRecognizerResult]] - `uses` [INFERRED]
+- [[_StubAuditStore]] - `uses` [INFERRED]
+- [[_StubForwarder_2]] - `uses` [INFERRED]
+- [[differential_pii_detector.py]] - `contains` [EXTRACTED]
+- [[test_a2a_proxy.py]] - `imports` [EXTRACTED]
+- [[test_differential_pii_detector.py]] - `imports` [EXTRACTED]
+- [[test_process_inbound_request_binary_part_is_forwarded_unscanned_and_flagged()]] - `calls` [EXTRACTED]
+- [[test_process_inbound_request_pii_in_message_is_redacted_before_forwarding()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/INFERRED #community/test_a2a_proxypy

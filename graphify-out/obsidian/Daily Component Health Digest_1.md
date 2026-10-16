@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/daily-component-health-digest.txt"
 type: "document"
-community: "xTaskGetTickCount()"
+community: "Trivy (vulnerability scanner)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/xTaskGetTickCount
+  - community/Trivy_vulnerability_scanner
 ---
 
 # Daily Component Health Digest
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Trivy (vulnerability scanner)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/xTaskGetTickCount
+#graphify/document #graphify/EXTRACTED #community/Trivy_vulnerability_scanner

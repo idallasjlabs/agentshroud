@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
+source_file: ".agents/skills/i-ui/SKILL.md"
 type: "document"
-community: "_age()"
-location: "L297"
+community: "Skill: UI Expert (UI)"
+location: "L390"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/_age
+  - community/Skill_UI_Expert_UI
 ---
 
 # Dependencies
 
 ## Connections
-- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_1]] - `contains` [EXTRACTED]
+- [[Skill UI Expert (UI)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/_age
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

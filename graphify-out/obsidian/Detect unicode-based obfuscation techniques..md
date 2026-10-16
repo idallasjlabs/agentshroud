@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "InjectionAction"
 location: "L224"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/InjectionAction
 ---
 
 # Detect unicode-based obfuscation techniques.
 
 ## Connections
-- [[._detect_unicode_obfuscation()]] - `rationale_for` [EXTRACTED]
+- [[dot-_detect_unicode_obfuscation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/InjectionAction

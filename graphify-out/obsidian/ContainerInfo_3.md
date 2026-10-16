@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/runtime/podman_engine.py"
+source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "GatewayEmailService"
-location: "L127"
+community: "AppleContainerEngine"
+location: "L121"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/GatewayEmailService
+  - community/AppleContainerEngine
 ---
 
 # ContainerInfo
 
 ## Connections
-- [[.ps()_3]] - `references` [EXTRACTED]
-- [[ContainerEngine_2]] - `uses` [INFERRED]
-- [[ContainerInfo_2]] - `uses` [INFERRED]
+- [[dot-ps()_3]] - `references` [EXTRACTED]
+- [[ContainerEngine]] - `uses` [INFERRED]
+- [[ContainerInfo]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/GatewayEmailService
+#graphify/code #graphify/INFERRED #community/AppleContainerEngine

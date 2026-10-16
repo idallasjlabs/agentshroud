@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "Action"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/Action
 ---
 
 # Build the permission matrix for all roles.
 
 ## Connections
-- [[._build_permission_matrix()]] - `rationale_for` [EXTRACTED]
+- [[dot-_build_permission_matrix()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/Action

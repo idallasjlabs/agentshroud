@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "rationale"
-community: "LLMProxy"
+community: "FalcoAlertWatcher"
 location: "L159"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/FalcoAlertWatcher
 ---
 
 # Categorize alerts by severity.      Args:         alerts: List of parsed alerts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[categorize_alerts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LLMProxy
+#graphify/rationale #graphify/EXTRACTED #community/FalcoAlertWatcher

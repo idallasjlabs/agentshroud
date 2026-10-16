@@ -1,11 +1,11 @@
 ---
 source_file: "docs/operations/linux.md"
 type: "document"
-community: "middleware.py"
+community: "AgentShroud Gateway (Trust Zone 1): holds 1Password service account, enforces policy, signs ledger entries, controls approval queue, HMAC/JWT validation"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/AgentShroud_Gateway_Trust_Zone_1_holds_1Password_service_account_enforces_policy_signs_ledger_entries_controls_approval_queue_HMAC/JWT_validation
 ---
 
 # Deploying AgentShroud on Linux (docs/operations/linux.md)
@@ -17,4 +17,4 @@ tags:
 - [[dockersecretssetup-secrets.sh (secret bootstrap step shared by Linux and macOS install guides)]] - `conceptually_related_to` [EXTRACTED]
 - [[systemd service etcsystemdsystemagentshroud.service for auto-start]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/middlewarepy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Gateway_Trust_Zone_1_holds_1Password_service_account_enforces_policy_signs_ledger_entries_controls_approval_queue_HMAC/JWT_validation

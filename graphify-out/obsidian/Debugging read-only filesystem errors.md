@@ -1,12 +1,12 @@
 ---
 source_file: "examples/docker-commands.md"
 type: "document"
-community: "Red Team Assessment v1.2.0"
+community: "Docker Commands Reference"
 location: "L186"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Red_Team_Assessment_v120
+  - community/Docker_Commands_Reference
 ---
 
 # Debugging read-only filesystem errors
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Docker Commands Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Red_Team_Assessment_v120
+#graphify/document #graphify/EXTRACTED #community/Docker_Commands_Reference

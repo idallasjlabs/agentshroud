@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "GroupApprovalRouter"
+community: "AlertDispatcher"
 location: "L24"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/AlertDispatcher
 ---
 
 # Detected environment variable leakage.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EnvironmentLeakage]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

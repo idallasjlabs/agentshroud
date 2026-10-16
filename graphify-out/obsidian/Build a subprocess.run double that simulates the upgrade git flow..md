@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "rationale"
-community: "test_redteam_probes.py"
+community: "ModeRequest"
 location: "L666"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_redteam_probespy
+  - community/ModeRequest
 ---
 
 # Build a subprocess.run double that simulates the upgrade git flow.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_gitless_run()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_redteam_probespy
+#graphify/rationale #graphify/EXTRACTED #community/ModeRequest

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
 type: "document"
-community: "TestNoResponseGuarantee"
-location: "L64"
+community: "sidecar.py"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestNoResponseGuarantee
+  - community/sidecarpy
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[trivy_report.py_2]] - `contains` [EXTRACTED]
+- [[sidecar.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestNoResponseGuarantee
+#graphify/document #graphify/EXTRACTED #community/sidecarpy

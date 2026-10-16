@@ -1,20 +1,19 @@
 ---
-source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
+source_file: "docs/architecture/adr/ADR-007-zero-config-security.md"
 type: "document"
-community: "Enterprise Governance Proxy System (invention)"
+community: "ADR-007: Zero-Config Security (docker-compose up = fully secured)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Enterprise_Governance_Proxy_System_invention
+  - community/ADR-007_Zero-Config_Security_docker-compose_up__fully_secured
 ---
 
 # Decision
 
 ## Connections
-- [[ADR-008-progressive-trust-levels]] - `contains` [EXTRACTED]
-- [[Progressive Controls]] - `contains` [EXTRACTED]
-- [[Trust Calculation]] - `contains` [EXTRACTED]
-- [[Trust Levels (0-4)]] - `contains` [EXTRACTED]
+- [[ADR-007 Zero-Config Security (docker-compose up = fully secured)]] - `contains` [EXTRACTED]
+- [[Auto-Configuration Features]] - `contains` [EXTRACTED]
+- [[Configuration Hierarchy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Enterprise_Governance_Proxy_System_invention
+#graphify/document #graphify/EXTRACTED #community/ADR-007_Zero-Config_Security_docker-compose_up__fully_secured

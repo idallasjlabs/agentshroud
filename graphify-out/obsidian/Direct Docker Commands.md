@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: ".agents/skills/i-tw/SKILL.md"
+community: "OpenClaw Management Scripts"
 location: "L191"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-tw/SKILLmd
+  - community/OpenClaw_Management_Scripts
 ---
 
 # Direct Docker Commands
@@ -17,4 +17,4 @@ tags:
 - [[OpenClaw CLI]] - `contains` [EXTRACTED]
 - [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts

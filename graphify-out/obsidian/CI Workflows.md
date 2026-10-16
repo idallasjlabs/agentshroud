@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/ci-workflows.md"
 type: "document"
-community: "TestFileSandbox"
+community: "All Dependencies.md"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestFileSandbox
+  - community/All_Dependenciesmd
 ---
 
 # CI Workflows
@@ -15,8 +15,8 @@ tags:
 - [[Coverage Threshold]] - `contains` [EXTRACTED]
 - [[Expected Pipeline (Inferred)]] - `contains` [EXTRACTED]
 - [[Key Test Command]] - `contains` [EXTRACTED]
-- [[Purpose_177]] - `contains` [EXTRACTED]
+- [[Purpose_65]] - `contains` [EXTRACTED]
 - [[Related Notes_20]] - `contains` [EXTRACTED]
 - [[ci-workflows]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestFileSandbox
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

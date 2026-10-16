@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "FileSandbox"
+community: "TelegramAPIProxy"
 location: "L1351"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/TelegramAPIProxy
 ---
 
 # Detect collaborator requests using disallowed URL schemes.
 
 ## Connections
-- [[._looks_like_unsafe_scheme_request()]] - `rationale_for` [EXTRACTED]
+- [[dot-_looks_like_unsafe_scheme_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FileSandbox
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

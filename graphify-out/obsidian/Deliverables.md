@@ -1,20 +1,17 @@
 ---
-source_file: ".agents/skills/i-aws/SKILL.md"
+source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "gen.py"
-location: "L191"
+community: "7. Pi-hole DNS Security Layer (Built-In)"
+location: "L300"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/genpy
+  - community/7_Pi-hole_DNS_Security_Layer_Built-In
 ---
 
 # Deliverables
 
 ## Connections
-- [[AWS Cloud Management & FinOps Agent_2]] - `contains` [EXTRACTED]
-- [[Reports (`.reports`)]] - `contains` [EXTRACTED]
-- [[Script Templates]] - `contains` [EXTRACTED]
-- [[Scripts (`.scripts`)]] - `contains` [EXTRACTED]
+- [[7. Pi-hole DNS Security Layer (Built-In)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/genpy
+#graphify/document #graphify/EXTRACTED #community/7_Pi-hole_DNS_Security_Layer_Built-In

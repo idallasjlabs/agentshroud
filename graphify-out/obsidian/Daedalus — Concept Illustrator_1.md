@@ -1,24 +1,21 @@
 ---
-source_file: ".agents/skills/i-daedalus/SKILL.md"
+source_file: ".agents/skills/i-daedalus/README.md"
 type: "document"
-community: "ADR-003: Two-Network Container Isolation"
-location: "L6"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-003_Two-Network_Container_Isolation
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Daedalus — Concept Illustrator
 
 ## Connections
-- [[Input Requirements_3]] - `contains` [EXTRACTED]
-- [[Output Format_3]] - `contains` [EXTRACTED]
-- [[Persona_2]] - `contains` [EXTRACTED]
-- [[Quality Checklist_3]] - `contains` [EXTRACTED]
-- [[Role_11]] - `contains` [EXTRACTED]
-- [[SKILL_15]] - `contains` [EXTRACTED]
-- [[SKILL_17]] - `contains` [EXTRACTED]
-- [[System Prompt_2]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-daedalusREADME]] - `contains` [EXTRACTED]
+- [[Purpose_124]] - `contains` [EXTRACTED]
+- [[Related Skills_96]] - `contains` [EXTRACTED]
+- [[Usage_104]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-003_Two-Network_Container_Isolation
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

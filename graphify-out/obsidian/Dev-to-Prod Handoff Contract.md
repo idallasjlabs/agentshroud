@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "concept"
-community: "OutputSchemaEnforcer"
+community: "sunday-upgrade-apply.sh"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/OutputSchemaEnforcer
+  - community/sunday-upgrade-applysh
 ---
 
 # Dev-to-Prod Handoff Contract
@@ -14,8 +14,6 @@ tags:
 - [[Sunday Upgrade Report 2026-08-30 (final)]] - `references` [EXTRACTED]
 - [[Sunday Upgrade Report 2026-09-06 (prod read-only, pre-crisis)]] - `references` [EXTRACTED]
 - [[Sunday Upgrade Report 2026-09-06 (prod, disk-exhaustion incident)]] - `references` [EXTRACTED]
-- [[scriptssunday-upgrade-apply.sh]] - `conceptually_related_to` [EXTRACTED]
-- [[sunday-upgrade]] - `references` [EXTRACTED]
 - [[write_handoff()]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/OutputSchemaEnforcer
+#graphify/concept #graphify/EXTRACTED #community/sunday-upgrade-applysh

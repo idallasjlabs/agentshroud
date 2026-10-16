@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/daily-operations.md"
 type: "document"
-community: "canary.py"
+community: "Morning Checklist (5 minutes)"
 location: "L105"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/canarypy
+  - community/Morning_Checklist_5_minutes
 ---
 
 # Dashboard Monitoring
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Daily Operations Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/canarypy
+#graphify/document #graphify/EXTRACTED #community/Morning_Checklist_5_minutes

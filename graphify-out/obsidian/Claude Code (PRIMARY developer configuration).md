@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/AI_TOOLS_CONFIGURATION_GUIDE.md"
 type: "concept"
-community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+community: "awslabs.aws-api-mcp-server configuration (--readonly)"
 location: "Section 1"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR
+  - community/awslabsaws-api-mcp-server_configuration_--readonly
 ---
 
 # Claude Code (PRIMARY developer configuration)
@@ -17,4 +17,4 @@ tags:
 - [[Warn-first hook strategy (PreToolUsePostToolUse)]] - `references` [EXTRACTED]
 - [[awslabs.aws-api-mcp-server configuration (--readonly)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR
+#graphify/concept #graphify/EXTRACTED #community/awslabsaws-api-mcp-server_configuration_--readonly

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "rbac_config.py"
+community: "ResourceGuard"
 location: "L412"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/rbac_configpy
+  - community/ResourceGuard
 ---
 
 # Clean up temporary files for an agent.
 
 ## Connections
-- [[.cleanup_temp_files()]] - `rationale_for` [EXTRACTED]
+- [[dot-cleanup_temp_files()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/rbac_configpy
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

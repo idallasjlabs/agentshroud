@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "ModuleStatsCollector"
+community: "TestMiddlewareSessionEnforcement"
 location: "L351"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/TestMiddlewareSessionEnforcement
 ---
 
 # Create a temporary workspace.
 
 ## Connections
-- [[.temp_workspace()_2]] - `rationale_for` [EXTRACTED]
-- [[.temp_workspace()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-temp_workspace()]] - `rationale_for` [EXTRACTED]
+- [[dot-temp_workspace()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/rationale #graphify/EXTRACTED #community/TestMiddlewareSessionEnforcement

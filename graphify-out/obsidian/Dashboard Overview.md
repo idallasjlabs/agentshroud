@@ -1,12 +1,12 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM)"
+community: "AgentShroud User Guide"
 location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM
+  - community/AgentShroud_User_Guide
 ---
 
 # Dashboard Overview
@@ -16,4 +16,4 @@ tags:
 - [[Reading the Audit Trail]] - `contains` [EXTRACTED]
 - [[What You'll See]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_User_Guide

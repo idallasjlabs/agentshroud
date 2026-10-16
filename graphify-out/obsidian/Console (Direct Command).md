@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-POLICY-FINAL.md"
 type: "document"
-community: "TestLooksLikeSafeCollaboratorInfoQuery"
+community: "AgentShroud Security Policy - Final Decision"
 location: "L65"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestLooksLikeSafeCollaboratorInfoQuery
+  - community/AgentShroud_Security_Policy_-_Final_Decision
 ---
 
 # Console (Direct Command)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[✅ How to Access Credentials]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestLooksLikeSafeCollaboratorInfoQuery
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Policy_-_Final_Decision

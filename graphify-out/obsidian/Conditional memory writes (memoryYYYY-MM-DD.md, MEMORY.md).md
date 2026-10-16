@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "concept"
-community: "openai-whisper-api/SKILL.md"
+community: "OpenClaw Host Hardening"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/openai-whisper-api/SKILLmd
+  - community/OpenClaw_Host_Hardening
 ---
 
 # Conditional memory writes (memory/YYYY-MM-DD.md, MEMORY.md)
 
 ## Connections
-- [[SKILL_212]] - `references` [EXTRACTED]
+- [[healthcheckSKILL]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/openai-whisper-api/SKILLmd
+#graphify/concept #graphify/EXTRACTED #community/OpenClaw_Host_Hardening

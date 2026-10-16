@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "voice_task"
+community: "ResourceGuard"
 location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/voice_task
+  - community/ResourceGuard
 ---
 
 # Configuration for resource limits.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ResourceLimits]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/voice_task
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

@@ -1,17 +1,18 @@
 ---
-source_file: "CHANGELOG.md"
+source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "WebProxy"
-location: "L708"
+community: "SecureBrowser Security Policies"
+location: "L269"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/SecureBrowser_Security_Policies
 ---
 
 # Compliance
 
 ## Connections
-- [[1.0.0 — featv1.0.0 — Fortress (2026-03-31)]] - `contains` [EXTRACTED]
+- [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
+- [[Standards Alignment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/WebProxy
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Security_Policies

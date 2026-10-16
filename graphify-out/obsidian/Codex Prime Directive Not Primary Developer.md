@@ -1,11 +1,11 @@
 ---
 source_file: "AGENTS.md"
 type: "rationale"
-community: "start-agentshroud.sh"
+community: "AgentShroud™ Communication Templates"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/start-agentshroudsh
+  - community/AgentShroud_Communication_Templates
 ---
 
 # Codex Prime Directive: Not Primary Developer
@@ -14,4 +14,4 @@ tags:
 - [[AGENTS.md — Codex CLI Guidance]] - `references` [EXTRACTED]
 - [[Claude Code — Primary development agent]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/start-agentshroudsh
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Communication_Templates

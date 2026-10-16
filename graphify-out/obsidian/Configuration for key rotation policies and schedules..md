@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "rationale"
-community: "OpenClaw Bot Container"
+community: "KeyRotationConfig"
 location: "L53"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_Container
+  - community/KeyRotationConfig
 ---
 
 # Configuration for key rotation policies and schedules.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[KeyRotationConfig_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OpenClaw_Bot_Container
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationConfig

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/03-data.md"
 type: "concept"
-community: "version_routes.py"
+community: "03-data.md"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/version_routespy
+  - community/03-datamd
 ---
 
 # Data Lineage Diagram
@@ -15,4 +15,4 @@ tags:
 - [[Data Flow Diagram]] - `shares_data_with` [INFERRED]
 - [[Entity Relationship Diagram (ledger, approval_items)]] - `shares_data_with` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/version_routespy
+#graphify/concept #graphify/INFERRED #community/03-datamd

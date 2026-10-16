@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/validation-runner.agent.md"
+source_file: ".github/agents/test-augmenter.agent.md"
 type: "document"
-community: "SOCWebSocketHandler"
-location: "L191"
+community: "Test Augmentation Specialist"
+location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - community/Test_Augmentation_Specialist
 ---
 
 # Definition of Done
 
 ## Connections
-- [[Validation Runner Specialist]] - `contains` [EXTRACTED]
+- [[Test Augmentation Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/document #graphify/EXTRACTED #community/Test_Augmentation_Specialist

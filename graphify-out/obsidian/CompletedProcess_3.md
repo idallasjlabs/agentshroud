@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/tests/test_skill_guard.py"
+source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "Skill: Data Validation (DATA-VAL)"
-location: "L458"
+community: "ContainerEngine"
+location: "L36"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Skill_Data_Validation_DATA-VAL
+  - graphify/EXTRACTED
+  - community/ContainerEngine
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_2]] - `uses` [INFERRED]
-- [[Severity]] - `uses` [INFERRED]
-- [[SkillGuard]] - `uses` [INFERRED]
-- [[SkillScanError]] - `uses` [INFERRED]
-- [[_run_scan_cli()]] - `references` [EXTRACTED]
+- [[dot-_run()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Skill_Data_Validation_DATA-VAL
+#graphify/code #graphify/EXTRACTED #community/ContainerEngine

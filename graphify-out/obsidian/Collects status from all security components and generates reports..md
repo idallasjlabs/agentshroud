@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/dashboard/proxy_status.py"
 type: "rationale"
-community: "test_bots_ssh_exec_wrapper.py"
+community: "ProxyDashboard"
 location: "L81"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_bots_ssh_exec_wrapperpy
+  - community/ProxyDashboard
 ---
 
 # Collects status from all security components and generates reports.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ProxyDashboard]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy
+#graphify/rationale #graphify/EXTRACTED #community/ProxyDashboard

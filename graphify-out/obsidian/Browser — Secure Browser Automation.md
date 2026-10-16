@@ -1,20 +1,20 @@
 ---
 source_file: ".agents/skills/i-browser/README.md"
 type: "document"
-community: "Available MCP Servers"
+community: "Browser — Secure Browser Automation"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Available_MCP_Servers
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Browser — Secure Browser Automation
 
 ## Connections
-- [[Purpose_4]] - `contains` [EXTRACTED]
-- [[README_4]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-browserREADME]] - `contains` [EXTRACTED]
+- [[Purpose_11]] - `contains` [EXTRACTED]
 - [[Related Skills_4]] - `contains` [EXTRACTED]
-- [[Usage_5]] - `contains` [EXTRACTED]
+- [[Usage_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/JOBS-REFERENCE.md"
 type: "concept"
-community: "run_test()"
+community: "Report Delivery Format Instructions"
 location: "L100-L109"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/run_test
+  - community/Report_Delivery_Format_Instructions
 ---
 
 # CronSessionLifecycleClaimError (stale isolated-session claim leases)
@@ -15,4 +15,4 @@ tags:
 - [[Collaborator Report (Morning) Cron Prompt]] - `references` [EXTRACTED]
 - [[Session Cleanup Reaper (30-min openclaw sessions cleanup --fix-missing)]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/run_test
+#graphify/concept #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions

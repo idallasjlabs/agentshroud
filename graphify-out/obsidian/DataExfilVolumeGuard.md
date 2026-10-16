@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "code"
-community: "AgentShroud Access Control Matrix"
+community: "DataExfilVolumeGuard"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Access_Control_Matrix
+  - community/DataExfilVolumeGuard
 ---
 
 # DataExfilVolumeGuard
 
 ## Connections
-- [[.__init__()_69]] - `method` [EXTRACTED]
-- [[._size()]] - `method` [EXTRACTED]
-- [[.get_stats()_15]] - `method` [EXTRACTED]
-- [[.observe()]] - `method` [EXTRACTED]
-- [[.reset_session()]] - `method` [EXTRACTED]
+- [[dot-__init__()_66]] - `method` [EXTRACTED]
+- [[dot-_size()]] - `method` [EXTRACTED]
+- [[dot-get_stats()_7]] - `method` [EXTRACTED]
+- [[dot-observe()]] - `method` [EXTRACTED]
+- [[dot-reset_session()]] - `method` [EXTRACTED]
 - [[Cumulative + adaptive outbound-volume anomaly detector, per session.]] - `rationale_for` [EXTRACTED]
-- [[EgressFilter_1]] - `conceptually_related_to` [EXTRACTED]
+- [[EgressFilter_2]] - `conceptually_related_to` [EXTRACTED]
 - [[data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_accepts_str_and_bytes()]] - `calls` [EXTRACTED]
 - [[test_adaptive_floor_prevents_noise_blocks()]] - `calls` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[test_single_response_over_cap_blocks()]] - `calls` [EXTRACTED]
 - [[test_under_single_cap_allows()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix
+#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

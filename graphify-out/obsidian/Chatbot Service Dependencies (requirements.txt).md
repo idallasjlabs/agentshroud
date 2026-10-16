@@ -1,13 +1,13 @@
 ---
 source_file: "chatbot/requirements.txt"
 type: "code"
-community: "SCRUM-154 Fix: submit()/decide() held the approv"
+community: "Chatbot Service Dependencies (requirements.txt)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SCRUM-154_Fix_submit/decide_held_the_approv
+  - community/Chatbot_Service_Dependencies_requirementstxt
 ---
 
 # Chatbot Service Dependencies (requirements.txt)
 
-#graphify/code #graphify/EXTRACTED #community/SCRUM-154_Fix_submit/decide_held_the_approv
+#graphify/code #graphify/EXTRACTED #community/Chatbot_Service_Dependencies_requirementstxt

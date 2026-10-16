@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/DEVELOPER.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
+community: "DEVELOPER.md — Development Context for AgentShroud"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/DEVELOPERmd__Development_Context_for_AgentShroud
 ---
 
 # DEVELOPER.md — Development Context for AgentShroud
@@ -25,4 +25,4 @@ tags:
 - [[9. Skill Lookup]] - `contains` [EXTRACTED]
 - [[DEVELOPER]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/DEVELOPERmd__Development_Context_for_AgentShroud

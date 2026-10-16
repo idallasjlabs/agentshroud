@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/competitive-analysis-reports-archive.md"
 type: "document"
-community: "test_dashboard_endpoints.py"
+community: "system-requirements.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/system-requirementsmd
 ---
 
 # Competitive Analysis Reports Archive
@@ -16,4 +16,4 @@ tags:
 - [[Reports]] - `contains` [EXTRACTED]
 - [[competitive-analysis-reports-archive]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/document #graphify/EXTRACTED #community/system-requirementsmd

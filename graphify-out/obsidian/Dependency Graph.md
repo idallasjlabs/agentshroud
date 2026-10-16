@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
 type: "document"
-community: "ModeRequest"
+community: "ingest_api/models.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/ingest_api/modelspy
 ---
 
 # Dependency Graph.md
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Dependency Graph_1]] - `contains` [EXTRACTED]
 - [[Gateway Startup Initialization Order]] - `conceptually_related_to` [EXTRACTED]
-- [[README_128]] - `conceptually_related_to` [AMBIGUOUS]
+- [[gatewayREADME]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/document #graphify/EXTRACTED #community/ModeRequest
+#graphify/document #graphify/EXTRACTED #community/ingest_api/modelspy

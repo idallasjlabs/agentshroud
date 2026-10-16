@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Gateway Management/Control-Plane API (v1.3.0)"
+community: "iCloud Services"
 location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Management/Control-Plane_API_v130
+  - community/iCloud_Services
 ---
 
 # Contact Operations
@@ -18,4 +18,4 @@ tags:
 - [[Update Contact_1]] - `contains` [EXTRACTED]
 - [[iCloud Services_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Management/Control-Plane_API_v130
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

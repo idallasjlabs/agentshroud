@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "WebhookReceiver"
-location: "L36"
+community: "Severity"
+location: "L458"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - graphify/INFERRED
+  - community/Severity
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[._run()]] - `references` [EXTRACTED]
+- [[Recommendation]] - `uses` [INFERRED]
+- [[ScanResult_4]] - `uses` [INFERRED]
+- [[Severity]] - `uses` [INFERRED]
+- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[SkillScanError]] - `uses` [INFERRED]
+- [[_run_scan_cli()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/code #graphify/INFERRED #community/Severity

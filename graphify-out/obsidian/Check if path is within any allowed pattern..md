@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "rationale"
-community: "Enum"
+community: "MiddlewareManager"
 location: "L349"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enum
+  - community/MiddlewareManager
 ---
 
 # Check if path is within any allowed pattern.
 
 ## Connections
-- [[._matches_allowed_paths()]] - `rationale_for` [EXTRACTED]
+- [[dot-_matches_allowed_paths()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enum
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "ResourceGuard"
+community: "ToolResultSanitizer"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/ToolResultSanitizer
 ---
 
 # Default PII configuration for tests
 
 ## Connections
-- [[.default_config()]] - `rationale_for` [EXTRACTED]
+- [[dot-default_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

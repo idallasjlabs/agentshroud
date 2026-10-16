@@ -1,19 +1,20 @@
 ---
-source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
+source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
 type: "document"
-community: "Skill: Project Management (PM)"
-location: "L28"
+community: "ADR-008-progressive-trust-levels.md"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM
+  - community/ADR-008-progressive-trust-levelsmd
 ---
 
 # Decision
 
 ## Connections
-- [[ADR-009 Enforce-by-Default Security Philosophy]] - `contains` [EXTRACTED]
-- [[Configuration_5]] - `contains` [EXTRACTED]
-- [[Policy Table]] - `contains` [EXTRACTED]
+- [[ADR-008-progressive-trust-levels]] - `contains` [EXTRACTED]
+- [[Progressive Controls]] - `contains` [EXTRACTED]
+- [[Trust Calculation]] - `contains` [EXTRACTED]
+- [[Trust Levels (0-4)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM
+#graphify/document #graphify/EXTRACTED #community/ADR-008-progressive-trust-levelsmd

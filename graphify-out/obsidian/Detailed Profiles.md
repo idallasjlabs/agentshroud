@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-supply-chain.md"
 type: "document"
-community: "Gateway Python Dependencies (`gateway/requiremen"
+community: "Detailed Profiles"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Python_Dependencies_gateway/requiremen
+  - community/Detailed_Profiles
 ---
 
 # Detailed Profiles
@@ -26,4 +26,4 @@ tags:
 - [[cryptography (Python) — Encryption Library]] - `contains` [EXTRACTED]
 - [[spaCy + Presidio — PII Detection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Python_Dependencies_gateway/requiremen
+#graphify/document #graphify/EXTRACTED #community/Detailed_Profiles

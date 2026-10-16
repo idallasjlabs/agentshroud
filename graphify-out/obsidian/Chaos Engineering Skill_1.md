@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-chaos-engineering/SKILL.md"
 type: "document"
-community: "agentshroud-soc Cargo package"
+community: "Chaos Engineering Skill"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agentshroud-soc_Cargo_package
+  - community/Chaos_Engineering_Skill
 ---
 
 # Chaos Engineering Skill
 
-#graphify/document #graphify/EXTRACTED #community/agentshroud-soc_Cargo_package
+#graphify/document #graphify/EXTRACTED #community/Chaos_Engineering_Skill

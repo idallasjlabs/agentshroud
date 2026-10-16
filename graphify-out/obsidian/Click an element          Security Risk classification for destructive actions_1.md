@@ -12,6 +12,6 @@ tags:
 # Click an element          Security: Risk classification for destructive actions
 
 ## Connections
-- [[.click()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-click()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

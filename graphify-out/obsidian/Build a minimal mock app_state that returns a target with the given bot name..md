@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "ApprovalRequest"
+community: "_PipelineCaptor"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/_PipelineCaptor
 ---
 
 # Build a minimal mock app_state that returns a target with the given bot name.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_mock_app_state()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/rationale #graphify/EXTRACTED #community/_PipelineCaptor

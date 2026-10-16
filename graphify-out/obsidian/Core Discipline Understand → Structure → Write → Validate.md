@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-tw/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
 type: "document"
-community: "TestCollaboratorPersistence"
+community: "Skill: Technical Writer (TW)"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestCollaboratorPersistence
+  - community/Skill_Technical_Writer_TW
 ---
 
 # Core Discipline: Understand → Structure → Write → Validate
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Technical Writer (TW)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestCollaboratorPersistence
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Writer_TW

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "Role"
 location: "L249"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/Role
 ---
 
 # Check whether user_id may invoke the named tool.          Returns:             (
 
 ## Connections
-- [[._can_use_tool_impl()]] - `rationale_for` [EXTRACTED]
+- [[dot-_can_use_tool_impl()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/Role

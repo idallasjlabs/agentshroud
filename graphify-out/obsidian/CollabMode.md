@@ -1,19 +1,19 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "launch-instance.sh"
+community: "main.rs"
 location: "L190"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/launch-instancesh
+  - community/mainrs
 ---
 
 # CollabMode
 
 ## Connections
-- [[.fmt()]] - `method` [EXTRACTED]
+- [[dot-fmt()]] - `method` [EXTRACTED]
 - [[Display]] - `implements` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/launch-instancesh
+#graphify/code #graphify/EXTRACTED #community/mainrs

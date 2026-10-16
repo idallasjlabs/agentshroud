@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "rationale"
-community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-P"
+community: "openclaw/workspace/jira_dev_ticket.py"
 location: "L151"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P
+  - community/openclaw/workspace/jira_dev_ticketpy
 ---
 
 # Build the ADF (Atlassian Document Format) body for POST .../comment.
 
 ## Connections
-- [[build_comment_payload()_2]] - `rationale_for` [EXTRACTED]
+- [[build_comment_payload()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-P
+#graphify/rationale #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy

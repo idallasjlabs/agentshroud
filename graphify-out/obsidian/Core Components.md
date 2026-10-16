@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "document"
-community: "Technical Specification"
+community: "Core Components"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Specification
+  - community/Core_Components
 ---
 
 # Core Components
@@ -26,4 +26,4 @@ tags:
 - [[9. DNS Filter]] - `contains` [EXTRACTED]
 - [[Component Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Specification
+#graphify/document #graphify/EXTRACTED #community/Core_Components

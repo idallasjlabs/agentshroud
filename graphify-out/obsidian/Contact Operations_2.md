@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
+source_file: ".agents/skills/i-icloud/SKILL.md"
 type: "document"
-community: "hermes/SOUL.md"
+community: "iCloud Services"
 location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/SOULmd
+  - community/iCloud_Services
 ---
 
 # Contact Operations
@@ -18,4 +18,4 @@ tags:
 - [[Update Contact_2]] - `contains` [EXTRACTED]
 - [[iCloud Services_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/SOULmd
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

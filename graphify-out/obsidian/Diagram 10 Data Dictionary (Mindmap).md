@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-10-data-dictionary.svg"
 type: "image"
-community: ".record_denied_request()"
+community: "Diagram 08: Entity Relationship Diagram"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/record_denied_request
+  - community/Diagram_08_Entity_Relationship_Diagram
 ---
 
 # Diagram 10: Data Dictionary (Mindmap)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Diagram 08 Entity Relationship Diagram]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/record_denied_request
+#graphify/image #graphify/INFERRED #community/Diagram_08_Entity_Relationship_Diagram

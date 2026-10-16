@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
 type: "document"
-community: "troubleshooting.md"
+community: "CI/CD Pipeline Advisor (SKILL)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/troubleshootingmd
+  - community/CI/CD_Pipeline_Advisor_SKILL
 ---
 
 # Code Review (CR) (SKILL)
@@ -19,4 +19,4 @@ tags:
 - [[The 400-Line Rule]] - `references` [EXTRACTED]
 - [[fluenceenergy-ops-data-lakehouse (275TB S3 Data Lake)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/troubleshootingmd
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL
